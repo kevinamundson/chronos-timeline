@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "babylon-dynasty-7-assyrian",
+  "type": "event",
+  "title": "Berossus Dynasty 7: second Assyrian dynasty of Babylon",
+  "summary": "The seventh dynasty of Berossus: Assyrian kings and kingless years at Babylon from Sargon II's death to Nabopolassar.",
+  "description": "CFAH-5 anchor point AP-44. Added by the CFAH pass.",
+  "sorting_year": -705,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 705–626 B.C. (AP-44)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "705–626 B.C.",
+      "year_am": null,
+      "year_bc_ad": -705,
+      "year_bc_ad_end": -626,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-44: Dynasty 7: Second Assyrian Dynasty of Babylon: 705–626 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "source_text_id": "cfah-5",
+      "note": "The text of the section counts the 80 years from 706 B.C. (Berossus's date for the end of Dynasty 6) to 626 B.C.; the kings are filled in from Ptolemy's Royal Canon.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-44",
+      "cfah_key": "cfah:ap-44:babylon-dynasty-7-assyrian"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [
+    "babylon-dynasty-6-assyrian",
+    "neo-babylonian-empire"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "AP-44"
+    }
+  ]
+}

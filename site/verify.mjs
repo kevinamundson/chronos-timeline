@@ -10,7 +10,7 @@ import { serve } from './serve.mjs';
 const here = dirname(fileURLToPath(import.meta.url));
 const SHOTS = join(here, 'screenshots');
 mkdirSync(SHOTS, { recursive: true });
-const PORT = 8799;
+const PORT = +process.env.VERIFY_PORT || 8799; // override when two clones verify on the same machine
 const BASE = `http://localhost:${PORT}`;
 const srv = await serve(PORT);
 const browser = await chromium.launch();

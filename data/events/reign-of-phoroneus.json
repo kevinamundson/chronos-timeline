@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "reign-of-phoroneus",
+  "type": "event",
+  "title": "Reign of Phoroneus, first king of Argos",
+  "summary": "Phoroneus, called by Pliny \"the most ancient King of Greece\", begins to reign.",
+  "description": "CFAH-3 anchor point AP-19. The date comes from Clinton's estimate of 17 generations from Phoroneus to the fall of Troy. Added by the CFAH pass.",
+  "sorting_year": -1753,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1753 B.C. (AP-19)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1753 B.C.",
+      "year_am": null,
+      "year_bc_ad": -1753,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-19: Phoroneus: 1753 B.C.\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "source_text_id": "cfah-3",
+      "note": "Clinton's 570 years before the fall of Troy (± 16.7 years). CFAH-3 notes Castor dates Phoroneus to 1807 B.C.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-19",
+      "cfah_key": "cfah:ap-19:reign-of-phoroneus"
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-3"
+  ],
+  "related": [
+    "trojan-war"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-19"
+    }
+  ]
+}

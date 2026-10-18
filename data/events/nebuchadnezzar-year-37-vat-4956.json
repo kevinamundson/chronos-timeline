@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "nebuchadnezzar-year-37-vat-4956",
+  "type": "event",
+  "title": "Year 37 of Nebuchadnezzar II (astronomical diary VAT 4956)",
+  "summary": "The astronomical diary VAT 4956 dates the 37th year of Nebuchadnezzar II, one of the firmest dates of the ancient world.",
+  "description": "CFAH-3 anchor point AP-6. The diary records about thirty astronomical observations that fit only this year, fixing the 37th regnal year of Nebuchadnezzar II of Babylon. Added by the CFAH pass.",
+  "sorting_year": -568,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 568/567B.C. (AP-6)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "568/567B.C.",
+      "year_am": null,
+      "year_bc_ad": -568,
+      "year_bc_ad_end": -567,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-6: VAT-4956: 568/567B.C.—Thirty-seventh Year of Nebuchadnezzar\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "source_text_id": "cfah-3",
+      "note": "Printed without a space (\"568/567B.C.\"). Astronomical diary VAT 4956 fixes Nebuchadnezzar II's 37th year.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-6",
+      "cfah_key": "cfah:ap-6:nebuchadnezzar-year-37-vat-4956"
+    }
+  ],
+  "people": [
+    "nebuchadnezzar-ii"
+  ],
+  "locations": [
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-3"
+  ],
+  "related": [
+    "neo-babylonian-empire"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-6"
+    }
+  ]
+}

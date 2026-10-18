@@ -23,7 +23,9 @@
       "link": "https://osf.io/bcwg2/",
       "note": "CFAH-13 p. 31: \"establishes Anchor Point #82, Sack of Babylon by Mursilis ends the First Dynasty of Babylon, 851 BC.\" OSF preprint, not peer-reviewed in ARJ; see docs/OPEN-QUESTIONS-FOR-KEVIN.md on whether preprint anchor points should set tier 1.",
       "source_text_id": "cfah-13-osf",
-      "cfah_basis": "anchor_point"
+      "cfah_basis": "anchor_point",
+      "cfah_preprint": true,
+      "cfah_ap": "AP-82"
     },
     {
       "source": "ussher-jones",

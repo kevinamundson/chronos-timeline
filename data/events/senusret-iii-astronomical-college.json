@@ -24,7 +24,8 @@
       "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "note": "CFAH-6 Table 1: \"Senusret III returned from war in Asia, founded an astronomical college, and reorganized the government.\" CFAH-6 Argument 4 §10 dates the decree of oppression (Exod 1) to Senusret III, 1577 BC (\"86 years before the Exodus\", from the Midrash); that date is not numbered as an anchor point.",
       "source_text_id": "cfah-3",
-      "cfah_basis": "anchor_point"
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-18"
     },
     {
       "source": "ussher-jones",

@@ -107,7 +107,8 @@
         "note": "CFAH identifies the Chinese patriarch Huang Di with Enosh; Hebrew-number path gives 2864 B.C., Chinese paths 2865 and 2864 B.C.",
         "year_bc_ad_end": -2864,
         "source_text_id": "cfah-4",
-        "cfah_basis": "anchor_point"
+        "cfah_basis": "anchor_point",
+        "cfah_ap": "AP-31"
       },
       {
         "source": "ussher-jones",

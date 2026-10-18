@@ -24,7 +24,8 @@
       "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "note": "CFAH-3: \"Four hundred and eight years added to 776/775 B.C. yields 1184/1183 B.C. for the fall of Troy.\" Eratosthenes is taken as the most reliable witness.",
       "source_text_id": "cfah-3",
-      "cfah_basis": "anchor_point"
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-12"
     },
     {
       "source": "herodotus",

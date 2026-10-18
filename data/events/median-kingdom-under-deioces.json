@@ -24,7 +24,8 @@
       "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
       "note": "CFAH-5 derives the date from Herodotus: 1232 B.C. (Semiramis II) minus Herodotus's 520 years (I.95) gives \"712 B.C. ±5 years for the accession of Deioces\"; counting Herodotus's Median reigns (I.102–130) back from 560 B.C. gives \"710 B.C. ±2 years\". \"The best fit for all this information is Deioces starting to reign between 711 and 708 B.C.\"",
       "source_text_id": "cfah-5",
-      "cfah_basis": "anchor_point"
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-32"
     },
     {
       "source": "generations",

@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "second-median-revolt",
+  "type": "event",
+  "title": "Death of Sargon II (Sardanapalus II); second Median revolt",
+  "summary": "Sargon II of Assyria is killed on campaign and the Medes revolt, gaining independence by 700 B.C.",
+  "description": "CFAH-5 anchor point AP-34. CFAH reads Sargon II as the second king the chroniclers called Sardanapalus. Added by the CFAH pass.",
+  "sorting_year": -705,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 705–700 B.C. (AP-34)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "705–700 B.C.",
+      "year_am": null,
+      "year_bc_ad": -705,
+      "year_bc_ad_end": -700,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-34: Sardanapalus II—Sargon II: Second Median Revolt: 705–700 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "source_text_id": "cfah-5",
+      "note": "Sargon II killed by the Umman Manda in 705 B.C.; Median independence by 700 B.C.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-34",
+      "cfah_key": "cfah:ap-34:second-median-revolt"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "assyria",
+    "media"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [
+    "first-median-revolt",
+    "median-kingdom-under-deioces"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "AP-34"
+    }
+  ]
+}

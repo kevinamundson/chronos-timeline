@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "era-of-nabonassar",
+  "type": "event",
+  "title": "Era of Nabonassar",
+  "summary": "Start of the Babylonian civil era of Nabonassar, the base of Ptolemy's Royal Canon.",
+  "description": "CFAH-3 anchor point AP-9. Ptolemy's Royal Canon counts Babylonian kings from this era to Alexander. Added by the CFAH pass.",
+  "sorting_year": -747,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 747 B.C. (AP-9)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "747 B.C.",
+      "year_am": null,
+      "year_bc_ad": -747,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-9: Era of Nabonassar: 747 B.C.\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "source_text_id": "cfah-3",
+      "note": "Berossus's 150,000 days, read as days, triangulate with the Babylonian civil era.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-9",
+      "cfah_key": "cfah:ap-9:era-of-nabonassar"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-3"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-9"
+    }
+  ]
+}

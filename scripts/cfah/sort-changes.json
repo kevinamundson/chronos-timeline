@@ -1,0 +1,54 @@
+{
+  "alexander-conquers-egypt": {
+    "from": {
+      "tier": "provisional",
+      "year": -330
+    },
+    "to": {
+      "tier": "cfah-anchor",
+      "year": -332
+    },
+    "by": "AP-5",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 43): 330 BC. Pending owner decision (open question A8)."
+  },
+  "founding-of-rome": {
+    "from": {
+      "tier": "provisional",
+      "year": -753
+    },
+    "to": {
+      "tier": "cfah-anchor",
+      "year": -753
+    },
+    "by": "AP-11",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 632): 753 BC. Pending owner decision (open question A8)."
+  },
+  "neo-babylonian-empire": {
+    "from": {
+      "tier": "provisional",
+      "year": -605
+    },
+    "to": {
+      "tier": "cfah-anchor",
+      "year": -626
+    },
+    "by": "AP-45",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 483): 605–539 BC. Pending owner decision (open question A8)."
+  },
+  "xia-dynasty-founded": {
+    "from": {
+      "tier": "provisional",
+      "year": -2197
+    },
+    "to": {
+      "tier": "cfah-anchor",
+      "year": -2197
+    },
+    "by": "AP-4",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 99): 2197 BC. Pending owner decision (open question A8)."
+  }
+}

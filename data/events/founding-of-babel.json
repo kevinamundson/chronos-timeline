@@ -24,7 +24,8 @@
       "note": "CFAH-2 \"Summary of Durations to Babel\" prints \"2234/2333 BC\", evidently a typo for 2234/2233.",
       "year_bc_ad_end": -2233,
       "cfah_basis": "anchor_point",
-      "source_text_id": "cfah-2"
+      "source_text_id": "cfah-2",
+      "cfah_ap": "AP-1"
     },
     {
       "source": "ussher-jones",

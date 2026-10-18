@@ -1,0 +1,36 @@
+{
+  "phase1": {
+    "new": [
+      "babylon-dynasty-5-arab",
+      "babylon-dynasty-6-assyrian",
+      "babylon-dynasty-7-assyrian",
+      "era-of-nabonassar",
+      "first-median-revolt",
+      "grand-cycle-era",
+      "kali-yuga-era",
+      "nebuchadnezzar-year-37-vat-4956",
+      "reign-of-phoroneus",
+      "saptarshi-era",
+      "satya-yuga-era",
+      "second-median-revolt"
+    ],
+    "updated": [
+      "alexander-conquers-egypt",
+      "founding-of-rome",
+      "neo-babylonian-empire",
+      "xia-dynasty-founded"
+    ]
+  },
+  "phase2": {
+    "new": [],
+    "updated": []
+  },
+  "phase3": {
+    "new": [],
+    "updated": []
+  },
+  "phase4": {
+    "new": [],
+    "updated": []
+  }
+}

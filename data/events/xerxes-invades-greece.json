@@ -23,7 +23,8 @@
       "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "note": "CFAH-3: 296 years after the First Olympiad (776 B.C.) gives \"480 B.C. Xerxes invades Greece\"; 704 years after the Fall of Troy (1183 B.C.) gives 479 B.C. \"The Second Persian Invasion of Greece ended in June 479 B.C., about 15 months after it began.\"",
       "source_text_id": "cfah-3",
-      "cfah_basis": "anchor_point"
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-13"
     },
     {
       "source": "herodotus",

@@ -4,24 +4,28 @@
   "type": "event",
   "title": "Alexander the Great takes Egypt",
   "summary": "Alexander the Great takes Egypt",
-  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -330,
+  "description": "Record first created by the Generations curriculum import (Taking Africa for Jesus). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
+  "sorting_year": -332,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 43): 330 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 14 November, 332 BC (AP-5). Sort changed by the CFAH pass (2026-10-18): was provisional (Generations) 330 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "14 November, 332 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -332,
+      "precision": "day",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-5: Alexander Conquers Egypt: 14 November, 332 BC\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "source_text_id": "cfah-3",
+      "note": "Alexander's proclamation as king of Egypt; CFAH-3 calls it \"the most precisely dated event of Alexander's life\".",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-5",
+      "cfah_key": "cfah:ap-5:alexander-conquers-egypt"
     },
     {
       "source": "generations",
@@ -66,7 +70,8 @@
   "sources": [
     "generations-africa",
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cfah-3"
   ],
   "related": [],
   "free_source_links": [
@@ -79,6 +84,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus"
+    },
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-5"
     }
   ]
 }

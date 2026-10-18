@@ -24,7 +24,8 @@
       "note": "Also CFAH-1 Introduction: \"place the Dispersion in 2192/2191 BC\".",
       "year_bc_ad_end": -2191,
       "cfah_basis": "anchor_point",
-      "source_text_id": "cfah-2"
+      "source_text_id": "cfah-2",
+      "cfah_ap": "AP-2"
     },
     {
       "source": "ussher-jones",

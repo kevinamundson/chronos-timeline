@@ -24,7 +24,8 @@
       "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "note": "CFAH-3: \"The Persian Empire ended in 330 B.C., thus 230 years yields 560/559 B.C. for the beginning of the Persian power.\" CFAH-5 (AP-32) adds that Herodotus appears to have counted his Median reigns to \"the accession of Cyrus as coregent with his father in 560 B.C.\"",
       "source_text_id": "cfah-3",
-      "cfah_basis": "anchor_point"
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-7"
     },
     {
       "source": "herodotus",

@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "babylon-dynasty-6-assyrian",
+  "type": "event",
+  "title": "Berossus Dynasty 6: Assyrian rule of Babylon",
+  "summary": "The sixth dynasty of Berossus: 526 years of Assyrian rule over Babylon, from Semiramis II (Tukulti-Ninurta I) to Sargon II.",
+  "description": "CFAH-5 anchor point AP-43. Added by the CFAH pass.",
+  "sorting_year": -1232,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1232–706 B.C. (AP-43)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1232–706 B.C.",
+      "year_am": null,
+      "year_bc_ad": -1232,
+      "year_bc_ad_end": -706,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-43: Conclusions for Dynasty 6: 1232–706 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "source_text_id": "cfah-5",
+      "note": "Berossus's 526 years of Assyrian rule. CFAH-5 notes the chroniclers' durations point to 706 B.C. for Sargon II's death, while Assyrian sources give 705 B.C.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-43",
+      "cfah_key": "cfah:ap-43:babylon-dynasty-6-assyrian"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [
+    "semiramis-ii",
+    "babylon-dynasty-5-arab",
+    "babylon-dynasty-7-assyrian"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "AP-43"
+    }
+  ]
+}

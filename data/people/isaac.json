@@ -117,7 +117,8 @@
         "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
         "note": "Component of AP-61: CFAH-6 takes Isaac's death in 1716 BC from Jones (2019, 58) and makes Joseph's promotion the same year.",
         "source_text_id": "cfah-6",
-        "cfah_basis": "anchor_point"
+        "cfah_basis": "anchor_point",
+        "cfah_ap": "AP-61"
       },
       {
         "source": "ussher-jones",

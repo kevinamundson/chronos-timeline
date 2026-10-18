@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "kali-yuga-era",
+  "type": "event",
+  "title": "Start of the Kali Yuga era",
+  "summary": "Beginning of the Kali Yuga, the fourth of the Hindu (also Chinese and Persian) ages, an era used to date the Flood and later events.",
+  "description": "CFAH-3 anchor point AP-23. CFAH reads the Hindu yugas as a scaled count of real years and fixes the Kali Yuga by durations and a planetary conjunction. Added by the CFAH pass.",
+  "sorting_year": -3104,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: February 7, 3104 B.C. (AP-23)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "February 7, 3104 B.C.",
+      "year_am": null,
+      "year_bc_ad": -3104,
+      "precision": "day",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-23: Kali Yuga: February 7, 3104 B.C.\" and subsection \"Astronomical Calculation of Kali Yuga: February 7, 3104 B.C.\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "source_text_id": "cfah-3",
+      "note": "Planetary conjunction calculated by Abhyankar. Hindu reckoning gives 3102 B.C., Chinese 3104, Persian 3103; CFAH-3 uses January 1, 3104 B.C. \"for simplicity\". The Fig. 9 caption reads \"February 6, 3104 B.C.\".",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-23",
+      "cfah_key": "cfah:ap-23:kali-yuga-era"
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-3"
+  ],
+  "related": [
+    "satya-yuga-era",
+    "the-flood"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-23"
+    }
+  ]
+}

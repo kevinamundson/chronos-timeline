@@ -23,7 +23,8 @@
       "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
       "note": "CFAH-5: \"1240 B.C. ± 2 yr, death of Ibbi-Sin: AP-46\"",
       "source_text_id": "cfah-5",
-      "cfah_basis": "anchor_point"
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-46"
     },
     {
       "source": "ussher-jones",

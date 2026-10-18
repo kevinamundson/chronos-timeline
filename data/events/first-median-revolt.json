@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "first-median-revolt",
+  "type": "event",
+  "title": "Defeat of Sardanapalus I (Ashur-danin-pal); first Median revolt",
+  "summary": "The rebellion of Ashur-danin-pal, the original \"Sardanapalus\", against his father Shalmaneser III ends in his defeat, and the Medes revolt.",
+  "description": "CFAH-5 anchor point AP-33. Added by the CFAH pass.",
+  "sorting_year": -826,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 826–822 B.C. (AP-33)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "826–822 B.C.",
+      "year_am": null,
+      "year_bc_ad": -826,
+      "year_bc_ad_end": -822,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-33: Defeat of Sardanapalus I—Ashur-danin-pal—First Median Revolt: 826–822 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "source_text_id": "cfah-5",
+      "note": "Ashur-danin-pal, son of Shalmaneser III, was defeated and presumably died in his father's last year, 823 B.C.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-33",
+      "cfah_key": "cfah:ap-33:first-median-revolt"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "assyria",
+    "media"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [
+    "second-median-revolt"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "AP-33"
+    }
+  ]
+}

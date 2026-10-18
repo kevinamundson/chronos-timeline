@@ -20,7 +20,7 @@ const arg = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.a
 const live = arg('--base');
 const SHOTS = process.argv.includes('--shots');
 let BASE = live, srv = null;
-if (!live) { const { serve } = await import('./serve.mjs'); srv = await serve(8798); BASE = 'http://localhost:8798'; }
+if (!live) { const { serve } = await import('./serve.mjs'); const port = +process.env.VERIFY_TL_PORT || 8798; srv = await serve(port); BASE = `http://localhost:${port}`; }
 const expect = live ? await (await fetch(`${BASE}/data/person-timelines.json`, { cache: 'no-store' })).json()
   : JSON.parse(readFileSync(join(here, 'dist/data/person-timelines.json'), 'utf8'));
 const single = Object.keys(expect).find((k) => !expect[k].none && expect[k].own + expect[k].context === 1);

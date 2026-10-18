@@ -139,9 +139,24 @@
         "cfah_basis": {
           "enum": [
             "anchor_point",
-            "table1_baseline"
+            "table1_baseline",
+            "paper_text"
           ],
-          "description": "Only on cfah entries with a date. anchor_point = a CFAH triangulated anchor point / paper-derived date (sort tier 1); table1_baseline = CFAH-1 Table 1, the Ussher-Jones biblical baseline (sort tier 2)."
+          "description": "Only on cfah entries with a date. anchor_point = a CFAH triangulated anchor point (sort tier 1); table1_baseline = CFAH-1 Table 1, the Ussher-Jones biblical baseline (sort tier 2); paper_text = a date stated in a CFAH paper that is neither a numbered anchor point nor a Table 1 row (e.g. a ruler's reign; display only, never a sort tier; see open question A1)."
+        },
+        "cfah_ap": {
+          "type": "string",
+          "pattern": "^AP-[1-9][0-9]*$",
+          "description": "CFAH only: the anchor point number as the paper numbers it (e.g. AP-4; OSF preprint numbers too, e.g. AP-82). Only on anchor_point entries."
+        },
+        "cfah_preprint": {
+          "const": true,
+          "description": "CFAH only: the date comes from an OSF preprint (not peer-reviewed in ARJ). Required when source_text_id is a *-osf source."
+        },
+        "cfah_key": {
+          "type": "string",
+          "pattern": "^cfah:",
+          "description": "CFAH importer (scripts/cfah/import.mjs) key for entries it manages; re-runs replace them."
         }
       },
       "allOf": [

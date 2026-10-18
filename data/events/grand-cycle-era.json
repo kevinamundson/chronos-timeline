@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "grand-cycle-era",
+  "type": "event",
+  "title": "Era of the Grand Cycle",
+  "summary": "Start of the Grand Cycle (Kya-tse, Chi-tran, Saros), a 3,600-year era of 60 cycles of 60 years.",
+  "description": "CFAH-3 anchor point AP-26. Added by the CFAH pass.",
+  "sorting_year": -3177,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 3177/3176 B.C. (AP-26)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "3177/3176 B.C.",
+      "year_am": null,
+      "year_bc_ad": -3177,
+      "year_bc_ad_end": -3176,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-26: Era of the Grand Cycle: 3177/3176 B.C.\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "source_text_id": "cfah-3",
+      "note": "The 3,600-year Grand Cycle (60 cycles of 60 years) of the Babylonians, Chinese and Hindus; CFAH-3 concludes it was originally counted from the same year as the Saptarshi era. Chinese reckoning gives 3174 B.C.; many Chinese scholars use 2697 B.C. for the first cycle.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-26",
+      "cfah_key": "cfah:ap-26:grand-cycle-era"
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-3"
+  ],
+  "related": [
+    "saptarshi-era",
+    "kali-yuga-era"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-26"
+    }
+  ]
+}

@@ -4,24 +4,28 @@
   "type": "event",
   "title": "Founding of Rome",
   "summary": "Founding of Rome",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
   "sorting_year": -753,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 632): 753 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 753 B.C. (AP-11). Sort changed by the CFAH pass (2026-10-18): was provisional (Generations) 753 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "753 B.C.",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -753,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-11: Era of Rome: 753 B.C.\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "source_text_id": "cfah-3",
+      "note": "First year of the seventh Olympiad, in the 432nd year after the fall of Troy.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-11",
+      "cfah_key": "cfah:ap-11:founding-of-rome"
     },
     {
       "source": "generations",
@@ -54,7 +58,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cfah-3"
   ],
   "related": [
     "roman-monarchy"
@@ -64,6 +69,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-11"
     }
   ]
 }

@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "saptarshi-era",
+  "type": "event",
+  "title": "Era of the Saptarshi Cycle",
+  "summary": "Start of the Saptarshi era, a Hindu cycle of centuries based on two stars of the Great Bear.",
+  "description": "CFAH-3 anchor point AP-25. CFAH notes it falls halfway between Creation (4004 B.C.) and the Flood (2348 B.C.) in the Ussher-Jones chronology. Added by the CFAH pass.",
+  "sorting_year": -3176,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 3176 B.C. (AP-25)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "3176 B.C.",
+      "year_am": null,
+      "year_bc_ad": -3176,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-25: Era of the Saptarshi Cycle: 3176 B.C.\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "source_text_id": "cfah-3",
+      "note": "The Kollam Era (1176 B.C.) counts from the third Saptarshi cycle; CFAH-3 suspects the era may have been back-calculated.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-25",
+      "cfah_key": "cfah:ap-25:saptarshi-era"
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-3"
+  ],
+  "related": [
+    "grand-cycle-era"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-25"
+    }
+  ]
+}

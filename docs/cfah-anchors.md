@@ -42,3 +42,14 @@ CFAH-7 and later were not found on ARJ (URL pattern checks returned 404) as of 2
 - **OSF preprints:** AP-82 (CFAH-13), AP-88 to 91 (CFAH-14), AP-92 and 93 (CFAH-15).
 
 See docs/cfah-osf-collation.md for the OSF inventory, the licences, and the anchor points not yet used.
+
+## CFAH complete pass (2026-10-18)
+
+From here on, CFAH dates are curated in `scripts/cfah/` and applied by `node scripts/cfah/import.mjs`. The importer is idempotent, and its entries carry `cfah_key`. Run it after any other importer (Generations, Herodotus), because those can rewrite the CFAH placeholder on records they manage.
+
+- `anchors.mjs`: the published APs added in phase 1.
+- `table1.mjs`: the CFAH-1 Table 1 rows.
+- `kings.mjs`: ruler reigns.
+- `anchors-osf.mjs`: the OSF preprint APs.
+
+The checklist of every AP, Table 1 row and king list is `data/cfah-coverage.md`. The new fields are `cfah_ap` (the AP number), `cfah_preprint` (OSF) and `cfah_basis: "paper_text"` (a CFAH date that is neither an AP nor a Table 1 row; display only).

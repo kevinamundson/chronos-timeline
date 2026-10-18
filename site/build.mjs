@@ -74,13 +74,14 @@ const osis = (ref) => {
 const scriptureList = (refs) => !refs?.length ? '' : `<ul class="chips">${refs.map((r) => { const o = osis(r); return `<li>${ext(o.href, esc(o.text))}</li>`; }).join('')}</ul>`;
 
 // Chronology display order (owner spec): CFAH anchor, CFAH-1 Table 1, Ussher-Jones, Ussher, Jordan (secondary, display only), Bible, (MT arithmetic), Josephus, Raleigh, Clonmacnoise.
-const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:', 'ussher-jones', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
+const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:paper_text', 'cfah:', 'ussher-jones', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
 const rowKey = (e) => (e.source === 'cfah' ? `cfah:${e.cfah_basis || ''}` : e.source);
 const rowRank = (e) => { const i = ROW_ORDER.indexOf(rowKey(e)); return i < 0 ? 99 : i; };
 const chronName = (e) => {
   if (e.source === 'cfah') {
     if (e.cfah_basis === 'anchor_point') return 'CFAH <span class="tag tag-t1">anchor point</span>';
     if (e.cfah_basis === 'table1_baseline') return 'CFAH-1 Table 1 <span class="tag tag-t2">Ussher–Jones baseline</span>';
+    if (e.cfah_basis === 'paper_text') return 'CFAH <span class="tag">paper text (not an anchor point)</span>';
     return 'CFAH';
   }
   if (e.source === 'jordan') return 'Jordan <span class="tag tag-sec" title="Secondary display chronology; never sets the sort year">secondary</span>';
@@ -151,7 +152,7 @@ function chronTable(entries, { sortYear, basis, caption }) {
     const years = [yearLabel(e.year_bc_ad, e.year_bc_ad_end), amLabel(e.year_am, e.year_am_end)].filter(Boolean).join('<br>');
     return `<tr class="${pending ? 'pending' : ''}${e === setter ? ' is-sort' : ''}">
 <th scope="row">${chronName(e)}</th>
-<td>${pending ? '<span class="muted">Not yet established</span>' : esc(e.date)}${e.precision && !pending ? `<div class="small muted">Precision: ${esc(e.precision)}</div>` : ''}</td>
+<td>${pending ? '<span class="muted">Not yet established</span>' : esc(e.date)}${e.cfah_ap || e.cfah_preprint ? `<div>${e.cfah_ap ? `<span class="tag tag-ap">${esc(e.cfah_ap)}</span> ` : ''}${e.cfah_preprint ? '<span class="tag tag-preprint" title="OSF preprint: not peer-reviewed in Answers Research Journal">OSF preprint</span>' : ''}</div>` : ''}${e.precision && !pending ? `<div class="small muted">Precision: ${esc(e.precision)}</div>` : ''}</td>
 <td class="nowrap">${years || '<span class="muted">—</span>'}</td>
 <td>${e.citation ? ext(e.link || (['bible', 'masoretic-genealogy'].includes(e.source) ? blbFromText(e.citation) : null), esc(e.citation)) : '<span class="muted">—</span>'}${e.edition_note ? `<div class="note"><span class="tag tag-old">${esc(/not in/.test(e.edition_note) ? 'not in 2nd ed.' : 'edition')}</span> ${esc(e.edition_note)}</div>` : ''}${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}${flags.length ? `<div class="flags">${flags.join(' ')}</div>` : ''}</td>
 </tr>`;

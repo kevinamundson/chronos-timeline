@@ -4,24 +4,28 @@
   "type": "event",
   "title": "Emperor Yu founds the Xia dynasty of China",
   "summary": "Emperor Yu founds the Xia dynasty of China",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
   "sorting_year": -2197,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 99): 2197 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2197 BC (AP-4). Sort changed by the CFAH pass (2026-10-18): was provisional (Generations) 2197 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "2197 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -2197,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 2: Founding of the Nations,\" ARJ 15 (2022): 405–426, section \"Anchor Points\", Table 3 \"Anchor points of ancient history found in this paper\" (AP-4 \"Chinese Xia Dyn.\", 2197, Liu Xin); also \"Duration 13: The Reign of Yu of China: 2197 BC\"",
+      "link": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "source_text_id": "cfah-2",
+      "note": "Table 3 prints the year as \"2197\" under \"Year BC\" (source: Liu Xin, Xia 1,421 years before the 776 BC eclipse). CFAH-2 gives an error of ± 3 years. The OSF preprint CFAH-17 later revises Yu's accession to 2192/2191 BC (AP-94).",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-4",
+      "cfah_key": "cfah:ap-4:xia-dynasty-founded"
     },
     {
       "source": "generations",
@@ -40,8 +44,15 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cfah-2"
   ],
   "related": [],
-  "free_source_links": []
+  "free_source_links": [
+    {
+      "source_id": "cfah-2",
+      "url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "locator": "Table 3, AP-4"
+    }
+  ]
 }

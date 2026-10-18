@@ -23,7 +23,9 @@
       "link": "https://osf.io/9fuw2/",
       "note": "CFAH-14 p. 20: \"In the same inscription from Shalmaneser I above, we learn that Erishum I reigned 159 years before\" OSF preprint, not peer-reviewed in ARJ; see docs/OPEN-QUESTIONS-FOR-KEVIN.md on whether preprint anchor points should set tier 1.",
       "source_text_id": "cfah-14-osf",
-      "cfah_basis": "anchor_point"
+      "cfah_basis": "anchor_point",
+      "cfah_preprint": true,
+      "cfah_ap": "AP-89"
     },
     {
       "source": "ussher-jones",

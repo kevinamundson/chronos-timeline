@@ -24,7 +24,8 @@
       "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "note": "CFAH-3: \"These two durations confirm 776/775 B.C. for the first Olympiad, 525 B.C. for the Battle of Pelusium, and 560/559 B.C. for Cyrus, synchronizing the chronologies of Egypt, Greece, and Persia.\" Censorinus's eras: \"1st Olympiad: 1,014 years [yields 776 B.C.]\". AP-12 and AP-13 count from this era.",
       "source_text_id": "cfah-3",
-      "cfah_basis": "anchor_point"
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-10"
     },
     {
       "source": "generations",

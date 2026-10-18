@@ -96,7 +96,8 @@
         "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
         "note": "CFAH identifies Nimrod with Ninus and with Atothis of Egyptian Dynasty 1 (2188 − 62 − 57 = 2069/2068 BC).",
         "source_text_id": "cfah-5",
-        "cfah_basis": "anchor_point"
+        "cfah_basis": "anchor_point",
+        "cfah_ap": "AP-48"
       },
       {
         "source": "ussher-jones",

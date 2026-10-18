@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "babylon-dynasty-5-arab",
+  "type": "event",
+  "title": "Berossus Dynasty 5 (\"Arab\" dynasty) at Babylon",
+  "summary": "The fifth dynasty of Berossus: the Guti/Amorite \"Arabs\" rule Babylon from the fall of Akkad until Semiramis II.",
+  "description": "CFAH-5 anchor point AP-42. Added by the CFAH pass.",
+  "sorting_year": -1477,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1477–1232 B.C. (AP-42)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1477–1232 B.C.",
+      "year_am": null,
+      "year_bc_ad": -1477,
+      "year_bc_ad_end": -1232,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-42: Dynasty 5: “Arab” Dynasty: 1477–1232 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "source_text_id": "cfah-5",
+      "note": "From the fall of Akkad (AP-35) to Semiramis II taking Babylon (AP-15). Table 3 of CFAH-5 labels this dynasty \"44\" in its AP column (see open questions).",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-42",
+      "cfah_key": "cfah:ap-42:babylon-dynasty-5-arab"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [
+    "fall-of-akkad",
+    "semiramis-ii",
+    "babylon-dynasty-4-chaldean",
+    "babylon-dynasty-6-assyrian"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "AP-42"
+    }
+  ]
+}

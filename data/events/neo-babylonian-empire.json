@@ -4,24 +4,29 @@
   "type": "event",
   "title": "The Neo-Babylonian Empire",
   "summary": "The Neo-Babylonian Empire",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -605,
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
+  "sorting_year": -626,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 483): 605–539 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 626–539 B.C. (AP-45). Sort changed by the CFAH pass (2026-10-18): was provisional (Generations) 605 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "626–539 B.C.",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -626,
+      "year_bc_ad_end": -539,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-45: Dynasty 8: Neo-Babylonian Empire: 626–539 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "source_text_id": "cfah-5",
+      "note": "Berossus Dynasty 8: 87 years from Nabopolassar (626/625 B.C.) to the conquest of Babylon by Darius the Mede and Cyrus (539 B.C.).",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-45",
+      "cfah_key": "cfah:ap-45:neo-babylonian-empire"
     },
     {
       "source": "generations",
@@ -58,7 +63,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cfah-5"
   ],
   "related": [],
   "free_source_links": [
@@ -66,6 +72,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "AP-45"
     }
   ]
 }

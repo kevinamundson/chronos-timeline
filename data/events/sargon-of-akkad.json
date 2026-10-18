@@ -23,7 +23,9 @@
       "link": "https://osf.io/vynju/",
       "note": "CFAH-15 p. 21: \"The defeat of Ur Zababa by Sargon of Akkad, starting his reign over Akkad to the year 1619 BC, Anchor Point #92.\" OSF preprint, not peer-reviewed in ARJ; see docs/OPEN-QUESTIONS-FOR-KEVIN.md on whether preprint anchor points should set tier 1. Conventional dates put Sargon c. 2334–2279 BC; CFAH's date is about 700 years later.",
       "source_text_id": "cfah-15-osf",
-      "cfah_basis": "anchor_point"
+      "cfah_basis": "anchor_point",
+      "cfah_preprint": true,
+      "cfah_ap": "AP-92"
     },
     {
       "source": "ussher-jones",

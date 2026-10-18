@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "satya-yuga-era",
+  "type": "event",
+  "title": "Start of the Satya Yuga; birth of Fo-xi",
+  "summary": "Start of the first of the four Hindu ages, which CFAH equates with the birth of Fo-xi, the first Chinese emperor (Adam).",
+  "description": "CFAH-3 anchor point AP-24. CFAH-4 identifies Fo-hi with Adam. Added by the CFAH pass.",
+  "sorting_year": -4004,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 4004 B.C. (AP-24)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "4004 B.C.",
+      "year_am": null,
+      "year_bc_ad": -4004,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-24: Satya Yuga: 4004 B.C.\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "source_text_id": "cfah-3",
+      "note": "Kali Yuga (3104 B.C.) plus 200 + 300 + 400 years: \"start of Satya Yuga and birth of Fo-xi\".",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-24",
+      "cfah_key": "cfah:ap-24:satya-yuga-era"
+    }
+  ],
+  "people": [
+    "adam"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-3"
+  ],
+  "related": [
+    "creation-week",
+    "kali-yuga-era"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-24"
+    }
+  ]
+}

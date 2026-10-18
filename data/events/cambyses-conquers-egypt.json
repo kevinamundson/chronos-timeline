@@ -23,7 +23,8 @@
       "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "note": "CFAH-3: \"The conquest of Egypt at the Battle of Pelusium in May of 525 B.C. occurred in the fifth year of Cambyses’ reign. Subtracting five and thirty years from the Era of Cyrus in 560 B.C. yields 525 B.C.\" (CFAH counts Cyrus 30 years; Herodotus 1.214 gives 29.)",
       "source_text_id": "cfah-3",
-      "cfah_basis": "anchor_point"
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-8"
     },
     {
       "source": "generations",
