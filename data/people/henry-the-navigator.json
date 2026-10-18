@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=122",
         "source_text_id": "generations-africa",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "1394-1460 AD",
+        "year_am": null,
+        "year_bc_ad": 1394,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 5 \"The Great Khan and His Empire vs. Jesus Christ and His People\", PDF p. 67 (printed pp. 133–134)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=67",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ],
     "death": [
@@ -70,6 +81,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=99",
         "source_text_id": "generations-asia",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "1460",
+        "year_am": null,
+        "year_bc_ad": 1460,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 5 \"The Great Khan and His Empire vs. Jesus Christ and His People\", PDF p. 67 (printed pp. 133–134)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=67",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ]
   },
@@ -77,7 +99,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": []
 }

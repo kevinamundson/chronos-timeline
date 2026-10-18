@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=48",
       "source_text_id": "generations-europe",
       "note": "Printed as \"a likely date\"."
+    },
+    {
+      "source": "generations",
+      "date": "around AD 67",
+      "year_am": null,
+      "year_bc_ad": 67,
+      "precision": "approximate",
+      "citation": "Taking the World for Jesus, ch. 1 \"The Roman Empire and the Men Who Turned the World Upside Down\", PDF p. 18 (printed pp. 35–36)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=18",
+      "source_text_id": "generations-world",
+      "note": null
     }
   ],
   "people": [],
@@ -40,7 +51,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +60,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

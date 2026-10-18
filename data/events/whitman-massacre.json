@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "whitman-massacre",
+  "type": "event",
+  "title": "Whitman massacre",
+  "summary": "Whitman massacre",
+  "description": "Added from the Generations curriculum import (Taking the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1847,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking the World for Jesus, PDF p. 147): November 29, 1847. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "November 29, 1847",
+      "year_am": null,
+      "year_bc_ad": 1847,
+      "precision": "day",
+      "citation": "Taking the World for Jesus, ch. 11 \"Conquering the Western Hemisphere for Christ\", PDF p. 147 (printed pp. 293–294)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=147",
+      "source_text_id": "generations-world",
+      "note": null
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-world"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
+    }
+  ]
+}

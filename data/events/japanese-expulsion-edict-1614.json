@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=114",
       "source_text_id": "generations-asia",
       "note": null
+    },
+    {
+      "source": "generations",
+      "date": "January 27, 1614",
+      "year_am": null,
+      "year_bc_ad": 1614,
+      "precision": "day",
+      "citation": "Taking the World for Jesus, ch. 5 \"The Great Khan and His Empire vs. Jesus Christ and His People\", PDF p. 68 (printed pp. 135–136)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=68",
+      "source_text_id": "generations-world",
+      "note": "Issued under the Shogun Ieyasu."
     }
   ],
   "people": [],
@@ -40,7 +51,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +60,11 @@
       "source_id": "generations-asia",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
       "locator": "Taking Asia for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

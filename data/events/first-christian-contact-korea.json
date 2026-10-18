@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "first-christian-contact-korea",
+  "type": "event",
+  "title": "Yi Seung-hun goes to Beijing to learn of Christianity",
+  "summary": "Yi Seung-hun goes to Beijing to learn of Christianity",
+  "description": "Added from the Generations curriculum import (Taking the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1784,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking the World for Jesus, PDF p. 124): AD 1784. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "AD 1784",
+      "year_am": null,
+      "year_bc_ad": 1784,
+      "precision": "year",
+      "citation": "Taking the World for Jesus, ch. 9 \"Reaching Asia for Christ\", PDF p. 124 (printed pp. 247–248)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=124",
+      "source_text_id": "generations-world",
+      "note": null
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-world"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
+    }
+  ]
+}

@@ -103,6 +103,17 @@
       "link": "https://biblehub.com/blb/genesis/1.htm",
       "note": "Epoch of the AM count by definition.",
       "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "generations",
+      "date": "4000 BC",
+      "year_am": null,
+      "year_bc_ad": -4000,
+      "precision": "approximate",
+      "citation": "Taking the World for Jesus, ch. 1 \"The Roman Empire and the Men Who Turned the World Upside Down\", PDF p. 14 (printed pp. 27–28)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=14",
+      "source_text_id": "generations-world",
+      "note": "Printed as a round figure (\"from 4000 BC to AD 30\"). Differs from the sort year (4004 BC, cfah-anchor) by 4 years."
     }
   ],
   "people": [

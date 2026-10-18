@@ -8,12 +8,12 @@
   ],
   "summary": "Wife and co-worker of Adoniram Judson in Burma.",
   "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
-  "sorting_year": null,
+  "sorting_year": 1789,
   "sorting_basis": {
-    "tier": "none",
+    "tier": "provisional",
     "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year."
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking the World for Jesus, PDF p. 114): 1789-1826. Pending owner decision (open question A8)."
   },
   "father": null,
   "children": [],
@@ -28,6 +28,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1789-1826",
+        "year_am": null,
+        "year_bc_ad": 1789,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 9 \"Reaching Asia for Christ\", PDF p. 114 (printed pp. 227–228)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=114",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ],
     "death": [
@@ -40,6 +51,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1789-1826",
+        "year_am": null,
+        "year_bc_ad": 1826,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 9 \"Reaching Asia for Christ\", PDF p. 114 (printed pp. 227–228)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=114",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ]
   },
@@ -50,7 +72,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": []
 }

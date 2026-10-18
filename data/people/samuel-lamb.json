@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "samuel-lamb",
+  "type": "person",
+  "title": "Samuel Lamb",
+  "summary": "Chinese house-church pastor imprisoned for twenty years.",
+  "description": "Added from the Generations curriculum import (Taking the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1924,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking the World for Jesus, PDF p. 181): 1924-2013. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1924-2013",
+        "year_am": null,
+        "year_bc_ad": 1924,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 13 \"The 20th and 21st Centuries\", PDF p. 181 (printed pp. 361–362)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=181",
+        "source_text_id": "generations-world",
+        "note": "Imprisoned AD 1955-1978."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1924-2013",
+        "year_am": null,
+        "year_bc_ad": 2013,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 13 \"The 20th and 21st Centuries\", PDF p. 181 (printed pp. 361–362)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=181",
+        "source_text_id": "generations-world",
+        "note": null
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-world"
+  ],
+  "related": []
+}

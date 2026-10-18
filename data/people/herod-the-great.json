@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "herod-the-great",
+  "type": "person",
+  "title": "Herod the Great",
+  "summary": "King of Judea at the time of the birth of Jesus.",
+  "description": "Added from the Generations curriculum import (Taking the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": -73,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking the World for Jesus, PDF p. 16): 73-4 BC. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "73-4 BC",
+        "year_am": null,
+        "year_bc_ad": -73,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 1 \"The Roman Empire and the Men Who Turned the World Upside Down\", PDF p. 16 (printed pp. 31–32)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=16",
+        "source_text_id": "generations-world",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "73-4 BC",
+        "year_am": null,
+        "year_bc_ad": -4,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 1 \"The Roman Empire and the Men Who Turned the World Upside Down\", PDF p. 16 (printed pp. 31–32)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=16",
+        "source_text_id": "generations-world",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "birth-of-jesus",
+    "reign-of-herod-the-great"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-world"
+  ],
+  "related": []
+}

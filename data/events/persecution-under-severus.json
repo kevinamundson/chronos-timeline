@@ -34,6 +34,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=60",
       "source_text_id": "generations-europe",
       "note": "p. 71 places a persecution under Severus in 202."
+    },
+    {
+      "source": "generations",
+      "date": "ad 192-211",
+      "year_am": null,
+      "year_bc_ad": 192,
+      "year_bc_ad_end": 211,
+      "precision": "year-range",
+      "citation": "Taking the World for Jesus, ch. 2 \"The Roman Empire Opposes Christ and Falls\", PDF p. 23 (printed pp. 45–46)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=23",
+      "source_text_id": "generations-world",
+      "note": "Taking Europe for Jesus prints AD 193-211."
     }
   ],
   "people": [
@@ -43,7 +55,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -51,6 +64,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

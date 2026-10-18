@@ -62,6 +62,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=189",
         "source_text_id": "generations-africa",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "July 16, 1931",
+        "year_am": null,
+        "year_bc_ad": 1931,
+        "precision": "day",
+        "citation": "Taking the World for Jesus, ch. 10 \"Reaching the Heart of Africa for Christ\", PDF p. 141 (printed pp. 281–282)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=141",
+        "source_text_id": "generations-world",
+        "note": "At Ibambi."
       }
     ]
   },
@@ -71,6 +82,7 @@
     "ibambi-headquarters",
     "studd-cambridge-graduation",
     "studd-in-india",
+    "studd-leaves-england-1913",
     "studd-reaches-niangara",
     "studd-returns-to-africa-1916",
     "studd-sails-for-africa",
@@ -78,7 +90,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-world"
   ],
   "related": []
 }

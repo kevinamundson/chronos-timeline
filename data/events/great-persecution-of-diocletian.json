@@ -45,6 +45,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=14",
       "source_text_id": "generations-europe",
       "note": "Called the \"Great Persecution\" (also p. 61)."
+    },
+    {
+      "source": "generations",
+      "date": "between AD 303 and AD 311",
+      "year_am": null,
+      "year_bc_ad": 303,
+      "year_bc_ad_end": 311,
+      "precision": "year-range",
+      "citation": "Taking the World for Jesus, ch. 3 \"The Frontier Age: Taking the British Isles for Jesus\", PDF p. 43 (printed pp. 85–86)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=43",
+      "source_text_id": "generations-world",
+      "note": null
     }
   ],
   "people": [],
@@ -53,7 +65,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -66,6 +79,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

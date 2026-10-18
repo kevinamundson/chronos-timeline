@@ -37,6 +37,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "AD 1294",
+        "year_am": null,
+        "year_bc_ad": 1294,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 5 \"The Great Khan and His Empire vs. Jesus Christ and His People\", PDF p. 65 (printed pp. 129–130)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=65",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ]
   },
@@ -46,7 +57,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": []
 }

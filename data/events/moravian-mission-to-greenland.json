@@ -34,6 +34,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=281",
       "source_text_id": "generations-europe",
       "note": "The work lasted until 1900."
+    },
+    {
+      "source": "generations",
+      "date": "1733",
+      "year_am": null,
+      "year_bc_ad": 1733,
+      "precision": "year",
+      "citation": "Taking the World for Jesus, ch. 7 \"Colonialism, Slavery, and the Missionaries Who Proclaimed the Year of Jubilee\", PDF p. 88 (printed pp. 175–176)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=88",
+      "source_text_id": "generations-world",
+      "note": "The Moravians joined the Lutheran work."
     }
   ],
   "people": [
@@ -43,7 +54,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -51,6 +63,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

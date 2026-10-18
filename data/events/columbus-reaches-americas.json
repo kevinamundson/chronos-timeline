@@ -55,6 +55,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=109",
       "source_text_id": "generations-asia",
       "note": null
+    },
+    {
+      "source": "generations",
+      "date": "August 12, 1492",
+      "year_am": null,
+      "year_bc_ad": 1492,
+      "precision": "day",
+      "citation": "Taking the World for Jesus, ch. 6 \"First Incursions Into the New World\", PDF p. 70 (printed pp. 139–140)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=70",
+      "source_text_id": "generations-world",
+      "note": "Sailed August 12, 1492 (as printed) and reached the Bahamas on October 12."
     }
   ],
   "people": [],
@@ -64,7 +75,8 @@
   "sources": [
     "generations-africa",
     "generations-europe",
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -82,6 +94,11 @@
       "source_id": "generations-asia",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
       "locator": "Taking Asia for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

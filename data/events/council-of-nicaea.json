@@ -44,6 +44,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=14",
       "source_text_id": "generations-europe",
       "note": "Also p. 75."
+    },
+    {
+      "source": "generations",
+      "date": "AD 325",
+      "year_am": null,
+      "year_bc_ad": 325,
+      "precision": "year",
+      "citation": "Taking the World for Jesus, ch. 2 \"The Roman Empire Opposes Christ and Falls\", PDF p. 29 (printed pp. 57–58)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=29",
+      "source_text_id": "generations-world",
+      "note": "Also p. 48."
     }
   ],
   "people": [
@@ -54,7 +65,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -67,6 +79,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=273",
         "source_text_id": "generations-europe",
         "note": "In Dresden (his father's words, quoted in the book). Also p. 237."
+      },
+      {
+        "source": "generations",
+        "date": "AD 1700",
+        "year_am": null,
+        "year_bc_ad": 1700,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 7 \"Colonialism, Slavery, and the Missionaries Who Proclaimed the Year of Jubilee\", PDF p. 87 (printed pp. 173–174)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=87",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ],
     "death": [
@@ -70,7 +81,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": []
 }

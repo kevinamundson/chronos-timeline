@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "mongol-invasions-of-japan",
+  "type": "event",
+  "title": "Mongol raids on Japan",
+  "summary": "Mongol raids on Japan",
+  "description": "Added from the Generations curriculum import (Taking the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1274,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking the World for Jesus, PDF p. 66): AD 1274 ... AD 1281. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "AD 1274 ... AD 1281",
+      "year_am": null,
+      "year_bc_ad": 1274,
+      "year_bc_ad_end": 1281,
+      "precision": "year-range",
+      "citation": "Taking the World for Jesus, ch. 5 \"The Great Khan and His Empire vs. Jesus Christ and His People\", PDF p. 66 (printed pp. 131–132)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=66",
+      "source_text_id": "generations-world",
+      "note": "Two raids."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-world"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
+    }
+  ]
+}

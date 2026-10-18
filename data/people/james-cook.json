@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "james-cook",
+  "type": "person",
+  "title": "Captain James Cook",
+  "summary": "English explorer of the Pacific.",
+  "description": "Added from the Generations curriculum import (Taking the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1728,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking the World for Jesus, PDF p. 161): 1728-1779. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1728-1779",
+        "year_am": null,
+        "year_bc_ad": 1728,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 12 \"Oceania and Beyond\", PDF p. 161 (printed pp. 321–322)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=161",
+        "source_text_id": "generations-world",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1728-1779",
+        "year_am": null,
+        "year_bc_ad": 1779,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 12 \"Oceania and Beyond\", PDF p. 161 (printed pp. 321–322)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=161",
+        "source_text_id": "generations-world",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "cook-reaches-hawaii"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-world"
+  ],
+  "related": []
+}

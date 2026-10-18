@@ -5,12 +5,12 @@
   "title": "Henry Williams",
   "summary": "Missionary to the Maori of New Zealand with his brother William; early Maori Bible translator.",
   "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
-  "sorting_year": null,
+  "sorting_year": 1792,
   "sorting_basis": {
-    "tier": "none",
+    "tier": "provisional",
     "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year."
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking the World for Jesus, PDF p. 167): 1792-1867. Pending owner decision (open question A8)."
   },
   "father": null,
   "children": [],
@@ -25,6 +25,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1792-1867",
+        "year_am": null,
+        "year_bc_ad": 1792,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 12 \"Oceania and Beyond\", PDF p. 167 (printed pp. 333–334)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=167",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ],
     "death": [
@@ -37,16 +48,29 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1792-1867",
+        "year_am": null,
+        "year_bc_ad": 1867,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 12 \"Oceania and Beyond\", PDF p. 167 (printed pp. 333–334)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=167",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ]
   },
   "events": [
+    "darwin-visits-williams",
     "maori-scripture-translation",
     "williams-mission-to-maori"
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": []
 }

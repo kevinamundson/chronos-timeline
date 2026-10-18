@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "augustine-of-canterbury",
+  "type": "person",
+  "title": "Augustine of Canterbury",
+  "summary": "Missionary sent by Gregory I to the English of Kent.",
+  "description": "Added from the Generations curriculum import (Taking the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "AD 604",
+        "year_am": null,
+        "year_bc_ad": 604,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 3 \"The Frontier Age: Taking the British Isles for Jesus\", PDF p. 45 (printed pp. 89–90)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=45",
+        "source_text_id": "generations-world",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "gregory-sends-augustine-to-england"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-world"
+  ],
+  "related": []
+}

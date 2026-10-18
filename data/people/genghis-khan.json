@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=87",
         "source_text_id": "generations-asia",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "1162-1227 AD",
+        "year_am": null,
+        "year_bc_ad": 1162,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 5 \"The Great Khan and His Empire vs. Jesus Christ and His People\", PDF p. 63 (printed pp. 125–126)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=63",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ],
     "death": [
@@ -68,7 +79,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": []
 }

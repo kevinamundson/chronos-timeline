@@ -33,6 +33,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=237",
       "source_text_id": "generations-europe",
       "note": "Unit 4 timeline; also p. 72."
+    },
+    {
+      "source": "generations",
+      "date": "AD 1789-1799",
+      "year_am": null,
+      "year_bc_ad": 1789,
+      "year_bc_ad_end": 1799,
+      "precision": "year-range",
+      "citation": "Taking the World for Jesus, ch. 8 \"As Empires Crumbled: The Greatest Century of Missions\", PDF p. 98 (printed pp. 195–196)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=98",
+      "source_text_id": "generations-world",
+      "note": null
     }
   ],
   "people": [],
@@ -40,7 +52,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +61,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

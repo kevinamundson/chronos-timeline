@@ -33,6 +33,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=125",
       "source_text_id": "generations-africa",
       "note": null
+    },
+    {
+      "source": "generations",
+      "date": "1737",
+      "year_am": null,
+      "year_bc_ad": 1737,
+      "year_bc_ad_end": 1744,
+      "precision": "year-range",
+      "citation": "Taking the World for Jesus, ch. 7 \"Colonialism, Slavery, and the Missionaries Who Proclaimed the Year of Jubilee\", PDF p. 92 (printed pp. 183–184)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=92",
+      "source_text_id": "generations-world",
+      "note": "Arrived 1737, forced to leave 1744."
     }
   ],
   "people": [],
@@ -40,7 +52,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +61,11 @@
       "source_id": "generations-africa",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
       "locator": "Taking Africa for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=67",
       "source_text_id": "generations-europe",
       "note": "Under Marcus Aurelius; also p. 14 and p. 60."
+    },
+    {
+      "source": "generations",
+      "date": "AD 177",
+      "year_am": null,
+      "year_bc_ad": 177,
+      "precision": "year",
+      "citation": "Taking the World for Jesus, ch. 2 \"The Roman Empire Opposes Christ and Falls\", PDF p. 26 (printed pp. 51–52)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=26",
+      "source_text_id": "generations-world",
+      "note": "Pastor Pothinus and forty-seven others arrested."
     }
   ],
   "people": [
@@ -42,7 +53,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -50,6 +62,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

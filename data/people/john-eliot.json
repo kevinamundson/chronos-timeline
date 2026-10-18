@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "john-eliot",
+  "type": "person",
+  "title": "John Eliot",
+  "summary": "Puritan \"Apostle to the Indians\" in Massachusetts.",
+  "description": "Added from the Generations curriculum import (Taking the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1671",
+        "year_am": null,
+        "year_bc_ad": 1671,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 6 \"First Incursions Into the New World\", PDF p. 80 (printed pp. 159–160)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=80",
+        "source_text_id": "generations-world",
+        "note": "Seven \"praying villages\" with 3,600 converts."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-world"
+  ],
+  "related": []
+}

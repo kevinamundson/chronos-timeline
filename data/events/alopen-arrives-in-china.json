@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=77",
       "source_text_id": "generations-asia",
       "note": "Also \"around AD 635\" on p. 173."
+    },
+    {
+      "source": "generations",
+      "date": "AD 635",
+      "year_am": null,
+      "year_bc_ad": 635,
+      "precision": "year",
+      "citation": "Taking the World for Jesus, ch. 3 \"The Frontier Age: Taking the British Isles for Jesus\", PDF p. 35 (printed pp. 69–70)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=35",
+      "source_text_id": "generations-world",
+      "note": "Pastors named on the tablet."
     }
   ],
   "people": [
@@ -42,7 +53,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -50,6 +62,11 @@
       "source_id": "generations-asia",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
       "locator": "Taking Asia for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

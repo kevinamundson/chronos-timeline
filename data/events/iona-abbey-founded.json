@@ -34,6 +34,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=107",
       "source_text_id": "generations-europe",
       "note": "Founded 563; Columba led the community until 597. Also p. 104."
+    },
+    {
+      "source": "generations",
+      "date": "AD 563",
+      "year_am": null,
+      "year_bc_ad": 563,
+      "precision": "year",
+      "citation": "Taking the World for Jesus, ch. 3 \"The Frontier Age: Taking the British Isles for Jesus\", PDF p. 40 (printed pp. 79–80)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=40",
+      "source_text_id": "generations-world",
+      "note": "Also p. 47."
     }
   ],
   "people": [
@@ -43,7 +54,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -51,6 +63,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

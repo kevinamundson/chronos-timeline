@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=279",
       "source_text_id": "generations-europe",
       "note": "Leonard Dober and David Nitschmann; the departure day is printed across pp. 279-280. Also p. 237."
+    },
+    {
+      "source": "generations",
+      "date": "December 13, 1732",
+      "year_am": null,
+      "year_bc_ad": 1732,
+      "precision": "day",
+      "citation": "Taking the World for Jesus, ch. 7 \"Colonialism, Slavery, and the Missionaries Who Proclaimed the Year of Jubilee\", PDF p. 90 (printed pp. 179–180)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=90",
+      "source_text_id": "generations-world",
+      "note": "Arrival on St. Thomas; departure August 18, 1732."
     }
   ],
   "people": [
@@ -42,7 +53,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -50,6 +62,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

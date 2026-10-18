@@ -148,6 +148,21 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   - Jimmu Tennō 660–585 BC (traditional)
 
   **Please note:** the book's 2350 BC start for the first Chinese dynasty is *before* the Flood in the sort chronology (Ussher / CFAH-1 Table 1, 2348 BC). Several of these dates also fall before or close to Babel. They are shown as printed, with a note, but they are not reconciled.
+- **Taking the World for Jesus vs the sort.** Only three dates touch tier 1–4 records:
+  - **The Flood:** 2348 BC, which agrees with the sort.
+  - **Creation:** "4000 BC", a round figure. The sort has 4004 BC, so this is flagged as a 4-year conflict.
+  - **Abraham entering Canaan:** "around 1900 BC". The sort has 1921 BC, and Taking Africa for Jesus has 2076 BC.
+- **Where the Generations books disagree with each other.** Both readings are kept on the record, and the extract flags them:
+  - Thomas reaching India: AD 45/46 (Asia) or AD 52 (World)
+  - The City of God: AD 427 (Africa) or 426 (World)
+  - Methodius imprisoned: 871 (Europe) or 870 (World)
+  - Anskar's mission: 829 (Europe) or 826 (World)
+  - Wycliffe's birth: 1330 (Europe) or 1320 (World)
+  - First African slaves to Portugal: 1444 (Africa) or 1441 (World)
+  - Portuguese reach the Congo: 1485 (Africa) or 1483 (World)
+  - Mackay sent to Formosa: 1872 (Asia) or 1871 (World)
+  - The persecution under Severus: AD 193 (Europe) or 192 (World)
+  - Georg Schmidt's South African mission: 1738–1748 (Africa) or 1737–1744 (World)
 - **Printed oddities kept as printed (and flagged):**
   - Punic Wars "246 BC". The conventional start is 264 BC, so this may be a transposition.
   - Mackay "April 1875" printed before the November 1875 appeal.

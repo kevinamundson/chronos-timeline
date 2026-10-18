@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=134",
         "source_text_id": "generations-asia",
         "note": "In Malden, Massachusetts."
+      },
+      {
+        "source": "generations",
+        "date": "1788-1850",
+        "year_am": null,
+        "year_bc_ad": 1788,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 9 \"Reaching Asia for Christ\", PDF p. 113 (printed pp. 225–226)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=113",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ],
     "death": [
@@ -66,12 +77,14 @@
     "burmese-bible-completed",
     "first-anglo-burmese-war",
     "first-burmese-convert",
+    "judson-conversion",
     "judsons-arrive-in-rangoon",
     "judsons-marry-and-sail"
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": []
 }

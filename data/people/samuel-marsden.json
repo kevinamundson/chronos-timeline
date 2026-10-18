@@ -5,12 +5,12 @@
   "title": "Samuel Marsden",
   "summary": "Chaplain in New South Wales who sent and led the first mission to New Zealand.",
   "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
-  "sorting_year": null,
+  "sorting_year": 1765,
   "sorting_basis": {
-    "tier": "none",
+    "tier": "provisional",
     "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year."
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking the World for Jesus, PDF p. 167): 1765-1838. Pending owner decision (open question A8)."
   },
   "father": null,
   "children": [],
@@ -25,6 +25,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1765-1838",
+        "year_am": null,
+        "year_bc_ad": 1765,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 12 \"Oceania and Beyond\", PDF p. 167 (printed pp. 333–334)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=167",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ],
     "death": [
@@ -37,6 +48,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1765-1838",
+        "year_am": null,
+        "year_bc_ad": 1838,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 12 \"Oceania and Beyond\", PDF p. 167 (printed pp. 333–334)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=167",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ]
   },
@@ -45,7 +67,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": []
 }

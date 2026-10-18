@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=142",
       "source_text_id": "generations-europe",
       "note": "King Bjorn II of the Swedes asked Louis the Pious for missionaries. Also p. 104."
+    },
+    {
+      "source": "generations",
+      "date": "AD 826",
+      "year_am": null,
+      "year_bc_ad": 826,
+      "precision": "year",
+      "citation": "Taking the World for Jesus, ch. 4 \"The Frontier Age: Taking the Continent of Europe for Jesus\", PDF p. 57 (printed pp. 113–114)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=57",
+      "source_text_id": "generations-world",
+      "note": "Printed as the start of his work in Denmark and Sweden; Taking Europe for Jesus gives 829 for the Swedish mission."
     }
   ],
   "people": [
@@ -42,7 +53,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -50,6 +62,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

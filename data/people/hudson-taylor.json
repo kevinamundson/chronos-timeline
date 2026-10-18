@@ -47,6 +47,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=185",
         "source_text_id": "generations-asia",
         "note": "In Barnsley."
+      },
+      {
+        "source": "generations",
+        "date": "1832-1905",
+        "year_am": null,
+        "year_bc_ad": 1832,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 9 \"Reaching Asia for Christ\", PDF p. 121 (printed pp. 241–242)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=121",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ],
     "death": [
@@ -81,6 +92,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=193",
         "source_text_id": "generations-asia",
         "note": "Over 800 missionaries then served with the mission."
+      },
+      {
+        "source": "generations",
+        "date": "1832-1905",
+        "year_am": null,
+        "year_bc_ad": 1905,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 9 \"Reaching Asia for Christ\", PDF p. 121 (printed pp. 241–242)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=121",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ]
   },
@@ -92,7 +114,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": []
 }

@@ -5,12 +5,12 @@
   "title": "David Livingstone",
   "summary": "Missionary and explorer of Africa; Robert Moffat's son-in-law.",
   "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
-  "sorting_year": null,
+  "sorting_year": 1813,
   "sorting_basis": {
-    "tier": "none",
+    "tier": "provisional",
     "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year."
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking the World for Jesus, PDF p. 134): 1813-1873. Pending owner decision (open question A8)."
   },
   "father": null,
   "children": [],
@@ -25,6 +25,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1813-1873",
+        "year_am": null,
+        "year_bc_ad": 1813,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 10 \"Reaching the Heart of Africa for Christ\", PDF p. 134 (printed pp. 267–268)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=134",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ],
     "death": [
@@ -52,11 +63,14 @@
     ]
   },
   "events": [
-    "death-of-livingstone"
+    "death-of-livingstone",
+    "livingstone-at-kuruman",
+    "livingstone-victoria-falls"
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-world"
   ],
   "related": []
 }

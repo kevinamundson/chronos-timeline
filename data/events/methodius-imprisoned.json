@@ -34,6 +34,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=157",
       "source_text_id": "generations-europe",
       "note": "Released in 873 (about two and a half years later)."
+    },
+    {
+      "source": "generations",
+      "date": "AD 870",
+      "year_am": null,
+      "year_bc_ad": 870,
+      "precision": "year",
+      "citation": "Taking the World for Jesus, ch. 4 \"The Frontier Age: Taking the Continent of Europe for Jesus\", PDF p. 54 (printed pp. 107–108)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=54",
+      "source_text_id": "generations-world",
+      "note": "Printed \"imprisoned for a time in AD 870\"; Taking Europe for Jesus gives 871-873."
     }
   ],
   "people": [
@@ -43,7 +54,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -51,6 +63,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

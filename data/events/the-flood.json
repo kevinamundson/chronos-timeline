@@ -147,6 +147,17 @@
       "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1",
       "note": null,
       "source_text_id": "raleigh-history-of-the-world-1736"
+    },
+    {
+      "source": "generations",
+      "date": "2348 BC",
+      "year_am": null,
+      "year_bc_ad": -2348,
+      "precision": "year",
+      "citation": "Taking the World for Jesus, ch. 11 \"Conquering the Western Hemisphere for Christ\", PDF p. 143 (printed pp. 285–286)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=143",
+      "source_text_id": "generations-world",
+      "note": "Printed in a note on the Inuit peoples."
     }
   ],
   "people": [

@@ -44,6 +44,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=65",
       "source_text_id": "generations-asia",
       "note": null
+    },
+    {
+      "source": "generations",
+      "date": "between AD 30 and AD 33",
+      "year_am": null,
+      "year_bc_ad": 30,
+      "year_bc_ad_end": 33,
+      "precision": "year-range",
+      "citation": "Taking the World for Jesus, ch. 1 \"The Roman Empire and the Men Who Turned the World Upside Down\", PDF p. 14 (printed pp. 27–28)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=14",
+      "source_text_id": "generations-world",
+      "note": "Printed as the time of Jesus's ministry."
     }
   ],
   "people": [],
@@ -54,7 +66,8 @@
   ],
   "sources": [
     "generations-europe",
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": [],
   "free_source_links": [
@@ -67,6 +80,11 @@
       "source_id": "generations-asia",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
       "locator": "Taking Asia for Jesus"
+    },
+    {
+      "source_id": "generations-world",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "locator": "Taking the World for Jesus"
     }
   ]
 }

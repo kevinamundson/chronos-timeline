@@ -1,0 +1,76 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "obookiah",
+  "type": "person",
+  "title": "Henry Obookiah",
+  "alt_names": [
+    "Ōpūkahaʻia"
+  ],
+  "summary": "Hawaiian convert whose example inspired the mission to Hawaii.",
+  "description": "Added from the Generations curriculum import (Taking the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1792,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking the World for Jesus, PDF p. 162): 1792-1818. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1792-1818",
+        "year_am": null,
+        "year_bc_ad": 1792,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 12 \"Oceania and Beyond\", PDF p. 162 (printed pp. 323–324)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=162",
+        "source_text_id": "generations-world",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1792-1818",
+        "year_am": null,
+        "year_bc_ad": 1818,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 12 \"Oceania and Beyond\", PDF p. 162 (printed pp. 323–324)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=162",
+        "source_text_id": "generations-world",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "missionaries-land-in-hawaii"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-world"
+  ],
+  "related": []
+}

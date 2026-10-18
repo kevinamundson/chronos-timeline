@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=160",
         "source_text_id": "generations-asia",
         "note": "Near Dumfries."
+      },
+      {
+        "source": "generations",
+        "date": "1824-1907",
+        "year_am": null,
+        "year_bc_ad": 1824,
+        "precision": "year",
+        "citation": "Taking the World for Jesus, ch. 12 \"Oceania and Beyond\", PDF p. 176 (printed pp. 351–352)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=176",
+        "source_text_id": "generations-world",
+        "note": null
       }
     ],
     "death": [
@@ -64,6 +75,7 @@
   },
   "events": [
     "paton-autobiography",
+    "paton-on-tanna",
     "paton-ordained",
     "paton-returns-to-new-hebrides",
     "paton-to-australia",
@@ -71,7 +83,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": []
 }

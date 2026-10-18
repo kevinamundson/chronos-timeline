@@ -40,6 +40,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=237",
         "source_text_id": "generations-asia",
         "note": "In Edo."
+      },
+      {
+        "source": "generations",
+        "date": "February 14, 1843",
+        "year_am": null,
+        "year_bc_ad": 1843,
+        "precision": "day",
+        "citation": "Taking the World for Jesus, ch. 9 \"Reaching Asia for Christ\", PDF p. 126 (printed pp. 251–252)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=126",
+        "source_text_id": "generations-world",
+        "note": "In Edo."
       }
     ],
     "death": [
@@ -73,7 +84,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-asia"
+    "generations-asia",
+    "generations-world"
   ],
   "related": []
 }
