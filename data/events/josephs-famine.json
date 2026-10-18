@@ -46,13 +46,27 @@
       "citation": null,
       "link": null,
       "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "jordan-compilation",
+      "date": "2303 AM Famine ends",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 5, chart \"Chronology From Abraham’s Death to Joseph’s Death\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "The compilation gives only the end of the famine (AM 2303); by Gen 45:6 the descent (2298) was in its second year.",
+      "source_text_id": "jordan-compilation-anno-mundi",
+      "year_am_end": 2303
     }
   ],
   "people": [
-    "joseph"
+    "joseph",
+    "jacob"
   ],
   "locations": [
-    "egypt"
+    "egypt",
+    "goshen"
   ],
   "maps": [],
   "scripture_refs": [
@@ -63,7 +77,8 @@
   "sources": [
     "kjv-gutenberg",
     "cfah-6",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
@@ -79,6 +94,7 @@
   ],
   "related": [
     "joseph-made-vizier",
-    "joseph"
+    "joseph",
+    "jacob-enters-egypt"
   ]
 }

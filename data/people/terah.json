@@ -84,6 +84,17 @@
         "source_text_id": "jordan-bc-6-4"
       },
       {
+        "source": "jordan-compilation",
+        "date": "1878 AM",
+        "year_am": 1878,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 1878.",
+        "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
         "source": "josephus",
         "date": "\"Nahor begat Haran when he was one hundred and twenty years old\"",
         "year_am": null,
@@ -150,6 +161,17 @@
         "source_text_id": "jordan-bc-6-4"
       },
       {
+        "source": "jordan-compilation",
+        "date": "2083 AM Terah dies @ 205 years old",
+        "year_am": 2083,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2083.",
+        "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
         "source": "josephus",
         "date": "\"where Terah died, and was buried, when he had lived to be two hundred and five years old\"",
         "year_am": null,
@@ -174,7 +196,8 @@
     "kjv-gutenberg",
     "ussher-annals-1658",
     "jordan-bc-6-4",
-    "josephus-antiquities-whiston"
+    "josephus-antiquities-whiston",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

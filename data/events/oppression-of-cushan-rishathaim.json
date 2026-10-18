@@ -72,6 +72,17 @@
       "year_am_end": 2602
     },
     {
+      "source": "jordan-compilation",
+      "date": "2620 AM 8 year oppression of Cushan begins. (Jud.3:8)",
+      "year_am": 2620,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 6, chart \"Year of the World: From Joseph’s death to the Judges\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2620.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "bible",
       "date": "8 years",
       "year_am": null,
@@ -96,7 +107,8 @@
     "jordan-bc-3-8",
     "jordan-sbc-2",
     "kjv-gutenberg",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

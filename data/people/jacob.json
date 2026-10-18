@@ -1,0 +1,207 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "jacob",
+  "type": "person",
+  "title": "Jacob (Israel)",
+  "summary": "Younger twin son of Isaac and Rebekah (Gen 25:26), renamed Israel (Gen 32:28); father of the twelve tribes. Went down to Egypt aged 130 (Gen 47:9) and died aged 147 (Gen 47:28).",
+  "sorting_year": -1836,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1836 BC (no higher-tier year available)."
+  },
+  "father": "isaac",
+  "children": [
+    "levi",
+    "judah",
+    "joseph"
+  ],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "BC 1836",
+        "year_am": null,
+        "year_bc_ad": -1836,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 47 (\"1836 BC (Jacob's birth)\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "Also p. 54.",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 2168",
+        "year_am": 2168,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 25:26 (Isaac 60 when the twins were born): 2108 + 60",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "2168c AM, 1836 BC",
+        "year_am": 2168,
+        "year_bc_ad": -1836,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §98 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "2168 - Esau and Jacob born (Gen. 25:25-26).",
+        "year_am": 2168,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §12 \"The Continuation of Abraham's Line\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-6"
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "2168 AM Jacob & Esau born. Isaac was 60. (25:26)",
+        "year_am": 2168,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2168.",
+        "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "\"Iacob was borne in the yeere of the World 2169\"",
+        "year_am": 2169,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, ch. VII, §III",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "note": null,
+        "source_text_id": "raleigh-history-of-the-world-1617"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "BC 1689",
+        "year_am": null,
+        "year_bc_ad": -1689,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 54 (\"1836 – 147 = 1689 BC (Jacob's death)\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": null,
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 2315",
+        "year_am": 2315,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 47:28 (Jacob lived 147 years): 2168 + 147",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "2315 AM, 1689 BC",
+        "year_am": 2315,
+        "year_bc_ad": -1689,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §145 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "2313 - Jacob dies at 147 (Gen. 47:28).",
+        "year_am": 2313,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 5),\" Biblical Chronology 6:7 (July 1994), §14 \"Joseph and Judah\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
+        "note": "Jordan prints 2313, but his own birth year 2168 + 147 = 2315 (and his descent year 2298 + 17, Gen 47:28, = 2315). This looks like a slip in Jordan's list.",
+        "source_text_id": "jordan-bc-6-7"
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "Jacob - 147 yrs. old, 2315 AM, Gn.47:28",
+        "year_am": 2315,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Jordan's own list (BC 6:7 §14) prints 2313; the compilation's 2315 matches 2168 + 147. Differs from Jordan's own published figure(s): AM 2313.",
+        "source_text_id": "jordan-compilation-anno-mundi"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.25.21-Gen.25.34",
+    "Gen.27.1-Gen.27.46",
+    "Gen.28.1-Gen.28.22",
+    "Gen.32.28",
+    "Gen.47.9",
+    "Gen.47.28"
+  ],
+  "sources": [
+    "jones-chronology-ot-2002",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-6",
+    "raleigh-history-of-the-world-1617",
+    "jordan-bc-6-7",
+    "jordan-compilation-anno-mundi"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.25.21-Gen.25.34 ; Gen.27.1-Gen.27.46 ; Gen.28.1-Gen.28.22 ; Gen.32.28 ; Gen.47.9 ; Gen.47.28"
+    }
+  ],
+  "related": [
+    "isaac",
+    "esau",
+    "levi",
+    "judah",
+    "joseph",
+    "jacob-to-haran",
+    "jacob-enters-egypt",
+    "haran",
+    "goshen",
+    "josephs-famine"
+  ],
+  "events": [
+    "jacob-to-haran",
+    "jacob-enters-egypt"
+  ]
+}

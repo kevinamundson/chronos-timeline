@@ -24,7 +24,7 @@
         "publication": { "type": ["string", "null"], "description": "Journal/volume/pages for articles." },
         "url": { "$ref": "common.schema.json#/$defs/url" },
         "alt_urls": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/url" } },
-        "access": { "enum": ["public-domain", "open-license", "free-to-read"] },
+        "access": { "enum": ["public-domain", "open-license", "free-to-read", "private-copy"], "description": "private-copy = the owner's own file, not publicly available (link works only for the owner)." },
         "license_note": { "type": "string" },
         "verified_on": { "type": "string", "format": "date" },
         "note": { "type": "string" }

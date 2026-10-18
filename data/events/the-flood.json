@@ -94,6 +94,17 @@
       "note": "B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
     },
     {
+      "source": "jordan-compilation",
+      "date": "Flood 1656 2354 Gen. 7:6",
+      "year_am": 1656,
+      "year_bc_ad": -2354,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 11, chart table \"Biblical History According To A.M & B.C. Dates\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 1656. The compilation's B.C. year (2354) is AM subtracted from 4010 (its own convention: Creation 4010 B.C.); Jordan's own SBC B.C. figures differ (here 2274 B.C.). Display only; never converted or used for sorting.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "masoretic-genealogy",
       "date": "AM 1656",
       "year_am": 1656,
@@ -163,7 +174,8 @@
     "raleigh-history-of-the-world-1736",
     "jordan-bc-6-4",
     "jordan-bc-5-8",
-    "jordan-bc-4-8"
+    "jordan-bc-4-8",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

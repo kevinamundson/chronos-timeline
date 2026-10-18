@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "burning-bush",
+  "type": "event",
+  "title": "The burning bush: God calls Moses at Horeb",
+  "summary": "At Horeb, the mountain of God, the LORD appears to Moses in a bush that burns but is not consumed and sends him to Pharaoh (Exod 3-4).",
+  "description": "Moses was 80 (Exod 7:7; Acts 7:30). Ussher places the call early in the Exodus year.",
+  "sorting_year": -1491,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals (1658): 1491 BC (no higher-tier year available)."
+  },
+  "sort_order_within_year": -1,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+    },
+    {
+      "source": "ussher",
+      "date": "2513b AM, 1491 BC",
+      "year_am": 2513,
+      "year_bc_ad": -1491,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Third Age §172 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    }
+  ],
+  "people": [
+    "moses",
+    "aaron"
+  ],
+  "locations": [
+    "mount-sinai",
+    "midian"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Exod.3.1-Exod.3.22",
+    "Exod.4.1-Exod.4.31",
+    "Acts.7.30-Acts.7.35"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Exod.3.1-Exod.3.22 ; Exod.4.1-Exod.4.31 ; Acts.7.30-Acts.7.35"
+    }
+  ],
+  "related": [
+    "moses-flees-to-midian",
+    "exodus"
+  ]
+}

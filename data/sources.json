@@ -875,6 +875,22 @@
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-17), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-17",
       "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "jordan-compilation-anno-mundi",
+      "title": "Anno Mundi Chronology Studies (A.M. chronology charts and A.M./B.C. table)",
+      "authors": [
+        "Unnamed compiler (a compilation of James B. Jordan's chronological system)"
+      ],
+      "translator_or_editor": null,
+      "year": "2010",
+      "publication": "Untitled 14-page PDF (\"Anno Mundi_Chronology_Studies2.pdf\"; Word original \"Chronology Studies.doc\", PDF made 3 Feb 2012); internal date \"as of February 14, 2010\"; p. 8 is headed \"(Chronology from James Jordan)\" and p. 4 carries an \"Outline by James Jordan\".",
+      "url": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "alt_urls": [],
+      "access": "private-copy",
+      "license_note": "Private copy in the owner's Google Drive (not publicly available; the link works only for the owner). The compiler is unnamed. The owner has confirmed it is an accurate compilation of Jordan's system (2026-10-18). Only short quotes and figures are used here.",
+      "verified_on": "2026-10-18",
+      "note": "Drive id 1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS. The id 11zUlqRaS-QD8iPEC0-Ed6OSPgwSEuTKn that docs/open-questions.md cited for it is actually the owner's copy of From Creation to Solomon (jordan-sbc-2). Its AM figures follow Jordan (Judges as in Studies in Biblical Chronology No. 2, 2001) with a few slips; its B.C. column is its own (Creation 4010 B.C., i.e. B.C. = 4010 − AM), not Jordan's SBC (Creation 3930)."
     }
   ]
 }

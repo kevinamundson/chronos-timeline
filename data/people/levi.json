@@ -1,0 +1,136 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "levi",
+  "type": "person",
+  "title": "Levi",
+  "summary": "Third son of Jacob and Leah (Gen 29:34); father of Gershon, Kohath and Merari; died aged 137 (Exod 6:16).",
+  "sorting_year": -1756,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1756 BC (no higher-tier year available)."
+  },
+  "father": "jacob",
+  "children": [
+    "kohath"
+  ],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "BC 1756",
+        "year_am": null,
+        "year_bc_ad": -1756,
+        "precision": "approximate",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 62 (\"1756 B.C. approximate birth year of Levi\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": null,
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "ussher",
+        "date": "2248 AM, 1756 BC",
+        "year_am": 2248,
+        "year_bc_ad": -1756,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §119 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": "Paragraph printed as \"1 19.\" in the transcription.",
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "2257? - Levi ben Jacob born.",
+        "year_am": 2257,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §13 \"Jacob and Esau\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+        "note": "Jordan spaces Jacob's children from his marriage in AM 2252 (after 7 years of service), about 9 years later than Ussher (2248).",
+        "source_text_id": "jordan-bc-6-6"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "ussher",
+        "date": "2385 AM, 1619 BC",
+        "year_am": 2385,
+        "year_bc_ad": -1619,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §151 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": "\"Levi died in Egypt when he was 137 years old. Ex 6:16\"",
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "2394? - Levi dies at 137 (Ex. 6:16).",
+        "year_am": 2394,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 5),\" Biblical Chronology 6:7 (July 1994), §15 \"Moses\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-7"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.29.34",
+    "Gen.34.25-Gen.34.31",
+    "Gen.46.11",
+    "Exod.6.16"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "jones-chronology-ot-2002",
+    "ussher-annals-1658",
+    "jordan-bc-6-6",
+    "jordan-bc-6-7"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.29.34 ; Gen.34.25-Gen.34.31 ; Gen.46.11 ; Exod.6.16"
+    }
+  ],
+  "related": [
+    "jacob",
+    "kohath",
+    "moses",
+    "aaron"
+  ],
+  "events": []
+}

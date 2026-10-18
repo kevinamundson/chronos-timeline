@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "mount-sinai",
+  "type": "location",
+  "title": "Mount Sinai (Horeb)",
+  "location_type": "mountain",
+  "summary": "The mountain of God where Moses saw the burning bush (Exod 3:1, \"Horeb\") and where Israel camped and received the law (Exod 19).",
+  "lat": 28.539722,
+  "lng": 33.973333,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Jebel Musa (modern)); representative point 33.973333,28.539722 (lon,lat).",
+  "certainty": {
+    "level": "medium",
+    "percent": 50,
+    "basis": "OpenBible.info: \"Jebel Musa (modern): 50% confidence\" (page fetched 2026-10-17). OpenBible lists 14 possible identifications; Jebel Musa is only 50%. Horeb (a9bb03e) is \"another name for Mount Sinai\" (very high)."
+  },
+  "openbible_id": "abfba2a",
+  "openbible_url": "https://www.openbible.info/geo/ancient/abfba2a/mount-sinai",
+  "openbible_geojson": "https://a.openbible.info/geo/data/abfba2a.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Exod.3.1",
+    "Exod.19.1-Exod.19.2",
+    "Exod.19.11"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/abfba2a/mount-sinai"
+    }
+  ],
+  "related": [
+    "moses",
+    "burning-bush",
+    "arrival-at-sinai"
+  ],
+  "maps": [
+    "loc-1695-israelites-travels"
+  ]
+}

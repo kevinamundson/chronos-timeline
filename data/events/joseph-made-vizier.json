@@ -82,6 +82,17 @@
       "note": "BC year from Jordan, \"Egypt in Biblical History\" (BC 5:8): section \"Egypt and the Patriarchs\": \"Joseph ruled Egypt for Pharaoh from a.m. 2289 to 2369 ... any accurate history of Egypt must assume an era of faith between the years 1641 B.C. and 1561 B.C.\" BC 2:7: \"AM 2289 Joseph becomes viceroy of Egypt, age 30\". B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
     },
     {
+      "source": "jordan-compilation",
+      "date": "Joseph, 30 yrs. old, stands before Pharaoh (41:46) after “2 full years”. (41:1) 2289 AM",
+      "year_am": 2289,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 5, chart \"Chronology From Abraham’s Death to Joseph’s Death\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2289.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "josephus",
       "date": "\"Joseph was now grown up to thirty years of age\" (no year count)",
       "year_am": null,
@@ -115,7 +126,8 @@
     "josephus-antiquities-whiston",
     "jordan-bc-6-6",
     "jordan-bc-5-8",
-    "jordan-bc-2-7"
+    "jordan-bc-2-7",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
@@ -140,6 +152,7 @@
     "exodus",
     "assassination-attempt-on-amenemhat-i",
     "josephs-famine",
-    "death-of-moeris"
+    "death-of-moeris",
+    "jacob-enters-egypt"
   ]
 }

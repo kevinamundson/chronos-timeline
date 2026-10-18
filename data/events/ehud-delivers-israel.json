@@ -72,6 +72,17 @@
       "year_am_end": 2680
     },
     {
+      "source": "jordan-compilation",
+      "date": "2686 AM 2nd Judge: Ehud’s produced peace that lasted for 80 yrs. (3:30)",
+      "year_am": 2686,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 8, chart \"Year of the World: From the Judges to King Saul (Chronology from James Jordan)\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2686.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "bible",
       "date": "\"the land had rest fourscore years\"",
       "year_am": null,
@@ -96,7 +107,8 @@
     "jordan-bc-3-8",
     "jordan-sbc-2",
     "kjv-gutenberg",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

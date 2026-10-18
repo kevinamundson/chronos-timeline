@@ -85,6 +85,17 @@
         "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
         "source_text_id": "jordan-bc-5-8",
         "note": "Also BC 6:4 §7-8: \"Peleg was born in am 1757 and lived 239 years, to the year 1996.\" B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "1757 AM",
+        "year_am": 1757,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 1757.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ],
     "death": [
@@ -140,6 +151,17 @@
         "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
         "source_text_id": "jordan-bc-5-8",
         "note": "B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "1996 AM Peleg dies@ 239 years old",
+        "year_am": 1996,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 1996.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ]
   },
@@ -154,7 +176,8 @@
     "ussher-annals-1658",
     "jones-chronology-ot-2002",
     "jordan-bc-5-8",
-    "jordan-bc-6-4"
+    "jordan-bc-6-4",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

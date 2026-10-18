@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "covenant-of-circumcision",
+  "type": "event",
+  "title": "Covenant of circumcision; Abram renamed Abraham",
+  "summary": "God makes the covenant of circumcision with Abraham, aged 99, and promises Isaac (Gen 17).",
+  "description": "God appeared to Abram at 99, renamed him Abraham and Sarai Sarah, gave the sign of circumcision, and promised that Sarah would bear Isaac \"at this set time in the next year\" (Gen 17:1-21).",
+  "sorting_year": -1897,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1897 BC (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1897 BC (Covenant of Circumcision)",
+      "year_am": null,
+      "year_bc_ad": -1897,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "source_text_id": "cfah-1",
+      "cfah_basis": "table1_baseline"
+    },
+    {
+      "source": "ussher",
+      "date": "2107c AM, 1897 BC",
+      "year_am": 2107,
+      "year_bc_ad": -1897,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Third Age §81 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "2107 - In the spring God appears to Abram, changes his name to Abraham, and tells him to circumcise his household.",
+      "year_am": 2107,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §11 \"The Life of Abraham\" (year list)",
+      "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+      "note": null,
+      "source_text_id": "jordan-bc-6-6"
+    },
+    {
+      "source": "jordan-compilation",
+      "date": "2107 AM 99 yrs old Abram, 13 yrs old Ishmael is circumcised (Gen.17, Rom.4:19)",
+      "year_am": 2107,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2107.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    }
+  ],
+  "people": [
+    "abraham",
+    "isaac"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.17.1-Gen.17.27"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-1",
+    "ussher-annals-1658",
+    "jordan-bc-6-6",
+    "jordan-compilation-anno-mundi"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.17.1-Gen.17.27"
+    }
+  ],
+  "related": [
+    "isaac-birth",
+    "abraham-birth"
+  ]
+}

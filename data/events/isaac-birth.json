@@ -1,0 +1,124 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "isaac-birth",
+  "type": "event",
+  "title": "Birth of Isaac",
+  "summary": "Isaac is born to Abraham (100) and Sarah (90), as promised (Gen 21:1-7).",
+  "description": "God visited Sarah and she bore Isaac at the set time of which God had spoken; Abraham was 100 years old (Gen 21:1-5).",
+  "sorting_year": -1896,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1896 BC (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference. CFAH-6 Argument 4 §5 states Isaac was \"born in 1896 BC\" (Ussher-Jones); not an AP or a CFAH-1 Table 1 row."
+    },
+    {
+      "source": "ussher-jones",
+      "date": "BC 1896 (2108 AM)",
+      "year_am": 2108,
+      "year_bc_ad": -1896,
+      "precision": "year",
+      "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 59 (\"1896 BC = 2108 AM Year Isaac is born (Gen.21:5, see Chart 3)\")",
+      "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+      "note": null,
+      "source_text_id": "jones-chronology-ot-2002"
+    },
+    {
+      "source": "masoretic-genealogy",
+      "date": "AM 2108",
+      "year_am": 2108,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Gen 21:5, with Abraham born AM 2008",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "2108c AM, 1896 BC",
+      "year_am": 2108,
+      "year_bc_ad": -1896,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Third Age §85 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "2108 - In the spring Sarah gives birth to Isaac in Philistine territory (Gen. 21:1-7).",
+      "year_am": 2108,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §11 \"The Life of Abraham\" (year list)",
+      "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+      "note": null,
+      "source_text_id": "jordan-bc-6-6"
+    },
+    {
+      "source": "jordan-compilation",
+      "date": "100 yrs old Abraham; Isaac is born. (21:5) ... 2108 AM",
+      "year_am": 2108,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2108.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "\"in the yeere 2109\"",
+      "year_am": 2109,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, ch. I, §IIII",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "note": "One year more than Ussher. The 1617 text puts Abraham's birth at AM 2008 (Book II, ch. I, §VIII), so 2109 does not follow from \"Abraham 100\" (Gen 21:5). Raleigh's Jacob (2169), Moses (2434) and flight to Midian (2474) are also one year above Ussher.",
+      "source_text_id": "raleigh-history-of-the-world-1617"
+    }
+  ],
+  "people": [
+    "isaac",
+    "abraham"
+  ],
+  "locations": [
+    "gerar"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.21.1-Gen.21.7"
+  ],
+  "sources": [
+    "jones-chronology-ot-2002",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-6",
+    "raleigh-history-of-the-world-1617",
+    "jordan-compilation-anno-mundi"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.21.1-Gen.21.7"
+    }
+  ],
+  "related": [
+    "covenant-of-circumcision",
+    "weaning-of-isaac",
+    "abraham-birth"
+  ]
+}

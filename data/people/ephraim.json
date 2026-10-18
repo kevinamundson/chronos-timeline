@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ephraim",
+  "type": "person",
+  "title": "Ephraim",
+  "summary": "Second son of Joseph and Asenath, born in Egypt \"before the years of famine came\" (Gen 41:50-52); adopted by Jacob (Gen 48).",
+  "sorting_year": -1715,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals (1658): 1715 BC (no higher-tier year available)."
+  },
+  "father": "joseph",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "ussher",
+        "date": "2289b AM, 1715 BC",
+        "year_am": 2289,
+        "year_bc_ad": -1715,
+        "precision": "approximate",
+        "citation": "Ussher, Annals of the World, Third Age §132 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": "Ussher §132 (header 2289b AM, 1715 BC, the first of the seven years of plenty): Asenath bore Joseph two sons during the years of plenty. The exact year is not given.",
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "bible",
+        "date": "\"before the years of famine came\"",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Gen 41:50",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": "Born during the seven years of plenty.",
+        "source_text_id": "kjv-gutenberg"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.41.50-Gen.41.52",
+    "Gen.48.1-Gen.48.20"
+  ],
+  "sources": [
+    "ussher-annals-1658",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.41.50-Gen.41.52 ; Gen.48.1-Gen.48.20"
+    }
+  ],
+  "related": [
+    "joseph",
+    "jacob",
+    "manasseh",
+    "josephs-famine"
+  ],
+  "events": []
+}

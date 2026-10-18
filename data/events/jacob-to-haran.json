@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "jacob-to-haran",
+  "type": "event",
+  "title": "Jacob flees to Laban in Haran (Bethel vision)",
+  "summary": "After receiving Isaac's blessing, Jacob (aged 77) flees from Esau to Laban in Haran; at Bethel he dreams of the ladder (Gen 27-28).",
+  "description": "Jacob left Beersheba for Haran and saw the ladder to heaven at Bethel (Gen 28:10-22). His age (77) is derived from Gen 41:46, 45:6 and 47:9.",
+  "sorting_year": -1759,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1759 BC (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "BC 1759",
+      "year_am": null,
+      "year_bc_ad": -1759,
+      "precision": "year",
+      "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 62 (\"1759 B.C. 77 year old Jacob fled to Laban (Chart Two)\")",
+      "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+      "note": "On p. 65 Jones says Ussher placed Jacob's arrival at Haran about BC 1760 and \"had been right\". The two figures differ by one year (departure vs. the start of the 7 years of service?).",
+      "source_text_id": "jones-chronology-ot-2002"
+    },
+    {
+      "source": "ussher",
+      "date": "2245a AM, 1760 BC",
+      "year_am": 2245,
+      "year_bc_ad": -1760,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Third Age §111 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "§111-112. The transcription has a typo here: \"Jacob was 77 years old in 2259 AM\" (should be 2245).",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "2245 - ... Jacob leaves home at age 77 to get a wife in Padan-Aram. God appears to him at the top of a ladder to heaven (Gen. 27-28).",
+      "year_am": 2245,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §13 \"Jacob and Esau\" (year list)",
+      "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+      "note": null,
+      "source_text_id": "jordan-bc-6-6"
+    },
+    {
+      "source": "jordan-compilation",
+      "date": "2245 AM Jacob, 77 yrs old, meets Rachel.",
+      "year_am": 2245,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 5, chart \"Chronology From Abraham’s Death to Joseph’s Death\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2245.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    }
+  ],
+  "people": [
+    "jacob",
+    "isaac",
+    "esau"
+  ],
+  "locations": [
+    "haran"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.27.41-Gen.27.46",
+    "Gen.28.1-Gen.28.22"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "jones-chronology-ot-2002",
+    "ussher-annals-1658",
+    "jordan-bc-6-6",
+    "jordan-compilation-anno-mundi"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.27.41-Gen.27.46 ; Gen.28.1-Gen.28.22"
+    }
+  ],
+  "related": [
+    "isaac",
+    "haran"
+  ]
+}

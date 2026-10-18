@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "weaning-of-isaac",
+  "type": "event",
+  "title": "Weaning of Isaac; Ishmael sent away",
+  "summary": "Abraham holds a feast when Isaac is weaned; Hagar and Ishmael are sent away (Gen 21:8-21).",
+  "description": "At the weaning feast Sarah saw Ishmael mocking (Gen 21:9; Gal 4:29). Jones and CFAH count the 400 years of Gen 15:13 from here (\"Isaac established as the Seed lineage\").",
+  "sorting_year": -1891,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1891 BC (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1891 BC (Weaning of Isaac)",
+      "year_am": null,
+      "year_bc_ad": -1891,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "source_text_id": "cfah-1",
+      "cfah_basis": "table1_baseline"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "BC 1891 (2113 AM)",
+      "year_am": 2113,
+      "year_bc_ad": -1891,
+      "precision": "year",
+      "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 59 (\"1891 BC = 2113 AM Isaac established as the Seed lineage.\")",
+      "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+      "note": null,
+      "source_text_id": "jones-chronology-ot-2002"
+    },
+    {
+      "source": "ussher",
+      "date": "2113c AM, 1891 BC",
+      "year_am": 2113,
+      "year_bc_ad": -1891,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Third Age §86 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "2113 - Isaac is weaned.",
+      "year_am": 2113,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §11 \"The Life of Abraham\" (year list)",
+      "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+      "note": null,
+      "source_text_id": "jordan-bc-6-6"
+    },
+    {
+      "source": "jordan-compilation",
+      "date": "400 yrs of afflicting the seed of Abraham began in 2113 AM, when Isaac was weaned at 5 years old",
+      "year_am": 2113,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2113.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    }
+  ],
+  "people": [
+    "isaac",
+    "abraham"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.21.8-Gen.21.21",
+    "Gal.4.29-Gal.4.30"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-1",
+    "jones-chronology-ot-2002",
+    "ussher-annals-1658",
+    "jordan-bc-6-6",
+    "jordan-compilation-anno-mundi"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.21.8-Gen.21.21 ; Gal.4.29-Gal.4.30"
+    }
+  ],
+  "related": [
+    "isaac-birth",
+    "exodus"
+  ]
+}

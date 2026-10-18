@@ -85,6 +85,17 @@
         "source_text_id": "jordan-bc-6-4"
       },
       {
+        "source": "jordan-compilation",
+        "date": "1693 AM",
+        "year_am": 1693,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 1693.",
+        "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
         "source": "josephus",
         "date": "\"Sala ... whom Arphaxad had for his son at the hundred and thirty-fifth year of his age\"",
         "year_am": null,
@@ -149,6 +160,17 @@
         "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
         "note": "Stated relative to Abraham; Jordan prints no AM figure for this death.",
         "source_text_id": "jordan-bc-6-4"
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "2126 AM Salah dies @ 433 years old",
+        "year_am": 2126,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": null,
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ]
   },
@@ -163,7 +185,8 @@
     "kjv-gutenberg",
     "ussher-annals-1658",
     "jordan-bc-6-4",
-    "josephus-antiquities-whiston"
+    "josephus-antiquities-whiston",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

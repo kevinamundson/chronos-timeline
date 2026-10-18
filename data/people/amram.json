@@ -1,0 +1,120 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "amram",
+  "type": "person",
+  "title": "Amram",
+  "summary": "Son of Kohath; husband of Jochebed, his father's sister; father of Aaron, Moses and Miriam; lived 137 years (Exod 6:18-20).",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier 1-4 dates this record's birth; unsorted (null)."
+  },
+  "father": "kohath",
+  "children": [
+    "aaron",
+    "moses",
+    "miriam"
+  ],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "ussher",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "No birth year. Ussher §151: Amram lived 137 years and died shortly before the Exodus."
+      },
+      {
+        "source": "jordan",
+        "date": "2350? - Amram ben Kohath born (Ex. 6:18) (Kohath is 61); Jochebed bath Levi born (Levi is 93).",
+        "year_am": 2350,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 5),\" Biblical Chronology 6:7 (July 1994), §15 \"Moses\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-7"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "jordan",
+        "date": "2487? - Amram dies at 137 (Ex. 6:20).",
+        "year_am": 2487,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 5),\" Biblical Chronology 6:7 (July 1994), §15 \"Moses\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-7"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Exod.6.18-Exod.6.20",
+    "Num.26.58-Num.26.59"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "jordan-bc-6-7"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Exod.6.18-Exod.6.20 ; Num.26.58-Num.26.59"
+    }
+  ],
+  "related": [
+    "kohath",
+    "aaron",
+    "moses",
+    "miriam"
+  ],
+  "events": []
+}

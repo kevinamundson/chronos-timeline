@@ -69,6 +69,17 @@
       "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). BC 5:2: \"The Ammonites oppressed Israel in the Center and North beginning in 2835\"."
     },
     {
+      "source": "jordan-compilation",
+      "date": "18 yr. opp. of Ammon. “from that year”(10:8) includes this yr. ... 2861 AM",
+      "year_am": 2861,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 8, chart \"Year of the World: From the Judges to King Saul (Chronology from James Jordan)\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2861.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "bible",
       "date": "Ammon 18 years (Judg 10:8); Philistines 40 years (Judg 13:1)",
       "year_am": null,
@@ -97,7 +108,8 @@
     "jordan-bc-3-8",
     "jordan-sbc-2",
     "kjv-gutenberg",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "arrival-at-sinai",
+  "type": "event",
+  "title": "Israel arrives at Mount Sinai",
+  "summary": "In the third month after leaving Egypt, Israel camps before Mount Sinai, where God gives the law (Exod 19-20).",
+  "description": "\"In the third month, when the children of Israel were gone forth out of the land of Egypt, the same day came they into the wilderness of Sinai\" (Exod 19:1). Jones reads \"the same day\" as the 3rd day of the 3rd month; Jordan as the 1st day.",
+  "sorting_year": -1491,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals (1658): 1491 BC (no higher-tier year available)."
+  },
+  "sort_order_within_year": 2,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "3rd day of the 3rd month (Exodus year)",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 57 n. 83 (\"Sinai in the 3rd month, \\\"the same day\\\" (Exo.19:1) which means the 3rd day of the 3rd month\")",
+      "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+      "note": "Jones gives the day and month only; the year is his Exodus year (1491 BC).",
+      "source_text_id": "jones-chronology-ot-2002"
+    },
+    {
+      "source": "ussher",
+      "date": "2513b AM, 1491 BC",
+      "year_am": 2513,
+      "year_bc_ad": -1491,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Fourth Age §192 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "§192 \"The third month.\" (camp 12, the wilderness of Sinai).",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "On the 1st day of the 3d month, Israel arrived before Sinai and camped in front of Mount Sinai (Ex. 19:1-2).",
+      "year_am": 2513,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 6),\" Biblical Chronology 6:8 (August 1994), §17 \"The Year 2514\" (opening summary)",
+      "link": "https://biblicalhorizons.com/1994/08/01/6_08/",
+      "note": null,
+      "source_text_id": "jordan-bc-6-8"
+    }
+  ],
+  "people": [
+    "moses",
+    "aaron"
+  ],
+  "locations": [
+    "mount-sinai"
+  ],
+  "maps": [
+    "loc-1695-israelites-travels"
+  ],
+  "scripture_refs": [
+    "Exod.19.1-Exod.19.25",
+    "Exod.20.1-Exod.20.21"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "jones-chronology-ot-2002",
+    "ussher-annals-1658",
+    "jordan-bc-6-8"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Exod.19.1-Exod.19.25 ; Exod.20.1-Exod.20.21"
+    }
+  ],
+  "related": [
+    "exodus",
+    "burning-bush"
+  ]
+}

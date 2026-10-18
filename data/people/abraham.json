@@ -16,7 +16,9 @@
     "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1996 BC (Birth of Abraham) (no higher-tier year available)."
   },
   "father": "terah",
-  "children": [],
+  "children": [
+    "isaac"
+  ],
   "scripture_facts": {
     "age_at_named_son": null,
     "named_son": null,
@@ -82,6 +84,17 @@
         "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
         "source_text_id": "jordan-bc-5-8",
         "note": "AM 2008 also in BC 2:6, 4:8 §2, 6:4 §8. B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "2008 AM ... Abram born",
+        "year_am": 2008,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2008.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ],
     "death": [
@@ -126,6 +139,17 @@
         "link": "https://biblicalhorizons.com/1994/05/01/6_05/",
         "source_text_id": "jordan-bc-6-5",
         "note": null
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "2183 AM Abraham dies @ 175 years old (Gen.25:7)",
+        "year_am": 2183,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2183.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ]
   },
@@ -140,7 +164,8 @@
     "ussher-annals-1658",
     "jones-chronology-ot-2002",
     "jordan-bc-5-8",
-    "jordan-bc-6-5"
+    "jordan-bc-6-5",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
@@ -154,7 +179,11 @@
     "abraham-enters-canaan",
     "canaan",
     "terah",
-    "djosers-famine"
+    "djosers-famine",
+    "isaac",
+    "isaac-birth",
+    "covenant-of-circumcision",
+    "binding-of-isaac"
   ],
   "events": [
     "abraham-birth",

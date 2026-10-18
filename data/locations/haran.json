@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "haran",
+  "type": "location",
+  "title": "Haran",
+  "location_type": "settlement",
+  "summary": "Where Terah settled and died (Gen 11:31-32); Jacob fled to Laban at Haran (Gen 27:43; 28:10).",
+  "lat": 36.864444,
+  "lng": 39.032778,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Haran); representative point 39.032778,36.864444 (lon,lat).",
+  "certainty": {
+    "level": "high",
+    "percent": 95,
+    "basis": "OpenBible.info: \"Haran: 95% confidence\" (page fetched 2026-10-17)."
+  },
+  "openbible_id": "a6d9af3",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a6d9af3/haran",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a6d9af3.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.11.31",
+    "Gen.12.4",
+    "Gen.28.10",
+    "Gen.29.4"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a6d9af3/haran"
+    }
+  ],
+  "related": [
+    "terah",
+    "abraham",
+    "jacob",
+    "jacob-to-haran"
+  ],
+  "maps": []
+}

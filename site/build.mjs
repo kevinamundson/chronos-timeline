@@ -69,7 +69,7 @@ const osis = (ref) => {
 const scriptureList = (refs) => !refs?.length ? '' : `<ul class="chips">${refs.map((r) => { const o = osis(r); return `<li>${ext(o.href, esc(o.text))}</li>`; }).join('')}</ul>`;
 
 // Chronology display order (owner spec): CFAH anchor, CFAH-1 Table 1, Ussher-Jones, Ussher, Jordan (secondary, display only), Bible, (MT arithmetic), Josephus, Raleigh, Clonmacnoise.
-const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:', 'ussher-jones', 'ussher', 'jordan', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
+const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:', 'ussher-jones', 'ussher', 'jordan', 'jordan-compilation', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
 const rowKey = (e) => (e.source === 'cfah' ? `cfah:${e.cfah_basis || ''}` : e.source);
 const rowRank = (e) => { const i = ROW_ORDER.indexOf(rowKey(e)); return i < 0 ? 99 : i; };
 const chronName = (e) => {
@@ -79,6 +79,7 @@ const chronName = (e) => {
     return 'CFAH';
   }
   if (e.source === 'jordan') return 'Jordan <span class="tag tag-sec" title="Secondary display chronology; never sets the sort year">secondary</span>';
+  if (e.source === 'jordan-compilation') return 'Jordan (compilation) <span class="tag tag-sec" title="Unnamed compiler\'s charts of Jordan\'s system; secondary display only">secondary</span>';
   const c = chronById[e.source];
   return esc(c ? c.abbreviation || c.name : e.source);
 };

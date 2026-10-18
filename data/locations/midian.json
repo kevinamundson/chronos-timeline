@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "midian",
+  "type": "location",
+  "title": "Midian",
+  "location_type": "region",
+  "summary": "Land to which Moses fled from Pharaoh (Exod 2:15).",
+  "lat": 28.4947,
+  "lng": 35.0122,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Midian (ancient)); representative point 35.012200,28.494700 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Midian (ancient): very high confidence\" (page fetched 2026-10-17)."
+  },
+  "openbible_id": "acc6d8e",
+  "openbible_url": "https://www.openbible.info/geo/ancient/acc6d8e/midian",
+  "openbible_geojson": "https://a.openbible.info/geo/data/acc6d8e.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Exod.2.15",
+    "Exod.3.1"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/acc6d8e/midian"
+    }
+  ],
+  "related": [
+    "moses",
+    "moses-flees-to-midian"
+  ],
+  "maps": [
+    "loc-1695-israelites-travels"
+  ]
+}

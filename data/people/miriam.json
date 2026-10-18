@@ -1,0 +1,118 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "miriam",
+  "type": "person",
+  "title": "Miriam",
+  "summary": "Sister of Moses and Aaron, a prophetess (Exod 15:20); died at Kadesh (Num 20:1).",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier 1-4 dates this record's birth; unsorted (null)."
+  },
+  "father": "amram",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "ussher",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "No birth year. Ussher §264 says she was the eldest of the three and \"lived 130 years\", which implies about AM 2422, but Ussher does not print that year."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "ussher",
+        "date": "2552c AM, 1452 BC",
+        "year_am": 2552,
+        "year_bc_ad": -1452,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Fourth Age §264 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": "\"Miriam died ... 4 months before her brother Aaron ... She was the oldest of the three and lived 130 years.\"",
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "Israel arrived at Kedesh in the 1st month, and that Miriam died at that time.",
+        "year_am": 2553,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 6),\" Biblical Chronology 6:8 (August 1994), §18 \"The Years 2553 and 2554.\"",
+        "link": "https://biblicalhorizons.com/1994/08/01/6_08/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-8"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Exod.2.4-Exod.2.8",
+    "Exod.15.20-Exod.15.21",
+    "Num.12.1-Num.12.15",
+    "Num.20.1"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-8"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Exod.2.4-Exod.2.8 ; Exod.15.20-Exod.15.21 ; Num.12.1-Num.12.15 ; Num.20.1"
+    }
+  ],
+  "related": [
+    "moses",
+    "aaron",
+    "amram"
+  ],
+  "events": []
+}

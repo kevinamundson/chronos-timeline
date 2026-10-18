@@ -71,6 +71,17 @@
       "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). Same essay: \"Since the invasion of the land came in A.M. 2553 ...\"."
     },
     {
+      "source": "jordan-compilation",
+      "date": "Mar. – Apr. 2554 A.M. was the “1st month, 10th day” when Joshua crossed the Jordan River (Josh. 4:19).",
+      "year_am": 2554,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 6, chart \"Year of the World: From Joseph’s death to the Judges\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2554.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "bible",
       "date": "10th day of the 1st month",
       "year_am": null,
@@ -100,7 +111,8 @@
     "jordan-bc-3-8",
     "jordan-sbc-3",
     "kjv-gutenberg",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

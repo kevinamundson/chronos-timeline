@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "moses-flees-to-midian",
+  "type": "event",
+  "title": "Moses kills an Egyptian and flees to Midian",
+  "summary": "At 40 Moses kills an Egyptian who was striking a Hebrew and flees from Pharaoh to Midian (Exod 2:11-15; Acts 7:23-29).",
+  "description": "The age of 40 comes from Acts 7:23. Moses stayed 40 years in Midian (Acts 7:30). CFAH-6 identifies Moses with Amenemhat IV (Argument 4 §13).",
+  "sorting_year": -1531,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals (1658): 1531 BC (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference. CFAH-6 Argument 4 §13: \"Moses left when he was 40 years old which would have been 1531/1530 BC\" (not an AP)."
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+    },
+    {
+      "source": "ussher",
+      "date": "2473b AM, 1531 BC",
+      "year_am": 2473,
+      "year_bc_ad": -1531,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Third Age §168 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "2473 - exile of Moses from Egypt, according to Acts 7:23.",
+      "year_am": 2473,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 5),\" Biblical Chronology 6:7 (July 1994), §15 \"Moses\" (year list)",
+      "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
+      "note": null,
+      "source_text_id": "jordan-bc-6-7"
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "\"in the yeere of the World 2474\"",
+      "year_am": 2474,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, ch. IIII, §I",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "note": null,
+      "source_text_id": "raleigh-history-of-the-world-1617"
+    }
+  ],
+  "people": [
+    "moses"
+  ],
+  "locations": [
+    "egypt",
+    "midian"
+  ],
+  "maps": [
+    "loc-1695-israelites-travels"
+  ],
+  "scripture_refs": [
+    "Exod.2.11-Exod.2.22",
+    "Acts.7.23-Acts.7.29"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-7",
+    "raleigh-history-of-the-world-1617"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Exod.2.11-Exod.2.22 ; Acts.7.23-Acts.7.29"
+    }
+  ],
+  "related": [
+    "moses-birth",
+    "burning-bush",
+    "end-of-egypt-dynasty-12"
+  ]
+}

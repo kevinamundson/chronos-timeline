@@ -79,6 +79,17 @@
       "link": "https://www.garynorth.com/freebooks/docs/pdf/the_law_of_the_covenant.pdf",
       "source_text_id": "jordan-book-law-of-the-covenant-1984",
       "note": "Interval only, as printed. \"Call of Abram\" is Jordan's phrase; he does not say here whether this is the Haran call or entry into Canaan, so it is attached to this event as a note-level datum only. Not converted to AM."
+    },
+    {
+      "source": "jordan-compilation",
+      "date": "1927 B.C. 2083 AM ... Abram, 75 yrs old, enters the land of Canaan",
+      "year_am": 2083,
+      "year_bc_ad": -1927,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2083. The compilation's B.C. year (1927) is AM subtracted from 4010 (its own convention: Creation 4010 B.C.); Jordan's own SBC B.C. figures differ (here 1847 B.C.). Display only; never converted or used for sorting.",
+      "source_text_id": "jordan-compilation-anno-mundi"
     }
   ],
   "people": [
@@ -105,7 +116,8 @@
     "ussher-annals-1658",
     "jordan-bc-5-8",
     "jordan-bc-2-7",
-    "jordan-book-law-of-the-covenant-1984"
+    "jordan-book-law-of-the-covenant-1984",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

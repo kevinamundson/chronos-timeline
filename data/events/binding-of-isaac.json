@@ -1,0 +1,98 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "binding-of-isaac",
+  "type": "event",
+  "title": "Binding of Isaac on Mount Moriah",
+  "summary": "God tests Abraham by commanding him to offer Isaac on a mountain in the land of Moriah; the Angel of the LORD stops him and a ram is provided (Gen 22).",
+  "description": "Abraham offered Isaac \"by faith\" (Heb 11:17-19). Scripture gives no year. Ussher dates it 2133 AM (Isaac 25, following Josephus); Jordan suggests about 2130.",
+  "sorting_year": -1871,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals (1658): 1871 BC (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+    },
+    {
+      "source": "ussher",
+      "date": "2133 AM, 1871 BC",
+      "year_am": 2133,
+      "year_bc_ad": -1871,
+      "precision": "approximate",
+      "citation": "Ussher, Annals of the World, Third Age §90 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "§91: \"Josephus says that at this time Isaac was 25 years old.\"",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "2130? - God tells Abraham to take Isaac into the land, to Mount Moriah near Jerusalem, and offer him as a sacrifice.",
+      "year_am": 2130,
+      "year_bc_ad": null,
+      "precision": "conjectural",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §11 \"The Life of Abraham\" (year list)",
+      "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+      "note": null,
+      "source_text_id": "jordan-bc-6-6"
+    },
+    {
+      "source": "josephus",
+      "date": "\"Now Isaac was twenty-five years old.\"",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Josephus, Antiquities I.13.2 (Whiston)",
+      "link": "https://www.gutenberg.org/ebooks/2848",
+      "note": "Josephus gives Isaac's age, not a year; 2108 + 25 = AM 2133 (Ussher's date).",
+      "source_text_id": "josephus-antiquities-whiston"
+    }
+  ],
+  "people": [
+    "abraham",
+    "isaac"
+  ],
+  "locations": [
+    "mount-moriah"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.22.1-Gen.22.19",
+    "Heb.11.17-Heb.11.19"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-6",
+    "josephus-antiquities-whiston"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.22.1-Gen.22.19 ; Heb.11.17-Heb.11.19"
+    }
+  ],
+  "related": [
+    "isaac-birth"
+  ]
+}

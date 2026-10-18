@@ -4,7 +4,7 @@
   "type": "person",
   "title": "Moses",
   "summary": "Levite, son of Amram and Jochebed; led Israel out of Egypt at 80 (Exod 7:7); died at 120 (Deut 34:7).",
-  "description": "Father Amram (not yet a record).",
+  "description": "Father: Amram.",
   "sorting_year": -1571,
   "sorting_basis": {
     "tier": "ussher-jones",
@@ -12,7 +12,7 @@
     "chronology": "ussher-jones",
     "note": "Tier 3: Ussher-Jones (F. N. Jones): 1571 BC (Moses born) (no higher-tier year available)."
   },
-  "father": null,
+  "father": "amram",
   "children": [],
   "scripture_facts": {
     "age_at_named_son": null,
@@ -66,6 +66,17 @@
         "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
         "source_text_id": "jordan-bc-6-7",
         "note": "Also BC 2:7: \"AM 2433 Birth of Moses\"."
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "2433 AM Moses is born",
+        "year_am": 2433,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 6, chart \"Year of the World: From Joseph’s death to the Judges\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2433.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ],
     "death": [
@@ -110,6 +121,17 @@
         "link": "https://biblicalhorizons.com/1994/08/01/6_08/",
         "source_text_id": "jordan-bc-6-8",
         "note": "Jordan's year here turns at the 7th month (autumn). BC 2:8 has \"AM 2553 End of 40 years in wilderness\". Same account in A Chronological and Calendrical Commentary on the Pentateuch (No. 3, 2001), ch. 19 \"The Years 2553 and 2554\", p. 53: \"This brings us to the 1st day of the 11th month ... apparently on that same day, Moses died\"; No. 2 (2001), p. 51 list: \"2554 - Beginning of Conquest of the land.\""
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "Moses - 120 yrs. old, 2553 AM, Dt.34:7",
+        "year_am": 2553,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Differs from Jordan's own published figure(s): AM 2554.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ]
   },
@@ -125,7 +147,8 @@
     "jordan-bc-6-7",
     "jordan-bc-6-8",
     "jordan-sbc-2",
-    "jordan-sbc-3"
+    "jordan-sbc-3",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
@@ -140,9 +163,20 @@
     "egypt",
     "senusret-iii-astronomical-college",
     "end-of-egypt-dynasty-12",
-    "death-of-concharis"
+    "death-of-concharis",
+    "amram",
+    "aaron",
+    "miriam",
+    "moses-birth",
+    "moses-flees-to-midian",
+    "burning-bush",
+    "arrival-at-sinai"
   ],
   "events": [
-    "exodus"
+    "exodus",
+    "moses-birth",
+    "moses-flees-to-midian",
+    "burning-bush",
+    "arrival-at-sinai"
   ]
 }

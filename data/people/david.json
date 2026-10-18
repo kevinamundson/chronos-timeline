@@ -79,6 +79,17 @@
         "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
         "source_text_id": "jordan-bc-3-8",
         "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory)."
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "2919 AM Birth of David (II Sam.2:10)",
+        "year_am": 2919,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 10, chart \"From Judge Eli (in the South) to the Completion of the Solomon’s Temple\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2919.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ],
     "death": [
@@ -101,6 +112,17 @@
         "citation": null,
         "link": null,
         "note": "Jordan gives no year for David's death; he dates \"2949 - Accession of David\", \"2950 - David year 1\" and \"2989 - Accession of Solomon\" (From Creation to Solomon, 2001, pp. 52–53; BC 3:8, 1991, has 2949 and 2989). Not inferred."
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "2989 AM Ascension Year of King Solomon ... Death of David 70 yrs. old",
+        "year_am": 2989,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 10, chart \"From Judge Eli (in the South) to the Completion of the Solomon’s Temple\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": null,
+        "source_text_id": "jordan-compilation-anno-mundi"
       },
       {
         "source": "ussher",
@@ -135,7 +157,8 @@
     "jordan-bc-3-8",
     "jordan-sbc-2",
     "ussher-annals-1658",
-    "jordan-book-judges-1985"
+    "jordan-book-judges-1985",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

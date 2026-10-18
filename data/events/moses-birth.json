@@ -1,0 +1,117 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "moses-birth",
+  "type": "event",
+  "title": "Birth of Moses",
+  "summary": "Moses is born to Amram and Jochebed under Pharaoh's decree, hidden three months, and adopted by Pharaoh's daughter (Exod 2:1-10).",
+  "description": "Moses was 80 when he spoke to Pharaoh (Exod 7:7), so he was born 80 years before the Exodus. CFAH-6 identifies the barren queen who adopted him with Sobekneferu (Argument 4 §12).",
+  "sorting_year": -1571,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1571 BC (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference. CFAH-6 Argument 4 §12 \"Barren Queen with Moses\" has Moses \"born in 1571 BC\" (Ussher-Jones); not an AP or a CFAH-1 Table 1 row."
+    },
+    {
+      "source": "ussher-jones",
+      "date": "BC 1571",
+      "year_am": null,
+      "year_bc_ad": -1571,
+      "precision": "year",
+      "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 56 (\"1571 BC (Moses born)\")",
+      "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+      "note": null,
+      "source_text_id": "jones-chronology-ot-2002"
+    },
+    {
+      "source": "ussher",
+      "date": "2433 AM, 1571 BC",
+      "year_am": 2433,
+      "year_bc_ad": -1571,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Third Age §162 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "2433 - Moses ben Amram born (Amram and Jochebed are 83).",
+      "year_am": 2433,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 5),\" Biblical Chronology 6:7 (July 1994), §15 \"Moses\" (year list)",
+      "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
+      "note": null,
+      "source_text_id": "jordan-bc-6-7"
+    },
+    {
+      "source": "jordan-compilation",
+      "date": "2433 AM Moses is born",
+      "year_am": 2433,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 6, chart \"Year of the World: From Joseph’s death to the Judges\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2433.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "\"Moses was borne in the yeere of the World 2434\"",
+      "year_am": 2434,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, ch. IIII, §I",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "note": null,
+      "source_text_id": "raleigh-history-of-the-world-1617"
+    }
+  ],
+  "people": [
+    "moses",
+    "amram",
+    "aaron",
+    "miriam"
+  ],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Exod.2.1-Exod.2.10",
+    "Exod.7.7",
+    "Acts.7.20-Acts.7.22",
+    "Heb.11.23"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "jones-chronology-ot-2002",
+    "ussher-annals-1658",
+    "jordan-bc-6-7",
+    "raleigh-history-of-the-world-1617",
+    "jordan-compilation-anno-mundi"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Exod.2.1-Exod.2.10 ; Exod.7.7 ; Acts.7.20-Acts.7.22 ; Heb.11.23"
+    }
+  ],
+  "related": [
+    "senusret-iii-astronomical-college",
+    "exodus"
+  ]
+}

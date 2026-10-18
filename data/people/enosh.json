@@ -82,6 +82,17 @@
         "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
         "source_text_id": "jordan-bc-6-4",
         "note": null
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "235 AM (birth year printed at the start of the enosh bar)",
+        "year_am": 235,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 1, chart \"A.M. Chronology (Anno Mundi “Year of the World”) Genesis 5, 11:10\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 235.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ],
     "death": [
@@ -140,6 +151,17 @@
         "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
         "source_text_id": "jordan-bc-6-4",
         "note": null
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "1130 AM Enosh dies @ 905 yrs old",
+        "year_am": 1130,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 1, chart \"A.M. Chronology (Anno Mundi “Year of the World”) Genesis 5, 11:10\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Slip in the compilation: 235 + 905 = 1140 (Gen 5:11), as Jordan and the Masoretic arithmetic have; the chart prints 1130. Differs from Jordan's own published figure(s): AM 1140.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ]
   },
@@ -151,7 +173,8 @@
     "kjv-gutenberg",
     "ussher-annals-1658",
     "cfah-4",
-    "jordan-bc-6-4"
+    "jordan-bc-6-4",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

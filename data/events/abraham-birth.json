@@ -70,6 +70,17 @@
       "note": "AM 2008 from Gen 11:26 with Acts 7:4 (Abram born when Terah was 130): BC 2:6 \"The Abraham Connection\" and BC 4:8 §2. B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years. Same chart gives CCC \"1952 or 2167\"."
     },
     {
+      "source": "jordan-compilation",
+      "date": "2008 AM ... Abram born",
+      "year_am": 2008,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2008.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "masoretic-genealogy",
       "date": "AM 1948 if Terah was 70 (Gen 11:26 literal); AM 2008 if 130 (Gen 11:32 + 12:4)",
       "year_am": 1948,
@@ -135,7 +146,8 @@
     "annals-of-clonmacnoise-1896",
     "jordan-bc-5-8",
     "jordan-bc-2-6",
-    "jordan-bc-4-8"
+    "jordan-bc-4-8",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

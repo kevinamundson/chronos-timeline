@@ -1,0 +1,123 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "jacob-enters-egypt",
+  "type": "event",
+  "title": "Jacob and his family go down to Egypt (AM 2298)",
+  "summary": "Jacob, aged 130, goes down to Egypt with his family of seventy in the second year of the famine (Gen 45:6; 46; 47:9).",
+  "description": "God told Jacob at Beersheba not to fear going down to Egypt (Gen 46:1-4). Pharaoh settled the family in Goshen. Jones and Jordan both note this is exactly 215 years after Abraham entered Canaan, and 215 before the Exodus.",
+  "sorting_year": -1706,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1706 BC (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1706 BC (Jacob enters Egypt in second year of famine)",
+      "year_am": null,
+      "year_bc_ad": -1706,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "source_text_id": "cfah-1",
+      "cfah_basis": "table1_baseline"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "BC 1706 (2298 AM)",
+      "year_am": 2298,
+      "year_bc_ad": -1706,
+      "precision": "year",
+      "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 54 (\"1836 – 130 = 1706 BC (Jacob comes to Egypt)\")",
+      "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+      "note": null,
+      "source_text_id": "jones-chronology-ot-2002"
+    },
+    {
+      "source": "masoretic-genealogy",
+      "date": "AM 2298",
+      "year_am": 2298,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Gen 47:9 (Jacob 130 before Pharaoh): 2168 + 130",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "2298b AM, 1706 BC",
+      "year_am": 2298,
+      "year_bc_ad": -1706,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Third Age §138 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "Ussher: \"in the beginning of the third year of the famine when Jacob was 130 years old\". CFAH-1 Table 1 says the second year (Gen 45:6, \"these two years hath the famine been\").",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "2298 - After two visits by his sons to Egypt, Jacob moves his household to Goshen (Gen. 45:6). This is exactly 215 years after Abram",
+      "year_am": 2298,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 5),\" Biblical Chronology 6:7 (July 1994), §14 \"Joseph and Judah\" (year list)",
+      "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
+      "note": null,
+      "source_text_id": "jordan-bc-6-7"
+    },
+    {
+      "source": "jordan-compilation",
+      "date": "2298 AM Jacob enters Goshen Egypt at 130 yrs old (47:9,28)",
+      "year_am": 2298,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 5, chart \"Chronology From Abraham’s Death to Joseph’s Death\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2298.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    }
+  ],
+  "people": [
+    "jacob",
+    "joseph",
+    "levi",
+    "judah",
+    "kohath"
+  ],
+  "locations": [
+    "egypt",
+    "goshen"
+  ],
+  "maps": [
+    "loc-1695-israelites-travels"
+  ],
+  "scripture_refs": [
+    "Gen.45.6",
+    "Gen.46.1-Gen.46.27",
+    "Gen.47.1-Gen.47.12"
+  ],
+  "sources": [
+    "cfah-1",
+    "jones-chronology-ot-2002",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-7",
+    "jordan-compilation-anno-mundi"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.45.6 ; Gen.46.1-Gen.46.27 ; Gen.47.1-Gen.47.12"
+    }
+  ],
+  "related": [
+    "josephs-famine",
+    "joseph-made-vizier",
+    "exodus"
+  ]
+}

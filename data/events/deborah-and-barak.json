@@ -72,6 +72,17 @@
       "year_am_end": 2740
     },
     {
+      "source": "jordan-compilation",
+      "date": "2726 AM 4th & 5th Judge: Barak and Deborah judged in the North 40 yrs. (5:31)",
+      "year_am": 2726,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 8, chart \"Year of the World: From the Judges to King Saul (Chronology from James Jordan)\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2726.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "bible",
       "date": "\"the land had rest forty years\"",
       "year_am": null,
@@ -96,7 +107,8 @@
     "jordan-bc-3-8",
     "jordan-sbc-2",
     "kjv-gutenberg",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

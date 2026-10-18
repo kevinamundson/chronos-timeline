@@ -1,0 +1,135 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "aaron",
+  "type": "person",
+  "title": "Aaron",
+  "summary": "Elder brother of Moses, born three years before him (Exod 7:7); first high priest; died on Mount Hor aged 123 (Num 33:38-39).",
+  "sorting_year": -1574,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals (1658): 1574 BC (no higher-tier year available)."
+  },
+  "father": "amram",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "ussher",
+        "date": "2430b AM, 1574 BC",
+        "year_am": 2430,
+        "year_bc_ad": -1574,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §160 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": "\"Aaron was born 3 years before his brother Moses, 83 years before the departure of the Israelites from Egypt. Ex 7:7\"",
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "2430 - Aaron ben Amram born (Ex. 7:7).",
+        "year_am": 2430,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 5),\" Biblical Chronology 6:7 (July 1994), §15 \"Moses\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-7"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "ussher",
+        "date": "2552c AM, 1452 BC",
+        "year_am": 2552,
+        "year_bc_ad": -1452,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Fourth Age §268 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": "§267 (34th camp, Mount Hor) and §268: \"The Israelites mourned for Aaron 30 days\".",
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "Then Aaron died. Numbers 33:38 says that he died on the 1st day of the 5th month.",
+        "year_am": 2553,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 6),\" Biblical Chronology 6:8 (August 1994), §18 \"The Years 2553 and 2554.\"",
+        "link": "https://biblicalhorizons.com/1994/08/01/6_08/",
+        "note": "Jordan's year 2553 begins in month 7 (autumn), so his month 5 of 2553 is the same summer as Ussher's 2552c AM / 1452 BC.",
+        "source_text_id": "jordan-bc-6-8"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Exod.4.14",
+    "Exod.6.20",
+    "Exod.7.7",
+    "Num.20.22-Num.20.29",
+    "Num.33.38-Num.33.39"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-7",
+    "jordan-bc-6-8"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Exod.4.14 ; Exod.6.20 ; Exod.7.7 ; Num.20.22-Num.20.29 ; Num.33.38-Num.33.39"
+    }
+  ],
+  "related": [
+    "moses",
+    "miriam",
+    "amram",
+    "mount-hor",
+    "burning-bush",
+    "exodus"
+  ],
+  "events": []
+}

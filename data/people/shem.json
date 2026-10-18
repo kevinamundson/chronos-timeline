@@ -74,6 +74,17 @@
         "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
         "source_text_id": "jordan-bc-6-4",
         "note": null
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "1558 AM",
+        "year_am": 1558,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 1, chart \"A.M. Chronology (Anno Mundi “Year of the World”) Genesis 5, 11:10\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 1558.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ],
     "death": [
@@ -129,6 +140,17 @@
         "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
         "source_text_id": "jordan-bc-6-6",
         "note": "Also The Law of the Covenant (1984), p. 44: \"Shem, the Godly son of Noah, lived 502 years after the Flood\" (interval as printed; n. 26)."
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "2158 AM Shem dies @ 600 years old",
+        "year_am": 2158,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2158.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ]
   },
@@ -142,7 +164,8 @@
     "ussher-annals-1658",
     "jordan-bc-6-4",
     "jordan-bc-6-6",
-    "jordan-book-law-of-the-covenant-1984"
+    "jordan-book-law-of-the-covenant-1984",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

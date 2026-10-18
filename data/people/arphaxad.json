@@ -85,6 +85,17 @@
         "source_text_id": "jordan-bc-6-4"
       },
       {
+        "source": "jordan-compilation",
+        "date": "1658 AM",
+        "year_am": 1658,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 1658.",
+        "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
         "source": "josephus",
         "date": "\"Arphaxad was the son of Shem, and born twelve years after the deluge.\"",
         "year_am": null,
@@ -149,6 +160,17 @@
         "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
         "note": "Stated relative to Abraham; Jordan prints no AM figure for this death.",
         "source_text_id": "jordan-bc-6-4"
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "2093 AM Arphaxad dies @ 435 yrs old",
+        "year_am": 2093,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Arithmetic slip in the compilation: Gen 11:12-13 gives 35 + 403 = 438 years, so AM 2096 (also Jordan BC 6:6 §11 \"2096 - Arpachshad ben Shem dies\"). The chart prints \"+ 400 yrs. after Salah’s birth\" and 435.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ]
   },
@@ -165,7 +187,8 @@
     "ussher-annals-1658",
     "jordan-bc-6-4",
     "josephus-antiquities-whiston",
-    "jordan-bc-2-5"
+    "jordan-bc-2-5",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

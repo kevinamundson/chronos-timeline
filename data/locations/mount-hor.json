@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "mount-hor",
+  "type": "location",
+  "title": "Mount Hor",
+  "location_type": "mountain",
+  "summary": "Where Aaron died (Num 20:22-29; 33:38).",
+  "lat": 30.832057,
+  "lng": 35.056872,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Har Zin (modern)); representative point 35.056872,30.832057 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 35,
+    "basis": "OpenBible.info: \"Har Zin (modern): 35% confidence\" (page fetched 2026-10-17). Low certainty: 5 possible identifications."
+  },
+  "openbible_id": "ad8027f",
+  "openbible_url": "https://www.openbible.info/geo/ancient/ad8027f/mount-hor-1",
+  "openbible_geojson": "https://a.openbible.info/geo/data/ad8027f.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Num.20.22-Num.20.29",
+    "Num.33.38"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ad8027f/mount-hor-1"
+    }
+  ],
+  "related": [
+    "aaron"
+  ],
+  "maps": [
+    "loc-1695-israelites-travels"
+  ]
+}

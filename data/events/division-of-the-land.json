@@ -73,6 +73,17 @@
       "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). Text: \"Caleb was 85 when the conquest of the land came to an end. This would be, then, the year A.M. 2559 ... the land was (sabbatically) divided in the 7th year, A.M. 2560.\" BC 2:8 (1990): \"AM 2560 End of Conquest\"."
     },
     {
+      "source": "jordan-compilation",
+      "date": "Conquest complete / Land divided 2560 1450 Josh. 14 (1st Jubilee Year)",
+      "year_am": 2560,
+      "year_bc_ad": -1450,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 11, chart table \"Biblical History According To A.M & B.C. Dates\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Page 6: \"2559 AM War of Conquest lasted 6 years and the land was most likely divided within that year\" and \"2560 AM 1st Jubilee Year, b/c land is possessed\". Agrees with Jordan's own published AM 2560. The compilation's B.C. year (1450) is AM subtracted from 4010 (its own convention: Creation 4010 B.C.); Jordan's own SBC B.C. figures differ. Display only; never converted or used for sorting.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "bible",
       "date": "Caleb 40 at the spying, 85 \"this day\" (45 years later)",
       "year_am": null,
@@ -100,7 +111,8 @@
     "jordan-bc-3-8",
     "jordan-sbc-2",
     "kjv-gutenberg",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

@@ -1,0 +1,216 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "isaac",
+  "type": "person",
+  "title": "Isaac",
+  "summary": "Son of Abraham and Sarah, born when Abraham was 100 (Gen 21:5); father of Esau and Jacob; died aged 180 (Gen 35:28-29).",
+  "sorting_year": -1896,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1896 BC (no higher-tier year available)."
+  },
+  "father": "abraham",
+  "children": [
+    "esau",
+    "jacob"
+  ],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference. CFAH-6 Argument 4 §5 \"Isaac's Famine: ~1816 BC\" says Isaac was \"born in 1896 BC\" (Ussher-Jones), but this is not a numbered anchor point or a CFAH-1 Table 1 row."
+      },
+      {
+        "source": "ussher-jones",
+        "date": "BC 1896 (2108 AM)",
+        "year_am": 2108,
+        "year_bc_ad": -1896,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 59 (\"1896 BC = 2108 AM Year Isaac is born (Gen.21:5, see Chart 3)\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "Also p. 47: \"1896 BC (birth of Isaac)\".",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 2108",
+        "year_am": 2108,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 21:5 (Abraham 100 at Isaac's birth), taking Abraham's birth as AM 2008 (see abraham-birth)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "2108c AM, 1896 BC",
+        "year_am": 2108,
+        "year_bc_ad": -1896,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §85 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "2108 - In the spring Sarah gives birth to Isaac in Philistine territory (Gen. 21:1-7).",
+        "year_am": 2108,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §11 \"The Life of Abraham\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-6"
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "Isaac is born. (21:5) ... 2108 AM",
+        "year_am": 2108,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2108.",
+        "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "\"in the yeere 2109\"",
+        "year_am": 2109,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, ch. I, §IIII",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "note": "One year more than Ussher. The 1617 text puts Abraham's birth at AM 2008 (Book II, ch. I, §VIII), so 2109 does not follow from \"Abraham 100\" (Gen 21:5). Raleigh's Jacob (2169), Moses (2434) and flight to Midian (2474) are also one year above Ussher.",
+        "source_text_id": "raleigh-history-of-the-world-1617"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": "1716 BC (year of Isaac's death)",
+        "year_am": null,
+        "year_bc_ad": -1716,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, Argument 4 §7 \"Joseph was Promoted in the Year of Isaac's Death 1716/1715 BC\" (new Anchor Point #61)",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "note": "Component of AP-61: CFAH-6 takes Isaac's death in 1716 BC from Jones (2019, 58) and makes Joseph's promotion the same year.",
+        "source_text_id": "cfah-6",
+        "cfah_basis": "anchor_point"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 2288",
+        "year_am": 2288,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 35:28 (Isaac lived 180 years): 2108 + 180",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "2288c AM, 1716 BC",
+        "year_am": 2288,
+        "year_bc_ad": -1716,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §130 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "2288 - Isaac dies at 180 (Gen. 35:28).",
+        "year_am": 2288,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §13 \"Jacob and Esau\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-6"
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "Isaac - 180 yrs. old, 2288 AM, Gn.35:28",
+        "year_am": 2288,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2288.",
+        "source_text_id": "jordan-compilation-anno-mundi"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.17.19",
+    "Gen.21.1-Gen.21.8",
+    "Gen.22.1-Gen.22.19",
+    "Gen.25.19-Gen.25.26",
+    "Gen.35.28-Gen.35.29"
+  ],
+  "sources": [
+    "jones-chronology-ot-2002",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-6",
+    "raleigh-history-of-the-world-1617",
+    "cfah-6",
+    "jordan-compilation-anno-mundi"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.17.19 ; Gen.21.1-Gen.21.8 ; Gen.22.1-Gen.22.19 ; Gen.25.19-Gen.25.26 ; Gen.35.28-Gen.35.29"
+    },
+    {
+      "source_id": "jones-chronology-ot-2002",
+      "url": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+      "locator": "p. 47, p. 59"
+    },
+    {
+      "source_id": "jordan-bc-6-6",
+      "url": "https://biblicalhorizons.com/1994/06/01/6_06/",
+      "locator": "§11, §13"
+    }
+  ],
+  "related": [
+    "abraham",
+    "esau",
+    "jacob",
+    "isaac-birth",
+    "weaning-of-isaac",
+    "binding-of-isaac",
+    "covenant-of-circumcision",
+    "gerar",
+    "mount-moriah"
+  ],
+  "events": [
+    "isaac-birth",
+    "weaning-of-isaac",
+    "binding-of-isaac"
+  ]
+}

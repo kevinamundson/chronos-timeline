@@ -537,6 +537,23 @@
         "Temple date not yet located (Raleigh gives Solomon's accession as year of the world 2991, Book II).",
         "Re-check all anchors against the 1617 text (sources/raleigh/). Quick scan 2026-10-17: Abraham's birth reads \"An. mundi 2008 dil. 352. natus Abraham\" in 1617 (Book II, ch. I, §. VIII) vs 2009 in the 1736 reading; Flood AM 1656 (Book I, ch. VII, §. III) and Passover/Exodus AM 2514 (Book II, ch. IV, §. I) agree."
       ]
+    },
+    {
+      "id": "jordan-compilation",
+      "name": "Anno Mundi Chronology Studies (compilation of Jordan's system)",
+      "abbreviation": "Jordan (compilation)",
+      "primary": false,
+      "sort_priority": 10,
+      "status": "partial",
+      "authors": [
+        "Unnamed compiler"
+      ],
+      "description": "SECONDARY DISPLAY CHRONOLOGY. It never sets sorting_year and is not one of the four sort tiers. It is kept separate from \"jordan\", which holds Jordan's own published figures. A 14-page set of charts that compiles James B. Jordan's Anno Mundi system from Creation to Solomon (Judges as in his 2001 From Creation to Solomon), with an A.M./B.C. table running to A.D. 70. The owner confirmed it as an accurate compilation (2026-10-18). Its B.C. column is the compiler's own: Creation 4010 B.C., so B.C. = 4010 − AM through the Temple (3000 AM = 1010 B.C.). This is about 80 years earlier than Jordan's SBC (3930) and 6 years earlier than Ussher (4004). Known slips against Scripture and Jordan: Enosh dies 1130 (should be 1140); Arphaxad dies 2093 at 435 (should be 2096 at 438). It corrects Jordan's Mahalalel 396 to 395. Jephthah 2878 vs Jordan 2879; Moses dies 2553 vs Jordan 2554; Jacob dies 2315 vs Jordan 2313 (Jordan's slip). Each entry notes agreement or difference with Jordan's own figure.",
+      "year_conventions": "AM as printed (year_am). B.C. (year_bc_ad) only where the compilation prints a B.C. year (pp. 3 and 11). Nothing is converted. Its AM has a year 0 (\"There is a “0” year in A.M.\", p. 13).",
+      "references": [
+        "jordan-compilation-anno-mundi"
+      ],
+      "anchors": []
     }
   ]
 }

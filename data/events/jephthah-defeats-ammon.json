@@ -70,6 +70,17 @@
       "year_am_end": 2859
     },
     {
+      "source": "jordan-compilation",
+      "date": "2878 AM 10th Judge: Jephthah: 6 yrs (12:7)",
+      "year_am": 2878,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 8, chart \"Year of the World: From the Judges to King Saul (Chronology from James Jordan)\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Page 9 table: \"6 years of Jephthah’s judgeship 2878 – 2884 AM\". Jordan's From Creation to Solomon (2001) ch. 11 dates Jephthah to AM 2879. Differs from Jordan's own published figure(s): AM 2879, 2853.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "bible",
       "date": "\"three hundred years\" (Judg 11:26); judged 6 years (Judg 12:7)",
       "year_am": null,
@@ -95,7 +106,8 @@
     "jordan-bc-3-8",
     "jordan-sbc-2",
     "kjv-gutenberg",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

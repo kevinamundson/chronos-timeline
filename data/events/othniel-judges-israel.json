@@ -72,6 +72,17 @@
       "year_am_end": 2642
     },
     {
+      "source": "jordan-compilation",
+      "date": "1st Judge (Othniel) arises 2628 1382 Jud. 3:11",
+      "year_am": 2628,
+      "year_bc_ad": -1382,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 11, chart table \"Biblical History According To A.M & B.C. Dates\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2628. The compilation's B.C. year (1382) is AM subtracted from 4010 (its own convention: Creation 4010 B.C.); Jordan's own SBC B.C. figures differ. Display only; never converted or used for sorting.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "bible",
       "date": "\"the land had rest forty years\"",
       "year_am": null,
@@ -96,7 +107,8 @@
     "jordan-bc-3-8",
     "jordan-sbc-2",
     "kjv-gutenberg",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

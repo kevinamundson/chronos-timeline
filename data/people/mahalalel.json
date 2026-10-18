@@ -82,6 +82,17 @@
         "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
         "source_text_id": "jordan-bc-6-4",
         "note": "Printed as 396 on both biblicalhorizons.com and garynorth.com. Straight MT arithmetic gives 395 (Kenan 325 + 70) and Jordan's own next line has Jared born 460 (= 395 + 65), so 396 is probably a misprint; recorded as printed, not corrected."
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "395 AM (birth year printed at the start of the mahalalel bar)",
+        "year_am": 395,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 1, chart \"A.M. Chronology (Anno Mundi “Year of the World”) Genesis 5, 11:10\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Matches the Masoretic arithmetic (Kenan 70 + 325); Jordan's own list prints 396. Differs from Jordan's own published figure(s): AM 396.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ],
     "death": [
@@ -137,6 +148,17 @@
         "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
         "source_text_id": "jordan-bc-6-4",
         "note": "Also BC 6:10: \"he died in the year a.m.1290, which is 366 years before the Flood.\""
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "1290 AM Mahahalel dies @ 895 yrs old",
+        "year_am": 1290,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 1, chart \"A.M. Chronology (Anno Mundi “Year of the World”) Genesis 5, 11:10\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 1290.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ]
   },
@@ -148,7 +170,8 @@
     "kjv-gutenberg",
     "ussher-annals-1658",
     "jordan-bc-6-4",
-    "jordan-bc-6-10"
+    "jordan-bc-6-10",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

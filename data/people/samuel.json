@@ -69,6 +69,17 @@
         "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
         "source_text_id": "jordan-bc-3-8",
         "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). BC 3:7 (1991): Samuel 74 when Saul became king, \"about 35 years older than Saul\"."
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "birth of Samson and possibly Samuel",
+        "year_am": 2861,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 8, chart \"Year of the World: From the Judges to King Saul (Chronology from James Jordan)\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2861.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ],
     "death": [
@@ -137,7 +148,8 @@
     "jordan-bc-3-7",
     "jordan-bc-3-8",
     "jordan-sbc-2",
-    "jordan-book-judges-1985"
+    "jordan-book-judges-1985",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

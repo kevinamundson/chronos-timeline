@@ -84,6 +84,17 @@
         "source_text_id": "jordan-bc-6-4"
       },
       {
+        "source": "jordan-compilation",
+        "date": "1849 AM",
+        "year_am": 1849,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 1849.",
+        "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
         "source": "josephus",
         "date": "\"Nahor was born to Serug in his hundred and thirty-second year\"",
         "year_am": null,
@@ -148,6 +159,17 @@
         "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
         "note": null,
         "source_text_id": "jordan-bc-6-4"
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "1997 AM Nahor dies @ 148 years old",
+        "year_am": 1997,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 2, chart \"Genesis 11:10 – 12 Genealogy\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 1997.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ]
   },
@@ -161,7 +183,8 @@
     "kjv-gutenberg",
     "ussher-annals-1658",
     "jordan-bc-6-4",
-    "josephus-antiquities-whiston"
+    "josephus-antiquities-whiston",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

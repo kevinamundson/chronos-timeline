@@ -80,6 +80,17 @@
       "note": "FOUNDATION, not dedication: \"In this year, A.M. 2993, the foundations of the Temple were laid. The Temple was completed seven years later, A.M. 3000\" (BC 4:8 §4; BC 2:8 \"The Temple Connection\"). One year later than Jones/Ussher (2992 AM). In 1990 (BC 2:8) Jordan gave \"932 B.C.\" following Anstey and Mauro; the SBC chart (1993) gives 937. CCC on same chart: 966 B.C. B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years. Restated in From Creation to Solomon (No. 2, 2001), ch. 11, p. 53: \"2993 - Foundation of Temple laid, 480 years after Exodus.\" and \"3000 - Completion of Temple.\""
     },
     {
+      "source": "jordan-compilation",
+      "date": "Solomon’s Temple Completed 3000 1010 I Kgs. 6:1,38",
+      "year_am": 3000,
+      "year_bc_ad": -1010,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 11, chart table \"Biblical History According To A.M & B.C. Dates\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "This is the year the temple was COMPLETED (page 10 also has \"2993 AM Temple work began\"). The dedication (this record) is not dated separately; Jordan himself assumes the dedication in AM 3014 (BC \"Jubilee, Part 2\"). Differs from Jordan's own published figure(s): AM 3014, 2993. The compilation's B.C. year (1010) is AM subtracted from 4010 (its own convention: Creation 4010 B.C.); Jordan's own SBC B.C. figures differ (here 937 B.C.). Display only; never converted or used for sorting.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "josephus",
       "date": "Building begun in Solomon's 4th year, 2nd month: \"five hundred and ninety-two years after the Exodus\", 1,020 years after Abraham came into Canaan, 1,440 after the deluge, 3,102 from Adam",
       "year_am": null,
@@ -130,7 +141,8 @@
     "jordan-bc-5-8",
     "jordan-bc-4-8",
     "jordan-bc-2-8",
-    "jordan-sbc-2"
+    "jordan-sbc-2",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {

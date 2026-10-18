@@ -81,6 +81,17 @@
       "note": "Interval only, as printed (n. 25 cites Anstey). Not converted to AM here."
     },
     {
+      "source": "jordan-compilation",
+      "date": "1497 B.C. Exodus Event occurred in 2513 AM, 430 yrs. after Abram entered Canaan",
+      "year_am": 2513,
+      "year_bc_ad": -1497,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2513. The compilation's B.C. year (1497) is AM subtracted from 4010 (its own convention: Creation 4010 B.C.); Jordan's own SBC B.C. figures differ (here 1417 B.C.). Display only; never converted or used for sorting.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "josephus",
       "date": "Month Xanthicus, 15th day; \"four hundred and thirty years after our forefather Abraham came into Canaan, but two hundred and fifteen years only after Jacob removed into Egypt\"; Moses in his 80th year",
       "year_am": null,
@@ -145,7 +156,8 @@
     "jordan-bc-4-8",
     "jordan-sbc-2",
     "jordan-sbc-3",
-    "jordan-book-law-of-the-covenant-1984"
+    "jordan-book-law-of-the-covenant-1984",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
@@ -177,6 +189,10 @@
     "red-sea-crossing",
     "death-of-concharis",
     "reign-of-nitocris",
-    "fall-of-akkad"
+    "fall-of-akkad",
+    "burning-bush",
+    "arrival-at-sinai",
+    "moses-birth",
+    "jacob-enters-egypt"
   ]
 }

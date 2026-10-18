@@ -4,7 +4,7 @@
   "type": "person",
   "title": "Joseph",
   "summary": "Son of Jacob and Rachel; sold into Egypt, made ruler over Egypt at 30 (Gen 37–50).",
-  "description": "Father Jacob (not yet a record).",
+  "description": "Father: Jacob.",
   "sorting_year": -1745,
   "sorting_basis": {
     "tier": "ussher-jones",
@@ -12,8 +12,11 @@
     "chronology": "ussher-jones",
     "note": "Tier 3: Ussher-Jones (F. N. Jones): 1745 BC (Joseph born) (no higher-tier year available)."
   },
-  "father": null,
-  "children": [],
+  "father": "jacob",
+  "children": [
+    "manasseh",
+    "ephraim"
+  ],
   "scripture_facts": {
     "age_at_named_son": null,
     "named_son": null,
@@ -66,6 +69,17 @@
         "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
         "source_text_id": "jordan-bc-6-6",
         "note": null
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "Joseph is born 2259 AM",
+        "year_am": 2259,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 5, chart \"Chronology From Abraham’s Death to Joseph’s Death\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2259.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ],
     "death": [
@@ -111,6 +125,17 @@
         "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
         "source_text_id": "jordan-bc-6-7",
         "note": "Also BC 2:7: \"AM 2369 Death of Joseph, age 110\"."
+      },
+      {
+        "source": "jordan-compilation",
+        "date": "Joseph - 110 yrs. old, 2369 AM, Gn.50:22",
+        "year_am": 2369,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 3, chart \"Genesis 12 – 25 Chronology of Abraham’s Life\"",
+        "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+        "note": "Agrees with Jordan's own published AM 2369.",
+        "source_text_id": "jordan-compilation-anno-mundi"
       }
     ]
   },
@@ -125,7 +150,8 @@
     "ussher-annals-1658",
     "jones-chronology-ot-2002",
     "jordan-bc-6-6",
-    "jordan-bc-6-7"
+    "jordan-bc-6-7",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
@@ -139,7 +165,12 @@
     "egypt",
     "assassination-attempt-on-amenemhat-i",
     "josephs-famine",
-    "death-of-moeris"
+    "death-of-moeris",
+    "jacob",
+    "judah",
+    "manasseh",
+    "ephraim",
+    "jacob-enters-egypt"
   ],
   "events": [
     "joseph-made-vizier"

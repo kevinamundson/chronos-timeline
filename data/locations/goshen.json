@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "goshen",
+  "type": "location",
+  "title": "Goshen",
+  "location_type": "region",
+  "summary": "Region of Egypt where Jacob's family settled (Gen 45:10; 47:27).",
+  "lat": 30.79937,
+  "lng": 31.834217,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Goshen 1 (ancient)); representative point 31.834217,30.799370 (lon,lat).",
+  "certainty": {
+    "level": "high",
+    "percent": 85,
+    "basis": "OpenBible.info: \"Goshen 1 (ancient): 85% confidence\" (page fetched 2026-10-17)."
+  },
+  "openbible_id": "a60f092",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a60f092/goshen-1",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a60f092.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.45.10",
+    "Gen.46.28",
+    "Gen.47.27"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a60f092/goshen-1"
+    }
+  ],
+  "related": [
+    "jacob",
+    "joseph",
+    "jacob-enters-egypt"
+  ],
+  "maps": [
+    "loc-1695-israelites-travels"
+  ]
+}

@@ -69,6 +69,17 @@
       "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). BC 5:2 (1993): \"Saul became Israel's first official king in 2910, right after a sabbath year (2909).\" BC 3:7: \"34 years until Saul became king at the (adopted) age of one year. Samuel was 74.\" (1991; 2001 has Samuel about 49)."
     },
     {
+      "source": "jordan-compilation",
+      "date": "Judge Abdon dies & King Saul’s Ascension Year 2909 1101 Jud. 12:14 / I Sam.8-10",
+      "year_am": 2909,
+      "year_bc_ad": -1101,
+      "precision": "year",
+      "citation": "Anno Mundi Chronology Studies (unnamed compiler; a compilation of James B. Jordan's system), p. 11, chart table \"Biblical History According To A.M & B.C. Dates\"",
+      "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
+      "note": "Agrees with Jordan's own published AM 2909. The compilation's B.C. year (1101) is AM subtracted from 4010 (its own convention: Creation 4010 B.C.); Jordan's own SBC B.C. figures differ. Display only; never converted or used for sorting.",
+      "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
       "source": "bible",
       "date": "reigned 40 years",
       "year_am": null,
@@ -98,7 +109,8 @@
     "jordan-bc-3-8",
     "jordan-sbc-2",
     "kjv-gutenberg",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
