@@ -1,0 +1,126 @@
+{
+ "id": "osf-7b-t15-ekl",
+ "src": "cfah-7b-osf",
+ "table": "Table 15",
+ "title": "EKL Solution Dynasties 4, 11, 12, 6",
+ "dynasty": "Egypt (Eratosthenes King List, EKL)",
+ "kind": "dated",
+ "region": "Egypt",
+ "pages": [
+  103
+ ],
+ "rows": [
+  {
+   "name": "EKL #7 Stoichos = Kawab ?",
+   "cells": {
+    "Start": "1923",
+    "End": "1917"
+   }
+  },
+  {
+   "name": "EKL #8 Gosormies = Inteff the Elder",
+   "cells": {
+    "Start": "1917",
+    "End": "1887"
+   }
+  },
+  {
+   "name": "EKL #9 Mares = Mentuhotep I",
+   "cells": {
+    "Start": "1887",
+    "End": "1861"
+   }
+  },
+  {
+   "name": "EKL #10 Anouphis = Intef I",
+   "cells": {
+    "Start": "1861",
+    "End": "1841"
+   }
+  },
+  {
+   "name": "EKL #11 Sirius = Sa-Ra Intef II",
+   "cells": {
+    "Start": "1841",
+    "End": "1822"
+   }
+  },
+  {
+   "name": "EKL #12 Chnubus = Intef III",
+   "cells": {
+    "Start": "1823",
+    "End": "1801"
+   }
+  },
+  {
+   "name": "EKL #13 Rayosis = Mentuhotep II",
+   "cells": {
+    "Start": "1801",
+    "End": "1787"
+   }
+  },
+  {
+   "name": "EKL #[gap] [gap] = [gap]",
+   "cells": {
+    "Start": "1787",
+    "End": "1738"
+   }
+  },
+  {
+   "name": "EKL #14 Biyres = Amenemhat I",
+   "cells": {
+    "Start": "1738",
+    "End": "1727"
+   }
+  },
+  {
+   "name": "EKL #[gap] [gap] = [gap]",
+   "cells": {
+    "Start": "1727",
+    "End": "1686"
+   }
+  },
+  {
+   "name": "EKL #15 Saophis I = Senusret I",
+   "cells": {
+    "Start": "1686",
+    "End": "1655"
+   }
+  },
+  {
+   "name": "EKL #16 Saophis II = Senusret II",
+   "cells": {
+    "Start": "1655",
+    "End": "1628"
+   }
+  },
+  {
+   "name": "EKL #17 Moscheres = Userkare",
+   "cells": {
+    "Start": "1637",
+    "End": "1606"
+   }
+  },
+  {
+   "name": "EKL #18 Mosthes = Senusret III",
+   "cells": {
+    "Start": "1606",
+    "End": "1574"
+   }
+  },
+  {
+   "name": "EKL #19 Pammes = Amenemhat III",
+   "cells": {
+    "Start": "1574",
+    "End": "1539"
+   }
+  },
+  {
+   "name": "EKL #20 Apappus = Pepi II",
+   "cells": {
+    "Start": "1592",
+    "End": "1492"
+   }
+  }
+ ]
+}

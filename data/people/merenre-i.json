@@ -28,6 +28,21 @@
         "note": "Year 1 of Merenre I, the year the Aswan canal was cut (AP-59 is on the event aswan-canal).",
         "cfah_basis": "paper_text",
         "cfah_key": "cfah:c6-merenre1-y1:merenre-i:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Start Co-Rex: 1606; Start Sole-rex: 1593; Death or Deposition: 1586",
+        "year_am": null,
+        "year_bc_ad": -1606,
+        "year_bc_ad_end": -1586,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-7B: Kings of Dynasties 1-13,\" OSF preprint v1.3 (10 Feb 2026), doi:10.17605/OSF.IO/TUWNC, file CFAH 7-B Kings of Dynasties 1-13_v_1.3.pdf, Table 16 \"Integrated Dates for Dynasty 6\", p. 104",
+        "link": "https://osf.io/tuwnc/",
+        "source_text_id": "cfah-7b-osf",
+        "note": "Row \"Merenre I\" of Table 16 (Egypt Dynasty 6).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-7b-t16-d6:merenre-i:merenre-i:reign"
       }
     ],
     "death": [
@@ -51,7 +66,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "cfah-6"
+    "cfah-6",
+    "cfah-7b-osf"
   ],
   "related": [],
   "free_source_links": [
@@ -64,6 +80,11 @@
       "source_id": "cfah-6",
       "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
       "locator": "\"The Aswan Canal of Senusret III and Merenre I\""
+    },
+    {
+      "source_id": "cfah-7b-osf",
+      "url": "https://osf.io/tuwnc/",
+      "locator": "Table 16, p. 104"
     }
   ],
   "dynasty": "Egypt Dynasty 6"

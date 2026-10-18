@@ -1,0 +1,119 @@
+{
+ "id": "osf-7a-t2-d12-solution",
+ "src": "cfah-7a-osf",
+ "table": "Table 2",
+ "title": "Dynasty 12 Solution",
+ "dynasty": "Egypt Dynasty 12",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  54
+ ],
+ "rows": [
+  {
+   "name": "Amenemhat I",
+   "cells": {
+    "Turin": "[0]9 y [0] m",
+    "EKL": "-",
+    "Manetho (Africanus)": "16",
+    "Manetho (Eusebius)": "16",
+    "Monuments": "30",
+    "Diodorus": "-"
+   }
+  },
+  {
+   "name": "Senusret I",
+   "cells": {
+    "Turin": "45 [0] mo",
+    "EKL": "-",
+    "Manetho (Africanus)": "46",
+    "Manetho (Eusebius)": "46",
+    "Monuments": "44",
+    "Diodorus": "-"
+   }
+  },
+  {
+   "name": "Amenemhat II",
+   "cells": {
+    "SKL": "29",
+    "Turin": "[29 y 4 mo]",
+    "EKL": "29",
+    "Manetho (Africanus)": "38",
+    "Manetho (Eusebius)": "38",
+    "Monuments": "35",
+    "Diodorus": "-"
+   }
+  },
+  {
+   "name": "Senusret II",
+   "cells": {
+    "SKL": "15",
+    "Turin": "[2]9 y [3 mo]",
+    "EKL": "27",
+    "Manetho (Africanus)": "48",
+    "Manetho (Eusebius)": "48",
+    "Monuments": "7",
+    "Diodorus": "-"
+   }
+  },
+  {
+   "name": "Usimare",
+   "cells": {
+    "SKL": "31",
+    "Turin": "-",
+    "EKL": "31",
+    "Manetho (Africanus)": "-",
+    "Manetho (Eusebius)": "-",
+    "Monuments": "-",
+    "Diodorus": "-"
+   }
+  },
+  {
+   "name": "Senusret III",
+   "cells": {
+    "SKL": "23",
+    "Turin": "3[9 y 6 mo]",
+    "EKL": "33",
+    "Manetho (Africanus)": "[3]8",
+    "Manetho (Eusebius)": "[3]8",
+    "Monuments": "39",
+    "Diodorus": "33"
+   }
+  },
+  {
+   "name": "Amenemhat III",
+   "cells": {
+    "SKL": "19",
+    "Turin": "4[8] y 0 mo",
+    "EKL": "35",
+    "Manetho (Africanus)": "[4]8",
+    "Manetho (Eusebius)": "[48]",
+    "Monuments": "46–48",
+    "Diodorus": "-"
+   }
+  },
+  {
+   "name": "Amenemhat IV",
+   "cells": {
+    "Turin": "9y 3m 27d",
+    "EKL": "-",
+    "Manetho (Africanus)": "8",
+    "Manetho (Eusebius)": "[8]",
+    "Monuments": "13",
+    "Diodorus": "-"
+   }
+  },
+  {
+   "name": "Sobek-nefrue / Khaneferre S.",
+   "cells": {
+    "SKL": "39",
+    "Turin": "3y 10m 14d",
+    "EKL": "-",
+    "Manetho (Africanus)": "4",
+    "Manetho (Eusebius)": "[4]",
+    "Monuments": "3",
+    "Diodorus": "-"
+   }
+  }
+ ]
+}

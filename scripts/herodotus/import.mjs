@@ -48,14 +48,15 @@ for (const [id, l] of Object.entries(NEW_LOCS)) {
 for (const [id, p] of Object.entries(NEW_PEOPLE)) {
   const old = recs[id]?.doc;
   if (old && !old.description?.startsWith(MARK)) continue; // a record curated elsewhere: entries only
-  const keep = (k) => (old?.dates?.[k] || []).filter((e) => e.source !== 'herodotus' && e.source !== 'cfah');
-  const cf = (k) => (old?.dates?.[k] || []).find((e) => e.source === 'cfah') || CFAH_NULL();
+  // entries the CFAH importer manages (cfah_key) are kept as they are; scripts/cfah/import.mjs owns them
+  const keep = (k) => (old?.dates?.[k] || []).filter((e) => e.source !== 'herodotus' && (e.source !== 'cfah' || e.cfah_key));
+  const cf = (k) => (old?.dates?.[k] || []).find((e) => e.source === 'cfah' && !e.cfah_key) || ((old?.dates?.[k] || []).some((e) => e.cfah_key) ? null : CFAH_NULL());
   const doc = { $schema: '../../schema/person.schema.json', id, type: 'person', title: p.title, ...(p.alt ? { alt_names: p.alt } : {}), summary: p.summary,
     description: `${MARK} (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.`,
     sorting_year: null, sorting_basis: { tier: 'none', tier_rank: null, chronology: 'cfah', note: 'No tier gives a birth year (Herodotus is display-only and gives none).' },
-    father: p.father || null, children: p.children || [], dates: { birth: [cf('birth'), ...keep('birth')], death: [cf('death'), ...keep('death')] },
+    father: p.father || null, children: p.children || [], dates: { birth: [cf('birth'), ...keep('birth')].filter(Boolean), death: [cf('death'), ...keep('death')].filter(Boolean) },
     events: uniq([...(p.events || []), ...(old?.events || [])]), scripture_refs: p.refs || [], sources: uniq([...(old?.sources || []), SRC_EDITION, SRC_PUBLIC]), related: p.related || [] };
-  for (const [k, v] of Object.entries(old?.dates || {})) if (!doc.dates[k] && v.some((e) => e.source !== 'herodotus' && e.source !== 'cfah')) doc.dates[k] = v.filter((e) => e.source !== 'herodotus');
+  for (const [k, v] of Object.entries(old?.dates || {})) if (!doc.dates[k] && v.some((e) => (e.source !== 'herodotus' && e.source !== 'cfah') || e.cfah_key)) doc.dates[k] = v.filter((e) => e.source !== 'herodotus' && (e.source !== 'cfah' || e.cfah_key || !v.some((x) => x.cfah_key)));
   recs[id] = { dir: 'people', doc, dirty: true };
 }
 for (const [id, e] of Object.entries(NEW_EVENTS)) {

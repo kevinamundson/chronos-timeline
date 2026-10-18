@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "senusret-i",
+  "type": "person",
+  "title": "Senusret I",
+  "summary": "King listed in CFAH-7A Table 3 (Egypt Dynasty 12).",
+  "description": "Ruler of Egypt Dynasty 12. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7A (Table 3, \"Integrated Dates for Dynasty 12\"); its dates are display only.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Start Co-Rex: 1729 & 1718; Start Sole-rex: 1708; End Sole-rex: 1686/1685; Death or Deposition: 1683",
+        "year_am": null,
+        "year_bc_ad": -1729,
+        "year_bc_ad_end": -1683,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-7A: A Chronological Baseline for Dynasty 12,\" OSF preprint of 11 Jun 2025 (no version number), doi:10.17605/OSF.IO/GMX5J, file CFAH-7A Chronological Baseline for Dynasty 12.pdf, Table 3 \"Integrated Dates for Dynasty 12\", p. 55",
+        "link": "https://osf.io/gmx5j/",
+        "source_text_id": "cfah-7a-osf",
+        "note": "Row \"Senusret I\" of Table 3 (Egypt Dynasty 12).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-7a-t3-d12:senusret-i:senusret-i:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Start: 1686; End: 1655",
+        "year_am": null,
+        "year_bc_ad": -1686,
+        "year_bc_ad_end": -1655,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-7B: Kings of Dynasties 1-13,\" OSF preprint v1.3 (10 Feb 2026), doi:10.17605/OSF.IO/TUWNC, file CFAH 7-B Kings of Dynasties 1-13_v_1.3.pdf, Table 15 \"EKL Solution Dynasties 4, 11, 12, 6\", p. 103",
+        "link": "https://osf.io/tuwnc/",
+        "source_text_id": "cfah-7b-osf",
+        "note": "Row \"EKL #15 Saophis I = Senusret I\" of Table 15 (Egypt (Eratosthenes King List, EKL)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-7b-t15-ekl:ekl-15-saophis-i-senusret-i:senusret-i:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-7a-osf",
+    "cfah-7b-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-7a-osf",
+      "url": "https://osf.io/gmx5j/",
+      "locator": "Table 3, p. 55"
+    },
+    {
+      "source_id": "cfah-7b-osf",
+      "url": "https://osf.io/tuwnc/",
+      "locator": "Table 15, p. 103"
+    }
+  ],
+  "dynasty": "Egypt Dynasty 12"
+}

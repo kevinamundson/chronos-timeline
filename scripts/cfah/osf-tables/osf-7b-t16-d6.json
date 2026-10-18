@@ -1,0 +1,90 @@
+{
+ "id": "osf-7b-t16-d6",
+ "src": "cfah-7b-osf",
+ "table": "Table 16",
+ "title": "Integrated Dates for Dynasty 6",
+ "dynasty": "Egypt Dynasty 6",
+ "kind": "dated",
+ "region": "Egypt",
+ "pages": [
+  104
+ ],
+ "rows": [
+  {
+   "name": "Teti",
+   "cells": {
+    "Start Co-Rex": "-",
+    "Start Sole-rex": "1682",
+    "End Sole-rex": "1652",
+    "Death or Deposition": "1652"
+   }
+  },
+  {
+   "name": "Userkare",
+   "cells": {
+    "Start Co-Rex": "-",
+    "Start Sole-rex": "1652",
+    "End Sole-rex": "1646",
+    "Death or Deposition": "1637"
+   }
+  },
+  {
+   "name": "Pepi I",
+   "cells": {
+    "Start Co-Rex": "1646",
+    "Start Sole-rex": "1637",
+    "End Sole-rex": "1606",
+    "Death or Deposition": "1593"
+   }
+  },
+  {
+   "name": "Merenre I",
+   "cells": {
+    "Start Co-Rex": "1606",
+    "Start Sole-rex": "1593",
+    "End Sole-rex": "-",
+    "Death or Deposition": "1586"
+   }
+  },
+  {
+   "name": "Pepi II",
+   "cells": {
+    "Start Co-Rex": "- *",
+    "Start Sole-rex": "1586",
+    "End Sole-rex": "1495",
+    "Death or Deposition": "1492"
+   }
+  },
+  {
+   "name": "Merenre II",
+   "cells": {
+    "Start Co-Rex": "1495",
+    "Start Sole-rex": "1492",
+    "End Sole-rex": "-",
+    "Death or Deposition": "1491"
+   }
+  },
+  {
+   "name": "Nitocris",
+   "cells": {
+    "Start Co-Rex": "-",
+    "Start Sole-rex": "1491",
+    "End Sole-rex": "1485",
+    "Death or Deposition": "1479"
+   }
+  },
+  {
+   "name": "Pepi the Child",
+   "cells": {
+    "Start Co-Rex": "1485",
+    "Start Sole-rex": "-",
+    "End Sole-rex": "-",
+    "Death or Deposition": "1479"
+   }
+  },
+  {
+   "name": "* Pepi II probably had up to 14 years of co-regency under Userkare",
+   "cells": {}
+  }
+ ]
+}

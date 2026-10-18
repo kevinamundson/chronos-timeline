@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "intef-the-elder",
+  "type": "person",
+  "title": "Intef the Elder",
+  "summary": "King listed in CFAH-7B Table 15 (Egypt (Eratosthenes King List, EKL)).",
+  "description": "Ruler of Egypt (Eratosthenes King List, EKL). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 15, \"EKL Solution Dynasties 4, 11, 12, 6\"); its dates are display only.",
+  "alt_names": [
+    "Inteff the Elder",
+    "Gosormies (EKL #8)"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Start: 1917; End: 1887",
+        "year_am": null,
+        "year_bc_ad": -1917,
+        "year_bc_ad_end": -1887,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-7B: Kings of Dynasties 1-13,\" OSF preprint v1.3 (10 Feb 2026), doi:10.17605/OSF.IO/TUWNC, file CFAH 7-B Kings of Dynasties 1-13_v_1.3.pdf, Table 15 \"EKL Solution Dynasties 4, 11, 12, 6\", p. 103",
+        "link": "https://osf.io/tuwnc/",
+        "source_text_id": "cfah-7b-osf",
+        "note": "Row \"EKL #8 Gosormies = Inteff the Elder\" of Table 15 (Egypt (Eratosthenes King List, EKL)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-7b-t15-ekl:ekl-8-gosormies-inteff-the-elder:intef-the-elder:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-7b-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-7b-osf",
+      "url": "https://osf.io/tuwnc/",
+      "locator": "Table 15, p. 103"
+    }
+  ],
+  "dynasty": "Egypt (Eratosthenes King List, EKL)"
+}

@@ -307,7 +307,7 @@ if (kingDoc) {
     for (const e of l.entries) {
       if (e.person && records[e.person]?.kind !== 'person') err('data/king-lists.json', `${l.id}: person ${e.person} not found`);
       if (e.event && records[e.event]?.kind !== 'event') err('data/king-lists.json', `${l.id}: event ${e.event} not found`);
-      if (!e.person && !e.event && !l.unrecorded_reason) err('data/king-lists.json', `${l.id}: row "${e.name}" has no record and the list gives no unrecorded_reason`);
+      if (!e.person && !e.event && !l.unrecorded_reason && !e.note) err('data/king-lists.json', `${l.id}: row "${e.name}" has no record and the list gives no unrecorded_reason`);
     }
   }
 }

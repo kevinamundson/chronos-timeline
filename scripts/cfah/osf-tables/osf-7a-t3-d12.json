@@ -1,0 +1,93 @@
+{
+ "id": "osf-7a-t3-d12",
+ "src": "cfah-7a-osf",
+ "table": "Table 3",
+ "title": "Integrated Dates for Dynasty 12",
+ "dynasty": "Egypt Dynasty 12",
+ "kind": "dated",
+ "region": "Egypt",
+ "pages": [
+  55
+ ],
+ "rows": [
+  {
+   "name": "Amenemhat I",
+   "cells": {
+    "Start Co-Rex": "1745",
+    "Start Sole-rex": "1738",
+    "End Sole-rex": "1729 & 1718",
+    "Death or Deposition": "1708"
+   }
+  },
+  {
+   "name": "Senusret I",
+   "cells": {
+    "Start Co-Rex": "1729 & 1718",
+    "Start Sole-rex": "1708",
+    "End Sole-rex": "1686/1685",
+    "Death or Deposition": "1683"
+   }
+  },
+  {
+   "name": "Amenemhat II",
+   "cells": {
+    "Start Co-Rex": "1686/1685",
+    "Start Sole-rex": "1683",
+    "End Sole-rex": "1655/1654",
+    "Death or Deposition": "1648"
+   }
+  },
+  {
+   "name": "Senusret II",
+   "cells": {
+    "Start Co-Rex": "1655/1654",
+    "Start Sole-rex": "1648",
+    "End Sole-rex": "1637",
+    "Death or Deposition": "1606"
+   }
+  },
+  {
+   "name": "Usimare",
+   "cells": {
+    "Start Co-Rex": "1637",
+    "Start Sole-rex": "1629/1628",
+    "End Sole-rex": "1613",
+    "Death or Deposition": "1606"
+   }
+  },
+  {
+   "name": "Senusret III",
+   "cells": {
+    "Start Co-Rex": "1613",
+    "Start Sole-rex": "1606",
+    "End Sole-rex": "1586",
+    "Death or Deposition": "1573"
+   }
+  },
+  {
+   "name": "Amenemhat III",
+   "cells": {
+    "Start Co-Rex": "1586",
+    "Start Sole-rex": "1575",
+    "End Sole-rex": "1542",
+    "Death or Deposition": "1539"
+   }
+  },
+  {
+   "name": "Amenemhat IV",
+   "cells": {
+    "Start Co-Rex": "1543",
+    "Start Sole-rex": "1539",
+    "End Sole-rex": "1530",
+    "Death or Deposition": "none"
+   }
+  },
+  {
+   "name": "Sobekneferu",
+   "cells": {
+    "Start Sole-rex": "1530",
+    "Death or Deposition": "April, 1526"
+   }
+  }
+ ]
+}

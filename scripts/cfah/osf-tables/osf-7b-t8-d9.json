@@ -1,0 +1,59 @@
+{
+ "id": "osf-7b-t8-d9",
+ "src": "cfah-7b-osf",
+ "table": "Table 8",
+ "title": "Integrated Dates for Dynasty 9",
+ "dynasty": "Egypt Dynasty 9 (Heracleopolis)",
+ "kind": "dated",
+ "region": "Egypt",
+ "pages": [
+  96
+ ],
+ "rows": [
+  {
+   "name": "15 governors before 1881 BC",
+   "cells": {
+    "Start Co-Rex": "-",
+    "Start Sole-rex": "~2190",
+    "End Sole-rex": "-",
+    "Death or Deposition": "1881"
+   }
+  },
+  {
+   "name": "Nebkaura Khety",
+   "cells": {
+    "Start Co-Rex": "-",
+    "Start Sole-rex": "1881",
+    "End Sole-rex": "unknown",
+    "Death or Deposition": "~1859"
+   }
+  },
+  {
+   "name": "Meryabra Khety",
+   "cells": {
+    "Start Co-Rex": "unknown",
+    "Start Sole-rex": "~1859",
+    "End Sole-rex": "unknown",
+    "Death or Deposition": "~1838"
+   }
+  },
+  {
+   "name": "Wahkare Khety",
+   "cells": {
+    "Start Co-Rex": "unknown",
+    "Start Sole-rex": "~1838",
+    "End Sole-rex": "unknown",
+    "Death or Deposition": "~1796"
+   }
+  },
+  {
+   "name": "Merykare",
+   "cells": {
+    "Start Co-Rex": "unknown",
+    "Start Sole-rex": "~1796",
+    "End Sole-rex": "unkown",
+    "Death or Deposition": "1781"
+   }
+  }
+ ]
+}

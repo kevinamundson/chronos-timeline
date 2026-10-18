@@ -1,0 +1,86 @@
+{
+ "id": "osf-7b-t6-d1",
+ "src": "cfah-7b-osf",
+ "table": "Table 6",
+ "title": "Integrated Dates for Dynasty 1",
+ "dynasty": "Egypt Dynasty 1 (Thinis)",
+ "kind": "dated",
+ "region": "Egypt",
+ "pages": [
+  92
+ ],
+ "rows": [
+  {
+   "name": "Menes / Iry-Hor / Hor-Aha",
+   "cells": {
+    "Start Co-Rex": "-",
+    "Start Sole-rex": "2191 / 2188",
+    "End Sole-rex": "2164 / 2163",
+    "Death or Deposition": "2128"
+   }
+  },
+  {
+   "name": "Athothis / Narmer",
+   "cells": {
+    "Start Co-Rex": "2164 / 2163",
+    "Start Sole-rex": "2128",
+    "End Sole-rex": "-",
+    "Death or Deposition": "2068"
+   }
+  },
+  {
+   "name": "Kenkenes / Ka Sekhen",
+   "cells": {
+    "Start Co-Rex": "-",
+    "Start Sole-rex": "2068",
+    "End Sole-rex": "2037 / 2036",
+    "Death or Deposition": "2036"
+   }
+  },
+  {
+   "name": "Uenephes / Djet / Merneith",
+   "cells": {
+    "Start Co-Rex": "2036",
+    "Start Sole-rex": "2036",
+    "End Sole-rex": "2006",
+    "Death or Deposition": "1994"
+   }
+  },
+  {
+   "name": "Usiphaidos / Anjib",
+   "cells": {
+    "Start Co-Rex": "2014",
+    "Start Sole-rex": "-",
+    "End Sole-rex": "-",
+    "Death or Deposition": "1994"
+   }
+  },
+  {
+   "name": "Miebidos / Den",
+   "cells": {
+    "Start Co-Rex": "2006",
+    "Start Sole-rex": "1994",
+    "End Sole-rex": "-",
+    "Death or Deposition": "1968"
+   }
+  },
+  {
+   "name": "Semempses / Semerkhet",
+   "cells": {
+    "Start Co-Rex": "1969",
+    "Start Sole-rex": "1968",
+    "End Sole-rex": "1950",
+    "Death or Deposition": "1945"
+   }
+  },
+  {
+   "name": "Ubienthes / Qaa",
+   "cells": {
+    "Start Co-Rex": "1950",
+    "Start Sole-rex": "1945",
+    "End Sole-rex": "-",
+    "Death or Deposition": "1924"
+   }
+  }
+ ]
+}

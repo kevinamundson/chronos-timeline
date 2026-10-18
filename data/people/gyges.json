@@ -87,7 +87,9 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    "death-of-gyges"
+  ],
   "scripture_refs": [],
   "sources": [
     "herodotus-rawlinson-roman-roads",

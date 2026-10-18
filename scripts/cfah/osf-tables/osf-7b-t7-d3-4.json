@@ -1,0 +1,131 @@
+{
+ "id": "osf-7b-t7-d3-4",
+ "src": "cfah-7b-osf",
+ "table": "Table 7",
+ "title": "Integrated Dates for Dynasties 3 & 4",
+ "dynasty": "Egypt Dynasties 3–4 (Memphis)",
+ "kind": "dated",
+ "region": "Egypt",
+ "pages": [
+  94
+ ],
+ "rows": [
+  {
+   "name": "Nebka",
+   "cells": {
+    "Start Co-Rex": "-",
+    "Start Sole-rex": "2030/2029",
+    "End Sole-rex": "2011/2010",
+    "Death or Deposition": "2001"
+   }
+  },
+  {
+   "name": "Djoser",
+   "cells": {
+    "Start Co-Rex": "2011/2010",
+    "Start Sole-rex": "2001",
+    "End Sole-rex": "1982",
+    "Death or Deposition": "1982"
+   }
+  },
+  {
+   "name": "Sekkemkhet",
+   "cells": {
+    "Start Co-Rex": "-",
+    "Start Sole-rex": "1982",
+    "End Sole-rex": "1976",
+    "Death or Deposition": "1975"
+   }
+  },
+  {
+   "name": "Hor-Khaba / Teti",
+   "cells": {
+    "Start Co-Rex": "1976",
+    "Start Sole-rex": "1975",
+    "End Sole-rex": "1970",
+    "Death or Deposition": "1958"
+   }
+  },
+  {
+   "name": "Huni / Soyphis",
+   "cells": {
+    "Start Co-Rex": "1970",
+    "Start Sole-rex": "1958",
+    "End Sole-rex": "1952",
+    "Death or Deposition": "1942"
+   }
+  },
+  {
+   "name": "Sneferu / Tosertasis",
+   "cells": {
+    "Start Co-Rex": "1952",
+    "Start Sole-rex": "1942",
+    "End Sole-rex": "1925",
+    "Death or Deposition": "1922"
+   }
+  },
+  {
+   "name": "Khufu / Sufis",
+   "cells": {
+    "Start Co-Rex": "c. 1934",
+    "Start Sole-rex": "1922",
+    "End Sole-rex": "1917",
+    "Death or Deposition": "c. 1871"
+   }
+  },
+  {
+   "name": "Radjedef / Rhatoises",
+   "cells": {
+    "Start Co-Rex": "1917",
+    "Start Sole-rex": "1900*",
+    "End Sole-rex": "1892",
+    "Death or Deposition": "1892"
+   }
+  },
+  {
+   "name": "Khafre / Suphis II",
+   "cells": {
+    "Start Co-Rex": "1892",
+    "Start Sole-rex": "1862",
+    "End Sole-rex": "1875 ** 1853 ***",
+    "Death or Deposition": "1826"
+   }
+  },
+  {
+   "name": "Baufra / Bicheris",
+   "cells": {
+    "Start Co-Rex": "1875",
+    "Start Sole-rex": "-",
+    "End Sole-rex": "-",
+    "Death or Deposition": "1853"
+   }
+  },
+  {
+   "name": "Menkaure",
+   "cells": {
+    "Start Co-Rex": "1851",
+    "Start Sole-rex": "1825",
+    "End Sole-rex": "?",
+    "Death or Deposition": "1789"
+   }
+  },
+  {
+   "name": "Shepseskaf",
+   "cells": {
+    "Start Co-Rex": "~1825",
+    "Start Sole-rex": "-",
+    "End Sole-rex": "-",
+    "Death or Deposition": "1818"
+   }
+  },
+  {
+   "name": "Thampthis ****",
+   "cells": {
+    "Start Co-Rex": "~1825",
+    "Start Sole-rex": "1825",
+    "End Sole-rex": "1818",
+    "Death or Deposition": "1815"
+   }
+  }
+ ]
+}

@@ -1,0 +1,197 @@
+{
+ "id": "osf-7b-t17-d13-turin",
+ "src": "cfah-7b-osf",
+ "table": "Table 17",
+ "title": "Dynasty 13 Turin Canon Data",
+ "dynasty": "Egypt Dynasty 13 (Itjtawy)",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  105,
+  106
+ ],
+ "rows": [
+  {
+   "name": "Khutawyra (Sobekhotep I)",
+   "cells": {
+    "Turin position": "7.5",
+    "Reign": "2 y, 3 m, 24 d"
+   }
+  },
+  {
+   "name": "Sekhemkara (Sonbef)",
+   "cells": {
+    "Turin position": "7.6",
+    "Reign": "[?] y"
+   }
+  },
+  {
+   "name": "lacuna (Nerikara)",
+   "cells": {
+    "Turin position": "7.6",
+    "Reign": "6 y"
+   }
+  },
+  {
+   "name": "Amenemhat(ra) (Sekhemkara Amenemhat)",
+   "cells": {
+    "Turin position": "7.7",
+    "Reign": "3 y"
+   }
+  },
+  {
+   "name": "Sehotepibra (Qemau Siharnedjheritef)",
+   "cells": {
+    "Turin position": "7.8",
+    "Reign": "1 ?"
+   }
+  },
+  {
+   "name": "Iufni (Joseph (Courville 1977))",
+   "cells": {
+    "Turin position": "7.9",
+    "Reign": "[?]"
+   }
+  },
+  {
+   "name": "Sankhibra (Sankhibra Amenemhat)",
+   "cells": {
+    "Turin position": "7.10",
+    "Reign": "[?] y, 23 d"
+   }
+  },
+  {
+   "name": "Semenkara (Nebnun)",
+   "cells": {
+    "Turin position": "7.11",
+    "Reign": "[?] y, 22 d"
+   }
+  },
+  {
+   "name": "Sehotepibra (Sewesekhtawy)",
+   "cells": {
+    "Turin position": "7.12",
+    "Reign": "1 y, [?] m, 27 d"
+   }
+  },
+  {
+   "name": "Sewadjkara (Sewadjkara)",
+   "cells": {
+    "Turin position": "7.13",
+    "Reign": "21 y, [?] d"
+   }
+  },
+  {
+   "name": "Nedjemibra (Nedjemibra)",
+   "cells": {
+    "Turin position": "7.14",
+    "Reign": "0 y, 7 m"
+   }
+  },
+  {
+   "name": "Sobekhotep (Sobekhotep II)",
+   "cells": {
+    "Turin position": "7.15",
+    "Reign": "2 y"
+   }
+  },
+  {
+   "name": "Renseneb (Ranisonb)",
+   "cells": {
+    "Turin position": "7.16",
+    "Reign": "[?] y, 4 mo"
+   }
+  },
+  {
+   "name": "Awtibra (Hor I)",
+   "cells": {
+    "Turin position": "7.17",
+    "Reign": "[?] y, 7 d"
+   }
+  },
+  {
+   "name": "Sedjefa..kara (Sedjefakara Kay-Amenemhat)",
+   "cells": {
+    "Turin position": "7.18",
+    "Reign": "[?] y"
+   }
+  },
+  {
+   "name": "Sekhemra Khutay Sobekhotep (Wegaf)",
+   "cells": {
+    "Turin position": "7.19",
+    "Reign": "[?] y"
+   }
+  },
+  {
+   "name": "Userkara Khendjer (Userkare)",
+   "cells": {
+    "Turin position": "7.20",
+    "Reign": "[?] y"
+   }
+  },
+  {
+   "name": "…kara Imyremeshaw (Imyremeshaw)",
+   "cells": {
+    "Turin position": "7.21",
+    "Reign": "4 d"
+   }
+  },
+  {
+   "name": "Sehotepkara Intef (Intef IV)",
+   "cells": {
+    "Turin position": "7.22",
+    "Reign": "[?] y, 3 d"
+   }
+  },
+  {
+   "name": "Meribra Seth (Meribra Seth)",
+   "cells": {
+    "Turin position": "7.23",
+    "Reign": "[?] y, 6 d"
+   }
+  },
+  {
+   "name": "Sekhemkara Wadjtawy (Sobekhotep III)",
+   "cells": {
+    "Turin position": "7.24",
+    "Reign": "4 y, 2 m, [?] d"
+   }
+  },
+  {
+   "name": "Khasekhemra Neferfotep son of Haankhef (Neferhotep I)",
+   "cells": {
+    "Turin position": "7.25",
+    "Reign": "11 y, 1 m, [?] d"
+   }
+  },
+  {
+   "name": "Sihathor (Sihathor)",
+   "cells": {
+    "Turin position": "7.26",
+    "Reign": "[?] y, 3 d"
+   }
+  },
+  {
+   "name": "Khaneferra Sobekhotep (Sobekhotep IV)",
+   "cells": {
+    "Turin position": "7.27",
+    "Reign": "[?] y"
+   }
+  },
+  {
+   "name": "[?] (Merhotepre Sobekhotep V)",
+   "cells": {
+    "Turin position": "7.28",
+    "Reign": "[?]"
+   }
+  },
+  {
+   "name": "Khahotepra (Sobekhotep VI)",
+   "cells": {
+    "Turin position": "8.1",
+    "Reign": "4 y, 8 m, 29 d"
+   }
+  }
+ ]
+}

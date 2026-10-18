@@ -186,3 +186,4 @@ div.vis-tooltip { font-family: var(--font); font-size: 13px; background: var(--b
 .person-list li.ctx a { color: var(--label-2); font-style: italic; }
 .person-list li.own a { font-weight: 600; }
 .person-timeline { margin-top: 8px; }
+h2.h3 { font-size: 17px; margin: 16px 0 8px; font-weight: 600; }

@@ -1,0 +1,95 @@
+{
+ "id": "osf-7b-t12-d5",
+ "src": "cfah-7b-osf",
+ "table": "Table 12",
+ "title": "Integrated Dates for Dynasty 5",
+ "dynasty": "Egypt Dynasty 5",
+ "kind": "dated",
+ "region": "Egypt",
+ "pages": [
+  100
+ ],
+ "rows": [
+  {
+   "name": "Userkaf",
+   "cells": {
+    "Start Co-Rex": "-",
+    "Start Sole-rex": "1822",
+    "End Sole-rex": "1815",
+    "Death or Deposition": "1794"
+   }
+  },
+  {
+   "name": "Sahure",
+   "cells": {
+    "Start Co-Rex": "1814",
+    "Start Sole-rex": "n/a",
+    "End Sole-rex": "1801",
+    "Death or Deposition": "1801"
+   }
+  },
+  {
+   "name": "Neferirkare Kakai",
+   "cells": {
+    "Start Co-Rex": "1806",
+    "Start Sole-rex": "1794",
+    "End Sole-rex": "1788",
+    "Death or Deposition": "1781"
+   }
+  },
+  {
+   "name": "Shepseskara Nejeruser",
+   "cells": {
+    "Start Co-Rex": "1788",
+    "Start Sole-rex": "n/a",
+    "End Sole-rex": "n/a",
+    "Death or Deposition": "1781"
+   }
+  },
+  {
+   "name": "Neferfre Isi",
+   "cells": {
+    "Start Co-Rex": "1781",
+    "Start Sole-rex": "n/a",
+    "End Sole-rex": "n/a",
+    "Death or Deposition": "1761"
+   }
+  },
+  {
+   "name": "Niuserra Ini",
+   "cells": {
+    "Start Co-Rex": "1781",
+    "Start Sole-rex": "n/a",
+    "End Sole-rex": "n/a",
+    "Death or Deposition": "1737"
+   }
+  },
+  {
+   "name": "Menkauhor",
+   "cells": {
+    "Start Co-Rex": "~1752",
+    "Start Sole-rex": "n/a",
+    "End Sole-rex": "n/a",
+    "Death or Deposition": "1743"
+   }
+  },
+  {
+   "name": "Djedkara Isesi",
+   "cells": {
+    "Start Co-Rex": "~1761",
+    "Start Sole-rex": "n/a",
+    "End Sole-rex": "n/a",
+    "Death or Deposition": "1716"
+   }
+  },
+  {
+   "name": "Unas",
+   "cells": {
+    "Start Co-Rex": "1732",
+    "Start Sole-rex": "1716",
+    "End Sole-rex": "1682",
+    "Death or Deposition": "1682"
+   }
+  }
+ ]
+}

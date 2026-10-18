@@ -1,0 +1,86 @@
+{
+ "id": "osf-7b-t9-d11",
+ "src": "cfah-7b-osf",
+ "table": "Table 9",
+ "title": "Integrated Dates for Dynasty 11",
+ "dynasty": "Egypt Dynasty 11 (Thebes)",
+ "kind": "dated",
+ "region": "Egypt",
+ "pages": [
+  97
+ ],
+ "rows": [
+  {
+   "name": "9 governors before 1881 BC",
+   "cells": {
+    "Start Co-Rex": "-",
+    "Start Sole-rex": "~2186",
+    "End Sole-rex": "-",
+    "Death or Deposition": "1881"
+   }
+  },
+  {
+   "name": "Mentuhotep I",
+   "cells": {
+    "Start Co-Rex": "unknown",
+    "Start Sole-rex": "1881",
+    "End Sole-rex": "unknown",
+    "Death or Deposition": "unknown"
+   }
+  },
+  {
+   "name": "Inteff I",
+   "cells": {
+    "Start Co-Rex": "unknown",
+    "Start Sole-rex": "unknown",
+    "End Sole-rex": "unknown",
+    "Death or Deposition": "1865"
+   }
+  },
+  {
+   "name": "Inteff II",
+   "cells": {
+    "Start Co-Rex": "unknown",
+    "Start Sole-rex": "1865",
+    "End Sole-rex": "unknown",
+    "Death or Deposition": "1816"
+   }
+  },
+  {
+   "name": "Inteff III",
+   "cells": {
+    "Start Co-Rex": "unknown",
+    "Start Sole-rex": "1816",
+    "End Sole-rex": "unknown",
+    "Death or Deposition": "1808"
+   }
+  },
+  {
+   "name": "Mentuhotep II",
+   "cells": {
+    "Start Co-Rex": "unknown",
+    "Start Sole-rex": "1808",
+    "End Sole-rex": "unknown",
+    "Death or Deposition": "1757"
+   }
+  },
+  {
+   "name": "Mentohotep III",
+   "cells": {
+    "Start Co-Rex": "unknown",
+    "Start Sole-rex": "1757",
+    "End Sole-rex": "unknown",
+    "Death or Deposition": "1745"
+   }
+  },
+  {
+   "name": "Mentohotep IV",
+   "cells": {
+    "Start Co-Rex": "unknown",
+    "Start Sole-rex": "1745",
+    "End Sole-rex": "unknown",
+    "Death or Deposition": "1738"
+   }
+  }
+ ]
+}

@@ -31,6 +31,21 @@
         "note": "Start of the reign (\"the start of his reign in 2029 BC\"), which CFAH takes as the start of Dynasty 3.",
         "cfah_basis": "paper_text",
         "cfah_key": "cfah:c6-nebka-reign:nebka:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Start Sole-rex: 2030/2029; End Sole-rex: 2011/2010; Death or Deposition: 2001",
+        "year_am": null,
+        "year_bc_ad": -2030,
+        "year_bc_ad_end": -2001,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-7B: Kings of Dynasties 1-13,\" OSF preprint v1.3 (10 Feb 2026), doi:10.17605/OSF.IO/TUWNC, file CFAH 7-B Kings of Dynasties 1-13_v_1.3.pdf, Table 7 \"Integrated Dates for Dynasties 3 & 4\", p. 94",
+        "link": "https://osf.io/tuwnc/",
+        "source_text_id": "cfah-7b-osf",
+        "note": "Row \"Nebka\" of Table 7 (Egypt Dynasties 3–4 (Memphis)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-7b-t7-d3-4:nebka:nebka:reign"
       }
     ],
     "death": [
@@ -55,7 +70,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "cfah-6"
+    "cfah-6",
+    "cfah-7b-osf"
   ],
   "related": [],
   "free_source_links": [
@@ -63,6 +79,11 @@
       "source_id": "cfah-6",
       "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
       "locator": "\"A. Djoser’s Famine culminated with the death of Uenephes: 2001–1994 BC\""
+    },
+    {
+      "source_id": "cfah-7b-osf",
+      "url": "https://osf.io/tuwnc/",
+      "locator": "Table 7, p. 94"
     }
   ],
   "dynasty": "Egypt Dynasty 3 (Memphis)"

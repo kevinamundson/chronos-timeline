@@ -1174,6 +1174,44 @@
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
       "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cfah-7a-osf",
+      "title": "CFAH-7A: A Chronological Baseline for Dynasty 12",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "publication": "OSF preprint of 11 Jun 2025, no version number (file CFAH-7A Chronological Baseline for Dynasty 12.pdf), doi:10.17605/OSF.IO/GMX5J",
+      "url": "https://osf.io/gmx5j/",
+      "alt_urls": [
+        "https://osf.io/gmx5j/files/osfstorage/6849a3c092828d2af185b2a4"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-18",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cfah-7b-osf",
+      "title": "CFAH-7B: Kings of Dynasties 1-13",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "publication": "OSF preprint v1.3, 10 Feb 2026 (file CFAH 7-B Kings of Dynasties 1-13_v_1.3.pdf), doi:10.17605/OSF.IO/TUWNC",
+      "url": "https://osf.io/tuwnc/",
+      "alt_urls": [
+        "https://osf.io/tuwnc/files/osfstorage/698b7472bd36e2a67ce24bf6"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-18",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
     }
   ]
 }

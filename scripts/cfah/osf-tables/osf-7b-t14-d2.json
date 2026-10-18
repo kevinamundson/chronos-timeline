@@ -1,0 +1,93 @@
+{
+ "id": "osf-7b-t14-d2",
+ "src": "cfah-7b-osf",
+ "table": "Table 14",
+ "title": "Integrated Dates for Dynasty 2",
+ "dynasty": "Egypt Dynasty 2 (Thinis)",
+ "kind": "dated",
+ "region": "Egypt",
+ "pages": [
+  102
+ ],
+ "rows": [
+  {
+   "name": "Hotepsekhemwy Boethos",
+   "cells": {
+    "Start Sole-rex": "1924",
+    "End Sole-rex": "1916",
+    "Death or Deposition": "1885"
+   }
+  },
+  {
+   "name": "Nebra Kakau Kaiechos",
+   "cells": {
+    "Start Co-Rex": "1916",
+    "Start Sole-rex": "1885",
+    "End Sole-rex": "1878",
+    "Death or Deposition": "1876"
+   }
+  },
+  {
+   "name": "Nynetjer Binothris",
+   "cells": {
+    "Start Co-Rex": "1885",
+    "Start Sole-rex": "1876",
+    "End Sole-rex": "1846",
+    "Death or Deposition": "1839"
+   }
+  },
+  {
+   "name": "Weneg Wadjenes Tlas",
+   "cells": {
+    "Start Co-Rex": "1846",
+    "Start Sole-rex": "1839",
+    "End Sole-rex": "1822",
+    "Death or Deposition": "1822"
+   }
+  },
+  {
+   "name": "Senedj Sethenes",
+   "cells": {
+    "Start Sole-rex": "1822",
+    "End Sole-rex": "1806",
+    "Death or Deposition": "1781"
+   }
+  },
+  {
+   "name": "Neferirkare Kakai Nephercheres",
+   "cells": {
+    "Start Co-Rex": "1806",
+    "Start Sole-rex": "n/a",
+    "End Sole-rex": "n/a",
+    "Death or Deposition": "1781"
+   }
+  },
+  {
+   "name": "Neferkasokar Chaires",
+   "cells": {
+    "Start Co-Rex": "1781",
+    "Start Sole-rex": "n/a",
+    "End Sole-rex": "n/a",
+    "Death or Deposition": "1764"
+   }
+  },
+  {
+   "name": "Hudjefa I Sesochris",
+   "cells": {
+    "Start Co-Rex": "1781",
+    "Start Sole-rex": "n/a",
+    "End Sole-rex": "n/a",
+    "Death or Deposition": "1733"
+   }
+  },
+  {
+   "name": "Bebty Cheneres",
+   "cells": {
+    "Start Co-Rex": "1763",
+    "Start Sole-rex": "n/a",
+    "End Sole-rex": "n/a",
+    "Death or Deposition": "1733"
+   }
+  }
+ ]
+}

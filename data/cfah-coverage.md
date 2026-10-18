@@ -175,6 +175,21 @@ Stored in data/king-lists.json (rendered at /king-lists/). Person records exist 
 | CFAH estimated Egyptian dynasty dates (Dynasties 1–11) (`cfah6-table6-dynasty-dates`) | CFAH-6, Table 6 "CFAH estimated dynasty dates" | 11 | 0 | 6 | 5: Rows without an event: the data set has no record for that dynasty as a whole, and Table 6 marks these dates as estimates (no anchor point). They are shown here rather than as new events. |
 | Sothis King List with CFAH identifications (rows dated elsewhere in CFAH-6) (`cfah6-sothis-king-list`) | CFAH-6, Table 4 (Sothis King List) | 8 | 6 | 2 | 0 |
 | National founding epochs (CFAH-2 durations) (`cfah2-national-epochs`) | CFAH-2, sections "Duration 14" and "Duration 15" | 2 | 0 | 2 | 0 |
+| CFAH-7A: Dynasty 12 Solution (Table 2) *(OSF preprint)* (`osf-7a-t2-d12-solution`) | CFAH-7A, OSF preprint of 11 Jun 2025 (no version number), Table 2, p. 54 | 9 | 0 | 0 | 9: Regnal lengths only in this table, so no person record (no BC year is computed from lengths). |
+| CFAH-7A: Integrated Dates for Dynasty 12 (Table 3) *(OSF preprint)* (`osf-7a-t3-d12`) | CFAH-7A, OSF preprint of 11 Jun 2025 (no version number), Table 3, p. 55 | 9 | 9 | 0 | 0 |
+| CFAH-7B: Dynasty 5 Data (Table 10) *(OSF preprint)* (`osf-7b-t10-d5-data`) | CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 10, p. 98 | 9 | 0 | 0 | 9: Regnal lengths only in this table, so no person record (no BC year is computed from lengths). |
+| CFAH-7B: Integrated Dates for Dynasty 5 (Table 12) *(OSF preprint)* (`osf-7b-t12-d5`) | CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 12, p. 100 | 9 | 9 | 0 | 0 |
+| CFAH-7B: Dynasty 2 Data (Table 13) *(OSF preprint)* (`osf-7b-t13-d2-data`) | CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 13, p. 101 | 9 | 0 | 0 | 9: Regnal lengths only in this table, so no person record (no BC year is computed from lengths). |
+| CFAH-7B: Integrated Dates for Dynasty 2 (Table 14) *(OSF preprint)* (`osf-7b-t14-d2`) | CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 14, p. 102 | 9 | 9 | 0 | 0 |
+| CFAH-7B: EKL Solution Dynasties 4, 11, 12, 6 (Table 15) *(OSF preprint)* (`osf-7b-t15-ekl`) | CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 15, p. 103 | 16 | 14 | 0 | 2: A group of rulers, a gap or a total, not an individual ruler. |
+| CFAH-7B: Integrated Dates for Dynasty 6 (Table 16) *(OSF preprint)* (`osf-7b-t16-d6`) | CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 16, p. 104 | 9 | 8 | 0 | 1: A footnote of the table, not a ruler. |
+| CFAH-7B: Dynasty 13 Turin Canon Data (Table 17) *(OSF preprint)* (`osf-7b-t17-d13-turin`) | CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 17, pp. 105–106 | 26 | 0 | 0 | 26: Regnal lengths only in this table, so no person record (no BC year is computed from lengths). |
+| CFAH-7B: Integrated Dates for Dynasty 1 (Table 6) *(OSF preprint)* (`osf-7b-t6-d1`) | CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 6, p. 92 | 8 | 8 | 0 | 0 |
+| CFAH-7B: Integrated Dates for Dynasties 3 & 4 (Table 7) *(OSF preprint)* (`osf-7b-t7-d3-4`) | CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 7, p. 94 | 13 | 13 | 0 | 0 |
+| CFAH-7B: Integrated Dates for Dynasty 9 (Table 8) *(OSF preprint)* (`osf-7b-t8-d9`) | CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 8, p. 96 | 5 | 4 | 0 | 1: A group of rulers, a gap or a total, not an individual ruler. |
+| CFAH-7B: Integrated Dates for Dynasty 11 (Table 9) *(OSF preprint)* (`osf-7b-t9-d11`) | CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 9, p. 97 | 8 | 7 | 0 | 1: A group of rulers, a gap or a total, not an individual ruler. |
+
+OSF per-king tables (phase 5): 13 tables, 139 rows; 81 rows carry a printed BC date and link to 67 person records (51 created by this phase, the rest existing records reused); 58 rows are listed without a record (regnal lengths only, groups, gaps or footnotes). Each linked row is a display-only `paper_text` reign entry marked `cfah_preprint`, citing the OSF file, version, table and page.
 
 Not stored as lists:
 

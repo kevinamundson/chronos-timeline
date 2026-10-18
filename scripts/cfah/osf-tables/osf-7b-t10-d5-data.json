@@ -1,0 +1,81 @@
+{
+ "id": "osf-7b-t10-d5-data",
+ "src": "cfah-7b-osf",
+ "table": "Table 10",
+ "title": "Dynasty 5 Data",
+ "dynasty": "Egypt Dynasty 5",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  98
+ ],
+ "rows": [
+  {
+   "name": "Userkaf",
+   "cells": {
+    "SKL": "12",
+    "Turin Canon": "7",
+    "Manetho": "28"
+   }
+  },
+  {
+   "name": "Sahure",
+   "cells": {
+    "SKL": "14",
+    "Turin Canon": "12",
+    "Manetho": "13"
+   }
+  },
+  {
+   "name": "Neferirkare Kakai",
+   "cells": {
+    "Turin Canon": "?",
+    "Manetho": "20"
+   }
+  },
+  {
+   "name": "Shepseskaf",
+   "cells": {
+    "Turin Canon": "7",
+    "Manetho": "7"
+   }
+  },
+  {
+   "name": "Neferefra Isi",
+   "cells": {
+    "Turin Canon": "1 + ?",
+    "Manetho": "20"
+   }
+  },
+  {
+   "name": "Niuserra Ini",
+   "cells": {
+    "Turin Canon": "10 + ?",
+    "Manetho": "44"
+   }
+  },
+  {
+   "name": "Menkauhor",
+   "cells": {
+    "Turin Canon": "8",
+    "Manetho": "9"
+   }
+  },
+  {
+   "name": "Djedkare Isesi",
+   "cells": {
+    "SKL": "65 (composite)",
+    "Turin Canon": "28",
+    "Manetho": "44"
+   }
+  },
+  {
+   "name": "Unas",
+   "cells": {
+    "SKL": "50",
+    "Turin Canon": "30 + ?",
+    "Manetho": "33"
+   }
+  }
+ ]
+}

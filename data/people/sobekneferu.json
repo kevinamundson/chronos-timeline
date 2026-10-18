@@ -29,6 +29,23 @@
         "cfah_basis": "paper_text",
         "cfah_key": "cfah:c6-sobekneferu-death:sobekneferu:death"
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Start Sole-rex: 1530; Death or Deposition: April, 1526",
+        "year_am": null,
+        "year_bc_ad": -1530,
+        "year_bc_ad_end": -1526,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-7A: A Chronological Baseline for Dynasty 12,\" OSF preprint of 11 Jun 2025 (no version number), doi:10.17605/OSF.IO/GMX5J, file CFAH-7A Chronological Baseline for Dynasty 12.pdf, Table 3 \"Integrated Dates for Dynasty 12\", p. 55",
+        "link": "https://osf.io/gmx5j/",
+        "source_text_id": "cfah-7a-osf",
+        "note": "Row \"Sobekneferu\" of Table 3 (Egypt Dynasty 12).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-7a-t3-d12:sobekneferu:sobekneferu:reign"
+      }
     ]
   },
   "events": [
@@ -36,7 +53,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "cfah-6"
+    "cfah-6",
+    "cfah-7a-osf"
   ],
   "related": [],
   "free_source_links": [
@@ -44,6 +62,11 @@
       "source_id": "cfah-6",
       "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
       "locator": "\"12. Barren Queen with Moses\""
+    },
+    {
+      "source_id": "cfah-7a-osf",
+      "url": "https://osf.io/gmx5j/",
+      "locator": "Table 3, p. 55"
     }
   ],
   "dynasty": "Egypt Dynasty 12"

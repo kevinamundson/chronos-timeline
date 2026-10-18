@@ -10,6 +10,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { ARJ, arjCitation, OSF, osfUrl, osfCitation } from './papers.mjs';
+import { buildPhase5, loadTables } from './osf-kings.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..', '..');
@@ -77,7 +78,7 @@ function ensureRecord(id, create, kind = 'event', phase) {
 }
 
 const managed = new Set(); // cfah_key values produced in this run
-const log = { phase1: { new: new Set(), updated: new Set() }, phase2: { new: new Set(), updated: new Set() }, phase3: { new: new Set(), updated: new Set() }, phase4: { new: new Set(), updated: new Set() } };
+const log = { phase1: { new: new Set(), updated: new Set() }, phase2: { new: new Set(), updated: new Set() }, phase3: { new: new Set(), updated: new Set() }, phase4: { new: new Set(), updated: new Set() }, phase5: { new: new Set(), updated: new Set() } };
 
 const present = []; // anchor points another import already put on the target (hand-curated entry kept; nothing added)
 function addEntry(phase, item, basis) {
@@ -179,6 +180,16 @@ for (const it of KINGS) for (const ev of it.create?.events || []) {
 }
 for (const it of EPOCHS) addEntry('phase3', it, 'paper_text');
 for (const it of PHASE4) { ensureOsfSource(it.src); addEntry('phase4', it, 'anchor_point'); }
+// phase 5: per-king rows of the OSF king-list tables (osf-kings.mjs)
+const P5 = buildPhase5(loadTables(join(here, 'osf-tables')), new Set(Object.keys(recs).filter((id) => createdBy[id] !== 'phase5')));
+if (P5.problems.length) { console.error(P5.problems.join('\n')); process.exit(1); }
+for (const it of P5.items) { ensureOsfSource(it.src); addEntry('phase5', it, 'paper_text'); }
+{
+  const kf = join(DATA, 'king-lists.json'); const kd = JSON.parse(readFileSync(kf, 'utf8'));
+  for (const l of P5.lists) ensureOsfSource(l.source);
+  kd.lists = [...kd.lists.filter((l) => !l.id.startsWith('osf-')), ...P5.lists];
+  writeFileSync(kf, JSON.stringify(kd, null, 2) + '\n');
+}
 dropStale();
 backfill();
 for (const r of Object.values(recs)) if (r.touched && r.doc.type !== 'location') resort(r);
@@ -193,5 +204,5 @@ writeFileSync(join(here, 'last-run.json'), JSON.stringify(Object.fromEntries(Obj
 
 // ---- coverage checklist
 const { writeCoverage } = await import(pathToFileURL(join(here, 'coverage.mjs')).href);
-writeCoverage({ recs, sortChanges, DATA, PHASE1, PHASE4, TABLE1, KINGS, present });
+writeCoverage({ recs, sortChanges, DATA, createdBy, PHASE1, PHASE4, TABLE1, KINGS, present });
 console.log('wrote data/cfah-coverage.md');

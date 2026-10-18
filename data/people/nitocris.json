@@ -32,6 +32,21 @@
         "note": "Table 1: \"Approximate reign of Nitocris aka Netjerkare Siptah\" (AP-16, from CFAH-3). The anchor point itself is on the event reign-of-nitocris.",
         "cfah_basis": "paper_text",
         "cfah_key": "cfah:c6-nitocris-reign:nitocris:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Start Sole-rex: 1491; End Sole-rex: 1485; Death or Deposition: 1479",
+        "year_am": null,
+        "year_bc_ad": -1491,
+        "year_bc_ad_end": -1479,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-7B: Kings of Dynasties 1-13,\" OSF preprint v1.3 (10 Feb 2026), doi:10.17605/OSF.IO/TUWNC, file CFAH 7-B Kings of Dynasties 1-13_v_1.3.pdf, Table 16 \"Integrated Dates for Dynasty 6\", p. 104",
+        "link": "https://osf.io/tuwnc/",
+        "source_text_id": "cfah-7b-osf",
+        "note": "Row \"Nitocris\" of Table 16 (Egypt Dynasty 6).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-7b-t16-d6:nitocris:nitocris:reign"
       }
     ]
   },
@@ -40,7 +55,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "cfah-6"
+    "cfah-6",
+    "cfah-7b-osf"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +64,11 @@
       "source_id": "cfah-6",
       "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
       "locator": "\"Argument 2. The Durations Form an Interlocking Matrix\", Table 1 (AP-16 row)"
+    },
+    {
+      "source_id": "cfah-7b-osf",
+      "url": "https://osf.io/tuwnc/",
+      "locator": "Table 16, p. 104"
     }
   ],
   "dynasty": "Egypt Dynasty 6"

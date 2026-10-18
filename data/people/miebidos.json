@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "miebidos",
+  "type": "person",
+  "title": "Miebidos",
+  "summary": "King listed in CFAH-7B Table 6 (Egypt Dynasty 1 (Thinis)).",
+  "description": "Ruler of Egypt Dynasty 1 (Thinis). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 6, \"Integrated Dates for Dynasty 1\"); its dates are display only.",
+  "alt_names": [
+    "Den"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Start Co-Rex: 2006; Start Sole-rex: 1994; Death or Deposition: 1968",
+        "year_am": null,
+        "year_bc_ad": -2006,
+        "year_bc_ad_end": -1968,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-7B: Kings of Dynasties 1-13,\" OSF preprint v1.3 (10 Feb 2026), doi:10.17605/OSF.IO/TUWNC, file CFAH 7-B Kings of Dynasties 1-13_v_1.3.pdf, Table 6 \"Integrated Dates for Dynasty 1\", p. 92",
+        "link": "https://osf.io/tuwnc/",
+        "source_text_id": "cfah-7b-osf",
+        "note": "Row \"Miebidos / Den\" of Table 6 (Egypt Dynasty 1 (Thinis)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-7b-t6-d1:miebidos-den:miebidos:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-7b-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-7b-osf",
+      "url": "https://osf.io/tuwnc/",
+      "locator": "Table 6, p. 92"
+    }
+  ],
+  "dynasty": "Egypt Dynasty 1 (Thinis)"
+}

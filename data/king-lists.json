@@ -9,14 +9,54 @@
       "source": "cfah-5",
       "citation_short": "CFAH-5, AP-38 to AP-45 sections and Table 3",
       "entries": [
-        { "name": "Dynasty 1 (Chaldean)", "dates": "2233—2191 B.C.", "event": "babylon-dynasty-1-chaldean", "ap": "AP-38" },
-        { "name": "Dynasty 2 (Median)", "dates": "2191–1968 B.C.", "event": "median-dynasty-of-babylon", "ap": "AP-39" },
-        { "name": "Dynasty 3 (division and rebellion)", "dates": "1968–1935 B.C.", "event": "babylon-dynasty-3", "ap": "AP-40" },
-        { "name": "Dynasty 4 (Chaldean)", "dates": "1935—1477 B.C.", "event": "babylon-dynasty-4-chaldean", "ap": "AP-41" },
-        { "name": "Dynasty 5 (\"Arab\")", "dates": "1477–1232 B.C.", "event": "babylon-dynasty-5-arab", "ap": "AP-42" },
-        { "name": "Dynasty 6 (Assyrian)", "dates": "1232–706 B.C.", "event": "babylon-dynasty-6-assyrian", "ap": "AP-43" },
-        { "name": "Dynasty 7 (second Assyrian)", "dates": "705–626 B.C.", "event": "babylon-dynasty-7-assyrian", "ap": "AP-44" },
-        { "name": "Dynasty 8 (Neo-Babylonian)", "dates": "626–539 B.C.", "event": "neo-babylonian-empire", "ap": "AP-45" }
+        {
+          "name": "Dynasty 1 (Chaldean)",
+          "dates": "2233—2191 B.C.",
+          "event": "babylon-dynasty-1-chaldean",
+          "ap": "AP-38"
+        },
+        {
+          "name": "Dynasty 2 (Median)",
+          "dates": "2191–1968 B.C.",
+          "event": "median-dynasty-of-babylon",
+          "ap": "AP-39"
+        },
+        {
+          "name": "Dynasty 3 (division and rebellion)",
+          "dates": "1968–1935 B.C.",
+          "event": "babylon-dynasty-3",
+          "ap": "AP-40"
+        },
+        {
+          "name": "Dynasty 4 (Chaldean)",
+          "dates": "1935—1477 B.C.",
+          "event": "babylon-dynasty-4-chaldean",
+          "ap": "AP-41"
+        },
+        {
+          "name": "Dynasty 5 (\"Arab\")",
+          "dates": "1477–1232 B.C.",
+          "event": "babylon-dynasty-5-arab",
+          "ap": "AP-42"
+        },
+        {
+          "name": "Dynasty 6 (Assyrian)",
+          "dates": "1232–706 B.C.",
+          "event": "babylon-dynasty-6-assyrian",
+          "ap": "AP-43"
+        },
+        {
+          "name": "Dynasty 7 (second Assyrian)",
+          "dates": "705–626 B.C.",
+          "event": "babylon-dynasty-7-assyrian",
+          "ap": "AP-44"
+        },
+        {
+          "name": "Dynasty 8 (Neo-Babylonian)",
+          "dates": "626–539 B.C.",
+          "event": "neo-babylonian-empire",
+          "ap": "AP-45"
+        }
       ],
       "unrecorded_reason": null
     },
@@ -27,15 +67,43 @@
       "source": "cfah-5",
       "citation_short": "CFAH-5, section \"AP-44: Dynasty 7: Second Assyrian Dynasty of Babylon: 705–626 B.C.\"",
       "entries": [
-        { "name": "Kingless (2 years)", "dates": null },
-        { "name": "Bel-ibni (3 years)", "dates": null },
-        { "name": "Assur-nadin-shum (6 years)", "dates": null },
-        { "name": "Nergal-ushezib (1 year)", "dates": null },
-        { "name": "Mushezib-Marduk (4 years)", "dates": null },
-        { "name": "Kingless (8 years)", "dates": null },
-        { "name": "Assur-akh-iddin (Esarhaddon, 13 years)", "dates": null },
-        { "name": "Shamash-shum-ukin (20 years)", "dates": null },
-        { "name": "Kandalanu (22 years)", "dates": "627 B.C. (end of the Babylonian King List, section \"Kassite Synchronisms\")", "person": "kandalanu" }
+        {
+          "name": "Kingless (2 years)",
+          "dates": null
+        },
+        {
+          "name": "Bel-ibni (3 years)",
+          "dates": null
+        },
+        {
+          "name": "Assur-nadin-shum (6 years)",
+          "dates": null
+        },
+        {
+          "name": "Nergal-ushezib (1 year)",
+          "dates": null
+        },
+        {
+          "name": "Mushezib-Marduk (4 years)",
+          "dates": null
+        },
+        {
+          "name": "Kingless (8 years)",
+          "dates": null
+        },
+        {
+          "name": "Assur-akh-iddin (Esarhaddon, 13 years)",
+          "dates": null
+        },
+        {
+          "name": "Shamash-shum-ukin (20 years)",
+          "dates": null
+        },
+        {
+          "name": "Kandalanu (22 years)",
+          "dates": "627 B.C. (end of the Babylonian King List, section \"Kassite Synchronisms\")",
+          "person": "kandalanu"
+        }
       ],
       "unrecorded_reason": "CFAH-5 gives these kings regnal lengths only (summed to fill 705–626 B.C.), not BC years for each, so no person records were made."
     },
@@ -46,18 +114,81 @@
       "source": "cfah-5",
       "citation_short": "CFAH-5, sections cited on each person's reign entry",
       "entries": [
-        { "name": "Cush (at Babel)", "dates": "from the founding of Babel in 2233 B.C.", "person": "cush", "event": "founding-of-babel" },
-        { "name": "Semiramis I", "dates": "2036–1994 B.C.", "person": "semiramis-i", "event": "reign-of-semiramis-i", "ap": "AP-21" },
-        { "name": "Ninyas Zames (Gilgamesh)", "dates": "2006–1968 B.C.", "person": "ninyas", "event": "reign-of-ninyas-gilgamesh", "ap": "AP-47" },
-        { "name": "Sargon of Akkad", "dates": "earliest 1642 B.C. to latest 1553 B.C.", "person": "sargon-i-of-akkad", "event": "sargon-of-akkad" },
-        { "name": "Ghandash (first Kassite king)", "dates": "1282 B.C.", "person": "ghandash" },
-        { "name": "Shalmaneser I (Assyrian Belus)", "dates": "1261", "person": "shalmaneser-i", "event": "assyrian-belus-shalmaneser-i", "ap": "AP-36" },
-        { "name": "Tukulti-Ninurta I (Semiramis II)", "dates": "sole reign around 1232 B.C.", "person": "tukulti-ninurta-i", "event": "semiramis-ii", "ap": "AP-15" },
-        { "name": "Kashtiliash I", "dates": "defeated 1232 B.C.", "person": "kashtiliash-i" },
-        { "name": "Ashur-danin-pal (Sardanapalus I)", "dates": "843 to 823 B.C. (also: until his death in 824 B.C.)", "person": "ashur-danin-pal", "event": "first-median-revolt" },
-        { "name": "Sargon II (Sardanapalus II)", "dates": "720 or 721 to 705", "person": "sargon-ii", "event": "second-median-revolt", "ap": "AP-34" },
-        { "name": "Kandalanu", "dates": "627 B.C.", "person": "kandalanu" },
-        { "name": "Nabopolassar", "dates": "626/625 B.C.", "person": "nabopolassar", "event": "neo-babylonian-empire", "ap": "AP-45" }
+        {
+          "name": "Cush (at Babel)",
+          "dates": "from the founding of Babel in 2233 B.C.",
+          "person": "cush",
+          "event": "founding-of-babel"
+        },
+        {
+          "name": "Semiramis I",
+          "dates": "2036–1994 B.C.",
+          "person": "semiramis-i",
+          "event": "reign-of-semiramis-i",
+          "ap": "AP-21"
+        },
+        {
+          "name": "Ninyas Zames (Gilgamesh)",
+          "dates": "2006–1968 B.C.",
+          "person": "ninyas",
+          "event": "reign-of-ninyas-gilgamesh",
+          "ap": "AP-47"
+        },
+        {
+          "name": "Sargon of Akkad",
+          "dates": "earliest 1642 B.C. to latest 1553 B.C.",
+          "person": "sargon-i-of-akkad",
+          "event": "sargon-of-akkad"
+        },
+        {
+          "name": "Ghandash (first Kassite king)",
+          "dates": "1282 B.C.",
+          "person": "ghandash"
+        },
+        {
+          "name": "Shalmaneser I (Assyrian Belus)",
+          "dates": "1261",
+          "person": "shalmaneser-i",
+          "event": "assyrian-belus-shalmaneser-i",
+          "ap": "AP-36"
+        },
+        {
+          "name": "Tukulti-Ninurta I (Semiramis II)",
+          "dates": "sole reign around 1232 B.C.",
+          "person": "tukulti-ninurta-i",
+          "event": "semiramis-ii",
+          "ap": "AP-15"
+        },
+        {
+          "name": "Kashtiliash I",
+          "dates": "defeated 1232 B.C.",
+          "person": "kashtiliash-i"
+        },
+        {
+          "name": "Ashur-danin-pal (Sardanapalus I)",
+          "dates": "843 to 823 B.C. (also: until his death in 824 B.C.)",
+          "person": "ashur-danin-pal",
+          "event": "first-median-revolt"
+        },
+        {
+          "name": "Sargon II (Sardanapalus II)",
+          "dates": "720 or 721 to 705",
+          "person": "sargon-ii",
+          "event": "second-median-revolt",
+          "ap": "AP-34"
+        },
+        {
+          "name": "Kandalanu",
+          "dates": "627 B.C.",
+          "person": "kandalanu"
+        },
+        {
+          "name": "Nabopolassar",
+          "dates": "626/625 B.C.",
+          "person": "nabopolassar",
+          "event": "neo-babylonian-empire",
+          "ap": "AP-45"
+        }
       ],
       "unrecorded_reason": null
     },
@@ -68,22 +199,96 @@
       "source": "cfah-6",
       "citation_short": "CFAH-6, sections cited on each person's reign or death entry",
       "entries": [
-        { "name": "Nebka (Necherophes), Dynasty 3", "dates": "2029 BC to shortly before 2001 BC", "person": "nebka", "event": "egypt-dynasty-3-memphis" },
-        { "name": "Menkaure (Mycerinus), Dynasty 4", "dates": "died about 1790 BC", "person": "mycerinus" },
-        { "name": "Inteff III, Dynasty 11", "dates": "1816 to 1808 BC", "person": "intef-iii" },
-        { "name": "Mentuhotep II, Dynasty 11", "dates": "1808 BC", "event": "accession-of-mentuhotep-ii", "ap": "AP-56" },
-        { "name": "Mentuhotep IV, Dynasty 11", "dates": "1745 BC (start)", "person": "mentuhotep-iv" },
-        { "name": "Amenemhat I, Dynasty 12", "dates": "1738 BC", "event": "accession-of-amenemhat-i", "ap": "AP-53" },
-        { "name": "Unas, Dynasty 5", "dates": "1715 to 1682 BC", "person": "unas" },
-        { "name": "Pepi I, Dynasty 6", "dates": "sole reign 1637 BC ±2 years (CFAH-5: about 1646 to 1593 B.C.)", "person": "pepi-i" },
-        { "name": "Userkare (Khendjer), Dynasty 6/13", "dates": "coregency ends 1637 BC ±2 years", "person": "userkare" },
-        { "name": "Senusret III, Dynasty 12", "dates": "1613 to 1573 BC", "person": "senusret-iii", "event": "reign-of-senusret-iii" },
-        { "name": "Merenre I, Dynasty 6", "dates": "Year 1 1606 BC ±2 years; died 1586 BC", "person": "merenre-i", "event": "aswan-canal", "ap": "AP-59" },
-        { "name": "Amenemhat III, Dynasty 12", "dates": "coreign from 1586 BC ±1.5 years", "person": "amenemhat-iii" },
-        { "name": "Neferhotep I, Dynasty 13", "dates": "1576 BC ±2.5 years (start)", "person": "neferhotep-i" },
-        { "name": "Sobekneferu, Dynasty 12", "dates": "died no later than 1525 BC", "person": "sobekneferu", "event": "end-of-egypt-dynasty-12" },
-        { "name": "Nitocris, Dynasty 6", "dates": "1497–1479", "person": "nitocris", "event": "reign-of-nitocris", "ap": "AP-16" },
-        { "name": "Merenre II, Dynasty 6", "dates": "died 1491 BC", "person": "merenre-ii", "event": "death-of-concharis" }
+        {
+          "name": "Nebka (Necherophes), Dynasty 3",
+          "dates": "2029 BC to shortly before 2001 BC",
+          "person": "nebka",
+          "event": "egypt-dynasty-3-memphis"
+        },
+        {
+          "name": "Menkaure (Mycerinus), Dynasty 4",
+          "dates": "died about 1790 BC",
+          "person": "mycerinus"
+        },
+        {
+          "name": "Inteff III, Dynasty 11",
+          "dates": "1816 to 1808 BC",
+          "person": "intef-iii"
+        },
+        {
+          "name": "Mentuhotep II, Dynasty 11",
+          "dates": "1808 BC",
+          "event": "accession-of-mentuhotep-ii",
+          "ap": "AP-56"
+        },
+        {
+          "name": "Mentuhotep IV, Dynasty 11",
+          "dates": "1745 BC (start)",
+          "person": "mentuhotep-iv"
+        },
+        {
+          "name": "Amenemhat I, Dynasty 12",
+          "dates": "1738 BC",
+          "event": "accession-of-amenemhat-i",
+          "ap": "AP-53"
+        },
+        {
+          "name": "Unas, Dynasty 5",
+          "dates": "1715 to 1682 BC",
+          "person": "unas"
+        },
+        {
+          "name": "Pepi I, Dynasty 6",
+          "dates": "sole reign 1637 BC ±2 years (CFAH-5: about 1646 to 1593 B.C.)",
+          "person": "pepi-i"
+        },
+        {
+          "name": "Userkare (Khendjer), Dynasty 6/13",
+          "dates": "coregency ends 1637 BC ±2 years",
+          "person": "userkare"
+        },
+        {
+          "name": "Senusret III, Dynasty 12",
+          "dates": "1613 to 1573 BC",
+          "person": "senusret-iii",
+          "event": "reign-of-senusret-iii"
+        },
+        {
+          "name": "Merenre I, Dynasty 6",
+          "dates": "Year 1 1606 BC ±2 years; died 1586 BC",
+          "person": "merenre-i",
+          "event": "aswan-canal",
+          "ap": "AP-59"
+        },
+        {
+          "name": "Amenemhat III, Dynasty 12",
+          "dates": "coreign from 1586 BC ±1.5 years",
+          "person": "amenemhat-iii"
+        },
+        {
+          "name": "Neferhotep I, Dynasty 13",
+          "dates": "1576 BC ±2.5 years (start)",
+          "person": "neferhotep-i"
+        },
+        {
+          "name": "Sobekneferu, Dynasty 12",
+          "dates": "died no later than 1525 BC",
+          "person": "sobekneferu",
+          "event": "end-of-egypt-dynasty-12"
+        },
+        {
+          "name": "Nitocris, Dynasty 6",
+          "dates": "1497–1479",
+          "person": "nitocris",
+          "event": "reign-of-nitocris",
+          "ap": "AP-16"
+        },
+        {
+          "name": "Merenre II, Dynasty 6",
+          "dates": "died 1491 BC",
+          "person": "merenre-ii",
+          "event": "death-of-concharis"
+        }
       ],
       "unrecorded_reason": null
     },
@@ -94,17 +299,61 @@
       "source": "cfah-6",
       "citation_short": "CFAH-6, Table 6 \"CFAH estimated dynasty dates\"",
       "entries": [
-        { "name": "Dynasty 1", "dates": "2191 / 2188 to 1924", "event": "egyptian-cities-founded" },
-        { "name": "Dynasty 2", "dates": "1924 to ~1738", "event": null },
-        { "name": "Dynasty 3", "dates": "2029 to 1922", "event": "egypt-dynasty-3-memphis" },
-        { "name": "Dynasty 4", "dates": "1922 to 1825", "event": null },
-        { "name": "Dynasty 5", "dates": "1822 to 1682", "event": null },
-        { "name": "Dynasty 6", "dates": "1682 to 1479", "event": "reign-of-nitocris" },
-        { "name": "Dynasty 7", "dates": "1479 to 1479 (70 days)", "event": null },
-        { "name": "Dynasty 8", "dates": "1479 to 1232", "event": "end-of-egypt-dynasty-8" },
-        { "name": "Dynasty 9", "dates": "2190/1881 to 1781", "event": "fall-of-heracleopolis" },
-        { "name": "Dynasty 10", "dates": "1781 to 1577", "event": null },
-        { "name": "Dynasty 11", "dates": "1881 to 1738", "event": "accession-of-amenemhat-i" }
+        {
+          "name": "Dynasty 1",
+          "dates": "2191 / 2188 to 1924",
+          "event": "egyptian-cities-founded"
+        },
+        {
+          "name": "Dynasty 2",
+          "dates": "1924 to ~1738",
+          "event": null
+        },
+        {
+          "name": "Dynasty 3",
+          "dates": "2029 to 1922",
+          "event": "egypt-dynasty-3-memphis"
+        },
+        {
+          "name": "Dynasty 4",
+          "dates": "1922 to 1825",
+          "event": null
+        },
+        {
+          "name": "Dynasty 5",
+          "dates": "1822 to 1682",
+          "event": null
+        },
+        {
+          "name": "Dynasty 6",
+          "dates": "1682 to 1479",
+          "event": "reign-of-nitocris"
+        },
+        {
+          "name": "Dynasty 7",
+          "dates": "1479 to 1479 (70 days)",
+          "event": null
+        },
+        {
+          "name": "Dynasty 8",
+          "dates": "1479 to 1232",
+          "event": "end-of-egypt-dynasty-8"
+        },
+        {
+          "name": "Dynasty 9",
+          "dates": "2190/1881 to 1781",
+          "event": "fall-of-heracleopolis"
+        },
+        {
+          "name": "Dynasty 10",
+          "dates": "1781 to 1577",
+          "event": null
+        },
+        {
+          "name": "Dynasty 11",
+          "dates": "1881 to 1738",
+          "event": "accession-of-amenemhat-i"
+        }
       ],
       "unrecorded_reason": "Rows without an event: the data set has no record for that dynasty as a whole, and Table 6 marks these dates as estimates (no anchor point). They are shown here rather than as new events."
     },
@@ -115,14 +364,49 @@
       "source": "cfah-6",
       "citation_short": "CFAH-6, Table 4 (Sothis King List)",
       "entries": [
-        { "name": "#12 Chnubos = Inteff III", "dates": "1816 to 1808 BC", "person": "intef-iii" },
-        { "name": "#13 Rayosis = Mentuhotep II", "dates": "1808 BC", "event": "accession-of-mentuhotep-ii", "ap": "AP-56" },
-        { "name": "#14 Biyres = Amenemhat I", "dates": "1738 BC", "event": "accession-of-amenemhat-i", "ap": "AP-53" },
-        { "name": "#17 Moscheres/Mencheres = Userkare Khendjer", "dates": "coregency ends 1637 BC ±2 years", "person": "userkare" },
-        { "name": "#18 Mosthes = Senusret III", "dates": "1613 to 1573 BC", "person": "senusret-iii" },
-        { "name": "#19 Pammes = Amenemhat III", "dates": "coreign from 1586 BC ±1.5 years", "person": "amenemhat-iii" },
-        { "name": "#21 Echeskosokaras = Merenre Nemtyemsaf II", "dates": "died 1491 BC", "person": "merenre-ii" },
-        { "name": "#22 Nitocris = Netjerikare Siptah", "dates": "1497–1479", "person": "nitocris", "ap": "AP-16" }
+        {
+          "name": "#12 Chnubos = Inteff III",
+          "dates": "1816 to 1808 BC",
+          "person": "intef-iii"
+        },
+        {
+          "name": "#13 Rayosis = Mentuhotep II",
+          "dates": "1808 BC",
+          "event": "accession-of-mentuhotep-ii",
+          "ap": "AP-56"
+        },
+        {
+          "name": "#14 Biyres = Amenemhat I",
+          "dates": "1738 BC",
+          "event": "accession-of-amenemhat-i",
+          "ap": "AP-53"
+        },
+        {
+          "name": "#17 Moscheres/Mencheres = Userkare Khendjer",
+          "dates": "coregency ends 1637 BC ±2 years",
+          "person": "userkare"
+        },
+        {
+          "name": "#18 Mosthes = Senusret III",
+          "dates": "1613 to 1573 BC",
+          "person": "senusret-iii"
+        },
+        {
+          "name": "#19 Pammes = Amenemhat III",
+          "dates": "coreign from 1586 BC ±1.5 years",
+          "person": "amenemhat-iii"
+        },
+        {
+          "name": "#21 Echeskosokaras = Merenre Nemtyemsaf II",
+          "dates": "died 1491 BC",
+          "person": "merenre-ii"
+        },
+        {
+          "name": "#22 Nitocris = Netjerikare Siptah",
+          "dates": "1497–1479",
+          "person": "nitocris",
+          "ap": "AP-16"
+        }
       ],
       "unrecorded_reason": "Only the rows CFAH-6 dates in BC are listed. The other 30 rows of Table 4 carry regnal lengths and identifications only, so they are not copied."
     },
@@ -133,8 +417,907 @@
       "source": "cfah-2",
       "citation_short": "CFAH-2, sections \"Duration 14\" and \"Duration 15\"",
       "entries": [
-        { "name": "Founding of Sicyon", "dates": "2089 or 2076 BC", "event": "founding-of-sicyon" },
-        { "name": "Founding of Trier", "dates": "2053 BC", "event": "founding-of-trier" }
+        {
+          "name": "Founding of Sicyon",
+          "dates": "2089 or 2076 BC",
+          "event": "founding-of-sicyon"
+        },
+        {
+          "name": "Founding of Trier",
+          "dates": "2053 BC",
+          "event": "founding-of-trier"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7a-t2-d12-solution",
+      "title": "CFAH-7A: Dynasty 12 Solution (Table 2)",
+      "region": "Egypt",
+      "source": "cfah-7a-osf",
+      "citation_short": "CFAH-7A, OSF preprint of 11 Jun 2025 (no version number), Table 2, p. 54",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Amenemhat I",
+          "dates": null,
+          "lengths": "Turin: [0]9 y [0] m; Manetho (Africanus): 16; Manetho (Eusebius): 16; Monuments: 30",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Senusret I",
+          "dates": null,
+          "lengths": "Turin: 45 [0] mo; Manetho (Africanus): 46; Manetho (Eusebius): 46; Monuments: 44",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amenemhat II",
+          "dates": null,
+          "lengths": "SKL: 29; Turin: [29 y 4 mo]; EKL: 29; Manetho (Africanus): 38; Manetho (Eusebius): 38; Monuments: 35",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Senusret II",
+          "dates": null,
+          "lengths": "SKL: 15; Turin: [2]9 y [3 mo]; EKL: 27; Manetho (Africanus): 48; Manetho (Eusebius): 48; Monuments: 7",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Usimare",
+          "dates": null,
+          "lengths": "SKL: 31; EKL: 31",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Senusret III",
+          "dates": null,
+          "lengths": "SKL: 23; Turin: 3[9 y 6 mo]; EKL: 33; Manetho (Africanus): [3]8; Manetho (Eusebius): [3]8; Monuments: 39; Diodorus: 33",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amenemhat III",
+          "dates": null,
+          "lengths": "SKL: 19; Turin: 4[8] y 0 mo; EKL: 35; Manetho (Africanus): [4]8; Manetho (Eusebius): [48]; Monuments: 46–48",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amenemhat IV",
+          "dates": null,
+          "lengths": "Turin: 9y 3m 27d; Manetho (Africanus): 8; Manetho (Eusebius): [8]; Monuments: 13",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sobek-nefrue / Khaneferre S.",
+          "dates": null,
+          "lengths": "SKL: 39; Turin: 3y 10m 14d; Manetho (Africanus): 4; Manetho (Eusebius): [4]; Monuments: 3",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7a-t3-d12",
+      "title": "CFAH-7A: Integrated Dates for Dynasty 12 (Table 3)",
+      "region": "Egypt",
+      "source": "cfah-7a-osf",
+      "citation_short": "CFAH-7A, OSF preprint of 11 Jun 2025 (no version number), Table 3, p. 55",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Amenemhat I",
+          "dates": "Start Co-Rex: 1745; Start Sole-rex: 1738; End Sole-rex: 1729 & 1718; Death or Deposition: 1708",
+          "person": "amenemhat-i"
+        },
+        {
+          "name": "Senusret I",
+          "dates": "Start Co-Rex: 1729 & 1718; Start Sole-rex: 1708; End Sole-rex: 1686/1685; Death or Deposition: 1683",
+          "person": "senusret-i"
+        },
+        {
+          "name": "Amenemhat II",
+          "dates": "Start Co-Rex: 1686/1685; Start Sole-rex: 1683; End Sole-rex: 1655/1654; Death or Deposition: 1648",
+          "person": "amenemhat-ii"
+        },
+        {
+          "name": "Senusret II",
+          "dates": "Start Co-Rex: 1655/1654; Start Sole-rex: 1648; End Sole-rex: 1637; Death or Deposition: 1606",
+          "person": "senusret-ii"
+        },
+        {
+          "name": "Usimare",
+          "dates": "Start Co-Rex: 1637; Start Sole-rex: 1629/1628; End Sole-rex: 1613; Death or Deposition: 1606",
+          "person": "userkare"
+        },
+        {
+          "name": "Senusret III",
+          "dates": "Start Co-Rex: 1613; Start Sole-rex: 1606; End Sole-rex: 1586; Death or Deposition: 1573",
+          "person": "senusret-iii"
+        },
+        {
+          "name": "Amenemhat III",
+          "dates": "Start Co-Rex: 1586; Start Sole-rex: 1575; End Sole-rex: 1542; Death or Deposition: 1539",
+          "person": "amenemhat-iii"
+        },
+        {
+          "name": "Amenemhat IV",
+          "dates": "Start Co-Rex: 1543; Start Sole-rex: 1539; End Sole-rex: 1530; Death or Deposition: none",
+          "person": "amenemhat-iv"
+        },
+        {
+          "name": "Sobekneferu",
+          "dates": "Start Sole-rex: 1530; Death or Deposition: April, 1526",
+          "person": "sobekneferu"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7b-t10-d5-data",
+      "title": "CFAH-7B: Dynasty 5 Data (Table 10)",
+      "region": "Egypt",
+      "source": "cfah-7b-osf",
+      "citation_short": "CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 10, p. 98",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Userkaf",
+          "dates": null,
+          "lengths": "SKL: 12; Turin Canon: 7; Manetho: 28",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sahure",
+          "dates": null,
+          "lengths": "SKL: 14; Turin Canon: 12; Manetho: 13",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Neferirkare Kakai",
+          "dates": null,
+          "lengths": "Turin Canon: ?; Manetho: 20",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shepseskaf",
+          "dates": null,
+          "lengths": "Turin Canon: 7; Manetho: 7",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Neferefra Isi",
+          "dates": null,
+          "lengths": "Turin Canon: 1 + ?; Manetho: 20",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Niuserra Ini",
+          "dates": null,
+          "lengths": "Turin Canon: 10 + ?; Manetho: 44",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Menkauhor",
+          "dates": null,
+          "lengths": "Turin Canon: 8; Manetho: 9",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Djedkare Isesi",
+          "dates": null,
+          "lengths": "SKL: 65 (composite); Turin Canon: 28; Manetho: 44",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Unas",
+          "dates": null,
+          "lengths": "SKL: 50; Turin Canon: 30 + ?; Manetho: 33",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7b-t12-d5",
+      "title": "CFAH-7B: Integrated Dates for Dynasty 5 (Table 12)",
+      "region": "Egypt",
+      "source": "cfah-7b-osf",
+      "citation_short": "CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 12, p. 100",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Userkaf",
+          "dates": "Start Sole-rex: 1822; End Sole-rex: 1815; Death or Deposition: 1794",
+          "person": "userkaf"
+        },
+        {
+          "name": "Sahure",
+          "dates": "Start Co-Rex: 1814; Start Sole-rex: n/a; End Sole-rex: 1801; Death or Deposition: 1801",
+          "person": "sahure"
+        },
+        {
+          "name": "Neferirkare Kakai",
+          "dates": "Start Co-Rex: 1806; Start Sole-rex: 1794; End Sole-rex: 1788; Death or Deposition: 1781",
+          "person": "neferirkare-kakai"
+        },
+        {
+          "name": "Shepseskara Nejeruser",
+          "dates": "Start Co-Rex: 1788; Start Sole-rex: n/a; End Sole-rex: n/a; Death or Deposition: 1781",
+          "person": "shepseskara"
+        },
+        {
+          "name": "Neferfre Isi",
+          "dates": "Start Co-Rex: 1781; Start Sole-rex: n/a; End Sole-rex: n/a; Death or Deposition: 1761",
+          "person": "neferefre"
+        },
+        {
+          "name": "Niuserra Ini",
+          "dates": "Start Co-Rex: 1781; Start Sole-rex: n/a; End Sole-rex: n/a; Death or Deposition: 1737",
+          "person": "niuserre-ini"
+        },
+        {
+          "name": "Menkauhor",
+          "dates": "Start Co-Rex: ~1752; Start Sole-rex: n/a; End Sole-rex: n/a; Death or Deposition: 1743",
+          "person": "menkauhor"
+        },
+        {
+          "name": "Djedkara Isesi",
+          "dates": "Start Co-Rex: ~1761; Start Sole-rex: n/a; End Sole-rex: n/a; Death or Deposition: 1716",
+          "person": "djedkare-isesi"
+        },
+        {
+          "name": "Unas",
+          "dates": "Start Co-Rex: 1732; Start Sole-rex: 1716; End Sole-rex: 1682; Death or Deposition: 1682",
+          "person": "unas"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7b-t13-d2-data",
+      "title": "CFAH-7B: Dynasty 2 Data (Table 13)",
+      "region": "Egypt",
+      "source": "cfah-7b-osf",
+      "citation_short": "CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 13, p. 101",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Boethos / Hotepsekhemwy",
+          "dates": null,
+          "lengths": "Africanus: 38; Turin Canon: 95; T/3: 31.7",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Kaiechos / Raneb",
+          "dates": null,
+          "lengths": "Africanus: 39; Turin Canon: [47]; T/3: [15.6]",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Binothris / Ninetjer",
+          "dates": null,
+          "lengths": "Africanus: 47; Turin Canon: 95; T/3: 31.7",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Tlas / Wadjenes",
+          "dates": null,
+          "lengths": "Africanus: 17; Turin Canon: 70; T/3: 23.3",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sethenes / Senedj",
+          "dates": null,
+          "lengths": "Africanus: 41; Turin Canon: 54/ 74; T/3: 18/ 24.6",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Nefercheres / Neferkara",
+          "dates": null,
+          "lengths": "Africanus: 25; Turin Canon: 70; T/3: 23.3",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Chaires / Neferkasokar",
+          "dates": null,
+          "lengths": "Africanus: 17; Turin Canon: 8 y 3 m; T/3: 8 y 3 m",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sesochris / Hudjefa I",
+          "dates": null,
+          "lengths": "Africanus: 48; Turin Canon: 11 y 8 m; T/3: 11 y 8 m",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Cheneres / Bebty",
+          "dates": null,
+          "lengths": "Africanus: 30; Turin Canon: 27; T/3: 27 y 2 m",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7b-t14-d2",
+      "title": "CFAH-7B: Integrated Dates for Dynasty 2 (Table 14)",
+      "region": "Egypt",
+      "source": "cfah-7b-osf",
+      "citation_short": "CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 14, p. 102",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Hotepsekhemwy Boethos",
+          "dates": "Start Sole-rex: 1924; End Sole-rex: 1916; Death or Deposition: 1885",
+          "person": "hotepsekhemwy"
+        },
+        {
+          "name": "Nebra Kakau Kaiechos",
+          "dates": "Start Co-Rex: 1916; Start Sole-rex: 1885; End Sole-rex: 1878; Death or Deposition: 1876",
+          "person": "nebra"
+        },
+        {
+          "name": "Nynetjer Binothris",
+          "dates": "Start Co-Rex: 1885; Start Sole-rex: 1876; End Sole-rex: 1846; Death or Deposition: 1839",
+          "person": "nynetjer"
+        },
+        {
+          "name": "Weneg Wadjenes Tlas",
+          "dates": "Start Co-Rex: 1846; Start Sole-rex: 1839; End Sole-rex: 1822; Death or Deposition: 1822",
+          "person": "weneg"
+        },
+        {
+          "name": "Senedj Sethenes",
+          "dates": "Start Sole-rex: 1822; End Sole-rex: 1806; Death or Deposition: 1781",
+          "person": "senedj"
+        },
+        {
+          "name": "Neferirkare Kakai Nephercheres",
+          "dates": "Start Co-Rex: 1806; Start Sole-rex: n/a; End Sole-rex: n/a; Death or Deposition: 1781",
+          "person": "neferirkare-kakai"
+        },
+        {
+          "name": "Neferkasokar Chaires",
+          "dates": "Start Co-Rex: 1781; Start Sole-rex: n/a; End Sole-rex: n/a; Death or Deposition: 1764",
+          "person": "neferkasokar"
+        },
+        {
+          "name": "Hudjefa I Sesochris",
+          "dates": "Start Co-Rex: 1781; Start Sole-rex: n/a; End Sole-rex: n/a; Death or Deposition: 1733",
+          "person": "hudjefa-i"
+        },
+        {
+          "name": "Bebty Cheneres",
+          "dates": "Start Co-Rex: 1763; Start Sole-rex: n/a; End Sole-rex: n/a; Death or Deposition: 1733",
+          "person": "bebty"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7b-t15-ekl",
+      "title": "CFAH-7B: EKL Solution Dynasties 4, 11, 12, 6 (Table 15)",
+      "region": "Egypt",
+      "source": "cfah-7b-osf",
+      "citation_short": "CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 15, p. 103",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "EKL #7 Stoichos = Kawab ?",
+          "dates": "Start: 1923; End: 1917",
+          "person": "kawab"
+        },
+        {
+          "name": "EKL #8 Gosormies = Inteff the Elder",
+          "dates": "Start: 1917; End: 1887",
+          "person": "intef-the-elder"
+        },
+        {
+          "name": "EKL #9 Mares = Mentuhotep I",
+          "dates": "Start: 1887; End: 1861",
+          "person": "mentuhotep-i"
+        },
+        {
+          "name": "EKL #10 Anouphis = Intef I",
+          "dates": "Start: 1861; End: 1841",
+          "person": "intef-i"
+        },
+        {
+          "name": "EKL #11 Sirius = Sa-Ra Intef II",
+          "dates": "Start: 1841; End: 1822",
+          "person": "intef-ii"
+        },
+        {
+          "name": "EKL #12 Chnubus = Intef III",
+          "dates": "Start: 1823; End: 1801",
+          "person": "intef-iii"
+        },
+        {
+          "name": "EKL #13 Rayosis = Mentuhotep II",
+          "dates": "Start: 1801; End: 1787",
+          "person": "mentuhotep-ii"
+        },
+        {
+          "name": "EKL #[gap] [gap] = [gap]",
+          "dates": "Start: 1787; End: 1738",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        },
+        {
+          "name": "EKL #14 Biyres = Amenemhat I",
+          "dates": "Start: 1738; End: 1727",
+          "person": "amenemhat-i"
+        },
+        {
+          "name": "EKL #[gap] [gap] = [gap]",
+          "dates": "Start: 1727; End: 1686",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        },
+        {
+          "name": "EKL #15 Saophis I = Senusret I",
+          "dates": "Start: 1686; End: 1655",
+          "person": "senusret-i"
+        },
+        {
+          "name": "EKL #16 Saophis II = Senusret II",
+          "dates": "Start: 1655; End: 1628",
+          "person": "senusret-ii"
+        },
+        {
+          "name": "EKL #17 Moscheres = Userkare",
+          "dates": "Start: 1637; End: 1606",
+          "person": "userkare"
+        },
+        {
+          "name": "EKL #18 Mosthes = Senusret III",
+          "dates": "Start: 1606; End: 1574",
+          "person": "senusret-iii"
+        },
+        {
+          "name": "EKL #19 Pammes = Amenemhat III",
+          "dates": "Start: 1574; End: 1539",
+          "person": "amenemhat-iii"
+        },
+        {
+          "name": "EKL #20 Apappus = Pepi II",
+          "dates": "Start: 1592; End: 1492",
+          "person": "pepi-ii"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7b-t16-d6",
+      "title": "CFAH-7B: Integrated Dates for Dynasty 6 (Table 16)",
+      "region": "Egypt",
+      "source": "cfah-7b-osf",
+      "citation_short": "CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 16, p. 104",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Teti",
+          "dates": "Start Sole-rex: 1682; End Sole-rex: 1652; Death or Deposition: 1652",
+          "person": "teti"
+        },
+        {
+          "name": "Userkare",
+          "dates": "Start Sole-rex: 1652; End Sole-rex: 1646; Death or Deposition: 1637",
+          "person": "userkare"
+        },
+        {
+          "name": "Pepi I",
+          "dates": "Start Co-Rex: 1646; Start Sole-rex: 1637; End Sole-rex: 1606; Death or Deposition: 1593",
+          "person": "pepi-i"
+        },
+        {
+          "name": "Merenre I",
+          "dates": "Start Co-Rex: 1606; Start Sole-rex: 1593; Death or Deposition: 1586",
+          "person": "merenre-i"
+        },
+        {
+          "name": "Pepi II",
+          "dates": "Start Sole-rex: 1586; End Sole-rex: 1495; Death or Deposition: 1492",
+          "person": "pepi-ii"
+        },
+        {
+          "name": "Merenre II",
+          "dates": "Start Co-Rex: 1495; Start Sole-rex: 1492; Death or Deposition: 1491",
+          "person": "merenre-ii"
+        },
+        {
+          "name": "Nitocris",
+          "dates": "Start Sole-rex: 1491; End Sole-rex: 1485; Death or Deposition: 1479",
+          "person": "nitocris"
+        },
+        {
+          "name": "Pepi the Child",
+          "dates": "Start Co-Rex: 1485; Death or Deposition: 1479",
+          "person": "pepi-the-child"
+        },
+        {
+          "name": "* Pepi II probably had up to 14 years of co-regency under Userkare",
+          "dates": null,
+          "note": "A footnote of the table, not a ruler."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7b-t17-d13-turin",
+      "title": "CFAH-7B: Dynasty 13 Turin Canon Data (Table 17)",
+      "region": "Egypt",
+      "source": "cfah-7b-osf",
+      "citation_short": "CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 17, pp. 105–106",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Khutawyra (Sobekhotep I)",
+          "dates": null,
+          "lengths": "Turin position: 7.5; Reign: 2 y, 3 m, 24 d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sekhemkara (Sonbef)",
+          "dates": null,
+          "lengths": "Turin position: 7.6; Reign: [?] y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "lacuna (Nerikara)",
+          "dates": null,
+          "lengths": "Turin position: 7.6; Reign: 6 y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amenemhat(ra) (Sekhemkara Amenemhat)",
+          "dates": null,
+          "lengths": "Turin position: 7.7; Reign: 3 y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sehotepibra (Qemau Siharnedjheritef)",
+          "dates": null,
+          "lengths": "Turin position: 7.8; Reign: 1 ?",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Iufni (Joseph (Courville 1977))",
+          "dates": null,
+          "lengths": "Turin position: 7.9; Reign: [?]",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sankhibra (Sankhibra Amenemhat)",
+          "dates": null,
+          "lengths": "Turin position: 7.10; Reign: [?] y, 23 d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Semenkara (Nebnun)",
+          "dates": null,
+          "lengths": "Turin position: 7.11; Reign: [?] y, 22 d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sehotepibra (Sewesekhtawy)",
+          "dates": null,
+          "lengths": "Turin position: 7.12; Reign: 1 y, [?] m, 27 d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sewadjkara (Sewadjkara)",
+          "dates": null,
+          "lengths": "Turin position: 7.13; Reign: 21 y, [?] d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Nedjemibra (Nedjemibra)",
+          "dates": null,
+          "lengths": "Turin position: 7.14; Reign: 0 y, 7 m",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sobekhotep (Sobekhotep II)",
+          "dates": null,
+          "lengths": "Turin position: 7.15; Reign: 2 y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Renseneb (Ranisonb)",
+          "dates": null,
+          "lengths": "Turin position: 7.16; Reign: [?] y, 4 mo",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Awtibra (Hor I)",
+          "dates": null,
+          "lengths": "Turin position: 7.17; Reign: [?] y, 7 d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sedjefa..kara (Sedjefakara Kay-Amenemhat)",
+          "dates": null,
+          "lengths": "Turin position: 7.18; Reign: [?] y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sekhemra Khutay Sobekhotep (Wegaf)",
+          "dates": null,
+          "lengths": "Turin position: 7.19; Reign: [?] y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Userkara Khendjer (Userkare)",
+          "dates": null,
+          "lengths": "Turin position: 7.20; Reign: [?] y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "…kara Imyremeshaw (Imyremeshaw)",
+          "dates": null,
+          "lengths": "Turin position: 7.21; Reign: 4 d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sehotepkara Intef (Intef IV)",
+          "dates": null,
+          "lengths": "Turin position: 7.22; Reign: [?] y, 3 d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Meribra Seth (Meribra Seth)",
+          "dates": null,
+          "lengths": "Turin position: 7.23; Reign: [?] y, 6 d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sekhemkara Wadjtawy (Sobekhotep III)",
+          "dates": null,
+          "lengths": "Turin position: 7.24; Reign: 4 y, 2 m, [?] d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Khasekhemra Neferfotep son of Haankhef (Neferhotep I)",
+          "dates": null,
+          "lengths": "Turin position: 7.25; Reign: 11 y, 1 m, [?] d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sihathor (Sihathor)",
+          "dates": null,
+          "lengths": "Turin position: 7.26; Reign: [?] y, 3 d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Khaneferra Sobekhotep (Sobekhotep IV)",
+          "dates": null,
+          "lengths": "Turin position: 7.27; Reign: [?] y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "[?] (Merhotepre Sobekhotep V)",
+          "dates": null,
+          "lengths": "Turin position: 7.28; Reign: [?]",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Khahotepra (Sobekhotep VI)",
+          "dates": null,
+          "lengths": "Turin position: 8.1; Reign: 4 y, 8 m, 29 d",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7b-t6-d1",
+      "title": "CFAH-7B: Integrated Dates for Dynasty 1 (Table 6)",
+      "region": "Egypt",
+      "source": "cfah-7b-osf",
+      "citation_short": "CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 6, p. 92",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Menes / Iry-Hor / Hor-Aha",
+          "dates": "Start Sole-rex: 2191 / 2188; End Sole-rex: 2164 / 2163; Death or Deposition: 2128",
+          "person": "mizraim"
+        },
+        {
+          "name": "Athothis / Narmer",
+          "dates": "Start Co-Rex: 2164 / 2163; Start Sole-rex: 2128; Death or Deposition: 2068",
+          "person": "athothis"
+        },
+        {
+          "name": "Kenkenes / Ka Sekhen",
+          "dates": "Start Sole-rex: 2068; End Sole-rex: 2037 / 2036; Death or Deposition: 2036",
+          "person": "kenkenes"
+        },
+        {
+          "name": "Uenephes / Djet / Merneith",
+          "dates": "Start Co-Rex: 2036; Start Sole-rex: 2036; End Sole-rex: 2006; Death or Deposition: 1994",
+          "person": "uenephes"
+        },
+        {
+          "name": "Usiphaidos / Anjib",
+          "dates": "Start Co-Rex: 2014; Death or Deposition: 1994",
+          "person": "usiphaidos"
+        },
+        {
+          "name": "Miebidos / Den",
+          "dates": "Start Co-Rex: 2006; Start Sole-rex: 1994; Death or Deposition: 1968",
+          "person": "miebidos"
+        },
+        {
+          "name": "Semempses / Semerkhet",
+          "dates": "Start Co-Rex: 1969; Start Sole-rex: 1968; End Sole-rex: 1950; Death or Deposition: 1945",
+          "person": "semempses"
+        },
+        {
+          "name": "Ubienthes / Qaa",
+          "dates": "Start Co-Rex: 1950; Start Sole-rex: 1945; Death or Deposition: 1924",
+          "person": "ubienthes"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7b-t7-d3-4",
+      "title": "CFAH-7B: Integrated Dates for Dynasties 3 & 4 (Table 7)",
+      "region": "Egypt",
+      "source": "cfah-7b-osf",
+      "citation_short": "CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 7, p. 94",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Nebka",
+          "dates": "Start Sole-rex: 2030/2029; End Sole-rex: 2011/2010; Death or Deposition: 2001",
+          "person": "nebka"
+        },
+        {
+          "name": "Djoser",
+          "dates": "Start Co-Rex: 2011/2010; Start Sole-rex: 2001; End Sole-rex: 1982; Death or Deposition: 1982",
+          "person": "djoser"
+        },
+        {
+          "name": "Sekkemkhet",
+          "dates": "Start Sole-rex: 1982; End Sole-rex: 1976; Death or Deposition: 1975",
+          "person": "sekkemkhet"
+        },
+        {
+          "name": "Hor-Khaba / Teti",
+          "dates": "Start Co-Rex: 1976; Start Sole-rex: 1975; End Sole-rex: 1970; Death or Deposition: 1958",
+          "person": "hor-khaba"
+        },
+        {
+          "name": "Huni / Soyphis",
+          "dates": "Start Co-Rex: 1970; Start Sole-rex: 1958; End Sole-rex: 1952; Death or Deposition: 1942",
+          "person": "huni"
+        },
+        {
+          "name": "Sneferu / Tosertasis",
+          "dates": "Start Co-Rex: 1952; Start Sole-rex: 1942; End Sole-rex: 1925; Death or Deposition: 1922",
+          "person": "sneferu"
+        },
+        {
+          "name": "Khufu / Sufis",
+          "dates": "Start Co-Rex: c. 1934; Start Sole-rex: 1922; End Sole-rex: 1917; Death or Deposition: c. 1871",
+          "person": "cheops"
+        },
+        {
+          "name": "Radjedef / Rhatoises",
+          "dates": "Start Co-Rex: 1917; Start Sole-rex: 1900*; End Sole-rex: 1892; Death or Deposition: 1892",
+          "person": "radjedef"
+        },
+        {
+          "name": "Khafre / Suphis II",
+          "dates": "Start Co-Rex: 1892; Start Sole-rex: 1862; End Sole-rex: 1875 ** 1853 ***; Death or Deposition: 1826",
+          "person": "chephren"
+        },
+        {
+          "name": "Baufra / Bicheris",
+          "dates": "Start Co-Rex: 1875; Death or Deposition: 1853",
+          "person": "baufra"
+        },
+        {
+          "name": "Menkaure",
+          "dates": "Start Co-Rex: 1851; Start Sole-rex: 1825; End Sole-rex: ?; Death or Deposition: 1789",
+          "person": "mycerinus"
+        },
+        {
+          "name": "Shepseskaf",
+          "dates": "Start Co-Rex: ~1825; Death or Deposition: 1818",
+          "person": "shepseskaf"
+        },
+        {
+          "name": "Thampthis ****",
+          "dates": "Start Co-Rex: ~1825; Start Sole-rex: 1825; End Sole-rex: 1818; Death or Deposition: 1815",
+          "person": "thampthis"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7b-t8-d9",
+      "title": "CFAH-7B: Integrated Dates for Dynasty 9 (Table 8)",
+      "region": "Egypt",
+      "source": "cfah-7b-osf",
+      "citation_short": "CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 8, p. 96",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "15 governors before 1881 BC",
+          "dates": "Start Sole-rex: ~2190; Death or Deposition: 1881",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        },
+        {
+          "name": "Nebkaura Khety",
+          "dates": "Start Sole-rex: 1881; End Sole-rex: unknown; Death or Deposition: ~1859",
+          "person": "nebkaura-khety"
+        },
+        {
+          "name": "Meryabra Khety",
+          "dates": "Start Co-Rex: unknown; Start Sole-rex: ~1859; End Sole-rex: unknown; Death or Deposition: ~1838",
+          "person": "meryabra-khety"
+        },
+        {
+          "name": "Wahkare Khety",
+          "dates": "Start Co-Rex: unknown; Start Sole-rex: ~1838; End Sole-rex: unknown; Death or Deposition: ~1796",
+          "person": "wahkare-khety"
+        },
+        {
+          "name": "Merykare",
+          "dates": "Start Co-Rex: unknown; Start Sole-rex: ~1796; End Sole-rex: unkown; Death or Deposition: 1781",
+          "person": "merykare"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7b-t9-d11",
+      "title": "CFAH-7B: Integrated Dates for Dynasty 11 (Table 9)",
+      "region": "Egypt",
+      "source": "cfah-7b-osf",
+      "citation_short": "CFAH-7B, OSF preprint v1.3 (10 Feb 2026), Table 9, p. 97",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "9 governors before 1881 BC",
+          "dates": "Start Sole-rex: ~2186; Death or Deposition: 1881",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        },
+        {
+          "name": "Mentuhotep I",
+          "dates": "Start Co-Rex: unknown; Start Sole-rex: 1881; End Sole-rex: unknown; Death or Deposition: unknown",
+          "person": "mentuhotep-i"
+        },
+        {
+          "name": "Inteff I",
+          "dates": "Start Co-Rex: unknown; Start Sole-rex: unknown; End Sole-rex: unknown; Death or Deposition: 1865",
+          "person": "intef-i"
+        },
+        {
+          "name": "Inteff II",
+          "dates": "Start Co-Rex: unknown; Start Sole-rex: 1865; End Sole-rex: unknown; Death or Deposition: 1816",
+          "person": "intef-ii"
+        },
+        {
+          "name": "Inteff III",
+          "dates": "Start Co-Rex: unknown; Start Sole-rex: 1816; End Sole-rex: unknown; Death or Deposition: 1808",
+          "person": "intef-iii"
+        },
+        {
+          "name": "Mentuhotep II",
+          "dates": "Start Co-Rex: unknown; Start Sole-rex: 1808; End Sole-rex: unknown; Death or Deposition: 1757",
+          "person": "mentuhotep-ii"
+        },
+        {
+          "name": "Mentohotep III",
+          "dates": "Start Co-Rex: unknown; Start Sole-rex: 1757; End Sole-rex: unknown; Death or Deposition: 1745",
+          "person": "mentuhotep-iii"
+        },
+        {
+          "name": "Mentohotep IV",
+          "dates": "Start Co-Rex: unknown; Start Sole-rex: 1745; End Sole-rex: unknown; Death or Deposition: 1738",
+          "person": "mentuhotep-iv"
+        }
       ],
       "unrecorded_reason": null
     }
