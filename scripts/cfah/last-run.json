@@ -22,8 +22,16 @@
     ]
   },
   "phase2": {
-    "new": [],
-    "updated": []
+    "new": [
+      "cyrus-decree-of-return"
+    ],
+    "updated": [
+      "daniel-taken-to-babylon",
+      "fall-of-jerusalem-586-bc",
+      "fall-of-samaria",
+      "second-siege-of-jerusalem",
+      "second-temple-completed"
+    ]
   },
   "phase3": {
     "new": [],

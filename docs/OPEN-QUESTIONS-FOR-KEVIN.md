@@ -509,3 +509,18 @@ None of these records has a tier 1–4 date, so the sort stays on Generations an
 - 34 new records (23 events, 11 people) are listed in the extract. Kings with only a reign (Henry VIII, Edward VI, Elizabeth I, James I, Charles I) have no birth year, so they are unsorted people; their timelines show the reign.
 - PDF pp. 49–59 ("Ancient Empires") appear to reproduce outside "Fact Finder" material, with an image credited to "Daily Bible Study www.keyway.ca" (PDF p. 57). Their dates (Assyrian, Babylonian and Persian king lists) are recorded as Morecraft's, with a note.
 - **Question:** keep the dates from these pages, or drop them as not the author's own?
+## E (continued). CFAH complete pass
+
+### E3. Phase 2: every CFAH-1 Table 1 row now has a record
+- All 22 rows of CFAH-1 Table 1 ("Biblically derived dates from Ussher and Jones") now carry a `table1_baseline` entry.
+- Six rows were missing, and are now recorded:
+  - 721 or 720 BC on `fall-of-samaria`
+  - 606 BC on `daniel-taken-to-babylon`
+  - 597 BC on `second-siege-of-jerusalem`
+  - 586 BC on `fall-of-jerusalem-586-bc`
+  - 536 BC on the new `cyrus-decree-of-return`
+  - 516 BC on `second-temple-completed`
+- **Sort changes** (provisional Generations sort replaced by tier 2):
+  - Daniel taken to Babylon: 605 → 606 BC
+  - Samaria, the second siege, 586 BC and the Second Temple keep their years but are now tier 2
+- **Recommendation:** no decision needed.

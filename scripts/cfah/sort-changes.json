@@ -50,5 +50,70 @@
     "by": "AP-4",
     "on": "2026-10-18",
     "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 99): 2197 BC. Pending owner decision (open question A8)."
+  },
+  "daniel-taken-to-babylon": {
+    "from": {
+      "tier": "provisional",
+      "year": -605
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -606
+    },
+    "by": "CFAH-1 Table 1",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 490): 605 BC. Pending owner decision (open question A8)."
+  },
+  "fall-of-jerusalem-586-bc": {
+    "from": {
+      "tier": "provisional",
+      "year": -586
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -586
+    },
+    "by": "CFAH-1 Table 1",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 485): 586 BC. Pending owner decision (open question A8)."
+  },
+  "fall-of-samaria": {
+    "from": {
+      "tier": "provisional",
+      "year": -721
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -721
+    },
+    "by": "CFAH-1 Table 1",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 361): 721 BC. Pending owner decision (open question A8)."
+  },
+  "second-siege-of-jerusalem": {
+    "from": {
+      "tier": "provisional",
+      "year": -597
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -597
+    },
+    "by": "CFAH-1 Table 1",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 381): 597 BC. Pending owner decision (open question A8)."
+  },
+  "second-temple-completed": {
+    "from": {
+      "tier": "provisional",
+      "year": -516
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -516
+    },
+    "by": "CFAH-1 Table 1",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 609): 516 BC. Pending owner decision (open question A8)."
   }
 }

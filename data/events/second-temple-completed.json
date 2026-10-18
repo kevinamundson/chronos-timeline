@@ -4,24 +4,27 @@
   "type": "event",
   "title": "The rebuilt temple completed",
   "summary": "The rebuilt temple completed",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
   "sorting_year": -516,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 609): 516 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 baseline: 516 BC (Dedication of the Second Temple by Ezra). Sort changed by the CFAH pass (2026-10-18): was provisional (Generations) 516 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "516 BC (Dedication of the Second Temple by Ezra)",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -516,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "source_text_id": "cfah-1",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "cfah_basis": "table1_baseline",
+      "cfah_key": "cfah:t1-516:second-temple-completed"
     },
     {
       "source": "generations",
@@ -56,7 +59,8 @@
   ],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cfah-1"
   ],
   "related": [],
   "free_source_links": [
@@ -64,6 +68,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "cfah-1",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "locator": "Table 1 \"Biblically derived dates from Ussher and Jones\""
     }
   ]
 }

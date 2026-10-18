@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "cyrus-decree-of-return",
+  "type": "event",
+  "title": "Cyrus decrees the return of the Jews",
+  "summary": "Cyrus, king of Persia, proclaims that the Jews may return to Jerusalem and rebuild the house of the LORD.",
+  "description": "CFAH-1 Table 1 row \"Cyrus Decree of Return\" (536 BC, the Ussher-Jones baseline adopted by CFAH). CFAH-1 treats the Ussher-Jones chronology as the most consistent reading of the biblical data before this decree. Added by the CFAH pass.",
+  "sorting_year": -536,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 baseline: 536 BC (Cyrus Decree of Return)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "536 BC (Cyrus Decree of Return)",
+      "year_am": null,
+      "year_bc_ad": -536,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "source_text_id": "cfah-1",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "cfah_basis": "table1_baseline",
+      "cfah_key": "cfah:t1-536:cyrus-decree-of-return"
+    }
+  ],
+  "people": [
+    "cyrus-the-great"
+  ],
+  "locations": [
+    "jerusalem"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Ezra.1.1-Ezra.1.4",
+    "2Chr.36.22-2Chr.36.23"
+  ],
+  "sources": [
+    "cfah-1"
+  ],
+  "related": [
+    "temple-rebuilding-begins",
+    "fall-of-babylon-539-bc"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-1",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "locator": "Table 1 \"Biblically derived dates from Ussher and Jones\""
+    }
+  ]
+}
