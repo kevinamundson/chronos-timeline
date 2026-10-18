@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "eden",
+  "type": "location",
+  "title": "Eden (Garden of Eden)",
+  "location_type": "garden",
+  "summary": "The garden God planted \"eastward in Eden\" where Adam and Eve lived before the Fall. Location unknown; the Flood remade the earth's geography.",
+  "lat": null,
+  "lng": null,
+  "coordinate_basis": "No coordinates: OpenBible.info's top identification is \"unknown location\" (55% confidence). Alternatives listed there: Armenia 20%, Babylonia 15%, near Ur <10%, Canaan <10%, Egypt <10%.",
+  "certainty": {
+    "level": "unknown",
+    "percent": 55,
+    "basis": "OpenBible.info: unknown location, 55% confidence (percent refers to the \"unknown\" identification). Rivers named in Gen 2:10–14 do not fix a post-Flood location."
+  },
+  "openbible_id": "af3daeb",
+  "openbible_url": "https://www.openbible.info/geo/ancient/af3daeb/eden-1",
+  "openbible_geojson": "https://a.openbible.info/geo/data/af3daeb.geojson",
+  "wikidata": "Q19014",
+  "scripture_refs": [
+    "Gen.2.8",
+    "Gen.2.10",
+    "Gen.2.15",
+    "Gen.3.23",
+    "Gen.3.24",
+    "Gen.4.16",
+    "Isa.51.3",
+    "Ezek.28.13",
+    "Ezek.36.35",
+    "Joel.2.3"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/af3daeb/eden-1"
+    }
+  ],
+  "related": [
+    "creation-week",
+    "the-fall",
+    "adam"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

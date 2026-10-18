@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/map.schema.json",
+  "title": "Map reference",
+  "description": "A historic or reference map (image, IIIF manifest, or geodata API).",
+  "type": "object",
+  "allOf": [ { "$ref": "common.schema.json#/$defs/baseRecord" } ],
+  "required": ["url", "thumbnail", "iiif_manifest", "api_link", "license_note"],
+  "unevaluatedProperties": false,
+  "properties": {
+    "type": { "const": "map" },
+    "url": { "$ref": "common.schema.json#/$defs/url", "description": "Landing/viewer page." },
+    "image_url": { "$ref": "common.schema.json#/$defs/nullableUrl" },
+    "thumbnail": { "$ref": "common.schema.json#/$defs/nullableUrl" },
+    "iiif_manifest": { "$ref": "common.schema.json#/$defs/nullableUrl" },
+    "api_link": { "$ref": "common.schema.json#/$defs/nullableUrl", "description": "Machine-readable geodata (KML/GeoJSON) or image API." },
+    "date_of_map": { "type": ["string", "null"] },
+    "license_note": { "type": "string" },
+    "locations": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }
+  }
+}

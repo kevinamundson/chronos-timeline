@@ -1,0 +1,115 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "the-fall",
+  "type": "event",
+  "title": "The Fall",
+  "summary": "Tempted by the serpent, Eve and then Adam eat the forbidden fruit; God pronounces the curse, promises the Seed of the woman, and expels them from Eden.",
+  "description": "Genesis 3. The first promise of the Redeemer (Gen 3:15).",
+  "sorting_year": -4004,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals: \"very probable\" the 10th day of the world, 1 November, AM 1 / 4004 BC (no higher-tier year available)."
+  },
+  "sort_order_within_year": 2,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+    },
+    {
+      "source": "bible",
+      "date": "After Creation week and before the birth of Cain",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Gen 3; Gen 4:1",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": "Scripture gives no year.",
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "\"very probable\" the 10th day of the world, 1 November, AM 1 / 4004 BC",
+      "year_am": 1,
+      "year_bc_ad": -4004,
+      "precision": "conjectural",
+      "citation": "Ussher, Annals of the World, First Age, §9–11",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "Ussher: \"It is very probable, that Adam was turned out of paradise the same day that he was brought into it. This seems to have been on the 10th day of the world. (November 1st)\".",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"the fall of man took place on the seventh day, or at the very least quite soon after the creation\"",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "conjectural",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 1),\" Biblical Chronology 6:3 (March 1994), §2 \"When Did Adam Fall?\"",
+      "link": "https://biblicalhorizons.com/1994/03/01/6_03/",
+      "source_text_id": "jordan-bc-6-3",
+      "note": "Jordan gives a day (the seventh day), not an Anno Mundi year; year_am left null."
+    },
+    {
+      "source": "masoretic-genealogy",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Not computable from the genealogies."
+    }
+  ],
+  "people": [
+    "adam"
+  ],
+  "locations": [
+    "eden"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.3.1-Gen.3.24",
+    "Rom.5.12"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-3"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 3"
+    },
+    {
+      "source_id": "jordan-bc-6-3",
+      "url": "https://biblicalhorizons.com/1994/03/01/6_03/",
+      "locator": "§2 When Did Adam Fall?"
+    }
+  ],
+  "related": [
+    "creation-week",
+    "cain-and-abel",
+    "adam",
+    "eden"
+  ]
+}

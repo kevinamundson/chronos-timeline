@@ -1,0 +1,129 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ham",
+  "type": "person",
+  "title": "Ham",
+  "summary": "Son of Noah; father of Canaan.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier 1-4 dates this record's birth; unsorted (null)."
+  },
+  "father": "noah",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not computable: Scripture gives no birth year for Ham beyond Gen 5:32."
+      },
+      {
+        "source": "ussher",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "No birth year given by Ussher (checked First Age §30–31)."
+      },
+      {
+        "source": "jordan",
+        "date": "\"1560? - Ham born (9:24). We do not know when Ham was born, only that he was the youngest.\"",
+        "year_am": 1560,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "jordan",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jordan sources read (Biblical Horizons \"Biblical Chronology\" category, all 9 pages; garynorth.com archive of Biblical Chronology 1989-1996). Left empty, not inferred."
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.5.32",
+    "Gen.9.18",
+    "Gen.9.22-Gen.9.24"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 5:32; 9; 10; 11"
+    }
+  ],
+  "related": [
+    "noah",
+    "shem",
+    "japheth"
+  ],
+  "events": [
+    "the-flood",
+    "ark-landing"
+  ]
+}

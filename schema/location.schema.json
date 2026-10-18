@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/location.schema.json",
+  "title": "Location",
+  "type": "object",
+  "allOf": [ { "$ref": "common.schema.json#/$defs/baseRecord" } ],
+  "required": ["lat", "lng", "certainty", "openbible_id", "openbible_url"],
+  "unevaluatedProperties": false,
+  "properties": {
+    "type": { "const": "location" },
+    "location_type": { "type": "string", "description": "e.g. garden, region, city, mountain." },
+    "lat": { "type": ["number", "null"], "minimum": -90, "maximum": 90 },
+    "lng": { "type": ["number", "null"], "minimum": -180, "maximum": 180 },
+    "coordinate_basis": { "type": "string", "description": "Where lat/lng came from (e.g. OpenBible GeoJSON point id)." },
+    "certainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "basis"],
+      "properties": {
+        "level": { "enum": ["unknown", "low", "medium", "high", "very-high"] },
+        "percent": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+        "basis": { "type": "string" }
+      }
+    },
+    "openbible_id": { "type": ["string", "null"], "pattern": "^a[0-9a-f]{6}$", "description": "OpenBible.info ancient-place id, e.g. ab89be9." },
+    "openbible_url": { "anyOf": [ { "type": "string", "format": "uri", "pattern": "^https://www\\.openbible\\.info/geo/" }, { "type": "null" } ] },
+    "openbible_geojson": { "$ref": "common.schema.json#/$defs/nullableUrl" },
+    "wikidata": { "type": ["string", "null"], "pattern": "^Q[0-9]+$" },
+    "maps": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }
+  }
+}

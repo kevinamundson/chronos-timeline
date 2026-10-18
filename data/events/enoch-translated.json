@@ -1,0 +1,113 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "enoch-translated",
+  "type": "event",
+  "title": "Enoch Taken by God",
+  "summary": "Enoch, seventh from Adam, \"walked with God: and he was not; for God took him\" without seeing death, aged 365.",
+  "description": "Genesis 5:21–24; Hebrews 11:5; Jude 14.",
+  "sorting_year": -3017,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals: 987 AM, 1697 JP, 3017 BC (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+    },
+    {
+      "source": "bible",
+      "date": "When Enoch was 365 years old",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Gen 5:23–24; Heb 11:5",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "987 AM, 1697 JP, 3017 BC",
+      "year_am": 987,
+      "year_bc_ad": -3017,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, First Age, §22",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"987 - Enoch translated\"",
+      "year_am": 987,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+      "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "source_text_id": "jordan-bc-6-4",
+      "note": null
+    },
+    {
+      "source": "masoretic-genealogy",
+      "date": "AM 987",
+      "year_am": 987,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Enoch born AM 622 (Gen 5:3–18 cumulative) + 365 (Gen 5:23)",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [
+    "enoch"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.5.21-Gen.5.24",
+    "Heb.11.5",
+    "Jude.1.14"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 5"
+    },
+    {
+      "source_id": "jordan-bc-6-4",
+      "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "locator": "§4 year list"
+    }
+  ],
+  "related": [
+    "enoch",
+    "jared",
+    "methuselah"
+  ]
+}

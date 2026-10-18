@@ -1,0 +1,142 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "joseph-made-vizier",
+  "type": "event",
+  "title": "Joseph Made Ruler over Egypt",
+  "summary": "Joseph, aged 30, interprets Pharaoh's dreams and is set over all the land of Egypt (Gen 41:38–46).",
+  "description": "CFAH-6 dates Joseph's promotion to 1716/1715 BC, two and a half years after the failed assassination attempt on Amenemhat I and in the year of Isaac's death per the Midrash, forming \"new Anchor Point #61\".",
+  "sorting_year": -1716,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1716/1715 BC (new AP-61)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1716/1715 BC",
+      "year_am": null,
+      "year_bc_ad": -1716,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, Argument 4 §7 \"Joseph was Promoted in the Year of Isaac's Death 1716/1715 BC\" (\"new Anchor Point #61\")",
+      "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "note": null,
+      "year_bc_ad_end": -1715,
+      "cfah_basis": "anchor_point",
+      "source_text_id": "cfah-6"
+    },
+    {
+      "source": "cfah",
+      "date": "1715 BC (Joseph Raised to Vizier)",
+      "year_am": null,
+      "year_bc_ad": -1715,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "cfah_basis": "table1_baseline",
+      "source_text_id": "cfah-1"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+    },
+    {
+      "source": "bible",
+      "date": "When Joseph was 30 years old",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Gen 41:46",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "2289 AM, 1715 BC",
+      "year_am": 2289,
+      "year_bc_ad": -1715,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Third Age §131 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"2289 - Joseph, age 30, stands before Pharaoh at the beginning of the 7 years of plenty (Gen. 41:46)\"",
+      "year_am": 2289,
+      "year_bc_ad": -1641,
+      "precision": "year",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §13 \"Jacob and Esau\" (year list)",
+      "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+      "source_text_id": "jordan-bc-6-6",
+      "note": "BC year from Jordan, \"Egypt in Biblical History\" (BC 5:8): section \"Egypt and the Patriarchs\": \"Joseph ruled Egypt for Pharaoh from a.m. 2289 to 2369 ... any accurate history of Egypt must assume an era of faith between the years 1641 B.C. and 1561 B.C.\" BC 2:7: \"AM 2289 Joseph becomes viceroy of Egypt, age 30\". B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+    },
+    {
+      "source": "josephus",
+      "date": "\"Joseph was now grown up to thirty years of age\" (no year count)",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Josephus, Antiquities II.6.1 (Whiston)",
+      "link": "https://www.gutenberg.org/ebooks/2848",
+      "note": null,
+      "source_text_id": "josephus-antiquities-whiston"
+    }
+  ],
+  "people": [
+    "joseph"
+  ],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [
+    "loc-1695-israelites-travels"
+  ],
+  "scripture_refs": [
+    "Gen.41.38-Gen.41.46",
+    "Ps.105.17-Ps.105.22",
+    "Acts.7.10"
+  ],
+  "sources": [
+    "cfah-6",
+    "cfah-1",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "josephus-antiquities-whiston",
+    "jordan-bc-6-6",
+    "jordan-bc-5-8",
+    "jordan-bc-2-7"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "Argument 4 §7"
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book II, ch. 6, §1"
+    },
+    {
+      "source_id": "jordan-bc-6-6",
+      "url": "https://biblicalhorizons.com/1994/06/01/6_06/",
+      "locator": "§13 year list"
+    }
+  ],
+  "related": [
+    "joseph",
+    "egypt",
+    "exodus"
+  ]
+}

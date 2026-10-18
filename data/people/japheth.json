@@ -1,0 +1,130 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "japheth",
+  "type": "person",
+  "title": "Japheth",
+  "summary": "Son of Noah; Ussher takes him as the eldest (Gen 10:21).",
+  "sorting_year": -2448,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals: 1556 AM, 2448 BC (no higher-tier year available)."
+  },
+  "father": "noah",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1556 (Noah aged 500, first son) - attribution to Japheth is interpretive",
+        "year_am": 1556,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Gen 5:32 (Noah 500 years old when he began begetting Shem, Ham and Japheth); Gen 10:21",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": "Gen 5:32 does not specify which son was born when Noah was 500; Gen 10:21 \"the elder\" is ambiguous in Hebrew.",
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1556 AM, 2448 BC",
+        "year_am": 1556,
+        "year_bc_ad": -2448,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §30 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"1556 - Japheth born (5:32; 10:21)\"",
+        "year_am": 1556,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "jordan",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jordan sources read (Biblical Horizons \"Biblical Chronology\" category, all 9 pages; garynorth.com archive of Biblical Chronology 1989-1996). Left empty, not inferred."
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.5.32",
+    "Gen.10.21"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 5:32; 9; 10; 11"
+    }
+  ],
+  "related": [
+    "noah",
+    "shem",
+    "ham"
+  ],
+  "events": [
+    "the-flood",
+    "ark-landing"
+  ]
+}

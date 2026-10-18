@@ -1,0 +1,138 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "creation-week",
+  "type": "event",
+  "title": "Creation Week",
+  "summary": "God creates the heavens and the earth and all that is in them in six days and rests on the seventh.",
+  "description": "Genesis 1:1–2:3. Adam and Eve are created on the sixth day; God rests on the seventh day and sanctifies it.",
+  "sorting_year": -4004,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 4004 B.C."
+  },
+  "sort_order_within_year": 1,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "4004 B.C.",
+      "year_am": null,
+      "year_bc_ad": -4004,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 4: Dating Creation and the Deluge,\" ARJ 16 (2023): 475–489, section \"AP-30: Creation: 4004 B.C.\"",
+      "link": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "note": "Also CFAH-1 Table 1 (Ussher-Jones): \"4004 Creation of Mankind\".",
+      "source_text_id": "cfah-4",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "cfah",
+      "date": "4004 BC (Creation of Mankind)",
+      "year_am": null,
+      "year_bc_ad": -4004,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "cfah_basis": "table1_baseline",
+      "source_text_id": "cfah-1"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "0 AM, 4004 BC (year of Creation)",
+      "year_am": 0,
+      "year_bc_ad": -4004,
+      "precision": "year",
+      "citation": "Floyd Nolen Jones, Chart No. 1 \"Creation to Jesus Christ\" (© 1993), line \"0 AM 4004 BC year of CREATION\"; also Jones, Chronology of the Old Testament (15th ed., 2002), Chart One §B, p. 26 (\"2348 + 1656 = 4004 BC\")",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130609101.pdf",
+      "note": "Jones counts Creation as 0 AM (Ussher uses AM 1).",
+      "source_text_id": "jones-chart-1"
+    },
+    {
+      "source": "bible",
+      "date": "Six days, God resting on the seventh",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Gen 1:1–2:3; Exod 20:11",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": "Scripture states the six-day duration; no absolute year.",
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "1 AM, 710 JP, 4004 BC; evening preceding Sunday 23 Oct to Saturday 29 Oct (Julian)",
+      "year_am": 1,
+      "year_bc_ad": -4004,
+      "precision": "day",
+      "citation": "Ussher, Annals of the World, First Age, §1–8",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "Creation: Anno Mundi 0; 3930 B.C. (SBC)",
+      "year_am": 0,
+      "year_bc_ad": -3930,
+      "precision": "year",
+      "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+      "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+      "source_text_id": "jordan-bc-5-8",
+      "note": "B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years. Same chart: CCC \"undated\". Pentateuch Part 2 (BC 6:4) year list also begins \"0 - Adam created\"."
+    },
+    {
+      "source": "masoretic-genealogy",
+      "date": "AM 0 (epoch)",
+      "year_am": 0,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Gen 1; Gen 5:1–3",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": "Epoch of the AM count by definition.",
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [
+    "adam"
+  ],
+  "locations": [
+    "eden"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.1.1-Gen.2.3",
+    "Exod.20.11"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-4",
+    "cfah-1",
+    "ussher-annals-1658",
+    "jordan-bc-5-8",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 1–2"
+    },
+    {
+      "source_id": "cfah-4",
+      "url": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "locator": "AP-30"
+    },
+    {
+      "source_id": "jordan-bc-5-8",
+      "url": "https://biblicalhorizons.com/1993/12/01/5_08/",
+      "locator": "Chart at start of article"
+    }
+  ],
+  "related": [
+    "the-fall",
+    "adam",
+    "eden"
+  ]
+}

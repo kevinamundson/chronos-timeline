@@ -1,0 +1,166 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "methuselah",
+  "type": "person",
+  "title": "Methuselah",
+  "alt_names": [
+    "Mathusala"
+  ],
+  "summary": "Son of Enoch; the longest-lived man recorded (969 years); died in the year of the Flood (MT arithmetic).",
+  "sorting_year": -3317,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals: 687 AM, 3317 BC (no higher-tier year available)."
+  },
+  "father": "enoch",
+  "children": [
+    "lamech"
+  ],
+  "scripture_facts": {
+    "age_at_named_son": 187,
+    "named_son": "lamech",
+    "lifespan_years": 969,
+    "refs": [
+      "Gen.5.25",
+      "Gen.5.27"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "687 AM",
+        "year_am": 687,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), \"Chronological Compendium\", p. 1",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "Jones prints only the AM figure here; no BC year is printed for this birth, so year_bc_ad is left null (not inferred).",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 687",
+        "year_am": 687,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 5 cumulative begetting ages (father enoch begat at 65, Gen 5:21)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "687 AM, 3317 BC",
+        "year_am": 687,
+        "year_bc_ad": -3317,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §19 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"687 - Methuselah born\"",
+        "year_am": 687,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1656",
+        "year_am": 1656,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 5: birth AM 687 + 969 years (Gen 5:27)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1656 AM, 2349 BC",
+        "year_am": 1656,
+        "year_bc_ad": -2349,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §33 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"1656 - The Flood; Methuselah died\"",
+        "year_am": 1656,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.5.25",
+    "Gen.5.27"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 5"
+    }
+  ],
+  "related": [
+    "enoch",
+    "lamech"
+  ],
+  "events": [
+    "the-flood"
+  ]
+}

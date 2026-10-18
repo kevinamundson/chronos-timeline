@@ -1,0 +1,525 @@
+{
+  "$schema": "../schema/chronology.schema.json",
+  "primary_sort_chronology": "cfah",
+  "sorting_rule": {
+    "description": "sorting_year = the BC/AD year of the first tier that has a non-null year_bc_ad (events: chronologies[]; people: dates.birth[]). The first matching entry within a tier is used; for split years (2348/2347) the start year is used. Secondary display chronologies (bible, masoretic-genealogy, jordan, josephus, Clonmacnoise, Raleigh) never set sorting_year.",
+    "tiers": [
+      {
+        "rank": 1,
+        "tier": "cfah-anchor",
+        "chronology": "cfah",
+        "cfah_basis": "anchor_point",
+        "select": "cfah entry with cfah_basis = anchor_point"
+      },
+      {
+        "rank": 2,
+        "tier": "cfah-table1",
+        "chronology": "cfah",
+        "cfah_basis": "table1_baseline",
+        "select": "cfah entry with cfah_basis = table1_baseline (CFAH-1 Table 1)"
+      },
+      {
+        "rank": 3,
+        "tier": "ussher-jones",
+        "chronology": "ussher-jones",
+        "select": "ussher-jones entry (Floyd Nolen Jones)"
+      },
+      {
+        "rank": 4,
+        "tier": "ussher",
+        "chronology": "ussher",
+        "select": "ussher entry (Annals of the World)"
+      }
+    ],
+    "fallbacks": "If no tier yields a year: tier \"derived\" (sorting_year copied from the record named in derived_from; events only by convention) or tier \"none\" (sorting_year null; people only)."
+  },
+  "chronologies": [
+    {
+      "id": "cfah",
+      "name": "Chronological Framework of Ancient History",
+      "abbreviation": "CFAH",
+      "primary": true,
+      "sort_priority": 1,
+      "status": "partial",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "description": "Primary sorting chronology. A planned 20-paper series in Answers Research Journal (CFAH-1 to CFAH-6 published as of 2026-10-17) that harmonises durations from ancient chroniclers with Ussher's biblical chronology as modified by Floyd Nolan Jones (\"Ussher-Jones\"). Only dates read directly in the ARJ papers are entered; every CFAH date carries paper + section citation. Each dated cfah entry carries cfah_basis: \"anchor_point\" (dates the papers derive/triangulate, e.g. AP-29, AP-30) or \"table1_baseline\" (CFAH-1 Table 1, the Ussher-Jones biblical baseline the authors adopt). These are sort tiers 1 and 2.",
+      "year_conventions": "Dates given in Julian BC; split years written as 2348/2347 (year_bc_ad = -2348, year_bc_ad_end = -2347). CFAH papers do not use AM numbering in their anchor points; year_am left null unless the paper states it.",
+      "references": [
+        "cfah-1",
+        "cfah-2",
+        "cfah-3",
+        "cfah-4",
+        "cfah-5",
+        "cfah-6",
+        "cfah-project-osf"
+      ],
+      "anchors": [
+        {
+          "event": "Creation (of Adam)",
+          "event_id": "creation-week",
+          "date": "4004 B.C.",
+          "year_am": null,
+          "year_bc_ad": -4004,
+          "citation": "Griffith & White, \"Chronological Framework of Ancient History. 4: Dating Creation and the Deluge,\" ARJ 16 (2023): 475–489, section \"AP-30: Creation: 4004 B.C.\"",
+          "link": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+          "note": "Also CFAH-1 Table 1 (Ussher-Jones): 4004 Creation of Mankind; CFAH-3 AP-24 Satya Yuga 4004 B.C.",
+          "cfah_basis": "anchor_point"
+        },
+        {
+          "event": "The Flood",
+          "event_id": "the-flood",
+          "date": "2348–2347 B.C.",
+          "year_am": null,
+          "year_bc_ad": -2348,
+          "year_bc_ad_end": -2347,
+          "citation": "Griffith & White, \"Chronological Framework of Ancient History. 4: Dating Creation and the Deluge,\" ARJ 16 (2023): 475–489, section \"AP-29: The Flood: 2348–2347 B.C.\"",
+          "link": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+          "note": "CFAH-1 Introduction: \"place the Dispersion in 2192/2191 BC and the Flood in 2348/2347 BC\"; CFAH-1 Table 1: 2348 Flood of Noah.",
+          "cfah_basis": "anchor_point"
+        },
+        {
+          "event": "Dispersion from Babel",
+          "date": "2192/2191 BC",
+          "year_am": null,
+          "year_bc_ad": -2192,
+          "year_bc_ad_end": -2191,
+          "citation": "Griffith & White, \"Chronological Framework of Ancient History. 2: Founding of the Nations,\" ARJ 15 (2022): 405–426, section \"The Dispersion: 2192/2191 BC\" and Table 2",
+          "link": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+          "cfah_basis": "anchor_point",
+          "event_id": "dispersion"
+        },
+        {
+          "event": "First Territorial Division",
+          "event_id": "first-territorial-division",
+          "date": "2254/2253 B.C.",
+          "year_am": null,
+          "year_bc_ad": -2254,
+          "citation": "CFAH-4 §AP-27",
+          "link": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+          "cfah_basis": "anchor_point",
+          "year_bc_ad_end": -2253
+        },
+        {
+          "event": "Final Territorial Division (birth of Peleg)",
+          "event_id": "final-territorial-division",
+          "date": "2247 B.C.",
+          "year_am": null,
+          "year_bc_ad": -2247,
+          "citation": "CFAH-4 §AP-28",
+          "link": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+          "cfah_basis": "anchor_point"
+        },
+        {
+          "event": "Founding of Babel (AP-1)",
+          "event_id": "founding-of-babel",
+          "date": "2234/2233 BC",
+          "year_am": null,
+          "year_bc_ad": -2234,
+          "citation": "CFAH-2 §\"The Root of Chaldean Astronomy\", §\"Era of the Tower of Babel\", Table 2; AP-1 per CFAH-5",
+          "link": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+          "cfah_basis": "anchor_point",
+          "year_bc_ad_end": -2233
+        },
+        {
+          "event": "Joseph made vizier (new AP-61)",
+          "event_id": "joseph-made-vizier",
+          "date": "1716/1715 BC",
+          "year_am": null,
+          "year_bc_ad": -1716,
+          "citation": "CFAH-6 Argument 4 §7",
+          "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+          "cfah_basis": "anchor_point",
+          "year_bc_ad_end": -1715
+        },
+        {
+          "event": "Birth of Abraham",
+          "event_id": "abraham-birth",
+          "date": "1996 BC",
+          "year_am": null,
+          "year_bc_ad": -1996,
+          "citation": "CFAH-1, section \"Our Assumptions (Declared Biases)\", Table 1",
+          "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+          "cfah_basis": "table1_baseline"
+        },
+        {
+          "event": "Abraham enters Canaan and Egypt",
+          "event_id": "abraham-enters-canaan",
+          "date": "1921 BC",
+          "year_am": null,
+          "year_bc_ad": -1921,
+          "citation": "CFAH-1, section \"Our Assumptions (Declared Biases)\", Table 1",
+          "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+          "cfah_basis": "table1_baseline"
+        },
+        {
+          "event": "Exodus",
+          "event_id": "exodus",
+          "date": "1491 BC",
+          "year_am": null,
+          "year_bc_ad": -1491,
+          "citation": "CFAH-1, section \"Our Assumptions (Declared Biases)\", Table 1",
+          "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+          "cfah_basis": "table1_baseline"
+        },
+        {
+          "event": "Solomon dedicates the Temple (label disputed)",
+          "event_id": "temple-dedication",
+          "date": "1012 BC",
+          "year_am": null,
+          "year_bc_ad": -1012,
+          "citation": "CFAH-1, section \"Our Assumptions (Declared Biases)\", Table 1",
+          "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+          "cfah_basis": "table1_baseline"
+        }
+      ],
+      "open_questions": [
+        "Series is incomplete (6 of 20 papers published); later-era CFAH dates (e.g. kings, Exodus details) may change in forthcoming papers."
+      ]
+    },
+    {
+      "id": "ussher-jones",
+      "name": "Ussher-Jones (Floyd Nolen Jones, The Chronology of the Old Testament)",
+      "abbreviation": "Ussher-Jones",
+      "primary": false,
+      "sort_priority": 2,
+      "status": "partial",
+      "authors": [
+        "Floyd Nolen Jones"
+      ],
+      "description": "Floyd Nolen Jones's refinement of Ussher (The Chronology of the Old Testament: A Return to the Basics, 1993-2019; Master Books edition 2004+). CFAH treats it as its biblical baseline (CFAH-1 Table 1), but here it is a separate chronology (sort tier 3) so Jones's own statements are cited directly. Entries are filled only where read in a freely accessible Jones source; everything else is null with a note.",
+      "year_conventions": "Creation = 0 AM = 4004 BC; Jones states \"any BC number added to its corresponding AM counterpart will always yield the value 4004\" (15th ed. 2002, Chart Five discussion, p. 110). That rule is documented here but NOT used to convert AM-only figures; year_bc_ad is filled only where Jones prints the BC year.",
+      "references": [
+        "jones-chart-1",
+        "jones-chronology-ot-2002",
+        "jones-ministries-chronology-page"
+      ],
+      "anchors": [
+        {
+          "event": "Creation",
+          "event_id": "creation-week",
+          "date": "0 AM, 4004 BC",
+          "year_am": 0,
+          "year_bc_ad": -4004,
+          "citation": "Jones, Chart No. 1 \"Creation to Jesus Christ\" (© 1993)",
+          "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130609101.pdf"
+        },
+        {
+          "event": "The Flood",
+          "event_id": "the-flood",
+          "date": "1656 AM, 2348 BC",
+          "year_am": 1656,
+          "year_bc_ad": -2348,
+          "citation": "Jones, Chart No. 1 \"Creation to Jesus Christ\" (© 1993); Chronology of the Old Testament (15th ed., 2002), Chart One §B, p. 26",
+          "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130609101.pdf"
+        }
+      ],
+      "open_questions": [
+        "CFAH cites the 21st ed. (Jones 2019). The free 2019 PDF URL (floydnolenjonesministries.com/files/135786316.pdf) returned 404; the 15th ed. (2002) on ntslibrary.com was used. Figures for Creation-Flood should be identical but check against 2019 if obtainable.",
+        "The ministry page's link for Chart 6 \"Creation to Creator\" points to the Chart 5C file (same URL), so Chart 6 could not be read.",
+        "Jones charts are largely images in the 2002 PDF; patriarch death years and BC birth years were not readable as text."
+      ]
+    },
+    {
+      "id": "ussher",
+      "name": "Ussher, Annals of the World (1650/1658)",
+      "abbreviation": "Ussher",
+      "primary": false,
+      "sort_priority": 3,
+      "status": "active",
+      "authors": [
+        "James Ussher"
+      ],
+      "description": "Archbishop James Ussher's Annales Veteris Testamenti (1650), English edition 1658. Gives Anno Mundi (AM), Julian Period (JP) and BC years for each entry.",
+      "year_conventions": "AM 1 = 710 JP = 4004 BC (Creation began at the evening preceding 23 October 4004 BC, Julian). Ussher's year runs autumn to autumn, so one AM year straddles two BC years; Ussher's printed BC heading is used for year_bc_ad. E.g. AM 1656 (Flood begins) is headed 2349 BC and AM 1657 (Noah leaves the Ark) is headed 2348 BC.",
+      "references": [
+        "ussher-annals-1658",
+        "ussher-annals-transcription"
+      ],
+      "anchors": [
+        {
+          "event": "Creation",
+          "event_id": "creation-week",
+          "date": "1 AM, 710 JP, 4004 BC (evening preceding 23 Oct)",
+          "year_am": 1,
+          "year_bc_ad": -4004,
+          "citation": "Ussher, Annals of the World, First Age, §1 (heading \"1 AM, 710 JP, 4004 BC\")",
+          "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC"
+        },
+        {
+          "event": "Flood begins (Noah's 600th year, 2nd month, 17th day = Sunday 7 December)",
+          "event_id": "the-flood",
+          "date": "1656 AM, 2365 JP, 2349 BC",
+          "year_am": 1656,
+          "year_bc_ad": -2349,
+          "citation": "Ussher, Annals of the World, First Age, §33–35",
+          "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+          "note": "The frequently quoted \"2348 BC\" is Ussher's heading for AM 1657 (exit from the Ark, §40–41)."
+        },
+        {
+          "event": "Noah leaves the Ark (27th day, 2nd month = Thursday 18 December)",
+          "date": "1657 AM, 2366 JP, 2348 BC",
+          "year_am": 1657,
+          "year_bc_ad": -2348,
+          "citation": "Ussher, Annals of the World, Second Age, §40–41",
+          "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC"
+        }
+      ]
+    },
+    {
+      "id": "jordan",
+      "name": "James B. Jordan, Biblical Chronology (Biblical Horizons / ICE, 1989-1997)",
+      "abbreviation": "Jordan",
+      "primary": false,
+      "sort_priority": 4,
+      "status": "partial",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "description": "SECONDARY DISPLAY CHRONOLOGY - never used for sorting_year (not one of the four sort tiers). James B. Jordan's monthly newsletter Biblical Chronology (Institute for Christian Economics / Biblical Horizons, 1989-1997). Framework: six 24-hour creation days, no gaps in Genesis 5 or 11, Masoretic numbers (rejects the LXX and the \"second Cainan\"); Flood AM 1656; Arphaxad AM 1658 (\"two years after the Flood\"); Abram born AM 2008 (Terah 130, from Gen 11:26 + Acts 7:4) - the same as Ussher and 60 years later than plain Gen 11:26 arithmetic (1948); the 430 years of Ex 12:40 counted from Abram's entry into Canaan (AM 2083), so the Exodus is AM 2513 (same as Ussher/Jones); Judges partly overlapping, 480 years to the Temple foundation in Solomon's 4th year, AM 2993 (one year later than Ussher/Jones 2992), completed AM 3000, dedicated (he assumes) AM 3014 (Ussher: 3001); kings of Judah as the controlling \"Adamic chronology\" (rejects Thiele and the conventional Assyrian synchronisms); fall of Jerusalem c. AM 3425; decree of Cyrus c. AM 3474; Daniel's 70 weeks taken as 490 literal years from Cyrus, which REJECTS the Ptolemaic Persian chronology and shortens the post-exilic period by about 80 years; crucifixion AM 3960 and, \"if this happened in A.D. 30\", the fall of Jerusalem in A.D. 70 = AM 4000. Consequence: Jordan's B.C. dates (his \"SBC\", strictest Biblical chronology, first set out in BC 5:8, Dec. 1993) run about 74-75 years later than Ussher/CFAH for the same events (Creation 3930 B.C., Flood 2274, Abram 1922, Exodus 1417, Temple begun 937), while his AM figures mostly match Ussher. Later issues (Daniel series 1995) date the Persian period with conventional B.C. years (e.g. Cyrus 538 B.C.), so his B.C. usage is not uniform.",
+      "year_conventions": "Anno Mundi counted from Adam's creation as year 0 (\"0 - Adam created\"; Seth 130), written \"AM 1656\", \"A.M. 2008\", or month/day/year as \"2/17/1656\". His year sometimes runs from spring (Pentateuch plague calendar, \"1st Month (March-April 2513)\") and sometimes turns in the 7th month (wilderness narrative, BC 6:8 §18). year_bc_ad is filled only where Jordan prints a B.C. year, which is almost always his SBC figure; the note says so. Nothing is converted between AM and B.C. Many of his dates carry \"?\" or \"c.\" or are called \"arbitrary\"/\"aesthetic\"; those use precision \"conjectural\".",
+      "references": [
+        "jordan-biblical-horizons-chronology",
+        "jordan-bc-garynorth-archive",
+        "jordan-bc-4-8",
+        "jordan-bc-5-8",
+        "jordan-bc-6-4"
+      ],
+      "anchors": [
+        {
+          "event": "Creation",
+          "event_id": "creation-week",
+          "date": "Anno Mundi 0; 3930 B.C. (SBC)",
+          "year_am": 0,
+          "year_bc_ad": -3930,
+          "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+          "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+          "note": "SBC B.C. year."
+        },
+        {
+          "event": "The Flood",
+          "event_id": "the-flood",
+          "date": "Anno Mundi 1656; 2274 B.C. (SBC)",
+          "year_am": 1656,
+          "year_bc_ad": -2274,
+          "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+          "link": "https://biblicalhorizons.com/1993/12/01/5_08/"
+        },
+        {
+          "event": "Birth of Abram",
+          "event_id": "abraham-birth",
+          "date": "Anno Mundi 2008; 1922 B.C. (SBC)",
+          "year_am": 2008,
+          "year_bc_ad": -1922,
+          "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+          "link": "https://biblicalhorizons.com/1993/12/01/5_08/"
+        },
+        {
+          "event": "Exodus",
+          "event_id": "exodus",
+          "date": "Anno Mundi 2513; 1417 B.C. (SBC)",
+          "year_am": 2513,
+          "year_bc_ad": -1417,
+          "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+          "link": "https://biblicalhorizons.com/1993/12/01/5_08/"
+        },
+        {
+          "event": "Temple begun (foundation)",
+          "date": "Anno Mundi 2993; 937 B.C. (SBC)",
+          "year_am": 2993,
+          "year_bc_ad": -937,
+          "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+          "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+          "note": "Foundation, not dedication (Jordan dates the dedication AM 3014, BC 5:3)."
+        },
+        {
+          "event": "Fall of Jerusalem",
+          "date": "Anno Mundi 3425; 505 B.C. (SBC)",
+          "year_am": 3425,
+          "year_bc_ad": -505,
+          "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+          "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+          "note": "BC 4:8 §5: \"A.M. 3425 (or thereabouts)\". CCC on the same chart: 586 B.C."
+        },
+        {
+          "event": "Decree of Cyrus",
+          "date": "Anno Mundi 3474; 456 B.C. (SBC)",
+          "year_am": 3474,
+          "year_bc_ad": -456,
+          "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+          "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+          "note": "CCC on the same chart: 536 B.C."
+        },
+        {
+          "event": "Crucifixion, mid-70th week",
+          "date": "A.M. 3960 (\"If this happened in A.D. 30 ...\")",
+          "year_am": 3960,
+          "year_bc_ad": null,
+          "citation": "Jordan, \"A Summary of Old Testament Chronology,\" Biblical Chronology 4:8 (August 1992), \"General Findings and Tentative Positions\" §8",
+          "link": "https://biblicalhorizons.com/1992/08/01/4_08/",
+          "note": "A.D. 30 is stated conditionally, so year_bc_ad is left null."
+        },
+        {
+          "event": "Destruction of the Temple and Jerusalem",
+          "date": "A.D. 70 = A.M. 4000 (conditional on the crucifixion in A.D. 30)",
+          "year_am": 4000,
+          "year_bc_ad": null,
+          "citation": "Jordan, \"A Summary of Old Testament Chronology,\" Biblical Chronology 4:8 (August 1992), \"General Findings and Tentative Positions\" §8",
+          "link": "https://biblicalhorizons.com/1992/08/01/4_08/",
+          "note": "Stated conditionally; year_bc_ad left null."
+        }
+      ],
+      "open_questions": [
+        "Jordan calls his work \"tentative\" and revised it over the series; where issues disagree (Temple 932 B.C. in BC 2:8 vs 937 B.C. SBC in BC 5:8; Solomon's accession AM 2989 in BC 5:8 vs first year 2990 in BC 6:9) both are recorded in notes.",
+        "Mahalalel's birth is printed \"396\" (BC 6:4); MT arithmetic and Jordan's own Jared line imply 395. Recorded as printed.",
+        "Charts in the Daniel series (BC 7:1-8:2) exist only as scanned PDFs on garynorth.com; they were OCR'd for data/jordan-dates-extract.md and need checking against the scans before use.",
+        "Jordan's later book-length work (e.g. commentaries on Daniel) was not consulted; only the two owner-supplied sources were read."
+      ]
+    },
+    {
+      "id": "bible",
+      "name": "Biblical statements (direct Scripture data)",
+      "primary": false,
+      "sort_priority": 5,
+      "status": "active",
+      "authors": [],
+      "description": "Dates/durations stated explicitly in Scripture (relative dates such as \"in the six hundredth year of Noah's life, in the second month, the seventeenth day\"). The Bible is the infallible standard; this chronology records the text's own statements without conversion.",
+      "year_conventions": "date holds the scriptural wording/paraphrase; year_am filled only when the verse itself fixes it relative to a stated life (otherwise null); year_bc_ad always null.",
+      "references": [
+        "kjv-gutenberg"
+      ],
+      "anchors": []
+    },
+    {
+      "id": "masoretic-genealogy",
+      "name": "Masoretic Text genealogy arithmetic (Genesis 5 & 11)",
+      "abbreviation": "MT-Gen",
+      "primary": false,
+      "sort_priority": 6,
+      "status": "active",
+      "authors": [],
+      "description": "Straight arithmetic on the Masoretic/KJV figures of Genesis 5 and 11 with no external calibration: each birth = father's birth + father's age at begetting; each death = birth + lifespan.",
+      "year_conventions": "Anno Mundi counted as completed years from the creation of Adam (Adam created AM 0; Seth born AM 130 because \"Adam lived an hundred and thirty years, and begat... Seth\", Gen 5:3). The Flood falls in AM 1656 (Noah born AM 1056; Flood in his 600th year, Gen 7:6, 7:11). year_bc_ad is always null (the text gives no BC anchor).",
+      "references": [
+        "kjv-gutenberg"
+      ],
+      "anchors": [
+        {
+          "event": "The Flood (Noah's 600th year)",
+          "event_id": "the-flood",
+          "date": "AM 1656",
+          "year_am": 1656,
+          "year_bc_ad": null,
+          "citation": "Gen 5:3–29 (sum of begetting ages 130+105+90+70+65+162+65+187+182 = 1056) + Gen 7:6, 7:11",
+          "link": "https://www.gutenberg.org/ebooks/10"
+        }
+      ]
+    },
+    {
+      "id": "josephus",
+      "name": "Josephus (Whiston translation)",
+      "primary": false,
+      "sort_priority": 7,
+      "status": "partial",
+      "authors": [
+        "Flavius Josephus"
+      ],
+      "description": "Chronological statements in Josephus, Antiquities of the Jews (Whiston translation). Josephus's figures for the antediluvians largely follow LXX-type numbers in the received text; Whiston's brackets give Masoretic corrections.",
+      "year_conventions": "Years from Adam as Josephus states them (stored in year_am); no BC conversion.",
+      "references": [
+        "josephus-antiquities-whiston"
+      ],
+      "anchors": [
+        {
+          "event": "The Flood",
+          "event_id": "the-flood",
+          "date": "2656 years from Adam (Whiston bracket: [1656])",
+          "year_am": 2656,
+          "year_bc_ad": null,
+          "citation": "Josephus, Antiquities I.3.3 (Whiston)",
+          "link": "https://www.gutenberg.org/ebooks/2848"
+        }
+      ]
+    },
+    {
+      "id": "annals-of-clonmacnoise",
+      "name": "Annals of Clonmacnoise",
+      "primary": false,
+      "sort_priority": 8,
+      "status": "partial",
+      "authors": [
+        "(Irish annalists)"
+      ],
+      "description": "Irish annals from the earliest period to AD 1408, surviving in Conell Mageoghagan's 1627 English translation (ed. Murphy, 1896). Referenced by CFAH-2 for the colonisation of Ireland.",
+      "year_conventions": "Years from Adam as stated (stored in year_am only when the text states an AM figure); intervals between ages of the world are recorded as text in date with year_am null. Read from the 1896 Internet Archive OCR text.",
+      "references": [
+        "annals-of-clonmacnoise-1896"
+      ],
+      "anchors": [
+        {
+          "event": "The Flood",
+          "event_id": "the-flood",
+          "date": "600th year of Noah; first age (Adam to the Flood) 1656 years",
+          "year_am": 1656,
+          "year_bc_ad": null,
+          "citation": "Annals of Clonmacnoise (ed. Murphy 1896), p. 12",
+          "link": "https://archive.org/details/annalsofclonmacn00murp",
+          "note": "Also gives the Septuagint figure 2242. Prefatory Memorandum lists ages of the world: 1656, 292, 500, 480, 410, 432, 134 (OCR column alignment to be checked)."
+        }
+      ],
+      "open_questions": [
+        "Check the Memorandum row/number alignment against the page image.",
+        "Semiramis \"after the flood 313 yeares\", \"Yeare after the Creation of the World 1969\" (pp. 12–13) - candidate for a future Semiramis record."
+      ]
+    },
+    {
+      "id": "raleigh-history-of-the-world",
+      "name": "Raleigh, The History of the World (1614)",
+      "primary": false,
+      "sort_priority": 9,
+      "status": "partial",
+      "authors": [
+        "Sir Walter Raleigh"
+      ],
+      "description": "Sir Walter Raleigh's History of the World (1614; 11th ed. 1736), Books I–V from Creation to 130 BC.",
+      "year_conventions": "Year of the world (AM) as Raleigh states it (year_am); no BC conversion. Read from the 1736 (11th ed.) vol. 1 Internet Archive OCR text.",
+      "references": [
+        "raleigh-history-of-the-world-1736"
+      ],
+      "anchors": [
+        {
+          "event": "The Flood",
+          "event_id": "the-flood",
+          "date": "year of the world 1656",
+          "year_am": 1656,
+          "year_bc_ad": null,
+          "citation": "Raleigh, History of the World (1736), Book I, ch. VII, sect. III",
+          "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1"
+        },
+        {
+          "event": "Birth of Abraham",
+          "event_id": "abraham-birth",
+          "date": "year of the world 2009 (352 years after the flood)",
+          "year_am": 2009,
+          "year_bc_ad": null,
+          "citation": "Raleigh, History of the World (1736), Book II, ch. I, sect. VIII",
+          "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1"
+        },
+        {
+          "event": "Exodus",
+          "event_id": "exodus",
+          "date": "about the beginning of the year of the world 2514",
+          "year_am": 2514,
+          "year_bc_ad": null,
+          "citation": "Raleigh, History of the World (1736), Book II, ch. III (p. 149)",
+          "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1"
+        }
+      ],
+      "open_questions": [
+        "Temple date not yet located (Raleigh gives Solomon's accession as year of the world 2991, Book II)."
+      ]
+    }
+  ]
+}

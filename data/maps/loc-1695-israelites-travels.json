@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schema/map.schema.json",
+  "id": "loc-1695-israelites-travels",
+  "type": "map",
+  "title": "Route of the travels of the Israelites 40 years in the desert (Amsterdam Haggadah map, 1695)",
+  "summary": "Hebrew map by Abraham ben Jacob (Amsterdam, 1695) showing the route of the Israelites from the Nile through the wilderness and the tribal allotments of the Holy Land (LoC devised English title).",
+  "url": "https://www.loc.gov/item/2021668293/",
+  "image_url": "https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:02:88:7:wdl_02887:PAL0515/full/pct:12.5/0/default.jpg",
+  "thumbnail": "https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:02:88:7:wdl_02887:PAL0515/full/pct:6.25/0/default.jpg",
+  "iiif_manifest": "https://www.loc.gov/item/2021668293/manifest.json",
+  "api_link": "https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:02:88:7:wdl_02887:PAL0515/info.json",
+  "date_of_map": "1695",
+  "license_note": "Library of Congress (World Digital Library): \"unaware of any copyright or other restrictions ... free to use and reuse.\"",
+  "locations": [
+    "egypt",
+    "red-sea-crossing",
+    "canaan"
+  ],
+  "scripture_refs": [],
+  "sources": [],
+  "related": [
+    "exodus",
+    "joseph-made-vizier",
+    "egypt",
+    "red-sea-crossing",
+    "moses"
+  ],
+  "description": "Library of Congress item 2021668293. Creator(s): Abraham ben Jacob. thumbnail and IIIF Image API (info.json) verified HTTP 200 on 2026-10-17 from tile.loc.gov. The IIIF manifest URL is taken from the LoC item JSON (iiif_manifest_url); direct fetches of www.loc.gov returned a Cloudflare 403 challenge from the box, so the manifest itself was not loaded."
+}

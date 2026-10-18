@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schema/map.schema.json",
+  "id": "loc-1651-assyria-vetus",
+  "type": "map",
+  "title": "Assyria vetus divisa in Syriam, Mesopotamiam, Babyloniam, et Assyriam (1651)",
+  "summary": "Sanson-school map of ancient Assyria, Mesopotamia and Babylonia (Shinar), engraved by Philippe de La Rue, published by Pierre Mariette, Paris 1651.",
+  "url": "https://www.loc.gov/item/2004629154/",
+  "image_url": "https://tile.loc.gov/storage-services/service/gmd/gmd7/g7420/g7420/ct001233.gif",
+  "thumbnail": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd7:g7420:g7420:ct001233/full/pct:12.5/0/default.jpg",
+  "iiif_manifest": "https://www.loc.gov/item/2004629154/manifest.json",
+  "api_link": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd7:g7420:g7420:ct001233/info.json",
+  "date_of_map": "1651",
+  "license_note": "Library of Congress (World Digital Library): \"unaware of any copyright or other restrictions ... free to use and reuse.\"",
+  "locations": [
+    "babel",
+    "land-of-shinar"
+  ],
+  "scripture_refs": [],
+  "sources": [],
+  "related": [
+    "founding-of-babel",
+    "dispersion",
+    "babel",
+    "land-of-shinar"
+  ],
+  "description": "Library of Congress item 2004629154. Creator(s): Philippe de La Rue; Pierre Mariette; J. Somer. thumbnail and IIIF Image API (info.json) verified HTTP 200 on 2026-10-17 from tile.loc.gov. The IIIF manifest URL is taken from the LoC item JSON (iiif_manifest_url); direct fetches of www.loc.gov returned a Cloudflare 403 challenge from the box, so the manifest itself was not loaded."
+}

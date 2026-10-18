@@ -1,0 +1,139 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "final-territorial-division",
+  "type": "event",
+  "title": "Final Territorial Division of the Earth (birth of Peleg)",
+  "summary": "\"Unto Eber were born two sons: the name of one was Peleg; for in his days was the earth divided\" (Gen 10:25). CFAH dates the final division to 2247 B.C., the year of Peleg's birth.",
+  "description": "CFAH-4 AP-28: Ctesias (via Africanus/Syncellus) gives Belus/Cush a 55-year reign, read as running from Peleg's birth in 2247 BC to the Dispersion in 2192/2191 B.C.",
+  "sorting_year": -2247,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2247 B.C. (AP-28)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "2247 B.C.",
+      "year_am": null,
+      "year_bc_ad": -2247,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 4: Dating Creation and the Deluge,\" ARJ 16 (2023): 475–489, section \"AP-28: Second/Final Territorial Division: 2247 B.C.\"",
+      "link": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "note": "AP-28 ties the final division to \"the birth of Peleg in 2247 BC (Ussher 2005, 21, §47)\".",
+      "cfah_basis": "anchor_point",
+      "source_text_id": "cfah-4"
+    },
+    {
+      "source": "cfah",
+      "date": "2247 BC (Territorial Division of the Earth)",
+      "year_am": null,
+      "year_bc_ad": -2247,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "cfah_basis": "table1_baseline",
+      "source_text_id": "cfah-1"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+    },
+    {
+      "source": "bible",
+      "date": "During Peleg's lifetime (AM 1757–1996 by MT arithmetic)",
+      "year_am": 1757,
+      "year_bc_ad": null,
+      "precision": "year-range",
+      "citation": "Gen 10:25; Gen 11:10–19",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": "\"In his days\" - Scripture does not fix the year within Peleg's life.",
+      "year_am_end": 1996,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "1757 AM, 2247 BC (Peleg born; division \"if this happened at the day of his birth\")",
+      "year_am": 1757,
+      "year_bc_ad": -2247,
+      "precision": "conjectural",
+      "citation": "Ussher, Annals of the World, Second Age §47 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "Ussher: \"If this happened at the day of his birth, then it seems that when Peleg was born, Noah ... divided the land among his grandchildren.\"",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"I shall arbitrarily put the division of the nations in a.m. 1871 (2059 B.C.; midway between the Flood and Abram's exodus from Egypt)\"",
+      "year_am": 1871,
+      "year_bc_ad": -2059,
+      "precision": "conjectural",
+      "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), section \"The Beginnings of Egypt\"",
+      "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+      "source_text_id": "jordan-bc-5-8",
+      "note": "Jordan rejects dating the division to Peleg's birth: \"Perhaps the tower of Babel incident happened about the time of Peleg's birth, but that is unlikely\" (BC 6:4 §7). He dates Peleg's birth AM 1757 (see peleg). B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+    },
+    {
+      "source": "masoretic-genealogy",
+      "date": "Within AM 1757–1996 (Peleg's lifetime)",
+      "year_am": 1757,
+      "year_bc_ad": null,
+      "precision": "year-range",
+      "citation": "Gen 11:10–19 (Arphaxad AM 1658 + 35 + 30 + 34 = 1757; Peleg lived 30 + 209 = 239 years)",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "year_am_end": 1996,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [
+    "peleg",
+    "noah"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.10.25",
+    "Gen.11.16-Gen.11.19",
+    "1Chr.1.19"
+  ],
+  "sources": [
+    "cfah-4",
+    "cfah-1",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-5-8",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-4",
+      "url": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "locator": "AP-28"
+    },
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 10–11"
+    },
+    {
+      "source_id": "jordan-bc-6-4",
+      "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "locator": "§7 The Date of the Tower of Babel"
+    }
+  ],
+  "related": [
+    "first-territorial-division",
+    "founding-of-babel",
+    "dispersion",
+    "peleg"
+  ]
+}

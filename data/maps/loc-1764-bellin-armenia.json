@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schema/map.schema.json",
+  "id": "loc-1764-bellin-armenia",
+  "type": "map",
+  "title": "Carte de l'Arménie, Géorgie et pays voisins (1764)",
+  "summary": "Jacques-Nicolas Bellin's 1764 map of Armenia, Georgia and neighbouring lands (region of the mountains of Ararat).",
+  "url": "https://www.loc.gov/item/2017586278/",
+  "image_url": "https://tile.loc.gov/storage-services/service/gmd/gmd7/g7120/g7120/ct007700.gif",
+  "thumbnail": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd7:g7120:g7120:ct007700/full/pct:12.5/0/default.jpg",
+  "iiif_manifest": "https://www.loc.gov/item/2017586278/manifest.json",
+  "api_link": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd7:g7120:g7120:ct007700/info.json",
+  "date_of_map": "1764",
+  "license_note": "Library of Congress: \"free to use and reuse unless a Rights Advisory statement is present\" (Geography and Map Division).",
+  "locations": [
+    "mountains-of-ararat"
+  ],
+  "scripture_refs": [],
+  "sources": [],
+  "related": [
+    "ark-landing",
+    "mountains-of-ararat"
+  ],
+  "description": "Library of Congress item 2017586278. Creator(s): Jacques Nicolas Bellin. thumbnail and IIIF Image API (info.json) verified HTTP 200 on 2026-10-17 from tile.loc.gov. The IIIF manifest URL is taken from the LoC item JSON (iiif_manifest_url); direct fetches of www.loc.gov returned a Cloudflare 403 challenge from the box, so the manifest itself was not loaded."
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "red-sea-crossing",
+  "type": "location",
+  "title": "Red Sea crossing (yam suph) - location uncertain",
+  "location_type": "body of water",
+  "summary": "The sea Israel crossed on dry ground after leaving Egypt, camped \"before Pihahiroth, between Migdol and the sea, over against Baalzephon\" (Exod 14:2).",
+  "lat": null,
+  "lng": null,
+  "coordinate_basis": "No coordinates: OpenBible.info gives 8 competing identifications (Gulf of Suez 40%, Bitter Lakes 35%, Lake Timsah 15%, Ballah Lakes, Gulf of Aqaba, Pelusiac Nile branch, Lake Manzala, Lake Bardawil each <10%). Related: Pi-hahiroth (openbible a/ababfd2), top identification only 25%.",
+  "certainty": {
+    "level": "low",
+    "percent": 40,
+    "basis": "OpenBible.info \"Red Sea 1\" (Exod 13:18; 15:4): top identification Gulf of Suez at 40% (percent refers to that identification)."
+  },
+  "openbible_id": "a3d18b2",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a3d18b2/red-sea-1",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a3d18b2.geojson",
+  "wikidata": "Q116702",
+  "scripture_refs": [
+    "Exod.13.18",
+    "Exod.14.2",
+    "Exod.14.21-Exod.14.22",
+    "Exod.15.4"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a3d18b2/red-sea-1"
+    }
+  ],
+  "related": [
+    "exodus",
+    "moses",
+    "egypt"
+  ],
+  "maps": [
+    "loc-1695-israelites-travels"
+  ],
+  "open_questions": [
+    "Which crossing site to display (if any)? Kept null until the owner chooses; OpenBible Pi-hahiroth page: https://www.openbible.info/geo/ancient/ababfd2/pi-hahiroth"
+  ]
+}

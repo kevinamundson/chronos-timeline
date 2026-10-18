@@ -1,0 +1,143 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "moses",
+  "type": "person",
+  "title": "Moses",
+  "summary": "Levite, son of Amram and Jochebed; led Israel out of Egypt at 80 (Exod 7:7); died at 120 (Deut 34:7).",
+  "description": "Father Amram (not yet a record).",
+  "sorting_year": -1571,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1571 BC (Moses born) (no higher-tier year available)."
+  },
+  "father": null,
+  "children": [],
+  "scripture_facts": {
+    "age_at_named_son": null,
+    "named_son": null,
+    "lifespan_years": 120,
+    "refs": [
+      "Deut.34.7"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "1571 BC (Moses born)",
+        "year_am": null,
+        "year_bc_ad": -1571,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), Chart Three §C, p. 56 (\"1491 + 80 = 1571 BC (Moses born)\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": null,
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "ussher",
+        "date": "2433 AM, 1571 BC",
+        "year_am": 2433,
+        "year_bc_ad": -1571,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §162 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"2433 - Moses ben Amram born (Amram and Jochebed are 83)\"",
+        "year_am": 2433,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 5),\" Biblical Chronology 6:7 (July 1994), §15 \"Moses\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
+        "source_text_id": "jordan-bc-6-7",
+        "note": "Also BC 2:7: \"AM 2433 Birth of Moses\"."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "ussher",
+        "date": "2553 AM, 1451 BC (aged 120, 12th month)",
+        "year_am": 2553,
+        "year_bc_ad": -1451,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Fourth Age §297 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "1st day of the 11th month, year 2554 (\"months 7-10, 2554 ... the 1st day of the 11th month ... apparently on that same day, Moses died\")",
+        "year_am": 2554,
+        "year_bc_ad": null,
+        "precision": "day",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 6),\" Biblical Chronology 6:8 (August 1994), §18 \"The Years 2553 and 2554\"",
+        "link": "https://biblicalhorizons.com/1994/08/01/6_08/",
+        "source_text_id": "jordan-bc-6-8",
+        "note": "Jordan's year here turns at the 7th month (autumn). BC 2:8 has \"AM 2553 End of 40 years in wilderness\"."
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Exod.2.1-Exod.2.10",
+    "Exod.7.7",
+    "Deut.34.7"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jones-chronology-ot-2002",
+    "jordan-bc-6-7",
+    "jordan-bc-6-8"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Exod.2.1-Exod.2.10 ; Exod.7.7"
+    }
+  ],
+  "related": [
+    "exodus",
+    "red-sea-crossing",
+    "egypt"
+  ],
+  "events": [
+    "exodus"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-shinar",
+  "type": "location",
+  "title": "Land of Shinar",
+  "location_type": "region",
+  "summary": "The plain in which the post-Flood population settled and built Babel (Gen 11:2); Babylonia.",
+  "lat": 32.543333,
+  "lng": 44.422222,
+  "coordinate_basis": "OpenBible.info GeoJSON point md561de (Babylon) used as a representative point for the region.",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"another name for Babylonia (ancient): very high confidence\"."
+  },
+  "openbible_id": "af725b1",
+  "openbible_url": "https://www.openbible.info/geo/ancient/af725b1/shinar",
+  "openbible_geojson": "https://a.openbible.info/geo/data/af725b1.geojson",
+  "wikidata": "Q1404297",
+  "scripture_refs": [
+    "Gen.10.10",
+    "Gen.11.2",
+    "Gen.14.1",
+    "Dan.1.2"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/af725b1/shinar"
+    }
+  ],
+  "related": [
+    "founding-of-babel",
+    "dispersion",
+    "babel"
+  ],
+  "maps": [
+    "loc-1651-assyria-vetus"
+  ]
+}

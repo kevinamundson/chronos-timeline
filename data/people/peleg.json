@@ -1,0 +1,172 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "peleg",
+  "type": "person",
+  "title": "Peleg",
+  "alt_names": [
+    "Phaleg"
+  ],
+  "summary": "Son of Eber; \"in his days was the earth divided\" (Gen 10:25).",
+  "description": "Father Eber (not yet a record).",
+  "sorting_year": -2247,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2247 BC (AP-28, birth of Peleg)"
+  },
+  "father": null,
+  "children": [],
+  "scripture_facts": {
+    "age_at_named_son": 30,
+    "named_son": null,
+    "lifespan_years": 239,
+    "refs": [
+      "Gen.11.18",
+      "Gen.11.19"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": "2247 BC (birth of Peleg = final territorial division)",
+        "year_am": null,
+        "year_bc_ad": -2247,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 4: Dating Creation and the Deluge,\" ARJ 16 (2023): 475–489, section \"AP-28: Second/Final Territorial Division: 2247 B.C.\"",
+        "link": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+        "note": "AP-28: \"from the birth of Peleg in 2247 BC (Ussher 2005, 21, §47)\".",
+        "cfah_basis": "anchor_point",
+        "source_text_id": "cfah-4"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "1757 AM",
+        "year_am": 1757,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), \"Chronological Compendium\", p. 1 (\"Peleg born when Eber was 34 ... 1757\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "AM only; no BC printed.",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1757",
+        "year_am": 1757,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 11:10–16 (Arphaxad AM 1658; Salah +35 = 1693; Eber +30 = 1723; Peleg +34 = 1757)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1757 AM, 2247 BC",
+        "year_am": 1757,
+        "year_bc_ad": -2247,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Second Age §47 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "Birth of Peleg: Anno Mundi 1757; 2173 B.C. (SBC)",
+        "year_am": 1757,
+        "year_bc_ad": -2173,
+        "precision": "year",
+        "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), second chart in section \"The Beginnings of Egypt\"",
+        "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+        "source_text_id": "jordan-bc-5-8",
+        "note": "Also BC 6:4 §7-8: \"Peleg was born in am 1757 and lived 239 years, to the year 1996.\" B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1996",
+        "year_am": 1996,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 11:18–19 (30 + 209 = 239 years)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1996 AM, 2008 BC",
+        "year_am": 1996,
+        "year_bc_ad": -2008,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Second Age §60 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "Death of Peleg: Anno Mundi 1996; 1934 B.C. (SBC)",
+        "year_am": 1996,
+        "year_bc_ad": -1934,
+        "precision": "year",
+        "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), second chart in section \"The Beginnings of Egypt\"",
+        "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+        "source_text_id": "jordan-bc-5-8",
+        "note": "B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.10.25",
+    "Gen.11.16-Gen.11.19",
+    "1Chr.1.19"
+  ],
+  "sources": [
+    "cfah-4",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jones-chronology-ot-2002",
+    "jordan-bc-5-8",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.10.25 ; Gen.11.16-Gen.11.19"
+    }
+  ],
+  "related": [
+    "final-territorial-division"
+  ],
+  "events": [
+    "first-territorial-division",
+    "final-territorial-division",
+    "dispersion"
+  ]
+}

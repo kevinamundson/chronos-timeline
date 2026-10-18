@@ -1,0 +1,181 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "adam",
+  "type": "person",
+  "title": "Adam",
+  "summary": "The first man, created by God on the sixth day.",
+  "sorting_year": -4004,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 4004 B.C. (Creation of Adam)"
+  },
+  "father": null,
+  "children": [
+    "seth"
+  ],
+  "scripture_facts": {
+    "age_at_named_son": 130,
+    "named_son": "seth",
+    "lifespan_years": 930,
+    "refs": [
+      "Gen.5.3",
+      "Gen.5.5"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": "4004 B.C. (Creation of Adam)",
+        "year_am": null,
+        "year_bc_ad": -4004,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 4: Dating Creation and the Deluge,\" ARJ 16 (2023): 475–489, section \"AP-30: Creation: 4004 B.C.\"",
+        "link": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+        "note": "Created, not born.",
+        "source_text_id": "cfah-4",
+        "cfah_basis": "anchor_point"
+      },
+      {
+        "source": "cfah",
+        "date": "4004 BC (Creation of Mankind)",
+        "year_am": null,
+        "year_bc_ad": -4004,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+        "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+        "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+        "cfah_basis": "table1_baseline",
+        "source_text_id": "cfah-1"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "0 AM, 4004 BC (year of Creation)",
+        "year_am": 0,
+        "year_bc_ad": -4004,
+        "precision": "year",
+        "citation": "Floyd Nolen Jones, Chart No. 1 \"Creation to Jesus Christ\" (© 1993), line \"0 AM 4004 BC year of CREATION\"",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130609101.pdf",
+        "note": "Created, not born.",
+        "source_text_id": "jones-chart-1"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 0 (created)",
+        "year_am": 0,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 1:26–27; Gen 5:1–3",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": "Epoch of the AM count.",
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1 AM, 4004 BC",
+        "year_am": 1,
+        "year_bc_ad": -4004,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §1, §7 (created on the sixth day, Friday 28 Oct) (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"0 - Adam created\"",
+        "year_am": 0,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 930",
+        "year_am": 930,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 5: birth AM 0 + 930 years (Gen 5:5)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "930 AM, 3074 BC",
+        "year_am": 930,
+        "year_bc_ad": -3074,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §21 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"930 - Adam died\"",
+        "year_am": 930,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.5.3",
+    "Gen.5.5",
+    "Gen.1.26-Gen.1.27",
+    "Gen.2.7"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "cfah-4",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 5"
+    }
+  ],
+  "related": [
+    "seth"
+  ],
+  "events": [
+    "creation-week",
+    "the-fall",
+    "cain-and-abel"
+  ]
+}

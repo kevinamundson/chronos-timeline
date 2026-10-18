@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schema/map.schema.json",
+  "id": "loc-1744-homann-palaestina",
+  "type": "map",
+  "title": "Palaestina seu Terra olim Sancta ... a Davide et Salomone (1744)",
+  "summary": "Homann Heirs map (J. C. Harenberg, 1744) of Palestine under the twelve tribes and the kingdom of David and Solomon.",
+  "url": "https://www.loc.gov/item/2012593367/",
+  "image_url": "https://tile.loc.gov/storage-services/service/gmd/gmd7/g7500/g7500/ct002659.gif",
+  "thumbnail": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd7:g7500:g7500:ct002659/full/pct:12.5/0/default.jpg",
+  "iiif_manifest": "https://www.loc.gov/item/2012593367/manifest.json",
+  "api_link": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd7:g7500:g7500:ct002659/info.json",
+  "date_of_map": "1744",
+  "license_note": "Library of Congress: \"free to use and reuse unless a Rights Advisory statement is present\" (Geography and Map Division).",
+  "locations": [
+    "jerusalem",
+    "mount-moriah",
+    "canaan"
+  ],
+  "scripture_refs": [],
+  "sources": [],
+  "related": [
+    "temple-dedication",
+    "jerusalem",
+    "mount-moriah",
+    "solomon"
+  ],
+  "description": "Library of Congress item 2012593367. Creator(s): Homann Erben; Johann Christoph Harenberg. thumbnail and IIIF Image API (info.json) verified HTTP 200 on 2026-10-17 from tile.loc.gov. The IIIF manifest URL is taken from the LoC item JSON (iiif_manifest_url); direct fetches of www.loc.gov returned a Cloudflare 403 challenge from the box, so the manifest itself was not loaded."
+}

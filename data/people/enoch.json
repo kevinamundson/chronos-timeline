@@ -1,0 +1,166 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "enoch",
+  "type": "person",
+  "title": "Enoch",
+  "summary": "Seventh from Adam; walked with God and was taken by God without dying.",
+  "sorting_year": -3382,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals: 622 AM, 3382 BC (no higher-tier year available)."
+  },
+  "father": "jared",
+  "children": [
+    "methuselah"
+  ],
+  "scripture_facts": {
+    "age_at_named_son": 65,
+    "named_son": "methuselah",
+    "lifespan_years": 365,
+    "refs": [
+      "Gen.5.21",
+      "Gen.5.23",
+      "Gen.5.24"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "622 AM",
+        "year_am": 622,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), \"Chronological Compendium\", p. 1",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "Jones prints only the AM figure here; no BC year is printed for this birth, so year_bc_ad is left null (not inferred).",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 622",
+        "year_am": 622,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 5 cumulative begetting ages (father jared begat at 162, Gen 5:18)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "622 AM, 3382 BC",
+        "year_am": 622,
+        "year_bc_ad": -3382,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §18 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"622 - Enoch ben Jared born\"",
+        "year_am": 622,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ],
+    "translated": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 987",
+        "year_am": 987,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 5: birth AM 622 + 365 years (Gen 5:24)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": "Enoch did not die: \"he was not; for God took him\" (Gen 5:24; Heb 11:5).",
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "987 AM, 3017 BC",
+        "year_am": 987,
+        "year_bc_ad": -3017,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §22 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": "Ussher: \"translated by God in an instant ... that he should not see death.\"",
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"987 - Enoch translated\"",
+        "year_am": 987,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.5.21",
+    "Gen.5.23",
+    "Gen.5.24",
+    "Heb.11.5"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 5"
+    }
+  ],
+  "related": [
+    "jared",
+    "methuselah"
+  ],
+  "events": [
+    "enoch-translated"
+  ]
+}

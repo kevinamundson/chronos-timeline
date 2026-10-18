@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "egypt",
+  "type": "location",
+  "title": "Egypt",
+  "location_type": "region",
+  "summary": "Mizraim; where Abraham sojourned in the famine, Joseph ruled, and Israel was enslaved until the Exodus.",
+  "lat": 30.129444,
+  "lng": 31.3075,
+  "coordinate_basis": "OpenBible.info GeoJSON point mb69a90 (representative point for the region).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Egypt (ancient): very high confidence\"."
+  },
+  "openbible_id": "af301ca",
+  "openbible_url": "https://www.openbible.info/geo/ancient/af301ca/egypt",
+  "openbible_geojson": "https://a.openbible.info/geo/data/af301ca.geojson",
+  "wikidata": "Q11768",
+  "scripture_refs": [
+    "Gen.12.10",
+    "Gen.41.41",
+    "Exod.1.1",
+    "Exod.12.41"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/af301ca/egypt"
+    }
+  ],
+  "related": [
+    "abraham-enters-canaan",
+    "joseph-made-vizier",
+    "exodus",
+    "joseph",
+    "moses"
+  ],
+  "maps": [
+    "loc-1695-israelites-travels"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/event.schema.json",
+  "title": "Event",
+  "description": "A historical event. Primary sort: sorting_year, derived from the cfah chronology entry when available (see sorting_basis).",
+  "type": "object",
+  "allOf": [ { "$ref": "common.schema.json#/$defs/baseRecord" } ],
+  "required": ["description", "sorting_year", "sorting_basis", "chronologies", "people", "locations", "maps", "free_source_links"],
+  "unevaluatedProperties": false,
+  "properties": {
+    "type": { "const": "event" },
+    "sorting_year": { "type": "integer", "not": { "const": 0 }, "description": "CFAH-weighted sort key; negative = BC. Uses the cfah year when present; otherwise the fallback named in sorting_basis." },
+    "sorting_basis": { "$ref": "common.schema.json#/$defs/sortingBasis" },
+    "sort_order_within_year": { "type": "integer", "description": "Tie-breaker for events in the same year (lower first)." },
+    "chronologies": { "$ref": "common.schema.json#/$defs/chronologyEntries" },
+    "people": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true },
+    "locations": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true },
+    "maps": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }
+  }
+}

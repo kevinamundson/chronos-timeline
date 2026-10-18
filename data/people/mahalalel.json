@@ -1,0 +1,164 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "mahalalel",
+  "type": "person",
+  "title": "Mahalalel",
+  "alt_names": [
+    "Mahalaleel (KJV)"
+  ],
+  "summary": "Mahalalel, son of kenan, in the line of Seth (Genesis 5).",
+  "sorting_year": -3609,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals: 395 AM, 3609 BC (no higher-tier year available)."
+  },
+  "father": "kenan",
+  "children": [
+    "jared"
+  ],
+  "scripture_facts": {
+    "age_at_named_son": 65,
+    "named_son": "jared",
+    "lifespan_years": 895,
+    "refs": [
+      "Gen.5.15",
+      "Gen.5.17"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "395 AM",
+        "year_am": 395,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), \"Chronological Compendium\", p. 1",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "Jones prints only the AM figure here; no BC year is printed for this birth, so year_bc_ad is left null (not inferred).",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 395",
+        "year_am": 395,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 5 cumulative begetting ages (father kenan begat at 70, Gen 5:12)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "395 AM, 3609 BC",
+        "year_am": 395,
+        "year_bc_ad": -3609,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §16 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"396 - Mahalalel born\"",
+        "year_am": 396,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": "Printed as 396 on both biblicalhorizons.com and garynorth.com. Straight MT arithmetic gives 395 (Kenan 325 + 70) and Jordan's own next line has Jared born 460 (= 395 + 65), so 396 is probably a misprint; recorded as printed, not corrected."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1290",
+        "year_am": 1290,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 5: birth AM 395 + 895 years (Gen 5:17)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1290 AM, 2714 BC",
+        "year_am": 1290,
+        "year_bc_ad": -2714,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §27 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"1290 - Mahalalel died\"",
+        "year_am": 1290,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": "Also BC 6:10: \"he died in the year a.m.1290, which is 366 years before the Flood.\""
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.5.15",
+    "Gen.5.17"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-4",
+    "jordan-bc-6-10"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 5"
+    }
+  ],
+  "related": [
+    "kenan",
+    "jared"
+  ]
+}

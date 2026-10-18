@@ -1,0 +1,122 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "abraham-enters-canaan",
+  "type": "event",
+  "title": "Abraham Leaves Haran, Enters Canaan and Goes Down to Egypt",
+  "summary": "At 75, after Terah's death, Abram obeys God's call, enters Canaan (Shechem, Bethel), then goes down to Egypt in a famine (Gen 12:1–20). The start of the 430 years (Exod 12:40–41; Gal 3:17).",
+  "description": "CFAH-1 Table 1 lists \"1921 Abraham Enters Canaan and Egypt\". CFAH-6 (Argument 4 §3 \"Abraham and Khufu: 1921 BC\") follows Jones's 1921 BC for the visit to Egypt and synchronizes it with Khufu's sole reign.",
+  "sorting_year": -1921,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1921 BC (Abraham Enters Canaan and Egypt) (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1921 BC (Abraham Enters Canaan and Egypt)",
+      "year_am": null,
+      "year_bc_ad": -1921,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point. CFAH-6 Argument 4 §3 \"Abraham and Khufu: 1921 BC\" uses the same date (citing Jones 2019, 24).",
+      "cfah_basis": "table1_baseline",
+      "source_text_id": "cfah-1"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "2083 AM, 1921 BC (begins SOJOURN)",
+      "year_am": 2083,
+      "year_bc_ad": -1921,
+      "precision": "year",
+      "citation": "Jones, Chart No. 1 \"Creation to Jesus Christ\" (© 1993), line \"2083 AM 1921 BC Begins SOJOURN (GEN 12:4, EXO 12:40, GAL 3:17)\"; Chronology of the Old Testament (15th ed., 2002), Chart One §B, p. 25 (\"1491 + 430 = 1921 BC\")",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130609101.pdf",
+      "note": null,
+      "source_text_id": "jones-chart-1"
+    },
+    {
+      "source": "bible",
+      "date": "Abram aged 75 departs Haran; 430 years to the Exodus \"to the selfsame day\"",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Gen 12:4–10; Exod 12:40–41; Gal 3:17; Acts 7:4",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "2083 AM, 1921 BC; departure 15 Abib = Wednesday 4 May (Julian); Egypt 2084a AM, 1921 BC",
+      "year_am": 2083,
+      "year_bc_ad": -1921,
+      "precision": "day",
+      "citation": "Ussher, Annals of the World, Third Age §71–73 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "§71: start of the 430 years; §72: enters Canaan (Sichem, Bethel); §73 (2084a AM, 1921 BC): famine, Egypt.",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"Abram entered Canaan in a.m. 2083 (1847 B.C.)\"",
+      "year_am": 2083,
+      "year_bc_ad": -1847,
+      "precision": "year",
+      "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), section \"Egypt and the Patriarchs\" and second chart (\"Abram at 75 2083 1847\")",
+      "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+      "source_text_id": "jordan-bc-5-8",
+      "note": "Jordan suggests (as \"almost purely aesthetic\") two years in Canaan before the descent into Egypt and Abram leaving Egypt in AM 2086 (?), \"430 years after the Flood\". He starts the 430 years of Ex 12:40 at AM 2083 (BC 2:7, 4:8 §3). B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+    }
+  ],
+  "people": [
+    "abraham"
+  ],
+  "locations": [
+    "canaan",
+    "egypt"
+  ],
+  "maps": [
+    "loc-1740-sanson-terre-de-chanaan"
+  ],
+  "scripture_refs": [
+    "Gen.12.1-Gen.12.20",
+    "Exod.12.40-Exod.12.41",
+    "Gal.3.17"
+  ],
+  "sources": [
+    "cfah-1",
+    "cfah-6",
+    "jones-chart-1",
+    "jones-chronology-ot-2002",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-5-8",
+    "jordan-bc-2-7"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 12"
+    },
+    {
+      "source_id": "jones-chart-1",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130609101.pdf",
+      "locator": "Chart No. 1"
+    },
+    {
+      "source_id": "jordan-bc-5-8",
+      "url": "https://biblicalhorizons.com/1993/12/01/5_08/",
+      "locator": "Egypt and the Patriarchs"
+    }
+  ],
+  "related": [
+    "abraham-birth",
+    "exodus",
+    "abraham",
+    "canaan",
+    "egypt"
+  ]
+}

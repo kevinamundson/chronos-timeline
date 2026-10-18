@@ -1,0 +1,144 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "joseph",
+  "type": "person",
+  "title": "Joseph",
+  "summary": "Son of Jacob and Rachel; sold into Egypt, made ruler over Egypt at 30 (Gen 37–50).",
+  "description": "Father Jacob (not yet a record).",
+  "sorting_year": -1745,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1745 BC (Joseph born) (no higher-tier year available)."
+  },
+  "father": null,
+  "children": [],
+  "scripture_facts": {
+    "age_at_named_son": null,
+    "named_son": null,
+    "lifespan_years": 110,
+    "refs": [
+      "Gen.50.26"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference. CFAH-6 Argument 4 §7 dates his promotion (1716/1715 BC), not his birth"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "1745 BC (Joseph born)",
+        "year_am": null,
+        "year_bc_ad": -1745,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), Chart Three §C \"The Length of the Sojourn in Egypt\", p. 55 (\"1836 – 91 = 1745 BC (Joseph born)\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": null,
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "ussher",
+        "date": "2259 AM, 1745 BC",
+        "year_am": 2259,
+        "year_bc_ad": -1745,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §121 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"2259 - Judah ben Jacob born? Joseph ben Jacob born.\"",
+        "year_am": 2259,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §13 \"Jacob and Esau\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+        "source_text_id": "jordan-bc-6-6",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "1635 BC (Joseph's death, aged 110)",
+        "year_am": null,
+        "year_bc_ad": -1635,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 55 (\"1745 – 110 = 1635 BC (Joseph's death)\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": null,
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "ussher",
+        "date": "2369 AM, 1635 BC (aged 110)",
+        "year_am": 2369,
+        "year_bc_ad": -1635,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §148 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"2369 - Joseph dies at 110 (Gen. 50:26)\"",
+        "year_am": 2369,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 5),\" Biblical Chronology 6:7 (July 1994), §14 \"Joseph and Judah\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
+        "source_text_id": "jordan-bc-6-7",
+        "note": "Also BC 2:7: \"AM 2369 Death of Joseph, age 110\"."
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.30.22-Gen.30.24",
+    "Gen.41.46",
+    "Gen.50.26"
+  ],
+  "sources": [
+    "cfah-6",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jones-chronology-ot-2002",
+    "jordan-bc-6-6",
+    "jordan-bc-6-7"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.30.22-Gen.30.24 ; Gen.41.46"
+    }
+  ],
+  "related": [
+    "joseph-made-vizier",
+    "egypt"
+  ],
+  "events": [
+    "joseph-made-vizier"
+  ]
+}

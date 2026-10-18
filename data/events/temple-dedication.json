@@ -1,0 +1,165 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "temple-dedication",
+  "type": "event",
+  "title": "Solomon Dedicates the Temple",
+  "summary": "Solomon brings the ark into the Temple at Jerusalem, the glory of the LORD fills the house, and he prays the prayer of dedication (1 Kgs 8; 2 Chr 5–7).",
+  "description": "DATE CONFLICT: CFAH-1 Table 1 lists 1012 BC as \"Solomon Dedicates the Temple\", but Jones's Chart No. 1 has 1012 BC as the year Solomon BEGINS the Temple (2992 AM), and Ussher dates the foundation to 1012 BC (§465) and the dedication to 1004 BC (3001 AM, §468), after 7½ years of building (1 Kgs 6:37–38). Per the owner's sort rule this record sorts on the Table 1 value (1012 BC) pending clarification. Jordan (secondary, display only) separates the two: foundation AM 2993 (937 B.C. SBC), completion AM 3000, dedication AM 3014.",
+  "sorting_year": -1012,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1012 BC (Solomon Dedicates the Temple) (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1012 BC (Solomon Dedicates the Temple)",
+      "year_am": null,
+      "year_bc_ad": -1012,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point. CONFLICT: Jones Chart No. 1 (CFAH's stated baseline) gives 1012 BC for the BEGINNING of the Temple; Ussher has foundation 1012 BC and dedication 1004 BC. Table 1's \"Dedicates\" may be a labelling error.",
+      "cfah_basis": "table1_baseline",
+      "source_text_id": "cfah-1"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones Chart No. 1 dates only the BEGINNING of the Temple (\"2992 AM 1012 BC In his 4th year Solomon begins the TEMPLE on the 2nd Day 2nd Mo.\"); no dedication date found in the Jones sources read. Conflicts with CFAH-1 Table 1's \"Dedicates\"."
+    },
+    {
+      "source": "bible",
+      "date": "Building begun in the 480th year after the Exodus, 4th year of Solomon, month Zif; finished in the 11th year, month Bul (7 years); dedicated at the feast in the 7th month Ethanim",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "1 Kgs 6:1, 6:37–38; 1 Kgs 8:1–2, 8:62–66; 2 Chr 3:1–2; 2 Chr 5:3",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "3001 AM, 1004 BC (dedication; foundation 2992 AM, 1012 BC)",
+      "year_am": 3001,
+      "year_bc_ad": -1004,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Fifth Age §465–468 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "§465 (2992c AM, 1012 BC): foundation laid \"on the second day of the second month (called Zif, Monday May 21st)\"; §467 (3000a AM, 1005 BC): finished, dedication postponed because a Jubilee year; §468 (3001a AM, 1004 BC): dedication in the 7th month.",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "Dedicated in the 7th month, \"the first month of the next year, the year 3014\" (after Temple and palace were completed in 3013)",
+      "year_am": 3014,
+      "year_bc_ad": null,
+      "precision": "conjectural",
+      "citation": "Jordan, \"Jubilee, Part 2,\" Biblical Chronology 5:3 (March 1993), section \"The Building of the Temple\"",
+      "link": "https://biblicalhorizons.com/1993/03/01/5_03/",
+      "source_text_id": "jordan-bc-5-3",
+      "note": "Jordan: \"The Temple was dedicated ... in the seventh month, but of which year we are not told ... We are virtually forced to assume ... the year 3014.\" DIFFERS from CFAH-1 Table 1 (1012 BC \"dedicates\") and Ussher (dedication 3001 AM / 1004 BC)."
+    },
+    {
+      "source": "jordan",
+      "date": "Temple begun: Anno Mundi 2993; 937 B.C. (SBC)",
+      "year_am": 2993,
+      "year_bc_ad": -937,
+      "precision": "year",
+      "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+      "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+      "source_text_id": "jordan-bc-5-8",
+      "note": "FOUNDATION, not dedication: \"In this year, A.M. 2993, the foundations of the Temple were laid. The Temple was completed seven years later, A.M. 3000\" (BC 4:8 §4; BC 2:8 \"The Temple Connection\"). One year later than Jones/Ussher (2992 AM). In 1990 (BC 2:8) Jordan gave \"932 B.C.\" following Anstey and Mauro; the SBC chart (1993) gives 937. CCC on same chart: 966 B.C. B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+    },
+    {
+      "source": "josephus",
+      "date": "Building begun in Solomon's 4th year, 2nd month: \"five hundred and ninety-two years after the Exodus\", 1,020 years after Abraham came into Canaan, 1,440 after the deluge, 3,102 from Adam",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Josephus, Antiquities VIII.3.1 (Whiston)",
+      "link": "https://www.gutenberg.org/ebooks/2848",
+      "note": "Josephus dates the START of building, not the dedication, and his intervals differ from 1 Kgs 6:1 (480th year).",
+      "source_text_id": "josephus-antiquities-whiston"
+    },
+    {
+      "source": "annals-of-clonmacnoise",
+      "date": "\"from the Departing out of Egypt untill the building of the temple of Sollomon\" 480 years",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Annals of Clonmacnoise (trans. Mageoghagan 1627, ed. Murphy 1896), prefatory \"Memorandum\" table of the ages of the world (between the p. 8 and p. 11 running heads; OCR)",
+      "link": "https://archive.org/details/annalsofclonmacn00murp",
+      "note": "Interval to the BUILDING of the Temple, not the dedication. The Memorandum lists intervals 1656, 0292, 0500, 0480, 0410, 0432, 0134 against seven rows; the row/number pairing is read from OCR column order and should be checked against the page scan.",
+      "source_text_id": "annals-of-clonmacnoise-1896"
+    }
+  ],
+  "people": [
+    "solomon"
+  ],
+  "locations": [
+    "jerusalem",
+    "mount-moriah"
+  ],
+  "maps": [
+    "loc-1744-homann-palaestina"
+  ],
+  "scripture_refs": [
+    "1Kgs.6.1",
+    "1Kgs.6.37-1Kgs.6.38",
+    "1Kgs.8.1-1Kgs.8.66",
+    "2Chr.3.1-2Chr.3.2",
+    "2Chr.5.1-2Chr.7.10"
+  ],
+  "sources": [
+    "cfah-1",
+    "jones-chart-1",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "josephus-antiquities-whiston",
+    "annals-of-clonmacnoise-1896",
+    "jordan-bc-5-3",
+    "jordan-bc-5-8",
+    "jordan-bc-4-8",
+    "jordan-bc-2-8"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "1 Kings 6–8"
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book VIII, ch. 3, §1"
+    },
+    {
+      "source_id": "jones-chart-1",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130609101.pdf",
+      "locator": "Chart No. 1"
+    },
+    {
+      "source_id": "jordan-bc-5-3",
+      "url": "https://biblicalhorizons.com/1993/03/01/5_03/",
+      "locator": "The Building of the Temple"
+    }
+  ],
+  "related": [
+    "exodus",
+    "solomon",
+    "jerusalem",
+    "mount-moriah"
+  ],
+  "open_questions": [
+    "Does CFAH intend 1012 BC as the Temple foundation (as Jones and Ussher) or dedication (as printed in CFAH-1 Table 1)? Ask the authors / check the 2019 Jones edition."
+  ]
+}

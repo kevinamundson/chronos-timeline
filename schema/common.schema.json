@@ -1,0 +1,377 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/common.schema.json",
+  "title": "Shared definitions",
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Lowercase kebab-case identifier, unique within its collection."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "nullableUrl": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/url"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "osisRef": {
+      "type": "string",
+      "description": "OSIS-style reference, e.g. Gen.5.3, Gen.1.1-Gen.2.3, Heb.11.5.",
+      "pattern": "^[1-4]?[A-Z][A-Za-z]+\\.[0-9]+(\\.[0-9]+)?(-([1-4]?[A-Z][A-Za-z]+\\.)?[0-9]+(\\.[0-9]+)?)?$"
+    },
+    "historicalYear": {
+      "description": "Historical year number: negative = BC, positive = AD, no year zero (-4004 = 4004 BC).",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "const": 0
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "chronologyEntry": {
+      "type": "object",
+      "description": "One chronology's dating of a record. Multiple entries per record are expected.",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "date",
+        "year_am",
+        "year_bc_ad",
+        "precision",
+        "citation",
+        "link",
+        "note"
+      ],
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/slug",
+          "description": "Chronology id (data/chronologies.json), e.g. cfah, ussher, masoretic-genealogy."
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "The date exactly as the chronology expresses it (human readable). null = not yet established/verified."
+        },
+        "year_am": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Anno Mundi year (start of range if a range)."
+        },
+        "year_am_end": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "year_bc_ad": {
+          "$ref": "#/$defs/historicalYear",
+          "description": "Start (or only) year; negative = BC."
+        },
+        "year_bc_ad_end": {
+          "$ref": "#/$defs/historicalYear",
+          "description": "End of range, e.g. -2347 for 2348/2347 BC."
+        },
+        "precision": {
+          "enum": [
+            "day",
+            "month",
+            "year",
+            "year-range",
+            "approximate",
+            "terminus-ante-quem",
+            "conjectural",
+            "unknown"
+          ]
+        },
+        "citation": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Exact citation (work + section/table/page). Required non-null whenever date is non-null."
+        },
+        "link": {
+          "$ref": "#/$defs/nullableUrl"
+        },
+        "source_text_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/slug"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Optional id in data/sources.json."
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cfah_basis": {
+          "enum": [
+            "anchor_point",
+            "table1_baseline"
+          ],
+          "description": "Only on cfah entries with a date. anchor_point = a CFAH triangulated anchor point / paper-derived date (sort tier 1); table1_baseline = CFAH-1 Table 1, the Ussher-Jones biblical baseline (sort tier 2)."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "date": {
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "citation": {
+                "type": "string",
+                "minLength": 3
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "source": {
+                "const": "cfah"
+              },
+              "date": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "source",
+              "date"
+            ]
+          },
+          "then": {
+            "required": [
+              "cfah_basis"
+            ]
+          }
+        },
+        {
+          "if": {
+            "anyOf": [
+              {
+                "properties": {
+                  "source": {
+                    "not": {
+                      "const": "cfah"
+                    }
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "date": {
+                    "type": "null"
+                  }
+                }
+              }
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "cfah_basis"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "chronologyEntries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/chronologyEntry"
+      },
+      "contains": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "const": "cfah"
+          }
+        },
+        "required": [
+          "source"
+        ]
+      },
+      "description": "Must include a cfah entry (primary sort chronology), even if its date is null pending a CFAH reference."
+    },
+    "sortingBasis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tier",
+        "tier_rank",
+        "chronology",
+        "note"
+      ],
+      "description": "Which tier of the sorting fallback produced sorting_year: 1 cfah-anchor, 2 cfah-table1, 3 ussher-jones, 4 ussher; \"derived\" (copied from derived_from) or \"none\" (null) only when no tier gives a BC year.",
+      "properties": {
+        "tier": {
+          "enum": [
+            "cfah-anchor",
+            "cfah-table1",
+            "ussher-jones",
+            "ussher",
+            "derived",
+            "none"
+          ]
+        },
+        "tier_rank": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 4
+        },
+        "chronology": {
+          "$ref": "#/$defs/slug"
+        },
+        "derived_from": {
+          "$ref": "#/$defs/slug"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "tier": {
+                "const": "derived"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "derived_from"
+            ]
+          }
+        }
+      ]
+    },
+    "freeSourceLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "url"
+      ],
+      "properties": {
+        "source_id": {
+          "$ref": "#/$defs/slug"
+        },
+        "url": {
+          "$ref": "#/$defs/url"
+        },
+        "locator": {
+          "type": "string",
+          "description": "Section/chapter/paragraph within the source."
+        }
+      }
+    },
+    "baseRecord": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "summary",
+        "scripture_refs",
+        "sources",
+        "related"
+      ],
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "id": {
+          "$ref": "#/$defs/slug"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string"
+        },
+        "scripture_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/osisRef"
+          },
+          "uniqueItems": true
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/slug"
+          },
+          "uniqueItems": true,
+          "description": "Ids in data/sources.json."
+        },
+        "free_source_links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/freeSourceLink"
+          }
+        },
+        "related": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/slug"
+          },
+          "uniqueItems": true,
+          "description": "Ids of related records in any collection."
+        },
+        "open_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "type": {
+          "enum": [
+            "event",
+            "person",
+            "location",
+            "map"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "first-territorial-division",
+  "type": "event",
+  "title": "First Territorial Division of the Earth",
+  "summary": "CFAH's first stage of the division of the earth among Noah's descendants (Gen 10:5, 25, 32), dated 2254/2253 B.C.",
+  "description": "CFAH-4 treats the territorial division as a seven-year process beginning 2254 B.C. and finalized 2247 B.C. (AP-27, AP-28). Derived from Berossus's 34,080 days from the Flood to the first dynasty of Babylon plus Cush's 62-year reign, counted back from the Dispersion.",
+  "sorting_year": -2254,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2254/2253 B.C. (AP-27)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "2254/2253 B.C.",
+      "year_am": null,
+      "year_bc_ad": -2254,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 4: Dating Creation and the Deluge,\" ARJ 16 (2023): 475–489, section \"AP-27: First Territorial Division: 2254/2253 B.C.\"",
+      "link": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "note": null,
+      "year_bc_ad_end": -2253,
+      "cfah_basis": "anchor_point",
+      "source_text_id": "cfah-4"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+    },
+    {
+      "source": "bible",
+      "date": "\"in his [Peleg's] days was the earth divided\"; \"by these were the nations divided in the earth after the flood\"",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Gen 10:5, 10:25, 10:32",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": "Scripture gives no year for the division beyond Peleg's lifetime.",
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "Ussher has no separate first division; he links the division to Peleg's birth (1757 AM, 2247 BC) conditionally. See final-territorial-division.",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jordan does not distinguish a first territorial division; he treats the division of Gen 10:25 as the Babel scattering, which he places arbitrarily in AM 1871 (see final-territorial-division / dispersion). Not stated in the Jordan sources read (Biblical Horizons \"Biblical Chronology\" category, all 9 pages; garynorth.com archive of Biblical Chronology 1989-1996). Left empty, not inferred."
+    }
+  ],
+  "people": [
+    "noah",
+    "peleg"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.10.5",
+    "Gen.10.25",
+    "Gen.10.32"
+  ],
+  "sources": [
+    "cfah-4",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-4",
+      "url": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "locator": "AP-27"
+    }
+  ],
+  "related": [
+    "final-territorial-division",
+    "dispersion",
+    "peleg"
+  ]
+}

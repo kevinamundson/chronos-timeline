@@ -1,0 +1,166 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "abraham-birth",
+  "type": "event",
+  "title": "Birth of Abraham",
+  "summary": "Abram is born to Terah (Gen 11:26–27).",
+  "description": "The year depends on whether Abram was born when Terah was 70 (Gen 11:26 read as birth order) or 130 (Gen 11:32 + 12:4 + Acts 7:4, Terah dying at 205 when Abram was 75). Ussher, Jones and CFAH-1 Table 1 take 130.",
+  "sorting_year": -1996,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1996 BC (Birth of Abraham) (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1996 BC (Birth of Abraham)",
+      "year_am": null,
+      "year_bc_ad": -1996,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point. Discussed in Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, Argument 4 §2 \"Terah's Famine and Abraham's Birth\" (\"In Ussher's chronology Abraham was born in 1996 BC (Ussher 2003, §64)\").",
+      "cfah_basis": "table1_baseline",
+      "source_text_id": "cfah-1"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "BC 1996 (2008 AM)",
+      "year_am": 2008,
+      "year_bc_ad": -1996,
+      "precision": "year",
+      "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), p. 77, Chart Four §A note (c) (\"born BC 1996\"); \"Chronological Compendium\", p. 1 (\"Abraham born when Terah was 130 ... 2008\")",
+      "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+      "note": null,
+      "source_text_id": "jones-chronology-ot-2002"
+    },
+    {
+      "source": "bible",
+      "date": "Terah \"lived seventy years, and begat Abram, Nahor, and Haran\"; Abram 75 when he left Haran after Terah died at 205",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Gen 11:26, 11:32; Gen 12:4; Acts 7:4",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "2008 AM, 1996 BC",
+      "year_am": 2008,
+      "year_bc_ad": -1996,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Second Age §63 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "CFAH-6 cites this as \"Ussher 2003, §64\"; the free transcription numbers it §63, so § numbering differs at least here.",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "Birth of Abram: Anno Mundi 2008; 1922 B.C. (SBC)",
+      "year_am": 2008,
+      "year_bc_ad": -1922,
+      "precision": "year",
+      "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+      "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+      "source_text_id": "jordan-bc-5-8",
+      "note": "AM 2008 from Gen 11:26 with Acts 7:4 (Abram born when Terah was 130): BC 2:6 \"The Abraham Connection\" and BC 4:8 §2. B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years. Same chart gives CCC \"1952 or 2167\"."
+    },
+    {
+      "source": "masoretic-genealogy",
+      "date": "AM 1948 if Terah was 70 (Gen 11:26 literal); AM 2008 if 130 (Gen 11:32 + 12:4)",
+      "year_am": 1948,
+      "year_bc_ad": null,
+      "precision": "conjectural",
+      "citation": "Gen 11:10–26: Terah born AM 1878 (Nahor AM 1849 + 29) + 70",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": "Straight arithmetic gives 1948; Ussher/Jones/CFAH/Raleigh reject it in favour of Terah aged 130 (AM 2008).",
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "josephus",
+      "date": "\"born in the two hundred and ninety-second year after the deluge; for Terah begat Abram in his seventieth year\"",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Josephus, Antiquities I.6.5 (Whiston)",
+      "link": "https://www.gutenberg.org/ebooks/2848",
+      "note": null,
+      "source_text_id": "josephus-antiquities-whiston"
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "Year of the world 2009; 352 years after the general flood (\"in the 43d year of Ninus\")",
+      "year_am": 2009,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (11th ed. 1736, vol. 1), Book II, ch. I, sect. VIII",
+      "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1",
+      "note": "Raleigh concludes Abraham was born in Terah's 130th year (Book II, ch. I).",
+      "source_text_id": "raleigh-history-of-the-world-1736"
+    },
+    {
+      "source": "annals-of-clonmacnoise",
+      "date": "\"from the Deludge untill Abrahams tyme\" 292 years",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Annals of Clonmacnoise (trans. Mageoghagan 1627, ed. Murphy 1896), prefatory \"Memorandum\" table of the ages of the world (between the p. 8 and p. 11 running heads; OCR)",
+      "link": "https://archive.org/details/annalsofclonmacn00murp",
+      "note": "\"Abrahams tyme\" is not explicitly his birth. The Memorandum lists intervals 1656, 0292, 0500, 0480, 0410, 0432, 0134 against seven rows; the row/number pairing is read from OCR column order and should be checked against the page scan.",
+      "source_text_id": "annals-of-clonmacnoise-1896"
+    }
+  ],
+  "people": [
+    "abraham"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.11.26-Gen.11.32",
+    "Gen.12.4",
+    "Acts.7.4"
+  ],
+  "sources": [
+    "cfah-1",
+    "cfah-6",
+    "jones-chronology-ot-2002",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "josephus-antiquities-whiston",
+    "raleigh-history-of-the-world-1736",
+    "annals-of-clonmacnoise-1896",
+    "jordan-bc-5-8",
+    "jordan-bc-2-6",
+    "jordan-bc-4-8"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 11"
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book I, ch. 6, §5"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1736",
+      "url": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1",
+      "locator": "Book II, ch. I, sect. VIII"
+    },
+    {
+      "source_id": "jordan-bc-5-8",
+      "url": "https://biblicalhorizons.com/1993/12/01/5_08/",
+      "locator": "Chart at start of article"
+    }
+  ],
+  "related": [
+    "abraham-enters-canaan",
+    "abraham"
+  ]
+}

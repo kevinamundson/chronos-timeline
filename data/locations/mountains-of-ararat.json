@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "mountains-of-ararat",
+  "type": "location",
+  "title": "Mountains of Ararat",
+  "location_type": "region",
+  "summary": "\"The mountains of Ararat\" where the Ark rested (Gen 8:4). Ararat is the biblical name for the region known as Urartu; Scripture names the range, not a specific peak.",
+  "lat": 39.702761,
+  "lng": 44.300381,
+  "coordinate_basis": "OpenBible.info GeoJSON point m08a591 (modern identification \"Urartu\"); region-level, not a landing site.",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: identification of the region Ararat with Urartu at \"very high confidence\". The exact Ark landing site within the region is unknown."
+  },
+  "openbible_id": "ab89be9",
+  "openbible_url": "https://www.openbible.info/geo/ancient/ab89be9/ararat",
+  "openbible_geojson": "https://a.openbible.info/geo/data/ab89be9.geojson",
+  "wikidata": "Q185068",
+  "scripture_refs": [
+    "Gen.8.4",
+    "2Kgs.19.37",
+    "Isa.37.38",
+    "Jer.51.27"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ab89be9/ararat"
+    }
+  ],
+  "related": [
+    "ark-landing",
+    "the-flood",
+    "noah"
+  ],
+  "maps": [
+    "openbible-genesis-places",
+    "loc-1764-bellin-armenia"
+  ],
+  "open_questions": [
+    "The OpenBible Wikidata link Q185068 should be checked - confirm it refers to the Ararat/Urartu region and not Mount Ararat specifically."
+  ]
+}

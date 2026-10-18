@@ -1,0 +1,165 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "exodus",
+  "type": "event",
+  "title": "The Exodus from Egypt and the Red Sea Crossing",
+  "summary": "After the Passover, Israel leaves Rameses on the 15th day of the first month, 430 years \"to the selfsame day\" after the promise, and crosses the Red Sea (Exod 12–14).",
+  "description": "CFAH-6 frames its Egyptian reconstruction as running \"from the Dispersion in 2191 BC until the Exodus in 1491 BC\" and finds the deaths of Concharis and Merenre II at 1491 BC ±6 months; the year itself is CFAH-1 Table 1's Ussher-Jones baseline.",
+  "sorting_year": -1491,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1491 BC (Exodus) (no higher-tier year available)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1491 BC (Exodus)",
+      "year_am": null,
+      "year_bc_ad": -1491,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point. CFAH-6 Introduction: \"from the Dispersion in 2191 BC until the Exodus in 1491 BC\".",
+      "cfah_basis": "table1_baseline",
+      "source_text_id": "cfah-1"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "2513 AM, 1491 BC (the year of the EXODUS)",
+      "year_am": 2513,
+      "year_bc_ad": -1491,
+      "precision": "year",
+      "citation": "Jones, Chart No. 1 \"Creation to Jesus Christ\" (© 1993), line \"2513 AM 1491 BC the year of the EXODUS - Moses\"; Chronology of the Old Testament (15th ed., 2002), Chart One §B, p. 24 (\"1012 + 479 = 1491 BC\")",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130609101.pdf",
+      "note": null,
+      "source_text_id": "jones-chart-1"
+    },
+    {
+      "source": "bible",
+      "date": "15th day of the 1st month; at the end of the 430 years; Solomon's Temple begun in the 480th year after",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Exod 12:40–41, 12:51; Num 33:3; 1 Kgs 6:1",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "2513 AM, 1491 BC; 15th day of 1st month = Tuesday 5 May (Julian)",
+      "year_am": 2513,
+      "year_bc_ad": -1491,
+      "precision": "day",
+      "citation": "Ussher, Annals of the World, Fourth Age §190 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "Red Sea crossing at Pihahiroth narrated in §190 (camp 4).",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "Exodus: Anno Mundi 2513; 1417 B.C. (SBC)",
+      "year_am": 2513,
+      "year_bc_ad": -1417,
+      "precision": "year",
+      "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+      "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+      "source_text_id": "jordan-bc-5-8",
+      "note": "Day: 15th day of the 1st month of 2513 (\"Day 15: The exodus from Egypt\"), Pentateuch Part 5 (BC 6:7) §16. Same chart: CCC 1447 B.C. B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+    },
+    {
+      "source": "josephus",
+      "date": "Month Xanthicus, 15th day; \"four hundred and thirty years after our forefather Abraham came into Canaan, but two hundred and fifteen years only after Jacob removed into Egypt\"; Moses in his 80th year",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Josephus, Antiquities II.15.2 (Whiston)",
+      "link": "https://www.gutenberg.org/ebooks/2848",
+      "note": null,
+      "source_text_id": "josephus-antiquities-whiston"
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "\"about the beginning of the year of the world 2514\"",
+      "year_am": 2514,
+      "year_bc_ad": null,
+      "precision": "approximate",
+      "citation": "Raleigh, The History of the World (11th ed. 1736, vol. 1), Book II, ch. III (p. 149)",
+      "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1",
+      "note": "Raleigh: AM 2514 vs Ussher/Jones AM 2513.",
+      "source_text_id": "raleigh-history-of-the-world-1736"
+    },
+    {
+      "source": "annals-of-clonmacnoise",
+      "date": "\"from Abr. untill the Departing out of egypt\" 500 years",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Annals of Clonmacnoise (trans. Mageoghagan 1627, ed. Murphy 1896), prefatory \"Memorandum\" table of the ages of the world (between the p. 8 and p. 11 running heads; OCR)",
+      "link": "https://archive.org/details/annalsofclonmacn00murp",
+      "note": "The Memorandum lists intervals 1656, 0292, 0500, 0480, 0410, 0432, 0134 against seven rows; the row/number pairing is read from OCR column order and should be checked against the page scan.",
+      "source_text_id": "annals-of-clonmacnoise-1896"
+    }
+  ],
+  "people": [
+    "moses"
+  ],
+  "locations": [
+    "egypt",
+    "red-sea-crossing"
+  ],
+  "maps": [
+    "loc-1695-israelites-travels"
+  ],
+  "scripture_refs": [
+    "Exod.12.29-Exod.12.51",
+    "Exod.14.1-Exod.14.31",
+    "Num.33.3",
+    "1Kgs.6.1"
+  ],
+  "sources": [
+    "cfah-1",
+    "cfah-6",
+    "jones-chart-1",
+    "jones-chronology-ot-2002",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "josephus-antiquities-whiston",
+    "raleigh-history-of-the-world-1736",
+    "annals-of-clonmacnoise-1896",
+    "jordan-bc-5-8",
+    "jordan-bc-6-7",
+    "jordan-bc-4-8"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Exodus 12–14"
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book II, ch. 15, §2"
+    },
+    {
+      "source_id": "jones-chart-1",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130609101.pdf",
+      "locator": "Chart No. 1"
+    },
+    {
+      "source_id": "jordan-bc-6-7",
+      "url": "https://biblicalhorizons.com/1994/07/01/6_07/",
+      "locator": "§16 Chronology of the Plagues & Exodus"
+    }
+  ],
+  "related": [
+    "abraham-enters-canaan",
+    "joseph-made-vizier",
+    "temple-dedication",
+    "moses",
+    "red-sea-crossing"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "babel",
+  "type": "location",
+  "title": "Babel (Babylon)",
+  "location_type": "settlement",
+  "summary": "The city whose building, with its tower, God halted by confusing the languages (Gen 11:1–9); the beginning of Nimrod's kingdom (Gen 10:10).",
+  "lat": 32.543333,
+  "lng": 44.422222,
+  "coordinate_basis": "OpenBible.info GeoJSON point md561de (Babylon).",
+  "certainty": {
+    "level": "high",
+    "percent": 85,
+    "basis": "OpenBible.info: \"another name for Babylon 1 (ancient): 85% confidence\"."
+  },
+  "openbible_id": "ab8fdbc",
+  "openbible_url": "https://www.openbible.info/geo/ancient/ab8fdbc/babel",
+  "openbible_geojson": "https://a.openbible.info/geo/data/ab8fdbc.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.10",
+    "Gen.11.9"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ab8fdbc/babel"
+    }
+  ],
+  "related": [
+    "founding-of-babel",
+    "dispersion",
+    "land-of-shinar",
+    "nimrod"
+  ],
+  "maps": [
+    "loc-1651-assyria-vetus"
+  ]
+}

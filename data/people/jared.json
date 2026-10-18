@@ -1,0 +1,160 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "jared",
+  "type": "person",
+  "title": "Jared",
+  "summary": "Jared, son of mahalalel, in the line of Seth (Genesis 5).",
+  "sorting_year": -3544,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals: 460 AM, 3544 BC (no higher-tier year available)."
+  },
+  "father": "mahalalel",
+  "children": [
+    "enoch"
+  ],
+  "scripture_facts": {
+    "age_at_named_son": 162,
+    "named_son": "enoch",
+    "lifespan_years": 962,
+    "refs": [
+      "Gen.5.18",
+      "Gen.5.20"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "460 AM",
+        "year_am": 460,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), \"Chronological Compendium\", p. 1",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "Compendium row prints \"Jared born when Mahalaleel was 165\"; 165 is a misprint for 65 (Gen 5:15) - the AM 460 total is consistent with 65. Jones prints only the AM figure here; no BC year is printed for this birth, so year_bc_ad is left null (not inferred).",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 460",
+        "year_am": 460,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 5 cumulative begetting ages (father mahalalel begat at 65, Gen 5:15)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "460 AM, 3544 BC",
+        "year_am": 460,
+        "year_bc_ad": -3544,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §17 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"460 - Jared born\"",
+        "year_am": 460,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1422",
+        "year_am": 1422,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 5: birth AM 460 + 962 years (Gen 5:20)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1422 AM, 2582 BC",
+        "year_am": 1422,
+        "year_bc_ad": -2582,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §28 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"1422 - Jared died\"",
+        "year_am": 1422,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.5.18",
+    "Gen.5.20"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 5"
+    }
+  ],
+  "related": [
+    "mahalalel",
+    "enoch"
+  ]
+}

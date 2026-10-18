@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "jerusalem",
+  "type": "location",
+  "title": "Jerusalem",
+  "location_type": "settlement",
+  "summary": "The city where Solomon built the Temple (1 Kgs 6; 8).",
+  "lat": 31.776667,
+  "lng": 35.234167,
+  "coordinate_basis": "OpenBible.info GeoJSON point m66c5b8.",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Jerusalem (modern): very high confidence\"."
+  },
+  "openbible_id": "a15257a",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a15257a.geojson",
+  "wikidata": "Q1218",
+  "scripture_refs": [
+    "1Kgs.8.1",
+    "2Chr.3.1",
+    "Josh.10.1"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+    }
+  ],
+  "related": [
+    "temple-dedication",
+    "mount-moriah",
+    "solomon"
+  ],
+  "maps": [
+    "loc-1744-homann-palaestina"
+  ]
+}

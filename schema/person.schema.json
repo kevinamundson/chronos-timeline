@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/person.schema.json",
+  "title": "Person",
+  "type": "object",
+  "allOf": [ { "$ref": "common.schema.json#/$defs/baseRecord" } ],
+  "required": ["sorting_year", "sorting_basis", "dates", "father", "children"],
+  "unevaluatedProperties": false,
+  "properties": {
+    "type": { "const": "person" },
+    "alt_names": { "type": "array", "items": { "type": "string" } },
+    "sorting_year": { "type": ["integer", "null"], "description": "CFAH-weighted birth year (negative = BC); null if no chronology dates the birth." },
+    "sorting_basis": { "$ref": "common.schema.json#/$defs/sortingBasis" },
+    "father": { "anyOf": [ { "$ref": "common.schema.json#/$defs/slug" }, { "type": "null" } ] },
+    "children": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true, "description": "Named children recorded in the data set (not exhaustive; Gen 5 'sons and daughters')." },
+    "scripture_facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Figures stated directly in Scripture (KJV/Masoretic).",
+      "properties": {
+        "age_at_named_son": { "type": ["integer", "null"] },
+        "named_son": { "anyOf": [ { "$ref": "common.schema.json#/$defs/slug" }, { "type": "null" } ] },
+        "lifespan_years": { "type": ["integer", "null"] },
+        "refs": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/osisRef" } }
+      }
+    },
+    "dates": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "birth": { "$ref": "common.schema.json#/$defs/chronologyEntries" },
+        "death": { "$ref": "common.schema.json#/$defs/chronologyEntries" },
+        "translated": { "$ref": "common.schema.json#/$defs/chronologyEntries" }
+      }
+    },
+    "events": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }
+  }
+}

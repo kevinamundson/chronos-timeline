@@ -1,0 +1,112 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "founding-of-babel",
+  "type": "event",
+  "title": "Founding of Babel and the Era of the Tower",
+  "summary": "Men settle in the plain of Shinar and build a city and a tower (Gen 11:1–4); \"the beginning of his [Nimrod's] kingdom was Babel\" (Gen 10:10). CFAH dates the founding to 2234/2233 BC and the era of the tower to 2233–2191 BC.",
+  "description": "CFAH-2 dates the founding of Babel / root of Chaldean astronomy to 2234/2233 BC from Callisthenes (1,903 years to Alexander), Berossus/Epigenes (720,000 days), the Embolismal period and Philo of Byblos, confirmed by the vernal-equinox new moon of 9 April 2233 BC; CFAH-5 refers to this as AP-1. Four sources give ~42 years for the tower's construction (Duration 19).",
+  "sorting_year": -2234,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2234/2233 BC (AP-1)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "2234/2233 BC (era of the Tower 2233–2191 BC)",
+      "year_am": null,
+      "year_bc_ad": -2234,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 2: Founding of the Nations,\" ARJ 15 (2022): 405–426, sections \"The Root of Chaldean Astronomy: Vernal Equinox, 2233 BC\", \"Era of the Tower of Babel: 2233–2191 BC\" and Table 2; designated AP-1 in Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670 (\"Griffith and White 2022b, AP-1\")",
+      "link": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "note": "CFAH-2 \"Summary of Durations to Babel\" prints \"2234/2333 BC\", evidently a typo for 2234/2233.",
+      "year_bc_ad_end": -2233,
+      "cfah_basis": "anchor_point",
+      "source_text_id": "cfah-2"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+    },
+    {
+      "source": "bible",
+      "date": "After the Flood, in the days of Nimrod; no year stated",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Gen 10:8–10; Gen 11:1–9",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "1771 AM, 2234 BC: start of the 1,903 years of Babylonian astronomical observations to Alexander; Nimrod built Babylon",
+      "year_am": 1771,
+      "year_bc_ad": -2234,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Second Age §49 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "Ussher narrates the tower-building and confusion of tongues under §47 (1757 AM, 2247 BC heading) without a separate year; §49 gives the astronomical epoch that CFAH also uses.",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jordan gives no year for the founding of Babel: Nimrod, \"born around 1759, as I have suggested\", had \"plenty of time to grow up ... and found a city, Babel\"; \"the fall of Babel came in 1871\" (BC 6:4 §7). Not stated in the Jordan sources read (Biblical Horizons \"Biblical Chronology\" category, all 9 pages; garynorth.com archive of Biblical Chronology 1989-1996). Left empty, not inferred."
+    }
+  ],
+  "people": [
+    "nimrod"
+  ],
+  "locations": [
+    "babel",
+    "land-of-shinar"
+  ],
+  "maps": [
+    "loc-1651-assyria-vetus"
+  ],
+  "scripture_refs": [
+    "Gen.10.8-Gen.10.10",
+    "Gen.11.1-Gen.11.4"
+  ],
+  "sources": [
+    "cfah-2",
+    "cfah-5",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "josephus-antiquities-whiston",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-2",
+      "url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "locator": "Era of the Tower of Babel"
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book I, ch. 4 (Nimrod and the tower; no date)"
+    }
+  ],
+  "related": [
+    "dispersion",
+    "final-territorial-division",
+    "nimrod",
+    "babel"
+  ]
+}

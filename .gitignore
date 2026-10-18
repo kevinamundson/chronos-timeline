@@ -1,0 +1,14 @@
+# dependencies & build output
+node_modules/
+site/dist/
+# scratch / local only (never publish copyrighted source texts or OCR)
+cfah-src/
+cf/
+scratch/
+tmp/
+*.zip
+*.log
+.DS_Store
+test-results/
+playwright-report/
+.env*

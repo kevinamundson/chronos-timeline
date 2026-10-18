@@ -1,0 +1,195 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "the-flood",
+  "type": "event",
+  "title": "The Flood",
+  "summary": "God judges the world by a global Flood; Noah, his wife, his three sons and their wives, and the animals are preserved in the Ark.",
+  "description": "Genesis 6–8. The Flood begins in Noah's 600th year, 2nd month, 17th day (Gen 7:11); the earth is dry in his 601st year, 2nd month, 27th day (Gen 8:14).",
+  "sorting_year": -2348,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2348–2347 B.C."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "2348–2347 B.C.",
+      "year_am": null,
+      "year_bc_ad": -2348,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 4: Dating Creation and the Deluge,\" ARJ 16 (2023): 475–489, section \"AP-29: The Flood: 2348–2347 B.C.\"",
+      "link": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "note": "Five triangulations; also CFAH-1 Introduction (\"the Flood in 2348/2347 BC\") and Table 1 (\"2348 Flood of Noah\").",
+      "year_bc_ad_end": -2347,
+      "source_text_id": "cfah-4",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "cfah",
+      "date": "2348 BC (Flood of Noah)",
+      "year_am": null,
+      "year_bc_ad": -2348,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "cfah_basis": "table1_baseline",
+      "source_text_id": "cfah-1"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "1656 AM, 2348 BC (year of the Flood)",
+      "year_am": 1656,
+      "year_bc_ad": -2348,
+      "precision": "year",
+      "citation": "Floyd Nolen Jones, Chart No. 1 \"Creation to Jesus Christ\" (© 1993), line \"1656 AM 2348 BC the year of the FLOOD\"; also Jones, Chronology of the Old Testament (15th ed., 2002), Chart One §B, p. 26 (\"1921 + 427 = 2348 BC (year of the Flood)\")",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130609101.pdf",
+      "note": "Jones: Flood AM 1656 = 2348 BC (Ussher heads AM 1656 as 2349 BC).",
+      "source_text_id": "jones-chart-1"
+    },
+    {
+      "source": "bible",
+      "date": "Noah's 600th year, 2nd month, 17th day (begins); 601st year, 2nd month, 27th day (earth dry)",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Gen 7:6, 7:11; Gen 8:13–14",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "1656 AM, 2365 JP, 2349 BC; enters Ark Sunday 7 December (Julian)",
+      "year_am": 1656,
+      "year_bc_ad": -2349,
+      "precision": "day",
+      "citation": "Ussher, Annals of the World, First Age, §34–35",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "Ussher's heading for AM 1656 reads 2349 BC; the exit from the Ark (AM 1657) is headed 2348 BC (Second Age §40–41). \"Flood 2348 BC\" in popular summaries therefore conflates the two AM years.",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "AM 1656: announcement 2/10/1656, judgment commenced 2/17/1656 (Gen 7:10-11); \"1657 - End of Flood\"",
+      "year_am": 1656,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 year list (\"1656 - The Flood; Methuselah died\") and §5 \"The Chronology of the Flood Year\"",
+      "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "source_text_id": "jordan-bc-6-4",
+      "note": "Jordan writes dates as month/day/year AM. A Summary of OT Chronology (BC 4:8) §1: \"This puts the Flood in the year Anno Mundi (year of the world) 1656\""
+    },
+    {
+      "source": "jordan",
+      "date": "Flood: Anno Mundi 1656; 2274 B.C. (SBC)",
+      "year_am": 1656,
+      "year_bc_ad": -2274,
+      "precision": "year",
+      "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
+      "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
+      "source_text_id": "jordan-bc-5-8",
+      "note": "B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+    },
+    {
+      "source": "masoretic-genealogy",
+      "date": "AM 1656",
+      "year_am": 1656,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Noah born AM 1056 (Gen 5:3–29 cumulative) + Gen 7:6, 7:11",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": "Methuselah (born AM 687, lived 969) dies AM 1656, the Flood year.",
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "josephus",
+      "date": "2656 years from Adam [Whiston bracket: 1656]",
+      "year_am": 2656,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Josephus, Antiquities I.3.3 (Whiston)",
+      "link": "https://www.gutenberg.org/ebooks/2848",
+      "note": "Josephus's received text gives 2656; Whiston inserts [one thousand six hundred and fifty-six] in brackets.",
+      "source_text_id": "josephus-antiquities-whiston"
+    },
+    {
+      "source": "annals-of-clonmacnoise",
+      "date": "\"in the 600 yeare of Noeh's age came the flood\" - first age, Adam to the Flood, 1656 years (\"according to the 70 Interpreters\" 2242)",
+      "year_am": 1656,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Annals of Clonmacnoise (trans. Mageoghagan 1627, ed. Murphy 1896), p. 12",
+      "link": "https://archive.org/details/annalsofclonmacn00murp",
+      "note": null,
+      "source_text_id": "annals-of-clonmacnoise-1896"
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "\"The general flood was in the year of the world 1656\"",
+      "year_am": 1656,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (11th ed. 1736, vol. 1), Book I, ch. VII, sect. III",
+      "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1",
+      "note": null,
+      "source_text_id": "raleigh-history-of-the-world-1736"
+    }
+  ],
+  "people": [
+    "noah",
+    "shem",
+    "ham",
+    "japheth",
+    "methuselah"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.6.1-Gen.8.22",
+    "Matt.24.37-Matt.24.39",
+    "1Pet.3.20",
+    "2Pet.2.5"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-4",
+    "cfah-1",
+    "ussher-annals-1658",
+    "josephus-antiquities-whiston",
+    "annals-of-clonmacnoise-1896",
+    "raleigh-history-of-the-world-1736",
+    "jordan-bc-6-4",
+    "jordan-bc-5-8",
+    "jordan-bc-4-8"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 6–8"
+    },
+    {
+      "source_id": "cfah-4",
+      "url": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "locator": "AP-29"
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book I, ch. 3, §3"
+    },
+    {
+      "source_id": "jordan-bc-6-4",
+      "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "locator": "§5 The Chronology of the Flood Year"
+    }
+  ],
+  "related": [
+    "ark-landing",
+    "noah",
+    "mountains-of-ararat"
+  ]
+}

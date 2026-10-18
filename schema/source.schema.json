@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/source.schema.json",
+  "title": "Source collection",
+  "description": "data/sources.json: free source texts with verified URLs.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sources"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "authors", "year", "url", "access", "license_note", "verified_on"],
+      "properties": {
+        "id": { "$ref": "common.schema.json#/$defs/slug" },
+        "title": { "type": "string" },
+        "authors": { "type": "array", "items": { "type": "string" } },
+        "translator_or_editor": { "type": ["string", "null"] },
+        "year": { "type": ["string", "null"], "description": "Publication year/edition as a string (e.g. '1658', '2022')." },
+        "publication": { "type": ["string", "null"], "description": "Journal/volume/pages for articles." },
+        "url": { "$ref": "common.schema.json#/$defs/url" },
+        "alt_urls": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/url" } },
+        "access": { "enum": ["public-domain", "open-license", "free-to-read"] },
+        "license_note": { "type": "string" },
+        "verified_on": { "type": "string", "format": "date" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

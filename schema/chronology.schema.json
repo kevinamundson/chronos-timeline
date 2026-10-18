@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/chronology.schema.json",
+  "title": "Chronology collection",
+  "description": "data/chronologies.json: definitions of dating systems. Exactly one is primary (cfah).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "primary_sort_chronology",
+    "chronologies",
+    "sorting_rule"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "primary_sort_chronology": {
+      "const": "cfah"
+    },
+    "chronologies": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/chronology"
+      },
+      "contains": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "const": "cfah"
+          },
+          "primary": {
+            "const": true
+          }
+        },
+        "required": [
+          "id",
+          "primary"
+        ]
+      }
+    },
+    "sorting_rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "description",
+        "tiers"
+      ],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "tiers": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "rank",
+              "tier",
+              "chronology",
+              "select"
+            ],
+            "properties": {
+              "rank": {
+                "type": "integer"
+              },
+              "tier": {
+                "type": "string"
+              },
+              "chronology": {
+                "$ref": "common.schema.json#/$defs/slug"
+              },
+              "cfah_basis": {
+                "enum": [
+                  "anchor_point",
+                  "table1_baseline"
+                ]
+              },
+              "select": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "fallbacks": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event",
+        "date",
+        "year_bc_ad",
+        "citation",
+        "link"
+      ],
+      "properties": {
+        "event": {
+          "type": "string"
+        },
+        "event_id": {
+          "$ref": "common.schema.json#/$defs/slug"
+        },
+        "date": {
+          "type": "string"
+        },
+        "year_am": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "year_bc_ad": {
+          "$ref": "common.schema.json#/$defs/historicalYear"
+        },
+        "year_bc_ad_end": {
+          "$ref": "common.schema.json#/$defs/historicalYear"
+        },
+        "citation": {
+          "type": "string",
+          "minLength": 3
+        },
+        "link": {
+          "$ref": "common.schema.json#/$defs/url"
+        },
+        "note": {
+          "type": "string"
+        },
+        "cfah_basis": {
+          "enum": [
+            "anchor_point",
+            "table1_baseline"
+          ]
+        }
+      }
+    },
+    "chronology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "primary",
+        "sort_priority",
+        "status",
+        "description",
+        "year_conventions",
+        "references",
+        "anchors"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/slug"
+        },
+        "name": {
+          "type": "string"
+        },
+        "abbreviation": {
+          "type": "string"
+        },
+        "primary": {
+          "type": "boolean"
+        },
+        "sort_priority": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "1 = primary; higher numbers are fallbacks for sorting_year."
+        },
+        "status": {
+          "enum": [
+            "active",
+            "partial",
+            "pending"
+          ]
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "year_conventions": {
+          "type": "string"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/slug"
+          },
+          "description": "Ids in data/sources.json."
+        },
+        "anchors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/anchor"
+          },
+          "description": "Verified anchor dates only."
+        },
+        "open_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

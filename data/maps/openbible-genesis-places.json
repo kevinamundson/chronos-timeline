@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schema/map.schema.json",
+  "id": "openbible-genesis-places",
+  "type": "map",
+  "title": "OpenBible.info: places in Genesis (KML)",
+  "summary": "OpenBible.info geocoding of every place mentioned in Genesis, viewable in the preview map or Google Earth / GIS via KML.",
+  "url": "https://www.openbible.info/geo/preview/gen",
+  "image_url": null,
+  "thumbnail": null,
+  "iiif_manifest": null,
+  "api_link": "https://a.openbible.info/geo/kmls/gen.kml",
+  "date_of_map": null,
+  "license_note": "CC BY 4.0 - credit OpenBible.info.",
+  "locations": [
+    "eden",
+    "mountains-of-ararat"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "openbible-geo"
+  ],
+  "related": [
+    "eden",
+    "mountains-of-ararat"
+  ],
+  "open_questions": [
+    "No historic (pre-1900) map image with IIIF manifest selected yet; candidates could come from Internet Archive / David Rumsey (IIIF) once chosen."
+  ]
+}

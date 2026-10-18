@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "canaan",
+  "type": "location",
+  "title": "Canaan",
+  "location_type": "region",
+  "summary": "The land promised to Abraham and his seed (Gen 12:5–7; 17:8).",
+  "lat": 32.766667,
+  "lng": 35.333333,
+  "coordinate_basis": "OpenBible.info GeoJSON point m39393a (representative point for the region).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Canaan (modern): very high confidence\"."
+  },
+  "openbible_id": "a581f0c",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a581f0c/canaan",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a581f0c.geojson",
+  "wikidata": "Q163329",
+  "scripture_refs": [
+    "Gen.12.5",
+    "Gen.17.8",
+    "Exod.6.4",
+    "Num.34.2"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a581f0c/canaan"
+    }
+  ],
+  "related": [
+    "abraham-enters-canaan",
+    "abraham"
+  ],
+  "maps": [
+    "loc-1740-sanson-terre-de-chanaan",
+    "loc-1695-israelites-travels",
+    "loc-1744-homann-palaestina"
+  ]
+}

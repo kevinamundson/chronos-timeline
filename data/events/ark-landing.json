@@ -1,0 +1,126 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "ark-landing",
+  "type": "event",
+  "title": "The Ark Rests on the Mountains of Ararat",
+  "summary": "\"And the ark rested in the seventh month, on the seventeenth day of the month, upon the mountains of Ararat.\"",
+  "description": "Genesis 8:4. The mountain tops become visible on the 1st day of the 10th month (Gen 8:5).",
+  "sorting_year": -2348,
+  "sorting_basis": {
+    "tier": "derived",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "derived_from": "the-flood",
+    "note": "No tier 1-4 gives a BC year for the landing itself (Ussher prints only AM 1656 + 6 May). sorting_year copied from the-flood (CFAH AP-29) and ordered after it via sort_order_within_year."
+  },
+  "sort_order_within_year": 2,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference. CFAH-4 AP-29 dates the Flood year (2348–2347 B.C.) but not the landing day"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+    },
+    {
+      "source": "bible",
+      "date": "Noah's 600th year, 7th month, 17th day",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Gen 7:11; Gen 8:4",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "ussher",
+      "date": "Within 1656 AM; Wednesday 6 May (Julian)",
+      "year_am": 1656,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Ussher, Annals of the World, First Age, §36 (1658 scan: \"May 6, upon a wedensday\")",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "year_bc_ad left null: Ussher's AM 1656 heading reads 2349 BC, but because his year begins in autumn, 6 May would fall in Julian 2348 BC. That conversion is derived, not printed by Ussher. Many secondary summaries give 5 May; the 1658 text reads 6 May.",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"the Ark rested (invisibly) on Mount Ararat, on 7/17/1656, which is a Tuesday\"",
+      "year_am": 1656,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §5 \"The Chronology of the Flood Year\"",
+      "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "source_text_id": "jordan-bc-6-4",
+      "note": "Weekday is Jordan's provisional reconstruction (sabbath pattern). Tops of mountains visible 10/1/1656; surface dry and Ark uncovered 1/1/1657 (Gen 8:13)."
+    },
+    {
+      "source": "masoretic-genealogy",
+      "date": "AM 1656",
+      "year_am": 1656,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Gen 7:11; Gen 8:4 (same 600th year of Noah)",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [
+    "noah",
+    "shem",
+    "ham",
+    "japheth"
+  ],
+  "locations": [
+    "mountains-of-ararat"
+  ],
+  "maps": [
+    "openbible-genesis-places",
+    "loc-1764-bellin-armenia"
+  ],
+  "scripture_refs": [
+    "Gen.8.1-Gen.8.5"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "openbible-geo",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 8"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ab89be9/ararat"
+    },
+    {
+      "source_id": "jordan-bc-6-4",
+      "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "locator": "§5 The Chronology of the Flood Year"
+    }
+  ],
+  "related": [
+    "the-flood",
+    "mountains-of-ararat",
+    "noah"
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "noah",
+  "type": "person",
+  "title": "Noah",
+  "summary": "Tenth from Adam; built the Ark and with his family survived the Flood.",
+  "sorting_year": -2948,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals: 1056 AM, 2948 BC (no higher-tier year available)."
+  },
+  "father": "lamech",
+  "children": [
+    "shem",
+    "ham",
+    "japheth"
+  ],
+  "scripture_facts": {
+    "age_at_named_son": 500,
+    "named_son": null,
+    "lifespan_years": 950,
+    "refs": [
+      "Gen.5.32",
+      "Gen.7.6",
+      "Gen.9.29"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "1056 AM",
+        "year_am": 1056,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), \"Chronological Compendium\", p. 1",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "Jones prints only the AM figure here; no BC year is printed for this birth, so year_bc_ad is left null (not inferred).",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1056",
+        "year_am": 1056,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 5 cumulative begetting ages (father lamech begat at 182, Gen 5:28)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1056 AM, 2948 BC",
+        "year_am": 1056,
+        "year_bc_ad": -2948,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, First Age, §24 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"1056 - Noah born\"",
+        "year_am": 1056,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §4 \"The Chronology of Genesis 4 & 5\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": "1998 BC (Death of Noah)",
+        "year_am": null,
+        "year_bc_ad": -1998,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+        "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+        "note": "Table 1 is the Ussher-Jones biblical chronology adopted as CFAH's biblical baseline, not an independently triangulated anchor point.",
+        "source_text_id": "cfah-1",
+        "cfah_basis": "table1_baseline"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 2006",
+        "year_am": 2006,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Noah born AM 1056 + 950 years (Gen 9:29)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "2006 AM, 1998 BC",
+        "year_am": 2006,
+        "year_bc_ad": -1998,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Second Age, §62 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"2006 - Noah died\"",
+        "year_am": 2006,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §8 \"The Chronology of Genesis 11\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "source_text_id": "jordan-bc-6-4",
+        "note": null
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.5.32",
+    "Gen.7.6",
+    "Gen.9.29"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "cfah-1",
+    "jordan-bc-6-4"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Genesis 5"
+    }
+  ],
+  "related": [
+    "lamech",
+    "shem",
+    "ham",
+    "japheth"
+  ],
+  "events": [
+    "the-flood",
+    "ark-landing"
+  ]
+}

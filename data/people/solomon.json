@@ -1,0 +1,148 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "solomon",
+  "type": "person",
+  "title": "Solomon",
+  "alt_names": [
+    "Jedidiah"
+  ],
+  "summary": "Son of David and Bathsheba; king of Israel 40 years; built and dedicated the Temple (1 Kgs 1–11).",
+  "description": "Father David (not yet a record).",
+  "sorting_year": -1034,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals: 2971 AM, 1034 BC (no higher-tier year available)."
+  },
+  "father": null,
+  "children": [],
+  "scripture_facts": {
+    "age_at_named_son": null,
+    "named_son": null,
+    "lifespan_years": null,
+    "refs": [
+      "1Kgs.11.42"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      },
+      {
+        "source": "ussher",
+        "date": "2971 AM, 1034 BC",
+        "year_am": 2971,
+        "year_bc_ad": -1034,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Fourth Age §435 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jordan sources read (Biblical Horizons \"Biblical Chronology\" category, all 9 pages; garynorth.com archive of Biblical Chronology 1989-1996). Left empty, not inferred."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": "976 BC (Solomon's Death)",
+        "year_am": null,
+        "year_bc_ad": -976,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+        "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+        "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point. CFAH-1 Conclusions note that their date for Solomon's death is a primary difference from other revisionists.",
+        "cfah_basis": "table1_baseline",
+        "source_text_id": "cfah-1"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Jones Chart No. 1 gives \"3029 AM 975 BC Kingdom DIVIDED\" (not explicitly Solomon's death); no death year read in Jones."
+      },
+      {
+        "source": "ussher",
+        "date": "3029 AM, 975 BC (after reigning 40 years)",
+        "year_am": 3029,
+        "year_bc_ad": -975,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Fifth Age §475 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"After Solomon died in A.M. 3029, Rehoboam his son came to the throne\"",
+        "year_am": 3029,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"Solomon's Disastrous Geopolitics (Chronologies and Kings IV),\" Biblical Chronology 3:10 (October 1991), section \"The Egypt Factor\"",
+        "link": "https://biblicalhorizons.com/1991/10/01/3_10/",
+        "source_text_id": "jordan-bc-3-10",
+        "note": "Accession: \"Solomon's accession to the throne in A.M. 2989\" (BC 5:8, section \"Egypt and the Kings of Israel\") but \"his first year was 2990\" (BC 6:9 \"Covenants and Dates\") - Jordan is not consistent on this point."
+      }
+    ]
+  },
+  "scripture_refs": [
+    "2Sam.12.24",
+    "1Kgs.11.42",
+    "2Chr.9.30"
+  ],
+  "sources": [
+    "cfah-1",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jones-chart-1",
+    "jordan-bc-3-10",
+    "jordan-bc-5-8",
+    "jordan-bc-6-9"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "2Sam.12.24 ; 1Kgs.11.42"
+    }
+  ],
+  "related": [
+    "temple-dedication",
+    "jerusalem",
+    "mount-moriah"
+  ],
+  "events": [
+    "temple-dedication"
+  ]
+}

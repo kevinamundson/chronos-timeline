@@ -1,0 +1,572 @@
+{
+  "$schema": "../schema/source.schema.json",
+  "sources": [
+    {
+      "id": "kjv-gutenberg",
+      "title": "The King James Version of the Bible",
+      "authors": [
+        "(Authorized Version, 1611)"
+      ],
+      "translator_or_editor": null,
+      "year": "1611 (Project Gutenberg eBook #10)",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "alt_urls": [
+        "https://www.gutenberg.org/cache/epub/10/pg10.txt"
+      ],
+      "access": "public-domain",
+      "license_note": "Public domain in the USA (Project Gutenberg).",
+      "verified_on": "2026-10-17",
+      "note": "Genesis 5, 7, 8, 9, 11 figures used for the masoretic-genealogy chronology were read from pg10.txt."
+    },
+    {
+      "id": "ussher-annals-1658",
+      "title": "The Annals of the World, Deduced from the Origin of Time (1658 English edition), Part One: 4004–176 BC",
+      "authors": [
+        "James Ussher"
+      ],
+      "translator_or_editor": null,
+      "year": "1658",
+      "url": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "alt_urls": [
+        "https://archive.org/details/bim_early-english-books-1641-1700_the-annals-of-the-world-_ussher-james-abp_1658"
+      ],
+      "access": "public-domain",
+      "license_note": "Internet Archive item marked Public Domain Mark 1.0.",
+      "verified_on": "2026-10-17",
+      "note": "Scan of the 1658 London edition (E. Tyler for J. Crook & G. Bedell). OCR is poor in the margins; dates were read from the modern transcription (ussher-annals-transcription) and spot-checked against this scan."
+    },
+    {
+      "id": "ussher-annals-transcription",
+      "title": "The Annals of the World (modern-spelling transcription of the 1658 edition)",
+      "authors": [
+        "James Ussher"
+      ],
+      "translator_or_editor": "Bennie Blount Ministries International (freeware transcription)",
+      "year": "1658 (transcription, undated)",
+      "url": "https://archive.org/details/AnnalsOfTheWorld",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "File states: \"This work is in the Public Domain. Copy Freely.\" Provenance of the modernised text is not independently confirmed.",
+      "verified_on": "2026-10-17",
+      "note": "Paragraph numbers (e.g. §22) refer to this transcription. Known typo: Mahalaleel's lifespan printed as 892 (Gen 5:17 = 895; Ussher's own AM 1290 death date implies 895)."
+    },
+    {
+      "id": "josephus-antiquities-whiston",
+      "title": "The Antiquities of the Jews",
+      "authors": [
+        "Flavius Josephus"
+      ],
+      "translator_or_editor": "William Whiston",
+      "year": "1737 translation (Project Gutenberg eBook #2848)",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "alt_urls": [
+        "https://www.gutenberg.org/cache/epub/2848/pg2848.txt"
+      ],
+      "access": "public-domain",
+      "license_note": "Public domain in the USA (Project Gutenberg).",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "annals-of-clonmacnoise-1896",
+      "title": "The Annals of Clonmacnoise, being Annals of Ireland from the Earliest Period to A.D. 1408 (trans. Conell Mageoghagan, 1627)",
+      "authors": [
+        "(anonymous Irish annalists)"
+      ],
+      "translator_or_editor": "Conell Mageoghagan (1627 trans.); ed. Rev. Denis Murphy (1896)",
+      "year": "1896",
+      "url": "https://archive.org/details/annalsofclonmacn00murp",
+      "alt_urls": [
+        "https://archive.org/details/cu31924060289174"
+      ],
+      "access": "public-domain",
+      "license_note": "1896 publication; public domain by age (Internet Archive scan).",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "raleigh-history-of-the-world-1736",
+      "title": "The History of the World, in Five Books (11th ed.), vol. 1",
+      "authors": [
+        "Sir Walter Raleigh"
+      ],
+      "translator_or_editor": null,
+      "year": "1736",
+      "url": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1",
+      "alt_urls": [
+        "https://archive.org/details/india.history.resource.100585",
+        "https://archive.org/details/bim_early-english-books-1475-1640_the-history-of-the-world_raleigh-sir-walter_1614_2"
+      ],
+      "access": "public-domain",
+      "license_note": "Public domain by age (first published 1614).",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "openbible-geo",
+      "title": "OpenBible.info Bible Geocoding",
+      "authors": [
+        "OpenBible.info (Stephen Smith)"
+      ],
+      "translator_or_editor": null,
+      "year": null,
+      "url": "https://www.openbible.info/geo/",
+      "alt_urls": [],
+      "access": "open-license",
+      "license_note": "Dataset licensed CC BY 4.0; credit OpenBible.info. Some data from OpenStreetMap (ODbL).",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "cfah-project-osf",
+      "title": "Chronological Framework of Ancient History (OSF project/preprints)",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/prhfz",
+      "alt_urls": [
+        "https://osf.io/prhfz/overview"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read online; check OSF license per file.",
+      "verified_on": "2026-10-17",
+      "note": "OSF wiki lists CFAH-1 to CFAH-6 and states the series follows the Ussher–Floyd Nolan Jones (\"Ussher-Jones\") chronology."
+    },
+    {
+      "id": "cfah-1",
+      "title": "Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2022",
+      "publication": "ARJ 15 (2022): 377–390",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "cfah-2",
+      "title": "Chronological Framework of Ancient History. 2: Founding of the Nations,",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2022",
+      "publication": "ARJ 15 (2022): 405–426",
+      "url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "cfah-3",
+      "title": "Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2023",
+      "publication": "ARJ 16 (2023): 131–154",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "cfah-4",
+      "title": "Chronological Framework of Ancient History. 4: Dating Creation and the Deluge,",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2023",
+      "publication": "ARJ 16 (2023): 475–489",
+      "url": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "cfah-5",
+      "title": "Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2023",
+      "publication": "ARJ 16 (2023): 635–670",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "cfah-6",
+      "title": "Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "ARJ 18 (2025): 13–60",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jones-chart-1",
+      "title": "Chart No. 1: Creation to Jesus Christ",
+      "authors": [
+        "Floyd Nolen Jones"
+      ],
+      "translator_or_editor": null,
+      "year": "1993",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130609101.pdf",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "© 1993 Floyd Jones Ministries, Inc.; offered as a free download on the ministry site. Copyrighted, not public domain.",
+      "verified_on": "2026-10-17",
+      "note": "1-page PDF: 0 AM/4004 BC Creation; 1656 AM/2348 BC Flood; 2083 AM/1921 BC Sojourn; 2513 AM/1491 BC Exodus; 2992 AM/1012 BC Temple begun; 3029 AM/975 BC Kingdom divided; 3418 AM/586 BC Fall of Judah; 4000 AM/4 BC birth of Jesus."
+    },
+    {
+      "id": "jones-chronology-ot-2002",
+      "title": "Chronology of the Old Testament: A Return to the Basics (15th ed.)",
+      "authors": [
+        "Floyd Nolen Jones"
+      ],
+      "translator_or_editor": null,
+      "year": "2002",
+      "url": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "© 1993-2002 Floyd Nolen Jones: \"may be freely reproduced in any form as long as it is not distributed for any material gain or profit; however, this book may not be published without written permission.\" Hosted by a third party (ntslibrary.com).",
+      "verified_on": "2026-10-17",
+      "note": "Not the 2019 (21st) edition CFAH cites; 2019 PDF link on the author's site returned 404."
+    },
+    {
+      "id": "jones-ministries-chronology-page",
+      "title": "Floyd N Jones Ministries - Chronology (charts index)",
+      "authors": [
+        "Floyd Nolen Jones"
+      ],
+      "translator_or_editor": null,
+      "year": null,
+      "url": "https://floydnolenjonesministries.com/chronology/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Site \"© 2026 ... All rights reserved\"; charts offered as free PDF downloads.",
+      "verified_on": "2026-10-17",
+      "note": "Lists Charts 1, 2, 3, 3A, 3B, 3CDEF, 4, 4B, 5, 5A, 5C, 6 and topical PDFs. The Chart 6 link points to the Chart 5C file."
+    },
+    {
+      "id": "jordan-biblical-horizons-chronology",
+      "title": "Biblical Horizons - \"Biblical Chronology Newsletter\" category (James B. Jordan, Biblical Chronology, 1989-1997)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1989-1997",
+      "url": "https://biblicalhorizons.com/category/biblical-chronology/",
+      "alt_urls": [
+        "https://biblicalhorizons.com/category/biblical-chronology/page/9/"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain. Site footer: \"Copyright (C) James B. Jordan 1989 - 2007\".",
+      "verified_on": "2026-10-17",
+      "note": "9 pages, 83 posts (Vol. 1 No. 1 to Vol. 9 No. 12; Vol. 1 Nos. 2-3, Vol. 2 Nos. 1, 3-8, Vol. 7 No. 3 and Vol. 9 No. 1 are not in the category). The 14 \"Daniel: Historical & Chronological Comments\" posts here contain only a note that the material will appear in a commentary; their text is on garynorth.com."
+    },
+    {
+      "id": "jordan-bc-garynorth-archive",
+      "title": "Archive: Biblical Chronology (1989-1996) - James B. Jordan (ICE newsletter archive)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1989-1996 (archive posted 2024-02-24)",
+      "url": "https://www.garynorth.com/public/26646.cfm",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain. Reposted on garynorth.com (Institute for Christian Economics newsletter archive) with a scanned PDF of each original issue.",
+      "verified_on": "2026-10-17",
+      "note": "Index of 82 issues with full text (charts mostly only in the linked scanned PDFs). Includes the 1989-1990 issues missing from biblicalhorizons.com (e.g. 2:5-2:8 Arphaxad/Abraham/Moses/Temple Connection) and the Daniel series."
+    },
+    {
+      "id": "jordan-bc-2-5",
+      "title": "The Arphaxad Connection (Biblical Chronology 2:5, 1990)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1990",
+      "publication": "Biblical Chronology (newsletter), Vol. 2, No. 5",
+      "url": "https://www.garynorth.com/public/26650.cfm",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-2-6",
+      "title": "The Abraham Connection (Biblical Chronology 2:6, 1990)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1990",
+      "publication": "Biblical Chronology (newsletter), Vol. 2, No. 6",
+      "url": "https://www.garynorth.com/public/26651.cfm",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-2-7",
+      "title": "The Moses Connection (Biblical Chronology 2:7, 1990)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1990",
+      "publication": "Biblical Chronology (newsletter), Vol. 2, No. 7",
+      "url": "https://www.garynorth.com/public/26652.cfm",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-2-8",
+      "title": "The Temple Connection (Biblical Chronology 2:8, 1990)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1990",
+      "publication": "Biblical Chronology (newsletter), Vol. 2, No. 8",
+      "url": "https://www.garynorth.com/public/26653.cfm",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-3-10",
+      "title": "Solomon's Disastrous Geopolitics (Chronologies and Kings IV) (Biblical Chronology 3:10, October 1991)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1991",
+      "publication": "Biblical Chronology (newsletter), Vol. 3, No. 10",
+      "url": "https://biblicalhorizons.com/1991/10/01/3_10/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26767.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-4-8",
+      "title": "A Summary of Old Testament Chronology (Biblical Chronology 4:8, August 1992)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1992",
+      "publication": "Biblical Chronology (newsletter), Vol. 4, No. 8",
+      "url": "https://biblicalhorizons.com/1992/08/01/4_08/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26877.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-5-3",
+      "title": "Jubilee, Part 2 (Biblical Chronology 5:3, March 1993)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1993",
+      "publication": "Biblical Chronology (newsletter), Vol. 5, No. 3",
+      "url": "https://biblicalhorizons.com/1993/03/01/5_03/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26943.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-5-8",
+      "title": "Egypt in Biblical History (Biblical Chronology 5:8, December 1993)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1993",
+      "publication": "Biblical Chronology (newsletter), Vol. 5, No. 8",
+      "url": "https://biblicalhorizons.com/1993/12/01/5_08/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26948.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-6-3",
+      "title": "The Chronology of the Pentateuch (Part 1) (Biblical Chronology 6:3, March 1994)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1994",
+      "publication": "Biblical Chronology (newsletter), Vol. 6, No. 3",
+      "url": "https://biblicalhorizons.com/1994/03/01/6_03/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26951.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-6-4",
+      "title": "The Chronology of the Pentateuch (Part 2) (Biblical Chronology 6:4, April 1994)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1994",
+      "publication": "Biblical Chronology (newsletter), Vol. 6, No. 4",
+      "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26990.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-6-5",
+      "title": "The Chronology of the Pentateuch (Part 3) (Biblical Chronology 6:5, May 1994)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1994",
+      "publication": "Biblical Chronology (newsletter), Vol. 6, No. 5",
+      "url": "https://biblicalhorizons.com/1994/05/01/6_05/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26994.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-6-6",
+      "title": "The Chronology of the Pentateuch (Part 4) (Biblical Chronology 6:6, June 1994)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1994",
+      "publication": "Biblical Chronology (newsletter), Vol. 6, No. 6",
+      "url": "https://biblicalhorizons.com/1994/06/01/6_06/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26995.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-6-7",
+      "title": "The Chronology of the Pentateuch (Part 5) (Biblical Chronology 6:7, July 1994)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1994",
+      "publication": "Biblical Chronology (newsletter), Vol. 6, No. 7",
+      "url": "https://biblicalhorizons.com/1994/07/01/6_07/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26996.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-6-8",
+      "title": "The Chronology of the Pentateuch (Part 6) (Biblical Chronology 6:8, August 1994)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1994",
+      "publication": "Biblical Chronology (newsletter), Vol. 6, No. 8",
+      "url": "https://biblicalhorizons.com/1994/08/01/6_08/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26997.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-6-9",
+      "title": "Covenants and Dates (Biblical Chronology 6:9, September 1994)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1994",
+      "publication": "Biblical Chronology (newsletter), Vol. 6, No. 9",
+      "url": "https://biblicalhorizons.com/1994/09/01/6_09/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26998.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-6-10",
+      "title": "Genesis 5 & 11: Chronological-Theological Reflections (Biblical Chronology 6:10, October 1994)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1994",
+      "publication": "Biblical Chronology (newsletter), Vol. 6, No. 10",
+      "url": "https://biblicalhorizons.com/1994/10/01/6_10/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/27019.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17"
+    }
+  ]
+}
