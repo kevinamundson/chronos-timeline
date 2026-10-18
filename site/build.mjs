@@ -541,7 +541,24 @@ out('search/index.html', page({ title: 'Search', path: '/search/', pagefind: fal
 
 // 404 + Cloudflare Pages headers
 out('404.html', page({ title: 'Not found', path: '', pagefind: false, body: '<h1>Page not found</h1><p><a href="/">Back to the timeline</a></p>' }));
-writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/vendor/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
+// Cache-busting: every /assets/... URL in the HTML gets ?v=<content hash>, so a browser can never pair new HTML
+// with an old cached app.js/styles.css (Cloudflare served them with a 4-hour browser TTL). Versioned assets are then
+// safe to cache for a year; HTML stays max-age=0 (Pages default); Pagefind entry files are revalidated.
+{
+  const { createHash } = await import('node:crypto');
+  const hashes = new Map();
+  const ver = (rel) => {
+    if (!hashes.has(rel)) { const f = join(DIST, rel); hashes.set(rel, existsSync(f) ? createHash('sha256').update(readFileSync(f)).digest('hex').slice(0, 10) : null); }
+    return hashes.get(rel);
+  };
+  const walkHtml = (d) => readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walkHtml(join(d, e.name)) : e.name.endsWith('.html') ? [join(d, e.name)] : []));
+  for (const f of walkHtml(DIST)) {
+    const html = readFileSync(f, 'utf8');
+    const outHtml = html.replace(/(href|src)="\/(assets\/[^"?#]+)"/g, (m, attr, rel) => { const h = ver(rel); return h ? `${attr}="/${rel}?v=${h}"` : m; });
+    if (outHtml !== html) writeFileSync(f, outHtml);
+  }
+}
+writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/pagefind/*\n  Cache-Control: public, max-age=0, must-revalidate\n`);
 
 mkdirSync(join(DIST, 'data'), { recursive: true });
 writeFileSync(join(DIST, 'data', 'person-timelines.json'), JSON.stringify(Object.fromEntries(Object.entries(personTimelines).map(([k, t]) => [k, t.none ? { none: true, notes: t.notes } : { window: [t.start, t.stop], birthTier: t.birth?.tier || null, endTier: t.end?.tier || null, endKind: t.endKind, own: t.ownCount, context: t.ctxCount, notes: t.notes, ownUndated: t.ownUndated.map((e) => e.id) }])), null, 1));

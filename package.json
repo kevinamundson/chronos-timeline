@@ -8,7 +8,8 @@
     "validate": "node scripts/validate.mjs",
     "build": "node scripts/validate.mjs && node site/build.mjs && pagefind --site site/dist",
     "preview": "node site/serve.mjs",
-    "verify": "node site/verify.mjs"
+    "verify": "node site/verify.mjs && node site/verify-timelines.mjs",
+    "verify:live": "node site/verify-timelines.mjs --base https://chronos.kevinamundson.me --shots"
   },
   "devDependencies": {
     "ajv": "^8.17.1",

@@ -9,9 +9,21 @@
   function astroToLabel(a) { return a < 0 ? (-a) + ' BC' : 'AD ' + (a + 1); }
 
   // ---------- Timeline ----------
+  // vis-timeline measures each point's dot (offsetWidth) on first draw. If its stylesheet has not been applied yet
+  // (WebKit/Safari can run deferred scripts before a late stylesheet is ready), the dot is measured as a full-width
+  // block and every item is drawn hundreds of pixels off. So build the timeline only once all stylesheets are in.
+  function whenStyles(cb) {
+    var links = [].slice.call(document.querySelectorAll('link[rel="stylesheet"]'));
+    var pending = links.filter(function (l) { try { return !l.sheet || !l.sheet.cssRules; } catch (e) { return false; } });
+    if (!pending.length) return cb();
+    var left = pending.length, done = false;
+    var fin = function () { if (!done && --left <= 0) { done = true; cb(); } };
+    pending.forEach(function (l) { l.addEventListener('load', fin); l.addEventListener('error', fin); });
+    window.addEventListener('load', function () { if (!done) { done = true; cb(); } });
+  }
   var tlEl = document.getElementById('timeline');
   var raw = readJSON('tl-data');
-  if (tlEl && raw && window.vis) {
+  if (tlEl && raw && window.vis) whenStyles(function () {
     var moment = vis.moment;
     var person = !Array.isArray(raw) && raw.mode === 'person';
     var items = person ? raw.items : raw;
@@ -44,7 +56,8 @@
         return a;
       },
       orientation: { axis: 'both', item: 'top' }, verticalScroll: true, stack: true, showCurrentTime: false, selectable: true,
-      maxHeight: window.matchMedia('(max-width: 640px)').matches ? '520px' : '640px', minHeight: '320px',
+      // Person charts grow to fit every item (no hidden, scroll-only rows); the dense home chart is capped.
+      maxHeight: person ? undefined : (window.matchMedia('(max-width: 640px)').matches ? '520px' : '640px'), minHeight: person ? '200px' : '320px',
       margin: { item: { horizontal: 4, vertical: 6 } },
       format: {
         minorLabels: function (date, scale) { return scale === 'year' ? astroToLabel(date.year()) : date.format('MMM'); },
@@ -65,8 +78,13 @@
         if (a === 'in') timeline.zoomIn(0.5); else if (a === 'out') timeline.zoomOut(0.5); else timeline.setWindow(toDate(min - pad), toDate(max + padR));
       });
     });
-    tlEl.setAttribute('data-ready', String(items.length));
-  }
+    // Safety net: if a dot was still measured before styles applied, rebuild the items once.
+    requestAnimationFrame(function () {
+      var bad = [].some.call(tlEl.querySelectorAll('.vis-item.vis-point .vis-dot'), function (d) { return d.offsetWidth > 40; });
+      if (bad) { var all = data.get(); data.clear(); data.add(all); }
+      tlEl.setAttribute('data-ready', String(items.length));
+    });
+  });
 
   // ---------- Maps ----------
   var mapEl = document.getElementById('map') || document.getElementById('locmap');

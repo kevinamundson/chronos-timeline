@@ -112,7 +112,15 @@ npm run preview    # http://localhost:8788
 ```
 npx playwright install chromium   # one time
 npm run verify     # serves dist, checks pages, timeline, map, search; writes site/screenshots/*.png
+npm run verify:live   # person-timeline checks (Chromium + WebKit) against https://chronos.kevinamundson.me, live screenshots
 ```
+`site/verify-timelines.mjs` loads Joseph, Abraham, Noah, Moses and a one-event person in Chromium **and WebKit** at 1024/1440/390 px,
+each in a fresh (empty-cache) context. It asserts the chart is drawn (> 100 px tall), the rendered items equal own + context, every dot and
+label sits inside the chart, own items are solid and context items faded, the legend swatches are visible, and all `/assets/` URLs are
+versioned. Locally it repeats every load with the vis-timeline CSS delayed by 1.5 s.
+
+**Caching.** The build appends `?v=<sha256 prefix>` to every `/assets/…` URL in the HTML, and `_headers` caches `/assets/*` for a year
+(immutable). HTML is `max-age=0`, so a browser never pairs new HTML with an old cached `app.js`/`styles.css`. `/pagefind/*` is revalidated.
 
 ### Deploy to Cloudflare Pages (free plan)
 Connect the Git repository in the Cloudflare dashboard (Workers & Pages → Create → Pages → Connect to Git) with:
