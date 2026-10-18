@@ -1,0 +1,41 @@
+// Records created by the Morecraft import (only where no existing record fits). Summaries are our own words.
+// New events sort PROVISIONALLY by their first dated Morecraft entry (no tier 1–4 or Generations date exists);
+// new people sort provisionally by a Morecraft birth year, otherwise tier "none".
+export const events = {
+  'division-of-the-kingdom': { title: 'Division of the kingdom of Israel', summary: 'After Solomon\'s death the kingdom splits into the northern kingdom of Israel and the southern kingdom of Judah (1 Kings 12).', people: ['solomon'], related: ['reign-of-solomon', 'fall-of-samaria', 'fall-of-jerusalem-586-bc'] },
+  'intertestamental-period': { title: 'The period between the Old and New Testaments', summary: 'The centuries between the close of the Old Testament and the birth of Christ: Persian, Greek, Maccabean and Roman rule over Judea.', related: ['alexander-destroys-tyre', 'persecution-under-antiochus-iv', 'pompey-takes-jerusalem'] },
+  'persian-independence-226': { title: 'The Persians regain their independence', summary: 'Persia, ruled by Greek successor states and then the Parthians since Alexander\'s conquest, becomes independent again under a native dynasty (the Sasanians).', related: ['battle-of-gaugamela', 'muslim-conquest-of-persia'] },
+  'rome-conquers-greece': { title: 'Rome begins to take over the Greek world', summary: 'Rome conquers Greece and starts absorbing what remained of Alexander\'s empire.' },
+  'council-of-arles': { title: 'Council of Arles', summary: 'Church council called by Constantine at Arles in Gaul, attended by bishops from Britain.' },
+  'council-of-ephesus': { title: 'Council of Ephesus', summary: 'The third ecumenical council.', related: ['council-of-constantinople-381', 'council-of-chalcedon'] },
+  'council-of-chalcedon': { title: 'Council of Chalcedon', summary: 'The fourth ecumenical council, which defined the two natures of Christ in one person.', related: ['council-of-ephesus', 'second-council-of-constantinople'] },
+  'second-council-of-constantinople': { title: 'Second Council of Constantinople', summary: 'The fifth ecumenical council.', related: ['council-of-chalcedon', 'third-council-of-constantinople'] },
+  'third-council-of-constantinople': { title: 'Third Council of Constantinople', summary: 'The sixth ecumenical council.', related: ['second-council-of-constantinople', 'second-council-of-nicaea'] },
+  'second-council-of-nicaea': { title: 'Second Council of Nicaea', summary: 'The seventh ecumenical council.', related: ['third-council-of-constantinople', 'council-of-nicaea'] },
+  'council-of-toledo-589': { title: 'Council of Toledo (589)', summary: 'Council at Toledo in Visigothic Spain.' },
+  'martyrdom-of-perpetua-and-felicitas': { title: 'Martyrdom of Perpetua and Felicitas', summary: 'The young mother Perpetua and her servant Felicitas are put to death in the arena at Carthage.' },
+  'william-sawtrey-burned': { title: 'William Sawtrey burned at the stake', summary: 'A Lollard priest, the first person burned for heresy in England.', related: ['pope-commands-wycliffe-to-rome'] },
+  'tyndale-new-testament': { title: 'Tyndale\'s English New Testament reaches England', summary: 'William Tyndale, working abroad, prints the New Testament in English and has copies smuggled into England.', people: ['william-tyndale'] },
+  'king-james-version': { title: 'The King James (Authorized) Version', summary: 'English Bible translation authorized under King James I.', people: ['james-i-of-england'], related: ['tyndale-new-testament', 'geneva-bible'] },
+  'geneva-bible': { title: 'The Geneva Bible', summary: 'English Bible prepared by Protestant exiles in Geneva.', related: ['king-james-version'] },
+  'scottish-confession-of-faith': { title: 'The Scots Confession ratified', summary: 'The Scottish Parliament ratifies the Reformed confession of faith of the Church of Scotland.' },
+  'national-covenant': { title: 'The National Covenant', summary: 'Scottish Presbyterians bind themselves by covenant to defend the Reformed faith; the Glasgow General Assembly follows.' },
+  'solemn-league-and-covenant': { title: 'The Solemn League and Covenant', summary: 'Covenant between Scotland and the English Parliament to preserve and extend the Reformed religion.', related: ['national-covenant', 'westminster-assembly'] },
+  'westminster-assembly': { title: 'The Westminster Assembly', summary: 'Assembly of divines called by the English Parliament, meeting at Westminster Abbey to reform the Church of England.', related: ['westminster-confession-of-faith', 'solemn-league-and-covenant'] },
+  'westminster-confession-of-faith': { title: 'The Westminster Confession of Faith', summary: 'Confession of faith drawn up by the Westminster Assembly, with its Larger and Shorter Catechisms.', related: ['westminster-assembly'] },
+  'restoration-of-the-stuart-monarchy': { title: 'Restoration of the Stuart monarchy', summary: 'The monarchy is restored in Britain under Charles II, followed by persecution of the Scottish Covenanters.', related: ['glorious-revolution'] },
+  'glorious-revolution': { title: 'The Glorious Revolution', summary: 'James II is replaced on the throne by William and Mary.', related: ['restoration-of-the-stuart-monarchy'] },
+};
+export const people = {
+  pelagius: { title: 'Pelagius', summary: 'British monk whose teaching on free will and grace Augustine opposed.', related: ['augustine-of-hippo'] },
+  'martin-bucer': { title: 'Martin Bucer', summary: 'Reformer of Strasbourg who worked with John Calvin.', related: ['john-calvin'] },
+  'thomas-aquinas': { title: 'Thomas Aquinas', summary: 'Medieval scholastic theologian.' },
+  'henry-viii': { title: 'Henry VIII', alt_names: ['Henry VIII of England'], summary: 'King of England who broke with the papacy.', related: ['edward-vi', 'mary-i-of-england', 'elizabeth-i'] },
+  'edward-vi': { title: 'Edward VI', alt_names: ['Edward VI of England'], summary: 'Protestant boy-king of England, son of Henry VIII.', events: ['death-of-edward-vi'], related: ['henry-viii', 'lady-jane-grey'] },
+  'elizabeth-i': { title: 'Elizabeth I', alt_names: ['Elizabeth I of England'], summary: 'Queen of England, daughter of Henry VIII.', related: ['henry-viii', 'mary-i-of-england'] },
+  'james-i-of-england': { title: 'James I of England', alt_names: ['James VI of Scotland'], summary: 'King of Scotland who became king of England on Elizabeth I\'s death.', related: ['elizabeth-i', 'charles-i-of-england'] },
+  'charles-i-of-england': { title: 'Charles I of England', summary: 'King of England, Scotland and Ireland, son of James I.', related: ['james-i-of-england', 'oliver-cromwell'] },
+  'oliver-cromwell': { title: 'Oliver Cromwell', summary: 'English Puritan soldier and statesman, Lord Protector of the Commonwealth.', related: ['charles-i-of-england'] },
+  'patrick-hamilton': { title: 'Patrick Hamilton', summary: 'Early Scottish Protestant martyr, burned at St Andrews.', related: ['george-wishart'] },
+  'george-wishart': { title: 'George Wishart', summary: 'Scottish Protestant preacher and martyr.', related: ['patrick-hamilton'] },
+};

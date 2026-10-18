@@ -53,6 +53,18 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": null
+    },
+    {
+      "source": "morecraft",
+      "date": "from 606 to 536 B.C.",
+      "year_am": null,
+      "year_bc_ad": -606,
+      "year_bc_ad_end": -536,
+      "precision": "year-range",
+      "citation": "Morecraft, A Christian Survey of World History, p. 43 (PDF p. 51)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca)."
     }
   ],
   "people": [
@@ -64,7 +76,8 @@
   "sources": [
     "generations-preparing",
     "generations-preparing-2e",
-    "cfah-5"
+    "cfah-5",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

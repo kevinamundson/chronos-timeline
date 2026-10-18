@@ -48,6 +48,18 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Also p. 614."
+    },
+    {
+      "source": "morecraft",
+      "date": "174-164, B.C.",
+      "year_am": null,
+      "year_bc_ad": -174,
+      "year_bc_ad_end": -164,
+      "precision": "year-range",
+      "citation": "Morecraft, A Christian Survey of World History, p. 19 (PDF p. 28)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "His tyranny over Judah and the defiling of the Temple."
     }
   ],
   "people": [
@@ -60,7 +72,8 @@
   ],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

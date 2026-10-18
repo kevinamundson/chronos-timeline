@@ -46,6 +46,18 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": null
+    },
+    {
+      "source": "morecraft",
+      "date": "331, B.C.",
+      "year_am": null,
+      "year_bc_ad": -331,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 27 (PDF p. 35)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "Alexander conquers the Persian Empire (the decisive battle was Gaugamela). Repeated on PDF p. 37."
     }
   ],
   "people": [
@@ -56,7 +68,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

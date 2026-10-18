@@ -139,6 +139,18 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Derived in the text from 3104 BC plus 900 years; also the heading of ch. I \"(4004–3584 BC)\" and Timeline Review p. 73."
+    },
+    {
+      "source": "morecraft",
+      "date": "around 4004, B.C.",
+      "year_am": null,
+      "year_bc_ad": -4004,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "Morecraft, A Christian Survey of World History, p. 11 (PDF p. 20)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "History began on a Sunday, with the six-day creation (Genesis 1)."
     }
   ],
   "people": [
@@ -159,7 +171,8 @@
     "ussher-annals-1658",
     "jordan-bc-5-8",
     "jordan-bc-6-4",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "morecraft-christian-survey"
   ],
   "free_source_links": [
     {

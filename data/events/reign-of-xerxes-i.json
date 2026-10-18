@@ -50,6 +50,18 @@
       "note": "Heading \"Ahasuerus: The Zenith of Persian Power\"; a caption on p. 542 gives Xerxes I 518–465 BC, and p. 548 says Xerxes was murdered and Artaxerxes crowned in 475 BC."
     },
     {
+      "source": "morecraft",
+      "date": "486-465 (Xerxes)",
+      "year_am": null,
+      "year_bc_ad": -486,
+      "year_bc_ad_end": -465,
+      "precision": "year-range",
+      "citation": "Morecraft, A Christian Survey of World History, p. 46 (PDF p. 54)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca). Same table (read from the page image); the Ahasuerus of Esther."
+    },
+    {
       "source": "herodotus",
       "date": "“He died in the year following the revolt of Egypt and the matters here related, after having reigned in all six-and-thirty years”",
       "year_am": null,
@@ -84,7 +96,8 @@
     "generations-preparing",
     "generations-preparing-2e",
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

@@ -165,10 +165,17 @@ for (const { rel, doc, entries, kind } of sortingTargets) {
     if (b.tier_rank !== null) err(rel, 'derived tier must have tier_rank null');
   } else if (b.tier === 'provisional') {
     // Generations (secondary) may only supply a PROVISIONAL sort where no tier 1-4 year exists.
+    // Morecraft may do the same only for a record the Morecraft import created, and only where Generations gives no date either.
     const g = entries.find((e) => e.source === 'generations' && e.year_bc_ad != null && !e.superseded_by);
-    if (b.chronology !== 'generations') err(rel, 'provisional tier must name chronology "generations"');
+    const m = entries.find((e) => e.source === 'morecraft' && e.year_bc_ad != null);
     if (b.tier_rank !== null) err(rel, 'provisional tier must have tier_rank null');
-    if (!g) err(rel, 'provisional tier needs a dated generations entry');
+    if (b.chronology === 'morecraft') {
+      if (g) err(rel, 'provisional (morecraft) sort used although a dated generations entry exists; generations comes first');
+      if (!doc.description?.startsWith('Added from the Morecraft import')) err(rel, 'morecraft may supply a provisional sort only for records the Morecraft import created');
+      if (!m) err(rel, 'provisional (morecraft) tier needs a dated morecraft entry');
+      else if (doc.sorting_year !== m.year_bc_ad) err(rel, `provisional sorting_year should be ${m.year_bc_ad} (first dated morecraft entry), found ${doc.sorting_year}`);
+    } else if (b.chronology !== 'generations') err(rel, 'provisional tier must name chronology "generations" or "morecraft"');
+    else if (!g) err(rel, 'provisional tier needs a dated generations entry');
     else if (doc.sorting_year !== g.year_bc_ad) err(rel, `provisional sorting_year should be ${g.year_bc_ad} (first dated, non-superseded generations entry), found ${doc.sorting_year}`);
   } else if (b.tier === 'none') {
     if (kind !== 'person') err(rel, 'tier "none" (null sorting_year) is only allowed for people; events need a derived sort');
@@ -206,6 +213,24 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
       }
       if (src?.access === 'private-copy' && doc.free_source_links?.some((l) => l.source_id === src.id)) err(rel, `private copy ${src.id} may not be listed in free_source_links`);
     }
+  }
+}
+// Morecraft (A Christian Survey of World History): secondary display chronology. Never a sort tier; it may supply a
+// provisional sort only to records the Morecraft import created (checked with the provisional tier above).
+{
+  const mc = chronDoc.chronologies.find((c) => c.id === 'morecraft');
+  if (mc && (mc.primary || !/SECONDARY DISPLAY/.test(mc.description))) err('data/chronologies.json', 'morecraft must be a non-primary SECONDARY DISPLAY chronology');
+  const MC_SRC = new Set(srcDoc.sources.filter((s) => /^morecraft-/.test(s.id)).map((s) => s.id));
+  for (const { rel, doc } of sortingTargets) { const b = doc.sorting_basis || {}; if ((b.chronology === 'morecraft' || b.derived_from === 'morecraft') && b.tier !== 'provisional') err(rel, 'morecraft may never set the sort except via the explicit "provisional" tier'); }
+  for (const { rel, doc } of Object.values(records)) {
+    for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'morecraft')) {
+      if (!MC_SRC.has(e.source_text_id)) err(rel, `morecraft entry needs source_text_id of a morecraft-* source, got "${e.source_text_id}"`);
+      if (!/PDF p\. \d+\)?$/.test(e.citation || '')) err(rel, 'morecraft entry needs a "(PDF p. N)" page citation');
+      if (!e.date) err(rel, 'morecraft entry needs the date as printed');
+      if (e.year_am != null) err(rel, 'morecraft gives no AM years');
+      if ((e.note || '').length > 400) err(rel, 'morecraft note too long: the book is copyrighted, keep notes short and in our own words');
+    }
+    for (const id of MC_SRC) if (doc.free_source_links?.some((l) => l.source_id === id)) err(rel, `private copy ${id} may not be listed in free_source_links`);
   }
 }
 // Herodotus (The Histories, tr. Rawlinson): secondary display chronology; never sets the sort, never carries a BC year.

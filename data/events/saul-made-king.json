@@ -115,6 +115,18 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Heading."
+    },
+    {
+      "source": "morecraft",
+      "date": "1095-1055, B.C.",
+      "year_am": null,
+      "year_bc_ad": -1095,
+      "year_bc_ad_end": -1055,
+      "precision": "year-range",
+      "citation": "Morecraft, A Christian Survey of World History, p. 17 (PDF p. 26)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "Reign of Saul. The United Kingdom heading reads \"Approximately 1095-975\"."
     }
   ],
   "people": [
@@ -136,7 +148,8 @@
     "jordan-sbc-2",
     "blb-biblehub",
     "ussher-annals-1658",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "morecraft-christian-survey"
   ],
   "free_source_links": [
     {

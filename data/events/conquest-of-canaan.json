@@ -34,6 +34,18 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": null
+    },
+    {
+      "source": "morecraft",
+      "date": "Approximately 1451, B.C.",
+      "year_am": null,
+      "year_bc_ad": -1451,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "Morecraft, A Christian Survey of World History, p. 16 (PDF p. 25)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "Section heading \"The Conquest and Occupation of the Land of Promise: Joshua\"."
     }
   ],
   "people": [],
@@ -43,7 +55,8 @@
     "Josh.11.16-Josh.11.23"
   ],
   "sources": [
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "morecraft-christian-survey"
   ],
   "related": [
     "crossing-the-jordan",

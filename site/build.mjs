@@ -74,7 +74,7 @@ const osis = (ref) => {
 const scriptureList = (refs) => !refs?.length ? '' : `<ul class="chips">${refs.map((r) => { const o = osis(r); return `<li>${ext(o.href, esc(o.text))}</li>`; }).join('')}</ul>`;
 
 // Chronology display order (owner spec): CFAH anchor, CFAH-1 Table 1, Ussher-Jones, Ussher, Jordan (secondary, display only), Bible, (MT arithmetic), Josephus, Raleigh, Clonmacnoise.
-const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:paper_text', 'cfah:', 'ussher-jones', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
+const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:paper_text', 'cfah:', 'ussher-jones', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'morecraft', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
 const rowKey = (e) => (e.source === 'cfah' ? `cfah:${e.cfah_basis || ''}` : e.source);
 const rowRank = (e) => { const i = ROW_ORDER.indexOf(rowKey(e)); return i < 0 ? 99 : i; };
 const chronName = (e) => {
@@ -87,6 +87,7 @@ const chronName = (e) => {
   if (e.source === 'jordan') return 'Jordan <span class="tag tag-sec" title="Secondary display chronology; never sets the sort year">secondary</span>';
   if (e.source === 'herodotus') return `Herodotus <span class="tag tag-sec" title="Herodotus, The Histories (tr. Rawlinson); secondary display only; never sets the sort and gives no BC years">secondary</span><div class="small muted">The Histories, tr. Rawlinson</div>`;
   if (e.source === 'generations') return `Generations <span class="tag tag-sec" title="Generations curriculum (Swanson et al.); secondary display only; supplies a provisional sort only where no tier 1-4 date exists">secondary</span>${e.source_text_id && sourceById[e.source_text_id] ? `<div class="small muted">${esc(sourceById[e.source_text_id].short || sourceById[e.source_text_id].title)}</div>` : ''}`;
+  if (e.source === 'morecraft') return `Morecraft <span class="tag tag-sec" title="Joe Morecraft III, A Christian Survey of World History; secondary display only; supplies a provisional sort only to records it alone dates">secondary</span><div class="small muted">A Christian Survey of World History</div>`;
   if (e.source === 'jordan-compilation') return 'Jordan (compilation) <span class="tag tag-sec" title="Unnamed compiler\'s charts of Jordan\'s system; secondary display only">secondary</span>';
   const c = chronById[e.source];
   return esc(c ? c.abbreviation || c.name : e.source);
@@ -108,7 +109,7 @@ const sortingEntry = (entries, basis) => {
   if (t === 'cfah-anchor') return entries.find((e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point' && has(e));
   if (t === 'cfah-table1') return entries.find((e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline' && has(e));
   if (t === 'ussher-jones' || t === 'ussher') return entries.find((e) => e.source === t && has(e));
-  if (t === 'provisional') return entries.find((e) => e.source === 'generations' && has(e) && !e.superseded_by);
+  if (t === 'provisional') return basis.chronology === 'morecraft' ? entries.find((e) => e.source === 'morecraft' && has(e)) : entries.find((e) => e.source === 'generations' && has(e) && !e.superseded_by);
   return null;
 };
 // Four-tier rule applied to any date list (birth/death/translated): CFAH AP > CFAH-1 Table 1 > Ussher-Jones > Ussher.
@@ -119,6 +120,8 @@ const TIER_PICKS = [
   ['ussher', (e) => e.source === 'ussher'],
   // Provisional only (no tier 1-4 date): Generations curriculum, same rule as the record sort.
   ['provisional', (e) => e.source === 'generations' && !e.superseded_by],
+  // ... then Morecraft, for people only it dates (the same order as the record sort).
+  ['provisional', (e) => e.source === 'morecraft'],
 ];
 const tierYear = (entries) => {
   for (const [tier, pick] of TIER_PICKS) {
@@ -191,7 +194,7 @@ ${oq.length ? `<ul class="flag-list">${oq.map((t) => `<li><span class="flag flag
 
 function sortBadge(rec) {
   const b = rec.sorting_basis || {};
-  const t = TIERS[b.tier] || { cls: 'tn', label: b.tier || 'unknown' };
+  const t = (b.tier === 'provisional' && b.chronology === 'morecraft' ? { cls: 'tp', label: 'Provisional · Morecraft date (no CFAH / Ussher–Jones / Ussher / Generations date exists; pending owner decision)' } : TIERS[b.tier]) || { cls: 'tn', label: b.tier || 'unknown' };
   const ent = sortingEntry(rec.chronologies || rec.dates?.birth || [], b);
   const yl = yearLabel(rec.sorting_year, ent?.year_bc_ad_end) || 'Undated';
   let extra = '';
@@ -384,6 +387,9 @@ function personTimeline(p) {
   let start = birth?.y ?? null, stop = end?.y ?? null;
   if (start == null && ys.length) { start = Math.min(...ys); notes.push('Birth year unknown in tiers 1–4 or Generations (provisional): the window starts at the first linked event.'); }
   if (stop == null && ys.length) { stop = Math.max(...ys); notes.push(`Death year unknown in tiers 1–4 or Generations (provisional): the window ends at the last linked event (${own.find((e) => e.sorting_year === stop).title}, ${yearLabel(stop)}).`); }
+  // no birth or death year: a reign gives the window
+  const reign = start == null && stop == null ? tierYear(d.reign) : null;
+  if (reign) { start = reign.y; stop = reign.yEnd ?? reign.y; notes.push(`No birth or death year in tiers 1–4 or the provisional sources: the window shows the reign (${yearLabel(start)}${stop !== start ? `–${yearLabel(stop)}` : ''}${reign.tier === 'provisional' ? ', provisional' : ''}).`); }
   if (start == null && stop == null) return { none: true, notes: ['No birth or death year in tiers 1–4 and no dated linked events, so there is no timeline yet.'], ownUndated };
   if (start == null) { start = stop; notes.push('Birth year unknown and no earlier linked event.'); }
   if (stop == null) { stop = start; notes.push('Death year unknown and no linked events after birth: the window shows the birth year only.'); }
@@ -391,7 +397,7 @@ function personTimeline(p) {
   // own-life events dated outside the lifespan (e.g. a provisional Generations date on a different chronology) widen the window so they stay visible
   const outside = own.filter((e) => e.sorting_year < start || e.sorting_year > stop);
   if (outside.length) {
-    notes.push(`The window is widened to show ${outside.length === 1 ? 'a linked event' : `${outside.length} linked events`} dated outside the lifespan: ${outside.map((e) => `${e.title} (${yearLabel(e.sorting_year)}, ${e.sorting_basis?.tier === 'provisional' ? 'provisional Generations date' : e.sorting_basis?.tier || 'unsorted'})`).join('; ')}. See the event page for the conflicting dates.`);
+    notes.push(`The window is widened to show ${outside.length === 1 ? 'a linked event' : `${outside.length} linked events`} dated outside the lifespan: ${outside.map((e) => `${e.title} (${yearLabel(e.sorting_year)}, ${e.sorting_basis?.tier === 'provisional' ? `provisional ${e.sorting_basis.chronology === 'morecraft' ? 'Morecraft' : 'Generations'} date` : e.sorting_basis?.tier || 'unsorted'})`).join('; ')}. See the event page for the conflicting dates.`);
     start = Math.min(start, ...outside.map((e) => e.sorting_year)); stop = Math.max(stop, ...outside.map((e) => e.sorting_year));
   }
   const items = [];

@@ -597,6 +597,23 @@
         "herodotus-rawlinson-wikisource"
       ],
       "anchors": []
+    },
+    {
+      "id": "morecraft",
+      "name": "Joe Morecraft III, A Christian Survey of World History from Creation to the Reformation",
+      "abbreviation": "Morecraft",
+      "primary": false,
+      "sort_priority": 13,
+      "status": "partial",
+      "authors": [
+        "Joe Morecraft III"
+      ],
+      "description": "SECONDARY DISPLAY CHRONOLOGY. It is never a sort tier and never sets or overrides the sort of a record that has a CFAH, Ussher–Jones, Ussher or Generations date. Records created by the Morecraft import, which no other chronology dates, sort PROVISIONALLY by their Morecraft year until a tier 1–4 date is added (open question F1). Each entry gives the date as printed, with the printed page and the PDF page of the owner's private scanned copy. The book is copyrighted: only dates, citations and short notes in our own words are kept. Agreements and conflicts are listed in data/morecraft-dates-extract.md.",
+      "year_conventions": "year_bc_ad is the year as printed (negative = BC; no year 0). Ranges as printed go in year_bc_ad/year_bc_ad_end; for a person's birth and death slots a printed life span is split into its two years. \"Approximately\", \"around\" and \"probably\" are kept as precision approximate/conjectural. No years are derived.",
+      "references": [
+        "morecraft-christian-survey"
+      ],
+      "anchors": []
     }
   ]
 }

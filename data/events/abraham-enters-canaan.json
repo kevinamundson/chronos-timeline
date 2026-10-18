@@ -136,6 +136,18 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Abram crosses the Euphrates; p. 171: he visited Egypt in 1921 BC."
+    },
+    {
+      "source": "morecraft",
+      "date": "Approximately 1921, B.C.",
+      "year_am": null,
+      "year_bc_ad": -1921,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "Morecraft, A Christian Survey of World History, p. 14 (PDF p. 23)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "Section heading \"The Call of Abraham: Genesis 12\"."
     }
   ],
   "people": [
@@ -163,7 +175,8 @@
     "jordan-bc-5-8",
     "jordan-bc-2-7",
     "jordan-book-law-of-the-covenant-1984",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "morecraft-christian-survey"
   ],
   "free_source_links": [
     {

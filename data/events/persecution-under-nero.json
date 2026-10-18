@@ -46,6 +46,30 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=23",
       "source_text_id": "generations-world",
       "note": "Table of ten persecutions."
+    },
+    {
+      "source": "morecraft",
+      "date": "from 54 to 68 A.D.",
+      "year_am": null,
+      "year_bc_ad": 54,
+      "year_bc_ad_end": 68,
+      "precision": "year-range",
+      "citation": "Morecraft, A Christian Survey of World History, p. 50 (PDF p. 58)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca). Reign of Nero, who \"persecuted Christians terribly\"."
+    },
+    {
+      "source": "morecraft",
+      "date": "64 A.D.",
+      "year_am": null,
+      "year_bc_ad": 64,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 50 (PDF p. 58)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca). The Great Fire of Rome."
     }
   ],
   "people": [],
@@ -54,7 +78,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-europe",
-    "generations-world"
+    "generations-world",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

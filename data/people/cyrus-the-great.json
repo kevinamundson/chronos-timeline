@@ -100,6 +100,30 @@
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "DERIVED (not Herodotus's figure): CFAH AP-7 (560/559 BC) − 29 = 531/530 BC for the death of Cyrus. CFAH-3 (AP-8) counts Cyrus 30 years (560 − 30 = 530 for Cambyses' accession), one year more than Herodotus. Generations prints Cyrus 600–530 BC (provisional), 0–1 year from the derived death."
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "morecraft",
+        "date": "539-530 (Cyrus)",
+        "year_am": null,
+        "year_bc_ad": -539,
+        "year_bc_ad_end": -530,
+        "precision": "year-range",
+        "citation": "Morecraft, A Christian Survey of World History, p. 46 (PDF p. 54)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca). Table \"Persian Kings in Bible History\" (OCR of the table was poor; read from the page image)."
+      }
     ]
   },
   "events": [
@@ -114,7 +138,8 @@
     "generations-preparing",
     "generations-preparing-2e",
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

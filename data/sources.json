@@ -1044,6 +1044,22 @@
       "license_note": "Public domain (Wikisource licence tag PD-old). The same Rawlinson translation as the Roman Roads etext; every quoted statement was checked verbatim against this text.",
       "verified_on": "2026-10-18",
       "note": "Chapter numbers are marked in Books 1, 7, 8 and 9 and partly in Book 2; Books 3–6 are unnumbered, so links point to the Book page with a text fragment for the quoted words."
+    },
+    {
+      "id": "morecraft-christian-survey",
+      "title": "A Christian Survey of World History from Creation to the Reformation",
+      "authors": [
+        "Joe Morecraft III"
+      ],
+      "translator_or_editor": null,
+      "year": null,
+      "publication": "No publisher, year or edition is printed: the copy read has a cover, a title page (\"A Christian Survey of World History from Creation to Reformation, by Joe Morecraft III\") and no copyright page. Spiral-bound; 417 PDF pages (scan); printed page = PDF page − 9 (PDF pp. 13–29) or − 8 (PDF pp. 30–416).",
+      "url": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "alt_urls": [],
+      "access": "private-copy",
+      "license_note": "Copyrighted. The site owner's private scanned copy (not in this repository and not linked). Only dates as printed, page citations and short notes in our own words are used. The url is a public listing of the book (Heritage Presbyterian Church bookstore), not a copy of the text.",
+      "verified_on": "2026-10-18",
+      "note": "The year field is null because no date of publication is printed and the PDF has no creation date. The \"Ancient Empires\" pages (PDF pp. 49–59) reproduce \"Fact Finder\" material, with an image credited to \"Daily Bible Study www.keyway.ca\" (PDF p. 57)."
     }
   ]
 }

@@ -59,6 +59,30 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Sargon II deports the rest of Israel; also pp. 377, 417. p. 388 prints 722 BC."
+    },
+    {
+      "source": "morecraft",
+      "date": "721, B.C.",
+      "year_am": null,
+      "year_bc_ad": -721,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 18 (PDF p. 27)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "Assyria depopulates the Northern Kingdom. Repeated on PDF p. 33."
+    },
+    {
+      "source": "morecraft",
+      "date": "726-722 B.C.",
+      "year_am": null,
+      "year_bc_ad": -726,
+      "year_bc_ad_end": -722,
+      "precision": "year-range",
+      "citation": "Morecraft, A Christian Survey of World History, p. 42 (PDF p. 50)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca). Reign of Shalmaneser V, who besieged Samaria."
     }
   ],
   "people": [],
@@ -69,7 +93,8 @@
   ],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

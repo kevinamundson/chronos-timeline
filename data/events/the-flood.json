@@ -184,6 +184,18 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Heading of ch. III. Leftovers from the 1st edition still print 2518 BC on pp. 48 and 272."
+    },
+    {
+      "source": "morecraft",
+      "date": "Approximately 2348, B.C.",
+      "year_am": null,
+      "year_bc_ad": -2348,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "Morecraft, A Christian Survey of World History, p. 13 (PDF p. 22)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "Section heading."
     }
   ],
   "people": [
@@ -212,7 +224,8 @@
     "jordan-bc-6-4",
     "jordan-bc-5-8",
     "jordan-bc-4-8",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "morecraft-christian-survey"
   ],
   "free_source_links": [
     {

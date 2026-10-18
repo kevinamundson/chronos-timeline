@@ -48,6 +48,30 @@
       "note": "Belshazzar is co-regent (no year printed for his appointment)."
     },
     {
+      "source": "morecraft",
+      "date": "539, B.C. (OCR misread \"5939\"; the page image reads 539)",
+      "year_am": null,
+      "year_bc_ad": -539,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 27 (PDF p. 35)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "The Medes and Persians under Cyrus take Babylon. Compare PDF pp. 51–52, which end the Babylonian empire in 536 B.C."
+    },
+    {
+      "source": "morecraft",
+      "date": "536 B.C.",
+      "year_am": null,
+      "year_bc_ad": -536,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 44 (PDF p. 52)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca). The Babylonian empire \"came to an end when it fell to the Persians\". Internal: PDF p. 35 gives 539 B.C. for the same conquest."
+    },
+    {
       "source": "herodotus",
       "date": "“with the first approach of the ensuing spring, marched forward against Babylon”",
       "year_am": null,
@@ -82,7 +106,8 @@
     "generations-preparing",
     "generations-preparing-2e",
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

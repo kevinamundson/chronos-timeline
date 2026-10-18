@@ -51,6 +51,18 @@
         "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
       },
       {
+        "source": "morecraft",
+        "date": "486-465 (Xerxes)",
+        "year_am": null,
+        "year_bc_ad": -486,
+        "year_bc_ad_end": -465,
+        "precision": "year-range",
+        "citation": "Morecraft, A Christian Survey of World History, p. 46 (PDF p. 54)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca). Same table (read from the page image); the Ahasuerus of Esther."
+      },
+      {
         "source": "herodotus",
         "date": "“For in the three following generations of Darius the son of Hystaspes, Xerxes the son of Darius, and Artaxerxes the son of Xerxes, more woes befell Greece than in the twenty generations preceding Darius”",
         "year_am": null,
@@ -116,7 +128,8 @@
   "scripture_refs": [],
   "sources": [
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

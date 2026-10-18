@@ -60,6 +60,18 @@
         "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
         "source_text_id": "generations-preparing-2e",
         "note": "Also p. 594."
+      },
+      {
+        "source": "morecraft",
+        "date": "from 356 to 323 B.C.",
+        "year_am": null,
+        "year_bc_ad": -356,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, (PDF p. 55)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca)."
       }
     ],
     "death": [
@@ -107,6 +119,18 @@
         "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
         "source_text_id": "generations-preparing-2e",
         "note": null
+      },
+      {
+        "source": "morecraft",
+        "date": "June 13, 323, B.C.",
+        "year_am": null,
+        "year_bc_ad": -323,
+        "year_bc_ad_end": null,
+        "precision": "day",
+        "citation": "Morecraft, A Christian Survey of World History, p. 32 (PDF p. 40)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "He was \"only thirty year old\" at his death (PDF p. 40); PDF p. 55 says \"about 33 years\"."
       }
     ]
   },
@@ -120,7 +144,8 @@
   "sources": [
     "generations-europe",
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "morecraft-christian-survey"
   ],
   "related": []
 }

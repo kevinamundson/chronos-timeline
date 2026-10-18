@@ -1,0 +1,62 @@
+// Morecraft rows, part 1: Creation to the Roman Empire (PDF pp. 13–59).
+// M(PDF page, find, date as printed, year, end year|null, precision, target(s), note)
+//   find  a few words located in the OCR text of that page (checked by check-source.mjs; not shown on the site)
+//   date  as printed (OCR read checked against a second OCR pass and, where they differ, the page image)
+//   year  from the printed year only (negative = BC); targets "id" or "person:slot"
+export const M = (pdf, find, date, y, yEnd, prec, targets, note = null, o = {}) => ({ pdf, find, date, y, yEnd, prec, targets: targets == null ? [] : [].concat(targets), note, ...o });
+// PDF pp. 49–59 ("Ancient Empires") carry "Fact Finder" boxes and an image credit "Daily Bible Study www.keyway.ca" (PDF p. 57):
+// material the book reproduces. Dates there are recorded as the book prints them.
+const AE = 'From the book\'s "Ancient Empires" pages (credited in an image to Daily Bible Study, keyway.ca).';
+export const rows = [
+  M(20, 'History began on a Sunday, around 4004', 'around 4004, B.C.', -4004, null, 'approximate', 'creation-week', 'History began on a Sunday, with the six-day creation (Genesis 1).'),
+  M(22, 'THE FLOOD (APPROXIMATELY 2348', 'Approximately 2348, B.C.', -2348, null, 'approximate', 'the-flood', 'Section heading.'),
+  M(22, 'TOWER OF BABEL: GENESIS 11 (APPROXIMATELY 2234', 'Approximately 2234, B.C.', -2234, null, 'approximate', 'founding-of-babel', 'Section heading "The Tower of Babel".'),
+  M(23, 'CALL OF ABRAHAM: GENESIS 12 (APPROXIMATELY 1921', 'Approximately 1921, B.C.', -1921, null, 'approximate', 'abraham-enters-canaan', 'Section heading "The Call of Abraham: Genesis 12".'),
+  M(23, 'EXODUS 1-19 (APPROXIMATELY 1491', 'Approximately 1491, B.C.', -1491, null, 'approximate', 'exodus', 'Section heading.'),
+  M(25, 'JOSHUA (APPROXIMATELY 1451', 'Approximately 1451, B.C.', -1451, null, 'approximate', 'conquest-of-canaan', 'Section heading "The Conquest and Occupation of the Land of Promise: Joshua".'),
+  M(26, 'King Saul, (1095-1055', '1095-1055, B.C.', -1095, -1055, 'year-range', 'saul-made-king', 'Reign of Saul. The United Kingdom heading reads "Approximately 1095-975".'),
+  M(26, 'King David, (1055- 1015', '1055- 1015, B.C.', -1055, -1015, 'year-range', 'reign-of-david'),
+  M(26, 'King Solomon, (1015-975', '1015-975, B.C.', -1015, -975, 'year-range', 'reign-of-solomon'),
+  M(26, 'NORTHERN KINGDOM OF ISRAEL (975-721', '975-721, B.C.', -975, -721, 'year-range', 'division-of-the-kingdom', 'The Northern Kingdom of Israel, from the division after Solomon\'s death.'),
+  M(27, 'relocating them all over the Assyrian Empire in 721', '721, B.C.', -721, null, 'year', 'fall-of-samaria', 'Assyria depopulates the Northern Kingdom. Repeated on PDF p. 33.'),
+  M(27, 'SOUTHERN KINGDOM OF JUDAH (975-586', '975-586, B.C.', -975, -586, 'year-range', 'division-of-the-kingdom', 'The Southern Kingdom of Judah.'),
+  M(27, 'Babylonian Captivity for seventy years in 586', '586, B.C.', -586, null, 'year', 'fall-of-jerusalem-586-bc', 'Repeated on PDF pp. 34 and 51.'),
+  M(28, 'EZRA AND NEHEMIAH (458- 445', '458- 445, B.C.', -458, -445, 'year-range', ['ezra-returns-to-jerusalem', 'nehemiah-rebuilds-the-wall'], 'Section heading "The Days of Restoration under Ezra and Nehemiah".'),
+  M(28, 'OLD TESTAMENT AND NEW TESTAMENT (330-4', '330-4, B.C.', -330, -4, 'year-range', 'intertestamental-period', 'Section heading "The Period between the Old Testament and New Testament".'),
+  M(28, 'during the Greek period, 331-167', '331-167, B.C.', -331, -167, 'year-range', 'intertestamental-period', 'The Greek period of conflict over Judea.'),
+  M(28, 'Alexander the Great invaded Palestine in 332', '332, B.C.', -332, null, 'year', 'alexander-destroys-tyre', 'Alexander invades Palestine (the campaign of the siege of Tyre).'),
+  M(28, 'Antiochus Epiphanes, (174-164', '174-164, B.C.', -174, -164, 'year-range', ['antiochus-iv-epiphanes:reign', 'persecution-under-antiochus-iv'], 'His tyranny over Judah and the defiling of the Temple.'),
+  M(28, 'In 63, B.C. the Romans under Pompey', '63, B.C.', -63, null, 'year', 'pompey-takes-jerusalem', 'Pompey conquers Palestine. Repeated on PDF p. 40.'),
+  M(28, 'Herod the Great, (37-4', '37-4, B.C.', -37, -4, 'year-range', ['reign-of-herod-the-great', 'herod-the-great:reign'], 'Herod in power when Jesus was born.'),
+  M(35, 'conquered Babylon in 5939', '539, B.C. (OCR misread "5939"; the page image reads 539)', -539, null, 'year', 'fall-of-babylon-539-bc', 'The Medes and Persians under Cyrus take Babylon. Compare PDF pp. 51–52, which end the Babylonian empire in 536 B.C.', { imageChecked: '539' }),
+  M(35, 'Alexander the Great of Greece conquered the Persian Empire in 331', '331, B.C.', -331, null, 'year', 'battle-of-gaugamela', 'Alexander conquers the Persian Empire (the decisive battle was Gaugamela). Repeated on PDF p. 37.'),
+  M(35, 'Persians regained their independence in 226', '226, A.D.', 226, null, 'year', 'persian-independence-226', '"After 556 years of subjection" (331 B.C. to A.D. 226 is 556 years, there being no year 0).'),
+  M(35, 'The Arabs conquered Persia in 636', '636, A.D.', 636, null, 'year', 'muslim-conquest-of-persia'),
+  M(40, 'death of Alexander the Great, June 13, 323', 'June 13, 323, B.C.', -323, null, 'day', 'alexander-the-great:death', 'He was "only thirty year old" at his death (PDF p. 40); PDF p. 55 says "about 33 years".'),
+  M(40, 'In 146, B.C., Rome began to take over', '146, B.C.', -146, null, 'year', 'rome-conquers-greece', 'Rome begins to take over what was left of Alexander\'s Greek empire.'),
+  M(41, 'Alaric and the Visigoths from eastern Europe in August 410', 'August 410, A.D.', 410, null, 'month', 'sack-of-rome-410', 'Repeated on PDF p. 131.'),
+  M(49, 'founded as early as 1700 B.C., the Assyrian Empire', 'as early as 1700 B.C.', -1700, null, 'approximate', null, `${AE} The founding of the Assyrian empire, with its capital at Nineveh. Not mapped: no record for the founding of Assyria. CFAH dates Assyrian kings much earlier (Erishum I 2000 BC, Shamshi-Adad I 1841 BC; CFAH anchor points).`, { st: 'CONFLICT' }),
+  M(50, 'Shalmaneser III (858-824', '858-824 B.C.', -858, -824, 'year-range', 'shalmaneser-iii-invades-syria', `${AE} Reign of Shalmaneser III.`),
+  M(50, 'Tiglath-pileser III (744-727', '744-727 B.C.', -744, -727, 'year-range', 'assyria-invades-israel-740-bc', `${AE} Reign of Tiglath-pileser III.`),
+  M(50, 'Shalmaneser V (726-722', '726-722 B.C.', -726, -722, 'year-range', 'fall-of-samaria', `${AE} Reign of Shalmaneser V, who besieged Samaria.`),
+  M(50, 'Sennacherib (704-681', '704-681 B.C.', -704, -681, 'year-range', 'sennacherib-besieges-jerusalem', `${AE} Reign of Sennacherib.`),
+  M(50, 'Ashurbanipal (668-633', '668-633 B.C.', -668, -633, 'year-range', 'reign-of-ashurbanipal', AE, { imageChecked: '668-633' }),
+  M(50, 'Sin-shar-ishkum (623-612', '623-612 B.C.', -623, -612, 'year-range', 'fall-of-nineveh', `${AE} The reign of Sin-shar-ishkun ends with the fall of Nineveh.`),
+  M(51, 'subject to the Assyrians, from about 885 to 607', 'from about 885 to 607 B.C.', -885, -607, 'approximate', null, `${AE} Babylon subject to Assyria. Not mapped (no record).`),
+  M(51, 'New Babylonian Empire, which existed from 606 to 536', 'from 606 to 536 B.C.', -606, -536, 'year-range', 'neo-babylonian-empire', AE),
+  M(52, 'In 536 B.C., after 70 years of supremacy', '536 B.C.', -536, null, 'year', 'fall-of-babylon-539-bc', `${AE} The Babylonian empire "came to an end when it fell to the Persians". Internal: PDF p. 35 gives 539 B.C. for the same conquest.`),
+  M(54, 'PERSIAN KINGS IN BIBLE HISTORY', '539-530 (Cyrus)', -539, -530, 'year-range', 'cyrus-the-great:reign', `${AE} Table "Persian Kings in Bible History" (OCR of the table was poor; read from the page image).`, { imageChecked: '539-530' }),
+  M(54, 'PERSIAN KINGS IN BIBLE HISTORY', '521-486 (Darius the Great)', -521, -486, 'year-range', ['darius-i:reign', 'reign-of-darius-i'], `${AE} Same table (read from the page image).`, { imageChecked: '521-486' }),
+  M(54, 'PERSIAN KINGS IN BIBLE HISTORY', '486-465 (Xerxes)', -486, -465, 'year-range', ['xerxes-i:reign', 'reign-of-xerxes-i'], `${AE} Same table (read from the page image); the Ahasuerus of Esther.`, { imageChecked: '486-465' }),
+  M(55, 'lived only about 33 years, from 356 to 323', 'from 356 to 323 B.C.', -356, -323, 'year-range', 'alexander-the-great:birth', AE),
+  M(55, 'In 336 B.C., at age 20, he assumed command', '336 B.C.', -336, null, 'year', 'alexander-destroys-thebes', `${AE} Alexander takes command of the Greek army.`),
+  M(55, 'then by Egypt from 301', 'from 301 B.C.', -301, null, 'year', 'ptolemaic-rule-of-judea', `${AE} The land of Israel held by Egypt.`),
+  M(55, 'Antiochus the Great took it in 198', '198 B.C.', -198, null, 'year', 'seleucid-conquest-of-judea', AE),
+  M(57, 'spanned the time period from about 145', 'from about 145 B.C. to 476 A.D.', 476, null, 'year', 'fall-of-the-western-roman-empire', `${AE} The span of the ancient Roman empire; the year here is its end, 476. (Its start, about 145 B.C., differs by a year from PDF p. 40, where Rome begins to take over Greece in 146 B.C.)`),
+  M(57, 'reigned 41 years, from 27 B.C. to 14', 'from 27 B.C. to 14 A.D.', -27, 14, 'year-range', ['reign-of-augustus', 'augustus-caesar:reign'], AE),
+  M(57, 'born at Rome on September 23 63 B.C.', 'September 23 63 B.C.', -63, null, 'day', 'augustus-caesar:birth', AE),
+  M(58, 'reigned 14 years, from 54 to 68', 'from 54 to 68 A.D.', 54, 68, 'year-range', 'persecution-under-nero', `${AE} Reign of Nero, who "persecuted Christians terribly".`),
+  M(58, 'set the Great Fire of Rome in 64', '64 A.D.', 64, null, 'year', 'persecution-under-nero', `${AE} The Great Fire of Rome.`),
+  M(59, 'destroyed the Second Temple in 70', '70 A.D.', 70, null, 'year', 'destruction-of-jerusalem-ad-70', `${AE} Under Titus, before he became emperor.`),
+  M(59, 'reigned 15 years, from 81 to 96', 'from 81 to 96 A.D.', 81, 96, 'year-range', 'persecution-under-domitian', `${AE} Reign of Domitian; John exiled on Patmos.`),
+];

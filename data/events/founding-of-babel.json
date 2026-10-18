@@ -92,6 +92,18 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Nimrod founds Babel (originally named Kish); also p. 157. p. 99 computes \"Babel's dating at 2192 BC\" for the end of the Babel era. Differs from the sort year (2234 BC, cfah-anchor) by 1 years."
+    },
+    {
+      "source": "morecraft",
+      "date": "Approximately 2234, B.C.",
+      "year_am": null,
+      "year_bc_ad": -2234,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "Morecraft, A Christian Survey of World History, p. 13 (PDF p. 22)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "Section heading \"The Tower of Babel\"."
     }
   ],
   "people": [
@@ -114,7 +126,8 @@
     "blb-biblehub",
     "ussher-annals-1658",
     "josephus-antiquities-whiston",
-    "jordan-bc-6-4"
+    "jordan-bc-6-4",
+    "morecraft-christian-survey"
   ],
   "free_source_links": [
     {

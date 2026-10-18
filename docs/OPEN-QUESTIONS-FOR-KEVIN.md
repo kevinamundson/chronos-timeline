@@ -469,3 +469,18 @@ The full checklist (every AP 1–61, every OSF AP, every CFAH-1 Table 1 row, eve
   - the founding of Rome and the founding of Xia keep their years but are now tier 1
   - all are listed in `data/cfah-coverage.md` section 5 and in each record's sorting note.
 - **Recommendation:** no decision needed.
+
+## F. Morecraft import
+
+Source: Joe Morecraft III, *A Christian Survey of World History from Creation to the Reformation* (your scanned PDF, 417 pages). The full table is in `data/morecraft-dates-extract.md`.
+
+### F1. Provisional sorts from Morecraft
+- Records that only Morecraft dates (no CFAH, Ussher–Jones, Ussher or Generations date) were created by the import and sort provisionally by his printed year, the same way Generations-only records do (A8). Every other record keeps its sort, and Morecraft is shown as a secondary row.
+- **Options:**
+  1. Keep the provisional Morecraft sorts until a tier 1–4 date is found (as now).
+  2. Leave such records unsorted (people) or derive them from a related record (events).
+- **Recommendation:** option 1. The alternative hides these events from the timeline.
+
+### F2. Publication details
+- The copy has a cover and a title page but no copyright page, so no publisher, year or edition is printed, and the PDF has no creation date. `data/sources.json` leaves the year empty and links to the Heritage Presbyterian Church listing of the book.
+- **Question:** do you know the edition or year of your copy? If so, I will add it.

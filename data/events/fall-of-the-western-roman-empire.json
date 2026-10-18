@@ -44,6 +44,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=33",
       "source_text_id": "generations-world",
       "note": "Romulus Augustulus surrenders to Odoacer (p. 34)."
+    },
+    {
+      "source": "morecraft",
+      "date": "from about 145 B.C. to 476 A.D.",
+      "year_am": null,
+      "year_bc_ad": 476,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 49 (PDF p. 57)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca). The span of the ancient Roman empire; the year here is its end, 476. (Its start, about 145 B.C., differs by a year from PDF p. 40, where Rome begins to take over Greece in 146 B.C.)"
     }
   ],
   "people": [],
@@ -52,7 +64,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-europe",
-    "generations-world"
+    "generations-world",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [
