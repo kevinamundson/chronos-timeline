@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "accession-of-petubast-i",
+  "type": "event",
+  "title": "Accession of Petubast I",
+  "summary": "Accession of the 23rd-Dynasty king Petubast I.",
+  "description": "Accession of the 23rd-Dynasty king Petubast I. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -694,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 694 BC (AP-76, OSF preprint CFAH-10)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "694 BC",
+      "year_am": null,
+      "year_bc_ad": -694,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-10: The Libyan-Cushite Intermediate Period,\" OSF preprint v1.4 (26 Dec 2025), doi:10.17605/OSF.IO/FG4DV, file CFAH-10 The Libyan-Cushite Intermediate Period_v1.4.pdf, p. 10 (\"Anchor Point #76, the Accession of Petubast I in 694 BC\")",
+      "link": "https://osf.io/fg4dv/",
+      "source_text_id": "cfah-10-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-76",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-76:accession-of-petubast-i"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-10-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-10-osf",
+      "url": "https://osf.io/fg4dv/",
+      "locator": "p. 10, AP-76"
+    }
+  ]
+}

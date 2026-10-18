@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "joshuas-long-day",
+  "type": "event",
+  "title": "Joshua's long day (1450 BC high-water event)",
+  "summary": "The sun stands still over Gibeon during Joshua's conquest; CFAH-19 links the year to the peak of the Ice Age meltdown.",
+  "description": "The sun stands still over Gibeon during Joshua's conquest; CFAH-19 links the year to the peak of the Ice Age meltdown. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -1450,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1450 BC (AP-110, OSF preprint CFAH-19)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1450 BC",
+      "year_am": null,
+      "year_bc_ad": -1450,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-19: The Historical Ice Age,\" OSF preprint v1.0 (8 Jul 2026), doi:10.17605/OSF.IO/A5G6X, file CFAH-19_Historical_Ice_Age_v1.0.pdf, p. 24 (\"the year of Joshua’s Conquest, 1450 BC, recorded as new Anchor Point #110\")",
+      "link": "https://osf.io/a5g6x/",
+      "source_text_id": "cfah-19-osf",
+      "note": "CFAH-19 describes it as the high-water mark of the Ice Age meltdown in the year of Joshua's conquest; CFAH-17 p. 21 calls it \"Joshua’s Long Day in 1450 BC\" (see open question I14).",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-110",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-110:joshuas-long-day"
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Josh.10.12-Josh.10.14"
+  ],
+  "sources": [
+    "cfah-19-osf"
+  ],
+  "related": [
+    "conquest-of-canaan",
+    "fall-of-jericho"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-19-osf",
+      "url": "https://osf.io/a5g6x/",
+      "locator": "p. 24, AP-110"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "conquest-of-damascus-806-bc",
+  "type": "event",
+  "title": "Conquest of Damascus by Ashur-Nirari III, Shoshenq I and Jeroboam II",
+  "summary": "CFAH synchronises a conquest of Damascus by the Assyrian Ashur-Nirari III, the Egyptian Shoshenq I and Jeroboam II of Israel.",
+  "description": "CFAH synchronises a conquest of Damascus by the Assyrian Ashur-Nirari III, the Egyptian Shoshenq I and Jeroboam II of Israel. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -806,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 806 BC (AP-77, OSF preprint CFAH-10)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "806 BC",
+      "year_am": null,
+      "year_bc_ad": -806,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-10: The Libyan-Cushite Intermediate Period,\" OSF preprint v1.4 (26 Dec 2025), doi:10.17605/OSF.IO/FG4DV, file CFAH-10 The Libyan-Cushite Intermediate Period_v1.4.pdf, p. 12 (\"Anchor Point 77, the Conquest of Damascus by Ashur-Nirari III, Shoshenq I, and Jeroboam II in 806 BC\")",
+      "link": "https://osf.io/fg4dv/",
+      "source_text_id": "cfah-10-osf",
+      "note": "Printed without \"#\" (\"Anchor Point 77\").",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-77",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-77:conquest-of-damascus-806-bc"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "assyria",
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "2Kgs.14.25-2Kgs.14.28"
+  ],
+  "sources": [
+    "cfah-10-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-10-osf",
+      "url": "https://osf.io/fg4dv/",
+      "locator": "p. 12, AP-77"
+    }
+  ]
+}

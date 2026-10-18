@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "shamshi-adad-iv-conquers-assur",
+  "type": "event",
+  "title": "Shamshi-Adad IV conquers Assur",
+  "summary": "Shamshi-Adad IV takes Assur and the throne of Assyria.",
+  "description": "Shamshi-Adad IV takes Assur and the throne of Assyria. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -1053,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1053 BC (AP-87, OSF preprint CFAH-14)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1053 BC",
+      "year_am": null,
+      "year_bc_ad": -1053,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-14: Ancient Assyria,\" OSF preprint v1.0 (27 Feb 2026), doi:10.17605/OSF.IO/9FUW2, file CFAH-14_Assyria_v_1.0.pdf, p. 16, heading \"Shamshi-Adad IV - 1053 BC - Anchor Point #87\"",
+      "link": "https://osf.io/9fuw2/",
+      "source_text_id": "cfah-14-osf",
+      "note": "The second use of #87 in CFAH-14 (see open question I1). CFAH-15 Table cites it as \"Conquest of Assur by Shamshi Adad, CFAH-14, AP-87\".",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-87",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:osf14-ap-87b:shamshi-adad-iv-conquers-assur"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "assur",
+    "assyria"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-14-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-14-osf",
+      "url": "https://osf.io/9fuw2/",
+      "locator": "p. 16, AP-87 (second)"
+    }
+  ]
+}

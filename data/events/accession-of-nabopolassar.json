@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "accession-of-nabopolassar",
+  "type": "event",
+  "title": "Accession of Nabopolassar in Babylon",
+  "summary": "Nabopolassar becomes king of Babylon, founding the Neo-Babylonian (Chaldean) dynasty.",
+  "description": "Nabopolassar becomes king of Babylon, founding the Neo-Babylonian (Chaldean) dynasty. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -626,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 626 BC (AP-83, OSF preprint CFAH-14)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "626 BC",
+      "year_am": null,
+      "year_bc_ad": -626,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-14: Ancient Assyria,\" OSF preprint v1.0 (27 Feb 2026), doi:10.17605/OSF.IO/9FUW2, file CFAH-14_Assyria_v_1.0.pdf, p. 15, heading \"Nabopolassar - 626 BC - Anchor Point #83\"",
+      "link": "https://osf.io/9fuw2/",
+      "source_text_id": "cfah-14-osf",
+      "note": "CFAH-5 gives Nabopolassar's accession as 626/625 BC, and AP-45 begins Dynasty 8 in 626.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-83",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-83:accession-of-nabopolassar"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-14-osf"
+  ],
+  "related": [
+    "neo-babylonian-empire",
+    "fall-of-nineveh"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-14-osf",
+      "url": "https://osf.io/9fuw2/",
+      "locator": "p. 15, AP-83"
+    }
+  ]
+}

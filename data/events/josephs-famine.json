@@ -28,6 +28,22 @@
       "cfah_ap": "AP-58"
     },
     {
+      "source": "cfah",
+      "date": "1708-1701 BC",
+      "year_am": null,
+      "year_bc_ad": -1708,
+      "year_bc_ad_end": -1701,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"CFAH-17: The Ancient Chronologies of India and China,\" OSF preprint v1.2 (1 Aug 2026), doi:10.17605/OSF.IO/J4NXU, file CFAH-17_ India & China_v1.2.pdf, p. 22 (\"we can roughly date the time of Śantanu to 1708-1701 BC, Anchor Point #101\")",
+      "link": "https://osf.io/j4nxu/",
+      "source_text_id": "cfah-17-osf",
+      "note": "The 12 rainless years of Śantanu, king of Kuru, identified with Joseph's famine (published AP-58 has the same years).",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-101",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-101:josephs-famine"
+    },
+    {
       "source": "ussher",
       "date": "2296c AM, 1708 BC",
       "year_am": 2296,
@@ -91,7 +107,8 @@
     "blb-biblehub",
     "cfah-6",
     "ussher-annals-1658",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "cfah-17-osf"
   ],
   "free_source_links": [
     {
@@ -103,6 +120,11 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/41.htm#53",
       "locator": "Gen.41.53-Gen.41.57 ; Gen.45.6 ; Gen.47.13-Gen.47.26"
+    },
+    {
+      "source_id": "cfah-17-osf",
+      "url": "https://osf.io/j4nxu/",
+      "locator": "p. 22, AP-101"
     }
   ],
   "related": [

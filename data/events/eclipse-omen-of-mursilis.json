@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "eclipse-omen-of-mursilis",
+  "type": "event",
+  "title": "Solar eclipse omen in the 7th year of Mursilis",
+  "summary": "A solar eclipse omen recorded in the 7th year of the Hittite king Mursilis.",
+  "description": "A solar eclipse omen recorded in the 7th year of the Hittite king Mursilis. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -657,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: April 15th, 657 BC (AP-78, OSF preprint CFAH-13)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "April 15th, 657 BC",
+      "year_am": null,
+      "year_bc_ad": -657,
+      "precision": "day",
+      "citation": "Griffith & White, \"CFAH-13: The Hittites, Cimmerians, and Medes,\" OSF preprint v1.3 (2026), doi:10.17605/OSF.IO/BCWG2, file CFAH-13_Hittites_Cimmerians_Medes_v1.3.pdf, p. 24 (\"Anchor Point #78, the Solar Eclipse Omen in the 7th year of Mursilis, April 15th, 657 BC\")",
+      "link": "https://osf.io/bcwg2/",
+      "source_text_id": "cfah-13-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-78",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-78:eclipse-omen-of-mursilis"
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-13-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-13-osf",
+      "url": "https://osf.io/bcwg2/",
+      "locator": "p. 24, AP-78"
+    }
+  ]
+}

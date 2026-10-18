@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "death-of-amenhotep-iii",
+  "type": "event",
+  "title": "Death of Amenhotep III",
+  "summary": "Death of the 18th-Dynasty pharaoh Amenhotep III, placed by CFAH from the co-regencies counted from Solomon's death to Akhenaten's accession.",
+  "description": "Death of the 18th-Dynasty pharaoh Amenhotep III, placed by CFAH from the co-regencies counted from Solomon's death to Akhenaten's accession. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -889,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 889 BC plus or minus six months (AP-66, OSF preprint CFAH-8)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "889 BC plus or minus six months",
+      "year_am": null,
+      "year_bc_ad": -889,
+      "precision": "approximate",
+      "citation": "Griffith & White, \"CFAH-8: Placing Dynasties 15-18,\" OSF preprint v1.2 (29 Apr 2026), doi:10.17605/OSF.IO/Z5RTD, file CFAH-8_v1.2.pdf, p. 43 (\"889 BC plus or minus six months as new Anchor Point #66 for the death of Amenhotep III\")",
+      "link": "https://osf.io/z5rtd/",
+      "source_text_id": "cfah-8-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-66",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-66:death-of-amenhotep-iii"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-8-osf"
+  ],
+  "related": [
+    "reign-of-amenhotep-iii"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-8-osf",
+      "url": "https://osf.io/z5rtd/",
+      "locator": "p. 43, AP-66"
+    }
+  ]
+}

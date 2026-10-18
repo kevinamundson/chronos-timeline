@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "death-of-suppiluliuma-i",
+  "type": "event",
+  "title": "Letter of Dakhamunzu and the death of Suppiluliuma I",
+  "summary": "An Egyptian queen (Dakhamunzu) writes to the Hittite king Suppiluliuma I asking for a son to marry; Suppiluliuma dies soon afterwards.",
+  "description": "An Egyptian queen (Dakhamunzu) writes to the Hittite king Suppiluliuma I asking for a son to marry; Suppiluliuma dies soon afterwards. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -664,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 664 BC (AP-79, OSF preprint CFAH-13)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "664 BC",
+      "year_am": null,
+      "year_bc_ad": -664,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-13: The Hittites, Cimmerians, and Medes,\" OSF preprint v1.3 (2026), doi:10.17605/OSF.IO/BCWG2, file CFAH-13_Hittites_Cimmerians_Medes_v1.3.pdf, p. 24 (\"Anchor Point #79, the Letter of Dakhamunzu, and the death of Suppiluliuma I, 664 BC\")",
+      "link": "https://osf.io/bcwg2/",
+      "source_text_id": "cfah-13-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-79",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-79:death-of-suppiluliuma-i"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-13-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-13-osf",
+      "url": "https://osf.io/bcwg2/",
+      "locator": "p. 24, AP-79"
+    }
+  ]
+}

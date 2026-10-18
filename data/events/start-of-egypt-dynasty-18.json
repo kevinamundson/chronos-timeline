@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "start-of-egypt-dynasty-18",
+  "type": "event",
+  "title": "End of Egypt's 17th Dynasty and start of the 18th",
+  "summary": "CFAH triangulates the end of Dynasty 17 and the start of Dynasty 18 of Egypt, including a count from the Exodus.",
+  "description": "CFAH triangulates the end of Dynasty 17 and the start of Dynasty 18 of Egypt, including a count from the Exodus. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -1081,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1081 BC (AP-63, OSF preprint CFAH-8)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1081 BC",
+      "year_am": null,
+      "year_bc_ad": -1081,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-8: Placing Dynasties 15-18,\" OSF preprint v1.2 (29 Apr 2026), doi:10.17605/OSF.IO/Z5RTD, file CFAH-8_v1.2.pdf, p. 18 (\"new Anchor Point #63, the End of Dynasty 17, and Start of Dynasty 18 in 1081 BC\")",
+      "link": "https://osf.io/z5rtd/",
+      "source_text_id": "cfah-8-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-63",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-63:start-of-egypt-dynasty-18"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-8-osf"
+  ],
+  "related": [
+    "hyksos-rule-in-egypt",
+    "exodus"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-8-osf",
+      "url": "https://osf.io/z5rtd/",
+      "locator": "p. 18, AP-63"
+    }
+  ]
+}

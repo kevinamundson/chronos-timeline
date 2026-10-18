@@ -30,6 +30,19 @@ for (const dir of ['events', 'people', 'locations']) for (const f of readdirSync
 }
 const sources = JSON.parse(readFileSync(join(DATA, 'sources.json'), 'utf8')).sources;
 const srcIds = new Set(sources.map((s) => s.id));
+const srcDocFile = join(DATA, 'sources.json');
+let sourcesDirty = false;
+// OSF preprint sources (phase 4): same shape as cfah-14-osf; added once, never rewritten.
+function ensureOsfSource(id) {
+  if (srcIds.has(id) || !OSF[id]) return;
+  const m = OSF[id];
+  const date = (m.ver.match(/\(([^)]*)\)/) || [])[1] || '';
+  sources.push({ id, title: `CFAH-${m.n}: ${m.title}`, authors: ['Kenneth C. Griffith', 'Darrell K. White'], translator_or_editor: null, year: (date.match(/\d{4}/) || ['2026'])[0],
+    publication: `OSF preprint ${m.ver.replace(/ \(.*\)/, '')}, ${date} (file ${m.file}), doi:10.17605/OSF.IO/${m.node.toUpperCase()}`, url: osfUrl(id), alt_urls: m.fileId ? [`https://osf.io/${m.node}/files/osfstorage/${m.fileId}`] : [],
+    access: 'free-to-read', license_note: 'Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.',
+    verified_on: '2026-10-18', note: 'Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.' });
+  srcIds.add(id); sourcesDirty = true;
+}
 const changesFile = join(here, 'sort-changes.json');
 const sortChanges = existsSync(changesFile) ? JSON.parse(readFileSync(changesFile, 'utf8')) : {};
 const createdFile = join(here, 'created.json'); // record id -> phase in which this importer first created it
@@ -165,11 +178,12 @@ for (const it of KINGS) for (const ev of it.create?.events || []) {
   if (!r.doc.people.includes(it.id)) { r.doc.people.push(it.id); r.dirty = true; log.phase3.updated.add(ev); }
 }
 for (const it of EPOCHS) addEntry('phase3', it, 'paper_text');
-for (const it of PHASE4) addEntry('phase4', it, 'anchor_point');
+for (const it of PHASE4) { ensureOsfSource(it.src); addEntry('phase4', it, 'anchor_point'); }
 dropStale();
 backfill();
 for (const r of Object.values(recs)) if (r.touched && r.doc.type !== 'location') resort(r);
 for (const [id, r] of Object.entries(recs)) if (r.dirty) writeFileSync(join(DATA, r.dir, `${id}.json`), JSON.stringify(r.doc, null, 2) + '\n');
+if (sourcesDirty) { const sd = JSON.parse(readFileSync(srcDocFile, 'utf8')); sd.sources = sources; writeFileSync(srcDocFile, JSON.stringify(sd, null, 2) + '\n'); }
 writeFileSync(changesFile, JSON.stringify(sortChanges, null, 2) + '\n');
 writeFileSync(createdFile, JSON.stringify(Object.fromEntries(Object.entries(createdBy).filter(([id]) => recs[id]).sort()), null, 2) + '\n');
 for (const [p, v] of Object.entries(log)) if (v.new.size || v.updated.size) console.log(`${p}: ${v.new.size} new, ${v.updated.size} updated records`);

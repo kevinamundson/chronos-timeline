@@ -79,16 +79,16 @@
   },
   "fall-of-samaria": {
     "from": {
-      "tier": "provisional",
-      "year": -721
-    },
-    "to": {
       "tier": "cfah-table1",
       "year": -721
     },
-    "by": "CFAH-1 Table 1",
+    "to": {
+      "tier": "cfah-anchor",
+      "year": -722
+    },
+    "by": "AP-87",
     "on": "2026-10-18",
-    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 361): 721 BC. Pending owner decision (open question A8)."
+    "was_note": "Tier 2: CFAH-1 Table 1 baseline: 721 or 720 BC (Fall of Samaria, see Gertoux (2015, 1–34)). Sort changed by the CFAH pass (2026-10-18): was provisional (Generations) 721 BC."
   },
   "second-siege-of-jerusalem": {
     "from": {
@@ -115,5 +115,57 @@
     "by": "CFAH-1 Table 1",
     "on": "2026-10-18",
     "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 609): 516 BC. Pending owner decision (open question A8)."
+  },
+  "egyptian-hittite-peace-treaty": {
+    "from": {
+      "tier": "provisional",
+      "year": -1279
+    },
+    "to": {
+      "tier": "cfah-anchor",
+      "year": -624
+    },
+    "by": "AP-73",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (1st ed., 2020), PDF p. 298): 1279 BC. Pending owner decision (open question A8)."
+  },
+  "exodus": {
+    "from": {
+      "tier": "cfah-table1",
+      "year": -1491
+    },
+    "to": {
+      "tier": "cfah-anchor",
+      "year": -1491
+    },
+    "by": "AP-109",
+    "on": "2026-10-18",
+    "was_note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1491 BC (Exodus) (no higher-tier year available)."
+  },
+  "fall-of-nineveh": {
+    "from": {
+      "tier": "provisional",
+      "year": -612
+    },
+    "to": {
+      "tier": "cfah-anchor",
+      "year": -612
+    },
+    "by": "AP-84",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 481): 612 BC. Pending owner decision (open question A8)."
+  },
+  "partholan-colonizes-ireland": {
+    "from": {
+      "tier": "provisional",
+      "year": -2036
+    },
+    "to": {
+      "tier": "cfah-anchor",
+      "year": -2035
+    },
+    "by": "AP-103",
+    "on": "2026-10-18",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 131): 2036 BC. Pending owner decision (open question A8)."
   }
 }

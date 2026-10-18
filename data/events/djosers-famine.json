@@ -28,6 +28,22 @@
       "cfah_ap": "AP-49"
     },
     {
+      "source": "cfah",
+      "date": "2001 to 1994 BC",
+      "year_am": null,
+      "year_bc_ad": -2001,
+      "year_bc_ad_end": -1994,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"CFAH-17: The Ancient Chronologies of India and China,\" OSF preprint v1.2 (1 Aug 2026), doi:10.17605/OSF.IO/J4NXU, file CFAH-17_ India & China_v1.2.pdf, p. 22 (\"Samvarana Famine as Anchor Point #102 from 2001 to 1994 BC\")",
+      "link": "https://osf.io/j4nxu/",
+      "source_text_id": "cfah-17-osf",
+      "note": "The Samvarana famine of Indian tradition, identified with the seven-year famine of Djoser (published AP-49 has the same years).",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-102",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-102:djosers-famine"
+    },
+    {
       "source": "ussher-jones",
       "date": null,
       "year_am": null,
@@ -84,13 +100,19 @@
   "scripture_refs": [],
   "sources": [
     "blb-biblehub",
-    "cfah-6"
+    "cfah-6",
+    "cfah-17-osf"
   ],
   "free_source_links": [
     {
       "source_id": "cfah-6",
       "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
       "locator": "Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #49; Argument 2 §A \"Djoser's Famine culminated with the death of Uenephes: 2001–1994 BC\"; Argument 4 §2 \"Terah's Famine and Abraham's Bir"
+    },
+    {
+      "source_id": "cfah-17-osf",
+      "url": "https://osf.io/j4nxu/",
+      "locator": "p. 22, AP-102"
     }
   ],
   "related": [

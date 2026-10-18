@@ -4,24 +4,29 @@
   "type": "event",
   "title": "Partholan, the first colonist of Ireland",
   "summary": "Partholan, the first colonist of Ireland",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -2036,
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
+  "sorting_year": -2035,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 131): 2036 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2035 BC (AP-103, OSF preprint CFAH-18). Sort changed by the CFAH pass (2026-10-18): was provisional (Generations) 2036 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "2035 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -2035,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-18: The Ancient Chronology of Ireland,\" OSF preprint v1.4 (17 Aug 2026), doi:10.17605/OSF.IO/28P43, file cfah-18_v1.4.pdf, p. 8 (\"Anchor Point #103, Partholón’s Discovery of Ireland in 2035 BC\")",
+      "link": "https://osf.io/28p43/",
+      "source_text_id": "cfah-18-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-103",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-103:partholan-colonizes-ireland"
     },
     {
       "source": "generations",
@@ -40,8 +45,15 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cfah-18-osf"
   ],
   "related": [],
-  "free_source_links": []
+  "free_source_links": [
+    {
+      "source_id": "cfah-18-osf",
+      "url": "https://osf.io/28p43/",
+      "locator": "p. 8, AP-103"
+    }
+  ]
 }

@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "osorkon-iii-king-of-tanis",
+  "type": "event",
+  "title": "Osorkon III appointed king of Tanis",
+  "summary": "Osorkon III is appointed king of Tanis in the Delta.",
+  "description": "Osorkon III is appointed king of Tanis in the Delta. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -663,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 663 BC (AP-71, OSF preprint CFAH-9)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "663 BC",
+      "year_am": null,
+      "year_bc_ad": -663,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-9: The 19th and 26th Dynasties of Egypt,\" OSF preprint v1.4 (25 Sep 2025), doi:10.17605/OSF.IO/HV3B2, file CFAH-9_Dynasties_19_and_26_v1.4.pdf, p. 19, section \"AP-71: Appointment of Osorkon III as king of Tanis: 663 BC\"",
+      "link": "https://osf.io/hv3b2/",
+      "source_text_id": "cfah-9-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-71",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-71:osorkon-iii-king-of-tanis"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-9-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-9-osf",
+      "url": "https://osf.io/hv3b2/",
+      "locator": "p. 19, AP-71"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "accession-of-shoshenq-iii",
+  "type": "event",
+  "title": "Accession of Shoshenq III",
+  "summary": "Accession of the 22nd-Dynasty king Shoshenq III.",
+  "description": "Accession of the 22nd-Dynasty king Shoshenq III. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -702,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 702 BC (AP-75, OSF preprint CFAH-10)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "702 BC",
+      "year_am": null,
+      "year_bc_ad": -702,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-10: The Libyan-Cushite Intermediate Period,\" OSF preprint v1.4 (26 Dec 2025), doi:10.17605/OSF.IO/FG4DV, file CFAH-10 The Libyan-Cushite Intermediate Period_v1.4.pdf, p. 10 (\"Anchor Point #75, the Accession of Shoshenq III in 702 BC\")",
+      "link": "https://osf.io/fg4dv/",
+      "source_text_id": "cfah-10-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-75",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-75:accession-of-shoshenq-iii"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-10-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-10-osf",
+      "url": "https://osf.io/fg4dv/",
+      "locator": "p. 10, AP-75"
+    }
+  ]
+}

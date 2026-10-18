@@ -4,24 +4,30 @@
   "type": "event",
   "title": "Ramses II and the Hittites: the first written peace treaty",
   "summary": "Ramses II and the Hittites: the first written peace treaty",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -1279,
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
+  "sorting_year": -624,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (1st ed., 2020), PDF p. 298): 1279 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 624/623 BC (AP-73, OSF preprint CFAH-9). Sort changed by the CFAH pass (2026-10-18): was provisional (Generations) 1279 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "624/623 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -624,
+      "year_bc_ad_end": -623,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"CFAH-9: The 19th and 26th Dynasties of Egypt,\" OSF preprint v1.4 (25 Sep 2025), doi:10.17605/OSF.IO/HV3B2, file CFAH-9_Dynasties_19_and_26_v1.4.pdf, p. 29, section \"AP-73: Treaty of Kadesh, 624/623 BC\"",
+      "link": "https://osf.io/hv3b2/",
+      "source_text_id": "cfah-9-osf",
+      "note": "CFAH-9 elsewhere gives the treaty year as 623 BC (see open question I13). CFAH's revised chronology places Rameses II in the 7th century BC, so this moves the record far from its conventional (Generations) date.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-73",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-73:egyptian-hittite-peace-treaty"
     },
     {
       "source": "generations",
@@ -41,7 +47,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "cfah-9-osf"
   ],
   "related": [],
   "free_source_links": [
@@ -49,6 +56,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "cfah-9-osf",
+      "url": "https://osf.io/hv3b2/",
+      "locator": "p. 29, AP-73"
     }
   ]
 }

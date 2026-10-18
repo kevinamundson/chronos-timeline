@@ -5,14 +5,29 @@
   "title": "Assyria destroys the northern kingdom of Israel",
   "summary": "Assyria destroys the northern kingdom of Israel",
   "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
-  "sorting_year": -721,
+  "sorting_year": -722,
   "sorting_basis": {
-    "tier": "cfah-table1",
-    "tier_rank": 2,
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
     "chronology": "cfah",
-    "note": "Tier 2: CFAH-1 Table 1 baseline: 721 or 720 BC (Fall of Samaria, see Gertoux (2015, 1–34)). Sort changed by the CFAH pass (2026-10-18): was provisional (Generations) 721 BC."
+    "note": "Tier 1: CFAH anchor point: 722 BC (AP-87, OSF preprint CFAH-14). Sort changed by the CFAH pass (2026-10-18): was cfah-table1 721 BC."
   },
   "chronologies": [
+    {
+      "source": "cfah",
+      "date": "722 BC",
+      "year_am": null,
+      "year_bc_ad": -722,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-14: Ancient Assyria,\" OSF preprint v1.0 (27 Feb 2026), doi:10.17605/OSF.IO/9FUW2, file CFAH-14_Assyria_v_1.0.pdf, p. 16, heading \"Accession of Sargon II, Fall of Samaria - 722 BC - Anchor Point #87\"",
+      "link": "https://osf.io/9fuw2/",
+      "source_text_id": "cfah-14-osf",
+      "note": "CFAH-14 uses the number #87 twice on p. 16 (here and for Shamshi-Adad IV in 1053 BC); see open question I1.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-87",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:osf14-ap-87a:fall-of-samaria"
+    },
     {
       "source": "cfah",
       "date": "721 or 720 BC (Fall of Samaria, see Gertoux (2015, 1–34))",
@@ -101,7 +116,8 @@
     "generations-preparing",
     "generations-preparing-2e",
     "morecraft-christian-survey",
-    "cfah-1"
+    "cfah-1",
+    "cfah-14-osf"
   ],
   "related": [],
   "free_source_links": [
@@ -114,6 +130,11 @@
       "source_id": "cfah-1",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
       "locator": "Table 1 \"Biblically derived dates from Ussher and Jones\""
+    },
+    {
+      "source_id": "cfah-14-osf",
+      "url": "https://osf.io/9fuw2/",
+      "locator": "p. 16, AP-87 (first)"
     }
   ]
 }

@@ -27,6 +27,21 @@
       "cfah_basis": "anchor_point",
       "cfah_ap": "AP-34",
       "cfah_key": "cfah:ap-34:second-median-revolt"
+    },
+    {
+      "source": "cfah",
+      "date": "705 BC",
+      "year_am": null,
+      "year_bc_ad": -705,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-14: Ancient Assyria,\" OSF preprint v1.0 (27 Feb 2026), doi:10.17605/OSF.IO/9FUW2, file CFAH-14_Assyria_v_1.0.pdf, p. 16, heading \"Death of Sargon II - 705 BC - Anchor Point #86\"",
+      "link": "https://osf.io/9fuw2/",
+      "source_text_id": "cfah-14-osf",
+      "note": "The same event as CFAH-5 AP-34 (death of Sargon II, 705–700 B.C.), now given its own number.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-86",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-86:second-median-revolt"
     }
   ],
   "people": [
@@ -39,7 +54,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-5"
+    "cfah-5",
+    "cfah-14-osf"
   ],
   "related": [
     "first-median-revolt",
@@ -50,6 +66,11 @@
       "source_id": "cfah-5",
       "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
       "locator": "AP-34"
+    },
+    {
+      "source_id": "cfah-14-osf",
+      "url": "https://osf.io/9fuw2/",
+      "locator": "p. 16, AP-86"
     }
   ]
 }

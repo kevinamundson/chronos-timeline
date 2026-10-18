@@ -1060,6 +1060,120 @@
       "license_note": "Copyrighted. The site owner's private scanned copy (not in this repository and not linked). Only dates as printed, page citations and short notes in our own words are used. The url is a public listing of the book (Heritage Presbyterian Church bookstore), not a copy of the text.",
       "verified_on": "2026-10-18",
       "note": "The year field is null because no date of publication is printed and the PDF has no creation date. The \"Ancient Empires\" pages (PDF pp. 49–59) reproduce \"Fact Finder\" material, with an image credited to \"Daily Bible Study www.keyway.ca\" (PDF p. 57)."
+    },
+    {
+      "id": "cfah-8-osf",
+      "title": "CFAH-8: Placing Dynasties 15-18",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "publication": "OSF preprint v1.2, 29 Apr 2026 (file CFAH-8_v1.2.pdf), doi:10.17605/OSF.IO/Z5RTD",
+      "url": "https://osf.io/z5rtd/",
+      "alt_urls": [
+        "https://osf.io/z5rtd/files/osfstorage/69f182006f8704d0892e55f0"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-18",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cfah-9-osf",
+      "title": "CFAH-9: The 19th and 26th Dynasties of Egypt",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF preprint v1.4, 25 Sep 2025 (file CFAH-9_Dynasties_19_and_26_v1.4.pdf), doi:10.17605/OSF.IO/HV3B2",
+      "url": "https://osf.io/hv3b2/",
+      "alt_urls": [
+        "https://osf.io/hv3b2/files/osfstorage/68d5792ddd1e49e0cbe8cd4d"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-18",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cfah-10-osf",
+      "title": "CFAH-10: The Libyan-Cushite Intermediate Period",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF preprint v1.4, 26 Dec 2025 (file CFAH-10 The Libyan-Cushite Intermediate Period_v1.4.pdf), doi:10.17605/OSF.IO/FG4DV",
+      "url": "https://osf.io/fg4dv/",
+      "alt_urls": [
+        "https://osf.io/fg4dv/files/osfstorage/694ecff9e28081f64d2ce4e2"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-18",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cfah-17-osf",
+      "title": "CFAH-17: The Ancient Chronologies of India and China",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "publication": "OSF preprint v1.2, 1 Aug 2026 (file CFAH-17_ India & China_v1.2.pdf), doi:10.17605/OSF.IO/J4NXU",
+      "url": "https://osf.io/j4nxu/",
+      "alt_urls": [
+        "https://osf.io/j4nxu/files/osfstorage/6a6e7bed0dd9e3bb2d4b9013"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-18",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cfah-18-osf",
+      "title": "CFAH-18: The Ancient Chronology of Ireland",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "publication": "OSF preprint v1.4, 17 Aug 2026 (file cfah-18_v1.4.pdf), doi:10.17605/OSF.IO/28P43",
+      "url": "https://osf.io/28p43/",
+      "alt_urls": [
+        "https://osf.io/28p43/files/osfstorage/6a8352abe42635051dedda69"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-18",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cfah-19-osf",
+      "title": "CFAH-19: The Historical Ice Age",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "publication": "OSF preprint v1.0, 8 Jul 2026 (file CFAH-19_Historical_Ice_Age_v1.0.pdf), doi:10.17605/OSF.IO/A5G6X",
+      "url": "https://osf.io/a5g6x/",
+      "alt_urls": [
+        "https://osf.io/a5g6x/files/osfstorage/6a4e6244abd79cc9ba3b3049"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-18",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
     }
   ]
 }

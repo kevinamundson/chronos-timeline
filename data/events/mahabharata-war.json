@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "mahabharata-war",
+  "type": "event",
+  "title": "The Mahabharata War (Indian tradition)",
+  "summary": "The war of the Mahabharata epic, dated by CFAH from the years before the death of Krishna.",
+  "description": "The war of the Mahabharata epic, dated by CFAH from the years before the death of Krishna. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -1487,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1487 to 1451 BC (AP-100, OSF preprint CFAH-17)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1487 to 1451 BC",
+      "year_am": null,
+      "year_bc_ad": -1487,
+      "year_bc_ad_end": -1451,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"CFAH-17: The Ancient Chronologies of India and China,\" OSF preprint v1.2 (1 Aug 2026), doi:10.17605/OSF.IO/J4NXU, file CFAH-17_ India & China_v1.2.pdf, p. 21 (\"we can date it from 1487 to 1451 BC, forming Anchor Point #100, The Mahabharata War\")",
+      "link": "https://osf.io/j4nxu/",
+      "source_text_id": "cfah-17-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-100",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-100:mahabharata-war"
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-17-osf"
+  ],
+  "related": [
+    "death-of-krishna"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-17-osf",
+      "url": "https://osf.io/j4nxu/",
+      "locator": "p. 21, AP-100"
+    }
+  ]
+}

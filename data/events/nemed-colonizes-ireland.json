@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "nemed-colonizes-ireland",
+  "type": "event",
+  "title": "Nemed colonizes Ireland",
+  "summary": "Nemed leads the second colonization of Ireland in the Irish annals.",
+  "description": "Nemed leads the second colonization of Ireland in the Irish annals. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -1725,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1725 BC (AP-104, OSF preprint CFAH-18)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1725 BC",
+      "year_am": null,
+      "year_bc_ad": -1725,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-18: The Ancient Chronology of Ireland,\" OSF preprint v1.4 (17 Aug 2026), doi:10.17605/OSF.IO/28P43, file cfah-18_v1.4.pdf, p. 10 (\"Anchor Point #104, Nemed Colonizes Ireland in 1725 BC\")",
+      "link": "https://osf.io/28p43/",
+      "source_text_id": "cfah-18-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-104",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-104:nemed-colonizes-ireland"
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-18-osf"
+  ],
+  "related": [
+    "partholan-colonizes-ireland"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-18-osf",
+      "url": "https://osf.io/28p43/",
+      "locator": "p. 10, AP-104"
+    }
+  ]
+}

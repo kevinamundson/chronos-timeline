@@ -552,3 +552,26 @@ None of these records has a tier 1–4 date, so the sort stays on Generations an
   - The Herodotus importer keeps only the first CFAH entry per slot on its own people, and drops CFAH-only reign slots.
   - So the CFAH importer (`node scripts/cfah/import.mjs`) must run after it. It is idempotent and restores its entries.
   - I put CFAH dates on only one Herodotus person (Mycerinus), and only in the death slot.
+
+### E5. Phase 4: OSF preprint anchor points, and what is still out
+- **Every numbered OSF anchor point found (AP-62 to AP-110, 44 numbers) is now recorded.**
+  - This pass added 37 of them: 29 new events, and AP entries on 9 existing events.
+  - AP-82 and AP-88 to 93 were already recorded.
+  - Numbers 81 and 95 to 98 occur in no OSF file.
+  - All are marked `cfah_preprint`, cite "OSF preprint", and rank as CFAH anchor points (A1, option 1).
+  - Six OSF sources were added (`cfah-8/9/10/17/18/19-osf`). Their licenses were checked through the OSF API: none set.
+- **Sort changes:**
+  - **`egyptian-hittite-peace-treaty`: 1279 BC (provisional) → 624 BC (OSF AP-73, "Treaty of Kadesh, 624/623 BC").** CFAH-9 places Rameses II in the 7th century BC, so this record moves about 650 years.
+  - **`fall-of-samaria`: 721 BC (CFAH-1 Table 1, published) → 722 BC (OSF AP-87, preprint).** Under the tier rule a preprint anchor point outranks a published Table 1 row.
+  - `partholan-colonizes-ireland`: 2036 → 2035 BC (AP-103).
+  - `exodus` and `fall-of-nineveh` keep their years but are now tier 1.
+- **Where a published anchor point exists, it still sets the sort** and the OSF entry is shown second:
+  - Xia: AP-4 2197 BC over AP-94 2192/2191 BC
+  - Joseph's famine: AP-58 over AP-101
+  - Djoser's famine: AP-49 over AP-102
+  - Death of Sargon II: AP-34 over AP-86
+- **Not imported:** the per-king rows of the OSF king lists and supplementary tables (CFAH-7B Dynasties 1–13; CFAH-9 and 10 Dynasties 19 to 26; CFAH-14 Assyria; CFAH-15 Sumer, Akkad and Babylon; CFAH-16 Israel and Judah). They are long reconstruction tables with hundreds of rows. Only their numbered anchor points are recorded.
+- **Options:**
+  1. Leave as is.
+  2. Import them paper by paper as display-only `paper_text` preprint entries on new ruler records.
+- **Recommendation:** for the 624 BC treaty, keep the CFAH sort, since that is what the tier rule says, but tell me if OSF preprints should not move records this far. For the king lists, option 1 for now, and option 2 for CFAH-16 first if you want the kings of Israel and Judah.

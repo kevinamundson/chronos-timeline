@@ -28,6 +28,22 @@
       "cfah_key": "cfah:ap-4:xia-dynasty-founded"
     },
     {
+      "source": "cfah",
+      "date": "2192/2191 BC",
+      "year_am": null,
+      "year_bc_ad": -2192,
+      "year_bc_ad_end": -2191,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"CFAH-17: The Ancient Chronologies of India and China,\" OSF preprint v1.2 (1 Aug 2026), doi:10.17605/OSF.IO/J4NXU, file CFAH-17_ India & China_v1.2.pdf, p. 7 (\"anchor point #94, the Revised accession of Yu in 2192/2191 BC\")",
+      "link": "https://osf.io/j4nxu/",
+      "source_text_id": "cfah-17-osf",
+      "note": "Revises AP-4 (2197 BC, CFAH-2) using a corrected 1935-year span from Yu to the end of Zhou, aligning Yu with the Dispersion. The published AP-4 still sets the sort; see open question I9.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-94",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-94:xia-dynasty-founded"
+    },
+    {
       "source": "generations",
       "date": "2197 BC",
       "year_am": null,
@@ -45,7 +61,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing-2e",
-    "cfah-2"
+    "cfah-2",
+    "cfah-17-osf"
   ],
   "related": [],
   "free_source_links": [
@@ -53,6 +70,11 @@
       "source_id": "cfah-2",
       "url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
       "locator": "Table 3, AP-4"
+    },
+    {
+      "source_id": "cfah-17-osf",
+      "url": "https://osf.io/j4nxu/",
+      "locator": "p. 7, AP-94"
     }
   ]
 }

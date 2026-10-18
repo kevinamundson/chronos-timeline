@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "death-of-gyges",
+  "type": "event",
+  "title": "Death of Gyges of Lydia",
+  "summary": "CFAH dates the death of Gyges king of Lydia (by a bolide impact, in its reading) to the 3rd year of Tugdamme-Mursilis and the 3rd campaign of Ashurbanipal.",
+  "description": "CFAH dates the death of Gyges king of Lydia (by a bolide impact, in its reading) to the 3rd year of Tugdamme-Mursilis and the 3rd campaign of Ashurbanipal. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -661,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 661 BC (AP-80, OSF preprint CFAH-13)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "661 BC",
+      "year_am": null,
+      "year_bc_ad": -661,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-13: The Hittites, Cimmerians, and Medes,\" OSF preprint v1.3 (2026), doi:10.17605/OSF.IO/BCWG2, file CFAH-13_Hittites_Cimmerians_Medes_v1.3.pdf, p. 24 (\"Anchor Point #80, the death of Gyges by Bolide Impact in the 3rd year of Tugdamme-Mursilis, 3rd campaign of Ashurbanipal, 661 BC\")",
+      "link": "https://osf.io/bcwg2/",
+      "source_text_id": "cfah-13-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-80",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-80:death-of-gyges"
+    }
+  ],
+  "people": [
+    "gyges"
+  ],
+  "locations": [
+    "sardis"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-13-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-13-osf",
+      "url": "https://osf.io/bcwg2/",
+      "locator": "p. 24, AP-80"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "demise-of-ashur-uballit-ii",
+  "type": "event",
+  "title": "Demise of Ashur-uballit II, last king of Assyria",
+  "summary": "The last Assyrian king, Ashur-uballit II, is defeated at Harran, ending the Assyrian Empire.",
+  "description": "The last Assyrian king, Ashur-uballit II, is defeated at Harran, ending the Assyrian Empire. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -609,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 609/608 BC (AP-85, OSF preprint CFAH-14)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "609/608 BC",
+      "year_am": null,
+      "year_bc_ad": -609,
+      "year_bc_ad_end": -608,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"CFAH-14: Ancient Assyria,\" OSF preprint v1.0 (27 Feb 2026), doi:10.17605/OSF.IO/9FUW2, file CFAH-14_Assyria_v_1.0.pdf, p. 16, heading \"Demise of Ashur-Uballit II - 609/608 BC - Anchor Point #85\"",
+      "link": "https://osf.io/9fuw2/",
+      "source_text_id": "cfah-14-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-85",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-85:demise-of-ashur-uballit-ii"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "haran",
+    "assyria"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-14-osf"
+  ],
+  "related": [
+    "fall-of-nineveh"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-14-osf",
+      "url": "https://osf.io/9fuw2/",
+      "locator": "p. 16, AP-85"
+    }
+  ]
+}

@@ -7,12 +7,27 @@
   "description": "CFAH-6 frames its Egyptian reconstruction as running \"from the Dispersion in 2191 BC until the Exodus in 1491 BC\" and finds the deaths of Concharis and Merenre II at 1491 BC ±6 months; the year itself is CFAH-1 Table 1's Ussher-Jones baseline.",
   "sorting_year": -1491,
   "sorting_basis": {
-    "tier": "cfah-table1",
-    "tier_rank": 2,
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
     "chronology": "cfah",
-    "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1491 BC (Exodus) (no higher-tier year available)."
+    "note": "Tier 1: CFAH anchor point: 1491 BC (AP-109, OSF preprint CFAH-19). Sort changed by the CFAH pass (2026-10-18): was cfah-table1 1491 BC."
   },
   "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1491 BC",
+      "year_am": null,
+      "year_bc_ad": -1491,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-19: The Historical Ice Age,\" OSF preprint v1.0 (8 Jul 2026), doi:10.17605/OSF.IO/A5G6X, file CFAH-19_Historical_Ice_Age_v1.0.pdf, p. 15 (\"the year of the Exodus in 1491 BC, new Anchor Point #109\")",
+      "link": "https://osf.io/a5g6x/",
+      "source_text_id": "cfah-19-osf",
+      "note": "CFAH-19 frames this as the cataclysm around the Exodus; the year matches CFAH-1 Table 1.",
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-109",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-109:exodus"
+    },
     {
       "source": "cfah",
       "date": "1491 BC (Exodus)",
@@ -205,7 +220,8 @@
     "jordan-sbc-3",
     "jordan-book-law-of-the-covenant-1984",
     "jordan-compilation-anno-mundi",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "cfah-19-osf"
   ],
   "free_source_links": [
     {
@@ -227,6 +243,11 @@
       "source_id": "jordan-bc-6-7",
       "url": "https://biblicalhorizons.com/1994/07/01/6_07/",
       "locator": "§16 Chronology of the Plagues & Exodus"
+    },
+    {
+      "source_id": "cfah-19-osf",
+      "url": "https://osf.io/a5g6x/",
+      "locator": "p. 15, AP-109"
     }
   ],
   "related": [

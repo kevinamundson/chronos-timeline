@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "reign-of-cecrops",
+  "type": "event",
+  "title": "Reign of Cecrops, first king of Athens",
+  "summary": "Cecrops, the first king of Attica and Athens in Greek tradition.",
+  "description": "Cecrops, the first king of Attica and Athens in Greek tradition. Recorded from a CFAH OSF preprint anchor point (not yet published in ARJ). Added by the CFAH pass.",
+  "sorting_year": -1495,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1495 to 1445 BC (AP-108, OSF preprint CFAH-19)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1495 to 1445 BC",
+      "year_am": null,
+      "year_bc_ad": -1495,
+      "year_bc_ad_end": -1445,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"CFAH-19: The Historical Ice Age,\" OSF preprint v1.0 (8 Jul 2026), doi:10.17605/OSF.IO/A5G6X, file CFAH-19_Historical_Ice_Age_v1.0.pdf, p. 13 (\"the Reign of Cecrops from 1495 to 1445 BC becomes Anchor Point #108\")",
+      "link": "https://osf.io/a5g6x/",
+      "source_text_id": "cfah-19-osf",
+      "note": null,
+      "cfah_basis": "anchor_point",
+      "cfah_ap": "AP-108",
+      "cfah_preprint": true,
+      "cfah_key": "cfah:ap-108:reign-of-cecrops"
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-19-osf"
+  ],
+  "related": [
+    "flood-of-ogyges"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-19-osf",
+      "url": "https://osf.io/a5g6x/",
+      "locator": "p. 13, AP-108"
+    }
+  ]
+}
