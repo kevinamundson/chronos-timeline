@@ -24,6 +24,50 @@
       "note": "CFAH-3: 296 years after the First Olympiad (776 B.C.) gives \"480 B.C. Xerxes invades Greece\"; 704 years after the Fall of Troy (1183 B.C.) gives 479 B.C. \"The Second Persian Invasion of Greece ended in June 479 B.C., about 15 months after it began.\"",
       "source_text_id": "cfah-3",
       "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "herodotus",
+      "date": "“Reckoning from the recovery of Egypt, Xerxes spent four full years in collecting his host”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 7.20 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 439 (PDF p. 441)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=Reckoning%20from%20the%20recovery%20of%20Egypt%2C%20Xerxes%20spent",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": null
+    },
+    {
+      "source": "herodotus",
+      "date": "“It was not till the close of the fifth year that he set forth on his march”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 7.20 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 439 (PDF p. 441)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=It%20was%20not%20till%20the%20close%20of%20the",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Agrees with CFAH AP-13 (480 BC) for the invasion, which this interval is counted towards."
+    },
+    {
+      "source": "herodotus",
+      "date": "“having first wintered at Sardis, began its march towards Abydos, fully equipped, on the first approach of spring”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 7.37 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 445 (PDF p. 447)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=having%20first%20wintered%20at%20Sardis%2C%20began%20its%20march",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "At the departure \"the sun suddenly quitted his seat in the heavens\" (7.37); no astronomical date is attached here. Spring of the invasion year, 480 BC by CFAH AP-13."
+    },
+    {
+      "source": "herodotus",
+      "date": "“a space of four months had gone by; one, while the army made the crossing, and delayed about the region of the Hellespont; and three while they proceeded thence to Attica, which they entered in the archonship of Calliades”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 8.51 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 536 (PDF p. 538)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_8#:~:text=a%20space%20of%20four%20months%20had%20gone%20by",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Herodotus dates by the Athenian archon; he does not number the year. Within CFAH AP-13 (480 BC)."
     }
   ],
   "people": [
@@ -48,6 +92,16 @@
       "source_id": "cfah-3",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "locator": "AP-13: Xerxes’ Invasion of Greece: 480 B.C."
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7",
+      "locator": "Book 7"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_8",
+      "locator": "Book 8"
     }
   ]
 }

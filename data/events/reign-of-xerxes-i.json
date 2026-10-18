@@ -48,6 +48,28 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Heading \"Ahasuerus: The Zenith of Persian Power\"; a caption on p. 542 gives Xerxes I 518–465 BC, and p. 548 says Xerxes was murdered and Artaxerxes crowned in 475 BC."
+    },
+    {
+      "source": "herodotus",
+      "date": "“He died in the year following the revolt of Egypt and the matters here related, after having reigned in all six-and-thirty years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 7.4 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 428 (PDF p. 430)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=He%20died%20in%20the%20year%20following%20the%20revolt",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "DERIVED (not Herodotus's figure): Death about 486/485 BC; accession 36 years earlier, about 522/521 BC. Chain from CFAH AP-13 (Xerxes invades Greece, 480 BC): the host wintered at Sardis and marched \"on the first approach of spring\" (7.37), having set out \"at the close of the fifth year\" from the recovery of Egypt (7.20), so Egypt was recovered about 485/484 BC; that was \"the year following the death of Darius\" (7.7), so Darius died about 486/485 BC; he died \"in the year following the revolt of Egypt\" (7.4), about 487/486 BC, and the revolt came \"in the fourth year\" after the news of Marathon (7.1), so Marathon was about 490 BC (±1). Agrees with Generations: Darius 522 BC (+ 36 = 486) and the 1st ed. of Preparing (Xerxes 486–465 BC). CONFLICT with the 2nd ed. of Preparing, which dates Xerxes 496–475 BC (the provisional sort of reign-of-xerxes-i), 10 years earlier than Darius's 36 years from 522 allow."
+    },
+    {
+      "source": "herodotus",
+      "date": "“At his death the kingdom passed to his son Xerxes.”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 7.4 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 428 (PDF p. 430)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=At%20his%20death%20the%20kingdom%20passed%20to%20his",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": null
     }
   ],
   "people": [
@@ -60,7 +82,9 @@
   ],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -68,6 +92,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7",
+      "locator": "Book 7"
     }
   ]
 }

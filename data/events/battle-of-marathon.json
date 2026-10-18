@@ -79,6 +79,17 @@
       "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6#:~:text=After%20the%20full%20of%20the%20moon%20two%20thousand",
       "source_text_id": "herodotus-rawlinson-roman-roads",
       "note": "They marched from Sparta in three days but arrived after the battle."
+    },
+    {
+      "source": "herodotus",
+      "date": "“all Asia was in commotion by the space of three years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 7.1 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 426 (PDF p. 428)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=all%20Asia%20was%20in%20commotion%20by%20the%20space",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Darius prepares a second expedition after the news of Marathon. DERIVED (not Herodotus's figure): About 490 BC for Marathon. Chain from CFAH AP-13 (Xerxes invades Greece, 480 BC): the host wintered at Sardis and marched \"on the first approach of spring\" (7.37), having set out \"at the close of the fifth year\" from the recovery of Egypt (7.20), so Egypt was recovered about 485/484 BC; that was \"the year following the death of Darius\" (7.7), so Darius died about 486/485 BC; he died \"in the year following the revolt of Egypt\" (7.4), about 487/486 BC, and the revolt came \"in the fourth year\" after the news of Marathon (7.1), so Marathon was about 490 BC (±1). Consistent with Generations 490 BC (provisional)."
     }
   ],
   "people": [
@@ -104,6 +115,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6",
       "locator": "Book 6 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7",
+      "locator": "Book 7"
     }
   ]
 }

@@ -12,6 +12,8 @@ Herodotus describes these events, but no tier 1–4 chronology (and no Generatio
 | Death of Cambyses and the rule of the Magus | 3.61–67 | Derived only: about 523/522–522 BC (AP-7 + 29 + 7 years 5 months). |
 | Darius's Scythian expedition | 4.1–4.142 | No anchor; after Darius's accession (3.88). |
 | Burning of Sardis and the Ionian revolt; fall of Miletus "six years" later | 5.100–105, 6.18 | No anchor in any tier. |
+| Battle of Artemisium | 8.1–8.18 | Same campaign as Thermopylae (CFAH AP-13, 480 BC); could be "derived" like Salamis. |
+| Battle of Mycale | 9.90–9.106 | "the same day of the same month" as Plataea (9.101); could be "derived" from Plataea, but Plataea itself has only a provisional sort, and a derived sort must point at a tier 1–4 record. |
 | Accession of Darius I | 3.86–88 | The existing \`reign-of-darius-i\` (Generations 522 BC, provisional) was used. |
 
 ## Unmapped statements

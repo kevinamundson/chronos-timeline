@@ -23,6 +23,39 @@
       "citation": null,
       "link": null,
       "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+    },
+    {
+      "source": "herodotus",
+      "date": "“a space of four months had gone by; one, while the army made the crossing, and delayed about the region of the Hellespont; and three while they proceeded thence to Attica, which they entered in the archonship of Calliades”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 8.51 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 536 (PDF p. 538)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_8#:~:text=a%20space%20of%20four%20months%20had%20gone%20by",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Herodotus dates by the Athenian archon; he does not number the year. Within CFAH AP-13 (480 BC)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“At the dawn of day, all the menat-arms were assembled together”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 8.83 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 548 (PDF p. 550)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_8#:~:text=At%20the%20dawn%20of%20day%2C%20all%20the",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "The morning of the battle (the PDF prints \"menat-arms\" for \"men-at-arms\")."
+    },
+    {
+      "source": "herodotus",
+      "date": "“he thought it best to winter in Thessaly, and wait for the spring before he attempted the Peloponnese”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 8.113 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 561 (PDF p. 563)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_8#:~:text=he%20thought%20it%20best%20to%20winter%20in%20Thessaly",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Mardonius winters in Thessaly after Salamis; the land war resumes the next year. DERIVED (not Herodotus's figure): The next spring is 479 BC (CFAH AP-13 480 BC + 1)."
     }
   ],
   "people": [
@@ -39,5 +72,11 @@
     "xerxes-invades-greece",
     "battle-of-thermopylae"
   ],
-  "free_source_links": []
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_8",
+      "locator": "Book 8"
+    }
+  ]
 }

@@ -46,6 +46,50 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Caption; also p. 592."
+    },
+    {
+      "source": "herodotus",
+      "date": "“he thought it best to winter in Thessaly, and wait for the spring before he attempted the Peloponnese”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 8.113 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 561 (PDF p. 563)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_8#:~:text=he%20thought%20it%20best%20to%20winter%20in%20Thessaly",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Mardonius winters in Thessaly after Salamis; the land war resumes the next year. DERIVED (not Herodotus's figure): The next spring is 479 BC (CFAH AP-13 480 BC + 1)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“It was ten months after the taking of the city by the king that Mardonius came against it for the second time”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 9.3 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 576 (PDF p. 578)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_9#:~:text=It%20was%20ten%20months%20after%20the%20taking%20of",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "DERIVED (not Herodotus's figure): About ten months after Xerxes took Athens in 480 BC (8.51, AP-13): mid 479 BC. Agrees with CFAH-3 (AP-13): \"The Second Persian Invasion of Greece ended in June 479 B.C., about 15 months after it began.\" Generations: 479 BC (provisional)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“That the two battles were really fought on the same day of the same month”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 9.101 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 620 (PDF p. 622)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_9#:~:text=That%20the%20two%20battles%20were%20really%20fought%20on",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Plataea and Mycale on the same day (Mycale has no record; NEW candidate)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“And this was all that took place that year.”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 9.121 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 628 (PDF p. 630)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_9#:~:text=And%20this%20was%20all%20that%20took%20place%20that",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "The last sentence of the narrative: the year of Plataea, Mycale and the siege of Sestos."
     }
   ],
   "people": [],
@@ -54,7 +98,9 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -62,6 +108,16 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_8",
+      "locator": "Book 8"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_9",
+      "locator": "Book 9"
     }
   ]
 }

@@ -416,3 +416,20 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   - `median-kingdom-under-deioces`: 710 BC instead of 712 BC
   - `first-olympic-games`: 776 BC, unchanged
 - **Recommendation:** no decision needed; listed so you can see what changed.
+
+### D6. Xerxes' accession: 486 BC (Herodotus's 36 years for Darius) or 496 BC (Preparing, 2nd ed.)
+- `reign-of-xerxes-i` sorts provisionally at 496 BC, from the 2nd edition of Preparing ("496–475 BC"). The 1st edition printed 486–465 BC.
+- Herodotus says Darius "reigned in all six-and-thirty years" (7.4). Generations' own 522 BC for Darius plus 36 gives 486 BC.
+- The chain back from CFAH AP-13 (480 BC) through Herodotus 7.1–7.37 also gives Darius's death about 486/485 BC.
+- **Options:**
+  1. Keep 496 (as now; flagged).
+  2. Ask Generations or Griffith whether 496 is a misprint.
+- **Recommendation:** option 2. The 2nd edition's 496–475 has the same 21-year length as 486–465, which looks like a 10-year slip.
+
+### D7. Plataea, Mycale and Artemisium
+- `battle-of-plataea` and `battle-of-thermopylae` sort provisionally by Generations (479, 480). CFAH AP-13 dates the invasion to 480 BC and says it "ended in June 479 B.C.".
+- `battle-of-salamis` (new) is "derived" from the AP-13 record `xerxes-invades-greece`.
+- **Options:**
+  1. Leave Thermopylae and Plataea provisional (as now).
+  2. Re-sort them as "derived" from `xerxes-invades-greece`, like Salamis, and add Artemisium and Mycale the same way.
+- **Recommendation:** option 2, if you agree that a battle inside CFAH's dated campaign may take the campaign's anchor.

@@ -60,6 +60,50 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6#:~:text=For%20in%20the%20three%20following%20generations%20of%20Darius",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "Said of the Delos earthquake as Datis's fleet sailed for Eretria and Marathon. Herodotus counts the Persian kings to Artaxerxes, son of Xerxes."
+      },
+      {
+        "source": "herodotus",
+        "date": "“At his death the kingdom passed to his son Xerxes.”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 7.4 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 428 (PDF p. 430)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=At%20his%20death%20the%20kingdom%20passed%20to%20his",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": null
+      },
+      {
+        "source": "herodotus",
+        "date": "“in the year following the death of Darius, he marched against those who had revolted from him”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 7.7 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 429 (PDF p. 431)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=in%20the%20year%20following%20the%20death%20of%20Darius",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Xerxes reconquers Egypt and gives it to his brother Achaemenes. DERIVED (not Herodotus's figure): About 485/484 BC. Chain from CFAH AP-13 (Xerxes invades Greece, 480 BC): the host wintered at Sardis and marched \"on the first approach of spring\" (7.37), having set out \"at the close of the fifth year\" from the recovery of Egypt (7.20), so Egypt was recovered about 485/484 BC; that was \"the year following the death of Darius\" (7.7), so Darius died about 486/485 BC; he died \"in the year following the revolt of Egypt\" (7.4), about 487/486 BC, and the revolt came \"in the fourth year\" after the news of Marathon (7.1), so Marathon was about 490 BC (±1)."
+      },
+      {
+        "source": "herodotus",
+        "date": "“Reckoning from the recovery of Egypt, Xerxes spent four full years in collecting his host”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 7.20 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 439 (PDF p. 441)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=Reckoning%20from%20the%20recovery%20of%20Egypt%2C%20Xerxes%20spent",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": null
+      },
+      {
+        "source": "herodotus",
+        "date": "“It was not till the close of the fifth year that he set forth on his march”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 7.20 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 439 (PDF p. 441)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=It%20was%20not%20till%20the%20close%20of%20the",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Agrees with CFAH AP-13 (480 BC) for the invasion, which this interval is counted towards."
       }
     ]
   },
@@ -80,6 +124,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6",
       "locator": "Book 6 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7",
+      "locator": "Book 7"
     }
   ]
 }

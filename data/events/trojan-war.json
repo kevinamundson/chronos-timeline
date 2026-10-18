@@ -34,6 +34,17 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Heading; p. 569 dates the Greek victory \"about 1183 BC\"."
+    },
+    {
+      "source": "herodotus",
+      "date": "“Three generations after the death of Minos the Trojan war took place”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 7.171 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 493 (PDF p. 495)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=Three%20generations%20after%20the%20death%20of%20Minos%20the",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "The Cretans who sailed with Menelaus."
     }
   ],
   "people": [],
@@ -41,8 +52,16 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
-  "free_source_links": []
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7",
+      "locator": "Book 7"
+    }
+  ]
 }
