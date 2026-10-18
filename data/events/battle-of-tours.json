@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=96",
       "source_text_id": "generations-africa",
       "note": null
+    },
+    {
+      "source": "generations",
+      "date": "AD 732",
+      "year_am": null,
+      "year_bc_ad": 732,
+      "precision": "year",
+      "citation": "Taking Europe for Jesus, ch. 0 \"Unit 2: AD 500-1000\", PDF p. 103 (printed p. 103)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=103",
+      "source_text_id": "generations-europe",
+      "note": "Charles Martel halts the Muslim advance; also p. 104."
     }
   ],
   "people": [],
@@ -40,7 +51,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-europe"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +60,11 @@
       "source_id": "generations-africa",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
       "locator": "Taking Africa for Jesus"
+    },
+    {
+      "source_id": "generations-europe",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
+      "locator": "Taking Europe for Jesus"
     }
   ]
 }

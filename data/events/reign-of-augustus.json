@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "reign-of-augustus",
+  "type": "event",
+  "title": "Augustus Caesar reigns as emperor",
+  "summary": "Augustus Caesar reigns as emperor",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -27,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 39): between 27 BC and AD 14. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "between 27 BC and AD 14",
+      "year_am": null,
+      "year_bc_ad": -27,
+      "year_bc_ad_end": 14,
+      "precision": "year-range",
+      "citation": "Taking Europe for Jesus, ch. 2 \"Rome: A Republic Turned into an Empire\", PDF p. 39 (printed p. 39)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=39",
+      "source_text_id": "generations-europe",
+      "note": null
+    }
+  ],
+  "people": [
+    "augustus-caesar"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-europe",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
+      "locator": "Taking Europe for Jesus"
+    }
+  ]
+}

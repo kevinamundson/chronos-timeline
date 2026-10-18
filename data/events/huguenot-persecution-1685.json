@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=124",
       "source_text_id": "generations-africa",
       "note": null
+    },
+    {
+      "source": "generations",
+      "date": "1685",
+      "year_am": null,
+      "year_bc_ad": 1685,
+      "precision": "year",
+      "citation": "Taking Europe for Jesus, ch. 26 \"The Sufferings of the Huguenots\", PDF p. 256 (printed p. 256)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=256",
+      "source_text_id": "generations-europe",
+      "note": "Edict of Nantes revoked by Louis XIV."
     }
   ],
   "people": [],
@@ -40,7 +51,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-europe"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +60,11 @@
       "source_id": "generations-africa",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
       "locator": "Taking Africa for Jesus"
+    },
+    {
+      "source_id": "generations-europe",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
+      "locator": "Taking Europe for Jesus"
     }
   ]
 }

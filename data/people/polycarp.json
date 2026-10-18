@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "polycarp",
+  "type": "person",
+  "title": "Polycarp of Smyrna",
+  "summary": "Pastor (bishop) of Smyrna and disciple of the apostle John; martyred at the stake.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ]
+  },
+  "events": [
+    "martyrdom-of-polycarp"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

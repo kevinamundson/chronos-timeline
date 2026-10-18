@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=116",
         "source_text_id": "generations-africa",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "1714",
+        "year_am": null,
+        "year_bc_ad": 1714,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 29 \"The Great Awakening\", PDF p. 286 (printed p. 286)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=286",
+        "source_text_id": "generations-europe",
+        "note": "In Gloucester."
       }
     ],
     "death": [
@@ -62,10 +73,16 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    "whitefield-enters-oxford",
+    "whitefield-field-preaching-begins",
+    "whitefield-in-scotland-1741",
+    "whitefield-ordained"
+  ],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-europe"
   ],
   "related": []
 }

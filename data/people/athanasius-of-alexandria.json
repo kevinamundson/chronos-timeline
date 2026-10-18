@@ -48,13 +48,29 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "May 2, 373",
+        "year_am": null,
+        "year_bc_ad": 373,
+        "precision": "day",
+        "citation": "Taking Africa for Jesus, ch. 8 \"Athanasius of Alexandria\", PDF p. 79 (printed p. 79)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=79",
+        "source_text_id": "generations-africa",
+        "note": "Returned in 364 and served until his death."
       }
     ]
   },
   "events": [
+    "arius-returns-to-alexandria",
+    "athanasius-becomes-bishop",
     "athanasius-in-rome",
+    "athanasius-in-the-desert",
     "athanasius-returns-to-alexandria-337",
-    "council-of-nicaea"
+    "athanasius-returns-to-alexandria-362",
+    "council-of-nicaea",
+    "festal-letter-39"
   ],
   "scripture_refs": [],
   "sources": [

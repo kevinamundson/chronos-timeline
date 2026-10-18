@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "conversion-of-constantine",
+  "type": "event",
+  "title": "Emperor Constantine converts; persecution ended the next year",
+  "summary": "Emperor Constantine converts; persecution ended the next year",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 312,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 72): 312. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "312",
+      "year_am": null,
+      "year_bc_ad": 312,
+      "precision": "year",
+      "citation": "Taking Africa for Jesus, ch. 8 \"Athanasius of Alexandria\", PDF p. 72 (printed p. 72)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=72",
+      "source_text_id": "generations-africa",
+      "note": "Persecution ended the following year."
+    },
+    {
+      "source": "generations",
+      "date": "AD 306-337",
+      "year_am": null,
+      "year_bc_ad": 306,
+      "year_bc_ad_end": 337,
+      "precision": "year-range",
+      "citation": "Taking Europe for Jesus, ch. 0 \"Introduction\", PDF p. 13 (printed p. 13)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=13",
+      "source_text_id": "generations-europe",
+      "note": "Printed as the reign of Constantine, who confessed Christ."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa",
+    "generations-europe"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-africa",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
+      "locator": "Taking Africa for Jesus"
+    },
+    {
+      "source_id": "generations-europe",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
+      "locator": "Taking Europe for Jesus"
+    }
+  ]
+}

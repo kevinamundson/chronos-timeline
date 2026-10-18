@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "aidan",
+  "type": "person",
+  "title": "Aidan of Lindisfarne",
+  "summary": "Missionary from Iona who discipled Northumbria at the request of King Oswald.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 590,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 112): c. 590-651. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "c. 590-651",
+        "year_am": null,
+        "year_bc_ad": 590,
+        "precision": "approximate",
+        "citation": "Taking Europe for Jesus, ch. 10 \"Columba and the Monastery of Iona\", PDF p. 112 (printed p. 112)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=112",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "c. 590-651",
+        "year_am": null,
+        "year_bc_ad": 651,
+        "precision": "approximate",
+        "citation": "Taking Europe for Jesus, ch. 10 \"Columba and the Monastery of Iona\", PDF p. 112 (printed p. 112)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=112",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

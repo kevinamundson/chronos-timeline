@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "admonitio-generalis",
+  "type": "event",
+  "title": "Document of 789 on education and reform at the Frankish court",
+  "summary": "Document of 789 on education and reform at the Frankish court",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 789,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 132): 789. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "789",
+      "year_am": null,
+      "year_bc_ad": 789,
+      "precision": "year",
+      "citation": "Taking Europe for Jesus, ch. 13 \"Alcuin: Court Adviser to Charlemagne\", PDF p. 132 (printed p. 132)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=132",
+      "source_text_id": "generations-europe",
+      "note": "The book does not name the document in this sentence."
+    }
+  ],
+  "people": [
+    "alcuin",
+    "charlemagne"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-europe",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
+      "locator": "Taking Europe for Jesus"
+    }
+  ]
+}

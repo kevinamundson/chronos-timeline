@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "amazing-grace-written",
+  "type": "event",
+  "title": "John Newton writes \"Amazing Grace\"",
+  "summary": "John Newton writes \"Amazing Grace\"",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1773,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 300): New Year's Day, 1773. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "New Year's Day, 1773",
+      "year_am": null,
+      "year_bc_ad": 1773,
+      "precision": "day",
+      "citation": "Taking Europe for Jesus, ch. 30 \"John Newton\", PDF p. 300 (printed p. 300)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=300",
+      "source_text_id": "generations-europe",
+      "note": "Written for his New Year sermon; also p. 237."
+    }
+  ],
+  "people": [
+    "john-newton"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-europe",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
+      "locator": "Taking Europe for Jesus"
+    }
+  ]
+}

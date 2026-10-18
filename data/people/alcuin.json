@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "alcuin",
+  "type": "person",
+  "title": "Alcuin of York",
+  "summary": "English scholar who advised Charlemagne and led the abbey at Tours.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 735,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 130): around 735. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "around 735",
+        "year_am": null,
+        "year_bc_ad": 735,
+        "precision": "approximate",
+        "citation": "Taking Europe for Jesus, ch. 13 \"Alcuin: Court Adviser to Charlemagne\", PDF p. 130 (printed p. 130)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=130",
+        "source_text_id": "generations-europe",
+        "note": "Born in York; lifespan printed 735-804."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "May 19, 804",
+        "year_am": null,
+        "year_bc_ad": 804,
+        "precision": "day",
+        "citation": "Taking Europe for Jesus, ch. 13 \"Alcuin: Court Adviser to Charlemagne\", PDF p. 136 (printed p. 136)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=136",
+        "source_text_id": "generations-europe",
+        "note": "At Tours."
+      }
+    ]
+  },
+  "events": [
+    "admonitio-generalis",
+    "alcuin-abbot-of-tours",
+    "alcuin-joins-charlemagnes-court"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

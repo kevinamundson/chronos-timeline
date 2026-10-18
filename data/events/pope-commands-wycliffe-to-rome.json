@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "pope-commands-wycliffe-to-rome",
+  "type": "event",
+  "title": "Pope Gregory XI orders Wycliffe to Rome",
+  "summary": "Pope Gregory XI orders Wycliffe to Rome",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1377,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 202): May 1377. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "May 1377",
+      "year_am": null,
+      "year_bc_ad": 1377,
+      "precision": "month",
+      "citation": "Taking Europe for Jesus, ch. 21 \"John Wycliffe and the Lollards\", PDF p. 202 (printed p. 202)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=202",
+      "source_text_id": "generations-europe",
+      "note": null
+    }
+  ],
+  "people": [
+    "john-wycliffe"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-europe",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
+      "locator": "Taking Europe for Jesus"
+    }
+  ]
+}

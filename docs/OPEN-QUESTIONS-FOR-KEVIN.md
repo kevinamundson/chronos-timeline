@@ -133,6 +133,12 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   | Goshen / entry into Egypt | 1840 BC | 1706 BC |
 
   The full list for each book is in `data/generations-dates-extract.md`.
+- **Taking Europe for Jesus.** Every date in this book is AD or late BC, so no tier 1–4 date is touched and there are no conflicts with the sort. Where the Generations books disagree with each other or with themselves, both readings are kept and flagged:
+  - **Raymond Lull's birth.** Europe gives 1232 (p. 140); Africa gives 1235 (p. 102).
+  - **The First Punic War.** Europe gives 264–241 BC (p. 35); Africa gives 246.
+  - **The First Crusade began** in 1095 (p. 175) but 1096 in the unit 3 timeline (p. 177). The 1095–1099 span is used.
+  - **The Battle of Brunanburh** is 937 in the chapter (p. 169) but "AD 973" in the unit 2 timeline (p. 104). It is entered as 937; 973 is evidently a transposition.
+  - **The Roman withdrawal from Britain** is AD 409 (pp. 13–14) but "by AD 410" in chapter 8 (p. 85).
 - **Printed oddities kept as printed (and flagged):**
   - Punic Wars "246 BC". The conventional start is 264 BC, so this may be a transposition.
   - Mackay "April 1875" printed before the November 1875 appeal.

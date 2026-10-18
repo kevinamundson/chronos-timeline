@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "martin-luther",
+  "type": "person",
+  "title": "Martin Luther",
+  "summary": "Wittenberg monk whose 95 Theses (1517) began the Protestant Reformation.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1483,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 239): 1483-1546. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1483-1546",
+        "year_am": null,
+        "year_bc_ad": 1483,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 24 \"The Reformation in France\", PDF p. 239 (printed p. 239)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=239",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1483-1546",
+        "year_am": null,
+        "year_bc_ad": 1546,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 24 \"The Reformation in France\", PDF p. 239 (printed p. 239)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=239",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "ninety-five-theses"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

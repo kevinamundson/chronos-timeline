@@ -1,0 +1,76 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "john-wycliffe",
+  "type": "person",
+  "title": "John Wycliffe",
+  "summary": "Oxford scholar who urged reading the Bible in English; his followers were the Lollards.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1330,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 201): 1330-1384. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1330-1384",
+        "year_am": null,
+        "year_bc_ad": 1330,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 21 \"John Wycliffe and the Lollards\", PDF p. 201 (printed p. 201)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=201",
+        "source_text_id": "generations-europe",
+        "note": "Also p. 177."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1384",
+        "year_am": null,
+        "year_bc_ad": 1384,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 21 \"John Wycliffe and the Lollards\", PDF p. 206 (printed p. 206)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=206",
+        "source_text_id": "generations-europe",
+        "note": "At Lutterworth."
+      }
+    ]
+  },
+  "events": [
+    "pope-commands-wycliffe-to-rome",
+    "wycliffe-bible-completed",
+    "wycliffe-on-the-church",
+    "wycliffe-summoned-to-london"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

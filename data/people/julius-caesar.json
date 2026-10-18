@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "julius-caesar",
+  "type": "person",
+  "title": "Julius Caesar",
+  "summary": "Roman general and dictator under whom the Republic reached its greatest extent.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": -100,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 36): 100-44 BC. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "100-44 BC",
+        "year_am": null,
+        "year_bc_ad": -100,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 2 \"Rome: A Republic Turned into an Empire\", PDF p. 36 (printed p. 36)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=36",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "100-44 BC",
+        "year_am": null,
+        "year_bc_ad": -44,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 2 \"Rome: A Republic Turned into an Empire\", PDF p. 36 (printed p. 36)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=36",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "caesar-lands-in-britain"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

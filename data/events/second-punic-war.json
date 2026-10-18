@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "second-punic-war",
+  "type": "event",
+  "title": "Second Punic War (Hannibal crosses the Alps)",
+  "summary": "Second Punic War (Hannibal crosses the Alps)",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -218,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 35): 218-201 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "218-201 BC",
+      "year_am": null,
+      "year_bc_ad": -218,
+      "year_bc_ad_end": -201,
+      "precision": "year-range",
+      "citation": "Taking Europe for Jesus, ch. 2 \"Rome: A Republic Turned into an Empire\", PDF p. 35 (printed p. 35)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=35",
+      "source_text_id": "generations-europe",
+      "note": null
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-europe",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
+      "locator": "Taking Europe for Jesus"
+    }
+  ]
+}

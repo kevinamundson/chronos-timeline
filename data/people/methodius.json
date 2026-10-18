@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "methodius",
+  "type": "person",
+  "title": "Methodius",
+  "summary": "Missionary to the Slavs with his brother Cyril; continued the work in Moravia after Cyril died.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 815,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 150): AD 815. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "AD 815",
+        "year_am": null,
+        "year_bc_ad": 815,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 15 \"Cyril and Methodius\", PDF p. 150 (printed p. 150)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=150",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "April 6, 885",
+        "year_am": null,
+        "year_bc_ad": 885,
+        "precision": "day",
+        "citation": "Taking Europe for Jesus, ch. 15 \"Cyril and Methodius\", PDF p. 157 (printed p. 157)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=157",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "gospel-reaches-the-czechs",
+    "methodius-imprisoned",
+    "mission-to-the-slavs"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

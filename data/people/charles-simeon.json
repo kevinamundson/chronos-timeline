@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "charles-simeon",
+  "type": "person",
+  "title": "Charles Simeon",
+  "summary": "Vicar of Holy Trinity Church, Cambridge, for over fifty years.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1759,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 307): 1759. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1759",
+        "year_am": null,
+        "year_bc_ad": 1759,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 31 \"Charles Simeon\", PDF p. 307 (printed p. 307)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=307",
+        "source_text_id": "generations-europe",
+        "note": "In Reading."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1836",
+        "year_am": null,
+        "year_bc_ad": 1836,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 31 \"Charles Simeon\", PDF p. 313 (printed p. 313)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=313",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "simeon-conversion",
+    "simeon-vicar-of-holy-trinity"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

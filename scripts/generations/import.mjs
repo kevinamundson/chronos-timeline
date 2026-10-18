@@ -56,6 +56,12 @@ function resort(doc) {
 }
 
 const extractRows = {};
+// Records created in this run, by any book: a later book merges into them instead of replacing them.
+const runCreated = new Set();
+const addBookLinks = (doc, book) => {
+  if (!doc.sources.includes(book.id)) doc.sources.push(book.id);
+  if (doc.type === 'event' && !doc.free_source_links.some((x) => x.source_id === book.id)) doc.free_source_links.push({ source_id: book.id, url: book.url, locator: book.short });
+};
 for (const key of keys) {
   const book = BOOKS.find((b) => b.key === key); if (!book) throw new Error(`unknown book ${key}`);
   const cur = await import(pathToFileURL(join(here, `${key}.mjs`)).href + `?t=${Date.now()}`);
@@ -68,6 +74,7 @@ for (const key of keys) {
   // 2. new people / events
   const created = new Set();
   for (const [id, p] of Object.entries(cur.people || {})) {
+    if (runCreated.has(id)) { const d = recs[id].doc; if (p.alt) d.alt_names = [...new Set([...(d.alt_names || []), ...p.alt])]; addBookLinks(d, book); created.add(id); continue; }
     if (recs[id] && !recs[id].doc.description?.startsWith(MARK)) continue; // existing curated record: never overwrite
     const old = recs[id]?.doc;
     const doc = { $schema: '../../schema/person.schema.json', id, type: 'person', title: p.title, ...(p.alt ? { alt_names: p.alt } : {}), summary: p.summary,
@@ -77,6 +84,7 @@ for (const key of keys) {
     recs[id] = { dir: 'people', doc, dirty: true }; created.add(id);
   }
   for (const [id, e] of Object.entries(cur.events || {})) {
+    if (runCreated.has(id)) { const d = recs[id].doc; d.people = [...new Set([...d.people, ...(e.people || [])])]; d.related = [...new Set([...d.related, ...(e.related || [])])]; d.scripture_refs = [...new Set([...d.scripture_refs, ...(e.refs || [])])]; addBookLinks(d, book); created.add(id); continue; }
     if (recs[id] && !recs[id].doc.description?.startsWith(MARK)) continue;
     const old = recs[id]?.doc;
     const doc = { $schema: '../../schema/event.schema.json', id, type: 'event', title: e.title, summary: e.summary || e.title,
@@ -92,6 +100,7 @@ for (const key of keys) {
   for (const [page, date, y, yEnd, prec, target, note] of cur.rows) {
     const [id, slot] = target.split(':');
     const r = recs[id]; if (!r) throw new Error(`${key} p.${page}: unknown target ${target}`);
+    if (runCreated.has(id)) { created.add(id); addBookLinks(r.doc, book); }
     const ch = chapterAt(page);
     const printed = book.printedOffset != null ? ` (printed p. ${page + book.printedOffset})` : '';
     const entry = { source: 'generations', date, year_am: null, year_bc_ad: y, ...(yEnd != null ? { year_bc_ad_end: yEnd } : {}), precision: prec,
@@ -110,13 +119,21 @@ for (const key of keys) {
     } else if (t && (slot === 'death')) {
       agree = 'death date (sort uses birth)';
     } else if (!t && created.has(id)) agree = 'NEW';
+    // other Generations books on the same record/slot that print a different year
+    if (y != null) for (const o of list) {
+      if (o.source !== 'generations' || o.source_text_id === book.id || o.year_bc_ad == null) continue;
+      const lo = Math.min(o.year_bc_ad, o.year_bc_ad_end ?? o.year_bc_ad), hi = Math.max(o.year_bc_ad, o.year_bc_ad_end ?? o.year_bc_ad);
+      const lo2 = Math.min(y, yEnd ?? y), hi2 = Math.max(y, yEnd ?? y);
+      if (hi2 < lo || lo2 > hi) agree += `; differs from ${BOOKS.find((b) => b.id === o.source_text_id).short} ("${o.date}", PDF p. ${o.citation.match(/PDF p\. (\d+)/)[1]})`;
+    }
     list.push(entry); sortGen(list); save(id);
     if (d.type === 'event' && (cur.events?.[id]?.people || []).length) for (const pid of cur.events[id].people) if (recs[pid]?.doc.type !== 'person') throw new Error(`${id}: unknown person ${pid}`);
     extractRows[key].push({ page, printed: book.printedOffset != null ? page + book.printedOffset : null, date, event: d.type === 'person' ? `${d.title}: ${slot || 'birth'}` : d.title, id: d.type === 'person' ? `${id} (${slot || 'birth'})` : id, isNew: created.has(id), agree, note });
   }
+  for (const id of created) runCreated.add(id);
   // 4. drop records this book created earlier but no longer defines (only if nothing else references them)
   for (const [id, r] of Object.entries(recs)) {
-    const d = r.doc; if (!d.description?.startsWith(`${MARK} (${book.short})`) || created.has(id)) continue;
+    const d = r.doc; if (!d.description?.startsWith(`${MARK} (${book.short})`) || runCreated.has(id)) continue;
     const left = d.type === 'event' ? d.chronologies.length : Object.values(d.dates).flat().length;
     if (!left) { unlinkSync(join(DATA, r.dir, `${id}.json`)); delete recs[id]; }
   }

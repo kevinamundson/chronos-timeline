@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "bede",
+  "type": "person",
+  "title": "Bede",
+  "alt_names": [
+    "The Venerable Bede"
+  ],
+  "summary": "Monk of Wearmouth and Jarrow, historian of the English church.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 673,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 121): AD 673. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "AD 673",
+        "year_am": null,
+        "year_bc_ad": 673,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 12 \"Bede: Historian of the English Church\", PDF p. 121 (printed p. 121)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=121",
+        "source_text_id": "generations-europe",
+        "note": "Near Wearmouth."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "AD 735",
+        "year_am": null,
+        "year_bc_ad": 735,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 12 \"Bede: Historian of the English Church\", PDF p. 122 (printed p. 122)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=122",
+        "source_text_id": "generations-europe",
+        "note": "At Jarrow, in his early sixties."
+      }
+    ]
+  },
+  "events": [
+    "bede-ecclesiastical-history",
+    "bede-letter-to-egbert",
+    "king-lucius-writes-to-rome"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

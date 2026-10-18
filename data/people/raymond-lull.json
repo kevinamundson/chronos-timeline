@@ -39,6 +39,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=102",
         "source_text_id": "generations-africa",
         "note": "Born on Majorca."
+      },
+      {
+        "source": "generations",
+        "date": "1232-1315",
+        "year_am": null,
+        "year_bc_ad": 1232,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 14 \"Anskar: Missionary to Denmark and Sweden\", PDF p. 140 (printed p. 140)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=140",
+        "source_text_id": "generations-europe",
+        "note": "Taking Africa for Jesus gives 1235."
       }
     ],
     "death": [
@@ -62,6 +73,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=110",
         "source_text_id": "generations-africa",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "AD 1315",
+        "year_am": null,
+        "year_bc_ad": 1315,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 0 \"Unit 3: AD 1000-1500\", PDF p. 175 (printed p. 175)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=175",
+        "source_text_id": "generations-europe",
+        "note": "Lifespan printed 1232-1315 on p. 140."
       }
     ]
   },
@@ -74,7 +96,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-europe"
   ],
   "related": []
 }

@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=117",
         "source_text_id": "generations-africa",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "1725",
+        "year_am": null,
+        "year_bc_ad": 1725,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 30 \"John Newton\", PDF p. 293 (printed p. 293)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=293",
+        "source_text_id": "generations-europe",
+        "note": "In London."
       }
     ],
     "death": [
@@ -59,16 +70,35 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=117",
         "source_text_id": "generations-africa",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "December 21, 1807",
+        "year_am": null,
+        "year_bc_ad": 1807,
+        "precision": "day",
+        "citation": "Taking Europe for Jesus, ch. 30 \"John Newton\", PDF p. 303 (printed p. 303)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=303",
+        "source_text_id": "generations-europe",
+        "note": "In London."
       }
     ]
   },
   "events": [
+    "amazing-grace-written",
     "conversion-of-wilberforce",
-    "newton-thoughts-upon-the-slave-trade"
+    "newton-at-st-mary-woolnoth",
+    "newton-greyhound-storm",
+    "newton-marries-polly-catlett",
+    "newton-ordained-at-olney",
+    "newton-press-ganged",
+    "newton-thoughts-upon-the-slave-trade",
+    "olney-hymns-published"
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-europe"
   ],
   "related": []
 }

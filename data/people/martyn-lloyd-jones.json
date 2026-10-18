@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "martyn-lloyd-jones",
+  "type": "person",
+  "title": "Martyn Lloyd-Jones",
+  "alt_names": [
+    "D. Martyn Lloyd-Jones"
+  ],
+  "summary": "Welsh physician turned preacher; pastor at Aberavon and at Westminster Chapel, London.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1899,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 344): 1899-1981. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1899-1981",
+        "year_am": null,
+        "year_bc_ad": 1899,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 34 \"Dr. Martyn Lloyd-Jones\", PDF p. 344 (printed p. 344)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=344",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1899-1981",
+        "year_am": null,
+        "year_bc_ad": 1981,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 34 \"Dr. Martyn Lloyd-Jones\", PDF p. 344 (printed p. 344)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=344",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "lloyd-jones-at-westminster-chapel",
+    "lloyd-jones-romans-series",
+    "lloyd-jones-to-aberavon"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

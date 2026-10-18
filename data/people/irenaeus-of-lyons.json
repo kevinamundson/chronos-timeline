@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "irenaeus-of-lyons",
+  "type": "person",
+  "title": "Irenaeus of Lyons",
+  "summary": "Disciple of Polycarp and pastor at Lyons in Gaul; defended the apostolic faith against the Gnostics.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "202",
+        "year_am": null,
+        "year_bc_ad": 202,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 6 \"Irenaeus of Lyons\", PDF p. 71 (printed p. 71)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=71",
+        "source_text_id": "generations-europe",
+        "note": "Printed as \"believed\" to be around the time of the persecution of 202."
+      }
+    ]
+  },
+  "events": [
+    "persecution-at-lyons-177",
+    "persecution-under-severus"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

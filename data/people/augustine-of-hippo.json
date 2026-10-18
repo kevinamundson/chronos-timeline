@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=57",
         "source_text_id": "generations-africa",
         "note": "\"Augustine lived from AD 354 to 430\" (also p. 82)."
+      },
+      {
+        "source": "generations",
+        "date": "AD 354",
+        "year_am": null,
+        "year_bc_ad": 354,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 0 \"Introduction\", PDF p. 14 (printed p. 14)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=14",
+        "source_text_id": "generations-europe",
+        "note": "Unit 1 timeline."
       }
     ],
     "death": [
@@ -69,11 +80,13 @@
     "augustine-succeeds-valerius",
     "baptism-of-augustine",
     "city-of-god-finished",
+    "theodosius-forbids-pagan-sacrifices",
     "vandals-besiege-hippo"
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-europe"
   ],
   "related": []
 }

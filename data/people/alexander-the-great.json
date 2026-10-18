@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "alexander-the-great",
+  "type": "person",
+  "title": "Alexander the Great",
+  "summary": "Macedonian king whose empire was divided after his death.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": -356,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 37): 356-323 BC. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "356-323 BC",
+        "year_am": null,
+        "year_bc_ad": -356,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 2 \"Rome: A Republic Turned into an Empire\", PDF p. 37 (printed p. 37)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=37",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "323 BC",
+        "year_am": null,
+        "year_bc_ad": -323,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 2 \"Rome: A Republic Turned into an Empire\", PDF p. 37 (printed p. 37)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=37",
+        "source_text_id": "generations-europe",
+        "note": "His empire was then split into smaller kingdoms."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "cyril-the-missionary",
+  "type": "person",
+  "title": "Cyril",
+  "alt_names": [
+    "Constantine (Cyril) of Thessalonica"
+  ],
+  "summary": "Missionary to the Slavs with his brother Methodius; devised the Glagolitic alphabet.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 826,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 150): perhaps in the year AD 826. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "perhaps in the year AD 826",
+        "year_am": null,
+        "year_bc_ad": 826,
+        "precision": "approximate",
+        "citation": "Taking Europe for Jesus, ch. 15 \"Cyril and Methodius\", PDF p. 150 (printed p. 150)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=150",
+        "source_text_id": "generations-europe",
+        "note": "Printed as eleven years after Methodius."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "AD 869",
+        "year_am": null,
+        "year_bc_ad": 869,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 15 \"Cyril and Methodius\", PDF p. 156 (printed p. 156)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=156",
+        "source_text_id": "generations-europe",
+        "note": "At forty-two years of age."
+      }
+    ]
+  },
+  "events": [
+    "glagolitic-alphabet",
+    "mission-to-the-slavs"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

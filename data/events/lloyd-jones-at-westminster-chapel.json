@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "lloyd-jones-at-westminster-chapel",
+  "type": "event",
+  "title": "Lloyd-Jones becomes pastor at Westminster Chapel",
+  "summary": "Lloyd-Jones becomes pastor at Westminster Chapel",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1938,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 346): 1938. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "1938",
+      "year_am": null,
+      "year_bc_ad": 1938,
+      "year_bc_ad_end": 1968,
+      "precision": "year-range",
+      "citation": "Taking Europe for Jesus, ch. 34 \"Dr. Martyn Lloyd-Jones\", PDF p. 346 (printed p. 346)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=346",
+      "source_text_id": "generations-europe",
+      "note": "Assistant to G. Campbell Morgan 1938-1943; ministry there 1938-1968 (pp. 347, 349); also p. 237."
+    }
+  ],
+  "people": [
+    "martyn-lloyd-jones"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-europe",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
+      "locator": "Taking Europe for Jesus"
+    }
+  ]
+}

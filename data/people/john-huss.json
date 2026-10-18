@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "john-huss",
+  "type": "person",
+  "title": "John Huss",
+  "alt_names": [
+    "Jan Hus"
+  ],
+  "summary": "Czech preacher of the Bethlehem Chapel, Prague; burned at the Council of Constance.",
+  "description": "Added from the Generations curriculum import (Taking Europe for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1372,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 211): 1372-1415. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1372-1415",
+        "year_am": null,
+        "year_bc_ad": 1372,
+        "precision": "year",
+        "citation": "Taking Europe for Jesus, ch. 22 \"John Huss: The Preacher of Prague\", PDF p. 211 (printed p. 211)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=211",
+        "source_text_id": "generations-europe",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "July 6, 1415",
+        "year_am": null,
+        "year_bc_ad": 1415,
+        "precision": "day",
+        "citation": "Taking Europe for Jesus, ch. 22 \"John Huss: The Preacher of Prague\", PDF p. 211 (printed p. 211)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=211",
+        "source_text_id": "generations-europe",
+        "note": "Condemned by the Council of Constance and burned; also p. 177."
+      }
+    ]
+  },
+  "events": [
+    "council-of-constance",
+    "huss-exile",
+    "huss-preacher-at-bethlehem-chapel",
+    "huss-preaches-against-indulgences"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-europe"
+  ],
+  "related": []
+}

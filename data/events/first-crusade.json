@@ -34,6 +34,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=99",
       "source_text_id": "generations-africa",
       "note": "Jerusalem retaken \"by AD 1099\"."
+    },
+    {
+      "source": "generations",
+      "date": "1095",
+      "year_am": null,
+      "year_bc_ad": 1095,
+      "year_bc_ad_end": 1099,
+      "precision": "year-range",
+      "citation": "Taking Europe for Jesus, ch. 0 \"Unit 3: AD 1000-1500\", PDF p. 175 (printed p. 175)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=175",
+      "source_text_id": "generations-europe",
+      "note": "Began 1095; Jerusalem retaken by AD 1099. The unit 3 timeline (p. 177) dates the beginning of the First Crusade to AD 1096."
     }
   ],
   "people": [],
@@ -41,7 +53,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-europe"
   ],
   "related": [],
   "free_source_links": [
@@ -49,6 +62,11 @@
       "source_id": "generations-africa",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
       "locator": "Taking Africa for Jesus"
+    },
+    {
+      "source_id": "generations-europe",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
+      "locator": "Taking Europe for Jesus"
     }
   ]
 }
