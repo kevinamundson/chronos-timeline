@@ -34,6 +34,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=33",
       "source_text_id": "generations-africa",
       "note": "Printed in this order (\"between 1493 and 1506 BC\")."
+    },
+    {
+      "source": "generations",
+      "date": "1035–1016 BC",
+      "year_am": null,
+      "year_bc_ad": -1035,
+      "year_bc_ad_end": -1016,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 16 \"The Fall of Egypt by God's Decree–The Middle and Late Empires of Egypt\", PDF p. 409 (printed p. 395)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Ally of King David."
     }
   ],
   "people": [],
@@ -41,7 +53,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

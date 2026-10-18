@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Nimrod builds Nineveh",
   "summary": "Nimrod builds Nineveh",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -2418,
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -2191,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 300): around 2418 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 157): After the Dispersion. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,23 @@
       "year_am": null,
       "year_bc_ad": -2418,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 300 (printed p. 299)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 300 (printed p. 299)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=300",
       "source_text_id": "generations-preparing",
-      "note": "Presumably after the fall of the tower; Timeline Review (p. 324): \"2418 bc\"."
+      "note": "Presumably after the fall of the tower; Timeline Review (p. 324): \"2418 bc\".",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"After the Dispersion\" (PDF p. 157): 227 years later."
+    },
+    {
+      "source": "generations",
+      "date": "After the Dispersion",
+      "year_am": null,
+      "year_bc_ad": -2191,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 7 \"The Return of the Nephilim: Nimrod Attempts World Empire\", PDF p. 157 (printed p. 143)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Nimrod builds Nineveh after the Dispersion (2191 BC, printed on the same page); no separate year is given."
     }
   ],
   "people": [
@@ -44,14 +57,15 @@
     "Gen.10.11-Gen.10.12"
   ],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

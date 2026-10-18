@@ -156,11 +156,11 @@ for (const { rel, doc, entries, kind } of sortingTargets) {
     if (b.tier_rank !== null) err(rel, 'derived tier must have tier_rank null');
   } else if (b.tier === 'provisional') {
     // Generations (secondary) may only supply a PROVISIONAL sort where no tier 1-4 year exists.
-    const g = entries.find((e) => e.source === 'generations' && e.year_bc_ad != null);
+    const g = entries.find((e) => e.source === 'generations' && e.year_bc_ad != null && !e.superseded_by);
     if (b.chronology !== 'generations') err(rel, 'provisional tier must name chronology "generations"');
     if (b.tier_rank !== null) err(rel, 'provisional tier must have tier_rank null');
     if (!g) err(rel, 'provisional tier needs a dated generations entry');
-    else if (doc.sorting_year !== g.year_bc_ad) err(rel, `provisional sorting_year should be ${g.year_bc_ad} (first dated generations entry), found ${doc.sorting_year}`);
+    else if (doc.sorting_year !== g.year_bc_ad) err(rel, `provisional sorting_year should be ${g.year_bc_ad} (first dated, non-superseded generations entry), found ${doc.sorting_year}`);
   } else if (b.tier === 'none') {
     if (kind !== 'person') err(rel, 'tier "none" (null sorting_year) is only allowed for people; events need a derived sort');
     if (doc.sorting_year !== null) err(rel, 'tier "none" requires sorting_year null');
@@ -189,6 +189,13 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
       if (e.date !== null && !/PDF p\. \d+/.test(e.citation || '')) err(rel, `generations entry "${e.date}" needs a "PDF p. N" page citation`);
       const src = srcDoc.sources.find((s) => s.id === e.source_text_id);
       if (src && e.link && !e.link.startsWith(src.url)) err(rel, `generations entry link must point at the original PDF (${src.url})`);
+      if (e.superseded_by) {
+        const nb = srcDoc.sources.find((s) => s.id === e.superseded_by);
+        if (!nb || !GEN_SRC.has(e.superseded_by) || e.superseded_by === e.source_text_id) err(rel, `superseded_by "${e.superseded_by}" must be another generations-* source`);
+        else if (!all.some((x) => x.source === 'generations' && x.source_text_id === e.superseded_by)) err(rel, `entry superseded by ${e.superseded_by}, but the record has no entry from it`);
+        if (!e.edition_note) err(rel, 'superseded entry needs an edition_note');
+      }
+      if (src?.access === 'private-copy' && doc.free_source_links?.some((l) => l.source_id === src.id)) err(rel, `private copy ${src.id} may not be listed in free_source_links`);
     }
   }
 }

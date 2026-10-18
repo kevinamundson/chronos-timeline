@@ -4,13 +4,13 @@
   "type": "person",
   "title": "Judas Maccabeus",
   "summary": "Leader of the Jewish revolt against Antiochus IV.",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
   "sorting_year": -190,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 451): 190-160 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 620): 190–160 BC. Pending owner decision (open question A8)."
   },
   "father": null,
   "children": [],
@@ -32,10 +32,23 @@
         "year_am": null,
         "year_bc_ad": -190,
         "precision": "approximate",
-        "citation": "Preparing the World for Jesus, ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 451 (printed p. 450)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 451 (printed p. 450)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=451",
         "source_text_id": "generations-preparing",
-        "note": "Caption \"Death of Judas Maccabeus (190-160 BC)\"."
+        "note": "Caption \"Death of Judas Maccabeus (190-160 BC)\".",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"190–160 BC\" (PDF p. 620): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "190–160 BC",
+        "year_am": null,
+        "year_bc_ad": -190,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 22 \"The Hellenistic Kingdoms\", PDF p. 620 (printed p. 606)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": null
       }
     ],
     "death": [
@@ -55,10 +68,23 @@
         "year_am": null,
         "year_bc_ad": -160,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 451 (printed p. 450)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 451 (printed p. 450)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=451",
         "source_text_id": "generations-preparing",
-        "note": "Caption."
+        "note": "Caption.",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"160 BC\" (PDF p. 621): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "160 BC",
+        "year_am": null,
+        "year_bc_ad": -160,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 22 \"The Hellenistic Kingdoms\", PDF p. 621 (printed p. 607)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": null
       }
     ]
   },
@@ -68,7 +94,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": []
 }

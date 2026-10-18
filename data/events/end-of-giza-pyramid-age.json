@@ -40,10 +40,23 @@
       "year_am": null,
       "year_bc_ad": -2150,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 124 (printed p. 123)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 124 (printed p. 123)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=124",
       "source_text_id": "generations-preparing",
-      "note": "End of the 4th Dynasty."
+      "note": "End of the 4th Dynasty.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1825 BC\" (PDF p. 189): 325 years later."
+    },
+    {
+      "source": "generations",
+      "date": "1825 BC",
+      "year_am": null,
+      "year_bc_ad": -1825,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 9 \"Early Egypt and the Exodus of God's People\", PDF p. 189 (printed p. 175)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "The 4th Dynasty ends with the Great War."
     }
   ],
   "people": [],
@@ -52,7 +65,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

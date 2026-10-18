@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Daniel and his friends taken to Babylon",
   "summary": "Daniel and his friends taken to Babylon",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -605,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 336): 605 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 490): 605 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,23 @@
       "year_am": null,
       "year_bc_ad": -605,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 11 \"Babylon Has Fallen (626–539 BC)\", PDF p. 336 (printed p. 335)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 11 \"Babylon Has Fallen (626–539 BC)\", PDF p. 336 (printed p. 335)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=336",
       "source_text_id": "generations-preparing",
-      "note": "The first exile band; also p. 335."
+      "note": "The first exile band; also p. 335.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"605 BC\" (PDF p. 490): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "605 BC",
+      "year_am": null,
+      "year_bc_ad": -605,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 19 \"Babylon Has Fallen\", PDF p. 490 (printed p. 476)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "The table on p. 381 prints 606 BC."
     }
   ],
   "people": [
@@ -44,14 +57,15 @@
     "Dan.1.1-Dan.1.7"
   ],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

@@ -63,10 +63,23 @@
       "year_am": null,
       "year_bc_ad": 33,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 16 \"Preparing the World for Jesus: Jerusalem (73 BC – AD 33)\", PDF p. 524 (printed p. 523)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 16 \"Preparing the World for Jesus: Jerusalem (73 BC – AD 33)\", PDF p. 524 (printed p. 523)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=524",
       "source_text_id": "generations-preparing",
-      "note": "Timeline Review: \"Jesus Is Crucified\"; also pp. 27, 63."
+      "note": "Timeline Review: \"Jesus Is Crucified\"; also pp. 27, 63.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"AD 33\" (PDF p. 278): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "AD 33",
+      "year_am": null,
+      "year_bc_ad": 33,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 12 \"The Rise and Fall of the Amalekite–Phoenician Alliance\", PDF p. 278 (printed p. 264)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Also pp. 102 and 687. pp. 551 and 555 say \"around AD 30\" / \"AD 30\"."
     }
   ],
   "people": [],
@@ -79,7 +92,8 @@
     "generations-europe",
     "generations-asia",
     "generations-world",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

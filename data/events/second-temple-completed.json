@@ -4,13 +4,13 @@
   "type": "event",
   "title": "The rebuilt temple completed",
   "summary": "The rebuilt temple completed",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -516,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 440): 516 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 609): 516 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,23 @@
       "year_am": null,
       "year_bc_ad": -516,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 440 (printed p. 439)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 440 (printed p. 439)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=440",
       "source_text_id": "generations-preparing",
-      "note": "Under Zerubbabel."
+      "note": "Under Zerubbabel.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"516 BC\" (PDF p. 609): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "516 BC",
+      "year_am": null,
+      "year_bc_ad": -516,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 22 \"The Hellenistic Kingdoms\", PDF p. 609 (printed p. 595)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Also p. 549."
     }
   ],
   "people": [],
@@ -42,14 +55,15 @@
     "Ezra.6.15-Ezra.6.22"
   ],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

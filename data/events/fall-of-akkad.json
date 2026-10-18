@@ -53,10 +53,23 @@
       "year_am": null,
       "year_bc_ad": -2147,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 82 (printed p. 81)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 82 (printed p. 81)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=82",
       "source_text_id": "generations-preparing",
-      "note": "End of Sargon's Akkadian empire. Differs from the sort year (1477 BC, cfah-anchor) by 670 years."
+      "note": "End of Sargon's Akkadian empire. Differs from the sort year (1477 BC, cfah-anchor) by 670 years.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1477 BC\" (PDF p. 244): 670 years later."
+    },
+    {
+      "source": "generations",
+      "date": "1477 BC",
+      "year_am": null,
+      "year_bc_ad": -1477,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 10 \"The Beginning of Babylon–First of the Mesopotamian Empires\", PDF p. 244 (printed p. 230)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Fall of Akkad; also p. 289 and Timeline Review p. 247."
     }
   ],
   "people": [],

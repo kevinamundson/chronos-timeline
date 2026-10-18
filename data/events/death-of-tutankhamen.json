@@ -40,10 +40,12 @@
       "year_am": null,
       "year_bc_ad": -1325,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 128 (printed p. 127)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 128 (printed p. 127)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=128",
       "source_text_id": "generations-preparing",
-      "note": "p. 298 prints 1323 BC."
+      "note": "p. 298 prints 1323 BC.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"870–853 BC\" (PDF p. 415): 455 years later."
     },
     {
       "source": "generations",
@@ -51,10 +53,24 @@
       "year_am": null,
       "year_bc_ad": -1323,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 298 (printed p. 297)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 298 (printed p. 297)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=298",
       "source_text_id": "generations-preparing",
-      "note": "p. 128 prints 1325 BC."
+      "note": "p. 128 prints 1325 BC.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"870–853 BC\" (PDF p. 415): 453 years later."
+    },
+    {
+      "source": "generations",
+      "date": "870–853 BC",
+      "year_am": null,
+      "year_bc_ad": -870,
+      "year_bc_ad_end": -853,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 16 \"The Fall of Egypt by God's Decree–The Middle and Late Empires of Egypt\", PDF p. 415 (printed p. 401)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Heading covering Nefertiti, Smenkare, Tutankhamun and Ay; no separate death year."
     }
   ],
   "people": [],
@@ -63,7 +79,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

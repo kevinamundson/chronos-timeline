@@ -45,6 +45,30 @@
       "citation": null,
       "link": null,
       "note": "No matching entry found in Ussher's Annals."
+    },
+    {
+      "source": "generations",
+      "date": "from 2001 to 1994 BC",
+      "year_am": null,
+      "year_bc_ad": -2001,
+      "year_bc_ad_end": -1994,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 7 \"The Return of the Nephilim: Nimrod Attempts World Empire\", PDF p. 157 (printed p. 143)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "The first great seven-year famine."
+    },
+    {
+      "source": "generations",
+      "date": "2001–1994 BC",
+      "year_am": null,
+      "year_bc_ad": -2001,
+      "year_bc_ad_end": -1994,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 9 \"Early Egypt and the Exodus of God's People\", PDF p. 187 (printed p. 173)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Timeline chart \"Djoser's Famine\"."
     }
   ],
   "people": [

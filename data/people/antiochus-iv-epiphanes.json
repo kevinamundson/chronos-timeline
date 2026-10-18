@@ -4,13 +4,13 @@
   "type": "person",
   "title": "Antiochus IV Epiphanes",
   "summary": "Seleucid king who persecuted the Jews and defiled the temple.",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
   "sorting_year": -215,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 445): 215-164 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 614): c. 215–164 BC. Pending owner decision (open question A8)."
   },
   "father": null,
   "children": [],
@@ -32,10 +32,23 @@
         "year_am": null,
         "year_bc_ad": -215,
         "precision": "approximate",
-        "citation": "Preparing the World for Jesus, ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 445 (printed p. 444)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 445 (printed p. 444)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=445",
         "source_text_id": "generations-preparing",
-        "note": "Caption."
+        "note": "Caption.",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"c. 215–164 BC\" (PDF p. 614): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "c. 215–164 BC",
+        "year_am": null,
+        "year_bc_ad": -215,
+        "precision": "approximate",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 22 \"The Hellenistic Kingdoms\", PDF p. 614 (printed p. 600)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": null
       }
     ],
     "death": [
@@ -55,10 +68,23 @@
         "year_am": null,
         "year_bc_ad": -164,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 447 (printed p. 446)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 447 (printed p. 446)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=447",
         "source_text_id": "generations-preparing",
-        "note": "Caption p. 445 gives \"215-164 BC\"."
+        "note": "Caption p. 445 gives \"215-164 BC\".",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"164 BC\" (PDF p. 618): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "164 BC",
+        "year_am": null,
+        "year_bc_ad": -164,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 22 \"The Hellenistic Kingdoms\", PDF p. 618 (printed p. 604)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": null
       }
     ]
   },
@@ -67,7 +93,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": []
 }

@@ -106,7 +106,7 @@ const sortingEntry = (entries, basis) => {
   if (t === 'cfah-anchor') return entries.find((e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point' && has(e));
   if (t === 'cfah-table1') return entries.find((e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline' && has(e));
   if (t === 'ussher-jones' || t === 'ussher') return entries.find((e) => e.source === t && has(e));
-  if (t === 'provisional') return entries.find((e) => e.source === 'generations' && has(e));
+  if (t === 'provisional') return entries.find((e) => e.source === 'generations' && has(e) && !e.superseded_by);
   return null;
 };
 // Four-tier rule applied to any date list (birth/death/translated): CFAH AP > CFAH-1 Table 1 > Ussher-Jones > Ussher.
@@ -116,7 +116,7 @@ const TIER_PICKS = [
   ['ussher-jones', (e) => e.source === 'ussher-jones'],
   ['ussher', (e) => e.source === 'ussher'],
   // Provisional only (no tier 1-4 date): Generations curriculum, same rule as the record sort.
-  ['provisional', (e) => e.source === 'generations'],
+  ['provisional', (e) => e.source === 'generations' && !e.superseded_by],
 ];
 const tierYear = (entries) => {
   for (const [tier, pick] of TIER_PICKS) {
@@ -130,6 +130,16 @@ function chronTable(entries, { sortYear, basis, caption }) {
   const sorted = [...entries].map((e, i) => ({ e, i })).sort((a, b) => rowRank(a.e) - rowRank(b.e) || a.i - b.i).map((x) => x.e);
   const setter = sortingEntry(entries, basis);
   const rows = sorted.map((e) => {
+    // An older edition superseded by a newer one: a collapsed secondary line, with the difference noted; never a sort or diff flag.
+    if (e.superseded_by) {
+      const nb = sourceById[e.superseded_by];
+      return `<tr class="superseded">
+<th scope="row">${chronName(e)}</th>
+<td colspan="3"><details><summary><span class="tag tag-old">superseded</span> ${esc(e.date)} <span class="small muted">· ${esc(e.edition_note || `superseded by ${nb?.short || e.superseded_by}`)}</span></summary>
+<div class="small">${yearLabel(e.year_bc_ad, e.year_bc_ad_end) || ''}${e.precision ? ` · Precision: ${esc(e.precision)}` : ''}</div>
+<div>${e.citation ? ext(e.link, esc(e.citation)) : ''}</div>${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}</details></td>
+</tr>`;
+    }
     const pending = e.date == null;
     const flags = [];
     if (e === setter) flags.push('<span class="flag flag-sort" title="This entry sets the sort year">Sets sort year</span>');
@@ -142,7 +152,7 @@ function chronTable(entries, { sortYear, basis, caption }) {
 <th scope="row">${chronName(e)}</th>
 <td>${pending ? '<span class="muted">Not yet established</span>' : esc(e.date)}${e.precision && !pending ? `<div class="small muted">Precision: ${esc(e.precision)}</div>` : ''}</td>
 <td class="nowrap">${years || '<span class="muted">—</span>'}</td>
-<td>${e.citation ? ext(e.link || (['bible', 'masoretic-genealogy'].includes(e.source) ? blbFromText(e.citation) : null), esc(e.citation)) : '<span class="muted">—</span>'}${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}${flags.length ? `<div class="flags">${flags.join(' ')}</div>` : ''}</td>
+<td>${e.citation ? ext(e.link || (['bible', 'masoretic-genealogy'].includes(e.source) ? blbFromText(e.citation) : null), esc(e.citation)) : '<span class="muted">—</span>'}${e.edition_note ? `<div class="note"><span class="tag tag-old">${esc(/not in/.test(e.edition_note) ? 'not in 2nd ed.' : 'edition')}</span> ${esc(e.edition_note)}</div>` : ''}${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}${flags.length ? `<div class="flags">${flags.join(' ')}</div>` : ''}</td>
 </tr>`;
   }).join('\n');
   return `<div class="table-wrap" role="region" aria-label="${esc(caption)}" tabindex="0"><table class="chron">
@@ -156,6 +166,7 @@ function disagreements(entries, sortYear) {
   const out = [];
   const bc = {}; const am = {};
   for (const e of entries) {
+    if (e.superseded_by) continue; // older edition: noted on its collapsed row instead
     const name = e.source === 'cfah' ? (e.cfah_basis === 'table1_baseline' ? 'CFAH-1 Table 1' : 'CFAH') : (chronById[e.source]?.abbreviation || chronById[e.source]?.name || e.source);
     if (e.year_bc_ad != null) (bc[e.year_bc_ad] ||= new Set()).add(name);
     if (e.year_am != null) (am[e.year_am] ||= new Set()).add(name);

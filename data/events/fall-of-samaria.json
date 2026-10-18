@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Assyria destroys the northern kingdom of Israel",
   "summary": "Assyria destroys the northern kingdom of Israel",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -722,
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -721,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 204): 722 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 361): 721 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,12 @@
       "year_am": null,
       "year_bc_ad": -722,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 6 \"The Special People of God\", PDF p. 204 (printed p. 203)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 6 \"The Special People of God\", PDF p. 204 (printed p. 203)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=204",
       "source_text_id": "generations-preparing",
-      "note": "p. 305 and the Timeline Review (p. 212) print 721 BC."
+      "note": "p. 305 and the Timeline Review (p. 212) print 721 BC.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"721 BC\" (PDF p. 361): 1 year later."
     },
     {
       "source": "generations",
@@ -40,10 +42,23 @@
       "year_am": null,
       "year_bc_ad": -721,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 305 (printed p. 304)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 305 (printed p. 304)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=305",
       "source_text_id": "generations-preparing",
-      "note": "Under King Hoshea; some 27,000 exiled."
+      "note": "Under King Hoshea; some 27,000 exiled.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"721 BC\" (PDF p. 361): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "721 BC",
+      "year_am": null,
+      "year_bc_ad": -721,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 14 \"Old Babylon–The Rising Threats to Israel\", PDF p. 361 (printed p. 347)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Sargon II deports the rest of Israel; also pp. 377, 417. p. 388 prints 722 BC."
     }
   ],
   "people": [],
@@ -53,14 +68,15 @@
     "2Kgs.17.5-2Kgs.17.23"
   ],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

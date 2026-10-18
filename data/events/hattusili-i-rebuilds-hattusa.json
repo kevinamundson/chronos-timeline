@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Hattusili I rebuilds the Hittite capital",
   "summary": "Hattusili I rebuilds the Hittite capital",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -1586,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 296): 1586-1556 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (1st ed., 2020), PDF p. 296): 1586-1556 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -30,10 +30,11 @@
       "year_bc_ad": -1586,
       "year_bc_ad_end": -1556,
       "precision": "year-range",
-      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 296 (printed p. 295)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 296 (printed p. 295)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=296",
       "source_text_id": "generations-preparing",
-      "note": "Reign of Hattusili I."
+      "note": "Reign of Hattusili I.",
+      "edition_note": "1st ed. (2020); not in 2nd ed. (2024): no dated statement for this was found in the 2nd ed. (2024)."
     }
   ],
   "people": [],
@@ -48,7 +49,7 @@
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

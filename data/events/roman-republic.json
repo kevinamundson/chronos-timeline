@@ -42,10 +42,24 @@
       "year_bc_ad": -509,
       "year_bc_ad_end": -50,
       "precision": "year-range",
-      "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 467 (printed p. 466)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 467 (printed p. 466)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=467",
       "source_text_id": "generations-preparing",
-      "note": "Heading \"The Roman Republic\"; Timeline Review (p. 506): \"Roman Republic Formed 509 bc\"."
+      "note": "Heading \"The Roman Republic\"; Timeline Review (p. 506): \"Roman Republic Formed 509 bc\".",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"509–50 BC\" (PDF p. 636): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "509–50 BC",
+      "year_am": null,
+      "year_bc_ad": -509,
+      "year_bc_ad_end": -50,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 23 \"The Romans: Reaching the Zenith of the Empires\", PDF p. 636 (printed p. 622)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": null
     }
   ],
   "people": [],
@@ -54,7 +68,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-europe",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

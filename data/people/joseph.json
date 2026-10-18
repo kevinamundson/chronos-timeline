@@ -98,10 +98,23 @@
         "year_am": null,
         "year_bc_ad": -1911,
         "precision": "approximate",
-        "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 136 (printed p. 135)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 136 (printed p. 135)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=136",
         "source_text_id": "generations-preparing",
-        "note": "Differs from the sort year (1745 BC, ussher-jones) by 166 years."
+        "note": "Differs from the sort year (1745 BC, ussher-jones) by 166 years.",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"around 1911 BC\" (PDF p. 204): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "around 1911 BC",
+        "year_am": null,
+        "year_bc_ad": -1911,
+        "precision": "approximate",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 9 \"Early Egypt and the Exodus of God's People\", PDF p. 204 (printed p. 190)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": "Left over from the 1st edition: it does not fit the same page's heading (sold at 17 in c. 1728 BC). Timeline Review 3 (p. 247) shows Joseph without dates. Differs from the sort year (1745 BC, ussher-jones) by 166 years."
       }
     ],
     "death": [
@@ -165,10 +178,11 @@
         "year_am": null,
         "year_bc_ad": -1801,
         "precision": "approximate",
-        "citation": "Preparing the World for Jesus, ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 105 (printed p. 104)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 105 (printed p. 104)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=105",
         "source_text_id": "generations-preparing",
-        "note": "Timeline Review pairs it with an asterisked 1631 BC (the book's Ussher-chronology equivalent). (p. 114) Differs from the ussher-jones death year (1635 BC) by 166 years."
+        "note": "Timeline Review pairs it with an asterisked 1631 BC (the book's Ussher-chronology equivalent). (p. 114) Differs from the ussher-jones death year (1635 BC) by 166 years.",
+        "edition_note": "1st ed. (2020); not in 2nd ed. (2024): no dated statement for this was found in the 2nd ed. (2024)."
       }
     ]
   },

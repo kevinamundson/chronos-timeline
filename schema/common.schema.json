@@ -128,6 +128,14 @@
             "null"
           ]
         },
+        "superseded_by": {
+          "$ref": "#/$defs/slug",
+          "description": "Generations only: the source id of a newer edition of the same book that dates this record too. The entry is kept for provenance, shown collapsed, and never sets a sort."
+        },
+        "edition_note": {
+          "type": "string",
+          "description": "Generations only: edition status of this entry (e.g. superseded by the 2nd ed., with the difference; or not in the 2nd ed.)."
+        },
         "cfah_basis": {
           "enum": [
             "anchor_point",

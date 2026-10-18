@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Cyrus captures Ecbatana and founds the Medo-Persian Empire",
   "summary": "Cyrus captures Ecbatana and founds the Medo-Persian Empire",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -550,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 367): By 550 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 534): 550 BC to 530 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,24 @@
       "year_am": null,
       "year_bc_ad": -550,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 12 \"The Kingdom of the Medes and Persians (725–330 BC)\", PDF p. 367 (printed p. 366)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 12 \"The Kingdom of the Medes and Persians (725–330 BC)\", PDF p. 367 (printed p. 366)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=367",
       "source_text_id": "generations-preparing",
-      "note": "Timeline Review (p. 388): \"Cyrus Establishes Medo-Persian Empire 550 bc\"."
+      "note": "Timeline Review (p. 388): \"Cyrus Establishes Medo-Persian Empire 550 bc\".",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"550 BC to 530 BC\" (PDF p. 534): same start year."
+    },
+    {
+      "source": "generations",
+      "date": "550 BC to 530 BC",
+      "year_am": null,
+      "year_bc_ad": -550,
+      "year_bc_ad_end": -530,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 20 \"The Kingdoms of the Elamites, the Medes, and the Persians\", PDF p. 534 (printed p. 520)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Rules the Achaemenid-Persian Empire."
     }
   ],
   "people": [
@@ -42,14 +56,15 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

@@ -43,10 +43,23 @@
         "year_am": null,
         "year_bc_ad": -356,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 423 (printed p. 422)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 423 (printed p. 422)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=423",
         "source_text_id": "generations-preparing",
-        "note": "Caption; also heading p. 425."
+        "note": "Caption; also heading p. 425.",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"356–323 BC\" (PDF p. 595): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "356–323 BC",
+        "year_am": null,
+        "year_bc_ad": -356,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 21 \"The Misguided Greeks and Alexander's Ill-Fated Empire\", PDF p. 595 (printed p. 581)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": "Also p. 594."
       }
     ],
     "death": [
@@ -77,10 +90,23 @@
         "year_am": null,
         "year_bc_ad": -323,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 434 (printed p. 433)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 434 (printed p. 433)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=434",
         "source_text_id": "generations-preparing",
-        "note": "Timeline Review: \"Alexander “The Great” Dies\"."
+        "note": "Timeline Review: \"Alexander “The Great” Dies\".",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"356–323 BC\" (PDF p. 595): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "356–323 BC",
+        "year_am": null,
+        "year_bc_ad": -323,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 21 \"The Misguided Greeks and Alexander's Ill-Fated Empire\", PDF p. 595 (printed p. 581)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": null
       }
     ]
   },
@@ -93,7 +119,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-europe",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": []
 }

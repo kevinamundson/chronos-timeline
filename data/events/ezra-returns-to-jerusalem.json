@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Ezra leads exiles back to Jerusalem",
   "summary": "Ezra leads exiles back to Jerusalem",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -458,
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -468,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 441): 458 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 610): 468 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,23 @@
       "year_am": null,
       "year_bc_ad": -458,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 441 (printed p. 440)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 441 (printed p. 440)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=441",
       "source_text_id": "generations-preparing",
-      "note": "The second major group of exiles."
+      "note": "The second major group of exiles.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"468 BC\" (PDF p. 610): 10 years earlier."
+    },
+    {
+      "source": "generations",
+      "date": "468 BC",
+      "year_am": null,
+      "year_bc_ad": -468,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 22 \"The Hellenistic Kingdoms\", PDF p. 610 (printed p. 596)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": null
     }
   ],
   "people": [],
@@ -42,14 +55,15 @@
     "Ezra.7.1-Ezra.7.10"
   ],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

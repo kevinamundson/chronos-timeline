@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Joseph sold into Egypt",
   "summary": "Joseph sold into Egypt",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -1930,
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -1728,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 166): 1930/1760* bc. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 204): c. 1728 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,23 @@
       "year_am": null,
       "year_bc_ad": -1930,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 166 (printed p. 165)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 166 (printed p. 165)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=166",
       "source_text_id": "generations-preparing",
-      "note": "Timeline Review: \"Joseph Enters Egypt\". Timeline Review pairs it with an asterisked 1760 BC (the book's Ussher-chronology equivalent). The p. 136 heading prints \"c. 1911-1930 bc\"."
+      "note": "Timeline Review: \"Joseph Enters Egypt\". Timeline Review pairs it with an asterisked 1760 BC (the book's Ussher-chronology equivalent). The p. 136 heading prints \"c. 1911-1930 bc\".",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"c. 1728 BC\" (PDF p. 204): 202 years later."
+    },
+    {
+      "source": "generations",
+      "date": "c. 1728 BC",
+      "year_am": null,
+      "year_bc_ad": -1728,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 9 \"Early Egypt and the Exodus of God's People\", PDF p. 204 (printed p. 190)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Section heading."
     }
   ],
   "people": [
@@ -44,14 +57,15 @@
     "Gen.37.25-Gen.37.36"
   ],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

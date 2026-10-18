@@ -43,9 +43,22 @@
         "year_am": null,
         "year_bc_ad": -100,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 487 (printed p. 486)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 487 (printed p. 486)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=487",
         "source_text_id": "generations-preparing",
+        "note": "Caption.",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"100–44 BC\" (PDF p. 656): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "100–44 BC",
+        "year_am": null,
+        "year_bc_ad": -100,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 23 \"The Romans: Reaching the Zenith of the Empires\", PDF p. 656 (printed p. 642)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
         "note": "Caption."
       }
     ],
@@ -77,9 +90,22 @@
         "year_am": null,
         "year_bc_ad": -44,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 495 (printed p. 494)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 495 (printed p. 494)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=495",
         "source_text_id": "generations-preparing",
+        "note": null,
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"44 BC\" (PDF p. 665): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "44 BC",
+        "year_am": null,
+        "year_bc_ad": -44,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 23 \"The Romans: Reaching the Zenith of the Empires\", PDF p. 665 (printed p. 651)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
         "note": null
       }
     ]
@@ -93,7 +119,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-europe",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": []
 }

@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Reign of Solomon",
   "summary": "Reign of Solomon",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -1015,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 208): 1015-975 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 372): 1015–976 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -30,10 +30,24 @@
       "year_bc_ad": -1015,
       "year_bc_ad_end": -975,
       "precision": "year-range",
-      "citation": "Preparing the World for Jesus, ch. 6 \"The Special People of God\", PDF p. 208 (printed p. 207)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 6 \"The Special People of God\", PDF p. 208 (printed p. 207)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=208",
       "source_text_id": "generations-preparing",
-      "note": "Kings table."
+      "note": "Kings table.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1015–976 BC\" (PDF p. 372): same start year."
+    },
+    {
+      "source": "generations",
+      "date": "1015–976 BC",
+      "year_am": null,
+      "year_bc_ad": -1015,
+      "year_bc_ad_end": -976,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 15 \"The Rise and Fall of Israel's Monarchy\", PDF p. 372 (printed p. 358)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Heading; the table on p. 375 prints 1015–975 BC."
     }
   ],
   "people": [
@@ -43,14 +57,15 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

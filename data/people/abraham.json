@@ -102,10 +102,23 @@
         "year_am": null,
         "year_bc_ad": -2166,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 87 (printed p. 86)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 87 (printed p. 86)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=87",
         "source_text_id": "generations-preparing",
-        "note": "Born in Ur of the Chaldees; also p. 99 (\"Born 2166 bc\"). Timeline Review pairs it with an asterisked 1996 BC (the book's Ussher-chronology equivalent). (p. 114) Differs from the sort year (1996 BC, cfah-table1) by 170 years."
+        "note": "Born in Ur of the Chaldees; also p. 99 (\"Born 2166 bc\"). Timeline Review pairs it with an asterisked 1996 BC (the book's Ussher-chronology equivalent). (p. 114) Differs from the sort year (1996 BC, cfah-table1) by 170 years.",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"Abraham (1996 – 1819 BC)\" (PDF p. 160): 170 years later."
+      },
+      {
+        "source": "generations",
+        "date": "Abraham (1996 – 1819 BC)",
+        "year_am": null,
+        "year_bc_ad": -1996,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 7 \"The Return of the Nephilim: Nimrod Attempts World Empire\", PDF p. 160 (printed p. 146)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": "Timeline Review 2; also p. 247. The text (p. 152) says Gilgamesh began ten years before Abram's birth."
       }
     ],
     "death": [
@@ -161,6 +174,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 2183.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "generations",
+        "date": "Abraham (1996 – 1819 BC)",
+        "year_am": null,
+        "year_bc_ad": -1819,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 7 \"The Return of the Nephilim: Nimrod Attempts World Empire\", PDF p. 160 (printed p. 146)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": "Timeline Review 2. Genesis gives Abraham 175 years, which would end in 1821 BC. Differs from the ussher death year (1821 BC) by 2 years."
       }
     ]
   },

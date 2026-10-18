@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Reign of Ur-Nammu; his law code",
   "summary": "Reign of Ur-Nammu; his law code",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -2112,
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -1370,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 95): around 2112-2095 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 267): 1370–1346 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -30,10 +30,24 @@
       "year_bc_ad": -2112,
       "year_bc_ad_end": -2095,
       "precision": "year-range",
-      "citation": "Preparing the World for Jesus, ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 95 (printed p. 94)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 95 (printed p. 94)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=95",
       "source_text_id": "generations-preparing",
-      "note": "Issued the second-oldest surviving law code (heading \"c. 2100 bc\")."
+      "note": "Issued the second-oldest surviving law code (heading \"c. 2100 bc\").",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1370–1346 BC\" (PDF p. 267): 742 years later."
+    },
+    {
+      "source": "generations",
+      "date": "1370–1346 BC",
+      "year_am": null,
+      "year_bc_ad": -1370,
+      "year_bc_ad_end": -1346,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 11 \"God Reveals His Law to Man–From Creation to Solomon\", PDF p. 267 (printed p. 253)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": null
     }
   ],
   "people": [],
@@ -41,14 +55,15 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

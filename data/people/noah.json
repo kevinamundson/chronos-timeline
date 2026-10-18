@@ -100,10 +100,23 @@
         "year_am": null,
         "year_bc_ad": -3118,
         "precision": "approximate",
-        "citation": "Preparing the World for Jesus, ch. 3 \"Babel and the Futility of the Kingdoms of Men\", PDF p. 78 (printed p. 77)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 3 \"Babel and the Futility of the Kingdoms of Men\", PDF p. 78 (printed p. 77)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=78",
         "source_text_id": "generations-preparing",
-        "note": "Timeline Review; Timeline Review pairs it with an asterisked 2942 BC (the book's Ussher-chronology equivalent). Differs from the sort year (2948 BC, ussher) by 170 years."
+        "note": "Timeline Review; Timeline Review pairs it with an asterisked 2942 BC (the book's Ussher-chronology equivalent). Differs from the sort year (2948 BC, ussher) by 170 years.",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"2948 – 1998 BC\" (PDF p. 73): 170 years later."
+      },
+      {
+        "source": "generations",
+        "date": "2948 – 1998 BC",
+        "year_am": null,
+        "year_bc_ad": -2948,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 3 \"The Worldwide Flood\", PDF p. 73 (printed p. 59)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": "Timeline Review 1 (\"Noah: 2948 – 1998 BC\"); also p. 160."
       }
     ],
     "death": [
@@ -179,10 +192,23 @@
         "year_am": null,
         "year_bc_ad": -2168,
         "precision": "approximate",
-        "citation": "Preparing the World for Jesus, ch. 1 \"Creation and the Global Flood\", PDF p. 42 (printed p. 41)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 1 \"Creation and the Global Flood\", PDF p. 42 (printed p. 41)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=42",
         "source_text_id": "generations-preparing",
-        "note": "Timeline Review; Timeline Review pairs it with an asterisked 1999 BC (the book's Ussher-chronology equivalent). p. 36 says \"around 2100-2000 BC\". Differs from the cfah-table1 death year (1998 BC) by 170 years."
+        "note": "Timeline Review; Timeline Review pairs it with an asterisked 1999 BC (the book's Ussher-chronology equivalent). p. 36 says \"around 2100-2000 BC\". Differs from the cfah-table1 death year (1998 BC) by 170 years.",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1998 BC\" (PDF p. 153): 170 years later."
+      },
+      {
+        "source": "generations",
+        "date": "1998 BC",
+        "year_am": null,
+        "year_bc_ad": -1998,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 7 \"The Return of the Nephilim: Nimrod Attempts World Empire\", PDF p. 153 (printed p. 139)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": "Died at 950, four years before Naamah."
       }
     ]
   },

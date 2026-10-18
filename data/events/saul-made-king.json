@@ -97,10 +97,24 @@
       "year_bc_ad": -1095,
       "year_bc_ad_end": -1055,
       "precision": "year-range",
-      "citation": "Preparing the World for Jesus, ch. 6 \"The Special People of God\", PDF p. 208 (printed p. 207)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 6 \"The Special People of God\", PDF p. 208 (printed p. 207)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=208",
       "source_text_id": "generations-preparing",
-      "note": "Table \"Kings of United Israel\" (Saul, 40 years)."
+      "note": "Table \"Kings of United Israel\" (Saul, 40 years).",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1095–1055 BC\" (PDF p. 366): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "1095–1055 BC",
+      "year_am": null,
+      "year_bc_ad": -1095,
+      "year_bc_ad_end": -1055,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 15 \"The Rise and Fall of Israel's Monarchy\", PDF p. 366 (printed p. 352)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Heading."
     }
   ],
   "people": [

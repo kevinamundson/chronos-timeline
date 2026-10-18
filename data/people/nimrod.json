@@ -8,12 +8,12 @@
   ],
   "summary": "Son of Cush; \"a mighty hunter before the LORD\"; \"the beginning of his kingdom was Babel\" (Gen 10:8–10).",
   "description": "Father Cush (not yet a record). CFAH-2 (\"The Founding of the Nations\", introduction and Duration 6) identifies Nimrod with Ninus, founder of Assyria after the Dispersion, and later papers equate him with Enmerkar of Uruk and Atothis I of Egypt (CFAH-5/6). Josephus, Antiquities I.4.2 makes Nimrod the instigator of the tower.",
-  "sorting_year": -2448,
+  "sorting_year": -2270,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 68): around 2448 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 143): around 2270 BC. Pending owner decision (open question A8)."
   },
   "father": "cush",
   "children": [],
@@ -66,10 +66,23 @@
         "year_am": null,
         "year_bc_ad": -2448,
         "precision": "approximate",
-        "citation": "Preparing the World for Jesus, ch. 3 \"Babel and the Futility of the Kingdoms of Men\", PDF p. 68 (printed p. 67)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 3 \"Babel and the Futility of the Kingdoms of Men\", PDF p. 68 (printed p. 67)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=68",
         "source_text_id": "generations-preparing",
-        "note": "Estimated about seventy years after the Flood. Timeline Review (p. 78): \"2448/2288* bc\"."
+        "note": "Estimated about seventy years after the Flood. Timeline Review (p. 78): \"2448/2288* bc\".",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"around 2270 BC\" (PDF p. 143): 178 years later."
+      },
+      {
+        "source": "generations",
+        "date": "around 2270 BC",
+        "year_am": null,
+        "year_bc_ad": -2270,
+        "precision": "approximate",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 7 \"The Return of the Nephilim: Nimrod Attempts World Empire\", PDF p. 143 (printed p. 129)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": "Estimated from the ages of Shem's descendants, about 80 years after the Flood. The 1st-edition figure \"around 2448 BC\" is left on p. 93 (a leftover)."
       }
     ],
     "death": [

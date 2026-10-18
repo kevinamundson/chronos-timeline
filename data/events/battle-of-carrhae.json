@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Parthians defeat Rome at Carrhae",
   "summary": "Parthians defeat Rome at Carrhae",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -53,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 509): 53 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 676): 53 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,23 @@
       "year_am": null,
       "year_bc_ad": -53,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 16 \"Preparing the World for Jesus: Jerusalem (73 BC – AD 33)\", PDF p. 509 (printed p. 508)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 16 \"Preparing the World for Jesus: Jerusalem (73 BC – AD 33)\", PDF p. 509 (printed p. 508)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=509",
       "source_text_id": "generations-preparing",
-      "note": "Timeline Review (p. 524): \"53 bc\"."
+      "note": "Timeline Review (p. 524): \"53 bc\".",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"53 BC\" (PDF p. 676): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "53 BC",
+      "year_am": null,
+      "year_bc_ad": -53,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 24 \"Preparing the World for Jesus: Jerusalem\", PDF p. 676 (printed p. 662)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": null
     }
   ],
   "people": [],
@@ -40,14 +53,15 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

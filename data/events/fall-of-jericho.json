@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Fall of Jericho",
   "summary": "Fall of Jericho",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -1400,
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -1450,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 186): around 1400 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 313): 1450 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,23 @@
       "year_am": null,
       "year_bc_ad": -1400,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 6 \"The Special People of God\", PDF p. 186 (printed p. 185)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 6 \"The Special People of God\", PDF p. 186 (printed p. 185)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=186",
       "source_text_id": "generations-preparing",
-      "note": "The archaeological destruction date, which the book links to Joshua's conquest; also p. 187."
+      "note": "The archaeological destruction date, which the book links to Joshua's conquest; also p. 187.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1450 BC\" (PDF p. 313): 50 years earlier."
+    },
+    {
+      "source": "generations",
+      "date": "1450 BC",
+      "year_am": null,
+      "year_bc_ad": -1450,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 13 \"The Special People of God–Taking the Promised Land\", PDF p. 313 (printed p. 299)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": null
     }
   ],
   "people": [],
@@ -42,14 +55,15 @@
     "Josh.6.20-Josh.6.21"
   ],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

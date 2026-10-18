@@ -121,10 +121,23 @@
       "year_am": null,
       "year_bc_ad": -4174,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 1 \"Creation and the Global Flood\", PDF p. 16 (printed p. 15)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 1 \"Creation and the Global Flood\", PDF p. 16 (printed p. 15)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=16",
       "source_text_id": "generations-preparing",
-      "note": "The book's own chronology. Timeline Review pairs it with an asterisked 4004 BC (the book's Ussher-chronology equivalent). (pp. 42, 78). End note 1 (p. 526) explains the long chronology. Differs from the sort year (4004 BC, cfah-anchor) by 170 years."
+      "note": "The book's own chronology. Timeline Review pairs it with an asterisked 4004 BC (the book's Ussher-chronology equivalent). (pp. 42, 78). End note 1 (p. 526) explains the long chronology. Differs from the sort year (4004 BC, cfah-anchor) by 170 years.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"4,004 BC\" (PDF p. 21): 170 years later."
+    },
+    {
+      "source": "generations",
+      "date": "4,004 BC",
+      "year_am": null,
+      "year_bc_ad": -4004,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 1 \"The Song of Creation\", PDF p. 21 (printed p. 7)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Derived in the text from 3104 BC plus 900 years; also the heading of ch. I \"(4004–3584 BC)\" and Timeline Review p. 73."
     }
   ],
   "people": [

@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Jonah preaches in Nineveh",
   "summary": "Jonah preaches in Nineveh",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -811,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 318): 811-783 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (1st ed., 2020), PDF p. 318): 811-783 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -30,10 +30,11 @@
       "year_bc_ad": -811,
       "year_bc_ad_end": -783,
       "precision": "year-range",
-      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 318 (printed p. 317)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 318 (printed p. 317)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=318",
       "source_text_id": "generations-preparing",
-      "note": "Probably during the reign of Adad-nirari III; Timeline Review (p. 324): \"Jonah Visits Nineveh 800 bc\"."
+      "note": "Probably during the reign of Adad-nirari III; Timeline Review (p. 324): \"Jonah Visits Nineveh 800 bc\".",
+      "edition_note": "1st ed. (2020); not in 2nd ed. (2024): no dated statement for this was found in the 2nd ed. (2024)."
     }
   ],
   "people": [],
@@ -50,7 +51,7 @@
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

@@ -40,10 +40,23 @@
       "year_am": null,
       "year_bc_ad": -30,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 157 (printed p. 156)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 157 (printed p. 156)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=157",
       "source_text_id": "generations-preparing",
-      "note": null
+      "note": null,
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"29 BC\" (PDF p. 423): 1 year later."
+    },
+    {
+      "source": "generations",
+      "date": "29 BC",
+      "year_am": null,
+      "year_bc_ad": -29,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 16 \"The Fall of Egypt by God's Decree–The Middle and Late Empires of Egypt\", PDF p. 423 (printed p. 409)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "The Ptolemaic dynasty ends with Cleopatra's death."
     }
   ],
   "people": [],
@@ -52,7 +65,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

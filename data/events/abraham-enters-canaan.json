@@ -119,10 +119,23 @@
       "year_am": null,
       "year_bc_ad": -2076,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 166 (printed p. 165)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 166 (printed p. 165)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=166",
       "source_text_id": "generations-preparing",
-      "note": "Timeline Review: \"Abram Enters Egypt\". Timeline Review pairs it with an asterisked 1906 BC (the book's Ussher-chronology equivalent). Differs from the sort year (1921 BC, cfah-table1) by 155 years."
+      "note": "Timeline Review: \"Abram Enters Egypt\". Timeline Review pairs it with an asterisked 1906 BC (the book's Ussher-chronology equivalent). Differs from the sort year (1921 BC, cfah-table1) by 155 years.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1921 BC\" (PDF p. 168): 155 years later."
+    },
+    {
+      "source": "generations",
+      "date": "1921 BC",
+      "year_am": null,
+      "year_bc_ad": -1921,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 8 \"God's Covenant with Abraham to Bless the World\", PDF p. 168 (printed p. 154)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Abram crosses the Euphrates; p. 171: he visited Egypt in 1921 BC."
     }
   ],
   "people": [

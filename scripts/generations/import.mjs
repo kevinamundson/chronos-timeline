@@ -45,7 +45,8 @@ function resort(doc) {
   if (tierOf(entries)) return; // tiers 1-4 own the sort; never touched here
   const b = doc.sorting_basis;
   if (b?.tier === 'derived') return;
-  const g = entries.find((e) => e.source === 'generations' && e.year_bc_ad != null);
+  // superseded entries (an older edition replaced by a newer one) never set the provisional sort
+  const g = entries.find((e) => e.source === 'generations' && e.year_bc_ad != null && !e.superseded_by);
   if (g) {
     doc.sorting_year = g.year_bc_ad;
     const bk = BOOKS.find((x) => x.id === g.source_text_id);
@@ -60,7 +61,8 @@ const extractRows = {};
 const runCreated = new Set();
 const addBookLinks = (doc, book) => {
   if (!doc.sources.includes(book.id)) doc.sources.push(book.id);
-  if (doc.type === 'event' && !doc.free_source_links.some((x) => x.source_id === book.id)) doc.free_source_links.push({ source_id: book.id, url: book.url, locator: book.short });
+  // free_source_links are for publicly readable texts only; a private copy (book.private) is cited but not listed there
+  if (doc.type === 'event' && !book.private && !doc.free_source_links.some((x) => x.source_id === book.id)) doc.free_source_links.push({ source_id: book.id, url: book.url, locator: book.short });
 };
 for (const key of keys) {
   const book = BOOKS.find((b) => b.key === key); if (!book) throw new Error(`unknown book ${key}`);
@@ -91,7 +93,7 @@ for (const key of keys) {
       description: `${MARK} (${book.short}). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.`,
       sorting_year: 1, sorting_basis: { tier: 'none', tier_rank: null, chronology: 'cfah', note: '' }, chronologies: [CFAH_NULL(), ...(old?.chronologies?.filter((c) => c.source === 'generations') || [])],
       people: e.people || [], locations: e.loc || [], maps: [], scripture_refs: e.refs || [], sources: [...new Set([...(old?.sources || []), book.id])], related: e.related || [],
-      free_source_links: [{ source_id: book.id, url: book.url, locator: book.short }] };
+      free_source_links: book.private ? [] : [{ source_id: book.id, url: book.url, locator: book.short }] };
     if (old) for (const s of old.free_source_links || []) if (!doc.free_source_links.some((x) => x.source_id === s.source_id)) doc.free_source_links.push(s);
     recs[id] = { dir: 'events', doc, dirty: true }; created.add(id);
   }
@@ -104,9 +106,9 @@ for (const key of keys) {
     const ch = chapterAt(page);
     const printed = book.printedOffset != null ? ` (printed p. ${page + book.printedOffset})` : book.printedSpread ? ` (printed pp. ${2 * page - 1}–${2 * page})` : '';
     const entry = { source: 'generations', date, year_am: null, year_bc_ad: y, ...(yEnd != null ? { year_bc_ad_end: yEnd } : {}), precision: prec,
-      citation: `${book.short}${ch ? `, ch. ${ch[1]} "${ch[2]}"` : ''}, PDF p. ${page}${printed}`, link: `${book.url}#page=${page}`, source_text_id: book.id, note: note || null };
+      citation: `${book.short}${ch ? `, ch. ${ch[1]} "${ch[2]}"` : ''}, PDF p. ${page}${printed}`, link: book.private ? book.url : `${book.url}#page=${page}`, source_text_id: book.id, note: note || null };
     const d = r.doc; let list;
-    if (d.type === 'event') list = d.chronologies; else if (d.type === 'person') list = (d.dates[slot || 'birth'] ||= []); else throw new Error(`target ${target} is a ${d.type}`);
+    if (d.type === 'event') list = d.chronologies; else if (d.type === 'person') list = (d.dates[slot || 'birth'] ||= [CFAH_NULL()]); else throw new Error(`target ${target} is a ${d.type}`);
     // agreement with the sort year (records sorted by tiers 1-4)
     let agree = 'no tier 1–4 date';
     const basisEntries = d.type === 'event' ? d.chronologies : (d.dates.birth || []);
@@ -138,6 +140,40 @@ for (const key of keys) {
     if (!left) { unlinkSync(join(DATA, r.dir, `${id}.json`)); delete recs[id]; }
   }
 }
+// edition supersession: where a newer edition (book.supersedes) dates the same record/slot, the older edition's entries are
+// kept but marked superseded_by (the site shows them collapsed, and they never set a provisional sort); older-edition
+// entries the newer edition does not date are flagged "not in <newer edition>".
+const pg = (e) => e.citation.match(/PDF p\. (\d+)/)[1];
+const astro = (y) => (y < 0 ? y + 1 : y);
+const span = (e) => [Math.min(e.year_bc_ad, e.year_bc_ad_end ?? e.year_bc_ad), Math.max(e.year_bc_ad, e.year_bc_ad_end ?? e.year_bc_ad)];
+const change = (o, n) => {
+  if (o.year_bc_ad == null || n.year_bc_ad == null) return 'not comparable';
+  const d = astro(n.year_bc_ad) - astro(o.year_bc_ad);
+  if (d === 0) return (o.year_bc_ad_end ?? null) === (n.year_bc_ad_end ?? null) ? 'same' : 'same start year';
+  const [a1, b1] = span(o), [a2, b2] = span(n);
+  const ov = !(b1 < a2 || b2 < a1) && (o.year_bc_ad_end != null || n.year_bc_ad_end != null);
+  return `${Math.abs(d)} year${Math.abs(d) === 1 ? '' : 's'} ${d > 0 ? 'later' : 'earlier'}${ov ? ' (ranges overlap)' : ''}`;
+};
+const editionDiff = {};
+for (const nb of BOOKS.filter((b) => b.supersedes && keys.includes(b.key))) {
+  const ob = BOOKS.find((b) => b.id === nb.supersedes); const out = (editionDiff[nb.id] = []);
+  for (const [id, r] of Object.entries(recs)) {
+    const d = r.doc; const slots = d.type === 'event' ? [[null, d.chronologies]] : d.type === 'person' ? Object.entries(d.dates) : [];
+    for (const [slot, list] of slots) {
+      const olds = list.filter((e) => e.source === 'generations' && e.source_text_id === ob.id);
+      const news = list.filter((e) => e.source === 'generations' && e.source_text_id === nb.id);
+      if (!olds.length && !news.length) continue;
+      for (const o of olds) {
+        if (news.length) {
+          o.superseded_by = nb.id;
+          o.edition_note = `${ob.edition}; superseded by the ${nb.edition}, which prints "${news[0].date}" (PDF p. ${pg(news[0])}): ${change(o, news[0]).replace(/^same$/, 'the same date')}.`;
+        } else { delete o.superseded_by; o.edition_note = `${ob.edition}; not in ${nb.edition}: no dated statement for this was found in the ${nb.edition}.`; }
+        save(id);
+      }
+      out.push({ id, slot, title: d.title, olds, news, tier: tierOf(d.type === 'event' ? d.chronologies : (d.dates[slot] || [])) });
+    }
+  }
+}
 // link people <-> events, resort, write
 for (const [id, r] of Object.entries(recs)) if (r.doc.type === 'person' && r.doc.description?.startsWith(MARK)) {
   r.doc.events = Object.values(recs).filter((x) => x.doc.type === 'event' && x.doc.people.includes(id)).map((x) => x.doc.id).sort(); save(id);
@@ -151,26 +187,47 @@ for (const rows of Object.values(extractRows)) for (const r of rows) {
   const lo2 = Math.min(r._y, r._yEnd ?? r._y), hi2 = Math.max(r._y, r._yEnd ?? r._y);
   for (const o of list) {
     if (o.source !== 'generations' || o.source_text_id === r._book || o.year_bc_ad == null) continue;
+    const rb = BOOKS.find((b) => b.id === r._book);
+    if (o.source_text_id === rb.supersedes || o.source_text_id === rb.supersededBy) continue; // editions are compared in their own table
     const lo = Math.min(o.year_bc_ad, o.year_bc_ad_end ?? o.year_bc_ad), hi = Math.max(o.year_bc_ad, o.year_bc_ad_end ?? o.year_bc_ad);
     if (hi2 < lo || lo2 > hi) r.agree += `; differs from ${BOOKS.find((b) => b.id === o.source_text_id).short} ("${o.date}", PDF p. ${o.citation.match(/PDF p\. (\d+)/)[1]})`;
   }
+}
+for (const rows of Object.values(extractRows)) for (const r of rows) {
+  const rb = BOOKS.find((b) => b.id === r._book); if (!rb.supersededBy) continue;
+  const d = recs[r._id].doc; const list = d.type === 'event' ? d.chronologies : d.dates[r._slot] || [];
+  const nb = BOOKS.find((b) => b.id === rb.supersededBy);
+  const n = list.find((e) => e.source === 'generations' && e.source_text_id === nb.id);
+  r.agree += n ? `; superseded by the ${nb.edition} ("${n.date}", PDF p. ${pg(n)})` : `; not in ${nb.edition}`;
 }
 // extract markdown (all curated books)
 const allKeys = BOOKS.map((b) => b.key).filter((k) => existsSync(join(here, `${k}.mjs`)));
 const esc = (s) => String(s ?? '').replace(/\|/g, '\\|');
 let md = `# Generations curriculum: dates extract\n\nGenerated by \`scripts/generations/import.mjs\` from the curated lists in \`scripts/generations/<book>.mjs\`. Do not edit by hand.\n\n` +
-  `- **Copyright:** the five books are © Generations and are **not** in this repository. Only the dates as printed, PDF page numbers and short notes in our own words are kept. Each source link opens the original PDF on Generations' S3 at that page (\`#page=N\`).\n` +
+  `- **Copyright:** the five books (six PDFs: both editions of *Preparing the World for Jesus*) are © Generations and are **not** in this repository. Only the dates as printed, PDF page numbers and short notes in our own words are kept. Each source link opens the original PDF on Generations' S3 at that page (\`#page=N\`), except the 2nd edition of *Preparing the World for Jesus*, which is a private copy with no public link.\n` +
+  `- **Editions:** *Preparing the World for Jesus* is imported in both editions. The 2nd edition (2024) is the primary Generations reading; a 1st-edition (2020) entry on a record the 2nd edition also dates is kept but marked \`superseded_by\` and shown collapsed, and it never sets a sort. 1st-edition entries the 2nd edition does not date are flagged "not in 2nd ed.".\n` +
   `- **Sort:** Generations is a secondary display chronology and never one of the four tiers. Records that no tier reaches use the first Generations date as a **provisional** sort (badged on the site); see A8 in \`docs/OPEN-QUESTIONS-FOR-KEVIN.md\`.\n` +
   `- **Agreement column:** "agrees" means the same year as the record's tier 1–4 sort year, or a printed range that contains it. "CONFLICT" gives the gap in years (no year 0). "NEW" means a record created by this import (provisional sort).\n\n`;
 for (const k of allKeys) {
   const book = BOOKS.find((b) => b.key === k); const rows = extractRows[k];
   if (!rows) continue;
-  md += `## ${book.title}\n\n${book.authors.join(' and ')}${book.editor ? `; ${book.editor}` : ''}. Generations, ${book.year}. [PDF](${book.url}). ${book.note}\n\n${rows.length} dates. ${rows.filter((r) => r.isNew).length} on records created by this import, ${rows.filter((r) => !r.isNew).length} on existing records. ${rows.filter((r) => /^CONFLICT/.test(r.agree)).length} conflicts with a tier 1–4 sort year; ${rows.filter((r) => /differs from/.test(r.agree)).length} differ from another Generations book.\n\n`;
+  md += `## ${book.title}${book.edition ? ` — ${book.edition}` : ''}\n\n${book.authors.join(' and ')}${book.editor ? `; ${book.editor}` : ''}. Generations, ${book.year}. ${book.private ? `[Private copy](${book.url}) (no public link)` : `[PDF](${book.url})`}. ${book.note}\n\n${rows.length} dates. ${rows.filter((r) => r.isNew).length} on records created by this import, ${rows.filter((r) => !r.isNew).length} on existing records. ${rows.filter((r) => /^CONFLICT/.test(r.agree)).length} conflicts with a tier 1–4 sort year; ${rows.filter((r) => /differs from/.test(r.agree)).length} differ from another Generations book.\n\n`;
   md += `| Date (as printed) | Event | PDF p. | Record | Agreement with sort date | Note |\n|---|---|---|---|---|---|\n`;
   for (const r of rows) md += `| ${esc(r.date)} | ${esc(r.event)} | ${r.page}${r.printed != null && r.printed !== r.page ? ` (printed ${r.printed})` : ''} | \`${r.id}\`${r.isNew ? ' (NEW)' : ''} | ${esc(r.agree)} | ${esc(r.note)} |\n`;
   const sk = (await import(pathToFileURL(join(here, `${k}.mjs`)).href)).skipped;
   if (sk?.length) md += `\n**Not imported** (with reasons):\n\n${sk.map((s) => `- ${s}`).join('\n')}\n`;
   md += '\n';
+  const diff = editionDiff[book.id];
+  if (diff) {
+    const ob = BOOKS.find((b) => b.id === book.supersedes);
+    const cell = (l) => l.length ? l.map((e) => `${esc(e.date)} (p. ${pg(e)})`).join('; ') : '—';
+    const st = (x) => !x.olds.length ? `new in ${book.edition}` : !x.news.length ? `not in ${book.edition}` : change(x.olds[0], x.news[0]);
+    md += `### ${ob.edition} vs ${book.edition}: differences\n\nEvery record (and person date slot) dated by either edition. "Change" compares the first year of the 1st-edition entry with the first year of the 2nd-edition entry (later = closer to the present). Pages are PDF pages of each edition.\n\n`;
+    md += `${diff.filter((x) => x.olds.length && x.news.length && st(x) !== 'same').length} changed, ${diff.filter((x) => st(x) === 'same').length} unchanged, ${diff.filter((x) => !x.news.length).length} not in the ${book.edition}, ${diff.filter((x) => !x.olds.length).length} new in the ${book.edition}.\n\n`;
+    md += `| Record | ${ob.edition} | ${book.edition} | Change | Tier 1–4 year |\n|---|---|---|---|---|\n`;
+    for (const x of diff) md += `| ${esc(x.title)}${x.slot ? ` (${x.slot})` : ''} \`${x.id}\` | ${cell(x.olds)} | ${cell(x.news)} | ${st(x)} | ${x.tier ? `${yl(x.tier.y)} (${x.tier.tier})` : '—'} |\n`;
+    md += '\n';
+  }
 }
 writeFileSync(join(DATA, 'generations-dates-extract.md'), md);
 console.log(Object.entries(extractRows).map(([k, r]) => `${k}: ${r.length} dates, ${r.filter((x) => x.isNew).length} on records created by this import, ${r.filter((x) => /^CONFLICT/.test(x.agree)).length} conflicts`).join('\n'));

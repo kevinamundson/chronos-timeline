@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Babylon destroys Jerusalem and the temple; Judah exiled",
   "summary": "Babylon destroys Jerusalem and the temple; Judah exiled",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -586,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 334): 586 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 485): 586 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,23 @@
       "year_am": null,
       "year_bc_ad": -586,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 11 \"Babylon Has Fallen (626–539 BC)\", PDF p. 334 (printed p. 333)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 11 \"Babylon Has Fallen (626–539 BC)\", PDF p. 334 (printed p. 333)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=334",
       "source_text_id": "generations-preparing",
-      "note": "The third siege; also pp. 156, 204, 343 and the Timeline Reviews (pp. 212, 354). p. 220 says 589 BC."
+      "note": "The third siege; also pp. 156, 204, 343 and the Timeline Reviews (pp. 212, 354). p. 220 says 589 BC.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"586 BC\" (PDF p. 485): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "586 BC",
+      "year_am": null,
+      "year_bc_ad": -586,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 19 \"Babylon Has Fallen\", PDF p. 485 (printed p. 471)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": null
     }
   ],
   "people": [
@@ -44,14 +57,15 @@
     "Jer.39.1-Jer.39.10"
   ],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

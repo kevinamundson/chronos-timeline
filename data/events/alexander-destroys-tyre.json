@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Alexander the Great destroys Tyre",
   "summary": "Alexander the Great destroys Tyre",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -332,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 238): 332 bc. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 327): 332 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,12 @@
       "year_am": null,
       "year_bc_ad": -332,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 7 \"Western and Eastern Europe After the Flood (2518 BC – AD 33)\", PDF p. 238 (printed p. 237)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 7 \"Western and Eastern Europe After the Flood (2518 BC – AD 33)\", PDF p. 238 (printed p. 237)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=238",
       "source_text_id": "generations-preparing",
-      "note": "Timeline Review: \"Tyre Destroyed\". p. 478 prints 314 BC for Alexander's destruction of Tyre."
+      "note": "Timeline Review: \"Tyre Destroyed\". p. 478 prints 314 BC for Alexander's destruction of Tyre.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"332 BC\" (PDF p. 327): the same date."
     },
     {
       "source": "generations",
@@ -40,10 +42,34 @@
       "year_am": null,
       "year_bc_ad": -314,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 478 (printed p. 477)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 478 (printed p. 477)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=478",
       "source_text_id": "generations-preparing",
-      "note": "As printed; the Timeline Review (p. 238) has 332 BC."
+      "note": "As printed; the Timeline Review (p. 238) has 332 BC.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"332 BC\" (PDF p. 327): 18 years earlier."
+    },
+    {
+      "source": "generations",
+      "date": "332 BC",
+      "year_am": null,
+      "year_bc_ad": -332,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 13 \"The Special People of God–Taking the Promised Land\", PDF p. 327 (printed p. 313)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Also p. 288. p. 647 prints 314 BC."
+    },
+    {
+      "source": "generations",
+      "date": "314 BC",
+      "year_am": null,
+      "year_bc_ad": -314,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 23 \"The Romans: Reaching the Zenith of the Empires\", PDF p. 647 (printed p. 633)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Conflicts with 332 BC on pp. 288 and 327."
     }
   ],
   "people": [
@@ -53,14 +79,15 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Awan dynasty of Elam",
   "summary": "Awan dynasty of Elam",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -2418,
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -2100,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 358): around 2418 BC to 2200 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 511): 2100 BC to 1477 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -30,10 +30,24 @@
       "year_bc_ad": -2418,
       "year_bc_ad_end": -2200,
       "precision": "year-range",
-      "citation": "Preparing the World for Jesus, ch. 12 \"The Kingdom of the Medes and Persians (725–330 BC)\", PDF p. 358 (printed p. 357)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 12 \"The Kingdom of the Medes and Persians (725–330 BC)\", PDF p. 358 (printed p. 357)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=358",
       "source_text_id": "generations-preparing",
-      "note": "The first ruling dynasty of Elam after Babel."
+      "note": "The first ruling dynasty of Elam after Babel.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"2100 BC to 1477 BC\" (PDF p. 511): 318 years later."
+    },
+    {
+      "source": "generations",
+      "date": "2100 BC to 1477 BC",
+      "year_am": null,
+      "year_bc_ad": -2100,
+      "year_bc_ad_end": -1477,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 20 \"The Kingdoms of the Elamites, the Medes, and the Persians\", PDF p. 511 (printed p. 497)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": null
     }
   ],
   "people": [],
@@ -41,14 +55,15 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

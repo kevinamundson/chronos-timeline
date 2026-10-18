@@ -40,10 +40,24 @@
       "year_am": null,
       "year_bc_ad": -1800,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 141 (printed p. 140)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 141 (printed p. 140)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=141",
       "source_text_id": "generations-preparing",
-      "note": null
+      "note": null,
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1614–1575 BC\" (PDF p. 217): 186 years later."
+    },
+    {
+      "source": "generations",
+      "date": "1614–1575 BC",
+      "year_am": null,
+      "year_bc_ad": -1614,
+      "year_bc_ad_end": -1575,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 9 \"Early Egypt and the Exodus of God's People\", PDF p. 217 (printed p. 203)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Reign of \"Sesostris III\"; p. 214 calls Senusret III the Pharaoh who did not know Joseph."
     }
   ],
   "people": [],
@@ -52,7 +66,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [
     "senusret-iii-astronomical-college"

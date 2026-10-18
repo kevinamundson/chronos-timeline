@@ -41,9 +41,23 @@
       "year_bc_ad": -56,
       "year_bc_ad_end": -54,
       "precision": "year-range",
-      "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 490 (printed p. 489)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 490 (printed p. 489)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=490",
       "source_text_id": "generations-preparing",
+      "note": null,
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"Between 56 and 54 BC\" (PDF p. 659): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "Between 56 and 54 BC",
+      "year_am": null,
+      "year_bc_ad": -56,
+      "year_bc_ad_end": -54,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 23 \"The Romans: Reaching the Zenith of the Empires\", PDF p. 659 (printed p. 645)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
       "note": null
     }
   ],
@@ -55,7 +69,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-europe",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

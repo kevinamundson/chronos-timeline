@@ -165,10 +165,24 @@
       "year_am": null,
       "year_bc_ad": -2518,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 1 \"Creation and the Global Flood\", PDF p. 29 (printed p. 28)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 1 \"Creation and the Global Flood\", PDF p. 29 (printed p. 28)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=29",
       "source_text_id": "generations-preparing",
-      "note": "Timeline Review pairs it with an asterisked 2348 BC (the book's Ussher-chronology equivalent). (pp. 42, 66, 78, 114, 166, 238, 292). p. 20 notes that others date it 2304 or 2348 BC; end note p. 526 gives 2532–2518 BC. Differs from the sort year (2348 BC, cfah-anchor) by 170 years."
+      "note": "Timeline Review pairs it with an asterisked 2348 BC (the book's Ussher-chronology equivalent). (pp. 42, 66, 78, 114, 166, 238, 292). p. 20 notes that others date it 2304 or 2348 BC; end note p. 526 gives 2532–2518 BC. Differs from the sort year (2348 BC, cfah-anchor) by 170 years.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"2348–2347 BC\" (PDF p. 55): 170 years later."
+    },
+    {
+      "source": "generations",
+      "date": "2348–2347 BC",
+      "year_am": null,
+      "year_bc_ad": -2348,
+      "year_bc_ad_end": -2347,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 3 \"The Worldwide Flood\", PDF p. 55 (printed p. 41)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Heading of ch. III. Leftovers from the 1st edition still print 2518 BC on pp. 48 and 272."
     }
   ],
   "people": [

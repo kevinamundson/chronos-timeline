@@ -51,10 +51,23 @@
       "year_am": null,
       "year_bc_ad": -1750,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 301 (printed p. 300)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 301 (printed p. 300)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=301",
       "source_text_id": "generations-preparing",
-      "note": "End year of the printed reign. Differs from the sort year (989 BC, cfah-anchor) by 761 years."
+      "note": "End year of the printed reign. Differs from the sort year (989 BC, cfah-anchor) by 761 years.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"around 986 BC\" (PDF p. 354): 764 years later."
+    },
+    {
+      "source": "generations",
+      "date": "around 986 BC",
+      "year_am": null,
+      "year_bc_ad": -986,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 14 \"Old Babylon–The Rising Threats to Israel\", PDF p. 354 (printed p. 340)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Differs from the sort year (989 BC, cfah-anchor) by 3 years."
     }
   ],
   "people": [],

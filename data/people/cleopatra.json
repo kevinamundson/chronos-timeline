@@ -4,13 +4,13 @@
   "type": "person",
   "title": "Cleopatra VII",
   "summary": "Last Ptolemaic ruler of Egypt.",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
   "sorting_year": -69,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 493): 69-30 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 662): 69–30 BC. Pending owner decision (open question A8)."
   },
   "father": null,
   "children": [],
@@ -32,9 +32,22 @@
         "year_am": null,
         "year_bc_ad": -69,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 493 (printed p. 492)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 493 (printed p. 492)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=493",
         "source_text_id": "generations-preparing",
+        "note": "Caption.",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"69–30 BC\" (PDF p. 662): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "69–30 BC",
+        "year_am": null,
+        "year_bc_ad": -69,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 23 \"The Romans: Reaching the Zenith of the Empires\", PDF p. 662 (printed p. 648)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
         "note": "Caption."
       }
     ],
@@ -55,10 +68,23 @@
         "year_am": null,
         "year_bc_ad": -30,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 493 (printed p. 492)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 493 (printed p. 492)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=493",
         "source_text_id": "generations-preparing",
-        "note": "Caption."
+        "note": "Caption.",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"69–30 BC\" (PDF p. 662): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "69–30 BC",
+        "year_am": null,
+        "year_bc_ad": -30,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 23 \"The Romans: Reaching the Zenith of the Empires\", PDF p. 662 (printed p. 648)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": "p. 423 prints her death in 29 BC."
       }
     ]
   },
@@ -67,7 +93,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": []
 }

@@ -74,10 +74,23 @@
       "year_am": null,
       "year_bc_ad": -2418,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 3 \"Babel and the Futility of the Kingdoms of Men\", PDF p. 69 (printed p. 68)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 3 \"Babel and the Futility of the Kingdoms of Men\", PDF p. 69 (printed p. 68)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=69",
       "source_text_id": "generations-preparing",
-      "note": "Construction of the Tower of Babel, about 100 years after the Flood (Peleg's birth). Timeline Review pairs it with an asterisked 2248 BC (the book's Ussher-chronology equivalent). (p. 78) Differs from the sort year (2234 BC, cfah-anchor) by 184 years."
+      "note": "Construction of the Tower of Babel, about 100 years after the Flood (Peleg's birth). Timeline Review pairs it with an asterisked 2248 BC (the book's Ussher-chronology equivalent). (p. 78) Differs from the sort year (2234 BC, cfah-anchor) by 184 years.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"2233 BC\" (PDF p. 92): 185 years later."
+    },
+    {
+      "source": "generations",
+      "date": "2233 BC",
+      "year_am": null,
+      "year_bc_ad": -2233,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 5 \"The Babel Rebellion\", PDF p. 92 (printed p. 78)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Nimrod founds Babel (originally named Kish); also p. 157. p. 99 computes \"Babel's dating at 2192 BC\" for the end of the Babel era. Differs from the sort year (2234 BC, cfah-anchor) by 1 years."
     }
   ],
   "people": [

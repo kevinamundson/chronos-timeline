@@ -7,13 +7,13 @@
     "Cyrus II"
   ],
   "summary": "Founder of the Medo-Persian Empire; named by Isaiah as the deliverer of the exiles.",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
   "sorting_year": -600,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 367): 600-530 bc. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 534): 600–530 BC. Pending owner decision (open question A8)."
   },
   "father": null,
   "children": [],
@@ -35,10 +35,23 @@
         "year_am": null,
         "year_bc_ad": -600,
         "precision": "approximate",
-        "citation": "Preparing the World for Jesus, ch. 12 \"The Kingdom of the Medes and Persians (725–330 BC)\", PDF p. 367 (printed p. 366)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 12 \"The Kingdom of the Medes and Persians (725–330 BC)\", PDF p. 367 (printed p. 366)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=367",
         "source_text_id": "generations-preparing",
-        "note": "Heading \"Cyrus the Great (600-530 bc)\"."
+        "note": "Heading \"Cyrus the Great (600-530 bc)\".",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"600–530 BC\" (PDF p. 534): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "600–530 BC",
+        "year_am": null,
+        "year_bc_ad": -600,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 20 \"The Kingdoms of the Elamites, the Medes, and the Persians\", PDF p. 534 (printed p. 520)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": null
       }
     ],
     "death": [
@@ -58,10 +71,23 @@
         "year_am": null,
         "year_bc_ad": -530,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 12 \"The Kingdom of the Medes and Persians (725–330 BC)\", PDF p. 367 (printed p. 366)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 12 \"The Kingdom of the Medes and Persians (725–330 BC)\", PDF p. 367 (printed p. 366)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=367",
         "source_text_id": "generations-preparing",
-        "note": "Heading \"Cyrus the Great (600-530 bc)\"."
+        "note": "Heading \"Cyrus the Great (600-530 bc)\".",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"600–530 BC\" (PDF p. 534): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "600–530 BC",
+        "year_am": null,
+        "year_bc_ad": -530,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 20 \"The Kingdoms of the Elamites, the Medes, and the Persians\", PDF p. 534 (printed p. 520)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": null
       }
     ]
   },
@@ -73,7 +99,8 @@
     "Isa.45.1-Isa.45.4"
   ],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": []
 }

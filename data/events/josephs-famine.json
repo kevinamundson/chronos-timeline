@@ -58,6 +58,17 @@
       "note": "The compilation gives only the end of the famine (AM 2303); by Gen 45:6 the descent (2298) was in its second year.",
       "source_text_id": "jordan-compilation-anno-mundi",
       "year_am_end": 2303
+    },
+    {
+      "source": "generations",
+      "date": "1708 BC",
+      "year_am": null,
+      "year_bc_ad": -1708,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 10 \"The Beginning of Babylon–First of the Mesopotamian Empires\", PDF p. 244 (printed p. 230)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "\"Joseph's Famine\"."
     }
   ],
   "people": [

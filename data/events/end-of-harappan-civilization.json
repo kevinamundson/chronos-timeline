@@ -40,9 +40,22 @@
       "year_am": null,
       "year_bc_ad": -1750,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 8 \"India Waits for the Coming of Christ (2200 BC – AD 33)\", PDF p. 242 (printed p. 241)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 8 \"India Waits for the Coming of Christ (2200 BC – AD 33)\", PDF p. 242 (printed p. 241)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=242",
       "source_text_id": "generations-preparing",
+      "note": null,
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"about 1750 BC\" (PDF p. 123): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "about 1750 BC",
+      "year_am": null,
+      "year_bc_ad": -1750,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 6 \"The Dispersion and the Descent into Darkness\", PDF p. 123 (printed p. 109)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
       "note": null
     }
   ],
@@ -52,7 +65,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-asia",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

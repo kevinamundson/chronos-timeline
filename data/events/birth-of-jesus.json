@@ -42,10 +42,23 @@
       "year_bc_ad": -4,
       "year_bc_ad_end": 1,
       "precision": "year-range",
-      "citation": "Preparing the World for Jesus, ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 456 (printed p. 455)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 456 (printed p. 455)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=456",
       "source_text_id": "generations-preparing",
-      "note": "Timeline Reviews (pp. 456, 506, 524); the asterisk notes \"Historians are divided on what is the most likely date of Christ's birth. Both are included\". p. 17: \"around AD 1\"."
+      "note": "Timeline Reviews (pp. 456, 506, 524); the asterisk notes \"Historians are divided on what is the most likely date of Christ's birth. Both are included\". p. 17: \"around AD 1\".",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"about the year AD 1\" (PDF p. 623): 4 years later (ranges overlap)."
+    },
+    {
+      "source": "generations",
+      "date": "about the year AD 1",
+      "year_am": null,
+      "year_bc_ad": 1,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 22 \"The Hellenistic Kingdoms\", PDF p. 623 (printed p. 609)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": null
     }
   ],
   "people": [
@@ -58,7 +71,8 @@
   ],
   "sources": [
     "generations-world",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

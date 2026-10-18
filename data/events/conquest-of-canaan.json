@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "conquest-of-canaan",
+  "type": "event",
+  "title": "Joshua conquers Canaan",
+  "summary": "Joshua conquers Canaan",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -1450,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 313): 1450–1443 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "1450–1443 BC",
+      "year_am": null,
+      "year_bc_ad": -1450,
+      "year_bc_ad_end": -1443,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 13 \"The Special People of God–Taking the Promised Land\", PDF p. 313 (printed p. 299)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": null
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Josh.11.16-Josh.11.23"
+  ],
+  "sources": [
+    "generations-preparing-2e"
+  ],
+  "related": [
+    "crossing-the-jordan",
+    "fall-of-jericho",
+    "division-of-the-land"
+  ],
+  "free_source_links": []
+}

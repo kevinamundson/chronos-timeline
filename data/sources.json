@@ -974,7 +974,7 @@
     },
     {
       "id": "generations-preparing",
-      "title": "Preparing the World for Jesus: A Survey of the World Before Christ",
+      "title": "Preparing the World for Jesus: A Survey of the World Before Christ (1st edition, 2020; edition inferred)",
       "authors": [
         "Kevin Swanson"
       ],
@@ -985,7 +985,23 @@
       "access": "free-to-read",
       "license_note": "© Generations. Copyrighted; a free PDF distributed by Generations as a Homeschool Summit bonus. Only dates, page citations and short notes in our own words are kept here. The text is not reproduced.",
       "verified_on": "2026-10-18",
-      "note": "Cover: \"Preparing the World for Jesus: A Survey of the World Before Christ\", \"Kevin Swanson\" (the author is named on the cover only). Copyright page: \"Copyright © 2020 by Generations\", \"Printed in Korea\", \"isbn: 978-1-7332304-6-9\"; no edition line. 577 PDF pages; printed page = PDF page − 1."
+      "note": "Cover: \"Preparing the World for Jesus: A Survey of the World Before Christ\", \"Kevin Swanson\" (the author is named on the cover only). Copyright page: \"Copyright © 2020 by Generations\", \"Printed in Korea\", \"isbn: 978-1-7332304-6-9\"; no edition line. 577 PDF pages; printed page = PDF page − 1. Edition: treated as the 1st edition (2020). This is inferred from the © 2020 date and the absence of any edition statement (the PDF never says \"1st edition\"). Superseded by generations-preparing-2e (2nd edition, 2024) wherever both date the same record; its entries are then kept but marked superseded_by."
+    },
+    {
+      "id": "generations-preparing-2e",
+      "title": "Preparing the World for Jesus: A Survey of the World Before Christ (2nd edition, 2024)",
+      "authors": [
+        "Kevin Swanson"
+      ],
+      "translator_or_editor": "Consultant: Kenneth Griffith, Historian and Researcher",
+      "year": "2024",
+      "publication": "Generations, 19039 Plaza Dr. Ste. 210, Parker, CO 80134. \"2nd Edition, 1st Printing, 2024.\" \"Printed in the United States of America.\" isbn: 978–1–7332304–6–9 (as printed; the same ISBN as the 2020 printing).",
+      "url": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "alt_urls": [],
+      "access": "private-copy",
+      "license_note": "© 2024 Generations (\"Copyright © 2024 by Generations ... All rights reserved.\"). Private copy: a PDF in Google Drive that the site owner can open (file \"Preparing_the_World_for_Jesus__2nd_Edition_.pdf\", 47.8 MB). It is not publicly available and there is no public link; the Drive link works only for accounts it is shared with. Only dates, page citations and short notes in our own words are kept here. The text is not reproduced.",
+      "verified_on": "2026-10-18",
+      "note": "Title page: \"Preparing the World for Jesus: A Survey of the World Before Christ\", \"Kevin Swanson\". Copyright page as printed: \"Copyright © 2024 by Generations\"; \"2nd Edition, 1st Printing, 2024.\"; \"Printed in the United States of America.\"; \"isbn: 978–1–7332304–6–9\"; \"Production management: Joshua Schwisow\"; \"Consultant: Kenneth Griffith, Historian and Researcher\" (Griffith is a co-author of the CFAH series); \"Cover and interior design by Justin Turley\"; \"Typeset by Rei Suzuki\". 24 chapters (the 1st edition has 16); 752 PDF pages; printed page = PDF page − 14. It follows the Ussher / CFAH chronology (Creation 4004 BC, Flood 2348 BC, Exodus 1491 BC) and replaces the 1st edition's long chronology. The primary Generations reading for this book."
     }
   ]
 }

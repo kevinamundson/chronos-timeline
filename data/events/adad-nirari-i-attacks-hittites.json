@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Adad-Nirari I attacks the Hittite-Mitanni lands",
   "summary": "Adad-Nirari I attacks the Hittite-Mitanni lands",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -1297,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 302): 1297 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (1st ed., 2020), PDF p. 302): 1297 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,10 +29,11 @@
       "year_am": null,
       "year_bc_ad": -1297,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 302 (printed p. 301)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 302 (printed p. 301)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=302",
       "source_text_id": "generations-preparing",
-      "note": "After Egypt weakened the Hittites in 1297 BC; Adad-Nirari reigned roughly 1295-1264 BC. Timeline Review (p. 324): \"1297 bc\"."
+      "note": "After Egypt weakened the Hittites in 1297 BC; Adad-Nirari reigned roughly 1295-1264 BC. Timeline Review (p. 324): \"1297 bc\".",
+      "edition_note": "1st ed. (2020); not in 2nd ed. (2024): no dated statement for this was found in the 2nd ed. (2024)."
     }
   ],
   "people": [],
@@ -47,7 +48,7 @@
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

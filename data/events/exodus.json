@@ -141,10 +141,23 @@
       "year_am": null,
       "year_bc_ad": -1446,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 144 (printed p. 143)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 144 (printed p. 143)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=144",
       "source_text_id": "generations-preparing",
-      "note": "Also p. 212 (\"1446 bc\"). Timeline Reviews print \"1491/1446* bc\" (p. 166) and \"1491/1440* bc\" (p. 238), with the order reversed. Differs from the sort year (1491 BC, cfah-table1) by 45 years."
+      "note": "Also p. 212 (\"1446 bc\"). Timeline Reviews print \"1491/1446* bc\" (p. 166) and \"1491/1440* bc\" (p. 238), with the order reversed. Differs from the sort year (1491 BC, cfah-table1) by 45 years.",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1491 BC\" (PDF p. 219): 45 years earlier."
+    },
+    {
+      "source": "generations",
+      "date": "1491 BC",
+      "year_am": null,
+      "year_bc_ad": -1491,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 9 \"Early Egypt and the Exodus of God's People\", PDF p. 219 (printed p. 205)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Heading; also pp. 247, 405."
     }
   ],
   "people": [

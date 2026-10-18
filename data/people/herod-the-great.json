@@ -43,10 +43,23 @@
         "year_am": null,
         "year_bc_ad": -73,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 16 \"Preparing the World for Jesus: Jerusalem (73 BC – AD 33)\", PDF p. 509 (printed p. 508)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 16 \"Preparing the World for Jesus: Jerusalem (73 BC – AD 33)\", PDF p. 509 (printed p. 508)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=509",
         "source_text_id": "generations-preparing",
-        "note": "Timeline Review (p. 524): \"Herod Is Born 73 bc\"."
+        "note": "Timeline Review (p. 524): \"Herod Is Born 73 bc\".",
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"73 BC\" (PDF p. 676): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "73 BC",
+        "year_am": null,
+        "year_bc_ad": -73,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 24 \"Preparing the World for Jesus: Jerusalem\", PDF p. 676 (printed p. 662)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
+        "note": null
       }
     ],
     "death": [
@@ -81,7 +94,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-world",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": []
 }

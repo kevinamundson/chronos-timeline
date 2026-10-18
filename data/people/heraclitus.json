@@ -4,13 +4,13 @@
   "type": "person",
   "title": "Heraclitus",
   "summary": "Greek philosopher who taught that everything is in flux.",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
   "sorting_year": -535,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 412): 535-475 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 581): 535–475 BC. Pending owner decision (open question A8)."
   },
   "father": null,
   "children": [],
@@ -32,9 +32,22 @@
         "year_am": null,
         "year_bc_ad": -535,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 412 (printed p. 411)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 412 (printed p. 411)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=412",
         "source_text_id": "generations-preparing",
+        "note": null,
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"535–475 BC\" (PDF p. 581): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "535–475 BC",
+        "year_am": null,
+        "year_bc_ad": -535,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 21 \"The Misguided Greeks and Alexander's Ill-Fated Empire\", PDF p. 581 (printed p. 567)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
         "note": null
       }
     ],
@@ -55,9 +68,22 @@
         "year_am": null,
         "year_bc_ad": -475,
         "precision": "year",
-        "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 412 (printed p. 411)",
+        "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 412 (printed p. 411)",
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=412",
         "source_text_id": "generations-preparing",
+        "note": null,
+        "superseded_by": "generations-preparing-2e",
+        "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"535–475 BC\" (PDF p. 581): the same date."
+      },
+      {
+        "source": "generations",
+        "date": "535–475 BC",
+        "year_am": null,
+        "year_bc_ad": -475,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 21 \"The Misguided Greeks and Alexander's Ill-Fated Empire\", PDF p. 581 (printed p. 567)",
+        "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+        "source_text_id": "generations-preparing-2e",
         "note": null
       }
     ]
@@ -65,7 +91,8 @@
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": []
 }

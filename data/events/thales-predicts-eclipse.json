@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Thales predicts an eclipse of the sun",
   "summary": "Thales predicts an eclipse of the sun",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -585,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 408): May 28th, 585 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 578): May 28th, 585 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -29,9 +29,22 @@
       "year_am": null,
       "year_bc_ad": -585,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 408 (printed p. 407)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 408 (printed p. 407)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=408",
       "source_text_id": "generations-preparing",
+      "note": null,
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"May 28th, 585 BC\" (PDF p. 578): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "May 28th, 585 BC",
+      "year_am": null,
+      "year_bc_ad": -585,
+      "precision": "day",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 21 \"The Misguided Greeks and Alexander's Ill-Fated Empire\", PDF p. 578 (printed p. 564)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
       "note": null
     }
   ],
@@ -42,14 +55,15 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

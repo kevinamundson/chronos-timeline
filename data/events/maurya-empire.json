@@ -40,10 +40,23 @@
       "year_am": null,
       "year_bc_ad": -320,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 8 \"India Waits for the Coming of Christ (2200 BC – AD 33)\", PDF p. 251 (printed p. 250)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 8 \"India Waits for the Coming of Christ (2200 BC – AD 33)\", PDF p. 251 (printed p. 250)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=251",
       "source_text_id": "generations-preparing",
-      "note": null
+      "note": null,
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"320 BC\" (PDF p. 438): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "320 BC",
+      "year_am": null,
+      "year_bc_ad": -320,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 17 \"India Waits for the Coming of Christ\", PDF p. 438 (printed p. 424)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "\"Between 420 BC and 320 BC\" three dynasties expand."
     }
   ],
   "people": [
@@ -54,7 +67,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-asia",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

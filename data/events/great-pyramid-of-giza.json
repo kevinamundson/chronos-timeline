@@ -40,10 +40,24 @@
       "year_am": null,
       "year_bc_ad": -2258,
       "precision": "approximate",
-      "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 119 (printed p. 118)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 119 (printed p. 118)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=119",
       "source_text_id": "generations-preparing",
-      "note": "\"Possible\" date. Timeline Review pairs it with an asterisked 2088 BC (the book's Ussher-chronology equivalent). (p. 166, \"Cheops\")."
+      "note": "\"Possible\" date. Timeline Review pairs it with an asterisked 2088 BC (the book's Ussher-chronology equivalent). (p. 166, \"Cheops\").",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1923–1903 BC\" (PDF p. 188): 335 years later."
+    },
+    {
+      "source": "generations",
+      "date": "1923–1903 BC",
+      "year_am": null,
+      "year_bc_ad": -1923,
+      "year_bc_ad_end": -1903,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 9 \"Early Egypt and the Exodus of God's People\", PDF p. 188 (printed p. 174)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": "Sole reign of Cheops, about 322 years after the Tower of Babel."
     }
   ],
   "people": [],
@@ -52,7 +66,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

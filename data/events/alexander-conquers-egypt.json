@@ -40,9 +40,22 @@
       "year_am": null,
       "year_bc_ad": -332,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 157 (printed p. 156)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 157 (printed p. 156)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=157",
       "source_text_id": "generations-preparing",
+      "note": null,
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"332 BC\" (PDF p. 100): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "332 BC",
+      "year_am": null,
+      "year_bc_ad": -332,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 5 \"The Babel Rebellion\", PDF p. 100 (printed p. 86)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
       "note": null
     }
   ],
@@ -52,7 +65,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [

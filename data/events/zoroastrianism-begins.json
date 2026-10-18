@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Zarathustra and the beginning of Zoroastrianism",
   "summary": "Zarathustra and the beginning of Zoroastrianism",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
   "sorting_year": -1000,
   "sorting_basis": {
     "tier": "provisional",
     "tier_rank": null,
     "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 359): Somewhere between 1000 and 600 BC. Pending owner decision (open question A8)."
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 514): 1000 and 600 BC. Pending owner decision (open question A8)."
   },
   "chronologies": [
     {
@@ -30,10 +30,24 @@
       "year_bc_ad": -1000,
       "year_bc_ad_end": -600,
       "precision": "year-range",
-      "citation": "Preparing the World for Jesus, ch. 12 \"The Kingdom of the Medes and Persians (725–330 BC)\", PDF p. 359 (printed p. 358)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 12 \"The Kingdom of the Medes and Persians (725–330 BC)\", PDF p. 359 (printed p. 358)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=359",
       "source_text_id": "generations-preparing",
-      "note": "Timeline Review (p. 66): \"Zoroastrianism Born 560 bc\"."
+      "note": "Timeline Review (p. 66): \"Zoroastrianism Born 560 bc\".",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"1000 and 600 BC\" (PDF p. 514): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "1000 and 600 BC",
+      "year_am": null,
+      "year_bc_ad": -1000,
+      "year_bc_ad_end": -600,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 20 \"The Kingdoms of the Elamites, the Medes, and the Persians\", PDF p. 514 (printed p. 500)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": null
     }
   ],
   "people": [],
@@ -41,14 +55,15 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
-      "locator": "Preparing the World for Jesus"
+      "locator": "Preparing the World for Jesus (1st ed., 2020)"
     }
   ]
 }

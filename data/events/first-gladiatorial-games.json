@@ -40,10 +40,23 @@
       "year_am": null,
       "year_bc_ad": -264,
       "precision": "year",
-      "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 506 (printed p. 505)",
+      "citation": "Preparing the World for Jesus (1st ed., 2020), ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 506 (printed p. 505)",
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=506",
       "source_text_id": "generations-preparing",
-      "note": "Timeline Review: \"First Gladiators\"."
+      "note": "Timeline Review: \"First Gladiators\".",
+      "superseded_by": "generations-preparing-2e",
+      "edition_note": "1st ed. (2020); superseded by the 2nd ed. (2024), which prints \"around 264 BC\" (PDF p. 648): the same date."
+    },
+    {
+      "source": "generations",
+      "date": "around 264 BC",
+      "year_am": null,
+      "year_bc_ad": -264,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 23 \"The Romans: Reaching the Zenith of the Empires\", PDF p. 648 (printed p. 634)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "source_text_id": "generations-preparing-2e",
+      "note": null
     }
   ],
   "people": [],
@@ -52,7 +65,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-world",
-    "generations-preparing"
+    "generations-preparing",
+    "generations-preparing-2e"
   ],
   "related": [],
   "free_source_links": [
