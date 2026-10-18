@@ -2,7 +2,7 @@
 // Headless verification: build must exist (npm run build). Serves dist/, loads key pages in Chromium,
 // checks for console errors, timeline/map items, Pagefind results, and saves screenshots.
 import { chromium } from 'playwright';
-import { mkdirSync } from 'node:fs';
+import { mkdirSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { serve } from './serve.mjs';
@@ -67,6 +67,7 @@ for (const [path, shot, sel] of [
   ['/locations/mountains-of-ararat/', 'location-ararat.png', '#locmap .leaflet-marker-icon'],
   ['/maps/loc-1764-bellin-armenia/', null, '.mapfig img'],
   ['/chronologies/', null, '.tiers li'],
+  ['/gallery/', null, '.chart-card'],
 ]) {
   const o = await open(path, { shot });
   await o.shot();
@@ -82,6 +83,15 @@ for (const [path, shot, sel] of [
     const iU = rows.findIndex((t) => /^Ussher$/.test(t)); const iJ = rows.findIndex((t) => /^Jordan/.test(t)); const iB = rows.findIndex((t) => /^Biblical/.test(t));
     check('event: Jordan row after Ussher and before Bible text', iU >= 0 && iJ > iU && iB > iJ, `Ussher@${iU} Jordan@${iJ} Bible@${iB}`);
     check('event: Jordan row never sets sort year', !(await o.page.locator('tr.is-sort th', { hasText: 'Jordan' }).count()));
+  }
+  if (path === '/events/the-flood/') check('event: links matching CFAH charts', (await o.page.locator('.chart-card').count()) > 0);
+  if (path === '/gallery/') {
+    const want = JSON.parse(readFileSync(new URL('../data/cfah-charts.json', import.meta.url), 'utf8')).charts;
+    check('gallery: one card per chart in data/cfah-charts.json', n === want.length, `${n} cards / ${want.length} charts`);
+    const imgs = await o.page.locator('.chart-card img').evaluateAll((els) => els.map((e) => ({ src: e.getAttribute('src'), alt: e.getAttribute('alt'), lazy: e.getAttribute('loading') })));
+    check('gallery: thumbnails hotlinked from ARJ only (none copied)', imgs.length === want.filter((c) => c.thumbnail).length && imgs.every((i) => i.src.startsWith('https://assets.answersresearchjournal.org/')), `${imgs.length} thumbnails`);
+    check('gallery: every thumbnail lazy-loaded with caption alt text', imgs.every((i) => i.lazy === 'lazy' && i.alt && i.alt.length > 3));
+    check('gallery: nav link marked current', (await o.page.locator('nav[aria-label="Primary"] a[aria-current="page"]').innerText()) === 'Charts');
   }
   if (o.external.length) results.push(`INFO  ${path}: external resource issues: ${o.external.join(' | ')}`);
   await o.ctx.close();

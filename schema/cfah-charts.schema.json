@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/cfah-charts.schema.json",
+  "title": "CFAH chart gallery (links only)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["description", "checked_on", "charts"],
+  "properties": {
+    "description": { "type": "string" },
+    "checked_on": { "type": "string", "format": "date" },
+    "charts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "paper", "figure", "caption", "source", "section", "image_url", "thumbnail", "paper_url", "host"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/$defs/slug" },
+          "paper": { "type": "string" },
+          "figure": { "type": "string" },
+          "caption": { "type": "string", "minLength": 1, "maxLength": 240 },
+          "credit": { "type": "string", "maxLength": 240 },
+          "source": { "$ref": "common.schema.json#/$defs/slug" },
+          "section": { "type": "string" },
+          "image_url": { "$ref": "common.schema.json#/$defs/url" },
+          "thumbnail": { "oneOf": [{ "$ref": "common.schema.json#/$defs/url" }, { "type": "null" }], "description": "Only a publicly served image URL; null means show a text card." },
+          "paper_url": { "$ref": "common.schema.json#/$defs/url" },
+          "host": { "type": "string" },
+          "related": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }
+        }
+      }
+    }
+  }
+}

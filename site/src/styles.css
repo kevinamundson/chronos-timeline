@@ -146,3 +146,17 @@ div.vis-tooltip { font-family: var(--font); font-size: 13px; background: var(--b
 .site-footer { border-top: 1px solid var(--sep); padding: 24px 0 40px; }
 .site-footer p { margin: 6px 0; }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+
+/* CFAH chart gallery */
+.chart-grid { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.chart-grid-small { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.chart-card { background: var(--bg-elev); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
+.chart-grid-small .chart-card { box-shadow: none; border: 1px solid var(--bg-fill); }
+.chart-thumb { display: block; aspect-ratio: 4 / 3; background: var(--bg-fill); }
+.chart-thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.chart-text { aspect-ratio: 16 / 5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; background: var(--bg-fill); color: var(--label-2); font-weight: 600; }
+.chart-body { padding: 12px 14px; }
+.chart-body p { margin: 4px 0; }
+.chart-title { font-size: 15px; margin: 0 0 4px; }
+.chip-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.chip-list a { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--bg-fill); }

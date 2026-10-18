@@ -22,6 +22,8 @@ const maps = loadDir('maps');
 const chronFile = readJSON(join(DATA, 'chronologies.json'));
 const chronologies = chronFile.chronologies;
 const sources = readJSON(join(DATA, 'sources.json')).sources;
+const chartDoc = readJSON(join(DATA, 'cfah-charts.json'));
+const charts = chartDoc.charts;
 
 const byId = {};
 for (const r of [...events, ...people, ...locations, ...maps]) byId[r.id] = r;
@@ -166,6 +168,19 @@ function sortBadge(rec) {
 
 const linkList = (ids, title) => !ids?.length ? '' : `<section class="card"><h2>${esc(title)}</h2><ul class="links">${ids.map((id) => `<li>${link(id)}</li>`).join('')}</ul></section>`;
 
+// ---------- CFAH chart gallery (links only; images are never copied) ----------
+const chartCard = (c, h = 'h2') => `<li class="chart-card" id="${esc(c.id)}">
+${c.thumbnail ? `<a class="chart-thumb" href="${esc(c.image_url)}" rel="noopener" target="_blank"><img src="${esc(c.thumbnail)}" alt="${esc(c.caption)}" loading="lazy" decoding="async" referrerpolicy="strict-origin-when-cross-origin"><span class="visually-hidden"> (full image opens in a new tab)</span></a>` : `<div class="chart-text" aria-hidden="true"><span>${esc(c.paper)}</span><span>${esc(c.figure)}</span></div>`}
+<div class="chart-body"><${h} class="chart-title">${esc(c.paper)} · ${esc(c.figure)}</${h}>
+<p>${esc(c.caption)}</p>
+<p class="small muted">${esc(c.section)}</p>
+${c.credit ? `<p class="small muted">Image credit (per the paper): ${esc(c.credit)}</p>` : ''}
+<ul class="links small"><li>${ext(c.image_url, c.thumbnail ? 'Open image' : 'Open file on OSF')}</li><li>${ext(c.paper_url, 'Open paper')}</li></ul>
+${c.related?.length ? `<p class="small">Records: ${c.related.map(link).join(', ')}</p>` : ''}
+<p class="small muted">${esc(c.host)}</p></div></li>`;
+const chartsFor = (id) => charts.filter((c) => c.related?.includes(id));
+const chartSection = (id) => { const cs = chartsFor(id); return !cs.length ? '' : `<section class="card"><h2>CFAH charts</h2><ul class="chart-grid chart-grid-small">${cs.map((c) => chartCard(c, 'h3')).join('')}</ul><p class="small"><a href="/gallery/">All CFAH charts</a></p></section>`; };
+
 function sourcesSection(rec) {
   const fsl = rec.free_source_links || [];
   const ids = (rec.sources || []).filter((id) => !fsl.some((l) => l.source_id === id));
@@ -208,6 +223,7 @@ ${extraHead}
       <li><a href="/"${path === '/' ? ' aria-current="page"' : ''}>Timeline</a></li>
       <li><a href="/browse/"${path === '/browse/' ? ' aria-current="page"' : ''}>Browse</a></li>
       <li><a href="/chronologies/"${path === '/chronologies/' ? ' aria-current="page"' : ''}>Chronologies</a></li>
+      <li><a href="/gallery/"${path === '/gallery/' ? ' aria-current="page"' : ''}>Charts</a></li>
       <li><a href="/about/"${path === '/about/' ? ' aria-current="page"' : ''}>About</a></li>
     </ul></nav>
     <form class="header-search" action="/search/" method="get" role="search">
@@ -314,6 +330,7 @@ ${flagsSection(e, e.chronologies)}
 <div class="grid2">${linkList(e.people, 'People')}${linkList(e.locations, 'Places')}</div>
 ${mapThumbs(e.maps)}
 ${linkList(e.related, 'Related')}
+${chartSection(e.id)}
 ${sourcesSection(e)}</article>`;
   out(`events/${e.id}/index.html`, page({ title: e.title, desc: e.summary, body, path: urlOf(e), type: 'Event' }));
 }
@@ -337,6 +354,7 @@ ${tables}
 ${(p.open_questions || []).length ? flagsSection({ open_questions: p.open_questions }, null) : ''}
 ${linkList(evs, 'Events')}
 ${linkList(p.related, 'Related')}
+${chartSection(p.id)}
 ${sourcesSection(p)}</article>`;
   out(`people/${p.id}/index.html`, page({ title: p.title, desc: p.summary, body, path: urlOf(p), type: 'Person' }));
 }
@@ -365,6 +383,7 @@ ${flagsSection(l, null)}
 ${linkList(eventsAt(l.id), 'Events here')}
 ${mapThumbs(l.maps)}
 ${linkList(l.related, 'Related')}
+${chartSection(l.id)}
 ${sourcesSection(l)}</article>`;
   out(`locations/${l.id}/index.html`, page({ title: l.title, desc: l.summary, body, path: urlOf(l), type: 'Place',
     extraHead: has ? leafletHead : '', scripts: has ? `${leafletScript}<script src="/assets/app.js" defer></script>` : '' }));
@@ -413,6 +432,18 @@ ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) =
   out('chronologies/index.html', page({ title: 'Chronologies', desc: 'Chronologies used and the CFAH-weighted sorting rule.', body, path: '/chronologies/', type: 'Chronology' }));
 }
 
+// Gallery
+{
+  const groups = [...new Set(charts.map((c) => c.paper))];
+  const nThumb = charts.filter((c) => c.thumbnail).length;
+  const body = `<h1>CFAH charts and figures</h1>
+<section class="card"><p>${charts.length} figures from the <i>Chronological Framework of Ancient History</i> papers by Griffith &amp; White. ${nThumb} are published in <i>Answers Research Journal</i> and shown as lazy-loaded thumbnails served by ARJ. The other ${charts.length - nThumb} are files in the CFAH OSF project. OSF serves them only as downloads, so they appear as text cards. No image is copied to this site; every card links to the original image and to its paper. The figures remain © their authors and publishers.</p>
+<nav aria-label="Papers"><ul class="chip-list">${groups.map((g) => `<li><a href="#paper-${esc(g.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}">${esc(g)}</a></li>`).join('')}</ul></nav></section>
+${groups.map((g) => `<section aria-labelledby="paper-${esc(g.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}"><h2 id="paper-${esc(g.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}">${esc(g)} <span class="muted small">(${charts.filter((c) => c.paper === g).length})</span></h2>
+<ul class="chart-grid">${charts.filter((c) => c.paper === g).map((c) => chartCard(c, 'h3')).join('')}</ul></section>`).join('\n')}`;
+  out('gallery/index.html', page({ title: 'CFAH charts', desc: `Gallery of ${charts.length} CFAH charts and figures, linked to their papers.`, body, path: '/gallery/', type: 'Chart' }));
+}
+
 // About
 out('about/index.html', page({ title: 'About', path: '/about/', pagefind: false, body: `<h1>About this portal</h1>
 <section class="card"><p>This portal presents ancient history within a Young-Earth Creation framework, with the Bible as the infallible standard (Masoretic Text, no gaps in Genesis 5 and 11). The master timeline is weighted and sorted by the <i>Chronological Framework of Ancient History</i> (CFAH) by Kenneth C. Griffith and Darrell K. White, published in <i>Answers Research Journal</i>. Other chronologies are displayed alongside without changing the sort order.</p>
@@ -436,4 +467,4 @@ out('404.html', page({ title: 'Not found', path: '', pagefind: false, body: '<h1
 writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/vendor/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
 
 const n = events.length + people.length + locations.length + maps.length;
-console.log(`Built ${n} record pages (${events.length} events, ${people.length} people, ${locations.length} places, ${maps.length} maps) + home, browse, chronologies, about, search, 404 → ${DIST}`);
+console.log(`Built ${n} record pages (${events.length} events, ${people.length} people, ${locations.length} places, ${maps.length} maps) + home, browse, chronologies, gallery (${charts.length} CFAH charts), about, search, 404 → ${DIST}`);

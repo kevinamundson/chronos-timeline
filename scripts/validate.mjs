@@ -137,8 +137,8 @@ for (const { rel, doc, entries, kind } of sortingTargets) {
 // Secondary display chronologies must never drive sorting
 const SORT_CHRONS = new Set(['cfah', 'ussher-jones', 'ussher']);
 for (const t of chronDoc.sorting_rule?.tiers || []) if (!SORT_CHRONS.has(t.chronology)) err('data/chronologies.json', `sorting_rule tier uses non-sort chronology "${t.chronology}"`);
-for (const c of chronDoc.chronologies) if (c.id === 'jordan' && (c.primary || !/SECONDARY DISPLAY/.test(c.description))) err('data/chronologies.json', 'jordan must be a non-primary SECONDARY DISPLAY chronology');
-for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'jordan' || doc.sorting_basis?.derived_from === 'jordan') err(rel, 'sorting_basis may not use the secondary jordan chronology');
+for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jordan-compilation') && (c.primary || !/SECONDARY DISPLAY/.test(c.description))) err('data/chronologies.json', `${c.id} must be a non-primary SECONDARY DISPLAY chronology`);
+for (const { rel, doc } of sortingTargets) if (['jordan', 'jordan-compilation'].some((j) => doc.sorting_basis?.chronology === j || doc.sorting_basis?.derived_from === j)) err(rel, 'sorting_basis may not use a secondary Jordan chronology');
 
 // Masoretic Genesis 5 cross-check (KJV/MT figures: [id, age at named son, lifespan])
 const GEN5 = [['adam',130,930],['seth',105,912],['enosh',90,905],['kenan',70,910],['mahalalel',65,895],['jared',162,962],['enoch',65,365],['methuselah',187,969],['lamech',182,777],['noah',500,950]];
@@ -175,9 +175,20 @@ if (flood) {
 }
 
 const counts = Object.entries(collections).map(([d, k]) => `${Object.values(records).filter((r) => r.kind === k).length} ${d}`).join(', ');
+// CFAH chart gallery: data/cfah-charts.json (links only; images are never copied into the repo)
+const chartDoc = validate('data/cfah-charts.json', 'cfah-charts');
+const chartIds = new Set();
+for (const c of chartDoc.charts || []) {
+  if (chartIds.has(c.id)) err('data/cfah-charts.json', `duplicate chart id ${c.id}`);
+  chartIds.add(c.id);
+  if (!srcIds.has(c.source)) err('data/cfah-charts.json', `${c.id}: unknown source ${c.source}`);
+  for (const r of c.related || []) if (!records[r]) err('data/cfah-charts.json', `${c.id}: related record ${r} not found`);
+  if (c.thumbnail && !c.thumbnail.startsWith('https://assets.answersresearchjournal.org/')) err('data/cfah-charts.json', `${c.id}: thumbnails may only hotlink publicly served ARJ images`);
+}
+
 if (errors.length) {
   console.error(`FAIL: ${errors.length} problem(s) in ${checked} files\n` + errors.map((e) => '  - ' + e).join('\n'));
   process.exit(1);
 }
-console.log(`PASS: ${checked} files valid (chronologies, sources, ${counts}); cross-references, 4-tier sorting rule and MT Genesis 5 and 11 arithmetic consistent.`);
+console.log(`PASS: ${checked} files valid (chronologies, sources, ${counts}, ${chartIds.size} CFAH charts); cross-references, 4-tier sorting rule and MT Genesis 5 and 11 arithmetic consistent.`);
 console.log('Sorting tiers used: ' + Object.entries(tierCount).map(([k, v]) => `${k}=${v}`).join(', '));

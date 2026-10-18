@@ -1,0 +1,1729 @@
+{
+  "description": "CFAH chart and figure gallery. Images are linked, never copied. ARJ figures are publicly served images and are hotlinked as lazy-loaded thumbnails. OSF figure files download as application/octet-stream, so they appear as text cards. Captions: ARJ captions are the first sentence of the published caption; OSF captions come from file names.",
+  "checked_on": "2026-10-18",
+  "charts": [
+    {
+      "id": "cfah-1-fig-1",
+      "paper": "CFAH-1",
+      "figure": "Fig. 1",
+      "caption": "Fifty paths to the Flood.",
+      "source": "cfah-1",
+      "section": "Introduction",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-01.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-01.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "the-flood"
+      ]
+    },
+    {
+      "id": "cfah-1-fig-2",
+      "paper": "CFAH-1",
+      "figure": "Fig. 2",
+      "caption": "Chronological proof pathway.",
+      "source": "cfah-1",
+      "section": "Introduction",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-02.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-02.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-1-fig-3",
+      "paper": "CFAH-1",
+      "figure": "Fig. 3",
+      "caption": "Event occurs in the timelines of contemporary dynasties.",
+      "source": "cfah-1",
+      "section": "2. Misinterpretation and Bias",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-03.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-03.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-1-fig-4",
+      "paper": "CFAH-1",
+      "figure": "Fig. 4",
+      "caption": "Serializing the dynasties creates phantom events.",
+      "source": "cfah-1",
+      "section": "2. Misinterpretation and Bias",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-04.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-04.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-1-fig-5",
+      "paper": "CFAH-1",
+      "figure": "Fig. 5",
+      "caption": "David Down’s shift of X years for all dynasties does not solve the problem (Down 2002).",
+      "source": "cfah-1",
+      "section": "2. Misinterpretation and Bias",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-05.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-05.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-1-fig-6",
+      "paper": "CFAH-1",
+      "figure": "Fig. 6",
+      "caption": "Stratigraphic dark ages caused by serialized Egyptian chronology (Roger Waite. Used with permission).",
+      "source": "cfah-1",
+      "section": "Gaps",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-06.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-1/figure-06.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-2-fig-1",
+      "paper": "CFAH-2",
+      "figure": "Fig. 1",
+      "caption": "Dawn of vernal equinox, April 9, 2233 BC viewed from Gobeklitepe.",
+      "source": "cfah-2",
+      "section": "Duration 5: Embolismal Period: 1,486 years",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-01.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-01.jpg",
+      "paper_url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Created by author using SkyMapPro.",
+      "related": [
+        "founding-of-babel"
+      ]
+    },
+    {
+      "id": "cfah-2-fig-2",
+      "paper": "CFAH-2",
+      "figure": "Fig. 2",
+      "caption": "Durations to Babel.",
+      "source": "cfah-2",
+      "section": "Summary of Durations to Babel",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-02.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-02.jpg",
+      "paper_url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Image from https://www.alamy.com/the-tower-of-babel-hebrew-migdal-bavel-arabic-burj-babil-according-to-the-book-of-genesis-was-an-enormous-tower-built-in-the-plain-of-shinar-hebrew-according-to-the-bi…",
+      "related": [
+        "founding-of-babel",
+        "dispersion"
+      ]
+    },
+    {
+      "id": "cfah-2-fig-3",
+      "paper": "CFAH-2",
+      "figure": "Fig. 3",
+      "caption": "Durations to dispersion.",
+      "source": "cfah-2",
+      "section": "The Dispersion: 2192/2191 BC",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-03.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-03.jpg",
+      "paper_url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Image of broken tower by Cornelius Anthonisz (c. AD 1545), https://www.artbible.info/art/large/619.html.",
+      "related": [
+        "dispersion"
+      ]
+    },
+    {
+      "id": "cfah-2-fig-4",
+      "paper": "CFAH-2",
+      "figure": "Fig. 4",
+      "caption": "Thebes, Egypt: Heliacal Rising of Sirius at 5 am, July 20th, AD 136.",
+      "source": "cfah-2",
+      "section": "Duration 12: Astronomical era of Menes started 2188 BC",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-04.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-04.jpg",
+      "paper_url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Created by author using SkyMapPro.",
+      "related": [
+        "unification-of-egypt"
+      ]
+    },
+    {
+      "id": "cfah-2-fig-5",
+      "paper": "CFAH-2",
+      "figure": "Fig. 5",
+      "caption": "The Era of Babel and Founding of Nations.",
+      "source": "cfah-2",
+      "section": "Era of the Tower of Babel : 2233–2191 BC",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-05.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-05.jpg",
+      "paper_url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "founding-of-babel",
+        "dispersion",
+        "first-territorial-division"
+      ]
+    },
+    {
+      "id": "cfah-2-fig-6",
+      "paper": "CFAH-2",
+      "figure": "Fig. 6",
+      "caption": "Borsippa inscription.",
+      "source": "cfah-2",
+      "section": "Duration 19: The Construction of the Tower of Babel",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-06.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v15/chronological-framework-ancient-history-2/figure-06.jpg",
+      "paper_url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Hannay, “Nebuchadnezzar II Inscription,” https://commons.wikimedia.org/wikipedia/commons/7/74/Nebuchadnezzar_II_inscription.jpg.",
+      "related": [
+        "founding-of-babel"
+      ]
+    },
+    {
+      "id": "cfah-3-fig-1",
+      "paper": "CFAH-3",
+      "figure": "Fig. 1",
+      "caption": "Durations to the Trojan War.",
+      "source": "cfah-3",
+      "section": "AP-12: The Fall of Troy: 1184/1183 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-01.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-01.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-3-fig-2",
+      "paper": "CFAH-3",
+      "figure": "Fig. 2",
+      "caption": "Durations to Semiramis I.",
+      "source": "cfah-3",
+      "section": "AP-15: Semiramis II: 1232/1231 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-02.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-02.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "reign-of-semiramis-i"
+      ]
+    },
+    {
+      "id": "cfah-3-fig-3",
+      "paper": "CFAH-3",
+      "figure": "Fig. 3",
+      "caption": "Durations to Semiramis II.",
+      "source": "cfah-3",
+      "section": "AP-15: Semiramis II: 1232/1231 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-03.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-03.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "semiramis-ii"
+      ]
+    },
+    {
+      "id": "cfah-3-fig-4",
+      "paper": "CFAH-3",
+      "figure": "Fig. 4",
+      "caption": "Tukulti Ninurta I.",
+      "source": "cfah-3",
+      "section": "AP-15: Semiramis II: 1232/1231 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-04.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-04.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Osama Shukir Muhammed Amin FRCP(Glasg), CC BY-SA 4.0, via Wikimedia Commons",
+      "related": [
+        "semiramis-ii"
+      ]
+    },
+    {
+      "id": "cfah-3-fig-5",
+      "paper": "CFAH-3",
+      "figure": "Fig. 5",
+      "caption": "Durations to Nitocris.",
+      "source": "cfah-3",
+      "section": "AP-16: Nitocris Reigned from 1497 to 1479 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-05.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-05.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "reign-of-nitocris"
+      ]
+    },
+    {
+      "id": "cfah-3-fig-6",
+      "paper": "CFAH-3",
+      "figure": "Fig. 6",
+      "caption": "Senusret III, the Egyptian Belus.",
+      "source": "cfah-3",
+      "section": "AP-18: Egyptian Belus:Established Astronomical College 1576 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-06.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-06.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Original uploader was Tracield. XII Dynasty, Egypt, No restrictions, via Wikimedia Commons",
+      "related": [
+        "senusret-iii-astronomical-college"
+      ]
+    },
+    {
+      "id": "cfah-3-fig-7",
+      "paper": "CFAH-3",
+      "figure": "Fig. 7",
+      "caption": "Durations to Semiramis III.",
+      "source": "cfah-3",
+      "section": "Finding the Date for the Egyptian Belus",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-07.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-07.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-3-fig-8",
+      "paper": "CFAH-3",
+      "figure": "Fig. 8",
+      "caption": "Detail of one of the two stelae erected in front of the tomb of Queen Mer-Neith at Abydos, Umm el Qaab, tomb Y (Tomb of Queen Mer-Neith).",
+      "source": "cfah-3",
+      "section": "AP-21: Reign of Semiramis I: 2036–1994 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-08.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-08.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Now in the Egyptian Museum, JE 34450. Juan R. Lazaro, CC BY 2.0, via Wikimedia Commons",
+      "related": [
+        "reign-of-semiramis-i"
+      ]
+    },
+    {
+      "id": "cfah-3-fig-9",
+      "paper": "CFAH-3",
+      "figure": "Fig. 9",
+      "caption": "Heliacal conjunction of Kali Yuga, February 6, 3104 B.C.",
+      "source": "cfah-3",
+      "section": "Astronomical Calculation of Kali Yuga: February 7, 3104 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-09.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-09.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "(Author: made using SkyMapPro)."
+    },
+    {
+      "id": "cfah-3-fig-10",
+      "paper": "CFAH-3",
+      "figure": "Fig. 10",
+      "caption": "Anchor points.",
+      "source": "cfah-3",
+      "section": "Summary",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-10.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-3/figure-10.jpg",
+      "paper_url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-4-fig-1",
+      "paper": "CFAH-4",
+      "figure": "Fig. 1",
+      "caption": "Durations to the Flood.",
+      "source": "cfah-4",
+      "section": "Durations to the Flood and Creation",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-4/figure-01.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-4/figure-01.jpg",
+      "paper_url": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "the-flood"
+      ]
+    },
+    {
+      "id": "cfah-4-fig-2",
+      "paper": "CFAH-4",
+      "figure": "Fig. 2",
+      "caption": "Durations to Creation.",
+      "source": "cfah-4",
+      "section": "Durations to Creation",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-4/figure-02.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-4/figure-02.jpg",
+      "paper_url": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "creation-week"
+      ]
+    },
+    {
+      "id": "cfah-4-fig-3",
+      "paper": "CFAH-4",
+      "figure": "Fig. 3",
+      "caption": "Flood dates of the ancient chroniclers.",
+      "source": "cfah-4",
+      "section": "Conclusions from Historical Durations",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-4/figure-03.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-4/figure-03.jpg",
+      "paper_url": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "the-flood"
+      ]
+    },
+    {
+      "id": "cfah-4-fig-4",
+      "paper": "CFAH-4",
+      "figure": "Fig. 4",
+      "caption": "Vernal equinox 10 April, 2347 B.C.",
+      "source": "cfah-4",
+      "section": "Finding Midnight on the Zodiac",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-4/figure-04.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-4/figure-04.jpg",
+      "paper_url": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "the-flood"
+      ]
+    },
+    {
+      "id": "cfah-4-fig-5",
+      "paper": "CFAH-4",
+      "figure": "Fig. 5",
+      "caption": "Flood year vs.",
+      "source": "cfah-4",
+      "section": "Cullimore’s Universal Chronological Key (UCK)",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-4/figure-05.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-4/figure-05.jpg",
+      "paper_url": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "source date.",
+      "related": [
+        "the-flood"
+      ]
+    },
+    {
+      "id": "cfah-5-fig-1",
+      "paper": "CFAH-5",
+      "figure": "Fig. 1",
+      "caption": "Durations to Berossus Period 2.",
+      "source": "cfah-5",
+      "section": "Period 2—From the Flood to the First Division of the Earth",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-01.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-01.jpg",
+      "paper_url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Painting of Yao by Kanō Sansetsu.Japan, Edo period, 1632. Kanō Sansetsu (狩野 山雪 1589–1651) “Japanese painting of the legendary Chinese Emperor Yao, by Kanō Sansetsu. From a folio depicting varioius Con…",
+      "related": [
+        "the-flood",
+        "first-territorial-division"
+      ]
+    },
+    {
+      "id": "cfah-5-fig-2",
+      "paper": "CFAH-5",
+      "figure": "Fig. 2",
+      "caption": "Durations to Berossus Dynasty 6.",
+      "source": "cfah-5",
+      "section": "Dynasty 6: 526 years of Assyrian Rule of Babylon",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-02.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-02.jpg",
+      "paper_url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Eugène Delacroix. The Death of Sardanapalus. Oil on canvas. 12’ 1” × 16’ 3”. Louvre. “La Mort de Sardanapale,” https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_La_Mort_de_Sardanapale.jp…"
+    },
+    {
+      "id": "cfah-5-fig-3",
+      "paper": "CFAH-5",
+      "figure": "Fig. 3",
+      "caption": "Territories of Amorites and Arameans prior to the fall of Akkad.",
+      "source": "cfah-5",
+      "section": "AP-42: Dynasty 5: “Arab” Dynasty: 1477–1232 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-03.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-03.jpg",
+      "paper_url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Fulvio314, “Middle East topographic map-blank,” https://en.m.wikipedia.org/wiki/File:Middle_East_topographic_map-blank_3000bc_crop.svg. CC BY 3.0.",
+      "related": [
+        "fall-of-akkad"
+      ]
+    },
+    {
+      "id": "cfah-5-fig-4",
+      "paper": "CFAH-5",
+      "figure": "Fig. 4",
+      "caption": "Amorite invasion in 1477 B.C.",
+      "source": "cfah-5",
+      "section": "AP-35: Fall of Akkad to the Guti Arabs: 1477/1476 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-04.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-04.jpg",
+      "paper_url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Fulvio314, “Middle East topographic map-blank,” https://en.m.wikipedia.org/wiki/File:Middle_East_topographic_map-blank_3000bc_crop.svg. CC BY 3.0.",
+      "related": [
+        "fall-of-akkad"
+      ]
+    },
+    {
+      "id": "cfah-5-fig-5",
+      "paper": "CFAH-5",
+      "figure": "Fig. 5",
+      "caption": "Solution to the Dynasties of Berossus.",
+      "source": "cfah-5",
+      "section": "The Checksum",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-05.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-05.jpg",
+      "paper_url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-5-fig-6",
+      "paper": "CFAH-5",
+      "figure": "Fig. 6",
+      "caption": "Addition durations to the Fall of Akkad.",
+      "source": "cfah-5",
+      "section": "Confirmation of the Fall of Akkad Via Other Sources",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-06.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-06.jpg",
+      "paper_url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "fall-of-akkad"
+      ]
+    },
+    {
+      "id": "cfah-5-fig-7",
+      "paper": "CFAH-5",
+      "figure": "Fig. 7",
+      "caption": "Tukulti Ninurta Altar Depiction.",
+      "source": "cfah-5",
+      "section": "The Enigma of Semiramis II and Tukulti Ninurta I",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-07.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-07.jpg",
+      "paper_url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Osama Shukir Muhammed Amin FRCP(Glasg), “Detail of a symbolic base with a cuneiform inscription of Tukulti-Ninurta I, 13th century BCE. From the Temple of Ishtar at Assur, Iraq. Pergamon Museum, Berli…",
+      "related": [
+        "semiramis-ii"
+      ]
+    },
+    {
+      "id": "cfah-5-fig-8",
+      "paper": "CFAH-5",
+      "figure": "Fig. 8",
+      "caption": "Durations to the reign of Gilgamesh aka Ninyas.",
+      "source": "cfah-5",
+      "section": "AP-47: The Reign of Ninyas Zames/Gilgamesh: 2006–1968 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-08.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-08.jpg",
+      "paper_url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Hero holding lion from Dur Sharrukin, Louvre. Jastrow (2006), “A hero taming a lion. Bas-relief from the façade of the throne room, in the Assyrian Palace of Sargon II at Khorsabad (Dur Sharrukin), 71…",
+      "related": [
+        "reign-of-ninyas-gilgamesh"
+      ]
+    },
+    {
+      "id": "cfah-5-fig-9",
+      "paper": "CFAH-5",
+      "figure": "Fig. 9",
+      "caption": "Durations to the death of Ninus, aka Nimrod.",
+      "source": "cfah-5",
+      "section": "AP-48: Death of Ninus/Nimrod: 2068 B.C.",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-09.jpg",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v16/chronological-framework-ancient-history-5/fig-09.jpg",
+      "paper_url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Narmer Palettte, verso. Heagy1, “Verso of the Narmer Palette,” https://commons.wikimedia.org/wiki/File:Narmer_Palette_verso.jpg. CC BY-SA 3.0.",
+      "related": [
+        "death-of-nimrod",
+        "nimrod"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-1",
+      "paper": "CFAH-6",
+      "figure": "Fig. 1",
+      "caption": "CFAH Egyptian chronology.",
+      "source": "cfah-6",
+      "section": "Introduction",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-01.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-01.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-2",
+      "paper": "CFAH-6",
+      "figure": "Fig. 2",
+      "caption": "CFAH solution for Dynasties 1–14.",
+      "source": "cfah-6",
+      "section": "Argument 1. Great Kings with Vassals Were the Default Polity",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-02.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-02.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-3",
+      "paper": "CFAH-6",
+      "figure": "Fig. 3",
+      "caption": "Matrix of interlocking durations between Old and Middle Kingdom Dynasties.",
+      "source": "cfah-6",
+      "section": "Argument 2. The Durations Form an Interlocking Matrix",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-03.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-03.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-4",
+      "paper": "CFAH-6",
+      "figure": "Fig. 4",
+      "caption": "Thinis group—Dynasties 1–2.",
+      "source": "cfah-6",
+      "section": "Thinis Group: Dynasties 1–2",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-04.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-04.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-5",
+      "paper": "CFAH-6",
+      "figure": "Fig. 5",
+      "caption": "Memphis group–Dynasties 3–8.",
+      "source": "cfah-6",
+      "section": "Memphis Group: Dynasties 3–8",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-05.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-05.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "egypt-dynasty-3-memphis"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-6",
+      "paper": "CFAH-6",
+      "figure": "Fig. 6",
+      "caption": "Synchronisms between Thinis and Memphis groups.",
+      "source": "cfah-6",
+      "section": "A. Djoser’s Famine culminated with the death of Uenephes: 2001–1994 BC",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-06.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-06.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "djosers-famine"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-7",
+      "paper": "CFAH-6",
+      "figure": "Fig. 7",
+      "caption": "Detail view of the Great War.",
+      "source": "cfah-6",
+      "section": "B. The Great War links Dynasties 2, 4, 5, 9, 10, and 11: 1825–1769 BC",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-07.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-07.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "great-war-in-egypt"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-8",
+      "paper": "CFAH-6",
+      "figure": "Fig. 8",
+      "caption": "Heracleopolis group—Dynasties 9–10.",
+      "source": "cfah-6",
+      "section": "Heracleopolis Group: Dynasties 9–10",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-08.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-08.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "fall-of-heracleopolis"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-9",
+      "paper": "CFAH-6",
+      "figure": "Fig. 9",
+      "caption": "Thebes group—Dynasties 11–13.",
+      "source": "cfah-6",
+      "section": "Thebes/Itjtawy Group: Dynasties 11–13",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-09.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-09.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "accession-of-mentuhotep-ii",
+        "founding-of-itjtawy"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-10",
+      "paper": "CFAH-6",
+      "figure": "Fig. 10",
+      "caption": "Synchronisms between Memphis and Thebes groups.",
+      "source": "cfah-6",
+      "section": "Dynasty 13: 1729–1577–1479 BC",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-10.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-10.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-11",
+      "paper": "CFAH-6",
+      "figure": "Fig. 11",
+      "caption": "Dynasty 13 simple solution.",
+      "source": "cfah-6",
+      "section": "Dynasty 13: 1729–1577–1479 BC",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-11.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-11.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-12",
+      "paper": "CFAH-6",
+      "figure": "Fig. 12",
+      "caption": "Dynasty 13 forked solution.",
+      "source": "cfah-6",
+      "section": "Dynasty 13: 1729–1577–1479 BC",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-12.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-12.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-13",
+      "paper": "CFAH-6",
+      "figure": "Fig. 13",
+      "caption": "The Ankhu problem in conventional chronology.",
+      "source": "cfah-6",
+      "section": "Ankhu and Neferhotep connected to Senusret III and Amenemhat III",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-13.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-13.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-14",
+      "paper": "CFAH-6",
+      "figure": "Fig. 14",
+      "caption": "The Ankhu solution in CFAH.",
+      "source": "cfah-6",
+      "section": "Ankhu and Neferhotep connected to Senusret III and Amenemhat III",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-14.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-14.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-15",
+      "paper": "CFAH-6",
+      "figure": "Fig. 15",
+      "caption": "Avaris group—Dynasties 14–15.",
+      "source": "cfah-6",
+      "section": "Avaris Group: Dynasties 14 and 15",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-15.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-15.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-16",
+      "paper": "CFAH-6",
+      "figure": "Fig. 16",
+      "caption": "Dynasties 1–14 with the patriarchs.",
+      "source": "cfah-6",
+      "section": "Summary of the Interlocking Durations Argument",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-16.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-16.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "joseph-made-vizier",
+        "jacob-enters-egypt"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-17",
+      "paper": "CFAH-6",
+      "figure": "Fig. 17",
+      "caption": "Bigger picture of the Great War.",
+      "source": "cfah-6",
+      "section": "The Great War: 1825–1769 BC",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-17.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-17.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "great-war-in-egypt"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-18",
+      "paper": "CFAH-6",
+      "figure": "Fig. 18",
+      "caption": "The career of Userkare.",
+      "source": "cfah-6",
+      "section": "Userkare goes from D6 to D12/13 and back to D6",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-18.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-18.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-19",
+      "paper": "CFAH-6",
+      "figure": "Fig. 19",
+      "caption": "Pinpointing Senusret III with the Aswan Canal.",
+      "source": "cfah-6",
+      "section": "The Aswan Canal of Senusret III and Merenre I",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-19.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-19.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "aswan-canal",
+        "senusret-iii-astronomical-college"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-20",
+      "paper": "CFAH-6",
+      "figure": "Fig. 20",
+      "caption": "Senusret III and Neferhotep I Cartouches together.",
+      "source": "cfah-6",
+      "section": "Neferhotep I and Senusret III Synchronism",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-20.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-20.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "related": [
+        "senusret-iii-astronomical-college"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-21",
+      "paper": "CFAH-6",
+      "figure": "Fig. 21",
+      "caption": "Environmental context for Egypt’s Fayum Oasis.",
+      "source": "cfah-6",
+      "section": "9. Joseph’s Second Irrigation Project in the Reign of Senusret II",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-21.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-21.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "Based on mltiple sources, satellite imagery, and field observations. https://www.researchgate.net/figure/Fig-S1-Environmental-context-for-Egypt-s-Fayum-Oasis-Irrigation-was-coupled-with-the_fig2_28327…",
+      "related": [
+        "joseph"
+      ]
+    },
+    {
+      "id": "cfah-6-fig-22",
+      "paper": "CFAH-6",
+      "figure": "Fig. 22",
+      "caption": "Scarab of Dedumose.",
+      "source": "cfah-6",
+      "section": "17. Tutimaeus as Dedumose",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-22.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-22.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)",
+      "credit": "William Matthew Flinders Petrie 1897, A History of Egypt from the earliest times to the XVIth . . ., 245. Public Domain."
+    },
+    {
+      "id": "cfah-6-fig-23",
+      "paper": "CFAH-6",
+      "figure": "Fig. 23",
+      "caption": "Odds of three precise synchronisms between Old and Middle Kingdoms.",
+      "source": "cfah-6",
+      "section": "Low Probability of Coincidence",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-23.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-23.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-24",
+      "paper": "CFAH-6",
+      "figure": "Fig. 24",
+      "caption": "Odds of six precise synchronisms between Bible and Old and Middle Kingdoms.",
+      "source": "cfah-6",
+      "section": "Low Probability of Coincidence",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-24.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-24.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "cfah-6-fig-25",
+      "paper": "CFAH-6",
+      "figure": "Fig. 25",
+      "caption": "The Procrustean chronology of Egyptologists.",
+      "source": "cfah-6",
+      "section": "A. Compress Manetho’s Dynasties to Fit",
+      "image_url": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-25.png",
+      "thumbnail": "https://assets.answersresearchjournal.org/img/articles/arj/v18/chronological-framework-ancient-history-6/fig-25.png",
+      "paper_url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "host": "Answers Research Journal (publicly served image; hotlinked, not copied)"
+    },
+    {
+      "id": "osf-hp3fg-figure-1-turin-papyrus-wikimedia",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 1",
+      "caption": "Turin papyrus wikimedia (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_1_turin_papyrus_wikimedia.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a535a6398e224e96c734",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-2-palermo-stone-wikimedia",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 2",
+      "caption": "Palermo stone wikimedia (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_2_palermo_stone_wikimedia.jpg\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a532144d700b75be302b",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-3-abydos-king-list-wikimedia",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 3",
+      "caption": "Abydos king list wikimedia (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_3_abydos_king_list_wikimedia.jpg\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a533a6398e224e96c72f",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-4-cfah-egyptian-chronology",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 4",
+      "caption": "CFAH Egyptian chronology (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_4_CFAH_Egyptian_chronology.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a53391898ca28ec18177",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-5-libyan-palette-wikimedia",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 5",
+      "caption": "Libyan palette wikimedia (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_5_libyan_palette_wikimedia.jpg\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a534ed54a949f6c18bc9",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-6-early-cities-egypt-author",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 6",
+      "caption": "Early cities egypt author (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_6_early_cities_egypt_author.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a533cd34dd0265c18a8f",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-7-narmer-palette-wikimedia",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 7",
+      "caption": "Narmer palette wikimedia (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_7_narmer_palette_wikimedia.jpg\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a5345f862ecabdbe393b",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-8-durations-nitocris",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 8",
+      "caption": "Durations nitocris (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_8_durations_nitocris.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a53498e8b3ccfbe043d5",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)",
+      "related": [
+        "reign-of-nitocris"
+      ]
+    },
+    {
+      "id": "osf-hp3fg-figure-9-senusret-iii-durations",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 9",
+      "caption": "Senusret iii durations (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_9_senusret_iii_durations.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a534c38306ed9ce04613",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)",
+      "related": [
+        "senusret-iii-astronomical-college"
+      ]
+    },
+    {
+      "id": "osf-hp3fg-figure-10-wegner-screen-capture-youtube",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 10",
+      "caption": "Wegner screen capture youtube (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_10_wegner_screen_capture_youtube.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a535690f4d9efb9c3b9d",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-11-starving-asiatics-unas-wikimedia",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 11",
+      "caption": "Starving asiatics unas wikimedia (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_11_starving_asiatics_unas_wikimedia.jpg\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a5338fd716954fbe34f4",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-12-6-and-12-contemporary",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 12",
+      "caption": "6 and 12 contemporary (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_12_6-and-12_contemporary.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a535a6398e224e96c736",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-13-four-paths-700y-author",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 13",
+      "caption": "Four paths 700y author (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_13_four_paths_700y_author.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a5355f862ecabdbe393f",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-14-crossover-paths-great-war-author",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 14",
+      "caption": "Crossover paths great war author (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_14_crossover_paths_great_war_author.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a534beee1bd8ec96c919",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)",
+      "related": [
+        "great-war-in-egypt"
+      ]
+    },
+    {
+      "id": "osf-hp3fg-figure-15-overall-dynasty-alignment-author",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 15",
+      "caption": "Overall dynasty alignment author (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_15_overall_dynasty_alignment_author.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a534a6398e224e96c732",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-16-dynasties-1-3-4-author",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 16",
+      "caption": "Dynasties 1 3 4 author (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_16_dynasties_1_3_4_author.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a535db140f650bbe2cc2",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-17-userkaf-wikimedia",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 17",
+      "caption": "Userkaf wikimedia (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_17_userkaf_wikimedia.jpg\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a533790ff8019f9c3b27",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-18-great-war",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 18",
+      "caption": "Great war (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_18_great_war.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a5348fd716954fbe34f6",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)",
+      "related": [
+        "great-war-in-egypt"
+      ]
+    },
+    {
+      "id": "osf-hp3fg-figure-19-isaacs-famine-author",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 19",
+      "caption": "Isaacs famine author (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_19_isaacs_famine_author.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a53475826662fb9c393b",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)",
+      "related": [
+        "isaac"
+      ]
+    },
+    {
+      "id": "osf-hp3fg-figure-20-prophecies-author",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 20",
+      "caption": "Prophecies author (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_20_prophecies_author.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a533db140f650bbe2cbf",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-21-seal-of-yaqub-har-wikimedia",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 21",
+      "caption": "Seal of yaqub har wikimedia (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_21_seal_of_yaqub_har_wikimedia.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a53495352f37e9c18614",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-22-seal-iry-hor-wikimedia-svg",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 22",
+      "caption": "Seal iry hor wikimedia (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_22_seal_iry_hor_wikimedia.svg.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a535790ff8019f9c3b2b",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-23-composite-all-dynasties",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 23",
+      "caption": "Composite all dynasties (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_23_composite_all_dynasties.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a534144d700b75be302d",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-24-rise-collapse-conventional-miroschedji",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 24",
+      "caption": "Rise collapse conventional miroschedji (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_24_rise_collapse_conventional_miroschedji.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a533beee1bd8ec96c917",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-25-rise-collapse-revised-miroschedji",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 25",
+      "caption": "Rise collapse revised miroschedji (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_25_rise_collapse_revised_miroschedji.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a535ed54a949f6c18bcd",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-26-hetepti",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 26",
+      "caption": "Hetepti (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_26_hetepti.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/691ced36c9c139ee271178bd",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-26-qubbet-el-hawa",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 26",
+      "caption": "Qubbet el hawa (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_26_qubbet_el-hawa.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a534cd34dd0265c18a92",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-27-qubbet-el-hawa-photo-wikimedia",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 27",
+      "caption": "Qubbet el hawa photo wikimedia (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_27_qubbet_el-hawa_photo_wikimedia.JPG\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a53575826662fb9c393d",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-28-nomarchs-elephantine",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 28",
+      "caption": "Nomarchs elephantine (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_28_nomarchs_elephantine.png\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a534ed54a949f6c18bcb",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hp3fg-figure-29-radiocarbon-predynastic-dee",
+      "paper": "CFAH-6 (OSF)",
+      "figure": "Fig. 29",
+      "caption": "Radiocarbon predynastic dee (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hp3fg: CFAH-6: The Old and Middle Kingdoms of Egypt; file \"figure_29_radiocarbon_predynastic_dee.jpg\"",
+      "image_url": "https://osf.io/hp3fg/files/osfstorage/6903a53511a71ae6db96c25d",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hp3fg/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-gmx5j-early-egypt-master-chart",
+      "paper": "CFAH-7 (OSF)",
+      "figure": "—",
+      "caption": "Early Egypt Master Chart (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component gmx5j: CFAH-7: A Chronological Baseline for the Old and Middle Kingdoms of Egypt; file \"Early-Egypt-Master-Chart.pdf\"",
+      "image_url": "https://osf.io/gmx5j/files/osfstorage/684d6257b25020642d6df47f",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/gmx5j/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-gmx5j-figure-1-cfah-early-egypt-master-chart",
+      "paper": "CFAH-7 (OSF)",
+      "figure": "Fig. 1",
+      "caption": "CFAH Early Egypt Master Chart (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component gmx5j: CFAH-7: A Chronological Baseline for the Old and Middle Kingdoms of Egypt; file \"figure_1_CFAH_Early_Egypt_Master_Chart.png\"",
+      "image_url": "https://osf.io/gmx5j/files/osfstorage/684d62fd589a3114b8b687dd",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/gmx5j/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-gmx5j-figure-5-dynasty-12-solution",
+      "paper": "CFAH-7 (OSF)",
+      "figure": "Fig. 5",
+      "caption": "Dynasty 12 solution (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component gmx5j: CFAH-7: A Chronological Baseline for the Old and Middle Kingdoms of Egypt; file \"figure_5_dynasty_12_solution.png\"",
+      "image_url": "https://osf.io/gmx5j/files/osfstorage/684d62741767728b4ab7860f",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/gmx5j/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-gmx5j-figure-13-dynasty-6-solution",
+      "paper": "CFAH-7 (OSF)",
+      "figure": "Fig. 13",
+      "caption": "Dynasty 6 solution (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component gmx5j: CFAH-7: A Chronological Baseline for the Old and Middle Kingdoms of Egypt; file \"figure_13_dynasty_6_solution.png\"",
+      "image_url": "https://osf.io/gmx5j/files/osfstorage/684d62bfc2d66fb27be7b4fa",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/gmx5j/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hv3b2-figure-2-dynasty-19-data-composite",
+      "paper": "CFAH-9 (OSF)",
+      "figure": "Fig. 2",
+      "caption": "Dynasty 19 data composite (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hv3b2: CFAH-9: The 19th and 26th Dynasties of Egypt; file \"figure_2_dynasty_19_data_composite.png\"",
+      "image_url": "https://osf.io/hv3b2/files/osfstorage/68d303cfe138120c423c32d0",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hv3b2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hv3b2-figure-3-dynasty-26-data-composite",
+      "paper": "CFAH-9 (OSF)",
+      "figure": "Fig. 3",
+      "caption": "Dynasty 26 data composite (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hv3b2: CFAH-9: The 19th and 26th Dynasties of Egypt; file \"figure_3_dynasty_26_data_composite.png\"",
+      "image_url": "https://osf.io/hv3b2/files/osfstorage/68d303cdccb5461bdc432dea",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hv3b2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hv3b2-figure-4-d19-d26-corex-combined-chart",
+      "paper": "CFAH-9 (OSF)",
+      "figure": "Fig. 4",
+      "caption": "D19 d26 corex combined chart (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hv3b2: CFAH-9: The 19th and 26th Dynasties of Egypt; file \"figure_4_d19_d26_corex_combined_chart.png\"",
+      "image_url": "https://osf.io/hv3b2/files/osfstorage/68d303d26fdf7113193c343c",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hv3b2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-hv3b2-figure-5-division-and-reunification",
+      "paper": "CFAH-9 (OSF)",
+      "figure": "Fig. 5",
+      "caption": "Division and reunification (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component hv3b2: CFAH-9: The 19th and 26th Dynasties of Egypt; file \"figure_5_division_and_reunification.png\"",
+      "image_url": "https://osf.io/hv3b2/files/osfstorage/68d578c7e7d81c992b432c6d",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/hv3b2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-ksaz9-figure-2-dynasties-20-21-composite",
+      "paper": "CFAH-11 (OSF)",
+      "figure": "Fig. 2",
+      "caption": "Dynasties 20 21 composite (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component ksaz9: CFAH-11: Dynasties 20 and 21; file \"figure_2_dynasties_20_21_composite.png\"",
+      "image_url": "https://osf.io/ksaz9/files/osfstorage/691b7ae21670314316770606",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/ksaz9/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-bcwg2-figure-1-hittite-empire-maximum",
+      "paper": "CFAH-13 (OSF)",
+      "figure": "Fig. 1",
+      "caption": "Hittite empire maximum (from the OSF file name; no caption has been checked).",
+      "source": "cfah-13-osf",
+      "section": "OSF component bcwg2: CFAH-13: The Hittites, Cimmerians, and Medes; file \"figure_1_hittite_empire_maximum.png\"",
+      "image_url": "https://osf.io/bcwg2/files/osfstorage/696962bff16ec09cd750c9b7",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/bcwg2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-bcwg2-figure-2-hittite-migrations",
+      "paper": "CFAH-13 (OSF)",
+      "figure": "Fig. 2",
+      "caption": "Hittite migrations (from the OSF file name; no caption has been checked).",
+      "source": "cfah-13-osf",
+      "section": "OSF component bcwg2: CFAH-13: The Hittites, Cimmerians, and Medes; file \"figure_2_hittite-migrations.png\"",
+      "image_url": "https://osf.io/bcwg2/files/osfstorage/696962bf2f88b12c4950ca09",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/bcwg2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-bcwg2-figure-3-cimmerian-migrations",
+      "paper": "CFAH-13 (OSF)",
+      "figure": "Fig. 3",
+      "caption": "Cimmerian migrations (from the OSF file name; no caption has been checked).",
+      "source": "cfah-13-osf",
+      "section": "OSF component bcwg2: CFAH-13: The Hittites, Cimmerians, and Medes; file \"figure_3_cimmerian_migrations.jpg\"",
+      "image_url": "https://osf.io/bcwg2/files/osfstorage/696962bf369e935a7f50c9bc",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/bcwg2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-bcwg2-figure-4-mursilis",
+      "paper": "CFAH-13 (OSF)",
+      "figure": "Fig. 4",
+      "caption": "Mursilis (from the OSF file name; no caption has been checked).",
+      "source": "cfah-13-osf",
+      "section": "OSF component bcwg2: CFAH-13: The Hittites, Cimmerians, and Medes; file \"figure_4_mursilis.png\"",
+      "image_url": "https://osf.io/bcwg2/files/osfstorage/696962bf667495329650ca6b",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/bcwg2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)",
+      "related": [
+        "sack-of-babylon-by-mursilis"
+      ]
+    },
+    {
+      "id": "osf-bcwg2-figure-5-hittite-cimmerian-7th-century",
+      "paper": "CFAH-13 (OSF)",
+      "figure": "Fig. 5",
+      "caption": "Hittite cimmerian 7th century (from the OSF file name; no caption has been checked).",
+      "source": "cfah-13-osf",
+      "section": "OSF component bcwg2: CFAH-13: The Hittites, Cimmerians, and Medes; file \"figure_5_hittite-cimmerian-7th-century.png\"",
+      "image_url": "https://osf.io/bcwg2/files/osfstorage/696962be8fff83085635a1d4",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/bcwg2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-bcwg2-figure-6-cfah-hattusa-tabal-synchronisms",
+      "paper": "CFAH-13 (OSF)",
+      "figure": "Fig. 6",
+      "caption": "Cfah hattusa tabal synchronisms (from the OSF file name; no caption has been checked).",
+      "source": "cfah-13-osf",
+      "section": "OSF component bcwg2: CFAH-13: The Hittites, Cimmerians, and Medes; file \"figure_6_cfah_hattusa_tabal_synchronisms.png\"",
+      "image_url": "https://osf.io/bcwg2/files/osfstorage/696962bfda6a0ad6fb35a8cd",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/bcwg2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-bcwg2-figure-7-cimmerian-empire",
+      "paper": "CFAH-13 (OSF)",
+      "figure": "Fig. 7",
+      "caption": "Cimmerian empire (from the OSF file name; no caption has been checked).",
+      "source": "cfah-13-osf",
+      "section": "OSF component bcwg2: CFAH-13: The Hittites, Cimmerians, and Medes; file \"figure_7_cimmerian_empire.png\"",
+      "image_url": "https://osf.io/bcwg2/files/osfstorage/696962bf8fff83085635a1d6",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/bcwg2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-bcwg2-figure-8-cimmerian-invsions-reconsidered",
+      "paper": "CFAH-13 (OSF)",
+      "figure": "Fig. 8",
+      "caption": "Cimmerian invsions reconsidered (from the OSF file name; no caption has been checked).",
+      "source": "cfah-13-osf",
+      "section": "OSF component bcwg2: CFAH-13: The Hittites, Cimmerians, and Medes; file \"figure_8_cimmerian_invsions_reconsidered.jpg\"",
+      "image_url": "https://osf.io/bcwg2/files/osfstorage/696962bb112c53874635a45c",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/bcwg2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-9fuw2-figure-1-assyrian-durations",
+      "paper": "CFAH-14 (OSF)",
+      "figure": "Fig. 1",
+      "caption": "Assyrian durations (from the OSF file name; no caption has been checked).",
+      "source": "cfah-14-osf",
+      "section": "OSF component 9fuw2: CFAH-14: Ancient Assyria; file \"figure_1_assyrian_durations.png\"",
+      "image_url": "https://osf.io/9fuw2/files/osfstorage/69a1ef4ca73fb91095352900",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/9fuw2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-9fuw2-figure-2-sargon-sennacherib-chronology",
+      "paper": "CFAH-14 (OSF)",
+      "figure": "Fig. 2",
+      "caption": "Sargon sennacherib chronology (from the OSF file name; no caption has been checked).",
+      "source": "cfah-14-osf",
+      "section": "OSF component 9fuw2: CFAH-14: Ancient Assyria; file \"figure_2_sargon_sennacherib_chronology.png\"",
+      "image_url": "https://osf.io/9fuw2/files/osfstorage/69a1ef4c3cc3d72e792f8967",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/9fuw2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-9fuw2-figure-3-solomons-israel",
+      "paper": "CFAH-14 (OSF)",
+      "figure": "Fig. 3",
+      "caption": "Solomons israel (from the OSF file name; no caption has been checked).",
+      "source": "cfah-14-osf",
+      "section": "OSF component 9fuw2: CFAH-14: Ancient Assyria; file \"figure_3_solomons_israel.png\"",
+      "image_url": "https://osf.io/9fuw2/files/osfstorage/69a1ef4cd44fb6b3b8bd0828",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/9fuw2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-9fuw2-figure-4-integrated-timeline-mec",
+      "paper": "CFAH-14 (OSF)",
+      "figure": "Fig. 4",
+      "caption": "Integrated timeline MEC (from the OSF file name; no caption has been checked).",
+      "source": "cfah-14-osf",
+      "section": "OSF component 9fuw2: CFAH-14: Ancient Assyria; file \"figure_4_integrated_timeline_MEC.png\"",
+      "image_url": "https://osf.io/9fuw2/files/osfstorage/69a1ef4c7909771116bd0c36",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/9fuw2/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-vynju-figure-1-kish-uruk-akkad",
+      "paper": "CFAH-15 (OSF)",
+      "figure": "Fig. 1",
+      "caption": "Kish uruk akkad (from the OSF file name; no caption has been checked).",
+      "source": "cfah-15-osf",
+      "section": "OSF component vynju: CFAH-15: Sumer, Akkad, and Babylon; file \"figure_1_kish_uruk_akkad.png\"",
+      "image_url": "https://osf.io/vynju/files/osfstorage/69c4f3d72fafb97178145fb2",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/vynju/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)",
+      "related": [
+        "sargon-of-akkad"
+      ]
+    },
+    {
+      "id": "osf-vynju-figure-2-akkadian-empire",
+      "paper": "CFAH-15 (OSF)",
+      "figure": "Fig. 2",
+      "caption": "Akkadian empire (from the OSF file name; no caption has been checked).",
+      "source": "cfah-15-osf",
+      "section": "OSF component vynju: CFAH-15: Sumer, Akkad, and Babylon; file \"figure_2_akkadian_empire.png\"",
+      "image_url": "https://osf.io/vynju/files/osfstorage/69c4f3d800ddcb2385145ff5",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/vynju/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)",
+      "related": [
+        "sargon-of-akkad"
+      ]
+    },
+    {
+      "id": "osf-vynju-figure-3-first-dynasty-babylon",
+      "paper": "CFAH-15 (OSF)",
+      "figure": "Fig. 3",
+      "caption": "First dynasty babylon (from the OSF file name; no caption has been checked).",
+      "source": "cfah-15-osf",
+      "section": "OSF component vynju: CFAH-15: Sumer, Akkad, and Babylon; file \"figure_3_first_dynasty_babylon.png\"",
+      "image_url": "https://osf.io/vynju/files/osfstorage/69c4f3d8856521cc2d1d250d",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/vynju/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)",
+      "related": [
+        "babylon-dynasty-1-chaldean",
+        "death-of-hammurabi"
+      ]
+    },
+    {
+      "id": "osf-vynju-figure-4-kassite-dynasty",
+      "paper": "CFAH-15 (OSF)",
+      "figure": "Fig. 4",
+      "caption": "Kassite dynasty (from the OSF file name; no caption has been checked).",
+      "source": "cfah-15-osf",
+      "section": "OSF component vynju: CFAH-15: Sumer, Akkad, and Babylon; file \"figure_4_kassite_dynasty.png\"",
+      "image_url": "https://osf.io/vynju/files/osfstorage/69c4f3d44031e70bba145e35",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/vynju/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-vynju-figure-5-integrated-chaldean-chronology",
+      "paper": "CFAH-15 (OSF)",
+      "figure": "Fig. 5",
+      "caption": "Integrated chaldean chronology (from the OSF file name; no caption has been checked).",
+      "source": "cfah-15-osf",
+      "section": "OSF component vynju: CFAH-15: Sumer, Akkad, and Babylon; file \"figure_5_integrated_chaldean_chronology.png\"",
+      "image_url": "https://osf.io/vynju/files/osfstorage/69c4f42300ddcb2385146029",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/vynju/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-vynju-figure-6-chronology-proof-path",
+      "paper": "CFAH-15 (OSF)",
+      "figure": "Fig. 6",
+      "caption": "Chronology proof path (from the OSF file name; no caption has been checked).",
+      "source": "cfah-15-osf",
+      "section": "OSF component vynju: CFAH-15: Sumer, Akkad, and Babylon; file \"figure_6_chronology_proof_path.png\"",
+      "image_url": "https://osf.io/vynju/files/osfstorage/69c4f3d519b1b6954a1d24a2",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/vynju/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-j4nxu-figure-1-post-diluvian-chinese-hindu-chronology",
+      "paper": "CFAH-17 (OSF)",
+      "figure": "Fig. 1",
+      "caption": "Post diluvian chinese hindu chronology (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component j4nxu: CFAH-17: The Ancient Chronologies of India and China; file \"figure_1_post-diluvian_chinese_hindu_chronology.png\"",
+      "image_url": "https://osf.io/j4nxu/files/osfstorage/6a6cacc13670b8a40022f0e9",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/j4nxu/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-j4nxu-figure-2-pre-flood-chronology",
+      "paper": "CFAH-17 (OSF)",
+      "figure": "Fig. 2",
+      "caption": "Pre flood chronology (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component j4nxu: CFAH-17: The Ancient Chronologies of India and China; file \"figure_2_pre-flood_chronology.png\"",
+      "image_url": "https://osf.io/j4nxu/files/osfstorage/6a6cacc13082b8d592cf695d",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/j4nxu/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-28p43-figure-1-irish-durations",
+      "paper": "CFAH-18 (OSF)",
+      "figure": "Fig. 1",
+      "caption": "Irish durations (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component 28p43: CFAH-18: The Ancient Chronology of Ireland; file \"figure_1_irish_durations.png\"",
+      "image_url": "https://osf.io/28p43/files/osfstorage/6a8352b63dad987d4cd41e67",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/28p43/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-a5g6x-figure-1-neogene-quaternary",
+      "paper": "CFAH-19 (OSF)",
+      "figure": "Fig. 1",
+      "caption": "Neogene quaternary (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component a5g6x: CFAH-19: The Historical Ice Age; file \"figure_1_neogene_quaternary.png\"",
+      "image_url": "https://osf.io/a5g6x/files/osfstorage/6a4e62128ea034c8045b924b",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/a5g6x/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-a5g6x-figure-2-stone-to-iron-ages",
+      "paper": "CFAH-19 (OSF)",
+      "figure": "Fig. 2",
+      "caption": "Stone to iron ages (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component a5g6x: CFAH-19: The Historical Ice Age; file \"figure_2_stone-to-iron-ages.png\"",
+      "image_url": "https://osf.io/a5g6x/files/osfstorage/6a4e62132c64a077fa5b91f7",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/a5g6x/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-a5g6x-figure-3-oxygen-isotope-ratios-mis",
+      "paper": "CFAH-19 (OSF)",
+      "figure": "Fig. 3",
+      "caption": "Oxygen isotope ratios MIS (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component a5g6x: CFAH-19: The Historical Ice Age; file \"figure_3_oxygen_isotope_ratios_MIS.png\"",
+      "image_url": "https://osf.io/a5g6x/files/osfstorage/6a4e62122c64a077fa5b91f3",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/a5g6x/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-a5g6x-figure-4-cfah-revised-ice-age-model",
+      "paper": "CFAH-19 (OSF)",
+      "figure": "Fig. 4",
+      "caption": "Cfah revised ice age model (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component a5g6x: CFAH-19: The Historical Ice Age; file \"figure_4_cfah_revised_ice_age_model.png\"",
+      "image_url": "https://osf.io/a5g6x/files/osfstorage/6a4e6213ae9d67ce5f6e0f75",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/a5g6x/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-a5g6x-figure-5-squatterman",
+      "paper": "CFAH-19 (OSF)",
+      "figure": "Fig. 5",
+      "caption": "Squatterman (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component a5g6x: CFAH-19: The Historical Ice Age; file \"figure_5_squatterman.jpg\"",
+      "image_url": "https://osf.io/a5g6x/files/osfstorage/6a4e6212ae9d67ce5f6e0f73",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/a5g6x/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-a5g6x-figure-6-aurochs-bone-with-embedded-spear-tip-gobekli-tepe",
+      "paper": "CFAH-19 (OSF)",
+      "figure": "Fig. 6",
+      "caption": "Aurochs bone with embedded spear tip gobekli tepe (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component a5g6x: CFAH-19: The Historical Ice Age; file \"figure_6_aurochs_bone_with_embedded_spear_tip_gobekli_tepe.jpg\"",
+      "image_url": "https://osf.io/a5g6x/files/osfstorage/6a4e62138ea034c8045b9256",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/a5g6x/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-prhfz-cfah-master-chart",
+      "paper": "CFAH project (OSF)",
+      "figure": "—",
+      "caption": "Cfah master chart (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component prhfz: Chronological Framework of Ancient History; file \"Wiki images/cfah-master-chart.png\"",
+      "image_url": "https://osf.io/prhfz/files/osfstorage/684acad26467afed7a85b1f0",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/prhfz/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-prhfz-img-865e0da5540bfb838895a31b939b70c6",
+      "paper": "CFAH project (OSF)",
+      "figure": "—",
+      "caption": "Unlabelled image (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component prhfz: Chronological Framework of Ancient History; file \"img-865e0da5540bfb838895a31b939b70c6.jpeg\"",
+      "image_url": "https://osf.io/prhfz/files/osfstorage/684ac21f3ba9239945a4da43",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/prhfz/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    },
+    {
+      "id": "osf-prhfz-plate-2-master-50b",
+      "paper": "CFAH project (OSF)",
+      "figure": "—",
+      "caption": "Plate 2 master 50b (from the OSF file name; no caption has been checked).",
+      "source": "cfah-project-osf",
+      "section": "OSF component prhfz: Chronological Framework of Ancient History; file \"plate_2_master_50b.png\"",
+      "image_url": "https://osf.io/prhfz/files/osfstorage/684ac4d33ba9239945a4daef",
+      "thumbnail": null,
+      "paper_url": "https://osf.io/prhfz/",
+      "host": "OSF (served as a download, application/octet-stream; text card, no hotlinked thumbnail)"
+    }
+  ]
+}
