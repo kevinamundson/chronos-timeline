@@ -33,6 +33,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=237",
       "source_text_id": "generations-europe",
       "note": "Unit 4 timeline."
+    },
+    {
+      "source": "morecraft",
+      "date": "1536",
+      "year_am": null,
+      "year_bc_ad": 1536,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 192 (PDF p. 200)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": null
     }
   ],
   "people": [
@@ -42,7 +54,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

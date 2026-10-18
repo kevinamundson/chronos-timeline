@@ -39,6 +39,18 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=121",
         "source_text_id": "generations-europe",
         "note": "Near Wearmouth."
+      },
+      {
+        "source": "morecraft",
+        "date": "674-735, A.D.",
+        "year_am": null,
+        "year_bc_ad": 674,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, p. 168 (PDF p. 176)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": null
       }
     ],
     "death": [
@@ -62,6 +74,30 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=122",
         "source_text_id": "generations-europe",
         "note": "At Jarrow, in his early sixties."
+      },
+      {
+        "source": "morecraft",
+        "date": "674-735, A.D.",
+        "year_am": null,
+        "year_bc_ad": 735,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, p. 168 (PDF p. 176)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": null
+      },
+      {
+        "source": "morecraft",
+        "date": "Ascension Day, A.D., 735",
+        "year_am": null,
+        "year_bc_ad": 735,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, p. 169 (PDF p. 177)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "Bede dictating his translation on the day before Ascension Day."
       }
     ]
   },
@@ -72,7 +108,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "morecraft-christian-survey"
   ],
   "related": []
 }

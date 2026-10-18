@@ -33,6 +33,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=175",
       "source_text_id": "generations-europe",
       "note": "Also p. 172 and p. 177."
+    },
+    {
+      "source": "morecraft",
+      "date": "the year 1066, A.D.",
+      "year_am": null,
+      "year_bc_ad": 1066,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 170 (PDF p. 178)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": null
     }
   ],
   "people": [],
@@ -40,7 +52,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

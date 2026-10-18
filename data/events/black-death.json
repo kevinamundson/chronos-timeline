@@ -34,6 +34,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=196",
       "source_text_id": "generations-europe",
       "note": "Began 1347; one third of Europe dead by the end of 1350; abated after 1350 (pp. 198-199)."
+    },
+    {
+      "source": "morecraft",
+      "date": "1348",
+      "year_am": null,
+      "year_bc_ad": 1348,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 170 (PDF p. 178)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "The plague reaches England."
     }
   ],
   "people": [],
@@ -41,7 +53,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

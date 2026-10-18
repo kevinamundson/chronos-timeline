@@ -36,6 +36,18 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=191",
         "source_text_id": "generations-europe",
         "note": null
+      },
+      {
+        "source": "morecraft",
+        "date": "July 10, 1509",
+        "year_am": null,
+        "year_bc_ad": 1509,
+        "year_bc_ad_end": null,
+        "precision": "day",
+        "citation": "Morecraft, A Christian Survey of World History, p. 179 (PDF p. 187)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "Born at Noyon, Picardy."
       }
     ],
     "death": [
@@ -59,6 +71,18 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=191",
         "source_text_id": "generations-europe",
         "note": null
+      },
+      {
+        "source": "morecraft",
+        "date": "May 27, 1564",
+        "year_am": null,
+        "year_bc_ad": 1564,
+        "year_bc_ad_end": null,
+        "precision": "day",
+        "citation": "Morecraft, A Christian Survey of World History, p. 189 (PDF p. 197)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "He \"lived to be 54 years old\"."
       }
     ]
   },
@@ -68,7 +92,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "morecraft-christian-survey"
   ],
   "related": []
 }

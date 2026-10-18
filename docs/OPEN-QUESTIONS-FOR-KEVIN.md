@@ -484,3 +484,28 @@ Source: Joe Morecraft III, *A Christian Survey of World History from Creation to
 ### F2. Publication details
 - The copy has a cover and a title page but no copyright page, so no publisher, year or edition is printed, and the PDF has no creation date. `data/sources.json` leaves the year empty and links to the Heritage Presbyterian Church listing of the book.
 - **Question:** do you know the edition or year of your copy? If so, I will add it.
+
+### F3. Morecraft against the provisional Generations dates
+None of these records has a tier 1–4 date, so the sort stays on Generations and Morecraft is shown as a second row. Pages are printed (PDF).
+- `ezra-returns-to-jerusalem`: Morecraft's section heading "458–445 B.C." (p. 19 (PDF 28)) vs Generations 468 BC.
+- `sennacherib-besieges-jerusalem`: Morecraft gives Sennacherib's reign as 704–681 B.C. (p. 42 (PDF 50)). Generations puts the siege at 713 BC, before that reign begins. This is the familiar gap between Hezekiah's "fourteenth year" in Ussher-style reckoning and the Assyrian king lists.
+- `martyrdom-of-polycarp`: Morecraft gives A.D. 162 (p. 103 (PDF 111)); Generations gives AD 156.
+- `augustine-succeeds-valerius`: Morecraft gives A.D. 395 (p. 123 (PDF 131)); Generations gives AD 397.
+- `alfred-the-great` death: Morecraft gives "848–901" (p. 169 (PDF 177)); Generations gives AD 899.
+- `william-tyndale` birth: Morecraft gives "probably in 1484" (p. 220 (PDF 228)); Generations gives 1494.
+- **Recommendation:** no change. These are display rows, and the extract lists them. Tell me if you want Morecraft preferred over Generations anywhere.
+
+### F4. Morecraft against himself
+- The fall of Babylon is dated 539 B.C. on p. 27 (PDF 35) but 536 B.C. on p. 44 (PDF 52), the "Ancient Empires" pages. Both are recorded on `fall-of-babylon-539-bc`.
+- Servetus is "sentenced to death" on "October 26, 1533" (p. 187 (PDF 195), checked against the page image). The book itself places this during Calvin's second Geneva ministry (1541–1564), so 1533 is probably a misprint for 1553. The statement is listed but not mapped to any record.
+- **Recommendation:** no change.
+
+### F5. Dates to check against other sources
+- Council of Ephesus: the book's table prints "(A.D. 432)" (p. 81 (PDF 89), checked against the page image). The council is usually dated 431. The new record `council-of-ephesus` sorts provisionally at 432 as printed.
+- Assyria "founded as early as 1700 B.C." (p. 41 (PDF 49)) comes far after CFAH's Assyrian anchor points (e.g. Shamshi-Adad I). It is listed as a conflict and not mapped.
+- **Recommendation:** for Ephesus, add a CFAH or Ussher date if one is found (it would then set the sort automatically).
+
+### F6. New records and the "Ancient Empires" pages
+- 34 new records (23 events, 11 people) are listed in the extract. Kings with only a reign (Henry VIII, Edward VI, Elizabeth I, James I, Charles I) have no birth year, so they are unsorted people; their timelines show the reign.
+- PDF pp. 49–59 ("Ancient Empires") appear to reproduce outside "Fact Finder" material, with an image credited to "Daily Bible Study www.keyway.ca" (PDF p. 57). Their dates (Assyrian, Babylonian and Persian king lists) are recorded as Morecraft's, with a note.
+- **Question:** keep the dates from these pages, or drop them as not the author's own?

@@ -36,6 +36,18 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=261",
         "source_text_id": "generations-europe",
         "note": null
+      },
+      {
+        "source": "morecraft",
+        "date": "1537 - 54",
+        "year_am": null,
+        "year_bc_ad": 1537,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, p. 258 (PDF p. 266)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "Caption of Delaroche's painting reproduced in the book."
       }
     ],
     "death": [
@@ -48,6 +60,18 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "morecraft",
+        "date": "1537 - 54",
+        "year_am": null,
+        "year_bc_ad": 1554,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, p. 258 (PDF p. 266)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "Caption of Delaroche's painting reproduced in the book."
       }
     ]
   },
@@ -57,7 +81,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "morecraft-christian-survey"
   ],
   "related": []
 }

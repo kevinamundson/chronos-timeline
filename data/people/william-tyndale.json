@@ -47,6 +47,18 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=77",
         "source_text_id": "generations-world",
         "note": null
+      },
+      {
+        "source": "morecraft",
+        "date": "probably in 1484",
+        "year_am": null,
+        "year_bc_ad": 1484,
+        "year_bc_ad_end": null,
+        "precision": "conjectural",
+        "citation": "Morecraft, A Christian Survey of World History, p. 220 (PDF p. 228)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "Born in Gloucestershire."
       }
     ],
     "death": [
@@ -77,7 +89,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-europe",
-    "generations-world"
+    "generations-world",
+    "morecraft-christian-survey"
   ],
   "related": []
 }

@@ -44,6 +44,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=109",
       "source_text_id": "generations-asia",
       "note": "The Reformation \"began in 1517\"."
+    },
+    {
+      "source": "morecraft",
+      "date": "October 31, 1517",
+      "year_am": null,
+      "year_bc_ad": 1517,
+      "year_bc_ad_end": null,
+      "precision": "day",
+      "citation": "Morecraft, A Christian Survey of World History, p. 177 (PDF p. 185)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": null
     }
   ],
   "people": [
@@ -54,7 +66,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-europe",
-    "generations-asia"
+    "generations-asia",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

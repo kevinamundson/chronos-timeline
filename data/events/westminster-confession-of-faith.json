@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "westminster-confession-of-faith",
+  "type": "event",
+  "title": "The Westminster Confession of Faith",
+  "summary": "Confession of faith drawn up by the Westminster Assembly, with its Larger and Shorter Catechisms.",
+  "description": "Added from the Morecraft import (Morecraft, A Christian Survey of World History). No CFAH, Ussher–Jones, Ussher or Generations date exists, so the sort is PROVISIONAL from Morecraft (secondary display) until a tier 1–4 date is added.",
+  "sorting_year": 1646,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "morecraft",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones, Ussher or Generations date exists, so the sort uses Morecraft (Morecraft, A Christian Survey of World History, p. 364 (PDF p. 372)): 1646-47. Pending owner decision (open question F1)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+    },
+    {
+      "source": "morecraft",
+      "date": "1646-47",
+      "year_am": null,
+      "year_bc_ad": 1646,
+      "year_bc_ad_end": 1647,
+      "precision": "year-range",
+      "citation": "Morecraft, A Christian Survey of World History, p. 364 (PDF p. 372)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "With the Larger and Shorter Catechisms (1647-48)."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "morecraft-christian-survey"
+  ],
+  "related": [
+    "westminster-assembly"
+  ],
+  "free_source_links": []
+}

@@ -36,6 +36,18 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=161",
         "source_text_id": "generations-europe",
         "note": null
+      },
+      {
+        "source": "morecraft",
+        "date": "848-901",
+        "year_am": null,
+        "year_bc_ad": 848,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, p. 169 (PDF p. 177)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": null
       }
     ],
     "death": [
@@ -59,6 +71,18 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=161",
         "source_text_id": "generations-europe",
         "note": null
+      },
+      {
+        "source": "morecraft",
+        "date": "848-901",
+        "year_am": null,
+        "year_bc_ad": 901,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, p. 169 (PDF p. 177)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": null
       }
     ]
   },
@@ -68,7 +92,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "morecraft-christian-survey"
   ],
   "related": []
 }

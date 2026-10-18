@@ -1,0 +1,82 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "james-i-of-england",
+  "type": "person",
+  "title": "James I of England",
+  "alt_names": [
+    "James VI of Scotland"
+  ],
+  "summary": "King of Scotland who became king of England on Elizabeth I's death.",
+  "description": "Added from the Morecraft import (Morecraft, A Christian Survey of World History). No tier 1–4 or Generations date exists; the sort is PROVISIONAL from Morecraft's birth year where he gives one.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year, and Morecraft gives none."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "morecraft",
+        "date": "1603-1625",
+        "year_am": null,
+        "year_bc_ad": 1603,
+        "year_bc_ad_end": 1625,
+        "precision": "year-range",
+        "citation": "Morecraft, A Christian Survey of World History, p. 261 (PDF p. 269)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "king-james-version"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "morecraft-christian-survey"
+  ],
+  "related": [
+    "elizabeth-i",
+    "charles-i-of-england"
+  ],
+  "free_source_links": []
+}

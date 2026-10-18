@@ -33,6 +33,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=263",
       "source_text_id": "generations-europe",
       "note": "Nine days after accepting the crown."
+    },
+    {
+      "source": "morecraft",
+      "date": "9 days in 1553",
+      "year_am": null,
+      "year_bc_ad": 1553,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 248 (PDF p. 256)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "Section heading."
     }
   ],
   "people": [
@@ -42,7 +54,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

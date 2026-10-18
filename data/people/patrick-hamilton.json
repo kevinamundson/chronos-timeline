@@ -1,0 +1,76 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "patrick-hamilton",
+  "type": "person",
+  "title": "Patrick Hamilton",
+  "summary": "Early Scottish Protestant martyr, burned at St Andrews.",
+  "description": "Added from the Morecraft import (Morecraft, A Christian Survey of World History). No tier 1–4 or Generations date exists; the sort is PROVISIONAL from Morecraft's birth year where he gives one.",
+  "sorting_year": 1503,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "morecraft",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones, Ussher or Generations date exists, so the sort uses Morecraft (Morecraft, A Christian Survey of World History, p. 305 (PDF p. 313)): 1503-1528. Pending owner decision (open question F1)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "morecraft",
+        "date": "1503-1528",
+        "year_am": null,
+        "year_bc_ad": 1503,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, p. 305 (PDF p. 313)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "Section heading \"The Martyrdom of Patrick Hamilton\"."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "morecraft",
+        "date": "1503-1528",
+        "year_am": null,
+        "year_bc_ad": 1528,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, p. 305 (PDF p. 313)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "Section heading \"The Martyrdom of Patrick Hamilton\"."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "morecraft-christian-survey"
+  ],
+  "related": [
+    "george-wishart"
+  ],
+  "free_source_links": []
+}
