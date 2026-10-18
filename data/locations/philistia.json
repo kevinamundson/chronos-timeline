@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "philistia",
+  "type": "location",
+  "title": "Philistia",
+  "location_type": "region",
+  "summary": "Land of the Philistines, who came out of the Casluhim (Gen 10:14).",
+  "lat": 31.663889,
+  "lng": 34.545833,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Philistia (ancient)); representative point 34.545833,31.663889 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Philistia (ancient): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Exod.15.14, Judg.10.6, 1Sam.31.9; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "ac71e65",
+  "openbible_url": "https://www.openbible.info/geo/ancient/ac71e65/philistia",
+  "openbible_geojson": "https://a.openbible.info/geo/data/ac71e65.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Exod.15.14",
+    "Judg.10.6",
+    "1Sam.31.9",
+    "2Sam.8.12"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ac71e65/philistia"
+    }
+  ],
+  "related": [
+    "casluhim",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

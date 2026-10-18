@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-lud",
+  "type": "location",
+  "title": "Lud (Lydia)",
+  "location_type": "region",
+  "summary": "Lud (Isa 66:19; Ezek 27:10).",
+  "lat": 38.488333,
+  "lng": 28.040278,
+  "coordinate_basis": "OpenBible.info first-ranked identification (another name for Lydia (ancient)); representative point 28.040278,38.488333 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"another name for Lydia (ancient): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Isa.66.19, Ezek.27.10; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "a38776a",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a38776a/lud-1",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a38776a.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Isa.66.19",
+    "Ezek.27.10"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a38776a/lud-1"
+    }
+  ],
+  "related": [
+    "lud",
+    "ludim",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "calah",
+  "type": "location",
+  "title": "Calah (Nimrud)",
+  "location_type": "settlement",
+  "summary": "City built with Nineveh (Gen 10:11-12).",
+  "lat": 36.098056,
+  "lng": 43.328889,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Nimrud (modern)); representative point 43.328889,36.098056 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Nimrud (modern): very high confidence\" (page fetched 2026-10-17)."
+  },
+  "openbible_id": "ae1f807",
+  "openbible_url": "https://www.openbible.info/geo/ancient/ae1f807/calah",
+  "openbible_geojson": "https://a.openbible.info/geo/data/ae1f807.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.11",
+    "Gen.10.12"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ae1f807/calah"
+    }
+  ],
+  "related": [
+    "nimrod",
+    "asshur",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

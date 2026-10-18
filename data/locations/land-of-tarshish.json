@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-tarshish",
+  "type": "location",
+  "title": "Tarshish",
+  "location_type": "region",
+  "summary": "Tarshish, the seafaring land (Isa 23; Jonah 1:3).",
+  "lat": 37.271944,
+  "lng": -6.944167,
+  "coordinate_basis": "OpenBible.info first-ranked identification (another name for Tartessos (ancient)); representative point -6.944167,37.271944 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 45,
+    "basis": "OpenBible.info: \"another name for Tartessos (ancient): 45% confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in 2Chr.9.21, 2Chr.20.36, 2Chr.20.37; linking it to the Gen 10 person/people is by name only. OpenBible rates this identification only 45% (another name for Tartessos (ancient)); treat the map pin as tentative."
+  },
+  "openbible_id": "a5f43dd",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a5f43dd/tarshish-1",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a5f43dd.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "2Chr.9.21",
+    "2Chr.20.36",
+    "2Chr.20.37",
+    "Ps.72.10"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a5f43dd/tarshish-1"
+    }
+  ],
+  "related": [
+    "tarshish",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

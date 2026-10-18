@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "beth-togarmah",
+  "type": "location",
+  "title": "Beth-togarmah",
+  "location_type": "settlement",
+  "summary": "\"The house of Togarmah\" (Ezek 27:14; 38:6).",
+  "lat": 38.7225,
+  "lng": 37.2775,
+  "coordinate_basis": "OpenBible.info first-ranked identification (another name for Tegarama (ancient)); representative point 37.277500,38.722500 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 45,
+    "basis": "OpenBible.info: \"another name for Tegarama (ancient): 45% confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Ezek.27.14, Ezek.38.6; linking it to the Gen 10 person/people is by name only. OpenBible rates this identification only 45% (another name for Tegarama (ancient)); treat the map pin as tentative."
+  },
+  "openbible_id": "a263e60",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a263e60/beth-togarmah",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a263e60.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Ezek.27.14",
+    "Ezek.38.6"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a263e60/beth-togarmah"
+    }
+  ],
+  "related": [
+    "togarmah"
+  ],
+  "maps": []
+}

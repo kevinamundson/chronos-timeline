@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "hamathite",
+  "type": "person",
+  "title": "The Hamathite",
+  "summary": "Canaanite clan descended from Canaan (Gen 10:18).",
+  "description": "Canaanite clan descended from Canaan (Gen 10:18). Josephus (Antiquities I.6.2, Whiston): \"Amathus inhabited in Amathine, which is even now called Amathe\" Genesis lists this name with a plural or gentilic form (a people/clan); it is kept as a person record so the family tree links up.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier 1-4 dates this record's birth; unsorted (null)."
+  },
+  "father": "canaan-son-of-ham",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference. CFAH dates the Table-of-Nations framework (first territorial division AP-27, 2254 BC; final division AP-28, 2247 BC; Dispersion AP-2, 2192/2191 BC) but not this individual birth"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Jones gives no birth year for Table-of-Nations names."
+      },
+      {
+        "source": "ussher",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Ussher (Annals) gives no birth year for this name."
+      },
+      {
+        "source": "jordan",
+        "date": "1714 - ... [Hamathite] ben Canaan",
+        "year_am": 1714,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 3),\" Biblical Chronology 6:5 (May 1994), §8 \"The Table of Nations\", table \"An Hypothetical Chronology for the Table of Nations\"",
+        "link": "https://biblicalhorizons.com/1994/05/01/6_05/",
+        "note": "Jordan: \"If we assume births every two years, and about 30 years between generations ... we can come up with an approximate series of dates\" (hypothetical, not stated by Scripture).",
+        "source_text_id": "jordan-bc-6-5"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.10.18",
+    "1Chr.1.13-1Chr.1.16"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "jordan-bc-6-5",
+    "josephus-antiquities-whiston"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.10.18 ; 1Chr.1.13-1Chr.1.16"
+    },
+    {
+      "source_id": "jordan-bc-6-5",
+      "url": "https://biblicalhorizons.com/1994/05/01/6_05/",
+      "locator": "§8 \"The Table of Nations\""
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book I, ch. 6, §2"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ac62cbc/hamath-1"
+    }
+  ],
+  "related": [
+    "canaan-son-of-ham",
+    "hamath",
+    "final-territorial-division",
+    "dispersion"
+  ],
+  "events": [],
+  "open_questions": [
+    "Place link is by name: OpenBible identifies the place named in later scripture (2Kgs.14.28, 2Sam.8.9), not the Gen 10 ancestor. Certainty: hamath high (95%)."
+  ]
+}

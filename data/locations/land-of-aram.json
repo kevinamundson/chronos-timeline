@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-aram",
+  "type": "location",
+  "title": "Aram (Syria)",
+  "location_type": "region",
+  "summary": "Aram (Num 23:7; 2 Sam 8:6).",
+  "lat": 33.511112,
+  "lng": 36.30639,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Aram (ancient)); representative point 36.306390,33.511112 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Aram (ancient): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Num.23.7, Judg.18.7, Judg.18.28; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "a3e66cd",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a3e66cd/aram",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a3e66cd.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Num.23.7",
+    "Judg.18.7",
+    "Judg.18.28",
+    "2Sam.8.6"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a3e66cd/aram"
+    }
+  ],
+  "related": [
+    "aram",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

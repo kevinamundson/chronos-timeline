@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-dedan",
+  "type": "location",
+  "title": "Dedan (land)",
+  "location_type": "settlement",
+  "summary": "Dedan in Arabia (Isa 21:13; Ezek 25:13).",
+  "lat": 26.65,
+  "lng": 37.91667,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Al Khuraybah (modern)); representative point 37.916670,26.650000 (lon,lat).",
+  "certainty": {
+    "level": "high",
+    "percent": 85,
+    "basis": "OpenBible.info: \"Al Khuraybah (modern): 85% confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Isa.21.13, Jer.25.23, Jer.49.8; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "a3a2a75",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a3a2a75/dedan",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a3a2a75.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Isa.21.13",
+    "Jer.25.23",
+    "Jer.49.8",
+    "Ezek.25.13"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a3a2a75/dedan"
+    }
+  ],
+  "related": [
+    "dedan"
+  ],
+  "maps": []
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "hamath",
+  "type": "location",
+  "title": "Hamath",
+  "location_type": "settlement",
+  "summary": "City of the Hamathites, a Canaanite clan (Gen 10:18).",
+  "lat": 35.1365,
+  "lng": 36.75,
+  "coordinate_basis": "OpenBible.info first-ranked identification (more than); representative point 36.750000,35.136500 (lon,lat).",
+  "certainty": {
+    "level": "high",
+    "percent": 95,
+    "basis": "OpenBible.info: \"more than: 95% confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in 2Sam.8.9, 2Kgs.14.28, 2Kgs.18.34; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "ac62cbc",
+  "openbible_url": "https://www.openbible.info/geo/ancient/ac62cbc/hamath-1",
+  "openbible_geojson": "https://a.openbible.info/geo/data/ac62cbc.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "2Sam.8.9",
+    "2Kgs.14.28",
+    "2Kgs.18.34",
+    "2Kgs.19.13"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ac62cbc/hamath-1"
+    }
+  ],
+  "related": [
+    "hamathite"
+  ],
+  "maps": []
+}

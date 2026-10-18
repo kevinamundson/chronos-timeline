@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-uzal",
+  "type": "location",
+  "title": "Uzal (land)",
+  "location_type": "settlement",
+  "summary": "Uzal, trading partner of Tyre (Ezek 27:19).",
+  "lat": 15.3551,
+  "lng": 44.2145,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Sanaa (modern)); representative point 44.214500,15.355100 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 35,
+    "basis": "OpenBible.info: \"Sanaa (modern): 35% confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Ezek.27.19; linking it to the Gen 10 person/people is by name only. OpenBible rates this identification only 35% (Sanaa (modern)); treat the map pin as tentative."
+  },
+  "openbible_id": "a217cc5",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a217cc5/uzal",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a217cc5.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Ezek.27.19"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a217cc5/uzal"
+    }
+  ],
+  "related": [
+    "uzal"
+  ],
+  "maps": []
+}

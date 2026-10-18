@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "rehoboth-ir",
+  "type": "location",
+  "title": "Rehoboth-Ir (Rehoboth)",
+  "location_type": "settlement",
+  "summary": "City built with Nineveh (Gen 10:11).",
+  "lat": 36.3594,
+  "lng": 43.1528,
+  "coordinate_basis": "OpenBible.info first-ranked identification (in Nineveh (ancient)); representative point 43.152800,36.359400 (lon,lat).",
+  "certainty": {
+    "level": "medium",
+    "percent": 55,
+    "basis": "OpenBible.info: \"in Nineveh (ancient): 55% confidence\" (page fetched 2026-10-17)."
+  },
+  "openbible_id": "a260ff1",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a260ff1/rehoboth-ir",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a260ff1.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.11"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a260ff1/rehoboth-ir"
+    }
+  ],
+  "related": [
+    "nimrod",
+    "asshur",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

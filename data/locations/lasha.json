@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "lasha",
+  "type": "location",
+  "title": "Lasha",
+  "location_type": "settlement",
+  "summary": "Boundary point of the Canaanites (Gen 10:19).",
+  "lat": 31.597,
+  "lng": 35.559306,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Callirrhoe (modern)); representative point 35.559306,31.597000 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 30,
+    "basis": "OpenBible.info: \"Callirrhoe (modern): 30% confidence\" (page fetched 2026-10-17). OpenBible rates this identification only 30% (Callirrhoe (modern)); treat the map pin as tentative."
+  },
+  "openbible_id": "adaef13",
+  "openbible_url": "https://www.openbible.info/geo/ancient/adaef13/lasha",
+  "openbible_geojson": "https://a.openbible.info/geo/data/adaef13.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.19"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/adaef13/lasha"
+    }
+  ],
+  "related": [
+    "canaan-son-of-ham",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

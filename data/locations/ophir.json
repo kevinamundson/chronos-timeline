@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "ophir",
+  "type": "location",
+  "title": "Ophir",
+  "location_type": "region",
+  "summary": "Ophir, source of gold (1 Kgs 9:28).",
+  "lat": 18.216667,
+  "lng": 42.5,
+  "coordinate_basis": "OpenBible.info first-ranked identification (southwestern Arabia (modern)); representative point 42.500000,18.216667 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 30,
+    "basis": "OpenBible.info: \"southwestern Arabia (modern): 30% confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in 1Kgs.9.28, 1Kgs.10.11, 1Kgs.22.48; linking it to the Gen 10 person/people is by name only. OpenBible rates this identification only 30% (southwestern Arabia (modern)); treat the map pin as tentative."
+  },
+  "openbible_id": "a104820",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a104820/ophir",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a104820.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "1Kgs.9.28",
+    "1Kgs.10.11",
+    "1Kgs.22.48",
+    "1Chr.29.4"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a104820/ophir"
+    }
+  ],
+  "related": [
+    "ophir-son-of-joktan",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

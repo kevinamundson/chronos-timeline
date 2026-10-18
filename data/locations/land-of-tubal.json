@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-tubal",
+  "type": "location",
+  "title": "Tubal (land)",
+  "location_type": "region",
+  "summary": "Land of Tubal (Ezek 27:13; 38:2).",
+  "lat": 37.295556,
+  "lng": 36.253611,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Tabal (modern)); representative point 36.253611,37.295556 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Tabal (modern): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Isa.66.19, Ezek.27.13, Ezek.38.2; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "aaaaead",
+  "openbible_url": "https://www.openbible.info/geo/ancient/aaaaead/tubal",
+  "openbible_geojson": "https://a.openbible.info/geo/data/aaaaead.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Isa.66.19",
+    "Ezek.27.13",
+    "Ezek.38.2",
+    "Ezek.38.3"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/aaaaead/tubal"
+    }
+  ],
+  "related": [
+    "tubal",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

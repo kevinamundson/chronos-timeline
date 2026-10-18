@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-raamah",
+  "type": "location",
+  "title": "Raamah (land)",
+  "location_type": "settlement",
+  "summary": "Raamah, trading partner of Tyre (Ezek 27:22).",
+  "lat": 17.477271,
+  "lng": 44.179373,
+  "coordinate_basis": "OpenBible.info first-ranked identification (another name for Ragmat (ancient)); representative point 44.179373,17.477271 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 40,
+    "basis": "OpenBible.info: \"another name for Ragmat (ancient): 40% confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Ezek.27.22; linking it to the Gen 10 person/people is by name only. OpenBible rates this identification only 40% (another name for Ragmat (ancient)); treat the map pin as tentative."
+  },
+  "openbible_id": "a57bb2e",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a57bb2e/raamah",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a57bb2e.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Ezek.27.22"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a57bb2e/raamah"
+    }
+  ],
+  "related": [
+    "raamah"
+  ],
+  "maps": []
+}

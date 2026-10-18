@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "calneh",
+  "type": "location",
+  "title": "Calneh (Gen 10:10)",
+  "location_type": "settlement",
+  "summary": "A city of the beginning of Nimrod's kingdom in Shinar (Gen 10:10).",
+  "lat": 32.126111,
+  "lng": 45.230833,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Nippur (modern)); representative point 45.230833,32.126111 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 15,
+    "basis": "OpenBible.info: \"Nippur (modern): 15% confidence\" (page fetched 2026-10-17). OpenBible rates this identification only 15% (Nippur (modern)); treat the map pin as tentative."
+  },
+  "openbible_id": "aee80af",
+  "openbible_url": "https://www.openbible.info/geo/ancient/aee80af/calneh-1",
+  "openbible_geojson": "https://a.openbible.info/geo/data/aee80af.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.10"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/aee80af/calneh-1"
+    }
+  ],
+  "related": [
+    "nimrod",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

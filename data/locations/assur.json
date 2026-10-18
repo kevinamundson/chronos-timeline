@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "assur",
+  "type": "location",
+  "title": "Asshur (the city of Assur)",
+  "location_type": "settlement",
+  "summary": "The city of Assur on the Tigris, named after Asshur son of Shem (OpenBible \"Asshur\": Num 24:22, Ezek 27:23).",
+  "lat": 35.456667,
+  "lng": 43.2625,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Assur (modern)); representative point 43.262500,35.456667 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Assur (modern): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Num.24.22, Num.24.24, Ps.83.8; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "a874951",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a874951/asshur",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a874951.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Num.24.22",
+    "Num.24.24",
+    "Ps.83.8",
+    "Ezek.27.23"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a874951/asshur"
+    }
+  ],
+  "related": [
+    "asshur"
+  ],
+  "maps": []
+}

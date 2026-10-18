@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-uz",
+  "type": "location",
+  "title": "Uz (land)",
+  "location_type": "region",
+  "summary": "Land of Uz (Job 1:1; Lam 4:21).",
+  "lat": 30.745843,
+  "lng": 35.603919,
+  "coordinate_basis": "OpenBible.info first-ranked identification (in Edom (ancient)); representative point 35.603919,30.745843 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 40,
+    "basis": "OpenBible.info: \"in Edom (ancient): 40% confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Job.1.1, Jer.25.20, Lam.4.21; linking it to the Gen 10 person/people is by name only. OpenBible rates this identification only 40% (in Edom (ancient)); treat the map pin as tentative."
+  },
+  "openbible_id": "a324c4d",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a324c4d/uz",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a324c4d.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Job.1.1",
+    "Jer.25.20",
+    "Lam.4.21"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a324c4d/uz"
+    }
+  ],
+  "related": [
+    "uz",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

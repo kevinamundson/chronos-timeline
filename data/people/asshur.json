@@ -1,0 +1,123 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "asshur",
+  "type": "person",
+  "title": "Asshur",
+  "summary": "Son of Shem (Gen 10:22); KJV Gen 10:11 has \"Out of that land went forth Asshur, and builded Nineveh\".",
+  "description": "Son of Shem (Gen 10:22); KJV Gen 10:11 has \"Out of that land went forth Asshur, and builded Nineveh\". Josephus (Antiquities I.6.4, Whiston): \"Ashur lived at the city Nineve; and named his subjects Assyrians\"",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier 1-4 dates this record's birth; unsorted (null)."
+  },
+  "father": "shem",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference. CFAH dates the Table-of-Nations framework (first territorial division AP-27, 2254 BC; final division AP-28, 2247 BC; Dispersion AP-2, 2192/2191 BC) but not this individual birth"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Jones gives no birth year for Table-of-Nations names."
+      },
+      {
+        "source": "ussher",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Ussher (Annals) gives no birth year for this name."
+      },
+      {
+        "source": "jordan",
+        "date": "1662 - Asshur ben Shem ...",
+        "year_am": 1662,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 3),\" Biblical Chronology 6:5 (May 1994), §8 \"The Table of Nations\", table \"An Hypothetical Chronology for the Table of Nations\"",
+        "link": "https://biblicalhorizons.com/1994/05/01/6_05/",
+        "note": "Jordan: \"If we assume births every two years, and about 30 years between generations ... we can come up with an approximate series of dates\" (hypothetical, not stated by Scripture).",
+        "source_text_id": "jordan-bc-6-5"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.10.11",
+    "Gen.10.22",
+    "1Chr.1.17"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "jordan-bc-6-5",
+    "josephus-antiquities-whiston"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.10.11 ; Gen.10.22 ; 1Chr.1.17"
+    },
+    {
+      "source_id": "jordan-bc-6-5",
+      "url": "https://biblicalhorizons.com/1994/05/01/6_05/",
+      "locator": "§8 \"The Table of Nations\""
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book I, ch. 6, §4"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a70fd5d/nineveh"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a260ff1/rehoboth-ir"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ae1f807/calah"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a3d1321/assyria"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a874951/asshur"
+    }
+  ],
+  "related": [
+    "shem",
+    "nineveh",
+    "rehoboth-ir",
+    "calah",
+    "assyria",
+    "assur",
+    "final-territorial-division",
+    "dispersion"
+  ],
+  "events": [],
+  "open_questions": [
+    "Place link is by name: OpenBible identifies the place named in later scripture (Gen.10.11, Gen.10.12, Gen.2.14, Num.24.22, Num.24.24), not the Gen 10 ancestor. Certainty: nineveh very-high; rehoboth-ir medium (55%); calah very-high; assyria very-high; assur very-high."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "caphtor",
+  "type": "location",
+  "title": "Caphtor",
+  "location_type": "region",
+  "summary": "Homeland associated with the Caphtorim, descendants of Mizraim (Gen 10:14; Deut 2:23; Amos 9:7).",
+  "lat": 35.309722,
+  "lng": 24.893333,
+  "coordinate_basis": "OpenBible.info first-ranked identification (another name for Crete (ancient)); representative point 24.893333,35.309722 (lon,lat).",
+  "certainty": {
+    "level": "medium",
+    "percent": 75,
+    "basis": "OpenBible.info: \"another name for Crete (ancient): 75% confidence\" (page fetched 2026-10-17)."
+  },
+  "openbible_id": "a329990",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a329990/caphtor",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a329990.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.14"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a329990/caphtor"
+    }
+  ],
+  "related": [
+    "caphtorim",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

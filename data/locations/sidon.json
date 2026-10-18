@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "sidon",
+  "type": "location",
+  "title": "Sidon",
+  "location_type": "settlement",
+  "summary": "City named after Sidon, firstborn of Canaan; boundary of the Canaanites (Gen 10:15,19).",
+  "lat": 33.560985,
+  "lng": 35.371944,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Sandikli archaeological site in Sidon (modern)); representative point 35.371944,33.560985 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Sandikli archaeological site in Sidon (modern): very high confidence\" (page fetched 2026-10-17)."
+  },
+  "openbible_id": "a98e4d7",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a98e4d7/sidon",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a98e4d7.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.19"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a98e4d7/sidon"
+    }
+  ],
+  "related": [
+    "sidon-son-of-canaan",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

@@ -17,7 +17,8 @@
   },
   "father": "salah",
   "children": [
-    "peleg"
+    "peleg",
+    "joktan"
   ],
   "scripture_facts": {
     "age_at_named_son": 34,
@@ -184,7 +185,9 @@
   ],
   "related": [
     "salah",
-    "peleg"
+    "peleg",
+    "joktan",
+    "final-territorial-division"
   ],
   "events": []
 }

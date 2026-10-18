@@ -1,0 +1,160 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "canaan-son-of-ham",
+  "type": "person",
+  "title": "Canaan (son of Ham)",
+  "summary": "Son of Ham, cursed by Noah (Gen 9:25); father of Sidon, Heth and the Canaanite clans (Gen 10:15-18).",
+  "description": "Son of Ham, cursed by Noah (Gen 9:25); father of Sidon, Heth and the Canaanite clans (Gen 10:15-18). Josephus (Antiquities I.6.2, Whiston): \"Canaan, the fourth son of Ham, inhabited the country now called Judea, and called it from his own name Canaan.\"",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier 1-4 dates this record's birth; unsorted (null)."
+  },
+  "father": "ham",
+  "children": [
+    "sidon-son-of-canaan",
+    "heth",
+    "jebusite",
+    "amorite",
+    "girgasite",
+    "hivite",
+    "arkite",
+    "sinite",
+    "arvadite",
+    "zemarite",
+    "hamathite"
+  ],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference. CFAH dates the Table-of-Nations framework (first territorial division AP-27, 2254 BC; final division AP-28, 2247 BC; Dispersion AP-2, 2192/2191 BC) but not this individual birth"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Jones gives no birth year for Table-of-Nations names."
+      },
+      {
+        "source": "ussher",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Ussher (Annals) gives no birth year for this name."
+      },
+      {
+        "source": "jordan",
+        "date": "1664 - ... Canaan ben Ham ...",
+        "year_am": 1664,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 3),\" Biblical Chronology 6:5 (May 1994), §8 \"The Table of Nations\", table \"An Hypothetical Chronology for the Table of Nations\"",
+        "link": "https://biblicalhorizons.com/1994/05/01/6_05/",
+        "note": "Jordan: \"If we assume births every two years, and about 30 years between generations ... we can come up with an approximate series of dates\" (hypothetical, not stated by Scripture).",
+        "source_text_id": "jordan-bc-6-5"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.9.18",
+    "Gen.9.25",
+    "Gen.10.6",
+    "Gen.10.15-Gen.10.19",
+    "1Chr.1.8",
+    "1Chr.1.13"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "jordan-bc-6-5",
+    "josephus-antiquities-whiston"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.9.18 ; Gen.9.25 ; Gen.10.6 ; Gen.10.15-Gen.10.19 ; 1Chr.1.8 ; 1Chr.1.13"
+    },
+    {
+      "source_id": "jordan-bc-6-5",
+      "url": "https://biblicalhorizons.com/1994/05/01/6_05/",
+      "locator": "§8 \"The Table of Nations\""
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book I, ch. 6, §2"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/aa8edd2/gaza"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a3f5814/gerar"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a0aa664/sodom"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/aa572e2/gomorrah"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a41a054/admah"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/abfbfb9/zeboiim"
+    },
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/adaef13/lasha"
+    }
+  ],
+  "related": [
+    "ham",
+    "sidon-son-of-canaan",
+    "heth",
+    "jebusite",
+    "amorite",
+    "girgasite",
+    "hivite",
+    "arkite",
+    "sinite",
+    "arvadite",
+    "zemarite",
+    "hamathite",
+    "gaza",
+    "gerar",
+    "sodom",
+    "gomorrah",
+    "admah",
+    "zeboiim",
+    "lasha",
+    "final-territorial-division",
+    "dispersion",
+    "canaan"
+  ],
+  "events": [],
+  "open_questions": [
+    "Place link is by name: OpenBible identifies the place named in later scripture (Deut.2.23, Gen.10.19, Gen.13.10, Gen.14.2, Gen.20.1), not the Gen 10 ancestor. Certainty: gaza very-high; gerar medium (70%); sodom low (45%); gomorrah low (45%); admah medium (55%); zeboiim medium (60%); lasha low (30%)."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "sodom",
+  "type": "location",
+  "title": "Sodom",
+  "location_type": "settlement",
+  "summary": "Boundary point of the Canaanites (Gen 10:19); destroyed in Abraham's time (Gen 19).",
+  "lat": 31.20849,
+  "lng": 35.449223,
+  "coordinate_basis": "OpenBible.info first-ranked identification (in the Valley of Siddim (ancient)); representative point 35.449223,31.208490 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 45,
+    "basis": "OpenBible.info: \"in the Valley of Siddim (ancient): 45% confidence\" (page fetched 2026-10-17). OpenBible rates this identification only 45% (in the Valley of Siddim (ancient)); treat the map pin as tentative."
+  },
+  "openbible_id": "a0aa664",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a0aa664/sodom",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a0aa664.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.19"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a0aa664/sodom"
+    }
+  ],
+  "related": [
+    "canaan-son-of-ham",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

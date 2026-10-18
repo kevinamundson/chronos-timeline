@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "sephar",
+  "type": "location",
+  "title": "Sephar",
+  "location_type": "settlement",
+  "summary": "\"A mount of the east\", boundary of the sons of Joktan (Gen 10:30).",
+  "lat": 14.213898,
+  "lng": 44.402874,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Zafar (modern)); representative point 44.402874,14.213898 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 35,
+    "basis": "OpenBible.info: \"Zafar (modern): 35% confidence\" (page fetched 2026-10-17). OpenBible rates this identification only 35% (Zafar (modern)); treat the map pin as tentative."
+  },
+  "openbible_id": "a3cae2c",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a3cae2c/sephar",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a3cae2c.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.30"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a3cae2c/sephar"
+    }
+  ],
+  "related": [
+    "joktan",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

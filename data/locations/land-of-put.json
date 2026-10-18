@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-put",
+  "type": "location",
+  "title": "Put (Phut)",
+  "location_type": "region",
+  "summary": "Land of Put (Jer 46:9; Ezek 27:10).",
+  "lat": 32.820946,
+  "lng": 21.851229,
+  "coordinate_basis": "OpenBible.info first-ranked identification (another name for Libya (ancient)); representative point 21.851229,32.820946 (lon,lat).",
+  "certainty": {
+    "level": "medium",
+    "percent": 65,
+    "basis": "OpenBible.info: \"another name for Libya (ancient): 65% confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Isa.66.19, Jer.46.9, Ezek.27.10; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "ad0520f",
+  "openbible_url": "https://www.openbible.info/geo/ancient/ad0520f/put",
+  "openbible_geojson": "https://a.openbible.info/geo/data/ad0520f.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Isa.66.19",
+    "Jer.46.9",
+    "Ezek.27.10",
+    "Ezek.30.5"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ad0520f/put"
+    }
+  ],
+  "related": [
+    "phut",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "erech",
+  "type": "location",
+  "title": "Erech (Uruk)",
+  "location_type": "settlement",
+  "summary": "A city of the beginning of Nimrod's kingdom in Shinar (Gen 10:10).",
+  "lat": 31.322222,
+  "lng": 45.636111,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Uruk (modern)); representative point 45.636111,31.322222 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Uruk (modern): very high confidence\" (page fetched 2026-10-17)."
+  },
+  "openbible_id": "a5db1a6",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a5db1a6/erech",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a5db1a6.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.10"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a5db1a6/erech"
+    }
+  ],
+  "related": [
+    "nimrod",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-cush",
+  "type": "location",
+  "title": "Cush (Ethiopia)",
+  "location_type": "region",
+  "summary": "Land of Cush (Isa 18:1; 20:3).",
+  "lat": 16.935139,
+  "lng": 33.75075,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Cush 1 (modern)); representative point 33.750750,16.935139 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Cush 1 (modern): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in 2Kgs.19.9, Ps.68.31, Ps.87.4; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "ac5a1ec",
+  "openbible_url": "https://www.openbible.info/geo/ancient/ac5a1ec/cush-1",
+  "openbible_geojson": "https://a.openbible.info/geo/data/ac5a1ec.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "2Kgs.19.9",
+    "Ps.68.31",
+    "Ps.87.4",
+    "Isa.11.11"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ac5a1ec/cush-1"
+    }
+  ],
+  "related": [
+    "cush",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

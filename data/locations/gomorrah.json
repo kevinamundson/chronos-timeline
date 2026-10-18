@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "gomorrah",
+  "type": "location",
+  "title": "Gomorrah",
+  "location_type": "settlement",
+  "summary": "Boundary point of the Canaanites (Gen 10:19).",
+  "lat": 31.20849,
+  "lng": 35.449223,
+  "coordinate_basis": "OpenBible.info first-ranked identification (in the Valley of Siddim (ancient)); representative point 35.449223,31.208490 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 45,
+    "basis": "OpenBible.info: \"in the Valley of Siddim (ancient): 45% confidence\" (page fetched 2026-10-17). OpenBible rates this identification only 45% (in the Valley of Siddim (ancient)); treat the map pin as tentative."
+  },
+  "openbible_id": "aa572e2",
+  "openbible_url": "https://www.openbible.info/geo/ancient/aa572e2/gomorrah",
+  "openbible_geojson": "https://a.openbible.info/geo/data/aa572e2.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.19"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/aa572e2/gomorrah"
+    }
+  ],
+  "related": [
+    "canaan-son-of-ham",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

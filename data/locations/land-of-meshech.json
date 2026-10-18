@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-meshech",
+  "type": "location",
+  "title": "Meshech (land)",
+  "location_type": "region",
+  "summary": "Land of Meshech (Ezek 27:13; 38:2).",
+  "lat": 39.655,
+  "lng": 31.994167,
+  "coordinate_basis": "OpenBible.info first-ranked identification (about 200 km around Gordion (modern)); representative point 31.994167,39.655000 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"about 200 km around Gordion (modern): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Ps.120.5, Isa.66.19, Ezek.27.13; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "a5f9092",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a5f9092/meshech",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a5f9092.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Ps.120.5",
+    "Isa.66.19",
+    "Ezek.27.13",
+    "Ezek.32.26"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a5f9092/meshech"
+    }
+  ],
+  "related": [
+    "meshech",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

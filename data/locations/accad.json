@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "accad",
+  "type": "location",
+  "title": "Accad (Akkad)",
+  "location_type": "settlement",
+  "summary": "One of the cities of the beginning of Nimrod's kingdom in the land of Shinar (Gen 10:10).",
+  "lat": 33.025556,
+  "lng": 44.391944,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Tell Sheshubar (modern)); representative point 44.391944,33.025556 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 25,
+    "basis": "OpenBible.info: \"Tell Sheshubar (modern): 25% confidence\" (page fetched 2026-10-17). OpenBible rates this identification only 25% (Tell Sheshubar (modern)); treat the map pin as tentative."
+  },
+  "openbible_id": "a8b7a6b",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a8b7a6b/accad",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a8b7a6b.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.10"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a8b7a6b/accad"
+    }
+  ],
+  "related": [
+    "nimrod",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

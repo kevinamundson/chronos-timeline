@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-ashkenaz",
+  "type": "location",
+  "title": "Ashkenaz (land)",
+  "location_type": "region",
+  "summary": "Kingdom of Ashkenaz (Jer 51:27).",
+  "lat": 44.94278,
+  "lng": 34.12056,
+  "coordinate_basis": "OpenBible.info first-ranked identification (another name for Scythia (ancient)); representative point 34.120560,44.942780 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"another name for Scythia (ancient): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Jer.51.27; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "aec9225",
+  "openbible_url": "https://www.openbible.info/geo/ancient/aec9225/ashkenaz",
+  "openbible_geojson": "https://a.openbible.info/geo/data/aec9225.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Jer.51.27"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/aec9225/ashkenaz"
+    }
+  ],
+  "related": [
+    "ashkenaz",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

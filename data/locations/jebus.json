@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "jebus",
+  "type": "location",
+  "title": "Jebus (Jerusalem)",
+  "location_type": "settlement",
+  "summary": "City of the Jebusites (Gen 10:16; Judg 19:10).",
+  "lat": 31.776667,
+  "lng": 35.234167,
+  "coordinate_basis": "OpenBible.info first-ranked identification (another name for Jerusalem (ancient)); representative point 35.234167,31.776667 (lon,lat).",
+  "certainty": {
+    "level": "high",
+    "percent": 85,
+    "basis": "OpenBible.info: \"another name for Jerusalem (ancient): 85% confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Josh.15.8, Josh.18.16, Josh.18.28; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "a403c45",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a403c45/jebus",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a403c45.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Josh.15.8",
+    "Josh.18.16",
+    "Josh.18.28",
+    "Judg.19.10"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a403c45/jebus"
+    }
+  ],
+  "related": [
+    "jebusite"
+  ],
+  "maps": []
+}

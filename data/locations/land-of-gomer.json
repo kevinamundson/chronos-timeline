@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-gomer",
+  "type": "location",
+  "title": "Gomer (land)",
+  "location_type": "region",
+  "summary": "Land of the people of Gomer (Ezek 38:6).",
+  "lat": 39.0,
+  "lng": 32.0,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Asia Minor (modern)); representative point 32.000000,39.000000 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Asia Minor (modern): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Ezek.38.6; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "a80bf37",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a80bf37/gomer",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a80bf37.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Ezek.38.6"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a80bf37/gomer"
+    }
+  ],
+  "related": [
+    "gomer",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

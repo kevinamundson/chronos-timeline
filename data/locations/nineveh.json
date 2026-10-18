@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "nineveh",
+  "type": "location",
+  "title": "Nineveh",
+  "location_type": "settlement",
+  "summary": "City built by Nimrod (or Asshur; Gen 10:11, KJV \"Out of that land went forth Asshur, and builded Nineveh\").",
+  "lat": 36.3594,
+  "lng": 43.1528,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Nineveh (modern)); representative point 43.152800,36.359400 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Nineveh (modern): very high confidence\" (page fetched 2026-10-17)."
+  },
+  "openbible_id": "a70fd5d",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a70fd5d/nineveh",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a70fd5d.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.11",
+    "Gen.10.12"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a70fd5d/nineveh"
+    }
+  ],
+  "related": [
+    "nimrod",
+    "asshur",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

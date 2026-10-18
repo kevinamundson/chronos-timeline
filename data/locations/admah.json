@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "admah",
+  "type": "location",
+  "title": "Admah",
+  "location_type": "settlement",
+  "summary": "Boundary point of the Canaanites (Gen 10:19).",
+  "lat": 31.20849,
+  "lng": 35.449223,
+  "coordinate_basis": "OpenBible.info first-ranked identification (in the Valley of Siddim (ancient)); representative point 35.449223,31.208490 (lon,lat).",
+  "certainty": {
+    "level": "medium",
+    "percent": 55,
+    "basis": "OpenBible.info: \"in the Valley of Siddim (ancient): 55% confidence\" (page fetched 2026-10-17)."
+  },
+  "openbible_id": "a41a054",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a41a054/admah",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a41a054.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Gen.10.19"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a41a054/admah"
+    }
+  ],
+  "related": [
+    "canaan-son-of-ham",
+    "final-territorial-division"
+  ],
+  "maps": [
+    "openbible-genesis-places"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-kittim",
+  "type": "location",
+  "title": "Kittim (Cyprus)",
+  "location_type": "island",
+  "summary": "Kittim / Chittim (Num 24:24; Dan 11:30).",
+  "lat": 35.0,
+  "lng": 33.0,
+  "coordinate_basis": "OpenBible.info first-ranked identification (another name for Cyprus (ancient)); representative point 33.000000,35.000000 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"another name for Cyprus (ancient): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Num.24.24, Dan.11.30; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "aeb46a8",
+  "openbible_url": "https://www.openbible.info/geo/ancient/aeb46a8/kittim",
+  "openbible_geojson": "https://a.openbible.info/geo/data/aeb46a8.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Num.24.24",
+    "Dan.11.30"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/aeb46a8/kittim"
+    }
+  ],
+  "related": [
+    "kittim"
+  ],
+  "maps": []
+}

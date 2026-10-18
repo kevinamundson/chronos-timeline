@@ -15,7 +15,7 @@
     "chronology": "cfah",
     "note": "No tier 1-4 dates Nimrod's birth; unsorted (null)."
   },
-  "father": null,
+  "father": "cush",
   "children": [],
   "dates": {
     "birth": [
@@ -117,7 +117,15 @@
   "related": [
     "founding-of-babel",
     "dispersion",
-    "babel"
+    "babel",
+    "cush",
+    "accad",
+    "erech",
+    "calneh",
+    "nineveh",
+    "calah",
+    "rehoboth-ir",
+    "assyria"
   ],
   "events": [
     "founding-of-babel",

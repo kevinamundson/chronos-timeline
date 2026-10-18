@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-sheba",
+  "type": "location",
+  "title": "Sheba (land)",
+  "location_type": "region",
+  "summary": "Kingdom of Sheba (1 Kgs 10:1).",
+  "lat": 15.348333,
+  "lng": 44.206389,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Sheba (modern)); representative point 44.206389,15.348333 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Sheba (modern): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in 1Kgs.10.1, 1Kgs.10.4, 1Kgs.10.10; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "a81ab85",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a81ab85/sheba-1",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a81ab85.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "1Kgs.10.1",
+    "1Kgs.10.4",
+    "1Kgs.10.10",
+    "1Kgs.10.13"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a81ab85/sheba-1"
+    }
+  ],
+  "related": [
+    "sheba-son-of-raamah",
+    "sheba-son-of-joktan",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

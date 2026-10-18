@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-magog",
+  "type": "location",
+  "title": "Magog (land)",
+  "location_type": "region",
+  "summary": "Land of Magog (Ezek 38:2).",
+  "lat": 38.488333,
+  "lng": 28.040278,
+  "coordinate_basis": "OpenBible.info first-ranked identification (another name for Lydia (ancient)); representative point 28.040278,38.488333 (lon,lat).",
+  "certainty": {
+    "level": "low",
+    "percent": 40,
+    "basis": "OpenBible.info: \"another name for Lydia (ancient): 40% confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Ezek.38.2, Ezek.39.6, Rev.20.8; linking it to the Gen 10 person/people is by name only. OpenBible rates this identification only 40% (another name for Lydia (ancient)); treat the map pin as tentative."
+  },
+  "openbible_id": "ae3d487",
+  "openbible_url": "https://www.openbible.info/geo/ancient/ae3d487/magog",
+  "openbible_geojson": "https://a.openbible.info/geo/data/ae3d487.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Ezek.38.2",
+    "Ezek.39.6",
+    "Rev.20.8"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ae3d487/magog"
+    }
+  ],
+  "related": [
+    "magog",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

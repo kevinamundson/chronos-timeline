@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "land-of-javan",
+  "type": "location",
+  "title": "Javan (Ionia/Greece)",
+  "location_type": "region",
+  "summary": "Land of Javan (Isa 66:19; Ezek 27:13).",
+  "lat": 38.2,
+  "lng": 27.5,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Ionia (modern)); representative point 27.500000,38.200000 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Ionia (modern): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Isa.66.19, Ezek.27.13; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "a116c5c",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a116c5c/javan",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a116c5c.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Isa.66.19",
+    "Ezek.27.13"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a116c5c/javan"
+    }
+  ],
+  "related": [
+    "javan",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "media",
+  "type": "location",
+  "title": "Media (Madai)",
+  "location_type": "region",
+  "summary": "Land of the Medes, the people of Madai (2 Kgs 17:6).",
+  "lat": 34.8065,
+  "lng": 48.516247,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Media (ancient)); representative point 48.516247,34.806500 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Media (ancient): very high confidence\" (page fetched 2026-10-17). The OpenBible entry is for the place named in Ezra.6.2, Esth.1.3, Esth.1.14; linking it to the Gen 10 person/people is by name only."
+  },
+  "openbible_id": "ad2fadf",
+  "openbible_url": "https://www.openbible.info/geo/ancient/ad2fadf/media",
+  "openbible_geojson": "https://a.openbible.info/geo/data/ad2fadf.geojson",
+  "wikidata": null,
+  "scripture_refs": [
+    "Ezra.6.2",
+    "Esth.1.3",
+    "Esth.1.14",
+    "Esth.1.18"
+  ],
+  "sources": [
+    "openbible-geo",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/ad2fadf/media"
+    }
+  ],
+  "related": [
+    "madai",
+    "final-territorial-division"
+  ],
+  "maps": []
+}

@@ -12,7 +12,15 @@
     "note": "Tier 4: Ussher, Annals: 1556 AM, 2448 BC (no higher-tier year available)."
   },
   "father": "noah",
-  "children": [],
+  "children": [
+    "gomer",
+    "magog",
+    "madai",
+    "javan",
+    "tubal",
+    "meshech",
+    "tiras"
+  ],
   "dates": {
     "birth": [
       {
@@ -121,7 +129,15 @@
   "related": [
     "noah",
     "shem",
-    "ham"
+    "ham",
+    "gomer",
+    "magog",
+    "madai",
+    "javan",
+    "tubal",
+    "meshech",
+    "tiras",
+    "final-territorial-division"
   ],
   "events": [
     "the-flood",
