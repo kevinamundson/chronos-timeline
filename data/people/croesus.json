@@ -1,0 +1,116 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "croesus",
+  "type": "person",
+  "title": "Croesus",
+  "summary": "Last king of Lydia; Sardis fell to Cyrus after his 14-year reign (Herodotus 1.6–91).",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": "alyattes",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“Croesus, his son, who was thirty-five years old, succeeded to the throne”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.26 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 10 (PDF p. 12)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Croesus%2C%20his%20son%2C%20who%20was%20thirty%2Dfive%20years%20old",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Croesus's age at accession."
+      },
+      {
+        "source": "herodotus",
+        "date": "“He learnt that Cyrus, the son of Cambyses, had destroyed the empire of Astyages, the son of Cyaxares”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.46 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 18 (PDF p. 20)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=He%20learnt%20that%20Cyrus%2C%20the%20son%20of%20Cambyses",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Synchronism: the fall of Astyages comes during Croesus's reign, after his two years of mourning for his son (1.46). With CFAH AP-7 (Era of Cyrus 560/559 BC) the fall of Astyages, and so part of Croesus's reign, would fall about 560 BC; Herodotus gives no year."
+      },
+      {
+        "source": "herodotus",
+        "date": "“after having reigned fourteen years, and been besieged in his capital fourteen days”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.86 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 39 (PDF p. 41)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=after%20having%20reigned%20fourteen%20years%2C%20and%20been%20besieged",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Sardis taken by the Persians; end of the Lydian kingdom. No CFAH, Ussher–Jones or Ussher year for the fall of Sardis is in the data, so nothing is derived."
+      },
+      {
+        "source": "herodotus",
+        "date": "“Apollo delayed the taking of Sardis three full years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.91 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 42 (PDF p. 44)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Apollo%20delayed%20the%20taking%20of%20Sardis%20three%20full",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Delphic answer: Croesus was captured three years later than fated."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [
+    "cyrus-the-great",
+    "astyages"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "cheops",
+  "type": "person",
+  "title": "Cheops",
+  "alt_names": [
+    "Khufu"
+  ],
+  "summary": "Egyptian king who in Herodotus closed the temples and built the Great Pyramid (2.124–127); Khufu.",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“Cheops reigned, the Egyptians said, fifty years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 2.127 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 150 (PDF p. 152)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=Cheops%20reigned%2C%20the%20Egyptians%20said%2C%20fifty%20years",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "great-pyramid-of-giza"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [
+    "chephren",
+    "mycerinus"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    }
+  ]
+}

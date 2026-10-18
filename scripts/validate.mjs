@@ -199,6 +199,22 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
     }
   }
 }
+// Herodotus (The Histories, tr. Rawlinson): secondary display chronology; never sets the sort, never carries a BC year.
+{
+  const her = chronDoc.chronologies.find((c) => c.id === 'herodotus');
+  if (her && (her.primary || !/SECONDARY DISPLAY/.test(her.description))) err('data/chronologies.json', 'herodotus must be a non-primary SECONDARY DISPLAY chronology');
+  const HER_SRC = new Set(srcDoc.sources.filter((s) => /^herodotus-/.test(s.id)).map((s) => s.id));
+  for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'herodotus' || doc.sorting_basis?.derived_from === 'herodotus') err(rel, 'herodotus may never set the sort');
+  for (const { rel, doc } of Object.values(records)) {
+    for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'herodotus')) {
+      if (e.year_bc_ad != null || e.year_bc_ad_end != null || e.year_am != null) err(rel, 'herodotus entries record Herodotus\'s own words only: year_bc_ad/year_am must be null (put derived years in the note, labelled DERIVED)');
+      if (!HER_SRC.has(e.source_text_id)) err(rel, `herodotus entry needs source_text_id of a herodotus-* source, got "${e.source_text_id}"`);
+      if (!/Histories \d\.\d+/.test(e.citation || '') || !/PDF p\. \d+/.test(e.citation || '')) err(rel, 'herodotus entry needs a "Histories B.C" and "PDF p. N" citation');
+      if (!(e.link || '').startsWith('https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_')) err(rel, 'herodotus entry link must point at the public-domain Wikisource text');
+    }
+    for (const l of doc.free_source_links || []) { const s = srcDoc.sources.find((x) => x.id === l.source_id); if (s?.access === 'private-copy') err(rel, `private copy ${s.id} may not be listed in free_source_links`); }
+  }
+}
 for (const { rel, doc } of sortingTargets) if (['jordan', 'jordan-compilation'].some((j) => doc.sorting_basis?.chronology === j || doc.sorting_basis?.derived_from === j)) err(rel, 'sorting_basis may not use a secondary Jordan chronology');
 
 // Masoretic Genesis 5 cross-check (KJV/MT figures: [id, age at named son, lifespan])

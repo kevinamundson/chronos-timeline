@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "ecbatana",
+  "type": "location",
+  "title": "Ecbatana (Achmetha)",
+  "location_type": "settlement",
+  "summary": "Median capital built under Deioces (Herodotus \"Agbatana\", 1.98); Achmetha of Ezra 6:2.",
+  "lat": 34.8065,
+  "lng": 48.516247,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Tell Hagmatana (modern)); representative point 48.516247,34.806500 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Tell Hagmatana (modern): very high confidence\" (page fetched 2026-10-18)."
+  },
+  "openbible_id": "a212ef7",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a212ef7/ecbatana",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a212ef7.geojson",
+  "wikidata": "Q696193",
+  "scripture_refs": [
+    "Ezra.6.2"
+  ],
+  "sources": [
+    "openbible-geo",
+    "blb-biblehub",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a212ef7/ecbatana"
+    }
+  ],
+  "related": [
+    "deioces",
+    "astyages"
+  ],
+  "maps": []
+}

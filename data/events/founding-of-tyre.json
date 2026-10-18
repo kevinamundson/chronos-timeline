@@ -33,6 +33,17 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "A few years after Sidon's defeat in Gideon's time; p. 292 prints \"1250 BC\"."
+    },
+    {
+      "source": "herodotus",
+      "date": "“the foundation of the city took place two thousand three hundred years ago”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.44 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 115 (PDF p. 117)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=the%20foundation%20of%20the%20city%20took%20place%20two",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Priests of Melqart (\"Hercules\") at Tyre: the temple was as old as the city. DERIVED (not Herodotus's figure): 450 BC + 2,300 = about 2750 BC. Anchor: CFAH-3 dates Herodotus's visit to Egypt to 450 B.C. (section \"Conflicting Information: Herodotus Nine Centuries Below Moeris\"; AP-21). CONFLICT: about 400 years before the Flood (2348/2347 BC, CFAH AP-29), and about 1,500 years before Generations' founding of Tyre (about 1250 BC, provisional)."
     }
   ],
   "people": [],
@@ -40,10 +51,18 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [
     "alexander-destroys-tyre"
   ],
-  "free_source_links": []
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    }
+  ]
 }

@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "deioces",
+  "type": "person",
+  "title": "Deioces",
+  "summary": "First king of the Medes in Herodotus (1.96–102); CFAH-5 AP-32 dates him 710/709 BC.",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": null,
+  "children": [
+    "phraortes"
+  ],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“Having reigned three-and-fifty years, Deioces was at his death succeeded by his son Phraortes.”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.102 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 47 (PDF p. 49)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Having%20reigned%20three%2Dand%2Dfifty%20years%2C%20Deioces%20was%20at%20his",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "DERIVED (not Herodotus's figure): CFAH AP-32 (710/709 BC) − 53 = 657/656 BC for the death of Deioces. Generations (2nd ed.) prints Deioces 712–675 BC (37 years); Herodotus gives 53."
+      }
+    ]
+  },
+  "events": [
+    "median-kingdom-under-deioces"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
+    }
+  ]
+}

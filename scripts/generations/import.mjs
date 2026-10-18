@@ -42,7 +42,11 @@ const sortGen = (list) => list.sort((a, b) => (a.source === 'generations' && b.s
 
 function resort(doc) {
   const entries = doc.type === 'event' ? doc.chronologies : (doc.dates.birth || []);
-  if (tierOf(entries)) return; // tiers 1-4 own the sort; never touched here
+  const t = tierOf(entries);
+  if (t) { // tiers 1-4 own the sort; a record rebuilt here keeps the sort its tier entry gives (e.g. a CFAH anchor added by another import)
+    if (doc.sorting_basis?.tier !== t.tier || doc.sorting_year !== t.y) { const e = entries.find((x) => x.year_bc_ad === t.y && x.source === t.chron); const ap = e?.citation?.match(/AP-\d+/)?.[0]; doc.sorting_year = t.y; doc.sorting_basis = { tier: t.tier, tier_rank: t.rank, chronology: t.chron, note: t.tier === 'cfah-anchor' ? `Tier 1: CFAH anchor point: ${e.date}${ap ? ` (${ap})` : ''}` : `Tier ${t.rank}: ${e?.date}` }; }
+    return;
+  }
   const b = doc.sorting_basis;
   if (b?.tier === 'derived') return;
   // superseded entries (an older edition replaced by a newer one) never set the provisional sort
@@ -56,6 +60,12 @@ function resort(doc) {
   } else throw new Error(`${doc.id}: event with no dated entry at all`);
 }
 
+// Other imports (e.g. Herodotus) may add entries, a dated CFAH anchor and links to records this import created:
+// rebuilding a record keeps them (only this import's own fields are replaced).
+const keepCfah = (list) => list?.find((e) => e.source === 'cfah' && e.date) || CFAH_NULL();
+const keepOther = (list) => (list || []).filter((e) => e.source !== 'generations' && e.source !== 'cfah');
+const merge = (a, b) => [...new Set([...(a || []), ...(b || [])])];
+const CFAH_DESC = ' Sorted by the CFAH anchor point cited below (added by the Herodotus import); the Generations dates are display only.';
 const extractRows = {};
 // Records created in this run, by any book: a later book merges into them instead of replacing them.
 const runCreated = new Set();
@@ -81,8 +91,9 @@ for (const key of keys) {
     const old = recs[id]?.doc;
     const doc = { $schema: '../../schema/person.schema.json', id, type: 'person', title: p.title, ...(p.alt ? { alt_names: p.alt } : {}), summary: p.summary,
       description: `${MARK} (${book.short}). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.`,
-      sorting_year: null, sorting_basis: { tier: 'none', tier_rank: null, chronology: 'cfah', note: '' }, father: null, children: [], dates: { birth: [CFAH_NULL(), ...(old?.dates.birth?.filter((e) => e.source === 'generations') || [])], death: [CFAH_NULL(), ...(old?.dates.death?.filter((e) => e.source === 'generations') || [])] },
-      events: [], scripture_refs: p.refs || [], sources: [...new Set([...(old?.sources || []), book.id])], related: p.related || [] };
+      sorting_year: null, sorting_basis: { tier: 'none', tier_rank: null, chronology: 'cfah', note: '' }, father: null, children: [], dates: { birth: [keepCfah(old?.dates.birth), ...(old?.dates.birth?.filter((e) => e.source === 'generations') || []), ...keepOther(old?.dates.birth)], death: [keepCfah(old?.dates.death), ...(old?.dates.death?.filter((e) => e.source === 'generations') || []), ...keepOther(old?.dates.death)] },
+      events: old?.events || [], scripture_refs: merge(p.refs, old?.scripture_refs), sources: [...new Set([...(old?.sources || []), book.id])], related: merge(p.related, old?.related) };
+    if (old) { for (const [k, v] of Object.entries(old.dates)) if (!doc.dates[k]) doc.dates[k] = v; if (old.father) doc.father = old.father; doc.children = old.children || []; if (old.free_source_links) doc.free_source_links = old.free_source_links; }
     recs[id] = { dir: 'people', doc, dirty: true }; created.add(id);
   }
   for (const [id, e] of Object.entries(cur.events || {})) {
@@ -90,9 +101,9 @@ for (const key of keys) {
     if (recs[id] && !recs[id].doc.description?.startsWith(MARK)) continue;
     const old = recs[id]?.doc;
     const doc = { $schema: '../../schema/event.schema.json', id, type: 'event', title: e.title, summary: e.summary || e.title,
-      description: `${MARK} (${book.short}). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.`,
-      sorting_year: 1, sorting_basis: { tier: 'none', tier_rank: null, chronology: 'cfah', note: '' }, chronologies: [CFAH_NULL(), ...(old?.chronologies?.filter((c) => c.source === 'generations') || [])],
-      people: e.people || [], locations: e.loc || [], maps: [], scripture_refs: e.refs || [], sources: [...new Set([...(old?.sources || []), book.id])], related: e.related || [],
+      description: `${MARK} (${book.short}).${old?.chronologies?.some((c) => c.source === 'cfah' && c.date) ? CFAH_DESC : ' Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.'}`,
+      sorting_year: 1, sorting_basis: { tier: 'none', tier_rank: null, chronology: 'cfah', note: '' }, chronologies: [keepCfah(old?.chronologies), ...(old?.chronologies?.filter((c) => c.source === 'generations') || []), ...keepOther(old?.chronologies)],
+      people: merge(e.people, old?.people), locations: merge(e.loc, old?.locations), maps: old?.maps || [], scripture_refs: merge(e.refs, old?.scripture_refs), sources: [...new Set([...(old?.sources || []), book.id])], related: merge(e.related, old?.related),
       free_source_links: book.private ? [] : [{ source_id: book.id, url: book.url, locator: book.short }] };
     if (old) for (const s of old.free_source_links || []) if (!doc.free_source_links.some((x) => x.source_id === s.source_id)) doc.free_source_links.push(s);
     recs[id] = { dir: 'events', doc, dirty: true }; created.add(id);
@@ -178,7 +189,8 @@ for (const nb of BOOKS.filter((b) => b.supersedes && keys.includes(b.key))) {
 for (const [id, r] of Object.entries(recs)) if (r.doc.type === 'person' && r.doc.description?.startsWith(MARK)) {
   r.doc.events = Object.values(recs).filter((x) => x.doc.type === 'event' && x.doc.people.includes(id)).map((x) => x.doc.id).sort(); save(id);
 }
-for (const [id, r] of Object.entries(recs)) if (r.dirty) { if (r.doc.type !== 'location') resort(r.doc); writeFileSync(join(DATA, r.dir, `${id}.json`), JSON.stringify(r.doc, null, 2) + '\n'); }
+const herodotusLast = (l) => { const h = l.filter((e) => e.source === 'herodotus'); if (h.length) { const o = l.filter((e) => e.source !== 'herodotus'); l.splice(0, l.length, ...o, ...h); } };
+for (const [id, r] of Object.entries(recs)) if (r.dirty) { if (r.doc.type === 'event') herodotusLast(r.doc.chronologies); if (r.doc.type === 'person') Object.values(r.doc.dates).forEach(herodotusLast); if (r.doc.type !== 'location') resort(r.doc); writeFileSync(join(DATA, r.dir, `${id}.json`), JSON.stringify(r.doc, null, 2) + '\n'); }
 
 // cross-book check (after every book is loaded): other Generations books that print a different year for the same record/slot
 for (const rows of Object.values(extractRows)) for (const r of rows) {

@@ -1,0 +1,82 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "apries",
+  "type": "person",
+  "title": "Apries",
+  "summary": "King of Egypt, son of Psammis, overthrown by Amasis (Herodotus 2.161–169); the Pharaoh-hophra of Jeremiah 44:30.",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": "psammis",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“The length of his reign was twenty-five years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 2.161 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 167 (PDF p. 169)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=The%20length%20of%20his%20reign%20was%20twenty%2Dfive%20years",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Apries attacked Sidon and fought the king of Tyre at sea. DERIVED (not Herodotus's figure): about 595/594–570/569 BC (anchor CFAH AP-8 + Amasis 44 + Psammenitus ½). Consistent: Generations dates the fall of Jerusalem to 586 BC (provisional), inside the derived reign of Pharaoh-hophra (Jer 44:30)."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [
+    "Jer.44.30"
+  ],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    }
+  ]
+}

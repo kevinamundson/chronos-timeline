@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "astyages",
+  "type": "person",
+  "title": "Astyages",
+  "summary": "Last king of the Medes, son of Cyaxares, deposed by Cyrus (Herodotus 1.107–130).",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": "cyaxares",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“after a reign of thirty-five years, Astyages lost his crown”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.130 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 60 (PDF p. 62)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=after%20a%20reign%20of%20thirty%2Dfive%20years%2C%20Astyages%20lost",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "DERIVED (not Herodotus's figure): 595/594 BC − 35 = 560/559 BC, the CFAH Era of Cyrus (AP-7). Total Deioces→Astyages' fall = 53 + 22 + 40 + 35 = 150 years (CFAH-5 makes the same sum). Agrees with CFAH AP-7 (560/559 BC). Generations (provisional) dates Cyrus's founding of the Medo-Persian empire to 550 BC, 10 years later; CFAH-5 explains this as Herodotus counting to Cyrus's coregency (560) and Ctesias to the defeat of Astyages (550)."
+      }
+    ]
+  },
+  "events": [
+    "cyrus-founds-medo-persian-empire",
+    "era-of-cyrus"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [
+    "cyrus-the-great"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
+    }
+  ]
+}

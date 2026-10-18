@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "pelusium",
+  "type": "location",
+  "title": "Pelusium (Sin)",
+  "location_type": "settlement",
+  "summary": "Fortress at Egypt's eastern entrance where Sethos faced Sanacharib (Herodotus 2.141) and Cambyses defeated Psammenitus (3.10–12); Sin of Ezekiel 30:15.",
+  "lat": 31.042512,
+  "lng": 32.546139,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Tell el Farama (modern)); representative point 32.546139,31.042512 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Tell el Farama (modern): very high confidence\" (page fetched 2026-10-18)."
+  },
+  "openbible_id": "aa32a17",
+  "openbible_url": "https://www.openbible.info/geo/ancient/aa32a17/pelusium",
+  "openbible_geojson": "https://a.openbible.info/geo/data/aa32a17.geojson",
+  "wikidata": "Q1145715",
+  "scripture_refs": [
+    "Ezek.30.15",
+    "Ezek.30.16"
+  ],
+  "sources": [
+    "openbible-geo",
+    "blb-biblehub",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/aa32a17/pelusium"
+    }
+  ],
+  "related": [
+    "egypt"
+  ],
+  "maps": []
+}

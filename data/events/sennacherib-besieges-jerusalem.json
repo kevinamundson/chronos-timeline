@@ -46,6 +46,17 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Sennacherib prepares to take Jerusalem."
+    },
+    {
+      "source": "herodotus",
+      "date": "“when Sanacharib, king of the Arabians and Assyrians, marched his vast army into Egypt”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.141 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 157 (PDF p. 159)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=when%20Sanacharib%2C%20king%20of%20the%20Arabians%20and%20Assyrians",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Sethos, priest of Vulcan, meets Sanacharib at Pelusium; field-mice gnaw the Assyrian bowstrings. Linked to Sennacherib's campaign of 2 Kings 18–19 (the record's Scripture); the identification is traditional, not stated by Herodotus."
     }
   ],
   "people": [
@@ -58,7 +69,9 @@
   ],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -66,6 +79,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
     }
   ]
 }

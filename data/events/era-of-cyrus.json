@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "era-of-cyrus",
+  "type": "event",
+  "title": "Era of Cyrus: Persian power begins",
+  "summary": "CFAH AP-7: the beginning of the Persian power under Cyrus II (560/559 BC); in Herodotus, Astyages loses the Median crown to Cyrus after 35 years (1.130).",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Sorted by the CFAH anchor point cited below; Herodotus entries are display only.",
+  "sorting_year": -560,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 560/559 BC (AP-7)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "560/559 BC",
+      "year_am": null,
+      "year_bc_ad": -560,
+      "year_bc_ad_end": -559,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-7: Era of Cyrus (Persian Empire): 560/559 B.C.\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "note": "CFAH-3: \"The Persian Empire ended in 330 B.C., thus 230 years yields 560/559 B.C. for the beginning of the Persian power.\" CFAH-5 (AP-32) adds that Herodotus appears to have counted his Median reigns to \"the accession of Cyrus as coregent with his father in 560 B.C.\"",
+      "source_text_id": "cfah-3",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "herodotus",
+      "date": "“after a reign of thirty-five years, Astyages lost his crown”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.130 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 60 (PDF p. 62)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=after%20a%20reign%20of%20thirty%2Dfive%20years%2C%20Astyages%20lost",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "DERIVED (not Herodotus's figure): 595/594 BC − 35 = 560/559 BC, the CFAH Era of Cyrus (AP-7). Total Deioces→Astyages' fall = 53 + 22 + 40 + 35 = 150 years (CFAH-5 makes the same sum). Agrees with CFAH AP-7 (560/559 BC). Generations (provisional) dates Cyrus's founding of the Medo-Persian empire to 550 BC, 10 years later; CFAH-5 explains this as Herodotus counting to Cyrus's coregency (560) and Ctesias to the defeat of Astyages (550)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“Cyrus himself fell, after reigning nine and twenty years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.214 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 94 (PDF p. 96)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Cyrus%20himself%20fell%2C%20after%20reigning%20nine%20and%20twenty",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "DERIVED (not Herodotus's figure): CFAH AP-7 (560/559 BC) − 29 = 531/530 BC for the death of Cyrus. CFAH-3 (AP-8) counts Cyrus 30 years (560 − 30 = 530 for Cambyses' accession), one year more than Herodotus. Generations prints Cyrus 600–530 BC (provisional), 0–1 year from the derived death."
+    }
+  ],
+  "people": [
+    "cyrus-the-great",
+    "astyages"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource",
+    "cfah-3"
+  ],
+  "related": [
+    "cyrus-founds-medo-persian-empire",
+    "median-kingdom-under-deioces"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-7: Era of Cyrus (Persian Empire): 560/559 B.C."
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
+    }
+  ]
+}

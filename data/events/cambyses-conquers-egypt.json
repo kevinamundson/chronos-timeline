@@ -4,24 +4,26 @@
   "type": "event",
   "title": "Cambyses of Persia conquers Egypt",
   "summary": "Cambyses of Persia conquers Egypt",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). Sorted by the CFAH anchor point cited below (added by the Herodotus import); the Generations dates are display only.",
   "sorting_year": -525,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 408): 525 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 525 BC (AP-8)"
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "525 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -525,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-8: Battle of Pelusium: 525 B.C.—Persian Conquest of Egypt\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "note": "CFAH-3: \"The conquest of Egypt at the Battle of Pelusium in May of 525 B.C. occurred in the fifth year of Cambyses’ reign. Subtracting five and thirty years from the Era of Cyrus in 560 B.C. yields 525 B.C.\" (CFAH counts Cyrus 30 years; Herodotus 1.214 gives 29.)",
+      "source_text_id": "cfah-3",
+      "cfah_basis": "anchor_point"
     },
     {
       "source": "generations",
@@ -33,15 +35,69 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Also p. 423."
+    },
+    {
+      "source": "herodotus",
+      "date": "“The above-mentioned Amasis was the Egyptian king against whom Cambyses, son of Cyrus, made his expedition”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 3.1 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 175 (PDF p. 177)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=The%20above%2Dmentioned%20Amasis%20was%20the%20Egyptian%20king%20against",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": null
+    },
+    {
+      "source": "herodotus",
+      "date": "“he had died after ruling Egypt forty and four years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 3.10 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 178 (PDF p. 180)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=he%20had%20died%20after%20ruling%20Egypt%20forty%20and",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Amasis died before Cambyses arrived; Psammenitus his son was king. DERIVED (not Herodotus's figure): 525 BC (CFAH AP-8) + ½ year (Psammenitus) + 44 = about 570/569 BC for Amasis's accession."
+    },
+    {
+      "source": "herodotus",
+      "date": "“whose whole reign had been but six months”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 3.14 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 180 (PDF p. 182)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=whose%20whole%20reign%20had%20been%20but%20six%20months",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Ten days after the fall of Memphis. Consistent with CFAH AP-8 (525 BC), Generations 525 BC."
     }
   ],
-  "people": [],
-  "locations": [],
+  "people": [
+    "cambyses-ii",
+    "psammenitus",
+    "amasis-ii"
+  ],
+  "locations": [
+    "pelusium",
+    "memphis"
+  ],
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cfah-3",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
-  "free_source_links": []
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-8: Battle of Pelusium: 525 B.C.—Persian Conquest of Egypt"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3",
+      "locator": "Book 3 (unnumbered chapters on Wikisource)"
+    }
+  ]
 }

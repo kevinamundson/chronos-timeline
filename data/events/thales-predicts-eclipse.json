@@ -46,17 +46,32 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": null
+    },
+    {
+      "source": "herodotus",
+      "date": "“another combat took place in the sixth year, in the course of which, just as the battle was growing warm, day was on a sudden changed into night”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.74 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 33 (PDF p. 35)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=another%20combat%20took%20place%20in%20the%20sixth%20year",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "The Lydian–Median war of Alyattes and Cyaxares: the eclipse came in its sixth year and \"had been foretold by Thales, the Milesian, who forewarned the Ionians of it, fixing for it the very year in which it actually took place\" (1.74). Peace was sealed by Astyages' marriage to Aryenis. DERIVED (not Herodotus's figure): Herodotus gives no year. The battle fell in the reign of Cyaxares, which the CFAH-derived chain puts at 635/634–595/594 BC (AP-7 560/559 + Astyages 35 + Cyaxares 40; see 1.106, 1.130), so no later than 595/594 BC. CONFLICT with the provisional Generations date (\"May 28th, 585 BC\"), about 10 years after the derived end of Cyaxares's reign."
     }
   ],
   "people": [
-    "thales-of-miletus"
+    "thales-of-miletus",
+    "alyattes",
+    "cyaxares"
   ],
   "locations": [],
   "maps": [],
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -64,6 +79,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
     }
   ]
 }

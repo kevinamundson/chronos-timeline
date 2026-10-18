@@ -56,6 +56,17 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Tukulti-Ninurta I takes Babylon."
+    },
+    {
+      "source": "herodotus",
+      "date": "“The Assyrians had held the Empire of Upper Asia for the space of five hundred and twenty years, when the Medes set the example of revolt from their authority.”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.95 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 45 (PDF p. 47)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=The%20Assyrians%20had%20held%20the%20Empire%20of%20Upper",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "The Median revolt from Assyria, followed by the rise of Deioces (1.96). DERIVED (not Herodotus's figure): CFAH-5 (AP-32): 1232 B.C. (Semiramis II, CFAH AP-15) − 520 = 712 B.C. ±5 for the accession of Deioces. Derived by CFAH, not by Herodotus. Agrees: CFAH-3 (AP-15) calls Herodotus's 520 years \"the most precise\" of its first four durations from known dates, and CFAH-5 dates Deioces 710/709 BC (AP-32), within its ±5."
     }
   ],
   "people": [],
@@ -67,13 +78,20 @@
   "scripture_refs": [],
   "sources": [
     "blb-biblehub",
-    "cfah-3"
+    "cfah-3",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "free_source_links": [
     {
       "source_id": "cfah-3",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "locator": "section \"AP-15: Semiramis II: 1232/1231 B.C.\"; CFAH-5 \"AP-43: Conclusions for Dynasty 6: 1232–706 B.C.\""
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
     }
   ],
   "related": [

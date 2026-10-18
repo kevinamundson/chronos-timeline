@@ -30,7 +30,8 @@
       "properties": {
         "birth": { "$ref": "common.schema.json#/$defs/chronologyEntries" },
         "death": { "$ref": "common.schema.json#/$defs/chronologyEntries" },
-        "translated": { "$ref": "common.schema.json#/$defs/chronologyEntries" }
+        "translated": { "$ref": "common.schema.json#/$defs/chronologyEntries" },
+        "reign": { "$ref": "common.schema.json#/$defs/chronologyEntries", "description": "Reign (accession, length, end). Display only: never used for sorting, which uses birth." }
       }
     },
     "events": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }

@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "ashdod",
+  "type": "location",
+  "title": "Ashdod (Azotus)",
+  "location_type": "settlement",
+  "summary": "Philistine city that Psammetichus besieged for 29 years (Herodotus 2.157).",
+  "lat": 31.7572,
+  "lng": 34.6578,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Tel Ashdod (modern)); representative point 34.657800,31.757200 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Tel Ashdod (modern): very high confidence\" (page fetched 2026-10-18)."
+  },
+  "openbible_id": "a30c937",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a30c937/ashdod",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a30c937.geojson",
+  "wikidata": "Q171639",
+  "scripture_refs": [
+    "Josh.11.22",
+    "Isa.20.1",
+    "Acts.8.40"
+  ],
+  "sources": [
+    "openbible-geo",
+    "blb-biblehub",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a30c937/ashdod"
+    }
+  ],
+  "related": [
+    "psammetichus-i"
+  ],
+  "maps": []
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "psammenitus",
+  "type": "person",
+  "title": "Psammenitus",
+  "summary": "King of Egypt for six months, son of Amasis, defeated by Cambyses (Herodotus 3.10–15).",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": "amasis-ii",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“whose whole reign had been but six months”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 3.14 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 180 (PDF p. 182)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=whose%20whole%20reign%20had%20been%20but%20six%20months",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Ten days after the fall of Memphis. Consistent with CFAH AP-8 (525 BC), Generations 525 BC."
+      }
+    ]
+  },
+  "events": [
+    "cambyses-conquers-egypt"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3",
+      "locator": "Book 3 (unnumbered chapters on Wikisource)"
+    }
+  ]
+}

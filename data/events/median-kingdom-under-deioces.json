@@ -4,24 +4,27 @@
   "type": "event",
   "title": "Deioces rules the Medes",
   "summary": "Deioces rules the Medes",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -712,
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Sorted by the CFAH anchor point cited below (added by the Herodotus import); the Generations dates are display only.",
+  "sorting_year": -710,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 520): 712–675 B. Pending owner decision (open question A8)."
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 710/709 BC (AP-32)"
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "710/709 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -710,
+      "year_bc_ad_end": -709,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-32: Deioces the Mede: 710/709 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "note": "CFAH-5 derives the date from Herodotus: 1232 B.C. (Semiramis II) minus Herodotus's 520 years (I.95) gives \"712 B.C. ±5 years for the accession of Deioces\"; counting Herodotus's Median reigns (I.102–130) back from 560 B.C. gives \"710 B.C. ±2 years\". \"The best fit for all this information is Deioces starting to reign between 711 and 708 B.C.\"",
+      "source_text_id": "cfah-5",
+      "cfah_basis": "anchor_point"
     },
     {
       "source": "generations",
@@ -48,15 +51,66 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Printed \"(712–675 B)\" (the C is missing)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“The Assyrians had held the Empire of Upper Asia for the space of five hundred and twenty years, when the Medes set the example of revolt from their authority.”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.95 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 45 (PDF p. 47)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=The%20Assyrians%20had%20held%20the%20Empire%20of%20Upper",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "The Median revolt from Assyria, followed by the rise of Deioces (1.96). DERIVED (not Herodotus's figure): CFAH-5 (AP-32): 1232 B.C. (Semiramis II, CFAH AP-15) − 520 = 712 B.C. ±5 for the accession of Deioces. Derived by CFAH, not by Herodotus. Agrees: CFAH-3 (AP-15) calls Herodotus's 520 years \"the most precise\" of its first four durations from known dates, and CFAH-5 dates Deioces 710/709 BC (AP-32), within its ±5."
+    },
+    {
+      "source": "herodotus",
+      "date": "“built the city now called Agbatana”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.98 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 46 (PDF p. 48)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=built%20the%20city%20now%20called%20Agbatana",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Deioces has the Medes build Ecbatana as his capital."
+    },
+    {
+      "source": "herodotus",
+      "date": "“Having reigned three-and-fifty years, Deioces was at his death succeeded by his son Phraortes.”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.102 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 47 (PDF p. 49)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Having%20reigned%20three%2Dand%2Dfifty%20years%2C%20Deioces%20was%20at%20his",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "DERIVED (not Herodotus's figure): CFAH AP-32 (710/709 BC) − 53 = 657/656 BC for the death of Deioces. Generations (2nd ed.) prints Deioces 712–675 BC (37 years); Herodotus gives 53."
+    },
+    {
+      "source": "herodotus",
+      "date": "“Their empire over the parts of Asia beyond the Halys had lasted one hundred and twenty-eight years, except during the time when the Scythians had the dominion.”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.130 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 60 (PDF p. 62)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Their%20empire%20over%20the%20parts%20of%20Asia%20beyond",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Herodotus's own total for the Median empire. DERIVED (not Herodotus's figure): Internal check (our arithmetic): 128 + 28 (Scythians) = 156 years, but the reigns of 1.102–130 sum to 150 with the 28 Scythian years inside Cyaxares's 40 (1.106), or 122 without them. Herodotus's total and his reign lengths differ by 6 years."
     }
   ],
-  "people": [],
-  "locations": [],
+  "people": [
+    "deioces"
+  ],
+  "locations": [
+    "ecbatana"
+  ],
   "maps": [],
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cfah-5",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -64,6 +118,16 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "AP-32: Deioces the Mede: 710/709 B.C."
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
     }
   ]
 }

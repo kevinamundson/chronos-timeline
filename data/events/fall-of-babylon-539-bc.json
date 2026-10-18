@@ -46,6 +46,28 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Belshazzar is co-regent (no year printed for his appointment)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“with the first approach of the ensuing spring, marched forward against Babylon”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.190 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 84 (PDF p. 86)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=with%20the%20first%20approach%20of%20the%20ensuing%20spring",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Cyrus lost a whole summer at the Gyndes and marched on Babylon the next spring."
+    },
+    {
+      "source": "herodotus",
+      "date": "“Such, then, were the circumstances of the first taking of Babylon.”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.191 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 85 (PDF p. 87)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Such%2C%20then%2C%20were%20the%20circumstances%20of%20the%20first",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Cyrus takes Babylon by diverting the Euphrates; the \"second\" taking is by Darius (3.159). Herodotus gives no year; Generations dates it 539 BC (provisional)."
     }
   ],
   "people": [
@@ -58,7 +80,9 @@
   ],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -66,6 +90,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
     }
   ]
 }

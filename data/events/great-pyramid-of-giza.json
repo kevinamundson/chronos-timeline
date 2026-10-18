@@ -58,16 +58,64 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Sole reign of Cheops, about 322 years after the Tower of Babel."
+    },
+    {
+      "source": "herodotus",
+      "date": "“after him Cheops succeeded to the throne”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.124 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 149 (PDF p. 151)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=after%20him%20Cheops%20succeeded%20to%20the%20throne",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Cheops follows Rhampsinitus, who followed Proteus (2.121). CONFLICT in sequence: Herodotus puts the pyramid builders after Proteus, the contemporary of the Trojan War (CFAH AP-12, 1184/1183 BC). CFAH-6 places Khufu near Abraham's visit (1921 BC), Generations dates the Great Pyramid about 2258 BC (Taking Africa for Jesus; the provisional sort) and 1923–1903 BC (Preparing, 2nd ed.)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“The pyramid itself was twenty years in building.”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.124 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 149 (PDF p. 151)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=The%20pyramid%20itself%20was%20twenty%20years%20in%20building",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Also ten years for the causeway (2.124)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“Cheops reigned, the Egyptians said, fifty years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.127 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 150 (PDF p. 152)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=Cheops%20reigned%2C%20the%20Egyptians%20said%2C%20fifty%20years",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": null
+    },
+    {
+      "source": "herodotus",
+      "date": "“Thus the affliction of Egypt endured for the space of one hundred and six years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.128 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 151 (PDF p. 153)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=Thus%20the%20affliction%20of%20Egypt%20endured%20for%20the",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "The temples were shut under Cheops and Chephren (50 + 56 = 106). DERIVED (not Herodotus's figure): CFAH-6 uses this figure: \"Counting from Abraham’s visit in 1921 BC, the 106 years comes to 1815 BC.\" Derived by CFAH. CFAH-6 (citing this edition, p. 151) adopts the 106 years."
     }
   ],
-  "people": [],
+  "people": [
+    "cheops"
+  ],
   "locations": [],
   "maps": [],
   "scripture_refs": [],
   "sources": [
     "generations-africa",
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -80,6 +128,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
     }
   ]
 }

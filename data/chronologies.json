@@ -578,6 +578,25 @@
         "generations-preparing"
       ],
       "anchors": []
+    },
+    {
+      "id": "herodotus",
+      "name": "Herodotus, The Histories (tr. George Rawlinson)",
+      "abbreviation": "Herodotus",
+      "primary": false,
+      "sort_priority": 12,
+      "status": "partial",
+      "authors": [
+        "Herodotus",
+        "George Rawlinson (translator)"
+      ],
+      "description": "SECONDARY DISPLAY CHRONOLOGY. It is never a sort tier and never sets or overrides a sort year. Each entry quotes Herodotus's own words (Rawlinson's translation) with Book.chapter and the page of the Roman Roads Media etext (2013), the edition CFAH cites, and links to the same passage in the public-domain Wikisource text. Herodotus gives reign lengths, intervals and synchronisms rather than BC years, so entries carry no BC year. A BC year worked out from his figures appears only in the note, labelled DERIVED, with its arithmetic and its anchor (a CFAH anchor point, or CFAH-3's 450 BC for his visit to Egypt). Agreements and conflicts with CFAH, Ussher and Generations are listed in data/herodotus-dates-extract.md.",
+      "year_conventions": "No year conversion. Entries keep year_bc_ad and year_am null and precision \"unknown\"; the date field is the quoted statement. Derived BC years in notes are marked DERIVED and are never presented as Herodotus's figures.",
+      "references": [
+        "herodotus-rawlinson-roman-roads",
+        "herodotus-rawlinson-wikisource"
+      ],
+      "anchors": []
     }
   ]
 }

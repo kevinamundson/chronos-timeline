@@ -88,11 +88,23 @@
         "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
         "source_text_id": "generations-preparing-2e",
         "note": null
+      },
+      {
+        "source": "herodotus",
+        "date": "“Cyrus himself fell, after reigning nine and twenty years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.214 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 94 (PDF p. 96)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Cyrus%20himself%20fell%2C%20after%20reigning%20nine%20and%20twenty",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "DERIVED (not Herodotus's figure): CFAH AP-7 (560/559 BC) − 29 = 531/530 BC for the death of Cyrus. CFAH-3 (AP-8) counts Cyrus 30 years (560 − 30 = 530 for Cambyses' accession), one year more than Herodotus. Generations prints Cyrus 600–530 BC (provisional), 0–1 year from the derived death."
       }
     ]
   },
   "events": [
     "cyrus-founds-medo-persian-empire",
+    "era-of-cyrus",
     "fall-of-babylon-539-bc"
   ],
   "scripture_refs": [
@@ -100,7 +112,16 @@
   ],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
-  "related": []
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
+    }
+  ]
 }

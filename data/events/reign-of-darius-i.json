@@ -48,15 +48,41 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "\"Darius the Great (522–486 BC)\" on the same page."
+    },
+    {
+      "source": "herodotus",
+      "date": "“In the eighth month, however, it was discovered who he was”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 3.68 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 206 (PDF p. 208)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=In%20the%20eighth%20month%2C%20however%2C%20it%20was%20discovered",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "The Magus is unmasked; the seven conspirators make Darius king (3.68–88)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“Thus was Darius, son of Hystaspes, appointed king”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 3.88 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 216 (PDF p. 218)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=Thus%20was%20Darius%2C%20son%20of%20Hystaspes%2C%20appointed%20king",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "DERIVED (not Herodotus's figure): about 523/522 BC (Cambyses's death) + 7 months = about 522 BC (anchor CFAH AP-7). Consistent with Generations 522 BC (provisional)."
     }
   ],
-  "people": [],
+  "people": [
+    "darius-i"
+  ],
   "locations": [],
   "maps": [],
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -64,6 +90,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3",
+      "locator": "Book 3 (unnumbered chapters on Wikisource)"
     }
   ]
 }

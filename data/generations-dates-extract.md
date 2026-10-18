@@ -1086,7 +1086,7 @@ Kevin Swanson. Generations, 2020. [PDF](https://generationsnew.s3.us-west-2.amaz
 | 539 BC | Babylon falls to the Medes and Persians | 343 (printed 342) | `fall-of-babylon-539-bc` (NEW) | NEW; superseded by the 2nd ed. (2024) ("539 BC", PDF p. 497) | Also p. 345 and the Timeline Reviews (pp. 354, 388). |
 | around 2418 BC to 2200 BC | Awan dynasty of Elam | 358 (printed 357) | `awan-dynasty` (NEW) | NEW; superseded by the 2nd ed. (2024) ("2100 BC to 1477 BC", PDF p. 511) | The first ruling dynasty of Elam after Babel. |
 | Somewhere between 1000 and 600 BC | Zarathustra and the beginning of Zoroastrianism | 359 (printed 358) | `zoroastrianism-begins` (NEW) | NEW; superseded by the 2nd ed. (2024) ("1000 and 600 BC", PDF p. 514) | Timeline Review (p. 66): "Zoroastrianism Born 560 bc". |
-| around 725-675 BC | Deioces rules the Medes | 363 (printed 362) | `median-kingdom-under-deioces` (NEW) | NEW; superseded by the 2nd ed. (2024) ("712–675 B", PDF p. 520) | The first notable king of the Medes. |
+| around 725-675 BC | Deioces rules the Medes | 363 (printed 362) | `median-kingdom-under-deioces` (NEW) | agrees with sort year 710 BC (cfah-anchor); superseded by the 2nd ed. (2024) ("712–675 B", PDF p. 520) | The first notable king of the Medes. |
 | 625-585 BC | Cyaxares rules the Medes | 363 (printed 362) | `reign-of-cyaxares` (NEW) | NEW; superseded by the 2nd ed. (2024) ("625 BC", PDF p. 525) |  |
 | 600-530 bc | Cyrus the Great: birth | 367 (printed 366) | `cyrus-the-great (birth)` (NEW) | NEW; superseded by the 2nd ed. (2024) ("600–530 BC", PDF p. 534) | Heading "Cyrus the Great (600-530 bc)". |
 | 600-530 bc | Cyrus the Great: death | 367 (printed 366) | `cyrus-the-great (death)` (NEW) | NEW; superseded by the 2nd ed. (2024) ("600–530 BC", PDF p. 534) | Heading "Cyrus the Great (600-530 bc)". |
@@ -1100,7 +1100,7 @@ Kevin Swanson. Generations, 2020. [PDF](https://generationsnew.s3.us-west-2.amaz
 | October 1st, 331 BC | Battle of Gaugamela | 427 (printed 426) | `battle-of-gaugamela` (NEW) | NEW; superseded by the 2nd ed. (2024) ("October 1st, 331 BC", PDF p. 597) |  |
 | between 1550 BC and 1100 BC | Mycenaean civilization | 394 (printed 393) | `mycenaean-civilization` (NEW) | NEW; superseded by the 2nd ed. (2024) ("between 1550 BC and 1100 BC", PDF p. 563) | p. 395: it broke down around 1100 BC. |
 | around 800 BC | Homer and the Iliad and Odyssey | 397 (printed 396) | `homer-iliad-odyssey` (NEW) | NEW; superseded by the 2nd ed. (2024) ("around 800 BC", PDF p. 567) | The siege of Troy is placed some 380 years earlier. |
-| 776 BC | First Olympic Games | 395 (printed 394) | `first-olympic-games` (NEW) | NEW; superseded by the 2nd ed. (2024) ("776 BC", PDF p. 565) |  |
+| 776 BC | First Olympic Games | 395 (printed 394) | `first-olympic-games` (NEW) | agrees with sort year 776 BC (cfah-anchor); superseded by the 2nd ed. (2024) ("776 BC", PDF p. 565) |  |
 | around 650 BC | Sparta emerges as a power | 400 (printed 399) | `sparta-emerges` (NEW) | NEW; superseded by the 2nd ed. (2024) ("around 650 BC", PDF p. 569) | At the time of King Lycurgus. |
 | around 620 BC | Law code of Draco in Athens | 403 (printed 402) | `draco-law-code` (NEW) | NEW; superseded by the 2nd ed. (2024) ("around 620 BC", PDF p. 574) |  |
 | 507 BC | Cleisthenes and the first democracy in Athens | 407 (printed 406) | `athenian-democracy` (NEW) | NEW; superseded by the 2nd ed. (2024) ("507 BC", PDF p. 576) |  |
@@ -1326,7 +1326,7 @@ Kevin Swanson; consultant Kenneth Griffith. Generations, 2024. [Private copy](ht
 | 778–713 BC | A king from Napata (Cush) conquers Upper Egypt | 416 (printed 402) | `kushite-conquest-of-egypt` (NEW) | NEW | Reign of Piye of Cush. |
 | 644–578 BC | Reign of Rameses II | 419 (printed 405) | `reign-of-rameses-ii` (NEW) | NEW | Co-regent with his father at 25 in 644 BC. |
 | 670 | Assyrian armies overrun Egypt | 407 (printed 393) | `assyrian-conquest-of-egypt` (NEW) | NEW; differs from Taking Africa for Jesus ("around 650 BC", PDF p. 43) |  |
-| 525 BC | Cambyses of Persia conquers Egypt | 408 (printed 394) | `cambyses-conquers-egypt` (NEW) | NEW | Also p. 423. |
+| 525 BC | Cambyses of Persia conquers Egypt | 408 (printed 394) | `cambyses-conquers-egypt` (NEW) | agrees with sort year 525 BC (cfah-anchor) | Also p. 423. |
 | 332 BC | Alexander the Great takes Egypt | 100 (printed 86) | `alexander-conquers-egypt` (NEW) | NEW; differs from Taking Africa for Jesus ("330 BC", PDF p. 43) |  |
 | 29 BC | Rome takes control of Egypt | 423 (printed 409) | `roman-annexation-of-egypt` (NEW) | NEW; differs from Taking Africa for Jesus ("30 BC", PDF p. 72) | The Ptolemaic dynasty ends with Cleopatra's death. |
 | around 2100 BC | Harappan civilization of the Indus valley | 123 (printed 109) | `harappan-civilization` (NEW) | NEW; differs from Taking Asia for Jesus ("around 2200 BC", PDF p. 27) |  |
@@ -1357,7 +1357,7 @@ Kevin Swanson; consultant Kenneth Griffith. Generations, 2024. [Private copy](ht
 | 539 BC | Babylon falls to the Medes and Persians | 497 (printed 483) | `fall-of-babylon-539-bc` (NEW) | NEW | Belshazzar is co-regent (no year printed for his appointment). |
 | 2100 BC to 1477 BC | Awan dynasty of Elam | 511 (printed 497) | `awan-dynasty` (NEW) | NEW |  |
 | 1000 and 600 BC | Zarathustra and the beginning of Zoroastrianism | 514 (printed 500) | `zoroastrianism-begins` (NEW) | NEW |  |
-| 712–675 B | Deioces rules the Medes | 520 (printed 506) | `median-kingdom-under-deioces` (NEW) | NEW | Printed "(712–675 B)" (the C is missing). |
+| 712–675 B | Deioces rules the Medes | 520 (printed 506) | `median-kingdom-under-deioces` (NEW) | agrees with sort year 710 BC (cfah-anchor) | Printed "(712–675 B)" (the C is missing). |
 | 625 BC | Cyaxares rules the Medes | 525 (printed 511) | `reign-of-cyaxares` (NEW) | NEW | Takes the throne of the Cimmerian-Median Empire. |
 | 600–530 BC | Cyrus the Great: birth | 534 (printed 520) | `cyrus-the-great (birth)` (NEW) | NEW |  |
 | 600–530 BC | Cyrus the Great: death | 534 (printed 520) | `cyrus-the-great (death)` (NEW) | NEW |  |
@@ -1373,7 +1373,7 @@ Kevin Swanson; consultant Kenneth Griffith. Generations, 2024. [Private copy](ht
 | 468 BC | Ezra leads exiles back to Jerusalem | 610 (printed 596) | `ezra-returns-to-jerusalem` (NEW) | NEW |  |
 | 455 BC | Artaxerxes' decree; Nehemiah rebuilds the wall of Jerusalem | 549 (printed 535) | `nehemiah-rebuilds-the-wall` (NEW) | NEW | Artaxerxes' 20th year; p. 610 prints "about 445 BC". |
 | around 800 BC | Homer and the Iliad and Odyssey | 567 (printed 553) | `homer-iliad-odyssey` (NEW) | NEW |  |
-| 776 BC | First Olympic Games | 565 (printed 551) | `first-olympic-games` (NEW) | NEW |  |
+| 776 BC | First Olympic Games | 565 (printed 551) | `first-olympic-games` (NEW) | agrees with sort year 776 BC (cfah-anchor) |  |
 | around 650 BC | Sparta emerges as a power | 569 (printed 555) | `sparta-emerges` (NEW) | NEW |  |
 | around 620 BC | Law code of Draco in Athens | 574 (printed 560) | `draco-law-code` (NEW) | NEW |  |
 | 507 BC | Cleisthenes and the first democracy in Athens | 576 (printed 562) | `athenian-democracy` (NEW) | NEW |  |
@@ -1517,7 +1517,7 @@ Every record (and person date slot) dated by either edition. "Change" compares t
 | Birth of Jesus Christ `birth-of-jesus` | 4 bc/ad 1* (p. 456) | about the year AD 1 (p. 623) | 4 years later (ranges overlap) | — |
 | Julius Caesar crosses the Rubicon `caesar-crosses-the-rubicon` | January 10th, 49 BC (p. 491) | January 10th, 49 BC (p. 660) | same | — |
 | Julius Caesar first lands in Britain `caesar-lands-in-britain` | Between 56 BC and 54 BC (p. 490) | Between 56 and 54 BC (p. 659) | same | — |
-| Cambyses of Persia conquers Egypt `cambyses-conquers-egypt` | — | 525 BC (p. 408) | new in 2nd ed. (2024) | — |
+| Cambyses of Persia conquers Egypt `cambyses-conquers-egypt` | — | 525 BC (p. 408) | new in 2nd ed. (2024) | 525 BC (cfah-anchor) |
 | Chinese history begins (Gomer's line migrates east) `chinese-history-begins` | as early as 2418 BC (p. 257) | — | not in 2nd ed. (2024) | — |
 | Code of Hammurabi `code-of-hammurabi` | 1754 BC (p. 59) | 1031–989 BC (p. 270) | 723 years later | — |
 | Joshua conquers Canaan `conquest-of-canaan` | — | 1450–1443 BC (p. 313) | new in 2nd ed. (2024) | — |
@@ -1560,7 +1560,7 @@ Every record (and person date slot) dated by either edition. "Change" compares t
 | The First Babylonian Empire `first-babylonian-empire` | c. 1728 bc (p. 105) | 1133–851 BC (p. 352) | 595 years later | — |
 | First gladiatorial fight to the death in Rome `first-gladiatorial-games` | 264 bc (p. 506) | around 264 BC (p. 648) | same | — |
 | First historical record of Korea `first-historical-record-of-korea` | 194 BC (p. 276) | 194 bc (p. 464) | same | — |
-| First Olympic Games `first-olympic-games` | 776 BC (p. 395) | 776 BC (p. 565) | same | — |
+| First Olympic Games `first-olympic-games` | 776 BC (p. 395) | 776 BC (p. 565) | same | 776 BC (cfah-anchor) |
 | First Territorial Division of the Earth `first-territorial-division` | — | 2254 BC (p. 88) | new in 2nd ed. (2024) | 2254 BC (cfah-anchor) |
 | The first Vedas `first-vedas` | 1500 bc (p. 254) | 1500–1200 BC (p. 110) | same start year | — |
 | Founding of Babel and the Era of the Tower `founding-of-babel` | around 2418 BC (p. 69) | 2233 BC (p. 92) | 185 years later | 2234 BC (cfah-anchor) |
@@ -1598,7 +1598,7 @@ Every record (and person date slot) dated by either edition. "Change" compares t
 | Marius's return and mass killings in Rome `marius-mass-killings` | 87 BC (p. 485) | 87 BC (p. 653) | same | — |
 | Chandragupta Maurya founds the Maurya Empire `maurya-empire` | By 320 BC (p. 251) | 320 BC (p. 438) | same | — |
 | "Median Dynasty of Babylon" (Berossus Dynasty 2) `median-dynasty-of-babylon` | — | 2191 BC … 1968 BC (p. 157) | new in 2nd ed. (2024) | 2191 BC (cfah-anchor) |
-| Deioces rules the Medes `median-kingdom-under-deioces` | around 725-675 BC (p. 363) | 712–675 B (p. 520) | 13 years later (ranges overlap) | — |
+| Deioces rules the Medes `median-kingdom-under-deioces` | around 725-675 BC (p. 363) | 712–675 B (p. 520) | 13 years later (ranges overlap) | 710 BC (cfah-anchor) |
 | Minoan civilization of Crete `minoan-civilization` | 2200 BC to about 1700 BC (p. 217) | — | not in 2nd ed. (2024) | — |
 | Mizraim begins settling Egypt `mizraim-settles-egypt` | around 2450 BC (p. 119) | 2191 BC (p. 100) | 259 years later | — |
 | Egypt falls to the Muslims `muslim-conquest-of-egypt` | AD 642 (p. 157) | — | not in 2nd ed. (2024) | — |

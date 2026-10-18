@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "memphis",
+  "type": "location",
+  "title": "Memphis (Noph)",
+  "location_type": "settlement",
+  "summary": "Egyptian royal city founded by Min in Herodotus (2.99); taken by Cambyses (3.13).",
+  "lat": 29.8488,
+  "lng": 31.253,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Memphis (modern)); representative point 31.253000,29.848800 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Memphis (modern): very high confidence\" (page fetched 2026-10-18)."
+  },
+  "openbible_id": "a8ec269",
+  "openbible_url": "https://www.openbible.info/geo/ancient/a8ec269/memphis",
+  "openbible_geojson": "https://a.openbible.info/geo/data/a8ec269.geojson",
+  "wikidata": "Q5715",
+  "scripture_refs": [
+    "Isa.19.13",
+    "Jer.2.16",
+    "Jer.44.1",
+    "Jer.46.14",
+    "Jer.46.19",
+    "Ezek.30.13",
+    "Ezek.30.16",
+    "Hos.9.6"
+  ],
+  "sources": [
+    "openbible-geo",
+    "blb-biblehub",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/a8ec269/memphis"
+    }
+  ],
+  "related": [
+    "egypt"
+  ],
+  "maps": []
+}

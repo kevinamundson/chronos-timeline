@@ -376,3 +376,43 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
 ### C8. Licensing reminder (OQ 12)
 - CFAH (© AiG), Jones and Jordan texts are cited and linked, with short quotes only. Jordan's full texts are in `sources/jordan` with your stated permission.
 - **Recommendation:** no change.
+
+## D. Herodotus import (2026-10-18)
+
+### D1. Events that only Herodotus dates
+- Herodotus describes events that no tier 1–4 chronology dates, such as the fall of Sardis, the Cimmerian raid on Sardis, the Scythian dominion over Asia and the Magus's usurpation. Herodotus gives durations rather than BC years, so these events have no sort year.
+- They are listed as "NEW record candidates" in `data/herodotus-dates-extract.md` and not created. The import does not add a Herodotus sort tier.
+- **Options:**
+  1. Leave them out (as now).
+  2. Create them with a sort "derived" from a CFAH anchor through Herodotus's reign lengths. The arithmetic is shown in the extract, e.g. Astyages' fall = AP-7 560/559 BC.
+  3. Wait for later CFAH papers.
+- **Recommendation:** option 1 for now. Option 2 would make Herodotus's reign lengths drive the sort indirectly.
+
+### D2. Cyrus: 29 years (Herodotus 1.214) or 30 (CFAH-3, AP-8)
+- CFAH counts Cyrus's 30 years from 560/559 BC to the accession of Cambyses. Herodotus says Cyrus "fell, after reigning nine and twenty years".
+- The site keeps CFAH's year for the sort and flags the difference.
+- **Recommendation:** no change; it is flagged on the Cyrus page.
+
+### D3. Moeris "not 900 years" before Herodotus (2.13) and other long Egyptian figures
+- CFAH AP-17 places Moeris about 1679 BC, and its own section "Conflicting Information: Herodotus Nine Centuries Below Moeris" deals with this.
+- Herodotus's priests' figures conflict with a 4004 BC Creation at any placement: 11,340 years of kings (2.142), Heracles 17,000 years before Amasis (2.43), and Tyre founded 2,300 years before his visit (2.44).
+- These are recorded as Herodotus's statements, marked "framework" or "CONFLICT", and never used.
+- **Recommendation:** no change.
+
+### D4. The Battle of the Eclipse (1.74) and Generations' 585 BC
+- The record `thales-predicts-eclipse` sorts provisionally at Generations' "May 28th, 585 BC".
+- Herodotus puts the eclipse in the reign of Cyaxares. The CFAH-derived chain (AP-7 + Astyages 35 + Cyaxares 40) ends that reign at 595/594 BC, about 10 years before 585.
+- **Recommendation:** keep the provisional sort and the flag. Ask Griffith/White whether a later CFAH paper treats the Median reigns.
+
+### D5. Unused CFAH anchor points
+- The Herodotus import added these CFAH-3/5 anchor points, which `docs/cfah-osf-collation.md` listed as found but unused:
+  - AP-7 Era of Cyrus 560/559
+  - AP-8 Pelusium 525
+  - AP-12 Fall of Troy 1184/1183
+  - AP-13 Xerxes 480
+  - AP-32 Deioces 710/709
+  - AP-10 First Olympiad 776/775 (on `first-olympic-games`)
+- These records now sort by CFAH (tier 1) instead of their provisional Generations years:
+  - `median-kingdom-under-deioces`: 710 BC instead of 712 BC
+  - `first-olympic-games`: 776 BC, unchanged
+- **Recommendation:** no decision needed; listed so you can see what changed.

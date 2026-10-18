@@ -45,6 +45,17 @@
       "citation": null,
       "link": null,
       "note": "No matching entry found in Ussher's Annals."
+    },
+    {
+      "source": "herodotus",
+      "date": "“The queen bore the same name as the Babylonian princess, namely, Nitocris.”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.100 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 136 (PDF p. 138)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=The%20queen%20bore%20the%20same%20name%20as%20the",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "CFAH-6 cites this chapter for Nitocris following Merenre II (AP-16, 1497–1479 BC). Order differs: Herodotus puts Nitocris among the 330 kings before Moeris (2.101); CFAH dates Moeris's death (about 1679 BC) before Nitocris (1497 BC), treating the lines as parallel."
     }
   ],
   "people": [],
@@ -55,13 +66,20 @@
   "scripture_refs": [],
   "sources": [
     "blb-biblehub",
-    "cfah-3"
+    "cfah-3",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "free_source_links": [
     {
       "source_id": "cfah-3",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "locator": "section \"AP-16: Nitocris Reigned from 1497 to 1479 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #16"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
     }
   ],
   "related": [

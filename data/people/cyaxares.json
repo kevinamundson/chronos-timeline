@@ -1,0 +1,121 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "cyaxares",
+  "type": "person",
+  "title": "Cyaxares",
+  "summary": "King of the Medes, son of Phraortes; fought the Lydians, took Nineveh (Herodotus 1.73–74, 1.103–106).",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": "phraortes",
+  "children": [
+    "astyages"
+  ],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“He it was who fought against the Lydians on the occasion when the day was changed suddenly into night”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.103 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 48 (PDF p. 50)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=He%20it%20was%20who%20fought%20against%20the%20Lydians",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Synchronism with the eclipse battle of 1.74."
+      },
+      {
+        "source": "herodotus",
+        "date": "“another combat took place in the sixth year, in the course of which, just as the battle was growing warm, day was on a sudden changed into night”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.74 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 33 (PDF p. 35)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=another%20combat%20took%20place%20in%20the%20sixth%20year",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "The Lydian–Median war of Alyattes and Cyaxares: the eclipse came in its sixth year and \"had been foretold by Thales, the Milesian, who forewarned the Ionians of it, fixing for it the very year in which it actually took place\" (1.74). Peace was sealed by Astyages' marriage to Aryenis. DERIVED (not Herodotus's figure): Herodotus gives no year. The battle fell in the reign of Cyaxares, which the CFAH-derived chain puts at 635/634–595/594 BC (AP-7 560/559 + Astyages 35 + Cyaxares 40; see 1.106, 1.130), so no later than 595/594 BC. CONFLICT with the provisional Generations date (\"May 28th, 585 BC\"), about 10 years after the derived end of Cyaxares's reign."
+      },
+      {
+        "source": "herodotus",
+        "date": "“The dominion of the Scythians over Asia lasted eight-and-twenty years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.106 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 49 (PDF p. 51)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=The%20dominion%20of%20the%20Scythians%20over%20Asia%20lasted",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Within the reign of Cyaxares (see the next row); repeated at 4.1."
+      },
+      {
+        "source": "herodotus",
+        "date": "“Cyaxares died, having reigned over the Medes, if we include the time of the Scythian rule, forty years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.106 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 49 (PDF p. 51)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Cyaxares%20died%2C%20having%20reigned%20over%20the%20Medes%2C%20if",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "DERIVED (not Herodotus's figure): 635/634 BC − 40 = 595/594 BC for the death of Cyaxares (anchor CFAH AP-32, via 1.102). Generations starts the reign of Cyaxares in 625 BC (2nd ed.; the 1st ed. prints 625–585 BC, the same 40 years; provisional sort), 10 years later than the CFAH-derived 635/634 BC."
+      }
+    ]
+  },
+  "events": [
+    "fall-of-nineveh",
+    "reign-of-cyaxares",
+    "thales-predicts-eclipse"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [
+    "alyattes"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
+    }
+  ]
+}

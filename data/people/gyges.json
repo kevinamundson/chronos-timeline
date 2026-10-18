@@ -1,0 +1,106 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "gyges",
+  "type": "person",
+  "title": "Gyges",
+  "summary": "King of Lydia, first of the Mermnadae; in Herodotus he kills Candaules and takes the throne (1.8–14).",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": null,
+  "children": [
+    "ardys"
+  ],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“Archilochus the Parian, who lived about the same time”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.12 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 6 (PDF p. 8)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Archilochus%20the%20Parian%2C%20who%20lived%20about%20the%20same",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Synchronism: the poet Archilochus was a contemporary of Gyges' seizure of the throne."
+      },
+      {
+        "source": "herodotus",
+        "date": "“in the fifth generation from Gyges, vengeance should come for the Heraclides”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.13 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 6 (PDF p. 8)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=in%20the%20fifth%20generation%20from%20Gyges%2C%20vengeance%20should",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Delphic oracle at Gyges' accession; fulfilled in Croesus (1.91 calls Gyges Croesus's \"fifth ancestor\")."
+      },
+      {
+        "source": "herodotus",
+        "date": "“though he reigned eight and thirty years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.14 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 6 (PDF p. 8)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=though%20he%20reigned%20eight%20and%20thirty%20years",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Gyges, first of the Mermnadae."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [
+    "ardys"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
+    }
+  ]
+}

@@ -58,6 +58,17 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Reign of \"Sesostris III\"; p. 214 calls Senusret III the Pharaoh who did not know Joseph."
+    },
+    {
+      "source": "herodotus",
+      "date": "“I shall speak of the king who reigned next, whose name was Sesostris”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.102 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 136 (PDF p. 138)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=I%20shall%20speak%20of%20the%20king%20who%20reigned",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Sesostris follows Moeris and campaigns through Asia to Scythia and Thrace (2.102–110). Order agrees with CFAH: Moeris dies about 1679 BC (AP-17) and Sesostris (Senusret III) establishes the astronomical college in 1576 BC (AP-18); CFAH-3 Table 2 lists \"Shortly after Moeris\" as a match. Generations dates Senusret III about 1800 BC (the provisional sort) and 1614–1575 BC (Preparing, 2nd ed.)."
     }
   ],
   "people": [],
@@ -67,7 +78,9 @@
   "sources": [
     "generations-africa",
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [
     "senusret-iii-astronomical-college"
@@ -82,6 +95,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
     }
   ]
 }

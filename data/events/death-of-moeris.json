@@ -44,6 +44,28 @@
       "citation": null,
       "link": null,
       "note": "No matching entry found in Ussher's Annals."
+    },
+    {
+      "source": "herodotus",
+      "date": "“Now Moeris had not been dead 900 years at the time when I heard this of the priests”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.13 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 100 (PDF p. 102)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=Now%20Moeris%20had%20not%20been%20dead%20900%20years",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "DERIVED (not Herodotus's figure): CFAH-3 (AP-17): counted from Herodotus's own time (about 450 BC) the death of Moeris would fall after 1350 BC; counted from the Olympic Era (776 BC) it is about 1676 BC. Derived by CFAH. CONFLICT on Herodotus's plain reading: CFAH AP-17 puts Moeris's death about 1679 BC, about 1,230 years before Herodotus's visit, not under 900. CFAH-3 heads the passage \"Conflicting Information\" and suggests he meant the Olympic Era, which comes within 3 years of its estimate."
+    },
+    {
+      "source": "herodotus",
+      "date": "“with the exception of the last, who was named Moeris”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.101 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 136 (PDF p. 138)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=with%20the%20exception%20of%20the%20last%2C%20who%20was",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Moeris is the last of the 330 and the first with monuments (the lake and its pyramids)."
     }
   ],
   "people": [
@@ -56,13 +78,20 @@
   "scripture_refs": [],
   "sources": [
     "blb-biblehub",
-    "cfah-3"
+    "cfah-3",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "free_source_links": [
     {
       "source_id": "cfah-3",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "locator": "section \"AP-17: Joseph Alive in 1690 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #17 (\"Approximate year of death of Joseph's pharaoh, Moeris\", 1679)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
     }
   ],
   "related": [

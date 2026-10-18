@@ -46,6 +46,17 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": null
+    },
+    {
+      "source": "herodotus",
+      "date": "“they lived but four hundred years before my time, as I believe”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.53 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 119 (PDF p. 121)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=they%20lived%20but%20four%20hundred%20years%20before%20my",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Homer and Hesiod: Herodotus's own opinion. DERIVED (not Herodotus's figure): 450 BC + 400 = about 850 BC. Anchor: CFAH-3 dates Herodotus's visit to Egypt to 450 B.C. (section \"Conflicting Information: Herodotus Nine Centuries Below Moeris\"; AP-21). About 50 years before Generations' \"around 800 BC\" for Homer (provisional); no tier 1–4 date."
     }
   ],
   "people": [],
@@ -54,7 +65,9 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -62,6 +75,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
     }
   ]
 }

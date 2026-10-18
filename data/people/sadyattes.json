@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "sadyattes",
+  "type": "person",
+  "title": "Sadyattes",
+  "summary": "King of Lydia, son of Ardys (Herodotus 1.15–18).",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": "ardys",
+  "children": [
+    "alyattes"
+  ],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“He reigned forty-nine years, and was succeeded by his son, Sadyattes, who reigned twelve years.”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.15 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 7 (PDF p. 9)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=He%20reigned%20forty%2Dnine%20years%2C%20and%20was%20succeeded%20by",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Ardys 49 years; Sadyattes 12 years."
+      },
+      {
+        "source": "herodotus",
+        "date": "“During six of these eleven years, Sadyattes, the son of Ardys who first lighted the flames of this war, was king of Lydia”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.18 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 7 (PDF p. 9)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=During%20six%20of%20these%20eleven%20years%2C%20Sadyattes%2C%20the",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "The eleven-year Milesian war: six years under Sadyattes, the last five under Alyattes."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schema/location.schema.json",
+  "id": "sardis",
+  "type": "location",
+  "title": "Sardis",
+  "location_type": "settlement",
+  "summary": "Capital of Lydia, taken by Cyrus from Croesus (Herodotus 1.84–86); one of the seven churches of Revelation.",
+  "lat": 38.488333,
+  "lng": 28.040278,
+  "coordinate_basis": "OpenBible.info first-ranked identification (Sardis (modern)); representative point 28.040278,38.488333 (lon,lat).",
+  "certainty": {
+    "level": "very-high",
+    "percent": null,
+    "basis": "OpenBible.info: \"Sardis (modern): very high confidence\" (page fetched 2026-10-18)."
+  },
+  "openbible_id": "aab4a5f",
+  "openbible_url": "https://www.openbible.info/geo/ancient/aab4a5f/sardis",
+  "openbible_geojson": "https://a.openbible.info/geo/data/aab4a5f.geojson",
+  "wikidata": "Q232615",
+  "scripture_refs": [
+    "Rev.1.11",
+    "Rev.3.1",
+    "Rev.3.4"
+  ],
+  "sources": [
+    "openbible-geo",
+    "blb-biblehub",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "openbible-geo",
+      "url": "https://www.openbible.info/geo/ancient/aab4a5f/sardis"
+    }
+  ],
+  "related": [
+    "croesus",
+    "gyges",
+    "alyattes"
+  ],
+  "maps": []
+}

@@ -47,15 +47,41 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Takes the throne of the Cimmerian-Median Empire."
+    },
+    {
+      "source": "herodotus",
+      "date": "“The dominion of the Scythians over Asia lasted eight-and-twenty years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.106 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 49 (PDF p. 51)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=The%20dominion%20of%20the%20Scythians%20over%20Asia%20lasted",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Within the reign of Cyaxares (see the next row); repeated at 4.1."
+    },
+    {
+      "source": "herodotus",
+      "date": "“Cyaxares died, having reigned over the Medes, if we include the time of the Scythian rule, forty years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 1.106 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 49 (PDF p. 51)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Cyaxares%20died%2C%20having%20reigned%20over%20the%20Medes%2C%20if",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "DERIVED (not Herodotus's figure): 635/634 BC − 40 = 595/594 BC for the death of Cyaxares (anchor CFAH AP-32, via 1.102). Generations starts the reign of Cyaxares in 625 BC (2nd ed.; the 1st ed. prints 625–585 BC, the same 40 years; provisional sort), 10 years later than the CFAH-derived 635/634 BC."
     }
   ],
-  "people": [],
+  "people": [
+    "cyaxares"
+  ],
   "locations": [],
   "maps": [],
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -63,6 +89,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
     }
   ]
 }

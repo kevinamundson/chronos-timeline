@@ -68,6 +68,39 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Monarchy of Mizraim (Menes) begins in Egypt at the Dispersion. Differs from the sort year (2189 BC, cfah-anchor) by 2 years."
+    },
+    {
+      "source": "herodotus",
+      "date": "“The priests said that Min was the first king of Egypt”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.99 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 135 (PDF p. 137)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=The%20priests%20said%20that%20Min%20was%20the%20first",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Min dammed the Nile and founded Memphis (2.99). Identification agrees: CFAH identifies the first king, Menes, with Mizraim (CFAH-2 AP-3, 2189/2188 BC)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“the names of three hundred and thirty monarchs, who (they said) were his successors upon the throne”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.100 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 135 (PDF p. 137)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=the%20names%20of%20three%20hundred%20and%20thirty%20monarchs",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Read to Herodotus from a papyrus: 18 Ethiopian kings and one native queen among them. CONFLICT in structure: Herodotus has a single succession of 330 reigns from Min to Moeris, where CFAH treats the Egyptian dynasties as parallel (CFAH-6), with only about 510 years between Menes (2189 BC) and Moeris (about 1679 BC)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“Thus the whole number of years is eleven thousand, three hundred and forty”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.142 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 157 (PDF p. 159)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=Thus%20the%20whole%20number%20of%20years%20is%20eleven",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "341 generations of kings and high priests from the first king (Min) to Sethos, at three generations to a century; within it the sun four times \"moved from his wonted course\". DERIVED (not Herodotus's figure): Sethos at the time of Sennacherib (Generations, about 713 BC, provisional) + 11,340 = about 12,050 BC for Min. CONFLICT with the framework and CFAH: CFAH dates Menes 2189/2188 BC (AP-3) and Creation 4004 BC (AP-30). The 11,340 years exceed the whole span from Creation to Herodotus."
     }
   ],
   "people": [
@@ -84,7 +117,9 @@
   "sources": [
     "blb-biblehub",
     "cfah-2",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "free_source_links": [
     {
@@ -96,6 +131,11 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/10.htm#6",
       "locator": "Gen.10.6 ; Gen.10.13-Gen.10.14"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
     }
   ],
   "related": [

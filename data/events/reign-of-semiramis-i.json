@@ -56,6 +56,17 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "\"The first year of Semiramis\"."
+    },
+    {
+      "source": "herodotus",
+      "date": "“from the present day to the time of Bacchus, the reputed son of Semele, daughter of Cadmus, is a period of not more than sixteen hundred years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.145 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 159 (PDF p. 161)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=from%20the%20present%20day%20to%20the%20time%20of",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Greek reckoning, from Herodotus's own day. DERIVED (not Herodotus's figure): CFAH-3 (AP-21): \"450 B.C. the time of Herodotus’ visit; plus, 1,600 years back to Semele; gives: 2050 B.C.–50 years for Semele/Semiramis I (2050–2000 B.C.)\". Derived by CFAH. Agrees: CFAH identifies Semele with Semiramis I and dates her reign 2036–1994 BC (AP-21), inside the derived 2050–2000 BC."
     }
   ],
   "people": [
@@ -69,13 +80,20 @@
   "scripture_refs": [],
   "sources": [
     "blb-biblehub",
-    "cfah-3"
+    "cfah-3",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "free_source_links": [
     {
       "source_id": "cfah-3",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "locator": "section \"AP-21: Reign of Semiramis I: 2036–1994 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #21 (\"Start of the reign of Semiramis I\", 2036/2035)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
     }
   ],
   "related": [

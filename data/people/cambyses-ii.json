@@ -1,0 +1,106 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "cambyses-ii",
+  "type": "person",
+  "title": "Cambyses II",
+  "summary": "King of Persia, son of Cyrus; conquered Egypt (Herodotus 3.1–66).",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“While Cambyses, son of Cyrus, after losing his senses, still lingered in Egypt, two Magi, brothers, revolted against him.”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 3.61 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 202 (PDF p. 204)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=While%20Cambyses%2C%20son%20of%20Cyrus%2C%20after%20losing%20his",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": null
+      },
+      {
+        "source": "herodotus",
+        "date": "“He had reigned in all seven years and five months”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 3.66 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 206 (PDF p. 208)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=He%20had%20reigned%20in%20all%20seven%20years%20and",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "DERIVED (not Herodotus's figure): Cambyses's accession 531/530 BC (Cyrus's 29 years from CFAH AP-7) + 7 y 5 m = about 523/522 BC for his death. CFAH-3 (AP-8) has Cambyses accede in 530 BC and conquer Egypt in his fifth year (525 BC); Herodotus's figures fit."
+      },
+      {
+        "source": "herodotus",
+        "date": "“the seven months which were wanting to complete the eighth year of Cambyses”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 3.67 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 206 (PDF p. 208)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=the%20seven%20months%20which%20were%20wanting%20to%20complete",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "The Magus (false Smerdis) reigns seven months."
+      }
+    ]
+  },
+  "events": [
+    "cambyses-conquers-egypt"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [
+    "cyrus-the-great"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3",
+      "locator": "Book 3 (unnumbered chapters on Wikisource)"
+    }
+  ]
+}

@@ -1002,6 +1002,48 @@
       "license_note": "© 2024 Generations (\"Copyright © 2024 by Generations ... All rights reserved.\"). Private copy: a PDF in Google Drive that the site owner can open (file \"Preparing_the_World_for_Jesus__2nd_Edition_.pdf\", 47.8 MB). It is not publicly available and there is no public link; the Drive link works only for accounts it is shared with. Only dates, page citations and short notes in our own words are kept here. The text is not reproduced.",
       "verified_on": "2026-10-18",
       "note": "Title page: \"Preparing the World for Jesus: A Survey of the World Before Christ\", \"Kevin Swanson\". Copyright page as printed: \"Copyright © 2024 by Generations\"; \"2nd Edition, 1st Printing, 2024.\"; \"Printed in the United States of America.\"; \"isbn: 978–1–7332304–6–9\"; \"Production management: Joshua Schwisow\"; \"Consultant: Kenneth Griffith, Historian and Researcher\" (Griffith is a co-author of the CFAH series); \"Cover and interior design by Justin Turley\"; \"Typeset by Rei Suzuki\". 24 chapters (the 1st edition has 16); 752 PDF pages; printed page = PDF page − 14. It follows the Ussher / CFAH chronology (Creation 4004 BC, Flood 2348 BC, Exodus 1491 BC) and replaces the 1st edition's long chronology. The primary Generations reading for this book."
+    },
+    {
+      "id": "herodotus-rawlinson-roman-roads",
+      "title": "The Histories (Herodotus), translated by George Rawlinson",
+      "authors": [
+        "Herodotus"
+      ],
+      "translator_or_editor": "George Rawlinson (translator)",
+      "year": "2013",
+      "publication": "Roman Roads Media, 739 S Hayes St, Moscow, Idaho 83843. \"A Roman Roads Etext\", \"Copyright © 2013 by Roman Roads Media, LLC\"; designed to accompany Roman Roads Media's video course Old Western Culture. 631 PDF pages; printed page = PDF page − 2.",
+      "url": "https://romanroadspress.com/",
+      "alt_urls": [],
+      "access": "private-copy",
+      "license_note": "The site owner's private PDF copy of the etext (not in this repository and not linked). Rawlinson's translation (1858–60) is public domain; the © 2013 notice covers Roman Roads Media's edition. Page numbers here refer to this edition; for public reading use herodotus-rawlinson-wikisource.",
+      "verified_on": "2026-10-18",
+      "note": "Front matter as printed: \"The Histories\", \"Herodotus\", \"Translated by George Rawlinson\", \"Copyright © 2013 by Roman Roads Media, LLC\", \"Roman Roads Media, 739 S Hayes St, Moscow, Idaho 83843\", \"A ROMAN ROADS ETEXT\". PDF metadata: created 28 Oct 2013 (Acrobat Pro 11.0.5). The url is the publisher's site (romanroadsmedia.com now redirects to romanroadspress.com). CFAH-2 and CFAH-6 cite this edition: \"Herodotus. 2013. The Histories. Translated by George Rawlinson. Moscow, Idaho: Roman Roads Media.\" Books begin on PDF pages 3, 97, 177, 247, 321, 373, 428, 521, 578."
+    },
+    {
+      "id": "herodotus-rawlinson-wikisource",
+      "title": "The History of Herodotus, translated by George Rawlinson (Wikisource transcription)",
+      "authors": [
+        "Herodotus"
+      ],
+      "translator_or_editor": "George Rawlinson (translator)",
+      "year": "1910",
+      "publication": "Wikisource transcription of \"History of Herodotus (1910), translated by George Rawlinson\" (Everyman's Library), one page per Book.",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)",
+      "alt_urls": [
+        "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+        "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+        "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3",
+        "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_4",
+        "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_5",
+        "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6",
+        "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7",
+        "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_8",
+        "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_9"
+      ],
+      "access": "public-domain",
+      "license_note": "Public domain (Wikisource licence tag PD-old). The same Rawlinson translation as the Roman Roads etext; every quoted statement was checked verbatim against this text.",
+      "verified_on": "2026-10-18",
+      "note": "Chapter numbers are marked in Books 1, 7, 8 and 9 and partly in Book 2; Books 3–6 are unnumbered, so links point to the Book page with a text fragment for the quoted words."
     }
   ]
 }

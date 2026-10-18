@@ -45,6 +45,17 @@
       "citation": null,
       "link": null,
       "note": "No matching entry found in Ussher's Annals."
+    },
+    {
+      "source": "herodotus",
+      "date": "“I shall speak of the king who reigned next, whose name was Sesostris”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.102 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 136 (PDF p. 138)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=I%20shall%20speak%20of%20the%20king%20who%20reigned",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Sesostris follows Moeris and campaigns through Asia to Scythia and Thrace (2.102–110). Order agrees with CFAH: Moeris dies about 1679 BC (AP-17) and Sesostris (Senusret III) establishes the astronomical college in 1576 BC (AP-18); CFAH-3 Table 2 lists \"Shortly after Moeris\" as a match. Generations dates Senusret III about 1800 BC (the provisional sort) and 1614–1575 BC (Preparing, 2nd ed.)."
     }
   ],
   "people": [
@@ -57,13 +68,20 @@
   "scripture_refs": [],
   "sources": [
     "blb-biblehub",
-    "cfah-3"
+    "cfah-3",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "free_source_links": [
     {
       "source_id": "cfah-3",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "locator": "section \"AP-18: Egyptian Belus: Established Astronomical College 1576 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #18 (1577/1576)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
     }
   ],
   "related": [

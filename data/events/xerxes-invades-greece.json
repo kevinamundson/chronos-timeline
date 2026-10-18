@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "xerxes-invades-greece",
+  "type": "event",
+  "title": "Xerxes invades Greece",
+  "summary": "CFAH AP-13: the second Persian invasion of Greece under Xerxes (480 BC), told in Herodotus Books 7–9.",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Sorted by the CFAH anchor point cited below; Herodotus entries are display only.",
+  "sorting_year": -480,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 480 BC (AP-13)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "480 BC",
+      "year_am": null,
+      "year_bc_ad": -480,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-13: Xerxes’ Invasion of Greece: 480 B.C.\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "note": "CFAH-3: 296 years after the First Olympiad (776 B.C.) gives \"480 B.C. Xerxes invades Greece\"; 704 years after the Fall of Troy (1183 B.C.) gives 479 B.C. \"The Second Persian Invasion of Greece ended in June 479 B.C., about 15 months after it began.\"",
+      "source_text_id": "cfah-3",
+      "cfah_basis": "anchor_point"
+    }
+  ],
+  "people": [
+    "xerxes-i"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource",
+    "cfah-3"
+  ],
+  "related": [
+    "battle-of-thermopylae",
+    "battle-of-salamis",
+    "battle-of-plataea",
+    "reign-of-xerxes-i"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-13: Xerxes’ Invasion of Greece: 480 B.C."
+    }
+  ]
+}

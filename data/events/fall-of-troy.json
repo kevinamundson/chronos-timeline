@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "fall-of-troy",
+  "type": "event",
+  "title": "Fall of Troy",
+  "summary": "CFAH AP-12: the destruction of Troy (1184/1183 BC), the end of the Trojan War.",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Sorted by the CFAH anchor point cited below; Herodotus entries are display only.",
+  "sorting_year": -1184,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1184/1183 BC (AP-12)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1184/1183 BC",
+      "year_am": null,
+      "year_bc_ad": -1184,
+      "year_bc_ad_end": -1183,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-12: The Fall of Troy: 1184/1183 B.C.\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "note": "CFAH-3: \"Four hundred and eight years added to 776/775 B.C. yields 1184/1183 B.C. for the fall of Troy.\" Eratosthenes is taken as the most reliable witness.",
+      "source_text_id": "cfah-3",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "herodotus",
+      "date": "“it was not just to come upon them for what Proteus, king of Egypt, was detaining”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.118 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 144 (PDF p. 146)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=it%20was%20not%20just%20to%20come%20upon%20them",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Synchronism: in the priests' story Proteus held Helen in Egypt during the Trojan War (2.112–120)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“to the time of Pan, son of Penelope (Pan, according to the Greeks, was her child by Mercury), is a shorter space than to the Trojan war, eight hundred years or thereabouts”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 2.145 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 159 (PDF p. 161)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=to%20the%20time%20of%20Pan%2C%20son%20of%20Penelope",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Pan about 800 years before Herodotus, and the Trojan War earlier than that. DERIVED (not Herodotus's figure): 450 BC + 800 = about 1250 BC, so the Trojan War falls before about 1250 BC. Anchor: CFAH-3 dates Herodotus's visit to Egypt to 450 B.C. (section \"Conflicting Information: Herodotus Nine Centuries Below Moeris\"; AP-21). CONFLICT (about 66 years or more): CFAH AP-12 dates the fall of Troy 1184/1183 BC, later than Herodotus's implied date. The sentence is loose (\"or thereabouts\")."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource",
+    "cfah-3"
+  ],
+  "related": [
+    "trojan-war",
+    "homer-iliad-odyssey"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-12: The Fall of Troy: 1184/1183 B.C."
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    }
+  ]
+}

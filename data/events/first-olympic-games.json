@@ -4,24 +4,27 @@
   "type": "event",
   "title": "First Olympic Games",
   "summary": "First Olympic Games",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Sorted by the CFAH anchor point cited below (added by the Herodotus import); the Generations dates are display only.",
   "sorting_year": -776,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 565): 776 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 776/775 BC (AP-10)"
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "776/775 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -776,
+      "year_bc_ad_end": -775,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-10: Era of the Olympiad: 776/775 B.C.\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "note": "CFAH-3: \"These two durations confirm 776/775 B.C. for the first Olympiad, 525 B.C. for the Battle of Pelusium, and 560/559 B.C. for Cyrus, synchronizing the chronologies of Egypt, Greece, and Persia.\" Censorinus's eras: \"1st Olympiad: 1,014 years [yields 776 B.C.]\". AP-12 and AP-13 count from this era.",
+      "source_text_id": "cfah-3",
+      "cfah_basis": "anchor_point"
     },
     {
       "source": "generations",
@@ -54,7 +57,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cfah-3"
   ],
   "related": [],
   "free_source_links": [
@@ -62,6 +66,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "AP-10: Era of the Olympiad: 776/775 B.C."
     }
   ]
 }

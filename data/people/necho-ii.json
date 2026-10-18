@@ -1,0 +1,87 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "necho-ii",
+  "type": "person",
+  "title": "Necho II",
+  "summary": "King of Egypt, son of Psammetichus (Herodotus \"Necos\", 2.158–159, 4.42); the Pharaoh-nechoh of 2 Kings 23 and Jeremiah 46.",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": "psammetichus-i",
+  "children": [
+    "psammis"
+  ],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“After having reigned in all sixteen years, Necos died”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 2.159 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 166 (PDF p. 168)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=After%20having%20reigned%20in%20all%20sixteen%20years%2C%20Necos",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Necos defeated \"the Syrians\" at Magdolus and took Cadytis (2.159). DERIVED (not Herodotus's figure): 525 + ½ + 44 + 25 + 6 = 600½, so Necos reigned about 617/616–601/600 BC (anchor CFAH AP-8). Consistent: Generations dates Carchemish (Pharaoh-necho, Jer 46:2) to 605 BC (provisional), inside the derived reign."
+      }
+    ]
+  },
+  "events": [
+    "battle-of-carchemish"
+  ],
+  "scripture_refs": [
+    "2Kgs.23.29",
+    "Jer.46.2"
+  ],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
+      "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    }
+  ]
+}

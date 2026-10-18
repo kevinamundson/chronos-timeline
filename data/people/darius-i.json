@@ -1,0 +1,123 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "darius-i",
+  "type": "person",
+  "title": "Darius I",
+  "summary": "King of Persia, son of Hystaspes (Herodotus 3.88 – 7.4).",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "father": null,
+  "children": [
+    "xerxes-i"
+  ],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“his eldest son, Darius, was at that time scarce twenty years old”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 1.209 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 93 (PDF p. 95)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=his%20eldest%20son%2C%20Darius%2C%20was%20at%20that%20time",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Darius's age at the time of Cyrus's last campaign. DERIVED (not Herodotus's figure): Cyrus's death 531/530 BC (see 1.214) + about 20 years gives a birth about 551/550 BC (approximate)."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“Thus was Darius, son of Hystaspes, appointed king”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 3.88 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 216 (PDF p. 218)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=Thus%20was%20Darius%2C%20son%20of%20Hystaspes%2C%20appointed%20king",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "DERIVED (not Herodotus's figure): about 523/522 BC (Cambyses's death) + 7 months = about 522 BC (anchor CFAH AP-7). Consistent with Generations 522 BC (provisional)."
+      },
+      {
+        "source": "herodotus",
+        "date": "“when a year and seven months had passed”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 3.152 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 242 (PDF p. 244)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=when%20a%20year%20and%20seven%20months%20had%20passed",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Darius's siege of revolted Babylon."
+      },
+      {
+        "source": "herodotus",
+        "date": "“Thus was Babylon taken for the second time.”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 3.159 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 245 (PDF p. 247)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=Thus%20was%20Babylon%20taken%20for%20the%20second%20time",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Darius takes Babylon by Zopyrus's stratagem (the first taking was by Cyrus, 1.191)."
+      }
+    ]
+  },
+  "events": [
+    "battle-of-marathon",
+    "reign-of-darius-i"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
+      "locator": "Book 1"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3",
+      "locator": "Book 3 (unnumbered chapters on Wikisource)"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "battle-of-salamis",
+  "type": "event",
+  "title": "Battle of Salamis",
+  "summary": "The Greek fleet defeats Xerxes' navy at Salamis in the same campaign season as Thermopylae (Herodotus 8.40–96).",
+  "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). The sort year is derived from a CFAH anchor point (see the sort note); Herodotus entries are display only.",
+  "sorting_year": -480,
+  "sorting_basis": {
+    "tier": "derived",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "derived_from": "xerxes-invades-greece",
+    "note": "Sort year copied from Xerxes invades Greece (CFAH AP-13, 480 BC). Herodotus puts the Persian entry into Attica four months after the crossing of the Hellespont, \"in the archonship of Calliades\" (8.51), and Salamis follows within days (8.56–96), so the battle falls in the invasion's first campaign season. Herodotus gives no year number."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+    }
+  ],
+  "people": [
+    "xerxes-i"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
+  ],
+  "related": [
+    "xerxes-invades-greece",
+    "battle-of-thermopylae"
+  ],
+  "free_source_links": []
+}
