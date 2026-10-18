@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ninyas",
+  "type": "person",
+  "title": "Ninyas Zames (Gilgamesh)",
+  "summary": "Son of Semiramis I and Ninus (Nimrod) in the chroniclers; CFAH identifies him with Gilgamesh.",
+  "description": "Son of Semiramis I and Ninus (Nimrod) in the chroniclers; CFAH identifies him with Gilgamesh. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "alt_names": [
+    "Gilgamesh",
+    "Zames"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "2006–1968 B.C.",
+        "year_am": null,
+        "year_bc_ad": -2006,
+        "year_bc_ad_end": -1968,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-47: The Reign of Ninyas Zames/Gilgamesh: 2006–1968 B.C.\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "Sole reign from 1994 B.C. (AP-47 is on the event reign-of-ninyas-gilgamesh).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-ninyas-reign:ninyas:reign"
+      }
+    ]
+  },
+  "events": [
+    "reign-of-ninyas-gilgamesh"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"AP-47: The Reign of Ninyas Zames/Gilgamesh: 2006–1968 B.C.\""
+    }
+  ],
+  "dynasty": "Uruk / Assyria (chroniclers)"
+}

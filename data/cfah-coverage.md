@@ -164,7 +164,27 @@ OSF components inventoried in docs/cfah-osf-collation.md. All are preprints (not
 
 ## 4. King lists, dynasty tables and national epochs
 
-**Pending (phase 3).**
+Stored in data/king-lists.json (rendered at /king-lists/). Person records exist only for rulers the CFAH text dates (reign start/end, death); kings known only by a regnal length are listed without a record.
+
+| List | Source | Rows | Rows linked to a person | Rows linked to an event | Rows with no record (reason) |
+|---|---|---|---|---|---|
+| Berossus: the eight Babylonian dynasties (`cfah5-berossus-dynasties`) | CFAH-5, AP-38 to AP-45 sections and Table 3 | 8 | 0 | 8 | 0 |
+| Berossus Dynasty 7 from the Royal (Ptolemaic) Canon (`cfah5-dynasty-7-royal-canon`) | CFAH-5, section "AP-44: Dynasty 7: Second Assyrian Dynasty of Babylon: 705–626 B.C." | 9 | 1 | 0 | 8: CFAH-5 gives these kings regnal lengths only (summed to fill 705–626 B.C.), not BC years for each, so no person records were made. |
+| Assyrian, Babylonian and Akkadian rulers dated in CFAH-5 (`cfah5-mesopotamian-rulers`) | CFAH-5, sections cited on each person's reign entry | 12 | 12 | 9 | 0 |
+| Old and Middle Kingdom rulers of Egypt dated in CFAH-6 (`cfah6-egyptian-rulers`) | CFAH-6, sections cited on each person's reign or death entry | 16 | 14 | 8 | 0 |
+| CFAH estimated Egyptian dynasty dates (Dynasties 1–11) (`cfah6-table6-dynasty-dates`) | CFAH-6, Table 6 "CFAH estimated dynasty dates" | 11 | 0 | 6 | 5: Rows without an event: the data set has no record for that dynasty as a whole, and Table 6 marks these dates as estimates (no anchor point). They are shown here rather than as new events. |
+| Sothis King List with CFAH identifications (rows dated elsewhere in CFAH-6) (`cfah6-sothis-king-list`) | CFAH-6, Table 4 (Sothis King List) | 8 | 6 | 2 | 0 |
+| National founding epochs (CFAH-2 durations) (`cfah2-national-epochs`) | CFAH-2, sections "Duration 14" and "Duration 15" | 2 | 0 | 2 | 0 |
+
+Not stored as lists:
+
+- CFAH-6 Table 5 (Eratosthenes King List): regnal lengths and identifications only; the dated rulers it names are in cfah6-egyptian-rulers.
+- CFAH-5 Table 4 (the Ctesias recensions of the Assyrian kings): regnal years only, no BC dates per king.
+- CFAH-5 Table 2/3 (Berossus): the dynasty rows are in cfah5-berossus-dynasties; Table 3 kings and lengths add no BC dates.
+- CFAH-4 Table 1 (Chinese patriarchs): ages only, no BC dates.
+- CFAH-2 durations for Peru (2198/7 BC) and Yao–Shun (2277–2247 BC): the data set has no event for them, and these are not numbered anchor points, so per A1 they stay out of the event data. Ireland (2035 BC) is the event partholan-colonizes-ireland (OSF AP-103).
+- CFAH-6 Fig. 16 (patriarch overlaps): an image chart; the patriarchs' birth and death dates are already recorded from the CFAH tables and charts on their person records.
+- OSF preprints CFAH-7B (kings of Dynasties 1–13), CFAH-9, 10 and 14 to 16 (Egyptian dynasties 19 to 26, Assyrian and Sumerian king lists, the kings of Israel and Judah): per-king dates there are reconstructions in long tables. Their numbered anchor points are recorded (phase 4), but the per-king rows are not imported in this pass (see open question E5).
 
 ## 5. Sort changes made by the CFAH pass (9)
 

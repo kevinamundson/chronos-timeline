@@ -1,0 +1,67 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "sargon-ii",
+  "type": "person",
+  "title": "Sargon II",
+  "summary": "King of Assyria, the second \"Sardanapalus\" of the chroniclers in CFAH's reading.",
+  "description": "King of Assyria, the second \"Sardanapalus\" of the chroniclers in CFAH's reading. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "720 or 721",
+        "year_am": null,
+        "year_bc_ad": -721,
+        "year_bc_ad_end": -720,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-34: Sardanapalus II—Sargon II: Second Median Revolt: 705–700 B.C.\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "Start of the reign (\"whose reign began in 720 or 721\").",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-sargon2-start:sargon-ii:reign"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": "705",
+        "year_am": null,
+        "year_bc_ad": -705,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-34: Sardanapalus II—Sargon II: Second Median Revolt: 705–700 B.C.\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "\"except that he died in 705\". Berossus counted the death as 706 (open question I5).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-sargon2-death:sargon-ii:death"
+      }
+    ]
+  },
+  "events": [
+    "second-median-revolt",
+    "fall-of-samaria"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"AP-34: Sardanapalus II—Sargon II: Second Median Revolt: 705–700 B.C.\""
+    }
+  ],
+  "dynasty": "Assyria"
+}

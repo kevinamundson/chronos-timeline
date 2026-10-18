@@ -1,0 +1,68 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "pepi-i",
+  "type": "person",
+  "title": "Pepi I",
+  "summary": "King of Egypt's Dynasty 6.",
+  "description": "King of Egypt's Dynasty 6. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "1637 BC ±2 years",
+        "year_am": null,
+        "year_bc_ad": -1637,
+        "precision": "approximate",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"Userkare goes from D6 to D12/13 and back to D6\"",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "Start of Pepi I's sole reign, at the end of Userkare's coregency. CFAH-5 gives \"about 1646 to 1593 B.C.\" (see open question I7).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-pepi1-sole:pepi-i:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "about 1646 to 1593 B.C.",
+        "year_am": null,
+        "year_bc_ad": -1646,
+        "year_bc_ad_end": -1593,
+        "precision": "approximate",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"8. Sargon of Akkad and Pepi I\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "Counted from the death of Nitocris in 1479 B.C. with Manetho's 53 years. Superseded in practice by CFAH-6 (open question I7).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-pepi1-reign:pepi-i:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-6",
+    "cfah-5"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"Userkare goes from D6 to D12/13 and back to D6\""
+    },
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"8. Sargon of Akkad and Pepi I\""
+    }
+  ],
+  "dynasty": "Egypt Dynasty 6"
+}

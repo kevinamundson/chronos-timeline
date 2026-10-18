@@ -25,6 +25,8 @@ const chronologies = chronFile.chronologies;
 const sources = readJSON(join(DATA, 'sources.json')).sources;
 const chartDoc = readJSON(join(DATA, 'cfah-charts.json'));
 const charts = chartDoc.charts;
+const kingDoc = existsSync(join(DATA, 'king-lists.json')) ? readJSON(join(DATA, 'king-lists.json')) : { lists: [], not_recorded: [] };
+const kingListsOf = (id) => kingDoc.lists.filter((l) => l.entries.some((e) => e.person === id || e.event === id));
 
 const byId = {};
 for (const r of [...events, ...people, ...locations, ...maps]) byId[r.id] = r;
@@ -385,6 +387,13 @@ function personTimeline(p) {
   const ys = own.map((e) => e.sorting_year);
   const notes = [];
   let start = birth?.y ?? null, stop = end?.y ?? null;
+  // Rulers dated only by CFAH reign (or a display-only CFAH death year): use those before falling back to linked events.
+  const cfahDated = (list) => (list || []).find((e) => e.source === 'cfah' && e.year_bc_ad != null);
+  const cfahReign = cfahDated(d.reign);
+  const textDeath = end ? null : cfahDated(d.death);
+  if (start == null && cfahReign) { start = cfahReign.year_bc_ad; notes.push(`Birth year unknown: the window starts at the CFAH reign date (${cfahReign.date}).`); }
+  if (stop == null && textDeath) { stop = textDeath.year_bc_ad; notes.push(`Death year from CFAH paper text (${textDeath.date}); it is display only, not a sort tier.`); }
+  else if (stop == null && cfahReign?.year_bc_ad_end != null) { stop = cfahReign.year_bc_ad_end; notes.push(`Death year unknown: the window ends at the end of the CFAH reign (${cfahReign.date}).`); }
   if (start == null && ys.length) { start = Math.min(...ys); notes.push('Birth year unknown in tiers 1–4 or Generations (provisional): the window starts at the first linked event.'); }
   if (stop == null && ys.length) { stop = Math.max(...ys); notes.push(`Death year unknown in tiers 1–4 or Generations (provisional): the window ends at the last linked event (${own.find((e) => e.sorting_year === stop).title}, ${yearLabel(stop)}).`); }
   // no birth or death year: a reign gives the window
@@ -392,7 +401,7 @@ function personTimeline(p) {
   if (reign) { start = reign.y; stop = reign.yEnd ?? reign.y; notes.push(`No birth or death year in tiers 1–4 or the provisional sources: the window shows the reign (${yearLabel(start)}${stop !== start ? `–${yearLabel(stop)}` : ''}${reign.tier === 'provisional' ? ', provisional' : ''}).`); }
   if (start == null && stop == null) return { none: true, notes: ['No birth or death year in tiers 1–4 and no dated linked events, so there is no timeline yet.'], ownUndated };
   if (start == null) { start = stop; notes.push('Birth year unknown and no earlier linked event.'); }
-  if (stop == null) { stop = start; notes.push('Death year unknown and no linked events after birth: the window shows the birth year only.'); }
+  if (stop == null) { stop = start; notes.push(cfahReign && birth == null ? 'Death year and reign end unknown, and no later linked event: the window shows the reign date only.' : 'Death year unknown and no linked events after birth: the window shows the birth year only.'); }
   if (stop < start) [start, stop] = [stop, start];
   // own-life events dated outside the lifespan (e.g. a provisional Generations date on a different chronology) widen the window so they stay visible
   const outside = own.filter((e) => e.sorting_year < start || e.sorting_year > stop);
@@ -405,11 +414,13 @@ function personTimeline(p) {
   const isEndEvt = (e) => end && e.sorting_year === end.y && (/death|translated/.test(e.id));
   if (birth && !own.some(isBirthEvt)) items.push({ id: 'birth', group: 'own', own: true, title: `Birth of ${p.title}`, y: birth.y, label: yearLabel(birth.y, birth.yEnd), tier: (TIERS[birth.tier] || TIERS.none).cls, url: '#birth', order: -1 });
   if (end && !own.some(isEndEvt)) items.push({ id: endKind, group: 'own', own: true, title: `${endKind === 'death' ? 'Death' : 'Translation'} of ${p.title}`, y: end.y, label: yearLabel(end.y, end.yEnd), tier: (TIERS[end.tier] || TIERS.none).cls, url: `#${endKind}`, order: 9 });
+  if (cfahReign) items.push({ id: 'cfah-reign', group: 'own', own: true, title: `Reign of ${p.title} (CFAH: ${cfahReign.date})`, y: cfahReign.year_bc_ad, label: yearLabel(cfahReign.year_bc_ad, cfahReign.year_bc_ad_end ?? null), tier: TIERS.none.cls, url: '#reign', order: 0 });
+  if (textDeath) items.push({ id: 'cfah-death', group: 'own', own: true, title: `Death of ${p.title} (CFAH: ${textDeath.date})`, y: textDeath.year_bc_ad, label: yearLabel(textDeath.year_bc_ad), tier: TIERS.none.cls, url: '#death', order: 9 });
   for (const e of own) items.push({ id: e.id, group: 'own', own: true, title: e.title, y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
   const ctx = events.filter((e) => !ownIds.has(e.id) && e.sorting_year != null && e.sorting_year >= start && e.sorting_year <= stop);
   for (const e of ctx) items.push({ id: e.id, group: 'context', own: false, title: e.title, y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
   items.sort((a, b) => a.y - b.y || a.order - b.order || a.title.localeCompare(b.title));
-  return { start, stop, birth, end, endKind, items, notes, ownUndated, ownCount: items.filter((i) => i.own).length, ctxCount: ctx.length };
+  return { start, stop, birth, end: end || (textDeath ? { y: textDeath.year_bc_ad, yEnd: null, tier: 'none' } : null), endKind: endKind || (textDeath ? 'death' : null), items, notes, ownUndated, ownCount: items.filter((i) => i.own).length, ctxCount: ctx.length };
 }
 const personTimelines = {};
 
@@ -449,8 +460,10 @@ ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years
   const fam = `<section class="card"><h2>Family</h2><dl class="facts"><div><dt>Father</dt><dd>${p.father ? link(p.father) : '<span class="muted">Not recorded</span>'}</dd></div>${p.children?.length ? `<div><dt>Children</dt><dd>${p.children.map(link).join(', ')}</dd></div>` : ''}</dl></section>`;
   const tables = ['birth', 'death', 'translated', 'reign'].filter((k) => d[k]?.length).map((k) => `<section class="card" id="${k}"><h2>${k[0].toUpperCase() + k.slice(1)}</h2>${chronTable(d[k], { sortYear: k === 'birth' ? p.sorting_year : null, basis: k === 'birth' ? p.sorting_basis : null, caption: `${k} of ${p.title}, CFAH first` })}${flagsSection({ sorting_year: null }, d[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"')}</section>`).join('\n');
   const evs = [...new Set([...(p.events || []), ...eventsWith(p.id)])];
+  const kls = kingListsOf(p.id);
+  const kingCard = p.dynasty || kls.length ? `<section class="card" id="king-lists"><h2>Dynasty and king lists</h2>${p.dynasty ? `<p>Dynasty: ${esc(p.dynasty)}</p>` : ''}${kls.length ? `<p>Listed in: ${kls.map((l) => `<a href="/king-lists/#${esc(l.id)}">${esc(l.title)}</a>`).join('; ')}</p>` : ''}</section>` : '';
   const body = `${crumbs(p)}<article>${head(p)}${sortBadge(p)}
-${p.description ? `<section class="card"><h2>Description</h2><p>${esc(p.description)}</p></section>` : ''}
+${p.description ? `<section class="card"><h2>Description</h2><p>${esc(p.description)}</p></section>` : ''}${kingCard}
 ${p.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(p.scripture_refs)}</section>` : ''}
 <div class="grid2">${fam}${facts}</div>
 ${personTimelineSection(p)}
@@ -529,7 +542,7 @@ ${sourcesSection(m)}</article>`;
   const body = `<h1>Chronologies &amp; sorting</h1>
 <section class="card"><h2>How the timeline is sorted</h2><p>${esc(rule.description)}</p>
 <ol class="tiers">${rule.tiers.map((t) => `<li><span class="tier tier-${['t1', 't2', 't3', 't4'][t.rank - 1]}">${esc(TIERS[t.tier]?.label || t.tier)}</span> <span class="muted small">${esc(t.select)}</span></li>`).join('')}</ol>
-<p class="small muted">${esc(rule.fallbacks)}</p></section>
+<p class="small muted">${esc(rule.fallbacks)}</p>${kingDoc.lists.length ? `<p><a href="/king-lists/">CFAH king lists and dynasty tables</a></p>` : ''}</section>
 ${[...chronologies].sort((a, b) => a.sort_priority - b.sort_priority).map((c) => `<section class="card" id="${esc(c.id)}"><h2>${esc(c.name)}${c.primary ? ' <span class="tag tag-t1">primary</span>' : ''}</h2>
 ${c.authors?.length ? `<p class="muted">${esc(c.authors.join(', '))}</p>` : ''}<p>${esc(c.description)}</p>
 ${c.year_conventions ? `<p class="small muted">${esc(c.year_conventions)}</p>` : ''}
@@ -549,6 +562,18 @@ ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) =
 ${groups.map((g) => `<section aria-labelledby="paper-${esc(g.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}"><h2 id="paper-${esc(g.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}">${esc(g)} <span class="muted small">(${charts.filter((c) => c.paper === g).length})</span></h2>
 <ul class="chart-grid">${charts.filter((c) => c.paper === g).map((c) => chartCard(c, 'h3')).join('')}</ul></section>`).join('\n')}`;
   out('gallery/index.html', page({ title: 'CFAH charts', desc: `Gallery of ${charts.length} CFAH charts and figures, linked to their papers.`, body, path: '/gallery/', type: 'Chart' }));
+}
+
+// King lists (CFAH pass, phase 3)
+if (kingDoc.lists.length) {
+  const rowCell = (e) => [e.person ? link(e.person) : '', e.event ? link(e.event) : ''].filter(Boolean).join(' · ') || '<span class="muted">No record</span>';
+  const body = `<h1>King lists and dynasty tables (CFAH)</h1>
+<section class="card"><p>${esc(kingDoc.note || '')}</p><nav aria-label="King lists"><ul class="chip-list">${kingDoc.lists.map((l) => `<li><a href="#${esc(l.id)}">${esc(l.title)}</a></li>`).join('')}</ul></nav></section>
+${kingDoc.lists.map((l) => `<section class="card" id="${esc(l.id)}" aria-labelledby="${esc(l.id)}-h"><h2 id="${esc(l.id)}-h">${esc(l.title)}</h2><p class="small muted">${esc(l.region)} · ${esc(l.citation_short)}${sourceById[l.source] ? ` · ${ext(sourceById[l.source].url, esc(sourceById[l.source].title))}` : ''}</p>
+<div class="table-wrap"><table class="chron"><caption class="visually-hidden">${esc(l.title)}</caption><thead><tr><th scope="col">Ruler or dynasty</th><th scope="col">Dates as printed</th><th scope="col">Records</th></tr></thead><tbody>${l.entries.map((e) => `<tr><th scope="row">${esc(e.name)}</th><td>${e.dates ? esc(e.dates) : '<span class="muted">No BC date</span>'}${e.ap ? ` <span class="tag tag-ap">${esc(e.ap)}</span>` : ''}</td><td>${rowCell(e)}</td></tr>`).join('')}</tbody></table></div>
+${l.unrecorded_reason ? `<p class="small muted">${esc(l.unrecorded_reason)}</p>` : ''}</section>`).join('\n')}
+${kingDoc.not_recorded?.length ? `<section class="card"><h2>Lists not stored</h2><ul>${kingDoc.not_recorded.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></section>` : ''}`;
+  out('king-lists/index.html', page({ title: 'King lists', desc: 'CFAH king lists and dynasty tables, linked to rulers and events.', body, path: '/king-lists/', type: 'Chronology' }));
 }
 
 // About

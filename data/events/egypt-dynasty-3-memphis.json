@@ -59,7 +59,9 @@
       "note": "Seneferu (Sneferu), builder of the Bent Pyramid, ruled about this time. Differs from the sort year (2029 BC, cfah-anchor) by 253 years."
     }
   ],
-  "people": [],
+  "people": [
+    "nebka"
+  ],
   "locations": [
     "egypt"
   ],

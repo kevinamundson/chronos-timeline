@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "kandalanu",
+  "type": "person",
+  "title": "Kandalanu",
+  "summary": "Last king before Nabopolassar in the Babylonian King List.",
+  "description": "Last king before Nabopolassar in the Babylonian King List. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "627 B.C.",
+        "year_am": null,
+        "year_bc_ad": -627,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"Kassite Synchronisms\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "End of the Babylonian King List (\"to Kandalanu in 627 B.C.\"). CFAH-5 lists him with 22 years in Dynasty 7 (Royal Canon).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-kandalanu:kandalanu:reign"
+      }
+    ]
+  },
+  "events": [
+    "babylon-dynasty-7-assyrian"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"Kassite Synchronisms\""
+    }
+  ],
+  "dynasty": "Babylon Dynasty 7 (Assyrian)"
+}

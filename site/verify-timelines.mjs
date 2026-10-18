@@ -26,7 +26,9 @@ const expect = live ? await (await fetch(`${BASE}/data/person-timelines.json`, {
 const single = Object.keys(expect).find((k) => !expect[k].none && expect[k].own + expect[k].context === 1);
 // AD-era people (Generations import) exercise the AD side of the axis (AD y -> axis y-1).
 const AD = ['augustine-of-hippo', 'robert-moffat', 'boniface', 'william-carey', 'adoniram-judson'].filter((k) => expect[k] && !expect[k].none);
-const PEOPLE = ['joseph', 'abraham', 'noah', 'moses', single, ...AD];
+// CFAH rulers dated by reign (and a display-only CFAH death) rather than a tier birth year (CFAH pass, phase 3).
+const RULERS = ['senusret-iii', 'nebka'].filter((k) => expect[k] && !expect[k].none);
+const PEOPLE = ['joseph', 'abraham', 'noah', 'moses', single, ...AD, ...RULERS];
 const WIDTHS = [[1024, 900], [1440, 900], [390, 844]];
 const results = []; let failed = false;
 const check = (name, ok, detail = '') => { results.push(`${ok ? 'PASS' : 'FAIL'}  ${name}${detail ? ` — ${detail}` : ''}`); if (!ok) failed = true; };

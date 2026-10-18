@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "neferhotep-i",
+  "type": "person",
+  "title": "Neferhotep I",
+  "summary": "King of Egypt's Dynasty 13, who CFAH says served in the administration of Senusret III.",
+  "description": "King of Egypt's Dynasty 13, who CFAH says served in the administration of Senusret III. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "1576 BC ±2.5 years",
+        "year_am": null,
+        "year_bc_ad": -1576,
+        "precision": "approximate",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"Neferhotep I and Senusret III Synchronism\"",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "Start of Neferhotep's reign.",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-neferhotep1-start:neferhotep-i:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-6"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"Neferhotep I and Senusret III Synchronism\""
+    }
+  ],
+  "dynasty": "Egypt Dynasty 13"
+}

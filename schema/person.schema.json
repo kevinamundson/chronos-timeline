@@ -34,6 +34,7 @@
         "reign": { "$ref": "common.schema.json#/$defs/chronologyEntries", "description": "Reign (accession, length, end). Display only: never used for sorting, which uses birth." }
       }
     },
+    "dynasty": { "type": "string", "minLength": 1, "description": "Dynasty or ruling house (CFAH king lists); see data/king-lists.json." },
     "events": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }
   }
 }

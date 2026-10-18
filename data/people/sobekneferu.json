@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "sobekneferu",
+  "type": "person",
+  "title": "Sobekneferu",
+  "summary": "Last ruler of Egypt's Dynasty 12; CFAH identifies her with the barren royal daughter who raised Moses.",
+  "description": "Last ruler of Egypt's Dynasty 12; CFAH identifies her with the barren royal daughter who raised Moses. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "death": [
+      {
+        "source": "cfah",
+        "date": "no later than 1525 BC",
+        "year_am": null,
+        "year_bc_ad": -1525,
+        "precision": "terminus-ante-quem",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"12. Barren Queen with Moses\"",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "\"Sobekneferu died no later than 1525 BC, and probably about a year earlier.\" CFAH adds that if she was at least 25 when Moses was born her birth was no later than 1596 BC (conjecture; not recorded as a birth date).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-sobekneferu-death:sobekneferu:death"
+      }
+    ]
+  },
+  "events": [
+    "end-of-egypt-dynasty-12"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-6"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"12. Barren Queen with Moses\""
+    }
+  ],
+  "dynasty": "Egypt Dynasty 12"
+}

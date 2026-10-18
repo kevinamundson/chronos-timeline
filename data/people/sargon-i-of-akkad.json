@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "sargon-i-of-akkad",
+  "type": "person",
+  "title": "Sargon of Akkad",
+  "summary": "Founder of the Akkadian empire.",
+  "description": "Founder of the Akkadian empire. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "alt_names": [
+    "Sargon I"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "earliest … 1642 B.C. … latest date for his death in 1553 B.C.",
+        "year_am": null,
+        "year_bc_ad": -1642,
+        "year_bc_ad_end": -1553,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"8. Sargon of Akkad and Pepi I\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "From the Sumerian King List durations: \"the earliest date for the start of Sargon’s reign in the year 1642 B.C., and the latest date for his death in 1553 B.C.\" The OSF preprint CFAH-15 dates the start of his reign to 1619 BC (AP-92; open question I8).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-sargon-akkad:sargon-i-of-akkad:reign"
+      }
+    ]
+  },
+  "events": [
+    "sargon-of-akkad"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"8. Sargon of Akkad and Pepi I\""
+    }
+  ],
+  "dynasty": "Akkad"
+}

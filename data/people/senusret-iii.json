@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "senusret-iii",
+  "type": "person",
+  "title": "Senusret III",
+  "summary": "King of Egypt's Dynasty 12, identified by CFAH with the \"Egyptian Belus\" of the chroniclers.",
+  "description": "King of Egypt's Dynasty 12, identified by CFAH with the \"Egyptian Belus\" of the chroniclers. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "alt_names": [
+    "Sesostris III",
+    "Egyptian Belus"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "1613 to 1573 BC",
+        "year_am": null,
+        "year_bc_ad": -1613,
+        "year_bc_ad_end": -1573,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"Neferhotep I and Senusret III Synchronism\"",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "\"Having pinpointed the reign of Senusret III from 1613 to 1573 BC using Anchor Point #59\".",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-senusret3-reign:senusret-iii:reign"
+      }
+    ]
+  },
+  "events": [
+    "reign-of-senusret-iii",
+    "senusret-iii-astronomical-college",
+    "aswan-canal"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-6"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"Neferhotep I and Senusret III Synchronism\""
+    }
+  ],
+  "dynasty": "Egypt Dynasty 12"
+}

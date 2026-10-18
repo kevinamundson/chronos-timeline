@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "semiramis-i",
+  "type": "person",
+  "title": "Semiramis I",
+  "summary": "Queen of the chroniclers, wife of Ninus (Nimrod).",
+  "description": "Queen of the chroniclers, wife of Ninus (Nimrod). Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "2036–1994 B.C.",
+        "year_am": null,
+        "year_bc_ad": -2036,
+        "year_bc_ad_end": -1994,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-47: The Reign of Ninyas Zames/Gilgamesh: 2006–1968 B.C.\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "Her 42-year reign, \"triangulated\" in CFAH-3 (AP-21, on the event reign-of-semiramis-i).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-semiramis1-reign:semiramis-i:reign"
+      }
+    ]
+  },
+  "events": [
+    "reign-of-semiramis-i"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [
+    "nimrod"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"AP-47: The Reign of Ninyas Zames/Gilgamesh: 2006–1968 B.C.\""
+    }
+  ],
+  "dynasty": "Uruk / Assyria (chroniclers)"
+}

@@ -21,6 +21,7 @@ const { PHASE1 } = await import(pathToFileURL(join(here, 'anchors.mjs')).href);
 const PHASE4 = await opt('anchors-osf.mjs', 'PHASE4');
 const TABLE1 = await opt('table1.mjs', 'TABLE1');
 const KINGS = await opt('kings.mjs', 'RULERS');
+const EPOCHS = await opt('kings.mjs', 'EPOCHS');
 
 // ---- load
 const recs = {};
@@ -158,6 +159,12 @@ function resort(r) {
 for (const it of PHASE1) addEntry('phase1', it, 'anchor_point');
 for (const it of TABLE1) addEntry('phase2', it, 'table1_baseline');
 for (const it of KINGS) for (const [slot, ent] of Object.entries(it.dates || {})) for (const x of ent) addEntry('phase3', { ...x, target: it.id, kind: 'person', slot, create: it.create, key: x.key }, x.basis || 'paper_text');
+// link CFAH-created rulers from their events (event pages list them under People)
+for (const it of KINGS) for (const ev of it.create?.events || []) {
+  const r = recs[ev]; if (!r || r.doc.type !== 'event') continue;
+  if (!r.doc.people.includes(it.id)) { r.doc.people.push(it.id); r.dirty = true; log.phase3.updated.add(ev); }
+}
+for (const it of EPOCHS) addEntry('phase3', it, 'paper_text');
 for (const it of PHASE4) addEntry('phase4', it, 'anchor_point');
 dropStale();
 backfill();

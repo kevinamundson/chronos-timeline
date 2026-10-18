@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "intef-iii",
+  "type": "person",
+  "title": "Inteff III",
+  "summary": "King of Thebes in Egypt's Dynasty 11, in whose reign a famine is recorded.",
+  "description": "King of Thebes in Egypt's Dynasty 11, in whose reign a famine is recorded. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "alt_names": [
+    "Intef III"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "1816 to 1808 BC",
+        "year_am": null,
+        "year_bc_ad": -1816,
+        "year_bc_ad_end": -1808,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"5. Isaac’s Famine: ~1816 BC\"",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "From CFAH's placement of Dynasty 11 and the Turin Canon.",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-intef3-reign:intef-iii:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-6"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"5. Isaac’s Famine: ~1816 BC\""
+    }
+  ],
+  "dynasty": "Egypt Dynasty 11"
+}

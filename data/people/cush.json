@@ -64,6 +64,21 @@
         "note": "Jordan: \"If we assume births every two years, and about 30 years between generations ... we can come up with an approximate series of dates\" (hypothetical, not stated by Scripture).",
         "source_text_id": "jordan-bc-6-5"
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "from the founding of Babel in 2233 B.C.",
+        "year_am": null,
+        "year_bc_ad": -2233,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"The First Dynasties of Uruk and Kish\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "Cush's reign at Babel \"could be counted as 42.5 years from the founding of Babel in 2233 B.C.\" (other counts: 55 years from 2247 B.C. or 62 years from the first division). Berossus Dynasty 1 (AP-38) runs 2233—2191 B.C.",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-cush-babel:cush:reign"
+      }
     ]
   },
   "scripture_refs": [
@@ -73,7 +88,8 @@
   "sources": [
     "blb-biblehub",
     "jordan-bc-6-5",
-    "josephus-antiquities-whiston"
+    "josephus-antiquities-whiston",
+    "cfah-5"
   ],
   "free_source_links": [
     {
@@ -94,6 +110,11 @@
     {
       "source_id": "openbible-geo",
       "url": "https://www.openbible.info/geo/ancient/ac5a1ec/cush-1"
+    },
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"The First Dynasties of Uruk and Kish\""
     }
   ],
   "related": [

@@ -47,7 +47,10 @@
       "note": "No matching entry found in Ussher's Annals."
     }
   ],
-  "people": [],
+  "people": [
+    "senusret-iii",
+    "merenre-i"
+  ],
   "locations": [
     "egypt"
   ],

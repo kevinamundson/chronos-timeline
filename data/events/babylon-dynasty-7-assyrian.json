@@ -29,7 +29,9 @@
       "cfah_key": "cfah:ap-44:babylon-dynasty-7-assyrian"
     }
   ],
-  "people": [],
+  "people": [
+    "kandalanu"
+  ],
   "locations": [
     "babel"
   ],

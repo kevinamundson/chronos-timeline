@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "nabopolassar",
+  "type": "person",
+  "title": "Nabopolassar",
+  "summary": "Founder of the Neo-Babylonian (Chaldean) dynasty, father of Nebuchadnezzar II.",
+  "description": "Founder of the Neo-Babylonian (Chaldean) dynasty, father of Nebuchadnezzar II. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "626/625 B.C.",
+        "year_am": null,
+        "year_bc_ad": -626,
+        "year_bc_ad_end": -625,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-45: Dynasty 8: Neo-Babylonian Empire: 626–539 B.C.\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "When Nabopolassar \"took the kingship of Babylon away from Assyria\".",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-nabopolassar-start:nabopolassar:reign"
+      }
+    ]
+  },
+  "events": [
+    "neo-babylonian-empire",
+    "fall-of-nineveh"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [
+    "nebuchadnezzar-ii"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"AP-45: Dynasty 8: Neo-Babylonian Empire: 626–539 B.C.\""
+    }
+  ],
+  "dynasty": "Babylon Dynasty 8 (Neo-Babylonian)"
+}

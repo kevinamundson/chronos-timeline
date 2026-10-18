@@ -1,0 +1,151 @@
+{
+  "$schema": "../schema/king-lists.schema.json",
+  "note": "King lists, dynasty tables and national epochs dated by CFAH. Rows link to person or event records where the data set has one; dates are as printed in the CFAH paper cited. Maintained with the CFAH importer (scripts/cfah/). Regnal lengths alone are not copied: a list row without a BC date in CFAH gets no record.",
+  "lists": [
+    {
+      "id": "cfah5-berossus-dynasties",
+      "title": "Berossus: the eight Babylonian dynasties",
+      "region": "Babylonia",
+      "source": "cfah-5",
+      "citation_short": "CFAH-5, AP-38 to AP-45 sections and Table 3",
+      "entries": [
+        { "name": "Dynasty 1 (Chaldean)", "dates": "2233—2191 B.C.", "event": "babylon-dynasty-1-chaldean", "ap": "AP-38" },
+        { "name": "Dynasty 2 (Median)", "dates": "2191–1968 B.C.", "event": "median-dynasty-of-babylon", "ap": "AP-39" },
+        { "name": "Dynasty 3 (division and rebellion)", "dates": "1968–1935 B.C.", "event": "babylon-dynasty-3", "ap": "AP-40" },
+        { "name": "Dynasty 4 (Chaldean)", "dates": "1935—1477 B.C.", "event": "babylon-dynasty-4-chaldean", "ap": "AP-41" },
+        { "name": "Dynasty 5 (\"Arab\")", "dates": "1477–1232 B.C.", "event": "babylon-dynasty-5-arab", "ap": "AP-42" },
+        { "name": "Dynasty 6 (Assyrian)", "dates": "1232–706 B.C.", "event": "babylon-dynasty-6-assyrian", "ap": "AP-43" },
+        { "name": "Dynasty 7 (second Assyrian)", "dates": "705–626 B.C.", "event": "babylon-dynasty-7-assyrian", "ap": "AP-44" },
+        { "name": "Dynasty 8 (Neo-Babylonian)", "dates": "626–539 B.C.", "event": "neo-babylonian-empire", "ap": "AP-45" }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "cfah5-dynasty-7-royal-canon",
+      "title": "Berossus Dynasty 7 from the Royal (Ptolemaic) Canon",
+      "region": "Babylonia",
+      "source": "cfah-5",
+      "citation_short": "CFAH-5, section \"AP-44: Dynasty 7: Second Assyrian Dynasty of Babylon: 705–626 B.C.\"",
+      "entries": [
+        { "name": "Kingless (2 years)", "dates": null },
+        { "name": "Bel-ibni (3 years)", "dates": null },
+        { "name": "Assur-nadin-shum (6 years)", "dates": null },
+        { "name": "Nergal-ushezib (1 year)", "dates": null },
+        { "name": "Mushezib-Marduk (4 years)", "dates": null },
+        { "name": "Kingless (8 years)", "dates": null },
+        { "name": "Assur-akh-iddin (Esarhaddon, 13 years)", "dates": null },
+        { "name": "Shamash-shum-ukin (20 years)", "dates": null },
+        { "name": "Kandalanu (22 years)", "dates": "627 B.C. (end of the Babylonian King List, section \"Kassite Synchronisms\")", "person": "kandalanu" }
+      ],
+      "unrecorded_reason": "CFAH-5 gives these kings regnal lengths only (summed to fill 705–626 B.C.), not BC years for each, so no person records were made."
+    },
+    {
+      "id": "cfah5-mesopotamian-rulers",
+      "title": "Assyrian, Babylonian and Akkadian rulers dated in CFAH-5",
+      "region": "Mesopotamia",
+      "source": "cfah-5",
+      "citation_short": "CFAH-5, sections cited on each person's reign entry",
+      "entries": [
+        { "name": "Cush (at Babel)", "dates": "from the founding of Babel in 2233 B.C.", "person": "cush", "event": "founding-of-babel" },
+        { "name": "Semiramis I", "dates": "2036–1994 B.C.", "person": "semiramis-i", "event": "reign-of-semiramis-i", "ap": "AP-21" },
+        { "name": "Ninyas Zames (Gilgamesh)", "dates": "2006–1968 B.C.", "person": "ninyas", "event": "reign-of-ninyas-gilgamesh", "ap": "AP-47" },
+        { "name": "Sargon of Akkad", "dates": "earliest 1642 B.C. to latest 1553 B.C.", "person": "sargon-i-of-akkad", "event": "sargon-of-akkad" },
+        { "name": "Ghandash (first Kassite king)", "dates": "1282 B.C.", "person": "ghandash" },
+        { "name": "Shalmaneser I (Assyrian Belus)", "dates": "1261", "person": "shalmaneser-i", "event": "assyrian-belus-shalmaneser-i", "ap": "AP-36" },
+        { "name": "Tukulti-Ninurta I (Semiramis II)", "dates": "sole reign around 1232 B.C.", "person": "tukulti-ninurta-i", "event": "semiramis-ii", "ap": "AP-15" },
+        { "name": "Kashtiliash I", "dates": "defeated 1232 B.C.", "person": "kashtiliash-i" },
+        { "name": "Ashur-danin-pal (Sardanapalus I)", "dates": "843 to 823 B.C. (also: until his death in 824 B.C.)", "person": "ashur-danin-pal", "event": "first-median-revolt" },
+        { "name": "Sargon II (Sardanapalus II)", "dates": "720 or 721 to 705", "person": "sargon-ii", "event": "second-median-revolt", "ap": "AP-34" },
+        { "name": "Kandalanu", "dates": "627 B.C.", "person": "kandalanu" },
+        { "name": "Nabopolassar", "dates": "626/625 B.C.", "person": "nabopolassar", "event": "neo-babylonian-empire", "ap": "AP-45" }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "cfah6-egyptian-rulers",
+      "title": "Old and Middle Kingdom rulers of Egypt dated in CFAH-6",
+      "region": "Egypt",
+      "source": "cfah-6",
+      "citation_short": "CFAH-6, sections cited on each person's reign or death entry",
+      "entries": [
+        { "name": "Nebka (Necherophes), Dynasty 3", "dates": "2029 BC to shortly before 2001 BC", "person": "nebka", "event": "egypt-dynasty-3-memphis" },
+        { "name": "Menkaure (Mycerinus), Dynasty 4", "dates": "died about 1790 BC", "person": "mycerinus" },
+        { "name": "Inteff III, Dynasty 11", "dates": "1816 to 1808 BC", "person": "intef-iii" },
+        { "name": "Mentuhotep II, Dynasty 11", "dates": "1808 BC", "event": "accession-of-mentuhotep-ii", "ap": "AP-56" },
+        { "name": "Mentuhotep IV, Dynasty 11", "dates": "1745 BC (start)", "person": "mentuhotep-iv" },
+        { "name": "Amenemhat I, Dynasty 12", "dates": "1738 BC", "event": "accession-of-amenemhat-i", "ap": "AP-53" },
+        { "name": "Unas, Dynasty 5", "dates": "1715 to 1682 BC", "person": "unas" },
+        { "name": "Pepi I, Dynasty 6", "dates": "sole reign 1637 BC ±2 years (CFAH-5: about 1646 to 1593 B.C.)", "person": "pepi-i" },
+        { "name": "Userkare (Khendjer), Dynasty 6/13", "dates": "coregency ends 1637 BC ±2 years", "person": "userkare" },
+        { "name": "Senusret III, Dynasty 12", "dates": "1613 to 1573 BC", "person": "senusret-iii", "event": "reign-of-senusret-iii" },
+        { "name": "Merenre I, Dynasty 6", "dates": "Year 1 1606 BC ±2 years; died 1586 BC", "person": "merenre-i", "event": "aswan-canal", "ap": "AP-59" },
+        { "name": "Amenemhat III, Dynasty 12", "dates": "coreign from 1586 BC ±1.5 years", "person": "amenemhat-iii" },
+        { "name": "Neferhotep I, Dynasty 13", "dates": "1576 BC ±2.5 years (start)", "person": "neferhotep-i" },
+        { "name": "Sobekneferu, Dynasty 12", "dates": "died no later than 1525 BC", "person": "sobekneferu", "event": "end-of-egypt-dynasty-12" },
+        { "name": "Nitocris, Dynasty 6", "dates": "1497–1479", "person": "nitocris", "event": "reign-of-nitocris", "ap": "AP-16" },
+        { "name": "Merenre II, Dynasty 6", "dates": "died 1491 BC", "person": "merenre-ii", "event": "death-of-concharis" }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "cfah6-table6-dynasty-dates",
+      "title": "CFAH estimated Egyptian dynasty dates (Dynasties 1–11)",
+      "region": "Egypt",
+      "source": "cfah-6",
+      "citation_short": "CFAH-6, Table 6 \"CFAH estimated dynasty dates\"",
+      "entries": [
+        { "name": "Dynasty 1", "dates": "2191 / 2188 to 1924", "event": "egyptian-cities-founded" },
+        { "name": "Dynasty 2", "dates": "1924 to ~1738", "event": null },
+        { "name": "Dynasty 3", "dates": "2029 to 1922", "event": "egypt-dynasty-3-memphis" },
+        { "name": "Dynasty 4", "dates": "1922 to 1825", "event": null },
+        { "name": "Dynasty 5", "dates": "1822 to 1682", "event": null },
+        { "name": "Dynasty 6", "dates": "1682 to 1479", "event": "reign-of-nitocris" },
+        { "name": "Dynasty 7", "dates": "1479 to 1479 (70 days)", "event": null },
+        { "name": "Dynasty 8", "dates": "1479 to 1232", "event": "end-of-egypt-dynasty-8" },
+        { "name": "Dynasty 9", "dates": "2190/1881 to 1781", "event": "fall-of-heracleopolis" },
+        { "name": "Dynasty 10", "dates": "1781 to 1577", "event": null },
+        { "name": "Dynasty 11", "dates": "1881 to 1738", "event": "accession-of-amenemhat-i" }
+      ],
+      "unrecorded_reason": "Rows without an event: the data set has no record for that dynasty as a whole, and Table 6 marks these dates as estimates (no anchor point). They are shown here rather than as new events."
+    },
+    {
+      "id": "cfah6-sothis-king-list",
+      "title": "Sothis King List with CFAH identifications (rows dated elsewhere in CFAH-6)",
+      "region": "Egypt",
+      "source": "cfah-6",
+      "citation_short": "CFAH-6, Table 4 (Sothis King List)",
+      "entries": [
+        { "name": "#12 Chnubos = Inteff III", "dates": "1816 to 1808 BC", "person": "intef-iii" },
+        { "name": "#13 Rayosis = Mentuhotep II", "dates": "1808 BC", "event": "accession-of-mentuhotep-ii", "ap": "AP-56" },
+        { "name": "#14 Biyres = Amenemhat I", "dates": "1738 BC", "event": "accession-of-amenemhat-i", "ap": "AP-53" },
+        { "name": "#17 Moscheres/Mencheres = Userkare Khendjer", "dates": "coregency ends 1637 BC ±2 years", "person": "userkare" },
+        { "name": "#18 Mosthes = Senusret III", "dates": "1613 to 1573 BC", "person": "senusret-iii" },
+        { "name": "#19 Pammes = Amenemhat III", "dates": "coreign from 1586 BC ±1.5 years", "person": "amenemhat-iii" },
+        { "name": "#21 Echeskosokaras = Merenre Nemtyemsaf II", "dates": "died 1491 BC", "person": "merenre-ii" },
+        { "name": "#22 Nitocris = Netjerikare Siptah", "dates": "1497–1479", "person": "nitocris", "ap": "AP-16" }
+      ],
+      "unrecorded_reason": "Only the rows CFAH-6 dates in BC are listed. The other 30 rows of Table 4 carry regnal lengths and identifications only, so they are not copied."
+    },
+    {
+      "id": "cfah2-national-epochs",
+      "title": "National founding epochs (CFAH-2 durations)",
+      "region": "World",
+      "source": "cfah-2",
+      "citation_short": "CFAH-2, sections \"Duration 14\" and \"Duration 15\"",
+      "entries": [
+        { "name": "Founding of Sicyon", "dates": "2089 or 2076 BC", "event": "founding-of-sicyon" },
+        { "name": "Founding of Trier", "dates": "2053 BC", "event": "founding-of-trier" }
+      ],
+      "unrecorded_reason": null
+    }
+  ],
+  "not_recorded": [
+    "CFAH-6 Table 5 (Eratosthenes King List): regnal lengths and identifications only; the dated rulers it names are in cfah6-egyptian-rulers.",
+    "CFAH-5 Table 4 (the Ctesias recensions of the Assyrian kings): regnal years only, no BC dates per king.",
+    "CFAH-5 Table 2/3 (Berossus): the dynasty rows are in cfah5-berossus-dynasties; Table 3 kings and lengths add no BC dates.",
+    "CFAH-4 Table 1 (Chinese patriarchs): ages only, no BC dates.",
+    "CFAH-2 durations for Peru (2198/7 BC) and Yao–Shun (2277–2247 BC): the data set has no event for them, and these are not numbered anchor points, so per A1 they stay out of the event data. Ireland (2035 BC) is the event partholan-colonizes-ireland (OSF AP-103).",
+    "CFAH-6 Fig. 16 (patriarch overlaps): an image chart; the patriarchs' birth and death dates are already recorded from the CFAH tables and charts on their person records.",
+    "OSF preprints CFAH-7B (kings of Dynasties 1–13), CFAH-9, 10 and 14 to 16 (Egyptian dynasties 19 to 26, Assyrian and Sumerian king lists, the kings of Israel and Judah): per-king dates there are reconstructions in long tables. Their numbered anchor points are recorded (phase 4), but the per-king rows are not imported in this pass (see open question E5)."
+  ]
+}

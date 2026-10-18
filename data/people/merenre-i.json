@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "merenre-i",
+  "type": "person",
+  "title": "Merenre I",
+  "summary": "King of Egypt's Dynasty 6 whose men cut the Aswan canal in his first year.",
+  "description": "King of Egypt's Dynasty 6 whose men cut the Aswan canal in his first year. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "1606 BC ±2 years error for Year 1 of Merenre I",
+        "year_am": null,
+        "year_bc_ad": -1606,
+        "precision": "approximate",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"C. The Aswan Canal\"",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "Year 1 of Merenre I, the year the Aswan canal was cut (AP-59 is on the event aswan-canal).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-merenre1-y1:merenre-i:reign"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": "1586 BC",
+        "year_am": null,
+        "year_bc_ad": -1586,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"The Aswan Canal of Senusret III and Merenre I\"",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "\"In this chronology, 1586 BC was also the year that Merenre I died\".",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-merenre1-death:merenre-i:death"
+      }
+    ]
+  },
+  "events": [
+    "aswan-canal"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-6"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"C. The Aswan Canal\""
+    },
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"The Aswan Canal of Senusret III and Merenre I\""
+    }
+  ],
+  "dynasty": "Egypt Dynasty 6"
+}

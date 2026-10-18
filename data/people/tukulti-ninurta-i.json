@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "tukulti-ninurta-i",
+  "type": "person",
+  "title": "Tukulti-Ninurta I",
+  "summary": "King of Assyria who took Babylon; CFAH matches him with the chroniclers' Semiramis II.",
+  "description": "King of Assyria who took Babylon; CFAH matches him with the chroniclers' Semiramis II. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "alt_names": [
+    "Tukulti Ninurta I"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "around 1232 B.C.",
+        "year_am": null,
+        "year_bc_ad": -1232,
+        "precision": "approximate",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-35: Fall of Akkad to the Guti Arabs: 1477/1476 B.C.\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "Start of the sole reign: \"Semiramis II began her sole reign around 1232 B.C., as did Tukulti Ninurta I.\" The Gideon section puts the first year of the coreign in 1251 B.C.",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-tn1-sole:tukulti-ninurta-i:reign"
+      }
+    ]
+  },
+  "events": [
+    "semiramis-ii",
+    "babylon-dynasty-6-assyrian"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"AP-35: Fall of Akkad to the Guti Arabs: 1477/1476 B.C.\""
+    }
+  ],
+  "dynasty": "Assyria"
+}

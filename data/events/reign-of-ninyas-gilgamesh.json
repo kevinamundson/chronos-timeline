@@ -59,7 +59,9 @@
       "note": "Gilgamesh's reign begins."
     }
   ],
-  "people": [],
+  "people": [
+    "ninyas"
+  ],
   "locations": [
     "nineveh",
     "erech"

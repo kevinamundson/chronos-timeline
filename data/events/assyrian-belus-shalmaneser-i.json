@@ -58,7 +58,9 @@
       "note": "Shalmaneser I."
     }
   ],
-  "people": [],
+  "people": [
+    "shalmaneser-i"
+  ],
   "locations": [
     "assur"
   ],

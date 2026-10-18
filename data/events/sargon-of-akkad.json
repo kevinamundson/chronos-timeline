@@ -73,7 +73,9 @@
       "note": "Heading \"The Akkadian Empire\". Timeline Review 3 (p. 247): \"Sargon defeats Lugal-zagezi 1622 BC\"."
     }
   ],
-  "people": [],
+  "people": [
+    "sargon-i-of-akkad"
+  ],
   "locations": [
     "accad"
   ],

@@ -29,7 +29,10 @@
       "cfah_key": "cfah:ap-43:babylon-dynasty-6-assyrian"
     }
   ],
-  "people": [],
+  "people": [
+    "tukulti-ninurta-i",
+    "kashtiliash-i"
+  ],
   "locations": [
     "babel"
   ],

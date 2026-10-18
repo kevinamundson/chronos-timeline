@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "kashtiliash-i",
+  "type": "person",
+  "title": "Kashtiliash",
+  "summary": "Kassite king of Babylon defeated by Tukulti-Ninurta I.",
+  "description": "Kassite king of Babylon defeated by Tukulti-Ninurta I. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "alt_names": [
+    "Kashtiliash IV (conventional)"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "death": [
+      {
+        "source": "cfah",
+        "date": "1232 B.C.",
+        "year_am": null,
+        "year_bc_ad": -1232,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"5. Kassites 576 y minus 50 to death of Kashtiliash\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "CFAH pegs \"the defeat of Kashtiliash I in 1232 B.C.\" to Tukulti-Ninurta I's conquest of Babylon (first as a thought experiment, then noted as fitting \"to the year\").",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-kashtiliash:kashtiliash-i:death"
+      }
+    ]
+  },
+  "events": [
+    "babylon-dynasty-6-assyrian"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"5. Kassites 576 y minus 50 to death of Kashtiliash\""
+    }
+  ],
+  "dynasty": "Kassite dynasty"
+}

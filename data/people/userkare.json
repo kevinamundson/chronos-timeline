@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "userkare",
+  "type": "person",
+  "title": "Userkare (Khendjer)",
+  "summary": "Coregent of Pepi I in Dynasty 6 whom CFAH-6 identifies with Userkare Khendjer of Dynasty 13.",
+  "description": "Coregent of Pepi I in Dynasty 6 whom CFAH-6 identifies with Userkare Khendjer of Dynasty 13. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "alt_names": [
+    "Khendjer"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "1637 BC ±2 years",
+        "year_am": null,
+        "year_bc_ad": -1637,
+        "precision": "approximate",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"Userkare goes from D6 to D12/13 and back to D6\"",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "End of Userkare's coregency with Pepi I (\"end of Userkare coregency\"). CFAH then moves him to the Dynasty 13 position until about 1606.",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-userkare-end:userkare:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-6"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"Userkare goes from D6 to D12/13 and back to D6\""
+    }
+  ],
+  "dynasty": "Egypt Dynasty 6 / 13"
+}

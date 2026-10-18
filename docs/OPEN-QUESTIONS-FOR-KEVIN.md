@@ -524,3 +524,31 @@ None of these records has a tier 1–4 date, so the sort stays on Generations an
   - Daniel taken to Babylon: 605 → 606 BC
   - Samaria, the second siege, 586 BC and the Second Temple keep their years but are now tier 2
 - **Recommendation:** no decision needed.
+
+### E4. Phase 3: rulers and king lists
+- **New person records (24), each with CFAH reign or death entries:**
+  - From CFAH-6 (Egypt, Old and Middle Kingdoms): Nebka, Merenre I, Merenre II, Nitocris, Pepi I, Userkare, Unas, Inteff III, Mentuhotep IV, Amenemhat III, Senusret III, Neferhotep I and Sobekneferu.
+  - From CFAH-5 (Mesopotamia): Cush's reign at Babel, Semiramis I, Ninyas/Gilgamesh, Sargon of Akkad, Ghandash, Shalmaneser I, Tukulti-Ninurta I, Kashtiliash, Ashur-danin-pal, Sargon II, Kandalanu and Nabopolassar.
+- **Existing records updated:**
+  - Two existing people got CFAH dates: Cush (reign) and Mycerinus/Menkaure (death "about 1790 BC").
+  - Two CFAH-2 epochs were attached to existing events: Sicyon "2089 or 2076 BC" and Trier "2053 BC".
+  - The rulers' 22 linked events now list them under People.
+- **How these dates behave:**
+  - None of these dates is an anchor point or a Table 1 row, so they use the new display-only basis `paper_text`. They never set a sort; rulers with no birth year have no sort year.
+  - Their lifetime timelines use the CFAH reign (and a CFAH death year where one is printed) to set the window.
+- **King lists:** `data/king-lists.json` (schema and validator check added) holds 7 lists, shown at /king-lists/:
+  - Berossus's eight dynasties
+  - the Dynasty 7 Royal Canon
+  - the Mesopotamian rulers
+  - the Egyptian rulers
+  - CFAH-6 Table 6 (dynasty dates)
+  - the dated rows of the Sothis King List
+  - the CFAH-2 epochs
+- **Not stored, with reasons** (also in `data/cfah-coverage.md` section 4):
+  - Lists that give lengths or ages only: Eratosthenes, Ctesias and the Chinese patriarchs.
+  - Peru and Yao–Shun: there is no event for them, and they are not anchor points (A1).
+- **Open choice:** should the people schema let a CFAH reign set a ruler's sort year when no birth year exists? At present persons sort on birth only, so these rulers sit in the "undated" group of people lists. **Recommendation:** leave as is, because the sort rule is birth-based by design.
+- **Importer order:**
+  - The Herodotus importer keeps only the first CFAH entry per slot on its own people, and drops CFAH-only reign slots.
+  - So the CFAH importer (`node scripts/cfah/import.mjs`) must run after it. It is idempotent and restores its entries.
+  - I put CFAH dates on only one Herodotus person (Mycerinus), and only in the death slot.

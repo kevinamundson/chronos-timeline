@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "merenre-ii",
+  "type": "person",
+  "title": "Merenre II",
+  "summary": "Penultimate king of Egypt's Dynasty 6 according to Manetho; husband of Nitocris.",
+  "description": "Penultimate king of Egypt's Dynasty 6 according to Manetho; husband of Nitocris. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "death": [
+      {
+        "source": "cfah",
+        "date": "1491 BC",
+        "year_am": null,
+        "year_bc_ad": -1491,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"D. The Death of Merenre II is Synchronized with the Death of Concharis of D13\"",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "Counted 12 years (Nitocris's reign in Africanus) before her death at Anchor Point #16: \"Merenre II died 12 years earlier in 1491 BC\". Synchronised with the death of Concharis (AP-51).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-merenre2-death:merenre-ii:death"
+      }
+    ]
+  },
+  "events": [
+    "death-of-concharis",
+    "reign-of-nitocris"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-6"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"D. The Death of Merenre II is Synchronized with the Death of Concharis of D13\""
+    }
+  ],
+  "dynasty": "Egypt Dynasty 6"
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "unas",
+  "type": "person",
+  "title": "Unas",
+  "summary": "Last king of Egypt's Dynasty 5.",
+  "description": "Last king of Egypt's Dynasty 5. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "1715 to 1682 BC",
+        "year_am": null,
+        "year_bc_ad": -1715,
+        "year_bc_ad_end": -1682,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"Unas Famine matches Senusret I Famine\"",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "His 33-year reign counted from Dynasty 6's 203 years before the death of Nitocris in 1479 BC; it overlaps Joseph's famine.",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-unas-reign:unas:reign"
+      }
+    ]
+  },
+  "events": [
+    "josephs-famine"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-6"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"Unas Famine matches Senusret I Famine\""
+    }
+  ],
+  "dynasty": "Egypt Dynasty 5"
+}

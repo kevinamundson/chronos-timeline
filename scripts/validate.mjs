@@ -43,6 +43,7 @@ const chronDoc = validate('data/chronologies.json', 'chronology');
 const srcDoc = validate('data/sources.json', 'source');
 const chronIds = new Set(chronDoc.chronologies.map((c) => c.id));
 const srcIds = new Set(srcDoc.sources.map((s) => s.id));
+const kingDoc = existsSync(join(root, 'data/king-lists.json')) ? validate('data/king-lists.json', 'king-lists') : null;
 if (chronIds.size !== chronDoc.chronologies.length) err('data/chronologies.json', 'duplicate chronology id');
 if (srcIds.size !== srcDoc.sources.length) err('data/sources.json', 'duplicate source id');
 if (chronDoc.chronologies.filter((c) => c.primary).length !== 1) err('data/chronologies.json', 'exactly one chronology must be primary');
@@ -297,6 +298,19 @@ for (const c of chartDoc.charts || []) {
   if (c.thumbnail && !c.thumbnail.startsWith('https://assets.answersresearchjournal.org/')) err('data/cfah-charts.json', `${c.id}: thumbnails may only hotlink publicly served ARJ images`);
 }
 
+// King lists (CFAH pass, phase 3): every row links to an existing record of the right kind; ids unique; source known.
+if (kingDoc) {
+  const seen = new Set();
+  for (const l of kingDoc.lists) {
+    if (seen.has(l.id)) err('data/king-lists.json', `duplicate list id ${l.id}`); seen.add(l.id);
+    if (!srcIds.has(l.source)) err('data/king-lists.json', `${l.id}: unknown source ${l.source}`);
+    for (const e of l.entries) {
+      if (e.person && records[e.person]?.kind !== 'person') err('data/king-lists.json', `${l.id}: person ${e.person} not found`);
+      if (e.event && records[e.event]?.kind !== 'event') err('data/king-lists.json', `${l.id}: event ${e.event} not found`);
+      if (!e.person && !e.event && !l.unrecorded_reason) err('data/king-lists.json', `${l.id}: row "${e.name}" has no record and the list gives no unrecorded_reason`);
+    }
+  }
+}
 if (errors.length) {
   console.error(`FAIL: ${errors.length} problem(s) in ${checked} files\n` + errors.map((e) => '  - ' + e).join('\n'));
   process.exit(1);

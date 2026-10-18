@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ashur-danin-pal",
+  "type": "person",
+  "title": "Ashur-danin-pal",
+  "summary": "Son of Shalmaneser III of Assyria, coregent with his father; CFAH takes him as the first Sardanapalus of the chroniclers.",
+  "description": "Son of Shalmaneser III of Assyria, coregent with his father; CFAH takes him as the first Sardanapalus of the chroniclers. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "843 to 823 B.C.",
+        "year_am": null,
+        "year_bc_ad": -843,
+        "year_bc_ad_end": -823,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"Sardanapalus\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "Coregent with Shalmaneser III. The AP-43 section gives the end as his death in 824 B.C. (open question I6).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-adp-reign:ashur-danin-pal:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "843 until his death in 824 B.C.",
+        "year_am": null,
+        "year_bc_ad": -843,
+        "year_bc_ad_end": -824,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-43: Conclusions for Dynasty 6: 1232–706 B.C.\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "Second statement in the same paper (open question I6).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-adp-reign-ap43:ashur-danin-pal:reign"
+      }
+    ]
+  },
+  "events": [
+    "first-median-revolt"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-5"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"Sardanapalus\""
+    },
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "\"AP-43: Conclusions for Dynasty 6: 1232–706 B.C.\""
+    }
+  ],
+  "dynasty": "Assyria"
+}

@@ -69,7 +69,9 @@
       "note": "Amenemhat founds the 12th Dynasty and builds Itjtawy."
     }
   ],
-  "people": [],
+  "people": [
+    "mentuhotep-iv"
+  ],
   "locations": [
     "egypt"
   ],

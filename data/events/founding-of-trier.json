@@ -4,7 +4,7 @@
   "type": "event",
   "title": "Founding of Trier",
   "summary": "Founding of Trier",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
   "sorting_year": -2053,
   "sorting_basis": {
     "tier": "provisional",
@@ -15,13 +15,16 @@
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "2053 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -2053,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 2: Founding of the Nations,\" ARJ 15 (2022): 405–426, section \"Duration 15: The Founding of Trier, Germany: 2053 BC\"",
+      "link": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "source_text_id": "cfah-2",
+      "note": "Trier's tradition (Gesta Treverorum) of its founding by Trebeta, son of Ninus. Not an anchor point, so display only.",
+      "cfah_basis": "paper_text",
+      "cfah_key": "cfah:c2-trier:founding-of-trier"
     },
     {
       "source": "generations",
@@ -40,8 +43,15 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cfah-2"
   ],
   "related": [],
-  "free_source_links": []
+  "free_source_links": [
+    {
+      "source_id": "cfah-2",
+      "url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "locator": "Duration 15"
+    }
+  ]
 }

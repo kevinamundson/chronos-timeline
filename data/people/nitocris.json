@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "nitocris",
+  "type": "person",
+  "title": "Nitocris (Netjerkare Siptah)",
+  "summary": "Queen of Egypt at the end of Dynasty 6.",
+  "description": "Queen of Egypt at the end of Dynasty 6. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
+  "alt_names": [
+    "Netjerkare Siptah"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "1497–1479",
+        "year_am": null,
+        "year_bc_ad": -1497,
+        "year_bc_ad_end": -1479,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"Argument 2. The Durations Form an Interlocking Matrix\", Table 1 (AP-16 row)",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "Table 1: \"Approximate reign of Nitocris aka Netjerkare Siptah\" (AP-16, from CFAH-3). The anchor point itself is on the event reign-of-nitocris.",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-nitocris-reign:nitocris:reign"
+      }
+    ]
+  },
+  "events": [
+    "reign-of-nitocris"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-6"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"Argument 2. The Durations Form an Interlocking Matrix\", Table 1 (AP-16 row)"
+    }
+  ],
+  "dynasty": "Egypt Dynasty 6"
+}

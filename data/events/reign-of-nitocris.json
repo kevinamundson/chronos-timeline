@@ -59,7 +59,10 @@
       "note": "CFAH-6 cites this chapter for Nitocris following Merenre II (AP-16, 1497–1479 BC). Order differs: Herodotus puts Nitocris among the 330 kings before Moeris (2.101); CFAH dates Moeris's death (about 1679 BC) before Nitocris (1497 BC), treating the lines as parallel."
     }
   ],
-  "people": [],
+  "people": [
+    "merenre-ii",
+    "nitocris"
+  ],
   "locations": [
     "egypt"
   ],

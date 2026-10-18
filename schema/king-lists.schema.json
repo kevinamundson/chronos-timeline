@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/king-lists.schema.json",
+  "title": "CFAH king lists, dynasty tables and national epochs",
+  "type": "object",
+  "required": ["lists", "not_recorded"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "note": { "type": "string" },
+    "lists": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "region", "source", "citation_short", "entries", "unrecorded_reason"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "common.schema.json#/$defs/slug" },
+          "title": { "type": "string", "minLength": 1 },
+          "region": { "type": "string" },
+          "source": { "type": "string", "description": "Source id in data/sources.json." },
+          "citation_short": { "type": "string", "minLength": 1 },
+          "unrecorded_reason": { "type": ["string", "null"] },
+          "entries": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["name", "dates"],
+              "additionalProperties": false,
+              "properties": {
+                "name": { "type": "string", "minLength": 1 },
+                "dates": { "type": ["string", "null"], "description": "As printed in the CFAH source; null when CFAH gives no BC date for the row." },
+                "person": { "$ref": "common.schema.json#/$defs/slug" },
+                "event": { "anyOf": [ { "$ref": "common.schema.json#/$defs/slug" }, { "type": "null" } ] },
+                "ap": { "type": "string", "pattern": "^AP-[1-9][0-9]*$" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "not_recorded": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+  }
+}

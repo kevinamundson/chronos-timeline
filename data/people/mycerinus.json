@@ -33,13 +33,16 @@
     "death": [
       {
         "source": "cfah",
-        "date": null,
+        "date": "about 1790 BC",
         "year_am": null,
-        "year_bc_ad": null,
-        "precision": "unknown",
-        "citation": null,
-        "link": null,
-        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+        "year_bc_ad": -1790,
+        "precision": "approximate",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, section \"B. The Great War links Dynasties 2, 4, 5, 9, 10, and 11: 1825–1769 BC\"",
+        "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+        "source_text_id": "cfah-6",
+        "note": "Menkaure (Herodotus's Mycerinus) \"lived 35 years into the Great War, thus dying about 1790 BC\".",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c6-menkaure-death:mycerinus:death"
       }
     ],
     "reign": [
@@ -81,7 +84,8 @@
   "scripture_refs": [],
   "sources": [
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "cfah-6"
   ],
   "related": [],
   "free_source_links": [
@@ -89,6 +93,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
       "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "\"B. The Great War links Dynasties 2, 4, 5, 9, 10, and 11: 1825–1769 BC\""
     }
   ]
 }
