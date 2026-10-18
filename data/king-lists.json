@@ -955,6 +955,477 @@
       "unrecorded_reason": null
     },
     {
+      "id": "osf-13-t2-medes-hittites",
+      "title": "CFAH-13: Sources for the Kings of the Medes, Cimmerians, and Hittites (Table 2)",
+      "region": "Anatolia and Media",
+      "source": "cfah-13-osf",
+      "citation_short": "CFAH-13, OSF preprint v1.3 (2026), Table 2, p. 26",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Arbaces = Arbaku",
+          "dates": null,
+          "lengths": "Ctesias: Arbaces, 28 y; Scythian-Cimmerian: Arbaku",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Maudaces",
+          "dates": null,
+          "lengths": "Ctesias: Maudaces, 50 y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sosarmus",
+          "dates": null,
+          "lengths": "Ctesias: Sosarmus, 30 y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Deioces = Artycus = Daiukku",
+          "dates": null,
+          "lengths": "Herodotus: Deioces, 53 y; Ctesias: Artycus, 30 y; Scythian-Cimmerian: Daiukku",
+          "person": "deioces"
+        },
+        {
+          "name": "Tudkhaliya III = Ishpaka, Ishkallu, Eshpai",
+          "dates": null,
+          "lengths": "Herodotus: (omitted); Hattusa: Tudkhaliya III; Scythian-Cimmerian: Ishpaka, Ishkallu, Eshpai",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Phraortes = Artaeus = Suppiluliuma I = Bartatua",
+          "dates": null,
+          "lengths": "Herodotus: Phraortes, 22 y; Ctesias: Artaeus, 40 y; Hattusa: Suppiluliuma I, ~28-40 y; Scythian-Cimmerian: Bartatua",
+          "person": "phraortes"
+        },
+        {
+          "name": "Arnuwanda II",
+          "dates": null,
+          "lengths": "Herodotus: (omitted); Hattusa: Arnuwanda II, ~1",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Mursilis II = Tugdamme",
+          "dates": null,
+          "lengths": "Herodotus: (omitted); Hattusa: Mursilis II, ~22 y; Scythian-Cimmerian: Tugdamme",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Madyes = Artynes = Muwatallis II = Madyes",
+          "dates": null,
+          "lengths": "Herodotus: Madyes, 28 y; Ctesias: Artynes, 22 y; Hattusa: Muwatallis II, ~22 y; Scythian-Cimmerian: Madyes",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Urhi-Teshub",
+          "dates": null,
+          "lengths": "Hattusa: Urhi-Teshub, ~5 y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Cyaxares = Artibaras = Hattusilis III, Khetasar = Umakistar",
+          "dates": null,
+          "lengths": "Herodotus: Cyaxares, 40 y; Ctesias: Artibaras, 40 y; Hattusa: Hattusilis III, Khetasar,; Scythian-Cimmerian: Umakistar",
+          "person": "cyaxares"
+        },
+        {
+          "name": "Astyages = Aspadas = Tudkhaliya IV = Ishtuvegu",
+          "dates": null,
+          "lengths": "Herodotus: Astyages, 35 y; Ctesias: Aspadas, 38 y; Hattusa: Tudkhaliya IV; Scythian-Cimmerian: Ishtuvegu",
+          "person": "astyages"
+        },
+        {
+          "name": "[Xenophon: ~12 y Cyaxares II] = Suppiluliuma II = Umakistar II?",
+          "dates": null,
+          "lengths": "Herodotus: [Xenophon: ~12 y Cyaxares II]; Hattusa: Suppiluliuma II; Scythian-Cimmerian: Umakistar II?",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-13-t3-identifications",
+      "title": "CFAH-13: Identifications of Kings under different throne names from Greek, Hittite, Scythian, and Median traditions (Table 3)",
+      "region": "Anatolia and Media",
+      "source": "cfah-13-osf",
+      "citation_short": "CFAH-13, OSF preprint v1.3 (2026), Table 3, p. 38",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Deioces = Artycas = Daiaaku",
+          "dates": null,
+          "details": "Herodotus: Deioces; Ctesias: Artycas; Assyrian-Babylonian: Daiaaku",
+          "person": "deioces"
+        },
+        {
+          "name": "Tudkhaliya III = Ishpaka = Eshpai, Teushpa?",
+          "dates": null,
+          "details": "Herodotus: missing; Hittite: Tudkhaliya III; Scythian-Cimmerian: Ishpaka; Assyrian-Babylonian: Eshpai, Teushpa?",
+          "note": "An identification of one king under several names; the table gives no BC date or regnal length, so no person record."
+        },
+        {
+          "name": "Phraortes, Prototythes = Artaeus = Suppiluliuma I = Partatua = Partatua, Mugallu?",
+          "dates": null,
+          "details": "Herodotus: Phraortes, Prototythes; Ctesias: Artaeus; Hittite: Suppiluliuma I; Scythian-Cimmerian: Partatua; Assyrian-Babylonian: Partatua, Mugallu?",
+          "person": "phraortes"
+        },
+        {
+          "name": "Arbianes = Mursilis II = Tugdamme = Dug-damme, Son of Mugallu?",
+          "dates": null,
+          "details": "Herodotus: missing; Ctesias: Arbianes; Hittite: Mursilis II; Scythian-Cimmerian: Tugdamme; Assyrian-Babylonian: Dug-damme, Son of Mugallu?",
+          "note": "An identification of one king under several names; the table gives no BC date or regnal length, so no person record."
+        },
+        {
+          "name": "Madyes = Artynes = Muwatallis II = Mada or Madu",
+          "dates": null,
+          "details": "Herodotus: Madyes; Ctesias: Artynes; Hittite: Muwatallis II; Scythian-Cimmerian: Mada or Madu; Assyrian-Babylonian: missing",
+          "note": "An identification of one king under several names; the table gives no BC date or regnal length, so no person record."
+        },
+        {
+          "name": "Urhi-Teshub, Mursilis III",
+          "dates": null,
+          "details": "Herodotus: missing; Ctesias: missing; Hittite: Urhi-Teshub, Mursilis III; Assyrian-Babylonian: missing",
+          "note": "An identification of one king under several names; the table gives no BC date or regnal length, so no person record."
+        },
+        {
+          "name": "Cyaxares = Artibaras = Khetasar, Hattusilis III = Umakistar",
+          "dates": null,
+          "details": "Herodotus: Cyaxares; Ctesias: Artibaras; Hittite: Khetasar, Hattusilis III; Assyrian-Babylonian: Umakistar",
+          "person": "cyaxares"
+        },
+        {
+          "name": "Astyages = Astuigas = Tudkhaliya IV = Ishtuvegu = Ishtumegu",
+          "dates": null,
+          "details": "Herodotus: Astyages; Ctesias: Astuigas; Hittite: Tudkhaliya IV; Scythian-Cimmerian: Ishtuvegu; Assyrian-Babylonian: Ishtumegu",
+          "person": "astyages"
+        },
+        {
+          "name": "Cyaxares II (in Xenophon) = Suppiluliuma II = Darius the Mede = Darius (in Berossus)",
+          "dates": null,
+          "details": "Herodotus: Cyaxares II (in Xenophon); Ctesias: missing; Hittite: Suppiluliuma II; Scythian-Cimmerian: Darius the Mede; Assyrian-Babylonian: Darius (in Berossus)",
+          "note": "An identification of one king under several names; the table gives no BC date or regnal length, so no person record."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-14-t1-akl-first-17",
+      "title": "CFAH-14: Interpolation of the First 17 Kings of the Assyrian King List (Table 1)",
+      "region": "Assyria",
+      "source": "cfah-14-osf",
+      "citation_short": "CFAH-14, OSF preprint v1.0 (27 Feb 2026), Table 1, p. 4",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Tudija-Adamu (AKL #1-2)",
+          "dates": null,
+          "details": "AKL #: 1-2; Gen.: 1; CFAH Interpolation: Adam",
+          "person": "adam"
+        },
+        {
+          "name": "Janqi (AKL #3)",
+          "dates": null,
+          "details": "AKL #: 3; Gen.: 2; CFAH Interpolation: Seth",
+          "person": "seth"
+        },
+        {
+          "name": "Sahlamu (AKL #4)",
+          "dates": null,
+          "details": "AKL #: 4; Gen.: 3; CFAH Interpolation: Enosh",
+          "person": "enosh"
+        },
+        {
+          "name": "Harharu (AKL #5)",
+          "dates": null,
+          "details": "AKL #: 5; Gen.: 4; CFAH Interpolation: Cainan",
+          "person": "kenan"
+        },
+        {
+          "name": "Mandaru (AKL #6)",
+          "dates": null,
+          "details": "AKL #: 6; Gen.: 5; CFAH Interpolation: Mahalalel",
+          "person": "mahalalel"
+        },
+        {
+          "name": "Imsu (AKL #7)",
+          "dates": null,
+          "details": "AKL #: 7; Gen.: 6; CFAH Interpolation: Jared",
+          "person": "jared"
+        },
+        {
+          "name": "Harsu (AKL #8)",
+          "dates": null,
+          "details": "AKL #: 8; Gen.: 7; CFAH Interpolation: Enoch",
+          "person": "enoch"
+        },
+        {
+          "name": "Dedanu (AKL #9)",
+          "dates": null,
+          "details": "AKL #: 9; Gen.: 8; CFAH Interpolation: Methuselah",
+          "person": "methuselah"
+        },
+        {
+          "name": "Hanu-Zuabu (AKL #10-11)",
+          "dates": null,
+          "details": "AKL #: 10-11; Gen.: 9; CFAH Interpolation: “Zu is Father” Lamech",
+          "person": "lamech"
+        },
+        {
+          "name": "Nuabu (AKL #12)",
+          "dates": null,
+          "details": "AKL #: 12; Gen.: 10; CFAH Interpolation: “Noah is Father”",
+          "note": "The Assyrian King List names no BC dates for these kings; CFAH-14 interpolates them as the early generations of Genesis."
+        },
+        {
+          "name": "Abazu (AKL #13)",
+          "dates": null,
+          "details": "AKL #: 13; Gen.: 11; CFAH Interpolation: Shem",
+          "person": "shem"
+        },
+        {
+          "name": "Belu-Azarah (AKL #14-15)",
+          "dates": null,
+          "details": "AKL #: 14-15; Gen.: 12; CFAH Interpolation: Lord Asshur",
+          "person": "asshur"
+        },
+        {
+          "name": "Ushpija (AKL #16)",
+          "dates": null,
+          "details": "AKL #: 16; Gen.: 13; CFAH Interpolation: Founder of Assur",
+          "note": "The Assyrian King List names no BC dates for these kings; CFAH-14 interpolates them as the early generations of Genesis."
+        },
+        {
+          "name": "Apiasal (AKL #17)",
+          "dates": null,
+          "details": "AKL #: 17; Gen.: 14; CFAH Interpolation: Last of the kings who lived in tents",
+          "note": "The Assyrian King List names no BC dates for these kings; CFAH-14 interpolates them as the early generations of Genesis."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-14-t3-eshnunna",
+      "title": "CFAH-14: Kings of Eshnunna (Table 3)",
+      "region": "Mesopotamia",
+      "source": "cfah-14-osf",
+      "citation_short": "CFAH-14, OSF preprint v1.0 (27 Feb 2026), Table 3, p. 28",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Ibal-pi-El I",
+          "dates": "Reign (y): 10",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Ipiq-Adad II",
+          "dates": "Reign (y): 44; REL #: 114-158; CFAH Date: 1104-1060",
+          "person": "ipiq-adad-ii"
+        },
+        {
+          "name": "Naram-Sin",
+          "dates": "Reign (y): 9; REL #: 158-149; CFAH Date: 1060-1051",
+          "person": "naram-sin-of-eshnunna"
+        },
+        {
+          "name": "Dannum-Tahaz",
+          "dates": "Reign (y): ?; REL #: 149; CFAH Date: 1051 ?",
+          "person": "dannum-tahaz"
+        },
+        {
+          "name": "Ibni-Erra",
+          "dates": "Reign (y): ?; REL #: ?; CFAH Date: ?",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Iqishi-Tishppak",
+          "dates": "Reign (y): ?; REL #: ?; CFAH Date: ?",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Ibbi-Suen",
+          "dates": "Reign (y): ?; REL #: ?; CFAH Date: ?",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Dadusha",
+          "dates": "Reign (y): 10; REL #: 187-177; CFAH Date: ~1031 - 1021",
+          "person": "dadusha"
+        },
+        {
+          "name": "Ibal-pi-El II",
+          "dates": "Reign (y): 14; REL #: 177-163; CFAH Date: 1021 - 1007",
+          "person": "ibal-pi-el-ii"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-14-t5-rel",
+      "title": "CFAH-14: CFAH Reconstructed Eponym List (CFAH-REL) (Table 5)",
+      "region": "Mesopotamia and Israel",
+      "source": "cfah-14-osf",
+      "citation_short": "CFAH-14, OSF preprint v1.0 (27 Feb 2026), Table 5, pp. 43–73",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Shalmaneser I",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1262; Last regnal-year row (Year BC): 1233 (year 30)",
+          "person": "shalmaneser-i"
+        },
+        {
+          "name": "Tukulti Ninurta I",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1232; Last regnal-year row (Year BC): 1196 (year 37)",
+          "person": "tukulti-ninurta-i"
+        },
+        {
+          "name": "Ashur-Nadin-apli",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1195; Last regnal-year row (Year BC): 1193 (year 3)",
+          "person": "ashur-nadin-apli"
+        },
+        {
+          "name": "Aššur-nirari III",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1192; Last regnal-year row (Year BC): 1187 (year 6)",
+          "person": "ashur-nirari-iii"
+        },
+        {
+          "name": "Enlil-kudurri-usur",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1186; Last regnal-year row (Year BC): 1182 (year 5)",
+          "person": "enlil-kudurri-usur"
+        },
+        {
+          "name": "Ninurta-apil-Ekur",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1181; Last regnal-year row (Year BC): 1179 (year 3)",
+          "person": "ninurta-apil-ekur"
+        },
+        {
+          "name": "Aššur-dan I",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1178; Last regnal-year row (Year BC): 1134 (year 45)",
+          "person": "ashur-dan-i"
+        },
+        {
+          "name": "Ninurta-tukulti-Assur",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1133",
+          "person": "ninurta-tukulti-assur"
+        },
+        {
+          "name": "Aššur-reš-iši",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1132; Last regnal-year row (Year BC): 1115 (year 18)",
+          "person": "ashur-resh-ishi-i"
+        },
+        {
+          "name": "Tiglath-Pileser I",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1114; Last regnal-year row (Year BC): 1076 (year 39)",
+          "person": "tiglath-pileser-i"
+        },
+        {
+          "name": "Ašarid-apil-Ekur",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1075; Last regnal-year row (Year BC): 1074 (year 2)",
+          "person": "asharid-apil-ekur"
+        },
+        {
+          "name": "Aššur-bêl-kala",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1073; Last regnal-year row (Year BC): 1056 (year 18)",
+          "person": "ashur-bel-kala"
+        },
+        {
+          "name": "Eriba-Adad II",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1055; Last regnal-year row (Year BC): 1054 (year 2)",
+          "person": "eriba-adad-ii"
+        },
+        {
+          "name": "Shamshi-Adad IV",
+          "dates": "Column: Assyrian King List; Name row (Year BC): 1053; Last regnal-year row (Year BC): 1050 (year 4)",
+          "person": "shamshi-adad-iv"
+        },
+        {
+          "name": "Ipiq-Adad II",
+          "dates": "Column: King of Eshnunna; Name row (Year BC): 1104; Last regnal-year row (Year BC): 1060 (year 45)",
+          "person": "ipiq-adad-ii"
+        },
+        {
+          "name": "Naram-Sin",
+          "dates": "Column: King of Eshnunna; Name row (Year BC): 1059; Last regnal-year row (Year BC): 1051 (year 9)",
+          "person": "naram-sin-of-eshnunna"
+        },
+        {
+          "name": "Daduša",
+          "dates": "Column: King of Eshnunna; Name row (Year BC): 1031",
+          "person": "dadusha"
+        },
+        {
+          "name": "Abimelech",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1217; Last regnal-year row (Year BC): 1216 (year 3)",
+          "person": "abimelech-son-of-gideon"
+        },
+        {
+          "name": "Tola",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1215; Last regnal-year row (Year BC): 1193 (year 23)",
+          "person": "tola"
+        },
+        {
+          "name": "Jair",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1192; Last regnal-year row (Year BC): 1171 (year 22)",
+          "person": "jair"
+        },
+        {
+          "name": "Ammon & Philistia",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1170; Last regnal-year row (Year BC): 1153 (year 18)",
+          "note": "A period of oppression (Ammon and Philistia), not a ruler."
+        },
+        {
+          "name": "Jepthah",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1152; Last regnal-year row (Year BC): 1147 (year 6)",
+          "person": "jephthah"
+        },
+        {
+          "name": "Ibzan",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1146; Last regnal-year row (Year BC): 1140 (year 7)",
+          "person": "ibzan"
+        },
+        {
+          "name": "Elon",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1139; Last regnal-year row (Year BC): 1130 (year 10)",
+          "person": "elon"
+        },
+        {
+          "name": "Abdon",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1129; Last regnal-year row (Year BC): 1122 (year 8)",
+          "person": "abdon"
+        },
+        {
+          "name": "Samson",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1121; Last regnal-year row (Year BC): 1102 (year 20)",
+          "person": "samson"
+        },
+        {
+          "name": "Samuel",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1101; Last regnal-year row (Year BC): 1096 (year 6)",
+          "person": "samuel"
+        },
+        {
+          "name": "Saul",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1095; Last regnal-year row (Year BC): 1056 (year 40)",
+          "person": "saul"
+        },
+        {
+          "name": "Ishi-Addu & David",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1055; Last regnal-year row (Year BC): 1050 (year 6)",
+          "note": "A shared row (Ishi-Addu and David, 1055-1050 BC as printed); David has his own row."
+        },
+        {
+          "name": "David",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1049; Last regnal-year row (Year BC): 1016 (year 40)",
+          "person": "david"
+        },
+        {
+          "name": "Solomon",
+          "dates": "Column: Ruler of Israel; Name row (Year BC): 1015; Last regnal-year row (Year BC): 976 (year 40)",
+          "person": "solomon"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
       "id": "osf-7a-t2-d12-solution",
       "title": "CFAH-7A: Dynasty 12 Solution (Table 2)",
       "region": "Egypt",

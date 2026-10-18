@@ -1,0 +1,114 @@
+{
+ "id": "osf-13-t2-medes-hittites",
+ "src": "cfah-13-osf",
+ "table": "Table 2",
+ "title": "Sources for the Kings of the Medes, Cimmerians, and Hittites",
+ "dynasty": "Medes, Cimmerians and Hittites",
+ "kind": "lengths",
+ "region": "Anatolia and Media",
+ "pages": [
+  26
+ ],
+ "rows": [
+  {
+   "name": "Arbaces = Arbaku",
+   "cells": {
+    "Ctesias": "Arbaces, 28 y",
+    "Scythian-Cimmerian": "Arbaku"
+   }
+  },
+  {
+   "name": "Maudaces",
+   "cells": {
+    "Ctesias": "Maudaces, 50 y"
+   }
+  },
+  {
+   "name": "Sosarmus",
+   "cells": {
+    "Ctesias": "Sosarmus, 30 y"
+   }
+  },
+  {
+   "name": "Deioces = Artycus = Daiukku",
+   "cells": {
+    "Herodotus": "Deioces, 53 y",
+    "Ctesias": "Artycus, 30 y",
+    "Scythian-Cimmerian": "Daiukku"
+   }
+  },
+  {
+   "name": "Tudkhaliya III = Ishpaka, Ishkallu, Eshpai",
+   "cells": {
+    "Herodotus": "(omitted)",
+    "Hattusa": "Tudkhaliya III",
+    "Scythian-Cimmerian": "Ishpaka, Ishkallu, Eshpai"
+   }
+  },
+  {
+   "name": "Phraortes = Artaeus = Suppiluliuma I = Bartatua",
+   "cells": {
+    "Herodotus": "Phraortes, 22 y",
+    "Ctesias": "Artaeus, 40 y",
+    "Hattusa": "Suppiluliuma I, ~28-40 y",
+    "Scythian-Cimmerian": "Bartatua"
+   }
+  },
+  {
+   "name": "Arnuwanda II",
+   "cells": {
+    "Herodotus": "(omitted)",
+    "Hattusa": "Arnuwanda II, ~1"
+   }
+  },
+  {
+   "name": "Mursilis II = Tugdamme",
+   "cells": {
+    "Herodotus": "(omitted)",
+    "Hattusa": "Mursilis II, ~22 y",
+    "Scythian-Cimmerian": "Tugdamme"
+   }
+  },
+  {
+   "name": "Madyes = Artynes = Muwatallis II = Madyes",
+   "cells": {
+    "Herodotus": "Madyes, 28 y",
+    "Ctesias": "Artynes, 22 y",
+    "Hattusa": "Muwatallis II, ~22 y",
+    "Scythian-Cimmerian": "Madyes"
+   }
+  },
+  {
+   "name": "Urhi-Teshub",
+   "cells": {
+    "Hattusa": "Urhi-Teshub, ~5 y"
+   }
+  },
+  {
+   "name": "Cyaxares = Artibaras = Hattusilis III, Khetasar = Umakistar",
+   "cells": {
+    "Herodotus": "Cyaxares, 40 y",
+    "Ctesias": "Artibaras, 40 y",
+    "Hattusa": "Hattusilis III, Khetasar,",
+    "Scythian-Cimmerian": "Umakistar"
+   }
+  },
+  {
+   "name": "Astyages = Aspadas = Tudkhaliya IV = Ishtuvegu",
+   "cells": {
+    "Herodotus": "Astyages, 35 y",
+    "Ctesias": "Aspadas, 38 y",
+    "Hattusa": "Tudkhaliya IV",
+    "Scythian-Cimmerian": "Ishtuvegu"
+   }
+  },
+  {
+   "name": "[Xenophon: ~12 y Cyaxares II] = Suppiluliuma II = Umakistar II?",
+   "cells": {
+    "Herodotus": "[Xenophon: ~12 y Cyaxares II]",
+    "Hattusa": "Suppiluliuma II",
+    "Scythian-Cimmerian": "Umakistar II?"
+   }
+  }
+ ]
+}

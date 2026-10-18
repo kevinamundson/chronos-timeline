@@ -38,27 +38,32 @@ export function buildPhase5(tables, existingIds) {
       const cellText = Object.entries(row.cells).filter(([, v]) => !BLANK.has(v)).map(([k, v]) => `${k}: ${v}`).join('; ');
       const ys = t.kind === 'dated' ? Object.entries(row.cells).filter(([k]) => !t.yearCols || t.yearCols.includes(k)).flatMap(([, v]) => yearsIn(v)) : [];
       const entry = { name: row.name, dates: t.kind === 'dated' && cellText ? cellText : null };
-      if (t.kind !== 'dated' && cellText) entry.lengths = cellText;
+      if (t.kind === 'lengths' && cellText) entry.lengths = cellText;
+      if (t.kind === 'names' && cellText) entry.details = cellText;
+      if (typeof spec === 'object' && spec?.link) { entry.person = spec.link; if (spec.list) entry.note = spec.list; list.entries.push(entry); continue; }
       if (typeof spec === 'object' && spec?.list) { entry.note = spec.list; reasons.add(spec.list); list.entries.push(entry); continue; }
+      if (t.kind === 'names') { entry.note = t.rowNote || 'Names only (an identification table): no BC date or regnal length, so no person record.'; list.entries.push(entry); continue; }
       if (t.kind !== 'dated' || !ys.length) {
         const r = t.kind !== 'dated' ? 'Regnal lengths only in this table, so no person record (no BC year is computed from lengths).' : 'No BC year printed for this row, so no person record.';
         entry.note = r; reasons.add(r); list.entries.push(entry); continue;
       }
       const nm = names(row, t);
+      const rp = row.pages ? [...new Set(row.pages)] : null;
+      const rWhere = rp ? `${t.table} "${t.title}", ${rp.length > 1 ? `pp. ${rp[0]}–${rp[rp.length - 1]}` : `p. ${rp[0]}`}` : where;
       let id = typeof spec === 'string' ? spec : spec?.id || slug(nm.primary.replace(/\s*[*]+$/, ''));
       id = SAME[id] || id;
       if (!spec && existingIds.has(id) && !people[id]) problems.push(`${t.id}: "${row.name}" -> ${id} collides with an existing record; map it explicitly in osf-kings-map.mjs`);
       const y = -ys[0]; let yEnd = ys.length > 1 ? -ys[ys.length - 1] : null; let note = spec?.note || null;
       if (yEnd != null && yEnd < y) { note = [note, `The table's last year (${-yEnd}) is earlier than its first (${-y}), so only the first is used for the timeline.`].filter(Boolean).join(' '); yEnd = null; }
       const approx = /~|c\.|\?|unknown|unkown|±|\[|>|<| or /.test(Object.entries(row.cells).filter(([k]) => !t.yearCols || t.yearCols.includes(k)).map(([, v]) => v).join(' '));
-      const create = { title: spec?.title || nm.primary.replace(/\s*[*]+$/, ''), alt_names: (spec?.alt || nm.alt).length ? (spec?.alt || nm.alt) : undefined, dynasty: spec?.dynasty || t.dynasty,
-        summary: spec?.summary || `${t.dynasty.startsWith('Egypt') ? 'King' : 'Ruler'} listed in CFAH-${meta?.n} ${t.table} (${t.dynasty}).`,
-        description: `${spec?.summary || `Ruler of ${t.dynasty}.`} Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-${meta?.n} (${t.table}, "${t.title}"); its dates are display only.`, events: spec?.events || [] };
+      const create = { title: spec?.title || nm.primary.replace(/\s*[*]+$/, ''), alt_names: (spec?.alt || nm.alt).length ? (spec?.alt || nm.alt) : undefined, dynasty: spec?.dynasty || row.dynasty || t.dynasty,
+        summary: spec?.summary || `${t.dynasty.startsWith('Egypt') ? 'King' : 'Ruler'} listed in CFAH-${meta?.n} ${t.table} (${row.dynasty || t.dynasty}).`,
+        description: `${spec?.summary || `Ruler of ${row.dynasty || t.dynasty}.`} Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-${meta?.n} (${t.table}, "${t.title}"); its dates are display only.`, events: spec?.events || [] };
       if (!create.alt_names) delete create.alt_names;
       people[id] ||= [];
       people[id].push({ table: t.id, create, rank: (spec?.title ? 0 : 2) + (/EKL/.test(t.dynasty) || /alter egos|and 26/.test(t.dynasty) ? 1 : 0) });
-      items.push({ key: `osf:${t.id}:${slug(row.name).slice(0, 60)}`, src: t.src, where, date: cellText, y, yEnd, precision: approx ? 'approximate' : yEnd != null ? 'year-range' : 'year', target: id, kind: 'person', slot: 'reign', create,
-        locator: `${t.table}, ${pages}`, note: [`Row "${row.name}" of ${t.table} (${t.dynasty}).`, note].filter(Boolean).join(' ') });
+      items.push({ key: `osf:${t.id}:${slug(row.name).slice(0, 60)}`, src: t.src, where: rWhere, date: cellText, y, yEnd, precision: approx ? 'approximate' : yEnd != null ? 'year-range' : 'year', target: id, kind: 'person', slot: 'reign', create,
+        locator: `${t.table}, ${pages}`, note: [`Row "${row.name}" of ${t.table} (${row.dynasty || t.dynasty}).`, t.note, note].filter(Boolean).join(' ') });
       entry.person = id; list.entries.push(entry);
     }
     lists.push(list);

@@ -36,6 +36,7 @@
                 "event": { "anyOf": [ { "$ref": "common.schema.json#/$defs/slug" }, { "type": "null" } ] },
                 "ap": { "type": "string", "pattern": "^AP-[1-9][0-9]*$" },
                 "lengths": { "type": "string", "description": "Regnal lengths as printed (years, months, days), for tables that give lengths only. Never converted to BC years." },
+                "details": { "type": "string", "description": "Other columns as printed, for name and identification tables." },
                 "note": { "type": "string", "description": "Why the row has no person record, or other remarks." }
               }
             }

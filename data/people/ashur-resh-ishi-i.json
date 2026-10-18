@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ashur-resh-ishi-i",
+  "type": "person",
+  "title": "Aššur-reš-iši I",
+  "summary": "Ruler listed in CFAH-14 Table 5 (Assyria).",
+  "description": "Ruler of Assyria. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-14 (Table 5, \"CFAH Reconstructed Eponym List (CFAH-REL)\"); its dates are display only.",
+  "alt_names": [
+    "Ashur-resh-ishi I",
+    "Aššur-reš-iši"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Column: Assyrian King List; Name row (Year BC): 1132; Last regnal-year row (Year BC): 1115 (year 18)",
+        "year_am": null,
+        "year_bc_ad": -1132,
+        "year_bc_ad_end": -1115,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-14: Ancient Assyria,\" OSF preprint v1.0 (27 Feb 2026), doi:10.17605/OSF.IO/9FUW2, file CFAH-14_Assyria_v_1.0.pdf, Table 5 \"CFAH Reconstructed Eponym List (CFAH-REL)\", pp. 56–58",
+        "link": "https://osf.io/9fuw2/",
+        "source_text_id": "cfah-14-osf",
+        "note": "Row \"Aššur-reš-iši\" of Table 5 (Assyria). Year-by-year table (1262-963 BC). A ruler's name is printed in one year row and his regnal-year numbers in the following rows; each row here gives the Year BC of the name row and of the last numbered row, as printed. No year is computed from a length.",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-14-t5-rel:assur-res-isi:ashur-resh-ishi-i:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-14-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-14-osf",
+      "url": "https://osf.io/9fuw2/",
+      "locator": "Table 5, pp. 43–73"
+    }
+  ],
+  "dynasty": "Assyria"
+}

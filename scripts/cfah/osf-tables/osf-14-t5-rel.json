@@ -1,0 +1,421 @@
+{
+ "id": "osf-14-t5-rel",
+ "src": "cfah-14-osf",
+ "table": "Table 5",
+ "title": "CFAH Reconstructed Eponym List (CFAH-REL)",
+ "dynasty": "Assyria, Eshnunna and Israel (CFAH-REL)",
+ "kind": "dated",
+ "region": "Mesopotamia and Israel",
+ "yearCols": [
+  "Name row (Year BC)",
+  "Last regnal-year row (Year BC)"
+ ],
+ "pages": [
+  43,
+  73
+ ],
+ "note": "Year-by-year table (1262-963 BC). A ruler's name is printed in one year row and his regnal-year numbers in the following rows; each row here gives the Year BC of the name row and of the last numbered row, as printed. No year is computed from a length.",
+ "rows": [
+  {
+   "name": "Shalmaneser I",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1262",
+    "Last regnal-year row (Year BC)": "1233 (year 30)"
+   },
+   "pages": [
+    43,
+    45
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Tukulti Ninurta I",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1232",
+    "Last regnal-year row (Year BC)": "1196 (year 37)"
+   },
+   "pages": [
+    45,
+    49
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Ashur-Nadin-apli",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1195",
+    "Last regnal-year row (Year BC)": "1193 (year 3)"
+   },
+   "pages": [
+    49,
+    49
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Aššur-nirari III",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1192",
+    "Last regnal-year row (Year BC)": "1187 (year 6)"
+   },
+   "pages": [
+    49,
+    50
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Enlil-kudurri-usur",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1186",
+    "Last regnal-year row (Year BC)": "1182 (year 5)"
+   },
+   "pages": [
+    50,
+    50
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Ninurta-apil-Ekur",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1181",
+    "Last regnal-year row (Year BC)": "1179 (year 3)"
+   },
+   "pages": [
+    50,
+    51
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Aššur-dan I",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1178",
+    "Last regnal-year row (Year BC)": "1134 (year 45)"
+   },
+   "pages": [
+    51,
+    56
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Ninurta-tukulti-Assur",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1133"
+   },
+   "pages": [
+    56,
+    56
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Aššur-reš-iši",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1132",
+    "Last regnal-year row (Year BC)": "1115 (year 18)"
+   },
+   "pages": [
+    56,
+    58
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Tiglath-Pileser I",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1114",
+    "Last regnal-year row (Year BC)": "1076 (year 39)"
+   },
+   "pages": [
+    58,
+    62
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Ašarid-apil-Ekur",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1075",
+    "Last regnal-year row (Year BC)": "1074 (year 2)"
+   },
+   "pages": [
+    62,
+    62
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Aššur-bêl-kala",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1073",
+    "Last regnal-year row (Year BC)": "1056 (year 18)"
+   },
+   "pages": [
+    62,
+    64
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Eriba-Adad II",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1055",
+    "Last regnal-year row (Year BC)": "1054 (year 2)"
+   },
+   "pages": [
+    64,
+    64
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Shamshi-Adad IV",
+   "cells": {
+    "Column": "Assyrian King List",
+    "Name row (Year BC)": "1053",
+    "Last regnal-year row (Year BC)": "1050 (year 4)"
+   },
+   "pages": [
+    64,
+    64
+   ],
+   "dynasty": "Assyria"
+  },
+  {
+   "name": "Ipiq-Adad II",
+   "cells": {
+    "Column": "King of Eshnunna",
+    "Name row (Year BC)": "1104",
+    "Last regnal-year row (Year BC)": "1060 (year 45)"
+   },
+   "pages": [
+    59,
+    63
+   ],
+   "dynasty": "Eshnunna"
+  },
+  {
+   "name": "Naram-Sin",
+   "cells": {
+    "Column": "King of Eshnunna",
+    "Name row (Year BC)": "1059",
+    "Last regnal-year row (Year BC)": "1051 (year 9)"
+   },
+   "pages": [
+    63,
+    64
+   ],
+   "dynasty": "Eshnunna"
+  },
+  {
+   "name": "Daduša",
+   "cells": {
+    "Column": "King of Eshnunna",
+    "Name row (Year BC)": "1031"
+   },
+   "pages": [
+    66,
+    66
+   ],
+   "dynasty": "Eshnunna"
+  },
+  {
+   "name": "Abimelech",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1217",
+    "Last regnal-year row (Year BC)": "1216 (year 3)"
+   },
+   "pages": [
+    46,
+    46
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Tola",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1215",
+    "Last regnal-year row (Year BC)": "1193 (year 23)"
+   },
+   "pages": [
+    47,
+    49
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Jair",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1192",
+    "Last regnal-year row (Year BC)": "1171 (year 22)"
+   },
+   "pages": [
+    49,
+    52
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Ammon & Philistia",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1170",
+    "Last regnal-year row (Year BC)": "1153 (year 18)"
+   },
+   "pages": [
+    52,
+    53
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Jepthah",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1152",
+    "Last regnal-year row (Year BC)": "1147 (year 6)"
+   },
+   "pages": [
+    54,
+    54
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Ibzan",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1146",
+    "Last regnal-year row (Year BC)": "1140 (year 7)"
+   },
+   "pages": [
+    54,
+    55
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Elon",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1139",
+    "Last regnal-year row (Year BC)": "1130 (year 10)"
+   },
+   "pages": [
+    55,
+    56
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Abdon",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1129",
+    "Last regnal-year row (Year BC)": "1122 (year 8)"
+   },
+   "pages": [
+    57,
+    57
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Samson",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1121",
+    "Last regnal-year row (Year BC)": "1102 (year 20)"
+   },
+   "pages": [
+    58,
+    59
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Samuel",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1101",
+    "Last regnal-year row (Year BC)": "1096 (year 6)"
+   },
+   "pages": [
+    59,
+    60
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Saul",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1095",
+    "Last regnal-year row (Year BC)": "1056 (year 40)"
+   },
+   "pages": [
+    60,
+    64
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Ishi-Addu & David",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1055",
+    "Last regnal-year row (Year BC)": "1050 (year 6)"
+   },
+   "pages": [
+    64,
+    64
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "David",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1049",
+    "Last regnal-year row (Year BC)": "1016 (year 40)"
+   },
+   "pages": [
+    64,
+    68
+   ],
+   "dynasty": "Israel"
+  },
+  {
+   "name": "Solomon",
+   "cells": {
+    "Column": "Ruler of Israel",
+    "Name row (Year BC)": "1015",
+    "Last regnal-year row (Year BC)": "976 (year 40)"
+   },
+   "pages": [
+    69,
+    72
+   ],
+   "dynasty": "Israel"
+  }
+ ]
+}

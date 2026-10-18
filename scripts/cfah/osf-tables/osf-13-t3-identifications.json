@@ -1,0 +1,100 @@
+{
+ "id": "osf-13-t3-identifications",
+ "src": "cfah-13-osf",
+ "table": "Table 3",
+ "title": "Identifications of Kings under different throne names from Greek, Hittite, Scythian, and Median traditions",
+ "dynasty": "Medes, Cimmerians and Hittites",
+ "kind": "names",
+ "region": "Anatolia and Media",
+ "rowNote": "An identification of one king under several names; the table gives no BC date or regnal length, so no person record.",
+ "pages": [
+  38
+ ],
+ "rows": [
+  {
+   "name": "Deioces = Artycas = Daiaaku",
+   "cells": {
+    "Herodotus": "Deioces",
+    "Ctesias": "Artycas",
+    "Assyrian-Babylonian": "Daiaaku"
+   }
+  },
+  {
+   "name": "Tudkhaliya III = Ishpaka = Eshpai, Teushpa?",
+   "cells": {
+    "Herodotus": "missing",
+    "Hittite": "Tudkhaliya III",
+    "Scythian-Cimmerian": "Ishpaka",
+    "Assyrian-Babylonian": "Eshpai, Teushpa?"
+   }
+  },
+  {
+   "name": "Phraortes, Prototythes = Artaeus = Suppiluliuma I = Partatua = Partatua, Mugallu?",
+   "cells": {
+    "Herodotus": "Phraortes, Prototythes",
+    "Ctesias": "Artaeus",
+    "Hittite": "Suppiluliuma I",
+    "Scythian-Cimmerian": "Partatua",
+    "Assyrian-Babylonian": "Partatua, Mugallu?"
+   }
+  },
+  {
+   "name": "Arbianes = Mursilis II = Tugdamme = Dug-damme, Son of Mugallu?",
+   "cells": {
+    "Herodotus": "missing",
+    "Ctesias": "Arbianes",
+    "Hittite": "Mursilis II",
+    "Scythian-Cimmerian": "Tugdamme",
+    "Assyrian-Babylonian": "Dug-damme, Son of Mugallu?"
+   }
+  },
+  {
+   "name": "Madyes = Artynes = Muwatallis II = Mada or Madu",
+   "cells": {
+    "Herodotus": "Madyes",
+    "Ctesias": "Artynes",
+    "Hittite": "Muwatallis II",
+    "Scythian-Cimmerian": "Mada or Madu",
+    "Assyrian-Babylonian": "missing"
+   }
+  },
+  {
+   "name": "Urhi-Teshub, Mursilis III",
+   "cells": {
+    "Herodotus": "missing",
+    "Ctesias": "missing",
+    "Hittite": "Urhi-Teshub, Mursilis III",
+    "Assyrian-Babylonian": "missing"
+   }
+  },
+  {
+   "name": "Cyaxares = Artibaras = Khetasar, Hattusilis III = Umakistar",
+   "cells": {
+    "Herodotus": "Cyaxares",
+    "Ctesias": "Artibaras",
+    "Hittite": "Khetasar, Hattusilis III",
+    "Assyrian-Babylonian": "Umakistar"
+   }
+  },
+  {
+   "name": "Astyages = Astuigas = Tudkhaliya IV = Ishtuvegu = Ishtumegu",
+   "cells": {
+    "Herodotus": "Astyages",
+    "Ctesias": "Astuigas",
+    "Hittite": "Tudkhaliya IV",
+    "Scythian-Cimmerian": "Ishtuvegu",
+    "Assyrian-Babylonian": "Ishtumegu"
+   }
+  },
+  {
+   "name": "Cyaxares II (in Xenophon) = Suppiluliuma II = Darius the Mede = Darius (in Berossus)",
+   "cells": {
+    "Herodotus": "Cyaxares II (in Xenophon)",
+    "Ctesias": "missing",
+    "Hittite": "Suppiluliuma II",
+    "Scythian-Cimmerian": "Darius the Mede",
+    "Assyrian-Babylonian": "Darius (in Berossus)"
+   }
+  }
+ ]
+}

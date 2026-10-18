@@ -1,0 +1,87 @@
+{
+ "id": "osf-14-t3-eshnunna",
+ "src": "cfah-14-osf",
+ "table": "Table 3",
+ "title": "Kings of Eshnunna",
+ "dynasty": "Eshnunna",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "CFAH Date"
+ ],
+ "pages": [
+  28
+ ],
+ "rows": [
+  {
+   "name": "Ibal-pi-El I",
+   "cells": {
+    "Reign (y)": "10"
+   }
+  },
+  {
+   "name": "Ipiq-Adad II",
+   "cells": {
+    "Reign (y)": "44",
+    "REL #": "114-158",
+    "CFAH Date": "1104-1060"
+   }
+  },
+  {
+   "name": "Naram-Sin",
+   "cells": {
+    "Reign (y)": "9",
+    "REL #": "158-149",
+    "CFAH Date": "1060-1051"
+   }
+  },
+  {
+   "name": "Dannum-Tahaz",
+   "cells": {
+    "Reign (y)": "?",
+    "REL #": "149",
+    "CFAH Date": "1051 ?"
+   }
+  },
+  {
+   "name": "Ibni-Erra",
+   "cells": {
+    "Reign (y)": "?",
+    "REL #": "?",
+    "CFAH Date": "?"
+   }
+  },
+  {
+   "name": "Iqishi-Tishppak",
+   "cells": {
+    "Reign (y)": "?",
+    "REL #": "?",
+    "CFAH Date": "?"
+   }
+  },
+  {
+   "name": "Ibbi-Suen",
+   "cells": {
+    "Reign (y)": "?",
+    "REL #": "?",
+    "CFAH Date": "?"
+   }
+  },
+  {
+   "name": "Dadusha",
+   "cells": {
+    "Reign (y)": "10",
+    "REL #": "187-177",
+    "CFAH Date": "~1031 - 1021"
+   }
+  },
+  {
+   "name": "Ibal-pi-El II",
+   "cells": {
+    "Reign (y)": "14",
+    "REL #": "177-163",
+    "CFAH Date": "1021 - 1007"
+   }
+  }
+ ]
+}

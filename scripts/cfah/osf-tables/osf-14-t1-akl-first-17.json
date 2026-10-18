@@ -1,0 +1,127 @@
+{
+ "id": "osf-14-t1-akl-first-17",
+ "src": "cfah-14-osf",
+ "table": "Table 1",
+ "title": "Interpolation of the First 17 Kings of the Assyrian King List",
+ "dynasty": "Assyria (Assyrian King List)",
+ "kind": "names",
+ "region": "Assyria",
+ "rowNote": "The Assyrian King List names no BC dates for these kings; CFAH-14 interpolates them as the early generations of Genesis.",
+ "pages": [
+  4
+ ],
+ "rows": [
+  {
+   "name": "Tudija-Adamu (AKL #1-2)",
+   "cells": {
+    "AKL #": "1-2",
+    "Gen.": "1",
+    "CFAH Interpolation": "Adam"
+   }
+  },
+  {
+   "name": "Janqi (AKL #3)",
+   "cells": {
+    "AKL #": "3",
+    "Gen.": "2",
+    "CFAH Interpolation": "Seth"
+   }
+  },
+  {
+   "name": "Sahlamu (AKL #4)",
+   "cells": {
+    "AKL #": "4",
+    "Gen.": "3",
+    "CFAH Interpolation": "Enosh"
+   }
+  },
+  {
+   "name": "Harharu (AKL #5)",
+   "cells": {
+    "AKL #": "5",
+    "Gen.": "4",
+    "CFAH Interpolation": "Cainan"
+   }
+  },
+  {
+   "name": "Mandaru (AKL #6)",
+   "cells": {
+    "AKL #": "6",
+    "Gen.": "5",
+    "CFAH Interpolation": "Mahalalel"
+   }
+  },
+  {
+   "name": "Imsu (AKL #7)",
+   "cells": {
+    "AKL #": "7",
+    "Gen.": "6",
+    "CFAH Interpolation": "Jared"
+   }
+  },
+  {
+   "name": "Harsu (AKL #8)",
+   "cells": {
+    "AKL #": "8",
+    "Gen.": "7",
+    "CFAH Interpolation": "Enoch"
+   }
+  },
+  {
+   "name": "Dedanu (AKL #9)",
+   "cells": {
+    "AKL #": "9",
+    "Gen.": "8",
+    "CFAH Interpolation": "Methuselah"
+   }
+  },
+  {
+   "name": "Hanu-Zuabu (AKL #10-11)",
+   "cells": {
+    "AKL #": "10-11",
+    "Gen.": "9",
+    "CFAH Interpolation": "“Zu is Father” Lamech"
+   }
+  },
+  {
+   "name": "Nuabu (AKL #12)",
+   "cells": {
+    "AKL #": "12",
+    "Gen.": "10",
+    "CFAH Interpolation": "“Noah is Father”"
+   }
+  },
+  {
+   "name": "Abazu (AKL #13)",
+   "cells": {
+    "AKL #": "13",
+    "Gen.": "11",
+    "CFAH Interpolation": "Shem"
+   }
+  },
+  {
+   "name": "Belu-Azarah (AKL #14-15)",
+   "cells": {
+    "AKL #": "14-15",
+    "Gen.": "12",
+    "CFAH Interpolation": "Lord Asshur"
+   }
+  },
+  {
+   "name": "Ushpija (AKL #16)",
+   "cells": {
+    "AKL #": "16",
+    "Gen.": "13",
+    "CFAH Interpolation": "Founder of Assur"
+   }
+  },
+  {
+   "name": "Apiasal (AKL #17)",
+   "cells": {
+    "AKL #": "17",
+    "Gen.": "14",
+    "CFAH Interpolation": "Last of the kings who lived in tents"
+   }
+  }
+ ]
+}
