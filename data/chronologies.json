@@ -476,16 +476,17 @@
     },
     {
       "id": "raleigh-history-of-the-world",
-      "name": "Raleigh, The History of the World (1614)",
+      "name": "Raleigh, The History of the World (1614/1617)",
       "primary": false,
       "sort_priority": 9,
       "status": "partial",
       "authors": [
         "Sir Walter Raleigh"
       ],
-      "description": "Sir Walter Raleigh's History of the World (1614; 11th ed. 1736), Books I–V from Creation to 130 BC.",
-      "year_conventions": "Year of the world (AM) as Raleigh states it (year_am); no BC conversion. Read from the 1736 (11th ed.) vol. 1 Internet Archive OCR text.",
+      "description": "Sir Walter Raleigh's History of the World (1st ed. 1614; primary text the 1617 issue, EEBO-TCP A10357 / STC 20638 / ESTC S112960; 11th ed. 1736 as secondary reading copy), Books I–V from Creation to 130 BC.",
+      "year_conventions": "Year of the world (AM) as Raleigh states it (year_am); no BC conversion. Primary text: 1617 EEBO-TCP transcription (sources/raleigh/). Anchors below were read from the 1736 (11th ed.) vol. 1 Internet Archive OCR and still cite it until they are re-checked against the 1617 text.",
       "references": [
+        "raleigh-history-of-the-world-1617",
         "raleigh-history-of-the-world-1736"
       ],
       "anchors": [
@@ -518,7 +519,8 @@
         }
       ],
       "open_questions": [
-        "Temple date not yet located (Raleigh gives Solomon's accession as year of the world 2991, Book II)."
+        "Temple date not yet located (Raleigh gives Solomon's accession as year of the world 2991, Book II).",
+        "Re-check all anchors against the 1617 text (sources/raleigh/). Quick scan 2026-10-17: Abraham's birth reads \"An. mundi 2008 dil. 352. natus Abraham\" in 1617 (Book II, ch. I, §. VIII) vs 2009 in the 1736 reading; Flood AM 1656 (Book I, ch. VII, §. III) and Passover/Exodus AM 2514 (Book II, ch. IV, §. I) agree."
       ]
     }
   ]

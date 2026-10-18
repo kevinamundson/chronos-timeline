@@ -83,6 +83,27 @@
       "verified_on": "2026-10-17"
     },
     {
+      "id": "raleigh-history-of-the-world-1617",
+      "title": "The history of the world (London: printed [by William Stansby] for Walter Burre, 1617), EEBO-TCP A10357",
+      "authors": [
+        "Sir Walter Raleigh"
+      ],
+      "translator_or_editor": "Text Creation Partnership (EEBO-TCP Phase I transcription); EarlyPrint Project (linguistic tagging)",
+      "year": "1617",
+      "publication": "STC 20638; ESTC S112960; EEBO-TCP A10357",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "alt_urls": [
+        "https://bitbucket.org/eads004/A10/raw/master/A10357.xml",
+        "https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/A10357",
+        "https://github.com/textcreationpartnership/A10357",
+        "http://estc.bl.uk/S112960"
+      ],
+      "access": "open-license",
+      "license_note": "EEBO-TCP Phase I keyboarded/encoded text released under CC0 1.0 (stated in the TEI <availability> of the EarlyPrint and TCP files); underlying 1617 work public domain by age. Page images not covered. OTA item page unreachable (504) on 2026-10-17, so its licence statement was not re-checked.",
+      "verified_on": "2026-10-17",
+      "note": "Primary text for the Raleigh chronology. Local copies and SHA-256 checksums in sources/raleigh/ (README.md); the two ~86 MB EarlyPrint XML files are gitignored and restored by scripts/fetch-raleigh.sh."
+    },
+    {
       "id": "raleigh-history-of-the-world-1736",
       "title": "The History of the World, in Five Books (11th ed.), vol. 1",
       "authors": [
@@ -97,7 +118,8 @@
       ],
       "access": "public-domain",
       "license_note": "Public domain by age (first published 1614).",
-      "verified_on": "2026-10-17"
+      "verified_on": "2026-10-17",
+      "note": "Secondary reading copy (11th ed., Internet Archive OCR). The 1617 EEBO-TCP text (raleigh-history-of-the-world-1617) is the primary text; existing Raleigh anchors still cite this 1736 edition pending re-extraction."
     },
     {
       "id": "openbible-geo",

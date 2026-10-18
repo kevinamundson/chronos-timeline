@@ -12,3 +12,6 @@ tmp/
 test-results/
 playwright-report/
 .env*
+# Raleigh 1617 full EarlyPrint XML (~86 MB each): restore with scripts/fetch-raleigh.sh
+sources/raleigh/A10357.earlyprint.xml
+sources/raleigh/A10357.bitbucket-eads004.xml
