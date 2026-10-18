@@ -38,13 +38,15 @@
       : new vis.DataSet([{ id: 'events', content: 'Events' }, { id: 'people', content: 'People (birth)' }]);
     var ys = items.map(function (i) { return i.y; });
     var min = person ? raw.start : Math.min.apply(null, ys), max = person ? raw.stop : Math.max.apply(null, ys);
-    var pad = person ? Math.max(3, Math.round((max - min) * 0.05)) : Math.max(50, Math.round((max - min) * 0.04));
+    // Home opens on the ancient span (to AD 100) as before; later (AD) items are reachable by panning/zooming.
+    var viewMax = person ? max : Math.min(max, 100);
+    var pad = person ? Math.max(3, Math.round((max - min) * 0.05)) : Math.max(50, Math.round((viewMax - min) * 0.04));
     var padR = person ? pad * 4 : pad * 7;
     var YEAR = 365.25 * 864e5;
     var timeline = new vis.Timeline(tlEl, data, groups, {
       moment: function (d) { return moment(d).utc(); },
-      start: toDate(min - pad), end: toDate(max + padR),
-      min: toDate(min - (person ? 200 : 500)), max: toDate(Math.min(max + (person ? 400 : 2000), 2000)),
+      start: toDate(min - pad), end: toDate(viewMax + padR),
+      min: toDate(min - (person ? 200 : 500)), max: toDate(Math.min(max + (person ? 400 : 2000), new Date().getUTCFullYear() + 25)),
       zoomMin: (person ? 2 : 10) * YEAR, zoomMax: 5000 * YEAR,
       groupOrder: 'order',
       // Each item is a real link: focusable, Enter opens it, screen readers get the full label.
@@ -66,6 +68,7 @@
       tooltip: { followMouse: true },
       order: function (a, b) { return a.ord - b.ord; }
     });
+    window.__timeline = timeline; // exposed for site/verify.mjs
     timeline.on('select', function (p) { if (p.items.length) { var it = data.get(p.items[0]); if (it && it.url) location.href = it.url; } });
     // Keyboard: vis-timeline swallows Enter on its items, so follow the focused link ourselves.
     tlEl.addEventListener('keydown', function (e) {

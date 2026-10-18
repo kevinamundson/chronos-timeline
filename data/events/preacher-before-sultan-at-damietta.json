@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "preacher-before-sultan-at-damietta",
+  "type": "event",
+  "title": "A converted preacher (once a prisoner at Perugia) preaches Christ before the Sultan at Damietta",
+  "summary": "A converted preacher (once a prisoner at Perugia) preaches Christ before the Sultan at Damietta",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1219,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 105): 1219. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "1219",
+      "year_am": null,
+      "year_bc_ad": 1219,
+      "precision": "year",
+      "citation": "Taking Africa for Jesus, ch. 11 \"Raymond Lull: Missionary to the Muslims\", PDF p. 105 (printed p. 105)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=105",
+      "source_text_id": "generations-africa",
+      "note": "The book does not name the preacher here. The sermon about him moved Lull to become a missionary."
+    }
+  ],
+  "people": [
+    "raymond-lull"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-africa",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
+      "locator": "Taking Africa for Jesus"
+    }
+  ]
+}

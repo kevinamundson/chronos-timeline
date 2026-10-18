@@ -5,12 +5,12 @@
   "title": "Mizraim",
   "summary": "Son of Ham (Gen 10:6); the Hebrew name of Egypt. Ussher (Second Age §51, 2188 BC) and CFAH (Menes = Mizraim) date his colony in Egypt to 2188 BC; see the Egyptian-cities event.",
   "description": "Son of Ham (Gen 10:6); the Hebrew name of Egypt. Ussher (Second Age §51, 2188 BC) and CFAH (Menes = Mizraim) date his colony in Egypt to 2188 BC; see the Egyptian-cities event. Josephus (Antiquities I.6.2, Whiston): \"all we who inhabit this country [of Judea] called Egypt Mestre, and the Egyptians Mestreans\"",
-  "sorting_year": null,
+  "sorting_year": -2478,
   "sorting_basis": {
-    "tier": "none",
+    "tier": "provisional",
     "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier 1-4 dates this record's birth; unsorted (null)."
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 19): around 2478 BC. Pending owner decision (open question A8)."
   },
   "father": "ham",
   "children": [
@@ -64,6 +64,17 @@
         "link": "https://biblicalhorizons.com/1994/05/01/6_05/",
         "note": "Jordan: \"If we assume births every two years, and about 30 years between generations ... we can come up with an approximate series of dates\" (hypothetical, not stated by Scripture).",
         "source_text_id": "jordan-bc-6-5"
+      },
+      {
+        "source": "generations",
+        "date": "around 2478 BC",
+        "year_am": null,
+        "year_bc_ad": -2478,
+        "precision": "approximate",
+        "citation": "Taking Africa for Jesus, ch. 2 \"Egypt (Part 1)\", PDF p. 19 (printed p. 19)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=19",
+        "source_text_id": "generations-africa",
+        "note": "Mizraim \"would have been born\" about this year (the book's estimate)."
       }
     ]
   },

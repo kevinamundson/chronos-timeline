@@ -2,7 +2,7 @@
 :root {
   --bg: #f5f5f7; --bg-elev: #ffffff; --bg-fill: #e8e8ed; --label: #1d1d1f; --label-2: #6e6e73; --sep: #d2d2d7;
   --accent: #0066cc; --accent-fill: rgba(0,102,204,.1);
-  --t1: #0a7d32; --t2: #0066cc; --t3: #8944ab; --t4: #b25000; --td: #6e6e73;
+  --t1: #0a7d32; --t2: #0066cc; --t3: #8944ab; --t4: #b25000; --td: #6e6e73; --tp: #a2845e;
   --flag-diff: #b25000; --flag-oq: #8944ab;
   --radius: 14px; --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.05);
   --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -12,7 +12,7 @@
   :root {
     --bg: #000000; --bg-elev: #1c1c1e; --bg-fill: #2c2c2e; --label: #f5f5f7; --label-2: #a1a1a6; --sep: #38383a;
     --accent: #2997ff; --accent-fill: rgba(41,151,255,.16);
-    --t1: #30d158; --t2: #2997ff; --t3: #bf5af2; --t4: #ff9f0a; --td: #a1a1a6;
+    --t1: #30d158; --t2: #2997ff; --t3: #bf5af2; --t4: #ff9f0a; --td: #a1a1a6; --tp: #c9a87c;
     --flag-diff: #ff9f0a; --flag-oq: #bf5af2;
     --shadow: none;
   }
@@ -69,7 +69,7 @@ button:hover { background: var(--accent-fill); color: var(--accent); }
 .sortyear strong { font-size: 28px; letter-spacing: -0.02em; }
 .sortbox p { margin: 6px 0 0; }
 .tier { display: inline-block; font-size: 13px; font-weight: 600; padding: 3px 10px; border-radius: 999px; border: 1.5px solid currentColor; }
-.tier-t1 { color: var(--t1); } .tier-t2 { color: var(--t2); } .tier-t3 { color: var(--t3); } .tier-t4 { color: var(--t4); } .tier-td, .tier-tn { color: var(--td); }
+.tier-t1 { color: var(--t1); } .tier-t2 { color: var(--t2); } .tier-t3 { color: var(--t3); } .tier-t4 { color: var(--t4); } .tier-td, .tier-tn { color: var(--td); } .tier-tp { color: var(--tp); }
 .tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 6px; background: var(--bg-fill); color: var(--label-2); vertical-align: middle; }
 .tag-t1 { color: var(--t1); } .tag-t2 { color: var(--t2); }
 .tiers li { margin: 6px 0; }
@@ -103,7 +103,7 @@ table.chron tr.pending td, table.chron tr.pending th { color: var(--label-2); }
 .legend { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px 16px; color: var(--label-2); }
 .legend li { display: flex; align-items: center; gap: 6px; }
 .swatch { width: 12px; height: 12px; border-radius: 3px; background: currentColor; display: inline-block; }
-.swatch.tier-t1 { background: var(--t1); } .swatch.tier-t2 { background: var(--t2); } .swatch.tier-t3 { background: var(--t3); } .swatch.tier-t4 { background: var(--t4); } .swatch.tier-td { background: var(--td); }
+.swatch.tier-t1 { background: var(--t1); } .swatch.tier-t2 { background: var(--t2); } .swatch.tier-t3 { background: var(--t3); } .swatch.tier-t4 { background: var(--t4); } .swatch.tier-td { background: var(--td); } .swatch.tier-tp { background: var(--tp); }
 
 /* Thumbnails */
 .thumbs { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
@@ -136,7 +136,7 @@ table.chron tr.pending td, table.chron tr.pending th { color: var(--label-2); }
 .vis-item.vis-point .vis-item-content { color: var(--label); }
 .vis-item .vis-dot { border-width: 5px; border-radius: 6px; }
 .vis-item.tier-t1 .vis-dot { border-color: var(--t1); } .vis-item.tier-t2 .vis-dot { border-color: var(--t2); }
-.vis-item.tier-t3 .vis-dot { border-color: var(--t3); } .vis-item.tier-t4 .vis-dot { border-color: var(--t4); } .vis-item.tier-td .vis-dot { border-color: var(--td); }
+.vis-item.tier-t3 .vis-dot { border-color: var(--t3); } .vis-item.tier-t4 .vis-dot { border-color: var(--t4); } .vis-item.tier-td .vis-dot { border-color: var(--td); } .vis-item.tier-tp .vis-dot { border-color: var(--tp); border-style: dotted; }
 .vis-item.vis-selected { background: var(--accent-fill); }
 div.vis-tooltip { font-family: var(--font); font-size: 13px; background: var(--bg-elev); color: var(--label); border: 1px solid var(--sep); border-radius: 8px; box-shadow: var(--shadow); padding: 6px 10px; }
 

@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "west-african-ebola-epidemic",
+  "type": "event",
+  "title": "Ebola epidemic in West Africa",
+  "summary": "Ebola epidemic in West Africa",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 2013,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 198): From 2013 to 2016. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "From 2013 to 2016",
+      "year_am": null,
+      "year_bc_ad": 2013,
+      "year_bc_ad_end": 2016,
+      "precision": "year-range",
+      "citation": "Taking Africa for Jesus, ch. 20 \"Recent Stories from Africa\", PDF p. 198 (printed p. 198)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=198",
+      "source_text_id": "generations-africa",
+      "note": "About 28,000 infected. First outbreak likely in Guinea; Liberia from March 2014."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-africa",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
+      "locator": "Taking Africa for Jesus"
+    }
+  ]
+}

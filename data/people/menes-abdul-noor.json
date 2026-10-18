@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "menes-abdul-noor",
+  "type": "person",
+  "title": "Menes Abdul Noor",
+  "summary": "Egyptian evangelical pastor of Kasr El Dobara Church, Cairo.",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1930,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 193): September 1930. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "September 1930",
+        "year_am": null,
+        "year_bc_ad": 1930,
+        "precision": "month",
+        "citation": "Taking Africa for Jesus, ch. 20 \"Recent Stories from Africa\", PDF p. 193 (printed p. 193)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=193",
+        "source_text_id": "generations-africa",
+        "note": "In a village in Upper Egypt."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ]
+  },
+  "events": [
+    "menes-abdul-noor-at-kasr-el-dobara",
+    "menes-abdul-noor-ordained"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": []
+}

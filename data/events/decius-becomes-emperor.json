@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "decius-becomes-emperor",
+  "type": "event",
+  "title": "Decius becomes Roman emperor (persecution follows)",
+  "summary": "Decius becomes Roman emperor (persecution follows)",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 249,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 68): AD 249. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "AD 249",
+      "year_am": null,
+      "year_bc_ad": 249,
+      "precision": "year",
+      "citation": "Taking Africa for Jesus, ch. 7 \"Cyprian of Carthage\", PDF p. 68 (printed p. 68)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=68",
+      "source_text_id": "generations-africa",
+      "note": "After the reign of Philip the Arab."
+    }
+  ],
+  "people": [
+    "cyprian-of-carthage"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-africa",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
+      "locator": "Taking Africa for Jesus"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "athanasius-of-alexandria",
+  "type": "person",
+  "title": "Athanasius of Alexandria",
+  "summary": "Bishop of Alexandria and defender of the deity of Christ against Arianism (Council of Nicaea, AD 325).",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 298,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 72): about AD 298. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "about AD 298",
+        "year_am": null,
+        "year_bc_ad": 298,
+        "precision": "approximate",
+        "citation": "Taking Africa for Jesus, ch. 8 \"Athanasius of Alexandria\", PDF p. 72 (printed p. 72)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=72",
+        "source_text_id": "generations-africa",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ]
+  },
+  "events": [
+    "athanasius-in-rome",
+    "athanasius-returns-to-alexandria-337",
+    "council-of-nicaea"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": []
+}

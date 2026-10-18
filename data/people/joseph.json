@@ -80,6 +80,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 2259.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "generations",
+        "date": "1911 BC",
+        "year_am": null,
+        "year_bc_ad": -1911,
+        "precision": "year",
+        "citation": "Taking Africa for Jesus, ch. 3 \"Egypt (Part 2)\", PDF p. 29 (printed p. 29)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=29",
+        "source_text_id": "generations-africa",
+        "note": "Heading \"Birth of Joseph - 1911 BC\". Differs from the sort year (1745 BC, ussher-jones) by 166 years."
       }
     ],
     "death": [

@@ -79,6 +79,17 @@
       "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
       "note": "Agrees with Jordan's own published AM 2298.",
       "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
+      "source": "generations",
+      "date": "between 1840 and 1440 BC",
+      "year_am": null,
+      "year_bc_ad": -1840,
+      "precision": "year-range",
+      "citation": "Taking Africa for Jesus, ch. 3 \"Egypt (Part 2)\", PDF p. 33 (printed p. 33)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=33",
+      "source_text_id": "generations-africa",
+      "note": "Israel's generations in Goshen are dated 1840–1440 BC; the start year (entry into Goshen) is compared here. Differs from the sort year (1706 BC, cfah-table1) by 134 years."
     }
   ],
   "people": [

@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "jeremiah-prophecy-against-egypt",
+  "type": "event",
+  "title": "Jeremiah's prophecy against Egypt (Jer 46)",
+  "summary": "Jeremiah's prophecy against Egypt (Jer 46)",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -585,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 45): around 585 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "around 585 BC",
+      "year_am": null,
+      "year_bc_ad": -585,
+      "precision": "approximate",
+      "citation": "Taking Africa for Jesus, ch. 4 \"Egypt (Part 3)\", PDF p. 45 (printed p. 45)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=45",
+      "source_text_id": "generations-africa",
+      "note": "Fulfilment followed soon after."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Jer.46.13-Jer.46.26"
+  ],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-africa",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
+      "locator": "Taking Africa for Jesus"
+    }
+  ]
+}

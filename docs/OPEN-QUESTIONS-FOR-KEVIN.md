@@ -108,6 +108,36 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
 
 ---
 
+### A8. Provisional sort for Generations-only records (AD era and some ancient ones), plus the Generations conflicts
+- **Why it matters:** the Generations curriculum books (Swanson / Schwisow) add many dated events and people that **no sorting tier reaches**: CFAH, CFAH-1 Table 1, Ussher–Jones and Ussher all stop before most of the AD era. Every event needs an integer `sorting_year` to appear on a timeline, so something has to be decided for these records.
+- **What is implemented for now (provisional, least invasive):** a new sort tier `provisional` (no tier rank). The sort year is the **first dated Generations entry** on the record (for people, the birth year), and the record carries a visible badge: "Provisional · Generations curriculum date". The validator **forbids** `provisional` on any record that has a tier 1–4 year, so Generations can never move a CFAH, Ussher–Jones or Ussher date. On records that already had a sort, Generations dates appear only as a secondary display row, with any difference flagged.
+- **Ancient records sorted this way (please check):**
+  - **Mizraim** had no tier 1–4 birth year. He now sorts at Generations' "around 2478 BC" (Africa, PDF p. 19).
+  - **The Great Pyramid** (new record) sorts at Generations' ~2258 BC. CFAH mentions Khufu (~1921 BC) only in a note, not as a tier date.
+- **Options:**
+  1. Keep the provisional tier as implemented. **(Recommended.)**
+  2. Exclude Generations-only records from the timelines: a null `sorting_year`, which needs a schema change, and the records show only as pages.
+  3. Build a separate AD / church-history timeline, and keep the main timeline to tiers 1–4.
+- **Recommendation:** option 1. It is reversible: one switch in the importer and the validator removes it.
+- **Conflicts with the sort year (Taking Africa for Jesus).** Each is shown as a flagged secondary row; the sort is unchanged.
+
+  | Event | Generations | Current sort |
+  |---|---|---|
+  | Abram goes down to Egypt | 2076 BC | 1921 BC (CFAH-1 Table 1) |
+  | Joseph's birth | 1911 BC | 1745 BC (Ussher–Jones) |
+  | Moses's birth | 1520 BC | 1571 BC |
+  | The Exodus | 1400 BC | 1491 BC |
+  | Amenemhat I | ~1990 BC | 1738 BC (CFAH) |
+  | Egyptian cities / Mizraim | ~2450 BC | 2189 BC (CFAH) |
+  | Seneferu / Dynasty 3 | ~2282 BC | 2029 BC (CFAH) |
+  | Goshen / entry into Egypt | 1840 BC | 1706 BC |
+
+  The full list for each book is in `data/generations-dates-extract.md`.
+- **Printed oddities kept as printed (and flagged):**
+  - Punic Wars "246 BC". The conventional start is 264 BC, so this may be a transposition.
+  - Mackay "April 1875" printed before the November 1875 appeal.
+  - Thutmose I "between 1493 and 1506 BC", printed in reverse order.
+
 ## B. Questions that change what is shown
 
 ### B1. Label Jordan's BC dates as "SBC" more prominently? (OQ 21)

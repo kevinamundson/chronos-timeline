@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ct-studd",
+  "type": "person",
+  "title": "C. T. Studd",
+  "alt_names": [
+    "Charles Thomas Studd"
+  ],
+  "summary": "English cricketer, one of the Cambridge Seven to China, later missionary to India and the Belgian Congo.",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1860,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 182): December 1860. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "December 1860",
+        "year_am": null,
+        "year_bc_ad": 1860,
+        "precision": "month",
+        "citation": "Taking Africa for Jesus, ch. 19 \"C.T. Studd: Missionary to the Congo\", PDF p. 182 (printed p. 182)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=182",
+        "source_text_id": "generations-africa",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "July 16, 1931",
+        "year_am": null,
+        "year_bc_ad": 1931,
+        "precision": "day",
+        "citation": "Taking Africa for Jesus, ch. 19 \"C.T. Studd: Missionary to the Congo\", PDF p. 189 (printed p. 189)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=189",
+        "source_text_id": "generations-africa",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "cambridge-seven-sail",
+    "first-baptisms-congo-mission",
+    "ibambi-headquarters",
+    "studd-cambridge-graduation",
+    "studd-in-india",
+    "studd-reaches-niangara",
+    "studd-returns-to-africa-1916",
+    "studd-sails-for-africa",
+    "studds-return-from-china"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": []
+}

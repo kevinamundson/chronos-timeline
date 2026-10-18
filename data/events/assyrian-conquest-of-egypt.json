@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "assyrian-conquest-of-egypt",
+  "type": "event",
+  "title": "Assyrian armies overrun Egypt",
+  "summary": "Assyrian armies overrun Egypt",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -650,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 43): around 650 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "around 650 BC",
+      "year_am": null,
+      "year_bc_ad": -650,
+      "precision": "approximate",
+      "citation": "Taking Africa for Jesus, ch. 4 \"Egypt (Part 3)\", PDF p. 43 (printed p. 43)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=43",
+      "source_text_id": "generations-africa",
+      "note": null
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-africa",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
+      "locator": "Taking Africa for Jesus"
+    }
+  ]
+}

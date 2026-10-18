@@ -90,6 +90,17 @@
       "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
       "note": "Agrees with Jordan's own published AM 2083. The compilation's B.C. year (1927) is AM subtracted from 4010 (its own convention: Creation 4010 B.C.); Jordan's own SBC B.C. figures differ (here 1847 B.C.). Display only; never converted or used for sorting.",
       "source_text_id": "jordan-compilation-anno-mundi"
+    },
+    {
+      "source": "generations",
+      "date": "2076 BC",
+      "year_am": null,
+      "year_bc_ad": -2076,
+      "precision": "year",
+      "citation": "Taking Africa for Jesus, ch. 2 \"Egypt (Part 1)\", PDF p. 20 (printed p. 20)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=20",
+      "source_text_id": "generations-africa",
+      "note": "Heading \"Abram visits Egypt - 2076 BC\". Differs from the sort year (1921 BC, cfah-table1) by 155 years."
     }
   ],
   "people": [

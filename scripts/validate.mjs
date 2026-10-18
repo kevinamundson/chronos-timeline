@@ -154,6 +154,13 @@ for (const { rel, doc, entries, kind } of sortingTargets) {
     else if (src.doc.sorting_basis?.tier === 'derived' || src.doc.sorting_basis?.tier === 'none') err(rel, 'derived_from must point at a record sorted by tiers 1-4');
     else if (doc.sorting_year !== src.doc.sorting_year) err(rel, `derived sorting_year ${doc.sorting_year} != ${b.derived_from} sorting_year ${src.doc.sorting_year}`);
     if (b.tier_rank !== null) err(rel, 'derived tier must have tier_rank null');
+  } else if (b.tier === 'provisional') {
+    // Generations (secondary) may only supply a PROVISIONAL sort where no tier 1-4 year exists.
+    const g = entries.find((e) => e.source === 'generations' && e.year_bc_ad != null);
+    if (b.chronology !== 'generations') err(rel, 'provisional tier must name chronology "generations"');
+    if (b.tier_rank !== null) err(rel, 'provisional tier must have tier_rank null');
+    if (!g) err(rel, 'provisional tier needs a dated generations entry');
+    else if (doc.sorting_year !== g.year_bc_ad) err(rel, `provisional sorting_year should be ${g.year_bc_ad} (first dated generations entry), found ${doc.sorting_year}`);
   } else if (b.tier === 'none') {
     if (kind !== 'person') err(rel, 'tier "none" (null sorting_year) is only allowed for people; events need a derived sort');
     if (doc.sorting_year !== null) err(rel, 'tier "none" requires sorting_year null');
@@ -165,6 +172,26 @@ for (const { rel, doc, entries, kind } of sortingTargets) {
 const SORT_CHRONS = new Set(['cfah', 'ussher-jones', 'ussher']);
 for (const t of chronDoc.sorting_rule?.tiers || []) if (!SORT_CHRONS.has(t.chronology)) err('data/chronologies.json', `sorting_rule tier uses non-sort chronology "${t.chronology}"`);
 for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jordan-compilation') && (c.primary || !/SECONDARY DISPLAY/.test(c.description))) err('data/chronologies.json', `${c.id} must be a non-primary SECONDARY DISPLAY chronology`);
+// Generations curriculum: secondary display chronology; never a sort tier, never overrides tiers 1-4.
+{
+  const gen = chronDoc.chronologies.find((c) => c.id === 'generations');
+  if (gen && (gen.primary || !/SECONDARY DISPLAY/.test(gen.description))) err('data/chronologies.json', 'generations must be a non-primary SECONDARY DISPLAY chronology');
+  const GEN_SRC = new Set(srcDoc.sources.filter((s) => /^generations-/.test(s.id)).map((s) => s.id));
+  for (const { rel, doc, entries } of sortingTargets) {
+    const b = doc.sorting_basis || {};
+    if ((b.chronology === 'generations' || b.derived_from === 'generations') && b.tier !== 'provisional') err(rel, 'generations may never set the sort except via the explicit "provisional" tier');
+    if (b.tier === 'provisional' && expectedSort(entries)) err(rel, 'provisional (generations) sort used although a tier 1-4 year exists');
+  }
+  for (const { rel, doc } of Object.values(records)) {
+    const all = [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()];
+    for (const e of all.filter((x) => x.source === 'generations')) {
+      if (!GEN_SRC.has(e.source_text_id)) err(rel, `generations entry needs source_text_id of a generations-* source, got "${e.source_text_id}"`);
+      if (e.date !== null && !/PDF p\. \d+/.test(e.citation || '')) err(rel, `generations entry "${e.date}" needs a "PDF p. N" page citation`);
+      const src = srcDoc.sources.find((s) => s.id === e.source_text_id);
+      if (src && e.link && !e.link.startsWith(src.url)) err(rel, `generations entry link must point at the original PDF (${src.url})`);
+    }
+  }
+}
 for (const { rel, doc } of sortingTargets) if (['jordan', 'jordan-compilation'].some((j) => doc.sorting_basis?.chronology === j || doc.sorting_basis?.derived_from === j)) err(rel, 'sorting_basis may not use a secondary Jordan chronology');
 
 // Masoretic Genesis 5 cross-check (KJV/MT figures: [id, age at named son, lifespan])

@@ -1,0 +1,81 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "robert-moffat",
+  "type": "person",
+  "title": "Robert Moffat",
+  "summary": "Scottish missionary to the Bechuana at Kuruman, South Africa; translated the Bible into Setswana.",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1795,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 132): 1795. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1795",
+        "year_am": null,
+        "year_bc_ad": 1795,
+        "precision": "year",
+        "citation": "Taking Africa for Jesus, ch. 14 \"Robert Moffat: Missionary to South Africa\", PDF p. 132 (printed p. 132)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=132",
+        "source_text_id": "generations-africa",
+        "note": "Born in Scotland (lifespan 1795–1883)."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "August 10, 1883",
+        "year_am": null,
+        "year_bc_ad": 1883,
+        "precision": "day",
+        "citation": "Taking Africa for Jesus, ch. 14 \"Robert Moffat: Missionary to South Africa\", PDF p. 139 (printed p. 139)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=139",
+        "source_text_id": "generations-africa",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "boer-bechuana-conflicts",
+    "death-of-mary-moffat",
+    "kuruman-awakening",
+    "mantatee-invasion",
+    "moffat-bible-completed",
+    "moffat-furlough-in-england",
+    "moffat-last-sermon-at-kuruman",
+    "moffat-marriage",
+    "moffat-ordained"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": []
+}

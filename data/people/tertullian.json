@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "tertullian",
+  "type": "person",
+  "title": "Tertullian",
+  "summary": "Church writer of Carthage whose works describe North African church life in the late 2nd century; later joined the Montanists.",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 155,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 56): about AD 155. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "about AD 155",
+        "year_am": null,
+        "year_bc_ad": 155,
+        "precision": "approximate",
+        "citation": "Taking Africa for Jesus, ch. 6 \"Church Life in North Africa\", PDF p. 56 (printed p. 56)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=56",
+        "source_text_id": "generations-africa",
+        "note": "\"Tertullian lived from about AD 155 to 240.\""
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "about AD ... 240",
+        "year_am": null,
+        "year_bc_ad": 240,
+        "precision": "approximate",
+        "citation": "Taking Africa for Jesus, ch. 6 \"Church Life in North Africa\", PDF p. 56 (printed p. 56)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=56",
+        "source_text_id": "generations-africa",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "tertullian-joins-montanists"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": []
+}

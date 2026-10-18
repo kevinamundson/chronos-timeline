@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "cyprian-of-carthage",
+  "type": "person",
+  "title": "Cyprian of Carthage",
+  "summary": "Pastor (bishop) of Carthage from AD 248/249; martyred AD 258.",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 200,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 57): about AD 200. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "about AD 200",
+        "year_am": null,
+        "year_bc_ad": 200,
+        "precision": "approximate",
+        "citation": "Taking Africa for Jesus, ch. 6 \"Church Life in North Africa\", PDF p. 57 (printed p. 57)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=57",
+        "source_text_id": "generations-africa",
+        "note": "Lived \"from about AD 200 to 258\"; p. 66: born in Carthage around AD 200."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "AD 258",
+        "year_am": null,
+        "year_bc_ad": 258,
+        "precision": "year",
+        "citation": "Taking Africa for Jesus, ch. 6 \"Church Life in North Africa\", PDF p. 57 (printed p. 57)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=57",
+        "source_text_id": "generations-africa",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "cyprian-chosen-pastor-of-carthage",
+    "decius-becomes-emperor"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": []
+}

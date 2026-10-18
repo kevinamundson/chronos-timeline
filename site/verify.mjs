@@ -35,11 +35,24 @@ async function open(path, { width = 1280, height = 900, shot, fullPage = true, s
   const tl = await o.page.locator('.vis-timeline .vis-item').count();
   const markers = await o.page.locator('#map .leaflet-marker-icon').count();
   const tiles = await o.page.locator('#map img.leaflet-tile-loaded').count();
-  const axis = await o.page.locator('.vis-time-axis .vis-text.vis-minor').allTextContents();
+  const axis = await o.page.locator('.vis-time-axis .vis-text.vis-minor:not(.vis-measure)').allTextContents();
   check('home: HTTP 200', o.status === 200);
   check('home: no console errors', o.errors.length === 0, o.errors.join(' | '));
   check('home: timeline items rendered', tl > 0, `${tl} items`);
   check('home: axis labels are BC', axis.some((t) => / BC$/.test(t)) && !axis.some((t) => /^-/.test(t)), axis.slice(0, 6).join(', '));
+  // AD side: zoom the home timeline to AD 300-500 and check labels and an AD item (Generations import)
+  const adItems = await o.page.evaluate(() => JSON.parse(document.getElementById('tl-data').textContent).filter((i) => i.y > 0).length);
+  if (adItems) {
+    await o.page.locator('[data-tl="in"]').first().count();
+    const win0 = await o.page.evaluate(() => { const w = window.__timeline?.getWindow(); return w ? [w.start.getTime(), w.end.getTime()] : null; });
+    const adAxis = await o.page.evaluate(() => { const tl = window.__timeline; if (!tl) return null; const d = (y) => { const x = new Date(Date.UTC(2000, 6, 1)); x.setUTCFullYear(y - 1); return x; }; tl.setWindow(d(300), d(500), { animation: false }); return true; });
+    await o.page.waitForTimeout(400);
+    const ax2 = await o.page.locator('.vis-time-axis .vis-text.vis-minor:not(.vis-measure)').allTextContents();
+    check('home: AD axis labels read "AD n" with no year 0', adAxis === null || (ax2.some((t) => /^AD \d+$/.test(t)) && !ax2.some((t) => /^AD 0$|^-/.test(t))), ax2.slice(0, 6).join(', '));
+    const nic = await o.page.locator('.vis-item', { hasText: 'Council of Nicaea' }).count();
+    check('home: AD item (Council of Nicaea) rendered', adAxis === null || nic > 0, `${adItems} AD items in data`);
+    if (win0) { await o.page.evaluate((w) => window.__timeline.setWindow(new Date(w[0]), new Date(w[1]), { animation: false }), win0); await o.page.waitForTimeout(400); }
+  }
   check('home: map markers rendered', markers > 0, `${markers} markers, ${tiles} OSM tiles loaded`);
   // click a timeline item navigates
   await o.page.locator('.vis-item', { hasText: 'The Flood' }).first().click();

@@ -77,6 +77,17 @@
       "link": "https://texts.earlyprint.org/works/A10357.xml",
       "note": null,
       "source_text_id": "raleigh-history-of-the-world-1617"
+    },
+    {
+      "source": "generations",
+      "date": "1520 BC",
+      "year_am": null,
+      "year_bc_ad": -1520,
+      "precision": "year",
+      "citation": "Taking Africa for Jesus, ch. 3 \"Egypt (Part 2)\", PDF p. 33 (printed p. 33)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=33",
+      "source_text_id": "generations-africa",
+      "note": "Heading \"The Birth of Moses — 1520 BC\". Differs from the sort year (1571 BC, ussher-jones) by 51 years."
     }
   ],
   "people": [

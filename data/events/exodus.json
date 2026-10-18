@@ -123,6 +123,17 @@
       "link": "https://archive.org/details/annalsofclonmacn00murp",
       "note": "The Memorandum lists intervals 1656, 0292, 0500, 0480, 0410, 0432, 0134 against seven rows; the row/number pairing is read from OCR column order and should be checked against the page scan.",
       "source_text_id": "annals-of-clonmacnoise-1896"
+    },
+    {
+      "source": "generations",
+      "date": "1400 BC",
+      "year_am": null,
+      "year_bc_ad": -1400,
+      "precision": "year",
+      "citation": "Taking Africa for Jesus, ch. 4 \"Egypt (Part 3)\", PDF p. 42 (printed p. 42)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=42",
+      "source_text_id": "generations-africa",
+      "note": "\"The Exodus of 1400 BC\". Differs from the sort year (1491 BC, cfah-table1) by 91 years."
     }
   ],
   "people": [

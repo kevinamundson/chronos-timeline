@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "hudson-taylor",
+  "type": "person",
+  "title": "Hudson Taylor",
+  "summary": "Founder of the China Inland Mission.",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1832,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 184): 1832-1905. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1832-1905",
+        "year_am": null,
+        "year_bc_ad": 1832,
+        "precision": "year",
+        "citation": "Taking Africa for Jesus, ch. 19 \"C.T. Studd: Missionary to the Congo\", PDF p. 184 (printed p. 184)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=184",
+        "source_text_id": "generations-africa",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1832-1905",
+        "year_am": null,
+        "year_bc_ad": 1905,
+        "precision": "year",
+        "citation": "Taking Africa for Jesus, ch. 19 \"C.T. Studd: Missionary to the Congo\", PDF p. 184 (printed p. 184)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=184",
+        "source_text_id": "generations-africa",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "cambridge-seven-sail"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": []
+}

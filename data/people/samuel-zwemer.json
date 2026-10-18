@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "samuel-zwemer",
+  "type": "person",
+  "title": "Samuel Zwemer",
+  "summary": "Reformed Church missionary to Arabia and Egypt; later professor at Princeton.",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1867,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 174): 1867-1952. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1867-1952",
+        "year_am": null,
+        "year_bc_ad": 1867,
+        "precision": "year",
+        "citation": "Taking Africa for Jesus, ch. 18 \"Samuel Zwemer: Missionary to Arabia and Egypt\", PDF p. 174 (printed p. 174)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=174",
+        "source_text_id": "generations-africa",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "April 2, 1952",
+        "year_am": null,
+        "year_bc_ad": 1952,
+        "precision": "day",
+        "citation": "Taking Africa for Jesus, ch. 18 \"Samuel Zwemer: Missionary to Arabia and Egypt\", PDF p. 181 (printed p. 181)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=181",
+        "source_text_id": "generations-africa",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "zwemer-at-princeton",
+    "zwemer-marriage",
+    "zwemer-ordained",
+    "zwemer-seminary",
+    "zwemer-to-cairo"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": []
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "alexander-mackay",
+  "type": "person",
+  "title": "Alexander Mackay",
+  "summary": "Scottish engineer-missionary to Uganda (King Mutesa and Mwanga).",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1889",
+        "year_am": null,
+        "year_bc_ad": 1889,
+        "precision": "year",
+        "citation": "Taking Africa for Jesus, ch. 16 \"Alexander Mackay: White Man of Work\", PDF p. 163 (printed p. 163)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=163",
+        "source_text_id": "generations-africa",
+        "note": "Died of malaria."
+      }
+    ]
+  },
+  "events": [
+    "eighty-waganda-baptized",
+    "first-waganda-convert",
+    "mackay-arrives-at-rubaga",
+    "mackay-christmas-confrontation",
+    "mackay-sails-for-africa",
+    "missionaries-reach-mutesa",
+    "mwanga-plots-against-mackay"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": []
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "studd-returns-to-africa-1916",
+  "type": "event",
+  "title": "Studd returns to Africa",
+  "summary": "Studd returns to Africa",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1916,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 187): July 1916. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "July 1916",
+      "year_am": null,
+      "year_bc_ad": 1916,
+      "precision": "month",
+      "citation": "Taking Africa for Jesus, ch. 19 \"C.T. Studd: Missionary to the Congo\", PDF p. 187 (printed p. 187)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=187",
+      "source_text_id": "generations-africa",
+      "note": null
+    }
+  ],
+  "people": [
+    "ct-studd"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-africa",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
+      "locator": "Taking Africa for Jesus"
+    }
+  ]
+}

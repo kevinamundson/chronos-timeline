@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "wilberforce-in-parliament",
+  "type": "event",
+  "title": "William Wilberforce serves in Parliament",
+  "summary": "William Wilberforce serves in Parliament",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1780,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 118): 1780 to 1825. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "1780 to 1825",
+      "year_am": null,
+      "year_bc_ad": 1780,
+      "year_bc_ad_end": 1825,
+      "precision": "year-range",
+      "citation": "Taking Africa for Jesus, ch. 12 \"The African Slave Trade\", PDF p. 118 (printed p. 118)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=118",
+      "source_text_id": "generations-africa",
+      "note": "Retired from Parliament in 1825 (p. 119)."
+    }
+  ],
+  "people": [
+    "william-wilberforce"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-africa",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
+      "locator": "Taking Africa for Jesus"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "david-livingstone",
+  "type": "person",
+  "title": "David Livingstone",
+  "summary": "Missionary and explorer of Africa; Robert Moffat's son-in-law.",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1873",
+        "year_am": null,
+        "year_bc_ad": 1873,
+        "precision": "year",
+        "citation": "Taking Africa for Jesus, ch. 14 \"Robert Moffat: Missionary to South Africa\", PDF p. 139 (printed p. 139)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=139",
+        "source_text_id": "generations-africa",
+        "note": "Died of malaria while exploring."
+      }
+    ]
+  },
+  "events": [
+    "death-of-livingstone"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": []
+}

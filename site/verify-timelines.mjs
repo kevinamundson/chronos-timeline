@@ -24,7 +24,9 @@ if (!live) { const { serve } = await import('./serve.mjs'); srv = await serve(87
 const expect = live ? await (await fetch(`${BASE}/data/person-timelines.json`, { cache: 'no-store' })).json()
   : JSON.parse(readFileSync(join(here, 'dist/data/person-timelines.json'), 'utf8'));
 const single = Object.keys(expect).find((k) => !expect[k].none && expect[k].own + expect[k].context === 1);
-const PEOPLE = ['joseph', 'abraham', 'noah', 'moses', single];
+// AD-era people (Generations import) exercise the AD side of the axis (AD y -> axis y-1).
+const AD = ['augustine-of-hippo', 'robert-moffat', 'boniface', 'william-carey', 'adoniram-judson'].filter((k) => expect[k] && !expect[k].none);
+const PEOPLE = ['joseph', 'abraham', 'noah', 'moses', single, ...AD];
 const WIDTHS = [[1024, 900], [1440, 900], [390, 844]];
 const results = []; let failed = false;
 const check = (name, ok, detail = '') => { results.push(`${ok ? 'PASS' : 'FAIL'}  ${name}${detail ? ` — ${detail}` : ''}`); if (!ok) failed = true; };
@@ -44,7 +46,8 @@ async function inspect(page) {
     const sw = (sel) => { const e = document.querySelector(sel); if (!e) return null; const s = getComputedStyle(e); const b = box(e);
       return { w: b.w, h: b.h, bg: s.backgroundColor, border: s.borderTopStyle + ' ' + s.borderTopWidth }; };
     const unversioned = [...document.querySelectorAll('link[href^="/assets/"], script[src^="/assets/"]')].map((e) => e.getAttribute('href') || e.getAttribute('src')).filter((u) => !/\?v=[0-9a-f]{8,}/.test(u));
-    return { h: C?.h || 0, w: C?.w || 0, pts, own: sw('.lg-own'), ctx: sw('.lg-ctx'), unversioned, ready: tl?.getAttribute('data-ready') };
+    const axis = [...(tl?.querySelectorAll('.vis-time-axis .vis-text.vis-minor:not(.vis-measure)') || [])].map((e) => e.textContent.trim()).filter(Boolean);
+    return { axis, h: C?.h || 0, w: C?.w || 0, pts, own: sw('.lg-own'), ctx: sw('.lg-ctx'), unversioned, ready: tl?.getAttribute('data-ready') };
   });
 }
 
@@ -73,6 +76,7 @@ for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
       check(`${tag}: chart drawn (height > 100px)`, r.h > 100, `${Math.round(r.w)}×${Math.round(r.h)}px`);
       check(`${tag}: items == own + context`, own.length === ex.own && ctxs.length === ex.context && r.pts.length === ex.own + ex.context, `own ${own.length}/${ex.own}, context ${ctxs.length}/${ex.context}`);
       check(`${tag}: every item visible inside the chart, label beside its dot`, r.pts.length > 0 && badPos.length === 0, badPos.map((p) => `${p.text} (dotIn ${p.dotIn}, gap ${p.gap})`).join('; '));
+      if (ex.window && ex.window[0] > 0) check(`${tag}: AD axis labels (no year 0, no negatives)`, r.axis.length > 0 && r.axis.every((t) => /^AD [1-9]\d*$/.test(t) || /^[A-Z][a-z]{2}$/.test(t)), r.axis.slice(0, 5).join(', '));
       check(`${tag}: own solid, context faded`, own.every((p) => p.op === 1) && ctxs.every((p) => p.op < 1));
       const swOk = (s, ctxSw) => s && s.w > 0 && s.h > 0 && (ctxSw ? /dashed/.test(s.border) : s.bg !== 'rgba(0, 0, 0, 0)');
       check(`${tag}: legend swatches visible`, swOk(r.own, false) && (ex.context === 0 || swOk(r.ctx, true)), JSON.stringify({ own: r.own, ctx: r.ctx }));

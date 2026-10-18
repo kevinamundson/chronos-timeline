@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "menes-abdul-noor-at-kasr-el-dobara",
+  "type": "event",
+  "title": "Menes Abdul Noor becomes pastor of Kasr El Dobara Church, Cairo",
+  "summary": "Menes Abdul Noor becomes pastor of Kasr El Dobara Church, Cairo",
+  "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1976,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 194): 1976. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "1976",
+      "year_am": null,
+      "year_bc_ad": 1976,
+      "precision": "year",
+      "citation": "Taking Africa for Jesus, ch. 20 \"Recent Stories from Africa\", PDF p. 194 (printed p. 194)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=194",
+      "source_text_id": "generations-africa",
+      "note": null
+    }
+  ],
+  "people": [
+    "menes-abdul-noor"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-africa"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-africa",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
+      "locator": "Taking Africa for Jesus"
+    }
+  ]
+}

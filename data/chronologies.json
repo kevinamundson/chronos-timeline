@@ -2,7 +2,7 @@
   "$schema": "../schema/chronology.schema.json",
   "primary_sort_chronology": "cfah",
   "sorting_rule": {
-    "description": "sorting_year = the BC/AD year of the first tier that has a non-null year_bc_ad (events: chronologies[]; people: dates.birth[]). The first matching entry within a tier is used; for split years (2348/2347) the start year is used. Secondary display chronologies (bible, masoretic-genealogy, jordan, josephus, Clonmacnoise, Raleigh) never set sorting_year.",
+    "description": "sorting_year = the BC/AD year of the first tier that has a non-null year_bc_ad (events: chronologies[]; people: dates.birth[]). The first matching entry within a tier is used; for split years (2348/2347) the start year is used. Secondary display chronologies (bible, masoretic-genealogy, jordan, josephus, Clonmacnoise, Raleigh) never set sorting_year. Exception, pending owner decision: where no tier gives a year, the Generations curriculum supplies a PROVISIONAL sort (tier \"provisional\"; see A8 in docs/OPEN-QUESTIONS-FOR-KEVIN.md).",
     "tiers": [
       {
         "rank": 1,
@@ -31,7 +31,7 @@
         "select": "ussher entry (Annals of the World)"
       }
     ],
-    "fallbacks": "If no tier yields a year: tier \"derived\" (sorting_year copied from the record named in derived_from; events only by convention) or tier \"none\" (sorting_year null; people only)."
+    "fallbacks": "If no tier yields a year: tier \"derived\" (sorting_year copied from the record named in derived_from; events only by convention) or tier \"none\" (sorting_year null; people only). Tier \"provisional\" (records with no tier 1-4 year only): sorting_year = the first dated generations entry (events: chronologies[]; people: dates.birth[]); badged as provisional."
   },
   "chronologies": [
     {
@@ -554,6 +554,28 @@
       "year_conventions": "AM as printed (year_am). B.C. (year_bc_ad) only where the compilation prints a B.C. year (pp. 3 and 11). Nothing is converted. Its AM has a year 0 (\"There is a “0” year in A.M.\", p. 13).",
       "references": [
         "jordan-compilation-anno-mundi"
+      ],
+      "anchors": []
+    },
+    {
+      "id": "generations",
+      "name": "Generations curriculum (Swanson et al.)",
+      "abbreviation": "Generations",
+      "primary": false,
+      "sort_priority": 11,
+      "status": "partial",
+      "authors": [
+        "Kevin Swanson",
+        "Joshua Schwisow"
+      ],
+      "description": "SECONDARY DISPLAY CHRONOLOGY. It is never one of the four sort tiers and never overrides them. Dates come from five Generations curriculum books (Taking Africa / Europe / Asia / the World for Jesus; Preparing the World for Jesus), each with a book and PDF page citation. Records that no tier reaches (mostly AD church and missions history) take a PROVISIONAL sort year from the first Generations date: sorting_basis tier \"provisional\", badged on the site and pending the owner's decision (docs/OPEN-QUESTIONS-FOR-KEVIN.md, A8). Where a record already has a tier 1–4 date, Generations is display-only and any disagreement is flagged.",
+      "year_conventions": "Dates are as printed: BC/AD as the book gives them, with circa and approximate qualifiers kept. year_bc_ad is filled only from a printed year; nothing is converted or inferred. Precision \"approximate\" marks circa/about/around; a bare \"AD\" or \"BC\" is taken from the sentence or the chapter context and stated in the note when the book omits it.",
+      "references": [
+        "generations-africa",
+        "generations-europe",
+        "generations-asia",
+        "generations-world",
+        "generations-preparing"
       ],
       "anchors": []
     }

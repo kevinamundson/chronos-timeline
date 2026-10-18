@@ -3,6 +3,8 @@ node_modules/
 site/dist/
 # scratch / local only (never publish copyrighted source texts or OCR)
 cfah-src/
+generations-src/
+*.pdf
 cf/
 scratch/
 tmp/

@@ -910,6 +910,82 @@
       "license_note": "Private copy in the owner's Google Drive (not publicly available; the link works only for the owner). The compiler is unnamed. The owner has confirmed it is an accurate compilation of Jordan's system (2026-10-18). Only short quotes and figures are used here.",
       "verified_on": "2026-10-18",
       "note": "Drive id 1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS. The id 11zUlqRaS-QD8iPEC0-Ed6OSPgwSEuTKn that docs/open-questions.md cited for it is actually the owner's copy of From Creation to Solomon (jordan-sbc-2). Its AM figures follow Jordan (Judges as in Studies in Biblical Chronology No. 2, 2001) with a few slips; its B.C. column is its own (Creation 4010 B.C., i.e. B.C. = 4010 − AM), not Jordan's SBC (Creation 3930)."
+    },
+    {
+      "id": "generations-africa",
+      "title": "Taking Africa for Jesus",
+      "authors": [
+        "Joshua Schwisow",
+        "Kevin Swanson"
+      ],
+      "translator_or_editor": null,
+      "year": "2020 (1st Printing, 2020)",
+      "publication": "Generations, Parker, Colorado (Generations curriculum)",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
+      "access": "free-to-read",
+      "license_note": "© Generations. Copyrighted; a free PDF distributed by Generations as a Homeschool Summit bonus. Only dates, page citations and short notes in our own words are kept here. The text is not reproduced.",
+      "verified_on": "2026-10-18",
+      "note": "Title page: \"Taking Africa for Jesus\"; \"By Joshua Schwisow and Kevin Swanson\". Copyright page: \"Copyright © 2020 by Generations\", \"1st Printing, 2020\", \"ISBN: 978-1-7332304-5-2\", published by Generations, Parker, Colorado. 208 PDF pages; printed page numbers equal PDF page numbers."
+    },
+    {
+      "id": "generations-europe",
+      "title": "Taking Europe for Jesus",
+      "authors": [
+        "Joshua Schwisow"
+      ],
+      "translator_or_editor": null,
+      "year": "2022 (1st Printing, 2022)",
+      "publication": "Generations, Parker, Colorado (Generations curriculum)",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
+      "access": "free-to-read",
+      "license_note": "© Generations. Copyrighted; a free PDF distributed by Generations as a Homeschool Summit bonus. Only dates, page citations and short notes in our own words are kept here. The text is not reproduced.",
+      "verified_on": "2026-10-18",
+      "note": "Title page: \"Taking Europe for Jesus\"; \"By Joshua Schwisow\". Copyright page: \"Copyright © 2022 by Generations\", \"Printed in the United States of America\", \"1st Printing, 2022\", \"ISBN: 978-1-954745-29-2\", published by Generations. The file name says \"ebook\". 368 PDF pages."
+    },
+    {
+      "id": "generations-asia",
+      "title": "Taking Asia for Jesus",
+      "authors": [
+        "Joshua Schwisow"
+      ],
+      "translator_or_editor": "R. A. Sheats (editor)",
+      "year": "2021 (1st Printing, 2021)",
+      "publication": "Generations, Parker, Colorado (Generations curriculum)",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
+      "access": "free-to-read",
+      "license_note": "© Generations. Copyrighted; a free PDF distributed by Generations as a Homeschool Summit bonus. Only dates, page citations and short notes in our own words are kept here. The text is not reproduced.",
+      "verified_on": "2026-10-18",
+      "note": "Title page: \"Taking Asia for Jesus\"; \"By Joshua Schwisow\", \"Edited by R.A. Sheats\". Copyright page: \"Copyright © 2021 by Generations\", \"Printed in Korea\", \"1st Printing, 2021\", \"ISBN: 978-1-7350719-8-5\". 344 PDF pages."
+    },
+    {
+      "id": "generations-world",
+      "title": "Taking the World for Jesus: The Remarkable Story of the Greatest Commission",
+      "authors": [
+        "Kevin Swanson"
+      ],
+      "translator_or_editor": "Editing by Wesley Strackbein, Jonathan Clark, Jonathan McCormick",
+      "year": "2017",
+      "publication": "Generations, Parker, Colorado (Generations curriculum)",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
+      "access": "free-to-read",
+      "license_note": "© Generations. Copyrighted; a free PDF distributed by Generations as a Homeschool Summit bonus. Only dates, page citations and short notes in our own words are kept here. The text is not reproduced.",
+      "verified_on": "2026-10-18",
+      "note": "Title page: \"Taking the World for Jesus: The Remarkable Story of the Greatest Commission\", \"Kevin Swanson\". Copyright page: \"Copyright © 2017 Generations\", \"Printed in the United Stated [sic] of America\"; the ISBN is printed as \"978-0-000000-0-0\" (a placeholder, recorded as printed); no printing or edition line. 206 PDF pages."
+    },
+    {
+      "id": "generations-preparing",
+      "title": "Preparing the World for Jesus: A Survey of the World Before Christ",
+      "authors": [
+        "Kevin Swanson"
+      ],
+      "translator_or_editor": null,
+      "year": "2020",
+      "publication": "Generations, Parker, Colorado (Generations curriculum)",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "access": "free-to-read",
+      "license_note": "© Generations. Copyrighted; a free PDF distributed by Generations as a Homeschool Summit bonus. Only dates, page citations and short notes in our own words are kept here. The text is not reproduced.",
+      "verified_on": "2026-10-18",
+      "note": "Cover: \"Preparing the World for Jesus: A Survey of the World Before Christ\", \"Kevin Swanson\" (the author is named on the cover only). Copyright page: \"Copyright © 2020 by Generations\", \"Printed in Korea\", \"isbn: 978-1-7332304-6-9\"; no edition line. 577 PDF pages; printed page = PDF page − 1."
     }
   ]
 }

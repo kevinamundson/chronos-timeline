@@ -233,7 +233,7 @@
         "chronology",
         "note"
       ],
-      "description": "Which tier of the sorting fallback produced sorting_year: 1 cfah-anchor, 2 cfah-table1, 3 ussher-jones, 4 ussher; \"derived\" (copied from derived_from) or \"none\" (null) only when no tier gives a BC year.",
+      "description": "Which tier of the sorting fallback produced sorting_year: 1 cfah-anchor, 2 cfah-table1, 3 ussher-jones, 4 ussher; \"derived\" (copied from derived_from) or \"none\" (null) only when no tier gives a BC year. \"provisional\" (tier_rank null, chronology generations) = PROVISIONAL sort from the Generations curriculum, allowed only when no tier 1-4 year exists (AD church/missions history); badged on the site and pending owner decision (docs/OPEN-QUESTIONS-FOR-KEVIN.md A-GEN).",
       "properties": {
         "tier": {
           "enum": [
@@ -242,6 +242,7 @@
             "ussher-jones",
             "ussher",
             "derived",
+            "provisional",
             "none"
           ]
         },
