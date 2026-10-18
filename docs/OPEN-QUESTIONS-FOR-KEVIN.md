@@ -114,16 +114,19 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
 - **Ancient records sorted this way (please check):**
   - **Mizraim** had no tier 1–4 birth year. He now sorts at Generations' "around 2478 BC" (Africa, PDF p. 19).
   - **The Great Pyramid** (new record) sorts at Generations' ~2258 BC. CFAH mentions Khufu (~1921 BC) only in a note, not as a tier date.
-  - **New biblical events from Preparing the World for Jesus** sort on that book's long chronology until a tier 1–4 date is added, so several sit earlier than their Ussher-sorted neighbours:
-    - Destruction of Sodom c. 2066 BC (Ussher about 1897)
-    - Joseph sold into Egypt 1930 BC (Ussher 1728)
-    - Nimrod builds Nineveh c. 2418 BC
-    - Mizraim settles Egypt c. 2450 BC
-    - Forty years in the wilderness 1446–1406 BC
-    - Fall of Jericho c. 1400 BC
-    - Shamgar, Samson and Samuel as judges, about 18 years later than Ussher–Jones
+  - **New biblical events from Preparing the World for Jesus.** With the 1st edition (2020) these sorted on its long chronology. **The 2nd edition (2024) is now the primary reading, and every provisional sort that came from the 1st edition has switched to the 2nd-edition date where there is one.** They now sit with their Ussher-sorted neighbours:
 
-    **Recommended fix:** add Ussher (tier 4) entries for these events from the Annals, which cover all of them. They would then sort by tier and Generations would stay secondary. Not done in this pass. The Timeline Reviews also print an asterisked Ussher-equivalent year for some events (Sodom "2066/1896*", Joseph "1930/1760*"); these are kept in the notes but are not used for sorting.
+    | Event | 1st ed. (old sort) | 2nd ed. (sort now) | Ussher / Ussher–Jones |
+    |---|---|---|---|
+    | Destruction of Sodom | c. 2066 BC | c. 1911 BC (heading, p. 177) | about 1897 BC |
+    | Joseph sold into Egypt | 1930 BC | c. 1728 BC | about 1728 BC (Joseph born 1745, Ussher–Jones) |
+    | Nimrod builds Nineveh | c. 2418 BC | after the Dispersion, 2191 BC | — |
+    | Mizraim settles Egypt | c. 2450 BC | 2191 BC | — (CFAH: Egyptian cities 2189 BC) |
+    | Forty years in the wilderness | 1446–1406 BC | 1490–1451 BC | Exodus 1491 BC, Moses dies 1451 BC (sort years) |
+    | Fall of Jericho | c. 1400 BC | 1450 BC | Jordan crossed 1450 BC (CFAH-1 Table 1) |
+    | Shamgar, Samson, Samuel | ~18 years late | the Ussher–Jones table | — |
+
+    Records dated **only** in the 1st edition keep their 1st-edition sort and are flagged "not in 2nd ed." (19 records/slots, e.g. Jonah in Nineveh 811–783 BC, the Hittite treaty 1279 BC, Carthage founded 1215 BC; listed in the extract's difference table). **Recommended fix (unchanged, now less urgent):** add Ussher (tier 4) entries for these biblical events so that they sort by tier.
 - **Options:**
   1. Keep the provisional tier as implemented. **(Recommended.)**
   2. Exclude Generations-only records from the timelines: a null `sorting_year`, which needs a schema change, and the records show only as pages.
@@ -177,47 +180,51 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   - Punic Wars "246 BC". The conventional start is 264 BC, so this may be a transposition.
   - Mackay "April 1875" printed before the November 1875 appeal.
   - Thutmose I "between 1493 and 1506 BC", printed in reverse order.
-- **Preparing the World for Jesus: the book's own chronology.** This book does not follow Ussher. It dates Creation to "around 4174 BC" (p. 16) and the Flood to "about the year 2518 BC" (p. 29). End note 1 (p. 526) explains why: 60 years between Terah's firstborn and Abraham, a full 400 years in Egypt, and Solomon's death in 931 BC. Its "Timeline Review" pages print pairs such as "2518/2348* bc", where the asterisked year is the Ussher equivalent. We record the book's own year and keep the asterisked year in the note. As a result, every date from Creation to Joseph runs **170 years earlier than the sort**, and every date from Moses to the Conquest runs **about 45 years later**. All of these are flagged as conflicts in the extract, and none of them changes the sort. The main ones:
-  - Creation c. 4174 BC (sort 4004)
-  - Flood c. 2518 BC (sort 2348)
-  - Noah born 3118 and died 2168 BC (Ussher 2948 and 1998)
-  - Tower of Babel c. 2418 BC (CFAH founding of Babel 2234)
-  - Abraham born 2166 BC (sort 1996)
-  - Abram enters Egypt 2076 BC (sort 1921)
-  - Joseph born c. 1911 and died c. 1801 BC (Ussher–Jones 1745 and 1635)
-  - Moses born c. 1526 BC (sort 1571)
-  - Exodus c. 1446 BC (sort 1491)
-  - Jordan crossed in 1406 BC (sort 1450)
-- **Preparing vs CFAH's Mesopotamian dates.** The book uses the conventional (secular) dates, while CFAH uses its revised chronology. The gaps are very large:
-  - Sargon of Akkad c. 2334 BC (CFAH anchor 1619 BC)
-  - End of Akkad 2147 BC (CFAH 1477)
-  - Hammurabi reigned 1792–1750 BC (CFAH death 989 BC)
-  - Shamshi-Adad I 1813–1791 BC (CFAH 1841)
-  
-  These are kept as secondary entries. **Question:** do you want a site-wide note explaining that Generations uses the conventional Near Eastern chronology here?
-- **Preparing's judges table (p. 192)** runs 18 years later than Ussher–Jones from Othniel to Jair. Jephthah, Ibzan, Elon and Abdon agree exactly, and so does Saul's accession (1095 BC).
-- **Inconsistencies inside Preparing (kept as printed, flagged on the record):**
-  - The Fall of Samaria is 722 BC (p. 204) and 721 BC (p. 305).
-  - Tutankhamun dies in 1325 BC (p. 128) and 1323 BC (p. 298).
-  - Alexander destroys Tyre in 332 BC (Timeline Review, p. 238) and 314 BC (p. 478).
-  - The Elamite raid on Babylon is c. 1150 BC (p. 106) and 1160 BC (p. 388).
-  - The Zhou dynasty is 1027–249 BC (p. 262), but p. 50 gives "1046 through 206 BC" for Zhou and Qin together.
-  - Caesar crosses the Rubicon on 10 January 49 BC (p. 491), but the Timeline Review (p. 506) says 50 BC.
-  - The Peloponnesian War is 431–404 BC (p. 421), but the Timeline Review (p. 434) says it began in 433.
-  - In the p. 166 and p. 238 Timeline Reviews, Moses and the Exodus are printed as "1571/1526*" and "1491/1446*" (or "1440*"). The order is reversed: the asterisked year is the book's own.
-- **Timeline Review misprints that were not imported** (listed in the extract's skipped items):
-  - "Sargon I Rules 2100/2164* bc" (p. 114)
-  - "Gospel Reaches Ireland 432 bc" (p. 66; AD 432 is meant)
-  - "Phillip II of Macedon Takes Throne 466 bc" and "Alexander II of Macedon Takes Throne 336 bc" (p. 434; the text has 359 BC and Alexander III)
-  - "Hannah Gives Birth to Samuel 950 bc" and "Jochebed Gives Birth to Moses 1440 bc" (p. 456). The Moses entry is mentioned in the note on Moses' birth.
-- **Preparing vs the other Generations books:**
-  - Carthage founded in 1215 BC (Preparing) or 800–900 BC (Africa)
-  - Qin empire begins in 231 BC (Preparing) or 221 BC (World)
-  - Assyria takes Egypt c. 674 BC (Preparing) or c. 650 BC (Africa); Preparing also has 650 BC
+- **Preparing the World for Jesus: two editions.** We imported the free S3 PDF first. It is © 2020 with no edition line, so it is labelled the **1st edition (2020)**. That label is *inferred* from the copyright year and the missing edition statement. You then shared the **2nd edition** (© 2024, "2nd Edition, 1st Printing, 2024", same ISBN 978-1-7332304-6-9, "Consultant: Kenneth Griffith, Historian and Researcher"). It has 24 chapters (the 1st has 16) and 752 PDF pages. It is now the primary Generations reading for this book:
+  - 2nd-edition entries are added on each record (248 dates).
+  - A 1st-edition entry on a record the 2nd edition also dates is kept, labelled "1st ed. (2020)", marked `superseded_by`, shown only as a collapsed line with the difference stated, and never used for a sort.
+  - 1st-edition-only entries are flagged "not in 2nd ed.".
+  - The source is a private copy (`access: private-copy`, the Drive link works only for accounts it is shared with), so it is cited by PDF and printed page and is not listed among the free source links. See C6.
+- **The long chronology question is now largely moot.** The 1st edition used its own long chronology (Creation c. 4174 BC, Flood c. 2518 BC; 170 years early from Creation to Joseph and about 45 years late from Moses to the Conquest). **The 2nd edition drops it** and follows Ussher / CFAH: Creation 4004 BC, Flood 2348–2347 BC, Babel founded 2233 BC, Dispersion 2191 BC, Abram crosses the Euphrates 1921 BC, Joseph sold c. 1728 BC, Moses born c. 1571 BC, Exodus 1491 BC, Jordan crossed 1450 BC, and the judges table matches Ussher–Jones. It also moves to CFAH's revised Mesopotamian chronology: the Akkadian Empire 1638–1477 BC (contains CFAH's Sargon, 1619), the fall of Akkad 1477 BC (= CFAH), and Hammurabi reigning 1041–986 BC, with his code headed 1031–989 BC (CFAH death 989). The earlier question "a site-wide note that Generations uses the conventional Near Eastern chronology?" therefore applies only to the superseded 1st-edition rows. **Question:** keep the superseded 1st-edition rows (collapsed, as now), or drop them from the site and keep them only in the extract? Recommendation: keep them collapsed. They show provenance at no cost to the sort.
+- **Remaining 2nd-edition conflicts with tier 1–4 years** (6, all flagged on the records):
+
+  | Record | 2nd ed. | Tier 1–4 | Gap |
+  |---|---|---|---|
+  | Founding of Babel | 2233 BC (p. 92) | 2234 BC (CFAH) | 1 yr |
+  | Dispersion | 2191 BC (p. 99; p. 99 also computes 2192) | 2192 BC (CFAH) | 1 yr |
+  | Egyptian cities / Menes | 2191 BC (p. 157) | 2189 BC (CFAH) | 2 yrs |
+  | Abraham's death | 1819 BC (Timeline Review, p. 160) | 1821 BC (Ussher) | 2 yrs |
+  | Joseph's birth | "around 1911 BC" (p. 204) | 1745 BC (Ussher–Jones) | 166 yrs; a 1st-edition leftover |
+  | Death of Hammurabi | around 986 BC (p. 354) | 989 BC (CFAH) | 3 yrs |
+
+- **1st-edition leftovers and slips inside the 2nd edition** (kept as printed or skipped; noted on the records):
+  - "2518 BC" for the Flood on pp. 48 and 272
+  - Nimrod "around 2448 BC" (p. 93) beside about 2270 BC (p. 143)
+  - Joseph's birth "around 1911 BC" on the same page as "sold … c. 1728 BC" (p. 204)
+  - Tyre destroyed in 332 BC (pp. 288, 327) and 314 BC (p. 647)
+  - The Eurymedon in 476 BC (p. 548) and 466 BC (p. 590)
+  - Nehemiah's commission in 455 BC (p. 549) and "about 445 BC" (p. 610)
+  - Xerxes 496–475 BC (heading, p. 541) but "518–465 BC" in a caption (p. 542)
+  - Samaria falls in 721 BC (p. 361) and 722 BC (p. 388)
+  - Solomon 1015–976 BC (p. 372) and 1015–975 BC (p. 375)
+  - Christ's death in AD 33 (pp. 102, 278, 687) and "around AD 30" (pp. 551, 555)
+  - Cleopatra's death in 30 BC (caption, p. 662) and 29 BC (p. 423)
+  - Clear misprints that were skipped: "AD 1074" (p. 413), "around AD 586" (p. 407), "AD 609" (p. 526), and "616 BC" for Darius' sixth year (p. 541)
+- **Big 1st→2nd edition changes off the biblical spine** (no tier date; see the difference table in the extract):
+  - Tutankhamun's death moves from 1325 BC to the 870–853 BC block of Nefertiti, Smenkare, Tutankhamun and Ay.
+  - Rameses II is dated 644–578 BC (new).
+  - Ur-Nammu moves from 2112–2095 to 1370–1346 BC, and Urukagina from c. 2360 to 1650 BC.
+  - The Great Pyramid moves from c. 2258 to 1923–1903 BC, and Seneferu from c. 2282 to 1952 BC.
+  - Ezra's return moves from 458 to 468 BC, and Sennacherib's move on Jerusalem from 701 to 713 BC.
+- **1st edition (2020), for the record.** The 1st-edition conflicts listed before (Creation c. 4174, Flood c. 2518, Noah 3118–2168, Babel c. 2418, Abraham born 2166, Joseph c. 1911–1801, Moses c. 1526, Exodus c. 1446, Jordan 1406, Sargon c. 2334, Akkad 2147, Hammurabi 1792–1750, Shamshi-Adad I 1813–1791, judges 18 years late) are all still in the extract, now marked "superseded by the 2nd ed." (or "not in 2nd ed." for Shamshi-Adad I). Its internal inconsistencies and Timeline Review misprints are listed in its extract section.
+- **Preparing vs the other Generations books** (1st edition; the 2nd-edition differences are in the extract's "differs from" notes):
+  - Carthage founded in 1215 BC (Preparing 1st ed.; not in the 2nd) or 800–900 BC (Africa)
+  - Qin empire begins in 231 BC (Preparing, both editions) or 221 BC (World)
+  - Assyria takes Egypt c. 674 BC (1st ed.) or 670 BC (2nd ed.) or c. 650 BC (Africa)
   - Alexander takes Egypt in 332 BC (Preparing) or 330 BC (Africa)
-  - Muslims take Egypt in AD 642 (Preparing) or 641 (Africa)
-  - The Exodus c. 1446 BC (Preparing) or 1400 BC (Africa)
-- **Not yet imported:** the divided-kingdom king tables on pp. 209–210 (approximate reign dates for the kings of Israel and Judah from 975 BC). **Question:** import them as about 39 reign records sorting provisionally, or leave the kings to a CFAH/Ussher pass? Recommendation: leave them to Ussher. Ussher covers every king, so the Generations dates would only be secondary entries.
+  - Muslims take Egypt in AD 642 (Preparing 1st ed.) or 641 (Africa)
+  - The Exodus c. 1446 BC (1st ed.) or 1491 BC (2nd ed.) or 1400 BC (Africa)
+- **Not yet imported:** the divided-kingdom king tables (1st ed. pp. 209–210; 2nd ed. pp. 375–382, which add synchronism tables), with approximate reign dates for the kings of Israel and Judah from 975 BC). **Question:** import them as about 39 reign records sorting provisionally, or leave the kings to a CFAH/Ussher pass? Recommendation: leave them to Ussher. Ussher covers every king, so the Generations dates would only be secondary entries.
 
 ## B. Questions that change what is shown
 
@@ -359,6 +366,7 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   1. Keep the link (as now; marked `private-copy`).
   2. Drop the link and keep the page citation.
   3. Share the file publicly, which is your call.
+- **Also applies to** `generations-preparing-2e` (2nd edition of *Preparing the World for Jesus*, Drive id 1oWd9zew…). Its entries link to the Drive file, which opens only for accounts it is shared with, and it is not listed among the free source links. The 1st edition keeps its public S3 link.
 - **Recommendation:** option 1. It is honest about where the data came from, and the label explains it.
 
 ### C7. Maps and IIIF (OQ 11 and 18)
