@@ -472,3 +472,180 @@ Joshua Schwisow. Generations, 2022 (1st Printing, 2022). [PDF](https://generatio
 - Datings of Christian Britain from Bede that are only summarised: the Britons faithful until the persecution of AD 311 (p. 86, folded into the Diocletian persecution); the book's statement that some ten persecutions ran AD 64-313 (p. 60).
 - Advertisement image caption, Charleston 1769 (p. 297); Southern Harmony 1835 (p. 300); Wycliffe Bible vs NKJV caption (p. 204); bibliography years (p. 365).
 
+## Taking Asia for Jesus
+
+Joshua Schwisow; R. A. Sheats (editor). Generations, 2021 (1st Printing, 2021). [PDF](https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf). Title page: "Taking Asia for Jesus"; "By Joshua Schwisow", "Edited by R.A. Sheats". Copyright page: "Copyright © 2021 by Generations", "Printed in Korea", "1st Printing, 2021", "ISBN: 978-1-7350719-8-5". 344 PDF pages.
+
+161 dates. 161 on new records, 0 on existing records. 0 conflicts with a tier 1–4 sort year.
+
+| Date (as printed) | Event | PDF p. | Record | Agreement with sort date | Note |
+|---|---|---|---|---|---|
+| around 2200 BC | Harappan civilization of the Indus valley | 27 | `harappan-civilization` (NEW) | NEW | Printed as "probably began". |
+| Around 1750 BC | The Harappan civilization disappears | 29 | `end-of-harappan-civilization` (NEW) | NEW |  |
+| around 1500 BC | The Aryans settle on the Indus and Ganges | 29 | `aryans-settle-in-india` (NEW) | NEW | Printed as "we think". |
+| Around 1600 BC | A new religion (Hinduism) arrives in India | 29 | `hinduism-arrives-in-india` (NEW) | NEW | Printed directly after the 1500 BC Aryan settlement although earlier. |
+| Around 320 BC | Chandragupta Maurya founds the Maurya Empire | 36 | `maurya-empire` (NEW) | NEW |  |
+| 260 BC | Asoka begins his reign | 37 | `reign-of-asoka` (NEW) | NEW |  |
+| 185 BC | The Shunga dynasty takes over the Maurya Empire | 37 | `shunga-dynasty` (NEW) | NEW | "By 185 BC". |
+| from 2350 to 1800 BC | First Chinese dynasty (Emperor Huang Di) | 43 | `huang-di-dynasty` (NEW) | NEW | Printed as "probably". The start year falls before the Flood in the Ussher/CFAH scheme (2348 BC); see open question A8. |
+| 1766 BC | Shang dynasty rises to power in China | 43 | `shang-dynasty` (NEW) | NEW | First ruler T'ang; lasted over 600 years. |
+| Around 551 BC | Confucius: birth | 48 | `confucius (birth)` (NEW) | NEW |  |
+| 2300-2000 BC | Early settlements in Japan | 58 | `early-settlements-in-japan` (NEW) | NEW | Printed run together as "23002000 BC". |
+| around 800 BC | Rice planting in Japan | 58 | `rice-planting-in-japan` (NEW) | NEW |  |
+| From 660 to 585 BC | Traditional reign of Jimmu Tennō, first emperor of Japan | 61 | `reign-of-jimmu-tenno` (NEW) | NEW | As the traditional Japanese story tells it; the book does not accept the story as history. |
+| About AD 220 | Chinese messengers report on Kyushu (Japan) | 58 | `chinese-messengers-to-kyushu` (NEW) | NEW |  |
+| AD 712 | Japanese begin writing their national history | 60 | `japanese-chronicles-written` (NEW) | NEW | The book says this history was not truthful. |
+| AD 33 | Jesus Christ's death and resurrection | 65 | `death-and-resurrection-of-christ` (NEW) | NEW |  |
+| around AD 45 or 46 | The apostle Thomas goes to India | 75 | `thomas-goes-to-india` (NEW) | NEW | "Probably". |
+| around AD 45 or 46 | Reign of King Gundaphar in India | 70 | `reign-of-gundaphar` (NEW) | NEW | Coins found in Afghanistan in 1834 bear his name. |
+| around AD 52 | Ancient church built at Muziris, India | 70 | `church-at-muziris` (NEW) | NEW | Locally attributed to Thomas. |
+| Around AD 200 | The Acts of Thomas written | 68 | `acts-of-thomas-written` (NEW) | NEW |  |
+| AD 250 | Document called The Teaching of the Twelve Apostles written | 70 | `teaching-of-the-twelve-apostles` (NEW) | NEW |  |
+| Around AD 180 or 190 | Pantaenus goes to India | 71 | `pantaenus-mission-to-india` (NEW) | NEW | "Probably". |
+| around AD 325 | Eusebius's Church History written | 67 | `eusebius-church-history` (NEW) | NEW |  |
+| 635 | Alopen arrives in China | 77 | `alopen-arrives-in-china` (NEW) | NEW | Also "around AD 635" on p. 173. |
+| 638 | First known Christian church in China | 78 | `first-church-in-china` (NEW) | NEW |  |
+| 649 | Death of Emperor T'ai-tsung | 79 | `death-of-emperor-taizong` (NEW) | NEW |  |
+| 683 | Death of Emperor Kao-tsung | 79 | `death-of-emperor-gaozong` (NEW) | NEW |  |
+| 690 | Empress Wu Hou founds her own dynasty; Buddhism made the only lawful religion | 79 | `wu-hou-dynasty` (NEW) | NEW |  |
+| 705 | Persecution dies down as Wu Hou gives up the throne | 79 | `persecution-ends-in-china-705` (NEW) | NEW |  |
+| from 712 to 756 | Reign of Emperor Hsuan-tsung | 79 | `reign-of-hsuan-tsung` (NEW) | NEW |  |
+| around AD 781 | The monument of 781 records the coming of Christianity to China | 76 | `nestorian-stele` (NEW) | NEW | "781" on p. 81. |
+| 1623 | The monument of 781 dug up near Hsian | 75 | `nestorian-stele-discovered` (NEW) | NEW | Found by a workman near Hsian. |
+| By the year 900 | Much of the church in China gone by 900 | 81 | `decline-of-church-in-china-900` (NEW) | NEW |  |
+| AD 1206 | Genghis Khan comes to power and invades China | 87 | `genghis-khan-rises-to-power` (NEW) | NEW | Invaded China in 1206 (p. 90). |
+| c. 1162-1227 | Genghis Khan: birth | 87 | `genghis-khan (birth)` (NEW) | NEW |  |
+| c. 1162-1227 | Genghis Khan: death | 87 | `genghis-khan (death)` (NEW) | NEW |  |
+| Between 1219 and 1221 | Mongol army fights in Iran | 90 | `mongol-war-in-iran` (NEW) | NEW |  |
+| 1246 | John of Plano reaches the court of the great khan | 92 | `john-of-plano-carpini-mission` (NEW) | NEW | Carried a letter from the pope. |
+| 1275 | Church reopened in Peking | 92 | `church-reopened-in-peking` (NEW) | NEW |  |
+| 1287 | Rabban Sauma sets out from Peking for Rome | 93 | `rabban-sauma-journey-west` (NEW) | NEW |  |
+| 1271 | Marco Polo begins his journey to the East | 93 | `marco-polo-journey` (NEW) | NEW | Marco Polo aged seventeen. |
+| 1368 | The Chinese regain control of China from the Mongols | 95 | `ming-restoration-1368` (NEW) | NEW |  |
+| 1415 | Portugal begins its rise as a sea power | 97 | `portugal-becomes-a-world-power` (NEW) | NEW | "Beginning in 1415". |
+| 1427 | Portuguese discoveries in the Atlantic | 98 | `portuguese-discover-azores` (NEW) | NEW | The sentence is cut at the page break; the Sargasso Sea "around 1431" follows on p. 99. |
+| 1455 | Portuguese reach the Cape Verde islands | 99 | `portuguese-cape-verde` (NEW) | NEW |  |
+| 1460 | Henry the Navigator: death | 99 | `henry-the-navigator (death)` (NEW) | NEW |  |
+| 1488 | Bartolomeu Dias rounds the Cape of Good Hope | 99 | `dias-rounds-cape-of-good-hope` (NEW) | NEW |  |
+| May 20, 1498 | Vasco da Gama lands at Calicut, India | 99 | `vasco-da-gama-reaches-calicut` (NEW) | NEW | Set sail in 1497; returned to India in 1503 (p. 101). |
+| 1501 | Cabral lands in India and finds Thomas Christians | 100 | `cabral-in-india` (NEW) | NEW |  |
+| 1560 | The Inquisition comes to India | 103 | `inquisition-in-india` (NEW) | NEW |  |
+| 1492 | Columbus reaches the Americas | 109 | `columbus-reaches-americas` (NEW) | NEW |  |
+| 1517 | Luther's 95 Theses: the Reformation begins | 109 | `ninety-five-theses` (NEW) | NEW | The Reformation "began in 1517". |
+| 1534 | The Jesuit order begins | 111 | `jesuits-founded` (NEW) | NEW |  |
+| 1506 | Francis Xavier: birth | 110 | `francis-xavier (birth)` (NEW) | NEW |  |
+| 1552 | Francis Xavier: death | 111 | `francis-xavier (death)` (NEW) | NEW |  |
+| August 15, 1549 | Francis Xavier lands at Kagoshima, Japan | 112 | `xavier-lands-at-kagoshima` (NEW) | NEW |  |
+| 1552 | Xavier leaves Japan for China | 115 | `xavier-leaves-japan` (NEW) | NEW | Left for China but fell ill and died. |
+| 1593 | Catholic school started in Japan | 113 | `catholic-school-in-japan` (NEW) | NEW |  |
+| January 27, 1614 | Japanese decree against foreigners and converts | 114 | `japanese-expulsion-edict-1614` (NEW) | NEW |  |
+| Between 1614 and 1643 | Persecution of Christians in Japan | 114 | `persecution-of-japanese-christians` (NEW) | NEW | Tens of thousands died. |
+| 1647 | Mass killings of Christians at Nagasaki | 114 | `nagasaki-martyrdoms-1647` (NEW) | NEW |  |
+| 1858 | Persecution in Japan stopped; hidden Christians emerge | 114 | `japan-ends-persecution-1858` (NEW) | NEW | About 30,000 professing Christians came out of hiding (p. 115). |
+| August 17, 1761 | William Carey: birth | 129 | `william-carey (birth)` (NEW) | NEW | From his tombstone; "1761" on p. 119. |
+| June 9, 1834 | William Carey: death | 129 | `william-carey (death)` (NEW) | NEW |  |
+| 1785 | Carey preaches his first sermon | 121 | `carey-first-sermon` (NEW) | NEW |  |
+| 1791 | Carey's booklet on the obligation of missions | 122 | `carey-enquiry` (NEW) | NEW |  |
+| June 13, 1793 | Carey sails for India | 124 | `carey-sails-for-india` (NEW) | NEW |  |
+| 1797 | Carey completes the Bengali New Testament | 125 | `bengali-new-testament` (NEW) | NEW |  |
+| 1800 | Krishna Pal, first convert of the Serampore mission | 125 | `baptism-of-krishna-pal` (NEW) | NEW |  |
+| 1801 | Carey becomes professor at Fort William College | 126 | `carey-at-fort-william-college` (NEW) | NEW |  |
+| 1818 | Serampore College started | 125 | `serampore-college-founded` (NEW) | NEW |  |
+| 1820 | Carey starts the Agri-Horticultural Society of India | 128 | `agri-horticultural-society` (NEW) | NEW |  |
+| 1829 | Widow-burning (sati) made illegal in India | 127 | `sati-outlawed-in-india` (NEW) | NEW |  |
+| August 9, 1788 | Adoniram Judson: birth | 134 | `adoniram-judson (birth)` (NEW) | NEW | In Malden, Massachusetts. |
+| April 12, 1850 | Adoniram Judson: death | 143 | `adoniram-judson (death)` (NEW) | NEW |  |
+| February 1812 | Adoniram and Ann Judson marry and sail for India | 137 | `judsons-marry-and-sail` (NEW) | NEW | Reached Calcutta in June 1812. |
+| July 1813 | The Judsons arrive at Rangoon | 138 | `judsons-arrive-in-rangoon` (NEW) | NEW |  |
+| May 5, 1819 | First Burmese convert | 140 | `first-burmese-convert` (NEW) | NEW |  |
+| March of 1824 | War between Burma and the British Empire | 140 | `first-anglo-burmese-war` (NEW) | NEW | Their hardest years were 1824-1826. |
+| 1834 | Judson completes the Burmese Bible | 142 | `burmese-bible-completed` (NEW) | NEW |  |
+| 1781-1812 | Henry Martyn: birth | 147 | `henry-martyn (birth)` (NEW) | NEW |  |
+| 1781-1812 | Henry Martyn: death | 147 | `henry-martyn (death)` (NEW) | NEW |  |
+| 1805 | Henry Martyn sails for India | 149 | `martyn-sails-for-india` (NEW) | NEW |  |
+| 1811 | Martyn leaves India for Persia | 151 | `martyn-leaves-india` (NEW) | NEW |  |
+| May 24, 1824 | John G. Paton: birth | 160 | `john-paton (birth)` (NEW) | NEW | Near Dumfries. |
+| 1907 | John G. Paton: death | 168 | `john-paton (death)` (NEW) | NEW |  |
+| 1773 | Captain Cook discovers the New Hebrides | 162 | `cook-discovers-new-hebrides` (NEW) | NEW |  |
+| March 23, 1858 | John Paton ordained as a missionary | 162 | `paton-ordained` (NEW) | NEW |  |
+| January 1862 | Civil war on Tanna | 165 | `tanna-civil-war` (NEW) | NEW |  |
+| June 1864 | Paton leaves for Australia | 166 | `paton-to-australia` (NEW) | NEW |  |
+| 1866 | Paton returns to the New Hebrides | 166 | `paton-returns-to-new-hebrides` (NEW) | NEW |  |
+| 1889 | Paton's autobiography published | 167 | `paton-autobiography` (NEW) | NEW |  |
+| 1807 | Robert Morrison arrives in China | 174 | `morrison-arrives-in-china` (NEW) | NEW |  |
+| 1815-1868 | William Chalmers Burns: birth | 174 | `william-chalmers-burns (birth)` (NEW) | NEW | Also Taking Europe for Jesus p. 323. |
+| 1868 | William Chalmers Burns: death | 180 | `william-chalmers-burns (death)` (NEW) | NEW |  |
+| 1839 | Revival at Dundee | 175 | `dundee-revival-1839` (NEW) | NEW | He preached in Scotland, England and Canada 1839-1847. |
+| November 13, 1847 | Burns sails for China and arrives at Hong Kong | 176 | `burns-arrives-hong-kong` (NEW) | NEW | Left Portsmouth June 9, 1847. |
+| 1855 | Burns moves to Shanghai | 177 | `burns-moves-to-shanghai` (NEW) | NEW |  |
+| 1832 | Hudson Taylor: birth | 185 | `hudson-taylor (birth)` (NEW) | NEW | In Barnsley. |
+| 1905 | Hudson Taylor: death | 193 | `hudson-taylor (death)` (NEW) | NEW | Over 800 missionaries then served with the mission. |
+| March 1, 1854 | Hudson Taylor arrives in Shanghai | 186 | `hudson-taylor-arrives-shanghai` (NEW) | NEW |  |
+| 1865 | Hudson Taylor founds the China Inland Mission | 188 | `china-inland-mission-founded` (NEW) | NEW |  |
+| 1949 | The Communists take over China | 193 | `communist-takeover-of-china` (NEW) | NEW | Also pp. 225, 277, 307, 311, 314. |
+| 1642 | Abel Tasman reaches Tasmania and New Zealand | 200 | `tasman-discovers-tasmania-and-new-zealand` (NEW) | NEW | Tasmania (p. 200) and New Zealand (p. 205). |
+| 1770 | Captain James Cook reaches Australia | 200 | `cook-reaches-australia` (NEW) | NEW |  |
+| January of 1788 | First convict ships arrive in Australia | 200 | `first-fleet-arrives` (NEW) | NEW |  |
+| 1824 | British troops enter the Bathurst Plains | 203 | `bathurst-war` (NEW) | NEW | Major James Morisset. |
+| Christmas Day, 1814 | First missionaries to New Zealand; first Christmas service | 206 | `first-mission-to-new-zealand` (NEW) | NEW | Marsden took an interest in 1809. |
+| 1823 | Henry and William Williams begin work among the Maori | 206 | `williams-mission-to-maori` (NEW) | NEW |  |
+| 1827 | Scripture translation into Maori begins | 208 | `maori-scripture-translation` (NEW) | NEW |  |
+| 1867 | Amy Carmichael: birth | 213 | `amy-carmichael (birth)` (NEW) | NEW | In Ireland. |
+| January 18, 1951 | Amy Carmichael: death | 221 | `amy-carmichael (death)` (NEW) | NEW |  |
+| 1895 | Amy Carmichael leaves Britain for India | 214 | `carmichael-leaves-for-india` (NEW) | NEW | She never returned to Britain. |
+| June 1904 | Children cared for at Dohnavur | 217 | `dohnavur-fellowship` (NEW) | NEW | Seventeen orphans by June 1904. |
+| 1931 | Amy Carmichael's accident | 220 | `carmichael-accident` (NEW) | NEW |  |
+| 1844 | George Leslie Mackay: birth | 226 | `george-leslie-mackay (birth)` (NEW) | NEW |  |
+| 1901 | George Leslie Mackay: death | 230 | `george-leslie-mackay (death)` (NEW) | NEW |  |
+| 1872 | George Mackay sent to Formosa | 226 | `mackay-to-formosa` (NEW) | NEW | Sent by the Presbyterian Church in Canada. |
+| 1853 | Commodore Perry visits Japan | 236 | `perry-visits-japan` (NEW) | NEW |  |
+| 1843 | Joseph Hardy Neesima: birth | 237 | `joseph-hardy-neesima (birth)` (NEW) | NEW | In Edo. |
+| 1890 | Joseph Hardy Neesima: death | 243 | `joseph-hardy-neesima (death)` (NEW) | NEW |  |
+| July 18, 1864 | Neesima leaves Japan for China and America | 238 | `neesima-escapes-japan` (NEW) | NEW | Aged twenty-one. |
+| 1865 | Neesima arrives in Boston | 239 | `neesima-arrives-in-boston` (NEW) | NEW |  |
+| 1871 | Japanese embassy to the United States | 241 | `iwakura-embassy` (NEW) | NEW |  |
+| 1859 | Jonathan Goforth: birth | 248 | `jonathan-goforth (birth)` (NEW) | NEW | In Ontario. |
+| 1936 | Jonathan Goforth: death | 258 | `jonathan-goforth (death)` (NEW) | NEW |  |
+| 1942 | Rosalind Goforth: death | 258 | `rosalind-goforth (death)` (NEW) | NEW | "Rosalind would live until 1942". |
+| 1887 | Jonathan and Rosalind Goforth marry | 250 | `goforths-marry` (NEW) | NEW |  |
+| 1888 | The Goforths arrive in Shanghai | 251 | `goforths-arrive-in-china` (NEW) | NEW |  |
+| 1894 | The Goforths move to Changte | 253 | `goforths-move-to-changte` (NEW) | NEW |  |
+| 1900 | The Boxer uprising in China | 253 | `boxer-rebellion` (NEW) | NEW | Also "around 1900" on p. 247. |
+| From 1925 to 1935 | Goforth preaches in Manchuria | 257 | `goforth-in-manchuria` (NEW) | NEW |  |
+| 1866 | Korean government kills 8,000 Christian converts | 263 | `korean-martyrs-1866` (NEW) | NEW |  |
+| January 7th, 1907 | The Korean Pentecost (Pyongyang revival) | 265 | `korean-pentecost` (NEW) | NEW | Also p. 256 (Goforth joined it). |
+| 1904-1905 | Korea caught in the Russo-Japanese war | 267 | `russo-japanese-war` (NEW) | NEW |  |
+| 1910 | Japan takes control of Korea | 267 | `japan-annexes-korea` (NEW) | NEW | Until the end of World War II. |
+| 1938 | Korean church declares bowing at shrines not sinful | 269 | `korean-shrine-decision` (NEW) | NEW |  |
+| May 3, 1943 | Kim Yoonsup: death | 271 | `kim-yoonsup (death)` (NEW) | NEW |  |
+| 1945 | Korea divided into two nations | 263 | `division-of-korea` (NEW) | NEW | "Since 1945". |
+| 1933 | John and Betty Stam marry | 278 | `stams-marry` (NEW) | NEW |  |
+| December 6, 1934 | John and Betty Stam captured and killed | 279 | `martyrdom-of-the-stams` (NEW) | NEW | Day of their capture; "gave their lives in 1934" (p. 277). |
+| 1902 | Eric Liddell: birth | 287 | `eric-liddell (birth)` (NEW) | NEW | In China. |
+| 1945 | Eric Liddell: death | 288 | `eric-liddell (death)` (NEW) | NEW |  |
+| July 11, 1924 | Eric Liddell wins the 400 metres at the Paris Olympics | 290 | `liddell-olympic-400m` (NEW) | NEW |  |
+| June 1925 | Liddell begins his journey to China | 290 | `liddell-goes-to-china` (NEW) | NEW |  |
+| 1927 | Civil war in China | 292 | `chinese-civil-war` (NEW) | NEW | p. 312 dates Mao's civil war to 1946-1949. |
+| 1937 | Japan invades China | 292 | `japanese-invasion-of-china` (NEW) | NEW | Also p. 299. |
+| 1939 | World War II | 292 | `world-war-ii` (NEW) | NEW |  |
+| March 1943 | Liddell captured by the Japanese | 292 | `liddell-interned` (NEW) | NEW |  |
+| 1902 | Gladys Aylward: birth | 300 | `gladys-aylward (birth)` (NEW) | NEW | Near London. |
+| January 3, 1970 | Gladys Aylward: death | 308 | `gladys-aylward (death)` (NEW) | NEW |  |
+| November 11, 1932 | Gladys Aylward reaches Tientsin | 300 | `aylward-arrives-in-china` (NEW) | NEW |  |
+| April 19, 1958 | Pastor Yuan Xiangchen arrested | 316 | `yuan-arrested` (NEW) | NEW |  |
+| 1979 | Pastor Yuan released with other Christian prisoners | 318 | `yuan-released` (NEW) | NEW |  |
+| 2005 | Yuan Xiangchen: death | 319 | `yuan-xiangchen (death)` (NEW) | NEW | Aged ninety-two. |
+| 1989 | Protests in Beijing (Tiananmen Square) | 318 | `tiananmen-protests` (NEW) | NEW |  |
+| 1917 | Communist revolution in Russia | 323 | `russian-revolution` (NEW) | NEW |  |
+| 1576 | Lutheran church started in Moscow | 324 | `lutheran-church-in-moscow` (NEW) | NEW |  |
+| 1869 | First Baptist church formed in Russia | 326 | `first-baptist-church-in-russia` (NEW) | NEW |  |
+| 1929 | Ivan Voronaev arrested and sent to a Siberian camp | 326 | `voronaev-arrested` (NEW) | NEW |  |
+| 1991 | Fall of the Soviet Union | 327 | `fall-of-the-soviet-union` (NEW) | NEW |  |
+
+**Not imported** (with reasons):
+
+- Modern records and statistics: Everest 1953 and K2 winter 2018 (pp. 14-15); Mongolia 1989 Christians (p. 94); OMF 2015 anniversary and Christian numbers in China (p. 194); Dohnavur 2013 (p. 222); Lutheran numbers by 1914 and Stundist numbers by 1870 (pp. 324-325); 500,000 Christians in China by 1900 (p. 311); British rule of Hong Kong to 1997 (p. 176); 2015 cyclone caption (p. 165).
+- Family and personal details of chapter subjects: Carey aged twenty in 1781, the 1786 meeting, Dorothy d. 1807, Charlotte d. 1821 (pp. 120-128); Judsons' children by 1816, George Boardman d. 1831, Sarah d. 1845, illness early 1850 (pp. 139-143); Martyn's father d. 1800, call 1801, 1804 journal, 1812 journey (pp. 147-153); Paton's return to Aniwa 1906 (p. 168); Burns's call 1832, robbers July 18, 1856 (pp. 175-178); Taylor 1866 departure, 1870, remarriage 1871, Jennie d. 1904 (p. 188); Carmichael 1898 converts, late 1904 visit, 1906 and 1926 numbers, 1948 fall (pp. 215-221); Goforth Knox College 1883, proposal Oct 1886, sent 1888, daughter d. 1889, Canada until 1901, return Oct 1901, family 1902, blindness 1935 (pp. 249-257); Stams' daughter 1934 (p. 279); Liddell's language by 1937, marriage 1934, family to Canada 1941, decline 1945 and Herbert Taylor (pp. 291-294); Aylward 1938 raid (p. 304); Watson d. 1866 and 1849 converts (p. 204); Henry Williams's 1827 visit (p. 208); Neesima leaving Japan "1864" (p. 237, same as his escape).
+- Undated or vague: Thomas Christians "some 1400 years" (p. 101); Portuguese "around the year 1500" (p. 97); Sargasso Sea around 1431 (p. 99, merged into the 1427 Atlantic row); Mar Jacob d. around 1551 and the 1599 synod (p. 103, sentence cut); Vasco da Gama 1497 departure and 1503 return (noted on the 1498 row); 156 years of mission work (p. 62); Japanese vase "from 2000 BC" (image caption); 1890 documents found in a Buddhist temple (p. 81); 1858 Bonekemper, 1868 imprisonments and 1878 persecution in Russia (pp. 324-325); missionaries to the Mongols "in the 1200s and 1300s" (p. 92); Korea "since 1953" (p. 272).
+- Coins found in Afghanistan in 1834 (p. 70): a modern discovery, mentioned in the Gundaphar note.
+

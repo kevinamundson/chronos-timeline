@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "henry-martyn",
+  "type": "person",
+  "title": "Henry Martyn",
+  "summary": "English chaplain and Bible translator for India and Persia.",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1781,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 147): 1781-1812. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1781-1812",
+        "year_am": null,
+        "year_bc_ad": 1781,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 12 \"Henry Martyn\", PDF p. 147 (printed p. 147)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=147",
+        "source_text_id": "generations-asia",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1781-1812",
+        "year_am": null,
+        "year_bc_ad": 1812,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 12 \"Henry Martyn\", PDF p. 147 (printed p. 147)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=147",
+        "source_text_id": "generations-asia",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "martyn-leaves-india",
+    "martyn-sails-for-india"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": []
+}

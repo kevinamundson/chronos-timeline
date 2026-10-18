@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "joseph-hardy-neesima",
+  "type": "person",
+  "title": "Joseph Hardy Neesima",
+  "alt_names": [
+    "Shimeta Neesima",
+    "Niijima Jō"
+  ],
+  "summary": "Japanese Christian who studied in America and founded Christian education in Japan.",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1843,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 237): 1843. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1843",
+        "year_am": null,
+        "year_bc_ad": 1843,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 19 \"Shimeta Neesima\", PDF p. 237 (printed p. 237)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=237",
+        "source_text_id": "generations-asia",
+        "note": "In Edo."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1890",
+        "year_am": null,
+        "year_bc_ad": 1890,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 19 \"Shimeta Neesima\", PDF p. 243 (printed p. 243)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=243",
+        "source_text_id": "generations-asia",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "iwakura-embassy",
+    "neesima-arrives-in-boston",
+    "neesima-escapes-japan"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": []
+}

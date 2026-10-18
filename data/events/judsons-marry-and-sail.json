@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "judsons-marry-and-sail",
+  "type": "event",
+  "title": "Adoniram and Ann Judson marry and sail for India",
+  "summary": "Adoniram and Ann Judson marry and sail for India",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1812,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 137): February 1812. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "February 1812",
+      "year_am": null,
+      "year_bc_ad": 1812,
+      "precision": "month",
+      "citation": "Taking Asia for Jesus, ch. 11 \"Adoniram and Ann Judson\", PDF p. 137 (printed p. 137)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=137",
+      "source_text_id": "generations-asia",
+      "note": "Reached Calcutta in June 1812."
+    }
+  ],
+  "people": [
+    "adoniram-judson",
+    "ann-judson"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-asia",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
+      "locator": "Taking Asia for Jesus"
+    }
+  ]
+}

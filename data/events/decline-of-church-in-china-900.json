@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "decline-of-church-in-china-900",
+  "type": "event",
+  "title": "Much of the church in China gone by 900",
+  "summary": "Much of the church in China gone by 900",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 900,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 81): By the year 900. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "By the year 900",
+      "year_am": null,
+      "year_bc_ad": 900,
+      "precision": "year",
+      "citation": "Taking Asia for Jesus, ch. 6 \"Alopen: The First Christian Mission to China\", PDF p. 81 (printed p. 81)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=81",
+      "source_text_id": "generations-asia",
+      "note": null
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-asia",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
+      "locator": "Taking Asia for Jesus"
+    }
+  ]
+}

@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=184",
         "source_text_id": "generations-africa",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "1832",
+        "year_am": null,
+        "year_bc_ad": 1832,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 15 \"Hudson Taylor\", PDF p. 185 (printed p. 185)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=185",
+        "source_text_id": "generations-asia",
+        "note": "In Barnsley."
       }
     ],
     "death": [
@@ -59,15 +70,29 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=184",
         "source_text_id": "generations-africa",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "1905",
+        "year_am": null,
+        "year_bc_ad": 1905,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 15 \"Hudson Taylor\", PDF p. 193 (printed p. 193)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=193",
+        "source_text_id": "generations-asia",
+        "note": "Over 800 missionaries then served with the mission."
       }
     ]
   },
   "events": [
-    "cambridge-seven-sail"
+    "cambridge-seven-sail",
+    "china-inland-mission-founded",
+    "hudson-taylor-arrives-shanghai"
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-asia"
   ],
   "related": []
 }

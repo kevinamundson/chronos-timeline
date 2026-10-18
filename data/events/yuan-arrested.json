@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "yuan-arrested",
+  "type": "event",
+  "title": "Pastor Yuan Xiangchen arrested",
+  "summary": "Pastor Yuan Xiangchen arrested",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1958,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 316): April 19, 1958. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "April 19, 1958",
+      "year_am": null,
+      "year_bc_ad": 1958,
+      "precision": "day",
+      "citation": "Taking Asia for Jesus, ch. 25 \"The Church in Communist China\", PDF p. 316 (printed p. 316)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=316",
+      "source_text_id": "generations-asia",
+      "note": null
+    }
+  ],
+  "people": [
+    "yuan-xiangchen"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-asia",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
+      "locator": "Taking Asia for Jesus"
+    }
+  ]
+}

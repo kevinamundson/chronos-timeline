@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "john-paton",
+  "type": "person",
+  "title": "John G. Paton",
+  "summary": "Scottish Presbyterian missionary to the New Hebrides (Vanuatu).",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1824,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 160): May 24, 1824. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "May 24, 1824",
+        "year_am": null,
+        "year_bc_ad": 1824,
+        "precision": "day",
+        "citation": "Taking Asia for Jesus, ch. 13 \"John Paton\", PDF p. 160 (printed p. 160)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=160",
+        "source_text_id": "generations-asia",
+        "note": "Near Dumfries."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1907",
+        "year_am": null,
+        "year_bc_ad": 1907,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 13 \"John Paton\", PDF p. 168 (printed p. 168)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=168",
+        "source_text_id": "generations-asia",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "paton-autobiography",
+    "paton-ordained",
+    "paton-returns-to-new-hebrides",
+    "paton-to-australia",
+    "tanna-civil-war"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": []
+}

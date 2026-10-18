@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "carey-sails-for-india",
+  "type": "event",
+  "title": "Carey sails for India",
+  "summary": "Carey sails for India",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1793,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 124): June 13, 1793. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "June 13, 1793",
+      "year_am": null,
+      "year_bc_ad": 1793,
+      "precision": "day",
+      "citation": "Taking Asia for Jesus, ch. 10 \"William Carey\", PDF p. 124 (printed p. 124)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=124",
+      "source_text_id": "generations-asia",
+      "note": null
+    }
+  ],
+  "people": [
+    "william-carey"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-asia",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
+      "locator": "Taking Asia for Jesus"
+    }
+  ]
+}

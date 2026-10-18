@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "portuguese-discover-azores",
+  "type": "event",
+  "title": "Portuguese discoveries in the Atlantic",
+  "summary": "Portuguese discoveries in the Atlantic",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 1427,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 98): 1427. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "1427",
+      "year_am": null,
+      "year_bc_ad": 1427,
+      "precision": "year",
+      "citation": "Taking Asia for Jesus, ch. 8 \"The Age of Exploration\", PDF p. 98 (printed p. 98)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=98",
+      "source_text_id": "generations-asia",
+      "note": "The sentence is cut at the page break; the Sargasso Sea \"around 1431\" follows on p. 99."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-asia",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
+      "locator": "Taking Asia for Jesus"
+    }
+  ]
+}

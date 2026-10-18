@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "william-chalmers-burns",
+  "type": "person",
+  "title": "William Chalmers Burns",
+  "summary": "Scottish revival preacher and missionary to China.",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1815,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 174): 1815-1868. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1815-1868",
+        "year_am": null,
+        "year_bc_ad": 1815,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 14 \"William Chalmers Burns\", PDF p. 174 (printed p. 174)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=174",
+        "source_text_id": "generations-asia",
+        "note": "Also Taking Europe for Jesus p. 323."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1868",
+        "year_am": null,
+        "year_bc_ad": 1868,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 14 \"William Chalmers Burns\", PDF p. 180 (printed p. 180)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=180",
+        "source_text_id": "generations-asia",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "burns-arrives-hong-kong",
+    "burns-moves-to-shanghai",
+    "dundee-revival-1839"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": []
+}

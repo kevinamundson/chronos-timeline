@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "reign-of-jimmu-tenno",
+  "type": "event",
+  "title": "Traditional reign of Jimmu Tennō, first emperor of Japan",
+  "summary": "Traditional reign of Jimmu Tennō, first emperor of Japan",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -660,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 61): From 660 to 585 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "From 660 to 585 BC",
+      "year_am": null,
+      "year_bc_ad": -660,
+      "year_bc_ad_end": -585,
+      "precision": "year-range",
+      "citation": "Taking Asia for Jesus, ch. 4 \"Japan Before Christ\", PDF p. 61 (printed p. 61)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=61",
+      "source_text_id": "generations-asia",
+      "note": "As the traditional Japanese story tells it; the book does not accept the story as history."
+    }
+  ],
+  "people": [
+    "jimmu-tenno"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-asia",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
+      "locator": "Taking Asia for Jesus"
+    }
+  ]
+}

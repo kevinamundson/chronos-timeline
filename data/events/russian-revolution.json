@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=237",
       "source_text_id": "generations-europe",
       "note": "Unit 4 timeline."
+    },
+    {
+      "source": "generations",
+      "date": "1917",
+      "year_am": null,
+      "year_bc_ad": 1917,
+      "precision": "year",
+      "citation": "Taking Asia for Jesus, ch. 26 \"Recent Stories from Asia\", PDF p. 323 (printed p. 323)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=323",
+      "source_text_id": "generations-asia",
+      "note": null
     }
   ],
   "people": [],
@@ -40,7 +51,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-asia"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +60,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-asia",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
+      "locator": "Taking Asia for Jesus"
     }
   ]
 }

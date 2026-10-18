@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "rosalind-goforth",
+  "type": "person",
+  "title": "Rosalind Goforth",
+  "summary": "Wife and co-worker of Jonathan Goforth in China.",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1942",
+        "year_am": null,
+        "year_bc_ad": 1942,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 20 \"Jonathan and Rosalind Goforth\", PDF p. 258 (printed p. 258)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=258",
+        "source_text_id": "generations-asia",
+        "note": "\"Rosalind would live until 1942\"."
+      }
+    ]
+  },
+  "events": [
+    "boxer-rebellion",
+    "goforths-arrive-in-china",
+    "goforths-marry",
+    "goforths-move-to-changte"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": []
+}

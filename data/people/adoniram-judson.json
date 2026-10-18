@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "adoniram-judson",
+  "type": "person",
+  "title": "Adoniram Judson",
+  "summary": "American Baptist missionary to Burma; translated the whole Bible into Burmese.",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1788,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 134): August 9, 1788. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "August 9, 1788",
+        "year_am": null,
+        "year_bc_ad": 1788,
+        "precision": "day",
+        "citation": "Taking Asia for Jesus, ch. 11 \"Adoniram and Ann Judson\", PDF p. 134 (printed p. 134)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=134",
+        "source_text_id": "generations-asia",
+        "note": "In Malden, Massachusetts."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "April 12, 1850",
+        "year_am": null,
+        "year_bc_ad": 1850,
+        "precision": "day",
+        "citation": "Taking Asia for Jesus, ch. 11 \"Adoniram and Ann Judson\", PDF p. 143 (printed p. 143)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=143",
+        "source_text_id": "generations-asia",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "burmese-bible-completed",
+    "first-anglo-burmese-war",
+    "first-burmese-convert",
+    "judsons-arrive-in-rangoon",
+    "judsons-marry-and-sail"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": []
+}

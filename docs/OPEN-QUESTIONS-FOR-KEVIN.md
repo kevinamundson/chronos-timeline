@@ -139,6 +139,15 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   - **The First Crusade began** in 1095 (p. 175) but 1096 in the unit 3 timeline (p. 177). The 1095–1099 span is used.
   - **The Battle of Brunanburh** is 937 in the chapter (p. 169) but "AD 973" in the unit 2 timeline (p. 104). It is entered as 937; 973 is evidently a transposition.
   - **The Roman withdrawal from Britain** is AD 409 (pp. 13–14) but "by AD 410" in chapter 8 (p. 85).
+- **Taking Asia for Jesus, ancient Asian dates.** No tier 1–4 record covers these, so each sorts provisionally at the printed date:
+  - Harappan civilisation ~2200 BC
+  - Huang Di's dynasty 2350–1800 BC
+  - Shang 1766 BC
+  - Settlements in Japan 2300–2000 BC
+  - Aryans ~1500 BC
+  - Jimmu Tennō 660–585 BC (traditional)
+
+  **Please note:** the book's 2350 BC start for the first Chinese dynasty is *before* the Flood in the sort chronology (Ussher / CFAH-1 Table 1, 2348 BC). Several of these dates also fall before or close to Babel. They are shown as printed, with a note, but they are not reconciled.
 - **Printed oddities kept as printed (and flagged):**
   - Punic Wars "246 BC". The conventional start is 264 BC, so this may be a transposition.
   - Mackay "April 1875" printed before the November 1875 appeal.

@@ -59,13 +59,25 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=122",
         "source_text_id": "generations-africa",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "1460",
+        "year_am": null,
+        "year_bc_ad": 1460,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 8 \"The Age of Exploration\", PDF p. 99 (printed p. 99)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=99",
+        "source_text_id": "generations-asia",
+        "note": null
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-asia"
   ],
   "related": []
 }

@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "yuan-xiangchen",
+  "type": "person",
+  "title": "Yuan Xiangchen",
+  "summary": "Chinese pastor imprisoned from 1958 to 1979.",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "2005",
+        "year_am": null,
+        "year_bc_ad": 2005,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 25 \"The Church in Communist China\", PDF p. 319 (printed p. 319)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=319",
+        "source_text_id": "generations-asia",
+        "note": "Aged ninety-two."
+      }
+    ]
+  },
+  "events": [
+    "yuan-arrested",
+    "yuan-released"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": []
+}

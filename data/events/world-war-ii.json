@@ -34,6 +34,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=236",
       "source_text_id": "generations-europe",
       "note": "Also pp. 237, 347."
+    },
+    {
+      "source": "generations",
+      "date": "1939",
+      "year_am": null,
+      "year_bc_ad": 1939,
+      "precision": "year",
+      "citation": "Taking Asia for Jesus, ch. 23 \"Eric Liddell\", PDF p. 292 (printed p. 292)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=292",
+      "source_text_id": "generations-asia",
+      "note": null
     }
   ],
   "people": [],
@@ -41,7 +52,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-asia"
   ],
   "related": [],
   "free_source_links": [
@@ -49,6 +61,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-asia",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
+      "locator": "Taking Asia for Jesus"
     }
   ]
 }

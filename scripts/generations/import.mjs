@@ -134,7 +134,7 @@ for (const key of keys) {
   // 4. drop records this book created earlier but no longer defines (only if nothing else references them)
   for (const [id, r] of Object.entries(recs)) {
     const d = r.doc; if (!d.description?.startsWith(`${MARK} (${book.short})`) || runCreated.has(id)) continue;
-    const left = d.type === 'event' ? d.chronologies.length : Object.values(d.dates).flat().length;
+    const left = (d.type === 'event' ? d.chronologies : Object.values(d.dates).flat()).filter((e) => e.source === 'generations').length;
     if (!left) { unlinkSync(join(DATA, r.dir, `${id}.json`)); delete recs[id]; }
   }
 }

@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "eric-liddell",
+  "type": "person",
+  "title": "Eric Liddell",
+  "summary": "Scottish Olympic champion (1924) and missionary to China.",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1902,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 287): 1902. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1902",
+        "year_am": null,
+        "year_bc_ad": 1902,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 23 \"Eric Liddell\", PDF p. 287 (printed p. 287)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=287",
+        "source_text_id": "generations-asia",
+        "note": "In China."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1945",
+        "year_am": null,
+        "year_bc_ad": 1945,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 23 \"Eric Liddell\", PDF p. 288 (printed p. 288)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=288",
+        "source_text_id": "generations-asia",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "liddell-goes-to-china",
+    "liddell-interned",
+    "liddell-olympic-400m"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": []
+}

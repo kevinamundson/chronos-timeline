@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=239",
       "source_text_id": "generations-europe",
       "note": "Also p. 235 and p. 237."
+    },
+    {
+      "source": "generations",
+      "date": "1517",
+      "year_am": null,
+      "year_bc_ad": 1517,
+      "precision": "year",
+      "citation": "Taking Asia for Jesus, ch. 9 \"Francis Xavier: The Mission to Japan\", PDF p. 109 (printed p. 109)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=109",
+      "source_text_id": "generations-asia",
+      "note": "The Reformation \"began in 1517\"."
     }
   ],
   "people": [
@@ -42,7 +53,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-asia"
   ],
   "related": [],
   "free_source_links": [
@@ -50,6 +62,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-asia",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
+      "locator": "Taking Asia for Jesus"
     }
   ]
 }

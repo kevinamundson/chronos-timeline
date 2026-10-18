@@ -1,0 +1,81 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "william-carey",
+  "type": "person",
+  "title": "William Carey",
+  "summary": "English Baptist missionary to India and Bible translator; pioneer of the modern missionary movement.",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1761,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 129): August 17, 1761. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "August 17, 1761",
+        "year_am": null,
+        "year_bc_ad": 1761,
+        "precision": "day",
+        "citation": "Taking Asia for Jesus, ch. 10 \"William Carey\", PDF p. 129 (printed p. 129)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=129",
+        "source_text_id": "generations-asia",
+        "note": "From his tombstone; \"1761\" on p. 119."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "June 9, 1834",
+        "year_am": null,
+        "year_bc_ad": 1834,
+        "precision": "day",
+        "citation": "Taking Asia for Jesus, ch. 10 \"William Carey\", PDF p. 129 (printed p. 129)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=129",
+        "source_text_id": "generations-asia",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "agri-horticultural-society",
+    "baptism-of-krishna-pal",
+    "bengali-new-testament",
+    "carey-at-fort-william-college",
+    "carey-enquiry",
+    "carey-first-sermon",
+    "carey-sails-for-india",
+    "sati-outlawed-in-india",
+    "serampore-college-founded"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": []
+}

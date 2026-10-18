@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "amy-carmichael",
+  "type": "person",
+  "title": "Amy Carmichael",
+  "summary": "Irish missionary to India who founded the Dohnavur children's homes.",
+  "description": "Added from the Generations curriculum import (Taking Asia for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": 1867,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Asia for Jesus, PDF p. 213): 1867. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "1867",
+        "year_am": null,
+        "year_bc_ad": 1867,
+        "precision": "year",
+        "citation": "Taking Asia for Jesus, ch. 17 \"Amy Carmichael\", PDF p. 213 (printed p. 213)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=213",
+        "source_text_id": "generations-asia",
+        "note": "In Ireland."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "January 18, 1951",
+        "year_am": null,
+        "year_bc_ad": 1951,
+        "precision": "day",
+        "citation": "Taking Asia for Jesus, ch. 17 \"Amy Carmichael\", PDF p. 221 (printed p. 221)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=221",
+        "source_text_id": "generations-asia",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "carmichael-accident",
+    "carmichael-leaves-for-india",
+    "dohnavur-fellowship"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-asia"
+  ],
+  "related": []
+}
