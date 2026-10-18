@@ -1231,6 +1231,25 @@
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
       "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cfah-16-osf",
+      "title": "CFAH-16: The Kings of Israel and Judah",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "publication": "OSF preprint v1.3, 5 May 2026 (file CFAH-16_ The Kings of Israel and Judah_v1.3.pdf), doi:10.17605/OSF.IO/YV29C",
+      "url": "https://osf.io/yv29c/",
+      "alt_urls": [
+        "https://osf.io/yv29c/files/osfstorage/69fa290abebad33f4fb652e1"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-18",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../schema/king-lists.schema.json",
-  "note": "King lists, dynasty tables and national epochs dated by CFAH. Rows link to person or event records where the data set has one; dates are as printed in the CFAH paper cited. Maintained with the CFAH importer (scripts/cfah/). Regnal lengths alone are not copied: a list row without a BC date in CFAH gets no record.",
+  "note": "King lists, dynasty tables and national epochs dated by CFAH. Rows link to person or event records where the data set has one; dates are as printed in the CFAH paper cited. Maintained with the CFAH importer (scripts/cfah/). In the published (ARJ) lists, a row without a BC date in CFAH gets no record. The OSF preprint lists (ids starting osf-) reproduce the per-king tables row by row: rows with BC dates printed in the table link to person records (display-only reign entries); rows with regnal lengths only show the lengths as printed and get no record, and no BC year is computed from a length.",
   "lists": [
     {
       "id": "cfah5-berossus-dynasties",
@@ -3030,6 +3030,449 @@
       "unrecorded_reason": null
     },
     {
+      "id": "osf-16-t1-neighbours",
+      "title": "CFAH-16: Chronology of Neighboring Kings to Israel in the 11th Century (Table 1)",
+      "region": "Levant and Mesopotamia",
+      "source": "cfah-16-osf",
+      "citation_short": "CFAH-16, OSF preprint v1.3 (5 May 2026), Table 1, p. 5",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Shamshi-Adad IV (Assyria-Mitanni)",
+          "dates": "Start: 1076, 1053; End: 1020",
+          "person": "shamshi-adad-iv"
+        },
+        {
+          "name": "Yagit Lim (Mari)",
+          "dates": "Start: ~1067; End: ~1057",
+          "person": "yaggid-lim"
+        },
+        {
+          "name": "Yahdun-Lim (Eliada) (Mari)",
+          "dates": "Start: 1057; End: 1035",
+          "person": "yahdun-lim"
+        },
+        {
+          "name": "Yasmah Adad (Mari)",
+          "dates": "Start: ~1053 (Elsewhere), 1035 (Mari); End: 1020",
+          "person": "yasmah-addu"
+        },
+        {
+          "name": "Zimri-Lim (Mari)",
+          "dates": "Start: 1020; End: 996",
+          "person": "zimri-lim"
+        },
+        {
+          "name": "Hammurabi (Babylon)",
+          "dates": "Start: 1032; End: 989",
+          "person": "hammurabi"
+        },
+        {
+          "name": "Thutmose I (Egypt)",
+          "dates": "Start: 1035; End: 1015",
+          "person": "thutmose-i"
+        },
+        {
+          "name": "Yarim-Lim I (Hamath-Yamhad)",
+          "dates": "Start: ~1045; End: ~1004",
+          "person": "yarim-lim-i"
+        },
+        {
+          "name": "Hammurabi I (Hamath-Yamhad)",
+          "dates": "Start: ~1004; End: ~996",
+          "person": "hammurabi-i-of-yamhad"
+        },
+        {
+          "name": "Saul - Amut pi El I (Israel - Qatna)",
+          "dates": "Start: 1096; End: 1056",
+          "person": "saul"
+        },
+        {
+          "name": "Ishbaal - Ishi-Addu (Israel - Qatna)",
+          "dates": "Start: 1056; End: 1049",
+          "person": "ish-bosheth"
+        },
+        {
+          "name": "David - Idaada (Israel - Qatna)",
+          "dates": "Start: 1056; End: 1016",
+          "person": "david"
+        },
+        {
+          "name": "Solomon - Amut pi-El II (Israel - Qatna)",
+          "dates": "Start: 1016; End: 976",
+          "person": "solomon"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-16-t2-qatna",
+      "title": "CFAH-16: The Kings of Qatna (Table 2)",
+      "region": "Levant",
+      "source": "cfah-16-osf",
+      "citation_short": "CFAH-16, OSF preprint v1.3 (5 May 2026), Table 2, pp. 13–14",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Amut pi El I = Saul",
+          "dates": "Reign: 1096-1056",
+          "person": "saul"
+        },
+        {
+          "name": "Ishi-Addu = Ishbosheth, Esh-Baal",
+          "dates": "Reign: 1056-1048",
+          "person": "ish-bosheth"
+        },
+        {
+          "name": "Idaada, Dawudum? = David",
+          "dates": "Reign: 1056-1016",
+          "person": "david"
+        },
+        {
+          "name": "Amut pi El II = Solomon",
+          "dates": "Reign: 1016-976",
+          "person": "solomon"
+        },
+        {
+          "name": "Yahad Abum = Jeroboam I",
+          "dates": "Reign: 975-953",
+          "person": "jeroboam-i"
+        },
+        {
+          "name": "Sinadu = Nadab",
+          "dates": "Reign: 953-952",
+          "person": "nadab-king-of-israel"
+        },
+        {
+          "name": "…",
+          "dates": "Reign: …",
+          "note": "The table marks omitted rows with an ellipsis."
+        },
+        {
+          "name": "Akizzi = Ahaziah",
+          "dates": "Reign: 898-896",
+          "person": "ahaziah-king-of-israel"
+        },
+        {
+          "name": "Yawa / Yama = Jehu",
+          "dates": "Reign: 885-857",
+          "person": "jehu"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-17-hamilton-sovereigns",
+      "title": "CFAH-17: Hamilton’s Reconstruction of 3 Sovereigns & 5 Emperors (untitled table)",
+      "region": "China",
+      "source": "cfah-17-osf",
+      "citation_short": "CFAH-17, OSF preprint v1.2 (1 Aug 2026), untitled table, p. 27",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Fu Xi",
+          "dates": "Reign: 115 (+817); Lifespan (Chou): 932; Reign in BC years: 4004 - 3072; Bible Name: Adam",
+          "note": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record."
+        },
+        {
+          "name": "Shen Nong",
+          "dates": "Reign: 108; Lifespan (Chou): ?; Reign in BC years: 3071 - 2763; Bible Name: Seth",
+          "note": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record."
+        },
+        {
+          "name": "Huang-di",
+          "dates": "Reign: 100; Lifespan (Chou): ?; Reign in BC years: 2763 - 2863; Bible Name: Enosh",
+          "note": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record."
+        },
+        {
+          "name": "Shau-han",
+          "dates": "Bible Name: Cainan",
+          "note": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record."
+        },
+        {
+          "name": "Chwen-Hyo",
+          "dates": "Bible Name: Mahalalel",
+          "note": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record."
+        },
+        {
+          "name": "[omitted]",
+          "dates": "Bible Name: Enoch",
+          "note": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record."
+        },
+        {
+          "name": "Ti-co",
+          "dates": "Bible Name: Jared",
+          "note": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record."
+        },
+        {
+          "name": "Ci-e",
+          "dates": "Reign in BC years: d. 2348; Bible Name: Methuselah",
+          "note": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record."
+        },
+        {
+          "name": "Chi",
+          "dates": "Reign in BC years: d. 2355; Bible Name: Lamech",
+          "note": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record."
+        },
+        {
+          "name": "Yau",
+          "dates": "Reign: 100; Lifespan (Chou): 950; Reign in BC years: 2347 -2252; Bible Name: Noah",
+          "note": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record."
+        },
+        {
+          "name": "Shun",
+          "dates": "Reign: 50 or 60; Reign in BC years: 2252 - 2202; Bible Name: Cush",
+          "note": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-17-t1-liu-xin",
+      "title": "CFAH-17: Liu Xin Traditional Chinese Chronology (Table 1)",
+      "region": "China",
+      "source": "cfah-17-osf",
+      "citation_short": "CFAH-17, OSF preprint v1.2 (1 Aug 2026), Table 1, p. 6",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Xia",
+          "dates": null,
+          "lengths": "Sum of Reigns: 439; Summary Total: 439",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shang",
+          "dates": null,
+          "lengths": "Sum of Reigns: 644; Summary Total: 629",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Zhou",
+          "dates": null,
+          "lengths": "Sum of Reigns: 867; Summary Total: 867",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Total",
+          "dates": null,
+          "lengths": "Sum of Reigns: 1950; Summary Total: 1935",
+          "note": "A dynasty or table total, not an individual ruler."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-17-t3-xia-shang-zhou",
+      "title": "CFAH-17: Xia-Shang-Zhou Test Chronologies (Table 3)",
+      "region": "China",
+      "source": "cfah-17-osf",
+      "citation_short": "CFAH-17, OSF preprint v1.2 (1 Aug 2026), Table 3, p. 14",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Xia",
+          "dates": "1121 Muye CFAH: 485; 1046 Muye CFAH: 485; Liu-Xin: 439; Modern: 470; CFAH Start: 2191; CFAH End: 1706",
+          "event": "xia-dynasty-founded"
+        },
+        {
+          "name": "Shang",
+          "dates": "1121 Muye CFAH: 585; 1046 Muye CFAH: 660; Liu-Xin: 629; Modern: 554; CFAH Start: 1706; CFAH End: 1121 or 1046",
+          "event": "shang-dynasty"
+        },
+        {
+          "name": "Zhou",
+          "dates": "1121 Muye CFAH: 865; 1046 Muye CFAH: 790; Liu-Xin: 867; Modern: 590; CFAH Start: 1121 or 1046; CFAH End: 256",
+          "event": "zhou-dynasty"
+        },
+        {
+          "name": "Total",
+          "dates": "1121 Muye CFAH: 1935; 1046 Muye CFAH: 1935; Liu-Xin: 1935; Modern: 1614; CFAH Start: 2191; CFAH End: 256",
+          "note": "The table total."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-17-t4-prediluvian-eras",
+      "title": "CFAH-17: Hindu, Persian, Chinese Prediluvian Eras (Table 4)",
+      "region": "India",
+      "source": "cfah-17-osf",
+      "citation_short": "CFAH-17, OSF preprint v1.2 (1 Aug 2026), Table 4, p. 26",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Satya Yuga",
+          "dates": "Length in “Years”: 1,728,000; Divided by 4,320: 400; BC Date Range: 4004 - 3604",
+          "event": "satya-yuga-era"
+        },
+        {
+          "name": "Trita Yuga",
+          "dates": "Length in “Years”: 1,296,000; Divided by 4,320: 300; BC Date Range: 3604 - 3304",
+          "note": "An era, not a ruler."
+        },
+        {
+          "name": "Dwapara Yuga",
+          "dates": "Length in “Years”: 864,000; Divided by 4,320: 200; BC Date Range: 3304 - 3104",
+          "note": "An era, not a ruler."
+        },
+        {
+          "name": "Kali Yuga",
+          "dates": "Length in “Years”: 432,000; Divided by 4,320: 100; BC Date Range: 3104 - 3004",
+          "event": "kali-yuga-era"
+        },
+        {
+          "name": "Total",
+          "dates": "Length in “Years”: 4,320,000; Divided by 4,320: 1,000; BC Date Range: 4004 - 3004",
+          "note": "The table total."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-19-t1-cecrops",
+      "title": "CFAH-19: Chroniclers on the Reign of Cecrops (Table 1)",
+      "region": "Greece",
+      "source": "cfah-19-osf",
+      "citation_short": "CFAH-19, OSF preprint v1.0 (8 Jul 2026), Table 1, p. 15",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Castor of Rhodes (via Eusebius)",
+          "dates": "Reign of Cecrops (BC): 1556-1506",
+          "event": "reign-of-cecrops"
+        },
+        {
+          "name": "Parian Chronicle",
+          "dates": "Reign of Cecrops (BC): 1582-1532",
+          "event": "reign-of-cecrops"
+        },
+        {
+          "name": "Eusebius",
+          "dates": "Reign of Cecrops (BC): 1556-1506",
+          "event": "reign-of-cecrops"
+        },
+        {
+          "name": "Eusebius",
+          "dates": "Reign of Cecrops (BC): 18th year = 1477 BC",
+          "event": "reign-of-cecrops"
+        },
+        {
+          "name": "Jerome",
+          "dates": "Reign of Cecrops (BC): 1556-1506",
+          "event": "reign-of-cecrops"
+        },
+        {
+          "name": "Syncellus",
+          "dates": "Reign of Cecrops (BC): 1558-1508",
+          "event": "reign-of-cecrops"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-19-t2-crotopus",
+      "title": "CFAH-19: Chroniclers on the Reign of Crotopus (Table 2)",
+      "region": "Greece",
+      "source": "cfah-19-osf",
+      "citation_short": "CFAH-19, OSF preprint v1.0 (8 Jul 2026), Table 2, p. 16",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Castor of Rhodes",
+          "dates": "Crotopus Reign (BC): ~1502-1481; Reign Length: 21 y",
+          "note": "A chronicler’s date for Crotopus (king of Argos) as reported in CFAH-19, not CFAH’s own date; no person record."
+        },
+        {
+          "name": "Syncellus",
+          "dates": "Crotopus Reign (BC): ~1509-1485; Reign Length: 24 y",
+          "note": "A chronicler’s date for Crotopus (king of Argos) as reported in CFAH-19, not CFAH’s own date; no person record."
+        },
+        {
+          "name": "Pausanius",
+          "dates": "Crotopus Reign (BC): ~1500",
+          "note": "A chronicler’s date for Crotopus (king of Argos) as reported in CFAH-19, not CFAH’s own date; no person record."
+        },
+        {
+          "name": "Tatian",
+          "dates": "Crotopus Reign (BC): ~1500",
+          "note": "A chronicler’s date for Crotopus (king of Argos) as reported in CFAH-19, not CFAH’s own date; no person record."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-7a-t1-d12-data",
+      "title": "CFAH-7A: Data for the Egyptian 12th Dynasty (Table 1)",
+      "region": "Egypt",
+      "source": "cfah-7a-osf",
+      "citation_short": "CFAH-7A, OSF preprint of 11 Jun 2025 (no version number), Table 1, p. 53",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Amenemhat I",
+          "dates": null,
+          "lengths": "Turin: [?]9; Manetho (Africanus): 16; Manetho (Eusebius): 16; Monuments: 30",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Senusret I",
+          "dates": null,
+          "lengths": "Turin: 45; Manetho (Africanus): 46; Manetho (Eusebius): 46; Monuments: 44",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amenemhat II",
+          "dates": null,
+          "lengths": "SKL: 29; Turin: [??]; EKL: 29; Manetho (Africanus): 38; Manetho (Eusebius): 38; Monuments: 35",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Senusret II",
+          "dates": null,
+          "lengths": "SKL: 15; Turin: [?]9; EKL: 27; Manetho (Africanus): 48; Manetho (Eusebius): 48; Monuments: 7",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Usimare",
+          "dates": null,
+          "lengths": "SKL: 31; EKL: 31",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Senusret III",
+          "dates": null,
+          "lengths": "SKL: 23; Turin: 3[?]; EKL: 33; Manetho (Africanus): [?]8; Manetho (Eusebius): [?]8; Monuments: 39+ 19 sole; Diodorus: 33",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amenemhat III",
+          "dates": null,
+          "lengths": "SKL: 19; Turin: 4[?]*; EKL: 35; Manetho (Africanus): [?]8; Manetho (Eusebius): **; Monuments: 46–48",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amenemhat IV",
+          "dates": null,
+          "lengths": "Turin: 9y 3m 27d; Manetho (Africanus): 8; Manetho (Eusebius): **; Monuments: 8",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sobek-nefrue",
+          "dates": null,
+          "lengths": "SKL: 39; Turin: 3y 10m 14d; Manetho (Africanus): 4; Manetho (Eusebius): **; Monuments: 3",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Totals",
+          "dates": null,
+          "lengths": "SKL: 156; Turin: 213y 1m 17d; EKL: 155; Manetho (Africanus): 160; Manetho (Eusebius): 245",
+          "note": "A dynasty or table total, not an individual ruler."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
       "id": "osf-7a-t2-d12-solution",
       "title": "CFAH-7A: Dynasty 12 Solution (Table 2)",
       "region": "Egypt",
@@ -4063,6 +4506,87 @@
       "unrecorded_reason": null
     },
     {
+      "id": "osf-8-t13-d18-throne-names",
+      "title": "CFAH-8: Throne Names of the Late 18th Dynasty (Table 13)",
+      "region": "Egypt",
+      "source": "cfah-8-osf",
+      "citation_short": "CFAH-8, OSF preprint v1.2 (29 Apr 2026), Table 13, pp. 99–100",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Akhenaten",
+          "dates": null,
+          "lengths": "Throne name: Nefer kheperu Ra, wa en Ra; Greek transliteration: Orus; Reign: 18 / 38 / 48",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Nefertiti / Neferneferuaten",
+          "dates": null,
+          "lengths": "Throne name: Ankh kheperu Ra, mery nefer kheperu Ra; Greek transliteration: Acherres, Achencherches; Reign: 12 / 32",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Smenkare/ Neferneferuaten II",
+          "dates": null,
+          "lengths": "Throne name: Ankh kheperu Ra; Greek transliteration: Acherres, Achcherres; Reign: 3",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Tutankhamun",
+          "dates": null,
+          "lengths": "Throne name: Neb kheperu Ra, heqa Maat; Greek transliteration: Rathos, Athoris; Reign: 6 / 9",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Ay",
+          "dates": null,
+          "lengths": "Throne name: Kheper kheperu Ra, iri Maat; Greek transliteration: Omitted; Reign: 10",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Horemheb",
+          "dates": null,
+          "lengths": "Throne name: Djoser kheperu en Ra; Greek transliteration: Chebres, Chenres, Acencherres II; Reign: 27",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Dynasty 22 Kings in the Dynasty 18 List",
+          "dates": null,
+          "note": "A heading row of the table, not a ruler."
+        },
+        {
+          "name": "Shoshenq I",
+          "dates": null,
+          "lengths": "Throne name: Hedj kheper Ra, setep en Ptah; Greek transliteration: Achcherres II; Reign: 21",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Osorkon I",
+          "dates": null,
+          "lengths": "Throne name: Sekhem kheper Ra, setep en Ra; Greek transliteration: Cherres; Reign: 15 / 35",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Dynasty 25 Kings in the Dynasty 18 List",
+          "dates": null,
+          "note": "A heading row of the table, not a ruler."
+        },
+        {
+          "name": "Piankhi, Piye mery Amun",
+          "dates": null,
+          "lengths": "Throne name: User maat Ra, Snefer Ra Usimare; Greek transliteration: Harmesses Miamun, Rameses Aegypticus; Reign: 66 y 2 m / 68",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Taharqa mery Amun",
+          "dates": null,
+          "lengths": "Throne name: Khu nefertem Ra; Greek transliteration: Amenophis, Ammeris; Reign: 18 / 20 / 26 / 40",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
       "id": "osf-8-t14-d18",
       "title": "CFAH-8: CFAH-Corrected Reigns for Dynasty 18 (Table 14)",
       "region": "Egypt",
@@ -4164,6 +4688,119 @@
           "name": "Taharqa (Amenophis)",
           "dates": "Year BC: 713 - 664; Yrs: 40",
           "person": "taharqa"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-8-t5-excerpta-barbari",
+      "title": "CFAH-8: Excerpta Latina Barberi (Table 5)",
+      "region": "Egypt",
+      "source": "cfah-8-osf",
+      "citation_short": "CFAH-8, OSF preprint v1.2 (29 Apr 2026), Table 5, pp. 85–86",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Barbari dynasty I (Manetho 0 (gods))",
+          "dates": null,
+          "lengths": "Years: 2100 years",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty II (Manetho 1)",
+          "dates": null,
+          "lengths": "Years: 253 years",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty III (Manetho 2)",
+          "dates": null,
+          "lengths": "Years: 302 years",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty IIII (sic) (Manetho 3)",
+          "dates": null,
+          "lengths": "Years: 114 years",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty V",
+          "dates": null,
+          "lengths": "Years: 277 years",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty VI",
+          "dates": null,
+          "lengths": "Years: 258 years",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty VII (Manetho 6)",
+          "dates": null,
+          "lengths": "Years: 203 years",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty VIII (Manetho 8)",
+          "dates": null,
+          "lengths": "Years: 140 years",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty VIIII (sic) (Manetho 10)",
+          "dates": null,
+          "lengths": "Years: 419 years",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty X (Manetho 11)",
+          "dates": null,
+          "lengths": "Years: 204 years",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty XI (Manetho 12)",
+          "dates": null,
+          "lengths": "Years: 60",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty XII (Manetho 13)",
+          "dates": null,
+          "lengths": "Years: 153",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty XIII (Manetho 14)",
+          "dates": null,
+          "lengths": "Years: 184",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty XIIII (sic) (Manetho 14?)",
+          "dates": null,
+          "lengths": "Years: 224",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty XV (Manetho 16)",
+          "dates": null,
+          "lengths": "Years: 318",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty XVI (Manetho 17)",
+          "dates": null,
+          "lengths": "Years: 221",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Barbari dynasty XVII (Manetho 18?)",
+          "dates": null,
+          "lengths": "Years: 260",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
         }
       ],
       "unrecorded_reason": null
@@ -4464,6 +5101,41 @@
       "unrecorded_reason": null
     },
     {
+      "id": "osf-9-t4-crown-princes",
+      "title": "CFAH-9: Crown Princes of Rameses II (Table 4)",
+      "region": "Egypt",
+      "source": "cfah-9-osf",
+      "citation_short": "CFAH-9, OSF preprint v1.4 (25 Sep 2025), Table 4, p. 60",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Amun-her-khepeshef",
+          "dates": null,
+          "lengths": "Year installed (of Rameses II): 1; Year died: 25",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Rameses B",
+          "dates": null,
+          "lengths": "Year installed (of Rameses II): 25; Year died: 50",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Khaemwaset",
+          "dates": null,
+          "lengths": "Year installed (of Rameses II): 50; Year died: 55",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Merneptah",
+          "dates": null,
+          "lengths": "Year installed (of Rameses II): 55; Year died: ?",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
       "id": "osf-9-t5-d19-lengths",
       "title": "CFAH-9: Dynasty 19 Reign Lengths (Table 5)",
       "region": "Egypt",
@@ -4613,6 +5285,10 @@
     "CFAH-4 Table 1 (Chinese patriarchs): ages only, no BC dates.",
     "CFAH-2 durations for Peru (2198/7 BC) and Yao–Shun (2277–2247 BC): the data set has no event for them, and these are not numbered anchor points, so per A1 they stay out of the event data. Ireland (2035 BC) is the event partholan-colonizes-ireland (OSF AP-103).",
     "CFAH-6 Fig. 16 (patriarch overlaps): an image chart; the patriarchs' birth and death dates are already recorded from the CFAH tables and charts on their person records.",
-    "OSF preprints CFAH-7B (kings of Dynasties 1–13), CFAH-9, 10 and 14 to 16 (Egyptian dynasties 19 to 26, Assyrian and Sumerian king lists, the kings of Israel and Judah): per-king dates there are reconstructions in long tables. Their numbered anchor points are recorded (phase 4), but the per-king rows are not imported in this pass (see open question E5)."
+    "OSF per-king tables not stored as lists: synchronism and event tables (e.g. CFAH-8 Tables 1-4 and 8-10, CFAH-9 Tables 1, 3, 7-9, CFAH-13 Tables 1 and 4, CFAH-14 Tables 2 and 4, CFAH-15 Tables 1 and 2, CFAH-16 Table 3, CFAH-17 Table 2, CFAH-19 Tables 3-7): they date events or compare durations, not reigns.",
+    "CFAH-8 Table 11 (Dynasty 24-26 kings before Psammetichus): a cross-reference grid of five sources whose rows do not each name one king; the kings it names are in CFAH-9 Table 6 and CFAH-10 Tables 6-9.",
+    "CFAH-7B Tables 4, 5, 11 and 18 and the CFAH-7A/7B timeline figures, and the gmx5j Early Egypt Master Chart: turning points, anchor points, Egyptologists' dates, pyramids and graphic charts, not king lists.",
+    "CFAH-6 on OSF (hp3fg, v2.1) duplicates the published ARJ paper, whose lists are stored above; CFAH-7 (t3vu5) is an older copy of CFAH-7A.",
+    "CFAH-16 has no full table of the kings of Israel and Judah: only Tables 1 and 2 (stored) give per-king BC dates, so most kings of Judah and Israel still have no CFAH dates."
   ]
 }

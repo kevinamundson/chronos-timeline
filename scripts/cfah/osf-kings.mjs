@@ -37,13 +37,15 @@ export function buildPhase5(tables, existingIds) {
       const spec = m[row.name];
       const cellText = Object.entries(row.cells).filter(([, v]) => !BLANK.has(v)).map(([k, v]) => `${k}: ${v}`).join('; ');
       const ys = t.kind === 'dated' ? Object.entries(row.cells).filter(([k]) => !t.yearCols || t.yearCols.includes(k)).flatMap(([, v]) => yearsIn(v)) : [];
-      const entry = { name: row.name, dates: t.kind === 'dated' && cellText ? cellText : null };
+      const entry = { name: row.name, dates: (t.kind === 'dated' || t.kind === 'dated-nonperson') && cellText ? cellText : null };
+      if (typeof spec === 'object' && spec?.event) entry.event = spec.event;
+      if (t.kind === 'dated-nonperson') { if (typeof spec === 'object' && spec?.link) entry.person = spec.link; if (!entry.event && !entry.person) entry.note = (typeof spec === 'object' && spec?.list) || t.rowNote || 'Not an individual ruler, so no person record.'; list.entries.push(entry); continue; }
       if (t.kind === 'lengths' && cellText) entry.lengths = cellText;
       if (t.kind === 'names' && cellText) entry.details = cellText;
       if (typeof spec === 'object' && spec?.link) { entry.person = spec.link; if (spec.list) entry.note = spec.list; list.entries.push(entry); continue; }
       if (!spec && /\(dynasty total\)$|^(Dynasty )?Totals?$|^Stated Total$/i.test(row.name)) { const r = 'A dynasty or table total, not an individual ruler.'; entry.note = r; list.entries.push(entry); continue; }
       if (typeof spec === 'object' && spec?.list) { entry.note = spec.list; reasons.add(spec.list); list.entries.push(entry); continue; }
-      if (t.kind === 'names') { entry.note = t.rowNote || 'Names only (an identification table): no BC date or regnal length, so no person record.'; list.entries.push(entry); continue; }
+      if (t.kind === 'names') { if (!entry.event || t.rowNote) entry.note = t.rowNote || 'Names only (an identification table): no BC date or regnal length, so no person record.'; list.entries.push(entry); continue; }
       if (t.kind !== 'dated' || !ys.length) {
         const r = t.kind !== 'dated' ? 'Regnal lengths only in this table, so no person record (no BC year is computed from lengths).' : 'No BC year printed for this row, so no person record.';
         entry.note = r; reasons.add(r); list.entries.push(entry); continue;

@@ -1,0 +1,113 @@
+{
+ "id": "osf-7a-t1-d12-data",
+ "src": "cfah-7a-osf",
+ "table": "Table 1",
+ "title": "Data for the Egyptian 12th Dynasty",
+ "dynasty": "Egypt Dynasty 12",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  53
+ ],
+ "rows": [
+  {
+   "name": "Amenemhat I",
+   "cells": {
+    "Turin": "[?]9",
+    "Manetho (Africanus)": "16",
+    "Manetho (Eusebius)": "16",
+    "Monuments": "30"
+   }
+  },
+  {
+   "name": "Senusret I",
+   "cells": {
+    "Turin": "45",
+    "Manetho (Africanus)": "46",
+    "Manetho (Eusebius)": "46",
+    "Monuments": "44"
+   }
+  },
+  {
+   "name": "Amenemhat II",
+   "cells": {
+    "SKL": "29",
+    "Turin": "[??]",
+    "EKL": "29",
+    "Manetho (Africanus)": "38",
+    "Manetho (Eusebius)": "38",
+    "Monuments": "35"
+   }
+  },
+  {
+   "name": "Senusret II",
+   "cells": {
+    "SKL": "15",
+    "Turin": "[?]9",
+    "EKL": "27",
+    "Manetho (Africanus)": "48",
+    "Manetho (Eusebius)": "48",
+    "Monuments": "7"
+   }
+  },
+  {
+   "name": "Usimare",
+   "cells": {
+    "SKL": "31",
+    "EKL": "31"
+   }
+  },
+  {
+   "name": "Senusret III",
+   "cells": {
+    "SKL": "23",
+    "Turin": "3[?]",
+    "EKL": "33",
+    "Manetho (Africanus)": "[?]8",
+    "Manetho (Eusebius)": "[?]8",
+    "Monuments": "39+ 19 sole",
+    "Diodorus": "33"
+   }
+  },
+  {
+   "name": "Amenemhat III",
+   "cells": {
+    "SKL": "19",
+    "Turin": "4[?]*",
+    "EKL": "35",
+    "Manetho (Africanus)": "[?]8",
+    "Manetho (Eusebius)": "**",
+    "Monuments": "46–48"
+   }
+  },
+  {
+   "name": "Amenemhat IV",
+   "cells": {
+    "Turin": "9y 3m 27d",
+    "Manetho (Africanus)": "8",
+    "Manetho (Eusebius)": "**",
+    "Monuments": "8"
+   }
+  },
+  {
+   "name": "Sobek-nefrue",
+   "cells": {
+    "SKL": "39",
+    "Turin": "3y 10m 14d",
+    "Manetho (Africanus)": "4",
+    "Manetho (Eusebius)": "**",
+    "Monuments": "3"
+   }
+  },
+  {
+   "name": "Totals",
+   "cells": {
+    "SKL": "156",
+    "Turin": "213y 1m 17d",
+    "EKL": "155",
+    "Manetho (Africanus)": "160",
+    "Manetho (Eusebius)": "245"
+   }
+  }
+ ]
+}

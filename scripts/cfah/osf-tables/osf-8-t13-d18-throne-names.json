@@ -1,0 +1,103 @@
+{
+ "id": "osf-8-t13-d18-throne-names",
+ "src": "cfah-8-osf",
+ "table": "Table 13",
+ "title": "Throne Names of the Late 18th Dynasty",
+ "dynasty": "Egypt Dynasty 18",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  99,
+  100
+ ],
+ "rows": [
+  {
+   "name": "Akhenaten",
+   "cells": {
+    "Throne name": "Nefer kheperu Ra, wa en Ra",
+    "Greek transliteration": "Orus",
+    "Reign": "18 / 38 / 48"
+   }
+  },
+  {
+   "name": "Nefertiti / Neferneferuaten",
+   "cells": {
+    "Throne name": "Ankh kheperu Ra, mery nefer kheperu Ra",
+    "Greek transliteration": "Acherres, Achencherches",
+    "Reign": "12 / 32"
+   }
+  },
+  {
+   "name": "Smenkare/ Neferneferuaten II",
+   "cells": {
+    "Throne name": "Ankh kheperu Ra",
+    "Greek transliteration": "Acherres, Achcherres",
+    "Reign": "3"
+   }
+  },
+  {
+   "name": "Tutankhamun",
+   "cells": {
+    "Throne name": "Neb kheperu Ra, heqa Maat",
+    "Greek transliteration": "Rathos, Athoris",
+    "Reign": "6 / 9"
+   }
+  },
+  {
+   "name": "Ay",
+   "cells": {
+    "Throne name": "Kheper kheperu Ra, iri Maat",
+    "Greek transliteration": "Omitted",
+    "Reign": "10"
+   }
+  },
+  {
+   "name": "Horemheb",
+   "cells": {
+    "Throne name": "Djoser kheperu en Ra",
+    "Greek transliteration": "Chebres, Chenres, Acencherres II",
+    "Reign": "27"
+   }
+  },
+  {
+   "name": "Dynasty 22 Kings in the Dynasty 18 List",
+   "cells": {}
+  },
+  {
+   "name": "Shoshenq I",
+   "cells": {
+    "Throne name": "Hedj kheper Ra, setep en Ptah",
+    "Greek transliteration": "Achcherres II",
+    "Reign": "21"
+   }
+  },
+  {
+   "name": "Osorkon I",
+   "cells": {
+    "Throne name": "Sekhem kheper Ra, setep en Ra",
+    "Greek transliteration": "Cherres",
+    "Reign": "15 / 35"
+   }
+  },
+  {
+   "name": "Dynasty 25 Kings in the Dynasty 18 List",
+   "cells": {}
+  },
+  {
+   "name": "Piankhi, Piye mery Amun",
+   "cells": {
+    "Throne name": "User maat Ra, Snefer Ra Usimare",
+    "Greek transliteration": "Harmesses Miamun, Rameses Aegypticus",
+    "Reign": "66 y 2 m / 68"
+   }
+  },
+  {
+   "name": "Taharqa mery Amun",
+   "cells": {
+    "Throne name": "Khu nefertem Ra",
+    "Greek transliteration": "Amenophis, Ammeris",
+    "Reign": "18 / 20 / 26 / 40"
+   }
+  }
+ ]
+}

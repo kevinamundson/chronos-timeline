@@ -161,6 +161,36 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-14-t5-rel:david:david:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Start: 1056; End: 1016",
+        "year_am": null,
+        "year_bc_ad": -1056,
+        "year_bc_ad_end": -1016,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-16: The Kings of Israel and Judah,\" OSF preprint v1.3 (5 May 2026), doi:10.17605/OSF.IO/YV29C, file CFAH-16_ The Kings of Israel and Judah_v1.3.pdf, Table 1 \"Chronology of Neighboring Kings to Israel in the 11th Century\", p. 5",
+        "link": "https://osf.io/yv29c/",
+        "source_text_id": "cfah-16-osf",
+        "note": "Row \"David - Idaada (Israel - Qatna)\" of Table 1 (Neighbours of Israel (11th century BC)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-16-t1-neighbours:david-idaada-israel-qatna:david:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Reign: 1056-1016",
+        "year_am": null,
+        "year_bc_ad": -1056,
+        "year_bc_ad_end": -1016,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-16: The Kings of Israel and Judah,\" OSF preprint v1.3 (5 May 2026), doi:10.17605/OSF.IO/YV29C, file CFAH-16_ The Kings of Israel and Judah_v1.3.pdf, Table 2 \"The Kings of Qatna\", pp. 13–14",
+        "link": "https://osf.io/yv29c/",
+        "source_text_id": "cfah-16-osf",
+        "note": "Row \"Idaada, Dawudum? = David\" of Table 2 (Kings of Qatna = kings of Israel (CFAH-16)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-16-t2-qatna:idaada-dawudum-david:david:reign"
       }
     ]
   },
@@ -176,7 +206,8 @@
     "ussher-annals-1658",
     "jordan-book-judges-1985",
     "jordan-compilation-anno-mundi",
-    "cfah-14-osf"
+    "cfah-14-osf",
+    "cfah-16-osf"
   ],
   "free_source_links": [
     {
@@ -188,6 +219,16 @@
       "source_id": "cfah-14-osf",
       "url": "https://osf.io/9fuw2/",
       "locator": "Table 5, pp. 43–73"
+    },
+    {
+      "source_id": "cfah-16-osf",
+      "url": "https://osf.io/yv29c/",
+      "locator": "Table 1, p. 5"
+    },
+    {
+      "source_id": "cfah-16-osf",
+      "url": "https://osf.io/yv29c/",
+      "locator": "Table 2, pp. 13–14"
     }
   ],
   "related": [

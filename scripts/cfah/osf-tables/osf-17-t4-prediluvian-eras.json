@@ -1,0 +1,55 @@
+{
+ "id": "osf-17-t4-prediluvian-eras",
+ "src": "cfah-17-osf",
+ "table": "Table 4",
+ "title": "Hindu, Persian, Chinese Prediluvian Eras",
+ "dynasty": "India",
+ "kind": "dated-nonperson",
+ "region": "India",
+ "rowNote": "An era, not a ruler.",
+ "pages": [
+  26
+ ],
+ "rows": [
+  {
+   "name": "Satya Yuga",
+   "cells": {
+    "Length in “Years”": "1,728,000",
+    "Divided by 4,320": "400",
+    "BC Date Range": "4004 - 3604"
+   }
+  },
+  {
+   "name": "Trita Yuga",
+   "cells": {
+    "Length in “Years”": "1,296,000",
+    "Divided by 4,320": "300",
+    "BC Date Range": "3604 - 3304"
+   }
+  },
+  {
+   "name": "Dwapara Yuga",
+   "cells": {
+    "Length in “Years”": "864,000",
+    "Divided by 4,320": "200",
+    "BC Date Range": "3304 - 3104"
+   }
+  },
+  {
+   "name": "Kali Yuga",
+   "cells": {
+    "Length in “Years”": "432,000",
+    "Divided by 4,320": "100",
+    "BC Date Range": "3104 - 3004"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Length in “Years”": "4,320,000",
+    "Divided by 4,320": "1,000",
+    "BC Date Range": "4004 - 3004"
+   }
+  }
+ ]
+}

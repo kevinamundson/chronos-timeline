@@ -1,0 +1,51 @@
+{
+ "id": "osf-19-t1-cecrops",
+ "src": "cfah-19-osf",
+ "table": "Table 1",
+ "title": "Chroniclers on the Reign of Cecrops",
+ "dynasty": "Athens",
+ "kind": "dated-nonperson",
+ "region": "Greece",
+ "rowNote": "A chronicler’s date for Cecrops as reported in CFAH-19, not CFAH’s own date.",
+ "pages": [
+  15
+ ],
+ "rows": [
+  {
+   "name": "Castor of Rhodes (via Eusebius)",
+   "cells": {
+    "Reign of Cecrops (BC)": "1556-1506"
+   }
+  },
+  {
+   "name": "Parian Chronicle",
+   "cells": {
+    "Reign of Cecrops (BC)": "1582-1532"
+   }
+  },
+  {
+   "name": "Eusebius",
+   "cells": {
+    "Reign of Cecrops (BC)": "1556-1506"
+   }
+  },
+  {
+   "name": "Eusebius",
+   "cells": {
+    "Reign of Cecrops (BC)": "18th year = 1477 BC"
+   }
+  },
+  {
+   "name": "Jerome",
+   "cells": {
+    "Reign of Cecrops (BC)": "1556-1506"
+   }
+  },
+  {
+   "name": "Syncellus",
+   "cells": {
+    "Reign of Cecrops (BC)": "1558-1508"
+   }
+  }
+ ]
+}

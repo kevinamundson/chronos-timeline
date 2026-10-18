@@ -30,13 +30,29 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-15-t5-19-mari-iii:zimri-lim:zimri-lim:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Start: 1020; End: 996",
+        "year_am": null,
+        "year_bc_ad": -1020,
+        "year_bc_ad_end": -996,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-16: The Kings of Israel and Judah,\" OSF preprint v1.3 (5 May 2026), doi:10.17605/OSF.IO/YV29C, file CFAH-16_ The Kings of Israel and Judah_v1.3.pdf, Table 1 \"Chronology of Neighboring Kings to Israel in the 11th Century\", p. 5",
+        "link": "https://osf.io/yv29c/",
+        "source_text_id": "cfah-16-osf",
+        "note": "Row \"Zimri-Lim (Mari)\" of Table 1 (Neighbours of Israel (11th century BC)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-16-t1-neighbours:zimri-lim-mari:zimri-lim:reign"
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-15-osf"
+    "cfah-15-osf",
+    "cfah-16-osf"
   ],
   "related": [],
   "free_source_links": [
@@ -44,6 +60,11 @@
       "source_id": "cfah-15-osf",
       "url": "https://osf.io/vynju/",
       "locator": "Table 5, p. 56"
+    },
+    {
+      "source_id": "cfah-16-osf",
+      "url": "https://osf.io/yv29c/",
+      "locator": "Table 1, p. 5"
     }
   ],
   "dynasty": "Mari III dynasty"

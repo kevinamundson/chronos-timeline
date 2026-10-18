@@ -570,8 +570,46 @@ None of these records has a tier 1–4 date, so the sort stays on Generations an
   - Joseph's famine: AP-58 over AP-101
   - Djoser's famine: AP-49 over AP-102
   - Death of Sargon II: AP-34 over AP-86
-- **Not imported:** the per-king rows of the OSF king lists and supplementary tables (CFAH-7B Dynasties 1–13; CFAH-9 and 10 Dynasties 19 to 26; CFAH-14 Assyria; CFAH-15 Sumer, Akkad and Babylon; CFAH-16 Israel and Judah). They are long reconstruction tables with hundreds of rows. Only their numbered anchor points are recorded.
+- **Done (2026-10-18, phase 5; see E6).** ~~Not imported:~~ the per-king rows of the OSF king lists and supplementary tables (CFAH-7B Dynasties 1–13; CFAH-9 and 10 Dynasties 19 to 26; CFAH-14 Assyria; CFAH-15 Sumer, Akkad and Babylon; CFAH-16 Israel and Judah). They are long reconstruction tables with hundreds of rows. Only their numbered anchor points are recorded.
 - **Options:**
   1. Leave as is.
   2. Import them paper by paper as display-only `paper_text` preprint entries on new ruler records.
 - **Recommendation:** for the 624 BC treaty, keep the CFAH sort, since that is what the tier rule says, but tell me if OSF preprints should not move records this far. For the king lists, option 1 for now, and option 2 for CFAH-16 first if you want the kings of Israel and Judah.
+
+### E6. Phase 5: the per-king rows of the OSF tables (E5 done)
+- **Done.** You asked for "the rulers and people from the six papers AND OSF", so E5 option 2 is now applied to every OSF king-list and supplementary table in docs/cfah-osf-collation.md. The data is in `scripts/cfah/osf-tables/` (76 tables), the person matching in `scripts/cfah/osf-kings-map.mjs`, and the engine in `scripts/cfah/osf-kings.mjs` (run by `node scripts/cfah/import.mjs`).
+- **Rules followed:**
+  - A row with BC years printed in the table gets a `paper_text` reign entry on a person record. The entry is marked `cfah_preprint` and cites the OSF file, version, table and page. The date text is the table's cells, verbatim.
+  - These entries are display only: no person's sort changed (E4).
+  - A row with regnal lengths only is listed in data/king-lists.json with its lengths as printed, without a record. No BC year was computed from a length.
+  - Groups, gaps, totals, headings and damaged names are listed with the reason.
+- **Counts:** 76 lists, 755 rows.
+  - 410 reign entries on 360 people: 322 new records and 38 existing ones reused.
+  - The reused records include the Herodotus kings (Cheops, Chephren, Mycerinus, Sabacos, Psammetichus I, Necho II, Psammis, Apries, Amasis II and Psammenitus), the CFAH phase 3 rulers, the Genesis and Generations people (Mizraim, Cush, Nimrod, David, Solomon, Samson and Samuel), and Morecraft's Alexander.
+  - 24 more rows link to existing records without a date: AKL kings to the Genesis patriarchs, and the Median kings of CFAH-13.
+  - 11 rows link to events (Xia, Shang, Zhou, the yugas and Cecrops), and 310 rows have no record.
+- **Identifications taken from CFAH, please check:**
+  - CFAH-9 pairs each Dynasty 19 king with a Dynasty 26 king. Seti I's row is on psammetichus-i, "Rameses B" on necho-ii, Khaemwaset on psammis, Merneptah on apries and Amenmesse on amasis-ii.
+  - CFAH-11 makes Alexander the Great the alter ego of Rameses VII (331–323 BC, now a CFAH reign entry on alexander-the-great).
+  - CFAH-15: Gišur and Meš-ki'ag-gašer are Cush, En-mer-kar is Nimrod, Dumuzi is Semiramis, and Gilgamesh is Ninyas.
+  - CFAH-16: the kings of Qatna are Saul, Ishbosheth, David, Solomon, Jeroboam I, Nadab, Ahaziah and Jehu.
+  - CFAH-7B: Menes is Mizraim, Usimare (Dynasty 12) is Userkare, and Neferirkare Kakai appears in both Dynasty 2 and Dynasty 5.
+- **Still out, with reasons:**
+  - Synchronism and event tables: they date events, not reigns. These are CFAH-8 Tables 1–4 and 8–10, CFAH-9 Tables 1, 3, 7–9, CFAH-13 Tables 1 and 4, CFAH-14 Tables 2 and 4, CFAH-15 Tables 1 and 2, CFAH-16 Table 3, CFAH-17 Table 2, and CFAH-19 Tables 3–7.
+  - CFAH-8 Table 11 is a cross-reference grid in which a row does not name a single king. Its kings are in CFAH-9 Table 6 and CFAH-10 Tables 6–9.
+  - CFAH-7B Tables 4, 5, 11 and 18 are not king lists: turning points, anchor points, Egyptologists' durations and pyramids. The timeline figures and the gmx5j master chart are graphics.
+  - CFAH-6 on OSF duplicates the published paper, and t3vu5 is an older copy of CFAH-7A.
+  - CFAH-16 has no full table of the kings of Israel and Judah. Only its Tables 1 and 2 give per-king dates, so most kings of Judah (and Israel after Jehu) still have no CFAH date.
+  - Third-party dates quoted in CFAH tables are listed but not put on records:
+    - Hamilton's Chinese sovereigns (CFAH-17).
+    - The chroniclers' dates for Cecrops and Crotopus (CFAH-19).
+    - Kitchen's and current scholarship's Dynasty 22 (CFAH-8 Table 12, CFAH-10 Table 2).
+  - CFAH-10 Table 7, row "Osorkon III" (757/719–713 BC): listed without a person. The text gives these years to Bocchoris (I18).
+- **New internal inconsistencies (continuing E1):**
+  - **I17. Rameses II end year 678 vs 578 BC (CFAH-9 Table 2).** Table 3 and Table 7 have him die in 578. The entry keeps "644 | 678" and uses only 644 for the timeline.
+  - **I18. CFAH-10 Table 7 "Osorkon III" in Dynasty 24.** The text interprets "the 6 years of Bocchoris/Bakenranef as his sole reign from 719 to 713 BC".
+  - **I19. CFAH-10 in-table captions differ from the list of tables.** Tables 6 and 8 read "Data for Dynasty 23", and Table 9 reads "CFAH Solution for Dynasty 24". The list-of-tables titles (Dynasties 24, 25, 25) are used.
+  - **I20. CFAH-8 has two tables numbered 14** (Dynasty 18 reigns; Amenemhab vs Thutmose annals).
+  - **I21. Huang-di "2763 - 2863" in the Hamilton table (CFAH-17).** The end year is before the start, probably 2663.
+  - **I22. Ishbosheth's end year, 1049 (CFAH-16 Table 1) vs 1048 BC (Table 2).** Both are kept.
+- **Recommendation:** keep the entries display only, as now. Tell me if any of the CFAH identifications above should not attach CFAH dates to the existing records (especially Alexander and the Herodotus kings of Dynasty 26). If so, I will list those rows without a person instead.

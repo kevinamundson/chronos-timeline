@@ -1,0 +1,42 @@
+{
+ "id": "osf-9-t4-crown-princes",
+ "src": "cfah-9-osf",
+ "table": "Table 4",
+ "title": "Crown Princes of Rameses II",
+ "dynasty": "Egypt Dynasty 19",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  60
+ ],
+ "rows": [
+  {
+   "name": "Amun-her-khepeshef",
+   "cells": {
+    "Year installed (of Rameses II)": "1",
+    "Year died": "25"
+   }
+  },
+  {
+   "name": "Rameses B",
+   "cells": {
+    "Year installed (of Rameses II)": "25",
+    "Year died": "50"
+   }
+  },
+  {
+   "name": "Khaemwaset",
+   "cells": {
+    "Year installed (of Rameses II)": "50",
+    "Year died": "55"
+   }
+  },
+  {
+   "name": "Merneptah",
+   "cells": {
+    "Year installed (of Rameses II)": "55",
+    "Year died": "?"
+   }
+  }
+ ]
+}

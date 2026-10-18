@@ -1,0 +1,43 @@
+{
+ "id": "osf-19-t2-crotopus",
+ "src": "cfah-19-osf",
+ "table": "Table 2",
+ "title": "Chroniclers on the Reign of Crotopus",
+ "dynasty": "Argos",
+ "kind": "dated-nonperson",
+ "region": "Greece",
+ "rowNote": "A chronicler’s date for Crotopus (king of Argos) as reported in CFAH-19, not CFAH’s own date; no person record.",
+ "pages": [
+  16
+ ],
+ "rows": [
+  {
+   "name": "Castor of Rhodes",
+   "cells": {
+    "Crotopus Reign (BC)": "~1502-1481",
+    "Reign Length": "21 y"
+   }
+  },
+  {
+   "name": "Syncellus",
+   "cells": {
+    "Crotopus Reign (BC)": "~1509-1485",
+    "Reign Length": "24 y"
+   }
+  },
+  {
+   "name": "Pausanius",
+   "cells": {
+    "Crotopus Reign (BC)": "~1500",
+    "Reign Length": "–"
+   }
+  },
+  {
+   "name": "Tatian",
+   "cells": {
+    "Crotopus Reign (BC)": "~1500",
+    "Reign Length": "-"
+   }
+  }
+ ]
+}

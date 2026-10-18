@@ -1,0 +1,109 @@
+{
+ "id": "osf-16-t1-neighbours",
+ "src": "cfah-16-osf",
+ "table": "Table 1",
+ "title": "Chronology of Neighboring Kings to Israel in the 11th Century",
+ "dynasty": "Neighbours of Israel (11th century BC)",
+ "kind": "dated",
+ "region": "Levant and Mesopotamia",
+ "yearCols": [
+  "Start",
+  "End"
+ ],
+ "pages": [
+  5
+ ],
+ "rows": [
+  {
+   "name": "Shamshi-Adad IV (Assyria-Mitanni)",
+   "cells": {
+    "Start": "1076, 1053",
+    "End": "1020"
+   }
+  },
+  {
+   "name": "Yagit Lim (Mari)",
+   "cells": {
+    "Start": "~1067",
+    "End": "~1057"
+   }
+  },
+  {
+   "name": "Yahdun-Lim (Eliada) (Mari)",
+   "cells": {
+    "Start": "1057",
+    "End": "1035"
+   }
+  },
+  {
+   "name": "Yasmah Adad (Mari)",
+   "cells": {
+    "Start": "~1053 (Elsewhere), 1035 (Mari)",
+    "End": "1020"
+   }
+  },
+  {
+   "name": "Zimri-Lim (Mari)",
+   "cells": {
+    "Start": "1020",
+    "End": "996"
+   }
+  },
+  {
+   "name": "Hammurabi (Babylon)",
+   "cells": {
+    "Start": "1032",
+    "End": "989"
+   }
+  },
+  {
+   "name": "Thutmose I (Egypt)",
+   "cells": {
+    "Start": "1035",
+    "End": "1015"
+   }
+  },
+  {
+   "name": "Yarim-Lim I (Hamath-Yamhad)",
+   "cells": {
+    "Start": "~1045",
+    "End": "~1004"
+   }
+  },
+  {
+   "name": "Hammurabi I (Hamath-Yamhad)",
+   "cells": {
+    "Start": "~1004",
+    "End": "~996"
+   }
+  },
+  {
+   "name": "Saul - Amut pi El I (Israel - Qatna)",
+   "cells": {
+    "Start": "1096",
+    "End": "1056"
+   }
+  },
+  {
+   "name": "Ishbaal - Ishi-Addu (Israel - Qatna)",
+   "cells": {
+    "Start": "1056",
+    "End": "1049"
+   }
+  },
+  {
+   "name": "David - Idaada (Israel - Qatna)",
+   "cells": {
+    "Start": "1056",
+    "End": "1016"
+   }
+  },
+  {
+   "name": "Solomon - Amut pi-El II (Israel - Qatna)",
+   "cells": {
+    "Start": "1016",
+    "End": "976"
+   }
+  }
+ ]
+}

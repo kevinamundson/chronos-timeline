@@ -1,0 +1,117 @@
+{
+ "id": "osf-8-t5-excerpta-barbari",
+ "src": "cfah-8-osf",
+ "table": "Table 5",
+ "title": "Excerpta Latina Barberi",
+ "dynasty": "Egypt (dynasties of the Excerpta Latina Barbari)",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  85,
+  86
+ ],
+ "rows": [
+  {
+   "name": "Barbari dynasty I (Manetho 0 (gods))",
+   "cells": {
+    "Years": "2100 years"
+   }
+  },
+  {
+   "name": "Barbari dynasty II (Manetho 1)",
+   "cells": {
+    "Years": "253 years"
+   }
+  },
+  {
+   "name": "Barbari dynasty III (Manetho 2)",
+   "cells": {
+    "Years": "302 years"
+   }
+  },
+  {
+   "name": "Barbari dynasty IIII (sic) (Manetho 3)",
+   "cells": {
+    "Years": "114 years"
+   }
+  },
+  {
+   "name": "Barbari dynasty V",
+   "cells": {
+    "Years": "277 years"
+   }
+  },
+  {
+   "name": "Barbari dynasty VI",
+   "cells": {
+    "Years": "258 years"
+   }
+  },
+  {
+   "name": "Barbari dynasty VII (Manetho 6)",
+   "cells": {
+    "Years": "203 years"
+   }
+  },
+  {
+   "name": "Barbari dynasty VIII (Manetho 8)",
+   "cells": {
+    "Years": "140 years"
+   }
+  },
+  {
+   "name": "Barbari dynasty VIIII (sic) (Manetho 10)",
+   "cells": {
+    "Years": "419 years"
+   }
+  },
+  {
+   "name": "Barbari dynasty X (Manetho 11)",
+   "cells": {
+    "Years": "204 years"
+   }
+  },
+  {
+   "name": "Barbari dynasty XI (Manetho 12)",
+   "cells": {
+    "Years": "60"
+   }
+  },
+  {
+   "name": "Barbari dynasty XII (Manetho 13)",
+   "cells": {
+    "Years": "153"
+   }
+  },
+  {
+   "name": "Barbari dynasty XIII (Manetho 14)",
+   "cells": {
+    "Years": "184"
+   }
+  },
+  {
+   "name": "Barbari dynasty XIIII (sic) (Manetho 14?)",
+   "cells": {
+    "Years": "224"
+   }
+  },
+  {
+   "name": "Barbari dynasty XV (Manetho 16)",
+   "cells": {
+    "Years": "318"
+   }
+  },
+  {
+   "name": "Barbari dynasty XVI (Manetho 17)",
+   "cells": {
+    "Years": "221"
+   }
+  },
+  {
+   "name": "Barbari dynasty XVII (Manetho 18?)",
+   "cells": {
+    "Years": "260"
+   }
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "yarim-lim-i",
+  "type": "person",
+  "title": "Yarim-Lim I",
+  "summary": "Ruler listed in CFAH-16 Table 1 (Neighbours of Israel (11th century BC)).",
+  "description": "Ruler of Neighbours of Israel (11th century BC). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-16 (Table 1, \"Chronology of Neighboring Kings to Israel in the 11th Century\"); its dates are display only.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Start: ~1045; End: ~1004",
+        "year_am": null,
+        "year_bc_ad": -1045,
+        "year_bc_ad_end": -1004,
+        "precision": "approximate",
+        "citation": "Griffith & White, \"CFAH-16: The Kings of Israel and Judah,\" OSF preprint v1.3 (5 May 2026), doi:10.17605/OSF.IO/YV29C, file CFAH-16_ The Kings of Israel and Judah_v1.3.pdf, Table 1 \"Chronology of Neighboring Kings to Israel in the 11th Century\", p. 5",
+        "link": "https://osf.io/yv29c/",
+        "source_text_id": "cfah-16-osf",
+        "note": "Row \"Yarim-Lim I (Hamath-Yamhad)\" of Table 1 (Neighbours of Israel (11th century BC)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-16-t1-neighbours:yarim-lim-i-hamath-yamhad:yarim-lim-i:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-16-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-16-osf",
+      "url": "https://osf.io/yv29c/",
+      "locator": "Table 1, p. 5"
+    }
+  ],
+  "dynasty": "Neighbours of Israel (11th century BC)"
+}

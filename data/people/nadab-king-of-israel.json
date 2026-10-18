@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "nadab-king-of-israel",
+  "type": "person",
+  "title": "Nadab (king of Israel)",
+  "summary": "Son of Jeroboam I, king of Israel.",
+  "description": "Son of Jeroboam I, king of Israel. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-16 (Table 2, \"The Kings of Qatna\"); its dates are display only.",
+  "alt_names": [
+    "Nadab",
+    "Sinadu"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Reign: 953-952",
+        "year_am": null,
+        "year_bc_ad": -953,
+        "year_bc_ad_end": -952,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-16: The Kings of Israel and Judah,\" OSF preprint v1.3 (5 May 2026), doi:10.17605/OSF.IO/YV29C, file CFAH-16_ The Kings of Israel and Judah_v1.3.pdf, Table 2 \"The Kings of Qatna\", pp. 13–14",
+        "link": "https://osf.io/yv29c/",
+        "source_text_id": "cfah-16-osf",
+        "note": "Row \"Sinadu = Nadab\" of Table 2 (Kings of Qatna = kings of Israel (CFAH-16)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-16-t2-qatna:sinadu-nadab:nadab-king-of-israel:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-16-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-16-osf",
+      "url": "https://osf.io/yv29c/",
+      "locator": "Table 2, pp. 13–14"
+    }
+  ],
+  "dynasty": "Kings of Israel"
+}

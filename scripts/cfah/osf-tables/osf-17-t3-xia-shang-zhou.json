@@ -1,0 +1,59 @@
+{
+ "id": "osf-17-t3-xia-shang-zhou",
+ "src": "cfah-17-osf",
+ "table": "Table 3",
+ "title": "Xia-Shang-Zhou Test Chronologies",
+ "dynasty": "China",
+ "kind": "dated-nonperson",
+ "region": "China",
+ "rowNote": "A dynasty, not an individual ruler.",
+ "pages": [
+  14
+ ],
+ "rows": [
+  {
+   "name": "Xia",
+   "cells": {
+    "1121 Muye CFAH": "485",
+    "1046 Muye CFAH": "485",
+    "Liu-Xin": "439",
+    "Modern": "470",
+    "CFAH Start": "2191",
+    "CFAH End": "1706"
+   }
+  },
+  {
+   "name": "Shang",
+   "cells": {
+    "1121 Muye CFAH": "585",
+    "1046 Muye CFAH": "660",
+    "Liu-Xin": "629",
+    "Modern": "554",
+    "CFAH Start": "1706",
+    "CFAH End": "1121 or 1046"
+   }
+  },
+  {
+   "name": "Zhou",
+   "cells": {
+    "1121 Muye CFAH": "865",
+    "1046 Muye CFAH": "790",
+    "Liu-Xin": "867",
+    "Modern": "590",
+    "CFAH Start": "1121 or 1046",
+    "CFAH End": "256"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "1121 Muye CFAH": "1935",
+    "1046 Muye CFAH": "1935",
+    "Liu-Xin": "1935",
+    "Modern": "1614",
+    "CFAH Start": "2191",
+    "CFAH End": "256"
+   }
+  }
+ ]
+}

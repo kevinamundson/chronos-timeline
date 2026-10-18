@@ -1,0 +1,42 @@
+{
+ "id": "osf-17-t1-liu-xin",
+ "src": "cfah-17-osf",
+ "table": "Table 1",
+ "title": "Liu Xin Traditional Chinese Chronology",
+ "dynasty": "China (Liu Xin)",
+ "kind": "lengths",
+ "region": "China",
+ "pages": [
+  6
+ ],
+ "rows": [
+  {
+   "name": "Xia",
+   "cells": {
+    "Sum of Reigns": "439",
+    "Summary Total": "439"
+   }
+  },
+  {
+   "name": "Shang",
+   "cells": {
+    "Sum of Reigns": "644",
+    "Summary Total": "629"
+   }
+  },
+  {
+   "name": "Zhou",
+   "cells": {
+    "Sum of Reigns": "867",
+    "Summary Total": "867"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Sum of Reigns": "1950",
+    "Summary Total": "1935"
+   }
+  }
+ ]
+}

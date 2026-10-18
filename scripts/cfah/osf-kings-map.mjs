@@ -222,4 +222,32 @@ export const MAP = {
     'Nabû-nāṣir': P('nabu-nasir', 'Nabû-nāṣir', ['Nabonassar'], { events: ['era-of-nabonassar'] }),
     '[Ninurta-apla-X]': G('The name is incomplete in the table ("Ninurta-apla-X").'),
   },
+  // ---- CFAH-16 (yv29c): neighbours of Israel and the kings of Qatna (CFAH-16 identifies the kings of Qatna with Saul, Ishbosheth, David, Solomon and later kings of Israel)
+  'osf-16-t1-neighbours': {
+    'Shamshi-Adad IV (Assyria-Mitanni)': 'shamshi-adad-iv',
+    'Yagit Lim (Mari)': P('yaggid-lim', 'Yaggid-Lim', ['Yagit Lim']),
+    'Yahdun-Lim (Eliada) (Mari)': P('yahdun-lim', 'Yahdun-Lim', ['Eliada']),
+    'Yasmah Adad (Mari)': P('yasmah-addu', 'Yasmah-Addu', ['Yasmah Adad']),
+    'Zimri-Lim (Mari)': 'zimri-lim',
+    'Hammurabi (Babylon)': 'hammurabi', 'Thutmose I (Egypt)': 'thutmose-i',
+    'Yarim-Lim I (Hamath-Yamhad)': P('yarim-lim-i', 'Yarim-Lim I', []),
+    'Hammurabi I (Hamath-Yamhad)': P('hammurabi-i-of-yamhad', 'Hammurabi I of Yamhad', ['Hammurabi I']),
+    'Saul - Amut pi El I (Israel - Qatna)': 'saul',
+    'Ishbaal - Ishi-Addu (Israel - Qatna)': P('ish-bosheth', 'Ish-bosheth', ['Ishbosheth', 'Ishbaal', 'Esh-Baal', 'Ishi-Addu'], { dynasty: 'Kings of Israel', summary: 'Son of Saul, king of Israel during the civil war with David.' }),
+    'David - Idaada (Israel - Qatna)': 'david',
+    'Solomon - Amut pi-El II (Israel - Qatna)': 'solomon',
+  },
+  'osf-16-t2-qatna': {
+    'Amut pi El I = Saul': 'saul', 'Ishi-Addu = Ishbosheth, Esh-Baal': 'ish-bosheth', 'Idaada, Dawudum? = David': 'david', 'Amut pi El II = Solomon': 'solomon',
+    'Yahad Abum = Jeroboam I': P('jeroboam-i', 'Jeroboam I', ['Yahad Abum'], { dynasty: 'Kings of Israel', summary: 'First king of the northern kingdom of Israel.' }),
+    'Sinadu = Nadab': P('nadab-king-of-israel', 'Nadab (king of Israel)', ['Nadab', 'Sinadu'], { dynasty: 'Kings of Israel', summary: 'Son of Jeroboam I, king of Israel.' }),
+    '…': G('The table marks omitted rows with an ellipsis.'),
+    'Akizzi = Ahaziah': P('ahaziah-king-of-israel', 'Ahaziah (king of Israel)', ['Ahaziah', 'Akizzi'], { dynasty: 'Kings of Israel', summary: 'Son of Ahab, king of Israel.' }),
+    'Yawa / Yama = Jehu': P('jehu', 'Jehu', ['Yawa', 'Yama'], { dynasty: 'Kings of Israel', summary: 'King of Israel.' }),
+  },
+  // ---- CFAH-17 (j4nxu) and CFAH-19 (a5g6x): dynasties, eras and chroniclers' dates (no person records)
+  'osf-17-t3-xia-shang-zhou': { Xia: { event: 'xia-dynasty-founded' }, Shang: { event: 'shang-dynasty' }, Zhou: { event: 'zhou-dynasty' }, Total: G('The table total.') },
+  'osf-17-t4-prediluvian-eras': { 'Satya Yuga': { event: 'satya-yuga-era' }, 'Kali Yuga': { event: 'kali-yuga-era' }, Total: G('The table total.') },
+  'osf-19-t1-cecrops': Object.fromEntries(['Castor of Rhodes (via Eusebius)', 'Parian Chronicle', 'Eusebius', 'Jerome', 'Syncellus'].map((n) => [n, { event: 'reign-of-cecrops' }])),
+  'osf-8-t13-d18-throne-names': { 'Dynasty 22 Kings in the Dynasty 18 List': G('A heading row of the table, not a ruler.'), 'Dynasty 25 Kings in the Dynasty 18 List': G('A heading row of the table, not a ruler.') },
 };

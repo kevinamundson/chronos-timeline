@@ -1,0 +1,72 @@
+{
+ "id": "osf-16-t2-qatna",
+ "src": "cfah-16-osf",
+ "table": "Table 2",
+ "title": "The Kings of Qatna",
+ "dynasty": "Kings of Qatna = kings of Israel (CFAH-16)",
+ "kind": "dated",
+ "region": "Levant",
+ "yearCols": [
+  "Reign"
+ ],
+ "pages": [
+  13,
+  14
+ ],
+ "rows": [
+  {
+   "name": "Amut pi El I = Saul",
+   "cells": {
+    "Reign": "1096-1056"
+   }
+  },
+  {
+   "name": "Ishi-Addu = Ishbosheth, Esh-Baal",
+   "cells": {
+    "Reign": "1056-1048"
+   }
+  },
+  {
+   "name": "Idaada, Dawudum? = David",
+   "cells": {
+    "Reign": "1056-1016"
+   }
+  },
+  {
+   "name": "Amut pi El II = Solomon",
+   "cells": {
+    "Reign": "1016-976"
+   }
+  },
+  {
+   "name": "Yahad Abum = Jeroboam I",
+   "cells": {
+    "Reign": "975-953"
+   }
+  },
+  {
+   "name": "Sinadu = Nadab",
+   "cells": {
+    "Reign": "953-952"
+   }
+  },
+  {
+   "name": "…",
+   "cells": {
+    "Reign": "…"
+   }
+  },
+  {
+   "name": "Akizzi = Ahaziah",
+   "cells": {
+    "Reign": "898-896"
+   }
+  },
+  {
+   "name": "Yawa / Yama = Jehu",
+   "cells": {
+    "Reign": "885-857"
+   }
+  }
+ ]
+}

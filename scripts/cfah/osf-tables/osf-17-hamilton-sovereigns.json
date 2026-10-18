@@ -1,0 +1,97 @@
+{
+ "id": "osf-17-hamilton-sovereigns",
+ "src": "cfah-17-osf",
+ "table": "untitled table",
+ "title": "Hamilton’s Reconstruction of 3 Sovereigns & 5 Emperors",
+ "dynasty": "China (legendary sovereigns)",
+ "kind": "dated-nonperson",
+ "region": "China",
+ "rowNote": "Hamilton’s reconstruction, quoted in CFAH-17; these are not CFAH’s own dates, so no person record.",
+ "pages": [
+  27
+ ],
+ "rows": [
+  {
+   "name": "Fu Xi",
+   "cells": {
+    "Reign": "115 (+817)",
+    "Lifespan (Chou)": "932",
+    "Reign in BC years": "4004 - 3072",
+    "Bible Name": "Adam"
+   }
+  },
+  {
+   "name": "Shen Nong",
+   "cells": {
+    "Reign": "108",
+    "Lifespan (Chou)": "?",
+    "Reign in BC years": "3071 - 2763",
+    "Bible Name": "Seth"
+   }
+  },
+  {
+   "name": "Huang-di",
+   "cells": {
+    "Reign": "100",
+    "Lifespan (Chou)": "?",
+    "Reign in BC years": "2763 - 2863",
+    "Bible Name": "Enosh"
+   }
+  },
+  {
+   "name": "Shau-han",
+   "cells": {
+    "Bible Name": "Cainan"
+   }
+  },
+  {
+   "name": "Chwen-Hyo",
+   "cells": {
+    "Bible Name": "Mahalalel"
+   }
+  },
+  {
+   "name": "[omitted]",
+   "cells": {
+    "Bible Name": "Enoch"
+   }
+  },
+  {
+   "name": "Ti-co",
+   "cells": {
+    "Bible Name": "Jared"
+   }
+  },
+  {
+   "name": "Ci-e",
+   "cells": {
+    "Reign in BC years": "d. 2348",
+    "Bible Name": "Methuselah"
+   }
+  },
+  {
+   "name": "Chi",
+   "cells": {
+    "Reign in BC years": "d. 2355",
+    "Bible Name": "Lamech"
+   }
+  },
+  {
+   "name": "Yau",
+   "cells": {
+    "Reign": "100",
+    "Lifespan (Chou)": "950",
+    "Reign in BC years": "2347 -2252",
+    "Bible Name": "Noah"
+   }
+  },
+  {
+   "name": "Shun",
+   "cells": {
+    "Reign": "50 or 60",
+    "Reign in BC years": "2252 - 2202",
+    "Bible Name": "Cush"
+   }
+  }
+ ]
+}
