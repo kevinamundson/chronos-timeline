@@ -1,5 +1,7 @@
 # Open questions
 
+> **Start with [`OPEN-QUESTIONS-FOR-KEVIN.md`](OPEN-QUESTIONS-FOR-KEVIN.md)** (2026-10-18). It is the consolidated, prioritized list. This file keeps the detailed history; the "OQ n" references there point to the items below.
+
 ## Resolved
 - ~~Fallback for sorting_year~~ and ~~whether CFAH-1 Table 1 dates should be told apart from anchor points~~. **The owner decided on 2026-10-17:**
   1. CFAH anchor point
@@ -45,7 +47,7 @@
 16. **The Exodus year in Raleigh.** Raleigh puts it at "about the beginning of the year of the world 2514", against AM 2513 in Ussher and Jones.
 17. **CFAH Exodus basis.** The Exodus year (1491 BC) is entered as Table 1 (tier 2). CFAH-6 uses 1491 BC as a frame and derives the deaths of Concharis and Merenre II in 1491 BC ±6 months, but I found no AP number for the Exodus itself. Similarly, CFAH-6 §3 (Abraham and Khufu, 1921 BC) takes Jones's date.
 18. **LoC IIIF manifests.** The manifest URLs come from the LoC item metadata (`iiif_manifest_url`). The thumbnails and IIIF Image API `info.json` all returned HTTP 200. A direct fetch of www.loc.gov (item pages and manifests) hit a Cloudflare challenge (403) from the box, so check the manifests in a browser.
-19. **Parents not yet recorded.** Eber, Cush, Terah, Jacob and Amram aren't records yet (David was added 2026-10-17 and is now Solomon's `father`), so `father` is null with a note. Nimrod and Ham have no birth dates (sorting tier "none").
+19. **Parents not yet recorded.** *Update 2026-10-18: Eber, Cush, Terah, Jacob and Amram are now records (batches 1, 2 and 4), and the `father` links are set. Nimrod's death is now AP-48 (2068 BC).* Eber, Cush, Terah, Jacob and Amram aren't records yet (David was added 2026-10-17 and is now Solomon's `father`), so `father` is null with a note. Nimrod and Ham have no birth dates (sorting tier "none").
 20. **Dispersion in Ussher.** Ussher gives no year. §47 narrates it under 1757 AM / 2247 BC and argues the colonies came "some years after Reu was born" (1787 AM). The Ussher entry is null with that note.
 21. **James B. Jordan (secondary chronology, added 2026-10-17).** Jordan's dates come only from the two owner-supplied sources: the biblicalhorizons.com category (83 posts) and the garynorth.com archive (82 issues). Points to decide:
     - His B.C. years are "SBC" figures from BC 5:8 (1993): Creation 3930, Flood 2274, Abram 1922, Exodus 1417, Temple begun 937. They are about 74-75 years later than Ussher/CFAH, so every Jordan row raises a "differs from sort year" flag. Should the site label SBC more prominently?
