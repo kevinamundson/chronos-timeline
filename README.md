@@ -87,6 +87,12 @@ search built at build time. No server, database, CMS or paid service. Vendor JS/
   year with its tier label and note, the row that sets the sort highlighted, "differs from sort year" badges, a *Disagreements & open questions*
   panel (generated only from figures already in the data, plus `open_questions`), OpenBible links (CC BY 4.0 credit), LoC map thumbnails
   linking to the item, IIIF manifest and image, and free source links.
+- **Person timelines** (`/people/<id>/`): a vis-timeline whose window is the person's lifespan. Birth and death years each follow the same
+  four-tier rule (CFAH AP → CFAH-1 Table 1 → Ussher–Jones → Ussher); `translated` stands in for death (Enoch). If the death year is unknown the
+  window ends at the last linked event, and if the birth year is unknown it starts at the first; the page says so. Events listing the person
+  in `people` (or in the person's `events`), plus birth/death markers, are solid. Every other event whose `sorting_year` falls in the window
+  is shown as context: faded, dashed, italic, marked "(context)", in its own row. Items are real links (Tab + Enter), and an ordered list below
+  repeats them. Per-person counts are written to `dist/data/person-timelines.json`.
 - `/browse/`, `/chronologies/` (sorting rule, every chronology, all sources), `/about/` (framework + credits), `/search/`, `404.html`.
 
 **BC years on the timeline.** Data years are historical (negative = BC, no year 0). JavaScript dates need a continuous axis, so `app.js`

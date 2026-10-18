@@ -96,6 +96,61 @@ for (const [path, shot, sel] of [
   if (o.external.length) results.push(`INFO  ${path}: external resource issues: ${o.external.join(' | ')}`);
   await o.ctx.close();
 }
+// Person timelines (own life solid, context faded) — Joseph, Abraham, Noah
+{
+  const { readFileSync } = await import('node:fs');
+  const expect = JSON.parse(readFileSync(join(here, 'dist/data/person-timelines.json'), 'utf8'));
+  for (const [id, shots] of [['joseph', ['person-joseph-desktop.png', 'person-joseph-mobile.png']], ['abraham', []], ['noah', []]]) {
+    for (const [w, h, shot] of [[1280, 900, shots[0]], [390, 844, shots[1]]]) {
+      const o = await open(`/people/${id}/`, { width: w, height: h, shot });
+      const tag = `/people/${id}/ (${w}px)`;
+      check(`${tag}: no console errors`, o.status === 200 && o.errors.length === 0, o.errors.join(' | '));
+      const own = await o.page.locator('#timeline .vis-item.vis-point.own').count();
+      const ctx = await o.page.locator('#timeline .vis-item.vis-point.ctx').count();
+      const ex = expect[id];
+      check(`${tag}: timeline own/context counts match build`, own === ex.own && ctx === ex.context, `own ${own}/${ex.own}, context ${ctx}/${ex.context}`);
+      const listOwn = await o.page.locator('.person-list li.own').count(), listCtx = await o.page.locator('.person-list li.ctx').count();
+      check(`${tag}: fallback list matches`, listOwn === ex.own && listCtx === ex.context, `${listOwn} own, ${listCtx} context`);
+      // opacity + markers differ
+      if (ctx) {
+        const op = await o.page.locator('#timeline .vis-item.ctx .vis-item-content').first().evaluate((el) => getComputedStyle(el).opacity);
+        const opOwn = await o.page.locator('#timeline .vis-item.own .vis-item-content').first().evaluate((el) => getComputedStyle(el).opacity);
+        const mark = await o.page.locator('#timeline .vis-item.ctx .ctx-mark').count();
+        check(`${tag}: context items faded and marked "(context)"`, +op < 1 && +opOwn === 1 && mark === ctx, `opacity ${op} vs ${opOwn}, ${mark} marks`);
+      }
+      // every timeline link resolves locally (event pages or #birth/#death anchors)
+      const hrefs = await o.page.locator('#timeline a.tl-link').evaluateAll((as) => as.map((a) => a.getAttribute('href')));
+      let bad = [];
+      for (const hr of hrefs) {
+        if (hr.startsWith('#')) { if (!(await o.page.locator(hr).count())) bad.push(hr); continue; }
+        const r = await o.page.request.get(BASE + hr); if (r.status() !== 200) bad.push(hr);
+      }
+      check(`${tag}: all ${hrefs.length} timeline links resolve`, hrefs.length > 0 && bad.length === 0, bad.join(', '));
+      if (w > 500) {
+        // keyboard: Tab reaches a timeline link; Enter opens it
+        await o.page.waitForFunction(() => getComputedStyle(document.querySelector('.vis-timeline')).visibility === 'visible', null, { timeout: 5000 }).catch(() => {});
+        const first = o.page.locator('#timeline a.tl-link[href^="/events/"]').first();
+        await first.focus();
+        const focused = await o.page.evaluate(() => document.activeElement?.classList.contains('tl-link'));
+        check(`${tag}: timeline items are keyboard-focusable links`, focused);
+        const target = await first.getAttribute('href');
+        await o.page.keyboard.press('Enter');
+        await o.page.waitForURL((u) => u.pathname === target, { timeout: 5000 }).catch(() => {});
+        check(`${tag}: Enter on a focused timeline item opens ${target}`, new URL(o.page.url()).pathname === target, o.page.url());
+        await o.page.goto(BASE + `/people/${id}/`, { waitUntil: 'networkidle' });
+        if (id === 'joseph') {
+          const ownIds = await o.page.locator('.person-list li.own a').evaluateAll((as) => as.map((a) => a.getAttribute('href')));
+          check('joseph: own-life list includes joseph-made-vizier and jacob-enters-egypt', ownIds.includes('/events/joseph-made-vizier/') && ownIds.includes('/events/jacob-enters-egypt/'), ownIds.join(' '));
+        }
+      } else {
+        const overflow = await o.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+        check(`${tag}: no horizontal page overflow`, !overflow);
+      }
+      if (shot) await o.page.screenshot({ path: join(SHOTS, shot), fullPage: true });
+      await o.ctx.close();
+    }
+  }
+}
 // Search
 {
   const o = await open('/search/?q=Flood', { shot: 'search-flood.png' });

@@ -103,6 +103,20 @@ const sortingEntry = (entries, basis) => {
   if (t === 'ussher-jones' || t === 'ussher') return entries.find((e) => e.source === t && has(e));
   return null;
 };
+// Four-tier rule applied to any date list (birth/death/translated): CFAH AP > CFAH-1 Table 1 > Ussher-Jones > Ussher.
+const TIER_PICKS = [
+  ['cfah-anchor', (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point'],
+  ['cfah-table1', (e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline'],
+  ['ussher-jones', (e) => e.source === 'ussher-jones'],
+  ['ussher', (e) => e.source === 'ussher'],
+];
+const tierYear = (entries) => {
+  for (const [tier, pick] of TIER_PICKS) {
+    const e = (entries || []).find((x) => pick(x) && x.year_bc_ad != null);
+    if (e) return { y: e.year_bc_ad, yEnd: e.year_bc_ad_end ?? null, tier };
+  }
+  return null;
+};
 
 function chronTable(entries, { sortYear, basis, caption }) {
   const sorted = [...entries].map((e, i) => ({ e, i })).sort((a, b) => rowRank(a.e) - rowRank(b.e) || a.i - b.i).map((x) => x.e);
@@ -335,6 +349,62 @@ ${sourcesSection(e)}</article>`;
   out(`events/${e.id}/index.html`, page({ title: e.title, desc: e.summary, body, path: urlOf(e), type: 'Event' }));
 }
 
+// Person timeline: window = lifespan (four-tier birth/death), own-life events solid, other events in the window as context.
+function personTimeline(p) {
+  const d = p.dates || {};
+  const birth = tierYear(d.birth);
+  const end = tierYear(d.death) || tierYear(d.translated);
+  const endKind = tierYear(d.death) ? 'death' : (end ? 'translated' : null);
+  const ownIds = new Set([...(p.events || []), ...eventsWith(p.id)]);
+  const own = events.filter((e) => ownIds.has(e.id) && e.sorting_year != null);
+  const ownUndated = events.filter((e) => ownIds.has(e.id) && e.sorting_year == null);
+  const ys = own.map((e) => e.sorting_year);
+  const notes = [];
+  let start = birth?.y ?? null, stop = end?.y ?? null;
+  if (start == null && ys.length) { start = Math.min(...ys); notes.push('Birth year unknown in tiers 1–4: the window starts at the first linked event.'); }
+  if (stop == null && ys.length) { stop = Math.max(...ys); notes.push(`Death year unknown in tiers 1–4: the window ends at the last linked event (${own.find((e) => e.sorting_year === stop).title}, ${yearLabel(stop)}).`); }
+  if (start == null && stop == null) return { none: true, notes: ['No birth or death year in tiers 1–4 and no dated linked events, so there is no timeline yet.'], ownUndated };
+  if (start == null) { start = stop; notes.push('Birth year unknown and no earlier linked event.'); }
+  if (stop == null) { stop = start; notes.push('Death year unknown and no linked events after birth: the window shows the birth year only.'); }
+  if (stop < start) [start, stop] = [stop, start];
+  const items = [];
+  const isBirthEvt = (e) => birth && e.sorting_year === birth.y && /birth/.test(e.id);
+  const isEndEvt = (e) => end && e.sorting_year === end.y && (/death|translated/.test(e.id));
+  if (birth && !own.some(isBirthEvt)) items.push({ id: 'birth', group: 'own', own: true, title: `Birth of ${p.title}`, y: birth.y, label: yearLabel(birth.y, birth.yEnd), tier: (TIERS[birth.tier] || TIERS.none).cls, url: '#birth', order: -1 });
+  if (end && !own.some(isEndEvt)) items.push({ id: endKind, group: 'own', own: true, title: `${endKind === 'death' ? 'Death' : 'Translation'} of ${p.title}`, y: end.y, label: yearLabel(end.y, end.yEnd), tier: (TIERS[end.tier] || TIERS.none).cls, url: `#${endKind}`, order: 9 });
+  for (const e of own) items.push({ id: e.id, group: 'own', own: true, title: e.title, y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
+  const ctx = events.filter((e) => !ownIds.has(e.id) && e.sorting_year != null && e.sorting_year >= start && e.sorting_year <= stop);
+  for (const e of ctx) items.push({ id: e.id, group: 'context', own: false, title: e.title, y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
+  items.sort((a, b) => a.y - b.y || a.order - b.order || a.title.localeCompare(b.title));
+  return { start, stop, birth, end, endKind, items, notes, ownUndated, ownCount: items.filter((i) => i.own).length, ctxCount: ctx.length };
+}
+const personTimelines = {};
+
+function personTimelineSection(p) {
+  const t = personTimelines[p.id] = personTimeline(p);
+  const notes = t.notes.map((n) => `<p class="small muted">${esc(n)}</p>`).join('');
+  const undated = t.ownUndated.length ? `<p class="small muted">Linked events with no sort year (not shown): ${t.ownUndated.map((e) => link(e.id)).join(', ')}</p>` : '';
+  if (t.none) return `<section class="card" aria-labelledby="ptl-h"><h2 id="ptl-h">Timeline</h2>${notes}${undated}</section>`;
+  const win = `${yearLabel(t.start)} – ${yearLabel(t.stop)}`;
+  const li = (i) => `<li class="${i.own ? 'own' : 'ctx'}"><span class="yr">${esc(i.label)}</span><a href="${esc(i.url)}">${esc(i.title)}</a>${i.own ? ` <span class="tag tag-own">${esc(p.title)}’s life</span>` : ' <span class="tag tag-ctx">context</span>'}</li>`;
+  return `<section class="card" aria-labelledby="ptl-h">
+  <div class="section-head"><h2 id="ptl-h">Timeline of ${esc(p.title)}’s lifetime</h2>
+    <div class="toolbar" role="group" aria-label="Timeline controls">
+      <button type="button" data-tl="in" aria-label="Zoom in">+</button>
+      <button type="button" data-tl="out" aria-label="Zoom out">−</button>
+      <button type="button" data-tl="fit">Show lifetime</button>
+    </div></div>
+  <p class="small muted">Window: <strong>${esc(win)}</strong> (birth to ${t.endKind || 'last linked event'}, using the four-tier sort rule). Select or Tab to an item and press Enter to open it.</p>
+  ${notes}
+  <div id="timeline" class="timeline person-timeline" aria-describedby="ptl-list-h"></div>
+  <ul class="legend small" aria-label="Timeline legend"><li><span class="lg-own" aria-hidden="true"></span>${esc(p.title)}’s life (${t.ownCount}): solid</li><li><span class="lg-ctx" aria-hidden="true"></span>Other events in their lifetime (${t.ctxCount}): faded, dashed, marked “context”</li></ul>
+  <h3 id="ptl-list-h">Events in order</h3>
+  <ol class="chrono-list person-list">${t.items.map(li).join('')}</ol>
+  ${undated}
+  ${jsonScript('tl-data', { mode: 'person', person: p.title, start: t.start, stop: t.stop, items: t.items })}
+</section>`;
+}
+
 // People
 for (const p of people) {
   const d = p.dates || {};
@@ -344,19 +414,23 @@ ${sf.age_at_named_son != null ? `<div><dt>Age at son's birth</dt><dd>${esc(sf.ag
 ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years)} years</dd></div>` : ''}
 </dl>${scriptureList(sf.refs)}</section>` : '';
   const fam = `<section class="card"><h2>Family</h2><dl class="facts"><div><dt>Father</dt><dd>${p.father ? link(p.father) : '<span class="muted">Not recorded</span>'}</dd></div>${p.children?.length ? `<div><dt>Children</dt><dd>${p.children.map(link).join(', ')}</dd></div>` : ''}</dl></section>`;
-  const tables = ['birth', 'death', 'translated'].filter((k) => d[k]?.length).map((k) => `<section class="card"><h2>${k[0].toUpperCase() + k.slice(1)}</h2>${chronTable(d[k], { sortYear: k === 'birth' ? p.sorting_year : null, basis: k === 'birth' ? p.sorting_basis : null, caption: `${k} of ${p.title}, CFAH first` })}${flagsSection({ sorting_year: null }, d[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"')}</section>`).join('\n');
+  const tables = ['birth', 'death', 'translated'].filter((k) => d[k]?.length).map((k) => `<section class="card" id="${k}"><h2>${k[0].toUpperCase() + k.slice(1)}</h2>${chronTable(d[k], { sortYear: k === 'birth' ? p.sorting_year : null, basis: k === 'birth' ? p.sorting_basis : null, caption: `${k} of ${p.title}, CFAH first` })}${flagsSection({ sorting_year: null }, d[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"')}</section>`).join('\n');
   const evs = [...new Set([...(p.events || []), ...eventsWith(p.id)])];
   const body = `${crumbs(p)}<article>${head(p)}${sortBadge(p)}
 ${p.description ? `<section class="card"><h2>Description</h2><p>${esc(p.description)}</p></section>` : ''}
 ${p.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(p.scripture_refs)}</section>` : ''}
 <div class="grid2">${fam}${facts}</div>
+${personTimelineSection(p)}
 ${tables}
 ${(p.open_questions || []).length ? flagsSection({ open_questions: p.open_questions }, null) : ''}
 ${linkList(evs, 'Events')}
 ${linkList(p.related, 'Related')}
 ${chartSection(p.id)}
 ${sourcesSection(p)}</article>`;
-  out(`people/${p.id}/index.html`, page({ title: p.title, desc: p.summary, body, path: urlOf(p), type: 'Person' }));
+  const hasTl = !personTimelines[p.id].none;
+  out(`people/${p.id}/index.html`, page({ title: p.title, desc: p.summary, body, path: urlOf(p), type: 'Person',
+    extraHead: hasTl ? '<link rel="stylesheet" href="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.css">' : '',
+    scripts: hasTl ? '<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script><script src="/assets/app.js" defer></script>' : '' }));
 }
 
 // Locations
@@ -466,5 +540,7 @@ out('search/index.html', page({ title: 'Search', path: '/search/', pagefind: fal
 out('404.html', page({ title: 'Not found', path: '', pagefind: false, body: '<h1>Page not found</h1><p><a href="/">Back to the timeline</a></p>' }));
 writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/vendor/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
 
+mkdirSync(join(DIST, 'data'), { recursive: true });
+writeFileSync(join(DIST, 'data', 'person-timelines.json'), JSON.stringify(Object.fromEntries(Object.entries(personTimelines).map(([k, t]) => [k, t.none ? { none: true, notes: t.notes } : { window: [t.start, t.stop], birthTier: t.birth?.tier || null, endTier: t.end?.tier || null, endKind: t.endKind, own: t.ownCount, context: t.ctxCount, notes: t.notes, ownUndated: t.ownUndated.map((e) => e.id) }])), null, 1));
 const n = events.length + people.length + locations.length + maps.length;
 console.log(`Built ${n} record pages (${events.length} events, ${people.length} people, ${locations.length} places, ${maps.length} maps) + home, browse, chronologies, gallery (${charts.length} CFAH charts), about, search, 404 → ${DIST}`);

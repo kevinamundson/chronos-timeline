@@ -1,4 +1,4 @@
-/* Home timeline + maps. Data comes from inline JSON emitted by build.mjs. */
+/* Home timeline, person timelines and maps. Data comes from inline JSON emitted by build.mjs. */
 (function () {
   'use strict';
   function readJSON(id) { var el = document.getElementById(id); return el ? JSON.parse(el.textContent) : null; }
@@ -10,23 +10,39 @@
 
   // ---------- Timeline ----------
   var tlEl = document.getElementById('timeline');
-  var items = readJSON('tl-data');
-  if (tlEl && items && window.vis) {
+  var raw = readJSON('tl-data');
+  if (tlEl && raw && window.vis) {
     var moment = vis.moment;
+    var person = !Array.isArray(raw) && raw.mode === 'person';
+    var items = person ? raw.items : raw;
     var data = new vis.DataSet(items.map(function (it) {
+      var cls = 'tier-' + it.tier + (person ? (it.own ? ' own' : ' ctx') : '');
+      var label = it.title + ' — ' + it.label + (person && !it.own ? ' (context)' : '');
       return { id: it.group + ':' + it.id, group: it.group, content: it.title, start: toDate(it.y), type: 'point',
-        title: it.title + ' — ' + it.label, className: 'tier-' + it.tier, url: it.url, ord: it.y * 100 + (it.order || 0) };
+        title: label, aria: label, className: cls, url: it.url, own: !!it.own, ord: it.y * 100 + (it.order || 0) };
     }));
-    var groups = new vis.DataSet([{ id: 'events', content: 'Events' }, { id: 'people', content: 'People (birth)' }]);
+    var groups = person
+      ? new vis.DataSet([{ id: 'own', content: raw.person + '’s life', order: 1 }, { id: 'context', content: 'Context', order: 2, className: 'grp-ctx' }])
+      : new vis.DataSet([{ id: 'events', content: 'Events' }, { id: 'people', content: 'People (birth)' }]);
     var ys = items.map(function (i) { return i.y; });
-    var min = Math.min.apply(null, ys), max = Math.max.apply(null, ys);
-    var pad = Math.max(50, Math.round((max - min) * 0.04));
+    var min = person ? raw.start : Math.min.apply(null, ys), max = person ? raw.stop : Math.max.apply(null, ys);
+    var pad = person ? Math.max(3, Math.round((max - min) * 0.05)) : Math.max(50, Math.round((max - min) * 0.04));
+    var padR = person ? pad * 4 : pad * 7;
     var YEAR = 365.25 * 864e5;
     var timeline = new vis.Timeline(tlEl, data, groups, {
       moment: function (d) { return moment(d).utc(); },
-      start: toDate(min - pad), end: toDate(max + pad * 7),
-      min: toDate(min - 500), max: toDate(Math.min(max + 2000, 2000)),
-      zoomMin: 10 * YEAR, zoomMax: 5000 * YEAR,
+      start: toDate(min - pad), end: toDate(max + padR),
+      min: toDate(min - (person ? 200 : 500)), max: toDate(Math.min(max + (person ? 400 : 2000), 2000)),
+      zoomMin: (person ? 2 : 10) * YEAR, zoomMax: 5000 * YEAR,
+      groupOrder: 'order',
+      // Each item is a real link: focusable, Enter opens it, screen readers get the full label.
+      template: function (item) {
+        var a = document.createElement('a');
+        a.href = item.url; a.className = 'tl-link'; a.textContent = item.content;
+        a.setAttribute('aria-label', item.aria);
+        if (person && !item.own) { var s = document.createElement('span'); s.className = 'ctx-mark'; s.textContent = ' (context)'; a.appendChild(s); }
+        return a;
+      },
       orientation: { axis: 'both', item: 'top' }, verticalScroll: true, stack: true, showCurrentTime: false, selectable: true,
       maxHeight: window.matchMedia('(max-width: 640px)').matches ? '520px' : '640px', minHeight: '320px',
       margin: { item: { horizontal: 4, vertical: 6 } },
@@ -38,10 +54,15 @@
       order: function (a, b) { return a.ord - b.ord; }
     });
     timeline.on('select', function (p) { if (p.items.length) { var it = data.get(p.items[0]); if (it && it.url) location.href = it.url; } });
+    // Keyboard: vis-timeline swallows Enter on its items, so follow the focused link ourselves.
+    tlEl.addEventListener('keydown', function (e) {
+      var a = e.target.closest && e.target.closest('a.tl-link');
+      if (a && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); e.stopPropagation(); location.href = a.getAttribute('href'); }
+    }, true);
     document.querySelectorAll('[data-tl]').forEach(function (b) {
       b.addEventListener('click', function () {
         var a = b.getAttribute('data-tl');
-        if (a === 'in') timeline.zoomIn(0.5); else if (a === 'out') timeline.zoomOut(0.5); else timeline.setWindow(toDate(min - pad), toDate(max + pad * 7));
+        if (a === 'in') timeline.zoomIn(0.5); else if (a === 'out') timeline.zoomOut(0.5); else timeline.setWindow(toDate(min - pad), toDate(max + padR));
       });
     });
     tlEl.setAttribute('data-ready', String(items.length));
