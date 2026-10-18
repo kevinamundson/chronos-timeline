@@ -47,6 +47,18 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=14",
         "source_text_id": "generations-europe",
         "note": "Unit 1 timeline."
+      },
+      {
+        "source": "morecraft",
+        "date": "November 13, 354, A.D.",
+        "year_am": null,
+        "year_bc_ad": 354,
+        "year_bc_ad_end": null,
+        "precision": "day",
+        "citation": "Morecraft, A Christian Survey of World History, p. 122 (PDF p. 130)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": null
       }
     ],
     "death": [
@@ -70,6 +82,18 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=57",
         "source_text_id": "generations-africa",
         "note": null
+      },
+      {
+        "source": "morecraft",
+        "date": "August 28, A.D. 430",
+        "year_am": null,
+        "year_bc_ad": 430,
+        "year_bc_ad_end": null,
+        "precision": "day",
+        "citation": "Morecraft, A Christian Survey of World History, p. 123 (PDF p. 131)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "Repeated on PDF p. 170."
       }
     ]
   },
@@ -86,7 +110,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-europe"
+    "generations-europe",
+    "morecraft-christian-survey"
   ],
   "related": []
 }

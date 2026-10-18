@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "council-of-toledo-589",
+  "type": "event",
+  "title": "Council of Toledo (589)",
+  "summary": "Council at Toledo in Visigothic Spain.",
+  "description": "Added from the Morecraft import (Morecraft, A Christian Survey of World History). No CFAH, Ussher–Jones, Ussher or Generations date exists, so the sort is PROVISIONAL from Morecraft (secondary display) until a tier 1–4 date is added.",
+  "sorting_year": 589,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "morecraft",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones, Ussher or Generations date exists, so the sort uses Morecraft (Morecraft, A Christian Survey of World History, p. 94 (PDF p. 102)): A.D. 589. Pending owner decision (open question F1)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+    },
+    {
+      "source": "morecraft",
+      "date": "A.D. 589",
+      "year_am": null,
+      "year_bc_ad": 589,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 94 (PDF p. 102)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "\"And the Son\" (filioque) added to the Nicene Creed."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "morecraft-christian-survey"
+  ],
+  "related": [],
+  "free_source_links": []
+}

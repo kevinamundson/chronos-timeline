@@ -57,6 +57,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=43",
       "source_text_id": "generations-world",
       "note": null
+    },
+    {
+      "source": "morecraft",
+      "date": "A.D. 303 … A.D. 311",
+      "year_am": null,
+      "year_bc_ad": 303,
+      "year_bc_ad_end": 311,
+      "precision": "year-range",
+      "citation": "Morecraft, A Christian Survey of World History, p. 105 (PDF p. 113)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "From Diocletian to the death of Galerius. PDF p. 157 prints \"Diocletian, (A.D. 245-313)\"."
     }
   ],
   "people": [],
@@ -66,7 +78,8 @@
   "sources": [
     "generations-africa",
     "generations-europe",
-    "generations-world"
+    "generations-world",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

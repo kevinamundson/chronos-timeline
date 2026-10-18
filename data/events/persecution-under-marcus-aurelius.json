@@ -46,6 +46,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=23",
       "source_text_id": "generations-world",
       "note": null
+    },
+    {
+      "source": "morecraft",
+      "date": "A.D. 162",
+      "year_am": null,
+      "year_bc_ad": 162,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 103 (PDF p. 111)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "The fourth wave of persecution, in which Polycarp was martyred."
     }
   ],
   "people": [],
@@ -54,7 +66,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-europe",
-    "generations-world"
+    "generations-world",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

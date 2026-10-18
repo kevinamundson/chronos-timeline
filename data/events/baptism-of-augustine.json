@@ -33,6 +33,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=86",
       "source_text_id": "generations-africa",
       "note": "Baptized by Ambrose."
+    },
+    {
+      "source": "morecraft",
+      "date": "A.D. 387",
+      "year_am": null,
+      "year_bc_ad": 387,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 123 (PDF p. 131)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": null
     }
   ],
   "people": [
@@ -42,7 +54,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

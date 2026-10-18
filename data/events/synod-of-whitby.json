@@ -44,6 +44,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=44",
       "source_text_id": "generations-world",
       "note": "Most Celtic churches had followed by AD 777."
+    },
+    {
+      "source": "morecraft",
+      "date": "the middle of the Seventh Century",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "Morecraft, A Christian Survey of World History, p. 166 (PDF p. 174)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "The Celtic-British church submits to Rome at Whitby. No year is printed, only the century."
     }
   ],
   "people": [],
@@ -52,7 +64,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-europe",
-    "generations-world"
+    "generations-world",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

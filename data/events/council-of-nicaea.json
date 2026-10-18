@@ -55,6 +55,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=29",
       "source_text_id": "generations-world",
       "note": "Also p. 48."
+    },
+    {
+      "source": "morecraft",
+      "date": "A.D. 325",
+      "year_am": null,
+      "year_bc_ad": 325,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Morecraft, A Christian Survey of World History, p. 67 (PDF p. 75)",
+      "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+      "source_text_id": "morecraft-christian-survey",
+      "note": "The first ecumenical council. Repeated on PDF pp. 89 and 93."
     }
   ],
   "people": [
@@ -66,7 +78,8 @@
   "sources": [
     "generations-africa",
     "generations-europe",
-    "generations-world"
+    "generations-world",
+    "morecraft-christian-survey"
   ],
   "related": [],
   "free_source_links": [

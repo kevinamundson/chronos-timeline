@@ -36,6 +36,18 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=72",
         "source_text_id": "generations-africa",
         "note": null
+      },
+      {
+        "source": "morecraft",
+        "date": "A.D. 299-373",
+        "year_am": null,
+        "year_bc_ad": 299,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, p. 85 (PDF p. 93)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "The great opponent of Arianism. PDF p. 62 prints \"(A.D. 373)\" alone."
       }
     ],
     "death": [
@@ -59,6 +71,18 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=79",
         "source_text_id": "generations-africa",
         "note": "Returned in 364 and served until his death."
+      },
+      {
+        "source": "morecraft",
+        "date": "A.D. 299-373",
+        "year_am": null,
+        "year_bc_ad": 373,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Morecraft, A Christian Survey of World History, p. 85 (PDF p. 93)",
+        "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
+        "source_text_id": "morecraft-christian-survey",
+        "note": "The great opponent of Arianism. PDF p. 62 prints \"(A.D. 373)\" alone."
       }
     ]
   },
@@ -74,7 +98,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "morecraft-christian-survey"
   ],
   "related": []
 }

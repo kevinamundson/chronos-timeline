@@ -48,7 +48,7 @@ for (const [id, p] of Object.entries(NEW_PEOPLE)) {
     dates: { birth: [CFAH_NULL()], death: [CFAH_NULL()] }, events: [], scripture_refs: [], sources: [SRC], related: [], free_source_links: [] } };
 }
 // links to records created by a later part are added once that part is imported
-for (const r of Object.values(recs)) if (r.doc.description?.startsWith(MARK)) { const src = NEW_EVENTS[r.doc.id] || NEW_PEOPLE[r.doc.id]; for (const k of ['people', 'related']) { const nx = uniq([...(r.doc[k] || []), ...(src?.[k] || []).filter((x) => recs[x])]); if (JSON.stringify(nx) !== JSON.stringify(r.doc[k])) { r.doc[k] = nx; r.dirty = true; } } }
+for (const r of Object.values(recs)) if (r.doc.description?.startsWith(MARK)) { const src = NEW_EVENTS[r.doc.id] || NEW_PEOPLE[r.doc.id]; for (const k of r.doc.type === 'event' ? ['people', 'related'] : ['related']) { const nx = uniq([...(r.doc[k] || []), ...(src?.[k] || []).filter((x) => recs[x])]); if (JSON.stringify(nx) !== JSON.stringify(r.doc[k])) { r.doc[k] = nx; r.dirty = true; } } }
 for (const [pid, p] of Object.entries(NEW_PEOPLE)) if (recs[pid]) for (const eid of p.events || []) { const d = recs[eid].doc; if (!d.people.includes(pid)) { d.people.push(pid); touch(eid); } }
 
 // ---- reference years (before adding morecraft entries): tier 1–4, else provisional Generations
