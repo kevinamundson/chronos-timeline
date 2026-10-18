@@ -78,7 +78,7 @@ for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
       check(`${tag}: legend swatches visible`, swOk(r.own, false) && (ex.context === 0 || swOk(r.ctx, true)), JSON.stringify({ own: r.own, ctx: r.ctx }));
       if (SHOTS && id === 'joseph' && bname === 'chromium' && (w === 1440 || w === 390)) {
         const f = join(here, 'screenshots', w > 500 ? 'person-joseph-desktop.png' : 'person-joseph-mobile.png');
-        mkdirSync(dirname(f), { recursive: true }); await page.screenshot({ path: f, fullPage: true }); results.push(`SHOT  ${f}`);
+        mkdirSync(dirname(f), { recursive: true }); await page.evaluate(() => window.scrollTo(0, 0)); await page.waitForTimeout(200); await page.screenshot({ path: f, fullPage: true }); results.push(`SHOT  ${f}`);
       }
       await ctx.close();
     }
