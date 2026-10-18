@@ -1,0 +1,253 @@
+{
+ "id": "osf-8-t7-d18-data",
+ "src": "cfah-8-osf",
+ "table": "Table 7",
+ "title": "Dynasty 18 Chronicler Data",
+ "dynasty": "Egypt Dynasty 18",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  88,
+  89,
+  90
+ ],
+ "rows": [
+  {
+   "name": "Amoses, Tethmesis (Ahmose I)",
+   "cells": {
+    "Africanus": "x",
+    "Eusebius": "25",
+    "Armenian": "25",
+    "Josephus": "25 y 4 m",
+    "Theophilus": "25 y 4 m",
+    "Sothis": "26",
+    "Monuments": "22"
+   }
+  },
+  {
+   "name": "omitted [Thutmose I]",
+   "cells": {
+    "Africanus": "omitted",
+    "Eusebius": "omitted",
+    "Armenian": "omitted",
+    "Josephus": "omitted",
+    "Theophilus": "omitted",
+    "Sothis": "omitted",
+    "Monuments": "9"
+   }
+  },
+  {
+   "name": "Thutmose II * (Khebron, Chebros) [out of order]",
+   "cells": {
+    "Africanus": "13",
+    "Eusebius": "13",
+    "Armenian": "13",
+    "Josephus": "13",
+    "Theophilus": "13",
+    "Sothis": "13",
+    "Monuments": "?"
+   }
+  },
+  {
+   "name": "Amenophis * (Amenhotep I out of order)",
+   "cells": {
+    "Africanus": "24 / 21",
+    "Eusebius": "21",
+    "Armenian": "21",
+    "Josephus": "20 y 7 m",
+    "Theophilus": "20 y 7 m",
+    "Sothis": "15",
+    "Monuments": "21"
+   }
+  },
+  {
+   "name": "Amensis * (Amenhotep II out of order?)",
+   "cells": {
+    "Africanus": "22",
+    "Eusebius": "omitted",
+    "Armenian": "omitted",
+    "Josephus": "21 y 9 m",
+    "Theophilus": "21 y 1 m",
+    "Sothis": "11",
+    "Monuments": "22 y 6 m 10 d (Baker 2008, 472)"
+   }
+  },
+  {
+   "name": "Misaphris, Miphres (Hatshepsut / Neferure ?)",
+   "cells": {
+    "Africanus": "13",
+    "Eusebius": "12",
+    "Armenian": "12",
+    "Josephus": "12 y 9 m",
+    "Theophilus": "12 y 9 m",
+    "Sothis": "23",
+    "Monuments": "22 y 6 m"
+   }
+  },
+  {
+   "name": "Misphragmouthosis, Mephramuthosis (Thutmose III)",
+   "cells": {
+    "Africanus": "26",
+    "Eusebius": "26",
+    "Armenian": "26",
+    "Josephus": "25 y 10 m",
+    "Theophilus": "25 y 10 m",
+    "Sothis": "16",
+    "Monuments": "53 y 10 m 26 d (Breasted 1906, VII, §592)"
+   }
+  },
+  {
+   "name": "Tuthmosis, Thmousis (Thutmose IV)",
+   "cells": {
+    "Africanus": "9",
+    "Eusebius": "9",
+    "Armenian": "9",
+    "Josephus": "9 y 8 m",
+    "Theophilus": "9 y 8 m",
+    "Sothis": "39",
+    "Monuments": "8"
+   }
+  },
+  {
+   "name": "Amenophis (Amenhotep III)",
+   "cells": {
+    "Africanus": "31",
+    "Eusebius": "31",
+    "Armenian": "31",
+    "Josephus": "30 y 10 m",
+    "Theophilus": "30 y 10 m",
+    "Sothis": "34",
+    "Monuments": "38"
+   }
+  },
+  {
+   "name": "Orus (Amenhotep IV)",
+   "cells": {
+    "Africanus": "37",
+    "Eusebius": "36 / 38",
+    "Armenian": "28",
+    "Josephus": "36 y 5 m",
+    "Theophilus": "36 y 5 m",
+    "Sothis": "48",
+    "Monuments": "17"
+   }
+  },
+  {
+   "name": "Acherres Called “his daughter Acencheres” by Theophilus (Nefertiti?)",
+   "cells": {
+    "Africanus": "32",
+    "Eusebius": "12",
+    "Armenian": "16",
+    "Josephus": "12 y 1 m",
+    "Theophilus": "12 y 1 m",
+    "Sothis": "25",
+    "Monuments": "none"
+   }
+  },
+  {
+   "name": "Rathos (Tutankhamun)",
+   "cells": {
+    "Africanus": "6",
+    "Eusebius": "39 / 9",
+    "Josephus": "9 y",
+    "Theophilus": "9 y",
+    "Sothis": "29"
+   }
+  },
+  {
+   "name": "Omitted (Ay)",
+   "cells": {}
+  },
+  {
+   "name": "Chebres, Acencherres (Horemheb)",
+   "cells": {
+    "Africanus": "12",
+    "Eusebius": "16",
+    "Armenian": "8",
+    "Josephus": "12 y 5 m",
+    "Theophilus": "12 y 5 m",
+    "Sothis": "26",
+    "Monuments": "27"
+   }
+  },
+  {
+   "name": "Acencherres II (Shoshenq I ?)",
+   "cells": {
+    "Africanus": "12",
+    "Eusebius": "8",
+    "Josephus": "12 y 3 m",
+    "Theophilus": "12 y 3 m"
+   }
+  },
+  {
+   "name": "Cherres (Osorkon I ?)",
+   "cells": {
+    "Eusebius": "15",
+    "Armenian": "15",
+    "Sothis": "8/30"
+   }
+  },
+  {
+   "name": "Harmais (Harsiese?)",
+   "cells": {
+    "Africanus": "5",
+    "Eusebius": "5",
+    "Armenian": "5",
+    "Josephus": "4 y 1 m",
+    "Theophilus": "4 y 1 m",
+    "Sothis": "9"
+   }
+  },
+  {
+   "name": "Rameses I Misplaced from D19",
+   "cells": {
+    "Africanus": "1",
+    "Josephus": "1 y 4 m",
+    "Theophilus": "1 y 4 m"
+   }
+  },
+  {
+   "name": "Harmesses Miamun / Aegypticus (Piankhi / Piye ?)",
+   "cells": {
+    "Eusebius": "68",
+    "Armenian": "68",
+    "Josephus": "66 y 2 m",
+    "Theophilus": "66 y 2 m",
+    "Sothis": "68",
+    "Monuments": "> 31 y"
+   }
+  },
+  {
+   "name": "Amenophis (Taharqa?)",
+   "cells": {
+    "Africanus": "19",
+    "Eusebius": "40",
+    "Armenian": "40",
+    "Josephus": "19 y 6 m",
+    "Theophilus": "16 y 6 mo",
+    "Sothis": "8"
+   }
+  },
+  {
+   "name": "Thuoris I",
+   "cells": {
+    "Sothis": "17"
+   }
+  },
+  {
+   "name": "Sethos (Seti of Dynasty 19)",
+   "cells": {
+    "Josephus": "59",
+    "Theophilus": "10"
+   }
+  },
+  {
+   "name": "Stated Total",
+   "cells": {
+    "Africanus": "263",
+    "Eusebius": "348",
+    "Armenian": "348"
+   }
+  }
+ ]
+}

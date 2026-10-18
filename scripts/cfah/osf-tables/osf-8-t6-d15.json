@@ -1,0 +1,110 @@
+{
+ "id": "osf-8-t6-d15",
+ "src": "cfah-8-osf",
+ "table": "Table 6",
+ "title": "Integrated Dates for Dynasty 15",
+ "dynasty": "Egypt Dynasty 15 (Hyksos)",
+ "kind": "dated",
+ "region": "Egypt",
+ "pages": [
+  87
+ ],
+ "rows": [
+  {
+   "name": "Salitis",
+   "cells": {
+    "Start Sole-rex": "1491",
+    "Death or Deposition": "1472"
+   }
+  },
+  {
+   "name": "Bnon",
+   "cells": {
+    "Start Sole-rex": "1472",
+    "Death or Deposition": "1428"
+   }
+  },
+  {
+   "name": "Apachnan",
+   "cells": {
+    "Start Sole-rex": "1428",
+    "Death or Deposition": "1392"
+   }
+  },
+  {
+   "name": "Apophis I",
+   "cells": {
+    "Start Sole-rex": "1392",
+    "Death or Deposition": "1331"
+   }
+  },
+  {
+   "name": "Iannas / Khyan",
+   "cells": {
+    "Start Sole-rex": "1331",
+    "Death or Deposition": "1281"
+   }
+  },
+  {
+   "name": "Certos",
+   "cells": {
+    "Start Co-Rex": "1281",
+    "Death or Deposition": "1252"
+   }
+  },
+  {
+   "name": "Assis / Aseth",
+   "cells": {
+    "Start Co-Rex": "1281",
+    "Start Sole-rex": "1252",
+    "Death or Deposition": "1232"
+   }
+  },
+  {
+   "name": "Dynasty Total",
+   "cells": {
+    "Start Sole-rex": "1491/1490",
+    "Death or Deposition": "1232"
+   }
+  },
+  {
+   "name": "Start of Dynasty 17-A Hyksos Kings in Avaris",
+   "cells": {}
+  },
+  {
+   "name": "Apophis II (start of 15-B)",
+   "cells": {
+    "Start Sole-rex": "?",
+    "Death or Deposition": "?"
+   }
+  },
+  {
+   "name": "Unlisted Kings",
+   "cells": {
+    "Start Sole-rex": "1232",
+    "Death or Deposition": "1114"
+   }
+  },
+  {
+   "name": "Apophis III",
+   "cells": {
+    "Start Sole-rex": "1114",
+    "Death or Deposition": "1074"
+   }
+  },
+  {
+   "name": "Khamudi",
+   "cells": {
+    "Start Sole-rex": "1074",
+    "Death or Deposition": "1063"
+   }
+  },
+  {
+   "name": "Dynasty Total",
+   "cells": {
+    "Start Sole-rex": "1232",
+    "Death or Deposition": "1063"
+   }
+  }
+ ]
+}

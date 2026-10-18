@@ -1,0 +1,151 @@
+{
+ "id": "osf-8-t14-d18",
+ "src": "cfah-8-osf",
+ "table": "Table 14",
+ "title": "CFAH-Corrected Reigns for Dynasty 18",
+ "dynasty": "Egypt Dynasty 18",
+ "kind": "dated",
+ "region": "Egypt",
+ "yearCols": [
+  "Year BC"
+ ],
+ "pages": [
+  101,
+  102
+ ],
+ "rows": [
+  {
+   "name": "Ahmose I",
+   "cells": {
+    "Year BC": "1081-1056",
+    "Yrs": "25"
+   }
+  },
+  {
+   "name": "Amenhotep I",
+   "cells": {
+    "Year BC": "1056-1035",
+    "Yrs": "21"
+   }
+  },
+  {
+   "name": "Thutmose I",
+   "cells": {
+    "Year BC": "1035-1015",
+    "Yrs": "20"
+   }
+  },
+  {
+   "name": "Thutmose II",
+   "cells": {
+    "Year BC": "1015-1002",
+    "Yrs": "13"
+   }
+  },
+  {
+   "name": "Hatshepsut / Neferure",
+   "cells": {
+    "Year BC": "1002-980",
+    "Yrs": "13, 22, 35"
+   }
+  },
+  {
+   "name": "Thutmose III",
+   "cells": {
+    "Year BC": "980-954",
+    "Yrs": "26"
+   }
+  },
+  {
+   "name": "TIII + AHII",
+   "cells": {
+    "Year BC": "954-948",
+    "Yrs": "5-6"
+   }
+  },
+  {
+   "name": "Amenhotep II",
+   "cells": {
+    "Year BC": "948-928",
+    "Yrs": "20"
+   }
+  },
+  {
+   "name": "Thutmose IV + AHIII",
+   "cells": {
+    "Year BC": "929-920",
+    "Yrs": "9 y 8 m"
+   }
+  },
+  {
+   "name": "Amenhotep III",
+   "cells": {
+    "Year BC": "920-889",
+    "Yrs": "30 y 10 m"
+   }
+  },
+  {
+   "name": "Akhenaten",
+   "cells": {
+    "Year BC": "889 - 871",
+    "Yrs": "17, 28, 38, 48 ?"
+   }
+  },
+  {
+   "name": "Nefertiti / Smenkare",
+   "cells": {
+    "Year BC": "871 - 859",
+    "Yrs": "12"
+   }
+  },
+  {
+   "name": "Tutankhamun",
+   "cells": {
+    "Year BC": "860 - 851",
+    "Yrs": "9, 6"
+   }
+  },
+  {
+   "name": "Ay",
+   "cells": {
+    "Year BC": "851 - 841",
+    "Yrs": "10"
+   }
+  },
+  {
+   "name": "Horemheb",
+   "cells": {
+    "Year BC": "841 - 814",
+    "Yrs": "27"
+   }
+  },
+  {
+   "name": "Shoshenq I (Achcherres II)",
+   "cells": {
+    "Year BC": "814 - 793",
+    "Yrs": "21"
+   }
+  },
+  {
+   "name": "Osorkon I (Cherres II)",
+   "cells": {
+    "Year BC": "793 - 778, 758",
+    "Yrs": "15, 35"
+   }
+  },
+  {
+   "name": "Piankhi (Harmesses Miamun)",
+   "cells": {
+    "Year BC": "778 - 710",
+    "Yrs": "68"
+   }
+  },
+  {
+   "name": "Taharqa (Amenophis)",
+   "cells": {
+    "Year BC": "713 - 664",
+    "Yrs": "40"
+   }
+  }
+ ]
+}

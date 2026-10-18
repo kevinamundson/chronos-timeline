@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "tefnakht",
+  "type": "person",
+  "title": "Tefnakht",
+  "summary": "King listed in CFAH-10 Table 7 (Egypt Dynasty 24).",
+  "description": "Ruler of Egypt Dynasty 24. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-10 (Table 7, \"CFAH Solution for Dynasty 24\"); its dates are display only.",
+  "alt_names": [
+    "Stephinates",
+    "Stephates"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Reign: [3]7+; Start: 757; End: 719",
+        "year_am": null,
+        "year_bc_ad": -757,
+        "year_bc_ad_end": -719,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-10: The Libyan-Cushite Intermediate Period,\" OSF preprint v1.4 (26 Dec 2025), doi:10.17605/OSF.IO/FG4DV, file CFAH-10 The Libyan-Cushite Intermediate Period_v1.4.pdf, Table 7 \"CFAH Solution for Dynasty 24\", p. 27",
+        "link": "https://osf.io/fg4dv/",
+        "source_text_id": "cfah-10-osf",
+        "note": "Row \"Tefnakht / Stephinates\" of Table 7 (Egypt Dynasty 24).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-10-t7-d24:tefnakht-stephinates:tefnakht:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-10-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-10-osf",
+      "url": "https://osf.io/fg4dv/",
+      "locator": "Table 7, p. 27"
+    }
+  ],
+  "dynasty": "Egypt Dynasty 24"
+}

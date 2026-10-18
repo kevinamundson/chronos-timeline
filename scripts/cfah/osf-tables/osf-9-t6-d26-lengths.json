@@ -1,0 +1,122 @@
+{
+ "id": "osf-9-t6-d26-lengths",
+ "src": "cfah-9-osf",
+ "table": "Table 6",
+ "title": "Dynasty 26 Reign Lengths",
+ "dynasty": "Egypt Dynasty 26",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  62
+ ],
+ "rows": [
+  {
+   "name": "Ammeres the Ethiopian",
+   "cells": {
+    "Syncellus": "12",
+    "Eusebius (Armenian)": "18"
+   }
+  },
+  {
+   "name": "Stephinates",
+   "cells": {
+    "Africanus": "7",
+    "Syncellus": "7",
+    "Eusebius (Armenian)": "7"
+   }
+  },
+  {
+   "name": "Nechepsos",
+   "cells": {
+    "Africanus": "6",
+    "Syncellus": "6",
+    "Eusebius (Armenian)": "6"
+   }
+  },
+  {
+   "name": "Nechao",
+   "cells": {
+    "Africanus": "8",
+    "Syncellus": "8",
+    "Eusebius (Armenian)": "8"
+   }
+  },
+  {
+   "name": "Psammetichos I (Sethos)",
+   "cells": {
+    "Herodotus": "54",
+    "Sothis": "14",
+    "Monuments": "54",
+    "Africanus": "54",
+    "Syncellus": "45",
+    "Eusebius (Armenian)": "44"
+   }
+  },
+  {
+   "name": "Nechao II",
+   "cells": {
+    "Herodotus": "16",
+    "Sothis": "9",
+    "Monuments": "16",
+    "Africanus": "6",
+    "Syncellus": "6",
+    "Eusebius (Armenian)": "6"
+   }
+  },
+  {
+   "name": "Psamtik II",
+   "cells": {
+    "Herodotus": "6",
+    "Sothis": "17",
+    "Monuments": "5",
+    "Africanus": "6",
+    "Syncellus": "17",
+    "Eusebius (Armenian)": "17",
+    "Chron": "12"
+   }
+  },
+  {
+   "name": "Apries (Hophra)",
+   "cells": {
+    "Herodotus": "25",
+    "Sothis": "34",
+    "Monuments": "19",
+    "Africanus": "19",
+    "Syncellus": "25",
+    "Eusebius (Armenian)": "25",
+    "Chron": "30"
+   }
+  },
+  {
+   "name": "Amasis",
+   "cells": {
+    "Herodotus": "43.5",
+    "Sothis": "50",
+    "Monuments": "44",
+    "Africanus": "44",
+    "Syncellus": "42",
+    "Eusebius (Armenian)": "42"
+   }
+  },
+  {
+   "name": "Psamtik III",
+   "cells": {
+    "Herodotus": "0.5",
+    "Monuments": "0.5",
+    "Africanus": "0.5"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Herodotus": "145",
+    "Sothis": "124",
+    "Monuments": "138.5",
+    "Africanus": "129.5",
+    "Syncellus": "135",
+    "Eusebius (Armenian)": "134",
+    "Chron": "42"
+   }
+  }
+ ]
+}

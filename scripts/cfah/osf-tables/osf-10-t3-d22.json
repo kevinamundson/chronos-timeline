@@ -1,0 +1,104 @@
+{
+ "id": "osf-10-t3-d22",
+ "src": "cfah-10-osf",
+ "table": "Table 3",
+ "title": "CFAH Solution for Dynasty 22",
+ "dynasty": "Egypt Dynasty 22",
+ "kind": "dated",
+ "region": "Egypt",
+ "yearCols": [
+  "Start",
+  "End"
+ ],
+ "pages": [
+  25
+ ],
+ "rows": [
+  {
+   "name": "Shoshenq I",
+   "cells": {
+    "Reign": "21",
+    "Start": "814",
+    "End": "793"
+   }
+  },
+  {
+   "name": "Osorkon I",
+   "cells": {
+    "Reign": "35",
+    "Start": "793",
+    "End": "758"
+   }
+  },
+  {
+   "name": "Shoshenq II",
+   "cells": {
+    "Reign": "8",
+    "Start": "758",
+    "End": "750"
+   }
+  },
+  {
+   "name": "Takelot I",
+   "cells": {
+    "Reign": "13",
+    "Start": "750",
+    "End": "737"
+   }
+  },
+  {
+   "name": "Osorkon II",
+   "cells": {
+    "Reign": "35",
+    "Start": "737",
+    "End": "702"
+   }
+  },
+  {
+   "name": "Shoshenq III",
+   "cells": {
+    "Reign": "39",
+    "Start": "702",
+    "End": "663"
+   }
+  },
+  {
+   "name": "Shoshenq IV",
+   "cells": {
+    "Reign": "13",
+    "Start": "663",
+    "End": "650"
+   }
+  },
+  {
+   "name": "Pami",
+   "cells": {
+    "Reign": "10",
+    "Start": "650",
+    "End": "640"
+   }
+  },
+  {
+   "name": "Shoshenq V",
+   "cells": {
+    "Reign": "38",
+    "Start": "640",
+    "End": "602"
+   }
+  },
+  {
+   "name": "Osorkon IV",
+   "cells": {
+    "Reign": "17",
+    "Start": "602",
+    "End": "585"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Reign": "229"
+   }
+  }
+ ]
+}

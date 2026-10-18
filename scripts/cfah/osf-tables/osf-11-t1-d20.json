@@ -1,0 +1,122 @@
+{
+ "id": "osf-11-t1-d20",
+ "src": "cfah-11-osf",
+ "table": "Table 1",
+ "title": "Proposed Dynasty 20 Rulers and Reigns",
+ "dynasty": "Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30)",
+ "kind": "dated",
+ "region": "Egypt",
+ "yearCols": [
+  "BC Dates"
+ ],
+ "pages": [
+  22
+ ],
+ "rows": [
+  {
+   "name": "Seti II (D19) = Inaros II",
+   "cells": {
+    "Rgn": "7",
+    "BC Dates": "475 - 468"
+   }
+  },
+  {
+   "name": "Tausret (D19) = Thuoris",
+   "cells": {
+    "Rgn": "7/50",
+    "BC Dates": "484 - 475 - 434?"
+   }
+  },
+  {
+   "name": "Rameses IX (D20)",
+   "cells": {
+    "Rgn": "19",
+    "BC Dates": "463-444"
+   }
+  },
+  {
+   "name": "Rameses X (D20)",
+   "cells": {
+    "Rgn": "3",
+    "BC Dates": "444-411"
+   }
+  },
+  {
+   "name": "Rameses XI (D20)",
+   "cells": {
+    "Rgn": "30",
+    "BC Dates": "441-411"
+   }
+  },
+  {
+   "name": "Setnakht / Rameses (D20) = Amyrtaeus of Sais (D28)",
+   "cells": {
+    "Rgn": "6",
+    "BC Dates": "411 - 404 - 399"
+   }
+  },
+  {
+   "name": "Nepherites I (D29)",
+   "cells": {
+    "Rgn": "6",
+    "BC Dates": "399 - 393"
+   }
+  },
+  {
+   "name": "Achoris/Hakor (D29)",
+   "cells": {
+    "Rgn": "13",
+    "BC Dates": "392 - 379"
+   }
+  },
+  {
+   "name": "Psammuthis (D29)",
+   "cells": {
+    "Rgn": "1",
+    "BC Dates": "392 or 379"
+   }
+  },
+  {
+   "name": "Nepherites II (D29)",
+   "cells": {
+    "Rgn": "4 mo.",
+    "BC Dates": "379"
+   }
+  },
+  {
+   "name": "Rameses III (D20) = Nectanebo I (D30)",
+   "cells": {
+    "Rgn": "19",
+    "BC Dates": "379 - 360"
+   }
+  },
+  {
+   "name": "Rameses IV & V (D20) = Teos (D30)",
+   "cells": {
+    "Rgn": "2",
+    "BC Dates": "361-359"
+   }
+  },
+  {
+   "name": "Rameses VI (D20) = Nectanebo II (D30)",
+   "cells": {
+    "Rgn": "18",
+    "BC Dates": "360 - 343"
+   }
+  },
+  {
+   "name": "Rameses VIII (D20) = Son of Ramses III",
+   "cells": {
+    "Rgn": "~1",
+    "BC Dates": "~343"
+   }
+  },
+  {
+   "name": "Rameses VII (D20) = Alexander the Great",
+   "cells": {
+    "Rgn": "8",
+    "BC Dates": "331 - 323"
+   }
+  }
+ ]
+}

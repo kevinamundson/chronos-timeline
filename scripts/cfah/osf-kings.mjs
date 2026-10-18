@@ -36,7 +36,7 @@ export function buildPhase5(tables, existingIds) {
     for (const row of t.rows) {
       const spec = m[row.name];
       const cellText = Object.entries(row.cells).filter(([, v]) => !BLANK.has(v)).map(([k, v]) => `${k}: ${v}`).join('; ');
-      const ys = t.kind === 'dated' ? Object.values(row.cells).flatMap(yearsIn) : [];
+      const ys = t.kind === 'dated' ? Object.entries(row.cells).filter(([k]) => !t.yearCols || t.yearCols.includes(k)).flatMap(([, v]) => yearsIn(v)) : [];
       const entry = { name: row.name, dates: t.kind === 'dated' && cellText ? cellText : null };
       if (t.kind !== 'dated' && cellText) entry.lengths = cellText;
       if (typeof spec === 'object' && spec?.list) { entry.note = spec.list; reasons.add(spec.list); list.entries.push(entry); continue; }
@@ -45,12 +45,12 @@ export function buildPhase5(tables, existingIds) {
         entry.note = r; reasons.add(r); list.entries.push(entry); continue;
       }
       const nm = names(row, t);
-      let id = typeof spec === 'string' ? spec : spec?.id || slug(nm.primary);
+      let id = typeof spec === 'string' ? spec : spec?.id || slug(nm.primary.replace(/\s*[*]+$/, ''));
       id = SAME[id] || id;
       if (!spec && existingIds.has(id) && !people[id]) problems.push(`${t.id}: "${row.name}" -> ${id} collides with an existing record; map it explicitly in osf-kings-map.mjs`);
       const y = -ys[0]; let yEnd = ys.length > 1 ? -ys[ys.length - 1] : null; let note = spec?.note || null;
       if (yEnd != null && yEnd < y) { note = [note, `The table's last year (${-yEnd}) is earlier than its first (${-y}), so only the first is used for the timeline.`].filter(Boolean).join(' '); yEnd = null; }
-      const approx = /~|c\.|\?|unknown|unkown|±|\[|>|</.test(cellText);
+      const approx = /~|c\.|\?|unknown|unkown|±|\[|>|<| or /.test(Object.entries(row.cells).filter(([k]) => !t.yearCols || t.yearCols.includes(k)).map(([, v]) => v).join(' '));
       const create = { title: spec?.title || nm.primary, alt_names: (spec?.alt || nm.alt).length ? (spec?.alt || nm.alt) : undefined, dynasty: spec?.dynasty || t.dynasty,
         summary: spec?.summary || `${t.dynasty.startsWith('Egypt') ? 'King' : 'Ruler'} listed in CFAH-${meta?.n} ${t.table} (${t.dynasty}).`,
         description: `${spec?.summary || `Ruler of ${t.dynasty}.`} Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-${meta?.n} (${t.table}, "${t.title}"); its dates are display only.`, events: spec?.events || [] };

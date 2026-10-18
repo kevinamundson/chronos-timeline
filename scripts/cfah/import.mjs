@@ -104,8 +104,10 @@ function addEntry(phase, item, basis) {
   const list = entriesOf(d, item.slot).filter((x) => x.cfah_key !== key);
   list.push(e);
   setEntries(d, item.slot, orderCfah(list));
+  d.sources ||= [];
   if (!d.sources.includes(item.src)) d.sources.push(item.src);
   const loc = item.locator || item.where.slice(0, 120);
+  d.free_source_links ||= [];
   if (!d.free_source_links.some((l) => l.source_id === item.src && l.locator === loc)) d.free_source_links.push({ source_id: item.src, url: linkOf(item.src), locator: loc });
   if (d.description?.startsWith(GEN_MARK)) {
     d.description = d.description.replace(GEN_MARK, 'Record first created by the Generations curriculum import').replace(/ ?(Dated only by the Generations books cited below; no tier 1–4 chronology covers this (event|person)\.|Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person\.)/, '') + ' CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.';

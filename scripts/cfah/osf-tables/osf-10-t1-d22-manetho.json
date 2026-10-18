@@ -1,0 +1,50 @@
+{
+ "id": "osf-10-t1-d22-manetho",
+ "src": "cfah-10-osf",
+ "table": "Table 1",
+ "title": "Dynasty 22, According to Africanus / Manetho",
+ "dynasty": "Egypt Dynasty 22",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  24
+ ],
+ "rows": [
+  {
+   "name": "Sesonchis (Shoshenq I)",
+   "cells": {
+    "Years of Reign": "21"
+   }
+  },
+  {
+   "name": "Osorthon (Osorkon I)",
+   "cells": {
+    "Years of Reign": "15"
+   }
+  },
+  {
+   "name": "Three Kings",
+   "cells": {
+    "Years of Reign": "29"
+   }
+  },
+  {
+   "name": "Takelothis (Takelot I)",
+   "cells": {
+    "Years of Reign": "13"
+   }
+  },
+  {
+   "name": "Three Kings",
+   "cells": {
+    "Years of Reign": "42"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Years of Reign": "120 yrs"
+   }
+  }
+ ]
+}

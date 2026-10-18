@@ -44,13 +44,18 @@
     "reign": [
       {
         "source": "cfah",
-        "date": null,
+        "date": "Start: 594; End: 589",
         "year_am": null,
-        "year_bc_ad": null,
-        "precision": "unknown",
-        "citation": null,
-        "link": null,
-        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+        "year_bc_ad": -594,
+        "year_bc_ad_end": -589,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-9: The 19th and 26th Dynasties of Egypt,\" OSF preprint v1.4 (25 Sep 2025), doi:10.17605/OSF.IO/HV3B2, file CFAH-9_Dynasties_19_and_26_v1.4.pdf, Table 2 \"Integrated Chronology of Dynasties 19 and 26\", p. 58",
+        "link": "https://osf.io/hv3b2/",
+        "source_text_id": "cfah-9-osf",
+        "note": "Row \"Khaemwaset / Psamtik II\" of Table 2 (Egypt Dynasties 19 and 26). CFAH-9 identifies Khaemwaset of Dynasty 19 with Psamtik II (Herodotus' Psammis).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-9-t2-d19-26:khaemwaset-psamtik-ii:psammis:reign"
       },
       {
         "source": "herodotus",
@@ -69,7 +74,8 @@
   "scripture_refs": [],
   "sources": [
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "cfah-9-osf"
   ],
   "related": [],
   "free_source_links": [
@@ -77,6 +83,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
       "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "cfah-9-osf",
+      "url": "https://osf.io/hv3b2/",
+      "locator": "Table 2, p. 58"
     }
   ]
 }

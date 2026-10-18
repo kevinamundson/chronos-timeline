@@ -1,0 +1,60 @@
+{
+ "id": "osf-10-t8-d25-data",
+ "src": "cfah-10-osf",
+ "table": "Table 8",
+ "title": "Data for Dynasty 25",
+ "dynasty": "Egypt Dynasty 25 (Cushite)",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  27
+ ],
+ "rows": [
+  {
+   "name": "Shebitku",
+   "cells": {
+    "Africanus": "8",
+    "Eusebius": "12",
+    "Eusebius (Arm)": "12",
+    "Monuments": "3"
+   }
+  },
+  {
+   "name": "Shabaka",
+   "cells": {
+    "Africanus": "14",
+    "Eusebius": "12",
+    "Eusebius (Arm)": "12",
+    "Herodotus": "50",
+    "Monuments": "15"
+   }
+  },
+  {
+   "name": "Taharqa",
+   "cells": {
+    "Africanus": "18",
+    "Eusebius": "20",
+    "Eusebius (Arm)": "20",
+    "Monuments": "26"
+   }
+  },
+  {
+   "name": "Tantamani",
+   "cells": {
+    "Africanus": "–",
+    "Eusebius": "–",
+    "Eusebius (Arm)": "–",
+    "Monuments": "8"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Africanus": "40",
+    "Eusebius": "44",
+    "Eusebius (Arm)": "44",
+    "Herodotus": "50"
+   }
+  }
+ ]
+}

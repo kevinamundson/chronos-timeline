@@ -1,0 +1,64 @@
+{
+ "id": "osf-10-t5-d23",
+ "src": "cfah-10-osf",
+ "table": "Table 5",
+ "title": "CFAH Solution for Dynasty 23",
+ "dynasty": "Egypt Dynasty 23",
+ "kind": "dated",
+ "region": "Egypt",
+ "yearCols": [
+  "Start",
+  "End"
+ ],
+ "pages": [
+  26
+ ],
+ "rows": [
+  {
+   "name": "Pedubast I",
+   "cells": {
+    "Reign": "28",
+    "Start": "694",
+    "End": "666"
+   }
+  },
+  {
+   "name": "Shoshenq VI",
+   "cells": {
+    "Reign": "6",
+    "Start": "669",
+    "End": "663"
+   }
+  },
+  {
+   "name": "Osorkon III",
+   "cells": {
+    "Reign": "9 / 28",
+    "Start": "662",
+    "End": "653/634"
+   }
+  },
+  {
+   "name": "Takelot III (under Pami)",
+   "cells": {
+    "Reign": "10",
+    "Start": "653",
+    "End": "644"
+   }
+  },
+  {
+   "name": "Zet / Psammetichus",
+   "cells": {
+    "Reign": "34",
+    "Start": "644",
+    "End": "610"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Reign": "229"
+   }
+  }
+ ]
+}

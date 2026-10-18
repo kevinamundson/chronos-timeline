@@ -1,0 +1,89 @@
+{
+ "id": "osf-10-t2-d22-scholars",
+ "src": "cfah-10-osf",
+ "table": "Table 2",
+ "title": "Dynasty 22, According to Current Scholarship",
+ "dynasty": "Egypt Dynasty 22",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  24,
+  25
+ ],
+ "rows": [
+  {
+   "name": "Shoshenq I",
+   "cells": {
+    "Throne name": "Hedjkheperre-Setepenre",
+    "Reign": "21"
+   }
+  },
+  {
+   "name": "Osorkon I",
+   "cells": {
+    "Throne name": "Sekhem kheper Ra",
+    "Reign": "35"
+   }
+  },
+  {
+   "name": "Shoshenq II",
+   "cells": {
+    "Reign": "2"
+   }
+  },
+  {
+   "name": "Takelot I",
+   "cells": {
+    "Reign": "13"
+   }
+  },
+  {
+   "name": "Osorkon II",
+   "cells": {
+    "Reign": "35"
+   }
+  },
+  {
+   "name": "Shoshenq III",
+   "cells": {
+    "Reign": "39"
+   }
+  },
+  {
+   "name": "Shoshenq IV",
+   "cells": {
+    "Reign": "13"
+   }
+  },
+  {
+   "name": "Pami",
+   "cells": {
+    "Reign": "7"
+   }
+  },
+  {
+   "name": "Shoshenq V",
+   "cells": {
+    "Reign": "38"
+   }
+  },
+  {
+   "name": "Petubast II",
+   "cells": {
+    "Reign": "10"
+   }
+  },
+  {
+   "name": "Osorkon IV",
+   "cells": {
+    "Reign": "14"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Reign": "227"
+   }
+  }
+ ]
+}

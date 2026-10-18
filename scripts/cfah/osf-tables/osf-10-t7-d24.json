@@ -1,0 +1,48 @@
+{
+ "id": "osf-10-t7-d24",
+ "src": "cfah-10-osf",
+ "table": "Table 7",
+ "title": "CFAH Solution for Dynasty 24",
+ "dynasty": "Egypt Dynasty 24",
+ "kind": "dated",
+ "region": "Egypt",
+ "yearCols": [
+  "Start",
+  "End"
+ ],
+ "pages": [
+  27
+ ],
+ "rows": [
+  {
+   "name": "Ammeris / Piye",
+   "cells": {
+    "Reign": "18",
+    "Start": "778",
+    "End": "760"
+   }
+  },
+  {
+   "name": "Tefnakht / Stephinates",
+   "cells": {
+    "Reign": "[3]7+",
+    "Start": "757",
+    "End": "719"
+   }
+  },
+  {
+   "name": "Osorkon III",
+   "cells": {
+    "Reign": "44/6",
+    "Start": "757/719",
+    "End": "713"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Reign": "44"
+   }
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "apachnan",
+  "type": "person",
+  "title": "Apachnan",
+  "summary": "King listed in CFAH-8 Table 6 (Egypt Dynasty 15 (Hyksos)).",
+  "description": "Ruler of Egypt Dynasty 15 (Hyksos). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-8 (Table 6, \"Integrated Dates for Dynasty 15\"); its dates are display only.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Start Sole-rex: 1428; Death or Deposition: 1392",
+        "year_am": null,
+        "year_bc_ad": -1428,
+        "year_bc_ad_end": -1392,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-8: Placing Dynasties 15-18,\" OSF preprint v1.2 (29 Apr 2026), doi:10.17605/OSF.IO/Z5RTD, file CFAH-8_v1.2.pdf, Table 6 \"Integrated Dates for Dynasty 15\", p. 87",
+        "link": "https://osf.io/z5rtd/",
+        "source_text_id": "cfah-8-osf",
+        "note": "Row \"Apachnan\" of Table 6 (Egypt Dynasty 15 (Hyksos)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-8-t6-d15:apachnan:apachnan:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-8-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-8-osf",
+      "url": "https://osf.io/z5rtd/",
+      "locator": "Table 6, p. 87"
+    }
+  ],
+  "dynasty": "Egypt Dynasty 15 (Hyksos)"
+}

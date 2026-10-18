@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "seti-ii",
+  "type": "person",
+  "title": "Seti II (D19)",
+  "summary": "King listed in CFAH-11 Table 1 (Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30)).",
+  "description": "Ruler of Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-11 (Table 1, \"Proposed Dynasty 20 Rulers and Reigns\"); its dates are display only.",
+  "alt_names": [
+    "Inaros II"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Rgn: 7; BC Dates: 475 - 468",
+        "year_am": null,
+        "year_bc_ad": -475,
+        "year_bc_ad_end": -468,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-11: Dynasties 20 and 21,\" OSF preprint v1.3 (17 Nov 2025), doi:10.17605/OSF.IO/KSAZ9, file CFAH-11_v1.3.pdf, Table 1 \"Proposed Dynasty 20 Rulers and Reigns\", p. 22",
+        "link": "https://osf.io/ksaz9/",
+        "source_text_id": "cfah-11-osf",
+        "note": "Row \"Seti II (D19) = Inaros II\" of Table 1 (Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-11-t1-d20:seti-ii-d19-inaros-ii:seti-ii:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Start: 475; End: 469",
+        "year_am": null,
+        "year_bc_ad": -475,
+        "year_bc_ad_end": -469,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-9: The 19th and 26th Dynasties of Egypt,\" OSF preprint v1.4 (25 Sep 2025), doi:10.17605/OSF.IO/HV3B2, file CFAH-9_Dynasties_19_and_26_v1.4.pdf, Table 2 \"Integrated Chronology of Dynasties 19 and 26\", p. 58",
+        "link": "https://osf.io/hv3b2/",
+        "source_text_id": "cfah-9-osf",
+        "note": "Row \"Seti II / Inaros II\" of Table 2 (Egypt Dynasties 19 and 26).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-9-t2-d19-26:seti-ii-inaros-ii:seti-ii:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-11-osf",
+    "cfah-9-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-11-osf",
+      "url": "https://osf.io/ksaz9/",
+      "locator": "Table 1, p. 22"
+    },
+    {
+      "source_id": "cfah-9-osf",
+      "url": "https://osf.io/hv3b2/",
+      "locator": "Table 2, p. 58"
+    }
+  ],
+  "dynasty": "Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30)"
+}

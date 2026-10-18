@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "tantamani",
+  "type": "person",
+  "title": "Tantamani",
+  "summary": "King listed in CFAH-10 Table 9 (Egypt Dynasty 25 (Cushite)).",
+  "description": "Ruler of Egypt Dynasty 25 (Cushite). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-10 (Table 9, \"CFAH Solution for Dynasty 25\"); its dates are display only.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Reign: ~10+; Start: 664; End: 653",
+        "year_am": null,
+        "year_bc_ad": -664,
+        "year_bc_ad_end": -653,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-10: The Libyan-Cushite Intermediate Period,\" OSF preprint v1.4 (26 Dec 2025), doi:10.17605/OSF.IO/FG4DV, file CFAH-10 The Libyan-Cushite Intermediate Period_v1.4.pdf, Table 9 \"CFAH Solution for Dynasty 25\", p. 28",
+        "link": "https://osf.io/fg4dv/",
+        "source_text_id": "cfah-10-osf",
+        "note": "Row \"Tantamani\" of Table 9 (Egypt Dynasty 25 (Cushite)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-10-t9-d25:tantamani:tantamani:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-10-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-10-osf",
+      "url": "https://osf.io/fg4dv/",
+      "locator": "Table 9, p. 28"
+    }
+  ],
+  "dynasty": "Egypt Dynasty 25 (Cushite)"
+}

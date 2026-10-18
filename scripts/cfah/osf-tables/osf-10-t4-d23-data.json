@@ -1,0 +1,76 @@
+{
+ "id": "osf-10-t4-d23-data",
+ "src": "cfah-10-osf",
+ "table": "Table 4",
+ "title": "Data for Dynasty 23",
+ "dynasty": "Egypt Dynasty 23",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  26
+ ],
+ "rows": [
+  {
+   "name": "Pedubast I",
+   "cells": {
+    "Africanus": "40",
+    "Eusebius": "25",
+    "Eusebius (Arm)": "25",
+    "Monuments": "28"
+   }
+  },
+  {
+   "name": "Shoshenq VI",
+   "cells": {
+    "Africanus": "–",
+    "Eusebius": "–",
+    "Eusebius (Arm)": "–",
+    "Monuments": "6"
+   }
+  },
+  {
+   "name": "Osorkon III",
+   "cells": {
+    "Africanus": "8",
+    "Eusebius": "9",
+    "Eusebius (Arm)": "9",
+    "Monuments": "28"
+   }
+  },
+  {
+   "name": "Takelot III",
+   "cells": {
+    "Africanus": "–",
+    "Eusebius": "–",
+    "Eusebius (Arm)": "–",
+    "Monuments": "13"
+   }
+  },
+  {
+   "name": "Psammus",
+   "cells": {
+    "Africanus": "10",
+    "Eusebius": "10",
+    "Eusebius (Arm)": "10",
+    "Monuments": "7"
+   }
+  },
+  {
+   "name": "Zet",
+   "cells": {
+    "Africanus": "34",
+    "Eusebius": "–",
+    "Eusebius (Arm)": "–",
+    "Monuments": "–"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Africanus": "89",
+    "Eusebius": "44",
+    "Eusebius (Arm)": "44"
+   }
+  }
+ ]
+}

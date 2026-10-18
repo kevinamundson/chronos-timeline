@@ -1,0 +1,48 @@
+{
+ "id": "osf-10-t6-d24-data",
+ "src": "cfah-10-osf",
+ "table": "Table 6",
+ "title": "Data for Dynasty 24",
+ "dynasty": "Egypt Dynasty 24",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  26,
+  27
+ ],
+ "rows": [
+  {
+   "name": "Ammeris the Cushite",
+   "cells": {
+    "Eusebius": "12",
+    "Eusebius (Arm)": "18"
+   }
+  },
+  {
+   "name": "Tefnakht / Stephates",
+   "cells": {
+    "Africanus": "7",
+    "Eusebius": "7",
+    "Eusebius (Arm)": "7",
+    "Monuments": "38"
+   }
+  },
+  {
+   "name": "Bocchoris / Nechepsos",
+   "cells": {
+    "Africanus": "6",
+    "Eusebius": "44",
+    "Eusebius (Arm)": "44",
+    "Monuments": "6"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Africanus": "–",
+    "Eusebius": "44",
+    "Eusebius (Arm)": "–"
+   }
+  }
+ ]
+}

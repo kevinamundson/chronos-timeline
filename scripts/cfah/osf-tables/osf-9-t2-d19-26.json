@@ -1,0 +1,95 @@
+{
+ "id": "osf-9-t2-d19-26",
+ "src": "cfah-9-osf",
+ "table": "Table 2",
+ "title": "Integrated Chronology of Dynasties 19 and 26",
+ "dynasty": "Egypt Dynasties 19 and 26",
+ "kind": "dated",
+ "region": "Egypt",
+ "yearCols": [
+  "Start",
+  "End"
+ ],
+ "pages": [
+  58
+ ],
+ "rows": [
+  {
+   "name": "Rameses I / Necho I",
+   "cells": {
+    "Start": "671/666",
+    "End": "665"
+   }
+  },
+  {
+   "name": "Seti I / Psammetichus I",
+   "cells": {
+    "Start": "663",
+    "End": "611"
+   }
+  },
+  {
+   "name": "Rameses II",
+   "cells": {
+    "Start": "644",
+    "End": "678"
+   }
+  },
+  {
+   "name": "Rameses B / Necho II",
+   "cells": {
+    "Start": "611",
+    "End": "594"
+   }
+  },
+  {
+   "name": "Khaemwaset / Psamtik II",
+   "cells": {
+    "Start": "594",
+    "End": "589"
+   }
+  },
+  {
+   "name": "Merneptah / Hophra/Apries",
+   "cells": {
+    "Start": "589",
+    "End": "567"
+   }
+  },
+  {
+   "name": "Amenmesse / Amasis",
+   "cells": {
+    "Start": "570/567",
+    "End": "526"
+   }
+  },
+  {
+   "name": "Psamtik III",
+   "cells": {
+    "Start": "526",
+    "End": "525"
+   }
+  },
+  {
+   "name": "Persian Desolation / Persian Desolation",
+   "cells": {
+    "Start": "525",
+    "End": "484"
+   }
+  },
+  {
+   "name": "Tausret & Siptah (son)",
+   "cells": {
+    "Start": "~482",
+    "End": "475"
+   }
+  },
+  {
+   "name": "Seti II / Inaros II",
+   "cells": {
+    "Start": "475",
+    "End": "469"
+   }
+  }
+ ]
+}

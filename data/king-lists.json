@@ -431,6 +431,530 @@
       "unrecorded_reason": null
     },
     {
+      "id": "osf-10-t1-d22-manetho",
+      "title": "CFAH-10: Dynasty 22, According to Africanus / Manetho (Table 1)",
+      "region": "Egypt",
+      "source": "cfah-10-osf",
+      "citation_short": "CFAH-10, OSF preprint v1.4 (26 Dec 2025), Table 1, p. 24",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Sesonchis (Shoshenq I)",
+          "dates": null,
+          "lengths": "Years of Reign: 21",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Osorthon (Osorkon I)",
+          "dates": null,
+          "lengths": "Years of Reign: 15",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Three Kings",
+          "dates": null,
+          "lengths": "Years of Reign: 29",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Takelothis (Takelot I)",
+          "dates": null,
+          "lengths": "Years of Reign: 13",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Three Kings",
+          "dates": null,
+          "lengths": "Years of Reign: 42",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Total",
+          "dates": null,
+          "lengths": "Years of Reign: 120 yrs",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-10-t2-d22-scholars",
+      "title": "CFAH-10: Dynasty 22, According to Current Scholarship (Table 2)",
+      "region": "Egypt",
+      "source": "cfah-10-osf",
+      "citation_short": "CFAH-10, OSF preprint v1.4 (26 Dec 2025), Table 2, pp. 24–25",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Shoshenq I",
+          "dates": null,
+          "lengths": "Throne name: Hedjkheperre-Setepenre; Reign: 21",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Osorkon I",
+          "dates": null,
+          "lengths": "Throne name: Sekhem kheper Ra; Reign: 35",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shoshenq II",
+          "dates": null,
+          "lengths": "Reign: 2",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Takelot I",
+          "dates": null,
+          "lengths": "Reign: 13",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Osorkon II",
+          "dates": null,
+          "lengths": "Reign: 35",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shoshenq III",
+          "dates": null,
+          "lengths": "Reign: 39",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shoshenq IV",
+          "dates": null,
+          "lengths": "Reign: 13",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Pami",
+          "dates": null,
+          "lengths": "Reign: 7",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shoshenq V",
+          "dates": null,
+          "lengths": "Reign: 38",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Petubast II",
+          "dates": null,
+          "lengths": "Reign: 10",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Osorkon IV",
+          "dates": null,
+          "lengths": "Reign: 14",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Total",
+          "dates": null,
+          "lengths": "Reign: 227",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-10-t3-d22",
+      "title": "CFAH-10: CFAH Solution for Dynasty 22 (Table 3)",
+      "region": "Egypt",
+      "source": "cfah-10-osf",
+      "citation_short": "CFAH-10, OSF preprint v1.4 (26 Dec 2025), Table 3, p. 25",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Shoshenq I",
+          "dates": "Reign: 21; Start: 814; End: 793",
+          "person": "shoshenq-i"
+        },
+        {
+          "name": "Osorkon I",
+          "dates": "Reign: 35; Start: 793; End: 758",
+          "person": "osorkon-i"
+        },
+        {
+          "name": "Shoshenq II",
+          "dates": "Reign: 8; Start: 758; End: 750",
+          "person": "shoshenq-ii"
+        },
+        {
+          "name": "Takelot I",
+          "dates": "Reign: 13; Start: 750; End: 737",
+          "person": "takelot-i"
+        },
+        {
+          "name": "Osorkon II",
+          "dates": "Reign: 35; Start: 737; End: 702",
+          "person": "osorkon-ii"
+        },
+        {
+          "name": "Shoshenq III",
+          "dates": "Reign: 39; Start: 702; End: 663",
+          "person": "shoshenq-iii"
+        },
+        {
+          "name": "Shoshenq IV",
+          "dates": "Reign: 13; Start: 663; End: 650",
+          "person": "shoshenq-iv"
+        },
+        {
+          "name": "Pami",
+          "dates": "Reign: 10; Start: 650; End: 640",
+          "person": "pami"
+        },
+        {
+          "name": "Shoshenq V",
+          "dates": "Reign: 38; Start: 640; End: 602",
+          "person": "shoshenq-v"
+        },
+        {
+          "name": "Osorkon IV",
+          "dates": "Reign: 17; Start: 602; End: 585",
+          "person": "osorkon-iv"
+        },
+        {
+          "name": "Total",
+          "dates": "Reign: 229",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-10-t4-d23-data",
+      "title": "CFAH-10: Data for Dynasty 23 (Table 4)",
+      "region": "Egypt",
+      "source": "cfah-10-osf",
+      "citation_short": "CFAH-10, OSF preprint v1.4 (26 Dec 2025), Table 4, p. 26",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Pedubast I",
+          "dates": null,
+          "lengths": "Africanus: 40; Eusebius: 25; Eusebius (Arm): 25; Monuments: 28",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shoshenq VI",
+          "dates": null,
+          "lengths": "Monuments: 6",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Osorkon III",
+          "dates": null,
+          "lengths": "Africanus: 8; Eusebius: 9; Eusebius (Arm): 9; Monuments: 28",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Takelot III",
+          "dates": null,
+          "lengths": "Monuments: 13",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Psammus",
+          "dates": null,
+          "lengths": "Africanus: 10; Eusebius: 10; Eusebius (Arm): 10; Monuments: 7",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Zet",
+          "dates": null,
+          "lengths": "Africanus: 34",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Total",
+          "dates": null,
+          "lengths": "Africanus: 89; Eusebius: 44; Eusebius (Arm): 44",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-10-t5-d23",
+      "title": "CFAH-10: CFAH Solution for Dynasty 23 (Table 5)",
+      "region": "Egypt",
+      "source": "cfah-10-osf",
+      "citation_short": "CFAH-10, OSF preprint v1.4 (26 Dec 2025), Table 5, p. 26",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Pedubast I",
+          "dates": "Reign: 28; Start: 694; End: 666",
+          "person": "pedubast-i"
+        },
+        {
+          "name": "Shoshenq VI",
+          "dates": "Reign: 6; Start: 669; End: 663",
+          "person": "shoshenq-vi"
+        },
+        {
+          "name": "Osorkon III",
+          "dates": "Reign: 9 / 28; Start: 662; End: 653/634",
+          "person": "osorkon-iii"
+        },
+        {
+          "name": "Takelot III (under Pami)",
+          "dates": "Reign: 10; Start: 653; End: 644",
+          "person": "takelot-iii"
+        },
+        {
+          "name": "Zet / Psammetichus",
+          "dates": "Reign: 34; Start: 644; End: 610",
+          "person": "zet"
+        },
+        {
+          "name": "Total",
+          "dates": "Reign: 229",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-10-t6-d24-data",
+      "title": "CFAH-10: Data for Dynasty 24 (Table 6)",
+      "region": "Egypt",
+      "source": "cfah-10-osf",
+      "citation_short": "CFAH-10, OSF preprint v1.4 (26 Dec 2025), Table 6, pp. 26–27",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Ammeris the Cushite",
+          "dates": null,
+          "lengths": "Eusebius: 12; Eusebius (Arm): 18",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Tefnakht / Stephates",
+          "dates": null,
+          "lengths": "Africanus: 7; Eusebius: 7; Eusebius (Arm): 7; Monuments: 38",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Bocchoris / Nechepsos",
+          "dates": null,
+          "lengths": "Africanus: 6; Eusebius: 44; Eusebius (Arm): 44; Monuments: 6",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Total",
+          "dates": null,
+          "lengths": "Eusebius: 44",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-10-t7-d24",
+      "title": "CFAH-10: CFAH Solution for Dynasty 24 (Table 7)",
+      "region": "Egypt",
+      "source": "cfah-10-osf",
+      "citation_short": "CFAH-10, OSF preprint v1.4 (26 Dec 2025), Table 7, p. 27",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Ammeris / Piye",
+          "dates": "Reign: 18; Start: 778; End: 760",
+          "person": "piye"
+        },
+        {
+          "name": "Tefnakht / Stephinates",
+          "dates": "Reign: [3]7+; Start: 757; End: 719",
+          "person": "tefnakht"
+        },
+        {
+          "name": "Osorkon III",
+          "dates": "Reign: 44/6; Start: 757/719; End: 713",
+          "note": "Not attached to a person: the row is printed \"Osorkon III\", but the CFAH-10 text gives these years (sole reign 719-713 BC) to Bocchoris/Bakenranef, so the name looks like a slip (inconsistency I18)."
+        },
+        {
+          "name": "Total",
+          "dates": "Reign: 44",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-10-t8-d25-data",
+      "title": "CFAH-10: Data for Dynasty 25 (Table 8)",
+      "region": "Egypt",
+      "source": "cfah-10-osf",
+      "citation_short": "CFAH-10, OSF preprint v1.4 (26 Dec 2025), Table 8, p. 27",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Shebitku",
+          "dates": null,
+          "lengths": "Africanus: 8; Eusebius: 12; Eusebius (Arm): 12; Monuments: 3",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shabaka",
+          "dates": null,
+          "lengths": "Africanus: 14; Eusebius: 12; Eusebius (Arm): 12; Herodotus: 50; Monuments: 15",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Taharqa",
+          "dates": null,
+          "lengths": "Africanus: 18; Eusebius: 20; Eusebius (Arm): 20; Monuments: 26",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Tantamani",
+          "dates": null,
+          "lengths": "Monuments: 8",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Total",
+          "dates": null,
+          "lengths": "Africanus: 40; Eusebius: 44; Eusebius (Arm): 44; Herodotus: 50",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-10-t9-d25",
+      "title": "CFAH-10: CFAH Solution for Dynasty 25 (Table 9)",
+      "region": "Egypt",
+      "source": "cfah-10-osf",
+      "citation_short": "CFAH-10, OSF preprint v1.4 (26 Dec 2025), Table 9, p. 28",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Kashta",
+          "dates": "Reign: ~20; Start: 798; End: 778",
+          "person": "kashta"
+        },
+        {
+          "name": "Piye / Piankhi / Ammeris the Cushite",
+          "dates": "Reign: 18 / 68; Start: 778; End: 710",
+          "person": "piye"
+        },
+        {
+          "name": "Shebitku",
+          "dates": "Reign: 12; Start: 713; End: 701",
+          "person": "shebitku"
+        },
+        {
+          "name": "Shabaka",
+          "dates": "Reign: 15; Start: 705; End: 690",
+          "person": "sabacos"
+        },
+        {
+          "name": "Taharqa",
+          "dates": "Reign: 26 / 20 / 18; Start: 691 / 690; End: 671 / 664",
+          "person": "taharqa"
+        },
+        {
+          "name": "Tantamani",
+          "dates": "Reign: ~10+; Start: 664; End: 653",
+          "person": "tantamani"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-11-t1-d20",
+      "title": "CFAH-11: Proposed Dynasty 20 Rulers and Reigns (Table 1)",
+      "region": "Egypt",
+      "source": "cfah-11-osf",
+      "citation_short": "CFAH-11, OSF preprint v1.3 (17 Nov 2025), Table 1, p. 22",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Seti II (D19) = Inaros II",
+          "dates": "Rgn: 7; BC Dates: 475 - 468",
+          "person": "seti-ii"
+        },
+        {
+          "name": "Tausret (D19) = Thuoris",
+          "dates": "Rgn: 7/50; BC Dates: 484 - 475 - 434?",
+          "person": "tausret"
+        },
+        {
+          "name": "Rameses IX (D20)",
+          "dates": "Rgn: 19; BC Dates: 463-444",
+          "person": "rameses-ix"
+        },
+        {
+          "name": "Rameses X (D20)",
+          "dates": "Rgn: 3; BC Dates: 444-411",
+          "person": "rameses-x"
+        },
+        {
+          "name": "Rameses XI (D20)",
+          "dates": "Rgn: 30; BC Dates: 441-411",
+          "person": "rameses-xi"
+        },
+        {
+          "name": "Setnakht / Rameses (D20) = Amyrtaeus of Sais (D28)",
+          "dates": "Rgn: 6; BC Dates: 411 - 404 - 399",
+          "person": "setnakht"
+        },
+        {
+          "name": "Nepherites I (D29)",
+          "dates": "Rgn: 6; BC Dates: 399 - 393",
+          "person": "nepherites-i"
+        },
+        {
+          "name": "Achoris/Hakor (D29)",
+          "dates": "Rgn: 13; BC Dates: 392 - 379",
+          "person": "achoris"
+        },
+        {
+          "name": "Psammuthis (D29)",
+          "dates": "Rgn: 1; BC Dates: 392 or 379",
+          "person": "psammuthis"
+        },
+        {
+          "name": "Nepherites II (D29)",
+          "dates": "Rgn: 4 mo.; BC Dates: 379",
+          "person": "nepherites-ii"
+        },
+        {
+          "name": "Rameses III (D20) = Nectanebo I (D30)",
+          "dates": "Rgn: 19; BC Dates: 379 - 360",
+          "person": "rameses-iii"
+        },
+        {
+          "name": "Rameses IV & V (D20) = Teos (D30)",
+          "dates": "Rgn: 2; BC Dates: 361-359",
+          "person": "teos"
+        },
+        {
+          "name": "Rameses VI (D20) = Nectanebo II (D30)",
+          "dates": "Rgn: 18; BC Dates: 360 - 343",
+          "person": "rameses-vi"
+        },
+        {
+          "name": "Rameses VIII (D20) = Son of Ramses III",
+          "dates": "Rgn: ~1; BC Dates: ~343",
+          "person": "rameses-viii"
+        },
+        {
+          "name": "Rameses VII (D20) = Alexander the Great",
+          "dates": "Rgn: 8; BC Dates: 331 - 323",
+          "person": "alexander-the-great"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
       "id": "osf-7a-t2-d12-solution",
       "title": "CFAH-7A: Dynasty 12 Solution (Table 2)",
       "region": "Egypt",
@@ -1317,6 +1841,691 @@
           "name": "Mentohotep IV",
           "dates": "Start Co-Rex: unknown; Start Sole-rex: 1745; End Sole-rex: unknown; Death or Deposition: 1738",
           "person": "mentuhotep-iv"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-8-d15-data",
+      "title": "CFAH-8: Dynasty 15 (Hyksos) reign lengths (untitled table)",
+      "region": "Egypt",
+      "source": "cfah-8-osf",
+      "citation_short": "CFAH-8, OSF preprint v1.2 (29 Apr 2026), untitled table, p. 22",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Salitis",
+          "dates": null,
+          "lengths": "Africanus: 19; SKL: 19; Josephus: 19",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Bnon",
+          "dates": null,
+          "lengths": "Africanus: 44; SKL: 44; Josephus: 44",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Apachnan",
+          "dates": null,
+          "lengths": "Africanus: 61; SKL: 36; Josephus: 36 y 7 m",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Apophis",
+          "dates": null,
+          "lengths": "Africanus: 61; SKL: 61; Josephus: 61",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Iannas, Sethos",
+          "dates": null,
+          "lengths": "Africanus: 50; SKL: 50; Josephus: 50",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Certos",
+          "dates": null,
+          "lengths": "SKL: 29",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Assis / Archles / Aseth",
+          "dates": null,
+          "lengths": "Africanus: 49; SKL: 20; Josephus: 49 y 2 m",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Total",
+          "dates": null,
+          "lengths": "Africanus: 284; SKL: 259; Josephus: 259 y 9 m",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-8-t12-d22-kitchen",
+      "title": "CFAH-8: Dynasty 22 According to Kitchen (Table 12)",
+      "region": "Egypt",
+      "source": "cfah-8-osf",
+      "citation_short": "CFAH-8, OSF preprint v1.2 (29 Apr 2026), Table 12, p. 98",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Shoshenq I",
+          "dates": null,
+          "lengths": "Throne name: Hedjkheperre-Setepenre; Reign: 21",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Osorkon I",
+          "dates": null,
+          "lengths": "Throne name: Sekhem kheper Ra; Reign: 35",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shoshenq II",
+          "dates": null,
+          "lengths": "Reign: 2",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Takelot I",
+          "dates": null,
+          "lengths": "Reign: 13",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Osorkon II",
+          "dates": null,
+          "lengths": "Reign: 35",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shoshenq III",
+          "dates": null,
+          "lengths": "Reign: 39",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shoshenq IV",
+          "dates": null,
+          "lengths": "Reign: 13",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Pami",
+          "dates": null,
+          "lengths": "Reign: 7",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Shoshenq V",
+          "dates": null,
+          "lengths": "Reign: 38",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Petubast II",
+          "dates": null,
+          "lengths": "Reign: 10",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Osorkon IV",
+          "dates": null,
+          "lengths": "Reign: 14",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Total",
+          "dates": null,
+          "lengths": "Reign: 227",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-8-t14-d18",
+      "title": "CFAH-8: CFAH-Corrected Reigns for Dynasty 18 (Table 14)",
+      "region": "Egypt",
+      "source": "cfah-8-osf",
+      "citation_short": "CFAH-8, OSF preprint v1.2 (29 Apr 2026), Table 14, pp. 101–102",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Ahmose I",
+          "dates": "Year BC: 1081-1056; Yrs: 25",
+          "person": "ahmose-i"
+        },
+        {
+          "name": "Amenhotep I",
+          "dates": "Year BC: 1056-1035; Yrs: 21",
+          "person": "amenhotep-i"
+        },
+        {
+          "name": "Thutmose I",
+          "dates": "Year BC: 1035-1015; Yrs: 20",
+          "person": "thutmose-i"
+        },
+        {
+          "name": "Thutmose II",
+          "dates": "Year BC: 1015-1002; Yrs: 13",
+          "person": "thutmose-ii"
+        },
+        {
+          "name": "Hatshepsut / Neferure",
+          "dates": "Year BC: 1002-980; Yrs: 13, 22, 35",
+          "person": "hatshepsut"
+        },
+        {
+          "name": "Thutmose III",
+          "dates": "Year BC: 980-954; Yrs: 26",
+          "person": "thutmose-iii"
+        },
+        {
+          "name": "TIII + AHII",
+          "dates": "Year BC: 954-948; Yrs: 5-6",
+          "note": "The co-regency of Thutmose III and Amenhotep II (954-948 BC as printed), not a separate ruler; both kings have their own rows."
+        },
+        {
+          "name": "Amenhotep II",
+          "dates": "Year BC: 948-928; Yrs: 20",
+          "person": "amenhotep-ii"
+        },
+        {
+          "name": "Thutmose IV + AHIII",
+          "dates": "Year BC: 929-920; Yrs: 9 y 8 m",
+          "person": "thutmose-iv"
+        },
+        {
+          "name": "Amenhotep III",
+          "dates": "Year BC: 920-889; Yrs: 30 y 10 m",
+          "person": "amenhotep-iii"
+        },
+        {
+          "name": "Akhenaten",
+          "dates": "Year BC: 889 - 871; Yrs: 17, 28, 38, 48 ?",
+          "person": "akhenaten"
+        },
+        {
+          "name": "Nefertiti / Smenkare",
+          "dates": "Year BC: 871 - 859; Yrs: 12",
+          "person": "nefertiti"
+        },
+        {
+          "name": "Tutankhamun",
+          "dates": "Year BC: 860 - 851; Yrs: 9, 6",
+          "person": "tutankhamun"
+        },
+        {
+          "name": "Ay",
+          "dates": "Year BC: 851 - 841; Yrs: 10",
+          "person": "ay"
+        },
+        {
+          "name": "Horemheb",
+          "dates": "Year BC: 841 - 814; Yrs: 27",
+          "person": "horemheb"
+        },
+        {
+          "name": "Shoshenq I (Achcherres II)",
+          "dates": "Year BC: 814 - 793; Yrs: 21",
+          "person": "shoshenq-i"
+        },
+        {
+          "name": "Osorkon I (Cherres II)",
+          "dates": "Year BC: 793 - 778, 758; Yrs: 15, 35",
+          "person": "osorkon-i"
+        },
+        {
+          "name": "Piankhi (Harmesses Miamun)",
+          "dates": "Year BC: 778 - 710; Yrs: 68",
+          "person": "piye"
+        },
+        {
+          "name": "Taharqa (Amenophis)",
+          "dates": "Year BC: 713 - 664; Yrs: 40",
+          "person": "taharqa"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-8-t6-d15",
+      "title": "CFAH-8: Integrated Dates for Dynasty 15 (Table 6)",
+      "region": "Egypt",
+      "source": "cfah-8-osf",
+      "citation_short": "CFAH-8, OSF preprint v1.2 (29 Apr 2026), Table 6, p. 87",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Salitis",
+          "dates": "Start Sole-rex: 1491; Death or Deposition: 1472",
+          "person": "salitis"
+        },
+        {
+          "name": "Bnon",
+          "dates": "Start Sole-rex: 1472; Death or Deposition: 1428",
+          "person": "bnon"
+        },
+        {
+          "name": "Apachnan",
+          "dates": "Start Sole-rex: 1428; Death or Deposition: 1392",
+          "person": "apachnan"
+        },
+        {
+          "name": "Apophis I",
+          "dates": "Start Sole-rex: 1392; Death or Deposition: 1331",
+          "person": "apophis-i"
+        },
+        {
+          "name": "Iannas / Khyan",
+          "dates": "Start Sole-rex: 1331; Death or Deposition: 1281",
+          "person": "khyan"
+        },
+        {
+          "name": "Certos",
+          "dates": "Start Co-Rex: 1281; Death or Deposition: 1252",
+          "person": "certos"
+        },
+        {
+          "name": "Assis / Aseth",
+          "dates": "Start Co-Rex: 1281; Start Sole-rex: 1252; Death or Deposition: 1232",
+          "person": "assis"
+        },
+        {
+          "name": "Dynasty Total",
+          "dates": "Start Sole-rex: 1491/1490; Death or Deposition: 1232",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        },
+        {
+          "name": "Start of Dynasty 17-A Hyksos Kings in Avaris",
+          "dates": null,
+          "note": "A heading row of the table (start of Dynasty 17-A, Hyksos kings in Avaris), not a ruler."
+        },
+        {
+          "name": "Apophis II (start of 15-B)",
+          "dates": "Start Sole-rex: ?; Death or Deposition: ?",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Unlisted Kings",
+          "dates": "Start Sole-rex: 1232; Death or Deposition: 1114",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        },
+        {
+          "name": "Apophis III",
+          "dates": "Start Sole-rex: 1114; Death or Deposition: 1074",
+          "person": "apophis-iii"
+        },
+        {
+          "name": "Khamudi",
+          "dates": "Start Sole-rex: 1074; Death or Deposition: 1063",
+          "person": "khamudi"
+        },
+        {
+          "name": "Dynasty Total",
+          "dates": "Start Sole-rex: 1232; Death or Deposition: 1063",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-8-t7-d18-data",
+      "title": "CFAH-8: Dynasty 18 Chronicler Data (Table 7)",
+      "region": "Egypt",
+      "source": "cfah-8-osf",
+      "citation_short": "CFAH-8, OSF preprint v1.2 (29 Apr 2026), Table 7, pp. 88–90",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Amoses, Tethmesis (Ahmose I)",
+          "dates": null,
+          "lengths": "Africanus: x; Eusebius: 25; Armenian: 25; Josephus: 25 y 4 m; Theophilus: 25 y 4 m; Sothis: 26; Monuments: 22",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "omitted [Thutmose I]",
+          "dates": null,
+          "lengths": "Africanus: omitted; Eusebius: omitted; Armenian: omitted; Josephus: omitted; Theophilus: omitted; Sothis: omitted; Monuments: 9",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Thutmose II * (Khebron, Chebros) [out of order]",
+          "dates": null,
+          "lengths": "Africanus: 13; Eusebius: 13; Armenian: 13; Josephus: 13; Theophilus: 13; Sothis: 13; Monuments: ?",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amenophis * (Amenhotep I out of order)",
+          "dates": null,
+          "lengths": "Africanus: 24 / 21; Eusebius: 21; Armenian: 21; Josephus: 20 y 7 m; Theophilus: 20 y 7 m; Sothis: 15; Monuments: 21",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amensis * (Amenhotep II out of order?)",
+          "dates": null,
+          "lengths": "Africanus: 22; Eusebius: omitted; Armenian: omitted; Josephus: 21 y 9 m; Theophilus: 21 y 1 m; Sothis: 11; Monuments: 22 y 6 m 10 d (Baker 2008, 472)",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Misaphris, Miphres (Hatshepsut / Neferure ?)",
+          "dates": null,
+          "lengths": "Africanus: 13; Eusebius: 12; Armenian: 12; Josephus: 12 y 9 m; Theophilus: 12 y 9 m; Sothis: 23; Monuments: 22 y 6 m",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Misphragmouthosis, Mephramuthosis (Thutmose III)",
+          "dates": null,
+          "lengths": "Africanus: 26; Eusebius: 26; Armenian: 26; Josephus: 25 y 10 m; Theophilus: 25 y 10 m; Sothis: 16; Monuments: 53 y 10 m 26 d (Breasted 1906, VII, §592)",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Tuthmosis, Thmousis (Thutmose IV)",
+          "dates": null,
+          "lengths": "Africanus: 9; Eusebius: 9; Armenian: 9; Josephus: 9 y 8 m; Theophilus: 9 y 8 m; Sothis: 39; Monuments: 8",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amenophis (Amenhotep III)",
+          "dates": null,
+          "lengths": "Africanus: 31; Eusebius: 31; Armenian: 31; Josephus: 30 y 10 m; Theophilus: 30 y 10 m; Sothis: 34; Monuments: 38",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Orus (Amenhotep IV)",
+          "dates": null,
+          "lengths": "Africanus: 37; Eusebius: 36 / 38; Armenian: 28; Josephus: 36 y 5 m; Theophilus: 36 y 5 m; Sothis: 48; Monuments: 17",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Acherres Called “his daughter Acencheres” by Theophilus (Nefertiti?)",
+          "dates": null,
+          "lengths": "Africanus: 32; Eusebius: 12; Armenian: 16; Josephus: 12 y 1 m; Theophilus: 12 y 1 m; Sothis: 25; Monuments: none",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Rathos (Tutankhamun)",
+          "dates": null,
+          "lengths": "Africanus: 6; Eusebius: 39 / 9; Josephus: 9 y; Theophilus: 9 y; Sothis: 29",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Omitted (Ay)",
+          "dates": null,
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Chebres, Acencherres (Horemheb)",
+          "dates": null,
+          "lengths": "Africanus: 12; Eusebius: 16; Armenian: 8; Josephus: 12 y 5 m; Theophilus: 12 y 5 m; Sothis: 26; Monuments: 27",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Acencherres II (Shoshenq I ?)",
+          "dates": null,
+          "lengths": "Africanus: 12; Eusebius: 8; Josephus: 12 y 3 m; Theophilus: 12 y 3 m",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Cherres (Osorkon I ?)",
+          "dates": null,
+          "lengths": "Eusebius: 15; Armenian: 15; Sothis: 8/30",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Harmais (Harsiese?)",
+          "dates": null,
+          "lengths": "Africanus: 5; Eusebius: 5; Armenian: 5; Josephus: 4 y 1 m; Theophilus: 4 y 1 m; Sothis: 9",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Rameses I Misplaced from D19",
+          "dates": null,
+          "lengths": "Africanus: 1; Josephus: 1 y 4 m; Theophilus: 1 y 4 m",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Harmesses Miamun / Aegypticus (Piankhi / Piye ?)",
+          "dates": null,
+          "lengths": "Eusebius: 68; Armenian: 68; Josephus: 66 y 2 m; Theophilus: 66 y 2 m; Sothis: 68; Monuments: > 31 y",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amenophis (Taharqa?)",
+          "dates": null,
+          "lengths": "Africanus: 19; Eusebius: 40; Armenian: 40; Josephus: 19 y 6 m; Theophilus: 16 y 6 mo; Sothis: 8",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Thuoris I",
+          "dates": null,
+          "lengths": "Sothis: 17",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sethos (Seti of Dynasty 19)",
+          "dates": null,
+          "lengths": "Josephus: 59; Theophilus: 10",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Stated Total",
+          "dates": null,
+          "lengths": "Africanus: 263; Eusebius: 348; Armenian: 348",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-9-t2-d19-26",
+      "title": "CFAH-9: Integrated Chronology of Dynasties 19 and 26 (Table 2)",
+      "region": "Egypt",
+      "source": "cfah-9-osf",
+      "citation_short": "CFAH-9, OSF preprint v1.4 (25 Sep 2025), Table 2, p. 58",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Rameses I / Necho I",
+          "dates": "Start: 671/666; End: 665",
+          "person": "rameses-i"
+        },
+        {
+          "name": "Seti I / Psammetichus I",
+          "dates": "Start: 663; End: 611",
+          "person": "psammetichus-i"
+        },
+        {
+          "name": "Rameses II",
+          "dates": "Start: 644; End: 678",
+          "person": "rameses-ii"
+        },
+        {
+          "name": "Rameses B / Necho II",
+          "dates": "Start: 611; End: 594",
+          "person": "necho-ii"
+        },
+        {
+          "name": "Khaemwaset / Psamtik II",
+          "dates": "Start: 594; End: 589",
+          "person": "psammis"
+        },
+        {
+          "name": "Merneptah / Hophra/Apries",
+          "dates": "Start: 589; End: 567",
+          "person": "apries"
+        },
+        {
+          "name": "Amenmesse / Amasis",
+          "dates": "Start: 570/567; End: 526",
+          "person": "amasis-ii"
+        },
+        {
+          "name": "Psamtik III",
+          "dates": "Start: 526; End: 525",
+          "person": "psammenitus"
+        },
+        {
+          "name": "Persian Desolation / Persian Desolation",
+          "dates": "Start: 525; End: 484",
+          "note": "A period (the Persian desolation of Egypt, 525-484 BC as printed), not a ruler."
+        },
+        {
+          "name": "Tausret & Siptah (son)",
+          "dates": "Start: ~482; End: 475",
+          "person": "tausret"
+        },
+        {
+          "name": "Seti II / Inaros II",
+          "dates": "Start: 475; End: 469",
+          "person": "seti-ii"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-9-t5-d19-lengths",
+      "title": "CFAH-9: Dynasty 19 Reign Lengths (Table 5)",
+      "region": "Egypt",
+      "source": "cfah-9-osf",
+      "citation_short": "CFAH-9, OSF preprint v1.4 (25 Sep 2025), Table 5, p. 61",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Rameses I",
+          "dates": null,
+          "lengths": "Africanus: 1",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sethos (Seti I)",
+          "dates": null,
+          "lengths": "Josephus: 59; Sothis: 14 + 4 + 20; Monuments: 11; Africanus: 51; Syncellus: 55",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Rhampses (Ramesses II, the Great)",
+          "dates": null,
+          "lengths": "Josephus: 66; Sothis: 45; Monuments: 67; Africanus: 61/66/60; Syncellus: 66",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Merneptah (Ammenephthes)",
+          "dates": null,
+          "lengths": "Sothis: 2[0]; Monuments: 8 or 10; Africanus: 20; Syncellus: 40",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Sety II (Seti II) (Ochyras?)",
+          "dates": null,
+          "lengths": "Sothis: 14; Monuments: 4; Africanus: 60",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Ammenemes",
+          "dates": null,
+          "lengths": "Sothis: 26; Monuments: 1; Africanus: 5[0]; Syncellus: 26",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Ochyras",
+          "dates": null,
+          "lengths": "Sothis: 14",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amendes",
+          "dates": null,
+          "lengths": "Sothis: 27",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Queen Thuoris (Tausert)",
+          "dates": null,
+          "lengths": "Sothis: 50; Monuments: 6; Africanus: 7; Syncellus: 7",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-9-t6-d26-lengths",
+      "title": "CFAH-9: Dynasty 26 Reign Lengths (Table 6)",
+      "region": "Egypt",
+      "source": "cfah-9-osf",
+      "citation_short": "CFAH-9, OSF preprint v1.4 (25 Sep 2025), Table 6, p. 62",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Ammeres the Ethiopian",
+          "dates": null,
+          "lengths": "Syncellus: 12; Eusebius (Armenian): 18",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Stephinates",
+          "dates": null,
+          "lengths": "Africanus: 7; Syncellus: 7; Eusebius (Armenian): 7",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Nechepsos",
+          "dates": null,
+          "lengths": "Africanus: 6; Syncellus: 6; Eusebius (Armenian): 6",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Nechao",
+          "dates": null,
+          "lengths": "Africanus: 8; Syncellus: 8; Eusebius (Armenian): 8",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Psammetichos I (Sethos)",
+          "dates": null,
+          "lengths": "Herodotus: 54; Sothis: 14; Monuments: 54; Africanus: 54; Syncellus: 45; Eusebius (Armenian): 44",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Nechao II",
+          "dates": null,
+          "lengths": "Herodotus: 16; Sothis: 9; Monuments: 16; Africanus: 6; Syncellus: 6; Eusebius (Armenian): 6",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Psamtik II",
+          "dates": null,
+          "lengths": "Herodotus: 6; Sothis: 17; Monuments: 5; Africanus: 6; Syncellus: 17; Eusebius (Armenian): 17; Chron: 12",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Apries (Hophra)",
+          "dates": null,
+          "lengths": "Herodotus: 25; Sothis: 34; Monuments: 19; Africanus: 19; Syncellus: 25; Eusebius (Armenian): 25; Chron: 30",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Amasis",
+          "dates": null,
+          "lengths": "Herodotus: 43.5; Sothis: 50; Monuments: 44; Africanus: 44; Syncellus: 42; Eusebius (Armenian): 42",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Psamtik III",
+          "dates": null,
+          "lengths": "Herodotus: 0.5; Monuments: 0.5; Africanus: 0.5",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+        },
+        {
+          "name": "Total",
+          "dates": null,
+          "lengths": "Herodotus: 145; Sothis: 124; Monuments: 138.5; Africanus: 129.5; Syncellus: 135; Eusebius (Armenian): 134; Chron: 42",
+          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
         }
       ],
       "unrecorded_reason": null

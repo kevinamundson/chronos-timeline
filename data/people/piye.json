@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "piye",
+  "type": "person",
+  "title": "Ammeris",
+  "summary": "King listed in CFAH-10 Table 7 (Egypt Dynasty 24).",
+  "description": "Ruler of Egypt Dynasty 24. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-10 (Table 7, \"CFAH Solution for Dynasty 24\"); its dates are display only.",
+  "alt_names": [
+    "Piye"
+  ],
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Reign: 18; Start: 778; End: 760",
+        "year_am": null,
+        "year_bc_ad": -778,
+        "year_bc_ad_end": -760,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-10: The Libyan-Cushite Intermediate Period,\" OSF preprint v1.4 (26 Dec 2025), doi:10.17605/OSF.IO/FG4DV, file CFAH-10 The Libyan-Cushite Intermediate Period_v1.4.pdf, Table 7 \"CFAH Solution for Dynasty 24\", p. 27",
+        "link": "https://osf.io/fg4dv/",
+        "source_text_id": "cfah-10-osf",
+        "note": "Row \"Ammeris / Piye\" of Table 7 (Egypt Dynasty 24).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-10-t7-d24:ammeris-piye:piye:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Reign: 18 / 68; Start: 778; End: 710",
+        "year_am": null,
+        "year_bc_ad": -778,
+        "year_bc_ad_end": -710,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-10: The Libyan-Cushite Intermediate Period,\" OSF preprint v1.4 (26 Dec 2025), doi:10.17605/OSF.IO/FG4DV, file CFAH-10 The Libyan-Cushite Intermediate Period_v1.4.pdf, Table 9 \"CFAH Solution for Dynasty 25\", p. 28",
+        "link": "https://osf.io/fg4dv/",
+        "source_text_id": "cfah-10-osf",
+        "note": "Row \"Piye / Piankhi / Ammeris the Cushite\" of Table 9 (Egypt Dynasty 25 (Cushite)).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-10-t9-d25:piye-piankhi-ammeris-the-cushite:piye:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Year BC: 778 - 710; Yrs: 68",
+        "year_am": null,
+        "year_bc_ad": -778,
+        "year_bc_ad_end": -710,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-8: Placing Dynasties 15-18,\" OSF preprint v1.2 (29 Apr 2026), doi:10.17605/OSF.IO/Z5RTD, file CFAH-8_v1.2.pdf, Table 14 \"CFAH-Corrected Reigns for Dynasty 18\", pp. 101–102",
+        "link": "https://osf.io/z5rtd/",
+        "source_text_id": "cfah-8-osf",
+        "note": "Row \"Piankhi (Harmesses Miamun)\" of Table 14 (Egypt Dynasty 18).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-8-t14-d18:piankhi-harmesses-miamun:piye:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-10-osf",
+    "cfah-8-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-10-osf",
+      "url": "https://osf.io/fg4dv/",
+      "locator": "Table 7, p. 27"
+    },
+    {
+      "source_id": "cfah-10-osf",
+      "url": "https://osf.io/fg4dv/",
+      "locator": "Table 9, p. 28"
+    },
+    {
+      "source_id": "cfah-8-osf",
+      "url": "https://osf.io/z5rtd/",
+      "locator": "Table 14, pp. 101–102"
+    }
+  ],
+  "dynasty": "Egypt Dynasty 24"
+}

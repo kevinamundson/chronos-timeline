@@ -1,0 +1,76 @@
+{
+ "id": "osf-8-d15-data",
+ "src": "cfah-8-osf",
+ "table": "untitled table",
+ "title": "Dynasty 15 (Hyksos) reign lengths",
+ "dynasty": "Egypt Dynasty 15 (Hyksos)",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  22
+ ],
+ "rows": [
+  {
+   "name": "Salitis",
+   "cells": {
+    "Africanus": "19",
+    "SKL": "19",
+    "Josephus": "19"
+   }
+  },
+  {
+   "name": "Bnon",
+   "cells": {
+    "Africanus": "44",
+    "SKL": "44",
+    "Josephus": "44"
+   }
+  },
+  {
+   "name": "Apachnan",
+   "cells": {
+    "Africanus": "61",
+    "SKL": "36",
+    "Josephus": "36 y 7 m"
+   }
+  },
+  {
+   "name": "Apophis",
+   "cells": {
+    "Africanus": "61",
+    "SKL": "61",
+    "Josephus": "61"
+   }
+  },
+  {
+   "name": "Iannas, Sethos",
+   "cells": {
+    "Africanus": "50",
+    "SKL": "50",
+    "Josephus": "50"
+   }
+  },
+  {
+   "name": "Certos",
+   "cells": {
+    "SKL": "29"
+   }
+  },
+  {
+   "name": "Assis / Archles / Aseth",
+   "cells": {
+    "Africanus": "49",
+    "SKL": "20",
+    "Josephus": "49 y 2 m"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Africanus": "284",
+    "SKL": "259",
+    "Josephus": "259 y 9 m"
+   }
+  }
+ ]
+}

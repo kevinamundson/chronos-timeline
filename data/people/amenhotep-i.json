@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "amenhotep-i",
+  "type": "person",
+  "title": "Amenhotep I",
+  "summary": "King listed in CFAH-8 Table 14 (Egypt Dynasty 18).",
+  "description": "Ruler of Egypt Dynasty 18. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-8 (Table 14, \"CFAH-Corrected Reigns for Dynasty 18\"); its dates are display only.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Year BC: 1056-1035; Yrs: 21",
+        "year_am": null,
+        "year_bc_ad": -1056,
+        "year_bc_ad_end": -1035,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-8: Placing Dynasties 15-18,\" OSF preprint v1.2 (29 Apr 2026), doi:10.17605/OSF.IO/Z5RTD, file CFAH-8_v1.2.pdf, Table 14 \"CFAH-Corrected Reigns for Dynasty 18\", pp. 101–102",
+        "link": "https://osf.io/z5rtd/",
+        "source_text_id": "cfah-8-osf",
+        "note": "Row \"Amenhotep I\" of Table 14 (Egypt Dynasty 18).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-8-t14-d18:amenhotep-i:amenhotep-i:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-8-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-8-osf",
+      "url": "https://osf.io/z5rtd/",
+      "locator": "Table 14, pp. 101–102"
+    }
+  ],
+  "dynasty": "Egypt Dynasty 18"
+}

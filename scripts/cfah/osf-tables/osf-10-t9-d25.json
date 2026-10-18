@@ -1,0 +1,66 @@
+{
+ "id": "osf-10-t9-d25",
+ "src": "cfah-10-osf",
+ "table": "Table 9",
+ "title": "CFAH Solution for Dynasty 25",
+ "dynasty": "Egypt Dynasty 25 (Cushite)",
+ "kind": "dated",
+ "region": "Egypt",
+ "yearCols": [
+  "Start",
+  "End"
+ ],
+ "pages": [
+  28
+ ],
+ "rows": [
+  {
+   "name": "Kashta",
+   "cells": {
+    "Reign": "~20",
+    "Start": "798",
+    "End": "778"
+   }
+  },
+  {
+   "name": "Piye / Piankhi / Ammeris the Cushite",
+   "cells": {
+    "Reign": "18 / 68",
+    "Start": "778",
+    "End": "710"
+   }
+  },
+  {
+   "name": "Shebitku",
+   "cells": {
+    "Reign": "12",
+    "Start": "713",
+    "End": "701"
+   }
+  },
+  {
+   "name": "Shabaka",
+   "cells": {
+    "Reign": "15",
+    "Start": "705",
+    "End": "690"
+   }
+  },
+  {
+   "name": "Taharqa",
+   "cells": {
+    "Reign": "26 / 20 / 18",
+    "Start": "691 / 690",
+    "End": "671 / 664"
+   }
+  },
+  {
+   "name": "Tantamani",
+   "cells": {
+    "Reign": "~10+",
+    "Start": "664",
+    "End": "653"
+   }
+  }
+ ]
+}

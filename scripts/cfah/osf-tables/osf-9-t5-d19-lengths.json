@@ -1,0 +1,87 @@
+{
+ "id": "osf-9-t5-d19-lengths",
+ "src": "cfah-9-osf",
+ "table": "Table 5",
+ "title": "Dynasty 19 Reign Lengths",
+ "dynasty": "Egypt Dynasty 19",
+ "kind": "lengths",
+ "region": "Egypt",
+ "pages": [
+  61
+ ],
+ "rows": [
+  {
+   "name": "Rameses I",
+   "cells": {
+    "Africanus": "1"
+   }
+  },
+  {
+   "name": "Sethos (Seti I)",
+   "cells": {
+    "Josephus": "59",
+    "Sothis": "14 + 4 + 20",
+    "Monuments": "11",
+    "Africanus": "51",
+    "Syncellus": "55"
+   }
+  },
+  {
+   "name": "Rhampses (Ramesses II, the Great)",
+   "cells": {
+    "Josephus": "66",
+    "Sothis": "45",
+    "Monuments": "67",
+    "Africanus": "61/66/60",
+    "Syncellus": "66"
+   }
+  },
+  {
+   "name": "Merneptah (Ammenephthes)",
+   "cells": {
+    "Sothis": "2[0]",
+    "Monuments": "8 or 10",
+    "Africanus": "20",
+    "Syncellus": "40"
+   }
+  },
+  {
+   "name": "Sety II (Seti II) (Ochyras?)",
+   "cells": {
+    "Sothis": "14",
+    "Monuments": "4",
+    "Africanus": "60"
+   }
+  },
+  {
+   "name": "Ammenemes",
+   "cells": {
+    "Sothis": "26",
+    "Monuments": "1",
+    "Africanus": "5[0]",
+    "Syncellus": "26"
+   }
+  },
+  {
+   "name": "Ochyras",
+   "cells": {
+    "Sothis": "14"
+   }
+  },
+  {
+   "name": "Amendes",
+   "cells": {
+    "Sothis": "27"
+   }
+  },
+  {
+   "name": "Queen Thuoris (Tausert)",
+   "cells": {
+    "Sothis": "50",
+    "Monuments": "6",
+    "Africanus": "7",
+    "Syncellus": "7"
+   }
+  }
+ ]
+}

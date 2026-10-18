@@ -1212,6 +1212,25 @@
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
       "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cfah-11-osf",
+      "title": "CFAH-11: Dynasties 20 and 21",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF preprint v1.3, 17 Nov 2025 (file CFAH-11_v1.3.pdf), doi:10.17605/OSF.IO/KSAZ9",
+      "url": "https://osf.io/ksaz9/",
+      "alt_urls": [
+        "https://osf.io/ksaz9/files/osfstorage/691b7af0da99a0f32c76fc0a"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-18",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
     }
   ]
 }

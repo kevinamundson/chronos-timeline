@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "pami",
+  "type": "person",
+  "title": "Pami",
+  "summary": "King listed in CFAH-10 Table 3 (Egypt Dynasty 22).",
+  "description": "Ruler of Egypt Dynasty 22. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-10 (Table 3, \"CFAH Solution for Dynasty 22\"); its dates are display only.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Reign: 10; Start: 650; End: 640",
+        "year_am": null,
+        "year_bc_ad": -650,
+        "year_bc_ad_end": -640,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-10: The Libyan-Cushite Intermediate Period,\" OSF preprint v1.4 (26 Dec 2025), doi:10.17605/OSF.IO/FG4DV, file CFAH-10 The Libyan-Cushite Intermediate Period_v1.4.pdf, Table 3 \"CFAH Solution for Dynasty 22\", p. 25",
+        "link": "https://osf.io/fg4dv/",
+        "source_text_id": "cfah-10-osf",
+        "note": "Row \"Pami\" of Table 3 (Egypt Dynasty 22).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-10-t3-d22:pami:pami:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-10-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-10-osf",
+      "url": "https://osf.io/fg4dv/",
+      "locator": "Table 3, p. 25"
+    }
+  ],
+  "dynasty": "Egypt Dynasty 22"
+}
