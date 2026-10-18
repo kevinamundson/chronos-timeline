@@ -6,7 +6,7 @@
 // script only backfills `cfah_ap` (the AP number) and `cfah_preprint` (OSF) on them.
 // Sort: a record the script touches is re-sorted by the four-tier rule; any change of tier or year is logged
 // in scripts/cfah/sort-changes.json (cumulative) and noted in the record's sorting_basis note.
-import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync, unlinkSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { ARJ, arjCitation, OSF, osfUrl, osfCitation } from './papers.mjs';
@@ -193,6 +193,14 @@ for (const it of P5.items) { ensureOsfSource(it.src); addEntry('phase5', it, 'pa
   writeFileSync(kf, JSON.stringify(kd, null, 2) + '\n');
 }
 dropStale();
+// a person this importer created in phase 5 whose rows were all remapped since: remove it (nothing else refers to it yet)
+for (const [id, r] of Object.entries(recs)) {
+  if (createdBy[id] !== 'phase5' || r.doc.type !== 'person') continue;
+  if (Object.values(r.doc.dates || {}).some((l) => l.some((e) => e.cfah_key && managed.has(e.cfah_key)))) continue;
+  if (r.doc.sources.some((s) => !/^cfah-/.test(s))) continue;
+  const f = join(DATA, 'people', `${id}.json`); if (existsSync(f)) unlinkSync(f);
+  delete recs[id]; delete createdBy[id]; console.log(`phase5: removed orphan person ${id}`);
+}
 backfill();
 for (const r of Object.values(recs)) if (r.touched && r.doc.type !== 'location') resort(r);
 for (const [id, r] of Object.entries(recs)) if (r.dirty) writeFileSync(join(DATA, r.dir, `${id}.json`), JSON.stringify(r.doc, null, 2) + '\n');

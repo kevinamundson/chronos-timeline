@@ -51,17 +51,19 @@ export function buildPhase5(tables, existingIds) {
       const y = -ys[0]; let yEnd = ys.length > 1 ? -ys[ys.length - 1] : null; let note = spec?.note || null;
       if (yEnd != null && yEnd < y) { note = [note, `The table's last year (${-yEnd}) is earlier than its first (${-y}), so only the first is used for the timeline.`].filter(Boolean).join(' '); yEnd = null; }
       const approx = /~|c\.|\?|unknown|unkown|±|\[|>|<| or /.test(Object.entries(row.cells).filter(([k]) => !t.yearCols || t.yearCols.includes(k)).map(([, v]) => v).join(' '));
-      const create = { title: spec?.title || nm.primary, alt_names: (spec?.alt || nm.alt).length ? (spec?.alt || nm.alt) : undefined, dynasty: spec?.dynasty || t.dynasty,
+      const create = { title: spec?.title || nm.primary.replace(/\s*[*]+$/, ''), alt_names: (spec?.alt || nm.alt).length ? (spec?.alt || nm.alt) : undefined, dynasty: spec?.dynasty || t.dynasty,
         summary: spec?.summary || `${t.dynasty.startsWith('Egypt') ? 'King' : 'Ruler'} listed in CFAH-${meta?.n} ${t.table} (${t.dynasty}).`,
         description: `${spec?.summary || `Ruler of ${t.dynasty}.`} Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-${meta?.n} (${t.table}, "${t.title}"); its dates are display only.`, events: spec?.events || [] };
       if (!create.alt_names) delete create.alt_names;
       people[id] ||= [];
-      people[id].push(t.id);
+      people[id].push({ table: t.id, create, rank: (spec?.title ? 0 : 2) + (/EKL/.test(t.dynasty) || /alter egos|and 26/.test(t.dynasty) ? 1 : 0) });
       items.push({ key: `osf:${t.id}:${slug(row.name).slice(0, 60)}`, src: t.src, where, date: cellText, y, yEnd, precision: approx ? 'approximate' : yEnd != null ? 'year-range' : 'year', target: id, kind: 'person', slot: 'reign', create,
         locator: `${t.table}, ${pages}`, note: [`Row "${row.name}" of ${t.table} (${t.dynasty}).`, note].filter(Boolean).join(' ') });
       entry.person = id; list.entries.push(entry);
     }
     lists.push(list);
   }
+  // one create block per person: prefer a row whose map entry names the title, then a plain dynasty table
+  for (const it of items) { const c = people[it.target]; if (c) it.create = [...c].sort((a, b) => a.rank - b.rank)[0].create; }
   return { items, lists, problems, people };
 }

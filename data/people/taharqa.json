@@ -3,8 +3,11 @@
   "id": "taharqa",
   "type": "person",
   "title": "Taharqa",
-  "summary": "King listed in CFAH-10 Table 9 (Egypt Dynasty 25 (Cushite)).",
-  "description": "Ruler of Egypt Dynasty 25 (Cushite). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-10 (Table 9, \"CFAH Solution for Dynasty 25\"); its dates are display only.",
+  "summary": "King listed in CFAH-8 Table 14 (Egypt Dynasty 18).",
+  "description": "Ruler of Egypt Dynasty 18. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-8 (Table 14, \"CFAH-Corrected Reigns for Dynasty 18\"); its dates are display only.",
+  "alt_names": [
+    "Amenophis (Dynasty 18 of the chroniclers)"
+  ],
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",

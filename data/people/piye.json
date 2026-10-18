@@ -2,11 +2,13 @@
   "$schema": "../../schema/person.schema.json",
   "id": "piye",
   "type": "person",
-  "title": "Ammeris",
-  "summary": "King listed in CFAH-10 Table 7 (Egypt Dynasty 24).",
-  "description": "Ruler of Egypt Dynasty 24. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-10 (Table 7, \"CFAH Solution for Dynasty 24\"); its dates are display only.",
+  "title": "Piye",
+  "summary": "King listed in CFAH-8 Table 14 (Egypt Dynasty 18).",
+  "description": "Ruler of Egypt Dynasty 18. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-8 (Table 14, \"CFAH-Corrected Reigns for Dynasty 18\"); its dates are display only.",
   "alt_names": [
-    "Piye"
+    "Piankhi",
+    "Harmesses Miamun",
+    "Ammeris the Cushite"
   ],
   "sorting_year": null,
   "sorting_basis": {
@@ -90,5 +92,5 @@
       "locator": "Table 14, pp. 101–102"
     }
   ],
-  "dynasty": "Egypt Dynasty 24"
+  "dynasty": "Egypt Dynasty 25 (Cushite)"
 }

@@ -6,8 +6,7 @@
   "summary": "King listed in CFAH-9 Table 2 (Egypt Dynasties 19 and 26).",
   "description": "Ruler of Egypt Dynasties 19 and 26. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-9 (Table 2, \"Integrated Chronology of Dynasties 19 and 26\"); its dates are display only.",
   "alt_names": [
-    "Ramesses II",
-    "Rameses the Great"
+    "Ramesses II"
   ],
   "sorting_year": null,
   "sorting_basis": {
@@ -49,5 +48,5 @@
       "locator": "Table 2, p. 58"
     }
   ],
-  "dynasty": "Egypt Dynasties 19 and 26"
+  "dynasty": "Egypt Dynasty 19"
 }

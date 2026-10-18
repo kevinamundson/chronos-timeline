@@ -3,8 +3,11 @@
   "id": "osorkon-i",
   "type": "person",
   "title": "Osorkon I",
-  "summary": "King listed in CFAH-10 Table 3 (Egypt Dynasty 22).",
-  "description": "Ruler of Egypt Dynasty 22. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-10 (Table 3, \"CFAH Solution for Dynasty 22\"); its dates are display only.",
+  "summary": "King listed in CFAH-8 Table 14 (Egypt Dynasty 18).",
+  "description": "Ruler of Egypt Dynasty 18. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-8 (Table 14, \"CFAH-Corrected Reigns for Dynasty 18\"); its dates are display only.",
+  "alt_names": [
+    "Cherres II"
+  ],
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",

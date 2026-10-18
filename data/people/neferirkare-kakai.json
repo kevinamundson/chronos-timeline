@@ -3,8 +3,12 @@
   "id": "neferirkare-kakai",
   "type": "person",
   "title": "Neferirkare Kakai",
-  "summary": "King listed in CFAH-7B Table 12 (Egypt Dynasty 5).",
-  "description": "Ruler of Egypt Dynasty 5. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 12, \"Integrated Dates for Dynasty 5\"); its dates are display only.",
+  "summary": "King listed in CFAH-7B Table 14 (Egypt Dynasty 2 (Thinis)).",
+  "description": "Ruler of Egypt Dynasty 2 (Thinis). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 14, \"Integrated Dates for Dynasty 2\"); its dates are display only.",
+  "alt_names": [
+    "Nephercheres",
+    "Neferkara"
+  ],
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",
@@ -66,5 +70,5 @@
       "locator": "Table 14, p. 102"
     }
   ],
-  "dynasty": "Egypt Dynasty 5"
+  "dynasty": "Egypt Dynasty 2 (Thinis)"
 }

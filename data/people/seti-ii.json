@@ -2,9 +2,9 @@
   "$schema": "../../schema/person.schema.json",
   "id": "seti-ii",
   "type": "person",
-  "title": "Seti II (D19)",
-  "summary": "King listed in CFAH-11 Table 1 (Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30)).",
-  "description": "Ruler of Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-11 (Table 1, \"Proposed Dynasty 20 Rulers and Reigns\"); its dates are display only.",
+  "title": "Seti II",
+  "summary": "King listed in CFAH-9 Table 2 (Egypt Dynasties 19 and 26).",
+  "description": "Ruler of Egypt Dynasties 19 and 26. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-9 (Table 2, \"Integrated Chronology of Dynasties 19 and 26\"); its dates are display only.",
   "alt_names": [
     "Inaros II"
   ],
@@ -70,5 +70,5 @@
       "locator": "Table 2, p. 58"
     }
   ],
-  "dynasty": "Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30)"
+  "dynasty": "Egypt Dynasty 19"
 }

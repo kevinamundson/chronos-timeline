@@ -3,12 +3,8 @@
   "id": "mentuhotep-i",
   "type": "person",
   "title": "Mentuhotep I",
-  "summary": "King listed in CFAH-7B Table 15 (Egypt (Eratosthenes King List, EKL)).",
-  "description": "Ruler of Egypt (Eratosthenes King List, EKL). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 15, \"EKL Solution Dynasties 4, 11, 12, 6\"); its dates are display only.",
-  "alt_names": [
-    "Mares",
-    "EKL #9"
-  ],
+  "summary": "King listed in CFAH-7B Table 9 (Egypt Dynasty 11 (Thebes)).",
+  "description": "Ruler of Egypt Dynasty 11 (Thebes). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 9, \"Integrated Dates for Dynasty 11\"); its dates are display only.",
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",
@@ -69,5 +65,5 @@
       "locator": "Table 9, p. 97"
     }
   ],
-  "dynasty": "Egypt (Eratosthenes King List, EKL)"
+  "dynasty": "Egypt Dynasty 11 (Thebes)"
 }

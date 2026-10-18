@@ -3,12 +3,8 @@
   "id": "pepi-ii",
   "type": "person",
   "title": "Pepi II",
-  "summary": "King listed in CFAH-7B Table 15 (Egypt (Eratosthenes King List, EKL)).",
-  "description": "Ruler of Egypt (Eratosthenes King List, EKL). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 15, \"EKL Solution Dynasties 4, 11, 12, 6\"); its dates are display only.",
-  "alt_names": [
-    "Apappus",
-    "EKL #20"
-  ],
+  "summary": "King listed in CFAH-7B Table 16 (Egypt Dynasty 6).",
+  "description": "Ruler of Egypt Dynasty 6. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 16, \"Integrated Dates for Dynasty 6\"); its dates are display only.",
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",
@@ -70,5 +66,5 @@
       "locator": "Table 16, p. 104"
     }
   ],
-  "dynasty": "Egypt (Eratosthenes King List, EKL)"
+  "dynasty": "Egypt Dynasty 6"
 }

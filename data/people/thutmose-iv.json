@@ -2,7 +2,7 @@
   "$schema": "../../schema/person.schema.json",
   "id": "thutmose-iv",
   "type": "person",
-  "title": "Thutmose IV + AHIII",
+  "title": "Thutmose IV",
   "summary": "King listed in CFAH-8 Table 14 (Egypt Dynasty 18).",
   "description": "Ruler of Egypt Dynasty 18. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-8 (Table 14, \"CFAH-Corrected Reigns for Dynasty 18\"); its dates are display only.",
   "sorting_year": null,
