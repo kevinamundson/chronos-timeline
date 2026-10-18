@@ -1,0 +1,190 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "eber",
+  "type": "person",
+  "title": "Eber (Heber)",
+  "alt_names": [
+    "Heber"
+  ],
+  "summary": "Son of Salah; father of Peleg and Joktan (Gen 10:25). Ussher notes he outlived Abraham and that the name \"Hebrew\" comes from him (§102).",
+  "description": "Masoretic text: born AM 1723 (when his father was the age given in Gen 11), lived 464 years, died AM 2187. No CFAH paper dates this person; the sort year falls to Ussher.",
+  "sorting_year": -2281,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals (1658): 2281 BC (no higher-tier year available)."
+  },
+  "father": "salah",
+  "children": [
+    "peleg"
+  ],
+  "scripture_facts": {
+    "age_at_named_son": 34,
+    "named_son": null,
+    "lifespan_years": 464,
+    "refs": [
+      "Gen.11.14-Gen.11.17"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "1723 AM",
+        "year_am": 1723,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), \"Chronological Compendium\", p. 1 (\"Eber born when Salah was 30 ... 1723\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "AM only; no BC printed.",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1723",
+        "year_am": 1723,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 11:10–26 (Arphaxad AM 1658 = Shem's 100th year, two years after the Flood of AM 1656; each later birth adds the father's age at the named son)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1723d AM, 2281 BC",
+        "year_am": 1723,
+        "year_bc_ad": -2281,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Second Age §46 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "1723 - Eber born.",
+        "year_am": 1723,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §8 \"The Chronology of Genesis 11\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-4"
+      },
+      {
+        "source": "josephus",
+        "date": "\"he himself [Heber] being begotten by Sala when he was a hundred and thirty years old\"",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Josephus, Antiquities I.6.5 (Whiston)",
+        "link": "https://www.gutenberg.org/ebooks/2848",
+        "note": "Josephus (Whiston) has 130; the Masoretic text has 30 (Gen 11:14).",
+        "source_text_id": "josephus-antiquities-whiston"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 2187",
+        "year_am": 2187,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "1723 + 464 = 2187 (lifespan from Gen 11:14–11:17)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "2187d AM, 1817 BC",
+        "year_am": 2187,
+        "year_bc_ad": -1817,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §102 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"Eber outlived \\\"Abram the Hebrew [Eberite]\\\" 4 yrs. Jacob and Esau were 19 when Eber died.\"",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §8 \"The Chronology of Genesis 11\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "note": "Stated relative to Abraham; Jordan prints no AM figure for this death.",
+        "source_text_id": "jordan-bc-6-4"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.10.21",
+    "Gen.10.24-Gen.10.25",
+    "Gen.11.14-Gen.11.17",
+    "1Chr.1.18-1Chr.1.19",
+    "Luke.3.35"
+  ],
+  "sources": [
+    "jones-chronology-ot-2002",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-4",
+    "josephus-antiquities-whiston"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.10.21 ; Gen.10.24-Gen.10.25 ; Gen.11.14-Gen.11.17 ; 1Chr.1.18-1Chr.1.19 ; Luke.3.35"
+    },
+    {
+      "source_id": "jordan-bc-6-4",
+      "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "locator": "§8 year list"
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book I, ch. 6, §5"
+    }
+  ],
+  "related": [
+    "salah",
+    "peleg"
+  ],
+  "events": []
+}

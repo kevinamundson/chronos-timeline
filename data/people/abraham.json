@@ -7,7 +7,7 @@
     "Abram"
   ],
   "summary": "Son of Terah; called by God from Ur and Haran; father of the faithful (Gen 11–25).",
-  "description": "Father Terah (not yet a record).",
+  "description": "Father: Terah.",
   "sorting_year": -1996,
   "sorting_basis": {
     "tier": "cfah-table1",
@@ -15,7 +15,7 @@
     "chronology": "cfah",
     "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1996 BC (Birth of Abraham) (no higher-tier year available)."
   },
-  "father": null,
+  "father": "terah",
   "children": [],
   "scripture_facts": {
     "age_at_named_son": null,
@@ -152,7 +152,8 @@
   "related": [
     "abraham-birth",
     "abraham-enters-canaan",
-    "canaan"
+    "canaan",
+    "terah"
   ],
   "events": [
     "abraham-birth",

@@ -1,0 +1,188 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "nahor",
+  "type": "person",
+  "title": "Nahor (son of Serug)",
+  "alt_names": [
+    "Nachor"
+  ],
+  "summary": "Son of Serug (Gen 11:22); father of Terah and grandfather of Abraham. Not to be confused with Abraham's brother Nahor (Gen 11:26).",
+  "description": "Masoretic text: born AM 1849 (when his father was the age given in Gen 11), lived 148 years, died AM 1997. No CFAH paper dates this person; the sort year falls to Ussher.",
+  "sorting_year": -2155,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals (1658): 2155 BC (no higher-tier year available)."
+  },
+  "father": "serug",
+  "children": [
+    "terah"
+  ],
+  "scripture_facts": {
+    "age_at_named_son": 29,
+    "named_son": "terah",
+    "lifespan_years": 148,
+    "refs": [
+      "Gen.11.22-Gen.11.25"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "1849 AM",
+        "year_am": 1849,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), \"Chronological Compendium\", p. 1 (\"Nahor born when Serug was 30 ... 1849\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "AM only; no BC printed.",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1849",
+        "year_am": 1849,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 11:10–26 (Arphaxad AM 1658 = Shem's 100th year, two years after the Flood of AM 1656; each later birth adds the father's age at the named son)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1849d AM, 2155 BC",
+        "year_am": 1849,
+        "year_bc_ad": -2155,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Second Age §53 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "1849 - Nahor born",
+        "year_am": 1849,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §8 \"The Chronology of Genesis 11\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-4"
+      },
+      {
+        "source": "josephus",
+        "date": "\"Nahor was born to Serug in his hundred and thirty-second year\"",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Josephus, Antiquities I.6.5 (Whiston)",
+        "link": "https://www.gutenberg.org/ebooks/2848",
+        "note": "Josephus (Whiston) has 132; the Masoretic text has 30 (Gen 11:22).",
+        "source_text_id": "josephus-antiquities-whiston"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1997",
+        "year_am": 1997,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "1849 + 148 = 1997 (lifespan from Gen 11:22–11:25)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1997d AM, 2007 BC",
+        "year_am": 1997,
+        "year_bc_ad": -2007,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Second Age §61 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "1997 - Nahor died",
+        "year_am": 1997,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §8 \"The Chronology of Genesis 11\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-4"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.11.22-Gen.11.25",
+    "1Chr.1.26",
+    "Luke.3.34"
+  ],
+  "sources": [
+    "jones-chronology-ot-2002",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-4",
+    "josephus-antiquities-whiston"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.11.22-Gen.11.25 ; 1Chr.1.26 ; Luke.3.34"
+    },
+    {
+      "source_id": "jordan-bc-6-4",
+      "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "locator": "§8 year list"
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book I, ch. 6, §5"
+    }
+  ],
+  "related": [
+    "serug",
+    "terah"
+  ],
+  "events": []
+}

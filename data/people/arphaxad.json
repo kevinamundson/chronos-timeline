@@ -1,0 +1,193 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "arphaxad",
+  "type": "person",
+  "title": "Arphaxad (Arpachshad)",
+  "alt_names": [
+    "Arpachshad",
+    "Arphaxad"
+  ],
+  "summary": "Son of Shem, born two years after the Flood (Gen 11:10); ancestor of Eber and Abraham.",
+  "description": "Masoretic text: born AM 1658 (when his father was the age given in Gen 11), lived 438 years, died AM 2096. No CFAH paper dates this person; the sort year falls to Ussher.",
+  "sorting_year": -2346,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals (1658): 2346 BC (no higher-tier year available)."
+  },
+  "father": "shem",
+  "children": [
+    "salah"
+  ],
+  "scripture_facts": {
+    "age_at_named_son": 35,
+    "named_son": "salah",
+    "lifespan_years": 438,
+    "refs": [
+      "Gen.11.10-Gen.11.13"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "1658 AM",
+        "year_am": 1658,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), \"Chronological Compendium\", p. 1 (\"Arphaxad born when Shem was 100 ... 1658\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "AM only; no BC printed.",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1658",
+        "year_am": 1658,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 11:10–26 (Arphaxad AM 1658 = Shem's 100th year, two years after the Flood of AM 1656; each later birth adds the father's age at the named son)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1658d AM, 2346 BC",
+        "year_am": 1658,
+        "year_bc_ad": -2346,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Second Age §44 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "1658 - Arpachshad born to Shem, 2 years after Flood (Gen. 11:10).",
+        "year_am": 1658,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §8 \"The Chronology of Genesis 11\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "note": "Also BC 2:5 \"The Arphaxad Connection\": \"It is clear that Arphaxad was born two years after the Flood Year, in AM 1658.\"",
+        "source_text_id": "jordan-bc-6-4"
+      },
+      {
+        "source": "josephus",
+        "date": "\"Arphaxad was the son of Shem, and born twelve years after the deluge.\"",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Josephus, Antiquities I.6.5 (Whiston)",
+        "link": "https://www.gutenberg.org/ebooks/2848",
+        "note": "Josephus counts 12 years after the Flood; Gen 11:10 says two years.",
+        "source_text_id": "josephus-antiquities-whiston"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 2096",
+        "year_am": 2096,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "1658 + 438 = 2096 (lifespan from Gen 11:10–11:13)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "2096d AM, 1908 BC",
+        "year_am": 2096,
+        "year_bc_ad": -1908,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Third Age §80 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"Abram was 86 when Arpachshad died, and Ishmael was 2 years old.\"",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §8 \"The Chronology of Genesis 11\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "note": "Stated relative to Abraham; Jordan prints no AM figure for this death.",
+        "source_text_id": "jordan-bc-6-4"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.10.22",
+    "Gen.10.24",
+    "Gen.11.10-Gen.11.13",
+    "1Chr.1.17-1Chr.1.18",
+    "Luke.3.36"
+  ],
+  "sources": [
+    "jones-chronology-ot-2002",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-4",
+    "josephus-antiquities-whiston",
+    "jordan-bc-2-5"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.10.22 ; Gen.10.24 ; Gen.11.10-Gen.11.13 ; 1Chr.1.17-1Chr.1.18 ; Luke.3.36"
+    },
+    {
+      "source_id": "jordan-bc-6-4",
+      "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "locator": "§8 year list"
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book I, ch. 6, §5"
+    }
+  ],
+  "related": [
+    "shem",
+    "salah",
+    "the-flood"
+  ],
+  "events": []
+}

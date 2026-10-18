@@ -1,0 +1,208 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "terah",
+  "type": "person",
+  "title": "Terah (Thara)",
+  "alt_names": [
+    "Thara"
+  ],
+  "summary": "Son of Nahor; father of Abram, Nahor and Haran (Gen 11:26). Took his family from Ur of the Chaldees to Haran, where he died aged 205 (Gen 11:31-32).",
+  "description": "Masoretic text: born AM 1878 (when his father was the age given in Gen 11), lived 205 years, died AM 2083. No CFAH paper dates this person; the sort year falls to Ussher.",
+  "sorting_year": -2126,
+  "sorting_basis": {
+    "tier": "ussher",
+    "tier_rank": 4,
+    "chronology": "ussher",
+    "note": "Tier 4: Ussher, Annals (1658): 2126 BC (no higher-tier year available)."
+  },
+  "father": "nahor",
+  "children": [
+    "abraham"
+  ],
+  "scripture_facts": {
+    "age_at_named_son": 70,
+    "named_son": "abraham",
+    "lifespan_years": 205,
+    "refs": [
+      "Gen.11.24-Gen.11.32"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "1878 AM",
+        "year_am": 1878,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), \"Chronological Compendium\", p. 1 (\"Terah born when Nahor was 29 ... 1878\")",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "note": "AM only; no BC printed.",
+        "source_text_id": "jones-chronology-ot-2002"
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 1878",
+        "year_am": 1878,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Gen 11:10–26 (Arphaxad AM 1658 = Shem's 100th year, two years after the Flood of AM 1656; each later birth adds the father's age at the named son)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "1878d AM, 2126 BC",
+        "year_am": 1878,
+        "year_bc_ad": -2126,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Second Age §54 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "1878 - Terah born",
+        "year_am": 1878,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §8 \"The Chronology of Genesis 11\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-4"
+      },
+      {
+        "source": "josephus",
+        "date": "\"Nahor begat Haran when he was one hundred and twenty years old\"",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Josephus, Antiquities I.6.5 (Whiston)",
+        "link": "https://www.gutenberg.org/ebooks/2848",
+        "note": "Whiston's text names the son \"Haran\" here, but the series runs Nahor → Terah; Josephus' 120 differs from the Masoretic 29 (Gen 11:24). Treat as a Josephus/Whiston reading, not a date.",
+        "source_text_id": "josephus-antiquities-whiston"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002). Leave empty until verified."
+      },
+      {
+        "source": "masoretic-genealogy",
+        "date": "AM 2083",
+        "year_am": 2083,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "1878 + 205 = 2083 (lifespan from Gen 11:24–11:32)",
+        "link": "https://www.gutenberg.org/ebooks/10",
+        "note": null,
+        "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "ussher",
+        "date": "2083a AM, 1922 BC",
+        "year_am": 2083,
+        "year_bc_ad": -1922,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Second Age §70 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": "Ussher narrates Terah's death at the end of §70 under \"2083a AM, 2792 JP, 1922 BC\"; §71 (\"After Terah died\", 2083 AM, 1921 BC) begins the 430 years.",
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "2083 - Terah died",
+        "year_am": 2083,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"The Chronology of the Pentateuch (Part 2),\" Biblical Chronology 6:4 (April 1994), §8 \"The Chronology of Genesis 11\" (year list)",
+        "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
+        "note": null,
+        "source_text_id": "jordan-bc-6-4"
+      },
+      {
+        "source": "josephus",
+        "date": "\"where Terah died, and was buried, when he had lived to be two hundred and five years old\"",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Josephus, Antiquities I.6.5 (Whiston)",
+        "link": "https://www.gutenberg.org/ebooks/2848",
+        "note": null,
+        "source_text_id": "josephus-antiquities-whiston"
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Gen.11.24-Gen.11.32",
+    "Josh.24.2",
+    "1Chr.1.26",
+    "Luke.3.34",
+    "Acts.7.4"
+  ],
+  "sources": [
+    "jones-chronology-ot-2002",
+    "kjv-gutenberg",
+    "ussher-annals-1658",
+    "jordan-bc-6-4",
+    "josephus-antiquities-whiston"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.11.24-Gen.11.32 ; Josh.24.2 ; 1Chr.1.26 ; Luke.3.34 ; Acts.7.4"
+    },
+    {
+      "source_id": "jordan-bc-6-4",
+      "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
+      "locator": "§8 year list"
+    },
+    {
+      "source_id": "josephus-antiquities-whiston",
+      "url": "https://www.gutenberg.org/ebooks/2848",
+      "locator": "Book I, ch. 6, §5"
+    }
+  ],
+  "related": [
+    "nahor",
+    "abraham",
+    "abraham-birth",
+    "abraham-enters-canaan"
+  ],
+  "events": [
+    "abraham-birth"
+  ],
+  "open_questions": [
+    "Gen 11:26 (\"Terah lived seventy years, and begat Abram, Nahor, and Haran\") is read by Ussher, Jones, CFAH and Jordan as Abram born when Terah was 130 (Gen 11:32 + 12:4 + Acts 7:4); scripture_facts.age_at_named_son = 70 records the verse as written. See abraham-birth."
+  ]
+}

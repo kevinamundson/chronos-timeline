@@ -7,7 +7,7 @@
     "Phaleg"
   ],
   "summary": "Son of Eber; \"in his days was the earth divided\" (Gen 10:25).",
-  "description": "Father Eber (not yet a record).",
+  "description": "Father: Eber.",
   "sorting_year": -2247,
   "sorting_basis": {
     "tier": "cfah-anchor",
@@ -15,11 +15,13 @@
     "chronology": "cfah",
     "note": "Tier 1: CFAH anchor point: 2247 BC (AP-28, birth of Peleg)"
   },
-  "father": null,
-  "children": [],
+  "father": "eber",
+  "children": [
+    "reu"
+  ],
   "scripture_facts": {
     "age_at_named_son": 30,
-    "named_son": null,
+    "named_son": "reu",
     "lifespan_years": 239,
     "refs": [
       "Gen.11.18",
@@ -162,7 +164,9 @@
     }
   ],
   "related": [
-    "final-territorial-division"
+    "final-territorial-division",
+    "eber",
+    "reu"
   ],
   "events": [
     "first-territorial-division",

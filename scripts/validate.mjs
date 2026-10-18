@@ -154,6 +154,20 @@ for (const [id, age, life] of GEN5) {
   }
   am += age;
 }
+// Masoretic Genesis 11 cross-check (Shem's son Arphaxad AM 1658 = 2 years after the Flood; [id, age at named son, lifespan])
+const GEN11 = [['arphaxad',35,438],['salah',30,433],['eber',34,464],['peleg',30,239],['reu',32,239],['serug',30,230],['nahor',29,148],['terah',null,205]];
+let am11 = 1658;
+for (const [id, age, life] of GEN11) {
+  const r = records[id];
+  if (r) {
+    const mt = (k) => (r.doc.dates[k] || []).find((e) => e.source === 'masoretic-genealogy');
+    const b = mt('birth'); const d = mt('death');
+    if (!b || b.year_am !== am11) err(r.rel, `MT birth should be AM ${am11}, found ${b?.year_am}`);
+    if (d && d.year_am !== am11 + life) err(r.rel, `MT death should be AM ${am11 + life}, found ${d?.year_am}`);
+    if (r.doc.scripture_facts?.lifespan_years != null && r.doc.scripture_facts.lifespan_years !== life) err(r.rel, `lifespan should be ${life}`);
+  }
+  if (age != null) am11 += age;
+}
 const flood = records['the-flood'];
 if (flood) {
   const mt = flood.doc.chronologies.find((e) => e.source === 'masoretic-genealogy');
@@ -165,5 +179,5 @@ if (errors.length) {
   console.error(`FAIL: ${errors.length} problem(s) in ${checked} files\n` + errors.map((e) => '  - ' + e).join('\n'));
   process.exit(1);
 }
-console.log(`PASS: ${checked} files valid (chronologies, sources, ${counts}); cross-references, 4-tier sorting rule and MT Genesis 5 arithmetic consistent.`);
+console.log(`PASS: ${checked} files valid (chronologies, sources, ${counts}); cross-references, 4-tier sorting rule and MT Genesis 5 and 11 arithmetic consistent.`);
 console.log('Sorting tiers used: ' + Object.entries(tierCount).map(([k, v]) => `${k}=${v}`).join(', '));

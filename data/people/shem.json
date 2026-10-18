@@ -12,7 +12,9 @@
     "note": "Tier 4: Ussher, Annals: 1558 AM, 2446 BC (no higher-tier year available)."
   },
   "father": "noah",
-  "children": [],
+  "children": [
+    "arphaxad"
+  ],
   "dates": {
     "birth": [
       {
@@ -148,7 +150,8 @@
   "related": [
     "noah",
     "japheth",
-    "ham"
+    "ham",
+    "arphaxad"
   ],
   "events": [
     "the-flood",
