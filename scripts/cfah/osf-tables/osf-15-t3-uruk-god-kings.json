@@ -1,0 +1,62 @@
+{
+ "id": "osf-15-t3-uruk-god-kings",
+ "src": "cfah-15-osf",
+ "table": "Table 3",
+ "title": "God-Kings in the Uruk I Dynasty",
+ "dynasty": "Uruk I dynasty",
+ "kind": "lengths",
+ "region": "Mesopotamia",
+ "pages": [
+  18
+ ],
+ "rows": [
+  {
+   "name": "Mes-kia-gasir",
+   "cells": {
+    "Reign": "324",
+    "Multiple": "6",
+    "Actual Reign (y)": "54"
+   }
+  },
+  {
+   "name": "En-mer-kar",
+   "cells": {
+    "Reign": "420",
+    "Multiple": "3.33",
+    "Actual Reign (y)": "127"
+   }
+  },
+  {
+   "name": "Lugal Banda",
+   "cells": {
+    "Reign": "1200",
+    "Multiple": "36",
+    "Actual Reign (y)": "33.33"
+   }
+  },
+  {
+   "name": "Dumuzi",
+   "cells": {
+    "Reign": "100",
+    "Multiple": "3.33",
+    "Actual Reign (y)": "30"
+   }
+  },
+  {
+   "name": "Gilgamesh",
+   "cells": {
+    "Reign": "126",
+    "Multiple": "3.33",
+    "Actual Reign (y)": "38"
+   }
+  },
+  {
+   "name": "Total",
+   "cells": {
+    "Reign": "2,170",
+    "Multiple": "–",
+    "Actual Reign (y)": "282"
+   }
+  }
+ ]
+}

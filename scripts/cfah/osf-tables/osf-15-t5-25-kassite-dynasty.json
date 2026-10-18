@@ -1,0 +1,392 @@
+{
+ "id": "osf-15-t5-25-kassite-dynasty",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Kassite Dynasty",
+ "dynasty": "Kassite Dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  58,
+  59
+ ],
+ "rows": [
+  {
+   "name": "Kassite Dynasty (dynasty total)",
+   "cells": {
+    "Reign (y)": "576",
+    "Start (BC)": "1282",
+    "End (BC)": "706"
+   }
+  },
+  {
+   "name": "Gandash",
+   "cells": {
+    "Reign (y)": "16",
+    "Start (BC)": "1282",
+    "End (BC)": "1266"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Agum the First",
+   "cells": {
+    "Reign (y)": "12",
+    "Start (BC)": "1266",
+    "End (BC)": "1254"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Kashtiliashi [I]",
+   "cells": {
+    "Reign (y)": "22",
+    "Start (BC)": "1254",
+    "End (BC)": "1232"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Ushshi",
+   "cells": {
+    "Reign (y)": "8",
+    "Start (BC)": "1232",
+    "End (BC)": "1224"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Abirattash",
+   "cells": {
+    "Reign (y)": "[...]",
+    "Start (BC)": "1224"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Tazzigurumash",
+   "cells": {
+    "Reign (y)": "[...]"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "[Mel Shipak I]",
+   "cells": {
+    "Start (BC)": "~1185",
+    "End (BC)": "~1179"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "[...]",
+   "cells": {},
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "[Kurigalzu A]",
+   "cells": {
+    "Start (BC)": "~1150",
+    "End (BC)": "~1125"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "[...]",
+   "cells": {},
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "[...]",
+   "cells": {},
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "[...]",
+   "cells": {},
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "[...]",
+   "cells": {},
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "[Kadashman-harbe I]",
+   "cells": {
+    "Start (BC)": "~1000",
+    "End (BC)": "~980"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "[Karaindash]",
+   "cells": {
+    "Start (BC)": "~980",
+    "End (BC)": "~960"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "[Kurigalzu I]",
+   "cells": {
+    "Start (BC)": "~960",
+    "End (BC)": "~940"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "[Kadashman-Enlil I]",
+   "cells": {
+    "Start (BC)": "~940",
+    "End (BC)": "~920"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "[Burnaburiash II]",
+   "cells": {
+    "Start (BC)": "~920",
+    "End (BC)": "~903"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "[Kadashman-Harbe II]",
+   "cells": {
+    "Start (BC)": "902",
+    "End (BC)": "896"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "[Shuzigash (Nazi-Bugash)]",
+   "cells": {
+    "Reign (y)": "[1]",
+    "Start (BC)": "896",
+    "End (BC)": "895"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "[Kurigalzu II]",
+   "cells": {
+    "Reign (y)": "[25]",
+    "Start (BC)": "894",
+    "End (BC)": "869"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "[Nazi-Maruttash, Adad-šuma-uṣur I]",
+   "cells": {
+    "Reign (y)": "22 + x [= 30]",
+    "Start (BC)": "890",
+    "End (BC)": "866"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "[Kastiliasu II]",
+   "cells": {
+    "Reign (y)": "26",
+    "Start (BC)": "866",
+    "End (BC)": "840"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "[Agum II Kakrime]",
+   "cells": {
+    "Reign (y)": "18",
+    "Start (BC)": "840",
+    "End (BC)": "822"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Kadash[...]",
+   "cells": {
+    "Reign (y)": "[...]",
+    "Start (BC)": "822",
+    "End (BC)": "804"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Kudur-[Enlil]",
+   "cells": {
+    "Reign (y)": "6",
+    "Start (BC)": "804",
+    "End (BC)": "798"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Shagarak[ti]",
+   "cells": {
+    "Reign (y)": "13",
+    "Start (BC)": "798",
+    "End (BC)": "785"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Kashtil[iasu] III",
+   "cells": {
+    "Reign (y)": "8",
+    "Start (BC)": "785",
+    "End (BC)": "777"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Ellil-nadin-shumi",
+   "cells": {
+    "Reign (y)": "1.5",
+    "Start (BC)": "777",
+    "End (BC)": "775"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Kadashman-Harbe",
+   "cells": {
+    "Reign (y)": "1.5",
+    "Start (BC)": "775",
+    "End (BC)": "774"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Adad-nadin-shumi",
+   "cells": {
+    "Reign (y)": "6",
+    "Start (BC)": "774",
+    "End (BC)": "768"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Adad-shuma-usir [II]",
+   "cells": {
+    "Reign (y)": "30",
+    "Start (BC)": "768",
+    "End (BC)": "738"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Melishipak II",
+   "cells": {
+    "Reign (y)": "15",
+    "Start (BC)": "738",
+    "End (BC)": "723"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Mardukaplaiddin",
+   "cells": {
+    "Reign (y)": "13",
+    "Start (BC)": "723",
+    "End (BC)": "710"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Zababa[shumiddin]",
+   "cells": {
+    "Reign (y)": "1",
+    "Start (BC)": "710",
+    "End (BC)": "709"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Ellilnadin[ahhe]",
+   "cells": {
+    "Reign (y)": "3",
+    "Start (BC)": "709",
+    "End (BC)": "706"
+   },
+   "pages": [
+    59
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "osf-15-t5-02-kish-ii",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Kish II",
+ "dynasty": "Kish II dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  51,
+  52
+ ],
+ "rows": [
+  {
+   "name": "Kish II (dynasty total)",
+   "cells": {
+    "Reign (y)": "88.75",
+    "Start (BC)": "1722",
+    "End (BC)": "1633"
+   }
+  },
+  {
+   "name": "Su-suda",
+   "cells": {
+    "Reign (y)": "5.55 + N1 = [23.45]",
+    "Start (BC)": "1722",
+    "End (BC)": "1698"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Dadase",
+   "cells": {
+    "Reign (y)": "2.25",
+    "Start (BC)": "1698",
+    "End (BC)": "1696"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Mamagal",
+   "cells": {
+    "Reign (y)": "6.66 + N2 = [24.5]",
+    "Start (BC)": "1696",
+    "End (BC)": "1671"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Kalbum",
+   "cells": {
+    "Reign (y)": "5.4",
+    "Start (BC)": "1671",
+    "End (BC)": "1666"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "TUG",
+   "cells": {
+    "Reign (y)": "10",
+    "Start (BC)": "1666",
+    "End (BC)": "1656"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Men-nuna",
+   "cells": {
+    "Reign (y)": "5",
+    "Start (BC)": "1656",
+    "End (BC)": "1651"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Enbi-Ištar",
+   "cells": {
+    "Reign (y)": "8.1",
+    "Start (BC)": "1651",
+    "End (BC)": "1643"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Lugalgu",
+   "cells": {
+    "Reign (y)": "10",
+    "Start (BC)": "1643",
+    "End (BC)": "1633.45"
+   },
+   "pages": [
+    52
+   ]
+  }
+ ]
+}

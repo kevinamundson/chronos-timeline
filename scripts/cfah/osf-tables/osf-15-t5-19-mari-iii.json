@@ -1,0 +1,114 @@
+{
+ "id": "osf-15-t5-19-mari-iii",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Mari III",
+ "dynasty": "Mari III dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  56
+ ],
+ "rows": [
+  {
+   "name": "Mari III (dynasty total)",
+   "cells": {
+    "Reign (y)": "~541",
+    "Start (BC)": "~1519",
+    "End (BC)": "998"
+   }
+  },
+  {
+   "name": "[~25 Sakkanakku governors]",
+   "cells": {
+    "Reign (y)": "~462",
+    "Start (BC)": "~1519",
+    "End (BC)": "~1077"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Dagan-[?] last Shakkanakku",
+   "cells": {
+    "Reign (y)": "~20",
+    "Start (BC)": "~1097",
+    "End (BC)": "~1077"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Yaggid-Lim",
+   "cells": {
+    "Reign (y)": "~10",
+    "Start (BC)": "~1077",
+    "End (BC)": "~1067"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Yahdun-Lim",
+   "cells": {
+    "Reign (y)": "~30",
+    "Start (BC)": "~1067",
+    "End (BC)": "1037"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Sumu-Yamam",
+   "cells": {
+    "Reign (y)": "<1",
+    "Start (BC)": "1037",
+    "End (BC)": "1036"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Yasmah-Addu",
+   "cells": {
+    "Reign (y)": "17",
+    "Start (BC)": "1036",
+    "End (BC)": "1019"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Ishar-Lim",
+   "cells": {
+    "Reign (y)": "<1",
+    "Start (BC)": "1019",
+    "End (BC)": "1019"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Zimri-Lim",
+   "cells": {
+    "Reign (y)": "21",
+    "Start (BC)": "1019",
+    "End (BC)": "998"
+   },
+   "pages": [
+    56
+   ]
+  }
+ ]
+}

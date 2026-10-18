@@ -1,0 +1,81 @@
+{
+ "id": "osf-15-t5-13-ur-iii",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Ur III",
+ "dynasty": "Ur III dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  54
+ ],
+ "rows": [
+  {
+   "name": "Ur III (dynasty total)",
+   "cells": {
+    "Reign (y)": "108",
+    "Start (BC)": "1349",
+    "End (BC)": "1241"
+   }
+  },
+  {
+   "name": "Ur-Nammu",
+   "cells": {
+    "Reign (y)": "18",
+    "Start (BC)": "1349",
+    "End (BC)": "1331"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Šulgi",
+   "cells": {
+    "Reign (y)": "46",
+    "Start (BC)": "1331",
+    "End (BC)": "1285"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Amar-Sin",
+   "cells": {
+    "Reign (y)": "9",
+    "Start (BC)": "1285",
+    "End (BC)": "1276"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Su-Sin",
+   "cells": {
+    "Reign (y)": "9",
+    "Start (BC)": "1274",
+    "End (BC)": "1265"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Ibbi-Sin",
+   "cells": {
+    "Reign (y)": "24",
+    "Start (BC)": "1265",
+    "End (BC)": "1241"
+   },
+   "pages": [
+    54
+   ]
+  }
+ ]
+}

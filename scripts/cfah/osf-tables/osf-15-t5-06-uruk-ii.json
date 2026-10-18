@@ -1,0 +1,59 @@
+{
+ "id": "osf-15-t5-06-uruk-ii",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Uruk II",
+ "dynasty": "Uruk II dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  53
+ ],
+ "rows": [
+  {
+   "name": "Uruk II (dynasty total)",
+   "cells": {
+    "Reign (y)": "187",
+    "Start (BC)": "1828",
+    "End (BC)": "1641"
+   }
+  },
+  {
+   "name": "En-šakuš-ana",
+   "cells": {
+    "Reign (y)": "60",
+    "Start (BC)": "1828",
+    "End (BC)": "1768"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Lugal-ure",
+   "cells": {
+    "Reign (y)": "120",
+    "Start (BC)": "1768",
+    "End (BC)": "1648"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Argandea",
+   "cells": {
+    "Reign (y)": "7",
+    "Start (BC)": "1648",
+    "End (BC)": "1641"
+   },
+   "pages": [
+    53
+   ]
+  }
+ ]
+}

@@ -10,7 +10,7 @@ import { MAP, SAME } from './osf-kings-map.mjs';
 
 const BLANK = new Set(['-', '–', '- *', '']);
 export const slug = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[ʿ'’‘]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const yearsIn = (s) => [...String(s).matchAll(/(?<![\d.])(\d{3,4})(?![\d.])/g)].map((m) => +m[1]);
+const yearsIn = (s) => [...String(s).matchAll(/(?<![\d.])(\d{3,4})(?:\.\d+)?(?![\d.])/g)].map((m) => +m[1]);
 
 export function loadTables(dir) {
   return readdirSync(dir).filter((f) => f.endsWith('.json')).sort().map((f) => JSON.parse(readFileSync(join(dir, f), 'utf8')));
@@ -41,22 +41,24 @@ export function buildPhase5(tables, existingIds) {
       if (t.kind === 'lengths' && cellText) entry.lengths = cellText;
       if (t.kind === 'names' && cellText) entry.details = cellText;
       if (typeof spec === 'object' && spec?.link) { entry.person = spec.link; if (spec.list) entry.note = spec.list; list.entries.push(entry); continue; }
+      if (!spec && /\(dynasty total\)$|^(Dynasty )?Totals?$|^Stated Total$/i.test(row.name)) { const r = 'A dynasty or table total, not an individual ruler.'; entry.note = r; list.entries.push(entry); continue; }
       if (typeof spec === 'object' && spec?.list) { entry.note = spec.list; reasons.add(spec.list); list.entries.push(entry); continue; }
       if (t.kind === 'names') { entry.note = t.rowNote || 'Names only (an identification table): no BC date or regnal length, so no person record.'; list.entries.push(entry); continue; }
       if (t.kind !== 'dated' || !ys.length) {
         const r = t.kind !== 'dated' ? 'Regnal lengths only in this table, so no person record (no BC year is computed from lengths).' : 'No BC year printed for this row, so no person record.';
         entry.note = r; reasons.add(r); list.entries.push(entry); continue;
       }
-      const nm = names(row, t);
+      const nm = names(row, t); let note = (typeof spec === 'object' && spec?.note) || null;
       const rp = row.pages ? [...new Set(row.pages)] : null;
       const rWhere = rp ? `${t.table} "${t.title}", ${rp.length > 1 ? `pp. ${rp[0]}–${rp[rp.length - 1]}` : `p. ${rp[0]}`}` : where;
       let id = typeof spec === 'string' ? spec : spec?.id || slug(nm.primary.replace(/\s*[*]+$/, ''));
+      if (!spec?.note && /\[/.test(nm.primary)) note = 'The table prints the name with square brackets (restored or uncertain).';
       id = SAME[id] || id;
       if (!spec && existingIds.has(id) && !people[id]) problems.push(`${t.id}: "${row.name}" -> ${id} collides with an existing record; map it explicitly in osf-kings-map.mjs`);
-      const y = -ys[0]; let yEnd = ys.length > 1 ? -ys[ys.length - 1] : null; let note = spec?.note || null;
+      const y = -ys[0]; let yEnd = ys.length > 1 ? -ys[ys.length - 1] : null;
       if (yEnd != null && yEnd < y) { note = [note, `The table's last year (${-yEnd}) is earlier than its first (${-y}), so only the first is used for the timeline.`].filter(Boolean).join(' '); yEnd = null; }
-      const approx = /~|c\.|\?|unknown|unkown|±|\[|>|<| or /.test(Object.entries(row.cells).filter(([k]) => !t.yearCols || t.yearCols.includes(k)).map(([, v]) => v).join(' '));
-      const create = { title: spec?.title || nm.primary.replace(/\s*[*]+$/, ''), alt_names: (spec?.alt || nm.alt).length ? (spec?.alt || nm.alt) : undefined, dynasty: spec?.dynasty || row.dynasty || t.dynasty,
+      const approx = /~|c\.|\?|unknown|unkown|±|\[|>|<| or |\+\/-/.test(Object.entries(row.cells).filter(([k]) => !t.yearCols || t.yearCols.includes(k)).map(([, v]) => v).join(' '));
+      const create = { title: spec?.title || nm.primary.replace(/\s*[*]+$/, '').replace(/[[\]]/g, ''), alt_names: (spec?.alt || nm.alt).length ? (spec?.alt || nm.alt) : undefined, dynasty: spec?.dynasty || row.dynasty || t.dynasty,
         summary: spec?.summary || `${t.dynasty.startsWith('Egypt') ? 'King' : 'Ruler'} listed in CFAH-${meta?.n} ${t.table} (${row.dynasty || t.dynasty}).`,
         description: `${spec?.summary || `Ruler of ${row.dynasty || t.dynasty}.`} Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-${meta?.n} (${t.table}, "${t.title}"); its dates are display only.`, events: spec?.events || [] };
       if (!create.alt_names) delete create.alt_names;

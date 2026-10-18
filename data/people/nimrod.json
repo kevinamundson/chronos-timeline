@@ -119,6 +119,23 @@
         "link": null,
         "note": "Not stated in the Jordan sources read (Biblical Horizons \"Biblical Chronology\" category, all 9 pages; garynorth.com archive of Biblical Chronology 1989-1996). Left empty, not inferred."
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Reign (y): 124; Start (BC): 2192; End (BC): 2068",
+        "year_am": null,
+        "year_bc_ad": -2192,
+        "year_bc_ad_end": -2068,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-15: Sumer, Akkad, and Babylon,\" OSF preprint v1.4 (2026), doi:10.17605/OSF.IO/VYNJU, file CFAH-15 Sumer, Akkad, and Babylon_v1.4.pdf, Table 5 \"Baseline Reigns for Sumer, Akkad, and Babylon: Uruk I\", p. 52",
+        "link": "https://osf.io/vynju/",
+        "source_text_id": "cfah-15-osf",
+        "note": "Row \"En-mer-kar\" of Table 5 (Uruk I dynasty). CFAH-15 identifies En-mer-kar with Nimrod.",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-15-t5-05-uruk-i:en-mer-kar:nimrod:reign"
+      }
     ]
   },
   "scripture_refs": [
@@ -133,13 +150,19 @@
     "josephus-antiquities-whiston",
     "jordan-bc-6-4",
     "jordan-bc-6-5",
-    "cfah-5"
+    "cfah-5",
+    "cfah-15-osf"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/10.htm#8",
       "locator": "Gen.10.8-Gen.10.12 ; 1Chr.1.10"
+    },
+    {
+      "source_id": "cfah-15-osf",
+      "url": "https://osf.io/vynju/",
+      "locator": "Table 5, pp. 52–53"
     }
   ],
   "related": [

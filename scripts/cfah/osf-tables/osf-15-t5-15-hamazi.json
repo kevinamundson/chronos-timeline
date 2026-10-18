@@ -1,0 +1,37 @@
+{
+ "id": "osf-15-t5-15-hamazi",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Hamazi",
+ "dynasty": "Hamazi dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  55
+ ],
+ "rows": [
+  {
+   "name": "Hamazi (dynasty total)",
+   "cells": {
+    "Reign (y)": "360 = 10?",
+    "Start (BC)": "~1633",
+    "End (BC)": "1623"
+   }
+  },
+  {
+   "name": "Hataniš",
+   "cells": {
+    "Reign (y)": "360 = 10?",
+    "Start (BC)": "1633",
+    "End (BC)": "1623"
+   },
+   "pages": [
+    55
+   ]
+  }
+ ]
+}

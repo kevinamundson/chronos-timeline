@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "argandea",
+  "type": "person",
+  "title": "Argandea",
+  "summary": "Ruler listed in CFAH-15 Table 5 (Uruk II dynasty).",
+  "description": "Ruler of Uruk II dynasty. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-15 (Table 5, \"Baseline Reigns for Sumer, Akkad, and Babylon: Uruk II\"); its dates are display only.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Reign (y): 7; Start (BC): 1648; End (BC): 1641",
+        "year_am": null,
+        "year_bc_ad": -1648,
+        "year_bc_ad_end": -1641,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-15: Sumer, Akkad, and Babylon,\" OSF preprint v1.4 (2026), doi:10.17605/OSF.IO/VYNJU, file CFAH-15 Sumer, Akkad, and Babylon_v1.4.pdf, Table 5 \"Baseline Reigns for Sumer, Akkad, and Babylon: Uruk II\", p. 53",
+        "link": "https://osf.io/vynju/",
+        "source_text_id": "cfah-15-osf",
+        "note": "Row \"Argandea\" of Table 5 (Uruk II dynasty).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-15-t5-06-uruk-ii:argandea:argandea:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-15-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-15-osf",
+      "url": "https://osf.io/vynju/",
+      "locator": "Table 5, p. 53"
+    }
+  ],
+  "dynasty": "Uruk II dynasty"
+}

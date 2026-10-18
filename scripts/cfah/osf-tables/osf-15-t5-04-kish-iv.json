@@ -1,0 +1,103 @@
+{
+ "id": "osf-15-t5-04-kish-iv",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Kish IV",
+ "dynasty": "Kish IV dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  52
+ ],
+ "rows": [
+  {
+   "name": "Kish IV (dynasty total)",
+   "cells": {
+    "Reign (y)": "13.6 or 77.8",
+    "Start (BC)": "1630",
+    "End (BC)": "1616"
+   }
+  },
+  {
+   "name": "Puzur-Sin",
+   "cells": {
+    "Reign (y)": "0.7",
+    "Start (BC)": "1630",
+    "End (BC)": "1629"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Ur-Zababa",
+   "cells": {
+    "Reign (y)": "11.1",
+    "Start (BC)": "1629",
+    "End (BC)": "1619"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Simudara",
+   "cells": {
+    "Reign (y)": "0.8",
+    "Start (BC)": "1619",
+    "End (BC)": "1618"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Usi-watar",
+   "cells": {
+    "Reign (y)": "0.19",
+    "Start (BC)": "1618",
+    "End (BC)": "1618"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Ištar-muti",
+   "cells": {
+    "Reign (y)": "0.3",
+    "Start (BC)": "1618",
+    "End (BC)": "1617"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Išme-Šamaš",
+   "cells": {
+    "Reign (y)": "0.3",
+    "Start (BC)": "1617",
+    "End (BC)": "1617"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Nanniya",
+   "cells": {
+    "Reign (y)": "0.19",
+    "Start (BC)": "1617",
+    "End (BC)": "1616"
+   },
+   "pages": [
+    52
+   ]
+  }
+ ]
+}

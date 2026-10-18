@@ -1,0 +1,37 @@
+{
+ "id": "osf-15-t5-16-adab",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Adab",
+ "dynasty": "Adab dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  55
+ ],
+ "rows": [
+  {
+   "name": "Adab (dynasty total)",
+   "cells": {
+    "Reign (y)": "90",
+    "Start (BC)": "~1723",
+    "End (BC)": "~1633"
+   }
+  },
+  {
+   "name": "Lugal-ane-mundu",
+   "cells": {
+    "Reign (y)": "90",
+    "Start (BC)": "1723",
+    "End (BC)": "1633"
+   },
+   "pages": [
+    55
+   ]
+  }
+ ]
+}

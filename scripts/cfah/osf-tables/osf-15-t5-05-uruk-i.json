@@ -1,0 +1,159 @@
+{
+ "id": "osf-15-t5-05-uruk-i",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Uruk I",
+ "dynasty": "Uruk I dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  52,
+  53
+ ],
+ "rows": [
+  {
+   "name": "Uruk I (dynasty total)",
+   "cells": {
+    "Reign (y)": "~419",
+    "Start (BC)": "2247",
+    "End (BC)": "1828"
+   }
+  },
+  {
+   "name": "Meš-ki'ag-gašer",
+   "cells": {
+    "Reign (y)": "54",
+    "Start (BC)": "2247",
+    "End (BC)": "2192"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "En-mer-kar",
+   "cells": {
+    "Reign (y)": "124",
+    "Start (BC)": "2192",
+    "End (BC)": "2068"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Lugal-Banda",
+   "cells": {
+    "Reign (y)": "33",
+    "Start (BC)": "2068",
+    "End (BC)": "2036"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Dumuzi / Semiramis",
+   "cells": {
+    "Reign (y)": "30",
+    "Start (BC)": "2036",
+    "End (BC)": "2006"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Gilgamesh",
+   "cells": {
+    "Reign (y)": "38",
+    "Start (BC)": "2006",
+    "End (BC)": "1968"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Ur-Nungal",
+   "cells": {
+    "Reign (y)": "30",
+    "Start (BC)": "1968",
+    "End (BC)": "1938"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Udul-Kalama",
+   "cells": {
+    "Reign (y)": "15",
+    "Start (BC)": "1938",
+    "End (BC)": "1923"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "La-bašer",
+   "cells": {
+    "Reign (y)": "9",
+    "Start (BC)": "1923",
+    "End (BC)": "1914"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Ennun-dara-ana",
+   "cells": {
+    "Reign (y)": "8",
+    "Start (BC)": "1914",
+    "End (BC)": "1906"
+   },
+   "pages": [
+    52
+   ]
+  },
+  {
+   "name": "Mešhe",
+   "cells": {
+    "Reign (y)": "36",
+    "Start (BC)": "1906",
+    "End (BC)": "1870"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Melem-ana",
+   "cells": {
+    "Reign (y)": "6",
+    "Start (BC)": "1870",
+    "End (BC)": "1864"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Lugal-ki-GIN",
+   "cells": {
+    "Reign (y)": "36",
+    "Start (BC)": "1864",
+    "End (BC)": "1828"
+   },
+   "pages": [
+    53
+   ]
+  }
+ ]
+}

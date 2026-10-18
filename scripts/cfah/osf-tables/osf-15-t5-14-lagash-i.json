@@ -1,0 +1,126 @@
+{
+ "id": "osf-15-t5-14-lagash-i",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Lagash I",
+ "dynasty": "Lagash I dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  54,
+  55
+ ],
+ "rows": [
+  {
+   "name": "Lagash I (not in SKL) (dynasty total)",
+   "cells": {
+    "Reign (y)": "~170",
+    "Start (BC)": "~1786",
+    "End (BC)": "~1626"
+   }
+  },
+  {
+   "name": "En-hegal",
+   "cells": {
+    "Reign (y)": "~10",
+    "Start (BC)": "~1786",
+    "End (BC)": "~1776"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Ur-Nanshe",
+   "cells": {
+    "Reign (y)": "~20",
+    "Start (BC)": "~1776",
+    "End (BC)": "~1756"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Akurgal",
+   "cells": {
+    "Reign (y)": "~5",
+    "Start (BC)": "~1756",
+    "End (BC)": "~1751"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Eannatum",
+   "cells": {
+    "Reign (y)": "~25",
+    "Start (BC)": "~1751",
+    "End (BC)": "~1726"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "En-anna-tum I",
+   "cells": {
+    "Reign (y)": "~15",
+    "Start (BC)": "~1726",
+    "End (BC)": "~1711"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Entemena",
+   "cells": {
+    "Reign (y)": "~25",
+    "Start (BC)": "~1711",
+    "End (BC)": "~1686"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Enannatum II",
+   "cells": {
+    "Reign (y)": "~10",
+    "Start (BC)": "~1686",
+    "End (BC)": "~1676"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "[several weak kings]",
+   "cells": {
+    "Reign (y)": "~30",
+    "Start (BC)": "~1676",
+    "End (BC)": "~1646"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Urukagina",
+   "cells": {
+    "Reign (y)": "~20",
+    "Start (BC)": "~1646",
+    "End (BC)": "~1626"
+   },
+   "pages": [
+    55
+   ]
+  }
+ ]
+}

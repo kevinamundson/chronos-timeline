@@ -1,0 +1,59 @@
+{
+ "id": "osf-15-t5-12-ur-ii",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Ur II",
+ "dynasty": "Ur II dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  54
+ ],
+ "rows": [
+  {
+   "name": "Ur II (dynasty total)",
+   "cells": {
+    "Reign (y)": "[...] ~111",
+    "Start (BC)": "~1719",
+    "End (BC)": "1608"
+   }
+  },
+  {
+   "name": "Nanne",
+   "cells": {
+    "Reign (y)": "54+N = ~61?",
+    "Start (BC)": "~1719",
+    "End (BC)": "1658"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Mes-ki'ag-Nanna",
+   "cells": {
+    "Reign (y)": "48",
+    "Start (BC)": "1658",
+    "End (BC)": "1610"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "[...]",
+   "cells": {
+    "Reign (y)": "2",
+    "Start (BC)": "1610",
+    "End (BC)": "1608"
+   },
+   "pages": [
+    54
+   ]
+  }
+ ]
+}

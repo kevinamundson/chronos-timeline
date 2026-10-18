@@ -1,0 +1,81 @@
+{
+ "id": "osf-15-t5-08-uruk-iv",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Uruk IV",
+ "dynasty": "Uruk IV dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  53
+ ],
+ "rows": [
+  {
+   "name": "Uruk IV (dynasty total)",
+   "cells": {
+    "Reign (y)": "30",
+    "Start (BC)": "1477",
+    "End (BC)": "1447"
+   }
+  },
+  {
+   "name": "Ur-Nigin",
+   "cells": {
+    "Reign (y)": "7",
+    "Start (BC)": "1477",
+    "End (BC)": "1470"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Ur-gigir",
+   "cells": {
+    "Reign (y)": "6",
+    "Start (BC)": "1470",
+    "End (BC)": "1464"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Kuda",
+   "cells": {
+    "Reign (y)": "6",
+    "Start (BC)": "1464",
+    "End (BC)": "1458"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Puzur-ili",
+   "cells": {
+    "Reign (y)": "5",
+    "Start (BC)": "1458",
+    "End (BC)": "1453"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Ur-Utu",
+   "cells": {
+    "Reign (y)": "6",
+    "Start (BC)": "1453",
+    "End (BC)": "1447"
+   },
+   "pages": [
+    53
+   ]
+  }
+ ]
+}

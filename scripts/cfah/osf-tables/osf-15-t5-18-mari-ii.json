@@ -1,0 +1,159 @@
+{
+ "id": "osf-15-t5-18-mari-ii",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Mari II",
+ "dynasty": "Mari II dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  55,
+  56
+ ],
+ "rows": [
+  {
+   "name": "Mari II (Not in SKL) (dynasty total)",
+   "cells": {
+    "Reign (y)": "~210",
+    "Start (BC)": "~1824",
+    "End (BC)": "1614"
+   }
+  },
+  {
+   "name": "Ikun-Shamash",
+   "cells": {
+    "Reign (y)": "~19.5",
+    "Start (BC)": "~1824",
+    "End (BC)": "~1804"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Ikun-Shamagan",
+   "cells": {
+    "Reign (y)": "~19.5",
+    "Start (BC)": "~1804",
+    "End (BC)": "~1785"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Ansud",
+   "cells": {
+    "Reign (y)": "~19.5",
+    "Start (BC)": "~1785",
+    "End (BC)": "~1765"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Saʿumu",
+   "cells": {
+    "Reign (y)": "~19.5",
+    "Start (BC)": "~1765",
+    "End (BC)": "~1746"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Išhtup-Išar",
+   "cells": {
+    "Reign (y)": "~19.5",
+    "Start (BC)": "~1746",
+    "End (BC)": "~1726"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Ikun-Mari",
+   "cells": {
+    "Reign (y)": "~19.5",
+    "Start (BC)": "~1726",
+    "End (BC)": "~1707"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Iblul-Il",
+   "cells": {
+    "Reign (y)": "40",
+    "Start (BC)": "~1707",
+    "End (BC)": "~1667"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Nizi",
+   "cells": {
+    "Reign (y)": "3",
+    "Start (BC)": "~1667",
+    "End (BC)": "~1664"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Enna-Dagan",
+   "cells": {
+    "Reign (y)": "3",
+    "Start (BC)": "~1664",
+    "End (BC)": "~1661"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Ikun-Ishar",
+   "cells": {
+    "Reign (y)": "~8",
+    "Start (BC)": "~1661",
+    "End (BC)": "~1653"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Hidar",
+   "cells": {
+    "Reign (y)": "~19.5",
+    "Start (BC)": "~1653",
+    "End (BC)": "~1633"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Ishqi-Mari",
+   "cells": {
+    "Reign (y)": "~19.5",
+    "Start (BC)": "~1633",
+    "End (BC)": "1614"
+   },
+   "pages": [
+    56
+   ]
+  }
+ ]
+}

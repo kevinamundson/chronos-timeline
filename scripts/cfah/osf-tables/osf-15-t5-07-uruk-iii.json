@@ -1,0 +1,37 @@
+{
+ "id": "osf-15-t5-07-uruk-iii",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Uruk III",
+ "dynasty": "Uruk III dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  53
+ ],
+ "rows": [
+  {
+   "name": "Uruk III (dynasty total)",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "1641",
+    "End (BC)": "1616"
+   }
+  },
+  {
+   "name": "Lugalzagesi",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "1641",
+    "End (BC)": "1616"
+   },
+   "pages": [
+    53
+   ]
+  }
+ ]
+}

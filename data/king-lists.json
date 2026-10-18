@@ -472,7 +472,7 @@
           "name": "Total",
           "dates": null,
           "lengths": "Years of Reign: 120 yrs",
-          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+          "note": "A dynasty or table total, not an individual ruler."
         }
       ],
       "unrecorded_reason": null
@@ -555,7 +555,7 @@
           "name": "Total",
           "dates": null,
           "lengths": "Reign: 227",
-          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+          "note": "A dynasty or table total, not an individual ruler."
         }
       ],
       "unrecorded_reason": null
@@ -674,7 +674,7 @@
           "name": "Total",
           "dates": null,
           "lengths": "Africanus: 89; Eusebius: 44; Eusebius (Arm): 44",
-          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+          "note": "A dynasty or table total, not an individual ruler."
         }
       ],
       "unrecorded_reason": null
@@ -750,7 +750,7 @@
           "name": "Total",
           "dates": null,
           "lengths": "Eusebius: 44",
-          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+          "note": "A dynasty or table total, not an individual ruler."
         }
       ],
       "unrecorded_reason": null
@@ -822,7 +822,7 @@
           "name": "Total",
           "dates": null,
           "lengths": "Africanus: 40; Eusebius: 44; Eusebius (Arm): 44; Herodotus: 50",
-          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+          "note": "A dynasty or table total, not an individual ruler."
         }
       ],
       "unrecorded_reason": null
@@ -1421,6 +1421,1610 @@
           "name": "Solomon",
           "dates": "Column: Ruler of Israel; Name row (Year BC): 1015; Last regnal-year row (Year BC): 976 (year 40)",
           "person": "solomon"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t3-uruk-god-kings",
+      "title": "CFAH-15: God-Kings in the Uruk I Dynasty (Table 3)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 3, p. 18",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Mes-kia-gasir",
+          "dates": null,
+          "lengths": "Reign: 324; Multiple: 6; Actual Reign (y): 54",
+          "person": "cush"
+        },
+        {
+          "name": "En-mer-kar",
+          "dates": null,
+          "lengths": "Reign: 420; Multiple: 3.33; Actual Reign (y): 127",
+          "person": "nimrod"
+        },
+        {
+          "name": "Lugal Banda",
+          "dates": null,
+          "lengths": "Reign: 1200; Multiple: 36; Actual Reign (y): 33.33",
+          "person": "lugal-banda"
+        },
+        {
+          "name": "Dumuzi",
+          "dates": null,
+          "lengths": "Reign: 100; Multiple: 3.33; Actual Reign (y): 30",
+          "person": "semiramis-i"
+        },
+        {
+          "name": "Gilgamesh",
+          "dates": null,
+          "lengths": "Reign: 126; Multiple: 3.33; Actual Reign (y): 38",
+          "person": "ninyas"
+        },
+        {
+          "name": "Total",
+          "dates": null,
+          "lengths": "Reign: 2,170; Actual Reign (y): 282",
+          "note": "A dynasty or table total, not an individual ruler."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t4-kassites",
+      "title": "CFAH-15: Kassite Kings Contemporary with Egyptian Dynasty 18 (Table 4)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 4, pp. 37–38",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "[Kadashman-harbe I]",
+          "dates": "Start: ~1000; End: ~980",
+          "person": "kadashman-harbe-i"
+        },
+        {
+          "name": "[Karaindash]",
+          "dates": "Start: ~980; End: ~960",
+          "person": "karaindash"
+        },
+        {
+          "name": "[Kurigalzu I]",
+          "dates": "Start: ~960; End: ~940",
+          "person": "kurigalzu-i"
+        },
+        {
+          "name": "[Kadashman-Enlil I]",
+          "dates": "Start: ~940; End: ~920",
+          "person": "kadashman-enlil-i"
+        },
+        {
+          "name": "[Burnaburiash II]",
+          "dates": "Start: ~920; End: ~903",
+          "person": "burnaburiash-ii"
+        },
+        {
+          "name": "[Kadashman-Harbe II]",
+          "dates": "Start: 902; End: 896",
+          "person": "kadashman-harbe-ii"
+        },
+        {
+          "name": "[Shuzigash (Nazi-Bugash)]",
+          "dates": "Reign: [1]; Start: 896; End: 895",
+          "person": "shuzigash"
+        },
+        {
+          "name": "[Kurigalzu II]",
+          "dates": "Reign: [25]; Start: 894; End: 869",
+          "person": "kurigalzu-ii"
+        },
+        {
+          "name": "[Nazi-Maruttash, aka Adad-šuma-uṣur]",
+          "dates": "Reign: 22 + x; Start: 890; End: 866",
+          "person": "nazi-maruttash"
+        },
+        {
+          "name": "[Kashtiliash II]",
+          "dates": "Reign: 26; Start: 866; End: 840",
+          "person": "kashtiliash-ii"
+        },
+        {
+          "name": "[Agum II Kakrime]",
+          "dates": "Reign: 18; Start: 840; End: 822",
+          "person": "agum-ii-kakrime"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-01-kish-i",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Kish I (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, pp. 50–51",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Kish I Dynasty (dynasty total)",
+          "dates": "Reign (y): 510.8; Start (BC): 2233; End (BC): 1720",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Gišur (Cush)",
+          "dates": "Reign (y): 33.3; Start (BC): 2233; End (BC): 2200",
+          "person": "cush"
+        },
+        {
+          "name": "Kullassina-bêl",
+          "dates": "Reign (y): 25; Start (BC): 2200; End (BC): 2175",
+          "person": "kullassina-bel"
+        },
+        {
+          "name": "Nan-GIŠ-lišma",
+          "dates": "Reign (y): 33.3; Start (BC): 2175; End (BC): 2141",
+          "person": "nan-gis-lisma"
+        },
+        {
+          "name": "En-dara-ana",
+          "dates": "Reign (y): 11.6; Start (BC): 2141; End (BC): 2129",
+          "person": "en-dara-ana"
+        },
+        {
+          "name": "Babum",
+          "dates": "Reign (y): 8.3; Start (BC): 2129; End (BC): 2121",
+          "person": "babum"
+        },
+        {
+          "name": "Pu'annum",
+          "dates": "Reign (y): 23.3; Start (BC): 2121; End (BC): 2097",
+          "person": "puannum"
+        },
+        {
+          "name": "Kalibum",
+          "dates": "Reign (y): 25; Start (BC): 2097; End (BC): 2072",
+          "person": "kalibum"
+        },
+        {
+          "name": "Kalumum",
+          "dates": "Reign (y): 23.3; Start (BC): 2072; End (BC): 2049",
+          "person": "kalumum"
+        },
+        {
+          "name": "Zuqaqip",
+          "dates": "Reign (y): 25; Start (BC): 2049; End (BC): 2024",
+          "person": "zuqaqip"
+        },
+        {
+          "name": "Enmen-baragesi",
+          "dates": "Reign (y): 25; Start (BC): 2024; End (BC): 1999",
+          "person": "enmen-baragesi"
+        },
+        {
+          "name": "Agga",
+          "dates": "Reign (y): 17.4; Start (BC): 1999; End (BC): 1982",
+          "person": "agga"
+        },
+        {
+          "name": "Atab",
+          "dates": "Reign (y): 16.6; Start (BC): 1982; End (BC): 1965",
+          "person": "atab"
+        },
+        {
+          "name": "Mašda",
+          "dates": "Reign (y): 23.3; Start (BC): 1965; End (BC): 1942",
+          "person": "masda"
+        },
+        {
+          "name": "Arwi'um",
+          "dates": "Reign (y): 21.6; Start (BC): 1942; End (BC): 1920",
+          "person": "arwium"
+        },
+        {
+          "name": "Etana",
+          "dates": "Reign (y): 41.7; Start (BC): 1920; End (BC): 1879",
+          "person": "etana"
+        },
+        {
+          "name": "Balih",
+          "dates": "Reign (y): 11.1; Start (BC): 1879; End (BC): 1868",
+          "person": "balih"
+        },
+        {
+          "name": "Enme-nuna",
+          "dates": "Reign (y): 18.3; Start (BC): 1868; End (BC): 1849",
+          "person": "enme-nuna"
+        },
+        {
+          "name": "Melem-Kiš",
+          "dates": "Reign (y): 25; Start (BC): 1849; End (BC): 1824",
+          "person": "melem-kis"
+        },
+        {
+          "name": "Barsal-nuna",
+          "dates": "Reign (y): 33.33; Start (BC): 1824; End (BC): 1791",
+          "person": "barsal-nuna"
+        },
+        {
+          "name": "Samug",
+          "dates": "Reign (y): 3.9; Start (BC): 1791; End (BC): 1787",
+          "person": "samug"
+        },
+        {
+          "name": "Tizkar",
+          "dates": "Reign (y): 8.5; Start (BC): 1787; End (BC): 1781",
+          "person": "tizkar"
+        },
+        {
+          "name": "Ilku'u",
+          "dates": "Reign (y): 25; Start (BC): 1781; End (BC): 1756",
+          "person": "ilkuu"
+        },
+        {
+          "name": "Ilta-sadum",
+          "dates": "Reign (y): 33.3; Start (BC): 1756; End (BC): 1722",
+          "person": "ilta-sadum"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-02-kish-ii",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Kish II (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, pp. 51–52",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Kish II (dynasty total)",
+          "dates": "Reign (y): 88.75; Start (BC): 1722; End (BC): 1633",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Su-suda",
+          "dates": "Reign (y): 5.55 + N1 = [23.45]; Start (BC): 1722; End (BC): 1698",
+          "person": "su-suda"
+        },
+        {
+          "name": "Dadase",
+          "dates": "Reign (y): 2.25; Start (BC): 1698; End (BC): 1696",
+          "person": "dadase"
+        },
+        {
+          "name": "Mamagal",
+          "dates": "Reign (y): 6.66 + N2 = [24.5]; Start (BC): 1696; End (BC): 1671",
+          "person": "mamagal"
+        },
+        {
+          "name": "Kalbum",
+          "dates": "Reign (y): 5.4; Start (BC): 1671; End (BC): 1666",
+          "person": "kalbum"
+        },
+        {
+          "name": "TUG",
+          "dates": "Reign (y): 10; Start (BC): 1666; End (BC): 1656",
+          "person": "tug"
+        },
+        {
+          "name": "Men-nuna",
+          "dates": "Reign (y): 5; Start (BC): 1656; End (BC): 1651",
+          "person": "men-nuna"
+        },
+        {
+          "name": "Enbi-Ištar",
+          "dates": "Reign (y): 8.1; Start (BC): 1651; End (BC): 1643",
+          "person": "enbi-istar"
+        },
+        {
+          "name": "Lugalgu",
+          "dates": "Reign (y): 10; Start (BC): 1643; End (BC): 1633.45",
+          "person": "lugalgu"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-03-kish-iii",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Kish III (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 52",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Kish III (dynasty total)",
+          "dates": "Reign (y): 2.8; Start (BC): 1633; End (BC): 1630.65",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Ku-Baba",
+          "dates": "Reign (y): 2.8; Start (BC): 1633; End (BC): 1630.65",
+          "person": "ku-baba"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-04-kish-iv",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Kish IV (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 52",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Kish IV (dynasty total)",
+          "dates": "Reign (y): 13.6 or 77.8; Start (BC): 1630; End (BC): 1616",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Puzur-Sin",
+          "dates": "Reign (y): 0.7; Start (BC): 1630; End (BC): 1629",
+          "person": "puzur-sin"
+        },
+        {
+          "name": "Ur-Zababa",
+          "dates": "Reign (y): 11.1; Start (BC): 1629; End (BC): 1619",
+          "person": "ur-zababa"
+        },
+        {
+          "name": "Simudara",
+          "dates": "Reign (y): 0.8; Start (BC): 1619; End (BC): 1618",
+          "person": "simudara"
+        },
+        {
+          "name": "Usi-watar",
+          "dates": "Reign (y): 0.19; Start (BC): 1618; End (BC): 1618",
+          "person": "usi-watar"
+        },
+        {
+          "name": "Ištar-muti",
+          "dates": "Reign (y): 0.3; Start (BC): 1618; End (BC): 1617",
+          "person": "istar-muti"
+        },
+        {
+          "name": "Išme-Šamaš",
+          "dates": "Reign (y): 0.3; Start (BC): 1617; End (BC): 1617",
+          "person": "isme-samas"
+        },
+        {
+          "name": "Nanniya",
+          "dates": "Reign (y): 0.19; Start (BC): 1617; End (BC): 1616",
+          "person": "nanniya"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-05-uruk-i",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Uruk I (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, pp. 52–53",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Uruk I (dynasty total)",
+          "dates": "Reign (y): ~419; Start (BC): 2247; End (BC): 1828",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Meš-ki'ag-gašer",
+          "dates": "Reign (y): 54; Start (BC): 2247; End (BC): 2192",
+          "person": "cush"
+        },
+        {
+          "name": "En-mer-kar",
+          "dates": "Reign (y): 124; Start (BC): 2192; End (BC): 2068",
+          "person": "nimrod"
+        },
+        {
+          "name": "Lugal-Banda",
+          "dates": "Reign (y): 33; Start (BC): 2068; End (BC): 2036",
+          "person": "lugal-banda"
+        },
+        {
+          "name": "Dumuzi / Semiramis",
+          "dates": "Reign (y): 30; Start (BC): 2036; End (BC): 2006",
+          "person": "semiramis-i"
+        },
+        {
+          "name": "Gilgamesh",
+          "dates": "Reign (y): 38; Start (BC): 2006; End (BC): 1968",
+          "person": "ninyas"
+        },
+        {
+          "name": "Ur-Nungal",
+          "dates": "Reign (y): 30; Start (BC): 1968; End (BC): 1938",
+          "person": "ur-nungal"
+        },
+        {
+          "name": "Udul-Kalama",
+          "dates": "Reign (y): 15; Start (BC): 1938; End (BC): 1923",
+          "person": "udul-kalama"
+        },
+        {
+          "name": "La-bašer",
+          "dates": "Reign (y): 9; Start (BC): 1923; End (BC): 1914",
+          "person": "la-baser"
+        },
+        {
+          "name": "Ennun-dara-ana",
+          "dates": "Reign (y): 8; Start (BC): 1914; End (BC): 1906",
+          "person": "ennun-dara-ana"
+        },
+        {
+          "name": "Mešhe",
+          "dates": "Reign (y): 36; Start (BC): 1906; End (BC): 1870",
+          "person": "meshe"
+        },
+        {
+          "name": "Melem-ana",
+          "dates": "Reign (y): 6; Start (BC): 1870; End (BC): 1864",
+          "person": "melem-ana"
+        },
+        {
+          "name": "Lugal-ki-GIN",
+          "dates": "Reign (y): 36; Start (BC): 1864; End (BC): 1828",
+          "person": "lugal-ki-gin"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-06-uruk-ii",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Uruk II (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 53",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Uruk II (dynasty total)",
+          "dates": "Reign (y): 187; Start (BC): 1828; End (BC): 1641",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "En-šakuš-ana",
+          "dates": "Reign (y): 60; Start (BC): 1828; End (BC): 1768",
+          "person": "en-sakus-ana"
+        },
+        {
+          "name": "Lugal-ure",
+          "dates": "Reign (y): 120; Start (BC): 1768; End (BC): 1648",
+          "person": "lugal-ure"
+        },
+        {
+          "name": "Argandea",
+          "dates": "Reign (y): 7; Start (BC): 1648; End (BC): 1641",
+          "person": "argandea"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-07-uruk-iii",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Uruk III (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 53",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Uruk III (dynasty total)",
+          "dates": "Reign (y): 25; Start (BC): 1641; End (BC): 1616",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Lugalzagesi",
+          "dates": "Reign (y): 25; Start (BC): 1641; End (BC): 1616",
+          "person": "lugalzagesi"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-08-uruk-iv",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Uruk IV (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 53",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Uruk IV (dynasty total)",
+          "dates": "Reign (y): 30; Start (BC): 1477; End (BC): 1447",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Ur-Nigin",
+          "dates": "Reign (y): 7; Start (BC): 1477; End (BC): 1470",
+          "person": "ur-nigin"
+        },
+        {
+          "name": "Ur-gigir",
+          "dates": "Reign (y): 6; Start (BC): 1470; End (BC): 1464",
+          "person": "ur-gigir"
+        },
+        {
+          "name": "Kuda",
+          "dates": "Reign (y): 6; Start (BC): 1464; End (BC): 1458",
+          "person": "kuda"
+        },
+        {
+          "name": "Puzur-ili",
+          "dates": "Reign (y): 5; Start (BC): 1458; End (BC): 1453",
+          "person": "puzur-ili"
+        },
+        {
+          "name": "Ur-Utu",
+          "dates": "Reign (y): 6; Start (BC): 1453; End (BC): 1447",
+          "person": "ur-utu"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-09-uruk-v",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Uruk V (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 53",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Uruk V (dynasty total)",
+          "dates": "Reign (y): 7; Start (BC): 1356; End (BC): 1349",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Utu-Hegal",
+          "dates": "Reign (y): 7; Start (BC): 1356; End (BC): 1349",
+          "person": "utu-hegal"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-10-uruk-vi",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Uruk VI (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, pp. 53–54",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Uruk VI (BKL) (dynasty total)",
+          "dates": "Reign (y): 368; Start (BC): 1184; End (BC): 816",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Ilima",
+          "dates": "Reign (y): 60; Start (BC): 1184; End (BC): 1124",
+          "person": "ilima"
+        },
+        {
+          "name": "Ittili",
+          "dates": "Reign (y): 56; Start (BC): 1124; End (BC): 1068",
+          "person": "ittili"
+        },
+        {
+          "name": "Damqiili",
+          "dates": "Reign (y): 36; Start (BC): 1068; End (BC): 1032",
+          "person": "damqiili"
+        },
+        {
+          "name": "Ishki",
+          "dates": "Reign (y): 15; Start (BC): 1032; End (BC): 1017",
+          "person": "ishki"
+        },
+        {
+          "name": "Shushshi",
+          "dates": "Reign (y): 26; Start (BC): 1017; End (BC): 991",
+          "person": "shushshi"
+        },
+        {
+          "name": "Gulki",
+          "dates": "Reign (y): 55; Start (BC): 991; End (BC): 936",
+          "person": "gulki"
+        },
+        {
+          "name": "Peshgal",
+          "dates": "Reign (y): 50; Start (BC): 936; End (BC): 886",
+          "person": "peshgal"
+        },
+        {
+          "name": "Aidara",
+          "dates": "Reign (y): 28; Start (BC): 886; End (BC): 858",
+          "person": "aidara"
+        },
+        {
+          "name": "Ekurul",
+          "dates": "Reign (y): 26; Start (BC): 858; End (BC): 832",
+          "person": "ekurul"
+        },
+        {
+          "name": "Melamma",
+          "dates": "Reign (y): 7; Start (BC): 832; End (BC): 825",
+          "person": "melamma"
+        },
+        {
+          "name": "Eaga",
+          "dates": "Reign (y): 9; Start (BC): 825; End (BC): 816",
+          "person": "eaga"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-11-ur-i",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Ur I (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 54",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Ur I (dynasty total)",
+          "dates": "Reign (y): 177; Start (BC): ~1968; End (BC): ~1791",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Mes-ane-pada",
+          "dates": "Reign (y): 80; Start (BC): 1968; End (BC): 1888",
+          "person": "mes-ane-pada"
+        },
+        {
+          "name": "Meš-ki'ag-Nuna",
+          "dates": "Reign (y): 36; Start (BC): 1888; End (BC): 1852",
+          "person": "mes-kiag-nuna"
+        },
+        {
+          "name": "Elulu",
+          "dates": "Reign (y): 25; Start (BC): 1852; End (BC): 1827",
+          "person": "elulu"
+        },
+        {
+          "name": "Balulu",
+          "dates": "Reign (y): 36; Start (BC): 1827; End (BC): 1791",
+          "person": "balulu"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-12-ur-ii",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Ur II (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 54",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Ur II (dynasty total)",
+          "dates": "Reign (y): [...] ~111; Start (BC): ~1719; End (BC): 1608",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Nanne",
+          "dates": "Reign (y): 54+N = ~61?; Start (BC): ~1719; End (BC): 1658",
+          "person": "nanne"
+        },
+        {
+          "name": "Mes-ki'ag-Nanna",
+          "dates": "Reign (y): 48; Start (BC): 1658; End (BC): 1610",
+          "person": "mes-kiag-nanna"
+        },
+        {
+          "name": "[...]",
+          "dates": "Reign (y): 2; Start (BC): 1610; End (BC): 1608",
+          "note": "A lost name in the king list."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-13-ur-iii",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Ur III (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 54",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Ur III (dynasty total)",
+          "dates": "Reign (y): 108; Start (BC): 1349; End (BC): 1241",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Ur-Nammu",
+          "dates": "Reign (y): 18; Start (BC): 1349; End (BC): 1331",
+          "person": "ur-nammu"
+        },
+        {
+          "name": "Šulgi",
+          "dates": "Reign (y): 46; Start (BC): 1331; End (BC): 1285",
+          "person": "sulgi"
+        },
+        {
+          "name": "Amar-Sin",
+          "dates": "Reign (y): 9; Start (BC): 1285; End (BC): 1276",
+          "person": "amar-sin"
+        },
+        {
+          "name": "Su-Sin",
+          "dates": "Reign (y): 9; Start (BC): 1274; End (BC): 1265",
+          "person": "shu-sin-of-ur"
+        },
+        {
+          "name": "Ibbi-Sin",
+          "dates": "Reign (y): 24; Start (BC): 1265; End (BC): 1241",
+          "person": "ibbi-sin"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-14-lagash-i",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Lagash I (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, pp. 54–55",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Lagash I (not in SKL) (dynasty total)",
+          "dates": "Reign (y): ~170; Start (BC): ~1786; End (BC): ~1626",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "En-hegal",
+          "dates": "Reign (y): ~10; Start (BC): ~1786; End (BC): ~1776",
+          "person": "en-hegal"
+        },
+        {
+          "name": "Ur-Nanshe",
+          "dates": "Reign (y): ~20; Start (BC): ~1776; End (BC): ~1756",
+          "person": "ur-nanshe"
+        },
+        {
+          "name": "Akurgal",
+          "dates": "Reign (y): ~5; Start (BC): ~1756; End (BC): ~1751",
+          "person": "akurgal"
+        },
+        {
+          "name": "Eannatum",
+          "dates": "Reign (y): ~25; Start (BC): ~1751; End (BC): ~1726",
+          "person": "eannatum"
+        },
+        {
+          "name": "En-anna-tum I",
+          "dates": "Reign (y): ~15; Start (BC): ~1726; End (BC): ~1711",
+          "person": "en-anna-tum-i"
+        },
+        {
+          "name": "Entemena",
+          "dates": "Reign (y): ~25; Start (BC): ~1711; End (BC): ~1686",
+          "person": "entemena"
+        },
+        {
+          "name": "Enannatum II",
+          "dates": "Reign (y): ~10; Start (BC): ~1686; End (BC): ~1676",
+          "person": "enannatum-ii"
+        },
+        {
+          "name": "[several weak kings]",
+          "dates": "Reign (y): ~30; Start (BC): ~1676; End (BC): ~1646",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        },
+        {
+          "name": "Urukagina",
+          "dates": "Reign (y): ~20; Start (BC): ~1646; End (BC): ~1626",
+          "person": "urukagina"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-15-hamazi",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Hamazi (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 55",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Hamazi (dynasty total)",
+          "dates": "Reign (y): 360 = 10?; Start (BC): ~1633; End (BC): 1623",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Hataniš",
+          "dates": "Reign (y): 360 = 10?; Start (BC): 1633; End (BC): 1623",
+          "person": "hatanis"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-16-adab",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Adab (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 55",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Adab (dynasty total)",
+          "dates": "Reign (y): 90; Start (BC): ~1723; End (BC): ~1633",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Lugal-ane-mundu",
+          "dates": "Reign (y): 90; Start (BC): 1723; End (BC): 1633",
+          "person": "lugal-ane-mundu"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-17-mari-i",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Mari I (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 55",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Mari I (dynasty total)",
+          "dates": "Reign (y): 136; Start (BC): ~1994; End (BC): ~1858",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Anubu",
+          "dates": "Reign (y): 30",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Anba",
+          "dates": "Reign (y): 17",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Bazi",
+          "dates": "Reign (y): 30",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Zizi",
+          "dates": "Reign (y): 20",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Lim-er",
+          "dates": "Reign (y): 30",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Šarrum-iter",
+          "dates": "Reign (y): 9",
+          "note": "No BC year printed for this row, so no person record."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-18-mari-ii",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Mari II (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, pp. 55–56",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Mari II (Not in SKL) (dynasty total)",
+          "dates": "Reign (y): ~210; Start (BC): ~1824; End (BC): 1614",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Ikun-Shamash",
+          "dates": "Reign (y): ~19.5; Start (BC): ~1824; End (BC): ~1804",
+          "person": "ikun-shamash"
+        },
+        {
+          "name": "Ikun-Shamagan",
+          "dates": "Reign (y): ~19.5; Start (BC): ~1804; End (BC): ~1785",
+          "person": "ikun-shamagan"
+        },
+        {
+          "name": "Ansud",
+          "dates": "Reign (y): ~19.5; Start (BC): ~1785; End (BC): ~1765",
+          "person": "ansud"
+        },
+        {
+          "name": "Saʿumu",
+          "dates": "Reign (y): ~19.5; Start (BC): ~1765; End (BC): ~1746",
+          "person": "saumu"
+        },
+        {
+          "name": "Išhtup-Išar",
+          "dates": "Reign (y): ~19.5; Start (BC): ~1746; End (BC): ~1726",
+          "person": "ishtup-isar"
+        },
+        {
+          "name": "Ikun-Mari",
+          "dates": "Reign (y): ~19.5; Start (BC): ~1726; End (BC): ~1707",
+          "person": "ikun-mari"
+        },
+        {
+          "name": "Iblul-Il",
+          "dates": "Reign (y): 40; Start (BC): ~1707; End (BC): ~1667",
+          "person": "iblul-il"
+        },
+        {
+          "name": "Nizi",
+          "dates": "Reign (y): 3; Start (BC): ~1667; End (BC): ~1664",
+          "person": "nizi"
+        },
+        {
+          "name": "Enna-Dagan",
+          "dates": "Reign (y): 3; Start (BC): ~1664; End (BC): ~1661",
+          "person": "enna-dagan"
+        },
+        {
+          "name": "Ikun-Ishar",
+          "dates": "Reign (y): ~8; Start (BC): ~1661; End (BC): ~1653",
+          "person": "ikun-ishar"
+        },
+        {
+          "name": "Hidar",
+          "dates": "Reign (y): ~19.5; Start (BC): ~1653; End (BC): ~1633",
+          "person": "hidar"
+        },
+        {
+          "name": "Ishqi-Mari",
+          "dates": "Reign (y): ~19.5; Start (BC): ~1633; End (BC): 1614",
+          "person": "ishqi-mari"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-19-mari-iii",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Mari III (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 56",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Mari III (dynasty total)",
+          "dates": "Reign (y): ~541; Start (BC): ~1519; End (BC): 998",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "[~25 Sakkanakku governors]",
+          "dates": "Reign (y): ~462; Start (BC): ~1519; End (BC): ~1077",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        },
+        {
+          "name": "Dagan-[?] last Shakkanakku",
+          "dates": "Reign (y): ~20; Start (BC): ~1097; End (BC): ~1077",
+          "note": "The name is incomplete in the table (\"Dagan-[?]\")."
+        },
+        {
+          "name": "Yaggid-Lim",
+          "dates": "Reign (y): ~10; Start (BC): ~1077; End (BC): ~1067",
+          "person": "yaggid-lim"
+        },
+        {
+          "name": "Yahdun-Lim",
+          "dates": "Reign (y): ~30; Start (BC): ~1067; End (BC): 1037",
+          "person": "yahdun-lim"
+        },
+        {
+          "name": "Sumu-Yamam",
+          "dates": "Reign (y): <1; Start (BC): 1037; End (BC): 1036",
+          "person": "sumu-yamam"
+        },
+        {
+          "name": "Yasmah-Addu",
+          "dates": "Reign (y): 17; Start (BC): 1036; End (BC): 1019",
+          "person": "yasmah-addu"
+        },
+        {
+          "name": "Ishar-Lim",
+          "dates": "Reign (y): <1; Start (BC): 1019; End (BC): 1019",
+          "person": "ishar-lim"
+        },
+        {
+          "name": "Zimri-Lim",
+          "dates": "Reign (y): 21; Start (BC): 1019; End (BC): 998",
+          "person": "zimri-lim"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-20-aksak",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Akšak (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 56",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Akšak (dynasty total)",
+          "dates": "Reign (y): 93; Start (BC): 1685 (+/- 10 y); End (BC): 1592",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Unzi",
+          "dates": "Reign (y): 30; Start (BC): 1685; End (BC): 1655",
+          "person": "unzi"
+        },
+        {
+          "name": "Undalulu",
+          "dates": "Reign (y): 6; Start (BC): 1655; End (BC): 1649",
+          "person": "undalulu"
+        },
+        {
+          "name": "Urur",
+          "dates": "Reign (y): 6; Start (BC): 1649; End (BC): 1643",
+          "person": "urur"
+        },
+        {
+          "name": "Puzur-Nirah",
+          "dates": "Reign (y): 20; Start (BC): 1643; End (BC): 1623",
+          "person": "puzur-nirah"
+        },
+        {
+          "name": "Išu-Il",
+          "dates": "Reign (y): 24; Start (BC): 1623; End (BC): 1599",
+          "person": "isu-il"
+        },
+        {
+          "name": "Šu-Sin",
+          "dates": "Reign (y): 7; Start (BC): 1599; End (BC): 1592",
+          "person": "shu-sin-of-akshak"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-21-akkad",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Akkad (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, pp. 56–57",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Akkad (dynasty total)",
+          "dates": "Reign (y): 181; Start (BC): 1619; End (BC): 1438",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Sargon the Great",
+          "dates": "Reign (y): 56; Start (BC): 1619; End (BC): 1563",
+          "person": "sargon-i-of-akkad"
+        },
+        {
+          "name": "Rimush",
+          "dates": "Reign (y): 9; Start (BC): 1563; End (BC): 1554",
+          "person": "rimush"
+        },
+        {
+          "name": "Manishtushu",
+          "dates": "Reign (y): 15; Start (BC): 1554; End (BC): 1539",
+          "person": "manishtushu"
+        },
+        {
+          "name": "Naram Sin",
+          "dates": "Reign (y): 56; Start (BC): 1539; End (BC): 1483",
+          "person": "naram-sin-of-akkad"
+        },
+        {
+          "name": "Sar-kalli-shari",
+          "dates": "Reign (y): 25; Start (BC): 1502; End (BC): 1477",
+          "person": "sar-kalli-shari"
+        },
+        {
+          "name": "4 kings in 3 yrs",
+          "dates": "Reign (y): 3; Start (BC): 1477; End (BC): 1474",
+          "note": "A group of rulers, a gap or a total, not an individual ruler."
+        },
+        {
+          "name": "Dudu",
+          "dates": "Reign (y): 21; Start (BC): 1474; End (BC): 1453",
+          "person": "dudu"
+        },
+        {
+          "name": "Šu-Durul",
+          "dates": "Reign (y): 15; Start (BC): 1453; End (BC): 1438",
+          "person": "su-durul"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-22-gutium",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Gutium (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 57",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Gutium (dynasty total)",
+          "dates": "Reign (y): 91; Start (BC): 1481, 1447; End (BC): 1356",
+          "note": "A dynasty or table total, not an individual ruler."
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-23-isin",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Isin (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, p. 57",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Isin (dynasty total)",
+          "dates": "Reign (y): 226, 209; Start (BC): 1258, 1241; End (BC): 1032",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Išbi-Irra",
+          "dates": "Reign (y): 33; Start (BC): 1258; End (BC): 1225",
+          "person": "isbi-irra"
+        },
+        {
+          "name": "Šu-ilišu",
+          "dates": "Reign (y): 20; Start (BC): 1235; End (BC): 1215",
+          "person": "su-ilisu"
+        },
+        {
+          "name": "Iddin-Dagan",
+          "dates": "Reign (y): 21; Start (BC): 1215; End (BC): 1194",
+          "person": "iddin-dagan"
+        },
+        {
+          "name": "Išme-Dagan",
+          "dates": "Reign (y): 20; Start (BC): 1194; End (BC): 1174",
+          "person": "isme-dagan"
+        },
+        {
+          "name": "Lipit-Ištar",
+          "dates": "Reign (y): 11; Start (BC): 1174; End (BC): 1163",
+          "person": "lipit-istar"
+        },
+        {
+          "name": "Ur-Ninurta",
+          "dates": "Reign (y): 28; Start (BC): 1163; End (BC): 1135",
+          "person": "ur-ninurta"
+        },
+        {
+          "name": "Bur-Sin",
+          "dates": "Reign (y): 21; Start (BC): 1135; End (BC): 1114",
+          "person": "bur-sin"
+        },
+        {
+          "name": "Lipit-Enlil",
+          "dates": "Reign (y): 5; Start (BC): 1114; End (BC): 1109",
+          "person": "lipit-enlil"
+        },
+        {
+          "name": "Irra-imitti",
+          "dates": "Reign (y): 8; Start (BC): 1109; End (BC): 1101",
+          "person": "irra-imitti"
+        },
+        {
+          "name": "Enlil-bani",
+          "dates": "Reign (y): 24; Start (BC): 1101; End (BC): 1077",
+          "person": "enlil-bani"
+        },
+        {
+          "name": "Zambija",
+          "dates": "Reign (y): 3; Start (BC): 1077; End (BC): 1074",
+          "person": "zambija"
+        },
+        {
+          "name": "Iter-piša",
+          "dates": "Reign (y): 4; Start (BC): 1074; End (BC): 1070",
+          "person": "iter-pisa"
+        },
+        {
+          "name": "Urdukuga",
+          "dates": "Reign (y): 4; Start (BC): 1070; End (BC): 1066",
+          "person": "urdukuga"
+        },
+        {
+          "name": "Sin-magir",
+          "dates": "Reign (y): 11; Start (BC): 1066; End (BC): 1055",
+          "person": "sin-magir"
+        },
+        {
+          "name": "Damiq-ilišu",
+          "dates": "Reign (y): 23; Start (BC): 1055; End (BC): 1032",
+          "person": "damiq-ilisu"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-24-first-dynasty-of-babylon",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: First Dynasty of Babylon (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, pp. 57–58",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "First Dynasty Babylon (dynasty total)",
+          "dates": "Reign (y): 293; Start (BC): 1144; End (BC): 851",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Sumu-abum",
+          "dates": "Reign (y): 15; Start (BC): 1144; End (BC): 1129",
+          "person": "sumu-abum"
+        },
+        {
+          "name": "Sumulail",
+          "dates": "Reign (y): 35; Start (BC): 1129; End (BC): 1094",
+          "person": "sumulail"
+        },
+        {
+          "name": "Sabu",
+          "dates": "Reign (y): 14; Start (BC): 1094; End (BC): 1080",
+          "person": "sabu"
+        },
+        {
+          "name": "Apil-Sin",
+          "dates": "Reign (y): 18; Start (BC): 1080; End (BC): 1062",
+          "person": "apil-sin"
+        },
+        {
+          "name": "Sinmuballit",
+          "dates": "Reign (y): 30; Start (BC): 1062; End (BC): 1032",
+          "person": "sinmuballit"
+        },
+        {
+          "name": "Hammurabi",
+          "dates": "Reign (y): 55, 42; Start (BC): 1044, 1032; End (BC): 989",
+          "person": "hammurabi"
+        },
+        {
+          "name": "Samsu-iluna",
+          "dates": "Reign (y): 35; Start (BC): 989; End (BC): 954",
+          "person": "samsu-iluna"
+        },
+        {
+          "name": "Ebishum",
+          "dates": "Reign (y): 25; Start (BC): 954; End (BC): 929",
+          "person": "ebishum"
+        },
+        {
+          "name": "Ammiditana",
+          "dates": "Reign (y): 25; Start (BC): 929; End (BC): 904",
+          "person": "ammiditana"
+        },
+        {
+          "name": "Ammisaduga",
+          "dates": "Reign (y): 22; Start (BC): 904; End (BC): 882",
+          "person": "ammisaduga"
+        },
+        {
+          "name": "Samsuditana",
+          "dates": "Reign (y): 31; Start (BC): 882; End (BC): 851",
+          "person": "samsuditana"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-25-kassite-dynasty",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Kassite Dynasty (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, pp. 58–59",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Kassite Dynasty (dynasty total)",
+          "dates": "Reign (y): 576; Start (BC): 1282; End (BC): 706",
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Gandash",
+          "dates": "Reign (y): 16; Start (BC): 1282; End (BC): 1266",
+          "person": "ghandash"
+        },
+        {
+          "name": "Agum the First",
+          "dates": "Reign (y): 12; Start (BC): 1266; End (BC): 1254",
+          "person": "agum-the-first"
+        },
+        {
+          "name": "Kashtiliashi [I]",
+          "dates": "Reign (y): 22; Start (BC): 1254; End (BC): 1232",
+          "person": "kashtiliash-i"
+        },
+        {
+          "name": "Ushshi",
+          "dates": "Reign (y): 8; Start (BC): 1232; End (BC): 1224",
+          "person": "ushshi"
+        },
+        {
+          "name": "Abirattash",
+          "dates": "Reign (y): [...]; Start (BC): 1224",
+          "person": "abirattash"
+        },
+        {
+          "name": "Tazzigurumash",
+          "dates": "Reign (y): [...]",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "[Mel Shipak I]",
+          "dates": "Start (BC): ~1185; End (BC): ~1179",
+          "person": "mel-shipak-i"
+        },
+        {
+          "name": "[...]",
+          "dates": null,
+          "note": "A lost name in the king list."
+        },
+        {
+          "name": "[Kurigalzu A]",
+          "dates": "Start (BC): ~1150; End (BC): ~1125",
+          "person": "kurigalzu-a"
+        },
+        {
+          "name": "[...]",
+          "dates": null,
+          "note": "A lost name in the king list."
+        },
+        {
+          "name": "[...]",
+          "dates": null,
+          "note": "A lost name in the king list."
+        },
+        {
+          "name": "[...]",
+          "dates": null,
+          "note": "A lost name in the king list."
+        },
+        {
+          "name": "[...]",
+          "dates": null,
+          "note": "A lost name in the king list."
+        },
+        {
+          "name": "[Kadashman-harbe I]",
+          "dates": "Start (BC): ~1000; End (BC): ~980",
+          "person": "kadashman-harbe-i"
+        },
+        {
+          "name": "[Karaindash]",
+          "dates": "Start (BC): ~980; End (BC): ~960",
+          "person": "karaindash"
+        },
+        {
+          "name": "[Kurigalzu I]",
+          "dates": "Start (BC): ~960; End (BC): ~940",
+          "person": "kurigalzu-i"
+        },
+        {
+          "name": "[Kadashman-Enlil I]",
+          "dates": "Start (BC): ~940; End (BC): ~920",
+          "person": "kadashman-enlil-i"
+        },
+        {
+          "name": "[Burnaburiash II]",
+          "dates": "Start (BC): ~920; End (BC): ~903",
+          "person": "burnaburiash-ii"
+        },
+        {
+          "name": "[Kadashman-Harbe II]",
+          "dates": "Start (BC): 902; End (BC): 896",
+          "person": "kadashman-harbe-ii"
+        },
+        {
+          "name": "[Shuzigash (Nazi-Bugash)]",
+          "dates": "Reign (y): [1]; Start (BC): 896; End (BC): 895",
+          "person": "shuzigash"
+        },
+        {
+          "name": "[Kurigalzu II]",
+          "dates": "Reign (y): [25]; Start (BC): 894; End (BC): 869",
+          "person": "kurigalzu-ii"
+        },
+        {
+          "name": "[Nazi-Maruttash, Adad-šuma-uṣur I]",
+          "dates": "Reign (y): 22 + x [= 30]; Start (BC): 890; End (BC): 866",
+          "person": "nazi-maruttash"
+        },
+        {
+          "name": "[Kastiliasu II]",
+          "dates": "Reign (y): 26; Start (BC): 866; End (BC): 840",
+          "person": "kashtiliash-ii"
+        },
+        {
+          "name": "[Agum II Kakrime]",
+          "dates": "Reign (y): 18; Start (BC): 840; End (BC): 822",
+          "person": "agum-ii-kakrime"
+        },
+        {
+          "name": "Kadash[...]",
+          "dates": "Reign (y): [...]; Start (BC): 822; End (BC): 804",
+          "note": "The name is damaged in the source (\"Kadash[...]\")."
+        },
+        {
+          "name": "Kudur-[Enlil]",
+          "dates": "Reign (y): 6; Start (BC): 804; End (BC): 798",
+          "person": "kudur-enlil"
+        },
+        {
+          "name": "Shagarak[ti]",
+          "dates": "Reign (y): 13; Start (BC): 798; End (BC): 785",
+          "person": "shagarak-ti"
+        },
+        {
+          "name": "Kashtil[iasu] III",
+          "dates": "Reign (y): 8; Start (BC): 785; End (BC): 777",
+          "person": "kashtiliash-iii"
+        },
+        {
+          "name": "Ellil-nadin-shumi",
+          "dates": "Reign (y): 1.5; Start (BC): 777; End (BC): 775",
+          "person": "ellil-nadin-shumi"
+        },
+        {
+          "name": "Kadashman-Harbe",
+          "dates": "Reign (y): 1.5; Start (BC): 775; End (BC): 774",
+          "person": "kadashman-harbe"
+        },
+        {
+          "name": "Adad-nadin-shumi",
+          "dates": "Reign (y): 6; Start (BC): 774; End (BC): 768",
+          "person": "adad-nadin-shumi"
+        },
+        {
+          "name": "Adad-shuma-usir [II]",
+          "dates": "Reign (y): 30; Start (BC): 768; End (BC): 738",
+          "person": "adad-shuma-usur-ii"
+        },
+        {
+          "name": "Melishipak II",
+          "dates": "Reign (y): 15; Start (BC): 738; End (BC): 723",
+          "person": "melishipak-ii"
+        },
+        {
+          "name": "Mardukaplaiddin",
+          "dates": "Reign (y): 13; Start (BC): 723; End (BC): 710",
+          "person": "marduk-apla-iddina-kassite"
+        },
+        {
+          "name": "Zababa[shumiddin]",
+          "dates": "Reign (y): 1; Start (BC): 710; End (BC): 709",
+          "person": "zababa-shumiddin"
+        },
+        {
+          "name": "Ellilnadin[ahhe]",
+          "dates": "Reign (y): 3; Start (BC): 709; End (BC): 706",
+          "person": "ellilnadin-ahhe"
+        }
+      ],
+      "unrecorded_reason": null
+    },
+    {
+      "id": "osf-15-t5-26-dynasty-of-e",
+      "title": "CFAH-15: Baseline Reigns for Sumer, Akkad, and Babylon: Dynasty of E (Table 5)",
+      "region": "Mesopotamia",
+      "source": "cfah-15-osf",
+      "citation_short": "CFAH-15, OSF preprint v1.4 (2026), Table 5, pp. 59–60",
+      "preprint": true,
+      "entries": [
+        {
+          "name": "Dynasty of E (dynasty total)",
+          "dates": null,
+          "note": "A dynasty or table total, not an individual ruler."
+        },
+        {
+          "name": "Nabû-mukin-apli",
+          "dates": "Reign (y): 36",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Ninurta-kudurri-uṣur II",
+          "dates": "Reign (y): 8 mo",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Mar-biti-aḫḫe-idinna",
+          "dates": "Reign (y): ?",
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Šamaš-mudammiq",
+          "dates": null,
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Nabû-šuma-ukin I",
+          "dates": null,
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Nabû-apla-iddina",
+          "dates": null,
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Marduk-zâkir-šumi I",
+          "dates": "Start (BC): 855; End (BC): 819",
+          "person": "marduk-zakir-sumi-i"
+        },
+        {
+          "name": "Marduk-balāssu-iqbi",
+          "dates": "Start (BC): 823; End (BC): 812",
+          "person": "marduk-balassu-iqbi"
+        },
+        {
+          "name": "Bāba-aḫa-iddina",
+          "dates": "Start (BC): 812; End (BC): 812",
+          "person": "baba-aha-iddina"
+        },
+        {
+          "name": "[Ninurta-apla-X]",
+          "dates": null,
+          "note": "The name is incomplete in the table (\"Ninurta-apla-X\")."
+        },
+        {
+          "name": "Marduk-bēl-zēri",
+          "dates": null,
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Marduk-apla-uṣur",
+          "dates": null,
+          "note": "No BC year printed for this row, so no person record."
+        },
+        {
+          "name": "Erība-Marduk",
+          "dates": "Start (BC): ~769; End (BC): ~761",
+          "person": "eriba-marduk"
+        },
+        {
+          "name": "Nabû-šuma-iškun",
+          "dates": "Start (BC): ~761; End (BC): ~748",
+          "person": "nabu-suma-iskun"
+        },
+        {
+          "name": "Nabû-nāṣir",
+          "dates": "Start (BC): 747; End (BC): 734",
+          "person": "nabu-nasir"
+        },
+        {
+          "name": "Nabû-nādin-zēri",
+          "dates": "Start (BC): 734; End (BC): 732",
+          "person": "nabu-nadin-zeri"
+        },
+        {
+          "name": "Nabû-šuma-ukîn II",
+          "dates": "Start (BC): 732; End (BC): 732",
+          "person": "nabu-suma-ukin-ii"
+        },
+        {
+          "name": "Nabû-mukin-zēri",
+          "dates": "Start (BC): 731; End (BC): 729",
+          "person": "nabu-mukin-zeri"
         }
       ],
       "unrecorded_reason": null
@@ -2370,7 +3974,7 @@
           "name": "Total",
           "dates": null,
           "lengths": "Africanus: 284; SKL: 259; Josephus: 259 y 9 m",
-          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+          "note": "A dynasty or table total, not an individual ruler."
         }
       ],
       "unrecorded_reason": null
@@ -2453,7 +4057,7 @@
           "name": "Total",
           "dates": null,
           "lengths": "Reign: 227",
-          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+          "note": "A dynasty or table total, not an individual ruler."
         }
       ],
       "unrecorded_reason": null
@@ -2788,7 +4392,7 @@
           "name": "Stated Total",
           "dates": null,
           "lengths": "Africanus: 263; Eusebius: 348; Armenian: 348",
-          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+          "note": "A dynasty or table total, not an individual ruler."
         }
       ],
       "unrecorded_reason": null
@@ -2996,7 +4600,7 @@
           "name": "Total",
           "dates": null,
           "lengths": "Herodotus: 145; Sothis: 124; Monuments: 138.5; Africanus: 129.5; Syncellus: 135; Eusebius (Armenian): 134; Chron: 42",
-          "note": "Regnal lengths only in this table, so no person record (no BC year is computed from lengths)."
+          "note": "A dynasty or table total, not an individual ruler."
         }
       ],
       "unrecorded_reason": null

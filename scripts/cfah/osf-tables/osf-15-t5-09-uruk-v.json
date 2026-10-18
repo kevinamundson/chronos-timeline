@@ -1,0 +1,37 @@
+{
+ "id": "osf-15-t5-09-uruk-v",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Uruk V",
+ "dynasty": "Uruk V dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  53
+ ],
+ "rows": [
+  {
+   "name": "Uruk V (dynasty total)",
+   "cells": {
+    "Reign (y)": "7",
+    "Start (BC)": "1356",
+    "End (BC)": "1349"
+   }
+  },
+  {
+   "name": "Utu-Hegal",
+   "cells": {
+    "Reign (y)": "7",
+    "Start (BC)": "1356",
+    "End (BC)": "1349"
+   },
+   "pages": [
+    53
+   ]
+  }
+ ]
+}

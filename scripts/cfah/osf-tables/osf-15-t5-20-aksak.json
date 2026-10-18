@@ -1,0 +1,92 @@
+{
+ "id": "osf-15-t5-20-aksak",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Akšak",
+ "dynasty": "Akšak dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  56
+ ],
+ "rows": [
+  {
+   "name": "Akšak (dynasty total)",
+   "cells": {
+    "Reign (y)": "93",
+    "Start (BC)": "1685 (+/- 10 y)",
+    "End (BC)": "1592"
+   }
+  },
+  {
+   "name": "Unzi",
+   "cells": {
+    "Reign (y)": "30",
+    "Start (BC)": "1685",
+    "End (BC)": "1655"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Undalulu",
+   "cells": {
+    "Reign (y)": "6",
+    "Start (BC)": "1655",
+    "End (BC)": "1649"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Urur",
+   "cells": {
+    "Reign (y)": "6",
+    "Start (BC)": "1649",
+    "End (BC)": "1643"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Puzur-Nirah",
+   "cells": {
+    "Reign (y)": "20",
+    "Start (BC)": "1643",
+    "End (BC)": "1623"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Išu-Il",
+   "cells": {
+    "Reign (y)": "24",
+    "Start (BC)": "1623",
+    "End (BC)": "1599"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Šu-Sin",
+   "cells": {
+    "Reign (y)": "7",
+    "Start (BC)": "1599",
+    "End (BC)": "1592"
+   },
+   "pages": [
+    56
+   ]
+  }
+ ]
+}

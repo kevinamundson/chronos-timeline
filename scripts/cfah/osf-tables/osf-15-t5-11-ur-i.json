@@ -1,0 +1,70 @@
+{
+ "id": "osf-15-t5-11-ur-i",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Ur I",
+ "dynasty": "Ur I dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  54
+ ],
+ "rows": [
+  {
+   "name": "Ur I (dynasty total)",
+   "cells": {
+    "Reign (y)": "177",
+    "Start (BC)": "~1968",
+    "End (BC)": "~1791"
+   }
+  },
+  {
+   "name": "Mes-ane-pada",
+   "cells": {
+    "Reign (y)": "80",
+    "Start (BC)": "1968",
+    "End (BC)": "1888"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Meš-ki'ag-Nuna",
+   "cells": {
+    "Reign (y)": "36",
+    "Start (BC)": "1888",
+    "End (BC)": "1852"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Elulu",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "1852",
+    "End (BC)": "1827"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Balulu",
+   "cells": {
+    "Reign (y)": "36",
+    "Start (BC)": "1827",
+    "End (BC)": "1791"
+   },
+   "pages": [
+    54
+   ]
+  }
+ ]
+}

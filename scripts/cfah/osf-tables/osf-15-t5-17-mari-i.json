@@ -1,0 +1,80 @@
+{
+ "id": "osf-15-t5-17-mari-i",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Mari I",
+ "dynasty": "Mari I dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  55
+ ],
+ "rows": [
+  {
+   "name": "Mari I (dynasty total)",
+   "cells": {
+    "Reign (y)": "136",
+    "Start (BC)": "~1994",
+    "End (BC)": "~1858"
+   }
+  },
+  {
+   "name": "Anubu",
+   "cells": {
+    "Reign (y)": "30"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Anba",
+   "cells": {
+    "Reign (y)": "17"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Bazi",
+   "cells": {
+    "Reign (y)": "30"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Zizi",
+   "cells": {
+    "Reign (y)": "20"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Lim-er",
+   "cells": {
+    "Reign (y)": "30"
+   },
+   "pages": [
+    55
+   ]
+  },
+  {
+   "name": "Šarrum-iter",
+   "cells": {
+    "Reign (y)": "9"
+   },
+   "pages": [
+    55
+   ]
+  }
+ ]
+}

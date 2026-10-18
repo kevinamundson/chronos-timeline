@@ -4,7 +4,7 @@
   "type": "person",
   "title": "Hammurabi",
   "summary": "King of Babylon, known for his law code.",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",
@@ -38,6 +38,23 @@
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Reign (y): 55, 42; Start (BC): 1044, 1032; End (BC): 989",
+        "year_am": null,
+        "year_bc_ad": -1044,
+        "year_bc_ad_end": -989,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-15: Sumer, Akkad, and Babylon,\" OSF preprint v1.4 (2026), doi:10.17605/OSF.IO/VYNJU, file CFAH-15 Sumer, Akkad, and Babylon_v1.4.pdf, Table 5 \"Baseline Reigns for Sumer, Akkad, and Babylon: First Dynasty of Babylon\", p. 58",
+        "link": "https://osf.io/vynju/",
+        "source_text_id": "cfah-15-osf",
+        "note": "Row \"Hammurabi\" of Table 5 (First Dynasty of Babylon).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-15-t5-24-first-dynasty-of-babylon:hammurabi:hammurabi:reign"
+      }
     ]
   },
   "events": [
@@ -47,7 +64,15 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "cfah-15-osf"
   ],
-  "related": []
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-15-osf",
+      "url": "https://osf.io/vynju/",
+      "locator": "Table 5, pp. 57–58"
+    }
+  ]
 }

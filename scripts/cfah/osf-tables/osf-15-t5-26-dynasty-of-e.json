@@ -1,0 +1,182 @@
+{
+ "id": "osf-15-t5-26-dynasty-of-e",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Dynasty of E",
+ "dynasty": "Dynasty of E",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  59,
+  60
+ ],
+ "rows": [
+  {
+   "name": "Dynasty of E (dynasty total)",
+   "cells": {}
+  },
+  {
+   "name": "Nabû-mukin-apli",
+   "cells": {
+    "Reign (y)": "36"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Ninurta-kudurri-uṣur II",
+   "cells": {
+    "Reign (y)": "8 mo"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Mar-biti-aḫḫe-idinna",
+   "cells": {
+    "Reign (y)": "?"
+   },
+   "pages": [
+    59
+   ]
+  },
+  {
+   "name": "Šamaš-mudammiq",
+   "cells": {},
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Nabû-šuma-ukin I",
+   "cells": {},
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Nabû-apla-iddina",
+   "cells": {},
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Marduk-zâkir-šumi I",
+   "cells": {
+    "Start (BC)": "855",
+    "End (BC)": "819"
+   },
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Marduk-balāssu-iqbi",
+   "cells": {
+    "Start (BC)": "823",
+    "End (BC)": "812"
+   },
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Bāba-aḫa-iddina",
+   "cells": {
+    "Start (BC)": "812",
+    "End (BC)": "812"
+   },
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "[Ninurta-apla-X]",
+   "cells": {},
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Marduk-bēl-zēri",
+   "cells": {},
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Marduk-apla-uṣur",
+   "cells": {},
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Erība-Marduk",
+   "cells": {
+    "Start (BC)": "~769",
+    "End (BC)": "~761"
+   },
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Nabû-šuma-iškun",
+   "cells": {
+    "Start (BC)": "~761",
+    "End (BC)": "~748"
+   },
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Nabû-nāṣir",
+   "cells": {
+    "Start (BC)": "747",
+    "End (BC)": "734"
+   },
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Nabû-nādin-zēri",
+   "cells": {
+    "Start (BC)": "734",
+    "End (BC)": "732"
+   },
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Nabû-šuma-ukîn II",
+   "cells": {
+    "Start (BC)": "732",
+    "End (BC)": "732"
+   },
+   "pages": [
+    60
+   ]
+  },
+  {
+   "name": "Nabû-mukin-zēri",
+   "cells": {
+    "Start (BC)": "731",
+    "End (BC)": "729"
+   },
+   "pages": [
+    60
+   ]
+  }
+ ]
+}

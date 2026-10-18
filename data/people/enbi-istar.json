@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "enbi-istar",
+  "type": "person",
+  "title": "Enbi-Ištar",
+  "summary": "Ruler listed in CFAH-15 Table 5 (Kish II dynasty).",
+  "description": "Ruler of Kish II dynasty. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-15 (Table 5, \"Baseline Reigns for Sumer, Akkad, and Babylon: Kish II\"); its dates are display only.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Reign (y): 8.1; Start (BC): 1651; End (BC): 1643",
+        "year_am": null,
+        "year_bc_ad": -1651,
+        "year_bc_ad_end": -1643,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-15: Sumer, Akkad, and Babylon,\" OSF preprint v1.4 (2026), doi:10.17605/OSF.IO/VYNJU, file CFAH-15 Sumer, Akkad, and Babylon_v1.4.pdf, Table 5 \"Baseline Reigns for Sumer, Akkad, and Babylon: Kish II\", p. 52",
+        "link": "https://osf.io/vynju/",
+        "source_text_id": "cfah-15-osf",
+        "note": "Row \"Enbi-Ištar\" of Table 5 (Kish II dynasty).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-15-t5-02-kish-ii:enbi-istar:enbi-istar:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-15-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-15-osf",
+      "url": "https://osf.io/vynju/",
+      "locator": "Table 5, pp. 51–52"
+    }
+  ],
+  "dynasty": "Kish II dynasty"
+}

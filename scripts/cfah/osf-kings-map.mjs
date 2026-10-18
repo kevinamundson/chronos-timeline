@@ -182,4 +182,44 @@ export const MAP = {
     'Ishi-Addu & David': G('A shared row (Ishi-Addu and David, 1055-1050 BC as printed); David has his own row.'),
     David: 'david', Solomon: 'solomon',
   },
+  // ---- CFAH-15 (vynju): Sumer, Akkad and Babylon. CFAH-15 identifies Mes-kiag-gasher/Gišur with Cush, Enmerkar with
+  // Nimrod, Dumuzi with Semiramis and Gilgamesh with Ninyas (records from the CFAH pass, phase 3).
+  'osf-15-t3-uruk-god-kings': { 'Mes-kia-gasir': { link: 'cush' }, 'En-mer-kar': { link: 'nimrod' }, 'Lugal Banda': { link: 'lugal-banda' }, Dumuzi: { link: 'semiramis-i' }, Gilgamesh: { link: 'ninyas' } },
+  'osf-15-t4-kassites': {
+    '[Shuzigash (Nazi-Bugash)]': P('shuzigash', 'Shuzigash', ['Nazi-Bugash']),
+    '[Nazi-Maruttash, aka Adad-šuma-uṣur]': P('nazi-maruttash', 'Nazi-Maruttash', ['Adad-šuma-uṣur I']),
+    '[Kashtiliash II]': P('kashtiliash-ii', 'Kashtiliash II', ['Kastiliasu II']),
+    '[Agum II Kakrime]': P('agum-ii-kakrime', 'Agum II Kakrime', []),
+  },
+  'osf-15-t5-01-kish-i': { 'Gišur (Cush)': { id: 'cush', note: 'CFAH-15 identifies Gišur of Kish I with Cush.' } },
+  'osf-15-t5-05-uruk-i': {
+    "Meš-ki'ag-gašer": { id: 'cush', note: 'CFAH-15 identifies Meš-ki\'ag-gašer of Uruk I with Cush.' },
+    'En-mer-kar': { id: 'nimrod', note: 'CFAH-15 identifies En-mer-kar with Nimrod.' },
+    'Lugal-Banda': P('lugal-banda', 'Lugal-Banda', ['Lugalbanda']),
+    'Dumuzi / Semiramis': { id: 'semiramis-i', note: 'Printed "Dumuzi / Semiramis".' },
+    Gilgamesh: { id: 'ninyas', note: 'CFAH-15 identifies Gilgamesh with Ninyas.' },
+  },
+  'osf-15-t5-12-ur-ii': { '[...]': G('A lost name in the king list.') },
+  'osf-15-t5-13-ur-iii': { 'Su-Sin': P('shu-sin-of-ur', 'Šu-Sin of Ur', ['Su-Sin', 'Shu-Sin']) },
+  'osf-15-t5-14-lagash-i': { '[several weak kings]': G(GROUP) },
+  'osf-15-t5-19-mari-iii': { '[~25 Sakkanakku governors]': G(GROUP), 'Dagan-[?] last Shakkanakku': G('The name is incomplete in the table ("Dagan-[?]").') },
+  'osf-15-t5-20-aksak': { 'Šu-Sin': P('shu-sin-of-akshak', 'Šu-Sin of Akšak', ['Shu-Sin']) },
+  'osf-15-t5-21-akkad': {
+    'Sargon the Great': 'sargon-i-of-akkad', 'Naram Sin': P('naram-sin-of-akkad', 'Naram-Sin of Akkad', ['Naram Sin']),
+    '4 kings in 3 yrs': G(GROUP),
+  },
+  'osf-15-t5-24-first-dynasty-of-babylon': { Hammurabi: 'hammurabi' },
+  'osf-15-t5-25-kassite-dynasty': {
+    Gandash: 'ghandash', 'Kashtiliashi [I]': { id: 'kashtiliash-i', note: 'Printed "Kashtiliashi [I]".' },
+    '[...]': G('A lost name in the king list.'),
+    '[Shuzigash (Nazi-Bugash)]': 'shuzigash', '[Nazi-Maruttash, Adad-šuma-uṣur I]': 'nazi-maruttash', '[Kastiliasu II]': 'kashtiliash-ii', '[Agum II Kakrime]': 'agum-ii-kakrime',
+    'Kadash[...]': G('The name is damaged in the source ("Kadash[...]").'),
+    'Kashtil[iasu] III': P('kashtiliash-iii', 'Kashtiliasu III', ['Kashtiliash III']),
+    'Adad-shuma-usir [II]': P('adad-shuma-usur-ii', 'Adad-shuma-usir II', ['Adad-šuma-uṣur II']),
+    Mardukaplaiddin: P('marduk-apla-iddina-kassite', 'Mardukaplaiddin', ['Marduk-apla-iddina']),
+  },
+  'osf-15-t5-26-dynasty-of-e': {
+    'Nabû-nāṣir': P('nabu-nasir', 'Nabû-nāṣir', ['Nabonassar'], { events: ['era-of-nabonassar'] }),
+    '[Ninurta-apla-X]': G('The name is incomplete in the table ("Ninurta-apla-X").'),
+  },
 };

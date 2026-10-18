@@ -29,6 +29,21 @@
         "note": "Her 42-year reign, \"triangulated\" in CFAH-3 (AP-21, on the event reign-of-semiramis-i).",
         "cfah_basis": "paper_text",
         "cfah_key": "cfah:c5-semiramis1-reign:semiramis-i:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Reign (y): 30; Start (BC): 2036; End (BC): 2006",
+        "year_am": null,
+        "year_bc_ad": -2036,
+        "year_bc_ad_end": -2006,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-15: Sumer, Akkad, and Babylon,\" OSF preprint v1.4 (2026), doi:10.17605/OSF.IO/VYNJU, file CFAH-15 Sumer, Akkad, and Babylon_v1.4.pdf, Table 5 \"Baseline Reigns for Sumer, Akkad, and Babylon: Uruk I\", p. 52",
+        "link": "https://osf.io/vynju/",
+        "source_text_id": "cfah-15-osf",
+        "note": "Row \"Dumuzi / Semiramis\" of Table 5 (Uruk I dynasty). Printed \"Dumuzi / Semiramis\".",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-15-t5-05-uruk-i:dumuzi-semiramis:semiramis-i:reign"
       }
     ]
   },
@@ -37,7 +52,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "cfah-5"
+    "cfah-5",
+    "cfah-15-osf"
   ],
   "related": [
     "nimrod"
@@ -47,6 +63,11 @@
       "source_id": "cfah-5",
       "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
       "locator": "\"AP-47: The Reign of Ninyas Zames/Gilgamesh: 2006–1968 B.C.\""
+    },
+    {
+      "source_id": "cfah-15-osf",
+      "url": "https://osf.io/vynju/",
+      "locator": "Table 5, pp. 52–53"
     }
   ],
   "dynasty": "Uruk / Assyria (chroniclers)"

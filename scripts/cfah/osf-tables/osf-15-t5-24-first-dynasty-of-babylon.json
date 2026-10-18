@@ -1,0 +1,148 @@
+{
+ "id": "osf-15-t5-24-first-dynasty-of-babylon",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: First Dynasty of Babylon",
+ "dynasty": "First Dynasty of Babylon",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  57,
+  58
+ ],
+ "rows": [
+  {
+   "name": "First Dynasty Babylon (dynasty total)",
+   "cells": {
+    "Reign (y)": "293",
+    "Start (BC)": "1144",
+    "End (BC)": "851"
+   }
+  },
+  {
+   "name": "Sumu-abum",
+   "cells": {
+    "Reign (y)": "15",
+    "Start (BC)": "1144",
+    "End (BC)": "1129"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Sumulail",
+   "cells": {
+    "Reign (y)": "35",
+    "Start (BC)": "1129",
+    "End (BC)": "1094"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Sabu",
+   "cells": {
+    "Reign (y)": "14",
+    "Start (BC)": "1094",
+    "End (BC)": "1080"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Apil-Sin",
+   "cells": {
+    "Reign (y)": "18",
+    "Start (BC)": "1080",
+    "End (BC)": "1062"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Sinmuballit",
+   "cells": {
+    "Reign (y)": "30",
+    "Start (BC)": "1062",
+    "End (BC)": "1032"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Hammurabi",
+   "cells": {
+    "Reign (y)": "55, 42",
+    "Start (BC)": "1044, 1032",
+    "End (BC)": "989"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Samsu-iluna",
+   "cells": {
+    "Reign (y)": "35",
+    "Start (BC)": "989",
+    "End (BC)": "954"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Ebishum",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "954",
+    "End (BC)": "929"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Ammiditana",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "929",
+    "End (BC)": "904"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Ammisaduga",
+   "cells": {
+    "Reign (y)": "22",
+    "Start (BC)": "904",
+    "End (BC)": "882"
+   },
+   "pages": [
+    58
+   ]
+  },
+  {
+   "name": "Samsuditana",
+   "cells": {
+    "Reign (y)": "31",
+    "Start (BC)": "882",
+    "End (BC)": "851"
+   },
+   "pages": [
+    58
+   ]
+  }
+ ]
+}

@@ -31,13 +31,29 @@
         "note": "The Babylonian King List \"appears to cover the period from Ghandash in 1282 B.C. to Kandalanu in 627 B.C.\"",
         "cfah_basis": "paper_text",
         "cfah_key": "cfah:c5-ghandash:ghandash:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "Reign (y): 16; Start (BC): 1282; End (BC): 1266",
+        "year_am": null,
+        "year_bc_ad": -1282,
+        "year_bc_ad_end": -1266,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-15: Sumer, Akkad, and Babylon,\" OSF preprint v1.4 (2026), doi:10.17605/OSF.IO/VYNJU, file CFAH-15 Sumer, Akkad, and Babylon_v1.4.pdf, Table 5 \"Baseline Reigns for Sumer, Akkad, and Babylon: Kassite Dynasty\", p. 58",
+        "link": "https://osf.io/vynju/",
+        "source_text_id": "cfah-15-osf",
+        "note": "Row \"Gandash\" of Table 5 (Kassite Dynasty).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-15-t5-25-kassite-dynasty:gandash:ghandash:reign"
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-5"
+    "cfah-5",
+    "cfah-15-osf"
   ],
   "related": [],
   "free_source_links": [
@@ -45,6 +61,11 @@
       "source_id": "cfah-5",
       "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
       "locator": "\"Kassite Synchronisms\""
+    },
+    {
+      "source_id": "cfah-15-osf",
+      "url": "https://osf.io/vynju/",
+      "locator": "Table 5, pp. 58–59"
     }
   ],
   "dynasty": "Kassite dynasty"

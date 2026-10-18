@@ -1,0 +1,191 @@
+{
+ "id": "osf-15-t5-23-isin",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Isin",
+ "dynasty": "Isin dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  57
+ ],
+ "rows": [
+  {
+   "name": "Isin (dynasty total)",
+   "cells": {
+    "Reign (y)": "226, 209",
+    "Start (BC)": "1258, 1241",
+    "End (BC)": "1032"
+   }
+  },
+  {
+   "name": "Išbi-Irra",
+   "cells": {
+    "Reign (y)": "33",
+    "Start (BC)": "1258",
+    "End (BC)": "1225"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Šu-ilišu",
+   "cells": {
+    "Reign (y)": "20",
+    "Start (BC)": "1235",
+    "End (BC)": "1215"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Iddin-Dagan",
+   "cells": {
+    "Reign (y)": "21",
+    "Start (BC)": "1215",
+    "End (BC)": "1194"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Išme-Dagan",
+   "cells": {
+    "Reign (y)": "20",
+    "Start (BC)": "1194",
+    "End (BC)": "1174"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Lipit-Ištar",
+   "cells": {
+    "Reign (y)": "11",
+    "Start (BC)": "1174",
+    "End (BC)": "1163"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Ur-Ninurta",
+   "cells": {
+    "Reign (y)": "28",
+    "Start (BC)": "1163",
+    "End (BC)": "1135"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Bur-Sin",
+   "cells": {
+    "Reign (y)": "21",
+    "Start (BC)": "1135",
+    "End (BC)": "1114"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Lipit-Enlil",
+   "cells": {
+    "Reign (y)": "5",
+    "Start (BC)": "1114",
+    "End (BC)": "1109"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Irra-imitti",
+   "cells": {
+    "Reign (y)": "8",
+    "Start (BC)": "1109",
+    "End (BC)": "1101"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Enlil-bani",
+   "cells": {
+    "Reign (y)": "24",
+    "Start (BC)": "1101",
+    "End (BC)": "1077"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Zambija",
+   "cells": {
+    "Reign (y)": "3",
+    "Start (BC)": "1077",
+    "End (BC)": "1074"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Iter-piša",
+   "cells": {
+    "Reign (y)": "4",
+    "Start (BC)": "1074",
+    "End (BC)": "1070"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Urdukuga",
+   "cells": {
+    "Reign (y)": "4",
+    "Start (BC)": "1070",
+    "End (BC)": "1066"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Sin-magir",
+   "cells": {
+    "Reign (y)": "11",
+    "Start (BC)": "1066",
+    "End (BC)": "1055"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Damiq-ilišu",
+   "cells": {
+    "Reign (y)": "23",
+    "Start (BC)": "1055",
+    "End (BC)": "1032"
+   },
+   "pages": [
+    57
+   ]
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "id": "osf-15-t5-03-kish-iii",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Kish III",
+ "dynasty": "Kish III dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  52
+ ],
+ "rows": [
+  {
+   "name": "Kish III (dynasty total)",
+   "cells": {
+    "Reign (y)": "2.8",
+    "Start (BC)": "1633",
+    "End (BC)": "1630.65"
+   }
+  },
+  {
+   "name": "Ku-Baba",
+   "cells": {
+    "Reign (y)": "2.8",
+    "Start (BC)": "1633",
+    "End (BC)": "1630.65"
+   },
+   "pages": [
+    52
+   ]
+  }
+ ]
+}

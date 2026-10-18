@@ -1,0 +1,280 @@
+{
+ "id": "osf-15-t5-01-kish-i",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Kish I",
+ "dynasty": "Kish I dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  50,
+  51
+ ],
+ "rows": [
+  {
+   "name": "Kish I Dynasty (dynasty total)",
+   "cells": {
+    "Reign (y)": "510.8",
+    "Start (BC)": "2233",
+    "End (BC)": "1720"
+   }
+  },
+  {
+   "name": "Gišur (Cush)",
+   "cells": {
+    "Reign (y)": "33.3",
+    "Start (BC)": "2233",
+    "End (BC)": "2200"
+   },
+   "pages": [
+    50
+   ]
+  },
+  {
+   "name": "Kullassina-bêl",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "2200",
+    "End (BC)": "2175"
+   },
+   "pages": [
+    50
+   ]
+  },
+  {
+   "name": "Nan-GIŠ-lišma",
+   "cells": {
+    "Reign (y)": "33.3",
+    "Start (BC)": "2175",
+    "End (BC)": "2141"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "En-dara-ana",
+   "cells": {
+    "Reign (y)": "11.6",
+    "Start (BC)": "2141",
+    "End (BC)": "2129"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Babum",
+   "cells": {
+    "Reign (y)": "8.3",
+    "Start (BC)": "2129",
+    "End (BC)": "2121"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Pu'annum",
+   "cells": {
+    "Reign (y)": "23.3",
+    "Start (BC)": "2121",
+    "End (BC)": "2097"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Kalibum",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "2097",
+    "End (BC)": "2072"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Kalumum",
+   "cells": {
+    "Reign (y)": "23.3",
+    "Start (BC)": "2072",
+    "End (BC)": "2049"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Zuqaqip",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "2049",
+    "End (BC)": "2024"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Enmen-baragesi",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "2024",
+    "End (BC)": "1999"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Agga",
+   "cells": {
+    "Reign (y)": "17.4",
+    "Start (BC)": "1999",
+    "End (BC)": "1982"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Atab",
+   "cells": {
+    "Reign (y)": "16.6",
+    "Start (BC)": "1982",
+    "End (BC)": "1965"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Mašda",
+   "cells": {
+    "Reign (y)": "23.3",
+    "Start (BC)": "1965",
+    "End (BC)": "1942"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Arwi'um",
+   "cells": {
+    "Reign (y)": "21.6",
+    "Start (BC)": "1942",
+    "End (BC)": "1920"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Etana",
+   "cells": {
+    "Reign (y)": "41.7",
+    "Start (BC)": "1920",
+    "End (BC)": "1879"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Balih",
+   "cells": {
+    "Reign (y)": "11.1",
+    "Start (BC)": "1879",
+    "End (BC)": "1868"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Enme-nuna",
+   "cells": {
+    "Reign (y)": "18.3",
+    "Start (BC)": "1868",
+    "End (BC)": "1849"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Melem-Kiš",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "1849",
+    "End (BC)": "1824"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Barsal-nuna",
+   "cells": {
+    "Reign (y)": "33.33",
+    "Start (BC)": "1824",
+    "End (BC)": "1791"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Samug",
+   "cells": {
+    "Reign (y)": "3.9",
+    "Start (BC)": "1791",
+    "End (BC)": "1787"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Tizkar",
+   "cells": {
+    "Reign (y)": "8.5",
+    "Start (BC)": "1787",
+    "End (BC)": "1781"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Ilku'u",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "1781",
+    "End (BC)": "1756"
+   },
+   "pages": [
+    51
+   ]
+  },
+  {
+   "name": "Ilta-sadum",
+   "cells": {
+    "Reign (y)": "33.3",
+    "Start (BC)": "1756",
+    "End (BC)": "1722"
+   },
+   "pages": [
+    51
+   ]
+  }
+ ]
+}

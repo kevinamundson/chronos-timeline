@@ -1,0 +1,148 @@
+{
+ "id": "osf-15-t5-10-uruk-vi",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Uruk VI",
+ "dynasty": "Uruk VI dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  53,
+  54
+ ],
+ "rows": [
+  {
+   "name": "Uruk VI (BKL) (dynasty total)",
+   "cells": {
+    "Reign (y)": "368",
+    "Start (BC)": "1184",
+    "End (BC)": "816"
+   }
+  },
+  {
+   "name": "Ilima",
+   "cells": {
+    "Reign (y)": "60",
+    "Start (BC)": "1184",
+    "End (BC)": "1124"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Ittili",
+   "cells": {
+    "Reign (y)": "56",
+    "Start (BC)": "1124",
+    "End (BC)": "1068"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Damqiili",
+   "cells": {
+    "Reign (y)": "36",
+    "Start (BC)": "1068",
+    "End (BC)": "1032"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Ishki",
+   "cells": {
+    "Reign (y)": "15",
+    "Start (BC)": "1032",
+    "End (BC)": "1017"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Shushshi",
+   "cells": {
+    "Reign (y)": "26",
+    "Start (BC)": "1017",
+    "End (BC)": "991"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Gulki",
+   "cells": {
+    "Reign (y)": "55",
+    "Start (BC)": "991",
+    "End (BC)": "936"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Peshgal",
+   "cells": {
+    "Reign (y)": "50",
+    "Start (BC)": "936",
+    "End (BC)": "886"
+   },
+   "pages": [
+    53
+   ]
+  },
+  {
+   "name": "Aidara",
+   "cells": {
+    "Reign (y)": "28",
+    "Start (BC)": "886",
+    "End (BC)": "858"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Ekurul",
+   "cells": {
+    "Reign (y)": "26",
+    "Start (BC)": "858",
+    "End (BC)": "832"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Melamma",
+   "cells": {
+    "Reign (y)": "7",
+    "Start (BC)": "832",
+    "End (BC)": "825"
+   },
+   "pages": [
+    54
+   ]
+  },
+  {
+   "name": "Eaga",
+   "cells": {
+    "Reign (y)": "9",
+    "Start (BC)": "825",
+    "End (BC)": "816"
+   },
+   "pages": [
+    54
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "osf-15-t5-21-akkad",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Akkad",
+ "dynasty": "Akkad dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  56,
+  57
+ ],
+ "rows": [
+  {
+   "name": "Akkad (dynasty total)",
+   "cells": {
+    "Reign (y)": "181",
+    "Start (BC)": "1619",
+    "End (BC)": "1438"
+   }
+  },
+  {
+   "name": "Sargon the Great",
+   "cells": {
+    "Reign (y)": "56",
+    "Start (BC)": "1619",
+    "End (BC)": "1563"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Rimush",
+   "cells": {
+    "Reign (y)": "9",
+    "Start (BC)": "1563",
+    "End (BC)": "1554"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Manishtushu",
+   "cells": {
+    "Reign (y)": "15",
+    "Start (BC)": "1554",
+    "End (BC)": "1539"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Naram Sin",
+   "cells": {
+    "Reign (y)": "56",
+    "Start (BC)": "1539",
+    "End (BC)": "1483"
+   },
+   "pages": [
+    56
+   ]
+  },
+  {
+   "name": "Sar-kalli-shari",
+   "cells": {
+    "Reign (y)": "25",
+    "Start (BC)": "1502",
+    "End (BC)": "1477"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "4 kings in 3 yrs",
+   "cells": {
+    "Reign (y)": "3",
+    "Start (BC)": "1477",
+    "End (BC)": "1474"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Dudu",
+   "cells": {
+    "Reign (y)": "21",
+    "Start (BC)": "1474",
+    "End (BC)": "1453"
+   },
+   "pages": [
+    57
+   ]
+  },
+  {
+   "name": "Šu-Durul",
+   "cells": {
+    "Reign (y)": "15",
+    "Start (BC)": "1453",
+    "End (BC)": "1438"
+   },
+   "pages": [
+    57
+   ]
+  }
+ ]
+}

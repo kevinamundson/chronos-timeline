@@ -1,0 +1,26 @@
+{
+ "id": "osf-15-t5-22-gutium",
+ "src": "cfah-15-osf",
+ "table": "Table 5",
+ "title": "Baseline Reigns for Sumer, Akkad, and Babylon: Gutium",
+ "dynasty": "Gutium dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start (BC)",
+  "End (BC)"
+ ],
+ "pages": [
+  57
+ ],
+ "rows": [
+  {
+   "name": "Gutium (dynasty total)",
+   "cells": {
+    "Reign (y)": "91",
+    "Start (BC)": "1481, 1447",
+    "End (BC)": "1356"
+   }
+  }
+ ]
+}

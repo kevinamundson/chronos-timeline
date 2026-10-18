@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ur-ninurta",
+  "type": "person",
+  "title": "Ur-Ninurta",
+  "summary": "Ruler listed in CFAH-15 Table 5 (Isin dynasty).",
+  "description": "Ruler of Isin dynasty. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-15 (Table 5, \"Baseline Reigns for Sumer, Akkad, and Babylon: Isin\"); its dates are display only.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "Reign (y): 28; Start (BC): 1163; End (BC): 1135",
+        "year_am": null,
+        "year_bc_ad": -1163,
+        "year_bc_ad_end": -1135,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"CFAH-15: Sumer, Akkad, and Babylon,\" OSF preprint v1.4 (2026), doi:10.17605/OSF.IO/VYNJU, file CFAH-15 Sumer, Akkad, and Babylon_v1.4.pdf, Table 5 \"Baseline Reigns for Sumer, Akkad, and Babylon: Isin\", p. 57",
+        "link": "https://osf.io/vynju/",
+        "source_text_id": "cfah-15-osf",
+        "note": "Row \"Ur-Ninurta\" of Table 5 (Isin dynasty).",
+        "cfah_basis": "paper_text",
+        "cfah_preprint": true,
+        "cfah_key": "cfah:osf:osf-15-t5-23-isin:ur-ninurta:ur-ninurta:reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cfah-15-osf"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cfah-15-osf",
+      "url": "https://osf.io/vynju/",
+      "locator": "Table 5, p. 57"
+    }
+  ],
+  "dynasty": "Isin dynasty"
+}

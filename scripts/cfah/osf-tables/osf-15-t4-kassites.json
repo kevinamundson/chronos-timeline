@@ -1,0 +1,101 @@
+{
+ "id": "osf-15-t4-kassites",
+ "src": "cfah-15-osf",
+ "table": "Table 4",
+ "title": "Kassite Kings Contemporary with Egyptian Dynasty 18",
+ "dynasty": "Kassite Dynasty",
+ "kind": "dated",
+ "region": "Mesopotamia",
+ "yearCols": [
+  "Start",
+  "End"
+ ],
+ "pages": [
+  37,
+  38
+ ],
+ "rows": [
+  {
+   "name": "[Kadashman-harbe I]",
+   "cells": {
+    "Start": "~1000",
+    "End": "~980"
+   }
+  },
+  {
+   "name": "[Karaindash]",
+   "cells": {
+    "Start": "~980",
+    "End": "~960"
+   }
+  },
+  {
+   "name": "[Kurigalzu I]",
+   "cells": {
+    "Start": "~960",
+    "End": "~940"
+   }
+  },
+  {
+   "name": "[Kadashman-Enlil I]",
+   "cells": {
+    "Start": "~940",
+    "End": "~920"
+   }
+  },
+  {
+   "name": "[Burnaburiash II]",
+   "cells": {
+    "Start": "~920",
+    "End": "~903"
+   }
+  },
+  {
+   "name": "[Kadashman-Harbe II]",
+   "cells": {
+    "Start": "902",
+    "End": "896"
+   }
+  },
+  {
+   "name": "[Shuzigash (Nazi-Bugash)]",
+   "cells": {
+    "Reign": "[1]",
+    "Start": "896",
+    "End": "895"
+   }
+  },
+  {
+   "name": "[Kurigalzu II]",
+   "cells": {
+    "Reign": "[25]",
+    "Start": "894",
+    "End": "869"
+   }
+  },
+  {
+   "name": "[Nazi-Maruttash, aka Adad-šuma-uṣur]",
+   "cells": {
+    "Reign": "22 + x",
+    "Start": "890",
+    "End": "866"
+   }
+  },
+  {
+   "name": "[Kashtiliash II]",
+   "cells": {
+    "Reign": "26",
+    "Start": "866",
+    "End": "840"
+   }
+  },
+  {
+   "name": "[Agum II Kakrime]",
+   "cells": {
+    "Reign": "18",
+    "Start": "840",
+    "End": "822"
+   }
+  }
+ ]
+}
