@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "egyptian-cities-founded",
+  "type": "event",
+  "title": "Egyptian state founded: first cities (Thinis, Nekheb) — Menes/Mizraim",
+  "summary": "CFAH AP-3: the Egyptian state was founded with its first cities 2189/2188 BC; CFAH identifies Menes with Mizraim son of Ham.",
+  "description": "CFAH-6 (section \"Argument 1\") identifies \"the biblical Mizraim as Menes, the founder of Egypt shortly after the Biblical Dispersion (Genesis 10:13–14; 50:11)\". CFAH-2 Conclusions date the founding of Thinis to 2188 BC. Ussher (Second Age §51) independently places Mizraim's colony in Egypt in 2188 BC.",
+  "sorting_year": -2189,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2189/2188 BC (AP-3)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "2189/2188 BC",
+      "year_am": null,
+      "year_bc_ad": -2189,
+      "year_bc_ad_end": -2188,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 2: Founding of the Nations,\" ARJ 15 (2022): 405–426, section \"Founding of the Nations\", Table 3 (AP-3 \"Egyptian Cities Founded\", 2189/2188; Diodorus, Manetho, Cullimore, Constantinus Manassas, Varro); also CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #3",
+      "link": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "note": "CFAH-6 Table 1: \"Egyptian state was founded with the first cities, Thinis, Nekheb, etc.\"",
+      "source_text_id": "cfah-2",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher",
+      "date": "1816d AM, 2188 BC",
+      "year_am": 1816,
+      "year_bc_ad": -2188,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Second Age §51 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "\"About this time Mizraim, the son of Ham, led his colony into Egypt\" (Constantinus Manasses: the Egyptian state lasted 1663 years, counted back from Cambyses). Agrees with CFAH AP-3 (2188 BC).",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    }
+  ],
+  "people": [
+    "mizraim"
+  ],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.10.6",
+    "Gen.10.13-Gen.10.14"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-2",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-2",
+      "url": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
+      "locator": "section \"Founding of the Nations\", Table 3 (AP-3 \"Egyptian Cities Founded\", 2189/2188; Diodorus, Manetho, Cullimore, Constantinus Manassas, Varro); also CFAH-6 Argument 2, Table 1 \"Anchor Points for e"
+    },
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.10.6 ; Gen.10.13-Gen.10.14"
+    }
+  ],
+  "related": [
+    "dispersion",
+    "mizraim",
+    "egypt",
+    "unification-of-egypt"
+  ]
+}

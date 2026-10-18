@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "death-of-nimrod",
+  "type": "event",
+  "title": "Death of Ninus (Nimrod)",
+  "summary": "CFAH AP-48: death of Ninus/Nimrod, 2068 BC (Atothis of Egyptian Dynasty 1 identified with Nimrod).",
+  "description": "CFAH-5 counts from Menes founding Thinis (2188 BC) through the 62-year reign of Menes and the 57-year reign of Atothis, whom it identifies as Nimrod (Manetho via Africanus). Scripture gives no date for Nimrod's death.",
+  "sorting_year": -2068,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2068 BC (AP-48)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "2068 BC",
+      "year_am": null,
+      "year_bc_ad": -2068,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-48: Death of Ninus/Nimrod: 2068 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "note": "CFAH-5: \"2188 B.C. Menes founds Thinis; minus, 62 year reign of Menes; minus, 57 year reign of Atothis (Nimrod)\"",
+      "source_text_id": "cfah-5",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [
+    "nimrod"
+  ],
+  "locations": [
+    "nineveh"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-5"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "section \"AP-48: Death of Ninus/Nimrod: 2068 B.C.\""
+    }
+  ],
+  "related": [
+    "nimrod",
+    "reign-of-semiramis-i",
+    "dispersion"
+  ]
+}

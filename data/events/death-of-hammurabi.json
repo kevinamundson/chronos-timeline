@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "death-of-hammurabi",
+  "type": "event",
+  "title": "Death of Hammurabi",
+  "summary": "CFAH-15 (OSF preprint) AP-93: death of Hammurabi, 989 BC.",
+  "description": "CFAH-15 (OSF preprint) AP-93: death of Hammurabi, 989 BC.",
+  "sorting_year": -989,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 989 BC (AP-93, OSF preprint CFAH-15)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "989 BC",
+      "year_am": null,
+      "year_bc_ad": -989,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-15: Sumer, Akkad, and Babylon,\" OSF preprint v1.4 (2026), doi:10.17605/OSF.IO/VYNJU, file \"CFAH-15 Sumer, Akkad, and Babylon_v1.4.pdf\", p. 28",
+      "link": "https://osf.io/vynju/",
+      "note": "CFAH-15 p. 28: \"Therefore, we have a triangulation for the Death of Hammurabi in 989 BC, new Anchor Point #93.\" OSF preprint, not peer-reviewed in ARJ; see docs/OPEN-QUESTIONS-FOR-KEVIN.md on whether preprint anchor points should set tier 1. Conventional (middle) chronology has Hammurabi die c. 1750 BC; CFAH is roughly 760 years later.",
+      "source_text_id": "cfah-15-osf",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [],
+  "locations": [
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-15-osf"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-15-osf",
+      "url": "https://osf.io/vynju/",
+      "locator": "p. 28"
+    }
+  ],
+  "related": [
+    "sack-of-babylon-by-mursilis"
+  ]
+}

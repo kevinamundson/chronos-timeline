@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "end-of-egypt-dynasty-12",
+  "type": "event",
+  "title": "End of Dynasty 12 (death of Sobekneferu)",
+  "summary": "CFAH AP-52: Dynasty 12 ended with the death of Sobekneferu, 1526/1525 BC.",
+  "description": "CFAH-6 Argument 2: \"a triangulation forming new Anchor Point #52, the End of Dynasty 12 in 1526/1525 BC\". CFAH-6 Argument 4 §12-13 identifies Sobekneferu as the barren queen who raised Moses and Moses as Amenemhat IV.",
+  "sorting_year": -1526,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1526/1525 BC (AP-52)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1526/1525 BC",
+      "year_am": null,
+      "year_bc_ad": -1526,
+      "year_bc_ad_end": -1525,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #52; Argument 2 \"Dynasty 12\"",
+      "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "note": "CFAH-6 Table 1: \"Death of R. Iubass, Sobekneferu, end of Dynasty 12\"",
+      "source_text_id": "cfah-6",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [
+    "moses"
+  ],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-6"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #52; Argument 2 \"Dynasty 12\""
+    }
+  ],
+  "related": []
+}

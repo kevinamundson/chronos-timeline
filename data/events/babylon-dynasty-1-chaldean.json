@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "babylon-dynasty-1-chaldean",
+  "type": "event",
+  "title": "Berossus Dynasty 1 (Chaldean) at Babel",
+  "summary": "CFAH AP-38: the first dynasty of Berossus ruled at Babel 2233–2191 BC, from the founding of Babel to the Dispersion.",
+  "description": "CFAH AP-38: the first dynasty of Berossus ruled at Babel 2233–2191 BC, from the founding of Babel to the Dispersion.",
+  "sorting_year": -2233,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2233–2191 BC (AP-38)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "2233–2191 BC",
+      "year_am": null,
+      "year_bc_ad": -2233,
+      "year_bc_ad_end": -2191,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-38: Dynasty 1: Chaldean: 2233—2191 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "note": "CFAH-5 heading: \"Dynasty 1: Chaldean: 2233—2191 B.C.\"",
+      "source_text_id": "cfah-5",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [
+    "nimrod"
+  ],
+  "locations": [
+    "babel",
+    "land-of-shinar"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-5"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "section \"AP-38: Dynasty 1: Chaldean: 2233—2191 B.C.\""
+    }
+  ],
+  "related": [
+    "founding-of-babel",
+    "dispersion",
+    "median-dynasty-of-babylon"
+  ]
+}

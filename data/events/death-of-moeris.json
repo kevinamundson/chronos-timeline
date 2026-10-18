@@ -1,0 +1,72 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "death-of-moeris",
+  "type": "event",
+  "title": "Approximate death of Moeris, the pharaoh of Joseph",
+  "summary": "CFAH AP-17: Moeris, Joseph's pharaoh, died about 1679 BC (rough estimate; CFAH-3 heading \"Joseph Alive in 1690 B.C.\").",
+  "description": "CFAH AP-17: Moeris, Joseph's pharaoh, died about 1679 BC (rough estimate; CFAH-3 heading \"Joseph Alive in 1690 B.C.\").",
+  "sorting_year": -1679,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: c. 1679 BC (AP-17)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "c. 1679 BC",
+      "year_am": null,
+      "year_bc_ad": -1679,
+      "precision": "approximate",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-17: Joseph Alive in 1690 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #17 (\"Approximate year of death of Joseph's pharaoh, Moeris\", 1679)",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "note": "CFAH-3: \"This very rough estimate yields 1679 B.C. for Moeris' death and 1711 B.C. for Joseph's appointment as Vizier.\" CFAH-3's section title says \"Joseph Alive in 1690 B.C.\"; the date it computes is 1679 BC for Moeris' death, and CFAH-6 Table 1 lists AP-17 as 1679. CFAH-3 also calls the estimate \"very rough\", and its 1711 BC for Joseph's appointment was superseded by AP-61 (1716/1715 BC).",
+      "source_text_id": "cfah-3",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [
+    "joseph"
+  ],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-3"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "section \"AP-17: Joseph Alive in 1690 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #17 (\"Approximate year of death of Joseph's pharaoh, Moeris\", 1679)"
+    }
+  ],
+  "related": [
+    "joseph-made-vizier",
+    "joseph"
+  ]
+}

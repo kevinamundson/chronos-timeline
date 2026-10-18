@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "death-of-concharis",
+  "type": "event",
+  "title": "Death of Concharis (Khaankhra Sobekhotep) and Merenre II, 1491 BC",
+  "summary": "CFAH AP-51: Concharis (Khaankhra Sobekhotep) of Dynasty 13 died in 1491 BC, the year of the Exodus; CFAH-6 also places the death of Merenre II then.",
+  "description": "The Sothis King List gives 700 years from the Dispersion (AP-2) to the death of king #25, Concharis. CFAH-6: \"1491 BC is the date of the Exodus in the Ussher-Jones chronology (Jones 2019, 24).\"",
+  "sorting_year": -1491,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1491 BC (AP-51)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1491 BC",
+      "year_am": null,
+      "year_bc_ad": -1491,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #51; Argument 2 §D \"The Death of Merenre II is Synchronized with the Death of Concharis of D13\"",
+      "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "note": "CFAH-6 Table 1: \"Death of Concharis, Khaankhra Sobekhotep\"",
+      "source_text_id": "cfah-6",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [
+    "moses"
+  ],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Exod.14.28"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-6"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #51; Argument 2 §D \"The Death of Merenre II is Synchronized with the Death of Concharis of D13\""
+    },
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Exod.14.28"
+    }
+  ],
+  "related": [
+    "exodus",
+    "reign-of-nitocris"
+  ]
+}

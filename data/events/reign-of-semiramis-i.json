@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "reign-of-semiramis-i",
+  "type": "event",
+  "title": "Reign of Semiramis I (Merneith/Uenephes)",
+  "summary": "CFAH AP-21: the reign of Semiramis I, 2036–1994 BC; CFAH-6 links her with Merneith/Uenephes of Egypt.",
+  "description": "Semiramis is the widow of Ninus (Nimrod) in the classical sources. CFAH-6 Table 1 gives the start as 2036/2035 BC, and CFAH-6 Argument 2 §A links the end of the famine of Djoser to the death of Uenephes in 1994 BC.",
+  "sorting_year": -2036,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2036–1994 BC (AP-21)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "2036–1994 BC",
+      "year_am": null,
+      "year_bc_ad": -2036,
+      "year_bc_ad_end": -1994,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-21: Reign of Semiramis I: 2036–1994 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #21 (\"Start of the reign of Semiramis I\", 2036/2035)",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "note": "CFAH-3 heading: \"Reign of Semiramis I: 2036–1994 B.C.\"",
+      "source_text_id": "cfah-3",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [
+    "nimrod"
+  ],
+  "locations": [
+    "nineveh",
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-3"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "section \"AP-21: Reign of Semiramis I: 2036–1994 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #21 (\"Start of the reign of Semiramis I\", 2036/2035)"
+    }
+  ],
+  "related": [
+    "death-of-nimrod",
+    "djosers-famine",
+    "nimrod"
+  ]
+}

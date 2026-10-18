@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "end-of-egypt-dynasty-8",
+  "type": "event",
+  "title": "End of Dynasty 8 of Memphis",
+  "summary": "CFAH AP-14: Dynasty 8 ended in 1233/1232 BC, 955 years after Menes (Turin Canon).",
+  "description": "CFAH AP-14: Dynasty 8 ended in 1233/1232 BC, 955 years after Menes (Turin Canon).",
+  "sorting_year": -1233,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1233/1232 BC (AP-14)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1233/1232 BC",
+      "year_am": null,
+      "year_bc_ad": -1233,
+      "year_bc_ad_end": -1232,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-14 End of the Eighth Dynasty of Egypt: 1233 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #14 (1233/1232); CFAH-6 Argument 2 §E",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "note": "CFAH-6 Argument 2 §E heading: \"Dynasty 8 ended in 1233 BC, 955 years after Menes, as per the Turin Canon\"",
+      "source_text_id": "cfah-3",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-3"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "section \"AP-14 End of the Eighth Dynasty of Egypt: 1233 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #14 (1233/1232); CFAH-6 Argument 2 §E"
+    }
+  ],
+  "related": [
+    "egyptian-cities-founded",
+    "semiramis-ii"
+  ]
+}

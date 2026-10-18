@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "senusret-iii-astronomical-college",
+  "type": "event",
+  "title": "Senusret III returns from Asia; astronomical college (\"Egyptian Belus\")",
+  "summary": "CFAH AP-18: Senusret III returned from war in Asia, founded an astronomical college and reorganised the government, 1577/1576 BC.",
+  "description": "CFAH AP-18: Senusret III returned from war in Asia, founded an astronomical college and reorganised the government, 1577/1576 BC.",
+  "sorting_year": -1577,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1577/1576 BC (AP-18)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1577/1576 BC",
+      "year_am": null,
+      "year_bc_ad": -1577,
+      "year_bc_ad_end": -1576,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-18: Egyptian Belus: Established Astronomical College 1576 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #18 (1577/1576)",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "note": "CFAH-6 Table 1: \"Senusret III returned from war in Asia, founded an astronomical college, and reorganized the government.\" CFAH-6 Argument 4 §10 dates the decree of oppression (Exod 1) to Senusret III, 1577 BC (\"86 years before the Exodus\", from the Midrash); that date is not numbered as an anchor point.",
+      "source_text_id": "cfah-3",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [
+    "moses"
+  ],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-3"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "section \"AP-18: Egyptian Belus: Established Astronomical College 1576 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #18 (1577/1576)"
+    }
+  ],
+  "related": []
+}

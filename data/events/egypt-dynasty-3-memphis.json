@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "egypt-dynasty-3-memphis",
+  "type": "event",
+  "title": "Dynasty 3 of Memphis (Nebka to Sneferu)",
+  "summary": "CFAH AP-50: Dynasty 3 of Memphis, 2029–1922 BC, ending with the death of Sneferu.",
+  "description": "CFAH-6: \"Dynasty 3 began with Nebka in Memphis in 2029 BC\" (Argument 2, Memphis Group). CFAH-6 Argument 4 §3 places Abraham in Egypt in the reign of Khufu, 1921 BC.",
+  "sorting_year": -2029,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2029–1922 BC (AP-50)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "2029–1922 BC",
+      "year_am": null,
+      "year_bc_ad": -2029,
+      "year_bc_ad_end": -1922,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #50; Argument 2 \"Key Synchronisms for Dynasties 3–8\"",
+      "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "note": "CFAH-6 Table 1: \"Dynasty 3 of Memphis, ends with death of Sneferu\"",
+      "source_text_id": "cfah-6",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-6"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #50; Argument 2 \"Key Synchronisms for Dynasties 3–8\""
+    }
+  ],
+  "related": [
+    "djosers-famine",
+    "abraham-enters-canaan"
+  ]
+}

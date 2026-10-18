@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "accession-of-mentuhotep-ii",
+  "type": "event",
+  "title": "Accession of Mentuhotep II",
+  "summary": "CFAH AP-56: accession of Mentuhotep II, 1808 BC.",
+  "description": "CFAH AP-56: accession of Mentuhotep II, 1808 BC.",
+  "sorting_year": -1808,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1808 BC (AP-56)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1808 BC",
+      "year_am": null,
+      "year_bc_ad": -1808,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #56; Argument 2 \"Dynasty 12\"",
+      "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "note": "CFAH-6 Table 1: \"Accession of Mentuhotep II\"",
+      "source_text_id": "cfah-6",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-6"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #56; Argument 2 \"Dynasty 12\""
+    }
+  ],
+  "related": [
+    "fall-of-heracleopolis"
+  ]
+}

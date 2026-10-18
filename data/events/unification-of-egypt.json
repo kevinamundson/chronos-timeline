@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "unification-of-egypt",
+  "type": "event",
+  "title": "War of Unification; Memphis founded; Thoth brings writing into Egypt",
+  "summary": "CFAH AP-22: Thoth/Hermes brings writing into Egypt and the War of Unification founds Memphis, 2164/2163 BC (twentieth year of Menes).",
+  "description": "CFAH-6 (Argument 2, \"Key Synchronisms for Dynasties 3–8\") counts \"from the Unification of Egypt in the twentieth year of Menes in 2164/2163 BC (Griffith and White 2023a, Anchor Point #22)\".",
+  "sorting_year": -2164,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2164/2163 BC (AP-22)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "2164/2163 BC",
+      "year_am": null,
+      "year_bc_ad": -2164,
+      "year_bc_ad_end": -2163,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-22: Hermes/Thoth/Mercury Brings Writing into Egypt: 2164/2163 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #22",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "note": "CFAH-6 Table 1: \"War of Unification, Memphis founded.\"",
+      "source_text_id": "cfah-3",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [
+    "mizraim"
+  ],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-3"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "section \"AP-22: Hermes/Thoth/Mercury Brings Writing into Egypt: 2164/2163 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #22"
+    }
+  ],
+  "related": [
+    "egyptian-cities-founded",
+    "mizraim"
+  ]
+}

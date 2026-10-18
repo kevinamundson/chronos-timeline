@@ -1,0 +1,72 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "babylon-dynasty-3",
+  "type": "event",
+  "title": "Berossus Dynasty 3: division and rebellion",
+  "summary": "CFAH AP-40: Dynasty 3, 33 years of division and rebellion, 1968–1935 BC.",
+  "description": "CFAH AP-40: Dynasty 3, 33 years of division and rebellion, 1968–1935 BC.",
+  "sorting_year": -1968,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1968–1935 BC (AP-40)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1968–1935 BC",
+      "year_am": null,
+      "year_bc_ad": -1968,
+      "year_bc_ad_end": -1935,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-40: Dynasty 3: Division and Rebellion: 33 Years: 1968–1935 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "note": "CFAH-5 heading: \"Dynasty 3: Division and Rebellion: 33 Years: 1968–1935 B.C.\"",
+      "source_text_id": "cfah-5",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [],
+  "locations": [
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-5"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "section \"AP-40: Dynasty 3: Division and Rebellion: 33 Years: 1968–1935 B.C.\""
+    }
+  ],
+  "related": [
+    "median-dynasty-of-babylon",
+    "babylon-dynasty-4-chaldean",
+    "reign-of-ninyas-gilgamesh"
+  ]
+}

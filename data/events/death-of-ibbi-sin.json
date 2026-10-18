@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "death-of-ibbi-sin",
+  "type": "event",
+  "title": "Death of Ibbi-Sin (end of Ur III)",
+  "summary": "CFAH AP-46: death of Ibbi-Sin, 1240 BC ± 2 years (Ishbi-Erra year 8).",
+  "description": "CFAH AP-46: death of Ibbi-Sin, 1240 BC ± 2 years (Ishbi-Erra year 8).",
+  "sorting_year": -1240,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: c. 1240 BC (AP-46)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "c. 1240 BC",
+      "year_am": null,
+      "year_bc_ad": -1240,
+      "precision": "approximate",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"7. Ishbi-Erra 8th year Amorite city destroyed: AP-46\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "note": "CFAH-5: \"1240 B.C. ± 2 yr, death of Ibbi-Sin: AP-46\"",
+      "source_text_id": "cfah-5",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [],
+  "locations": [
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-5"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "section \"7. Ishbi-Erra 8th year Amorite city destroyed: AP-46\""
+    }
+  ],
+  "related": [
+    "fall-of-akkad",
+    "semiramis-ii"
+  ]
+}

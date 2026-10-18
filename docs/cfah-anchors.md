@@ -33,3 +33,12 @@ Ussher-Jones *biblical* chronology the authors adopt as their baseline (not inde
 - Published discussion: https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-1-5-comments/ and reply https://answersresearchjournal.org/chronology/cfah-1-5-reply/ (also ".../chronology/cfah-1-5-comments-tweedy/", ".../chronology/chronological-framework-ancient-history-1-5-response/", ".../chronology/further-comments-griffith-white/", ".../ancient-egypt/chronological-framework-ancient-history-comments-1/", "-comments-2/", "-reply/")
 
 CFAH-7 and later were not found on ARJ (URL pattern checks returned 404) as of 2026-10-17.
+
+## Batch 3 additions (2026-10-17): Egyptian and Mesopotamian synchronisms
+
+37 more anchor-point events were added. Each record cites its paper section, and the CFAH-6 ones also cite CFAH-6 Table 1.
+- **Egypt:** AP-3, 14, 16, 17, 18, 20, 21, 22, 49 to 60.
+- **Mesopotamia:** AP-15, 35/42, 36, 38 to 41, 46, 47, 48.
+- **OSF preprints:** AP-82 (CFAH-13), AP-88 to 91 (CFAH-14), AP-92 and 93 (CFAH-15).
+
+See docs/cfah-osf-collation.md for the OSF inventory, the licences, and the anchor points not yet used.

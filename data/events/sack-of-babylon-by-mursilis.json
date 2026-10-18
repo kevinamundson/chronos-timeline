@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "sack-of-babylon-by-mursilis",
+  "type": "event",
+  "title": "Mursilis I sacks Babylon; end of the First Dynasty of Babylon",
+  "summary": "CFAH-13 (OSF preprint) AP-82: the sack of Babylon by Mursilis I ended the First Dynasty of Babylon, 851 BC.",
+  "description": "CFAH-13 (OSF preprint) AP-82: the sack of Babylon by Mursilis I ended the First Dynasty of Babylon, 851 BC.",
+  "sorting_year": -851,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 851 BC (AP-82, OSF preprint CFAH-13)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "851 BC",
+      "year_am": null,
+      "year_bc_ad": -851,
+      "precision": "year",
+      "citation": "Griffith & White, \"CFAH-13: The Hittites, Cimmerians, and Medes,\" OSF preprint v1.3 (2026), doi:10.17605/OSF.IO/BCWG2, file CFAH-13_Hittites_Cimmerians_Medes_v1.3.pdf, p. 31",
+      "link": "https://osf.io/bcwg2/",
+      "note": "CFAH-13 p. 31: \"establishes Anchor Point #82, Sack of Babylon by Mursilis ends the First Dynasty of Babylon, 851 BC.\" OSF preprint, not peer-reviewed in ARJ; see docs/OPEN-QUESTIONS-FOR-KEVIN.md on whether preprint anchor points should set tier 1.",
+      "source_text_id": "cfah-13-osf",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [],
+  "locations": [
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-13-osf"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-13-osf",
+      "url": "https://osf.io/bcwg2/",
+      "locator": "p. 31"
+    }
+  ],
+  "related": [
+    "death-of-hammurabi"
+  ]
+}

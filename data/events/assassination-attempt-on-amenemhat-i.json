@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "assassination-attempt-on-amenemhat-i",
+  "type": "event",
+  "title": "Failed assassination attempt on Amenemhat I (Pharaoh's baker and butler)",
+  "summary": "CFAH AP-60: the failed assassination attempt on Amenemhat I, 1718 BC, which CFAH-6 matches to the trial of Pharaoh's baker and butler (Gen 40).",
+  "description": "Genesis 40 tells of Pharaoh's chief butler and chief baker imprisoned with Joseph; two full years later Joseph was brought before Pharaoh (Gen 41:1). CFAH-6 dates the trial to 1718 BC and Joseph's promotion to 1716/1715 BC (AP-61).",
+  "sorting_year": -1718,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1718 BC (AP-60)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1718 BC",
+      "year_am": null,
+      "year_bc_ad": -1718,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,\" ARJ 18 (2025): 13–60, Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #60; Argument 4 §6 \"Assassination Attempt: Baker and Butler on Trial 1718 BC\"",
+      "link": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "note": "CFAH-6 Table 1: \"Failed Assassination Attempt on Amenemhat I\"",
+      "source_text_id": "cfah-6",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "jordan",
+      "date": "2287 - baker and cupbearer",
+      "year_am": 2287,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"The Chronology of the Pentateuch (Part 4),\" Biblical Chronology 6:6 (June 1994), §13 year list",
+      "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
+      "note": "Jordan dates the dreams of the baker and cupbearer (Gen 40) to AM 2287, two years before Joseph stands before Pharaoh in AM 2289 (Gen 41:1).",
+      "source_text_id": "jordan-bc-6-6"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [
+    "joseph"
+  ],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.40.1-Gen.40.23",
+    "Gen.41.1"
+  ],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-6",
+    "jordan-bc-6-6"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-6",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-6/",
+      "locator": "Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #60; Argument 4 §6 \"Assassination Attempt: Baker and Butler on Trial 1718 BC\""
+    },
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Gen.40.1-Gen.40.23 ; Gen.41.1"
+    }
+  ],
+  "related": [
+    "joseph-made-vizier",
+    "joseph",
+    "accession-of-amenemhat-i"
+  ]
+}

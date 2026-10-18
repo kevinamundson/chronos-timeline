@@ -1,0 +1,72 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "ushpia-founds-assur",
+  "type": "event",
+  "title": "Ushpia founds the city of Assur (estimate)",
+  "summary": "CFAH-14 (OSF preprint) AP-91: Ushpia founded the city of Assur about 2139 BC (estimate).",
+  "description": "CFAH-14 (OSF preprint) AP-91: Ushpia founded the city of Assur about 2139 BC (estimate).",
+  "sorting_year": -2139,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: c. 2139 BC (AP-91, OSF preprint CFAH-14)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "c. 2139 BC",
+      "year_am": null,
+      "year_bc_ad": -2139,
+      "precision": "approximate",
+      "citation": "Griffith & White, \"CFAH-14: Ancient Assyria,\" OSF preprint v1.0 (27 Feb 2026), doi:10.17605/OSF.IO/9FUW2, file CFAH-14_Assyria_v_1.0.pdf, p. 22 \"Ushpia founded the City of Assur - ~2139 BC - Anchor Point #91\"",
+      "link": "https://osf.io/9fuw2/",
+      "note": "CFAH-14 p. 22: \"Shalmaneser I stated that Ushpia founded the temple of Assur, which is to say, he founded the city\" OSF preprint, not peer-reviewed in ARJ; see docs/OPEN-QUESTIONS-FOR-KEVIN.md on whether preprint anchor points should set tier 1.",
+      "source_text_id": "cfah-14-osf",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [
+    "asshur"
+  ],
+  "locations": [
+    "assur"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-14-osf"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-14-osf",
+      "url": "https://osf.io/9fuw2/",
+      "locator": "p. 22 \"Ushpia founded the City of Assur - ~2139 BC - Anchor Point #91\""
+    }
+  ],
+  "related": [
+    "asshur",
+    "ilushuma-temple-of-ishtar"
+  ]
+}

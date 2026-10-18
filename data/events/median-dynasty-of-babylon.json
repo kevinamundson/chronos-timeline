@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "median-dynasty-of-babylon",
+  "type": "event",
+  "title": "\"Median Dynasty of Babylon\" (Berossus Dynasty 2)",
+  "summary": "CFAH AP-39: the Median Dynasty of Babylon ruled 224 years, 2191–1968 BC; CFAH-5 links it to Madai son of Japheth.",
+  "description": "CFAH-5: \"the 'Median Dynasty of Babylon' appears to have been a foreign dynasty appointed by Nimrod over the original region of Media and the original city of Babel, long before the Medes migrated into Iran.\"",
+  "sorting_year": -2191,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 2191–1968 BC (AP-39)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "2191–1968 BC",
+      "year_am": null,
+      "year_bc_ad": -2191,
+      "year_bc_ad_end": -1968,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-39: Median Dynasty of Babylon: 224 years: 2191–1968 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "note": "CFAH-5 heading: \"Median Dynasty of Babylon: 224 years: 2191–1968 B.C.\"",
+      "source_text_id": "cfah-5",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher",
+      "date": "2239b AM, 1765 BC",
+      "year_am": 2239,
+      "year_bc_ad": -1765,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Third Age §110 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "Ussher: \"Euechous began to reign in Chaldea, 224 years before the Arabians. (Julian Africanus)\" (paragraph printed as \"1 10.\" in the transcription). Same 224 years, but Ussher starts them in 1765 BC; CFAH starts them at the Dispersion (2191 BC).",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    }
+  ],
+  "people": [
+    "madai",
+    "nimrod"
+  ],
+  "locations": [
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-5",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "section \"AP-39: Median Dynasty of Babylon: 224 years: 2191–1968 B.C.\""
+    }
+  ],
+  "related": [
+    "babylon-dynasty-1-chaldean",
+    "babylon-dynasty-3",
+    "madai",
+    "media"
+  ]
+}

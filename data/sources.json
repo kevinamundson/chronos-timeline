@@ -818,6 +818,63 @@
       "license_note": "© 1993 Floyd Jones, Ph.D., Th.D., Floyd Jones Ministries, Inc.; offered as a free download on the ministry site. Copyrighted, not public domain.",
       "verified_on": "2026-10-17",
       "note": "1-page wide PDF (7560 x 792 pt). Judges timeline: Cushan 1418 BC (2586 AM), Eglon 1378 (2626 AM), Jabin/Deborah 1298, Midian/Gideon 1258 (Gideon's win 1251), Abimelech 1218, Tola 1215, Jair 1192, Ammon 1170, Jephthah 1152 (2852 AM), Ibzan 1146, Elon 1139, Abdon 1129, Samson 1121-1101, Saul 1095, David 1055, Solomon 1015. Its Joshua-Judges chasm is 26 years (1444-1418), whereas the 2002 book (p. 91) has Cushan at 1400 BC and 44 years. Values read from the PDF text layer and checked against a 100-dpi render."
+    },
+    {
+      "id": "cfah-13-osf",
+      "title": "CFAH-13: The Hittites, Cimmerians, and Medes",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "publication": "OSF preprint v1.3 (file CFAH-13_Hittites_Cimmerians_Medes_v1.3.pdf), doi:10.17605/OSF.IO/BCWG2",
+      "url": "https://osf.io/bcwg2/",
+      "alt_urls": [
+        "https://osf.io/download/4j2hv/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-17), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-17",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cfah-14-osf",
+      "title": "CFAH-14: Ancient Assyria",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "publication": "OSF preprint v1.0, 27 Feb 2026 (file CFAH-14_Assyria_v_1.0.pdf), doi:10.17605/OSF.IO/9FUW2",
+      "url": "https://osf.io/9fuw2/",
+      "alt_urls": [
+        "https://osf.io/download/ce35f/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-17), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-17",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cfah-15-osf",
+      "title": "CFAH-15: Sumer, Akkad, and Babylon",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "publication": "OSF preprint v1.4 (file \"CFAH-15 Sumer, Akkad, and Babylon_v1.4.pdf\"), doi:10.17605/OSF.IO/VYNJU",
+      "url": "https://osf.io/vynju/",
+      "alt_urls": [
+        "https://osf.io/download/8j3r2/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-17), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-17",
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
     }
   ]
 }

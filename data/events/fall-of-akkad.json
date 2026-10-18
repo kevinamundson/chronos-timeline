@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "fall-of-akkad",
+  "type": "event",
+  "title": "Fall of Akkad to the Guti Arabs; start of the \"Arab\" dynasty of Babylon",
+  "summary": "CFAH AP-35 and AP-42: Akkad (Babylon) fell to the Guti and Arabs in 1477/1476 BC, beginning the \"Arab\" Dynasty 5 (1477–1232 BC).",
+  "description": "CFAH-5 identifies Berossus' \"Arabian\" conquest of Babylon with the Fall of Akkad to the Guti and Amorites, and the end of the Arab dynasty (1232 BC) with Tukulti-Ninurta I, whom it suggests was remembered as Semiramis II (AP-15). CFAH-5 Conclusions call this one of its two \"most controversial findings\".",
+  "sorting_year": -1477,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1477/1476 BC (AP-35)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1477/1476 BC",
+      "year_am": null,
+      "year_bc_ad": -1477,
+      "year_bc_ad_end": -1476,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-35: Fall of Akkad to the Guti Arabs: 1477/1476 B.C.\"; also \"AP-42: Dynasty 5: “Arab” Dynasty: 1477–1232 B.C.\"",
+      "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "note": "CFAH-5: \"The date 1477 B.C. will prove to be pivotal when we synchronize the Arab dynasty of Babylon with the Arab/Hyksos dynasties of Egypt in the next paper.\"",
+      "source_text_id": "cfah-5",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher",
+      "date": "2466 AM, 1538 BC",
+      "year_am": 2466,
+      "year_bc_ad": -1538,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Third Age §167 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "\"In this war the Chaldeans were defeated and the Arabians reigned in the country of Babylon 216 years before Belus the Assyrian came there to reign.\" Ussher dates this to 1538 BC; CFAH quotes the same passage (as Ussher 2003 §164,165) but dates it 1477 BC. Difference: 61 years.",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    }
+  ],
+  "people": [],
+  "locations": [
+    "accad",
+    "babel"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-5",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-5",
+      "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+      "locator": "section \"AP-35: Fall of Akkad to the Guti Arabs: 1477/1476 B.C.\"; also \"AP-42: Dynasty 5: “Arab” Dynasty: 1477–1232 B.C.\""
+    }
+  ],
+  "related": [
+    "babylon-dynasty-4-chaldean",
+    "semiramis-ii",
+    "exodus"
+  ]
+}

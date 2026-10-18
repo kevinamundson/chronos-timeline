@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "reign-of-nitocris",
+  "type": "event",
+  "title": "Reign of Queen Nitocris (Netjerkare Siptah)",
+  "summary": "CFAH AP-16: Nitocris reigned approximately 1497–1479 BC; CFAH-6 has her follow Merenre II, who died in 1491 BC.",
+  "description": "CFAH AP-16: Nitocris reigned approximately 1497–1479 BC; CFAH-6 has her follow Merenre II, who died in 1491 BC.",
+  "sorting_year": -1497,
+  "sorting_basis": {
+    "tier": "cfah-anchor",
+    "tier_rank": 1,
+    "chronology": "cfah",
+    "note": "Tier 1: CFAH anchor point: 1497–1479 BC (AP-16)"
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1497–1479 BC",
+      "year_am": null,
+      "year_bc_ad": -1497,
+      "year_bc_ad_end": -1479,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,\" ARJ 16 (2023): 131–154, section \"AP-16: Nitocris Reigned from 1497 to 1479 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #16",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "note": "CFAH-6 Table 1: \"Approximate reign of Nitocris aka Netjerkare Siptah\"",
+      "source_text_id": "cfah-3",
+      "cfah_basis": "anchor_point"
+    },
+    {
+      "source": "ussher-jones",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "No matching entry found in Ussher's Annals."
+    }
+  ],
+  "people": [],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "kjv-gutenberg",
+    "cfah-3"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "cfah-3",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
+      "locator": "section \"AP-16: Nitocris Reigned from 1497 to 1479 B.C.\"; CFAH-6 Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #16"
+    }
+  ],
+  "related": [
+    "death-of-concharis",
+    "exodus"
+  ]
+}

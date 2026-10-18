@@ -64,13 +64,15 @@
     "death": [
       {
         "source": "cfah",
-        "date": null,
+        "date": "2068 BC",
         "year_am": null,
-        "year_bc_ad": null,
-        "precision": "unknown",
-        "citation": null,
-        "link": null,
-        "note": "pending CFAH reference"
+        "year_bc_ad": -2068,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-48: Death of Ninus/Nimrod: 2068 B.C.\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "note": "CFAH identifies Nimrod with Ninus and with Atothis of Egyptian Dynasty 1 (2188 − 62 − 57 = 2069/2068 BC).",
+        "source_text_id": "cfah-5",
+        "cfah_basis": "anchor_point"
       },
       {
         "source": "ussher-jones",
@@ -105,7 +107,8 @@
     "ussher-annals-1658",
     "josephus-antiquities-whiston",
     "jordan-bc-6-4",
-    "jordan-bc-6-5"
+    "jordan-bc-6-5",
+    "cfah-5"
   ],
   "free_source_links": [
     {
@@ -125,10 +128,15 @@
     "nineveh",
     "calah",
     "rehoboth-ir",
-    "assyria"
+    "assyria",
+    "death-of-nimrod",
+    "reign-of-semiramis-i",
+    "babylon-dynasty-1-chaldean",
+    "median-dynasty-of-babylon"
   ],
   "events": [
     "founding-of-babel",
-    "dispersion"
+    "dispersion",
+    "death-of-nimrod"
   ]
 }
