@@ -1,0 +1,159 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "samson",
+  "type": "person",
+  "title": "Samson",
+  "summary": "Nazirite of Dan, son of Manoah; judged Israel twenty years \"in the days of the Philistines\" and died pulling down the house of Dagon (Judg 13–16).",
+  "description": "Added with the judges-period records from James B. Jordan's chronology (secondary display).",
+  "sorting_year": -1151,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1151 BC (no higher-tier year available). Jordan (secondary display) never sets the sort."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "\"PROBABLE BIRTH 1151 BC\" (\"MAXIMUM YEARS FOR SAMSON = 68: 1169 BC\")",
+        "year_am": null,
+        "year_bc_ad": -1151,
+        "precision": "approximate",
+        "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), Samson life-line",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+        "source_text_id": "jones-chart-4",
+        "note": "Jones, 15th ed. (2002), ch. V p. 86: birth \"near the end of the 18 year Philistine and Ammonite oppression\"; \"1140 is a viable alternative\"."
+      },
+      {
+        "source": "ussher",
+        "date": "2849b AM, 1155 BC (\"As foretold by the angel, Samson the Nazarite was born at Zorah\")",
+        "year_am": 2849,
+        "year_bc_ad": -1155,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Fourth Age §380 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"2861 - ... Likely births of Samson, Samuel, Obed, and Jephthah's daughter.\"",
+        "year_am": 2861,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 52",
+        "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+        "source_text_id": "jordan-sbc-2",
+        "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry. p. 40: \"The Philistine oppression lasted 40 years (Judges 13:1). Samson was born about this time.\" Judges (1985) p. 237: Samson conceived \"About the time the Philistine bondage began\" (no year). Judges (1985), ch. \"Samson the Nazirite\", pp. 237-238: \"About the time the Philistine bondage began, God appeared to the mother of Samson, and she conceived\"; \"When Samson was about 20 years old, God began to stir him up ... about the time of the battle of Aphek\". Intervals only; that book states \"it is not possible to construct a strict chronology for the book of Judges\" (p. 55)."
+      },
+      {
+        "source": "jordan",
+        "date": "\"2835 - ... Births of Samson and Samuel.\"",
+        "year_am": 2835,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+        "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+        "source_text_id": "jordan-bc-3-8",
+        "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory)."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "\"BC 1121 – 20 = 1101 BC (Year Samson died & Samuel succeeded him)\"",
+        "year_am": null,
+        "year_bc_ad": -1101,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), ch. V \"Chart Four\", p. 86",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "source_text_id": "jones-chronology-ot-2002",
+        "note": "Samson's 20-year judgeship 1121–1101 BC (Chart No. 4: \"SAMSON ... HE JUDGED 20 YEARS DURING THE 40 YEAR PHILISTINE DOMINION\")."
+      },
+      {
+        "source": "ussher",
+        "date": "2887c AM, 1117 BC (dies in the temple of Dagon, \"when he had judged Israel for 20 years\")",
+        "year_am": 2887,
+        "year_bc_ad": -1117,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Fourth Age §384 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"2901 - Death of Samson, battle of Mizpah, deliverance from Philistine oppression.\"",
+        "year_am": 2901,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 52",
+        "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+        "source_text_id": "jordan-sbc-2",
+        "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry. Samson's judgeship begins 2881 (\"Death of Eli, beginning of ... Samson's judgeship in the South\"). p. 40: \"his 40 years seem to be the same as those of the Philistine oppression.\""
+      },
+      {
+        "source": "jordan",
+        "date": "\"2875 - Death of Samson, battle of Mizpah ...\"",
+        "year_am": 2875,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+        "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+        "source_text_id": "jordan-bc-3-8",
+        "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory)."
+      }
+    ]
+  },
+  "scripture_refs": [
+    "Judg.13.1-Judg.16.31",
+    "Judg.15.20",
+    "Judg.16.31"
+  ],
+  "sources": [
+    "jones-chart-4",
+    "jones-chronology-ot-2002",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "ussher-annals-1658",
+    "jordan-book-judges-1985"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Judg.13.1-Judg.16.31 ; Judg.15.20 ; Judg.16.31"
+    }
+  ],
+  "related": [
+    "battle-of-mizpah",
+    "samuel"
+  ],
+  "events": [
+    "ammonite-and-philistine-oppression",
+    "battle-of-mizpah"
+  ]
+}

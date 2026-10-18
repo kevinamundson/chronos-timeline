@@ -1,0 +1,107 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "death-of-joshua",
+  "type": "event",
+  "title": "Death of Joshua",
+  "summary": "Joshua son of Nun dies aged 110 and is buried at Timnath-serah; Israel serves the LORD all his days and the days of the elders who outlived him (Josh 24:29–31; Judg 2:7–9).",
+  "description": "Judges-period record added from James B. Jordan's chronology (secondary display) with Ussher, Jones and, where available, CFAH-1 Table 1 dates for sorting. Jordan treats the judgeships as partly overlapping regional sequences (North / Centre / South) fitted to the 480 years of 1 Kgs 6:1 and the 300 years of Judg 11:26.",
+  "sorting_year": -1424,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1424 BC (no higher-tier year available). Jordan (secondary display) never sets the sort."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "\"APPROX YEAR OF JOSHUA'S DEATH AT AGE 110 ... 20 YRS AFTER JOSHUA DIVIDED THE LAND AMONG THE LAST 7 TRIBES AT SHILOH. (1444 BC - 20 = 1424 BC)\"",
+      "year_am": null,
+      "year_bc_ad": -1424,
+      "precision": "approximate",
+      "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), timeline band",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+      "source_text_id": "jones-chart-4",
+      "note": "Jones, 15th ed. (2002), ch. V p. 94: \"1444 – 20 = c.1424 BC (year Joshua died)\"."
+    },
+    {
+      "source": "ussher",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "Ussher gives no year for Joshua's death: §340 (under 2561 AM, 1443 BC) says he lived at Timnath-serah \"for many years\" and died aged 110; §341 (2591d AM, 1413 BC) begins \"After the death of Joshua and the elders who outlived him\". Not inferred."
+    },
+    {
+      "source": "jordan",
+      "date": "\"2585 - Death of Joshua at 110, assuming he was the same age as Caleb.\"",
+      "year_am": 2585,
+      "year_bc_ad": null,
+      "precision": "conjectural",
+      "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 51",
+      "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+      "source_text_id": "jordan-sbc-2",
+      "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry."
+    },
+    {
+      "source": "jordan",
+      "date": "\"2585 - Death of Joshua (?).\"",
+      "year_am": 2585,
+      "year_bc_ad": null,
+      "precision": "conjectural",
+      "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+      "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+      "source_text_id": "jordan-bc-3-8",
+      "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). Question mark is Jordan's. 2001 keeps 2585."
+    },
+    {
+      "source": "bible",
+      "date": "aged 110",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Josh 24:29; Judg 2:8",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "canaan"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Josh.24.29-Josh.24.31",
+    "Judg.2.7-Judg.2.10"
+  ],
+  "sources": [
+    "jones-chart-4",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "kjv-gutenberg"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Josh.24.29-Josh.24.31 ; Judg.2.7-Judg.2.10"
+    }
+  ],
+  "related": [
+    "division-of-the-land",
+    "oppression-of-cushan-rishathaim"
+  ]
+}

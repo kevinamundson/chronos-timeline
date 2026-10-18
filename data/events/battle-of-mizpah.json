@@ -1,0 +1,111 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "battle-of-mizpah",
+  "type": "event",
+  "title": "Samuel's Victory at Mizpah (Ebenezer)",
+  "summary": "Twenty years after the Ark came to Kirjath-jearim, Israel repents at Mizpah and the LORD thunders on the Philistines; Samuel sets up Ebenezer and the Philistines \"came no more into the coast of Israel\" (1 Sam 7:2–14).",
+  "description": "Judges-period record added from James B. Jordan's chronology (secondary display) with Ussher, Jones and, where available, CFAH-1 Table 1 dates for sorting. Jordan treats the judgeships as partly overlapping regional sequences (North / Centre / South) fitted to the 480 years of 1 Kgs 6:1 and the 300 years of Judg 11:26.",
+  "sorting_year": -1101,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1101 BC (no higher-tier year available). Jordan (secondary display) never sets the sort."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "\"BC 1101 is established ... as the year of Samson's death and Samuel's signal victory over the Philistines\"",
+      "year_am": null,
+      "year_bc_ad": -1101,
+      "precision": "year",
+      "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), ch. V \"Chart Four\", p. 86",
+      "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+      "source_text_id": "jones-chronology-ot-2002",
+      "note": "Chart No. 4: Philistine dominion 1141–1101 BC; Ark at Kirjath-jearim 1121–1101 BC."
+    },
+    {
+      "source": "ussher",
+      "date": "2908c AM, 1096 BC (after 20 years, Israel gathers at Mizpah and the Philistines are routed)",
+      "year_am": 2908,
+      "year_bc_ad": -1096,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Fourth Age §390 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"2901 - Death of Samson, battle of Mizpah, deliverance from Philistine oppression.\"",
+      "year_am": 2901,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 52",
+      "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+      "source_text_id": "jordan-sbc-2",
+      "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry."
+    },
+    {
+      "source": "jordan",
+      "date": "\"2875 - Death of Samson, battle of Mizpah, deliverance from Philistine oppression.\"",
+      "year_am": 2875,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+      "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+      "source_text_id": "jordan-bc-3-8",
+      "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). BC 3:7 (July 1991), \"Saul in Context\": the battle of Mizpah came \"in the year Samuel died [sic: as printed] and right at the time Elon the Zebulunite, the northern judge, also died\"."
+    },
+    {
+      "source": "bible",
+      "date": "\"twenty years\" after the Ark came to Kirjath-jearim",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "1Sam 7:2",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [
+    "samuel",
+    "samson"
+  ],
+  "locations": [
+    "canaan"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "1Sam.7.2-1Sam.7.14"
+  ],
+  "sources": [
+    "jones-chronology-ot-2002",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "kjv-gutenberg",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "1Sam.7.2-1Sam.7.14"
+    }
+  ],
+  "related": [
+    "battle-of-aphek",
+    "saul-made-king"
+  ]
+}

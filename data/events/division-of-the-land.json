@@ -1,0 +1,116 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "division-of-the-land",
+  "type": "event",
+  "title": "Joshua Divides the Land among the Tribes",
+  "summary": "When the war of conquest ends, Joshua divides the land west of the Jordan by lot; Caleb is 85 (Josh 14:7–10) and the land rests (Josh 21:43–45).",
+  "description": "Judges-period record added from James B. Jordan's chronology (secondary display) with Ussher, Jones and, where available, CFAH-1 Table 1 dates for sorting. Jordan treats the judgeships as partly overlapping regional sequences (North / Centre / South) fitted to the 480 years of 1 Kgs 6:1 and the 300 years of Judg 11:26.",
+  "sorting_year": -1444,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1444 BC (no CFAH anchor point for this event). Jordan (secondary display) never sets the sort."
+  },
+  "sort_order_within_year": 1,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1444/1443 BC (Division of the Land, first Sabbatical and Jubilee)",
+      "year_am": null,
+      "year_bc_ad": -1444,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "cfah_basis": "table1_baseline",
+      "source_text_id": "cfah-1",
+      "year_bc_ad_end": -1443
+    },
+    {
+      "source": "ussher-jones",
+      "date": "\"FINISHED DIVIDING LAND TO THE LAST 7 TRIBES 1444 BC\"",
+      "year_am": null,
+      "year_bc_ad": -1444,
+      "precision": "year",
+      "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), timeline band",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+      "source_text_id": "jones-chart-4",
+      "note": "Jones, 15th ed. (2002), ch. V p. 90: \"the land was therefore divided in BC 1444 (1451 – 7 = 1444)\"."
+    },
+    {
+      "source": "ussher",
+      "date": "2560a AM, 1445 BC (remaining land divided among the other seven tribes)",
+      "year_am": 2560,
+      "year_bc_ad": -1445,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Fourth Age §336 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "§332 (2559a AM, 1446 BC): \"When the whole land was conquered, the next year he divided it\"; §338 (2560d AM, 1444 BC): Levitical cities assigned.",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"2559 - End of Conquest, Division of the land. Caleb 85 years old.\" / \"2560 - Israel goes to its lands. Beginning of the 300 years of Judges 11:26.\"",
+      "year_am": 2559,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 51",
+      "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+      "source_text_id": "jordan-sbc-2",
+      "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry. Jordan is not consistent here: the same chapter, p. 44, says \"the land was (sabbatically) divided in the 7th year, AM 2560\", and Pentateuch commentary (No. 3) ch. 20 \"The Conquest\", p. 55: war of conquest \"beginning in 2554 and ending in 2559\"; 2560 \"the first year of occupation\" and first sabbath of the land.",
+      "year_am_end": 2560
+    },
+    {
+      "source": "jordan",
+      "date": "\"2560 - End of Conquest, Division of the land. Caleb (and Joshua?) 85 years old.\"",
+      "year_am": 2560,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+      "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+      "source_text_id": "jordan-bc-3-8",
+      "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). Text: \"Caleb was 85 when the conquest of the land came to an end. This would be, then, the year A.M. 2559 ... the land was (sabbatically) divided in the 7th year, A.M. 2560.\" BC 2:8 (1990): \"AM 2560 End of Conquest\"."
+    },
+    {
+      "source": "bible",
+      "date": "Caleb 40 at the spying, 85 \"this day\" (45 years later)",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Josh 14:7-10",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "canaan"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Josh.14.6-Josh.14.15",
+    "Josh.18.1-Josh.19.51",
+    "Josh.21.43-Josh.21.45"
+  ],
+  "sources": [
+    "cfah-1",
+    "jones-chart-4",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "kjv-gutenberg",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Josh.14.6-Josh.14.15 ; Josh.18.1-Josh.19.51 ; Josh.21.43-Josh.21.45"
+    }
+  ],
+  "related": [
+    "crossing-the-jordan",
+    "death-of-joshua"
+  ]
+}

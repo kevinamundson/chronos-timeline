@@ -1,0 +1,111 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "jephthah-defeats-ammon",
+  "type": "event",
+  "title": "Jephthah Defeats Ammon and Judges Israel (6 years)",
+  "summary": "Jephthah the Gileadite answers the king of Ammon that Israel has held Heshbon and the Arnon cities \"three hundred years\" (Judg 11:26), defeats Ammon and judges Israel six years (Judg 11:1–12:7).",
+  "description": "Judges-period record added from James B. Jordan's chronology (secondary display) with Ussher, Jones and, where available, CFAH-1 Table 1 dates for sorting. Jordan treats the judgeships as partly overlapping regional sequences (North / Centre / South) fitted to the 480 years of 1 Kgs 6:1 and the 300 years of Judg 11:26.",
+  "sorting_year": -1152,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1152 BC (no higher-tier year available). Jordan (secondary display) never sets the sort."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "\"1152 BC / 2852 AM\" JEPHTHAH; 6 years to 1146 BC (\"FROM THE CONQUERING OF HESHBON IN 1452 BC ... UNTIL JEPHTHAH IN 1152 BC (1452 - 300 = 1152)\")",
+      "year_am": 2852,
+      "year_bc_ad": -1152,
+      "precision": "year",
+      "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), timeline band",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+      "source_text_id": "jones-chart-4",
+      "note": "Jones, 15th ed. (2002), ch. V p. 79: \"a span of 300 years ensued. This brings us to the year 1152 BC\"; p. 80: \"Jephthah's six year Judgeship is first measured off bringing the mark to BC 1146\".",
+      "year_bc_ad_end": -1146
+    },
+    {
+      "source": "ussher",
+      "date": "2817a AM, 1188 BC (Ammonites in Gilead; Jephthah called, subdues Ammon, judges 6 years)",
+      "year_am": 2817,
+      "year_bc_ad": -1188,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Fourth Age §371 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"2879 - Beginning of Jephthah's 6-year judgeship in Center and North (Jud. 11:26; 12:7). Jephthah's daughter moves to Shiloh to serve Yahweh.\"",
+      "year_am": 2879,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 52",
+      "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+      "source_text_id": "jordan-sbc-2",
+      "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry. p. 41: \"Jephthah defeated the Ammonites 18 years after the Ammonite/Philistine oppression began. This was two years before the battle of Aphek and the death of Eli\". The list then starts Ibzan in 2884, five years after 2879, against the six years of Judg 12:7; recorded as printed, not reconciled. p. 45: the 300 years of Judg 11:26 run from 2560 to the Ammonite seizure of the villages, so 2860."
+    },
+    {
+      "source": "jordan",
+      "date": "\"2853 - End of Ammonite oppression, 300 years after initial conquests, beginning of Jephthah's 6-year judgeship in Center and North (Jud. 11:16; 12:7).\"",
+      "year_am": 2853,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+      "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+      "source_text_id": "jordan-bc-3-8",
+      "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). \"2859 - Death of Jephthah\". BC 5:2: \"Jephthah defeated them and began his judgeship in 2853, a sabbath year.\"",
+      "year_am_end": 2859
+    },
+    {
+      "source": "bible",
+      "date": "\"three hundred years\" (Judg 11:26); judged 6 years (Judg 12:7)",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Judg 11:26; Judg 12:7",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "canaan"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Judg.11.1-Judg.12.7",
+    "Judg.11.26"
+  ],
+  "sources": [
+    "jones-chart-4",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "kjv-gutenberg",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Judg.11.1-Judg.12.7 ; Judg.11.26"
+    }
+  ],
+  "related": [
+    "ammonite-and-philistine-oppression",
+    "ibzan-judges-israel"
+  ]
+}

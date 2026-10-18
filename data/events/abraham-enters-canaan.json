@@ -68,6 +68,17 @@
       "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
       "source_text_id": "jordan-bc-5-8",
       "note": "Jordan suggests (as \"almost purely aesthetic\") two years in Canaan before the descent into Egypt and Abram leaving Egypt in AM 2086 (?), \"430 years after the Flood\". He starts the 430 years of Ex 12:40 at AM 2083 (BC 2:7, 4:8 §3). B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+    },
+    {
+      "source": "jordan",
+      "date": "\"Between the Flood and the call of Abram were 427 years\"",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Jordan, The Law of the Covenant (Institute for Christian Economics, 1984), ch. 2, p. 32 n. 4 (citing Martin Anstey, Chronology of the Old Testament)",
+      "link": "https://www.garynorth.com/freebooks/docs/pdf/the_law_of_the_covenant.pdf",
+      "source_text_id": "jordan-book-law-of-the-covenant-1984",
+      "note": "Interval only, as printed. \"Call of Abram\" is Jordan's phrase; he does not say here whether this is the Haran call or entry into Canaan, so it is attached to this event as a note-level datum only. Not converted to AM."
     }
   ],
   "people": [
@@ -93,7 +104,8 @@
     "kjv-gutenberg",
     "ussher-annals-1658",
     "jordan-bc-5-8",
-    "jordan-bc-2-7"
+    "jordan-bc-2-7",
+    "jordan-book-law-of-the-covenant-1984"
   ],
   "free_source_links": [
     {

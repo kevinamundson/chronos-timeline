@@ -1,0 +1,112 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "oppression-of-cushan-rishathaim",
+  "type": "event",
+  "title": "Oppression of Cushan-rishathaim (8 years)",
+  "summary": "Israel serves Cushan-rishathaim king of Mesopotamia eight years (Judg 3:8), the first oppression of the judges period.",
+  "description": "Judges-period record added from James B. Jordan's chronology (secondary display) with Ussher, Jones and, where available, CFAH-1 Table 1 dates for sorting. Jordan treats the judgeships as partly overlapping regional sequences (North / Centre / South) fitted to the 480 years of 1 Kgs 6:1 and the 300 years of Judg 11:26.",
+  "sorting_year": -1418,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1418 BC (no higher-tier year available). Jordan (secondary display) never sets the sort."
+  },
+  "sort_order_within_year": 1,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "\"1418 BC / 2586 AM\": 8 years of Cushan-rishathaim, 1418–1410 BC (\"THIS BRINGS US TO 1152 + 266 = 1418 BC FOR OTHNIEL\")",
+      "year_am": 2586,
+      "year_bc_ad": -1418,
+      "precision": "year",
+      "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), timeline band",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+      "source_text_id": "jones-chart-4",
+      "note": "The 2002 book (15th ed.), ch. V p. 91, fixed \"Cushan's dominion over Israel at BC 1400\" with a 44-year Joshua-Judges chasm (1444 – 1400); the chart text revised \"As of 2007\" gives 1418 BC and a 26-year chasm (1444 – 1418). The chart value is used.",
+      "year_bc_ad_end": -1410
+    },
+    {
+      "source": "ussher",
+      "date": "2591d AM, 1413 BC (\"This was the first calamity of theirs and lasted eight years\")",
+      "year_am": 2591,
+      "year_bc_ad": -1413,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Fourth Age §341 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"2620 - Beginning of 8-year oppression of Cushan (Jud. 3:8). Israel had been faithful for the 35 years after the death of Joshua, during the time of the elders who succeeded him.\"",
+      "year_am": 2620,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 51",
+      "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+      "source_text_id": "jordan-sbc-2",
+      "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry. p. 46: \"we come to AM 2620, which would be 60 years after the division of the land in 2560.\"",
+      "year_am_end": 2628
+    },
+    {
+      "source": "jordan",
+      "date": "\"2594 - End of the period of peace during and after Joshua, beginning of 8-year oppression of Cushan (Jud. 3:8).\"",
+      "year_am": 2594,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+      "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+      "source_text_id": "jordan-bc-3-8",
+      "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). BC 5:2 (Feb. 1993): \"In the year 2594 began the eight-year oppression of Cushan-Rishathaim of Mesopotamia\".",
+      "year_am_end": 2602
+    },
+    {
+      "source": "bible",
+      "date": "8 years",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Judg 3:8",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "canaan"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Judg.3.5-Judg.3.8"
+  ],
+  "sources": [
+    "jones-chart-4",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "kjv-gutenberg",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Judg.3.5-Judg.3.8"
+    }
+  ],
+  "related": [
+    "othniel-judges-israel",
+    "death-of-joshua"
+  ]
+}

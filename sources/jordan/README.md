@@ -97,3 +97,20 @@ These texts are included with the repository owner's stated permission. They rem
 | [9:10](bc-09-10.md) | The Sequence of Events in the Creation Week, Part 1 | October, 1997 | Biblical Horizons |  |
 | [9:11](bc-09-11.md) | The Sequence of Events in the Creation Week, Part 2 | November, 1997 | Biblical Horizons |  |
 | [9:12](bc-09-12.md) | The Sequence of Events in the Creation Week, Part 3 | December, 1997 | Biblical Horizons |  |
+
+## Books (`books/`, added 2026-10-17)
+
+These are plain-text extractions of free PDFs. They are copyrighted and included with the owner's stated permission. For the multi-author *Christianity and Civilization* symposia, only Jordan's own essays are included.
+
+| File | Work | Source |
+|---|---|---|
+| [covenant-sequence-1989.md](books/covenant-sequence-1989.md) | *Covenant Sequence in Leviticus and Deuteronomy* (1989) | https://www.garynorth.com/freebooks/docs/217e_47e.htm |
+| [cc1-failure-of-american-baptist-culture-1982-jordan-essays.md](books/cc1-failure-of-american-baptist-culture-1982-jordan-essays.md) | *The Failure of the American Baptist Culture* (C&C 1, 1982): Jordan's Introduction and review | https://www.garynorth.com/freebooks/docs/21ce_47e.htm |
+| [judges-1985.md](books/judges-1985.md) | *Judges: God's War Against Humanism* (1985) | https://www.garynorth.com/freebooks/docs/21ee_47e.htm |
+| [law-of-the-covenant-1984.md](books/law-of-the-covenant-1984.md) | *The Law of the Covenant* (1984) | https://www.garynorth.com/freebooks/docs/20fe_47e.htm |
+| [cc4-reconstruction-of-the-church-1985-jordan-essays.md](books/cc4-reconstruction-of-the-church-1985-jordan-essays.md) | *The Reconstruction of the Church* (C&C 4, 1985): Jordan's three essays | https://www.garynorth.com/freebooks/docs/21d6_47e.htm |
+| [sociology-of-the-church-1986.md](books/sociology-of-the-church-1986.md) | *The Sociology of the Church* (1986) | https://www.garynorth.com/freebooks/docs/222e_47e.htm |
+| [through-new-eyes-1988.md](books/through-new-eyes-1988.md) | *Through New Eyes* (1988) | https://www.garynorth.com/freebooks/docs/2232_47e.htm |
+| [studies-in-biblical-chronology-2-from-creation-to-solomon-2001.md](books/studies-in-biblical-chronology-2-from-creation-to-solomon-2001.md) | *From Creation to Solomon* (Studies in Biblical Chronology No. 2, 2001) | Theopolis Institute PDF (see data/sources.json `jordan-sbc-2`) |
+| [studies-in-biblical-chronology-3-pentateuch-commentary-2001.md](books/studies-in-biblical-chronology-3-pentateuch-commentary-2001.md) | *A Chronological and Calendrical Commentary on the Pentateuch* (No. 3, 2001) | Theopolis Institute PDF (`jordan-sbc-3`) |
+

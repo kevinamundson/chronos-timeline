@@ -28,7 +28,8 @@ data/
                         (thumbnail, IIIF Image API info.json, LoC manifest URL)
 sources/
   jordan/               full texts of James B. Jordan, Biblical Chronology (93 issues, 1989-1997), one Markdown
-                        file per issue + README index; © James B. Jordan, included with the owner's stated permission
+                        file per issue + README index; © James B. Jordan, included with the owner's stated permission;
+                        books/ = full texts of 7 Jordan books (C&C symposia: Jordan's essays only) and Studies in Biblical Chronology Nos. 2-3
 docs/
   cfah-anchors.md       proposed CFAH anchor events with exact paper citations
   open-questions.md

@@ -15,7 +15,7 @@
     "chronology": "ussher",
     "note": "Tier 4: Ussher, Annals: 2971 AM, 1034 BC (no higher-tier year available)."
   },
-  "father": null,
+  "father": "david",
   "children": [],
   "scripture_facts": {
     "age_at_named_son": null,
@@ -112,7 +112,7 @@
         "citation": "Jordan, \"Solomon's Disastrous Geopolitics (Chronologies and Kings IV),\" Biblical Chronology 3:10 (October 1991), section \"The Egypt Factor\"",
         "link": "https://biblicalhorizons.com/1991/10/01/3_10/",
         "source_text_id": "jordan-bc-3-10",
-        "note": "Accession: \"Solomon's accession to the throne in A.M. 2989\" (BC 5:8, section \"Egypt and the Kings of Israel\") but \"his first year was 2990\" (BC 6:9 \"Covenants and Dates\") - Jordan is not consistent on this point."
+        "note": "Accession: \"Solomon's accession to the throne in A.M. 2989\" (BC 5:8, section \"Egypt and the Kings of Israel\") but \"his first year was 2990\" (BC 6:9 \"Covenants and Dates\") - Jordan is not consistent on this point. From Creation to Solomon (No. 2, 2001), ch. 11, p. 53: \"2989 - Accession of Solomon.\" / \"2990 - Solomon year 1.\""
       }
     ]
   },
@@ -128,7 +128,8 @@
     "jones-chart-1",
     "jordan-bc-3-10",
     "jordan-bc-5-8",
-    "jordan-bc-6-9"
+    "jordan-bc-6-9",
+    "jordan-sbc-2"
   ],
   "free_source_links": [
     {

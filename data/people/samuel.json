@@ -1,0 +1,161 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "samuel",
+  "type": "person",
+  "title": "Samuel",
+  "summary": "Prophet and last judge, son of Elkanah and Hannah; judged Israel all his days, anointed Saul and David, and died during David's exile (1 Sam 1–25).",
+  "description": "Added with the judges-period records from James B. Jordan's chronology (secondary display).",
+  "sorting_year": -1169,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1169 BC (no higher-tier year available). Jordan (secondary display) never sets the sort."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "\"SAMUEL BORN ?\": \"MAXIMUM YEAR 1169 BC\" / \"MINIMUM YEAR 1152 BC\"",
+        "year_am": null,
+        "year_bc_ad": -1169,
+        "precision": "year-range",
+        "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), Samuel life-line",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+        "source_text_id": "jones-chart-4",
+        "note": "Question mark is Jones's.",
+        "year_bc_ad_end": -1152
+      },
+      {
+        "source": "ussher",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "No birth year found in Ussher's Annals for Samuel. Not inferred."
+      },
+      {
+        "source": "jordan",
+        "date": "\"2861 - ... Likely births of Samson, Samuel, Obed, and Jephthah's daughter.\"",
+        "year_am": 2861,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 52",
+        "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+        "source_text_id": "jordan-sbc-2",
+        "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry. p. 51 (2001): \"The year 2910 was his first year of reign. Samuel was around 49 years old at this time.\" Judges (1985), pp. 237-239: Samuel conceived at about the same time as Samson; \"If Samuel was 40 years old at the battle of Aphek ... a 40-year judgeship for Samuel\"; David \"born about 50 years after Samuel began to judge, or when Samuel was about 70 years old\" (contrast No. 2, 2001: Samuel 58 at David's birth). Intervals only."
+      },
+      {
+        "source": "jordan",
+        "date": "\"2835 - ... Births of Samson and Samuel.\"",
+        "year_am": 2835,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+        "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+        "source_text_id": "jordan-bc-3-8",
+        "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). BC 3:7 (1991): Samuel 74 when Saul became king, \"about 35 years older than Saul\"."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "\"c.1060 BC SAMUEL DIES NEAR END OF SAUL'S [reign]\" (1 Sam 25:1 & 27:7)",
+        "year_am": null,
+        "year_bc_ad": -1060,
+        "precision": "approximate",
+        "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), Samuel life-line",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+        "source_text_id": "jones-chart-4",
+        "note": null
+      },
+      {
+        "source": "ussher",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "No death year found in Ussher's Annals for Samuel. Not inferred."
+      },
+      {
+        "source": "jordan",
+        "date": "\"2946 - (Hypothetical) Death of Samuel at age 85.\"",
+        "year_am": 2946,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 52",
+        "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+        "source_text_id": "jordan-sbc-2",
+        "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry."
+      },
+      {
+        "source": "jordan",
+        "date": "\"During David's exile, Samuel died (1 Samuel 25:1), perhaps at the age of 110 (compare Joshua 24:29).\"",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "conjectural",
+        "citation": "Jordan, \"Chronology and Kings (I),\" Biblical Chronology 3:7 (July 1991), section \"Saul in Context\"",
+        "link": "https://biblicalhorizons.com/1991/07/01/3_07/",
+        "source_text_id": "jordan-bc-3-7",
+        "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). No year is given; the age (110 in 1991, 85 in 2001) is the difference."
+      }
+    ]
+  },
+  "scripture_refs": [
+    "1Sam.1.20",
+    "1Sam.7.15-1Sam.7.17",
+    "1Sam.25.1"
+  ],
+  "sources": [
+    "jones-chart-4",
+    "jordan-bc-3-7",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "jordan-book-judges-1985"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "1Sam.1.20 ; 1Sam.7.15-1Sam.7.17 ; 1Sam.25.1"
+    }
+  ],
+  "related": [
+    "saul-made-king",
+    "eli",
+    "samson",
+    "david"
+  ],
+  "events": [
+    "battle-of-aphek",
+    "battle-of-mizpah",
+    "saul-made-king",
+    "ammonite-and-philistine-oppression"
+  ]
+}

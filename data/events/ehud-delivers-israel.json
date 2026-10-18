@@ -1,0 +1,112 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "ehud-delivers-israel",
+  "type": "event",
+  "title": "Ehud Kills Eglon and Delivers Israel",
+  "summary": "The left-handed Benjamite Ehud kills Eglon; \"the land had rest fourscore years\" (Judg 3:15–30). Shamgar fights the Philistines after him (Judg 3:31).",
+  "description": "Judges-period record added from James B. Jordan's chronology (secondary display) with Ussher, Jones and, where available, CFAH-1 Table 1 dates for sorting. Jordan treats the judgeships as partly overlapping regional sequences (North / Centre / South) fitted to the 480 years of 1 Kgs 6:1 and the 300 years of Judg 11:26.",
+  "sorting_year": -1378,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1378 BC (no higher-tier year available). Jordan (secondary display) never sets the sort."
+  },
+  "sort_order_within_year": 2,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "EHUD \"80 YRS\": 1378 BC to 1298 BC; Eglon's 18 years (1378–1360 BC) are the first part of the 80",
+      "year_am": null,
+      "year_bc_ad": -1378,
+      "precision": "year",
+      "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), timeline band",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+      "source_text_id": "jones-chart-4",
+      "note": "Chart 4 text: \"of those 80, the first 18 were under Eglon's control ... 80 – 18 or 62 years of peace follow Ehud's slaying of Eglon\". So the deliverance itself falls at 1360 BC on Jones's scheme; the chart prints 1360 BC only as the end of Eglon's bar.",
+      "year_bc_ad_end": -1298
+    },
+    {
+      "source": "ussher",
+      "date": "2679b AM, 1325 BC (Ehud kills Eglon; land at rest 40 years \"after the former rest\")",
+      "year_am": 2679,
+      "year_bc_ad": -1325,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Fourth Age §346 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "§347 (no separate year): Shamgar kills 600 Philistines.",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"2686 - Beginning of Ehud's 20-year judgeship and his 80-year peace.\"",
+      "year_am": 2686,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 52",
+      "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+      "source_text_id": "jordan-sbc-2",
+      "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry. p. 46: \"this puts the death of Ehud 60 years before the Midianite oppression in 2766, which was AM 2706. This means Ehud judged for 20 years, beginning in 2686.\" The 80-year peace runs, in the Centre, to 2766.",
+      "year_am_end": 2706
+    },
+    {
+      "source": "jordan",
+      "date": "\"2660 - Death of Elgon [sic], beginning of Ehud's 20-year judgeship and his 80-year peace.\"",
+      "year_am": 2660,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+      "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+      "source_text_id": "jordan-bc-3-8",
+      "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). Text: \"this puts the death of Ehud ... which was A.M. 2680. This means Ehud judged for 20 years, beginning in 2660.\"",
+      "year_am_end": 2680
+    },
+    {
+      "source": "bible",
+      "date": "\"the land had rest fourscore years\"",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Judg 3:30",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "canaan"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Judg.3.15-Judg.3.31"
+  ],
+  "sources": [
+    "jones-chart-4",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "kjv-gutenberg",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Judg.3.15-Judg.3.31"
+    }
+  ],
+  "related": [
+    "oppression-of-eglon",
+    "oppression-of-jabin"
+  ]
+}

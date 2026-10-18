@@ -1675,3 +1675,144 @@ This part was generated automatically from the article text. It keeps every sent
 - Read at: https://biblicalhorizons.com/1997/12/01/9-12-the-sequence-of-events-in-the-creation-week-part-3/ (biblicalhorizons.com only)
   - (no dated statements)
 
+
+---
+
+# Part 2 (added 2026-10-17): Jordan's books and the owner's Google Drive files
+
+Rules as in Part 1: only dates or intervals Jordan prints, quoted as printed, never converted between AM and B.C. Page numbers are the printed page numbers. For the garynorth.com books the PDF is `https://www.garynorth.com/freebooks/docs/pdf/<name>.pdf` and the landing page is `https://www.garynorth.com/freebooks/docs/<id>_47e.htm`. Full texts are in `sources/jordan/books/`.
+
+## A. Books from the garynorth.com Free Books library
+
+| Work | Landing page / PDF | Biblical-chronology dates found |
+|---|---|---|
+| *Covenant Sequence in Leviticus and Deuteronomy* (ICE, 1989) | [217e_47e.htm](https://www.garynorth.com/freebooks/docs/217e_47e.htm) / covenant_sequence_leviticus_deuteronomy.pdf | **None.** It discusses sabbath and jubilee laws but gives no AM, B.C. or interval for any event. |
+| *The Failure of the American Baptist Culture* (Christianity and Civilization 1, 1982; symposium, ed. Jordan) | [21ce_47e.htm](https://www.garynorth.com/freebooks/docs/21ce_47e.htm) / the_failure_of_american_baptist_culture.pdf | **None for the biblical period.** Jordan's own pieces (Editor's Introduction; review "The Moral Majority: An Anabaptist Critique") mention only church-history A.D. dates (e.g. Chalcedon, A.D. 451). |
+| *Judges: God's War Against Humanism* (Geneva Ministries, 1985) | [21ee_47e.htm](https://www.garynorth.com/freebooks/docs/21ee_47e.htm) / judges.pdf | **Intervals only. Jordan declines to give a chronology.** See A.1. |
+| *The Law of the Covenant* (ICE, 1984) | [20fe_47e.htm](https://www.garynorth.com/freebooks/docs/20fe_47e.htm) / the_law_of_the_covenant.pdf | Three intervals; see A.2. |
+| *The Reconstruction of the Church* (Christianity and Civilization 4, 1985; symposium, ed. Jordan) | [21d6_47e.htm](https://www.garynorth.com/freebooks/docs/21d6_47e.htm) / the_reconstruction_of_church.pdf | **None by Jordan.** His Introduction, "The Church: An Overview" and "Church Music in Chaos" give only church-history A.D. dates. The volume's one B.C. date ("146 B.C.", the destruction of Corinth) is in Ray R. Sutton's essay, so it is not recorded. |
+| *The Sociology of the Church* (Geneva Ministries, 1986) | [222e_47e.htm](https://www.garynorth.com/freebooks/docs/222e_47e.htm) / sociology_of_the_church.pdf | **None for the Old Testament.** The only dates are New Testament-era: "from A.D. 30 to A.D. 70" (ch. "Christian Zionism and Messianic Judaism", p. 185) and A.D. 70 for the fall of Jerusalem. |
+| *Through New Eyes* (Wolgemuth & Hyatt, 1988) | [2232_47e.htm](https://www.garynorth.com/freebooks/docs/2232_47e.htm) / through_new_eyes.pdf | A few round dates and intervals; see A.3. |
+
+### A.1 *Judges* (1985)
+- p. 55 (ch. "Othniel: Babylon Anticipated"): it is "not possible to construct a strict chronology for the book of Judges". Jordan adds that Othniel probably died before the 40 years of peace ended (p. 56).
+- pp. 237-239 (ch. "Samson the Nazirite", section "Samson, Samuel, and Obed"):
+  - Samson, Samuel and Obed were born at about the same time.
+  - "When Samson was about 20 years old" (at the time of Aphek, 1 Sam. 4).
+  - The battle of Mizpah came 20 years after Aphek (1 Sam. 7:2).
+  - The Philistine oppression lasted 40 years (Judg. 13:1).
+  - "David was born in the tenth year of Saul's reign" (2 Sam. 5:4; Acts 13:21).
+  - "Samuel judged for 20 years, until the end of the first Philistine oppression at the battle of Aphek (1 Sam. 7:2)", as printed; the context is the 20 years from Aphek to Mizpah.
+  - Hypothetically, "If Samuel was 40 years old at the battle of Aphek", this gives "a 40-year judgeship for Samuel", and David "was, then, born about 50 years after Samuel began to judge, or when Samuel was about 70 years old". **Disagreement:** in 2001 (No. 2, p. 53) Samuel is 58 at David's birth.
+- These are intervals only, so no AM or B.C. year was attached from this book. The Samson and Samuel records cite it in their notes.
+
+### A.2 *The Law of the Covenant* (1984), ch. 2 "The Law and the Redemption of Israel"
+- p. 32 n. 4: "Between the Flood and the call of Abram were 427 years." (citing Martin Anstey, *Chronology of the Old Testament*). Attached to `abraham-enters-canaan` as an interval-only `jordan` row, with no AM.
+- p. 44: "the exodus took place 857 years after the Flood." Attached to `exodus` as an interval-only `jordan` row.
+- p. 44: "Shem, the Godly son of Noah, lived 502 years after the Flood." Added as a note on Shem's Jordan death row (AM 2158).
+- These are consistent with Jordan's later AM figures: Flood 1656, Exodus 2513, Shem dies 2158. Neither the book nor this extract converts them.
+
+### A.3 *Through New Eyes* (1988)
+- Ch. 10 "Breaking Bread: The Rite of Transformation", p. 123: "In 1400 B.C., the Mosaic Covenant was the most wonderful thing in the world". This is a rhetorical round figure, so it is **not attached** to any record. It also differs from Jordan's later SBC Exodus date (1417 B.C., BC 5:8).
+- End-note to ch. 15 (p. 307, "Notes to pages 213-222"), on the genealogy of Ruth 4:
+  - David born "406 years after the entrance into Canaan".
+  - Perez about 200 years before the Exodus.
+  - The Hebrews in Goshen 215 years, with the 430 years of Ex. 12:40 counted from Abraham.
+  - Judah about 42 when he went down to Goshen.
+  - About 600 years from Perez to David.
+  - The Salmon-Rahab marriage about 400 years before David's birth.
+  - Jesse born about 356 years after the Conquest.
+  - **Disagreement:** in Jordan's own AM scheme the 406 years run from the *Exodus* (2513) to David's birth (2919), not from the entrance into Canaan (2553/2554). Recorded as printed, not attached.
+- A.D. 30 (Pentecost, p. 274), A.D. 66-70, A.D. 70: New Testament era; not attached.
+
+## B. The owner's Google Drive files
+
+| File id | Drive title | Author | Status |
+|---|---|---|---|
+| 1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS | From Creation to Solomon - Studies in Biblical Chronology, Part 2 (James B. Jordan).pdf | James B. Jordan (© Biblical Horizons, Oct. 2001; 54 pp.) | Byte-identical to the free Theopolis PDF. Source `jordan-sbc-2`. |
+| 1DHtt1x9sewe0uN5Wfc5RCu0b_t7b3CWL | A Chronological and Calendrical Commentary on the Pentateuch - Studies in Biblical Chronology, Part 3 (James B. Jordan).pdf | James B. Jordan (© Biblical Horizons, Oct. 2001; 69 pp.) | Byte-identical to the free Theopolis PDF. Source `jordan-sbc-3`. |
+| 11zUlqRaS-QD8iPEC0-Ed6OSPgwSEuTKn | Anno Mundi_Chronology_Studies2.pdf | **Not stated.** The PDF metadata reads Title "Microsoft Word - Chronology Studies.doc", Author "Owner", created 2012-02-03. The doc says "Outline by James Jordan" (p. 4) and "(Chronology from James Jordan)" (p. 8). | **New, unknown-author source: NOT attached to any record.** See section E. |
+
+### B.1 *A Chronological and Calendrical Commentary on the Pentateuch* (No. 3, 2001)
+This is the book form of the newsletter series "The Chronology of the Pentateuch" (BC 6:3-6:8), which Part 1 already extracted. The year lists are reprinted unchanged; for example, Mahalalel is still "396". New or clarified items:
+- ch. 17 "Chronology of the Plagues & Exodus", p. 43: "1st Month (March-April 2513) ... Day 15: The exodus from Egypt". Added as a note on `exodus`.
+- ch. 19 "The Years 2553 and 2554", p. 53:
+  - "the 1st day of the 11th month ... apparently on that same day, Moses died". Added as a note on Moses's Jordan death row.
+  - "the 1st lunar month, still in the year 2554. Joshua 4:19 says that Israel crossed the Jordan on the 10th day". This is on `crossing-the-jordan`.
+- ch. 20 "The Conquest": the conquest and division narrative feeding the No. 2 judges list.
+
+### B.2 *From Creation to Solomon* (No. 2, 2001)
+- Chs. 6-10 (Genesis 5 & 11; Second Cainan; the Arpachshad, Abraham and Moses connections) agree with BC 2:5-2:8 and 5:8: Flood 1656, Abram 2008, enters Canaan 2083, Exodus 2513.
+- Ch. 11, "The Era of the Judges and the Reign of Saul" (pp. 40-53), is Jordan's **revised** judges chronology. It supersedes BC 3:7-3:8 (1991). p. 47 ("Judges chart") is blank in both PDFs.
+
+## C. Jordan's judges chronology: 2001 vs 1991 (as printed)
+
+2001 = *From Creation to Solomon*, pp. 51-53 ("So to sum up: here is my conclusion of the matter"). 1991 = BC 3:8 (Aug. 1991), list at the end of "The Chronology of the Judges, Part 2" (https://biblicalhorizons.com/1991/08/01/3_08/). Judges references are given exactly as Jordan prints them; some are misprints (e.g. "Jud. 11:9" for Ibzan, which is 12:8-9).
+
+| Event | 2001 (No. 2) | 1991 (BC 3:8) | Portal record |
+|---|---|---|---|
+| Exodus | 2513 | 2513 | exodus |
+| Beginning of Conquest | 2554 | 2553 | crossing-the-jordan |
+| End of Conquest, division of the land (Caleb 85) | 2559 (p. 51 list); "divided in the 7th year, AM 2560" (p. 44) | 2560 | division-of-the-land |
+| Israel goes to its lands; 300 years of Judg. 11:26 begin | 2560 | (300 years counted from the conquests, ending 2853) | division-of-the-land |
+| Death of Joshua at 110 | 2585 | 2585 (?) | death-of-joshua |
+| Cushan's 8-year oppression begins | 2620 | 2594 | oppression-of-cushan-rishathaim |
+| Othniel's 40 years begin | 2628 | 2602 | othniel-judges-israel |
+| Eglon's 18 years begin | 2668 | 2642 | oppression-of-eglon |
+| Ehud's 20-year judgeship / 80-year peace | 2686 | 2660 | ehud-delivers-israel |
+| Death of Ehud; Jabin's 20 years (North) | 2706 | 2680 | oppression-of-jabin |
+| Barak's 40 years (North) | 2726 | 2700 | deborah-and-barak |
+| Midianite oppression begins | 2766 | 2740 ("We can be certain of this date") | midianite-oppression |
+| Gideon's 40 years begin | 2773 | 2747 | gideon-defeats-midian |
+| Hypothetical birth of Boaz | 2811 | not given | (note only) |
+| Abimelech's 3 years | 2813 | 2787 | reign-of-abimelech |
+| Tola's 23 years | 2816 | 2790 | tola-judges-israel |
+| Jair's 22 years | 2839 | 2813 | jair-judges-israel |
+| Eli's 40-year judgeship (South) begins | 2841 | 2815 | eli |
+| End of the 300 years | 2860 | 2853 (= Jephthah) | ammonite-and-philistine-oppression |
+| Philistine (South) and Ammonite (Center/North) oppression begin; likely births of Samson, Samuel, Obed, Jephthah's daughter | 2861 | 2835 (births of Samson and Samuel) | ammonite-and-philistine-oppression; samson; samuel |
+| Jephthah's 6-year judgeship begins | 2879 | 2853 | jephthah-defeats-ammon |
+| Death of Eli; Samuel and Samson begin; likely birth of Jesse | 2881 | 2855 | eli; samuel; samson; battle-of-aphek |
+| Ibzan's 7 years | 2884 | 2859 | ibzan-judges-israel |
+| Elon's 10 years | 2891 | 2866 | elon-judges-israel |
+| Death of Samson; battle of Mizpah | 2901 | 2875 | samson; battle-of-mizpah |
+| Death of Elon; Abdon's 8 years | 2901 | 2876 | abdon-judges-israel |
+| End of the line of judges (Center/North) | 2909 (death of Abdon) | 2884 | abdon-judges-israel |
+| Accession of Saul (Saul around 40) | 2909 | 2909 | saul-made-king |
+| Saul year 1 (Samuel 49) | 2910 | not given | saul-made-king |
+| Birth of David (Samuel 58) | 2919 | 2919 | david |
+| (Hypothetical) David anointed at 10 / kills Goliath / enters army at 20 / driven out | 2929 / 2934 / 2939 / 2942 | not given | david (note) |
+| (Hypothetical) death of Samuel at 85 | 2946 | Samuel dies at 110 (BC 3:7) | samuel |
+| Accession of David (Saul dies about 80) | 2949 | 2949 | david; saul-made-king |
+| David year 1 | 2950 | not given | david |
+| Accession of Solomon / Solomon year 1 | 2989 / 2990 | 2989 / not given | solomon |
+| Temple foundation, 480 years after the Exodus / completion | 2993 / 3000 | 2993 / not given | temple-dedication |
+
+Disagreements:
+1. **The two schemes differ by 26 years.** In 1991 the 300 years of Judg. 11:26 *end at Jephthah's victory* (2853). In 2001 they run 2560-2860 and end when Ammon took the villages, so the dates from Cushan to Samson's death move 26 years later, and Ibzan, Elon and Abdon move 25. Saul (2909) and David (2919) are unchanged.
+2. **No. 2 against itself:** the division of the land is "2559" in the p. 51 list but 2560 on p. 44. Jephthah's "6-year judgeship" begins in 2879 but Ibzan begins in 2884, which is 5 years apart.
+3. **Samuel's age at death:** 110 (1991) vs "perhaps at the age of 85" (2001, p. 53).
+4. **Beginning of the conquest:** 2553 (1991) vs 2554 (2001). No. 3 ch. 19 puts the Jordan crossing on day 10 of the 1st month of 2554.
+5. **Against Ussher and Jones,** who use other schemes; see the records:
+   - Ussher's AM dates for Othniel through Abdon run about 20-60 years *earlier* than Jordan 2001 (e.g. Ussher's Jephthah is 2817 AM against Jordan's 2879).
+   - Jones's Chart 4 puts Jephthah in 1152 BC (2852 AM), close to Jordan's 1991 figure of 2853.
+   - Jones's own sources also disagree: Cushan is 1418 BC on Chart 4 but 1400 BC in the 2002 book (p. 91).
+
+## D. Records added or updated in this pass
+- **New events (22):** crossing-the-jordan, division-of-the-land, death-of-joshua, oppression-of-cushan-rishathaim, othniel-judges-israel, oppression-of-eglon, ehud-delivers-israel, oppression-of-jabin, deborah-and-barak, midianite-oppression, gideon-defeats-midian, reign-of-abimelech, tola-judges-israel, jair-judges-israel, ammonite-and-philistine-oppression, jephthah-defeats-ammon, ibzan-judges-israel, elon-judges-israel, abdon-judges-israel, battle-of-aphek, battle-of-mizpah, saul-made-king.
+- **New people (4):** eli, samson, samuel, david.
+- **Sorting:** the four-tier rule applies as usual; Jordan never sets the sort.
+  - CFAH-1 Table 1 gives the crossing of the Jordan (1450 BC), the division of the land, and Gideon (1251 BC).
+  - All other new records sort on Jones (`ussher-jones`): mainly Chart No. 4 (1993, revised 2007), plus *Chronology of the Old Testament* (2002) where the chart is silent.
+  - Each record also has the Ussher *Annals* (Fourth Age) row, the Jordan rows (2001 first, then 1991) and the Bible text.
+- **Updated:** exodus, abraham-enters-canaan, temple-dedication, moses, shem, solomon (notes and sources from No. 2, No. 3 and *Law of the Covenant*).
+
+## E. Separate: "Anno Mundi_Chronology_Studies2.pdf" (owner's Drive; AUTHOR UNKNOWN, NOT ATTACHED)
+
+This is a 14-page chart-and-notes document. It says it follows James Jordan (Acts 13:19-20 in the NASB reading, the 62 sabbath-years from 2560 to 2993). Its author is not named, so it is reported here only and is not entered as a source, chronology or record row. To use it, the owner should identify the author; it would then become a new source or chronology.
+- **Its AM figures mostly follow Jordan 2001:** Exodus 2513; 40 years in the wilderness 2514-2554; conquest and division 2554-2560; 300 years 2560-2860; Ammonite oppression 2861-2878; Othniel 2628; Abdon dies and Saul accedes 2909; David 2949; Solomon accedes 2989, "His 1st was 2990"; Temple begun 2993, finished 3000.
+- **It differs from Jordan in places:**
+  - Jephthah's 6 years are 2878-2884 (Jordan 2001: begins 2879).
+  - "Tower of Babel 1819 AM" with "1780 AM ?" beside it.
+  - Enosh dies "1130 AM". MT arithmetic and Jordan BC 6:4 give 1140 (235 + 905); this is noted, not converted.
+  - Its own B.C. column (Creation 4010, Flood 2354, Exodus 1497, Temple completed 1010, fall of Jerusalem 586) is **not Jordan's**: his SBC has Creation 3930 and Exodus 1417 B.C.

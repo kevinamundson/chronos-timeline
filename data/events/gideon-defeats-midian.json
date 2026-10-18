@@ -1,0 +1,114 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "gideon-defeats-midian",
+  "type": "event",
+  "title": "Gideon's Three Hundred Defeat Midian",
+  "summary": "Gideon with 300 men routs Midian; Oreb and Zeeb, Zebah and Zalmunna are slain; \"the country was in quietness forty years in the days of Gideon\" (Judg 6:11–8:28).",
+  "description": "Judges-period record added from James B. Jordan's chronology (secondary display) with Ussher, Jones and, where available, CFAH-1 Table 1 dates for sorting. Jordan treats the judgeships as partly overlapping regional sequences (North / Centre / South) fitted to the 480 years of 1 Kgs 6:1 and the 300 years of Judg 11:26.",
+  "sorting_year": -1251,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1251 BC (no CFAH anchor point for this event). Jordan (secondary display) never sets the sort."
+  },
+  "sort_order_within_year": 2,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1251 BC (Gideon defeats Oreb and Zeeb of Midian and Amalek)",
+      "year_am": null,
+      "year_bc_ad": -1251,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "cfah_basis": "table1_baseline",
+      "source_text_id": "cfah-1"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "\"1251 BC GIDEON'S 300 WIN\"; GIDEON \"40 YRS\" 1258 BC to 1218 BC",
+      "year_am": null,
+      "year_bc_ad": -1251,
+      "precision": "year",
+      "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), timeline band",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+      "source_text_id": "jones-chart-4",
+      "note": "Gideon's 40 years are counted from 1258 BC, the start of the Midianite 7 years."
+    },
+    {
+      "source": "ussher",
+      "date": "2759d AM, 1245 BC (Gideon called and victorious; land at rest 40 years)",
+      "year_am": 2759,
+      "year_bc_ad": -1245,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Fourth Age §356 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"2773 - Beginning of Gideon's 40-year judgeship (Jud. 8:28).\"",
+      "year_am": 2773,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 52",
+      "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+      "source_text_id": "jordan-sbc-2",
+      "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry.",
+      "year_am_end": 2813
+    },
+    {
+      "source": "jordan",
+      "date": "\"2747 - End of Midianite oppression, beginning of Gideon's 40-year judgeship (Jud. 8:28).\"",
+      "year_am": 2747,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+      "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+      "source_text_id": "jordan-bc-3-8",
+      "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). BC 5:2: \"Gideon delivered Israel in 2747, however, in time for the sabbath of 2748.\"",
+      "year_am_end": 2787
+    },
+    {
+      "source": "bible",
+      "date": "\"forty years in the days of Gideon\"",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Judg 8:28",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "canaan"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Judg.6.11-Judg.8.28"
+  ],
+  "sources": [
+    "cfah-1",
+    "jones-chart-4",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "kjv-gutenberg",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Judg.6.11-Judg.8.28"
+    }
+  ],
+  "related": [
+    "midianite-oppression",
+    "reign-of-abimelech"
+  ]
+}

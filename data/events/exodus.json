@@ -67,7 +67,18 @@
       "citation": "Jordan, \"Egypt in Biblical History,\" Biblical Chronology 5:8 (December 1993), chart \"Anno Mundi / B.C. (SBC) / B.C. (CCC)\" at the start of the article",
       "link": "https://biblicalhorizons.com/1993/12/01/5_08/",
       "source_text_id": "jordan-bc-5-8",
-      "note": "Day: 15th day of the 1st month of 2513 (\"Day 15: The exodus from Egypt\"), Pentateuch Part 5 (BC 6:7) §16. Same chart: CCC 1447 B.C. B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years."
+      "note": "Day: 15th day of the 1st month of 2513 (\"Day 15: The exodus from Egypt\"), Pentateuch Part 5 (BC 6:7) §16. Same chart: CCC 1447 B.C. B.C. year is Jordan's \"SBC\" (strictest Biblical chronology), which takes Daniel's 70 weeks literally from Cyrus (456 B.C. instead of the conventional 536 B.C.); not comparable one-to-one with Ussher/CFAH B.C. years. Restated in Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, 2001), ch. 11, p. 44: \"The Exodus took place in 2513\" and p. 51 list \"2513 - Exodus from Egypt\"; and in A Chronological and Calendrical Commentary on the Pentateuch (No. 3, 2001), ch. 17 \"Chronology of the Plagues & Exodus\", p. 43: \"1st Month (March-April 2513) ... Day 15: The exodus from Egypt\"."
+    },
+    {
+      "source": "jordan",
+      "date": "\"the exodus took place 857 years after the Flood\"",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Jordan, The Law of the Covenant (Institute for Christian Economics, 1984), ch. 2 \"The Law and the Redemption of Israel\", p. 44",
+      "link": "https://www.garynorth.com/freebooks/docs/pdf/the_law_of_the_covenant.pdf",
+      "source_text_id": "jordan-book-law-of-the-covenant-1984",
+      "note": "Interval only, as printed (n. 25 cites Anstey). Not converted to AM here."
     },
     {
       "source": "josephus",
@@ -131,7 +142,10 @@
     "annals-of-clonmacnoise-1896",
     "jordan-bc-5-8",
     "jordan-bc-6-7",
-    "jordan-bc-4-8"
+    "jordan-bc-4-8",
+    "jordan-sbc-2",
+    "jordan-sbc-3",
+    "jordan-book-law-of-the-covenant-1984"
   ],
   "free_source_links": [
     {

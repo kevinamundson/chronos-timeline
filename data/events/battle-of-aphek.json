@@ -1,0 +1,112 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "battle-of-aphek",
+  "type": "event",
+  "title": "Battle of Aphek: the Ark Captured and Eli Dies",
+  "summary": "The Philistines defeat Israel at Ebenezer/Aphek, capture the Ark and kill Hophni and Phinehas; Eli, aged 98, falls and dies after judging Israel forty years (1 Sam 4).",
+  "description": "Judges-period record added from James B. Jordan's chronology (secondary display) with Ussher, Jones and, where available, CFAH-1 Table 1 dates for sorting. Jordan treats the judgeships as partly overlapping regional sequences (North / Centre / South) fitted to the 480 years of 1 Kgs 6:1 and the 300 years of Judg 11:26.",
+  "sorting_year": -1122,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1122 BC (no higher-tier year available). Jordan (secondary display) never sets the sort."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "Eli's death on hearing of the Ark's capture \"must have taken place around November or December of the previous year (1122 BC)\"",
+      "year_am": null,
+      "year_bc_ad": -1122,
+      "precision": "year",
+      "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), ch. V \"Chart Four\", p. 87",
+      "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+      "source_text_id": "jones-chronology-ot-2002",
+      "note": "Chart No. 4: \"1122 BC ELI DIES UPON HEARING THE CAPTURE OF THE ARK AGE 98\"; Ark returned 1121 BC after 7 months."
+    },
+    {
+      "source": "ussher",
+      "date": "2888d AM, 1116 BC (Ark taken at Ebenezer; Hophni and Phinehas slain; Eli dies)",
+      "year_am": 2888,
+      "year_bc_ad": -1116,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Fourth Age §386 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": "§385 under the same year. §365: Eli \"died at the age of 98 years ... in the year of the world 2888\".",
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"2881 - Death of Eli, beginning of Samuel's judgeship at Tabernacle and Samson's judgeship in the South. Likely birth of Jesse.\"",
+      "year_am": 2881,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 52",
+      "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+      "source_text_id": "jordan-sbc-2",
+      "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry. Judges (1985), \"Samson, Samuel, and Obed\", p. 237: the battle of Mizpah \"happened 20 years after the battle of Aphek (1 Sam. 7:2)\"; Samson was \"about 20 years old\" at about the time of Aphek, when \"Eli died and Samuel began his public ministry\" (intervals only, no year)."
+    },
+    {
+      "source": "jordan",
+      "date": "\"2855 - Death of Eli, beginning of Samuel's judgeship at Tabernacle and Samson's judgeship in the South.\"",
+      "year_am": 2855,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+      "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+      "source_text_id": "jordan-bc-3-8",
+      "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). BC 5:2: \"In the following year, 2855, the Ark was taken into captivity.\""
+    },
+    {
+      "source": "bible",
+      "date": "Eli 98 years old; judged Israel 40 years",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "1Sam 4:15, 4:18",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [
+    "eli",
+    "samuel"
+  ],
+  "locations": [
+    "canaan"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "1Sam.4.1-1Sam.4.22",
+    "1Sam.7.2"
+  ],
+  "sources": [
+    "jones-chronology-ot-2002",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "kjv-gutenberg",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "1Sam.4.1-1Sam.4.22 ; 1Sam.7.2"
+    }
+  ],
+  "related": [
+    "eli",
+    "battle-of-mizpah"
+  ]
+}

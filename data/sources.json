@@ -589,6 +589,235 @@
       "access": "free-to-read",
       "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
       "verified_on": "2026-10-17"
+    },
+    {
+      "id": "jordan-bc-3-7",
+      "title": "Chronology and Kings (I) (Biblical Chronology 3:7, July 1991)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1991",
+      "publication": "Biblical Chronology (newsletter), Vol. 3, No. 7",
+      "url": "https://biblicalhorizons.com/1991/07/01/3_07/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26724.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17",
+      "note": "Full text in sources/jordan/bc-03-07.md."
+    },
+    {
+      "id": "jordan-bc-3-8",
+      "title": "Chronology and Kings (II) (Biblical Chronology 3:8, August 1991)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1991",
+      "publication": "Biblical Chronology (newsletter), Vol. 3, No. 8",
+      "url": "https://biblicalhorizons.com/1991/08/01/3_08/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26725.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17",
+      "note": "Full text in sources/jordan/bc-03-08.md."
+    },
+    {
+      "id": "jordan-bc-5-2",
+      "title": "Jubilee, Part 1 (Biblical Chronology 5:2, February 1993)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1993",
+      "publication": "Biblical Chronology (newsletter), Vol. 5, No. 2",
+      "url": "https://biblicalhorizons.com/1993/02/01/5_02/",
+      "alt_urls": [
+        "https://www.garynorth.com/public/26922.cfm"
+      ],
+      "access": "free-to-read",
+      "license_note": "\"Copyright © James B. Jordan\" (printed on each issue). Free to read online; copyrighted, not public domain.",
+      "verified_on": "2026-10-17",
+      "note": "Full text in sources/jordan/bc-05-02.md."
+    },
+    {
+      "id": "jordan-sbc-2",
+      "title": "From Creation to Solomon (Studies in Biblical Chronology No. 2)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "2001",
+      "publication": "Biblical Horizons, Niceville, FL, October 2001 (54 pp.; cover price $7.00)",
+      "url": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "\"copyright (c) Biblical Horizons October, 2001\". Free PDF from the Theopolis Institute. Full text in sources/jordan/books/ with the owner's stated permission.",
+      "verified_on": "2026-10-17",
+      "note": "Chapters 6-11: Genesis 5 & 11; Second Cainan; Arpachshad, Abraham and Moses Connections; ch. 11 \"The Era of the Judges and the Reign of Saul\" (pp. 40-53) with Jordan's full judges chronology (revised from BC 3:7-3:8, 1991, by +26 years). The \"Judges chart\" page (p. 47) is blank in this PDF. The owner's Google Drive copy (\"From Creation to Solomon - Studies in Biblical Chronology, Part 2 (James B. Jordan).pdf\") is byte-identical (SHA-256 0ef1d085...)."
+    },
+    {
+      "id": "jordan-sbc-3",
+      "title": "A Chronological and Calendrical Commentary on the Pentateuch (Studies in Biblical Chronology No. 3)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "2001",
+      "publication": "Biblical Horizons, Niceville, FL, October 2001 (69 pp.; formerly Biblical Horizons Occasional Paper No. 22)",
+      "url": "https://theopolisinstitute.com/wp-content/uploads/edd/2015/12/James-Jordan.-Chronological-Calendrical-Commentary-on-the-Pentateuch.pdf",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "\"Copyright (c) Biblical Horizons October, 2001\". Free PDF from the Theopolis Institute. Full text in sources/jordan/books/ with the owner's stated permission.",
+      "verified_on": "2026-10-17",
+      "note": "Book form of the newsletter series \"The Chronology of the Pentateuch\" (BC 6:3-6:8, 1994) plus ch. 20 \"The Conquest\" and calendar charts; the year lists are reprinted unchanged (e.g. Mahalalel still \"396\"). The owner's Google Drive copy is byte-identical (SHA-256 7807ae1b...)."
+    },
+    {
+      "id": "jordan-book-covenant-sequence-1989",
+      "title": "Covenant Sequence in Leviticus and Deuteronomy",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1989",
+      "publication": "Institute for Christian Economics, Tyler, TX",
+      "url": "https://www.garynorth.com/freebooks/docs/217e_47e.htm",
+      "alt_urls": [
+        "https://www.garynorth.com/freebooks/docs/pdf/covenant_sequence_leviticus_deuteronomy.pdf"
+      ],
+      "access": "free-to-read",
+      "license_note": "Copyrighted (see the book's copyright page); free PDF in Gary North's \"Free Books\" library. Jordan's own text included in full in sources/jordan/books/ with the owner's stated permission.",
+      "verified_on": "2026-10-17",
+      "note": "No chronological dates for biblical events found (sabbath-year laws only)."
+    },
+    {
+      "id": "jordan-cc1-failure-american-baptist-culture-1982",
+      "title": "The Failure of the American Baptist Culture (Christianity and Civilization No. 1, ed. James B. Jordan)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1982",
+      "publication": "Geneva Divinity School, Tyler, TX",
+      "url": "https://www.garynorth.com/freebooks/docs/21ce_47e.htm",
+      "alt_urls": [
+        "https://www.garynorth.com/freebooks/docs/pdf/the_failure_of_american_baptist_culture.pdf"
+      ],
+      "access": "free-to-read",
+      "license_note": "Copyrighted (see the book's copyright page); free PDF in Gary North's \"Free Books\" library. Jordan's own text included in full in sources/jordan/books/ with the owner's stated permission.",
+      "verified_on": "2026-10-17",
+      "note": "Symposium; only Jordan's own pieces are reproduced in sources/jordan/books/. No biblical-period dates (church-history dates only, e.g. Chalcedon A.D. 451)."
+    },
+    {
+      "id": "jordan-book-judges-1985",
+      "title": "Judges: God's War Against Humanism",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1985",
+      "publication": "Geneva Ministries, Tyler, TX",
+      "url": "https://www.garynorth.com/freebooks/docs/21ee_47e.htm",
+      "alt_urls": [
+        "https://www.garynorth.com/freebooks/docs/pdf/judges.pdf"
+      ],
+      "access": "free-to-read",
+      "license_note": "Copyrighted (see the book's copyright page); free PDF in Gary North's \"Free Books\" library. Jordan's own text included in full in sources/jordan/books/ with the owner's stated permission.",
+      "verified_on": "2026-10-17",
+      "note": "States that \"it is not possible to construct a strict chronology for the book of Judges\" (p. 55); gives intervals only (Philistine 40 years, Mizpah 20 years after Aphek, Samson about 20 at Aphek; pp. 237-239). No AM or B.C. years."
+    },
+    {
+      "id": "jordan-book-law-of-the-covenant-1984",
+      "title": "The Law of the Covenant: An Exposition of Exodus 21-23",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1984",
+      "publication": "Institute for Christian Economics, Tyler, TX",
+      "url": "https://www.garynorth.com/freebooks/docs/20fe_47e.htm",
+      "alt_urls": [
+        "https://www.garynorth.com/freebooks/docs/pdf/the_law_of_the_covenant.pdf"
+      ],
+      "access": "free-to-read",
+      "license_note": "Copyrighted (see the book's copyright page); free PDF in Gary North's \"Free Books\" library. Jordan's own text included in full in sources/jordan/books/ with the owner's stated permission.",
+      "verified_on": "2026-10-17",
+      "note": "Intervals only, citing Anstey: Flood to call of Abram 427 years (p. 32 n. 4); the exodus 857 years after the Flood; Shem lived 502 years after the Flood (p. 44)."
+    },
+    {
+      "id": "jordan-cc4-reconstruction-of-the-church-1985",
+      "title": "The Reconstruction of the Church (Christianity and Civilization No. 4, ed. James B. Jordan)",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1985",
+      "publication": "Geneva Ministries, Tyler, TX",
+      "url": "https://www.garynorth.com/freebooks/docs/21d6_47e.htm",
+      "alt_urls": [
+        "https://www.garynorth.com/freebooks/docs/pdf/the_reconstruction_of_church.pdf"
+      ],
+      "access": "free-to-read",
+      "license_note": "Copyrighted (see the book's copyright page); free PDF in Gary North's \"Free Books\" library. Jordan's own text included in full in sources/jordan/books/ with the owner's stated permission.",
+      "verified_on": "2026-10-17",
+      "note": "Symposium; only Jordan's own essays are reproduced in sources/jordan/books/. No biblical-period dates by Jordan (the 146 B.C. destruction of Corinth is in Ray R. Sutton's essay)."
+    },
+    {
+      "id": "jordan-book-sociology-of-the-church-1986",
+      "title": "The Sociology of the Church: Essays in Reconstruction",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1986",
+      "publication": "Geneva Ministries, Tyler, TX",
+      "url": "https://www.garynorth.com/freebooks/docs/222e_47e.htm",
+      "alt_urls": [
+        "https://www.garynorth.com/freebooks/docs/pdf/sociology_of_the_church.pdf"
+      ],
+      "access": "free-to-read",
+      "license_note": "Copyrighted (see the book's copyright page); free PDF in Gary North's \"Free Books\" library. Jordan's own text included in full in sources/jordan/books/ with the owner's stated permission.",
+      "verified_on": "2026-10-17",
+      "note": "Only New Testament-era round dates: \"A.D. 30 to A.D. 70\" (the church spoiling the Old Covenant) and A.D. 70 for the destruction of Jerusalem."
+    },
+    {
+      "id": "jordan-book-through-new-eyes-1988",
+      "title": "Through New Eyes: Developing a Biblical View of the World",
+      "authors": [
+        "James B. Jordan"
+      ],
+      "translator_or_editor": null,
+      "year": "1988",
+      "publication": "Wolgemuth & Hyatt, Brentwood, TN",
+      "url": "https://www.garynorth.com/freebooks/docs/2232_47e.htm",
+      "alt_urls": [
+        "https://www.garynorth.com/freebooks/docs/pdf/through_new_eyes.pdf"
+      ],
+      "access": "free-to-read",
+      "license_note": "Copyrighted (see the book's copyright page); free PDF in Gary North's \"Free Books\" library. Jordan's own text included in full in sources/jordan/books/ with the owner's stated permission.",
+      "verified_on": "2026-10-17",
+      "note": "\"In 1400 B.C., the Mosaic Covenant was the most wonderful thing in the world\" (ch. 10 \"Breaking Bread: The Rite of Transformation\", p. 123); A.D. 30 Pentecost, A.D. 66-70, A.D. 70 (NT era); end-note to ch. 15 (p. 307, \"Notes to pages 213-222\") on the Ruth genealogy: David born 406 years after the entrance into Canaan, Perez about 200 years before the Exodus, the Hebrews in Goshen 215 years, Jesse born about 356 years after the Conquest."
+    },
+    {
+      "id": "jones-chart-4",
+      "title": "Chart No. 4: Judges to the First 3 Kings",
+      "authors": [
+        "Floyd Nolen Jones"
+      ],
+      "translator_or_editor": null,
+      "year": "1993 (chart text revised \"As of 2007\")",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+      "alt_urls": [
+        "https://floydnolenjonesministries.com/chronology/"
+      ],
+      "access": "free-to-read",
+      "license_note": "© 1993 Floyd Jones, Ph.D., Th.D., Floyd Jones Ministries, Inc.; offered as a free download on the ministry site. Copyrighted, not public domain.",
+      "verified_on": "2026-10-17",
+      "note": "1-page wide PDF (7560 x 792 pt). Judges timeline: Cushan 1418 BC (2586 AM), Eglon 1378 (2626 AM), Jabin/Deborah 1298, Midian/Gideon 1258 (Gideon's win 1251), Abimelech 1218, Tola 1215, Jair 1192, Ammon 1170, Jephthah 1152 (2852 AM), Ibzan 1146, Elon 1139, Abdon 1129, Samson 1121-1101, Saul 1095, David 1055, Solomon 1015. Its Joshua-Judges chasm is 26 years (1444-1418), whereas the 2002 book (p. 91) has Cushan at 1400 BC and 44 years. Values read from the PDF text layer and checked against a 100-dpi render."
     }
   ]
 }

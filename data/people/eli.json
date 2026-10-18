@@ -1,0 +1,151 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "eli",
+  "type": "person",
+  "title": "Eli",
+  "summary": "High priest at Shiloh who judged Israel forty years; died aged 98 on hearing that the Ark was taken (1 Sam 4:15–18).",
+  "description": "Added with the judges-period records from James B. Jordan's chronology (secondary display).",
+  "sorting_year": -1220,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1220 BC (no higher-tier year available). Jordan (secondary display) never sets the sort."
+  },
+  "father": null,
+  "children": [],
+  "scripture_facts": {
+    "age_at_named_son": null,
+    "named_son": null,
+    "lifespan_years": 98,
+    "refs": [
+      "1Sam.4.15"
+    ]
+  },
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "\"ELI BORN 1220 BC\" (becomes priest 1190 BC; high priest 1162 BC)",
+        "year_am": null,
+        "year_bc_ad": -1220,
+        "precision": "year",
+        "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), Eli life-line",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+        "source_text_id": "jones-chart-4",
+        "note": null
+      },
+      {
+        "source": "ussher",
+        "date": "2790d AM, 1214 BC (\"Eli, the priest was born, for he died at the age of 98 years ... in the year of the world 2888\")",
+        "year_am": 2790,
+        "year_bc_ad": -1214,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Fourth Age §365 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "Jordan gives no birth year for Eli; he dates only the start of Eli's 40-year judgeship in the South: \"2841 - Beginning of Eli's 40-year judgeship in the South (1 Sam. 4:18)\" (From Creation to Solomon, 2001, p. 52) and \"2815\" in BC 3:8 (1991). Not converted into a birth year."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "\"around November or December of the previous year (1122 BC)\", aged 98",
+        "year_am": null,
+        "year_bc_ad": -1122,
+        "precision": "year",
+        "citation": "Jones, Chronology of the Old Testament (15th ed., 2002), ch. V \"Chart Four\", p. 87",
+        "link": "https://ntslibrary.com/PDF%20Books%20II/Jones%20-%20Chronology%20of%20the%20OT.pdf",
+        "source_text_id": "jones-chronology-ot-2002",
+        "note": null
+      },
+      {
+        "source": "ussher",
+        "date": "2888d AM, 1116 BC",
+        "year_am": 2888,
+        "year_bc_ad": -1116,
+        "precision": "year",
+        "citation": "Ussher, Annals of the World, Fourth Age §386 (paragraph numbering of the modern transcription)",
+        "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+        "note": null,
+        "source_text_id": "ussher-annals-1658"
+      },
+      {
+        "source": "jordan",
+        "date": "\"2881 - Death of Eli, beginning of Samuel's judgeship at Tabernacle ...\"",
+        "year_am": 2881,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 52",
+        "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+        "source_text_id": "jordan-sbc-2",
+        "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry. Judgeship begun 2841 (p. 52), so 40 years to 2881."
+      },
+      {
+        "source": "jordan",
+        "date": "\"2855 - Death of Eli ...\"",
+        "year_am": 2855,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+        "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+        "source_text_id": "jordan-bc-3-8",
+        "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). Judgeship begun 2815 (\"2815 - Beginning of Eli's 40-year judgeship in the South (1 Sam. 4:18)\")."
+      }
+    ]
+  },
+  "scripture_refs": [
+    "1Sam.4.15-1Sam.4.18"
+  ],
+  "sources": [
+    "jones-chart-4",
+    "jones-chronology-ot-2002",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "1Sam.4.15-1Sam.4.18"
+    }
+  ],
+  "related": [
+    "battle-of-aphek",
+    "samuel"
+  ],
+  "events": [
+    "battle-of-aphek"
+  ]
+}

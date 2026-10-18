@@ -1,0 +1,111 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "elon-judges-israel",
+  "type": "event",
+  "title": "Elon the Zebulonite Judges Israel (10 years)",
+  "summary": "Elon the Zebulonite judges Israel ten years and is buried in Aijalon (Judg 12:11–12).",
+  "description": "Judges-period record added from James B. Jordan's chronology (secondary display) with Ussher, Jones and, where available, CFAH-1 Table 1 dates for sorting. Jordan treats the judgeships as partly overlapping regional sequences (North / Centre / South) fitted to the 480 years of 1 Kgs 6:1 and the 300 years of Judg 11:26.",
+  "sorting_year": -1139,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1139 BC (no higher-tier year available). Jordan (secondary display) never sets the sort."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "ELON \"10 YRS\", 1139 BC to 1129 BC",
+      "year_am": null,
+      "year_bc_ad": -1139,
+      "precision": "year",
+      "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), timeline band",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+      "source_text_id": "jones-chart-4",
+      "note": null,
+      "year_bc_ad_end": -1129
+    },
+    {
+      "source": "ussher",
+      "date": "2830a AM, 1175 BC (Ibzan dies; Elon judges)",
+      "year_am": 2830,
+      "year_bc_ad": -1175,
+      "precision": "year",
+      "citation": "Ussher, Annals of the World, Fourth Age §374 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "\"2891 - Beginning of Elon's 10-year judgeship in Center and North (Jud. 11:11).\"",
+      "year_am": 2891,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, From Creation to Solomon (Studies in Biblical Chronology No. 2, Biblical Horizons, Oct. 2001), ch. 11 \"The Era of the Judges and the Reign of Saul\", p. 52",
+      "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2016/01/From-Creation-to-Solomon.-Studies-in-Biblical-Chronology-Part-2.-James-Jordan.pdf",
+      "source_text_id": "jordan-sbc-2",
+      "note": "2001 revision. Jordan's 1991 list (BC 3:8) has an earlier year; see the second Jordan entry. \"2901 - Death of Elon, beginning of Abdon's 8-year judgeship\". Reference \"Jud. 11:11\" as printed.",
+      "year_am_end": 2901
+    },
+    {
+      "source": "jordan",
+      "date": "\"2866 - Death of Ibzan, beginning of Elon's 10-year judgeship in Center and North (Jud. 11:11).\"",
+      "year_am": 2866,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+      "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+      "source_text_id": "jordan-bc-3-8",
+      "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory).",
+      "year_am_end": 2876
+    },
+    {
+      "source": "bible",
+      "date": "10 years",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Judg 12:11",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [],
+  "locations": [
+    "canaan"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Judg.12.11-Judg.12.12"
+  ],
+  "sources": [
+    "jones-chart-4",
+    "jordan-bc-3-8",
+    "jordan-sbc-2",
+    "kjv-gutenberg",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Judg.12.11-Judg.12.12"
+    }
+  ],
+  "related": [
+    "ibzan-judges-israel",
+    "abdon-judges-israel"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "crossing-the-jordan",
+  "type": "event",
+  "title": "Israel Crosses the Jordan under Joshua",
+  "summary": "On the 10th day of the 1st month Israel crosses the Jordan into Canaan (Josh 4:19), after the 40 years in the wilderness.",
+  "description": "Judges-period record added from James B. Jordan's chronology (secondary display) with Ussher, Jones and, where available, CFAH-1 Table 1 dates for sorting. Jordan treats the judgeships as partly overlapping regional sequences (North / Centre / South) fitted to the 480 years of 1 Kgs 6:1 and the 300 years of Judg 11:26.",
+  "sorting_year": -1450,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1450 BC (no CFAH anchor point for this event). Jordan (secondary display) never sets the sort."
+  },
+  "sort_order_within_year": 1,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1450 BC (Crossing the Jordan; \"differs by 1 year from Jones\")",
+      "year_am": null,
+      "year_bc_ad": -1450,
+      "precision": "year",
+      "citation": "Griffith & White, \"Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,\" ARJ 15 (2022): 377–390, section \"Our Assumptions (Declared Biases)\", Table 1 \"Biblically derived dates from Ussher and Jones\"",
+      "link": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
+      "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
+      "cfah_basis": "table1_baseline",
+      "source_text_id": "cfah-1"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "\"JOSHUA CROSSED JORDAN 1st MONTH 10th DAY = THURSDAY, APRIL 2, BC 1451\"",
+      "year_am": null,
+      "year_bc_ad": -1451,
+      "precision": "day",
+      "citation": "Jones, Chart No. 4 \"Judges to the First 3 Kings\" (© 1993 Floyd Jones; chart text revised \"As of 2007\"), box \"Chronology for the Conquering of Heshbon\" (Josh 3:15, 4:19)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_130605431.pdf",
+      "source_text_id": "jones-chart-4",
+      "note": "Jones, 15th ed. (2002), ch. V p. 90: \"the crossing of Jordan took place in BC 1451 (AM 2553)\"."
+    },
+    {
+      "source": "ussher",
+      "date": "2553c AM, 1451 BC; 10th day of the 1st month (Friday, April 30)",
+      "year_am": 2553,
+      "year_bc_ad": -1451,
+      "precision": "day",
+      "citation": "Ussher, Annals of the World, Fourth Age §307 (paragraph numbering of the modern transcription)",
+      "link": "https://archive.org/details/TheAnnalsOfTheWorld1658EditionPartOne4004To176BC",
+      "note": null,
+      "source_text_id": "ussher-annals-1658"
+    },
+    {
+      "source": "jordan",
+      "date": "1st Month 2554, \"Day 10: Israel crosses Jordan (Joshua 4:19); Passover lambs set aside.\"",
+      "year_am": 2554,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Jordan, A Chronological and Calendrical Commentary on the Pentateuch (Studies in Biblical Chronology No. 3, Biblical Horizons, Oct. 2001), ch. 19 \"The Years 2553 and 2554\", p. 54 (day list)",
+      "link": "https://theopolisinstitute.com/wp-content/uploads/edd/2015/12/James-Jordan.-Chronological-Calendrical-Commentary-on-the-Pentateuch.pdf",
+      "source_text_id": "jordan-sbc-3",
+      "note": "2001. Same year in From Creation to Solomon (2001), p. 51 summary: \"2554 - Beginning of Conquest of the land.\" Jordan's year here turns at the 7th month, so his 1st month of 2554 follows Moses' death on 11/1/2554. One year later than Ussher/Jones AM 2553."
+    },
+    {
+      "source": "jordan",
+      "date": "\"2553 - Beginning of Conquest of the land.\"",
+      "year_am": 2553,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Jordan, \"Chronology and Kings (II),\" Biblical Chronology 3:8 (August 1991), section \"The Judges\", summary list",
+      "link": "https://biblicalhorizons.com/1991/08/01/3_08/",
+      "source_text_id": "jordan-bc-3-8",
+      "note": "1991 scheme, superseded by Jordan himself in 2001 (Studies in Biblical Chronology No. 2 dates the whole judges sequence 26 years later because he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's victory). Same essay: \"Since the invasion of the land came in A.M. 2553 ...\"."
+    },
+    {
+      "source": "bible",
+      "date": "10th day of the 1st month",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Josh 4:19",
+      "link": "https://www.gutenberg.org/ebooks/10",
+      "note": null,
+      "source_text_id": "kjv-gutenberg"
+    }
+  ],
+  "people": [
+    "moses"
+  ],
+  "locations": [
+    "canaan"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Josh.3.1-Josh.4.24",
+    "Josh.4.19",
+    "Josh.5.10-Josh.5.12"
+  ],
+  "sources": [
+    "cfah-1",
+    "jones-chart-4",
+    "jordan-bc-3-8",
+    "jordan-sbc-3",
+    "kjv-gutenberg",
+    "ussher-annals-1658"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "kjv-gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "locator": "Josh.3.1-Josh.4.24 ; Josh.4.19 ; Josh.5.10-Josh.5.12"
+    }
+  ],
+  "related": [
+    "exodus",
+    "division-of-the-land"
+  ]
+}

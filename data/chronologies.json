@@ -270,7 +270,7 @@
     },
     {
       "id": "jordan",
-      "name": "James B. Jordan, Biblical Chronology (Biblical Horizons / ICE, 1989-1997)",
+      "name": "James B. Jordan, Biblical Chronology (Biblical Horizons / ICE, 1989-1997) and Studies in Biblical Chronology Nos. 2-3 (2001)",
       "abbreviation": "Jordan",
       "primary": false,
       "sort_priority": 4,
@@ -278,14 +278,26 @@
       "authors": [
         "James B. Jordan"
       ],
-      "description": "SECONDARY DISPLAY CHRONOLOGY - never used for sorting_year (not one of the four sort tiers). James B. Jordan's monthly newsletter Biblical Chronology (Institute for Christian Economics / Biblical Horizons, 1989-1997). Framework: six 24-hour creation days, no gaps in Genesis 5 or 11, Masoretic numbers (rejects the LXX and the \"second Cainan\"); Flood AM 1656; Arphaxad AM 1658 (\"two years after the Flood\"); Abram born AM 2008 (Terah 130, from Gen 11:26 + Acts 7:4) - the same as Ussher and 60 years later than plain Gen 11:26 arithmetic (1948); the 430 years of Ex 12:40 counted from Abram's entry into Canaan (AM 2083), so the Exodus is AM 2513 (same as Ussher/Jones); Judges partly overlapping, 480 years to the Temple foundation in Solomon's 4th year, AM 2993 (one year later than Ussher/Jones 2992), completed AM 3000, dedicated (he assumes) AM 3014 (Ussher: 3001); kings of Judah as the controlling \"Adamic chronology\" (rejects Thiele and the conventional Assyrian synchronisms); fall of Jerusalem c. AM 3425; decree of Cyrus c. AM 3474; Daniel's 70 weeks taken as 490 literal years from Cyrus, which REJECTS the Ptolemaic Persian chronology and shortens the post-exilic period by about 80 years; crucifixion AM 3960 and, \"if this happened in A.D. 30\", the fall of Jerusalem in A.D. 70 = AM 4000. Consequence: Jordan's B.C. dates (his \"SBC\", strictest Biblical chronology, first set out in BC 5:8, Dec. 1993) run about 74-75 years later than Ussher/CFAH for the same events (Creation 3930 B.C., Flood 2274, Abram 1922, Exodus 1417, Temple begun 937), while his AM figures mostly match Ussher. Later issues (Daniel series 1995) date the Persian period with conventional B.C. years (e.g. Cyrus 538 B.C.), so his B.C. usage is not uniform.",
+      "description": "SECONDARY DISPLAY CHRONOLOGY - never used for sorting_year (not one of the four sort tiers). James B. Jordan's monthly newsletter Biblical Chronology (Institute for Christian Economics / Biblical Horizons, 1989-1997). Framework: six 24-hour creation days, no gaps in Genesis 5 or 11, Masoretic numbers (rejects the LXX and the \"second Cainan\"); Flood AM 1656; Arphaxad AM 1658 (\"two years after the Flood\"); Abram born AM 2008 (Terah 130, from Gen 11:26 + Acts 7:4) - the same as Ussher and 60 years later than plain Gen 11:26 arithmetic (1948); the 430 years of Ex 12:40 counted from Abram's entry into Canaan (AM 2083), so the Exodus is AM 2513 (same as Ussher/Jones); Judges partly overlapping, 480 years to the Temple foundation in Solomon's 4th year, AM 2993 (one year later than Ussher/Jones 2992), completed AM 3000, dedicated (he assumes) AM 3014 (Ussher: 3001); kings of Judah as the controlling \"Adamic chronology\" (rejects Thiele and the conventional Assyrian synchronisms); fall of Jerusalem c. AM 3425; decree of Cyrus c. AM 3474; Daniel's 70 weeks taken as 490 literal years from Cyrus, which REJECTS the Ptolemaic Persian chronology and shortens the post-exilic period by about 80 years; crucifixion AM 3960 and, \"if this happened in A.D. 30\", the fall of Jerusalem in A.D. 70 = AM 4000. Consequence: Jordan's B.C. dates (his \"SBC\", strictest Biblical chronology, first set out in BC 5:8, Dec. 1993) run about 74-75 years later than Ussher/CFAH for the same events (Creation 3930 B.C., Flood 2274, Abram 1922, Exodus 1417, Temple begun 937), while his AM figures mostly match Ussher. Later issues (Daniel series 1995) date the Persian period with conventional B.C. years (e.g. Cyrus 538 B.C.), so his B.C. usage is not uniform. JUDGES PERIOD: Jordan set out two schemes. (1) BC 3:7-3:8 (July-Aug. 1991): the 300 years of Judges 11:26 end at Jephthah's victory, AM 2853. (2) From Creation to Solomon (Studies in Biblical Chronology No. 2, Oct. 2001), ch. 11: the 300 years run 2560-2860 and end when Ammon took the villages, so his judges dates move 26 years later (Jephthah 2879, Eli begins 2841, Saul 2909, David born 2919, Samuel dies 2946). Both are recorded on the judges records, 2001 first. Jordan's 1980s books (Law of the Covenant 1984, Judges 1985, Sociology of the Church 1986, Through New Eyes 1988, Covenant Sequence 1989, and the Christianity and Civilization symposia) give intervals at most; see data/jordan-dates-extract.md.",
       "year_conventions": "Anno Mundi counted from Adam's creation as year 0 (\"0 - Adam created\"; Seth 130), written \"AM 1656\", \"A.M. 2008\", or month/day/year as \"2/17/1656\". His year sometimes runs from spring (Pentateuch plague calendar, \"1st Month (March-April 2513)\") and sometimes turns in the 7th month (wilderness narrative, BC 6:8 §18). year_bc_ad is filled only where Jordan prints a B.C. year, which is almost always his SBC figure; the note says so. Nothing is converted between AM and B.C. Many of his dates carry \"?\" or \"c.\" or are called \"arbitrary\"/\"aesthetic\"; those use precision \"conjectural\".",
       "references": [
         "jordan-biblical-horizons-chronology",
         "jordan-bc-garynorth-archive",
         "jordan-bc-4-8",
         "jordan-bc-5-8",
-        "jordan-bc-6-4"
+        "jordan-bc-6-4",
+        "jordan-sbc-2",
+        "jordan-sbc-3",
+        "jordan-bc-3-7",
+        "jordan-bc-3-8",
+        "jordan-bc-5-2",
+        "jordan-book-law-of-the-covenant-1984",
+        "jordan-book-judges-1985",
+        "jordan-book-through-new-eyes-1988",
+        "jordan-book-sociology-of-the-church-1986",
+        "jordan-book-covenant-sequence-1989",
+        "jordan-cc1-failure-american-baptist-culture-1982",
+        "jordan-cc4-reconstruction-of-the-church-1985"
       ],
       "anchors": [
         {
@@ -375,7 +387,10 @@
         "Jordan calls his work \"tentative\" and revised it over the series; where issues disagree (Temple 932 B.C. in BC 2:8 vs 937 B.C. SBC in BC 5:8; Solomon's accession AM 2989 in BC 5:8 vs first year 2990 in BC 6:9) both are recorded in notes.",
         "Mahalalel's birth is printed \"396\" (BC 6:4); MT arithmetic and Jordan's own Jared line imply 395. Recorded as printed.",
         "Charts in the Daniel series (BC 7:1-8:2) exist only as scanned PDFs on garynorth.com; they were OCR'd for data/jordan-dates-extract.md and need checking against the scans before use.",
-        "Jordan's later book-length work (e.g. commentaries on Daniel) was not consulted; only the two owner-supplied sources were read."
+        "Two judges schemes (BC 3:7-3:8, 1991, and Studies No. 2, 2001) differ by 26 years from Jephthah back to the Conquest-era start of the 300 years; Samuel's age at death is 110 in 1991 and about 85 in 2001. Both are recorded; the 2001 figures come first as his later view.",
+        "Inside No. 2 itself: the land division is \"2559\" in the p. 51 list but 2560 on p. 44; Jephthah is at 2879 and Ibzan at 2884, which gives 5 years rather than the 6 of Judges 12:7. Recorded as printed.",
+        "No. 2's \"Judges chart\" (p. 47) is blank in the Theopolis PDF and in the owner's Drive copy.",
+        "An owner-supplied Drive file \"Anno Mundi_Chronology_Studies2.pdf\" (14 pp., labelled \"Chronology from James Jordan\", author not named) is summarised in data/jordan-dates-extract.md. It is NOT attached to records or used as a source until the owner names its author."
       ]
     },
     {
