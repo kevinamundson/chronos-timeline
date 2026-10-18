@@ -46,6 +46,39 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": null
+    },
+    {
+      "source": "herodotus",
+      "date": "“For in the three following generations of Darius the son of Hystaspes, Xerxes the son of Darius, and Artaxerxes the son of Xerxes, more woes befell Greece than in the twenty generations preceding Darius”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 6.98 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 408 (PDF p. 410)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6#:~:text=For%20in%20the%20three%20following%20generations%20of%20Darius",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Said of the Delos earthquake as Datis's fleet sailed for Eretria and Marathon. Herodotus counts the Persian kings to Artaxerxes, son of Xerxes."
+    },
+    {
+      "source": "herodotus",
+      "date": "“It was then the ninth day of the first decade; and they could not march out of Sparta on the ninth, when the moon had not reached the full”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 6.106 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 411 (PDF p. 413)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6#:~:text=It%20was%20then%20the%20ninth%20day%20of%20the",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "The Spartans wait for the full moon before marching: a day of the month, not a year. DERIVED (not Herodotus's figure): About 490 BC for the battle, counted back from CFAH AP-13 (480 BC) with Herodotus's intervals in 7.1–7.37 (see 7.1). Consistent with Generations 490 BC (provisional)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“After the full of the moon two thousand Lacedaemonians came to Athens”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 6.120 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 417 (PDF p. 419)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6#:~:text=After%20the%20full%20of%20the%20moon%20two%20thousand",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "They marched from Sparta in three days but arrived after the battle."
     }
   ],
   "people": [
@@ -56,7 +89,9 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -64,6 +99,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6",
+      "locator": "Book 6 (unnumbered chapters on Wikisource)"
     }
   ]
 }

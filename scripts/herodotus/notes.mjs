@@ -10,6 +10,8 @@ Herodotus describes these events, but no tier 1–4 chronology (and no Generatio
 | Cimmerian capture of Sardis | 1.15 | No anchor. |
 | Scythian dominion over Asia (28 years) | 1.104–106 | No anchor; inside the derived reign of Cyaxares. |
 | Death of Cambyses and the rule of the Magus | 3.61–67 | Derived only: about 523/522–522 BC (AP-7 + 29 + 7 years 5 months). |
+| Darius's Scythian expedition | 4.1–4.142 | No anchor; after Darius's accession (3.88). |
+| Burning of Sardis and the Ionian revolt; fall of Miletus "six years" later | 5.100–105, 6.18 | No anchor in any tier. |
 | Accession of Darius I | 3.86–88 | The existing \`reign-of-darius-i\` (Generations 522 BC, provisional) was used. |
 
 ## Unmapped statements

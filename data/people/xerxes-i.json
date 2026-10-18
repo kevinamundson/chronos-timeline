@@ -38,6 +38,29 @@
         "link": null,
         "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "herodotus",
+        "date": "“For in the three following generations of Darius the son of Hystaspes, Xerxes the son of Darius, and Artaxerxes the son of Xerxes, more woes befell Greece than in the twenty generations preceding Darius”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 6.98 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 408 (PDF p. 410)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6#:~:text=For%20in%20the%20three%20following%20generations%20of%20Darius",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Said of the Delos earthquake as Datis's fleet sailed for Eretria and Marathon. Herodotus counts the Persian kings to Artaxerxes, son of Xerxes."
+      }
     ]
   },
   "events": [
@@ -51,5 +74,12 @@
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource"
   ],
-  "related": []
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6",
+      "locator": "Book 6 (unnumbered chapters on Wikisource)"
+    }
+  ]
 }

@@ -46,6 +46,28 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": null
+    },
+    {
+      "source": "herodotus",
+      "date": "“after reigning thirty-six years over the Athenians”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 5.65 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 344 (PDF p. 346)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_5#:~:text=after%20reigning%20thirty%2Dsix%20years%20over%20the%20Athenians",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "The Pisistratidae leave Athens for Sigeum; the reform of Clisthenes follows (5.66). Herodotus gives no year. Generations dates the democracy 507 BC (provisional)."
+    },
+    {
+      "source": "herodotus",
+      "date": "“instead of the four tribes among which the Athenians had been divided hitherto, Clisthenes made ten tribes”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": "Herodotus, Histories 5.66 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 345 (PDF p. 347)",
+      "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_5#:~:text=instead%20of%20the%20four%20tribes%20among%20which%20the",
+      "source_text_id": "herodotus-rawlinson-roman-roads",
+      "note": "Clisthenes' reform. Herodotus gives no year. Generations: 507 BC (provisional)."
     }
   ],
   "people": [],
@@ -54,7 +76,9 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "herodotus-rawlinson-roman-roads",
+    "herodotus-rawlinson-wikisource"
   ],
   "related": [],
   "free_source_links": [
@@ -62,6 +86,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_5",
+      "locator": "Book 5 (unnumbered chapters on Wikisource)"
     }
   ]
 }

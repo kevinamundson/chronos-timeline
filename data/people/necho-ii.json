@@ -62,6 +62,28 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=After%20having%20reigned%20in%20all%20sixteen%20years%2C%20Necos",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "Necos defeated \"the Syrians\" at Magdolus and took Cadytis (2.159). DERIVED (not Herodotus's figure): 525 + ½ + 44 + 25 + 6 = 600½, so Necos reigned about 617/616–601/600 BC (anchor CFAH AP-8). Consistent: Generations dates Carchemish (Pharaoh-necho, Jer 46:2) to 605 BC (provisional), inside the derived reign."
+      },
+      {
+        "source": "herodotus",
+        "date": "“This discovery was first made by Necos, the Egyptian king, who on desisting from the canal which he had begun between the Nile and the Arabian gulf”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 4.42 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 259 (PDF p. 261)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_4#:~:text=This%20discovery%20was%20first%20made%20by%20Necos%2C%20the",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Necho's Phoenician ships sail round Libya (Africa)."
+      },
+      {
+        "source": "herodotus",
+        "date": "“it was not till the third year that they doubled the Pillars of Hercules, and made good their voyage home”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 4.42 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 260 (PDF p. 262)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_4#:~:text=it%20was%20not%20till%20the%20third%20year%20that",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Length of the voyage: a little over two years."
       }
     ]
   },
@@ -82,6 +104,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
       "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_4",
+      "locator": "Book 4 (unnumbered chapters on Wikisource)"
     }
   ]
 }

@@ -60,6 +60,28 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=The%20length%20of%20his%20reign%20was%20twenty%2Dfive%20years",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "Apries attacked Sidon and fought the king of Tyre at sea. DERIVED (not Herodotus's figure): about 595/594–570/569 BC (anchor CFAH AP-8 + Amasis 44 + Psammenitus ½). Consistent: Generations dates the fall of Jerusalem to 586 BC (provisional), inside the derived reign of Pharaoh-hophra (Jer 44:30)."
+      },
+      {
+        "source": "herodotus",
+        "date": "“put themselves under the rule of Apries, the Egyptian monarch”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 4.159 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 303 (PDF p. 305)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_4#:~:text=put%20themselves%20under%20the%20rule%20of%20Apries%2C%20the",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Synchronism: the Libyans under Adicran appeal to Apries in the reign of Battus the Prosperous of Cyrene."
+      },
+      {
+        "source": "herodotus",
+        "date": "“the subjects of Apries, who laid the blame of the defeat on him, revolted from his authority”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 4.159 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 303 (PDF p. 305)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_4#:~:text=the%20subjects%20of%20Apries%2C%20who%20laid%20the%20blame",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "The Egyptian defeat at Irasa leads to the revolt that made Amasis king (2.161–169). DERIVED (not Herodotus's figure): The revolt ends Apries's 25 years: about 570/569 BC on the chain from CFAH AP-8 (see 2.161)."
       }
     ]
   },
@@ -77,6 +99,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
       "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_4",
+      "locator": "Book 4 (unnumbered chapters on Wikisource)"
     }
   ]
 }

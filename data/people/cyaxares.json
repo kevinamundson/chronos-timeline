@@ -95,6 +95,17 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Cyaxares%20died%2C%20having%20reigned%20over%20the%20Medes%2C%20if",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "DERIVED (not Herodotus's figure): 635/634 BC − 40 = 595/594 BC for the death of Cyaxares (anchor CFAH AP-32, via 1.102). Generations starts the reign of Cyaxares in 625 BC (2nd ed.; the 1st ed. prints 625–585 BC, the same 40 years; provisional sort), 10 years later than the CFAH-derived 635/634 BC."
+      },
+      {
+        "source": "herodotus",
+        "date": "“During the space of eight-and-twenty years, as I have before mentioned, the Scyths continued lords of the whole of Upper Asia.”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Herodotus, Histories 4.1 (tr. George Rawlinson; Roman Roads Media etext, 2013), p. 245 (PDF p. 247)",
+        "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_4#:~:text=During%20the%20space%20of%20eight%2Dand%2Dtwenty%20years%2C%20as%20I",
+        "source_text_id": "herodotus-rawlinson-roman-roads",
+        "note": "Repeats 1.106: the Scythian dominion fell within the reign of Cyaxares. Given as the background to Darius's Scythian expedition."
       }
     ]
   },
@@ -116,6 +127,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
       "locator": "Book 1"
+    },
+    {
+      "source_id": "herodotus-rawlinson-wikisource",
+      "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_4",
+      "locator": "Book 4 (unnumbered chapters on Wikisource)"
     }
   ]
 }
