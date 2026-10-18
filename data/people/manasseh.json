@@ -53,7 +53,7 @@
         "year_bc_ad": null,
         "precision": "unknown",
         "citation": "Gen 41:50",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/41.htm#50",
         "note": "Born during the seven years of plenty.",
         "source_text_id": "kjv-gutenberg"
       }
@@ -65,12 +65,12 @@
   ],
   "sources": [
     "ussher-annals-1658",
-    "kjv-gutenberg"
+    "blb-biblehub"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/41.htm#50",
       "locator": "Gen.41.50-Gen.41.52 ; Gen.48.1-Gen.48.20"
     }
   ],

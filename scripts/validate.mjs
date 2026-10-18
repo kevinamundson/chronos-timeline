@@ -5,6 +5,8 @@
 //   - all referenced ids (related, people, locations, maps, father/children, sources,
 //     chronology `source`, source_text_id) exist
 //   - every non-null chronology date has a citation (also enforced by schema)
+//   - Scripture links: every Scripture URL is the Berean Literal Bible on BibleHub (scripts/blb.mjs);
+//     KJV/Gutenberg, BibleGateway and other Bible-text links are rejected; scripture_refs must map to a BLB chapter
 //   - masoretic-genealogy AM figures for the Genesis 5 line match the KJV/MT numbers
 //   - sorting_year follows the 4-tier fallback (data/chronologies.json sorting_rule):
 //       1 cfah (cfah_basis=anchor_point) > 2 cfah (cfah_basis=table1_baseline)
@@ -16,6 +18,7 @@ import { join, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
+import { isBlbUrl, isNonBlbScripture, blbFromOsis } from './blb.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const S = (f) => JSON.parse(readFileSync(join(root, 'schema', f), 'utf8'));
@@ -76,6 +79,30 @@ function checkEntries(rel, label, entries) {
   }
   const cf = (entries || []).find((e) => e.source === 'cfah');
   return cf && cf.year_bc_ad != null ? cf.year_bc_ad : null;
+}
+
+// Scripture links: Berean Literal Bible on BibleHub only.
+{
+  const scan = (rel, node, path) => {
+    if (Array.isArray(node)) return node.forEach((x, i) => scan(rel, x, `${path}[${i}]`));
+    if (node && typeof node === 'object') {
+      if (node.superseded_for_links_by) return; // a superseded source entry may keep its own (non-link) URL
+      const scriptural = ['bible', 'masoretic-genealogy'].includes(node.source) || node.source_id === 'blb-biblehub';
+      for (const [k, v] of Object.entries(node)) {
+        if (typeof v === 'string') {
+          if (isNonBlbScripture(v)) err(rel, `${path}.${k}: non-BLB Scripture link ${v} (use scripts/blb.mjs)`);
+          else if (/^https?:\/\/(www\.)?biblehub\.com\/blb\//.test(v) && !isBlbUrl(v)) err(rel, `${path}.${k}: malformed BLB link ${v}`);
+          else if (scriptural && ['link', 'url'].includes(k) && !isBlbUrl(v)) err(rel, `${path}.${k}: Scripture entry must link to the BLB, got ${v}`);
+        } else scan(rel, v, `${path}.${k}`);
+      }
+    }
+  };
+  for (const { rel, doc } of Object.values(records)) {
+    scan(rel, doc, '');
+    for (const r of doc.scripture_refs || []) if (!blbFromOsis(r)) err(rel, `scripture_refs: "${r}" cannot be mapped to a BLB chapter`);
+  }
+  scan('data/chronologies.json', chronDoc, '');
+  scan('data/sources.json', srcDoc, '');
 }
 const sortingTargets = [];
 for (const { rel, doc, kind } of Object.values(records)) {

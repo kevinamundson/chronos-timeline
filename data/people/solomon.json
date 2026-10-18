@@ -123,7 +123,7 @@
   ],
   "sources": [
     "cfah-1",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jones-chart-1",
     "jordan-bc-3-10",
@@ -133,8 +133,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/2_samuel/12.htm#24",
       "locator": "2Sam.12.24 ; 1Kgs.11.42"
     }
   ],

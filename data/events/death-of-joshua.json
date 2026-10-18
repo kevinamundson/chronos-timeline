@@ -85,7 +85,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Josh 24:29; Judg 2:8",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/joshua/24.htm#29",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     }
@@ -103,13 +103,13 @@
     "jones-chart-4",
     "jordan-bc-3-8",
     "jordan-sbc-2",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/joshua/24.htm#29",
       "locator": "Josh.24.29-Josh.24.31 ; Judg.2.7-Judg.2.10"
     }
   ],

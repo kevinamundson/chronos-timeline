@@ -60,7 +60,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 11:10–16 (Arphaxad AM 1658; Salah +35 = 1693; Eber +30 = 1723; Peleg +34 = 1757)",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/11.htm#10",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -126,7 +126,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 11:18–19 (30 + 209 = 239 years)",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/11.htm#18",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -172,7 +172,7 @@
   ],
   "sources": [
     "cfah-4",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jones-chronology-ot-2002",
     "jordan-bc-5-8",
@@ -181,8 +181,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/10.htm#25",
       "locator": "Gen.10.25 ; Gen.11.16-Gen.11.19"
     }
   ],

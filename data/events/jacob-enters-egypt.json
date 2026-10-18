@@ -43,7 +43,7 @@
       "year_bc_ad": null,
       "precision": "year",
       "citation": "Gen 47:9 (Jacob 130 before Pharaoh): 2168 + 130",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/47.htm#9",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     },
@@ -103,15 +103,15 @@
   "sources": [
     "cfah-1",
     "jones-chronology-ot-2002",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-7",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/45.htm#6",
       "locator": "Gen.45.6 ; Gen.46.1-Gen.46.27 ; Gen.47.1-Gen.47.12"
     }
   ],

@@ -49,7 +49,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 11:10: Shem 100 years old when he begat Arphaxad two years after the Flood (AM 1656 + 2 − 100)",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/11.htm#10",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -115,7 +115,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 11:10–11: lived 500 years after Arphaxad (born AM 1658)",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/11.htm#10",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -160,7 +160,7 @@
     "Gen.11.11"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-4",
     "jordan-bc-6-6",
@@ -169,8 +169,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/5.htm#32",
       "locator": "Genesis 5:32; 9; 10; 11"
     }
   ],

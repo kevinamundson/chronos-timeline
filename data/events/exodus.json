@@ -43,7 +43,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Exod 12:40–41, 12:51; Num 33:3; 1 Kgs 6:1",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/exodus/12.htm#40",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     },
@@ -146,7 +146,7 @@
     "cfah-6",
     "jones-chart-1",
     "jones-chronology-ot-2002",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "josephus-antiquities-whiston",
     "raleigh-history-of-the-world-1736",
@@ -161,8 +161,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/exodus/12.htm",
       "locator": "Exodus 12–14"
     },
     {

@@ -82,15 +82,15 @@
     "Acts.7.23-Acts.7.29"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-7",
     "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/exodus/2.htm#11",
       "locator": "Exod.2.11-Exod.2.22 ; Acts.7.23-Acts.7.29"
     }
   ],

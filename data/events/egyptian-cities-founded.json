@@ -60,7 +60,7 @@
     "Gen.10.13-Gen.10.14"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "cfah-2",
     "ussher-annals-1658"
   ],
@@ -71,8 +71,8 @@
       "locator": "section \"Founding of the Nations\", Table 3 (AP-3 \"Egyptian Cities Founded\", 2189/2188; Diodorus, Manetho, Cullimore, Constantinus Manassas, Varro); also CFAH-6 Argument 2, Table 1 \"Anchor Points for e"
     },
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/10.htm#6",
       "locator": "Gen.10.6 ; Gen.10.13-Gen.10.14"
     }
   ],

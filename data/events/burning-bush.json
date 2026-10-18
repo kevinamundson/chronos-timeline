@@ -61,13 +61,13 @@
     "Acts.7.30-Acts.7.35"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/exodus/3.htm",
       "locator": "Exod.3.1-Exod.3.22 ; Exod.4.1-Exod.4.31 ; Acts.7.30-Acts.7.35"
     }
   ],

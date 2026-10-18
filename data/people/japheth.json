@@ -50,7 +50,7 @@
         "year_bc_ad": null,
         "precision": "conjectural",
         "citation": "Gen 5:32 (Noah 500 years old when he began begetting Shem, Ham and Japheth); Gen 10:21",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/5.htm#32",
         "note": "Gen 5:32 does not specify which son was born when Noah was 500; Gen 10:21 \"the elder\" is ambiguous in Hebrew.",
         "source_text_id": "kjv-gutenberg"
       },
@@ -115,14 +115,14 @@
     "Gen.10.21"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-4"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/5.htm#32",
       "locator": "Genesis 5:32; 9; 10; 11"
     }
   ],

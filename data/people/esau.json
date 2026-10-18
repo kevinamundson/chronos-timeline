@@ -44,7 +44,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 25:26 (Isaac 60 when the twins were born): 2108 + 60",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/25.htm#26",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -90,15 +90,15 @@
   ],
   "sources": [
     "jones-chronology-ot-2002",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-6",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/25.htm#25",
       "locator": "Gen.25.25-Gen.25.34 ; Gen.26.34 ; Gen.36.1-Gen.36.43"
     }
   ],

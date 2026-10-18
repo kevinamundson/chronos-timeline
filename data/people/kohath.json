@@ -100,14 +100,14 @@
     "Num.3.27"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "jordan-bc-6-6",
     "jordan-bc-6-7"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/46.htm#11",
       "locator": "Gen.46.11 ; Exod.6.16 ; Exod.6.18 ; Num.3.27"
     }
   ],

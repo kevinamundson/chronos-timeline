@@ -141,7 +141,7 @@
     "Deut.34.7"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jones-chronology-ot-2002",
     "jordan-bc-6-7",
@@ -152,8 +152,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/exodus/2.htm",
       "locator": "Exod.2.1-Exod.2.10 ; Exod.7.7"
     }
   ],

@@ -64,14 +64,14 @@
     "1Chr.1.8"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "jordan-bc-6-5",
     "josephus-antiquities-whiston"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/10.htm#6",
       "locator": "Gen.10.6 ; 1Chr.1.8"
     },
     {

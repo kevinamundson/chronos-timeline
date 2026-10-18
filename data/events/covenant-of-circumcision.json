@@ -69,7 +69,7 @@
     "Gen.17.1-Gen.17.27"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "cfah-1",
     "ussher-annals-1658",
     "jordan-bc-6-6",
@@ -77,8 +77,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/17.htm",
       "locator": "Gen.17.1-Gen.17.27"
     }
   ],

@@ -403,7 +403,8 @@
       "description": "Dates/durations stated explicitly in Scripture (relative dates such as \"in the six hundredth year of Noah's life, in the second month, the seventeenth day\"). The Bible is the infallible standard; this chronology records the text's own statements without conversion.",
       "year_conventions": "date holds the scriptural wording/paraphrase; year_am filled only when the verse itself fixes it relative to a stated life (otherwise null); year_bc_ad always null.",
       "references": [
-        "kjv-gutenberg"
+        "kjv-gutenberg",
+        "blb-biblehub"
       ],
       "anchors": []
     },
@@ -418,7 +419,8 @@
       "description": "Straight arithmetic on the Masoretic/KJV figures of Genesis 5 and 11 with no external calibration: each birth = father's birth + father's age at begetting; each death = birth + lifespan.",
       "year_conventions": "Anno Mundi counted as completed years from the creation of Adam (Adam created AM 0; Seth born AM 130 because \"Adam lived an hundred and thirty years, and begat... Seth\", Gen 5:3). The Flood falls in AM 1656 (Noah born AM 1056; Flood in his 600th year, Gen 7:6, 7:11). year_bc_ad is always null (the text gives no BC anchor).",
       "references": [
-        "kjv-gutenberg"
+        "kjv-gutenberg",
+        "blb-biblehub"
       ],
       "anchors": [
         {
@@ -428,7 +430,7 @@
           "year_am": 1656,
           "year_bc_ad": null,
           "citation": "Gen 5:3–29 (sum of begetting ages 130+105+90+70+65+162+65+187+182 = 1056) + Gen 7:6, 7:11",
-          "link": "https://www.gutenberg.org/ebooks/10"
+          "link": "https://biblehub.com/blb/genesis/5.htm#3"
         }
       ]
     },

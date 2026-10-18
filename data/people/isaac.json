@@ -46,7 +46,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 21:5 (Abraham 100 at Isaac's birth), taking Abraham's birth as AM 2008 (see abraham-birth)",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/21.htm#5",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -125,7 +125,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 35:28 (Isaac lived 180 years): 2108 + 180",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/35.htm#28",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -173,7 +173,7 @@
   ],
   "sources": [
     "jones-chronology-ot-2002",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-6",
     "raleigh-history-of-the-world-1617",
@@ -182,8 +182,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/17.htm#19",
       "locator": "Gen.17.19 ; Gen.21.1-Gen.21.8 ; Gen.22.1-Gen.22.19 ; Gen.25.19-Gen.25.26 ; Gen.35.28-Gen.35.29"
     },
     {

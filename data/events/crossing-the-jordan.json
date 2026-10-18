@@ -88,7 +88,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Josh 4:19",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/joshua/4.htm#19",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     }
@@ -110,14 +110,14 @@
     "jones-chart-4",
     "jordan-bc-3-8",
     "jordan-sbc-3",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/joshua/3.htm",
       "locator": "Josh.3.1-Josh.4.24 ; Josh.4.19 ; Josh.5.10-Josh.5.12"
     }
   ],

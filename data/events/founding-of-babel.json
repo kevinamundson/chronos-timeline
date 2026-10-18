@@ -43,7 +43,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Gen 10:8–10; Gen 11:1–9",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/10.htm#8",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     },
@@ -86,7 +86,7 @@
   "sources": [
     "cfah-2",
     "cfah-5",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "josephus-antiquities-whiston",
     "jordan-bc-6-4"

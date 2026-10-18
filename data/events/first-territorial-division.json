@@ -43,7 +43,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Gen 10:5, 10:25, 10:32",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/10.htm#5",
       "note": "Scripture gives no year for the division beyond Peleg's lifetime.",
       "source_text_id": "kjv-gutenberg"
     },
@@ -82,7 +82,7 @@
   ],
   "sources": [
     "cfah-4",
-    "kjv-gutenberg"
+    "blb-biblehub"
   ],
   "free_source_links": [
     {

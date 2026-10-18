@@ -5,6 +5,7 @@
 import { readFileSync, readdirSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { BOOKS as BLB_BOOKS, blbFromOsis, blbFromText } from '../scripts/blb.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..');
@@ -29,6 +30,9 @@ const byId = {};
 for (const r of [...events, ...people, ...locations, ...maps]) byId[r.id] = r;
 const chronById = Object.fromEntries(chronologies.map((c) => [c.id, c]));
 const sourceById = Object.fromEntries(sources.map((s) => [s.id, s]));
+// A source superseded for links (e.g. KJV/Gutenberg → BLB on BibleHub) is shown as its replacement wherever it is linked.
+const linkSrc = (id) => { const s = sourceById[id]; return s?.superseded_for_links_by ? sourceById[s.superseded_for_links_by] || s : s; };
+const uniqSrc = (ids) => [...new Map(ids.map(linkSrc).filter(Boolean).map((s) => [s.id, s])).values()];
 
 // ---------- helpers ----------
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -50,8 +54,8 @@ const yearLabel = (y, end) => {
 };
 const amLabel = (am, end) => (am == null ? null : end != null && end !== am ? `AM ${am}–${end}` : `AM ${am}`);
 
-// OSIS → readable + free KJV link
-const BOOKS = { Gen: 'Genesis', Exod: 'Exodus', Lev: 'Leviticus', Num: 'Numbers', Deut: 'Deuteronomy', Josh: 'Joshua', Judg: 'Judges', Ruth: 'Ruth', '1Sam': '1 Samuel', '2Sam': '2 Samuel', '1Kgs': '1 Kings', '2Kgs': '2 Kings', '1Chr': '1 Chronicles', '2Chr': '2 Chronicles', Ezra: 'Ezra', Neh: 'Nehemiah', Esth: 'Esther', Job: 'Job', Ps: 'Psalms', Prov: 'Proverbs', Eccl: 'Ecclesiastes', Song: 'Song of Solomon', Isa: 'Isaiah', Jer: 'Jeremiah', Lam: 'Lamentations', Ezek: 'Ezekiel', Dan: 'Daniel', Hos: 'Hosea', Joel: 'Joel', Amos: 'Amos', Obad: 'Obadiah', Jonah: 'Jonah', Mic: 'Micah', Nah: 'Nahum', Hab: 'Habakkuk', Zeph: 'Zephaniah', Hag: 'Haggai', Zech: 'Zechariah', Mal: 'Malachi', Matt: 'Matthew', Mark: 'Mark', Luke: 'Luke', John: 'John', Acts: 'Acts', Rom: 'Romans', '1Cor': '1 Corinthians', '2Cor': '2 Corinthians', Gal: 'Galatians', Eph: 'Ephesians', Phil: 'Philippians', Col: 'Colossians', '1Thess': '1 Thessalonians', '2Thess': '2 Thessalonians', '1Tim': '1 Timothy', '2Tim': '2 Timothy', Titus: 'Titus', Phlm: 'Philemon', Heb: 'Hebrews', Jas: 'James', '1Pet': '1 Peter', '2Pet': '2 Peter', '1John': '1 John', '2John': '2 John', '3John': '3 John', Jude: 'Jude', Rev: 'Revelation' };
+// OSIS → readable reference + Berean Literal Bible link (scripts/blb.mjs: first chapter/verse of the range)
+const BOOKS = Object.fromEntries(Object.entries(BLB_BOOKS).map(([k, v]) => [k, v[0]]));
 const osis = (ref) => {
   const [a, b] = ref.split('-');
   const pa = a.split('.');
@@ -65,8 +69,7 @@ const osis = (ref) => {
     }
     if (pb) text += pb.length === 1 && pa.length === 3 ? `–${pb[0]}` : `–${cv(pb)}`;
   }
-  const q = text.replace(/–/g, '-');
-  return { text, href: `https://www.biblegateway.com/passage/?search=${encodeURIComponent(q)}&version=KJV` };
+  return { text, href: blbFromOsis(ref) };
 };
 const scriptureList = (refs) => !refs?.length ? '' : `<ul class="chips">${refs.map((r) => { const o = osis(r); return `<li>${ext(o.href, esc(o.text))}</li>`; }).join('')}</ul>`;
 
@@ -134,7 +137,7 @@ function chronTable(entries, { sortYear, basis, caption }) {
 <th scope="row">${chronName(e)}</th>
 <td>${pending ? '<span class="muted">Not yet established</span>' : esc(e.date)}${e.precision && !pending ? `<div class="small muted">Precision: ${esc(e.precision)}</div>` : ''}</td>
 <td class="nowrap">${years || '<span class="muted">—</span>'}</td>
-<td>${e.citation ? ext(e.link, esc(e.citation)) : '<span class="muted">—</span>'}${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}${flags.length ? `<div class="flags">${flags.join(' ')}</div>` : ''}</td>
+<td>${e.citation ? ext(e.link || (['bible', 'masoretic-genealogy'].includes(e.source) ? blbFromText(e.citation) : null), esc(e.citation)) : '<span class="muted">—</span>'}${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}${flags.length ? `<div class="flags">${flags.join(' ')}</div>` : ''}</td>
 </tr>`;
   }).join('\n');
   return `<div class="table-wrap" role="region" aria-label="${esc(caption)}" tabindex="0"><table class="chron">
@@ -197,12 +200,12 @@ const chartSection = (id) => { const cs = chartsFor(id); return !cs.length ? '' 
 
 function sourcesSection(rec) {
   const fsl = rec.free_source_links || [];
-  const ids = (rec.sources || []).filter((id) => !fsl.some((l) => l.source_id === id));
+  const ids = uniqSrc(rec.sources || []).filter((s) => !fsl.some((l) => l.source_id === s.id));
   if (!fsl.length && !ids.length) return '';
   const li = (s, url, locator) => `<li>${ext(url || s?.url, esc(s?.title || 'Source'))}${locator ? ` <span class="muted">— ${esc(locator)}</span>` : ''}${s?.access ? ` <span class="tag">${esc(s.access)}</span>` : ''}</li>`;
   return `<section class="card"><h2>Free sources</h2><ul class="links">
 ${fsl.map((l) => li(sourceById[l.source_id], l.url, l.locator)).join('')}
-${ids.map((id) => li(sourceById[id], null, null)).join('')}</ul>
+${ids.map((s) => li(s, null, null)).join('')}</ul>
 <p class="small muted">Copyrighted works (CFAH papers, F. N. Jones) are linked, not reproduced.</p></section>`;
 }
 
@@ -500,9 +503,9 @@ ${sourcesSection(m)}</article>`;
 ${[...chronologies].sort((a, b) => a.sort_priority - b.sort_priority).map((c) => `<section class="card" id="${esc(c.id)}"><h2>${esc(c.name)}${c.primary ? ' <span class="tag tag-t1">primary</span>' : ''}</h2>
 ${c.authors?.length ? `<p class="muted">${esc(c.authors.join(', '))}</p>` : ''}<p>${esc(c.description)}</p>
 ${c.year_conventions ? `<p class="small muted">${esc(c.year_conventions)}</p>` : ''}
-${c.references?.length ? `<ul class="links">${c.references.map((id) => sourceById[id]).filter(Boolean).map((s) => `<li>${ext(s.url, esc(s.title))} <span class="tag">${esc(s.access)}</span></li>`).join('')}</ul>` : ''}
+${c.references?.length ? `<ul class="links">${uniqSrc(c.references).map((s) => `<li>${ext(s.url, esc(s.title))} <span class="tag">${esc(s.access)}</span></li>`).join('')}</ul>` : ''}
 ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) => `<li><span class="flag flag-oq">Open question</span> ${esc(q)}</li>`).join('')}</ul>` : ''}</section>`).join('')}
-<section class="card" id="sources"><h2>All free sources</h2><ul class="links">${sources.map((s) => `<li>${ext(s.url, esc(s.title))}${s.authors?.length ? ` <span class="muted">— ${esc(s.authors.join(', '))}${s.year ? `, ${esc(s.year)}` : ''}</span>` : ''} <span class="tag">${esc(s.access)}</span>${s.license_note ? `<div class="small muted">${esc(s.license_note)}</div>` : ''}</li>`).join('')}</ul></section>`;
+<section class="card" id="sources"><h2>All free sources</h2><ul class="links">${sources.map((s) => `<li>${s.superseded_for_links_by ? `${esc(s.title)} <span class="tag">provenance only; links use ${esc(sourceById[s.superseded_for_links_by]?.title || s.superseded_for_links_by)}</span>` : ext(s.url, esc(s.title))}${s.authors?.length ? ` <span class="muted">— ${esc(s.authors.join(', '))}${s.year ? `, ${esc(s.year)}` : ''}</span>` : ''} <span class="tag">${esc(s.access)}</span>${s.license_note ? `<div class="small muted">${esc(s.license_note)}</div>` : ''}</li>`).join('')}</ul></section>`;
   out('chronologies/index.html', page({ title: 'Chronologies', desc: 'Chronologies used and the CFAH-weighted sorting rule.', body, path: '/chronologies/', type: 'Chronology' }));
 }
 
@@ -528,7 +531,7 @@ out('about/index.html', page({ title: 'About', path: '/about/', pagefind: false,
 <li>Historic maps: ${ext('https://www.loc.gov/maps/', 'Library of Congress Geography and Map Division')}; thumbnails are loaded from tile.loc.gov.</li>
 <li>CFAH papers (© Answers in Genesis) and Floyd Nolen Jones materials are copyrighted: they are cited and linked, never reproduced.</li>
 <li>Software: vis-timeline (Apache-2.0/MIT), Leaflet (BSD-2-Clause), Pagefind (MIT).</li>
-<li>Scripture links open the KJV on BibleGateway.</li></ul></section>` }));
+<li>Scripture links open the Berean Literal Bible on BibleHub (chapter page, at the first verse of the reference).</li></ul></section>` }));
 
 // Search
 out('search/index.html', page({ title: 'Search', path: '/search/', pagefind: false,

@@ -42,7 +42,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "1 Kgs 6:1, 6:37–38; 1 Kgs 8:1–2, 8:62–66; 2 Chr 3:1–2; 2 Chr 5:3",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/1_kings/6.htm",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     },
@@ -133,7 +133,7 @@
   "sources": [
     "cfah-1",
     "jones-chart-1",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "josephus-antiquities-whiston",
     "annals-of-clonmacnoise-1896",
@@ -146,8 +146,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/1_kings/6.htm",
       "locator": "1 Kings 6–8"
     },
     {

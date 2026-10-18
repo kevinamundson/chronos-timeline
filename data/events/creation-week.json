@@ -56,7 +56,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Gen 1:1–2:3; Exod 20:11",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/1.htm",
       "note": "Scripture states the six-day duration; no absolute year.",
       "source_text_id": "kjv-gutenberg"
     },
@@ -100,7 +100,7 @@
       "year_bc_ad": null,
       "precision": "year",
       "citation": "Gen 1; Gen 5:1–3",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/1.htm",
       "note": "Epoch of the AM count by definition.",
       "source_text_id": "kjv-gutenberg"
     }
@@ -117,7 +117,7 @@
     "Exod.20.11"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "cfah-4",
     "cfah-1",
     "ussher-annals-1658",
@@ -127,8 +127,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/1.htm",
       "locator": "Genesis 1–2"
     },
     {

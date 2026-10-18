@@ -85,7 +85,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "1Sam 4:15, 4:18",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/1_samuel/4.htm#15",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     }
@@ -106,14 +106,14 @@
     "jones-chronology-ot-2002",
     "jordan-bc-3-8",
     "jordan-sbc-2",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/1_samuel/4.htm",
       "locator": "1Sam.4.1-1Sam.4.22 ; 1Sam.7.2"
     }
   ],

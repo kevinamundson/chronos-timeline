@@ -59,7 +59,7 @@
         "year_bc_ad": null,
         "precision": "conjectural",
         "citation": "Gen 11:24–26 vs Gen 11:32 + 12:4",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/11.htm#24",
         "note": "See abraham-birth.",
         "source_text_id": "kjv-gutenberg"
       },
@@ -160,7 +160,7 @@
   ],
   "sources": [
     "cfah-1",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jones-chronology-ot-2002",
     "jordan-bc-5-8",
@@ -169,8 +169,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/11.htm#26",
       "locator": "Gen.11.26-Gen.11.32 ; Gen.12.1-Gen.12.4"
     }
   ],

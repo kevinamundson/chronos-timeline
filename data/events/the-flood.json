@@ -56,7 +56,7 @@
       "year_bc_ad": null,
       "precision": "day",
       "citation": "Gen 7:6, 7:11; Gen 8:13–14",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/7.htm#6",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     },
@@ -111,7 +111,7 @@
       "year_bc_ad": null,
       "precision": "year",
       "citation": "Noah born AM 1056 (Gen 5:3–29 cumulative) + Gen 7:6, 7:11",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/5.htm#3",
       "note": "Methuselah (born AM 687, lived 969) dies AM 1656, the Flood year.",
       "source_text_id": "kjv-gutenberg"
     },
@@ -165,7 +165,7 @@
     "2Pet.2.5"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "cfah-4",
     "cfah-1",
     "ussher-annals-1658",
@@ -179,8 +179,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/6.htm",
       "locator": "Genesis 6–8"
     },
     {

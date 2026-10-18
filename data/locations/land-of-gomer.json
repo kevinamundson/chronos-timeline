@@ -5,8 +5,8 @@
   "title": "Gomer (land)",
   "location_type": "region",
   "summary": "Land of the people of Gomer (Ezek 38:6).",
-  "lat": 39.0,
-  "lng": 32.0,
+  "lat": 39,
+  "lng": 32,
   "coordinate_basis": "OpenBible.info first-ranked identification (Asia Minor (modern)); representative point 32.000000,39.000000 (lon,lat).",
   "certainty": {
     "level": "very-high",
@@ -22,7 +22,7 @@
   ],
   "sources": [
     "openbible-geo",
-    "kjv-gutenberg"
+    "blb-biblehub"
   ],
   "free_source_links": [
     {

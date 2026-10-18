@@ -111,14 +111,14 @@
     "Gen.9.22-Gen.9.24"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-4"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/5.htm#32",
       "locator": "Genesis 5:32; 9; 10; 11"
     }
   ],

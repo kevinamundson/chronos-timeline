@@ -5,8 +5,8 @@
   "title": "Kittim (Cyprus)",
   "location_type": "island",
   "summary": "Kittim / Chittim (Num 24:24; Dan 11:30).",
-  "lat": 35.0,
-  "lng": 33.0,
+  "lat": 35,
+  "lng": 33,
   "coordinate_basis": "OpenBible.info first-ranked identification (another name for Cyprus (ancient)); representative point 33.000000,35.000000 (lon,lat).",
   "certainty": {
     "level": "very-high",
@@ -23,7 +23,7 @@
   ],
   "sources": [
     "openbible-geo",
-    "kjv-gutenberg"
+    "blb-biblehub"
   ],
   "free_source_links": [
     {

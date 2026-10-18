@@ -55,7 +55,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Gen 41:46",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/41.htm#46",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     },
@@ -121,7 +121,7 @@
   "sources": [
     "cfah-6",
     "cfah-1",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "josephus-antiquities-whiston",
     "jordan-bc-6-6",

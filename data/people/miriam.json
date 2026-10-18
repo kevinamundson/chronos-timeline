@@ -98,14 +98,14 @@
     "Num.20.1"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-8"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/exodus/2.htm#4",
       "locator": "Exod.2.4-Exod.2.8 ; Exod.15.20-Exod.15.21 ; Num.12.1-Num.12.15 ; Num.20.1"
     }
   ],

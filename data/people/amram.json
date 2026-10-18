@@ -100,13 +100,13 @@
     "Num.26.58-Num.26.59"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "jordan-bc-6-7"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/exodus/6.htm#18",
       "locator": "Exod.6.18-Exod.6.20 ; Num.26.58-Num.26.59"
     }
   ],

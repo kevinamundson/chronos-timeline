@@ -87,7 +87,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Judg 11:26; Judg 12:7",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/judges/11.htm#26",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     }
@@ -105,14 +105,14 @@
     "jones-chart-4",
     "jordan-bc-3-8",
     "jordan-sbc-2",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/judges/11.htm",
       "locator": "Judg.11.1-Judg.12.7 ; Judg.11.26"
     }
   ],

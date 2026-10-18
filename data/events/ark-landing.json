@@ -42,7 +42,7 @@
       "year_bc_ad": null,
       "precision": "day",
       "citation": "Gen 7:11; Gen 8:4",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/7.htm#11",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     },
@@ -75,7 +75,7 @@
       "year_bc_ad": null,
       "precision": "year",
       "citation": "Gen 7:11; Gen 8:4 (same 600th year of Noah)",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/7.htm#11",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     }
@@ -97,15 +97,15 @@
     "Gen.8.1-Gen.8.5"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "openbible-geo",
     "jordan-bc-6-4"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/8.htm",
       "locator": "Genesis 8"
     },
     {

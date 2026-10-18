@@ -57,7 +57,7 @@
     "Exod.14.28"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "cfah-6"
   ],
   "free_source_links": [
@@ -67,8 +67,8 @@
       "locator": "Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #51; Argument 2 §D \"The Death of Merenre II is Synchronized with the Death of Concharis of D13\""
     },
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/exodus/14.htm#28",
       "locator": "Exod.14.28"
     }
   ],

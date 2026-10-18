@@ -55,7 +55,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 5 cumulative begetting ages (father jared begat at 162, Gen 5:18)",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/5.htm",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -121,7 +121,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 5: birth AM 622 + 365 years (Gen 5:24)",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/5.htm",
         "note": "Enoch did not die: \"he was not; for God took him\" (Gen 5:24; Heb 11:5).",
         "source_text_id": "kjv-gutenberg"
       },
@@ -167,15 +167,15 @@
     "Heb.11.5"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-4",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/5.htm",
       "locator": "Genesis 5"
     }
   ],

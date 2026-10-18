@@ -41,7 +41,7 @@
       "year_bc_ad": null,
       "precision": "year",
       "citation": "Gen 21:5, with Abraham born AM 2008",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/21.htm#5",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     },
@@ -103,7 +103,7 @@
   ],
   "sources": [
     "jones-chronology-ot-2002",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-6",
     "raleigh-history-of-the-world-1617",
@@ -111,8 +111,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/21.htm",
       "locator": "Gen.21.1-Gen.21.7"
     }
   ],

@@ -86,7 +86,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Judg 10:8; Judg 13:1",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/judges/10.htm#8",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     }
@@ -107,14 +107,14 @@
     "jones-chart-4",
     "jordan-bc-3-8",
     "jordan-sbc-2",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/judges/10.htm#6",
       "locator": "Judg.10.6-Judg.10.18 ; Judg.13.1"
     }
   ],

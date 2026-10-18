@@ -90,7 +90,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Judg 8:28",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/judges/8.htm#28",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     }
@@ -108,14 +108,14 @@
     "jones-chart-4",
     "jordan-bc-3-8",
     "jordan-sbc-2",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/judges/6.htm#11",
       "locator": "Judg.6.11-Judg.8.28"
     }
   ],

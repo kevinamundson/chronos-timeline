@@ -113,7 +113,7 @@
     "Exod.6.16"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "jones-chronology-ot-2002",
     "ussher-annals-1658",
     "jordan-bc-6-6",
@@ -121,8 +121,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/29.htm#34",
       "locator": "Gen.29.34 ; Gen.34.25-Gen.34.31 ; Gen.46.11 ; Exod.6.16"
     }
   ],

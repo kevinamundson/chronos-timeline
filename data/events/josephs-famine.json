@@ -75,7 +75,7 @@
     "Gen.47.13-Gen.47.26"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "cfah-6",
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi"
@@ -87,8 +87,8 @@
       "locator": "Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #58; Argument 4 §8 \"Joseph's Famine 1708–1701, Senusret I Year 25 Low Nile, Unas Famine\""
     },
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/41.htm#53",
       "locator": "Gen.41.53-Gen.41.57 ; Gen.45.6 ; Gen.47.13-Gen.47.26"
     }
   ],

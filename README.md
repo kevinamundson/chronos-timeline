@@ -14,7 +14,8 @@ data/
   chronologies.json     sorting_rule + cfah (primary), ussher-jones, ussher, jordan (secondary), bible,
                         masoretic-genealogy, josephus, annals-of-clonmacnoise,
                         raleigh-history-of-the-world
-  sources.json          free texts with verified URLs (KJV, Ussher 1658, Josephus/Whiston,
+  sources.json          free texts with verified URLs (Berean Literal Bible on BibleHub for all
+                        Scripture links; KJV kept for provenance only; Ussher 1658, Josephus/Whiston,
                         Clonmacnoise 1896, Raleigh 1736, OpenBible geo, CFAH papers,
                         F. N. Jones Chart 1 + Chronology of the OT 15th ed.,
                         J. B. Jordan Biblical Chronology issues: biblicalhorizons.com / garynorth.com)
@@ -82,7 +83,7 @@ search built at build time. No server, database, CMS or paid service. Vendor JS/
 - `/`: timeline (events + people by birth, sorted by `sorting_year`, coloured by sort tier), map of places with coordinates
   (marker colour = OpenBible certainty; places with null coordinates are listed as "not mapped"), and an ordered text list of events
   (the keyboard and screen-reader alternative to the timeline).
-- `/events/<id>/`, `/people/<id>/`, `/locations/<id>/`, `/maps/<id>/`: description, Scripture refs (KJV links), the chronologies
+- `/events/<id>/`, `/people/<id>/`, `/locations/<id>/`, `/maps/<id>/`: description, Scripture refs (Berean Literal Bible links), the chronologies
   table (CFAH anchor point → CFAH-1 Table 1 → Ussher–Jones → Ussher → Jordan → Bible → MT arithmetic → Josephus → Raleigh → Clonmacnoise), the sort
   year with its tier label and note, the row that sets the sort highlighted, "differs from sort year" badges, a *Disagreements & open questions*
   panel (generated only from figures already in the data, plus `open_questions`), OpenBible links (CC BY 4.0 credit), LoC map thumbnails
@@ -135,7 +136,15 @@ a subdomain of an existing domain is free).
 - OpenBible.info geodata is CC BY 4.0, credited in the map attribution, footer, About page and every place page.
 - LoC thumbnails are hot-linked from `tile.loc.gov` (free to use and reuse, per each map record's `license_note`).
 - CFAH papers and F. N. Jones materials are cited and linked, never copied.
-- Scripture references link to the KJV on BibleGateway (free, verse-level). The data's KJV source (Project Gutenberg) has no verse anchors.
+- **Scripture links use the Berean Literal Bible (BLB) on BibleHub only** (source `blb-biblehub`; the BLB is public domain since
+  30 April 2023). Pattern: `https://biblehub.com/blb/<slug>/<chapter>.htm`, plus `#<verse>` for a verse; the BLB chapter pages carry verse
+  anchors, and BibleHub has no BLB-only verse page (`/blb/genesis/5-3.htm` is 404; `/genesis/5-3.htm` is a parallel page of many versions).
+  A range links its first chapter/verse and the full reference text is kept. Slugs follow BibleHub (`1_kings`, `songs` for Song of
+  Solomon, `psalms`, `1_john`); all 66 were checked live. `scripts/blb.mjs` builds every link (OSIS `scripture_refs` on pages, citations in
+  chronology rows, `free_source_links`); `scripts/validate.mjs` rejects any other Scripture link (KJV/Gutenberg, BibleGateway, other
+  BibleHub versions, etc.) and any BLB link with an unknown book or chapter. `scripts/blb-migrate.mjs` is the one-off, idempotent rewrite of
+  existing data. The KJV (Project Gutenberg #10) stays in `sources.json` marked `superseded_for_links_by: blb-biblehub`. It is kept only
+  as provenance (`source_text_id`), because the Genesis 5/11 figures were first read from its full-text download.
 
 ## License
 
@@ -152,5 +161,5 @@ a subdomain of an existing domain is free).
   - **CFAH papers** (Griffith & White, *Answers Research Journal*, © Answers in Genesis) and **Floyd Nolen Jones** materials are not
     reproduced. Records cite them by paper and section, with only short quotations of dates and section headings, and link to the free
     originals. They are **not** covered by this repository's licences.
-  - Public-domain texts (KJV, Ussher 1658, Whiston's Josephus, Clonmacnoise 1896, Raleigh 1736) are linked to free copies.
+  - Public-domain texts (BLB on BibleHub for Scripture; Ussher 1658, Whiston's Josephus, Clonmacnoise 1896, Raleigh 1736) are linked to free copies.
 - Bundled libraries in the built site keep their licences: vis-timeline (Apache-2.0/MIT), Leaflet (BSD-2-Clause), Pagefind (MIT).

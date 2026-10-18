@@ -90,7 +90,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Josh 14:7-10",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/joshua/14.htm#7",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     }
@@ -110,14 +110,14 @@
     "jones-chart-4",
     "jordan-bc-3-8",
     "jordan-sbc-2",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/joshua/14.htm#6",
       "locator": "Josh.14.6-Josh.14.15 ; Josh.18.1-Josh.19.51 ; Josh.21.43-Josh.21.45"
     }
   ],

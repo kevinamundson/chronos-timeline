@@ -54,7 +54,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 5 cumulative begetting ages (father adam begat at 130, Gen 5:3)",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/5.htm",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -120,7 +120,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 5: birth AM 130 + 912 years (Gen 5:8)",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/5.htm",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -164,15 +164,15 @@
     "Gen.5.8"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-4",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/5.htm",
       "locator": "Genesis 5"
     }
   ],

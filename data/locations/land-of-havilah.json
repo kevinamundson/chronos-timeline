@@ -5,8 +5,8 @@
   "title": "Havilah (Gen 25:18)",
   "location_type": "region",
   "summary": "Havilah, eastern limit of the Ishmaelites (Gen 25:18).",
-  "lat": 23.0,
-  "lng": 46.0,
+  "lat": 23,
+  "lng": 46,
   "coordinate_basis": "OpenBible.info first-ranked identification (in Arabia 1 (ancient)); representative point 46.000000,23.000000 (lon,lat).",
   "certainty": {
     "level": "medium",
@@ -22,7 +22,7 @@
   ],
   "sources": [
     "openbible-geo",
-    "kjv-gutenberg"
+    "blb-biblehub"
   ],
   "free_source_links": [
     {

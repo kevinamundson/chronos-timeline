@@ -73,15 +73,15 @@
     "Exod.20.1-Exod.20.21"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "jones-chronology-ot-2002",
     "ussher-annals-1658",
     "jordan-bc-6-8"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/exodus/19.htm",
       "locator": "Exod.19.1-Exod.19.25 ; Exod.20.1-Exod.20.21"
     }
   ],

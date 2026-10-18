@@ -103,7 +103,7 @@
   ],
   "sources": [
     "cfah-2",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "josephus-antiquities-whiston",
     "jordan-bc-6-4",
@@ -112,8 +112,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/10.htm#8",
       "locator": "Gen.10.8-Gen.10.12 ; 1Chr.1.10"
     }
   ],

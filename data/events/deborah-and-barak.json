@@ -89,7 +89,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Judg 5:31",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/judges/5.htm#31",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     }
@@ -106,14 +106,14 @@
     "jones-chart-4",
     "jordan-bc-3-8",
     "jordan-sbc-2",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/judges/4.htm#4",
       "locator": "Judg.4.4-Judg.5.31"
     }
   ],

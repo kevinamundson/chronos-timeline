@@ -40,7 +40,7 @@
       "year_bc_ad": null,
       "precision": "unknown",
       "citation": "Gen 5:23–24; Heb 11:5",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/5.htm#23",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     },
@@ -84,7 +84,7 @@
       "year_bc_ad": null,
       "precision": "year",
       "citation": "Enoch born AM 622 (Gen 5:3–18 cumulative) + 365 (Gen 5:23)",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/5.htm#3",
       "note": null,
       "source_text_id": "kjv-gutenberg"
     }
@@ -100,15 +100,15 @@
     "Jude.1.14"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-4",
     "jordan-compilation-anno-mundi"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/5.htm",
       "locator": "Genesis 5"
     },
     {

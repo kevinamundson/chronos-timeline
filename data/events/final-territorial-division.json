@@ -54,7 +54,7 @@
       "year_bc_ad": null,
       "precision": "year-range",
       "citation": "Gen 10:25; Gen 11:10–19",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/10.htm#25",
       "note": "\"In his days\" - Scripture does not fix the year within Peleg's life.",
       "year_am_end": 1996,
       "source_text_id": "kjv-gutenberg"
@@ -88,7 +88,7 @@
       "year_bc_ad": null,
       "precision": "year-range",
       "citation": "Gen 11:10–19 (Arphaxad AM 1658 + 35 + 30 + 34 = 1757; Peleg lived 30 + 209 = 239 years)",
-      "link": "https://www.gutenberg.org/ebooks/10",
+      "link": "https://biblehub.com/blb/genesis/11.htm#10",
       "note": null,
       "year_am_end": 1996,
       "source_text_id": "kjv-gutenberg"
@@ -108,7 +108,7 @@
   "sources": [
     "cfah-4",
     "cfah-1",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-5-8",
     "jordan-bc-6-4"
@@ -120,8 +120,8 @@
       "locator": "AP-28"
     },
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/10.htm",
       "locator": "Genesis 10–11"
     },
     {

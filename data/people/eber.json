@@ -58,7 +58,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "Gen 11:10–26 (Arphaxad AM 1658 = Shem's 100th year, two years after the Flood of AM 1656; each later birth adds the father's age at the named son)",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/11.htm#10",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -135,7 +135,7 @@
         "year_bc_ad": null,
         "precision": "year",
         "citation": "1723 + 464 = 2187 (lifespan from Gen 11:14–11:17)",
-        "link": "https://www.gutenberg.org/ebooks/10",
+        "link": "https://biblehub.com/blb/genesis/11.htm#14",
         "note": null,
         "source_text_id": "kjv-gutenberg"
       },
@@ -183,7 +183,7 @@
   ],
   "sources": [
     "jones-chronology-ot-2002",
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-4",
     "josephus-antiquities-whiston",
@@ -191,8 +191,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/10.htm#21",
       "locator": "Gen.10.21 ; Gen.10.24-Gen.10.25 ; Gen.11.14-Gen.11.17 ; 1Chr.1.18-1Chr.1.19 ; Luke.3.35"
     },
     {

@@ -27,7 +27,8 @@
         "access": { "enum": ["public-domain", "open-license", "free-to-read", "private-copy"], "description": "private-copy = the owner's own file, not publicly available (link works only for the owner)." },
         "license_note": { "type": "string" },
         "verified_on": { "type": "string", "format": "date" },
-        "note": { "type": "string" }
+        "note": { "type": "string" },
+        "superseded_for_links_by": { "$ref": "common.schema.json#/$defs/slug", "description": "Another source now used for all links to this text; this entry is kept only for provenance." }
       }
     }
   }

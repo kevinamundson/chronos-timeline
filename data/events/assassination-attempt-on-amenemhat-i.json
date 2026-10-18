@@ -69,7 +69,7 @@
     "Gen.41.1"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "cfah-6",
     "jordan-bc-6-6"
   ],
@@ -80,8 +80,8 @@
       "locator": "Argument 2, Table 1 \"Anchor Points for early Egyptian history\" #60; Argument 4 §6 \"Assassination Attempt: Baker and Butler on Trial 1718 BC\""
     },
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/40.htm",
       "locator": "Gen.40.1-Gen.40.23 ; Gen.41.1"
     }
   ],

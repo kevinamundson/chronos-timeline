@@ -111,15 +111,15 @@
     "Num.33.38-Num.33.39"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-7",
     "jordan-bc-6-8"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/exodus/4.htm#14",
       "locator": "Exod.4.14 ; Exod.6.20 ; Exod.7.7 ; Num.20.22-Num.20.29 ; Num.33.38-Num.33.39"
     }
   ],

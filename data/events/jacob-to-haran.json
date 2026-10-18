@@ -82,7 +82,7 @@
     "Gen.28.1-Gen.28.22"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "jones-chronology-ot-2002",
     "ussher-annals-1658",
     "jordan-bc-6-6",
@@ -90,8 +90,8 @@
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/27.htm#41",
       "locator": "Gen.27.41-Gen.27.46 ; Gen.28.1-Gen.28.22"
     }
   ],

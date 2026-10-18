@@ -66,15 +66,15 @@
     "Gen.49.8-Gen.49.12"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "jones-chronology-ot-2002",
     "ussher-annals-1658",
     "jordan-bc-6-6"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/29.htm#35",
       "locator": "Gen.29.35 ; Gen.38.1-Gen.38.30 ; Gen.49.8-Gen.49.12"
     }
   ],

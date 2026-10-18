@@ -64,13 +64,13 @@
     "1Chr.1.7"
   ],
   "sources": [
-    "kjv-gutenberg",
+    "blb-biblehub",
     "jordan-bc-6-5"
   ],
   "free_source_links": [
     {
-      "source_id": "kjv-gutenberg",
-      "url": "https://www.gutenberg.org/ebooks/10",
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/10.htm#4",
       "locator": "Gen.10.4 ; 1Chr.1.7"
     },
     {
