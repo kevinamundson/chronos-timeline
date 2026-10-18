@@ -21,4 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 Note: this MIT licence covers the code only. Data in data/ and docs/ is CC BY 4.0;
-third-party sources keep their own terms (see README "License").
+third-party sources keep their own terms (see README "License"). The texts in
+sources/jordan/ (and Jordan excerpts in data/jordan-dates-extract.md) are
+© James B. Jordan, included with the repository owner's stated permission, and
+are NOT licensed under MIT or CC BY 4.0.

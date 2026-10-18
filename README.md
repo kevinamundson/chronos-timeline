@@ -18,7 +18,7 @@ data/
                         Clonmacnoise 1896, Raleigh 1736, OpenBible geo, CFAH papers,
                         F. N. Jones Chart 1 + Chronology of the OT 15th ed.,
                         J. B. Jordan Biblical Chronology issues: biblicalhorizons.com / garynorth.com)
-  jordan-dates-extract.md  backlog: Jordan's dates by event + per-issue index of date figures, with URLs
+  jordan-dates-extract.md  backlog: Jordan's dates by event + every dated statement by issue, with URLs
   events/*.json         15: Creation → Ark landing, plus the CFAH anchors (divisions, Babel,
                         Dispersion, Abraham, Joseph, Exodus, Temple)
   people/*.json         19: Adam → Noah's sons, Peleg, Nimrod, Abraham, Joseph, Moses, Solomon
@@ -26,6 +26,9 @@ data/
                         Mount Moriah, Red Sea crossing (uncertain)
   maps/*.json           6: OpenBible Genesis KML + 5 Library of Congress historic maps
                         (thumbnail, IIIF Image API info.json, LoC manifest URL)
+sources/
+  jordan/               full texts of James B. Jordan, Biblical Chronology (93 issues, 1989-1997), one Markdown
+                        file per issue + README index; © James B. Jordan, included with the owner's stated permission
 docs/
   cfah-anchors.md       proposed CFAH anchor events with exact paper citations
   open-questions.md
@@ -54,7 +57,7 @@ site/                   static website (MVP); data/ stays the single source of t
   4. `ussher`: Ussher's *Annals*
 
   Events take this from `chronologies[]` and people from `dates.birth[]`. `sorting_basis` records `{tier, tier_rank, chronology, note}`.
-- **Secondary display chronologies**: `jordan` (James B. Jordan, *Biblical Chronology* newsletter, 1989-1997), `bible`, `masoretic-genealogy`, `josephus`, Clonmacnoise and Raleigh are shown next to the sort tiers but never set `sorting_year`; the validator rejects any `sorting_basis` that points at `jordan`. Jordan's B.C. years are his "SBC" (strictest Biblical chronology), which runs about 74-75 years later than Ussher's (Creation 3930 B.C.), while his Anno Mundi figures mostly match Ussher's. `data/jordan-dates-extract.md` is the backlog: a curated table of Jordan's dates by event, plus a per-issue index of every date figure (a few words of context each, with the article URL; no full-text excerpts).
+- **Secondary display chronologies**: `jordan` (James B. Jordan, *Biblical Chronology* newsletter, 1989-1997), `bible`, `masoretic-genealogy`, `josephus`, Clonmacnoise and Raleigh are shown next to the sort tiers but never set `sorting_year`; the validator rejects any `sorting_basis` that points at `jordan`. Jordan's B.C. years are his "SBC" (strictest Biblical chronology), which runs about 74-75 years later than Ussher's (Creation 3930 B.C.), while his Anno Mundi figures mostly match Ussher's. `data/jordan-dates-extract.md` lists every dated statement in the two Jordan sources as a backlog. The full texts of the 93 issues read are in `sources/jordan/`.
   If no tier gives a year, an event uses `tier: "derived"`, copying `sorting_year` from the record named in `derived_from`, and a person uses `tier: "none"` with `sorting_year: null`.
   `sort_order_within_year` breaks ties.
 - **Scripture refs** use OSIS style (`Gen.5.3`, `Gen.1.1-Gen.2.3`).
@@ -136,8 +139,11 @@ a subdomain of an existing domain is free).
   - Place identifications and coordinates from [OpenBible.info](https://www.openbible.info/geo/), CC BY 4.0.
   - Historic maps are linked from the [Library of Congress](https://www.loc.gov/maps/), "free to use and reuse" per each item's rights statement.
   - Map tiles © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (ODbL).
-  - Dates and short quotations from copyrighted works are cited for reference under fair use. These works are the CFAH papers
-    (Griffith & White, © Answers in Genesis), Floyd Nolen Jones, and James B. Jordan's *Biblical Chronology*. The works themselves are linked,
-    not reproduced, and are **not** covered by this repository's licences.
+  - **James B. Jordan, *Biblical Chronology* (1989–1997):** the full texts in `sources/jordan/` (and the excerpts in
+    `data/jordan-dates-extract.md`) are included with the repository owner's stated permission. They remain **© James B. Jordan** and
+    are **not** covered by this repository's MIT or CC BY 4.0 licences. Do not reuse them without the copyright holder's permission.
+  - **CFAH papers** (Griffith & White, *Answers Research Journal*, © Answers in Genesis) and **Floyd Nolen Jones** materials are not
+    reproduced. Records cite them by paper and section, with only short quotations of dates and section headings, and link to the free
+    originals. They are **not** covered by this repository's licences.
   - Public-domain texts (KJV, Ussher 1658, Whiston's Josephus, Clonmacnoise 1896, Raleigh 1736) are linked to free copies.
 - Bundled libraries in the built site keep their licences: vis-timeline (Apache-2.0/MIT), Leaflet (BSD-2-Clause), Pagefind (MIT).
