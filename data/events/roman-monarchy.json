@@ -34,6 +34,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=34",
       "source_text_id": "generations-europe",
       "note": null
+    },
+    {
+      "source": "generations",
+      "date": "753 BC to 509 BC",
+      "year_am": null,
+      "year_bc_ad": -753,
+      "year_bc_ad_end": -509,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 463 (printed p. 462)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=463",
+      "source_text_id": "generations-preparing",
+      "note": "Seven kings (244 years); p. 467 says the monarchy continued \"from 750 BC until 509 BC\"."
     }
   ],
   "people": [],
@@ -41,7 +53,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-preparing"
   ],
   "related": [],
   "free_source_links": [
@@ -49,6 +62,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
     }
   ]
 }

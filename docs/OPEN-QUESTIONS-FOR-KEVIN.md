@@ -114,6 +114,16 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
 - **Ancient records sorted this way (please check):**
   - **Mizraim** had no tier 1–4 birth year. He now sorts at Generations' "around 2478 BC" (Africa, PDF p. 19).
   - **The Great Pyramid** (new record) sorts at Generations' ~2258 BC. CFAH mentions Khufu (~1921 BC) only in a note, not as a tier date.
+  - **New biblical events from Preparing the World for Jesus** sort on that book's long chronology until a tier 1–4 date is added, so several sit earlier than their Ussher-sorted neighbours:
+    - Destruction of Sodom c. 2066 BC (Ussher about 1897)
+    - Joseph sold into Egypt 1930 BC (Ussher 1728)
+    - Nimrod builds Nineveh c. 2418 BC
+    - Mizraim settles Egypt c. 2450 BC
+    - Forty years in the wilderness 1446–1406 BC
+    - Fall of Jericho c. 1400 BC
+    - Shamgar, Samson and Samuel as judges, about 18 years later than Ussher–Jones
+
+    **Recommended fix:** add Ussher (tier 4) entries for these events from the Annals, which cover all of them. They would then sort by tier and Generations would stay secondary. Not done in this pass. The Timeline Reviews also print an asterisked Ussher-equivalent year for some events (Sodom "2066/1896*", Joseph "1930/1760*"); these are kept in the notes but are not used for sorting.
 - **Options:**
   1. Keep the provisional tier as implemented. **(Recommended.)**
   2. Exclude Generations-only records from the timelines: a null `sorting_year`, which needs a schema change, and the records show only as pages.
@@ -167,6 +177,47 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   - Punic Wars "246 BC". The conventional start is 264 BC, so this may be a transposition.
   - Mackay "April 1875" printed before the November 1875 appeal.
   - Thutmose I "between 1493 and 1506 BC", printed in reverse order.
+- **Preparing the World for Jesus: the book's own chronology.** This book does not follow Ussher. It dates Creation to "around 4174 BC" (p. 16) and the Flood to "about the year 2518 BC" (p. 29). End note 1 (p. 526) explains why: 60 years between Terah's firstborn and Abraham, a full 400 years in Egypt, and Solomon's death in 931 BC. Its "Timeline Review" pages print pairs such as "2518/2348* bc", where the asterisked year is the Ussher equivalent. We record the book's own year and keep the asterisked year in the note. As a result, every date from Creation to Joseph runs **170 years earlier than the sort**, and every date from Moses to the Conquest runs **about 45 years later**. All of these are flagged as conflicts in the extract, and none of them changes the sort. The main ones:
+  - Creation c. 4174 BC (sort 4004)
+  - Flood c. 2518 BC (sort 2348)
+  - Noah born 3118 and died 2168 BC (Ussher 2948 and 1998)
+  - Tower of Babel c. 2418 BC (CFAH founding of Babel 2234)
+  - Abraham born 2166 BC (sort 1996)
+  - Abram enters Egypt 2076 BC (sort 1921)
+  - Joseph born c. 1911 and died c. 1801 BC (Ussher–Jones 1745 and 1635)
+  - Moses born c. 1526 BC (sort 1571)
+  - Exodus c. 1446 BC (sort 1491)
+  - Jordan crossed in 1406 BC (sort 1450)
+- **Preparing vs CFAH's Mesopotamian dates.** The book uses the conventional (secular) dates, while CFAH uses its revised chronology. The gaps are very large:
+  - Sargon of Akkad c. 2334 BC (CFAH anchor 1619 BC)
+  - End of Akkad 2147 BC (CFAH 1477)
+  - Hammurabi reigned 1792–1750 BC (CFAH death 989 BC)
+  - Shamshi-Adad I 1813–1791 BC (CFAH 1841)
+  
+  These are kept as secondary entries. **Question:** do you want a site-wide note explaining that Generations uses the conventional Near Eastern chronology here?
+- **Preparing's judges table (p. 192)** runs 18 years later than Ussher–Jones from Othniel to Jair. Jephthah, Ibzan, Elon and Abdon agree exactly, and so does Saul's accession (1095 BC).
+- **Inconsistencies inside Preparing (kept as printed, flagged on the record):**
+  - The Fall of Samaria is 722 BC (p. 204) and 721 BC (p. 305).
+  - Tutankhamun dies in 1325 BC (p. 128) and 1323 BC (p. 298).
+  - Alexander destroys Tyre in 332 BC (Timeline Review, p. 238) and 314 BC (p. 478).
+  - The Elamite raid on Babylon is c. 1150 BC (p. 106) and 1160 BC (p. 388).
+  - The Zhou dynasty is 1027–249 BC (p. 262), but p. 50 gives "1046 through 206 BC" for Zhou and Qin together.
+  - Caesar crosses the Rubicon on 10 January 49 BC (p. 491), but the Timeline Review (p. 506) says 50 BC.
+  - The Peloponnesian War is 431–404 BC (p. 421), but the Timeline Review (p. 434) says it began in 433.
+  - In the p. 166 and p. 238 Timeline Reviews, Moses and the Exodus are printed as "1571/1526*" and "1491/1446*" (or "1440*"). The order is reversed: the asterisked year is the book's own.
+- **Timeline Review misprints that were not imported** (listed in the extract's skipped items):
+  - "Sargon I Rules 2100/2164* bc" (p. 114)
+  - "Gospel Reaches Ireland 432 bc" (p. 66; AD 432 is meant)
+  - "Phillip II of Macedon Takes Throne 466 bc" and "Alexander II of Macedon Takes Throne 336 bc" (p. 434; the text has 359 BC and Alexander III)
+  - "Hannah Gives Birth to Samuel 950 bc" and "Jochebed Gives Birth to Moses 1440 bc" (p. 456). The Moses entry is mentioned in the note on Moses' birth.
+- **Preparing vs the other Generations books:**
+  - Carthage founded in 1215 BC (Preparing) or 800–900 BC (Africa)
+  - Qin empire begins in 231 BC (Preparing) or 221 BC (World)
+  - Assyria takes Egypt c. 674 BC (Preparing) or c. 650 BC (Africa); Preparing also has 650 BC
+  - Alexander takes Egypt in 332 BC (Preparing) or 330 BC (Africa)
+  - Muslims take Egypt in AD 642 (Preparing) or 641 (Africa)
+  - The Exodus c. 1446 BC (Preparing) or 1400 BC (Africa)
+- **Not yet imported:** the divided-kingdom king tables on pp. 209–210 (approximate reign dates for the kings of Israel and Judah from 975 BC). **Question:** import them as about 39 reign records sorting provisionally, or leave the kings to a CFAH/Ussher pass? Recommendation: leave them to Ussher. Ussher covers every king, so the Generations dates would only be secondary entries.
 
 ## B. Questions that change what is shown
 

@@ -46,6 +46,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=35",
       "source_text_id": "generations-europe",
       "note": "First Punic War. Taking Africa for Jesus prints the start as 246 BC."
+    },
+    {
+      "source": "generations",
+      "date": "270-146 bc",
+      "year_am": null,
+      "year_bc_ad": -270,
+      "year_bc_ad_end": -146,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 473 (printed p. 472)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=473",
+      "source_text_id": "generations-preparing",
+      "note": "Heading \"Carthage and the Punic Wars\"; Timeline Review (p. 506): \"First Punic War 260 bc\"."
     }
   ],
   "people": [],
@@ -54,7 +66,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-europe"
+    "generations-europe",
+    "generations-preparing"
   ],
   "related": [],
   "free_source_links": [
@@ -67,6 +80,11 @@
       "source_id": "generations-europe",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf",
       "locator": "Taking Europe for Jesus"
+    },
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
     }
   ]
 }

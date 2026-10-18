@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "urukagina-law-code",
+  "type": "event",
+  "title": "Law code of Urukagina of Lagash",
+  "summary": "Law code of Urukagina of Lagash",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -2360,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 93): around 2360 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "around 2360 BC",
+      "year_am": null,
+      "year_bc_ad": -2360,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus, ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 93 (printed p. 92)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=93",
+      "source_text_id": "generations-preparing",
+      "note": "Fragments of the first known civil law code. Timeline Review (pp. 78, 114) prints \"2350/2180* bc\"."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

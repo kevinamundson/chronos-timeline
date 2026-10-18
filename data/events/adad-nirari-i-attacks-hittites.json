@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "adad-nirari-i-attacks-hittites",
+  "type": "event",
+  "title": "Adad-Nirari I attacks the Hittite-Mitanni lands",
+  "summary": "Adad-Nirari I attacks the Hittite-Mitanni lands",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -1297,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 302): 1297 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "1297 BC",
+      "year_am": null,
+      "year_bc_ad": -1297,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 302 (printed p. 301)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=302",
+      "source_text_id": "generations-preparing",
+      "note": "After Egypt weakened the Hittites in 1297 BC; Adad-Nirari reigned roughly 1295-1264 BC. Timeline Review (p. 324): \"1297 bc\"."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

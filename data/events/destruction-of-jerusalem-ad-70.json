@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "destruction-of-jerusalem-ad-70",
+  "type": "event",
+  "title": "Romans destroy Jerusalem and the temple",
+  "summary": "Romans destroy Jerusalem and the temple",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": 70,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 514): AD 70. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "AD 70",
+      "year_am": null,
+      "year_bc_ad": 70,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 16 \"Preparing the World for Jesus: Jerusalem (73 BC – AD 33)\", PDF p. 514 (printed p. 513)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=514",
+      "source_text_id": "generations-preparing",
+      "note": "Also pp. 172, 516 and the Timeline Review (p. 524)."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

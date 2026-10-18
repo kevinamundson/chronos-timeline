@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "nebuchadnezzar-ii",
+  "type": "person",
+  "title": "Nebuchadnezzar II",
+  "summary": "King of Babylon who destroyed Jerusalem and the temple.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "562 BC",
+        "year_am": null,
+        "year_bc_ad": -562,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 11 \"Babylon Has Fallen (626–539 BC)\", PDF p. 343 (printed p. 342)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=343",
+        "source_text_id": "generations-preparing",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "battle-of-carchemish",
+    "daniel-taken-to-babylon",
+    "fall-of-jerusalem-586-bc",
+    "neo-babylonian-empire",
+    "second-siege-of-jerusalem"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": []
+}

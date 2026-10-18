@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "philip-ii-of-macedon",
+  "type": "person",
+  "title": "Philip II of Macedon",
+  "summary": "King of Macedon, father of Alexander the Great.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": -382,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 424): 382-336 BC. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "382-336 BC",
+        "year_am": null,
+        "year_bc_ad": -382,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 424 (printed p. 423)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=424",
+        "source_text_id": "generations-preparing",
+        "note": "Caption (\"c. 382-336 BC\")."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "336 BC",
+        "year_am": null,
+        "year_bc_ad": -336,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 423 (printed p. 422)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=423",
+        "source_text_id": "generations-preparing",
+        "note": null
+      }
+    ]
+  },
+  "events": [
+    "reign-of-philip-ii"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": []
+}

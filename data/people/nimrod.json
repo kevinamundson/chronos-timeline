@@ -8,12 +8,12 @@
   ],
   "summary": "Son of Cush; \"a mighty hunter before the LORD\"; \"the beginning of his kingdom was Babel\" (Gen 10:8–10).",
   "description": "Father Cush (not yet a record). CFAH-2 (\"The Founding of the Nations\", introduction and Duration 6) identifies Nimrod with Ninus, founder of Assyria after the Dispersion, and later papers equate him with Enmerkar of Uruk and Atothis I of Egypt (CFAH-5/6). Josephus, Antiquities I.4.2 makes Nimrod the instigator of the tower.",
-  "sorting_year": null,
+  "sorting_year": -2448,
   "sorting_basis": {
-    "tier": "none",
+    "tier": "provisional",
     "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier 1-4 dates Nimrod's birth; unsorted (null)."
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 68): around 2448 BC. Pending owner decision (open question A8)."
   },
   "father": "cush",
   "children": [],
@@ -59,6 +59,17 @@
         "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
         "source_text_id": "jordan-bc-6-4",
         "note": "Pentateuch Part 3 (BC 6:5) §8 \"The Table of Nations\" lists Nimrod twice with question marks: \"1698 - ... Nimrod ben Cush (?)\" and \"1759 - Joktan ben Eber Nimrod ben ... Cush (?)\" (Nimrod as son vs. later descendant of Cush)."
+      },
+      {
+        "source": "generations",
+        "date": "around 2448 BC",
+        "year_am": null,
+        "year_bc_ad": -2448,
+        "precision": "approximate",
+        "citation": "Preparing the World for Jesus, ch. 3 \"Babel and the Futility of the Kingdoms of Men\", PDF p. 68 (printed p. 67)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=68",
+        "source_text_id": "generations-preparing",
+        "note": "Estimated about seventy years after the Flood. Timeline Review (p. 78): \"2448/2288* bc\"."
       }
     ],
     "death": [

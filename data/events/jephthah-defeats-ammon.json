@@ -90,6 +90,18 @@
       "link": "https://biblehub.com/blb/judges/11.htm#26",
       "note": null,
       "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "generations",
+      "date": "1152 - 1146 BC",
+      "year_am": null,
+      "year_bc_ad": -1152,
+      "year_bc_ad_end": -1146,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 6 \"The Special People of God\", PDF p. 192 (printed p. 191)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=192",
+      "source_text_id": "generations-preparing",
+      "note": "Judges table."
     }
   ],
   "people": [],

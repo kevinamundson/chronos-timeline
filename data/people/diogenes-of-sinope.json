@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "diogenes-of-sinope",
+  "type": "person",
+  "title": "Diogenes",
+  "summary": "Greek philosopher of the Cynics.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": -412,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 414): 412-323 BC. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "412-323 BC",
+        "year_am": null,
+        "year_bc_ad": -412,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 414 (printed p. 413)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=414",
+        "source_text_id": "generations-preparing",
+        "note": null
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "412-323 BC",
+        "year_am": null,
+        "year_bc_ad": -323,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 414 (printed p. 413)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=414",
+        "source_text_id": "generations-preparing",
+        "note": null
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": []
+}

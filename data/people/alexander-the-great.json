@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=37",
         "source_text_id": "generations-europe",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "356-323 BC",
+        "year_am": null,
+        "year_bc_ad": -356,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 423 (printed p. 422)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=423",
+        "source_text_id": "generations-preparing",
+        "note": "Caption; also heading p. 425."
       }
     ],
     "death": [
@@ -59,13 +70,30 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=37",
         "source_text_id": "generations-europe",
         "note": "His empire was then split into smaller kingdoms."
+      },
+      {
+        "source": "generations",
+        "date": "323 bc",
+        "year_am": null,
+        "year_bc_ad": -323,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 434 (printed p. 433)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=434",
+        "source_text_id": "generations-preparing",
+        "note": "Timeline Review: \"Alexander “The Great” Dies\"."
       }
     ]
   },
-  "events": [],
+  "events": [
+    "alexander-destroys-thebes",
+    "alexander-destroys-tyre",
+    "battle-of-gaugamela",
+    "battle-of-issus"
+  ],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-preparing"
   ],
   "related": []
 }

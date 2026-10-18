@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "temple-rebuilding-begins",
+  "type": "event",
+  "title": "Work on rebuilding the temple begins",
+  "summary": "Work on rebuilding the temple begins",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -536,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 440): 536 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "536 BC",
+      "year_am": null,
+      "year_bc_ad": -536,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 440 (printed p. 439)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=440",
+      "source_text_id": "generations-preparing",
+      "note": "Halted by Samaritan opposition."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Ezra.3.8-Ezra.3.13"
+  ],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

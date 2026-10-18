@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "sulla-dictatorship",
+  "type": "event",
+  "title": "Sulla rules Rome as dictator",
+  "summary": "Sulla rules Rome as dictator",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -82,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 485): 82 BC and 79 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "82 BC and 79 BC",
+      "year_am": null,
+      "year_bc_ad": -82,
+      "year_bc_ad_end": -79,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 485 (printed p. 484)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=485",
+      "source_text_id": "generations-preparing",
+      "note": null
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

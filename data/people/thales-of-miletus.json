@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "thales-of-miletus",
+  "type": "person",
+  "title": "Thales of Miletus",
+  "summary": "Early Greek natural philosopher and mathematician.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "sorting_year": -624,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 408): 624 BC. Pending owner decision (open question A8)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "generations",
+        "date": "624 BC",
+        "year_am": null,
+        "year_bc_ad": -624,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 13 \"The Misguided Greeks and Alexander's Ill-Fated Empire (800–150 BC)\", PDF p. 408 (printed p. 407)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=408",
+        "source_text_id": "generations-preparing",
+        "note": "Born in Miletus."
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      }
+    ]
+  },
+  "events": [
+    "thales-predicts-eclipse"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": []
+}

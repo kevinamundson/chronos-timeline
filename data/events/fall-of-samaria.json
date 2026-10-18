@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "fall-of-samaria",
+  "type": "event",
+  "title": "Assyria destroys the northern kingdom of Israel",
+  "summary": "Assyria destroys the northern kingdom of Israel",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -722,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 204): 722 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "722 BC",
+      "year_am": null,
+      "year_bc_ad": -722,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 6 \"The Special People of God\", PDF p. 204 (printed p. 203)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=204",
+      "source_text_id": "generations-preparing",
+      "note": "p. 305 and the Timeline Review (p. 212) print 721 BC."
+    },
+    {
+      "source": "generations",
+      "date": "721 BC",
+      "year_am": null,
+      "year_bc_ad": -721,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 305 (printed p. 304)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=305",
+      "source_text_id": "generations-preparing",
+      "note": "Under King Hoshea; some 27,000 exiled."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "2Kgs.17.5-2Kgs.17.23"
+  ],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

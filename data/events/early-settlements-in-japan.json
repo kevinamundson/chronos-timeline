@@ -34,6 +34,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf#page=58",
       "source_text_id": "generations-asia",
       "note": "Printed run together as \"23002000 BC\"."
+    },
+    {
+      "source": "generations",
+      "date": "2300-2000 BC",
+      "year_am": null,
+      "year_bc_ad": -2300,
+      "year_bc_ad_end": -2000,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 9 \"The Far East Before the Coming of Christ (2300 BC – AD 33)\", PDF p. 283 (printed p. 282)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=283",
+      "source_text_id": "generations-preparing",
+      "note": "Sannai-Maruyama."
     }
   ],
   "people": [],
@@ -41,7 +53,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-asia"
+    "generations-asia",
+    "generations-preparing"
   ],
   "related": [],
   "free_source_links": [
@@ -49,6 +62,11 @@
       "source_id": "generations-asia",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Asia+for+Jesus+Textbook.pdf",
       "locator": "Taking Asia for Jesus"
+    },
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
     }
   ]
 }

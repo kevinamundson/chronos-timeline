@@ -77,6 +77,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 2433.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "generations",
+        "date": "c. 1526 bc",
+        "year_am": null,
+        "year_bc_ad": -1526,
+        "precision": "approximate",
+        "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 141 (printed p. 140)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=141",
+        "source_text_id": "generations-preparing",
+        "note": "The Timeline Review (p. 166) prints \"1571/1526* bc\" (the order is reversed: here the asterisked year is the book's own); p. 456 prints \"Jochebed Gives Birth to Moses 1440 bc\". Differs from the sort year (1571 BC, ussher-jones) by 45 years."
       }
     ],
     "death": [

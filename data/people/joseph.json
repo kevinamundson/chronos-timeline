@@ -91,6 +91,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=29",
         "source_text_id": "generations-africa",
         "note": "Heading \"Birth of Joseph - 1911 BC\". Differs from the sort year (1745 BC, ussher-jones) by 166 years."
+      },
+      {
+        "source": "generations",
+        "date": "around 1911 BC",
+        "year_am": null,
+        "year_bc_ad": -1911,
+        "precision": "approximate",
+        "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 136 (printed p. 135)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=136",
+        "source_text_id": "generations-preparing",
+        "note": "Differs from the sort year (1745 BC, ussher-jones) by 166 years."
       }
     ],
     "death": [
@@ -147,6 +158,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 2369.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "generations",
+        "date": "c. 1801 bc",
+        "year_am": null,
+        "year_bc_ad": -1801,
+        "precision": "approximate",
+        "citation": "Preparing the World for Jesus, ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 105 (printed p. 104)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=105",
+        "source_text_id": "generations-preparing",
+        "note": "Timeline Review pairs it with an asterisked 1631 BC (the book's Ussher-chronology equivalent). (p. 114) Differs from the ussher-jones death year (1635 BC) by 166 years."
       }
     ]
   },

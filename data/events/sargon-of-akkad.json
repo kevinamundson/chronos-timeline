@@ -44,6 +44,17 @@
       "citation": null,
       "link": null,
       "note": "No matching entry found in Ussher's Annals."
+    },
+    {
+      "source": "generations",
+      "date": "around 2334 BC",
+      "year_am": null,
+      "year_bc_ad": -2334,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus, ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 82 (printed p. 81)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=82",
+      "source_text_id": "generations-preparing",
+      "note": "Sargon overthrows Urukagina; p. 83: \"ruled from 2334 BC to 2279 BC\". The Timeline Review (p. 114) prints \"Sargon I Rules 2100/2164* bc\", which does not match the text. Differs from the sort year (1619 BC, cfah-anchor) by 715 years."
     }
   ],
   "people": [],

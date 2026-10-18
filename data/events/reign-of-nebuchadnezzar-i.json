@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "reign-of-nebuchadnezzar-i",
+  "type": "event",
+  "title": "Nebuchadnezzar I rules Babylon",
+  "summary": "Nebuchadnezzar I rules Babylon",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -1126,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 328): 1126-1104 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "1126-1104 BC",
+      "year_am": null,
+      "year_bc_ad": -1126,
+      "year_bc_ad_end": -1104,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 11 \"Babylon Has Fallen (626–539 BC)\", PDF p. 328 (printed p. 327)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=328",
+      "source_text_id": "generations-preparing",
+      "note": "Invades Elam and recovers the image of Marduk."
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

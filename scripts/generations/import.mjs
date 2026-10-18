@@ -116,8 +116,15 @@ for (const key of keys) {
       const inRange = yEnd != null && ((y <= t.y && t.y <= yEnd) || (y >= t.y && t.y >= yEnd));
       agree = diff === 0 || inRange ? `agrees with sort year ${yl(t.y)} (${t.tier})` : `CONFLICT: ${diff} years from sort year ${yl(t.y)} (${t.tier})`;
       if (!/^agrees/.test(agree)) entry.note = `${entry.note ? entry.note + ' ' : ''}Differs from the sort year (${yl(t.y)}, ${t.tier}) by ${diff} years.`;
-    } else if (t && (slot === 'death')) {
-      agree = 'death date (sort uses birth)';
+    } else if (d.type === 'person' && slot === 'death' && y != null) {
+      // the sort uses birth; compare a death year with the tier 1-4 death year when one exists
+      const td = tierOf(d.dates.death || []);
+      if (td) {
+        const diff = Math.abs((y < 0 ? y + 1 : y) - (td.y < 0 ? td.y + 1 : td.y));
+        const inRange = yEnd != null && ((y <= td.y && td.y <= yEnd) || (y >= td.y && td.y >= yEnd));
+        agree = diff === 0 || inRange ? `agrees with ${td.tier} death year ${yl(td.y)}` : `CONFLICT: ${diff} years from ${td.tier} death year ${yl(td.y)}`;
+        if (!/^agrees/.test(agree)) entry.note = `${entry.note ? entry.note + ' ' : ''}Differs from the ${td.tier} death year (${yl(td.y)}) by ${diff} years.`;
+      } else agree = t ? 'death date (sort uses birth; no tier 1–4 death year)' : created.has(id) ? 'NEW' : 'no tier 1–4 date';
     } else if (!t && created.has(id)) agree = 'NEW';
     list.push(entry); sortGen(list); save(id);
     if (d.type === 'event' && (cur.events?.[id]?.people || []).length) for (const pid of cur.events[id].people) if (recs[pid]?.doc.type !== 'person') throw new Error(`${id}: unknown person ${pid}`);

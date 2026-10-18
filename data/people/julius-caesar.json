@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=36",
         "source_text_id": "generations-europe",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "100-44 BC",
+        "year_am": null,
+        "year_bc_ad": -100,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 487 (printed p. 486)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=487",
+        "source_text_id": "generations-preparing",
+        "note": "Caption."
       }
     ],
     "death": [
@@ -59,16 +70,30 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Europe+for+Jesus+ebook.pdf#page=36",
         "source_text_id": "generations-europe",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "44 BC",
+        "year_am": null,
+        "year_bc_ad": -44,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 15 \"The Romans: Reaching the Zenith of the Empires (753 BC – AD 33)\", PDF p. 495 (printed p. 494)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=495",
+        "source_text_id": "generations-preparing",
+        "note": null
       }
     ]
   },
   "events": [
+    "assassination-of-julius-caesar",
+    "caesar-crosses-the-rubicon",
     "caesar-lands-in-britain",
     "gallic-wars"
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-europe"
+    "generations-europe",
+    "generations-preparing"
   ],
   "related": []
 }

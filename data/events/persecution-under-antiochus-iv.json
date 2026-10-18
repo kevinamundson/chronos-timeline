@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "persecution-under-antiochus-iv",
+  "type": "event",
+  "title": "Persecution of the Jews under Antiochus IV",
+  "summary": "Persecution of the Jews under Antiochus IV",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -170,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 447): 170 to 164 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "170 to 164 BC",
+      "year_am": null,
+      "year_bc_ad": -170,
+      "year_bc_ad_end": -164,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 447 (printed p. 446)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=447",
+      "source_text_id": "generations-preparing",
+      "note": "Also p. 444. Timeline Review (p. 456): \"Antiochus Epiphanes Rules Judea 170 bc\"."
+    }
+  ],
+  "people": [
+    "antiochus-iv-epiphanes"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Dan.11.28-Dan.11.32"
+  ],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

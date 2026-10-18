@@ -34,6 +34,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=64",
       "source_text_id": "generations-africa",
       "note": null
+    },
+    {
+      "source": "generations",
+      "date": "1215 bc",
+      "year_am": null,
+      "year_bc_ad": -1215,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 7 \"Western and Eastern Europe After the Flood (2518 BC – AD 33)\", PDF p. 238 (printed p. 237)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=238",
+      "source_text_id": "generations-preparing",
+      "note": "Timeline Review: \"Carthage Founded\"."
     }
   ],
   "people": [],
@@ -41,7 +52,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-preparing"
   ],
   "related": [],
   "free_source_links": [
@@ -49,6 +61,11 @@
       "source_id": "generations-africa",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
       "locator": "Taking Africa for Jesus"
+    },
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
     }
   ]
 }

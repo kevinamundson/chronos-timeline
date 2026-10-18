@@ -93,6 +93,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 1056.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "generations",
+        "date": "3118/2942* bc",
+        "year_am": null,
+        "year_bc_ad": -3118,
+        "precision": "approximate",
+        "citation": "Preparing the World for Jesus, ch. 3 \"Babel and the Futility of the Kingdoms of Men\", PDF p. 78 (printed p. 77)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=78",
+        "source_text_id": "generations-preparing",
+        "note": "Timeline Review; Timeline Review pairs it with an asterisked 2942 BC (the book's Ussher-chronology equivalent). Differs from the sort year (2948 BC, ussher) by 170 years."
       }
     ],
     "death": [
@@ -161,6 +172,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 2006.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "generations",
+        "date": "2168/1999* bc",
+        "year_am": null,
+        "year_bc_ad": -2168,
+        "precision": "approximate",
+        "citation": "Preparing the World for Jesus, ch. 1 \"Creation and the Global Flood\", PDF p. 42 (printed p. 41)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=42",
+        "source_text_id": "generations-preparing",
+        "note": "Timeline Review; Timeline Review pairs it with an asterisked 1999 BC (the book's Ussher-chronology equivalent). p. 36 says \"around 2100-2000 BC\". Differs from the cfah-table1 death year (1998 BC) by 170 years."
       }
     ]
   },

@@ -95,6 +95,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 2008.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "generations",
+        "date": "2166 BC",
+        "year_am": null,
+        "year_bc_ad": -2166,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 87 (printed p. 86)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=87",
+        "source_text_id": "generations-preparing",
+        "note": "Born in Ur of the Chaldees; also p. 99 (\"Born 2166 bc\"). Timeline Review pairs it with an asterisked 1996 BC (the book's Ussher-chronology equivalent). (p. 114) Differs from the sort year (1996 BC, cfah-table1) by 170 years."
       }
     ],
     "death": [

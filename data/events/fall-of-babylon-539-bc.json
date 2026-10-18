@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "fall-of-babylon-539-bc",
+  "type": "event",
+  "title": "Babylon falls to the Medes and Persians",
+  "summary": "Babylon falls to the Medes and Persians",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -539,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 343): 539 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "539 BC",
+      "year_am": null,
+      "year_bc_ad": -539,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 11 \"Babylon Has Fallen (626–539 BC)\", PDF p. 343 (printed p. 342)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=343",
+      "source_text_id": "generations-preparing",
+      "note": "Also p. 345 and the Timeline Reviews (pp. 354, 388)."
+    }
+  ],
+  "people": [
+    "cyrus-the-great"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Dan.5.30-Dan.5.31"
+  ],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

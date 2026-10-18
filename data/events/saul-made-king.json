@@ -89,6 +89,18 @@
       "link": "https://biblehub.com/blb/acts/13.htm#21",
       "note": null,
       "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "generations",
+      "date": "1095-1055 BC",
+      "year_am": null,
+      "year_bc_ad": -1095,
+      "year_bc_ad_end": -1055,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 6 \"The Special People of God\", PDF p. 208 (printed p. 207)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=208",
+      "source_text_id": "generations-preparing",
+      "note": "Table \"Kings of United Israel\" (Saul, 40 years)."
     }
   ],
   "people": [

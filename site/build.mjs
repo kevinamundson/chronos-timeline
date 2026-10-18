@@ -375,6 +375,12 @@ function personTimeline(p) {
   if (start == null) { start = stop; notes.push('Birth year unknown and no earlier linked event.'); }
   if (stop == null) { stop = start; notes.push('Death year unknown and no linked events after birth: the window shows the birth year only.'); }
   if (stop < start) [start, stop] = [stop, start];
+  // own-life events dated outside the lifespan (e.g. a provisional Generations date on a different chronology) widen the window so they stay visible
+  const outside = own.filter((e) => e.sorting_year < start || e.sorting_year > stop);
+  if (outside.length) {
+    notes.push(`The window is widened to show ${outside.length === 1 ? 'a linked event' : `${outside.length} linked events`} dated outside the lifespan: ${outside.map((e) => `${e.title} (${yearLabel(e.sorting_year)}, ${e.sorting_basis?.tier === 'provisional' ? 'provisional Generations date' : e.sorting_basis?.tier || 'unsorted'})`).join('; ')}. See the event page for the conflicting dates.`);
+    start = Math.min(start, ...outside.map((e) => e.sorting_year)); stop = Math.max(stop, ...outside.map((e) => e.sorting_year));
+  }
   const items = [];
   const isBirthEvt = (e) => birth && e.sorting_year === birth.y && /birth/.test(e.id);
   const isEndEvt = (e) => end && e.sorting_year === end.y && (/death|translated/.test(e.id));

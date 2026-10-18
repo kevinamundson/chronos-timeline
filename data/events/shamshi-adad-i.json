@@ -44,6 +44,18 @@
       "citation": null,
       "link": null,
       "note": "No matching entry found in Ussher's Annals."
+    },
+    {
+      "source": "generations",
+      "date": "1813-1791 BC",
+      "year_am": null,
+      "year_bc_ad": -1813,
+      "year_bc_ad_end": -1791,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 301 (printed p. 300)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=301",
+      "source_text_id": "generations-preparing",
+      "note": "Drives the Amorites out of Assur; Timeline Review (p. 324): \"Shamashi Adad I Forms Assyria 1813 bc\". Differs from the sort year (1841 BC, cfah-anchor) by 28 years."
     }
   ],
   "people": [],

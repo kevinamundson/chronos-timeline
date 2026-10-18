@@ -33,6 +33,28 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=23",
       "source_text_id": "generations-africa",
       "note": "Buried in a hidden grave."
+    },
+    {
+      "source": "generations",
+      "date": "1325 BC",
+      "year_am": null,
+      "year_bc_ad": -1325,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 128 (printed p. 127)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=128",
+      "source_text_id": "generations-preparing",
+      "note": "p. 298 prints 1323 BC."
+    },
+    {
+      "source": "generations",
+      "date": "1323 BC",
+      "year_am": null,
+      "year_bc_ad": -1323,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 298 (printed p. 297)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=298",
+      "source_text_id": "generations-preparing",
+      "note": "p. 128 prints 1325 BC."
     }
   ],
   "people": [],
@@ -40,7 +62,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-preparing"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +71,11 @@
       "source_id": "generations-africa",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
       "locator": "Taking Africa for Jesus"
+    },
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
     }
   ]
 }

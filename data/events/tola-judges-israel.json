@@ -91,6 +91,18 @@
       "link": "https://biblehub.com/blb/judges/10.htm#2",
       "note": null,
       "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "generations",
+      "date": "1197 - 1174 BC",
+      "year_am": null,
+      "year_bc_ad": -1197,
+      "year_bc_ad_end": -1174,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 6 \"The Special People of God\", PDF p. 192 (printed p. 191)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=192",
+      "source_text_id": "generations-preparing",
+      "note": "Judges table. Differs from the sort year (1215 BC, ussher-jones) by 18 years."
     }
   ],
   "people": [],

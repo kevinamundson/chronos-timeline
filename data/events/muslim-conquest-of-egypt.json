@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=95",
       "source_text_id": "generations-africa",
       "note": null
+    },
+    {
+      "source": "generations",
+      "date": "AD 642",
+      "year_am": null,
+      "year_bc_ad": 642,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 5 \"The Egyptian Empire (2450–332 BC)\", PDF p. 157 (printed p. 156)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=157",
+      "source_text_id": "generations-preparing",
+      "note": null
     }
   ],
   "people": [],
@@ -40,7 +51,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-preparing"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +60,11 @@
       "source_id": "generations-africa",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
       "locator": "Taking Africa for Jesus"
+    },
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
     }
   ]
 }

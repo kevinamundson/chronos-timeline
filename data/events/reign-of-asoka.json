@@ -44,6 +44,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=25",
       "source_text_id": "generations-world",
       "note": null
+    },
+    {
+      "source": "generations",
+      "date": "260 BC",
+      "year_am": null,
+      "year_bc_ad": -260,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 8 \"India Waits for the Coming of Christ (2200 BC – AD 33)\", PDF p. 251 (printed p. 250)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=251",
+      "source_text_id": "generations-preparing",
+      "note": "Asoka unifies India by force."
     }
   ],
   "people": [
@@ -54,7 +65,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-asia",
-    "generations-world"
+    "generations-world",
+    "generations-preparing"
   ],
   "related": [],
   "free_source_links": [
@@ -67,6 +79,11 @@
       "source_id": "generations-world",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
       "locator": "Taking the World for Jesus"
+    },
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
     }
   ]
 }

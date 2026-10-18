@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "daniel-taken-to-babylon",
+  "type": "event",
+  "title": "Daniel and his friends taken to Babylon",
+  "summary": "Daniel and his friends taken to Babylon",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -605,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 336): 605 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "605 BC",
+      "year_am": null,
+      "year_bc_ad": -605,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 11 \"Babylon Has Fallen (626–539 BC)\", PDF p. 336 (printed p. 335)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=336",
+      "source_text_id": "generations-preparing",
+      "note": "The first exile band; also p. 335."
+    }
+  ],
+  "people": [
+    "nebuchadnezzar-ii"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Dan.1.1-Dan.1.7"
+  ],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

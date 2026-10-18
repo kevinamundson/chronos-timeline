@@ -34,6 +34,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=16",
       "source_text_id": "generations-world",
       "note": "Ruled until shortly after Jesus was born."
+    },
+    {
+      "source": "generations",
+      "date": "37-4 BC",
+      "year_am": null,
+      "year_bc_ad": -37,
+      "year_bc_ad_end": -4,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 6 \"The Special People of God\", PDF p. 172 (printed p. 171)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=172",
+      "source_text_id": "generations-preparing",
+      "note": "p. 510: Herod captures Jerusalem \"By 37 BC\" (Timeline Review p. 524: \"Herod Captures Jerusalem 37 bc\")."
     }
   ],
   "people": [
@@ -43,7 +55,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-world"
+    "generations-world",
+    "generations-preparing"
   ],
   "related": [],
   "free_source_links": [
@@ -51,6 +64,11 @@
       "source_id": "generations-world",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
       "locator": "Taking the World for Jesus"
+    },
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
     }
   ]
 }

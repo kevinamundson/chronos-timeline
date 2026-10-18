@@ -36,6 +36,17 @@
         "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=16",
         "source_text_id": "generations-world",
         "note": null
+      },
+      {
+        "source": "generations",
+        "date": "73 BC",
+        "year_am": null,
+        "year_bc_ad": -73,
+        "precision": "year",
+        "citation": "Preparing the World for Jesus, ch. 16 \"Preparing the World for Jesus: Jerusalem (73 BC – AD 33)\", PDF p. 509 (printed p. 508)",
+        "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=509",
+        "source_text_id": "generations-preparing",
+        "note": "Timeline Review (p. 524): \"Herod Is Born 73 bc\"."
       }
     ],
     "death": [
@@ -64,11 +75,13 @@
   },
   "events": [
     "birth-of-jesus",
+    "herods-temple",
     "reign-of-herod-the-great"
   ],
   "scripture_refs": [],
   "sources": [
-    "generations-world"
+    "generations-world",
+    "generations-preparing"
   ],
   "related": []
 }

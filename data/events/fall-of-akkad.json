@@ -46,6 +46,17 @@
       "citation": null,
       "link": null,
       "note": "Jones (Chart No. 1; Chronology of the Old Testament, 2002) gives no date for this extra-biblical event."
+    },
+    {
+      "source": "generations",
+      "date": "2147 BC",
+      "year_am": null,
+      "year_bc_ad": -2147,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 82 (printed p. 81)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=82",
+      "source_text_id": "generations-preparing",
+      "note": "End of Sargon's Akkadian empire. Differs from the sort year (1477 BC, cfah-anchor) by 670 years."
     }
   ],
   "people": [],

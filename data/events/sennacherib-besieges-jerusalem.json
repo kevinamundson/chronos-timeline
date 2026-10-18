@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "sennacherib-besieges-jerusalem",
+  "type": "event",
+  "title": "Sennacherib's siege of Jerusalem",
+  "summary": "Sennacherib's siege of Jerusalem",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -701,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 324): 701 bc. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "701 bc",
+      "year_am": null,
+      "year_bc_ad": -701,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 324 (printed p. 323)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=324",
+      "source_text_id": "generations-preparing",
+      "note": "Timeline Review: \"Sennacherib's Siege on Jerusalem\". Sennacherib ruled 705-681 BC (p. 307)."
+    }
+  ],
+  "people": [
+    "hezekiah"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "2Kgs.18.13-2Kgs.19.37"
+  ],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

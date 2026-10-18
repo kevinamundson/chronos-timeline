@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=18",
       "source_text_id": "generations-africa",
       "note": "Pharaohs began building pyramids; Djoser was the first."
+    },
+    {
+      "source": "generations",
+      "date": "2300/2130* bc",
+      "year_am": null,
+      "year_bc_ad": -2300,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus, ch. 3 \"Babel and the Futility of the Kingdoms of Men\", PDF p. 78 (printed p. 77)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=78",
+      "source_text_id": "generations-preparing",
+      "note": "Timeline Review: \"First Pyramid of Egypt\"; also p. 166 (\"Djoser and First Pyramid\"). Timeline Review pairs it with an asterisked 2130 BC (the book's Ussher-chronology equivalent)."
     }
   ],
   "people": [],
@@ -40,7 +51,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-africa"
+    "generations-africa",
+    "generations-preparing"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +60,11 @@
       "source_id": "generations-africa",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf",
       "locator": "Taking Africa for Jesus"
+    },
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
     }
   ]
 }

@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "fall-of-jerusalem-586-bc",
+  "type": "event",
+  "title": "Babylon destroys Jerusalem and the temple; Judah exiled",
+  "summary": "Babylon destroys Jerusalem and the temple; Judah exiled",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -586,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 334): 586 BC. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "586 BC",
+      "year_am": null,
+      "year_bc_ad": -586,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 11 \"Babylon Has Fallen (626–539 BC)\", PDF p. 334 (printed p. 333)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=334",
+      "source_text_id": "generations-preparing",
+      "note": "The third siege; also pp. 156, 204, 343 and the Timeline Reviews (pp. 212, 354). p. 220 says 589 BC."
+    }
+  ],
+  "people": [
+    "nebuchadnezzar-ii"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Jer.39.1-Jer.39.10"
+  ],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

@@ -44,6 +44,17 @@
       "citation": null,
       "link": null,
       "note": "No matching entry found in Ussher's Annals."
+    },
+    {
+      "source": "generations",
+      "date": "reigned 1792-1750 BC",
+      "year_am": null,
+      "year_bc_ad": -1750,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 10 \"The Assyrian Empire: Power by Cruelty (1200–612 BC)\", PDF p. 301 (printed p. 300)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=301",
+      "source_text_id": "generations-preparing",
+      "note": "End year of the printed reign. Differs from the sort year (989 BC, cfah-anchor) by 761 years."
     }
   ],
   "people": [],

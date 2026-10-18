@@ -34,6 +34,18 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=14",
       "source_text_id": "generations-world",
       "note": null
+    },
+    {
+      "source": "generations",
+      "date": "4 bc/ad 1*",
+      "year_am": null,
+      "year_bc_ad": -4,
+      "year_bc_ad_end": 1,
+      "precision": "year-range",
+      "citation": "Preparing the World for Jesus, ch. 14 \"The Hellenistic Kingdoms (323–63 BC)\", PDF p. 456 (printed p. 455)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=456",
+      "source_text_id": "generations-preparing",
+      "note": "Timeline Reviews (pp. 456, 506, 524); the asterisk notes \"Historians are divided on what is the most likely date of Christ's birth. Both are included\". p. 17: \"around AD 1\"."
     }
   ],
   "people": [
@@ -45,7 +57,8 @@
     "Matt.2.1-Matt.2.23"
   ],
   "sources": [
-    "generations-world"
+    "generations-world",
+    "generations-preparing"
   ],
   "related": [],
   "free_source_links": [
@@ -53,6 +66,11 @@
       "source_id": "generations-world",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
       "locator": "Taking the World for Jesus"
+    },
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
     }
   ]
 }

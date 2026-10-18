@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "destruction-of-sodom",
+  "type": "event",
+  "title": "Destruction of Sodom and Gomorrah",
+  "summary": "Destruction of Sodom and Gomorrah",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "sorting_year": -2066,
+  "sorting_basis": {
+    "tier": "provisional",
+    "tier_rank": null,
+    "chronology": "generations",
+    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus, PDF p. 103): c. 2066 bc. Pending owner decision (open question A8)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "generations",
+      "date": "c. 2066 bc",
+      "year_am": null,
+      "year_bc_ad": -2066,
+      "precision": "approximate",
+      "citation": "Preparing the World for Jesus, ch. 4 \"First Empires in Mesopotamia (2360–1750 BC)\", PDF p. 103 (printed p. 102)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=103",
+      "source_text_id": "generations-preparing",
+      "note": "Timeline Review pairs it with an asterisked 1896 BC (the book's Ussher-chronology equivalent). (p. 114)"
+    }
+  ],
+  "people": [
+    "abraham"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.19.24-Gen.19.29"
+  ],
+  "sources": [
+    "generations-preparing"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
+    }
+  ]
+}

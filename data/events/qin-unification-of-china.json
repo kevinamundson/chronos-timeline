@@ -33,6 +33,17 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf#page=16",
       "source_text_id": "generations-world",
       "note": "The first dynasty lasted fifteen years; the second until roughly AD 30."
+    },
+    {
+      "source": "generations",
+      "date": "beginning in 231 BC",
+      "year_am": null,
+      "year_bc_ad": -231,
+      "precision": "year",
+      "citation": "Preparing the World for Jesus, ch. 9 \"The Far East Before the Coming of Christ (2300 BC – AD 33)\", PDF p. 265 (printed p. 264)",
+      "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf#page=265",
+      "source_text_id": "generations-preparing",
+      "note": "The great Qin Empire."
     }
   ],
   "people": [],
@@ -40,7 +51,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "generations-world"
+    "generations-world",
+    "generations-preparing"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +60,11 @@
       "source_id": "generations-world",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Taking+the+World+for+Jesus.pdf",
       "locator": "Taking the World for Jesus"
+    },
+    {
+      "source_id": "generations-preparing",
+      "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
+      "locator": "Preparing the World for Jesus"
     }
   ]
 }
