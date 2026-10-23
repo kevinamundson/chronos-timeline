@@ -4,7 +4,7 @@ Edition read: London, printed by William Stansby for Walter Burre, 1617. EEBO-TC
 
 The chronological table (back matter, from sig. 781b) is Raleigh's index. "To the Reader" (sig. 780b) says it reforms press errors and his own mis-reckonings, and that the Julian Period exceeds the yeere of the World by 682. A year is recorded only when the printed pair differs by 682.
 
-Statements written: 206. New people: 143. Skipped figures: 265. Cut-off (yeere of the World): 3672.
+Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere of the World): 3731.
 
 | World | Sig. | Quote | Record |
 |---|---|---|---|
@@ -202,7 +202,7 @@ Statements written: 206. New people: 143. Skipped figures: 265. Cut-off (yeere o
 | 3472 | 790a | 1. Cyras in Persia, 23 | cyras-in-persia:reign |
 | 3477 | 790a | 6 1. Balthasar, 17 | balthasar:reign |
 | 3494 | 790a | 1. Darius the Mede 2. | darius-the-mede:reign |
-| 3495 | 790a | 1 Cyrus 7. | cyrus:reign |
+| 3495 | 790a | 1 Cyrus 7. | cyrus-the-great:reign |
 | 3502 | 790a | 2 1. Cambyses, 7. | cambyses:reign |
 | 3504 | 790a | 1. Psammenitus, 3 | psammenitus:reign |
 | 3510 | 790a | 3 1. Darius Hystaspis, 36 | darius-hystaspis:reign |
@@ -214,10 +214,13 @@ Statements written: 206. New people: 143. Skipped figures: 265. Cut-off (yeere o
 | 3631 | 791a | 3 1. Acoris 12 | acoris:reign |
 | 3645 | 791b | 4 1. Nectanebus. 18 | nectanebus:reign |
 | 3670 | 791b | 10 1. Ochus. 23. | ochus:reign |
+| 3693 | 791b | 11 1 Arses 3. | arses:reign |
+| 3709 | 792a | 1 1. Ptolemie Lagi, 39. | ptolemie-lagi:reign |
+| 3716 | 792a | 1. Cassander. 19. | cassander:reign |
 
 ## Skipped
 
-### illegible name or length (51)
+### illegible name or length (52)
 
 - 781b World 461: 1. ●ared. 962
 - 782a World 1820: 1. Sarug. 2●0
@@ -270,6 +273,7 @@ Statements written: 206. New people: 143. Skipped figures: 265. Cut-off (yeere o
 - 790a World 3455: 6 1. Seruius ●ullus, 41
 - 790b World 3573: 79 Esdras commeth to Ierusalem . 1. Daniel his 70. weekes, or 490. yeers b●●in
 - 791a World 3619: 1 1. Amyrtau●, 6
+- 792b World 3722: 1 1. Seleuc{us}. 3● 1
 
 ### named cell on a heading row with no yeere of the World (1)
 
@@ -288,7 +292,7 @@ Statements written: 206. New people: 143. Skipped figures: 265. Cut-off (yeere o
 - 792a: 4380 3704 / 4380 3704 / 425 420 / 449
 - 792a: 4395 371● / 4395 371● / 434 429 / 458
 
-### named cell is not a single printed length (28)
+### named cell is not a single printed length (31)
 
 - 784a World 2436 col "Assyria.": 16 1. Mamilas, or Mamelus . 30
 - 784a World 2439 col "Aegypt.": 8 1. Or{us}, 2. or Busiris, 38. 138.
@@ -318,6 +322,9 @@ Statements written: 206. New people: 143. Skipped figures: 265. Cut-off (yeere o
 - 789a World 3333 col "Egypt.": 1 12 Princes, 15
 - 791b World 3663 col "Aegypt.": 4 1. Tachus 8. Eusebius giues only 2. yeres to Tachus. Reinee. 6; but the storie of him proues more.
 - 791b World 3672 col "Greece.": 1. Philip King of Macedon 24. yeeres, and part of the 25.
+- 792a World 3696 col "Persia.": 12 1. Darius 5. yeeres & somwhat more
+- 792a World 3709 col "Olymp.": 1. Aridaeus, 6. and foure moneths .
+- 792a World 3709 col "(no column title)": 1. Onias, 23. 136
 
 ### two names share one printed length (4)
 
@@ -336,7 +343,7 @@ Statements written: 206. New people: 143. Skipped figures: 265. Cut-off (yeere o
 
 - 788a World 3195 col "Iuda.": 1. Interregnum eleuen yeeres .
 
-### row label not a death, translation, or a portal event (132)
+### row label not a death, translation, or a portal event (153)
 
 - 781b World 326: All the yeeres of the Patriarchs, wherein they begate children, dyed, or performed any thing, are reckoned compleat: which is inferred out of the addition of the yeres before they 
 - 781b World 1042: Seth ay ed about the end of this yeere.
@@ -470,8 +477,29 @@ Statements written: 206. New people: 143. Skipped figures: 265. Cut-off (yeere o
 - 791b World 3663: The hastie growth of the Theban Estate.
 - 791b World 3670: L. 3. c. 12. §. 8.
 - 791b World 3670: Peace in Greece. The Athenians weaken themselues by connecting their Treasure to vaine vses.
+- 791b World 3677: L. 4. c. 1. §. 4.
+- 791b World 3686: L. 4. c. 1. §. 6.
+- 791b World 3687: L. 5. c. 1. §. 4. †. 4.
+- 791b World 3688: Nabonassar. Nouemb. the 17.
+- 791b World 3693: After this, the yeeres from Cyr{us} & Daniel are too few, by One.
+- 792a World 3696: Nabon. Nouemb . 15.
+- 792a World 3699: L. 4. c. 2. §. 4.
+- 792a World 3700: L. 4. c. 2. §. 5, 6 & 7. & l. 5. c. 2. §. 8.
+- 792a World 3700: The Gaules enter into League with the Romans.
+- 792a World 3701: An Eclipse of ☾
+- 792a World 3702: L. 4. c. 2. §. 13.
+- 792a World 3708: Nabon. Nouemb . 12.
+- 792a World 3709: The Lamian Warre .
+- 792a World 3715: Aridaeus slaine by Olympias. Antigon{us} beaten by Eumnes.
+- 792a World 3716: Eumenes betrayed to Antigonus. Olympias slaine by Cassander. Antigonus growes dreedfull
+- 792a World 3716: Thebes reedified by Cassander .
+- 792a World 3720: Demetrius beaten at Gaza, by Ptolemie and Seleucus.
+- 792a World 3721: Peace between Alexanders Captains, with diuision of Prouinces.
+- 792b World 3722: The Aera of the Kingdome of the Greekes.
+- 792b World 3724: Alexanders Captayns assume the name of Kings.
+- 792b World 3731: L. 4. c. 6. §. 4.
 
-### illegible row label (32)
+### illegible row label (35)
 
 - 782a World 1656: Methusaleh 〈◊ 〉 〈◊ 〉 yeere a 〈◊ 〉 before the Floud.
 - 782a World 1656: Noah 〈◊ 〉 into the Arke.
@@ -505,6 +533,9 @@ Statements written: 206. New people: 143. Skipped figures: 265. Cut-off (yeere o
 - 791b World 3654: The Thebans recouer their Citadell, and make strong warre vpon the Laced●●●nians.
 - 791b World 3658: Tribunes o● the people continued 5. yeares in office, propound popular Lawes, among which, That one of the Consuls should be still a Plebeian.
 - 791b World 3670: 176 98 Ionathan about this t●me high Priest.
+- 791b World 3688: 17 Philip wasteth ●llyria, and drawes the Thessaliaˉs to follow him
+- 792a World 3720: Some place the beginning of Seleucus in this twelfth from Alexander, b● which accom●p he reigned 32. yeeres.
+- 792b World 3724: Athens set free by Demetrius the sonne of Autigon●s.
 
 ### death of Codrus has no existing person (1)
 
@@ -517,3 +548,7 @@ Statements written: 206. New people: 143. Skipped figures: 265. Cut-off (yeere o
 ### death of Epaminondas has no existing person (1)
 
 - 791b World 3669: Epaminondas dyes.
+
+### death of Alexander has no existing person (1)
+
+- 792a World 3708: Alexander dyed 17. dayes before the Summer Solstice From Nabonassar hitherto are collected 424. yeeres: and hence to the reigne of Augustus, 294.

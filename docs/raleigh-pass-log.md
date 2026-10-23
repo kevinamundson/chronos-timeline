@@ -1,11 +1,11 @@
 # Raleigh pass log
 
-Imported from the 1617 chronological table, through the yeere of the World 3672. Raleigh is display-only. No sorting year was changed.
+Imported from the 1617 chronological table, through the yeere of the World 3731. Raleigh is display-only. No sorting year was changed.
 
-- Records updated or created with a Raleigh entry: 193
-- Dated statements written: 206
-- People created: 143
-- Figures skipped: 265
+- Records updated or created with a Raleigh entry: 196
+- Dated statements written: 209
+- People created: 145
+- Figures skipped: 294
 
 ## People created
 
@@ -31,6 +31,7 @@ Imported from the 1617 chronological table, through the yeere of the World 3672.
 - `archippus` — Archippus
 - `ariphron` — Ariphron
 - `arius` — Arius
+- `arses` — Arses
 - `artaxerxes-longimanus` — Artaxerxes Longimanus
 - `artaxerxes-mnemon` — Artaxerxes Mnemon
 - `asa` — Asa
@@ -47,6 +48,7 @@ Imported from the 1617 chronological table, through the yeere of the World 3672.
 - `ben-merodach` — Ben Merodach
 - `bocchorus` — Bocchorus
 - `cambyses` — Cambyses
+- `cassander` — Cassander
 - `cecrops-the-second` — Cecrops the second
 - `cephrenes` — Cephrenes 50
 - `cham` — Cham
@@ -55,7 +57,6 @@ Imported from the 1617 chronological table, through the yeere of the World 3672.
 - `cranaus` — Cranaus
 - `crotopus` — Crotopus
 - `cyras-in-persia` — Cyras in Persia
-- `cyrus` — Cyrus
 - `darius-hystaspis` — Darius Hystaspis
 - `darius-nothus` — Darius Nothus
 - `darius-the-mede` — Darius the Mede
@@ -119,6 +120,7 @@ Imported from the 1617 chronological table, through the yeere of the World 3672.
 - `polyphides` — Polyphides
 - `priamus` — Priamus
 - `proetus` — Proetus
+- `ptolemie-lagi` — Ptolemie Lagi
 - `rehoboam` — Rehoboam
 - `romulus` — Romulus
 - `sabacus-the-ethiopian` — Sabacus the Ethiopian
@@ -155,17 +157,18 @@ Imported from the 1617 chronological table, through the yeere of the World 3672.
 
 ## Skipped, by reason
 
-- illegible name or length: 51
+- illegible name or length: 52
 - named cell on a heading row with no yeere of the World: 1
 - year cell does not follow Julian = World + 682: 10
-- named cell is not a single printed length: 28
+- named cell is not a single printed length: 31
 - two names share one printed length: 4
 - not a personal name: 3
 - name without a printed length: 1
-- row label not a death, translation, or a portal event: 132
-- illegible row label: 32
+- row label not a death, translation, or a portal event: 153
+- illegible row label: 35
 - death of Codrus has no existing person: 1
 - death of Amasis has no existing person: 1
 - death of Epaminondas has no existing person: 1
+- death of Alexander has no existing person: 1
 
 Every skipped figure is quoted in `data/raleigh-dates-extract.md`.

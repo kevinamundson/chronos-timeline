@@ -46,10 +46,10 @@ const ALIAS = {
   samuel: 'samuel', nimrod: 'nimrod',
   nabuchodonosor: 'nebuchadnezzar-ii', 'nabuchodonosor the great': 'nebuchadnezzar-ii',
   hezekiah: 'hezekiah', ezechias: 'hezekiah', ezekias: 'hezekiah', ezekia: 'hezekiah',
-  jehu: 'jehu', iehu: 'jehu', leroboam: 'jeroboam-i',
+  jehu: 'jehu', iehu: 'jehu', leroboam: 'jeroboam-i', cyrus: 'cyrus-the-great',
 };
 // "1. Name LENGTH" is a birth only for these. Kings and Nimrod are not in this set.
-const NOT_PATRIARCH = new Set(['nabuchodonosor', 'nabuchodonosor the great', 'hezekiah', 'ezechias', 'ezekias', 'ezekia', 'jehu', 'iehu', 'leroboam', 'david', 'dauid', 'solomon', 'salomon', 'saul', 'samuel', 'nimrod']);
+const NOT_PATRIARCH = new Set(['nabuchodonosor', 'nabuchodonosor the great', 'hezekiah', 'ezechias', 'ezekias', 'ezekia', 'jehu', 'iehu', 'leroboam', 'cyrus', 'david', 'dauid', 'solomon', 'salomon', 'saul', 'samuel', 'nimrod']);
 const PATRIARCH = new Set(Object.keys(ALIAS).filter((k) => !NOT_PATRIARCH.has(k)));
 // Printed spellings that must not be forced onto a different portal id.
 const REFUSE = new Set(['iudai']);

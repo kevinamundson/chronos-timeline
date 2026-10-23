@@ -1,9 +1,9 @@
 {
   "$schema": "../../schema/person.schema.json",
-  "id": "cyrus",
+  "id": "ptolemie-lagi",
   "type": "person",
-  "title": "Cyrus",
-  "summary": "Cyrus is dated in Raleigh's chronological table (1617), column Persia, by a yeere of the World. No tier 1–4 chronology dates this person.",
+  "title": "Ptolemie Lagi",
+  "summary": "Ptolemie Lagi is dated in Raleigh's chronological table (1617), column (no column title), by a yeere of the World. No tier 1–4 chronology dates this person.",
   "description": "Added from the Raleigh import (The History of the World, 1617). Raleigh is display-only. He gives a yeere of the World, not a BC year, and no tier 1–4 chronology dates this person, so there is no sort year.",
   "sorting_year": null,
   "sorting_basis": {
@@ -52,14 +52,14 @@
       },
       {
         "source": "raleigh-history-of-the-world",
-        "date": "1 Cyrus 7.",
-        "year_am": 3495,
+        "date": "1 1. Ptolemie Lagi, 39.",
+        "year_am": 3709,
         "year_bc_ad": null,
         "precision": "year",
-        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 790a",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 792a",
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
-        "note": "Year cell \"4177 3495\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 7 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Persia.."
+        "note": "Year cell \"4391 3709\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 39 at the end of the name is the reign length he prints. The end year is not printed on this row."
       }
     ]
   },
@@ -73,7 +73,7 @@
     {
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
-      "locator": "Chronological Table, sig. 790a"
+      "locator": "Chronological Table, sig. 792a"
     }
   ]
 }
