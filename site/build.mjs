@@ -321,14 +321,18 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
 {
   const items = [
     ...events.filter((e) => e.sorting_year != null).map((e) => ({ id: e.id, group: 'events', title: e.title, y: e.sorting_year, yEnd: e.chronologies.find((c) => c === sortingEntry(e.chronologies, e.sorting_basis))?.year_bc_ad_end ?? null, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 })),
-    ...people.filter((p) => p.sorting_year != null).map((p) => ({ id: p.id, group: 'people', title: p.title, y: p.sorting_year, label: `born ${yearLabel(p.sorting_year)}`, tier: tierCls(p), url: urlOf(p), order: 0 })),
+    ...people.filter((p) => p.sorting_year != null).map((p) => {
+      const end = tierYear(p.dates?.death) || tierYear(p.dates?.translated);
+      const yEnd = end && end.y != null && end.y > p.sorting_year ? end.y : null;
+      return { id: p.id, group: 'people', title: p.title, y: p.sorting_year, yEnd, label: yEnd != null ? `${yearLabel(p.sorting_year)} – ${yearLabel(yEnd)}` : `born ${yearLabel(p.sorting_year)}`, tier: tierCls(p), url: urlOf(p), order: 0 };
+    }),
   ];
   const chrono = [...events].sort(sortKey);
   const undated = [...events, ...people].filter((r) => r.sorting_year == null);
   const body = `
 <section class="hero">
   <h1>Universal Ancient History Timeline</h1>
-  <p class="lede">From Creation to Solomon's Temple, sorted by the <a href="/chronologies/">Chronological Framework of Ancient History</a> (CFAH), with Ussher–Jones, Ussher, James B. Jordan, Scripture, Josephus, Raleigh and the Annals of Clonmacnoise shown side by side.</p>
+  <p class="lede">A timeline of the mighty works of God among the nations, beginning at Creation and drawn from the earliest sources available. Records are sorted by the <a href="/chronologies/">Chronological Framework of Ancient History</a> (CFAH), with Scripture as the infallible standard. Other chronologies (Ussher–Jones, Ussher, Jordan, Josephus, Herodotus, Raleigh, the Irish annals, and more) are shown side by side for comparison.</p>
 </section>
 <section class="card" aria-labelledby="tl-h">
   <div class="section-head"><h2 id="tl-h">Timeline</h2>
@@ -337,9 +341,11 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
       <button type="button" data-tl="out" aria-label="Zoom out">−</button>
       <button type="button" data-tl="fit">Show all</button>
     </div></div>
-  <p class="small muted">Drag or swipe to scroll, pinch or use the buttons to zoom. Select an item to open it. Axis years are BC.</p>
-  <div id="timeline" class="timeline" aria-describedby="tl-alt"></div>
-  <ul class="legend small" aria-label="Sort tier legend">${Object.entries(TIERS).filter(([k]) => k !== 'none').map(([, t]) => `<li><span class="swatch tier-${t.cls}" aria-hidden="true"></span>${esc(t.label)}</li>`).join('')}</ul>
+  <p class="small muted">Drag, swipe, or use the scroll bars. Tier 1 is on. Turn other dating tiers on for more detail. Select an item to open it. Axis years are BC.</p>
+  <div class="tl-frame">
+    <div id="timeline" class="timeline home-timeline" aria-describedby="tl-alt"></div>
+  </div>
+  <div class="tier-toggles" role="group" aria-label="Dating tiers">${Object.entries(TIERS).filter(([k]) => k !== 'none').map(([k, t]) => `<button type="button" class="tier-toggle" data-tier-toggle="${t.cls}" aria-pressed="${k === 'cfah-anchor' ? 'true' : 'false'}"><span class="swatch tier-${t.cls}" aria-hidden="true"></span>${esc(t.label)}</button>`).join('')}</div>
   <noscript><p>The interactive timeline needs JavaScript. The chronological list below has the same events.</p></noscript>
 </section>
 <section class="card" aria-labelledby="map-h">
@@ -356,7 +362,7 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
 </section>
 ${jsonScript('tl-data', items)}
 ${jsonScript('map-data', locations.filter((l) => l.lat != null && l.lng != null).map(locPayload))}`;
-  out('index.html', page({ title: 'Timeline', desc: 'Young-Earth Creationist ancient history timeline sorted by CFAH.', body, path: '/', pagefind: false,
+  out('index.html', page({ title: 'Timeline', desc: 'A Young-Earth Creation timeline of the mighty works of God among the nations, drawn from the earliest sources and sorted by CFAH.', body, path: '/', pagefind: false,
     extraHead: `<link rel="stylesheet" href="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.css">${leafletHead}`,
     scripts: `<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>${leafletScript}<script src="/assets/app.js" defer></script>` }));
 }

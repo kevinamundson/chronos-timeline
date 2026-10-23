@@ -29,28 +29,89 @@ async function open(path, { width = 1280, height = 900, shot, fullPage = true, s
   return { ctx, page, errors, external, status: resp.status(), shot: async () => shot && page.screenshot({ path: join(SHOTS, shot), fullPage }) };
 }
 
+async function scrollBars(page) {
+  return page.evaluate(() => {
+    function box(sel) {
+      const el = document.querySelector(sel);
+      const thumb = el?.querySelector('.tl-scroll-thumb');
+      if (!el || !thumb) return null;
+      const er = el.getBoundingClientRect();
+      const tr = thumb.getBoundingClientRect();
+      const cs = getComputedStyle(thumb);
+      return { w: er.width, h: er.height, tw: tr.width, th: tr.height, opacity: cs.opacity, visibility: cs.visibility };
+    }
+    return { h: box('.tl-hscroll'), v: box('.tl-vscroll') };
+  });
+}
+function barsVisible(b) {
+  if (!b?.h || !b?.v) return false;
+  return b.h.w > 40 && b.h.h >= 12 && b.h.tw >= 20 && b.h.th >= 8 && b.h.opacity === '1' && b.h.visibility !== 'hidden'
+    && b.v.h > 40 && b.v.w >= 12 && b.v.tw >= 8 && b.v.th >= 20 && b.v.opacity === '1' && b.v.visibility !== 'hidden';
+}
+
 // Home (desktop)
 {
   const o = await open('/', { shot: 'home-desktop.png' });
+  await o.page.waitForSelector('.vis-timeline .vis-item', { timeout: 8000 });
+  await o.page.waitForSelector('.tl-hscroll .tl-scroll-thumb', { timeout: 8000 });
   const tl = await o.page.locator('.vis-timeline .vis-item').count();
   const markers = await o.page.locator('#map .leaflet-marker-icon').count();
   const tiles = await o.page.locator('#map img.leaflet-tile-loaded').count();
   const axis = await o.page.locator('.vis-time-axis .vis-text.vis-minor:not(.vis-measure)').allTextContents();
+  const lede = await o.page.locator('.lede').innerText();
   check('home: HTTP 200', o.status === 200);
   check('home: no console errors', o.errors.length === 0, o.errors.join(' | '));
+  check('home: lede states the mighty works of God among the nations', lede.includes('mighty works of God among the nations') && !/temple/i.test(lede), lede.slice(0, 160));
   check('home: timeline items rendered', tl > 0, `${tl} items`);
   check('home: axis labels are BC', axis.some((t) => / BC$/.test(t)) && !axis.some((t) => /^-/.test(t)), axis.slice(0, 6).join(', '));
-  // AD side: zoom the home timeline to AD 300-500 and check labels and an AD item (Generations import)
+  const toggles = await o.page.locator('[data-tier-toggle]').evaluateAll((els) => els.map((e) => ({ tier: e.getAttribute('data-tier-toggle'), pressed: e.getAttribute('aria-pressed') })));
+  check('home: Tier 1 on and other dating tiers off', toggles.length >= 6 && toggles.every((t) => t.pressed === (t.tier === 't1' ? 'true' : 'false')), JSON.stringify(toggles));
+  const groups = (await o.page.locator('.vis-labelset .vis-label').allInnerTexts()).map((t) => t.trim());
+  check('home: people group is labeled People', groups.includes('People') && !groups.some((t) => /People \(birth\)/.test(t)), groups.join(' | '));
+  // The People row sits under the stacked Events group, so vis omits it until the timeline is scrolled.
+  await o.page.locator('.tl-vscroll').focus();
+  for (let i = 0; i < 40; i++) {
+    const seen = await o.page.evaluate(() => [...document.querySelectorAll('.vis-item.vis-range a.tl-link')].some((a) => a.textContent === 'Adam'));
+    if (seen) break;
+    await o.page.keyboard.press('PageDown');
+  }
+  const adam = await o.page.evaluate(() => {
+    const el = [...document.querySelectorAll('.vis-item.vis-range')].find((n) => n.querySelector('a.tl-link')?.textContent === 'Adam');
+    if (!el) return null;
+    const r = el.getBoundingClientRect();
+    return { w: r.width, label: el.querySelector('a.tl-link')?.getAttribute('aria-label') || '' };
+  });
+  check('home: Adam renders as a lifespan bar', !!adam && adam.w > 30 && /4004 BC/.test(adam.label) && /3074 BC/.test(adam.label), JSON.stringify(adam));
+  for (let i = 0; i < 40; i++) await o.page.keyboard.press('PageUp');
+  await o.page.waitForFunction(() => {
+    const h = document.querySelector('.tl-hscroll')?.getBoundingClientRect();
+    const v = document.querySelector('.tl-vscroll')?.getBoundingClientRect();
+    return h && v && h.width > 40 && h.height >= 12 && v.height > 40 && v.width >= 12;
+  }, null, { timeout: 8000 }).catch(() => {});
+  const bars0 = await scrollBars(o.page);
+  await o.page.waitForTimeout(1000);
+  const bars1 = await scrollBars(o.page);
+  check('home: scroll bars stay visible', barsVisible(bars0) && barsVisible(bars1), JSON.stringify(bars1));
+  const before = tl;
+  await o.page.locator('[data-tier-toggle="t2"]').click();
+  await o.page.waitForFunction((n) => document.querySelectorAll('.vis-timeline .vis-item').length > n, before, { timeout: 5000 }).catch(() => {});
+  const mid = await o.page.locator('.vis-timeline .vis-item').count();
+  check('home: turning Tier 2 on adds items', mid > before, `${before} -> ${mid}`);
+  await o.page.locator('[data-tier-toggle="t2"]').click();
+  await o.page.waitForFunction((n) => document.querySelectorAll('.vis-timeline .vis-item').length === n, before, { timeout: 5000 }).catch(() => {});
+  // AD side: Provisional holds Council of Nicaea, so turn that tier on, then zoom to AD 300-500.
   const adItems = await o.page.evaluate(() => JSON.parse(document.getElementById('tl-data').textContent).filter((i) => i.y > 0).length);
   if (adItems) {
     await o.page.locator('[data-tl="in"]').first().count();
     const win0 = await o.page.evaluate(() => { const w = window.__timeline?.getWindow(); return w ? [w.start.getTime(), w.end.getTime()] : null; });
+    await o.page.locator('[data-tier-toggle="tp"]').click();
     const adAxis = await o.page.evaluate(() => { const tl = window.__timeline; if (!tl) return null; const d = (y) => { const x = new Date(Date.UTC(2000, 6, 1)); x.setUTCFullYear(y - 1); return x; }; tl.setWindow(d(300), d(500), { animation: false }); return true; });
     await o.page.waitForTimeout(400);
     const ax2 = await o.page.locator('.vis-time-axis .vis-text.vis-minor:not(.vis-measure)').allTextContents();
     check('home: AD axis labels read "AD n" with no year 0', adAxis === null || (ax2.some((t) => /^AD \d+$/.test(t)) && !ax2.some((t) => /^AD 0$|^-/.test(t))), ax2.slice(0, 6).join(', '));
     const nic = await o.page.locator('.vis-item', { hasText: 'Council of Nicaea' }).count();
     check('home: AD item (Council of Nicaea) rendered', adAxis === null || nic > 0, `${adItems} AD items in data`);
+    await o.page.locator('[data-tier-toggle="tp"]').click();
     if (win0) { await o.page.evaluate((w) => window.__timeline.setWindow(new Date(w[0]), new Date(w[1]), { animation: false }), win0); await o.page.waitForTimeout(400); }
   }
   check('home: map markers rendered', markers > 0, `${markers} markers, ${tiles} OSM tiles loaded`);
@@ -66,10 +127,12 @@ async function open(path, { width = 1280, height = 900, shot, fullPage = true, s
 // Home (mobile, light + dark)
 for (const scheme of ['light', 'dark']) {
   const o = await open('/', { width: 390, height: 844, shot: `home-mobile${scheme === 'dark' ? '-dark' : ''}.png`, scheme });
+  await o.page.waitForSelector('.tl-hscroll .tl-scroll-thumb', { timeout: 8000 }).catch(() => {});
   await o.shot();
   check(`home mobile (${scheme}): no console errors`, o.errors.length === 0, o.errors.join(' | '));
   const overflow = await o.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
   check(`home mobile (${scheme}): no horizontal page overflow`, !overflow);
+  check(`home mobile (${scheme}): scroll bars stay visible`, barsVisible(await scrollBars(o.page)));
   await o.ctx.close();
 }
 // Record pages

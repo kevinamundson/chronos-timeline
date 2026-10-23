@@ -27,15 +27,32 @@
     var moment = vis.moment;
     var person = !Array.isArray(raw) && raw.mode === 'person';
     var items = person ? raw.items : raw;
-    var data = new vis.DataSet(items.map(function (it) {
+    function visItem(it) {
       var cls = 'tier-' + it.tier + (person ? (it.own ? ' own' : ' ctx') : '');
       var label = it.title + ' — ' + it.label + (person && !it.own ? ' (context)' : '');
-      return { id: it.group + ':' + it.id, group: it.group, content: it.title, start: toDate(it.y), type: 'point',
-        title: label, aria: label, className: cls, url: it.url, own: !!it.own, ord: it.y * 100 + (it.order || 0) };
-    }));
+      var range = it.group === 'people' && it.yEnd != null && it.yEnd !== it.y;
+      var row = { id: it.group + ':' + it.id, group: it.group, content: it.title, start: toDate(it.y), type: range ? 'range' : 'point',
+        title: label, aria: label, className: cls, url: it.url, own: !!it.own, ord: it.y * 100 + (it.order || 0), tier: it.tier };
+      if (range) row.end = toDate(it.yEnd);
+      return row;
+    }
+    var built = items.map(visItem);
+    function tiersOn() {
+      var buttons = document.querySelectorAll('[data-tier-toggle]');
+      if (!buttons.length) return null;
+      var on = {};
+      [].forEach.call(buttons, function (b) { if (b.getAttribute('aria-pressed') === 'true') on[b.getAttribute('data-tier-toggle')] = true; });
+      return on;
+    }
+    function shownItems() {
+      var on = tiersOn();
+      var list = on ? built.filter(function (it) { return on[it.tier]; }) : built;
+      return list.map(function (it) { return Object.assign({}, it); });
+    }
+    var data = new vis.DataSet(shownItems());
     var groups = person
       ? new vis.DataSet([{ id: 'own', content: raw.person + '’s life', order: 1 }, { id: 'context', content: 'Context', order: 2, className: 'grp-ctx' }])
-      : new vis.DataSet([{ id: 'events', content: 'Events' }, { id: 'people', content: 'People (birth)' }]);
+      : new vis.DataSet([{ id: 'events', content: 'Events', order: 1 }, { id: 'people', content: 'People', order: 2 }]);
     var ys = items.map(function (i) { return i.y; });
     var min = person ? raw.start : Math.min.apply(null, ys), max = person ? raw.stop : Math.max.apply(null, ys);
     // Home opens on the ancient span (to AD 100) as before; later (AD) items are reachable by panning/zooming.
@@ -81,13 +98,139 @@
         if (a === 'in') timeline.zoomIn(0.5); else if (a === 'out') timeline.zoomOut(0.5); else timeline.setWindow(toDate(min - pad), toDate(max + padR));
       });
     });
+    document.querySelectorAll('[data-tier-toggle]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var pressed = b.getAttribute('aria-pressed') === 'true';
+        b.setAttribute('aria-pressed', pressed ? 'false' : 'true');
+        var next = shownItems();
+        data.clear();
+        if (next.length) data.add(next);
+        tlEl.setAttribute('data-ready', String(next.length));
+      });
+    });
+    if (!person) mountHomeScrollbars(timeline, tlEl, toDate(min - 500), toDate(Math.min(max + 2000, new Date().getUTCFullYear() + 25)));
     // Safety net: if a dot was still measured before styles applied, rebuild the items once.
     requestAnimationFrame(function () {
       var bad = [].some.call(tlEl.querySelectorAll('.vis-item.vis-point .vis-dot'), function (d) { return d.offsetWidth > 40; });
       if (bad) { var all = data.get(); data.clear(); data.add(all); }
-      tlEl.setAttribute('data-ready', String(items.length));
+      tlEl.setAttribute('data-ready', String(data.get().length));
     });
   });
+
+  function mountHomeScrollbars(timeline, tlEl, axisMin, axisMax) {
+    var frame = tlEl.parentElement;
+    if (!frame || !frame.classList.contains('tl-frame')) return;
+    function bar(className, orientation, label) {
+      var el = document.createElement('div');
+      el.className = className;
+      el.setAttribute('role', 'scrollbar');
+      el.setAttribute('aria-orientation', orientation);
+      el.setAttribute('aria-controls', 'timeline');
+      el.setAttribute('aria-label', label);
+      el.tabIndex = 0;
+      var thumb = document.createElement('div');
+      thumb.className = 'tl-scroll-thumb';
+      el.appendChild(thumb);
+      frame.appendChild(el);
+      return { el: el, thumb: thumb };
+    }
+    var h = bar('tl-hscroll', 'horizontal', 'Timeline position');
+    var v = bar('tl-vscroll', 'vertical', 'Timeline rows');
+    function panel() { return tlEl.querySelector('.vis-panel.vis-left'); }
+    function syncH() {
+      var win = timeline.getWindow();
+      var a0 = axisMin.getTime(), a1 = axisMax.getTime();
+      var span = Math.max(1, a1 - a0);
+      var start = win.start.getTime(), end = win.end.getTime();
+      var width = Math.min(1, Math.max(0.04, (end - start) / span));
+      var left = (start - a0) / span;
+      if (left < 0) left = 0;
+      if (left > 1 - width) left = 1 - width;
+      h.thumb.style.left = (left * 100) + '%';
+      h.thumb.style.width = (width * 100) + '%';
+      h.el.setAttribute('aria-valuemin', '0');
+      h.el.setAttribute('aria-valuemax', '100');
+      h.el.setAttribute('aria-valuenow', String(Math.round(left * 100)));
+    }
+    function syncV() {
+      var p = panel();
+      if (!p) return;
+      var maxScroll = Math.max(0, p.scrollHeight - p.clientHeight);
+      var frac = maxScroll <= 0 ? 1 : Math.min(1, Math.max(0.08, p.clientHeight / p.scrollHeight));
+      var top = maxScroll <= 0 ? 0 : (p.scrollTop / maxScroll) * (1 - frac);
+      v.thumb.style.top = (top * 100) + '%';
+      v.thumb.style.height = (frac * 100) + '%';
+      v.el.setAttribute('aria-valuemin', '0');
+      v.el.setAttribute('aria-valuemax', String(Math.round(maxScroll)));
+      v.el.setAttribute('aria-valuenow', String(Math.round(p.scrollTop)));
+    }
+    function moveWindow(frac) {
+      var win = timeline.getWindow();
+      var span = win.end.getTime() - win.start.getTime();
+      var travel = Math.max(0, axisMax.getTime() - axisMin.getTime() - span);
+      var start = axisMin.getTime() + Math.max(0, Math.min(1, frac)) * travel;
+      timeline.setWindow(new Date(start), new Date(start + span), { animation: false });
+    }
+    function moveRows(frac) {
+      var p = panel();
+      if (!p) return;
+      var maxScroll = Math.max(0, p.scrollHeight - p.clientHeight);
+      p.scrollTop = Math.max(0, Math.min(1, frac)) * maxScroll;
+    }
+    function drag(el, vertical, onMove) {
+      el.addEventListener('pointerdown', function (e) {
+        if (e.button != null && e.button !== 0) return;
+        el.setPointerCapture(e.pointerId);
+        var rect = el.getBoundingClientRect();
+        var thumb = el.querySelector('.tl-scroll-thumb').getBoundingClientRect();
+        var along = vertical ? (e.clientY - rect.top - thumb.height / 2) : (e.clientX - rect.left - thumb.width / 2);
+        var track = Math.max(1, (vertical ? rect.height - thumb.height : rect.width - thumb.width));
+        onMove(along / track);
+        function move(ev) {
+          var r = el.getBoundingClientRect();
+          var th = el.querySelector('.tl-scroll-thumb').getBoundingClientRect();
+          var pos = vertical ? (ev.clientY - r.top - th.height / 2) : (ev.clientX - r.left - th.width / 2);
+          var len = Math.max(1, (vertical ? r.height - th.height : r.width - th.width));
+          onMove(pos / len);
+        }
+        function up() {
+          el.removeEventListener('pointermove', move);
+          el.removeEventListener('pointerup', up);
+          el.removeEventListener('pointercancel', up);
+        }
+        el.addEventListener('pointermove', move);
+        el.addEventListener('pointerup', up);
+        el.addEventListener('pointercancel', up);
+        e.preventDefault();
+      });
+    }
+    drag(h.el, false, moveWindow);
+    drag(v.el, true, moveRows);
+    h.el.addEventListener('keydown', function (e) {
+      var win = timeline.getWindow();
+      var step = (win.end.getTime() - win.start.getTime()) * (e.key === 'PageDown' || e.key === 'PageUp' ? 0.8 : 0.1);
+      var dir = (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown') ? 1 : (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') ? -1 : 0;
+      if (!dir) return;
+      timeline.setWindow(new Date(win.start.getTime() + dir * step), new Date(win.end.getTime() + dir * step), { animation: false });
+      e.preventDefault();
+    });
+    v.el.addEventListener('keydown', function (e) {
+      var p = panel();
+      if (!p) return;
+      var page = Math.max(24, p.clientHeight * 0.8);
+      var step = (e.key === 'PageDown' || e.key === 'PageUp') ? page : 40;
+      var dir = (e.key === 'ArrowDown' || e.key === 'PageDown') ? 1 : (e.key === 'ArrowUp' || e.key === 'PageUp') ? -1 : 0;
+      if (!dir) return;
+      p.scrollTop += dir * step;
+      e.preventDefault();
+    });
+    timeline.on('rangechanged', syncH);
+    timeline.on('changed', function () { syncH(); syncV(); });
+    var side = panel();
+    if (side) side.addEventListener('scroll', syncV);
+    syncH();
+    syncV();
+  }
 
   // ---------- Maps ----------
   var mapEl = document.getElementById('map') || document.getElementById('locmap');
