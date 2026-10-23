@@ -701,4 +701,4 @@ People taken from the table now have a modern English display title. Raleigh's p
 
 No BC year was added. To the Reader, sig. 780b, says: "This IVLIAN Perioà, after the present accompt, alwayes exceedes the yeares of the World by 682." His example is Jehoshaphat beginning in the 3774th year of the Julian Period, the 3092nd of the World, and the 99th of the Temple. 3774 − 3092 is 682. He does not state a year before Christ, and he does not give the epoch that would turn that offset into one. `year_bc_ad` on his entries stays null. "seuen hundred and fourtie yeeres before Christ borne" dates the Erythraean Sibyl. It is not a rule for turning a yeere of the World into a year before Christ.
 
-Say if a parenthetical should show the Julian year he already prints in the year cell, or a derived BC year labelled as derived from an epoch he does not state.
+Decision: Raleigh stays AM only. No BC parenthetical will be added. `year_bc_ad` on his entries stays null.
