@@ -6,6 +6,7 @@ import { readFileSync, readdirSync, writeFileSync, mkdirSync, rmSync, cpSync, ex
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { BOOKS as BLB_BOOKS, blbFromOsis, blbFromText } from '../scripts/blb.mjs';
+import { loadChronologicalTable, toCsv, toMarkdown, toXls } from '../scripts/raleigh/table.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..');
@@ -262,7 +263,7 @@ ${extraHead}
     <nav aria-label="Primary"><ul>
       <li><a href="/"${path === '/' ? ' aria-current="page"' : ''}>Timeline</a></li>
       <li><a href="/browse/"${path === '/browse/' ? ' aria-current="page"' : ''}>Browse</a></li>
-      <li><a href="/chronologies/"${path === '/chronologies/' ? ' aria-current="page"' : ''}>Chronologies</a></li>
+      <li><a href="/chronologies/"${path === '/chronologies/' || path.startsWith('/chronologies/') ? ' aria-current="page"' : ''}>Chronologies</a></li>
       <li><a href="/gallery/"${path === '/gallery/' ? ' aria-current="page"' : ''}>Charts</a></li>
       <li><a href="/about/"${path === '/about/' ? ' aria-current="page"' : ''}>About</a></li>
     </ul></nav>
@@ -544,12 +545,111 @@ ${sourcesSection(m)}</article>`;
 <ol class="tiers">${rule.tiers.map((t) => `<li><span class="tier tier-${['t1', 't2', 't3', 't4'][t.rank - 1]}">${esc(TIERS[t.tier]?.label || t.tier)}</span> <span class="muted small">${esc(t.select)}</span></li>`).join('')}</ol>
 <p class="small muted">${esc(rule.fallbacks)}</p>${kingDoc.lists.length ? `<p><a href="/king-lists/">CFAH king lists and dynasty tables</a></p>` : ''}</section>
 ${[...chronologies].sort((a, b) => a.sort_priority - b.sort_priority).map((c) => `<section class="card" id="${esc(c.id)}"><h2>${esc(c.name)}${c.primary ? ' <span class="tag tag-t1">primary</span>' : ''}</h2>
+${c.id === 'raleigh-history-of-the-world' ? '<p><a href="/chronologies/raleigh-chronological-table/">A Chronological Table</a></p>' : ''}
 ${c.authors?.length ? `<p class="muted">${esc(c.authors.join(', '))}</p>` : ''}<p>${esc(c.description)}</p>
 ${c.year_conventions ? `<p class="small muted">${esc(c.year_conventions)}</p>` : ''}
 ${c.references?.length ? `<ul class="links">${uniqSrc(c.references).map((s) => `<li>${ext(s.url, esc(s.title))} <span class="tag">${esc(s.access)}</span></li>`).join('')}</ul>` : ''}
 ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) => `<li><span class="flag flag-oq">Open question</span> ${esc(q)}</li>`).join('')}</ul>` : ''}</section>`).join('')}
 <section class="card" id="sources"><h2>All free sources</h2><ul class="links">${sources.map((s) => `<li>${s.superseded_for_links_by ? `${esc(s.title)} <span class="tag">provenance only; links use ${esc(sourceById[s.superseded_for_links_by]?.title || s.superseded_for_links_by)}</span>` : ext(s.url, esc(s.title))}${s.authors?.length ? ` <span class="muted">— ${esc(s.authors.join(', '))}${s.year ? `, ${esc(s.year)}` : ''}</span>` : ''} <span class="tag">${esc(s.access)}</span>${s.license_note ? `<div class="small muted">${esc(s.license_note)}</div>` : ''}</li>`).join('')}</ul></section>`;
   out('chronologies/index.html', page({ title: 'Chronologies', desc: 'Chronologies used and the CFAH-weighted sorting rule.', body, path: '/chronologies/', type: 'Chronology' }));
+}
+
+// Raleigh's 1617 chronological table. Years stay the Julian Period and the yeere of the World.
+{
+  const table = loadChronologicalTable();
+  const base = '/chronologies/raleigh-chronological-table';
+  const files = {
+    modern: { csv: 'a-chronological-table.csv', md: 'a-chronological-table.md', xls: 'a-chronological-table.xls' },
+    original: { csv: 'a-chronological-table-original-spelling.csv', md: 'a-chronological-table-original-spelling.md', xls: 'a-chronological-table-original-spelling.xls' },
+  };
+  const dir = join(DIST, 'chronologies/raleigh-chronological-table');
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, files.modern.csv), `\uFEFF${toCsv(table, 'modern')}`);
+  writeFileSync(join(dir, files.original.csv), `\uFEFF${toCsv(table, 'original')}`);
+  writeFileSync(join(dir, files.modern.md), toMarkdown(table, 'modern'));
+  writeFileSync(join(dir, files.original.md), toMarkdown(table, 'original'));
+  writeFileSync(join(dir, files.modern.xls), toXls(table, 'modern'));
+  writeFileSync(join(dir, files.original.xls), toXls(table, 'original'));
+
+  const spell = (original, modern) => (original === modern
+    ? esc(modern)
+    : `<span class="spell-modern">${esc(modern)}</span><span class="spell-original">${esc(original)}</span>`);
+  const chipLabel = (text) => {
+    const t = String(text || '').replace(/^(Iulian|Julian)\.?,?\s*/i, '').replace(/\s+/g, ' ').trim();
+    return (t.length > 32 ? `${t.slice(0, 30).trim()}…` : t) || 'Columns';
+  };
+  const rowHtml = (row, width) => {
+    const parts = [row.header
+      ? '<th scope="col" title="1617 sheet signature. This column is not in the printed table.">Sig.</th>'
+      : `<th scope="row">${esc(row.sig)}</th>`];
+    for (let i = 0; i < width; i++) {
+      const cell = row.cells[i];
+      if (cell?.covered) continue;
+      const span = Math.min(cell?.colSpan || 1, Math.max(1, width - i));
+      const down = cell?.rowSpan || 1;
+      const original = cell?.original || '';
+      const modern = cell?.modern || '';
+      const tag = row.header ? 'th' : 'td';
+      const attrs = `${row.header ? ' scope="col"' : ''}${span > 1 ? ` colspan="${span}"` : ''}${down > 1 ? ` rowspan="${down}"` : ''}${(original.length > 48 || modern.length > 48) ? ' class="prose"' : ''}`;
+      parts.push(`<${tag}${attrs}>${original || modern ? spell(original, modern) : ''}</${tag}>`);
+      i += span - 1;
+    }
+    return `<tr>${parts.join('')}</tr>`;
+  };
+  const downloadLinks = (mode) => ['csv', 'md', 'xls'].map((extName) => {
+    const label = { csv: 'CSV', md: 'Markdown', xls: 'Excel' }[extName];
+    const name = files[mode][extName];
+    return `<a download="${name}" href="${base}/${name}">${label}</a>`;
+  }).join('');
+  const src = sourceById['raleigh-history-of-the-world-1617'];
+  const sectionsHtml = table.sections.map((section, i) => {
+    const id = `raleigh-s-${i}`;
+    const headRow = section.rows[0];
+    const bodyRows = section.rows.slice(1);
+    return `<section class="card" id="${id}" aria-labelledby="${id}-h"><h2 id="${id}-h">${spell(section.heading.original, section.heading.modern)}</h2>
+<div class="table-wrap raleigh-wrap"><table class="chron raleigh"><caption class="visually-hidden">Sheet ${esc(section.sig)}</caption>
+<thead>${rowHtml(headRow, section.width)}</thead>
+<tbody>${bodyRows.map((row) => rowHtml(row, section.width)).join('')}</tbody></table></div></section>`;
+  }).join('\n');
+  const body = `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/chronologies/">Chronologies</a></li><li aria-current="page">A Chronological Table</li></ol></nav>
+<article id="raleigh-table" data-spelling="modern">
+<h1>A Chronological Table</h1>
+<p class="lede">${spell(table.heading.original, table.heading.modern)}</p>
+<section class="card"><p>Sir Walter Raleigh, <i>The History of the World</i> (1617), sheets ${esc(table.signatures[0])}–${esc(table.signatures[1])}. ${src ? ext(src.url, esc(src.title)) : ''}</p>
+<p>The years are the Julian Period and the yeere of the World, as printed. This page does not convert them. Modern spelling updates names and ordinary 1617 spellings. The figures stay as printed, including illegible marks and cells that give two figures.</p>
+<p>The Sig. column is the 1617 sheet. It is not a column of his table. <a href="/chronologies/#raleigh-history-of-the-world">Raleigh, The History of the World (1614/1617)</a></p>
+<div class="raleigh-toolbar">
+<div role="group" aria-label="Spelling">
+<button type="button" data-set-spelling="modern" aria-pressed="true">Modern spelling</button>
+<button type="button" data-set-spelling="original" aria-pressed="false">Original spelling</button>
+</div>
+<p class="raleigh-downloads"><span data-for="modern">${downloadLinks('modern')}</span><span data-for="original">${downloadLinks('original')}</span></p>
+</div>
+<noscript><p class="small">Original spelling files: ${downloadLinks('original')}</p></noscript>
+<nav aria-label="Sections of the table"><ul class="chip-list">${table.sections.map((section, i) => `<li><a href="#raleigh-s-${i}">${esc(section.sig)} ${spell(chipLabel(section.heading.original), chipLabel(section.heading.modern))}</a></li>`).join('')}</ul></nav>
+</section>
+${sectionsHtml}
+</article>`;
+  out('chronologies/raleigh-chronological-table/index.html', page({
+    title: 'A Chronological Table',
+    desc: "Raleigh's 1617 chronological table: years of the Julian Period and the yeere of the World.",
+    body,
+    path: '/chronologies/raleigh-chronological-table/',
+    type: 'Chronology',
+    scripts: `<script>
+document.getElementById('raleigh-table')?.addEventListener('click', (event) => {
+  const button = event.target.closest('[data-set-spelling]');
+  if (!button) return;
+  const root = document.getElementById('raleigh-table');
+  const mode = button.getAttribute('data-set-spelling');
+  if (mode !== 'modern' && mode !== 'original') return;
+  root.dataset.spelling = mode;
+  for (const el of root.querySelectorAll('[data-set-spelling]')) el.setAttribute('aria-pressed', el === button ? 'true' : 'false');
+});
+</script>`,
+  }));
+  const nRows = table.sections.reduce((n, s) => n + s.rows.length, 0);
+  console.log(`Raleigh chronological table: ${table.sections.length} sections, ${nRows} rows (${table.dataRows} under the headings), ${table.signatures[0]}–${table.signatures[1]}`);
 }
 
 // Gallery
@@ -616,9 +716,9 @@ out('404.html', page({ title: 'Not found', path: '', pagefind: false, body: '<h1
     if (outHtml !== html) writeFileSync(f, outHtml);
   }
 }
-writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/pagefind/*\n  Cache-Control: public, max-age=0, must-revalidate\n`);
+writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/pagefind/*\n  Cache-Control: public, max-age=0, must-revalidate\n/chronologies/raleigh-chronological-table/*.csv\n  Content-Type: text/csv; charset=utf-8\n/chronologies/raleigh-chronological-table/*.md\n  Content-Type: text/markdown; charset=utf-8\n/chronologies/raleigh-chronological-table/*.xls\n  Content-Type: application/vnd.ms-excel\n`);
 
 mkdirSync(join(DIST, 'data'), { recursive: true });
 writeFileSync(join(DIST, 'data', 'person-timelines.json'), JSON.stringify(Object.fromEntries(Object.entries(personTimelines).map(([k, t]) => [k, t.none ? { none: true, notes: t.notes } : { window: [t.start, t.stop], birthTier: t.birth?.tier || null, endTier: t.end?.tier || null, endKind: t.endKind, own: t.ownCount, context: t.ctxCount, notes: t.notes, ownUndated: t.ownUndated.map((e) => e.id) }])), null, 1));
 const n = events.length + people.length + locations.length + maps.length;
-console.log(`Built ${n} record pages (${events.length} events, ${people.length} people, ${locations.length} places, ${maps.length} maps) + home, browse, chronologies, gallery (${charts.length} CFAH charts), about, search, 404 → ${DIST}`);
+console.log(`Built ${n} record pages (${events.length} events, ${people.length} people, ${locations.length} places, ${maps.length} maps) + home, browse, chronologies, Raleigh chronological table, gallery (${charts.length} CFAH charts), about, search, 404 → ${DIST}`);

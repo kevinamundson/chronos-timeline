@@ -16,6 +16,7 @@
 import { readFileSync, writeFileSync, readdirSync, unlinkSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { modernTitle } from './spelling.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..', '..');
@@ -49,73 +50,6 @@ const ALIAS = {
   jehu: 'jehu', iehu: 'jehu', leroboam: 'jeroboam-i', cyrus: 'cyrus-the-great',
   lephta: 'jephthah', iair: 'jair', thola: 'tola',
 };
-// Display titles. The key is the printed name after norm(). Raleigh's own spelling is kept as alt_names.
-const MODERN = {
-  aegysthus: 'Aegisthus',
-  amphytryon: 'Amphitryon',
-  acoris: 'Achoris',
-  asarhaddon: 'Esarhaddon',
-  athalia: 'Athaliah',
-  'belochus priseus': 'Belochus Priscus',
-  'belochus the second': 'Belochus II',
-  bocchorus: 'Bocchoris',
-  'cecrops the second': 'Cecrops II',
-  cham: 'Ham (Egypt)',
-  'cyras in persia': 'Cyrus in Persia',
-  'darius hystaspis': 'Darius Hystaspes',
-  demtrius: 'Demetrius',
-  erictheus: 'Erechtheus',
-  ericthonius: 'Erichthonius',
-  euilmerodach: 'Evil-merodach',
-  euristheus: 'Eurystheus',
-  gedeon: 'Gideon',
-  iehoabaz: 'Jehoahaz',
-  iehoiakim: 'Jehoiakim',
-  ioas: 'Joash',
-  iosias: 'Josiah',
-  iosua: 'Joshua',
-  'iudas macchabaeus': 'Judas Maccabeus',
-  manasses: 'Manasseh',
-  neco: 'Necho',
-  nectanebus: 'Nectanebo',
-  'onias high priest': 'Onias the high priest',
-  othoniel: 'Othniel',
-  pandi: 'Pandion',
-  pekahia: 'Pekahiah',
-  priamus: 'Priam',
-  'ptolemie epiphanes': 'Ptolemy Epiphanes',
-  'ptolemie euergetes': 'Ptolemy Euergetes',
-  'ptolemie lagi': 'Ptolemy Lagus',
-  'sabacus the ethiopian': 'Sabaco the Ethiopian',
-  sarai: 'Sarah',
-  sethon: 'Sethos',
-  'syl alba': 'Alba Silvius',
-  'syl alladius': 'Silvius Alladius',
-  'syl amulius': 'Amulius',
-  'syl latinus': 'Latinus Silvius',
-  'syl posthumus': 'Silvius Postumus',
-  'syl procas': 'Procas Silvius',
-  'syl tybermus': 'Tiberinus Silvius',
-  'syluius aeneas': 'Aeneas Silvius',
-  tesamenus: 'Tisamenus',
-  thespeius: 'Thespius',
-  zeusippus: 'Zeuxippus',
-};
-function modernTitle(printed) {
-  let s = String(printed || '').replace(/[{}]/g, '').replace(/ˉ/g, 'm').replace(/\s+/g, ' ').trim();
-  // Look up the printed letters before expanding suspensions. "Pandiŏ" norms to "pandi";
-  // expanding ŏ first would look up "pandion" and miss the map.
-  const rawKey = norm(s);
-  if (MODERN[rawKey]) return MODERN[rawKey];
-  s = s.replace(/ŏ/g, 'on').replace(/▪/g, '.');
-  const key = norm(s);
-  if (MODERN[key]) return MODERN[key];
-  s = s.replace(/^AE/, 'Ae');
-  s = s.replace(/^Syl\.\s+/i, 'Silvius ');
-  s = s.replace(/^Syluius\b/, 'Silvius');
-  if (s[0] && s[0] === s[0].toLowerCase()) s = s[0].toUpperCase() + s.slice(1);
-  return s;
-}
 // "1. Name LENGTH" is a birth only for these. Kings and Nimrod are not in this set.
 const NOT_PATRIARCH = new Set(['nabuchodonosor', 'nabuchodonosor the great', 'hezekiah', 'ezechias', 'ezekias', 'ezekia', 'jehu', 'iehu', 'leroboam', 'cyrus', 'david', 'dauid', 'solomon', 'salomon', 'saul', 'samuel', 'nimrod']);
 const PATRIARCH = new Set(Object.keys(ALIAS).filter((k) => !NOT_PATRIARCH.has(k)));
