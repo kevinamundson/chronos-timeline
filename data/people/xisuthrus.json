@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "xisuthrus",
+  "type": "person",
+  "title": "Xisuthrus",
+  "alt_names": [
+    "Sisithrus"
+  ],
+  "summary": "Tenth antediluvian Chaldean king in Berossus, in whose time the extracts place the great flood. The text does not call him Noah.",
+  "description": "Added from the Cory import. Display only. Cory gives reign lengths and synchronisms, not a BC year this record can sort on, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Cory is display-only and gives none)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "cory",
+        "date": "“reigned eighteen sari”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 52; Berossus, ap. Apollodorus, ap. Syncellus and Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n96/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Xisuthrus, son of Otiartes. \"In his time the great Flood happened.\""
+      },
+      {
+        "source": "cory",
+        "date": "“reigned eighteen sari”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 60; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n104/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Xisuthrus, son of Ardates, \"who is called by them the tenth\". Same length as Apollodorus."
+      },
+      {
+        "source": "cory",
+        "date": "“the sum total of all the kings is ten ; and the period which they collectively reigned amounts to one hundred and twenty sari”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 52; Berossus, ap. Apollodorus, ap. Syncellus and Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n96/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Apollodorus's total. The flood entry records the parallel. The text does not name Noah, and Xisuthrus is not added to the Flood's people. CFAH dates the Flood 2348–2347 B.C. (AP-29). One hundred and twenty sari, at Abydenus's 3,600 years to a sarus, is the figure Polyhistor prints as 432,000 years (p. 60). That duration cannot sit before 2348 B.C."
+      },
+      {
+        "source": "cory",
+        "date": "“ten kings, and the term of their reigns to one hundred and twenty sari”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 54; Berossus, ap. Abydenus, ap. Syncellus and Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n98/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Abydenus's total. He does not print the 432,000 product."
+      },
+      {
+        "source": "cory",
+        "date": "“one hundred and twenty sari, or 432,000 years, reaching to the time of the Flood”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 60; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n104/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The 432,000 is printed in this edition, in Polyhistor's extract. It is not our product. The same parenthesis says the ten kings reach to the time of the Flood. Against CFAH AP-29 (2348–2347 B.C.) this is a different scale of time. Scripture (MT) governs. The figure is display only."
+      },
+      {
+        "source": "cory",
+        "date": "“on the fifteenth day of the month Desius there would be a Deluge”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 54; Berossus, ap. Abydenus, ap. Syncellus and Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n98/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The day of the month, as Abydenus gives it. Not a year."
+      },
+      {
+        "source": "cory",
+        "date": "“upon the fifteenth day of the month Dæsia there would be a flood”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 60; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n104/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Polyhistor's month-name for the same notice. A footnote says Dæsia is the 5th Macedonian month."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cory-ancient-fragments-1876"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
+    }
+  ]
+}

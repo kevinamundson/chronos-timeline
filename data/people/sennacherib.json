@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "sennacherib",
+  "type": "person",
+  "title": "Sennacherib",
+  "alt_names": [
+    "Senecherib",
+    "Sinecherim",
+    "Sinnecherim"
+  ],
+  "summary": "Assyrian king in the Polyhistor extracts of Berossus (Cory 1876).",
+  "description": "Added from the Cory import. Display only. Cory gives reign lengths and synchronisms, not a BC year this record can sort on, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Cory is display-only and gives none)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "cory",
+        "date": "“he reigned 18 years, and was cut off by a conspiracy”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 87; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n131/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Sinnecherim (Sennacherib), cut off by his son Ardu-Musanus. This is the first of two \"18 years\" in the edition."
+      },
+      {
+        "source": "cory",
+        "date": "“Sinecherim (Sennacherib) reigned 18 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 87; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n131/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The second \"18 years\", in the successors list. The two statements agree with each other."
+      },
+      {
+        "source": "cory",
+        "date": "“a period altogether of 88 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 88; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n132/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "From Sinecherim to Nabucodrossorus. Our check, not a figure of the text beyond the 88: 18 + 8 + 21 + 21 + 20 = 88, using the reigns printed from Sennacherib through Nabopolassar and not Nebuchadnezzar's 43. The 88 matches that sum."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cory-ancient-fragments-1876"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
+    }
+  ]
+}

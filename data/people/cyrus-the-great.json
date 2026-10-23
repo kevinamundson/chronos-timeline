@@ -123,6 +123,30 @@
         "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
         "source_text_id": "morecraft-christian-survey",
         "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca). Table \"Persian Kings in Bible History\" (OCR of the table was poor; read from the page image)."
+      },
+      {
+        "source": "cory",
+        "date": "“In his time Cyrus was king of Persia”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 32; Menander of Ephesus, ap. Josephus",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n76/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Synchronism only. No year is printed for Cyrus here."
+      },
+      {
+        "source": "cory",
+        "date": "“Cyrus reigned at Babylon 9 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 88; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n132/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "After Nabonidus fled. The next sentence says Cyrus was killed in the plain of Daas. No BC year is printed."
       }
     ]
   },
@@ -139,7 +163,8 @@
     "generations-preparing-2e",
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -147,6 +172,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
       "locator": "Book 1"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

@@ -62,6 +62,66 @@
         "source_text_id": "generations-preparing-2e",
         "note": null
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "cory",
+        "date": "“Nabuchodonosorus [Nebuchadnezzar] beseiged Tyre for thirteen years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 32; Menander of Ephesus, ap. Josephus",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n76/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "In the reign of Ithobalus [or, Ethbaal]. The edition prints \"beseiged\". A footnote says Menander does not say the city was taken. No reign length is given for this Ithobalus."
+      },
+      {
+        "source": "cory",
+        "date": "“Nabucodrossorus, (Nebuchadnezzar), reigned 43 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 88; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n132/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "First of two \"43 years\" on this page."
+      },
+      {
+        "source": "cory",
+        "date": "“a period altogether of 88 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 88; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n132/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "From Sinecherim to Nabucodrossorus. Our check, not a figure of the text beyond the 88: 18 + 8 + 21 + 21 + 20 = 88, using the reigns printed from Sennacherib through Nabopolassar and not Nebuchadnezzar's 43. The 88 matches that sum."
+      },
+      {
+        "source": "cory",
+        "date": "“Then Nabucodrossorus reigned 43 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 88; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n132/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Second \"43 years\" on this page, in the captivity narrative. Same length as the list above."
+      }
     ]
   },
   "events": [
@@ -74,7 +134,15 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cory-ancient-fragments-1876"
   ],
-  "related": []
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
+    }
+  ]
 }

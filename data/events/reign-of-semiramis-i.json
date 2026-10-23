@@ -68,6 +68,18 @@
       "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=from%20the%20present%20day%20to%20the%20time%20of",
       "source_text_id": "herodotus-rawlinson-roman-roads",
       "note": "Greek reckoning, from Herodotus's own day. DERIVED (not Herodotus's figure): CFAH-3 (AP-21): \"450 B.C. the time of Herodotus’ visit; plus, 1,600 years back to Semele; gives: 2050 B.C.–50 years for Semele/Semiramis I (2050–2000 B.C.)\". Derived by CFAH. Agrees: CFAH identifies Semele with Semiramis I and dates her reign 2036–1994 BC (AP-21), inside the derived 2050–2000 BC."
+    },
+    {
+      "source": "cory",
+      "date": "“reigned over the Assyrians 42 years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 91; Castor, ap. Eusebius",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n135/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Semiramis, after the death of Ninus. The fragment does not say \"Semiramis I\". The person record's CFAH note states \"Her 42-year reign\". The fragment prints the same length and no BC year."
     }
   ],
   "people": [
@@ -84,7 +96,8 @@
     "blb-biblehub",
     "cfah-3",
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "cory-ancient-fragments-1876"
   ],
   "free_source_links": [
     {
@@ -96,6 +109,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
       "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "related": [

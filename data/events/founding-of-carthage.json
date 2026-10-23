@@ -46,15 +46,30 @@
       "source_text_id": "generations-preparing",
       "note": "Timeline Review: \"Carthage Founded\".",
       "edition_note": "1st ed. (2020); not in 2nd ed. (2024): no dated statement for this was found in the 2nd ed. (2024)."
+    },
+    {
+      "source": "cory",
+      "date": "“In the seventh year of his reign, his sister (Dido), fled from him, and founded the city of Carthage in Libya (b.c. 878)”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 30; Menander of Ephesus, ap. Josephus",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n74/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "The parenthesis \"(b.c. 878)\" is printed in the sentence, immediately before the Josephus citation. It is not stored as year_bc_ad. Whether it is Menander's figure or the editor's gloss is open (G2). Generations, on founding-of-carthage, prints \"Sometime between 800 and 900 BC\" (provisional). 878, if it is a year, falls inside that range. It does not set the sort."
     }
   ],
-  "people": [],
+  "people": [
+    "phygmalion"
+  ],
   "locations": [],
   "maps": [],
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-preparing"
+    "generations-preparing",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -67,6 +82,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

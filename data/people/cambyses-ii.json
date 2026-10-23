@@ -82,6 +82,18 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=the%20seven%20months%20which%20were%20wanting%20to%20complete",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "The Magus (false Smerdis) reigns seven months."
+      },
+      {
+        "source": "cory",
+        "date": "“reigned 8 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 89; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n133/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The name is the last words of p. 88 (\"After him Cambyses\") and \"reigned 8 years\" is at the top of p. 89, followed by Darius."
       }
     ]
   },
@@ -91,7 +103,8 @@
   "scripture_refs": [],
   "sources": [
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "cory-ancient-fragments-1876"
   ],
   "related": [
     "cyrus-the-great"
@@ -101,6 +114,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3",
       "locator": "Book 3 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

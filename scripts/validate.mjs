@@ -250,6 +250,21 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
     for (const l of doc.free_source_links || []) { const s = srcDoc.sources.find((x) => x.id === l.source_id); if (s?.access === 'private-copy') err(rel, `private copy ${s.id} may not be listed in free_source_links`); }
   }
 }
+// Cory, Ancient Fragments (1876 Hodges): secondary display. Durations and sari, never a BC year, never a sort.
+{
+  const cory = chronDoc.chronologies.find((c) => c.id === 'cory');
+  if (cory && (cory.primary || !/SECONDARY DISPLAY/.test(cory.description))) err('data/chronologies.json', 'cory must be a non-primary SECONDARY DISPLAY chronology');
+  const CORY_SRC = new Set(srcDoc.sources.filter((s) => /^cory-/.test(s.id)).map((s) => s.id));
+  for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'cory' || doc.sorting_basis?.derived_from === 'cory') err(rel, 'cory may never set the sort');
+  for (const { rel, doc } of Object.values(records)) {
+    for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'cory')) {
+      if (e.year_bc_ad != null || e.year_bc_ad_end != null || e.year_am != null) err(rel, 'cory entries record the edition\'s own words only: year_bc_ad, year_bc_ad_end and year_am must be null (put derived years in the note, labelled DERIVED)');
+      if (!CORY_SRC.has(e.source_text_id)) err(rel, `cory entry needs source_text_id of a cory-* source, got "${e.source_text_id}"`);
+      if (!/p\. \d+/.test(e.citation || '')) err(rel, 'cory entry needs a "p. N" citation');
+      if (!(e.link || '').startsWith('https://archive.org/details/corysancientfrag00coryuoft/')) err(rel, 'cory entry link must point at the public-domain Internet Archive scan');
+    }
+  }
+}
 for (const { rel, doc } of sortingTargets) if (['jordan', 'jordan-compilation'].some((j) => doc.sorting_basis?.chronology === j || doc.sorting_basis?.derived_from === j)) err(rel, 'sorting_basis may not use a secondary Jordan chronology');
 
 // Masoretic Genesis 5 cross-check (KJV/MT figures: [id, age at named son, lifespan])

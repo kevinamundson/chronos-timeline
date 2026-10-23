@@ -27,6 +27,18 @@
       "cfah_basis": "anchor_point",
       "cfah_ap": "AP-42",
       "cfah_key": "cfah:ap-42:babylon-dynasty-5-arab"
+    },
+    {
+      "source": "cory",
+      "date": "“nine kings of the Arabians, 245 years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 85; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n129/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "CFAH on this event prints \"1477–1232 B.C.\" and does not print a length in years. The fragment prints 245 years and no BC year. Nothing is converted either way."
     }
   ],
   "people": [],
@@ -36,7 +48,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-5"
+    "cfah-5",
+    "cory-ancient-fragments-1876"
   ],
   "related": [
     "fall-of-akkad",
@@ -49,6 +62,11 @@
       "source_id": "cfah-5",
       "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
       "locator": "AP-42"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }
