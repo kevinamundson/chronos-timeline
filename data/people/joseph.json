@@ -115,6 +115,17 @@
         "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
         "source_text_id": "generations-preparing-2e",
         "note": "Left over from the 1st edition: it does not fit the same page's heading (sold at 17 in c. 1728 BC). Timeline Review 3 (p. 247) shows Joseph without dates. Differs from the sort year (1745 BC, ussher-jones) by 166 years."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "1. Ioseph. 110",
+        "year_am": 2260,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2942 2260 177\". The third printed figure 177 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 110 at the end of the name is the lifespan he prints. His table also prints the death at World 2369. 2260 + 110 is not 2369. Both figures are left as printed."
       }
     ],
     "death": [
@@ -183,6 +194,17 @@
         "source_text_id": "generations-preparing",
         "note": "Timeline Review pairs it with an asterisked 1631 BC (the book's Ussher-chronology equivalent). (p. 114) Differs from the ussher-jones death year (1635 BC) by 166 years.",
         "edition_note": "1st ed. (2020); not in 2nd ed. (2024): no dated statement for this was found in the 2nd ed. (2024)."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "The last yeere of Ioseph.",
+        "year_am": 2369,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"3051 2369 286\". The third printed figure 286 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
       }
     ]
   },
@@ -198,13 +220,24 @@
     "jones-chronology-ot-2002",
     "jordan-bc-6-6",
     "jordan-bc-6-7",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/30.htm#22",
       "locator": "Gen.30.22-Gen.30.24 ; Gen.41.46"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 783a"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 783b"
     }
   ],
   "related": [

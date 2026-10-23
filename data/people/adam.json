@@ -94,6 +94,17 @@
         "link": "https://biblicalhorizons.com/1994/04/01/6_04/",
         "source_text_id": "jordan-bc-6-4",
         "note": null
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "683 1. Adaˉ 920",
+        "year_am": 1,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 781b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"683 1. Adaˉ 920\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 920 at the end of the name is the lifespan he prints. His table also prints the death at World 930. 1 + 920 is not 930. Both figures are left as printed."
       }
     ],
     "death": [
@@ -160,6 +171,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 930.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Adam dyed about the end of this yeere.",
+        "year_am": 930,
+        "year_bc_ad": null,
+        "precision": "approximate",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 781b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"1612 930\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
       }
     ]
   },
@@ -174,13 +196,19 @@
     "ussher-annals-1658",
     "cfah-4",
     "jordan-bc-6-4",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/5.htm",
       "locator": "Genesis 5"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 781b"
     }
   ],
   "related": [

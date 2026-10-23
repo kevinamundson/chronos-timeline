@@ -119,6 +119,28 @@
         "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
         "source_text_id": "generations-preparing-2e",
         "note": "Timeline Review 2; also p. 247. The text (p. 152) says Gilgamesh began ten years before Abram's birth."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "1. Abram. 175",
+        "year_am": 2009,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2691 2009 352\". The third printed figure 352 is the column \"Floud\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 175 at the end of the name is the lifespan he prints. The same section (Book II, ch. I, §VIII, sig. 164a) also prints \"An. mundi 2008 dil. 352. natus Abraham, Eus. Aug. de Ciuit. Dei\", introduced with \"I conclude\" and naming Eusebius and Augustine. The narrative sentence and the chronological table both print 2009. The 2008 is not given a second year. His table also prints the death at World 2183. 2009 + 175 is not 2183. Both figures are left as printed."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "which happened in the yeere of the World, 2009.",
+        "year_am": 2009,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, ch. I, §VIII, sig. 164a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Narrative sentence. The chronological table prints the same yeere of the World. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. No BC conversion."
       }
     ],
     "death": [
@@ -185,6 +207,17 @@
         "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
         "source_text_id": "generations-preparing-2e",
         "note": "Timeline Review 2. Genesis gives Abraham 175 years, which would end in 1821 BC. Differs from the ussher death year (1821 BC) by 2 years."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Abraham dyed this yeere .",
+        "year_am": 2183,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2865 2183 100\". The third printed figure 100 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
       }
     ]
   },
@@ -200,13 +233,29 @@
     "jones-chronology-ot-2002",
     "jordan-bc-5-8",
     "jordan-bc-6-5",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/11.htm#26",
       "locator": "Gen.11.26-Gen.11.32 ; Gen.12.1-Gen.12.4"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782b"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 783a"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 164a"
     }
   ],
   "related": [

@@ -90,6 +90,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 874.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "1. Lamech. 777",
+        "year_am": 875,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 781b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"1557 875\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 777 at the end of the name is the lifespan he prints. His table also prints the death at World 1651. 875 + 777 is not 1651. Both figures are left as printed."
       }
     ],
     "death": [
@@ -156,6 +167,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 1651.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Lamech dyed.",
+        "year_am": 1651,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2333 1651\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
       }
     ]
   },
@@ -167,13 +189,24 @@
     "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-4",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/5.htm",
       "locator": "Genesis 5"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 781b"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782a"
     }
   ],
   "related": [

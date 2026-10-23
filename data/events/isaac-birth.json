@@ -80,14 +80,25 @@
     },
     {
       "source": "raleigh-history-of-the-world",
-      "date": "\"in the yeere 2109\"",
+      "date": "Isaac borne when Abraham was 100. yeeres old compleate 101. current.",
       "year_am": 2109,
       "year_bc_ad": null,
       "precision": "year",
-      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, ch. I, §IIII",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783a",
       "link": "https://texts.earlyprint.org/works/A10357.xml",
-      "note": "One year more than Ussher. The 1617 text puts Abraham's birth at AM 2008 (Book II, ch. I, §VIII), so 2109 does not follow from \"Abraham 100\" (Gen 21:5). Raleigh's Jacob (2169), Moses (2434) and flight to Midian (2474) are also one year above Ussher.",
-      "source_text_id": "raleigh-history-of-the-world-1617"
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Year cell \"2791 2109 26\". The third printed figure 26 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "1. Isaac 180",
+      "year_am": 2109,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Year cell \"2791 2109 26\". The third printed figure 26 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 180 at the end of the name is the lifespan he prints."
     }
   ],
   "people": [
@@ -114,6 +125,11 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/21.htm",
       "locator": "Gen.21.1-Gen.21.7"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 783a"
     }
   ],
   "related": [

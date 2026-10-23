@@ -93,6 +93,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 235.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "1. Enos 905",
+        "year_am": 236,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 781b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"918 236\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 905 at the end of the name is the lifespan he prints. His table also prints the death at World 1140. 236 + 905 is not 1140. Both figures are left as printed."
       }
     ],
     "death": [
@@ -163,6 +174,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Slip in the compilation: 235 + 905 = 1140 (Gen 5:11), as Jordan and the Masoretic arithmetic have; the chart prints 1130. Differs from Jordan's own published figure(s): AM 1140.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Enos dyed.",
+        "year_am": 1140,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"1822 1140\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
       }
     ]
   },
@@ -175,13 +197,24 @@
     "ussher-annals-1658",
     "cfah-4",
     "jordan-bc-6-4",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/5.htm",
       "locator": "Genesis 5"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 781b"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782a"
     }
   ],
   "related": [

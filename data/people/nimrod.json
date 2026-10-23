@@ -135,6 +135,17 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-15-t5-05-uruk-i:en-mer-kar:nimrod:reign"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "1. Nim rod. 114",
+        "year_am": 1788,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2470 1788 1●1\". The year cell continues \"1●1\", which is not a clean figure and is not used. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 114 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Kings of Assyria .."
       }
     ]
   },
@@ -151,7 +162,8 @@
     "jordan-bc-6-4",
     "jordan-bc-6-5",
     "cfah-5",
-    "cfah-15-osf"
+    "cfah-15-osf",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
@@ -163,6 +175,11 @@
       "source_id": "cfah-15-osf",
       "url": "https://osf.io/vynju/",
       "locator": "Table 5, pp. 52–53"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782a"
     }
   ],
   "related": [
