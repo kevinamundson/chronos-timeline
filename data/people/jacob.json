@@ -85,17 +85,6 @@
         "source_text_id": "jordan-compilation-anno-mundi"
       },
       {
-        "source": "raleigh-history-of-the-world",
-        "date": "\"Iacob was borne in the yeere of the World 2169\"",
-        "year_am": 2169,
-        "year_bc_ad": null,
-        "precision": "year",
-        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, ch. VII, §III",
-        "link": "https://texts.earlyprint.org/works/A10357.xml",
-        "note": null,
-        "source_text_id": "raleigh-history-of-the-world-1617"
-      },
-      {
         "source": "generations",
         "date": "Jacob (1836-1689)",
         "year_am": null,
@@ -105,6 +94,28 @@
         "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
         "source_text_id": "generations-preparing-2e",
         "note": "Timeline Review 3."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "1 Iacob 147",
+        "year_am": 2169,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2851 2169 86\". The third printed figure 86 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 147 at the end of the name is the lifespan he prints."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Iacob was borne in the yeere of the World 2169",
+        "year_am": 2169,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, ch. VII, §III, sig. 96a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Narrative sentence. The chronological table prints the same yeere of the World. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. No BC conversion."
       }
     ],
     "death": [
@@ -197,6 +208,16 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/25.htm#21",
       "locator": "Gen.25.21-Gen.25.34 ; Gen.27.1-Gen.27.46 ; Gen.28.1-Gen.28.22 ; Gen.32.28 ; Gen.47.9 ; Gen.47.28"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 783a"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 96a"
     }
   ],
   "related": [
@@ -214,5 +235,8 @@
   "events": [
     "jacob-to-haran",
     "jacob-enters-egypt"
+  ],
+  "alt_names": [
+    "Iacob"
   ]
 }

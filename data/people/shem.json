@@ -85,6 +85,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 1558.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": ". Sem. 600",
+        "year_am": 1559,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2241 1559\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 600 at the end of the name is the lifespan he prints. The cell does not print the \"1.\" he uses elsewhere to mark a first year."
       }
     ],
     "death": [
@@ -165,13 +176,19 @@
     "jordan-bc-6-4",
     "jordan-bc-6-6",
     "jordan-book-law-of-the-covenant-1984",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/5.htm#32",
       "locator": "Genesis 5:32; 9; 10; 11"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782a"
     }
   ],
   "related": [
@@ -188,5 +205,8 @@
   "events": [
     "the-flood",
     "ark-landing"
+  ],
+  "alt_names": [
+    "Sem"
   ]
 }

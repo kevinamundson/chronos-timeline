@@ -38,6 +38,29 @@
         "link": null,
         "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Ezekia began in the very end of this yeere.",
+        "year_am": 3286,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 788b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"3968 3286 293\". The third printed figure 293 is the column \"Temple\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The cell says the reign began and prints no length."
+      }
     ]
   },
   "events": [
@@ -48,7 +71,18 @@
     "2Kgs.18.1-2Kgs.20.21"
   ],
   "sources": [
-    "generations-preparing"
+    "generations-preparing",
+    "raleigh-history-of-the-world-1617"
   ],
-  "related": []
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 788b"
+    }
+  ],
+  "alt_names": [
+    "Ezekia"
+  ]
 }

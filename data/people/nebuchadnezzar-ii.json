@@ -62,6 +62,29 @@
         "source_text_id": "generations-preparing-2e",
         "note": null
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "4 1 Nabuchodonosor the Great . 44",
+        "year_am": 3407,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 789b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"4089 3407 414\". The third printed figure 414 is the column \"Temple\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 44 at the end of the name is the reign length he prints. The end year is not printed on this row."
+      }
     ]
   },
   "events": [
@@ -74,7 +97,18 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "raleigh-history-of-the-world-1617"
   ],
-  "related": []
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 789b"
+    }
+  ],
+  "alt_names": [
+    "Nabuchodonosor the Great"
+  ]
 }

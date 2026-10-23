@@ -57,14 +57,14 @@
     },
     {
       "source": "raleigh-history-of-the-world",
-      "date": "\"in the yeere of the World 2474\"",
-      "year_am": 2474,
+      "date": "Moses visites his brethren the Israelites; kills an Aegyptian, and flyes into Midian.",
+      "year_am": 2473,
       "year_bc_ad": null,
       "precision": "year",
-      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, ch. IIII, §I",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 784a",
       "link": "https://texts.earlyprint.org/works/A10357.xml",
-      "note": null,
-      "source_text_id": "raleigh-history-of-the-world-1617"
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Year cell \"3155 2473 390\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The narrative (Book II, ch. IIII, §I, sig. 184a) says \"in the yeere of the World 2474.\" The chronological table prints this flight at World 2473. The table figure is the one entered."
     }
   ],
   "people": [
@@ -92,6 +92,11 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/exodus/2.htm#11",
       "locator": "Exod.2.11-Exod.2.22 ; Acts.7.23-Acts.7.29"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 784a"
     }
   ],
   "related": [

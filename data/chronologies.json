@@ -500,8 +500,8 @@
       "authors": [
         "Sir Walter Raleigh"
       ],
-      "description": "Sir Walter Raleigh's History of the World (1st ed. 1614; primary text the 1617 issue, EEBO-TCP A10357 / STC 20638 / ESTC S112960; 11th ed. 1736 as secondary reading copy), Books I–V from Creation to 130 BC.",
-      "year_conventions": "Year of the world (AM) as Raleigh states it (year_am); no BC conversion. Primary text: 1617 EEBO-TCP transcription (sources/raleigh/). Anchors below were read from the 1736 (11th ed.) vol. 1 Internet Archive OCR and still cite it until they are re-checked against the 1617 text.",
+      "description": "SECONDARY DISPLAY CHRONOLOGY. It never sets sorting_year and is not one of the four sort tiers. Sir Walter Raleigh's History of the World (1st ed. 1614; primary text the 1617 issue, EEBO-TCP A10357 / STC 20638 / ESTC S112960; 11th ed. 1736 as secondary reading copy), Books I–V from Creation to 130 BC. Entries quote the 1617 text and keep his yeere of the World; they do not convert it to BC.",
+      "year_conventions": "Yeere of the World as Raleigh prints it (year_am). No conversion to BC. A table year is kept only when the Julian Period exceeds that yeere by 682 (To the Reader, sig. 780b). The text is the 1617 issue, EEBO-TCP A10357, in sources/raleigh/ (EarlyPrint unadorned). The anchors below are those 1617 readings. The 1736 edition stays in sources as a reading copy and is not cited on these anchors.",
       "references": [
         "raleigh-history-of-the-world-1617",
         "raleigh-history-of-the-world-1736"
@@ -510,34 +510,36 @@
         {
           "event": "The Flood",
           "event_id": "the-flood",
-          "date": "year of the world 1656",
+          "date": "The generall Floud was in the yeere of the World 1656.",
           "year_am": 1656,
           "year_bc_ad": null,
-          "citation": "Raleigh, History of the World (1736), Book I, ch. VII, sect. III",
-          "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1"
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, ch. VII, §III, sig. 96a. The chronological table (sig. 782a) prints \"The Floud.\" at the same year.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml"
         },
         {
           "event": "Birth of Abraham",
           "event_id": "abraham-birth",
-          "date": "year of the world 2009 (352 years after the flood)",
+          "date": "which happened in the yeere of the World, 2009.",
           "year_am": 2009,
           "year_bc_ad": null,
-          "citation": "Raleigh, History of the World (1736), Book II, ch. I, sect. VIII",
-          "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1"
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, ch. I, §VIII, sig. 164a. The table (sig. 782b) prints \"1. Abram. 175\" at World 2009. The same section's \"An. mundi 2008 dil. 352. natus Abraham, Eus. Aug. de Ciuit. Dei\" names Eusebius and Augustine and is not this anchor.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml"
         },
         {
           "event": "Exodus",
           "event_id": "exodus",
-          "date": "about the beginning of the year of the world 2514",
+          "date": "The Passeouer.",
           "year_am": 2514,
           "year_bc_ad": null,
-          "citation": "Raleigh, History of the World (1736), Book II, ch. III (p. 149)",
-          "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1"
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 784a. Book II, ch. IIII, §I, sig. 184a also prints the Passover in the yeere of the World 2514. Sig. 174a prints \"or after our account, 2513,\" which is not this anchor.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml"
         }
       ],
       "open_questions": [
-        "Temple date not yet located (Raleigh gives Solomon's accession as year of the world 2991, Book II).",
-        "Re-check all anchors against the 1617 text (sources/raleigh/). Quick scan 2026-10-17: Abraham's birth reads \"An. mundi 2008 dil. 352. natus Abraham\" in 1617 (Book II, ch. I, §. VIII) vs 2009 in the 1736 reading; Flood AM 1656 (Book I, ch. VII, §. III) and Passover/Exodus AM 2514 (Book II, ch. IV, §. I) agree."
+        "Solomon's reign is entered from the table: \"1. Salomon, 40\" at World 2991 (sig. 786b). The same signature, at World 2994, prints \"Salomon beganne to build the Temple 480. yeeres compleat after the deliuerance out of Aegypt.\" That sentence was not attached to an event. This pass does not create events.",
+        "Abraham's entered year is 2009, from the narrative (sig. 164a) and the table (sig. 782b). \"An. mundi 2008 dil. 352. natus Abraham, Eus. Aug. de Ciuit. Dei\" is quoted in the note and is not a second year. See docs/OPEN-QUESTIONS-FOR-KEVIN.md, B3 and G.",
+        "The Passover is entered at World 2514 (table sig. 784a, \"The Passeouer.\"). Sig. 174a also prints \"or after our account, 2513.\" That 2513 is quoted in the note and is not a second year.",
+        "A cell that prints two figures after the name is listed in data/raleigh-dates-extract.md and was not given a length. See docs/OPEN-QUESTIONS-FOR-KEVIN.md, section G."
       ]
     },
     {

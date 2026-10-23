@@ -103,17 +103,6 @@
       "source_text_id": "josephus-antiquities-whiston"
     },
     {
-      "source": "raleigh-history-of-the-world",
-      "date": "Year of the world 2009; 352 years after the general flood (\"in the 43d year of Ninus\")",
-      "year_am": 2009,
-      "year_bc_ad": null,
-      "precision": "year",
-      "citation": "Raleigh, The History of the World (11th ed. 1736, vol. 1), Book II, ch. I, sect. VIII",
-      "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1",
-      "note": "Raleigh concludes Abraham was born in Terah's 130th year (Book II, ch. I).",
-      "source_text_id": "raleigh-history-of-the-world-1736"
-    },
-    {
       "source": "annals-of-clonmacnoise",
       "date": "\"from the Deludge untill Abrahams tyme\" 292 years",
       "year_am": null,
@@ -123,6 +112,28 @@
       "link": "https://archive.org/details/annalsofclonmacn00murp",
       "note": "\"Abrahams tyme\" is not explicitly his birth. The Memorandum lists intervals 1656, 0292, 0500, 0480, 0410, 0432, 0134 against seven rows; the row/number pairing is read from OCR column order and should be checked against the page scan.",
       "source_text_id": "annals-of-clonmacnoise-1896"
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "1. Abram. 175",
+      "year_am": 2009,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Year cell \"2691 2009 352\". The third printed figure 352 is the column \"Floud\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 175 at the end of the name is the lifespan he prints. The same section (Book II, ch. I, §VIII, sig. 164a) also prints \"An. mundi 2008 dil. 352. natus Abraham, Eus. Aug. de Ciuit. Dei\", introduced with \"I conclude\" and naming Eusebius and Augustine. The narrative sentence and the chronological table both print 2009. The 2008 is not given a second year. His table also prints the death at World 2183. 2009 + 175 is not 2183. Both figures are left as printed."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "which happened in the yeere of the World, 2009.",
+      "year_am": 2009,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, ch. I, §VIII, sig. 164a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Narrative sentence. The chronological table prints the same yeere of the World. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. No BC conversion."
     }
   ],
   "people": [
@@ -142,12 +153,12 @@
     "blb-biblehub",
     "ussher-annals-1658",
     "josephus-antiquities-whiston",
-    "raleigh-history-of-the-world-1736",
     "annals-of-clonmacnoise-1896",
     "jordan-bc-5-8",
     "jordan-bc-2-6",
     "jordan-bc-4-8",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
@@ -161,14 +172,19 @@
       "locator": "Book I, ch. 6, §5"
     },
     {
-      "source_id": "raleigh-history-of-the-world-1736",
-      "url": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1",
-      "locator": "Book II, ch. I, sect. VIII"
-    },
-    {
       "source_id": "jordan-bc-5-8",
       "url": "https://biblicalhorizons.com/1993/12/01/5_08/",
       "locator": "Chart at start of article"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782b"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 164a"
     }
   ],
   "related": [

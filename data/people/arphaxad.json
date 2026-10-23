@@ -171,6 +171,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Arithmetic slip in the compilation: Gen 11:12-13 gives 35 + 403 = 438 years, so AM 2096 (also Jordan BC 6:6 §11 \"2096 - Arpachshad ben Shem dies\"). The chart prints \"+ 400 yrs. after Salah’s birth\" and 435.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Arphaxad dyes.",
+        "year_am": 2096,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2778 2096 13\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
       }
     ]
   },
@@ -188,7 +199,8 @@
     "jordan-bc-6-4",
     "josephus-antiquities-whiston",
     "jordan-bc-2-5",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
@@ -205,6 +217,11 @@
       "source_id": "josephus-antiquities-whiston",
       "url": "https://www.gutenberg.org/ebooks/2848",
       "locator": "Book I, ch. 6, §5"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782b"
     }
   ],
   "related": [

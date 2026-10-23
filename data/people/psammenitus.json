@@ -65,6 +65,17 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=whose%20whole%20reign%20had%20been%20but%20six%20months",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "Ten days after the fall of Memphis. Consistent with CFAH AP-8 (525 BC), Generations 525 BC."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "1. Psammenitus, 3",
+        "year_am": 3504,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 790a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"4186 3504\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 3 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Egypt.."
       }
     ]
   },
@@ -75,7 +86,8 @@
   "sources": [
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "cfah-9-osf"
+    "cfah-9-osf",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [
@@ -88,6 +100,11 @@
       "source_id": "cfah-9-osf",
       "url": "https://osf.io/hv3b2/",
       "locator": "Table 2, p. 58"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 790a"
     }
   ]
 }

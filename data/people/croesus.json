@@ -93,6 +93,17 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Apollo%20delayed%20the%20taking%20of%20Sardis%20three%20full",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "Delphic answer: Croesus was captured three years later than fated."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "5 1 Croesus. 14",
+        "year_am": 3471,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 790a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"4153 3471\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 14 at the end of the name is the reign length he prints. The end year is not printed on this row."
       }
     ]
   },
@@ -100,7 +111,8 @@
   "scripture_refs": [],
   "sources": [
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [
     "cyrus-the-great",
@@ -111,6 +123,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
       "locator": "Book 1"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 790a"
     }
   ]
 }

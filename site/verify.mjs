@@ -185,6 +185,68 @@ for (const [path, shot, sel] of [
   check('a11y: all images have alt', imgsNoAlt === 0, `${imgsNoAlt} without alt`);
   await o.ctx.close();
 }
+// Raleigh, A Chronological Table
+{
+  const o = await open('/chronologies/');
+  const href = await o.page.locator('#raleigh-history-of-the-world a[href="/chronologies/raleigh-chronological-table/"]').innerText().catch(() => '');
+  check('chronologies: Raleigh card links to A Chronological Table', href === 'A Chronological Table', href);
+  await o.ctx.close();
+}
+{
+  const o = await open('/chronologies/raleigh-chronological-table/');
+  check('raleigh table: HTTP 200', o.status === 200);
+  check('raleigh table: no console errors', o.errors.length === 0, o.errors.join(' | '));
+  const h1 = await o.page.locator('h1').innerText();
+  check('raleigh table: heading', h1 === 'A Chronological Table', h1);
+  const modern = await o.page.evaluate(() => {
+    const cell = [...document.querySelectorAll('#raleigh-table td, #raleigh-table th')].find((el) => el.querySelector('.spell-original')?.textContent.includes('Adaˉ'));
+    if (!cell) return { missing: true };
+    const shown = cell.innerText;
+    const original = cell.querySelector('.spell-original');
+    return { shown, originalHidden: getComputedStyle(original).display === 'none' };
+  });
+  check('raleigh table: modern view shows Adam', modern.originalHidden && /Adam/.test(modern.shown) && !/Adaˉ/.test(modern.shown), JSON.stringify(modern));
+  await o.page.getByRole('button', { name: 'Original spelling' }).click();
+  const original = await o.page.evaluate(() => {
+    const cell = [...document.querySelectorAll('#raleigh-table td, #raleigh-table th')].find((el) => el.querySelector('.spell-original')?.textContent.includes('Adaˉ'));
+    const shown = cell ? cell.innerText : '';
+    const modernSpan = cell?.querySelector('.spell-modern');
+    const originalSpan = cell?.querySelector('.spell-original');
+    return {
+      shown,
+      modernHidden: modernSpan ? getComputedStyle(modernSpan).display === 'none' : false,
+      originalShown: originalSpan ? getComputedStyle(originalSpan).display !== 'none' : false,
+      pressed: document.querySelector('[data-set-spelling="original"]')?.getAttribute('aria-pressed'),
+    };
+  });
+  check('raleigh table: original spelling shows Adaˉ', original.originalShown && original.modernHidden && /Adaˉ/.test(original.shown) && original.pressed === 'true', JSON.stringify(original));
+  const downloads = [
+    ['/chronologies/raleigh-chronological-table/a-chronological-table.csv', 'Signature', 'Adam'],
+    ['/chronologies/raleigh-chronological-table/a-chronological-table.md', '# A Chronological Table', 'Adam'],
+    ['/chronologies/raleigh-chronological-table/a-chronological-table.xls', '<Workbook', 'Adam'],
+    ['/chronologies/raleigh-chronological-table/a-chronological-table-original-spelling.csv', 'Signature', 'Adaˉ'],
+    ['/chronologies/raleigh-chronological-table/a-chronological-table-original-spelling.md', 'YEERES OF THE JVLIAN', 'Adaˉ'],
+    ['/chronologies/raleigh-chronological-table/a-chronological-table-original-spelling.xls', '<Workbook', 'Adaˉ'],
+  ];
+  for (const [path, a, b] of downloads) {
+    const r = await o.page.request.get(BASE + path);
+    const body = await r.text();
+    check(`raleigh table: ${path.split('/').pop()}`, r.status() === 200 && body.includes(a) && body.includes(b), `HTTP ${r.status()} ${body.slice(0, 60).replace(/\s+/g, ' ')}`);
+  }
+  await o.ctx.close();
+}
+{
+  const o = await open('/chronologies/raleigh-chronological-table/', { width: 390, height: 844 });
+  const overflow = await o.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+  const scrolls = await o.page.evaluate(() => {
+    const w = document.querySelector('.raleigh-wrap');
+    return !!w && w.scrollWidth > w.clientWidth + 1;
+  });
+  check('raleigh table mobile: no horizontal page overflow', !overflow);
+  check('raleigh table mobile: table scrolls inside its frame', scrolls);
+  check('raleigh table mobile: no console errors', o.errors.length === 0, o.errors.join(' | '));
+  await o.ctx.close();
+}
 await browser.close();
 srv.close();
 console.log(results.join('\n'));
