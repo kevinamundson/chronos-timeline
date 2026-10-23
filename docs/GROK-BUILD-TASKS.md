@@ -4,13 +4,15 @@
 
 All rules are in [`AGENTS.md`](../AGENTS.md). Each task, or each source within T1, gets its own `gb/<slug>` branch and draft PR. Chronos reviews it against [`REVIEW-CHECKLIST.md`](REVIEW-CHECKLIST.md), and Kevin approves the merge.
 
-**Suggested order:**
+*Updated 2026-10-23 with Kevin's answers to Q-M1, Q-J1, Q-S1, Q-T1, Q-T2 and Q-P1.*
 
-1. T3 wording draft (small)
-2. T2 schema and validator
-3. T4 spans
-4. T1 sources, one per PR, in roadmap sprint order
-5. T4b Jasher, after Kevin answers Q-J1
+**Order:**
+
+1. **T1** sources, one per PR, in the roadmap's sprint order (confirmed by Kevin): Cory's *Ancient Fragments* first, then Hales, and so on.
+2. **T3** scope wording draft (small; the wording needs Kevin's final approval in the PR).
+3. **T4** transparent spans.
+4. **T4b** Jasher reign lengths (edition settled; see T4b).
+5. **T2** free links: **ON HOLD.** Do not start it until Kevin approves the schema.
 
 Kevin may reorder these.
 
@@ -20,10 +22,10 @@ Kevin may reorder these.
 
 **Goal:** add the sources in Kevin's roadmap, [`docs/roadmap-pd-sources.md`](roadmap-pd-sources.md), as display-only secondary chronologies, each with verified dates. Read the roadmap's "Reviewer notes" first.
 
-**Order:** follow the roadmap's sprint mapping unless Kevin says otherwise.
+**Order:** follow the roadmap's sprint mapping. Kevin confirmed this order on 2026-10-23.
 
 - **Sprint 1:** Cory, *Ancient Fragments*. Pick 1828 or 1876 and record which edition you read. Then Hales, *A New Analysis of Chronology*.
-- **Then:** Bede (Giles 1843), Edersheim (only after Kevin confirms "Einstein" meant Edersheim), Newton, Breasted, and so on.
+- **Then:** Bede (Giles 1843), Edersheim, Newton, Breasted, and so on. Kevin confirmed on 2026-10-23 that "Einstein" in the roadmap means **Alfred Edersheim**, *The Bible History: Old Testament*.
 
 **Each source is one PR containing:**
 
@@ -55,12 +57,14 @@ Kevin may reorder these.
 - Reject snippet or limited-view Google Books and HathiTrust "search only" items. The roadmap's Loeb, Jacobsen and Taliaferro notes need a renewal check for 1931–1964 works.
 - Fragments preserved by later authors, for example Berossus via Syncellus via Cory: cite the chain ("Berossus, ap. Syncellus, tr. Cory 1876, p. N").
 - After any importer run, re-run `node scripts/cfah/import.mjs` last (see AGENTS.md §9).
-- The `tradition` field the roadmap suggests is a **schema change**. It is optional, and you must propose it and wait for Kevin's approval.
+- The `tradition` field the roadmap suggests is a **schema change** and is **on hold**: Kevin will return to it. Do not add it, and do not add `free_links` (T2), to any T1 source. Use the existing `url` and `alt_urls` fields.
 - Non-English editions and in-house translation are out of scope.
 
 ---
 
-## T2. More free links for every source
+## T2. More free links for every source (ON HOLD)
+
+> **On hold pending Kevin's schema approval (2026-10-23).** Kevin will return to the `free_links` field and the optional `tradition` field. Grok Build must **not** start T2, open a T2 branch, or add either field to the schema or data until Kevin approves. The text below is kept for when he does.
 
 **Goal:** for every source in `data/sources.json`, add every *additional* free full-view copy that exists. Hosts include:
 
@@ -118,11 +122,11 @@ Each link is verified live and checked to be the same edition. Where it is a dif
 
 ## T3. Restate the project scope
 
-**Goal:** everywhere the site or docs state the project's scope, restate it as **"a full timeline of the mighty works of God among the nations"**, not stopping at the Temple, drawn from the earliest sources possible.
+**Goal:** everywhere the site or docs state the project's scope, restate it as **"a full timeline of the mighty works of God among the nations"**, drawn from the earliest sources possible. Kevin's instruction (2026-10-23): the scope wording must **not reference Solomon's Temple at all**, nor any temple as an endpoint or boundary.
 
 **Current scope wording found by Chronos (re-grep to be sure: `rg -n -i "temple|scope|purpose|from creation|lede|description" README.md site docs`):**
 
-- `site/build.mjs`, home page lede (around line 330): "From Creation to Solomon's Temple, sorted by the … (CFAH), with Ussher–Jones, Ussher, James B. Jordan, Scripture, Josephus, Raleigh and the Annals of Clonmacnoise shown side by side." This also omits the newer chronologies (Generations, Herodotus, Morecraft, Jordan compilation).
+- `site/build.mjs`, home page lede (around line 330). The current lede names a temple as the end point of the timeline; that endpoint must be removed entirely. It also omits the newer chronologies (Generations, Herodotus, Morecraft, Jordan compilation).
 - `site/build.mjs`, home `<meta name="description">` (around line 358): "Young-Earth Creationist ancient history timeline sorted by CFAH."
 - `site/build.mjs`, About page, first card (around line 583): framework paragraph, which has no scope sentence yet.
 - `README.md` line 1 and intro ("Universal Ancient History Timeline Portal … static JSON data …"), and the layout block "events/*.json 15: Creation → Ark landing …", which is stale counts, not scope. Update the counts from the validate summary.
@@ -130,19 +134,27 @@ Each link is verified live and checked to be the same edition. Where it is a dif
 
 **Draft wording (FOR KEVIN'S APPROVAL; mark it so in the PR):**
 
-> *Lede:* "A timeline of the mighty works of God among the nations, from Creation onward, built from the earliest sources available and sorted by the Chronological Framework of Ancient History (CFAH), with Scripture as the infallible standard. Other chronologies (Ussher–Jones, Ussher, Jordan, Josephus, Herodotus, Raleigh, the Irish annals, and more) are shown side by side for comparison."
+> *Lede:* "A timeline of the mighty works of God among the nations, beginning at Creation and drawn from the earliest sources available. Records are sorted by the Chronological Framework of Ancient History (CFAH), with Scripture as the infallible standard. Other chronologies (Ussher–Jones, Ussher, Jordan, Josephus, Herodotus, Raleigh, the Irish annals, and more) are shown side by side for comparison."
 >
-> *Meta description:* "A Young-Earth Creation timeline of the mighty works of God among the nations, from the earliest sources, sorted by CFAH."
+> *Meta description:* "A Young-Earth Creation timeline of the mighty works of God among the nations, drawn from the earliest sources and sorted by CFAH."
+>
+> *About page scope sentence:* "This portal aims to record the mighty works of God among all the nations, from Creation onward, using the earliest sources that can be read and cited."
+
+This is still **draft wording**. Kevin gives final approval in the T3 PR.
 
 **Acceptance criteria:**
 
 - Every location above is updated, or explicitly left alone with a reason.
 - The PR lists each location with its old and new text, and is labelled "wording needs Kevin's approval".
+- No scope statement (site, README, `package.json`, docs) mentions Solomon's Temple or any temple as an endpoint. Check with `rg -n -i "temple" README.md package.json site/build.mjs site/src` and explain any remaining hit.
 - Data and sort are unchanged. Validate, build and verify pass, and verify's text assertions are updated if they match the old lede.
 
 **Files likely touched:** `site/build.mjs`, `README.md`, `package.json`, `site/verify.mjs` (if it asserts the text).
 
-**Pitfalls:** do not claim the timeline is complete or "full" today. The wording should describe the aim. Keep the reverent, precise tone.
+**Pitfalls:**
+
+- Do not claim the timeline is complete or "full" today. The wording should describe the aim. Keep the reverent, precise tone.
+- This is a wording change only. Records *about* the Temple (for example its dedication) stay as they are; only the scope statements change.
 
 ---
 
@@ -196,12 +208,15 @@ Each link is verified live and checked to be the same edition. Where it is a dif
 
 ### T4b. Book of Jasher: antediluvian reign lengths (display-only)
 
-**Ambiguity, flag it for Kevin (Q-J1):** "Book of Jasher" can mean two different works.
+**Edition (settled 2026-10-23, Q-J1 closed):** the **1840 English translation of *Sefer haYashar***, *The Book of Jasher … Faithfully Translated from the Original Hebrew into English* (New York: M. M. Noah & A. S. Gould, 1840). It is not the 1751 "Pseudo-Jasher" (Jacob Ilive's "Alcuin" forgery).
 
-- **(a)** The **1840 English translation of *Sefer haYashar***, published in New York by M. M. Noah & A. S. Gould. This is a medieval Hebrew midrash, first printed in Naples in 1552 per the archive.org catalogue note, and is the text usually meant today.
-- **(b)** The **1751 "Pseudo-Jasher"** (Jacob Ilive's "Alcuin" forgery).
+**Kevin's reading copy:** Kevin owns Ken Johnson, *Ancient Book of Jasher: A New Annotated Edition* (Bibliofacts Ministries / CreateSpace, 2008; ISBN 9781438266756). Johnson's introduction says it reprints the 1840 English translation, adds AM dates to most chapters, timeline tables (Appendix A), a discrepancy analysis (Appendix B), and moves the 1840 prefaces to Appendix C. The edition is **copyrighted** ("Copyright Ken Johnson"). So:
 
-**Recommendation:** (a) the 1840 Noah/Gould translation. Do not start until Kevin confirms.
+- The **public-domain 1840 scan is the only quotable and linkable source.** Use the Princeton copy, https://archive.org/details/bookofjasherrefe00sefe (preferred).
+- Johnson's edition may be used **only as Kevin's reading copy** to locate passages and chapter:verse references.
+- **Nothing from Johnson's edition may be quoted or committed:** not his notes, headings, chapter AM dates, timeline tables, appendices or introduction. His AM dates are his own calculations, not Jasher's text, and must never be entered as Jasher figures.
+- Every reign length is cited by **Jasher chapter:verse and the 1840 page**, and matched word for word against the 1840 scan before entry.
+- If Johnson's chapter or verse numbering differs from the 1840 scan, cite the 1840 numbering and **flag the difference in the PR** (passage, Johnson's reference, 1840 reference).
 
 **Verified free copies of the 1840 edition** (opened by Chronos on 2026-10-22; Grok Build must re-check the title page and imprint):
 
@@ -220,11 +235,11 @@ Each link is verified live and checked to be the same edition. Where it is a dif
 
 ---
 
-## Questions Kevin must answer (collected; also in the PRs)
+## Kevin's answers (2026-10-23)
 
-- **Q-M1:** the path of the clone on the Mac Mini, so that Chronos can refer to it.
-- **Q-J1:** which Jasher: 1840 Noah/Gould (recommended) or another?
-- **Q-S1:** approve or edit the T3 scope wording.
-- **Q-T1:** keep the roadmap's sprint order (Cory and Hales first)? Did "Einstein" mean Edersheim?
-- **Q-T2:** approve the `free_links` schema extension. Approve the optional `tradition` field?
-- **Q-P1:** turn on GitHub branch protection for `main` (require a PR)?
+- **Q-M1, Mac Mini clone:** `/Users/kevinamundson/GitHub/chronos-timeline` (use an existing clone there if present). Answered.
+- **Q-J1, Jasher edition:** the 1840 Noah/Gould translation. Kevin reads Ken Johnson's 2008 annotated edition of it; see T4b for the rules. Answered.
+- **Q-S1, scope wording:** must not reference Solomon's Temple at all. Draft rewritten in T3; **final approval still due in the T3 PR.**
+- **Q-T1, order:** roadmap sprint order confirmed (Cory, then Hales, …). "Einstein" = Alfred Edersheim. Answered.
+- **Q-T2, `free_links` and `tradition` fields:** **deferred.** Kevin will return to this; T2 is on hold.
+- **Q-P1, branch protection:** yes. `main` requires a pull request; force-pushes and deletion are blocked.

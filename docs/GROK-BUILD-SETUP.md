@@ -11,9 +11,12 @@ Grok Build does the editing on Kevin's Mac Mini. Chronos (Grok Bot) reviews ever
 ## 2. Clone and install
 
 ```bash
-mkdir -p ~/Code && cd ~/Code                     # or any path; tell Chronos which one
-git clone https://github.com/kevinamundson/chronos-timeline.git
-cd chronos-timeline
+# Kevin's repo folder on the Mini is /Users/kevinamundson/GitHub.
+# If /Users/kevinamundson/GitHub/chronos-timeline already exists, use it (skip the clone).
+mkdir -p /Users/kevinamundson/GitHub && cd /Users/kevinamundson/GitHub
+[ -d chronos-timeline/.git ] || git clone https://github.com/kevinamundson/chronos-timeline.git
+cd /Users/kevinamundson/GitHub/chronos-timeline
+git remote -v                                    # expect github.com/kevinamundson/chronos-timeline
 npm ci
 npx playwright install chromium webkit           # npm run verify uses Chromium AND WebKit (site/verify-timelines.mjs)
 npm run validate && npm run build && npm run verify
@@ -31,7 +34,7 @@ gh auth setup-git        # lets git push over HTTPS using that credential
 gh auth status
 ```
 
-**Optional safety net:** in GitHub, go to Settings → Branches → add a rule for `main` that requires a pull request before merging. That blocks direct pushes to `main` from any machine. Kevin, as the owner, can still merge.
+**Branch protection:** Kevin approved protecting `main` (2026-10-23). The rule requires a pull request before merging (0 required approvals, because Kevin is the only human reviewer and GitHub does not let authors approve their own PRs), and it blocks force-pushes and deletion of `main`. Administrators are not locked out, so Kevin can still merge. Cloudflare Pages still deploys `main` to production on every merge. Settings: https://github.com/kevinamundson/chronos-timeline/settings/branches
 
 ## 4. Grok Build project rules
 
@@ -64,3 +67,17 @@ Kevin assigns a task (docs/GROK-BUILD-TASKS.md)
   -> Kevin: approve + merge (production deploy to chronos.kevinamundson.me)
   -> Chronos: npm run verify:live against production
 ```
+
+## 7. How Chronos dispatches work to the Mini
+
+Chronos reaches the Mini over SSH (host alias `mini`) and runs Grok Build there:
+
+```bash
+ssh mini
+export PATH="$HOME/.grok/bin:$PATH"
+cd /Users/kevinamundson/GitHub/chronos-timeline
+git switch main && git pull --ff-only
+```
+
+- Chronos does not commit or push from the Mini unless Kevin says yes for that change.
+- Grok Build's normal branch, push and draft-PR flow (section 6 and `AGENTS.md` §2) is unchanged.

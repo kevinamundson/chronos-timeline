@@ -57,12 +57,15 @@ npm ci
   The PNGs under `site/screenshots/` from `npm run verify` are allowed.
 - [ ] Notes on copyrighted books (Generations, Morecraft, the Roman Roads etext, CFAH) are short and in our own words. CFAH text appears only as short quotes, and CFAH charts are linked, not copied.
 - [ ] Jordan full texts appear only under `sources/jordan/`, as permitted.
+- [ ] **Jasher (T4b):** quotes and links come only from the PD 1840 Noah/Gould scan (archive.org `bookofjasherrefe00sefe`). Nothing from Ken Johnson's 2008 annotated edition (notes, headings, AM dates, tables, appendices, introduction) is quoted or committed (`rg -n -i 'ken johnson|bibliofacts|biblefacts'` on the diff should show only provenance notes). Any Johnson vs 1840 verse-numbering difference is flagged in the PR.
+- [ ] No `free_links` or `tradition` field is added (on hold until Kevin approves the schema).
+- [ ] Scope wording (T3) names no temple as an endpoint.
 - [ ] No Proton Drive links (`rg -n 'proton\.me|drive\.proton'`), no private Google Drive links outside existing `private-copy` provenance entries, and no tokens or secrets (`rg -n -i 'ghp_|github_pat_|api[_-]?key|secret'`).
 
 ## 5. Scripture and links
 
 - [ ] **BLB links only:** `https://biblehub.com/blb/<slug>/<chapter>.htm#<verse>`, built through `scripts/blb.mjs`. The validator enforces this; also check with `rg -n 'biblegateway|gutenberg.org/.*/10|biblehub.com/(kjv|niv|esv)'` on the diff.
-- [ ] New external links are on the host allow-list (after T2), are `https`, and are full-view, not snippet or limited.
+- [ ] New external links are on the host allow-list (once T2 is approved and done), are `https`, and are full-view, not snippet or limited.
 
 ## 6. Site behaviour
 
@@ -88,7 +91,7 @@ npm ci
 **Preview URL patterns:**
 
 - Each deployment gets an immutable `https://<hash>.chronos-bfi.pages.dev`.
-- The branch alias is `https://<branch-alias>.chronos-bfi.pages.dev`. Cloudflare lowercases the branch name and replaces non-alphanumerics with `-`, so `gb/t2-free-links` becomes `https://gb-t2-free-links.chronos-bfi.pages.dev`. Use the URL the Cloudflare bot posts on the PR.
+- The branch alias is `https://<branch-alias>.chronos-bfi.pages.dev`. Cloudflare lowercases the branch name and replaces non-alphanumerics with `-`, so `gb/t1-cory` becomes `https://gb-t1-cory.chronos-bfi.pages.dev`. Use the URL the Cloudflare bot posts on the PR.
 - Previews are **public by default** (Cloudflare Access is not enabled). The repo is public too, so nothing new is exposed, but the private-file rules above matter just as much for previews.
 
 **Checks:**

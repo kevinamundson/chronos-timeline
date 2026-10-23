@@ -10,16 +10,18 @@ The rules also apply to any other coding agent working here. Grok Build is the b
 - **Framework:** Young Earth Creation. **The Bible is the infallible standard.** That means the Masoretic Text, with no gaps in Genesis 5 and 11. Scripture governs every other source.
 - **Primary sorting chronology:** CFAH, the *Chronological Framework of Ancient History* by Kenneth C. Griffith & Darrell K. White (*Answers Research Journal* CFAH-1 to 6, plus the OSF preprints at https://osf.io/prhfz/).
 - **Tone in data, notes and UI text:** precise, scholarly, transparent, reverent toward Scripture. Never sensational, and never mocking any source.
-- **Scope:** Kevin has asked to restate it as "a full timeline of the mighty works of God among the nations", not stopping at the Temple and drawn from the earliest sources possible. The wording is not approved yet; see task T3 in `docs/GROK-BUILD-TASKS.md`.
+- **Scope:** a full timeline of the mighty works of God among the nations, drawn from the earliest sources possible. Scope statements must not name any temple, including Solomon's Temple, as an endpoint or boundary. The site wording is draft until Kevin approves it in the T3 PR; see task T3 in `docs/GROK-BUILD-TASKS.md`.
+- **Mac Mini clone:** `/Users/kevinamundson/GitHub/chronos-timeline`. If a clone already exists there, use it; do not make a second clone.
 
 ## 2. Workflow (non-negotiable)
 
 1. **Never push to `main`. Never force-push.** Never merge a PR, never rewrite published history, never delete branches you did not create.
 2. **Branches:**
-   - Work only on a feature branch named `gb/<task-slug>`, for example `gb/t2-free-links`, cut from an up-to-date `origin/main`.
+   - Work only on a feature branch named `gb/<task-slug>`, for example `gb/t1-cory`, cut from an up-to-date `origin/main`.
    - Use one task, or one source, per branch and PR.
+   - `main` is protected on GitHub: changes reach it only through a pull request, and force-pushes and deletion of `main` are blocked.
 3. **Before every push,** run `npm run validate`, `npm run build` and `npm run verify`. All three must pass. Fix the cause of a failure; never weaken a validator rule to make data pass.
-4. **Commits:** small, logical, with messages that say what and why (for example "T2: add free_links schema + validator allow-list").
+4. **Commits:** small, logical, with messages that say what and why (for example "T1 Cory: add sources.json entry + validator rule").
 5. **PR:** push the branch and open a **draft PR** against `main` using `.github/pull_request_template.md`, with every section filled in. If you cannot open the PR (`gh` not authenticated), leave the branch pushed and put the filled-in template in the body of the branch's last commit message. Chronos will open the PR from it.
 6. **Review:** Chronos reviews the PR against `docs/REVIEW-CHECKLIST.md` and reports to Kevin. Only Kevin approves and merges. A merge to `main` deploys to production automatically on Cloudflare Pages.
 7. **Contact and spending:**
@@ -173,7 +175,7 @@ Each new source needs four things:
 3. A curated rows file plus an idempotent importer under `scripts/<source>/`.
 4. A generated `data/<source>-dates-extract.md`: edition read, every dated statement with its page and section, the record it maps to, and status (agrees / CONFLICT / internal / framework / n/a).
 
-Schema changes, such as a new field, need Kevin's approval. Propose them in the PR's open questions.
+Schema changes, such as a new field, need Kevin's approval. Propose them in the PR's open questions. The proposed `free_links` source field (T2) and the optional `tradition` field are **on hold**: Kevin will return to them. Do not add either field until he approves.
 
 ## 11. Where things go when unsure
 

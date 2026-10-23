@@ -204,8 +204,8 @@ These notes come from checking the roadmap against the repository at `origin/mai
    - Any statement of the form "contains X" about a volume's contents
 
    The rule in AGENTS.md applies: **no date, URL or citation is entered unless it was read in the source.**
-7. **Edersheim / "Einstein" (item 3).** That Kevin meant Alfred Edersheim is the roadmap author's guess. Confirm with Kevin before starting item 3.
+7. **Edersheim / "Einstein" (item 3).** Confirmed by Kevin on 2026-10-23: "Einstein" means **Alfred Edersheim**, *The Bible History: Old Testament*. Item 3 may proceed in its sprint slot.
 8. **Non-English editions** (Schöne, Karst, Dindorf, Migne, Routh, Scaliger, Ratner, Müller's FHG Greek, Manitius) are out of scope for this backlog. Kevin's request is for ancient histories **translated into English**, and in-house translation would be new, unsourced text. These need Kevin's go-ahead.
 9. **Permission track** (Adler & Tuffin, Guggenheimer, Whitby & Whitby): Grok Build and Chronos must **not contact publishers**. Kevin decides whether to ask, and does the asking himself.
-10. **The suggested `tradition` field** (standing caution 4) is a schema change. It is optional and needs Kevin's approval before anyone adds it.
-11. **Order of work:** follow the sprint mapping (Sprint 1: Cory, then Hales) unless Kevin says otherwise. Use **one source per PR**.
+10. **The suggested `tradition` field** (standing caution 4) is a schema change. Kevin has **deferred** it (2026-10-23) and will return to it; nobody adds it until he approves.
+11. **Order of work:** Kevin confirmed the sprint mapping on 2026-10-23 (Sprint 1: Cory, then Hales). Use **one source per PR**.
