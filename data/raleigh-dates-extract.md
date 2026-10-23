@@ -4,7 +4,7 @@ Edition read: London, printed by William Stansby for Walter Burre, 1617. EEBO-TC
 
 The chronological table (back matter, from sig. 781b) is Raleigh's index. "To the Reader" (sig. 780b) says it reforms press errors and his own mis-reckonings, and that the Julian Period exceeds the yeere of the World by 682. A year is recorded only when the printed pair differs by 682.
 
-Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere of the World): 3731.
+Statements written: 216. New people: 152. Skipped figures: 448. Cut-off (yeere of the World): none.
 
 | World | Sig. | Quote | Record |
 |---|---|---|---|
@@ -149,7 +149,6 @@ Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere o
 | 2991 | 786b | 1. Salomon, 40 | solomon:reign |
 | 2999 | 786b | 33 1. Laosthenes, 45. | laosthenes:reign |
 | 3002 | 786b | 6 1. Syl. Alba 39. | syl-alba:reign |
-| 3010 | 786b | 1. Sesac 26 167 | sesac:reign |
 | 3020 | 786b | 3 1. Archippus, 19. | archippus:reign |
 | 3031 | 787a | 1 1. leroboam, 22. | jeroboam-i:reign |
 | 3031 | 787a | 1 1. Rehoboam, 17. | rehoboam:reign |
@@ -160,7 +159,6 @@ Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere o
 | 3111 | 787b | 6 1. Mezales, 30. | mezales:reign |
 | 3121 | 787b | 11 1. Iehu, 28. | jehu:reign |
 | 3121 | 787b | 7 1. Athalia, 7 | athalia:reign |
-| 3142 | 787b | 1. Cephrenes 50. 121 | cephrenes:reign |
 | 3149 | 787b | 12 1. Iehoabaz. 17 | iehoabaz:reign |
 | 3157 | 787b | 12 1. Syl. Alladius, 19 | syl-alladius:reign |
 | 3165 | 787b | 1. Ioas, 16. | ioas:reign |
@@ -217,10 +215,19 @@ Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere o
 | 3693 | 791b | 11 1 Arses 3. | arses:reign |
 | 3709 | 792a | 1 1. Ptolemie Lagi, 39. | ptolemie-lagi:reign |
 | 3716 | 792a | 1. Cassander. 19. | cassander:reign |
+| 3739 | 792b | 1. Demtri{us}. 6. | demtrius:reign |
+| 3746 | 792b | 1. Lysimachus 5. | lysimachus:reign |
+| 3754 | 792b | 1 1. Antigonus Gonatas, 36. | antigonus-gonatas:reign |
+| 3785 | 793a | 3 1 Ptolemie Euergetes, 26 | ptolemie-euergetes:reign |
+| 3790 | 793a | 2 1 Demetrius 10 | demetrius:reign |
+| 3812 | 793a | 4 1. Philip. 42. | philip:reign |
+| 3820 | 793b | 247 1. Onias high Priest 39. | onias-high-priest:reign |
+| 3828 | 793b | 5 1. Ptolemie Epiphanes 24 | ptolemie-epiphanes:reign |
+| 3867 | 794a | 1. Iudas Macchabaeus, 6. | iudas-macchabaeus:reign |
 
 ## Skipped
 
-### illegible name or length (52)
+### illegible name or length (57)
 
 - 781b World 461: 1. ●ared. 962
 - 782a World 1820: 1. Sarug. 2●0
@@ -274,6 +281,11 @@ Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere o
 - 790b World 3573: 79 Esdras commeth to Ierusalem . 1. Daniel his 70. weekes, or 490. yeers b●●in
 - 791a World 3619: 1 1. Amyrtau●, 6
 - 792b World 3722: 1 1. Seleuc{us}. 3● 1
+- 792b World 3732: 1 〈...〉 th● Ancient 13 1●●
+- 792b World 3752: 2 1. Antiochus So●t, 19 31
+- 793a World 3800: 3 1. Antigonus Doson 1●
+- 793a World 3807: 5 1. Sel●●ent C●ra●●us. 3 86
+- 793a World 3811: 4 1. P●olo ●●● Philo pator 27.
 
 ### named cell on a heading row with no yeere of the World (1)
 
@@ -292,7 +304,7 @@ Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere o
 - 792a: 4380 3704 / 4380 3704 / 425 420 / 449
 - 792a: 4395 371● / 4395 371● / 434 429 / 458
 
-### named cell is not a single printed length (31)
+### named cell is not a single printed length (44)
 
 - 784a World 2436 col "Assyria.": 16 1. Mamilas, or Mamelus . 30
 - 784a World 2439 col "Aegypt.": 8 1. Or{us}, 2. or Busiris, 38. 138.
@@ -309,9 +321,11 @@ Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere o
 - 786a World 2837 col "Egypt.": 21 1. Thuoris, 7 188
 - 786b World 2911 col "Israel.": 15 1. Samuel, and after him Saul, 40.
 - 786b World 2964 col "Athens": 1 1. Medon, 20 13
+- 786b World 3010 col "Egypt.": 1. Sesac 26 167
 - 787a World 3036 col "Egypt.": 1. Chemmis, 50 15.
 - 787a World 3077 col "Israel.": 2 1 5 Zimri. 6 Tibui. 7 Omri. 12.
 - 787a World 3086 col "Egypt.": 1. Cheops, 56. 65
+- 787b World 3142 col "Egypt.": 1. Cephrenes 50. 121
 - 788a World 3206 col "Iuda.": 10 1. Ʋzzia, or, Agaria, 52.
 - 788a World 3210 col "Assyria": 1. Belosus, or Phul. 48.
 - 788a World 3221 col "Israel.": 1. Interregnum, 23. yeeres.
@@ -323,15 +337,27 @@ Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere o
 - 791b World 3663 col "Aegypt.": 4 1. Tachus 8. Eusebius giues only 2. yeres to Tachus. Reinee. 6; but the storie of him proues more.
 - 791b World 3672 col "Greece.": 1. Philip King of Macedon 24. yeeres, and part of the 25.
 - 792a World 3696 col "Persia.": 12 1. Darius 5. yeeres & somwhat more
-- 792a World 3709 col "Olymp.": 1. Aridaeus, 6. and foure moneths .
+- 792a World 3709 col "(no column title)": 1. Aridaeus, 6. and foure moneths .
 - 792a World 3709 col "(no column title)": 1. Onias, 23. 136
+- 792b World 3745 col "Macedon.": 1. Pyrrhus 7. Moneths.
+- 792b World 3752 col "Macedon.": 1. Ptolemie Ceraunis, Antipater, Meleager, Sosthenes,
+- 792b World 3764 col "Iewes. Daniel": 1. Manasses high Priest, 27. 191
+- 793a World 3771 col "Syria and the Kingdome of the Greekes.": 3 1. Antiochus Theus. 16 50
+- 793a World 3787 col "Syria and the Kingdome of the Greekes.": 4 1. Selencus Callenicus 20 66
+- 793a World 3792 col "Iewes. Daniel": 1. Simon the iust 28 219
+- 793a World 3810 col "Syria and the Kingdome of the Greekes.": 5 1. Antiochus the Great . 36. 89
+- 794a World 3846 col "Syria & Kingdome of the Greekes.": 6 1. Selencus Philopator, 12. 125
+- 794a World 3852 col "Aegypt.": 1. Ptolemaeus Philometor, and his brother Physcon, 35.
+- 794a World 3853 col "Macedon.": 42 1. Perseus 11. or 12. yeeres.
+- 794a World 3858 col "Syria & Kingdome of the Greekes.": 7 1. Antiochus Epiphanes, 12. 137
 
-### two names share one printed length (4)
+### two names share one printed length (5)
 
 - 785a World 2692: 4 1. Debora & Ba . 40
 - 785b World 2765: 1. Atreus and Thyestes, . 65
 - 788b World 3285: 3 1. Salmanassar or Nabanassar, 10
 - 790a World 3469: 9 1 Cyaxares or Darius the Mede, 26
+- 792b World 3735: 1. Antipater and Alexander the sonne of Cassander. 4
 
 ### not a personal name (3)
 
@@ -343,7 +369,7 @@ Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere o
 
 - 788a World 3195 col "Iuda.": 1. Interregnum eleuen yeeres .
 
-### row label not a death, translation, or a portal event (153)
+### row label not a death, translation, or a portal event (271)
 
 - 781b World 326: All the yeeres of the Patriarchs, wherein they begate children, dyed, or performed any thing, are reckoned compleat: which is inferred out of the addition of the yeres before they 
 - 781b World 1042: Seth ay ed about the end of this yeere.
@@ -498,8 +524,126 @@ Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere o
 - 792b World 3722: The Aera of the Kingdome of the Greekes.
 - 792b World 3724: Alexanders Captayns assume the name of Kings.
 - 792b World 3731: L. 4. c. 6. §. 4.
+- 792b World 3739: L. 4. c. 6. §. 7.
+- 792b World 3750: The translation of the Bible by the Septuagint.
+- 792b World 3750: The Tarentines raise warre in the easterne part of Italie, & call in Pyrrhus against the Romans.
+- 792b World 3751: L. 4. c. 6. § 9. &
+- 792b World 3751: Pyrrhus his victorie against the Romans.
+- 792b World 3752: L. 4. c. 7. §. 3. & 7.
+- 792b World 3752: The Gaules doe great spoile in Macedon and Greece, vnder Brennus and Belgius.
+- 792b World 3754: Pyrrhus goes into Sicil .
+- 792b World 3756: L. 5. c. 2. §. 6.
+- 792b World 3756: About these times the Achaeans begunne their societie.
+- 792b World 3756: Pyrrhus called out of Sicil against the Romans.
+- 792b World 3757: Pyrrhus ouerthrowne by the Romans .
+- 792b World 3759: L. 4. c. 7. §. 5.
+- 792b World 3759: Pyrrhus slaine at Argos .
+- 792b World 3759: The Tarentines craue aid of the Carthaginiaˉs
+- 792b World 3763: The translation by the septuagint finished, this 17. of Philadelphus.
+- 792b World 3768: The beginning of the first Punicke Warre.
+- 792b World 3768: Ap. Claudius. M. Fuluius
+- 793a World 3771: L. Valerius. T. Octacilius .
+- 793a World 3775: Regulus passeth into Africke .
+- 793a World 3775: M. Attil. Reg. Cn. Cornelius.
+- 793a World 3776: L. 5. c. 1. §. 8.
+- 793a World 3776: Marcus Carynensis Praetor of the Achaeans.
+- 793a World 3776: Regulus taken prisoner .
+- 793a World 3776: L. Manlius. Q. Caditus .
+- 793a World 3781: Aratus recouers Sicyon and ioynes it to the Achaeans.
+- 793a World 3781: L. Caecilius. C. Furius .
+- 793a World 3782: The Roman Consuls beaten at Lilybaum. The beginning of the Parthian Kingdome.
+- 793a World 3782: Regulus his death .
+- 793a World 3782: C. Atilius. L. Manlius .
+- 793a World 3783: P. Claudius, Pulcher, & L. Iunius.
+- 793a World 3785: L. Caecilius. M. Fabius .
+- 793a World 3787: Amilcar the Carthaginian in Sicil . L. 5. c. 1. §. 11.
+- 793a World 3787: M. Fabius. C. Atilius .
+- 793a World 3790: Luctatius his great victorie as AEgateis.
+- 793a World 3790: C. Luct. Catul A. Posthumius
+- 793a World 3791: The warre of the Mercinaries with the Carthaginians. L. 5. c. 3.
+- 793a World 3791: Peace granted to Carthage .
+- 793a World 3791: Q. Luctatius. A. Manlius .
+- 793a World 3794: The warre with the Mercinaries ended.
+- 793a World 3794: The Romans take Sardinia from the Carthaginians.
+- 793a World 3794: Gracchus. Falco .
+- 793a World 3800: Lepidus. Malleolus .
+- 793a World 3801: M. Aemylius M. Iunius .
+- 793a World 3803: L. 5. c. 2. §. 7.
+- 793a World 3803: Teuta Queene of Illyria subdued by the Romans.
+- 793a World 3803: L. Posthumius. C. Fulnius .
+- 793a World 3807: L. 5. c. 5. §. 1.
+- 793a World 3807: L. Aemylius. C. Atilius .
+- 793a World 3810: Flaminius was also Consul this yeere. See L. 5. c. 2. § 8.
+- 793a World 3810: Marceilus his victorie ouer the Gaule about Milan.
+- 793a World 3810: C. Cornelius. M. Marcellus
+- 793a World 3811: L. 5. c. 5. §. 2.
+- 793a World 3811: P. Cornelius. M. Minutius .
+- 793a World 3812: L. Verturius. C. Luctatius .
+- 793b World 3813: Hannibal takes Saguntum.
+- 793b World 3813: Demetrius Pharius chased out of his Lordship. L. 5. c. 3. §. 4.
+- 793b World 3813: L. Aemylius. M. Liuius .
+- 793b World 3814: The beginning of the second Punick warre.
+- 793b World 3814: The battayles of Ticinus and Trebia.
+- 793b World 3814: P. Cor. Scipio. T. Sempronius
+- 793b World 3815: The battayles of Thrasymene .
+- 793b World 3815: C. Flaminius. Cn. Seruilius .
+- 793b World 3816: The great battaile of Cannae
+- 793b World 3816: C. Teret. Varro L. AEm. Paul.
+- 793b World 3817: L. Posthumius T. Semp. Grac. Q. Fabius.
+- 793b World 3820: The 2. Scipioes slain in Spain . Hannibal wins Tareˉiuˉ
+- 793b World 3820: Philip & the Achaeans haue war with the Aetolians and Romaˉs in Greece.
+- 793b World 3820: Syracuse won by Marcellus. Capua besieged
+- 793b World 3821: Young Scipio sent into Spaine. Capua won by the Romaˉs.
+- 793b World 3825: The battayle at Metaurus .
+- 793b World 3825: C. Clau. Nero. M. Liuius.
+- 793b World 3826: Scipio driues the Carthaginians quite out of Spain
+- 793b World 3826: Q. Caecilius. L. Veturius .
+- 793b World 3828: Scipio inuades Africke .
+- 793b World 3828: Cethegus. P. Sempronius
+- 793b World 3829: King Syphax taken .
+- 793b World 3829: Seruilius, and Seruilius .
+- 793b World 3830: Hannibal vanquished by Scipio .
+- 793b World 3830: T. Claudius. M. Seruilius .
+- 793b World 3831: The end of the second Punicke Warre, and beginning of the Macedonian war with Philip. This yeere and the next were three Eclipses of the Moone.
+- 793b World 3831: Scipio triumphs ouer Carthage .
+- 793b World 3831: Lentulus. Patus .
+- 793b World 3834: T. Q. Flamin. Sex. AElius.
+- 793b World 3835: L. 5. c. 5. §. 14.
+- 793b World 3835: The battaile at Cynoscephalae
+- 793b World 3835: Cethegus. Q. Minutius .
+- 793b World 3836: Hannibal expelled Carthage. l. 5. c 5. §. 4. & c. 4. §. 15
+- 793b World 3836: Liberty of Greece proclaimed by the Romaˉs
+- 793b World 3836: L. Furius. Marcellus .
+- 793b World 3837: C. 5. §. 5.
+- 793b World 3837: War vpon Nabis the Tyrant .
+- 793b World 3837: M. Cato. L. Valerius .
+- 793b World 3840: C. 5. §. 7.
+- 793b World 3840: L. Quintius. Cn. Domitius .
+- 793b World 3841: Acili{us} Glabrio Nasica .
+- 793b World 3842: The great victory of L Scipio ouer Antiochus in Asia, which gaue beginning to the Roman Luxurie.
+- 793b World 3842: L. Scipio. C. Laelius .
+- 794a World 3845: L. 5. c. 5. §. 9
+- 794a World 3845: Lepidus. Flaminius .
+- 794a World 3846: Sp. Posthumi{us}. Q. Martius .
+- 794a World 3849: L. 5. c. 6. §. 2.
+- 794a World 3849: Scipio, Hannibal, and Philopoemen die. Tully placeth Scipioes death two yeeres earlyer.
+- 794a World 3849: Marcelius. Q. Fabius
+- 794a World 3850: L. 5. c. 6. §. 3.
+- 794a World 3850: Paulus. Cn. Baebius .
+- 794a World 3851: Chap. 6. §. 4.
+- 794a World 3851: Cethegus. M. Baebius .
+- 794a World 3852: A. Posthumius Piso .
+- 794a World 3853: Piso. Manlius .
+- 794a World 3858: An Eclipse of ☾ the 7. of Philometor 573 yeeres and 206. dayes from the beginning of Nabon. which agrees with this accompt. It was( by Iulian yeeres) the last of Aprill, about one 
+- 794a World 3861: P. Licmius. C. Cassius .
+- 794a World 3864: A total Eclipse of the Moone, foregoing the ouer throw of Perseus in the yere of Nabonassar here noted.
+- 794a World 3864: Gentius King of Illyria taken .
+- 794a World 3864: L. Aem. Paul C. Licinius.
+- 794a World 3865: The captiuitie of all the best among the Greekes.
+- 794a World 3865: Paetus. Iunius .
+- 794a World 3867: Torquatus. Octauius .
 
-### illegible row label (35)
+### illegible row label (51)
 
 - 782a World 1656: Methusaleh 〈◊ 〉 〈◊ 〉 yeere a 〈◊ 〉 before the Floud.
 - 782a World 1656: Noah 〈◊ 〉 into the Arke.
@@ -536,6 +680,22 @@ Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere o
 - 791b World 3688: 17 Philip wasteth ●llyria, and drawes the Thessaliaˉs to follow him
 - 792a World 3720: Some place the beginning of Seleucus in this twelfth from Alexander, b● which accom●p he reigned 32. yeeres.
 - 792b World 3724: Athens set free by Demetrius the sonne of Autigon●s.
+- 792b World 3745: ●.
+- 792b World 3745: Elezar ●igh Priest 1● 172
+- 792b World 3751: ●.
+- 792b World 3756: 10 Nabon●si●rs yere begins the first of Octob.
+- 792b World 3768: The more ancient Roman Consuls haue beene often so v●●●rlayne, that Liuie hath doubted whom to name .
+- 793a World 3783: Shipwrack, and vnhappie ●ight of the Romans at sea.
+- 793a World 3792: Semproi●
+- 793a World 3801: A Roman Embassador slaine by Queene T●●r●.
+- 793b World 3815: Li●. l. 22 〈◊ 〉 reckoning by 〈◊ 〉 〈◊ 〉
+- 793b World 3815: Philip and the Achaeans make peace with the 〈◊ 〉.
+- 793b World 3817: Posthumi{us} the Roman Consul slain b● the Gaules
+- 793b World 3820: Ful●ins .
+- 793b World 3821: Ful●ins.
+- 794a World 3845: S●●p●●●riuen to banish himselfe from Rome.
+- 794a World 3851: Callicrates 〈...〉 Achaeans and all the Greekes.
+- 794a World 3858: Scae●ola .
 
 ### death of Codrus has no existing person (1)
 
@@ -552,3 +712,7 @@ Statements written: 209. New people: 145. Skipped figures: 294. Cut-off (yeere o
 ### death of Alexander has no existing person (1)
 
 - 792a World 3708: Alexander dyed 17. dayes before the Summer Solstice From Nabonassar hitherto are collected 424. yeeres: and hence to the reigne of Augustus, 294.
+
+### death of Hiero King of Syracuse has no existing person (1)
+
+- 793b World 3815: Hiero King of Syracuse dyes .

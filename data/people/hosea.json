@@ -3,7 +3,7 @@
   "id": "hosea",
   "type": "person",
   "title": "Hosea",
-  "summary": "Hosea is dated in Raleigh's chronological table (1617), column Iuda, by a yeere of the World. No tier 1–4 chronology dates this person.",
+  "summary": "Hosea is dated in Raleigh's chronological table (1617), column Israel, by a yeere of the World. No tier 1–4 chronology dates this person.",
   "description": "Added from the Raleigh import (The History of the World, 1617). Raleigh is display-only. He gives a yeere of the World, not a BC year, and no tier 1–4 chronology dates this person, so there is no sort year.",
   "sorting_year": null,
   "sorting_basis": {
@@ -59,7 +59,7 @@
         "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 788b",
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
-        "note": "Year cell \"3966 3284 291\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 9 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Iuda.."
+        "note": "Year cell \"3966 3284 291\". The third printed figure 291 is the column \"Temple\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 9 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Israel.."
       }
     ]
   },

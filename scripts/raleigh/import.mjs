@@ -71,7 +71,10 @@ const slug = (s) => norm(s).replace(/\s+/g, '-').replace(/-+/g, '-').replace(/^-
 const illegible = (s) => /[●◊〈]/.test(s);
 const cleanName = (s) => s.replace(/[.{]+$/g, '').replace(/\s+/g, ' ').trim();
 // "4 1. Name, 17." / "1. Name 17" / "1 Name. 17" / "1. Nim rod. 114"
-const NAMED = /^(?:(\d+)\s+)?1\.?\s+([^,\d][^,]{0,80}?)(?:,\s*|\s*)?\.?\s+(\d{1,4})\.?\s*$/;
+// A digit cannot sit inside the name. "1. Sesac 26 167" has two trailing figures
+// (a length and a running total in the same cell). That cell must fail here and
+// be listed, not stored with the last figure as the length.
+const NAMED = /^(?:(\d+)\s+)?1\.?\s+([^,\d][^,\d]{0,80}?)(?:,\s*|\s*)?\.?\s+(\d{1,4})\.?\s*$/;
 const NAMED_NOLEN = /^(?:(\d+)\s+)?1\.?\s+([A-Za-zˉ][A-Za-zˉ .'{}\-]{1,40}?)\.?\s*$/;
 const DOTNAME = /^\.\s+([A-Za-zˉ][A-Za-zˉ'-]{1,24})\.?\s+(\d{2,4})\.?\s*$/;
 
@@ -117,16 +120,58 @@ function headingCell(text) {
   return text.length < 48 && KINGDOM.test(text);
 }
 
-const rows = [];
+const rawRows = [];
 let sig = '781b';
 let cur = null;
-const re = /<pb n="([^"]+)"|<row>|<\/row>|<cell\b[^>]*>([\s\S]*?)<\/cell>/g;
+const re = /<pb n="([^"]+)"|<row>|<\/row>|<cell\b([^>]*)>([\s\S]*?)<\/cell>/g;
 let m;
 while ((m = re.exec(tableXml))) {
   if (m[1]) { sig = m[1]; continue; }
   if (m[0] === '<row>') { cur = []; continue; }
-  if (m[0] === '</row>') { if (cur) rows.push({ sig, cells: cur }); cur = null; continue; }
-  if (cur) cur.push(plain(m[2]));
+  if (m[0] === '</row>') { if (cur) rawRows.push({ sig, cells: cur }); cur = null; continue; }
+  if (cur) {
+    const attr = m[2] || '';
+    cur.push({
+      text: plain(m[3]),
+      cols: +(attr.match(/\bcols="(\d+)"/)?.[1] || 1),
+      rowSpan: +(attr.match(/\brows="(\d+)"/)?.[1] || 1),
+    });
+  }
+}
+// A rowspan or colspan cell occupies its printed columns on the following rows.
+// Without that, a later name lands one column to the left (Iudas Macchabaeus under Rome).
+const rows = [];
+let carry = [];
+for (const row of rawRows) {
+  const visual = [];
+  const next = [];
+  let vi = 0;
+  const skipCarry = () => {
+    while ((carry[vi] || 0) > 0) {
+      visual[vi] = '';
+      next[vi] = carry[vi] - 1;
+      vi += 1;
+    }
+  };
+  for (const cell of row.cells) {
+    skipCarry();
+    const cols = Math.max(1, cell.cols);
+    const rowSpan = Math.max(1, cell.rowSpan);
+    for (let c = 0; c < cols; c++) {
+      visual[vi + c] = c === 0 ? cell.text : '';
+      next[vi + c] = rowSpan - 1;
+    }
+    vi += cols;
+  }
+  while (vi < carry.length) {
+    if ((carry[vi] || 0) > 0) {
+      visual[vi] = '';
+      next[vi] = carry[vi] - 1;
+    }
+    vi += 1;
+  }
+  carry = next;
+  rows.push({ sig: row.sig, cells: visual });
 }
 
 let headers = [];
@@ -475,6 +520,7 @@ const PROSE_NOTES = [
   { year: 2473, id: 'moses-flees-to-midian', slot: null, must: 'in the yeere of the World 2474.', text: 'The narrative (Book II, ch. IIII, §I, sig. 184a) says "in the yeere of the World 2474." The chronological table prints this flight at World 2473. The table figure is the one entered.' },
   { year: 2514, id: 'exodus', slot: null, must: 'or after our account, 2513.', text: 'Book II, ch. III, §I, sig. 174a prints "2514. to Codoman, or after our account, 2513." Book II, ch. IIII, §I, sig. 184a prints the Passover "in the yeere of the World 2514." The table row entered is "The Passeouer." at World 2514. 2513 is not given a second year.' },
   { year: 2553, id: 'moses', slot: 'death', must: 'yeere of the World 25 54', text: 'Book II, sig. 206b prints "which happened in the yeere of the World 25 54", with a space in the figures. That spaced figure is not entered as a year. The table row entered is "The Last yeere of Moses." at World 2553.' },
+  { year: 1788, id: 'nimrod', slot: 'reign', must: 'hee reigned one hundred and twelue', text: 'Book II, ch. I, §VIII, sig. 164a first prints "there remaineth 114. yeeres" and "which number of 114. necessitie bestoweth on Nimrod", the length in the table cell. The same paragraph then says "Nimrod, by this accompt, liued in all but one hundred seuenty nine yeeres: whereof hee reigned one hundred and twelue". The 179 and the 112 are not entered as years.' },
 ];
 function proseCite(cite) {
   return `Raleigh, The History of the World (1617, EEBO-TCP A10357), ${cite}`;

@@ -1,11 +1,11 @@
 # Raleigh pass log
 
-Imported from the 1617 chronological table, through the yeere of the World 3731. Raleigh is display-only. No sorting year was changed.
+Imported from the 1617 chronological table. Raleigh is display-only. No sorting year was changed.
 
-- Records updated or created with a Raleigh entry: 196
-- Dated statements written: 209
-- People created: 145
-- Figures skipped: 294
+- Records updated or created with a Raleigh entry: 203
+- Dated statements written: 216
+- People created: 152
+- Figures skipped: 448
 
 ## People created
 
@@ -23,6 +23,7 @@ Imported from the 1617 chronological table, through the yeere of the World 3731.
 - `amen` — Amen
 - `amphytryon` — Amphytryon
 - `amyntas` — Amyntas
+- `antigonus-gonatas` — Antigonus Gonatas
 - `apis-of-argiues` — Apis
 - `apis-of-sicyon` — Apis
 - `apuilas` — Apuilas
@@ -50,7 +51,6 @@ Imported from the 1617 chronological table, through the yeere of the World 3731.
 - `cambyses` — Cambyses
 - `cassander` — Cassander
 - `cecrops-the-second` — Cecrops the second
-- `cephrenes` — Cephrenes 50
 - `cham` — Cham
 - `codrus` — Codrus
 - `corax` — Corax
@@ -60,7 +60,9 @@ Imported from the 1617 chronological table, through the yeere of the World 3731.
 - `darius-hystaspis` — Darius Hystaspis
 - `darius-nothus` — Darius Nothus
 - `darius-the-mede` — Darius the Mede
+- `demetrius` — Demetrius
 - `demophon` — Demophon
+- `demtrius` — Demtrius
 - `dercilus` — Dercilus
 - `echireus` — Echireus
 - `ehud` — Ehud
@@ -82,12 +84,14 @@ Imported from the 1617 chronological table, through the yeere of the World 3731.
 - `ioas` — Ioas
 - `iosias` — Iosias
 - `iosua` — Iosua
+- `iudas-macchabaeus` — Iudas Macchabaeus
 - `lamedon` — Lamedon
 - `lamprides` — Lamprides
 - `laomedon` — Laomedon
 - `laosthenes` — Laosthenes
 - `lephta` — lephta
 - `leucippus` — Leucippus
+- `lysimachus` — Lysimachus
 - `manasses` — Manasses
 - `marathius` — Marathius
 - `marathus` — Marathus
@@ -104,6 +108,7 @@ Imported from the 1617 chronological table, through the yeere of the World 3731.
 - `ninus` — Ninus
 - `numa-pompilius` — Numa Pompilius
 - `ochus` — Ochus
+- `onias-high-priest` — Onias high Priest
 - `ophrateus` — Ophrateus
 - `orestes` — Orestes
 - `othoniel` — Othoniel
@@ -113,6 +118,7 @@ Imported from the 1617 chronological table, through the yeere of the World 3731.
 - `pelasgus` — Pelasgus
 - `pheredus` — Pheredus
 - `phestus` — Phestus
+- `philip` — Philip
 - `phorbas-of-argiues` — Phorbas
 - `phorbas-of-athens` — Phorbas
 - `phoroneus` — Phoroneus
@@ -120,6 +126,8 @@ Imported from the 1617 chronological table, through the yeere of the World 3731.
 - `polyphides` — Polyphides
 - `priamus` — Priamus
 - `proetus` — Proetus
+- `ptolemie-epiphanes` — Ptolemie Epiphanes
+- `ptolemie-euergetes` — Ptolemie Euergetes
 - `ptolemie-lagi` — Ptolemie Lagi
 - `rehoboam` — Rehoboam
 - `romulus` — Romulus
@@ -127,7 +135,6 @@ Imported from the 1617 chronological table, through the yeere of the World 3731.
 - `sarai` — Sarai
 - `sardanapalus` — Sardanapalus
 - `semiramis` — Semiramis
-- `sesac` — Sesac 26
 - `sethon` — Sethon
 - `sosares` — Sosares
 - `sosarmus-of-assyria` — Sosarmus
@@ -157,18 +164,19 @@ Imported from the 1617 chronological table, through the yeere of the World 3731.
 
 ## Skipped, by reason
 
-- illegible name or length: 52
+- illegible name or length: 57
 - named cell on a heading row with no yeere of the World: 1
 - year cell does not follow Julian = World + 682: 10
-- named cell is not a single printed length: 31
-- two names share one printed length: 4
+- named cell is not a single printed length: 44
+- two names share one printed length: 5
 - not a personal name: 3
 - name without a printed length: 1
-- row label not a death, translation, or a portal event: 153
-- illegible row label: 35
+- row label not a death, translation, or a portal event: 271
+- illegible row label: 51
 - death of Codrus has no existing person: 1
 - death of Amasis has no existing person: 1
 - death of Epaminondas has no existing person: 1
 - death of Alexander has no existing person: 1
+- death of Hiero King of Syracuse has no existing person: 1
 
 Every skipped figure is quoted in `data/raleigh-dates-extract.md`.
