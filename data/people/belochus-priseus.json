@@ -2,8 +2,8 @@
   "$schema": "../../schema/person.schema.json",
   "id": "belochus-priseus",
   "type": "person",
-  "title": "Belochus Priseus",
-  "summary": "Belochus Priseus is dated in Raleigh's chronological table (1617), column Assyria, by a yeere of the World. No tier 1–4 chronology dates this person.",
+  "title": "Belochus Priscus",
+  "summary": "Belochus Priscus is dated in Raleigh's chronological table (1617), column Assyria, by a yeere of the World. No tier 1–4 chronology dates this person.",
   "description": "Added from the Raleigh import (The History of the World, 1617). Raleigh is display-only. He gives a yeere of the World, not a BC year, and no tier 1–4 chronology dates this person, so there is no sort year.",
   "sorting_year": null,
   "sorting_basis": {
@@ -75,5 +75,8 @@
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 783a"
     }
+  ],
+  "alt_names": [
+    "Belochus Priseus"
   ]
 }

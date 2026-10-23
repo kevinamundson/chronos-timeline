@@ -6,7 +6,8 @@
   "summary": "Ruler listed in CFAH-14 Table 5 (Israel).",
   "description": "Ruler of Israel. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-14 (Table 5, \"CFAH Reconstructed Eponym List (CFAH-REL)\"); its dates are display only.",
   "alt_names": [
-    "Jepthah"
+    "Jepthah",
+    "lephta"
   ],
   "sorting_year": null,
   "sorting_basis": {
@@ -33,13 +34,25 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-14-t5-rel:jepthah:jephthah:reign"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "9 1. lephta, 6.",
+        "year_am": 2820,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 786a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"3502 2820 307\". The third printed figure 307 is the column \"Exodus\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 6 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Israel.."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-14-osf"
+    "cfah-14-osf",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [
@@ -47,6 +60,11 @@
       "source_id": "cfah-14-osf",
       "url": "https://osf.io/9fuw2/",
       "locator": "Table 5, pp. 43–73"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 786a"
     }
   ],
   "dynasty": "Judges of Israel"

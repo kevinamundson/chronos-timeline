@@ -47,7 +47,75 @@ const ALIAS = {
   nabuchodonosor: 'nebuchadnezzar-ii', 'nabuchodonosor the great': 'nebuchadnezzar-ii',
   hezekiah: 'hezekiah', ezechias: 'hezekiah', ezekias: 'hezekiah', ezekia: 'hezekiah',
   jehu: 'jehu', iehu: 'jehu', leroboam: 'jeroboam-i', cyrus: 'cyrus-the-great',
+  lephta: 'jephthah', iair: 'jair', thola: 'tola',
 };
+// Display titles. The key is the printed name after norm(). Raleigh's own spelling is kept as alt_names.
+const MODERN = {
+  aegysthus: 'Aegisthus',
+  amphytryon: 'Amphitryon',
+  acoris: 'Achoris',
+  asarhaddon: 'Esarhaddon',
+  athalia: 'Athaliah',
+  'belochus priseus': 'Belochus Priscus',
+  'belochus the second': 'Belochus II',
+  bocchorus: 'Bocchoris',
+  'cecrops the second': 'Cecrops II',
+  cham: 'Ham (Egypt)',
+  'cyras in persia': 'Cyrus in Persia',
+  'darius hystaspis': 'Darius Hystaspes',
+  demtrius: 'Demetrius',
+  erictheus: 'Erechtheus',
+  ericthonius: 'Erichthonius',
+  euilmerodach: 'Evil-merodach',
+  euristheus: 'Eurystheus',
+  gedeon: 'Gideon',
+  iehoabaz: 'Jehoahaz',
+  iehoiakim: 'Jehoiakim',
+  ioas: 'Joash',
+  iosias: 'Josiah',
+  iosua: 'Joshua',
+  'iudas macchabaeus': 'Judas Maccabeus',
+  manasses: 'Manasseh',
+  neco: 'Necho',
+  nectanebus: 'Nectanebo',
+  'onias high priest': 'Onias the high priest',
+  othoniel: 'Othniel',
+  pandi: 'Pandion',
+  pekahia: 'Pekahiah',
+  priamus: 'Priam',
+  'ptolemie epiphanes': 'Ptolemy Epiphanes',
+  'ptolemie euergetes': 'Ptolemy Euergetes',
+  'ptolemie lagi': 'Ptolemy Lagus',
+  'sabacus the ethiopian': 'Sabaco the Ethiopian',
+  sarai: 'Sarah',
+  sethon: 'Sethos',
+  'syl alba': 'Alba Silvius',
+  'syl alladius': 'Silvius Alladius',
+  'syl amulius': 'Amulius',
+  'syl latinus': 'Latinus Silvius',
+  'syl posthumus': 'Silvius Postumus',
+  'syl procas': 'Procas Silvius',
+  'syl tybermus': 'Tiberinus Silvius',
+  'syluius aeneas': 'Aeneas Silvius',
+  tesamenus: 'Tisamenus',
+  thespeius: 'Thespius',
+  zeusippus: 'Zeuxippus',
+};
+function modernTitle(printed) {
+  let s = String(printed || '').replace(/[{}]/g, '').replace(/ˉ/g, 'm').replace(/\s+/g, ' ').trim();
+  // Look up the printed letters before expanding suspensions. "Pandiŏ" norms to "pandi";
+  // expanding ŏ first would look up "pandion" and miss the map.
+  const rawKey = norm(s);
+  if (MODERN[rawKey]) return MODERN[rawKey];
+  s = s.replace(/ŏ/g, 'on').replace(/▪/g, '.');
+  const key = norm(s);
+  if (MODERN[key]) return MODERN[key];
+  s = s.replace(/^AE/, 'Ae');
+  s = s.replace(/^Syl\.\s+/i, 'Silvius ');
+  s = s.replace(/^Syluius\b/, 'Silvius');
+  if (s[0] && s[0] === s[0].toLowerCase()) s = s[0].toUpperCase() + s.slice(1);
+  return s;
+}
 // "1. Name LENGTH" is a birth only for these. Kings and Nimrod are not in this set.
 const NOT_PATRIARCH = new Set(['nabuchodonosor', 'nabuchodonosor the great', 'hezekiah', 'ezechias', 'ezekias', 'ezekia', 'jehu', 'iehu', 'leroboam', 'cyrus', 'david', 'dauid', 'solomon', 'salomon', 'saul', 'samuel', 'nimrod']);
 const PATRIARCH = new Set(Object.keys(ALIAS).filter((k) => !NOT_PATRIARCH.has(k)));
@@ -474,7 +542,7 @@ function ensurePerson(who) {
   const id = who.create || who.id;
   if (!id) throw new Error(`Raleigh person has no id for ${who.title || '(no title)'}`);
   if (recs[id]) return id;
-  const title = who.title;
+  const title = modernTitle(who.title);
   recs[id] = { dir: 'people', doc: {
     $schema: '../../schema/person.schema.json', id, type: 'person', title,
     summary: `${title} is dated in Raleigh's chronological table (1617)${who.column && who.column !== 'row label' && who.column !== 'year cell' ? `, column ${who.column.replace(/\.$/, '')}` : ''}, by a yeere of the World. No tier 1–4 chronology dates this person.`,
@@ -553,6 +621,50 @@ function applyProse() {
 }
 
 const extractRows = [];
+const nameNotes = new Map();
+function spellingOf(p) {
+  if (p.name) return p.name;
+  if (p.form === 'began') return p.quote.match(/^([A-Za-zˉ][A-Za-zˉ'.-]{2,40})\s+began/)?.[1] || null;
+  if (p.form === 'translated') {
+    const m = p.quote.match(/^([A-Za-zˉ][A-Za-zˉ .'-]{0,40}?)\s+translated\b/i);
+    return m ? m[1].replace(/\.\s*$/, '').trim() : null;
+  }
+  if (p.form === 'death') {
+    const raw = deathName(p.quote);
+    if (!raw) return null;
+    return raw.replace(/\s+(his|her|the)\b[\s\S]*$/i, '').trim().split(/\s+/)[0] || null;
+  }
+  return null;
+}
+function foldedWords(s) {
+  return norm(s).split(' ').filter(Boolean);
+}
+function containsSequence(hay, needle) {
+  if (!needle.length || needle.length > hay.length) return false;
+  for (let i = 0; i + needle.length <= hay.length; i++) {
+    if (needle.every((w, k) => hay[i + k] === w)) return true;
+  }
+  return false;
+}
+function addAlt(doc, spelling) {
+  const shown = String(spelling || '').replace(/[{}]/g, '').replace(/ˉ/g, 'm').replace(/\s+/g, ' ').trim();
+  if (!shown) return;
+  const spellingWords = foldedWords(shown);
+  const folded = spellingWords.join('');
+  if (!folded) return;
+  const titleWords = foldedWords(doc.title);
+  if (folded === titleWords.join('')) return;
+  // "Abraham (Abram)" already carries Abram. "Onias high Priest" is not the phrase "Onias the high priest".
+  if (containsSequence(titleWords, spellingWords)) return;
+  doc.alt_names ||= [];
+  const already = doc.alt_names.some((a) => {
+    const words = foldedWords(a);
+    if (words.join('') === folded) return true;
+    return containsSequence(words, spellingWords);
+  });
+  if (already) return;
+  doc.alt_names.push(shown);
+}
 for (const p of unique) {
   const precision = /about/i.test(p.quote) ? 'approximate' : 'year';
   const lengthNote = p.form === 'reign' && p.span != null
@@ -573,6 +685,13 @@ for (const p of unique) {
   if (p.who) {
     if (!p.who.column) p.who.column = p.column;
     const id = ensurePerson(p.who);
+    const spelling = spellingOf(p);
+    if (spelling) {
+      const row = nameNotes.get(id) || { spellings: [], column: '' };
+      if (!row.spellings.includes(spelling)) row.spellings.push(spelling);
+      if (!row.column && p.column && !['row label', 'year cell', '(no column title)'].includes(p.column)) row.column = p.column;
+      nameNotes.set(id, row);
+    }
     addTo(recs[id].doc, p.slot, entry);
     addSrc(recs[id].doc, p.sig);
     targets.push(id + (p.slot ? `:${p.slot}` : ''));
@@ -593,6 +712,18 @@ for (const p of unique) {
   extractRows.push({ world: p.world, sig: p.sig, quote: p.quote, targets, slot: p.slot });
 }
 applyProse();
+
+for (const [id, row] of nameNotes) {
+  const doc = recs[id]?.doc;
+  if (!doc) continue;
+  if (doc.description?.startsWith(MARK)) {
+    const modern = modernTitle(row.spellings[0]);
+    doc.title = modern;
+    const col = row.column ? `, column ${String(row.column).replace(/\.$/, '')}` : '';
+    doc.summary = `${modern} is dated in Raleigh's chronological table (1617)${col}, by a yeere of the World. No tier 1–4 chronology dates this person.`;
+  }
+  for (const spelling of row.spellings) addAlt(doc, spelling);
+}
 
 // lifespan printed at birth vs a later death year in the same table
 for (const [id, r] of Object.entries(recs)) {
@@ -666,7 +797,7 @@ writeFileSync(join(DATA, 'raleigh-dates-extract.md'), lines.join('\n'));
 const log = [];
 log.push('# Raleigh pass log');
 log.push('');
-log.push(`Imported from the 1617 chronological table${Number.isFinite(UNTIL) ? `, through the yeere of the World ${UNTIL}` : ''}. Raleigh is display-only. No sorting year was changed.`);
+log.push(`Imported from the 1617 chronological table${Number.isFinite(UNTIL) ? `, through the yeere of the World ${UNTIL}` : ''}. Raleigh is display-only. No sorting year was changed. Display titles use modern English spelling. His printed spelling is an alternate name. He states that the Julian Period exceeds the yeere of the World by 682. He does not state a BC conversion, so no BC year was added.`);
 log.push('');
 log.push(`- Records updated or created with a Raleigh entry: ${new Set(extractRows.flatMap((e) => e.targets.map((t) => t.split(':')[0]))).size}`);
 log.push(`- Dated statements written: ${extractRows.length}`);
@@ -676,7 +807,12 @@ log.push('');
 log.push('## People created');
 log.push('');
 if (!createdNames.size) log.push('None.');
-else for (const [id, title] of [...createdNames.entries()].sort((a, b) => a[0].localeCompare(b[0]))) log.push(`- \`${id}\` — ${title}`);
+else for (const [id, title] of [...createdNames.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
+  const doc = recs[id]?.doc;
+  const shown = doc?.title || title;
+  const alt = (doc?.alt_names || []).filter(Boolean).join(', ');
+  log.push(`- \`${id}\` — ${shown}${alt ? ` (Raleigh: ${alt})` : ''}`);
+}
 log.push('');
 log.push('## Skipped, by reason');
 log.push('');

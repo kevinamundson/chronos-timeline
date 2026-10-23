@@ -1,27 +1,27 @@
 # Raleigh pass log
 
-Imported from the 1617 chronological table. Raleigh is display-only. No sorting year was changed.
+Imported from the 1617 chronological table. Raleigh is display-only. No sorting year was changed. Display titles use modern English spelling. His printed spelling is an alternate name. He states that the Julian Period exceeds the yeere of the World by 682. He does not state a BC conversion, so no BC year was added.
 
 - Records updated or created with a Raleigh entry: 203
 - Dated statements written: 216
-- People created: 152
+- People created: 149
 - Figures skipped: 448
 
 ## People created
 
 - `abas` — Abas
-- `acoris` — Acoris
+- `acoris` — Achoris (Raleigh: Acoris)
 - `adrastus` — Adrastus
-- `aegyrus` — AEgyrus
-- `aegysthus` — Aegysthus
+- `aegyrus` — Aegyrus
+- `aegysthus` — Aegisthus (Raleigh: Aegysthus)
 - `aeneas` — Aeneas
-- `aeschylus` — AEschylus
+- `aeschylus` — Aeschylus
 - `agamemnon` — Agamemnon
 - `agamnestor` — Agamnestor
 - `agastus` — Agastus
 - `alcades` — Alcades
 - `amen` — Amen
-- `amphytryon` — Amphytryon
+- `amphytryon` — Amphitryon (Raleigh: Amphytryon)
 - `amyntas` — Amyntas
 - `antigonus-gonatas` — Antigonus Gonatas
 - `apis-of-argiues` — Apis
@@ -36,63 +36,61 @@ Imported from the 1617 chronological table. Raleigh is display-only. No sorting 
 - `artaxerxes-longimanus` — Artaxerxes Longimanus
 - `artaxerxes-mnemon` — Artaxerxes Mnemon
 - `asa` — Asa
-- `asarhaddon` — Asarhaddon
+- `asarhaddon` — Esarhaddon (Raleigh: Asarhaddon)
 - `ascanius` — Ascanius
 - `ascatades` — Ascatades
-- `athalia` — Athalia
+- `athalia` — Athaliah (Raleigh: Athalia)
 - `baleus` — Baleus
 - `balthasar` — Balthasar
-- `belochus-priseus` — Belochus Priseus
-- `belochus-the-second` — Belochus the second
+- `belochus-priseus` — Belochus Priscus (Raleigh: Belochus Priseus)
+- `belochus-the-second` — Belochus II (Raleigh: Belochus the second)
 - `belopares` — Belopares
 - `belus` — Belus
 - `ben-merodach` — Ben Merodach
-- `bocchorus` — Bocchorus
+- `bocchorus` — Bocchoris (Raleigh: Bocchorus)
 - `cambyses` — Cambyses
 - `cassander` — Cassander
-- `cecrops-the-second` — Cecrops the second
-- `cham` — Cham
+- `cecrops-the-second` — Cecrops II (Raleigh: Cecrops the second)
+- `cham` — Ham (Egypt) (Raleigh: Cham)
 - `codrus` — Codrus
 - `corax` — Corax
 - `cranaus` — Cranaus
 - `crotopus` — Crotopus
-- `cyras-in-persia` — Cyras in Persia
-- `darius-hystaspis` — Darius Hystaspis
+- `cyras-in-persia` — Cyrus in Persia (Raleigh: Cyras in Persia)
+- `darius-hystaspis` — Darius Hystaspes (Raleigh: Darius Hystaspis)
 - `darius-nothus` — Darius Nothus
 - `darius-the-mede` — Darius the Mede
 - `demetrius` — Demetrius
 - `demophon` — Demophon
-- `demtrius` — Demtrius
+- `demtrius` — Demetrius (Raleigh: Demtrius)
 - `dercilus` — Dercilus
 - `echireus` — Echireus
 - `ehud` — Ehud
 - `epopeus` — Epopeus
-- `erictheus` — Erictheus
-- `ericthonius` — Ericthonius
-- `euilmerodach` — Euilmerodach
+- `erictheus` — Erechtheus (Raleigh: Erictheus)
+- `ericthonius` — Erichthonius (Raleigh: Ericthonius)
+- `euilmerodach` — Evil-merodach (Raleigh: Euilmerodach)
 - `eupales` — Eupales
-- `euristheus` — Euristheus
+- `euristheus` — Eurystheus (Raleigh: Euristheus)
 - `europs` — Europs
-- `gedeon` — Gedeon
+- `gedeon` — Gideon (Raleigh: Gedeon)
 - `hosea` — Hosea
-- `iair` — Iair
-- `iehoabaz` — Iehoabaz
-- `iehoiakim` — Iehoiakim
+- `iehoabaz` — Jehoahaz (Raleigh: Iehoabaz)
+- `iehoiakim` — Jehoiakim (Raleigh: Iehoiakim)
 - `ilus` — Ilus
 - `inachus-of-argiues` — Inachus
 - `inachus-of-sicyon` — Inachus
-- `ioas` — Ioas
-- `iosias` — Iosias
-- `iosua` — Iosua
-- `iudas-macchabaeus` — Iudas Macchabaeus
+- `ioas` — Joash (Raleigh: Ioas)
+- `iosias` — Josiah (Raleigh: Iosias)
+- `iosua` — Joshua (Raleigh: Iosua)
+- `iudas-macchabaeus` — Judas Maccabeus (Raleigh: Iudas Macchabaeus)
 - `lamedon` — Lamedon
 - `lamprides` — Lamprides
 - `laomedon` — Laomedon
 - `laosthenes` — Laosthenes
-- `lephta` — lephta
 - `leucippus` — Leucippus
 - `lysimachus` — Lysimachus
-- `manasses` — Manasses
+- `manasses` — Manasseh (Raleigh: Manasses)
 - `marathius` — Marathius
 - `marathus` — Marathus
 - `medidus` — Medidus
@@ -101,20 +99,20 @@ Imported from the 1617 chronological table. Raleigh is display-only. No sorting 
 - `mezales` — Mezales
 - `mitreus` — Mitreus
 - `mnestheus` — Mnestheus
-- `neco` — Neco
-- `nectanebus` — Nectanebus
+- `neco` — Necho (Raleigh: Neco)
+- `nectanebus` — Nectanebo (Raleigh: Nectanebus)
 - `nephres` — Nephres
 - `ninias` — Ninias
 - `ninus` — Ninus
 - `numa-pompilius` — Numa Pompilius
 - `ochus` — Ochus
-- `onias-high-priest` — Onias high Priest
+- `onias-high-priest` — Onias the high priest (Raleigh: Onias high Priest)
 - `ophrateus` — Ophrateus
 - `orestes` — Orestes
-- `othoniel` — Othoniel
-- `pandi` — Pandiŏ
+- `othoniel` — Othniel (Raleigh: Othoniel)
+- `pandi` — Pandion (Raleigh: Pandiŏ)
 - `pannias` — Pannias
-- `pekahia` — Pekahia
+- `pekahia` — Pekahiah (Raleigh: Pekahia)
 - `pelasgus` — Pelasgus
 - `pheredus` — Pheredus
 - `phestus` — Phestus
@@ -124,43 +122,42 @@ Imported from the 1617 chronological table. Raleigh is display-only. No sorting 
 - `phoroneus` — Phoroneus
 - `polybus` — Polybus
 - `polyphides` — Polyphides
-- `priamus` — Priamus
+- `priamus` — Priam (Raleigh: Priamus)
 - `proetus` — Proetus
-- `ptolemie-epiphanes` — Ptolemie Epiphanes
-- `ptolemie-euergetes` — Ptolemie Euergetes
-- `ptolemie-lagi` — Ptolemie Lagi
+- `ptolemie-epiphanes` — Ptolemy Epiphanes (Raleigh: Ptolemie Epiphanes)
+- `ptolemie-euergetes` — Ptolemy Euergetes (Raleigh: Ptolemie Euergetes)
+- `ptolemie-lagi` — Ptolemy Lagus (Raleigh: Ptolemie Lagi)
 - `rehoboam` — Rehoboam
 - `romulus` — Romulus
-- `sabacus-the-ethiopian` — Sabacus the Ethiopian
-- `sarai` — Sarai
+- `sabacus-the-ethiopian` — Sabaco the Ethiopian (Raleigh: Sabacus the Ethiopian)
+- `sarai` — Sarah (Raleigh: Sarai)
 - `sardanapalus` — Sardanapalus
 - `semiramis` — Semiramis
-- `sethon` — Sethon
+- `sethon` — Sethos (Raleigh: Sethon)
 - `sosares` — Sosares
 - `sosarmus-of-assyria` — Sosarmus
 - `sosarmus-of-media` — Sosarmus
 - `sparetus` — Sparetus
 - `sthenelus` — Sthenelus
-- `syl-alba` — Syl. Alba
-- `syl-alladius` — Syl. Alladius
-- `syl-amulius` — Syl▪ Amulius
-- `syl-latinus` — Syl. Latinus
-- `syl-posthumus` — Syl. Posthumus
-- `syl-procas` — Syl. Procas
-- `syl-tybermus` — Syl. Tybermus
-- `syluius-aeneas` — Syluius Aeneas
+- `syl-alba` — Alba Silvius (Raleigh: Syl. Alba)
+- `syl-alladius` — Silvius Alladius (Raleigh: Syl. Alladius)
+- `syl-amulius` — Amulius (Raleigh: Syl▪ Amulius)
+- `syl-latinus` — Latinus Silvius (Raleigh: Syl. Latinus)
+- `syl-posthumus` — Silvius Postumus (Raleigh: Syl. Posthumus)
+- `syl-procas` — Procas Silvius (Raleigh: Syl. Procas)
+- `syl-tybermus` — Tiberinus Silvius (Raleigh: Syl. Tybermus)
+- `syluius-aeneas` — Aeneas Silvius (Raleigh: Syluius Aeneas)
 - `tautanes` — Tautanes
-- `tesamenus` — Tesamenus
+- `tesamenus` — Tisamenus (Raleigh: Tesamenus)
 - `teuteus` — Teuteus
 - `theseus` — Theseus
-- `thespeius` — Thespeius
-- `thola` — Thola
+- `thespeius` — Thespius (Raleigh: Thespeius)
 - `thurimachus` — Thurimachus
 - `triopas` — Triopas
 - `tros` — Tros
 - `tullus-hostilius` — Tullus Hostilius
 - `xerxes` — Xerxes
-- `zeusippus` — Zeusippus
+- `zeusippus` — Zeuxippus (Raleigh: Zeusippus)
 
 ## Skipped, by reason
 

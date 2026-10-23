@@ -4,7 +4,7 @@ Edition read: London, printed by William Stansby for Walter Burre, 1617. EEBO-TC
 
 The chronological table (back matter, from sig. 781b) is Raleigh's index. "To the Reader" (sig. 780b) says it reforms press errors and his own mis-reckonings, and that the Julian Period exceeds the yeere of the World by 682. A year is recorded only when the printed pair differs by 682.
 
-Statements written: 216. New people: 152. Skipped figures: 448. Cut-off (yeere of the World): none.
+Statements written: 216. New people: 149. Skipped figures: 448. Cut-off (yeere of the World): none.
 
 | World | Sig. | Quote | Record |
 |---|---|---|---|
@@ -110,16 +110,16 @@ Statements written: 216. New people: 152. Skipped figures: 448. Cut-off (yeere o
 | 2772 | 785b | 5 1. Laomedon, 36 | laomedon:reign |
 | 2772 | 785b | 6 1. Abimelech, 3. | abimelech-son-of-gideon:reign |
 | 2773 | 785b | 26 1. Sosarmus 19 | sosarmus-of-assyria:reign |
-| 2775 | 785b | 7 1. Thola, 23 | thola:reign |
+| 2775 | 785b | 7 1. Thola, 23 | tola:reign |
 | 2792 | 785b | 27 1. Mitreus 27 | mitreus:reign |
 | 2798 | 785b | 10 1. Theseus, 30 | theseus:reign |
-| 2798 | 785b | 8 1. Iair. 22 | iair:reign |
+| 2798 | 785b | 8 1. Iair. 22 | jair:reign |
 | 2803 | 785b | 22 1. Phestus, 8. | phestus:reign |
 | 2808 | 785b | 6 1. Priamus, 40 | priamus:reign |
 | 2811 | 785b | 23 1. Adrastus, 4 | adrastus:reign |
 | 2815 | 785b | 24 1. Polyphides 31 | polyphides:reign |
 | 2819 | 785b | 28 1. Tautanes 32 | tautanes:reign |
-| 2820 | 786a | 9 1. lephta, 6. | lephta:reign |
+| 2820 | 786a | 9 1. lephta, 6. | jephthah:reign |
 | 2826 | 786a | 10 1. Ibzan. 7. | ibzan:reign |
 | 2828 | 786a | 11 1. Mnesthe{us} 24 | mnestheus:reign |
 | 2830 | 786a | 1. Agamemnon, 18 | agamemnon:reign |

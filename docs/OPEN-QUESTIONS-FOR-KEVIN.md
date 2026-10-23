@@ -617,7 +617,7 @@ None of these records has a tier 1–4 date, so the sort stays on Generations an
 
 ## G. Raleigh, *The History of the World* (1617), full table (2026-10-23)
 
-The chronological table (sig. 781b to the FINIS trailer) is entered as display only. Nothing was converted from his yeere of the World to BC. No `sorting_year` on an existing record was changed. New people are tier `none`, with `sorting_year` null. The importer is `scripts/raleigh/import.mjs`. Counts and every skipped cell are in `docs/raleigh-pass-log.md` and `data/raleigh-dates-extract.md`.
+The chronological table (sig. 781b to the FINIS trailer) is entered as display only. Nothing was converted from his yeere of the World to BC. No `sorting_year` on an existing record was changed. New people are tier `none`, with `sorting_year` null. Display titles of people taken from the table are modern English spelling. His printed spelling is an alternate name (G10). The importer is `scripts/raleigh/import.mjs`. Counts and every skipped cell are in `docs/raleigh-pass-log.md` and `data/raleigh-dates-extract.md`.
 
 ### G1. No chart for a person who has only his yeere of the World
 
@@ -694,3 +694,11 @@ One length for two names was not split: "Debora & Ba", "Atreus and Thyestes", "S
 2. Whether the temple sentence at World 2994 should be attached to `temple-dedication`.
 3. Whether `cyras-in-persia` is Cyrus the Great, and whether `darius-the-mede` is the portal's Cyaxares.
 4. Whether AM-only people should stay off the chart (G1).
+
+### G10. Modern display names, and no BC parenthetical (2026-10-23)
+
+People taken from the table now have a modern English display title. Raleigh's printed spelling is `alt_names`, so a search for the 1617 form still finds the person. The date string is still his cell, verbatim. Record ids were not renamed. The separations in G7 are unchanged. `demtrius` and `demetrius` are both titled Demetrius. `cham` is titled Ham (Egypt) and is not Ham son of Noah. `cyras-in-persia` is titled Cyrus in Persia. `manasses` is titled Manasseh and is not `manasseh` (son of Joseph). The printed names lephta, Iair, and Thola are alternate names on the existing judges Jephthah, Jair, and Tola. Those three were not given a second person.
+
+No BC year was added. To the Reader, sig. 780b, says: "This IVLIAN Perioà, after the present accompt, alwayes exceedes the yeares of the World by 682." His example is Jehoshaphat beginning in the 3774th year of the Julian Period, the 3092nd of the World, and the 99th of the Temple. 3774 − 3092 is 682. He does not state a year before Christ, and he does not give the epoch that would turn that offset into one. `year_bc_ad` on his entries stays null. "seuen hundred and fourtie yeeres before Christ borne" dates the Erythraean Sibyl. It is not a rule for turning a yeere of the World into a year before Christ.
+
+Say if a parenthetical should show the Julian year he already prints in the year cell, or a derived BC year labelled as derived from an epoch he does not state.
