@@ -34,6 +34,9 @@ sources/
 docs/
   cfah-anchors.md       proposed CFAH anchor events with exact paper citations
   open-questions.md
+  GROK-BUILD-SETUP.md    Mac Mini setup for Grok Build; GROK-BUILD-TASKS.md = task backlog;
+  REVIEW-CHECKLIST.md    Chronos's PR review checklist; roadmap-pd-sources.md = Kevin's PD-sources roadmap
+AGENTS.md               standing rules for Grok Build (and any coding agent); only Kevin merges to main
 scripts/validate.mjs    schema + cross-reference + 4-tier sorting + MT Genesis 5 checks
 site/                   static website (MVP); data/ stays the single source of truth
   build.mjs             zero-dependency Node generator: reads data/, writes site/dist/
