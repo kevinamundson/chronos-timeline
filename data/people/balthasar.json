@@ -1,9 +1,9 @@
 {
   "$schema": "../../schema/person.schema.json",
-  "id": "iehoram-againe",
+  "id": "balthasar",
   "type": "person",
-  "title": "Iehoram againe",
-  "summary": "Iehoram againe is dated in Raleigh's chronological table (1617), column Iuda, by a yeere of the World. No tier 1–4 chronology dates this person.",
+  "title": "Balthasar",
+  "summary": "Balthasar is dated in Raleigh's chronological table (1617), column Chaldaea, by a yeere of the World. No tier 1–4 chronology dates this person.",
   "description": "Added from the Raleigh import (The History of the World, 1617). Raleigh is display-only. He gives a yeere of the World, not a BC year, and no tier 1–4 chronology dates this person, so there is no sort year.",
   "sorting_year": null,
   "sorting_basis": {
@@ -52,14 +52,14 @@
       },
       {
         "source": "raleigh-history-of-the-world",
-        "date": "22 1. Iehoram againe, 8.",
-        "year_am": 3113,
+        "date": "6 1. Balthasar, 17",
+        "year_am": 3477,
         "year_bc_ad": null,
         "precision": "year",
-        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 787b",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 790a",
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
-        "note": "Year cell \"3795 3113 120\". The third printed figure 120 is the column \"Temple\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 8 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Iuda.."
+        "note": "Year cell \"4159 3477\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 17 at the end of the name is the reign length he prints. The end year is not printed on this row."
       }
     ]
   },
@@ -73,7 +73,7 @@
     {
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
-      "locator": "Chronological Table, sig. 787b"
+      "locator": "Chronological Table, sig. 790a"
     }
   ]
 }

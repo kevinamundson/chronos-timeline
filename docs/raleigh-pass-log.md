@@ -1,15 +1,16 @@
 # Raleigh pass log
 
-Imported from the 1617 chronological table, through the yeere of the World 3425. Raleigh is display-only. No sorting year was changed.
+Imported from the 1617 chronological table, through the yeere of the World 3672. Raleigh is display-only. No sorting year was changed.
 
-- Records updated or created with a Raleigh entry: 180
-- Dated statements written: 193
-- People created: 132
-- Figures skipped: 163
+- Records updated or created with a Raleigh entry: 193
+- Dated statements written: 206
+- People created: 143
+- Figures skipped: 265
 
 ## People created
 
 - `abas` — Abas
+- `acoris` — Acoris
 - `adrastus` — Adrastus
 - `aegyrus` — AEgyrus
 - `aegysthus` — Aegysthus
@@ -30,18 +31,22 @@ Imported from the 1617 chronological table, through the yeere of the World 3425.
 - `archippus` — Archippus
 - `ariphron` — Ariphron
 - `arius` — Arius
+- `artaxerxes-longimanus` — Artaxerxes Longimanus
+- `artaxerxes-mnemon` — Artaxerxes Mnemon
 - `asa` — Asa
 - `asarhaddon` — Asarhaddon
 - `ascanius` — Ascanius
 - `ascatades` — Ascatades
 - `athalia` — Athalia
 - `baleus` — Baleus
+- `balthasar` — Balthasar
 - `belochus-priseus` — Belochus Priseus
 - `belochus-the-second` — Belochus the second
 - `belopares` — Belopares
 - `belus` — Belus
 - `ben-merodach` — Ben Merodach
 - `bocchorus` — Bocchorus
+- `cambyses` — Cambyses
 - `cecrops-the-second` — Cecrops the second
 - `cephrenes` — Cephrenes 50
 - `cham` — Cham
@@ -49,15 +54,19 @@ Imported from the 1617 chronological table, through the yeere of the World 3425.
 - `corax` — Corax
 - `cranaus` — Cranaus
 - `crotopus` — Crotopus
-- `debora-ba` — Debora & Ba
+- `cyras-in-persia` — Cyras in Persia
+- `cyrus` — Cyrus
+- `darius-hystaspis` — Darius Hystaspis
+- `darius-nothus` — Darius Nothus
+- `darius-the-mede` — Darius the Mede
 - `demophon` — Demophon
 - `dercilus` — Dercilus
-- `dynastie` — Dynastie
 - `echireus` — Echireus
 - `ehud` — Ehud
 - `epopeus` — Epopeus
 - `erictheus` — Erictheus
 - `ericthonius` — Ericthonius
+- `euilmerodach` — Euilmerodach
 - `eupales` — Eupales
 - `euristheus` — Euristheus
 - `europs` — Europs
@@ -66,11 +75,9 @@ Imported from the 1617 chronological table, through the yeere of the World 3425.
 - `iair` — Iair
 - `iehoabaz` — Iehoabaz
 - `iehoiakim` — Iehoiakim
-- `iehoram-againe` — Iehoram againe
 - `ilus` — Ilus
 - `inachus-of-argiues` — Inachus
 - `inachus-of-sicyon` — Inachus
-- `interregnum` — Interregnum
 - `ioas` — Ioas
 - `iosias` — Iosias
 - `iosua` — Iosua
@@ -90,9 +97,12 @@ Imported from the 1617 chronological table, through the yeere of the World 3425.
 - `mitreus` — Mitreus
 - `mnestheus` — Mnestheus
 - `neco` — Neco
+- `nectanebus` — Nectanebus
+- `nephres` — Nephres
 - `ninias` — Ninias
 - `ninus` — Ninus
 - `numa-pompilius` — Numa Pompilius
+- `ochus` — Ochus
 - `ophrateus` — Ophrateus
 - `orestes` — Orestes
 - `othoniel` — Othoniel
@@ -140,18 +150,22 @@ Imported from the 1617 chronological table, through the yeere of the World 3425.
 - `triopas` — Triopas
 - `tros` — Tros
 - `tullus-hostilius` — Tullus Hostilius
+- `xerxes` — Xerxes
 - `zeusippus` — Zeusippus
 
 ## Skipped, by reason
 
-- illegible name or length: 45
+- illegible name or length: 51
 - named cell on a heading row with no yeere of the World: 1
 - year cell does not follow Julian = World + 682: 10
-- named cell is not a single printed length: 26
-- two names share one printed length: 2
+- named cell is not a single printed length: 28
+- two names share one printed length: 4
+- not a personal name: 3
 - name without a printed length: 1
-- row label not a death, translation, or a portal event: 62
-- illegible row label: 15
+- row label not a death, translation, or a portal event: 132
+- illegible row label: 32
 - death of Codrus has no existing person: 1
+- death of Amasis has no existing person: 1
+- death of Epaminondas has no existing person: 1
 
 Every skipped figure is quoted in `data/raleigh-dates-extract.md`.

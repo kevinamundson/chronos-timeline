@@ -4,7 +4,7 @@ Edition read: London, printed by William Stansby for Walter Burre, 1617. EEBO-TC
 
 The chronological table (back matter, from sig. 781b) is Raleigh's index. "To the Reader" (sig. 780b) says it reforms press errors and his own mis-reckonings, and that the Julian Period exceeds the yeere of the World by 682. A year is recorded only when the printed pair differs by 682.
 
-Statements written: 193. New people: 132. Skipped figures: 163. Cut-off (yeere of the World): 3425.
+Statements written: 206. New people: 143. Skipped figures: 265. Cut-off (yeere of the World): 3672.
 
 | World | Sig. | Quote | Record |
 |---|---|---|---|
@@ -101,7 +101,6 @@ Statements written: 193. New people: 132. Skipped figures: 163. Cut-off (yeere o
 | 2665 | 785a | 13 1. Proetus, 17 | proetus:reign |
 | 2678 | 785a | 23 1. Sosares, 20 | sosares:reign |
 | 2681 | 785a | 7 1. Cecrops the second, 40 | cecrops-the-second:reign |
-| 2692 | 785a | 4 1. Debora & Ba . 40 | debora-ba:reign |
 | 2717 | 785b | 4 1. Ilus, 55. | ilus:reign |
 | 2720 | 785b | 1 Euristheus, 45 | euristheus:reign |
 | 2721 | 785b | 20 1. Polybus. 40 | polybus:reign |
@@ -126,7 +125,6 @@ Statements written: 193. New people: 132. Skipped figures: 163. Cut-off (yeere o
 | 2830 | 786a | 1. Agamemnon, 18 | agamemnon:reign |
 | 2833 | 786a | 11 1. Elon 10 | elon:reign |
 | 2843 | 786a | 12 1. Abdon, 8. | abdon:reign |
-| 2844 | 786a | 20 1. Dynastie. 178 | dynastie:reign |
 | 2846 | 786a | 25 1. Pelasgus, 20. | pelasgus:reign |
 | 2848 | 786a | 1. Aegysthus, 6. | aegysthus:reign |
 | 2851 | 786a | 1. Aeneas, 3. | aeneas:reign |
@@ -160,7 +158,6 @@ Statements written: 193. New people: 132. Skipped figures: 163. Cut-off (yeere o
 | 3080 | 787a | 5 1. Phorbas, 31. | phorbas-of-athens:reign |
 | 3108 | 787b | 10 1. Syl. Tybermus, 8 | syl-tybermus:reign |
 | 3111 | 787b | 6 1. Mezales, 30. | mezales:reign |
-| 3113 | 787b | 22 1. Iehoram againe, 8. | iehoram-againe:reign |
 | 3121 | 787b | 11 1. Iehu, 28. | jehu:reign |
 | 3121 | 787b | 7 1. Athalia, 7 | athalia:reign |
 | 3142 | 787b | 1. Cephrenes 50. 121 | cephrenes:reign |
@@ -191,7 +188,6 @@ Statements written: 193. New people: 132. Skipped figures: 163. Cut-off (yeere o
 | 3316 | 789a | 14 1. Manasses 55 | manasses:reign |
 | 3317 | 789a | 5 1. Deioces, 53. | deioces:reign |
 | 3318 | 789a | 2 1 Numa Pompilius, 43 | numa-pompilius:reign |
-| 3331 | 789a | 1. Interregnum, 2. | interregnum:reign |
 | 3351 | 789a | 2 1. Ben Merodach, 2. | ben-merodach:reign |
 | 3353 | 789a | 2 1. Ardys, 49 | ardys:reign |
 | 3361 | 789a | 3 1. Tullus Hostilius 32 | tullus-hostilius:reign |
@@ -201,10 +197,27 @@ Statements written: 193. New people: 132. Skipped figures: 163. Cut-off (yeere o
 | 3404 | 789b | 18 1. Iehoiakim, 11 | iehoiakim:reign |
 | 3407 | 789b | 4 1 Nabuchodonosor the Great . 44 | nebuchadnezzar-ii:reign |
 | 3408 | 789b | 1. Psammis, 12. | psammis:reign |
+| 3443 | 789b | 27 1. Euilmerodach. 2. | euilmerodach:reign |
+| 3471 | 790a | 5 1 Croesus. 14 | croesus:reign |
+| 3472 | 790a | 1. Cyras in Persia, 23 | cyras-in-persia:reign |
+| 3477 | 790a | 6 1. Balthasar, 17 | balthasar:reign |
+| 3494 | 790a | 1. Darius the Mede 2. | darius-the-mede:reign |
+| 3495 | 790a | 1 Cyrus 7. | cyrus:reign |
+| 3502 | 790a | 2 1. Cambyses, 7. | cambyses:reign |
+| 3504 | 790a | 1. Psammenitus, 3 | psammenitus:reign |
+| 3510 | 790a | 3 1. Darius Hystaspis, 36 | darius-hystaspis:reign |
+| 3546 | 790b | 4 1. Xerxes, 21 | xerxes:reign |
+| 3567 | 790b | 5 1. Artaxerxes Longimanus, 40. | artaxerxes-longimanus:reign |
+| 3608 | 791a | 8 1. Darius Nothus. 19. | darius-nothus:reign |
+| 3625 | 791a | 2 1. Nephres 6 | nephres:reign |
+| 3627 | 791a | 9 1. Artaxerxes Mnemon 43 | artaxerxes-mnemon:reign |
+| 3631 | 791a | 3 1. Acoris 12 | acoris:reign |
+| 3645 | 791b | 4 1. Nectanebus. 18 | nectanebus:reign |
+| 3670 | 791b | 10 1. Ochus. 23. | ochus:reign |
 
 ## Skipped
 
-### illegible name or length (45)
+### illegible name or length (51)
 
 - 781b World 461: 1. ●ared. 962
 - 782a World 1820: 1. Sarug. 2●0
@@ -251,6 +264,12 @@ Statements written: 193. New people: 132. Skipped figures: 163. Cut-off (yeere o
 - 789b World 3414: 11 ●9 1. Ieho●i●●●●●●. ●0 zedekia 11. yeeres
 - 789b World 3414: ● 1. ●●●●●●es 57
 - 789b World 3420: 1. Apries or ●o●hra 1●
+- 789b World 3434: 8 1. Astyages, 3●.
+- 789b World 3445: 39 1. Nighsa●, & Nitocris, 4.
+- 790a World 3451: 5 1. Euilmero●dach, 26
+- 790a World 3455: 6 1. Seruius ●ullus, 41
+- 790b World 3573: 79 Esdras commeth to Ierusalem . 1. Daniel his 70. weekes, or 490. yeers b●●in
+- 791a World 3619: 1 1. Amyrtau●, 6
 
 ### named cell on a heading row with no yeere of the World (1)
 
@@ -269,7 +288,7 @@ Statements written: 193. New people: 132. Skipped figures: 163. Cut-off (yeere o
 - 792a: 4380 3704 / 4380 3704 / 425 420 / 449
 - 792a: 4395 371● / 4395 371● / 434 429 / 458
 
-### named cell is not a single printed length (26)
+### named cell is not a single printed length (28)
 
 - 784a World 2436 col "Assyria.": 16 1. Mamilas, or Mamelus . 30
 - 784a World 2439 col "Aegypt.": 8 1. Or{us}, 2. or Busiris, 38. 138.
@@ -297,17 +316,27 @@ Statements written: 193. New people: 132. Skipped figures: 163. Cut-off (yeere o
 - 788b World 3258 col "Olympiads.": 1 3
 - 788b World 3277 col "Israel.": 1. Jnterregnum. 7. yeeres.
 - 789a World 3333 col "Egypt.": 1 12 Princes, 15
+- 791b World 3663 col "Aegypt.": 4 1. Tachus 8. Eusebius giues only 2. yeres to Tachus. Reinee. 6; but the storie of him proues more.
+- 791b World 3672 col "Greece.": 1. Philip King of Macedon 24. yeeres, and part of the 25.
 
-### two names share one printed length (2)
+### two names share one printed length (4)
 
+- 785a World 2692: 4 1. Debora & Ba . 40
 - 785b World 2765: 1. Atreus and Thyestes, . 65
 - 788b World 3285: 3 1. Salmanassar or Nabanassar, 10
+- 790a World 3469: 9 1 Cyaxares or Darius the Mede, 26
+
+### not a personal name (3)
+
+- 786a World 2844: 20 1. Dynastie. 178
+- 787b World 3113: 22 1. Iehoram againe, 8.
+- 789a World 3331: 1. Interregnum, 2.
 
 ### name without a printed length (1)
 
 - 788a World 3195 col "Iuda.": 1. Interregnum eleuen yeeres .
 
-### row label not a death, translation, or a portal event (62)
+### row label not a death, translation, or a portal event (132)
 
 - 781b World 326: All the yeeres of the Patriarchs, wherein they begate children, dyed, or performed any thing, are reckoned compleat: which is inferred out of the addition of the yeres before they 
 - 781b World 1042: Seth ay ed about the end of this yeere.
@@ -371,8 +400,78 @@ Statements written: 193. New people: 132. Skipped figures: 163. Cut-off (yeere o
 - 789b World 3417: Zedekia his iourney to Babylon . L. 2. c. 28. §. 6.
 - 789b World 3424: Ierusalem taken by Nabuchodonosor: with whose 18. for the more part, and partly with whose 19. this yeere concurres .
 - 789b World 3425: Ierusalem destroyed.
+- 789b World 3429: Aegypt conquered by Nabuchodonosor. L. 3. c. 1. §. 8. & 9.
+- 789b World 3443: Nabuchodonosor liues wilde; and his Kingdome is gouerned by others for him, during seuen yeeres. L. 3. c. 1. §. 13.
+- 790a World 3451: Lib. 3. Chap. 1. §. 6. The 37. of Iechonia his captiuitie compleate, and he enlarged.
+- 790a World 3469: Fortie yeeres after the Conquest of Egypt past, Amasis beganne his reigne: this being inclusiuely the 41. and therefore the next yeere seemes concurrent with Amasis his first.
+- 790a World 3477: The seuen Sages in Greece .
+- 790a World 3493: The end of the Chaldaean Empire.
+- 790a World 3495: The beginning of Cyrus his Empire. His Edict of libertie to the Iewes.
+- 790a World 3495: Yeeres from 1 Cyrus
+- 790a World 3499: Onely Zorobabel & Nehemias are remembred as Gouernors of the Iews vnto the 32. of Artaxerxes Mnemon. But there were many before Nehemias, as him selfe witnesseth . Ch. 5. n. 15. so
+- 790a World 3509: Cambyses reigned seuen yeeres and fiue moneth, so as this bis last yeere was filled vp by the Magi, and( as may seeme) a good part of the next. L. 3. c. 4. §. 4.
+- 790b World 3523: The Tarquines expelled Rome. L. 4. c. 7. §. 1.
+- 790b World 3524: The Carthaginians first league with Rome. L. 5. c. 1. §. 2.
+- 790b World 3524: Brutus and Publicola
+- 790b World 3529: L. 3. c. 5. §. 4.
+- 790b World 3530: The Athenians and Ionians take Sardes.
+- 790b World 3540: The battaile of Marathon .
+- 790b World 3551: An Eclipse of the Sunne . L. 3. c. 6. §. 2.
+- 790b World 3552: L. 3 c. 6. §. 3. & 6.
+- 790b World 3552: The battailes at Thermopylae, Arte misit & Salamis.
+- 790b World 3553: L. 3. c. 6. §. 9. 10. & 11.
+- 790b World 3553: The battaile of Platea and Mycale.
+- 790b World 3555: L. 3. C. 7. §. 1. & 2.
+- 790b World 3555: The Athenians rebuild their wals, and lay the foundation of their Dominion.
+- 790b World 3566: L. 3. c. 7. §. 3.
+- 790b World 3573: L. 3. c. 7. §. 5. & 7.
+- 790b World 3582: Hippocrates the great Physicion, and Democritus the Philosopher flourish.
+- 791a World 3583: Cymons voyage to Cyprus, in which he died.
+- 791a World 3586: Nehemias comes to Ierusalem .
+- 791a World 3586: A League for 30. yeeres, betweene Athens & Sparta
+- 791a World 3590: Tribuni Milituˉ first chosen in stead of Coˉsuls, Dionys. Liuie placeth them in the 110. yeere of Rome .
+- 791a World 3591: The conquest of Samos by the Athenians vnder Pericles.
+- 791a World 3598: The wals of Ierusalem finished . Nehemias returnes to King Artaxerxes.
+- 791a World 3607: L. 3. c. 9. §. 1.
+- 791a World 3607: The victory of the Athenians at Pylus.
+- 791a World 3608: L. 3. c. 9. §. 1.
+- 791a World 3610: L. 3. c. 8. §. 5. & 6.
+- 791a World 3610: A vaine & troublesome peace betweene Athens and Sparta.
+- 791a World 3619: L. 3. c. 9. §. 1. &c. 8. §. 8.
+- 791a World 3619: The Athenian forces in Sicil vtterly destroyed.
+- 791a World 3620: C. 8. §. 9.
+- 791a World 3620: The gouernment of the 400. in A thens, which was suppressed the yeere following.
+- 791a World 3622: The Carthaginians inuade Sicil with an Armie of 300000. L. 5. c. 1. s. 4. † 3.
+- 791a World 3622: The Athenians begin to recouer strength.
+- 791a World 3624: L. 3. c. 8. §. 10.
+- 791a World 3625: The battaile at Arginusae .
+- 791a World 3626: Dionysius the elder vsurps tyrannie in Syracuse.
+- 791a World 3627: L. 3. c. 8. §. 12.
+- 791a World 3627: The battaile at Argos, Potamos, &c.
+- 791a World 3629: The siege of Veii, which lasted 10. yeres
+- 791a World 3631: L. 3. c. 10. §. 1.
+- 791a World 3631: Socrates put to death. The 30. tyrants put downe in Athens .
+- 791b World 3636: L. 3. c. 11. §. 4.
+- 791b World 3636: Agesilaus warreth in Asia .
+- 791b World 3638: L. 3. C. 11. §. 7.
+- 791b World 3638: The victorie of Conon at Gnidus, &c.
+- 791b World 3639: Vey taken by Camillus .
+- 791b World 3639: Xenophon and Plato flourish .
+- 791b World 3643: The honorable victorie of Camillus ouer the Falisci.
+- 791b World 3644: L. 4. c. 7. §. 1. L. 3. c. 11. §. 9.
+- 791b World 3644: The Peace of Antalcidas .
+- 791b World 3650: M. Manlius Capitolinus put to death.
+- 791b World 3650: The Lacedaemonians take the Citadell of Thebes by treason.
+- 791b World 3654: L. 3. c. 11. §. 11.
+- 791b World 3661: L. 3. c. 12. §. 1.
+- 791b World 3661: The famous battaile of Lenctra .
+- 791b World 3663: L. 3. c. 12. §. 4.
+- 791b World 3663: L. Sextius a Plebeian, and L. Aemylius, Consuls.
+- 791b World 3663: The hastie growth of the Theban Estate.
+- 791b World 3670: L. 3. c. 12. §. 8.
+- 791b World 3670: Peace in Greece. The Athenians weaken themselues by connecting their Treasure to vaine vses.
 
-### illegible row label (15)
+### illegible row label (32)
 
 - 782a World 1656: Methusaleh 〈◊ 〉 〈◊ 〉 yeere a 〈◊ 〉 before the Floud.
 - 782a World 1656: Noah 〈◊ 〉 into the Arke.
@@ -389,7 +488,32 @@ Statements written: 193. New people: 132. Skipped figures: 163. Cut-off (yeere o
 - 788a World 3242: ●. 〈◊ 〉 and after him Anysis. 6.
 - 788a World 3243: ●3 15 Zacharia sixe Months .
 - 788b World 3280: Carops the First, gouerning in Athens for ten yeeres: after whom succeeded sixe chosen each after other for the like time; and 〈◊ 〉 the office became Annuall.
+- 789b World 3429: ●0 1 Phar.
+- 789b World 3429: Hophra s●am & the kingdome of Egypt gouerned ●●rtie yeeres by Ʋi●ereyes.
+- 790b World 3515: Hippias the son of P●sis●●aus Tyran. in Athens.
+- 790b World 3522: 13 Babylon which ha● rebelled in ken by Darius.
+- 790b World 3540: Comin●us.
+- 790b World 3562: The great victories of Cimon, a● Eurymedon, a●d elsewhere.
+- 790b World 3566: 21 The death of Xerxes by the treason of Artaba●us.
+- 790b World 3567: Themistocles being banished, f●●●, to Artaxerxes,
+- 790b World 3582: ●●e dece●●iri chosen to coˉpound a body of the Roman Lawes.
+- 791a World 3583: The decem viri chosen for a second yere tyrannize & vsurpe the pla●e a third yeere
+- 791a World 3596: The Athenians & the Cor●●●ae●ns against the Corinthians.
+- 791a World 3619: 12 Egypt rebelleth against the Persian, & sets vp Kings that raigne successiuely, til Och●●his reconquest.
+- 791a World 3624: Alcibiades after many victories returnes froˉ banishment to Athens●is made General, & banished againe.
+- 791b World 3643: 3 1 Psammiticus the son of Inarus, & after him Nephr●s, that had bin expelled reigned in all about two yeeres.
+- 791b World 3654: The Thebans recouer their Citadell, and make strong warre vpon the Laced●●●nians.
+- 791b World 3658: Tribunes o● the people continued 5. yeares in office, propound popular Lawes, among which, That one of the Consuls should be still a Plebeian.
+- 791b World 3670: 176 98 Ionathan about this t●me high Priest.
 
 ### death of Codrus has no existing person (1)
 
 - 786b World 2964: The Medontidae succeede vnto the Athenian Kings, after the death of Codrus.
+
+### death of Amasis has no existing person (1)
+
+- 790a World 3504: The two first yeeres of Psammenitus and part of the third may be added to the yeeres of his Father, if it be true that Cambyses wanne Egypt presently vpon the death of Amasis.
+
+### death of Epaminondas has no existing person (1)
+
+- 791b World 3669: Epaminondas dyes.

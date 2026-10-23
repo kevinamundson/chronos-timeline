@@ -1,9 +1,9 @@
 {
   "$schema": "../../schema/person.schema.json",
-  "id": "dynastie",
+  "id": "nephres",
   "type": "person",
-  "title": "Dynastie",
-  "summary": "Dynastie is dated in Raleigh's chronological table (1617), column Egypt, by a yeere of the World. No tier 1–4 chronology dates this person.",
+  "title": "Nephres",
+  "summary": "Nephres is dated in Raleigh's chronological table (1617), column Egypt, by a yeere of the World. No tier 1–4 chronology dates this person.",
   "description": "Added from the Raleigh import (The History of the World, 1617). Raleigh is display-only. He gives a yeere of the World, not a BC year, and no tier 1–4 chronology dates this person, so there is no sort year.",
   "sorting_year": null,
   "sorting_basis": {
@@ -52,14 +52,14 @@
       },
       {
         "source": "raleigh-history-of-the-world",
-        "date": "20 1. Dynastie. 178",
-        "year_am": 2844,
+        "date": "2 1. Nephres 6",
+        "year_am": 3625,
         "year_bc_ad": null,
         "precision": "year",
-        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 786a",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 791a",
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
-        "note": "Year cell \"3526 2844 331\". The third printed figure 331 is the column \"Exodus\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 178 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Egypt.."
+        "note": "Year cell \"4307 3625\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 6 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Egypt.."
       }
     ]
   },
@@ -73,7 +73,7 @@
     {
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
-      "locator": "Chronological Table, sig. 786a"
+      "locator": "Chronological Table, sig. 791a"
     }
   ]
 }

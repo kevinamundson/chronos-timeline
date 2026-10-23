@@ -197,7 +197,8 @@ for (const row of rows) {
       const name = cleanName(named[2]);
       const span = +named[3];
       if (!/[A-Za-z]/.test(name) || tight(name).length < 3) { skip('name too short', `${row.sig} World ${year.world}: ${text}`); return; }
-      if (/\b(and|or)\b/i.test(name)) { skip('two names share one printed length', `${row.sig} World ${year.world}: ${text}`); return; }
+      if (/\b(and|or)\b/i.test(name) || /&/.test(name)) { skip('two names share one printed length', `${row.sig} World ${year.world}: ${text}`); return; }
+      if (/dynastie|interregnum|\bagaine\b/i.test(name)) { skip('not a personal name', `${row.sig} World ${year.world}: ${text}`); return; }
       const kind = classify(name, span, column, year.world);
       if (!kind) { skip('birth or reign unclear', `${row.sig} World ${year.world} col "${column}": ${text}`); return; }
       pushStmt({ kind, name, span, quote: text, column, form: kind === 'reign' ? 'reign' : 'lifespan' });
