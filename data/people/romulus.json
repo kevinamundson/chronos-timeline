@@ -1,9 +1,9 @@
 {
   "$schema": "../../schema/person.schema.json",
-  "id": "phorbas",
+  "id": "romulus",
   "type": "person",
-  "title": "Phorbas",
-  "summary": "Phorbas is dated in Raleigh's chronological table (1617), column Argiues, by a yeere of the World. No tier 1–4 chronology dates this person.",
+  "title": "Romulus",
+  "summary": "Romulus is dated in Raleigh's chronological table (1617), column Romaˉs, by a yeere of the World. No tier 1–4 chronology dates this person.",
   "description": "Added from the Raleigh import (The History of the World, 1617). Raleigh is display-only. He gives a yeere of the World, not a BC year, and no tier 1–4 chronology dates this person, so there is no sort year.",
   "sorting_year": null,
   "sorting_basis": {
@@ -52,14 +52,14 @@
       },
       {
         "source": "raleigh-history-of-the-world",
-        "date": "6 1 Phorbas. 35",
-        "year_am": 2438,
+        "date": "1 1. Romulus, 37.",
+        "year_am": 3280,
         "year_bc_ad": null,
         "precision": "year",
-        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 784a",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 788b",
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
-        "note": "Year cell \"3120 2438 355\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 35 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Argiues.."
+        "note": "Year cell \"3962 3280 287\". The third printed figure 287 is the column \"Temple\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 37 at the end of the name is the reign length he prints. The end year is not printed on this row."
       }
     ]
   },
@@ -73,7 +73,7 @@
     {
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
-      "locator": "Chronological Table, sig. 784a"
+      "locator": "Chronological Table, sig. 788b"
     }
   ]
 }

@@ -33,13 +33,25 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-14-t5-rel:abimelech:abimelech-son-of-gideon:reign"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "6 1. Abimelech, 3.",
+        "year_am": 2772,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 785b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"3454 2772 259\". The third printed figure 259 is the column \"Exodus\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 3 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Israel.."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-14-osf"
+    "cfah-14-osf",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [
@@ -47,6 +59,11 @@
       "source_id": "cfah-14-osf",
       "url": "https://osf.io/9fuw2/",
       "locator": "Table 5, pp. 43–73"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 785b"
     }
   ],
   "dynasty": "Judges of Israel"

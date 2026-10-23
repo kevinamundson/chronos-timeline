@@ -62,6 +62,17 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Having%20reigned%20three%2Dand%2Dfifty%20years%2C%20Deioces%20was%20at%20his",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "DERIVED (not Herodotus's figure): CFAH AP-32 (710/709 BC) − 53 = 657/656 BC for the death of Deioces. Generations (2nd ed.) prints Deioces 712–675 BC (37 years); Herodotus gives 53."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "5 1. Deioces, 53.",
+        "year_am": 3317,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 789a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"3999 3317 324\". The third printed figure 324 is the column \"Temple\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 53 at the end of the name is the reign length he prints. The end year is not printed on this row."
       }
     ]
   },
@@ -71,7 +82,8 @@
   "scripture_refs": [],
   "sources": [
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [
@@ -79,6 +91,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
       "locator": "Book 1"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 789a"
     }
   ]
 }

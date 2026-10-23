@@ -133,7 +133,9 @@ let headers = [];
 let colTitles = [];
 const statements = [];
 const skipped = [];
-const skip = (reason, detail) => skipped.push({ reason, detail });
+const fullNameCols = new Map();
+let logging = true;
+const skip = (reason, detail) => { if (logging) skipped.push({ reason, detail }); };
 
 for (const row of rows) {
   const cells = row.cells.map((c) => c.replace(/\u00a0/g, ' ').trim()).map((c) => c === '' ? '' : c);
@@ -152,17 +154,24 @@ for (const row of rows) {
   }
   if (!year) {
     const bad = badYear(cells);
-    if (bad) skip('year cell does not follow Julian = World + 682', `${row.sig}: ${bad} | ${cells.filter(Boolean).slice(0, 3).join(' / ')}`);
+    if (bad) skipped.push({ reason: 'year cell does not follow Julian = World + 682', detail: `${row.sig}: ${bad} | ${cells.filter(Boolean).slice(0, 3).join(' / ')}` });
     continue;
   }
-  if (year.world > UNTIL) continue;
+  logging = year.world <= UNTIL;
   const eraHead = (headers[year.i] || '').split('.').map((s) => s.trim()).filter(Boolean);
   const eraNote = year.extra != null && eraHead[2] ? `The third printed figure ${year.extra} is the column "${eraHead[2]}", not a length.` : '';
   const trailNote = year.trailing ? `The year cell continues "${year.trailing}", which is not a clean figure and is not used.` : '';
   const baseNote = `Year cell "${year.raw}". ${eraNote} ${trailNote} To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682.`.replace(/\s+/g, ' ').trim();
   const columnAt = (i) => (headers[i] || colTitles[i] || '').replace(/\s+/g, ' ').trim();
 
-  const pushStmt = (st) => statements.push({ ...st, sig: row.sig, world: year.world, julian: year.julian, yearRaw: year.raw, baseNote });
+  const pushStmt = (st) => {
+    if (st.name) {
+      const set = fullNameCols.get(tight(st.name)) || new Set();
+      set.add(norm(st.column || ''));
+      fullNameCols.set(tight(st.name), set);
+    }
+    if (logging) statements.push({ ...st, sig: row.sig, world: year.world, julian: year.julian, yearRaw: year.raw, baseNote });
+  };
 
   if (year.inline && !illegible(year.inline.name)) {
     const kind = classify(year.inline.name, year.inline.span, '', year.world) || 'birth';
@@ -293,6 +302,7 @@ function deathName(c) {
   return null;
 }
 
+logging = true;
 const planned = [];
 for (const st of statements) {
   if (st.kind === 'birth' || st.kind === 'reign') {
@@ -340,18 +350,13 @@ for (const st of statements) {
 }
 
 // The same printed name in two kingdom columns is two people (Apis of Sicyon, Apis of Argos).
-const nameCols = new Map();
+// Columns are counted across the whole table, so an id does not change when a later slice is added.
 for (const p of planned) {
   if (!p.who?.create) continue;
-  const set = nameCols.get(p.who.create) || new Set();
-  set.add(norm(p.column || ''));
-  nameCols.set(p.who.create, set);
-}
-for (const p of planned) {
-  if (!p.who?.create) continue;
-  if ((nameCols.get(p.who.create) || new Set()).size < 2) continue;
+  const cols = fullNameCols.get(tight(p.who.title)) || fullNameCols.get(tight(p.name || '')) || new Set();
+  if (cols.size < 2) continue;
   const suf = slug(p.column || 'column').slice(0, 28) || 'column';
-  p.who = { create: `${p.who.create}-of-${suf}`, title: p.who.title, column: p.column };
+  p.who = { create: `${slug(p.who.title)}-of-${suf}`, title: p.who.title, column: p.column };
 }
 
 // de-duplicate identical targets

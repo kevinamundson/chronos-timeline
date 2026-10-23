@@ -111,7 +111,7 @@
         "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783b",
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
-        "note": "Year cell \"3116 2434 351\". The third printed figure 351 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 120 at the end of the name is the lifespan he prints."
+        "note": "Year cell \"3116 2434 351\". The third printed figure 351 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 120 at the end of the name is the lifespan he prints. His table also prints the death at World 2553. 2434 + 120 is not 2553. Both figures are left as printed."
       },
       {
         "source": "raleigh-history-of-the-world",
@@ -189,6 +189,17 @@
         "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
         "source_text_id": "generations-preparing-2e",
         "note": "Timeline Review 3."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "The Last yeere of Moses.",
+        "year_am": 2553,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 784b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"3235 2553 40\". The third printed figure 40 is the column \"Exodus\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. Book II, sig. 206b prints \"which happened in the yeere of the World 25 54\", with a space in the figures. That spaced figure is not entered as a year. The table row entered is \"The Last yeere of Moses.\" at World 2553."
       }
     ]
   },
@@ -223,6 +234,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 184a"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 784b"
     }
   ],
   "related": [

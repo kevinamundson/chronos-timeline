@@ -1,47 +1,157 @@
 # Raleigh pass log
 
-Imported from the 1617 chronological table, through the yeere of the World 2514. Raleigh is display-only. No sorting year was changed.
+Imported from the 1617 chronological table, through the yeere of the World 3425. Raleigh is display-only. No sorting year was changed.
 
-- Records updated or created with a Raleigh entry: 57
-- Dated statements written: 69
-- People created: 25
-- Figures skipped: 51
+- Records updated or created with a Raleigh entry: 180
+- Dated statements written: 193
+- People created: 132
+- Figures skipped: 163
 
 ## People created
 
+- `abas` — Abas
+- `adrastus` — Adrastus
 - `aegyrus` — AEgyrus
+- `aegysthus` — Aegysthus
+- `aeneas` — Aeneas
+- `aeschylus` — AEschylus
+- `agamemnon` — Agamemnon
+- `agamnestor` — Agamnestor
+- `agastus` — Agastus
 - `alcades` — Alcades
+- `amen` — Amen
+- `amphytryon` — Amphytryon
+- `amyntas` — Amyntas
 - `apis-of-argiues` — Apis
 - `apis-of-sicyon` — Apis
+- `apuilas` — Apuilas
 - `aralius` — Aralius
+- `arbaces` — Arbaces
+- `archippus` — Archippus
+- `ariphron` — Ariphron
 - `arius` — Arius
+- `asa` — Asa
+- `asarhaddon` — Asarhaddon
+- `ascanius` — Ascanius
 - `ascatades` — Ascatades
+- `athalia` — Athalia
 - `baleus` — Baleus
 - `belochus-priseus` — Belochus Priseus
+- `belochus-the-second` — Belochus the second
+- `belopares` — Belopares
 - `belus` — Belus
+- `ben-merodach` — Ben Merodach
+- `bocchorus` — Bocchorus
+- `cecrops-the-second` — Cecrops the second
+- `cephrenes` — Cephrenes 50
 - `cham` — Cham
+- `codrus` — Codrus
+- `corax` — Corax
+- `cranaus` — Cranaus
+- `crotopus` — Crotopus
+- `debora-ba` — Debora & Ba
+- `demophon` — Demophon
+- `dercilus` — Dercilus
+- `dynastie` — Dynastie
+- `echireus` — Echireus
+- `ehud` — Ehud
+- `epopeus` — Epopeus
+- `erictheus` — Erictheus
+- `ericthonius` — Ericthonius
+- `eupales` — Eupales
+- `euristheus` — Euristheus
 - `europs` — Europs
-- `inachus` — Inachus
+- `gedeon` — Gedeon
+- `hosea` — Hosea
+- `iair` — Iair
+- `iehoabaz` — Iehoabaz
+- `iehoiakim` — Iehoiakim
+- `iehoram-againe` — Iehoram againe
+- `ilus` — Ilus
+- `inachus-of-argiues` — Inachus
+- `inachus-of-sicyon` — Inachus
+- `interregnum` — Interregnum
+- `ioas` — Ioas
+- `iosias` — Iosias
+- `iosua` — Iosua
+- `lamedon` — Lamedon
+- `lamprides` — Lamprides
+- `laomedon` — Laomedon
+- `laosthenes` — Laosthenes
+- `lephta` — lephta
 - `leucippus` — Leucippus
+- `manasses` — Manasses
 - `marathius` — Marathius
 - `marathus` — Marathus
+- `medidus` — Medidus
+- `melanthus` — Melanthus
+- `merodach` — Merodach
+- `mezales` — Mezales
+- `mitreus` — Mitreus
+- `mnestheus` — Mnestheus
+- `neco` — Neco
 - `ninias` — Ninias
 - `ninus` — Ninus
-- `phorbas` — Phorbas
+- `numa-pompilius` — Numa Pompilius
+- `ophrateus` — Ophrateus
+- `orestes` — Orestes
+- `othoniel` — Othoniel
+- `pandi` — Pandiŏ
+- `pannias` — Pannias
+- `pekahia` — Pekahia
+- `pelasgus` — Pelasgus
+- `pheredus` — Pheredus
+- `phestus` — Phestus
+- `phorbas-of-argiues` — Phorbas
+- `phorbas-of-athens` — Phorbas
 - `phoroneus` — Phoroneus
+- `polybus` — Polybus
+- `polyphides` — Polyphides
+- `priamus` — Priamus
+- `proetus` — Proetus
+- `rehoboam` — Rehoboam
+- `romulus` — Romulus
+- `sabacus-the-ethiopian` — Sabacus the Ethiopian
 - `sarai` — Sarai
+- `sardanapalus` — Sardanapalus
 - `semiramis` — Semiramis
+- `sesac` — Sesac 26
+- `sethon` — Sethon
+- `sosares` — Sosares
+- `sosarmus-of-assyria` — Sosarmus
+- `sosarmus-of-media` — Sosarmus
 - `sparetus` — Sparetus
+- `sthenelus` — Sthenelus
+- `syl-alba` — Syl. Alba
+- `syl-alladius` — Syl. Alladius
+- `syl-amulius` — Syl▪ Amulius
+- `syl-latinus` — Syl. Latinus
+- `syl-posthumus` — Syl. Posthumus
+- `syl-procas` — Syl. Procas
+- `syl-tybermus` — Syl. Tybermus
+- `syluius-aeneas` — Syluius Aeneas
+- `tautanes` — Tautanes
+- `tesamenus` — Tesamenus
+- `teuteus` — Teuteus
+- `theseus` — Theseus
+- `thespeius` — Thespeius
+- `thola` — Thola
 - `thurimachus` — Thurimachus
 - `triopas` — Triopas
+- `tros` — Tros
+- `tullus-hostilius` — Tullus Hostilius
+- `zeusippus` — Zeusippus
 
 ## Skipped, by reason
 
-- illegible name or length: 18
+- illegible name or length: 45
 - named cell on a heading row with no yeere of the World: 1
 - year cell does not follow Julian = World + 682: 10
-- named cell is not a single printed length: 4
-- row label not a death, translation, or a portal event: 13
-- illegible row label: 5
+- named cell is not a single printed length: 26
+- two names share one printed length: 2
+- name without a printed length: 1
+- row label not a death, translation, or a portal event: 62
+- illegible row label: 15
+- death of Codrus has no existing person: 1
 
 Every skipped figure is quoted in `data/raleigh-dates-extract.md`.
