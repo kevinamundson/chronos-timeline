@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/name-forms.schema.json",
+  "title": "Name forms",
+  "description": "Written forms of a person's name. Each form was read in the cited witness: Scripture, a history, or an inscription.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["people"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "note": { "type": "string" },
+    "people": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "forms"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/$defs/slug" },
+          "forms": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/form" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "form": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["form", "script", "role", "witness", "citation", "link", "source_text_id", "note"],
+      "properties": {
+        "form": { "type": "string", "minLength": 1 },
+        "script": { "enum": ["hebrew", "aramaic", "greek", "latin"] },
+        "role": { "enum": ["original", "rendering", "alternate"] },
+        "witness": { "enum": ["bible", "history", "inscription"] },
+        "citation": { "type": "string", "minLength": 3 },
+        "link": { "$ref": "common.schema.json#/$defs/url" },
+        "source_text_id": { "$ref": "common.schema.json#/$defs/slug" },
+        "scripture_ref": { "$ref": "common.schema.json#/$defs/osisRef" },
+        "note": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

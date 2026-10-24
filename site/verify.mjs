@@ -309,6 +309,15 @@ for (const [path, shot, sel] of [
         const r = await o.page.request.get(BASE + hr); if (r.status() !== 200) bad.push(hr);
       }
       check(`${tag}: all ${hrefs.length} timeline links resolve`, hrefs.length > 0 && bad.length === 0, bad.join(', '));
+      if (id === 'abraham' && w > 500) {
+        const heb = await o.page.locator('#name .name-form[lang="he"]').allInnerTexts();
+        check('abraham: name section has Hebrew Abram and Abraham', heb.some((t) => t.includes('אַבְרָם')) && heb.some((t) => t.includes('אַבְרָהָם')), heb.join(' | '));
+        check('abraham: name footnotes and the inscription gap', (await o.page.locator('#name .name-notes li').count()) >= 2 && /No inscription/.test(await o.page.locator('#name').innerText()));
+      }
+      if (id === 'noah' && w > 500) {
+        const heb = await o.page.locator('#name .name-form[lang="he"]').allInnerTexts();
+        check('noah: name section has the Hebrew form', heb.some((t) => t.includes('נֹחַ')), heb.join(' | '));
+      }
       if (w > 500) {
         // keyboard: Tab reaches a timeline link; Enter opens it
         const first = o.page.locator('#timeline a.tl-link[href^="/events/"]').first();
@@ -332,6 +341,24 @@ for (const [path, shot, sel] of [
       await o.ctx.close();
     }
   }
+}
+// A ruler with no original-language form still has the Name section, and the unsourced spelling is not given a fake footnote.
+{
+  const o = await open('/people/rameses-ii/', { width: 1280, height: 900 });
+  check('rameses-ii: HTTP 200, no console errors', o.status === 200 && o.errors.length === 0, o.errors.join(' | '));
+  const text = await o.page.locator('#name').innerText();
+  check('rameses-ii: name section states that no original-language form is entered', /No original-language writing/.test(text), text.slice(0, 240));
+  check('rameses-ii: Ramesses II is an alternate with no written source attached', /Ramesses II/.test(text) && /Written source not yet attached/.test(text));
+  await o.ctx.close();
+}
+{
+  const o = await open('/people/alyattes/', { width: 390, height: 844 });
+  check('alyattes: HTTP 200, no console errors', o.status === 200 && o.errors.length === 0, o.errors.join(' | '));
+  const text = await o.page.locator('#name').innerText();
+  check('alyattes: Herodotus spelling is footnoted and the Greek is not invented', /Alyattes/.test(text) && /History/.test(text) && /No original-language writing/.test(text) && /English translation/.test(text));
+  const overflow = await o.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+  check('alyattes (390px): name section does not widen the page', !overflow);
+  await o.ctx.close();
 }
 // Peleg's chart used to draw and then stay hidden.
 {

@@ -27,6 +27,8 @@ const sources = readJSON(join(DATA, 'sources.json')).sources;
 const chartDoc = readJSON(join(DATA, 'cfah-charts.json'));
 const charts = chartDoc.charts;
 const kingDoc = existsSync(join(DATA, 'king-lists.json')) ? readJSON(join(DATA, 'king-lists.json')) : { lists: [], not_recorded: [] };
+const nameFormDoc = readJSON(join(DATA, 'name-forms.json'));
+const nameForms = Object.fromEntries((nameFormDoc.people || []).map((p) => [p.id, p.forms]));
 const kingListsOf = (id) => kingDoc.lists.filter((l) => l.entries.some((e) => e.person === id || e.event === id));
 
 const byId = {};
@@ -287,7 +289,7 @@ ${scripts}
 }
 
 const out = (rel, html) => { const p = join(DIST, rel); mkdirSync(dirname(p), { recursive: true }); writeFileSync(p, html); };
-const head = (rec) => `<p class="eyebrow">${esc(TYPE_LABEL[rec.type])}</p><h1>${esc(rec.title)}</h1>${rec.alt_names?.length ? `<p class="muted">Also: ${esc(rec.alt_names.join(', '))}</p>` : ''}${rec.summary ? `<p class="lede">${esc(rec.summary)}</p>` : ''}`;
+const head = (rec, opts = {}) => `<p class="eyebrow">${esc(TYPE_LABEL[rec.type])}</p><h1>${esc(rec.title)}</h1>${!opts.hideAlt && rec.alt_names?.length ? `<p class="muted">Also: ${esc(rec.alt_names.join(', '))}</p>` : ''}${rec.summary ? `<p class="lede">${esc(rec.summary)}</p>` : ''}`;
 const crumbs = (rec) => `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/browse/#${DIRS[rec.type]}">${esc(TYPE_LABEL[rec.type])}s</a></li><li aria-current="page">${esc(rec.title)}</li></ol></nav>`;
 const leafletHead = '<link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">';
 const leafletScript = '<script src="/assets/vendor/leaflet/leaflet.js" defer></script>';
@@ -465,6 +467,54 @@ function personTimelineSection(p) {
 </section>`;
 }
 
+const SCRIPT_LABEL = { hebrew: 'Hebrew', aramaic: 'Aramaic', greek: 'Greek', latin: 'Latin letters' };
+const ROLE_LABEL = { original: 'Original language', rendering: 'Later rendering', alternate: 'Alternate spelling' };
+const WITNESS_LABEL = { bible: 'Bible', history: 'History', inscription: 'Inscription' };
+const SCRIPT_LANG = { hebrew: 'he', aramaic: 'arc', greek: 'grc', latin: 'en' };
+const foldName = (s) => String(s).normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+
+function nameSection(p) {
+  const forms = nameForms[p.id] || [];
+  const covered = new Set(forms.map((f) => foldName(f.form)));
+  const loose = (p.alt_names || []).filter((a) => a && !covered.has(foldName(a)));
+  const notes = [];
+  const noteKey = new Map();
+  const noteFor = (f) => {
+    const key = `${f.citation}\n${f.link}\n${f.source_text_id}\n${f.note || ''}`;
+    if (!noteKey.has(key)) {
+      noteKey.set(key, notes.length + 1);
+      notes.push(f);
+    }
+    return noteKey.get(key);
+  };
+  const fn = (n) => `<a class="fn" href="#${p.id}-fn-${n}" id="${p.id}-fnref-${n}"><sup>${n}</sup><span class="visually-hidden"> Footnote</span></a>`;
+  const formCell = (f) => `<bdi class="name-form" lang="${SCRIPT_LANG[f.script] || 'en'}" dir="${f.script === 'hebrew' || f.script === 'aramaic' ? 'rtl' : 'ltr'}">${esc(f.form)}</bdi>`;
+  const rows = [
+    ...forms.map((f) => `<tr><th scope="row">${formCell(f)}</th><td>${esc(SCRIPT_LABEL[f.script] || f.script)}</td><td>${esc(ROLE_LABEL[f.role] || f.role)}</td><td>${esc(WITNESS_LABEL[f.witness] || f.witness)} ${fn(noteFor(f))}</td></tr>`),
+    ...loose.map((a) => `<tr><th scope="row">${esc(a)}</th><td>Latin letters</td><td>Alternate spelling</td><td><span class="muted">Written source not yet attached</span></td></tr>`),
+  ];
+  const hasOriginal = forms.some((f) => f.role === 'original');
+  const hasInscription = forms.some((f) => f.witness === 'inscription');
+  const tipnr = forms.some((f) => f.source_text_id === 'stepbible-tipnr');
+  const tipnrSrc = sourceById['stepbible-tipnr'];
+  const footnotes = notes.map((f, i) => {
+    const n = i + 1;
+    const src = sourceById[f.source_text_id];
+    const open = f.witness === 'bible' ? 'Berean Literal Bible' : 'Open the passage';
+    const index = src && src.url !== f.link ? ` ${ext(src.url, esc(src.title))}.` : '';
+    return `<li id="${p.id}-fn-${n}"><a class="fn" href="#${p.id}-fnref-${n}"><span class="visually-hidden">Back to footnote </span>${n}</a> ${esc(f.citation)}${f.note ? ` ${esc(f.note)}` : ''} ${ext(f.link, open)}.${index}</li>`;
+  }).join('');
+  return `<section class="card" id="name" aria-labelledby="name-h">
+  <h2 id="name-h">Name</h2>
+  <p>The name on this page is <strong>${esc(p.title)}</strong>.</p>
+  ${rows.length ? `<div class="table-wrap"><table class="chron names"><caption>Spellings and original-language writings. A number leads to the footnote that names the text.</caption><thead><tr><th scope="col">Form</th><th scope="col">Writing</th><th scope="col">Kind</th><th scope="col">Witness</th></tr></thead><tbody>${rows.join('')}</tbody></table></div>` : ''}
+  ${hasOriginal ? '' : '<p class="small muted">No original-language writing of this name has been entered. A form is added only after it has been read in Scripture, a history, or an inscription.</p>'}
+  ${hasInscription ? '' : '<p class="small muted">No inscription that writes this name has been entered.</p>'}
+  ${notes.length ? `<h3>Footnotes</h3><ol class="name-notes">${footnotes}</ol>` : ''}
+  ${tipnr && tipnrSrc ? `<p class="small muted">Hebrew, Aramaic and Greek letters are the forms printed in ${ext(tipnrSrc.url, 'STEPBible TIPNR')}, ${ext('https://creativecommons.org/licenses/by/4.0/', 'CC BY 4.0')}. The data file is not copied here.</p>` : ''}
+</section>`;
+}
+
 // People
 for (const p of people) {
   const d = p.dates || {};
@@ -478,7 +528,8 @@ ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years
   const evs = [...new Set([...(p.events || []), ...eventsWith(p.id)])];
   const kls = kingListsOf(p.id);
   const kingCard = p.dynasty || kls.length ? `<section class="card" id="king-lists"><h2>Dynasty and king lists</h2>${p.dynasty ? `<p>Dynasty: ${esc(p.dynasty)}</p>` : ''}${kls.length ? `<p>Listed in: ${kls.map((l) => `<a href="/king-lists/#${esc(l.id)}">${esc(l.title)}</a>`).join('; ')}</p>` : ''}</section>` : '';
-  const body = `${crumbs(p)}<article>${head(p)}${sortBadge(p)}
+  const body = `${crumbs(p)}<article>${head(p, { hideAlt: true })}${sortBadge(p)}
+${nameSection(p)}
 ${p.description ? `<section class="card"><h2>Description</h2><p>${esc(p.description)}</p></section>` : ''}${kingCard}
 ${p.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(p.scripture_refs)}</section>` : ''}
 <div class="grid2">${fam}${facts}</div>
@@ -704,7 +755,8 @@ out('about/index.html', page({ title: 'About', path: '/about/', pagefind: false,
 <li>Historic maps: ${ext('https://www.loc.gov/maps/', 'Library of Congress Geography and Map Division')}; thumbnails are loaded from tile.loc.gov.</li>
 <li>CFAH papers (© Answers in Genesis) and Floyd Nolen Jones materials are copyrighted: they are cited and linked, never reproduced.</li>
 <li>Software: vis-timeline (Apache-2.0/MIT), Leaflet (BSD-2-Clause), Pagefind (MIT).</li>
-<li>Scripture links open the Berean Literal Bible on BibleHub (chapter page, at the first verse of the reference).</li></ul></section>` }));
+<li>Scripture links open the Berean Literal Bible on BibleHub (chapter page, at the first verse of the reference).</li>
+<li>Hebrew, Aramaic and Greek spellings of biblical names: ${ext('https://github.com/STEPBible/STEPBible-Data', 'STEPBible TIPNR')}, ${ext('https://creativecommons.org/licenses/by/4.0/', 'CC BY 4.0')}. The name file itself is not copied here.</li></ul></section>` }));
 
 // Search
 out('search/index.html', page({ title: 'Search', path: '/search/', pagefind: false,
