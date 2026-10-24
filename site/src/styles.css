@@ -151,7 +151,8 @@ table.chron tr.superseded summary { cursor: pointer; }
 .vis-item.vis-range.tier-t4 { border-color: var(--t4); background: color-mix(in srgb, var(--t4) 22%, transparent); }
 .vis-item.vis-range.tier-td { border-color: var(--td); background: color-mix(in srgb, var(--td) 22%, transparent); }
 .vis-item.vis-range.tier-tp { border-color: var(--tp); background: color-mix(in srgb, var(--tp) 22%, transparent); }
-.home-timeline .vis-item.vis-range .vis-item-overflow { overflow: visible; }
+.home-timeline .vis-item.vis-range .vis-item-overflow,
+.person-timeline .vis-item.vis-range .vis-item-overflow { overflow: visible; }
 .vis-item.vis-selected { background: var(--accent-fill); }
 div.vis-tooltip { font-family: var(--font); font-size: 13px; background: var(--bg-elev); color: var(--label); border: 1px solid var(--sep); border-radius: 8px; box-shadow: var(--shadow); padding: 6px 10px; }
 

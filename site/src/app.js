@@ -32,7 +32,9 @@
     function visItem(it) {
       var cls = 'tier-' + it.tier + (person ? (it.own ? ' own' : ' ctx') : '');
       var label = it.title + ' — ' + it.label + (person && !it.own ? ' (context)' : '');
-      var range = it.group === 'people' && it.yEnd != null && it.yEnd !== it.y;
+      // Home events keep a point even when a chronology gives them an end year.
+      // A person page draws one bar for the lifespan (span), the same years as the home chart.
+      var range = it.yEnd != null && it.yEnd !== it.y && (it.group === 'people' || it.span);
       var row = { id: it.group + ':' + it.id, group: it.group, content: it.title, start: toDate(it.y), type: range ? 'range' : 'point',
         title: label, aria: label, className: cls, url: it.url, own: !!it.own, ord: it.y * 100 + (it.order || 0), tier: it.tier };
       if (range) row.end = toDate(it.yEnd);

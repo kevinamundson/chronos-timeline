@@ -424,15 +424,18 @@ function personTimeline(p) {
   const items = [];
   const isBirthEvt = (e) => birth && e.sorting_year === birth.y && /birth/.test(e.id);
   const isEndEvt = (e) => end && e.sorting_year === end.y && (/death|translated/.test(e.id));
-  if (birth && !own.some(isBirthEvt)) items.push({ id: 'birth', group: 'own', own: true, title: `Birth of ${p.title}`, y: birth.y, label: yearLabel(birth.y, birth.yEnd), tier: (TIERS[birth.tier] || TIERS.none).cls, url: '#birth', order: -1 });
-  if (end && !own.some(isEndEvt)) items.push({ id: endKind, group: 'own', own: true, title: `${endKind === 'death' ? 'Death' : 'Translation'} of ${p.title}`, y: end.y, label: yearLabel(end.y, end.yEnd), tier: (TIERS[end.tier] || TIERS.none).cls, url: `#${endKind}`, order: 9 });
+  // Same end rule as the home chart: tier death, or translation when death has no year, and only when it is after the tier birth. Not the widened window, a reign, or lifespan_years.
+  const life = birth && end && end.y > birth.y ? { y: birth.y, yEnd: end.y, label: `${yearLabel(birth.y)} – ${yearLabel(end.y)}` } : null;
+  if (life) items.push({ id: 'lifespan', group: 'own', own: true, span: true, title: p.title, y: life.y, yEnd: life.yEnd, label: life.label, tier: tierCls(p), url: '#birth', order: -2 });
+  if (birth && !life && !own.some(isBirthEvt)) items.push({ id: 'birth', group: 'own', own: true, title: `Birth of ${p.title}`, y: birth.y, label: yearLabel(birth.y, birth.yEnd), tier: (TIERS[birth.tier] || TIERS.none).cls, url: '#birth', order: -1 });
+  if (end && !life && !own.some(isEndEvt)) items.push({ id: endKind, group: 'own', own: true, title: `${endKind === 'death' ? 'Death' : 'Translation'} of ${p.title}`, y: end.y, label: yearLabel(end.y, end.yEnd), tier: (TIERS[end.tier] || TIERS.none).cls, url: `#${endKind}`, order: 9 });
   if (cfahReign) items.push({ id: 'cfah-reign', group: 'own', own: true, title: `Reign of ${p.title} (CFAH: ${cfahReign.date})`, y: cfahReign.year_bc_ad, label: yearLabel(cfahReign.year_bc_ad, cfahReign.year_bc_ad_end ?? null), tier: TIERS.none.cls, url: '#reign', order: 0 });
   if (textDeath) items.push({ id: 'cfah-death', group: 'own', own: true, title: `Death of ${p.title} (CFAH: ${textDeath.date})`, y: textDeath.year_bc_ad, label: yearLabel(textDeath.year_bc_ad), tier: TIERS.none.cls, url: '#death', order: 9 });
   for (const e of own) items.push({ id: e.id, group: 'own', own: true, title: e.title, y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
   const ctx = events.filter((e) => !ownIds.has(e.id) && e.sorting_year != null && e.sorting_year >= start && e.sorting_year <= stop);
   for (const e of ctx) items.push({ id: e.id, group: 'context', own: false, title: e.title, y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
   items.sort((a, b) => a.y - b.y || a.order - b.order || a.title.localeCompare(b.title));
-  return { start, stop, birth, end: end || (textDeath ? { y: textDeath.year_bc_ad, yEnd: null, tier: 'none' } : null), endKind: endKind || (textDeath ? 'death' : null), items, notes, ownUndated, ownCount: items.filter((i) => i.own).length, ctxCount: ctx.length };
+  return { start, stop, birth, end: end || (textDeath ? { y: textDeath.year_bc_ad, yEnd: null, tier: 'none' } : null), endKind: endKind || (textDeath ? 'death' : null), life, items, notes, ownUndated, ownCount: items.filter((i) => i.own).length, ctxCount: ctx.length };
 }
 const personTimelines = {};
 
@@ -450,7 +453,7 @@ function personTimelineSection(p) {
       <button type="button" data-tl="out" aria-label="Zoom out">−</button>
       <button type="button" data-tl="fit">Show lifetime</button>
     </div></div>
-  <p class="small muted">Window: <strong>${esc(win)}</strong> (birth to ${t.endKind || 'last linked event'}, using the four-tier sort rule). Select or Tab to an item and press Enter to open it.</p>
+  <p class="small muted">Window: <strong>${esc(win)}</strong> (birth to ${t.endKind || 'last linked event'}, using the four-tier sort rule).${t.life ? ` The lifespan is one bar, ${esc(t.life.label)}.` : ''} Select or Tab to an item and press Enter to open it.</p>
   ${notes}
   <div id="timeline" class="timeline person-timeline" aria-describedby="ptl-list-h"></div>
   <ul class="legend small" aria-label="Timeline legend"><li><span class="lg-own" aria-hidden="true"></span>${esc(p.title)}’s life (${t.ownCount}): solid</li><li><span class="lg-ctx" aria-hidden="true"></span>Other events in their lifetime (${t.ctxCount}): faded, dashed, marked “context”</li></ul>
@@ -730,6 +733,6 @@ out('404.html', page({ title: 'Not found', path: '', pagefind: false, body: '<h1
 writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/pagefind/*\n  Cache-Control: public, max-age=0, must-revalidate\n/chronologies/raleigh-chronological-table/*.csv\n  Content-Type: text/csv; charset=utf-8\n/chronologies/raleigh-chronological-table/*.md\n  Content-Type: text/markdown; charset=utf-8\n/chronologies/raleigh-chronological-table/*.xls\n  Content-Type: application/vnd.ms-excel\n`);
 
 mkdirSync(join(DIST, 'data'), { recursive: true });
-writeFileSync(join(DIST, 'data', 'person-timelines.json'), JSON.stringify(Object.fromEntries(Object.entries(personTimelines).map(([k, t]) => [k, t.none ? { none: true, notes: t.notes } : { window: [t.start, t.stop], birthTier: t.birth?.tier || null, endTier: t.end?.tier || null, endKind: t.endKind, own: t.ownCount, context: t.ctxCount, notes: t.notes, ownUndated: t.ownUndated.map((e) => e.id) }])), null, 1));
+writeFileSync(join(DIST, 'data', 'person-timelines.json'), JSON.stringify(Object.fromEntries(Object.entries(personTimelines).map(([k, t]) => [k, t.none ? { none: true, notes: t.notes } : { window: [t.start, t.stop], birthTier: t.birth?.tier || null, endTier: t.end?.tier || null, endKind: t.endKind, life: t.life ? { start: t.life.y, end: t.life.yEnd, label: t.life.label } : null, own: t.ownCount, context: t.ctxCount, notes: t.notes, ownUndated: t.ownUndated.map((e) => e.id) }])), null, 1));
 const n = events.length + people.length + locations.length + maps.length;
 console.log(`Built ${n} record pages (${events.length} events, ${people.length} people, ${locations.length} places, ${maps.length} maps) + home, browse, chronologies, Raleigh chronological table, gallery (${charts.length} CFAH charts), about, search, 404 → ${DIST}`);

@@ -279,9 +279,19 @@ for (const [path, shot, sel] of [
       }, null, { timeout: 5000 }).then(() => true).catch(() => false);
       check(`${tag}: timeline is visible`, shown);
       const own = await o.page.locator('#timeline .vis-item.vis-point.own').count();
+      const ownBar = await o.page.locator('#timeline .vis-item.vis-range.own').count();
       const ctx = await o.page.locator('#timeline .vis-item.vis-point.ctx').count();
       const ex = expect[id];
-      check(`${tag}: timeline own/context counts match build`, own === ex.own && ctx === ex.context, `own ${own}/${ex.own}, context ${ctx}/${ex.context}`);
+      check(`${tag}: timeline own/context counts match build`, own + ownBar === ex.own && ctx === ex.context, `own ${own}+${ownBar}/${ex.own}, context ${ctx}/${ex.context}`);
+      const lifeBar = await o.page.evaluate(() => {
+        const el = document.querySelector('#timeline .vis-item.vis-range.own');
+        if (!el) return null;
+        const r = el.getBoundingClientRect();
+        const a = el.querySelector('a.tl-link');
+        return { w: r.width, label: a?.getAttribute('aria-label') || '', vis: getComputedStyle(el).visibility };
+      });
+      if (ex.life) check(`${tag}: lifespan is a bar from birth to death`, ownBar === 1 && lifeBar && lifeBar.w > 30 && lifeBar.vis === 'visible' && lifeBar.label.includes(ex.life.label), JSON.stringify(lifeBar));
+      else check(`${tag}: no lifespan bar without a later death or translation`, ownBar === 0, JSON.stringify(lifeBar));
       const listOwn = await o.page.locator('.person-list li.own').count(), listCtx = await o.page.locator('.person-list li.ctx').count();
       check(`${tag}: fallback list matches`, listOwn === ex.own && listCtx === ex.context, `${listOwn} own, ${listCtx} context`);
       // opacity + markers differ
@@ -344,6 +354,14 @@ for (const [path, shot, sel] of [
     };
   });
   check('peleg mobile dark: timeline is visible', shown && detail.h > 100 && detail.groups.some((g) => /Peleg/.test(g)) && detail.own.length > 0 && detail.bars === 0, JSON.stringify(detail));
+  const pelegLife = await o.page.evaluate(() => {
+    const el = document.querySelector('#timeline .vis-item.vis-range.own');
+    if (!el) return null;
+    const r = el.getBoundingClientRect();
+    const a = el.querySelector('a.tl-link');
+    return { w: r.width, text: a?.textContent || '', label: a?.getAttribute('aria-label') || '', vis: getComputedStyle(a || el).visibility };
+  });
+  check('peleg mobile dark: lifespan is a bar, 2247 BC – 2008 BC', !!pelegLife && pelegLife.w > 30 && pelegLife.vis === 'visible' && pelegLife.text === 'Peleg' && pelegLife.label.includes('2247 BC') && pelegLife.label.includes('2008 BC'), JSON.stringify(pelegLife));
   check('peleg mobile dark: no console errors', o.status === 200 && o.errors.length === 0, o.errors.join(' | '));
   await o.ctx.close();
 }
