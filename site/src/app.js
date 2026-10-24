@@ -86,6 +86,27 @@
       order: function (a, b) { return a.ord - b.ord; }
     });
     window.__timeline = timeline; // exposed for site/verify.mjs
+    // vis-timeline only has year steps up to 1000. A wider window (a phone showing the whole chart)
+    // misses every step and falls through to a day scale, so hundreds of labels pile on the first tick.
+    // 1000 years is still narrower than the label budget there, so keep adding 1000 until the step fits.
+    // Closer windows stay on whatever scale vis chose (a person chart zoomed in must not jump to millennia).
+    var StepCtor = timeline.timeAxis && timeline.timeAxis.step && timeline.timeAxis.step.constructor;
+    if (StepCtor && !StepCtor.prototype._yearScaleFloor) {
+      var origMinStep = StepCtor.prototype.setMinimumStep;
+      var stepYear = 1000 * 60 * 60 * 24 * 30 * 12;
+      StepCtor.prototype.setMinimumStep = function (minimumStep) {
+        origMinStep.call(this, minimumStep);
+        if (minimumStep >= stepYear * 1000) {
+          this.scale = 'year';
+          var years = minimumStep / stepYear;
+          var step = 1000;
+          while (step <= years && step < 10000) step += 1000;
+          this.step = step;
+        }
+      };
+      StepCtor.prototype._yearScaleFloor = true;
+      timeline.redraw();
+    }
     timeline.on('select', function (p) { if (p.items.length) { var it = data.get(p.items[0]); if (it && it.url) location.href = it.url; } });
     // Keyboard: vis-timeline swallows Enter on its items, so follow the focused link ourselves.
     tlEl.addEventListener('keydown', function (e) {

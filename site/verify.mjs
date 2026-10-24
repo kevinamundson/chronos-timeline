@@ -133,6 +133,35 @@ for (const scheme of ['light', 'dark']) {
   const overflow = await o.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
   check(`home mobile (${scheme}): no horizontal page overflow`, !overflow);
   check(`home mobile (${scheme}): scroll bars stay visible`, barsVisible(await scrollBars(o.page)));
+  const axis = await o.page.evaluate(() => {
+    function panel(sel) {
+      const placed = [...document.querySelectorAll(sel)].map((n) => ({ t: n.textContent, x: Math.round(n.getBoundingClientRect().x), overflow: n.scrollWidth - n.clientWidth }));
+      let pile = 0;
+      for (let i = 0; i < placed.length; i++) for (let j = i + 1; j < placed.length; j++) if (Math.abs(placed[i].x - placed[j].x) < 4) pile++;
+      return { n: placed.length, pile, overflow: placed.reduce((m, p) => Math.max(m, p.overflow), 0), years: placed.filter((p) => / BC$|^AD /.test(p.t)).length, sample: placed.slice(0, 6).map((p) => p.t) };
+    }
+    return {
+      bottom: panel('.vis-panel.vis-bottom .vis-text.vis-minor:not(.vis-measure)'),
+      top: panel('.vis-panel.vis-top .vis-text.vis-minor:not(.vis-measure)')
+    };
+  });
+  const axisOk = [axis.bottom, axis.top].every((a) => a.pile === 0 && a.overflow <= 1 && a.n > 0 && a.n < 40 && a.years === a.n);
+  check(`home mobile (${scheme}): year scale is not stacked`, axisOk, JSON.stringify(axis));
+  if (scheme === 'dark') {
+    await o.page.locator('.tl-vscroll').focus();
+    for (let i = 0; i < 40; i++) {
+      const seen = await o.page.evaluate(() => !!document.querySelector('.vis-item.vis-range .tl-link'));
+      if (seen) break;
+      await o.page.keyboard.press('PageDown');
+    }
+    const ink = await o.page.evaluate(() => {
+      const a = document.querySelector('.vis-item.vis-range .tl-link');
+      if (!a) return null;
+      const m = getComputedStyle(a).color.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
+      return m ? { color: getComputedStyle(a).color, lum: (+m[1] + +m[2] + +m[3]) / 3, text: a.textContent } : { color: getComputedStyle(a).color, text: a.textContent };
+    });
+    check('home mobile (dark): lifespan text is light', !!ink && ink.lum > 180, JSON.stringify(ink));
+  }
   await o.ctx.close();
 }
 // Record pages

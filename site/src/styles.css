@@ -142,7 +142,9 @@ table.chron tr.superseded summary { cursor: pointer; }
 .vis-item .vis-dot { border-width: 5px; border-radius: 6px; }
 .vis-item.tier-t1 .vis-dot { border-color: var(--t1); } .vis-item.tier-t2 .vis-dot { border-color: var(--t2); }
 .vis-item.tier-t3 .vis-dot { border-color: var(--t3); } .vis-item.tier-t4 .vis-dot { border-color: var(--t4); } .vis-item.tier-td .vis-dot { border-color: var(--td); } .vis-item.tier-tp .vis-dot { border-color: var(--tp); border-style: dotted; }
-.vis-item.vis-range { border-width: 2px; border-radius: 8px; background: color-mix(in srgb, var(--accent) 18%, transparent); }
+.vis-item.vis-range { border-width: 2px; border-radius: 8px; background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--label); }
+.vis-item.vis-range .vis-item-content,
+.vis-item.vis-range .tl-link { color: var(--label); }
 .vis-item.vis-range.tier-t1 { border-color: var(--t1); background: color-mix(in srgb, var(--t1) 22%, transparent); }
 .vis-item.vis-range.tier-t2 { border-color: var(--t2); background: color-mix(in srgb, var(--t2) 22%, transparent); }
 .vis-item.vis-range.tier-t3 { border-color: var(--t3); background: color-mix(in srgb, var(--t3) 22%, transparent); }
