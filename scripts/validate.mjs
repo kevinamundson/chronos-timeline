@@ -309,6 +309,38 @@ for (const [id, age, life] of GEN11) {
   }
   if (age != null) am11 += age;
 }
+// Name forms: data/name-forms.json. Letters must be the ones the citation quotes.
+const NAME_HISTORY = new Set([
+  'raleigh-history-of-the-world-1617', 'josephus-antiquities-whiston', 'herodotus-rawlinson-wikisource',
+  'ussher-annals-1658', 'ussher-annals-transcription', 'annals-of-clonmacnoise-1896', 'cory-ancient-fragments-1876',
+]);
+const nameDoc = validate('data/name-forms.json', 'name-forms');
+const seenNameIds = new Set();
+for (const person of nameDoc.people || []) {
+  if (seenNameIds.has(person.id)) err('data/name-forms.json', `duplicate person ${person.id}`);
+  seenNameIds.add(person.id);
+  if (records[person.id]?.kind !== 'person') err('data/name-forms.json', `${person.id}: not a person`);
+  for (const f of person.forms) {
+    const where = `${person.id} “${f.form}”`;
+    if (!f.citation.includes(f.form)) err('data/name-forms.json', `${where}: citation does not contain the form`);
+    if (!srcIds.has(f.source_text_id)) err('data/name-forms.json', `${where}: unknown source ${f.source_text_id}`);
+    const src = srcDoc.sources.find((s) => s.id === f.source_text_id);
+    if (src?.access === 'private-copy') err('data/name-forms.json', `${where}: private copy ${f.source_text_id} cannot witness a name`);
+    if (f.role === 'alternate' && f.script !== 'latin') err('data/name-forms.json', `${where}: an alternate spelling is in Latin letters`);
+    if (f.role === 'rendering' && f.script !== 'greek') err('data/name-forms.json', `${where}: a later rendering is Greek`);
+    if (f.role === 'original' && !['hebrew', 'aramaic', 'greek'].includes(f.script)) err('data/name-forms.json', `${where}: original language is Hebrew, Aramaic or Greek`);
+    if ((f.script === 'hebrew' || f.script === 'aramaic') && !/[\u0590-\u05FF]/.test(f.form)) err('data/name-forms.json', `${where}: ${f.script} form has no Hebrew letters`);
+    if (f.script === 'greek' && !/[\u0370-\u03FF\u1F00-\u1FFF]/.test(f.form)) err('data/name-forms.json', `${where}: Greek form has no Greek letters`);
+    if (f.script === 'latin' && !/[A-Za-z]/.test(f.form)) err('data/name-forms.json', `${where}: Latin-letter form has no Latin letter`);
+    if (f.witness === 'bible') {
+      if (f.source_text_id !== 'stepbible-tipnr') err('data/name-forms.json', `${where}: a Bible form cites stepbible-tipnr`);
+      if (!f.scripture_ref) err('data/name-forms.json', `${where}: a Bible form needs a scripture_ref`);
+      else if (f.link !== blbFromOsis(f.scripture_ref)) err('data/name-forms.json', `${where}: link is not the BLB verse for ${f.scripture_ref}`);
+    } else if (f.scripture_ref) err('data/name-forms.json', `${where}: scripture_ref is only for a Bible witness`);
+    if (f.witness === 'history' && !NAME_HISTORY.has(f.source_text_id)) err('data/name-forms.json', `${where}: ${f.source_text_id} is not a history source for names`);
+  }
+}
+
 const flood = records['the-flood'];
 if (flood) {
   const mt = flood.doc.chronologies.find((e) => e.source === 'masoretic-genealogy');
