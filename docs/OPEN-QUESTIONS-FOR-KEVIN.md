@@ -615,6 +615,70 @@ None of these records has a tier 1–4 date, so the sort stays on Generations an
   - **I22. Ishbosheth's end year, 1049 (CFAH-16 Table 1) vs 1048 BC (Table 2).** Both are kept.
 - **Recommendation:** keep the entries display only, as now. Tell me if any of the CFAH identifications above should not attach CFAH dates to the existing records (especially Alexander and the Herodotus kings of Dynasty 26). If so, I will list those rows without a person instead.
 
+## H. Cory, Ancient Fragments (1876 Hodges), pass 1
+
+Source: Isaac Preston Cory, *Ancient Fragments*, new and enlarged edition, ed. E. Richmond Hodges (London: Reeves & Turner, 1876). Internet Archive `corysancientfrag00coryuoft`, opened 2026-10-23. The table is `data/cory-dates-extract.md`. Cory is display only. No sort year changed. `year_bc_ad` is null on every Cory entry.
+
+### H1. Sammuges, his unnamed brother, and Sardanapallus
+- Polyhistor (p. 87, the word "years" at the top of p. 88) prints "Then Sammuges (Saulmugina ?) reigned 21 years, and likewise his brother 21 years." The brother is not named. The next sentences give Sardanapallus the Chaldean 21 years "After Samuges".
+- The three figures are stored separately. The brother has no record. Sammuges and Sardanapallus are not merged.
+- **Recommendation:** leave them separate.
+
+### H2. The parenthesis "(b.c. 878)" at the founding of Carthage
+- Menander (p. 30) prints: "In the seventh year of his reign, his sister (Dido), fled from him, and founded the city of Carthage in Libya (b.c. 878)". The parenthesis sits in the sentence, immediately before the Josephus citation.
+- It is stored only inside the quotation. `year_bc_ad` is null. `founding-of-carthage` stays on its Generations provisional sort ("Sometime between 800 and 900 BC"). 878, if it is a year, falls inside that range. Status in the extract: consistent.
+- **Options:**
+  1. Keep it as a quotation only (as now).
+  2. Store 878 as `year_bc_ad` on the Cory row, still without letting Cory set the sort.
+- **Recommendation:** option 1. The parenthesis may be Hodges's gloss, and Cory must not become a sort tier.
+
+### H3. Ninus and Nimrod
+- Castor (p. 91) prints "Ninus reigned over the Assyrians 52 years." That statement is a display entry on the existing person `ninus`, which the Raleigh import already created. The Raleigh document was not replaced, and its sort was not changed. He is not linked to `nimrod`.
+- **Recommendation:** leave them unlinked unless you want Ninus identified with Nimrod.
+
+### H4. Which edition: 1826, 1832, 1876, and the roadmap's 1828
+- The title page prints "LONDON: REEVES & TURNER, 196, STRAND" and "1876". The editor signs "LONDON, 1876".
+- The preface prints "The first edition of this work appeared in 1826".
+- An advertisement footnote prints "The 2nd edition was published in 1832".
+- The roadmap names an 1828 edition. That year was not on the pages opened for this pass. This pass uses the 1876 Hodges edition throughout.
+- **Question:** keep 1876 as the Cory source, or do you want the 1828 printing read as well?
+
+### H5. Hodges's introduction (printed pp. 43–50)
+- Those pages are the editor's own BC dates (a Nabonassar era, dynasty lengths, an eclipse). They were not entered. They are not fragments.
+- **Recommendation:** do not add them in a later pass.
+
+### H6. Manetho as the next Cory pass
+- Manetho, the Old Chronicle and the Laterculus in this volume were not read. A later pass can add them as further display rows on this same `cory` chronology, not as a new source.
+- **Recommendation:** next Cory pass, same source, still display only. Hales stays a separate pull request.
+
+### H7. Xisuthrus and Noah
+- Apollodorus, Abydenus and Polyhistor place the flood in the time of Xisuthrus, the tenth antediluvian king. The text does not call him Noah. He was not added to `the-flood`'s people. The Flood's sort stays CFAH AP-29, 2348 BC.
+- The 120 sari and the printed 432,000 years are on `the-flood` as display rows, status framework. They do not move the Flood.
+- **Recommendation:** do not identify Xisuthrus with Noah.
+
+### H8. Salmanasar and Shalmaneser I
+- The Tyrian heading on p. 30 is "Of the Invasion of Salmanasar (or Shalmaneser)." Elulæus's 36 years were not attached to `shalmaneser-i`.
+- **Recommendation:** leave them unlinked.
+
+### H9. Eleven kings with no number
+- Polyhistor (p. 85) prints "eleven kings during . . . . years". The footnote says "No number is given in the original text." CFAH's 33 years for Babylon dynasty 3 were not written into the blank.
+- **Recommendation:** leave the blank.
+
+### H10. Two kings named Hiromus, and two named Ithobalus
+- Hiromus son of Abibalus (p. 28: thirty-four years, lived fifty-three; Solomon's contemporary) is `hiram-of-tyre`. Hiromus brother of Merbalus (p. 32: twenty years; "In his time Cyrus was king of Persia") is `hiram-of-tyre-ii`.
+- Ithobalus priest of Astarte (p. 30: thirty-two years, lived sixty-eight) is `ithobalus`. Ithobalus of the siege (p. 32: Nebuchadnezzar "beseiged Tyre for thirteen years"; no reign length) is `ithobalus-ii`.
+- **Recommendation:** keep the pairs separate.
+
+### H11. Semiramis's 42 years
+- Castor (p. 91) prints that Semiramis "reigned over the Assyrians 42 years." That length is on `semiramis-i` and on `reign-of-semiramis-i`. The person's CFAH note already says "Her 42-year reign". Status: agrees. No BC year was stored.
+- An OSF king-list row elsewhere gives Dumuzi/Semiramis 30 years. This pass does not change that row and does not treat 42 as a correction of 30.
+- **Recommendation:** leave both figures on their own rows.
+
+### H12. Records Raleigh already had
+- `belus` and `ninus` already exist from the Raleigh import. Cory's statements for those names were appended as display entries on those same records. Their descriptions still begin "Added from the Raleigh import". Their Raleigh entries and sorts were kept. The Cory person summaries were not applied.
+- These pairs were not linked and were not merged: `sardanapallus` (Cory) and `sardanapalus` (Raleigh); `esarhaddon` (Cory) and `asarhaddon` (Raleigh); `semiramis-i` and `semiramis`; `ninyas` and `ninias`; `cambyses-ii` and `cambyses`; `evil-merodach` (Cory) and `euilmerodach` (Raleigh).
+- **Recommendation:** leave each pair as two records until you say they are the same person.
+
 ## G. Raleigh, *The History of the World* (1617), full table (2026-10-23)
 
 The chronological table (sig. 781b to the FINIS trailer) is entered as display only. Nothing was converted from his yeere of the World to BC. No `sorting_year` on an existing record was changed. New people are tier `none`, with `sorting_year` null. Display titles of people taken from the table are modern English spelling. His printed spelling is an alternate name (G10). The importer is `scripts/raleigh/import.mjs`. Counts and every skipped cell are in `docs/raleigh-pass-log.md` and `data/raleigh-dates-extract.md`.

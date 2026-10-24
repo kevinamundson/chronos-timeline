@@ -29,6 +29,18 @@
         "note": "When Nabopolassar \"took the kingship of Babylon away from Assyria\".",
         "cfah_basis": "paper_text",
         "cfah_key": "cfah:c5-nabopolassar-start:nabopolassar:reign"
+      },
+      {
+        "source": "cory",
+        "date": "“Nabupalsar, (Nabopollassar), reigned 20 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 88; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n132/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "A footnote says \"Nabopollasar, see p. 84.\" The p. 84 mention was not given a separate length in this pass."
       }
     ]
   },
@@ -38,7 +50,8 @@
   ],
   "scripture_refs": [],
   "sources": [
-    "cfah-5"
+    "cfah-5",
+    "cory-ancient-fragments-1876"
   ],
   "related": [
     "nebuchadnezzar-ii"
@@ -48,6 +61,11 @@
       "source_id": "cfah-5",
       "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
       "locator": "\"AP-45: Dynasty 8: Neo-Babylonian Empire: 626–539 B.C.\""
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "dynasty": "Babylon Dynasty 8 (Neo-Babylonian)"

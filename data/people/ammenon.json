@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ammenon",
+  "type": "person",
+  "title": "Ammenon",
+  "summary": "Antediluvian Chaldean king in Berossus. Abydenus gives his length; Apollodorus names him and gives none.",
+  "description": "Added from the Cory import. Display only. Cory gives reign lengths and synchronisms, not a BC year this record can sort on, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Cory is display-only and gives none)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "cory",
+        "date": "“he appeared in the first year”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 51; Berossus, ap. Apollodorus, ap. Syncellus and Eusebius; the parenthesis compares Polyhistor",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n95/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Apollodorus places the Musarus Oannes in Ammenon's time, and then reports three timings: Polyhistor, the first year; Apollodorus, after forty sari; Abydenus, the second Annedotus after twenty-six sari."
+      },
+      {
+        "source": "cory",
+        "date": "“Apollodorus says that it was after forty sari”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 51; Berossus, ap. Apollodorus, ap. Syncellus and Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n95/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "One of the three timings of Oannes in the same parenthesis."
+      },
+      {
+        "source": "cory",
+        "date": "“Abydenus, however, makes the second Annedotus appear after twenty-six sari”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 51; Berossus, ap. Apollodorus, ap. Syncellus and Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n95/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Reported inside Apollodorus's extract. Abydenus's own extract (p. 53) puts a second Annedotus in Amillarus's time and does not repeat \"twenty-six sari\" there."
+      },
+      {
+        "source": "cory",
+        "date": "“reigned twelve sari”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 53; Berossus, ap. Abydenus, ap. Syncellus and Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n97/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Ammenon of Pantibiblon. Apollodorus names him and gives him no length."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cory-ancient-fragments-1876"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
+    }
+  ]
+}

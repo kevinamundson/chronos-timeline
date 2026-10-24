@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "alorus",
+  "type": "person",
+  "title": "Alorus",
+  "summary": "First of the ten antediluvian Chaldean kings in Berossus, as Apollodorus and Abydenus give him in Cory 1876.",
+  "description": "Added from the Cory import. Display only. Cory gives reign lengths and synchronisms, not a BC year this record can sort on, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Cory is display-only and gives none)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "cory",
+        "date": "“he reigned ten sari”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 51; Berossus, ap. Apollodorus, ap. Syncellus and Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n95/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Alorus of Babylon, the first king, in Apollodorus."
+      },
+      {
+        "source": "cory",
+        "date": "“he reigned ten sari”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 53; Berossus, ap. Abydenus, ap. Syncellus and Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n97/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The same length in Abydenus."
+      },
+      {
+        "source": "cory",
+        "date": "“a sarus is esteemed to be three thousand six hundred years; a neros, six hundred: and a sossus, sixty”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 53; Berossus, ap. Abydenus, ap. Syncellus and Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n97/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Abydenus's definitions, printed in the same paragraph as Alorus. They are not BC years."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cory-ancient-fragments-1876"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
+    }
+  ]
+}

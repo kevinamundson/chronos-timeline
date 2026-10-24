@@ -44,6 +44,18 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-15-t5-05-uruk-i:dumuzi-semiramis:semiramis-i:reign"
+      },
+      {
+        "source": "cory",
+        "date": "“reigned over the Assyrians 42 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 91; Castor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n135/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Semiramis, after the death of Ninus. The fragment does not say \"Semiramis I\". The person record's CFAH note states \"Her 42-year reign\". The fragment prints the same length and no BC year."
       }
     ]
   },
@@ -53,7 +65,8 @@
   "scripture_refs": [],
   "sources": [
     "cfah-5",
-    "cfah-15-osf"
+    "cfah-15-osf",
+    "cory-ancient-fragments-1876"
   ],
   "related": [
     "nimrod"
@@ -68,6 +81,11 @@
       "source_id": "cfah-15-osf",
       "url": "https://osf.io/vynju/",
       "locator": "Table 5, pp. 52–53"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "dynasty": "Uruk / Assyria (chroniclers)"

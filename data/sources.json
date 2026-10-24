@@ -1250,6 +1250,24 @@
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
       "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+    },
+    {
+      "id": "cory-ancient-fragments-1876",
+      "title": "Cory's Ancient Fragments of the Phoenician, Chaldæan, Egyptian, Tyrian, Carthaginian, Indian, Persian, and Other Writers",
+      "authors": [
+        "Isaac Preston Cory",
+        "E. Richmond Hodges"
+      ],
+      "translator_or_editor": "E. Richmond Hodges",
+      "year": "1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "alt_urls": [
+        "https://archive.org/details/corysancientfrag00coryuoft/page/n5/mode/1up"
+      ],
+      "access": "public-domain",
+      "license_note": "Published 1876 (London: Reeves & Turner; editor E. Richmond Hodges). In the public domain in the United States because it was published in 1930 or earlier. Read on the University of Toronto (Robarts) scan, Internet Archive item corysancientfrag00coryuoft, on 2026-10-23. The title page prints 1876. The editor's preface prints that the first edition appeared in 1826. An advertisement footnote prints that the second edition was published in 1832.",
+      "verified_on": "2026-10-23",
+      "note": "Pass 1, partial. Image-read: Tyrian Annals, printed pp. 28–32; Berossus via Apollodorus, pp. 51–52; Berossus via Abydenus, pp. 53–54; Polyhistor, 120 sari or 432,000 years, p. 60; Polyhistor and Castor, Chaldean and Assyrian lists, pp. 85–92. Printed page P is scan leaf P + 44. Not entered: Hodges's introduction (pp. 43–50), Sanchoniathon (pp. 1–22; OCR only, no year-lines, pages not image-read), Manetho, the Old Chronicle, the Laterculus, Josephus's Berossus (pp. 64–67), and the Periplus of Hanno."
     }
   ]
 }

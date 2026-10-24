@@ -59,6 +59,42 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Nimrod's second kingdom, Berossus' Second Dynasty, after the Dispersion until Gilgamesh's death."
+    },
+    {
+      "source": "cory",
+      "date": "“there were altogether 86 kings”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 85; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n129/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "From Xisuthrus and the Flood to the Medes' possession of Babylon. A count of kings, not a year."
+    },
+    {
+      "source": "cory",
+      "date": "“a period of 33,091 years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 85; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n129/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "The duration of those 86 reigns, as printed. Not a BC year. A run of 33,091 years from the Flood to the Median dynasty cannot sit in the CFAH span from AP-29 (2348–2347 B.C.) to the Median dynasty (the record prints 2191–1968 B.C.). Display only."
+    },
+    {
+      "source": "cory",
+      "date": "“eight in number, who reigned during the period of 224 years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 85; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n129/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Median kings set on the throne of Babylon. The record's summary states that this dynasty \"ruled 224 years\". The fragment prints the same length and no BC year."
     }
   ],
   "people": [
@@ -73,13 +109,19 @@
   "sources": [
     "blb-biblehub",
     "cfah-5",
-    "ussher-annals-1658"
+    "ussher-annals-1658",
+    "cory-ancient-fragments-1876"
   ],
   "free_source_links": [
     {
       "source_id": "cfah-5",
       "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
       "locator": "section \"AP-39: Median Dynasty of Babylon: 224 years: 2191–1968 B.C.\""
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "related": [

@@ -60,13 +60,38 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"2649 1967 310\". The third printed figure 310 is the column \"Floud\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 52 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Assyria."
+      },
+      {
+        "source": "cory",
+        "date": "“Ninus reigned over the Assyrians 52 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 91; Castor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n135/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Not linked to Nimrod. See H3."
+      },
+      {
+        "source": "cory",
+        "date": "“the complete sum of the years amounts to 1280”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 92; Castor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n136/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The sentence begins at the foot of p. 91: Castor's series runs from Ninus to a later Ninus after Sardanapallus. The numeral 1280 is on p. 92. The individual reigns of that canon are not printed in this edition (the text turns to Damascius). The 1280 is not Ninus's own reign."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -74,6 +99,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 782b"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

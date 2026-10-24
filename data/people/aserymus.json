@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "aserymus",
+  "type": "person",
+  "title": "Aserymus",
+  "summary": "Brother of Astartus and king of Tyre in Menander (Cory 1876).",
+  "description": "Added from the Cory import. Display only. Cory gives reign lengths and synchronisms, not a BC year this record can sort on, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Cory is display-only and gives none)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "cory",
+        "date": "“reigned nine years, having lived fifty-four”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 29; Menander of Ephesus, ap. Josephus",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n73/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Aserymus, brother of Astartus."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cory-ancient-fragments-1876"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
+    }
+  ]
+}

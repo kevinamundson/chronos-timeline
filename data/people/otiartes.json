@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "otiartes",
+  "type": "person",
+  "title": "Otiartes",
+  "alt_names": [
+    "Ardates"
+  ],
+  "summary": "Antediluvian Chaldean king, father of Xisuthrus. Apollodorus calls him Otiartes and gives a length; Polyhistor calls the ninth king Ardates and gives none.",
+  "description": "Added from the Cory import. Display only. Cory gives reign lengths and synchronisms, not a BC year this record can sort on, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Cory is display-only and gives none)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "cory",
+        "date": "“he ruled for eight sari”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 52; Berossus, ap. Apollodorus, ap. Syncellus and Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n96/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Otiartes, a Chaldæan from Laranchae. Polyhistor (p. 60) calls the ninth king Ardates and gives him no length."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "cory-ancient-fragments-1876"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
+    }
+  ]
+}

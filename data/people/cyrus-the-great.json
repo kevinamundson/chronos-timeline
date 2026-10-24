@@ -134,6 +134,30 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"4177 3495\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 7 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Persia.."
+      },
+      {
+        "source": "cory",
+        "date": "“In his time Cyrus was king of Persia”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 32; Menander of Ephesus, ap. Josephus",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n76/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Synchronism only. No year is printed for Cyrus here."
+      },
+      {
+        "source": "cory",
+        "date": "“Cyrus reigned at Babylon 9 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 88; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n132/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "After Nabonidus fled. The next sentence says Cyrus was killed in the plain of Daas. No BC year is printed."
       }
     ]
   },
@@ -151,7 +175,8 @@
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
     "morecraft-christian-survey",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -164,6 +189,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 790a"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

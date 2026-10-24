@@ -207,6 +207,54 @@
       "link": "https://texts.earlyprint.org/works/A10357.xml",
       "source_text_id": "raleigh-history-of-the-world-1617",
       "note": "Narrative sentence. The chronological table prints the same yeere of the World. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. No BC conversion."
+    },
+    {
+      "source": "cory",
+      "date": "“the sum total of all the kings is ten ; and the period which they collectively reigned amounts to one hundred and twenty sari”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 52; Berossus, ap. Apollodorus, ap. Syncellus and Eusebius",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n96/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Apollodorus's total. The flood entry records the parallel. The text does not name Noah, and Xisuthrus is not added to the Flood's people. CFAH dates the Flood 2348–2347 B.C. (AP-29). One hundred and twenty sari, at Abydenus's 3,600 years to a sarus, is the figure Polyhistor prints as 432,000 years (p. 60). That duration cannot sit before 2348 B.C."
+    },
+    {
+      "source": "cory",
+      "date": "“one hundred and twenty sari, or 432,000 years, reaching to the time of the Flood”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 60; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n104/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "The 432,000 is printed in this edition, in Polyhistor's extract. It is not our product. The same parenthesis says the ten kings reach to the time of the Flood. Against CFAH AP-29 (2348–2347 B.C.) this is a different scale of time. Scripture (MT) governs. The figure is display only."
+    },
+    {
+      "source": "cory",
+      "date": "“there were altogether 86 kings”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 85; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n129/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "From Xisuthrus and the Flood to the Medes' possession of Babylon. A count of kings, not a year."
+    },
+    {
+      "source": "cory",
+      "date": "“a period of 33,091 years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 85; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n129/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "The duration of those 86 reigns, as printed. Not a BC year. A run of 33,091 years from the Flood to the Median dynasty cannot sit in the CFAH span from AP-29 (2348–2347 B.C.) to the Median dynasty (the record prints 2191–1968 B.C.). Display only."
     }
   ],
   "people": [
@@ -236,7 +284,8 @@
     "jordan-bc-4-8",
     "jordan-compilation-anno-mundi",
     "morecraft-christian-survey",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "cory-ancient-fragments-1876"
   ],
   "free_source_links": [
     {
@@ -268,6 +317,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 96a"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "related": [

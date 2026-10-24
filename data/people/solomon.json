@@ -172,6 +172,18 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"3673 2991 478\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 40 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Israel.."
+      },
+      {
+        "source": "cory",
+        "date": "“Solomon, king of Jerusalem”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 29; Menander of Ephesus, ap. Josephus",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n73/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Synchronism only. Menander names Solomon in Hiram's reign and gives Solomon no year."
       }
     ]
   },
@@ -191,7 +203,8 @@
     "jordan-sbc-2",
     "cfah-14-osf",
     "cfah-16-osf",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "cory-ancient-fragments-1876"
   ],
   "free_source_links": [
     {
@@ -218,6 +231,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 786b"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "related": [

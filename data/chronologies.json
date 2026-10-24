@@ -616,6 +616,24 @@
         "morecraft-christian-survey"
       ],
       "anchors": []
+    },
+    {
+      "id": "cory",
+      "name": "Cory, Ancient Fragments (1876, ed. E. Richmond Hodges)",
+      "abbreviation": "Cory",
+      "primary": false,
+      "sort_priority": 14,
+      "status": "partial",
+      "authors": [
+        "Isaac Preston Cory",
+        "E. Richmond Hodges (editor)"
+      ],
+      "description": "SECONDARY DISPLAY CHRONOLOGY. It is never a sort tier and never sets or overrides a sort year. Each entry quotes the 1876 Hodges edition of Cory's Ancient Fragments (London: Reeves & Turner), with the printed page and the fragment chain (for example Berossus, ap. Alexander Polyhistor, ap. Eusebius). The edition gives reign lengths in years, months, days, sari, neri and sossi, and one parenthetical BC figure in this pass. Entries carry no BC year: year_bc_ad, year_bc_ad_end and year_am stay null, and a parenthetical such as \"(b.c. 878)\" is kept inside the quotation and is not a sort year. A product worked from the text's own definitions appears only in the note, labelled DERIVED. This pass is partial (the Tyrian Annals, the antediluvian kings, and the Chaldean and Assyrian lists). Agreements and conflicts are listed in data/cory-dates-extract.md.",
+      "year_conventions": "No year conversion. Entries keep year_bc_ad, year_bc_ad_end and year_am null and precision \"unknown\"; the date field is the quoted statement. Durations stay in that quotation (years, months, days, sari, neri, sossi). A parenthetical BC year printed in the edition is not stored as year_bc_ad. Derived products in notes are marked DERIVED and are never presented as the edition's figures.",
+      "references": [
+        "cory-ancient-fragments-1876"
+      ],
+      "anchors": []
     }
   ]
 }

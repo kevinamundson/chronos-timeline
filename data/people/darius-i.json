@@ -184,6 +184,18 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=He%20died%20in%20the%20year%20following%20the%20revolt",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "DERIVED (not Herodotus's figure): Death about 486/485 BC; accession 36 years earlier, about 522/521 BC. Chain from CFAH AP-13 (Xerxes invades Greece, 480 BC): the host wintered at Sardis and marched \"on the first approach of spring\" (7.37), having set out \"at the close of the fifth year\" from the recovery of Egypt (7.20), so Egypt was recovered about 485/484 BC; that was \"the year following the death of Darius\" (7.7), so Darius died about 486/485 BC; he died \"in the year following the revolt of Egypt\" (7.4), about 487/486 BC, and the revolt came \"in the fourth year\" after the news of Marathon (7.1), so Marathon was about 490 BC (±1). Agrees with Generations: Darius 522 BC (+ 36 = 486) and the 1st ed. of Preparing (Xerxes 486–465 BC). CONFLICT with the 2nd ed. of Preparing, which dates Xerxes 496–475 BC (the provisional sort of reign-of-xerxes-i), 10 years earlier than Darius's 36 years from 522 allow."
+      },
+      {
+        "source": "cory",
+        "date": "“then Darius 36 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 89; Berossus, ap. Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n133/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The sentence continues \"and after him, Xerxes, and the other kings of the Persian line.\" Xerxes is given no length, so no Xerxes row is entered. Mapped to Darius I because Xerxes follows him in the same sentence."
       }
     ]
   },
@@ -195,7 +207,8 @@
   "sources": [
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -223,6 +236,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7",
       "locator": "Book 7"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }
