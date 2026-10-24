@@ -38,6 +38,11 @@ async function inspect(page) {
     const tl = document.querySelector('#timeline'); const vt = tl?.querySelector('.vis-timeline');
     const box = (el) => { const r = el.getBoundingClientRect(); return { l: r.left, r: r.right, t: r.top, b: r.bottom, w: r.width, h: r.height }; };
     const C = vt ? box(vt) : null;
+    const ranges = [...(tl?.querySelectorAll('.vis-item.vis-range') || [])].map((i) => {
+      const b = box(i);
+      const a = i.querySelector('a.tl-link');
+      return { own: i.classList.contains('own'), w: b.w, h: b.h, label: a?.getAttribute('aria-label') || '', text: a?.textContent?.trim() || '', vis: getComputedStyle(i).visibility };
+    });
     const pts = [...(tl?.querySelectorAll('.vis-item.vis-point') || [])].map((i) => {
       const d = box(i.querySelector('.vis-dot')), c = box(i.querySelector('.vis-item-content'));
       const inside = (b) => b.w > 0 && b.h > 0 && b.l >= C.l - 1 && b.r <= C.r + 1 && b.t >= C.t - 1 && b.b <= C.b + 1;
@@ -49,7 +54,8 @@ async function inspect(page) {
       return { w: b.w, h: b.h, bg: s.backgroundColor, border: s.borderTopStyle + ' ' + s.borderTopWidth }; };
     const unversioned = [...document.querySelectorAll('link[href^="/assets/"], script[src^="/assets/"]')].map((e) => e.getAttribute('href') || e.getAttribute('src')).filter((u) => !/\?v=[0-9a-f]{8,}/.test(u));
     const axis = [...(tl?.querySelectorAll('.vis-time-axis .vis-text.vis-minor:not(.vis-measure)') || [])].map((e) => e.textContent.trim()).filter(Boolean);
-    return { axis, h: C?.h || 0, w: C?.w || 0, pts, own: sw('.lg-own'), ctx: sw('.lg-ctx'), unversioned, ready: tl?.getAttribute('data-ready') };
+    const visible = !!(vt && getComputedStyle(vt).visibility === 'visible');
+    return { axis, h: C?.h || 0, w: C?.w || 0, pts, ranges, own: sw('.lg-own'), ctx: sw('.lg-ctx'), unversioned, ready: tl?.getAttribute('data-ready'), visible };
   });
 }
 
@@ -72,12 +78,18 @@ for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
       await page.waitForTimeout(300);
       const r = await inspect(page);
       const own = r.pts.filter((p) => p.own), ctxs = r.pts.filter((p) => p.ctx);
+      const bars = (r.ranges || []).filter((b) => b.own);
       const badPos = r.pts.filter((p) => !p.dotIn || !p.labelVisible || p.gap < -2 || p.gap > 24);
       check(`${tag}: no errors`, errors.length === 0, errors.join(' | '));
       check(`${tag}: assets cache-busted`, r.unversioned.length === 0, r.unversioned.join(', '));
       check(`${tag}: chart drawn (height > 100px)`, r.h > 100, `${Math.round(r.w)}×${Math.round(r.h)}px`);
-      check(`${tag}: items == own + context`, own.length === ex.own && ctxs.length === ex.context && r.pts.length === ex.own + ex.context, `own ${own.length}/${ex.own}, context ${ctxs.length}/${ex.context}`);
-      check(`${tag}: every item visible inside the chart, label beside its dot`, r.pts.length > 0 && badPos.length === 0, badPos.map((p) => `${p.text} (dotIn ${p.dotIn}, gap ${p.gap})`).join('; '));
+      check(`${tag}: chart is visible`, r.visible);
+      check(`${tag}: items == own + context`, own.length + bars.length === ex.own && ctxs.length === ex.context && r.pts.length + bars.length === ex.own + ex.context, `own ${own.length}+${bars.length}/${ex.own}, context ${ctxs.length}/${ex.context}`);
+      if (ex.life) check(`${tag}: lifespan is a bar from birth to death`, bars.length === 1 && bars[0].w > 30 && bars[0].vis === 'visible' && bars[0].label.includes(ex.life.label), JSON.stringify(bars[0]));
+      else check(`${tag}: no lifespan bar without a later death or translation`, bars.length === 0);
+      // A lifespan-only chart has the bar and no dots. Point geometry stays strict whenever dots exist.
+      const pointsOk = r.pts.length > 0 ? badPos.length === 0 : bars.length > 0 && bars.every((b) => b.w > 30 && b.h > 0 && b.vis === 'visible');
+      check(`${tag}: every item visible inside the chart, label beside its dot`, pointsOk, r.pts.length ? badPos.map((p) => `${p.text} (dotIn ${p.dotIn}, gap ${p.gap})`).join('; ') : 'no points');
       if (ex.window && ex.window[0] > 0) check(`${tag}: AD axis labels (no year 0, no negatives)`, r.axis.length > 0 && r.axis.every((t) => /^AD [1-9]\d*$/.test(t) || /^[A-Z][a-z]{2}$/.test(t)), r.axis.slice(0, 5).join(', '));
       check(`${tag}: own solid, context faded`, own.every((p) => p.op === 1) && ctxs.every((p) => p.op < 1));
       const swOk = (s, ctxSw) => s && s.w > 0 && s.h > 0 && (ctxSw ? /dashed/.test(s.border) : s.bg !== 'rgba(0, 0, 0, 0)');

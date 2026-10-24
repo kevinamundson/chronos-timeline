@@ -321,14 +321,18 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
 {
   const items = [
     ...events.filter((e) => e.sorting_year != null).map((e) => ({ id: e.id, group: 'events', title: e.title, y: e.sorting_year, yEnd: e.chronologies.find((c) => c === sortingEntry(e.chronologies, e.sorting_basis))?.year_bc_ad_end ?? null, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 })),
-    ...people.filter((p) => p.sorting_year != null).map((p) => ({ id: p.id, group: 'people', title: p.title, y: p.sorting_year, label: `born ${yearLabel(p.sorting_year)}`, tier: tierCls(p), url: urlOf(p), order: 0 })),
+    ...people.filter((p) => p.sorting_year != null).map((p) => {
+      const end = tierYear(p.dates?.death) || tierYear(p.dates?.translated);
+      const yEnd = end && end.y != null && end.y > p.sorting_year ? end.y : null;
+      return { id: p.id, group: 'people', title: p.title, y: p.sorting_year, yEnd, label: yEnd != null ? `${yearLabel(p.sorting_year)} – ${yearLabel(yEnd)}` : `born ${yearLabel(p.sorting_year)}`, tier: tierCls(p), url: urlOf(p), order: 0 };
+    }),
   ];
   const chrono = [...events].sort(sortKey);
   const undated = [...events, ...people].filter((r) => r.sorting_year == null);
   const body = `
 <section class="hero">
   <h1>Universal Ancient History Timeline</h1>
-  <p class="lede">From Creation to Solomon's Temple, sorted by the <a href="/chronologies/">Chronological Framework of Ancient History</a> (CFAH), with Ussher–Jones, Ussher, James B. Jordan, Scripture, Josephus, Raleigh and the Annals of Clonmacnoise shown side by side.</p>
+  <p class="lede">A timeline of the mighty works of God among the nations, beginning at Creation and drawn from the earliest sources available. Records are sorted by the <a href="/chronologies/">Chronological Framework of Ancient History</a> (CFAH), with Scripture as the infallible standard. Other chronologies (Ussher–Jones, Ussher, Jordan, Josephus, Herodotus, Raleigh, the Irish annals, and more) are shown side by side for comparison.</p>
 </section>
 <section class="card" aria-labelledby="tl-h">
   <div class="section-head"><h2 id="tl-h">Timeline</h2>
@@ -337,9 +341,16 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
       <button type="button" data-tl="out" aria-label="Zoom out">−</button>
       <button type="button" data-tl="fit">Show all</button>
     </div></div>
-  <p class="small muted">Drag or swipe to scroll, pinch or use the buttons to zoom. Select an item to open it. Axis years are BC.</p>
-  <div id="timeline" class="timeline" aria-describedby="tl-alt"></div>
-  <ul class="legend small" aria-label="Sort tier legend">${Object.entries(TIERS).filter(([k]) => k !== 'none').map(([, t]) => `<li><span class="swatch tier-${t.cls}" aria-hidden="true"></span>${esc(t.label)}</li>`).join('')}</ul>
+  <p class="small muted">Drag, swipe, or use the scroll bars. Events and People each stay on screen, with a scroll bar of their own. Tier 1 is on. Turn other dating tiers on for more detail. Select an item to open it. Axis years are BC.</p>
+  <div class="tl-split" id="timeline">
+    <div class="tl-block">
+      <div id="timeline-events" class="timeline home-timeline" aria-label="Events"></div>
+    </div>
+    <div class="tl-block">
+      <div id="timeline-people" class="timeline home-timeline" aria-label="People"></div>
+    </div>
+  </div>
+  <div class="tier-toggles" role="group" aria-label="Dating tiers">${Object.entries(TIERS).filter(([k]) => k !== 'none').map(([k, t]) => `<button type="button" class="tier-toggle" data-tier-toggle="${t.cls}" aria-pressed="${k === 'cfah-anchor' ? 'true' : 'false'}"><span class="swatch tier-${t.cls}" aria-hidden="true"></span>${esc(t.label)}</button>`).join('')}</div>
   <noscript><p>The interactive timeline needs JavaScript. The chronological list below has the same events.</p></noscript>
 </section>
 <section class="card" aria-labelledby="map-h">
@@ -356,7 +367,7 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
 </section>
 ${jsonScript('tl-data', items)}
 ${jsonScript('map-data', locations.filter((l) => l.lat != null && l.lng != null).map(locPayload))}`;
-  out('index.html', page({ title: 'Timeline', desc: 'Young-Earth Creationist ancient history timeline sorted by CFAH.', body, path: '/', pagefind: false,
+  out('index.html', page({ title: 'Timeline', desc: 'A Young-Earth Creation timeline of the mighty works of God among the nations, drawn from the earliest sources and sorted by CFAH.', body, path: '/', pagefind: false,
     extraHead: `<link rel="stylesheet" href="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.css">${leafletHead}`,
     scripts: `<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>${leafletScript}<script src="/assets/app.js" defer></script>` }));
 }
@@ -413,15 +424,18 @@ function personTimeline(p) {
   const items = [];
   const isBirthEvt = (e) => birth && e.sorting_year === birth.y && /birth/.test(e.id);
   const isEndEvt = (e) => end && e.sorting_year === end.y && (/death|translated/.test(e.id));
-  if (birth && !own.some(isBirthEvt)) items.push({ id: 'birth', group: 'own', own: true, title: `Birth of ${p.title}`, y: birth.y, label: yearLabel(birth.y, birth.yEnd), tier: (TIERS[birth.tier] || TIERS.none).cls, url: '#birth', order: -1 });
-  if (end && !own.some(isEndEvt)) items.push({ id: endKind, group: 'own', own: true, title: `${endKind === 'death' ? 'Death' : 'Translation'} of ${p.title}`, y: end.y, label: yearLabel(end.y, end.yEnd), tier: (TIERS[end.tier] || TIERS.none).cls, url: `#${endKind}`, order: 9 });
+  // Same end rule as the home chart: tier death, or translation when death has no year, and only when it is after the tier birth. Not the widened window, a reign, or lifespan_years.
+  const life = birth && end && end.y > birth.y ? { y: birth.y, yEnd: end.y, label: `${yearLabel(birth.y)} – ${yearLabel(end.y)}` } : null;
+  if (life) items.push({ id: 'lifespan', group: 'own', own: true, span: true, title: p.title, y: life.y, yEnd: life.yEnd, label: life.label, tier: tierCls(p), url: '#birth', order: -2 });
+  if (birth && !life && !own.some(isBirthEvt)) items.push({ id: 'birth', group: 'own', own: true, title: `Birth of ${p.title}`, y: birth.y, label: yearLabel(birth.y, birth.yEnd), tier: (TIERS[birth.tier] || TIERS.none).cls, url: '#birth', order: -1 });
+  if (end && !life && !own.some(isEndEvt)) items.push({ id: endKind, group: 'own', own: true, title: `${endKind === 'death' ? 'Death' : 'Translation'} of ${p.title}`, y: end.y, label: yearLabel(end.y, end.yEnd), tier: (TIERS[end.tier] || TIERS.none).cls, url: `#${endKind}`, order: 9 });
   if (cfahReign) items.push({ id: 'cfah-reign', group: 'own', own: true, title: `Reign of ${p.title} (CFAH: ${cfahReign.date})`, y: cfahReign.year_bc_ad, label: yearLabel(cfahReign.year_bc_ad, cfahReign.year_bc_ad_end ?? null), tier: TIERS.none.cls, url: '#reign', order: 0 });
   if (textDeath) items.push({ id: 'cfah-death', group: 'own', own: true, title: `Death of ${p.title} (CFAH: ${textDeath.date})`, y: textDeath.year_bc_ad, label: yearLabel(textDeath.year_bc_ad), tier: TIERS.none.cls, url: '#death', order: 9 });
   for (const e of own) items.push({ id: e.id, group: 'own', own: true, title: e.title, y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
   const ctx = events.filter((e) => !ownIds.has(e.id) && e.sorting_year != null && e.sorting_year >= start && e.sorting_year <= stop);
   for (const e of ctx) items.push({ id: e.id, group: 'context', own: false, title: e.title, y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
   items.sort((a, b) => a.y - b.y || a.order - b.order || a.title.localeCompare(b.title));
-  return { start, stop, birth, end: end || (textDeath ? { y: textDeath.year_bc_ad, yEnd: null, tier: 'none' } : null), endKind: endKind || (textDeath ? 'death' : null), items, notes, ownUndated, ownCount: items.filter((i) => i.own).length, ctxCount: ctx.length };
+  return { start, stop, birth, end: end || (textDeath ? { y: textDeath.year_bc_ad, yEnd: null, tier: 'none' } : null), endKind: endKind || (textDeath ? 'death' : null), life, items, notes, ownUndated, ownCount: items.filter((i) => i.own).length, ctxCount: ctx.length };
 }
 const personTimelines = {};
 
@@ -439,7 +453,7 @@ function personTimelineSection(p) {
       <button type="button" data-tl="out" aria-label="Zoom out">−</button>
       <button type="button" data-tl="fit">Show lifetime</button>
     </div></div>
-  <p class="small muted">Window: <strong>${esc(win)}</strong> (birth to ${t.endKind || 'last linked event'}, using the four-tier sort rule). Select or Tab to an item and press Enter to open it.</p>
+  <p class="small muted">Window: <strong>${esc(win)}</strong> (birth to ${t.endKind || 'last linked event'}, using the four-tier sort rule).${t.life ? ` The lifespan is one bar, ${esc(t.life.label)}.` : ''} Select or Tab to an item and press Enter to open it.</p>
   ${notes}
   <div id="timeline" class="timeline person-timeline" aria-describedby="ptl-list-h"></div>
   <ul class="legend small" aria-label="Timeline legend"><li><span class="lg-own" aria-hidden="true"></span>${esc(p.title)}’s life (${t.ownCount}): solid</li><li><span class="lg-ctx" aria-hidden="true"></span>Other events in their lifetime (${t.ctxCount}): faded, dashed, marked “context”</li></ul>
@@ -719,6 +733,6 @@ out('404.html', page({ title: 'Not found', path: '', pagefind: false, body: '<h1
 writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/pagefind/*\n  Cache-Control: public, max-age=0, must-revalidate\n/chronologies/raleigh-chronological-table/*.csv\n  Content-Type: text/csv; charset=utf-8\n/chronologies/raleigh-chronological-table/*.md\n  Content-Type: text/markdown; charset=utf-8\n/chronologies/raleigh-chronological-table/*.xls\n  Content-Type: application/vnd.ms-excel\n`);
 
 mkdirSync(join(DIST, 'data'), { recursive: true });
-writeFileSync(join(DIST, 'data', 'person-timelines.json'), JSON.stringify(Object.fromEntries(Object.entries(personTimelines).map(([k, t]) => [k, t.none ? { none: true, notes: t.notes } : { window: [t.start, t.stop], birthTier: t.birth?.tier || null, endTier: t.end?.tier || null, endKind: t.endKind, own: t.ownCount, context: t.ctxCount, notes: t.notes, ownUndated: t.ownUndated.map((e) => e.id) }])), null, 1));
+writeFileSync(join(DIST, 'data', 'person-timelines.json'), JSON.stringify(Object.fromEntries(Object.entries(personTimelines).map(([k, t]) => [k, t.none ? { none: true, notes: t.notes } : { window: [t.start, t.stop], birthTier: t.birth?.tier || null, endTier: t.end?.tier || null, endKind: t.endKind, life: t.life ? { start: t.life.y, end: t.life.yEnd, label: t.life.label } : null, own: t.ownCount, context: t.ctxCount, notes: t.notes, ownUndated: t.ownUndated.map((e) => e.id) }])), null, 1));
 const n = events.length + people.length + locations.length + maps.length;
 console.log(`Built ${n} record pages (${events.length} events, ${people.length} people, ${locations.length} places, ${maps.length} maps) + home, browse, chronologies, Raleigh chronological table, gallery (${charts.length} CFAH charts), about, search, 404 → ${DIST}`);
