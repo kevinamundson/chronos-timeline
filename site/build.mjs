@@ -341,9 +341,14 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
       <button type="button" data-tl="out" aria-label="Zoom out">−</button>
       <button type="button" data-tl="fit">Show all</button>
     </div></div>
-  <p class="small muted">Drag, swipe, or use the scroll bars. Tier 1 is on. Turn other dating tiers on for more detail. Select an item to open it. Axis years are BC.</p>
-  <div class="tl-frame">
-    <div id="timeline" class="timeline home-timeline" aria-describedby="tl-alt"></div>
+  <p class="small muted">Drag, swipe, or use the scroll bars. Events and People each stay on screen, with a scroll bar of their own. Tier 1 is on. Turn other dating tiers on for more detail. Select an item to open it. Axis years are BC.</p>
+  <div class="tl-split" id="timeline">
+    <div class="tl-block">
+      <div id="timeline-events" class="timeline home-timeline" aria-label="Events"></div>
+    </div>
+    <div class="tl-block">
+      <div id="timeline-people" class="timeline home-timeline" aria-label="People"></div>
+    </div>
   </div>
   <div class="tier-toggles" role="group" aria-label="Dating tiers">${Object.entries(TIERS).filter(([k]) => k !== 'none').map(([k, t]) => `<button type="button" class="tier-toggle" data-tier-toggle="${t.cls}" aria-pressed="${k === 'cfah-anchor' ? 'true' : 'false'}"><span class="swatch tier-${t.cls}" aria-hidden="true"></span>${esc(t.label)}</button>`).join('')}</div>
   <noscript><p>The interactive timeline needs JavaScript. The chronological list below has the same events.</p></noscript>

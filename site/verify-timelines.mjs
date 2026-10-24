@@ -49,7 +49,8 @@ async function inspect(page) {
       return { w: b.w, h: b.h, bg: s.backgroundColor, border: s.borderTopStyle + ' ' + s.borderTopWidth }; };
     const unversioned = [...document.querySelectorAll('link[href^="/assets/"], script[src^="/assets/"]')].map((e) => e.getAttribute('href') || e.getAttribute('src')).filter((u) => !/\?v=[0-9a-f]{8,}/.test(u));
     const axis = [...(tl?.querySelectorAll('.vis-time-axis .vis-text.vis-minor:not(.vis-measure)') || [])].map((e) => e.textContent.trim()).filter(Boolean);
-    return { axis, h: C?.h || 0, w: C?.w || 0, pts, own: sw('.lg-own'), ctx: sw('.lg-ctx'), unversioned, ready: tl?.getAttribute('data-ready') };
+    const visible = !!(vt && getComputedStyle(vt).visibility === 'visible');
+    return { axis, h: C?.h || 0, w: C?.w || 0, pts, own: sw('.lg-own'), ctx: sw('.lg-ctx'), unversioned, ready: tl?.getAttribute('data-ready'), visible };
   });
 }
 
@@ -76,6 +77,7 @@ for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
       check(`${tag}: no errors`, errors.length === 0, errors.join(' | '));
       check(`${tag}: assets cache-busted`, r.unversioned.length === 0, r.unversioned.join(', '));
       check(`${tag}: chart drawn (height > 100px)`, r.h > 100, `${Math.round(r.w)}×${Math.round(r.h)}px`);
+      check(`${tag}: chart is visible`, r.visible);
       check(`${tag}: items == own + context`, own.length === ex.own && ctxs.length === ex.context && r.pts.length === ex.own + ex.context, `own ${own.length}/${ex.own}, context ${ctxs.length}/${ex.context}`);
       check(`${tag}: every item visible inside the chart, label beside its dot`, r.pts.length > 0 && badPos.length === 0, badPos.map((p) => `${p.text} (dotIn ${p.dotIn}, gap ${p.gap})`).join('; '));
       if (ex.window && ex.window[0] > 0) check(`${tag}: AD axis labels (no year 0, no negatives)`, r.axis.length > 0 && r.axis.every((t) => /^AD [1-9]\d*$/.test(t) || /^[A-Z][a-z]{2}$/.test(t)), r.axis.slice(0, 5).join(', '));

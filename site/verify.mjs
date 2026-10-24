@@ -40,13 +40,16 @@ async function scrollBars(page) {
       const cs = getComputedStyle(thumb);
       return { w: er.width, h: er.height, tw: tr.width, th: tr.height, opacity: cs.opacity, visibility: cs.visibility };
     }
-    return { h: box('.tl-hscroll'), v: box('.tl-vscroll') };
+    return { h: box('.tl-hscroll'), events: box('.tl-vscroll-events'), people: box('.tl-vscroll-people') };
   });
 }
+function barOk(bar, vertical) {
+  if (!bar || bar.opacity !== '1' || bar.visibility === 'hidden') return false;
+  if (vertical) return bar.h > 40 && bar.w >= 12 && bar.tw >= 8 && bar.th >= 20;
+  return bar.w > 40 && bar.h >= 12 && bar.tw >= 20 && bar.th >= 8;
+}
 function barsVisible(b) {
-  if (!b?.h || !b?.v) return false;
-  return b.h.w > 40 && b.h.h >= 12 && b.h.tw >= 20 && b.h.th >= 8 && b.h.opacity === '1' && b.h.visibility !== 'hidden'
-    && b.v.h > 40 && b.v.w >= 12 && b.v.tw >= 8 && b.v.th >= 20 && b.v.opacity === '1' && b.v.visibility !== 'hidden';
+  return barOk(b?.h, false) && barOk(b?.events, true) && barOk(b?.people, true);
 }
 
 // Home (desktop)
@@ -67,11 +70,28 @@ function barsVisible(b) {
   const toggles = await o.page.locator('[data-tier-toggle]').evaluateAll((els) => els.map((e) => ({ tier: e.getAttribute('data-tier-toggle'), pressed: e.getAttribute('aria-pressed') })));
   check('home: Tier 1 on and other dating tiers off', toggles.length >= 6 && toggles.every((t) => t.pressed === (t.tier === 't1' ? 'true' : 'false')), JSON.stringify(toggles));
   const groups = (await o.page.locator('.vis-labelset .vis-label').allInnerTexts()).map((t) => t.trim());
-  check('home: people group is labeled People', groups.includes('People') && !groups.some((t) => /People \(birth\)/.test(t)), groups.join(' | '));
-  // The People row sits under the stacked Events group, so vis omits it until the timeline is scrolled.
-  await o.page.locator('.tl-vscroll').focus();
+  check('home: people group is labeled People', groups.includes('People') && groups.includes('Events') && !groups.some((t) => /People \(birth\)/.test(t)), groups.join(' | '));
+  const panes = await o.page.evaluate(() => {
+    function pane(id) {
+      const el = document.getElementById(id);
+      const label = el?.querySelector('.vis-label');
+      if (!el || !label) return null;
+      const pr = el.getBoundingClientRect();
+      const lr = label.getBoundingClientRect();
+      const center = el.querySelector('.vis-panel.vis-center')?.getBoundingClientRect();
+      return { h: pr.height, label: label.textContent.trim(), labelInPane: lr.top >= pr.top - 4 && lr.top < pr.bottom, centerLeft: center ? Math.round(center.left) : null, centerW: center ? Math.round(center.width) : null };
+    }
+    return { events: pane('timeline-events'), people: pane('timeline-people') };
+  });
+  const linedUp = panes.events && panes.people && panes.events.h > 80 && panes.people.h > 80
+    && panes.events.label === 'Events' && panes.people.label === 'People'
+    && panes.events.labelInPane && panes.people.labelInPane
+    && Math.abs(panes.events.centerLeft - panes.people.centerLeft) < 2
+    && Math.abs(panes.events.centerW - panes.people.centerW) < 2;
+  check('home: Events and People stay on screen and line up', linedUp, JSON.stringify(panes));
+  await o.page.locator('.tl-vscroll-people').focus();
   for (let i = 0; i < 40; i++) {
-    const seen = await o.page.evaluate(() => [...document.querySelectorAll('.vis-item.vis-range a.tl-link')].some((a) => a.textContent === 'Adam'));
+    const seen = await o.page.evaluate(() => [...document.querySelectorAll('#timeline-people .vis-item.vis-range a.tl-link')].some((a) => a.textContent === 'Adam'));
     if (seen) break;
     await o.page.keyboard.press('PageDown');
   }
@@ -82,11 +102,45 @@ function barsVisible(b) {
     return { w: r.width, label: el.querySelector('a.tl-link')?.getAttribute('aria-label') || '' };
   });
   check('home: Adam renders as a lifespan bar', !!adam && adam.w > 30 && /4004 BC/.test(adam.label) && /3074 BC/.test(adam.label), JSON.stringify(adam));
-  for (let i = 0; i < 40; i++) await o.page.keyboard.press('PageUp');
+  // Tier 1 has two people, so the People pane does not overflow until another tier is on.
+  await o.page.locator('[data-tier-toggle="t4"]').click();
+  await o.page.waitForFunction(() => {
+    const pe = document.querySelector('#timeline-people .vis-panel.vis-left');
+    return pe && pe.scrollHeight - pe.clientHeight > 40;
+  }, null, { timeout: 5000 }).catch(() => {});
+  const beforeScroll = await o.page.evaluate(() => {
+    const ev = document.querySelector('#timeline-events .vis-panel.vis-left');
+    const pe = document.querySelector('#timeline-people .vis-panel.vis-left');
+    return { ev: ev?.scrollTop ?? null, pe: pe?.scrollTop ?? null, evRoom: ev ? ev.scrollHeight - ev.clientHeight : 0, peRoom: pe ? pe.scrollHeight - pe.clientHeight : 0 };
+  });
+  await o.page.locator('.tl-vscroll-events').focus();
+  await o.page.keyboard.press('PageDown');
+  const afterEvents = await o.page.evaluate(() => ({
+    ev: document.querySelector('#timeline-events .vis-panel.vis-left')?.scrollTop ?? null,
+    pe: document.querySelector('#timeline-people .vis-panel.vis-left')?.scrollTop ?? null,
+  }));
+  check('home: Events scroll bar moves only Events', beforeScroll.evRoom > 20 && afterEvents.ev > beforeScroll.ev + 10 && afterEvents.pe === beforeScroll.pe, JSON.stringify({ beforeScroll, afterEvents }));
+  await o.page.locator('.tl-vscroll-people').focus();
+  await o.page.keyboard.press('PageDown');
+  const afterPeople = await o.page.evaluate(() => ({
+    ev: document.querySelector('#timeline-events .vis-panel.vis-left')?.scrollTop ?? null,
+    pe: document.querySelector('#timeline-people .vis-panel.vis-left')?.scrollTop ?? null,
+  }));
+  check('home: People scroll bar moves only People', beforeScroll.peRoom > 20 && afterPeople.pe > afterEvents.pe + 10 && afterPeople.ev === afterEvents.ev, JSON.stringify({ afterEvents, afterPeople }));
+  await o.page.locator('[data-tier-toggle="t4"]').click();
+  const tierRestored = await o.page.waitForFunction((n) => document.querySelectorAll('.vis-timeline .vis-item').length === n, tl, { timeout: 5000 }).then(() => true).catch(() => false);
+  check('home: Tier 4 toggle restores the chart', tierRestored);
+  await o.page.evaluate(() => {
+    for (const sel of ['#timeline-events .vis-panel.vis-left', '#timeline-people .vis-panel.vis-left']) {
+      const el = document.querySelector(sel);
+      if (el) el.scrollTop = 0;
+    }
+  });
   await o.page.waitForFunction(() => {
     const h = document.querySelector('.tl-hscroll')?.getBoundingClientRect();
-    const v = document.querySelector('.tl-vscroll')?.getBoundingClientRect();
-    return h && v && h.width > 40 && h.height >= 12 && v.height > 40 && v.width >= 12;
+    const ev = document.querySelector('.tl-vscroll-events')?.getBoundingClientRect();
+    const pe = document.querySelector('.tl-vscroll-people')?.getBoundingClientRect();
+    return h && ev && pe && h.width > 40 && h.height >= 12 && ev.height > 40 && ev.width >= 12 && pe.height > 40 && pe.width >= 12;
   }, null, { timeout: 8000 }).catch(() => {});
   const bars0 = await scrollBars(o.page);
   await o.page.waitForTimeout(1000);
@@ -107,6 +161,13 @@ function barsVisible(b) {
     await o.page.locator('[data-tier-toggle="tp"]').click();
     const adAxis = await o.page.evaluate(() => { const tl = window.__timeline; if (!tl) return null; const d = (y) => { const x = new Date(Date.UTC(2000, 6, 1)); x.setUTCFullYear(y - 1); return x; }; tl.setWindow(d(300), d(500), { animation: false }); return true; });
     await o.page.waitForTimeout(400);
+    const synced = await o.page.evaluate(() => {
+      const a = window.__timeline?.getWindow();
+      const b = window.__timelinePeople?.getWindow();
+      if (!a || !b) return null;
+      return { ds: Math.abs(a.start - b.start), de: Math.abs(a.end - b.end) };
+    });
+    check('home: Events and People share one time window', !!synced && synced.ds < 1000 && synced.de < 1000, JSON.stringify(synced));
     const ax2 = await o.page.locator('.vis-time-axis .vis-text.vis-minor:not(.vis-measure)').allTextContents();
     check('home: AD axis labels read "AD n" with no year 0', adAxis === null || (ax2.some((t) => /^AD \d+$/.test(t)) && !ax2.some((t) => /^AD 0$|^-/.test(t))), ax2.slice(0, 6).join(', '));
     const nic = await o.page.locator('.vis-item', { hasText: 'Council of Nicaea' }).count();
@@ -148,14 +209,14 @@ for (const scheme of ['light', 'dark']) {
   const axisOk = [axis.bottom, axis.top].every((a) => a.pile === 0 && a.overflow <= 1 && a.n > 0 && a.n < 40 && a.years === a.n);
   check(`home mobile (${scheme}): year scale is not stacked`, axisOk, JSON.stringify(axis));
   if (scheme === 'dark') {
-    await o.page.locator('.tl-vscroll').focus();
+    await o.page.locator('.tl-vscroll-people').focus();
     for (let i = 0; i < 40; i++) {
-      const seen = await o.page.evaluate(() => !!document.querySelector('.vis-item.vis-range .tl-link'));
+      const seen = await o.page.evaluate(() => !!document.querySelector('#timeline-people .vis-item.vis-range .tl-link'));
       if (seen) break;
       await o.page.keyboard.press('PageDown');
     }
     const ink = await o.page.evaluate(() => {
-      const a = document.querySelector('.vis-item.vis-range .tl-link');
+      const a = document.querySelector('#timeline-people .vis-item.vis-range .tl-link');
       if (!a) return null;
       const m = getComputedStyle(a).color.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
       return m ? { color: getComputedStyle(a).color, lum: (+m[1] + +m[2] + +m[3]) / 3, text: a.textContent } : { color: getComputedStyle(a).color, text: a.textContent };
@@ -210,6 +271,13 @@ for (const [path, shot, sel] of [
       const o = await open(`/people/${id}/`, { width: w, height: h, shot });
       const tag = `/people/${id}/ (${w}px)`;
       check(`${tag}: no console errors`, o.status === 200 && o.errors.length === 0, o.errors.join(' | '));
+      const shown = await o.page.waitForFunction(() => {
+        const root = document.querySelector('#timeline .vis-timeline');
+        const axis = document.querySelector('#timeline .vis-time-axis .vis-text.vis-minor:not(.vis-measure)');
+        const item = document.querySelector('#timeline .vis-item');
+        return !!root && getComputedStyle(root).visibility === 'visible' && !!axis && getComputedStyle(axis).visibility === 'visible' && !!item && item.getBoundingClientRect().height > 0;
+      }, null, { timeout: 5000 }).then(() => true).catch(() => false);
+      check(`${tag}: timeline is visible`, shown);
       const own = await o.page.locator('#timeline .vis-item.vis-point.own').count();
       const ctx = await o.page.locator('#timeline .vis-item.vis-point.ctx').count();
       const ex = expect[id];
@@ -233,7 +301,6 @@ for (const [path, shot, sel] of [
       check(`${tag}: all ${hrefs.length} timeline links resolve`, hrefs.length > 0 && bad.length === 0, bad.join(', '));
       if (w > 500) {
         // keyboard: Tab reaches a timeline link; Enter opens it
-        await o.page.waitForFunction(() => getComputedStyle(document.querySelector('.vis-timeline')).visibility === 'visible', null, { timeout: 5000 }).catch(() => {});
         const first = o.page.locator('#timeline a.tl-link[href^="/events/"]').first();
         await first.focus();
         const focused = await o.page.evaluate(() => document.activeElement?.classList.contains('tl-link'));
@@ -255,6 +322,30 @@ for (const [path, shot, sel] of [
       await o.ctx.close();
     }
   }
+}
+// Peleg's chart used to draw and then stay hidden.
+{
+  const o = await open('/people/peleg/', { width: 390, height: 844, scheme: 'dark' });
+  const shown = await o.page.waitForFunction(() => {
+    const root = document.querySelector('#timeline .vis-timeline');
+    const axis = [...document.querySelectorAll('#timeline .vis-time-axis .vis-text.vis-minor:not(.vis-measure)')].map((n) => n.textContent.trim()).filter(Boolean);
+    const item = document.querySelector('#timeline .vis-item.own .tl-link');
+    return !!root && getComputedStyle(root).visibility === 'visible' && axis.length > 0 && axis.every((t) => / BC$|^AD /.test(t)) && !!item && getComputedStyle(item).visibility === 'visible' && item.getBoundingClientRect().height > 0;
+  }, null, { timeout: 5000 }).then(() => true).catch(() => false);
+  const detail = await o.page.evaluate(() => {
+    const root = document.querySelector('#timeline .vis-timeline');
+    return {
+      visibility: root ? getComputedStyle(root).visibility : null,
+      h: root ? Math.round(root.getBoundingClientRect().height) : 0,
+      labels: [...document.querySelectorAll('#timeline .vis-time-axis .vis-text.vis-minor:not(.vis-measure)')].slice(0, 8).map((n) => n.textContent.trim()),
+      own: document.querySelector('#timeline .vis-item.own .tl-link')?.textContent || '',
+      groups: [...document.querySelectorAll('#timeline .vis-label')].map((n) => n.textContent.trim()),
+      bars: document.querySelectorAll('.tl-vscroll').length,
+    };
+  });
+  check('peleg mobile dark: timeline is visible', shown && detail.h > 100 && detail.groups.some((g) => /Peleg/.test(g)) && detail.own.length > 0 && detail.bars === 0, JSON.stringify(detail));
+  check('peleg mobile dark: no console errors', o.status === 200 && o.errors.length === 0, o.errors.join(' | '));
+  await o.ctx.close();
 }
 // Search
 {

@@ -160,11 +160,15 @@ div.vis-tooltip { font-family: var(--font); font-size: 13px; background: var(--b
 .tier-toggle { display: inline-flex; align-items: center; gap: 8px; height: auto; padding: 8px 12px; border-radius: 999px; border: 1.5px solid var(--sep); background: transparent; color: var(--label-2); font-size: 14px; line-height: 1.3; text-align: left; white-space: normal; max-width: 100%; min-width: 0; }
 .tier-toggle[aria-pressed="true"] { background: var(--accent-fill); color: var(--label); border-color: currentColor; }
 
-/* Home timeline scroll bars stay painted. macOS overlay bars, and vis-timeline's own bar, hide when the pointer is still. */
-.tl-frame { display: grid; grid-template-columns: minmax(0, 1fr) 16px; grid-template-rows: auto 16px; gap: 6px; }
-.tl-frame > .timeline { grid-column: 1; grid-row: 1; min-width: 0; }
-.tl-vscroll { grid-column: 2; grid-row: 1; }
-.tl-hscroll { grid-column: 1; grid-row: 2; }
+/* Home timeline scroll bars stay painted. macOS overlay bars, and vis-timeline's own bar, hide when the pointer is still.
+   Events and People are separate panes. Each pane has a vertical bar. One horizontal bar sits under both. */
+.tl-split { display: flex; flex-direction: column; gap: 10px; }
+.tl-block { display: grid; grid-template-columns: minmax(0, 1fr) 16px; gap: 6px; align-items: stretch; }
+.tl-block > .timeline { grid-column: 1; grid-row: 1; min-width: 0; }
+.tl-block > .tl-vscroll { grid-column: 2; grid-row: 1; }
+.tl-split > .tl-hscroll { height: 16px; margin-right: 22px; }
+/* Same label width in both panes so the year scales line up. */
+.tl-split .vis-label .vis-inner { min-width: 88px; box-sizing: border-box; white-space: nowrap; }
 .tl-hscroll, .tl-vscroll { position: relative; background: var(--bg-fill); border-radius: 8px; touch-action: none; }
 .tl-scroll-thumb { position: absolute; background: var(--label-2); border-radius: 8px; opacity: 1; }
 .tl-hscroll .tl-scroll-thumb { top: 2px; height: 12px; min-width: 28px; }
