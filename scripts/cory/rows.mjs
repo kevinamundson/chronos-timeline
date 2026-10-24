@@ -53,7 +53,7 @@ export const rows = [
   }),
   R('tyrian', 30, 'In the seventh year of his reign, his sister (Dido), fled from him, and founded the city of Carthage in Libya (b.c. 878)', ['phygmalion:reign', 'founding-of-carthage'], {
     chain: MEN,
-    note: 'The parenthesis "(b.c. 878)" is printed in the sentence, immediately before the Josephus citation. It is not stored as year_bc_ad. Whether it is Menander\'s figure or the editor\'s gloss is open (G2).',
+    note: 'The parenthesis "(b.c. 878)" is printed in the sentence, immediately before the Josephus citation. It is not stored as year_bc_ad. Whether it is Menander\'s figure or the editor\'s gloss is open (H2).',
     cmp: 'Generations, on founding-of-carthage, prints "Sometime between 800 and 900 BC" (provisional). 878, if it is a year, falls inside that range. It does not set the sort.',
     st: 'consistent',
   }),
@@ -236,7 +236,7 @@ export const rows = [
     chain: PO, note: 'The numeral 21 is at the foot of p. 87. The word "years" is the first word of p. 88.', st: 'n/a',
   }),
   R('chaldean', 88, 'and likewise his brother 21 years', null, {
-    chain: PO, note: 'The brother is not named. Not identified with Sardanapallus, who is given 21 years in the next sentences. See G1.', st: 'internal',
+    chain: PO, note: 'The brother is not named. Not identified with Sardanapallus, who is given 21 years in the next sentences. See H1.', st: 'internal',
   }),
   R('chaldean', 88, 'Nabupalsar, (Nabopollassar), reigned 20 years', 'nabopolassar:reign', {
     chain: PO, note: 'A footnote says "Nabopollasar, see p. 84." The p. 84 mention was not given a separate length in this pass.', st: 'n/a',
@@ -250,7 +250,7 @@ export const rows = [
     st: 'consistent',
   }),
   R('chaldean', 88, 'Sardanapallus the Chaldean, reigned 21 years', 'sardanapallus:reign', {
-    chain: PO, note: 'Printed "After Samuges". See G1 for the unnamed brother who is also given 21 years.', st: 'internal',
+    chain: PO, note: 'Printed "After Samuges". See H1 for the unnamed brother who is also given 21 years.', st: 'internal',
   }),
   R('chaldean', 88, 'Then Nabucodrossorus reigned 43 years', 'nebuchadnezzar-ii:reign', {
     chain: PO, note: 'Second "43 years" on this page, in the captivity narrative. Same length as the list above.', st: 'agrees',
@@ -277,7 +277,7 @@ export const rows = [
     chain: CAS, note: 'Castor commences the Assyrian canon with Belus and sets down the name only.', st: 'n/a',
   }),
   R('chaldean', 91, 'Ninus reigned over the Assyrians 52 years', 'ninus:reign', {
-    chain: CAS, note: 'Not linked to Nimrod. See G3.', st: 'n/a',
+    chain: CAS, note: 'Not linked to Nimrod. See H3.', st: 'n/a',
   }),
   R('chaldean', 91, 'reigned over the Assyrians 42 years', ['semiramis-i:reign', 'reign-of-semiramis-i'], {
     chain: CAS,

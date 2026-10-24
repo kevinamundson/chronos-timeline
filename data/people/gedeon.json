@@ -1,0 +1,82 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "gedeon",
+  "type": "person",
+  "title": "Gideon",
+  "summary": "Gideon is dated in Raleigh's chronological table (1617), column Israel, by a yeere of the World. No tier 1–4 chronology dates this person.",
+  "description": "Added from the Raleigh import (The History of the World, 1617). Raleigh is display-only. He gives a yeere of the World, not a BC year, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only and is not converted to BC."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "5 1. Gedeon, 40.",
+        "year_am": 2732,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 785b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"3414 2732 219\". The third printed figure 219 is the column \"Exodus\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 40 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Israel.."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 785b"
+    }
+  ],
+  "alt_names": [
+    "Gedeon"
+  ]
+}

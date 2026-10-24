@@ -104,6 +104,17 @@
         "link": "https://www.gutenberg.org/ebooks/2848",
         "note": "Whiston's text names the son \"Haran\" here, but the series runs Nahor → Terah; Josephus' 120 differs from the Masoretic 29 (Gen 11:24). Treat as a Josephus/Whiston reading, not a date.",
         "source_text_id": "josephus-antiquities-whiston"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "1. Terah. 205",
+        "year_am": 1879,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2561 1879 222\". The third printed figure 222 is the column \"Floud\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 205 at the end of the name is the lifespan he prints. His table also prints the death at World 2083. 1879 + 205 is not 2083. Both figures are left as printed."
       }
     ],
     "death": [
@@ -181,6 +192,17 @@
         "link": "https://www.gutenberg.org/ebooks/2848",
         "note": null,
         "source_text_id": "josephus-antiquities-whiston"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Terah dyes in.",
+        "year_am": 2083,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2765 2083 426\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
       }
     ]
   },
@@ -197,7 +219,8 @@
     "ussher-annals-1658",
     "jordan-bc-6-4",
     "josephus-antiquities-whiston",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
@@ -214,6 +237,16 @@
       "source_id": "josephus-antiquities-whiston",
       "url": "https://www.gutenberg.org/ebooks/2848",
       "locator": "Book I, ch. 6, §5"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782a"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782b"
     }
   ],
   "related": [

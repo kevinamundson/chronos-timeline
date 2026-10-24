@@ -1,0 +1,179 @@
+# Raleigh pass log
+
+Imported from the 1617 chronological table. Raleigh is display-only. No sorting year was changed. Display titles use modern English spelling. His printed spelling is an alternate name. He states that the Julian Period exceeds the yeere of the World by 682. He does not state a BC conversion, so no BC year was added. The whole table is reproduced at `/chronologies/raleigh-chronological-table/` (modern spelling by default, original spelling by a toggle, with CSV, Markdown, and Excel downloads).
+
+- Records updated or created with a Raleigh entry: 203
+- Dated statements written: 216
+- People created: 149
+- Figures skipped: 448
+
+## People created
+
+- `abas` — Abas
+- `acoris` — Achoris (Raleigh: Acoris)
+- `adrastus` — Adrastus
+- `aegyrus` — Aegyrus
+- `aegysthus` — Aegisthus (Raleigh: Aegysthus)
+- `aeneas` — Aeneas
+- `aeschylus` — Aeschylus
+- `agamemnon` — Agamemnon
+- `agamnestor` — Agamnestor
+- `agastus` — Agastus
+- `alcades` — Alcades
+- `amen` — Amen
+- `amphytryon` — Amphitryon (Raleigh: Amphytryon)
+- `amyntas` — Amyntas
+- `antigonus-gonatas` — Antigonus Gonatas
+- `apis-of-argiues` — Apis
+- `apis-of-sicyon` — Apis
+- `apuilas` — Apuilas
+- `aralius` — Aralius
+- `arbaces` — Arbaces
+- `archippus` — Archippus
+- `ariphron` — Ariphron
+- `arius` — Arius
+- `arses` — Arses
+- `artaxerxes-longimanus` — Artaxerxes Longimanus
+- `artaxerxes-mnemon` — Artaxerxes Mnemon
+- `asa` — Asa
+- `asarhaddon` — Esarhaddon (Raleigh: Asarhaddon)
+- `ascanius` — Ascanius
+- `ascatades` — Ascatades
+- `athalia` — Athaliah (Raleigh: Athalia)
+- `baleus` — Baleus
+- `balthasar` — Balthasar
+- `belochus-priseus` — Belochus Priscus (Raleigh: Belochus Priseus)
+- `belochus-the-second` — Belochus II (Raleigh: Belochus the second)
+- `belopares` — Belopares
+- `belus` — Belus
+- `ben-merodach` — Ben Merodach
+- `bocchorus` — Bocchoris (Raleigh: Bocchorus)
+- `cambyses` — Cambyses
+- `cassander` — Cassander
+- `cecrops-the-second` — Cecrops II (Raleigh: Cecrops the second)
+- `cham` — Ham (Egypt) (Raleigh: Cham)
+- `codrus` — Codrus
+- `corax` — Corax
+- `cranaus` — Cranaus
+- `crotopus` — Crotopus
+- `cyras-in-persia` — Cyrus in Persia (Raleigh: Cyras in Persia)
+- `darius-hystaspis` — Darius Hystaspes (Raleigh: Darius Hystaspis)
+- `darius-nothus` — Darius Nothus
+- `darius-the-mede` — Darius the Mede
+- `demetrius` — Demetrius
+- `demophon` — Demophon
+- `demtrius` — Demetrius (Raleigh: Demtrius)
+- `dercilus` — Dercilus
+- `echireus` — Echireus
+- `ehud` — Ehud
+- `epopeus` — Epopeus
+- `erictheus` — Erechtheus (Raleigh: Erictheus)
+- `ericthonius` — Erichthonius (Raleigh: Ericthonius)
+- `euilmerodach` — Evil-merodach (Raleigh: Euilmerodach)
+- `eupales` — Eupales
+- `euristheus` — Eurystheus (Raleigh: Euristheus)
+- `europs` — Europs
+- `gedeon` — Gideon (Raleigh: Gedeon)
+- `hosea` — Hosea
+- `iehoabaz` — Jehoahaz (Raleigh: Iehoabaz)
+- `iehoiakim` — Jehoiakim (Raleigh: Iehoiakim)
+- `ilus` — Ilus
+- `inachus-of-argiues` — Inachus
+- `inachus-of-sicyon` — Inachus
+- `ioas` — Joash (Raleigh: Ioas)
+- `iosias` — Josiah (Raleigh: Iosias)
+- `iosua` — Joshua (Raleigh: Iosua)
+- `iudas-macchabaeus` — Judas Maccabeus (Raleigh: Iudas Macchabaeus)
+- `lamedon` — Lamedon
+- `lamprides` — Lamprides
+- `laomedon` — Laomedon
+- `laosthenes` — Laosthenes
+- `leucippus` — Leucippus
+- `lysimachus` — Lysimachus
+- `manasses` — Manasseh (Raleigh: Manasses)
+- `marathius` — Marathius
+- `marathus` — Marathus
+- `medidus` — Medidus
+- `melanthus` — Melanthus
+- `merodach` — Merodach
+- `mezales` — Mezales
+- `mitreus` — Mitreus
+- `mnestheus` — Mnestheus
+- `neco` — Necho (Raleigh: Neco)
+- `nectanebus` — Nectanebo (Raleigh: Nectanebus)
+- `nephres` — Nephres
+- `ninias` — Ninias
+- `ninus` — Ninus
+- `numa-pompilius` — Numa Pompilius
+- `ochus` — Ochus
+- `onias-high-priest` — Onias the high priest (Raleigh: Onias high Priest)
+- `ophrateus` — Ophrateus
+- `orestes` — Orestes
+- `othoniel` — Othniel (Raleigh: Othoniel)
+- `pandi` — Pandion (Raleigh: Pandiŏ)
+- `pannias` — Pannias
+- `pekahia` — Pekahiah (Raleigh: Pekahia)
+- `pelasgus` — Pelasgus
+- `pheredus` — Pheredus
+- `phestus` — Phestus
+- `philip` — Philip
+- `phorbas-of-argiues` — Phorbas
+- `phorbas-of-athens` — Phorbas
+- `phoroneus` — Phoroneus
+- `polybus` — Polybus
+- `polyphides` — Polyphides
+- `priamus` — Priam (Raleigh: Priamus)
+- `proetus` — Proetus
+- `ptolemie-epiphanes` — Ptolemy Epiphanes (Raleigh: Ptolemie Epiphanes)
+- `ptolemie-euergetes` — Ptolemy Euergetes (Raleigh: Ptolemie Euergetes)
+- `ptolemie-lagi` — Ptolemy Lagus (Raleigh: Ptolemie Lagi)
+- `rehoboam` — Rehoboam
+- `romulus` — Romulus
+- `sabacus-the-ethiopian` — Sabaco the Ethiopian (Raleigh: Sabacus the Ethiopian)
+- `sarai` — Sarah (Raleigh: Sarai)
+- `sardanapalus` — Sardanapalus
+- `semiramis` — Semiramis
+- `sethon` — Sethos (Raleigh: Sethon)
+- `sosares` — Sosares
+- `sosarmus-of-assyria` — Sosarmus
+- `sosarmus-of-media` — Sosarmus
+- `sparetus` — Sparetus
+- `sthenelus` — Sthenelus
+- `syl-alba` — Alba Silvius (Raleigh: Syl. Alba)
+- `syl-alladius` — Silvius Alladius (Raleigh: Syl. Alladius)
+- `syl-amulius` — Amulius (Raleigh: Syl▪ Amulius)
+- `syl-latinus` — Latinus Silvius (Raleigh: Syl. Latinus)
+- `syl-posthumus` — Silvius Postumus (Raleigh: Syl. Posthumus)
+- `syl-procas` — Procas Silvius (Raleigh: Syl. Procas)
+- `syl-tybermus` — Tiberinus Silvius (Raleigh: Syl. Tybermus)
+- `syluius-aeneas` — Aeneas Silvius (Raleigh: Syluius Aeneas)
+- `tautanes` — Tautanes
+- `tesamenus` — Tisamenus (Raleigh: Tesamenus)
+- `teuteus` — Teuteus
+- `theseus` — Theseus
+- `thespeius` — Thespius (Raleigh: Thespeius)
+- `thurimachus` — Thurimachus
+- `triopas` — Triopas
+- `tros` — Tros
+- `tullus-hostilius` — Tullus Hostilius
+- `xerxes` — Xerxes
+- `zeusippus` — Zeuxippus (Raleigh: Zeusippus)
+
+## Skipped, by reason
+
+- illegible name or length: 57
+- named cell on a heading row with no yeere of the World: 1
+- year cell does not follow Julian = World + 682: 10
+- named cell is not a single printed length: 44
+- two names share one printed length: 5
+- not a personal name: 3
+- name without a printed length: 1
+- row label not a death, translation, or a portal event: 271
+- illegible row label: 51
+- death of Codrus has no existing person: 1
+- death of Amasis has no existing person: 1
+- death of Epaminondas has no existing person: 1
+- death of Alexander has no existing person: 1
+- death of Hiero King of Syracuse has no existing person: 1
+
+Every skipped figure is quoted in `data/raleigh-dates-extract.md`.

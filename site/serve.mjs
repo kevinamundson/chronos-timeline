@@ -6,7 +6,7 @@ import { join, extname, normalize, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const DIST = join(dirname(fileURLToPath(import.meta.url)), 'dist');
 const PORT = Number(process.env.PORT || 8788);
-const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.wasm': 'application/wasm', '.txt': 'text/plain' };
+const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.wasm': 'application/wasm', '.txt': 'text/plain', '.csv': 'text/csv; charset=utf-8', '.md': 'text/markdown; charset=utf-8', '.xls': 'application/vnd.ms-excel' };
 export function serve(port = PORT) {
   const srv = createServer(async (req, res) => {
     let p = normalize(decodeURIComponent(new URL(req.url, 'http://x').pathname)).replace(/^(\.\.[/\\])+/, '');

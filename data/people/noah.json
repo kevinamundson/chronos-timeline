@@ -117,6 +117,17 @@
         "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
         "source_text_id": "generations-preparing-2e",
         "note": "Timeline Review 1 (\"Noah: 2948 – 1998 BC\"); also p. 160."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "1. Noah. 950",
+        "year_am": 1057,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 781b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"1739 1057\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 950 at the end of the name is the lifespan he prints. His table also prints the death at World 2006. 1057 + 950 is not 2006. Both figures are left as printed."
       }
     ],
     "death": [
@@ -209,6 +220,17 @@
         "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
         "source_text_id": "generations-preparing-2e",
         "note": "Died at 950, four years before Naamah."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Noah dyed this yeere .",
+        "year_am": 2006,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2688 2006 349\". The third printed figure 349 is the column \"Floud\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
       }
     ]
   },
@@ -222,13 +244,24 @@
     "ussher-annals-1658",
     "cfah-1",
     "jordan-bc-6-4",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/5.htm",
       "locator": "Genesis 5"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 781b"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782b"
     }
   ],
   "related": [

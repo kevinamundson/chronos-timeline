@@ -125,6 +125,17 @@
         "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca). Table \"Persian Kings in Bible History\" (OCR of the table was poor; read from the page image)."
       },
       {
+        "source": "raleigh-history-of-the-world",
+        "date": "1 Cyrus 7.",
+        "year_am": 3495,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 790a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"4177 3495\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 7 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Persia.."
+      },
+      {
         "source": "cory",
         "date": "“In his time Cyrus was king of Persia”",
         "year_am": null,
@@ -164,6 +175,7 @@
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
     "morecraft-christian-survey",
+    "raleigh-history-of-the-world-1617",
     "cory-ancient-fragments-1876"
   ],
   "related": [],
@@ -172,6 +184,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
       "locator": "Book 1"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 790a"
     },
     {
       "source_id": "cory-ancient-fragments-1876",

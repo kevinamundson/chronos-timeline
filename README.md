@@ -103,7 +103,7 @@ search built at build time. No server, database, CMS or paid service. Vendor JS/
   in `people` (or in the person's `events`), plus birth/death markers, are solid. Every other event whose `sorting_year` falls in the window
   is shown as context: faded, dashed, italic, marked "(context)", in its own row. Items are real links (Tab + Enter), and an ordered list below
   repeats them. Per-person counts are written to `dist/data/person-timelines.json`.
-- `/browse/`, `/chronologies/` (sorting rule, every chronology, all sources), `/about/` (framework + credits), `/search/`, `404.html`.
+- `/browse/`, `/chronologies/` (sorting rule, every chronology, all sources, and Raleigh's chronological table), `/about/` (framework + credits), `/search/`, `404.html`.
 
 **BC years on the timeline.** Data years are historical (negative = BC, no year 0). JavaScript dates need a continuous axis, so `app.js`
 maps BC year *y* to axis year *y* and AD year *y* to *y − 1*, and the axis labels convert back ("4500 BC"). Round ticks therefore read as round

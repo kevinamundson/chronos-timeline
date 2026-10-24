@@ -21,21 +21,38 @@
     pending.forEach(function (l) { l.addEventListener('load', fin); l.addEventListener('error', fin); });
     window.addEventListener('load', function () { if (!done) { done = true; cb(); } });
   }
-  var tlEl = document.getElementById('timeline');
+  var tlRoot = document.getElementById('timeline');
+  var eventsEl = document.getElementById('timeline-events');
+  var peopleEl = document.getElementById('timeline-people');
   var raw = readJSON('tl-data');
-  if (tlEl && raw && window.vis) whenStyles(function () {
+  if (tlRoot && raw && window.vis) whenStyles(function () {
     var moment = vis.moment;
     var person = !Array.isArray(raw) && raw.mode === 'person';
     var items = person ? raw.items : raw;
-    var data = new vis.DataSet(items.map(function (it) {
+    function visItem(it) {
       var cls = 'tier-' + it.tier + (person ? (it.own ? ' own' : ' ctx') : '');
       var label = it.title + ' — ' + it.label + (person && !it.own ? ' (context)' : '');
-      return { id: it.group + ':' + it.id, group: it.group, content: it.title, start: toDate(it.y), type: 'point',
-        title: label, aria: label, className: cls, url: it.url, own: !!it.own, ord: it.y * 100 + (it.order || 0) };
-    }));
-    var groups = person
-      ? new vis.DataSet([{ id: 'own', content: raw.person + '’s life', order: 1 }, { id: 'context', content: 'Context', order: 2, className: 'grp-ctx' }])
-      : new vis.DataSet([{ id: 'events', content: 'Events' }, { id: 'people', content: 'People (birth)' }]);
+      // Home events keep a point even when a chronology gives them an end year.
+      // A person page draws one bar for the lifespan (span), the same years as the home chart.
+      var range = it.yEnd != null && it.yEnd !== it.y && (it.group === 'people' || it.span);
+      var row = { id: it.group + ':' + it.id, group: it.group, content: it.title, start: toDate(it.y), type: range ? 'range' : 'point',
+        title: label, aria: label, className: cls, url: it.url, own: !!it.own, ord: it.y * 100 + (it.order || 0), tier: it.tier };
+      if (range) row.end = toDate(it.yEnd);
+      return row;
+    }
+    var built = items.map(visItem);
+    function tiersOn() {
+      var buttons = document.querySelectorAll('[data-tier-toggle]');
+      if (!buttons.length) return null;
+      var on = {};
+      [].forEach.call(buttons, function (b) { if (b.getAttribute('aria-pressed') === 'true') on[b.getAttribute('data-tier-toggle')] = true; });
+      return on;
+    }
+    function shownItems() {
+      var on = tiersOn();
+      var list = on ? built.filter(function (it) { return on[it.tier]; }) : built;
+      return list.map(function (it) { return Object.assign({}, it); });
+    }
     var ys = items.map(function (i) { return i.y; });
     var min = person ? raw.start : Math.min.apply(null, ys), max = person ? raw.stop : Math.max.apply(null, ys);
     // Home opens on the ancient span (to AD 100) as before; later (AD) items are reachable by panning/zooming.
@@ -43,51 +60,295 @@
     var pad = person ? Math.max(3, Math.round((max - min) * 0.05)) : Math.max(50, Math.round((viewMax - min) * 0.04));
     var padR = person ? pad * 4 : pad * 7;
     var YEAR = 365.25 * 864e5;
-    var timeline = new vis.Timeline(tlEl, data, groups, {
-      moment: function (d) { return moment(d).utc(); },
+    var narrow = window.matchMedia('(max-width: 640px)').matches;
+    var windowOpts = {
       start: toDate(min - pad), end: toDate(viewMax + padR),
-      min: toDate(min - (person ? 200 : 500)), max: toDate(Math.min(max + (person ? 400 : 2000), new Date().getUTCFullYear() + 25)),
-      zoomMin: (person ? 2 : 10) * YEAR, zoomMax: 5000 * YEAR,
-      groupOrder: 'order',
-      // Each item is a real link: focusable, Enter opens it, screen readers get the full label.
-      template: function (item) {
-        var a = document.createElement('a');
-        a.href = item.url; a.className = 'tl-link'; a.textContent = item.content;
-        a.setAttribute('aria-label', item.aria);
-        if (person && !item.own) { var s = document.createElement('span'); s.className = 'ctx-mark'; s.textContent = ' (context)'; a.appendChild(s); }
-        return a;
-      },
-      orientation: { axis: 'both', item: 'top' }, verticalScroll: true, stack: true, showCurrentTime: false, selectable: true,
-      // Person charts grow to fit every item (no hidden, scroll-only rows); the dense home chart is capped.
-      maxHeight: person ? undefined : (window.matchMedia('(max-width: 640px)').matches ? '520px' : '640px'), minHeight: person ? '200px' : '320px',
-      margin: { item: { horizontal: 4, vertical: 6 } },
-      format: {
-        minorLabels: function (date, scale) { return scale === 'year' ? astroToLabel(date.year()) : date.format('MMM'); },
-        majorLabels: function (date, scale) { return (scale === 'year' || scale === 'decade' || scale === 'century' || scale === 'millennium') ? '' : astroToLabel(date.year()); }
-      },
-      tooltip: { followMouse: true },
-      order: function (a, b) { return a.ord - b.ord; }
-    });
-    window.__timeline = timeline; // exposed for site/verify.mjs
-    timeline.on('select', function (p) { if (p.items.length) { var it = data.get(p.items[0]); if (it && it.url) location.href = it.url; } });
-    // Keyboard: vis-timeline swallows Enter on its items, so follow the focused link ourselves.
-    tlEl.addEventListener('keydown', function (e) {
-      var a = e.target.closest && e.target.closest('a.tl-link');
-      if (a && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); e.stopPropagation(); location.href = a.getAttribute('href'); }
-    }, true);
+      min: toDate(min - (person ? 200 : 500)), max: toDate(Math.min(max + (person ? 400 : 2000), new Date().getUTCFullYear() + 25))
+    };
+    function chartOptions(extra) {
+      return Object.assign({
+        moment: function (d) { return moment(d).utc(); },
+        zoomMin: (person ? 2 : 10) * YEAR, zoomMax: 5000 * YEAR,
+        groupOrder: 'order',
+        // Each item is a real link: focusable, Enter opens it, screen readers get the full label.
+        template: function (item) {
+          var a = document.createElement('a');
+          a.href = item.url; a.className = 'tl-link'; a.textContent = item.content;
+          a.setAttribute('aria-label', item.aria);
+          if (person && !item.own) { var s = document.createElement('span'); s.className = 'ctx-mark'; s.textContent = ' (context)'; a.appendChild(s); }
+          return a;
+        },
+        verticalScroll: true, stack: true, showCurrentTime: false, selectable: true,
+        margin: { item: { horizontal: 4, vertical: 6 } },
+        format: {
+          minorLabels: function (date, scale) { return scale === 'year' ? astroToLabel(date.year()) : date.format('MMM'); },
+          majorLabels: function (date, scale) { return (scale === 'year' || scale === 'decade' || scale === 'century' || scale === 'millennium') ? '' : astroToLabel(date.year()); }
+        },
+        tooltip: { followMouse: true },
+        order: function (a, b) { return a.ord - b.ord; }
+      }, windowOpts, extra);
+    }
+    // vis-timeline keeps the chart visibility:hidden until a "changed" event that follows its
+    // deferred rangechanged (200ms). Person pages never redraw again, so the chart stays blank.
+    // Show it once a draw has run. initialDrawDone is set after vis's own handler, which removes
+    // the loading screen itself when it is the one that reveals the chart.
+    function armReveal(timeline) {
+      function reveal() {
+        if (!timeline.dom || !timeline.dom.root) return;
+        timeline.dom.root.style.visibility = 'visible';
+        var screen = timeline.dom.loadingScreen;
+        if (screen && screen.parentNode) screen.parentNode.removeChild(screen);
+        timeline.initialDrawDone = true;
+        if (timeline.itemSet) timeline.itemSet.initialDrawDone = true;
+      }
+      timeline.on('changed', reveal);
+      timeline.on('rangechanged', reveal);
+      requestAnimationFrame(reveal);
+      setTimeout(reveal, 400);
+    }
+    // vis-timeline only has year steps up to 1000. A wider window (a phone showing the whole chart)
+    // misses every step and falls through to a day scale, so hundreds of labels pile on the first tick.
+    // 1000 years is still narrower than the label budget there, so keep adding 1000 until the step fits.
+    // Closer windows stay on whatever scale vis chose (a person chart zoomed in must not jump to millennia).
+    function installYearFloor(timeline) {
+      var StepCtor = timeline.timeAxis && timeline.timeAxis.step && timeline.timeAxis.step.constructor;
+      if (!StepCtor || StepCtor.prototype._yearScaleFloor) return;
+      var origMinStep = StepCtor.prototype.setMinimumStep;
+      var stepYear = 1000 * 60 * 60 * 24 * 30 * 12;
+      StepCtor.prototype.setMinimumStep = function (minimumStep) {
+        origMinStep.call(this, minimumStep);
+        if (minimumStep >= stepYear * 1000) {
+          this.scale = 'year';
+          var years = minimumStep / stepYear;
+          var step = 1000;
+          while (step <= years && step < 10000) step += 1000;
+          this.step = step;
+        }
+      };
+      StepCtor.prototype._yearScaleFloor = true;
+      // The constructor already queued its first draw. The patch is in place before that frame.
+      timeline.redraw();
+    }
+    function wireChart(el, timeline, dataset) {
+      armReveal(timeline);
+      installYearFloor(timeline);
+      timeline.on('select', function (p) { if (p.items.length) { var it = dataset.get(p.items[0]); if (it && it.url) location.href = it.url; } });
+      // Keyboard: vis-timeline swallows Enter on its items, so follow the focused link ourselves.
+      el.addEventListener('keydown', function (e) {
+        var a = e.target.closest && e.target.closest('a.tl-link');
+        if (a && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); e.stopPropagation(); location.href = a.getAttribute('href'); }
+      }, true);
+      // Safety net: if a dot was still measured before styles applied, rebuild the items once.
+      requestAnimationFrame(function () {
+        var bad = [].some.call(el.querySelectorAll('.vis-item.vis-point .vis-dot'), function (d) { return d.offsetWidth > 40; });
+        if (bad) { var all = dataset.get(); dataset.clear(); if (all.length) dataset.add(all); }
+      });
+    }
+    function syncWindows(a, b) {
+      var lock = false;
+      function follow(src, dst) {
+        src.on('rangechange', function () {
+          if (lock) return;
+          lock = true;
+          var w = src.getWindow();
+          dst.setWindow(w.start, w.end, { animation: false });
+          lock = false;
+        });
+      }
+      follow(a, b);
+      follow(b, a);
+    }
+    var home = !person && eventsEl && peopleEl;
+    var timeline;
+    if (home) {
+      var evItems = shownItems().filter(function (it) { return it.group === 'events'; });
+      var peItems = shownItems().filter(function (it) { return it.group === 'people'; });
+      var evData = new vis.DataSet(evItems);
+      var peData = new vis.DataSet(peItems);
+      var evTl = new vis.Timeline(eventsEl, evData, new vis.DataSet([{ id: 'events', content: 'Events', order: 1 }]), chartOptions({
+        orientation: { axis: 'top', item: 'top' },
+        maxHeight: narrow ? '280px' : '380px', minHeight: '160px'
+      }));
+      var peTl = new vis.Timeline(peopleEl, peData, new vis.DataSet([{ id: 'people', content: 'People', order: 1 }]), chartOptions({
+        orientation: { axis: 'bottom', item: 'top' },
+        maxHeight: narrow ? '220px' : '260px', minHeight: '140px'
+      }));
+      wireChart(eventsEl, evTl, evData);
+      wireChart(peopleEl, peTl, peData);
+      syncWindows(evTl, peTl);
+      timeline = evTl;
+      window.__timeline = evTl; // exposed for site/verify.mjs; people follow this window
+      window.__timelinePeople = peTl;
+      tlRoot.setAttribute('data-ready', String(evItems.length + peItems.length));
+      document.querySelectorAll('[data-tier-toggle]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var pressed = b.getAttribute('aria-pressed') === 'true';
+          b.setAttribute('aria-pressed', pressed ? 'false' : 'true');
+          var next = shownItems();
+          var ev = next.filter(function (it) { return it.group === 'events'; });
+          var pe = next.filter(function (it) { return it.group === 'people'; });
+          evData.clear(); if (ev.length) evData.add(ev);
+          peData.clear(); if (pe.length) peData.add(pe);
+          tlRoot.setAttribute('data-ready', String(next.length));
+        });
+      });
+      mountHomeScrollbars(evTl, peTl, eventsEl, peopleEl, toDate(min - 500), toDate(Math.min(max + 2000, new Date().getUTCFullYear() + 25)));
+    } else {
+      var data = new vis.DataSet(shownItems());
+      var groups = new vis.DataSet([{ id: 'own', content: raw.person + '’s life', order: 1 }, { id: 'context', content: 'Context', order: 2, className: 'grp-ctx' }]);
+      timeline = new vis.Timeline(tlRoot, data, groups, chartOptions({
+        orientation: { axis: 'both', item: 'top' }, minHeight: '200px'
+      }));
+      wireChart(tlRoot, timeline, data);
+      window.__timeline = timeline;
+      tlRoot.setAttribute('data-ready', String(data.get().length));
+    }
     document.querySelectorAll('[data-tl]').forEach(function (b) {
       b.addEventListener('click', function () {
         var a = b.getAttribute('data-tl');
-        if (a === 'in') timeline.zoomIn(0.5); else if (a === 'out') timeline.zoomOut(0.5); else timeline.setWindow(toDate(min - pad), toDate(max + padR));
+        if (a === 'in') timeline.zoomIn(0.5);
+        else if (a === 'out') timeline.zoomOut(0.5);
+        else timeline.setWindow(toDate(min - pad), toDate(max + padR), { animation: false });
       });
     });
-    // Safety net: if a dot was still measured before styles applied, rebuild the items once.
-    requestAnimationFrame(function () {
-      var bad = [].some.call(tlEl.querySelectorAll('.vis-item.vis-point .vis-dot'), function (d) { return d.offsetWidth > 40; });
-      if (bad) { var all = data.get(); data.clear(); data.add(all); }
-      tlEl.setAttribute('data-ready', String(items.length));
-    });
   });
+
+  // Events and People are separate charts that share one time window. Each has its own
+  // vertical bar. One horizontal bar moves both.
+  function mountHomeScrollbars(evTl, peTl, eventsEl, peopleEl, axisMin, axisMax) {
+    var split = eventsEl.closest('.tl-split');
+    var eventsBlock = eventsEl.parentElement;
+    var peopleBlock = peopleEl.parentElement;
+    if (!split || !eventsBlock || !peopleBlock) return;
+    function bar(className, orientation, label, controls, parent) {
+      var el = document.createElement('div');
+      el.className = className;
+      el.setAttribute('role', 'scrollbar');
+      el.setAttribute('aria-orientation', orientation);
+      el.setAttribute('aria-controls', controls);
+      el.setAttribute('aria-label', label);
+      el.tabIndex = 0;
+      var thumb = document.createElement('div');
+      thumb.className = 'tl-scroll-thumb';
+      el.appendChild(thumb);
+      parent.appendChild(el);
+      return { el: el, thumb: thumb };
+    }
+    var h = bar('tl-hscroll', 'horizontal', 'Timeline position', 'timeline', split);
+    var ve = bar('tl-vscroll tl-vscroll-events', 'vertical', 'Events rows', 'timeline-events', eventsBlock);
+    var vp = bar('tl-vscroll tl-vscroll-people', 'vertical', 'People rows', 'timeline-people', peopleBlock);
+    function panel(root) { return root.querySelector('.vis-panel.vis-left'); }
+    function syncH() {
+      var win = evTl.getWindow();
+      var a0 = axisMin.getTime(), a1 = axisMax.getTime();
+      var span = Math.max(1, a1 - a0);
+      var start = win.start.getTime(), end = win.end.getTime();
+      var width = Math.min(1, Math.max(0.04, (end - start) / span));
+      var left = (start - a0) / span;
+      if (left < 0) left = 0;
+      if (left > 1 - width) left = 1 - width;
+      h.thumb.style.left = (left * 100) + '%';
+      h.thumb.style.width = (width * 100) + '%';
+      h.el.setAttribute('aria-valuemin', '0');
+      h.el.setAttribute('aria-valuemax', '100');
+      h.el.setAttribute('aria-valuenow', String(Math.round(left * 100)));
+    }
+    function syncV(root, barObj) {
+      var p = panel(root);
+      if (!p) return;
+      var maxScroll = Math.max(0, p.scrollHeight - p.clientHeight);
+      var frac = maxScroll <= 0 ? 1 : Math.min(1, Math.max(0.08, p.clientHeight / p.scrollHeight));
+      var top = maxScroll <= 0 ? 0 : (p.scrollTop / maxScroll) * (1 - frac);
+      barObj.thumb.style.top = (top * 100) + '%';
+      barObj.thumb.style.height = (frac * 100) + '%';
+      barObj.el.setAttribute('aria-valuemin', '0');
+      barObj.el.setAttribute('aria-valuemax', String(Math.round(maxScroll)));
+      barObj.el.setAttribute('aria-valuenow', String(Math.round(p.scrollTop)));
+    }
+    function moveWindow(frac) {
+      var win = evTl.getWindow();
+      var span = win.end.getTime() - win.start.getTime();
+      var travel = Math.max(0, axisMax.getTime() - axisMin.getTime() - span);
+      var start = axisMin.getTime() + Math.max(0, Math.min(1, frac)) * travel;
+      evTl.setWindow(new Date(start), new Date(start + span), { animation: false });
+    }
+    function moveRows(root, frac) {
+      var p = panel(root);
+      if (!p) return;
+      var maxScroll = Math.max(0, p.scrollHeight - p.clientHeight);
+      p.scrollTop = Math.max(0, Math.min(1, frac)) * maxScroll;
+    }
+    function drag(el, vertical, onMove) {
+      el.addEventListener('pointerdown', function (e) {
+        if (e.button != null && e.button !== 0) return;
+        el.setPointerCapture(e.pointerId);
+        var rect = el.getBoundingClientRect();
+        var thumb = el.querySelector('.tl-scroll-thumb').getBoundingClientRect();
+        var along = vertical ? (e.clientY - rect.top - thumb.height / 2) : (e.clientX - rect.left - thumb.width / 2);
+        var track = Math.max(1, (vertical ? rect.height - thumb.height : rect.width - thumb.width));
+        onMove(along / track);
+        function move(ev) {
+          var r = el.getBoundingClientRect();
+          var th = el.querySelector('.tl-scroll-thumb').getBoundingClientRect();
+          var pos = vertical ? (ev.clientY - r.top - th.height / 2) : (ev.clientX - r.left - th.width / 2);
+          var len = Math.max(1, (vertical ? r.height - th.height : r.width - th.width));
+          onMove(pos / len);
+        }
+        function up() {
+          el.removeEventListener('pointermove', move);
+          el.removeEventListener('pointerup', up);
+          el.removeEventListener('pointercancel', up);
+        }
+        el.addEventListener('pointermove', move);
+        el.addEventListener('pointerup', up);
+        el.addEventListener('pointercancel', up);
+        e.preventDefault();
+      });
+    }
+    drag(h.el, false, moveWindow);
+    drag(ve.el, true, function (frac) { moveRows(eventsEl, frac); });
+    drag(vp.el, true, function (frac) { moveRows(peopleEl, frac); });
+    h.el.addEventListener('keydown', function (e) {
+      var win = evTl.getWindow();
+      var step = (win.end.getTime() - win.start.getTime()) * (e.key === 'PageDown' || e.key === 'PageUp' ? 0.8 : 0.1);
+      var dir = (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown') ? 1 : (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') ? -1 : 0;
+      if (!dir) return;
+      evTl.setWindow(new Date(win.start.getTime() + dir * step), new Date(win.end.getTime() + dir * step), { animation: false });
+      e.preventDefault();
+    });
+    function vKey(root) {
+      return function (e) {
+        var p = panel(root);
+        if (!p) return;
+        var page = Math.max(24, p.clientHeight * 0.8);
+        var step = (e.key === 'PageDown' || e.key === 'PageUp') ? page : 40;
+        var dir = (e.key === 'ArrowDown' || e.key === 'PageDown') ? 1 : (e.key === 'ArrowUp' || e.key === 'PageUp') ? -1 : 0;
+        if (!dir) return;
+        p.scrollTop += dir * step;
+        e.preventDefault();
+      };
+    }
+    ve.el.addEventListener('keydown', vKey(eventsEl));
+    vp.el.addEventListener('keydown', vKey(peopleEl));
+    function hookScroll(root, barObj) {
+      var p = panel(root);
+      if (!p || p._tlScrollHooked) return;
+      p._tlScrollHooked = true;
+      p.addEventListener('scroll', function () { syncV(root, barObj); });
+    }
+    function syncAll() {
+      syncH();
+      syncV(eventsEl, ve);
+      syncV(peopleEl, vp);
+      hookScroll(eventsEl, ve);
+      hookScroll(peopleEl, vp);
+    }
+    evTl.on('rangechanged', syncH);
+    evTl.on('changed', syncAll);
+    peTl.on('rangechanged', syncH);
+    peTl.on('changed', function () { syncV(peopleEl, vp); hookScroll(peopleEl, vp); });
+    syncAll();
+  }
 
   // ---------- Maps ----------
   var mapEl = document.getElementById('map') || document.getElementById('locmap');

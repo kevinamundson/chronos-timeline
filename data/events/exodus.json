@@ -118,17 +118,6 @@
       "source_text_id": "josephus-antiquities-whiston"
     },
     {
-      "source": "raleigh-history-of-the-world",
-      "date": "\"about the beginning of the year of the world 2514\"",
-      "year_am": 2514,
-      "year_bc_ad": null,
-      "precision": "approximate",
-      "citation": "Raleigh, The History of the World (11th ed. 1736, vol. 1), Book II, ch. III (p. 149)",
-      "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1",
-      "note": "Raleigh: AM 2514 vs Ussher/Jones AM 2513.",
-      "source_text_id": "raleigh-history-of-the-world-1736"
-    },
-    {
       "source": "annals-of-clonmacnoise",
       "date": "\"from Abr. untill the Departing out of egypt\" 500 years",
       "year_am": null,
@@ -185,6 +174,17 @@
       "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
       "source_text_id": "morecraft-christian-survey",
       "note": "Section heading."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "The Passeouer.",
+      "year_am": 2514,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 784a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Year cell \"3196 2514 1\". The third printed figure 1 is the column \"Exodus\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. Book II, ch. III, §I, sig. 174a prints \"2514. to Codoman, or after our account, 2513.\" Book II, ch. IIII, §I, sig. 184a prints the Passover \"in the yeere of the World 2514.\" The table row entered is \"The Passeouer.\" at World 2514. 2513 is not given a second year."
     }
   ],
   "people": [
@@ -211,7 +211,6 @@
     "blb-biblehub",
     "ussher-annals-1658",
     "josephus-antiquities-whiston",
-    "raleigh-history-of-the-world-1736",
     "annals-of-clonmacnoise-1896",
     "jordan-bc-5-8",
     "jordan-bc-6-7",
@@ -221,7 +220,8 @@
     "jordan-book-law-of-the-covenant-1984",
     "jordan-compilation-anno-mundi",
     "morecraft-christian-survey",
-    "cfah-19-osf"
+    "cfah-19-osf",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
@@ -248,6 +248,11 @@
       "source_id": "cfah-19-osf",
       "url": "https://osf.io/a5g6x/",
       "locator": "p. 15, AP-109"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 784a"
     }
   ],
   "related": [

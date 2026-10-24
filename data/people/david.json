@@ -191,6 +191,17 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-16-t2-qatna:idaada-dawudum-david:david:reign"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "1. Dauid, 40.",
+        "year_am": 2951,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 786b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"3633 2951 438\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 40 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Israel.."
       }
     ]
   },
@@ -207,7 +218,8 @@
     "jordan-book-judges-1985",
     "jordan-compilation-anno-mundi",
     "cfah-14-osf",
-    "cfah-16-osf"
+    "cfah-16-osf",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
@@ -229,6 +241,11 @@
       "source_id": "cfah-16-osf",
       "url": "https://osf.io/yv29c/",
       "locator": "Table 2, pp. 13–14"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 786b"
     }
   ],
   "related": [
@@ -239,5 +256,8 @@
   ],
   "events": [
     "saul-made-king"
+  ],
+  "alt_names": [
+    "Dauid"
   ]
 }

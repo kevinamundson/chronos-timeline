@@ -87,6 +87,17 @@
       "link": "https://biblehub.com/blb/genesis/5.htm#3",
       "note": null,
       "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "Henoch translated.",
+      "year_am": 987,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 781b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Year cell \"1669 987\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
     }
   ],
   "people": [
@@ -103,7 +114,8 @@
     "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-4",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
@@ -115,6 +127,11 @@
       "source_id": "jordan-bc-6-4",
       "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
       "locator": "§4 year list"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 781b"
     }
   ],
   "related": [

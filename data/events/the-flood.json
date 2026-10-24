@@ -139,17 +139,6 @@
       "source_text_id": "annals-of-clonmacnoise-1896"
     },
     {
-      "source": "raleigh-history-of-the-world",
-      "date": "\"The general flood was in the year of the world 1656\"",
-      "year_am": 1656,
-      "year_bc_ad": null,
-      "precision": "year",
-      "citation": "Raleigh, The History of the World (11th ed. 1736, vol. 1), Book I, ch. VII, sect. III",
-      "link": "https://archive.org/details/bim_eighteenth-century_the-history-of-the-world_raleigh-walter-sir_1736_1",
-      "note": null,
-      "source_text_id": "raleigh-history-of-the-world-1736"
-    },
-    {
       "source": "generations",
       "date": "2348 BC",
       "year_am": null,
@@ -196,6 +185,28 @@
       "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
       "source_text_id": "morecraft-christian-survey",
       "note": "Section heading."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "The Floud.",
+      "year_am": 1656,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Year cell \"2338 1656\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "The generall Floud was in the yeere of the World 1656.",
+      "year_am": 1656,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, ch. VII, §III, sig. 96a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Narrative sentence. The chronological table prints the same yeere of the World. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. No BC conversion."
     },
     {
       "source": "cory",
@@ -268,12 +279,12 @@
     "ussher-annals-1658",
     "josephus-antiquities-whiston",
     "annals-of-clonmacnoise-1896",
-    "raleigh-history-of-the-world-1736",
     "jordan-bc-6-4",
     "jordan-bc-5-8",
     "jordan-bc-4-8",
     "jordan-compilation-anno-mundi",
     "morecraft-christian-survey",
+    "raleigh-history-of-the-world-1617",
     "cory-ancient-fragments-1876"
   ],
   "free_source_links": [
@@ -296,6 +307,16 @@
       "source_id": "jordan-bc-6-4",
       "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
       "locator": "§5 The Chronology of the Flood Year"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782a"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 96a"
     },
     {
       "source_id": "cory-ancient-fragments-1876",

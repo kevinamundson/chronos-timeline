@@ -250,6 +250,20 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
     for (const l of doc.free_source_links || []) { const s = srcDoc.sources.find((x) => x.id === l.source_id); if (s?.access === 'private-copy') err(rel, `private copy ${s.id} may not be listed in free_source_links`); }
   }
 }
+// Raleigh, The History of the World (1617): secondary display. Never sets the sort. AM as printed; no BC conversion.
+{
+  const ral = chronDoc.chronologies.find((c) => c.id === 'raleigh-history-of-the-world');
+  if (ral && (ral.primary || !/SECONDARY DISPLAY/.test(ral.description))) err('data/chronologies.json', 'raleigh-history-of-the-world must be a non-primary SECONDARY DISPLAY chronology');
+  for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'raleigh-history-of-the-world' || doc.sorting_basis?.derived_from === 'raleigh-history-of-the-world') err(rel, 'raleigh-history-of-the-world may never set the sort');
+  for (const { rel, doc } of Object.values(records)) {
+    for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'raleigh-history-of-the-world')) {
+      if (e.year_bc_ad != null || e.year_bc_ad_end != null) err(rel, 'raleigh entries keep year_bc_ad null; AM is not converted to BC');
+      if (e.source_text_id !== 'raleigh-history-of-the-world-1617') err(rel, `raleigh entry needs source_text_id raleigh-history-of-the-world-1617, got "${e.source_text_id}"`);
+      if (!/1617/.test(e.citation || '') || !(/Chronological Table/.test(e.citation || '') || /Book /.test(e.citation || ''))) err(rel, 'raleigh citation must name the 1617 text and a Book or the Chronological Table');
+      if (!e.date) err(rel, 'raleigh entry needs the words as printed');
+    }
+  }
+}
 // Cory, Ancient Fragments (1876 Hodges): secondary display. Durations and sari, never a BC year, never a sort.
 {
   const cory = chronDoc.chronologies.find((c) => c.id === 'cory');

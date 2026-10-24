@@ -3,18 +3,42 @@
   "id": "belus",
   "type": "person",
   "title": "Belus",
-  "summary": "First name in Castor's Assyrian canon, as Cory 1876 prints it. Castor gives him no reign length.",
-  "description": "Added from the Cory import. Display only. Cory gives reign lengths and synchronisms, not a BC year this record can sort on, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "summary": "Belus is dated in Raleigh's chronological table (1617), column Kings of Assyria , by a yeere of the World. No tier 1–4 chronology dates this person.",
+  "description": "Added from the Raleigh import (The History of the World, 1617). Raleigh is display-only. He gives a yeere of the World, not a BC year, and no tier 1–4 chronology dates this person, so there is no sort year.",
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",
     "tier_rank": null,
     "chronology": "cfah",
-    "note": "No tier gives a birth year (Cory is display-only and gives none)."
+    "note": "No tier gives a birth year. Raleigh is display-only and is not converted to BC."
   },
   "father": null,
   "children": [],
   "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ],
     "reign": [
       {
         "source": "cfah",
@@ -24,7 +48,18 @@
         "precision": "unknown",
         "citation": null,
         "link": null,
-        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "2 1. Bel{us} 65",
+        "year_am": 1902,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"2584 1902 245\". The third printed figure 245 is the column \"Floud\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 65 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Kings of Assyria .."
       },
       {
         "source": "cory",
@@ -43,10 +78,16 @@
   "events": [],
   "scripture_refs": [],
   "sources": [
+    "raleigh-history-of-the-world-1617",
     "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 782a"
+    },
     {
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",

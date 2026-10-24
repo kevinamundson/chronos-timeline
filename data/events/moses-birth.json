@@ -68,17 +68,6 @@
       "source_text_id": "jordan-compilation-anno-mundi"
     },
     {
-      "source": "raleigh-history-of-the-world",
-      "date": "\"Moses was borne in the yeere of the World 2434\"",
-      "year_am": 2434,
-      "year_bc_ad": null,
-      "precision": "year",
-      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, ch. IIII, §I",
-      "link": "https://texts.earlyprint.org/works/A10357.xml",
-      "note": null,
-      "source_text_id": "raleigh-history-of-the-world-1617"
-    },
-    {
       "source": "generations",
       "date": "1520 BC",
       "year_am": null,
@@ -88,6 +77,28 @@
       "link": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/History+Summit/Bonuses/Taking+Africa+for+Jesus+Textbook.pdf#page=33",
       "source_text_id": "generations-africa",
       "note": "Heading \"The Birth of Moses — 1520 BC\". Differs from the sort year (1571 BC, ussher-jones) by 51 years."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "1. Moses. 120",
+      "year_am": 2434,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Year cell \"3116 2434 351\". The third printed figure 351 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 120 at the end of the name is the lifespan he prints. His table also prints the death at World 2553. 2434 + 120 is not 2553. Both figures are left as printed."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "Moses was borne in the yeere of the World 2434.",
+      "year_am": 2434,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, ch. IIII, §I, sig. 184a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Narrative sentence. The chronological table prints the same yeere of the World. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. No BC conversion."
     }
   ],
   "people": [
@@ -119,6 +130,16 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/exodus/2.htm",
       "locator": "Exod.2.1-Exod.2.10 ; Exod.7.7 ; Acts.7.20-Acts.7.22 ; Heb.11.23"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 783b"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 184a"
     }
   ],
   "related": [

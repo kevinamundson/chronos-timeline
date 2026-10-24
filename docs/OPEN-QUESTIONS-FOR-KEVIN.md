@@ -249,6 +249,7 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   1. Re-extract all Raleigh rows from the 1617 text later.
   2. Keep the 1736 figures and note the 1617 reading.
 - **Recommendation:** option 1 when you are ready. Until then the rows stay as cited, with notes.
+- **Now recorded (2026-10-23).** The re-extract is done. The 1617 narrative and the chronological table both print 2009. Book II, ch. I, §VIII, sig. 164a: "which happened in the yeere of the World, 2009." Table sig. 782b: "1. Abram. 175", year cell "2691 2009 352". The same section also prints "An. mundi 2008 dil. 352. natus Abraham, Eus. Aug. de Ciuit. Dei", introduced with "I conclude" and naming Eusebius and Augustine. That 2008 is quoted in the note on Abraham's birth and is not a second year. Isaac's table birth is World 2109. The line above that treated 2008 as the 1617 narrative reading was the marginal citation.
 
 ### B4. Josephus's Flood figure: 2656 or 1656? (OQ 8)
 - **Why it matters:** Whiston's *Antiquities* I.3.3 prints 2656, with "[1656]" in brackets, so it is unclear which figure Josephus's own row should carry.
@@ -614,16 +615,16 @@ None of these records has a tier 1–4 date, so the sort stays on Generations an
   - **I22. Ishbosheth's end year, 1049 (CFAH-16 Table 1) vs 1048 BC (Table 2).** Both are kept.
 - **Recommendation:** keep the entries display only, as now. Tell me if any of the CFAH identifications above should not attach CFAH dates to the existing records (especially Alexander and the Herodotus kings of Dynasty 26). If so, I will list those rows without a person instead.
 
-## G. Cory, Ancient Fragments (1876 Hodges), pass 1
+## H. Cory, Ancient Fragments (1876 Hodges), pass 1
 
 Source: Isaac Preston Cory, *Ancient Fragments*, new and enlarged edition, ed. E. Richmond Hodges (London: Reeves & Turner, 1876). Internet Archive `corysancientfrag00coryuoft`, opened 2026-10-23. The table is `data/cory-dates-extract.md`. Cory is display only. No sort year changed. `year_bc_ad` is null on every Cory entry.
 
-### G1. Sammuges, his unnamed brother, and Sardanapallus
+### H1. Sammuges, his unnamed brother, and Sardanapallus
 - Polyhistor (p. 87, the word "years" at the top of p. 88) prints "Then Sammuges (Saulmugina ?) reigned 21 years, and likewise his brother 21 years." The brother is not named. The next sentences give Sardanapallus the Chaldean 21 years "After Samuges".
 - The three figures are stored separately. The brother has no record. Sammuges and Sardanapallus are not merged.
 - **Recommendation:** leave them separate.
 
-### G2. The parenthesis "(b.c. 878)" at the founding of Carthage
+### H2. The parenthesis "(b.c. 878)" at the founding of Carthage
 - Menander (p. 30) prints: "In the seventh year of his reign, his sister (Dido), fled from him, and founded the city of Carthage in Libya (b.c. 878)". The parenthesis sits in the sentence, immediately before the Josephus citation.
 - It is stored only inside the quotation. `year_bc_ad` is null. `founding-of-carthage` stays on its Generations provisional sort ("Sometime between 800 and 900 BC"). 878, if it is a year, falls inside that range. Status in the extract: consistent.
 - **Options:**
@@ -631,44 +632,137 @@ Source: Isaac Preston Cory, *Ancient Fragments*, new and enlarged edition, ed. E
   2. Store 878 as `year_bc_ad` on the Cory row, still without letting Cory set the sort.
 - **Recommendation:** option 1. The parenthesis may be Hodges's gloss, and Cory must not become a sort tier.
 
-### G3. Ninus and Nimrod
-- Castor (p. 91) prints "Ninus reigned over the Assyrians 52 years." The new person `ninus` holds that statement. He is not linked to `nimrod`.
+### H3. Ninus and Nimrod
+- Castor (p. 91) prints "Ninus reigned over the Assyrians 52 years." That statement is a display entry on the existing person `ninus`, which the Raleigh import already created. The Raleigh document was not replaced, and its sort was not changed. He is not linked to `nimrod`.
 - **Recommendation:** leave them unlinked unless you want Ninus identified with Nimrod.
 
-### G4. Which edition: 1826, 1832, 1876, and the roadmap's 1828
+### H4. Which edition: 1826, 1832, 1876, and the roadmap's 1828
 - The title page prints "LONDON: REEVES & TURNER, 196, STRAND" and "1876". The editor signs "LONDON, 1876".
 - The preface prints "The first edition of this work appeared in 1826".
 - An advertisement footnote prints "The 2nd edition was published in 1832".
 - The roadmap names an 1828 edition. That year was not on the pages opened for this pass. This pass uses the 1876 Hodges edition throughout.
 - **Question:** keep 1876 as the Cory source, or do you want the 1828 printing read as well?
 
-### G5. Hodges's introduction (printed pp. 43–50)
+### H5. Hodges's introduction (printed pp. 43–50)
 - Those pages are the editor's own BC dates (a Nabonassar era, dynasty lengths, an eclipse). They were not entered. They are not fragments.
 - **Recommendation:** do not add them in a later pass.
 
-### G6. Manetho as the next Cory pass
+### H6. Manetho as the next Cory pass
 - Manetho, the Old Chronicle and the Laterculus in this volume were not read. A later pass can add them as further display rows on this same `cory` chronology, not as a new source.
 - **Recommendation:** next Cory pass, same source, still display only. Hales stays a separate pull request.
 
-### G7. Xisuthrus and Noah
+### H7. Xisuthrus and Noah
 - Apollodorus, Abydenus and Polyhistor place the flood in the time of Xisuthrus, the tenth antediluvian king. The text does not call him Noah. He was not added to `the-flood`'s people. The Flood's sort stays CFAH AP-29, 2348 BC.
 - The 120 sari and the printed 432,000 years are on `the-flood` as display rows, status framework. They do not move the Flood.
 - **Recommendation:** do not identify Xisuthrus with Noah.
 
-### G8. Salmanasar and Shalmaneser I
+### H8. Salmanasar and Shalmaneser I
 - The Tyrian heading on p. 30 is "Of the Invasion of Salmanasar (or Shalmaneser)." Elulæus's 36 years were not attached to `shalmaneser-i`.
 - **Recommendation:** leave them unlinked.
 
-### G9. Eleven kings with no number
+### H9. Eleven kings with no number
 - Polyhistor (p. 85) prints "eleven kings during . . . . years". The footnote says "No number is given in the original text." CFAH's 33 years for Babylon dynasty 3 were not written into the blank.
 - **Recommendation:** leave the blank.
 
-### G10. Two kings named Hiromus, and two named Ithobalus
+### H10. Two kings named Hiromus, and two named Ithobalus
 - Hiromus son of Abibalus (p. 28: thirty-four years, lived fifty-three; Solomon's contemporary) is `hiram-of-tyre`. Hiromus brother of Merbalus (p. 32: twenty years; "In his time Cyrus was king of Persia") is `hiram-of-tyre-ii`.
 - Ithobalus priest of Astarte (p. 30: thirty-two years, lived sixty-eight) is `ithobalus`. Ithobalus of the siege (p. 32: Nebuchadnezzar "beseiged Tyre for thirteen years"; no reign length) is `ithobalus-ii`.
 - **Recommendation:** keep the pairs separate.
 
-### G11. Semiramis's 42 years
+### H11. Semiramis's 42 years
 - Castor (p. 91) prints that Semiramis "reigned over the Assyrians 42 years." That length is on `semiramis-i` and on `reign-of-semiramis-i`. The person's CFAH note already says "Her 42-year reign". Status: agrees. No BC year was stored.
 - An OSF king-list row elsewhere gives Dumuzi/Semiramis 30 years. This pass does not change that row and does not treat 42 as a correction of 30.
 - **Recommendation:** leave both figures on their own rows.
+
+### H12. Records Raleigh already had
+- `belus` and `ninus` already exist from the Raleigh import. Cory's statements for those names were appended as display entries on those same records. Their descriptions still begin "Added from the Raleigh import". Their Raleigh entries and sorts were kept. The Cory person summaries were not applied.
+- These pairs were not linked and were not merged: `sardanapallus` (Cory) and `sardanapalus` (Raleigh); `esarhaddon` (Cory) and `asarhaddon` (Raleigh); `semiramis-i` and `semiramis`; `ninyas` and `ninias`; `cambyses-ii` and `cambyses`; `evil-merodach` (Cory) and `euilmerodach` (Raleigh).
+- **Recommendation:** leave each pair as two records until you say they are the same person.
+
+## G. Raleigh, *The History of the World* (1617), full table (2026-10-23)
+
+The chronological table (sig. 781b to the FINIS trailer) is entered as display only. Nothing was converted from his yeere of the World to BC. No `sorting_year` on an existing record was changed. New people are tier `none`, with `sorting_year` null. Display titles of people taken from the table are modern English spelling. His printed spelling is an alternate name (G10). The importer is `scripts/raleigh/import.mjs`. Counts and every skipped cell are in `docs/raleigh-pass-log.md` and `data/raleigh-dates-extract.md`.
+
+### G1. No chart for a person who has only his yeere of the World
+
+A new person has a Raleigh year and a null CFAH birth. `site/build.mjs` draws a lifespan only from a tier birth or death, a CFAH reign that already has a BC year, or a linked event with a sort year. These people therefore render as `{none: true}`. His number is on the page. It is not placed on the BC axis. Say if you want a display-only AM axis for them.
+
+### G2. No new events
+
+The table was attached only to events the portal already had: the Flood, Enoch's translation, the Passover (Exodus), and the births of Abraham, Isaac, and Moses, plus Moses' flight to Midian. Other dated sentences stay in the skip log. One to decide:
+
+- World 2994, sig. 786b: "Salomon beganne to build the Temple 480. yeeres compleat after the deliuerance out of Aegypt." Solomon's own reign is entered ("1. Salomon, 40", World 2991, sig. 786b). The temple sentence was not attached to `temple-dedication`.
+
+### G3. Figures he prints twice, entered once
+
+The table year is the one stored. The other figure is quoted in the note and has no second `year_am`.
+
+- Abraham: body and table 2009; the 2008 line names Eusebius and Augustine (B3, now recorded).
+- Passover: table and sig. 184a print 2514. Sig. 174a also prints "2514. to Codoman, or after our account, 2513."
+- Moses' flight: the table row is World 2473. Sig. 184a says "in the yeere of the World 2474."
+- Moses' death: the table row is "The Last yeere of Moses." at World 2553. Sig. 206b prints "yeere of the World 25 54", with a space. That spaced figure was not joined into 2554.
+- Peleg: the table has "1. Peleg." at World 1758, with no length. Sig. 113a says "yeere of the World 1757. or 1758." 1757 was not entered.
+- Nimrod: the table reign is "1. Nim rod. 114" at World 1788 (sig. 782a). Book II, ch. I, §VIII, sig. 164a also prints "which number of 114. necessitie bestoweth on Nimrod", and then "liued in all but one hundred seuenty nine yeeres: whereof hee reigned one hundred and twelue". The 179 and the 112 are in the note, not as years.
+- Birth plus the printed span is not always the death row. Both stay as printed: Adam 1 + 920 and a death at 930; Enoch's birth cell prints 265 and the translation row is World 987; Abraham 2009 + 175 and a death at 2183; Salah 1694 + 433 and a death at 2126; Eber 1724 + 464 and a death at 2187. His own note on the table says the patriarchs' years are reckoned complete.
+
+### G4. Year cells that are not Julian = World + 682
+
+These were not corrected and were not entered. The full list is in the extract. The two that touch people already in the portal:
+
+- "The last yeere of Sem." prints 3840 and 2158 (sig. 783a). 3840 − 2158 is not 682, so the row was not entered and the figures were not corrected.
+- "The last yeere of Isaac." prints 2970 and 2298 (sig. 783b). The difference is 672, not 682.
+
+Shem's birth cell is ". Sem. 600" at World 1559. It has no "1." The birth is entered, and the note says the "1." is not printed. Arphaxad's "1. Arphaxad 438" sits on a heading row with no yeere of the World and was skipped. Jared's birth "1. ●ared. 962" is illegible; "Iared dyed" at 1422 is entered. Serug's "1. Sarug. 2●0" is illegible; "The last of Sarug" at 2049 is entered. "Seth ay ed" at World 1042 is printed that way and was not read as "dyed".
+
+### G5. Two figures after one name
+
+His notation is "1. Name, LENGTH". Some cells then print a second figure, and the following rows of that column carry a rising pair (for example 33, then 50, then 66, then 89). The second figure was not taken as the length, and the first was not taken either, because the cell does not print a single length. They are listed. Among them:
+
+- "1. Sesac 26 167" (World 3010, sig. 786b)
+- "1. Cephrenes 50. 121" (World 3142, sig. 787b)
+- "3 1. Antiochus Theus. 16 50" (World 3771)
+- "4 1. Selencus Callenicus 20 66" (World 3787)
+- "1. Simon the iust 28 219" (World 3792)
+- "5 1. Antiochus the Great . 36. 89" (World 3810)
+- "6 1. Selencus Philopator, 12. 125" (World 3846)
+- "7 1. Antiochus Epiphanes, 12. 137" (World 3858)
+
+Say if the first figure should be entered as the length, with the second quoted and unused. "247 1. Onias high Priest 39." (World 3820, sig. 793b) has one figure after the name, so 39 is the length entered. The 247 stands in the column where neighbouring rows print the rising total. It is in the date string and is not a second year.
+
+### G6. Names that share a cell, and names that are not persons
+
+One length for two names was not split: "Debora & Ba", "Atreus and Thyestes", "Salmanassar or Nabanassar", "Cyaxares or Darius the Mede", "Antipater and Alexander the sonne of Cassander". "1. Dynastie. 178", "1. Interregnum, 2.", and "Iehoram againe" were not made into people. "1. Philip King of Macedon 24. yeeres, and part of the 25." (World 3672) is listed. A later cell, "4 1. Philip. 42." at World 3812, is a separate person, `philip`.
+
+### G7. People kept apart on purpose
+
+- `cyrus-the-great` carries "1 Cyrus 7." at World 3495 (sig. 790a). "Cyras in Persia, 23" is a different new person, `cyras-in-persia`. They were not merged.
+- "1. Darius the Mede 2." is `darius-the-mede`. The combined cell "Cyaxares or Darius the Mede" was not attached to `cyaxares`.
+- Egyptian "1 Cham 161" is `cham`, a reign under the kings of Egypt. It was not attached to Ham son of Noah.
+- `iudas-macchabaeus` is "1. Iudas Macchabaeus, 6." at World 3867 (sig. 794a), column "Iewes and Daniel". He was not attached to Judah. A rowspan on the row above had put that cell under Rome until the column was read with the span.
+- `hosea` is column Israel. The same rowspan had put him under Judah.
+- `demtrius` is the brace expansion of "1. Demtri{us}. 6." at World 3739. A later cell, "2 1 Demetrius 10" at World 3790, is `demetrius`. The spelling was not corrected.
+- The table's "1 1. leroboam, 22." (World 3031, sig. 787a) is on `jeroboam-i`. The printed spelling was kept in the date.
+- Manasseh the king was not attached to `manasseh` (son of Joseph). The high-priest cell "1. Manasses high Priest, 27. 191" is listed with the two-figure cells and was not entered.
+- Death labels with no existing person were not made into people: Codrus, Amasis, Epaminondas, Alexander ("Alexander dyed 17. dayes before the Summer Solstice", World 3708; not attached to `alexander-the-great`), and "Hiero King of Syracuse dyes" (World 3815).
+
+### G8. His own years that have no event to receive them
+
+- Sig. 94b: Bucholzerus has Rome "in the Worlds yeere 3219", and "the account which I follow" has it "built in the Worlds yeere 3280". The table row at 3280 enters Romulus ("1 1. Romulus, 37.", sig. 788b). The 3280 was not made into a founding event. The same row's long note begins "Rome built" and then turns illegible.
+- Sig. 273b: "The persecution of the Ammonites lasted 18. yeeres, and ended in the yeere of the World 2820."
+- Sig. 263a: "which terme expired in the Worlds yeere 2691. In the dayes of Ehud..." Othniel and Ehud have their own reign cells. 2691 was not stored as a death.
+- Sig. 161b: "the yeere of Ismaels birth was the Worlds yeere 2094". The table row is "Ismael borne" at World 2095. No Ishmael person was created.
+
+### G9. What I need from you
+
+1. Whether G5's first figure should be entered as the length.
+2. Whether the temple sentence at World 2994 should be attached to `temple-dedication`.
+3. Whether `cyras-in-persia` is Cyrus the Great, and whether `darius-the-mede` is the portal's Cyaxares.
+4. Whether AM-only people should stay off the chart (G1).
+
+### G10. Modern display names, and no BC parenthetical (2026-10-23)
+
+People taken from the table now have a modern English display title. Raleigh's printed spelling is `alt_names`, so a search for the 1617 form still finds the person. The date string is still his cell, verbatim. Record ids were not renamed. The separations in G7 are unchanged. `demtrius` and `demetrius` are both titled Demetrius. `cham` is titled Ham (Egypt) and is not Ham son of Noah. `cyras-in-persia` is titled Cyrus in Persia. `manasses` is titled Manasseh and is not `manasseh` (son of Joseph). The printed names lephta, Iair, and Thola are alternate names on the existing judges Jephthah, Jair, and Tola. Those three were not given a second person.
+
+No BC year was added. To the Reader, sig. 780b, says: "This IVLIAN Perioà, after the present accompt, alwayes exceedes the yeares of the World by 682." His example is Jehoshaphat beginning in the 3774th year of the Julian Period, the 3092nd of the World, and the 99th of the Temple. 3774 − 3092 is 682. He does not state a year before Christ, and he does not give the epoch that would turn that offset into one. `year_bc_ad` on his entries stays null. "seuen hundred and fourtie yeeres before Christ borne" dates the Erythraean Sibyl. It is not a rule for turning a yeere of the World into a year before Christ.
+
+Decision: Raleigh stays AM only. No BC parenthetical will be added. `year_bc_ad` on his entries stays null.

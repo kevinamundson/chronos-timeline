@@ -164,6 +164,17 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-14-t5-rel:samson:samson:reign"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "13 1. Samson, 20.",
+        "year_am": 2851,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 786a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Year cell \"3533 2851 338\". The third printed figure 338 is the column \"Exodus\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 20 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Israel.."
       }
     ]
   },
@@ -180,7 +191,8 @@
     "ussher-annals-1658",
     "jordan-book-judges-1985",
     "jordan-compilation-anno-mundi",
-    "cfah-14-osf"
+    "cfah-14-osf",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
@@ -192,6 +204,11 @@
       "source_id": "cfah-14-osf",
       "url": "https://osf.io/9fuw2/",
       "locator": "Table 5, pp. 43–73"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Chronological Table, sig. 786a"
     }
   ],
   "related": [
