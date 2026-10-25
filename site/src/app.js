@@ -414,6 +414,8 @@
     function show(wide) {
       var host = wide ? dialog.querySelector('.family-dialog-chart') : slot;
       host.appendChild(el);
+      var legend = details.querySelector('.legend');
+      if (legend) host.insertAdjacentElement('afterend', legend);
       chart.updateData(clone(wide ? payload.wide : payload.near));
       chart.setAncestryDepth(wide ? 3 : 1).setProgenyDepth(wide ? 3 : 1).updateMainId(payload.id);
       chart.updateTree({ tree_position: 'fit', transition_time: 0 });

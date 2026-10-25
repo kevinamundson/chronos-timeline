@@ -375,11 +375,30 @@ for (const [path, shot, sel] of [
   check('abraham family: unrecorded parent is not a link', missingLinks === 0 && missingText.some((t) => /Not recorded/.test(t)), missingText.join(' | '));
   const chartHeight = await o.page.locator('#family-chart').evaluate((el) => el.getBoundingClientRect().height);
   check('abraham family: opened chart has a height', chartHeight > 100, String(chartHeight));
+  const switchLabel = await o.page.locator('label.family-switch').innerText();
+  check('abraham family: switch reads Expand Family Chart', switchLabel.trim() === 'Expand Family Chart', switchLabel);
+  const legendBelow = await o.page.evaluate(() => {
+    const chart = document.getElementById('family-chart').getBoundingClientRect();
+    const legend = document.querySelector('#family-chart-details .legend');
+    const box = legend.getBoundingClientRect();
+    const text = legend.innerText;
+    return box.top >= chart.bottom - 1
+      && /Recorded as a father, solid bar/.test(text)
+      && /Other parent, not recorded, dashed/.test(text)
+      && /Named person, role not recorded/.test(text);
+  });
+  check('abraham family: legend sits below the chart', legendBelow);
   const nearBad = await linksOk(o.page, near);
   check('abraham family: chart links resolve', nearBad.length === 0, nearBad.join(', '));
   await o.page.locator('#family-wide').check();
   await o.page.waitForFunction(() => document.getElementById('family-dialog')?.open === true, null, { timeout: 3000 }).catch(() => {});
   const wide = await familyLinks(o.page, '#family-dialog #family-chart', 3);
+  const wideLegend = await o.page.evaluate(() => {
+    const chart = document.querySelector('#family-dialog #family-chart')?.getBoundingClientRect();
+    const legend = document.querySelector('#family-dialog .legend')?.getBoundingClientRect();
+    return !!chart && !!legend && legend.top >= chart.bottom - 1;
+  });
+  check('abraham family: expanded chart keeps the legend below it', wideLegend);
   check('abraham family: open chart includes great-grandfather Serug and great-grandson Joseph', wide.includes('/people/serug/') && wide.includes('/people/joseph/'), wide.join(' '));
   const wideBad = await linksOk(o.page, wide);
   check('abraham family: wider chart links resolve', wideBad.length === 0, wideBad.join(', '));
@@ -387,6 +406,12 @@ for (const [path, shot, sel] of [
   await o.page.waitForFunction(() => document.getElementById('family-dialog')?.open !== true && document.getElementById('family-chart-slot')?.querySelector('#family-chart'), null, { timeout: 3000 }).catch(() => {});
   const back = await familyLinks(o.page, '#family-chart-slot #family-chart', 1);
   check('abraham family: closing the chart returns to parents and children', back.includes('/people/terah/') && !back.includes('/people/serug/'), back.join(' '));
+  const legendBack = await o.page.evaluate(() => {
+    const slot = document.getElementById('family-chart-slot');
+    const legend = document.querySelector('#family .legend');
+    return !!legend && slot?.nextElementSibling === legend && !document.getElementById('family-dialog').contains(legend);
+  });
+  check('abraham family: legend returns below the page chart', legendBack);
   const focused = await o.page.locator('#family-chart a.fc-link[href="/people/isaac/"]').focus().then(() => o.page.evaluate(() => document.activeElement?.getAttribute('href')));
   check('abraham family: a chart name can take keyboard focus', focused === '/people/isaac/');
   await o.ctx.close();
