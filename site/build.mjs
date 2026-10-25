@@ -79,7 +79,7 @@ const osis = (ref) => {
 const scriptureList = (refs) => !refs?.length ? '' : `<ul class="chips">${refs.map((r) => { const o = osis(r); return `<li>${ext(o.href, esc(o.text))}</li>`; }).join('')}</ul>`;
 
 // Chronology display order (owner spec): CFAH anchor, CFAH-1 Table 1, Ussher-Jones, Ussher, Jordan (secondary, display only), Bible, (MT arithmetic), Josephus, Raleigh, Clonmacnoise.
-const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:paper_text', 'cfah:', 'ussher-jones', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'morecraft', 'cory', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
+const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:paper_text', 'cfah:', 'ussher-jones', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'morecraft', 'cory', 'shuckford', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
 const rowKey = (e) => (e.source === 'cfah' ? `cfah:${e.cfah_basis || ''}` : e.source);
 const rowRank = (e) => { const i = ROW_ORDER.indexOf(rowKey(e)); return i < 0 ? 99 : i; };
 const chronName = (e) => {
@@ -94,6 +94,7 @@ const chronName = (e) => {
   if (e.source === 'generations') return `Generations <span class="tag tag-sec" title="Generations curriculum (Swanson et al.); secondary display only; supplies a provisional sort only where no tier 1-4 date exists">secondary</span>${e.source_text_id && sourceById[e.source_text_id] ? `<div class="small muted">${esc(sourceById[e.source_text_id].short || sourceById[e.source_text_id].title)}</div>` : ''}`;
   if (e.source === 'morecraft') return `Morecraft <span class="tag tag-sec" title="Joe Morecraft III, A Christian Survey of World History; secondary display only; supplies a provisional sort only to records it alone dates">secondary</span><div class="small muted">A Christian Survey of World History</div>`;
   if (e.source === 'cory') return `Cory <span class="tag tag-sec" title="Cory, Ancient Fragments (1876, ed. Hodges); secondary display only; never sets the sort and gives no BC years">secondary</span><div class="small muted">Ancient Fragments, 1876</div>`;
+  if (e.source === 'shuckford') return `Shuckford <span class="tag tag-sec" title="Shuckford, Sacred and Profane History (1819, ed. Creighton), vol. 1; secondary display only; never sets the sort. Anno Mundi is not converted to BC.">secondary</span><div class="small muted">Sacred and Profane History, 1819</div>`;
   if (e.source === 'jordan-compilation') return 'Jordan (compilation) <span class="tag tag-sec" title="Unnamed compiler\'s charts of Jordan\'s system; secondary display only">secondary</span>';
   const c = chronById[e.source];
   return esc(c ? c.abbreviation || c.name : e.source);

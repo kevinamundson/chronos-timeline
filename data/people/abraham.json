@@ -141,6 +141,32 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Narrative sentence. The chronological table prints the same yeere of the World. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. No BC conversion."
+      },
+      {
+        "source": "shuckford",
+        "date": "by the Hebrew chronology, that Abraham was born A. M. 2008",
+        "year_am": 2008,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 169 (facsimile PDF p. 265)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n262/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "He says this will appear hereafter very clearly. Page 251 prints A. M. 2001 for the same birth. Both are entered. See open question K3."
+      },
+      {
+        "source": "shuckford",
+        "date": "Abram was born in the one hundred and thirtieth year of Terah, three hundred and fifty-two years after the Flood, A. M. 2001",
+        "year_am": 2001,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book V, p. 251 (facsimile PDF p. 347)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n344/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "Page 252 says he has fixed this birth by the Hebrew chronology. The same paragraph also says three hundred and fifty-two years after the Flood. Page 169 prints A. M. 2008. Not reconciled. The Tolle Lege facsimile prints a clear 1 in A. M. 2001. On Internet Archive leaf n344 the same sentence is present, and the last digit is blotted, so that leaf alone does not confirm 1 or 8. The year stored is the clear facsimile digit. See open question K3."
       }
     ],
     "death": [
@@ -234,7 +260,8 @@
     "jordan-bc-5-8",
     "jordan-bc-6-5",
     "jordan-compilation-anno-mundi",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "shuckford-sacred-profane-1819"
   ],
   "free_source_links": [
     {
@@ -256,6 +283,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 164a"
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ],
   "related": [

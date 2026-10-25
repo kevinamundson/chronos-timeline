@@ -56,6 +56,19 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "End of Nimrod's reign (heading of the section)."
+    },
+    {
+      "source": "shuckford",
+      "date": "and so died A. M. 1905",
+      "year_am": 1905,
+      "year_am_end": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 161 (facsimile PDF p. 257)",
+      "link": "https://archive.org/details/sacredprofanehis01shuc/page/n254/mode/1up",
+      "source_text_id": "shuckford-sacred-profane-1819",
+      "note": "Page 169 repeats the end of the reign at A. M. 1905. The “about one hundred and forty-eight years” is on the same page as this death year."
     }
   ],
   "people": [
@@ -68,13 +81,19 @@
   "scripture_refs": [],
   "sources": [
     "blb-biblehub",
-    "cfah-5"
+    "cfah-5",
+    "shuckford-sacred-profane-1819"
   ],
   "free_source_links": [
     {
       "source_id": "cfah-5",
       "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
       "locator": "section \"AP-48: Death of Ninus/Nimrod: 2068 B.C.\""
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ],
   "related": [

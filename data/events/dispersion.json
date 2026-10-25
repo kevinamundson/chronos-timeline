@@ -102,6 +102,19 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Dispersion from Babel; heading of ch. V \"(2254–2191 BC)\"; also pp. 157, 160. Differs from the sort year (2192 BC, cfah-anchor) by 1 years."
+    },
+    {
+      "source": "shuckford",
+      "date": "the division of the earth must be placed A. M. 1757, about one hundred and one years after the Flood, when Peleg the son of Eber was born",
+      "year_am": 1757,
+      "year_am_end": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book II, p. 94 (facsimile PDF p. 188)",
+      "link": "https://archive.org/details/sacredprofanehis01shuc/page/n185/mode/1up",
+      "source_text_id": "shuckford-sacred-profane-1819",
+      "note": "He says “if we suppose them to spend nineteen or twenty years in settling and building” before the confusion. Those nineteen or twenty years are not turned into a second Anno Mundi."
     }
   ],
   "people": [
@@ -127,7 +140,8 @@
     "ussher-annals-1658",
     "jordan-bc-6-4",
     "jordan-bc-5-8",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "shuckford-sacred-profane-1819"
   ],
   "free_source_links": [
     {
@@ -139,6 +153,11 @@
       "source_id": "jordan-bc-6-4",
       "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
       "locator": "§7 The Date of the Tower of Babel"
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ],
   "related": [

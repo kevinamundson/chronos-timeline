@@ -148,6 +148,19 @@
       "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
       "source_text_id": "morecraft-christian-survey",
       "note": "Section heading \"The Call of Abraham: Genesis 12\"."
+    },
+    {
+      "source": "shuckford",
+      "date": "he removed into Canaan five years after, i. e. four hundred and twenty-seven years after the Flood, A. M. 2083",
+      "year_am": 2083,
+      "year_am_end": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book V, p. 252 (facsimile PDF p. 348)",
+      "link": "https://archive.org/details/sacredprofanehis01shuc/page/n345/mode/1up",
+      "source_text_id": "shuckford-sacred-profane-1819",
+      "note": "Page 251 says he went into Canaan when he was seventy-five, five years after he came to Haran."
     }
   ],
   "people": [
@@ -176,7 +189,8 @@
     "jordan-bc-2-7",
     "jordan-book-law-of-the-covenant-1984",
     "jordan-compilation-anno-mundi",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "shuckford-sacred-profane-1819"
   ],
   "free_source_links": [
     {
@@ -193,6 +207,11 @@
       "source_id": "jordan-bc-5-8",
       "url": "https://biblicalhorizons.com/1993/12/01/5_08/",
       "locator": "Egypt and the Patriarchs"
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ],
   "related": [

@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "danaus",
+  "type": "person",
+  "title": "Danaus",
+  "summary": "Shuckford places his coming into Greece a little before Moses visited the children of Israel, and about twenty years before the Exodus.",
+  "description": "Added from the Shuckford import. Display only. Shuckford’s years are Anno Mundi, or a “years before Christ” figure he is reporting. This chronology never sets a sort, and no tier 1–4 chronology dates this person’s birth, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Shuckford is display-only)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "shuckford",
+        "date": "it was A. M. 2494, as I have placed it, which is about twenty years before the Israelites went out of Egypt",
+        "year_am": 2494,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "approximate",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book V, p. 306 (facsimile PDF p. 402)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n399/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "The footnote says Archbishop Usher supposes that the Parian Chronicon was composed A. M. 3741, and that the Marble puts Danaus 1,247 years earlier. The 1,247 is the Marble’s interval as he reports it. A. M. 3741 is entered separately and is not Danaus’s year."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "shuckford-sacred-profane-1819"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
+    }
+  ]
+}

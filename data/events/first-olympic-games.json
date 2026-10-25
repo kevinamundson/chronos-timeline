@@ -50,6 +50,19 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": null
+    },
+    {
+      "source": "shuckford",
+      "date": "according to archbishop Usher, the first Olympiad began A. M. 3228",
+      "year_am": 3228,
+      "year_am_end": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 186 (facsimile PDF p. 282)",
+      "link": "https://archive.org/details/sacredprofanehis01shuc/page/n279/mode/1up",
+      "source_text_id": "shuckford-sacred-profane-1819",
+      "note": "Ussher’s figure, as Shuckford prints it, used to place Nilus."
     }
   ],
   "people": [],
@@ -59,7 +72,8 @@
   "sources": [
     "generations-preparing",
     "generations-preparing-2e",
-    "cfah-3"
+    "cfah-3",
+    "shuckford-sacred-profane-1819"
   ],
   "related": [],
   "free_source_links": [
@@ -72,6 +86,11 @@
       "source_id": "cfah-3",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "locator": "AP-10: Era of the Olympiad: 776/775 B.C."
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ]
 }

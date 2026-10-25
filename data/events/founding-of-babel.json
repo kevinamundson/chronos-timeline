@@ -104,6 +104,19 @@
       "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
       "source_text_id": "morecraft-christian-survey",
       "note": "Section heading \"The Tower of Babel\"."
+    },
+    {
+      "source": "shuckford",
+      "date": "about eighty years after the Flood, according to the Hebrew computation, A. M. 1736",
+      "year_am": 1736,
+      "year_am_end": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book II, p. 93 (facsimile PDF p. 187)",
+      "link": "https://archive.org/details/sacredprofanehis01shuc/page/n184/mode/1up",
+      "source_text_id": "shuckford-sacred-profane-1819",
+      "note": "This is their coming to Shinar. A footnote says a fragment in Eusebius also has A. M. 1736 for the start of the tower, and that a Greek letter in that fragment is an evident mistake. The division of the earth is placed later, at A. M. 1757."
     }
   ],
   "people": [
@@ -127,7 +140,8 @@
     "ussher-annals-1658",
     "josephus-antiquities-whiston",
     "jordan-bc-6-4",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "shuckford-sacred-profane-1819"
   ],
   "free_source_links": [
     {
@@ -139,6 +153,11 @@
       "source_id": "josephus-antiquities-whiston",
       "url": "https://www.gutenberg.org/ebooks/2848",
       "locator": "Book I, ch. 4 (Nimrod and the tower; no date)"
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ],
   "related": [

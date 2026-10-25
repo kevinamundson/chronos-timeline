@@ -37,6 +37,19 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "shuckford",
+        "date": "He reigned sixty years, and died A. M. 1965",
+        "year_am": 1965,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 162 (facsimile PDF p. 258)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n255/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "The sixty years are printed. A start year is not printed in this sentence. Page 172 places the beginning at A. M. 1905."
       }
     ],
     "reign": [
@@ -72,6 +85,19 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n135/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "Castor commences the Assyrian canon with Belus and sets down the name only."
+      },
+      {
+        "source": "shuckford",
+        "date": "he must begin his reign A. M. 1905",
+        "year_am": 1905,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 172 (facsimile PDF p. 268)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n265/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "Shuckford’s conclusion against identifying Belus with Nimrod. The same page repeats the dispersion at A. M. 1757."
       }
     ]
   },
@@ -79,7 +105,8 @@
   "scripture_refs": [],
   "sources": [
     "raleigh-history-of-the-world-1617",
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "shuckford-sacred-profane-1819"
   ],
   "related": [],
   "free_source_links": [
@@ -92,6 +119,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ]
 }

@@ -1287,6 +1287,26 @@
       "license_note": "Published 1876 (London: Reeves & Turner; editor E. Richmond Hodges). In the public domain in the United States because it was published in 1930 or earlier. Read on the University of Toronto (Robarts) scan, Internet Archive item corysancientfrag00coryuoft, on 2026-10-23. The title page prints 1876. The editor's preface prints that the first edition appeared in 1826. An advertisement footnote prints that the second edition was published in 1832.",
       "verified_on": "2026-10-23",
       "note": "Pass 1, partial. Image-read: Tyrian Annals, printed pp. 28–32; Berossus via Apollodorus, pp. 51–52; Berossus via Abydenus, pp. 53–54; Polyhistor, 120 sari or 432,000 years, p. 60; Polyhistor and Castor, Chaldean and Assyrian lists, pp. 85–92. Printed page P is scan leaf P + 44. Not entered: Hodges's introduction (pp. 43–50), Sanchoniathon (pp. 1–22; OCR only, no year-lines, pages not image-read), Manetho, the Old Chronicle, the Laterculus, Josephus's Berossus (pp. 64–67), and the Periplus of Hanno."
+    },
+    {
+      "id": "shuckford-sacred-profane-1819",
+      "title": "The Sacred and Profane History of the World Connected",
+      "authors": [
+        "Samuel Shuckford",
+        "James Creighton"
+      ],
+      "translator_or_editor": "James Creighton",
+      "year": "1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "alt_urls": [
+        "https://archive.org/details/sacredprofanehis01shuc/page/n8/mode/1up",
+        "https://archive.org/details/sacredprofanehis01shuc/page/n100/mode/1up",
+        "https://archive.org/details/sacredprofanehis01shuc/page/n131/mode/1up"
+      ],
+      "access": "public-domain",
+      "license_note": "Fifth edition, revised by James Creighton, London: William Baynes, 1819. In the public domain in the United States because it was published in 1930 or earlier. The title page prints THE FIFTH EDITION and MDCCCXIX. Read on 2026-10-24 in a Tolle Lege Press facsimile of that edition (volume 1, ISBN 978-1-60702-153-7) and checked against the Princeton Theological Seminary scan, Internet Archive item sacredprofanehis01shuc. The facsimile is a modern reprint and is not the public copy. Links go to the 1819 scan.",
+      "verified_on": "2026-10-24",
+      "note": "Volume 1 only. Image-read: the Hebrew patriarchal table, printed p. 44, and every Anno Mundi statement the facsimile OCR found in Books I–V. Printed p. 13 (Archive page/n100), p. 44 (page/n131), and p. 246 (page/n339) were opened on the scan and agree with the facsimile. Not entered: volumes 2–4, Bishop Clayton’s strictures in the front matter, and the chronological tables Shuckford says he will add when the whole work is finished. Those tables are not in this volume."
     }
   ]
 }

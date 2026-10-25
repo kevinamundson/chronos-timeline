@@ -128,6 +128,32 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"1739 1057\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 950 at the end of the name is the lifespan he prints. His table also prints the death at World 2006. 1057 + 950 is not 2006. Both figures are left as printed."
+      },
+      {
+        "source": "shuckford",
+        "date": "Hebrew table, “Noah”: began his life in the year of the world 1056",
+        "year_am": 1056,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book I, p. 44 (facsimile PDF p. 134)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n131/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "Hebrew table on p. 44, the row headed “Noah”. The same row prints: had his son in year 500 of his life. Shuckford introduces the table as the computations of Moses according to our Hebrew Bibles."
+      },
+      {
+        "source": "shuckford",
+        "date": "Noah was born, according to Archbishop Usher, 2948 years, and died 2016 years before Christ",
+        "year_am": null,
+        "year_am_end": null,
+        "year_bc_ad": -2948,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book I, p. 26 (facsimile PDF p. 116)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n113/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "One sentence. This entry stores the birth figure, 2948 years before Christ. Shuckford is reporting Ussher. The spelling on the page is Usher."
       }
     ],
     "death": [
@@ -231,6 +257,19 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"2688 2006 349\". The third printed figure 349 is the column \"Floud\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
+      },
+      {
+        "source": "shuckford",
+        "date": "Noah was born, according to Archbishop Usher, 2948 years, and died 2016 years before Christ",
+        "year_am": null,
+        "year_am_end": null,
+        "year_bc_ad": -2016,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book I, p. 26 (facsimile PDF p. 116)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n113/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "The same sentence. This entry stores the death figure, 2016 years before Christ. The Hebrew table on p. 44 leaves Noah’s death cell blank, and that blank is not filled from this quotation."
       }
     ]
   },
@@ -245,7 +284,8 @@
     "cfah-1",
     "jordan-bc-6-4",
     "jordan-compilation-anno-mundi",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "shuckford-sacred-profane-1819"
   ],
   "free_source_links": [
     {
@@ -262,6 +302,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 782b"
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ],
   "related": [

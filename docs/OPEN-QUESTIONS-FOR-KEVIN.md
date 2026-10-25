@@ -800,3 +800,88 @@ Decision: Raleigh stays AM only. No BC parenthetical will be added. `year_bc_ad`
 - **Answer:** the files are at `https://aivbible.kevinamundson.me/usx/`, with each book in a subfolder.
 - **What the popover does now:** the Berean Standard Bible still comes from `https://bible.helloao.org/api/BSB/{book}/{chapter}.simple.json`. The Amundson Interpretive Version is read as USX. For 1 Samuel it tries, in order, `/usx/1SA/08-1SA.usx`, `/usx/08-1SA/08-1SA.usx`, `/usx/08-1SA.usx`, and `/usx/1SA/1SA.usx`. The other books use the same pattern. The names `08-1SA.usx` and the rest are the file names in the local AIV USX set. Footnotes are left out. If every request fails, the Berean Standard Bible still shows and the AIV block says it could not be loaded.
 - **Still open:** on 2026-10-25 the host returned HTTP 520 for `/usx/` and for those files, with no `Access-Control-Allow-Origin` header, so the filename inside the folder could not be confirmed from the live site. When the host is up it still has to send that header, or the browser cannot read the USX.
+
+## K. Shuckford, *The Sacred and Profane History of the World Connected* (1819, ed. Creighton), volume 1
+
+Source: Samuel Shuckford, fifth edition, revised by James Creighton (London: William Baynes, 1819), volume 1. Read 2026-10-24 in a Tolle Lege Press facsimile of that edition (ISBN 978-1-60702-153-7). Links point at the Princeton Theological Seminary scan, Internet Archive `sacredprofanehis01shuc`, full view, published 1819. The table is `data/shuckford-dates-extract.md`. Shuckford is display only. No sort year changed. Anno Mundi is not converted to BC. A BC year is stored only where the page prints “before Christ” or “before our Saviour”.
+
+These items were first written as section J. The Bible reference popover already uses J, so this section is K.
+
+### K1. Only volume 1 was in the file
+- The supplied PDF is volume 1. It ends with “END OF VOL. I”. Volumes 2–4 were not imported.
+- The preface says tables that adjust his years of the world to the Julian period and the Christian era will come when the whole work is done. Those tables are not in this volume.
+- **Recommendation:** ship this volume as display only. Read volumes 2–4 in a later pass on the same chronology, still without converting Anno Mundi to BC.
+
+### K2. Adam’s birth is year of the world 1
+- The Hebrew table on printed p. 44 counts Adam’s birth as year of the world 1, and his death as 930. The same row prints a life of 930 years.
+- The repo’s Masoretic check uses AM 0 for Adam’s birth. His death at AM 930 agrees with `masoretic-genealogy`.
+- The display row records 1. The sort is unchanged.
+- **Recommendation:** leave both figures. Do not move the Masoretic birth to year 1, and do not rewrite Shuckford’s 1 as 0.
+
+### K3. Abraham born A. M. 2008 and A. M. 2001
+- Printed p. 169: “by the Hebrew chronology, that Abraham was born A. M. 2008”.
+- Printed p. 251: “Abram was born in the one hundred and thirtieth year of Terah, three hundred and fifty-two years after the Flood, A. M. 2001”. Page 252 says this birth was fixed by the Hebrew chronology.
+- Page 44 places the Flood at anno mundi 1656. He does not reconcile 2008 with 2001, or 1656 plus 352 with 2001.
+- Both years are on `abraham` birth and on `abraham-birth`. Neither changes the sort.
+- The Tolle Lege facsimile prints a clear 1 in A. M. 2001. Internet Archive leaf `page/n344` is printed p. 251 and has the same sentence. The last digit on that leaf is blotted, so the scan alone does not confirm 1 or 8. The stored year is the clear facsimile digit.
+- **Recommendation:** leave both of his printed years, with 2001 taken from the facsimile. Do not change 2001 to 2008 because of the blot. Scripture governs.
+
+### K4. Ninus at A. M. 2017 and at A. M. 1957
+- Printed p. 164: “after a reign of two and fifty years, died A. M. 2017”.
+- Printed p. 171: “A. M. 1957, the year in which I have placed the beginning of Ninus’s reign”, counted 1,300 years back from Sardanapalus at A. M. 3257.
+- A start of 1965 is not printed in the death sentence and is not stored. 1957 plus 52 is not 2017. Both statements are entered.
+- **Recommendation:** leave both. Do not store a computed start.
+
+### K5. Mizraim, or Menes, at A. M. 1772 and at A. M. 1805
+- Printed p. 183 and p. 186: Menes began A. M. 1772, called the Hebrew chronology.
+- Printed p. 187: another computation “consequently began A. M. 1805”. He writes that he cannot say which of them, or whether either, is the exact truth.
+- A rejected count that would place Mizraim A. M. 1633, twenty-three years before the Flood, is in the extract only. It is not on the person.
+- **Recommendation:** keep 1772 and 1805. Do not adopt 1633.
+
+### K6. Enoch’s table column is headed “Died”
+- The Hebrew table’s last column is “Died in the year of the world”. Enoch’s cell is 987.
+- The entry is on `enoch` translated, which is where this repo keeps his end. The note says the heading is “Died”.
+- **Recommendation:** keep it on translated. Do not add a death slot for Enoch.
+
+### K7. Athothes and the existing Athothis
+- Printed p. 246: “A. M. 2034, when Athothes, the second king of Thebes, died”. The spelling is Athothes.
+- The year is on the existing person `athothis`. CFAH equates that person with Narmer. Shuckford does not say Narmer.
+- **Recommendation:** leave the attachment, with the doubt in the note. Do not rename the person, and do not add Narmer as his name.
+
+### K8. Fohi and Noah
+- Printed p. 26 reports Fohi about 2952 years before Christ, and a second figure of 2847 years before our Saviour. Shuckford says the age of Fohi coincides with that of Moses’ Noah, and he treats them as the same person.
+- `fohi` is a separate unsorted person. He is not an alternate name on `noah`.
+- **Recommendation:** keep the records apart. Scripture’s Noah is not renamed from a Chinese king-list.
+
+### K9. Sardanapalus, and Ananim
+- Printed p. 171: “The death of Sardanapalus happened A. M. 3257”. That year is on Raleigh’s `sardanapalus`, not on Cory’s `sardanapallus`.
+- Printed p. 191: Ananim, also called Curudes, “reigned sixty-three years, and so died A. M. 2006”, from Syncellus. The year is on the Genesis 10 person `anamim`. No second person was created.
+- **Recommendation:** leave both attachments. Do not merge the two Sardanapalus records.
+
+### K10. Dated statements with no record to receive them
+- No new events were created. A new event would need a sorting year, and this chronology must not supply one. These stay in the extract only:
+  - Abraham’s move from Ur to Haran, A. M. 2078 (the year is the first line of p. 252).
+  - Jacob’s pillar, “even as ancient as A. M. 2246” (p. 314).
+  - The start of Chaldean astronomy, A. M. 1771 (p. 170).
+  - A later Scythian settlement, “about A. M. 3400” (p. 89).
+  - The rejected Mizraim year A. M. 1633 (p. 185).
+  - The Parian Chronicon composed A. M. 3741, a footnote reporting Ussher (p. 306).
+- **Recommendation:** leave them unmapped until an event already exists, or until you approve a new event that can sort from a tier 1–4 year.
+
+### K11. The facsimile and the 1819 scan
+- The file that was read is a modern Tolle Lege facsimile. The dates were read in that facsimile. Printed pages 13, 44, and 246 were also opened on the 1819 scan (`page/n100`, `page/n131`, `page/n339`) and agree. Links use the scan.
+- The Septuagint table on p. 50 was seen. Only the prose result, “so fix it A. M. 2263, instead of 1657”, is entered, and it is marked framework. He does not adopt it. Individual Septuagint cells are not entered: Seth’s death-year in that table does not agree with that row’s own addition.
+- **Recommendation:** keep the links on the 1819 scan. Do not enter the Septuagint cells in this pass.
+
+### K12. Six new people stay unsorted
+- `fohi`, `nilus`, `egialeus`, `diabies`, `syphis`, and `danaus` have no tier 1–4 birth year. Each is tier `none`, with `sorting_year` null.
+- **Recommendation:** do not make Shuckford a provisional sort tier.
+
+### K13. Branch name
+- You asked for the branch `Samuel-Shuckford`. The standing rule is `gb/<task-slug>`. The branch was cut from `origin/main` at `999da18` and was not pushed to `main`.
+- **Recommendation:** keep the name you asked for on this pull request.
+
+### K14. The letters on p. 26 are Sevedo
+- The page prints “Alvarez Sevedo places his reign not so early, imagining it to be but 2060 years”.
+- The clause does not repeat “before Christ”, so no BC year is stored. The name is entered as Sevedo. It was not corrected to another spelling.
+- **Recommendation:** keep Sevedo, as printed. A later pass can cite another edition if that edition prints a different name.
