@@ -264,3 +264,44 @@ table.raleigh thead th { position: sticky; top: 0; background: var(--bg-elev); }
 .person-list li.own a { font-weight: 600; }
 .person-timeline { margin-top: 8px; }
 h2.h3 { font-size: 17px; margin: 16px 0 8px; font-weight: 600; }
+
+/* Family chart on person pages. The names are always shown. The chart is inside a closed disclosure. */
+.family-twirl { margin-top: 12px; border-top: 1px solid var(--sep); }
+.family-twirl > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 10px 0; font-weight: 600; }
+.family-twirl > summary::-webkit-details-marker { display: none; }
+.family-twirl > summary::before { content: ""; flex: 0 0 auto; width: 8px; height: 8px; border-right: 2px solid var(--label-2); border-bottom: 2px solid var(--label-2); transform: rotate(-45deg); }
+.family-twirl[open] > summary::before { transform: rotate(45deg) translate(-2px, -2px); }
+.family-twirl > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.family-twirl[open] .toolbar { margin-bottom: 8px; }
+.family-switch { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; max-width: 100%; font-size: 15px; cursor: pointer; text-align: left; }
+.family-switch input { appearance: none; -webkit-appearance: none; width: 44px; height: 26px; margin: 0; border-radius: 13px; background: var(--bg-fill); border: 1px solid var(--sep); position: relative; flex: 0 0 auto; cursor: pointer; }
+.family-switch input::after { content: ""; position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%; background: var(--label-2); }
+.family-switch input:checked { background: var(--accent-fill); border-color: var(--accent); }
+.family-switch input:checked::after { transform: translateX(18px); background: var(--accent); }
+.family-switch input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.family-chart.f3 { --background-color: var(--bg-fill); --text-color: var(--label); --male-color: var(--t2); --female-color: var(--label-2); --genderless-color: var(--label-2); height: 440px; max-height: 70vh; background: var(--bg-fill); color: var(--label); border-radius: 12px; overflow: hidden; font-family: var(--font); }
+.family-chart .link { stroke: var(--label-2) !important; }
+.family-chart.f3 div.card .card-inner { background: var(--bg-elev); color: var(--label); border: 1px solid var(--sep); border-left: 4px solid var(--label-2); border-radius: 10px; box-shadow: none; }
+.family-chart.f3 div.card-male .card-inner { border-left-color: var(--t2); }
+.family-chart.f3 div.card-to-add .card-inner { background: transparent; border: 1px dashed var(--label-2); }
+.family-chart.f3 div.card-main .card-inner, .family-chart.f3 div.card:hover .card-inner { box-shadow: none; }
+.family-chart.f3 div.card-main .card-inner { outline: 2px solid var(--accent); }
+.family-chart .fc-card { width: 188px; min-height: 72px; padding: 6px 8px; display: flex; flex-direction: column; justify-content: center; }
+.family-chart .fc-link { color: inherit; display: flex; flex-direction: column; justify-content: center; gap: 2px; min-height: 64px; text-decoration: none; }
+.family-chart .fc-link:hover .fc-name { text-decoration: underline; }
+.family-chart .fc-name { font-weight: 600; font-size: 14px; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.family-chart .fc-years, .family-chart .fc-kicker { font-size: 12px; color: var(--label-2); }
+.family-chart .card-to-add .fc-name { font-weight: 500; font-style: italic; }
+.family-list { list-style: none; padding: 0; margin: 0; }
+.family-list li { margin: 6px 0; }
+.family-list .rel { display: inline-block; min-width: 7.5em; font-weight: 600; }
+.family-dialog .family-list .rel { min-width: 14em; }
+@media (max-width: 640px) { .family-list .rel, .family-dialog .family-list .rel { display: block; min-width: 0; } }
+.lg-father, .lg-missing, .lg-person { display: inline-block; width: 18px; height: 14px; border-radius: 3px; vertical-align: -2px; background: var(--bg-elev); border: 1px solid var(--sep); }
+.lg-father { border-left: 4px solid var(--t2); }
+.lg-missing { border-style: dashed; background: transparent; }
+.lg-person { border-left: 4px solid var(--label-2); }
+.family-dialog { width: min(1100px, calc(100vw - 24px)); max-height: calc(100vh - 24px); overflow: auto; border: 0; border-radius: 16px; padding: 20px; background: var(--bg-elev); color: var(--label); }
+.family-dialog::backdrop { background: rgba(0, 0, 0, .45); }
+.family-dialog-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.family-dialog .family-chart { height: min(62vh, 640px); max-height: none; }

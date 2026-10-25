@@ -378,6 +378,14 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
 - CFAH (© AiG), Jones and Jordan texts are cited and linked, with short quotes only. Jordan's full texts are in `sources/jordan` with your stated permission.
 - **Recommendation:** no change.
 
+### C9. Mothers, and sons, daughters and adopted children, on the family chart
+- Issue 6 asks each person page to show a father and a mother, and sons, daughters and adopted children.
+- Person records store `father` and `children` only. There is no mother, no sex and no adoption mark. The chart shows the recorded father, a dashed card that says the other parent is not recorded, and the named children. It does not call a child a son or a daughter, and it does not mark adoption.
+- **Options:**
+  1. Leave the schema as it is (as now). Add a mother, a sex or an adoption mark only when a source has been read for that person.
+  2. Add optional `mother`, `sex` and `adopted` fields now, still empty until a source is read.
+- **Recommendation:** option 1. A new field needs your approval, and an empty field would not change the chart.
+
 ## D. Herodotus import (2026-10-18)
 
 ### D1. Events that only Herodotus dates

@@ -282,7 +282,7 @@ ${body}
 </main>
 <footer class="site-footer"><div class="wrap small muted">
 <p>Young-Earth Creation framework; the Bible is the infallible standard. Sorted by <a href="/chronologies/">CFAH</a> (Griffith &amp; White, <i>Answers Research Journal</i>), then CFAH-1 Table 1, Ussher–Jones, Ussher.</p>
-<p>Place data © <a href="https://www.openbible.info/geo/" rel="noopener">OpenBible.info</a>, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>. Map tiles © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors. Historic maps: <a href="https://www.loc.gov/maps/" rel="noopener">Library of Congress</a>. Timeline: <a href="https://visjs.org/" rel="noopener">vis-timeline</a>; map: <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>; search: <a href="https://pagefind.app/" rel="noopener">Pagefind</a>. Reference finding: <a href="https://github.com/bibleup/bibleup" rel="noopener">BibleUp</a>.</p>
+<p>Place data © <a href="https://www.openbible.info/geo/" rel="noopener">OpenBible.info</a>, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>. Map tiles © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors. Historic maps: <a href="https://www.loc.gov/maps/" rel="noopener">Library of Congress</a>. Timeline: <a href="https://visjs.org/" rel="noopener">vis-timeline</a>; family chart: <a href="https://github.com/donatso/family-chart" rel="noopener">family-chart</a>; map: <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>; search: <a href="https://pagefind.app/" rel="noopener">Pagefind</a>. Reference finding: <a href="https://github.com/bibleup/bibleup" rel="noopener">BibleUp</a>.</p>
 <p>A written Bible reference opens the Berean Standard Bible from <a href="https://bible.helloao.org/" rel="noopener">bible.helloao.org</a>, with the Amundson Interpretive Version from <a href="https://aivbible.kevinamundson.me" rel="noopener">aivbible.kevinamundson.me</a>. Scripture links still open the Berean Literal Bible on BibleHub.</p>
 </div></footer>
 ${scripts}
@@ -326,6 +326,13 @@ cpSync(join(NM, '@bibleup/bibleup/LICENSE'), join(DIST, 'assets/vendor/bibleup/L
   const init = readFileSync(join(here, 'src/bibleup.js'), 'utf8');
   writeFileSync(join(DIST, 'assets/bibleup.js'), `${lib}${init}`);
 }
+mkdirSync(join(DIST, 'assets/vendor/d3'), { recursive: true });
+cpSync(join(NM, 'd3/dist/d3.min.js'), join(DIST, 'assets/vendor/d3/d3.min.js'));
+cpSync(join(NM, 'd3/LICENSE'), join(DIST, 'assets/vendor/d3/LICENSE.txt'));
+mkdirSync(join(DIST, 'assets/vendor/family-chart'), { recursive: true });
+cpSync(join(NM, 'family-chart/dist/family-chart.min.js'), join(DIST, 'assets/vendor/family-chart/family-chart.min.js'));
+cpSync(join(NM, 'family-chart/dist/styles/family-chart.css'), join(DIST, 'assets/vendor/family-chart/family-chart.css'));
+cpSync(join(NM, 'family-chart/LICENSE.txt'), join(DIST, 'assets/vendor/family-chart/LICENSE.txt'));
 
 const sortKey = (a, b) => (a.sorting_year ?? Infinity) - (b.sorting_year ?? Infinity) || (a.sort_order_within_year ?? 0) - (b.sort_order_within_year ?? 0) || a.title.localeCompare(b.title);
 const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
@@ -525,6 +532,120 @@ function nameSection(p) {
 </section>`;
 }
 
+// Family chart: recorded fathers and named children only. There is no mother, sex or adoption field.
+// A child's `father` and a parent's `children` array are joined. Where they disagree, the father field wins.
+const fatherOf = {};
+const childSet = Object.fromEntries(people.map((p) => [p.id, new Set()]));
+for (const p of people) {
+  if (p.father && byId[p.father]?.type === 'person') fatherOf[p.id] = p.father;
+  for (const c of p.children || []) if (byId[c]?.type === 'person') childSet[p.id].add(c);
+}
+for (const [child, father] of Object.entries(fatherOf)) childSet[father].add(child);
+for (const p of people) for (const c of childSet[p.id]) if (!fatherOf[c]) fatherOf[c] = p.id;
+for (const p of people) for (const c of [...childSet[p.id]]) if (fatherOf[c] !== p.id) childSet[p.id].delete(c);
+const byBirth = (a, b) => (byId[a].sorting_year ?? Infinity) - (byId[b].sorting_year ?? Infinity) || byId[a].title.localeCompare(byId[b].title);
+const ancestorIds = (id, depth) => {
+  const out = [];
+  let cur = id;
+  for (let gen = 1; gen <= depth; gen++) {
+    const f = fatherOf[cur];
+    if (!f) break;
+    out.push({ gen, id: f });
+    cur = f;
+  }
+  return out;
+};
+const descendantLevels = (id, depth) => {
+  const levels = [];
+  let frontier = [id];
+  const seen = new Set([id]);
+  for (let gen = 1; gen <= depth; gen++) {
+    const next = [];
+    for (const pid of frontier) for (const c of [...childSet[pid]].sort(byBirth)) if (!seen.has(c)) { seen.add(c); next.push(c); }
+    levels.push(next);
+    frontier = next;
+  }
+  return levels;
+};
+const cardYears = (p) => {
+  const birth = tierYear(p.dates?.birth);
+  const end = tierYear(p.dates?.death) || tierYear(p.dates?.translated);
+  if (birth && end) return yearLabel(birth.y, end.y);
+  if (birth) return yearLabel(birth.y);
+  if (end) return yearLabel(end.y);
+  return null;
+};
+function familyData(id, depth) {
+  const ids = new Set([id]);
+  for (const a of ancestorIds(id, depth)) ids.add(a.id);
+  for (const level of descendantLevels(id, depth)) for (const c of level) ids.add(c);
+  const rows = [];
+  for (const pid of ids) {
+    const p = byId[pid];
+    const parents = fatherOf[pid] && ids.has(fatherOf[pid]) ? [fatherOf[pid]] : [];
+    const children = [...childSet[pid]].filter((c) => ids.has(c)).sort(byBirth);
+    const years = cardYears(p);
+    const row = { id: pid, data: { label: p.title, url: urlOf(p), y: p.sorting_year }, rels: { parents, children, spouses: [] } };
+    if (childSet[pid].size) row.data.gender = 'M';
+    if (years) row.data.years = years;
+    rows.push(row);
+  }
+  for (const row of rows) for (const c of row.rels.children) {
+    const child = rows.find((r) => r.id === c);
+    if (!child?.rels.parents.includes(row.id)) throw new Error(`Family chart: ${c} is a child of ${row.id} but does not list that father`);
+  }
+  rows.sort((a, b) => (a.id === id ? -1 : b.id === id ? 1 : a.data.label.localeCompare(b.data.label)));
+  return rows;
+}
+const relNames = (ids) => ids.length ? ids.map(link).join(', ') : '<span class="muted">None recorded</span>';
+const ANC_LABELS = ['Father', "Father's father", "Father's father's father"];
+const DESC_LABELS = ['Children', 'Grandchildren', 'Great-grandchildren'];
+const familyHead = '<link rel="stylesheet" href="/assets/vendor/family-chart/family-chart.css">';
+const familyScripts = '<script src="/assets/vendor/d3/d3.min.js" defer></script><script src="/assets/vendor/family-chart/family-chart.min.js" defer></script>';
+
+function familySection(p) {
+  const anc = ancestorIds(p.id, 3);
+  const desc = descendantLevels(p.id, 3);
+  const ancItems = ANC_LABELS.map((label, i) => `<li><span class="rel">${label}</span> ${anc.find((a) => a.gen === i + 1) ? link(anc.find((a) => a.gen === i + 1).id) : '<span class="muted">Not recorded</span>'}</li>`).join('');
+  const descBlocks = DESC_LABELS.map((label, i) => `<h3>${label}</h3><p>${relNames(desc[i] || [])}</p>`).join('');
+  return `<section class="card" id="family" aria-labelledby="family-h">
+  <h2 id="family-h">Family</h2>
+  <ul class="family-list" id="family-brief">
+    <li><span class="rel">Father</span> ${anc[0] ? link(anc[0].id) : '<span class="muted">Not recorded</span>'}</li>
+    <li><span class="rel">Mother</span> <span class="muted">Not recorded</span></li>
+    <li><span class="rel">Children</span> ${relNames(desc[0] || [])}</li>
+  </ul>
+  <details class="family-twirl" id="family-chart-details">
+    <summary>Family chart</summary>
+    <div class="toolbar" role="group" aria-label="Family chart controls">
+      <button type="button" data-family="in" aria-label="Zoom in">+</button>
+      <button type="button" data-family="out" aria-label="Zoom out">−</button>
+      <button type="button" data-family="fit">Fit</button>
+      <label class="family-switch"><input type="checkbox" role="switch" id="family-wide" aria-controls="family-dialog"><span>Expand Family Chart</span></label>
+    </div>
+  <p id="family-note" class="small muted">The chart shows the parents and children recorded for ${esc(p.title)}. A father is drawn when the data names him. Mothers are not stored, so a dashed card says the other parent is not recorded. Named children are not marked as son, daughter or adopted. A name with a page is a link.</p>
+  <div class="family-chart-slot" id="family-chart-slot"><div id="family-chart" class="f3 family-chart" role="group" aria-label="Family chart of ${esc(p.title)}"></div></div>
+  <ul class="legend small" aria-label="Family chart legend"><li><span class="lg-father" aria-hidden="true"></span>Recorded as a father, solid bar</li><li><span class="lg-missing" aria-hidden="true"></span>Other parent, not recorded, dashed</li><li><span class="lg-person" aria-hidden="true"></span>Named person, role not recorded</li></ul>
+  <noscript><p>The chart needs JavaScript. The names above list the same parents and children.</p></noscript>
+  <dialog id="family-dialog" class="family-dialog" aria-labelledby="family-dialog-h">
+    <div class="family-dialog-bar"><h2 id="family-dialog-h">Family of ${esc(p.title)}</h2>
+      <div class="toolbar" role="group" aria-label="Wider family chart controls">
+        <button type="button" data-family="in" aria-label="Zoom in">+</button>
+        <button type="button" data-family="out" aria-label="Zoom out">−</button>
+        <button type="button" data-family="fit">Fit</button>
+        <button type="button" data-family-close>Close</button>
+      </div></div>
+    <p class="small muted">Three generations of recorded fathers, and three generations of recorded descendants.</p>
+    <div class="family-dialog-chart"></div>
+    <h3>Recorded ancestors</h3>
+    <ul class="family-list">${ancItems}</ul>
+    ${descBlocks}
+  </dialog>
+  </details>
+  ${jsonScript('family-data', { id: p.id, near: familyData(p.id, 1), wide: familyData(p.id, 3) })}
+</section>`;
+}
+
 // People
 for (const p of people) {
   const d = p.dates || {};
@@ -533,7 +654,6 @@ for (const p of people) {
 ${sf.age_at_named_son != null ? `<div><dt>Age at son's birth</dt><dd>${esc(sf.age_at_named_son)}${sf.named_son ? ` (${link(sf.named_son)})` : ''}</dd></div>` : ''}
 ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years)} years</dd></div>` : ''}
 </dl>${scriptureList(sf.refs)}</section>` : '';
-  const fam = `<section class="card"><h2>Family</h2><dl class="facts"><div><dt>Father</dt><dd>${p.father ? link(p.father) : '<span class="muted">Not recorded</span>'}</dd></div>${p.children?.length ? `<div><dt>Children</dt><dd>${p.children.map(link).join(', ')}</dd></div>` : ''}</dl></section>`;
   const tables = ['birth', 'death', 'translated', 'reign'].filter((k) => d[k]?.length).map((k) => `<section class="card" id="${k}"><h2>${k[0].toUpperCase() + k.slice(1)}</h2>${chronTable(d[k], { sortYear: k === 'birth' ? p.sorting_year : null, basis: k === 'birth' ? p.sorting_basis : null, caption: `${k} of ${p.title}, CFAH first` })}${flagsSection({ sorting_year: null }, d[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"')}</section>`).join('\n');
   const evs = [...new Set([...(p.events || []), ...eventsWith(p.id)])];
   const kls = kingListsOf(p.id);
@@ -542,7 +662,8 @@ ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years
 ${nameSection(p)}
 ${p.description ? `<section class="card"><h2>Description</h2><p>${esc(p.description)}</p></section>` : ''}${kingCard}
 ${p.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(p.scripture_refs)}</section>` : ''}
-<div class="grid2">${fam}${facts}</div>
+${familySection(p)}
+${facts}
 ${personTimelineSection(p)}
 ${tables}
 ${(p.open_questions || []).length ? flagsSection({ open_questions: p.open_questions }, null) : ''}
@@ -552,8 +673,8 @@ ${chartSection(p.id)}
 ${sourcesSection(p)}</article>`;
   const hasTl = !personTimelines[p.id].none;
   out(`people/${p.id}/index.html`, page({ title: p.title, desc: p.summary, body, path: urlOf(p), type: 'Person',
-    extraHead: hasTl ? '<link rel="stylesheet" href="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.css">' : '',
-    scripts: hasTl ? '<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script><script src="/assets/app.js" defer></script>' : '' }));
+    extraHead: `${familyHead}${hasTl ? '<link rel="stylesheet" href="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.css">' : ''}`,
+    scripts: `${familyScripts}${hasTl ? '<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>' : ''}<script src="/assets/app.js" defer></script>` }));
 }
 
 // Locations
@@ -765,7 +886,7 @@ out('about/index.html', page({ title: 'About', path: '/about/', pagefind: false,
 <li>Base map tiles: © ${ext('https://www.openstreetmap.org/copyright', 'OpenStreetMap')} contributors (ODbL), served under the OSM tile usage policy.</li>
 <li>Historic maps: ${ext('https://www.loc.gov/maps/', 'Library of Congress Geography and Map Division')}; thumbnails are loaded from tile.loc.gov.</li>
 <li>CFAH papers (© Answers in Genesis) and Floyd Nolen Jones materials are copyrighted: they are cited and linked, never reproduced.</li>
-<li>Software: vis-timeline (Apache-2.0/MIT), Leaflet (BSD-2-Clause), Pagefind (MIT), ${ext('https://github.com/bibleup/bibleup', 'BibleUp')} (MIT).</li>
+<li>Software: vis-timeline (Apache-2.0/MIT), ${ext('https://github.com/donatso/family-chart', 'family-chart')} (MIT) with D3 (ISC), Leaflet (BSD-2-Clause), Pagefind (MIT), ${ext('https://github.com/bibleup/bibleup', 'BibleUp')} (MIT).</li>
 <li>Scripture links open the Berean Literal Bible on BibleHub (chapter page, at the first verse of the reference).</li>
 <li>Reference popovers show the Berean Standard Bible from the ${ext('https://bible.helloao.org/', 'Free Use Bible API')}, under the terms at ${ext('https://berean.bible/', 'berean.bible')}. The Amundson Interpretive Version is requested from ${ext('https://aivbible.kevinamundson.me', 'aivbible.kevinamundson.me')} and is not the standard text.</li>
 <li>Hebrew, Aramaic and Greek spellings of biblical names: ${ext('https://github.com/STEPBible/STEPBible-Data', 'STEPBible TIPNR')}, ${ext('https://creativecommons.org/licenses/by/4.0/', 'CC BY 4.0')}. The name file itself is not copied here.</li></ul></section>` }));
