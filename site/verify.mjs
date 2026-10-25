@@ -494,12 +494,47 @@ for (const [path, shot, sel] of [
     return !!el && /For God so loved the world/.test(el.innerText);
   }, null, { timeout: 8000 }).catch(() => {});
   const text = await pop.innerText();
-  check('about: popover shows the Berean Standard Bible', /For God so loved the world/.test(text) && /\bBSB\b/.test(text), text.slice(0, 220));
+  check('about: popover shows the Berean Standard Bible', /For God so loved the world/.test(text) && /\bBSB\b/.test(text) && !/did not send His Son/.test(text), text.slice(0, 220));
   check('about: popover asks for the Amundson Interpretive Version', text.includes('Amundson Interpretive Version'));
   await o.page.keyboard.press('Escape');
   check('about: Escape closes the popover', await pop.isHidden());
   check('about: no console errors', o.errors.length === 0, o.errors.join(' | '));
   if (o.external.length) results.push(`INFO  about: external resource issues: ${o.external.join(' | ')}`);
+  await o.ctx.close();
+}
+// Chapter spans: "(1 Sam 8–11)" is chapters 8 through 11, not verse 1 of chapter 8.
+{
+  const o = await open('/events/saul-made-king/');
+  const link = o.page.locator('.lede a[bu-data]').filter({ hasText: '1 Sam 8' });
+  const shown = (await link.count()) === 1 ? (await link.innerText()) : '';
+  check('saul: 1 Sam 8–11 is one link', shown.replace(/\s/g, '') === '1Sam8–11', JSON.stringify(shown));
+  const acts = await o.page.locator('.lede a[bu-data]').filter({ hasText: 'Acts 13:21' }).innerText();
+  check('saul: Acts 13:21 stays one verse', acts.trim() === 'Acts 13:21', JSON.stringify(acts));
+  await link.hover();
+  const pop = o.page.locator('.bible-popover');
+  await pop.waitFor({ state: 'visible', timeout: 8000 });
+  const ready = await o.page.waitForFunction(() => {
+    const t = document.querySelector('.bible-popover')?.innerText || '';
+    return /When Samuel grew old/.test(t) && /Nahash the Ammonite/.test(t) && /confirmed Saul as king/.test(t);
+  }, null, { timeout: 15000 }).then(() => true).catch(() => false);
+  const text = await pop.innerText();
+  check('saul: popover shows 1 Samuel 8 through 11', ready && /Chapter 8/.test(text) && /Chapter 11/.test(text), text.slice(0, 180) + ' … ' + text.slice(-120));
+  check('saul: no console errors', o.errors.length === 0, o.errors.join(' | '));
+  await o.ctx.close();
+}
+{
+  const o = await open('/events/arrival-at-sinai/');
+  const link = o.page.locator('.lede a[bu-data]').filter({ hasText: 'Exod 19' });
+  const shown = (await link.count()) === 1 ? (await link.innerText()) : '';
+  check('sinai: Exod 19-20 is one link', shown.replace(/\s/g, '') === 'Exod19-20', JSON.stringify(shown));
+  await link.hover();
+  await o.page.locator('.bible-popover').waitFor({ state: 'visible', timeout: 8000 });
+  const ready = await o.page.waitForFunction(() => {
+    const t = document.querySelector('.bible-popover')?.innerText || '';
+    return /third month/.test(t) && /God spoke all these words/.test(t);
+  }, null, { timeout: 15000 }).then(() => true).catch(() => false);
+  check('sinai: popover shows Exodus 19 and 20', ready);
+  check('sinai: no console errors', o.errors.length === 0, o.errors.join(' | '));
   await o.ctx.close();
 }
 await browser.close();

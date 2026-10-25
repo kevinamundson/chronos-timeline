@@ -787,14 +787,8 @@ Decision: Raleigh stays AM only. No BC parenthetical will be added. `year_bc_ad`
 
 ## J. Bible reference popover (2026-10-24)
 
-### J1. Confirm the Amundson Interpretive Version address
+### J1. Amundson Interpretive Version address — answered 2026-10-25
 
-- **Why it matters:** a written reference (not an existing BibleHub link) opens a popover. The Berean Standard Bible is loaded from `https://bible.helloao.org/api/BSB/{book}/{chapter}.simple.json`. The Amundson Interpretive Version is then requested from `https://aivbible.kevinamundson.me`. On 2026-10-24 that host returned HTTP 520 for every path, and the error response sent no `Access-Control-Allow-Origin` header, so the browser blocked it. The live layout could not be opened. When the host is up it still has to send that header, or the popover cannot read the JSON.
-- **What the popover requests, in order:**
-  1. `/translations/aiv/json/<book>/chapter-<n>.json`
-  2. `/json/<book>/chapter-<n>.json`
-  Book folders follow the public chapter files (`genesis`, `1-corinthians`, `song-of-songs`). The verse `text` is shown. HTML in `links` or `comment` is not rendered. If both requests fail, the Berean Standard Bible still shows and the AIV block says it could not be loaded.
-- **Options:**
-  1. Keep these two paths.
-  2. Replace them with the path the site actually serves.
-- **Recommendation:** option 1 until the host answers. The standard text on the popover stays the Berean Standard Bible. Scripture links stay on the Berean Literal Bible at BibleHub.
+- **Answer:** the files are at `https://aivbible.kevinamundson.me/usx/`, with each book in a subfolder.
+- **What the popover does now:** the Berean Standard Bible still comes from `https://bible.helloao.org/api/BSB/{book}/{chapter}.simple.json`. The Amundson Interpretive Version is read as USX. For 1 Samuel it tries, in order, `/usx/1SA/08-1SA.usx`, `/usx/08-1SA/08-1SA.usx`, `/usx/08-1SA.usx`, and `/usx/1SA/1SA.usx`. The other books use the same pattern. The names `08-1SA.usx` and the rest are the file names in the local AIV USX set. Footnotes are left out. If every request fails, the Berean Standard Bible still shows and the AIV block says it could not be loaded.
+- **Still open:** on 2026-10-25 the host returned HTTP 520 for `/usx/` and for those files, with no `Access-Control-Allow-Origin` header, so the filename inside the folder could not be confirmed from the live site. When the host is up it still has to send that header, or the browser cannot read the USX.
