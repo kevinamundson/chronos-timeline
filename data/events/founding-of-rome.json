@@ -50,6 +50,19 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Romulus, first of seven kings."
+    },
+    {
+      "source": "shuckford",
+      "date": "Rome being built about A. M. 3256",
+      "year_am": 3256,
+      "year_am_end": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book V, p. 318 (facsimile PDF p. 414)",
+      "link": "https://archive.org/details/sacredprofanehis01shuc/page/n411/mode/1up",
+      "source_text_id": "shuckford-sacred-profane-1819",
+      "note": "Footnote 6 cites Archbishop Usher’s Annals. “According to this account.”"
     }
   ],
   "people": [],
@@ -59,7 +72,8 @@
   "sources": [
     "generations-preparing",
     "generations-preparing-2e",
-    "cfah-3"
+    "cfah-3",
+    "shuckford-sacred-profane-1819"
   ],
   "related": [
     "roman-monarchy"
@@ -74,6 +88,11 @@
       "source_id": "cfah-3",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "locator": "AP-11"
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ]
 }

@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "diabies",
+  "type": "person",
+  "title": "Diabies",
+  "summary": "Succeeded Athothes as king of Thebes. Shuckford gives him a reign of nineteen years.",
+  "description": "Added from the Shuckford import. Display only. Shuckford’s years are Anno Mundi, or a “years before Christ” figure he is reporting. This chronology never sets a sort, and no tier 1–4 chronology dates this person’s birth, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Shuckford is display-only)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "shuckford",
+        "date": "Diabies succeeded him, who reigned nineteen years, and died A. M. 2053",
+        "year_am": 2034,
+        "year_am_end": 2053,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year-range",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book V, p. 246 (facsimile PDF p. 342)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n339/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "A. M. 2034 is printed as the death of Athothes, at which Diabies succeeded. A. M. 2053 is printed as Diabies’ death. The nineteen years are printed."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "shuckford-sacred-profane-1819"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
+    }
+  ]
+}

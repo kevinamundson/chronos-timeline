@@ -77,6 +77,7 @@ Fallbacks:
 - `generations`: except through `provisional`
 - `herodotus`: it carries no BC years at all
 - `morecraft`: except through `provisional`, as above
+- `shuckford`: volume 1 of the 1819 Creighton edition. Anno Mundi is not converted to BC. It is not a provisional sort tier
 - CFAH ruler dates with basis `paper_text`
 - **every new source you add**
 
@@ -133,7 +134,7 @@ scripts/
   validate.mjs           schema + cross-reference + 4-tier sort + MT Genesis 5/11 + BLB + copyright checks
   blb.mjs                Berean Literal Bible link builder
   cfah/                  CFAH importer (import.mjs), curated rows, OSF tables, inconsistencies.mjs, coverage
-  generations/ herodotus/ morecraft/   per-source importers: curated rows -> data/, plus check-source.mjs
+  generations/ herodotus/ morecraft/ cory/ shuckford/   per-source importers: curated rows -> data/, plus check-source.mjs
   fetch-raleigh.sh       restores the large Raleigh 1617 XML (gitignored)
 sources/jordan/          Jordan full texts (permitted); sources/raleigh/ Raleigh 1617 (EEBO-TCP A10357)
 site/                    build.mjs (zero-dependency generator -> site/dist), src/ (app.js, styles.css, search.js),
@@ -160,6 +161,8 @@ npm run verify:live         # person-timeline checks against production (run aft
 - `node scripts/generations/import.mjs`
 - `node scripts/herodotus/import.mjs`
 - `node scripts/morecraft/import.mjs`
+- `node scripts/cory/import.mjs`
+- `node scripts/shuckford/import.mjs`
 - `node scripts/cfah/import.mjs`
 
 **Importer order:** if you re-run the Herodotus importer (or any other importer), run `node scripts/cfah/import.mjs` **after it**. The Herodotus importer drops CFAH-only reign slots on its people, and the CFAH importer restores them (see E-section notes in `docs/OPEN-QUESTIONS-FOR-KEVIN.md`). Then run `npm run validate`, and check `git diff --stat` for unexpected churn.

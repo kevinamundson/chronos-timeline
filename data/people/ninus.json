@@ -37,6 +37,19 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "shuckford",
+        "date": "after a reign of two and fifty years, died A. M. 2017",
+        "year_am": 2017,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 164 (facsimile PDF p. 260)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n257/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "The reign length, fifty-two years, is printed. A start year is not printed in this sentence. Page 171 places the beginning at A. M. 1957. The two statements are both entered and not reconciled. See open question J4."
       }
     ],
     "reign": [
@@ -84,6 +97,19 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n136/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "The sentence begins at the foot of p. 91: Castor's series runs from Ninus to a later Ninus after Sardanapallus. The numeral 1280 is on p. 92. The individual reigns of that canon are not printed in this edition (the text turns to Damascius). The 1280 is not Ninus's own reign."
+      },
+      {
+        "source": "shuckford",
+        "date": "A. M. 1957, the year in which I have placed the beginning of Ninus’s reign",
+        "year_am": 1957,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 171 (facsimile PDF p. 267)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n264/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "Reached by counting one thousand three hundred years back from the death of Sardanapalus at A. M. 3257. Not reconciled with the death at A. M. 2017 after fifty-two years. See open question J4."
       }
     ]
   },
@@ -91,7 +117,8 @@
   "scripture_refs": [],
   "sources": [
     "raleigh-history-of-the-world-1617",
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "shuckford-sacred-profane-1819"
   ],
   "related": [],
   "free_source_links": [
@@ -104,6 +131,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ]
 }

@@ -279,6 +279,22 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
     }
   }
 }
+// Shuckford, Sacred and Profane History (1819 Creighton), vol. 1: secondary display. Never sets the sort.
+{
+  const sh = chronDoc.chronologies.find((c) => c.id === 'shuckford');
+  if (sh && (sh.primary || !/SECONDARY DISPLAY/.test(sh.description))) err('data/chronologies.json', 'shuckford must be a non-primary SECONDARY DISPLAY chronology');
+  const SH_SRC = new Set(srcDoc.sources.filter((s) => /^shuckford-/.test(s.id)).map((s) => s.id));
+  for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'shuckford' || doc.sorting_basis?.derived_from === 'shuckford') err(rel, 'shuckford may never set the sort');
+  for (const { rel, doc } of Object.values(records)) {
+    for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'shuckford')) {
+      if (!SH_SRC.has(e.source_text_id)) err(rel, `shuckford entry needs source_text_id of a shuckford-* source, got "${e.source_text_id}"`);
+      if (!/1819/.test(e.citation || '') || !/p\. \d+/.test(e.citation || '')) err(rel, 'shuckford entry needs an 1819 citation with a printed page');
+      if (!(e.link || '').startsWith('https://archive.org/details/sacredprofanehis01shuc/page/n')) err(rel, 'shuckford entry link must point at the 1819 Internet Archive scan');
+      if (e.year_bc_ad != null && !/before Christ|before our Saviour/i.test(e.date || '')) err(rel, 'shuckford may store a BC year only when the printed words are “before Christ” or “before our Saviour”');
+      if (e.year_am != null && e.year_bc_ad != null) err(rel, 'shuckford entry stores Anno Mundi or a printed BC year, not both');
+    }
+  }
+}
 for (const { rel, doc } of sortingTargets) if (['jordan', 'jordan-compilation'].some((j) => doc.sorting_basis?.chronology === j || doc.sorting_basis?.derived_from === j)) err(rel, 'sorting_basis may not use a secondary Jordan chronology');
 
 // Masoretic Genesis 5 cross-check (KJV/MT figures: [id, age at named son, lifespan])

@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "syphis",
+  "type": "person",
+  "title": "Syphis",
+  "summary": "King of Memphis, the first of that name. Shuckford says his successor was also called Syphis.",
+  "description": "Added from the Shuckford import. Display only. Shuckford’s years are Anno Mundi, or a “years before Christ” figure he is reporting. This chronology never sets a sort, and no tier 1–4 chronology dates this person’s birth, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Shuckford is display-only)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "shuckford",
+        "date": "This Syphis began his reign about A. M. 2164",
+        "year_am": 2164,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "approximate",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book V, p. 290 (facsimile PDF p. 386)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n383/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "He reigned sixty-three years, and died above forty years after Abraham. The sixty-three years are printed. “Above forty years after Abraham” does not say after his birth, his coming, or his death, so no death year is stored. The same sentence says the reign began about eighty years after Abraham’s coming into Egypt. Page 246 mentions a Soiphis at Memphis without a year. That spelling is not equated with this Syphis."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "shuckford-sacred-profane-1819"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
+    }
+  ]
+}

@@ -118,6 +118,19 @@
         "citation": null,
         "link": null,
         "note": "Not stated in the Jordan sources read (Biblical Horizons \"Biblical Chronology\" category, all 9 pages; garynorth.com archive of Biblical Chronology 1989-1996). Left empty, not inferred."
+      },
+      {
+        "source": "shuckford",
+        "date": "and so died A. M. 1905",
+        "year_am": 1905,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 161 (facsimile PDF p. 257)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n254/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "Page 169 repeats the end of the reign at A. M. 1905. The “about one hundred and forty-eight years” is on the same page as this death year."
       }
     ],
     "reign": [
@@ -146,6 +159,19 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"2470 1788 1●1\". The year cell continues \"1●1\", which is not a clean figure and is not used. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 114 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Kings of Assyria .. Book II, ch. I, §VIII, sig. 164a first prints \"there remaineth 114. yeeres\" and \"which number of 114. necessitie bestoweth on Nimrod\", the length in the table cell. The same paragraph then says \"Nimrod, by this accompt, liued in all but one hundred seuenty nine yeeres: whereof hee reigned one hundred and twelue\". The 179 and the 112 are not entered as years."
+      },
+      {
+        "source": "shuckford",
+        "date": "He began his reign A. M. 1757, and it is thought he reigned about one hundred and forty-eight years",
+        "year_am": 1757,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "approximate",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 161 (facsimile PDF p. 257)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n254/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "Page 169 offers it as a supposition: “if he began to reign at the age of sixty-one, and lived one hundred and forty-eight years after”. DERIVED, not printed, and only on that supposition: 1757 minus 61 is 1696. That difference is not stored as a birth year. The same page, under the running head A. M. 1757, says the beginning of his reign “in this year” agrees with later Babylonian observations, and it fixes his death at A. M. 1905. “This year” is not entered as a second start."
       }
     ]
   },
@@ -163,7 +189,8 @@
     "jordan-bc-6-5",
     "cfah-5",
     "cfah-15-osf",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "shuckford-sacred-profane-1819"
   ],
   "free_source_links": [
     {
@@ -180,6 +207,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 782a"
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ],
   "related": [

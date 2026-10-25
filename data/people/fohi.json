@@ -1,0 +1,95 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "fohi",
+  "type": "person",
+  "title": "Fohi",
+  "summary": "First king in the Chinese accounts Shuckford reports. He concludes that this Fohi and Moses’ Noah are the same person. The two records are kept apart.",
+  "description": "Added from the Shuckford import. Display only. Shuckford’s years are Anno Mundi, or a “years before Christ” figure he is reporting. This chronology never sets a sort, and no tier 1–4 chronology dates this person’s birth, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Shuckford is display-only)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "shuckford",
+        "date": "Fohi lived about 2952 years before Christ",
+        "year_am": null,
+        "year_am_end": null,
+        "year_bc_ad": -2952,
+        "year_bc_ad_end": null,
+        "precision": "approximate",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book I, p. 26 (facsimile PDF p. 116)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n113/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "Shuckford is reporting what the Chinese writers in general agree. He concludes on the next page that Moses’ Noah and the Chinese Fohi are the same person. The records are kept apart. See open question J8."
+      },
+      {
+        "source": "shuckford",
+        "date": "computes him to reign but 2847 years before our Saviour",
+        "year_am": null,
+        "year_am_end": null,
+        "year_bc_ad": -2847,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book I, p. 26 (facsimile PDF p. 116)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n113/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "The author of Mirandorum in Sinâ et Europâ, as Shuckford reports the figure. The spelling of the title is the one read on the page."
+      },
+      {
+        "source": "shuckford",
+        "date": "Alvarez Sevedo places his reign not so early, imagining it to be but 2060 years",
+        "year_am": null,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book I, p. 26 (facsimile PDF p. 116)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n113/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "The letters on the page are Sevedo. The clause does not repeat “before Christ”. The two sentences before it are years before Christ and years before our Saviour, and “not so early” compares this figure with those. No BC year is stored. See open question J14."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "shuckford-sacred-profane-1819"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
+    }
+  ]
+}

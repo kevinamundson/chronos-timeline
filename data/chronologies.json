@@ -634,6 +634,24 @@
         "cory-ancient-fragments-1876"
       ],
       "anchors": []
+    },
+    {
+      "id": "shuckford",
+      "name": "Shuckford, The Sacred and Profane History of the World Connected (1819, ed. James Creighton)",
+      "abbreviation": "Shuckford",
+      "primary": false,
+      "sort_priority": 15,
+      "status": "partial",
+      "authors": [
+        "Samuel Shuckford",
+        "James Creighton (editor)"
+      ],
+      "description": "SECONDARY DISPLAY CHRONOLOGY. It is never a sort tier and never sets or overrides a sort year. Each entry is a date read in volume 1 of the fifth edition, revised by James Creighton (London: William Baynes, 1819). Shuckford counts by the year of the world. year_am is that printed Anno Mundi. year_bc_ad is set only when the page prints “before Christ” or “before our Saviour”. Anno Mundi is not converted to BC. A figure he sets out and does not adopt is left out of the record and listed in the extract. This pass is volume 1 only. Agreements and conflicts are listed in data/shuckford-dates-extract.md.",
+      "year_conventions": "No conversion of Anno Mundi to BC. year_am is the printed year of the world. A range he prints uses year_am and year_am_end. year_bc_ad is negative and is used only for a “years before Christ” or “years before our Saviour” figure printed on the page. “About” and “it is thought” are precision approximate. A subtracted year is labelled DERIVED in the note and is not stored.",
+      "references": [
+        "shuckford-sacred-profane-1819"
+      ],
+      "anchors": []
     }
   ]
 }

@@ -148,6 +148,19 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-11-t1-d20:rameses-vii-d20-alexander-the-great:alexander-the-great:reign"
+      },
+      {
+        "source": "shuckford",
+        "date": "The year in which Alexander came to Babylon was A. M. 3674",
+        "year_am": 3674,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 170 (facsimile PDF p. 266)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n263/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "Footnote 8 on this sentence cites Archbishop Usher’s Annals. The sentence is the year he came to Babylon, not an accession year. Counting 1,903 years back, Shuckford reaches A. M. 1771 for the start of the Chaldean observations. That 1771 has no event to receive it."
       }
     ]
   },
@@ -163,7 +176,8 @@
     "generations-preparing",
     "generations-preparing-2e",
     "morecraft-christian-survey",
-    "cfah-11-osf"
+    "cfah-11-osf",
+    "shuckford-sacred-profane-1819"
   ],
   "related": [],
   "free_source_links": [
@@ -171,6 +185,11 @@
       "source_id": "cfah-11-osf",
       "url": "https://osf.io/ksaz9/",
       "locator": "Table 1, p. 22"
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ]
 }

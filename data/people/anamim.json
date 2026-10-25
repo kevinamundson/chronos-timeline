@@ -57,6 +57,31 @@
         "note": "Jordan: \"If we assume births every two years, and about 30 years between generations ... we can come up with an approximate series of dates\" (hypothetical, not stated by Scripture). Name appears on a continuation line printed beneath this year row in the web text of the table (flattened layout); Jordan's spacing places it with that year.",
         "source_text_id": "jordan-bc-6-5"
       }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "shuckford",
+        "date": "according to Syncellus, he reigned sixty-three years, and so died A. M. 2006",
+        "year_am": 2006,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 191 (facsimile PDF p. 287)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n284/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "Ananim, also called Curudes, king of Lower Egypt. Shuckford is reporting Syncellus. The person record is the Gen 10 name Anamim. See open question J7 only for Athothes; this attachment is the Gen 10 name he is discussing."
+      }
     ]
   },
   "scripture_refs": [
@@ -65,7 +90,8 @@
   ],
   "sources": [
     "blb-biblehub",
-    "jordan-bc-6-5"
+    "jordan-bc-6-5",
+    "shuckford-sacred-profane-1819"
   ],
   "free_source_links": [
     {
@@ -77,6 +103,11 @@
       "source_id": "jordan-bc-6-5",
       "url": "https://biblicalhorizons.com/1994/05/01/6_05/",
       "locator": "§8 \"The Table of Nations\""
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ],
   "related": [

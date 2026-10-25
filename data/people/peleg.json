@@ -108,6 +108,19 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"2440 1758 101\". The third printed figure 101 is the column \"Floud\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The cell prints \"1.\" and the name, and no length. Book I, sig. 113a says the division \"was( if the diuision were made at Phalegs birth) in the yeere of the World 1757. or 1758.\" The table cell entered is the row at World 1758. 1757 is not entered as a second year."
+      },
+      {
+        "source": "shuckford",
+        "date": "the division of the earth must be placed A. M. 1757, about one hundred and one years after the Flood, when Peleg the son of Eber was born",
+        "year_am": 1757,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book II, p. 94 (facsimile PDF p. 188)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n185/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "He says “if we suppose them to spend nineteen or twenty years in settling and building” before the confusion. Those nineteen or twenty years are not turned into a second Anno Mundi."
       }
     ],
     "death": [
@@ -201,7 +214,8 @@
     "jordan-bc-5-8",
     "jordan-bc-6-4",
     "jordan-compilation-anno-mundi",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "shuckford-sacred-profane-1819"
   ],
   "free_source_links": [
     {
@@ -218,6 +232,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 782b"
+    },
+    {
+      "source_id": "shuckford-sacred-profane-1819",
+      "url": "https://archive.org/details/sacredprofanehis01shuc",
+      "locator": "1819 Creighton edition, vol. 1, full view"
     }
   ],
   "related": [
