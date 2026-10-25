@@ -22,7 +22,7 @@ async function open(path, { width = 1280, height = 900, shot, fullPage = true, s
   const ctx = await browser.newContext({ viewport: { width, height }, colorScheme: scheme, deviceScaleFactor: width < 500 ? 2 : 1 });
   const page = await ctx.newPage();
   const errors = []; const external = [];
-  page.on('console', (m) => { if (m.type() === 'error') (/(tile\.openstreetmap|tile\.loc\.gov|ERR_|Failed to load resource)/.test(m.text()) ? external : errors).push(m.text()); });
+  page.on('console', (m) => { if (m.type() === 'error') (/(tile\.openstreetmap|tile\.loc\.gov|ERR_|Failed to load resource|aivbible\.kevinamundson\.me)/.test(m.text()) ? external : errors).push(m.text()); });
   page.on('pageerror', (e) => errors.push(String(e)));
   page.on('requestfailed', (r) => { if (!r.url().startsWith(BASE)) external.push(`${r.url()} ${r.failure()?.errorText}`); else errors.push(`local request failed: ${r.url()}`); });
   const resp = await page.goto(BASE + path, { waitUntil: 'networkidle' });
@@ -63,6 +63,7 @@ function barsVisible(b) {
   const axis = await o.page.locator('.vis-time-axis .vis-text.vis-minor:not(.vis-measure)').allTextContents();
   const lede = await o.page.locator('.lede').innerText();
   check('home: HTTP 200', o.status === 200);
+  check('home: one BibleUp script', await o.page.locator('script[src*="/assets/bibleup.js"]').count() === 1);
   check('home: no console errors', o.errors.length === 0, o.errors.join(' | '));
   check('home: lede states the mighty works of God among the nations', lede.includes('mighty works of God among the nations') && !/temple/i.test(lede), lede.slice(0, 160));
   check('home: timeline items rendered', tl > 0, `${tl} items`);
@@ -317,6 +318,8 @@ for (const [path, shot, sel] of [
       if (id === 'noah' && w > 500) {
         const heb = await o.page.locator('#name .name-form[lang="he"]').allInnerTexts();
         check('noah: name section has the Hebrew form', heb.some((t) => t.includes('נֹחַ')), heb.join(' | '));
+        const chips = await o.page.locator('a[href*="biblehub.com/blb/"]').evaluateAll((els) => els.map((a) => ({ href: a.getAttribute('href'), bibleup: a.hasAttribute('bu-data') })));
+        check('noah: scripture chips stay on BibleHub and are not BibleUp links', chips.length > 0 && chips.every((a) => !a.bibleup && /biblehub\.com\/blb\//.test(a.href)), `${chips.length} chips`);
       }
       if (w > 500) {
         // keyboard: Tab reaches a timeline link; Enter opens it
@@ -574,6 +577,65 @@ for (const [path, shot, sel] of [
   check('raleigh table mobile: no horizontal page overflow', !overflow);
   check('raleigh table mobile: table scrolls inside its frame', scrolls);
   check('raleigh table mobile: no console errors', o.errors.length === 0, o.errors.join(' | '));
+  await o.ctx.close();
+}
+// BibleUp: one script tag, detection on a written reference, BSB text in the popover.
+{
+  const o = await open('/about/');
+  const tags = await o.page.locator('script[src*="/assets/bibleup.js"]').count();
+  check('about: one BibleUp script', tags === 1, String(tags));
+  check('about: chronology sentence is not tagged', (await o.page.locator('p.bu-ignore cite').count()) === 0);
+  const link = o.page.locator('cite.bu-link a', { hasText: 'John 3:16' });
+  check('about: John 3:16 detected', (await link.count()) === 1);
+  await link.hover();
+  const pop = o.page.locator('.bible-popover');
+  await pop.waitFor({ state: 'visible', timeout: 8000 });
+  await o.page.waitForFunction(() => {
+    const el = document.querySelector('.bible-popover');
+    return !!el && /For God so loved the world/.test(el.innerText);
+  }, null, { timeout: 8000 }).catch(() => {});
+  const text = await pop.innerText();
+  check('about: popover shows the Berean Standard Bible', /For God so loved the world/.test(text) && /\bBSB\b/.test(text) && !/did not send His Son/.test(text), text.slice(0, 220));
+  check('about: popover asks for the Amundson Interpretive Version', text.includes('Amundson Interpretive Version'));
+  await o.page.keyboard.press('Escape');
+  check('about: Escape closes the popover', await pop.isHidden());
+  check('about: no console errors', o.errors.length === 0, o.errors.join(' | '));
+  if (o.external.length) results.push(`INFO  about: external resource issues: ${o.external.join(' | ')}`);
+  await o.ctx.close();
+}
+// Chapter spans: "(1 Sam 8–11)" is chapters 8 through 11, not verse 1 of chapter 8.
+{
+  const o = await open('/events/saul-made-king/');
+  const link = o.page.locator('.lede a[bu-data]').filter({ hasText: '1 Sam 8' });
+  const shown = (await link.count()) === 1 ? (await link.innerText()) : '';
+  check('saul: 1 Sam 8–11 is one link', shown.replace(/\s/g, '') === '1Sam8–11', JSON.stringify(shown));
+  const acts = await o.page.locator('.lede a[bu-data]').filter({ hasText: 'Acts 13:21' }).innerText();
+  check('saul: Acts 13:21 stays one verse', acts.trim() === 'Acts 13:21', JSON.stringify(acts));
+  await link.hover();
+  const pop = o.page.locator('.bible-popover');
+  await pop.waitFor({ state: 'visible', timeout: 8000 });
+  const ready = await o.page.waitForFunction(() => {
+    const t = document.querySelector('.bible-popover')?.innerText || '';
+    return /When Samuel grew old/.test(t) && /Nahash the Ammonite/.test(t) && /confirmed Saul as king/.test(t);
+  }, null, { timeout: 15000 }).then(() => true).catch(() => false);
+  const text = await pop.innerText();
+  check('saul: popover shows 1 Samuel 8 through 11', ready && /Chapter 8/.test(text) && /Chapter 11/.test(text), text.slice(0, 180) + ' … ' + text.slice(-120));
+  check('saul: no console errors', o.errors.length === 0, o.errors.join(' | '));
+  await o.ctx.close();
+}
+{
+  const o = await open('/events/arrival-at-sinai/');
+  const link = o.page.locator('.lede a[bu-data]').filter({ hasText: 'Exod 19' });
+  const shown = (await link.count()) === 1 ? (await link.innerText()) : '';
+  check('sinai: Exod 19-20 is one link', shown.replace(/\s/g, '') === 'Exod19-20', JSON.stringify(shown));
+  await link.hover();
+  await o.page.locator('.bible-popover').waitFor({ state: 'visible', timeout: 8000 });
+  const ready = await o.page.waitForFunction(() => {
+    const t = document.querySelector('.bible-popover')?.innerText || '';
+    return /third month/.test(t) && /God spoke all these words/.test(t);
+  }, null, { timeout: 15000 }).then(() => true).catch(() => false);
+  check('sinai: popover shows Exodus 19 and 20', ready);
+  check('sinai: no console errors', o.errors.length === 0, o.errors.join(' | '));
   await o.ctx.close();
 }
 await browser.close();

@@ -45,7 +45,7 @@ const hebrewRows = hebrew.flatMap((r) => {
       year_am: death, prec: 'year',
       targets: [`${id}:${slot}`],
       note: id === 'enoch'
-        ? `${tableNote(r)} The column is headed “Died in the year of the world”. This record keeps Enoch’s end on the translated slot. See open question J6.`
+        ? `${tableNote(r)} The column is headed “Died in the year of the world”. This record keeps Enoch’s end on the translated slot. See open question K6.`
         : tableNote(r),
     });
   }
@@ -65,7 +65,7 @@ const rest = [
     date: 'so fix it A. M. 2263, instead of 1657',
     year_am: 2263, prec: 'year',
     targets: ['the-flood'],
-    note: 'This is the Septuagint result as he works it, not the Hebrew date he follows. The Septuagint table printed under this sentence was seen. Its other cells are not entered: Seth’s death-year and Methuselah’s lifespan did not read cleanly. See open question J11.',
+    note: 'This is the Septuagint result as he works it, not the Hebrew date he follows. The Septuagint table printed under this sentence was seen. Its other cells are not entered: Seth’s death-year and Methuselah’s lifespan did not read cleanly. See open question K11.',
     st: 'framework',
   },
   {
@@ -73,7 +73,7 @@ const rest = [
     date: 'Fohi lived about 2952 years before Christ',
     year_bc: -2952, prec: 'approximate',
     targets: ['fohi:reign'],
-    note: 'Shuckford is reporting what the Chinese writers in general agree. He concludes on the next page that Moses’ Noah and the Chinese Fohi are the same person. The records are kept apart. See open question J8.',
+    note: 'Shuckford is reporting what the Chinese writers in general agree. He concludes on the next page that Moses’ Noah and the Chinese Fohi are the same person. The records are kept apart. See open question K8.',
   },
   {
     page: 26, pdf: 116, book: 'I',
@@ -87,7 +87,7 @@ const rest = [
     date: 'Alvarez Sevedo places his reign not so early, imagining it to be but 2060 years',
     prec: 'year',
     targets: ['fohi:reign'],
-    note: 'The letters on the page are Sevedo. The clause does not repeat “before Christ”. The two sentences before it are years before Christ and years before our Saviour, and “not so early” compares this figure with those. No BC year is stored. See open question J14.',
+    note: 'The letters on the page are Sevedo. The clause does not repeat “before Christ”. The two sentences before it are years before Christ and years before our Saviour, and “not so early” compares this figure with those. No BC year is stored. See open question K14.',
     st: 'internal',
   },
   {
@@ -153,7 +153,7 @@ const rest = [
     date: 'after a reign of two and fifty years, died A. M. 2017',
     year_am: 2017, prec: 'year',
     targets: ['ninus:death'],
-    note: 'The reign length, fifty-two years, is printed. A start year is not printed in this sentence. Page 171 places the beginning at A. M. 1957. The two statements are both entered and not reconciled. See open question J4.',
+    note: 'The reign length, fifty-two years, is printed. A start year is not printed in this sentence. Page 171 places the beginning at A. M. 1957. The two statements are both entered and not reconciled. See open question K4.',
     st: 'CONFLICT (internal)',
   },
   {
@@ -161,7 +161,7 @@ const rest = [
     date: 'A. M. 1957, the year in which I have placed the beginning of Ninus’s reign',
     year_am: 1957, prec: 'year',
     targets: ['ninus:reign'],
-    note: 'Reached by counting one thousand three hundred years back from the death of Sardanapalus at A. M. 3257. Not reconciled with the death at A. M. 2017 after fifty-two years. See open question J4.',
+    note: 'Reached by counting one thousand three hundred years back from the death of Sardanapalus at A. M. 3257. Not reconciled with the death at A. M. 2017 after fifty-two years. See open question K4.',
     st: 'CONFLICT (internal)',
   },
   {
@@ -169,14 +169,14 @@ const rest = [
     date: 'The death of Sardanapalus happened A. M. 3257',
     year_am: 3257, prec: 'year',
     targets: ['sardanapalus:death'],
-    note: 'The Assyrian king at the end of the empire in Shuckford’s title. Attached to the person Raleigh’s table already has, not to Cory’s sardanapallus. See open question J9.',
+    note: 'The Assyrian king at the end of the empire in Shuckford’s title. Attached to the person Raleigh’s table already has, not to Cory’s sardanapallus. See open question K9.',
   },
   {
     page: 169, pdf: 265, book: 'IV',
     date: 'by the Hebrew chronology, that Abraham was born A. M. 2008',
     year_am: 2008, prec: 'year',
     targets: ['abraham:birth', 'abraham-birth'],
-    note: 'He says this will appear hereafter very clearly. Page 251 prints A. M. 2001 for the same birth. Both are entered. See open question J3.',
+    note: 'He says this will appear hereafter very clearly. Page 251 prints A. M. 2001 for the same birth. Both are entered. See open question K3.',
     st: 'CONFLICT (internal)',
   },
   {
@@ -184,7 +184,7 @@ const rest = [
     date: 'Abram was born in the one hundred and thirtieth year of Terah, three hundred and fifty-two years after the Flood, A. M. 2001',
     year_am: 2001, prec: 'year',
     targets: ['abraham:birth', 'abraham-birth'],
-    note: 'Page 252 says he has fixed this birth by the Hebrew chronology. The same paragraph also says three hundred and fifty-two years after the Flood. Page 169 prints A. M. 2008. Not reconciled. The Tolle Lege facsimile prints a clear 1 in A. M. 2001. On Internet Archive leaf n344 the same sentence is present, and the last digit is blotted, so that leaf alone does not confirm 1 or 8. The year stored is the clear facsimile digit. See open question J3.',
+    note: 'Page 252 says he has fixed this birth by the Hebrew chronology. The same paragraph also says three hundred and fifty-two years after the Flood. Page 169 prints A. M. 2008. Not reconciled. The Tolle Lege facsimile prints a clear 1 in A. M. 2001. On Internet Archive leaf n344 the same sentence is present, and the last digit is blotted, so that leaf alone does not confirm 1 or 8. The year stored is the clear facsimile digit. See open question K3.',
     st: 'CONFLICT (internal)',
   },
   {
@@ -192,7 +192,7 @@ const rest = [
     date: 'A. M. 2078',
     year_am: 2078, prec: 'year',
     targets: [],
-    note: 'The sentence begins on p. 251: he went from Ur to Haran when he was seventy. The year-number is the first line of p. 252. There is no event for Abraham’s move to Haran, and a person has no slot for it. Not mapped. See open question J10.',
+    note: 'The sentence begins on p. 251: he went from Ur to Haran when he was seventy. The year-number is the first line of p. 252. There is no event for Abraham’s move to Haran, and a person has no slot for it. Not mapped. See open question K10.',
     st: 'n/a',
   },
   {
@@ -207,7 +207,7 @@ const rest = [
     date: 'arrived there, it is thought, about the fifteenth year of Nimrod, A. M. 1772',
     year_am: 1772, prec: 'approximate',
     targets: ['mizraim:reign'],
-    note: 'Mizraim’s arrival in Egypt. Page 186 repeats A. M. 1772 as the Hebrew beginning of Menes’ reign. Page 187 also prints A. M. 1805 and does not choose. See open question J5.',
+    note: 'Mizraim’s arrival in Egypt. Page 186 repeats A. M. 1772 as the Hebrew beginning of Menes’ reign. Page 187 also prints A. M. 1805 and does not choose. See open question K5.',
     st: 'CONFLICT (internal)',
   },
   {
@@ -223,7 +223,7 @@ const rest = [
     date: 'consequently began A. M. 1805',
     year_am: 1805, prec: 'year',
     targets: ['mizraim:reign'],
-    note: 'A second computation of Menes’ first year, nine hundred and eighty-seven years before Nilus. He writes that he cannot say which of A. M. 1772 and A. M. 1805, or whether either, is the exact truth. See open question J5.',
+    note: 'A second computation of Menes’ first year, nine hundred and eighty-seven years before Nilus. He writes that he cannot say which of A. M. 1772 and A. M. 1805, or whether either, is the exact truth. See open question K5.',
     st: 'CONFLICT (internal)',
   },
   {
@@ -245,7 +245,7 @@ const rest = [
     date: 'we shall place Mizraim A. M. 1633, i. e. twenty-three years before the Flood',
     year_am: 1633, prec: 'year',
     targets: [],
-    note: 'He raises this by counting 1,400 years back from Sesac, then rejects it. He says the number 1,400 years is a mistake, and that it places Menes above a century earlier than the true age. Not entered on Mizraim. See open question J10.',
+    note: 'He raises this by counting 1,400 years back from Sesac, then rejects it. He says the number 1,400 years is a mistake, and that it places Menes above a century earlier than the true age. Not entered on Mizraim. See open question K10.',
     st: 'internal',
   },
   {
@@ -283,7 +283,7 @@ const rest = [
     date: 'we shall be brought back to A. M. 1771. So that in this year began the astronomy of the Chaldeans',
     year_am: 1771, prec: 'year',
     targets: [],
-    note: 'Page 173 repeats “the observations, as we said, began A. M. 1771”. No event record exists for the start of those observations, and a new event cannot take its sort year from Shuckford. Not mapped. See open question J10.',
+    note: 'Page 173 repeats “the observations, as we said, began A. M. 1771”. No event record exists for the start of those observations, and a new event cannot take its sort year from Shuckford. Not mapped. See open question K10.',
     st: 'n/a',
   },
   {
@@ -291,7 +291,7 @@ const rest = [
     date: 'according to Syncellus, he reigned sixty-three years, and so died A. M. 2006',
     year_am: 2006, prec: 'year',
     targets: ['anamim:death'],
-    note: 'Ananim, also called Curudes, king of Lower Egypt. Shuckford is reporting Syncellus. The person record is the Gen 10 name Anamim. See open question J7 only for Athothes; this attachment is the Gen 10 name he is discussing.',
+    note: 'Ananim, also called Curudes, king of Lower Egypt. Shuckford is reporting Syncellus. The person record is the Gen 10 name Anamim. See open question K7 only for Athothes; this attachment is the Gen 10 name he is discussing.',
     st: 'internal',
   },
   {
@@ -306,7 +306,7 @@ const rest = [
     date: 'A. M. 2034, when Athothes, the second king of Thebes, died',
     year_am: 2034, prec: 'year',
     targets: ['athothis:reign'],
-    note: 'The spelling on the page is Athothes. The existing person is Athothis, whom CFAH equates with Narmer. Shuckford does not say Narmer. See open question J7.',
+    note: 'The spelling on the page is Athothes. The existing person is Athothis, whom CFAH equates with Narmer. Shuckford does not say Narmer. See open question K7.',
   },
   {
     page: 246, pdf: 342, book: 'V',
@@ -342,7 +342,7 @@ const rest = [
     date: 'Archbishop Usher supposes that the Parian Chronicon was composed A. M. 3741',
     year_am: 3741, prec: 'year',
     targets: [],
-    note: 'A footnote on the Danaus passage. Ussher’s figure, as Shuckford prints it. No record exists for the composition of the Parian Chronicon. Not mapped. See open question J10.',
+    note: 'A footnote on the Danaus passage. Ussher’s figure, as Shuckford prints it. No record exists for the composition of the Parian Chronicon. Not mapped. See open question K10.',
     st: 'internal',
   },
   {
@@ -350,7 +350,7 @@ const rest = [
     date: 'the erecting these pillars was a very ancient practice, even as ancient as A. M. 2246',
     year_am: 2246, prec: 'year',
     targets: [],
-    note: 'He has just cited Jacob’s pillar (Gen. 28 and 35). The year is not Jacob’s birth, death, or reign, and no event record exists for the pillar. Not mapped. See open question J10.',
+    note: 'He has just cited Jacob’s pillar (Gen. 28 and 35). The year is not Jacob’s birth, death, or reign, and no event record exists for the pillar. Not mapped. See open question K10.',
     st: 'n/a',
   },
   {
@@ -373,7 +373,7 @@ const rest = [
     date: 'not above a hundred years before Darius’s repelling the Scythians, who had invaded his provinces, i. e. about A. M. 3400',
     year_am: 3400, prec: 'approximate',
     targets: [],
-    note: 'Shuckford’s “i. e.” on a report of what Herodotus imagined about the later Scythians. No event record exists for that settlement. Not mapped. See open question J10.',
+    note: 'Shuckford’s “i. e.” on a report of what Herodotus imagined about the later Scythians. No event record exists for that settlement. Not mapped. See open question K10.',
     st: 'n/a',
   },
   {
