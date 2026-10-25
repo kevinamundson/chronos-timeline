@@ -766,3 +766,21 @@ People taken from the table now have a modern English display title. Raleigh's p
 No BC year was added. To the Reader, sig. 780b, says: "This IVLIAN Perioà, after the present accompt, alwayes exceedes the yeares of the World by 682." His example is Jehoshaphat beginning in the 3774th year of the Julian Period, the 3092nd of the World, and the 99th of the Temple. 3774 − 3092 is 682. He does not state a year before Christ, and he does not give the epoch that would turn that offset into one. `year_bc_ad` on his entries stays null. "seuen hundred and fourtie yeeres before Christ borne" dates the Erythraean Sibyl. It is not a rule for turning a yeere of the World into a year before Christ.
 
 Decision: Raleigh stays AM only. No BC parenthetical will be added. `year_bc_ad` on his entries stays null.
+
+## I. Names on person pages (2026-10-24)
+
+### I1. Approve the name-form file, and say how far the witnesses should go
+
+- **Why it matters:** every person page now has a Name section (alternate spellings, original-language letters, and footnotes). The letters live in a new file, `data/name-forms.json`, with `schema/name-forms.schema.json`. A new field or file needs your approval before merge.
+- **What is entered:**
+  - Biblical Hebrew, Aramaic and Greek are the forms printed by STEPBible TIPNR (CC BY 4.0), read 2026-10-24. The TIPNR file is not copied into the repo. A form is attached only when one of its verses is already a `scripture_refs` entry on that person, and the English name matches. 109 of 110 people who have a scripture reference matched. None were ambiguous.
+  - History spellings are letters already printed inside a passage stored on the person: Raleigh 1617, Josephus (Whiston), Herodotus (Rawlinson), Ussher 1658, and Cory 1876. The footnote quotes the name, not the whole sentence.
+  - `alt_names` that do not appear in one of those passages stay on the page as “Written source not yet attached.”
+  - No inscription is entered. The page says so.
+- **Not equated:** `apries` cites Jeremiah 44:30. TIPNR’s individual for that king is headed Hophra, and it does not list the English “Apries,” so the Hebrew was not copied onto Apries. Herodotus’s English spelling “Apries” is footnoted from the passage already on the record.
+- **Options:**
+  1. Keep this boundary: original letters only from a verse the person record already cites; Greek only when that verse is one of them; inscriptions empty until a writing has been read.
+  2. Also show the Greek form TIPNR gives for a matched individual even when the person record does not cite the New Testament verse (Abraham would gain Ἀβραάμ at Matthew 1:1).
+  3. Add a named Hebrew edition (for example a facsimile of the Leningrad Codex) as a second check before the letters are called the Masoretic writing rather than “as printed in TIPNR.”
+  4. Name the inscription editions to read next. Nothing is invented in the meantime.
+- **Recommendation:** option 1 for this merge, and option 3 before any caption says “Masoretic text” rather than “TIPNR.” The footnotes already say the letters are the ones TIPNR prints.
