@@ -342,6 +342,70 @@ for (const [path, shot, sel] of [
     }
   }
 }
+// Family chart: parents and children by default; the switch pops out three generations.
+{
+  async function familyLinks(page, root, depth) {
+    await page.waitForFunction((arg) => {
+      const el = document.querySelector(arg.root);
+      return !!el && el.getAttribute('data-depth') === String(arg.depth) && Number(el.getAttribute('data-ready')) > 0;
+    }, { root, depth }, { timeout: 8000 });
+    return page.locator(`${root} a.fc-link`).evaluateAll((as) => as.map((a) => a.getAttribute('href')));
+  }
+  async function linksOk(page, hrefs) {
+    const bad = [];
+    for (const hr of [...new Set(hrefs)]) {
+      const r = await page.request.get(BASE + hr);
+      if (r.status() !== 200) bad.push(`${hr} ${r.status()}`);
+    }
+    return bad;
+  }
+  const o = await open('/people/abraham/', { width: 1280, height: 900 });
+  check('abraham family: HTTP 200, no console errors', o.status === 200 && o.errors.length === 0, o.errors.join(' | '));
+  const near = await familyLinks(o.page, '#family-chart', 1);
+  check('abraham family: chart links father Terah, self and son Isaac', near.includes('/people/terah/') && near.includes('/people/abraham/') && near.includes('/people/isaac/'), near.join(' '));
+  check('abraham family: default chart stops at parents and children', !near.includes('/people/serug/') && !near.includes('/people/jacob/'), near.join(' '));
+  const missingLinks = await o.page.locator('#family-chart .card-to-add a').count();
+  const missingText = await o.page.locator('#family-chart .card-to-add').allInnerTexts();
+  check('abraham family: unrecorded parent is not a link', missingLinks === 0 && missingText.some((t) => /Not recorded/.test(t)), missingText.join(' | '));
+  const list = await o.page.locator('#family .family-list').first().innerText();
+  check('abraham family: list names the father, an unrecorded mother and the child', /Father/.test(list) && /Terah/.test(list) && /Mother/.test(list) && /Not recorded/.test(list) && /Isaac/.test(list), list);
+  const nearBad = await linksOk(o.page, near);
+  check('abraham family: chart links resolve', nearBad.length === 0, nearBad.join(', '));
+  await o.page.locator('#family-wide').check();
+  await o.page.waitForFunction(() => document.getElementById('family-dialog')?.open === true, null, { timeout: 3000 }).catch(() => {});
+  const wide = await familyLinks(o.page, '#family-dialog #family-chart', 3);
+  check('abraham family: open chart includes great-grandfather Serug and great-grandson Joseph', wide.includes('/people/serug/') && wide.includes('/people/joseph/'), wide.join(' '));
+  const wideBad = await linksOk(o.page, wide);
+  check('abraham family: wider chart links resolve', wideBad.length === 0, wideBad.join(', '));
+  await o.page.locator('#family-dialog [data-family-close]').click();
+  await o.page.waitForFunction(() => document.getElementById('family-dialog')?.open !== true && document.getElementById('family-chart-slot')?.querySelector('#family-chart'), null, { timeout: 3000 }).catch(() => {});
+  const back = await familyLinks(o.page, '#family-chart-slot #family-chart', 1);
+  check('abraham family: closing the chart returns to parents and children', back.includes('/people/terah/') && !back.includes('/people/serug/'), back.join(' '));
+  const focused = await o.page.locator('#family-chart a.fc-link[href="/people/isaac/"]').focus().then(() => o.page.evaluate(() => document.activeElement?.getAttribute('href')));
+  check('abraham family: a chart name can take keyboard focus', focused === '/people/isaac/');
+  await o.ctx.close();
+
+  const lydian = await open('/people/alyattes/', { width: 390, height: 844 });
+  check('alyattes family: HTTP 200, no console errors', lydian.status === 200 && lydian.errors.length === 0, lydian.errors.join(' | '));
+  const lydianLinks = await familyLinks(lydian.page, '#family-chart', 1);
+  check('alyattes family: chart links Sadyattes, Alyattes and Croesus', lydianLinks.includes('/people/sadyattes/') && lydianLinks.includes('/people/alyattes/') && lydianLinks.includes('/people/croesus/'), lydianLinks.join(' '));
+  const lydianOverflow = await lydian.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+  check('alyattes family (390px): chart does not widen the page', !lydianOverflow);
+  await lydian.ctx.close();
+
+  const lone = await open('/people/christopher-columbus/', { width: 390, height: 844 });
+  check('columbus family: HTTP 200, no console errors', lone.status === 200 && lone.errors.length === 0, lone.errors.join(' | '));
+  const one = await familyLinks(lone.page, '#family-chart', 1);
+  check('columbus family: chart is the person alone', one.length === 1 && one[0] === '/people/christopher-columbus/', one.join(' '));
+  const loneList = await lone.page.locator('#family .family-list').first().innerText();
+  check('columbus family: father, mother and children are not recorded', /Father/.test(loneList) && /Mother/.test(loneList) && /Children/.test(loneList) && (loneList.match(/Not recorded/g) || []).length >= 2, loneList);
+  await lone.ctx.close();
+
+  const my = await open('/people/mycerinus/', { width: 1280, height: 900 });
+  const myNear = await familyLinks(my.page, '#family-chart', 1);
+  check('mycerinus family: father link is kept when the father record omits him from children', myNear.includes('/people/cheops/'), myNear.join(' '));
+  await my.ctx.close();
+}
 // A ruler with no original-language form still has the Name section, and the unsourced spelling is not given a fake footnote.
 {
   const o = await open('/people/rameses-ii/', { width: 1280, height: 900 });
