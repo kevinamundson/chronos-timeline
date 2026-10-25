@@ -247,7 +247,14 @@ table.raleigh thead th { position: sticky; top: 0; background: var(--bg-elev); }
 .person-timeline { margin-top: 8px; }
 h2.h3 { font-size: 17px; margin: 16px 0 8px; font-weight: 600; }
 
-/* Family chart on person pages. Patterns, not colour alone: solid bar, dashed card, plain card. */
+/* Family chart on person pages. The names are always shown. The chart is inside a closed disclosure. */
+.family-twirl { margin-top: 12px; border-top: 1px solid var(--sep); }
+.family-twirl > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 10px 0; font-weight: 600; }
+.family-twirl > summary::-webkit-details-marker { display: none; }
+.family-twirl > summary::before { content: ""; flex: 0 0 auto; width: 8px; height: 8px; border-right: 2px solid var(--label-2); border-bottom: 2px solid var(--label-2); transform: rotate(-45deg); }
+.family-twirl[open] > summary::before { transform: rotate(45deg) translate(-2px, -2px); }
+.family-twirl > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.family-twirl[open] .toolbar { margin-bottom: 8px; }
 .family-switch { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; max-width: 100%; font-size: 15px; cursor: pointer; text-align: left; }
 .family-switch input { appearance: none; -webkit-appearance: none; width: 44px; height: 26px; margin: 0; border-radius: 13px; background: var(--bg-fill); border: 1px solid var(--sep); position: relative; flex: 0 0 auto; cursor: pointer; }
 .family-switch input::after { content: ""; position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%; background: var(--label-2); }
@@ -269,8 +276,9 @@ h2.h3 { font-size: 17px; margin: 16px 0 8px; font-weight: 600; }
 .family-chart .card-to-add .fc-name { font-weight: 500; font-style: italic; }
 .family-list { list-style: none; padding: 0; margin: 0; }
 .family-list li { margin: 6px 0; }
-.family-list .rel { display: inline-block; min-width: 14em; font-weight: 600; }
-@media (max-width: 640px) { .family-list .rel { display: block; min-width: 0; } }
+.family-list .rel { display: inline-block; min-width: 7.5em; font-weight: 600; }
+.family-dialog .family-list .rel { min-width: 14em; }
+@media (max-width: 640px) { .family-list .rel, .family-dialog .family-list .rel { display: block; min-width: 0; } }
 .lg-father, .lg-missing, .lg-person { display: inline-block; width: 18px; height: 14px; border-radius: 3px; vertical-align: -2px; background: var(--bg-elev); border: 1px solid var(--sep); }
 .lg-father { border-left: 4px solid var(--t2); }
 .lg-missing { border-style: dashed; background: transparent; }

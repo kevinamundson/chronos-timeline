@@ -380,8 +380,9 @@
   }
 
   // ---------- Family chart (person pages) ----------
-  // family-chart draws the recorded father and named children. A dashed card is the other parent,
-  // who is not in the data. Depth 1 is parents and children. The switch pops the same chart out to depth 3.
+  // The names of the father, mother and children are in the page. The chart is drawn only after
+  // the disclosure is opened, so its box has a real height. Depth 1 is parents and children.
+  // The switch pops the same chart out to depth 3.
   function escHtml(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
@@ -402,41 +403,14 @@
   }
   function initFamily() {
     var payload = readJSON('family-data');
+    var details = document.getElementById('family-chart-details');
     var el = document.getElementById('family-chart');
     var slot = document.getElementById('family-chart-slot');
     var dialog = document.getElementById('family-dialog');
     var sw = document.getElementById('family-wide');
-    if (!payload || !el || !slot || !window.f3) return;
+    if (!payload || !details || !el || !slot || !window.f3) return;
+    var chart = null;
     function clone(data) { return JSON.parse(JSON.stringify(data)); }
-    var chart = window.f3.createChart(el, clone(payload.near));
-    chart.setTransitionTime(0)
-      .setAncestryDepth(1)
-      .setProgenyDepth(1)
-      .setShowSiblingsOfMain(false)
-      .setSingleParentEmptyCard(true, { label: 'Not recorded' })
-      .setCardXSpacing(220)
-      .setCardYSpacing(170)
-      .setSortChildrenFunction(function (a, b) {
-        var ay = a.data && a.data.y != null ? a.data.y : 1e15;
-        var by = b.data && b.data.y != null ? b.data.y : 1e15;
-        if (ay !== by) return ay - by;
-        return String((a.data && a.data.label) || '').localeCompare(String((b.data && b.data.label) || ''));
-      })
-      .updateMainId(payload.id);
-    chart.setCardHtml().setStyle('rect').setMiniTree(false)
-      .setCardDim({ w: 188, h: 92 })
-      .setCardInnerHtmlCreator(familyCardHtml)
-      .setOnCardClick(function (e, d) {
-        var info = d.data && d.data.data;
-        if (!info || d.data.to_add || !info.url) { e.preventDefault(); return; }
-        if (e.target && e.target.closest && e.target.closest('a')) return;
-        window.location.assign(info.url);
-      });
-    chart.setAfterUpdate(function () {
-      el.setAttribute('data-ready', String(el.querySelectorAll('a.fc-link').length));
-      el.setAttribute('data-depth', String(chart.store.state.ancestry_depth || 1));
-    });
-    chart.updateTree({ initial: true, tree_position: 'fit' });
     function show(wide) {
       var host = wide ? dialog.querySelector('.family-dialog-chart') : slot;
       host.appendChild(el);
@@ -455,26 +429,68 @@
       else if (el.parentElement !== slot) show(false);
       if (sw) sw.checked = false;
     }
-    if (sw && dialog) {
-      sw.addEventListener('change', function () { if (sw.checked) openWide(); else closeWide(); });
-      dialog.addEventListener('close', function () {
-        sw.checked = false;
-        if (el.parentElement !== slot) show(false);
+    function draw() {
+      if (chart) {
+        if (el.parentElement === slot) chart.updateTree({ tree_position: 'fit', transition_time: 0 });
+        return;
+      }
+      chart = window.f3.createChart(el, clone(payload.near));
+      chart.setTransitionTime(0)
+        .setAncestryDepth(1)
+        .setProgenyDepth(1)
+        .setShowSiblingsOfMain(false)
+        .setSingleParentEmptyCard(true, { label: 'Not recorded' })
+        .setCardXSpacing(220)
+        .setCardYSpacing(170)
+        .setSortChildrenFunction(function (a, b) {
+          var ay = a.data && a.data.y != null ? a.data.y : 1e15;
+          var by = b.data && b.data.y != null ? b.data.y : 1e15;
+          if (ay !== by) return ay - by;
+          return String((a.data && a.data.label) || '').localeCompare(String((b.data && b.data.label) || ''));
+        })
+        .updateMainId(payload.id);
+      chart.setCardHtml().setStyle('rect').setMiniTree(false)
+        .setCardDim({ w: 188, h: 92 })
+        .setCardInnerHtmlCreator(familyCardHtml)
+        .setOnCardClick(function (e, d) {
+          var info = d.data && d.data.data;
+          if (!info || d.data.to_add || !info.url) { e.preventDefault(); return; }
+          if (e.target && e.target.closest && e.target.closest('a')) return;
+          window.location.assign(info.url);
+        });
+      chart.setAfterUpdate(function () {
+        el.setAttribute('data-ready', String(el.querySelectorAll('a.fc-link').length));
+        el.setAttribute('data-depth', String(chart.store.state.ancestry_depth || 1));
       });
-      dialog.querySelector('[data-family-close]').addEventListener('click', function () {
-        closeWide();
-        sw.focus();
+      chart.updateTree({ initial: true, tree_position: 'fit', transition_time: 0 });
+      if (sw && dialog) {
+        sw.addEventListener('change', function () { if (sw.checked) openWide(); else closeWide(); });
+        dialog.addEventListener('close', function () {
+          sw.checked = false;
+          if (el.parentElement !== slot) show(false);
+        });
+        dialog.querySelector('[data-family-close]').addEventListener('click', function () {
+          closeWide();
+          sw.focus();
+        });
+        dialog.addEventListener('click', function (e) { if (e.target === dialog) closeWide(); });
+      }
+      document.querySelectorAll('[data-family]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var act = b.getAttribute('data-family');
+          if (act === 'fit') { chart.updateTree({ tree_position: 'fit', transition_time: 0 }); return; }
+          var canvas = el.querySelector('#f3Canvas');
+          if (!canvas || !canvas.__zoomObj || !window.d3) return;
+          window.d3.select(canvas).call(canvas.__zoomObj.scaleBy, act === 'in' ? 1.4 : 1 / 1.4);
+        });
       });
-      dialog.addEventListener('click', function (e) { if (e.target === dialog) closeWide(); });
     }
-    document.querySelectorAll('[data-family]').forEach(function (b) {
-      b.addEventListener('click', function () {
-        var act = b.getAttribute('data-family');
-        if (act === 'fit') { chart.updateTree({ tree_position: 'fit', transition_time: 0 }); return; }
-        var canvas = el.querySelector('#f3Canvas');
-        if (!canvas || !canvas.__zoomObj || !window.d3) return;
-        window.d3.select(canvas).call(canvas.__zoomObj.scaleBy, act === 'in' ? 1.4 : 1 / 1.4);
-      });
+    details.addEventListener('toggle', function () {
+      if (!details.open) {
+        if (dialog && dialog.open) closeWide();
+        return;
+      }
+      requestAnimationFrame(function () { draw(); });
     });
   }
   if (document.getElementById('family-data')) whenStyles(initFamily);

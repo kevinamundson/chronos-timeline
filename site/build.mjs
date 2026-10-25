@@ -599,23 +599,24 @@ function familySection(p) {
   const ancItems = ANC_LABELS.map((label, i) => `<li><span class="rel">${label}</span> ${anc.find((a) => a.gen === i + 1) ? link(anc.find((a) => a.gen === i + 1).id) : '<span class="muted">Not recorded</span>'}</li>`).join('');
   const descBlocks = DESC_LABELS.map((label, i) => `<h3>${label}</h3><p>${relNames(desc[i] || [])}</p>`).join('');
   return `<section class="card" id="family" aria-labelledby="family-h">
-  <div class="section-head"><h2 id="family-h">Family</h2>
+  <h2 id="family-h">Family</h2>
+  <ul class="family-list" id="family-brief">
+    <li><span class="rel">Father</span> ${anc[0] ? link(anc[0].id) : '<span class="muted">Not recorded</span>'}</li>
+    <li><span class="rel">Mother</span> <span class="muted">Not recorded</span></li>
+    <li><span class="rel">Children</span> ${relNames(desc[0] || [])}</li>
+  </ul>
+  <details class="family-twirl" id="family-chart-details">
+    <summary>Family chart</summary>
     <div class="toolbar" role="group" aria-label="Family chart controls">
       <button type="button" data-family="in" aria-label="Zoom in">+</button>
       <button type="button" data-family="out" aria-label="Zoom out">−</button>
       <button type="button" data-family="fit">Fit</button>
       <label class="family-switch"><input type="checkbox" role="switch" id="family-wide" aria-controls="family-dialog"><span>Great-grandparents and great-grandchildren</span></label>
-    </div></div>
+    </div>
   <p id="family-note" class="small muted">The chart shows the parents and children recorded for ${esc(p.title)}. A father is drawn when the data names him. Mothers are not stored, so a dashed card says the other parent is not recorded. Named children are not marked as son, daughter or adopted. A name with a page is a link.</p>
   <ul class="legend small" aria-label="Family chart legend"><li><span class="lg-father" aria-hidden="true"></span>Recorded as a father, solid bar</li><li><span class="lg-missing" aria-hidden="true"></span>Other parent, not recorded, dashed</li><li><span class="lg-person" aria-hidden="true"></span>Named person, role not recorded</li></ul>
   <div class="family-chart-slot" id="family-chart-slot"><div id="family-chart" class="f3 family-chart" role="group" aria-label="Family chart of ${esc(p.title)}"></div></div>
-  <noscript><p>The chart needs JavaScript. The list below has the same parents and children.</p></noscript>
-  <h3>Parents and children</h3>
-  <ul class="family-list">
-    <li><span class="rel">Father</span> ${anc[0] ? link(anc[0].id) : '<span class="muted">Not recorded</span>'}</li>
-    <li><span class="rel">Mother</span> <span class="muted">Not recorded</span></li>
-    <li><span class="rel">Children</span> ${relNames(desc[0] || [])}</li>
-  </ul>
+  <noscript><p>The chart needs JavaScript. The names above list the same parents and children.</p></noscript>
   <dialog id="family-dialog" class="family-dialog" aria-labelledby="family-dialog-h">
     <div class="family-dialog-bar"><h2 id="family-dialog-h">Family of ${esc(p.title)}</h2>
       <div class="toolbar" role="group" aria-label="Wider family chart controls">
@@ -630,6 +631,7 @@ function familySection(p) {
     <ul class="family-list">${ancItems}</ul>
     ${descBlocks}
   </dialog>
+  </details>
   ${jsonScript('family-data', { id: p.id, near: familyData(p.id, 1), wide: familyData(p.id, 3) })}
 </section>`;
 }
