@@ -792,3 +792,11 @@ Decision: Raleigh stays AM only. No BC parenthetical will be added. `year_bc_ad`
   3. Add a named Hebrew edition (for example a facsimile of the Leningrad Codex) as a second check before the letters are called the Masoretic writing rather than “as printed in TIPNR.”
   4. Name the inscription editions to read next. Nothing is invented in the meantime.
 - **Recommendation:** option 1 for this merge, and option 3 before any caption says “Masoretic text” rather than “TIPNR.” The footnotes already say the letters are the ones TIPNR prints.
+
+## J. Bible reference popover (2026-10-24)
+
+### J1. Amundson Interpretive Version address — answered 2026-10-25
+
+- **Answer:** the files are at `https://aivbible.kevinamundson.me/usx/`, with each book in a subfolder.
+- **What the popover does now:** the Berean Standard Bible still comes from `https://bible.helloao.org/api/BSB/{book}/{chapter}.simple.json`. The Amundson Interpretive Version is read as USX. For 1 Samuel it tries, in order, `/usx/1SA/08-1SA.usx`, `/usx/08-1SA/08-1SA.usx`, `/usx/08-1SA.usx`, and `/usx/1SA/1SA.usx`. The other books use the same pattern. The names `08-1SA.usx` and the rest are the file names in the local AIV USX set. Footnotes are left out. If every request fails, the Berean Standard Bible still shows and the AIV block says it could not be loaded.
+- **Still open:** on 2026-10-25 the host returned HTTP 520 for `/usx/` and for those files, with no `Access-Control-Allow-Origin` header, so the filename inside the folder could not be confirmed from the live site. When the host is up it still has to send that header, or the browser cannot read the USX.
