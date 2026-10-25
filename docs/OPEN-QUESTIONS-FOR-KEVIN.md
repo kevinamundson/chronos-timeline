@@ -784,3 +784,17 @@ Decision: Raleigh stays AM only. No BC parenthetical will be added. `year_bc_ad`
   3. Add a named Hebrew edition (for example a facsimile of the Leningrad Codex) as a second check before the letters are called the Masoretic writing rather than “as printed in TIPNR.”
   4. Name the inscription editions to read next. Nothing is invented in the meantime.
 - **Recommendation:** option 1 for this merge, and option 3 before any caption says “Masoretic text” rather than “TIPNR.” The footnotes already say the letters are the ones TIPNR prints.
+
+## J. Bible reference popover (2026-10-24)
+
+### J1. Confirm the Amundson Interpretive Version address
+
+- **Why it matters:** a written reference (not an existing BibleHub link) opens a popover. The Berean Standard Bible is loaded from `https://bible.helloao.org/api/BSB/{book}/{chapter}.simple.json`. The Amundson Interpretive Version is then requested from `https://aivbible.kevinamundson.me`. On 2026-10-24 that host returned HTTP 520 for every path, and the error response sent no `Access-Control-Allow-Origin` header, so the browser blocked it. The live layout could not be opened. When the host is up it still has to send that header, or the popover cannot read the JSON.
+- **What the popover requests, in order:**
+  1. `/translations/aiv/json/<book>/chapter-<n>.json`
+  2. `/json/<book>/chapter-<n>.json`
+  Book folders follow the public chapter files (`genesis`, `1-corinthians`, `song-of-songs`). The verse `text` is shown. HTML in `links` or `comment` is not rendered. If both requests fail, the Berean Standard Bible still shows and the AIV block says it could not be loaded.
+- **Options:**
+  1. Keep these two paths.
+  2. Replace them with the path the site actually serves.
+- **Recommendation:** option 1 until the host answers. The standard text on the popover stays the Berean Standard Bible. Scripture links stay on the Berean Literal Bible at BibleHub.

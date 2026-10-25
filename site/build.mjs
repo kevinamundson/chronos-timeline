@@ -282,9 +282,11 @@ ${body}
 </main>
 <footer class="site-footer"><div class="wrap small muted">
 <p>Young-Earth Creation framework; the Bible is the infallible standard. Sorted by <a href="/chronologies/">CFAH</a> (Griffith &amp; White, <i>Answers Research Journal</i>), then CFAH-1 Table 1, Ussher–Jones, Ussher.</p>
-<p>Place data © <a href="https://www.openbible.info/geo/" rel="noopener">OpenBible.info</a>, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>. Map tiles © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors. Historic maps: <a href="https://www.loc.gov/maps/" rel="noopener">Library of Congress</a>. Timeline: <a href="https://visjs.org/" rel="noopener">vis-timeline</a>; map: <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>; search: <a href="https://pagefind.app/" rel="noopener">Pagefind</a>.</p>
+<p>Place data © <a href="https://www.openbible.info/geo/" rel="noopener">OpenBible.info</a>, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>. Map tiles © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors. Historic maps: <a href="https://www.loc.gov/maps/" rel="noopener">Library of Congress</a>. Timeline: <a href="https://visjs.org/" rel="noopener">vis-timeline</a>; map: <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>; search: <a href="https://pagefind.app/" rel="noopener">Pagefind</a>. Reference finding: <a href="https://github.com/bibleup/bibleup" rel="noopener">BibleUp</a>.</p>
+<p>A written Bible reference opens the Berean Standard Bible from <a href="https://bible.helloao.org/" rel="noopener">bible.helloao.org</a>, with the Amundson Interpretive Version from <a href="https://aivbible.kevinamundson.me" rel="noopener">aivbible.kevinamundson.me</a>. Scripture links still open the Berean Literal Bible on BibleHub.</p>
 </div></footer>
 ${scripts}
+<script src="/assets/bibleup.js" defer></script>
 </body></html>`;
 }
 
@@ -316,6 +318,14 @@ mkdirSync(join(DIST, 'assets/vendor/vis-timeline'), { recursive: true });
 cpSync(join(NM, 'vis-timeline/standalone/umd/vis-timeline-graph2d.min.js'), join(DIST, 'assets/vendor/vis-timeline/vis-timeline-graph2d.min.js'));
 cpSync(join(NM, 'vis-timeline/styles/vis-timeline-graph2d.min.css'), join(DIST, 'assets/vendor/vis-timeline/vis-timeline-graph2d.min.css'));
 cpSync(join(NM, 'vis-timeline/LICENSE.MIT.txt'), join(DIST, 'assets/vendor/vis-timeline/LICENSE.MIT.txt'));
+mkdirSync(join(DIST, 'assets/vendor/bibleup'), { recursive: true });
+cpSync(join(NM, '@bibleup/bibleup/LICENSE'), join(DIST, 'assets/vendor/bibleup/LICENSE.txt'));
+{
+  // BibleUp's matcher, then site/src/bibleup.js. One file, one script tag on every page.
+  const lib = readFileSync(join(NM, '@bibleup/bibleup/dist/umd/bibleup-core.min.js'), 'utf8').replace(/\n?\/\/# sourceMappingURL=.*\s*$/, '\n');
+  const init = readFileSync(join(here, 'src/bibleup.js'), 'utf8');
+  writeFileSync(join(DIST, 'assets/bibleup.js'), `${lib}${init}`);
+}
 
 const sortKey = (a, b) => (a.sorting_year ?? Infinity) - (b.sorting_year ?? Infinity) || (a.sort_order_within_year ?? 0) - (b.sort_order_within_year ?? 0) || a.title.localeCompare(b.title);
 const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
@@ -747,15 +757,17 @@ ${kingDoc.not_recorded?.length ? `<section class="card"><h2>Lists not stored</h2
 
 // About
 out('about/index.html', page({ title: 'About', path: '/about/', pagefind: false, body: `<h1>About this portal</h1>
-<section class="card"><p>This portal presents ancient history within a Young-Earth Creation framework, with the Bible as the infallible standard (Masoretic Text, no gaps in Genesis 5 and 11). The master timeline is weighted and sorted by the <i>Chronological Framework of Ancient History</i> (CFAH) by Kenneth C. Griffith and Darrell K. White, published in <i>Answers Research Journal</i>. Other chronologies are displayed alongside without changing the sort order.</p>
-<p>Every date is entered only from a source that was read, with a citation. Where a chronology has not yet been checked the record says so instead of guessing.</p></section>
+<section class="card"><p class="bu-ignore">This portal presents ancient history within a Young-Earth Creation framework, with the Bible as the infallible standard (Masoretic Text, no gaps in Genesis 5 and 11). The master timeline is weighted and sorted by the <i>Chronological Framework of Ancient History</i> (CFAH) by Kenneth C. Griffith and Darrell K. White, published in <i>Answers Research Journal</i>. Other chronologies are displayed alongside without changing the sort order.</p>
+<p>Every date is entered only from a source that was read, with a citation. Where a chronology has not yet been checked the record says so instead of guessing.</p>
+<p>A reference written in the page, such as John 3:16, opens the Berean Standard Bible beside the sentence. Scripture links still open the Berean Literal Bible on BibleHub.</p></section>
 <section class="card"><h2>Credits &amp; licences</h2><ul class="links">
 <li>Place identifications and coordinates: ${ext('https://www.openbible.info/geo/', 'OpenBible.info')}, licensed ${ext('https://creativecommons.org/licenses/by/4.0/', 'CC BY 4.0')}.</li>
 <li>Base map tiles: © ${ext('https://www.openstreetmap.org/copyright', 'OpenStreetMap')} contributors (ODbL), served under the OSM tile usage policy.</li>
 <li>Historic maps: ${ext('https://www.loc.gov/maps/', 'Library of Congress Geography and Map Division')}; thumbnails are loaded from tile.loc.gov.</li>
 <li>CFAH papers (© Answers in Genesis) and Floyd Nolen Jones materials are copyrighted: they are cited and linked, never reproduced.</li>
-<li>Software: vis-timeline (Apache-2.0/MIT), Leaflet (BSD-2-Clause), Pagefind (MIT).</li>
+<li>Software: vis-timeline (Apache-2.0/MIT), Leaflet (BSD-2-Clause), Pagefind (MIT), ${ext('https://github.com/bibleup/bibleup', 'BibleUp')} (MIT).</li>
 <li>Scripture links open the Berean Literal Bible on BibleHub (chapter page, at the first verse of the reference).</li>
+<li>Reference popovers show the Berean Standard Bible from the ${ext('https://bible.helloao.org/', 'Free Use Bible API')}, under the terms at ${ext('https://berean.bible/', 'berean.bible')}. The Amundson Interpretive Version is requested from ${ext('https://aivbible.kevinamundson.me', 'aivbible.kevinamundson.me')} and is not the standard text.</li>
 <li>Hebrew, Aramaic and Greek spellings of biblical names: ${ext('https://github.com/STEPBible/STEPBible-Data', 'STEPBible TIPNR')}, ${ext('https://creativecommons.org/licenses/by/4.0/', 'CC BY 4.0')}. The name file itself is not copied here.</li></ul></section>` }));
 
 // Search

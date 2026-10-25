@@ -12,6 +12,7 @@
     "verify:live": "node site/verify-timelines.mjs --base https://chronos.kevinamundson.me --shots"
   },
   "devDependencies": {
+    "@bibleup/bibleup": "^1.1.0",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "leaflet": "^1.9.4",
