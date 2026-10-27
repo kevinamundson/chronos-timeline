@@ -13,6 +13,7 @@ All rules are in [`AGENTS.md`](../AGENTS.md). Each task, or each source within T
 3. **T4** transparent spans.
 4. **T4b** Jasher reign lengths (edition settled; see T4b).
 5. **T2** free links: **ON HOLD.** Do not start it until Kevin approves the schema.
+6. **T5** standby placement for records with no tier date. Kevin approved the schema and the rule on 2026-10-27.
 
 Kevin may reorder these.
 
@@ -232,6 +233,32 @@ This is still **draft wording**. Kevin gives final approval in the T3 PR.
 - Import only **reign lengths or regnal statements the text itself states**, with chapter, verse and the 1840 page. Never compute BC years. Record AM figures only if the text gives them; do not convert them.
 - Compare each figure with the Genesis 5 genealogy (the MT ages already on the records). Flag every conflict as CONFLICT in `data/jasher-dates-extract.md` and in a new open-questions section.
 - Put reign lengths in the person's `dates.reign` slot. Draw them as T4 spans only if the text prints both ends, which is unlikely; otherwise show a point with the length.
+
+---
+
+## T5. Standby placement for records with no tier date
+
+**Approved by Kevin on 2026-10-27.** This is a placement, not a sort tier.
+
+**Goal:** people with tier `none` (`sorting_year` null) are absent from the home timeline and from every person page's context timeline. Give each record that still has no tier date an optional `standby` placement so it can be drawn, without ever writing `sorting_year` or `sorting_basis`.
+
+**Rule:** Records with no tier date get a standby placement (source-printed BC/AD year, else the linked record's year); it never sets sort; it is replaced automatically when a tier date arrives.
+
+**Order inside `scripts/standby/compute.mjs`** (idempotent; run after every other importer, including `scripts/cfah/import.mjs`):
+
+1. **source-printed.** A `year_bc_ad` a chronology already stores on birth, death, lifespan, or reign. The first chronology by `sort_priority` wins. Anno Mundi, regnal lengths, and Julian Period figures are not converted.
+2. **linked-record.** Otherwise the `sorting_year` of a linked event of that person's own life, else the nearest preceding dated ruler in the same `data/king-lists.json` list, else a parent or child. The year is copied as-is. `from_record` names that record. The note says no reign length or age was added or subtracted.
+3. Otherwise no standby. The record stays on the Undated list.
+
+When `sorting_year` is set, the script removes `standby`. The validator rejects a record that has both, checks `from_record` and source-printed years, and prints counts by basis plus the fully undated count.
+
+**Site:** standby records use a dashed grey treatment, not a tier colour. The home timeline and person timelines hide them until “Standby (no tier date)” is turned on. The control is off by default. Tooltips say “standby placement” and name the source, or “placed with” the linked record. Person pages for standby people get a window from that year and a note that it is not a sort year. The Undated list keeps only records with no standby. In a sorted list, tiered records come before standby records in the same year.
+
+**Acceptance criteria:**
+
+- `npm run validate`, `build`, and `verify` pass.
+- Tier counts in the validate summary are unchanged. No `sorting_year` changes. The diff of `sorting_year` and `tier` against `origin/main` is empty.
+- The PR lists standby counts by basis and at least 10 records for spot-checking.
 
 ---
 

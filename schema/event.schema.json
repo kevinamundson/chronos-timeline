@@ -11,6 +11,7 @@
     "type": { "const": "event" },
     "sorting_year": { "type": "integer", "not": { "const": 0 }, "description": "CFAH-weighted sort key; negative = BC. Uses the cfah year when present; otherwise the fallback named in sorting_basis." },
     "sorting_basis": { "$ref": "common.schema.json#/$defs/sortingBasis" },
+    "standby": { "$ref": "common.schema.json#/$defs/standbyPlacement", "description": "Optional placement when sorting_year is null. Allowed for future use. Events that already have a sort year must not carry it." },
     "sort_order_within_year": { "type": "integer", "description": "Tie-breaker for events in the same year (lower first)." },
     "chronologies": { "$ref": "common.schema.json#/$defs/chronologyEntries" },
     "people": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true },

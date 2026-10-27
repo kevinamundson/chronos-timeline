@@ -12,6 +12,13 @@
     "chronology": "cfah",
     "note": "No tier 1-4 dates this record's birth; unsorted (null)."
   },
+  "standby": {
+    "year_bc_ad": -2139,
+    "basis": "linked-record",
+    "source_chronology": null,
+    "from_record": "ushpia-founds-assur",
+    "note": "Standby placement only, placed with \"Ushpia founds the city of Assur (estimate)\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+  },
   "father": "shem",
   "children": [],
   "dates": {

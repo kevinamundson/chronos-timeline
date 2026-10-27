@@ -12,6 +12,13 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year."
   },
+  "standby": {
+    "year_bc_ad": -1804,
+    "basis": "source-printed",
+    "source_chronology": "cfah",
+    "from_record": null,
+    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Reign (y): ~19.5; Start (BC): ~1804; End (BC): ~1785). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
   "father": null,
   "children": [],
   "dates": {

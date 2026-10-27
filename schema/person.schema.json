@@ -11,6 +11,7 @@
     "alt_names": { "type": "array", "items": { "type": "string" } },
     "sorting_year": { "type": ["integer", "null"], "description": "CFAH-weighted birth year (negative = BC); null if no chronology dates the birth." },
     "sorting_basis": { "$ref": "common.schema.json#/$defs/sortingBasis" },
+    "standby": { "$ref": "common.schema.json#/$defs/standbyPlacement", "description": "Optional placement when sorting_year is null. Never a sort year. Removed when a tier date arrives." },
     "father": { "anyOf": [ { "$ref": "common.schema.json#/$defs/slug" }, { "type": "null" } ] },
     "children": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true, "description": "Named children recorded in the data set (not exhaustive; Gen 5 'sons and daughters')." },
     "scripture_facts": {

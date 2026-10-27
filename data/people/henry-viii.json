@@ -15,6 +15,13 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year, and Morecraft gives none."
   },
+  "standby": {
+    "year_bc_ad": 1509,
+    "basis": "source-printed",
+    "source_chronology": "morecraft",
+    "from_record": null,
+    "note": "Standby placement only. Joe Morecraft III, A Christian Survey of World History from Creation to the Reformation prints this BC/AD year on the reign entry (1509-1547). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
   "father": null,
   "children": [],
   "dates": {
