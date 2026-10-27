@@ -30,13 +30,26 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-11-t1-d20:psammuthis-d29:psammuthis:reign"
+      },
+      {
+        "source": "cory",
+        "date": "“Psammuthis 1 year”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 124; Manetho, ap. Syncellus, Chronicon 73 to 78, and Eusebius, Chronicle 16 and 17",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n168/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Twenty-ninth Dynasty. Not the Psammuthis of the twenty-sixth dynasty, who is given 6 years."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-11-osf"
+    "cfah-11-osf",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -44,6 +57,11 @@
       "source_id": "cfah-11-osf",
       "url": "https://osf.io/ksaz9/",
       "locator": "Table 1, p. 22"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "dynasty": "Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30)"

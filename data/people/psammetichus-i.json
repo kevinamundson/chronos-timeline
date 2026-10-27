@@ -100,6 +100,18 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=Psammetichus%20ruled%20Egypt%20for%20fifty%2Dfour%20years%2C%20during%20twenty%2Dnine",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "Azotus = Ashdod. DERIVED (not Herodotus's figure): Saite reigns back from the conquest by Cambyses (CFAH AP-8, 525 BC): Psammenitus ½ + Amasis 44 + Apries 25 + Psammis 6 + Necos 16 + Psammetichus 54 = 145½ years, so Psammetichus came to the throne about 671/670 BC (approximate)."
+      },
+      {
+        "source": "cory",
+        "date": "“Psammitichus 54 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 123; Manetho, ap. Syncellus, Chronicon 73 to 78, and Eusebius, Chronicle 16 and 17",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n167/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The edition spells this name Psammitichus. Attached to the existing psammetichus-i."
       }
     ]
   },
@@ -110,7 +122,8 @@
   "sources": [
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "cfah-9-osf"
+    "cfah-9-osf",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -123,6 +136,11 @@
       "source_id": "cfah-9-osf",
       "url": "https://osf.io/hv3b2/",
       "locator": "Table 2, p. 58"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

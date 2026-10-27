@@ -167,6 +167,18 @@
         "link": "https://archive.org/details/sacredprofanehis01shuc/page/n344/mode/1up",
         "source_text_id": "shuckford-sacred-profane-1819",
         "note": "Page 252 says he has fixed this birth by the Hebrew chronology. The same paragraph also says three hundred and fifty-two years after the Flood. Page 169 prints A. M. 2008. Not reconciled. The Tolle Lege facsimile prints a clear 1 in A. M. 2001. On Internet Archive leaf n344 the same sentence is present, and the last digit is blotted, so that leaf alone does not confirm 1 or 8. The year stored is the clear facsimile digit. See open question K3."
+      },
+      {
+        "source": "cory",
+        "date": "“The Birth of Abraham”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 98; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n142/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. The table prints A.M. 2302."
       }
     ],
     "death": [
@@ -261,7 +273,8 @@
     "jordan-bc-6-5",
     "jordan-compilation-anno-mundi",
     "raleigh-history-of-the-world-1617",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "cory-ancient-fragments-1876"
   ],
   "free_source_links": [
     {
@@ -288,6 +301,11 @@
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "related": [

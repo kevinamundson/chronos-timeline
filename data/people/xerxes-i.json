@@ -116,6 +116,18 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=It%20was%20not%20till%20the%20close%20of%20the",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "Agrees with CFAH AP-13 (480 BC) for the invasion, which this interval is counted towards."
+      },
+      {
+        "source": "cory",
+        "date": "“Xerxes the Great 21 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 124; Manetho, ap. Syncellus, Chronicon 73 to 78, and Eusebius, Chronicle 16 and 17",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n168/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The text says 'the Great'. It does not say 'the First'. The Xerxes of 2 months, later on this page, is a different sentence and a different record."
       }
     ]
   },
@@ -129,7 +141,8 @@
   "sources": [
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -142,6 +155,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7",
       "locator": "Book 7"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

@@ -60,13 +60,26 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"4352 3670\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 23 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Persia.."
+      },
+      {
+        "source": "cory",
+        "date": "“(Darius) Ochus, who ruled Persia 20 years and Egypt two years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 125; Manetho, ap. Syncellus, Chronicon 73 to 78, and Eusebius, Chronicle 16 and 17",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n169/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Both figures are printed. The dynasty total of 9 years matches Egypt's 2 plus the next two reigns, not the 20."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -74,6 +87,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 791b"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

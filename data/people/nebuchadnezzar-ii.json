@@ -86,6 +86,19 @@
         "note": "Year cell \"4089 3407 414\". The third printed figure 414 is the column \"Temple\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 44 at the end of the name is the reign length he prints. The end year is not printed on this row."
       },
       {
+        "source": "shuckford",
+        "date": "A. M. 3426, when Nebuchadnezzar was king of Babylon, and about one hundred and sixty-nine years after the time where I am to end this work",
+        "year_am": 3426,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book V, p. 319 (facsimile PDF p. 415)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n412/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "A year in which Nebuchadnezzar was king. He does not say it is the accession. The 169 years measure how far this date falls after the end of the present volume."
+      },
+      {
         "source": "cory",
         "date": "“Nabuchodonosorus [Nebuchadnezzar] beseiged Tyre for thirteen years”",
         "year_am": null,
@@ -134,17 +147,28 @@
         "note": "Second \"43 years\" on this page, in the captivity narrative. Same length as the list above."
       },
       {
-        "source": "shuckford",
-        "date": "A. M. 3426, when Nebuchadnezzar was king of Babylon, and about one hundred and sixty-nine years after the time where I am to end this work",
-        "year_am": 3426,
-        "year_am_end": null,
+        "source": "cory",
+        "date": "“our city was desolate during the interval of seventy years, until the days of Cyrus king of Persia”",
+        "year_am": null,
         "year_bc_ad": null,
         "year_bc_ad_end": null,
-        "precision": "year",
-        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book V, p. 319 (facsimile PDF p. 415)",
-        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n412/mode/1up",
-        "source_text_id": "shuckford-sacred-profane-1819",
-        "note": "A year in which Nebuchadnezzar was king. He does not say it is the accession. The 169 years measure how far this date falls after the end of the present volume."
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 64; Berossus, ap. Josephus, Against Apion, book 1",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n108/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Josephus, Against Apion, book 1, chapter 19, as this page cites it. Nabopallasar sent Nabuchodonosor. No BC year is printed."
+      },
+      {
+        "source": "cory",
+        "date": "“when he had reigned forty-three years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 67; Berossus, ap. Josephus, Against Apion, book 1",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n111/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Nabuchodonosor. Pass 1, p. 88, prints 43 years."
       }
     ]
   },
@@ -160,8 +184,8 @@
     "generations-preparing",
     "generations-preparing-2e",
     "raleigh-history-of-the-world-1617",
-    "cory-ancient-fragments-1876",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -171,14 +195,14 @@
       "locator": "Chronological Table, sig. 789b"
     },
     {
-      "source_id": "cory-ancient-fragments-1876",
-      "url": "https://archive.org/details/corysancientfrag00coryuoft",
-      "locator": "1876 Hodges edition, full view"
-    },
-    {
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "alt_names": [

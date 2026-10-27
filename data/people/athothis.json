@@ -46,6 +46,18 @@
         "link": "https://archive.org/details/sacredprofanehis01shuc/page/n339/mode/1up",
         "source_text_id": "shuckford-sacred-profane-1819",
         "note": "The spelling on the page is Athothes. The existing person is Athothis, whom CFAH equates with Narmer. Shuckford does not say Narmer. See open question K7."
+      },
+      {
+        "source": "cory",
+        "date": "“reigned 57 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 112; Manetho, ap. Syncellus, Chronicon 54 to 59, and Eusebius, Chronicle 14 and 15",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n156/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Son of Menes. The record already existed."
       }
     ]
   },
@@ -53,7 +65,8 @@
   "scripture_refs": [],
   "sources": [
     "cfah-7b-osf",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -66,6 +79,11 @@
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "dynasty": "Egypt Dynasty 1 (Thinis)"

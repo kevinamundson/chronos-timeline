@@ -209,6 +209,32 @@
       "note": "Narrative sentence. The chronological table prints the same yeere of the World. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. No BC conversion."
     },
     {
+      "source": "shuckford",
+      "date": "the Flood which began in the six hundredth year of Noah, who was born anno mundi 1056, happened anno mundi 1656; it continued about a year, and so ended 1657",
+      "year_am": 1656,
+      "year_am_end": 1657,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "year-range",
+      "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book I, p. 44 (facsimile PDF p. 134)",
+      "link": "https://archive.org/details/sacredprofanehis01shuc/page/n131/mode/1up",
+      "source_text_id": "shuckford-sacred-profane-1819",
+      "note": "Page 13 states the same beginning: into the ark in the six hundredth year of Noah’s life, about the beginning of our November, according to the Hebrew computation, Anno Mundi 1656. The “about” is the month and the length of the Flood, not the two year-numbers."
+    },
+    {
+      "source": "shuckford",
+      "date": "so fix it A. M. 2263, instead of 1657",
+      "year_am": 2263,
+      "year_am_end": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book I, p. 50 (facsimile PDF p. 140)",
+      "link": "https://archive.org/details/sacredprofanehis01shuc/page/n137/mode/1up",
+      "source_text_id": "shuckford-sacred-profane-1819",
+      "note": "This is the Septuagint result as he works it, not the Hebrew date he follows. The Septuagint table printed under this sentence was seen. Its other cells are not entered: Seth’s death-year and Methuselah’s lifespan did not read cleanly. See open question K11."
+    },
+    {
       "source": "cory",
       "date": "“the sum total of all the kings is ten ; and the period which they collectively reigned amounts to one hundred and twenty sari”",
       "year_am": null,
@@ -257,30 +283,16 @@
       "note": "The duration of those 86 reigns, as printed. Not a BC year. A run of 33,091 years from the Flood to the Median dynasty cannot sit in the CFAH span from AP-29 (2348–2347 B.C.) to the Median dynasty (the record prints 2191–1968 B.C.). Display only."
     },
     {
-      "source": "shuckford",
-      "date": "the Flood which began in the six hundredth year of Noah, who was born anno mundi 1056, happened anno mundi 1656; it continued about a year, and so ended 1657",
-      "year_am": 1656,
-      "year_am_end": 1657,
+      "source": "cory",
+      "date": "“The Flood occurred”",
+      "year_am": null,
       "year_bc_ad": null,
       "year_bc_ad_end": null,
-      "precision": "year-range",
-      "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book I, p. 44 (facsimile PDF p. 134)",
-      "link": "https://archive.org/details/sacredprofanehis01shuc/page/n131/mode/1up",
-      "source_text_id": "shuckford-sacred-profane-1819",
-      "note": "Page 13 states the same beginning: into the ark in the six hundredth year of Noah’s life, about the beginning of our November, according to the Hebrew computation, Anno Mundi 1656. The “about” is the month and the length of the Flood, not the two year-numbers."
-    },
-    {
-      "source": "shuckford",
-      "date": "so fix it A. M. 2263, instead of 1657",
-      "year_am": 2263,
-      "year_am_end": null,
-      "year_bc_ad": null,
-      "year_bc_ad_end": null,
-      "precision": "year",
-      "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book I, p. 50 (facsimile PDF p. 140)",
-      "link": "https://archive.org/details/sacredprofanehis01shuc/page/n137/mode/1up",
-      "source_text_id": "shuckford-sacred-profane-1819",
-      "note": "This is the Septuagint result as he works it, not the Hebrew date he follows. The Septuagint table printed under this sentence was seen. Its other cells are not entered: Seth’s death-year and Methuselah’s lifespan did not read cleanly. See open question K11."
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 98; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n142/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. The table prints A.M. 2262. Scripture's Masoretic figure is not 2262."
     }
   ],
   "people": [
@@ -311,8 +323,8 @@
     "jordan-compilation-anno-mundi",
     "morecraft-christian-survey",
     "raleigh-history-of-the-world-1617",
-    "cory-ancient-fragments-1876",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "cory-ancient-fragments-1876"
   ],
   "free_source_links": [
     {
@@ -346,14 +358,14 @@
       "locator": "Chronological Table, sig. 96a"
     },
     {
-      "source_id": "cory-ancient-fragments-1876",
-      "url": "https://archive.org/details/corysancientfrag00coryuoft",
-      "locator": "1876 Hodges edition, full view"
-    },
-    {
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "related": [

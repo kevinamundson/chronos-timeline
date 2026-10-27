@@ -41,6 +41,42 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n132/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "A footnote says \"Nabopollasar, see p. 84.\" The p. 84 mention was not given a separate length in this pass."
+      },
+      {
+        "source": "cory",
+        "date": "“our city was desolate during the interval of seventy years, until the days of Cyrus king of Persia”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 64; Berossus, ap. Josephus, Against Apion, book 1",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n108/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Josephus, Against Apion, book 1, chapter 19, as this page cites it. Nabopallasar sent Nabuchodonosor. No BC year is printed."
+      },
+      {
+        "source": "cory",
+        "date": "“died in the city of Babylon, after he had reigned twenty-nine years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 65; Berossus, ap. Josephus, Against Apion, book 1",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n109/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The father is Nabopollasar. Pass 1, p. 88, prints that Nabupalsar (Nabopollassar) reigned 20 years. Both are kept."
+      },
+      {
+        "source": "cory",
+        "date": "“Nabopollasar, (whom Alexander Polyhistor calls Sardanapallus)”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 84; Alexander Polyhistor, ap. Eusebius",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n128/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The parenthesis identifies Nabopollasar with Sardanapallus. The records were not merged. No new length is printed in this sentence."
       }
     ]
   },

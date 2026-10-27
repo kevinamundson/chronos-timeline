@@ -61,10 +61,24 @@
       "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
       "source_text_id": "morecraft-christian-survey",
       "note": "Repeated on PDF pp. 34 and 51."
+    },
+    {
+      "source": "cory",
+      "date": "“our city was desolate during the interval of seventy years, until the days of Cyrus king of Persia”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 64; Berossus, ap. Josephus, Against Apion, book 1",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n108/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Josephus, Against Apion, book 1, chapter 19, as this page cites it. Nabopallasar sent Nabuchodonosor. No BC year is printed."
     }
   ],
   "people": [
-    "nebuchadnezzar-ii"
+    "nebuchadnezzar-ii",
+    "nabopolassar",
+    "cyrus-the-great"
   ],
   "locations": [],
   "maps": [],
@@ -75,7 +89,8 @@
     "generations-preparing",
     "generations-preparing-2e",
     "morecraft-christian-survey",
-    "cfah-1"
+    "cfah-1",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -88,6 +103,11 @@
       "source_id": "cfah-1",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
       "locator": "Table 1 \"Biblically derived dates from Ussher and Jones\""
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

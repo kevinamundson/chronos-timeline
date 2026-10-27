@@ -50,13 +50,26 @@
         "link": "https://archive.org/details/sacredprofanehis01shuc/page/n399/mode/1up",
         "source_text_id": "shuckford-sacred-profane-1819",
         "note": "The footnote says Archbishop Usher supposes that the Parian Chronicon was composed A. M. 3741, and that the Marble puts Danaus 1,247 years earlier. The 1,247 is the Marble’s interval as he reports it. A. M. 3741 is entered separately and is not Danaus’s year."
+      },
+      {
+        "source": "cory",
+        "date": "“Sethosis, who was called also Aegyptus, as was his brother Armais known by the name of Danaus”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 130; Manetho, ap. Josephus, Against Apion, book 1",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n174/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "No reign length is printed for Sethosis. The edition prints the name as Aegyptus (the scan's capital is Æ). Attached also to danaus because this sentence names him. Not merged with Danaus."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -64,6 +77,11 @@
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

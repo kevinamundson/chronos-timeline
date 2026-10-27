@@ -33,13 +33,26 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-7b-t6-d1:kenkenes-ka-sekhen:kenkenes:reign"
+      },
+      {
+        "source": "cory",
+        "date": "“reigned 31 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 112; Manetho, ap. Syncellus, Chronicon 54 to 59, and Eusebius, Chronicle 14 and 15",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n156/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Son of Athothis. The record already exists, from CFAH Dynasty 1 of Thinis. Cory is not used to confirm the alternate name Ka Sekhen."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-7b-osf"
+    "cfah-7b-osf",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -47,6 +60,11 @@
       "source_id": "cfah-7b-osf",
       "url": "https://osf.io/tuwnc/",
       "locator": "Table 6, p. 92"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "dynasty": "Egypt Dynasty 1 (Thinis)"

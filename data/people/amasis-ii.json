@@ -100,6 +100,30 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_3#:~:text=he%20had%20died%20after%20ruling%20Egypt%20forty%20and",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "Amasis died before Cambyses arrived; Psammenitus his son was king. DERIVED (not Herodotus's figure): 525 BC (CFAH AP-8) + ½ year (Psammenitus) + 44 = about 570/569 BC for Amasis's accession."
+      },
+      {
+        "source": "cory",
+        "date": "“Amosis 44 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 123; Manetho, ap. Syncellus, Chronicon 73 to 78, and Eusebius, Chronicle 16 and 17",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n167/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Twenty-sixth Dynasty. The edition spells the name Amosis here. Diodorus (p. 203) prints 55 years for Amasis. Both figures are kept."
+      },
+      {
+        "source": "cory",
+        "date": "“He died after a reign of 55 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 203; Diodorus Siculus, Hist., Book ii",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n247/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "At the time Cambyses invaded Egypt, in the 3rd year of the 63rd Olympiad. The Olympiad is not converted. Manetho (p. 123) prints 44 years."
       }
     ]
   },
@@ -110,7 +134,8 @@
   "sources": [
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "cfah-9-osf"
+    "cfah-9-osf",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -128,6 +153,11 @@
       "source_id": "cfah-9-osf",
       "url": "https://osf.io/hv3b2/",
       "locator": "Table 2, p. 58"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

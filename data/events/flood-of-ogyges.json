@@ -27,14 +27,29 @@
       "cfah_ap": "AP-107",
       "cfah_preprint": true,
       "cfah_key": "cfah:ap-107:flood-of-ogyges"
+    },
+    {
+      "source": "cory",
+      "date": "“from the Flood of Ogyges and the reign of Phoroneus to the first Olympiad was 1020 years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 99; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n143/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted."
     }
   ],
-  "people": [],
+  "people": [
+    "phoroneus"
+  ],
   "locations": [],
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-19-osf"
+    "cfah-19-osf",
+    "cory-ancient-fragments-1876"
   ],
   "related": [
     "reign-of-phoroneus"
@@ -44,6 +59,11 @@
       "source_id": "cfah-19-osf",
       "url": "https://osf.io/a5g6x/",
       "locator": "p. 9, AP-107"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

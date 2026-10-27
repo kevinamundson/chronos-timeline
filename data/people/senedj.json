@@ -33,13 +33,26 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-7b-t14-d2:senedj-sethenes:senedj:reign"
+      },
+      {
+        "source": "cory",
+        "date": "“Sethenes reigned 41 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 113; Manetho, ap. Syncellus, Chronicon 54 to 59, and Eusebius, Chronicle 14 and 15",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n157/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Attached to the existing person senedj, whose alternate name is already Sethenes. Cory is not used to confirm that identification."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-7b-osf"
+    "cfah-7b-osf",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -47,6 +60,11 @@
       "source_id": "cfah-7b-osf",
       "url": "https://osf.io/tuwnc/",
       "locator": "Table 14, p. 102"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "dynasty": "Egypt Dynasty 2 (Thinis)"
