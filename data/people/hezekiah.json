@@ -13,11 +13,11 @@
     "note": "No tier gives a birth year."
   },
   "standby": {
-    "year_bc_ad": -726,
-    "basis": "linked-record",
-    "source_chronology": null,
-    "from_record": "reign-of-hezekiah",
-    "note": "Standby placement only, placed with \"Reign of Hezekiah over Judah\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+    "year_bc_ad": -725,
+    "basis": "source-printed",
+    "source_chronology": "hales",
+    "from_record": null,
+    "note": "Standby placement only. Hales, A New Analysis of Chronology (1830, 2nd ed.) prints this BC/AD year on the reign entry (13. Hezekiah 29 725). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
   },
   "father": null,
   "children": [],

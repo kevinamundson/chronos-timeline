@@ -12,11 +12,11 @@
     "note": "No tier 1-4 dates this record's birth; unsorted (null)."
   },
   "standby": {
-    "year_bc_ad": -1571,
-    "basis": "linked-record",
-    "source_chronology": null,
-    "from_record": "moses-birth",
-    "note": "Standby placement only, placed with \"Birth of Moses\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+    "year_bc_ad": -1803,
+    "basis": "source-printed",
+    "source_chronology": "hales",
+    "from_record": null,
+    "note": "Standby placement only. Hales, A New Analysis of Chronology (1830, 2nd ed.) prints this BC/AD year on the birth entry (6. Amram 75 1803). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
   },
   "father": "kohath",
   "children": [

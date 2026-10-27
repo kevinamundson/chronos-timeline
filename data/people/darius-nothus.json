@@ -12,6 +12,13 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year. Raleigh is display-only and is not converted to BC."
   },
+  "standby": {
+    "year_bc_ad": -423,
+    "basis": "source-printed",
+    "source_chronology": "hales",
+    "from_record": null,
+    "note": "Standby placement only. Hales, A New Analysis of Chronology (1830, 2nd ed.) prints this BC/AD year on the reign entry (Darius Nothus 3 first 423). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
   "father": null,
   "children": [],
   "dates": {
