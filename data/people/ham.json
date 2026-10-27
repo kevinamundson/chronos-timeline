@@ -11,6 +11,13 @@
     "chronology": "cfah",
     "note": "No tier 1-4 dates this record's birth; unsorted (null)."
   },
+  "standby": {
+    "year_bc_ad": -2348,
+    "basis": "linked-record",
+    "source_chronology": null,
+    "from_record": "ark-landing",
+    "note": "Standby placement only, placed with \"The Ark Rests on the Mountains of Ararat\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+  },
   "father": "noah",
   "children": [
     "cush",

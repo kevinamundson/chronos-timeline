@@ -83,6 +83,8 @@ Fallbacks:
 
 A person's `dates.reign` is display-only; people sort on birth.
 
+**Standby placement (not a sort tier).** Records with no tier date get a standby placement (source-printed BC/AD year, else the linked record's year); it never sets sort; it is replaced automatically when a tier date arrives. The optional `standby` object is written by `scripts/standby/compute.mjs`. It never changes `sorting_year` or `sorting_basis`.
+
 Any change to a tier or year must appear in the PR's "Sort-tier changes" section. CFAH importer changes are also logged in `scripts/cfah/sort-changes.json`.
 
 ## 5. Copyright and private files
@@ -164,8 +166,9 @@ npm run verify:live         # person-timeline checks against production (run aft
 - `node scripts/cory/import.mjs`
 - `node scripts/shuckford/import.mjs`
 - `node scripts/cfah/import.mjs`
+- `node scripts/standby/compute.mjs`
 
-**Importer order:** if you re-run the Herodotus importer (or any other importer), run `node scripts/cfah/import.mjs` **after it**. The Herodotus importer drops CFAH-only reign slots on its people, and the CFAH importer restores them (see E-section notes in `docs/OPEN-QUESTIONS-FOR-KEVIN.md`). Then run `npm run validate`, and check `git diff --stat` for unexpected churn.
+**Importer order:** if you re-run the Herodotus importer (or any other importer), run `node scripts/cfah/import.mjs` **after it**. The Herodotus importer drops CFAH-only reign slots on its people, and the CFAH importer restores them (see E-section notes in `docs/OPEN-QUESTIONS-FOR-KEVIN.md`). Then run `node scripts/standby/compute.mjs` last, so a record that gained a `sorting_year` loses its standby placement and a record that still has none is placed again. Then run `npm run validate`, and check `git diff --stat` for unexpected churn.
 
 `check-source.mjs` scripts verify quotes against private PDFs and are skipped when those files are absent. That is expected on the Mini.
 

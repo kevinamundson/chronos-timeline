@@ -12,6 +12,13 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
   },
+  "standby": {
+    "year_bc_ad": -661,
+    "basis": "linked-record",
+    "source_chronology": null,
+    "from_record": "death-of-gyges",
+    "note": "Standby placement only, placed with \"Death of Gyges of Lydia\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+  },
   "father": null,
   "children": [
     "ardys"

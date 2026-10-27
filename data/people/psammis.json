@@ -12,6 +12,13 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
   },
+  "standby": {
+    "year_bc_ad": -594,
+    "basis": "source-printed",
+    "source_chronology": "cfah",
+    "from_record": null,
+    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Start: 594; End: 589). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
   "father": "necho-ii",
   "children": [
     "apries"

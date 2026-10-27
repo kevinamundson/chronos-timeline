@@ -44,6 +44,7 @@ npm ci
   ```
 
 - [ ] `provisional` is used only as the rules allow (Generations, or Morecraft on records only Morecraft dates). Jordan and the Jordan compilation are never a sort basis.
+- [ ] **Standby placements (T5).** A record has `standby` only when `sorting_year` is null. The validator prints `Standby placements: source-printed=N, linked-record=M; fully undated=K`. No `sorting_year` or tier changed. On the home timeline, standby items stay off until “Standby (no tier date)” is pressed, use the `standby` class (dashed, not a tier colour), and the label says “standby placement”. The Undated list has no standby record. A standby year is a year the cited source already prints, or the linked record’s sort year taken as-is. It is not a new calculation.
 
 ## 4. Copyright and privacy
 
@@ -75,6 +76,7 @@ npm ci
   - items are links,
   - the list fallback is present.
 - [ ] Home timeline, map, search and `/king-lists/` load without console errors.
+- [ ] **Standby (T5).** The home “Standby (no tier date)” control is off by default. Turning it on draws standby items with the `standby` class and no tier class. Person pages for a standby record name the placement and say it is not a sort year.
 - [ ] After T4: spans are translucent, start and end match the data, there is a legend and list fallback, and point events are unchanged.
 - [ ] UI text keeps the project's tone: precise, scholarly, transparent and reverent toward Scripture.
 

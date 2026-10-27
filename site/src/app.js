@@ -30,28 +30,29 @@
     var person = !Array.isArray(raw) && raw.mode === 'person';
     var items = person ? raw.items : raw;
     function visItem(it) {
-      var cls = 'tier-' + it.tier + (person ? (it.own ? ' own' : ' ctx') : '');
+      // Standby is not a tier. Its class is "standby", never "tier-*".
+      var cls = (it.standby ? 'standby' : ('tier-' + it.tier)) + (person ? (it.own ? ' own' : ' ctx') : '');
       var label = it.title + ' — ' + it.label + (person && !it.own ? ' (context)' : '');
       // Home events keep a point even when a chronology gives them an end year.
       // A person page draws one bar for the lifespan (span), the same years as the home chart.
-      var range = it.yEnd != null && it.yEnd !== it.y && (it.group === 'people' || it.span);
+      var range = it.yEnd != null && it.yEnd !== it.y && (it.group === 'people' || it.span) && !it.standby;
       var row = { id: it.group + ':' + it.id, group: it.group, content: it.title, start: toDate(it.y), type: range ? 'range' : 'point',
-        title: label, aria: label, className: cls, url: it.url, own: !!it.own, ord: it.y * 100 + (it.order || 0), tier: it.tier };
+        title: label, aria: label, className: cls, url: it.url, own: !!it.own, standby: !!it.standby, ord: it.y * 100 + (it.order || 0) + (it.standby ? 0.5 : 0), tier: it.standby ? 'standby' : it.tier };
       if (range) row.end = toDate(it.yEnd);
       return row;
     }
     var built = items.map(visItem);
-    function tiersOn() {
-      var buttons = document.querySelectorAll('[data-tier-toggle]');
-      if (!buttons.length) return null;
-      var on = {};
-      [].forEach.call(buttons, function (b) { if (b.getAttribute('aria-pressed') === 'true') on[b.getAttribute('data-tier-toggle')] = true; });
-      return on;
-    }
     function shownItems() {
-      var on = tiersOn();
-      var list = on ? built.filter(function (it) { return on[it.tier]; }) : built;
-      return list.map(function (it) { return Object.assign({}, it); });
+      var buttons = document.querySelectorAll('[data-tier-toggle]');
+      if (!buttons.length) return built.map(function (it) { return Object.assign({}, it); });
+      // A tier with no button stays visible. Home lists every tier. Person pages list only Standby,
+      // so tier items stay on and standby stays off until that control is pressed.
+      var controlled = {};
+      [].forEach.call(buttons, function (b) { controlled[b.getAttribute('data-tier-toggle')] = b.getAttribute('aria-pressed') === 'true'; });
+      return built.filter(function (it) {
+        if (Object.prototype.hasOwnProperty.call(controlled, it.tier)) return controlled[it.tier];
+        return true;
+      }).map(function (it) { return Object.assign({}, it); });
     }
     var ys = items.map(function (i) { return i.y; });
     var min = person ? raw.start : Math.min.apply(null, ys), max = person ? raw.stop : Math.max.apply(null, ys);
@@ -202,6 +203,16 @@
       wireChart(tlRoot, timeline, data);
       window.__timeline = timeline;
       tlRoot.setAttribute('data-ready', String(data.get().length));
+      document.querySelectorAll('[data-tier-toggle]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var pressed = b.getAttribute('aria-pressed') === 'true';
+          b.setAttribute('aria-pressed', pressed ? 'false' : 'true');
+          var next = shownItems();
+          data.clear();
+          if (next.length) data.add(next);
+          tlRoot.setAttribute('data-ready', String(next.length));
+        });
+      });
     }
     document.querySelectorAll('[data-tl]').forEach(function (b) {
       b.addEventListener('click', function () {

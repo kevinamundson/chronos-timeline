@@ -6,6 +6,7 @@ import { mkdirSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { serve } from './serve.mjs';
+import { loadStandbyCounts, standbySummaryLine } from '../scripts/standby/compute.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const SHOTS = join(here, 'screenshots');
@@ -25,7 +26,10 @@ async function open(path, { width = 1280, height = 900, shot, fullPage = true, s
   page.on('console', (m) => { if (m.type() === 'error') (/(tile\.openstreetmap|tile\.loc\.gov|ERR_|Failed to load resource|aivbible\.kevinamundson\.me)/.test(m.text()) ? external : errors).push(m.text()); });
   page.on('pageerror', (e) => errors.push(String(e)));
   page.on('requestfailed', (r) => { if (!r.url().startsWith(BASE)) external.push(`${r.url()} ${r.failure()?.errorText}`); else errors.push(`local request failed: ${r.url()}`); });
-  const resp = await page.goto(BASE + path, { waitUntil: 'networkidle' });
+  // 'load' does not wait on loading="lazy" images. A hung third-party thumbnail (tile.loc.gov)
+  // must not abort the suite; content checks still run. networkidle is best-effort after that.
+  const resp = await page.goto(BASE + path, { waitUntil: 'load', timeout: 30000 });
+  await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
   return { ctx, page, errors, external, status: resp.status(), shot: async () => shot && page.screenshot({ path: join(SHOTS, shot), fullPage }) };
 }
 
@@ -154,6 +158,47 @@ function barsVisible(b) {
   check('home: turning Tier 2 on adds items', mid > before, `${before} -> ${mid}`);
   await o.page.locator('[data-tier-toggle="t2"]').click();
   await o.page.waitForFunction((n) => document.querySelectorAll('.vis-timeline .vis-item').length === n, before, { timeout: 5000 }).catch(() => {});
+  const diskStandby = loadStandbyCounts(join(here, '..'));
+  const standbyTotal = diskStandby['source-printed'] + diskStandby['linked-record'];
+  const embeddedStandby = await o.page.evaluate(() => JSON.parse(document.getElementById('standby-summary').textContent));
+  check('home: standby summary matches the validator line', embeddedStandby['source-printed'] === diskStandby['source-printed'] && embeddedStandby['linked-record'] === diskStandby['linked-record'] && embeddedStandby.undated === diskStandby.undated && embeddedStandby.line === standbySummaryLine(diskStandby), embeddedStandby.line);
+  // vis-timeline copies the item class onto the inner .vis-dot, so count the point (or range), not the dot.
+  const standbyPoint = '.vis-item.vis-point.standby, .vis-item.vis-range.standby';
+  const standbyBefore = await o.page.locator(standbyPoint).count();
+  const standbyPressed = await o.page.locator('[data-tier-toggle="standby"]').getAttribute('aria-pressed');
+  check('home: standby items are hidden by default', standbyBefore === 0 && standbyPressed === 'false', `${standbyBefore} visible, pressed ${standbyPressed}`);
+  await o.page.locator('[data-tier-toggle="standby"]').click();
+  await o.page.waitForFunction((n) => document.querySelectorAll('.vis-item.vis-point.standby, .vis-item.vis-range.standby').length === n, standbyTotal, { timeout: 20000 }).catch(() => {});
+  const standbyDom = await o.page.evaluate(() => {
+    const els = [...document.querySelectorAll('.vis-item.standby')];
+    const points = els.filter((e) => e.classList.contains('vis-point') || e.classList.contains('vis-range'));
+    const bad = els.filter((e) => !e.classList.contains('standby') || [...e.classList].some((c) => c.startsWith('tier-')));
+    const labels = points.map((e) => e.querySelector('a.tl-link')?.getAttribute('aria-label') || '');
+    const unlabeled = labels.filter((t) => !/standby placement/.test(t) || !(/printed by /.test(t) || /placed with /.test(t)));
+    return { n: points.length, bad: bad.length, unlabeled: unlabeled.length };
+  });
+  check('home: standby toggle shows standby items with no tier class', standbyDom.n === standbyTotal && standbyDom.bad === 0 && standbyDom.unlabeled === 0, JSON.stringify(standbyDom));
+  const listOrder = await o.page.evaluate(() => {
+    const rows = [...document.querySelectorAll('#tl-alt .chrono-list li')];
+    let bad = false;
+    let prev = null;
+    for (const li of rows) {
+      const y = li.getAttribute('data-year');
+      const placement = li.getAttribute('data-placement');
+      if (prev && prev.y === y && prev.placement === 'standby' && placement === 'tier') bad = true;
+      prev = { y, placement };
+    }
+    return {
+      bad,
+      standby: rows.filter((li) => li.getAttribute('data-placement') === 'standby').length,
+      undated: document.querySelectorAll('.undated-list a').length,
+    };
+  });
+  check('home: chrono-list and Undated counts match the validator summary', !listOrder.bad && listOrder.standby === standbyTotal && listOrder.undated === diskStandby.undated, JSON.stringify(listOrder));
+  await o.page.locator('#timeline').screenshot({ path: join(SHOTS, 'home-standby.png') });
+  await o.page.locator('[data-tier-toggle="standby"]').click();
+  await o.page.waitForFunction((n) => document.querySelectorAll('.vis-timeline .vis-item').length === n, before, { timeout: 20000 }).catch(() => {});
+  check('home: standby toggle hides the items again', await o.page.locator('.vis-item.standby').count() === 0);
   // AD side: Provisional holds Council of Nicaea, so turn that tier on, then zoom to AD 300-500.
   const adItems = await o.page.evaluate(() => JSON.parse(document.getElementById('tl-data').textContent).filter((i) => i.y > 0).length);
   if (adItems) {
@@ -181,7 +226,8 @@ function barsVisible(b) {
   await o.page.locator('.vis-item', { hasText: 'The Flood' }).first().click();
   await o.page.waitForURL(/\/events\/the-flood\/$/, { timeout: 5000 }).catch(() => {});
   check('home: selecting a timeline item opens its page', o.page.url().endsWith('/events/the-flood/'), o.page.url());
-  await o.page.goBack({ waitUntil: 'networkidle' });
+  await o.page.goBack({ waitUntil: 'load', timeout: 30000 });
+  await o.page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
   await o.shot();
   if (o.external.length) results.push(`INFO  home: external resource issues: ${o.external.length}`);
   await o.ctx.close();
@@ -293,7 +339,8 @@ for (const [path, shot, sel] of [
       });
       if (ex.life) check(`${tag}: lifespan is a bar from birth to death`, ownBar === 1 && lifeBar && lifeBar.w > 30 && lifeBar.vis === 'visible' && lifeBar.label.includes(ex.life.label), JSON.stringify(lifeBar));
       else check(`${tag}: no lifespan bar without a later death or translation`, ownBar === 0, JSON.stringify(lifeBar));
-      const listOwn = await o.page.locator('.person-list li.own').count(), listCtx = await o.page.locator('.person-list li.ctx').count();
+      // Standby rows stay in the ordered list and are marked standby. own/context counts are the tier rows.
+      const listOwn = await o.page.locator('.person-list li.own:not(.standby)').count(), listCtx = await o.page.locator('.person-list li.ctx:not(.standby)').count();
       check(`${tag}: fallback list matches`, listOwn === ex.own && listCtx === ex.context, `${listOwn} own, ${listCtx} context`);
       // opacity + markers differ
       if (ctx) {
@@ -331,7 +378,8 @@ for (const [path, shot, sel] of [
         await o.page.keyboard.press('Enter');
         await o.page.waitForURL((u) => u.pathname === target, { timeout: 5000 }).catch(() => {});
         check(`${tag}: Enter on a focused timeline item opens ${target}`, new URL(o.page.url()).pathname === target, o.page.url());
-        await o.page.goto(BASE + `/people/${id}/`, { waitUntil: 'networkidle' });
+        await o.page.goto(BASE + `/people/${id}/`, { waitUntil: 'load', timeout: 30000 });
+        await o.page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
         if (id === 'joseph') {
           const ownIds = await o.page.locator('.person-list li.own a').evaluateAll((as) => as.map((a) => a.getAttribute('href')));
           check('joseph: own-life list includes joseph-made-vizier and jacob-enters-egypt', ownIds.includes('/events/joseph-made-vizier/') && ownIds.includes('/events/jacob-enters-egypt/'), ownIds.join(' '));

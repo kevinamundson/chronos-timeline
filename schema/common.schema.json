@@ -304,6 +304,50 @@
         }
       ]
     },
+    "standbyPlacement": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Placement for a record whose sorting_year is null. It is not a sort year and must never be copied into sorting_year or sorting_basis. source-printed: a BC/AD year a chronology already stores in year_bc_ad. linked-record: the sorting_year of from_record, taken as-is.",
+      "required": ["year_bc_ad", "basis", "source_chronology", "from_record", "note"],
+      "properties": {
+        "year_bc_ad": {
+          "type": "integer",
+          "not": { "const": 0 },
+          "description": "Historical year used only for placement. Negative = BC. No year 0."
+        },
+        "basis": {
+          "enum": ["source-printed", "linked-record"]
+        },
+        "source_chronology": {
+          "anyOf": [
+            { "$ref": "#/$defs/slug" },
+            { "type": "null" }
+          ],
+          "description": "Chronology id that prints the year, or null when basis is linked-record."
+        },
+        "from_record": {
+          "anyOf": [
+            { "$ref": "#/$defs/slug" },
+            { "type": "null" }
+          ],
+          "description": "Record whose sorting_year is used, or null when basis is source-printed."
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "basis": { "const": "source-printed" } }, "required": ["basis"] },
+          "then": { "properties": { "from_record": { "type": "null" } } }
+        },
+        {
+          "if": { "properties": { "basis": { "const": "linked-record" } }, "required": ["basis"] },
+          "then": { "properties": { "source_chronology": { "type": "null" } } }
+        }
+      ]
+    },
     "freeSourceLink": {
       "type": "object",
       "additionalProperties": false,

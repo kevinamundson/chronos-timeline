@@ -12,6 +12,13 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year."
   },
+  "standby": {
+    "year_bc_ad": 1722,
+    "basis": "linked-record",
+    "source_chronology": null,
+    "from_record": "egede-mission-to-greenland",
+    "note": "Standby placement only, placed with \"Hans Egede attempts a mission to Greenland\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+  },
   "father": null,
   "children": [],
   "dates": {
