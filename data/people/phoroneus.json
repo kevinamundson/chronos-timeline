@@ -12,6 +12,13 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year. Raleigh is display-only and is not converted to BC."
   },
+  "standby": {
+    "year_bc_ad": -1699,
+    "basis": "linked-record",
+    "source_chronology": null,
+    "from_record": "flood-of-ogyges",
+    "note": "Standby placement only, placed with \"Flood of Ogyges\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+  },
   "father": null,
   "children": [],
   "dates": {
