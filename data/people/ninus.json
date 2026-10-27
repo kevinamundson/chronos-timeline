@@ -75,6 +75,19 @@
         "note": "Year cell \"2649 1967 310\". The third printed figure 310 is the column \"Floud\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 52 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Assyria."
       },
       {
+        "source": "shuckford",
+        "date": "A. M. 1957, the year in which I have placed the beginning of Ninus’s reign",
+        "year_am": 1957,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 171 (facsimile PDF p. 267)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n264/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "Reached by counting one thousand three hundred years back from the death of Sardanapalus at A. M. 3257. Not reconciled with the death at A. M. 2017 after fifty-two years. See open question K4."
+      },
+      {
         "source": "cory",
         "date": "“Ninus reigned over the Assyrians 52 years”",
         "year_am": null,
@@ -99,17 +112,52 @@
         "note": "The sentence begins at the foot of p. 91: Castor's series runs from Ninus to a later Ninus after Sardanapallus. The numeral 1280 is on p. 92. The individual reigns of that canon are not printed in this edition (the text turns to Damascius). The 1280 is not Ninus's own reign."
       },
       {
-        "source": "shuckford",
-        "date": "A. M. 1957, the year in which I have placed the beginning of Ninus’s reign",
-        "year_am": 1957,
-        "year_am_end": null,
+        "source": "cory",
+        "date": "“from Ninus thirty generations, and more than 1,400 years”",
+        "year_am": null,
         "year_bc_ad": null,
         "year_bc_ad_end": null,
-        "precision": "year",
-        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 171 (facsimile PDF p. 267)",
-        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n264/mode/1up",
-        "source_text_id": "shuckford-sacred-profane-1819",
-        "note": "Reached by counting one thousand three hundred years back from the death of Sardanapalus at A. M. 3257. Not reconciled with the death at A. M. 2017 after fifty-two years. See open question K4."
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 83; Diodorus Siculus, book 2",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n127/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The Assyrian empire. Not Ninus's personal 52 years from Castor."
+      },
+      {
+        "source": "cory",
+        "date": "“the Assyrians, (who had held it 1,070 years)”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 190; Velleius Paterculus, Roman History, book 1, chapter 6",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n234/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The Asiatic empire. Not a personal reign of Ninus or of Sardanapalus."
+      },
+      {
+        "source": "cory",
+        "date": "“the thirty-third in succession from Ninus and Semiramis”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 190; Velleius Paterculus, Roman History, book 1, chapter 6",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n234/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Sardanapalus. semiramis-i was not used. The fragment does not say Semiramis I."
+      },
+      {
+        "source": "cory",
+        "date": "“there has elapsed a period of 1,995 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 191; Velleius Paterculus, Roman History, book 1, chapter 6, and Aemilius Sura",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n235/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The words on p. 191. The sentence begins at the foot of p. 190: from the beginning of the reign of Ninus, who first obtained the empire. Aemilius Sura is named in the extract."
       }
     ]
   },
@@ -117,8 +165,8 @@
   "scripture_refs": [],
   "sources": [
     "raleigh-history-of-the-world-1617",
-    "cory-ancient-fragments-1876",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -128,14 +176,14 @@
       "locator": "Chronological Table, sig. 782b"
     },
     {
-      "source_id": "cory-ancient-fragments-1876",
-      "url": "https://archive.org/details/corysancientfrag00coryuoft",
-      "locator": "1876 Hodges edition, full view"
-    },
-    {
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

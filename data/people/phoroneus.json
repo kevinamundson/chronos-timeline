@@ -60,13 +60,50 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"2901 2219 136\". The third printed figure 136 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 60 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Argiues.."
+      },
+      {
+        "source": "cory",
+        "date": "“from the Flood of Ogyges and the reign of Phoroneus to the first Olympiad was 1020 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 99; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n143/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted."
+      },
+      {
+        "source": "cory",
+        "date": "“in the reign of Apis, the son of Phoroneus”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 146; Polemo, ap. Africanus, ap. Eusebius, Praeparatio Evangelica, book 10",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n190/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "A part of the Egyptian army went to Palestine. The next sentence says these were they who went out with Moses. Apis is not given a record. No year is printed."
+      },
+      {
+        "source": "cory",
+        "date": "“letters were invented in Egypt, by Menon, fifteen years before Phoroneus”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 194; Pliny, Natural History, book 7, chapter 56",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n238/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Anticlides, as Pliny quotes him. The fifteen years are an interval, not a reign of Menon. Menon has no record."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -74,6 +111,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 783a"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

@@ -198,10 +198,108 @@
       "link": "https://archive.org/details/sacredprofanehis01shuc/page/n399/mode/1up",
       "source_text_id": "shuckford-sacred-profane-1819",
       "note": "The twenty years are counted from Danaus at A. M. 2494, “as I have placed it”. He does not print an Anno Mundi for the Exodus on this page. None is derived."
+    },
+    {
+      "source": "cory",
+      "date": "“Amos; in whose time Moses went forth from Egypt”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 119; Manetho, ap. Syncellus, Chronicon 59 to 75, and Eusebius, Chronicle 15 to 17",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n163/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "First of the eighteenth dynasty in this list. No reign length is printed. Not attached to Ahmose I. The text does not spell the name Amosis here."
+    },
+    {
+      "source": "cory",
+      "date": "“hold it in possession for thirteen years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 131; Manetho, ap. Josephus, Against Apion, book 1",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n175/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "A prophecy, in this extract, that certain people would subdue Egypt and hold it for thirteen years. Not the biblical sojourn. The editorial footnote on p. 132 which says Osarsiph means Moses was not used to attach anyone to Moses."
+    },
+    {
+      "source": "cory",
+      "date": "“during the predestined thirteen years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 134; Manetho, ap. Josephus, Against Apion, book 1",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n178/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "The exile of Amenophis, 'to continue from its beginning during the predestined thirteen years'. The same thirteen years as the prophecy on p. 131, in a second sentence."
+    },
+    {
+      "source": "cory",
+      "date": "“The Exodus of the Israelites from Egypt”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 98; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n142/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. The table prints A.M. 3705."
+    },
+    {
+      "source": "cory",
+      "date": "“assumes 215 years for the sojourn of the Israelites in Egypt”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 99; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n143/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. The editor's prose, not the table. Exodus 12:40 gives 430 years. No scripture link was added by hand."
+    },
+    {
+      "source": "cory",
+      "date": "“744 years assigned by him as the period between the Exodus and the building of the Temple”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 99; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n143/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. Our check (not a figure of the text): the table's 4457 minus 3705 is 752, not 744."
+    },
+    {
+      "source": "cory",
+      "date": "“upon the third day's march they arrived at a convenient station upon the Red Sea”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 147; Artabanus, ap. Eusebius, Praeparatio evangelica, book 10",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n191/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Artabanus, of the departure from Egypt. No year is printed."
+    },
+    {
+      "source": "cory",
+      "date": "“passed thirty years in the desert”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 147; Artabanus, ap. Eusebius, Praeparatio evangelica, book 10",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n191/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Artabanus. Scripture gives forty years. No scripture link was added by hand."
     }
   ],
   "people": [
-    "moses"
+    "moses",
+    "amos-d18",
+    "amenophis-jos-3"
   ],
   "locations": [
     "egypt",
@@ -235,7 +333,8 @@
     "morecraft-christian-survey",
     "cfah-19-osf",
     "raleigh-history-of-the-world-1617",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "cory-ancient-fragments-1876"
   ],
   "free_source_links": [
     {
@@ -272,6 +371,11 @@
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "related": [

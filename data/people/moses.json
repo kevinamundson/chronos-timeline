@@ -201,6 +201,90 @@
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"3235 2553 40\". The third printed figure 40 is the column \"Exodus\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. Book II, sig. 206b prints \"which happened in the yeere of the World 25 54\", with a space in the figures. That spaced figure is not entered as a year. The table row entered is \"The Last yeere of Moses.\" at World 2553."
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "cory",
+        "date": "“Amos; in whose time Moses went forth from Egypt”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 119; Manetho, ap. Syncellus, Chronicon 59 to 75, and Eusebius, Chronicle 15 to 17",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n163/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "First of the eighteenth dynasty in this list. No reign length is printed. Not attached to Ahmose I. The text does not spell the name Amosis here."
+      },
+      {
+        "source": "cory",
+        "date": "“his name was changed, and he was called Moyses (Mouses or Moses)”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 135; Manetho, ap. Josephus, Against Apion, book 1",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n179/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "This sentence is in the fragment. The editorial footnote on p. 132 ('By Osarsiph he means Moses') was not used. Osarsiph was not given a record. No reign length is printed."
+      },
+      {
+        "source": "cory",
+        "date": "“this same period for the interval between Moses and Solomon”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 99; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n143/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. The same 1020 years."
+      },
+      {
+        "source": "cory",
+        "date": "“in the reign of Apis, the son of Phoroneus”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 146; Polemo, ap. Africanus, ap. Eusebius, Praeparatio Evangelica, book 10",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n190/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "A part of the Egyptian army went to Palestine. The next sentence says these were they who went out with Moses. Apis is not given a record. No year is printed."
+      },
+      {
+        "source": "cory",
+        "date": "“passed thirty years in the desert”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 147; Artabanus, ap. Eusebius, Praeparatio evangelica, book 10",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n191/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Artabanus. Scripture gives forty years. No scripture link was added by hand."
+      },
+      {
+        "source": "cory",
+        "date": "“he was in the eighty-ninth year of his age”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 148; Artabanus, ap. Eusebius, Praeparatio evangelica, book 10",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n192/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Artabanus, of Moyses, when he did these things. An age, not a reign length. Exodus 7:7 says Moses was eighty years old when he spoke to Pharaoh. No scripture link was added by hand. The italic sentence that Artabanus wrote about a century before Christ is the editor's and was not entered."
+      }
     ]
   },
   "scripture_refs": [
@@ -217,7 +301,8 @@
     "jordan-sbc-2",
     "jordan-sbc-3",
     "jordan-compilation-anno-mundi",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "cory-ancient-fragments-1876"
   ],
   "free_source_links": [
     {
@@ -239,6 +324,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 784b"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "related": [

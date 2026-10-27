@@ -203,6 +203,18 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n133/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "The sentence continues \"and after him, Xerxes, and the other kings of the Persian line.\" Xerxes is given no length, so no Xerxes row is entered. Mapped to Darius I because Xerxes follows him in the same sentence."
+      },
+      {
+        "source": "cory",
+        "date": "“Darius, the son of Hystaspes, 36 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 124; Manetho, ap. Syncellus, Chronicon 73 to 78, and Eusebius, Chronicle 16 and 17",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n168/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Pass 1, p. 89, prints 'then Darius 36 years'."
       }
     ]
   },

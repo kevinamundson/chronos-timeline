@@ -1,3 +1,5 @@
+import { rows as rowsPass2 } from './rows-pass2.mjs';
+
 // Dated statements read on the 1876 Hodges scan (archive.org corysancientfrag00coryuoft), 2026-10-23.
 // page = printed page. quote = the words as printed (short). targets = record ids; "id:reign" for a person.
 // A null target is listed in the extract and not attached (unnamed person, or a figure with no record).
@@ -13,7 +15,7 @@ const PO = 'Berossus, ap. Alexander Polyhistor, ap. Eusebius';
 const MEN = 'Menander of Ephesus, ap. Josephus';
 const CAS = 'Castor, ap. Eusebius';
 
-export const rows = [
+const rowsPass1 = [
   // ---- Tyrian Annals, printed pp. 28–32 (Menander) ----
   R('tyrian', 28, 'reigned thirty-four years, having lived fifty-three', 'hiram-of-tyre:reign', {
     chain: MEN, note: 'Hiromus [Hiram], son of Abibalus. Abibalus is named and given no length, so he has no record.', st: 'n/a',
@@ -294,3 +296,5 @@ export const rows = [
     st: 'n/a',
   }),
 ];
+
+export const rows = [...rowsPass1, ...rowsPass2];

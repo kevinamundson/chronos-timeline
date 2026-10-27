@@ -158,6 +158,42 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n132/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "After Nabonidus fled. The next sentence says Cyrus was killed in the plain of Daas. No BC year is printed."
+      },
+      {
+        "source": "cory",
+        "date": "“Beginning of the Reign of Cyrus, King of Persia”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 99; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n143/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. The table prints A.M. 4942, and '(In the first year of the 55th Olympiad).' The Olympiad is not converted."
+      },
+      {
+        "source": "cory",
+        "date": "“our city was desolate during the interval of seventy years, until the days of Cyrus king of Persia”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 64; Berossus, ap. Josephus, Against Apion, book 1",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n108/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Josephus, Against Apion, book 1, chapter 19, as this page cites it. Nabopallasar sent Nabuchodonosor. No BC year is printed."
+      },
+      {
+        "source": "cory",
+        "date": "“In the seventeenth year of his, (Nabonidus's reign”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 67; Berossus, ap. Josephus, Against Apion, book 1",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n111/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The parenthesis is printed, and the sentence continues: Cyrus came out of Persia. Pass 1, p. 88, prints that Nabonidus reigned 17 years. The seventeenth year is not a second full length."
       }
     ]
   },

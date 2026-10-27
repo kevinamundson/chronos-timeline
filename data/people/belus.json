@@ -75,6 +75,19 @@
         "note": "Year cell \"2584 1902 245\". The third printed figure 245 is the column \"Floud\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 65 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Kings of Assyria .."
       },
       {
+        "source": "shuckford",
+        "date": "he must begin his reign A. M. 1905",
+        "year_am": 1905,
+        "year_am_end": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 172 (facsimile PDF p. 268)",
+        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n265/mode/1up",
+        "source_text_id": "shuckford-sacred-profane-1819",
+        "note": "Shuckford’s conclusion against identifying Belus with Nimrod. The same page repeats the dispersion at A. M. 1757."
+      },
+      {
         "source": "cory",
         "date": "“we have no certain tradition respecting the length of his reign”",
         "year_am": null,
@@ -87,17 +100,16 @@
         "note": "Castor commences the Assyrian canon with Belus and sets down the name only."
       },
       {
-        "source": "shuckford",
-        "date": "he must begin his reign A. M. 1905",
-        "year_am": 1905,
-        "year_am_end": null,
+        "source": "cory",
+        "date": "“Belus preceded the Trojan war 322 years”",
+        "year_am": null,
         "year_bc_ad": null,
         "year_bc_ad_end": null,
-        "precision": "year",
-        "citation": "Shuckford, The Sacred and Profane History of the World Connected, 5th ed., revised by James Creighton (London: William Baynes, 1819), vol. 1, Book IV, p. 172 (facsimile PDF p. 268)",
-        "link": "https://archive.org/details/sacredprofanehis01shuc/page/n265/mode/1up",
-        "source_text_id": "shuckford-sacred-profane-1819",
-        "note": "Shuckford’s conclusion against identifying Belus with Nimrod. The same page repeats the dispersion at A. M. 1757."
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 83; Thallus, ap. Theophylact, Ad Autolycum",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n127/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The edition prints Theophylact. The title Ad Autolycum is the one printed. The name was not corrected."
       }
     ]
   },
@@ -105,8 +117,8 @@
   "scripture_refs": [],
   "sources": [
     "raleigh-history-of-the-world-1617",
-    "cory-ancient-fragments-1876",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -116,14 +128,14 @@
       "locator": "Chronological Table, sig. 782a"
     },
     {
-      "source_id": "cory-ancient-fragments-1876",
-      "url": "https://archive.org/details/corysancientfrag00coryuoft",
-      "locator": "1876 Hodges edition, full view"
-    },
-    {
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

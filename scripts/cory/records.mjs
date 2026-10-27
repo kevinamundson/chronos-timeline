@@ -1,6 +1,8 @@
+import { people as peoplePass2 } from './records-pass2.mjs';
+
 // People created only where no record exists. Each is display-only (tier none).
 // Summaries are ours. The dated words are in rows.mjs, quoted from the 1876 scan.
-export const people = {
+const peoplePass1 = {
   alorus: { title: 'Alorus', summary: 'First of the ten antediluvian Chaldean kings in Berossus, as Apollodorus and Abydenus give him in Cory 1876.' },
   alaparus: { title: 'Alaparus', summary: 'Second antediluvian Chaldean king in Berossus (Abydenus, in Cory 1876).' },
   amillarus: { title: 'Amillarus', alt: ['Amelon'], summary: 'Antediluvian Chaldean king in Berossus. Abydenus calls him Amillarus; Apollodorus names Amelon in the same place in the list and gives him no length.' },
@@ -47,3 +49,5 @@ export const people = {
   merbalus: { title: 'Merbalus', summary: 'King of Tyre fetched from Babylon, in Menander (Cory 1876).' },
   'hiram-of-tyre-ii': { title: 'Hiram of Tyre (brother of Merbalus)', alt: ['Hiromus'], summary: 'Brother of Merbalus and king of Tyre, in whose time Menander says Cyrus was king of Persia (Cory 1876). Not the Hiram who was Solomon\'s contemporary.' },
 };
+
+export const people = { ...peoplePass1, ...peoplePass2 };

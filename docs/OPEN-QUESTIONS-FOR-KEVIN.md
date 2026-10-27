@@ -687,6 +687,71 @@ Source: Isaac Preston Cory, *Ancient Fragments*, new and enlarged edition, ed. E
 - These pairs were not linked and were not merged: `sardanapallus` (Cory) and `sardanapalus` (Raleigh); `esarhaddon` (Cory) and `asarhaddon` (Raleigh); `semiramis-i` and `semiramis`; `ninyas` and `ninias`; `cambyses-ii` and `cambyses`; `evil-merodach` (Cory) and `euilmerodach` (Raleigh).
 - **Recommendation:** leave each pair as two records until you say they are the same person.
 
+### H6, addressed by pass 2 (2026-10-27)
+- Manetho, the Old Chronicle and Eratosthenes are now display rows on the same `cory` chronology. This edition prints one English Manetho list, with bracketed variants, and cites Syncellus and Eusebius at the ends of the books. It does not print separate Africanus, Eusebius and Syncellus columns. The editor's note on p. 125 points to Bunsen. Those parallel lists were not copied from Bunsen.
+- No Lydian king list with reign lengths was found. The Periplus of Hanno has no reign list. Castor's Assyrian canon was already in pass 1. Persian kings appear inside Manetho's 27th and 31st dynasties and in the Berossus fragments.
+- **Recommendation:** keep this one list. A later pass is needed only if you want a different edition that prints the parallel columns.
+
+### H13. One English Manetho list
+- See H6. Brackets such as "[or, Assis]" and "(or Shishak)" are the edition's own words and are inside the quotation.
+- **Recommendation:** do not invent an Africanus column for this edition.
+
+### H14. Printed totals that do not match the printed reigns
+- Both figures are kept, status internal. A sum we add is labelled "Our check (not a figure of the text)" and is not stored as a year.
+- Dynasty 1: "253 [or 263, according to the true reckoning]". Our check is 263.
+- Dynasty 4: "274 years [or 284, according to the correct computation.]" Our check is 284.
+- Dynasty 5: "248 years [or, 218 years.]" Our check is 218.
+- Dynasty 6: Phiops "reigned till he had completed his hundredth year". The total is 203. Our check is 203 if that hundredth year is counted as 100. The 100 is not stored.
+- Dynasty 12: "Altogether 160 years", and Sesostris is "41 [or, 48]". Our check is 153 with 41, and 160 with 48.
+- Dynasty 18: "Altogether 263 [or, 259]". Amōs has no length. Our check of the printed lengths is 262.
+- Dynasty 19: "Altogether 209 years". Thuoris has no length. Our check of the six lengths is 204.
+- Dynasty 22: "Altogether reigned 120 years". Our check is 116.
+- Dynasty 29: the heading says four kings and five names are printed. "Altogether 20 years and four months". Our check of the year figures is 21, plus 4 months.
+- Africanus, p. 99: the prose says 744 years from the Exodus to the Temple. The table's 4457 minus 3705 is 752. Our check only.
+- **Recommendation:** keep both printed figures. Do not pick one.
+
+### H15. Josephus's numbers are not the dynasty list's numbers
+- Apachnas is 61 years in the dynasty list and thirty-six years and seven months in Josephus. Assis is 49 years, and forty-nine years and two months. The eighteenth-dynasty lengths and Josephus's lengths on pp. 129–130 were not merged by position. Ianias (fifty years and one month) was not merged with Staan (50 years).
+- **Recommendation:** leave them as separate statements.
+
+### H16. Eratosthenes' years of the world
+- They are inside the quotation. `year_am` is null. Nothing was converted to BC.
+- Mines, (Menes), sixty-two years, is on `menes`. Athothes (59 years) is not `athothis`. Phruron, "who is Nilus", is `phruron` and was not attached to `nilus`. Nitokris (6 years) is `nitocris-theban`, not `nitocris`.
+- The 36th king is printed as dots (14 years). No person was created.
+- **Recommendation:** leave the years of the world unconverted, and leave Phruron and nilus unmerged.
+
+### H17. The Africanus table is the editor's summary
+- pp. 98–99 are the biographical notice, which says it is abridged from Bunsen. It is the only printed Hebrew chronology of Africanus in the volume, so it was entered, labelled as that summary, with null year fields.
+- The Incarnation is year of the world 5500, and the editor adds "(which we, following the Hebrew text, according to Archbishop Usher, make 4004)". Neither number is stored. Status CONFLICT on `birth-of-jesus`. The Flood is A.M. 2262, status CONFLICT on `the-flood`. The sort is unchanged.
+- The 215 years of the sojourn, the 744, the 1020 from Ogyges and Phoroneus, the same 1020 between Moses and Solomon, and the 25 years for Joshua are the editor's prose on p. 99.
+- **Recommendation:** keep them as display quotations. Say if an editorial summary is out of scope (H5) and they should be removed.
+
+### H18. Names that were attached, and names that were not
+- Attached because the 1876 text, or the existing record, is already that king: Athothis, Sethenes (`senedj`), Kenkenes (CFAH Dynasty 1), Cheops (the Suphis of 66 years, not the Suphis of 63), Nitocris (12 years), Bocchoris (6), Psammetichus (54), Nechao the 2nd and Joahaz, Vaphris/Hophra and Apries, Amosis/Amasis, Nepherites, Achoris, Psammuthis (1 year) and Nephorites, Darius son of Hystaspes (36, agrees with pass 1), Xerxes the Great (21), Artaxerxes (41, on `artaxerxes-longimanus`; the text does not say Longimanus), Cambyses, Ochus, Arses, Kephren, Diabies (Shuckford already has this Theban king at 19 years).
+- Josephus p. 65, twenty-nine years, is Nabopolassar (pass 1 prints 20). p. 67, two years, is Evil-Merodach (pass 1 prints 12). Neriglissar's four years agree. Nabonidus's seventeenth year is the same reign as pass 1's 17 years, status consistent. Nebuchadnezzar's forty-three years agree.
+- Not attached: the first Nechao (8 years) is `nechao-d26`, not any other Necho. Amōs of the eighteenth dynasty is `amos-d18`, not `ahmose-i`. Teos of the thirtieth dynasty is `teos-d30`, not `teos`. Nectanebes and Nectanebos are new records, not `nectanebus`. Sesonchis (or Shishak) is `sesonchis`, not `shoshenq-i`. Tarkos [Tirhakah] is `tarkos`, not `taharqa`. Sesostris is not Senusret III. Sesoosis (33 years) is not Sesostris. Zeet is not `zet`. Amyrteos is not `setnakht`. Dynasty 18 and 19 Ramesses are not Rameses I, II or III. Chembres (50 years) is not Cheops or Suphis. Phruron is not `nilus`. Sanchoniathon's Ilus is `ilus-sanchoniathon`, not Raleigh's `ilus`. Hecataeus's high priest is `hezekiah-high-priest`, not king `hezekiah`. Darius the son of Xerxes (19 years) is not `darius-nothus`. The Xerxes of 2 months is not Xerxes the Great.
+- **Recommendation:** leave these pairs unmerged until you say they are the same person. The Artaxerxes of 41 years, and Tarkos [Tirhakah], are the two I would most want a yes or no on.
+
+### H19. Diodorus's closing citation says Book ii
+- The canon ends: "From Diodorus Siculus, Hist., Book ii." It was left as printed.
+- **Recommendation:** do not correct the book number in the citation.
+
+### H20. The fifteenth dynasty and Eusebius's seventeenth
+- A footnote on the Hyksos says "This is the Seventeenth Dynasty according to Eusebius." The kings were recorded as the edition's fifteenth dynasty.
+- **Recommendation:** keep the edition's number.
+
+### H21. Osarsiph
+- The editorial footnote on p. 132 says "By Osarsiph he means Moses." That footnote was not used as a link. The fragment itself, on p. 135, says his name was changed and he was called Moyses (Mouses or Moses). That sentence is on `moses`. Osarsiph has no record.
+- **Recommendation:** keep the fragment's sentence on Moses, and do not add a record for Osarsiph.
+
+### H22. Totals that belong to no king
+- "Total 990 years" is the line after Bocchoris and is not his reign. "Total 1,050 years" closes book 3. "192, who reigned 2,308 years" and "96 kings, and 2121 years" are book totals. None of these was given a new event. An event with no tier 1–4 year cannot be created.
+- **Recommendation:** leave them unmapped.
+
+### H23. Thallus, "Theophylact"
+- p. 83 prints "From Theophylact ad Autolycus". The citation was left as printed. It was not corrected to Theophilus.
+- **Recommendation:** leave the printed name.
+
 ## G. Raleigh, *The History of the World* (1617), full table (2026-10-23)
 
 The chronological table (sig. 781b to the FINIS trailer) is entered as display only. Nothing was converted from his yeere of the World to BC. No `sorting_year` on an existing record was changed. New people are tier `none`, with `sorting_year` null. Display titles of people taken from the table are modern English spelling. His printed spelling is an alternate name (G10). The importer is `scripts/raleigh/import.mjs`. Counts and every skipped cell are in `docs/raleigh-pass-log.md` and `data/raleigh-dates-extract.md`.

@@ -59,6 +59,30 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": null
+    },
+    {
+      "source": "cory",
+      "date": "“the year of the world 5500, (which we, following the Hebrew text, according to Archbishop Usher, make 4004)”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 98; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n142/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. The parenthesis is the editor, naming Archbishop Usher. Neither 5500 nor 4004 is stored. The sentence is the Incarnation."
+    },
+    {
+      "source": "cory",
+      "date": "“The Birth of Christ”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 99; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n143/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. The table prints A.M. 5500, the same figure as the sentence on p. 98."
     }
   ],
   "people": [
@@ -72,7 +96,8 @@
   "sources": [
     "generations-world",
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -85,6 +110,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

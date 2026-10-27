@@ -96,6 +96,18 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_4#:~:text=it%20was%20not%20till%20the%20third%20year%20that",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "Length of the voyage: a little over two years."
+      },
+      {
+        "source": "cory",
+        "date": "“Nechao, (or Necho), the 2nd reigned 6 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 123; Manetho, ap. Syncellus, Chronicon 73 to 78, and Eusebius, Chronicle 16 and 17",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n167/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The next sentence says he took Jerusalem and carried away Joahaz. That sentence is the reason iehoabaz is on this row. No BC year is printed."
       }
     ]
   },
@@ -109,7 +121,8 @@
   "sources": [
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "cfah-9-osf"
+    "cfah-9-osf",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -127,6 +140,11 @@
       "source_id": "cfah-9-osf",
       "url": "https://osf.io/hv3b2/",
       "locator": "Table 2, p. 58"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }
