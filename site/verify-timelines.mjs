@@ -29,6 +29,8 @@ const AD = ['augustine-of-hippo', 'robert-moffat', 'boniface', 'william-carey', 
 // CFAH rulers dated by reign (and a display-only CFAH death) rather than a tier birth year (CFAH pass, phase 3).
 const RULERS = ['senusret-iii', 'nebka', 'saul', 'teti'].filter((k) => expect[k] && !expect[k].none);
 const PEOPLE = ['joseph', 'abraham', 'noah', 'moses', single, ...AD, ...RULERS];
+const standbyOwnId = Object.entries(expect).filter(([, t]) => t.standbyOwn && t.standby > 0).sort((a, b) => a[1].standby - b[1].standby)[0]?.[0];
+const standbyCtxId = Object.entries(expect).filter(([, t]) => !t.none && !t.standbyOwn && t.standby > 0).sort((a, b) => a[1].standby - b[1].standby)[0]?.[0];
 const WIDTHS = [[1024, 900], [1440, 900], [390, 844]];
 const results = []; let failed = false;
 const check = (name, ok, detail = '') => { results.push(`${ok ? 'PASS' : 'FAIL'}  ${name}${detail ? ` — ${detail}` : ''}`); if (!ok) failed = true; };
@@ -72,7 +74,8 @@ for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
       page.on('response', (r) => { if (r.status() >= 400 && r.url().startsWith(BASE)) errors.push(`${r.status()} ${r.url()}`); });
       if (lateCss) await page.route('**/vis-timeline-graph2d.min.css*', async (r) => { await new Promise((s) => setTimeout(s, 1500)); r.continue(); });
       const tag = `[${bname} ${w}px${lateCss ? ' late-css' : ''}] /people/${id}/`;
-      await page.goto(`${BASE}/people/${id}/`, { waitUntil: 'networkidle' });
+      await page.goto(`${BASE}/people/${id}/`, { waitUntil: 'load', timeout: 30000 });
+      await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
       await page.waitForSelector('#timeline[data-ready]', { timeout: 8000 }).catch(() => {});
       await page.locator('#timeline').scrollIntoViewIfNeeded().catch(() => {});
       await page.waitForTimeout(300);
@@ -100,6 +103,42 @@ for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
       }
       await ctx.close();
     }
+  }
+  for (const id of [standbyOwnId, standbyCtxId].filter(Boolean)) {
+    const ex = expect[id];
+    const ctx = await browser.newContext({ viewport: { width: 1024, height: 900 } });
+    const page = await ctx.newPage();
+    const errors = [];
+    page.on('pageerror', (e) => errors.push(String(e)));
+    page.on('console', (m) => { if (m.type() === 'error' && !/cloudflareinsights|Failed to load resource.*(beacon|tile)/i.test(m.text())) errors.push(m.text()); });
+    const tag = `[${bname} 1024px] /people/${id}/ standby`;
+    await page.goto(`${BASE}/people/${id}/`, { waitUntil: 'load', timeout: 30000 });
+    await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+    await page.waitForSelector('#timeline[data-ready]', { timeout: 8000 }).catch(() => {});
+    // The inner .vis-dot copies the item class. Count the point or range, and still reject a tier class on the dot.
+    const standbyPoint = '.vis-item.vis-point.standby, .vis-item.vis-range.standby';
+    const hidden = await page.locator(standbyPoint).count();
+    const pressed = await page.locator('[data-tier-toggle="standby"]').getAttribute('aria-pressed').catch(() => null);
+    check(`${tag}: hidden by default`, hidden === 0 && pressed === 'false' && errors.length === 0, JSON.stringify({ hidden, pressed, errors }));
+    await page.locator('[data-tier-toggle="standby"]').click();
+    await page.waitForFunction((n) => document.querySelectorAll('.vis-item.vis-point.standby, .vis-item.vis-range.standby').length === n, ex.standby, { timeout: 15000 }).catch(() => {});
+    const info = await page.evaluate(() => {
+      const els = [...document.querySelectorAll('.vis-item.standby')];
+      const points = els.filter((e) => e.classList.contains('vis-point') || e.classList.contains('vis-range'));
+      const labels = points.map((e) => e.querySelector('a.tl-link')?.getAttribute('aria-label') || '');
+      return {
+        n: points.length,
+        tier: els.filter((e) => [...e.classList].some((c) => c.startsWith('tier-'))).length,
+        standby: points.filter((e) => e.classList.contains('standby')).length,
+        named: labels.filter((t) => /standby placement/.test(t) && (/printed by /.test(t) || /placed with /.test(t))).length,
+      };
+    });
+    check(`${tag}: shown by the toggle, standby class, no tier class`, info.n === ex.standby && info.standby === ex.standby && info.tier === 0 && info.named === ex.standby, JSON.stringify(info));
+    if (ex.standbyOwn) {
+      const note = await page.locator('#standby').innerText().catch(() => '');
+      check(`${tag}: page explains the standby placement`, /standby placement/i.test(note) && /not a sort year/i.test(note), note.slice(0, 180));
+    }
+    await ctx.close();
   }
   await browser.close();
 }
