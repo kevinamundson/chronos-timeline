@@ -50,13 +50,26 @@
         "link": "https://archive.org/details/sacredprofanehis01shuc/page/n339/mode/1up",
         "source_text_id": "shuckford-sacred-profane-1819",
         "note": "A. M. 2034 is printed as the death of Athothes, at which Diabies succeeded. A. M. 2053 is printed as Diabies’ death. The nineteen years are printed."
+      },
+      {
+        "source": "cory",
+        "date": "“Diabies, the son of Athothes, 19 years. By interpretation he is called Philesteros. In the year of the world 3,053”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 138; Eratosthenes, ap. Syncellus, Chronicon 91, 96, 101, 104, 109, 123, 147",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n182/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The record already exists from the Shuckford import, which gives him nineteen years after Athothes. Anno Mundi is not stored."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -64,6 +77,11 @@
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

@@ -16,6 +16,13 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year."
   },
+  "standby": {
+    "year_bc_ad": -1281,
+    "basis": "source-printed",
+    "source_chronology": "cfah",
+    "from_record": null,
+    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Start Co-Rex: 1281; Start Sole-rex: 1252; Death or Deposition: 1232). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
   "father": null,
   "children": [],
   "dates": {
@@ -34,13 +41,38 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-8-t6-d15:assis-aseth:assis:reign"
+      },
+      {
+        "source": "cory",
+        "date": "“Archles [or, Assis] 49 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 118; Manetho, ap. Syncellus, Chronicon 59 to 75, and Eusebius, Chronicle 15 to 17",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n162/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The edition's bracket equates Archles with Assis. The record already has those alternate names."
+      },
+      {
+        "source": "cory",
+        "date": "“Assis forty-nine years and two months”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 127; Manetho, ap. Josephus, Against Apion, book 1",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n171/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The dynasty list (p. 118) prints 49 years for Archles [or, Assis]. Both are kept."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-8-osf"
+    "cfah-8-osf",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -48,6 +80,11 @@
       "source_id": "cfah-8-osf",
       "url": "https://osf.io/z5rtd/",
       "locator": "Table 6, p. 87"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ],
   "dynasty": "Egypt Dynasty 15 (Hyksos)"

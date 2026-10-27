@@ -50,6 +50,30 @@
       "note": "Pan about 800 years before Herodotus, and the Trojan War earlier than that. DERIVED (not Herodotus's figure): 450 BC + 800 = about 1250 BC, so the Trojan War falls before about 1250 BC. Anchor: CFAH-3 dates Herodotus's visit to Egypt to 450 B.C. (section \"Conflicting Information: Herodotus Nine Centuries Below Moeris\"; AP-21). CONFLICT (about 66 years or more): CFAH AP-12 dates the fall of Troy 1184/1183 BC, later than Herodotus's implied date. The sentence is loose (\"or thereabouts\")."
     },
     {
+      "source": "cory",
+      "date": "“Alcandrus, 7 years, in whose time Ilion, (i.e., Troy), was taken”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 120; Manetho, ap. Syncellus, Chronicon 59 to 75, and Eusebius, Chronicle 15 to 17",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n164/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "The seven years and the fall of Ilion are one sentence. Thuoris, the previous name, is given no length and is not given this synchronism."
+    },
+    {
+      "source": "cory",
+      "date": "“Belus preceded the Trojan war 322 years”",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 83; Thallus, ap. Theophylact, Ad Autolycum",
+      "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n127/mode/1up",
+      "source_text_id": "cory-ancient-fragments-1876",
+      "note": "The edition prints Theophylact. The title Ad Autolycum is the one printed. The name was not corrected."
+    },
+    {
       "source": "hales",
       "date": "Destruction of Troy 1183",
       "year_am": null,
@@ -61,7 +85,10 @@
       "note": null
     }
   ],
-  "people": [],
+  "people": [
+    "alcandrus",
+    "belus"
+  ],
   "locations": [],
   "maps": [],
   "scripture_refs": [],
@@ -69,6 +96,7 @@
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
     "cfah-3",
+    "cory-ancient-fragments-1876",
     "hales-new-analysis-1830"
   ],
   "related": [
@@ -85,6 +113,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
       "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     },
     {
       "source_id": "hales-new-analysis-1830",

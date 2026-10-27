@@ -197,6 +197,18 @@
         "note": "Synchronism only. Menander names Solomon in Hiram's reign and gives Solomon no year."
       },
       {
+        "source": "cory",
+        "date": "“this same period for the interval between Moses and Solomon”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 99; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n143/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. The same 1020 years."
+      },
+      {
         "source": "hales",
         "date": "3. Solomon 40 1030",
         "year_am": null,

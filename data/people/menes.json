@@ -3,30 +3,18 @@
   "id": "menes",
   "type": "person",
   "title": "Menes",
-  "summary": "The Egyptian king in Hales’s Table XI, “Menes reigns in Egypt”. Not Menes Abdul Noor.",
-  "description": "Added from the Hales import. Display only. Hales prints his own B.C. years in the synopsis and in Table XI. This chronology never sets a sort, and no tier 1–4 chronology dates this person’s birth, so there is no sort year.",
+  "summary": "Menes is named in Cory, Ancient Fragments (1876, ed. Hodges), with a reign length or synchronism. Display only.",
+  "description": "Added from the Cory import. Display only. Cory gives reign lengths and synchronisms, not a BC year this record can sort on, and no tier 1–4 chronology dates this person, so there is no sort year.",
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",
     "tier_rank": null,
     "chronology": "cfah",
-    "note": "No tier gives a birth year (Hales is display-only)."
+    "note": "No tier gives a birth year (Cory is display-only and gives none)."
   },
   "father": null,
   "children": [],
   "dates": {
-    "birth": [
-      {
-        "source": "cfah",
-        "date": null,
-        "year_am": null,
-        "year_bc_ad": null,
-        "precision": "unknown",
-        "citation": null,
-        "link": null,
-        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
-      }
-    ],
     "reign": [
       {
         "source": "cfah",
@@ -37,6 +25,42 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "cory",
+        "date": "“he reigned 62 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 112; Manetho, ap. Syncellus, Chronicon 54 to 59, and Eusebius, Chronicle 14 and 15",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n156/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Menes the Thinite, first of eight kings. He perished by a wound from a hippopotamus. Eratosthenes (p. 138) prints the same 62 years for Mines (Menes)."
+      },
+      {
+        "source": "cory",
+        "date": "“He reigned sixty-two years, and lived in the year of the world 2,900”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 138; Eratosthenes, ap. Syncellus, Chronicon 91, 96, 101, 104, 109, 123, 147",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n182/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The edition's parenthesis is Mines, (Menes). The dynasty list (p. 112) prints 62 years. From the second king, each printed year of the world equals the previous king's year plus the previous king's reign (our check, not a figure of the text). Anno Mundi is not stored and is not converted."
+      },
+      {
+        "source": "cory",
+        "date": "“Menas (i.e., Menes), was the first king of the Egyptians”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 200; Diodorus Siculus, Hist., Book ii",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n244/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "No new length. The next sentence, two descendants for more than 1,400 years, is not his reign."
       },
       {
         "source": "hales",
@@ -54,10 +78,16 @@
   "events": [],
   "scripture_refs": [],
   "sources": [
+    "cory-ancient-fragments-1876",
     "hales-new-analysis-1830"
   ],
   "related": [],
   "free_source_links": [
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
+    },
     {
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",

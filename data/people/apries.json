@@ -12,6 +12,13 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
   },
+  "standby": {
+    "year_bc_ad": -589,
+    "basis": "source-printed",
+    "source_chronology": "cfah",
+    "from_record": null,
+    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Start: 589; End: 567). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
   "father": "psammis",
   "children": [],
   "dates": {
@@ -87,6 +94,30 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_4#:~:text=the%20subjects%20of%20Apries%2C%20who%20laid%20the%20blame",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "The Egyptian defeat at Irasa leads to the revolt that made Amasis king (2.161–169). DERIVED (not Herodotus's figure): The revolt ends Apries's 25 years: about 570/569 BC on the chain from CFAH AP-8 (see 2.161)."
+      },
+      {
+        "source": "cory",
+        "date": "“Vaphris (or Hophra) 19 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 123; Manetho, ap. Syncellus, Chronicon 73 to 78, and Eusebius, Chronicle 16 and 17",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n167/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Diodorus (p. 203) prints 22 years for Apries (Pharaoh Hophra). Both figures are kept."
+      },
+      {
+        "source": "cory",
+        "date": "“Apries, (Pharaoh Hophra), 22 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 203; Diodorus Siculus, Hist., Book ii",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n247/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Manetho (p. 123) prints 19 years for Vaphris (or Hophra)."
       }
     ]
   },
@@ -97,7 +128,8 @@
   "sources": [
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "cfah-9-osf"
+    "cfah-9-osf",
+    "cory-ancient-fragments-1876"
   ],
   "related": [],
   "free_source_links": [
@@ -115,6 +147,11 @@
       "source_id": "cfah-9-osf",
       "url": "https://osf.io/hv3b2/",
       "locator": "Table 2, p. 58"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     }
   ]
 }

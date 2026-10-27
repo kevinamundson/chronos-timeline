@@ -19,6 +19,7 @@ import { fileURLToPath } from 'node:url';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import { isBlbUrl, isNonBlbScripture, blbFromOsis } from './blb.mjs';
+import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, standbySummaryLine } from './standby/compute.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const S = (f) => JSON.parse(readFileSync(join(root, 'schema', f), 'utf8'));
@@ -404,9 +405,36 @@ if (kingDoc) {
     }
   }
 }
+// Standby placement: allowed only while sorting_year is null. It never sets the sort.
+{
+  const ctx = makeStandbyContext({
+    records: Object.values(records).map((r) => r.doc),
+    chronologies: chronDoc.chronologies,
+    kingLists: kingDoc?.lists || [],
+  });
+  for (const { rel, doc, kind } of Object.values(records)) {
+    if (kind !== 'person' && kind !== 'event') continue;
+    const sb = doc.standby;
+    if (sb && doc.sorting_year != null) err(rel, 'standby is allowed only when sorting_year is null');
+    if (sb?.basis === 'source-printed') {
+      if (sb.from_record != null) err(rel, 'source-printed standby must have from_record null');
+      if (!chronIds.has(sb.source_chronology)) err(rel, `standby source_chronology "${sb.source_chronology}" is not a chronology`);
+      else if (!hasPrintedYear(doc, sb.source_chronology, sb.year_bc_ad)) err(rel, `source-printed standby year ${sb.year_bc_ad} does not match a ${sb.source_chronology} entry`);
+    } else if (sb?.basis === 'linked-record') {
+      if (sb.source_chronology != null) err(rel, 'linked-record standby must have source_chronology null');
+      const src = records[sb.from_record];
+      if (!src) err(rel, `standby from_record "${sb.from_record}" not found`);
+      else if (src.doc.sorting_year !== sb.year_bc_ad) err(rel, `standby year ${sb.year_bc_ad} != ${sb.from_record} sorting_year ${src.doc.sorting_year}`);
+    }
+    const expected = computeStandby(doc, ctx);
+    if (JSON.stringify(sb ?? null) !== JSON.stringify(expected ?? null)) err(rel, 'standby does not match scripts/standby/compute.mjs; re-run it');
+  }
+}
 if (errors.length) {
   console.error(`FAIL: ${errors.length} problem(s) in ${checked} files\n` + errors.map((e) => '  - ' + e).join('\n'));
   process.exit(1);
 }
+const standbyLine = standbySummaryLine(standbyCounts(Object.values(records).map((r) => r.doc)));
 console.log(`PASS: ${checked} files valid (chronologies, sources, ${counts}, ${chartIds.size} CFAH charts); cross-references, 4-tier sorting rule and MT Genesis 5 and 11 arithmetic consistent.`);
 console.log('Sorting tiers used: ' + Object.entries(tierCount).map(([k, v]) => `${k}=${v}`).join(', '));
+console.log(standbyLine);

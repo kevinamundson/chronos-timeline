@@ -62,6 +62,18 @@
         "note": "Year cell \"3236 2554 41\". The third printed figure 41 is the column \"Exodus\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 18 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Israel.."
       },
       {
+        "source": "cory",
+        "date": "“admitting 25 years for Joshua”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 99; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n143/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted."
+      },
+      {
         "source": "hales",
         "date": "1. Joshua and the Elders 26 1608",
         "year_am": null,
@@ -78,6 +90,7 @@
   "scripture_refs": [],
   "sources": [
     "raleigh-history-of-the-world-1617",
+    "cory-ancient-fragments-1876",
     "hales-new-analysis-1830"
   ],
   "related": [],
@@ -86,6 +99,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 784b"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     },
     {
       "source_id": "hales-new-analysis-1830",

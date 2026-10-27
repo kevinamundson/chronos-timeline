@@ -207,6 +207,18 @@
         "note": "Year cell \"3051 2369 286\". The third printed figure 286 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
       },
       {
+        "source": "cory",
+        "date": "“Joseph's Death”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 98; Julius Africanus, in the editor's biographical notice (the notice says it is abridged from Bunsen)",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n142/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. The table prints A.M. 3563."
+      },
+      {
         "source": "hales",
         "date": "Joseph’s death 1792",
         "year_am": null,
@@ -256,6 +268,7 @@
     "jordan-bc-6-7",
     "jordan-compilation-anno-mundi",
     "raleigh-history-of-the-world-1617",
+    "cory-ancient-fragments-1876",
     "hales-new-analysis-1830"
   ],
   "free_source_links": [
@@ -273,6 +286,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 783b"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     },
     {
       "source_id": "hales-new-analysis-1830",

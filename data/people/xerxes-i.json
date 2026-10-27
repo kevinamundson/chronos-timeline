@@ -12,6 +12,13 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
   },
+  "standby": {
+    "year_bc_ad": -486,
+    "basis": "source-printed",
+    "source_chronology": "morecraft",
+    "from_record": null,
+    "note": "Standby placement only. Joe Morecraft III, A Christian Survey of World History from Creation to the Reformation prints this BC/AD year on the reign entry (486-465 (Xerxes)). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
   "father": "darius-i",
   "children": [],
   "dates": {
@@ -118,6 +125,18 @@
         "note": "Agrees with CFAH AP-13 (480 BC) for the invasion, which this interval is counted towards."
       },
       {
+        "source": "cory",
+        "date": "“Xerxes the Great 21 years”",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 124; Manetho, ap. Syncellus, Chronicon 73 to 78, and Eusebius, Chronicle 16 and 17",
+        "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n168/mode/1up",
+        "source_text_id": "cory-ancient-fragments-1876",
+        "note": "The text says 'the Great'. It does not say 'the First'. The Xerxes of 2 months, later on this page, is a different sentence and a different record."
+      },
+      {
         "source": "hales",
         "date": "5. Xerxes 21 485",
         "year_am": null,
@@ -141,6 +160,7 @@
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
     "morecraft-christian-survey",
+    "cory-ancient-fragments-1876",
     "hales-new-analysis-1830"
   ],
   "related": [],
@@ -154,6 +174,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7",
       "locator": "Book 7"
+    },
+    {
+      "source_id": "cory-ancient-fragments-1876",
+      "url": "https://archive.org/details/corysancientfrag00coryuoft",
+      "locator": "1876 Hodges edition, full view"
     },
     {
       "source_id": "hales-new-analysis-1830",

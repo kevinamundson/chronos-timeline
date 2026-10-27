@@ -11,6 +11,13 @@
     "chronology": "cfah",
     "note": "No tier 1-4 dates this record's birth; unsorted (null)."
   },
+  "standby": {
+    "year_bc_ad": -1452,
+    "basis": "source-printed",
+    "source_chronology": "ussher",
+    "from_record": null,
+    "note": "Standby placement only. Ussher, Annals of the World (1650/1658) prints this BC/AD year on the death entry (2552c AM, 1452 BC). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
   "father": "amram",
   "children": [],
   "dates": {

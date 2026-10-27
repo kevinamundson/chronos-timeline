@@ -16,6 +16,13 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year."
   },
+  "standby": {
+    "year_bc_ad": -1806,
+    "basis": "source-printed",
+    "source_chronology": "cfah",
+    "from_record": null,
+    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Start Co-Rex: 1806; Start Sole-rex: 1794; End Sole-rex: 1788; Death or Deposition: 1781). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
   "father": null,
   "children": [],
   "dates": {

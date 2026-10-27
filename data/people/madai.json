@@ -12,6 +12,13 @@
     "chronology": "cfah",
     "note": "No tier 1-4 dates this record's birth; unsorted (null)."
   },
+  "standby": {
+    "year_bc_ad": -2191,
+    "basis": "linked-record",
+    "source_chronology": null,
+    "from_record": "median-dynasty-of-babylon",
+    "note": "Standby placement only, placed with \"\"Median Dynasty of Babylon\" (Berossus Dynasty 2)\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+  },
   "father": "japheth",
   "children": [],
   "dates": {

@@ -12,6 +12,13 @@
     "chronology": "cfah",
     "note": "No tier 1-4 dates this record's birth; unsorted (null)."
   },
+  "standby": {
+    "year_bc_ad": -2448,
+    "basis": "linked-record",
+    "source_chronology": null,
+    "from_record": "japheth",
+    "note": "Standby placement only, placed with \"Japheth\" (a parent). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+  },
   "father": "japheth",
   "children": [
     "elishah",
