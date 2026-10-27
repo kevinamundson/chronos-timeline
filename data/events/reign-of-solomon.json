@@ -60,6 +60,17 @@
       "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
       "source_text_id": "morecraft-christian-survey",
       "note": null
+    },
+    {
+      "source": "hales",
+      "date": "3. Solomon 40 1030",
+      "year_am": null,
+      "year_bc_ad": -1030,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxv",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n38/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": null
     }
   ],
   "people": [
@@ -71,7 +82,8 @@
   "sources": [
     "generations-preparing",
     "generations-preparing-2e",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "hales-new-analysis-1830"
   ],
   "related": [],
   "free_source_links": [
@@ -79,6 +91,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }

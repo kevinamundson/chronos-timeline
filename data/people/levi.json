@@ -59,6 +59,17 @@
         "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
         "note": "Jordan spaces Jacob's children from his marriage in AM 2252 (after 7 years of service), about 9 years later than Ussher (2248).",
         "source_text_id": "jordan-bc-6-6"
+      },
+      {
+        "source": "hales",
+        "date": "4. Levi 48 1911",
+        "year_am": null,
+        "year_bc_ad": -1911,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiii",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": null
       }
     ],
     "death": [
@@ -117,13 +128,19 @@
     "jones-chronology-ot-2002",
     "ussher-annals-1658",
     "jordan-bc-6-6",
-    "jordan-bc-6-7"
+    "jordan-bc-6-7",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/29.htm#34",
       "locator": "Gen.29.34 ; Gen.34.25-Gen.34.31 ; Gen.46.11 ; Exod.6.16"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

@@ -196,6 +196,17 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n133/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "The sentence continues \"and after him, Xerxes, and the other kings of the Persian line.\" Xerxes is given no length, so no Xerxes row is entered. Mapped to Darius I because Xerxes follows him in the same sentence."
+      },
+      {
+        "source": "hales",
+        "date": "4. Darius Hystaspes 36 521",
+        "year_am": null,
+        "year_bc_ad": -521,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxvii",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n40/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": "darius-hystaspis was left unlinked so the two records are not merged."
       }
     ]
   },
@@ -208,7 +219,8 @@
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
     "morecraft-christian-survey",
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "hales-new-analysis-1830"
   ],
   "related": [],
   "free_source_links": [
@@ -241,6 +253,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }

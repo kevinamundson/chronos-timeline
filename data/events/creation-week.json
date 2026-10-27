@@ -151,6 +151,28 @@
       "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
       "source_text_id": "morecraft-christian-survey",
       "note": "History began on a Sunday, with the six-day creation (Genesis 1)."
+    },
+    {
+      "source": "hales",
+      "date": "1. Adam (130) 230 5411",
+      "year_am": null,
+      "year_bc_ad": -5411,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxii",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n35/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "The parenthesis is the Hebrew age. The other age is the one he adopts. The last figure is his B.C. column."
+    },
+    {
+      "source": "hales",
+      "date": "Creation of the World 5411",
+      "year_am": null,
+      "year_bc_ad": -5411,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. I, Table XI, Remarkable Eras, p. 101",
+      "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": null
     }
   ],
   "people": [
@@ -172,7 +194,8 @@
     "jordan-bc-5-8",
     "jordan-bc-6-4",
     "jordan-compilation-anno-mundi",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -189,6 +212,11 @@
       "source_id": "jordan-bc-5-8",
       "url": "https://biblicalhorizons.com/1993/12/01/5_08/",
       "locator": "Chart at start of article"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

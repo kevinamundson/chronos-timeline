@@ -92,6 +92,17 @@
       "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=Such%2C%20then%2C%20were%20the%20circumstances%20of%20the%20first",
       "source_text_id": "herodotus-rawlinson-roman-roads",
       "note": "Cyrus takes Babylon by diverting the Euphrates; the \"second\" taking is by Darius (3.159). Herodotus gives no year; Generations dates it 539 BC (provisional)."
+    },
+    {
+      "source": "hales",
+      "date": "takes Babylon, first of his sovereignty 536",
+      "year_am": null,
+      "year_bc_ad": -536,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxvi",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n39/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": null
     }
   ],
   "people": [
@@ -107,7 +118,8 @@
     "generations-preparing-2e",
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "hales-new-analysis-1830"
   ],
   "related": [],
   "free_source_links": [
@@ -120,6 +132,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1",
       "locator": "Book 1"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }

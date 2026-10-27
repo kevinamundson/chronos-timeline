@@ -152,6 +152,39 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-14-t5-rel:samuel:samuel:reign"
+      },
+      {
+        "source": "hales",
+        "date": "Samuel called as a prophet 10 1152",
+        "year_am": null,
+        "year_bc_ad": -1152,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiv",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n37/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": "The call, not a birth."
+      },
+      {
+        "source": "hales",
+        "date": "15. Samuel 12 1122",
+        "year_am": null,
+        "year_bc_ad": -1122,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiv",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n37/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": null
+      },
+      {
+        "source": "hales",
+        "date": "Samuel Judge jointly, 38 years",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiv",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n37/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": "No B.C. year on this line."
       }
     ]
   },
@@ -167,7 +200,8 @@
     "jordan-sbc-2",
     "jordan-book-judges-1985",
     "jordan-compilation-anno-mundi",
-    "cfah-14-osf"
+    "cfah-14-osf",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -179,6 +213,11 @@
       "source_id": "cfah-14-osf",
       "url": "https://osf.io/9fuw2/",
       "locator": "Table 5, pp. 43–73"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

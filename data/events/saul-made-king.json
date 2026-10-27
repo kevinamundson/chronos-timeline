@@ -127,6 +127,28 @@
       "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
       "source_text_id": "morecraft-christian-survey",
       "note": "Reign of Saul. The United Kingdom heading reads \"Approximately 1095-975\"."
+    },
+    {
+      "source": "hales",
+      "date": "Saul elected king 498 1110",
+      "year_am": null,
+      "year_bc_ad": -1110,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiv",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n37/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "Our check: 1608 minus 1110 is the printed 498. That product is not stored."
+    },
+    {
+      "source": "hales",
+      "date": "1. Saul 40 1110",
+      "year_am": null,
+      "year_bc_ad": -1110,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiv",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n37/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": null
     }
   ],
   "people": [
@@ -149,13 +171,19 @@
     "blb-biblehub",
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/1_samuel/8.htm",
       "locator": "1Sam.8.1-1Sam.11.15 ; 1Sam.13.1 ; Acts.13.21"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

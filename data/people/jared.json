@@ -103,6 +103,17 @@
         "link": "https://archive.org/details/sacredprofanehis01shuc/page/n131/mode/1up",
         "source_text_id": "shuckford-sacred-profane-1819",
         "note": "Hebrew table on p. 44, the row headed “Jared”. The same row prints: had his son in year 162 of his life; lived 800 years after that birth; lived in all 962 years. Shuckford introduces the table as the computations of Moses according to our Hebrew Bibles."
+      },
+      {
+        "source": "hales",
+        "date": "6. Jared 162 4451",
+        "year_am": null,
+        "year_bc_ad": -4451,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxii",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n35/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": "No Hebrew age is printed in parenthesis on this line."
       }
     ],
     "death": [
@@ -206,7 +217,8 @@
     "jordan-bc-6-4",
     "jordan-compilation-anno-mundi",
     "raleigh-history-of-the-world-1617",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -223,6 +235,11 @@
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

@@ -26,6 +26,17 @@
       "cfah_basis": "anchor_point",
       "cfah_ap": "AP-9",
       "cfah_key": "cfah:ap-9:era-of-nabonassar"
+    },
+    {
+      "source": "hales",
+      "date": "Era of Nabonassar (February 26.) 747",
+      "year_am": null,
+      "year_bc_ad": -747,
+      "precision": "day",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. I, Table XI, Remarkable Eras, p. 101",
+      "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "Last row of Table XI in this pass. The Seleucid era and the rest of the table remain."
     }
   ],
   "people": [],
@@ -35,7 +46,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-3"
+    "cfah-3",
+    "hales-new-analysis-1830"
   ],
   "related": [],
   "free_source_links": [
@@ -43,6 +55,11 @@
       "source_id": "cfah-3",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-3/",
       "locator": "AP-9"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }

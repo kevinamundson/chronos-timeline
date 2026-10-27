@@ -111,6 +111,17 @@
       "link": "https://archive.org/details/annalsofclonmacn00murp",
       "note": "Interval to the BUILDING of the Temple, not the dedication. The Memorandum lists intervals 1656, 0292, 0500, 0480, 0410, 0432, 0134 against seven rows; the row/number pairing is read from OCR column order and should be checked against the page scan.",
       "source_text_id": "annals-of-clonmacnoise-1896"
+    },
+    {
+      "source": "hales",
+      "date": "finished 1020",
+      "year_am": null,
+      "year_bc_ad": -1020,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxv",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n38/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "He prints “finished”. The record is the dedication."
     }
   ],
   "people": [
@@ -142,7 +153,8 @@
     "jordan-bc-4-8",
     "jordan-bc-2-8",
     "jordan-sbc-2",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -164,6 +176,11 @@
       "source_id": "jordan-bc-5-3",
       "url": "https://biblicalhorizons.com/1993/03/01/5_03/",
       "locator": "The Building of the Temple"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

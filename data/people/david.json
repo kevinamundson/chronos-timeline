@@ -90,6 +90,17 @@
         "link": "https://drive.google.com/file/d/1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS/view",
         "note": "Agrees with Jordan's own published AM 2919.",
         "source_text_id": "jordan-compilation-anno-mundi"
+      },
+      {
+        "source": "hales",
+        "date": "David born 1100",
+        "year_am": null,
+        "year_bc_ad": -1100,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxv",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n38/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": null
       }
     ],
     "death": [
@@ -202,6 +213,17 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"3633 2951 438\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 40 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Israel.."
+      },
+      {
+        "source": "hales",
+        "date": "2. David 40 1070",
+        "year_am": null,
+        "year_bc_ad": -1070,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxv",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n38/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": null
       }
     ]
   },
@@ -219,7 +241,8 @@
     "jordan-compilation-anno-mundi",
     "cfah-14-osf",
     "cfah-16-osf",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -246,6 +269,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 786b"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

@@ -145,6 +145,17 @@
         "link": "https://archive.org/details/sacredprofanehis01shuc/page/n412/mode/1up",
         "source_text_id": "shuckford-sacred-profane-1819",
         "note": "A year in which Nebuchadnezzar was king. He does not say it is the accession. The 169 years measure how far this date falls after the end of the present volume."
+      },
+      {
+        "source": "hales",
+        "date": "1. Nebuchadnezzar destroys Jerusalem 25 last 586",
+        "year_am": null,
+        "year_bc_ad": -586,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxvi",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n39/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": "“25 last” is not an accession year."
       }
     ]
   },
@@ -161,7 +172,8 @@
     "generations-preparing-2e",
     "raleigh-history-of-the-world-1617",
     "cory-ancient-fragments-1876",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "hales-new-analysis-1830"
   ],
   "related": [],
   "free_source_links": [
@@ -179,6 +191,11 @@
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "alt_names": [

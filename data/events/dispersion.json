@@ -115,6 +115,17 @@
       "link": "https://archive.org/details/sacredprofanehis01shuc/page/n185/mode/1up",
       "source_text_id": "shuckford-sacred-profane-1819",
       "note": "He says “if we suppose them to spend nineteen or twenty years in settling and building” before the confusion. Those nineteen or twenty years are not turned into a second Anno Mundi."
+    },
+    {
+      "source": "hales",
+      "date": "Nimrod’s kingdom and Confusion of Tongues 2554",
+      "year_am": null,
+      "year_bc_ad": -2554,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiii",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "A different year from “Division of the Earth” 2614 and from Table XI “Dispersion of mankind” 2614."
     }
   ],
   "people": [
@@ -141,7 +152,8 @@
     "jordan-bc-6-4",
     "jordan-bc-5-8",
     "jordan-compilation-anno-mundi",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -158,6 +170,11 @@
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

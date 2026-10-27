@@ -25,10 +25,22 @@
       "note": "CFAH-1 Table 1 (Ussher-Jones biblical baseline adopted by CFAH); not a triangulated anchor point.",
       "cfah_basis": "table1_baseline",
       "cfah_key": "cfah:t1-536:cyrus-decree-of-return"
+    },
+    {
+      "source": "hales",
+      "date": "Jews return under Zerubbabel 536",
+      "year_am": null,
+      "year_bc_ad": -536,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxvi",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n39/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": null
     }
   ],
   "people": [
-    "cyrus-the-great"
+    "cyrus-the-great",
+    "zerubbabel"
   ],
   "locations": [
     "jerusalem"
@@ -39,7 +51,8 @@
     "2Chr.36.22-2Chr.36.23"
   ],
   "sources": [
-    "cfah-1"
+    "cfah-1",
+    "hales-new-analysis-1830"
   ],
   "related": [
     "temple-rebuilding-begins",
@@ -50,6 +63,11 @@
       "source_id": "cfah-1",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
       "locator": "Table 1 \"Biblically derived dates from Ussher and Jones\""
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }

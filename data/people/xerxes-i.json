@@ -116,6 +116,17 @@
         "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7#:~:text=It%20was%20not%20till%20the%20close%20of%20the",
         "source_text_id": "herodotus-rawlinson-roman-roads",
         "note": "Agrees with CFAH AP-13 (480 BC) for the invasion, which this interval is counted towards."
+      },
+      {
+        "source": "hales",
+        "date": "5. Xerxes 21 485",
+        "year_am": null,
+        "year_bc_ad": -485,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxvii",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n40/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": null
       }
     ]
   },
@@ -129,7 +140,8 @@
   "sources": [
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "hales-new-analysis-1830"
   ],
   "related": [],
   "free_source_links": [
@@ -142,6 +154,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_7",
       "locator": "Book 7"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }

@@ -1,0 +1,67 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "gedaliah",
+  "type": "person",
+  "title": "Gedaliah (governor of Judah)",
+  "summary": "Governor Hales says Nebuchadnezzar appointed when Jerusalem was destroyed. No earlier record was in the data.",
+  "description": "Added from the Hales import. Display only. Hales prints his own B.C. years in the synopsis and in Table XI. This chronology never sets a sort, and no tier 1–4 chronology dates this person’s birth, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Hales is display-only)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "hales",
+        "date": "appoints Gedaliah governor 586",
+        "year_am": null,
+        "year_bc_ad": -586,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxvi",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n39/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": null
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "hales-new-analysis-1830"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
+    }
+  ]
+}

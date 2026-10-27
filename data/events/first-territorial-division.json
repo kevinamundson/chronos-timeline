@@ -79,6 +79,28 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Noah divides the earth among his descendants."
+    },
+    {
+      "source": "hales",
+      "date": "Division of the Earth 2614",
+      "year_am": null,
+      "year_bc_ad": -2614,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiii",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": null
+    },
+    {
+      "source": "hales",
+      "date": "Dispersion of mankind 2614",
+      "year_am": null,
+      "year_bc_ad": -2614,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. I, Table XI, Remarkable Eras, p. 101",
+      "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "Same year as the synopsis line “Division of the Earth”. Not the confusion-of-tongues line at 2554."
     }
   ],
   "people": [
@@ -94,13 +116,19 @@
   ],
   "sources": [
     "cfah-4",
-    "blb-biblehub"
+    "blb-biblehub",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
       "source_id": "cfah-4",
       "url": "https://answersresearchjournal.org/noahs-flood/chronological-framework-ancient-history-4/",
       "locator": "AP-27"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

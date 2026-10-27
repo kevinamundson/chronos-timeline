@@ -48,6 +48,17 @@
       "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=to%20the%20time%20of%20Pan%2C%20son%20of%20Penelope",
       "source_text_id": "herodotus-rawlinson-roman-roads",
       "note": "Pan about 800 years before Herodotus, and the Trojan War earlier than that. DERIVED (not Herodotus's figure): 450 BC + 800 = about 1250 BC, so the Trojan War falls before about 1250 BC. Anchor: CFAH-3 dates Herodotus's visit to Egypt to 450 B.C. (section \"Conflicting Information: Herodotus Nine Centuries Below Moeris\"; AP-21). CONFLICT (about 66 years or more): CFAH AP-12 dates the fall of Troy 1184/1183 BC, later than Herodotus's implied date. The sentence is loose (\"or thereabouts\")."
+    },
+    {
+      "source": "hales",
+      "date": "Destruction of Troy 1183",
+      "year_am": null,
+      "year_bc_ad": -1183,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. I, Table XI, Remarkable Eras, p. 101",
+      "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": null
     }
   ],
   "people": [],
@@ -57,7 +68,8 @@
   "sources": [
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "cfah-3"
+    "cfah-3",
+    "hales-new-analysis-1830"
   ],
   "related": [
     "trojan-war",
@@ -73,6 +85,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
       "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }

@@ -61,6 +61,28 @@
       "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
       "source_text_id": "morecraft-christian-survey",
       "note": "Repeated on PDF pp. 34 and 51."
+    },
+    {
+      "source": "hales",
+      "date": "Jerusalem destroyed 404 586",
+      "year_am": null,
+      "year_bc_ad": -586,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxvi",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n39/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "Our check: 990 minus 586 is the printed 404. That product is not stored."
+    },
+    {
+      "source": "hales",
+      "date": "1. Nebuchadnezzar destroys Jerusalem 25 last 586",
+      "year_am": null,
+      "year_bc_ad": -586,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxvi",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n39/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "“25 last” is not an accession year."
     }
   ],
   "people": [
@@ -75,7 +97,8 @@
     "generations-preparing",
     "generations-preparing-2e",
     "morecraft-christian-survey",
-    "cfah-1"
+    "cfah-1",
+    "hales-new-analysis-1830"
   ],
   "related": [],
   "free_source_links": [
@@ -88,6 +111,11 @@
       "source_id": "cfah-1",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
       "locator": "Table 1 \"Biblically derived dates from Ussher and Jones\""
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }
