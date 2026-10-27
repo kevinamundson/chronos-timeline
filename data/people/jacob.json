@@ -15,7 +15,17 @@
   "children": [
     "levi",
     "judah",
-    "joseph"
+    "joseph",
+    "reuben",
+    "simeon",
+    "dan",
+    "naphtali",
+    "gad",
+    "asher",
+    "issachar",
+    "zebulun",
+    "dinah",
+    "benjamin"
   ],
   "dates": {
     "birth": [
@@ -247,7 +257,18 @@
     "jacob-enters-egypt",
     "haran",
     "goshen",
-    "josephs-famine"
+    "josephs-famine",
+    "reuben",
+    "simeon",
+    "dan",
+    "naphtali",
+    "gad",
+    "asher",
+    "issachar",
+    "zebulun",
+    "dinah",
+    "benjamin",
+    "rachel"
   ],
   "events": [
     "jacob-to-haran",

@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "jonathan",
+  "type": "person",
+  "title": "Jonathan",
+  "summary": "Son of Saul, killed with his father (1 Sam 31). Jones dates that death.",
+  "description": "Son of Saul. Not Jonathan Goforth. Jones, Appendix F, dates his death on the same row as Saul’s death. No birth year is printed, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "standby": {
+    "year_bc_ad": -1056,
+    "basis": "source-printed",
+    "source_chronology": "ussher-jones",
+    "from_record": null,
+    "note": "Standby placement only. Ussher-Jones (Floyd Nolen Jones, The Chronology of the Old Testament) prints this BC/AD year on the death entry (2948 1056 Death of Saul and Jonathan). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
+  "father": "saul",
+  "children": [],
+  "dates": {
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "2948 1056 Death of Saul and Jonathan",
+        "year_am": 2948,
+        "year_bc_ad": -1056,
+        "precision": "year",
+        "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 279 (PDF p. 314)",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+        "source_text_id": "jones-chronology-ot-2026",
+        "note": "This row dates Jonathan’s death. The same words also date Saul’s death, entered on saul."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [
+    "1Sam.31.2"
+  ],
+  "sources": [
+    "blb-biblehub",
+    "jones-chronology-ot-2026"
+  ],
+  "related": [
+    "saul",
+    "ish-bosheth"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    },
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/1_samuel/31.htm#2",
+      "locator": "1Sam.31.2"
+    }
+  ]
+}

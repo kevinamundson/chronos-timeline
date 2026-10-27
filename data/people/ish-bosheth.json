@@ -25,7 +25,7 @@
     "from_record": null,
     "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Start: 1056; End: 1049). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
   },
-  "father": null,
+  "father": "saul",
   "children": [],
   "dates": {
     "reign": [
@@ -66,7 +66,10 @@
   "sources": [
     "cfah-16-osf"
   ],
-  "related": [],
+  "related": [
+    "saul",
+    "jonathan"
+  ],
   "free_source_links": [
     {
       "source_id": "cfah-16-osf",

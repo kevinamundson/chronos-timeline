@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "josiah-first-reform",
+  "type": "event",
+  "title": "Josiah’s first reform",
+  "summary": "Josiah’s first reform, the purge of idols (2 Chr 34:3).",
+  "description": "Josiah’s first reform, the purge of idols (2 Chr 34:3). The year is the Appendix F figure, stored as printed.",
+  "sorting_year": -629,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 629 BC (no higher-tier year available)."
+  },
+  "sort_order_within_year": 235,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "3375 629 Josiah’s 1st reform – idols destroyed",
+      "year_am": 3375,
+      "year_bc_ad": -629,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": "josiah-finds-the-law was not edited."
+    }
+  ],
+  "people": [
+    "iosias"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "2Chr.34.3"
+  ],
+  "sources": [
+    "blb-biblehub",
+    "jones-chronology-ot-2026"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 280 (PDF p. 315)"
+    },
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/2_chronicles/34.htm#3",
+      "locator": "2Chr.34.3"
+    }
+  ],
+  "related": [
+    "josiah-finds-the-law"
+  ]
+}

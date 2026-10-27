@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "zachariah-king-of-israel",
+  "type": "person",
+  "title": "Zachariah (king of Israel)",
+  "alt_names": [
+    "Zechariah",
+    "Zachariah"
+  ],
+  "summary": "King of the northern kingdom of Israel, son of Jeroboam II. Jones dates the accession and prints “or Interregnum”.",
+  "description": "King of the northern kingdom of Israel, son of Jeroboam II. Jones dates the accession and prints “or Interregnum”. Appendix F prints no end year, so no span is stored.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "standby": {
+    "year_bc_ad": -784,
+    "basis": "source-printed",
+    "source_chronology": "ussher-jones",
+    "from_record": null,
+    "note": "Standby placement only. Ussher-Jones (Floyd Nolen Jones, The Chronology of the Old Testament) prints this BC/AD year on the reign entry (3220 784 Zachariah rules Israel or Interregnum). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
+  "father": "jeroboam-ii",
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "3220 784 Zachariah rules Israel or Interregnum",
+        "year_am": 3220,
+        "year_bc_ad": -784,
+        "precision": "year",
+        "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 279 (PDF p. 314)",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+        "source_text_id": "jones-chronology-ot-2026",
+        "note": "Jones prints “Zachariah rules Israel or Interregnum”. Appendix F prints no end year, so no span is stored."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [
+    "2Kgs.15.8"
+  ],
+  "sources": [
+    "blb-biblehub",
+    "jones-chronology-ot-2026"
+  ],
+  "related": [
+    "jeroboam-ii"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    },
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/2_kings/15.htm#8",
+      "locator": "2Kgs.15.8"
+    }
+  ],
+  "dynasty": "Kings of Israel"
+}

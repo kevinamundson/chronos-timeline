@@ -1,0 +1,64 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "david-refuge-at-gath",
+  "type": "event",
+  "title": "David takes refuge at Gath",
+  "summary": "David takes refuge at Gath (1 Sam 21:10).",
+  "description": "David takes refuge at Gath (1 Sam 21:10). The year is the Appendix F figure, stored as printed.",
+  "sorting_year": -1065,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1065 BC (no higher-tier year available)."
+  },
+  "sort_order_within_year": 139,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "2939 1065 Refuge of David at Gath, etc.",
+      "year_am": 2939,
+      "year_bc_ad": -1065,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 279 (PDF p. 314)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": null
+    }
+  ],
+  "people": [
+    "david"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "1Sam.21.10"
+  ],
+  "sources": [
+    "blb-biblehub",
+    "jones-chronology-ot-2026"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    },
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/1_samuel/21.htm#10",
+      "locator": "1Sam.21.10"
+    }
+  ],
+  "related": []
+}

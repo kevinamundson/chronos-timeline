@@ -20,7 +20,10 @@
     "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Column: Ruler of Israel; Name row (Year BC): 1095; Last regnal-year row (Year BC): 1056 (year 40)). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
   },
   "father": null,
-  "children": [],
+  "children": [
+    "jonathan",
+    "ish-bosheth"
+  ],
   "dates": {
     "reign": [
       {
@@ -90,16 +93,46 @@
         "source_text_id": "hales-new-analysis-1830",
         "note": null
       }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "2948 1056 Death of Saul and Jonathan",
+        "year_am": 2948,
+        "year_bc_ad": -1056,
+        "precision": "year",
+        "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 279 (PDF p. 314)",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+        "source_text_id": "jones-chronology-ot-2026",
+        "note": "This row dates Saul’s death. The same words also date Jonathan’s death, on jonathan."
+      }
     ]
   },
   "events": [],
-  "scripture_refs": [],
+  "scripture_refs": [
+    "1Sam.31.6"
+  ],
   "sources": [
     "cfah-14-osf",
     "cfah-16-osf",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "jones-chronology-ot-2026",
+    "blb-biblehub"
   ],
-  "related": [],
+  "related": [
+    "jonathan",
+    "ish-bosheth"
+  ],
   "free_source_links": [
     {
       "source_id": "cfah-14-osf",
@@ -120,6 +153,16 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    },
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/1_samuel/31.htm#6",
+      "locator": "1Sam.31.6"
     }
   ],
   "dynasty": "Kings of Israel"

@@ -1,0 +1,86 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "tiberius",
+  "type": "person",
+  "title": "Tiberius",
+  "alt_names": [
+    "Tiberius Caesar"
+  ],
+  "summary": "Roman emperor. Jones dates a co-rex accession and, later, his sole rule after Augustus.",
+  "description": "Roman emperor. Jones dates a co-rex accession and, later, his sole rule after Augustus. Appendix F prints no end year, so no span is stored. NT/intertestamental Jones figure — scope pending Kevin’s ruling",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "standby": {
+    "year_bc_ad": 12,
+    "basis": "source-printed",
+    "source_chronology": "ussher-jones",
+    "from_record": null,
+    "note": "Standby placement only. Ussher-Jones (Floyd Nolen Jones, The Chronology of the Old Testament) prints this BC/AD year on the reign entry (4015 12 1st year of Tiberius as co-rex). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "4015 12 1st year of Tiberius as co-rex",
+        "year_am": 4015,
+        "year_bc_ad": 12,
+        "precision": "year",
+        "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+        "source_text_id": "jones-chronology-ot-2026",
+        "note": "NT/intertestamental Jones figure — scope pending Kevin’s ruling Jones prints the first year as co-rex. Luke 3:1 names Tiberius Caesar and does not date the co-regency. Appendix F prints no end year, so no span is stored."
+      },
+      {
+        "source": "ussher-jones",
+        "date": "4017 14 Augustus dies, Tiberius sole rex",
+        "year_am": 4017,
+        "year_bc_ad": 14,
+        "precision": "year",
+        "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+        "source_text_id": "jones-chronology-ot-2026",
+        "note": "NT/intertestamental Jones figure — scope pending Kevin’s ruling This row dates Tiberius as sole rex. The same words also date the death of Augustus, on augustus-caesar. Appendix F prints no end year, so no span is stored."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [
+    "Luke.3.1"
+  ],
+  "sources": [
+    "blb-biblehub",
+    "jones-chronology-ot-2026"
+  ],
+  "related": [
+    "augustus-caesar"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 280 (PDF p. 315)"
+    },
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/luke/3.htm",
+      "locator": "Luke.3.1"
+    }
+  ]
+}
