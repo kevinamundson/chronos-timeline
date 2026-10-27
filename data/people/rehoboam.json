@@ -13,11 +13,11 @@
     "note": "No tier gives a birth year. Raleigh is display-only and is not converted to BC."
   },
   "standby": {
-    "year_bc_ad": -971,
-    "basis": "linked-record",
-    "source_chronology": null,
-    "from_record": "shishak-sacks-the-temple",
-    "note": "Standby placement only, placed with \"Shishak sacks the Temple in Rehoboam's fifth year\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+    "year_bc_ad": -990,
+    "basis": "source-printed",
+    "source_chronology": "hales",
+    "from_record": null,
+    "note": "Standby placement only. Hales, A New Analysis of Chronology (1830, 2nd ed.) prints this BC/AD year on the reign entry (1. Rehoboam 17 990). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
   },
   "father": null,
   "children": [],
@@ -80,6 +80,17 @@
         "link": "https://archive.org/details/sacredprofanehis01shuc/page/n279/mode/1up",
         "source_text_id": "shuckford-sacred-profane-1819",
         "note": "He equates Sesostris and Sesac with this siege. The event record is the sacking of the Temple in that same fifth year. The year is not Rehoboam’s accession."
+      },
+      {
+        "source": "hales",
+        "date": "1. Rehoboam 17 990",
+        "year_am": null,
+        "year_bc_ad": -990,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxv",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n38/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": null
       }
     ]
   },
@@ -87,7 +98,8 @@
   "scripture_refs": [],
   "sources": [
     "raleigh-history-of-the-world-1617",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "hales-new-analysis-1830"
   ],
   "related": [],
   "free_source_links": [
@@ -100,6 +112,11 @@
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }

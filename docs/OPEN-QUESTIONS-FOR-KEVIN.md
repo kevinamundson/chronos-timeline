@@ -950,3 +950,79 @@ These items were first written as section J. The Bible reference popover already
 - The page prints “Alvarez Sevedo places his reign not so early, imagining it to be but 2060 years”.
 - The clause does not repeat “before Christ”, so no BC year is stored. The name is entered as Sevedo. It was not corrected to another spelling.
 - **Recommendation:** keep Sevedo, as printed. A later pass can cite another edition if that edition prints a different name.
+
+## L. Hales, *A New Analysis of Chronology* (1830, 2nd ed.), pass 1
+
+Source: Rev. William Hales, D.D., second edition, corrected and improved, four volumes (London: printed for C. J. G. & F. Rivington, 1830; printers Gilbert and Rivington, St. John’s Square). Title pages and imprints of all four volumes were opened on 2026-10-27. The scans are Boston Public Library copies, Internet Archive `newanalysisofchr01hale` through `newanalysisofchr04hale`, full view. The table is `data/hales-dates-extract.md`. Hales is display only. No sort year changed. He prints a B.C. column in these tables, so that figure is `year_bc_ad`. Anno Mundi is not stored and is not converted.
+
+### L1. The edition is 1830, not the 1809–1812 first edition
+- The roadmap names *A New Analysis of Chronology* (1809–12).
+- The full-view scans that were opened are the second edition, 1830, four volumes. Each title page prints “SECOND EDITION, CORRECTED AND IMPROVED” and “MDCCCXXX”.
+- No 1809 URL was used.
+- **Recommendation:** keep the 1830 second edition as the source of these rows. A later pass can add the first edition only after its own title pages are opened.
+
+### L2. The synopsis opening is cited as p. xxxii
+- Volume II, the first synopsis leaf, has no page numeral in the header. The next leaf is headed xxxiii.
+- The link is Archive `page/n35`. The citation says p. xxxii.
+- **Recommendation:** keep p. xxxii, with that note. Do not invent a printed numeral that is not on the leaf.
+
+### L3. He adopts the longer ages. Creation is B.C. 5411
+- The parenthesis on a patriarchal line is the Hebrew age. The other age is the one he adopts. Only the B.C. column is stored.
+- His Creation is B.C. 5411 and his Deluge is B.C. 3155. Both conflict with the Masoretic years. Scripture governs. The sort is unchanged.
+- Period 2 goes Arphaxad, Salah, Heber, Peleg. He prints no second Cainan. None was added.
+- The line “1. Deluge, Shem 2 3155” is not stored as Shem’s birth. The 2 is the Y-column interval to Arphaxad at 3153.
+- **Recommendation:** leave his printed B.C. years on display. Do not store the parenthetical Hebrew ages, and do not move the Masoretic figures.
+
+### L4. Judah’s kings were not merged with Israel’s
+- Abijah, Jehoshaphat, Jehoram, Ahaziah, Joash, Amaziah, Uzziah, Jotham, Ahaz, Amon, Jehoahaz, Jehoiachin, and Zedekiah of Judah had no record. New people were created, tier `none`.
+- They were not attached to Raleigh’s Israel-column records (`iehoabaz`, `ioas`, `ahaziah-king-of-israel`).
+- Manasseh the king is on `manasses`. He is not `manasseh`, the son of Joseph.
+- Jehoiakim the king is on `iehoiakim`. Jehoiakim the high priest is a new person.
+- Jeshua the high priest is not Joshua the son of Nun.
+- **Recommendation:** keep the Judah kings and the high priests apart from the lookalikes.
+
+### L5. Darius the Mede, Darius Hystaspes, Menes, and Sesostris
+- “Darius the Mede, or Cyaxares” is on `darius-the-mede` only. The existing `cyaxares` record was not used.
+- “Darius Hystaspes” is on `darius-i` only. `darius-hystaspis` was left unlinked.
+- “Menes reigns in Egypt” 2412 is on the existing person `menes` (Cory, Ancient Fragments). It is not a new person, and it is not `menes-abdul-noor`. CFAH-7B identifies “Menes / Iry-Hor / Hor-Aha” with `mizraim` (“Menes is Mizraim”). That link is noted here. The Hales year was not copied onto `mizraim`.
+- “Sesostris reigns in Egypt” 1308 is in the extract only. It was not placed on `reign-of-senusret-iii`.
+- “Cecrops reigns at Athens” 1558 is on `reign-of-cecrops`, not Cecrops II.
+- **Recommendation:** leave the Darius and Sesostris attachments. Keep the Hales Menes year on `menes`, and do not copy it onto `mizraim` or `menes-abdul-noor`.
+
+### L6. The Temple lines
+- Synopsis “Temple begun” 1027 and Table XI “Foundation of Solomon’s Temple” 1027 have no foundation event. They stay in the extract.
+- “finished” 1020 is on `temple-dedication`. The note says the record is the dedication.
+- “Second Temple begun” 535 is on `temple-rebuilding-begins`. “Temple finished” 516 is on `second-temple-completed`.
+- **Recommendation:** do not put 1027 on the dedication. Leave 1020 there, labelled as his “finished”.
+
+### L7. Lines with no event to receive them
+- No new events were created. A new event would need a sorting year, and this chronology must not supply one.
+- Unmapped lines include the servitudes, Job’s trial, Abraham’s move to Charran and to Egypt, the rescue of Lot, Gerar, the intended sacrifice, Nathan’s prophecy, the offences and flights in Saul’s and David’s reigns, Esther’s marriage, Sesostris, the Cali yuga, the Chinese Tcheou line, the Julian Period, and the Era of Iphitus.
+- “Dispersion of mankind” 2614 and “Division of the Earth” 2614 are on `first-territorial-division`. “Nimrod’s kingdom and Confusion of Tongues” 2554 is on `dispersion` and on `nimrod` reign. Those are different years in his table.
+- “takes Babylon” 536 is on `fall-of-babylon-539-bc`. His year and the event’s year disagree. The attachment is kept so the conflict is visible.
+- **Recommendation:** leave the unmapped lines in the extract until an event already exists, or until you approve a new event that can sort from a tier 1–4 year.
+
+### L8. What this pass does not contain
+- The rest of Table XI on p. 101: the Seleucid era (312), Era Cæsarea (49), Era Juliana (46), Era Hispanica (38), and Vict. Actiaca (30).
+- All of p. 102, headed A.D., from the Vulgar Christian Era through the Netherlands (1566), then the Arundel Marbles.
+- Synopsis Periods VIII–X, which begin on the same page as Nehemiah’s reform (high priests from Eliashib’s last 7 years, the Maccabees, and the New Testament).
+- The narrative of volumes I–III, and the patriarchal comparison tables in volume I.
+- Volume IV, the synopsis of profane king lists.
+- **Recommendation:** stop here. A later pass can take the next clean block, still display only.
+
+### L9. Nineteen new people stay unsorted
+- `abijah-of-judah`, `jehoshaphat`, `jehoram-of-judah`, `ahaziah-of-judah`, `joash-of-judah`, `amaziah`, `uzziah`, `jotham`, `ahaz`, `amon`, `jehoahaz-of-judah`, `jehoiachin`, `zedekiah`, `ishmael`, `gedaliah`, `zerubbabel`, `jeshua-high-priest`, `jehoiakim-high-priest`, and `eliashib` have no tier 1–4 birth year. Each is tier `none`, with `sorting_year` null.
+- These nineteen were checked again against every person now on main, including Cory pass 2. No further duplicate was found. The Judah kings stay apart from Raleigh’s Israel-column records, as in L4. Jehoiakim the high priest stays apart from `iehoiakim`. Jeshua the high priest stays apart from Joshua the son of Nun.
+- Hales’s Belshazzar is Raleigh’s `balthasar`, the same king. “3. Belshazzar 5 558” is on `balthasar` reign, and “his feast and death 553” is on `balthasar` death. “Belshazzar” is an `alt_names` entry. No `belshazzar` person is created. The rows are not on Nabonidus and not on `belshazzar-co-regent`.
+- Jehoahaz and Jehoiachin print “3 m.” and have no B.C. year. Nebuchadnezzar’s “25 last” and Darius Nothus’s “3 first” are stored as he prints them, not as worked-out accessions.
+- **Recommendation:** do not make Hales a provisional sort tier.
+
+### L10. “Our check” is not a stored year
+- The adopted ages from Adam through Noah sum to his printed 2256, and 5411 minus 2256 is his Deluge 3155. The period totals 1002, 545, 498, 120, 404, and 166 match the B.C. column the same way. Accession steps inside Judah match the reign lengths he prints, including the interregnum of 11 years after Amaziah.
+- Those products are already his printed figures. The notes say “Our check”. Nothing extra is stored.
+- **Recommendation:** leave the checks in the notes. Do not add a derived year.
+
+### L11. Judges stay in dates.reign
+- Kevin’s ruling, 2026-10-27: Samuel and the other judges keep the figures Hales prints in `dates.reign`. The same slot is used for every such row that has a person record: Joshua and the Elders, Othniel, Ehud, Gideon, Abimelech, Tola, Jair, Jephthah, Ibzan, Elon, Abdon, Samson, Eli, and Samuel (the call, the twelve years, and the joint judgeship).
+- Deborah and Barak have no person record. “4. Deborah and Barak 40 1406” stays on the event `deborah-and-barak`. Shamgar has no person record. His name stays on Ehud’s reign entry and on the event `shamgar-judges-israel`.
+- **Recommendation:** leave these rows in `dates.reign`. Do not move them to birth.

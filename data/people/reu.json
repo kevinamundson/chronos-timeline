@@ -115,6 +115,17 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"2470 1788 1●1\". The year cell continues \"1●1\", which is not a clean figure and is not used. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 239 at the end of the name is the lifespan he prints. His table also prints the death at World 2026. 1788 + 239 is not 2026. Both figures are left as printed."
+      },
+      {
+        "source": "hales",
+        "date": "6. Reu or Ragau (32) 132 2624",
+        "year_am": null,
+        "year_bc_ad": -2624,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiii",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": "The parenthesis is the Hebrew age. The other age is the one he adopts. The last figure is his B.C. column."
       }
     ],
     "death": [
@@ -207,7 +218,8 @@
     "jordan-bc-6-4",
     "josephus-antiquities-whiston",
     "jordan-compilation-anno-mundi",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -234,6 +246,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 782b"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

@@ -72,6 +72,17 @@
       "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n127/mode/1up",
       "source_text_id": "cory-ancient-fragments-1876",
       "note": "The edition prints Theophylact. The title Ad Autolycum is the one printed. The name was not corrected."
+    },
+    {
+      "source": "hales",
+      "date": "Destruction of Troy 1183",
+      "year_am": null,
+      "year_bc_ad": -1183,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. I, Table XI, Remarkable Eras, p. 101",
+      "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": null
     }
   ],
   "people": [
@@ -85,7 +96,8 @@
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
     "cfah-3",
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "hales-new-analysis-1830"
   ],
   "related": [
     "trojan-war",
@@ -106,6 +118,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }

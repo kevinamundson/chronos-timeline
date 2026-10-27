@@ -294,6 +294,28 @@
       "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n191/mode/1up",
       "source_text_id": "cory-ancient-fragments-1876",
       "note": "Artabanus. Scripture gives forty years. No scripture link was added by hand."
+    },
+    {
+      "source": "hales",
+      "date": "Exode of the Israelites 40 40 1648",
+      "year_am": null,
+      "year_bc_ad": -1648,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiii",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "The line prints 40 twice."
+    },
+    {
+      "source": "hales",
+      "date": "Exode of the Israelites from Egypt 1648",
+      "year_am": null,
+      "year_bc_ad": -1648,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. I, Table XI, Remarkable Eras, p. 101",
+      "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": null
     }
   ],
   "people": [
@@ -334,7 +356,8 @@
     "cfah-19-osf",
     "raleigh-history-of-the-world-1617",
     "shuckford-sacred-profane-1819",
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -376,6 +399,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

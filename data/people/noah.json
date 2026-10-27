@@ -154,6 +154,17 @@
         "link": "https://archive.org/details/sacredprofanehis01shuc/page/n113/mode/1up",
         "source_text_id": "shuckford-sacred-profane-1819",
         "note": "One sentence. This entry stores the birth figure, 2948 years before Christ. Shuckford is reporting Ussher. The spelling on the page is Usher."
+      },
+      {
+        "source": "hales",
+        "date": "10. Noah 600 3755",
+        "year_am": null,
+        "year_bc_ad": -3755,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxii",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n35/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": null
       }
     ],
     "death": [
@@ -285,7 +296,8 @@
     "jordan-bc-6-4",
     "jordan-compilation-anno-mundi",
     "raleigh-history-of-the-world-1617",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -307,6 +319,11 @@
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

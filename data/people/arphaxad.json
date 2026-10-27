@@ -105,6 +105,17 @@
         "link": "https://www.gutenberg.org/ebooks/2848",
         "note": "Josephus counts 12 years after the Flood; Gen 11:10 says two years.",
         "source_text_id": "josephus-antiquities-whiston"
+      },
+      {
+        "source": "hales",
+        "date": "2. Arphaxad (35) 135 3153",
+        "year_am": null,
+        "year_bc_ad": -3153,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxii",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n35/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": "The parenthesis is the Hebrew age. The other age is the one he adopts. The last figure is his B.C. column."
       }
     ],
     "death": [
@@ -200,7 +211,8 @@
     "josephus-antiquities-whiston",
     "jordan-bc-2-5",
     "jordan-compilation-anno-mundi",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -222,6 +234,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 782b"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

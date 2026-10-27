@@ -28,6 +28,17 @@
       "cfah_ap": "AP-108",
       "cfah_preprint": true,
       "cfah_key": "cfah:ap-108:reign-of-cecrops"
+    },
+    {
+      "source": "hales",
+      "date": "Cecrops reigns at Athens 1558",
+      "year_am": null,
+      "year_bc_ad": -1558,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. I, Table XI, Remarkable Eras, p. 101",
+      "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "Not Cecrops II."
     }
   ],
   "people": [],
@@ -35,7 +46,8 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-19-osf"
+    "cfah-19-osf",
+    "hales-new-analysis-1830"
   ],
   "related": [
     "flood-of-ogyges"
@@ -45,6 +57,11 @@
       "source_id": "cfah-19-osf",
       "url": "https://osf.io/a5g6x/",
       "locator": "p. 13, AP-108"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }

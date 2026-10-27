@@ -1307,6 +1307,29 @@
       "license_note": "Fifth edition, revised by James Creighton, London: William Baynes, 1819. In the public domain in the United States because it was published in 1930 or earlier. The title page prints THE FIFTH EDITION and MDCCCXIX. Read on 2026-10-24 in a Tolle Lege Press facsimile of that edition (volume 1, ISBN 978-1-60702-153-7) and checked against the Princeton Theological Seminary scan, Internet Archive item sacredprofanehis01shuc. The facsimile is a modern reprint and is not the public copy. Links go to the 1819 scan.",
       "verified_on": "2026-10-24",
       "note": "Volume 1 only. Image-read: the Hebrew patriarchal table, printed p. 44, and every Anno Mundi statement the facsimile OCR found in Books I–V. Printed p. 13 (Archive page/n100), p. 44 (page/n131), and p. 246 (page/n339) were opened on the scan and agree with the facsimile. Not entered: volumes 2–4, Bishop Clayton’s strictures in the front matter, and the chronological tables Shuckford says he will add when the whole work is finished. Those tables are not in this volume."
+    },
+    {
+      "id": "hales-new-analysis-1830",
+      "title": "A New Analysis of Chronology and Geography, History and Prophecy",
+      "authors": [
+        "William Hales"
+      ],
+      "translator_or_editor": null,
+      "year": "1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "alt_urls": [
+        "https://archive.org/details/newanalysisofchr01hale/page/n6/mode/1up",
+        "https://archive.org/details/newanalysisofchr02hale",
+        "https://archive.org/details/newanalysisofchr02hale/page/n4/mode/1up",
+        "https://archive.org/details/newanalysisofchr03hale",
+        "https://archive.org/details/newanalysisofchr03hale/page/n6/mode/1up",
+        "https://archive.org/details/newanalysisofchr04hale",
+        "https://archive.org/details/newanalysisofchr04hale/page/n6/mode/1up"
+      ],
+      "access": "public-domain",
+      "license_note": "Second edition, corrected and improved, in four volumes. London: printed for C. J. G. & F. Rivington, St Paul's Church-yard and Waterloo-Place, Pall-Mall, MDCCCXXX. Printers: Gilbert and Rivington, St. John's Square. In the public domain in the United States because it was published in 1930 or earlier. Title pages and imprints of all four volumes were opened on 2026-10-27. The scans are Boston Public Library copies, Internet Archive items newanalysisofchr01hale through newanalysisofchr04hale, full view. The roadmap named the 1809–1812 first edition. These links are the 1830 second edition. No 1809 URL was used.",
+      "verified_on": "2026-10-27",
+      "note": "Pass 1, partial. Image-read: vol. II, Synopsis of the Chronology, Periods I–VII (the opening leaf, cited as p. xxxii because the next leaf is headed xxxiii, through Nehemiah’s reform on p. xxxvii); vol. I, Table XI, Remarkable Eras, printed p. 101, from Creation through the Era of Nabonassar. Not entered: the rest of Table XI on p. 101, all of p. 102, Periods VIII–X, the narrative of vols. I–III, the patriarchal comparison tables in vol. I, and the profane king lists in the vol. IV synopsis."
     }
   ]
 }

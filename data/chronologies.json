@@ -652,6 +652,23 @@
         "shuckford-sacred-profane-1819"
       ],
       "anchors": []
+    },
+    {
+      "id": "hales",
+      "name": "Hales, A New Analysis of Chronology (1830, 2nd ed.)",
+      "abbreviation": "Hales",
+      "primary": false,
+      "sort_priority": 16,
+      "status": "partial",
+      "authors": [
+        "William Hales"
+      ],
+      "description": "SECONDARY DISPLAY CHRONOLOGY. It is never a sort tier and never sets or overrides a sort year. Each entry is a line from his own tables in the second edition, corrected and improved (London: C. J. G. & F. Rivington, 1830): the Synopsis of the Chronology in volume II, Periods I–VII, from the Creation through Nehemiah’s reform, and Table XI in volume I from the Creation through the Era of Nabonassar. He prints a B.C. column, and that figure is year_bc_ad. year_am stays null. A parenthesis is the Hebrew age he prints beside the longer age he adopts, and it is not stored as a second year. His Creation is B.C. 5411, which conflicts with the Masoretic creation year. Scripture governs. This pass is partial. Agreements and conflicts are listed in data/hales-dates-extract.md.",
+      "year_conventions": "He prints B.C. years in these tables. year_bc_ad is that column (negative). year_am is null: Anno Mundi is not printed in these rows and is not converted. Reign lengths and braced subtotals stay in the quotation. A parenthesis is the Hebrew age he does not adopt. A day and month he prints use precision day. “Our check” notes confirm a total he already prints and are not stored.",
+      "references": [
+        "hales-new-analysis-1830"
+      ],
+      "anchors": []
     }
   ]
 }

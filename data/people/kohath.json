@@ -12,11 +12,11 @@
     "note": "No tier 1-4 dates this record's birth; unsorted (null)."
   },
   "standby": {
-    "year_bc_ad": -1706,
-    "basis": "linked-record",
-    "source_chronology": null,
-    "from_record": "jacob-enters-egypt",
-    "note": "Standby placement only, placed with \"Jacob and his family go down to Egypt (AM 2298)\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+    "year_bc_ad": -1863,
+    "basis": "source-printed",
+    "source_chronology": "hales",
+    "from_record": null,
+    "note": "Standby placement only. Hales, A New Analysis of Chronology (1830, 2nd ed.) prints this BC/AD year on the birth entry (5. Kohath 60 1863). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
   },
   "father": "levi",
   "children": [
@@ -64,6 +64,17 @@
         "link": "https://biblicalhorizons.com/1994/06/01/6_06/",
         "note": "Repeated in BC 6:7 §15 as \"2289? - Kohath ben Levi\".",
         "source_text_id": "jordan-bc-6-6"
+      },
+      {
+        "source": "hales",
+        "date": "5. Kohath 60 1863",
+        "year_am": null,
+        "year_bc_ad": -1863,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiii",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": null
       }
     ],
     "death": [
@@ -109,13 +120,19 @@
   "sources": [
     "blb-biblehub",
     "jordan-bc-6-6",
-    "jordan-bc-6-7"
+    "jordan-bc-6-7",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/genesis/46.htm#11",
       "locator": "Gen.46.11 ; Exod.6.16 ; Exod.6.18 ; Num.3.27"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

@@ -296,6 +296,22 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
     }
   }
 }
+// Hales, A New Analysis of Chronology (1830, 2nd ed.): secondary display. He prints B.C. Never sets the sort.
+{
+  const hales = chronDoc.chronologies.find((c) => c.id === 'hales');
+  if (hales && (hales.primary || !/SECONDARY DISPLAY/.test(hales.description))) err('data/chronologies.json', 'hales must be a non-primary SECONDARY DISPLAY chronology');
+  const HALES_SRC = new Set(srcDoc.sources.filter((s) => /^hales-/.test(s.id)).map((s) => s.id));
+  for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'hales' || doc.sorting_basis?.derived_from === 'hales') err(rel, 'hales may never set the sort');
+  for (const { rel, doc } of Object.values(records)) {
+    for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'hales')) {
+      if (!HALES_SRC.has(e.source_text_id)) err(rel, `hales entry needs source_text_id of a hales-* source, got "${e.source_text_id}"`);
+      if (!/1830/.test(e.citation || '') || !/vol\. /.test(e.citation || '') || !/p\. /.test(e.citation || '')) err(rel, 'hales entry needs an 1830 citation with a volume and a page');
+      if (!/^https:\/\/archive\.org\/details\/newanalysisofchr0[1-4]hale\/page\/n\d+\/mode\/1up$/.test(e.link || '')) err(rel, 'hales entry link must point at a full-view page of the 1830 Internet Archive scan');
+      if (e.year_am != null) err(rel, 'hales entries in this pass store no Anno Mundi: year_am must be null (a printed B.C. year is year_bc_ad; Anno Mundi is not converted)');
+      if (e.year_bc_ad != null && !(e.date || '').includes(String(Math.abs(e.year_bc_ad)))) err(rel, 'hales year_bc_ad must be the B.C. digits printed in the quotation');
+    }
+  }
+}
 for (const { rel, doc } of sortingTargets) if (['jordan', 'jordan-compilation'].some((j) => doc.sorting_basis?.chronology === j || doc.sorting_basis?.derived_from === j)) err(rel, 'sorting_basis may not use a secondary Jordan chronology');
 
 // Masoretic Genesis 5 cross-check (KJV/MT figures: [id, age at named son, lifespan])

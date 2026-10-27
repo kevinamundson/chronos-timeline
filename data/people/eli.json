@@ -155,6 +155,17 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"3553 2871 358\". The third printed figure 358 is the column \"Exodus\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 40 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Israel.."
+      },
+      {
+        "source": "hales",
+        "date": "14. Eli 40 30 1182",
+        "year_am": null,
+        "year_bc_ad": -1182,
+        "precision": "year",
+        "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiv",
+        "link": "https://archive.org/details/newanalysisofchr02hale/page/n37/mode/1up",
+        "source_text_id": "hales-new-analysis-1830",
+        "note": "A brace joins 40 on this line to 30 here and 10 on the next line."
       }
     ]
   },
@@ -168,7 +179,8 @@
     "jordan-sbc-2",
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -180,6 +192,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 786a"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

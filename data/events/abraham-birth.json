@@ -172,6 +172,28 @@
       "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n142/mode/1up",
       "source_text_id": "cory-ancient-fragments-1876",
       "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted. The table prints A.M. 2302."
+    },
+    {
+      "source": "hales",
+      "date": "10. Abraham 1002 2153",
+      "year_am": null,
+      "year_bc_ad": -2153,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxiii",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "Our check: 3155 minus 2153 is the printed 1002. That product is not stored."
+    },
+    {
+      "source": "hales",
+      "date": "Abraham born 2153",
+      "year_am": null,
+      "year_bc_ad": -2153,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. I, Table XI, Remarkable Eras, p. 101",
+      "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": null
     }
   ],
   "people": [
@@ -198,7 +220,8 @@
     "jordan-compilation-anno-mundi",
     "raleigh-history-of-the-world-1617",
     "shuckford-sacred-profane-1819",
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "hales-new-analysis-1830"
   ],
   "free_source_links": [
     {
@@ -235,6 +258,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ],
   "related": [

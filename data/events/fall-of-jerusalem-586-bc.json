@@ -73,6 +73,28 @@
       "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n108/mode/1up",
       "source_text_id": "cory-ancient-fragments-1876",
       "note": "Josephus, Against Apion, book 1, chapter 19, as this page cites it. Nabopallasar sent Nabuchodonosor. No BC year is printed."
+    },
+    {
+      "source": "hales",
+      "date": "Jerusalem destroyed 404 586",
+      "year_am": null,
+      "year_bc_ad": -586,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxvi",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n39/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "Our check: 990 minus 586 is the printed 404. That product is not stored."
+    },
+    {
+      "source": "hales",
+      "date": "1. Nebuchadnezzar destroys Jerusalem 25 last 586",
+      "year_am": null,
+      "year_bc_ad": -586,
+      "precision": "year",
+      "citation": "Hales, A New Analysis of Chronology and Geography, History and Prophecy, 2nd ed., corrected and improved (London: C. J. G. & F. Rivington, 1830), vol. II, Synopsis of the Chronology, p. xxxvi",
+      "link": "https://archive.org/details/newanalysisofchr02hale/page/n39/mode/1up",
+      "source_text_id": "hales-new-analysis-1830",
+      "note": "“25 last” is not an accession year."
     }
   ],
   "people": [
@@ -90,7 +112,8 @@
     "generations-preparing-2e",
     "morecraft-christian-survey",
     "cfah-1",
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "hales-new-analysis-1830"
   ],
   "related": [],
   "free_source_links": [
@@ -108,6 +131,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "hales-new-analysis-1830",
+      "url": "https://archive.org/details/newanalysisofchr01hale",
+      "locator": "1830 second edition, four volumes, full view"
     }
   ]
 }
