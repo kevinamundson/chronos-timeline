@@ -984,10 +984,10 @@ Source: Rev. William Hales, D.D., second edition, corrected and improved, four v
 ### L5. Darius the Mede, Darius Hystaspes, Menes, and Sesostris
 - “Darius the Mede, or Cyaxares” is on `darius-the-mede` only. The existing `cyaxares` record was not used.
 - “Darius Hystaspes” is on `darius-i` only. `darius-hystaspis` was left unlinked.
-- “Menes reigns in Egypt” 2412 is a new person `menes`. He is not `menes-abdul-noor`.
+- “Menes reigns in Egypt” 2412 is on the existing person `menes` (Cory, Ancient Fragments). It is not a new person, and it is not `menes-abdul-noor`. CFAH-7B identifies “Menes / Iry-Hor / Hor-Aha” with `mizraim` (“Menes is Mizraim”). That link is noted here. The Hales year was not copied onto `mizraim`.
 - “Sesostris reigns in Egypt” 1308 is in the extract only. It was not placed on `reign-of-senusret-iii`.
 - “Cecrops reigns at Athens” 1558 is on `reign-of-cecrops`, not Cecrops II.
-- **Recommendation:** leave these attachments. Do not merge the pairs.
+- **Recommendation:** leave the Darius and Sesostris attachments. Keep the Hales Menes year on `menes`, and do not copy it onto `mizraim` or `menes-abdul-noor`.
 
 ### L6. The Temple lines
 - Synopsis “Temple begun” 1027 and Table XI “Foundation of Solomon’s Temple” 1027 have no foundation event. They stay in the extract.
@@ -1010,9 +1010,10 @@ Source: Rev. William Hales, D.D., second edition, corrected and improved, four v
 - Volume IV, the synopsis of profane king lists.
 - **Recommendation:** stop here. A later pass can take the next clean block, still display only.
 
-### L9. Twenty-one new people stay unsorted
-- `abijah-of-judah`, `jehoshaphat`, `jehoram-of-judah`, `ahaziah-of-judah`, `joash-of-judah`, `amaziah`, `uzziah`, `jotham`, `ahaz`, `amon`, `jehoahaz-of-judah`, `jehoiachin`, `zedekiah`, `ishmael`, `gedaliah`, `belshazzar`, `zerubbabel`, `jeshua-high-priest`, `jehoiakim-high-priest`, `eliashib`, and `menes` have no tier 1–4 birth year. Each is tier `none`, with `sorting_year` null.
-- Belshazzar’s five years from B.C. 558 are not on Nabonidus and not on `belshazzar-co-regent`.
+### L9. Nineteen new people stay unsorted
+- `abijah-of-judah`, `jehoshaphat`, `jehoram-of-judah`, `ahaziah-of-judah`, `joash-of-judah`, `amaziah`, `uzziah`, `jotham`, `ahaz`, `amon`, `jehoahaz-of-judah`, `jehoiachin`, `zedekiah`, `ishmael`, `gedaliah`, `zerubbabel`, `jeshua-high-priest`, `jehoiakim-high-priest`, and `eliashib` have no tier 1–4 birth year. Each is tier `none`, with `sorting_year` null.
+- These nineteen were checked again against every person now on main, including Cory pass 2. No further duplicate was found. The Judah kings stay apart from Raleigh’s Israel-column records, as in L4. Jehoiakim the high priest stays apart from `iehoiakim`. Jeshua the high priest stays apart from Joshua the son of Nun.
+- Hales’s Belshazzar is Raleigh’s `balthasar`, the same king. “3. Belshazzar 5 558” is on `balthasar` reign, and “his feast and death 553” is on `balthasar` death. “Belshazzar” is an `alt_names` entry. No `belshazzar` person is created. The rows are not on Nabonidus and not on `belshazzar-co-regent`.
 - Jehoahaz and Jehoiachin print “3 m.” and have no B.C. year. Nebuchadnezzar’s “25 last” and Darius Nothus’s “3 first” are stored as he prints them, not as worked-out accessions.
 - **Recommendation:** do not make Hales a provisional sort tier.
 
@@ -1020,3 +1021,8 @@ Source: Rev. William Hales, D.D., second edition, corrected and improved, four v
 - The adopted ages from Adam through Noah sum to his printed 2256, and 5411 minus 2256 is his Deluge 3155. The period totals 1002, 545, 498, 120, 404, and 166 match the B.C. column the same way. Accession steps inside Judah match the reign lengths he prints, including the interregnum of 11 years after Amaziah.
 - Those products are already his printed figures. The notes say “Our check”. Nothing extra is stored.
 - **Recommendation:** leave the checks in the notes. Do not add a derived year.
+
+### L11. Judges stay in dates.reign
+- Kevin’s ruling, 2026-10-27: Samuel and the other judges keep the figures Hales prints in `dates.reign`. The same slot is used for every such row that has a person record: Joshua and the Elders, Othniel, Ehud, Gideon, Abimelech, Tola, Jair, Jephthah, Ibzan, Elon, Abdon, Samson, Eli, and Samuel (the call, the twelve years, and the joint judgeship).
+- Deborah and Barak have no person record. “4. Deborah and Barak 40 1406” stays on the event `deborah-and-barak`. Shamgar has no person record. His name stays on Ehud’s reign entry and on the event `shamgar-judges-israel`.
+- **Recommendation:** leave these rows in `dates.reign`. Do not move them to birth.

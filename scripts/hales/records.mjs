@@ -2,6 +2,8 @@
 // Lookalikes that already exist were not reused: iehoabaz (Raleigh, Israel), ioas
 // (Raleigh, Israel), ahaziah-king-of-israel, manasseh (son of Joseph), menes-abdul-noor,
 // cyaxares (Herodotus), darius-hystaspis (left beside darius-i).
+// “Menes reigns in Egypt” is on the existing person menes (Cory), not a new person.
+// Hales’s Belshazzar is Raleigh’s balthasar. No belshazzar person is created.
 export const people = {
   'abijah-of-judah': {
     title: 'Abijah (king of Judah)',
@@ -59,10 +61,6 @@ export const people = {
     title: 'Ishmael',
     summary: 'Son of Abraham in Hales’s synopsis. No earlier person record of Ishmael was in the data.',
   },
-  'belshazzar': {
-    title: 'Belshazzar',
-    summary: 'King in Hales’s Babylonian dynasty, five years from B.C. 558. Not Nabonidus, and not the co-regent event.',
-  },
   'gedaliah': {
     title: 'Gedaliah (governor of Judah)',
     summary: 'Governor Hales says Nebuchadnezzar appointed when Jerusalem was destroyed. No earlier record was in the data.',
@@ -82,9 +80,5 @@ export const people = {
   'eliashib': {
     title: 'Eliashib (high priest)',
     summary: 'High priest in Hales’s seventh period, 40 years. No earlier record was in the data.',
-  },
-  'menes': {
-    title: 'Menes',
-    summary: 'The Egyptian king in Hales’s Table XI, “Menes reigns in Egypt”. Not Menes Abdul Noor.',
   },
 };

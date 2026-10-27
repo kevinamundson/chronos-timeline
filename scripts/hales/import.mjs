@@ -21,6 +21,12 @@ const CFAH_NULL = () => ({
   citation: null, link: null, note: 'pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)',
 });
 const SLOTS = new Set(['birth', 'death', 'translated', 'reign']);
+// Kevin’s ruling, 2026-10-27: a judge Hales prints stays in dates.reign.
+const JUDGE_REIGN = new Set([
+  'iosua', 'othoniel', 'ehud', 'gedeon', 'abimelech-son-of-gideon', 'tola', 'jair',
+  'jephthah', 'ibzan', 'elon', 'abdon', 'samson', 'eli', 'samuel',
+]);
+const ALT_NAMES = { balthasar: ['Belshazzar'] };
 const SECTIONS = [
   ['table-xi', 'Vol. I, Table XI, Remarkable Eras, through Nabonassar'],
   ['period-1', 'Vol. II, Synopsis, First Period (Creation to the Deluge)'],
@@ -137,6 +143,7 @@ for (const row of rows) {
       eventIds.push(id);
     } else if (d.type === 'person') {
       if (!SLOTS.has(slot)) throw new Error(`person target ${t} needs birth, death, translated, or reign`);
+      if (JUDGE_REIGN.has(id) && slot !== 'reign') throw new Error(`${row.quote}: ${id} is a judge and must use dates.reign`);
       if (!d.dates[slot]) d.dates[slot] = [CFAH_NULL()];
       else if (!d.dates[slot].some((e) => e.source === 'cfah')) d.dates[slot].unshift(CFAH_NULL());
       list = d.dates[slot];
@@ -171,6 +178,16 @@ for (const id of Object.keys(NEW_PEOPLE)) {
   const lists = Object.values(d.dates || {});
   if (!lists.some((list) => list.some((e) => e.source === CHRON))) throw new Error(`${id}: new person received no hales entry`);
 }
+for (const [id, names] of Object.entries(ALT_NAMES)) {
+  const d = recs[id]?.doc;
+  if (!d || d.type !== 'person') throw new Error(`${id}: alternate-name target missing`);
+  d.alt_names ||= [];
+  for (const name of names) {
+    if (name === d.title || d.alt_names.includes(name)) continue;
+    d.alt_names.push(name);
+    touch(id);
+  }
+}
 
 for (const [id, r] of Object.entries(recs)) {
   const now = JSON.stringify({ y: r.doc.sorting_year ?? null, b: r.doc.sorting_basis ?? null });
@@ -201,6 +218,7 @@ md += `- Volume II, Synopsis of the Chronology, Periods I–VII: from the Creati
 md += `- Volume I, Table XI, Remarkable Eras, printed p. 101, from the Creation through the Era of Nabonassar (February 26, B.C. 747).\n\n`;
 md += `The last figure of a row is his B.C. column and is stored as \`year_bc_ad\` (negative). A figure in parenthesis is the Hebrew age he prints beside the age he adopts. Reign lengths and braced subtotals stay in the quotation. They are not converted into another year. “Our check” notes confirm a total he already prints. They are not stored.\n\n`;
 md += `He adopts the longer ages. Creation B.C. 5411 conflicts with the Masoretic creation year. Scripture governs. Nothing here changes a sort.\n\n`;
+md += `Kevin’s ruling, 2026-10-27: the figures Hales prints for the judges stay in \`dates.reign\`, as this pass already does for Samuel. They are not stored as births. Where he names a judge who already has a person record, that line is on \`dates.reign\`: Joshua and the Elders (\`iosua\`), Othniel (\`othoniel\`), Ehud (\`ehud\`; the same line names Shamgar), Gideon (\`gedeon\`), Abimelech (\`abimelech-son-of-gideon\`), Tola, Jair, Jephthah, Ibzan, Elon, Abdon, Samson, Eli, and Samuel (called as a prophet, 1152; twelve years, 1122; and judge jointly, which prints no B.C. year). Deborah and Barak have no person record, so “4. Deborah and Barak 40 1406” stays on the event \`deborah-and-barak\`. Shamgar has no person record; his name stays on Ehud’s reign entry and on the event \`shamgar-judges-israel\`.\n\n`;
 md += `Not entered, for a later pass:\n\n`;
 md += `- The rest of Table XI, still on p. 101: Era of the Seleucidæ (October 1) 312, Era Cæsarea at Antioch (September 1) 49, Era Juliana (January 1) 46, Era Hispanica (January 1) 38, and Vict. Actiaca (August 29) 30. All of p. 102, headed A.D., from the Vulgar Christian Era through the Netherlands 1566, then the Arundel Marbles prose.\n`;
 md += `- Synopsis Periods VIII–X, which begin on the same page as Nehemiah’s reform (high priests, the Maccabees, Herod, and the New Testament in vol. III).\n`;

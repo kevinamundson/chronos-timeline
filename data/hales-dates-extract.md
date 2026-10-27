@@ -13,6 +13,8 @@ The last figure of a row is his B.C. column and is stored as `year_bc_ad` (negat
 
 He adopts the longer ages. Creation B.C. 5411 conflicts with the Masoretic creation year. Scripture governs. Nothing here changes a sort.
 
+Kevin’s ruling, 2026-10-27: the figures Hales prints for the judges stay in `dates.reign`, as this pass already does for Samuel. They are not stored as births. Where he names a judge who already has a person record, that line is on `dates.reign`: Joshua and the Elders (`iosua`), Othniel (`othoniel`), Ehud (`ehud`; the same line names Shamgar), Gideon (`gedeon`), Abimelech (`abimelech-son-of-gideon`), Tola, Jair, Jephthah, Ibzan, Elon, Abdon, Samson, Eli, and Samuel (called as a prophet, 1152; twelve years, 1122; and judge jointly, which prints no B.C. year). Deborah and Barak have no person record, so “4. Deborah and Barak 40 1406” stays on the event `deborah-and-barak`. Shamgar has no person record; his name stays on Ehud’s reign entry and on the event `shamgar-judges-israel`.
+
 Not entered, for a later pass:
 
 - The rest of Table XI, still on p. 101: Era of the Seleucidæ (October 1) 312, Era Cæsarea at Antioch (September 1) 49, Era Juliana (January 1) 46, Era Hispanica (January 1) 38, and Vict. Actiaca (August 29) 30. All of p. 102, headed A.D., from the Vulgar Christian Era through the Netherlands 1566, then the Arundel Marbles prose.
@@ -172,8 +174,8 @@ Not entered, for a later pass:
 | period-7 | II.xxxvi | his second dream 568 | — | 568 BC |  | n/a |
 | period-7 | II.xxxvi | 2. Evil Merodach 3 561 | evil-merodach:reign | 561 BC | no other year on this slot | n/a |
 | period-7 | II.xxxvi | releases Jehoiachin 561 | jehoiachin:reign (new) | 561 BC | no other year on this slot | n/a |
-| period-7 | II.xxxvi | 3. Belshazzar 5 558 | belshazzar:reign (new) | 558 BC | no other year on this slot | n/a |
-| period-7 | II.xxxvi | his feast and death 553 | belshazzar:death (new) | 553 BC | no other year on this slot | n/a |
+| period-7 | II.xxxvi | 3. Belshazzar 5 558 | balthasar:reign | 558 BC | no other year on this slot | n/a |
+| period-7 | II.xxxvi | his feast and death 553 | balthasar:death | 553 BC | no other year on this slot | n/a |
 | period-7 | II.xxxvi | 1. Darius the Mede, or Cyaxares 2 553 | darius-the-mede:reign | 553 BC | no other year on this slot | n/a |
 | period-7 | II.xxxvi | 2. Cyrus the Persian 15 551 | cyrus-the-great:reign | 551 BC | morecraft 539 BC | CONFLICT (12 yrs) |
 | period-7 | II.xxxvi | takes Babylon, first of his sovereignty 536 | cyrus-the-great:reign, fall-of-babylon-539-bc | 536 BC | morecraft 539 BC; generations 539 BC | CONFLICT (3 yrs) |
@@ -202,7 +204,7 @@ Not entered, for a later pass:
 | table-xi | I.101 | Cali yuga, Indian era of the Deluge 3102 | — | 3102 BC |  | n/a |
 | table-xi | I.101 | Dispersion of mankind 2614 | first-territorial-division | 2614 BC | cfah 2254 BC | CONFLICT (360 yrs) |
 | table-xi | I.101 | Nimrod reigns in Assyria 2554 | nimrod:reign | 2554 BC | cfah 2192 BC | CONFLICT (362 yrs) |
-| table-xi | I.101 | Menes reigns in Egypt 2412 | menes:reign (new) | 2412 BC | no other year on this slot | n/a |
+| table-xi | I.101 | Menes reigns in Egypt 2412 | menes:reign | 2412 BC | no other year on this slot | n/a |
 | table-xi | I.101 | Tcheou, or division of the Chinese empire into twelve provinces 2277 | — | 2277 BC |  | n/a |
 | table-xi | I.101 | Abraham born 2153 | abraham:birth, abraham-birth | 2153 BC | cfah 1996 BC | CONFLICT (157 yrs) |
 | table-xi | I.101 | Settlement of the Israelites in Egypt 1863 | jacob-enters-egypt | 1863 BC | cfah 1706 BC | CONFLICT (157 yrs) |
