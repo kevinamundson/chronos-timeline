@@ -2,7 +2,7 @@
   "$schema": "../schema/chronology.schema.json",
   "primary_sort_chronology": "cfah",
   "sorting_rule": {
-    "description": "sorting_year = the BC/AD year of the first tier that has a non-null year_bc_ad (events: chronologies[]; people: dates.birth[]). The first matching entry within a tier is used; for split years (2348/2347) the start year is used. Secondary display chronologies (bible, masoretic-genealogy, jordan, josephus, Clonmacnoise, Raleigh) never set sorting_year. Exception, pending owner decision: where no tier gives a year, the Generations curriculum supplies a PROVISIONAL sort (tier \"provisional\"; see A8 in docs/OPEN-QUESTIONS-FOR-KEVIN.md).",
+    "description": "sorting_year = the BC/AD year of the first tier that has a non-null year_bc_ad. Events use chronologies[]. People use dates.birth[] when a tier 1–4 birth year is stored. A person who has a dates.reign slot and no tier-ranked birth year uses the reign-start year (year_bc_ad already stored on dates.reign); sorting_basis.slot is then reign_start. Within ussher-jones, for that reign-start choice, the 23rd edition (2026) governs over an older Jones edition when both print a year. The first matching entry within a tier is used otherwise; for split years (2348/2347) the start year is used. No year is derived. Secondary display chronologies (bible, masoretic-genealogy, jordan, josephus, Clonmacnoise, Raleigh, Herodotus, Cory, Shuckford, Hales, and CFAH paper_text) never set sorting_year. Exception, pending owner decision: where no tier gives a year, the Generations curriculum supplies a PROVISIONAL sort (tier \"provisional\"; see A8 in docs/OPEN-QUESTIONS-FOR-KEVIN.md). Kevin's ruling, 2026-10-28 (open question M3).",
     "tiers": [
       {
         "rank": 1,
@@ -22,7 +22,7 @@
         "rank": 3,
         "tier": "ussher-jones",
         "chronology": "ussher-jones",
-        "select": "ussher-jones entry (Floyd Nolen Jones)"
+        "select": "ussher-jones entry (Floyd Nolen Jones). On a reign-start sort, the 23rd edition (2026) governs over an older Jones edition when both print a year."
       },
       {
         "rank": 4,
@@ -31,7 +31,7 @@
         "select": "ussher entry (Annals of the World)"
       }
     ],
-    "fallbacks": "If no tier yields a year: tier \"derived\" (sorting_year copied from the record named in derived_from; events only by convention) or tier \"none\" (sorting_year null; people only). Tier \"provisional\" (records with no tier 1-4 year only): sorting_year = the first dated generations entry (events: chronologies[]; people: dates.birth[]); badged as provisional."
+    "fallbacks": "People with no tier birth year and a dates.reign slot: sorting_year is the tier 1–4 reign-start year (slot reign_start) before any provisional fallback. If no tier yields a year: tier \"derived\" (sorting_year copied from the record named in derived_from; events only by convention) or tier \"none\" (sorting_year null; people only). Tier \"provisional\" (records with no tier 1-4 year only): sorting_year = the first dated generations entry (events: chronologies[]; people: dates.birth[]); badged as provisional."
   },
   "chronologies": [
     {
@@ -189,7 +189,7 @@
       "authors": [
         "Floyd Nolen Jones"
       ],
-      "description": "Floyd Nolen Jones's refinement of Ussher (The Chronology of the Old Testament: A Return to the Basics). The figures that set a sort come from the most recent publication, the 23rd edition (Master Books, 2026), Appendix F, where that edition prints a year for the same event. Older citations (Chart No. 1, 1993; 15th edition, 2002) stay on the record. Where the 23rd edition prints a different year, that year governs the ussher-jones entry and the sort, and the older figure stays in a note. CFAH treats Jones as its biblical baseline (CFAH-1 Table 1), but here Jones is a separate chronology so his own statements are cited directly. It is the third sort tier: after a CFAH anchor point and after CFAH-1 Table 1, and before Ussher. Jones sets the sort for any record that has no CFAH year, in the Old Testament, the intertestamental period, and the New Testament. A Jones row sets that sort only when it names the same event. A row that names a different event is display only. Years are stored only as Jones prints them. An AM figure is never converted into a BC or AD year.",
+      "description": "Floyd Nolen Jones's refinement of Ussher (The Chronology of the Old Testament: A Return to the Basics). The figures that set a sort come from the most recent publication, the 23rd edition (Master Books, 2026), Appendix F, where that edition prints a year for the same event. Older citations (Chart No. 1, 1993; 15th edition, 2002) stay on the record. Where the 23rd edition prints a different year, that year governs the ussher-jones entry and the sort, and the older figure stays in a note. CFAH treats Jones as its biblical baseline (CFAH-1 Table 1), but here Jones is a separate chronology so his own statements are cited directly. It is the third sort tier: after a CFAH anchor point and after CFAH-1 Table 1, and before Ussher. Jones sets the sort for any record that has no CFAH year, in the Old Testament, the intertestamental period, and the New Testament. A Jones row sets that sort only when it names the same event. A row that names a different event is display only. A person with no tier 1–4 birth year, and with a dates.reign slot, sorts on the reign-start year Jones already prints there; the 23rd edition governs that year over an older Jones edition. Years are stored only as Jones prints them. An AM figure is never converted into a BC or AD year.",
       "year_conventions": "Creation = 0 AM = 4004 BC; Jones states \"any BC number added to its corresponding AM counterpart will always yield the value 4004\" (15th ed. 2002, Chart Five discussion, p. 110). That rule is documented here but NOT used to convert AM-only figures; year_bc_ad is filled only where Jones prints the BC year.",
       "references": [
         "jones-chart-1",

@@ -17,6 +17,8 @@ All rules are in [`AGENTS.md`](../AGENTS.md). Each task, or each source within T
 
 Kevin may reorder these.
 
+**Reign-start sorting (Kevin, 2026-10-28, open question M3).** A person with a `dates.reign` slot and no tier-ranked birth year sorts on the reign-start year the four tiers already store. `sorting_basis.slot` is `reign_start`. A tier birth still wins. Display-only sources do not set it. See `AGENTS.md` section 4.
+
 ---
 
 ## T1. Integrate further public-domain ancient histories (English translations)
@@ -171,7 +173,7 @@ This is still **draft wording**. Kevin gives final approval in the T3 PR.
 
 **Data available:**
 
-- Person `dates.reign[]` entries with `year_bc_ad` and `year_bc_ad_end` (display-only).
+- Person `dates.reign[]` entries with `year_bc_ad` and `year_bc_ad_end` (drawn as spans; the start year also sets the sort when no tier birth exists, Kevin 2026-10-28).
 - CFAH epochs and dynasty rows (`scripts/cfah/kings.mjs` `EPOCHS`).
 - `data/king-lists.json` rows with printed BC ranges.
 

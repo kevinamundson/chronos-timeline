@@ -11,6 +11,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { ARJ, arjCitation, OSF, osfUrl, osfCitation } from './papers.mjs';
 import { buildPhase5, loadTables } from './osf-kings.mjs';
+import { personTierSort, reignSortBasis } from '../sort-rule.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..', '..');
@@ -156,9 +157,22 @@ const tierOf = (entries) => { for (const [t, r, c, m] of TIERS) { const e = entr
 const basisLabel = (b, y) => `${b.tier === 'provisional' ? 'provisional (Generations)' : b.tier}${y == null ? '' : ` ${yl(y)}`}`;
 function resort(r) {
   const d = r.doc; const entries = d.type === 'event' ? d.chronologies : d.dates.birth || [];
-  const t = tierOf(entries); if (!t) return;
+  const t = tierOf(entries);
+  if (!t) {
+    if (d.type !== 'person') return;
+    const reign = personTierSort(d);
+    if (reign?.slot !== 'reign_start') return;
+    const b = d.sorting_basis || {};
+    if (d.sorting_year === reign.year && b.tier === reign.tier && b.tier_rank === reign.rank && b.chronology === reign.chronology && b.slot === 'reign_start') return;
+    d.sorting_year = reign.year;
+    d.sorting_basis = reignSortBasis(reign);
+    return;
+  }
   const b = d.sorting_basis || {};
-  if (b.tier === t.tier && b.tier_rank === t.rank && b.chronology === t.chron && d.sorting_year === t.y) return;
+  if (b.tier === t.tier && b.tier_rank === t.rank && b.chronology === t.chron && d.sorting_year === t.y) {
+    if (b.slot === 'reign_start') delete b.slot;
+    return;
+  }
   const created = r.created;
   const e = t.e;
   const what = t.rank === 1 ? `Tier 1: CFAH anchor point: ${e.date}${e.cfah_ap ? ` (${e.cfah_ap}${e.cfah_preprint ? `, ${paperLabel(e.source_text_id)}` : ''})` : ''}`

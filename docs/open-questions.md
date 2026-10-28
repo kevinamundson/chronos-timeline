@@ -11,6 +11,7 @@
 
   This is implemented with `cfah_basis` (`anchor_point` | `table1_baseline`) on cfah entries, a separate `ussher-jones` chronology, and
   `sorting_basis.tier`/`tier_rank`. It is enforced by `scripts/validate.mjs`.
+- ~~Reign-start sorting for a king or judge with no tier birth~~. **Kevin decided on 2026-10-28** (open question M3): the start year already stored on `dates.reign` sets the sort, and `sorting_basis.slot` is `reign_start`. A tier-ranked birth year still wins.
 
 ## Open
 1. **CFAH coverage.** Only 6 of the planned 20 CFAH papers are published. The current records have these CFAH dates:

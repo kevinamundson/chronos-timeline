@@ -5,19 +5,13 @@
   "title": "Menahem",
   "summary": "King of the northern kingdom of Israel, son of Gadi. Gadi has no record here. Jones dates the accession.",
   "description": "King of the northern kingdom of Israel, son of Gadi. Gadi has no record here. Jones dates the accession. Appendix F prints no end year, so no span is stored.",
-  "sorting_year": null,
+  "sorting_year": -772,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year."
-  },
-  "standby": {
-    "year_bc_ad": -772,
-    "basis": "source-printed",
-    "source_chronology": "ussher-jones",
-    "from_record": null,
-    "note": "Standby placement only. Ussher-Jones (Floyd Nolen Jones, The Chronology of the Old Testament) prints this BC/AD year on the reign entry (3232 772 Menahem becomes king over Israel). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Ussher–Jones). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: 3232 772 Menahem becomes king over Israel."
   },
   "father": null,
   "children": [],
