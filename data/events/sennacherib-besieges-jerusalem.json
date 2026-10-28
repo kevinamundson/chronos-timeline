@@ -2,6 +2,9 @@
   "$schema": "../../schema/event.schema.json",
   "id": "sennacherib-besieges-jerusalem",
   "type": "event",
+  "aliases": [
+    "sennacherib-first-invasion"
+  ],
   "title": "Sennacherib's siege of Jerusalem",
   "summary": "Sennacherib's siege of Jerusalem",
   "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Kevin ruled (2026-10-27) that Jones's first invasion, as Tartan (713 BC), is this event. That Appendix F row sets the sort. Jones's second invasion (709 BC) is a separate record.",

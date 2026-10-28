@@ -35,7 +35,7 @@ npm ci
 
 ## 3. Sort rules
 
-- [ ] `data/chronologies.json` → `sorting_rule` is unchanged: CFAH anchor point (incl. OSF) > CFAH-1 Table 1 > Ussher–Jones > Ussher.
+- [ ] `data/chronologies.json` → `sorting_rule` tier order is unchanged: CFAH anchor point (incl. OSF) > CFAH-1 Table 1 > Ussher–Jones > Ussher. A person with `dates.reign` and no tier-ranked birth year may sort on the reign-start year (`sorting_basis.slot` = `reign_start`). That is Kevin's ruling of 2026-10-28 (M3). A tier-ranked birth year still wins. Display-only sources still never set the sort.
 - [ ] Every new chronology is `primary: false`, has "SECONDARY DISPLAY" in its `description`, and has a validator rule stopping it from setting the sort.
 - [ ] **No `sorting_year` or tier changed on an existing record**, unless the PR lists the change and Kevin approved it. Check with:
 

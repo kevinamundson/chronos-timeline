@@ -11,7 +11,10 @@
 //   - sorting_year follows the 4-tier fallback (data/chronologies.json sorting_rule):
 //       1 cfah (cfah_basis=anchor_point) > 2 cfah (cfah_basis=table1_baseline)  [cfah_basis=paper_text never sorts]
 //       > 3 ussher-jones > 4 ussher; else "derived" (events) or "none" (people, null)
-//     and sorting_basis.tier / tier_rank / chronology name the tier actually used
+//     Events use chronologies[]. People use a tier-ranked dates.birth year.
+//     A person with dates.reign and no tier birth sorts on the reign-start year
+//     (sorting_basis.slot = reign_start). Display-only sources never set it.
+//     sorting_basis.tier / tier_rank / chronology name the tier actually used
 // Usage: npm install && npm run validate
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname, basename } from 'node:path';
@@ -22,6 +25,7 @@ import { isBlbUrl, isNonBlbScripture, blbFromOsis } from './blb.mjs';
 import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, standbySummaryLine } from './standby/compute.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE } from './raleigh/derived-year.mjs';
 import { loadChronologicalTable, yearColumnIndex, yearColumnReport } from './raleigh/table.mjs';
+import { TIERS, personTierSort, tierPick } from './sort-rule.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const S = (f) => JSON.parse(readFileSync(join(root, 'schema', f), 'utf8'));
@@ -141,26 +145,26 @@ for (const { rel, doc, kind } of Object.values(records)) {
   if (kind === 'map') (doc.locations || []).forEach((id) => need(rel, id, 'location', 'locations'));
 }
 
-// 4-tier sorting rule
-const TIERS = [
-  { tier: 'cfah-anchor', rank: 1, chronology: 'cfah', match: (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point' },
-  { tier: 'cfah-table1', rank: 2, chronology: 'cfah', match: (e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline' },
-  { tier: 'ussher-jones', rank: 3, chronology: 'ussher-jones', match: (e) => e.source === 'ussher-jones' },
-  { tier: 'ussher', rank: 4, chronology: 'ussher', match: (e) => e.source === 'ussher' },
-];
+// 4-tier sorting rule (scripts/sort-rule.mjs). People: tier birth, else reign start.
 const ruleTiers = (chronDoc.sorting_rule?.tiers || []).map((t) => t.tier).join(',');
 if (ruleTiers !== TIERS.map((t) => t.tier).join(',')) err('data/chronologies.json', `sorting_rule tiers must be ${TIERS.map((t) => t.tier).join(' > ')}`);
-const expectedSort = (entries) => {
-  for (const t of TIERS) { const e = entries.find((x) => t.match(x) && x.year_bc_ad != null); if (e) return { ...t, year: e.year_bc_ad }; }
-  return null;
-};
 const tierCount = {};
+let reignStartCount = 0;
 for (const { rel, doc, entries, kind } of sortingTargets) {
-  const b = doc.sorting_basis; const exp = expectedSort(entries);
+  const b = doc.sorting_basis;
+  const exp = kind === 'person' ? personTierSort(doc) : tierPick(entries);
   tierCount[b.tier] = (tierCount[b.tier] || 0) + 1;
+  if (kind === 'event' && b.slot) err(rel, 'events do not carry sorting_basis.slot');
+  if (b.slot === 'reign_start') reignStartCount++;
   if (exp) {
     if (b.tier !== exp.tier || b.tier_rank !== exp.rank || b.chronology !== exp.chronology) err(rel, `sorting_basis should be tier ${exp.rank} "${exp.tier}" (${exp.chronology}), found "${b.tier}"/${b.tier_rank}/${b.chronology}`);
-    if (doc.sorting_year !== exp.year) err(rel, `sorting_year should be ${exp.year} (tier ${exp.rank} ${exp.tier}), found ${doc.sorting_year}`);
+    if (doc.sorting_year !== exp.year) err(rel, `sorting_year should be ${exp.year} (tier ${exp.rank} ${exp.tier}${exp.slot === 'reign_start' ? ', reign start' : ''}), found ${doc.sorting_year}`);
+    if (exp.slot === 'reign_start') {
+      if (b.slot !== 'reign_start') err(rel, 'a reign-start sort must set sorting_basis.slot to "reign_start"');
+      if (!['cfah', 'ussher-jones', 'ussher'].includes(exp.chronology)) err(rel, 'a reign-start sort may use only the four sort tiers');
+    } else if (b.slot != null && b.slot !== 'birth') err(rel, `sorting_basis.slot "${b.slot}" does not match the birth year that sets the sort`);
+  } else if (b.slot === 'reign_start') {
+    err(rel, 'sorting_basis.slot is reign_start, but no tier 1–4 year is stored on dates.reign');
   } else if (b.tier === 'derived') {
     const src = records[b.derived_from];
     if (!src) err(rel, `sorting_basis.derived_from "${b.derived_from}" not found`);
@@ -200,7 +204,8 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
   for (const { rel, doc, entries } of sortingTargets) {
     const b = doc.sorting_basis || {};
     if ((b.chronology === 'generations' || b.derived_from === 'generations') && b.tier !== 'provisional') err(rel, 'generations may never set the sort except via the explicit "provisional" tier');
-    if (b.tier === 'provisional' && expectedSort(entries)) err(rel, 'provisional (generations) sort used although a tier 1-4 year exists');
+    const tierHit = doc.type === 'person' ? personTierSort(doc) : tierPick(entries);
+    if (b.tier === 'provisional' && tierHit) err(rel, 'provisional (generations) sort used although a tier 1-4 year exists');
   }
   for (const { rel, doc } of Object.values(records)) {
     const all = [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()];
@@ -449,6 +454,24 @@ if (kingDoc) {
     }
   }
 }
+// Former event slugs. The build writes a 301 in site/dist/_redirects. An alias is not a record.
+{
+  const aliasOwner = new Map();
+  for (const { rel, doc, kind } of Object.values(records)) {
+    if (!doc.aliases) continue;
+    if (kind !== 'event') err(rel, 'aliases belong only on events');
+    for (const alias of doc.aliases) {
+      if (records[alias]) err(rel, `alias "${alias}" is also a record id`);
+      if (alias === doc.id) err(rel, `alias "${alias}" is the record's own id`);
+      if (aliasOwner.has(alias)) err(rel, `alias "${alias}" is already used by ${aliasOwner.get(alias)}`);
+      aliasOwner.set(alias, doc.id);
+    }
+  }
+  if (!records['sennacherib-besieges-jerusalem']?.doc.aliases?.includes('sennacherib-first-invasion')) {
+    err('data/events/sennacherib-besieges-jerusalem.json', 'must keep the alias sennacherib-first-invasion so /events/sennacherib-first-invasion/ redirects');
+  }
+  if (records['sennacherib-first-invasion']) err('data/events/sennacherib-first-invasion.json', 'the old slug is an alias, not a record');
+}
 // Standby placement: allowed only while sorting_year is null. It never sets the sort.
 {
   const ctx = makeStandbyContext({
@@ -482,4 +505,5 @@ if (errors.length) {
 const standbyLine = standbySummaryLine(standbyCounts(Object.values(records).map((r) => r.doc)));
 console.log(`PASS: ${checked} files valid (chronologies, sources, ${counts}, ${chartIds.size} CFAH charts); cross-references, 4-tier sorting rule and MT Genesis 5 and 11 arithmetic consistent.`);
 console.log('Sorting tiers used: ' + Object.entries(tierCount).map(([k, v]) => `${k}=${v}`).join(', '));
+console.log(`Reign-start sorts: ${reignStartCount}`);
 console.log(standbyLine);

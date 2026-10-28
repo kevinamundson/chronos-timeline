@@ -61,7 +61,7 @@ site/                   static website (MVP); data/ stays the single source of t
   3. `ussher-jones`: Floyd Nolen Jones (only years he prints himself; AM-only figures are never converted)
   4. `ussher`: Ussher's *Annals*
 
-  Events take this from `chronologies[]` and people from `dates.birth[]`. `sorting_basis` records `{tier, tier_rank, chronology, note}`.
+  Events take this from `chronologies[]`. People take it from `dates.birth[]` when a tier 1–4 birth year is stored. A person who has a `dates.reign` slot and no tier-ranked birth year takes the reign-start year (`year_bc_ad` already stored there). `sorting_basis.slot` is then `reign_start`. Within Ussher–Jones that choice uses the 23rd edition (2026) over an older Jones edition. Display-only chronologies never set it, and no year is derived. `sorting_basis` records `{tier, tier_rank, chronology, slot?, note}`.
 - **Secondary display chronologies**: `jordan` (James B. Jordan, *Biblical Chronology* newsletter, 1989-1997), `bible`, `masoretic-genealogy`, `josephus`, Clonmacnoise and Raleigh are shown next to the sort tiers but never set `sorting_year`; the validator rejects any `sorting_basis` that points at `jordan`. Jordan's B.C. years are his "SBC" (strictest Biblical chronology), which runs about 74-75 years later than Ussher's (Creation 3930 B.C.), while his Anno Mundi figures mostly match Ussher's. `data/jordan-dates-extract.md` lists every dated statement in the two Jordan sources as a backlog. The full texts of the 93 issues read are in `sources/jordan/`.
   If no tier gives a year, an event uses `tier: "derived"`, copying `sorting_year` from the record named in `derived_from`, and a person uses `tier: "none"` with `sorting_year: null`.
   `sort_order_within_year` breaks ties.
@@ -93,7 +93,7 @@ search built at build time. No server, database, CMS or paid service. Vendor JS/
 (self-hosted, no CDN).
 
 **Pages generated**
-- `/`: timeline (events + people by birth, sorted by `sorting_year`, coloured by sort tier), map of places with coordinates
+- `/`: timeline (events and people sorted by `sorting_year`, coloured by sort tier; a person with no tier birth is placed at the reign start when that year is stored), map of places with coordinates
   (marker colour = OpenBible certainty; places with null coordinates are listed as "not mapped"), and an ordered text list of events
   (the keyboard and screen-reader alternative to the timeline).
 - `/events/<id>/`, `/people/<id>/`, `/locations/<id>/`, `/maps/<id>/`: description, Scripture refs (Berean Literal Bible links), the chronologies

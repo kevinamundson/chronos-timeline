@@ -9,6 +9,8 @@ import { BOOKS as BLB_BOOKS, blbFromOsis, blbFromText } from '../scripts/blb.mjs
 import { loadChronologicalTable, toCsv, toMarkdown, toXls, yearColumnIndex } from '../scripts/raleigh/table.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmHtml, raleighRecordShort, RALEIGH_DERIVED_NOTE } from '../scripts/raleigh/derived-year.mjs';
 import { standbyCounts, standbySummaryLine } from '../scripts/standby/compute.mjs';
+import { isJones23, reignStartPhrase } from '../scripts/sort-rule.mjs';
+import { redirectLines, redirectsFileHasSennacherib } from '../scripts/redirects.mjs';
 
 assertRaleighDerived();
 
@@ -130,16 +132,31 @@ const TIERS = {
   provisional: { cls: 'tp', label: 'Provisional · Generations curriculum date (no CFAH / Ussher–Jones / Ussher date exists; pending owner decision)' },
   none: { cls: 'tn', label: 'Undated · no tier gives a year' },
 };
-// Which entry set the sort (mirrors scripts/validate.mjs rule)
-const sortingEntry = (entries, basis) => {
+// Which entry set the sort (mirrors scripts/sort-rule.mjs).
+// A reign-start ussher-jones year prefers the 23rd edition, then the stored year.
+const sortingEntry = (entries, basis, sortYear) => {
   if (!basis) return null;
   const has = (e) => e.year_bc_ad != null;
   const t = basis.tier;
-  if (t === 'cfah-anchor') return entries.find((e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point' && has(e));
-  if (t === 'cfah-table1') return entries.find((e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline' && has(e));
-  if (t === 'ussher-jones' || t === 'ussher') return entries.find((e) => e.source === t && has(e));
-  if (t === 'provisional') return basis.chronology === 'morecraft' ? entries.find((e) => e.source === 'morecraft' && has(e)) : entries.find((e) => e.source === 'generations' && has(e) && !e.superseded_by);
+  const list = entries || [];
+  const byYear = (hits) => (sortYear == null ? hits[0] : hits.find((e) => e.year_bc_ad === sortYear) || hits[0]) || null;
+  if (t === 'cfah-anchor') return list.find((e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point' && has(e));
+  if (t === 'cfah-table1') return list.find((e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline' && has(e));
+  if (t === 'ussher-jones') {
+    const hits = list.filter((e) => e.source === 'ussher-jones' && has(e));
+    if (basis.slot === 'reign_start') {
+      const ed23 = hits.filter(isJones23);
+      return byYear(ed23.length ? ed23 : hits);
+    }
+    return byYear(hits);
+  }
+  if (t === 'ussher') return byYear(list.filter((e) => e.source === 'ussher' && has(e)));
+  if (t === 'provisional') return basis.chronology === 'morecraft' ? list.find((e) => e.source === 'morecraft' && has(e)) : list.find((e) => e.source === 'generations' && has(e) && !e.superseded_by);
   return null;
+};
+const sortEntriesOf = (rec) => {
+  if (rec.sorting_basis?.slot === 'reign_start') return rec.dates?.reign || [];
+  return rec.chronologies || rec.dates?.birth || [];
 };
 // Four-tier rule applied to any date list (birth/death/translated): CFAH AP > CFAH-1 Table 1 > Ussher-Jones > Ussher.
 const TIER_PICKS = [
@@ -162,7 +179,7 @@ const tierYear = (entries) => {
 
 function chronTable(entries, { sortYear, basis, caption }) {
   const sorted = [...entries].map((e, i) => ({ e, i })).sort((a, b) => rowRank(a.e) - rowRank(b.e) || a.i - b.i).map((x) => x.e);
-  const setter = sortingEntry(entries, basis);
+  const setter = sortingEntry(entries, basis, sortYear);
   const rows = sorted.map((e) => {
     // An older edition superseded by a newer one: a collapsed secondary line, with the difference noted; never a sort or diff flag.
     if (e.superseded_by) {
@@ -229,13 +246,14 @@ ${oq.length ? `<ul class="flag-list">${oq.map((t) => `<li><span class="flag flag
 function sortBadge(rec) {
   const b = rec.sorting_basis || {};
   const t = (b.tier === 'provisional' && b.chronology === 'morecraft' ? { cls: 'tp', label: 'Provisional · Morecraft date (no CFAH / Ussher–Jones / Ussher / Generations date exists; pending owner decision)' } : TIERS[b.tier]) || { cls: 'tn', label: b.tier || 'unknown' };
-  const ent = sortingEntry(rec.chronologies || rec.dates?.birth || [], b);
-  const yl = yearLabel(rec.sorting_year, ent?.year_bc_ad_end) || 'Undated';
+  const ent = sortingEntry(sortEntriesOf(rec), b, rec.sorting_year);
+  const yl = yearLabel(rec.sorting_year, b.slot === 'reign_start' ? null : ent?.year_bc_ad_end) || 'Undated';
   let extra = '';
   if (b.tier === 'derived' && b.derived_from) extra = ` from ${link(b.derived_from)}`;
+  const slotLine = b.slot === 'reign_start' ? `<p class="sort-slot">${esc(reignStartPhrase(b.tier))}.</p>` : '';
   return `<div class="sortbox">
 <div class="sortyear"><span class="small muted">Sort year</span><strong>${esc(yl)}</strong></div>
-<div><span class="tier tier-${t.cls}">${esc(t.label)}</span>${extra}${b.note ? `<p class="small muted">${esc(b.note)}</p>` : ''}</div></div>`;
+<div><span class="tier tier-${t.cls}">${esc(t.label)}</span>${extra}${slotLine}${b.note ? `<p class="small muted">${esc(b.note)}</p>` : ''}</div></div>`;
 }
 
 const linkList = (ids, title) => !ids?.length ? '' : `<section class="card"><h2>${esc(title)}</h2><ul class="links">${ids.map((id) => `<li>${link(id)}</li>`).join('')}</ul></section>`;
@@ -393,9 +411,11 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
   const items = [
     ...events.filter((e) => e.sorting_year != null).map((e) => stamp(e, { id: e.id, group: 'events', title: e.title, y: e.sorting_year, yEnd: e.chronologies.find((c) => c === sortingEntry(e.chronologies, e.sorting_basis))?.year_bc_ad_end ?? null, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 })),
     ...people.filter((p) => p.sorting_year != null).map((p) => {
-      const end = tierYear(p.dates?.death) || tierYear(p.dates?.translated);
+      const reignSort = p.sorting_basis?.slot === 'reign_start';
+      const end = reignSort ? null : (tierYear(p.dates?.death) || tierYear(p.dates?.translated));
       const yEnd = end && end.y != null && end.y > p.sorting_year ? end.y : null;
-      return stamp(p, { id: p.id, group: 'people', title: p.title, y: p.sorting_year, yEnd, label: yEnd != null ? `${yearLabel(p.sorting_year)} – ${yearLabel(yEnd)}` : `born ${yearLabel(p.sorting_year)}`, tier: tierCls(p), url: urlOf(p), order: 0 });
+      const label = reignSort ? `reign start ${yearLabel(p.sorting_year)}` : (yEnd != null ? `${yearLabel(p.sorting_year)} – ${yearLabel(yEnd)}` : `born ${yearLabel(p.sorting_year)}`);
+      return stamp(p, { id: p.id, group: 'people', title: p.title, y: p.sorting_year, yEnd, label, tier: tierCls(p), url: urlOf(p), order: 0 });
     }),
     ...standbyRecords.map((r) => stamp(r, { id: r.id, group: r.type === 'event' ? 'events' : 'people', title: r.title, y: r.standby.year_bc_ad, yEnd: null, label: standbyItemLabel(r), tier: 'standby', standby: true, url: urlOf(r), order: 50 })),
   ];
@@ -760,7 +780,8 @@ for (const p of people) {
 ${sf.age_at_named_son != null ? `<div><dt>Age at son's birth</dt><dd>${esc(sf.age_at_named_son)}${sf.named_son ? ` (${link(sf.named_son)})` : ''}</dd></div>` : ''}
 ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years)} years</dd></div>` : ''}
 </dl>${scriptureList(sf.refs)}</section>` : '';
-  const tables = ['birth', 'death', 'translated', 'reign'].filter((k) => d[k]?.length).map((k) => `<section class="card" id="${k}"><h2>${k[0].toUpperCase() + k.slice(1)}</h2>${chronTable(d[k], { sortYear: k === 'birth' ? p.sorting_year : null, basis: k === 'birth' ? p.sorting_basis : null, caption: `${k} of ${p.title}, CFAH first` })}${flagsSection({ sorting_year: null }, d[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"')}</section>`).join('\n');
+  const sortSlot = p.sorting_basis?.slot === 'reign_start' ? 'reign' : 'birth';
+  const tables = ['birth', 'death', 'translated', 'reign'].filter((k) => d[k]?.length).map((k) => `<section class="card" id="${k}"><h2>${k[0].toUpperCase() + k.slice(1)}</h2>${chronTable(d[k], { sortYear: k === sortSlot ? p.sorting_year : null, basis: k === sortSlot ? p.sorting_basis : null, caption: `${k} of ${p.title}, CFAH first` })}${flagsSection({ sorting_year: null }, d[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"')}</section>`).join('\n');
   const evs = [...new Set([...(p.events || []), ...eventsWith(p.id)])];
   const kls = kingListsOf(p.id);
   const kingCard = p.dynasty || kls.length ? `<section class="card" id="king-lists"><h2>Dynasty and king lists</h2>${p.dynasty ? `<p>Dynasty: ${esc(p.dynasty)}</p>` : ''}${kls.length ? `<p>Listed in: ${kls.map((l) => `<a href="/king-lists/#${esc(l.id)}">${esc(l.title)}</a>`).join('; ')}</p>` : ''}</section>` : '';
@@ -1047,6 +1068,12 @@ out('404.html', page({ title: 'Not found', path: '', pagefind: false, body: '<h1
   }
 }
 writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/pagefind/*\n  Cache-Control: public, max-age=0, must-revalidate\n/chronologies/raleigh-chronological-table/*.csv\n  Content-Type: text/csv; charset=utf-8\n/chronologies/raleigh-chronological-table/*.md\n  Content-Type: text/markdown; charset=utf-8\n/chronologies/raleigh-chronological-table/*.xls\n  Content-Type: application/vnd.ms-excel\n`);
+const redirectBody = `${redirectLines(events).join('\n')}\n`;
+if (!redirectsFileHasSennacherib(redirectBody)) {
+  console.error('build: _redirects is missing the Sennacherib 301');
+  process.exit(1);
+}
+writeFileSync(join(DIST, '_redirects'), redirectBody);
 
 mkdirSync(join(DIST, 'data'), { recursive: true });
 writeFileSync(join(DIST, 'data', 'person-timelines.json'), JSON.stringify(Object.fromEntries(Object.entries(personTimelines).map(([k, t]) => [k, t.none ? { none: true, notes: t.notes, standby: 0, standbyOwn: false } : { window: [t.start, t.stop], birthTier: t.birth?.tier || null, endTier: t.end?.tier || null, endKind: t.endKind, life: t.life ? { start: t.life.y, end: t.life.yEnd, label: t.life.label } : null, own: t.ownCount, context: t.ctxCount, standby: t.standbyCount, standbyOwn: !!t.standbyOwn, notes: t.notes, ownUndated: t.ownUndated.map((e) => e.id) }])), null, 1));
