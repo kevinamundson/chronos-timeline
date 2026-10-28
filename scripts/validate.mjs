@@ -23,6 +23,8 @@ import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import { isBlbUrl, isNonBlbScripture, blbFromOsis } from './blb.mjs';
 import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, standbySummaryLine } from './standby/compute.mjs';
+import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE, ITALICS_NOTE } from './raleigh/derived-year.mjs';
+import { loadChronologicalTable, yearColumnIndex, yearColumnReport } from './raleigh/table.mjs';
 import { TIERS, personTierSort, tierPick } from './sort-rule.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -256,18 +258,63 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
     for (const l of doc.free_source_links || []) { const s = srcDoc.sources.find((x) => x.id === l.source_id); if (s?.access === 'private-copy') err(rel, `private copy ${s.id} may not be listed in free_source_links`); }
   }
 }
-// Raleigh, The History of the World (1617): secondary display. Never sets the sort. AM as printed; no BC conversion.
+let raleighDerivedSummary = '';
+// Raleigh, The History of the World (1617): secondary display. Never sets the sort.
+// year_bc_ad stays null. A display parenthetical is computed from Creation in 4032 BC and is not stored as a year.
 {
+  let raleighShown = 0;
+  let raleighSkipped = 0;
+  try { assertRaleighDerived(); } catch (e) { err('scripts/raleigh/derived-year.mjs', e.message); }
+  if (ITALICS_NOTE !== 'Dates in italics are derived.') err('scripts/raleigh/derived-year.mjs', 'the italics note must read "Dates in italics are derived."');
+  const buildSrc = readFileSync(join(root, 'site/build.mjs'), 'utf8');
+  if (!buildSrc.includes('ITALICS_NOTE')) err('site/build.mjs', 'a page that shows an italic derived year must print ITALICS_NOTE');
   const ral = chronDoc.chronologies.find((c) => c.id === 'raleigh-history-of-the-world');
   if (ral && (ral.primary || !/SECONDARY DISPLAY/.test(ral.description))) err('data/chronologies.json', 'raleigh-history-of-the-world must be a non-primary SECONDARY DISPLAY chronology');
+  if (ral && !/never sets sorting_year/.test(ral.description || '')) err('data/chronologies.json', 'raleigh description must say it never sets sorting_year');
+  if (!ral) err('data/chronologies.json', 'raleigh-history-of-the-world is missing');
+  if (ral && (!/4032/.test(ral.year_conventions || '') || !/4031/.test(ral.year_conventions || ''))) err('data/chronologies.json', 'raleigh year_conventions must state the 4032 BC display anchor and the 4031 BC Julian Period difference');
   for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'raleigh-history-of-the-world' || doc.sorting_basis?.derived_from === 'raleigh-history-of-the-world') err(rel, 'raleigh-history-of-the-world may never set the sort');
   for (const { rel, doc } of Object.values(records)) {
-    for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'raleigh-history-of-the-world')) {
-      if (e.year_bc_ad != null || e.year_bc_ad_end != null) err(rel, 'raleigh entries keep year_bc_ad null; AM is not converted to BC');
+    for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()]) {
+      for (const problem of raleighDerivedProblems(e)) err(rel, problem);
+      if (e.source !== RALEIGH_SOURCE) continue;
+      if (e.year_bc_ad != null || e.year_bc_ad_end != null) err(rel, 'raleigh entries keep year_bc_ad null; the derived year is display text only');
       if (e.source_text_id !== 'raleigh-history-of-the-world-1617') err(rel, `raleigh entry needs source_text_id raleigh-history-of-the-world-1617, got "${e.source_text_id}"`);
       if (!/1617/.test(e.citation || '') || !(/Chronological Table/.test(e.citation || '') || /Book /.test(e.citation || ''))) err(rel, 'raleigh citation must name the 1617 text and a Book or the Chronological Table');
       if (!e.date) err(rel, 'raleigh entry needs the words as printed');
+      const shown = raleighAmDisplay(e.year_am, e.year_am_end);
+      if (shown.text) raleighShown += 1;
+      else raleighSkipped += 1;
     }
+  }
+  const appJs = readFileSync(join(root, 'site/src/app.js'), 'utf8');
+  if (!appJs.includes(RALEIGH_DERIVED_NOTE)) err('site/src/app.js', 'timeline tooltip is missing the Raleigh derived-year note');
+  const table = loadChronologicalTable();
+  const report = yearColumnReport(table);
+  if (report.missing) err('sources/raleigh/A10357.earlyprint-unadorned.xml', `${report.missing} chronological-table section(s) have no Julian/World year column`);
+  for (const flag of report.flags) if (flag.badge === 'mismatch') err('sources/raleigh/A10357.earlyprint-unadorned.xml', `${flag.sig}: ${flag.flag} (${flag.text})`);
+  let floodCell = false;
+  for (const section of table.sections) {
+    const idx = yearColumnIndex(section);
+    for (const row of section.rows) {
+      const cell = idx >= 0 ? row.cells[idx] : null;
+      if (!cell || cell.covered) continue;
+      const ann = annotateWorldYear(cell.original || '');
+      if ((cell.original || '').includes('2338 1656') && ann.text.includes('AM 1656') && ann.html.includes('<em>2377 BC</em>')) floodCell = true;
+    }
+  }
+  if (!floodCell) err('sources/raleigh/A10357.earlyprint-unadorned.xml', 'Flood year cell 2338 1656 does not show AM 1656 and <em>2377 BC</em>');
+  const floodDoc = records['the-flood']?.doc;
+  const floodRows = [...(floodDoc?.chronologies || [])].filter((e) => e.source === RALEIGH_SOURCE && e.year_am === 1656);
+  if (floodRows.length < 1) err('data/events/the-flood.json', 'expected a Raleigh Flood entry at AM 1656');
+  for (const e of floodRows) {
+    const shown = raleighAmDisplay(e.year_am, e.year_am_end);
+    if (!shown.text?.includes('AM 1656') || !shown.html?.includes('<em>2377 BC</em>')) err('data/events/the-flood.json', `Raleigh Flood display is "${shown.text}" / "${shown.html}"`);
+  }
+  const skipped = report.flags.filter((f) => f.badge !== 'mismatch');
+  raleighDerivedSummary = `Raleigh derived display: ${raleighShown} chronology entries show a derived year, ${raleighSkipped} flagged with none. Table year cells: ${report.derived} derived (${report.derivedNoted} of them also flagged), ${report.flagged} not derived, ${report.plain} empty.`;
+  if (skipped.length) {
+    raleighDerivedSummary += ` Noted or not derived: ${skipped.map((f) => `${f.sig} [${f.badge}] "${String(f.text).replace(/\s+/g, ' ')}"`).join('; ')}.`;
   }
 }
 // Cory, Ancient Fragments (1876 Hodges): secondary display. Durations and sari, never a BC year, never a sort.
@@ -453,6 +500,7 @@ if (kingDoc) {
     if (JSON.stringify(sb ?? null) !== JSON.stringify(expected ?? null)) err(rel, 'standby does not match scripts/standby/compute.mjs; re-run it');
   }
 }
+if (raleighDerivedSummary) console.log(raleighDerivedSummary);
 if (errors.length) {
   console.error(`FAIL: ${errors.length} problem(s) in ${checked} files\n` + errors.map((e) => '  - ' + e).join('\n'));
   process.exit(1);

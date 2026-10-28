@@ -89,6 +89,21 @@
           "$ref": "#/$defs/historicalYear",
           "description": "End of range, e.g. -2347 for 2348/2347 BC."
         },
+        "derived_bc_ad": {
+          "$ref": "#/$defs/historicalYear",
+          "description": "Optional display-only year for Raleigh. BC = 4033 − AM from Creation in 4032 BC. Never a printed year and never a sort. Allowed only on raleigh-history-of-the-world."
+        },
+        "derived_bc_ad_end": {
+          "$ref": "#/$defs/historicalYear",
+          "description": "Optional display-only end year when year_am_end is set. Same Raleigh formula. Never a sort."
+        },
+        "derived_from": {
+          "anyOf": [
+            { "const": "raleigh-creation-4032-bc" },
+            { "type": "null" }
+          ],
+          "description": "Present only with derived_bc_ad, and only on a Raleigh entry. Names the 4032 BC display anchor."
+        },
         "precision": {
           "enum": [
             "day",

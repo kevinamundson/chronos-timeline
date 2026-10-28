@@ -1,11 +1,13 @@
 // The 1617 chronological table, as a grid of sections.
 // Column headings change through the book, so each run of rows under one
 // "Iulian…" heading is its own table. Years stay the Julian Period and the
-// yeere of the World. Nothing here is a BC date.
+// yeere of the World. A parenthetical beside a confirmed World year is display
+// text only (scripts/raleigh/derived-year.mjs). It is not a year he printed.
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { BOOK_HEADING, modernizeCell } from './spelling.mjs';
+import { annotateWorldYear, formatAnnotatedCell } from './derived-year.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 
@@ -119,11 +121,60 @@ function textAt(cell, mode) {
   return cell[mode] || '';
 }
 
+/** Visual index of the heading cell that names the Julian Period and the yeere of the World. */
+export function yearColumnIndex(section) {
+  const head = section.rows.find((r) => r.header) || section.rows[0];
+  if (!head) return -1;
+  return head.cells.findIndex((c) => c && !c.covered && /^(Iulian|Julian)\b/.test(c.original || ''));
+}
+
+function displayCell(row, i, mode, yearIdx) {
+  const raw = textAt(row.cells[i], mode);
+  if (row.header || i !== yearIdx) return raw;
+  return formatAnnotatedCell(annotateWorldYear(raw));
+}
+
 export function sectionGrid(section, mode) {
+  const yearIdx = yearColumnIndex(section);
   return section.rows.map((row) => {
-    const line = Array.from({ length: section.width }, (_, i) => textAt(row.cells[i], mode));
+    const line = Array.from({ length: section.width }, (_, i) => displayCell(row, i, mode, yearIdx));
     return { sig: row.sig, header: row.header, line };
   });
+}
+
+/** Counts for the year column only. Name cells and reign lengths are left alone. */
+export function yearColumnReport(table) {
+  const flags = [];
+  let derived = 0;
+  let derivedNoted = 0;
+  let flagged = 0;
+  let plain = 0;
+  let missing = 0;
+  for (const section of table.sections) {
+    const idx = yearColumnIndex(section);
+    if (idx < 0) { missing += 1; continue; }
+    for (const row of section.rows) {
+      if (row.header) continue;
+      const cell = row.cells[idx];
+      if (!cell || cell.covered || !(cell.original || cell.modern)) { plain += 1; continue; }
+      const original = annotateWorldYear(cell.original || '');
+      const modern = annotateWorldYear(cell.modern || '');
+      if (original.status === 'derived') {
+        derived += 1;
+        if (original.badge || original.flag) {
+          derivedNoted += 1;
+          flags.push({ sig: row.sig, text: cell.original, badge: original.badge || 'Noted', flag: original.flag });
+        }
+      } else if (original.status === 'flagged') {
+        flagged += 1;
+        flags.push({ sig: row.sig, text: cell.original, badge: original.badge, flag: original.flag });
+      } else plain += 1;
+      if (JSON.stringify(original.worlds) !== JSON.stringify(modern.worlds) || original.status !== modern.status) {
+        flags.push({ sig: row.sig, text: cell.original, badge: 'mismatch', flag: 'Modern spelling changed the year figures.' });
+      }
+    }
+  }
+  return { derived, derivedNoted, flagged, plain, missing, flags };
 }
 
 function csvEscape(s) {
@@ -131,7 +182,7 @@ function csvEscape(s) {
   return /[",\n\r]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v;
 }
 
-const FILE_NOTE = 'Raleigh, The History of the World (1617, EEBO-TCP A10357), A Chronological Table. Years are the Julian Period and the yeere of the World as printed. No year is converted to BC. The Signature column is the 1617 sheet and is not a column of his table.';
+const FILE_NOTE = 'Raleigh, The History of the World (1617, EEBO-TCP A10357), A Chronological Table. Years are the Julian Period and the yeere of the World as printed. A parenthetical year, for example AM 1656 (2377 BC), is display text only, from Raleigh\'s Creation in 4032 BC. On the web page that year is in italics. Dates in italics are derived. It is not a year he printed, and year_bc_ad stays null. The Signature column is the 1617 sheet and is not a column of his table.';
 
 export function toCsv(table, mode) {
   const lines = [csvEscape(FILE_NOTE), csvEscape(mode === 'original' ? 'Original spelling' : 'Modern spelling'), csvEscape(table.heading[mode])];
@@ -190,6 +241,7 @@ export function toXls(table, mode) {
   for (const section of table.sections) {
     const width = Math.max(1, section.width + 1);
     emit([{ text: section.heading[mode], across: width - 1 }]);
+    const yearIdx = yearColumnIndex(section);
     for (const row of section.rows) {
       const cells = [{ text: row.header ? 'Signature' : row.sig, index: 1 }];
       let col = 2;
@@ -198,7 +250,7 @@ export function toXls(table, mode) {
         if (!cell || cell.covered) { col += 1; continue; }
         const span = Math.min(cell.colSpan || 1, section.width - i);
         const down = Math.max(0, (cell.rowSpan || 1) - 1);
-        cells.push({ text: cell[mode] || '', index: col, across: span > 1 ? span - 1 : 0, down });
+        cells.push({ text: displayCell(row, i, mode, yearIdx), index: col, across: span > 1 ? span - 1 : 0, down });
         col += span;
         i += span - 1;
       }

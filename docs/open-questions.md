@@ -12,6 +12,7 @@
   This is implemented with `cfah_basis` (`anchor_point` | `table1_baseline`) on cfah entries, a separate `ussher-jones` chronology, and
   `sorting_basis.tier`/`tier_rank`. It is enforced by `scripts/validate.mjs`.
 - ~~Reign-start sorting for a king or judge with no tier birth~~. **Kevin decided on 2026-10-28** (open question M3): the start year already stored on `dates.reign` sets the sort, and `sorting_basis.slot` is `reign_start`. A tier-ranked birth year still wins.
+- ~~Raleigh's Creation anchor for the display year~~. **Kevin decided on 2026-10-28** (G11): keep AM 1 = 4032 BC. Raleigh's Julian Period column (JP 683 = AM 1, sig. 781b) implies 4031 BC under JP 1 = 4713 BC. Kevin chose 4032. The italic year is display only and does not set `sorting_year`.
 
 ## Open
 1. **CFAH coverage.** Only 6 of the planned 20 CFAH papers are published. The current records have these CFAH dates:

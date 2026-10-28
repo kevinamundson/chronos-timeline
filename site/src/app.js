@@ -29,10 +29,12 @@
     var moment = vis.moment;
     var person = !Array.isArray(raw) && raw.mode === 'person';
     var items = person ? raw.items : raw;
+    var RALEIGH_NOTE = "Derived by the portal from Raleigh's Creation in 4032 BC; Raleigh prints only the yeere of the World.";
     function visItem(it) {
       // Standby is not a tier. Its class is "standby", never "tier-*".
       var cls = (it.standby ? 'standby' : ('tier-' + it.tier)) + (person ? (it.own ? ' own' : ' ctx') : '');
       var label = it.title + ' — ' + it.label + (person && !it.own ? ' (context)' : '');
+      if (it.raleigh) label += '. ' + it.raleigh + '. ' + RALEIGH_NOTE;
       // Home events keep a point even when a chronology gives them an end year.
       // A person page draws one bar for the lifespan (span), the same years as the home chart.
       var range = it.yEnd != null && it.yEnd !== it.y && (it.group === 'people' || it.span) && !it.standby;

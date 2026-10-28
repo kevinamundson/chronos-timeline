@@ -840,7 +840,35 @@ People taken from the table now have a modern English display title. Raleigh's p
 
 No BC year was added. To the Reader, sig. 780b, says: "This IVLIAN Perioà, after the present accompt, alwayes exceedes the yeares of the World by 682." His example is Jehoshaphat beginning in the 3774th year of the Julian Period, the 3092nd of the World, and the 99th of the Temple. 3774 − 3092 is 682. He does not state a year before Christ, and he does not give the epoch that would turn that offset into one. `year_bc_ad` on his entries stays null. "seuen hundred and fourtie yeeres before Christ borne" dates the Erythraean Sibyl. It is not a rule for turning a yeere of the World into a year before Christ.
 
-Decision: Raleigh stays AM only. No BC parenthetical will be added. `year_bc_ad` on his entries stays null.
+Decision (2026-10-23): Raleigh stays AM only. No BC parenthetical will be added. `year_bc_ad` on his entries stays null.
+
+Superseded for display only on 2026-10-28. See G11. `year_bc_ad` on his entries still stays null.
+
+### G11. Derived BC beside Raleigh's yeere of the World — decided 2026-10-28
+
+Kevin's ruling, 28 October 2026: "All of Raleigh's AM dates should provide the BC calculated date in parentheses based on his Year of creation in 4032 BC."
+
+**Decided by Kevin on 2026-10-28: keep the anchor. AM 1 = 4032 BC (`RALEIGH_CREATION_BC = 4032`).**
+
+Raleigh's Julian Period column (JP 683 = AM 1, sig. 781b) implies 4031 BC under JP 1 = 4713 BC. Kevin chose 4032. The 4031 reading is recorded here and is not the formula.
+
+The page shows `AM 1656` and an italic `2377 BC`, written `AM 1656 (<em>2377 BC</em>)`. Only the BC or AD year is italic. Adam is `AM 1` and italic `4032 BC`. A year of our Lord, from AM 4033, is italic the same way, for example `AD 1`. The word "derived" is not written beside the year. A page that shows at least one italic year says "Dates in italics are derived" and names this Creation anchor. The year is not written into `year_bc_ad`. It does not set `sorting_year`, a standby placement, a span, or a tier. A cell marked "Not derived" stays as printed.
+
+A year before Christ is 4033 minus AM. When AM is 4033 or later, the year of our Lord is AM minus 4032. There is no year 0.
+
+To the Reader begins on sig. 780b. On sig. 781a he writes: "This IVLIAN Perioà, after the present accompt, alwayes exceedes the yeares of the World by 682." On sig. 780b the worked example is: "That IEHOSOPHAT began his 〈◊ 〉 in the 3774. of the IVLIAN Aera, in the 3092. of the World, and in the 99. yeare os the Temple." 3774 − 3092 is 682. The table's first year cell, sig. 781b, is "683 1. Adaˉ 920", so AM 1 is Julian Period 683. The portal takes Julian Period 1 as 4713 BC, so Julian Period 683 is 4031 BC, one year earlier than the 4032 anchor. Kevin chose 4032.
+
+He does print a few years of our Lord, and one span "before Christ borne". None of them converts a yeere of the World:
+
+- sig. 302a: "who liued seuen hundred and fourtie yeeres before Christ borne" (the Erythraean Sibyl; already noted in G10).
+- sig. 97b: "the yeere of our Lord 1557".
+- sig. 169a: William, Archbishop of Tyre, "about the yeere of our Lord, one thousand one hundred eightie".
+- sig. 191b: "before Christs comming" (no year).
+- sig. 382b: a council "about the yeere of our Lord 368".
+- sig. 524b: "yeere of our Lord, One thousand, foure hundred, ninetie and fiue".
+- sig. 781a: Queen Elizabeth, "the 17. of Nouember, in the yeare of our LORD 1558".
+
+**Closed.** Kevin confirmed on 2026-10-28 that the italic year stays on 4032 BC, one year later than the Julian Period reading of 4031 BC.
 
 ## I. Names on person pages (2026-10-24)
 
