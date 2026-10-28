@@ -11,6 +11,7 @@ import { annotateWorldYear, assertRaleighDerived, raleighAmHtml, raleighRecordHt
 import { standbyCounts, standbySummaryLine } from '../scripts/standby/compute.mjs';
 import { isJones23, reignStartPhrase } from '../scripts/sort-rule.mjs';
 import { redirectLines, redirectsFileHasSennacherib } from '../scripts/redirects.mjs';
+import { protectHtml } from './email-protect.mjs';
 
 assertRaleighDerived();
 
@@ -505,7 +506,7 @@ ${scripts}
 </body></html>`;
 }
 
-const out = (rel, html) => { const p = join(DIST, rel); mkdirSync(dirname(p), { recursive: true }); writeFileSync(p, html); };
+const out = (rel, html) => { const p = join(DIST, rel); mkdirSync(dirname(p), { recursive: true }); writeFileSync(p, protectHtml(html)); };
 const head = (rec, opts = {}) => `<p class="eyebrow">${esc(TYPE_LABEL[rec.type])}</p><h1>${esc(rec.title)}</h1>${!opts.hideAlt && rec.alt_names?.length ? `<p class="muted">Also: ${esc(rec.alt_names.join(', '))}</p>` : ''}${rec.summary ? `<p class="lede">${esc(rec.summary)}</p>` : ''}`;
 const crumbs = (rec) => `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/browse/#${DIRS[rec.type]}">${esc(TYPE_LABEL[rec.type])}s</a></li><li aria-current="page">${esc(rec.title)}</li></ol></nav>`;
 const leafletHead = '<link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">';
@@ -852,7 +853,7 @@ function nameSection(p) {
     const src = sourceById[f.source_text_id];
     const open = f.witness === 'bible' ? 'Berean Literal Bible' : 'Open the passage';
     const index = src && src.url !== f.link ? ` ${ext(src.url, esc(src.title))}.` : '';
-    return `<li id="${p.id}-fn-${n}"><a class="fn" href="#${p.id}-fnref-${n}"><span class="visually-hidden">Back to footnote </span>${n}</a> ${esc(f.citation)}${f.note ? ` ${esc(f.note)}` : ''} ${ext(f.link, open)}.${index}</li>`;
+    return `<li id="${p.id}-fn-${n}" role="listitem"><a class="fn" href="#${p.id}-fnref-${n}"><span class="visually-hidden">Back to footnote </span>${n}</a> ${esc(f.citation)}${f.note ? ` ${esc(f.note)}` : ''} ${ext(f.link, open)}.${index}</li>`;
   }).join('');
   return `<section class="card" id="name" aria-labelledby="name-h">
   <h2 id="name-h">Name</h2>
@@ -860,7 +861,7 @@ function nameSection(p) {
   ${rows.length ? `<div class="table-wrap"><table class="chron names"><caption>Spellings and original-language writings. A number leads to the footnote that names the text.</caption><thead><tr><th scope="col">Form</th><th scope="col">Writing</th><th scope="col">Kind</th><th scope="col">Witness</th></tr></thead><tbody>${rows.join('')}</tbody></table></div>` : ''}
   ${hasOriginal ? '' : '<p class="small muted">No original-language writing of this name has been entered. A form is added only after it has been read in Scripture, a history, or an inscription.</p>'}
   ${hasInscription ? '' : '<p class="small muted">No inscription that writes this name has been entered.</p>'}
-  ${notes.length ? `<details class="name-notes-twirl" id="${p.id}-name-notes"><summary>Footnotes</summary><ol class="name-notes">${footnotes}</ol></details>` : ''}
+  ${notes.length ? `<details class="name-notes-twirl" id="${p.id}-name-notes"><summary>Footnotes</summary><ol class="name-notes" role="list">${footnotes}</ol></details>` : ''}
   ${tipnr && tipnrSrc ? `<p class="small muted">Hebrew, Aramaic and Greek letters are the forms printed in ${ext(tipnrSrc.url, 'STEPBible TIPNR')}, ${ext('https://creativecommons.org/licenses/by/4.0/', 'CC BY 4.0')}. The data file is not copied here.</p>` : ''}
 </section>`;
 }
