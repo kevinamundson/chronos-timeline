@@ -28,7 +28,10 @@
         "license_note": { "type": "string" },
         "verified_on": { "type": "string", "format": "date" },
         "note": { "type": "string" },
-        "superseded_for_links_by": { "$ref": "common.schema.json#/$defs/slug", "description": "Another source now used for all links to this text; this entry is kept only for provenance." }
+        "superseded_for_links_by": { "$ref": "common.schema.json#/$defs/slug", "description": "Another source now used for all links to this text; this entry is kept only for provenance." },
+        "series_parent": { "$ref": "common.schema.json#/$defs/slug", "description": "Source id this document belongs under. The chronologies page nests these as a sub-list of the parent." },
+        "series_label": { "type": "string", "minLength": 1, "description": "Label for the series sub-list when the provider title differs from title. The CFAH OSF list uses the title the OSF API returns." },
+        "preprint_url": { "$ref": "common.schema.json#/$defs/url", "description": "Preprint page for the same paper, when url is the project page. Shown as a second link on the series line." }
       }
     }
   }

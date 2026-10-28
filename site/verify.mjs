@@ -686,6 +686,85 @@ for (const [path, shot, sel] of [
   check('chronologies: Raleigh card links to A Chronological Table', href === 'A Chronological Table', href);
   await o.ctx.close();
 }
+// CFAH OSF series: indented sub-list under the project entry. Titles and URLs are the OSF API values stored on the sources.
+{
+  const expected = [
+    ['CFAH-1: Problem, Data, and Methodology', 'https://osf.io/fm4w2/'],
+    ['CFAH-2: Founding of the Nations', 'https://osf.io/8s6gt/'],
+    ['CFAH-3: Anchor Points of Ancient History', 'https://osf.io/6hpbq/'],
+    ['CFAH-4: Dating Creation and the Deluge', 'https://osf.io/t7sx5/'],
+    ['CFAH-5: The Babylonian Dynasties of Berossus', 'https://osf.io/bjk8g/'],
+    ['CFAH-6: The Old and Middle Kingdoms of Egypt', 'https://osf.io/hp3fg/'],
+    ['CFAH-7: A Chronological Baseline for the Old and Middle Kingdoms of Egypt', 'https://osf.io/gmx5j/'],
+    ['CFAH-7A: The Method for Finding a Baseline Demonstrated on Dynasty 12', 'https://osf.io/t3vu5/'],
+    ['CFAH-7B: Kings of Dynasties 1-13', 'https://osf.io/tuwnc/'],
+    ['CFAH-8: Placing Dynasties 15-18', 'https://osf.io/z5rtd/'],
+    ['CFAH-9: The 19th and 26th Dynasties of Egypt', 'https://osf.io/hv3b2/'],
+    ['CFAH-10: The Libyan-Cushite Intermediate Period', 'https://osf.io/fg4dv/'],
+    ['CFAH-11: Dynasties 20 and 21', 'https://osf.io/ksaz9/'],
+    ['CFAH-13: The Hittites, Cimmerians, and Medes', 'https://osf.io/bcwg2/'],
+    ['CFAH-14: Ancient Assyria', 'https://osf.io/9fuw2/'],
+    ['CFAH-15: Sumer, Akkad, and Babylon', 'https://osf.io/vynju/'],
+    ['CFAH-16: The Kings of Israel and Judah', 'https://osf.io/yv29c/'],
+    ['CFAH-17: The Ancient Chronologies of India and China', 'https://osf.io/j4nxu/'],
+    ['CFAH-18: The Ancient Chronology of Ireland', 'https://osf.io/28p43/'],
+    ['CFAH-19: The Historical Ice Age', 'https://osf.io/a5g6x/'],
+    ['CFAH Response to Tweedy\'s Ice Age Paper', 'https://osf.io/dfkbm/'],
+  ];
+  const readSeries = () => {
+    const blocks = [...document.querySelectorAll('#cfah-project-osf > ul.series-links, #cfah li > ul.series-links')];
+    return blocks.map((ul) => [...ul.querySelectorAll(':scope > li')].map((li) => {
+      const anchors = [...li.querySelectorAll(':scope > a, :scope > .series-preprint a')];
+      const main = li.querySelector(':scope > a');
+      return {
+        text: main ? [...main.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join('').replace(/\s+/g, ' ').trim() : '',
+        href: main?.getAttribute('href') || '',
+        target: main?.getAttribute('target') || '',
+        rel: main?.getAttribute('rel') || '',
+        hidden: main?.querySelector('.visually-hidden')?.textContent || '',
+        extra: anchors.slice(1).map((a) => a.getAttribute('href')),
+      };
+    }));
+  };
+  const o = await open('/chronologies/', { width: 390, height: 844 });
+  const series = await o.page.evaluate(readSeries);
+  // Document order: the CFAH chronology card, then the All free sources entry.
+  const underCard = series[0] || [];
+  const underSources = series[1] || [];
+  const same = JSON.stringify(underCard) === JSON.stringify(underSources);
+  check('chronologies: CFAH OSF sub-list exists under the project entry', underCard.length > 0 && underSources.length > 0 && same, `card ${underCard.length}, sources ${underSources.length}`);
+  const osf = underSources.every((row) => /^https:\/\/([a-z0-9-]+\.)?osf\.io\//.test(row.href) && row.extra.every((h) => /^https:\/\/([a-z0-9-]+\.)?osf\.io\//.test(h)));
+  check('chronologies: every CFAH OSF series link is an osf.io URL', osf && underSources.length === expected.length, underSources.map((r) => r.href).join(' '));
+  const a11y = underSources.every((row) => row.target === '_blank' && row.rel.includes('noopener') && row.hidden === ' (opens in a new tab)');
+  check('chronologies: CFAH OSF series links say they open in a new tab', a11y);
+  const got = underSources.map((r) => [r.text, r.href]);
+  check('chronologies: CFAH OSF series order and titles', JSON.stringify(got) === JSON.stringify(expected), got.map((r) => r[0]).join(' | '));
+  const fit = await o.page.evaluate(() => {
+    const vw = document.documentElement.clientWidth;
+    const lists = [...document.querySelectorAll('#cfah-project-osf > ul.series-links, #cfah ul.series-links')];
+    return lists.map((list) => {
+      const r = list.getBoundingClientRect();
+      const wide = [...list.querySelectorAll('li')].filter((item) => item.getBoundingClientRect().right > vw + 1).length;
+      return { left: Math.round(r.left), right: Math.round(r.right), vw, wide };
+    });
+  });
+  check('chronologies: CFAH OSF sub-list fits at 390px', fit.length === 2 && fit.every((row) => row.left >= 0 && row.right <= row.vw + 1 && row.wide === 0), JSON.stringify(fit));
+  // The sticky header is painted over a tall element screenshot. Hold it in normal flow for this shot only.
+  await o.page.addStyleTag({ content: '.site-header{position:static !important}' });
+  await o.page.locator('#cfah-project-osf').screenshot({ path: join(SHOTS, 'chronologies-osf-list-390.png') });
+  check('chronologies: no console errors on CFAH OSF list', o.errors.length === 0, o.errors.join(' | '));
+  await o.ctx.close();
+  const dark = await open('/chronologies/', { width: 390, height: 844, scheme: 'dark' });
+  const contrast = await dark.page.evaluate(() => {
+    const a = document.querySelector('#cfah-project-osf > ul.series-links a');
+    if (!a) return { missing: true };
+    const color = getComputedStyle(a).color;
+    const bg = getComputedStyle(document.body).backgroundColor;
+    return { color, bg, same: color === bg };
+  });
+  check('chronologies: CFAH OSF links stay visible in dark mode', contrast.color && contrast.bg && !contrast.same, JSON.stringify(contrast));
+  await dark.ctx.close();
+}
 {
   const o = await open('/chronologies/raleigh-chronological-table/');
   check('raleigh table: HTTP 200', o.status === 200);

@@ -53,6 +53,20 @@ const srcIds = new Set(srcDoc.sources.map((s) => s.id));
 const kingDoc = existsSync(join(root, 'data/king-lists.json')) ? validate('data/king-lists.json', 'king-lists') : null;
 if (chronIds.size !== chronDoc.chronologies.length) err('data/chronologies.json', 'duplicate chronology id');
 if (srcIds.size !== srcDoc.sources.length) err('data/sources.json', 'duplicate source id');
+{
+  const srcById = new Map(srcDoc.sources.map((s) => [s.id, s]));
+  for (const s of srcDoc.sources) {
+    if (!s.series_parent) continue;
+    if (!srcById.has(s.series_parent)) err('data/sources.json', `${s.id}: series_parent "${s.series_parent}" is not a source`);
+    const seen = new Set([s.id]);
+    let cur = s.series_parent;
+    while (cur) {
+      if (seen.has(cur)) { err('data/sources.json', `${s.id}: series_parent cycle at "${cur}"`); break; }
+      seen.add(cur);
+      cur = srcById.get(cur)?.series_parent;
+    }
+  }
+}
 if (chronDoc.chronologies.filter((c) => c.primary).length !== 1) err('data/chronologies.json', 'exactly one chronology must be primary');
 for (const c of chronDoc.chronologies) for (const r of c.references) if (!srcIds.has(r)) err('data/chronologies.json', `${c.id}: unknown source ${r}`);
 

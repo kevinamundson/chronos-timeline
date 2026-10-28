@@ -52,6 +52,28 @@ const TYPE_LABEL = { event: 'Event', person: 'Person', location: 'Place', map: '
 const urlOf = (r) => `/${DIRS[r.type]}/${r.id}/`;
 const link = (id) => { const r = byId[id]; return r ? `<a href="${urlOf(r)}">${esc(r.title)}</a>` : `<span class="muted">${esc(id)} (not yet a record)</span>`; };
 const ext = (href, text) => href ? `<a href="${esc(href)}" rel="noopener" target="_blank">${text}<span class="visually-hidden"> (opens in a new tab)</span></a>` : text;
+// Series sub-lists on /chronologies/ come from series_parent. The label is the OSF title (series_label when it differs).
+const seriesLabelOf = (s) => s.series_label || s.title;
+const seriesRank = (s) => {
+  const label = seriesLabelOf(s);
+  const m = /^CFAH-(\d+)([A-Za-z])?\b/i.exec(label);
+  if (!m) return [1, 0, 0, label];
+  return [0, Number(m[1]), m[2] ? m[2].toUpperCase().charCodeAt(0) : 0, label];
+};
+const seriesChildrenOf = (id) => sources.filter((s) => s.series_parent === id).sort((a, b) => {
+  const ka = seriesRank(a);
+  const kb = seriesRank(b);
+  for (let i = 0; i < ka.length; i++) {
+    if (ka[i] < kb[i]) return -1;
+    if (ka[i] > kb[i]) return 1;
+  }
+  return 0;
+});
+const seriesListHtml = (id) => {
+  const kids = seriesChildrenOf(id);
+  if (!kids.length) return '';
+  return `<ul class="links series-links">${kids.map((s) => `<li>${ext(s.url, esc(seriesLabelOf(s)))}${s.preprint_url ? ` <span class="series-preprint small">${ext(s.preprint_url, 'Preprint')}</span>` : ''} <span class="tag">${esc(s.access)}</span></li>`).join('')}</ul>`;
+};
 
 // Historical years: negative = BC, no year 0.
 const yearLabel = (y, end) => {
@@ -1063,9 +1085,9 @@ ${[...chronologies].sort((a, b) => a.sort_priority - b.sort_priority).map((c) =>
 ${c.id === 'raleigh-history-of-the-world' ? '<p><a href="/chronologies/raleigh-chronological-table/">A Chronological Table</a></p>' : ''}
 ${c.authors?.length ? `<p class="muted">${esc(c.authors.join(', '))}</p>` : ''}<p>${esc(c.description)}</p>
 ${c.year_conventions ? `<p class="small muted">${esc(c.year_conventions)}</p>` : ''}
-${c.references?.length ? `<ul class="links">${uniqSrc(c.references).map((s) => `<li>${ext(s.url, esc(s.title))} <span class="tag">${esc(s.access)}</span></li>`).join('')}</ul>` : ''}
+${c.references?.length ? `<ul class="links">${uniqSrc(c.references).map((s) => `<li>${ext(s.url, esc(s.title))} <span class="tag">${esc(s.access)}</span>${seriesListHtml(s.id)}</li>`).join('')}</ul>` : ''}
 ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) => `<li><span class="flag flag-oq">Open question</span> ${esc(q)}</li>`).join('')}</ul>` : ''}</section>`).join('')}
-<section class="card" id="sources"><h2>All free sources</h2><ul class="links">${sources.map((s) => `<li>${s.superseded_for_links_by ? `${esc(s.title)} <span class="tag">provenance only; links use ${esc(sourceById[s.superseded_for_links_by]?.title || s.superseded_for_links_by)}</span>` : ext(s.url, esc(s.title))}${s.authors?.length ? ` <span class="muted">— ${esc(s.authors.join(', '))}${s.year ? `, ${esc(s.year)}` : ''}</span>` : ''} <span class="tag">${esc(s.access)}</span>${s.license_note ? `<div class="small muted">${esc(s.license_note)}</div>` : ''}</li>`).join('')}</ul></section>`;
+<section class="card" id="sources"><h2>All free sources</h2><ul class="links">${sources.filter((s) => !s.series_parent).map((s) => `<li${seriesChildrenOf(s.id).length ? ` id="${esc(s.id)}"` : ''}>${s.superseded_for_links_by ? `${esc(s.title)} <span class="tag">provenance only; links use ${esc(sourceById[s.superseded_for_links_by]?.title || s.superseded_for_links_by)}</span>` : ext(s.url, esc(s.title))}${s.authors?.length ? ` <span class="muted">— ${esc(s.authors.join(', '))}${s.year ? `, ${esc(s.year)}` : ''}</span>` : ''} <span class="tag">${esc(s.access)}</span>${s.license_note ? `<div class="small muted">${esc(s.license_note)}</div>` : ''}${seriesListHtml(s.id)}</li>`).join('')}</ul></section>`;
   out('chronologies/index.html', page({ title: 'Chronologies', desc: 'Chronologies used and the CFAH-weighted sorting rule.', body, path: '/chronologies/', type: 'Chronology' }));
 }
 
