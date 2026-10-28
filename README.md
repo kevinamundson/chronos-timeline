@@ -111,8 +111,8 @@ search built at build time. No server, database, CMS or paid service. Vendor JS/
 
 **BC years on the timeline.** Data years are historical (negative = BC, no year 0). JavaScript dates need a continuous axis, so `app.js`
 maps BC year *y* to axis year *y* and AD year *y* to *y − 1*, and the axis labels convert back ("4500 BC"). Round ticks therefore read as round
-BC years and no year 0 is ever shown. AM figures are shown per record exactly as each chronology gives them; the build never converts between
-AM and BC.
+BC years and no year 0 is ever shown. AM figures are shown per record exactly as each chronology gives them. The build never converts between
+AM and BC, except a display parenthetical beside Raleigh's yeere of the World (Creation in 4032 BC). That parenthetical is not written into `year_bc_ad` and is not placed on the axis.
 
 ### Build and preview locally
 ```

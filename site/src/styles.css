@@ -113,6 +113,8 @@ ol.name-notes li { margin: 8px 0; font-size: 14px; }
 .tag-ap { font-variant-numeric: tabular-nums; font-weight: 600; }
 .tag-preprint { font-style: italic; border-style: dashed; }
 .note { font-size: 13px; color: var(--label-2); margin-top: 6px; }
+.derived { text-decoration: underline dotted; text-underline-offset: 0.15em; }
+.raleigh-derived-note { margin: 8px 0 0; }
 .flags { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
 .flag { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 6px; border: 1px solid currentColor; }
 .flag-sort { color: var(--accent); } .flag-diff { color: var(--flag-diff); } .flag-oq { color: var(--flag-oq); }
@@ -263,6 +265,7 @@ cite.bu-link a { text-decoration: underline dotted; text-underline-offset: 3px; 
 .raleigh-wrap { max-width: 100%; }
 table.raleigh { font-size: 14px; min-width: 720px; }
 table.raleigh th, table.raleigh td { padding: 6px 8px; white-space: nowrap; }
+table.raleigh .raleigh-flag { white-space: normal; max-width: 18rem; font-weight: 400; }
 table.raleigh tbody th { width: auto; font-weight: 600; }
 table.raleigh .prose { white-space: normal; min-width: 16rem; max-width: 28rem; }
 table.raleigh thead th { position: sticky; top: 0; background: var(--bg-elev); }
