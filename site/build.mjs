@@ -106,7 +106,7 @@ const scriptureList = (refs) => !refs?.length ? '' : `<ul class="chips">${refs.m
 const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:paper_text', 'cfah:', 'ussher-jones', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'morecraft', 'cory', 'shuckford', 'hales', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
 const rowKey = (e) => (e.source === 'cfah' ? `cfah:${e.cfah_basis || ''}` : e.source);
 const rowRank = (e) => { const i = ROW_ORDER.indexOf(rowKey(e)); return i < 0 ? 99 : i; };
-const chronName = (e) => {
+const chronName = (e, opts = {}) => {
   if (e.source === 'cfah') {
     if (e.cfah_basis === 'anchor_point') return 'CFAH <span class="tag tag-t1">anchor point</span>';
     if (e.cfah_basis === 'table1_baseline') return 'CFAH-1 Table 1 <span class="tag tag-t2">Ussher–Jones baseline</span>';
@@ -115,7 +115,10 @@ const chronName = (e) => {
   }
   if (e.source === 'jordan') return 'Jordan <span class="tag tag-sec" title="Secondary display chronology; never sets the sort year">secondary</span>';
   if (e.source === 'herodotus') return `Herodotus <span class="tag tag-sec" title="Herodotus, The Histories (tr. Rawlinson); secondary display only; never sets the sort and gives no BC years">secondary</span><div class="small muted">The Histories, tr. Rawlinson</div>`;
-  if (e.source === 'generations') return `Generations <span class="tag tag-sec" title="Generations curriculum (Swanson et al.); secondary display only; supplies a provisional sort only where no tier 1-4 date exists">secondary</span>${e.source_text_id && sourceById[e.source_text_id] ? `<div class="small muted">${esc(sourceById[e.source_text_id].short || sourceById[e.source_text_id].title)}</div>` : ''}`;
+  if (e.source === 'generations') {
+    const book = !opts.hideBook && e.source_text_id && sourceById[e.source_text_id] ? `<div class="small muted">${esc(sourceById[e.source_text_id].short || sourceById[e.source_text_id].title)}</div>` : '';
+    return `Generations <span class="tag tag-sec" title="Generations curriculum (Swanson et al.); secondary display only; supplies a provisional sort only where no tier 1-4 date exists">secondary</span>${book}`;
+  }
   if (e.source === 'morecraft') return `Morecraft <span class="tag tag-sec" title="Joe Morecraft III, A Christian Survey of World History; secondary display only; supplies a provisional sort only to records it alone dates">secondary</span><div class="small muted">A Christian Survey of World History</div>`;
   if (e.source === 'cory') return `Cory <span class="tag tag-sec" title="Cory, Ancient Fragments (1876, ed. Hodges); secondary display only; never sets the sort and gives no BC years">secondary</span><div class="small muted">Ancient Fragments, 1876</div>`;
   if (e.source === 'shuckford') return `Shuckford <span class="tag tag-sec" title="Shuckford, Sacred and Profane History (1819, ed. Creighton), vol. 1; secondary display only; never sets the sort. Anno Mundi is not converted to BC.">secondary</span><div class="small muted">Sacred and Profane History, 1819</div>`;
@@ -178,36 +181,169 @@ const tierYear = (entries) => {
   return null;
 };
 
+// Display only. One top-level row per author (CFAH anchor, CFAH-1 Table 1 and CFAH paper text stay separate chronologies).
+// Quotes that share a year nest under that date. A different year is a sub-row. Nothing here writes sorting_year, a tier or standby.
+const authorKey = (e) => (e.source === 'cfah' ? `cfah:${e.cfah_basis || ''}` : e.source);
+const dateIdentity = (e) => {
+  const years = [e.year_bc_ad, e.year_bc_ad_end, e.year_am, e.year_am_end];
+  const sup = e.superseded_by || '';
+  if (!years.some((y) => y != null)) return `text:${e.date ?? ''}\u001f${sup}`;
+  return `year:${years.map((y) => (y == null ? '' : String(y))).join(',')}\u001f${sup}`;
+};
+const plainYear = (e) => {
+  if (e.source === 'raleigh-history-of-the-world') return amLabel(e.year_am, e.year_am_end) || '';
+  return [yearLabel(e.year_bc_ad, e.year_bc_ad_end), amLabel(e.year_am, e.year_am_end)].filter(Boolean).join(' · ');
+};
+const yearCell = (e) => {
+  const years = e.source === 'raleigh-history-of-the-world'
+    ? raleighAmHtml(e.year_am, e.year_am_end)
+    : [yearLabel(e.year_bc_ad, e.year_bc_ad_end), amLabel(e.year_am, e.year_am_end)].filter(Boolean).join('<br>');
+  return years || '<span class="muted">—</span>';
+};
+const apTags = (e) => `${e.cfah_ap ? `<span class="tag tag-ap">${esc(e.cfah_ap)}</span> ` : ''}${e.cfah_preprint ? '<span class="tag tag-preprint" title="OSF preprint: not peer-reviewed in Answers Research Journal">OSF preprint</span>' : ''}`;
+const entryFlags = (e, setter, sortYear) => {
+  const flags = [];
+  if (e === setter) flags.push('<span class="flag flag-sort" title="This entry sets the sort year">Sets sort year</span>');
+  if (sortYear != null && e.year_bc_ad != null && e.year_bc_ad !== sortYear) {
+    const d = e.year_bc_ad - sortYear;
+    flags.push(`<span class="flag flag-diff">Differs from sort year by ${Math.abs(d)} yr${Math.abs(d) === 1 ? '' : 's'}</span>`);
+  }
+  return flags;
+};
+const flagHtml = (flags) => (flags.length ? `<div class="flags">${flags.join(' ')}</div>` : '');
+const citeBody = (e) => {
+  const href = e.link || (['bible', 'masoretic-genealogy'].includes(e.source) ? blbFromText(e.citation) : null);
+  const link = e.citation ? ext(href, esc(e.citation)) : '<span class="muted">—</span>';
+  const edition = e.edition_note ? `<div class="note"><span class="tag tag-old">${esc(/not in/.test(e.edition_note) ? 'not in 2nd ed.' : 'edition')}</span> ${esc(e.edition_note)}</div>` : '';
+  const note = e.note ? `<div class="note">${esc(e.note)}</div>` : '';
+  return `${link}${edition}${note}`;
+};
+const sourceLine = (e) => {
+  const src = e.source_text_id && sourceById[e.source_text_id];
+  return src ? `<div class="small muted">${esc(src.short || src.title)}</div>` : '';
+};
+function supersededDetails(entries) {
+  if (entries.length === 1) {
+    const e = entries[0];
+    const nb = sourceById[e.superseded_by];
+    return `<details><summary><span class="tag tag-old">superseded</span> ${esc(e.date)} <span class="small muted">· ${esc(e.edition_note || `superseded by ${nb?.short || e.superseded_by}`)}</span></summary>
+<div class="small">${yearLabel(e.year_bc_ad, e.year_bc_ad_end) || ''}${e.precision ? ` · Precision: ${esc(e.precision)}` : ''}</div>
+<div>${e.citation ? ext(e.link, esc(e.citation)) : ''}</div>${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}</details>`;
+  }
+  const e0 = entries[0];
+  const nb = sourceById[e0.superseded_by];
+  const label = plainYear(e0) || e0.date || 'superseded';
+  const sameText = entries.every((e) => e.date === e0.date);
+  const items = entries.map((e) => {
+    const quote = !sameText && e.date ? `<div class="date-quote">${esc(e.date)}</div>` : '';
+    return `<li>${quote}${sourceLine(e)}<div>${e.citation ? ext(e.link, esc(e.citation)) : ''}</div>${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}</li>`;
+  }).join('');
+  return `<details><summary><span class="tag tag-old">superseded</span> ${esc(label)} <span class="small muted">· ${esc(e0.edition_note || `superseded by ${nb?.short || e0.superseded_by}`)}</span></summary>
+<ul class="date-quotes">${items}</ul></details>`;
+}
+function dateCell(entries) {
+  const pending = entries.every((e) => e.date == null);
+  const texts = entries.map((e) => e.date ?? null);
+  const sameText = texts.every((t) => t === texts[0]);
+  const body = pending
+    ? '<span class="muted">Not yet established</span>'
+    : esc(sameText ? texts[0] : (plainYear(entries[0]) || texts.find(Boolean) || ''));
+  const apSame = new Set(entries.map((e) => e.cfah_ap || '')).size === 1 && new Set(entries.map((e) => (e.cfah_preprint ? '1' : ''))).size === 1;
+  const tagged = entries.find((e) => e.cfah_ap || e.cfah_preprint);
+  const tags = apSame && tagged ? `<div>${apTags(tagged)}</div>` : '';
+  const precisions = new Set(entries.map((e) => e.precision || ''));
+  const prec = !pending && precisions.size === 1 && [...precisions][0] ? `<div class="small muted">Precision: ${esc([...precisions][0])}</div>` : '';
+  return `${body}${tags}${prec}`;
+}
+function quoteList(entries, setter, sortYear) {
+  const sameText = entries.every((e) => (e.date ?? null) === (entries[0].date ?? null));
+  const showSource = new Set(entries.map((e) => e.source_text_id || '')).size > 1;
+  const showAp = new Set(entries.map((e) => e.cfah_ap || '')).size > 1 || new Set(entries.map((e) => (e.cfah_preprint ? '1' : ''))).size > 1;
+  const showPrec = new Set(entries.map((e) => (e.date == null ? '' : (e.precision || '')))).size > 1;
+  const items = entries.map((e) => {
+    const quote = !sameText && e.date != null ? `<div class="date-quote">${esc(e.date)}</div>` : '';
+    const src = showSource ? sourceLine(e) : '';
+    const ap = showAp && (e.cfah_ap || e.cfah_preprint) ? `<div>${apTags(e)}</div>` : '';
+    const prec = showPrec && e.precision && e.date != null ? `<div class="small muted">Precision: ${esc(e.precision)}</div>` : '';
+    return `<li>${quote}${src}${citeBody(e)}${ap}${prec}</li>`;
+  }).join('');
+  const who = entries.find((e) => e === setter) || entries.find((e) => e.year_bc_ad != null) || entries[0];
+  return `<ul class="date-quotes">${items}</ul>${flagHtml(entryFlags(who, setter, sortYear))}`;
+}
+function authorLabel(entries) {
+  const ids = new Set(entries.map((e) => e.source_text_id || ''));
+  return chronName(entries[0], { hideBook: ids.size > 1 });
+}
+function renderSingleRow(e, setter, sortYear) {
+  const key = esc(authorKey(e));
+  if (e.superseded_by) {
+    return `<tr class="superseded" data-author="${key}">
+<th scope="row">${chronName(e)}</th>
+<td colspan="3">${supersededDetails([e])}</td>
+</tr>`;
+  }
+  const pending = e.date == null;
+  return `<tr class="${pending ? 'pending' : ''}${e === setter ? ' is-sort' : ''}" data-author="${key}">
+<th scope="row">${chronName(e)}</th>
+<td>${dateCell([e])}</td>
+<td class="nowrap">${yearCell(e)}</td>
+<td>${citeBody(e)}${flagHtml(entryFlags(e, setter, sortYear))}</td>
+</tr>`;
+}
+function renderDateRow(key, label, entries, setter, sortYear, { sub, span }) {
+  const sup = entries.every((e) => e.superseded_by);
+  const pending = entries.every((e) => e.date == null);
+  const sets = entries.some((e) => e === setter);
+  const classes = [];
+  if (pending && !sup) classes.push('pending');
+  if (sets) classes.push('is-sort');
+  if (sup && span === 1) classes.push('superseded');
+  if (sub) classes.push('chron-sub');
+  const cls = classes.length ? ` class="${classes.join(' ')}"` : '';
+  const attr = sub ? ` data-author-sub="${esc(key)}"` : ` data-author="${esc(key)}"`;
+  const th = sub ? '' : `<th scope="${span > 1 ? 'rowgroup' : 'row'}"${span > 1 ? ` rowspan="${span}"` : ''}>${label}</th>`;
+  if (sup) {
+    const cellCls = span > 1 ? ' class="superseded"' : '';
+    return `<tr${cls}${attr}>
+${th}<td colspan="3"${cellCls}>${supersededDetails(entries)}</td>
+</tr>`;
+  }
+  const dateCls = sub ? ' class="date-sub"' : '';
+  const cites = entries.length === 1 ? `${citeBody(entries[0])}${flagHtml(entryFlags(entries[0], setter, sortYear))}` : quoteList(entries, setter, sortYear);
+  return `<tr${cls}${attr}>
+${th}<td${dateCls}>${dateCell(entries)}</td>
+<td class="nowrap">${yearCell(entries[0])}</td>
+<td>${cites}</td>
+</tr>`;
+}
 function chronTable(entries, { sortYear, basis, caption }) {
   const sorted = [...entries].map((e, i) => ({ e, i })).sort((a, b) => rowRank(a.e) - rowRank(b.e) || a.i - b.i).map((x) => x.e);
   const setter = sortingEntry(entries, basis, sortYear);
-  const rows = sorted.map((e) => {
-    // An older edition superseded by a newer one: a collapsed secondary line, with the difference noted; never a sort or diff flag.
-    if (e.superseded_by) {
-      const nb = sourceById[e.superseded_by];
-      return `<tr class="superseded">
-<th scope="row">${chronName(e)}</th>
-<td colspan="3"><details><summary><span class="tag tag-old">superseded</span> ${esc(e.date)} <span class="small muted">· ${esc(e.edition_note || `superseded by ${nb?.short || e.superseded_by}`)}</span></summary>
-<div class="small">${yearLabel(e.year_bc_ad, e.year_bc_ad_end) || ''}${e.precision ? ` · Precision: ${esc(e.precision)}` : ''}</div>
-<div>${e.citation ? ext(e.link, esc(e.citation)) : ''}</div>${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}</details></td>
-</tr>`;
+  const groups = [];
+  const index = new Map();
+  for (const e of sorted) {
+    const key = authorKey(e);
+    if (!index.has(key)) {
+      index.set(key, groups.length);
+      groups.push({ key, entries: [] });
     }
-    const pending = e.date == null;
-    const flags = [];
-    if (e === setter) flags.push('<span class="flag flag-sort" title="This entry sets the sort year">Sets sort year</span>');
-    if (sortYear != null && e.year_bc_ad != null && e.year_bc_ad !== sortYear) {
-      const d = e.year_bc_ad - sortYear;
-      flags.push(`<span class="flag flag-diff">Differs from sort year by ${Math.abs(d)} yr${Math.abs(d) === 1 ? '' : 's'}</span>`);
+    groups[index.get(key)].entries.push(e);
+  }
+  const rows = groups.map((group) => {
+    if (group.entries.length === 1) return renderSingleRow(group.entries[0], setter, sortYear);
+    const dates = [];
+    const seen = new Map();
+    for (const e of group.entries) {
+      const id = dateIdentity(e);
+      if (!seen.has(id)) {
+        seen.set(id, dates.length);
+        dates.push([]);
+      }
+      dates[seen.get(id)].push(e);
     }
-    const years = e.source === 'raleigh-history-of-the-world'
-      ? raleighAmHtml(e.year_am, e.year_am_end)
-      : [yearLabel(e.year_bc_ad, e.year_bc_ad_end), amLabel(e.year_am, e.year_am_end)].filter(Boolean).join('<br>');
-    return `<tr class="${pending ? 'pending' : ''}${e === setter ? ' is-sort' : ''}">
-<th scope="row">${chronName(e)}</th>
-<td>${pending ? '<span class="muted">Not yet established</span>' : esc(e.date)}${e.cfah_ap || e.cfah_preprint ? `<div>${e.cfah_ap ? `<span class="tag tag-ap">${esc(e.cfah_ap)}</span> ` : ''}${e.cfah_preprint ? '<span class="tag tag-preprint" title="OSF preprint: not peer-reviewed in Answers Research Journal">OSF preprint</span>' : ''}</div>` : ''}${e.precision && !pending ? `<div class="small muted">Precision: ${esc(e.precision)}</div>` : ''}</td>
-<td class="nowrap">${years || '<span class="muted">—</span>'}</td>
-<td>${e.citation ? ext(e.link || (['bible', 'masoretic-genealogy'].includes(e.source) ? blbFromText(e.citation) : null), esc(e.citation)) : '<span class="muted">—</span>'}${e.edition_note ? `<div class="note"><span class="tag tag-old">${esc(/not in/.test(e.edition_note) ? 'not in 2nd ed.' : 'edition')}</span> ${esc(e.edition_note)}</div>` : ''}${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}${flags.length ? `<div class="flags">${flags.join(' ')}</div>` : ''}</td>
-</tr>`;
+    const label = authorLabel(group.entries);
+    if (dates.length === 1) return renderDateRow(group.key, label, dates[0], setter, sortYear, { sub: false, span: 1 });
+    return dates.map((list, i) => renderDateRow(group.key, label, list, setter, sortYear, { sub: i > 0, span: dates.length })).join('\n');
   }).join('\n');
   return `<div class="table-wrap" role="region" aria-label="${esc(caption)}" tabindex="0"><table class="chron">
 <caption>${esc(caption)}</caption>
@@ -634,9 +770,48 @@ function nameSection(p) {
   };
   const fn = (n) => `<a class="fn" href="#${p.id}-fn-${n}" id="${p.id}-fnref-${n}"><sup>${n}</sup><span class="visually-hidden"> Footnote</span></a>`;
   const formCell = (f) => `<bdi class="name-form" lang="${SCRIPT_LANG[f.script] || 'en'}" dir="${f.script === 'hebrew' || f.script === 'aramaic' ? 'rtl' : 'ltr'}">${esc(f.form)}</bdi>`;
+  // One row per spelling. Form + writing + kind. Pointing stays distinct. Witnesses share the row. Render only; source rows stay.
+  const spellingKey = (form, writing, kind) => `${String(form).normalize('NFC')}\u001f${writing}\u001f${kind}`;
+  const witnessCell = (items) => {
+    const witnesses = [];
+    const seen = new Map();
+    for (const item of items) {
+      const w = item.f.witness;
+      if (!seen.has(w)) {
+        seen.set(w, witnesses.length);
+        witnesses.push({ w, ns: [] });
+      }
+      const group = witnesses[seen.get(w)];
+      if (!group.ns.includes(item.n)) group.ns.push(item.n);
+    }
+    return witnesses.map((g) => `<span class="name-witness">${esc(WITNESS_LABEL[g.w] || g.w)} ${g.ns.map(fn).join(' ')}</span>`).join('<span class="name-witness-sep" aria-hidden="true"> · </span>');
+  };
+  const grouped = [];
+  const groupAt = new Map();
+  for (const f of forms) {
+    const key = spellingKey(f.form, f.script, f.role);
+    if (!groupAt.has(key)) {
+      groupAt.set(key, grouped.length);
+      grouped.push({ key, f, items: [] });
+    }
+    grouped[groupAt.get(key)].items.push({ f, n: noteFor(f) });
+  }
+  const looseGroups = [];
+  const looseAt = new Map();
+  for (const a of loose) {
+    const key = spellingKey(a, 'latin', 'alternate');
+    if (!looseAt.has(key)) {
+      looseAt.set(key, looseGroups.length);
+      looseGroups.push(a);
+    }
+  }
   const rows = [
-    ...forms.map((f) => `<tr><th scope="row">${formCell(f)}</th><td>${esc(SCRIPT_LABEL[f.script] || f.script)}</td><td>${esc(ROLE_LABEL[f.role] || f.role)}</td><td>${esc(WITNESS_LABEL[f.witness] || f.witness)} ${fn(noteFor(f))}</td></tr>`),
-    ...loose.map((a) => `<tr><th scope="row">${esc(a)}</th><td>Latin letters</td><td>Alternate spelling</td><td><span class="muted">Written source not yet attached</span></td></tr>`),
+    ...grouped.map((g) => {
+      const writing = SCRIPT_LABEL[g.f.script] || g.f.script;
+      const kind = ROLE_LABEL[g.f.role] || g.f.role;
+      return `<tr data-spelling="${esc(spellingKey(g.f.form, writing, kind))}"><th scope="row">${formCell(g.f)}</th><td>${esc(writing)}</td><td>${esc(kind)}</td><td>${witnessCell(g.items)}</td></tr>`;
+    }),
+    ...looseGroups.map((a) => `<tr data-spelling="${esc(spellingKey(a, 'Latin letters', 'Alternate spelling'))}"><th scope="row">${esc(a)}</th><td>Latin letters</td><td>Alternate spelling</td><td><span class="muted">Written source not yet attached</span></td></tr>`),
   ];
   const hasOriginal = forms.some((f) => f.role === 'original');
   const hasInscription = forms.some((f) => f.witness === 'inscription');
@@ -655,7 +830,7 @@ function nameSection(p) {
   ${rows.length ? `<div class="table-wrap"><table class="chron names"><caption>Spellings and original-language writings. A number leads to the footnote that names the text.</caption><thead><tr><th scope="col">Form</th><th scope="col">Writing</th><th scope="col">Kind</th><th scope="col">Witness</th></tr></thead><tbody>${rows.join('')}</tbody></table></div>` : ''}
   ${hasOriginal ? '' : '<p class="small muted">No original-language writing of this name has been entered. A form is added only after it has been read in Scripture, a history, or an inscription.</p>'}
   ${hasInscription ? '' : '<p class="small muted">No inscription that writes this name has been entered.</p>'}
-  ${notes.length ? `<h3>Footnotes</h3><ol class="name-notes">${footnotes}</ol>` : ''}
+  ${notes.length ? `<details class="name-notes-twirl" id="${p.id}-name-notes"><summary>Footnotes</summary><ol class="name-notes">${footnotes}</ol></details>` : ''}
   ${tipnr && tipnrSrc ? `<p class="small muted">Hebrew, Aramaic and Greek letters are the forms printed in ${ext(tipnrSrc.url, 'STEPBible TIPNR')}, ${ext('https://creativecommons.org/licenses/by/4.0/', 'CC BY 4.0')}. The data file is not copied here.</p>` : ''}
 </section>`;
 }
