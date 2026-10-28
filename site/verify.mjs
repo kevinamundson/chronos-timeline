@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 // Headless verification: build must exist (npm run build). Serves dist/, loads key pages in Chromium,
 // checks for console errors, timeline/map items, Pagefind results, and saves screenshots.
-import { chromium } from 'playwright';
+import { chromium, webkit } from 'playwright';
 import { mkdirSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { serve } from './serve.mjs';
 import { loadStandbyCounts, standbySummaryLine } from '../scripts/standby/compute.mjs';
 import { SENNACHERIB_REDIRECT, redirectsFileHasSennacherib } from '../scripts/redirects.mjs';
+import { checkRowMerge } from './row-merge-check.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const SHOTS = join(here, 'screenshots');
@@ -19,6 +20,12 @@ const browser = await chromium.launch();
 const results = [];
 let failed = false;
 const check = (name, ok, detail = '') => { results.push(`${ok ? 'PASS' : 'FAIL'}  ${name}${detail ? ` — ${detail}` : ''}`); if (!ok) failed = true; };
+{
+  let rowErrors = [];
+  try { rowErrors = checkRowMerge(join(here, 'dist')).errors; }
+  catch (e) { rowErrors = [String(e)]; }
+  check('row merge: one spelling row, one author row, footnotes closed', rowErrors.length === 0, rowErrors.slice(0, 6).join(' | '));
+}
 
 async function open(path, { width = 1280, height = 900, shot, fullPage = true, scheme = 'light' } = {}) {
   const ctx = await browser.newContext({ viewport: { width, height }, colorScheme: scheme, deviceScaleFactor: width < 500 ? 2 : 1 });
@@ -613,7 +620,8 @@ for (const [path, shot, sel] of [
   const o = await open('/people/alyattes/', { width: 390, height: 844 });
   check('alyattes: HTTP 200, no console errors', o.status === 200 && o.errors.length === 0, o.errors.join(' | '));
   const text = await o.page.locator('#name').innerText();
-  check('alyattes: Herodotus spelling is footnoted and the Greek is not invented', /Alyattes/.test(text) && /History/.test(text) && /No original-language writing/.test(text) && /English translation/.test(text));
+  const note = await o.page.locator('#name .name-notes').evaluate((el) => el.textContent || '');
+  check('alyattes: Herodotus spelling is footnoted and the Greek is not invented', /Alyattes/.test(text) && /History/.test(text) && /No original-language writing/.test(text) && /English translation/.test(note) && !/English translation/.test(text));
   const overflow = await o.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
   check('alyattes (390px): name section does not widen the page', !overflow);
   await o.ctx.close();
@@ -863,6 +871,122 @@ for (const [path, shot, sel] of [
   check('ahab: the reign row sets the sort year', (await o.page.locator('#reign tr.is-sort .flag-sort').count()) === 1);
   check('ahab: HTTP 200, no console errors', o.status === 200 && o.errors.length === 0, o.errors.join(' | '));
   await o.ctx.close();
+}
+// Name spellings share one row. Footnotes stay in a closed disclosure. A marker opens it.
+// Date tables keep one top-level row per author. Same year, nested quotes. Different year, a sub-row.
+{
+  // Element shots otherwise paint the sticky header across a tall card. Position is restored so the click check still measures the sticky header.
+  async function shot(page, selector, path) {
+    await page.evaluate(() => {
+      const header = document.querySelector('.site-header');
+      if (!header) return;
+      header.dataset.shotPosition = header.style.position || '';
+      header.style.position = 'relative';
+    });
+    await page.locator(selector).screenshot({ path });
+    await page.evaluate(() => {
+      const header = document.querySelector('.site-header');
+      if (!header || !('shotPosition' in header.dataset)) return;
+      header.style.position = header.dataset.shotPosition;
+      delete header.dataset.shotPosition;
+    });
+  }
+  async function rowMergeUi(engine, launcher) {
+    const own = launcher === browser ? null : await launcher.launch();
+    const b = own || browser;
+    for (const [width, height, scheme] of [[390, 844, 'light'], [390, 844, 'dark'], [1280, 900, 'light'], [1280, 900, 'dark']]) {
+      const ctx = await b.newContext({ viewport: { width, height }, colorScheme: scheme, deviceScaleFactor: width < 500 ? 2 : 1 });
+      const page = await ctx.newPage();
+      const errors = [];
+      page.on('pageerror', (e) => errors.push(String(e)));
+      const resp = await page.goto(BASE + '/people/abraham/', { waitUntil: 'load', timeout: 30000 });
+      const tag = `abraham names (${engine} ${width}px ${scheme})`;
+      const closed = await page.locator('#abraham-name-notes').evaluate((d) => !d.open && !d.hasAttribute('open'));
+      const hidden = await page.locator('#abraham-name-notes .name-notes').isHidden();
+      const summary = await page.locator('#abraham-name-notes > summary').evaluate((el) => {
+        const cs = getComputedStyle(el);
+        const before = getComputedStyle(el, '::before');
+        const bg = getComputedStyle(document.body).backgroundColor;
+        const lum = (c) => { const m = String(c).match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/); return m ? (+m[1] + +m[2] + +m[3]) / 3 : null; };
+        const box = el.getBoundingClientRect();
+        return { h: box.height, summary: lum(cs.color), bg: lum(bg), chevron: before.borderRightWidth, open: el.parentElement.open };
+      });
+      const spellings = await page.locator('#name table.names tbody tr').evaluateAll((trs) => trs.map((tr) => ({
+        key: tr.getAttribute('data-spelling'),
+        cells: [...tr.children].map((c) => c.innerText.replace(/\s+/g, ' ').trim()),
+      })));
+      const keys = spellings.map((r) => r.key);
+      const heb = spellings.map((r) => r.cells[0] || '');
+      const abraham = spellings.find((r) => r.cells[0] === 'Abraham');
+      const abram = spellings.find((r) => r.cells[0] === 'Abram');
+      check(`${tag}: HTTP 200, disclosure closed`, resp.status() === 200 && closed && hidden && summary.open === false && errors.length === 0, errors.join(' | '));
+      check(`${tag}: one row per spelling`, spellings.length === 4 && new Set(keys).size === keys.length && heb.some((t) => t.includes('אַבְרָהָם')) && heb.some((t) => t.includes('אַבְרָם')), keys.join(' ; '));
+      check(`${tag}: Abraham and Abram list Bible and History`, /Bible/.test(abraham?.cells[3] || '') && /History/.test(abraham?.cells[3] || '') && /Bible/.test(abram?.cells[3] || '') && /History/.test(abram?.cells[3] || '') && (abraham?.cells[3].match(/Abraham|Bible|History/g) || []).length >= 2, `${abraham?.cells[3]} || ${abram?.cells[3]}`);
+      const contrast = summary.summary != null && summary.bg != null && Math.abs(summary.summary - summary.bg) > 120 && summary.h >= 44 && summary.chevron !== '0px';
+      check(`${tag}: footnote summary is tappable and readable`, contrast, JSON.stringify(summary));
+      if (width < 500) {
+        const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+        check(`${tag}: no horizontal page overflow`, !overflow);
+      }
+      if (engine === 'chromium' && width === 390 && scheme === 'light') {
+        await shot(page, '#name', join(SHOTS, 'abraham-name-390-closed.png'));
+      }
+      const familyClosed = await page.locator('#family-chart-details').evaluate((d) => !d.open);
+      await page.locator('#name a.fn[href="#abraham-fn-4"]').click();
+      await page.waitForFunction(() => document.getElementById('abraham-name-notes')?.open === true, null, { timeout: 3000 }).catch(() => {});
+      const opened = await page.evaluate(() => {
+        const details = document.getElementById('abraham-name-notes');
+        const note = document.getElementById('abraham-fn-4');
+        const header = document.querySelector('.site-header')?.getBoundingClientRect().height || 0;
+        const r = note?.getBoundingClientRect();
+        return {
+          open: !!details?.open,
+          cited: /Abraham/.test(note?.innerText || ''),
+          top: r ? Math.round(r.top) : null,
+          header: Math.round(header),
+          inView: !!r && r.height > 0 && r.top >= header - 2 && r.top < window.innerHeight - 8,
+          family: document.getElementById('family-chart-details')?.open === true,
+        };
+      });
+      check(`${tag}: marker opens the note and leaves the family chart closed`, opened.open && opened.inView && opened.cited && !opened.family && familyClosed, JSON.stringify(opened));
+      if (engine === 'chromium' && width === 390 && scheme === 'light') {
+        await shot(page, '#name', join(SHOTS, 'abraham-name-390-open.png'));
+      }
+      await ctx.close();
+    }
+    const ctx = await b.newContext({ viewport: { width: 1280, height: 900 }, colorScheme: 'light' });
+    const page = await ctx.newPage();
+    await page.goto(BASE + '/people/abraham/', { waitUntil: 'load', timeout: 30000 });
+    const birth = await page.locator('#birth table.chron').evaluate((table) => {
+      const authors = [...table.querySelectorAll('tr[data-author]')].map((tr) => tr.getAttribute('data-author'));
+      const row = (author) => table.querySelector(`tr[data-author="${author}"]`);
+      const count = (author) => [...table.querySelectorAll('tr')].filter((tr) => tr.getAttribute('data-author') === author || tr.getAttribute('data-author-sub') === author).length;
+      const raleigh = row('raleigh-history-of-the-world');
+      const hales = row('hales');
+      return {
+        unique: new Set(authors).size === authors.length,
+        raleighRows: count('raleigh-history-of-the-world'),
+        raleighQuotes: raleigh ? raleigh.querySelectorAll('.date-quote').length : 0,
+        raleighHtml: raleigh ? raleigh.innerHTML : '',
+        halesRows: count('hales'),
+        halesQuotes: hales ? hales.querySelectorAll('.date-quotes li').length : 0,
+        halesText: hales ? hales.innerText : '',
+        shuckfordRows: count('shuckford'),
+        generationsRows: count('generations'),
+        generationsText: (row('generations')?.innerText || '') + (table.querySelector('tr[data-author-sub="generations"]')?.innerText || ''),
+      };
+    });
+    check(`${engine}: Abraham birth has one Raleigh row and both quotations`, birth.unique && birth.raleighRows === 1 && birth.raleighQuotes === 2 && birth.raleighHtml.includes('<em>2024 BC</em>') && birth.raleighHtml.includes('yeere of the World, 2009') && birth.raleighHtml.includes('1. Abram. 175'), birth.raleighHtml.slice(0, 240));
+    check(`${engine}: Abraham birth nests Hales’s three 2153 BC quotations`, birth.halesRows === 1 && birth.halesQuotes === 3 && /2153/.test(birth.halesText) && /Abraham born 2153/.test(birth.halesText), birth.halesText.slice(0, 200));
+    check(`${engine}: Shuckford’s two years and Generations’ two editions stay under one author`, birth.shuckfordRows === 2 && birth.generationsRows === 2 && /2166 BC/.test(birth.generationsText) && /1996/.test(birth.generationsText), JSON.stringify({ shuckford: birth.shuckfordRows, generations: birth.generationsRows }));
+    const note = await page.locator('.raleigh-derived-note').innerText();
+    check(`${engine}: derived italics note still follows the date tables`, note.startsWith('Dates in italics are derived.'), note.slice(0, 160));
+    if (engine === 'chromium') await shot(page, '#birth', join(SHOTS, 'abraham-birth-merged.png'));
+    await ctx.close();
+    if (own) await own.close();
+  }
+  await rowMergeUi('chromium', browser);
+  await rowMergeUi('webkit', webkit);
 }
 await browser.close();
 srv.close();

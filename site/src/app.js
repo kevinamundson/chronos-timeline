@@ -509,4 +509,40 @@
     });
   }
   if (document.getElementById('family-data')) whenStyles(initFamily);
+
+  // A footnote marker opens the closed notes and scrolls the note below the sticky header.
+  function nameNoteTarget(href) {
+    if (!href || href.charAt(0) !== '#') return null;
+    var target = document.getElementById(decodeURIComponent(href.slice(1)));
+    if (!target) return null;
+    var details = target.closest('details.name-notes-twirl');
+    return details ? { target: target, details: details } : null;
+  }
+  function scrollNameNote(target) {
+    var header = document.querySelector('.site-header');
+    var gap = (header ? header.getBoundingClientRect().height : 0) + 16;
+    var rect = target.getBoundingClientRect();
+    if (rect.top < gap - 1 || rect.top > window.innerHeight - 24) {
+      window.scrollTo(0, Math.max(0, rect.top + window.pageYOffset - gap));
+    }
+  }
+  function revealNameNote() {
+    var found = nameNoteTarget(location.hash);
+    if (!found) return;
+    found.details.open = true;
+    scrollNameNote(found.target);
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a.fn') : null;
+    if (!a) return;
+    var found = nameNoteTarget(a.getAttribute('href'));
+    if (!found) return;
+    e.preventDefault();
+    found.details.open = true;
+    var href = a.getAttribute('href');
+    if (location.hash !== href) history.pushState(null, '', href);
+    scrollNameNote(found.target);
+  });
+  window.addEventListener('hashchange', revealNameNote);
+  revealNameNote();
 })();
