@@ -53,6 +53,100 @@ const TYPE_LABEL = { event: 'Event', person: 'Person', location: 'Place', map: '
 const urlOf = (r) => `/${DIRS[r.type]}/${r.id}/`;
 const link = (id) => { const r = byId[id]; return r ? `<a href="${urlOf(r)}">${esc(r.title)}</a>` : `<span class="muted">${esc(id)} (not yet a record)</span>`; };
 const ext = (href, text) => href ? `<a href="${esc(href)}" rel="noopener" target="_blank">${text}<span class="visually-hidden"> (opens in a new tab)</span></a>` : text;
+// CFAH on /chronologies/ is two platform sections (ARJ and OSF), built from sources
+// with platform, role, parent, and copy_kind. Responses are a fork tree: a top-level
+// comment names the papers it addresses, and a reply hangs under the first response
+// in responds_to. Copies nest under the paper or response they duplicate.
+const byListOrder = (a, b) => (a.list_order ?? 9999) - (b.list_order ?? 9999) || String(a.title).localeCompare(String(b.title));
+const cfahKids = (id, role) => sources.filter((s) => s.parent === id && s.role === role).sort(byListOrder);
+const responseKind = (title) => {
+  const kinds = [
+    /\bReply\b/.test(title) ? 'Reply' : '',
+    /\bResponse\b/.test(title) ? 'Response' : '',
+    /\bComments?\b/.test(title) ? 'Comment' : '',
+  ].filter(Boolean);
+  return kinds.length === 1 ? kinds[0] : '';
+};
+const paperRangeLabel = (ids) => {
+  const papers = ids.map((id) => sourceById[id]).filter((s) => s?.role === 'paper');
+  const nums = papers.map((s) => {
+    const m = String(s.id).match(/^cfah-(\d+)$/);
+    return m ? Number(m[1]) : null;
+  });
+  if (!nums.length || nums.some((n) => n == null)) return '';
+  const uniq = [...new Set(nums)].sort((a, b) => a - b);
+  if (uniq.length === 1) return `Paper ${uniq[0]}`;
+  const contiguous = uniq.every((n, i) => i === 0 || n === uniq[i - 1] + 1);
+  if (contiguous) return `Papers ${uniq[0]}–${uniq[uniq.length - 1]}`;
+  if (uniq.length === 2) return `Papers ${uniq[0]} and ${uniq[1]}`;
+  return `Papers ${uniq.slice(0, -1).join(', ')} and ${uniq[uniq.length - 1]}`;
+};
+const responseShortLabel = (s) => {
+  const comments = s.title.match(/Comments\s+\d+/);
+  if (comments) return comments[0];
+  const parts = s.title.match(/Parts\s+\d+[–-]\d+\.\s*Reply/);
+  if (parts) return parts[0];
+  if (/^Further Comments\b/.test(s.title)) return 'Further Comments';
+  const papers = s.title.match(/Papers\s+\d+[–-]\d+\s*[:.]\s*(?:Comments|Response)/);
+  if (papers) {
+    const surname = String(s.authors?.[0] || '').split(/\s+/).filter(Boolean).pop();
+    return /Comments/.test(papers[0]) && surname ? `${papers[0]} (${surname})` : papers[0];
+  }
+  return s.title;
+};
+const cfahItemHtml = (s) => {
+  const copies = cfahKids(s.id, 'copy');
+  const tag = s.role === 'copy'
+    ? ` <span class="tag tag-copy">${esc(s.copy_kind)}</span>`
+    : (s.access ? ` <span class="tag">${esc(s.access)}</span>` : '');
+  const nest = copies.length ? `<ul class="links cfah-copies">${copies.map(cfahItemHtml).join('')}</ul>` : '';
+  return `<li>${ext(s.url, esc(s.title))}${tag}${nest}</li>`;
+};
+const cfahThreadHtml = (responses) => {
+  const ids = new Set(responses.map((s) => s.id));
+  const children = new Map();
+  const tops = [];
+  for (const s of responses) {
+    const parent = (s.responds_to || []).map((id) => sourceById[id]).find((t) => t?.role === 'response');
+    if (parent) {
+      if (!ids.has(parent.id)) throw new Error(`CFAH response ${s.id} answers ${parent.id}, which is not in this Responses list`);
+      if (!children.has(parent.id)) children.set(parent.id, []);
+      children.get(parent.id).push(s);
+    } else tops.push(s);
+  }
+  const fork = (s) => {
+    const kind = responseKind(s.title);
+    if (!kind) throw new Error(`CFAH response ${s.id} has no single Comment, Reply, or Response in its title`);
+    const targets = s.responds_to || [];
+    const responseTargets = targets.map((id) => sourceById[id]).filter((t) => t?.role === 'response');
+    const paperIds = targets.filter((id) => sourceById[id]?.role === 'paper');
+    const onPapers = responseTargets.length ? '' : paperRangeLabel(paperIds);
+    if (!responseTargets.length && paperIds.length && !onPapers) throw new Error(`CFAH response ${s.id} has no paper-range label`);
+    const authors = (s.authors || []).map((a) => String(a).trim()).filter(Boolean);
+    const onHtml = onPapers ? ` <span class="cfah-on">on ${esc(onPapers)}</span>` : '';
+    const alsoHtml = responseTargets.length > 1
+      ? ` <span class="cfah-also">also answers: ${responseTargets.slice(1).map((t) => ext(t.url, esc(responseShortLabel(t)))).join('; ')}</span>`
+      : '';
+    const authorHtml = authors.length ? ` <span class="cfah-author">${esc(authors.join(', '))}</span>` : '';
+    const copies = cfahKids(s.id, 'copy');
+    const copyHtml = copies.length ? `<ul class="links cfah-copies">${copies.map(cfahItemHtml).join('')}</ul>` : '';
+    const kids = (children.get(s.id) || []).slice().sort(byListOrder);
+    const nest = kids.length ? `<ol class="cfah-thread">${kids.map(fork).join('')}</ol>` : '';
+    return `<li class="cfah-fork" data-id="${esc(s.id)}"><div class="cfah-fork-node"><span class="tag tag-kind">${kind}</span> ${ext(s.url, esc(s.title))}${authorHtml}${onHtml}${alsoHtml}</div>${copyHtml}${nest}</li>`;
+  };
+  return `<ol class="cfah-thread">${tops.sort(byListOrder).map(fork).join('')}</ol>`;
+};
+const cfahPlatformListHtml = (ulId) => {
+  const sections = sources.filter((s) => s.role === 'series' && (s.platform === 'arj' || s.platform === 'osf')).sort(byListOrder);
+  return `<ul class="links cfah-platforms" id="${esc(ulId)}">${sections.map((sec) => {
+    const papers = cfahKids(sec.id, 'paper');
+    const responses = cfahKids(sec.id, 'response');
+    const headTag = sec.access ? ` <span class="tag">${esc(sec.access)}</span>` : '';
+    const resp = `<li class="cfah-responses"><p class="cfah-responses-label">Responses</p>${cfahThreadHtml(responses)}</li>`;
+    return `<li class="cfah-platform">${ext(sec.url, esc(sec.series_label || sec.title))}${headTag}<ul class="links">${papers.map(cfahItemHtml).join('')}${resp}</ul></li>`;
+  }).join('')}</ul>`;
+};
+const onCfahList = (s) => s.platform === 'arj' || s.platform === 'osf';
 
 // Historical years: negative = BC, no year 0.
 const yearLabel = (y, end) => {
@@ -1056,6 +1150,21 @@ ${sourcesSection(m)}</article>`;
 // Chronologies + sources
 {
   const rule = chronFile.sorting_rule;
+  let cfahPlaced = false;
+  const freeSourceItems = sources.map((s) => {
+    if (onCfahList(s)) {
+      if (cfahPlaced) return '';
+      cfahPlaced = true;
+      return `<li id="cfah-sources-list">${cfahPlatformListHtml('cfah-platforms-sources')}</li>`;
+    }
+    if (s.series_parent) return '';
+    const linkHtml = s.superseded_for_links_by
+      ? `${esc(s.title)} <span class="tag">provenance only; links use ${esc(sourceById[s.superseded_for_links_by]?.title || s.superseded_for_links_by)}</span>`
+      : ext(s.url, esc(s.title));
+    const who = s.authors?.length ? ` <span class="muted">— ${esc(s.authors.join(', '))}${s.year ? `, ${esc(s.year)}` : ''}</span>` : '';
+    const note = s.license_note ? `<div class="small muted">${esc(s.license_note)}</div>` : '';
+    return `<li>${linkHtml}${who} <span class="tag">${esc(s.access)}</span>${note}</li>`;
+  }).join('');
   const body = `<h1>Chronologies &amp; sorting</h1>
 <section class="card"><h2>How the timeline is sorted</h2><p>${esc(rule.description)}</p>
 <ol class="tiers">${rule.tiers.map((t) => `<li><span class="tier tier-${['t1', 't2', 't3', 't4'][t.rank - 1]}">${esc(TIERS[t.tier]?.label || t.tier)}</span> <span class="muted small">${esc(t.select)}</span></li>`).join('')}</ol>
@@ -1064,9 +1173,9 @@ ${[...chronologies].sort((a, b) => a.sort_priority - b.sort_priority).map((c) =>
 ${c.id === 'raleigh-history-of-the-world' ? '<p><a href="/chronologies/raleigh-chronological-table/">A Chronological Table</a></p>' : ''}
 ${c.authors?.length ? `<p class="muted">${esc(c.authors.join(', '))}</p>` : ''}<p>${esc(c.description)}</p>
 ${c.year_conventions ? `<p class="small muted">${esc(c.year_conventions)}</p>` : ''}
-${c.references?.length ? `<ul class="links">${uniqSrc(c.references).map((s) => `<li>${ext(s.url, esc(s.title))} <span class="tag">${esc(s.access)}</span></li>`).join('')}</ul>` : ''}
+${c.id === 'cfah' ? cfahPlatformListHtml('cfah-platforms') : (c.references?.length ? `<ul class="links">${uniqSrc(c.references).map((s) => `<li>${ext(s.url, esc(s.title))} <span class="tag">${esc(s.access)}</span></li>`).join('')}</ul>` : '')}
 ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) => `<li><span class="flag flag-oq">Open question</span> ${esc(q)}</li>`).join('')}</ul>` : ''}</section>`).join('')}
-<section class="card" id="sources"><h2>All free sources</h2><ul class="links">${sources.map((s) => `<li>${s.superseded_for_links_by ? `${esc(s.title)} <span class="tag">provenance only; links use ${esc(sourceById[s.superseded_for_links_by]?.title || s.superseded_for_links_by)}</span>` : ext(s.url, esc(s.title))}${s.authors?.length ? ` <span class="muted">— ${esc(s.authors.join(', '))}${s.year ? `, ${esc(s.year)}` : ''}</span>` : ''} <span class="tag">${esc(s.access)}</span>${s.license_note ? `<div class="small muted">${esc(s.license_note)}</div>` : ''}</li>`).join('')}</ul></section>`;
+<section class="card" id="sources"><h2>All free sources</h2><ul class="links">${freeSourceItems}</ul></section>`;
   out('chronologies/index.html', page({ title: 'Chronologies', desc: 'Chronologies used and the CFAH-weighted sorting rule.', body, path: '/chronologies/', type: 'Chronology' }));
 }
 

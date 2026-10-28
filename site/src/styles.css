@@ -135,6 +135,59 @@ table.chron td.superseded summary { cursor: pointer; }
 
 /* Lists */
 .links, .browse { padding-left: 1.1em; } .links li, .browse li { margin: 6px 0; }
+.series-links { margin-top: 4px; }
+.series-links a { overflow-wrap: anywhere; }
+.series-preprint { margin-left: 0.35em; }
+.cfah-platforms { margin-top: 8px; }
+.cfah-platforms a { overflow-wrap: anywhere; }
+.cfah-platforms > .cfah-platform { margin-top: 14px; }
+.cfah-platforms > .cfah-platform > a { font-weight: 600; }
+.cfah-responses-label { margin: 10px 0 0; font-weight: 600; }
+.cfah-responses,
+.cfah-responses ol,
+.cfah-responses ul,
+.cfah-responses li { list-style: none; }
+.cfah-responses { margin-left: 0; }
+/* Fork tree: a vertical trunk on the list and a horizontal elbow on each node. */
+.cfah-responses > .cfah-thread,
+.cfah-fork > .cfah-thread {
+  list-style: none;
+  margin: 4px 0 0 2px;
+  padding: 0 0 2px 14px;
+  border-left: 1px solid color-mix(in srgb, var(--label-2) 65%, transparent);
+}
+.cfah-fork {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 3px 0;
+}
+.cfah-fork::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 0.95em;
+  width: 14px;
+  border-top: 1px solid color-mix(in srgb, var(--label-2) 65%, transparent);
+}
+.cfah-fork-node {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 8px;
+  row-gap: 2px;
+  min-width: 0;
+}
+.cfah-author, .cfah-on, .cfah-also { color: var(--label-2); font-size: 14px; }
+.tag-kind { font-size: 11px; font-weight: 600; }
+.cfah-responses .cfah-copies { list-style: none; margin: 2px 0 4px; padding-left: 0; }
+@media (max-width: 480px) {
+  .cfah-responses > .cfah-thread,
+  .cfah-fork > .cfah-thread { margin-left: 0; padding-left: 8px; }
+  .cfah-fork::before { left: -8px; width: 8px; }
+}
+.cfah-copies { margin-top: 2px; }
+.tag-copy { font-size: 11px; font-weight: 600; }
 .chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .chips a { display: inline-block; padding: 6px 12px; border-radius: 999px; background: var(--accent-fill); font-size: 15px; }
 .chrono-list { list-style: none; padding: 0; margin: 0; }

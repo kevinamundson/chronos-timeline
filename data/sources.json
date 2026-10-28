@@ -189,11 +189,15 @@
       "access": "free-to-read",
       "license_note": "Free to read online; check OSF license per file.",
       "verified_on": "2026-10-17",
-      "note": "OSF wiki lists CFAH-1 to CFAH-6 and states the series follows the Ussher–Floyd Nolan Jones (\"Ussher-Jones\") chronology."
+      "note": "OSF wiki lists CFAH-1 to CFAH-6 and states the series follows the Ussher–Floyd Nolan Jones (\"Ussher-Jones\") chronology.",
+      "platform": "osf",
+      "role": "series",
+      "series_label": "OSF Preprint",
+      "list_order": 2
     },
     {
       "id": "cfah-1",
-      "title": "Chronological Framework of Ancient History. 1: Problem, Data, and Methodology,",
+      "title": "Chronological Framework of Ancient History. 1: Problem, Data, and Methodology",
       "authors": [
         "Kenneth C. Griffith",
         "Darrell K. White"
@@ -205,11 +209,16 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-17"
+      "verified_on": "2026-10-17",
+      "platform": "arj",
+      "role": "paper",
+      "parent": "cfah-arj-series",
+      "series_parent": "cfah-arj-series",
+      "list_order": 1
     },
     {
       "id": "cfah-2",
-      "title": "Chronological Framework of Ancient History. 2: Founding of the Nations,",
+      "title": "Chronological Framework of Ancient History. 2: Founding of the Nations",
       "authors": [
         "Kenneth C. Griffith",
         "Darrell K. White"
@@ -221,11 +230,16 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-17"
+      "verified_on": "2026-10-17",
+      "platform": "arj",
+      "role": "paper",
+      "parent": "cfah-arj-series",
+      "series_parent": "cfah-arj-series",
+      "list_order": 2
     },
     {
       "id": "cfah-3",
-      "title": "Chronological Framework of Ancient History. 3: Anchor Points of Ancient History,",
+      "title": "Chronological Framework of Ancient History. 3: Anchor Points of Ancient History",
       "authors": [
         "Kenneth C. Griffith",
         "Darrell K. White"
@@ -237,11 +251,16 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-17"
+      "verified_on": "2026-10-17",
+      "platform": "arj",
+      "role": "paper",
+      "parent": "cfah-arj-series",
+      "series_parent": "cfah-arj-series",
+      "list_order": 3
     },
     {
       "id": "cfah-4",
-      "title": "Chronological Framework of Ancient History. 4: Dating Creation and the Deluge,",
+      "title": "Chronological Framework of Ancient History. 4: Dating Creation and the Deluge",
       "authors": [
         "Kenneth C. Griffith",
         "Darrell K. White"
@@ -253,11 +272,16 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-17"
+      "verified_on": "2026-10-17",
+      "platform": "arj",
+      "role": "paper",
+      "parent": "cfah-arj-series",
+      "series_parent": "cfah-arj-series",
+      "list_order": 4
     },
     {
       "id": "cfah-5",
-      "title": "Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,",
+      "title": "Chronology For Ancient History 5: The Babylonian Dynasties of Berossus",
       "authors": [
         "Kenneth C. Griffith",
         "Darrell K. White"
@@ -269,11 +293,17 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-17"
+      "verified_on": "2026-10-17",
+      "platform": "arj",
+      "role": "paper",
+      "parent": "cfah-arj-series",
+      "series_parent": "cfah-arj-series",
+      "list_order": 5,
+      "note": "The page title and Open Graph title on Answers Research Journal (fetched 2026-10-28) are \"Chronology For Ancient History 5: The Babylonian Dynasties of Berossus\". The citation_title meta and the Chronology series index use \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus\". The list uses the page title."
     },
     {
       "id": "cfah-6",
-      "title": "Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt,",
+      "title": "Chronological Framework of Ancient History. 6: The Old and Middle Kingdoms of Egypt",
       "authors": [
         "Kenneth C. Griffith",
         "Darrell K. White"
@@ -285,7 +315,12 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-17"
+      "verified_on": "2026-10-17",
+      "platform": "arj",
+      "role": "paper",
+      "parent": "cfah-arj-series",
+      "series_parent": "cfah-arj-series",
+      "list_order": 6
     },
     {
       "id": "jones-chart-1",
@@ -875,6 +910,7 @@
     },
     {
       "id": "cfah-13-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-13: The Hittites, Cimmerians, and Medes",
       "authors": [
         "Kenneth C. Griffith",
@@ -890,10 +926,15 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-17), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-17",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 13
     },
     {
       "id": "cfah-14-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-14: Ancient Assyria",
       "authors": [
         "Kenneth C. Griffith",
@@ -909,10 +950,15 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-17), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-17",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 14
     },
     {
       "id": "cfah-15-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-15: Sumer, Akkad, and Babylon",
       "authors": [
         "Kenneth C. Griffith",
@@ -928,7 +974,11 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-17), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-17",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 15
     },
     {
       "id": "jordan-compilation-anno-mundi",
@@ -1098,6 +1148,7 @@
     },
     {
       "id": "cfah-8-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-8: Placing Dynasties 15-18",
       "authors": [
         "Kenneth C. Griffith",
@@ -1113,10 +1164,15 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 9
     },
     {
       "id": "cfah-9-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-9: The 19th and 26th Dynasties of Egypt",
       "authors": [
         "Kenneth C. Griffith",
@@ -1132,10 +1188,15 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 10
     },
     {
       "id": "cfah-10-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-10: The Libyan-Cushite Intermediate Period",
       "authors": [
         "Kenneth C. Griffith",
@@ -1151,10 +1212,15 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 11
     },
     {
       "id": "cfah-17-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-17: The Ancient Chronologies of India and China",
       "authors": [
         "Kenneth C. Griffith",
@@ -1170,10 +1236,15 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 17
     },
     {
       "id": "cfah-18-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-18: The Ancient Chronology of Ireland",
       "authors": [
         "Kenneth C. Griffith",
@@ -1189,10 +1260,15 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 18
     },
     {
       "id": "cfah-19-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-19: The Historical Ice Age",
       "authors": [
         "Kenneth C. Griffith",
@@ -1208,11 +1284,16 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 19
     },
     {
       "id": "cfah-7a-osf",
-      "title": "CFAH-7A: A Chronological Baseline for Dynasty 12",
+      "series_parent": "cfah-project-osf",
+      "title": "CFAH-7: A Chronological Baseline for the Old and Middle Kingdoms of Egypt",
       "authors": [
         "Kenneth C. Griffith",
         "Darrell K. White"
@@ -1227,10 +1308,15 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal. On 2026-10-28 the OSF API titles this component CFAH-7: A Chronological Baseline for the Old and Middle Kingdoms of Egypt. The list uses that title. The file on the component is still named CFAH-7A Chronological Baseline for Dynasty 12.pdf. Child component t3vu5 is an older CFAH-7A copy.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 7
     },
     {
       "id": "cfah-7b-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-7B: Kings of Dynasties 1-13",
       "authors": [
         "Kenneth C. Griffith",
@@ -1246,10 +1332,15 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 8
     },
     {
       "id": "cfah-11-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-11: Dynasties 20 and 21",
       "authors": [
         "Kenneth C. Griffith",
@@ -1265,10 +1356,15 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 12
     },
     {
       "id": "cfah-16-osf",
+      "series_parent": "cfah-project-osf",
       "title": "CFAH-16: The Kings of Israel and Judah",
       "authors": [
         "Kenneth C. Griffith",
@@ -1284,7 +1380,11 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-18), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-18",
-      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal."
+      "note": "Preprint in the CFAH series (OSF project prhfz); not (yet) published in Answers Research Journal.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 16
     },
     {
       "id": "cory-ancient-fragments-1876",
@@ -1346,6 +1446,856 @@
       "license_note": "Second edition, corrected and improved, in four volumes. London: printed for C. J. G. & F. Rivington, St Paul's Church-yard and Waterloo-Place, Pall-Mall, MDCCCXXX. Printers: Gilbert and Rivington, St. John's Square. In the public domain in the United States because it was published in 1930 or earlier. Title pages and imprints of all four volumes were opened on 2026-10-27. The scans are Boston Public Library copies, Internet Archive items newanalysisofchr01hale through newanalysisofchr04hale, full view. The roadmap named the 1809–1812 first edition. These links are the 1830 second edition. No 1809 URL was used.",
       "verified_on": "2026-10-27",
       "note": "Pass 1, partial. Image-read: vol. II, Synopsis of the Chronology, Periods I–VII (the opening leaf, cited as p. xxxii because the next leaf is headed xxxiii, through Nehemiah’s reform on p. xxxvii); vol. I, Table XI, Remarkable Eras, printed p. 101, from Creation through the Era of Nabonassar. Not entered: the rest of Table XI on p. 101, all of p. 102, Periods VIII–X, the narrative of vols. I–III, the patriarchal comparison tables in vol. I, and the profane king lists in the vol. IV synopsis."
+    },
+    {
+      "id": "cfah-1-osf",
+      "series_parent": "cfah-project-osf",
+      "title": "CFAH-1: Problem, Data, and Methodology",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF component of project prhfz, created 2025-06-11 (OSF API 2026-10-28). File chronological_framework_ancient_history_1.pdf.",
+      "url": "https://osf.io/fm4w2/",
+      "alt_urls": [
+        "https://osf.io/download/ncs4h/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-28), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-28",
+      "note": "OSF component in the CFAH series (project prhfz). Title matches the published paper recorded as source cfah-1.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 1
+    },
+    {
+      "id": "cfah-2-osf",
+      "series_parent": "cfah-project-osf",
+      "title": "CFAH-2: Founding of the Nations",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF component of project prhfz, created 2025-06-11 (OSF API 2026-10-28). File chronological_framework_ancient_history2.pdf.",
+      "url": "https://osf.io/8s6gt/",
+      "alt_urls": [
+        "https://osf.io/download/6b5r4/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-28), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-28",
+      "note": "OSF component in the CFAH series (project prhfz). Title matches the published paper recorded as source cfah-2.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 2
+    },
+    {
+      "id": "cfah-3-osf",
+      "series_parent": "cfah-project-osf",
+      "title": "CFAH-3: Anchor Points of Ancient History",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF component of project prhfz, created 2025-06-11 (OSF API 2026-10-28). File chronological_framework_ancient_history_3.pdf.",
+      "url": "https://osf.io/6hpbq/",
+      "alt_urls": [
+        "https://osf.io/download/tk5p3/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF API on 2026-10-28 returns node_license with year 2025 and an empty copyright holder, and no license name. No reuse license is stated: only short quotes and data values are used here.",
+      "verified_on": "2026-10-28",
+      "note": "OSF component in the CFAH series (project prhfz). Title matches the published paper recorded as source cfah-3.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 3
+    },
+    {
+      "id": "cfah-4-osf",
+      "series_parent": "cfah-project-osf",
+      "title": "CFAH-4: Dating Creation and the Deluge",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF component of project prhfz, created 2025-06-11 (OSF API 2026-10-28). File chronological_framework_ancient_history_4.pdf.",
+      "url": "https://osf.io/t7sx5/",
+      "alt_urls": [
+        "https://osf.io/download/mja58/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-28), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-28",
+      "note": "OSF component in the CFAH series (project prhfz). Title matches the published paper recorded as source cfah-4.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 4
+    },
+    {
+      "id": "cfah-5-osf",
+      "series_parent": "cfah-project-osf",
+      "title": "CFAH-5: The Babylonian Dynasties of Berossus",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF component of project prhfz, created 2025-06-11 (OSF API 2026-10-28). File chronological_framework_ancient_history_5.pdf.",
+      "url": "https://osf.io/bjk8g/",
+      "alt_urls": [
+        "https://osf.io/download/bafct/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-28), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-28",
+      "note": "OSF component in the CFAH series (project prhfz). Title matches the published paper recorded as source cfah-5.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 5
+    },
+    {
+      "id": "cfah-6-osf",
+      "series_parent": "cfah-project-osf",
+      "title": "CFAH-6: The Old and Middle Kingdoms of Egypt",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF component of project prhfz, created 2025-06-11 (OSF API 2026-10-28). File CFAH-6_v2.1.pdf.",
+      "url": "https://osf.io/hp3fg/",
+      "alt_urls": [
+        "https://osf.io/download/f7vg6/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-28), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-28",
+      "note": "OSF component in the CFAH series (project prhfz). Title matches the published paper recorded as source cfah-6. The project wiki still links https://osf.io/5k64z for this paper; the OSF API returns HTTP 410 for that file guid. The file link above is the current PDF the component lists.",
+      "platform": "osf",
+      "role": "paper",
+      "parent": "cfah-project-osf",
+      "list_order": 6
+    },
+    {
+      "id": "cfah-7a-t3vu5-osf",
+      "series_parent": "cfah-7a-osf",
+      "title": "CFAH-7A: The Method for Finding a Baseline Demonstrated on Dynasty 12",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF component of project prhfz, child of gmx5j, created 2025-06-12 (OSF API 2026-10-28). File \"CFAH-7 A Chronological Baseline for Dynasty 12.pdf\". doi:10.17605/OSF.IO/T3VU5.",
+      "url": "https://osf.io/t3vu5/",
+      "alt_urls": [
+        "https://osf.io/download/7fbnz/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-28), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-28",
+      "note": "Older CFAH-7A component, child of gmx5j. The OSF API title on 2026-10-28 is CFAH-7A: The Method for Finding a Baseline Demonstrated on Dynasty 12. Nested under cfah-7a-osf.",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "older version",
+      "parent": "cfah-7a-osf",
+      "list_order": 1
+    },
+    {
+      "id": "cfah-tweedy-response-osf",
+      "series_parent": "cfah-project-osf",
+      "title": "CFAH Response to Tweedy's Ice Age Paper",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF component whose root is project prhfz, created 2025-09-13 (OSF API 2026-10-28). File \"Tweedy Ice Age Response.pdf\". doi:10.17605/OSF.IO/DFKBM.",
+      "url": "https://osf.io/dfkbm/",
+      "alt_urls": [
+        "https://osf.io/download/68c5ad379e0a1329ccd9983e/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-28), so all rights reserved: only short quotes and data values are used here.",
+      "verified_on": "2026-10-28",
+      "note": "Public OSF component under project prhfz (filter[root]=prhfz on 2026-10-28). Its parent component ur8z9 returned HTTP 401, so only this public page is linked. The OSF node description says it is a response to Tweedy's 2024 paper on Oard's Ice Age on Masoretic and LXX timelines. That paper is not an item on this list, and the file name is Tweedy Ice Age Response.pdf. It stays at the top of OSF Responses.",
+      "platform": "osf",
+      "role": "response",
+      "parent": "cfah-project-osf",
+      "list_order": 1
+    },
+    {
+      "id": "cfah-arj-series",
+      "platform": "arj",
+      "role": "series",
+      "list_order": 1,
+      "title": "Answers Research Journal",
+      "authors": [],
+      "translator_or_editor": null,
+      "year": null,
+      "url": "https://answersresearchjournal.org/chronology/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Chronology series index on Answers Research Journal. The articles are free to read there and are copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-28",
+      "note": "Section header for the CFAH list. The page title is Chronology."
+    },
+    {
+      "id": "cfah-arj-comments-1",
+      "platform": "arj",
+      "role": "response",
+      "parent": "cfah-arj-series",
+      "responds_to": ["cfah-1", "cfah-3"],
+      "series_parent": "cfah-arj-series",
+      "list_order": 1,
+      "title": "“Chronological Framework of Ancient History”: Comments 1",
+      "authors": [
+        "A. John M. Osgood"
+      ],
+      "translator_or_editor": null,
+      "year": "2024",
+      "publication": "ARJ 17 (2024): 21–24",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-comments-1/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-28",
+      "note": "Responds to CFAH-1 and CFAH-3. The article's text and references, fetched 2026-10-28, cite Griffith and White 2022 (paper 1) and Griffith and White 2023 (paper 3). They do not cite papers 2, 4, or 5."
+    },
+    {
+      "id": "cfah-arj-comments-2",
+      "platform": "arj",
+      "role": "response",
+      "parent": "cfah-arj-series",
+      "responds_to": ["cfah-3"],
+      "series_parent": "cfah-arj-series",
+      "list_order": 2,
+      "title": "“Chronological Framework of Ancient History”: Comments 2",
+      "authors": [
+        "Robert M. Porter"
+      ],
+      "translator_or_editor": null,
+      "year": "2024",
+      "publication": "ARJ 17 (2024): 25–26",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-comments-2/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-28",
+      "note": "Responds to CFAH-3. The opening calls it the third paper by Griffith and White (Griffith and White 2023), and the references list that paper only. Fetched 2026-10-28."
+    },
+    {
+      "id": "cfah-arj-reply",
+      "platform": "arj",
+      "role": "response",
+      "parent": "cfah-arj-series",
+      "responds_to": ["cfah-arj-comments-1", "cfah-arj-comments-2"],
+      "series_parent": "cfah-arj-series",
+      "list_order": 3,
+      "title": "“Chronological Framework of Ancient History”: Reply",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2024",
+      "publication": "ARJ 17 (2024): 27–41",
+      "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-reply/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-28",
+      "note": "Responds to Osgood's Comments 1 and Porter's Comments 2. The text has a section for each, and the references list both 2024 comments. Fetched 2026-10-28. The opening also thanks readers of the first three papers. Paper 2 is not a reference of either comment, so it is not a responds_to target."
+    },
+    {
+      "id": "cfah-arj-papers-1-5-comments-habermehl",
+      "platform": "arj",
+      "role": "response",
+      "parent": "cfah-arj-series",
+      "responds_to": ["cfah-1", "cfah-2", "cfah-3", "cfah-4", "cfah-5"],
+      "series_parent": "cfah-arj-series",
+      "list_order": 4,
+      "title": "Chronological Framework of Ancient History. Papers 1–5: Comments",
+      "authors": [
+        "Anne Habermehl"
+      ],
+      "translator_or_editor": null,
+      "year": "2024",
+      "publication": "ARJ 17 (2024): 465–469",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-1-5-comments/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-28",
+      "note": "Title is the ARJ page title fetched 2026-10-28. The doc of that date recorded the link text as “Chronological Framework of Ancient History”: Papers 1–5. Comments. Responds to CFAH-1 through CFAH-5. The opening and the references cite Griffith and White 2022a, 2022b, 2023a, 2023b, and 2023c."
+    },
+    {
+      "id": "cfah-arj-papers-1-5-response",
+      "platform": "arj",
+      "role": "response",
+      "parent": "cfah-arj-series",
+      "responds_to": ["cfah-arj-papers-1-5-comments-habermehl"],
+      "series_parent": "cfah-arj-series",
+      "list_order": 5,
+      "title": "Chronological Framework of Ancient History. Papers 1–5: Response",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2024",
+      "publication": "ARJ 17 (2024): 471–478",
+      "url": "https://answersresearchjournal.org/chronology/chronological-framework-ancient-history-1-5-response/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-28",
+      "note": "Responds to Habermehl's Papers 1–5 comments. The opening calls this post a response to Habermehl 2024, and the references list that article. Fetched 2026-10-28."
+    },
+    {
+      "id": "cfah-arj-papers-1-5-comments-tweedy",
+      "platform": "arj",
+      "role": "response",
+      "parent": "cfah-arj-series",
+      "responds_to": ["cfah-1", "cfah-2", "cfah-3", "cfah-4", "cfah-5"],
+      "series_parent": "cfah-arj-series",
+      "list_order": 6,
+      "title": "Chronological Framework of Ancient History. Papers 1–5. Comments",
+      "authors": [
+        "Eric J. Tweedy"
+      ],
+      "translator_or_editor": null,
+      "year": "2024",
+      "publication": "ARJ 17 (2024): 647–667",
+      "url": "https://answersresearchjournal.org/chronology/cfah-1-5-comments-tweedy/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-28",
+      "note": "Responds to CFAH-1 through CFAH-5. The opening and the references cite Griffith and White 2022a, 2022b, 2023a, 2023b, and 2023c. Fetched 2026-10-28."
+    },
+    {
+      "id": "cfah-arj-parts-1-5-reply",
+      "platform": "arj",
+      "role": "response",
+      "parent": "cfah-arj-series",
+      "responds_to": ["cfah-arj-papers-1-5-comments-tweedy"],
+      "series_parent": "cfah-arj-series",
+      "list_order": 7,
+      "title": "Chronological Framework of Ancient History: Parts 1–5. Reply",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2024",
+      "publication": "ARJ 17 (2024): 669–676",
+      "url": "https://answersresearchjournal.org/chronology/cfah-1-5-reply/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-28",
+      "note": "Responds to Tweedy's Papers 1–5 comments. The opening says Tweedy (2024) critiqued the series, and the references list that article at the Tweedy comments URL. Fetched 2026-10-28."
+    },
+    {
+      "id": "cfah-arj-further-comments-tweedy",
+      "platform": "arj",
+      "role": "response",
+      "parent": "cfah-arj-series",
+      "responds_to": ["cfah-arj-parts-1-5-reply"],
+      "series_parent": "cfah-arj-series",
+      "list_order": 8,
+      "title": "Further Comments on Griffith and White",
+      "authors": [
+        "Eric J. Tweedy"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "ARJ 18 (2025): 335–346",
+      "url": "https://answersresearchjournal.org/chronology/further-comments-griffith-white/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
+      "verified_on": "2026-10-28",
+      "note": "On the ARJ Chronology series page (fetched 2026-10-28) and not in the doc export. Title from the article page. Author from the byline. Responds to the Parts 1–5 Reply. The opening says Griffith and White (2024) replied to Tweedy's comments, and the references list that reply at its ARJ URL."
+    },
+    {
+      "id": "cfah-13-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-13-osf",
+      "series_parent": "cfah-13-osf",
+      "list_order": 1,
+      "title": "CFAH-13: The Hittites, Cimmerians, and Medes",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "url": "https://osf.io/download/4j2hv/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-13_Hittites_Cimmerians_Medes_v1.3.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-14-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-14-osf",
+      "series_parent": "cfah-14-osf",
+      "list_order": 1,
+      "title": "CFAH-14: Ancient Assyria",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "url": "https://osf.io/download/ce35f/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-14_Assyria_v_1.0.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-15-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-15-osf",
+      "series_parent": "cfah-15-osf",
+      "list_order": 1,
+      "title": "CFAH-15: Sumer, Akkad, and Babylon",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "url": "https://osf.io/download/8j3r2/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-15 Sumer, Akkad, and Babylon_v1.4.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-8-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-8-osf",
+      "series_parent": "cfah-8-osf",
+      "list_order": 1,
+      "title": "CFAH-8: Placing Dynasties 15-18",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "url": "https://osf.io/download/7e5m6/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-8_v1.2.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-9-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-9-osf",
+      "series_parent": "cfah-9-osf",
+      "list_order": 1,
+      "title": "CFAH-9: The 19th and 26th Dynasties of Egypt",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/download/bkfjv/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-9_Dynasties_19_and_26_v1.4.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-10-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-10-osf",
+      "series_parent": "cfah-10-osf",
+      "list_order": 1,
+      "title": "CFAH-10: The Libyan-Cushite Intermediate Period",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/download/f4kvd/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-10 The Libyan-Cushite Intermediate Period_v1.4.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-17-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-17-osf",
+      "series_parent": "cfah-17-osf",
+      "list_order": 1,
+      "title": "CFAH-17: The Ancient Chronologies of India and China",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "url": "https://osf.io/download/6a6e7bed0dd9e3bb2d4b9013/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-17_ India & China_v1.2.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-18-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-18-osf",
+      "series_parent": "cfah-18-osf",
+      "list_order": 1,
+      "title": "CFAH-18: The Ancient Chronology of Ireland",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "url": "https://osf.io/download/6a8352abe42635051dedda69/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"cfah-18_v1.4.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-19-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-19-osf",
+      "series_parent": "cfah-19-osf",
+      "list_order": 1,
+      "title": "CFAH-19: The Historical Ice Age",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "url": "https://osf.io/download/6a4e6244abd79cc9ba3b3049/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-19_Historical_Ice_Age_v1.0.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-7a-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-7a-osf",
+      "series_parent": "cfah-7a-osf",
+      "list_order": 2,
+      "title": "CFAH-7: A Chronological Baseline for the Old and Middle Kingdoms of Egypt",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "url": "https://osf.io/download/jr5v4/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-7A Chronological Baseline for Dynasty 12.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-7b-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-7b-osf",
+      "series_parent": "cfah-7b-osf",
+      "list_order": 1,
+      "title": "CFAH-7B: Kings of Dynasties 1-13",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "url": "https://osf.io/download/698b7472bd36e2a67ce24bf6/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH 7-B Kings of Dynasties 1-13_v_1.3.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-11-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-11-osf",
+      "series_parent": "cfah-11-osf",
+      "list_order": 1,
+      "title": "CFAH-11: Dynasties 20 and 21",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/download/crf7e/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-11_v1.3.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-16-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-16-osf",
+      "series_parent": "cfah-16-osf",
+      "list_order": 1,
+      "title": "CFAH-16: The Kings of Israel and Judah",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2026",
+      "url": "https://osf.io/download/t2wbq/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-16_ The Kings of Israel and Judah_v1.3.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-1-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-1-osf",
+      "series_parent": "cfah-1-osf",
+      "list_order": 1,
+      "title": "CFAH-1: Problem, Data, and Methodology",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/download/ncs4h/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"chronological_framework_ancient_history_1.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-2-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-2-osf",
+      "series_parent": "cfah-2-osf",
+      "list_order": 1,
+      "title": "CFAH-2: Founding of the Nations",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/download/6b5r4/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"chronological_framework_ancient_history2.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-3-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-3-osf",
+      "series_parent": "cfah-3-osf",
+      "list_order": 1,
+      "title": "CFAH-3: Anchor Points of Ancient History",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/download/tk5p3/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"chronological_framework_ancient_history_3.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-4-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-4-osf",
+      "series_parent": "cfah-4-osf",
+      "list_order": 1,
+      "title": "CFAH-4: Dating Creation and the Deluge",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/download/mja58/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"chronological_framework_ancient_history_4.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-5-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-5-osf",
+      "series_parent": "cfah-5-osf",
+      "list_order": 1,
+      "title": "CFAH-5: The Babylonian Dynasties of Berossus",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/download/bafct/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"chronological_framework_ancient_history_5.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-6-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-6-osf",
+      "series_parent": "cfah-6-osf",
+      "list_order": 1,
+      "title": "CFAH-6: The Old and Middle Kingdoms of Egypt",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/download/f7vg6/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-6_v2.1.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-7a-t3vu5-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-7a-t3vu5-osf",
+      "series_parent": "cfah-7a-t3vu5-osf",
+      "list_order": 1,
+      "title": "CFAH-7A: The Method for Finding a Baseline Demonstrated on Dynasty 12",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/download/7fbnz/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"CFAH-7 A Chronological Baseline for Dynasty 12.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "cfah-tweedy-response-osf-pdf",
+      "platform": "osf",
+      "role": "copy",
+      "copy_kind": "PDF",
+      "parent": "cfah-tweedy-response-osf",
+      "series_parent": "cfah-tweedy-response-osf",
+      "list_order": 1,
+      "title": "CFAH Response to Tweedy's Ice Age Paper",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "url": "https://osf.io/download/68c5ad379e0a1329ccd9983e/",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
+      "verified_on": "2026-10-28",
+      "note": "OSF file \"Tweedy Ice Age Response.pdf\". Download link from the OSF API on 2026-10-28."
     }
   ]
 }
