@@ -4,20 +4,13 @@
   "type": "person",
   "title": "Uzziah (king of Judah)",
   "summary": "King of Judah in Hales’s synopsis, “Uzziah, or Azariah”. No earlier record of this king was in the data.",
-  "description": "Added from the Hales import. Display only. Hales prints his own B.C. years in the synopsis and in Table XI. This chronology never sets a sort, and no tier 1–4 chronology dates this person’s birth, so there is no sort year.",
-  "sorting_year": null,
+  "description": "Added from the Hales import. Display only. Hales prints his own B.C. years in the synopsis and in Table XI. This chronology never sets a sort, and Jones, Appendix F (23rd ed., 2026), dates this and sets the sort.",
+  "sorting_year": -827,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year (Hales is display-only)."
-  },
-  "standby": {
-    "year_bc_ad": -809,
-    "basis": "source-printed",
-    "source_chronology": "hales",
-    "from_record": null,
-    "note": "Standby placement only. Hales, A New Analysis of Chronology (1830, 2nd ed.) prints this BC/AD year on the reign entry (10. Uzziah, or Azariah 52 809). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 827 BC (no higher-tier year available)."
   },
   "father": null,
   "children": [],
@@ -32,6 +25,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "3177 827 Birth of Uzziah of Judah",
+        "year_am": 3177,
+        "year_bc_ad": -827,
+        "precision": "year",
+        "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 279 (PDF p. 314)",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+        "source_text_id": "jones-chronology-ot-2026",
+        "note": null
       }
     ],
     "reign": [
@@ -61,7 +65,8 @@
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "jones-chronology-ot-2026"
   ],
   "related": [],
   "free_source_links": [
@@ -69,6 +74,11 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 279 (PDF p. 314)"
     }
   ]
 }

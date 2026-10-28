@@ -43,6 +43,17 @@
       "cfah_key": "cfah:t1-721:fall-of-samaria"
     },
     {
+      "source": "ussher-jones",
+      "date": "3283 721 Assyrian conquest of Israel",
+      "year_am": 3283,
+      "year_bc_ad": -721,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 279 (PDF p. 314)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": "Jones prints 721 BC. CFAH anchor point 722 BC keeps the sort. The year agrees with CFAH-1 Table 1 (721 or 720), not with the anchor point."
+    },
+    {
       "source": "generations",
       "date": "722 BC",
       "year_am": null,
@@ -117,7 +128,8 @@
     "generations-preparing-2e",
     "morecraft-christian-survey",
     "cfah-1",
-    "cfah-14-osf"
+    "cfah-14-osf",
+    "jones-chronology-ot-2026"
   ],
   "related": [],
   "free_source_links": [
@@ -135,6 +147,11 @@
       "source_id": "cfah-14-osf",
       "url": "https://osf.io/9fuw2/",
       "locator": "p. 16, AP-87 (first)"
+    },
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 279 (PDF p. 314)"
     }
   ]
 }

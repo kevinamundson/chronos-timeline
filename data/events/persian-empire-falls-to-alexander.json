@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "persian-empire-falls-to-alexander",
+  "type": "event",
+  "title": "The Persian empire falls to Alexander",
+  "summary": "Jones dates the fall of the Persian empire to Alexander.",
+  "description": "Jones dates the fall of the Persian empire to Alexander. The year is the Appendix F figure, stored as printed. He does not name the battle of Gaugamela. That battle keeps its own sort.",
+  "sorting_year": -331,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 331 BC (no higher-tier year available)."
+  },
+  "sort_order_within_year": 290,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "3673 331 Persian Empire falls to Alexander",
+      "year_am": 3673,
+      "year_bc_ad": -331,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": "Not applied to battle-of-gaugamela. Jones's line does not name the battle. The match was doubtful, so the battle was left on its previous sort."
+    }
+  ],
+  "people": [
+    "alexander-the-great"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "jones-chronology-ot-2026"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 280 (PDF p. 315)"
+    }
+  ],
+  "related": [
+    "battle-of-gaugamela"
+  ]
+}

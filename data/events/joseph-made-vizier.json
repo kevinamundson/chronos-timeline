@@ -41,13 +41,14 @@
     },
     {
       "source": "ussher-jones",
-      "date": null,
-      "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      "date": "2289 1715 Promotion of Joseph, age 30",
+      "year_am": 2289,
+      "year_bc_ad": -1715,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 278 (PDF p. 313)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": "Not stated in the Jones sources previously read (Chart No. 1; 15th ed., 2002). The 23rd ed. Appendix F prints this figure. CFAH anchor point 1716/1715 BC keeps the sort. Jones's 1715 BC falls inside that range."
     },
     {
       "source": "bible",
@@ -140,7 +141,8 @@
     "jordan-bc-5-8",
     "jordan-bc-2-7",
     "jordan-compilation-anno-mundi",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "jones-chronology-ot-2026"
   ],
   "free_source_links": [
     {
@@ -162,6 +164,11 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 278 (PDF p. 313)"
     }
   ],
   "related": [

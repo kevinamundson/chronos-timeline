@@ -4,7 +4,7 @@
   "type": "person",
   "title": "John the Baptist",
   "summary": "Forerunner of Jesus (Luke 1). Jones dates his birth at 5 BC.",
-  "description": "Son of Zacharias and Elisabeth. His father is not Zachariah king of Israel, and that priest has no record here. Jones, Appendix F, dates the birth. 3999 AM and 5 BC sum to 4004. NT/intertestamental Jones figure — scope pending Kevin’s ruling",
+  "description": "Son of Zacharias and Elisabeth. His father is not Zachariah king of Israel, and that priest has no record here. Jones, Appendix F, dates the birth. 3999 AM and 5 BC sum to 4004.",
   "sorting_year": -5,
   "sorting_basis": {
     "tier": "ussher-jones",
@@ -35,7 +35,7 @@
         "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
         "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
         "source_text_id": "jones-chronology-ot-2026",
-        "note": "NT/intertestamental Jones figure — scope pending Kevin’s ruling"
+        "note": null
       }
     ]
   },

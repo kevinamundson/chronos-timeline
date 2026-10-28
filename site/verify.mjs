@@ -108,7 +108,8 @@ function barsVisible(b) {
   });
   check('home: Adam renders as a lifespan bar', !!adam && adam.w > 30 && /4004 BC/.test(adam.label) && /3074 BC/.test(adam.label), JSON.stringify(adam));
   // Tier 1 has two people, so the People pane does not overflow until another tier is on.
-  await o.page.locator('[data-tier-toggle="t4"]').click();
+  // Jones (tier 3) now holds the patriarchs. Ussher (tier 4) has only a few people, so it does not overflow the pane.
+  await o.page.locator('[data-tier-toggle="t3"]').click();
   await o.page.waitForFunction(() => {
     const pe = document.querySelector('#timeline-people .vis-panel.vis-left');
     return pe && pe.scrollHeight - pe.clientHeight > 40;
@@ -132,9 +133,9 @@ function barsVisible(b) {
     pe: document.querySelector('#timeline-people .vis-panel.vis-left')?.scrollTop ?? null,
   }));
   check('home: People scroll bar moves only People', beforeScroll.peRoom > 20 && afterPeople.pe > afterEvents.pe + 10 && afterPeople.ev === afterEvents.ev, JSON.stringify({ afterEvents, afterPeople }));
-  await o.page.locator('[data-tier-toggle="t4"]').click();
+  await o.page.locator('[data-tier-toggle="t3"]').click();
   const tierRestored = await o.page.waitForFunction((n) => document.querySelectorAll('.vis-timeline .vis-item').length === n, tl, { timeout: 5000 }).then(() => true).catch(() => false);
-  check('home: Tier 4 toggle restores the chart', tierRestored);
+  check('home: Tier 3 toggle restores the chart', tierRestored);
   await o.page.evaluate(() => {
     for (const sel of ['#timeline-events .vis-panel.vis-left', '#timeline-people .vis-panel.vis-left']) {
       const el = document.querySelector(sel);

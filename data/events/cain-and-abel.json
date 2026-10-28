@@ -5,12 +5,12 @@
   "title": "Cain Murders Abel",
   "summary": "Cain, the firstborn of Adam and Eve, kills his brother Abel; God marks Cain, who goes to the land of Nod. Seth is later given \"instead of Abel\".",
   "description": "Genesis 4. Abel is commended in Heb 11:4.",
-  "sorting_year": -3874,
+  "sorting_year": -3875,
   "sorting_basis": {
-    "tier": "ussher",
-    "tier_rank": 4,
-    "chronology": "ussher",
-    "note": "Tier 4: Ussher, Annals: Before 130 AM / 3874 BC; \"man had been on the earth 128 years\" at the murder (no higher-tier year available)."
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 3875 BC (no higher-tier year available)."
   },
   "chronologies": [
     {
@@ -25,13 +25,14 @@
     },
     {
       "source": "ussher-jones",
-      "date": null,
-      "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "Not stated in the Jones sources read (Chart No. 1; Chronology of the Old Testament 15th ed. 2002, Chronological Compendium p. 1). Leave empty until verified."
+      "date": "129 3875 Cain slays Abel",
+      "year_am": 129,
+      "year_bc_ad": -3875,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 278 (PDF p. 313)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": "Not stated in the Jones sources previously read (Chart No. 1; 15th ed., 2002). The 23rd ed. Appendix F prints this figure."
     },
     {
       "source": "bible",
@@ -93,7 +94,8 @@
     "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-4",
-    "jordan-bc-6-3"
+    "jordan-bc-6-3",
+    "jones-chronology-ot-2026"
   ],
   "free_source_links": [
     {
@@ -105,6 +107,11 @@
       "source_id": "jordan-bc-6-4",
       "url": "https://biblicalhorizons.com/1994/04/01/6_04/",
       "locator": "§4 year list"
+    },
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 278 (PDF p. 313)"
     }
   ],
   "related": [

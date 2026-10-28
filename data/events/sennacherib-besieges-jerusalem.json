@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Sennacherib's siege of Jerusalem",
   "summary": "Sennacherib's siege of Jerusalem",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Kevin ruled (2026-10-27) that Jones's first invasion, as Tartan (713 BC), is this event. That Appendix F row sets the sort. Jones's second invasion (709 BC) is a separate record.",
   "sorting_year": -713,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 396): 713 BC. Pending owner decision (open question A8)."
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 713 BC (no higher-tier year available)."
   },
   "chronologies": [
     {
@@ -22,6 +22,17 @@
       "citation": null,
       "link": null,
       "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "3291 713 Sennacherib’s 1st invasion as Tartan",
+      "year_am": 3291,
+      "year_bc_ad": -713,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 279 (PDF p. 314)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": "Kevin ruled (2026-10-27) that Jones's first invasion, as Tartan (713 BC), is this event. The record sennacherib-first-invasion was merged here. Jones's second invasion (709 BC, as pro-rex) is sennacherib-second-invasion and does not set this year."
     },
     {
       "source": "generations",
@@ -72,21 +83,27 @@
     }
   ],
   "people": [
-    "hezekiah"
+    "hezekiah",
+    "sennacherib"
   ],
   "locations": [],
   "maps": [],
   "scripture_refs": [
-    "2Kgs.18.13-2Kgs.19.37"
+    "2Kgs.18.13-2Kgs.19.37",
+    "2Kgs.18.17"
   ],
   "sources": [
     "generations-preparing",
     "generations-preparing-2e",
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "jones-chronology-ot-2026"
   ],
-  "related": [],
+  "related": [
+    "sennacherib-second-invasion",
+    "angel-slays-the-assyrians"
+  ],
   "free_source_links": [
     {
       "source_id": "generations-preparing",
@@ -97,6 +114,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
       "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 279 (PDF p. 314)"
     }
   ]
 }

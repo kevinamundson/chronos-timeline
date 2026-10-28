@@ -7,10 +7,10 @@
   "description": "\"In the third month, when the children of Israel were gone forth out of the land of Egypt, the same day came they into the wilderness of Sinai\" (Exod 19:1). Jones reads \"the same day\" as the 3rd day of the 3rd month; Jordan as the 1st day.",
   "sorting_year": -1491,
   "sorting_basis": {
-    "tier": "ussher",
-    "tier_rank": 4,
-    "chronology": "ussher",
-    "note": "Tier 4: Ussher, Annals (1658): 1491 BC (no higher-tier year available)."
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1491 BC (no higher-tier year available)."
   },
   "sort_order_within_year": 2,
   "chronologies": [
@@ -23,6 +23,17 @@
       "citation": null,
       "link": null,
       "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "2513 1491 Exodus of Israelites, Law given",
+      "year_am": 2513,
+      "year_bc_ad": -1491,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 278 (PDF p. 313)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": "The row names the Exodus and the giving of the law in one line. The Exodus is on exodus, which already carries Jones's 1491 BC. This record is the arrival at Sinai, where the law is given. The 15th ed. day-and-month entry is kept."
     },
     {
       "source": "ussher-jones",
@@ -76,13 +87,19 @@
     "blb-biblehub",
     "jones-chronology-ot-2002",
     "ussher-annals-1658",
-    "jordan-bc-6-8"
+    "jordan-bc-6-8",
+    "jones-chronology-ot-2026"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/exodus/19.htm",
       "locator": "Exod.19.1-Exod.19.25 ; Exod.20.1-Exod.20.21"
+    },
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 278 (PDF p. 313)"
     }
   ],
   "related": [

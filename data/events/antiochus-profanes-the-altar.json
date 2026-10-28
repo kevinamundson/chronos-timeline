@@ -4,7 +4,7 @@
   "type": "event",
   "title": "Antiochus profanes the altar",
   "summary": "Jones dates Antiochus offering a sow on the altar.",
-  "description": "Jones dates Antiochus offering a sow on the altar. The year is the Appendix F figure, stored as printed. NT/intertestamental Jones figure — scope pending Kevin’s ruling",
+  "description": "Jones dates Antiochus offering a sow on the altar. The year is the Appendix F figure, stored as printed.",
   "sorting_year": -168,
   "sorting_basis": {
     "tier": "ussher-jones",
@@ -33,7 +33,7 @@
       "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
       "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "source_text_id": "jones-chronology-ot-2026",
-      "note": "NT/intertestamental Jones figure — scope pending Kevin’s ruling The row does not cite a verse. Daniel 11:31 is the obvious biblical text of a polluting of the sanctuary. persecution-under-antiochus-iv was not edited."
+      "note": "The row does not cite a verse. Daniel 11:31 is the obvious biblical text of a polluting of the sanctuary. persecution-under-antiochus-iv keeps its sort. The plunder is antiochus-plunders-the-temple."
     }
   ],
   "people": [

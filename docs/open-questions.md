@@ -20,14 +20,15 @@
    Every other cfah field is null and says "pending CFAH reference".
 2. **Edge cases in the sort rule.**
    - **ark-landing:** no tier gives a BC year (Ussher prints AM 1656 and "May 6" only), so it uses `derived` from the-flood (−2348).
-   - **cain-and-abel:** this now sorts at Ussher's −3874. That is a *latest-possible* date (before Seth's birth), not the event year.
+   - **cain-and-abel:** this now sorts at Jones's −3875 (Appendix F, 23rd ed., "129 3875 Cain slays Abel"; Kevin, 2026-10-27). The earlier Ussher sort, −3874, was a *latest-possible* date (before Seth's birth), not the event year.
    - **ham:** no tier dates his birth, so his sorting_year is null.
 
    Please confirm these conventions.
-3. **Ussher-Jones edition.** CFAH cites Jones 2019 (21st ed.). That free PDF (floydnolenjonesministries.com/files/135786316.pdf) returned 404.
-   I used the 15th ed. (2002, ntslibrary.com) and Jones's Chart No. 1 (© 1993, from the owner-supplied page https://floydnolenjonesministries.com/chronology/).
+3. **Ussher-Jones edition.** CFAH cites Jones 2019 (21st ed.). That free PDF (floydnolenjonesministries.com/files/135786316.pdf) returned 404 and was not used.
+   The earlier entries used the 15th ed. (2002, ntslibrary.com) and Jones's Chart No. 1 (© 1993, from the owner-supplied page https://floydnolenjonesministries.com/chronology/).
+   **Ruled 2026-10-27:** the 23rd ed. (Master Books, 2026), source `jones-chronology-ot-2026`, governs a ussher-jones year where it differs. The older figure stays in a note. See `docs/OPEN-QUESTIONS-FOR-KEVIN.md`, section M.
    The ministry page's "6 - Creation to Creator" link points to the Chart 5C file, so Chart 6 couldn't be read. Most charts in the 2002 PDF are images.
-   Only Creation (0 AM / 4004 BC), the Flood (1656 AM / 2348 BC) and the AM birth years in the "Chronological Compendium" (p. 1) were readable as text. No BC years are inferred from AM figures.
+   Only Creation (0 AM / 4004 BC), the Flood (1656 AM / 2348 BC) and the AM birth years in the "Chronological Compendium" (p. 1) were readable as text in that edition. No BC years are inferred from AM figures. Appendix F of the 23rd ed. prints both columns.
 4. **Jones vs CFAH-1 Table 1 on 1012 BC.** Jones's Chart 1 says that in 2992 AM / 1012 BC Solomon *begins* the Temple. CFAH-1 Table 1 lists 1012 as "Solomon *Dedicates* the Temple". This matters for a future Temple anchor.
 5. **The Ussher Flood year.** Ussher heads AM 1656 (when the Flood begins, Sunday 7 Dec) as **2349 BC**. Jones and CFAH give 2348 BC.
 6. **The Ussher Ark landing.** The 1658 text says "May 6". Many secondary sources say 5 May.
@@ -58,7 +59,7 @@
     - The backlog (`data/jordan-dates-extract.md`, Part A) has candidate new records: Arphaxad (1658), Terah (1878), Isaac (2108), Jacob (2168), Aaron (2430), the end of the Conquest (2560), the fall of Jerusalem (3425 / 505 SBC), and the decree of Cyrus (3474 / 456 SBC).
 22. **Judges period and Jordan's books (added 2026-10-17).**
     - Jordan's later monographs, *Studies in Biblical Chronology* Nos. 2-3 (2001; the owner's Drive copies are byte-identical to the free Theopolis PDFs), and seven garynorth.com books were added as sources. The new Judges/Samuel records (22 events plus Eli, Samson, Samuel and David) sort on Jones: Chart No. 4, 1993/2007, and the 2002 book. Three sort on CFAH-1 Table 1: the crossing of the Jordan, the division of the land and Gideon. Ussher and Jordan are display only.
-    - **Jones's chart vs his book:** Cushan begins in 1418 BC on Chart 4 but 1400 BC in *Chronology of the Old Testament* (2002, p. 91), a 26-year vs 44-year chasm after Joshua. The record sorts on the chart, which agrees with every later chart value, and gives both in its notes. The owner should confirm which Jones source governs.
+    - **Jones's chart vs his book:** Cushan begins in 1418 BC on Chart 4 but 1400 BC in *Chronology of the Old Testament* (2002, p. 91), a 26-year vs 44-year chasm after Joshua. **Ruled 2026-10-27:** the 23rd ed. governs. Page 88 and Appendix F ("2586 1418 Subjugation by Chushan-Rishathaim") agree with the chart at 1418 BC. The 15th edition's 1400 BC stays in the note and does not set the year.
     - **Jordan 1991 vs 2001:** Jordan's judges dates differ by 25-26 years, and Samuel's age at death is 110 vs 85. The 2001 figures are shown first. See `data/jordan-dates-extract.md`, Part 2 C.
     - ~~**Unknown-author Drive file**~~ **RESOLVED 2026-10-18:** the owner confirmed that "Anno Mundi_Chronology_Studies2.pdf" is an accurate compilation of Jordan's system, and the compiler is unnamed. Its correct Drive id is 1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS; the id given here earlier, 11zUl..., is the owner's copy of *From Creation to Solomon*. It is now source `jordan-compilation-anno-mundi` and the secondary display chronology `jordan-compilation`. That chronology is not a sort tier and is kept separate from `jordan`. Its figures are attached to 67 records (92 entries) with page citations, and each entry notes where it differs from Jordan's own published figure.
     - Jordan's *Judges* (1985) explicitly gives no chronology, and the C&C symposia contain essays by other authors; only Jordan's own essays are reproduced in `sources/jordan/books/`.
