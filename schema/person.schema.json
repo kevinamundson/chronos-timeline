@@ -9,7 +9,7 @@
   "properties": {
     "type": { "const": "person" },
     "alt_names": { "type": "array", "items": { "type": "string" } },
-    "sorting_year": { "type": ["integer", "null"], "description": "CFAH-weighted birth year (negative = BC); null if no chronology dates the birth." },
+    "sorting_year": { "type": ["integer", "null"], "description": "Sort year (negative = BC). A tier-ranked birth year when dates.birth has one; otherwise the reign-start year when dates.reign has a tier 1–4 year_bc_ad. Null when neither does. No year is derived." },
     "sorting_basis": { "$ref": "common.schema.json#/$defs/sortingBasis" },
     "standby": { "$ref": "common.schema.json#/$defs/standbyPlacement", "description": "Optional placement when sorting_year is null. Never a sort year. Removed when a tier date arrives." },
     "father": { "anyOf": [ { "$ref": "common.schema.json#/$defs/slug" }, { "type": "null" } ] },
@@ -32,7 +32,7 @@
         "birth": { "$ref": "common.schema.json#/$defs/chronologyEntries" },
         "death": { "$ref": "common.schema.json#/$defs/chronologyEntries" },
         "translated": { "$ref": "common.schema.json#/$defs/chronologyEntries" },
-        "reign": { "$ref": "common.schema.json#/$defs/chronologyEntries", "description": "Reign (accession, length, end). Display only: never used for sorting, which uses birth." }
+        "reign": { "$ref": "common.schema.json#/$defs/chronologyEntries", "description": "Reign (accession, length, end). When no tier-ranked birth year is stored, the start year (year_bc_ad) from a tier 1–4 entry sets sorting_year and sorting_basis.slot is reign_start. A tier birth still wins. Display-only chronologies in this slot never set the sort." }
       }
     },
     "dynasty": { "type": "string", "minLength": 1, "description": "Dynasty or ruling house (CFAH king lists); see data/king-lists.json." },

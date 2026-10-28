@@ -256,7 +256,7 @@
         "chronology",
         "note"
       ],
-      "description": "Which tier of the sorting fallback produced sorting_year: 1 cfah-anchor, 2 cfah-table1, 3 ussher-jones, 4 ussher; \"derived\" (copied from derived_from) or \"none\" (null) only when no tier gives a BC year. \"provisional\" (tier_rank null, chronology generations) = PROVISIONAL sort from the Generations curriculum, allowed only when no tier 1-4 year exists (AD church/missions history); badged on the site and pending owner decision (docs/OPEN-QUESTIONS-FOR-KEVIN.md A-GEN).",
+      "description": "Which tier of the sorting fallback produced sorting_year: 1 cfah-anchor, 2 cfah-table1, 3 ussher-jones, 4 ussher; \"derived\" (copied from derived_from) or \"none\" (null) only when no tier gives a BC year. \"provisional\" (tier_rank null, chronology generations) = PROVISIONAL sort from the Generations curriculum, allowed only when no tier 1-4 year exists (AD church/missions history); badged on the site and pending owner decision (docs/OPEN-QUESTIONS-FOR-KEVIN.md A-GEN). slot names the date slot that set the year: reign_start (the stored start year on dates.reign) or birth. Omitted on events and on people sorted from birth.",
       "properties": {
         "tier": {
           "enum": [
@@ -279,6 +279,10 @@
         },
         "chronology": {
           "$ref": "#/$defs/slug"
+        },
+        "slot": {
+          "enum": ["birth", "reign_start"],
+          "description": "Which slot set sorting_year. reign_start = the year_bc_ad already stored on dates.reign (the reign start). birth = a tier-ranked dates.birth year. Absent means birth, or an event chronology. Display-only sources never set either."
         },
         "derived_from": {
           "$ref": "#/$defs/slug"

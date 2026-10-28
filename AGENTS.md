@@ -81,7 +81,7 @@ Fallbacks:
 - CFAH ruler dates with basis `paper_text`
 - **every new source you add**
 
-A person's `dates.reign` is display-only; people sort on birth.
+People sort on a tier-ranked birth year when `dates.birth` has one. A person who has a `dates.reign` slot and no tier-ranked birth year sorts on the start year already stored on that reign (`year_bc_ad`). The same four tiers choose it. Within Ussher–Jones, the 23rd edition (2026) governs over an older Jones edition. Display-only sources never set it, and a reign length is never turned into a year. `sorting_basis.slot` is `reign_start` when the reign start sets the sort. It is omitted when the sort comes from birth. Kevin's ruling, 2026-10-28 (open question M3).
 
 **Standby placement (not a sort tier).** Records with no tier date get a standby placement (source-printed BC/AD year, else the linked record's year); it never sets sort; it is replaced automatically when a tier date arrives. The optional `standby` object is written by `scripts/standby/compute.mjs`. It never changes `sorting_year` or `sorting_basis`.
 

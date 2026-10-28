@@ -11,6 +11,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { SRC, SHORT, MARK, LISTING, citation } from './edition.mjs';
 import { events as NEW_EVENTS, people as NEW_PEOPLE } from './records.mjs';
+import { personTierSort, reignSortBasis } from '../sort-rule.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..', '..'); const DATA = join(root, 'data');
@@ -98,8 +99,10 @@ for (const [id, r] of Object.entries(recs)) {
   const entries = d.type === 'event' ? d.chronologies : d.dates.birth;
   const t = tierOf(entries); const g = genOf(entries);
   const mc = entries.find((e) => e.source === 'morecraft' && e.year_bc_ad != null);
+  const reign = d.type === 'person' ? personTierSort(d) : null;
   let next;
   if (t) next = [t.e.year_bc_ad, { tier: t.tier, tier_rank: t.rank, chronology: t.chron, note: `Tier ${t.rank}: ${t.e.date}` }];
+  else if (reign?.slot === 'reign_start') next = [reign.year, reignSortBasis(reign)];
   else if (g) next = [g.year_bc_ad, { tier: 'provisional', tier_rank: null, chronology: 'generations', note: `PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations: ${g.date}. Pending owner decision (open question A8).` }];
   else if (mc) next = [mc.year_bc_ad, { tier: 'provisional', tier_rank: null, chronology: 'morecraft', note: `PROVISIONAL: no CFAH, Ussher–Jones, Ussher or Generations date exists, so the sort uses Morecraft (${mc.citation}): ${mc.date.replace(/\.$/, "")}. Pending owner decision (open question F1).` }];
   else if (d.type === 'person') next = [null, { tier: 'none', tier_rank: null, chronology: 'cfah', note: 'No tier gives a birth year, and Morecraft gives none.' }];

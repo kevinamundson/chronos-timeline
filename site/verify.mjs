@@ -7,6 +7,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { serve } from './serve.mjs';
 import { loadStandbyCounts, standbySummaryLine } from '../scripts/standby/compute.mjs';
+import { SENNACHERIB_REDIRECT, redirectsFileHasSennacherib } from '../scripts/redirects.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const SHOTS = join(here, 'screenshots');
@@ -789,6 +790,24 @@ for (const [path, shot, sel] of [
   }, null, { timeout: 15000 }).then(() => true).catch(() => false);
   check('sinai: popover shows Exodus 19 and 20', ready);
   check('sinai: no console errors', o.errors.length === 0, o.errors.join(' | '));
+  await o.ctx.close();
+}
+// Reign-start sort is named on the person page. The old Sennacherib URL 301s.
+{
+  const redirectFile = readFileSync(join(here, 'dist/_redirects'), 'utf8');
+  check('redirect file: Sennacherib 301 is in dist/_redirects', redirectsFileHasSennacherib(redirectFile), redirectFile.trim());
+  const ctx = await browser.newContext();
+  const resp = await ctx.request.get(`${BASE}/events/sennacherib-first-invasion/`, { maxRedirects: 0 });
+  const location = resp.headers()['location'] || '';
+  check('redirect: /events/sennacherib-first-invasion/ is 301', resp.status() === 301, `status ${resp.status()} location ${location}`);
+  check('redirect: target is /events/sennacherib-besieges-jerusalem/', location === '/events/sennacherib-besieges-jerusalem/', location);
+  check('redirect: line matches the build', SENNACHERIB_REDIRECT.startsWith('/events/sennacherib-first-invasion/'));
+  await ctx.close();
+  const o = await open('/people/ahab/');
+  const sortText = await o.page.locator('.sortbox').innerText();
+  check('ahab: page says Sorted by reign start (Ussher–Jones)', /Sorted by reign start \(Ussher–Jones\)/.test(sortText), sortText.slice(0, 240));
+  check('ahab: the reign row sets the sort year', (await o.page.locator('#reign tr.is-sort .flag-sort').count()) === 1);
+  check('ahab: HTTP 200, no console errors', o.status === 200 && o.errors.length === 0, o.errors.join(' | '));
   await o.ctx.close();
 }
 await browser.close();

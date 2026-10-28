@@ -12,6 +12,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, unlinkSync } from
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { BOOKS } from './books.mjs';
+import { personTierSort, reignSortBasis } from '../sort-rule.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..', '..');
@@ -46,6 +47,19 @@ function resort(doc) {
   if (t) { // tiers 1-4 own the sort; a record rebuilt here keeps the sort its tier entry gives (e.g. a CFAH anchor added by another import)
     if (doc.sorting_basis?.tier !== t.tier || doc.sorting_year !== t.y) { const e = entries.find((x) => x.year_bc_ad === t.y && x.source === t.chron); const ap = e?.citation?.match(/AP-\d+/)?.[0]; doc.sorting_year = t.y; doc.sorting_basis = { tier: t.tier, tier_rank: t.rank, chronology: t.chron, note: t.tier === 'cfah-anchor' ? `Tier 1: CFAH anchor point: ${e.date}${ap ? ` (${ap})` : ''}` : `Tier ${t.rank}: ${e?.date}` }; }
     return;
+  }
+  // No tier birth (or, for an event, no tier year). A reign start still outranks a provisional birth.
+  if (doc.type === 'person') {
+    const reign = personTierSort(doc);
+    if (reign?.slot === 'reign_start') {
+      const next = reignSortBasis(reign);
+      const b = doc.sorting_basis || {};
+      if (doc.sorting_year !== reign.year || b.tier !== reign.tier || b.tier_rank !== reign.rank || b.chronology !== reign.chronology || b.slot !== 'reign_start') {
+        doc.sorting_year = reign.year;
+        doc.sorting_basis = next;
+      }
+      return;
+    }
   }
   const b = doc.sorting_basis;
   if (b?.tier === 'derived') return;

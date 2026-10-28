@@ -35,7 +35,7 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   - The compilation's own BC column is a flat 4010 − AM: Creation 4010, Flood 2354, Abraham enters Canaan 1927, Exodus 1497, Othniel 1382, Saul 1101, Temple 1010 BC. These figures are displayed, not used for sorting.
   - **Correction:** the Drive id passed along earlier (11zUlqRaS-…) is actually your copy of Jordan's *From Creation to Solomon*. The compilation is id **1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS**. Its Drive link only works for you, so the source is marked `access: private-copy`; see C6.
 - ~~Sort-tier fallback~~ (decided 2026-10-17): CFAH anchor point > CFAH-1 Table 1 > Ussher–Jones > Ussher.
-- ~~Jones scope, edition, and same-event sort~~ (ruled 2026-10-27): section M. Jones sets the sort wherever no CFAH year is present, including the intertestamental period and the New Testament. The 23rd edition (2026) governs where its figure differs. A Jones row sets a sort only for the same event. Reign-start sorting (M3) stays open.
+- ~~Jones scope, edition, and same-event sort~~ (ruled 2026-10-27): section M. Jones sets the sort wherever no CFAH year is present, including the intertestamental period and the New Testament. The 23rd edition (2026) governs where its figure differs. A Jones row sets a sort only for the same event. Reign-start sorting (M3) was resolved on 2026-10-28.
 
 ---
 
@@ -1039,11 +1039,11 @@ Applied on `gb/jones-sort`. The tier order is unchanged: a CFAH anchor point, th
 
 1. Jones sets the sort for any record with no CFAH year. That covers the Old Testament, the intertestamental period, and the New Testament. Where a CFAH or Table 1 year is present, that year keeps the sort and Jones stays on display.
 2. A Jones row sets a record's sort only when it names the same event. A row that names a different event is display only, or its own record, and does not move the other record.
-3. Sennacherib's 713 BC "1st invasion as Tartan" is `sennacherib-besieges-jerusalem`. The record `sennacherib-first-invasion` was merged into that slug. The site has no event-slug redirect, so none was added. The 709 BC "2nd invasion as pro-rex" is the separate record `sennacherib-second-invasion`. It does not set the siege.
+3. Sennacherib's 713 BC "1st invasion as Tartan" is `sennacherib-besieges-jerusalem`. The record `sennacherib-first-invasion` was merged into that slug. On 2026-10-28 Kevin ruled that `/events/sennacherib-first-invasion/` redirects there (301). The alias stays on the event, and the build writes `site/dist/_redirects`. The 709 BC "2nd invasion as pro-rex" is the separate record `sennacherib-second-invasion`. It does not set the siege.
 4. The 23rd edition governs a ussher-jones year where it differs from the 15th edition or the charts. The older figure stays in a note with its citation. AD years stay as printed. Exception: Othniel, Ehud, and Deborah and Barak keep the oppression-start years 1418, 1378, and 1298 BC. The 23rd-edition deliverance years (1410, 1360, and 1278) stay in the notes.
 5. Jones's birth years set the sort for the undated people in M4. Sarah's printed pair is AM 2018 and 1987 BC. Both figures are stored. The sort uses the printed 1987 BC, and the mismatch is flagged.
 6. Where the Jones year matches the year already stored, and the row is the same event, the tier is `ussher-jones` and the citation is the 23rd edition.
-7. Do not sort a king or a judge on a reign-start year. M3 stays open. No validator change.
+7. Reign-start sorting was left open on 2026-10-27 and resolved on 2026-10-28. See M3. A person with `dates.reign` and no tier-ranked birth year sorts on the reign start. A tier-ranked birth year still wins.
 8. The notes that said the New Testament and intertestamental scope was pending were removed.
 
 ### M1. New Testament and intertestamental scope — closed 2026-10-27
@@ -1058,11 +1058,12 @@ Existing ussher-jones entries still cite the 15th edition (2002) or the charts. 
 - **Recommendation:** keep both source ids. Do not retarget old citations in this pass.
 - **Kevin's ruling:** where the 23rd edition prints a different year for the same event, that year governs the ussher-jones entry and the sort. The older figure stays in a note. Citations were not bulk-retargeted where the figure is the same. The 15th-edition source id stays. For the patriarch births, the 15th-edition compendium printed an AM and no BC. That AM-only entry is kept. The 23rd edition's printed BC is the new entry in front of it, and it sets the tier. No AM was converted. Cushan stays 1418 BC (A2). Othniel, Ehud, and Deborah and Barak keep their oppression-start years by the exception in ruling 4.
 
-### M3. Reign-start sorting — still open
-The new northern kings and Roman emperors have an accession and no birth year. They stay tier `none`, with `sorting_year` null. Standby shows the accession, or the death where a death is printed, because the death slot is read before reign. Appendix F prints no end years, so no spans were stored. That includes Trajan's "until AD 117", Zimri's 7 days, and Shallum's 1 month.
+### M3. Reign-start sorting — resolved 2026-10-28
+The northern kings and Roman emperors added in the Jones pass have an accession and no birth year. Appendix F prints no end years, so no spans were stored. That includes Trajan's "until AD 117", Zimri's 7 days, and Shallum's 1 month.
 - **Question:** should a reign start sort a person who has no birth year?
-- **Recommendation:** no. That would need a validator change. Not in this pass.
-- **Kevin's ruling, 2026-10-27:** do not sort on reign-start years. No validator change. Whether a later pass should do so stays open.
+- **Recommendation (2026-10-27):** no. That would need a validator change. Not in that pass.
+- **Kevin's ruling, 2026-10-27:** do not sort on reign-start years yet. Whether a later pass should do so stayed open.
+- **Kevin's ruling, 2026-10-28:** a person whose record has a `dates.reign` slot, and who has no tier-ranked birth year, sorts on the start year of the reign. The year is the `year_bc_ad` already stored on that slot. It is not derived from a length. Tier order is unchanged: a CFAH anchor point, then CFAH-1 Table 1, then Ussher–Jones, then Ussher. Only those four tiers may set it. Within Ussher–Jones, the 23rd edition (2026) governs over an older Jones edition. Display-only sources stay display-only. A tier-ranked birth year still wins over a reign start. `sorting_basis.slot` is `reign_start` when the reign start sets the sort, and is omitted when the sort comes from birth. The person page says which one, for example "Sorted by reign start (Ussher–Jones)". Records already sorted from a birth year are not changed. Othniel, Ehud, and Deborah and Barak remain events. Their oppression-start years stand. Judges stay in `dates.reign`. A judge sorts on a reign start only when that slot already holds a tier 1–4 year.
 
 ### M4. Printed AM and BC/AD that do not match
 Jones's own rule is that a BC number added to its AM counterpart yields 4004. Where the printed pair does not, both figures are stored and neither was adjusted. The sort uses the printed BC or AD year.
@@ -1079,7 +1080,7 @@ Jones's own rule is that a BC number added to its AM counterpart yields 4004. Wh
 - Job is Issachar's third son (Gen 46:13), on `job`, not `jobab`. The trial and the death print "year fairly accurate".
 - Promise of Isaac is a new event. It was not added to `covenant-of-circumcision`.
 - Founding of Solomon's Temple, 1012 BC, is a new event. It was not placed on `temple-dedication`. The 23rd edition's dedication line ("3000 1004 Dedication of Solomon's Temple") is now on `temple-dedication` as display only. CFAH-1 Table 1, 1012 BC, keeps the sort.
-- Sennacherib's first invasion (713) was first entered as `sennacherib-first-invasion`. On 2026-10-27 Kevin ruled that it is the same event as `sennacherib-besieges-jerusalem`. The new record was merged into the existing slug. The 185,000 (709) stays `angel-slays-the-assyrians`. The second invasion (709, as pro-rex) is `sennacherib-second-invasion` and does not set the siege.
+- Sennacherib's first invasion (713) was first entered as `sennacherib-first-invasion`. On 2026-10-27 Kevin ruled that it is the same event as `sennacherib-besieges-jerusalem`. The new record was merged into the existing slug. On 2026-10-28 the old URL redirects there. The 185,000 (709) stays `angel-slays-the-assyrians`. The second invasion (709, as pro-rex) is `sennacherib-second-invasion` and does not set the siege.
 - Artaxerxes' decree was not linked to `artaxerxes-longimanus` or `artaxerxes-mnemon`.
 - Ahasuerus is linked to `darius-i`. Jones prints "Darius I". `xerxes` was not used.
 - The Shalmaneser who besieges Samaria was not linked to `shalmaneser-i`.

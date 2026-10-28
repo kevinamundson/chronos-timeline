@@ -5,19 +5,13 @@
   "title": "Nerva",
   "summary": "Roman emperor. Jones dates his accession. He is not named in Scripture.",
   "description": "Roman emperor. Jones dates his accession. He is not named in Scripture. Appendix F prints no end year, so no span is stored.",
-  "sorting_year": null,
+  "sorting_year": 96,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year."
-  },
-  "standby": {
-    "year_bc_ad": 96,
-    "basis": "source-printed",
-    "source_chronology": "ussher-jones",
-    "from_record": null,
-    "note": "Standby placement only. Ussher-Jones (Floyd Nolen Jones, The Chronology of the Old Testament) prints this BC/AD year on the reign entry (4099 96 Nerva becomes Roman Emperor). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Ussher–Jones). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: 4099 96 Nerva becomes Roman Emperor."
   },
   "father": null,
   "children": [],
