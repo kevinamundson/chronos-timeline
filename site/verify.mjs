@@ -9,6 +9,7 @@ import { serve } from './serve.mjs';
 import { loadStandbyCounts, standbySummaryLine } from '../scripts/standby/compute.mjs';
 import { SENNACHERIB_REDIRECT, redirectsFileHasSennacherib } from '../scripts/redirects.mjs';
 import { checkRowMerge } from './row-merge-check.mjs';
+import { checkFootnotes } from './footnote-check.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const SHOTS = join(here, 'screenshots');
@@ -25,6 +26,16 @@ const check = (name, ok, detail = '') => { results.push(`${ok ? 'PASS' : 'FAIL'}
   try { rowErrors = checkRowMerge(join(here, 'dist')).errors; }
   catch (e) { rowErrors = [String(e)]; }
   check('row merge: one spelling row, one author row, footnotes closed', rowErrors.length === 0, rowErrors.slice(0, 6).join(' | '));
+}
+{
+  let foot = null;
+  try { foot = checkFootnotes(join(here, 'dist')); }
+  catch (e) { foot = { errors: [String(e)], footnoteLists: 0, tipnrPages: 0, byClass: {} }; }
+  const classes = Object.entries(foot.byClass || {}).map(([k, n]) => `${k}: ${n}`).join(', ');
+  const footErrors = foot.footnoteErrors || foot.errors || [];
+  const idErrors = foot.idErrors || [];
+  check('footnotes: one visible number, no ol marker beside the back-link', footErrors.length === 0 && foot.footnoteLists > 0, footErrors.length ? footErrors.slice(0, 6).join(' | ') : `${foot.footnoteLists} lists (${classes})`);
+  check('footnotes: every TIPNR id is protected from email obfuscation', idErrors.length === 0 && foot.tipnrPages > 0, idErrors.length ? idErrors.slice(0, 6).join(' | ') : `${foot.tipnrPages} pages`);
 }
 
 async function open(path, { width = 1280, height = 900, shot, fullPage = true, scheme = 'light' } = {}) {
@@ -949,8 +960,33 @@ for (const [path, shot, sel] of [
         };
       });
       check(`${tag}: marker opens the note and leaves the family chart closed`, opened.open && opened.inView && opened.cited && !opened.family && familyClosed, JSON.stringify(opened));
+      const once = await page.locator('#abraham-name-notes ol.name-notes').evaluate((ol) => {
+        const rows = [...ol.querySelectorAll(':scope > li')].map((li) => {
+          const a = li.querySelector(':scope > a.fn');
+          const clone = a ? a.cloneNode(true) : null;
+          clone?.querySelectorAll('.visually-hidden').forEach((n) => n.remove());
+          const num = clone ? clone.textContent.replace(/\s+/g, ' ').trim() : '';
+          const text = li.innerText.replace(/\s+/g, ' ').trim();
+          const box = a ? a.getBoundingClientRect() : null;
+          return {
+            num,
+            text,
+            marker: getComputedStyle(li, '::marker').content,
+            liType: getComputedStyle(li).listStyleType,
+            visible: !!box && box.width > 4 && box.height > 4,
+            hidden: a?.querySelector('.visually-hidden')?.textContent || '',
+            href: a?.getAttribute('href') || '',
+            id: li.id,
+          };
+        });
+        return { type: getComputedStyle(ol).listStyleType, rows };
+      });
+      // list-style: none keeps ::marker content at "normal" and paints no glyph. A decimal marker would set listStyleType to "decimal".
+      const onceOk = once.type === 'none' && once.rows.length >= 2 && once.rows.every((r) => /^\d+$/.test(r.num) && r.liType === 'none' && r.marker !== 'counter(list-item)' && r.visible && r.hidden.includes('Back to footnote') && r.href.endsWith(`-fnref-${r.num}`) && r.id.endsWith(`-fn-${r.num}`) && !new RegExp(`(?:^|\\s)${r.num}\\s+${r.num}\\b`).test(r.text));
+      check(`${tag}: footnote number prints once`, onceOk, JSON.stringify(once).slice(0, 500));
       if (engine === 'chromium' && width === 390 && scheme === 'light') {
         await shot(page, '#name', join(SHOTS, 'abraham-name-390-open.png'));
+        await shot(page, '#abraham-name-notes', join(SHOTS, 'abraham-footnotes-390.png'));
       }
       await ctx.close();
     }
