@@ -686,83 +686,114 @@ for (const [path, shot, sel] of [
   check('chronologies: Raleigh card links to A Chronological Table', href === 'A Chronological Table', href);
   await o.ctx.close();
 }
-// CFAH OSF series: indented sub-list under the project entry. Titles and URLs are the OSF API values stored on the sources.
+// CFAH list: Answers Research Journal and OSF Preprint, each with Responses. Copies carry a tag.
 {
-  const expected = [
-    ['CFAH-1: Problem, Data, and Methodology', 'https://osf.io/fm4w2/'],
-    ['CFAH-2: Founding of the Nations', 'https://osf.io/8s6gt/'],
-    ['CFAH-3: Anchor Points of Ancient History', 'https://osf.io/6hpbq/'],
-    ['CFAH-4: Dating Creation and the Deluge', 'https://osf.io/t7sx5/'],
-    ['CFAH-5: The Babylonian Dynasties of Berossus', 'https://osf.io/bjk8g/'],
-    ['CFAH-6: The Old and Middle Kingdoms of Egypt', 'https://osf.io/hp3fg/'],
-    ['CFAH-7: A Chronological Baseline for the Old and Middle Kingdoms of Egypt', 'https://osf.io/gmx5j/'],
-    ['CFAH-7A: The Method for Finding a Baseline Demonstrated on Dynasty 12', 'https://osf.io/t3vu5/'],
-    ['CFAH-7B: Kings of Dynasties 1-13', 'https://osf.io/tuwnc/'],
-    ['CFAH-8: Placing Dynasties 15-18', 'https://osf.io/z5rtd/'],
-    ['CFAH-9: The 19th and 26th Dynasties of Egypt', 'https://osf.io/hv3b2/'],
-    ['CFAH-10: The Libyan-Cushite Intermediate Period', 'https://osf.io/fg4dv/'],
-    ['CFAH-11: Dynasties 20 and 21', 'https://osf.io/ksaz9/'],
-    ['CFAH-13: The Hittites, Cimmerians, and Medes', 'https://osf.io/bcwg2/'],
-    ['CFAH-14: Ancient Assyria', 'https://osf.io/9fuw2/'],
-    ['CFAH-15: Sumer, Akkad, and Babylon', 'https://osf.io/vynju/'],
-    ['CFAH-16: The Kings of Israel and Judah', 'https://osf.io/yv29c/'],
-    ['CFAH-17: The Ancient Chronologies of India and China', 'https://osf.io/j4nxu/'],
-    ['CFAH-18: The Ancient Chronology of Ireland', 'https://osf.io/28p43/'],
-    ['CFAH-19: The Historical Ice Age', 'https://osf.io/a5g6x/'],
-    ['CFAH Response to Tweedy\'s Ice Age Paper', 'https://osf.io/dfkbm/'],
-  ];
-  const readSeries = () => {
-    const blocks = [...document.querySelectorAll('#cfah-project-osf > ul.series-links, #cfah li > ul.series-links')];
-    return blocks.map((ul) => [...ul.querySelectorAll(':scope > li')].map((li) => {
-      const anchors = [...li.querySelectorAll(':scope > a, :scope > .series-preprint a')];
-      const main = li.querySelector(':scope > a');
+  const GENERIC = new Set(['pdf', 'download', 'preprint', 'link', 'here', 'file', 'paper', 'osf', 'source', 'open', 'read', 'article', 'copy', 'duplicate', 'alternate', 'archived']);
+  const readLists = () => {
+    const linkText = (a) => (a ? [...a.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join('') : '').replace(/\s+/g, ' ').trim();
+    const itemOf = (li) => {
+      const a = li.querySelector(':scope > a');
+      const copies = [...li.querySelectorAll(':scope > ul.cfah-copies > li')].map(itemOf);
       return {
-        text: main ? [...main.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join('').replace(/\s+/g, ' ').trim() : '',
-        href: main?.getAttribute('href') || '',
-        target: main?.getAttribute('target') || '',
-        rel: main?.getAttribute('rel') || '',
-        hidden: main?.querySelector('.visually-hidden')?.textContent || '',
-        extra: anchors.slice(1).map((a) => a.getAttribute('href')),
+        text: linkText(a),
+        href: a?.getAttribute('href') || '',
+        target: a?.getAttribute('target') || '',
+        rel: a?.getAttribute('rel') || '',
+        hidden: a?.querySelector('.visually-hidden')?.textContent || '',
+        tag: li.querySelector(':scope > .tag-copy')?.textContent?.trim() || '',
+        copies,
+      };
+    };
+    return [...document.querySelectorAll('#cfah-platforms, #cfah-platforms-sources')].map((ul) => [...ul.querySelectorAll(':scope > li.cfah-platform')].map((sec) => {
+      const head = sec.querySelector(':scope > a');
+      const responses = sec.querySelector(':scope > ul.links > li.cfah-responses');
+      return {
+        head: linkText(head),
+        href: head?.getAttribute('href') || '',
+        target: head?.getAttribute('target') || '',
+        rel: head?.getAttribute('rel') || '',
+        hidden: head?.querySelector('.visually-hidden')?.textContent || '',
+        papers: [...sec.querySelectorAll(':scope > ul.links > li:not(.cfah-responses)')].map(itemOf),
+        responseLabel: responses?.querySelector(':scope > .cfah-responses-label')?.textContent?.trim() || '',
+        responses: responses ? [...responses.querySelectorAll(':scope > ul.links > li')].map(itemOf) : [],
       };
     }));
   };
+  const walk = (items, out = []) => {
+    for (const item of items) {
+      out.push(item);
+      if (item.copies?.length) walk(item.copies, out);
+    }
+    return out;
+  };
   const o = await open('/chronologies/', { width: 390, height: 844 });
-  const series = await o.page.evaluate(readSeries);
-  // Document order: the CFAH chronology card, then the All free sources entry.
-  const underCard = series[0] || [];
-  const underSources = series[1] || [];
+  const lists = await o.page.evaluate(readLists);
+  const underCard = lists[0] || [];
+  const underSources = lists[1] || [];
   const same = JSON.stringify(underCard) === JSON.stringify(underSources);
-  check('chronologies: CFAH OSF sub-list exists under the project entry', underCard.length > 0 && underSources.length > 0 && same, `card ${underCard.length}, sources ${underSources.length}`);
-  const osf = underSources.every((row) => /^https:\/\/([a-z0-9-]+\.)?osf\.io\//.test(row.href) && row.extra.every((h) => /^https:\/\/([a-z0-9-]+\.)?osf\.io\//.test(h)));
-  check('chronologies: every CFAH OSF series link is an osf.io URL', osf && underSources.length === expected.length, underSources.map((r) => r.href).join(' '));
-  const a11y = underSources.every((row) => row.target === '_blank' && row.rel.includes('noopener') && row.hidden === ' (opens in a new tab)');
-  check('chronologies: CFAH OSF series links say they open in a new tab', a11y);
-  const got = underSources.map((r) => [r.text, r.href]);
-  check('chronologies: CFAH OSF series order and titles', JSON.stringify(got) === JSON.stringify(expected), got.map((r) => r[0]).join(' | '));
+  check('chronologies: CFAH list appears under the chronology and in All free sources', underCard.length === 2 && underSources.length === 2 && same, `card ${underCard.length}, sources ${underSources.length}`);
+  const heads = underCard.map((s) => [s.head, s.href]);
+  check('chronologies: CFAH sections are Answers Research Journal and OSF Preprint', JSON.stringify(heads) === JSON.stringify([
+    ['Answers Research Journal', 'https://answersresearchjournal.org/chronology/'],
+    ['OSF Preprint', 'https://osf.io/prhfz'],
+  ]), JSON.stringify(heads));
+  const responseLabels = underCard.map((s) => s.responseLabel);
+  check('chronologies: both CFAH sections have a Responses subsection', responseLabels.length === 2 && responseLabels.every((label) => label === 'Responses') && underCard.every((s) => s.responses.length > 0), responseLabels.join(' | '));
+  const links = [
+    ...underCard.map((s) => ({ text: s.head, href: s.href, target: s.target, rel: s.rel, hidden: s.hidden, tag: '' })),
+    ...walk(underCard.flatMap((s) => [...s.papers, ...s.responses])),
+  ];
+  const generic = links.filter((row) => row.text.length < 8 || GENERIC.has(row.text.toLowerCase()));
+  check('chronologies: every CFAH link text is the article or section name', generic.length === 0, generic.map((row) => row.text).join(' | '));
+  const allCopies = walk(underCard.flatMap((s) => [...s.papers, ...s.responses])).filter((row) => row.tag);
+  check('chronologies: every CFAH copy has a tag', allCopies.length > 0 && allCopies.every((row) => row.tag && row.tag !== row.text), `${allCopies.length} tags`);
+  const hostOk = (href) => {
+    try {
+      const host = new URL(href).host;
+      return host === 'answersresearchjournal.org' || host === 'osf.io';
+    } catch { return false; }
+  };
+  const badHost = links.filter((row) => !hostOk(row.href));
+  check('chronologies: every CFAH URL is answersresearchjournal.org or osf.io', badHost.length === 0, badHost.map((row) => row.href).join(' '));
+  const a11y = links.every((row) => row.target === '_blank' && row.rel.includes('noopener') && row.hidden === ' (opens in a new tab)');
+  check('chronologies: CFAH links say they open in a new tab', a11y);
+  const arj = underCard[0];
+  const osf = underCard[1];
+  const osgood = arj?.responses.find((row) => row.href.includes('comments-1'));
+  check('chronologies: ARJ comment names its author', !!osgood && osgood.text.endsWith('— A. John M. Osgood'), osgood?.text || '');
+  const gmx = osf?.papers.find((row) => row.href === 'https://osf.io/gmx5j/');
+  const older = gmx?.copies.find((row) => row.href === 'https://osf.io/t3vu5/');
+  check('chronologies: gmx5j uses the current OSF title and nests the older CFAH-7A copy', gmx?.text === 'CFAH-7: A Chronological Baseline for the Old and Middle Kingdoms of Egypt' && older?.tag === 'older version' && older.text.startsWith('CFAH-7A:'), `${gmx?.text || ''} / ${older?.tag || ''} ${older?.text || ''}`);
+  const tweedyInPapers = osf?.papers.some((row) => row.href === 'https://osf.io/dfkbm/');
+  const tweedy = osf?.responses.find((row) => row.href === 'https://osf.io/dfkbm/');
+  check('chronologies: Tweedy ice-age response is under OSF Responses', !tweedyInPapers && tweedy?.text === "CFAH Response to Tweedy's Ice Age Paper", tweedy?.text || '');
+  const pdfs = allCopies.filter((row) => row.tag === 'PDF');
+  check('chronologies: OSF paper files are tagged PDF', pdfs.length >= 20 && pdfs.every((row) => row.href.startsWith('https://osf.io/')), String(pdfs.length));
+  check('chronologies: Beckman reply is not in the CFAH list', !links.some((row) => row.href.includes('5b64m')));
   const fit = await o.page.evaluate(() => {
     const vw = document.documentElement.clientWidth;
-    const lists = [...document.querySelectorAll('#cfah-project-osf > ul.series-links, #cfah ul.series-links')];
-    return lists.map((list) => {
+    return [...document.querySelectorAll('#cfah-platforms, #cfah-platforms-sources')].map((list) => {
       const r = list.getBoundingClientRect();
-      const wide = [...list.querySelectorAll('li')].filter((item) => item.getBoundingClientRect().right > vw + 1).length;
+      const wide = [...list.querySelectorAll('li, a')].filter((item) => item.getBoundingClientRect().right > vw + 1).length;
       return { left: Math.round(r.left), right: Math.round(r.right), vw, wide };
     });
   });
-  check('chronologies: CFAH OSF sub-list fits at 390px', fit.length === 2 && fit.every((row) => row.left >= 0 && row.right <= row.vw + 1 && row.wide === 0), JSON.stringify(fit));
-  // The sticky header is painted over a tall element screenshot. Hold it in normal flow for this shot only.
+  check('chronologies: CFAH list fits at 390px', fit.length === 2 && fit.every((row) => row.left >= 0 && row.right <= row.vw + 1 && row.wide === 0), JSON.stringify(fit));
   await o.page.addStyleTag({ content: '.site-header{position:static !important}' });
-  await o.page.locator('#cfah-project-osf').screenshot({ path: join(SHOTS, 'chronologies-osf-list-390.png') });
-  check('chronologies: no console errors on CFAH OSF list', o.errors.length === 0, o.errors.join(' | '));
+  await o.page.locator('#cfah .cfah-platforms').screenshot({ path: join(SHOTS, 'chronologies-cfah-list-390.png') });
+  check('chronologies: no console errors on the CFAH list', o.errors.length === 0, o.errors.join(' | '));
   await o.ctx.close();
   const dark = await open('/chronologies/', { width: 390, height: 844, scheme: 'dark' });
   const contrast = await dark.page.evaluate(() => {
-    const a = document.querySelector('#cfah-project-osf > ul.series-links a');
-    if (!a) return { missing: true };
+    const a = document.querySelector('#cfah-platforms a');
+    const tag = document.querySelector('#cfah-platforms .tag-copy');
+    if (!a || !tag) return { missing: true };
     const color = getComputedStyle(a).color;
+    const tagColor = getComputedStyle(tag).color;
     const bg = getComputedStyle(document.body).backgroundColor;
-    return { color, bg, same: color === bg };
+    return { color, tagColor, bg, same: color === bg || tagColor === bg };
   });
-  check('chronologies: CFAH OSF links stay visible in dark mode', contrast.color && contrast.bg && !contrast.same, JSON.stringify(contrast));
+  check('chronologies: CFAH links and copy tags stay visible in dark mode', contrast.color && contrast.bg && !contrast.same, JSON.stringify(contrast));
   await dark.ctx.close();
 }
 {

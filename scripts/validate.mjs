@@ -55,16 +55,37 @@ if (chronIds.size !== chronDoc.chronologies.length) err('data/chronologies.json'
 if (srcIds.size !== srcDoc.sources.length) err('data/sources.json', 'duplicate source id');
 {
   const srcById = new Map(srcDoc.sources.map((s) => [s.id, s]));
-  for (const s of srcDoc.sources) {
-    if (!s.series_parent) continue;
-    if (!srcById.has(s.series_parent)) err('data/sources.json', `${s.id}: series_parent "${s.series_parent}" is not a source`);
-    const seen = new Set([s.id]);
-    let cur = s.series_parent;
-    while (cur) {
-      if (seen.has(cur)) { err('data/sources.json', `${s.id}: series_parent cycle at "${cur}"`); break; }
-      seen.add(cur);
-      cur = srcById.get(cur)?.series_parent;
+  const walk = (field) => {
+    for (const s of srcDoc.sources) {
+      if (!s[field]) continue;
+      if (!srcById.has(s[field])) err('data/sources.json', `${s.id}: ${field} "${s[field]}" is not a source`);
+      const seen = new Set([s.id]);
+      let cur = s[field];
+      while (cur) {
+        if (seen.has(cur)) { err('data/sources.json', `${s.id}: ${field} cycle at "${cur}"`); break; }
+        seen.add(cur);
+        cur = srcById.get(cur)?.[field];
+      }
     }
+  };
+  walk('series_parent');
+  walk('parent');
+  const hostOk = (platform, url) => {
+    let host = '';
+    try { host = new URL(url).host; } catch { return false; }
+    if (platform === 'arj') return host === 'answersresearchjournal.org';
+    if (platform === 'osf') return host === 'osf.io';
+    return false;
+  };
+  for (const s of srcDoc.sources) {
+    if (s.role === 'copy' && !s.copy_kind) err('data/sources.json', `${s.id}: a copy needs copy_kind`);
+    if (s.role === 'copy' && !s.parent) err('data/sources.json', `${s.id}: a copy needs parent`);
+    if (s.copy_kind && s.role !== 'copy') err('data/sources.json', `${s.id}: copy_kind is only for role copy`);
+    if ((s.role === 'paper' || s.role === 'response') && !s.parent) err('data/sources.json', `${s.id}: ${s.role} needs parent`);
+    if (s.role === 'series' && s.parent) err('data/sources.json', `${s.id}: a series header has no parent`);
+    if (s.role && !s.platform) err('data/sources.json', `${s.id}: role needs platform`);
+    if (s.parent && (s.role === 'paper' || s.role === 'response') && srcById.get(s.parent)?.role !== 'series') err('data/sources.json', `${s.id}: ${s.role} parent must be a series`);
+    if (s.platform && !hostOk(s.platform, s.url)) err('data/sources.json', `${s.id}: ${s.platform} url must be on ${s.platform === 'arj' ? 'answersresearchjournal.org' : 'osf.io'}`);
   }
 }
 if (chronDoc.chronologies.filter((c) => c.primary).length !== 1) err('data/chronologies.json', 'exactly one chronology must be primary');

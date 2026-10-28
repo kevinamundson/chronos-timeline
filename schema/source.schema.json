@@ -30,8 +30,13 @@
         "note": { "type": "string" },
         "superseded_for_links_by": { "$ref": "common.schema.json#/$defs/slug", "description": "Another source now used for all links to this text; this entry is kept only for provenance." },
         "series_parent": { "$ref": "common.schema.json#/$defs/slug", "description": "Source id this document belongs under. The chronologies page nests these as a sub-list of the parent." },
-        "series_label": { "type": "string", "minLength": 1, "description": "Label for the series sub-list when the provider title differs from title. The CFAH OSF list uses the title the OSF API returns." },
-        "preprint_url": { "$ref": "common.schema.json#/$defs/url", "description": "Preprint page for the same paper, when url is the project page. Shown as a second link on the series line." }
+        "series_label": { "type": "string", "minLength": 1, "description": "Label for a series header when it differs from title. The OSF Preprint section uses this." },
+        "preprint_url": { "$ref": "common.schema.json#/$defs/url", "description": "Preprint page for the same paper, when url is the project page. Shown as a second link on the series line." },
+        "platform": { "enum": ["arj", "osf"], "description": "Where this CFAH list entry is published. arj = Answers Research Journal. osf = the OSF project." },
+        "role": { "enum": ["series", "paper", "response", "copy"], "description": "series = a platform section header. paper = a CFAH article. response = a comment, reply, or response. copy = a duplicate, alternate, archived, older, or PDF copy of parent." },
+        "copy_kind": { "type": "string", "minLength": 1, "description": "Short tag for a copy, such as duplicate, alternate, archived, older version, or PDF." },
+        "parent": { "$ref": "common.schema.json#/$defs/slug", "description": "Series this paper or response belongs to, or the item this copy duplicates." },
+        "list_order": { "type": "integer", "minimum": 1, "description": "Order within the parent on the CFAH list." }
       }
     }
   }
