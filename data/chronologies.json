@@ -194,6 +194,7 @@
       "references": [
         "jones-chart-1",
         "jones-chronology-ot-2002",
+        "jones-chronology-ot-2026",
         "jones-ministries-chronology-page"
       ],
       "anchors": [
@@ -219,7 +220,8 @@
       "open_questions": [
         "CFAH cites the 21st ed. (Jones 2019). The free 2019 PDF URL (floydnolenjonesministries.com/files/135786316.pdf) returned 404; the 15th ed. (2002) on ntslibrary.com was used. Figures for Creation-Flood should be identical but check against 2019 if obtainable.",
         "The ministry page's link for Chart 6 \"Creation to Creator\" points to the Chart 5C file (same URL), so Chart 6 could not be read.",
-        "Jones charts are largely images in the 2002 PDF; patriarch death years and BC birth years were not readable as text."
+        "Jones charts are largely images in the 2002 PDF; patriarch death years and BC birth years were not readable as text.",
+        "23rd ed. (2026) Appendix F is cited as jones-chronology-ot-2026. The 15th ed. (2002) citations are unchanged. Whether later Jones entries should move to the 23rd ed., and whether New Testament rows belong on this chronology, is open (docs/OPEN-QUESTIONS-FOR-KEVIN.md, section M)."
       ]
     },
     {

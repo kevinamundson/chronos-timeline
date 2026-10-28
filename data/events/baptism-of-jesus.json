@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "baptism-of-jesus",
+  "type": "event",
+  "title": "Baptism of Jesus",
+  "summary": "John baptizes Jesus in the fifteenth year of Tiberius (Luke 3).",
+  "description": "John baptizes Jesus in the fifteenth year of Tiberius (Luke 3). The year is the Appendix F figure, stored as printed. NT/intertestamental Jones figure — scope pending Kevin’s ruling",
+  "sorting_year": 26,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 26 AD (no higher-tier year available)."
+  },
+  "sort_order_within_year": 308,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "4029 26 John baptizes Jesus, 15th of Tiberius",
+      "year_am": 4029,
+      "year_bc_ad": 26,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": "NT/intertestamental Jones figure — scope pending Kevin’s ruling pontius-pilate-governor was not edited."
+    }
+  ],
+  "people": [
+    "john-the-baptist",
+    "tiberius"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "Luke.3.1",
+    "Luke.3.21"
+  ],
+  "sources": [
+    "blb-biblehub",
+    "jones-chronology-ot-2026"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 280 (PDF p. 315)"
+    },
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/luke/3.htm",
+      "locator": "Luke.3.1"
+    },
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/luke/3.htm#21",
+      "locator": "Luke.3.21"
+    }
+  ],
+  "related": [
+    "pontius-pilate-governor"
+  ]
+}

@@ -1026,3 +1026,47 @@ Source: Rev. William Hales, D.D., second edition, corrected and improved, four v
 - Kevin’s ruling, 2026-10-27: Samuel and the other judges keep the figures Hales prints in `dates.reign`. The same slot is used for every such row that has a person record: Joshua and the Elders, Othniel, Ehud, Gideon, Abimelech, Tola, Jair, Jephthah, Ibzan, Elon, Abdon, Samson, Eli, and Samuel (the call, the twelve years, and the joint judgeship).
 - Deborah and Barak have no person record. “4. Deborah and Barak 40 1406” stays on the event `deborah-and-barak`. Shamgar has no person record. His name stays on Ehud’s reign entry and on the event `shamgar-judges-israel`.
 - **Recommendation:** leave these rows in `dates.reign`. Do not move them to birth.
+
+## M. Jones, 23rd edition, Appendix F (2026)
+
+Floyd Nolen Jones, *The Chronology of the Old Testament: A Return to the Basics*, 23rd edition ("Classic, Color with Additions – Final Edition"), Master Books, 2026, ISBN 978-1-61458-210-6 (digital). Appendix F, "Dates for Major Biblical Events", printed pp. 278–280 (PDF pp. 313–315). Source id `jones-chronology-ot-2026`. The 15th-edition source `jones-chronology-ot-2002` and every earlier ussher-jones citation are unchanged.
+
+### M1. New Testament and intertestamental scope
+Appendix F continues through the intertestamental period and the New Testament. Those rows were entered on `ussher-jones` with the printed AM and AD years, so the new events sort on tier 3. Each such note says: "NT/intertestamental Jones figure — scope pending Kevin's ruling."
+- **Question:** should these figures stay on `ussher-jones` and sort, or stay display-only until you rule on scope?
+- **Recommendation:** leave them sortable and flagged. Do not blank the printed AD year.
+
+### M2. Which edition later citations should use
+Existing ussher-jones entries still cite the 15th edition (2002). This pass adds the 23rd edition and uses it only for the new Appendix F rows.
+- **Question:** should a later pass retarget old Jones citations to the 23rd edition?
+- **Recommendation:** keep both source ids. Do not retarget old citations in this pass.
+
+### M3. Reign-start sorting
+The new northern kings and Roman emperors have an accession and no birth year. They stay tier `none`, with `sorting_year` null. Standby shows the accession, or the death where a death is printed, because the death slot is read before reign. Appendix F prints no end years, so no spans were stored. That includes Trajan's "until AD 117", Zimri's 7 days, and Shallum's 1 month.
+- **Question:** should a reign start sort a person who has no birth year?
+- **Recommendation:** no. That would need a validator change. Not in this pass.
+
+### M4. Printed AM and BC/AD that do not match
+Jones's own rule is that a BC number added to its AM counterpart yields 4004. Where the printed pair does not, both figures are stored and neither was adjusted. The sort uses the printed BC or AD year.
+- Row 81, dreams of the baker and the butler: AM 2286 and 1717 BC (sum 4003). Entered.
+- Row 276, Esther made queen: AM 3490 and 515 BC (sum 4005). Entered.
+- Row 280, deliverance of the Jews: AM 3496 and 509 BC (sum 4005). Entered.
+- Row 40, Sarah's birth: AM 2018 and 1987 BC (sum 4005). Not entered. `sarai` was not edited.
+- Row 99, Moses' death: AM 2553 and 1452 BC (sum 4005). Not entered.
+- Row 303 prints AM 4004 as 1 AD. A derived check, not stored, is AM minus 4003. These printed AD years do not match that check: row 325 (AM 4055, AD 51; derived 52), row 328 (AM 4059, AD 54; derived 56), rows 329 and 330 (AM 4063, AD 58; derived 60), rows 331 and 332 (AM 4065, AD 60; derived 62), row 333 (AM 4066, AD 61; derived 63), row 334 (AM 4068, AD 63; derived 65). Row 326 Felix, AD 52, matches AM 4055. Row 335, Nero's persecution, is the same kind of offset and was not entered.
+- **Recommendation:** leave the printed pairs. Do not adjust either figure.
+
+### M5. Identifications and rows left alone
+- Job is Issachar's third son (Gen 46:13), on `job`, not `jobab`. The trial and the death print "year fairly accurate".
+- Promise of Isaac is a new event. It was not added to `covenant-of-circumcision`.
+- Founding of Solomon's Temple, 1012 BC, is a new event. It was not placed on `temple-dedication`.
+- Sennacherib's first invasion (713) and the 185,000 (709) are new events. `sennacherib-besieges-jerusalem` was not edited.
+- Artaxerxes' decree was not linked to `artaxerxes-longimanus` or `artaxerxes-mnemon`.
+- Ahasuerus is linked to `darius-i`. Jones prints "Darius I". `xerxes` was not used.
+- The Shalmaneser who besieges Samaria was not linked to `shalmaneser-i`.
+- Zimri king of Israel is not `zimri-lim`. Joram of Israel is not `jehoram-of-judah`. Jeroboam II is not `jeroboam-i`.
+- The printed row "2187 1817 Death of Eber" is in Appendix F and was missing from the working assessment. Eber already has a record. The death was not added.
+- No Israel or Rome location was created. Leah, Bilhah, and Zilpah were not created.
+- Excluded, because they are another authority's date or have no figure: row 29 (Chaldean date for Babylon), row 32 (Ctesias on Nimrod), row 35 (Seder Olam on the Tower), row 345 (John the Apostle dies, printed "? ?").
+- Linking `sennacherib` and `merodach-baladan`, both previously fully undated, to dated events gives them a linked-record standby. Their sort fields were not changed.
+- **Recommendation:** accept the flags as entered.

@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "patriarchs-first-journey-to-egypt",
+  "type": "event",
+  "title": "The patriarchs’ first journey to Egypt",
+  "summary": "Joseph’s brothers go down to Egypt the first time (Gen 42). Benjamin stays behind.",
+  "description": "Joseph’s brothers go down to Egypt the first time (Gen 42). Benjamin stays behind. The year is the Appendix F figure, stored as printed.",
+  "sorting_year": -1707,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1707 BC (no higher-tier year available)."
+  },
+  "sort_order_within_year": 85,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "2297 1707 The Patriarchs first journey to Egypt",
+      "year_am": 2297,
+      "year_bc_ad": -1707,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 278 (PDF p. 313)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": null
+    }
+  ],
+  "people": [
+    "reuben",
+    "simeon",
+    "levi",
+    "judah",
+    "dan",
+    "naphtali",
+    "gad",
+    "asher",
+    "issachar",
+    "zebulun"
+  ],
+  "locations": [
+    "egypt"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.42.3"
+  ],
+  "sources": [
+    "blb-biblehub",
+    "jones-chronology-ot-2026"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 278 (PDF p. 313)"
+    },
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/42.htm#3",
+      "locator": "Gen.42.3"
+    }
+  ],
+  "related": []
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "domitian",
+  "type": "person",
+  "title": "Domitian",
+  "summary": "Roman emperor. Jones dates his accession. He is not named in Scripture.",
+  "description": "Roman emperor. Jones dates his accession. He is not named in Scripture. Appendix F prints no end year, so no span is stored. NT/intertestamental Jones figure — scope pending Kevin’s ruling",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "standby": {
+    "year_bc_ad": 81,
+    "basis": "source-printed",
+    "source_chronology": "ussher-jones",
+    "from_record": null,
+    "note": "Standby placement only. Ussher-Jones (Floyd Nolen Jones, The Chronology of the Old Testament) prints this BC/AD year on the reign entry (4084 81 Domitian becomes Roman Emperor). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "4084 81 Domitian becomes Roman Emperor",
+        "year_am": 4084,
+        "year_bc_ad": 81,
+        "precision": "year",
+        "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+        "source_text_id": "jones-chronology-ot-2026",
+        "note": "NT/intertestamental Jones figure — scope pending Kevin’s ruling No Scripture reference was added. Appendix F prints no end year, so no span is stored."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "jones-chronology-ot-2026"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 280 (PDF p. 315)"
+    }
+  ]
+}

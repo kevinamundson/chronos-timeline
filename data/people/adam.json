@@ -13,7 +13,8 @@
   },
   "father": null,
   "children": [
-    "seth"
+    "seth",
+    "cain"
   ],
   "scripture_facts": {
     "age_at_named_son": 130,
@@ -272,7 +273,8 @@
     }
   ],
   "related": [
-    "seth"
+    "seth",
+    "cain"
   ],
   "events": [
     "creation-week",

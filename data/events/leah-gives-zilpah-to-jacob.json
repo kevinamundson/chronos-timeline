@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "leah-gives-zilpah-to-jacob",
+  "type": "event",
+  "title": "Leah gives Zilpah to Jacob",
+  "summary": "Leah gives her maid Zilpah to Jacob (Gen 30:9). Leah and Zilpah have no person records.",
+  "description": "Leah gives her maid Zilpah to Jacob (Gen 30:9). Leah and Zilpah have no person records. The year is the Appendix F figure, stored as printed.",
+  "sorting_year": -1754,
+  "sorting_basis": {
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1754 BC (no higher-tier year available)."
+  },
+  "sort_order_within_year": 69,
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": null,
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "unknown",
+      "citation": null,
+      "link": null,
+      "note": "pending CFAH reference"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "2250 1754 Leah gives Zilpah to Jacob",
+      "year_am": 2250,
+      "year_bc_ad": -1754,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 278 (PDF p. 313)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": null
+    }
+  ],
+  "people": [
+    "jacob"
+  ],
+  "locations": [
+    "haran"
+  ],
+  "maps": [],
+  "scripture_refs": [
+    "Gen.30.9"
+  ],
+  "sources": [
+    "blb-biblehub",
+    "jones-chronology-ot-2026"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 278 (PDF p. 313)"
+    },
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/30.htm#9",
+      "locator": "Gen.30.9"
+    }
+  ],
+  "related": []
+}
