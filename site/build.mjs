@@ -278,7 +278,11 @@ ${extraHead}
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/">Ancient History Timeline</a>
-    <nav aria-label="Primary"><ul>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" hidden>
+      <svg class="nav-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 5h14M3 10h14M3 15h14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+      <span class="visually-hidden">Menu</span>
+    </button>
+    <nav id="primary-nav" aria-label="Primary"><ul>
       <li><a href="/"${path === '/' ? ' aria-current="page"' : ''}>Timeline</a></li>
       <li><a href="/browse/"${path === '/browse/' ? ' aria-current="page"' : ''}>Browse</a></li>
       <li><a href="/chronologies/"${path === '/chronologies/' || path.startsWith('/chronologies/') ? ' aria-current="page"' : ''}>Chronologies</a></li>
@@ -291,6 +295,7 @@ ${extraHead}
     </form>
   </div>
 </header>
+<script src="/assets/nav.js"></script>
 <main id="main" class="wrap"${pagefind ? ' data-pagefind-body' : ''}>
 ${type ? `<span hidden data-pagefind-filter="type">${esc(type)}</span>` : ''}
 ${body}

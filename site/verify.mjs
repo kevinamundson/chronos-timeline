@@ -68,6 +68,19 @@ function barsVisible(b) {
   const lede = await o.page.locator('.lede').innerText();
   check('home: HTTP 200', o.status === 200);
   check('home: one BibleUp script', await o.page.locator('script[src*="/assets/bibleup.js"]').count() === 1);
+  check('home: one nav script', await o.page.locator('script[src*="/assets/nav.js"]').count() === 1);
+  const desktopNav = await o.page.evaluate(() => {
+    const btn = document.querySelector('.nav-toggle');
+    const links = [...document.querySelectorAll('#primary-nav a')];
+    const tops = links.map((a) => a.getBoundingClientRect().top);
+    return {
+      n: links.length,
+      btnHidden: !!btn && getComputedStyle(btn).display === 'none',
+      shown: links.every((a) => a.getBoundingClientRect().height >= 44),
+      row: tops.length ? Math.max(...tops) - Math.min(...tops) : 99,
+    };
+  });
+  check('home: desktop primary nav stays in one row', desktopNav.n === 5 && desktopNav.btnHidden && desktopNav.shown && desktopNav.row <= 2, JSON.stringify(desktopNav));
   check('home: no console errors', o.errors.length === 0, o.errors.join(' | '));
   check('home: lede states the mighty works of God among the nations', lede.includes('mighty works of God among the nations') && !/temple/i.test(lede), lede.slice(0, 160));
   check('home: timeline items rendered', tl > 0, `${tl} items`);
@@ -235,6 +248,7 @@ function barsVisible(b) {
 // Home (mobile, light + dark)
 for (const scheme of ['light', 'dark']) {
   const o = await open('/', { width: 390, height: 844, shot: `home-mobile${scheme === 'dark' ? '-dark' : ''}.png`, scheme });
+  if (scheme === 'dark') await o.page.locator('.site-header').screenshot({ path: join(SHOTS, 'nav-mobile-dark.png') });
   await o.page.waitForSelector('.tl-hscroll .tl-scroll-thumb', { timeout: 8000 }).catch(() => {});
   await o.shot();
   check(`home mobile (${scheme}): no console errors`, o.errors.length === 0, o.errors.join(' | '));
@@ -271,6 +285,96 @@ for (const scheme of ['light', 'dark']) {
     check('home mobile (dark): lifespan text is light', !!ink && ink.lum > 180, JSON.stringify(ink));
   }
   await o.ctx.close();
+}
+// Phone header: the primary nav is collapsed until the menu button is tapped.
+{
+  const o = await open('/', { width: 390, height: 844 });
+  const menu = o.page.getByRole('button', { name: 'Menu' });
+  const closed = await o.page.evaluate(() => {
+    const btn = document.querySelector('.nav-toggle');
+    const brand = document.querySelector('.brand').getBoundingClientRect();
+    const br = btn.getBoundingClientRect();
+    const search = document.querySelector('.header-search input').getBoundingClientRect();
+    const nav = document.getElementById('primary-nav');
+    return {
+      collapsedClass: document.querySelector('.site-header').classList.contains('nav-collapsible'),
+      expanded: btn.getAttribute('aria-expanded'),
+      controls: btn.getAttribute('aria-controls'),
+      name: (btn.textContent || '').replace(/\s+/g, ' ').trim(),
+      btnW: br.width,
+      btnH: br.height,
+      beside: br.left >= brand.right - 1 && Math.abs((br.top + br.bottom) / 2 - (brand.top + brand.bottom) / 2) < 24,
+      navDisplay: getComputedStyle(nav).display,
+      open: nav.classList.contains('is-open'),
+      searchW: search.width,
+      searchH: search.height,
+      overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+    };
+  });
+  check('mobile nav (390×844): collapsed by default', closed.collapsedClass && closed.expanded === 'false' && closed.controls === 'primary-nav' && closed.name === 'Menu' && closed.navDisplay === 'none' && !closed.open && closed.btnW >= 44 && closed.btnH >= 44 && closed.beside && closed.searchW > 100 && closed.searchH >= 44 && !closed.overflow, JSON.stringify(closed));
+  await o.page.locator('.site-header').screenshot({ path: join(SHOTS, 'nav-mobile-after.png') });
+  await menu.click();
+  const opened = await o.page.evaluate(() => {
+    const links = [...document.querySelectorAll('#primary-nav a')];
+    const rects = links.map((a) => a.getBoundingClientRect());
+    const search = document.querySelector('.header-search input').getBoundingClientRect();
+    return {
+      expanded: document.querySelector('.nav-toggle').getAttribute('aria-expanded'),
+      open: document.getElementById('primary-nav').classList.contains('is-open'),
+      labels: links.map((a) => a.textContent.trim()),
+      vertical: rects.every((r, i) => i === 0 || r.top >= rects[i - 1].bottom - 1),
+      tall: rects.every((r) => r.height >= 44 && r.width > 40),
+      searchW: search.width,
+      searchH: search.height,
+      overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+    };
+  });
+  check('mobile nav (390×844): opens on tap', opened.expanded === 'true' && opened.open && opened.labels.join(',') === 'Timeline,Browse,Chronologies,Charts,About' && opened.vertical && opened.tall && opened.searchW > 100 && opened.searchH >= 44 && !opened.overflow, JSON.stringify(opened));
+  await o.page.locator('.site-header').screenshot({ path: join(SHOTS, 'nav-mobile-open.png') });
+  await o.page.keyboard.press('Tab');
+  await o.page.keyboard.press('Escape');
+  const escaped = await o.page.evaluate(() => ({
+    expanded: document.querySelector('.nav-toggle').getAttribute('aria-expanded'),
+    display: getComputedStyle(document.getElementById('primary-nav')).display,
+    focused: document.activeElement.classList.contains('nav-toggle'),
+  }));
+  check('mobile nav (390×844): Escape closes the menu', escaped.expanded === 'false' && escaped.display === 'none' && escaped.focused, JSON.stringify(escaped));
+  await menu.click();
+  await o.page.evaluate(() => {
+    document.getElementById('primary-nav').addEventListener('click', (e) => {
+      if (e.target.closest('a')) e.preventDefault();
+    }, true);
+  });
+  await o.page.locator('#primary-nav a', { hasText: 'Browse' }).click();
+  const linked = await o.page.evaluate(() => ({
+    path: location.pathname,
+    expanded: document.querySelector('.nav-toggle').getAttribute('aria-expanded'),
+    display: getComputedStyle(document.getElementById('primary-nav')).display,
+  }));
+  check('mobile nav (390×844): tapping a link closes the menu', linked.path === '/' && linked.expanded === 'false' && linked.display === 'none', JSON.stringify(linked));
+  check('mobile nav (390×844): no console errors', o.errors.length === 0, o.errors.join(' | '));
+  await o.ctx.close();
+}
+{
+  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, javaScriptEnabled: false, deviceScaleFactor: 2 });
+  const page = await ctx.newPage();
+  const resp = await page.goto(BASE + '/', { waitUntil: 'load', timeout: 30000 });
+  const headerClass = (await page.locator('.site-header').getAttribute('class')) || '';
+  const hiddenAttr = await page.locator('.nav-toggle').getAttribute('hidden');
+  const btnVisible = await page.locator('.nav-toggle').isVisible();
+  const links = page.locator('#primary-nav a');
+  const n = await links.count();
+  let visible = n === 5;
+  const boxes = [];
+  for (let i = 0; i < n; i++) {
+    const box = await links.nth(i).boundingBox();
+    boxes.push(box);
+    if (!box || box.height < 44 || box.width < 20) visible = false;
+  }
+  const search = await page.locator('.header-search input').boundingBox();
+  const plain = { status: resp.status(), headerClass, hiddenAttr, btnVisible, n, visible, boxes, searchW: search?.width || 0 };
+  check('mobile nav (390×844): links stay visible with JavaScript off', plain.status === 200 && !plain.headerClass.includes('nav-collapsible') && plain.hiddenAttr !== null && !plain.btnVisible && plain.visible && plain.searchW > 100, JSON.stringify(plain));
+  await ctx.close();
 }
 // Record pages
 for (const [path, shot, sel] of [

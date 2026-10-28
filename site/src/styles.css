@@ -45,7 +45,24 @@ h3 { font-size: 17px; margin: 16px 0 8px; font-weight: 600; }
 .site-header nav a[aria-current="page"] { background: var(--accent-fill); color: var(--accent); }
 .header-search { margin-left: auto; }
 .header-search input { font: inherit; font-size: 15px; padding: 8px 12px; border-radius: 10px; border: 1px solid transparent; background: var(--bg-fill); color: var(--label); width: 180px; min-height: 36px; }
-@media (max-width: 640px) { .header-search { margin-left: 0; width: 100%; } .header-search input { width: 100%; } .brand { width: 100%; } }
+/* The button stays out of the layout until nav.js adds .nav-collapsible. Without that class the links stay visible. */
+.nav-toggle { display: none; position: relative; }
+.nav-icon { display: block; }
+@media (max-width: 640px) {
+  .header-search { margin-left: 0; width: 100%; }
+  .header-search input { width: 100%; min-height: 44px; }
+  .brand { width: 100%; }
+  .site-header.nav-collapsible .header-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 12px; }
+  .site-header.nav-collapsible .brand { width: auto; min-width: 0; }
+  .site-header.nav-collapsible .nav-toggle { display: inline-flex; align-items: center; justify-content: center; justify-self: end; width: 44px; height: 44px; padding: 0; background: transparent; color: var(--label); }
+  .site-header.nav-collapsible .nav-toggle:hover,
+  .site-header.nav-collapsible .nav-toggle[aria-expanded="true"] { background: var(--accent-fill); color: var(--accent); }
+  .site-header.nav-collapsible #primary-nav,
+  .site-header.nav-collapsible .header-search { grid-column: 1 / -1; }
+  .site-header.nav-collapsible #primary-nav:not(.is-open) { display: none; }
+  .site-header.nav-collapsible #primary-nav.is-open ul { flex-direction: column; align-items: stretch; gap: 2px; }
+  .site-header.nav-collapsible #primary-nav.is-open a { display: flex; align-items: center; width: 100%; }
+}
 
 main { padding-top: 16px; padding-bottom: 48px; }
 .hero { padding: 24px 0 8px; }
