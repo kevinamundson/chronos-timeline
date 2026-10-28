@@ -23,7 +23,7 @@ import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import { isBlbUrl, isNonBlbScripture, blbFromOsis } from './blb.mjs';
 import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, standbySummaryLine } from './standby/compute.mjs';
-import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE } from './raleigh/derived-year.mjs';
+import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE, ITALICS_NOTE } from './raleigh/derived-year.mjs';
 import { loadChronologicalTable, yearColumnIndex, yearColumnReport } from './raleigh/table.mjs';
 import { TIERS, personTierSort, tierPick } from './sort-rule.mjs';
 
@@ -265,6 +265,9 @@ let raleighDerivedSummary = '';
   let raleighShown = 0;
   let raleighSkipped = 0;
   try { assertRaleighDerived(); } catch (e) { err('scripts/raleigh/derived-year.mjs', e.message); }
+  if (ITALICS_NOTE !== 'Dates in italics are derived.') err('scripts/raleigh/derived-year.mjs', 'the italics note must read "Dates in italics are derived."');
+  const buildSrc = readFileSync(join(root, 'site/build.mjs'), 'utf8');
+  if (!buildSrc.includes('ITALICS_NOTE')) err('site/build.mjs', 'a page that shows an italic derived year must print ITALICS_NOTE');
   const ral = chronDoc.chronologies.find((c) => c.id === 'raleigh-history-of-the-world');
   if (ral && (ral.primary || !/SECONDARY DISPLAY/.test(ral.description))) err('data/chronologies.json', 'raleigh-history-of-the-world must be a non-primary SECONDARY DISPLAY chronology');
   if (ral && !/never sets sorting_year/.test(ral.description || '')) err('data/chronologies.json', 'raleigh description must say it never sets sorting_year');
@@ -297,16 +300,16 @@ let raleighDerivedSummary = '';
       const cell = idx >= 0 ? row.cells[idx] : null;
       if (!cell || cell.covered) continue;
       const ann = annotateWorldYear(cell.original || '');
-      if ((cell.original || '').includes('2338 1656') && ann.text.includes('2338 1656 (derived: 2377 BC)')) floodCell = true;
+      if ((cell.original || '').includes('2338 1656') && ann.text.includes('AM 1656') && ann.html.includes('<em>2377 BC</em>')) floodCell = true;
     }
   }
-  if (!floodCell) err('sources/raleigh/A10357.earlyprint-unadorned.xml', 'Flood year cell 2338 1656 does not show (derived: 2377 BC)');
+  if (!floodCell) err('sources/raleigh/A10357.earlyprint-unadorned.xml', 'Flood year cell 2338 1656 does not show AM 1656 and <em>2377 BC</em>');
   const floodDoc = records['the-flood']?.doc;
   const floodRows = [...(floodDoc?.chronologies || [])].filter((e) => e.source === RALEIGH_SOURCE && e.year_am === 1656);
   if (floodRows.length < 1) err('data/events/the-flood.json', 'expected a Raleigh Flood entry at AM 1656');
   for (const e of floodRows) {
     const shown = raleighAmDisplay(e.year_am, e.year_am_end);
-    if (shown.text !== 'AM 1656 (derived: 2377 BC)') err('data/events/the-flood.json', `Raleigh Flood display is "${shown.text}"`);
+    if (!shown.text?.includes('AM 1656') || !shown.html?.includes('<em>2377 BC</em>')) err('data/events/the-flood.json', `Raleigh Flood display is "${shown.text}" / "${shown.html}"`);
   }
   const skipped = report.flags.filter((f) => f.badge !== 'mismatch');
   raleighDerivedSummary = `Raleigh derived display: ${raleighShown} chronology entries show a derived year, ${raleighSkipped} flagged with none. Table year cells: ${report.derived} derived (${report.derivedNoted} of them also flagged), ${report.flagged} not derived, ${report.plain} empty.`;

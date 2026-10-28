@@ -182,7 +182,7 @@ function csvEscape(s) {
   return /[",\n\r]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v;
 }
 
-const FILE_NOTE = 'Raleigh, The History of the World (1617, EEBO-TCP A10357), A Chronological Table. Years are the Julian Period and the yeere of the World as printed. A parenthetical "(derived: …)" is display text only, from Raleigh\'s Creation in 4032 BC. It is not a year he printed, and year_bc_ad stays null. The Signature column is the 1617 sheet and is not a column of his table.';
+const FILE_NOTE = 'Raleigh, The History of the World (1617, EEBO-TCP A10357), A Chronological Table. Years are the Julian Period and the yeere of the World as printed. A parenthetical year, for example AM 1656 (2377 BC), is display text only, from Raleigh\'s Creation in 4032 BC. On the web page that year is in italics. Dates in italics are derived. It is not a year he printed, and year_bc_ad stays null. The Signature column is the 1617 sheet and is not a column of his table.';
 
 export function toCsv(table, mode) {
   const lines = [csvEscape(FILE_NOTE), csvEscape(mode === 'original' ? 'Original spelling' : 'Modern spelling'), csvEscape(table.heading[mode])];

@@ -29,7 +29,7 @@ npm ci
 - [ ] **No invented material:** no date, event, person, place, URL or citation without a source that was read.
   - Every new URL resolves: `curl -sIL` each new host, or open it.
   - No URL is a guessed pattern: open at least one per host.
-- [ ] No conversions the source does not make (AM→BC, reign length→BC year). Any derived year is in the note, labelled DERIVED, with its arithmetic. The one display exception is Raleigh's yeere of the World: a parenthetical from Creation in 4032 BC (`scripts/raleigh/derived-year.mjs`). It does not change `year_bc_ad`, sort, standby, spans, or tiers.
+- [ ] No conversions the source does not make (AM→BC, reign length→BC year). Any derived year is in the note, labelled DERIVED, with its arithmetic. The one display exception is Raleigh's yeere of the World: an italic BC or AD year from Creation in 4032 BC (`scripts/raleigh/derived-year.mjs`; G11, Kevin, 2026-10-28). It does not change `year_bc_ad`, sort, standby, spans, or tiers.
 - [ ] Conflicts and self-contradictions are recorded in `docs/OPEN-QUESTIONS-FOR-KEVIN.md`, or for CFAH as a new `I<n>` in `scripts/cfah/inconsistencies.mjs`, and not silently resolved.
 - [ ] The PD basis is stated for every new source and fits the edition. US: 1930 or earlier; 1931–1964 needs a renewal check; modern translations count as copyrighted.
 

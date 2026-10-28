@@ -114,6 +114,7 @@ ol.name-notes li { margin: 8px 0; font-size: 14px; }
 .tag-preprint { font-style: italic; border-style: dashed; }
 .note { font-size: 13px; color: var(--label-2); margin-top: 6px; }
 .derived { text-decoration: underline dotted; text-underline-offset: 0.15em; }
+.raleigh-derived em, table.chron em, .lede em { font-style: italic; }
 .raleigh-derived-note { margin: 8px 0 0; }
 .flags { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
 .flag { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 6px; border: 1px solid currentColor; }

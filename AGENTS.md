@@ -41,7 +41,7 @@ The rules also apply to any other coding agent working here. Grok Build is the b
 
 Further rules:
 
-- Record dates **as printed**. Do not convert AM to BC, or reign lengths to BC years, unless the source itself does. A year you work out yourself goes only in the `note`, labelled `DERIVED`, with the arithmetic and its anchor. The one exception is display text for Raleigh's yeere of the World (Kevin, 28 Oct 2026): a parenthetical computed in `scripts/raleigh/derived-year.mjs` from Creation in 4032 BC. It is not written into `year_bc_ad`, and it never sets `sorting_year`, a standby placement, a span, or a tier.
+- Record dates **as printed**. Do not convert AM to BC, or reign lengths to BC years, unless the source itself does. A year you work out yourself goes only in the `note`, labelled `DERIVED`, with the arithmetic and its anchor. The one exception is display text for Raleigh's yeere of the World (Kevin, 28 Oct 2026): `AM` and an italic BC or AD year, computed in `scripts/raleigh/derived-year.mjs` from Creation in 4032 BC. Kevin kept 4032 on 2026-10-28 (G11). The Julian Period column implies 4031 BC; that reading is not the formula. The italic year is not written into `year_bc_ad`, and it never sets `sorting_year`, a standby placement, a span, or a tier.
 - If a source is ambiguous, damaged or self-contradictory, record what it says and flag it. **Do not silently resolve it.** Add it to:
   - `docs/OPEN-QUESTIONS-FOR-KEVIN.md`: next free item in the right section, with the question, why it matters, the options and a recommendation.
   - `scripts/cfah/inconsistencies.mjs`: internal CFAH inconsistencies, as the next `I<n>` (currently I1–I22).
@@ -116,7 +116,7 @@ https://biblehub.com/blb/<slug>/<chapter>.htm#<verse>
   - The person's own events, birth and death are **solid**. Other events in the lifespan are **faded** context.
   - Every item is a real link, with an ordered list fallback and a legend.
   - `site/verify-timelines.mjs` checks this in Chromium and WebKit; it must still pass.
-- **BC axis:** no year 0. BC year *y* maps to axis year *y*, and AD year *y* maps to *y − 1*. The build never converts AM to BC, except the Raleigh display parenthetical, which is not placed on the axis.
+- **BC axis:** no year 0. BC year *y* maps to axis year *y*, and AD year *y* maps to *y − 1*. The build never converts AM to BC, except Raleigh's italic display year, which is not placed on the axis.
 - **Asset URLs** are versioned (`?v=<hash>`). Keep the cache-busting step in `site/build.mjs`.
 - **Accessibility:** every timeline has a keyboard and screen-reader list alternative. Use colour plus a text or pattern cue, never colour alone.
 - **Third-party credit:** OpenBible.info (CC BY 4.0), OSM tiles, LoC maps and the bundled library licences stay credited.

@@ -1,6 +1,6 @@
 # Raleigh pass log
 
-Imported from the 1617 chronological table. Raleigh is display-only. No sorting year was changed. Display titles use modern English spelling. His printed spelling is an alternate name. He states that the Julian Period exceeds the yeere of the World by 682. He does not state a BC conversion, so year_bc_ad stays null. The site shows a derived parenthetical from Creation in 4032 BC. The whole table is reproduced at `/chronologies/raleigh-chronological-table/` (modern spelling by default, original spelling by a toggle, with CSV, Markdown, and Excel downloads).
+Imported from the 1617 chronological table. Raleigh is display-only. No sorting year was changed. Display titles use modern English spelling. His printed spelling is an alternate name. He states that the Julian Period exceeds the yeere of the World by 682. He does not state a BC conversion, so year_bc_ad stays null. The site shows an italic BC or AD year from Creation in 4032 BC (Kevin, 2026-10-28). The whole table is reproduced at `/chronologies/raleigh-chronological-table/` (modern spelling by default, original spelling by a toggle, with CSV, Markdown, and Excel downloads).
 
 - Records updated or created with a Raleigh entry: 203
 - Dated statements written: 216

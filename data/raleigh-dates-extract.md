@@ -1,6 +1,6 @@
 # Raleigh, *The History of the World* (1617) — dates
 
-Edition read: London, printed by William Stansby for Walter Burre, 1617. EEBO-TCP A10357, EarlyPrint unadorned XML (`sources/raleigh/A10357.earlyprint-unadorned.xml`). Display only. year_bc_ad stays null. The site shows a derived parenthetical from Creation in 4032 BC; Raleigh prints only the yeere of the World.
+Edition read: London, printed by William Stansby for Walter Burre, 1617. EEBO-TCP A10357, EarlyPrint unadorned XML (`sources/raleigh/A10357.earlyprint-unadorned.xml`). Display only. year_bc_ad stays null. The site shows an italic BC or AD year from Creation in 4032 BC (Kevin, 2026-10-28); Raleigh prints only the yeere of the World.
 
 The chronological table (back matter, from sig. 781b) is Raleigh's index. "To the Reader" (sig. 780b) says it reforms press errors and his own mis-reckonings, and that the Julian Period exceeds the yeere of the World by 682. A year is recorded only when the printed pair differs by 682.
 

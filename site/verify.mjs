@@ -692,18 +692,24 @@ for (const [path, shot, sel] of [
     return { shown, originalHidden: getComputedStyle(original).display === 'none' };
   });
   check('raleigh table: modern view shows Adam', modern.originalHidden && /Adam/.test(modern.shown) && !/Adaˉ/.test(modern.shown), JSON.stringify(modern));
-  check('raleigh table: Adam yeere shows 4032 BC', /1 \(derived: 4032 BC\)/.test(modern.shown || ''), JSON.stringify(modern.shown || '').slice(0, 240));
+  const adamHtml = await o.page.evaluate(() => {
+    const cell = [...document.querySelectorAll('#raleigh-table td, #raleigh-table th')].find((el) => el.querySelector('.spell-original')?.textContent.includes('Adaˉ'));
+    return cell ? cell.innerHTML : '';
+  });
+  check('raleigh table: Adam yeere shows 4032 BC', /AM 1/.test(modern.shown || '') && /4032 BC/.test(modern.shown || '') && !/\(derived:/.test(modern.shown || '') && adamHtml.includes('<em>4032 BC</em>'), JSON.stringify(modern.shown || '').slice(0, 240));
   const NOTE = "Derived by the portal from Raleigh's Creation in 4032 BC; Raleigh prints only the yeere of the World.";
+  const ITALICS = 'Dates in italics are derived.';
   const intro = await o.page.locator('#raleigh-table .card').first().innerText();
-  check('raleigh table: intro states the derived note', intro.includes(NOTE), intro.slice(0, 280));
+  check('raleigh table: intro states the derived note', intro.includes(NOTE) && intro.includes('AM 1656') && intro.includes('2377 BC'), intro.slice(0, 280));
   const bad = await o.page.evaluate(() => {
     const cell = [...document.querySelectorAll('#raleigh-table td')].find((el) => el.innerText.includes('3840') && el.innerText.includes('2158'));
     return cell ? cell.innerText : '';
   });
-  check('raleigh table: unconfirmed 3840/2158 pair is not derived', bad.includes('Not derived') && !bad.includes('(derived:'), bad.slice(0, 220));
+  check('raleigh table: unconfirmed 3840/2158 pair is not derived', bad.includes('Not derived') && !bad.includes('(derived:') && !/\(\d+ BC\)/.test(bad), bad.slice(0, 220));
   await o.page.screenshot({ path: join(SHOTS, 'raleigh-derived-table-intro.png'), fullPage: false });
-  const floodCells = o.page.locator('#raleigh-table td', { hasText: '1656 (derived: 2377 BC)' });
-  check('raleigh table: Flood cell shows 2377 BC', (await floodCells.count()) >= 1);
+  const floodCells = o.page.locator('#raleigh-table td', { hasText: 'AM 1656' }).filter({ hasText: '2377 BC' });
+  const floodHtml = (await floodCells.count()) ? await floodCells.first().innerHTML() : '';
+  check('raleigh table: Flood cell shows 2377 BC', (await floodCells.count()) >= 1 && floodHtml.includes('<em>2377 BC</em>') && floodHtml.includes('AM 1656'), floodHtml.slice(0, 220));
   await floodCells.first().scrollIntoViewIfNeeded();
   await o.page.screenshot({ path: join(SHOTS, 'raleigh-derived-table-flood.png'), fullPage: false });
   await o.page.getByRole('button', { name: 'Original spelling' }).click();
@@ -734,7 +740,9 @@ for (const [path, shot, sel] of [
     check(`raleigh table: ${path.split('/').pop()}`, r.status() === 200 && body.includes(a) && body.includes(b), `HTTP ${r.status()} ${body.slice(0, 60).replace(/\s+/g, ' ')}`);
   }
   const csv = await (await o.page.request.get(BASE + '/chronologies/raleigh-chronological-table/a-chronological-table.csv')).text();
-  check('raleigh table: csv derives Adam and the Flood', csv.includes('1 (derived: 4032 BC)') && csv.includes('1656 (derived: 2377 BC)'));
+  check('raleigh table: csv derives Adam and the Flood', csv.includes('AM 1 (4032 BC)') && csv.includes('AM 1656 (2377 BC)') && !csv.includes('(derived:'));
+  const tableNote = await o.page.locator('#raleigh-table .raleigh-derived-note').innerText();
+  check('raleigh table: italics note', tableNote.startsWith(ITALICS) && tableNote.includes(NOTE), tableNote);
   await o.ctx.close();
 }
 {
@@ -751,23 +759,28 @@ for (const [path, shot, sel] of [
 }
 {
   const NOTE = "Derived by the portal from Raleigh's Creation in 4032 BC; Raleigh prints only the yeere of the World.";
+  const ITALICS = 'Dates in italics are derived.';
   const o = await open('/events/the-flood/');
+  const html = await o.page.locator('table.chron').innerHTML();
   const text = await o.page.locator('table.chron').innerText();
-  const hits = text.split('AM 1656 (derived: 2377 BC)').length - 1;
-  check('flood: Raleigh AM 1656 shows 2377 BC', hits >= 1, `hits ${hits}`);
+  check('flood: Raleigh AM 1656 shows 2377 BC', text.includes('AM 1656') && html.includes('<em>2377 BC</em>') && !text.includes('(derived:'), text.slice(0, 240));
   const note = await o.page.locator('.raleigh-derived-note').innerText();
-  check('flood: derived-year footnote', note === NOTE, note);
+  check('flood: italics note', note.startsWith(ITALICS) && note.includes(NOTE), note);
   check('flood: no console errors', o.errors.length === 0, o.errors.join(' | '));
   await o.ctx.close();
 }
 {
   const NOTE = "Derived by the portal from Raleigh's Creation in 4032 BC; Raleigh prints only the yeere of the World.";
+  const ITALICS = 'Dates in italics are derived.';
   const o = await open('/people/adam/');
   const birth = o.page.locator('#birth');
   const text = await birth.innerText();
-  check('adam: Raleigh AM 1 shows 4032 BC', text.includes('AM 1 (derived: 4032 BC)'), text.slice(0, 240));
-  const title = await birth.locator('span.derived').first().getAttribute('title');
-  check('adam: derived span title', title === NOTE, title || '');
+  const html = await birth.innerHTML();
+  check('adam: Raleigh AM 1 shows 4032 BC', text.includes('AM 1') && text.includes('4032 BC') && html.includes('<em>4032 BC</em>') && !text.includes('(derived:'), text.slice(0, 240));
+  const life = await o.page.locator('.person-list').innerText();
+  check('adam: lifespan list shows the italic year as text', life.includes('AM 1') && life.includes('4032 BC'), life.slice(0, 240));
+  const note = await o.page.locator('.raleigh-derived-note').innerText();
+  check('adam: italics note', note.startsWith(ITALICS) && note.includes(NOTE), note);
   await birth.scrollIntoViewIfNeeded();
   await o.page.screenshot({ path: join(SHOTS, 'raleigh-derived-adam.png'), fullPage: false });
   check('adam: no console errors', o.errors.length === 0, o.errors.join(' | '));
@@ -776,6 +789,7 @@ for (const [path, shot, sel] of [
 // BibleUp: one script tag, detection on a written reference, BSB text in the popover.
 {
   const o = await open('/about/');
+  check('about: no italics note without a derived date', (await o.page.locator('.raleigh-derived-note').count()) === 0);
   const tags = await o.page.locator('script[src*="/assets/bibleup.js"]').count();
   check('about: one BibleUp script', tags === 1, String(tags));
   check('about: chronology sentence is not tagged', (await o.page.locator('p.bu-ignore cite').count()) === 0);

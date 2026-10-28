@@ -3,14 +3,16 @@
 // One constant. BC = 4033 − AM. When AM >= 4033, AD = AM − 4032. No year 0.
 // His own Julian offset (To the Reader, sig. 781a: the Julian Period exceeds the
 // yeere of the World by 682; the Jehoshaphat example is on sig. 780b) with
-// JP 1 = 4713 BC puts AM 1 at JP 683 = 4031 BC.
-// That one-year difference is reported to Kevin. It is not the formula used here.
+// JP 1 = 4713 BC puts AM 1 at JP 683 = 4031 BC (table sig. 781b).
+// Kevin chose 4032 on 2026-10-28 (G11). The 4031 reading is recorded and is not the formula.
+// Display is "AM <year> (<em>BC/AD</em>)". Only the BC or AD year is italic.
 // Never write the result into year_bc_ad, sorting_year, standby, a span, or a tier.
 
 export const RALEIGH_CREATION_BC = 4032;
 export const RALEIGH_DERIVED_FROM = 'raleigh-creation-4032-bc';
 export const RALEIGH_SOURCE = 'raleigh-history-of-the-world';
 export const RALEIGH_DERIVED_NOTE = "Derived by the portal from Raleigh's Creation in 4032 BC; Raleigh prints only the yeere of the World.";
+export const ITALICS_NOTE = 'Dates in italics are derived.';
 
 const DERIVED_KEYS = ['derived_bc_ad', 'derived_bc_ad_end', 'derived_from'];
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -43,33 +45,33 @@ function cleanAm(n) {
 export function raleighAmDisplay(am, end) {
   const hasEnd = end != null && end !== am;
   if (am == null && !hasEnd) {
-    return { text: null, amText: null, paren: null, badge: 'Not derived', flag: 'No derived year: the yeere of the World is empty.' };
+    return { text: null, html: null, amText: null, paren: null, label: null, badge: 'Not derived', flag: 'No derived year: the yeere of the World is empty.' };
   }
   const a = cleanAm(am);
   const b = hasEnd ? cleanAm(end) : null;
   if (am != null && a == null) {
-    return { text: null, amText: null, paren: null, badge: 'Not derived', flag: 'No derived year: the yeere of the World is illegible or not a single figure.' };
+    return { text: null, html: null, amText: null, paren: null, label: null, badge: 'Not derived', flag: 'No derived year: the yeere of the World is illegible or not a single figure.' };
   }
   if (hasEnd && b == null) {
-    return { text: null, amText: null, paren: null, badge: 'Not derived', flag: 'No derived year: a two-figure yeere is not fully legible.' };
+    return { text: null, html: null, amText: null, paren: null, label: null, badge: 'Not derived', flag: 'No derived year: a two-figure yeere is not fully legible.' };
   }
   const amText = hasEnd ? `AM ${a}–${b}` : `AM ${a}`;
   const label = derivedRangeLabel(a, hasEnd ? b : null);
   if (!label) {
-    return { text: null, amText: null, paren: null, badge: 'Not derived', flag: 'No derived year: the yeere of the World is not a single figure.' };
+    return { text: null, html: null, amText: null, paren: null, label: null, badge: 'Not derived', flag: 'No derived year: the yeere of the World is not a single figure.' };
   }
-  const paren = `(derived: ${label})`;
-  return { text: `${amText} ${paren}`, amText, paren, badge: null, flag: null };
+  const paren = `(${label})`;
+  const html = `${esc(amText)} (<em>${esc(label)}</em>)`;
+  return { text: `${amText} ${paren}`, html, amText, paren, label, badge: null, flag: null };
 }
 
 export function raleighAmHtml(am, end) {
   const d = raleighAmDisplay(am, end);
-  if (!d.amText) {
+  if (!d.html) {
     return `<span class="flag flag-oq">${esc(d.badge || 'Not derived')}</span> <span class="small">${esc(d.flag || '')}</span>`;
   }
-  const paren = d.paren ? ` <span class="derived" title="${esc(RALEIGH_DERIVED_NOTE)}">${esc(d.paren)}</span>` : '';
   const flag = d.flag ? ` <span class="flag flag-oq">${esc(d.badge || 'Not derived')}</span> <span class="small">${esc(d.flag)}</span>` : '';
-  return `${esc(d.amText)}${paren}${flag}`;
+  return `${d.html}${flag}`;
 }
 
 /** One short line for a record, deduped. Empty when the record has no Raleigh entry. */
@@ -88,16 +90,45 @@ export function raleighRecordShort(entries) {
   return parts.length ? `Raleigh: ${parts.join('; ')}` : '';
 }
 
+/** Safe HTML for one record. Empty when the record has no Raleigh entry. */
+export function raleighRecordHtml(entries) {
+  const parts = [];
+  const seen = new Set();
+  for (const e of entries || []) {
+    if (e?.source !== RALEIGH_SOURCE) continue;
+    const key = `${e.year_am ?? 'x'}|${e.year_am_end ?? ''}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const d = raleighAmDisplay(e.year_am, e.year_am_end);
+    if (d.html) parts.push(d.html);
+    else if (d.flag) parts.push(esc(d.flag));
+  }
+  return parts.length ? `Raleigh: ${parts.join('; ')}` : '';
+}
+
+/** True when at least one entry renders an italic derived year. */
+export function showsItalicDerived(entries) {
+  for (const e of entries || []) {
+    if (e?.source !== RALEIGH_SOURCE || e.superseded_by) continue;
+    if (raleighAmDisplay(e.year_am, e.year_am_end).html) return true;
+  }
+  return false;
+}
+
 function blank(text) {
-  return { text, status: 'plain', badge: null, flag: null, worlds: [] };
+  return { text, html: esc(text), status: 'plain', badge: null, flag: null, worlds: [] };
 }
 
 function flagged(text, flag) {
-  return { text, status: 'flagged', badge: 'Not derived', flag, worlds: [] };
+  return { text, html: esc(text), status: 'flagged', badge: 'Not derived', flag, worlds: [] };
 }
 
-function derived(text, worlds, flag = null, badge = null) {
-  return { text, status: 'derived', badge, flag, worlds };
+function derived(text, worlds, flag = null, badge = null, html = null) {
+  return { text, html: html ?? esc(text), status: 'derived', badge, flag, worlds };
+}
+
+function emParen(label) {
+  return `(<em>${esc(label)}</em>)`;
 }
 
 const TOKEN = '([0-9●◊〈〉]+)';
@@ -121,12 +152,9 @@ export function annotateWorldYear(raw) {
       const l1 = historicalLabel(raleighDerivedYear(left));
       const l2 = historicalLabel(raleighDerivedYear(right));
       if (l1 && l2) {
-        return derived(
-          `${alt[1]} (derived: ${l1}) or ${alt[2]} (derived: ${l2})${alt[3]}`,
-          [left, right],
-          'Both figures are legible, so each is derived on its own.',
-          'Two figures',
-        );
+        const plain = `AM ${alt[1]} (${l1}) or AM ${alt[2]} (${l2})${alt[3]}`;
+        const html = `AM ${esc(alt[1])} ${emParen(l1)} or AM ${esc(alt[2])} ${emParen(l2)}${esc(alt[3])}`;
+        return derived(plain, [left, right], 'Both figures are legible, so each is derived on its own.', 'Two figures', html);
       }
     }
     return flagged(t, 'A two-figure yeere is not fully legible, so no derived year is shown.');
@@ -141,11 +169,14 @@ export function annotateWorldYear(raw) {
   if (julian == null) {
     const label = historicalLabel(raleighDerivedYear(world));
     if (!label) return flagged(t, 'The yeere of the World is not a single legible figure.');
+    const plain = `${m[1]} AM ${m[2]} (${label})${rest}`;
+    const html = `${esc(m[1])} AM ${esc(m[2])} ${emParen(label)}${esc(rest)}`;
     return derived(
-      `${m[1]} ${m[2]} (derived: ${label})${rest}`,
+      plain,
       [world],
       'The Julian figure is illegible. The derived year uses the legible yeere of the World only.',
       'Julian illegible',
+      html,
     );
   }
   if (julian - world !== 682) {
@@ -153,7 +184,7 @@ export function annotateWorldYear(raw) {
   }
   const label = historicalLabel(raleighDerivedYear(world));
   if (!label) return flagged(t, 'The yeere of the World is not a single legible figure.');
-  return derived(`${m[1]} ${m[2]} (derived: ${label})${rest}`, [world]);
+  return derived(`${m[1]} AM ${m[2]} (${label})${rest}`, [world], null, null, `${esc(m[1])} AM ${esc(m[2])} ${emParen(label)}${esc(rest)}`);
 }
 
 export function formatAnnotatedCell(ann) {
@@ -200,37 +231,40 @@ export function assertRaleighDerived() {
     throw new Error('Raleigh formula derived a year from an empty or broken figure');
   }
   const flood = raleighAmDisplay(1656, null);
-  if (flood.text !== 'AM 1656 (derived: 2377 BC)') throw new Error(`Flood display: ${flood.text}`);
+  if (flood.text !== 'AM 1656 (2377 BC)' || flood.html !== 'AM 1656 (<em>2377 BC</em>)') throw new Error(`Flood display: ${flood.text} / ${flood.html}`);
   const range = raleighAmDisplay(1656, 1657);
-  if (range.text !== 'AM 1656–1657 (derived: 2377 BC – 2376 BC)') throw new Error(`Range display: ${range.text}`);
+  if (range.text !== 'AM 1656–1657 (2377 BC – 2376 BC)' || range.html !== 'AM 1656–1657 (<em>2377 BC – 2376 BC</em>)') throw new Error(`Range display: ${range.text} / ${range.html}`);
+  const ad = raleighAmDisplay(4033, null);
+  if (ad.text !== 'AM 4033 (AD 1)' || ad.html !== 'AM 4033 (<em>AD 1</em>)') throw new Error(`AD display: ${ad.text} / ${ad.html}`);
   const adam = annotateWorldYear('683 1. Adaˉ 920');
-  if (adam.text !== '683 1 (derived: 4032 BC). Adaˉ 920' || adam.status !== 'derived') throw new Error(`Adam cell: ${adam.text}`);
+  if (adam.text !== '683 AM 1 (4032 BC). Adaˉ 920' || adam.html !== '683 AM 1 (<em>4032 BC</em>). Adaˉ 920' || adam.status !== 'derived') throw new Error(`Adam cell: ${adam.text} / ${adam.html}`);
   const tableFlood = annotateWorldYear('2338 1656');
-  if (tableFlood.text !== '2338 1656 (derived: 2377 BC)') throw new Error(`Table flood: ${tableFlood.text}`);
+  if (tableFlood.text !== '2338 AM 1656 (2377 BC)' || tableFlood.html !== '2338 AM 1656 (<em>2377 BC</em>)') throw new Error(`Table flood: ${tableFlood.text} / ${tableFlood.html}`);
   const example = annotateWorldYear('3195 2513');
-  if (!example.text.includes('(derived: 1520 BC)') || example.worlds[0] !== 2513) throw new Error(`Example 2513: ${example.text}`);
+  if (!example.text.includes('AM 2513 (1520 BC)') || !example.html.includes('<em>1520 BC</em>') || example.worlds[0] !== 2513) throw new Error(`Example 2513: ${example.text}`);
+  const keptPlain = (ann, label) => ann.status === 'flagged' && !ann.text.includes('(derived:') && !ann.html.includes('<em>') || (() => { throw new Error(`${label}: ${ann.text}`); })();
   const bad = annotateWorldYear('3840 2158 75');
-  if (bad.status !== 'flagged' || bad.text.includes('(derived:')) throw new Error(`Unconfirmed pair was derived: ${bad.text}`);
+  keptPlain(bad, 'Unconfirmed pair was derived');
   const illeg = annotateWorldYear('3749 ●0●7 74');
-  if (illeg.status !== 'flagged' || illeg.text.includes('(derived:')) throw new Error(`Illegible world was derived: ${illeg.text}`);
+  keptPlain(illeg, 'Illegible world was derived');
   const partial = annotateWorldYear('●066 2384 301');
-  if (partial.status !== 'derived' || !partial.text.includes('(derived: 1649 BC)') || partial.badge !== 'Julian illegible') {
+  if (partial.status !== 'derived' || !partial.text.includes('AM 2384 (1649 BC)') || !partial.html.includes('<em>1649 BC</em>') || partial.badge !== 'Julian illegible') {
     throw new Error(`Legible world beside an illegible Julian: ${partial.text}`);
   }
   const two = annotateWorldYear('1757 or 1758');
-  if (two.status !== 'derived' || !two.text.includes('(derived: 2276 BC)') || !two.text.includes('(derived: 2275 BC)') || two.badge !== 'Two figures') {
-    throw new Error(`Two-figure cell: ${two.text}`);
+  if (two.status !== 'derived' || !two.html.includes('AM 1757 (<em>2276 BC</em>)') || !two.html.includes('AM 1758 (<em>2275 BC</em>)') || two.badge !== 'Two figures') {
+    throw new Error(`Two-figure cell: ${two.text} / ${two.html}`);
   }
   const half = annotateWorldYear('1757 or 17●8');
-  if (half.status !== 'flagged' || half.text.includes('(derived:')) throw new Error(`Broken two-figure cell was derived: ${half.text}`);
+  keptPlain(half, 'Broken two-figure cell was derived');
   const glued = annotateWorldYear('45413859');
-  if (glued.status !== 'flagged' || glued.text.includes('(derived:')) throw new Error(`Glued figures were derived: ${glued.text}`);
+  keptPlain(glued, 'Glued figures were derived');
   const single = annotateWorldYear('4454');
-  if (single.status !== 'flagged' || single.text.includes('(derived:')) throw new Error(`A lone figure was derived: ${single.text}`);
+  keptPlain(single, 'A lone figure was derived');
   const cite = annotateWorldYear('L. 3. c. 8. §. 4.');
-  if (cite.status !== 'flagged' || cite.text.includes('(derived:')) throw new Error(`A citation was derived: ${cite.text}`);
+  keptPlain(cite, 'A citation was derived');
   const repeat = annotateWorldYear('lulian. World. Exodus .');
-  if (repeat.status !== 'flagged' || repeat.text.includes('(derived:')) throw new Error(`A repeated heading was derived: ${repeat.text}`);
+  keptPlain(repeat, 'A repeated heading was derived');
   const empty = raleighAmDisplay(null, null);
   if (empty.text || empty.badge !== 'Not derived') throw new Error('Empty AM should be flagged');
   const foreign = raleighDerivedProblems({ source: 'ussher', year_am: 1, derived_bc_ad: -4032, derived_from: RALEIGH_DERIVED_FROM });
