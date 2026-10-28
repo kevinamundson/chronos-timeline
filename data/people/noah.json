@@ -6,10 +6,10 @@
   "summary": "Tenth from Adam; built the Ark and with his family survived the Flood.",
   "sorting_year": -2948,
   "sorting_basis": {
-    "tier": "ussher",
-    "tier_rank": 4,
-    "chronology": "ussher",
-    "note": "Tier 4: Ussher, Annals: 1056 AM, 2948 BC (no higher-tier year available)."
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 2948 BC (no higher-tier year available)."
   },
   "father": "lamech",
   "children": [
@@ -38,6 +38,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "ussher-jones",
+        "date": "1056 2948 Birth of Noah",
+        "year_am": 1056,
+        "year_bc_ad": -2948,
+        "precision": "year",
+        "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 278 (PDF p. 313)",
+        "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+        "source_text_id": "jones-chronology-ot-2026",
+        "note": "The 15th ed. (2002) Chronological Compendium prints this AM and no BC year. That entry is kept. This BC year is the 23rd ed. Appendix F figure."
       },
       {
         "source": "ussher-jones",
@@ -297,7 +308,8 @@
     "jordan-compilation-anno-mundi",
     "raleigh-history-of-the-world-1617",
     "shuckford-sacred-profane-1819",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "jones-chronology-ot-2026"
   ],
   "free_source_links": [
     {
@@ -324,6 +336,11 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 278 (PDF p. 313)"
     }
   ],
   "related": [

@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Division of the kingdom of Israel",
   "summary": "After Solomon's death the kingdom splits into the northern kingdom of Israel and the southern kingdom of Judah (1 Kings 12).",
-  "description": "Added from the Morecraft import (Morecraft, A Christian Survey of World History). No CFAH, Ussher–Jones, Ussher or Generations date exists, so the sort is PROVISIONAL from Morecraft (secondary display) until a tier 1–4 date is added.",
+  "description": "Added from the Morecraft import (Morecraft, A Christian Survey of World History). Jones, Appendix F (23rd ed., 2026), sets the sort. Morecraft stays on display.",
   "sorting_year": -975,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "morecraft",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones, Ussher or Generations date exists, so the sort uses Morecraft (Morecraft, A Christian Survey of World History, p. 17 (PDF p. 26)): 975-721, B.C. Pending owner decision (open question F1)."
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 975 BC (no higher-tier year available)."
   },
   "chronologies": [
     {
@@ -22,6 +22,17 @@
       "citation": null,
       "link": null,
       "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "3029 975 Secession under Jeroboam I of Israel",
+      "year_am": 3029,
+      "year_bc_ad": -975,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 279 (PDF p. 314)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": "This record is the split of the kingdom (1 Kgs 12). Jones's secession line is that event. \"Rehoboam becomes king over Judah\" is a separate line in the same year and does not set this sort."
     },
     {
       "source": "morecraft",
@@ -55,12 +66,19 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "jones-chronology-ot-2026"
   ],
   "related": [
     "reign-of-solomon",
     "fall-of-samaria",
     "fall-of-jerusalem-586-bc"
   ],
-  "free_source_links": []
+  "free_source_links": [
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    }
+  ]
 }

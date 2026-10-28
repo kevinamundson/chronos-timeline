@@ -4,7 +4,7 @@
   "type": "person",
   "title": "Trajan",
   "summary": "Roman emperor. Jones dates his accession and prints “until AD 117”.",
-  "description": "Roman emperor. Jones dates his accession and prints “until AD 117”. Appendix F prints no end year, so no span is stored. NT/intertestamental Jones figure — scope pending Kevin’s ruling",
+  "description": "Roman emperor. Jones dates his accession and prints “until AD 117”. Appendix F prints no end year, so no span is stored.",
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",
@@ -42,7 +42,7 @@
         "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
         "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
         "source_text_id": "jones-chronology-ot-2026",
-        "note": "NT/intertestamental Jones figure — scope pending Kevin’s ruling Jones prints “until AD 117”. No year_bc_ad_end is stored. The end stays in the quotation. No Scripture reference was added. Appendix F prints no end year, so no span is stored."
+        "note": "Jones prints “until AD 117”. No year_bc_ad_end is stored. The end stays in the quotation. No Scripture reference was added. Appendix F prints no end year, so no span is stored."
       }
     ]
   },

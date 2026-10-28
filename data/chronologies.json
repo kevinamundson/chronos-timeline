@@ -189,7 +189,7 @@
       "authors": [
         "Floyd Nolen Jones"
       ],
-      "description": "Floyd Nolen Jones's refinement of Ussher (The Chronology of the Old Testament: A Return to the Basics, 1993-2019; Master Books edition 2004+). CFAH treats it as its biblical baseline (CFAH-1 Table 1), but here it is a separate chronology (sort tier 3) so Jones's own statements are cited directly. Entries are filled only where read in a freely accessible Jones source; everything else is null with a note.",
+      "description": "Floyd Nolen Jones's refinement of Ussher (The Chronology of the Old Testament: A Return to the Basics). The figures that set a sort come from the most recent publication, the 23rd edition (Master Books, 2026), Appendix F, where that edition prints a year for the same event. Older citations (Chart No. 1, 1993; 15th edition, 2002) stay on the record. Where the 23rd edition prints a different year, that year governs the ussher-jones entry and the sort, and the older figure stays in a note. CFAH treats Jones as its biblical baseline (CFAH-1 Table 1), but here Jones is a separate chronology so his own statements are cited directly. It is the third sort tier: after a CFAH anchor point and after CFAH-1 Table 1, and before Ussher. Jones sets the sort for any record that has no CFAH year, in the Old Testament, the intertestamental period, and the New Testament. A Jones row sets that sort only when it names the same event. A row that names a different event is display only. Years are stored only as Jones prints them. An AM figure is never converted into a BC or AD year.",
       "year_conventions": "Creation = 0 AM = 4004 BC; Jones states \"any BC number added to its corresponding AM counterpart will always yield the value 4004\" (15th ed. 2002, Chart Five discussion, p. 110). That rule is documented here but NOT used to convert AM-only figures; year_bc_ad is filled only where Jones prints the BC year.",
       "references": [
         "jones-chart-1",
@@ -218,10 +218,11 @@
         }
       ],
       "open_questions": [
-        "CFAH cites the 21st ed. (Jones 2019). The free 2019 PDF URL (floydnolenjonesministries.com/files/135786316.pdf) returned 404; the 15th ed. (2002) on ntslibrary.com was used. Figures for Creation-Flood should be identical but check against 2019 if obtainable.",
+        "Kevin ruled (2026-10-27) that the 23rd edition (2026) governs a ussher-jones year where it differs from the 15th edition (2002) or the charts. The older figure stays in a note. The free 21st-edition URL (floydnolenjonesministries.com/files/135786316.pdf) returned 404 and was not used.",
         "The ministry page's link for Chart 6 \"Creation to Creator\" points to the Chart 5C file (same URL), so Chart 6 could not be read.",
-        "Jones charts are largely images in the 2002 PDF; patriarch death years and BC birth years were not readable as text.",
-        "23rd ed. (2026) Appendix F is cited as jones-chronology-ot-2026. The 15th ed. (2002) citations are unchanged. Whether later Jones entries should move to the 23rd ed., and whether New Testament rows belong on this chronology, is open (docs/OPEN-QUESTIONS-FOR-KEVIN.md, section M)."
+        "Jones charts are largely images in the 2002 PDF, so patriarch death years on those chart images were not readable as text. Appendix F of the 23rd edition prints AM and BC/AD. Where the 15th-edition compendium printed an AM and no BC, that AM-only entry is kept beside the 23rd-edition entry. No AM figure is converted.",
+        "Kevin ruled (2026-10-27) that Jones sets the sort for the Old Testament, the intertestamental period, and the New Testament wherever no CFAH anchor point or CFAH-1 Table 1 year is present. A CFAH year still wins. A Jones row sets the sort only for the same event (docs/OPEN-QUESTIONS-FOR-KEVIN.md, section M).",
+        "Reign-start years do not sort a king or a judge who has no birth year. That question stays open (docs/OPEN-QUESTIONS-FOR-KEVIN.md, M3). No validator change."
       ]
     },
     {

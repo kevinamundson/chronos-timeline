@@ -4,13 +4,13 @@
   "type": "event",
   "title": "Romans destroy Jerusalem and the temple",
   "summary": "Romans destroy Jerusalem and the temple",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Jones, Appendix F (23rd ed., 2026), sets the sort. The Generations dates below stay on display.",
   "sorting_year": 70,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 681): AD 70. Pending owner decision (open question A8)."
+    "tier": "ussher-jones",
+    "tier_rank": 3,
+    "chronology": "ussher-jones",
+    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): AD 70 (no higher-tier year available)."
   },
   "chronologies": [
     {
@@ -22,6 +22,17 @@
       "citation": null,
       "link": null,
       "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+    },
+    {
+      "source": "ussher-jones",
+      "date": "4073 70 Titus razed Jerusalem and Temple",
+      "year_am": 4073,
+      "year_bc_ad": 70,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": null
     },
     {
       "source": "generations",
@@ -67,7 +78,8 @@
   "sources": [
     "generations-preparing",
     "generations-preparing-2e",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "jones-chronology-ot-2026"
   ],
   "related": [],
   "free_source_links": [
@@ -75,6 +87,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 280 (PDF p. 315)"
     }
   ]
 }

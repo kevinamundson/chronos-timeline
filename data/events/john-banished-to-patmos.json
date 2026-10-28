@@ -4,7 +4,7 @@
   "type": "event",
   "title": "John banished to Patmos",
   "summary": "John is on Patmos for the word of God (Rev 1:9). This is the apostle, not John the Baptist.",
-  "description": "John is on Patmos for the word of God (Rev 1:9). This is the apostle, not John the Baptist. The year is the Appendix F figure, stored as printed. NT/intertestamental Jones figure — scope pending Kevin’s ruling",
+  "description": "John is on Patmos for the word of God (Rev 1:9). This is the apostle, not John the Baptist. The year is the Appendix F figure, stored as printed.",
   "sorting_year": 96,
   "sorting_basis": {
     "tier": "ussher-jones",
@@ -33,7 +33,7 @@
       "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
       "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "source_text_id": "jones-chronology-ot-2026",
-      "note": "NT/intertestamental Jones figure — scope pending Kevin’s ruling"
+      "note": null
     }
   ],
   "people": [],

@@ -4,7 +4,7 @@
   "type": "event",
   "title": "Second missionary journey",
   "summary": "The second missionary journey (Acts 15:40).",
-  "description": "The second missionary journey (Acts 15:40). The year is the Appendix F figure, stored as printed. NT/intertestamental Jones figure — scope pending Kevin’s ruling",
+  "description": "The second missionary journey (Acts 15:40). The year is the Appendix F figure, stored as printed.",
   "sorting_year": 51,
   "sorting_basis": {
     "tier": "ussher-jones",
@@ -33,7 +33,7 @@
       "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 280 (PDF p. 315)",
       "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "source_text_id": "jones-chronology-ot-2026",
-      "note": "CONFLICT: Jones prints AM 4055 and AD 51. Appendix F also prints AM 4004 as 1 AD. A derived check (not stored): 4055 minus 4003 = 52, which is not the printed AD 51. Both printed figures are stored as printed (first-printed rule). Neither was adjusted. The sort uses the printed AD year. NT/intertestamental Jones figure — scope pending Kevin’s ruling"
+      "note": "CONFLICT: Jones prints AM 4055 and AD 51. Appendix F also prints AM 4004 as 1 AD. A derived check (not stored): 4055 minus 4003 = 52, which is not the printed AD 51. Both printed figures are stored as printed (first-printed rule). Neither was adjusted. The sort uses the printed AD year."
     }
   ],
   "people": [],

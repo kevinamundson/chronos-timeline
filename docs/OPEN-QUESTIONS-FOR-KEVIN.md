@@ -35,6 +35,7 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   - The compilation's own BC column is a flat 4010 − AM: Creation 4010, Flood 2354, Abraham enters Canaan 1927, Exodus 1497, Othniel 1382, Saul 1101, Temple 1010 BC. These figures are displayed, not used for sorting.
   - **Correction:** the Drive id passed along earlier (11zUlqRaS-…) is actually your copy of Jordan's *From Creation to Solomon*. The compilation is id **1dPdwn1EBN10HftM8hbS2DPShHDc3kjsS**. Its Drive link only works for you, so the source is marked `access: private-copy`; see C6.
 - ~~Sort-tier fallback~~ (decided 2026-10-17): CFAH anchor point > CFAH-1 Table 1 > Ussher–Jones > Ussher.
+- ~~Jones scope, edition, and same-event sort~~ (ruled 2026-10-27): section M. Jones sets the sort wherever no CFAH year is present, including the intertestamental period and the New Testament. The 23rd edition (2026) governs where its figure differs. A Jones row sets a sort only for the same event. Reign-start sorting (M3) stays open.
 
 ---
 
@@ -55,13 +56,14 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   3. Promote non-AP CFAH dates to a new "CFAH text" tier between Table 1 and Jones.
 - **Recommendation:** option 1. The authors number them as anchor points. Each record already says "OSF preprint".
 
-### A2. Jones's Chart 4 or Jones's 2002 book for Cushan-rishathaim? (OQ 22)
+### A2. Jones's Chart 4 or Jones's 2002 book for Cushan-rishathaim? (OQ 22) — answered 2026-10-27
 - **Why it matters:** the oppression begins in 1418 BC on Chart 4 (1993/2007) but in 1400 BC in *Chronology of the Old Testament* (2002, p. 91). That is a 26-year versus a 44-year gap after Joshua. The record sorts on the chart, which agrees with all of Jones's later chart values.
 - **Options:**
   1. The chart governs (as now).
   2. The book governs.
   3. Always use the newest Jones publication.
 - **Recommendation:** option 1, keeping both figures in the notes.
+- **Kevin's ruling, 2026-10-27:** the most recent publication governs. The 23rd edition, p. 88, prints "fix the date of Cushan's dominion over Israel at 1418 BC (Chart 4)" and "1444 – 1418 = 26". Appendix F prints "2586 1418 Subjugation by Chushan-Rishathaim". The year stays 1418 BC. The 15th edition's 1400 BC stays in the note and does not set the year.
 
 ### A3. Jordan 1991 or Jordan 2001 as the primary Jordan row for the Judges? (OQ 22)
 - **Why it matters:** this is display only, not sorting, but it decides which figure gets the "Jordan" row. His Judges dates move by 25–26 years between the two works, and Samuel's age at death is 110 in one and 85 in the other. The 2001 figures (*Studies in Biblical Chronology* 2–3) are shown first now. See `data/jordan-dates-extract.md`, Part 2 C.
@@ -93,7 +95,7 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
 
 ### A6. Edge-case conventions (OQ 2)
 - **Why it matters:** three records sort on a convention, not on a stated date:
-  - **Cain & Abel** sorts at Ussher's −3874. That is a *latest-possible* date (before Seth's birth), not the year of the event.
+  - **Cain & Abel** now sorts at Jones's 3875 BC (Appendix F, 23rd ed., "129 3875 Cain slays Abel"). The earlier Ussher sort, −3874, was a *latest-possible* date (before Seth's birth), not the year of the event. Kevin ruled on 2026-10-27 that this Jones row is the same event.
   - **The Ark landing** is *derived* from the Flood (−2348), because no tier gives a BC year; Ussher prints only AM 1656 and "May 6".
   - **Ham and Nimrod** are *undated*: no tier gives their birth, so they don't appear as bars. Nimrod's death is now set from AP-48, 2068 BC.
 - **Options:** accept each convention, or say otherwise.
@@ -343,9 +345,9 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
 - The OTA item page for A10357 returned 504 on 2026-10-17. The CC0 statement was taken from the EarlyPrint/TCP TEI files instead.
 - **Recommendation:** I retry it on the next pass; no decision is needed.
 
-### C2. Ussher–Jones edition (OQ 3)
-- CFAH cites Jones 2019 (21st edition), but the free PDF returned 404. The 2002 15th edition and Charts 1 and 4 are used instead.
-- **Recommendation:** if you have the 2019 PDF, share it and I'll reconcile.
+### C2. Ussher–Jones edition (OQ 3) — answered 2026-10-27
+- CFAH cites Jones 2019 (21st edition), but the free PDF (floydnolenjonesministries.com/files/135786316.pdf) returned 404. The 2002 15th edition and Charts 1 and 4 were used for the earlier entries. That 21st-edition file was not used.
+- **Kevin's ruling, 2026-10-27:** the 23rd edition (Master Books, 2026) governs a ussher-jones year where it differs from the 15th edition or the charts. The older figure stays in a note. See section M.
 
 ### C3. CFAH coverage (OQ 1)
 - Six of a planned twenty CFAH papers are published in ARJ, and OSF holds preprints up to CFAH-19. Many records still say "pending CFAH reference".
@@ -1029,38 +1031,55 @@ Source: Rev. William Hales, D.D., second edition, corrected and improved, four v
 
 ## M. Jones, 23rd edition, Appendix F (2026)
 
-Floyd Nolen Jones, *The Chronology of the Old Testament: A Return to the Basics*, 23rd edition ("Classic, Color with Additions – Final Edition"), Master Books, 2026, ISBN 978-1-61458-210-6 (digital). Appendix F, "Dates for Major Biblical Events", printed pp. 278–280 (PDF pp. 313–315). Source id `jones-chronology-ot-2026`. The 15th-edition source `jones-chronology-ot-2002` and every earlier ussher-jones citation are unchanged.
+Floyd Nolen Jones, *The Chronology of the Old Testament: A Return to the Basics*, 23rd edition ("Classic, Color with Additions – Final Edition"), Master Books, 2026, ISBN 978-1-61458-210-6 (digital). Appendix F, "Dates for Major Biblical Events", printed pp. 278–280 (PDF pp. 313–315). Source id `jones-chronology-ot-2026`. The 15th-edition source `jones-chronology-ot-2002` stays. Earlier ussher-jones citations were not bulk-retargeted where the printed AM is the same.
 
-### M1. New Testament and intertestamental scope
-Appendix F continues through the intertestamental period and the New Testament. Those rows were entered on `ussher-jones` with the printed AM and AD years, so the new events sort on tier 3. Each such note says: "NT/intertestamental Jones figure — scope pending Kevin's ruling."
+### Kevin's rulings (27 Oct 2026)
+
+Applied on `gb/jones-sort`. The tier order is unchanged: a CFAH anchor point, then CFAH-1 Table 1, then Ussher–Jones, then Ussher.
+
+1. Jones sets the sort for any record with no CFAH year. That covers the Old Testament, the intertestamental period, and the New Testament. Where a CFAH or Table 1 year is present, that year keeps the sort and Jones stays on display.
+2. A Jones row sets a record's sort only when it names the same event. A row that names a different event is display only, or its own record, and does not move the other record.
+3. Sennacherib's 713 BC "1st invasion as Tartan" is `sennacherib-besieges-jerusalem`. The record `sennacherib-first-invasion` was merged into that slug. The site has no event-slug redirect, so none was added. The 709 BC "2nd invasion as pro-rex" is the separate record `sennacherib-second-invasion`. It does not set the siege.
+4. The 23rd edition governs a ussher-jones year where it differs from the 15th edition or the charts. The older figure stays in a note with its citation. AD years stay as printed. Exception: Othniel, Ehud, and Deborah and Barak keep the oppression-start years 1418, 1378, and 1298 BC. The 23rd-edition deliverance years (1410, 1360, and 1278) stay in the notes.
+5. Jones's birth years set the sort for the undated people in M4. Sarah's printed pair is AM 2018 and 1987 BC. Both figures are stored. The sort uses the printed 1987 BC, and the mismatch is flagged.
+6. Where the Jones year matches the year already stored, and the row is the same event, the tier is `ussher-jones` and the citation is the 23rd edition.
+7. Do not sort a king or a judge on a reign-start year. M3 stays open. No validator change.
+8. The notes that said the New Testament and intertestamental scope was pending were removed.
+
+### M1. New Testament and intertestamental scope — closed 2026-10-27
+Appendix F continues through the intertestamental period and the New Testament. Those rows were entered on `ussher-jones` with the printed AM and AD years. The first pass left a note on each that the New Testament and intertestamental scope was pending Kevin's ruling.
 - **Question:** should these figures stay on `ussher-jones` and sort, or stay display-only until you rule on scope?
 - **Recommendation:** leave them sortable and flagged. Do not blank the printed AD year.
+- **Kevin's ruling:** they sort. Jones governs the New Testament and the intertestamental period until a CFAH year exists. The pending-scope notes were removed. The printed AD year was not blanked. Rows 325–334 keep the first-printed AD figure, flagged where it does not match Jones's usual AM check.
 
-### M2. Which edition later citations should use
-Existing ussher-jones entries still cite the 15th edition (2002). This pass adds the 23rd edition and uses it only for the new Appendix F rows.
+### M2. Which edition later citations should use — answered 2026-10-27
+Existing ussher-jones entries still cite the 15th edition (2002) or the charts. The 23rd edition was added for Appendix F.
 - **Question:** should a later pass retarget old Jones citations to the 23rd edition?
 - **Recommendation:** keep both source ids. Do not retarget old citations in this pass.
+- **Kevin's ruling:** where the 23rd edition prints a different year for the same event, that year governs the ussher-jones entry and the sort. The older figure stays in a note. Citations were not bulk-retargeted where the figure is the same. The 15th-edition source id stays. For the patriarch births, the 15th-edition compendium printed an AM and no BC. That AM-only entry is kept. The 23rd edition's printed BC is the new entry in front of it, and it sets the tier. No AM was converted. Cushan stays 1418 BC (A2). Othniel, Ehud, and Deborah and Barak keep their oppression-start years by the exception in ruling 4.
 
-### M3. Reign-start sorting
+### M3. Reign-start sorting — still open
 The new northern kings and Roman emperors have an accession and no birth year. They stay tier `none`, with `sorting_year` null. Standby shows the accession, or the death where a death is printed, because the death slot is read before reign. Appendix F prints no end years, so no spans were stored. That includes Trajan's "until AD 117", Zimri's 7 days, and Shallum's 1 month.
 - **Question:** should a reign start sort a person who has no birth year?
 - **Recommendation:** no. That would need a validator change. Not in this pass.
+- **Kevin's ruling, 2026-10-27:** do not sort on reign-start years. No validator change. Whether a later pass should do so stays open.
 
 ### M4. Printed AM and BC/AD that do not match
 Jones's own rule is that a BC number added to its AM counterpart yields 4004. Where the printed pair does not, both figures are stored and neither was adjusted. The sort uses the printed BC or AD year.
 - Row 81, dreams of the baker and the butler: AM 2286 and 1717 BC (sum 4003). Entered.
 - Row 276, Esther made queen: AM 3490 and 515 BC (sum 4005). Entered.
 - Row 280, deliverance of the Jews: AM 3496 and 509 BC (sum 4005). Entered.
-- Row 40, Sarah's birth: AM 2018 and 1987 BC (sum 4005). Not entered. `sarai` was not edited.
+- Row 40, Sarah's birth: AM 2018 and 1987 BC (sum 4005). Entered on 2026-10-27. `sarai` sorts at the printed 1987 BC. AM 2018 is stored, and the mismatch is flagged.
 - Row 99, Moses' death: AM 2553 and 1452 BC (sum 4005). Not entered.
 - Row 303 prints AM 4004 as 1 AD. A derived check, not stored, is AM minus 4003. These printed AD years do not match that check: row 325 (AM 4055, AD 51; derived 52), row 328 (AM 4059, AD 54; derived 56), rows 329 and 330 (AM 4063, AD 58; derived 60), rows 331 and 332 (AM 4065, AD 60; derived 62), row 333 (AM 4066, AD 61; derived 63), row 334 (AM 4068, AD 63; derived 65). Row 326 Felix, AD 52, matches AM 4055. Row 335, Nero's persecution, is the same kind of offset and was not entered.
 - **Recommendation:** leave the printed pairs. Do not adjust either figure.
+- **Kevin's ruling, 2026-10-27:** that recommendation stands. Sarah uses the same first-printed rule. Rows 325–334 keep the first-printed AD figure.
 
 ### M5. Identifications and rows left alone
 - Job is Issachar's third son (Gen 46:13), on `job`, not `jobab`. The trial and the death print "year fairly accurate".
 - Promise of Isaac is a new event. It was not added to `covenant-of-circumcision`.
-- Founding of Solomon's Temple, 1012 BC, is a new event. It was not placed on `temple-dedication`.
-- Sennacherib's first invasion (713) and the 185,000 (709) are new events. `sennacherib-besieges-jerusalem` was not edited.
+- Founding of Solomon's Temple, 1012 BC, is a new event. It was not placed on `temple-dedication`. The 23rd edition's dedication line ("3000 1004 Dedication of Solomon's Temple") is now on `temple-dedication` as display only. CFAH-1 Table 1, 1012 BC, keeps the sort.
+- Sennacherib's first invasion (713) was first entered as `sennacherib-first-invasion`. On 2026-10-27 Kevin ruled that it is the same event as `sennacherib-besieges-jerusalem`. The new record was merged into the existing slug. The 185,000 (709) stays `angel-slays-the-assyrians`. The second invasion (709, as pro-rex) is `sennacherib-second-invasion` and does not set the siege.
 - Artaxerxes' decree was not linked to `artaxerxes-longimanus` or `artaxerxes-mnemon`.
 - Ahasuerus is linked to `darius-i`. Jones prints "Darius I". `xerxes` was not used.
 - The Shalmaneser who besieges Samaria was not linked to `shalmaneser-i`.
@@ -1068,5 +1087,14 @@ Jones's own rule is that a BC number added to its AM counterpart yields 4004. Wh
 - The printed row "2187 1817 Death of Eber" is in Appendix F and was missing from the working assessment. Eber already has a record. The death was not added.
 - No Israel or Rome location was created. Leah, Bilhah, and Zilpah were not created.
 - Excluded, because they are another authority's date or have no figure: row 29 (Chaldean date for Babylon), row 32 (Ctesias on Nimrod), row 35 (Seder Olam on the Tower), row 345 (John the Apostle dies, printed "? ?").
-- Linking `sennacherib` and `merodach-baladan`, both previously fully undated, to dated events gives them a linked-record standby. Their sort fields were not changed.
-- **Recommendation:** accept the flags as entered.
+- `sennacherib` has no Jones birth year, so his own sort fields stay unset. `merodach-baladan` is the same. Standby may place either from a linked record.
+- **Same-event holds from the 2026-10-27 pass.** These Jones rows do not set the named record:
+  - Row 100, "Israel crosses Jordan: Enters Canaan", is not `conquest-of-canaan`. The crossing is already on `crossing-the-jordan`. The war through 1445 stays as it was.
+  - Row 161, "Rehoboam becomes king over Judah", does not set `division-of-the-kingdom`. The division uses "Secession under Jeroboam I of Israel".
+  - Row 224, the 709 BC second invasion, does not set the 713 BC siege.
+  - Row 281, "Ezra beautifies Temple-Artaxerxes 7th", is `ezra-beautifies-the-temple`. `ezra-returns-to-jerusalem` keeps its sort.
+  - Row 286, "Nehemiah comes to Jerusalem", is `nehemiah-comes-to-jerusalem`. The wall uses "Wall of Jerusalem built & dedicated".
+  - Row 290, "Persian Empire falls to Alexander", is `persian-empire-falls-to-alexander`. It does not name Gaugamela, so `battle-of-gaugamela` keeps its sort.
+  - Row 291, "Alexander dies, Empire divided 4 ways", is `alexander-dies-empire-divided`. `wars-of-the-diadochi` keeps its sort.
+  - Row 292, "Antiochus Epiphanes plunders Temple", is `antiochus-plunders-the-temple`. `persecution-under-antiochus-iv` keeps its sort.
+- **Recommendation:** accept the flags as entered. The 2026-10-27 rulings above are applied.

@@ -27,13 +27,14 @@
     },
     {
       "source": "ussher-jones",
-      "date": null,
-      "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "Jones Chart No. 1 dates only the BEGINNING of the Temple (\"2992 AM 1012 BC In his 4th year Solomon begins the TEMPLE on the 2nd Day 2nd Mo.\"); no dedication date found in the Jones sources read. Conflicts with CFAH-1 Table 1's \"Dedicates\"."
+      "date": "3000 1004 Dedication of Solomon’s Temple",
+      "year_am": 3000,
+      "year_bc_ad": -1004,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 23rd ed. (Master Books, 2026), Appendix F, printed p. 279 (PDF p. 314)",
+      "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "source_text_id": "jones-chronology-ot-2026",
+      "note": "The 23rd ed. prints the dedication in 1004 BC. Chart No. 1 dated the beginning, not the dedication; that older note is replaced by this printed dedication. The founding in 1012 BC is on founding-of-solomons-temple. CFAH-1 Table 1 keeps the sort at 1012 BC."
     },
     {
       "source": "bible",
@@ -179,7 +180,8 @@
     "jordan-sbc-2",
     "jordan-compilation-anno-mundi",
     "cory-ancient-fragments-1876",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "jones-chronology-ot-2026"
   ],
   "free_source_links": [
     {
@@ -211,6 +213,11 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "jones-chronology-ot-2026",
+      "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
+      "locator": "Appendix F, printed p. 279 (PDF p. 314)"
     }
   ],
   "related": [
@@ -220,6 +227,6 @@
     "mount-moriah"
   ],
   "open_questions": [
-    "Does CFAH intend 1012 BC as the Temple foundation (as Jones and Ussher) or dedication (as printed in CFAH-1 Table 1)? Ask the authors / check the 2019 Jones edition."
+    "Does CFAH intend 1012 BC as the Temple foundation (as Jones's Chart No. 1 and Ussher) or dedication (as printed in CFAH-1 Table 1)? The 23rd ed. (2026) Appendix F prints the dedication at 1004 BC. Ask the authors. The 2019 PDF was not used."
   ]
 }
