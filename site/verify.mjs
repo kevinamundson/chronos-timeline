@@ -702,17 +702,43 @@ for (const [path, shot, sel] of [
   const GENERIC = new Set(['pdf', 'download', 'preprint', 'link', 'here', 'file', 'paper', 'osf', 'source', 'open', 'read', 'article', 'copy', 'duplicate', 'alternate', 'archived']);
   const readLists = () => {
     const linkText = (a) => (a ? [...a.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join('') : '').replace(/\s+/g, ' ').trim();
+    const linkOf = (a) => ({
+      text: linkText(a),
+      href: a?.getAttribute('href') || '',
+      target: a?.getAttribute('target') || '',
+      rel: a?.getAttribute('rel') || '',
+      hidden: a?.querySelector('.visually-hidden')?.textContent || '',
+    });
     const itemOf = (li) => {
       const a = li.querySelector(':scope > a');
       const copies = [...li.querySelectorAll(':scope > ul.cfah-copies > li')].map(itemOf);
       return {
-        text: linkText(a),
-        href: a?.getAttribute('href') || '',
-        target: a?.getAttribute('target') || '',
-        rel: a?.getAttribute('rel') || '',
-        hidden: a?.querySelector('.visually-hidden')?.textContent || '',
+        ...linkOf(a),
         tag: li.querySelector(':scope > .tag-copy')?.textContent?.trim() || '',
+        access: li.querySelector(':scope > .tag:not(.tag-copy)')?.textContent?.trim() || '',
         copies,
+      };
+    };
+    const forkOf = (li) => {
+      const node = li.querySelector(':scope > .cfah-fork-node');
+      const a = node?.querySelector(':scope > a');
+      const copies = [...li.querySelectorAll(':scope > ul.cfah-copies > li')].map(itemOf);
+      const replies = [...li.querySelectorAll(':scope > ol.cfah-thread > li.cfah-fork')].map(forkOf);
+      return {
+        ...linkOf(a),
+        id: li.getAttribute('data-id') || '',
+        kind: node?.querySelector(':scope > .tag-kind')?.textContent?.trim() || '',
+        author: node?.querySelector(':scope > .cfah-author')?.textContent?.trim() || '',
+        on: node?.querySelector(':scope > .cfah-on')?.textContent?.trim() || '',
+        also: (() => {
+          const el = node?.querySelector(':scope > .cfah-also');
+          if (!el) return '';
+          return [...el.childNodes].map((n) => (n.nodeType === Node.TEXT_NODE ? n.textContent : (n.nodeType === Node.ELEMENT_NODE && n.tagName === 'A' ? linkText(n) : ''))).join('').replace(/\s+/g, ' ').trim();
+        })(),
+        alsoHrefs: [...(node?.querySelectorAll(':scope > .cfah-also a') || [])].map((el) => el.getAttribute('href') || ''),
+        tag: '',
+        copies,
+        replies,
       };
     };
     return [...document.querySelectorAll('#cfah-platforms, #cfah-platforms-sources')].map((ul) => [...ul.querySelectorAll(':scope > li.cfah-platform')].map((sec) => {
@@ -724,9 +750,10 @@ for (const [path, shot, sel] of [
         target: head?.getAttribute('target') || '',
         rel: head?.getAttribute('rel') || '',
         hidden: head?.querySelector('.visually-hidden')?.textContent || '',
+        headTag: sec.querySelector(':scope > .tag')?.textContent?.trim() || '',
         papers: [...sec.querySelectorAll(':scope > ul.links > li:not(.cfah-responses)')].map(itemOf),
         responseLabel: responses?.querySelector(':scope > .cfah-responses-label')?.textContent?.trim() || '',
-        responses: responses ? [...responses.querySelectorAll(':scope > ul.links > li')].map(itemOf) : [],
+        responses: responses ? [...responses.querySelectorAll(':scope > ol.cfah-thread > li.cfah-fork')].map(forkOf) : [],
       };
     }));
   };
@@ -734,9 +761,14 @@ for (const [path, shot, sel] of [
     for (const item of items) {
       out.push(item);
       if (item.copies?.length) walk(item.copies, out);
+      if (item.replies?.length) walk(item.replies, out);
     }
     return out;
   };
+  const outlineOf = (items, depth = 0) => items.map((item) => {
+    const line = `${'  '.repeat(depth)}${item.kind || item.tag || 'item'} ${item.text}${item.author ? ` — ${item.author}` : ''}${item.on ? ` ${item.on}` : ''}${item.also ? ` ${item.also}` : ''}`;
+    return [line, ...outlineOf(item.replies || [], depth + 1), ...(item.copies || []).map((copy) => `${'  '.repeat(depth + 1)}${copy.tag} ${copy.text}`)];
+  }).flat();
   const o = await open('/chronologies/', { width: 390, height: 844 });
   const lists = await o.page.evaluate(readLists);
   const underCard = lists[0] || [];
@@ -770,16 +802,69 @@ for (const [path, shot, sel] of [
   check('chronologies: CFAH links say they open in a new tab', a11y);
   const arj = underCard[0];
   const osf = underCard[1];
-  const osgood = arj?.responses.find((row) => row.href.includes('comments-1'));
-  check('chronologies: ARJ comment names its author', !!osgood && osgood.text.endsWith('— A. John M. Osgood'), osgood?.text || '');
+  const findFork = (items, hrefPart) => {
+    for (const item of items || []) {
+      if (item.href?.includes(hrefPart)) return item;
+      const nested = findFork(item.replies, hrefPart);
+      if (nested) return nested;
+    }
+    return null;
+  };
+  const osgood = findFork(arj?.responses, 'comments-1');
+  check('chronologies: ARJ comment names its author', !!osgood && osgood.author === 'A. John M. Osgood' && !osgood.text.includes('Osgood'), osgood ? `${osgood.text} / ${osgood.author}` : '');
+  check('chronologies: section headers carry free-to-read once', underCard.every((s) => s.headTag === 'free-to-read') && underCard.every((s) => s.papers.every((p) => p.access === 'free-to-read')), underCard.map((s) => s.headTag).join(' | '));
   const gmx = osf?.papers.find((row) => row.href === 'https://osf.io/gmx5j/');
   const older = gmx?.copies.find((row) => row.href === 'https://osf.io/t3vu5/');
   check('chronologies: gmx5j uses the current OSF title and nests the older CFAH-7A copy', gmx?.text === 'CFAH-7: A Chronological Baseline for the Old and Middle Kingdoms of Egypt' && older?.tag === 'older version' && older.text.startsWith('CFAH-7A:'), `${gmx?.text || ''} / ${older?.tag || ''} ${older?.text || ''}`);
   const tweedyInPapers = osf?.papers.some((row) => row.href === 'https://osf.io/dfkbm/');
   const tweedy = osf?.responses.find((row) => row.href === 'https://osf.io/dfkbm/');
-  check('chronologies: Tweedy ice-age response is under OSF Responses', !tweedyInPapers && tweedy?.text === "CFAH Response to Tweedy's Ice Age Paper", tweedy?.text || '');
+  const tweedyPdf = tweedy?.copies.find((row) => row.tag === 'PDF');
+  check('chronologies: Tweedy ice-age response is under OSF Responses', !tweedyInPapers && tweedy?.text === "CFAH Response to Tweedy's Ice Age Paper" && !tweedy.on && tweedyPdf?.href.startsWith('https://osf.io/download/'), tweedy?.text || '');
   const pdfs = allCopies.filter((row) => row.tag === 'PDF');
   check('chronologies: OSF paper files are tagged PDF', pdfs.length >= 20 && pdfs.every((row) => row.href.startsWith('https://osf.io/')), String(pdfs.length));
+  const reply = findFork(arj?.responses, 'ancient-history-reply');
+  const comments2 = arj?.responses.find((row) => row.href.includes('comments-2'));
+  const habermehl = findFork(arj?.responses, '1-5-comments/');
+  const habermehlResponse = findFork(habermehl?.replies, '1-5-response');
+  const tweedyComments = findFork(arj?.responses, 'cfah-1-5-comments-tweedy');
+  const partsReply = findFork(tweedyComments?.replies, 'cfah-1-5-reply');
+  const further = findFork(partsReply?.replies, 'further-comments-griffith-white');
+  const threadOk = osgood?.on === 'on Papers 1 and 3'
+    && osgood?.kind === 'Comment'
+    && reply && osgood.replies?.some((row) => row.href === reply.href)
+    && reply.kind === 'Reply'
+    && reply.also === 'also answers: Comments 2'
+    && reply.alsoHrefs?.[0]?.includes('comments-2')
+    && comments2?.on === 'on Paper 3'
+    && !comments2.replies?.length
+    && habermehl?.on === 'on Papers 1–5'
+    && habermehlResponse?.kind === 'Response'
+    && tweedyComments?.on === 'on Papers 1–5'
+    && partsReply?.kind === 'Reply'
+    && further?.kind === 'Comment'
+    && further?.author === 'Eric J. Tweedy';
+  check('chronologies: ARJ responses fork under the comment they answer', threadOk, outlineOf(arj?.responses || []).join(' / '));
+  const parentIds = new Map();
+  const indexParents = (items, ancestors = []) => {
+    for (const item of items || []) {
+      parentIds.set(item.id, ancestors);
+      indexParents(item.replies, [...ancestors, item.id]);
+    }
+  };
+  indexParents(arj?.responses);
+  indexParents(osf?.responses);
+  const sourceDoc = JSON.parse(readFileSync(join(here, '..', 'data', 'sources.json'), 'utf8'));
+  const bySource = new Map(sourceDoc.sources.map((s) => [s.id, s]));
+  const missingParents = [];
+  for (const s of sourceDoc.sources) {
+    if (s.role !== 'response') continue;
+    const responseTargets = (s.responds_to || []).filter((id) => bySource.get(id)?.role === 'response');
+    if (!responseTargets.length) continue;
+    const ancestors = parentIds.get(s.id) || [];
+    if (!ancestors.includes(responseTargets[0]) || !bySource.get(responseTargets[0])) missingParents.push(`${s.id} -> ${responseTargets[0]}`);
+    for (const extra of responseTargets.slice(1)) if (!bySource.get(extra)) missingParents.push(`${s.id} also ${extra}`);
+  }
+  check('chronologies: every reply parent exists in the fork', missingParents.length === 0, missingParents.join(' | '));
   check('chronologies: Beckman reply is not in the CFAH list', !links.some((row) => row.href.includes('5b64m')));
   const fit = await o.page.evaluate(() => {
     const vw = document.documentElement.clientWidth;
@@ -790,10 +875,49 @@ for (const [path, shot, sel] of [
     });
   });
   check('chronologies: CFAH list fits at 390px', fit.length === 2 && fit.every((row) => row.left >= 0 && row.right <= row.vw + 1 && row.wide === 0), JSON.stringify(fit));
+  const threadPaint = await o.page.evaluate(() => {
+    const block = document.querySelector('#cfah-platforms .cfah-responses');
+    const lists = [...document.querySelectorAll('#cfah-platforms .cfah-responses, #cfah-platforms .cfah-responses ol, #cfah-platforms .cfah-responses ul, #cfah-platforms .cfah-responses li')];
+    const bullets = lists.filter((el) => getComputedStyle(el).listStyleType !== 'none').map((el) => `${el.tagName}.${el.className} ${getComputedStyle(el).listStyleType}`);
+    const forks = [...document.querySelectorAll('#cfah-platforms .cfah-fork')];
+    const connectors = forks.map((el) => {
+      const elbow = getComputedStyle(el, '::before');
+      const trunk = getComputedStyle(el.parentElement);
+      return {
+        elbow: parseFloat(elbow.width) > 0 && parseFloat(elbow.borderTopWidth) >= 1,
+        trunk: parseFloat(trunk.borderLeftWidth) >= 1,
+      };
+    });
+    const accessInResponses = [...document.querySelectorAll('#cfah-platforms .cfah-responses .tag')].filter((el) => !el.classList.contains('tag-kind') && !el.classList.contains('tag-copy')).map((el) => el.textContent.trim());
+    return {
+      bullets,
+      forks: forks.length,
+      connectorsOk: connectors.length > 0 && connectors.every((row) => row.elbow && row.trunk),
+      accessInResponses,
+      marker: block ? getComputedStyle(block, '::marker').content : '',
+    };
+  });
+  check('chronologies: Responses have no bullets', threadPaint.bullets.length === 0 && threadPaint.marker !== 'disc', threadPaint.bullets.join(' | ') || threadPaint.marker);
+  check('chronologies: response connectors render', threadPaint.connectorsOk && threadPaint.forks >= 8, JSON.stringify({ forks: threadPaint.forks, connectorsOk: threadPaint.connectorsOk }));
+  check('chronologies: responses do not repeat free-to-read', threadPaint.accessInResponses.length === 0, threadPaint.accessInResponses.join(' | '));
   await o.page.addStyleTag({ content: '.site-header{position:static !important}' });
   await o.page.locator('#cfah .cfah-platforms').screenshot({ path: join(SHOTS, 'chronologies-cfah-list-390.png') });
+  await o.page.locator('#cfah-platforms .cfah-responses').nth(0).screenshot({ path: join(SHOTS, 'chronologies-responses-arj-390.png') });
+  await o.page.locator('#cfah-platforms .cfah-responses').nth(1).screenshot({ path: join(SHOTS, 'chronologies-responses-osf-390.png') });
   check('chronologies: no console errors on the CFAH list', o.errors.length === 0, o.errors.join(' | '));
   await o.ctx.close();
+  const wide = await open('/chronologies/', { width: 1280, height: 900 });
+  await wide.page.addStyleTag({ content: '.site-header{position:static !important}' });
+  await wide.page.locator('#cfah-platforms .cfah-responses').nth(0).screenshot({ path: join(SHOTS, 'chronologies-responses-arj-1280.png') });
+  await wide.page.locator('#cfah-platforms .cfah-responses').nth(1).screenshot({ path: join(SHOTS, 'chronologies-responses-osf-1280.png') });
+  const wideFit = await wide.page.evaluate(() => {
+    const vw = document.documentElement.clientWidth;
+    const block = document.querySelector('#cfah-platforms .cfah-responses');
+    const wideNodes = [...block.querySelectorAll('li, a')].filter((item) => item.getBoundingClientRect().right > vw + 1).length;
+    return { vw, wideNodes };
+  });
+  check('chronologies: ARJ responses fit at 1280px', wideFit.vw === 1280 && wideFit.wideNodes === 0, JSON.stringify(wideFit));
+  await wide.ctx.close();
   const dark = await open('/chronologies/', { width: 390, height: 844, scheme: 'dark' });
   const contrast = await dark.page.evaluate(() => {
     const a = document.querySelector('#cfah-platforms a');
@@ -805,7 +929,23 @@ for (const [path, shot, sel] of [
     return { color, tagColor, bg, same: color === bg || tagColor === bg };
   });
   check('chronologies: CFAH links and copy tags stay visible in dark mode', contrast.color && contrast.bg && !contrast.same, JSON.stringify(contrast));
+  const darkLine = await dark.page.evaluate(() => {
+    const fork = document.querySelector('#cfah-platforms .cfah-fork');
+    const trunk = fork?.parentElement;
+    if (!fork || !trunk) return { missing: true };
+    const elbow = getComputedStyle(fork, '::before').borderTopColor;
+    const line = getComputedStyle(trunk).borderLeftColor;
+    const bg = getComputedStyle(document.body).backgroundColor;
+    return { elbow, line, bg, same: elbow === bg || line === bg };
+  });
+  check('chronologies: response connectors stay visible in dark mode', darkLine.elbow && darkLine.line && !darkLine.same, JSON.stringify(darkLine));
+  await dark.page.addStyleTag({ content: '.site-header{position:static !important}' });
+  await dark.page.locator('#cfah-platforms .cfah-responses').nth(0).screenshot({ path: join(SHOTS, 'chronologies-responses-arj-390-dark.png') });
   await dark.ctx.close();
+  const darkWide = await open('/chronologies/', { width: 1280, height: 900, scheme: 'dark' });
+  await darkWide.page.addStyleTag({ content: '.site-header{position:static !important}' });
+  await darkWide.page.locator('#cfah-platforms .cfah-responses').nth(0).screenshot({ path: join(SHOTS, 'chronologies-responses-arj-1280-dark.png') });
+  await darkWide.ctx.close();
 }
 {
   const o = await open('/chronologies/raleigh-chronological-table/');

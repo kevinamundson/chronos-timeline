@@ -81,12 +81,41 @@ if (srcIds.size !== srcDoc.sources.length) err('data/sources.json', 'duplicate s
     if (s.role === 'copy' && !s.copy_kind) err('data/sources.json', `${s.id}: a copy needs copy_kind`);
     if (s.role === 'copy' && !s.parent) err('data/sources.json', `${s.id}: a copy needs parent`);
     if (s.copy_kind && s.role !== 'copy') err('data/sources.json', `${s.id}: copy_kind is only for role copy`);
+    if (s.role === 'copy') {
+      const copyParent = srcById.get(s.parent);
+      if (!copyParent || !['paper', 'response', 'copy'].includes(copyParent.role)) err('data/sources.json', `${s.id}: a copy parent must be a paper, a response, or a copy`);
+    }
     if ((s.role === 'paper' || s.role === 'response') && !s.parent) err('data/sources.json', `${s.id}: ${s.role} needs parent`);
     if (s.role === 'series' && s.parent) err('data/sources.json', `${s.id}: a series header has no parent`);
     if (s.role && !s.platform) err('data/sources.json', `${s.id}: role needs platform`);
     if (s.parent && (s.role === 'paper' || s.role === 'response') && srcById.get(s.parent)?.role !== 'series') err('data/sources.json', `${s.id}: ${s.role} parent must be a series`);
     if (s.platform && !hostOk(s.platform, s.url)) err('data/sources.json', `${s.id}: ${s.platform} url must be on ${s.platform === 'arj' ? 'answersresearchjournal.org' : 'osf.io'}`);
+    if (s.responds_to && s.role !== 'response') err('data/sources.json', `${s.id}: responds_to is only for a response`);
+    if (s.role === 'response') {
+      const kinds = [
+        /\bReply\b/.test(s.title) ? 'Reply' : '',
+        /\bResponse\b/.test(s.title) ? 'Response' : '',
+        /\bComments?\b/.test(s.title) ? 'Comment' : '',
+      ].filter(Boolean);
+      if (kinds.length !== 1) err('data/sources.json', `${s.id}: a response title must use exactly one of Comment, Reply, or Response`);
+    }
   }
+  const walkResponds = (id, stack) => {
+    const s = srcById.get(id);
+    for (const tid of s?.responds_to || []) {
+      const target = srcById.get(tid);
+      if (!target) { err('data/sources.json', `${id}: responds_to "${tid}" is not a source`); continue; }
+      if (target.role !== 'paper' && target.role !== 'response') err('data/sources.json', `${id}: responds_to "${tid}" must be a paper or a response`);
+      if (target.platform !== s.platform) err('data/sources.json', `${id}: responds_to "${tid}" is on another platform`);
+      if (target.parent !== s.parent) err('data/sources.json', `${id}: responds_to "${tid}" is outside this section`);
+      if (target.role === 'paper' && !/^cfah-\d+$/.test(target.id)) err('data/sources.json', `${id}: responds_to paper "${tid}" has no CFAH paper number`);
+      if (target.role === 'response') {
+        if (stack.includes(tid)) err('data/sources.json', `${id}: responds_to cycle at "${tid}"`);
+        else walkResponds(tid, [...stack, tid]);
+      }
+    }
+  };
+  for (const s of srcDoc.sources) if (s.role === 'response' && s.responds_to) walkResponds(s.id, [s.id]);
 }
 if (chronDoc.chronologies.filter((c) => c.primary).length !== 1) err('data/chronologies.json', 'exactly one chronology must be primary');
 for (const c of chronDoc.chronologies) for (const r of c.references) if (!srcIds.has(r)) err('data/chronologies.json', `${c.id}: unknown source ${r}`);

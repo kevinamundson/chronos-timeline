@@ -1634,7 +1634,7 @@
       "access": "free-to-read",
       "license_note": "Free to read on OSF. The OSF component sets no license (checked via the OSF API 2026-10-28), so all rights reserved: only short quotes and data values are used here.",
       "verified_on": "2026-10-28",
-      "note": "Public OSF component under project prhfz (filter[root]=prhfz on 2026-10-28). Its parent component ur8z9 returned HTTP 401, so only this public page is linked. Listed under OSF Responses.",
+      "note": "Public OSF component under project prhfz (filter[root]=prhfz on 2026-10-28). Its parent component ur8z9 returned HTTP 401, so only this public page is linked. The OSF node description says it is a response to Tweedy's 2024 paper on Oard's Ice Age on Masoretic and LXX timelines. That paper is not an item on this list, and the file name is Tweedy Ice Age Response.pdf. It stays at the top of OSF Responses.",
       "platform": "osf",
       "role": "response",
       "parent": "cfah-project-osf",
@@ -1661,6 +1661,7 @@
       "platform": "arj",
       "role": "response",
       "parent": "cfah-arj-series",
+      "responds_to": ["cfah-1", "cfah-3"],
       "series_parent": "cfah-arj-series",
       "list_order": 1,
       "title": "“Chronological Framework of Ancient History”: Comments 1",
@@ -1674,13 +1675,15 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-28"
+      "verified_on": "2026-10-28",
+      "note": "Responds to CFAH-1 and CFAH-3. The article's text and references, fetched 2026-10-28, cite Griffith and White 2022 (paper 1) and Griffith and White 2023 (paper 3). They do not cite papers 2, 4, or 5."
     },
     {
       "id": "cfah-arj-comments-2",
       "platform": "arj",
       "role": "response",
       "parent": "cfah-arj-series",
+      "responds_to": ["cfah-3"],
       "series_parent": "cfah-arj-series",
       "list_order": 2,
       "title": "“Chronological Framework of Ancient History”: Comments 2",
@@ -1694,13 +1697,15 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-28"
+      "verified_on": "2026-10-28",
+      "note": "Responds to CFAH-3. The opening calls it the third paper by Griffith and White (Griffith and White 2023), and the references list that paper only. Fetched 2026-10-28."
     },
     {
       "id": "cfah-arj-reply",
       "platform": "arj",
       "role": "response",
       "parent": "cfah-arj-series",
+      "responds_to": ["cfah-arj-comments-1", "cfah-arj-comments-2"],
       "series_parent": "cfah-arj-series",
       "list_order": 3,
       "title": "“Chronological Framework of Ancient History”: Reply",
@@ -1715,13 +1720,15 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-28"
+      "verified_on": "2026-10-28",
+      "note": "Responds to Osgood's Comments 1 and Porter's Comments 2. The text has a section for each, and the references list both 2024 comments. Fetched 2026-10-28. The opening also thanks readers of the first three papers. Paper 2 is not a reference of either comment, so it is not a responds_to target."
     },
     {
       "id": "cfah-arj-papers-1-5-comments-habermehl",
       "platform": "arj",
       "role": "response",
       "parent": "cfah-arj-series",
+      "responds_to": ["cfah-1", "cfah-2", "cfah-3", "cfah-4", "cfah-5"],
       "series_parent": "cfah-arj-series",
       "list_order": 4,
       "title": "Chronological Framework of Ancient History. Papers 1–5: Comments",
@@ -1736,13 +1743,14 @@
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
       "verified_on": "2026-10-28",
-      "note": "Title is the ARJ page title fetched 2026-10-28. The doc of that date recorded the link text as “Chronological Framework of Ancient History”: Papers 1–5. Comments."
+      "note": "Title is the ARJ page title fetched 2026-10-28. The doc of that date recorded the link text as “Chronological Framework of Ancient History”: Papers 1–5. Comments. Responds to CFAH-1 through CFAH-5. The opening and the references cite Griffith and White 2022a, 2022b, 2023a, 2023b, and 2023c."
     },
     {
       "id": "cfah-arj-papers-1-5-response",
       "platform": "arj",
       "role": "response",
       "parent": "cfah-arj-series",
+      "responds_to": ["cfah-arj-papers-1-5-comments-habermehl"],
       "series_parent": "cfah-arj-series",
       "list_order": 5,
       "title": "Chronological Framework of Ancient History. Papers 1–5: Response",
@@ -1757,13 +1765,15 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-28"
+      "verified_on": "2026-10-28",
+      "note": "Responds to Habermehl's Papers 1–5 comments. The opening calls this post a response to Habermehl 2024, and the references list that article. Fetched 2026-10-28."
     },
     {
       "id": "cfah-arj-papers-1-5-comments-tweedy",
       "platform": "arj",
       "role": "response",
       "parent": "cfah-arj-series",
+      "responds_to": ["cfah-1", "cfah-2", "cfah-3", "cfah-4", "cfah-5"],
       "series_parent": "cfah-arj-series",
       "list_order": 6,
       "title": "Chronological Framework of Ancient History. Papers 1–5. Comments",
@@ -1777,13 +1787,15 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-28"
+      "verified_on": "2026-10-28",
+      "note": "Responds to CFAH-1 through CFAH-5. The opening and the references cite Griffith and White 2022a, 2022b, 2023a, 2023b, and 2023c. Fetched 2026-10-28."
     },
     {
       "id": "cfah-arj-parts-1-5-reply",
       "platform": "arj",
       "role": "response",
       "parent": "cfah-arj-series",
+      "responds_to": ["cfah-arj-papers-1-5-comments-tweedy"],
       "series_parent": "cfah-arj-series",
       "list_order": 7,
       "title": "Chronological Framework of Ancient History: Parts 1–5. Reply",
@@ -1798,13 +1810,15 @@
       "alt_urls": [],
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
-      "verified_on": "2026-10-28"
+      "verified_on": "2026-10-28",
+      "note": "Responds to Tweedy's Papers 1–5 comments. The opening says Tweedy (2024) critiqued the series, and the references list that article at the Tweedy comments URL. Fetched 2026-10-28."
     },
     {
       "id": "cfah-arj-further-comments-tweedy",
       "platform": "arj",
       "role": "response",
       "parent": "cfah-arj-series",
+      "responds_to": ["cfah-arj-parts-1-5-reply"],
       "series_parent": "cfah-arj-series",
       "list_order": 8,
       "title": "Further Comments on Griffith and White",
@@ -1819,7 +1833,7 @@
       "access": "free-to-read",
       "license_note": "Free to read on answersresearchjournal.org; copyrighted by Answers in Genesis (not public domain).",
       "verified_on": "2026-10-28",
-      "note": "On the ARJ Chronology series page (fetched 2026-10-28) and not in the doc export. Title from the article page. Author from the byline."
+      "note": "On the ARJ Chronology series page (fetched 2026-10-28) and not in the doc export. Title from the article page. Author from the byline. Responds to the Parts 1–5 Reply. The opening says Griffith and White (2024) replied to Tweedy's comments, and the references list that reply at its ARJ URL."
     },
     {
       "id": "cfah-13-osf-pdf",

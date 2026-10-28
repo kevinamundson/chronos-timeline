@@ -33,9 +33,10 @@
         "series_label": { "type": "string", "minLength": 1, "description": "Label for a series header when it differs from title. The OSF Preprint section uses this." },
         "preprint_url": { "$ref": "common.schema.json#/$defs/url", "description": "Preprint page for the same paper, when url is the project page. Shown as a second link on the series line." },
         "platform": { "enum": ["arj", "osf"], "description": "Where this CFAH list entry is published. arj = Answers Research Journal. osf = the OSF project." },
-        "role": { "enum": ["series", "paper", "response", "copy"], "description": "series = a platform section header. paper = a CFAH article. response = a comment, reply, or response. copy = a duplicate, alternate, archived, older, or PDF copy of parent." },
-        "copy_kind": { "type": "string", "minLength": 1, "description": "Short tag for a copy, such as duplicate, alternate, archived, older version, or PDF." },
-        "parent": { "$ref": "common.schema.json#/$defs/slug", "description": "Series this paper or response belongs to, or the item this copy duplicates." },
+        "role": { "enum": ["series", "paper", "response", "copy"], "description": "series = a platform section header. paper = a CFAH article. response = a comment, reply, or response. copy = a tagged copy of its parent. That parent may be a paper, a response, or another copy, so a response can carry its own copies." },
+        "copy_kind": { "type": "string", "minLength": 1, "description": "Short tag for a copy, such as duplicate, alternate, archived, older version, or PDF. Only on role copy. A response's PDF uses it the same way a paper's PDF does." },
+        "parent": { "$ref": "common.schema.json#/$defs/slug", "description": "Series this paper or response belongs to. For a copy, the paper, response, or copy it duplicates." },
+        "responds_to": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "common.schema.json#/$defs/slug" }, "description": "Source ids this response answers, in the order the article names them. A paper id is a top-level comment on that paper. A response id is a reply to that comment or reply. The first response id is the tree parent. Later response ids are also-answers. Omit when the article names no item on this list." },
         "list_order": { "type": "integer", "minimum": 1, "description": "Order within the parent on the CFAH list." }
       }
     }
