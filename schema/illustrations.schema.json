@@ -37,8 +37,11 @@
               "required": ["id", "basis"],
               "properties": {
                 "id": { "$ref": "common.schema.json#/$defs/slug" },
-                "basis": { "enum": ["named-in-title", "in-scripture-passage", "event-depicted"] },
-                "ref": { "type": "string", "description": "OSIS reference that places this person in the scene. Required when basis is in-scripture-passage." }
+                "basis": {
+                  "enum": ["named-in-title", "depicted", "event-depicted"],
+                  "description": "Why this plate is linked. A person is named-in-title (the name is in the file title and the person is drawn) or depicted (the person is clearly the figure shown). An event is event-depicted. in-scripture-passage is not a basis: a person who is only named in the verse, and not drawn, is not linked."
+                },
+                "note": { "type": "string", "minLength": 1, "description": "Who is shown, and where in the plate. Required when basis is depicted. Absent on named-in-title and event-depicted." }
               }
             }
           }

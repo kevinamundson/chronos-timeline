@@ -4,7 +4,7 @@ The 220 canonical plates are in `data/illustrations/dore-1866.json` and on `/ill
 
 A Scripture reference on a plate is identified from the Archive.org file title. It is not printed on the engraving. Where the title does not name one passage, `scripture_ref` is null.
 
-A plate is linked only to a person or event the scene clearly includes. A crowd ("his brothers", "the Israelites", "the disciples") is not split into every named record. A closed list in the verse is linked (Noah's sons in Gen 7:13; Shem and Japheth in Gen 9:23).
+A person is linked only when the plate draws that person. The basis is `named-in-title` (the file title names the person, and that person is drawn) or `depicted` (the person is clearly the figure shown, with a short note of who and where). An event is linked when the plate draws that event (`event-depicted`). A person who is only named in the verse, and not drawn, is not linked. A crowd is not split into every named record. The plate-by-plate decisions of the 2026-10-29 correction are in `docs/DORE-AUDIT.md`.
 
 ## Scripture reference left null
 
@@ -12,7 +12,7 @@ These titles do not settle on one passage. People or events are linked only wher
 
 | Plate | Title | Why the reference is null |
 |---|---|---|
-| 006 | The World is Destroyed by Water | The title covers the flood, not one passage. The flood event and the four men are linked. |
+| 006 | The World is Destroyed by Water | The title covers the flood, not one passage. The flood event is linked. Noah, Shem, Ham and Japheth are not drawn as separate figures, so they are not linked. |
 | 007 | The Great Flood | Same as plate 006. |
 | 032 | Moses and Aaron Appear Before Pharaoh | The title fits Exodus 5 and Exodus 7. Moses and Aaron are linked. No pharaoh was chosen. |
 | 040 | Moses Comes Down from Mount Sinai | Exodus 32:15 and Exodus 34:29 are both a descent with the tables. Moses is linked. |
@@ -36,14 +36,14 @@ Where two ancient records could each be the person, the plate is not linked to e
 
 | Plate | Title | Decision |
 |---|---|---|
-| 009 | Noah Curses Ham and Canaan | ham (Son of Noah) is linked. cham, "Ham (Egypt)", is not. |
-| 011 | Abraham Goes to the Land of Canaan | The land of Canaan is not canaan-son-of-ham. That person is linked only on plate 009, where the title names him. |
+| 009 | Noah Curses Ham and Canaan | ham (Son of Noah) is linked. cham, "Ham (Egypt)", is not. canaan-son-of-ham is named in the title, but a child in the family group is not a distinct Canaan, and the youth Noah addresses is Ham, so Canaan is not linked. |
+| 011 | Abraham Goes to the Land of Canaan | The land of Canaan is not canaan-son-of-ham. That person is not linked here or on plate 009. |
 | 078 | David and Jonathan | jonathan is Saul's son. jonathan-goforth is not linked. |
 | 089 | Cedars Are Cut Down for the Jerusalem Temple | hiram-of-tyre and hiram-of-tyre-ii are both Cory kings of Tyre. The file does not say which one answered Solomon, so neither is linked. |
-| 096 | Elijah Destroys the Messengers of Ahaziah | ahaziah-king-of-israel is linked (2 Kgs 1:2). ahaziah-of-judah is not. |
+| 096 | Elijah Destroys the Messengers of Ahaziah | Neither Ahaziah is linked. The title names the king of Israel, but the plate is the fire on the captains and he is not drawn. ahaziah-of-judah is a different king. |
 | 098 | Some Children are Destroyed by Bears | elishah is Javan's son (Gen 10:4), not Elisha. Nothing is linked. |
 | 111 | Cyrus Restores the Vessels of the Temple | cyrus-the-great is linked. cyras-in-persia is the Raleigh duplicate and is not linked. |
-| 150 | Daniel Interprets the Writing on the Wall | balthasar carries the alt name Belshazzar and is linked. The Daniel 2 dream is not this plate. |
+| 150 | Daniel Interprets the Writing on the Wall | balthasar carries the alt name Belshazzar and is linked as the crowned king on the dais. The Daniel 2 dream is not this plate. |
 | 156 | The Prophet Amos | amos-d18 is a Cory king named Amos, not the prophet. Nothing is linked. |
 | 160 | Zechariah's Vision of Four Chariots | zachariah-king-of-israel is not the prophet Zechariah. Nothing is linked. |
 | 162 | Matt 2B Joseph Leads Mary and Jesus into Egypt | joseph, Jacob's son, is not the husband of Mary. He is not linked to the Matt 2 flight. |
@@ -61,22 +61,22 @@ Also excluded, with no plate linked to them: the modern Samuels (Marsden, Lamb, 
 - Plate 010 is the tower (Genesis 11). Nimrod exists, and Josephus makes him the instigator, and `founding-of-babel` cites Genesis 10:8-10. Genesis 11 does not name him, so he is not linked.
 - Plate 015 is Hagar and Ishmael in the wilderness. `weaning-of-isaac` cites Genesis 21:8-21, which includes those verses. The plate is not the weaning, so the event is not linked. Ishmael is linked. Add the event if the record should carry both halves.
 - Plate 027, the dream, is linked to `joseph-made-vizier`. That event cites Genesis 41:38-46, the appointment, which follows the interpretation in the same audience.
-- Plate 029 links Joseph by Genesis 46:29. He meets the family in Goshen. He is not on the road in Genesis 46:5-7.
+- Plate 029 does not link Joseph. The household is on the road, and no figure is the vizier. `jacob` and `jacob-enters-egypt` stay.
 - Plate 035, the firstborn, is not linked to `exodus`. That event cites Exodus 12:29, but the plate is the houses, and Moses stays indoors (Exod 12:22-23).
-- Plate 039 does not link Aaron. The law is given to Moses (Exod 20:21). Aaron is told to come up in Exodus 19:24, before this scene.
-- Plate 042 links Aaron because Numbers 13:26 names him with Moses when the spies return. Joshua is linked by Numbers 14:6, where he is named in the answer to that report.
-- Plate 061 links Jephthah by Judges 11:38. He sent his daughter away. The mourners in the plate are the women.
+- Plate 039 does not link Moses or Aaron. The people bow before the mountain, and no one figure is Moses. `arrival-at-sinai` stays. Aaron is told to come up in Exodus 19:24, before this scene.
+- Plate 042 links no one. Viewed: the spies carrying the grapes are a group. None is marked as Moses, Aaron, Caleb or Joshua.
+- Plate 061 does not link Jephthah. He sent his daughter away (Judg 11:38), and the mourners in the plate are the women. He stays on plate 060, where the title names him.
 - Plate 069 is Judges 21, the virgins of Jabesh-gilead. `the-levites-concubine` cites Judges 19:1 only, so it is not linked.
 - Plate 074 is linked to `death-of-apophis-anointing-of-david`, whose scripture includes 1 Samuel 15:32-33 and the anointing in 1 Samuel 16:13. The plate shows Agag's death, not the anointing.
-- Plate 081 is Saul's death (1 Sam 31:4). Jonathan dies at 31:2 and is not in the suicide verse, so he is not linked here. He is linked on plate 105, where the bodies of Saul and his sons are taken up (1 Sam 31:12).
+- Plate 081 is Saul's death (1 Sam 31:4). Jonathan dies at 31:2 and is not in the suicide verse, so he is not linked here. On plate 105 several bodies lie on the wall, and none is marked as Jonathan rather than another son, so he is not linked there either. Saul stays, named in that title.
 - Plate 082 links only `civil-war-david-and-ish-bosheth`. The kings are named as the sides. They are not on the field.
 - Plate 095 links Ahab only. Jehoshaphat is in the battle earlier (1 Kgs 22:29-33) and is not in the death verses 22:34-37.
-- Plate 099 links Joram by 2 Kings 6:26, the king the woman cries to during the famine of 6:25.
+- Plate 099 keeps Joram as `depicted`. Viewed: he is the crowned king on the steps, whom the woman at his feet addresses (2 Kgs 6:26). Elisha is not a separate figure in this plate.
 - Plate 103 links only `angel-slays-the-assyrians` (2 Kgs 19:35). It is not the siege, and it is not Sennacherib.
 - Plate 111 links `cyrus-decree-of-return`, which cites Ezra 1:1-4. The plate is the vessels in Ezra 1:7-11. Cyrus is named in the title.
 - Plate 115 links `nehemiah-comes-to-jerusalem` (Neh 2:11). The plate is the night ride (Neh 2:13-15) in that arrival, not the hearing at Susa and not the rebuilding.
 - Plates 137 and 138 link the existing person `job`. Jones identifies him as Issachar's third son (Gen 46:13) and as the man of the trial. Both the person and `job-trial` are linked.
-- Plate 189 links `birth-of-jesus` from the Luke 2 title. That event's scripture is Matthew 2:1-23. Plates 161 to 163 are the star, the flight and the massacre, which sit inside Matthew 2, and they are not linked to the birth event. Plate 163 links Herod the Great (Matt 2:16) and not `reign-of-herod`.
+- Plate 189 keeps `birth-of-jesus`. Viewed: it is the Luke 2 nativity (Mary, the infant, Joseph with a staff, shepherds and animals), and the event cites Matthew 2:1-23. The event record was not edited. See C11 in `docs/OPEN-QUESTIONS-FOR-KEVIN.md`. Plates 161 to 163 are the star, the flight and the massacre, which sit inside Matthew 2, and they are not linked to the birth event. Plate 163 does not link Herod: Matt 2:16 names him, and he is not drawn. It does not link `reign-of-herod`.
 - `death-and-resurrection-of-christ` is linked only where the plate is the death, the burial or the empty tomb: 175, 176, 187, 206, 207, 208, 220, 221, 222. It is not linked to the scourging, the crown of thorns, the mocking, the fall under the cross, the walk to Emmaus, the ascension, or the catch of fish.
 - Plates 207 and 221 use a chapter reference (`Luke.23`, `John.19`). Lifting the cross, and the lament over the body, are not one verse. The title gives the chapter.
 
@@ -202,9 +202,9 @@ One row per gap. A plate can appear more than once when the scene needs more tha
 | 003 | Adam and Eve Are Driven out of Eden | Eve | She leaves the garden with Adam (Gen 3:23-24). |
 | 004 | Cain and Abel Offer Their Sacrifices | Abel | He brings an offering (Gen 4:4). The murder record cain-and-abel is plate 005, not this sacrifice. |
 | 005 | Cain Slays Abel | Abel | Cain kills him (Gen 4:8). Cain and the murder event are linked. |
-| 006 | The World is Destroyed by Water | Noah's wife, and the wives of Shem, Ham and Japheth | Genesis 7:13 names them in the ark. They have no records. The four men and the flood event are linked. |
+| 006 | The World is Destroyed by Water | Noah's wife, and the wives of Shem, Ham and Japheth | Genesis 7:13 names them in the ark. They have no records. The flood event is linked. Noah, Shem, Ham and Japheth are not drawn as separate figures, so they are not linked. |
 | 007 | The Great Flood | Noah's wife, and the wives of Shem, Ham and Japheth | Same closed set as plate 006. |
-| 008 | A Dove is Sent Forth from the Ark | Noah's wife, and the wives of Shem, Ham and Japheth | Genesis 8:16 still names them in the ark when the dove is sent. |
+| 008 | A Dove is Sent Forth from the Ark | Noah's wife, and the wives of Shem, Ham and Japheth | Genesis 8:16 still names them in the ark when the dove is sent. They have no records. The flood event is linked. Noah and his sons are not drawn as separate figures. |
 | 011 | Abraham Goes to the Land of Canaan | Lot | Genesis 12:5 says he went with Abram. There is no Lot record. |
 | 013 | Lot Flees as Sodom and Gomorrah Burn | Lot, his wife, and his two daughters | They are the people who leave the city (Gen 19:15-16). Abraham is not in the flight. |
 | 014 | Abraham Sends Hagar and Ishmael Away | Hagar | Abraham sends her away (Gen 21:14). She is named in the title. Abraham, Ishmael, Sarah and the weaning event are linked. |
@@ -213,15 +213,15 @@ One row per gap. A plate can appear more than once when the scene needs more tha
 | 019 | The Meeting of Isaac and Rebekah | Rebekah | Isaac meets her (Gen 24:63-67). Isaac and the marriage event are linked. |
 | 020 | Isaac Blesses Jacob | Rebekah | She prepared the meal (Gen 27:14-17). She is not in the blessing verses themselves. Listed so the gap is visible; do not add her unless the blessing scene is taken to include her. |
 | 022 | Jacob Tends Laban's Flock and Meets Rachel | Laban, and Leah | Jacob meets Rachel at Laban's flock (Gen 29:9-10). Leah is not in this meeting. |
-| 026 | Joseph is Sold by His Brothers | Joseph's other brothers, as a group | Judah is named at the sale (Gen 37:26) and is linked. Reuben is absent (Gen 37:29) and is not linked. The others are not expanded one by one. |
-| 043 | The Death of Korah, Dathan, and Abiram | Korah, Dathan and Abiram | The ground swallows them (Num 16:31-33). Moses and Aaron are linked. |
+| 026 | Joseph is Sold by His Brothers | Joseph's other brothers, as a group | Judah is named at the sale (Gen 37:26). The brothers are a group, and no one brother is marked as Judah, so he is not linked. Reuben is absent (Gen 37:29). The others are not expanded one by one. |
+| 043 | The Death of Korah, Dathan, and Abiram | Korah, Dathan and Abiram | The ground swallows them (Num 16:31-33). The men on the cliff are a group, so Moses and Aaron are not linked. |
 | 045 | An Angel Appears to Balaam | Balaam | The angel stands in his way (Num 22:22-31). Balak is not in this scene. |
 | 049 | Joshua Spares Rahab | Rahab | Joshua sends the spies to bring her out (Josh 6:22-23). Joshua is linked. |
-| 050 | Achan is Stoned to Death | Achan | He is stoned (Josh 7:25). Joshua is linked. |
+| 050 | Achan is Stoned to Death | Achan | He is stoned (Josh 7:25). The plate shows the body under the stones. Joshua is not in it, so he is not linked. |
 | 054 | Jael Kills Sisera | Jael, Sisera, Deborah and Barak | Jael kills Sisera (Judg 4:21). The deborah-and-barak event is linked. None of the four has a person record. |
 | 055 | Deborah Praises Jael | Jael, and Deborah | Deborah's song praises Jael (Judg 5:24). The same event is linked. |
 | 060 | Jephthah’s Daughter Comes to Meet Her Father | Jephthah's daughter | She comes out to meet him (Judg 11:34). Jephthah is linked. |
-| 061 | Israelite Women Mourn with Jephthah’s Daughter | Jephthah's daughter, and the women who mourn with her | They go into the hills (Judg 11:37-40). Jephthah is linked by 11:38, the verse in which he sent her. |
+| 061 | Israelite Women Mourn with Jephthah’s Daughter | Jephthah's daughter, and the women who mourn with her | They go into the hills (Judg 11:37-40). Jephthah sent her (Judg 11:38) but he is not drawn, so he is not linked. He remains on plate 060, where the title names him. |
 | 065 | Samson and Delilah | Delilah | She has his head shaved (Judg 16:19). Samson is linked. |
 | 067 | A Levite Finds a Woman's Corpse | The Levite, and the woman | He finds her at the door (Judg 19:26-28). The event is linked. Neither person exists. |
 | 068 | The Levite Carries the Woman's Body Away | The Levite | He cuts the body in pieces (Judg 19:29). The event is linked. |
@@ -229,7 +229,7 @@ One row per gap. A plate can appear more than once when the scene needs more tha
 | 070 | Naomi and Her Daughters-in-law | Naomi, Ruth and Orpah | Naomi tells them to return (Ruth 1:8-14). |
 | 071 | Ruth and Boaz | Ruth, Boaz and Naomi | Ruth gleans in Boaz's field (Ruth 2:2-8). |
 | 072 | The Ark is Returned to Beth-shemesh | None proposed | The men of Beth-shemesh are not a closed named set. No ark-return event was attached: ark-brought-to-jerusalem and the battle of Aphek are different scenes. |
-| 074 | The Death of Agag | Agag | Samuel kills him (1 Sam 15:33). Samuel, Saul and the Apophis/anointing event are linked. The event also cites the anointing, which this plate does not show. |
+| 074 | The Death of Agag | Agag | Samuel kills him (1 Sam 15:33). Samuel is the elderly man with the sword, and the event is linked. Saul is not a crowned figure in the plate, so he is not linked. The event also cites the anointing, which this plate does not show. |
 | 075 | David Slays Goliath | Goliath | David strikes him (1 Sam 17:49). David and the event are linked. Saul is not in the verse. |
 | 077 | David Escapes Through a Window | Michal | She lets David down through the window (1 Sam 19:12). David and the flight event are linked. |
 | 080 | Saul and the Witch of Endor | The woman of Endor | Saul asks her to bring Samuel up (1 Sam 28:7-11). Saul and Samuel are linked. |
@@ -237,29 +237,29 @@ One row per gap. A plate can appear more than once when the scene needs more tha
 | 084 | The Death of Absalom | Absalom and Joab | Joab strikes Absalom (2 Sam 18:14-15). David is not there. rebellion-of-absalom cites 2 Samuel 15, not this death, so it is not linked. |
 | 086 | Rizpah’s Kindness toward the Dead | Rizpah | She keeps the bodies (2 Sam 21:10). David is not in the verse. |
 | 087 | Abishai Saves David’s Life | Abishai | He kills the giant (2 Sam 21:17). David is linked. |
-| 089 | Cedars Are Cut Down for the Jerusalem Temple | Hiram of Tyre | Solomon asks him for cedars (1 Kgs 5:1-8). Two Hiram records exist (see below), so neither is linked. Solomon is linked. |
+| 089 | Cedars Are Cut Down for the Jerusalem Temple | Hiram of Tyre | Solomon asks him for cedars (1 Kgs 5:1-8). Two Hiram records exist (see the names table), so neither is linked. Solomon is not drawn in the felling, so he is not linked. |
 | 090 | The Disobedient Prophet is Slain by a Lion | The man of God from Judah | A lion kills him (1 Kgs 13:24). Jeroboam is not in that verse. |
 | 091 | Elijah Raises the Son of the Widow of Zarephath | Elijah, and the widow of Zarephath | He raises her son (1 Kgs 17:17-23). |
 | 092 | The Prophets of Baal are Slaughtered | Elijah | He brings the prophets of Baal down (1 Kgs 18:40). |
 | 093 | Elijah is Nourished by an Angel | Elijah | An angel feeds him (1 Kgs 19:5-7). |
-| 096 | Elijah Destroys the Messengers of Ahaziah | Elijah | Fire consumes the captains (2 Kgs 1:10-12). Ahaziah of Israel is linked because he sends them (2 Kgs 1:2) and the title names him. He is not standing in the fire. |
-| 097 | Elijah Ascends to Heaven in a Chariot of Fire | Elijah and Elisha | Elijah goes up; Elisha sees it (2 Kgs 2:11-12). The translation event is linked. The person elishah is Javan's son, not this Elisha. |
+| 096 | Elijah Destroys the Messengers of Ahaziah | Elijah | Fire consumes the captains (2 Kgs 1:10-12). Ahaziah sends them (2 Kgs 1:2) and the title names him, but he is not drawn, so he is not linked. |
+| 097 | Elijah Ascends to Heaven in a Chariot of Fire | Elijah and Elisha | Viewed: Elijah is the figure in the chariot, and Elisha is on the steps (2 Kgs 2:11-12). The translation event is linked. There is no Elijah person record. The person elishah is Javan's son, not this Elisha. |
 | 098 | Some Children are Destroyed by Bears | Elisha | Bears come out after he curses the youths (2 Kgs 2:23-24). |
-| 099 | A Famine in Samaria | Elisha | The famine is 2 Kgs 6:25. Elisha is in the city (6:31-32), which is the next moment, so he is not linked. Joram is linked by 6:26. |
-| 100 | The Death of Jezebel | Jezebel | Jehu has her thrown down (2 Kgs 9:33). Jehu is linked. |
+| 099 | A Famine in Samaria | Elisha | The famine is 2 Kgs 6:25. Elisha is in the city (6:31-32), which is the next moment, so he is not linked. Joram is kept as depicted: the crowned king on the steps, whom the woman at his feet addresses. |
+| 100 | The Death of Jezebel | Jezebel | Jehu has her thrown down (2 Kgs 9:33). The men below the window are a company, and no one is marked as Jehu, so he is not linked. |
 | 101 | Jehu's Companions Find Jezebel's Remains | Jezebel | They find her skull and feet (2 Kgs 9:35). Jehu is linked. |
 | 102 | Foreign Nations are Slain by Lions in Samaria | None proposed | The settlers are a crowd. fall-of-samaria is the siege, not the lions of 2 Kgs 17:25, so it is not linked. |
 | 103 | Sennacherib's Army is Destroyed | Sennacherib, as a possible later link | 2 Kings 19:35 is the camp. Verse 36 has him at Nineveh, so he is not linked. Hezekiah is not in verse 35, and two Hezekiah records exist. The angel event is linked. |
-| 105 | Jabesh-Gileadites Recover the Bodies of Saul and His Sons | The men of Jabesh-gilead, as a group | They take the bodies (1 Sam 31:12). Saul and Jonathan are linked. |
+| 105 | Jabesh-Gileadites Recover the Bodies of Saul and His Sons | The men of Jabesh-gilead, as a group | They take the bodies (1 Sam 31:12). Saul is named in the title and is linked. Several bodies lie on the wall, and none is marked as Jonathan rather than another son, so Jonathan is not linked. |
 | 107 | Solomon Receives the Queen of Sheba | The queen of Sheba | She comes to Solomon (1 Kgs 10:1-2). Solomon is linked. The sons of Sheba are a different name and are not linked. |
 | 110 | The Death of Athaliah | Jehoiada | He brings Athaliah out (2 Kgs 11:13-15). Athaliah is linked. |
-| 113 | Artaxerxes Grants Freedom to the Jews | Artaxerxes, once the king is chosen | The title fits Ezra 7 and Nehemiah 2. The records do not decide between Longimanus and Mnemon. Left unmatched. |
+| 113 | Artaxerxes Grants Freedom to the Jews | Artaxerxes, once the king is chosen | The title fits Ezra 7 and Nehemiah 2. artaxerxes-decree cites Neh 2:1, the cupbearer's private request, and its note will not choose Longimanus or Mnemon. Viewed: a king proclaiming to a crowd, so neither that event nor artaxerxes-longimanus is linked. See C11. |
 | 114 | Ezra Kneels in Prayer | Ezra | He prays (Ezra 9:5-6). |
 | 115 | Nehemiah Views the Ruins of Jerusalem's Walls | Nehemiah | He rides around the walls (Neh 2:13-15). The arrival event is linked. |
 | 116 | Ezra Reads the Law to the People | Ezra, and Nehemiah | Ezra reads (Neh 8:2-3). Nehemiah is present at 8:9, which is after the reading the title names, so he is not linked. nehemiah-reforms is a different set of acts. |
-| 121 | Queen Vashti Refuses to Obey Ahasuerus' Command | Vashti, and Ahasuerus | She refuses to come (Esth 1:12). esther-made-queen is a later scene. No Xerxes record was chosen. |
-| 122 | The Triumph of Mordecai | Mordecai, and Haman | The king has Haman lead Mordecai (Esth 6:11). haman-hanged is 7:10, so it is not linked. |
-| 123 | Esther Accuses Haman | Esther, Haman and Ahasuerus | Esther names Haman (Esth 7:6). The hanging is the next verses, so that event is not linked. |
+| 121 | Queen Vashti Refuses to Obey Ahasuerus' Command | Vashti, and Ahasuerus | She refuses to come (Esth 1:12). ahasuerus-feast is linked; that event cites the banquet (Esth 1:4), and the plate is the refusal. esther-made-queen is a later scene. No Esther, Vashti, Haman, Mordecai or Ahasuerus person record exists. xerxes-i was not used as a stand-in. |
+| 122 | The Triumph of Mordecai | Mordecai, and Haman | The king has Haman lead Mordecai (Esth 6:11). ahasuerus-sleepless-night is linked; that event cites Esth 6:1, and the plate is the parade. haman-hanged is 7:10, so it is not linked here. No Mordecai or Haman person record exists. |
+| 123 | Esther Accuses Haman | Esther, Haman and Ahasuerus | Esther names Haman at the banquet (Esth 7:6). haman-hanged is linked; that event cites Esth 7:10, and the plate shows the accusation, not the gallows. No Esther, Haman or Ahasuerus person record exists. |
 | 137 | Job Hears of His Misfortunes | None beyond the existing job record | Jones identifies the person job as Issachar's son and as the man of the trial. Both job and job-trial are linked. A separate Book-of-Job person was not created. |
 | 138 | Job Speaks with His Friends | Eliphaz, Bildad and Zophar | They sit with him (Job 2:11). Job and the trial are linked. |
 | 139 | The Prophet Isaiah | Isaiah | A portrait. No chapter is one scene, so scripture_ref is null. |
@@ -271,7 +271,7 @@ One row per gap. A plate can appear more than once when the scene needs more tha
 | 146 | The Prophet Ezekiel | Ezekiel | A portrait. Not ezekiel-begins-to-prophesy, which is the call, not a portrait. |
 | 147 | Ezekiel's Vision of the Valley of Dry Bones | Ezekiel | The valley of bones (Ezek 37:1-10). glory-departs is a different vision. |
 | 148 | Daniel Among the Exiles | Daniel, Hananiah, Mishael and Azariah | They are taken to Babylon (Dan 1:6). The event is linked. |
-| 149 | Shadrach, Meshach, and Abed-nego in the Furnace | Shadrach, Meshach and Abednego | They are in the furnace (Dan 3:23). Nebuchadnezzar is linked by Dan 3:24. |
+| 149 | Shadrach, Meshach, and Abed-nego in the Furnace | Shadrach, Meshach and Abednego | They are in the furnace (Dan 3:23). Nebuchadnezzar is named in Dan 3:24 but is not a distinct figure, so he is not linked. |
 | 150 | Daniel Interprets the Writing on the Wall | Daniel | He reads the writing (Dan 5:17-28). Balthasar (Belshazzar) is linked. The Daniel 2 dream event is a different night. |
 | 151 | Daniel in the Lion's Den | Daniel, and Darius the Mede | Daniel is cast in (Dan 6:16). reign-of-darius-i is Darius I, not the Mede, so it is not linked. |
 | 152 | Daniel's Vision of the Four Beasts | Daniel | He sees the four beasts (Dan 7:3-7). |

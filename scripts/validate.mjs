@@ -610,10 +610,13 @@ let doreCount = 0;
         else if (!['person', 'event'].includes(records[r].kind)) err(rel, `${tag}: ${r} is a ${records[r].kind}; illustrations go on people and events`);
         else if (link.basis === 'event-depicted' && records[r].kind !== 'event') err(rel, `${tag}: ${r} is a person; event-depicted is for an event`);
         else if (link.basis !== 'event-depicted' && records[r].kind !== 'person') err(rel, `${tag}: ${r} is an event; use event-depicted`);
-        if (link.basis === 'in-scripture-passage') {
-          if (!link.ref) err(rel, `${tag}: ${r} in-scripture-passage needs a ref`);
-          else if (!blbFromOsis(link.ref)) err(rel, `${tag}: ${r} ref "${link.ref}" cannot be mapped to a BLB chapter`);
-        } else if (link.ref) err(rel, `${tag}: ${r} basis ${link.basis} must not carry a ref`);
+        if (link.basis === 'in-scripture-passage' || (records[r]?.kind === 'person' && !['named-in-title', 'depicted'].includes(link.basis))) {
+          err(rel, `${tag}: ${r} person link basis "${link.basis}" is not allowed; use named-in-title or depicted`);
+        }
+        if (link.ref) err(rel, `${tag}: ${r} must not carry a ref`);
+        if (link.basis === 'depicted') {
+          if (typeof link.note !== 'string' || !link.note.trim()) err(rel, `${tag}: ${r} depicted needs a note saying who is shown and where`);
+        } else if (link.note) err(rel, `${tag}: ${r} basis ${link.basis} must not carry a note`);
       }
       if (new Set(ids).size !== ids.length) err(rel, `${tag}: duplicate record id`);
       doreCount++;

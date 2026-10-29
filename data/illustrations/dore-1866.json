@@ -1,5 +1,5 @@
 {
-  "description": "Gustave Doré, Bible illustrations (1866), from the Internet Archive item \"gustavedore\". Images are linked, never copied: pages load them from the Internet Archive IIIF Image API (v2; v3 is the fallback). \"number\" and \"title\" are the Archive.org file name as uploaded; they are not Doré's 1866 plate numbers or captions. scripture_ref is set only where the title names one passage. It is identified from the title, not printed on the plate. A chapter-level ref is used when the title gives the book and chapter and the scene is not pinned to verses. This file has the 220 canonical plates. The 21 Apocrypha files, marked with an x after the number, are omitted.",
+  "description": "Gustave Doré, Bible illustrations (1866), from the Internet Archive item \"gustavedore\". Images are linked, never copied: pages load them from the Internet Archive IIIF Image API (v2; v3 is the fallback). \"number\" and \"title\" are the Archive.org file name as uploaded; they are not Doré's 1866 plate numbers or captions. scripture_ref is set only where the title names one passage. It is identified from the title, not printed on the plate. A chapter-level ref is used when the title gives the book and chapter and the scene is not pinned to verses. A person is linked only when the plate draws that person: basis named-in-title (the name is in the file title and the person is drawn) or depicted (the person is clearly the figure shown, with a short note of who and where). An event is linked when the plate draws that event (event-depicted). A person is not linked only because a verse names them. This file has the 220 canonical plates. The 21 Apocrypha files, marked with an x after the number, are omitted.",
   "source": "dore-bible-1866-archive",
   "checked_on": "2026-10-29",
   "illustrations": [
@@ -43,8 +43,8 @@
         },
         {
           "id": "adam",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.2.21"
+          "basis": "depicted",
+          "note": "The man asleep on the ground at the lower right, while the woman stands over him."
         }
       ]
     },
@@ -133,26 +133,6 @@
         {
           "id": "the-flood",
           "basis": "event-depicted"
-        },
-        {
-          "id": "noah",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.7.13"
-        },
-        {
-          "id": "shem",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.7.13"
-        },
-        {
-          "id": "ham",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.7.13"
-        },
-        {
-          "id": "japheth",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.7.13"
         }
       ]
     },
@@ -173,26 +153,6 @@
         {
           "id": "the-flood",
           "basis": "event-depicted"
-        },
-        {
-          "id": "noah",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.7.13"
-        },
-        {
-          "id": "shem",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.7.13"
-        },
-        {
-          "id": "ham",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.7.13"
-        },
-        {
-          "id": "japheth",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.7.13"
         }
       ]
     },
@@ -213,26 +173,6 @@
         {
           "id": "the-flood",
           "basis": "event-depicted"
-        },
-        {
-          "id": "noah",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.8.8"
-        },
-        {
-          "id": "shem",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.8.16"
-        },
-        {
-          "id": "ham",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.8.16"
-        },
-        {
-          "id": "japheth",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.8.16"
         }
       ]
     },
@@ -257,20 +197,6 @@
         {
           "id": "ham",
           "basis": "named-in-title"
-        },
-        {
-          "id": "canaan-son-of-ham",
-          "basis": "named-in-title"
-        },
-        {
-          "id": "shem",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.9.23"
-        },
-        {
-          "id": "japheth",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.9.23"
         }
       ]
     },
@@ -315,11 +241,6 @@
         {
           "id": "abraham",
           "basis": "named-in-title"
-        },
-        {
-          "id": "sarai",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.12.5"
         }
       ]
     },
@@ -344,11 +265,6 @@
         {
           "id": "abraham",
           "basis": "named-in-title"
-        },
-        {
-          "id": "sarai",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.18.9"
         }
       ]
     },
@@ -400,8 +316,8 @@
         },
         {
           "id": "sarai",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.21.10"
+          "basis": "depicted",
+          "note": "The woman seated at the tent door, holding a child, as Hagar and Ishmael leave."
         }
       ]
     },
@@ -449,8 +365,8 @@
         },
         {
           "id": "isaac",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.22.9"
+          "basis": "depicted",
+          "note": "The boy on the left, carrying the wood on his shoulders."
         }
       ]
     },
@@ -474,8 +390,8 @@
         },
         {
           "id": "abraham",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.23.19"
+          "basis": "depicted",
+          "note": "The elderly bearded man in the centre of the mourners, supported as they enter the cave."
         }
       ]
     },
@@ -651,11 +567,6 @@
         {
           "id": "esau",
           "basis": "named-in-title"
-        },
-        {
-          "id": "rachel",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.33.2"
         }
       ]
     },
@@ -680,11 +591,6 @@
         {
           "id": "joseph",
           "basis": "named-in-title"
-        },
-        {
-          "id": "judah",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.37.26"
         }
       ]
     },
@@ -732,8 +638,8 @@
         },
         {
           "id": "benjamin",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.45.14"
+          "basis": "depicted",
+          "note": "The brother collapsed against Joseph on the steps, while the others bow or stand around them."
         }
       ]
     },
@@ -758,11 +664,6 @@
         {
           "id": "jacob",
           "basis": "named-in-title"
-        },
-        {
-          "id": "joseph",
-          "basis": "in-scripture-passage",
-          "ref": "Gen.46.29"
         }
       ]
     },
@@ -787,11 +688,6 @@
         {
           "id": "moses",
           "basis": "named-in-title"
-        },
-        {
-          "id": "miriam",
-          "basis": "in-scripture-passage",
-          "ref": "Exod.2.4"
         }
       ]
     },
@@ -816,11 +712,6 @@
         {
           "id": "moses",
           "basis": "named-in-title"
-        },
-        {
-          "id": "miriam",
-          "basis": "in-scripture-passage",
-          "ref": "Exod.2.7"
         }
       ]
     },
@@ -861,13 +752,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F033%20The%20Fifth%20Plague%20-%20Livestock%20Disease.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/033%20The%20Fifth%20Plague%20-%20Livestock%20Disease.jpg",
       "scripture_ref": "Exod.9.1-Exod.9.6",
-      "records": [
-        {
-          "id": "moses",
-          "basis": "in-scripture-passage",
-          "ref": "Exod.9.1"
-        }
-      ]
+      "records": []
     },
     {
       "number": 34,
@@ -882,13 +767,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F034%20The%20Ninth%20Plague%20-%20Darkness.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/034%20The%20Ninth%20Plague%20-%20Darkness.jpg",
       "scripture_ref": "Exod.10.21-Exod.10.23",
-      "records": [
-        {
-          "id": "moses",
-          "basis": "in-scripture-passage",
-          "ref": "Exod.10.22"
-        }
-      ]
+      "records": []
     },
     {
       "number": 35,
@@ -926,11 +805,6 @@
         {
           "id": "moses",
           "basis": "named-in-title"
-        },
-        {
-          "id": "aaron",
-          "basis": "in-scripture-passage",
-          "ref": "Exod.12.31"
         }
       ]
     },
@@ -951,11 +825,6 @@
         {
           "id": "exodus",
           "basis": "event-depicted"
-        },
-        {
-          "id": "moses",
-          "basis": "in-scripture-passage",
-          "ref": "Exod.14.27"
         }
       ]
     },
@@ -996,11 +865,6 @@
         {
           "id": "arrival-at-sinai",
           "basis": "event-depicted"
-        },
-        {
-          "id": "moses",
-          "basis": "in-scripture-passage",
-          "ref": "Exod.20.21"
         }
       ]
     },
@@ -1041,11 +905,6 @@
         {
           "id": "moses",
           "basis": "named-in-title"
-        },
-        {
-          "id": "aaron",
-          "basis": "in-scripture-passage",
-          "ref": "Exod.32.21"
         }
       ]
     },
@@ -1062,28 +921,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F042%20The%20Spies%20Return%20from%20the%20Promised%20Land.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/042%20The%20Spies%20Return%20from%20the%20Promised%20Land.jpg",
       "scripture_ref": "Num.13.25-Num.13.33",
-      "records": [
-        {
-          "id": "moses",
-          "basis": "in-scripture-passage",
-          "ref": "Num.13.26"
-        },
-        {
-          "id": "aaron",
-          "basis": "in-scripture-passage",
-          "ref": "Num.13.26"
-        },
-        {
-          "id": "caleb",
-          "basis": "in-scripture-passage",
-          "ref": "Num.13.30"
-        },
-        {
-          "id": "iosua",
-          "basis": "in-scripture-passage",
-          "ref": "Num.14.6"
-        }
-      ]
+      "records": []
     },
     {
       "number": 43,
@@ -1098,18 +936,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F043%20The%20Death%20of%20Korah%2C%20Dathan%2C%20and%20Abiram.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/043%20The%20Death%20of%20Korah%2C%20Dathan%2C%20and%20Abiram.jpg",
       "scripture_ref": "Num.16.31-Num.16.35",
-      "records": [
-        {
-          "id": "moses",
-          "basis": "in-scripture-passage",
-          "ref": "Num.16.22"
-        },
-        {
-          "id": "aaron",
-          "basis": "in-scripture-passage",
-          "ref": "Num.16.22"
-        }
-      ]
+      "records": []
     },
     {
       "number": 44,
@@ -1127,8 +954,8 @@
       "records": [
         {
           "id": "moses",
-          "basis": "in-scripture-passage",
-          "ref": "Num.21.9"
+          "basis": "depicted",
+          "note": "The bearded man on the right, arm raised toward the serpent, with rays from his head."
         }
       ]
     },
@@ -1164,11 +991,6 @@
         {
           "id": "crossing-the-jordan",
           "basis": "event-depicted"
-        },
-        {
-          "id": "iosua",
-          "basis": "in-scripture-passage",
-          "ref": "Josh.3.7"
         }
       ]
     },
@@ -1209,11 +1031,6 @@
         {
           "id": "fall-of-jericho",
           "basis": "event-depicted"
-        },
-        {
-          "id": "iosua",
-          "basis": "in-scripture-passage",
-          "ref": "Josh.6.16"
         }
       ]
     },
@@ -1250,13 +1067,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F050%20Achan%20is%20Stoned%20to%20Death.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/050%20Achan%20is%20Stoned%20to%20Death.jpg",
       "scripture_ref": "Josh.7.25",
-      "records": [
-        {
-          "id": "iosua",
-          "basis": "in-scripture-passage",
-          "ref": "Josh.7.25"
-        }
-      ]
+      "records": []
     },
     {
       "number": 51,
@@ -1291,13 +1102,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F052%20The%20Army%20of%20the%20Amorites%20is%20Destroyed.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/052%20The%20Army%20of%20the%20Amorites%20is%20Destroyed.jpg",
       "scripture_ref": "Josh.10.11",
-      "records": [
-        {
-          "id": "iosua",
-          "basis": "in-scripture-passage",
-          "ref": "Josh.10.9"
-        }
-      ]
+      "records": []
     },
     {
       "number": 53,
@@ -1404,11 +1209,6 @@
         {
           "id": "gideon-defeats-midian",
           "basis": "event-depicted"
-        },
-        {
-          "id": "gedeon",
-          "basis": "in-scripture-passage",
-          "ref": "Judg.7.19"
         }
       ]
     },
@@ -1429,11 +1229,6 @@
         {
           "id": "reign-of-abimelech",
           "basis": "event-depicted"
-        },
-        {
-          "id": "abimelech-son-of-gideon",
-          "basis": "in-scripture-passage",
-          "ref": "Judg.9.5"
         }
       ]
     },
@@ -1494,13 +1289,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F061%20Israelite%20Women%20Mourn%20with%20Jephthah%E2%80%99s%20Daughter.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/061%20Israelite%20Women%20Mourn%20with%20Jephthah%E2%80%99s%20Daughter.jpg",
       "scripture_ref": "Judg.11.37-Judg.11.40",
-      "records": [
-        {
-          "id": "jephthah",
-          "basis": "in-scripture-passage",
-          "ref": "Judg.11.38"
-        }
-      ]
+      "records": []
     },
     {
       "number": 62,
@@ -1746,13 +1535,8 @@
         },
         {
           "id": "samuel",
-          "basis": "in-scripture-passage",
-          "ref": "1Sam.15.33"
-        },
-        {
-          "id": "saul",
-          "basis": "in-scripture-passage",
-          "ref": "1Sam.15.32"
+          "basis": "depicted",
+          "note": "The elderly man at the left, holding the sword over the kneeling captive."
         }
       ]
     },
@@ -1900,8 +1684,8 @@
         },
         {
           "id": "samuel",
-          "basis": "in-scripture-passage",
-          "ref": "1Sam.28.15"
+          "basis": "depicted",
+          "note": "The shrouded figure rising at the left, whom the kneeling king faces."
         }
       ]
     },
@@ -2068,13 +1852,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F089%20Cedars%20Are%20Cut%20Down%20for%20the%20Jerusalem%20Temple.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/089%20Cedars%20Are%20Cut%20Down%20for%20the%20Jerusalem%20Temple.jpg",
       "scripture_ref": "1Kgs.5.6-1Kgs.5.8",
-      "records": [
-        {
-          "id": "solomon",
-          "basis": "in-scripture-passage",
-          "ref": "1Kgs.5.6"
-        }
-      ]
+      "records": []
     },
     {
       "number": 90,
@@ -2184,13 +1962,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F096%20Elijah%20Destroys%20the%20Messengers%20of%20Ahaziah.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/096%20Elijah%20Destroys%20the%20Messengers%20of%20Ahaziah.jpg",
       "scripture_ref": "2Kgs.1.9-2Kgs.1.12",
-      "records": [
-        {
-          "id": "ahaziah-king-of-israel",
-          "basis": "in-scripture-passage",
-          "ref": "2Kgs.1.2"
-        }
-      ]
+      "records": []
     },
     {
       "number": 97,
@@ -2243,8 +2015,8 @@
       "records": [
         {
           "id": "joram-king-of-israel",
-          "basis": "in-scripture-passage",
-          "ref": "2Kgs.6.26"
+          "basis": "depicted",
+          "note": "The crowned king on the steps, whom the woman at his feet addresses."
         }
       ]
     },
@@ -2261,13 +2033,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F100%20The%20Death%20of%20Jezebel.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/100%20The%20Death%20of%20Jezebel.jpg",
       "scripture_ref": "2Kgs.9.30-2Kgs.9.33",
-      "records": [
-        {
-          "id": "jehu",
-          "basis": "in-scripture-passage",
-          "ref": "2Kgs.9.33"
-        }
-      ]
+      "records": []
     },
     {
       "number": 101,
@@ -2345,11 +2111,6 @@
         {
           "id": "zedekiah",
           "basis": "named-in-title"
-        },
-        {
-          "id": "nebuchadnezzar-ii",
-          "basis": "in-scripture-passage",
-          "ref": "2Kgs.25.6"
         }
       ]
     },
@@ -2370,11 +2131,6 @@
         {
           "id": "saul",
           "basis": "named-in-title"
-        },
-        {
-          "id": "jonathan",
-          "basis": "in-scripture-passage",
-          "ref": "1Sam.31.12"
         }
       ]
     },
@@ -2391,13 +2147,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F106%20The%20Plague%20of%20Jerusalem.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/106%20The%20Plague%20of%20Jerusalem.jpg",
       "scripture_ref": "2Sam.24.15-2Sam.24.17",
-      "records": [
-        {
-          "id": "david",
-          "basis": "in-scripture-passage",
-          "ref": "2Sam.24.17"
-        }
-      ]
+      "records": []
     },
     {
       "number": 107,
@@ -2452,13 +2202,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F109%20The%20Ammonite%20and%20Moabite%20Armies%20are%20Destroyed.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/109%20The%20Ammonite%20and%20Moabite%20Armies%20are%20Destroyed.jpg",
       "scripture_ref": "2Chr.20.22-2Chr.20.23",
-      "records": [
-        {
-          "id": "jehoshaphat",
-          "basis": "in-scripture-passage",
-          "ref": "2Chr.20.22"
-        }
-      ]
+      "records": []
     },
     {
       "number": 110,
@@ -2521,11 +2265,6 @@
         {
           "id": "temple-rebuilding-begins",
           "basis": "event-depicted"
-        },
-        {
-          "id": "zerubbabel",
-          "basis": "in-scripture-passage",
-          "ref": "Ezra.3.8"
         }
       ]
     },
@@ -2607,7 +2346,12 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F121%20Queen%20Vashti%20Refuses%20to%20Obey%20Ahasuerus'%20Command.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/121%20Queen%20Vashti%20Refuses%20to%20Obey%20Ahasuerus'%20Command.jpg",
       "scripture_ref": "Esth.1.12",
-      "records": []
+      "records": [
+        {
+          "id": "ahasuerus-feast",
+          "basis": "event-depicted"
+        }
+      ]
     },
     {
       "number": 122,
@@ -2622,7 +2366,12 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F122%20The%20Triumph%20of%20Mordecai.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/122%20The%20Triumph%20of%20Mordecai.jpg",
       "scripture_ref": "Esth.6.11",
-      "records": []
+      "records": [
+        {
+          "id": "ahasuerus-sleepless-night",
+          "basis": "event-depicted"
+        }
+      ]
     },
     {
       "number": 123,
@@ -2637,7 +2386,12 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F123%20Esther%20Accuses%20Haman.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/123%20Esther%20Accuses%20Haman.jpg",
       "scripture_ref": "Esth.7.6",
-      "records": []
+      "records": [
+        {
+          "id": "haman-hanged",
+          "basis": "event-depicted"
+        }
+      ]
     },
     {
       "number": 137,
@@ -2840,13 +2594,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F149%20Shadrach%2C%20Meshach%2C%20and%20Abed-nego%20in%20the%20Furnace.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/149%20Shadrach%2C%20Meshach%2C%20and%20Abed-nego%20in%20the%20Furnace.jpg",
       "scripture_ref": "Dan.3.19-Dan.3.25",
-      "records": [
-        {
-          "id": "nebuchadnezzar-ii",
-          "basis": "in-scripture-passage",
-          "ref": "Dan.3.24"
-        }
-      ]
+      "records": []
     },
     {
       "number": 150,
@@ -2864,8 +2612,8 @@
       "records": [
         {
           "id": "balthasar",
-          "basis": "in-scripture-passage",
-          "ref": "Dan.5.5"
+          "basis": "depicted",
+          "note": "The crowned king seated on the dais, below the writing on the wall."
         }
       ]
     },
@@ -3022,13 +2770,7 @@
       "iiif_info": "https://iiif.archive.org/image/iiif/2/gustavedore%2F163%20Matt%202C%20The%20Children%20of%20Bethlehem%20are%20Massacred.jpg/info.json",
       "details_url": "https://archive.org/details/gustavedore/163%20Matt%202C%20The%20Children%20of%20Bethlehem%20are%20Massacred.jpg",
       "scripture_ref": "Matt.2.16",
-      "records": [
-        {
-          "id": "herod-the-great",
-          "basis": "in-scripture-passage",
-          "ref": "Matt.2.16"
-        }
-      ]
+      "records": []
     },
     {
       "number": 164,
@@ -3329,8 +3071,8 @@
         },
         {
           "id": "moses",
-          "basis": "in-scripture-passage",
-          "ref": "Mark.9.4"
+          "basis": "depicted",
+          "note": "The figure at the left of Jesus, holding the stone tablets."
         }
       ]
     },
@@ -3819,8 +3561,8 @@
         },
         {
           "id": "john-the-baptist",
-          "basis": "in-scripture-passage",
-          "ref": "John.1.29"
+          "basis": "depicted",
+          "note": "The man in skins on the bank, hand raised over the man standing in the water."
         }
       ]
     },
