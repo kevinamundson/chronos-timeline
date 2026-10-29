@@ -26,9 +26,9 @@
    - **ham:** no tier dates his birth, so his sorting_year is null.
 
    Please confirm these conventions.
-3. **Ussher-Jones edition.** CFAH cites Jones 2019 (21st ed.). That free PDF (floydnolenjonesministries.com/files/135786316.pdf) returned 404 and was not used.
-   The earlier entries used the 15th ed. (2002, ntslibrary.com) and Jones's Chart No. 1 (© 1993, from the owner-supplied page https://floydnolenjonesministries.com/chronology/).
+3. **Ussher-Jones edition.** CFAH cites Jones 2019 (21st ed.). The earlier entries used the 15th ed. (2002, ntslibrary.com) and Jones's Chart No. 1 (© 1993, from the owner-supplied page https://floydnolenjonesministries.com/chronology/).
    **Ruled 2026-10-27:** the 23rd ed. (Master Books, 2026), source `jones-chronology-ot-2026`, governs a ussher-jones year where it differs. The older figure stays in a note. See `docs/OPEN-QUESTIONS-FOR-KEVIN.md`, section M.
+   **Ruled 2026-10-28:** the 21st ed. (2019) is display only (`jones-2019`). The 23rd ed. still governs the sort. The only link is the Archive.org copy. The 17 differing dates are in section M6.
    The ministry page's "6 - Creation to Creator" link points to the Chart 5C file, so Chart 6 couldn't be read. Most charts in the 2002 PDF are images.
    Only Creation (0 AM / 4004 BC), the Flood (1656 AM / 2348 BC) and the AM birth years in the "Chronological Compendium" (p. 1) were readable as text in that edition. No BC years are inferred from AM figures. Appendix F of the 23rd ed. prints both columns.
 4. **Jones vs CFAH-1 Table 1 on 1012 BC.** Jones's Chart 1 says that in 2992 AM / 1012 BC Solomon *begins* the Temple. CFAH-1 Table 1 lists 1012 as "Solomon *Dedicates* the Temple". This matters for a future Temple anchor.

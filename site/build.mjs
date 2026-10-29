@@ -198,7 +198,7 @@ const osis = (ref) => {
 const scriptureList = (refs) => !refs?.length ? '' : `<ul class="chips">${refs.map((r) => { const o = osis(r); return `<li>${ext(o.href, esc(o.text))}</li>`; }).join('')}</ul>`;
 
 // Chronology display order (owner spec): CFAH anchor, CFAH-1 Table 1, Ussher-Jones, Ussher, Jordan (secondary, display only), Bible, (MT arithmetic), Josephus, Raleigh, Clonmacnoise.
-const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:paper_text', 'cfah:', 'ussher-jones', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'morecraft', 'cory', 'shuckford', 'hales', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
+const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:paper_text', 'cfah:', 'ussher-jones', 'jones-2019', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'morecraft', 'cory', 'shuckford', 'hales', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
 const rowKey = (e) => (e.source === 'cfah' ? `cfah:${e.cfah_basis || ''}` : e.source);
 const rowRank = (e) => { const i = ROW_ORDER.indexOf(rowKey(e)); return i < 0 ? 99 : i; };
 const chronName = (e, opts = {}) => {
@@ -219,6 +219,7 @@ const chronName = (e, opts = {}) => {
   if (e.source === 'shuckford') return `Shuckford <span class="tag tag-sec" title="Shuckford, Sacred and Profane History (1819, ed. Creighton), vol. 1; secondary display only; never sets the sort. Anno Mundi is not converted to BC.">secondary</span><div class="small muted">Sacred and Profane History, 1819</div>`;
   if (e.source === 'hales') return `Hales <span class="tag tag-sec" title="Hales, A New Analysis of Chronology (1830, 2nd ed.); secondary display only; never sets the sort. He prints B.C. years. Anno Mundi is not converted.">secondary</span><div class="small muted">A New Analysis of Chronology, 1830</div>`;
   if (e.source === 'jordan-compilation') return 'Jordan (compilation) <span class="tag tag-sec" title="Unnamed compiler\'s charts of Jordan\'s system; secondary display only">secondary</span>';
+  if (e.source === 'jones-2019') return 'Ussher–Jones <div class="small muted edition">21st ed. (2019)</div>';
   const c = chronById[e.source];
   return esc(c ? c.abbreviation || c.name : e.source);
 };
@@ -278,7 +279,12 @@ const tierYear = (entries) => {
 
 // Display only. One top-level row per author (CFAH anchor, CFAH-1 Table 1 and CFAH paper text stay separate chronologies).
 // Quotes that share a year nest under that date. A different year is a sub-row. Nothing here writes sorting_year, a tier or standby.
-const authorKey = (e) => (e.source === 'cfah' ? `cfah:${e.cfah_basis || ''}` : e.source);
+// Jones 2019 is the same author as Ussher–Jones. A differing year is a sub-row under that row.
+const authorKey = (e) => {
+  if (e.source === 'cfah') return `cfah:${e.cfah_basis || ''}`;
+  if (e.source === 'jones-2019') return 'ussher-jones';
+  return e.source;
+};
 const dateIdentity = (e) => {
   const years = [e.year_bc_ad, e.year_bc_ad_end, e.year_am, e.year_am_end];
   const sup = e.superseded_by || '';
@@ -348,7 +354,8 @@ function dateCell(entries) {
   const tags = apSame && tagged ? `<div>${apTags(tagged)}</div>` : '';
   const precisions = new Set(entries.map((e) => e.precision || ''));
   const prec = !pending && precisions.size === 1 && [...precisions][0] ? `<div class="small muted">Precision: ${esc([...precisions][0])}</div>` : '';
-  return `${body}${tags}${prec}`;
+  const edition = entries.every((e) => e.source === 'jones-2019') ? '<div class="small muted edition">21st ed. (2019)</div>' : '';
+  return `${edition}${body}${tags}${prec}`;
 }
 function quoteList(entries, setter, sortYear) {
   const sameText = entries.every((e) => (e.date ?? null) === (entries[0].date ?? null));

@@ -34,6 +34,17 @@
       "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "source_text_id": "jones-chronology-ot-2026",
       "note": null
+    },
+    {
+      "source": "jones-2019",
+      "date": "3495 AM, 510 BC",
+      "year_am": 3495,
+      "year_bc_ad": -510,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 21st ed. (Master Books, 2019), Appendix F, printed p. 280",
+      "link": "https://web.archive.org/web/20221023135542/https://www.floydnolenjonesministries.com/files/135786316.pdf",
+      "source_text_id": "jones-chronology-ot-2019",
+      "note": "21st ed. (2019) differs; the 23rd ed. (2026) sets the sort: 3495 AM, 509 BC."
     }
   ],
   "people": [
@@ -46,13 +57,19 @@
   ],
   "sources": [
     "blb-biblehub",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "jones-chronology-ot-2019"
   ],
   "free_source_links": [
     {
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 280 (PDF p. 315)"
+    },
+    {
+      "source_id": "jones-chronology-ot-2019",
+      "url": "https://web.archive.org/web/20221023135542/https://www.floydnolenjonesministries.com/files/135786316.pdf",
+      "locator": "Appendix F, printed p. 280"
     },
     {
       "source_id": "blb-biblehub",

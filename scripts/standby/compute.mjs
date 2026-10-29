@@ -40,7 +40,8 @@ export function hasPrintedYear(doc, source, year) {
 }
 
 function bestPrinted(doc, ctx) {
-  const cands = printedEntries(doc).filter((x) => Number.isInteger(x.e.year_bc_ad) && x.e.year_bc_ad !== 0);
+  // jones-2019 is a display comparison. It never places a record.
+  const cands = printedEntries(doc).filter((x) => Number.isInteger(x.e.year_bc_ad) && x.e.year_bc_ad !== 0 && x.e.source !== 'jones-2019');
   if (!cands.length) return null;
   cands.sort((a, b) => {
     const pa = ctx.priority[a.e.source] ?? 99;

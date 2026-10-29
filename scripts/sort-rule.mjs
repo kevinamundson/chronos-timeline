@@ -12,6 +12,7 @@ export const JONES_23_SOURCE = 'jones-chronology-ot-2026';
 export const TIERS = [
   { tier: 'cfah-anchor', rank: 1, chronology: 'cfah', match: (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point' },
   { tier: 'cfah-table1', rank: 2, chronology: 'cfah', match: (e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline' },
+  // jones-2019 is the 21st edition, display only. It is not this tier. Kevin, 2026-10-28.
   { tier: 'ussher-jones', rank: 3, chronology: 'ussher-jones', match: (e) => e.source === 'ussher-jones' },
   { tier: 'ussher', rank: 4, chronology: 'ussher', match: (e) => e.source === 'ussher' },
 ];

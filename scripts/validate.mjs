@@ -25,7 +25,7 @@ import { isBlbUrl, isNonBlbScripture, blbFromOsis } from './blb.mjs';
 import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, standbySummaryLine } from './standby/compute.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE, ITALICS_NOTE } from './raleigh/derived-year.mjs';
 import { loadChronologicalTable, yearColumnIndex, yearColumnReport } from './raleigh/table.mjs';
-import { TIERS, personTierSort, tierPick } from './sort-rule.mjs';
+import { TIERS, personTierSort, tierPick, isJones23 } from './sort-rule.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const S = (f) => JSON.parse(readFileSync(join(root, 'schema', f), 'utf8'));
@@ -425,6 +425,56 @@ let raleighDerivedSummary = '';
       if (!/^https:\/\/archive\.org\/details\/newanalysisofchr0[1-4]hale\/page\/n\d+\/mode\/1up$/.test(e.link || '')) err(rel, 'hales entry link must point at a full-view page of the 1830 Internet Archive scan');
       if (e.year_am != null) err(rel, 'hales entries in this pass store no Anno Mundi: year_am must be null (a printed B.C. year is year_bc_ad; Anno Mundi is not converted)');
       if (e.year_bc_ad != null && !(e.date || '').includes(String(Math.abs(e.year_bc_ad)))) err(rel, 'hales year_bc_ad must be the B.C. digits printed in the quotation');
+    }
+  }
+}
+// Jones 21st ed. (2019): display-only comparison. Never a sort tier. Kevin, 2026-10-28.
+{
+  const J19 = 'jones-2019';
+  const J19_SRC = 'jones-chronology-ot-2019';
+  const ARCHIVE = 'https://web.archive.org/web/20221023135542/https://www.floydnolenjonesministries.com/files/135786316.pdf';
+  const j19 = chronDoc.chronologies.find((c) => c.id === J19);
+  if (!j19) err('data/chronologies.json', 'jones-2019 is missing');
+  else if (j19.primary || !/SECONDARY DISPLAY/.test(j19.description)) err('data/chronologies.json', 'jones-2019 must be a non-primary SECONDARY DISPLAY chronology');
+  if (j19 && !/never sets sorting_year/.test(j19.description || '')) err('data/chronologies.json', 'jones-2019 description must say it never sets sorting_year');
+  if (!/jones-2019/.test(chronDoc.sorting_rule?.description || '')) err('data/chronologies.json', 'sorting_rule must list jones-2019 among the display chronologies that never set sorting_year');
+  const src = srcDoc.sources.find((s) => s.id === J19_SRC);
+  if (!src) err('data/sources.json', 'jones-chronology-ot-2019 is missing');
+  else {
+    if (src.url !== ARCHIVE) err('data/sources.json', 'jones-chronology-ot-2019 url must be the Archive.org copy only');
+    if ((src.alt_urls || []).length) err('data/sources.json', 'jones-chronology-ot-2019 must have no other link');
+  }
+  if (isJones23({ source: J19, source_text_id: J19_SRC, citation: '21st ed. (2019)' })) err('scripts/sort-rule.mjs', 'isJones23 must not treat jones-2019 as the 23rd edition');
+  if (isJones23({ source: 'ussher-jones', source_text_id: J19_SRC, citation: 'Jones, 21st ed. (Master Books, 2019)' })) err('scripts/sort-rule.mjs', 'a 21st-edition citation must not count as the 23rd edition');
+  if (TIERS.some((t) => t.match({ source: J19, year_bc_ad: 30 }))) err('scripts/sort-rule.mjs', 'jones-2019 matches a sort tier');
+  const drop = (e) => e.source === J19 || e.source_text_id === J19_SRC;
+  const sig = (p) => (p ? `${p.tier}|${p.rank}|${p.chronology}|${p.year}|${p.slot || ''}` : '');
+  for (const { rel, doc, kind } of sortingTargets) {
+    const b = doc.sorting_basis || {};
+    if (b.chronology === J19 || b.derived_from === J19) err(rel, 'jones-2019 may never set the sort');
+    if (doc.standby?.source_chronology === J19) err(rel, 'jones-2019 may never set a standby placement');
+    const full = kind === 'person' ? personTierSort(doc) : tierPick(doc.chronologies);
+    let bare;
+    if (kind === 'person') {
+      const dates = {};
+      for (const [slot, list] of Object.entries(doc.dates || {})) dates[slot] = (list || []).filter((e) => !drop(e));
+      bare = personTierSort({ ...doc, dates });
+    } else bare = tierPick((doc.chronologies || []).filter((e) => !drop(e)));
+    if (full?.entry?.source === J19 || full?.entry?.source_text_id === J19_SRC) err(rel, 'the tier sort comes from the 21st edition (2019)');
+    if (sig(full) !== sig(bare)) err(rel, 'removing the 21st edition (2019) would change the sort');
+  }
+  for (const { rel, doc } of Object.values(records)) {
+    const all = [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()];
+    for (const e of all.filter((x) => x.source === 'ussher-jones')) {
+      if (e.source_text_id === J19_SRC) err(rel, 'a ussher-jones entry must not cite the 21st edition; jones-2019 is display only');
+    }
+    for (const e of all.filter((x) => x.source === J19)) {
+      if (e.source_text_id !== J19_SRC) err(rel, `jones-2019 entry needs source_text_id ${J19_SRC}, got "${e.source_text_id}"`);
+      if (!/21st ed/.test(e.citation || '') || !/2019/.test(e.citation || '') || !/p\. \d+/.test(e.citation || '')) err(rel, 'jones-2019 entry needs a 21st ed. (2019) citation with a printed page');
+      if (e.link !== ARCHIVE) err(rel, 'jones-2019 entry link must be the Archive.org copy');
+      if (e.year_am == null || e.year_bc_ad == null) err(rel, 'jones-2019 entry needs both year_am and year_bc_ad');
+      const gov = all.find((x) => x.source === 'ussher-jones' && x.source_text_id === 'jones-chronology-ot-2026');
+      if (gov && e.year_am === gov.year_am && e.year_bc_ad === gov.year_bc_ad) err(rel, 'jones-2019 agrees with the 23rd edition and must not be stored');
     }
   }
 }
