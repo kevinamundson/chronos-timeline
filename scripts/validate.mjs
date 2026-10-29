@@ -27,6 +27,7 @@ import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDeriv
 import { loadChronologicalTable, yearColumnIndex, yearColumnReport } from './raleigh/table.mjs';
 import { TIERS, personTierSort, tierPick, isJones23 } from './sort-rule.mjs';
 import { doreUrls, IIIF_BASE, DISPLAY_W } from './dore/urls.mjs';
+import { parseDoreFileName } from './dore/parse.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const S = (f) => JSON.parse(readFileSync(join(root, 'schema', f), 'utf8'));
@@ -560,10 +561,26 @@ for (const c of chartDoc.charts || []) {
 }
 
 // Doré Bible illustrations (1866): data/illustrations/dore-1866.json. Images are linked through the
-// Internet Archive IIIF Image API, never copied; every URL must be the one scripts/dore/urls.mjs builds
-// from the file name, every record id must exist, and scripture_ref must map to a BLB chapter.
+// Internet Archive IIIF Image API (v2 primary), never copied; every URL must be the one
+// scripts/dore/urls.mjs builds from the file name. Record links name an existing person or event
+// and say why. scripture_ref must map to a BLB chapter. Apocrypha files (an x after the number) are rejected.
 let doreCount = 0;
 {
+  const samples = [
+    ['001 The Creation of Light.jpg', { number: 1, suffix: '', title: 'The Creation of Light' }],
+    ['009 Noah Curses Ham and Canaan.jpg', { number: 9, suffix: '', title: 'Noah Curses Ham and Canaan' }],
+    ['117x Tobias and the Angel.jpg', { number: 117, suffix: 'x', title: 'Tobias and the Angel' }],
+    ['136x Judas Maccabeus befoe the Army of Nicanor.jpg', { number: 136, suffix: 'x', title: 'Judas Maccabeus befoe the Army of Nicanor' }],
+  ];
+  for (const [name, want] of samples) {
+    const got = parseDoreFileName(name);
+    if (!got || got.number !== want.number || got.suffix !== want.suffix || got.title !== want.title) {
+      err('scripts/dore/parse.mjs', `parseDoreFileName(${JSON.stringify(name)}) returned ${JSON.stringify(got)}`);
+    }
+  }
+  if (parseDoreFileName('12 The Creation of Light.jpg') || parseDoreFileName('001NoSpace.jpg') || parseDoreFileName('001xNoSpace.jpg')) {
+    err('scripts/dore/parse.mjs', 'parser accepted a file name that is not number, optional x, space, title, .jpg');
+  }
   const rel = 'data/illustrations/dore-1866.json';
   if (existsSync(join(root, rel))) {
     const doc = validate(rel, 'illustrations');
@@ -572,19 +589,53 @@ let doreCount = 0;
     for (const il of doc.illustrations || []) {
       const tag = `illustration ${il.number}`;
       if (nums.has(il.number)) err(rel, `${tag}: duplicate number`); nums.add(il.number);
-      if (Number(il.file.slice(0, 3)) !== il.number) err(rel, `${tag}: number does not match file name "${il.file}"`);
-      if (il.title !== il.file.slice(4, -4)) err(rel, `${tag}: title must be the file name without number and extension`);
+      const parsed = parseDoreFileName(il.file);
+      if (!parsed) err(rel, `${tag}: file name "${il.file}" is not a number, optional x, space, title, and .jpg`);
+      else {
+        if (parsed.suffix === 'x' || il.suffix === 'x') err(rel, `${tag}: Apocrypha file (x suffix) is not part of this set`);
+        if (il.suffix !== parsed.suffix) err(rel, `${tag}: suffix must be the suffix parsed from the file name`);
+        if (il.number !== parsed.number) err(rel, `${tag}: number does not match file name "${il.file}"`);
+        if (il.title !== parsed.title) err(rel, `${tag}: title must be the file name after the number, suffix, and space`);
+      }
       const u = doreUrls(il.file);
       for (const [k, want] of [['image', u.display], ['image_small', u.small], ['iiif_info', u.iiif_info], ['details_url', u.details]]) if (il[k] !== want) err(rel, `${tag}: ${k} must be ${want}`);
-      if (!il.image.startsWith(IIIF_BASE)) err(rel, `${tag}: display image must come from the Archive.org IIIF Image API`);
+      if (!il.image.startsWith(IIIF_BASE)) err(rel, `${tag}: display image must come from the Archive.org IIIF Image API v2`);
       if (Math.abs(il.display_height - Math.round(DISPLAY_W * il.original_height / il.original_width)) > 1) err(rel, `${tag}: display_height must be ${DISPLAY_W} x original_height / original_width`);
       if (il.scripture_ref && !blbFromOsis(il.scripture_ref)) err(rel, `${tag}: scripture_ref "${il.scripture_ref}" cannot be mapped to a BLB chapter`);
-      if (!il.records.length) err(rel, `${tag}: no records`);
-      for (const r of il.records) {
+      const ids = [];
+      for (const link of il.records) {
+        const r = link.id;
+        ids.push(r);
         if (!records[r]) err(rel, `${tag}: record ${r} not found`);
         else if (!['person', 'event'].includes(records[r].kind)) err(rel, `${tag}: ${r} is a ${records[r].kind}; illustrations go on people and events`);
+        else if (link.basis === 'event-depicted' && records[r].kind !== 'event') err(rel, `${tag}: ${r} is a person; event-depicted is for an event`);
+        else if (link.basis !== 'event-depicted' && records[r].kind !== 'person') err(rel, `${tag}: ${r} is an event; use event-depicted`);
+        if (link.basis === 'in-scripture-passage') {
+          if (!link.ref) err(rel, `${tag}: ${r} in-scripture-passage needs a ref`);
+          else if (!blbFromOsis(link.ref)) err(rel, `${tag}: ${r} ref "${link.ref}" cannot be mapped to a BLB chapter`);
+        } else if (link.ref) err(rel, `${tag}: ${r} basis ${link.basis} must not carry a ref`);
       }
+      if (new Set(ids).size !== ids.length) err(rel, `${tag}: duplicate record id`);
       doreCount++;
+    }
+    if (doreCount === 220) {
+      const x = (doc.illustrations || []).find((il) => /x/i.test(il.suffix) || /^\d{3}x /.test(il.file));
+      if (x) err(rel, `illustration ${x.number}: x-suffix file slipped into the 220`);
+    }
+    const sizesRel = 'scripts/dore/sizes.json';
+    if (existsSync(join(root, sizesRel))) {
+      const sizes = JSON.parse(readFileSync(join(root, sizesRel), 'utf8'));
+      const files = new Set();
+      for (const il of doc.illustrations || []) {
+        files.add(il.file);
+        const s = sizes[il.file];
+        if (!s) err(rel, `illustration ${il.number}: no measurement in ${sizesRel}`);
+        else if (il.original_width !== s.width || il.original_height !== s.height) err(rel, `illustration ${il.number}: original size must match ${sizesRel} (${s.width}×${s.height})`);
+      }
+      for (const name of Object.keys(sizes)) {
+        if (/^\d{3}x /.test(name)) err(sizesRel, `${name}: an x-suffix file must not be in the size cache`);
+        else if (!files.has(name)) err(rel, `${name} is measured in ${sizesRel} but is not in the illustrations`);
+      }
     }
   }
 }

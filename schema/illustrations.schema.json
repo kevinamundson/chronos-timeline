@@ -15,20 +15,33 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["number", "title", "file", "original_width", "original_height", "display_height", "image", "image_small", "iiif_info", "details_url", "scripture_ref", "records"],
+        "required": ["number", "suffix", "title", "file", "original_width", "original_height", "display_height", "image", "image_small", "iiif_info", "details_url", "scripture_ref", "records"],
         "properties": {
           "number": { "type": "integer", "minimum": 1, "description": "Number at the start of the Archive.org file name (the uploader's numbering, not Doré's plate number)." },
-          "title": { "type": "string", "minLength": 1, "description": "Title from the file name, as uploaded." },
+          "suffix": { "type": "string", "const": "", "description": "The uploader's optional mark after the number. The Apocrypha files use x; those files are not in this set, and a non-empty suffix is rejected." },
+          "title": { "type": "string", "minLength": 1, "description": "Title from the file name, as uploaded. The text after the number, the optional suffix, and the space." },
           "file": { "type": "string", "pattern": "^\\d{3} .+\\.jpg$" },
-          "original_width": { "type": "integer", "minimum": 100, "description": "Pixel size of the Archive.org original (IIIF info.json, or the JPEG header where info.json timed out)." },
+          "original_width": { "type": "integer", "minimum": 100, "description": "Pixel size of the Archive.org original (IIIF info.json, v2 then v3, or the JPEG header where both timed out)." },
           "original_height": { "type": "integer", "minimum": 100 },
           "display_height": { "type": "integer", "minimum": 100, "description": "Height of the 1200 px wide display image, for the img width/height attributes (no layout shift)." },
           "image": { "$ref": "common.schema.json#/$defs/url" },
           "image_small": { "$ref": "common.schema.json#/$defs/url" },
           "iiif_info": { "$ref": "common.schema.json#/$defs/url" },
           "details_url": { "$ref": "common.schema.json#/$defs/url" },
-          "scripture_ref": { "type": ["string", "null"], "description": "OSIS reference, only where the title names one scene. Identified from the title; not printed on the plate." },
-          "records": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }
+          "scripture_ref": { "type": ["string", "null"], "description": "OSIS reference, only where the title names one passage. Identified from the title; not printed on the plate. A chapter-level ref is used when the title gives the chapter and the scene is not pinned to verses." },
+          "records": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "basis"],
+              "properties": {
+                "id": { "$ref": "common.schema.json#/$defs/slug" },
+                "basis": { "enum": ["named-in-title", "in-scripture-passage", "event-depicted"] },
+                "ref": { "type": "string", "description": "OSIS reference that places this person in the scene. Required when basis is in-scripture-passage." }
+              }
+            }
+          }
         }
       }
     }
