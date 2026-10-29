@@ -1,6 +1,21 @@
-// Doré illustration gallery: CSS scroll-snap does the swiping; this adds prev/next, dots,
-// arrow keys and a "n of N" status. No library. Without JS the strip still scrolls and snaps.
+// Doré illustrations. (1) An image that fails on IIIF v3 is retried once on IIIF v2 (same Archive.org
+// service), then replaced by a link to Archive.org. (2) Gallery: CSS scroll-snap does the swiping; this
+// adds prev/next, dots, arrow keys and a "n of N" status. No library. Without JS the strip still scrolls.
 (() => {
+  const fail = (img) => {
+    if (img.dataset.fallbackSrc && !img.dataset.retried) {
+      img.dataset.retried = '1';
+      img.srcset = img.dataset.fallbackSrcset;
+      img.src = img.dataset.fallbackSrc;
+      return;
+    }
+    const fig = img.closest('figure');
+    img.closest('a').hidden = true;
+    fig?.querySelector('.dore-unavailable')?.removeAttribute('hidden');
+  };
+  for (const img of document.querySelectorAll('img.dore-img')) {
+    img.addEventListener('error', () => fail(img));
+  }
   for (const g of document.querySelectorAll('[data-dore-gallery]')) {
     const track = g.querySelector('.dore-track');
     const slides = [...track.querySelectorAll('.dore-slide')];

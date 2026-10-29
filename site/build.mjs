@@ -12,6 +12,7 @@ import { standbyCounts, standbySummaryLine } from '../scripts/standby/compute.mj
 import { isJones23, reignStartPhrase } from '../scripts/sort-rule.mjs';
 import { redirectLines, redirectsFileHasSennacherib } from '../scripts/redirects.mjs';
 import { protectHtml } from './email-protect.mjs';
+import { doreUrls, DISPLAY_W, SMALL_W } from '../scripts/dore/urls.mjs';
 
 assertRaleighDerived();
 
@@ -510,13 +511,15 @@ const chartSection = (id) => { const cs = chartsFor(id); return !cs.length ? '' 
 
 // ---------- Gustave Doré, Bible illustrations (1866) ----------
 // Images come from the Internet Archive IIIF Image API (data/illustrations/dore-1866.json); none is copied.
-// One illustration: a figure. Two or more: a swipeable gallery (scroll-snap + site/src/gallery.js).
+// One illustration: a figure. Two or more: a swipeable gallery (scroll-snap + site/src/dore.js, which also
+// retries a failed image once on the IIIF v2 endpoint and then shows a link to Archive.org).
 const doreFor = (id) => doreDoc.illustrations.filter((il) => il.records.includes(id)).sort((a, b) => a.number - b.number);
 const doreFigure = (il, i, n) => {
   const ref = il.scripture_ref ? osis(il.scripture_ref) : null;
   const others = il.records.filter((r) => byId[r]);
   return `<figure class="dore-fig${n > 1 ? ' dore-slide' : ''}"${n > 1 ? ` role="group" aria-roledescription="slide" aria-label="${i + 1} of ${n}: ${esc(il.title)}"` : ''}>
-<a href="${esc(il.details_url)}" rel="noopener" target="_blank"><img class="dore-img" src="${esc(il.image_small)}" srcset="${esc(il.image_small)} ${il.small_width}w, ${esc(il.image)} ${il.width}w" sizes="(min-width: 1100px) 760px, 92vw" width="${il.width}" height="${il.height}" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="Gustave Doré, ${esc(il.title)} (wood engraving, 1866)"><span class="visually-hidden"> (opens on Archive.org in a new tab)</span></a>
+<a href="${esc(il.details_url)}" rel="noopener" target="_blank"><img class="dore-img" src="${esc(il.image_small)}" srcset="${esc(il.image_small)} ${SMALL_W}w, ${esc(il.image)} ${DISPLAY_W}w" sizes="(min-width: 1100px) 760px, 92vw" width="${DISPLAY_W}" height="${il.display_height}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback-src="${esc(doreUrls(il.file).small_v2)}" data-fallback-srcset="${esc(doreUrls(il.file).small_v2)} ${SMALL_W}w, ${esc(doreUrls(il.file).display_v2)} ${DISPLAY_W}w" alt="Gustave Doré, ${esc(il.title)} (wood engraving, 1866)"><span class="visually-hidden"> (opens on Archive.org in a new tab)</span></a>
+<p class="dore-unavailable small muted" hidden>The Internet Archive did not return this image just now. ${ext(il.details_url, 'Open it on Archive.org')}.</p>
 <figcaption><span class="dore-title">${esc(il.title)}</span><br><span class="small">Gustave Doré, 1866. Archive.org file ${String(il.number).padStart(3, '0')}.${ref ? ` Scene: ${ext(ref.href, esc(ref.text))}.` : ''}</span>
 <ul class="links small"><li>${ext(il.details_url, 'Open on Archive.org')}</li>${others.length > 1 ? `<li>Also on: ${others.map(link).join(', ')}</li>` : ''}</ul></figcaption></figure>`;
 };
@@ -534,7 +537,7 @@ const doreSection = (id) => {
 <button type="button" class="dore-btn" data-dore="next" aria-label="Next illustration">Next ›</button><span class="dore-status small muted" aria-live="polite"></span></div>
 </div>${credit}</section>`;
 };
-const doreScript = (id) => (doreFor(id).length > 1 ? '<script src="/assets/gallery.js" defer></script>' : '');
+const doreScript = (id) => (doreFor(id).length ? '<script src="/assets/dore.js" defer></script>' : '');
 
 function sourcesSection(rec) {
   const fsl = rec.free_source_links || [];

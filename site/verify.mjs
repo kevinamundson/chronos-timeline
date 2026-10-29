@@ -1371,6 +1371,21 @@ for (const [path, shot, sel] of [
     }
   }
 }
+{
+  // Fallback: when IIIF v3 fails, dore.js retries on IIIF v2; when both fail, it shows a link to Archive.org.
+  for (const [label, pattern, expect] of [['v3 blocked', '**/image/iiif/3/**', 'v2'], ['v3 and v2 blocked', '**/image/iiif/**', 'link']]) {
+    const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const page = await ctx.newPage();
+    await page.route(pattern, (r) => r.abort());
+    await page.goto(BASE + '/people/ham/', { waitUntil: 'load', timeout: 30000 });
+    await page.locator('section.dore').scrollIntoViewIfNeeded();
+    const ok = expect === 'v2'
+      ? await page.waitForFunction(() => document.querySelector('img.dore-img')?.src.includes('/image/iiif/2/'), null, { timeout: 10000 }).then(() => true, () => false)
+      : await page.waitForFunction(() => { const p = document.querySelector('.dore-unavailable'); return p && !p.hidden && p.querySelector('a[href*="archive.org/details/gustavedore"]'); }, null, { timeout: 10000 }).then(() => true, () => false);
+    check(`doré fallback (${label}): ${expect === 'v2' ? 'retries on IIIF v2' : 'shows the Archive.org link'}`, ok);
+    await ctx.close();
+  }
+}
 await browser.close();
 srv.close();
 console.log(results.join('\n'));

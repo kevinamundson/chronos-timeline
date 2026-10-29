@@ -26,7 +26,7 @@ import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, stan
 import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE, ITALICS_NOTE } from './raleigh/derived-year.mjs';
 import { loadChronologicalTable, yearColumnIndex, yearColumnReport } from './raleigh/table.mjs';
 import { TIERS, personTierSort, tierPick, isJones23 } from './sort-rule.mjs';
-import { doreUrls, IIIF_BASE } from './dore/urls.mjs';
+import { doreUrls, IIIF_BASE, DISPLAY_W } from './dore/urls.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const S = (f) => JSON.parse(readFileSync(join(root, 'schema', f), 'utf8'));
@@ -574,10 +574,10 @@ let doreCount = 0;
       if (nums.has(il.number)) err(rel, `${tag}: duplicate number`); nums.add(il.number);
       if (Number(il.file.slice(0, 3)) !== il.number) err(rel, `${tag}: number does not match file name "${il.file}"`);
       if (il.title !== il.file.slice(4, -4)) err(rel, `${tag}: title must be the file name without number and extension`);
-      const u = doreUrls(il.file, il.width, il.small_width);
+      const u = doreUrls(il.file);
       for (const [k, want] of [['image', u.display], ['image_small', u.small], ['iiif_info', u.iiif_info], ['details_url', u.details]]) if (il[k] !== want) err(rel, `${tag}: ${k} must be ${want}`);
       if (!il.image.startsWith(IIIF_BASE)) err(rel, `${tag}: display image must come from the Archive.org IIIF Image API`);
-      if (il.width > 2000 || il.small_width >= il.width) err(rel, `${tag}: display width must be a scaled level (<= 2000 px), small_width below it`);
+      if (Math.abs(il.display_height - Math.round(DISPLAY_W * il.original_height / il.original_width)) > 1) err(rel, `${tag}: display_height must be ${DISPLAY_W} x original_height / original_width`);
       if (il.scripture_ref && !blbFromOsis(il.scripture_ref)) err(rel, `${tag}: scripture_ref "${il.scripture_ref}" cannot be mapped to a BLB chapter`);
       if (!il.records.length) err(rel, `${tag}: no records`);
       for (const r of il.records) {

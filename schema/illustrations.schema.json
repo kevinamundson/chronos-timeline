@@ -15,14 +15,14 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["number", "title", "file", "width", "height", "small_width", "image", "image_small", "iiif_info", "details_url", "scripture_ref", "records"],
+        "required": ["number", "title", "file", "original_width", "original_height", "display_height", "image", "image_small", "iiif_info", "details_url", "scripture_ref", "records"],
         "properties": {
           "number": { "type": "integer", "minimum": 1, "description": "Number at the start of the Archive.org file name (the uploader's numbering, not Doré's plate number)." },
           "title": { "type": "string", "minLength": 1, "description": "Title from the file name, as uploaded." },
           "file": { "type": "string", "pattern": "^\\d{3} .+\\.jpg$" },
-          "width": { "type": "integer", "minimum": 100, "description": "Width of the display image (an info.json size level)." },
-          "height": { "type": "integer", "minimum": 100 },
-          "small_width": { "type": "integer", "minimum": 100 },
+          "original_width": { "type": "integer", "minimum": 100, "description": "Pixel size of the Archive.org original (IIIF info.json, or the JPEG header where info.json timed out)." },
+          "original_height": { "type": "integer", "minimum": 100 },
+          "display_height": { "type": "integer", "minimum": 100, "description": "Height of the 1200 px wide display image, for the img width/height attributes (no layout shift)." },
           "image": { "$ref": "common.schema.json#/$defs/url" },
           "image_small": { "$ref": "common.schema.json#/$defs/url" },
           "iiif_info": { "$ref": "common.schema.json#/$defs/url" },
