@@ -12,7 +12,7 @@ import { standbyCounts, standbySummaryLine } from '../scripts/standby/compute.mj
 import { isJones23, reignStartPhrase } from '../scripts/sort-rule.mjs';
 import { redirectLines, redirectsFileHasSennacherib } from '../scripts/redirects.mjs';
 import { protectHtml } from './email-protect.mjs';
-import { doreUrls, DISPLAY_W, SMALL_W } from '../scripts/dore/urls.mjs';
+import { doreUrls, DISPLAY_W, SMALL_W, THUMB_W } from '../scripts/dore/urls.mjs';
 
 assertRaleighDerived();
 
@@ -511,31 +511,40 @@ const chartSection = (id) => { const cs = chartsFor(id); return !cs.length ? '' 
 
 // ---------- Gustave Doré, Bible illustrations (1866) ----------
 // Images come from the Internet Archive IIIF Image API (data/illustrations/dore-1866.json); none is copied.
-// One illustration: a figure. Two or more: a swipeable gallery (scroll-snap + site/src/dore.js, which also
-// retries a failed image once on the IIIF v2 endpoint and then shows a link to Archive.org).
-const doreFor = (id) => doreDoc.illustrations.filter((il) => il.records.includes(id)).sort((a, b) => a.number - b.number);
-const doreFigure = (il, i, n) => {
+// v2 is the image the page requests. v3 is the fallback (site/src/dore.js retries once, then links to Archive.org).
+// One illustration: a figure. Two or more: a swipeable gallery (scroll-snap).
+// The figure sits beside the title. On a narrow screen it stacks under the title.
+const doreIds = (il) => il.records.map((r) => r.id);
+const doreFor = (id) => doreDoc.illustrations.filter((il) => doreIds(il).includes(id)).sort((a, b) => a.number - b.number);
+const doreFigure = (il, i, n, currentId) => {
   const ref = il.scripture_ref ? osis(il.scripture_ref) : null;
-  const others = il.records.filter((r) => byId[r]);
+  const others = doreIds(il).filter((r) => r !== currentId && byId[r]);
+  const urls = doreUrls(il.file);
+  const fileNo = `${String(il.number).padStart(3, '0')}${il.suffix || ''}`;
   return `<figure class="dore-fig${n > 1 ? ' dore-slide' : ''}"${n > 1 ? ` role="group" aria-roledescription="slide" aria-label="${i + 1} of ${n}: ${esc(il.title)}"` : ''}>
-<a href="${esc(il.details_url)}" rel="noopener" target="_blank"><img class="dore-img" src="${esc(il.image_small)}" srcset="${esc(il.image_small)} ${SMALL_W}w, ${esc(il.image)} ${DISPLAY_W}w" sizes="(min-width: 1100px) 760px, 92vw" width="${DISPLAY_W}" height="${il.display_height}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback-src="${esc(doreUrls(il.file).small_v2)}" data-fallback-srcset="${esc(doreUrls(il.file).small_v2)} ${SMALL_W}w, ${esc(doreUrls(il.file).display_v2)} ${DISPLAY_W}w" alt="Gustave Doré, ${esc(il.title)} (wood engraving, 1866)"><span class="visually-hidden"> (opens on Archive.org in a new tab)</span></a>
+<a href="${esc(il.details_url)}" rel="noopener" target="_blank"><img class="dore-img" src="${esc(il.image_small)}" srcset="${esc(il.image_small)} ${SMALL_W}w, ${esc(il.image)} ${DISPLAY_W}w" sizes="(min-width: 800px) 340px, 92vw" width="${DISPLAY_W}" height="${il.display_height}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback-src="${esc(urls.small_v3)}" data-fallback-srcset="${esc(urls.small_v3)} ${SMALL_W}w, ${esc(urls.display_v3)} ${DISPLAY_W}w" alt="Gustave Doré, ${esc(il.title)} (wood engraving, 1866)"><span class="visually-hidden"> (opens on Archive.org in a new tab)</span></a>
 <p class="dore-unavailable small muted" hidden>The Internet Archive did not return this image just now. ${ext(il.details_url, 'Open it on Archive.org')}.</p>
-<figcaption><span class="dore-title">${esc(il.title)}</span><br><span class="small">Gustave Doré, 1866. Archive.org file ${String(il.number).padStart(3, '0')}.${ref ? ` Scene: ${ext(ref.href, esc(ref.text))}.` : ''}</span>
-<ul class="links small"><li>${ext(il.details_url, 'Open on Archive.org')}</li>${others.length > 1 ? `<li>Also on: ${others.map(link).join(', ')}</li>` : ''}</ul></figcaption></figure>`;
+<figcaption><span class="dore-title">${esc(il.title)}</span><br><span class="small">Gustave Doré, 1866. Archive.org file ${fileNo}.${ref ? ` Scene: ${ext(ref.href, esc(ref.text))}.` : ''}</span>
+<ul class="links small"><li>${ext(il.details_url, 'Open on Archive.org')}</li>${others.length ? `<li>Also on: ${others.map(link).join(', ')}</li>` : ''}</ul></figcaption></figure>`;
 };
 const doreSection = (id) => {
   const ils = doreFor(id);
   if (!ils.length) return '';
   const n = ils.length;
-  const credit = `<p class="small muted">Public domain. Images are served by the Internet Archive (${ext('https://archive.org/details/gustavedore', 'Gustave Doré Bible Illustrations (1866)')}) and are not copied to this site. Titles and numbers are the Archive.org file names.</p>`;
-  if (n === 1) return `<section class="card dore" aria-labelledby="dore-h"><h2 id="dore-h">Illustration</h2>${doreFigure(ils[0], 0, 1)}${credit}</section>`;
-  return `<section class="card dore" aria-labelledby="dore-h"><h2 id="dore-h">Illustrations <span class="muted small">(${n})</span></h2>
+  const credit = `<p class="small muted">Public domain. Images are served by the Internet Archive (${ext('https://archive.org/details/gustavedore', 'Gustave Doré Bible Illustrations (1866)')}) and are not copied to this site. Titles and numbers are the Archive.org file names. <a href="/illustrations/dore/">All ${doreDoc.illustrations.length} plates</a>.</p>`;
+  if (n === 1) return `<section class="card dore record-dore" aria-labelledby="dore-h"><h2 id="dore-h">Illustration</h2>${doreFigure(ils[0], 0, 1, id)}${credit}</section>`;
+  return `<section class="card dore record-dore" aria-labelledby="dore-h"><h2 id="dore-h">Illustrations <span class="muted small">(${n})</span></h2>
 <div class="dore-gallery" data-dore-gallery role="region" aria-roledescription="carousel" aria-labelledby="dore-h">
-<div class="dore-track" tabindex="0" aria-label="Illustrations: swipe, or use the arrow keys">${ils.map((il, i) => doreFigure(il, i, n)).join('')}</div>
+<div class="dore-track" tabindex="0" aria-label="Illustrations: swipe, or use the arrow keys">${ils.map((il, i) => doreFigure(il, i, n, id)).join('')}</div>
 <div class="dore-controls"><button type="button" class="dore-btn" data-dore="prev" aria-label="Previous illustration">‹ Prev</button>
 <ol class="dore-dots">${ils.map((il, i) => `<li><button type="button" class="dore-dot" aria-label="Show ${i + 1}: ${esc(il.title)}"></button></li>`).join('')}</ol>
 <button type="button" class="dore-btn" data-dore="next" aria-label="Next illustration">Next ›</button><span class="dore-status small muted" aria-live="polite"></span></div>
 </div>${credit}</section>`;
+};
+const recordTop = (id, identity) => {
+  const dore = doreSection(id);
+  if (!dore) return identity;
+  return `<div class="record-top"><div class="record-head">${identity}</div>${dore}</div>`;
 };
 const doreScript = (id) => (doreFor(id).length ? '<script src="/assets/dore.js" defer></script>' : '');
 
@@ -746,9 +755,8 @@ ${jsonScript('map-data', locations.filter((l) => l.lat != null && l.lng != null)
 
 // Events
 for (const e of events) {
-  const body = `${crumbs(e)}<article>${head(e)}${sortBadge(e)}
+  const body = `${crumbs(e)}<article>${recordTop(e.id, `${head(e)}${sortBadge(e)}`)}
 ${e.description ? `<section class="card"><h2>Description</h2><p>${esc(e.description)}</p></section>` : ''}
-${doreSection(e.id)}
 ${e.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(e.scripture_refs)}</section>` : ''}
 <section class="card"><h2>Chronologies</h2>${chronTable(e.chronologies, { sortYear: e.sorting_year, basis: e.sorting_basis, caption: `Dates for ${e.title}, CFAH first` })}</section>
 ${flagsSection(e, e.chronologies)}
@@ -1098,10 +1106,9 @@ ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years
   const kls = kingListsOf(p.id);
   const kingCard = p.dynasty || kls.length ? `<section class="card" id="king-lists"><h2>Dynasty and king lists</h2>${p.dynasty ? `<p>Dynasty: ${esc(p.dynasty)}</p>` : ''}${kls.length ? `<p>Listed in: ${kls.map((l) => `<a href="/king-lists/#${esc(l.id)}">${esc(l.title)}</a>`).join('; ')}</p>` : ''}</section>` : '';
   const standbyLine = p.standby && p.sorting_year == null ? `<p class="small muted">Standby placement: <strong>${esc(yearLabel(p.standby.year_bc_ad))}</strong> (${esc(standbyPhrase(p))}). This is not a sort year.</p>` : '';
-  const body = `${crumbs(p)}<article>${head(p, { hideAlt: true })}${sortBadge(p)}${standbyLine}
+  const body = `${crumbs(p)}<article>${recordTop(p.id, `${head(p, { hideAlt: true })}${sortBadge(p)}${standbyLine}`)}
 ${nameSection(p)}
 ${p.description ? `<section class="card"><h2>Description</h2><p>${esc(p.description)}</p></section>` : ''}${kingCard}
-${doreSection(p.id)}
 ${p.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(p.scripture_refs)}</section>` : ''}
 ${familySection(p)}
 ${facts}
@@ -1342,10 +1349,39 @@ document.getElementById('raleigh-table')?.addEventListener('click', (event) => {
   const nThumb = charts.filter((c) => c.thumbnail).length;
   const body = `<h1>CFAH charts and figures</h1>
 <section class="card"><p>${charts.length} figures from the <i>Chronological Framework of Ancient History</i> papers by Griffith &amp; White. ${nThumb} are published in <i>Answers Research Journal</i> and shown as lazy-loaded thumbnails served by ARJ. The other ${charts.length - nThumb} are files in the CFAH OSF project. OSF serves them only as downloads, so they appear as text cards. No image is copied to this site; every card links to the original image and to its paper. The figures remain © their authors and publishers.</p>
+<p>Bible illustrations: <a href="/illustrations/dore/">Gustave Doré, 1866</a> (${doreDoc.illustrations.length} plates, linked on the records they depict).</p>
 <nav aria-label="Papers"><ul class="chip-list">${groups.map((g) => `<li><a href="#paper-${esc(g.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}">${esc(g)}</a></li>`).join('')}</ul></nav></section>
 ${groups.map((g) => `<section aria-labelledby="paper-${esc(g.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}"><h2 id="paper-${esc(g.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}">${esc(g)} <span class="muted small">(${charts.filter((c) => c.paper === g).length})</span></h2>
 <ul class="chart-grid">${charts.filter((c) => c.paper === g).map((c) => chartCard(c, 'h3')).join('')}</ul></section>`).join('\n')}`;
   out('gallery/index.html', page({ title: 'CFAH charts', desc: `Gallery of ${charts.length} CFAH charts and figures, linked to their papers.`, body, path: '/gallery/', type: 'Chart' }));
+}
+
+// Gustave Doré, 1866: every canonical plate, in file order. Apocrypha (x suffix) are not listed.
+{
+  const plates = [...doreDoc.illustrations].sort((a, b) => a.number - b.number);
+  const item = (il) => {
+    const urls = doreUrls(il.file);
+    const thumbH = Math.round(THUMB_W * il.original_height / il.original_width);
+    const ref = il.scripture_ref ? osis(il.scripture_ref) : null;
+    const ids = doreIds(il).filter((r) => byId[r]);
+    const fileNo = `${String(il.number).padStart(3, '0')}${il.suffix || ''}`;
+    return `<li class="dore-index-item" id="dore-${fileNo}">
+<a class="dore-index-thumb" href="${esc(il.details_url)}" rel="noopener" target="_blank"><img class="dore-img" src="${esc(urls.thumb)}" width="${THUMB_W}" height="${thumbH}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback-src="${esc(urls.thumb_v3)}" alt="Gustave Doré, ${esc(il.title)} (wood engraving, 1866)"><span class="visually-hidden"> (opens on Archive.org in a new tab)</span></a>
+<div class="dore-index-body"><h2><span class="muted">${fileNo}</span> ${esc(il.title)}</h2>
+<p class="small">${ref ? `Scene: ${ext(ref.href, esc(ref.text))}` : '<span class="muted">—</span>'}</p>
+<p class="small">${ids.length ? `Records: ${ids.map(link).join(', ')}` : '<span class="muted">No matching record</span>'}</p>
+</div></li>`;
+  };
+  const body = `<h1>Gustave Doré, 1866</h1>
+<section class="card"><p>${plates.length} Bible illustrations from the Internet Archive item <a href="https://archive.org/details/gustavedore" rel="noopener">gustavedore</a>. The 21 Apocrypha files, whose number has an x after it, are not listed. Titles and numbers are the Archive.org file names, not Doré's 1866 plate numbers. A Scripture link is given only where the title names one passage. It is identified from the title, not printed on the plate. Images are served by the Archive.org IIIF Image API and are not copied to this site.</p></section>
+<ol class="dore-index">${plates.map(item).join('\n')}</ol>`;
+  out('illustrations/dore/index.html', page({
+    title: 'Gustave Doré, 1866',
+    desc: `${plates.length} Gustave Doré Bible illustrations (1866), with the records they depict.`,
+    body,
+    path: '/illustrations/dore/',
+    scripts: plates.length ? '<script src="/assets/dore.js" defer></script>' : '',
+  }));
 }
 
 // King lists (CFAH pass, phase 3)

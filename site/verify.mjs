@@ -1332,25 +1332,54 @@ for (const [path, shot, sel] of [
   check('jones-2019 nero: sub-row shows the AM difference', !nero.separate && /AM 4068/.test(nero.top) && /AD 64/.test(nero.top) && /21st ed\. \(2019\)/.test(nero.sub) && /AM 4067/.test(nero.sub) && /AD 64/.test(nero.sub), JSON.stringify(nero).slice(0, 400));
   await ctx.close();
 }
-// Doré illustrations (1866): one figure, or a scroll-snap gallery with prev/next, dots and arrow keys.
-// Images load from the Internet Archive IIIF service; this checks markup and controls, not image bytes.
+// Doré illustrations (1866): beside the title (stacked under it at 390px), IIIF v2 with a v3 fallback,
+// Also-on excluding the current record, and prev/next labels that do not wrap.
+// Images load from the Internet Archive; this checks markup and controls, not image bytes.
 {
-  const cases = [['/people/noah/', 2], ['/events/the-flood/', 3], ['/people/adam/', 2], ['/people/ham/', 1], ['/events/the-fall/', 1]];
+  const doreDoc = JSON.parse(readFileSync(join(here, '../data/illustrations/dore-1866.json'), 'utf8'));
+  const countFor = (id) => doreDoc.illustrations.filter((il) => il.records.some((r) => r.id === id)).length;
+  const singleId = ['canaan-son-of-ham', 'balthasar', 'athalia', 'zerubbabel'].find((id) => countFor(id) === 1);
+  const cases = [['/people/noah/', countFor('noah')], ['/events/the-flood/', countFor('the-flood')], ['/people/adam/', countFor('adam')], ['/events/the-fall/', countFor('the-fall')]];
+  if (singleId) cases.push([`/people/${singleId}/`, 1]);
+  check('doré sample: a gallery and a single figure', countFor('noah') > 1 && !!singleId, `noah=${countFor('noah')} single=${singleId || 'none'}`);
   for (const [path, n] of cases) {
     for (const width of [390, 1280]) {
       const { ctx, page, errors, status } = await open(path, { width, height: 900 });
       const info = await page.evaluate(() => {
         const sec = document.querySelector('section.dore');
+        const h1 = document.querySelector('article h1');
         const imgs = [...(sec?.querySelectorAll('img.dore-img') || [])];
+        const hr = h1?.getBoundingClientRect();
+        const fr = sec?.getBoundingClientRect();
+        const desc = [...document.querySelectorAll('h2')].find((h) => h.textContent.trim() === 'Description');
+        const beforeDesc = !desc || !!(sec && (sec.compareDocumentPosition(desc) & Node.DOCUMENT_POSITION_FOLLOWING));
+        const beside = !!(hr && fr && fr.left >= hr.right - 4 && fr.top < hr.bottom + 80);
+        const stacked = !!(hr && fr && fr.top >= hr.bottom - 2 && fr.left < hr.right);
+        const also = [...(sec?.querySelectorAll('figcaption li') || [])].filter((li) => li.textContent.includes('Also on'));
+        const alsoHrefs = also.flatMap((li) => [...li.querySelectorAll('a')].map((a) => a.getAttribute('href')));
+        const selfInAlso = alsoHrefs.some((h) => h === location.pathname);
+        const btnInfo = (sel) => {
+          const btn = sec?.querySelector(sel);
+          if (!btn) return null;
+          const r = btn.getBoundingClientRect();
+          return { nowrap: getComputedStyle(btn).whiteSpace === 'nowrap', h: r.height, w: r.width, fits: btn.scrollWidth <= btn.clientWidth + 1 };
+        };
         return {
           imgs: imgs.length,
-          iiif: imgs.every((i) => i.src.startsWith('https://iiif.archive.org/image/iiif/3/gustavedore%2F') && i.loading === 'lazy' && i.width > 0),
+          iiif: imgs.every((i) => {
+            const src = i.getAttribute('src') || '';
+            const v2 = src.startsWith('https://iiif.archive.org/image/iiif/2/gustavedore%2F');
+            const retried = i.dataset.retried === '1' && src.includes('/image/iiif/3/gustavedore');
+            return (v2 || retried) && i.loading === 'lazy' && i.width > 0;
+          }),
           gallery: !!sec?.querySelector('[data-dore-gallery].dore-js'),
           controls: sec?.querySelector('.dore-controls') ? getComputedStyle(sec.querySelector('.dore-controls')).display : 'none',
           dots: sec?.querySelectorAll('.dore-dot').length || 0,
           status: sec?.querySelector('.dore-status')?.textContent || '',
           caption: sec?.querySelector('figcaption')?.innerText || '',
           overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+          beside, stacked, beforeDesc, selfInAlso, alsoCount: also.length,
+          prev: btnInfo('[data-dore="prev"]'), next: btnInfo('[data-dore="next"]'),
         };
       });
       let moved = true;
@@ -1364,25 +1393,62 @@ for (const [path, shot, sel] of [
         const s1 = await page.locator('.dore-status').textContent();
         moved = s2.startsWith('2 of') && s1.startsWith('1 of');
       }
+      const placeOk = width >= 800 ? info.beside && !info.stacked : info.stacked && !info.beside;
+      const btnOk = (b) => b && b.nowrap && b.h >= 44 && b.w >= 44 && b.fits;
+      const controlsOk = n > 1 ? btnOk(info.prev) && btnOk(info.next) : true;
       const ok = status === 200 && errors.length === 0 && info.imgs === n && info.iiif && !info.overflow && /Gustave Doré, 1866/.test(info.caption)
+        && info.beforeDesc && placeOk && !info.selfInAlso && controlsOk
         && (n > 1 ? info.gallery && info.controls === 'flex' && info.dots === n && info.status === `1 of ${n}` && moved : !info.gallery && info.dots === 0);
-      check(`doré ${path} ${width}px: ${n > 1 ? `gallery of ${n}` : 'one figure'}`, ok, ok ? '' : JSON.stringify({ status, errors: errors.slice(0, 3), ...info, moved }));
+      check(`doré ${path} ${width}px: ${n > 1 ? `gallery of ${n}` : 'one figure'}, ${width >= 800 ? 'beside the title' : 'under the title'}`, ok, ok ? '' : JSON.stringify({ status, errors: errors.slice(0, 3), ...info, moved }));
       await ctx.close();
     }
   }
+  for (const width of [390, 1280]) {
+    const { ctx, page, errors, status } = await open('/illustrations/dore/', { width, height: 900 });
+    const info = await page.evaluate(() => {
+      const items = [...document.querySelectorAll('.dore-index-item')];
+      const hrefs = items.map((li) => li.querySelector('a')?.getAttribute('href') || '');
+      const imgs = items.map((li) => li.querySelector('img')).filter(Boolean);
+      const headings = items.map((li) => li.querySelector('h2')?.textContent || '');
+      return {
+        n: items.length,
+        xFile: hrefs.some((h) => /\d{3}x%20/.test(h)) || headings.some((h) => /^\s*\d{3}x\b/.test(h)),
+        lazy: imgs.length === items.length && imgs.every((i) => i.loading === 'lazy' && i.getAttribute('width') && i.getAttribute('height')),
+        iiif: imgs.every((i) => {
+          const src = i.getAttribute('src') || '';
+          return src.includes('/image/iiif/2/gustavedore') || (i.dataset.retried === '1' && src.includes('/image/iiif/3/gustavedore'));
+        }),
+        overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+        dash: items.filter((li) => li.textContent.includes('—')).length,
+      };
+    });
+    const ok = status === 200 && errors.length === 0 && info.n === 220 && info.n === doreDoc.illustrations.length && !info.xFile && info.lazy && info.iiif && !info.overflow;
+    check(`doré index ${width}px: 220 plates, no Apocrypha, no overflow`, ok, ok ? '' : JSON.stringify({ status, errors: errors.slice(0, 3), ...info }));
+    await ctx.close();
+  }
+  {
+    const { ctx, page } = await open('/people/noah/', { width: 390, height: 900 });
+    const info = await page.evaluate(() => {
+      const also = [...document.querySelectorAll('section.dore figcaption li')].filter((li) => li.textContent.includes('Also on'));
+      const hrefs = also.flatMap((li) => [...li.querySelectorAll('a')].map((a) => a.getAttribute('href')));
+      return { n: also.length, self: hrefs.filter((h) => h === location.pathname), sample: hrefs.slice(0, 6) };
+    });
+    check('doré Also on excludes the current record', info.n > 0 && info.self.length === 0, JSON.stringify(info));
+    await ctx.close();
+  }
 }
 {
-  // Fallback: when IIIF v3 fails, dore.js retries on IIIF v2; when both fail, it shows a link to Archive.org.
-  for (const [label, pattern, expect] of [['v3 blocked', '**/image/iiif/3/**', 'v2'], ['v3 and v2 blocked', '**/image/iiif/**', 'link']]) {
+  // Fallback: when IIIF v2 fails, dore.js retries on IIIF v3; when both fail, it shows a link to Archive.org.
+  for (const [label, pattern, expect] of [['v2 blocked', '**/image/iiif/2/**', 'v3'], ['v2 and v3 blocked', '**/image/iiif/**', 'link']]) {
     const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
     const page = await ctx.newPage();
     await page.route(pattern, (r) => r.abort());
-    await page.goto(BASE + '/people/ham/', { waitUntil: 'load', timeout: 30000 });
+    await page.goto(BASE + '/people/canaan-son-of-ham/', { waitUntil: 'load', timeout: 30000 });
     await page.locator('section.dore').scrollIntoViewIfNeeded();
-    const ok = expect === 'v2'
-      ? await page.waitForFunction(() => document.querySelector('img.dore-img')?.src.includes('/image/iiif/2/'), null, { timeout: 10000 }).then(() => true, () => false)
+    const ok = expect === 'v3'
+      ? await page.waitForFunction(() => document.querySelector('img.dore-img')?.src.includes('/image/iiif/3/'), null, { timeout: 10000 }).then(() => true, () => false)
       : await page.waitForFunction(() => { const p = document.querySelector('.dore-unavailable'); return p && !p.hidden && p.querySelector('a[href*="archive.org/details/gustavedore"]'); }, null, { timeout: 10000 }).then(() => true, () => false);
-    check(`doré fallback (${label}): ${expect === 'v2' ? 'retries on IIIF v2' : 'shows the Archive.org link'}`, ok);
+    check(`doré fallback (${label}): ${expect === 'v3' ? 'retries on IIIF v3' : 'shows the Archive.org link'}`, ok);
     await ctx.close();
   }
 }

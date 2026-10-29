@@ -70,7 +70,9 @@ for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
       const page = await ctx.newPage();
       const errors = [];
       page.on('pageerror', (e) => errors.push(String(e)));
-      page.on('console', (m) => { if (m.type() === 'error' && !/cloudflareinsights|Failed to load resource.*(beacon|tile)/i.test(m.text())) errors.push(m.text()); });
+      // "Failed to load resource" carries no URL. A local 4xx/5xx is recorded on the response
+      // listener. Archive.org IIIF sometimes returns 500; that is not a timeline failure.
+      page.on('console', (m) => { if (m.type() === 'error' && !/cloudflareinsights|Failed to load resource/i.test(m.text())) errors.push(m.text()); });
       page.on('response', (r) => { if (r.status() >= 400 && r.url().startsWith(BASE)) errors.push(`${r.status()} ${r.url()}`); });
       if (lateCss) await page.route('**/vis-timeline-graph2d.min.css*', async (r) => { await new Promise((s) => setTimeout(s, 1500)); r.continue(); });
       const tag = `[${bname} ${w}px${lateCss ? ' late-css' : ''}] /people/${id}/`;
@@ -110,7 +112,7 @@ for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
     const page = await ctx.newPage();
     const errors = [];
     page.on('pageerror', (e) => errors.push(String(e)));
-    page.on('console', (m) => { if (m.type() === 'error' && !/cloudflareinsights|Failed to load resource.*(beacon|tile)/i.test(m.text())) errors.push(m.text()); });
+    page.on('console', (m) => { if (m.type() === 'error' && !/cloudflareinsights|Failed to load resource/i.test(m.text())) errors.push(m.text()); });
     const tag = `[${bname} 1024px] /people/${id}/ standby`;
     await page.goto(`${BASE}/people/${id}/`, { waitUntil: 'load', timeout: 30000 });
     await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});

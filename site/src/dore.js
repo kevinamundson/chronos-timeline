@@ -1,11 +1,12 @@
-// Doré illustrations. (1) An image that fails on IIIF v3 is retried once on IIIF v2 (same Archive.org
+// Doré illustrations. (1) An image that fails on IIIF v2 is retried once on IIIF v3 (same Archive.org
 // service), then replaced by a link to Archive.org. (2) Gallery: CSS scroll-snap does the swiping; this
 // adds prev/next, dots, arrow keys and a "n of N" status. No library. Without JS the strip still scrolls.
 (() => {
   const fail = (img) => {
     if (img.dataset.fallbackSrc && !img.dataset.retried) {
       img.dataset.retried = '1';
-      img.srcset = img.dataset.fallbackSrcset;
+      if (img.dataset.fallbackSrcset) img.srcset = img.dataset.fallbackSrcset;
+      else img.removeAttribute('srcset');
       img.src = img.dataset.fallbackSrc;
       return;
     }

@@ -399,25 +399,40 @@ h2.h3 { font-size: 17px; margin: 16px 0 8px; font-weight: 600; }
 .family-dialog-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .family-dialog .family-chart { height: min(62vh, 640px); max-height: none; }
 
-/* Doré illustrations (images served by the Internet Archive IIIF Image API; never copied) */
-.dore-fig { margin: 0; }
+/* Doré illustrations (images served by the Internet Archive IIIF Image API; never copied).
+   Beside the title from 800px up. Under the title on a phone. */
+.record-top { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: start; margin: 0 0 20px; }
+.record-head { min-width: 0; }
+.record-head .sortbox { margin-bottom: 0; }
+.record-dore { margin: 0; min-width: 0; max-width: 100%; }
+@media (min-width: 800px) {
+  .record-top { grid-template-columns: minmax(0, 1fr) minmax(220px, 340px); }
+}
+.dore-fig { margin: 0; min-width: 0; }
 .dore-img { display: block; width: 100%; height: auto; max-height: 75vh; object-fit: contain; background: var(--bg-fill); border-radius: 8px; }
-.dore-fig figcaption { margin-top: 10px; }
+.dore-fig figcaption { margin-top: 10px; overflow-wrap: anywhere; }
 .dore-fig figcaption .dore-title { font-weight: 600; }
 .dore-fig figcaption ul.links { margin: 6px 0 0; }
-.dore-gallery { position: relative; }
-.dore-track { position: relative; display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; padding-bottom: 6px; border-radius: 8px; }
+.dore-gallery { position: relative; min-width: 0; max-width: 100%; }
+.dore-track { position: relative; display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; padding-bottom: 6px; border-radius: 8px; max-width: 100%; }
 .dore-track:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 .dore-slide { flex: 0 0 100%; scroll-snap-align: center; scroll-snap-stop: always; min-width: 0; }
-.dore-controls { display: none; align-items: center; justify-content: center; gap: 12px; margin-top: 12px; }
+.dore-controls { display: none; align-items: center; justify-content: center; gap: 8px 12px; margin-top: 12px; flex-wrap: wrap; max-width: 100%; }
 .dore-js .dore-controls { display: flex; }
 .dore-js .dore-track { scrollbar-width: none; }
 .dore-js .dore-track::-webkit-scrollbar { display: none; }
-.dore-btn { font: inherit; font-size: 15px; min-width: 44px; min-height: 44px; padding: 0 14px; border-radius: 22px; border: 1px solid var(--sep); background: var(--bg-elev); color: var(--accent); cursor: pointer; }
+.dore-btn { font: inherit; font-size: 15px; min-width: 44px; min-height: 44px; padding: 0 14px; border-radius: 22px; border: 1px solid var(--sep); background: var(--bg-elev); color: var(--accent); cursor: pointer; white-space: nowrap; flex: 0 0 auto; }
 .dore-btn:disabled { color: var(--label-2); opacity: .5; cursor: default; }
-.dore-dots { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; }
+.dore-dots { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px; list-style: none; margin: 0; padding: 0; max-width: 100%; }
 .dore-dot { width: 28px; height: 44px; border: 0; background: none; cursor: pointer; padding: 0; display: flex; align-items: center; justify-content: center; }
 .dore-dot::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--sep); }
 .dore-dot[aria-current="true"]::before { background: var(--accent); }
-.dore-status { min-width: 4.5em; text-align: center; }
+.dore-status { min-width: 4.5em; text-align: center; white-space: nowrap; }
 @media (prefers-reduced-motion: reduce) { .dore-track { scroll-behavior: auto; } }
+.dore-index { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.dore-index-item { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 12px; align-items: start; background: var(--bg-elev); border-radius: var(--radius); padding: 12px; box-shadow: var(--shadow); }
+.dore-index-thumb { display: block; min-width: 0; }
+.dore-index-thumb img { display: block; width: 100%; height: auto; background: var(--bg-fill); border-radius: 6px; }
+.dore-index-body { min-width: 0; }
+.dore-index-body h2 { font-size: 17px; margin: 0 0 6px; overflow-wrap: anywhere; }
+.dore-index-body p { margin: 0 0 6px; overflow-wrap: anywhere; }
