@@ -522,8 +522,9 @@ const doreFigure = (il, i, n, currentId) => {
   const urls = doreUrls(il.file);
   const fileNo = `${String(il.number).padStart(3, '0')}${il.suffix || ''}`;
   return `<figure class="dore-fig${n > 1 ? ' dore-slide' : ''}"${n > 1 ? ` role="group" aria-roledescription="slide" aria-label="${i + 1} of ${n}: ${esc(il.title)}"` : ''}>
+<div class="dore-frame" style="aspect-ratio: ${il.original_width} / ${il.original_height}" aria-busy="true"><div class="dore-loading" role="status"><span class="dore-spinner" aria-hidden="true"></span><span class="visually-hidden">Loading illustration</span></div>
 <a href="${esc(il.details_url)}" rel="noopener" target="_blank"><img class="dore-img" src="${esc(il.image_small)}" srcset="${esc(il.image_small)} ${SMALL_W}w, ${esc(il.image)} ${DISPLAY_W}w" sizes="(min-width: 800px) 340px, 92vw" width="${DISPLAY_W}" height="${il.display_height}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback-src="${esc(urls.small_v3)}" data-fallback-srcset="${esc(urls.small_v3)} ${SMALL_W}w, ${esc(urls.display_v3)} ${DISPLAY_W}w" alt="Gustave Doré, ${esc(il.title)} (wood engraving, 1866)"><span class="visually-hidden"> (opens on Archive.org in a new tab)</span></a>
-<p class="dore-unavailable small muted" hidden>The Internet Archive did not return this image just now. ${ext(il.details_url, 'Open it on Archive.org')}.</p>
+<p class="dore-unavailable small muted" hidden>The Internet Archive did not return this image just now. ${ext(il.details_url, 'Open it on Archive.org')}.</p></div>
 <figcaption><span class="dore-title">${esc(il.title)}</span><br><span class="small">Gustave Doré, 1866. Archive.org file ${fileNo}.${ref ? ` Scene: ${ext(ref.href, esc(ref.text))}.` : ''}</span>
 <ul class="links small"><li>${ext(il.details_url, 'Open on Archive.org')}</li>${others.length ? `<li>Also on: ${others.map(link).join(', ')}</li>` : ''}</ul></figcaption></figure>`;
 };
@@ -1366,14 +1367,14 @@ ${groups.map((g) => `<section aria-labelledby="paper-${esc(g.toLowerCase().repla
     const ids = doreIds(il).filter((r) => byId[r]);
     const fileNo = `${String(il.number).padStart(3, '0')}${il.suffix || ''}`;
     return `<li class="dore-index-item" id="dore-${fileNo}">
-<a class="dore-index-thumb" href="${esc(il.details_url)}" rel="noopener" target="_blank"><img class="dore-img" src="${esc(urls.thumb)}" width="${THUMB_W}" height="${thumbH}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback-src="${esc(urls.thumb_v3)}" alt="Gustave Doré, ${esc(il.title)} (wood engraving, 1866)"><span class="visually-hidden"> (opens on Archive.org in a new tab)</span></a>
+<a class="dore-index-thumb" href="${esc(il.details_url)}" rel="noopener" target="_blank"><span class="dore-frame" style="aspect-ratio: ${il.original_width} / ${il.original_height}" aria-busy="true"><span class="dore-loading" role="status"><span class="dore-spinner" aria-hidden="true"></span><span class="visually-hidden">Loading illustration</span></span><img class="dore-img" src="${esc(urls.thumb)}" width="${THUMB_W}" height="${thumbH}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback-src="${esc(urls.thumb_v3)}" alt="Gustave Doré, ${esc(il.title)} (wood engraving, 1866)"></span><span class="visually-hidden"> (opens on Archive.org in a new tab)</span></a>
 <div class="dore-index-body"><h2><span class="muted">${fileNo}</span> ${esc(il.title)}</h2>
 <p class="small">${ref ? `Scene: ${ext(ref.href, esc(ref.text))}` : '<span class="muted">—</span>'}</p>
 <p class="small">${ids.length ? `Records: ${ids.map(link).join(', ')}` : '<span class="muted">No matching record</span>'}</p>
 </div></li>`;
   };
   const body = `<h1>Gustave Doré, 1866</h1>
-<section class="card"><p>${plates.length} Bible illustrations from the Internet Archive item <a href="https://archive.org/details/gustavedore" rel="noopener">gustavedore</a>. The 21 Apocrypha files, whose number has an x after it, are not listed. Titles and numbers are the Archive.org file names, not Doré's 1866 plate numbers. A Scripture link is given only where the title names one passage. It is identified from the title, not printed on the plate. Images are served by the Archive.org IIIF Image API and are not copied to this site.</p></section>
+<section class="card"><p>${plates.length} Bible illustrations from the Internet Archive item <a href="https://archive.org/details/gustavedore" rel="noopener">gustavedore</a>. The 21 Apocrypha files, whose number has an x after it, are not listed. Titles and numbers are the Archive.org file names, not Doré's 1866 plate numbers. A Scripture link is given only where the title names one passage. It is identified from the title, not printed on the plate. A person is linked only when that plate draws the person. An event is linked when the plate draws that event. Images are served by the Archive.org IIIF Image API and are not copied to this site.</p></section>
 <ol class="dore-index">${plates.map(item).join('\n')}</ol>`;
   out('illustrations/dore/index.html', page({
     title: 'Gustave Doré, 1866',

@@ -2,6 +2,12 @@
 // service), then replaced by a link to Archive.org. (2) Gallery: CSS scroll-snap does the swiping; this
 // adds prev/next, dots, arrow keys and a "n of N" status. No library. Without JS the strip still scrolls.
 (() => {
+  const clearLoading = (img) => {
+    const frame = img.closest('.dore-frame');
+    if (!frame) return;
+    frame.setAttribute('aria-busy', 'false');
+    frame.querySelector('.dore-loading')?.remove();
+  };
   const fail = (img) => {
     if (img.dataset.fallbackSrc && !img.dataset.retried) {
       img.dataset.retried = '1';
@@ -10,12 +16,30 @@
       img.src = img.dataset.fallbackSrc;
       return;
     }
+    clearLoading(img);
     const fig = img.closest('figure');
-    img.closest('a').hidden = true;
-    fig?.querySelector('.dore-unavailable')?.removeAttribute('hidden');
+    const unavailable = fig?.querySelector('.dore-unavailable');
+    if (unavailable) {
+      const a = img.closest('a');
+      if (a) a.hidden = true;
+      unavailable.removeAttribute('hidden');
+      return;
+    }
+    // Index thumbnail: the anchor is the Archive.org link. Keep it, drop the broken image.
+    img.hidden = true;
   };
   for (const img of document.querySelectorAll('img.dore-img')) {
     img.addEventListener('error', () => fail(img));
+    img.addEventListener('load', () => clearLoading(img));
+    // A cached image can finish before this script runs. A lazy image that has not
+    // started may also report complete with no pixels, so a zero width is not a failure.
+    if (img.complete && img.naturalWidth > 0) clearLoading(img);
+  }
+  if ('IntersectionObserver' in window) {
+    const near = new IntersectionObserver((entries) => {
+      for (const e of entries) e.target.classList.toggle('is-near', e.isIntersecting);
+    }, { rootMargin: '200px' });
+    for (const frame of document.querySelectorAll('.dore-frame')) near.observe(frame);
   }
   for (const g of document.querySelectorAll('[data-dore-gallery]')) {
     const track = g.querySelector('.dore-track');

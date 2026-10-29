@@ -1341,7 +1341,7 @@ for (const [path, shot, sel] of [
   const singleId = ['canaan-son-of-ham', 'balthasar', 'athalia', 'zerubbabel'].find((id) => countFor(id) === 1);
   const cases = [['/people/noah/', countFor('noah')], ['/events/the-flood/', countFor('the-flood')], ['/people/adam/', countFor('adam')], ['/events/the-fall/', countFor('the-fall')]];
   if (singleId) cases.push([`/people/${singleId}/`, 1]);
-  check('doré sample: a gallery and a single figure', countFor('noah') > 1 && !!singleId, `noah=${countFor('noah')} single=${singleId || 'none'}`);
+  check('doré sample: a gallery and a single figure', countFor('the-flood') > 1 && countFor('noah') >= 1 && !!singleId, `flood=${countFor('the-flood')} noah=${countFor('noah')} single=${singleId || 'none'}`);
   for (const [path, n] of cases) {
     for (const width of [390, 1280]) {
       const { ctx, page, errors, status } = await open(path, { width, height: 900 });
@@ -1439,16 +1439,121 @@ for (const [path, shot, sel] of [
 }
 {
   // Fallback: when IIIF v2 fails, dore.js retries on IIIF v3; when both fail, it shows a link to Archive.org.
+  // The sample is whichever listed person still has exactly one plate.
+  const doreDoc = JSON.parse(readFileSync(join(here, '../data/illustrations/dore-1866.json'), 'utf8'));
+  const countFor = (id) => doreDoc.illustrations.filter((il) => il.records.some((r) => r.id === id)).length;
+  const singlePerson = ['canaan-son-of-ham', 'balthasar', 'athalia', 'zerubbabel', 'noah'].find((id) => countFor(id) === 1);
+  check('doré fallback sample is one plate', !!singlePerson, singlePerson || 'none');
+  const sample = `/people/${singlePerson || 'balthasar'}/`;
   for (const [label, pattern, expect] of [['v2 blocked', '**/image/iiif/2/**', 'v3'], ['v2 and v3 blocked', '**/image/iiif/**', 'link']]) {
     const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
     const page = await ctx.newPage();
     await page.route(pattern, (r) => r.abort());
-    await page.goto(BASE + '/people/canaan-son-of-ham/', { waitUntil: 'load', timeout: 30000 });
+    await page.goto(BASE + sample, { waitUntil: 'load', timeout: 30000 });
     await page.locator('section.dore').scrollIntoViewIfNeeded();
     const ok = expect === 'v3'
       ? await page.waitForFunction(() => document.querySelector('img.dore-img')?.src.includes('/image/iiif/3/'), null, { timeout: 10000 }).then(() => true, () => false)
-      : await page.waitForFunction(() => { const p = document.querySelector('.dore-unavailable'); return p && !p.hidden && p.querySelector('a[href*="archive.org/details/gustavedore"]'); }, null, { timeout: 10000 }).then(() => true, () => false);
+      : await page.waitForFunction(() => {
+          const p = document.querySelector('.dore-unavailable');
+          const link = p && !p.hidden && p.querySelector('a[href*="archive.org/details/gustavedore"]');
+          const spinner = document.querySelector('section.dore .dore-loading');
+          return !!(link && !spinner);
+        }, null, { timeout: 10000 }).then(() => true, () => false);
     check(`doré fallback (${label}): ${expect === 'v3' ? 'retries on IIIF v3' : 'shows the Archive.org link'}`, ok);
+    await ctx.close();
+  }
+
+  // Spinner: present while the image is held, gone after it loads. No visible loading text.
+  // Offscreen index spinners do not animate. Reduced motion leaves the spinner static.
+  const loadingState = () => {
+    const textHits = [];
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      if (!/loading illustration/i.test(walker.currentNode.textContent || '')) continue;
+      if (!walker.currentNode.parentElement?.closest('.visually-hidden')) textHits.push('visible');
+    }
+    const frame = document.querySelector('section.dore .dore-frame, .dore-index .dore-frame');
+    const status = frame?.querySelector('.dore-loading');
+    const spinner = status?.querySelector('.dore-spinner');
+    return {
+      busy: frame?.getAttribute('aria-busy') || '',
+      status: !!status && status.getAttribute('role') === 'status',
+      sr: !!status?.querySelector('.visually-hidden'),
+      spinner: !!spinner,
+      visibleText: textHits.length,
+      anim: spinner ? getComputedStyle(spinner).animationName : '',
+    };
+  };
+  const holdImages = async (page) => {
+    let release;
+    const gate = new Promise((resolve) => { release = resolve; });
+    // 600×2. A 1px PNG is not enough: the record image uses a srcset width
+    // descriptor, and the browser density-corrects naturalWidth down to 0.
+    const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAlgAAAACCAIAAAALjjUzAAAAHUlEQVR42u3QAQEAAAABIPPNNkRNKAWAY1EAwLMB3xF46s3EUSgAAAAASUVORK5CYII=', 'base64');
+    await page.route('**/image/iiif/**', async (route) => {
+      await gate;
+      await route.fulfill({ status: 200, contentType: 'image/png', body: png });
+    });
+    return release;
+  };
+  for (const [label, path] of [['single', sample], ['gallery', '/events/the-flood/'], ['index', '/illustrations/dore/']]) {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const page = await ctx.newPage();
+    const release = await holdImages(page);
+    await page.goto(BASE + path, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    // The figure sits under the title. A lazy image below the first screen does not
+    // request until it is near the viewport, so bring the frame up before the load check.
+    await page.locator('section.dore .dore-frame, .dore-index .dore-frame').first().scrollIntoViewIfNeeded();
+    const before = await page.evaluate(loadingState);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+    const beforeOk = before.busy === 'true' && before.status && before.sr && before.spinner && before.visibleText === 0 && !overflow;
+    check(`doré spinner before load (${label}, 390px)`, beforeOk, beforeOk ? '' : JSON.stringify({ ...before, overflow }));
+    release();
+    const gone = await page.waitForFunction(() => {
+      const frame = document.querySelector('section.dore .dore-frame, .dore-index .dore-frame');
+      const img = frame?.querySelector('img.dore-img');
+      return !!(img && img.complete && img.naturalWidth > 0 && frame.getAttribute('aria-busy') === 'false' && !frame.querySelector('.dore-loading'));
+    }, null, { timeout: 20000 }).then(() => true, () => false);
+    check(`doré spinner gone after load (${label})`, gone);
+    await ctx.close();
+  }
+  {
+    const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const page = await ctx.newPage();
+    await page.goto(BASE + '/illustrations/dore/', { waitUntil: 'domcontentloaded', timeout: 30000 });
+    await page.waitForTimeout(400);
+    const off = await page.evaluate(() => {
+      const frames = [...document.querySelectorAll('.dore-index .dore-frame')];
+      const vh = window.innerHeight;
+      let animating = 0;
+      let offscreen = 0;
+      for (const frame of frames) {
+        const r = frame.getBoundingClientRect();
+        const near = r.bottom > -200 && r.top < vh + 200;
+        if (near) continue;
+        offscreen++;
+        const spinner = frame.querySelector('.dore-spinner');
+        if (!spinner) continue;
+        const name = getComputedStyle(spinner).animationName;
+        if (name && name !== 'none') animating++;
+      }
+      return { offscreen, animating, n: frames.length };
+    });
+    check('doré index: offscreen spinners are not animating', off.n === 220 && off.animating === 0, JSON.stringify(off));
+    await ctx.close();
+  }
+  {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
+    const page = await ctx.newPage();
+    const release = await holdImages(page);
+    await page.goto(BASE + sample, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    await page.locator('section.dore .dore-frame').first().scrollIntoViewIfNeeded();
+    await page.waitForTimeout(100);
+    const before = await page.evaluate(loadingState);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+    const ok = before.spinner && before.anim === 'none' && before.visibleText === 0 && !overflow;
+    check('doré spinner: reduced motion does not animate', ok, ok ? '' : JSON.stringify({ ...before, overflow }));
+    release();
     await ctx.close();
   }
 }
