@@ -34,6 +34,7 @@ const sources = readJSON(join(DATA, 'sources.json')).sources;
 const chartDoc = readJSON(join(DATA, 'cfah-charts.json'));
 const charts = chartDoc.charts;
 const kingDoc = existsSync(join(DATA, 'king-lists.json')) ? readJSON(join(DATA, 'king-lists.json')) : { lists: [], not_recorded: [] };
+const doreDoc = existsSync(join(DATA, 'illustrations/dore-1866.json')) ? readJSON(join(DATA, 'illustrations/dore-1866.json')) : { illustrations: [] };
 const nameFormDoc = readJSON(join(DATA, 'name-forms.json'));
 const nameForms = Object.fromEntries((nameFormDoc.people || []).map((p) => [p.id, p.forms]));
 const kingListsOf = (id) => kingDoc.lists.filter((l) => l.entries.some((e) => e.person === id || e.event === id));
@@ -507,6 +508,34 @@ ${c.related?.length ? `<p class="small">Records: ${c.related.map(link).join(', '
 const chartsFor = (id) => charts.filter((c) => c.related?.includes(id));
 const chartSection = (id) => { const cs = chartsFor(id); return !cs.length ? '' : `<section class="card"><h2>CFAH charts</h2><ul class="chart-grid chart-grid-small">${cs.map((c) => chartCard(c, 'h3')).join('')}</ul><p class="small"><a href="/gallery/">All CFAH charts</a></p></section>`; };
 
+// ---------- Gustave Doré, Bible illustrations (1866) ----------
+// Images come from the Internet Archive IIIF Image API (data/illustrations/dore-1866.json); none is copied.
+// One illustration: a figure. Two or more: a swipeable gallery (scroll-snap + site/src/gallery.js).
+const doreFor = (id) => doreDoc.illustrations.filter((il) => il.records.includes(id)).sort((a, b) => a.number - b.number);
+const doreFigure = (il, i, n) => {
+  const ref = il.scripture_ref ? osis(il.scripture_ref) : null;
+  const others = il.records.filter((r) => byId[r]);
+  return `<figure class="dore-fig${n > 1 ? ' dore-slide' : ''}"${n > 1 ? ` role="group" aria-roledescription="slide" aria-label="${i + 1} of ${n}: ${esc(il.title)}"` : ''}>
+<a href="${esc(il.details_url)}" rel="noopener" target="_blank"><img class="dore-img" src="${esc(il.image_small)}" srcset="${esc(il.image_small)} ${il.small_width}w, ${esc(il.image)} ${il.width}w" sizes="(min-width: 1100px) 760px, 92vw" width="${il.width}" height="${il.height}" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="Gustave Doré, ${esc(il.title)} (wood engraving, 1866)"><span class="visually-hidden"> (opens on Archive.org in a new tab)</span></a>
+<figcaption><span class="dore-title">${esc(il.title)}</span><br><span class="small">Gustave Doré, 1866. Archive.org file ${String(il.number).padStart(3, '0')}.${ref ? ` Scene: ${ext(ref.href, esc(ref.text))}.` : ''}</span>
+<ul class="links small"><li>${ext(il.details_url, 'Open on Archive.org')}</li>${others.length > 1 ? `<li>Also on: ${others.map(link).join(', ')}</li>` : ''}</ul></figcaption></figure>`;
+};
+const doreSection = (id) => {
+  const ils = doreFor(id);
+  if (!ils.length) return '';
+  const n = ils.length;
+  const credit = `<p class="small muted">Public domain. Images are served by the Internet Archive (${ext('https://archive.org/details/gustavedore', 'Gustave Doré Bible Illustrations (1866)')}) and are not copied to this site. Titles and numbers are the Archive.org file names.</p>`;
+  if (n === 1) return `<section class="card dore" aria-labelledby="dore-h"><h2 id="dore-h">Illustration</h2>${doreFigure(ils[0], 0, 1)}${credit}</section>`;
+  return `<section class="card dore" aria-labelledby="dore-h"><h2 id="dore-h">Illustrations <span class="muted small">(${n})</span></h2>
+<div class="dore-gallery" data-dore-gallery role="region" aria-roledescription="carousel" aria-labelledby="dore-h">
+<div class="dore-track" tabindex="0" aria-label="Illustrations: swipe, or use the arrow keys">${ils.map((il, i) => doreFigure(il, i, n)).join('')}</div>
+<div class="dore-controls"><button type="button" class="dore-btn" data-dore="prev" aria-label="Previous illustration">‹ Prev</button>
+<ol class="dore-dots">${ils.map((il, i) => `<li><button type="button" class="dore-dot" aria-label="Show ${i + 1}: ${esc(il.title)}"></button></li>`).join('')}</ol>
+<button type="button" class="dore-btn" data-dore="next" aria-label="Next illustration">Next ›</button><span class="dore-status small muted" aria-live="polite"></span></div>
+</div>${credit}</section>`;
+};
+const doreScript = (id) => (doreFor(id).length > 1 ? '<script src="/assets/gallery.js" defer></script>' : '');
+
 function sourcesSection(rec) {
   const fsl = rec.free_source_links || [];
   const ids = uniqSrc(rec.sources || []).filter((s) => !fsl.some((l) => l.source_id === s.id));
@@ -716,6 +745,7 @@ ${jsonScript('map-data', locations.filter((l) => l.lat != null && l.lng != null)
 for (const e of events) {
   const body = `${crumbs(e)}<article>${head(e)}${sortBadge(e)}
 ${e.description ? `<section class="card"><h2>Description</h2><p>${esc(e.description)}</p></section>` : ''}
+${doreSection(e.id)}
 ${e.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(e.scripture_refs)}</section>` : ''}
 <section class="card"><h2>Chronologies</h2>${chronTable(e.chronologies, { sortYear: e.sorting_year, basis: e.sorting_basis, caption: `Dates for ${e.title}, CFAH first` })}</section>
 ${flagsSection(e, e.chronologies)}
@@ -725,7 +755,7 @@ ${mapThumbs(e.maps)}
 ${linkList(e.related, 'Related')}
 ${chartSection(e.id)}
 ${sourcesSection(e)}</article>`;
-  out(`events/${e.id}/index.html`, page({ title: e.title, desc: e.summary, body, path: urlOf(e), type: 'Event' }));
+  out(`events/${e.id}/index.html`, page({ title: e.title, desc: e.summary, body, path: urlOf(e), type: 'Event', scripts: doreScript(e.id) }));
 }
 
 // Person timeline: window = lifespan (four-tier birth/death), own-life events solid, other events in the window as context.
@@ -1068,6 +1098,7 @@ ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years
   const body = `${crumbs(p)}<article>${head(p, { hideAlt: true })}${sortBadge(p)}${standbyLine}
 ${nameSection(p)}
 ${p.description ? `<section class="card"><h2>Description</h2><p>${esc(p.description)}</p></section>` : ''}${kingCard}
+${doreSection(p.id)}
 ${p.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(p.scripture_refs)}</section>` : ''}
 ${familySection(p)}
 ${facts}
@@ -1082,7 +1113,7 @@ ${sourcesSection(p)}</article>`;
   const hasTl = !personTimelines[p.id].none;
   out(`people/${p.id}/index.html`, page({ title: p.title, desc: p.summary, body, path: urlOf(p), type: 'Person',
     extraHead: `${familyHead}${hasTl ? '<link rel="stylesheet" href="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.css">' : ''}`,
-    scripts: `${familyScripts}${hasTl ? '<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>' : ''}<script src="/assets/app.js" defer></script>` }));
+    scripts: `${familyScripts}${hasTl ? '<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>' : ''}<script src="/assets/app.js" defer></script>${doreScript(p.id)}` }));
 }
 
 // Locations

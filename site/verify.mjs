@@ -1332,6 +1332,45 @@ for (const [path, shot, sel] of [
   check('jones-2019 nero: sub-row shows the AM difference', !nero.separate && /AM 4068/.test(nero.top) && /AD 64/.test(nero.top) && /21st ed\. \(2019\)/.test(nero.sub) && /AM 4067/.test(nero.sub) && /AD 64/.test(nero.sub), JSON.stringify(nero).slice(0, 400));
   await ctx.close();
 }
+// Doré illustrations (1866): one figure, or a scroll-snap gallery with prev/next, dots and arrow keys.
+// Images load from the Internet Archive IIIF service; this checks markup and controls, not image bytes.
+{
+  const cases = [['/people/noah/', 2], ['/events/the-flood/', 3], ['/people/adam/', 2], ['/people/ham/', 1], ['/events/the-fall/', 1]];
+  for (const [path, n] of cases) {
+    for (const width of [390, 1280]) {
+      const { ctx, page, errors, status } = await open(path, { width, height: 900 });
+      const info = await page.evaluate(() => {
+        const sec = document.querySelector('section.dore');
+        const imgs = [...(sec?.querySelectorAll('img.dore-img') || [])];
+        return {
+          imgs: imgs.length,
+          iiif: imgs.every((i) => i.src.startsWith('https://iiif.archive.org/image/iiif/3/gustavedore%2F') && i.loading === 'lazy' && i.width > 0),
+          gallery: !!sec?.querySelector('[data-dore-gallery].dore-js'),
+          controls: sec?.querySelector('.dore-controls') ? getComputedStyle(sec.querySelector('.dore-controls')).display : 'none',
+          dots: sec?.querySelectorAll('.dore-dot').length || 0,
+          status: sec?.querySelector('.dore-status')?.textContent || '',
+          caption: sec?.querySelector('figcaption')?.innerText || '',
+          overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+        };
+      });
+      let moved = true;
+      if (n > 1) {
+        await page.locator('section.dore [data-dore="next"]').click();
+        await page.waitForFunction(() => document.querySelector('.dore-status')?.textContent.startsWith('2 of'), null, { timeout: 5000 }).catch(() => {});
+        const s2 = await page.locator('.dore-status').textContent();
+        await page.locator('.dore-track').focus();
+        await page.keyboard.press('ArrowLeft');
+        await page.waitForFunction(() => document.querySelector('.dore-status')?.textContent.startsWith('1 of'), null, { timeout: 5000 }).catch(() => {});
+        const s1 = await page.locator('.dore-status').textContent();
+        moved = s2.startsWith('2 of') && s1.startsWith('1 of');
+      }
+      const ok = status === 200 && errors.length === 0 && info.imgs === n && info.iiif && !info.overflow && /Gustave Doré, 1866/.test(info.caption)
+        && (n > 1 ? info.gallery && info.controls === 'flex' && info.dots === n && info.status === `1 of ${n}` && moved : !info.gallery && info.dots === 0);
+      check(`doré ${path} ${width}px: ${n > 1 ? `gallery of ${n}` : 'one figure'}`, ok, ok ? '' : JSON.stringify({ status, errors: errors.slice(0, 3), ...info, moved }));
+      await ctx.close();
+    }
+  }
+}
 await browser.close();
 srv.close();
 console.log(results.join('\n'));

@@ -26,6 +26,7 @@ import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, stan
 import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE, ITALICS_NOTE } from './raleigh/derived-year.mjs';
 import { loadChronologicalTable, yearColumnIndex, yearColumnReport } from './raleigh/table.mjs';
 import { TIERS, personTierSort, tierPick, isJones23 } from './sort-rule.mjs';
+import { doreUrls, IIIF_BASE } from './dore/urls.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const S = (f) => JSON.parse(readFileSync(join(root, 'schema', f), 'utf8'));
@@ -558,6 +559,36 @@ for (const c of chartDoc.charts || []) {
   if (c.thumbnail && !c.thumbnail.startsWith('https://assets.answersresearchjournal.org/')) err('data/cfah-charts.json', `${c.id}: thumbnails may only hotlink publicly served ARJ images`);
 }
 
+// Doré Bible illustrations (1866): data/illustrations/dore-1866.json. Images are linked through the
+// Internet Archive IIIF Image API, never copied; every URL must be the one scripts/dore/urls.mjs builds
+// from the file name, every record id must exist, and scripture_ref must map to a BLB chapter.
+let doreCount = 0;
+{
+  const rel = 'data/illustrations/dore-1866.json';
+  if (existsSync(join(root, rel))) {
+    const doc = validate(rel, 'illustrations');
+    if (!srcIds.has(doc.source)) err(rel, `unknown source ${doc.source}`);
+    const nums = new Set();
+    for (const il of doc.illustrations || []) {
+      const tag = `illustration ${il.number}`;
+      if (nums.has(il.number)) err(rel, `${tag}: duplicate number`); nums.add(il.number);
+      if (Number(il.file.slice(0, 3)) !== il.number) err(rel, `${tag}: number does not match file name "${il.file}"`);
+      if (il.title !== il.file.slice(4, -4)) err(rel, `${tag}: title must be the file name without number and extension`);
+      const u = doreUrls(il.file, il.width, il.small_width);
+      for (const [k, want] of [['image', u.display], ['image_small', u.small], ['iiif_info', u.iiif_info], ['details_url', u.details]]) if (il[k] !== want) err(rel, `${tag}: ${k} must be ${want}`);
+      if (!il.image.startsWith(IIIF_BASE)) err(rel, `${tag}: display image must come from the Archive.org IIIF Image API`);
+      if (il.width > 2000 || il.small_width >= il.width) err(rel, `${tag}: display width must be a scaled level (<= 2000 px), small_width below it`);
+      if (il.scripture_ref && !blbFromOsis(il.scripture_ref)) err(rel, `${tag}: scripture_ref "${il.scripture_ref}" cannot be mapped to a BLB chapter`);
+      if (!il.records.length) err(rel, `${tag}: no records`);
+      for (const r of il.records) {
+        if (!records[r]) err(rel, `${tag}: record ${r} not found`);
+        else if (!['person', 'event'].includes(records[r].kind)) err(rel, `${tag}: ${r} is a ${records[r].kind}; illustrations go on people and events`);
+      }
+      doreCount++;
+    }
+  }
+}
+
 // King lists (CFAH pass, phase 3): every row links to an existing record of the right kind; ids unique; source known.
 if (kingDoc) {
   const seen = new Set();
@@ -620,7 +651,7 @@ if (errors.length) {
   process.exit(1);
 }
 const standbyLine = standbySummaryLine(standbyCounts(Object.values(records).map((r) => r.doc)));
-console.log(`PASS: ${checked} files valid (chronologies, sources, ${counts}, ${chartIds.size} CFAH charts); cross-references, 4-tier sorting rule and MT Genesis 5 and 11 arithmetic consistent.`);
+console.log(`PASS: ${checked} files valid (chronologies, sources, ${counts}, ${chartIds.size} CFAH charts, ${doreCount} Doré illustrations); cross-references, 4-tier sorting rule and MT Genesis 5 and 11 arithmetic consistent.`);
 console.log('Sorting tiers used: ' + Object.entries(tierCount).map(([k, v]) => `${k}=${v}`).join(', '));
 console.log(`Reign-start sorts: ${reignStartCount}`);
 console.log(standbyLine);

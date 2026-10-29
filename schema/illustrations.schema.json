@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/illustrations.schema.json",
+  "title": "Illustrations linked to records (images linked, never copied)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["description", "source", "checked_on", "illustrations"],
+  "properties": {
+    "description": { "type": "string" },
+    "source": { "$ref": "common.schema.json#/$defs/slug" },
+    "checked_on": { "type": "string", "format": "date" },
+    "illustrations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["number", "title", "file", "width", "height", "small_width", "image", "image_small", "iiif_info", "details_url", "scripture_ref", "records"],
+        "properties": {
+          "number": { "type": "integer", "minimum": 1, "description": "Number at the start of the Archive.org file name (the uploader's numbering, not Doré's plate number)." },
+          "title": { "type": "string", "minLength": 1, "description": "Title from the file name, as uploaded." },
+          "file": { "type": "string", "pattern": "^\\d{3} .+\\.jpg$" },
+          "width": { "type": "integer", "minimum": 100, "description": "Width of the display image (an info.json size level)." },
+          "height": { "type": "integer", "minimum": 100 },
+          "small_width": { "type": "integer", "minimum": 100 },
+          "image": { "$ref": "common.schema.json#/$defs/url" },
+          "image_small": { "$ref": "common.schema.json#/$defs/url" },
+          "iiif_info": { "$ref": "common.schema.json#/$defs/url" },
+          "details_url": { "$ref": "common.schema.json#/$defs/url" },
+          "scripture_ref": { "type": ["string", "null"], "description": "OSIS reference, only where the title names one scene. Identified from the title; not printed on the plate." },
+          "records": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }
+        }
+      }
+    }
+  }
+}

@@ -2312,6 +2312,23 @@
       "license_note": "PDF of this OSF component. Free to read on OSF. The component sets no license (checked via the OSF API 2026-10-28), so all rights reserved.",
       "verified_on": "2026-10-28",
       "note": "OSF file \"Tweedy Ice Age Response.pdf\". Download link from the OSF API on 2026-10-28."
+    },
+    {
+      "id": "dore-bible-1866-archive",
+      "title": "Gustave Doré Bible Illustrations (1866)",
+      "authors": [
+        "Gustave Doré"
+      ],
+      "translator_or_editor": null,
+      "year": "1866",
+      "url": "https://archive.org/details/gustavedore",
+      "alt_urls": [
+        "https://archive.org/metadata/gustavedore"
+      ],
+      "access": "public-domain",
+      "license_note": "Doré's 1866 engravings are in the public domain. The Archive.org item (uploaded 2020-01-21, collection opensource_image) states no licence in its metadata. Images are linked through the Internet Archive IIIF Image API and are not copied to this site.",
+      "verified_on": "2026-10-29",
+      "note": "241 JPEG files (about 9600 x 12300 px), each with the illustration's English title printed below it. File numbers and titles are the uploader's, \"as found\"; they are not Doré's 1866 plate numbers."
     }
   ]
 }
