@@ -1274,6 +1274,64 @@ for (const [path, shot, sel] of [
   await rowMergeUi('chromium', browser);
   await rowMergeUi('webkit', webkit);
 }
+{
+  async function shot(page, selector, path) {
+    await page.evaluate(() => {
+      const header = document.querySelector('.site-header');
+      if (!header) return;
+      header.dataset.shotPosition = header.style.position || '';
+      header.style.position = 'relative';
+    });
+    await page.locator(selector).screenshot({ path });
+    await page.evaluate(() => {
+      const header = document.querySelector('.site-header');
+      if (!header || !('shotPosition' in header.dataset)) return;
+      header.style.position = header.dataset.shotPosition;
+      delete header.dataset.shotPosition;
+    });
+  }
+  const pages = [
+    ['/events/martyrdom-of-stephen/', 'stephen', { top: ['4035', 'AD 32'], sub: ['21st ed. (2019)', '4033 AM, AD 30', 'AM 4033'] }],
+    ['/events/esther-made-queen/', 'esther', { top: ['515 BC'], sub: ['21st ed. (2019)', '3490 AM, 514 BC', '514 BC'] }],
+  ];
+  for (const [path, name, expect] of pages) {
+    for (const width of [390, 1280]) {
+      const ctx = await browser.newContext({ viewport: { width, height: width < 500 ? 844 : 900 }, colorScheme: 'light', deviceScaleFactor: width < 500 ? 2 : 1 });
+      const page = await ctx.newPage();
+      const errors = [];
+      page.on('pageerror', (e) => errors.push(String(e)));
+      const resp = await page.goto(BASE + path, { waitUntil: 'load', timeout: 30000 });
+      const info = await page.locator('table.chron').first().evaluate((table) => {
+        const text = (el) => (el?.innerText || '').replace(/\s+/g, ' ').trim();
+        const top = table.querySelector('tr[data-author="ussher-jones"]');
+        const subs = [...table.querySelectorAll('tr[data-author-sub="ussher-jones"]')];
+        return {
+          separate: !!table.querySelector('tr[data-author="jones-2019"]'),
+          authorCount: [...table.querySelectorAll('tr[data-author="ussher-jones"]')].length,
+          top: text(top),
+          subs: subs.map((tr) => ({ text: text(tr), sub: tr.classList.contains('chron-sub'), edition: !!tr.querySelector('.edition') })),
+        };
+      });
+      const sub = info.subs.find((s) => s.text.includes('21st ed. (2019)'));
+      const overflow = width < 500 ? await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1) : false;
+      const ok = resp.status() === 200 && errors.length === 0 && !info.separate && info.authorCount === 1 && sub?.sub && sub.edition && expect.sub.every((bit) => sub.text.includes(bit)) && expect.top.every((bit) => info.top.includes(bit)) && !overflow;
+      check(`jones-2019 ${name} ${width}px: sub-row under Ussher–Jones`, ok, ok ? '' : JSON.stringify({ status: resp.status(), errors, separate: info.separate, authorCount: info.authorCount, top: info.top.slice(0, 180), sub: sub?.text?.slice(0, 220) }));
+      await shot(page, 'table.chron', join(SHOTS, `jones-2019-${name}-${width}.png`));
+      await ctx.close();
+    }
+  }
+  const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  const page = await ctx.newPage();
+  await page.goto(BASE + '/events/persecution-under-nero/', { waitUntil: 'load', timeout: 30000 });
+  const nero = await page.locator('table.chron').first().evaluate((table) => {
+    const text = (el) => (el?.innerText || '').replace(/\s+/g, ' ').trim();
+    const sub = [...table.querySelectorAll('tr[data-author-sub="ussher-jones"]')].map((tr) => text(tr)).find((t) => t.includes('21st ed. (2019)')) || '';
+    const top = text(table.querySelector('tr[data-author="ussher-jones"]'));
+    return { top, sub, separate: !!table.querySelector('tr[data-author="jones-2019"]') };
+  });
+  check('jones-2019 nero: sub-row shows the AM difference', !nero.separate && /AM 4068/.test(nero.top) && /AD 64/.test(nero.top) && /21st ed\. \(2019\)/.test(nero.sub) && /AM 4067/.test(nero.sub) && /AD 64/.test(nero.sub), JSON.stringify(nero).slice(0, 400));
+  await ctx.close();
+}
 await browser.close();
 srv.close();
 console.log(results.join('\n'));

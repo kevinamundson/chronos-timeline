@@ -34,6 +34,17 @@
       "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "source_text_id": "jones-chronology-ot-2026",
       "note": "CONFLICT: Jones prints AM 4068 and AD 63. Appendix F also prints AM 4004 as 1 AD. A derived check (not stored): 4068 minus 4003 = 65, which is not the printed AD 63. Both printed figures are stored as printed (first-printed rule). Neither was adjusted. The sort uses the printed AD year. No Scripture reference was added."
+    },
+    {
+      "source": "jones-2019",
+      "date": "4068 AM, AD 65",
+      "year_am": 4068,
+      "year_bc_ad": 65,
+      "precision": "year",
+      "citation": "Jones, The Chronology of the Old Testament: A Return to the Basics, 21st ed. (Master Books, 2019), Appendix F, printed p. 280",
+      "link": "https://web.archive.org/web/20221023135542/https://www.floydnolenjonesministries.com/files/135786316.pdf",
+      "source_text_id": "jones-chronology-ot-2019",
+      "note": "21st ed. (2019) differs; the 23rd ed. (2026) sets the sort: 4068 AM, AD 63."
     }
   ],
   "people": [],
@@ -41,13 +52,19 @@
   "maps": [],
   "scripture_refs": [],
   "sources": [
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "jones-chronology-ot-2019"
   ],
   "free_source_links": [
     {
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 280 (PDF p. 315)"
+    },
+    {
+      "source_id": "jones-chronology-ot-2019",
+      "url": "https://web.archive.org/web/20221023135542/https://www.floydnolenjonesministries.com/files/135786316.pdf",
+      "locator": "Appendix F, printed p. 280"
     }
   ],
   "related": []

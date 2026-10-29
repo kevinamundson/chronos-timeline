@@ -346,8 +346,9 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
 - **Recommendation:** I retry it on the next pass; no decision is needed.
 
 ### C2. Ussher–Jones edition (OQ 3) — answered 2026-10-27
-- CFAH cites Jones 2019 (21st edition), but the free PDF (floydnolenjonesministries.com/files/135786316.pdf) returned 404. The 2002 15th edition and Charts 1 and 4 were used for the earlier entries. That 21st-edition file was not used.
+- CFAH cites Jones 2019 (21st edition). On 2026-10-27 the ministry URL for that edition returned 404, so the 2002 15th edition and Charts 1 and 4 were used for the earlier entries.
 - **Kevin's ruling, 2026-10-27:** the 23rd edition (Master Books, 2026) governs a ussher-jones year where it differs from the 15th edition or the charts. The older figure stays in a note. See section M.
+- **Kevin's ruling, 2026-10-28:** the 21st edition (2019) is display only. The 23rd edition still governs the sort. The only link is the Archive.org copy. See M6.
 
 ### C3. CFAH coverage (OQ 1)
 - Six of a planned twenty CFAH papers are published in ARJ, and OSF holds preprints up to CFAH-19. Many records still say "pending CFAH reference".
@@ -1127,3 +1128,32 @@ Jones's own rule is that a BC number added to its AM counterpart yields 4004. Wh
   - Row 291, "Alexander dies, Empire divided 4 ways", is `alexander-dies-empire-divided`. `wars-of-the-diadochi` keeps its sort.
   - Row 292, "Antiochus Epiphanes plunders Temple", is `antiochus-plunders-the-temple`. `persecution-under-antiochus-iv` keeps its sort.
 - **Recommendation:** accept the flags as entered. The 2026-10-27 rulings above are applied.
+
+### M6. 21st edition (2019) is display only — ruled 2026-10-28
+Kevin ruled on 2026-10-28 that the Jones 21st edition (2019) is a display-only comparison. The 23rd edition (2026) still sets the Ussher–Jones sort (tier 3). The 21st edition must never set or change `sorting_year`, `sorting_basis`, or `sort_order_within_year`.
+
+Source `jones-chronology-ot-2019`. Chronology `jones-2019`. The original ministry URL floydnolenjonesministries.com/files/131144963.pdf now serves the 23rd edition (2026). The only link is the Archive.org copy: https://web.archive.org/web/20221023135542/https://www.floydnolenjonesministries.com/files/135786316.pdf
+
+Where the editions differ, the 2019 value is one sub-row under the Ussher–Jones row, labelled 21st ed. (2019). Where they agree, no 2019 row is stored. No new records.
+
+| Item | 2019 | 2026 | 2019 cite | 2026 cite | On the record |
+|---|---|---|---|---|---|
+| Moses' death | 2552 AM, 1452 BC | 2553 AM, 1452 BC | Appendix F, printed p. 278 | Appendix F, printed p. 278 (PDF p. 313) | not added (no record; AM only) |
+| Encampment table heading, Sinai to Kadesh | 1490 BC | 1491 BC | Wilderness encampments table, printed p. 262 | printed p. 262 (PDF p. 296) | not added (no record) |
+| `esther-made-queen` | 3490 AM, 514 BC | 3490 AM, 515 BC | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `ahasuerus-sleepless-night` | 3495 AM, 510 BC | 3495 AM, 509 BC | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `haman-hanged` | 3495 AM, 510 BC | 3495 AM, 509 BC | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `martyrdom-of-stephen` | 4033 AM, AD 30 | 4035 AM, AD 32 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `conversion-of-paul` | 4035 AM, AD 32 | 4036 AM, AD 33 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `paul-stoned-at-lystra` | 4049 AM, AD 46 | 4048 AM, AD 45 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `second-missionary-journey` | 4056 AM, AD 53 | 4055 AM, AD 51 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `third-missionary-journey` | 4059 AM, AD 56 | 4059 AM, AD 54 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `paul-arrested-at-the-temple` | 4063 AM, AD 60 | 4063 AM, AD 58 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `paul-before-felix` | 4063 AM, AD 60 | 4063 AM, AD 58 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `festus-procurator` | 4065 AM, AD 62 | 4065 AM, AD 60 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `paul-before-festus-and-agrippa` | 4065 AM, AD 62 | 4065 AM, AD 60 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `paul-arrives-in-rome` | 4066 AM, AD 63 | 4066 AM, AD 61 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+| `persecution-under-nero` | 4067 AM, AD 64 | 4068 AM, AD 64 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row (AM only; the year is the same) |
+| `paul-released` | 4068 AM, AD 65 | 4068 AM, AD 63 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
+
+- **Recommendation:** keep this. Do not let the 21st edition set a sort.

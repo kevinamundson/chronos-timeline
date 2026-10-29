@@ -78,6 +78,7 @@ Fallbacks:
 - `herodotus`: it carries no BC years at all
 - `morecraft`: except through `provisional`, as above
 - `shuckford`: volume 1 of the 1819 Creighton edition. Anno Mundi is not converted to BC. It is not a provisional sort tier
+- `jones-2019`: Jones 21st ed. (2019). Display-only comparison under the Ussher–Jones row. The 23rd ed. (2026) sets the sort. Kevin, 2026-10-28
 - CFAH ruler dates with basis `paper_text`
 - **every new source you add**
 
@@ -166,6 +167,7 @@ npm run verify:live         # person-timeline checks against production (run aft
 - `node scripts/cory/import.mjs`
 - `node scripts/shuckford/import.mjs`
 - `node scripts/cfah/import.mjs`
+- `node scripts/jones/import-2019.mjs` (display-only 21st ed. comparison; does not write an extract and does not touch the sort)
 - `node scripts/standby/compute.mjs`
 
 **Importer order:** if you re-run the Herodotus importer (or any other importer), run `node scripts/cfah/import.mjs` **after it**. The Herodotus importer drops CFAH-only reign slots on its people, and the CFAH importer restores them (see E-section notes in `docs/OPEN-QUESTIONS-FOR-KEVIN.md`). Then run `node scripts/standby/compute.mjs` last, so a record that gained a `sorting_year` loses its standby placement and a record that still has none is placed again. Then run `npm run validate`, and check `git diff --stat` for unexpected churn.
