@@ -2328,7 +2328,7 @@
       "access": "public-domain",
       "license_note": "Doré's 1866 engravings are in the public domain. The Archive.org item (uploaded 2020-01-21, collection opensource_image) states no licence in its metadata. Images are linked through the Internet Archive IIIF Image API and are not copied to this site.",
       "verified_on": "2026-10-29",
-      "note": "241 JPEG files (about 9600 x 12300 px), each with the illustration's English title printed below it. File numbers and titles are the uploader's, \"as found\"; they are not Doré's 1866 plate numbers."
+      "note": "241 JPEG files (about 9600 x 12300 px), each with the illustration's English title printed below it. File numbers and titles are the uploader's, \"as found\"; they are not Doré's 1866 plate numbers. The site uses the 220 canonical plates and skips the 21 Apocrypha files whose names have an x after the number."
     }
   ]
 }

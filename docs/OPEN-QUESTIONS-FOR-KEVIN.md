@@ -389,6 +389,14 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
   2. Add optional `mother`, `sex` and `adopted` fields now, still empty until a source is read.
 - **Recommendation:** option 1. A new field needs your approval, and an empty field would not change the chart.
 
+### C10. Doré plates that need a record (2026-10-29)
+- The 220 canonical Doré plates are linked only to people and events that already exist. Plates that need a record which does not exist (Jesus, Mary, Peter, Paul, Eve, Abel, and the others), and plates left unmatched because the scene or the name is ambiguous, are listed in `docs/DORE-SUGGESTED-RECORDS.md`.
+- The illustration file stores each link as `{ "id", "basis", "ref"? }`. `basis` is `named-in-title`, `in-scripture-passage` (with the OSIS verse that puts the person in the scene) or `event-depicted`. That shape was added for this set, on your ruling of 2026-10-29.
+- **Options:**
+  1. Leave the gaps as a list (as now). Add a person or an event only when you ask for that record.
+  2. Add the suggested records in a later pass, still without changing any sort year.
+- **Recommendation:** option 1 until you mark which names to add.
+
 ## D. Herodotus import (2026-10-18)
 
 ### D1. Events that only Herodotus dates
