@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/illustrations.schema.json",
+  "title": "Illustrations linked to records (images linked, never copied)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["description", "source", "checked_on", "illustrations"],
+  "properties": {
+    "description": { "type": "string" },
+    "source": { "$ref": "common.schema.json#/$defs/slug" },
+    "checked_on": { "type": "string", "format": "date" },
+    "illustrations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["number", "suffix", "title", "file", "original_width", "original_height", "display_height", "image", "image_small", "iiif_info", "details_url", "scripture_ref", "records"],
+        "properties": {
+          "number": { "type": "integer", "minimum": 1, "description": "Number at the start of the Archive.org file name (the uploader's numbering, not Doré's plate number)." },
+          "suffix": { "type": "string", "const": "", "description": "The uploader's optional mark after the number. The Apocrypha files use x; those files are not in this set, and a non-empty suffix is rejected." },
+          "title": { "type": "string", "minLength": 1, "description": "Title from the file name, as uploaded. The text after the number, the optional suffix, and the space." },
+          "file": { "type": "string", "pattern": "^\\d{3} .+\\.jpg$" },
+          "original_width": { "type": "integer", "minimum": 100, "description": "Pixel size of the Archive.org original (IIIF info.json, v2 then v3, or the JPEG header where both timed out)." },
+          "original_height": { "type": "integer", "minimum": 100 },
+          "display_height": { "type": "integer", "minimum": 100, "description": "Height of the 1200 px wide display image, for the img width/height attributes (no layout shift)." },
+          "thumb_width": { "type": "integer", "minimum": 50, "maximum": 400, "description": "Pixel width of the local WebP thumbnail site/static/img/dore/thumbs/NNN.webp (written by scripts/dore/fetch-thumbs.mjs). Absent, with thumb_height, for a plate listed in data/illustrations/dore-thumbs-pending.json." },
+          "thumb_height": { "type": "integer", "minimum": 50, "maximum": 600, "description": "Pixel height of the local WebP thumbnail, for the img width/height attributes (no layout shift)." },
+          "image": { "$ref": "common.schema.json#/$defs/url" },
+          "image_small": { "$ref": "common.schema.json#/$defs/url" },
+          "iiif_info": { "$ref": "common.schema.json#/$defs/url" },
+          "details_url": { "$ref": "common.schema.json#/$defs/url" },
+          "scripture_ref": { "type": ["string", "null"], "description": "OSIS reference, only where the title names one passage. Identified from the title; not printed on the plate. A chapter-level ref is used when the title gives the chapter and the scene is not pinned to verses." },
+          "records": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "basis"],
+              "properties": {
+                "id": { "$ref": "common.schema.json#/$defs/slug" },
+                "basis": {
+                  "enum": ["named-in-title", "depicted", "event-depicted"],
+                  "description": "Why this plate is linked. A person is named-in-title (the name is in the file title and the person is drawn) or depicted (the person is clearly the figure shown). An event is event-depicted. in-scripture-passage is not a basis: a person who is only named in the verse, and not drawn, is not linked."
+                },
+                "note": { "type": "string", "minLength": 1, "description": "Who is shown, and where in the plate. Required when basis is depicted. Absent on named-in-title and event-depicted." }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

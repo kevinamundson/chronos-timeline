@@ -11,6 +11,7 @@
 //   - own items solid (opacity 1), context items faded (< 1); legend swatches visible (non-zero box, colour/border)
 // Locally it also replays the load with the vis-timeline stylesheet delayed 1.5 s (late-CSS race seen in WebKit).
 import { chromium, webkit } from 'playwright';
+import { stubIiif } from './iiif-stub.mjs';
 import { readFileSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -62,7 +63,8 @@ async function inspect(page) {
 }
 
 for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
-  const browser = await bt.launch();
+  // Local runs stub Archive.org IIIF (site/iiif-stub.mjs); --base live runs load the real images.
+  const browser = live ? await bt.launch() : stubIiif(await bt.launch());
   for (const id of PEOPLE) {
     const ex = expect[id];
     for (const [w, h] of WIDTHS) for (const lateCss of live ? [false] : [false, true]) {
@@ -70,7 +72,9 @@ for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
       const page = await ctx.newPage();
       const errors = [];
       page.on('pageerror', (e) => errors.push(String(e)));
-      page.on('console', (m) => { if (m.type() === 'error' && !/cloudflareinsights|Failed to load resource.*(beacon|tile)/i.test(m.text())) errors.push(m.text()); });
+      // "Failed to load resource" carries no URL. A local 4xx/5xx is recorded on the response
+      // listener. Archive.org IIIF sometimes returns 500; that is not a timeline failure.
+      page.on('console', (m) => { if (m.type() === 'error' && !/cloudflareinsights|Failed to load resource/i.test(m.text())) errors.push(m.text()); });
       page.on('response', (r) => { if (r.status() >= 400 && r.url().startsWith(BASE)) errors.push(`${r.status()} ${r.url()}`); });
       if (lateCss) await page.route('**/vis-timeline-graph2d.min.css*', async (r) => { await new Promise((s) => setTimeout(s, 1500)); r.continue(); });
       const tag = `[${bname} ${w}px${lateCss ? ' late-css' : ''}] /people/${id}/`;
@@ -110,7 +114,7 @@ for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
     const page = await ctx.newPage();
     const errors = [];
     page.on('pageerror', (e) => errors.push(String(e)));
-    page.on('console', (m) => { if (m.type() === 'error' && !/cloudflareinsights|Failed to load resource.*(beacon|tile)/i.test(m.text())) errors.push(m.text()); });
+    page.on('console', (m) => { if (m.type() === 'error' && !/cloudflareinsights|Failed to load resource/i.test(m.text())) errors.push(m.text()); });
     const tag = `[${bname} 1024px] /people/${id}/ standby`;
     await page.goto(`${BASE}/people/${id}/`, { waitUntil: 'load', timeout: 30000 });
     await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});

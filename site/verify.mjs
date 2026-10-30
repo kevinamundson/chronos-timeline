@@ -2,6 +2,7 @@
 // Headless verification: build must exist (npm run build). Serves dist/, loads key pages in Chromium,
 // checks for console errors, timeline/map items, Pagefind results, and saves screenshots.
 import { chromium, webkit } from 'playwright';
+import { stubIiif } from './iiif-stub.mjs';
 import { mkdirSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -17,7 +18,7 @@ mkdirSync(SHOTS, { recursive: true });
 const PORT = +process.env.VERIFY_PORT || 8799; // override when two clones verify on the same machine
 const BASE = `http://localhost:${PORT}`;
 const srv = await serve(PORT);
-const browser = await chromium.launch();
+const browser = stubIiif(await chromium.launch());
 const results = [];
 let failed = false;
 const check = (name, ok, detail = '') => { results.push(`${ok ? 'PASS' : 'FAIL'}  ${name}${detail ? ` — ${detail}` : ''}`); if (!ok) failed = true; };
@@ -1153,7 +1154,7 @@ for (const [path, shot, sel] of [
     });
   }
   async function rowMergeUi(engine, launcher) {
-    const own = launcher === browser ? null : await launcher.launch();
+    const own = launcher === browser ? null : stubIiif(await launcher.launch());
     const b = own || browser;
     for (const [width, height, scheme] of [[390, 844, 'light'], [390, 844, 'dark'], [1280, 900, 'light'], [1280, 900, 'dark']]) {
       const ctx = await b.newContext({ viewport: { width, height }, colorScheme: scheme, deviceScaleFactor: width < 500 ? 2 : 1 });
@@ -1331,6 +1332,324 @@ for (const [path, shot, sel] of [
   });
   check('jones-2019 nero: sub-row shows the AM difference', !nero.separate && /AM 4068/.test(nero.top) && /AD 64/.test(nero.top) && /21st ed\. \(2019\)/.test(nero.sub) && /AM 4067/.test(nero.sub) && /AD 64/.test(nero.sub), JSON.stringify(nero).slice(0, 400));
   await ctx.close();
+}
+// Doré illustrations (1866): beside the title (stacked under it at 390px), IIIF v2 with a v3 fallback,
+// Also-on excluding the current record, and prev/next labels that do not wrap.
+// Display images load from the Internet Archive; local WebP thumbnails are the placeholder, the gallery
+// dots and the index images. Plates listed in data/illustrations/dore-thumbs-pending.json have no local
+// thumbnail yet: spinner and reserved box only, a plain dot, and an IIIF image on the index.
+// This checks markup and controls, not IIIF image bytes, and does not need Archive.org to answer.
+{
+  const doreDoc = JSON.parse(readFileSync(join(here, '../data/illustrations/dore-1866.json'), 'utf8'));
+  const countFor = (id) => doreDoc.illustrations.filter((il) => il.records.some((r) => r.id === id)).length;
+  // Plates listed in data/illustrations/dore-thumbs-pending.json have no local thumbnail (no thumb_width).
+  const hasThumb = (il) => Number.isInteger(il.thumb_width);
+  const thumbsFor = (path) => {
+    const id = path.split('/').filter(Boolean).pop();
+    return doreDoc.illustrations.filter((il) => hasThumb(il) && il.records.some((r) => r.id === id)).length;
+  };
+  const pendingN = doreDoc.illustrations.filter((il) => !hasThumb(il)).length;
+  const singleId = ['canaan-son-of-ham', 'balthasar', 'athalia', 'zerubbabel'].find((id) => countFor(id) === 1);
+  const cases = [['/people/noah/', countFor('noah')], ['/events/the-flood/', countFor('the-flood')], ['/people/adam/', countFor('adam')], ['/events/the-fall/', countFor('the-fall')]];
+  if (singleId) cases.push([`/people/${singleId}/`, 1]);
+  check('doré sample: a gallery and a single figure', countFor('the-flood') > 1 && countFor('noah') >= 1 && !!singleId, `flood=${countFor('the-flood')} noah=${countFor('noah')} single=${singleId || 'none'}`);
+  for (const [path, n] of cases) {
+    for (const width of [390, 1280]) {
+      const { ctx, page, errors, status } = await open(path, { width, height: 900 });
+      const info = await page.evaluate(() => {
+        const sec = document.querySelector('section.dore');
+        const h1 = document.querySelector('article h1');
+        const imgs = [...(sec?.querySelectorAll('img.dore-img') || [])];
+        const hr = h1?.getBoundingClientRect();
+        const fr = sec?.getBoundingClientRect();
+        const desc = [...document.querySelectorAll('h2')].find((h) => h.textContent.trim() === 'Description');
+        const beforeDesc = !desc || !!(sec && (sec.compareDocumentPosition(desc) & Node.DOCUMENT_POSITION_FOLLOWING));
+        const beside = !!(hr && fr && fr.left >= hr.right - 4 && fr.top < hr.bottom + 80);
+        const stacked = !!(hr && fr && fr.top >= hr.bottom - 2 && fr.left < hr.right);
+        const also = [...(sec?.querySelectorAll('figcaption li') || [])].filter((li) => li.textContent.includes('Also on'));
+        const alsoHrefs = also.flatMap((li) => [...li.querySelectorAll('a')].map((a) => a.getAttribute('href')));
+        const selfInAlso = alsoHrefs.some((h) => h === location.pathname);
+        const btnInfo = (sel) => {
+          const btn = sec?.querySelector(sel);
+          if (!btn) return null;
+          const r = btn.getBoundingClientRect();
+          return { nowrap: getComputedStyle(btn).whiteSpace === 'nowrap', h: r.height, w: r.width, fits: btn.scrollWidth <= btn.clientWidth + 1 };
+        };
+        const thumbs = [...(sec?.querySelectorAll('.dore-frame > img.dore-thumb') || [])];
+        const dotThumbs = [...(sec?.querySelectorAll('.dore-dot img') || [])];
+        const localThumb = (i) => /^\/img\/dore\/thumbs\/\d{3}\.webp$/.test(i.getAttribute('src') || '') && +i.getAttribute('width') > 0 && +i.getAttribute('height') > 0;
+        // No visible heading in the section (aria-label only); the credit is in the site footer; from 800px
+        // the cards after the sort-year card flow up beside the floated plate (no gap over 20px, no overlap).
+        const art = sec?.closest('article');
+        const head = art?.querySelector('.record-head');
+        const seq = [head, ...[...(art?.children || [])].filter((k) => !k.classList.contains('record-top') && k.offsetParent !== null)].filter(Boolean);
+        let maxGap = 0;
+        for (let i = 1; i < seq.length; i++) maxGap = Math.max(maxGap, seq[i].getBoundingClientRect().top - seq[i - 1].getBoundingClientRect().bottom);
+        const overlap = seq.some((k) => { const q = k.getBoundingClientRect(); return q.height > 0 && q.right > fr.left + 1 && q.left < fr.right - 1 && q.top < fr.bottom - 1 && q.bottom > fr.top + 1; });
+        const foot = document.querySelector('footer.site-footer');
+        return {
+          headings: sec?.querySelectorAll('h1, h2, h3').length ?? -1,
+          label: sec?.getAttribute('aria-label') || '',
+          labelledbyOk: [...(sec?.querySelectorAll('[aria-labelledby]') || [])].every((el) => el.getAttribute('aria-labelledby').split(/\s+/).every((id) => document.getElementById(id))),
+          creditInSection: /Public domain|public domain/.test(sec?.textContent || ''),
+          footerCredit: !!foot?.querySelector('a[href="https://archive.org/details/gustavedore"]') && !!foot?.querySelector('a[href="/illustrations/dore/"]') && /public domain/.test(foot.textContent),
+          maxGap: Math.round(maxGap), overlap,
+          imgs: imgs.length,
+          thumbs: thumbs.length,
+          thumbsLocal: thumbs.every(localThumb) && dotThumbs.every(localThumb),
+          dotThumbs: dotThumbs.length,
+          plainDots: sec?.querySelectorAll('.dore-dot .dore-dot-plain').length || 0,
+          iiif: imgs.every((i) => {
+            const src = i.getAttribute('src') || '';
+            const v2 = src.startsWith('https://iiif.archive.org/image/iiif/2/gustavedore%2F');
+            const retried = i.dataset.retried === '1' && src.includes('/image/iiif/3/gustavedore');
+            return (v2 || retried) && i.loading === 'lazy' && i.width > 0;
+          }),
+          gallery: !!sec?.querySelector('[data-dore-gallery].dore-js'),
+          controls: sec?.querySelector('.dore-controls') ? getComputedStyle(sec.querySelector('.dore-controls')).display : 'none',
+          dots: sec?.querySelectorAll('.dore-dot').length || 0,
+          status: sec?.querySelector('.dore-status')?.textContent || '',
+          caption: sec?.querySelector('figcaption')?.innerText || '',
+          overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+          beside, stacked, beforeDesc, selfInAlso, alsoCount: also.length,
+          prev: btnInfo('[data-dore="prev"]'), next: btnInfo('[data-dore="next"]'),
+        };
+      });
+      let moved = true;
+      if (n > 1) {
+        await page.locator('section.dore [data-dore="next"]').click();
+        await page.waitForFunction(() => document.querySelector('.dore-status')?.textContent.startsWith('2 of'), null, { timeout: 5000 }).catch(() => {});
+        const s2 = await page.locator('.dore-status').textContent();
+        await page.locator('.dore-track').focus();
+        await page.keyboard.press('ArrowLeft');
+        await page.waitForFunction(() => document.querySelector('.dore-status')?.textContent.startsWith('1 of'), null, { timeout: 5000 }).catch(() => {});
+        const s1 = await page.locator('.dore-status').textContent();
+        moved = s2.startsWith('2 of') && s1.startsWith('1 of');
+      }
+      const placeOk = width >= 800 ? info.beside && !info.stacked : info.stacked && !info.beside;
+      const btnOk = (b) => b && b.nowrap && b.h >= 44 && b.w >= 44 && b.fits;
+      const controlsOk = n > 1 ? btnOk(info.prev) && btnOk(info.next) : true;
+      const tn = thumbsFor(path);
+      const flowOk = width >= 800 ? info.maxGap <= 21 && !info.overlap : true;
+      const labelOk = info.headings === 0 && info.label === (n > 1 ? `Illustrations, ${n}` : 'Illustration') && info.labelledbyOk && !info.creditInSection && info.footerCredit;
+      const ok = status === 200 && errors.length === 0 && flowOk && labelOk && info.imgs === n && info.iiif && info.thumbs === tn && info.thumbsLocal && info.dotThumbs === (n > 1 ? tn : 0) && info.plainDots === (n > 1 ? n - tn : 0) && !info.overflow && /Gustave Doré, 1866/.test(info.caption)
+        && info.beforeDesc && placeOk && !info.selfInAlso && controlsOk
+        && (n > 1 ? info.gallery && info.controls === 'flex' && info.dots === n && info.status === `1 of ${n}` && moved : !info.gallery && info.dots === 0);
+      check(`doré ${path} ${width}px: ${n > 1 ? `gallery of ${n}` : 'one figure'}, ${width >= 800 ? 'beside the title, content flows beside it' : 'under the title'}, no heading, credit in footer`, ok, ok ? '' : JSON.stringify({ status, errors: errors.slice(0, 3), ...info, moved }));
+      await ctx.close();
+    }
+  }
+  for (const width of [390, 1280]) {
+    const { ctx, page, errors, status } = await open('/illustrations/dore/', { width, height: 900 });
+    const info = await page.evaluate(() => {
+      const items = [...document.querySelectorAll('.dore-index-item')];
+      const all = [...document.querySelectorAll('.dore-index img')];
+      const hrefs = items.map((li) => li.querySelector('a')?.getAttribute('href') || '');
+      const imgs = items.map((li) => li.querySelector('img')).filter(Boolean);
+      const headings = items.map((li) => li.querySelector('h2')?.textContent || '');
+      return {
+        n: items.length,
+        xFile: hrefs.some((h) => /\d{3}x%20/.test(h)) || headings.some((h) => /^\s*\d{3}x\b/.test(h)),
+        lazy: imgs.length === items.length && imgs.every((i) => i.loading === 'lazy' && i.getAttribute('width') && i.getAttribute('height')),
+        // Plates with a local thumbnail: one local WebP and no spinner. Pending plates: an IIIF v2 image
+        // (v3 fallback) in a reserved aspect-ratio box with a spinner and a hidden fallback label.
+        local: items.every((li) => {
+          const no = (li.id || '').replace('dore-', '');
+          const img = li.querySelector('img');
+          const remote = li.querySelector('.dore-index-remote');
+          if (!remote) return (img?.getAttribute('src') || '') === `/img/dore/thumbs/${no}.webp` && !li.querySelector('.dore-loading');
+          // Live IIIF may already have loaded or failed (dore.js then removes the spinner and may switch to v3),
+          // so accept either state: this checks markup, not whether Archive.org answered.
+          const src = img?.getAttribute('src') || '';
+          const v2 = src.startsWith('https://iiif.archive.org/image/iiif/2/gustavedore%2F');
+          const v3 = img?.dataset.retried === '1' && src.startsWith('https://iiif.archive.org/image/iiif/3/gustavedore%2F');
+          const spin = remote.querySelector('.dore-loading[role="status"]');
+          const spinOk = spin ? !!spin.querySelector('.visually-hidden') && remote.getAttribute('aria-busy') === 'true' : remote.getAttribute('aria-busy') === 'false';
+          return (v2 || v3) && (img.dataset.fallbackSrc || '').startsWith('https://iiif.archive.org/image/iiif/3/gustavedore%2F')
+            && /aspect-ratio/.test(remote.getAttribute('style') || '') && spinOk && !!remote.querySelector('.dore-index-fallback');
+        }),
+        imgCount: all.length,
+        remote: document.querySelectorAll('.dore-index .dore-index-remote').length,
+        overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+        dash: items.filter((li) => li.textContent.includes('—')).length,
+      };
+    });
+    const ok = status === 200 && errors.length === 0 && info.n === 220 && info.n === doreDoc.illustrations.length && !info.xFile && info.lazy && info.local && info.imgCount === 220 && info.remote === pendingN && !info.overflow;
+    check(`doré index ${width}px: 220 plates, ${220 - pendingN} local thumbnails, ${pendingN} pending on IIIF, no Apocrypha, no overflow`, ok, ok ? '' : JSON.stringify({ status, errors: errors.slice(0, 3), ...info }));
+    await ctx.close();
+  }
+  {
+    // Index: no IIIF request for a plate that has a local thumbnail; only pending plates may ask IIIF.
+    // IIIF is blocked here, so the check does not depend on Archive.org: a pending plate that fails
+    // keeps its reserved box with the file number and "Archive.org" inside the link.
+    const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const page = await ctx.newPage();
+    const pendingFiles = new Set(doreDoc.illustrations.filter((il) => !hasThumb(il)).map((il) => encodeURIComponent(il.file)));
+    const iiifReqs = [];
+    const thumbResp = [];
+    await page.route('**/image/iiif/**', (r) => r.abort());
+    page.on('request', (r) => {
+      if (!/iiif\.archive\.org|archive\.org\/download/.test(r.url())) return;
+      const m = r.url().match(/gustavedore%2F([^/]+)\//);
+      if (!m || !pendingFiles.has(m[1])) iiifReqs.push(r.url());
+    });
+    page.on('response', (r) => { if (r.url().includes('/img/dore/thumbs/')) thumbResp.push([r.status(), r.headers()['content-type'] || '']); });
+    await page.goto(BASE + '/illustrations/dore/', { waitUntil: 'load', timeout: 30000 });
+    await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await page.waitForTimeout(800);
+    const shown = await page.evaluate(() => [...document.querySelectorAll('.dore-index img')].slice(0, 4).every((i) => i.complete && i.naturalWidth > 0));
+    const respOk = thumbResp.length > 0 && thumbResp.every(([st, ct]) => st === 200 && /image\/webp/.test(ct));
+    check('doré index: no IIIF requests for plates with a local thumbnail; thumbnails served as local WebP', iiifReqs.length === 0 && shown && respOk, JSON.stringify({ iiif: iiifReqs.slice(0, 3), n: thumbResp.length, bad: thumbResp.filter(([st, ct]) => st !== 200 || !/webp/.test(ct)).slice(0, 3), shown }));
+    if (pendingN) {
+      await page.locator('.dore-index-remote').first().scrollIntoViewIfNeeded();
+      const tidy = await page.waitForFunction(() => {
+        const box = document.querySelector('.dore-index-remote');
+        const r = box?.getBoundingClientRect();
+        const label = box?.querySelector('.dore-index-fallback');
+        return !!(box && box.classList.contains('dore-failed') && !box.querySelector('.dore-loading') && r.height > 50 && label && getComputedStyle(label).display !== 'none' && box.closest('a[href*="archive.org/details/gustavedore"]'));
+      }, null, { timeout: 10000 }).then(() => true, () => false);
+      check('doré index: a pending plate whose IIIF image fails keeps its box and Archive.org link', tidy);
+    }
+    await ctx.close();
+  }
+  {
+    const { ctx, page } = await open('/people/noah/', { width: 390, height: 900 });
+    const info = await page.evaluate(() => {
+      const also = [...document.querySelectorAll('section.dore figcaption li')].filter((li) => li.textContent.includes('Also on'));
+      const hrefs = also.flatMap((li) => [...li.querySelectorAll('a')].map((a) => a.getAttribute('href')));
+      return { n: also.length, self: hrefs.filter((h) => h === location.pathname), sample: hrefs.slice(0, 6) };
+    });
+    check('doré Also on excludes the current record', info.n > 0 && info.self.length === 0, JSON.stringify(info));
+    await ctx.close();
+  }
+}
+{
+  // Fallback: when IIIF v2 fails, dore.js retries on IIIF v3; when both fail, it shows a link to Archive.org.
+  // The sample is whichever listed person still has exactly one plate.
+  const doreDoc = JSON.parse(readFileSync(join(here, '../data/illustrations/dore-1866.json'), 'utf8'));
+  const countFor = (id) => doreDoc.illustrations.filter((il) => il.records.some((r) => r.id === id)).length;
+  const singlePerson = ['canaan-son-of-ham', 'balthasar', 'athalia', 'zerubbabel', 'noah'].find((id) => countFor(id) === 1);
+  check('doré fallback sample is one plate', !!singlePerson, singlePerson || 'none');
+  const sample = `/people/${singlePerson || 'balthasar'}/`;
+  const hasThumb = (il) => Number.isInteger(il.thumb_width);
+  const idOf = (path) => path.split('/').filter(Boolean).pop();
+  const pageHasThumb = (path) => doreDoc.illustrations.some((il) => hasThumb(il) && il.records.some((r) => r.id === idOf(path)));
+  // A one-plate page with a local thumbnail, for the "thumbnail stays" fallback (Noah: plate 9).
+  const thumbSample = ['noah', 'canaan-son-of-ham', 'balthasar', 'athalia', 'zerubbabel'].map((id) => `/people/${id}/`).find((p) => countFor(idOf(p)) === 1 && pageHasThumb(p));
+  const fallbackRuns = [['v2 blocked', '**/image/iiif/2/**', 'v3', sample], ['v2 and v3 blocked', '**/image/iiif/**', 'link', sample]];
+  if (thumbSample && thumbSample !== sample) fallbackRuns.push(['v2 and v3 blocked, local thumbnail', '**/image/iiif/**', 'link', thumbSample]);
+  for (const [label, pattern, expect, path] of fallbackRuns) {
+    const withThumb = pageHasThumb(path);
+    const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const page = await ctx.newPage();
+    await page.route(pattern, (r) => r.abort());
+    await page.goto(BASE + path, { waitUntil: 'load', timeout: 30000 });
+    await page.locator('section.dore').scrollIntoViewIfNeeded();
+    const ok = expect === 'v3'
+      ? await page.waitForFunction(() => document.querySelector('img.dore-img')?.src.includes('/image/iiif/3/'), null, { timeout: 10000 }).then(() => true, () => false)
+      : await page.waitForFunction((withThumb) => {
+          const p = document.querySelector('.dore-unavailable');
+          const link = p && !p.hidden && p.querySelector('a[href*="archive.org/details/gustavedore"]');
+          const spinner = document.querySelector('section.dore .dore-loading');
+          const frame = document.querySelector('section.dore .dore-frame');
+          const thumb = frame?.querySelector('img.dore-thumb');
+          const boxOk = !!(frame && frame.classList.contains('dore-failed') && frame.getBoundingClientRect().height > 50);
+          const thumbOk = withThumb
+            ? !!(thumb && !thumb.hidden && thumb.complete && thumb.naturalWidth > 0 && thumb.getBoundingClientRect().height > 50 && getComputedStyle(thumb).filter === 'none')
+            : !thumb;
+          return !!(link && !spinner && boxOk && thumbOk);
+        }, withThumb, { timeout: 10000 }).then(() => true, () => false);
+    check(`doré fallback (${label}, ${path}): ${expect === 'v3' ? 'retries on IIIF v3' : withThumb ? 'keeps the local thumbnail and shows the Archive.org link' : 'keeps the reserved box and shows the Archive.org link'}`, ok);
+    await ctx.close();
+  }
+
+  // Spinner: present while the image is held, gone after it loads. No visible loading text.
+  // Index spinners appear only for pending plates. Reduced motion leaves the spinner static.
+  const loadingState = () => {
+    const textHits = [];
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      if (!/loading illustration/i.test(walker.currentNode.textContent || '')) continue;
+      if (!walker.currentNode.parentElement?.closest('.visually-hidden')) textHits.push('visible');
+    }
+    const frame = document.querySelector('section.dore .dore-frame');
+    const status = frame?.querySelector('.dore-loading');
+    const spinner = status?.querySelector('.dore-spinner');
+    return {
+      busy: frame?.getAttribute('aria-busy') || '',
+      status: !!status && status.getAttribute('role') === 'status',
+      sr: !!status?.querySelector('.visually-hidden'),
+      spinner: !!spinner,
+      visibleText: textHits.length,
+      anim: spinner ? getComputedStyle(spinner).animationName : '',
+    };
+  };
+  const holdImages = async (page) => {
+    let release;
+    const gate = new Promise((resolve) => { release = resolve; });
+    // 600×2. A 1px PNG is not enough: the record image uses a srcset width
+    // descriptor, and the browser density-corrects naturalWidth down to 0.
+    const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAlgAAAACCAIAAAALjjUzAAAAHUlEQVR42u3QAQEAAAABIPPNNkRNKAWAY1EAwLMB3xF46s3EUSgAAAAASUVORK5CYII=', 'base64');
+    await page.route('**/image/iiif/**', async (route) => {
+      await gate;
+      await route.fulfill({ status: 200, contentType: 'image/png', body: png });
+    });
+    return release;
+  };
+  for (const [label, path] of [['single', sample], ['gallery', '/events/the-flood/']]) {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const page = await ctx.newPage();
+    const release = await holdImages(page);
+    await page.goto(BASE + path, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    // The figure sits under the title. A lazy image below the first screen does not
+    // request until it is near the viewport, so bring the frame up before the load check.
+    await page.locator('section.dore .dore-frame').first().scrollIntoViewIfNeeded();
+    const before = await page.evaluate(loadingState);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+    const beforeOk = before.busy === 'true' && before.status && before.sr && before.spinner && before.visibleText === 0 && !overflow;
+    check(`doré spinner before load (${label}, 390px)`, beforeOk, beforeOk ? '' : JSON.stringify({ ...before, overflow }));
+    // With a local thumbnail, it is the placeholder: loaded, blurred, filling the reserved box, while IIIF is still held.
+    // A plate still pending (no local thumbnail) has no placeholder image, only the spinner in the reserved box.
+    const firstThumb = (() => {
+      const id = path.split('/').filter(Boolean).pop();
+      const il = doreDoc.illustrations.find((x) => x.records.some((r) => r.id === id));
+      return !!(il && Number.isInteger(il.thumb_width));
+    })();
+    const ph = await page.waitForFunction((firstThumb) => {
+      const frame = document.querySelector('section.dore .dore-frame');
+      const t = frame?.querySelector('img.dore-thumb');
+      const fr = frame?.getBoundingClientRect();
+      const busy = frame?.getAttribute('aria-busy') === 'true' && !!frame.querySelector('.dore-loading .dore-spinner');
+      if (!firstThumb) return !!(frame && !t && fr.height > 100 && busy);
+      return !!(t && t.complete && t.naturalWidth > 0 && /blur/.test(getComputedStyle(t).filter) && fr.height > 100 && Math.abs(t.offsetHeight - frame.offsetHeight) < 2 && busy);
+    }, firstThumb, { timeout: 10000 }).then(() => true, () => false);
+    const box1 = await page.evaluate(() => document.querySelector('section.dore .dore-frame').getBoundingClientRect().height);
+    check(`doré ${firstThumb ? 'thumbnail placeholder' : 'reserved box and spinner (no local thumbnail yet)'} before IIIF loads (${label})`, ph);
+    release();
+    const gone = await page.waitForFunction(() => {
+      const frame = document.querySelector('section.dore .dore-frame');
+      const img = frame?.querySelector('img.dore-img');
+      return !!(img && img.complete && img.naturalWidth > 0 && frame.getAttribute('aria-busy') === 'false' && !frame.querySelector('.dore-loading'));
+    }, null, { timeout: 20000 }).then(() => true, () => false);
+    const box2 = await page.evaluate(() => document.querySelector('section.dore .dore-frame').getBoundingClientRect().height);
+    check(`doré spinner gone after load (${label}); no layout shift`, gone && Math.abs(box2 - box1) < 1, `${box1} -> ${box2}`);
+    await ctx.close();
+  }
+  {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
+    const page = await ctx.newPage();
+    const release = await holdImages(page);
+    await page.goto(BASE + sample, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    await page.locator('section.dore .dore-frame').first().scrollIntoViewIfNeeded();
+    await page.waitForTimeout(100);
+    const before = await page.evaluate(loadingState);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+    const ok = before.spinner && before.anim === 'none' && before.visibleText === 0 && !overflow;
+    check('doré spinner: reduced motion does not animate', ok, ok ? '' : JSON.stringify({ ...before, overflow }));
+    release();
+    await ctx.close();
+  }
 }
 await browser.close();
 srv.close();

@@ -16,7 +16,7 @@
 //     (sorting_basis.slot = reign_start). Display-only sources never set it.
 //     sorting_basis.tier / tier_rank / chronology name the tier actually used
 // Usage: npm install && npm run validate
-import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv2020 from 'ajv/dist/2020.js';
@@ -26,6 +26,8 @@ import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, stan
 import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE, ITALICS_NOTE } from './raleigh/derived-year.mjs';
 import { loadChronologicalTable, yearColumnIndex, yearColumnReport } from './raleigh/table.mjs';
 import { TIERS, personTierSort, tierPick, isJones23 } from './sort-rule.mjs';
+import { doreUrls, IIIF_BASE, DISPLAY_W, DORE_THUMB_DIR, doreThumbName } from './dore/urls.mjs';
+import { parseDoreFileName } from './dore/parse.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const S = (f) => JSON.parse(readFileSync(join(root, 'schema', f), 'utf8'));
@@ -558,6 +560,175 @@ for (const c of chartDoc.charts || []) {
   if (c.thumbnail && !c.thumbnail.startsWith('https://assets.answersresearchjournal.org/')) err('data/cfah-charts.json', `${c.id}: thumbnails may only hotlink publicly served ARJ images`);
 }
 
+// Doré Bible illustrations (1866): data/illustrations/dore-1866.json. Images are linked through the
+// Internet Archive IIIF Image API (v2 primary), never copied; every URL must be the one
+// scripts/dore/urls.mjs builds from the file name. Record links name an existing person or event
+// and say why. scripture_ref must map to a BLB chapter. Apocrypha files (an x after the number) are rejected.
+let doreCount = 0;
+{
+  const samples = [
+    ['001 The Creation of Light.jpg', { number: 1, suffix: '', title: 'The Creation of Light' }],
+    ['009 Noah Curses Ham and Canaan.jpg', { number: 9, suffix: '', title: 'Noah Curses Ham and Canaan' }],
+    ['117x Tobias and the Angel.jpg', { number: 117, suffix: 'x', title: 'Tobias and the Angel' }],
+    ['136x Judas Maccabeus befoe the Army of Nicanor.jpg', { number: 136, suffix: 'x', title: 'Judas Maccabeus befoe the Army of Nicanor' }],
+  ];
+  for (const [name, want] of samples) {
+    const got = parseDoreFileName(name);
+    if (!got || got.number !== want.number || got.suffix !== want.suffix || got.title !== want.title) {
+      err('scripts/dore/parse.mjs', `parseDoreFileName(${JSON.stringify(name)}) returned ${JSON.stringify(got)}`);
+    }
+  }
+  if (parseDoreFileName('12 The Creation of Light.jpg') || parseDoreFileName('001NoSpace.jpg') || parseDoreFileName('001xNoSpace.jpg')) {
+    err('scripts/dore/parse.mjs', 'parser accepted a file name that is not number, optional x, space, title, .jpg');
+  }
+  const rel = 'data/illustrations/dore-1866.json';
+  if (existsSync(join(root, rel))) {
+    const doc = validate(rel, 'illustrations');
+    if (!srcIds.has(doc.source)) err(rel, `unknown source ${doc.source}`);
+    const nums = new Set();
+    for (const il of doc.illustrations || []) {
+      const tag = `illustration ${il.number}`;
+      if (nums.has(il.number)) err(rel, `${tag}: duplicate number`); nums.add(il.number);
+      const parsed = parseDoreFileName(il.file);
+      if (!parsed) err(rel, `${tag}: file name "${il.file}" is not a number, optional x, space, title, and .jpg`);
+      else {
+        if (parsed.suffix === 'x' || il.suffix === 'x') err(rel, `${tag}: Apocrypha file (x suffix) is not part of this set`);
+        if (il.suffix !== parsed.suffix) err(rel, `${tag}: suffix must be the suffix parsed from the file name`);
+        if (il.number !== parsed.number) err(rel, `${tag}: number does not match file name "${il.file}"`);
+        if (il.title !== parsed.title) err(rel, `${tag}: title must be the file name after the number, suffix, and space`);
+      }
+      const u = doreUrls(il.file);
+      for (const [k, want] of [['image', u.display], ['image_small', u.small], ['iiif_info', u.iiif_info], ['details_url', u.details]]) if (il[k] !== want) err(rel, `${tag}: ${k} must be ${want}`);
+      if (!il.image.startsWith(IIIF_BASE)) err(rel, `${tag}: display image must come from the Archive.org IIIF Image API v2`);
+      if (Math.abs(il.display_height - Math.round(DISPLAY_W * il.original_height / il.original_width)) > 1) err(rel, `${tag}: display_height must be ${DISPLAY_W} x original_height / original_width`);
+      if (il.scripture_ref && !blbFromOsis(il.scripture_ref)) err(rel, `${tag}: scripture_ref "${il.scripture_ref}" cannot be mapped to a BLB chapter`);
+      const ids = [];
+      for (const link of il.records) {
+        const r = link.id;
+        ids.push(r);
+        if (!records[r]) err(rel, `${tag}: record ${r} not found`);
+        else if (!['person', 'event'].includes(records[r].kind)) err(rel, `${tag}: ${r} is a ${records[r].kind}; illustrations go on people and events`);
+        else if (link.basis === 'event-depicted' && records[r].kind !== 'event') err(rel, `${tag}: ${r} is a person; event-depicted is for an event`);
+        else if (link.basis !== 'event-depicted' && records[r].kind !== 'person') err(rel, `${tag}: ${r} is an event; use event-depicted`);
+        if (link.basis === 'in-scripture-passage' || (records[r]?.kind === 'person' && !['named-in-title', 'depicted'].includes(link.basis))) {
+          err(rel, `${tag}: ${r} person link basis "${link.basis}" is not allowed; use named-in-title or depicted`);
+        }
+        if (link.ref) err(rel, `${tag}: ${r} must not carry a ref`);
+        if (link.basis === 'depicted') {
+          if (typeof link.note !== 'string' || !link.note.trim()) err(rel, `${tag}: ${r} depicted needs a note saying who is shown and where`);
+        } else if (link.note) err(rel, `${tag}: ${r} basis ${link.basis} must not carry a note`);
+      }
+      if (new Set(ids).size !== ids.length) err(rel, `${tag}: duplicate record id`);
+      doreCount++;
+    }
+    if (doreCount === 220) {
+      const x = (doc.illustrations || []).find((il) => /x/i.test(il.suffix) || /^\d{3}x /.test(il.file));
+      if (x) err(rel, `illustration ${x.number}: x-suffix file slipped into the 220`);
+    }
+    const sizesRel = 'scripts/dore/sizes.json';
+    if (existsSync(join(root, sizesRel))) {
+      const sizes = JSON.parse(readFileSync(join(root, sizesRel), 'utf8'));
+      const files = new Set();
+      for (const il of doc.illustrations || []) {
+        files.add(il.file);
+        const s = sizes[il.file];
+        if (!s) err(rel, `illustration ${il.number}: no measurement in ${sizesRel}`);
+        else if (il.original_width !== s.width || il.original_height !== s.height) err(rel, `illustration ${il.number}: original size must match ${sizesRel} (${s.width}×${s.height})`);
+      }
+      for (const name of Object.keys(sizes)) {
+        if (/^\d{3}x /.test(name)) err(sizesRel, `${name}: an x-suffix file must not be in the size cache`);
+        else if (!files.has(name)) err(rel, `${name} is measured in ${sizesRel} but is not in the illustrations`);
+      }
+    }
+  }
+}
+
+// Doré local thumbnails (site/static/img/dore/thumbs/NNN.webp, from scripts/dore/fetch-thumbs.mjs).
+// Every plate in the data has one, unless listed in data/illustrations/dore-thumbs-pending.json; there are none for other numbers or for x-suffix (Apocrypha) files;
+// only .webp; each at most 100 KB; the folder well under 5 MB; the stored width/height match the file.
+// Guard against committed full-size images: no .jpg/.jpeg/.png/.webp/.gif over 100 KB anywhere under
+// site/ or data/, except the verify screenshots (site/screenshots/) and the build output (site/dist/).
+const THUMB_MAX = 100 * 1024;
+let doreThumbs = 0;
+let doreThumbBytes = 0;
+let doreThumbsPending = 0;
+{
+  const webpSize = (buf) => {
+    if (buf.length < 30 || buf.toString('ascii', 0, 4) !== 'RIFF' || buf.toString('ascii', 8, 12) !== 'WEBP') return null;
+    const kind = buf.toString('ascii', 12, 16);
+    if (kind === 'VP8 ') return { width: buf.readUInt16LE(26) & 0x3fff, height: buf.readUInt16LE(28) & 0x3fff };
+    if (kind === 'VP8L') {
+      const b = buf.readUInt32LE(21);
+      return { width: (b & 0x3fff) + 1, height: ((b >> 14) & 0x3fff) + 1 };
+    }
+    if (kind === 'VP8X') return { width: buf.readUIntLE(24, 3) + 1, height: buf.readUIntLE(27, 3) + 1 };
+    return null;
+  };
+  const rel = 'data/illustrations/dore-1866.json';
+  const dir = join(root, DORE_THUMB_DIR);
+  if (existsSync(join(root, rel))) {
+    const doc = JSON.parse(readFileSync(join(root, rel), 'utf8'));
+    const want = new Map((doc.illustrations || []).map((il) => [doreThumbName(il.number), il]));
+    const have = existsSync(dir) ? readdirSync(dir) : [];
+    // Deferred thumbnails (Archive.org IIIF failing on 2026-10-29): a plate may lack its thumbnail only if it
+    // is listed in data/illustrations/dore-thumbs-pending.json. The list must be exactly the plates without one.
+    const pendRel = 'data/illustrations/dore-thumbs-pending.json';
+    const pending = new Map();
+    if (existsSync(join(root, pendRel))) {
+      const pd = JSON.parse(readFileSync(join(root, pendRel), 'utf8'));
+      if (!Array.isArray(pd.plates)) err(pendRel, 'plates must be an array');
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(pd.recorded_on || '')) err(pendRel, 'recorded_on must be a YYYY-MM-DD date');
+      if (!pd.note) err(pendRel, 'note is required');
+      if (pd.count !== (pd.plates || []).length) err(pendRel, `count ${pd.count} does not match ${(pd.plates || []).length} plates`);
+      const byNum = new Map((doc.illustrations || []).map((il) => [il.number, il]));
+      for (const p of pd.plates || []) {
+        const il = byNum.get(p.number);
+        const tag = `pending plate ${p.number}`;
+        if (pending.has(p.number)) err(pendRel, `${tag}: listed twice`);
+        pending.set(p.number, p);
+        if (!il) { err(pendRel, `${tag}: no plate with this number in ${rel}`); continue; }
+        if (p.file !== il.file || p.title !== il.title || p.details_url !== il.details_url) err(pendRel, `${tag}: file, title and details_url must match ${rel}`);
+        if (have.includes(doreThumbName(p.number))) err(pendRel, `${tag}: has a thumbnail file; remove it from the pending list`);
+        if (Object.hasOwn(il, 'thumb_width') || Object.hasOwn(il, 'thumb_height')) err(rel, `illustration ${p.number}: listed as pending, so it must not have thumb_width/thumb_height`);
+      }
+    }
+    for (const name of have) {
+      const p = `${DORE_THUMB_DIR}/${name}`;
+      if (!/\.webp$/.test(name)) { err(p, 'only .webp files belong in the Doré thumbnail folder'); continue; }
+      if (/x\.webp$/i.test(name)) err(p, 'no thumbnail for an x-suffix (Apocrypha) file');
+      if (!want.has(name)) { err(p, 'no plate in the data has this number'); continue; }
+      const buf = readFileSync(join(dir, name));
+      doreThumbs++;
+      doreThumbBytes += buf.length;
+      if (buf.length > THUMB_MAX) err(p, `${buf.length} bytes; a thumbnail may be at most 100 KB`);
+      const dim = webpSize(buf);
+      const il = want.get(name);
+      if (!dim) err(p, 'not a WebP file');
+      else if (dim.width !== il.thumb_width || dim.height !== il.thumb_height) err(rel, `illustration ${il.number}: thumb_width/thumb_height ${il.thumb_width}×${il.thumb_height} do not match ${p} (${dim.width}×${dim.height})`);
+    }
+    for (const [name, il] of want) {
+      if (have.includes(name)) {
+        if (!Number.isInteger(il.thumb_width) || !Number.isInteger(il.thumb_height)) err(rel, `illustration ${il.number}: has ${DORE_THUMB_DIR}/${name} but no thumb_width/thumb_height`);
+      } else if (!pending.has(il.number)) err(rel, `illustration ${il.number}: no thumbnail ${DORE_THUMB_DIR}/${name} and not listed in ${pendRel}; run npm run dore:thumbs`);
+    }
+    doreThumbsPending = pending.size;
+    if (doreThumbBytes >= 5 * 1024 * 1024) err(DORE_THUMB_DIR, `${doreThumbBytes} bytes in total; the folder must stay well under 5 MB`);
+  }
+  const skip = new Set([join(root, 'site/dist'), join(root, 'site/screenshots')]);
+  const walk = (d) => {
+    if (!existsSync(d)) return;
+    for (const ent of readdirSync(d, { withFileTypes: true })) {
+      const p = join(d, ent.name);
+      if (ent.isDirectory()) { if (!skip.has(p) && ent.name !== 'node_modules') walk(p); continue; }
+      if (!/\.(jpe?g|png|webp|gif)$/i.test(ent.name)) continue;
+      const size = statSync(p).size;
+      if (size > THUMB_MAX) err(p.slice(root.length + 1), `${size} bytes: images over 100 KB must not be committed under site/ or data/ (full-size images come from IIIF)`);
+    }
+  };
+  walk(join(root, 'site'));
+  walk(join(root, 'data'));
+}
+
 // King lists (CFAH pass, phase 3): every row links to an existing record of the right kind; ids unique; source known.
 if (kingDoc) {
   const seen = new Set();
@@ -620,7 +791,7 @@ if (errors.length) {
   process.exit(1);
 }
 const standbyLine = standbySummaryLine(standbyCounts(Object.values(records).map((r) => r.doc)));
-console.log(`PASS: ${checked} files valid (chronologies, sources, ${counts}, ${chartIds.size} CFAH charts); cross-references, 4-tier sorting rule and MT Genesis 5 and 11 arithmetic consistent.`);
+console.log(`PASS: ${checked} files valid (chronologies, sources, ${counts}, ${chartIds.size} CFAH charts, ${doreCount} Doré illustrations, ${doreThumbs} Doré thumbnails ${(doreThumbBytes / 1024).toFixed(0)} KB, ${doreThumbsPending} pending); cross-references, 4-tier sorting rule and MT Genesis 5 and 11 arithmetic consistent.`);
 console.log('Sorting tiers used: ' + Object.entries(tierCount).map(([k, v]) => `${k}=${v}`).join(', '));
 console.log(`Reign-start sorts: ${reignStartCount}`);
 console.log(standbyLine);
