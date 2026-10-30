@@ -11,6 +11,7 @@
 //   - own items solid (opacity 1), context items faded (< 1); legend swatches visible (non-zero box, colour/border)
 // Locally it also replays the load with the vis-timeline stylesheet delayed 1.5 s (late-CSS race seen in WebKit).
 import { chromium, webkit } from 'playwright';
+import { stubIiif } from './iiif-stub.mjs';
 import { readFileSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -62,7 +63,8 @@ async function inspect(page) {
 }
 
 for (const [bname, bt] of [['chromium', chromium], ['webkit', webkit]]) {
-  const browser = await bt.launch();
+  // Local runs stub Archive.org IIIF (site/iiif-stub.mjs); --base live runs load the real images.
+  const browser = live ? await bt.launch() : stubIiif(await bt.launch());
   for (const id of PEOPLE) {
     const ex = expect[id];
     for (const [w, h] of WIDTHS) for (const lateCss of live ? [false] : [false, true]) {

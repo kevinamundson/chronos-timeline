@@ -1,4 +1,9 @@
-// Doré illustrations. (1) An image that fails on IIIF v2 is retried once on IIIF v3 (same Archive.org
+// Doré illustrations. (0) A local thumbnail (blurred) sits under each IIIF image and shows at once;
+// the IIIF image covers it when it loads. If IIIF fails entirely, the thumbnail stays (unblurred).
+// A plate still waiting for its thumbnail (data/illustrations/dore-thumbs-pending.json) has only the
+// spinner in its reserved box. On the index such a plate loads a small IIIF image; if that fails the
+// box stays, showing the file number and "Archive.org" inside the link.
+// (1) An image that fails on IIIF v2 is retried once on IIIF v3 (same Archive.org
 // service), then replaced by a link to Archive.org. (2) Gallery: CSS scroll-snap does the swiping; this
 // adds prev/next, dots, arrow keys and a "n of N" status. No library. Without JS the strip still scrolls.
 (() => {
@@ -7,6 +12,10 @@
     if (!frame) return;
     frame.setAttribute('aria-busy', 'false');
     frame.querySelector('.dore-loading')?.remove();
+  };
+  const loaded = (img) => {
+    clearLoading(img);
+    img.closest('.dore-frame')?.classList.add('is-loaded');
   };
   const fail = (img) => {
     if (img.dataset.fallbackSrc && !img.dataset.retried) {
@@ -17,6 +26,7 @@
       return;
     }
     clearLoading(img);
+    img.closest('.dore-frame')?.classList.add('dore-failed');
     const fig = img.closest('figure');
     const unavailable = fig?.querySelector('.dore-unavailable');
     if (unavailable) {
@@ -25,15 +35,14 @@
       unavailable.removeAttribute('hidden');
       return;
     }
-    // Index thumbnail: the anchor is the Archive.org link. Keep it, drop the broken image.
     img.hidden = true;
   };
   for (const img of document.querySelectorAll('img.dore-img')) {
     img.addEventListener('error', () => fail(img));
-    img.addEventListener('load', () => clearLoading(img));
+    img.addEventListener('load', () => loaded(img));
     // A cached image can finish before this script runs. A lazy image that has not
     // started may also report complete with no pixels, so a zero width is not a failure.
-    if (img.complete && img.naturalWidth > 0) clearLoading(img);
+    if (img.complete && img.naturalWidth > 0) loaded(img);
   }
   if ('IntersectionObserver' in window) {
     const near = new IntersectionObserver((entries) => {

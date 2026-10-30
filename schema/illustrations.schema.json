@@ -24,6 +24,8 @@
           "original_width": { "type": "integer", "minimum": 100, "description": "Pixel size of the Archive.org original (IIIF info.json, v2 then v3, or the JPEG header where both timed out)." },
           "original_height": { "type": "integer", "minimum": 100 },
           "display_height": { "type": "integer", "minimum": 100, "description": "Height of the 1200 px wide display image, for the img width/height attributes (no layout shift)." },
+          "thumb_width": { "type": "integer", "minimum": 50, "maximum": 400, "description": "Pixel width of the local WebP thumbnail site/static/img/dore/thumbs/NNN.webp (written by scripts/dore/fetch-thumbs.mjs). Absent, with thumb_height, for a plate listed in data/illustrations/dore-thumbs-pending.json." },
+          "thumb_height": { "type": "integer", "minimum": 50, "maximum": 600, "description": "Pixel height of the local WebP thumbnail, for the img width/height attributes (no layout shift)." },
           "image": { "$ref": "common.schema.json#/$defs/url" },
           "image_small": { "$ref": "common.schema.json#/$defs/url" },
           "iiif_info": { "$ref": "common.schema.json#/$defs/url" },

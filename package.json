@@ -9,7 +9,8 @@
     "build": "node scripts/validate.mjs && node site/build.mjs && pagefind --site site/dist",
     "preview": "node site/serve.mjs",
     "verify": "node site/verify.mjs && node site/verify-timelines.mjs",
-    "verify:live": "node site/verify-timelines.mjs --base https://chronos.kevinamundson.me --shots"
+    "verify:live": "node site/verify-timelines.mjs --base https://chronos.kevinamundson.me --shots",
+    "dore:thumbs": "node scripts/dore/fetch-thumbs.mjs"
   },
   "devDependencies": {
     "@bibleup/bibleup": "^1.1.0",
@@ -19,6 +20,7 @@
     "leaflet": "^1.9.4",
     "pagefind": "^1.5.2",
     "playwright": "^1.64.1",
+    "sharp": "^0.34.5",
     "vis-timeline": "^8.5.4"
   },
   "engines": {
