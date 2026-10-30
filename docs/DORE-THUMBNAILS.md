@@ -41,3 +41,9 @@ npm run validate
 - No thumbnail for a number not in the data, and none for an x-suffix file.
 - Only `.webp` in the folder; each file at most 100 KB; the folder under 5 MB.
 - No `.jpg`, `.jpeg`, `.png`, `.webp` or `.gif` over 100 KB anywhere under `site/` or `data/` (a guard against committed full-size images). The verify screenshots in `site/screenshots/` and the build output `site/dist/` are exempt.
+
+## Record page layout
+
+- The Doré section on a person or event page has no visible heading. It is labelled for screen readers only ("Illustration", or "Illustrations, n" for a gallery).
+- The public-domain credit (Internet Archive item link and a link to /illustrations/dore/) is in the site footer on every page, not in the section.
+- From 800px up the section floats right (340px). The sort-year card and the cards after it narrow beside it and go full width below it, so there is no blank space under the sort-year card. Under 800px the plate sits under the title.

@@ -402,11 +402,16 @@ h2.h3 { font-size: 17px; margin: 16px 0 8px; font-weight: 600; }
 /* Doré illustrations (images served by the Internet Archive IIIF Image API; never copied).
    Beside the title from 800px up. Under the title on a phone. */
 .record-top { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: start; margin: 0 0 20px; }
-.record-head { min-width: 0; }
+.record-head { min-width: 0; order: 1; }
 .record-head .sortbox { margin-bottom: 0; }
-.record-dore { margin: 0; min-width: 0; max-width: 100%; }
+.record-dore { margin: 0; min-width: 0; max-width: 100%; order: 2; }
+/* From 800px up the plate floats right. The cards after it are their own formatting context (flow-root),
+   so they narrow beside the float, with no background under it, and go full width once past it. */
 @media (min-width: 800px) {
-  .record-top { grid-template-columns: minmax(0, 1fr) minmax(220px, 340px); }
+  .has-dore .record-top { display: contents; }
+  .has-dore .record-dore { float: right; width: 340px; margin: 0 0 20px 20px; }
+  .has-dore .record-head { display: flow-root; margin: 0 0 20px; }
+  .has-dore > :is(section, p):not([hidden]) { display: flow-root; }
 }
 .dore-fig { margin: 0; min-width: 0; }
 .dore-frame { position: relative; display: block; width: 100%; max-width: 100%; max-height: 75vh; background: var(--bg-fill); border-radius: 8px; overflow: hidden; }

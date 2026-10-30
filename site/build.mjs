@@ -538,21 +538,26 @@ const doreSection = (id) => {
   const ils = doreFor(id);
   if (!ils.length) return '';
   const n = ils.length;
-  const credit = `<p class="small muted">Public domain. Images are served by the Internet Archive (${ext('https://archive.org/details/gustavedore', 'Gustave Doré Bible Illustrations (1866)')}). Small thumbnails are stored on this site. Titles and numbers are the Archive.org file names. <a href="/illustrations/dore/">All ${doreDoc.illustrations.length} plates</a>.</p>`;
-  if (n === 1) return `<section class="card dore record-dore" aria-labelledby="dore-h"><h2 id="dore-h">Illustration</h2>${doreFigure(ils[0], 0, 1, id)}${credit}</section>`;
-  return `<section class="card dore record-dore" aria-labelledby="dore-h"><h2 id="dore-h">Illustrations <span class="muted small">(${n})</span></h2>
-<div class="dore-gallery" data-dore-gallery role="region" aria-roledescription="carousel" aria-labelledby="dore-h">
+  // No visible heading (Kevin, 2026-10-29): the section is labelled for assistive technology only.
+  // The public-domain credit is in the site footer (doreCredit), not here.
+  if (n === 1) return `<section class="card dore record-dore" aria-label="Illustration">${doreFigure(ils[0], 0, 1, id)}</section>`;
+  return `<section class="card dore record-dore" aria-label="Illustrations, ${n}">
+<div class="dore-gallery" data-dore-gallery role="region" aria-roledescription="carousel" aria-label="Illustrations">
 <div class="dore-track" tabindex="0" aria-label="Illustrations: swipe, or use the arrow keys">${ils.map((il, i) => doreFigure(il, i, n, id)).join('')}</div>
 <div class="dore-controls"><button type="button" class="dore-btn" data-dore="prev" aria-label="Previous illustration">‹ Prev</button>
 <ol class="dore-dots">${ils.map((il, i) => `<li><button type="button" class="dore-dot" aria-label="Show ${i + 1}: ${esc(il.title)}">${hasThumb(il) ? `<img src="${doreThumbPublicPath(il.number)}" width="${il.thumb_width}" height="${il.thumb_height}" loading="lazy" decoding="async" alt="">` : '<span class="dore-dot-plain" aria-hidden="true"></span>'}</button></li>`).join('')}</ol>
 <button type="button" class="dore-btn" data-dore="next" aria-label="Next illustration">Next ›</button><span class="dore-status small muted" aria-live="polite"></span></div>
-</div>${credit}</section>`;
+</div></section>`;
 };
+// The Doré section comes first in the source so that, from 800px up, it floats right beside the title and
+// the cards after it narrow beside it (display: flow-root) and go full width below it: no empty gap
+// under the sort-year card. Under 800px, CSS order puts it back under the title.
 const recordTop = (id, identity) => {
   const dore = doreSection(id);
   if (!dore) return identity;
-  return `<div class="record-top"><div class="record-head">${identity}</div>${dore}</div>`;
+  return `<div class="record-top">${dore}<div class="record-head">${identity}</div></div>`;
 };
+const articleOpen = (id) => (doreFor(id).length ? '<article class="has-dore">' : '<article>');
 const doreScript = (id) => (doreFor(id).length ? '<script src="/assets/dore.js" defer></script>' : '');
 
 function sourcesSection(rec) {
@@ -618,6 +623,7 @@ ${body}
 <footer class="site-footer"><div class="wrap small muted">
 <p>Young-Earth Creation framework; the Bible is the infallible standard. Sorted by <a href="/chronologies/">CFAH</a> (Griffith &amp; White, <i>Answers Research Journal</i>), then CFAH-1 Table 1, Ussher–Jones, Ussher.</p>
 <p>Place data © <a href="https://www.openbible.info/geo/" rel="noopener">OpenBible.info</a>, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>. Map tiles © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors. Historic maps: <a href="https://www.loc.gov/maps/" rel="noopener">Library of Congress</a>. Timeline: <a href="https://visjs.org/" rel="noopener">vis-timeline</a>; family chart: <a href="https://github.com/donatso/family-chart" rel="noopener">family-chart</a>; map: <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>; search: <a href="https://pagefind.app/" rel="noopener">Pagefind</a>. Reference finding: <a href="https://github.com/bibleup/bibleup" rel="noopener">BibleUp</a>.</p>
+<p class="dore-credit">Gustave Doré's Bible illustrations (1866) are public domain. Images are served by the Internet Archive (<a href="https://archive.org/details/gustavedore" rel="noopener">gustavedore</a>); small thumbnails are stored on this site. Titles and numbers are the Archive.org file names. <a href="/illustrations/dore/">All ${doreDoc.illustrations.length} plates</a>.</p>
 <p>A written Bible reference opens the Berean Standard Bible from <a href="https://bible.helloao.org/" rel="noopener">bible.helloao.org</a>, with the Amundson Interpretive Version from <a href="https://aivbible.kevinamundson.me" rel="noopener">aivbible.kevinamundson.me</a>. Scripture links still open the Berean Literal Bible on BibleHub.</p>
 </div></footer>
 ${scripts}
@@ -764,7 +770,7 @@ ${jsonScript('map-data', locations.filter((l) => l.lat != null && l.lng != null)
 
 // Events
 for (const e of events) {
-  const body = `${crumbs(e)}<article>${recordTop(e.id, `${head(e)}${sortBadge(e)}`)}
+  const body = `${crumbs(e)}${articleOpen(e.id)}${recordTop(e.id, `${head(e)}${sortBadge(e)}`)}
 ${e.description ? `<section class="card"><h2>Description</h2><p>${esc(e.description)}</p></section>` : ''}
 ${e.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(e.scripture_refs)}</section>` : ''}
 <section class="card"><h2>Chronologies</h2>${chronTable(e.chronologies, { sortYear: e.sorting_year, basis: e.sorting_basis, caption: `Dates for ${e.title}, CFAH first` })}</section>
@@ -1115,7 +1121,7 @@ ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years
   const kls = kingListsOf(p.id);
   const kingCard = p.dynasty || kls.length ? `<section class="card" id="king-lists"><h2>Dynasty and king lists</h2>${p.dynasty ? `<p>Dynasty: ${esc(p.dynasty)}</p>` : ''}${kls.length ? `<p>Listed in: ${kls.map((l) => `<a href="/king-lists/#${esc(l.id)}">${esc(l.title)}</a>`).join('; ')}</p>` : ''}</section>` : '';
   const standbyLine = p.standby && p.sorting_year == null ? `<p class="small muted">Standby placement: <strong>${esc(yearLabel(p.standby.year_bc_ad))}</strong> (${esc(standbyPhrase(p))}). This is not a sort year.</p>` : '';
-  const body = `${crumbs(p)}<article>${recordTop(p.id, `${head(p, { hideAlt: true })}${sortBadge(p)}${standbyLine}`)}
+  const body = `${crumbs(p)}${articleOpen(p.id)}${recordTop(p.id, `${head(p, { hideAlt: true })}${sortBadge(p)}${standbyLine}`)}
 ${nameSection(p)}
 ${p.description ? `<section class="card"><h2>Description</h2><p>${esc(p.description)}</p></section>` : ''}${kingCard}
 ${p.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(p.scripture_refs)}</section>` : ''}

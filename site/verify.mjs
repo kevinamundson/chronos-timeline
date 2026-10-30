@@ -1378,7 +1378,22 @@ for (const [path, shot, sel] of [
         const thumbs = [...(sec?.querySelectorAll('.dore-frame > img.dore-thumb') || [])];
         const dotThumbs = [...(sec?.querySelectorAll('.dore-dot img') || [])];
         const localThumb = (i) => /^\/img\/dore\/thumbs\/\d{3}\.webp$/.test(i.getAttribute('src') || '') && +i.getAttribute('width') > 0 && +i.getAttribute('height') > 0;
+        // No visible heading in the section (aria-label only); the credit is in the site footer; from 800px
+        // the cards after the sort-year card flow up beside the floated plate (no gap over 20px, no overlap).
+        const art = sec?.closest('article');
+        const head = art?.querySelector('.record-head');
+        const seq = [head, ...[...(art?.children || [])].filter((k) => !k.classList.contains('record-top') && k.offsetParent !== null)].filter(Boolean);
+        let maxGap = 0;
+        for (let i = 1; i < seq.length; i++) maxGap = Math.max(maxGap, seq[i].getBoundingClientRect().top - seq[i - 1].getBoundingClientRect().bottom);
+        const overlap = seq.some((k) => { const q = k.getBoundingClientRect(); return q.height > 0 && q.right > fr.left + 1 && q.left < fr.right - 1 && q.top < fr.bottom - 1 && q.bottom > fr.top + 1; });
+        const foot = document.querySelector('footer.site-footer');
         return {
+          headings: sec?.querySelectorAll('h1, h2, h3').length ?? -1,
+          label: sec?.getAttribute('aria-label') || '',
+          labelledbyOk: [...(sec?.querySelectorAll('[aria-labelledby]') || [])].every((el) => el.getAttribute('aria-labelledby').split(/\s+/).every((id) => document.getElementById(id))),
+          creditInSection: /Public domain|public domain/.test(sec?.textContent || ''),
+          footerCredit: !!foot?.querySelector('a[href="https://archive.org/details/gustavedore"]') && !!foot?.querySelector('a[href="/illustrations/dore/"]') && /public domain/.test(foot.textContent),
+          maxGap: Math.round(maxGap), overlap,
           imgs: imgs.length,
           thumbs: thumbs.length,
           thumbsLocal: thumbs.every(localThumb) && dotThumbs.every(localThumb),
@@ -1415,10 +1430,12 @@ for (const [path, shot, sel] of [
       const btnOk = (b) => b && b.nowrap && b.h >= 44 && b.w >= 44 && b.fits;
       const controlsOk = n > 1 ? btnOk(info.prev) && btnOk(info.next) : true;
       const tn = thumbsFor(path);
-      const ok = status === 200 && errors.length === 0 && info.imgs === n && info.iiif && info.thumbs === tn && info.thumbsLocal && info.dotThumbs === (n > 1 ? tn : 0) && info.plainDots === (n > 1 ? n - tn : 0) && !info.overflow && /Gustave Doré, 1866/.test(info.caption)
+      const flowOk = width >= 800 ? info.maxGap <= 21 && !info.overlap : true;
+      const labelOk = info.headings === 0 && info.label === (n > 1 ? `Illustrations, ${n}` : 'Illustration') && info.labelledbyOk && !info.creditInSection && info.footerCredit;
+      const ok = status === 200 && errors.length === 0 && flowOk && labelOk && info.imgs === n && info.iiif && info.thumbs === tn && info.thumbsLocal && info.dotThumbs === (n > 1 ? tn : 0) && info.plainDots === (n > 1 ? n - tn : 0) && !info.overflow && /Gustave Doré, 1866/.test(info.caption)
         && info.beforeDesc && placeOk && !info.selfInAlso && controlsOk
         && (n > 1 ? info.gallery && info.controls === 'flex' && info.dots === n && info.status === `1 of ${n}` && moved : !info.gallery && info.dots === 0);
-      check(`doré ${path} ${width}px: ${n > 1 ? `gallery of ${n}` : 'one figure'}, ${width >= 800 ? 'beside the title' : 'under the title'}`, ok, ok ? '' : JSON.stringify({ status, errors: errors.slice(0, 3), ...info, moved }));
+      check(`doré ${path} ${width}px: ${n > 1 ? `gallery of ${n}` : 'one figure'}, ${width >= 800 ? 'beside the title, content flows beside it' : 'under the title'}, no heading, credit in footer`, ok, ok ? '' : JSON.stringify({ status, errors: errors.slice(0, 3), ...info, moved }));
       await ctx.close();
     }
   }
