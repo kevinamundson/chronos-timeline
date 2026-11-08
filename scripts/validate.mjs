@@ -25,6 +25,7 @@ import { isBlbUrl, isNonBlbScripture, blbFromOsis } from './blb.mjs';
 import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, standbySummaryLine } from './standby/compute.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE, ITALICS_NOTE } from './raleigh/derived-year.mjs';
 import { loadChronologicalTable, yearColumnIndex, yearColumnReport } from './raleigh/table.mjs';
+import { loadXml, normalizedDocumentText, normalizeWs } from './raleigh/xml-text.mjs';
 import { TIERS, personTierSort, tierPick, isJones23 } from './sort-rule.mjs';
 import { doreUrls, IIIF_BASE, DISPLAY_W, DORE_THUMB_DIR, doreThumbName } from './dore/urls.mjs';
 import { parseDoreFileName } from './dore/parse.mjs';
@@ -783,6 +784,35 @@ if (kingDoc) {
     }
     const expected = computeStandby(doc, ctx);
     if (JSON.stringify(sb ?? null) !== JSON.stringify(expected ?? null)) err(rel, 'standby does not match scripts/standby/compute.mjs; re-run it');
+  }
+}
+// Raleigh accounts: each passage is his 1617 text, and each account names a person or an event.
+{
+  const rel = 'data/raleigh-accounts.json';
+  const doc = validate(rel, 'raleigh-accounts');
+  const corpus = normalizedDocumentText(loadXml(root));
+  const byId = new Map();
+  let lastOrder = 0;
+  for (const p of doc.passages) {
+    if (byId.has(p.id)) err(rel, `duplicate passage ${p.id}`);
+    byId.set(p.id, p);
+    if (p.order <= lastOrder) err(rel, `${p.id}: passages must be in book order`);
+    lastOrder = p.order;
+    if (p.passage !== normalizeWs(p.passage)) err(rel, `${p.id}: passage is not whitespace-normalised`);
+    if (!corpus.includes(p.passage)) err(rel, `${p.id}: passage is not verbatim in the 1617 XML`);
+    if (!/sig\./.test(p.citation) || !p.citation.includes(p.signature)) err(rel, `${p.id}: citation must name its signature`);
+    if (p.signature_end !== p.signature && !p.citation.includes(p.signature_end)) err(rel, `${p.id}: citation must name the ending signature`);
+  }
+  for (const [recordId, ids] of Object.entries(doc.accounts)) {
+    const rec = records[recordId];
+    if (!rec || (rec.kind !== 'person' && rec.kind !== 'event')) err(rel, `${recordId}: account must name a person or an event`);
+    let prev = 0;
+    for (const id of ids) {
+      const p = byId.get(id);
+      if (!p) err(rel, `${recordId}: unknown passage ${id}`);
+      else if (p.order <= prev) err(rel, `${recordId}: passages must stay in book order`);
+      else prev = p.order;
+    }
   }
 }
 if (raleighDerivedSummary) console.log(raleighDerivedSummary);

@@ -327,6 +327,16 @@ cite.bu-link a { text-decoration: underline dotted; text-underline-offset: 3px; 
 #raleigh-table[data-spelling="original"] .spell-modern,
 #raleigh-table[data-spelling="modern"] [data-for="original"],
 #raleigh-table[data-spelling="original"] [data-for="modern"] { display: none; }
+#raleigh-account[data-spelling="modern"] .spell-original,
+#raleigh-account[data-spelling="original"] .spell-modern { display: none; }
+.raleigh-account { margin-top: 12px; border-top: 1px solid var(--sep); }
+.raleigh-account > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 10px 0; font-weight: 600; color: var(--label); }
+.raleigh-account > summary::-webkit-details-marker { display: none; }
+.raleigh-account > summary::before { content: ""; flex: 0 0 auto; width: 8px; height: 8px; border-right: 2px solid var(--label-2); border-bottom: 2px solid var(--label-2); transform: rotate(-45deg); }
+.raleigh-account[open] > summary::before { transform: rotate(45deg) translate(-2px, -2px); }
+.raleigh-account > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.raleigh-account .raleigh-passage { margin: 0 0 12px; line-height: 1.55; }
+.raleigh-account h3 { font-size: 15px; margin: 16px 0 8px; font-weight: 600; }
 .raleigh-wrap { max-width: 100%; }
 table.raleigh { font-size: 14px; min-width: 720px; }
 table.raleigh th, table.raleigh td { padding: 6px 8px; white-space: nowrap; }

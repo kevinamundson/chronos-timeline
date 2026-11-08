@@ -7,6 +7,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { BOOKS as BLB_BOOKS, blbFromOsis, blbFromText } from '../scripts/blb.mjs';
 import { loadChronologicalTable, toCsv, toMarkdown, toXls, yearColumnIndex } from '../scripts/raleigh/table.mjs';
+import { modernizeProse } from '../scripts/raleigh/spelling.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmHtml, raleighRecordHtml, raleighRecordShort, showsItalicDerived, RALEIGH_DERIVED_NOTE, ITALICS_NOTE } from '../scripts/raleigh/derived-year.mjs';
 import { standbyCounts, standbySummaryLine } from '../scripts/standby/compute.mjs';
 import { isJones23, reignStartPhrase } from '../scripts/sort-rule.mjs';
@@ -38,6 +39,8 @@ const kingDoc = existsSync(join(DATA, 'king-lists.json')) ? readJSON(join(DATA, 
 const doreDoc = existsSync(join(DATA, 'illustrations/dore-1866.json')) ? readJSON(join(DATA, 'illustrations/dore-1866.json')) : { illustrations: [] };
 const nameFormDoc = readJSON(join(DATA, 'name-forms.json'));
 const nameForms = Object.fromEntries((nameFormDoc.people || []).map((p) => [p.id, p.forms]));
+const raleighAccounts = readJSON(join(DATA, 'raleigh-accounts.json'));
+const raleighPassageById = Object.fromEntries(raleighAccounts.passages.map((p) => [p.id, p]));
 const kingListsOf = (id) => kingDoc.lists.filter((l) => l.entries.some((e) => e.person === id || e.event === id));
 
 const byId = {};
@@ -768,10 +771,45 @@ ${jsonScript('map-data', locations.filter((l) => l.lat != null && l.lng != null)
     scripts: `<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>${leafletScript}<script src="/assets/app.js" defer></script>` }));
 }
 
+function raleighAccount(recordId) {
+  const ids = raleighAccounts.accounts[recordId];
+  if (!ids?.length) return '';
+  const groups = [];
+  for (const id of ids) {
+    const passage = raleighPassageById[id];
+    if (!passage) continue;
+    const last = groups[groups.length - 1];
+    if (last && last.citation === passage.citation) last.items.push(passage);
+    else groups.push({ citation: passage.citation, items: [passage] });
+  }
+  if (!groups.length) return '';
+  const body = groups.map((g) => `<h3>${esc(g.citation)}</h3>${g.items.map((p) => `<p class="raleigh-passage"><span class="spell-modern">${esc(modernizeProse(p.passage))}</span><span class="spell-original">${esc(p.passage)}</span></p>`).join('')}`).join('\n');
+  return `<section class="card" id="raleigh-account" data-spelling="modern">
+<details class="raleigh-account">
+<summary>Raleigh's account</summary>
+<p class="small muted">Sir Walter Raleigh, <i>The History of the World</i> (1617). His words, in book order. <a href="https://texts.earlyprint.org/works/A10357.xml">EarlyPrint A10357</a></p>
+<div class="raleigh-toolbar"><div role="group" aria-label="Spelling"><button type="button" data-set-spelling="modern" aria-pressed="true">Modern spelling</button><button type="button" data-set-spelling="original" aria-pressed="false">Original spelling</button></div></div>
+${body}
+</details>
+<script>
+document.getElementById('raleigh-account')?.addEventListener('click', (event) => {
+  const button = event.target.closest('[data-set-spelling]');
+  if (!button) return;
+  const root = document.getElementById('raleigh-account');
+  const mode = button.getAttribute('data-set-spelling');
+  if (mode !== 'modern' && mode !== 'original') return;
+  root.dataset.spelling = mode;
+  for (const el of root.querySelectorAll('[data-set-spelling]')) el.setAttribute('aria-pressed', el === button ? 'true' : 'false');
+});
+</script>
+</section>`;
+}
+
 // Events
 for (const e of events) {
   const body = `${crumbs(e)}${articleOpen(e.id)}${recordTop(e.id, `${head(e)}${sortBadge(e)}`)}
 ${e.description ? `<section class="card"><h2>Description</h2><p>${esc(e.description)}</p></section>` : ''}
+${raleighAccount(e.id)}
 ${e.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(e.scripture_refs)}</section>` : ''}
 <section class="card"><h2>Chronologies</h2>${chronTable(e.chronologies, { sortYear: e.sorting_year, basis: e.sorting_basis, caption: `Dates for ${e.title}, CFAH first` })}</section>
 ${flagsSection(e, e.chronologies)}
@@ -1123,7 +1161,7 @@ ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years
   const standbyLine = p.standby && p.sorting_year == null ? `<p class="small muted">Standby placement: <strong>${esc(yearLabel(p.standby.year_bc_ad))}</strong> (${esc(standbyPhrase(p))}). This is not a sort year.</p>` : '';
   const body = `${crumbs(p)}${articleOpen(p.id)}${recordTop(p.id, `${head(p, { hideAlt: true })}${sortBadge(p)}${standbyLine}`)}
 ${nameSection(p)}
-${p.description ? `<section class="card"><h2>Description</h2><p>${esc(p.description)}</p></section>` : ''}${kingCard}
+${p.description ? `<section class="card"><h2>Description</h2><p>${esc(p.description)}</p></section>` : ''}${raleighAccount(p.id)}${kingCard}
 ${p.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(p.scripture_refs)}</section>` : ''}
 ${familySection(p)}
 ${facts}

@@ -1028,6 +1028,60 @@ for (const [path, shot, sel] of [
   await o.ctx.close();
 }
 {
+  async function accountUi(engine, launcher) {
+    const own = launcher === browser ? null : stubIiif(await launcher.launch());
+    const b = own || browser;
+    const pages = [
+      ['/events/creation-week/', 'formall perfection', 'creation-week'],
+      ['/people/moses/', 'Moyses', 'moses'],
+    ];
+    for (const [path, phrase, tag] of pages) {
+      const ctx = await b.newContext({ viewport: { width: 1280, height: 900 }, colorScheme: 'light' });
+      const page = await ctx.newPage();
+      const errors = [];
+      page.on('pageerror', (e) => errors.push(String(e)));
+      const resp = await page.goto(BASE + path, { waitUntil: 'load', timeout: 60000 });
+      const closed = await page.locator('#raleigh-account details').evaluate((d) => !d.open && !d.hasAttribute('open'));
+      const summary = await page.locator('#raleigh-account > summary, #raleigh-account summary').first().innerText();
+      check(`${engine} ${tag}: Raleigh's account is closed`, resp.status() === 200 && closed && summary.trim() === "Raleigh's account" && errors.length === 0, errors.join(' | ') || summary);
+      await page.locator('#raleigh-account summary').click();
+      const spell = await page.evaluate((needle) => {
+        const root = document.getElementById('raleigh-account');
+        const details = root.querySelector('details');
+        const original = root.querySelector('.spell-original');
+        const modern = root.querySelector('.spell-modern');
+        const found = [...root.querySelectorAll('.spell-original')].some((el) => el.textContent.includes(needle));
+        return {
+          open: !!details?.open,
+          found,
+          originalHidden: original ? getComputedStyle(original).display === 'none' : false,
+          modernShown: modern ? getComputedStyle(modern).display !== 'none' : false,
+          pressed: root.querySelector('[data-set-spelling="modern"]')?.getAttribute('aria-pressed'),
+        };
+      }, phrase);
+      check(`${engine} ${tag}: modern spelling shows the account and keeps the original text`, spell.open && spell.found && spell.originalHidden && spell.modernShown && spell.pressed === 'true', JSON.stringify(spell));
+      await page.locator('#raleigh-account [data-set-spelling="original"]').click();
+      const orig = await page.evaluate((needle) => {
+        const root = document.getElementById('raleigh-account');
+        const original = [...root.querySelectorAll('.spell-original')].find((el) => el.textContent.includes(needle));
+        const modern = root.querySelector('.spell-modern');
+        return {
+          originalShown: original ? getComputedStyle(original).display !== 'none' : false,
+          modernHidden: modern ? getComputedStyle(modern).display === 'none' : false,
+          pressed: root.querySelector('[data-set-spelling="original"]')?.getAttribute('aria-pressed'),
+          spelling: root.dataset.spelling,
+          letters: original ? original.textContent.includes(needle) : false,
+        };
+      }, phrase);
+      check(`${engine} ${tag}: original spelling toggle`, orig.originalShown && orig.modernHidden && orig.pressed === 'true' && orig.spelling === 'original' && orig.letters, JSON.stringify(orig));
+      await ctx.close();
+    }
+    if (own) await own.close();
+  }
+  await accountUi('chromium', browser);
+  await accountUi('webkit', webkit);
+}
+{
   const NOTE = "Derived by the portal from Raleigh's Creation in 4032 BC; Raleigh prints only the yeere of the World.";
   const ITALICS = 'Dates in italics are derived.';
   const o = await open('/events/the-flood/');

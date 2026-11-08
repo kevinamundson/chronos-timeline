@@ -275,3 +275,11 @@ export function modernizeCell(raw) {
   modern = named || modernizeTokens(applyPhrases(modern));
   return { original, modern };
 }
+
+// Prose uses the same word lists as the chronological table. It does not add words,
+// and it does not treat a paragraph as a "1. Name, length" cell.
+export function modernizeProse(raw) {
+  const original = tidy(raw);
+  if (!original) return '';
+  return modernizeTokens(applyPhrases(expand(original)));
+}

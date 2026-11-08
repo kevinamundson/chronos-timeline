@@ -94,6 +94,7 @@ Any change to a tier or year must appear in the PR's "Sort-tier changes" section
 - **F. N. Jones:** cite and link only.
 - **James B. Jordan:** his papers may be included in full (`sources/jordan/`, with the owner's stated permission; © Jordan).
 - **Generations, Morecraft, the Roman Roads Herodotus etext, and any other copyrighted book:** never commit the PDF, a scan, OCR or extracted text. Commit only dates as printed, citations, and short notes in our own words. The validator limits Morecraft note length.
+- **Raleigh, *The History of the World* (1617):** the EarlyPrint and EEBO-TCP transcriptions in `sources/raleigh/` are CC0 (public domain). There is no quote-length limit for this text. The short-quote rules in this section apply to copyrighted works only.
 - **Private source folders are never committed.** On the box these are `/workspace/*-src/`; on the Mini, use `private-src/`, which is gitignored. That covers PDFs, OCR, downloads and working text. Before every commit, run `git status` and `git diff --cached --stat` and confirm none are staged.
 - **Never publish Proton Drive share links,** or private Google Drive links, in data, docs, commits or PRs. `access: private-copy` sources may never appear in `free_source_links` (the validator checks this).
 - **New public-domain sources:** confirm PD status for the exact edition. US: published in 1930 or earlier. 1931–1964 depends on renewal, so check it. A modern translation of an ancient text is copyrighted unless shown otherwise. Use only full-view scans, never snippet or limited view.
@@ -130,6 +131,7 @@ data/                    single source of truth (JSON + generated *-extract.md /
   chronologies.json      sorting_rule + every chronology (one primary: cfah)
   sources.json           every source text with verified URLs, access, licence note
   events/ people/ locations/ maps/   one JSON record per file; id = file name (kebab-case)
+  raleigh-accounts.json  1617 passages (Preface, contents, Book I Part I ch. I–VIII) and the records that quote them
   king-lists.json        CFAH/OSF king-list rows (list-only rows have no person record)
   cfah-charts.json       CFAH chart gallery (links only)
 schema/                  JSON Schema 2020-12 for all of the above (common.schema.json = shared defs)
@@ -147,6 +149,8 @@ docs/                    OPEN-QUESTIONS-FOR-KEVIN.md, open-questions.md, cfah-an
 ```
 
 Record conventions are in `README.md` under "Key conventions". Read it before you edit data. In particular, `year_bc_ad` uses negative numbers for BC and has no year 0.
+
+**Raleigh's account** (Kevin, 2026-11-07, ruling C). A person or event page that the covered 1617 text discusses has a closed `<details>` section, summary "Raleigh's account". The words are his, in book order, each passage cited by book, part, chapter, section, and signature. Original spelling is in the page; modern spelling uses `scripts/raleigh/spelling.mjs` and is the default, with the same toggle as the chronological table. Passages are stored once in `data/raleigh-accounts.json`. `accounts` maps a person or event id to passage ids. The file is not a field on the record, so an importer that rewrites a person file cannot drop it. `scripts/validate.mjs` requires each passage to occur in `sources/raleigh/A10357.earlyprint-unadorned.xml` after notes and tags are removed and whitespace is collapsed. `scripts/raleigh/covered.mjs` rebuilds the file from that XML and the current people. Do not attach a passage by paraphrasing it.
 
 ## 9. Commands
 
@@ -183,7 +187,7 @@ Each new source needs four things:
 3. A curated rows file plus an idempotent importer under `scripts/<source>/`.
 4. A generated `data/<source>-dates-extract.md`: edition read, every dated statement with its page and section, the record it maps to, and status (agrees / CONFLICT / internal / framework / n/a).
 
-Schema changes, such as a new field, need Kevin's approval. Propose them in the PR's open questions. The proposed `free_links` source field (T2) and the optional `tradition` field are **on hold**: Kevin will return to them. Do not add either field until he approves.
+Schema changes, such as a new field, need Kevin's approval. Propose them in the PR's open questions. The proposed `free_links` source field (T2) and the optional `tradition` field are **on hold**: Kevin will return to them. Do not add either field until he approves. Kevin approved `schema/raleigh-accounts.schema.json` on 2026-11-07 (ruling C). It is a separate file, not a field on a person or an event.
 
 ## 11. Where things go when unsure
 
