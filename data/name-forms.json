@@ -4526,6 +4526,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        },
+        {
+          "form": "Moyses",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. I, §IV, sig. 45a. The passage prints “Moyses”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. This section gives him no year, age, or reign."
         }
       ]
     },

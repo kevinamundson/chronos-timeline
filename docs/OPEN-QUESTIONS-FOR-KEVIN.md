@@ -1175,3 +1175,49 @@ Where the editions differ, the 2019 value is one sub-row under the Ussher–Jone
 | `paul-released` | 4068 AM, AD 65 | 4068 AM, AD 63 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
 
 - **Recommendation:** keep this. Do not let the 21st edition set a sort.
+
+## N. Raleigh body, pass 1 (2026-11-07)
+
+The Preface (sig. 3b–23a), the contents (sig. 23b–42b), and Book I, Part I, Chapter I (sig. 43b–54a) were read. Four creation-day statements are on `creation-week`. Nothing else was given a year. The quotes and the resume point are in `data/raleigh-body-extract.md` and `docs/raleigh-body-pass-log.md`.
+
+### N1. Preface years, and contents lines, that have no event to receive them
+
+- **Why it matters:** a new event cannot sort on Raleigh. These figures were left in the extract.
+  - Preface, sig. 8b: “the Treaty at Gambray in the yeare, 1559”. No era is named in the sentence.
+  - Preface, sig. 9a: “had the Duke of Parma in the yeare 1588, ioyned the army”. The sentence is contrary to fact.
+  - Contents, sig. 26a: Egypt peopled “within two hundred yeeres after the Creation”.
+  - Contents, sig. 27a: Abraham “borne in the yeere 292. after the Floud, and not in the yeere 352.”
+  - Contents, sig. 27a: Terah might “beget Abraham in his hundred and thirtieth yeere.”
+  - Contents, sig. 27b: “Chams reigne in Aegypt began in the yeere after the Floud 191.”
+  - Contents, sig. 30b: Jephthah’s “three hundred yeeres”, with one illegible word.
+  - Contents, sig. 33b: the Scythians “ruled in Asia eight and twentie yeeres.”
+  - Contents, sig. 33b: “the 70. yeeres” of the captivity, with two illegible words, and “during the 70. yeeres” in Babylon.
+- **Options:**
+  1. Leave them until the chapter that states them is read, and do not make an event that only Raleigh dates.
+  2. Make the event anyway, with `sorting_year` taken from an existing record (`derived`). That would put a new event on the timeline.
+  3. Store the words on the person already in the portal (Abraham, Terah, Ham of Egypt, Jephthah) even when the line is only a contents summary.
+- **Recommendation:** option 1. The contents line is a summary of a later chapter. The Preface years do not name an era, and one of them is contrary to fact.
+
+### N2. Darius who begged water
+
+- **Why it matters:** Preface, sig. 16a–16b, says God “gaue vnto Darius the part of the greatest Emperour, and the part of the most miserable begger, a begger begging water of an Enemie”. No year and no length. `darius-d31` is the Cory thirty-first-dynasty king, and the note there already says he is not Darius son of Hystaspes. The sentence was not attached.
+- **Options:**
+  1. Leave it unattached, as now.
+  2. Attach the sentence to `darius-d31` as a Raleigh note with no year.
+- **Recommendation:** option 1, until you say that this Darius is that king.
+
+### N3. Names with no year
+
+- **Why it matters:** Chapter I names many fathers and philosophers, and the Preface names many princes, without a year, an age, or a reign. They were not made into people. Moyses was added only as a spelling on the existing `moses`.
+- **Options:**
+  1. Keep making a person only when he gives a year, a length, or a reign, as in this pass.
+  2. Make a person for every name, with a null CFAH date and no sort year.
+- **Recommendation:** option 1. A person with no figure from him is a name list, not a chronology.
+
+### N4. The illegible word in Chapter I, §. IX
+
+- **Why it matters:** after “a power” the next word is illegible in both XML copies (unadorned 〈◊ 〉; TCP P5, gap of one word). The clear clause before it is on `creation-week`. The word was not guessed.
+- **Options:**
+  1. Leave the gap, as now.
+  2. If a page image is read later and the word is clear, add it.
+- **Recommendation:** option 1. No page image is in this repository.

@@ -465,6 +465,9 @@ for (const r of Object.values(recs)) {
     if (!Array.isArray(list)) continue;
     for (let i = list.length - 1; i >= 0; i--) {
       if (list[i].source !== SRC) continue;
+      // Body statements (Book, Part, Preface) are not rewritten from the table.
+      // A later --write must leave them in place.
+      if (!/Chronological Table/.test(list[i].citation || '')) continue;
       const y = list[i].year_am;
       if (y == null || y <= UNTIL) list.splice(i, 1);
     }

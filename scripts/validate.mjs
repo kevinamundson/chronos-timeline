@@ -346,7 +346,7 @@ let raleighDerivedSummary = '';
       if (e.source !== RALEIGH_SOURCE) continue;
       if (e.year_bc_ad != null || e.year_bc_ad_end != null) err(rel, 'raleigh entries keep year_bc_ad null; the derived year is display text only');
       if (e.source_text_id !== 'raleigh-history-of-the-world-1617') err(rel, `raleigh entry needs source_text_id raleigh-history-of-the-world-1617, got "${e.source_text_id}"`);
-      if (!/1617/.test(e.citation || '') || !(/Chronological Table/.test(e.citation || '') || /Book /.test(e.citation || ''))) err(rel, 'raleigh citation must name the 1617 text and a Book or the Chronological Table');
+      if (!/1617/.test(e.citation || '') || !(/Chronological Table/.test(e.citation || '') || /Book /.test(e.citation || '') || /Preface/.test(e.citation || ''))) err(rel, 'raleigh citation must name the 1617 text and a Book, the Preface, or the Chronological Table');
       if (!e.date) err(rel, 'raleigh entry needs the words as printed');
       const shown = raleighAmDisplay(e.year_am, e.year_am_end);
       if (shown.text) raleighShown += 1;

@@ -3,6 +3,9 @@
   "id": "moses",
   "type": "person",
   "title": "Moses",
+  "alt_names": [
+    "Moyses"
+  ],
   "summary": "Levite, son of Amram and Jochebed; led Israel out of Egypt at 80 (Exod 7:7); died at 120 (Deut 34:7).",
   "description": "Father: Amram.",
   "sorting_year": -1571,
