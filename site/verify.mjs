@@ -1891,6 +1891,51 @@ for (const [path, shot, sel] of [
       check(`${engine} naamah: calculated death 1994 BC`, deathOk, o.errors.join(' | ') || `${sort.replace(/\s+/g, ' ').slice(0, 180)} || ${death.replace(/\s+/g, ' ').slice(0, 180)}`);
       check(`${engine} naamah: mother Zillah and spouse Ham?`, /Zillah/.test(family) && /Ham\s*\?/.test(family), family.replace(/\s+/g, ' ').slice(0, 280));
       check(`${engine} naamah: a short Names list has no See more`, nameRows > 0 && nameRows <= 5 && nameMore === 0, `${nameRows} rows, ${nameMore} controls`);
+      const badge = await o.page.locator('.sortbox .tier').evaluate((el) => {
+        const cs = getComputedStyle(el);
+        const sw = el.parentElement?.querySelector('.swatch');
+        return { radius: parseFloat(cs.borderTopLeftRadius) || 0, border: cs.borderTopStyle, text: el.textContent, swatch: sw ? sw.getBoundingClientRect().width : 0 };
+      });
+      check(`${engine} naamah: sort tier is secondary text with a swatch`, badge.radius === 0 && badge.border === 'none' && /Calculated/.test(badge.text) && badge.swatch > 0, JSON.stringify(badge));
+      await o.page.locator('#raleigh-account details.raleigh-account > summary').click();
+      const spell = await o.page.locator('#raleigh-account .segmented').evaluate((el) => {
+        const buttons = [...el.querySelectorAll('button')];
+        const b = buttons[0];
+        const cs = b ? getComputedStyle(b) : null;
+        return { n: buttons.length, radius: cs ? parseFloat(cs.borderTopLeftRadius) : null, h: b ? b.getBoundingClientRect().height : 0, pressed: buttons.map((x) => x.getAttribute('aria-pressed')) };
+      });
+      check(`${engine} naamah: spelling is a segmented control`, spell.n === 2 && spell.radius < 16 && spell.h >= 44 && spell.pressed[0] === 'true' && spell.pressed[1] === 'false', JSON.stringify(spell));
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/');
+      await o.page.waitForFunction(() => document.getElementById('timeline')?.hasAttribute('data-ready'), null, { timeout: 20000 }).catch(() => {});
+      const hig = await o.page.evaluate(() => {
+        const rows = [...document.querySelectorAll('[data-tier-toggle]')];
+        const row = rows[0];
+        const cs = row ? getComputedStyle(row) : null;
+        const sw = row?.querySelector('.switch');
+        const rect = row?.getBoundingClientRect();
+        return {
+          n: rows.length,
+          radius: cs ? parseFloat(cs.borderTopLeftRadius) : null,
+          border: cs ? cs.borderTopStyle : '',
+          h: rect ? rect.height : 0,
+          w: rect ? rect.width : 0,
+          switchW: sw ? sw.getBoundingClientRect().width : 0,
+          pressed: rows.map((r) => r.getAttribute('aria-pressed')),
+          note: document.getElementById('tier-note')?.textContent || '',
+        };
+      });
+      const tiersOk = hig.n >= 8 && hig.radius < 16 && hig.border === 'none' && hig.h >= 44 && hig.w > 240 && hig.switchW >= 48 && hig.pressed[0] === 'true' && hig.pressed.slice(1).every((p) => p === 'false') && /dashed and grey/.test(hig.note);
+      check(`${engine} home: tier filter is a grouped list of switches`, tiersOk, JSON.stringify(hig));
+      await o.page.locator('[data-tier-toggle="standby"]').click();
+      const moved = await o.page.locator('[data-tier-toggle="standby"]').evaluate((el) => {
+        const after = getComputedStyle(el.querySelector('.switch'), '::after');
+        return { pressed: el.getAttribute('aria-pressed'), transform: after.transform };
+      });
+      const shifted = moved.pressed === 'true' && moved.transform && moved.transform !== 'none' && !/matrix\(1,\s*0,\s*0,\s*1,\s*0,\s*0\)/.test(moved.transform);
+      check(`${engine} home: standby switch moves when pressed`, shifted, JSON.stringify(moved));
       await o.ctx.close();
     }
     {

@@ -259,6 +259,9 @@ const TIERS = {
   calculated: { cls: 'tc', label: 'Calculated · arithmetic from printed figures (fills a gap only)' },
   none: { cls: 'tn', label: 'Undated · no tier gives a year' },
 };
+// Dating tiers are an inset grouped list. Each row is a switch. The label is not a capsule.
+const tierToggle = (tier, label, pressed, swatch) => `<button type="button" class="inset-row tier-toggle" data-tier-toggle="${tier}" aria-pressed="${pressed ? 'true' : 'false'}"><span class="swatch ${swatch}" aria-hidden="true"></span><span class="inset-row-label">${esc(label)}</span><span class="switch" aria-hidden="true"></span></button>`;
+const tierFilter = (buttons, noteId, note) => `<div class="inset-group"><div class="inset-list" role="group" aria-label="Dating tiers" aria-describedby="${noteId}">${buttons}</div><p class="inset-footer" id="${noteId}">${esc(note)}</p></div>`;
 // Which entry set the sort (mirrors scripts/sort-rule.mjs).
 // A reign-start ussher-jones year prefers the 23rd edition, then the stored year.
 const sortingEntry = (entries, basis, sortYear) => {
@@ -519,8 +522,9 @@ function sortBadge(rec) {
     ? `<p class="sort-slot">${esc(calcSlot)}.</p>`
     : (b.slot === 'reign_start' ? `<p class="sort-slot">${esc(reignStartPhrase(b.tier))}.</p>` : '');
   return `<div class="sortbox">
-<div class="sortyear"><span class="small muted">Sort year</span><strong>${esc(shownYear)}</strong></div>
-<div><span class="tier tier-${t.cls}">${esc(t.label)}</span>${extra}${slotLine}${b.note ? `<p class="small muted">${shown(b.note)}</p>` : ''}</div></div>`;
+<div class="sortyear"><span class="small muted">Sort year</span><strong>${esc(shownYear)}</strong>
+<p class="tier-line"><span class="swatch tier-${t.cls}" aria-hidden="true"></span><span class="tier tier-${t.cls}">${esc(t.label)}</span>${extra}</p>
+${slotLine}${b.note ? `<p class="small muted">${shown(b.note)}</p>` : ''}</div></div>`;
 }
 
 const linkList = (ids, title) => !ids?.length ? '' : `<section class="card"><h2>${esc(title)}</h2><ul class="links">${ids.map((id) => `<li>${link(id)}</li>`).join('')}</ul></section>`;
@@ -754,7 +758,7 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
     const y = placeYear(r);
     const mark = standby
       ? '<span class="tag tag-standby">standby</span>'
-      : `<span class="tier tier-${tierCls(r)} small">${esc((TIERS[r.sorting_basis?.tier] || TIERS.none).label.split(' · ')[0])}</span>`;
+      : `<span class="tier-line"><span class="swatch tier-${tierCls(r)}" aria-hidden="true"></span><span class="tier tier-${tierCls(r)}">${esc((TIERS[r.sorting_basis?.tier] || TIERS.none).label.split(' · ')[0])}</span></span>`;
     const rawYear = yearLabel(y) || 'Undated';
     const yr = r.sorting_basis?.tier === 'calculated' ? `calc. ${rawYear}` : rawYear;
     return `<li data-placement="${standby ? 'standby' : 'tier'}" data-year="${y ?? ''}"><span class="yr">${esc(yr)}</span><a href="${urlOf(r)}">${shown(r.title)}</a> ${mark}${raleighAside(r)}</li>`;
@@ -780,8 +784,7 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
       <div id="timeline-people" class="timeline home-timeline" aria-label="People"></div>
     </div>
   </div>
-  <div class="tier-toggles" role="group" aria-label="Dating tiers">${Object.entries(TIERS).filter(([k]) => k !== 'none').map(([k, t]) => `<button type="button" class="tier-toggle" data-tier-toggle="${t.cls}" aria-pressed="${k === 'cfah-anchor' ? 'true' : 'false'}"><span class="swatch tier-${t.cls}" aria-hidden="true"></span>${esc(t.label)}</button>`).join('')}<button type="button" class="tier-toggle" data-tier-toggle="standby" aria-pressed="false"><span class="swatch standby" aria-hidden="true"></span>Standby (no tier date)</button></div>
-  <ul class="legend small" aria-label="Timeline legend"><li><span class="lg-standby" aria-hidden="true"></span>Standby (no tier date): dashed and grey, off until that control is on. Not a sort year.</li></ul>
+  ${tierFilter(Object.entries(TIERS).filter(([k]) => k !== 'none').map(([k, t]) => tierToggle(t.cls, t.label, k === 'cfah-anchor', `tier-${t.cls}`)).join('') + tierToggle('standby', 'Standby (no tier date)', false, 'standby'), 'tier-note', 'Standby (no tier date): dashed and grey, off until that control is on. Not a sort year.')}
   <noscript><p>The interactive timeline needs JavaScript. The chronological list below has the same records.</p></noscript>
 </section>
 <section class="card" aria-labelledby="map-h">
@@ -821,7 +824,7 @@ function raleighPassages(recordId) {
 }
 
 function spellingToolbar() {
-  return `<div class="raleigh-toolbar"><div role="group" aria-label="Spelling"><button type="button" data-set-spelling="modern" aria-pressed="true">Modern spelling</button><button type="button" data-set-spelling="original" aria-pressed="false">Original spelling</button></div></div>`;
+  return `<div class="raleigh-toolbar"><div class="segmented" role="group" aria-label="Spelling"><button type="button" data-set-spelling="modern" aria-pressed="true">Modern spelling</button><button type="button" data-set-spelling="original" aria-pressed="false">Original spelling</button></div></div>`;
 }
 
 function spellingScript(rootId) {
@@ -1092,8 +1095,8 @@ function personTimelineSection(p) {
   ${notes}
   ${t.standbyNote ? `<p class="small muted" id="standby">${esc(t.standbyNote)}</p>` : ''}
   <div id="timeline" class="timeline person-timeline" aria-describedby="ptl-list-h"></div>
-  ${t.standbyCount ? `<div class="tier-toggles" role="group" aria-label="Dating tiers"><button type="button" class="tier-toggle" data-tier-toggle="standby" aria-pressed="false"><span class="swatch standby" aria-hidden="true"></span>Standby (no tier date)</button></div>` : ''}
-  <ul class="legend small" aria-label="Timeline legend"><li><span class="lg-own" aria-hidden="true"></span>${shown(p.title)}’s life (${t.ownCount}): solid</li><li><span class="lg-ctx" aria-hidden="true"></span>Other events in their lifetime (${t.ctxCount}): faded, dashed, marked “context”</li>${t.standbyCount ? `<li><span class="lg-standby" aria-hidden="true"></span>Standby placement (${t.standbyCount}): dashed and grey, off until Standby (no tier date) is on</li>` : ''}</ul>
+  ${t.standbyCount ? tierFilter(tierToggle('standby', 'Standby (no tier date)', false, 'standby'), 'tier-note', `Standby placement (${t.standbyCount}): dashed and grey, off until Standby (no tier date) is on. Not a sort year.`) : ''}
+  <ul class="legend small" aria-label="Timeline legend"><li><span class="lg-own" aria-hidden="true"></span>${shown(p.title)}’s life (${t.ownCount}): solid</li><li><span class="lg-ctx" aria-hidden="true"></span>Other events in their lifetime (${t.ctxCount}): faded, dashed, marked “context”</li></ul>
   <h3 id="ptl-list-h">Records in order</h3>
   <ol class="chrono-list person-list">${t.items.map(li).join('')}</ol>
   ${undated}
@@ -1484,7 +1487,7 @@ ${sourcesSection(m)}</article>`;
   }).join('');
   const body = `<h1>Chronologies &amp; sorting</h1>
 <section class="card"><h2>How the timeline is sorted</h2><p>${esc(rule.description)}</p>
-<ol class="tiers">${rule.tiers.map((t) => `<li><span class="tier tier-${['t1', 't2', 't3', 't4'][t.rank - 1]}">${esc(TIERS[t.tier]?.label || t.tier)}</span> <span class="muted small">${esc(t.select)}</span></li>`).join('')}</ol>
+<ol class="tiers inset-list">${rule.tiers.map((t) => { const cls = ['t1', 't2', 't3', 't4'][t.rank - 1]; return `<li><span class="swatch tier-${cls}" aria-hidden="true"></span><span class="inset-copy"><span class="tier tier-${cls}">${esc(TIERS[t.tier]?.label || t.tier)}</span><span class="muted small">${esc(t.select)}</span></span></li>`; }).join('')}</ol>
 <p class="small muted">${esc(rule.fallbacks)}</p>${kingDoc.lists.length ? `<p><a href="/king-lists/">CFAH king lists and dynasty tables</a></p>` : ''}</section>
 ${[...chronologies].sort((a, b) => a.sort_priority - b.sort_priority).map((c) => `<section class="card" id="${esc(c.id)}"><h2>${esc(c.name)}${c.primary ? ' <span class="tag tag-t1">primary</span>' : ''}</h2>
 ${c.id === 'raleigh-history-of-the-world' ? '<p><a href="/chronologies/raleigh-chronological-table/">A Chronological Table</a></p>' : ''}
@@ -1578,7 +1581,7 @@ ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) =
 <p>The years are the Julian Period and the yeere of the World, as printed. Beside each confirmed yeere of the World this page adds the year of the World and an italic year, for example AM 1656 (<em>2377 BC</em>). ${esc(RALEIGH_DERIVED_NOTE)} His first yeere of the World is taken as 4032 BC: a year before Christ is 4033 minus that yeere, and a year of our Lord, once the count passes 4032, is the yeere of the World minus 4032. There is no year 0. Each end of a printed range is converted on its own. A figure that is illegible, a pair of numbers that do not differ by 682, or a yeere that is not one legible figure, stays as printed and is marked not derived. Two legible figures joined by “or” are each derived and marked. Modern spelling is the same word-by-word modernization used in Raleigh's account. The figures stay as printed, including illegible marks.</p>
 <p>The Sig. column is the 1617 sheet. It is not a column of his table. <a href="/chronologies/#raleigh-history-of-the-world">Raleigh, The History of the World (1614/1617)</a></p>
 <div class="raleigh-toolbar">
-<div role="group" aria-label="Spelling">
+<div class="segmented" role="group" aria-label="Spelling">
 <button type="button" data-set-spelling="modern" aria-pressed="true">Modern spelling</button>
 <button type="button" data-set-spelling="original" aria-pressed="false">Original spelling</button>
 </div>
