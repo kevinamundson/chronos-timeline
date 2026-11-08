@@ -1284,3 +1284,45 @@ Pass 3 also read Book I, Part I, Chapter VIII, and stopped at the end of that ch
   1. Leave the son of Aram on `meshech`, as now.
   2. Make a separate person for Mesech the son of Aram, and move the sentences that say so.
 - **Recommendation:** option 1, until you want the son of Aram kept apart. Raleigh himself says the names are close, and the passage does not give him a yeere of the World.
+
+Pass 4 read Book I, Part I, Chapter IX through Chapter XII, and stopped at “Finis Libri primi.” The quotes are in `data/raleigh-body-extract.md`. N1, N2, N4, and N7 to N11 stay open.
+
+### N12. Africanus, and the bare Alexander beside Polyhistor
+
+- **Why it matters:** Book I, Part I, Chapter X, §. IV, sig. 145a, names “Iulius Africanus surnamed Saturne”. Chapter X, §. III, sig. 143a–144b, says Nimrod “tooke vpon him that name of Assur … as Scipio did of Africanus”. Both sit on `julius-africanus`, because the bare spelling Africanus is sent there. Chapter XI, §. II, sig. 150a, says “ALEXANDER( saith he, meaning ALEXANDER POLYHISTOR)”. The phrase is on `alexander-polyhistor`. The bare ALEXANDER is on `alexander-the-great`, which is the rule already in N9.
+- **Options:**
+  1. Leave both attachments, as now.
+  2. Make a separate person for Scipio’s agnomen Africanus, and move that one sentence.
+- **Recommendation:** option 1, until you name the split. The words are on the page of the record that holds them.
+
+### N13. Cyril’s Arbelus
+
+- **Why it matters:** Chapter X, §. VI, sig. 145b: “Cyrillus against Iulian cals the Father of Ninus Arbelus”. Chapter X, §. VII, sig. 146a–146b, is the sepulchre of Belus, and Cyril “writes of him( calling him ARBELVS.)” Both sentences are on `belus`. No second person was made.
+- **Options:**
+  1. Leave Arbelus on `belus`, as now.
+  2. Make a separate person for the father of Ninus whom Cyril calls Arbelus, and move the sentences you mark.
+- **Recommendation:** option 1. In the sepulchre paragraph he applies Cyril’s name to Belus.
+
+### N14. The four Zoroasters, and Hostanes beside Hostianes
+
+- **Why it matters:** Chapter XI, §. I, sig. 149a, distinguishes four men and then a fifth whom Suidas remembers. All of those passages stay on the one `zoroaster`. “betweene whom and Cyrus there past threescore and eighteene yeeres” was not stored, because it is a gap between the fourth man and Cyrus, not a yeere of the World for the one record. Chapter XI, §. II, sig. 149b, “SOSTHENES( for so M. Foelix calleth him, not HOSTANES)”, is `hostanes`. “the Nephew of Hostianes” in §. I is `hostianes`. They were not merged.
+- **Options:**
+  1. Leave one `zoroaster`, leave the 98 years unentered, and keep Hostanes and Hostianes apart, as now.
+  2. Split the Zoroasters you name, and say whether the 98 years belongs on one of them.
+- **Recommendation:** option 1. He argues about which Zoroaster is which, and the page shows every passage.
+
+### N15. Names that were not made into people
+
+- **Why it matters:** “His Maiestie”, in the Preface and again where the Daemonologie is cited, was not made a person and was not attached to `james` or `james-v`. “thou shalt call mee ISHI” (Chapter X, §. VI, sig. 145b–146a) is the Lord speaking, and it was not made a person. See N7. Chapter X, §. VII, sig. 146b, “bidding battaile to Caucasus of the Stocke of Iapheth”, names a man. The other ten hits of that word in the covered text are the mountains. No person was made, so the mountain passages would not be swallowed.
+- **Options:**
+  1. Leave His Maiestie, ISHI, and the man Caucasus unmade, as now.
+  2. Name the record that should receive His Maiestie, and make a person only for the man in the battle sentence.
+- **Recommendation:** option 1, until you want the man kept apart from the mountains.
+
+### N16. Buildings and a length that have no event
+
+- **Why it matters:** Chapter XII, §. V, sig. 157a, describes “the Temple of Bel” and “the Pyramides by Memphis”. Neither was attached to `great-pyramid-of-giza`, and no new event was made. Chapter X, §. VII, sig. 147a: “The Romanes … refusing to set them in their Temples for 170. yeeres”. That is a length. No event was made. Chapter XII, §. I, sig. 155b, “Ninus finished Niniue”, is not a second event. The passages in which he says Nimrod built or began Nineveh are on the existing `nimrod-builds-nineveh`. Its `sorting_year` was not changed.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them.
+- **Recommendation:** option 1. A new event cannot take a sort year from Raleigh.

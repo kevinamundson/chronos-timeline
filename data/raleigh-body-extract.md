@@ -2,7 +2,7 @@
 
 Edition read: London, printed by William Stansby for Walter Burre, 1617. EEBO-TCP A10357. Working text: EarlyPrint unadorned XML (`sources/raleigh/A10357.earlyprint-unadorned.xml`). Doubtful readings were checked in `sources/raleigh/A10357.tcp-p5.xml`. Display only. `year_bc_ad` stays null. He gives no yeere of the World in the range of this pass, so these statements also have `year_am` null. The italic year is not computed when `year_am` is null.
 
-Range covered in pass 1: the Preface (sig. 3b–23a), the contents of the five books (sig. 23b–42b), and Book I, Part I, Chapter I, sections I–XV (sig. 43b–54a). Pass 2 and pass 3 are the sections below. The next pass starts at Book I, Part I, Chapter IX, §. I, sig. 136a.
+Range covered in pass 1: the Preface (sig. 3b–23a), the contents of the five books (sig. 23b–42b), and Book I, Part I, Chapter I, sections I–XV (sig. 43b–54a). Passes 2, 3, and 4 are the sections below. The next pass starts at Book II, the first part, Chapter I, §. I, sig. 157b.
 
 Statements written: 4, all on `creation-week`. People created: 0. Places created: 0. Events created: 0. Records updated: `creation-week` (four statements), `moses` (alternate name Moyses). Figures skipped: 15, quoted below.
 
@@ -220,3 +220,50 @@ One record was kept where splitting the name would invent a distinction: `john` 
 The two Infants of Arragon were not made into two people. “many” kings of Arcadia were not made into people. Chapter VIII, §. XV, subsection III, sig. 133b, says Ninus “crucified Pharnus the King thereof, with his Wife and seuen Children”. Pharnus is a person. The wife and the seven children are not named, so they were not made into people. Ham and Cham were not merged: a sentence that also names Noah’s sons is on `ham`; `cham` received no passage from this range. A bare Darius, Philip, Xerxes, Sheba, Havilah, Demetrius, Nilus, or Abimelech was not attached by the bare name.
 
 The Duke of Parma, Ferdinand, and Isabel are people. The treaty at Cambrai in 1559, the contrary-to-fact year 1588, and the Moors’ eight hundred years in Granada were not made into events or reigns. N1 stays open. No new event was created.
+
+# Pass 4
+
+Book I, Part I, Chapter IX, §. I, sig. 136a, through Chapter XII, §. V, sig. 157a. The opening heading is “CHAP. IX. Of the beginning and establishing of Gouernement.” Book I ends on sig. 157a with “Finis Libri primi.” Book II opens on sig. 157b and was not entered.
+
+Statements written: 2. People created: 73 (16 first named in the Preface, the contents, or Chapters I–VII; 3 first named in Chapter VIII; 54 first named in Chapters IX–XII). Places created: 0. Events created: 0. `ninus` and `rabanus` each gained one statement. No other existing person or event file was edited. Name forms added: 47 (30 on the new people, 17 on people who already had records). No existing form was rewritten. Accounts: 1,546 passages, on 467 people and 6 events. The new event account is the existing `nimrod-builds-nineveh`. The first 1,389 passages are the pass 3 text, unchanged. `year_bc_ad` is null on both new statements. `sorting_year` was not changed.
+
+## Statements written
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book I, Part I, Chapter XII, §. II, sig. 156a | he left the World in the yeere thereof 2019. | ninus, `dates.death` (`year_am` 2019) |
+| Book I, Part I, Chapter X, §. III, sig. 143a–144b | who was Arch-Bishop of Mentz in the yeere of Christ 854. | rabanus, `dates.birth` (`year_am` null; not a birth year) |
+
+The same sentence as the death says “after he had reigned 52. yeeres.” That length is already the table row on `ninus` (sig. 782b, `year_am` 1967, length 52) and was not entered again. Semiramis’s table reign already begins at the yeere of the World 2019. The 854 is a yeere of Christ. It is not a yeere of the World, and `year_bc_ad` stays null.
+
+## Figures that were not entered
+
+Chapter IX gives no yeere of the World.
+
+- Chapter X, §. IV, sig. 145a: “after he had reigned 114. yeeres”. Nimrod’s table length. Not entered again.
+- Chapter X, §. V, sig. 145b: “raigned 65. yeeres, according to the common account.” Belus’s table length. Chapter X, §. II, sig. 142a–142b, quotes Augustine, “65. annos” and “sixtie fiue yeeres”. The same figure. Not entered again.
+- Chapter XII, §. II, sig. 156a: “she could haue held the Empire from him 42. yeeres after by any such subtiltie: ( for so long shee reigned”. Semiramis’s table length. Not entered again.
+- Chapter XI, §. I, sig. 149a: “betweene whom and Cyrus there past threescore and eighteene yeeres.” A gap between the fourth Zoroaster and Cyrus. Not stored on the one `zoroaster`. See N14.
+- Chapter X, §. II, sig. 142a–142b: “it was about 200. yeeres after the floud( as they account) that Belus reigned: but such agreement of times proues it not”. Pererius’s account, which he rejects. Not a yeere of the World.
+- Chapter X, §. VII, sig. 147a: “The Romanes for a while resisted the erection of these Idols and Images, refusing to set them in their Temples for 170. yeeres”. A length. No event. See N16.
+- Chapter XII, §. I, sig. 155b: “it had in compasse 440. stadia, or furlongs; the walls whereof were an hundred foot vpright”. The size of Nineveh. Not a year, and not a new event.
+- Chapter X, §. VIII, sig. 148a–148b: Ninus “entred Bactria with 1700000. Foot, and 200000. Horse, and 10000. sixe hundred Chariots”, “encountred by Zoroaster with 400000.” Counts of soldiers.
+- Chapter XII, §. IV, sig. 156b: an army “of foure millions & vpwards”, “Foot-men three millions; of Horse-men one million”, and “there suruiued but only twentie persons”. Counts, not years.
+- Chapter XII, §. IV, sig. 156b: Xerxes “transported into Greece an Armie of 1700000. and gathered together( therein to passe the Hellespont) three thousand Gallies”. Counts.
+- Chapter XII, §. V, sig. 157a: “one hundred thousand talents of frankincense euery yeere( saith Herodotus.)” Herodotus’s figure.
+- Chapter XII, §. V, sig. 157a: Alexander “enioyed but a few yeeres after Babylon taken”. Not a numbered length.
+- Chapter XII, §. V, sig. 157a: “the Temple of Bel” and “the Pyramides by Memphis”. No matching event. They were not attached to `great-pyramid-of-giza`. See N16.
+
+## Names
+
+A named individual received a person when no record already held that name. Ordinary title case was still not treated as a name unless the spelling had been checked in this range and added to the spelling map. A group was not split.
+
+`thomas` and `aquinas` go to the existing `thomas-aquinas`. That file was not rewritten, and its `sorting_year` 1225 was not touched. Arabia Foelix and Foelix Iulia are places. The one person is `foelix`, from “M. Foelix”. `dion` is the name in “Diodorus Siculus, Dion, Halycarnassaeus”. `dion-neapolites` is “Dion Neapolites”. `halycarnassaeus` is the third name in that list. `guilandinus-melchior` is “Guilandinus Melchior”. `melchior` is the magus in “MELCHIOR magorum oracula”. They were not merged.
+
+`ezre` is “Patris EZRE” in that oracle title. It is not the biblical Ezra. `sabatius` is on `tanais`, because he says “which Sabatius I take to bee the same, which Iustine cals Tanais”. `thuras` is on `arius`, because “Arius also, whom Suidas cals Thuras”, and `arius` is the Assyrian table king. `zameis` is on `ninias` (“Ninias or Zameis”). `vexoris` was not merged into `sesostris`. Chapter X, §. V, sig. 145b: he would conjecture that Mizraim had been Justin’s Vexoris, “were it not that I vehemently suspect some errour”, and he says Reineccius accounts that Vexoris “all one with the great Sesostris”. The two records stay apart. `campsor` is a former name of Nineveh (“had the name of Campsor”), not a person.
+
+`baalim` is one cult name, as `jupiter` is. The title-case names in the same sentence, Baal, Belphegor, Beelphagor, Belsebub, and Beelsephon, were not made into further people. “many Nimrods” stays on `nimrod`. SARVG, the uv spelling in the Latin Assur sentence, is on `serug`. `cardan` is titled Cardans because the page prints the possessive. `parisiensis` is one record. The initial before it was not expanded. `gregorie` is still not `gregory-nazianzen`.
+
+These were not made into people. “His Maiestie” was not attached to `james` or `james-v`. ISHI, in “thou shalt call mee ISHI”, is the Lord speaking. See N7 and N15. The man in “battaile to Caucasus of the Stocke of Iapheth” was not split out of the mountain name. See N15. The Latin word origine was not made a second Origen. Chapter X, §. VII, sig. 147a–147b, “de origine imaginum”, is the origin of images. Chapter XI, §. II, sig. 150b–151a, prints “ab ORIGINE” in the Latin quotation, and the English in the same passage, “condemned by ORIGEN”, is already on `origen`. Chapter X, §. III, sig. 143a–144b, “PLINIE, Locus vbi Euphratis ostium fuit”, is the place, not a person. SATVRNES and IVNOES are plural class names, not `saturn` and `juno`.
+
+Cyril’s Arbelus is on `belus`. See N13. The four Zoroasters stay on `zoroaster`, and Hostanes is not Hostianes. See N14. Africanus the agnomen shares `julius-africanus` with Iulius Africanus. See N12. No new event was created.

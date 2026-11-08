@@ -107,6 +107,31 @@ The statements and the Chapter VIII years that were not entered are quoted in `d
 - Name forms added: 236 (5 through pass 2, 231 in pass 3)
 - Accounts: 1389 passages on 394 records
 
+## Pass 4
+
+Book I, Part I, Chapter IX, §. I, sig. 136a, through Chapter XII, §. V, sig. 157a. The opening heading is “CHAP. IX. Of the beginning and establishing of Gouernement.” Book I ends on sig. 157a with “Finis Libri primi.” The same rules as pass 3. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. Chapter IX printed none. Two statements were added. Lengths already on the chronological table were not entered again.
+
+### Counts
+
+- Dated statements written: 2 (`ninus` death at the yeere of the World 2019; `rabanus`, archbishop of Mentz in the yeere of Christ 854, with `year_am` null)
+- People created: 73 (16 first named in the Preface, the contents, or Chapters I–VII; 3 first named in Chapter VIII; 54 first named in Chapters IX–XII)
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. `ninus` and `rabanus` each gained one statement. No other person or event file was edited.
+- Name forms added: 47 (30 on the new people, 17 on people who already had records). No existing form was rewritten.
+- Accounts: 1,546 passages, on 467 people and 6 events. The sixth event is the existing `nimrod-builds-nineveh`. The first 1,389 passages are unchanged.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. No importer was re-run. The new people are display-only, and none of them has a standby placement. `sorting_year`, `sorting_basis`, and `standby` are unchanged on the 2,028 people and events that already exist on `origin/main`.
+
+### Cumulative
+
+- Dated statements written: 37 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4)
+- People created: 344
+- Places created: 0
+- Events created: 0
+- Name forms added: 283 (5 through pass 2, 231 in pass 3, 47 in pass 4)
+- Accounts: 1,546 passages on 473 records
+
 ## RESUME POINT
 
-Book I, Part I, Chapter IX, §. I, sig. 136a. The heading is “CHAP. IX. Of the beginning and establishing of Gouernement.” Chapter VIII ends as this chapter opens. Do not start again inside Chapter VIII.
+Book II, the first part, Chapter I, §. I, sig. 157b. The book heading is “THE SECOND BOOKE.” The chapter heading is “CHAP. I. Of the time of the birth of ABRAHAM: and of the vse of this question, for the ordering of the Storie of the Assyrian Empire.” Book I ends as this book opens. Do not start again inside Book I. The birth-year argument in that next section was not entered.
