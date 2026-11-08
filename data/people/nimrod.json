@@ -15,6 +15,22 @@
     "chronology": "generations",
     "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 143): around 2270 BC. Pending owner decision (open question A8)."
   },
+  "calculated": [
+    {
+      "slot": "reign_start",
+      "year_bc_ad": -2245,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 1788. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 1788 = 2245 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "nimrod",
+      "anchor_slot": "reign_start",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 1788
+    }
+  ],
   "father": "cush",
   "children": [],
   "dates": {
@@ -194,6 +210,28 @@
         "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": null
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Now at Babel it was that Nimrod began his Kingdome, the first knowne Citie of the world founded after the floud, about 131. yeares, or( as others suppose) ten yeeres later",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "approximate",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. VII, §X, sig. 102b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. Years after the Flood, when he says Nimrod began his kingdom at Babel. The ten yeeres later is what others suppose. Not a yeere of the World. year_am stays null. This does not change the sort. The table reign row at World 1788, length 114, is not changed."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "it is farre more probable, that Nimrod vsurped Regall authoritie in the 131. yeere after the Floud, ( according to Berosus)",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. VII, §X, sig. 103b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The year after the Flood he calls more probable for Nimrod's usurping regal authority, and he names Berosus. Not a yeere of the World. year_am stays null. This does not change the sort. The same page's supposition of 65, 30, and 30 yeeres, and the arrival others put in the yeere 101, are not entered. He says those men do all by miracle."
       }
     ]
   },
@@ -240,6 +278,16 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. VII, §X, sig. 102b"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. VII, §X, sig. 103b"
     }
   ],
   "related": [

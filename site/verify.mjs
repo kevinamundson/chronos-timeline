@@ -11,6 +11,7 @@ import { loadStandbyCounts, standbySummaryLine } from '../scripts/standby/comput
 import { SENNACHERIB_REDIRECT, redirectsFileHasSennacherib } from '../scripts/redirects.mjs';
 import { checkRowMerge } from './row-merge-check.mjs';
 import { checkFootnotes } from './footnote-check.mjs';
+import { spellingSelfCheck } from '../scripts/raleigh/spelling-check.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const SHOTS = join(here, 'screenshots');
@@ -22,6 +23,10 @@ const browser = stubIiif(await chromium.launch());
 const results = [];
 let failed = false;
 const check = (name, ok, detail = '') => { results.push(`${ok ? 'PASS' : 'FAIL'}  ${name}${detail ? ` — ${detail}` : ''}`); if (!ok) failed = true; };
+{
+  const spellingErrors = spellingSelfCheck();
+  check('raleigh spelling: letter rules and dictionary', spellingErrors.length === 0, spellingErrors.slice(0, 6).join(' | '));
+}
 {
   let rowErrors = [];
   try { rowErrors = checkRowMerge(join(here, 'dist')).errors; }
@@ -1028,6 +1033,202 @@ for (const [path, shot, sel] of [
   await o.ctx.close();
 }
 {
+  async function accountUi(engine, launcher) {
+    const own = launcher === browser ? null : stubIiif(await launcher.launch());
+    const b = own || browser;
+    const pages = [
+      ['/events/creation-week/', 'formall perfection', 'creation-week'],
+      ['/people/moses/', 'Moyses', 'moses'],
+    ];
+    for (const [path, phrase, tag] of pages) {
+      const ctx = await b.newContext({ viewport: { width: 1280, height: 900 }, colorScheme: 'light' });
+      const page = await ctx.newPage();
+      const errors = [];
+      page.on('pageerror', (e) => errors.push(String(e)));
+      const resp = await page.goto(BASE + path, { waitUntil: 'load', timeout: 60000 });
+      const closed = await page.locator('#raleigh-account details.raleigh-account').evaluate((d) => !d.open && !d.hasAttribute('open'));
+      const summary = await page.locator('#raleigh-account details.raleigh-account > summary').innerText();
+      const innersClosed = await page.locator('#raleigh-account details.raleigh-passage').evaluateAll((els) => els.length > 0 && els.every((d) => !d.open && !d.hasAttribute('open')));
+      check(`${engine} ${tag}: Raleigh's account is closed`, resp.status() === 200 && closed && summary.trim() === "Raleigh's account" && innersClosed && errors.length === 0, errors.join(' | ') || summary);
+      await page.locator('#raleigh-account details.raleigh-account > summary').click();
+      const phrasePart = page.locator('#raleigh-account details.raleigh-passage').filter({ hasText: phrase }).first();
+      await phrasePart.locator('summary').click();
+      const spell = await page.evaluate((needle) => {
+        const root = document.getElementById('raleigh-account');
+        const details = root.querySelector('details.raleigh-account');
+        const part = [...root.querySelectorAll('details.raleigh-passage')].find((d) => d.textContent.includes(needle));
+        const original = part?.querySelector('.spell-original');
+        const modern = part?.querySelector('.spell-modern');
+        return {
+          open: !!details?.open && !!part?.open,
+          found: !!original,
+          originalHidden: original ? getComputedStyle(original).display === 'none' : false,
+          modernShown: modern ? getComputedStyle(modern).display !== 'none' : false,
+          pressed: root.querySelector('[data-set-spelling="modern"]')?.getAttribute('aria-pressed'),
+        };
+      }, phrase);
+      check(`${engine} ${tag}: modern spelling shows the account and keeps the original text`, spell.open && spell.found && spell.originalHidden && spell.modernShown && spell.pressed === 'true', JSON.stringify(spell));
+      await page.locator('#raleigh-account [data-set-spelling="original"]').click();
+      const orig = await page.evaluate((needle) => {
+        const root = document.getElementById('raleigh-account');
+        const part = [...root.querySelectorAll('details.raleigh-passage')].find((d) => d.textContent.includes(needle));
+        const original = part?.querySelector('.spell-original');
+        const modern = part?.querySelector('.spell-modern');
+        return {
+          originalShown: original ? getComputedStyle(original).display !== 'none' : false,
+          modernHidden: modern ? getComputedStyle(modern).display === 'none' : false,
+          pressed: root.querySelector('[data-set-spelling="original"]')?.getAttribute('aria-pressed'),
+          spelling: root.dataset.spelling,
+          letters: original ? original.textContent.includes(needle) : false,
+        };
+      }, phrase);
+      check(`${engine} ${tag}: original spelling toggle`, orig.originalShown && orig.modernHidden && orig.pressed === 'true' && orig.spelling === 'original' && orig.letters, JSON.stringify(orig));
+      await ctx.close();
+    }
+    if (own) await own.close();
+  }
+  await accountUi('chromium', browser);
+  await accountUi('webkit', webkit);
+}
+{
+  async function popoutBox(page) {
+    return page.evaluate(() => {
+      const section = document.getElementById('raleigh-account');
+      const link = section?.querySelector('a.raleigh-popout');
+      const summary = section?.querySelector('details.raleigh-account > summary');
+      if (!section || !link || !summary) return null;
+      const lr = link.getBoundingClientRect();
+      const sr = section.getBoundingClientRect();
+      const sum = summary.getBoundingClientRect();
+      return {
+        inSummary: !!link.closest('summary'),
+        topDelta: Math.abs(lr.top - sum.top),
+        rightGap: sr.right - lr.right,
+        target: link.getAttribute('target'),
+        rel: link.getAttribute('rel') || '',
+        label: link.textContent.replace(/\s+/g, ' ').trim(),
+        href: link.getAttribute('href'),
+        overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+      };
+    });
+  }
+  async function nestedUi(engine, launcher) {
+    const own = launcher === browser ? null : stubIiif(await launcher.launch());
+    const b = own || browser;
+    const ctx = await b.newContext({ viewport: { width: 1280, height: 900 }, colorScheme: 'light' });
+    const page = await ctx.newPage();
+    const errors = [];
+    page.on('pageerror', (e) => errors.push(String(e)));
+    const resp = await page.goto(`${BASE}/people/adonis/`, { waitUntil: 'load', timeout: 60000 });
+    const outer = page.locator('#raleigh-account details.raleigh-account');
+    const inners = page.locator('#raleigh-account details.raleigh-passage');
+    const outerClosed = await outer.evaluate((d) => !d.open && !d.hasAttribute('open'));
+    const innerState = await inners.evaluateAll((els) => ({
+      n: els.length,
+      closed: els.every((d) => !d.open && !d.hasAttribute('open')),
+      first: (els[0]?.querySelector('summary')?.textContent || '').trim(),
+    }));
+    const box = await popoutBox(page);
+    const popOk = !!box && !box.inSummary && box.topDelta <= 16 && box.rightGap >= 0 && box.rightGap <= 36 && box.target === '_blank' && box.rel.includes('noopener') && box.label.includes('Open full text') && box.href === '/people/adonis/raleigh/';
+    check(`${engine} adonis: passages are closed dropdowns and the full-text link sits at the top right`, resp.status() === 200 && outerClosed && innerState.n >= 1 && innerState.closed && /sig\./.test(innerState.first) && popOk && errors.length === 0, JSON.stringify({ outerClosed, innerState, box, errors }));
+    await page.locator('#raleigh-account details.raleigh-account > summary').focus();
+    await page.keyboard.press('Enter');
+    const opened = await outer.evaluate((d) => d.open);
+    const stillClosed = await inners.evaluateAll((els) => els.every((d) => !d.open));
+    check(`${engine} adonis: Enter opens the account and leaves each passage closed`, opened && stillClosed);
+    const part = inners.filter({ hasText: 'riuer' }).first();
+    await part.locator('summary').click();
+    const modernText = await part.locator('p').innerText();
+    check(`${engine} adonis: modern spelling shows river`, /\briver\b/.test(modernText) && !/\briuer\b/.test(modernText), modernText.slice(0, 180));
+    await page.locator('#raleigh-account [data-set-spelling="original"]').click();
+    const originalText = await part.locator('p').innerText();
+    check(`${engine} adonis: original spelling keeps riuer`, /\briuer\b/.test(originalText) && !/\briver\b/.test(originalText), originalText.slice(0, 180));
+    await page.setViewportSize({ width: 390, height: 800 });
+    const mobile = await popoutBox(page);
+    const mobileOk = !!mobile && !mobile.inSummary && mobile.topDelta <= 16 && mobile.rightGap >= 0 && mobile.rightGap <= 36 && !mobile.overflow;
+    check(`${engine} adonis: full-text link stays at the top right on a narrow screen`, mobileOk, JSON.stringify(mobile));
+    if (engine === 'chromium') {
+      await page.setViewportSize({ width: 1280, height: 900 });
+      await page.locator('#raleigh-account [data-set-spelling="modern"]').click();
+      await page.locator('#raleigh-account').scrollIntoViewIfNeeded();
+      await page.screenshot({ path: join(SHOTS, 'raleigh-account-nested.png') });
+    }
+    const fullResp = await page.goto(`${BASE}${box.href}`, { waitUntil: 'load', timeout: 60000 });
+    const full = await page.evaluate(() => {
+      const root = document.getElementById('raleigh-full');
+      const back = [...document.querySelectorAll('a')].find((a) => a.getAttribute('href') === '/people/adonis/' && /Back to /.test(a.textContent));
+      return {
+        statusOk: !!root,
+        headings: root ? root.querySelectorAll('h2').length : 0,
+        details: root ? root.querySelectorAll('details').length : 0,
+        back: back?.textContent.trim() || '',
+        ignored: document.body.hasAttribute('data-pagefind-ignore'),
+      };
+    });
+    check(`${engine} adonis: full view lists every passage in the open`, fullResp.status() === 200 && full.statusOk && full.headings === innerState.n && full.details === 0 && full.back.startsWith('Back to ') && full.ignored, JSON.stringify(full));
+    const fullModern = await page.locator('#raleigh-full .raleigh-text').first().innerText();
+    check(`${engine} adonis full view: modern spelling shows river`, /\briver\b/.test(fullModern) && !/\briuer\b/.test(fullModern), fullModern.slice(0, 180));
+    await page.locator('#raleigh-full [data-set-spelling="original"]').click();
+    const fullOriginal = await page.locator('#raleigh-full .raleigh-text').first().innerText();
+    check(`${engine} adonis full view: original spelling keeps riuer`, /\briuer\b/.test(fullOriginal), fullOriginal.slice(0, 180));
+    if (engine === 'chromium') {
+      await page.locator('#raleigh-full [data-set-spelling="modern"]').click();
+      await page.screenshot({ path: join(SHOTS, 'raleigh-full-adonis.png'), fullPage: true });
+    }
+    await ctx.close();
+    if (own) await own.close();
+  }
+  await nestedUi('chromium', browser);
+  await nestedUi('webkit', webkit);
+}
+{
+  async function italicWord(page, rootId) {
+    return page.evaluate((id) => {
+      const root = document.getElementById(id);
+      if (!root) return { found: false };
+      const mode = root.dataset.spelling;
+      const sel = mode === 'original' ? '.spell-original em' : '.spell-modern em';
+      const em = [...root.querySelectorAll(sel)].find((el) => el.textContent.includes('Blame'));
+      if (!em) return { found: false, mode };
+      const parent = em.closest(mode === 'original' ? '.spell-original' : '.spell-modern');
+      return {
+        found: true,
+        mode,
+        italic: getComputedStyle(em).fontStyle === 'italic',
+        visible: !!parent && getComputedStyle(parent).display !== 'none',
+        text: em.textContent.replace(/\s+/g, ' ').trim().slice(0, 40),
+      };
+    }, rootId);
+  }
+  async function italicUi(engine, launcher) {
+    const own = launcher === browser ? null : stubIiif(await launcher.launch());
+    const b = own || browser;
+    const ctx = await b.newContext({ viewport: { width: 1280, height: 900 }, colorScheme: 'light' });
+    const page = await ctx.newPage();
+    const errors = [];
+    page.on('pageerror', (e) => errors.push(String(e)));
+    const resp = await page.goto(`${BASE}/people/seneca/`, { waitUntil: 'load', timeout: 60000 });
+    await page.locator('#raleigh-account details.raleigh-account > summary').click();
+    const part = page.locator('#raleigh-account details.raleigh-passage').filter({ hasText: 'Blame no man' }).first();
+    await part.locator('summary').click();
+    const modern = await italicWord(page, 'raleigh-account');
+    check(`${engine} seneca: an italic word is italic in the modern account`, resp.status() === 200 && modern.found && modern.mode === 'modern' && modern.italic && modern.visible && modern.text.includes('Blame') && errors.length === 0, JSON.stringify({ modern, errors }));
+    await page.locator('#raleigh-account [data-set-spelling="original"]').click();
+    const original = await italicWord(page, 'raleigh-account');
+    check(`${engine} seneca: the same italic word is italic in the original account`, original.found && original.mode === 'original' && original.italic && original.visible && original.text.includes('Blame'), JSON.stringify(original));
+    const fullResp = await page.goto(`${BASE}/people/seneca/raleigh/`, { waitUntil: 'load', timeout: 60000 });
+    const fullModern = await italicWord(page, 'raleigh-full');
+    check(`${engine} seneca full text: an italic word is italic in the modern view`, fullResp.status() === 200 && fullModern.found && fullModern.mode === 'modern' && fullModern.italic && fullModern.visible && fullModern.text.includes('Blame'), JSON.stringify(fullModern));
+    await page.locator('#raleigh-full [data-set-spelling="original"]').click();
+    const fullOriginal = await italicWord(page, 'raleigh-full');
+    check(`${engine} seneca full text: the same italic word is italic in the original view`, fullOriginal.found && fullOriginal.mode === 'original' && fullOriginal.italic && fullOriginal.visible && fullOriginal.text.includes('Blame'), JSON.stringify(fullOriginal));
+    await ctx.close();
+    if (own) await own.close();
+  }
+  await italicUi('chromium', browser);
+  await italicUi('webkit', webkit);
+}
+{
   const NOTE = "Derived by the portal from Raleigh's Creation in 4032 BC; Raleigh prints only the yeere of the World.";
   const ITALICS = 'Dates in italics are derived.';
   const o = await open('/events/the-flood/');
@@ -1182,7 +1383,8 @@ for (const [path, shot, sel] of [
       const abraham = spellings.find((r) => r.cells[0] === 'Abraham');
       const abram = spellings.find((r) => r.cells[0] === 'Abram');
       check(`${tag}: HTTP 200, disclosure closed`, resp.status() === 200 && closed && hidden && summary.open === false && errors.length === 0, errors.join(' | '));
-      check(`${tag}: one row per spelling`, spellings.length === 4 && new Set(keys).size === keys.length && heb.some((t) => t.includes('אַבְרָהָם')) && heb.some((t) => t.includes('אַבְרָם')), keys.join(' ; '));
+      // ABRAHAMI and ABRAHAMS are Book I spellings. ABRAHAMO is Book II, Part I, Chapter I.
+      check(`${tag}: one row per spelling`, spellings.length === 7 && new Set(keys).size === keys.length && heb.some((t) => t.includes('אַבְרָהָם')) && heb.some((t) => t.includes('אַבְרָם')) && keys.some((t) => t.startsWith('ABRAHAMI')) && keys.some((t) => t.startsWith('ABRAHAMS')) && keys.some((t) => t.startsWith('ABRAHAMO')), keys.join(' ; '));
       check(`${tag}: Abraham and Abram list Bible and History`, /Bible/.test(abraham?.cells[3] || '') && /History/.test(abraham?.cells[3] || '') && /Bible/.test(abram?.cells[3] || '') && /History/.test(abram?.cells[3] || '') && (abraham?.cells[3].match(/Abraham|Bible|History/g) || []).length >= 2, `${abraham?.cells[3]} || ${abram?.cells[3]}`);
       const contrast = summary.summary != null && summary.bg != null && Math.abs(summary.summary - summary.bg) > 120 && summary.h >= 44 && summary.chevron !== '0px';
       check(`${tag}: footnote summary is tappable and readable`, contrast, JSON.stringify(summary));
@@ -1249,12 +1451,14 @@ for (const [path, shot, sel] of [
       const row = (author) => table.querySelector(`tr[data-author="${author}"]`);
       const count = (author) => [...table.querySelectorAll('tr')].filter((tr) => tr.getAttribute('data-author') === author || tr.getAttribute('data-author-sub') === author).length;
       const raleigh = row('raleigh-history-of-the-world');
+      const raleighSub = table.querySelector('tr[data-author-sub="raleigh-history-of-the-world"]');
       const hales = row('hales');
       return {
         unique: new Set(authors).size === authors.length,
         raleighRows: count('raleigh-history-of-the-world'),
         raleighQuotes: raleigh ? raleigh.querySelectorAll('.date-quote').length : 0,
         raleighHtml: raleigh ? raleigh.innerHTML : '',
+        raleighSubText: raleighSub ? raleighSub.innerText : '',
         halesRows: count('hales'),
         halesQuotes: hales ? hales.querySelectorAll('.date-quotes li').length : 0,
         halesText: hales ? hales.innerText : '',
@@ -1263,7 +1467,8 @@ for (const [path, shot, sel] of [
         generationsText: (row('generations')?.innerText || '') + (table.querySelector('tr[data-author-sub="generations"]')?.innerText || ''),
       };
     });
-    check(`${engine}: Abraham birth has one Raleigh row and both quotations`, birth.unique && birth.raleighRows === 1 && birth.raleighQuotes === 2 && birth.raleighHtml.includes('<em>2024 BC</em>') && birth.raleighHtml.includes('yeere of the World, 2009') && birth.raleighHtml.includes('1. Abram. 175'), birth.raleighHtml.slice(0, 240));
+    // The two quotations of World 2009 stay on one row. The body age, with no yeere of the World, is the sub-row under the same author.
+    check(`${engine}: Abraham birth keeps both 2009 quotations, and the body age is a sub-row`, birth.unique && birth.raleighRows === 2 && birth.raleighQuotes === 2 && birth.raleighHtml.includes('<em>2024 BC</em>') && birth.raleighHtml.includes('yeere of the World, 2009') && birth.raleighHtml.includes('1. Abram. 175') && /fiftie and eight/.test(birth.raleighSubText) && /Not derived/.test(birth.raleighSubText), `${birth.raleighHtml.slice(0, 180)} || ${birth.raleighSubText.slice(0, 120)}`);
     check(`${engine}: Abraham birth nests Hales’s three 2153 BC quotations`, birth.halesRows === 1 && birth.halesQuotes === 3 && /2153/.test(birth.halesText) && /Abraham born 2153/.test(birth.halesText), birth.halesText.slice(0, 200));
     check(`${engine}: Shuckford’s two years and Generations’ two editions stay under one author`, birth.shuckfordRows === 2 && birth.generationsRows === 2 && /2166 BC/.test(birth.generationsText) && /1996/.test(birth.generationsText), JSON.stringify({ shuckford: birth.shuckfordRows, generations: birth.generationsRows }));
     const note = await page.locator('.raleigh-derived-note').innerText();
@@ -1650,6 +1855,178 @@ for (const [path, shot, sel] of [
     release();
     await ctx.close();
   }
+}
+// Calculated dates, mother and spouse, and See more. Chromium and WebKit.
+{
+  async function seeMoreState(page, root) {
+    return page.locator(root).evaluate((el) => {
+      const details = el.querySelector('details.see-more');
+      const firstList = el.querySelector(':scope > ul.links');
+      const firstBody = el.querySelector(':scope > .table-wrap tbody');
+      const shown = firstList ? firstList.querySelectorAll(':scope > li').length : (firstBody ? firstBody.querySelectorAll('tr').length : 0);
+      const extra = details ? details.querySelectorAll('ul.links > li, tbody tr').length : 0;
+      const summary = details?.querySelector('summary')?.textContent.replace(/\s+/g, ' ').trim() || '';
+      return { shown, extra, summary, open: details ? details.open : null, control: !!details };
+    });
+  }
+  async function calculatedUi(engine, launcher) {
+    const own = launcher === browser ? null : stubIiif(await launcher.launch());
+    const b = own || browser;
+    async function visit(path) {
+      const ctx = await b.newContext({ viewport: { width: 1280, height: 900 }, colorScheme: 'light' });
+      const page = await ctx.newPage();
+      const errors = [];
+      page.on('pageerror', (e) => errors.push(String(e)));
+      const resp = await page.goto(BASE + path, { waitUntil: 'load', timeout: 60000 });
+      return { ctx, page, errors, status: resp.status() };
+    }
+    {
+      const o = await visit('/people/naamah/');
+      const sort = await o.page.locator('.sortbox').innerText();
+      const death = await o.page.locator('#death').innerText();
+      const family = await o.page.locator('#family-brief').innerText();
+      const nameRows = await o.page.locator('#name table.names tbody tr').count();
+      const nameMore = await o.page.locator('#name details.see-more').count();
+      const deathOk = o.status === 200 && o.errors.length === 0 && /calc\./.test(sort) && /1994 BC/.test(sort) && /calculated death/i.test(sort) && /calc\./.test(death) && /1994 BC/.test(death) && /1998 BC/.test(death) && /\b4 years\b/.test(death);
+      check(`${engine} naamah: calculated death 1994 BC`, deathOk, o.errors.join(' | ') || `${sort.replace(/\s+/g, ' ').slice(0, 180)} || ${death.replace(/\s+/g, ' ').slice(0, 180)}`);
+      check(`${engine} naamah: mother Zillah and spouse Ham?`, /Zillah/.test(family) && /Ham\s*\?/.test(family), family.replace(/\s+/g, ' ').slice(0, 280));
+      check(`${engine} naamah: a short Names list has no See more`, nameRows > 0 && nameRows <= 5 && nameMore === 0, `${nameRows} rows, ${nameMore} controls`);
+      const badge = await o.page.locator('.sortbox .tier').evaluate((el) => {
+        const cs = getComputedStyle(el);
+        const sw = el.parentElement?.querySelector('.swatch');
+        return { radius: parseFloat(cs.borderTopLeftRadius) || 0, border: cs.borderTopStyle, text: el.textContent, swatch: sw ? sw.getBoundingClientRect().width : 0 };
+      });
+      check(`${engine} naamah: sort tier is secondary text with a swatch`, badge.radius === 0 && badge.border === 'none' && /Calculated/.test(badge.text) && badge.swatch > 0, JSON.stringify(badge));
+      await o.page.locator('#raleigh-account details.raleigh-account > summary').click();
+      const spell = await o.page.locator('#raleigh-account .segmented').evaluate((el) => {
+        const buttons = [...el.querySelectorAll('button')];
+        const b = buttons[0];
+        const cs = b ? getComputedStyle(b) : null;
+        return { n: buttons.length, radius: cs ? parseFloat(cs.borderTopLeftRadius) : null, h: b ? b.getBoundingClientRect().height : 0, pressed: buttons.map((x) => x.getAttribute('aria-pressed')) };
+      });
+      check(`${engine} naamah: spelling is a segmented control`, spell.n === 2 && spell.radius < 16 && spell.h >= 44 && spell.pressed[0] === 'true' && spell.pressed[1] === 'false', JSON.stringify(spell));
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/');
+      await o.page.waitForFunction(() => document.getElementById('timeline')?.hasAttribute('data-ready'), null, { timeout: 20000 }).catch(() => {});
+      const hig = await o.page.evaluate(() => {
+        const rows = [...document.querySelectorAll('[data-tier-toggle]')];
+        const row = rows[0];
+        const cs = row ? getComputedStyle(row) : null;
+        const sw = row?.querySelector('.switch');
+        const rect = row?.getBoundingClientRect();
+        return {
+          n: rows.length,
+          radius: cs ? parseFloat(cs.borderTopLeftRadius) : null,
+          border: cs ? cs.borderTopStyle : '',
+          h: rect ? rect.height : 0,
+          w: rect ? rect.width : 0,
+          switchW: sw ? sw.getBoundingClientRect().width : 0,
+          pressed: rows.map((r) => r.getAttribute('aria-pressed')),
+          note: document.getElementById('tier-note')?.textContent || '',
+        };
+      });
+      const tiersOk = hig.n >= 8 && hig.radius < 16 && hig.border === 'none' && hig.h >= 44 && hig.w > 240 && hig.switchW >= 48 && hig.pressed[0] === 'true' && hig.pressed.slice(1).every((p) => p === 'false') && /dashed and grey/.test(hig.note);
+      check(`${engine} home: tier filter is a grouped list of switches`, tiersOk, JSON.stringify(hig));
+      await o.page.locator('[data-tier-toggle="standby"]').click();
+      const moved = await o.page.locator('[data-tier-toggle="standby"]').evaluate((el) => {
+        const after = getComputedStyle(el.querySelector('.switch'), '::after');
+        return { pressed: el.getAttribute('aria-pressed'), transform: after.transform };
+      });
+      const shifted = moved.pressed === 'true' && moved.transform && moved.transform !== 'none' && !/matrix\(1,\s*0,\s*0,\s*1,\s*0,\s*0\)/.test(moved.transform);
+      check(`${engine} home: standby switch moves when pressed`, shifted, JSON.stringify(moved));
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/people/noah/');
+      const sort = await o.page.locator('.sortbox').innerText();
+      const death = await o.page.locator('#death').innerText();
+      const kept = /2948 BC/.test(sort) && !/calc\./.test(sort) && !/Calculated/.test(sort) && !/calc\./.test(death);
+      check(`${engine} noah: printed 2948 BC stays, and no calculated death is shown`, kept, `${sort.replace(/\s+/g, ' ').slice(0, 160)} || ${death.replace(/\s+/g, ' ').slice(0, 120)}`);
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/people/sarai/');
+      const sort = await o.page.locator('.sortbox').innerText();
+      const death = await o.page.locator('#death').innerText();
+      const family = await o.page.locator('#family-brief').innerText();
+      const override = /1987 BC/.test(sort) && !/calc\./.test(sort) && !/Calculated/.test(sort) && /calc\./.test(death) && /Abraham/.test(family);
+      check(`${engine} sarah: the birth tier stays and a calculated death fills the empty slot`, override, `${sort.replace(/\s+/g, ' ').slice(0, 120)} || ${death.replace(/\s+/g, ' ').slice(0, 160)}`);
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/people/abraham/');
+      const names = await seeMoreState(o.page, '#name');
+      const summary = o.page.locator('#name details.see-more > summary');
+      await summary.focus();
+      const focused = await o.page.evaluate(() => document.activeElement?.closest('details.see-more') != null);
+      await o.page.keyboard.press('Enter');
+      const opened = await o.page.locator('#name details.see-more').evaluate((d) => d.open);
+      const restVisible = await o.page.locator('#name details.see-more tbody tr').first().isVisible();
+      const family = await o.page.locator('#family-brief').innerText();
+      const namesOk = names.shown === 5 && names.extra > 0 && names.summary === `See more (${names.extra})` && names.open === false && focused && opened && restVisible;
+      check(`${engine} abraham: Names See more opens from the keyboard`, namesOk, JSON.stringify({ ...names, focused, opened, restVisible }));
+      check(`${engine} abraham: spouses are Sarah, Hagar and Keturah, and the mother stays unrecorded`, /Sarah/.test(family) && /Hagar/.test(family) && /Keturah/.test(family) && /Not recorded/.test(family), family.replace(/\s+/g, ' ').slice(0, 320));
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/people/jacob/');
+      const other = await seeMoreState(o.page, '#other-people');
+      const summary = o.page.locator('#other-people details.see-more > summary');
+      await summary.focus();
+      const focused = await o.page.evaluate(() => document.activeElement?.closest('details.see-more') != null);
+      await o.page.keyboard.press('Enter');
+      const opened = await o.page.locator('#other-people details.see-more').evaluate((d) => d.open);
+      const restVisible = await o.page.locator('#other-people details.see-more li').first().isVisible();
+      const otherOk = other.shown === 5 && other.extra > 0 && other.summary === `See more (${other.extra})` && other.open === false && focused && opened && restVisible;
+      check(`${engine} jacob: Other people See more opens from the keyboard`, otherOk, JSON.stringify({ ...other, focused, opened, restVisible }));
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/people/rameses-ii/');
+      const nameMore = await o.page.locator('#name details.see-more').count();
+      const rows = await o.page.locator('#name table.names tbody tr').count();
+      check(`${engine} rameses-ii: a short Names list has no See more`, nameMore === 0 && rows > 0 && rows <= 5, `${rows} rows, ${nameMore} controls`);
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/events/cain-and-abel/');
+      const count = await o.page.locator('#other-people').count();
+      if (!count) check(`${engine} cain-and-abel: page loaded`, o.status === 200);
+      else {
+        const state = await seeMoreState(o.page, '#other-people');
+        const total = state.shown + state.extra;
+        const ok = o.status === 200 && (total <= 5 ? state.control === false : state.shown === 5 && state.summary === `See more (${state.extra})` && state.open === false);
+        check(`${engine} cain-and-abel: Other people control matches the list length`, ok, JSON.stringify(state));
+      }
+      await o.ctx.close();
+    }
+    {
+      const hrefsOf = async (path) => {
+        const o = await visit(path);
+        const hrefs = await o.page.locator('#other-people a').evaluateAll((els) => els.map((a) => a.getAttribute('href')));
+        const names = o.status === 200 ? await o.page.locator('#name').innerText() : '';
+        return { hrefs, errors: o.errors, status: o.status, names, close: () => o.ctx.close() };
+      };
+      const jubal = await hrefsOf('/people/jubal/');
+      check(`${engine} jubal: Tubal in Cain’s line links to Tubal-cain`, jubal.status === 200 && jubal.errors.length === 0 && jubal.hrefs.includes('/people/tubal-cain/') && !jubal.hrefs.includes('/people/tubal/'), jubal.hrefs.filter((h) => h && h.includes('tubal')).join(','));
+      await jubal.close();
+      const japheth = await hrefsOf('/people/japheth/');
+      check(`${engine} japheth: Tubal links to Japheth’s son`, japheth.status === 200 && japheth.errors.length === 0 && japheth.hrefs.includes('/people/tubal/') && !japheth.hrefs.includes('/people/tubal-cain/'), japheth.hrefs.filter((h) => h && h.includes('tubal')).join(','));
+      await japheth.close();
+      const naamah = await hrefsOf('/people/naamah/');
+      check(`${engine} naamah: Herakles links to Heracles, and Tubal-cain is not Japheth’s Tubal`, naamah.status === 200 && naamah.errors.length === 0 && naamah.hrefs.includes('/people/heracles/') && naamah.hrefs.includes('/people/tubal-cain/') && !naamah.hrefs.includes('/people/tubal/'), naamah.hrefs.filter((h) => h && /tubal|herac/.test(h)).join(','));
+      await naamah.close();
+      const heracles = await hrefsOf('/people/heracles/');
+      const forms = /Herakles/.test(heracles.names) && /Hercules/.test(heracles.names);
+      check(`${engine} heracles: Herakles and Hercules are name forms`, heracles.status === 200 && heracles.errors.length === 0 && forms, heracles.names.replace(/\s+/g, ' ').slice(0, 240));
+      await heracles.close();
+    }
+    if (own) await own.close();
+  }
+  await calculatedUi('chromium', browser);
+  await calculatedUi('webkit', webkit);
 }
 await browser.close();
 srv.close();

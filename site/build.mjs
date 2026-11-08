@@ -7,12 +7,15 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { BOOKS as BLB_BOOKS, blbFromOsis, blbFromText } from '../scripts/blb.mjs';
 import { loadChronologicalTable, toCsv, toMarkdown, toXls, yearColumnIndex } from '../scripts/raleigh/table.mjs';
+import { displayNameForm, displaySpelling, renderProse } from '../scripts/raleigh/spelling.mjs';
+import { loadXml, extractPassages, alignStoredPassages, THROUGH_CHAPTER, BOOK2_THROUGH } from '../scripts/raleigh/xml-text.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmHtml, raleighRecordHtml, raleighRecordShort, showsItalicDerived, RALEIGH_DERIVED_NOTE, ITALICS_NOTE } from '../scripts/raleigh/derived-year.mjs';
 import { standbyCounts, standbySummaryLine } from '../scripts/standby/compute.mjs';
 import { isJones23, reignStartPhrase } from '../scripts/sort-rule.mjs';
 import { redirectLines, redirectsFileHasSennacherib } from '../scripts/redirects.mjs';
 import { protectHtml } from './email-protect.mjs';
 import { doreUrls, doreThumbPublicPath, DISPLAY_W, SMALL_W, THUMB_W } from '../scripts/dore/urls.mjs';
+import { createNameLinker, unitsForRecord } from '../scripts/names/link.mjs';
 
 assertRaleighDerived();
 
@@ -38,6 +41,25 @@ const kingDoc = existsSync(join(DATA, 'king-lists.json')) ? readJSON(join(DATA, 
 const doreDoc = existsSync(join(DATA, 'illustrations/dore-1866.json')) ? readJSON(join(DATA, 'illustrations/dore-1866.json')) : { illustrations: [] };
 const nameFormDoc = readJSON(join(DATA, 'name-forms.json'));
 const nameForms = Object.fromEntries((nameFormDoc.people || []).map((p) => [p.id, p.forms]));
+const nameLinkOverrides = readJSON(join(DATA, 'name-link-overrides.json'));
+const raleighAccounts = readJSON(join(DATA, 'raleigh-accounts.json'));
+const raleighExtract = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER, book2Through: BOOK2_THROUGH });
+const raleighAlignErrors = alignStoredPassages(raleighAccounts.passages, raleighExtract);
+if (raleighAlignErrors.length) {
+  console.error(raleighAlignErrors.slice(0, 12).join('\n'));
+  throw new Error(`Raleigh italics: ${raleighAlignErrors.length} problem(s)`);
+}
+for (let i = 0; i < raleighExtract.length; i += 1) raleighAccounts.passages[i].italics = raleighExtract[i].italics;
+const raleighPassageById = Object.fromEntries(raleighAccounts.passages.map((p) => [p.id, p]));
+const passageHosts = new Map();
+for (const [recordId, ids] of Object.entries(raleighAccounts.accounts || {})) {
+  for (const id of ids || []) {
+    let list = passageHosts.get(id);
+    if (!list) { list = []; passageHosts.set(id, list); }
+    list.push(recordId);
+  }
+}
+const nameLinker = createNameLinker({ people, nameForms, overrides: nameLinkOverrides });
 const kingListsOf = (id) => kingDoc.lists.filter((l) => l.entries.some((e) => e.person === id || e.event === id));
 
 const byId = {};
@@ -50,10 +72,12 @@ const uniqSrc = (ids) => [...new Map(ids.map(linkSrc).filter(Boolean).map((s) =>
 
 // ---------- helpers ----------
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+// Titles, summaries, and notes. I/J only, so a modern description keeps "yeere".
+const shown = (s) => esc(displaySpelling(s));
 const DIRS = { event: 'events', person: 'people', location: 'locations', map: 'maps' };
 const TYPE_LABEL = { event: 'Event', person: 'Person', location: 'Place', map: 'Map' };
 const urlOf = (r) => `/${DIRS[r.type]}/${r.id}/`;
-const link = (id) => { const r = byId[id]; return r ? `<a href="${urlOf(r)}">${esc(r.title)}</a>` : `<span class="muted">${esc(id)} (not yet a record)</span>`; };
+const link = (id) => { const r = byId[id]; return r ? `<a href="${urlOf(r)}">${shown(r.title)}</a>` : `<span class="muted">${esc(id)} (not yet a record)</span>`; };
 const ext = (href, text) => href ? `<a href="${esc(href)}" rel="noopener" target="_blank">${text}<span class="visually-hidden"> (opens in a new tab)</span></a>` : text;
 // CFAH on /chronologies/ is two platform sections (ARJ and OSF), built from sources
 // with platform, role, parent, and copy_kind. Responses are a fork tree: a top-level
@@ -176,7 +200,7 @@ const standbyPhrase = (rec) => {
     return `printed by ${c?.abbreviation || c?.name || s.source_chronology}`;
   }
   const from = byId[s.from_record];
-  return `placed with ${from?.title || s.from_record}`;
+  return `placed with ${displaySpelling(from?.title || s.from_record)}`;
 };
 const standbyItemLabel = (rec) => `${yearLabel(rec.standby.year_bc_ad)} · standby placement · ${standbyPhrase(rec)}`;
 
@@ -232,8 +256,12 @@ const TIERS = {
   ussher: { cls: 't4', label: 'Tier 4 · Ussher, Annals of the World' },
   derived: { cls: 'td', label: 'Derived · sort year copied from a related record' },
   provisional: { cls: 'tp', label: 'Provisional · Generations curriculum date (no CFAH / Ussher–Jones / Ussher date exists; pending owner decision)' },
+  calculated: { cls: 'tc', label: 'Calculated · arithmetic from printed figures (fills a gap only)' },
   none: { cls: 'tn', label: 'Undated · no tier gives a year' },
 };
+// Dating tiers are an inset grouped list. Each row is a switch. The label is not a capsule.
+const tierToggle = (tier, label, pressed, swatch) => `<button type="button" class="inset-row tier-toggle" data-tier-toggle="${tier}" aria-pressed="${pressed ? 'true' : 'false'}"><span class="swatch ${swatch}" aria-hidden="true"></span><span class="inset-row-label">${esc(label)}</span><span class="switch" aria-hidden="true"></span></button>`;
+const tierFilter = (buttons, noteId, note) => `<div class="inset-group"><div class="inset-list" role="group" aria-label="Dating tiers" aria-describedby="${noteId}">${buttons}</div><p class="inset-footer" id="${noteId}">${esc(note)}</p></div>`;
 // Which entry set the sort (mirrors scripts/sort-rule.mjs).
 // A reign-start ussher-jones year prefers the 23rd edition, then the stored year.
 const sortingEntry = (entries, basis, sortYear) => {
@@ -317,8 +345,8 @@ const flagHtml = (flags) => (flags.length ? `<div class="flags">${flags.join(' '
 const citeBody = (e) => {
   const href = e.link || (['bible', 'masoretic-genealogy'].includes(e.source) ? blbFromText(e.citation) : null);
   const link = e.citation ? ext(href, esc(e.citation)) : '<span class="muted">—</span>';
-  const edition = e.edition_note ? `<div class="note"><span class="tag tag-old">${esc(/not in/.test(e.edition_note) ? 'not in 2nd ed.' : 'edition')}</span> ${esc(e.edition_note)}</div>` : '';
-  const note = e.note ? `<div class="note">${esc(e.note)}</div>` : '';
+  const edition = e.edition_note ? `<div class="note"><span class="tag tag-old">${esc(/not in/.test(e.edition_note) ? 'not in 2nd ed.' : 'edition')}</span> ${shown(e.edition_note)}</div>` : '';
+  const note = e.note ? `<div class="note">${shown(e.note)}</div>` : '';
   return `${link}${edition}${note}`;
 };
 const sourceLine = (e) => {
@@ -329,17 +357,17 @@ function supersededDetails(entries) {
   if (entries.length === 1) {
     const e = entries[0];
     const nb = sourceById[e.superseded_by];
-    return `<details><summary><span class="tag tag-old">superseded</span> ${esc(e.date)} <span class="small muted">· ${esc(e.edition_note || `superseded by ${nb?.short || e.superseded_by}`)}</span></summary>
+    return `<details><summary><span class="tag tag-old">superseded</span> ${shown(e.date)} <span class="small muted">· ${esc(e.edition_note || `superseded by ${nb?.short || e.superseded_by}`)}</span></summary>
 <div class="small">${yearLabel(e.year_bc_ad, e.year_bc_ad_end) || ''}${e.precision ? ` · Precision: ${esc(e.precision)}` : ''}</div>
-<div>${e.citation ? ext(e.link, esc(e.citation)) : ''}</div>${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}</details>`;
+<div>${e.citation ? ext(e.link, esc(e.citation)) : ''}</div>${e.note ? `<div class="note">${shown(e.note)}</div>` : ''}</details>`;
   }
   const e0 = entries[0];
   const nb = sourceById[e0.superseded_by];
-  const label = plainYear(e0) || e0.date || 'superseded';
+  const label = plainYear(e0) || displaySpelling(e0.date || '') || 'superseded';
   const sameText = entries.every((e) => e.date === e0.date);
   const items = entries.map((e) => {
-    const quote = !sameText && e.date ? `<div class="date-quote">${esc(e.date)}</div>` : '';
-    return `<li>${quote}${sourceLine(e)}<div>${e.citation ? ext(e.link, esc(e.citation)) : ''}</div>${e.note ? `<div class="note">${esc(e.note)}</div>` : ''}</li>`;
+    const quote = !sameText && e.date ? `<div class="date-quote">${shown(e.date)}</div>` : '';
+    return `<li>${quote}${sourceLine(e)}<div>${e.citation ? ext(e.link, esc(e.citation)) : ''}</div>${e.note ? `<div class="note">${shown(e.note)}</div>` : ''}</li>`;
   }).join('');
   return `<details><summary><span class="tag tag-old">superseded</span> ${esc(label)} <span class="small muted">· ${esc(e0.edition_note || `superseded by ${nb?.short || e0.superseded_by}`)}</span></summary>
 <ul class="date-quotes">${items}</ul></details>`;
@@ -350,7 +378,7 @@ function dateCell(entries) {
   const sameText = texts.every((t) => t === texts[0]);
   const body = pending
     ? '<span class="muted">Not yet established</span>'
-    : esc(sameText ? texts[0] : (plainYear(entries[0]) || texts.find(Boolean) || ''));
+    : shown(sameText ? texts[0] : (plainYear(entries[0]) || texts.find(Boolean) || ''));
   const apSame = new Set(entries.map((e) => e.cfah_ap || '')).size === 1 && new Set(entries.map((e) => (e.cfah_preprint ? '1' : ''))).size === 1;
   const tagged = entries.find((e) => e.cfah_ap || e.cfah_preprint);
   const tags = apSame && tagged ? `<div>${apTags(tagged)}</div>` : '';
@@ -365,7 +393,7 @@ function quoteList(entries, setter, sortYear) {
   const showAp = new Set(entries.map((e) => e.cfah_ap || '')).size > 1 || new Set(entries.map((e) => (e.cfah_preprint ? '1' : ''))).size > 1;
   const showPrec = new Set(entries.map((e) => (e.date == null ? '' : (e.precision || '')))).size > 1;
   const items = entries.map((e) => {
-    const quote = !sameText && e.date != null ? `<div class="date-quote">${esc(e.date)}</div>` : '';
+    const quote = !sameText && e.date != null ? `<div class="date-quote">${shown(e.date)}</div>` : '';
     const src = showSource ? sourceLine(e) : '';
     const ap = showAp && (e.cfah_ap || e.cfah_preprint) ? `<div>${apTags(e)}</div>` : '';
     const prec = showPrec && e.precision && e.date != null ? `<div class="small muted">Precision: ${esc(e.precision)}</div>` : '';
@@ -449,8 +477,8 @@ function chronTable(entries, { sortYear, basis, caption }) {
     if (dates.length === 1) return renderDateRow(group.key, label, dates[0], setter, sortYear, { sub: false, span: 1 });
     return dates.map((list, i) => renderDateRow(group.key, label, list, setter, sortYear, { sub: i > 0, span: dates.length })).join('\n');
   }).join('\n');
-  return `<div class="table-wrap" role="region" aria-label="${esc(caption)}" tabindex="0"><table class="chron">
-<caption>${esc(caption)}</caption>
+  return `<div class="table-wrap" role="region" aria-label="${shown(caption)}" tabindex="0"><table class="chron">
+<caption>${shown(caption)}</caption>
 <thead><tr><th scope="col">Chronology</th><th scope="col">Date as stated</th><th scope="col">Year (BC / AM)</th><th scope="col">Citation &amp; note</th></tr></thead>
 <tbody>${rows}</tbody></table></div>`;
 }
@@ -477,7 +505,7 @@ function flagsSection(rec, entries) {
   if (!auto.length && !oq.length) return '';
   return `<section class="card flags-card" aria-labelledby="flags-h"><h2 id="flags-h">Disagreements &amp; open questions</h2>
 ${auto.length ? `<ul class="flag-list">${auto.map((t) => `<li><span class="flag flag-diff">Chronologies disagree</span> ${t}</li>`).join('')}</ul>` : ''}
-${oq.length ? `<ul class="flag-list">${oq.map((t) => `<li><span class="flag flag-oq">Open question</span> ${esc(t)}</li>`).join('')}</ul>` : ''}
+${oq.length ? `<ul class="flag-list">${oq.map((t) => `<li><span class="flag flag-oq">Open question</span> ${shown(t)}</li>`).join('')}</ul>` : ''}
 <p class="small muted">Flags are generated from the figures stored in the data. The master timeline still sorts by the CFAH-weighted sort year.</p></section>`;
 }
 
@@ -485,13 +513,18 @@ function sortBadge(rec) {
   const b = rec.sorting_basis || {};
   const t = (b.tier === 'provisional' && b.chronology === 'morecraft' ? { cls: 'tp', label: 'Provisional · Morecraft date (no CFAH / Ussher–Jones / Ussher / Generations date exists; pending owner decision)' } : TIERS[b.tier]) || { cls: 'tn', label: b.tier || 'unknown' };
   const ent = sortingEntry(sortEntriesOf(rec), b, rec.sorting_year);
-  const yl = yearLabel(rec.sorting_year, b.slot === 'reign_start' ? null : ent?.year_bc_ad_end) || 'Undated';
+  const yl = yearLabel(rec.sorting_year, b.slot === 'reign_start' || b.tier === 'calculated' ? null : ent?.year_bc_ad_end) || 'Undated';
+  const shownYear = b.tier === 'calculated' ? `calc. ${yl}` : yl;
   let extra = '';
   if (b.tier === 'derived' && b.derived_from) extra = ` from ${link(b.derived_from)}`;
-  const slotLine = b.slot === 'reign_start' ? `<p class="sort-slot">${esc(reignStartPhrase(b.tier))}.</p>` : '';
+  const calcSlot = b.slot === 'death' ? 'Sorted by a calculated death' : b.slot === 'translated' ? 'Sorted by a calculated translation' : b.slot === 'reign_start' ? 'Sorted by a calculated reign start' : 'Sorted by a calculated birth';
+  const slotLine = b.tier === 'calculated'
+    ? `<p class="sort-slot">${esc(calcSlot)}.</p>`
+    : (b.slot === 'reign_start' ? `<p class="sort-slot">${esc(reignStartPhrase(b.tier))}.</p>` : '');
   return `<div class="sortbox">
-<div class="sortyear"><span class="small muted">Sort year</span><strong>${esc(yl)}</strong></div>
-<div><span class="tier tier-${t.cls}">${esc(t.label)}</span>${extra}${slotLine}${b.note ? `<p class="small muted">${esc(b.note)}</p>` : ''}</div></div>`;
+<div class="sortyear"><span class="small muted">Sort year</span><strong>${esc(shownYear)}</strong>
+<p class="tier-line"><span class="swatch tier-${t.cls}" aria-hidden="true"></span><span class="tier tier-${t.cls}">${esc(t.label)}</span>${extra}</p>
+${slotLine}${b.note ? `<p class="small muted">${shown(b.note)}</p>` : ''}</div></div>`;
 }
 
 const linkList = (ids, title) => !ids?.length ? '' : `<section class="card"><h2>${esc(title)}</h2><ul class="links">${ids.map((id) => `<li>${link(id)}</li>`).join('')}</ul></section>`;
@@ -578,14 +611,14 @@ function mapThumbs(ids) {
 }
 
 // ---------- layout ----------
-function page({ title, desc, body, path, pagefind = true, extraHead = '', scripts = '', type }) {
+function page({ title, desc, body, path, pagefind = true, pagefindIgnore = false, extraHead = '', scripts = '', type }) {
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>${esc(title)} · Ancient History Timeline</title>
-<meta name="description" content="${esc(desc || '')}">
+<title>${shown(title)} · Ancient History Timeline</title>
+<meta name="description" content="${shown(desc || '')}">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
@@ -593,7 +626,7 @@ function page({ title, desc, body, path, pagefind = true, extraHead = '', script
 <link rel="stylesheet" href="/assets/styles.css">
 ${extraHead}
 </head>
-<body>
+<body${pagefindIgnore ? ' data-pagefind-ignore' : ''}>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-inner">
@@ -616,7 +649,7 @@ ${extraHead}
   </div>
 </header>
 <script src="/assets/nav.js"></script>
-<main id="main" class="wrap"${pagefind ? ' data-pagefind-body' : ''}>
+<main id="main" class="wrap"${pagefind && !pagefindIgnore ? ' data-pagefind-body' : ''}>
 ${type ? `<span hidden data-pagefind-filter="type">${esc(type)}</span>` : ''}
 ${body}
 </main>
@@ -632,8 +665,8 @@ ${scripts}
 }
 
 const out = (rel, html) => { const p = join(DIST, rel); mkdirSync(dirname(p), { recursive: true }); writeFileSync(p, protectHtml(html)); };
-const head = (rec, opts = {}) => `<p class="eyebrow">${esc(TYPE_LABEL[rec.type])}</p><h1>${esc(rec.title)}</h1>${!opts.hideAlt && rec.alt_names?.length ? `<p class="muted">Also: ${esc(rec.alt_names.join(', '))}</p>` : ''}${rec.summary ? `<p class="lede">${esc(rec.summary)}</p>` : ''}`;
-const crumbs = (rec) => `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/browse/#${DIRS[rec.type]}">${esc(TYPE_LABEL[rec.type])}s</a></li><li aria-current="page">${esc(rec.title)}</li></ol></nav>`;
+const head = (rec, opts = {}) => `<p class="eyebrow">${esc(TYPE_LABEL[rec.type])}</p><h1>${shown(rec.title)}</h1>${!opts.hideAlt && rec.alt_names?.length ? `<p class="muted">Also: ${shown(rec.alt_names.join(', '))}</p>` : ''}${rec.summary ? `<p class="lede">${shown(rec.summary)}</p>` : ''}`;
+const crumbs = (rec) => `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/browse/#${DIRS[rec.type]}">${esc(TYPE_LABEL[rec.type])}s</a></li><li aria-current="page">${shown(rec.title)}</li></ol></nav>`;
 const leafletHead = '<link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">';
 const leafletScript = '<script src="/assets/vendor/leaflet/leaflet.js" defer></script>';
 
@@ -643,7 +676,7 @@ const recordsUsingMap = (mapId) => [...events, ...locations].filter((r) => r.map
 const eventsWith = (pid) => events.filter((e) => e.people?.includes(pid)).map((e) => e.id);
 
 // Location payload for client maps
-const locPayload = (l) => ({ id: l.id, title: l.title, lat: l.lat, lng: l.lng, url: urlOf(l), certainty: l.certainty?.level || 'unknown', percent: l.certainty?.percent ?? null, summary: l.summary || '' });
+const locPayload = (l) => ({ id: l.id, title: displaySpelling(l.title), lat: l.lat, lng: l.lng, url: urlOf(l), certainty: l.certainty?.level || 'unknown', percent: l.certainty?.percent ?? null, summary: displaySpelling(l.summary || '') });
 const jsonScript = (id, obj) => `<script type="application/json" id="${id}">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`;
 
 // ---------- build ----------
@@ -681,14 +714,15 @@ cpSync(join(NM, 'family-chart/LICENSE.txt'), join(DIST, 'assets/vendor/family-ch
 const sortKey = (a, b) => {
   const ya = placeYear(a);
   const yb = placeYear(b);
-  if (ya == null && yb == null) return a.title.localeCompare(b.title);
+  const nameOf = (r) => displaySpelling(r.title);
+  if (ya == null && yb == null) return nameOf(a).localeCompare(nameOf(b), 'en');
   if (ya == null) return 1;
   if (yb == null) return -1;
   if (ya !== yb) return ya - yb;
   const sa = a.sorting_year == null && a.standby ? 1 : 0;
   const sb = b.sorting_year == null && b.standby ? 1 : 0;
   if (sa !== sb) return sa - sb;
-  return (a.sort_order_within_year ?? 0) - (b.sort_order_within_year ?? 0) || a.title.localeCompare(b.title);
+  return (a.sort_order_within_year ?? 0) - (b.sort_order_within_year ?? 0) || nameOf(a).localeCompare(nameOf(b), 'en');
 };
 const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
 
@@ -701,15 +735,21 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
     return short ? { ...item, raleigh: short } : item;
   };
   const items = [
-    ...events.filter((e) => e.sorting_year != null).map((e) => stamp(e, { id: e.id, group: 'events', title: e.title, y: e.sorting_year, yEnd: e.chronologies.find((c) => c === sortingEntry(e.chronologies, e.sorting_basis))?.year_bc_ad_end ?? null, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 })),
+    ...events.filter((e) => e.sorting_year != null).map((e) => stamp(e, { id: e.id, group: 'events', title: displaySpelling(e.title), y: e.sorting_year, yEnd: e.chronologies.find((c) => c === sortingEntry(e.chronologies, e.sorting_basis))?.year_bc_ad_end ?? null, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 })),
     ...people.filter((p) => p.sorting_year != null).map((p) => {
-      const reignSort = p.sorting_basis?.slot === 'reign_start';
-      const end = reignSort ? null : (tierYear(p.dates?.death) || tierYear(p.dates?.translated));
+      const slot = p.sorting_basis?.slot;
+      const calc = p.sorting_basis?.tier === 'calculated';
+      const prefix = calc ? 'calc. ' : '';
+      const reignSort = slot === 'reign_start';
+      const end = reignSort || calc ? null : (tierYear(p.dates?.death) || tierYear(p.dates?.translated));
       const yEnd = end && end.y != null && end.y > p.sorting_year ? end.y : null;
-      const label = reignSort ? `reign start ${yearLabel(p.sorting_year)}` : (yEnd != null ? `${yearLabel(p.sorting_year)} – ${yearLabel(yEnd)}` : `born ${yearLabel(p.sorting_year)}`);
-      return stamp(p, { id: p.id, group: 'people', title: p.title, y: p.sorting_year, yEnd, label, tier: tierCls(p), url: urlOf(p), order: 0 });
+      const label = slot === 'death' ? `${prefix}died ${yearLabel(p.sorting_year)}`
+        : slot === 'translated' ? `${prefix}translated ${yearLabel(p.sorting_year)}`
+        : reignSort ? `${prefix}reign start ${yearLabel(p.sorting_year)}`
+        : (yEnd != null ? `${prefix}${yearLabel(p.sorting_year)} – ${yearLabel(yEnd)}` : `${prefix}born ${yearLabel(p.sorting_year)}`);
+      return stamp(p, { id: p.id, group: 'people', title: displaySpelling(p.title), y: p.sorting_year, yEnd, label, tier: tierCls(p), url: urlOf(p), order: 0 });
     }),
-    ...standbyRecords.map((r) => stamp(r, { id: r.id, group: r.type === 'event' ? 'events' : 'people', title: r.title, y: r.standby.year_bc_ad, yEnd: null, label: standbyItemLabel(r), tier: 'standby', standby: true, url: urlOf(r), order: 50 })),
+    ...standbyRecords.map((r) => stamp(r, { id: r.id, group: r.type === 'event' ? 'events' : 'people', title: displaySpelling(r.title), y: r.standby.year_bc_ad, yEnd: null, label: standbyItemLabel(r), tier: 'standby', standby: true, url: urlOf(r), order: 50 })),
   ];
   const chrono = [...events.filter((e) => e.sorting_year != null), ...standbyRecords].sort(sortKey);
   const undated = [...events, ...people].filter((r) => r.sorting_year == null && !r.standby);
@@ -718,8 +758,10 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
     const y = placeYear(r);
     const mark = standby
       ? '<span class="tag tag-standby">standby</span>'
-      : `<span class="tier tier-${tierCls(r)} small">${esc((TIERS[r.sorting_basis?.tier] || TIERS.none).label.split(' · ')[0])}</span>`;
-    return `<li data-placement="${standby ? 'standby' : 'tier'}" data-year="${y ?? ''}"><span class="yr">${esc(yearLabel(y) || 'Undated')}</span><a href="${urlOf(r)}">${esc(r.title)}</a> ${mark}${raleighAside(r)}</li>`;
+      : `<span class="tier-line"><span class="swatch tier-${tierCls(r)}" aria-hidden="true"></span><span class="tier tier-${tierCls(r)}">${esc((TIERS[r.sorting_basis?.tier] || TIERS.none).label.split(' · ')[0])}</span></span>`;
+    const rawYear = yearLabel(y) || 'Undated';
+    const yr = r.sorting_basis?.tier === 'calculated' ? `calc. ${rawYear}` : rawYear;
+    return `<li data-placement="${standby ? 'standby' : 'tier'}" data-year="${y ?? ''}"><span class="yr">${esc(yr)}</span><a href="${urlOf(r)}">${shown(r.title)}</a> ${mark}${raleighAside(r)}</li>`;
   };
   const body = `
 <section class="hero">
@@ -742,8 +784,7 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
       <div id="timeline-people" class="timeline home-timeline" aria-label="People"></div>
     </div>
   </div>
-  <div class="tier-toggles" role="group" aria-label="Dating tiers">${Object.entries(TIERS).filter(([k]) => k !== 'none').map(([k, t]) => `<button type="button" class="tier-toggle" data-tier-toggle="${t.cls}" aria-pressed="${k === 'cfah-anchor' ? 'true' : 'false'}"><span class="swatch tier-${t.cls}" aria-hidden="true"></span>${esc(t.label)}</button>`).join('')}<button type="button" class="tier-toggle" data-tier-toggle="standby" aria-pressed="false"><span class="swatch standby" aria-hidden="true"></span>Standby (no tier date)</button></div>
-  <ul class="legend small" aria-label="Timeline legend"><li><span class="lg-standby" aria-hidden="true"></span>Standby (no tier date): dashed and grey, off until that control is on. Not a sort year.</li></ul>
+  ${tierFilter(Object.entries(TIERS).filter(([k]) => k !== 'none').map(([k, t]) => tierToggle(t.cls, t.label, k === 'cfah-anchor', `tier-${t.cls}`)).join('') + tierToggle('standby', 'Standby (no tier date)', false, 'standby'), 'tier-note', 'Standby (no tier date): dashed and grey, off until that control is on. Not a sort year.')}
   <noscript><p>The interactive timeline needs JavaScript. The chronological list below has the same records.</p></noscript>
 </section>
 <section class="card" aria-labelledby="map-h">
@@ -768,15 +809,149 @@ ${jsonScript('map-data', locations.filter((l) => l.lat != null && l.lng != null)
     scripts: `<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>${leafletScript}<script src="/assets/app.js" defer></script>` }));
 }
 
+const RALEIGH_INTRO = `Sir Walter Raleigh, <i>The History of the World</i> (1617). His words, in book order. <a href="https://texts.earlyprint.org/works/A10357.xml">EarlyPrint A10357</a>`;
+const RALEIGH_POPOUT = `<svg class="raleigh-popout-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6.5 2.5H3.2A1.2 1.2 0 0 0 2 3.7v9.1a1.2 1.2 0 0 0 1.2 1.2h9.1a1.2 1.2 0 0 0 1.2-1.2V9.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8.5 2h5.5v5.5M14 2 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+function raleighPassages(recordId) {
+  const ids = raleighAccounts.accounts?.[recordId];
+  if (!ids?.length) return [];
+  const list = [];
+  for (const id of ids) {
+    const passage = raleighPassageById[id];
+    if (passage) list.push(passage);
+  }
+  return list;
+}
+
+function spellingToolbar() {
+  return `<div class="raleigh-toolbar"><div class="segmented" role="group" aria-label="Spelling"><button type="button" data-set-spelling="modern" aria-pressed="true">Modern spelling</button><button type="button" data-set-spelling="original" aria-pressed="false">Original spelling</button></div></div>`;
+}
+
+function spellingScript(rootId) {
+  const id = JSON.stringify(rootId);
+  return `<script>
+document.getElementById(${id})?.addEventListener('click', (event) => {
+  const button = event.target.closest('[data-set-spelling]');
+  if (!button) return;
+  const root = document.getElementById(${id});
+  const mode = button.getAttribute('data-set-spelling');
+  if (mode !== 'modern' && mode !== 'original') return;
+  root.dataset.spelling = mode;
+  for (const el of root.querySelectorAll('[data-set-spelling]')) el.setAttribute('aria-pressed', el === button ? 'true' : 'false');
+});
+</script>`;
+}
+
+function passageSpans(p) {
+  const spans = p.italics || [];
+  return `<p class="raleigh-text"><span class="spell-modern">${renderProse(p.passage, spans, { modern: true })}</span><span class="spell-original" data-pagefind-ignore="all">${renderProse(p.passage, spans, { modern: false })}</span></p>`;
+}
+
+function raleighAccount(recordId) {
+  const passages = raleighPassages(recordId);
+  const rec = byId[recordId];
+  if (!passages.length || !rec) return '';
+  const href = `${urlOf(rec)}raleigh/`;
+  const parts = passages.map((p) => `<details class="raleigh-passage"><summary>${esc(p.citation)}</summary>${passageSpans(p)}</details>`).join('\n');
+  return `<section class="card raleigh-spell" id="raleigh-account" data-spelling="modern">
+<a class="raleigh-popout" href="${esc(href)}" target="_blank" rel="noopener">${RALEIGH_POPOUT}<span>Open full text</span></a>
+<details class="raleigh-account">
+<summary>Raleigh's account</summary>
+<p class="small muted">${RALEIGH_INTRO}</p>
+${spellingToolbar()}
+${parts}
+</details>
+${spellingScript('raleigh-account')}
+</section>`;
+}
+
+function writeRaleighFullPages() {
+  let n = 0;
+  const missing = [];
+  for (const recordId of Object.keys(raleighAccounts.accounts || {})) {
+    const passages = raleighPassages(recordId);
+    if (!passages.length) continue;
+    const rec = byId[recordId];
+    if (!rec || (rec.type !== 'person' && rec.type !== 'event')) {
+      missing.push(recordId);
+      continue;
+    }
+    const back = urlOf(rec);
+    const blocks = passages.map((p) => `<h2>${esc(p.citation)}</h2>${passageSpans(p)}`).join('\n');
+    const body = `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/browse/#${DIRS[rec.type]}">${esc(TYPE_LABEL[rec.type])}s</a></li><li><a href="${esc(back)}">${shown(rec.title)}</a></li><li aria-current="page">Raleigh's account</li></ol></nav>
+<article id="raleigh-full" class="raleigh-spell" data-spelling="modern">
+<p class="small"><a href="${esc(back)}">Back to ${shown(rec.title)}</a></p>
+<h1>Raleigh's account of ${shown(rec.title)}</h1>
+<p class="small muted">${RALEIGH_INTRO}</p>
+${spellingToolbar()}
+${blocks}
+</article>
+${spellingScript('raleigh-full')}`;
+    out(`${DIRS[rec.type]}/${rec.id}/raleigh/index.html`, page({
+      title: `Raleigh's account of ${displaySpelling(rec.title)}`,
+      desc: `Sir Walter Raleigh's 1617 account of ${displaySpelling(rec.title)}, in book order.`,
+      body,
+      path: `${back}raleigh/`,
+      pagefind: false,
+      pagefindIgnore: true,
+    }));
+    n += 1;
+  }
+  if (missing.length) console.warn(`Raleigh full view skipped ${missing.length} ids with no person or event record: ${missing.slice(0, 8).join(', ')}`);
+  return n;
+}
+
+// Other people: people named by a history on this page, plus the links already stored.
+// Whole tokens, longest name first, so Tubalcain does not match Tubal.
+// Two records for one token stay unlinked unless the Tubal rule or an override selects one.
+function seeMoreList(items) {
+  if (items.length <= 5) return `<ul class="links">${items.join('')}</ul>`;
+  const n = items.length - 5;
+  return `<ul class="links">${items.slice(0, 5).join('')}</ul><details class="see-more"><summary>See more (${n})</summary><ul class="links">${items.slice(5).join('')}</ul></details>`;
+}
+function otherPeopleIds(rec) {
+  const units = unitsForRecord(rec, {
+    passages: raleighPassages(rec.id),
+    passageHosts,
+    nameForms: nameForms[rec.id] || [],
+  });
+  const counts = new Map();
+  for (const unit of units) {
+    const resolved = nameLinker.resolve(unit);
+    for (const [id, n] of resolved.counts) counts.set(id, (counts.get(id) || 0) + n);
+  }
+  const linked = rec.type === 'event' ? (rec.people || []) : (rec.related || []);
+  const ids = new Set(counts.keys());
+  for (const id of linked) if (byId[id]?.type === 'person') ids.add(id);
+  ids.delete(rec.id);
+  const yearOf = (id) => {
+    const y = byId[id]?.sorting_year;
+    return y == null ? Infinity : y;
+  };
+  return [...ids].filter((id) => byId[id]?.type === 'person').sort((a, b) => {
+    const ca = counts.get(a) || 0;
+    const cb = counts.get(b) || 0;
+    if (ca !== cb) return cb - ca;
+    if (yearOf(a) !== yearOf(b)) return yearOf(a) - yearOf(b);
+    return displaySpelling(byId[a].title).localeCompare(displaySpelling(byId[b].title), 'en');
+  });
+}
+function otherPeopleSection(rec) {
+  const ids = otherPeopleIds(rec);
+  if (!ids.length) return '';
+  return `<section class="card" id="other-people"><h2>Other people</h2>${seeMoreList(ids.map((id) => `<li>${link(id)}</li>`))}</section>`;
+}
+
 // Events
 for (const e of events) {
   const body = `${crumbs(e)}${articleOpen(e.id)}${recordTop(e.id, `${head(e)}${sortBadge(e)}`)}
-${e.description ? `<section class="card"><h2>Description</h2><p>${esc(e.description)}</p></section>` : ''}
+${e.description ? `<section class="card"><h2>Description</h2><p>${shown(e.description)}</p></section>` : ''}
+${raleighAccount(e.id)}
 ${e.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(e.scripture_refs)}</section>` : ''}
-<section class="card"><h2>Chronologies</h2>${chronTable(e.chronologies, { sortYear: e.sorting_year, basis: e.sorting_basis, caption: `Dates for ${e.title}, CFAH first` })}</section>
+<section class="card"><h2>Chronologies</h2>${chronTable(e.chronologies, { sortYear: e.sorting_year, basis: e.sorting_basis, caption: `Dates for ${displaySpelling(e.title)}, CFAH first` })}</section>
 ${flagsSection(e, e.chronologies)}
 ${showsItalicDerived(e.chronologies) ? italicsNote() : ''}
-<div class="grid2">${linkList(e.people, 'People')}${linkList(e.locations, 'Places')}</div>
+<div class="grid2">${otherPeopleSection(e)}${linkList(e.locations, 'Places')}</div>
 ${mapThumbs(e.maps)}
 ${linkList(e.related, 'Related')}
 ${chartSection(e.id)}
@@ -804,7 +979,7 @@ function personTimeline(p) {
   if (stop == null && textDeath) { stop = textDeath.year_bc_ad; notes.push(`Death year from CFAH paper text (${textDeath.date}); it is display only, not a sort tier.`); }
   else if (stop == null && cfahReign?.year_bc_ad_end != null) { stop = cfahReign.year_bc_ad_end; notes.push(`Death year unknown: the window ends at the end of the CFAH reign (${cfahReign.date}).`); }
   if (start == null && ys.length) { start = Math.min(...ys); notes.push('Birth year unknown in tiers 1–4 or Generations (provisional): the window starts at the first linked event.'); }
-  if (stop == null && ys.length) { stop = Math.max(...ys); notes.push(`Death year unknown in tiers 1–4 or Generations (provisional): the window ends at the last linked event (${own.find((e) => e.sorting_year === stop).title}, ${yearLabel(stop)}).`); }
+  if (stop == null && ys.length) { stop = Math.max(...ys); notes.push(`Death year unknown in tiers 1–4 or Generations (provisional): the window ends at the last linked event (${displaySpelling(own.find((e) => e.sorting_year === stop).title)}, ${yearLabel(stop)}).`); }
   // no birth or death year: a reign gives the window
   const reign = start == null && stop == null ? tierYear(d.reign) : null;
   if (reign) { start = reign.y; stop = reign.yEnd ?? reign.y; notes.push(`No birth or death year in tiers 1–4 or the provisional sources: the window shows the reign (${yearLabel(start)}${stop !== start ? `–${yearLabel(stop)}` : ''}${reign.tier === 'provisional' ? ', provisional' : ''}).`); }
@@ -813,6 +988,22 @@ function personTimeline(p) {
     start = stop = p.standby.year_bc_ad;
     fromStandby = true;
   }
+  const calcFill = (slot) => {
+    const item = (p.calculated || []).find((c) => c.slot === slot);
+    if (!item) return null;
+    const key = slot === 'reign_start' ? 'reign' : slot;
+    if ((p.dates?.[key] || []).some((e) => e.year_bc_ad != null)) return null;
+    return item;
+  };
+  const calcBirth = calcFill('birth');
+  const calcDeath = calcFill('death');
+  const calcTrans = calcFill('translated');
+  const calcReign = calcFill('reign_start');
+  if (start == null && calcBirth) { start = calcBirth.year_bc_ad; notes.push(`Birth year calculated: ${calcBirth.arithmetic}`); }
+  if (stop == null && calcDeath) { stop = calcDeath.year_bc_ad; notes.push(`Death year calculated: ${calcDeath.arithmetic}`); }
+  else if (stop == null && calcTrans) { stop = calcTrans.year_bc_ad; notes.push(`Translation year calculated: ${calcTrans.arithmetic}`); }
+  if (start == null && stop == null && calcReign) { start = stop = calcReign.year_bc_ad; notes.push(`Reign start calculated: ${calcReign.arithmetic}`); }
+  const fromCalc = !fromStandby && !birth && !end && !reign && !!(calcBirth || calcDeath || calcTrans || calcReign);
   if (start == null && stop == null) return { none: true, notes: ['No birth or death year in tiers 1–4 and no dated linked events, so there is no timeline yet.'], ownUndated };
   if (start == null) { start = stop; notes.push('Birth year unknown and no earlier linked event.'); }
   if (stop == null) { stop = start; notes.push(cfahReign && birth == null ? 'Death year and reign end unknown, and no later linked event: the window shows the reign date only.' : 'Death year unknown and no linked events after birth: the window shows the birth year only.'); }
@@ -820,7 +1011,7 @@ function personTimeline(p) {
   // own-life events dated outside the lifespan (e.g. a provisional Generations date on a different chronology) widen the window so they stay visible
   const outside = own.filter((e) => e.sorting_year < start || e.sorting_year > stop);
   if (outside.length) {
-    notes.push(`The window is widened to show ${outside.length === 1 ? 'a linked event' : `${outside.length} linked events`} dated outside the lifespan: ${outside.map((e) => `${e.title} (${yearLabel(e.sorting_year)}, ${e.sorting_basis?.tier === 'provisional' ? `provisional ${e.sorting_basis.chronology === 'morecraft' ? 'Morecraft' : 'Generations'} date` : e.sorting_basis?.tier || 'unsorted'})`).join('; ')}. See the event page for the conflicting dates.`);
+    notes.push(`The window is widened to show ${outside.length === 1 ? 'a linked event' : `${outside.length} linked events`} dated outside the lifespan: ${outside.map((e) => `${displaySpelling(e.title)} (${yearLabel(e.sorting_year)}, ${e.sorting_basis?.tier === 'provisional' ? `provisional ${e.sorting_basis.chronology === 'morecraft' ? 'Morecraft' : 'Generations'} date` : e.sorting_basis?.tier || 'unsorted'})`).join('; ')}. See the event page for the conflicting dates.`);
     start = Math.min(start, ...outside.map((e) => e.sorting_year)); stop = Math.max(stop, ...outside.map((e) => e.sorting_year));
   }
   if (p.standby && !fromStandby && (p.standby.year_bc_ad < start || p.standby.year_bc_ad > stop)) {
@@ -832,20 +1023,24 @@ function personTimeline(p) {
   const isEndEvt = (e) => end && e.sorting_year === end.y && (/death|translated/.test(e.id));
   // Same end rule as the home chart: tier death, or translation when death has no year, and only when it is after the tier birth. Not the widened window, a reign, or lifespan_years.
   const life = birth && end && end.y > birth.y ? { y: birth.y, yEnd: end.y, label: `${yearLabel(birth.y)} – ${yearLabel(end.y)}` } : null;
-  if (life) items.push({ id: 'lifespan', group: 'own', own: true, span: true, raleighOn: 'person', title: p.title, y: life.y, yEnd: life.yEnd, label: life.label, tier: tierCls(p), url: '#birth', order: -2 });
-  if (birth && !life && !own.some(isBirthEvt)) items.push({ id: 'birth', group: 'own', own: true, raleighOn: 'person', title: `Birth of ${p.title}`, y: birth.y, label: yearLabel(birth.y, birth.yEnd), tier: (TIERS[birth.tier] || TIERS.none).cls, url: '#birth', order: -1 });
-  if (end && !life && !own.some(isEndEvt)) items.push({ id: endKind, group: 'own', own: true, raleighOn: 'person', title: `${endKind === 'death' ? 'Death' : 'Translation'} of ${p.title}`, y: end.y, label: yearLabel(end.y, end.yEnd), tier: (TIERS[end.tier] || TIERS.none).cls, url: `#${endKind}`, order: 9 });
-  if (cfahReign) items.push({ id: 'cfah-reign', group: 'own', own: true, raleighOn: 'person', title: `Reign of ${p.title} (CFAH: ${cfahReign.date})`, y: cfahReign.year_bc_ad, label: yearLabel(cfahReign.year_bc_ad, cfahReign.year_bc_ad_end ?? null), tier: TIERS.none.cls, url: '#reign', order: 0 });
-  if (textDeath) items.push({ id: 'cfah-death', group: 'own', own: true, raleighOn: 'person', title: `Death of ${p.title} (CFAH: ${textDeath.date})`, y: textDeath.year_bc_ad, label: yearLabel(textDeath.year_bc_ad), tier: TIERS.none.cls, url: '#death', order: 9 });
-  for (const e of own) items.push({ id: e.id, group: 'own', own: true, title: e.title, y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
+  if (life) items.push({ id: 'lifespan', group: 'own', own: true, span: true, raleighOn: 'person', title: displaySpelling(p.title), y: life.y, yEnd: life.yEnd, label: life.label, tier: tierCls(p), url: '#birth', order: -2 });
+  if (birth && !life && !own.some(isBirthEvt)) items.push({ id: 'birth', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Birth of ${p.title}`), y: birth.y, label: yearLabel(birth.y, birth.yEnd), tier: (TIERS[birth.tier] || TIERS.none).cls, url: '#birth', order: -1 });
+  else if (calcBirth && !life) items.push({ id: 'calc-birth', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Birth of ${p.title}`), y: calcBirth.year_bc_ad, label: `calc. ${yearLabel(calcBirth.year_bc_ad)}`, tier: 'tc', url: '#birth', order: -1 });
+  if (end && !life && !own.some(isEndEvt)) items.push({ id: endKind, group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`${endKind === 'death' ? 'Death' : 'Translation'} of ${p.title}`), y: end.y, label: yearLabel(end.y, end.yEnd), tier: (TIERS[end.tier] || TIERS.none).cls, url: `#${endKind}`, order: 9 });
+  else if (calcDeath && !end) items.push({ id: 'calc-death', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Death of ${p.title}`), y: calcDeath.year_bc_ad, label: `calc. ${yearLabel(calcDeath.year_bc_ad)}`, tier: 'tc', url: '#death', order: 9 });
+  else if (calcTrans && !end) items.push({ id: 'calc-translated', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Translation of ${p.title}`), y: calcTrans.year_bc_ad, label: `calc. ${yearLabel(calcTrans.year_bc_ad)}`, tier: 'tc', url: '#translated', order: 9 });
+  if (calcReign && !cfahReign && !reign) items.push({ id: 'calc-reign', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Reign of ${p.title}`), y: calcReign.year_bc_ad, label: `calc. ${yearLabel(calcReign.year_bc_ad)}`, tier: 'tc', url: '#reign', order: 0 });
+  if (cfahReign) items.push({ id: 'cfah-reign', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Reign of ${p.title} (CFAH: ${cfahReign.date})`), y: cfahReign.year_bc_ad, label: yearLabel(cfahReign.year_bc_ad, cfahReign.year_bc_ad_end ?? null), tier: TIERS.none.cls, url: '#reign', order: 0 });
+  if (textDeath) items.push({ id: 'cfah-death', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Death of ${p.title} (CFAH: ${textDeath.date})`), y: textDeath.year_bc_ad, label: yearLabel(textDeath.year_bc_ad), tier: TIERS.none.cls, url: '#death', order: 9 });
+  for (const e of own) items.push({ id: e.id, group: 'own', own: true, title: displaySpelling(e.title), y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
   const ctx = events.filter((e) => !ownIds.has(e.id) && e.sorting_year != null && e.sorting_year >= start && e.sorting_year <= stop);
-  for (const e of ctx) items.push({ id: e.id, group: 'context', own: false, title: e.title, y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
-  if (p.standby) items.push({ id: 'standby', group: 'own', own: true, standby: true, raleighOn: 'person', title: p.title, y: p.standby.year_bc_ad, label: standbyItemLabel(p), tier: 'standby', url: '#standby', order: -1 });
+  for (const e of ctx) items.push({ id: e.id, group: 'context', own: false, title: displaySpelling(e.title), y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
+  if (p.standby) items.push({ id: 'standby', group: 'own', own: true, standby: true, raleighOn: 'person', title: displaySpelling(p.title), y: p.standby.year_bc_ad, label: standbyItemLabel(p), tier: 'standby', url: '#standby', order: -1 });
   for (const other of [...events, ...people]) {
     if (other.id === p.id || other.sorting_year != null || !other.standby) continue;
     const y = other.standby.year_bc_ad;
     if (y < start || y > stop) continue;
-    items.push({ id: other.id, group: 'context', own: false, standby: true, title: other.title, y, label: standbyItemLabel(other), tier: 'standby', url: urlOf(other), order: 80 });
+    items.push({ id: other.id, group: 'context', own: false, standby: true, title: displaySpelling(other.title), y, label: standbyItemLabel(other), tier: 'standby', url: urlOf(other), order: 80 });
   }
   items.sort((a, b) => a.y - b.y || (a.standby ? 1 : 0) - (b.standby ? 1 : 0) || a.order - b.order || a.title.localeCompare(b.title));
   for (const it of items) {
@@ -863,6 +1058,7 @@ function personTimeline(p) {
     : null;
   return {
     start, stop, birth, end: end || (textDeath ? { y: textDeath.year_bc_ad, yEnd: null, tier: 'none' } : null), endKind: endKind || (textDeath ? 'death' : null), life, items, notes, ownUndated, fromStandby, standbyNote, standbyOwn: !!p.standby,
+    fromCalc,
     ownCount: items.filter((i) => i.own && !i.standby).length,
     ctxCount: items.filter((i) => !i.own && !i.standby).length,
     standbyCount: items.filter((i) => i.standby).length,
@@ -872,22 +1068,24 @@ const personTimelines = {};
 
 function personTimelineSection(p) {
   const t = personTimelines[p.id] = personTimeline(p);
-  const notes = t.notes.map((n) => `<p class="small muted">${esc(n)}</p>`).join('');
+  const notes = t.notes.map((n) => `<p class="small muted">${shown(n)}</p>`).join('');
   const undated = t.ownUndated.length ? `<p class="small muted">Linked events with no sort year (not shown): ${t.ownUndated.map((e) => link(e.id)).join(', ')}</p>` : '';
   if (t.none) return `<section class="card" aria-labelledby="ptl-h"><h2 id="ptl-h">Timeline</h2>${notes}${undated}</section>`;
   const win = `${yearLabel(t.start)} – ${yearLabel(t.stop)}`;
   const winLead = t.fromStandby
     ? `Window: <strong>${esc(win)}</strong> (standby placement, not a sort year).`
-    : `Window: <strong>${esc(win)}</strong> (birth to ${t.endKind || 'last linked event'}, using the four-tier sort rule).${t.life ? ` The lifespan is one bar, ${esc(t.life.label)}.` : ''}`;
+    : t.fromCalc
+      ? `Window: <strong>${esc(win)}</strong> (calculated from printed figures; a higher tier would replace it).`
+      : `Window: <strong>${esc(win)}</strong> (birth to ${t.endKind || 'last linked event'}, using the four-tier sort rule).${t.life ? ` The lifespan is one bar, ${esc(t.life.label)}.` : ''}`;
   const li = (i) => {
     const tag = i.standby
       ? '<span class="tag tag-standby">standby</span>'
-      : (i.own ? `<span class="tag tag-own">${esc(p.title)}’s life</span>` : '<span class="tag tag-ctx">context</span>');
+      : (i.own ? `<span class="tag tag-own">${shown(p.title)}’s life</span>` : '<span class="tag tag-ctx">context</span>');
     const aside = i.raleighHtml ? ` <span class="muted small raleigh-derived" title="${esc(RALEIGH_DERIVED_NOTE)}">${i.raleighHtml}</span>` : '';
-    return `<li class="${i.own ? 'own' : 'ctx'}${i.standby ? ' standby' : ''}" data-placement="${i.standby ? 'standby' : 'tier'}" data-year="${i.y}"><span class="yr">${esc(i.label)}</span><a href="${esc(i.url)}">${esc(i.title)}</a> ${tag}${aside}</li>`;
+    return `<li class="${i.own ? 'own' : 'ctx'}${i.standby ? ' standby' : ''}" data-placement="${i.standby ? 'standby' : 'tier'}" data-year="${i.y}"><span class="yr">${esc(i.label)}</span><a href="${esc(i.url)}">${shown(i.title)}</a> ${tag}${aside}</li>`;
   };
   return `<section class="card" aria-labelledby="ptl-h">
-  <div class="section-head"><h2 id="ptl-h">Timeline of ${esc(p.title)}’s lifetime</h2>
+  <div class="section-head"><h2 id="ptl-h">Timeline of ${shown(p.title)}’s lifetime</h2>
     <div class="toolbar" role="group" aria-label="Timeline controls">
       <button type="button" data-tl="in" aria-label="Zoom in">+</button>
       <button type="button" data-tl="out" aria-label="Zoom out">−</button>
@@ -897,12 +1095,12 @@ function personTimelineSection(p) {
   ${notes}
   ${t.standbyNote ? `<p class="small muted" id="standby">${esc(t.standbyNote)}</p>` : ''}
   <div id="timeline" class="timeline person-timeline" aria-describedby="ptl-list-h"></div>
-  ${t.standbyCount ? `<div class="tier-toggles" role="group" aria-label="Dating tiers"><button type="button" class="tier-toggle" data-tier-toggle="standby" aria-pressed="false"><span class="swatch standby" aria-hidden="true"></span>Standby (no tier date)</button></div>` : ''}
-  <ul class="legend small" aria-label="Timeline legend"><li><span class="lg-own" aria-hidden="true"></span>${esc(p.title)}’s life (${t.ownCount}): solid</li><li><span class="lg-ctx" aria-hidden="true"></span>Other events in their lifetime (${t.ctxCount}): faded, dashed, marked “context”</li>${t.standbyCount ? `<li><span class="lg-standby" aria-hidden="true"></span>Standby placement (${t.standbyCount}): dashed and grey, off until Standby (no tier date) is on</li>` : ''}</ul>
+  ${t.standbyCount ? tierFilter(tierToggle('standby', 'Standby (no tier date)', false, 'standby'), 'tier-note', `Standby placement (${t.standbyCount}): dashed and grey, off until Standby (no tier date) is on. Not a sort year.`) : ''}
+  <ul class="legend small" aria-label="Timeline legend"><li><span class="lg-own" aria-hidden="true"></span>${shown(p.title)}’s life (${t.ownCount}): solid</li><li><span class="lg-ctx" aria-hidden="true"></span>Other events in their lifetime (${t.ctxCount}): faded, dashed, marked “context”</li></ul>
   <h3 id="ptl-list-h">Records in order</h3>
   <ol class="chrono-list person-list">${t.items.map(li).join('')}</ol>
   ${undated}
-  ${jsonScript('tl-data', { mode: 'person', person: p.title, start: t.start, stop: t.stop, items: t.items })}
+  ${jsonScript('tl-data', { mode: 'person', person: displaySpelling(p.title), start: t.start, stop: t.stop, items: t.items })}
 </section>`;
 }
 
@@ -927,7 +1125,8 @@ function nameSection(p) {
     return noteKey.get(key);
   };
   const fn = (n) => `<a class="fn" href="#${p.id}-fn-${n}" id="${p.id}-fnref-${n}"><sup>${n}</sup><span class="visually-hidden"> Footnote</span></a>`;
-  const formCell = (f) => `<bdi class="name-form" lang="${SCRIPT_LANG[f.script] || 'en'}" dir="${f.script === 'hebrew' || f.script === 'aramaic' ? 'rtl' : 'ltr'}">${esc(f.form)}</bdi>`;
+  const formText = (f) => (f.script === 'latin' ? displayNameForm(f.form) : f.form);
+  const formCell = (f) => `<bdi class="name-form" lang="${SCRIPT_LANG[f.script] || 'en'}" dir="${f.script === 'hebrew' || f.script === 'aramaic' ? 'rtl' : 'ltr'}">${esc(formText(f))}</bdi>`;
   // One row per spelling. Form + writing + kind. Pointing stays distinct. Witnesses share the row. Render only; source rows stay.
   const spellingKey = (form, writing, kind) => `${String(form).normalize('NFC')}\u001f${writing}\u001f${kind}`;
   const witnessCell = (items) => {
@@ -963,14 +1162,32 @@ function nameSection(p) {
       looseGroups.push(a);
     }
   }
-  const rows = [
-    ...grouped.map((g) => {
+  // Top five: the page title first, then the forms with the most witnesses, then original before rendering before alternate, then the order in name-forms.json.
+  const nameRows = [
+    ...grouped.map((g, index) => {
       const writing = SCRIPT_LABEL[g.f.script] || g.f.script;
       const kind = ROLE_LABEL[g.f.role] || g.f.role;
-      return `<tr data-spelling="${esc(spellingKey(g.f.form, writing, kind))}"><th scope="row">${formCell(g.f)}</th><td>${esc(writing)}</td><td>${esc(kind)}</td><td>${witnessCell(g.items)}</td></tr>`;
+      return { index, form: g.f.form, role: g.f.role, witnesses: g.items.length, html: `<tr data-spelling="${esc(spellingKey(g.f.form, writing, kind))}"><th scope="row">${formCell(g.f)}</th><td>${esc(writing)}</td><td>${esc(kind)}</td><td>${witnessCell(g.items)}</td></tr>` };
     }),
-    ...looseGroups.map((a) => `<tr data-spelling="${esc(spellingKey(a, 'Latin letters', 'Alternate spelling'))}"><th scope="row">${esc(a)}</th><td>Latin letters</td><td>Alternate spelling</td><td><span class="muted">Written source not yet attached</span></td></tr>`),
+    ...looseGroups.map((a, index) => ({ index: grouped.length + index, form: a, role: 'alternate', witnesses: 0, html: `<tr data-spelling="${esc(spellingKey(a, 'Latin letters', 'Alternate spelling'))}"><th scope="row">${esc(displayNameForm(a))}</th><td>Latin letters</td><td>Alternate spelling</td><td><span class="muted">Written source not yet attached</span></td></tr>` })),
   ];
+  const titleFolds = new Set([foldName(p.title), foldName(displaySpelling(p.title))]);
+  const roleRank = { original: 0, rendering: 1, alternate: 2 };
+  nameRows.sort((a, b) => {
+    const pa = titleFolds.has(foldName(a.form)) ? 0 : 1;
+    const pb = titleFolds.has(foldName(b.form)) ? 0 : 1;
+    if (pa !== pb) return pa - pb;
+    if (a.witnesses !== b.witnesses) return b.witnesses - a.witnesses;
+    const ra = roleRank[a.role] ?? 9;
+    const rb = roleRank[b.role] ?? 9;
+    if (ra !== rb) return ra - rb;
+    return a.index - b.index;
+  });
+  const nameTable = (list, caption) => `<div class="table-wrap"><table class="chron names"><caption>${esc(caption)}</caption><thead><tr><th scope="col">Form</th><th scope="col">Writing</th><th scope="col">Kind</th><th scope="col">Witness</th></tr></thead><tbody>${list.map((r) => r.html).join('')}</tbody></table></div>`;
+  const nameCaption = 'Spellings and original-language writings. A number leads to the footnote that names the text.';
+  const nameTables = !nameRows.length ? '' : nameRows.length <= 5
+    ? nameTable(nameRows, nameCaption)
+    : `${nameTable(nameRows.slice(0, 5), nameCaption)}<details class="see-more"><summary>See more (${nameRows.length - 5})</summary>${nameTable(nameRows.slice(5), 'Further spellings of this name.')}</details>`;
   const hasOriginal = forms.some((f) => f.role === 'original');
   const hasInscription = forms.some((f) => f.witness === 'inscription');
   const tipnr = forms.some((f) => f.source_text_id === 'stepbible-tipnr');
@@ -980,12 +1197,12 @@ function nameSection(p) {
     const src = sourceById[f.source_text_id];
     const open = f.witness === 'bible' ? 'Berean Literal Bible' : 'Open the passage';
     const index = src && src.url !== f.link ? ` ${ext(src.url, esc(src.title))}.` : '';
-    return `<li id="${p.id}-fn-${n}" role="listitem"><a class="fn" href="#${p.id}-fnref-${n}"><span class="visually-hidden">Back to footnote </span>${n}</a> ${esc(f.citation)}${f.note ? ` ${esc(f.note)}` : ''} ${ext(f.link, open)}.${index}</li>`;
+    return `<li id="${p.id}-fn-${n}" role="listitem"><a class="fn" href="#${p.id}-fnref-${n}"><span class="visually-hidden">Back to footnote </span>${n}</a> <span data-pagefind-ignore="all">${esc(f.citation)}${f.note ? ` ${esc(f.note)}` : ''}</span> ${ext(f.link, open)}.${index}</li>`;
   }).join('');
   return `<section class="card" id="name" aria-labelledby="name-h">
   <h2 id="name-h">Name</h2>
-  <p>The name on this page is <strong>${esc(p.title)}</strong>.</p>
-  ${rows.length ? `<div class="table-wrap"><table class="chron names"><caption>Spellings and original-language writings. A number leads to the footnote that names the text.</caption><thead><tr><th scope="col">Form</th><th scope="col">Writing</th><th scope="col">Kind</th><th scope="col">Witness</th></tr></thead><tbody>${rows.join('')}</tbody></table></div>` : ''}
+  <p>The name on this page is <strong>${shown(p.title)}</strong>.</p>
+  ${nameTables}
   ${hasOriginal ? '' : '<p class="small muted">No original-language writing of this name has been entered. A form is added only after it has been read in Scripture, a history, or an inscription.</p>'}
   ${hasInscription ? '' : '<p class="small muted">No inscription that writes this name has been entered.</p>'}
   ${notes.length ? `<details class="name-notes-twirl" id="${p.id}-name-notes"><summary>Footnotes</summary><ol class="name-notes" role="list">${footnotes}</ol></details>` : ''}
@@ -993,18 +1210,28 @@ function nameSection(p) {
 </section>`;
 }
 
-// Family chart: recorded fathers and named children only. There is no mother, sex or adoption field.
-// A child's `father` and a parent's `children` array are joined. Where they disagree, the father field wins.
+// Family chart: recorded fathers, mothers, and named children. A spouse is named in the list, not drawn as a parent.
+// A child's father field wins over a parent's children array. A mother is kept even when the father is someone else.
 const fatherOf = {};
+const motherOf = {};
 const childSet = Object.fromEntries(people.map((p) => [p.id, new Set()]));
+const motherIdOf = (p) => {
+  const m = p?.mother;
+  if (!m) return null;
+  const id = typeof m === 'string' ? m : m.id;
+  return byId[id]?.type === 'person' ? id : null;
+};
 for (const p of people) {
   if (p.father && byId[p.father]?.type === 'person') fatherOf[p.id] = p.father;
+  const mid = motherIdOf(p);
+  if (mid) motherOf[p.id] = mid;
   for (const c of p.children || []) if (byId[c]?.type === 'person') childSet[p.id].add(c);
 }
 for (const [child, father] of Object.entries(fatherOf)) childSet[father].add(child);
 for (const p of people) for (const c of childSet[p.id]) if (!fatherOf[c]) fatherOf[c] = p.id;
 for (const p of people) for (const c of [...childSet[p.id]]) if (fatherOf[c] !== p.id) childSet[p.id].delete(c);
-const byBirth = (a, b) => (byId[a].sorting_year ?? Infinity) - (byId[b].sorting_year ?? Infinity) || byId[a].title.localeCompare(byId[b].title);
+for (const [child, mother] of Object.entries(motherOf)) childSet[mother].add(child);
+const byBirth = (a, b) => (byId[a].sorting_year ?? Infinity) - (byId[b].sorting_year ?? Infinity) || displaySpelling(byId[a].title).localeCompare(displaySpelling(byId[b].title), 'en');
 const ancestorIds = (id, depth) => {
   const out = [];
   let cur = id;
@@ -1034,28 +1261,34 @@ const cardYears = (p) => {
   if (birth && end) return yearLabel(birth.y, end.y);
   if (birth) return yearLabel(birth.y);
   if (end) return yearLabel(end.y);
+  if (p.sorting_basis?.tier === 'calculated' && p.sorting_year != null) return `calc. ${yearLabel(p.sorting_year)}`;
   return null;
 };
 function familyData(id, depth) {
   const ids = new Set([id]);
   for (const a of ancestorIds(id, depth)) ids.add(a.id);
   for (const level of descendantLevels(id, depth)) for (const c of level) ids.add(c);
+  // A named mother is drawn beside the father even when she is not in the father-line.
+  for (const pid of [...ids]) if (motherOf[pid]) ids.add(motherOf[pid]);
   const rows = [];
   for (const pid of ids) {
     const p = byId[pid];
-    const parents = fatherOf[pid] && ids.has(fatherOf[pid]) ? [fatherOf[pid]] : [];
+    const parents = [];
+    if (fatherOf[pid] && ids.has(fatherOf[pid])) parents.push(fatherOf[pid]);
+    if (motherOf[pid] && ids.has(motherOf[pid]) && !parents.includes(motherOf[pid])) parents.push(motherOf[pid]);
     const children = [...childSet[pid]].filter((c) => ids.has(c)).sort(byBirth);
     const years = cardYears(p);
-    const row = { id: pid, data: { label: p.title, url: urlOf(p), y: p.sorting_year }, rels: { parents, children, spouses: [] } };
-    if (childSet[pid].size) row.data.gender = 'M';
+    const row = { id: pid, data: { label: displaySpelling(p.title), url: urlOf(p), y: p.sorting_year }, rels: { parents, children, spouses: [] } };
+    if ([...childSet[pid]].some((c) => fatherOf[c] === pid)) row.data.gender = 'M';
+    else if ([...childSet[pid]].some((c) => motherOf[c] === pid)) row.data.gender = 'F';
     if (years) row.data.years = years;
     rows.push(row);
   }
   for (const row of rows) for (const c of row.rels.children) {
     const child = rows.find((r) => r.id === c);
-    if (!child?.rels.parents.includes(row.id)) throw new Error(`Family chart: ${c} is a child of ${row.id} but does not list that father`);
+    if (!child?.rels.parents.includes(row.id)) throw new Error(`Family chart: ${c} is a child of ${row.id} but does not list that parent`);
   }
-  rows.sort((a, b) => (a.id === id ? -1 : b.id === id ? 1 : a.data.label.localeCompare(b.data.label)));
+  rows.sort((a, b) => (a.id === id ? -1 : b.id === id ? 1 : a.data.label.localeCompare(b.data.label, 'en')));
   return rows;
 }
 const relNames = (ids) => ids.length ? ids.map(link).join(', ') : '<span class="muted">None recorded</span>';
@@ -1064,6 +1297,15 @@ const DESC_LABELS = ['Children', 'Grandchildren', 'Great-grandchildren'];
 const familyHead = '<link rel="stylesheet" href="/assets/vendor/family-chart/family-chart.css">';
 const familyScripts = '<script src="/assets/vendor/d3/d3.min.js" defer></script><script src="/assets/vendor/family-chart/family-chart.min.js" defer></script>';
 
+function kinHtml(item) {
+  if (!item) return '<span class="muted">Not recorded</span>';
+  const id = typeof item === 'string' ? item : item.id;
+  if (byId[id]?.type !== 'person') return '<span class="muted">Not recorded</span>';
+  const uncertain = typeof item === 'object' && item.uncertain;
+  const mark = uncertain ? `<abbr title="${esc(item.note || 'Uncertain in the cited source.')}">?</abbr>` : '';
+  return `${link(id)}${mark}`;
+}
+const kinList = (list) => (list?.length ? list.map(kinHtml).join(', ') : '<span class="muted">Not recorded</span>');
 function familySection(p) {
   const anc = ancestorIds(p.id, 3);
   const desc = descendantLevels(p.id, 3);
@@ -1073,7 +1315,8 @@ function familySection(p) {
   <h2 id="family-h">Family</h2>
   <ul class="family-list" id="family-brief">
     <li><span class="rel">Father</span> ${anc[0] ? link(anc[0].id) : '<span class="muted">Not recorded</span>'}</li>
-    <li><span class="rel">Mother</span> <span class="muted">Not recorded</span></li>
+    <li><span class="rel">Mother</span> ${kinHtml(p.mother)}</li>
+    <li><span class="rel">Spouse</span> ${kinList(p.spouse)}</li>
     <li><span class="rel">Children</span> ${relNames(desc[0] || [])}</li>
   </ul>
   <details class="family-twirl" id="family-chart-details">
@@ -1084,12 +1327,12 @@ function familySection(p) {
       <button type="button" data-family="fit">Fit</button>
       <label class="family-switch"><input type="checkbox" role="switch" id="family-wide" aria-controls="family-dialog"><span>Expand Family Chart</span></label>
     </div>
-  <p id="family-note" class="small muted">The chart shows the parents and children recorded for ${esc(p.title)}. A father is drawn when the data names him. Mothers are not stored, so a dashed card says the other parent is not recorded. Named children are not marked as son, daughter or adopted. A name with a page is a link.</p>
-  <div class="family-chart-slot" id="family-chart-slot"><div id="family-chart" class="f3 family-chart" role="group" aria-label="Family chart of ${esc(p.title)}"></div></div>
+  <p id="family-note" class="small muted">The chart shows the parents and children recorded for ${shown(p.title)}. A father is drawn when the data names him. A mother is drawn when the data names her. If the mother is not stored, a dashed card says the other parent is not recorded. Named children are not marked as son, daughter or adopted. A name with a page is a link.</p>
+  <div class="family-chart-slot" id="family-chart-slot"><div id="family-chart" class="f3 family-chart" role="group" aria-label="Family chart of ${shown(p.title)}"></div></div>
   <ul class="legend small" aria-label="Family chart legend"><li><span class="lg-father" aria-hidden="true"></span>Recorded as a father, solid bar</li><li><span class="lg-missing" aria-hidden="true"></span>Other parent, not recorded, dashed</li><li><span class="lg-person" aria-hidden="true"></span>Named person, role not recorded</li></ul>
   <noscript><p>The chart needs JavaScript. The names above list the same parents and children.</p></noscript>
   <dialog id="family-dialog" class="family-dialog" aria-labelledby="family-dialog-h">
-    <div class="family-dialog-bar"><h2 id="family-dialog-h">Family of ${esc(p.title)}</h2>
+    <div class="family-dialog-bar"><h2 id="family-dialog-h">Family of ${shown(p.title)}</h2>
       <div class="toolbar" role="group" aria-label="Wider family chart controls">
         <button type="button" data-family="in" aria-label="Zoom in">+</button>
         <button type="button" data-family="out" aria-label="Zoom out">−</button>
@@ -1115,15 +1358,26 @@ for (const p of people) {
 ${sf.age_at_named_son != null ? `<div><dt>Age at son's birth</dt><dd>${esc(sf.age_at_named_son)}${sf.named_son ? ` (${link(sf.named_son)})` : ''}</dd></div>` : ''}
 ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years)} years</dd></div>` : ''}
 </dl>${scriptureList(sf.refs)}</section>` : '';
-  const sortSlot = p.sorting_basis?.slot === 'reign_start' ? 'reign' : 'birth';
-  const tables = ['birth', 'death', 'translated', 'reign'].filter((k) => d[k]?.length).map((k) => `<section class="card" id="${k}"><h2>${k[0].toUpperCase() + k.slice(1)}</h2>${chronTable(d[k], { sortYear: k === sortSlot ? p.sorting_year : null, basis: k === sortSlot ? p.sorting_basis : null, caption: `${k} of ${p.title}, CFAH first` })}${flagsSection({ sorting_year: null }, d[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"')}</section>`).join('\n');
+  const basisSlot = p.sorting_basis?.slot === 'reign_start' ? 'reign' : (p.sorting_basis?.slot || 'birth');
+  const calcSlotKey = (slot) => (slot === 'reign_start' ? 'reign' : slot);
+  const printedSlot = (k) => (d[k] || []).some((e) => e.year_bc_ad != null);
+  const calcLines = (k) => (p.calculated || []).filter((c) => calcSlotKey(c.slot) === k && !printedSlot(k)).map((c) => {
+    const verb = c.slot === 'death' ? 'died' : c.slot === 'translated' ? 'translated' : c.slot === 'reign_start' ? 'reign start' : 'born';
+    return `<p class="calc-line"><abbr title="${esc(c.arithmetic)}">calc.</abbr> ${esc(verb)} ${esc(yearLabel(c.year_bc_ad))}. <span class="small muted">${esc(c.arithmetic)}</span></p>`;
+  }).join('');
+  const tables = ['birth', 'death', 'translated', 'reign'].filter((k) => d[k]?.length || calcLines(k)).map((k) => {
+    const sortsHere = p.sorting_basis?.tier !== 'calculated' && k === basisSlot;
+    const table = d[k]?.length ? chronTable(d[k], { sortYear: sortsHere ? p.sorting_year : null, basis: sortsHere ? p.sorting_basis : null, caption: `${k} of ${displaySpelling(p.title)}, CFAH first` }) : '';
+    const flags = d[k]?.length ? flagsSection({ sorting_year: null }, d[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"') : '';
+    return `<section class="card" id="${k}"><h2>${k[0].toUpperCase() + k.slice(1)}</h2>${table}${calcLines(k)}${flags}</section>`;
+  }).join('\n');
   const evs = [...new Set([...(p.events || []), ...eventsWith(p.id)])];
   const kls = kingListsOf(p.id);
   const kingCard = p.dynasty || kls.length ? `<section class="card" id="king-lists"><h2>Dynasty and king lists</h2>${p.dynasty ? `<p>Dynasty: ${esc(p.dynasty)}</p>` : ''}${kls.length ? `<p>Listed in: ${kls.map((l) => `<a href="/king-lists/#${esc(l.id)}">${esc(l.title)}</a>`).join('; ')}</p>` : ''}</section>` : '';
-  const standbyLine = p.standby && p.sorting_year == null ? `<p class="small muted">Standby placement: <strong>${esc(yearLabel(p.standby.year_bc_ad))}</strong> (${esc(standbyPhrase(p))}). This is not a sort year.</p>` : '';
+  const standbyLine = p.standby && p.sorting_year == null ? `<p class="small muted">Standby placement: <strong>${esc(yearLabel(p.standby.year_bc_ad))}</strong> (${shown(standbyPhrase(p))}). This is not a sort year.</p>` : '';
   const body = `${crumbs(p)}${articleOpen(p.id)}${recordTop(p.id, `${head(p, { hideAlt: true })}${sortBadge(p)}${standbyLine}`)}
 ${nameSection(p)}
-${p.description ? `<section class="card"><h2>Description</h2><p>${esc(p.description)}</p></section>` : ''}${kingCard}
+${p.description ? `<section class="card"><h2>Description</h2><p>${shown(p.description)}</p></section>` : ''}${raleighAccount(p.id)}${kingCard}
 ${p.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(p.scripture_refs)}</section>` : ''}
 ${familySection(p)}
 ${facts}
@@ -1132,6 +1386,7 @@ ${tables}
 ${(p.open_questions || []).length ? flagsSection({ open_questions: p.open_questions }, null) : ''}
 ${(showsItalicDerived(Object.values(d).flat()) || (personTimelines[p.id].items || []).some((it) => (it.raleighHtml || '').includes('<em>'))) ? italicsNote() : ''}
 ${linkList(evs, 'Events')}
+${otherPeopleSection(p)}
 ${linkList(p.related, 'Related')}
 ${chartSection(p.id)}
 ${sourcesSection(p)}</article>`;
@@ -1140,6 +1395,8 @@ ${sourcesSection(p)}</article>`;
     extraHead: `${familyHead}${hasTl ? '<link rel="stylesheet" href="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.css">' : ''}`,
     scripts: `${familyScripts}${hasTl ? '<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>' : ''}<script src="/assets/app.js" defer></script>${doreScript(p.id)}` }));
 }
+
+const raleighFullCount = writeRaleighFullPages();
 
 // Locations
 for (const l of locations) {
@@ -1154,7 +1411,7 @@ for (const l of locations) {
 </dl>
 ${c.basis ? `<p class="small">${esc(c.basis)}</p>` : ''}
 ${l.coordinate_basis ? `<p class="small muted">${esc(l.coordinate_basis)}</p>` : ''}
-${has ? `<div id="locmap" class="map map-small" role="region" aria-label="Map showing ${esc(l.title)}"></div>${jsonScript('map-data', [locPayload(l)])}` : ''}
+${has ? `<div id="locmap" class="map map-small" role="region" aria-label="Map showing ${shown(l.title)}"></div>${jsonScript('map-data', [locPayload(l)])}` : ''}
 <ul class="links">
 ${l.openbible_url ? `<li>${ext(l.openbible_url, 'OpenBible.info entry')} <span class="muted small">(CC BY 4.0, OpenBible.info)</span></li>` : ''}
 ${l.openbible_geojson ? `<li>${ext(l.openbible_geojson, 'OpenBible GeoJSON')}</li>` : ''}
@@ -1183,7 +1440,7 @@ ${m.image_url ? `<li>${ext(m.image_url, 'Full image')}</li>` : ''}
 ${m.iiif_manifest ? `<li>${ext(m.iiif_manifest, 'IIIF manifest')}</li>` : ''}
 ${m.api_link ? `<li>${ext(m.api_link, m.iiif_manifest ? 'IIIF Image API (info.json)' : 'Data (API / KML)')}</li>` : ''}
 </ul>
-${m.description ? `<p class="small muted">${esc(m.description)}</p>` : ''}</section>
+${m.description ? `<p class="small muted">${shown(m.description)}</p>` : ''}</section>
 ${flagsSection(m, null)}
 ${linkList(m.locations, 'Places shown')}
 ${linkList([...new Set([...(m.related || []), ...recordsUsingMap(m.id)])], 'Used by')}
@@ -1204,7 +1461,7 @@ ${sourcesSection(m)}</article>`;
     if (aside) bits.push(aside.trim());
     return bits.length ? ` ${bits.join(' ')}` : '';
   };
-  const sec = (key, title, list) => `<section class="card" id="${key}"><h2>${title}</h2><ul class="browse">${[...list].sort(sortKey).map((r) => `<li><a href="${urlOf(r)}">${esc(r.title)}</a>${yearBit(r)}</li>`).join('')}</ul></section>`;
+  const sec = (key, title, list) => `<section class="card" id="${key}"><h2>${title}</h2><ul class="browse">${[...list].sort(sortKey).map((r) => `<li><a href="${urlOf(r)}">${shown(r.title)}</a>${yearBit(r)}</li>`).join('')}</ul></section>`;
   const browseDerived = [...events, ...people].some((r) => showsItalicDerived(dateEntries(r)));
   const body = `<h1>Browse</h1>${sec('events', 'Events', events)}${sec('people', 'People', people)}${sec('locations', 'Places', locations.map((l) => ({ ...l, sorting_year: undefined })))}${sec('maps', 'Maps', maps.map((m) => ({ ...m, sorting_year: undefined })))}${browseDerived ? italicsNote() : ''}`;
   out('browse/index.html', page({ title: 'Browse', body, path: '/browse/', pagefind: false }));
@@ -1230,11 +1487,11 @@ ${sourcesSection(m)}</article>`;
   }).join('');
   const body = `<h1>Chronologies &amp; sorting</h1>
 <section class="card"><h2>How the timeline is sorted</h2><p>${esc(rule.description)}</p>
-<ol class="tiers">${rule.tiers.map((t) => `<li><span class="tier tier-${['t1', 't2', 't3', 't4'][t.rank - 1]}">${esc(TIERS[t.tier]?.label || t.tier)}</span> <span class="muted small">${esc(t.select)}</span></li>`).join('')}</ol>
+<ol class="tiers inset-list">${rule.tiers.map((t) => { const cls = ['t1', 't2', 't3', 't4'][t.rank - 1]; return `<li><span class="swatch tier-${cls}" aria-hidden="true"></span><span class="inset-copy"><span class="tier tier-${cls}">${esc(TIERS[t.tier]?.label || t.tier)}</span><span class="muted small">${esc(t.select)}</span></span></li>`; }).join('')}</ol>
 <p class="small muted">${esc(rule.fallbacks)}</p>${kingDoc.lists.length ? `<p><a href="/king-lists/">CFAH king lists and dynasty tables</a></p>` : ''}</section>
 ${[...chronologies].sort((a, b) => a.sort_priority - b.sort_priority).map((c) => `<section class="card" id="${esc(c.id)}"><h2>${esc(c.name)}${c.primary ? ' <span class="tag tag-t1">primary</span>' : ''}</h2>
 ${c.id === 'raleigh-history-of-the-world' ? '<p><a href="/chronologies/raleigh-chronological-table/">A Chronological Table</a></p>' : ''}
-${c.authors?.length ? `<p class="muted">${esc(c.authors.join(', '))}</p>` : ''}<p>${esc(c.description)}</p>
+${c.authors?.length ? `<p class="muted">${esc(c.authors.join(', '))}</p>` : ''}<p>${shown(c.description)}</p>
 ${c.year_conventions ? `<p class="small muted">${esc(c.year_conventions)}</p>` : ''}
 ${c.id === 'cfah' ? cfahPlatformListHtml('cfah-platforms') : (c.references?.length ? `<ul class="links">${uniqSrc(c.references).map((s) => `<li>${ext(s.url, esc(s.title))} <span class="tag">${esc(s.access)}</span></li>`).join('')}</ul>` : '')}
 ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) => `<li><span class="flag flag-oq">Open question</span> ${esc(q)}</li>`).join('')}</ul>` : ''}</section>`).join('')}
@@ -1262,10 +1519,10 @@ ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) =
 
   const spell = (original, modern) => (original === modern
     ? esc(modern)
-    : `<span class="spell-modern">${esc(modern)}</span><span class="spell-original">${esc(original)}</span>`);
+    : `<span class="spell-modern">${esc(modern)}</span><span class="spell-original" data-pagefind-ignore="all">${esc(original)}</span>`);
   const spellHtml = (originalHtml, modernHtml) => (originalHtml === modernHtml
     ? modernHtml
-    : `<span class="spell-modern">${modernHtml}</span><span class="spell-original">${originalHtml}</span>`);
+    : `<span class="spell-modern">${modernHtml}</span><span class="spell-original" data-pagefind-ignore="all">${originalHtml}</span>`);
   let tableHasItalic = false;
   const chipLabel = (text) => {
     const t = String(text || '').replace(/^(Iulian|Julian)\.?,?\s*/i, '').replace(/\s+/g, ' ').trim();
@@ -1321,10 +1578,10 @@ ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) =
 <h1>A Chronological Table</h1>
 <p class="lede">${spell(table.heading.original, table.heading.modern)}</p>
 <section class="card"><p>Sir Walter Raleigh, <i>The History of the World</i> (1617), sheets ${esc(table.signatures[0])}–${esc(table.signatures[1])}. ${src ? ext(src.url, esc(src.title)) : ''}</p>
-<p>The years are the Julian Period and the yeere of the World, as printed. Beside each confirmed yeere of the World this page adds the year of the World and an italic year, for example AM 1656 (<em>2377 BC</em>). ${esc(RALEIGH_DERIVED_NOTE)} His first yeere of the World is taken as 4032 BC: a year before Christ is 4033 minus that yeere, and a year of our Lord, once the count passes 4032, is the yeere of the World minus 4032. There is no year 0. Each end of a printed range is converted on its own. A figure that is illegible, a pair of numbers that do not differ by 682, or a yeere that is not one legible figure, stays as printed and is marked not derived. Two legible figures joined by “or” are each derived and marked. Modern spelling updates names and ordinary 1617 spellings. The figures stay as printed, including illegible marks.</p>
+<p>The years are the Julian Period and the yeere of the World, as printed. Beside each confirmed yeere of the World this page adds the year of the World and an italic year, for example AM 1656 (<em>2377 BC</em>). ${esc(RALEIGH_DERIVED_NOTE)} His first yeere of the World is taken as 4032 BC: a year before Christ is 4033 minus that yeere, and a year of our Lord, once the count passes 4032, is the yeere of the World minus 4032. There is no year 0. Each end of a printed range is converted on its own. A figure that is illegible, a pair of numbers that do not differ by 682, or a yeere that is not one legible figure, stays as printed and is marked not derived. Two legible figures joined by “or” are each derived and marked. Modern spelling is the same word-by-word modernization used in Raleigh's account. The figures stay as printed, including illegible marks.</p>
 <p>The Sig. column is the 1617 sheet. It is not a column of his table. <a href="/chronologies/#raleigh-history-of-the-world">Raleigh, The History of the World (1614/1617)</a></p>
 <div class="raleigh-toolbar">
-<div role="group" aria-label="Spelling">
+<div class="segmented" role="group" aria-label="Spelling">
 <button type="button" data-set-spelling="modern" aria-pressed="true">Modern spelling</button>
 <button type="button" data-set-spelling="original" aria-pressed="false">Original spelling</button>
 </div>
@@ -1467,4 +1724,4 @@ writeFileSync(join(DIST, '_redirects'), redirectBody);
 mkdirSync(join(DIST, 'data'), { recursive: true });
 writeFileSync(join(DIST, 'data', 'person-timelines.json'), JSON.stringify(Object.fromEntries(Object.entries(personTimelines).map(([k, t]) => [k, t.none ? { none: true, notes: t.notes, standby: 0, standbyOwn: false } : { window: [t.start, t.stop], birthTier: t.birth?.tier || null, endTier: t.end?.tier || null, endKind: t.endKind, life: t.life ? { start: t.life.y, end: t.life.yEnd, label: t.life.label } : null, own: t.ownCount, context: t.ctxCount, standby: t.standbyCount, standbyOwn: !!t.standbyOwn, notes: t.notes, ownUndated: t.ownUndated.map((e) => e.id) }])), null, 1));
 const n = events.length + people.length + locations.length + maps.length;
-console.log(`Built ${n} record pages (${events.length} events, ${people.length} people, ${locations.length} places, ${maps.length} maps) + home, browse, chronologies, Raleigh chronological table, gallery (${charts.length} CFAH charts), about, search, 404 → ${DIST}`);
+console.log(`Built ${n} record pages (${events.length} events, ${people.length} people, ${locations.length} places, ${maps.length} maps), ${raleighFullCount} Raleigh full-text pages + home, browse, chronologies, Raleigh chronological table, gallery (${charts.length} CFAH charts), about, search, 404 → ${DIST}`);

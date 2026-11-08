@@ -326,6 +326,28 @@
       "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
       "source_text_id": "hales-new-analysis-1830",
       "note": null
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "Moses, who wrote of Paradise about 850. yeeres after the Floud",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "approximate",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. III, §V, sig. 63a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. How long after the Flood he says Moses wrote of Paradise. Not a second date of the Flood, and not a yeere of the World. year_am stays null. This does not change the sort. The Flood's yeere of the World 1656 is already entered from this book's Chapter VII and from the table."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "the same lay waste and ouer-growne for 130. or 140. yeeres",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "approximate",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. VII, §X, sig. 104a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. How long he says the earth lay waste after the Flood. Not a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [
@@ -405,6 +427,16 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. III, §V, sig. 63a"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. VII, §X, sig. 104a"
     }
   ],
   "related": [

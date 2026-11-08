@@ -173,6 +173,50 @@
       "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
       "source_text_id": "hales-new-analysis-1830",
       "note": null
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "For that space of the first three dayes which preceded the Suns creation, or formall perfection, when as yet there was not any motion to bee measured, and the day named in the fift verse, was but such a space, as afterwards by the Sunnes motion made a ciuill or naturall day.",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. I, §VII, sig. 47a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. The first three days, and the day named in the fifth verse of Genesis. He gives no yeere of the World. year_am stays null. This does not change the sort."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "so the Sunne, although it had not his formall perfection, his circle, beauty, and bounded magnitude till the fourth day, yet was the substance thereof in the first day( vnder the name of Light) created; and this Light formerly dispersed, was in the same fourth day vnited, and set in the Firmament of Heauen: for to Light created in the first day, God gaue no proper place or fixation; and therefore the effects named by Anticipation, ( which was to separate day from night) were precisely performed, after this Light was congregated, and had obtained life and motion.",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. I, §VII, sig. 48a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. The light's substance on the first day, and its formal perfection on the fourth. He gives no yeere of the World. year_am stays null. This does not change the sort."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "First, hee created the matter of all things: and in the first three daies he distinguished & gaue to euery nature his proper forme; the forme of lenitie to that which ascended, to that which descended, the forme of grauitie: for he separated light from darkenesse, diuided waters from waters, and gathered the waters vnder the Firmament into one place.",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. I, §IX, sig. 49a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. His summary of the first three days. He gives no yeere of the World. year_am stays null. This does not change the sort. The spelling is daies, as printed."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "In the last three dayes, God adorned, beautified, and replenished the world: he set in the Firmament of Heauen, the Sunne, Moone, and Starres; filled the Earth with Beasts, the Aire with Fowle, and the Sea with Fish",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "day",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. I, §IX, sig. 49a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. His summary of the last three days. The sentence continues, and the word after \"a power\" is illegible in both XML copies. That word is not in this quote. He gives no yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [
@@ -195,7 +239,8 @@
     "jordan-bc-6-4",
     "jordan-compilation-anno-mundi",
     "morecraft-christian-survey",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
@@ -217,6 +262,21 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. I, §VII, sig. 47a"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. I, §VII, sig. 48a"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. I, §IX, sig. 49a"
     }
   ],
   "related": [

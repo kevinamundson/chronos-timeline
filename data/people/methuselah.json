@@ -4,7 +4,8 @@
   "type": "person",
   "title": "Methuselah",
   "alt_names": [
-    "Mathusala"
+    "Mathusala",
+    "Mathusalem"
   ],
   "summary": "Son of Enoch; the longest-lived man recorded (969 years); died in the year of the Flood (MT arithmetic).",
   "sorting_year": -3317,
@@ -14,6 +15,22 @@
     "chronology": "ussher-jones",
     "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 3317 BC (no higher-tier year available)."
   },
+  "calculated": [
+    {
+      "slot": "birth",
+      "year_bc_ad": -3345,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 781b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 688. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 688 = 3345 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "methuselah",
+      "anchor_slot": "birth",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 688
+    }
+  ],
   "father": "enoch",
   "children": [
     "lamech"
@@ -139,6 +156,39 @@
         "link": "https://archive.org/details/newanalysisofchr02hale/page/n35/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": null
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Mathusalem begat at 187.",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §IV, sig. 82b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The age at which he says Mathusalem begat. Not a yeere of the World, and not his birth year. year_am stays null. This does not change the sort. The next paragraph prints the 187th yeere of his life for Lamech. The clause prints Mathusalem."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Mathusalem begat Lamech in the 187. yeere of his life",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §IV, sig. 82b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The same 187, said of Lamech. Not a yeere of the World. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "and Noah with Methusalem no lesse then fiue hundred yeeres",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §VI, sig. 84b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. How long he says Noah and Methusalem were alive together. Not a yeere of the World, and not a birth year. year_am stays null. This does not change the sort. In the same sentence, the years Methusalem lived with Adam are two hundred, then an illegible word, then and three. That word was not guessed, and that figure was not entered."
       }
     ],
     "death": [
@@ -260,6 +310,16 @@
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 278 (PDF p. 313)"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. V, §IV, sig. 82b"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. V, §VI, sig. 84b"
     }
   ],
   "related": [

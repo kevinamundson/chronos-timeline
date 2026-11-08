@@ -15,6 +15,36 @@
     "chronology": "ussher-jones",
     "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 2126 BC (no higher-tier year available)."
   },
+  "calculated": [
+    {
+      "slot": "birth",
+      "year_bc_ad": -2154,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 1879. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 1879 = 2154 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "terah",
+      "anchor_slot": "birth",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 1879
+    },
+    {
+      "slot": "death",
+      "year_bc_ad": -1950,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2083. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2083 = 1950 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "terah",
+      "anchor_slot": "death",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2083
+    }
+  ],
   "father": "nahor",
   "children": [
     "abraham"
@@ -225,6 +255,17 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"2765 2083 426\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "For the yeere of Terahs death, in which Abraham left Haran, was the yeere of the World 2083.",
+        "year_am": 2083,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter I, §. VI, sig. 161b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. His death, the yeere of the World, which Raleigh also gives as the year Abraham left Haran. The chronological table already prints 2083 (sig. 782b). The same sentence gives Ishmael's birth as the Worlds yeere 2094, stored on ishmael. year_bc_ad stays null. This does not change the sort."
       }
     ]
   },

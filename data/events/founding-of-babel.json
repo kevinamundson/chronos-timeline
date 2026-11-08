@@ -117,6 +117,28 @@
       "link": "https://archive.org/details/sacredprofanehis01shuc/page/n184/mode/1up",
       "source_text_id": "shuckford-sacred-profane-1819",
       "note": "This is their coming to Shinar. A footnote says a fragment in Eusebius also has A. M. 1736 for the start of the tower, and that a Greek letter in that fragment is an evident mistake. The division of the earth is placed later, at A. M. 1757."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "the worke of Babel lasted fortie yeeres( according to GLYCAS) Hominibus in ea perficienda totis 40. ann. incassum laborantibus: Men labouring in vaine 40. yeeres to finish it.",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. VII, §X, sig. 103b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. Glycas's length for the work of Babel, which he quotes in Latin and in English. Not a yeere of the World. year_am stays null. This does not change the sort."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "By which account it fals out, that it was 170. yeeres after the Floud, ere a Colonie was sent into East India",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. VII, §X, sig. 103b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. His sum, from the 131st year after the Flood and Glycas's forty, for a colony sent into East India. Not a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [
@@ -141,7 +163,8 @@
     "josephus-antiquities-whiston",
     "jordan-bc-6-4",
     "morecraft-christian-survey",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
@@ -158,6 +181,11 @@
       "source_id": "shuckford-sacred-profane-1819",
       "url": "https://archive.org/details/sacredprofanehis01shuc",
       "locator": "1819 Creighton edition, vol. 1, full view"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. VII, §X, sig. 103b"
     }
   ],
   "related": [

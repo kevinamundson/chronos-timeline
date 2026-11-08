@@ -13,7 +13,7 @@
 // the end of the name is the length. Kingdom columns are reigns. A lifespan on a
 // patriarch is a birth. Death and translation are taken only from a row label that
 // says so. Illegible cells (〈◊〉, ●) are skipped and listed.
-import { readFileSync, writeFileSync, readdirSync, unlinkSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { modernTitle } from './spelling.mjs';
@@ -299,9 +299,16 @@ function resolvePerson(name, world) {
   if (REFUSE.has(key)) return { skip: `printed "${name}" is not attached to a different portal id` };
   const alias = (key === 'cainan' && world > 1656) ? null : (ALIAS[n] || ALIAS[key]);
   if (alias && recs[alias]) return { id: alias };
-  const hits = (byNorm.get(n) || byNorm.get(key) || []).filter((id) => recs[id]?.doc.type === 'person' && !recs[id].doc.description?.startsWith(MARK));
-  if (hits.length === 1) return { id: hits[0] };
-  if (hits.length > 1) return { skip: `ambiguous name "${name}" (${hits.join(', ')})` };
+  const allHits = (byNorm.get(n) || byNorm.get(key) || []).filter((id) => recs[id]?.doc.type === 'person');
+  const owned = allHits.filter((id) => recs[id].doc.description?.startsWith(MARK));
+  const hits = allHits.filter((id) => !recs[id].doc.description?.startsWith(MARK));
+  // A person this importer already created keeps the row. A later record with the
+  // same title (Cory's Ilus, Inachus, or Xerxes) must not take it on a re-run.
+  // Two created people with one title are the two kingdom columns. The column
+  // suffix below keeps those ids. Do not collapse them onto the other record.
+  if (owned.length === 1) return { id: owned[0], fromOwned: true };
+  if (owned.length === 0 && hits.length === 1) return { id: hits[0] };
+  if (owned.length === 0 && hits.length > 1) return { skip: `ambiguous name "${name}" (${hits.join(', ')})` };
   const id = slug(name);
   if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(id)) return { skip: `unusable name "${name}"` };
   if (recs[id] && recs[id].doc.type !== 'person') return { skip: `"${name}" collides with ${recs[id].doc.type} ${id}` };
@@ -313,11 +320,15 @@ function resolvePerson(name, world) {
 function deathWho(raw, world) {
   const stripped = raw.replace(/\s+(his|her|the)\b[\s\S]*$/i, '').replace(/\.\s*$/, '').trim();
   let who = resolvePerson(stripped, world);
-  if (who.id) return who;
+  // A death was stored only when the name already belonged to someone else
+  // (an alias, or the one portal person who is not from this importer).
+  // Matching the person this importer created used to return `create`, and the
+  // death was skipped. Keep that, so a re-run does not add the death of Codrus.
+  if (who.id && !who.fromOwned) return who;
   const first = stripped.split(/\s+/)[0];
   if (first && tight(first) !== tight(stripped)) {
     who = resolvePerson(first, world);
-    if (who.id) return who;
+    if (who.id && !who.fromOwned) return who;
   }
   if (tight(first || stripped) === 'sarai') return { create: 'sarai', title: 'Sarai' };
   return { skip: who.skip || `death of ${stripped} has no existing person` };
@@ -418,7 +429,10 @@ for (const p of planned) {
 }
 
 const createdNames = new Map();
-for (const p of unique) if (p.who?.create) createdNames.set(p.who.create, p.who.title);
+for (const p of unique) {
+  if (p.who?.create) createdNames.set(p.who.create, p.who.title);
+  else if (p.who?.id && recs[p.who.id]?.doc.description?.startsWith(MARK)) createdNames.set(p.who.id, recs[p.who.id].doc.title);
+}
 
 const byReason = {};
 for (const s of skipped) (byReason[s.reason] ||= []).push(s.detail);
@@ -451,31 +465,19 @@ for (const [id, r] of Object.entries(recs)) {
 }
 const original = new Map();
 for (const [id, r] of Object.entries(recs)) original.set(id, JSON.stringify(r.doc));
-const stale = [];
-for (const [id, r] of Object.entries(recs)) {
-  if (r.doc.type === 'person' && r.doc.description?.startsWith(MARK)) {
-    const dated = Object.values(r.doc.dates || {}).flat().some((e) => e.cfah_key && e.date);
-    if (!dated) { stale.push(join(DATA, 'people', `${id}.json`)); delete recs[id]; }
-  }
+// A body-intake statement is written by hand. Its note begins "Body intake."
+// This importer does not remove it, rewrite it, or treat it as a table row.
+function isBodyIntake(entry) {
+  return typeof entry?.note === 'string' && entry.note.startsWith('Body intake.');
 }
-for (const r of Object.values(recs)) {
-  const d = r.doc;
-  const lists = d.type === 'event' ? [d.chronologies] : d.type === 'person' ? Object.values(d.dates || {}) : [];
-  for (const list of lists) {
-    if (!Array.isArray(list)) continue;
-    for (let i = list.length - 1; i >= 0; i--) {
-      if (list[i].source !== SRC) continue;
-      const y = list[i].year_am;
-      if (y == null || y <= UNTIL) list.splice(i, 1);
-    }
-  }
-}
+const createdThisRun = new Set();
 
 function ensurePerson(who) {
   if (who.id && recs[who.id]) return who.id;
   const id = who.create || who.id;
   if (!id) throw new Error(`Raleigh person has no id for ${who.title || '(no title)'}`);
   if (recs[id]) return id;
+  createdThisRun.add(id);
   const title = modernTitle(who.title);
   recs[id] = { dir: 'people', doc: {
     $schema: '../../schema/person.schema.json', id, type: 'person', title,
@@ -499,11 +501,13 @@ function addSrc(doc, sig) {
     doc.free_source_links.push({ source_id: SRC_ID, url: LINK, locator });
   }
 }
+function sameTableStatement(e, entry) {
+  return e.source === SRC && !isBodyIntake(e) && e.date === entry.date && e.year_am === entry.year_am;
+}
 function addTo(doc, slot, entry) {
-  if (doc.type === 'event') { doc.chronologies.push(entry); return; }
-  const list = doc.dates[slot] || (doc.dates[slot] = [CFAH_NULL()]);
-  if (!list.some((e) => e.source === 'cfah')) list.unshift(CFAH_NULL());
-  if (list.some((e) => e.source === SRC && e.date === entry.date && e.year_am === entry.year_am)) return;
+  const list = doc.type === 'event' ? doc.chronologies : (doc.dates[slot] || (doc.dates[slot] = [CFAH_NULL()]));
+  if (doc.type !== 'event' && !list.some((e) => e.source === 'cfah')) list.unshift(CFAH_NULL());
+  if (list.some((e) => sameTableStatement(e, entry))) return;
   list.push(entry);
 }
 
@@ -549,8 +553,48 @@ function applyProse() {
     const rec = recs[n.id];
     if (!rec) continue;
     const list = n.slot ? rec.doc.dates?.[n.slot] : rec.doc.chronologies;
-    const e = (list || []).find((x) => x.source === SRC && x.year_am === n.year);
+    const e = (list || []).find((x) => x.source === SRC && x.year_am === n.year && !isBodyIntake(x));
     if (e && !e.note.includes(n.text)) e.note = `${e.note} ${n.text}`;
+  }
+}
+
+// Drop a table row only when this run will not write it back. Body-intake
+// statements are never in that set. Leaving a row that will be written again
+// keeps its place, so a re-run does not reorder the file.
+const proseDates = new Set(PROSE.map((p) => p.quote));
+function keepRaleighEntry(entry) {
+  if (isBodyIntake(entry)) return true;
+  const citation = entry.citation || '';
+  if (!/Chronological Table/.test(citation) && !proseDates.has(entry.date)) return true;
+  return false;
+}
+const expected = new Set();
+function expectKey(id, slot, quote, world) {
+  expected.add(`${id}|${slot || ''}|${quote}|${world}`);
+}
+for (const p of unique) {
+  if (p.who) expectKey(p.who.id || p.who.create, p.slot, p.quote, p.world);
+  if (p.eventId) expectKey(p.eventId, null, p.quote, p.world);
+}
+for (const p of PROSE) {
+  if (p.year > UNTIL) continue;
+  expectKey(p.id, p.slot, p.quote, p.year);
+  // `also` is an event. Event rows have no date slot, so the key uses ''.
+  if (p.also) expectKey(p.also, null, p.quote, p.year);
+}
+for (const r of Object.values(recs)) {
+  const d = r.doc;
+  const lists = d.type === 'event' ? [['', d.chronologies]] : Object.entries(d.dates || {});
+  for (const [slot, list] of lists) {
+    if (!Array.isArray(list)) continue;
+    for (let i = list.length - 1; i >= 0; i--) {
+      const entry = list[i];
+      if (entry.source !== SRC) continue;
+      if (keepRaleighEntry(entry)) continue;
+      if (expected.has(`${d.id}|${slot || ''}|${entry.date}|${entry.year_am}`)) continue;
+      const y = entry.year_am;
+      if (y == null || y <= UNTIL) list.splice(i, 1);
+    }
   }
 }
 
@@ -650,7 +694,7 @@ applyProse();
 for (const [id, row] of nameNotes) {
   const doc = recs[id]?.doc;
   if (!doc) continue;
-  if (doc.description?.startsWith(MARK)) {
+  if (doc.description?.startsWith(MARK) && createdThisRun.has(id)) {
     const modern = modernTitle(row.spellings[0]);
     doc.title = modern;
     const col = row.column ? `, column ${String(row.column).replace(/\.$/, '')}` : '';
@@ -662,11 +706,11 @@ for (const [id, row] of nameNotes) {
 // lifespan printed at birth vs a later death year in the same table
 for (const [id, r] of Object.entries(recs)) {
   if (r.doc.type !== 'person') continue;
-  const b = (r.doc.dates.birth || []).find((e) => e.source === SRC && e.year_am != null);
+  const b = (r.doc.dates.birth || []).find((e) => e.source === SRC && e.year_am != null && !isBodyIntake(e));
   const span = b?.note?.match(/The (\d+) at the end of the name is the lifespan/)?.[1];
   if (!b || !span) continue;
   for (const [which, list] of [['death', r.doc.dates.death], ['translation', r.doc.dates.translated]]) {
-    const d = (list || []).find((e) => e.source === SRC && e.year_am != null);
+    const d = (list || []).find((e) => e.source === SRC && e.year_am != null && !isBodyIntake(e));
     if (d && b.year_am + +span !== d.year_am) {
       const extra = `His table also prints the ${which} at World ${d.year_am}. ${b.year_am} + ${span} is not ${d.year_am}. Both figures are left as printed.`;
       if (!b.note.includes(extra)) b.note = `${b.note} ${extra}`;
@@ -696,16 +740,11 @@ for (const [id, r] of Object.entries(recs)) {
   const path = join(DATA, r.dir, `${id}.json`);
   if (!existsSync(path) || readFileSync(path, 'utf8') !== text) writeFileSync(path, text);
 }
-for (const path of stale) {
-  const id = path.split('/').pop().replace(/\.json$/, '');
-  if (!recs[id] && existsSync(path)) unlinkSync(path);
-}
-
 extractRows.sort((a, b) => a.world - b.world || a.quote.localeCompare(b.quote));
 const lines = [];
 lines.push('# Raleigh, *The History of the World* (1617) — dates');
 lines.push('');
-lines.push('Edition read: London, printed by William Stansby for Walter Burre, 1617. EEBO-TCP A10357, EarlyPrint unadorned XML (`sources/raleigh/A10357.earlyprint-unadorned.xml`). Display only. year_bc_ad stays null. The site shows a derived parenthetical from Creation in 4032 BC; Raleigh prints only the yeere of the World.');
+lines.push('Edition read: London, printed by William Stansby for Walter Burre, 1617. EEBO-TCP A10357, EarlyPrint unadorned XML (`sources/raleigh/A10357.earlyprint-unadorned.xml`). Display only. year_bc_ad stays null. The site shows an italic BC or AD year from Creation in 4032 BC (Kevin, 2026-10-28); Raleigh prints only the yeere of the World.');
 lines.push('');
 lines.push('The chronological table (back matter, from sig. 781b) is Raleigh\'s index. "To the Reader" (sig. 780b) says it reforms press errors and his own mis-reckonings, and that the Julian Period exceeds the yeere of the World by 682. A year is recorded only when the printed pair differs by 682.');
 lines.push('');
@@ -731,7 +770,7 @@ writeFileSync(join(DATA, 'raleigh-dates-extract.md'), lines.join('\n'));
 const log = [];
 log.push('# Raleigh pass log');
 log.push('');
-log.push(`Imported from the 1617 chronological table${Number.isFinite(UNTIL) ? `, through the yeere of the World ${UNTIL}` : ''}. Raleigh is display-only. No sorting year was changed. Display titles use modern English spelling. His printed spelling is an alternate name. He states that the Julian Period exceeds the yeere of the World by 682. He does not state a BC conversion, so year_bc_ad stays null. The site shows a derived parenthetical from Creation in 4032 BC.`);
+log.push(`Imported from the 1617 chronological table${Number.isFinite(UNTIL) ? `, through the yeere of the World ${UNTIL}` : ''}. Raleigh is display-only. No sorting year was changed. Display titles use modern English spelling. His printed spelling is an alternate name. He states that the Julian Period exceeds the yeere of the World by 682. He does not state a BC conversion, so year_bc_ad stays null. The site shows an italic BC or AD year from Creation in 4032 BC (Kevin, 2026-10-28). The whole table is reproduced at \`/chronologies/raleigh-chronological-table/\` (modern spelling by default, original spelling by a toggle, with CSV, Markdown, and Excel downloads).`);
 log.push('');
 log.push(`- Records updated or created with a Raleigh entry: ${new Set(extractRows.flatMap((e) => e.targets.map((t) => t.split(':')[0]))).size}`);
 log.push(`- Dated statements written: ${extractRows.length}`);

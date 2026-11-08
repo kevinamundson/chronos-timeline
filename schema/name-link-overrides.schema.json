@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://timeline-portal.local/schema/name-link-overrides.schema.json",
+  "title": "Name-link overrides",
+  "description": "Pins one name token in one passage or note to one person. A pin wins over the Tubal context rule. The linker never guesses when a token matches more than one person and nothing here, or that rule, selects a record.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["overrides"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "note": { "type": "string" },
+    "overrides": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/pin" }
+    }
+  },
+  "$defs": {
+    "pin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unit_id", "token", "person_id"],
+      "properties": {
+        "unit_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "A Raleigh passage id (p00001) or a note id (note:person:jubal:description)."
+        },
+        "token": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The printed name to pin, as one or more words. Matching ignores case and treats i/j and u/v as the same letter."
+        },
+        "person_id": { "$ref": "common.schema.json#/$defs/slug" },
+        "reason": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

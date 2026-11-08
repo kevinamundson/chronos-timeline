@@ -9,10 +9,41 @@
   "properties": {
     "type": { "const": "person" },
     "alt_names": { "type": "array", "items": { "type": "string" } },
-    "sorting_year": { "type": ["integer", "null"], "description": "Sort year (negative = BC). A tier-ranked birth year when dates.birth has one; otherwise the reign-start year when dates.reign has a tier 1–4 year_bc_ad. Null when neither does. No year is derived." },
+    "sorting_year": { "type": ["integer", "null"], "description": "Sort year (negative = BC). A tier-ranked birth year when dates.birth has one; otherwise the reign-start year when dates.reign has a tier 1–4 year_bc_ad; otherwise a provisional year; otherwise one calculated year from printed figures. Null when none of those exist. A calculated year is not written into year_bc_ad." },
     "sorting_basis": { "$ref": "common.schema.json#/$defs/sortingBasis" },
     "standby": { "$ref": "common.schema.json#/$defs/standbyPlacement", "description": "Optional placement when sorting_year is null. Never a sort year. Removed when a tier date arrives." },
     "father": { "anyOf": [ { "$ref": "common.schema.json#/$defs/slug" }, { "type": "null" } ] },
+    "mother": { "anyOf": [ { "$ref": "common.schema.json#/$defs/kinRef" }, { "type": "null" } ], "description": "Mother, when a source names her. Omit when unknown. An uncertain link uses a kin object and is shown with ?." },
+    "spouse": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/kinRef" }, "description": "Spouse or spouses, when a source names them. An uncertain link uses a kin object and is shown with ?." },
+    "calculated": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Years worked out from printed figures. Not written into year_bc_ad. A higher tier or a provisional year outranks them. See docs/calculated-dates.md.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slot", "year_bc_ad", "kind", "source", "citation", "link", "arithmetic", "anchor_record", "anchor_slot", "anchor_year_bc_ad", "anchor_source"],
+        "properties": {
+          "slot": { "enum": ["birth", "reign_start", "death", "translated"] },
+          "year_bc_ad": { "type": "integer", "not": { "const": 0 } },
+          "kind": { "enum": ["relative", "raleigh-am"] },
+          "source": { "$ref": "common.schema.json#/$defs/slug" },
+          "citation": { "type": "string", "minLength": 1 },
+          "link": { "anyOf": [ { "$ref": "common.schema.json#/$defs/url" }, { "type": "null" } ] },
+          "arithmetic": { "type": "string", "minLength": 1 },
+          "anchor_record": { "$ref": "common.schema.json#/$defs/slug" },
+          "anchor_slot": { "enum": ["birth", "reign_start", "death", "translated"] },
+          "anchor_year_bc_ad": { "type": "integer", "not": { "const": 0 } },
+          "anchor_source": { "$ref": "common.schema.json#/$defs/slug" },
+          "delta_years": { "type": "integer" },
+          "year_am": { "type": "integer", "minimum": 1 }
+        },
+        "allOf": [
+          { "if": { "properties": { "kind": { "const": "relative" } }, "required": ["kind"] }, "then": { "required": ["delta_years"] } },
+          { "if": { "properties": { "kind": { "const": "raleigh-am" } }, "required": ["kind"] }, "then": { "required": ["year_am"] } }
+        ]
+      }
+    },
     "children": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true, "description": "Named children recorded in the data set (not exhaustive; Gen 5 'sons and daughters')." },
     "scripture_facts": {
       "type": "object",

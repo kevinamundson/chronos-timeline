@@ -70,6 +70,8 @@ function resort(doc) {
     const bk = BOOKS.find((x) => x.id === g.source_text_id);
     doc.sorting_basis = { tier: 'provisional', tier_rank: null, chronology: 'generations', note: `PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (${bk.short}, PDF p. ${g.citation.match(/PDF p\. (\d+)/)[1]}): ${g.date}. Pending owner decision (open question A8).` };
   } else if (doc.type === 'person') {
+    // A calculated gap-fill stays until a printed tier or a provisional year arrives. A dated generations entry above already replaces it.
+    if (doc.sorting_basis?.tier === 'calculated') return;
     doc.sorting_year = null; doc.sorting_basis = { tier: 'none', tier_rank: null, chronology: 'cfah', note: 'No tier gives a birth year.' };
   } else throw new Error(`${doc.id}: event with no dated entry at all`);
 }

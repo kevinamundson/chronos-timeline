@@ -13,6 +13,7 @@
     "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 4003 BC (no higher-tier year available)."
   },
   "father": "adam",
+  "mother": "eve",
   "children": [],
   "dates": {
     "birth": [
@@ -48,7 +49,6 @@
     "jones-chronology-ot-2026"
   ],
   "related": [
-    "adam",
     "seth"
   ],
   "free_source_links": [

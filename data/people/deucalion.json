@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "deucalion",
+  "type": "person",
+  "title": "Deucalion",
+  "summary": "Raleigh names Deucalion in the History of the World (1617) and prints a yeere of the World for his birth.",
+  "description": "Named in Raleigh's History of the World (1617). He prints the birth in the yeere of the World 2356. The age at the flood of Thessaly is illegible. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": -1677,
+  "sorting_basis": {
+    "tier": "calculated",
+    "tier_rank": null,
+    "chronology": "raleigh-history-of-the-world",
+    "slot": "birth",
+    "note": "Calculated from printed figures. No tier 1–4 birth, no tier reign start, and no provisional year. Raleigh prints the yeere of the World 2356. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2356 = 1677 BC. The figure is not written into year_bc_ad. A printed year for this person would replace it."
+  },
+  "calculated": [
+    {
+      "slot": "birth",
+      "year_bc_ad": -1677,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter VII, §. III, sig. 95b–96a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2356. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2356 = 1677 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "deucalion",
+      "anchor_slot": "birth",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2356
+    }
+  ],
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Now Deucalion was borne in the yeere of the World 2356.",
+        "year_am": 2356,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter VII, §. III, sig. 95b–96a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. His yeere of the World for the birth. The age in the same sentence is illegible (〈◊ 〉), so it is not stored. No flood event was made. See N5."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "( which added to 2356. make 2438.)",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter VII, §. III, sig. 95b–96a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The sum is printed. The age added to 2356 is illegible, so 2438 is not stored as a yeere of the World."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "his Floud was after Noahs Floud ended 782. yeeres.",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter VII, §. III, sig. 95b–96a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. How many yeeres after Noahs Floud he says this flood ended. Not a yeere of the World, and not an event."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Contents, Book I, Part I, Chapter VII, sig. 25a"
+    }
+  ],
+  "alt_names": [
+    "Deucalions",
+    "DEVCALIONS",
+    "DEVCALIONIS",
+    "DEVCALION"
+  ]
+}

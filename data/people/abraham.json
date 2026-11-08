@@ -15,7 +15,42 @@
     "chronology": "cfah",
     "note": "Tier 2: CFAH-1 Table 1 (Ussher-Jones baseline): 1996 BC (Birth of Abraham) (no higher-tier year available)."
   },
+  "calculated": [
+    {
+      "slot": "birth",
+      "year_bc_ad": -2024,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2009. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2009 = 2024 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "abraham",
+      "anchor_slot": "birth",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2009
+    },
+    {
+      "slot": "death",
+      "year_bc_ad": -1850,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2183. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2183 = 1850 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "abraham",
+      "anchor_slot": "death",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2183
+    }
+  ],
   "father": "terah",
+  "spouse": [
+    "sarai",
+    "hagar",
+    "keturah"
+  ],
   "children": [
     "isaac"
   ],
@@ -212,6 +247,17 @@
         "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": null
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "and before Noah dyed, Abraham was fiftie and eight yeeres old",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §VI, sig. 84b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. Abraham's age before Noah died. Not a yeere of the World, and not his birth year. year_am stays null. This does not change the sort. The table and the Book II sentence already give his birth as the yeere of the World 2009."
       }
     ],
     "death": [
@@ -345,13 +391,17 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. V, §VI, sig. 84b"
     }
   ],
   "related": [
     "abraham-birth",
     "abraham-enters-canaan",
     "canaan",
-    "terah",
     "djosers-famine",
     "isaac",
     "isaac-birth",

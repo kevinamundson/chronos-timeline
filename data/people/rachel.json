@@ -20,6 +20,9 @@
     "note": "Standby placement only. Ussher-Jones (Floyd Nolen Jones, The Chronology of the Old Testament) prints this BC/AD year on the death entry (2265 1739 Rachel dies birthing Benjamin). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
   },
   "father": null,
+  "spouse": [
+    "jacob"
+  ],
   "children": [],
   "dates": {
     "death": [
@@ -55,7 +58,6 @@
     "jones-chronology-ot-2026"
   ],
   "related": [
-    "jacob",
     "joseph",
     "benjamin"
   ],

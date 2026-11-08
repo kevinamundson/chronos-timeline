@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ishbak",
+  "type": "person",
+  "title": "Ishbak",
+  "summary": "Raleigh names Ishbak in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Undated in this intake: no yeere of the World was taken from the covered text except where a chronology entry quotes one. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "standby": {
+    "year_bc_ad": -1996,
+    "basis": "linked-record",
+    "source_chronology": null,
+    "from_record": "abraham",
+    "note": "Standby placement only, placed with \"Abraham (Abram)\" (a parent). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+  },
+  "father": "abraham",
+  "mother": "keturah",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book II, Part I, Chapter I, §. IV, sig. 160a–160b"
+    }
+  ]
+}

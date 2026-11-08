@@ -350,6 +350,26 @@ for (const p of people) {
   dedup.sort((a, b) => (roleRank[a.role] - roleRank[b.role]) || (scriptRank[a.script] - scriptRank[b.script]) || a.form.localeCompare(b.form, 'en'));
   if (dedup.length) outPeople.push({ id: p.id, forms: dedup });
 }
+// Herakles is Johnson's spelling, already printed on Naamah. Hercules is Cory's parenthesis on heracles.
+// Neither is a title or alt_name of that record, so a rebuild would drop them. Keep both.
+{
+  const prevPath = join(root, 'data/name-forms.json');
+  const prev = existsSync(prevPath) ? JSON.parse(readFileSync(prevPath, 'utf8')) : { people: [] };
+  const keep = new Set(['Herakles', 'Hercules']);
+  for (const person of prev.people || []) {
+    if (person.id !== 'heracles') continue;
+    const extra = (person.forms || []).filter((f) => keep.has(f.form));
+    if (!extra.length) continue;
+    let dest = outPeople.find((p) => p.id === 'heracles');
+    if (!dest) {
+      dest = { id: 'heracles', forms: [] };
+      outPeople.push(dest);
+    }
+    for (const form of extra) {
+      if (!dest.forms.some((g) => g.form === form.form && g.source_text_id === form.source_text_id)) dest.forms.push(form);
+    }
+  }
+}
 outPeople.sort((a, b) => a.id.localeCompare(b.id));
 
 function printedForm(quote, spelling) {

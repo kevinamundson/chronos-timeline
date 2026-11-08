@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "rabanus",
+  "type": "person",
+  "title": "Rabanus",
+  "summary": "Raleigh names Rabanus in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Undated in this intake: no yeere of the World was taken from the covered text except where a chronology entry quotes one. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "who was Arch-Bishop of Mentz in the yeere of Christ 854.",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter X, §. III, sig. 143a–144b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The yeere of Christ in which he says Rabanus was archbishop of Mentz. Not a yeere of the World, and not a birth year. year_bc_ad stays null. This does not change the sort."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, Chapter II, §. IV, sig. 57b"
+    }
+  ],
+  "alt_names": [
+    "RABANVS"
+  ]
+}

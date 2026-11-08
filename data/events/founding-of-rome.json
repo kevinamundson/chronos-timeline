@@ -74,6 +74,17 @@
       "link": "https://archive.org/details/newanalysisofchr01hale/page/n134/mode/1up",
       "source_text_id": "hales-new-analysis-1830",
       "note": null
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "after the account which I follow( and whereof I will giue my reasons in the Story of Abraham) it was built in the Worlds yeere 3280.",
+      "year_am": 3280,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. VII, §II, sig. 94b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. His yeere of the World for the building of Rome. The same sentence gives Bucholzerus the Worlds yeere 3219, which is not this figure. year_bc_ad stays null. This does not change the sort."
     }
   ],
   "people": [],
@@ -85,7 +96,8 @@
     "generations-preparing-2e",
     "cfah-3",
     "shuckford-sacred-profane-1819",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [
     "roman-monarchy"
@@ -110,6 +122,11 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. VII, §II, sig. 94b"
     }
   ]
 }

@@ -70,6 +70,17 @@
         "link": "https://biblicalhorizons.com/1994/05/01/6_05/",
         "note": "Jordan: \"If we assume births every two years, and about 30 years between generations ... we can come up with an approximate series of dates\" (hypothetical, not stated by Scripture).",
         "source_text_id": "jordan-bc-6-5"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "which the length of 130. yeares after the floud had( as it were) fortified with thickets",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. III, §XIV, sig. 75a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. How long after the Flood he says the desert had grown up before Cush could cross it. Not a yeere of the World, and not his birth year. year_am stays null. This does not change the sort. The name in the sentence is CHVS."
       }
     ],
     "reign": [
@@ -127,7 +138,8 @@
     "jordan-bc-6-5",
     "josephus-antiquities-whiston",
     "cfah-5",
-    "cfah-15-osf"
+    "cfah-15-osf",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
@@ -163,6 +175,11 @@
       "source_id": "cfah-15-osf",
       "url": "https://osf.io/vynju/",
       "locator": "Table 5, pp. 52–53"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. III, §XIV, sig. 75a"
     }
   ],
   "related": [

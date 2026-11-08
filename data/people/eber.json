@@ -15,6 +15,36 @@
     "chronology": "ussher-jones",
     "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 2281 BC (no higher-tier year available)."
   },
+  "calculated": [
+    {
+      "slot": "birth",
+      "year_bc_ad": -2309,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 1724. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 1724 = 2309 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "eber",
+      "anchor_slot": "birth",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 1724
+    },
+    {
+      "slot": "death",
+      "year_bc_ad": -1846,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2187. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2187 = 1846 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "eber",
+      "anchor_slot": "death",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2187
+    }
+  ],
   "father": "salah",
   "children": [
     "peleg",

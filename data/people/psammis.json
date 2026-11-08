@@ -12,6 +12,22 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
   },
+  "calculated": [
+    {
+      "slot": "reign_start",
+      "year_bc_ad": -625,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 789b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 3408. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 3408 = 625 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "psammis",
+      "anchor_slot": "reign_start",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 3408
+    }
+  ],
   "standby": {
     "year_bc_ad": -594,
     "basis": "source-printed",

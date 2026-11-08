@@ -105,6 +105,7 @@ for (const [id, r] of Object.entries(recs)) {
   else if (reign?.slot === 'reign_start') next = [reign.year, reignSortBasis(reign)];
   else if (g) next = [g.year_bc_ad, { tier: 'provisional', tier_rank: null, chronology: 'generations', note: `PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations: ${g.date}. Pending owner decision (open question A8).` }];
   else if (mc) next = [mc.year_bc_ad, { tier: 'provisional', tier_rank: null, chronology: 'morecraft', note: `PROVISIONAL: no CFAH, Ussher–Jones, Ussher or Generations date exists, so the sort uses Morecraft (${mc.citation}): ${mc.date.replace(/\.$/, "")}. Pending owner decision (open question F1).` }];
+  else if (d.sorting_basis?.tier === 'calculated') next = [d.sorting_year, d.sorting_basis];
   else if (d.type === 'person') next = [null, { tier: 'none', tier_rank: null, chronology: 'cfah', note: 'No tier gives a birth year, and Morecraft gives none.' }];
   else throw new Error(`${id}: new event without any year`);
   if (d.sorting_year !== next[0] || JSON.stringify(d.sorting_basis) !== JSON.stringify(next[1])) { d.sorting_year = next[0]; d.sorting_basis = next[1]; touch(id); }

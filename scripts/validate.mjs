@@ -25,9 +25,13 @@ import { isBlbUrl, isNonBlbScripture, blbFromOsis } from './blb.mjs';
 import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, standbySummaryLine } from './standby/compute.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE, ITALICS_NOTE } from './raleigh/derived-year.mjs';
 import { loadChronologicalTable, yearColumnIndex, yearColumnReport } from './raleigh/table.mjs';
+import { loadXml, normalizedDocumentText, normalizeWs, extractPassages, alignStoredPassages, THROUGH_CHAPTER, BOOK2_THROUGH } from './raleigh/xml-text.mjs';
 import { TIERS, personTierSort, tierPick, isJones23 } from './sort-rule.mjs';
+import { assertCalculatedCatalog, calculatedBasisNote } from './calculated/catalog.mjs';
 import { doreUrls, IIIF_BASE, DISPLAY_W, DORE_THUMB_DIR, doreThumbName } from './dore/urls.mjs';
 import { parseDoreFileName } from './dore/parse.mjs';
+import { selfCheckNameLinks } from './names/link.mjs';
+import { buildNameLinkReview } from './names/link-review.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const S = (f) => JSON.parse(readFileSync(join(root, 'schema', f), 'utf8'));
@@ -187,6 +191,30 @@ function checkEntries(rel, label, entries) {
   scan('data/chronologies.json', chronDoc, '');
   scan('data/sources.json', srcDoc, '');
 }
+const peopleById = {};
+for (const { doc, kind } of Object.values(records)) if (kind === 'person') peopleById[doc.id] = doc;
+let calculatedItems = new Map();
+let calculatedGoverning = new Map();
+try {
+  const built = assertCalculatedCatalog(peopleById);
+  calculatedItems = built.items;
+  calculatedGoverning = built.governing;
+} catch (e) { err('scripts/calculated/catalog.mjs', e.message); }
+function kinCheck(rel, value, label) {
+  if (value == null) return;
+  const list = Array.isArray(value) ? value : [value];
+  const seen = new Set();
+  for (const item of list) {
+    const id = typeof item === 'string' ? item : item?.id;
+    if (typeof item === 'object') {
+      if (item.uncertain !== true) err(rel, `${label}: a kin object is only for an uncertain link`);
+      if (!srcIds.has(item.source)) err(rel, `${label}: unknown source "${item.source}"`);
+    }
+    if (seen.has(id)) err(rel, `${label}: duplicate "${id}"`);
+    seen.add(id);
+    need(rel, id, 'person', label);
+  }
+}
 const sortingTargets = [];
 for (const { rel, doc, kind } of Object.values(records)) {
   for (const id of doc.related || []) need(rel, id, null, 'related');
@@ -202,7 +230,12 @@ for (const { rel, doc, kind } of Object.values(records)) {
   }
   if (kind === 'person') {
     need(rel, doc.father, 'person', 'father');
+    kinCheck(rel, doc.mother, 'mother');
+    kinCheck(rel, doc.spouse, 'spouse');
     doc.children.forEach((id) => need(rel, id, 'person', 'children'));
+    const expectCalc = calculatedItems.get(doc.id) || null;
+    const gotCalc = doc.calculated || null;
+    if (JSON.stringify(gotCalc) !== JSON.stringify(expectCalc)) err(rel, 'calculated dates do not match scripts/calculated/catalog.mjs; re-run node scripts/calculated/apply.mjs');
     (doc.events || []).forEach((id) => need(rel, id, 'event', 'events'));
     for (const [k, entries] of Object.entries(doc.dates)) checkEntries(rel, `dates.${k}`, entries);
     sortingTargets.push({ rel, doc, entries: doc.dates.birth || [], kind });
@@ -211,7 +244,8 @@ for (const { rel, doc, kind } of Object.values(records)) {
   if (kind === 'map') (doc.locations || []).forEach((id) => need(rel, id, 'location', 'locations'));
 }
 
-// 4-tier sorting rule (scripts/sort-rule.mjs). People: tier birth, else reign start.
+// 4-tier sorting rule (scripts/sort-rule.mjs). People: tier birth, else reign start,
+// else provisional, else one calculated year, else none.
 const ruleTiers = (chronDoc.sorting_rule?.tiers || []).map((t) => t.tier).join(',');
 if (ruleTiers !== TIERS.map((t) => t.tier).join(',')) err('data/chronologies.json', `sorting_rule tiers must be ${TIERS.map((t) => t.tier).join(' > ')}`);
 const tierCount = {};
@@ -229,7 +263,7 @@ for (const { rel, doc, entries, kind } of sortingTargets) {
       if (b.slot !== 'reign_start') err(rel, 'a reign-start sort must set sorting_basis.slot to "reign_start"');
       if (!['cfah', 'ussher-jones', 'ussher'].includes(exp.chronology)) err(rel, 'a reign-start sort may use only the four sort tiers');
     } else if (b.slot != null && b.slot !== 'birth') err(rel, `sorting_basis.slot "${b.slot}" does not match the birth year that sets the sort`);
-  } else if (b.slot === 'reign_start') {
+  } else if (b.slot === 'reign_start' && b.tier !== 'calculated') {
     err(rel, 'sorting_basis.slot is reign_start, but no tier 1–4 year is stored on dates.reign');
   } else if (b.tier === 'derived') {
     const src = records[b.derived_from];
@@ -251,10 +285,23 @@ for (const { rel, doc, entries, kind } of sortingTargets) {
     } else if (b.chronology !== 'generations') err(rel, 'provisional tier must name chronology "generations" or "morecraft"');
     else if (!g) err(rel, 'provisional tier needs a dated generations entry');
     else if (doc.sorting_year !== g.year_bc_ad) err(rel, `provisional sorting_year should be ${g.year_bc_ad} (first dated, non-superseded generations entry), found ${doc.sorting_year}`);
+  } else if (b.tier === 'calculated') {
+    const gov = calculatedGoverning.get(doc.id);
+    if (kind !== 'person') err(rel, 'tier "calculated" is only allowed for people');
+    else if (!gov) err(rel, 'calculated sort used where no calculated year governs');
+    else {
+      if (b.tier_rank !== null) err(rel, 'calculated tier must have tier_rank null');
+      if (b.chronology !== gov.source) err(rel, `calculated chronology should be "${gov.source}", found "${b.chronology}"`);
+      if (b.slot !== gov.slot) err(rel, `calculated slot should be "${gov.slot}", found "${b.slot}"`);
+      if (b.derived_from) err(rel, 'a calculated sort does not use derived_from');
+      if (doc.sorting_year !== gov.year_bc_ad) err(rel, `calculated sorting_year should be ${gov.year_bc_ad}, found ${doc.sorting_year}`);
+      if (b.note !== calculatedBasisNote(gov)) err(rel, 'calculated sort note does not match the arithmetic');
+    }
   } else if (b.tier === 'none') {
     if (kind !== 'person') err(rel, 'tier "none" (null sorting_year) is only allowed for people; events need a derived sort');
     if (doc.sorting_year !== null) err(rel, 'tier "none" requires sorting_year null');
     if (b.tier_rank !== null) err(rel, 'tier "none" must have tier_rank null');
+    if (calculatedGoverning.has(doc.id)) err(rel, `a calculated ${calculatedGoverning.get(doc.id).slot} should set the sort`);
   } else err(rel, `no tier 1-4 year available, but sorting_basis claims "${b.tier}"`);
 }
 
@@ -269,7 +316,7 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
   const GEN_SRC = new Set(srcDoc.sources.filter((s) => /^generations-/.test(s.id)).map((s) => s.id));
   for (const { rel, doc, entries } of sortingTargets) {
     const b = doc.sorting_basis || {};
-    if ((b.chronology === 'generations' || b.derived_from === 'generations') && b.tier !== 'provisional') err(rel, 'generations may never set the sort except via the explicit "provisional" tier');
+    if ((b.chronology === 'generations' || b.derived_from === 'generations') && b.tier !== 'provisional' && b.tier !== 'calculated') err(rel, 'generations may never set the sort except via the explicit "provisional" or "calculated" tier');
     const tierHit = doc.type === 'person' ? personTierSort(doc) : tierPick(entries);
     if (b.tier === 'provisional' && tierHit) err(rel, 'provisional (generations) sort used although a tier 1-4 year exists');
   }
@@ -296,7 +343,7 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
   const mc = chronDoc.chronologies.find((c) => c.id === 'morecraft');
   if (mc && (mc.primary || !/SECONDARY DISPLAY/.test(mc.description))) err('data/chronologies.json', 'morecraft must be a non-primary SECONDARY DISPLAY chronology');
   const MC_SRC = new Set(srcDoc.sources.filter((s) => /^morecraft-/.test(s.id)).map((s) => s.id));
-  for (const { rel, doc } of sortingTargets) { const b = doc.sorting_basis || {}; if ((b.chronology === 'morecraft' || b.derived_from === 'morecraft') && b.tier !== 'provisional') err(rel, 'morecraft may never set the sort except via the explicit "provisional" tier'); }
+  for (const { rel, doc } of sortingTargets) { const b = doc.sorting_basis || {}; if ((b.chronology === 'morecraft' || b.derived_from === 'morecraft') && b.tier !== 'provisional' && b.tier !== 'calculated') err(rel, 'morecraft may never set the sort except via the explicit "provisional" or "calculated" tier'); }
   for (const { rel, doc } of Object.values(records)) {
     for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'morecraft')) {
       if (!MC_SRC.has(e.source_text_id)) err(rel, `morecraft entry needs source_text_id of a morecraft-* source, got "${e.source_text_id}"`);
@@ -313,7 +360,7 @@ for (const c of chronDoc.chronologies) if ((c.id === 'jordan' || c.id === 'jorda
   const her = chronDoc.chronologies.find((c) => c.id === 'herodotus');
   if (her && (her.primary || !/SECONDARY DISPLAY/.test(her.description))) err('data/chronologies.json', 'herodotus must be a non-primary SECONDARY DISPLAY chronology');
   const HER_SRC = new Set(srcDoc.sources.filter((s) => /^herodotus-/.test(s.id)).map((s) => s.id));
-  for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'herodotus' || doc.sorting_basis?.derived_from === 'herodotus') err(rel, 'herodotus may never set the sort');
+  for (const { rel, doc } of sortingTargets) if ((doc.sorting_basis?.chronology === 'herodotus' || doc.sorting_basis?.derived_from === 'herodotus') && doc.sorting_basis?.tier !== 'calculated') err(rel, 'herodotus may never set the sort');
   for (const { rel, doc } of Object.values(records)) {
     for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'herodotus')) {
       if (e.year_bc_ad != null || e.year_bc_ad_end != null || e.year_am != null) err(rel, 'herodotus entries record Herodotus\'s own words only: year_bc_ad/year_am must be null (put derived years in the note, labelled DERIVED)');
@@ -339,14 +386,14 @@ let raleighDerivedSummary = '';
   if (ral && !/never sets sorting_year/.test(ral.description || '')) err('data/chronologies.json', 'raleigh description must say it never sets sorting_year');
   if (!ral) err('data/chronologies.json', 'raleigh-history-of-the-world is missing');
   if (ral && (!/4032/.test(ral.year_conventions || '') || !/4031/.test(ral.year_conventions || ''))) err('data/chronologies.json', 'raleigh year_conventions must state the 4032 BC display anchor and the 4031 BC Julian Period difference');
-  for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'raleigh-history-of-the-world' || doc.sorting_basis?.derived_from === 'raleigh-history-of-the-world') err(rel, 'raleigh-history-of-the-world may never set the sort');
+  for (const { rel, doc } of sortingTargets) if ((doc.sorting_basis?.chronology === 'raleigh-history-of-the-world' || doc.sorting_basis?.derived_from === 'raleigh-history-of-the-world') && doc.sorting_basis?.tier !== 'calculated') err(rel, 'raleigh-history-of-the-world may never set the sort');
   for (const { rel, doc } of Object.values(records)) {
     for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()]) {
       for (const problem of raleighDerivedProblems(e)) err(rel, problem);
       if (e.source !== RALEIGH_SOURCE) continue;
       if (e.year_bc_ad != null || e.year_bc_ad_end != null) err(rel, 'raleigh entries keep year_bc_ad null; the derived year is display text only');
       if (e.source_text_id !== 'raleigh-history-of-the-world-1617') err(rel, `raleigh entry needs source_text_id raleigh-history-of-the-world-1617, got "${e.source_text_id}"`);
-      if (!/1617/.test(e.citation || '') || !(/Chronological Table/.test(e.citation || '') || /Book /.test(e.citation || ''))) err(rel, 'raleigh citation must name the 1617 text and a Book or the Chronological Table');
+      if (!/1617/.test(e.citation || '') || !(/Chronological Table/.test(e.citation || '') || /Book /.test(e.citation || '') || /Preface/.test(e.citation || ''))) err(rel, 'raleigh citation must name the 1617 text and a Book, the Preface, or the Chronological Table');
       if (!e.date) err(rel, 'raleigh entry needs the words as printed');
       const shown = raleighAmDisplay(e.year_am, e.year_am_end);
       if (shown.text) raleighShown += 1;
@@ -388,7 +435,7 @@ let raleighDerivedSummary = '';
   const cory = chronDoc.chronologies.find((c) => c.id === 'cory');
   if (cory && (cory.primary || !/SECONDARY DISPLAY/.test(cory.description))) err('data/chronologies.json', 'cory must be a non-primary SECONDARY DISPLAY chronology');
   const CORY_SRC = new Set(srcDoc.sources.filter((s) => /^cory-/.test(s.id)).map((s) => s.id));
-  for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'cory' || doc.sorting_basis?.derived_from === 'cory') err(rel, 'cory may never set the sort');
+  for (const { rel, doc } of sortingTargets) if ((doc.sorting_basis?.chronology === 'cory' || doc.sorting_basis?.derived_from === 'cory') && doc.sorting_basis?.tier !== 'calculated') err(rel, 'cory may never set the sort');
   for (const { rel, doc } of Object.values(records)) {
     for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'cory')) {
       if (e.year_bc_ad != null || e.year_bc_ad_end != null || e.year_am != null) err(rel, 'cory entries record the edition\'s own words only: year_bc_ad, year_bc_ad_end and year_am must be null (put derived years in the note, labelled DERIVED)');
@@ -403,7 +450,7 @@ let raleighDerivedSummary = '';
   const sh = chronDoc.chronologies.find((c) => c.id === 'shuckford');
   if (sh && (sh.primary || !/SECONDARY DISPLAY/.test(sh.description))) err('data/chronologies.json', 'shuckford must be a non-primary SECONDARY DISPLAY chronology');
   const SH_SRC = new Set(srcDoc.sources.filter((s) => /^shuckford-/.test(s.id)).map((s) => s.id));
-  for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'shuckford' || doc.sorting_basis?.derived_from === 'shuckford') err(rel, 'shuckford may never set the sort');
+  for (const { rel, doc } of sortingTargets) if ((doc.sorting_basis?.chronology === 'shuckford' || doc.sorting_basis?.derived_from === 'shuckford') && doc.sorting_basis?.tier !== 'calculated') err(rel, 'shuckford may never set the sort');
   for (const { rel, doc } of Object.values(records)) {
     for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'shuckford')) {
       if (!SH_SRC.has(e.source_text_id)) err(rel, `shuckford entry needs source_text_id of a shuckford-* source, got "${e.source_text_id}"`);
@@ -419,7 +466,7 @@ let raleighDerivedSummary = '';
   const hales = chronDoc.chronologies.find((c) => c.id === 'hales');
   if (hales && (hales.primary || !/SECONDARY DISPLAY/.test(hales.description))) err('data/chronologies.json', 'hales must be a non-primary SECONDARY DISPLAY chronology');
   const HALES_SRC = new Set(srcDoc.sources.filter((s) => /^hales-/.test(s.id)).map((s) => s.id));
-  for (const { rel, doc } of sortingTargets) if (doc.sorting_basis?.chronology === 'hales' || doc.sorting_basis?.derived_from === 'hales') err(rel, 'hales may never set the sort');
+  for (const { rel, doc } of sortingTargets) if ((doc.sorting_basis?.chronology === 'hales' || doc.sorting_basis?.derived_from === 'hales') && doc.sorting_basis?.tier !== 'calculated') err(rel, 'hales may never set the sort');
   for (const { rel, doc } of Object.values(records)) {
     for (const e of [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()].filter((x) => x.source === 'hales')) {
       if (!HALES_SRC.has(e.source_text_id)) err(rel, `hales entry needs source_text_id of a hales-* source, got "${e.source_text_id}"`);
@@ -453,7 +500,7 @@ let raleighDerivedSummary = '';
   const sig = (p) => (p ? `${p.tier}|${p.rank}|${p.chronology}|${p.year}|${p.slot || ''}` : '');
   for (const { rel, doc, kind } of sortingTargets) {
     const b = doc.sorting_basis || {};
-    if (b.chronology === J19 || b.derived_from === J19) err(rel, 'jones-2019 may never set the sort');
+    if ((b.chronology === J19 || b.derived_from === J19) && b.tier !== 'calculated') err(rel, 'jones-2019 may never set the sort');
     if (doc.standby?.source_chronology === J19) err(rel, 'jones-2019 may never set a standby placement');
     const full = kind === 'person' ? personTierSort(doc) : tierPick(doc.chronologies);
     let bare;
@@ -514,6 +561,8 @@ for (const [id, age, life] of GEN11) {
 const NAME_HISTORY = new Set([
   'raleigh-history-of-the-world-1617', 'josephus-antiquities-whiston', 'herodotus-rawlinson-wikisource',
   'ussher-annals-1658', 'ussher-annals-transcription', 'annals-of-clonmacnoise-1896', 'cory-ancient-fragments-1876',
+  // Kevin, 2026-11-08 (N28). The private-copy gate below still allows only the Herakles spelling already printed on Naamah.
+  'johnson-genesis-characters-greek-art',
 ]);
 const nameDoc = validate('data/name-forms.json', 'name-forms');
 const seenNameIds = new Set();
@@ -526,7 +575,17 @@ for (const person of nameDoc.people || []) {
     if (!f.citation.includes(f.form)) err('data/name-forms.json', `${where}: citation does not contain the form`);
     if (!srcIds.has(f.source_text_id)) err('data/name-forms.json', `${where}: unknown source ${f.source_text_id}`);
     const src = srcDoc.sources.find((s) => s.id === f.source_text_id);
-    if (src?.access === 'private-copy') err('data/name-forms.json', `${where}: private copy ${f.source_text_id} cannot witness a name`);
+    if (src?.access === 'private-copy') {
+      // Kevin, 2026-11-08 (N28): Herakles is already printed in the Naamah description.
+      // The footnote quotes that sentence and links to the public listing, not the book.
+      const heraklesOk = person.id === 'heracles' && f.form === 'Herakles'
+        && f.source_text_id === 'johnson-genesis-characters-greek-art'
+        && f.link === src.url
+        && (records.naamah?.doc.description || '').includes('Herakles')
+        && f.citation.includes('Herakles')
+        && /not quoted/i.test(f.citation);
+      if (!heraklesOk) err('data/name-forms.json', `${where}: private copy ${f.source_text_id} cannot witness a name`);
+    }
     if (f.role === 'alternate' && f.script !== 'latin') err('data/name-forms.json', `${where}: an alternate spelling is in Latin letters`);
     if (f.role === 'rendering' && f.script !== 'greek') err('data/name-forms.json', `${where}: a later rendering is Greek`);
     if (f.role === 'original' && !['hebrew', 'aramaic', 'greek'].includes(f.script)) err('data/name-forms.json', `${where}: original language is Hebrew, Aramaic or Greek`);
@@ -785,6 +844,49 @@ if (kingDoc) {
     const expected = computeStandby(doc, ctx);
     if (JSON.stringify(sb ?? null) !== JSON.stringify(expected ?? null)) err(rel, 'standby does not match scripts/standby/compute.mjs; re-run it');
   }
+}
+// Raleigh accounts: each passage is his 1617 text, and each account names a person or an event.
+{
+  const rel = 'data/raleigh-accounts.json';
+  const doc = validate(rel, 'raleigh-accounts');
+  const corpus = normalizedDocumentText(loadXml(root));
+  const byId = new Map();
+  let lastOrder = 0;
+  for (const p of doc.passages) {
+    if (byId.has(p.id)) err(rel, `duplicate passage ${p.id}`);
+    byId.set(p.id, p);
+    if (p.order <= lastOrder) err(rel, `${p.id}: passages must be in book order`);
+    lastOrder = p.order;
+    if (p.passage !== normalizeWs(p.passage)) err(rel, `${p.id}: passage is not whitespace-normalised`);
+    if (!corpus.includes(p.passage)) err(rel, `${p.id}: passage is not verbatim in the 1617 XML`);
+    if (!/sig\./.test(p.citation) || !p.citation.includes(p.signature)) err(rel, `${p.id}: citation must name its signature`);
+    if (p.signature_end !== p.signature && !p.citation.includes(p.signature_end)) err(rel, `${p.id}: citation must name the ending signature`);
+  }
+  const extracted = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER, book2Through: BOOK2_THROUGH });
+  for (const msg of alignStoredPassages(doc.passages, extracted)) err(rel, msg);
+  for (const [recordId, ids] of Object.entries(doc.accounts)) {
+    const rec = records[recordId];
+    if (!rec || (rec.kind !== 'person' && rec.kind !== 'event')) err(rel, `${recordId}: account must name a person or an event`);
+    let prev = 0;
+    for (const id of ids) {
+      const p = byId.get(id);
+      if (!p) err(rel, `${recordId}: unknown passage ${id}`);
+      else if (p.order <= prev) err(rel, `${recordId}: passages must stay in book order`);
+      else prev = p.order;
+    }
+  }
+}
+{
+  const rel = 'data/name-link-overrides.json';
+  validate(rel, 'name-link-overrides');
+  const peopleDocs = Object.values(records).filter((r) => r.kind === 'person').map((r) => r.doc);
+  const formsById = Object.fromEntries((nameDoc.people || []).map((p) => [p.id, p.forms]));
+  for (const msg of selfCheckNameLinks({ people: peopleDocs, nameForms: formsById })) err('scripts/names/link.mjs', msg);
+  const review = buildNameLinkReview(root);
+  for (const msg of review.problems) err(rel, msg);
+  const reviewPath = join(root, 'docs/name-link-review.md');
+  const current = existsSync(reviewPath) ? readFileSync(reviewPath, 'utf8') : '';
+  if (current !== review.markdown) err('docs/name-link-review.md', 'does not match node scripts/names/link-review.mjs');
 }
 if (raleighDerivedSummary) console.log(raleighDerivedSummary);
 if (errors.length) {

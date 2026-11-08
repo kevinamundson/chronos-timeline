@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "adah",
+  "type": "person",
+  "title": "Adah",
+  "summary": "A wife of Lamech, and the mother of Jabal and Jubal (Genesis 4:19–21). Raleigh prints Ada.",
+  "description": "A wife of Lamech, and the mother of Jabal and Jubal (Genesis 4:19–21). Raleigh prints Ada, beside Silla, Iubal, Tubal, and Tubalcain. Lamech is her husband, not her father. The spouse field records that. Undated in this intake: no CFAH year was found. Raleigh is display-only.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "spouse": [
+    "lamech-cainite"
+  ],
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [
+    "Gen.4.19",
+    "Gen.4.20"
+  ],
+  "sources": [
+    "blb-biblehub",
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [
+    "zillah",
+    "jubal",
+    "jabal"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/4.htm#19",
+      "locator": "Genesis 4:19"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, Chapter V, §. III, sig. 82b"
+    }
+  ]
+}

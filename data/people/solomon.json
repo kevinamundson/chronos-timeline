@@ -16,6 +16,22 @@
     "chronology": "ussher-jones",
     "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1036 BC (no higher-tier year available)."
   },
+  "calculated": [
+    {
+      "slot": "reign_start",
+      "year_bc_ad": -1042,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 786b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2991. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2991 = 1042 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "solomon",
+      "anchor_slot": "reign_start",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2991
+    }
+  ],
   "father": "david",
   "children": [],
   "scripture_facts": {

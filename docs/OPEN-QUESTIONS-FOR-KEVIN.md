@@ -1171,3 +1171,306 @@ Where the editions differ, the 2019 value is one sub-row under the Ussher–Jone
 | `paul-released` | 4068 AM, AD 65 | 4068 AM, AD 63 | Appendix F, printed p. 280 | Appendix F, printed p. 280 (PDF p. 315) | display sub-row |
 
 - **Recommendation:** keep this. Do not let the 21st edition set a sort.
+
+## N. Raleigh body (2026-11-07)
+
+The Preface (sig. 3b–23a), the contents (sig. 23b–42b), and Book I, Part I, Chapter I (sig. 43b–54a) were read. Four creation-day statements are on `creation-week`. Nothing else was given a year. The quotes and the resume point are in `data/raleigh-body-extract.md` and `docs/raleigh-body-pass-log.md`.
+
+### N1. Preface years, and contents lines, that have no event to receive them
+
+- **Why it matters:** a new event cannot sort on Raleigh. These figures were left in the extract.
+  - Preface, sig. 8b: “the Treaty at Gambray in the yeare, 1559”. No era is named in the sentence.
+  - Preface, sig. 9a: “had the Duke of Parma in the yeare 1588, ioyned the army”. The sentence is contrary to fact.
+  - Contents, sig. 26a: Egypt peopled “within two hundred yeeres after the Creation”.
+  - Contents, sig. 27a: Abraham “borne in the yeere 292. after the Floud, and not in the yeere 352.”
+  - Contents, sig. 27a: Terah might “beget Abraham in his hundred and thirtieth yeere.”
+  - Contents, sig. 27b: “Chams reigne in Aegypt began in the yeere after the Floud 191.”
+  - Contents, sig. 30b: Jephthah’s “three hundred yeeres”, with one illegible word.
+  - Contents, sig. 33b: the Scythians “ruled in Asia eight and twentie yeeres.”
+  - Contents, sig. 33b: “the 70. yeeres” of the captivity, with two illegible words, and “during the 70. yeeres” in Babylon.
+- **Options:**
+  1. Leave them until the chapter that states them is read, and do not make an event that only Raleigh dates.
+  2. Make the event anyway, with `sorting_year` taken from an existing record (`derived`). That would put a new event on the timeline.
+  3. Store the words on the person already in the portal (Abraham, Terah, Ham of Egypt, Jephthah) even when the line is only a contents summary.
+- **Recommendation:** option 1. The contents line is a summary of a later chapter. The Preface years do not name an era, and one of them is contrary to fact.
+
+### N2. Darius who begged water
+
+- **Why it matters:** Preface, sig. 16a–16b, says God “gaue vnto Darius the part of the greatest Emperour, and the part of the most miserable begger, a begger begging water of an Enemie”. No year and no length. `darius-d31` is the Cory thirty-first-dynasty king, and the note there already says he is not Darius son of Hystaspes. The sentence was not attached. Book I, Part I, Chapter VIII, §. IX, sig. 120b–121a, reports that “the Macedonian, the Sonne of PHILIP, went forth of the Land of Cethim, and slew DARIVS King of the Persians and Medes.” That Darius is Alexander’s opponent. It was not attached to `darius-d31`, and no second Darius was made. `darius-d31` has no Raleigh account from this range.
+- **Options:**
+  1. Leave it unattached, as now.
+  2. Attach the sentence to `darius-d31` as a Raleigh note with no year.
+- **Recommendation:** option 1, until you say that this Darius is that king.
+
+### N3. Names with no year
+
+- **Answered 2026-11-07, option 2.** Make a person record for every person Raleigh names, dated or not. An undated person gets a null CFAH date, the note `pending CFAH reference`, tier `none`, and `sorting_year` null, as the undated Shuckford people do. Check for an existing record or name form first. Do not split a group into invented individuals. A named individual only.
+- **What was done:** 271 people were added from the Preface, the contents, and Book I, Part I, Chapters I–VIII. 230 are first named before Chapter VIII. 41 are first named in Chapter VIII. Existing person files were not rewritten. The passages that name a person are on that page, from `data/raleigh-accounts.json`.
+- **Still open inside this ruling:** N7 to N11. A bare name that could be two people was not split.
+
+### Ruling B. Quote length
+
+- **Answered 2026-11-07.** The 1617 text is public domain. The EarlyPrint and EEBO-TCP transcriptions in `sources/raleigh/` are CC0. There is no quote-length limit for Raleigh. AGENTS.md section 5 says the short-quote rules apply to copyrighted works only.
+
+### Ruling C. Raleigh’s account on the page
+
+- **Answered 2026-11-07.** Every person and event the covered text discusses has a `<details>` section, closed by default, summary “Raleigh’s account”. The passages are his words, in book order, each cited by book, part, chapter, section, and signature. Original spelling is in the page. Modern spelling is the default, with the same toggle as the chronological table. The passages are stored once in `data/raleigh-accounts.json`, and `accounts` maps a record id to passage ids. Kevin approved that file (`schema/raleigh-accounts.schema.json`). `scripts/validate.mjs` requires each passage to occur verbatim in `sources/raleigh/A10357.earlyprint-unadorned.xml` after notes and tags are removed and whitespace is collapsed. Example pages: `/events/creation-week/` and `/people/moses/`. The check covers Chromium and WebKit.
+
+### N4. The illegible word in Chapter I, §. IX
+
+- **Why it matters:** after “a power” the next word is illegible in both XML copies (unadorned 〈◊ 〉; TCP P5, gap of one word). The clear clause before it is on `creation-week`. The word was not guessed.
+- **Options:**
+  1. Leave the gap, as now.
+  2. If a page image is read later and the word is clear, add it.
+- **Recommendation:** option 1. No page image is in this repository.
+
+Pass 2 read Book I, Part I, Chapter II, §. I, sig. 54a, through Chapter VII. Twenty-seven statements are on existing records. No person, place, or event was created. The quotes are in `data/raleigh-body-extract.md`. N1 to N4 stay the defaults.
+
+### N5. Deucalion’s yeere of the World 2356
+
+- **Carried out as option 2, because of ruling A (2026-11-07).** Kevin did not answer this item in these words. Ruling A requires a person for every named person, and option 2 of this item is that person. Say if it should be undone.
+- **What was done:** `deucalion` exists. Book I, Part I, Chapter VII, §. III, sig. 95b–96a: “Now Deucalion was borne in the yeere of the World 2356.” is stored with `year_am` 2356, `year_bc_ad` null, and `sorting_year` null. The age word is still 〈◊ 〉 and was not stored. “( which added to 2356. make 2438.)” is stored with `year_am` null, because the age that produces 2438 cannot be read. “his Floud was after Noahs Floud ended 782. yeeres.” is stored with `year_am` null. No flood event was made. Functius, Mercator, Codoman, and the historians’ 82 were not entered.
+
+### N6. Ogyges born 67 yeeres after Jacob
+
+- **Carried out as option 2, because of ruling A (2026-11-07).** Kevin did not answer this item in these words. Ruling A requires the person. Say if it should be undone.
+- **What was done:** `ogyges` exists. Book I, Part I, Chapter VII, §. II, sig. 94b: “was borne 67. yeeres after him” is on that person, with `year_am` null, `year_bc_ad` null, and `sorting_year` null. “him” is Jacob, named in the same sentence. The birth was not put on `flood-of-ogyges`. Eusebius’s yeere of the World 3440 was not entered. His own 580 and his own 613 stay on the flood.
+
+Pass 3 also read Book I, Part I, Chapter VIII, and stopped at the end of that chapter. The quotes are in `data/raleigh-body-extract.md`. N1, N2, and N4 stay open.
+
+### N7. God, Jehovah, the Holy Ghost, and Christ
+
+- **Why it matters:** The covered text names the Holy Ghost, and it prints IEHOVAH inside a Latin sentence of Vatablus (Book I, Part I, Chapter III, §. IX, sig. 68a–68b). No person was made for God, for Jehovah, or for the Holy Ghost. Christ is named often. `christ` was made, with no birth year. He was not linked to `birth-of-jesus`, `death-and-resurrection-of-christ`, `baptism-of-jesus`, `jesus-begins-public-ministry`, or `jesus-at-the-temple-aged-twelve`.
+- **Options:**
+  1. Leave the divine names off the person list. Keep `christ` as a display-only person, unlinked to those events.
+  2. Make person records for God, Jehovah, and the Holy Ghost as well.
+  3. Link `christ` to the Gospel events that already exist.
+- **Recommendation:** option 1. The Gospel events already have their own records. A link would say that Raleigh’s sentences are about those events, which this pass did not judge one by one.
+
+### N8. Ianus of Italy, and the years that were not entered
+
+- **Why it matters:** `ianus` was made and kept apart from Noah. Book I, Part I, Chapter VIII, §. V, sig. 116b–117a: he “liued at once with Ruth, who marryed Booz, in the Worlds yeere( as some reckon) 2717. after the floud 1064. and Noah dyed 350. yeeres after the 〈◊ 〉.” The 2717 is printed as some other men’s reckoning and was not stored as `year_am`. The word after “after the” is illegible, so 350 was not stored. Annius’s “liued 92. yeeres” in Italy, which Raleigh says Moses’s silence disproves, was not stored. “704. yeeres” between Ianus of Italy and Noah surnamed Ianus was not stored.
+- **Options:**
+  1. Keep `ianus` apart from Noah, and leave 2717, 350, 92, and 704 unentered, as now.
+  2. Store 2717 as his yeere of the World, with `year_bc_ad` null and `sorting_year` null, and say in the note that the words are “as some reckon”.
+  3. Treat this Ianus as Noah and do not keep a separate person.
+- **Recommendation:** option 1. He marks 2717 as someone else’s reckoning, and the 350 depends on a word that cannot be read.
+
+### N9. Bare names that were not attached, and merges that may be too coarse
+
+- **Why it matters:** A bare Darius, Philip, Xerxes, Sheba, Havilah, Demetrius, Nilus, or Abimelech was not attached by that word alone. Nilus is often the river, and the portal’s Nilus is an Egyptian king. Sheba and Havilah were attached only when the same passage names Joktan or Raamah, or Joktan or Cush. Abimelech of Gerar is `abimelech-of-gerar` when the passage also says Gerar or Philistim. Abimelech son of Gideon stayed on the existing record when the passage says Gideon. Ham is Noah’s son. A sentence that also names Noah, Shem, or Japheth is on `ham`. `cham`, the Egyptian table king, received no passage from this range. A sentence that did not show which Ham or Cham was meant was left off both.
+- **Also one record where the spelling was folded in:** bare Alexander onto `alexander-the-great`; bare Antiochus onto `antiochus-the-great`; Cainan and Cenan onto `kenan`; Hiram onto `hiram-of-tyre` (not `hiram-of-tyre-ii`); bare Ptolemy onto one `ptolemy`, with Philadelphus kept as `ptolemy-philadelphus`; bare Cecrops as a new `cecrops`, while “Cecrops the second” stays `cecrops-the-second`. Julius and Caesar go to `julius-caesar`.
+- **Options:**
+  1. Leave these attachments as they are, and split one only when you name the second person.
+  2. Detach the bare-name merges and leave those passages on no person until you say which one.
+- **Recommendation:** option 1. The passage is still on the page of the record it was attached to, so a wrong attachment can be moved without losing his words.
+
+### N10. One record where a repeated name was not split
+
+- **Why it matters:** Splitting these would invent a distinction the sentence does not make. Each is one person, and the account shows every passage. `john` (title Iohn) holds Don Iohn and “Duke Iohn of Burgoigne” with the other Iohns in the covered text. `henry` holds the Preface sentence “Prince Henry, the successiue hope”. The same record also received the paragraph that says “the same King Henry” after “King Henry the eight”; that paragraph is on `henry-viii` as well. “Henry the seauenth” is on `henry-vii` (the spelling is seauenth). `francis` is the Preface son in “Francis Charles, Henry, and Hercules”, besides `francis-i` and `francis-bacon`. `frederick` is “his brother Don Frederick” in the Preface, sig. 10b–11a. `alphonso` is “Don Alphonso Prince of Portugall”, Preface, sig. 11b. `niger` is one small-caps name in Chapter III, §. IX, sig. 68a–68b, kept apart from `marius-niger`; the river Niger was not made a person. `hicromes` (“in Saint Hicromes time”) is not `jerome`. `eliam` is not `elijah`. `gregorie` is not `gregory-nazianzen`. `adonis` is both a river of Phoenicia and the lamented figure. `simoni` is the printed dative “SIMONI DEO SANCTO”. The city called Enoch is “after the name of his first 〈◊ 〉” (Chapter VIII, §. XI, subsection IV, sig. 125b–126a). The son’s name is illegible, so no person was made from that gap.
+- **Options:**
+  1. Leave each as one record until you name the split.
+  2. Name the second person, and this intake will move the passages you mark.
+- **Recommendation:** option 1.
+
+### N11. Mesech the son of Aram
+
+- **Why it matters:** `meshech` already existed, as the son of Japheth. Book I, Part I, Chapter VIII, §. VII, sig. 118b–119a: “betweene Mesech the sonne of Aram, and Meshech( or Mosoch) the sonne of Iapheth, there is little difference in name”. Those sentences are on `meshech`. A second person was not made. The same spelling is also the place in Psalm 120. The existing file was not rewritten.
+- **Options:**
+  1. Leave the son of Aram on `meshech`, as now.
+  2. Make a separate person for Mesech the son of Aram, and move the sentences that say so.
+- **Recommendation:** option 1, until you want the son of Aram kept apart. Raleigh himself says the names are close, and the passage does not give him a yeere of the World.
+
+Pass 4 read Book I, Part I, Chapter IX through Chapter XII, and stopped at “Finis Libri primi.” The quotes are in `data/raleigh-body-extract.md`. N1, N2, N4, and N7 to N11 stay open.
+
+### N12. Africanus, and the bare Alexander beside Polyhistor
+
+- **Why it matters:** Book I, Part I, Chapter X, §. IV, sig. 145a, names “Iulius Africanus surnamed Saturne”. Chapter X, §. III, sig. 143a–144b, says Nimrod “tooke vpon him that name of Assur … as Scipio did of Africanus”. Both sit on `julius-africanus`, because the bare spelling Africanus is sent there. Chapter XI, §. II, sig. 150a, says “ALEXANDER( saith he, meaning ALEXANDER POLYHISTOR)”. The phrase is on `alexander-polyhistor`. The bare ALEXANDER is on `alexander-the-great`, which is the rule already in N9.
+- **Options:**
+  1. Leave both attachments, as now.
+  2. Make a separate person for Scipio’s agnomen Africanus, and move that one sentence.
+- **Recommendation:** option 1, until you name the split. The words are on the page of the record that holds them.
+
+### N13. Cyril’s Arbelus
+
+- **Why it matters:** Chapter X, §. VI, sig. 145b: “Cyrillus against Iulian cals the Father of Ninus Arbelus”. Chapter X, §. VII, sig. 146a–146b, is the sepulchre of Belus, and Cyril “writes of him( calling him ARBELVS.)” Both sentences are on `belus`. No second person was made.
+- **Options:**
+  1. Leave Arbelus on `belus`, as now.
+  2. Make a separate person for the father of Ninus whom Cyril calls Arbelus, and move the sentences you mark.
+- **Recommendation:** option 1. In the sepulchre paragraph he applies Cyril’s name to Belus.
+
+### N14. The four Zoroasters, and Hostanes beside Hostianes
+
+- **Why it matters:** Chapter XI, §. I, sig. 149a, distinguishes four men and then a fifth whom Suidas remembers. All of those passages stay on the one `zoroaster`. “betweene whom and Cyrus there past threescore and eighteene yeeres” was not stored, because it is a gap between the fourth man and Cyrus, not a yeere of the World for the one record. Chapter XI, §. II, sig. 149b, “SOSTHENES( for so M. Foelix calleth him, not HOSTANES)”, is `hostanes`. “the Nephew of Hostianes” in §. I is `hostianes`. They were not merged.
+- **Options:**
+  1. Leave one `zoroaster`, leave the 98 years unentered, and keep Hostanes and Hostianes apart, as now.
+  2. Split the Zoroasters you name, and say whether the 98 years belongs on one of them.
+- **Recommendation:** option 1. He argues about which Zoroaster is which, and the page shows every passage.
+
+### N15. Names that were not made into people
+
+- **Why it matters:** “His Maiestie”, in the Preface and again where the Daemonologie is cited, was not made a person and was not attached to `james` or `james-v`. “thou shalt call mee ISHI” (Chapter X, §. VI, sig. 145b–146a) is the Lord speaking, and it was not made a person. See N7. Chapter X, §. VII, sig. 146b, “bidding battaile to Caucasus of the Stocke of Iapheth”, names a man. The other ten hits of that word in the covered text are the mountains. No person was made, so the mountain passages would not be swallowed.
+- **Options:**
+  1. Leave His Maiestie, ISHI, and the man Caucasus unmade, as now.
+  2. Name the record that should receive His Maiestie, and make a person only for the man in the battle sentence.
+- **Recommendation:** option 1, until you want the man kept apart from the mountains.
+
+### N16. Buildings and a length that have no event
+
+- **Why it matters:** Chapter XII, §. V, sig. 157a, describes “the Temple of Bel” and “the Pyramides by Memphis”. Neither was attached to `great-pyramid-of-giza`, and no new event was made. Chapter X, §. VII, sig. 147a: “The Romanes … refusing to set them in their Temples for 170. yeeres”. That is a length. No event was made. Chapter XII, §. I, sig. 155b, “Ninus finished Niniue”, is not a second event. The passages in which he says Nimrod built or began Nineveh are on the existing `nimrod-builds-nineveh`. Its `sorting_year` was not changed.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them.
+- **Recommendation:** option 1. A new event cannot take a sort year from Raleigh.
+
+### N17. Words printed entirely in capitals, and Roman numerals
+
+- **Why it matters:** Kevin's reading rule of 2026-11-08 changes a word that begins with two capitals and then lowercase letters (`THat` to `That`) in the modern view only. It does not say what to do with a word printed entirely in capitals (`GOD`, `ABRAHAM`, `MOSES`) or with a Roman numeral (`II`, `IIII`, `XIV`). The modern view leaves both as printed. The spelling of an all-capital English word still updates, and the capitals stay: `VPON` becomes `UPON`, and `HATH` becomes `HAS`. A Roman numeral is not respelled.
+- **Options:**
+  1. Leave all-capital words and Roman numerals as printed, as now.
+  2. Reduce all-capital English words to a capital and lowercase (`GOD` to `God`) and say what should happen to Roman numerals and to headings such as `CHAP`.
+- **Recommendation:** option 1. The two-capital rule is a print habit. A word set entirely in capitals, and a numeral, may be a heading or a name, and reducing them would be a different decision.
+
+Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. The quotes are in `data/raleigh-body-extract.md`. N1, N2, N4, N7 to N17 stay open.
+
+### N18. The king printed BrRSHA, and the writer printed Percrius
+
+- **Why it matters:** Book II, Part I, Chapter I, §. X, sig. 165a–165b (p01602): “made warre with BERA, king of Sodome, BrRSHA king of Gomorha, SHINAB king of Admath, and SHEMEBAR king of Zeboim, and the king of BELA which is Zoar.” Bera, Shinab, and Shemebar are people, titled as printed. BrRSHA is the king of Gomorrah in that sentence. The letters are not a clean name, so no person was made. §. X, sig. 165b (p01603): “And Percrius himselfe remembreth other opinions”. The same section also prints “Pererius fauoureth”, and those sentences stay on the existing `pererius`. Percrius was not attached there and was not made a second person.
+- **Options:**
+  1. Leave BrRSHA and Percrius unmade, as now.
+  2. Name the spelling you want for the king of Gomorrah, and say whether Percrius is `pererius`.
+- **Recommendation:** option 1. Correcting either spelling would be a guess.
+
+### N19. Names that were not made into people in this chapter
+
+- **Why it matters:** “Doct. Gibbons, and Moore” (Chapter I, §. VII, sig. 163b–164a) names a chronologer. “a Negro, or Blacke-Moore” is already in Book I (p01268). One token cannot be both, so neither was made a person. Iudith is three uses: the wife of Charles in the Preface (p00034), “the Historie of Iudith” in the contents (p00481), and the book named again in §. X (p01603). No person was made. “Xerxes, id est, Victor” (§. XII, sig. 166b) is a gloss of the name Xerxes, not a person. “the king of BELA which is Zoar” is unnamed, so he was not invented. “ELLAS, whereof he is said to haue beene King” (§. X, sig. 165a) is the country Ellasar, not a person. “The Hebrew writes it Goijm” (§. XI) is Tidal’s title “king of the Nations”, not a further person.
+- **Options:**
+  1. Leave Moore, Iudith, Victor, the king of Bela, Ellas, and Goijm unmade, as now.
+  2. Name the record that should receive one of them.
+- **Recommendation:** option 1. Each spelling is doing more than one job, or it names nobody.
+
+### N20. One record where he offers two names
+
+- **Why it matters:** “Sarah or Iscah” and “that Iscah was Sarah, Rab. Solomon affirmeth” are on `sarai`. `rab-solomon` is that writer, not `solomon`. “Ninias or Zameis” stays on `ninias`. “Arius … whom Suidas calleth Thuras” stays on `arius`, the Assyrian table king. “Baleus or Balaneus, otherwise Xerxes” and the later “Xerxes or Balanius” are on `baleus`. He says the king was called Xerxes, meaning Victor. They were not moved to `xerxes`. “Caluin, Innius, Beza” puts Innius on `junius`, whose title is already Iunius. Amraphel is his own record. §. VIII says “Amraphel may seeme to haue beene this Ninias”, and “the reasons to the contrary … are not easily answered.” §. IX says he “may probably be thought to haue beene NINIAS”. §. XIII says “we neede not say that AMRAPHEL was NINIAS”. No year of Ninias was copied onto `amraphel`.
+- **Options:**
+  1. Leave these attachments, and leave Amraphel apart from Ninias, as now.
+  2. Name a split: Iscah, Zameis, Thuras, Balaneus, Innius, or Amraphel with Ninias.
+- **Recommendation:** option 1. He is arguing the identifications, and the page shows both names on the record that holds the sentence. Amraphel’s own last word in the chapter is that the identification need not be made.
+
+### N21. The same spelling for two referents
+
+- **Why it matters:** Haran the son of Terah is `haran-son-of-terah` (ten passages that name the son, including “Haran was the parent of Lot, Sarah, and Milcah”). The location `haran` stays the city. Passages that name only the city were left off the son. Midian the son is `midian-son-of-abraham`, the one name in “Zimron, Iockshan, Medan, Midian, Ishbak, and Shuah”. The location `midian` stays the land, and the land was not attached. Oleaster the writer is the name in “Caietan, Oleaster, Musculus”. The tree Jerome calls Oleaster, in Book I, was not attached. Arioch of Ellasar is `arioch`. §. X also says “the same also of Arioch who commanded vnder Nabuchodonosor”. That later man was not made a second record.
+- **Options:**
+  1. Leave one record for each spelling, with the attachments above, as now.
+  2. Name a second record for the city, the land, the tree, or the later Arioch, and say which passages move.
+- **Recommendation:** option 1. A second record would invent a person the chapter does not separate by a yeere of the World.
+
+### N22. No printed year for Naamah
+
+- **Why it matters:** Naamah is now a person (Genesis 4:22; Raleigh’s Noëma, Noema, Naamath, and Naamah). No CFAH row and no Generations row prints a year for her. `data/generations-dates-extract.md` says Timeline Review 2 charts Naamah (and Shem through Terah) and that those records already have CFAH dates. There is no such row in the extract, and there was no Naamah record until now. Noah’s 2nd-edition death prints “1998 BC” and “Died at 950, four years before Naamah.” That year stays on Noah. Her Generations entry has no date and no `year_bc_ad`. 1994 BC was not calculated.
+- **Options:**
+  1. Leave her undated until a printed CFAH or Generations year is read, as now.
+  2. Point to the printed row that should be copied, with the page, and say which slot it fills.
+- **Recommendation:** option 1. A year computed from Noah’s 1998 BC would be a new date.
+- **Kevin's ruling, 2026-11-08, 11:29 AM CT:** "Naamah should be dated, but properly tiered so that as higher tiers arrive, they set the rule. This should be true for any calculable date for a person." Naamah's death is calculated as 1994 BC. Noah's 2nd-edition death prints 1998 BC, "four years before Naamah," so 1998 BC + 4 years = 1994 BC. There is no year 0. The year is stored in `calculated`, not in `year_bc_ad`. The tier is `calculated`, below provisional. A printed or provisional year for the same person replaces it. The same rule fills every other calculable person. The list is `docs/calculated-dates.md`. Reign lengths were not turned into end years (N29). A lifespan was not added to a birth year (N30).
+
+### N23. Johnson’s Naamah, and his Flood figure
+
+- **Why it matters:** Robert Bowie Johnson Jr., *Genesis Characters and Events in Ancient Greek Art* (2016), is a source (`johnson-genesis-characters-greek-art`, private copy; the public URL is the Amazon listing). On Naamah’s record, as his view only: she was Ham’s wife and was carried through the Flood; she is the Sumerian Nammu and the original of Ishtar, Inanna, Astarte, Asherah, Isis, Demeter, Artemis, and Athena (Athana, Athanatos); through Ham she is the mother of Cush (he calls him Hermes) and the grandmother of Nimrod (he calls him Herakles); Tubal-cain, Zillah, Lamech, Jubal, and Jabal were left behind and drowned. He places the Flood at about 2420 BC. That figure is not a `year_bc_ad`. No goddess was made a new person. Baring and Cashford are not a source; Johnson cites them.
+- **Options:**
+  1. Keep this as attributed identification in the description, as now.
+  2. Name a date slot or a spouse link you want stored, and the printed page it comes from.
+- **Recommendation:** option 1. The book is copyrighted, and the figure was not read as a chronology entry in this repo.
+- **Note, 2026-11-08:** the spouse link Naamah–Ham is stored under N24, marked uncertain (`?`). Johnson's Flood figure of about 2420 BC was not stored.
+
+### N24. No mother or spouse field
+
+- **Why it matters:** Zillah and Adah are wives of Lamech, not his daughters. Naamah’s mother is Zillah. Johnson calls Naamah the wife of Ham. The family chart has `father` and `children` only. Zillah and Adah have `father` null. Lamech, Zillah, and Ham are Related. Tubal-cain’s existing `father` is still null, so the chart does not draw him as Lamech’s son. Naamah, Jubal, and Jabal name `lamech-cainite` as father, which draws them on his chart without editing his file.
+- **Options:**
+  1. Leave mothers and spouses in the description and Related, as now.
+  2. Approve a schema field for mother or spouse, and say whether `tubal-cain.father` should become `lamech-cainite`.
+- **Recommendation:** option 1 until you want a schema change. Setting Tubal-cain’s father would change an existing line.
+- **Kevin's ruling, 2026-11-08, 11:29 AM CT:** "Yes to mother and spouse fields. Use '?' for uncertain references." `mother` and `spouse` are on the person schema. A certain link is the person id. An uncertain link is `{id, uncertain: true, source}` and the page shows `?` after the name. The id does not contain `?`. Filled only where Scripture or a source already in the repo names the relation: Naamah's mother is Zillah, and her spouse is Ham? (Johnson); Zillah and Adah are spouses of Lamech the Cainite; Jubal and Jabal's mother is Adah; Tubal-cain's mother is Zillah and his father is now `lamech-cainite`; plus the other plain links listed in the PR (Sarah, Hagar, and Keturah). Rebekah has no record (N31). Those people were removed from Related when they are now mother, spouse, or father. The only `?` is Naamah and Ham, each way.
+
+### N25. Raleigh’s Tubal, Jabal, and Japheth’s Tubal
+
+- **Why it matters:** Book I, Part I, Chapter V, §. III and Chapter VI, §. IV print Tubal with Iubal and Tubalcain, a son of Ada. Genesis 4:20’s son of Adah is Jabal (`jabal`), and those passages were not attached to him. Japheth’s son is the existing `tubal`. The Other people list matches a whole token, so the word Tubal on those pages links to Japheth’s son. No second Tubal record was made.
+- **Options:**
+  1. Leave the Cainite Tubal unmade, and leave the token pointing at `tubal`, as now.
+  2. Add a Cainite Tubal and say which passages move off Japheth’s son.
+- **Recommendation:** option 2 when you want the two men apart. A silent merge with Jabal or with Japheth’s son would be a guess.
+- **Kevin's ruling, 2026-11-08, 11:31 AM CT:** Context-aware linking. No second Tubal record. In a passage or note about Cain’s line, the token Tubal resolves to Tubal-cain. Otherwise it resolves to Japheth’s son. Cain’s line means the unit is linked to, or uniquely mentions, Lamech the Cainite, Zillah, Adah, Naamah, Jubal, Jabal, or Cain. A unit linked to Tubal-cain, or that uniquely names him Tubalcain or Tubal-cain, is the same line. A bare Lamech does not count, because two records share that name (N34). `data/name-link-overrides.json` can pin any one passage or note either way. A pin wins over the rule. The list is empty: the rule covered the stored units, so nothing was pinned. Book I, Part I, Chapter V, §. III (p01028, p01029) and Chapter VI, §. IV (p01070), and the descriptions of Adah, Zillah, Jabal, and Jubal, resolve to `tubal-cain`. The Chapter VIII passages, including “IAPHETS sonnes TVBAL in Spaine”, resolve to `tubal`. Nine Tubal tokens resolve to Tubal-cain and forty to Japheth’s son. The passages stay on the records they were already attached to. The list is `docs/name-link-review.md`.
+
+### N26. The 1617 index line for Noema
+
+- **Why it matters:** The 1617 XML index prints “Noema, or Naamath, the sister of Tubalcain, expounded by Saint Augustine.” That line is not one of the stored passages in `data/raleigh-accounts.json`. It was not extracted. Pass 6 was not started. Naamah’s account is the two body passages already stored, p01028 and p01070.
+- **Options:**
+  1. Leave the index line out of the account until a later extract, as now.
+  2. Ask for that index line to be stored as its own passage.
+- **Recommendation:** option 1. An index line is not the body text already verified.
+
+### N27. Capital I in displayed names
+
+- **Why it matters:** Stored titles and Latin forms that begin with consonantal I now display with J, except where that would change the name. The original 1617 view is unchanged. All-capital prose stays capital: IOSEPHVS displays as JOSEPHUS. The name table title-cases that cell to Josephus. A date-as-stated cell uses the same I/J rule, so “1. Ioseph. 110” displays as “1. Joseph. 110”, and the figures and the word “yeere” stay. The footnote still quotes the printed form, including IOSEPHVS, and that quotation is left out of the search index. A possessive of a stored name follows the letter rule: IACOBS displays as JACOBS, and Iaphets as Japhets. Ianias stays Ianias. Iustine displays as Justin (the record id is `justin`). Iockshan displays as Jokshan. Iaphet displays as Japheth. Iwenal stays Iwenal, because the letter after I is w, not a vowel. Ionia, Iona, the Iones, Iapetus, and Ieyasu stay, because they are not stored I-for-J names. King-list names stay as printed, including Iannas. The CFAH note “Death of R. Iubass” stays, because Iubass is not a stored name.
+- **Options:**
+  1. Keep these exceptions, as now.
+  2. Name a title that should stay in I, or say that Iwenal should display as Juvenal.
+- **Recommendation:** option 1. Iwenal to Juvenal would change more than the initial letter.
+
+### N28. Other people links an existing record when the history names it
+
+- **Why it matters:** The Other people list is built at page build from the histories on that page. It links a person when a whole name matches a title, an alternate name, or a Latin name form. Isis already has a record, so Johnson’s name Isis on Naamah’s page links to that record. Heracles is a record titled separately from Johnson’s spelling Herakles, so that spelling does not link. No new goddess records were added.
+- **Options:**
+  1. Leave the list as a match against existing records, as now.
+  2. Name a match that should be suppressed, or a goddess that should become her own record.
+- **Recommendation:** option 1. A new goddess record would invent a person the sources have not been given a year for.
+- **Note, 2026-11-08:** the whole-token match is unchanged. Herakles still does not link to Heracles. The Names table and the Other people list now show the top 5, with "See more (N)" for the rest. Other people rank by mention count in that page's histories, then by `sorting_year`, then by name. Names put the page title first, then the forms with the most witnesses, then original before rendering before alternate, then the order in `name-forms.json`.
+- **Kevin's ruling, 2026-11-08, 11:31 AM CT:** Herakles, and Hercules, are name forms on the existing Heracles record. A token that matches more than one person stays unlinked unless a context rule or an override selects one record. The linker does not guess. Herakles matches only `heracles`, so Johnson’s spelling on Naamah’s page links there. The letters were already printed in her description. The footnote quotes that sentence and links to the Amazon listing. The book is not quoted. Hercules was not already a form on `heracles`. Cory, p. 111, prints “Heracles (i.e. Hercules)”. That form is now on `heracles`. The same folded token also matches the separate record `hercules`, so Hercules is left unlinked (28 occurrences, including the Preface’s French prince, Hercules Aegyptius, and the Altars of Hercules). Those passages are in the review, with both candidates. A pin in `data/name-link-overrides.json` can send one of them to `heracles` (N33). The same rule leaves every other shared token unlinked. Lamech is the largest biblical case (N34). Names in the 1617 passages and in summaries and descriptions that match no person are listed in `docs/name-link-review.md`. Citation boilerplate is not. Sentence-initial capitals are included, so the list is wider than personal names.
+
+### N29. Reign length was not turned into an end year
+
+- **Why it matters:** Some records print a reign start and a length. Adding the length to the start would produce an end year. That arithmetic is off by a year in inclusive counts, and a length from one chronology must not be added to a start from another.
+- **Options:**
+  1. Leave reign ends uncalculated, as now.
+  2. Name a printed start and a printed length that are the same chronology, and say whether the count is inclusive.
+- **Recommendation:** option 1 until a single source prints both figures and the count is explicit.
+
+### N30. A lifespan in years was not added to a birth year
+
+- **Why it matters:** `scripture_facts` stores a lifespan for some patriarchs. Adding that number to a birth year from another chronology would mix the Masoretic age with a BC year the text does not print, and the count of the year of death is easy to get wrong.
+- **Options:**
+  1. Leave those deaths uncalculated, as now.
+  2. Name a person whose source prints both the birth year and the age at death in one place.
+- **Recommendation:** option 1. Calculate a death only when one source prints the anchor year and the offset together, as Generations does for Naamah.
+
+### N31. No record for Rebekah, Leah, Bilhah, Zilpah, or Zimran
+
+- **Why it matters:** Scripture names them, and some existing people are their children or husbands. There is no person record to point a `mother` or `spouse` field at. Sarah is the record `sarai`. Zimran is named with Keturah's sons and has no record. Those links were not stored. No new person was created.
+- **Options:**
+  1. Leave the links out until those people exist, as now.
+  2. Approve a new person for one of these names, with the verse that creates the record.
+- **Recommendation:** option 1. A new person needs a record of its own, not a spouse id invented in this pass.
+
+### N32. Raleigh intake lines still say there is no sort year
+
+- **Why it matters:** Many people taken from the 1617 text still say "there is no sort year" in the description. Some of them now have a calculated sort. The sentence is stale. It was not rewritten in bulk. Ogyges's sentence was rewritten because this pass calculated his birth. The others were left.
+- **Options:**
+  1. Leave the intake sentences, and let the sort badge say `calc.`, as now.
+  2. Approve a rewrite of every sentence that says there is no sort year when `sorting_basis.tier` is `calculated`.
+- **Recommendation:** option 2 when you want the descriptions to match the badge. A bulk rewrite of Raleigh's intake text was not part of this ruling.
+
+### N33. Hercules matches two records, so it stays unlinked
+
+- **Why it matters:** Hercules is now a name form on `heracles`, from Cory’s “Heracles (i.e. Hercules)”. The record `hercules` already has that folded spelling (title Hercules, and Raleigh’s HERCVLES). The token matches both, so the linker leaves all 28 occurrences unlinked. They are not all one man. The Preface names a French prince, “Francis Charles, Henry, and Hercules”. Other lines are Hercules Aegyptius, the Altars of Hercules, and Hercules parua. Johnson’s Herakles does link to `heracles`, because that spelling matches only one record.
+- **Options:**
+  1. Leave Hercules unlinked, and pin a passage in `data/name-link-overrides.json` only when you name the unit and the record.
+  2. Name the passages that should pin to `heracles`, and the ones that should pin to `hercules`.
+- **Recommendation:** option 1. Pinning every Hercules to the demigod would attach the French prince and the altars to `heracles`.
+
+### N34. Lamech matches two records, so it stays unlinked
+
+- **Why it matters:** `lamech` and `lamech-cainite` are both titled Lamech. Forty-four tokens match both, so none of them link. That includes the descriptions of Adah, Zillah, Jabal, and Jubal, which mean Lamech the Cainite, and the Sethite passages, which mean the other. The Tubal rule does not treat a bare Lamech as Cain’s line. No Lamech context rule was added.
+- **Options:**
+  1. Leave Lamech unlinked until a pin or a context rule is stated, as now.
+  2. Give Lamech the same kind of rule as Tubal, and say which names or links select `lamech-cainite`.
+- **Recommendation:** option 1. A silent choice between the two Lamechs would be a guess. The occurrences are in `docs/name-link-review.md`.

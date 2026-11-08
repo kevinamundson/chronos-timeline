@@ -11,7 +11,26 @@
     "chronology": "ussher-jones",
     "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1836 BC (no higher-tier year available)."
   },
+  "calculated": [
+    {
+      "slot": "birth",
+      "year_bc_ad": -1864,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2169. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2169 = 1864 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "jacob",
+      "anchor_slot": "birth",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2169
+    }
+  ],
   "father": "isaac",
+  "spouse": [
+    "rachel"
+  ],
   "children": [
     "levi",
     "judah",
@@ -137,6 +156,17 @@
         "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": null
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "so as from the beginning of the Floud to IACOBS birth. there were consumed 513. yeeres.",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. VII, §III, sig. 96a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The years he counts from the Flood to Jacob's birth. Not a yeere of the World. year_am stays null. This does not change the sort. The same sentence already gives the Flood as the yeere of the World 1656 and Jacob's birth as 2169. Those two clauses are the narrative sentences already entered. They are not entered again."
       }
     ],
     "death": [
@@ -245,10 +275,14 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. VII, §III, sig. 96a"
     }
   ],
   "related": [
-    "isaac",
     "esau",
     "levi",
     "judah",
@@ -267,8 +301,7 @@
     "issachar",
     "zebulun",
     "dinah",
-    "benjamin",
-    "rachel"
+    "benjamin"
   ],
   "events": [
     "jacob-to-haran",

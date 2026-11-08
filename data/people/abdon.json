@@ -12,6 +12,22 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year."
   },
+  "calculated": [
+    {
+      "slot": "reign_start",
+      "year_bc_ad": -1190,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 786a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2843. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2843 = 1190 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "abdon",
+      "anchor_slot": "reign_start",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2843
+    }
+  ],
   "standby": {
     "year_bc_ad": -1129,
     "basis": "source-printed",

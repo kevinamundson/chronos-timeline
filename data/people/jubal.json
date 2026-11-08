@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "jubal",
+  "type": "person",
+  "title": "Jubal",
+  "summary": "Son of Lamech and Adah, and brother of Jabal (Genesis 4:21). Raleigh prints Iubal.",
+  "description": "Son of Lamech. Genesis 4:21 names Jubal, the brother of Jabal, as the ancestor of those who play the lyre and pipe. Adah is his mother in Genesis 4:20–21. Adah is his mother. The mother field records that. Raleigh prints Iubal. In Book I, Part I, Chapter V, §. III he assigns pasturage to Iubal and music to Tubal, and in Chapter VI, §. IV he names Iubal, Tubal, and Tubalcain together as inventors of pasturage, smith's craft, and music. Undated in this intake: no CFAH year was found. Raleigh is display-only.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": "lamech-cainite",
+  "mother": "adah",
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [
+    "Gen.4.21"
+  ],
+  "sources": [
+    "blb-biblehub",
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [
+    "jabal",
+    "tubal-cain",
+    "naamah",
+    "zillah"
+  ],
+  "free_source_links": [
+    {
+      "source_id": "blb-biblehub",
+      "url": "https://biblehub.com/blb/genesis/4.htm#21",
+      "locator": "Genesis 4:21"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, Chapter V, §. III, sig. 82b"
+    }
+  ]
+}

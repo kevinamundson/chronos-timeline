@@ -5,13 +5,30 @@
   "title": "Ptolemy Euergetes",
   "summary": "Ptolemy Euergetes is dated in Raleigh's chronological table (1617), column Egypt, by a yeere of the World. No tier 1–4 chronology dates this person.",
   "description": "Added from the Raleigh import (The History of the World, 1617). Raleigh is display-only. He gives a yeere of the World, not a BC year, and no tier 1–4 chronology dates this person, so there is no sort year.",
-  "sorting_year": null,
+  "sorting_year": -248,
   "sorting_basis": {
-    "tier": "none",
+    "tier": "calculated",
     "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year. Raleigh is display-only and is not converted to BC."
+    "chronology": "raleigh-history-of-the-world",
+    "slot": "reign_start",
+    "note": "Calculated from printed figures. No tier 1–4 birth, no tier reign start, and no provisional year. Raleigh prints the yeere of the World 3785. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 3785 = 248 BC. The figure is not written into year_bc_ad. A printed year for this person would replace it."
   },
+  "calculated": [
+    {
+      "slot": "reign_start",
+      "year_bc_ad": -248,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 793a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 3785. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 3785 = 248 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "ptolemie-euergetes",
+      "anchor_slot": "reign_start",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 3785
+    }
+  ],
   "father": null,
   "children": [],
   "dates": {

@@ -4,7 +4,8 @@
   "type": "person",
   "title": "Mahalalel",
   "alt_names": [
-    "Mahalaleel (KJV)"
+    "Mahalaleel (KJV)",
+    "Mahaleel"
   ],
   "summary": "Mahalalel, son of kenan, in the line of Seth (Genesis 5).",
   "sorting_year": -3609,
@@ -14,6 +15,36 @@
     "chronology": "ussher-jones",
     "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 3609 BC (no higher-tier year available)."
   },
+  "calculated": [
+    {
+      "slot": "birth",
+      "year_bc_ad": -3637,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 781b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 396. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 396 = 3637 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "mahalalel",
+      "anchor_slot": "birth",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 396
+    },
+    {
+      "slot": "death",
+      "year_bc_ad": -2743,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 782a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 1290. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 1290 = 2743 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "mahalalel",
+      "anchor_slot": "death",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 1290
+    }
+  ],
   "father": "kenan",
   "children": [
     "jared"
@@ -139,6 +170,17 @@
         "link": "https://archive.org/details/newanalysisofchr02hale/page/n35/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": "The parenthesis is the Hebrew age. The other age is the one he adopts. The last figure is his B.C. column. He prints Malaleel."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Mahaleel and Enoch at threescore and fiue yeeres",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §IV, sig. 82b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The age at which he says Mahaleel begat. The same clause names Enoch, and that statement is also on enoch. Not a yeere of the World, and not his birth year. year_am stays null. This does not change the sort. The clause prints Mahaleel."
       }
     ],
     "death": [
@@ -277,6 +319,11 @@
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 278 (PDF p. 313)"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. V, §IV, sig. 82b"
     }
   ],
   "related": [
