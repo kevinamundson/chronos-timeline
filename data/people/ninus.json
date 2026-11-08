@@ -50,6 +50,17 @@
         "link": "https://archive.org/details/sacredprofanehis01shuc/page/n257/mode/1up",
         "source_text_id": "shuckford-sacred-profane-1819",
         "note": "The reign length, fifty-two years, is printed. A start year is not printed in this sentence. Page 171 places the beginning at A. M. 1957. The two statements are both entered and not reconciled. See open question K4."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "he left the World in the yeere thereof 2019.",
+        "year_am": 2019,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter XII, §. II, sig. 156a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. His death, the yeere of the World. The same sentence prints a reign of 52 yeeres, already the table row at sig. 782b (year_am 1967, length 52), and that length is not entered again. year_bc_ad stays null. This does not change the sort."
       }
     ],
     "reign": [
