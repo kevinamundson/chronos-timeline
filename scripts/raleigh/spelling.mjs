@@ -557,12 +557,47 @@ function applyJ(s) {
 
 // A headword or a portal title can still be an early-modern spelling
 // ("Iohn", "untill"). Prefer the modern form when the rule is unambiguous.
+// A stored title or Latin name-form that begins with consonantal i (Iosephus, Iohn).
+// The J spelling is not itself a title, so the lookup used to return the I form.
+// Some of those I-forms are also dictionary headwords (ianus), so a modern-word
+// hit cannot win over the stored name. Ianias stays: Cory's name, not I-for-J.
+// Ion stays: it is an English word, and the J form would be a different name.
+const KEEP_INITIAL_I = new Set(['ianias']);
+const KEEP_MODERN_I = new Set(['ion']);
+const J_SPELLING = {
+  iockshan: 'jokshan',
+  iustine: 'justin',
+  iustin: 'justin',
+  iaphet: 'japheth',
+  iapheth: 'japheth',
+};
+
+function storedConsonantalJ(s) {
+  if (!/^i[aeiou]/.test(s) || isRomanToken(s)) return '';
+  if (!TITLES.has(s) && !FORMS.has(s)) return '';
+  if (KEEP_INITIAL_I.has(s) || KEEP_MODERN_I.has(s)) return '';
+  if (J_SPELLING[s]) return J_SPELLING[s];
+  return `j${s.slice(1)}`;
+}
+
+// IVPITER prints v for u. Only used when the u-form is a stored name.
+function asIVowel(s) {
+  if (/^i[aeiou]/.test(s)) return s;
+  if (/^iv/.test(s)) return `iu${s.slice(2)}`;
+  return '';
+}
+
 function knownForm(s) {
-  if (/^i[aeiou]/.test(s) && !isModern(s)) {
-    const j = `j${s.slice(1)}`;
-    if (TITLES.has(j) || isModern(j)) return j;
-    const je = applyEndings(j);
-    if (je !== s && (TITLES.has(je) || isModern(je))) return je;
+  const vowel = asIVowel(s);
+  if (vowel && !isRomanToken(s)) {
+    const stored = storedConsonantalJ(vowel);
+    if (stored) return stored;
+    if (!isModern(s) && /^i[aeiou]/.test(s)) {
+      const j = `j${s.slice(1)}`;
+      if (TITLES.has(j) || isModern(j)) return j;
+      const je = applyEndings(j);
+      if (je !== s && (TITLES.has(je) || isModern(je))) return je;
+    }
   }
   if (/ll$/.test(s) && !KEEP_LL.has(s)) {
     const t = s.slice(0, -1);
@@ -573,6 +608,10 @@ function knownForm(s) {
 }
 
 function preferName(base) {
+  const vowel = asIVowel(base);
+  if (!vowel) return base;
+  const stored = storedConsonantalJ(vowel);
+  if (stored) return stored;
   if (!/^i[aeiou]/.test(base)) return base;
   const j = `j${base.slice(1)}`;
   if (TITLES.has(j)) return j;
@@ -825,7 +864,17 @@ function modernizeLower(lower, nextChar, opts = {}) {
   }
   const known = knownForm(prepared);
   if (known) return known;
-  if (FORMS.has(lower) || FORMS.has(prepared)) return preferName(prepared);
+  if (FORMS.has(lower) || FORMS.has(prepared)) {
+    const named = preferName(prepared);
+    if (named !== prepared) return named;
+    // The printed form uses v (IANVM). The u-form is not itself stored, so the
+    // I would otherwise stay. It is still that stored name.
+    if (/^i[aeiou]/.test(prepared) && !isRomanToken(prepared) && !isModern(prepared)
+      && !KEEP_INITIAL_I.has(prepared) && !KEEP_MODERN_I.has(prepared)) {
+      return J_SPELLING[prepared] || `j${prepared.slice(1)}`;
+    }
+    return named;
+  }
   const ended = applyEndings(prepared);
   if (ended !== prepared && (isModern(ended) || explicit(ended))) return explicit(ended) || ended;
   const j = applyJ(prepared);
@@ -997,4 +1046,56 @@ export function renderProse(raw, spans, { modern = false } = {}) {
   }
   if (i < text.length) html += piece(text.slice(i), false);
   return html;
+}
+
+// Page titles, summaries, and notes. The I/J name rule only.
+// The full modernizer is not used here: a modern description keeps "yeere".
+function explicitName(lower) {
+  const hit = MODERN[lower] || NAMES[lower] || '';
+  return hit.replace(/\s*\([^)]*\)/g, '').trim();
+}
+
+export function displaySpelling(text) {
+  ensureLexicon();
+  return String(text ?? '').replace(/\p{L}+/gu, (word) => {
+    const bare = word.normalize('NFD').replace(/\p{M}/gu, '');
+    if (!bare || isRomanToken(bare)) return word;
+    const lower = bare.toLowerCase();
+    if (!lower.startsWith('i')) return word;
+    const prepared = orthographic(lower);
+    const mapped = explicitName(prepared) || explicitName(lower);
+    if (mapped) return recase(bare, mapped);
+    const storedPrep = storedConsonantalJ(prepared);
+    if (storedPrep) return recase(bare, storedPrep);
+    const vowel = asIVowel(prepared);
+    if (vowel && vowel !== prepared) {
+      const storedV = storedConsonantalJ(vowel);
+      if (storedV) return recase(bare, storedV);
+    }
+    const storedRaw = (prepared !== lower) ? storedConsonantalJ(lower) : '';
+    if ((storedRaw || FORMS.has(lower) || TITLES.has(lower) || FORMS.has(prepared) || TITLES.has(prepared))
+      && /^i[aeiou]/.test(prepared) && !isRomanToken(prepared)
+      && !KEEP_INITIAL_I.has(prepared) && !KEEP_MODERN_I.has(prepared)) {
+      return recase(bare, J_SPELLING[prepared] || `j${prepared.slice(1)}`);
+    }
+    // A possessive or plural of a stored I-name (IACOBS, Iaphets) is not itself stored.
+    // The letter changes on the whole word, so Iaphets stays Japhets and not Japheths.
+    if (prepared.endsWith('s') && prepared.length > 4 && storedConsonantalJ(prepared.slice(0, -1))) {
+      return recase(bare, `j${prepared.slice(1)}`);
+    }
+    return word;
+  });
+}
+
+// A name-table cell. All-capital prose stays capital (N17). The cell shows Josephus.
+export function displayNameForm(form) {
+  const shown = displaySpelling(form);
+  const letters = String(form).normalize('NFD').replace(/\p{M}/gu, '');
+  const words = letters.split(/[^A-Za-z]+/).filter(Boolean);
+  const allCaps = words.length > 0 && words.every((w) => w.length > 1 && w === w.toUpperCase());
+  if (!allCaps) return shown;
+  return shown.replace(/\p{L}+/gu, (w) => {
+    const lower = w.toLowerCase();
+    return lower.charAt(0).toUpperCase() + lower.slice(1);
+  });
 }

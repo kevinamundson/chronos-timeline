@@ -10968,6 +10968,96 @@
           "note": "Spelling only. Read in Book I, Part I, Chapters IX–XII."
         }
       ]
+    },
+    {
+      "id": "adah",
+      "forms": [
+        {
+          "form": "Ada",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter V, §. III, sig. 82b. The passage prints “Ada”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. The form is the one printed in the cited passage."
+        }
+      ]
+    },
+    {
+      "id": "jubal",
+      "forms": [
+        {
+          "form": "Iubal",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter V, §. III, sig. 82b. The passage prints “Iubal”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. The form is the one printed in the cited passage."
+        }
+      ]
+    },
+    {
+      "id": "naamah",
+      "forms": [
+        {
+          "form": "Noëma",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter V, §. III, sig. 82b. The passage prints “Noëma”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. The form is the one printed in the cited passage."
+        },
+        {
+          "form": "Noema",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter VI, §. IV, sig. 88a–88b. The passage prints “Noema or Naamath”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. The form is the one printed in the cited passage."
+        },
+        {
+          "form": "Naamath",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter VI, §. IV, sig. 88a–88b. The passage prints “Noema or Naamath”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. The form is the one printed in the cited passage."
+        },
+        {
+          "form": "Naamah",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter VI, §. IV, sig. 88a–88b. The passage prints “Noema or Naamah”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. The form is the one printed in the cited passage."
+        }
+      ]
+    },
+    {
+      "id": "zillah",
+      "forms": [
+        {
+          "form": "Silla",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter V, §. III, sig. 82b. The passage prints “Silla”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. The form is the one printed in the cited passage."
+        }
+      ]
     }
   ]
 }

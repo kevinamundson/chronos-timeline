@@ -2329,6 +2329,22 @@
       "license_note": "Doré's 1866 engravings are in the public domain. The Archive.org item (uploaded 2020-01-21, collection opensource_image) states no licence in its metadata. Display images are linked through the Internet Archive IIIF Image API and are not copied to this site. Thumbnails derived from the Archive.org item gustavedore (Gustave Doré, 1866), public domain: one WebP of about 240 px wide per plate in site/static/img/dore/thumbs/, made by scripts/dore/fetch-thumbs.mjs (npm run dore:thumbs).",
       "verified_on": "2026-10-29",
       "note": "241 JPEG files (about 9600 x 12300 px), each with the illustration's English title printed below it. File numbers and titles are the uploader's, \"as found\"; they are not Doré's 1866 plate numbers. The site uses the 220 canonical plates and skips the 21 Apocrypha files whose names have an x after the number."
+    },
+    {
+      "id": "johnson-genesis-characters-greek-art",
+      "title": "Genesis Characters and Events in Ancient Greek Art",
+      "authors": [
+        "Robert Bowie Johnson Jr."
+      ],
+      "translator_or_editor": null,
+      "year": "2016",
+      "publication": "CreateSpace Independent Publishing Platform, 29 September 2016. 112 pages. ISBN-13 978-1539103615. ISBN-10 1539103617.",
+      "url": "https://www.amazon.com/Genesis-Characters-Events-Ancient-Greek/dp/1539103617",
+      "alt_urls": [],
+      "access": "private-copy",
+      "license_note": "Copyrighted. The site owner's private reading is not in this repository and is not linked. Only a short paraphrase in our own words is used. The url is the public Amazon listing of the book, not a copy of the text.",
+      "verified_on": "2026-11-08",
+      "note": "The Amazon listing was opened on 2026-11-08 (author, title, CreateSpace, 29 September 2016, 112 pages, ISBN-13 978-1539103615). The Naamah identification on her record is summarized from the owner's reading. Baring and Cashford, The Myth of the Goddess, is not a source here; Johnson cites it."
     }
   ]
 }

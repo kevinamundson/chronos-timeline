@@ -4,7 +4,7 @@
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { modernizeProse, modernizeWord, renderProse } from './spelling.mjs';
+import { displayNameForm, displaySpelling, modernizeProse, modernizeWord, renderProse } from './spelling.mjs';
 import { extractPassages, loadXml, THROUGH_CHAPTER } from './xml-text.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -34,6 +34,23 @@ const WORDS = [
   ['Iacob', 'Jacob'],
   ['Iewes', 'Jews'],
   ['Iohn', 'John'],
+  ['Ioseph', 'Joseph'],
+  ['Iosephus', 'Josephus'],
+  ['IOSEPHVS', 'JOSEPHUS'],
+  ['Iosephvs', 'Josephus'],
+  ['Iudah', 'Judah'],
+  ['Ierusalem', 'Jerusalem'],
+  ['Iockshan', 'Jokshan'],
+  ['Ianias', 'Ianias'],
+  ['Ianus', 'Janus'],
+  ['Iustine', 'Justin'],
+  ['Iupiter', 'Jupiter'],
+  ['IVPITER', 'JUPITER'],
+  ['Iaphet', 'Japheth'],
+  ['IANVM', 'JANUM'],
+  ['Iehoabaz', 'Jehoahaz'],
+  ['Iosias', 'Josiah'],
+  ['Iwenal', 'Iwenal'],
   ['Haue', 'Have'],
   ['VPON', 'UPON'],
   ['ſhip', 'ship'],
@@ -189,6 +206,35 @@ const SENTENCES = [
   ['THat HOw the riuer goeth.', 'That How the river goes.'],
   ['what father for saketh the childe', 'what father forsakes the child'],
   ['God fore-seeth and fore-telleth.', 'God foresees and foretells.'],
+  ['but Iosephus gives unto Lamech.', 'but Josephus gives unto Lamech.'],
+  ['Ianias fifty years.', 'Ianias fifty years.'],
+];
+
+const DISPLAY = [
+  ['Iosephus', 'Josephus'],
+  ['IOSEPHVS', 'JOSEPHUS'],
+  ['the yeere of Iosephus', 'the yeere of Josephus'],
+  ['Ianias', 'Ianias'],
+  ['Iockshan', 'Jokshan'],
+  ['Iustine', 'Justin'],
+  ['Ion', 'Ion'],
+  ['Isaac', 'Isaac'],
+  ['II', 'II'],
+  ['IV', 'IV'],
+  ['Iames the Fift', 'James the Fift'],
+  ['1. Ioseph. 110', '1. Joseph. 110'],
+  ['IACOBS birth', 'JACOBS birth'],
+  ['Iaphets sonne', 'Japhets sonne'],
+  ['Ionia', 'Ionia'],
+  ['the yeere', 'the yeere'],
+];
+
+const NAME_CELLS = [
+  ['IOSEPHVS', 'Josephus'],
+  ['Iosephus', 'Josephus'],
+  ['IANVS', 'Janus'],
+  ['IANVM', 'Janum'],
+  ['Noëma', 'Noëma'],
 ];
 
 const ITALIC_HTML = [
@@ -209,6 +255,14 @@ export function spellingSelfCheck() {
   for (const [from, to] of SENTENCES) {
     const got = modernizeProse(from);
     if (got !== to) errors.push(`sentence ${JSON.stringify(from)} → ${JSON.stringify(got)} (expected ${JSON.stringify(to)})`);
+  }
+  for (const [from, to] of DISPLAY) {
+    const got = displaySpelling(from);
+    if (got !== to) errors.push(`display ${JSON.stringify(from)} → ${JSON.stringify(got)} (expected ${JSON.stringify(to)})`);
+  }
+  for (const [from, to] of NAME_CELLS) {
+    const got = displayNameForm(from);
+    if (got !== to) errors.push(`name cell ${JSON.stringify(from)} → ${JSON.stringify(got)} (expected ${JSON.stringify(to)})`);
   }
   const ruleOnly = ['riuer', 'vnholesome', 'haue', 'euery', 'vpon', 'iudgement', 'onely', 'beene'];
   const spellingSrc = readFileSync(join(here, 'spelling.mjs'), 'utf8');

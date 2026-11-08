@@ -1368,3 +1368,59 @@ Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. 
   1. Leave one record for each spelling, with the attachments above, as now.
   2. Name a second record for the city, the land, the tree, or the later Arioch, and say which passages move.
 - **Recommendation:** option 1. A second record would invent a person the chapter does not separate by a yeere of the World.
+
+### N22. No printed year for Naamah
+
+- **Why it matters:** Naamah is now a person (Genesis 4:22; Raleigh’s Noëma, Noema, Naamath, and Naamah). No CFAH row and no Generations row prints a year for her. `data/generations-dates-extract.md` says Timeline Review 2 charts Naamah (and Shem through Terah) and that those records already have CFAH dates. There is no such row in the extract, and there was no Naamah record until now. Noah’s 2nd-edition death prints “1998 BC” and “Died at 950, four years before Naamah.” That year stays on Noah. Her Generations entry has no date and no `year_bc_ad`. 1994 BC was not calculated.
+- **Options:**
+  1. Leave her undated until a printed CFAH or Generations year is read, as now.
+  2. Point to the printed row that should be copied, with the page, and say which slot it fills.
+- **Recommendation:** option 1. A year computed from Noah’s 1998 BC would be a new date.
+
+### N23. Johnson’s Naamah, and his Flood figure
+
+- **Why it matters:** Robert Bowie Johnson Jr., *Genesis Characters and Events in Ancient Greek Art* (2016), is a source (`johnson-genesis-characters-greek-art`, private copy; the public URL is the Amazon listing). On Naamah’s record, as his view only: she was Ham’s wife and was carried through the Flood; she is the Sumerian Nammu and the original of Ishtar, Inanna, Astarte, Asherah, Isis, Demeter, Artemis, and Athena (Athana, Athanatos); through Ham she is the mother of Cush (he calls him Hermes) and the grandmother of Nimrod (he calls him Herakles); Tubal-cain, Zillah, Lamech, Jubal, and Jabal were left behind and drowned. He places the Flood at about 2420 BC. That figure is not a `year_bc_ad`. No goddess was made a new person. Baring and Cashford are not a source; Johnson cites them.
+- **Options:**
+  1. Keep this as attributed identification in the description, as now.
+  2. Name a date slot or a spouse link you want stored, and the printed page it comes from.
+- **Recommendation:** option 1. The book is copyrighted, and the figure was not read as a chronology entry in this repo.
+
+### N24. No mother or spouse field
+
+- **Why it matters:** Zillah and Adah are wives of Lamech, not his daughters. Naamah’s mother is Zillah. Johnson calls Naamah the wife of Ham. The family chart has `father` and `children` only. Zillah and Adah have `father` null. Lamech, Zillah, and Ham are Related. Tubal-cain’s existing `father` is still null, so the chart does not draw him as Lamech’s son. Naamah, Jubal, and Jabal name `lamech-cainite` as father, which draws them on his chart without editing his file.
+- **Options:**
+  1. Leave mothers and spouses in the description and Related, as now.
+  2. Approve a schema field for mother or spouse, and say whether `tubal-cain.father` should become `lamech-cainite`.
+- **Recommendation:** option 1 until you want a schema change. Setting Tubal-cain’s father would change an existing line.
+
+### N25. Raleigh’s Tubal, Jabal, and Japheth’s Tubal
+
+- **Why it matters:** Book I, Part I, Chapter V, §. III and Chapter VI, §. IV print Tubal with Iubal and Tubalcain, a son of Ada. Genesis 4:20’s son of Adah is Jabal (`jabal`), and those passages were not attached to him. Japheth’s son is the existing `tubal`. The Other people list matches a whole token, so the word Tubal on those pages links to Japheth’s son. No second Tubal record was made.
+- **Options:**
+  1. Leave the Cainite Tubal unmade, and leave the token pointing at `tubal`, as now.
+  2. Add a Cainite Tubal and say which passages move off Japheth’s son.
+- **Recommendation:** option 2 when you want the two men apart. A silent merge with Jabal or with Japheth’s son would be a guess.
+
+### N26. The 1617 index line for Noema
+
+- **Why it matters:** The 1617 XML index prints “Noema, or Naamath, the sister of Tubalcain, expounded by Saint Augustine.” That line is not one of the stored passages in `data/raleigh-accounts.json`. It was not extracted. Pass 6 was not started. Naamah’s account is the two body passages already stored, p01028 and p01070.
+- **Options:**
+  1. Leave the index line out of the account until a later extract, as now.
+  2. Ask for that index line to be stored as its own passage.
+- **Recommendation:** option 1. An index line is not the body text already verified.
+
+### N27. Capital I in displayed names
+
+- **Why it matters:** Stored titles and Latin forms that begin with consonantal I now display with J, except where that would change the name. The original 1617 view is unchanged. All-capital prose stays capital: IOSEPHVS displays as JOSEPHUS. The name table title-cases that cell to Josephus. A date-as-stated cell uses the same I/J rule, so “1. Ioseph. 110” displays as “1. Joseph. 110”, and the figures and the word “yeere” stay. The footnote still quotes the printed form, including IOSEPHVS, and that quotation is left out of the search index. A possessive of a stored name follows the letter rule: IACOBS displays as JACOBS, and Iaphets as Japhets. Ianias stays Ianias. Iustine displays as Justin (the record id is `justin`). Iockshan displays as Jokshan. Iaphet displays as Japheth. Iwenal stays Iwenal, because the letter after I is w, not a vowel. Ionia, Iona, the Iones, Iapetus, and Ieyasu stay, because they are not stored I-for-J names. King-list names stay as printed, including Iannas. The CFAH note “Death of R. Iubass” stays, because Iubass is not a stored name.
+- **Options:**
+  1. Keep these exceptions, as now.
+  2. Name a title that should stay in I, or say that Iwenal should display as Juvenal.
+- **Recommendation:** option 1. Iwenal to Juvenal would change more than the initial letter.
+
+### N28. Other people links an existing record when the history names it
+
+- **Why it matters:** The Other people list is built at page build from the histories on that page. It links a person when a whole name matches a title, an alternate name, or a Latin name form. Isis already has a record, so Johnson’s name Isis on Naamah’s page links to that record. Heracles is a record titled separately from Johnson’s spelling Herakles, so that spelling does not link. No new goddess records were added.
+- **Options:**
+  1. Leave the list as a match against existing records, as now.
+  2. Name a match that should be suppressed, or a goddess that should become her own record.
+- **Recommendation:** option 1. A new goddess record would invent a person the sources have not been given a year for.
