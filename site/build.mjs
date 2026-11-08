@@ -15,6 +15,7 @@ import { isJones23, reignStartPhrase } from '../scripts/sort-rule.mjs';
 import { redirectLines, redirectsFileHasSennacherib } from '../scripts/redirects.mjs';
 import { protectHtml } from './email-protect.mjs';
 import { doreUrls, doreThumbPublicPath, DISPLAY_W, SMALL_W, THUMB_W } from '../scripts/dore/urls.mjs';
+import { createNameLinker, unitsForRecord } from '../scripts/names/link.mjs';
 
 assertRaleighDerived();
 
@@ -40,6 +41,7 @@ const kingDoc = existsSync(join(DATA, 'king-lists.json')) ? readJSON(join(DATA, 
 const doreDoc = existsSync(join(DATA, 'illustrations/dore-1866.json')) ? readJSON(join(DATA, 'illustrations/dore-1866.json')) : { illustrations: [] };
 const nameFormDoc = readJSON(join(DATA, 'name-forms.json'));
 const nameForms = Object.fromEntries((nameFormDoc.people || []).map((p) => [p.id, p.forms]));
+const nameLinkOverrides = readJSON(join(DATA, 'name-link-overrides.json'));
 const raleighAccounts = readJSON(join(DATA, 'raleigh-accounts.json'));
 const raleighExtract = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER, book2Through: BOOK2_THROUGH });
 const raleighAlignErrors = alignStoredPassages(raleighAccounts.passages, raleighExtract);
@@ -49,6 +51,15 @@ if (raleighAlignErrors.length) {
 }
 for (let i = 0; i < raleighExtract.length; i += 1) raleighAccounts.passages[i].italics = raleighExtract[i].italics;
 const raleighPassageById = Object.fromEntries(raleighAccounts.passages.map((p) => [p.id, p]));
+const passageHosts = new Map();
+for (const [recordId, ids] of Object.entries(raleighAccounts.accounts || {})) {
+  for (const id of ids || []) {
+    let list = passageHosts.get(id);
+    if (!list) { list = []; passageHosts.set(id, list); }
+    list.push(recordId);
+  }
+}
+const nameLinker = createNameLinker({ people, nameForms, overrides: nameLinkOverrides });
 const kingListsOf = (id) => kingDoc.lists.filter((l) => l.entries.some((e) => e.person === id || e.event === id));
 
 const byId = {};
@@ -887,84 +898,25 @@ ${spellingScript('raleigh-full')}`;
   return n;
 }
 
-// Other people: every person named by a history on this page, plus the links already stored.
-// Whole tokens only, longest name first, so Tubalcain does not match Tubal.
-let personPhraseIndex = null;
-function foldPersonToken(s) {
-  return String(s).normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/v/g, 'u').replace(/j/g, 'i');
-}
-function personTokens(raw) {
-  const tokens = [];
-  const re = /\p{L}+/gu;
-  let m;
-  const text = String(raw || '');
-  while ((m = re.exec(text))) {
-    const tok = foldPersonToken(m[0]);
-    if (tok) tokens.push(tok);
-  }
-  return tokens;
-}
-function loadPersonPhrases() {
-  if (personPhraseIndex) return personPhraseIndex;
-  const byFirst = new Map();
-  const add = (id, raw) => {
-    const tokens = personTokens(raw);
-    if (!tokens.length || (tokens.length === 1 && tokens[0].length < 3)) return;
-    const key = tokens[0];
-    let list = byFirst.get(key);
-    if (!list) { list = []; byFirst.set(key, list); }
-    if (!list.some((p) => p.id === id && p.n === tokens.length && p.tokens.every((t, i) => t === tokens[i]))) {
-      list.push({ id, tokens, n: tokens.length });
-    }
-  };
-  for (const person of people) {
-    add(person.id, person.title);
-    for (const alt of person.alt_names || []) add(person.id, alt);
-    for (const form of nameForms[person.id] || []) {
-      if (form.script === 'latin' && form.form) add(person.id, form.form);
-    }
-  }
-  personPhraseIndex = byFirst;
-  return byFirst;
-}
-function mentionCounts(text) {
-  const tokens = personTokens(text);
-  const index = loadPersonPhrases();
-  const counts = new Map();
-  for (let i = 0; i < tokens.length; i += 1) {
-    const list = index.get(tokens[i]);
-    if (!list) continue;
-    let best = 0;
-    const hits = [];
-    for (const phrase of list) {
-      if (phrase.n < best || i + phrase.n > tokens.length) continue;
-      let ok = true;
-      for (let k = 1; k < phrase.n; k += 1) if (tokens[i + k] !== phrase.tokens[k]) { ok = false; break; }
-      if (!ok) continue;
-      if (phrase.n > best) { best = phrase.n; hits.length = 0; }
-      hits.push(phrase.id);
-    }
-    for (const id of new Set(hits)) counts.set(id, (counts.get(id) || 0) + 1);
-    if (best > 1) i += best - 1;
-  }
-  return counts;
-}
+// Other people: people named by a history on this page, plus the links already stored.
+// Whole tokens, longest name first, so Tubalcain does not match Tubal.
+// Two records for one token stay unlinked unless the Tubal rule or an override selects one.
 function seeMoreList(items) {
   if (items.length <= 5) return `<ul class="links">${items.join('')}</ul>`;
   const n = items.length - 5;
   return `<ul class="links">${items.slice(0, 5).join('')}</ul><details class="see-more"><summary>See more (${n})</summary><ul class="links">${items.slice(5).join('')}</ul></details>`;
 }
-function historyBlob(rec) {
-  const parts = [rec.summary, rec.description];
-  const entries = [...(rec.chronologies || [])];
-  for (const slot of Object.values(rec.dates || {})) for (const entry of slot || []) entries.push(entry);
-  for (const entry of entries) parts.push(entry.note, entry.citation, entry.edition_note);
-  for (const passage of raleighPassages(rec.id)) parts.push(passage.passage);
-  for (const form of nameForms[rec.id] || []) parts.push(form.citation, form.note);
-  return parts.filter(Boolean).join('\n');
-}
 function otherPeopleIds(rec) {
-  const counts = mentionCounts(historyBlob(rec));
+  const units = unitsForRecord(rec, {
+    passages: raleighPassages(rec.id),
+    passageHosts,
+    nameForms: nameForms[rec.id] || [],
+  });
+  const counts = new Map();
+  for (const unit of units) {
+    const resolved = nameLinker.resolve(unit);
+    for (const [id, n] of resolved.counts) counts.set(id, (counts.get(id) || 0) + n);
+  }
   const linked = rec.type === 'event' ? (rec.people || []) : (rec.related || []);
   const ids = new Set(counts.keys());
   for (const id of linked) if (byId[id]?.type === 'person') ids.add(id);

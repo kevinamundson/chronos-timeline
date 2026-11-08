@@ -1957,6 +1957,27 @@ for (const [path, shot, sel] of [
       }
       await o.ctx.close();
     }
+    {
+      const hrefsOf = async (path) => {
+        const o = await visit(path);
+        const hrefs = await o.page.locator('#other-people a').evaluateAll((els) => els.map((a) => a.getAttribute('href')));
+        const names = o.status === 200 ? await o.page.locator('#name').innerText() : '';
+        return { hrefs, errors: o.errors, status: o.status, names, close: () => o.ctx.close() };
+      };
+      const jubal = await hrefsOf('/people/jubal/');
+      check(`${engine} jubal: Tubal in Cain’s line links to Tubal-cain`, jubal.status === 200 && jubal.errors.length === 0 && jubal.hrefs.includes('/people/tubal-cain/') && !jubal.hrefs.includes('/people/tubal/'), jubal.hrefs.filter((h) => h && h.includes('tubal')).join(','));
+      await jubal.close();
+      const japheth = await hrefsOf('/people/japheth/');
+      check(`${engine} japheth: Tubal links to Japheth’s son`, japheth.status === 200 && japheth.errors.length === 0 && japheth.hrefs.includes('/people/tubal/') && !japheth.hrefs.includes('/people/tubal-cain/'), japheth.hrefs.filter((h) => h && h.includes('tubal')).join(','));
+      await japheth.close();
+      const naamah = await hrefsOf('/people/naamah/');
+      check(`${engine} naamah: Herakles links to Heracles, and Tubal-cain is not Japheth’s Tubal`, naamah.status === 200 && naamah.errors.length === 0 && naamah.hrefs.includes('/people/heracles/') && naamah.hrefs.includes('/people/tubal-cain/') && !naamah.hrefs.includes('/people/tubal/'), naamah.hrefs.filter((h) => h && /tubal|herac/.test(h)).join(','));
+      await naamah.close();
+      const heracles = await hrefsOf('/people/heracles/');
+      const forms = /Herakles/.test(heracles.names) && /Hercules/.test(heracles.names);
+      check(`${engine} heracles: Herakles and Hercules are name forms`, heracles.status === 200 && heracles.errors.length === 0 && forms, heracles.names.replace(/\s+/g, ' ').slice(0, 240));
+      await heracles.close();
+    }
     if (own) await own.close();
   }
   await calculatedUi('chromium', browser);

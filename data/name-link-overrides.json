@@ -1,0 +1,5 @@
+{
+  "$schema": "../schema/name-link-overrides.schema.json",
+  "note": "Pins one name token in one passage or note to one person. The key is unit_id plus token. A pin wins over the Tubal context rule and may point either to tubal (Japheth's son) or to tubal-cain. An empty list is valid. Kevin, 2026-11-08 (N25). The context rule already resolves Tubal, so no pin is stored yet.",
+  "overrides": []
+}

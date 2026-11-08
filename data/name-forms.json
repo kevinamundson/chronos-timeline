@@ -4313,6 +4313,31 @@
       ]
     },
     {
+      "id": "heracles",
+      "forms": [
+        {
+          "form": "Herakles",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Robert Bowie Johnson Jr., Genesis Characters and Events in Ancient Greek Art (CreateSpace, 2016). The Naamah record, summarizing his view, prints his spelling: he calls Nimrod Herakles. The book is a private copy and is not quoted here. The link is the public Amazon listing.",
+          "link": "https://www.amazon.com/Genesis-Characters-Events-Ancient-Greek/dp/1539103617",
+          "source_text_id": "johnson-genesis-characters-greek-art",
+          "note": "Spelling only. The letters are the ones already printed in the Naamah description. Johnson's name for the figure he identifies with Nimrod. This is not a claim that Nimrod and Heracles are the same person."
+        },
+        {
+          "form": "Hercules",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Cory, Ancient Fragments (London: Reeves & Turner, 1876, ed. E. Richmond Hodges), p. 111; Manetho, ap. Syncellus, Chronicon 19, and Eusebius, Chronicle 7. The passage prints “Heracles (i.e. Hercules) the demigod, 15 years”.",
+          "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n155/mode/1up",
+          "source_text_id": "cory-ancient-fragments-1876",
+          "note": "The passage is an English translation. The Greek letters of the ancient text are not entered."
+        }
+      ]
+    },
+    {
       "id": "hercules",
       "forms": [
         {

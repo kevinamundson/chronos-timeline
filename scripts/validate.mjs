@@ -30,6 +30,8 @@ import { TIERS, personTierSort, tierPick, isJones23 } from './sort-rule.mjs';
 import { assertCalculatedCatalog, calculatedBasisNote } from './calculated/catalog.mjs';
 import { doreUrls, IIIF_BASE, DISPLAY_W, DORE_THUMB_DIR, doreThumbName } from './dore/urls.mjs';
 import { parseDoreFileName } from './dore/parse.mjs';
+import { selfCheckNameLinks } from './names/link.mjs';
+import { buildNameLinkReview } from './names/link-review.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const S = (f) => JSON.parse(readFileSync(join(root, 'schema', f), 'utf8'));
@@ -559,6 +561,8 @@ for (const [id, age, life] of GEN11) {
 const NAME_HISTORY = new Set([
   'raleigh-history-of-the-world-1617', 'josephus-antiquities-whiston', 'herodotus-rawlinson-wikisource',
   'ussher-annals-1658', 'ussher-annals-transcription', 'annals-of-clonmacnoise-1896', 'cory-ancient-fragments-1876',
+  // Kevin, 2026-11-08 (N28). The private-copy gate below still allows only the Herakles spelling already printed on Naamah.
+  'johnson-genesis-characters-greek-art',
 ]);
 const nameDoc = validate('data/name-forms.json', 'name-forms');
 const seenNameIds = new Set();
@@ -571,7 +575,17 @@ for (const person of nameDoc.people || []) {
     if (!f.citation.includes(f.form)) err('data/name-forms.json', `${where}: citation does not contain the form`);
     if (!srcIds.has(f.source_text_id)) err('data/name-forms.json', `${where}: unknown source ${f.source_text_id}`);
     const src = srcDoc.sources.find((s) => s.id === f.source_text_id);
-    if (src?.access === 'private-copy') err('data/name-forms.json', `${where}: private copy ${f.source_text_id} cannot witness a name`);
+    if (src?.access === 'private-copy') {
+      // Kevin, 2026-11-08 (N28): Herakles is already printed in the Naamah description.
+      // The footnote quotes that sentence and links to the public listing, not the book.
+      const heraklesOk = person.id === 'heracles' && f.form === 'Herakles'
+        && f.source_text_id === 'johnson-genesis-characters-greek-art'
+        && f.link === src.url
+        && (records.naamah?.doc.description || '').includes('Herakles')
+        && f.citation.includes('Herakles')
+        && /not quoted/i.test(f.citation);
+      if (!heraklesOk) err('data/name-forms.json', `${where}: private copy ${f.source_text_id} cannot witness a name`);
+    }
     if (f.role === 'alternate' && f.script !== 'latin') err('data/name-forms.json', `${where}: an alternate spelling is in Latin letters`);
     if (f.role === 'rendering' && f.script !== 'greek') err('data/name-forms.json', `${where}: a later rendering is Greek`);
     if (f.role === 'original' && !['hebrew', 'aramaic', 'greek'].includes(f.script)) err('data/name-forms.json', `${where}: original language is Hebrew, Aramaic or Greek`);
@@ -860,6 +874,18 @@ if (kingDoc) {
       else prev = p.order;
     }
   }
+}
+{
+  const rel = 'data/name-link-overrides.json';
+  validate(rel, 'name-link-overrides');
+  const peopleDocs = Object.values(records).filter((r) => r.kind === 'person').map((r) => r.doc);
+  const formsById = Object.fromEntries((nameDoc.people || []).map((p) => [p.id, p.forms]));
+  for (const msg of selfCheckNameLinks({ people: peopleDocs, nameForms: formsById })) err('scripts/names/link.mjs', msg);
+  const review = buildNameLinkReview(root);
+  for (const msg of review.problems) err(rel, msg);
+  const reviewPath = join(root, 'docs/name-link-review.md');
+  const current = existsSync(reviewPath) ? readFileSync(reviewPath, 'utf8') : '';
+  if (current !== review.markdown) err('docs/name-link-review.md', 'does not match node scripts/names/link-review.mjs');
 }
 if (raleighDerivedSummary) console.log(raleighDerivedSummary);
 if (errors.length) {

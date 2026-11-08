@@ -1403,6 +1403,7 @@ Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. 
   1. Leave the Cainite Tubal unmade, and leave the token pointing at `tubal`, as now.
   2. Add a Cainite Tubal and say which passages move off Japheth’s son.
 - **Recommendation:** option 2 when you want the two men apart. A silent merge with Jabal or with Japheth’s son would be a guess.
+- **Kevin's ruling, 2026-11-08, 11:31 AM CT:** Context-aware linking. No second Tubal record. In a passage or note about Cain’s line, the token Tubal resolves to Tubal-cain. Otherwise it resolves to Japheth’s son. Cain’s line means the unit is linked to, or uniquely mentions, Lamech the Cainite, Zillah, Adah, Naamah, Jubal, Jabal, or Cain. A unit linked to Tubal-cain, or that uniquely names him Tubalcain or Tubal-cain, is the same line. A bare Lamech does not count, because two records share that name (N34). `data/name-link-overrides.json` can pin any one passage or note either way. A pin wins over the rule. The list is empty: the rule covered the stored units, so nothing was pinned. Book I, Part I, Chapter V, §. III (p01028, p01029) and Chapter VI, §. IV (p01070), and the descriptions of Adah, Zillah, Jabal, and Jubal, resolve to `tubal-cain`. The Chapter VIII passages, including “IAPHETS sonnes TVBAL in Spaine”, resolve to `tubal`. Nine Tubal tokens resolve to Tubal-cain and forty to Japheth’s son. The passages stay on the records they were already attached to. The list is `docs/name-link-review.md`.
 
 ### N26. The 1617 index line for Noema
 
@@ -1428,6 +1429,7 @@ Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. 
   2. Name a match that should be suppressed, or a goddess that should become her own record.
 - **Recommendation:** option 1. A new goddess record would invent a person the sources have not been given a year for.
 - **Note, 2026-11-08:** the whole-token match is unchanged. Herakles still does not link to Heracles. The Names table and the Other people list now show the top 5, with "See more (N)" for the rest. Other people rank by mention count in that page's histories, then by `sorting_year`, then by name. Names put the page title first, then the forms with the most witnesses, then original before rendering before alternate, then the order in `name-forms.json`.
+- **Kevin's ruling, 2026-11-08, 11:31 AM CT:** Herakles, and Hercules, are name forms on the existing Heracles record. A token that matches more than one person stays unlinked unless a context rule or an override selects one record. The linker does not guess. Herakles matches only `heracles`, so Johnson’s spelling on Naamah’s page links there. The letters were already printed in her description. The footnote quotes that sentence and links to the Amazon listing. The book is not quoted. Hercules was not already a form on `heracles`. Cory, p. 111, prints “Heracles (i.e. Hercules)”. That form is now on `heracles`. The same folded token also matches the separate record `hercules`, so Hercules is left unlinked (28 occurrences, including the Preface’s French prince, Hercules Aegyptius, and the Altars of Hercules). Those passages are in the review, with both candidates. A pin in `data/name-link-overrides.json` can send one of them to `heracles` (N33). The same rule leaves every other shared token unlinked. Lamech is the largest biblical case (N34). Names in the 1617 passages and in summaries and descriptions that match no person are listed in `docs/name-link-review.md`. Citation boilerplate is not. Sentence-initial capitals are included, so the list is wider than personal names.
 
 ### N29. Reign length was not turned into an end year
 
@@ -1460,3 +1462,19 @@ Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. 
   1. Leave the intake sentences, and let the sort badge say `calc.`, as now.
   2. Approve a rewrite of every sentence that says there is no sort year when `sorting_basis.tier` is `calculated`.
 - **Recommendation:** option 2 when you want the descriptions to match the badge. A bulk rewrite of Raleigh's intake text was not part of this ruling.
+
+### N33. Hercules matches two records, so it stays unlinked
+
+- **Why it matters:** Hercules is now a name form on `heracles`, from Cory’s “Heracles (i.e. Hercules)”. The record `hercules` already has that folded spelling (title Hercules, and Raleigh’s HERCVLES). The token matches both, so the linker leaves all 28 occurrences unlinked. They are not all one man. The Preface names a French prince, “Francis Charles, Henry, and Hercules”. Other lines are Hercules Aegyptius, the Altars of Hercules, and Hercules parua. Johnson’s Herakles does link to `heracles`, because that spelling matches only one record.
+- **Options:**
+  1. Leave Hercules unlinked, and pin a passage in `data/name-link-overrides.json` only when you name the unit and the record.
+  2. Name the passages that should pin to `heracles`, and the ones that should pin to `hercules`.
+- **Recommendation:** option 1. Pinning every Hercules to the demigod would attach the French prince and the altars to `heracles`.
+
+### N34. Lamech matches two records, so it stays unlinked
+
+- **Why it matters:** `lamech` and `lamech-cainite` are both titled Lamech. Forty-four tokens match both, so none of them link. That includes the descriptions of Adah, Zillah, Jabal, and Jubal, which mean Lamech the Cainite, and the Sethite passages, which mean the other. The Tubal rule does not treat a bare Lamech as Cain’s line. No Lamech context rule was added.
+- **Options:**
+  1. Leave Lamech unlinked until a pin or a context rule is stated, as now.
+  2. Give Lamech the same kind of rule as Tubal, and say which names or links select `lamech-cainite`.
+- **Recommendation:** option 1. A silent choice between the two Lamechs would be a guess. The occurrences are in `docs/name-link-review.md`.
