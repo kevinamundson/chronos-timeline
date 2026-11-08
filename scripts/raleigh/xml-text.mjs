@@ -15,6 +15,8 @@ export const XML_REL = 'sources/raleigh/A10357.earlyprint-unadorned.xml';
 
 /** Last Book I, Part I chapter stored in data/raleigh-accounts.json. */
 export const THROUGH_CHAPTER = 12;
+/** Last Book II, Part I chapter stored in the account file. 0 means Book II is not included. */
+export const BOOK2_THROUGH = 1;
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI', 'XXVII', 'XXVIII', 'XXIX', 'XXX', 'XXXI', 'XXXII', 'XXXIII', 'XXXIV', 'XXXV', 'XXXVI', 'XXXVII', 'XXXVIII', 'XXXIX', 'XL'];
 
@@ -161,7 +163,7 @@ export function italicCoverageErrors(passage, italics, hiTexts) {
   return errors;
 }
 
-function location(stack, inBody, maxChapter) {
+function location(stack, inBody, range) {
   let preface = false;
   let contents = false;
   let part = null;
@@ -180,7 +182,11 @@ function location(stack, inBody, maxChapter) {
   }
   if (!inBody && preface) return { kind: 'preface', book: null, part: null, chapter: null, section: null, subsection: null };
   if (!inBody && contents) return { kind: 'contents', book, part: null, chapter: null, section: null, subsection: null };
-  if (inBody && part === '1' && book === '1' && chapter && Number(chapter) >= 1 && Number(chapter) <= maxChapter) {
+  const n = chapter ? Number(chapter) : 0;
+  if (inBody && part === '1' && book === '1' && n >= 1 && n <= range.book1Through) {
+    return { kind: 'body', book, part, chapter, section, subsection };
+  }
+  if (inBody && part === '1' && book === '2' && n >= 1 && n <= range.book2Through) {
     return { kind: 'body', book, part, chapter, section, subsection };
   }
   return null;
@@ -192,7 +198,7 @@ function location(stack, inBody, maxChapter) {
  * Each passage carries `hi` (the italic strings) and `italics` ([start, end] into `passage`).
  * The account file stores the plain passage only. Build and validate derive the spans.
  */
-export function extractPassages(xml, { throughChapter = 12 } = {}) {
+export function extractPassages(xml, { throughChapter = 12, book2Through = 0 } = {}) {
   const re = /<!--[\s\S]*?-->|<!\[CDATA\[[\s\S]*?\]\]>|<[^>]+>|[^<]+/g;
   const stack = [];
   let inBody = false;
@@ -203,9 +209,9 @@ export function extractPassages(xml, { throughChapter = 12 } = {}) {
   const passages = [];
   let contentsPartLabel = null;
   let contentsChapterLabel = null;
-  const maxChapter = throughChapter;
+  const range = { book1Through: throughChapter, book2Through };
 
-  const inScope = () => location(stack, inBody, maxChapter);
+  const inScope = () => location(stack, inBody, range);
 
   const finish = () => {
     if (!cap) return;
@@ -280,7 +286,7 @@ export function extractPassages(xml, { throughChapter = 12 } = {}) {
       if (local === 'div') {
         if (isEnd) {
           const top = stack[stack.length - 1];
-          if (top?.type === 'chapter' && inBody && top.n === String(maxChapter)) {
+          if (top?.type === 'chapter' && inBody && top.n === String(range.book1Through)) {
             stack.pop();
             // Chapters after this one stay out of scope because the chapter test fails.
           } else stack.pop();

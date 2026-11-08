@@ -267,3 +267,37 @@ A named individual received a person when no record already held that name. Ordi
 These were not made into people. “His Maiestie” was not attached to `james` or `james-v`. ISHI, in “thou shalt call mee ISHI”, is the Lord speaking. See N7 and N15. The man in “battaile to Caucasus of the Stocke of Iapheth” was not split out of the mountain name. See N15. The Latin word origine was not made a second Origen. Chapter X, §. VII, sig. 147a–147b, “de origine imaginum”, is the origin of images. Chapter XI, §. II, sig. 150b–151a, prints “ab ORIGINE” in the Latin quotation, and the English in the same passage, “condemned by ORIGEN”, is already on `origen`. Chapter X, §. III, sig. 143a–144b, “PLINIE, Locus vbi Euphratis ostium fuit”, is the place, not a person. SATVRNES and IVNOES are plural class names, not `saturn` and `juno`.
 
 Cyril’s Arbelus is on `belus`. See N13. The four Zoroasters stay on `zoroaster`, and Hostanes is not Hostianes. See N14. Africanus the agnomen shares `julius-africanus` with Iulius Africanus. See N12. No new event was created.
+
+# Pass 5
+
+Book II, Part I, Chapter I, §. I, sig. 157b, through §. XIII, sig. 167a–167b. The opening heading is “CHAP. I. Of the time of the birth of ABRAHAM: and of the vse of this question, for the ordering of the Storie of the Assyrian Empire.” Chapter II opens on sig. 168a and was not entered.
+
+Statements written: 3. People created: 40 (9 first named in the Preface, the contents, or Chapters I–VII; 1 first named in Chapter VIII, `rebecca`; 30 first named in this chapter). Places created: 0. Events created: 0. `sarai`, `terah`, and `ishmael` each gained one statement. No other existing person or event file was edited. Name forms added: 20 (2 on the new people, 18 on people who already had records). No existing form was rewritten. Accounts: 1,615 passages, on 514 people and 7 events. The new event account is the existing `abraham-birth`. The first 1,546 passages are the pass 4 text, unchanged. `year_bc_ad` is null on the three new statements. `sorting_year` was not changed.
+
+## Statements written
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book II, Part I, Chapter I, §. IV, sig. 160a–160b | For Sarah died in the yeere of the world 2145. | sarai, `dates.death` (`year_am` 2145) |
+| Book II, Part I, Chapter I, §. VI, sig. 161b | For the yeere of Terahs death, in which Abraham left Haran, was the yeere of the World 2083. | terah, `dates.death` (`year_am` 2083) |
+| Book II, Part I, Chapter I, §. VI, sig. 161b | the yeere of Ismaels birth was the Worlds yeere 2094 | ishmael, `dates.birth` (`year_am` 2094) |
+
+The chronological table already prints Sarah’s death at 2145 (sig. 783a) and Terah’s death at 2083 (sig. 782b). Ishmael’s table birth is Jones’s year, which already sets his sort at −1910. The three body sentences do not change those sorts. The same sentence as Sarah’s death says “Isaac was borne in the yeere 2109”. That clause does not say yeere of the World. The table row on `isaac` is already 2109, and it was not entered again. Abraham’s birth, “which happened in the yeere of the World, 2009”, was already on `abraham`. That passage (p01589) is now also on the existing event `abraham-birth`. It was not stored a second time.
+
+## Figures that were not entered
+
+- Chapter I, §. I, sig. 158a: “the most part making 292. or 293. yeeres; others 352. yeeres between Abrahams birth and the floud”. An interval after the Flood. Chapter I, §. VIII, sig. 164a, concludes “from the generall Floud, to the birth of Abraham, 352. yeeres were consumed”. That interval was not added to 1656 to make a yeere of the World. The 2009 sentence is the year he prints.
+- Chapter I, §. II, sig. 158a: “necessarily borne in the seuentieth yeere of his life”. An age of Terah in the argument for the 70-year reading. The conclusion he keeps is the 130th year of Terah, which is an age, not a yeere of the World.
+- Chapter I, §. IV, sig. 160a–160b: “Isaac was borne in the yeere 2109”. Already the table row on `isaac`.
+- Chapter I, §. V and §. VI: Abraham at 75 when Terah died at 205, Ishmael at Abraham’s 86, Isaac at Abraham’s 100, and the rescue of Lot at 83. Ages. The 75 and the 205 are the arithmetic of the 2083 sentence, which is the year that was stored.
+- Chapter I, §. VIII, sig. 164a–164b: “Nimrod, by this accompt, liued in all but one hundred seuenty nine yeeres: whereof hee reigned one hundred and twelue”, and “there remaineth 114. yeeres of the 352. from the Floud to Abrahams birth: which number of 114. necessitie bestoweth on Nimrod.” Lengths. The importer already refuses Nimrod’s 114, 179, and 112 in this section. They were not entered again.
+- Chapter I, §. VIII: “Ninus reigned … 52”, “Semiramis … 42. yeeres”, “Ninias or Zameis … ruled 38. yeeres”. Those lengths are already the table rows. They were not entered again. No yeere of the World was taken for Amraphel, Arioch, Chedorlaomer, or Tidal.
+- Soldier counts, mileage, and the size of the five kings’ country (“not so much ground as Middlesex”) are not years. “The Hebrew writes it Goijm” is Tidal’s title, not a person.
+
+## Names
+
+A named individual received a person when no record already held that name. Ordinary title case was still not treated as a name unless the spelling had been checked in this range and added to the spelling map. A group was not split.
+
+`abrahamo` is on `abraham`, `christo` on `christ`, `semo` on `shem`, and `lots` on `lot`. `sara`, `sarah`, `saram`, and `iscah` are on `sarai`. `nabor` is on `nahor`. `iosus` is on `iosua`. `ezechias` is on `hezekiah`, the king, not the high priest. `beda` and `bede` are on `bede`. `regu` is on `reu`. `sabta` is on `sabtah`. `seba` is on `seba` and `raama` on `raamah`. `sale` is on `salah`: “Sale who was the sonne of Arphaxad the sonne of Sem” (sig. 164a–164b). `innius` is on `junius`. `zameis` stays on `ninias`. `thuras` stays on `arius`. `baleus`, `balaneus`, and `balanius` stay on `baleus`. The phrase “liberis NOA” is on `noah`. The bare “Noa” in “Bacchus Niseus or Noa” was not attached. “Q. Curtius” is on `quintus-curtius`. “Rab. Solomon” is the new `rab-solomon`, not `solomon`. “Daniel Angelocrator” is `daniel-angelocrator`, so the prophet Daniel is not that chronologer. “Sethus Caluisius” is `sethus-caluisius`, not `seth`. “Iustin Martyr” was left on the existing `justin` passage that already held it. A separate martyr record was not made, because the phrase map would have dropped that link.
+
+These were not made into people. BrRSHA, the printed king of Gomorrah, and Percrius. See N18. Moore, Iudith, Victor, the unnamed king of Bela, Ellas, and Goijm. See N19. Amraphel is kept apart from Ninias. See N20. The son of Terah is `haran-son-of-terah`, because `haran` is already the city. The son of Abraham and Keturah is `midian-son-of-abraham`, because `midian` is already the land. Oleaster the writer, and one Arioch. See N21. `leuita` is titled Leuita, the printed name, and it was not expanded. The half-tribe of Manasse was not forced onto `manasseh`. A bare Iuda was not forced onto `judah`. The one sentence “iuda and ioseph of iacob” is on `judah`. No new event was created.

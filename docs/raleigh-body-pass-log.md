@@ -134,6 +134,31 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 283 (5 through pass 2, 231 in pass 3, 47 in pass 4)
 - Accounts: 1,546 passages on 473 records
 
+## Pass 5
+
+Book II, Part I, Chapter I, §. I, sig. 157b, through §. XIII, sig. 167a–167b. The book heading is “THE SECOND BOOKE.” The chapter heading is “CHAP. I. Of the time of the birth of ABRAHAM: and of the vse of this question, for the ordering of the Storie of the Assyrian Empire.” The next chapter, “CHAP. II. Of the Kings of Aegypt from the first peopling of it after the Floud, to the time of the deliuerie of the Israelites from thence,” opens on sig. 168a and was not entered. The same rules as passes 3 and 4, plus the modern-reading rules of 2026-11-08. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. Three such sentences were new. The 2009 birth sentence was already on `abraham`.
+
+### Counts
+
+- Dated statements written: 3 (`sarai` death at the yeere of the World 2145; `terah` death at 2083; `ishmael` birth at the Worlds yeere 2094)
+- People created: 40 (9 first named in the Preface, the contents, or Chapters I–VII; 1 first named in Chapter VIII, `rebecca`; 30 first named in Book II, Part I, Chapter I)
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. `sarai`, `terah`, and `ishmael` each gained one statement. No other person or event file was edited. `abraham` already had the 2009 sentence. The existing event `abraham-birth` gained that passage in the account file.
+- Name forms added: 20 (2 on the new people, Areta on `aretas` and Nicholas Damascenus on `nicholas-damascenus`; 18 on people who already had records). No existing form was rewritten.
+- Accounts: 1,615 passages, on 514 people and 7 events. The seventh event is the existing `abraham-birth`. The first 1,546 passages are unchanged.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. No importer was re-run. The new people are display-only, and none of them has a standby placement. `sorting_year` on the three edited people stays `sarai` −1987, `terah` −2126, and `ishmael` −1910. `sorting_year`, `sorting_basis`, and `standby` are unchanged on the 2,028 people and events that already exist on `origin/main`.
+
+### Cumulative
+
+- Dated statements written: 40 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5)
+- People created: 384
+- Places created: 0
+- Events created: 0
+- Name forms added: 303 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5)
+- Accounts: 1,615 passages on 521 records
+
 ## RESUME POINT
 
-Book II, the first part, Chapter I, §. I, sig. 157b. The book heading is “THE SECOND BOOKE.” The chapter heading is “CHAP. I. Of the time of the birth of ABRAHAM: and of the vse of this question, for the ordering of the Storie of the Assyrian Empire.” Book I ends as this book opens. Do not start again inside Book I. The birth-year argument in that next section was not entered.
+Book II, Part I, Chapter II, §. I, sig. 168a. The heading is “CHAP. II. Of the Kings of Aegypt from the first peopling of it after the Floud, to the time of the deliuerie of the Israelites from thence.” Pass 5 stopped at the end of Chapter I. The last stored passage is p01615, Book II, Part I, Chapter I, §. XIII, sig. 167a–167b. Do not start again inside Chapter I.

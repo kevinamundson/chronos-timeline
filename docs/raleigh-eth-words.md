@@ -1,8 +1,10 @@
 # Raleigh -eth words
 
-Kevin, 2026-11-08. In the modern view only, a third-person verb that ends in -eth takes the modern third person. The original text is unchanged. This list is every distinct word of that shape in the passages stored through pass 4 (Preface, contents, and Book I, Part I, Chapters I–XII), plus hath, doth, and saith.
+Kevin, 2026-11-08. In the modern view only, a third-person verb that ends in -eth takes the modern third person. The original text is unchanged. The tables below are every distinct word of that shape in the passages stored through pass 4 (Preface, contents, and Book I, Part I, Chapters I–XII), plus hath, doth, and saith.
 
-378 distinct words. 361 change. 13 stay, with a reason. 4 stay and are flagged, because the printed letters do not identify one modern verb.
+378 distinct words in those tables. 361 change. 13 stay, with a reason. 4 stay and are flagged, because the printed letters do not identify one modern verb.
+
+Pass 5 (Book II, Part I, Chapter I) adds six words those tables do not list. Four change. Two stay. None of the six is flagged. Through that chapter the inventory is 384 distinct words: 365 change, 15 stay, and the same 4 flagged. The new rows are under "Pass 5".
 
 ## Decisions
 
@@ -14,7 +16,9 @@ Kevin, 2026-11-08. In the modern view only, a third-person verb that ends in -et
 - Ashtaroth does not end in -eth. It is unchanged.
 - The bare token saketh stays. The printed phrase "for saketh" is forsake, and the modern view reads "forsakes".
 - Hyphenated fore-seeth and fore-telleth would otherwise become fore-sees and fore-tells, because the hyphen splits the token. The modern view joins them: foresees, foretells.
-- These printed verbs are mapped because the stem is not the modern infinitive: approcheth approaches, endeuoureth endeavours, maruaileth marvels, reprocheth reproaches, suteth suits, carieth carries, prophecieth prophesies, looseth loses (both hits mean lose, not unloose), siegeth besieges, trauaileth travels (all three hits are the verb travel, not travail), faineth and fayneth feigns (all three hits mean feign).
+- These printed verbs are mapped because the stem is not the modern infinitive: approcheth approaches, endeuoureth endeavours, maruaileth marvels, reprocheth reproaches, suteth suits, carieth carries, prophecieth prophesies, looseth loses (both hits mean lose, not unloose), siegeth besieges, trauaileth travels (all three hits are the verb travel, not travail), faineth and fayneth feigns (all three hits mean feign), behoueth behooves (the dictionary verb is behoove).
+- trueth becomes truth. It is the noun. The stem would otherwise meet the headword true and become trues.
+- fortieth stays. seuentieth stays as an ordinal and is shown seventieth, because u becomes v. The ending is not a verb.
 - Cheareth is the brook Cherith ("the Riuer Cheareth"), not the verb cheer. It stays.
 - seedeth becomes seeds. In this book it is the verb in "the hearbe, which seedeth seede".
 
@@ -412,3 +416,16 @@ These four are left as printed. The sample is the passage, not a guess at a corr
 | worketh | 14 | works | verb work → works | p00072:  according to the will of the matter wherein it worketh. It is God, that commandeth all: It is Nature t |
 | writeth | 18 | writes | verb write → writes | p00810: THis visible World of which Moses writeth, God created in the beginning, or first of all: |
 | yeeldeth | 8 | yields | verb yield → yields | p00784: ◊ 〉 of Magnesia: wherein Antiochus, being 〈◊ 〉, yeeldeth to the Romans good pleasure. The conditions of  |
+
+## Pass 5
+
+Six words appear in Book II, Part I, Chapter I and in no earlier stored passage. Counts are in those 69 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| behoueth | 1 | behooves | verb form behooves | p01552: abyrinth of times, it behoueth me to giue reason for my owne opin |
+| dieth | 1 | dies | verb die → dies | p01595: Ninus dieth and leaueth Semiramis his successo |
+| fauoureth | 1 | favours | verb favour → favours | p01602: hould bee Hellespont: which opinion Pererius fauoureth. But this is onely |
+| fortieth | 2 | fortieth | kept: ordinal | p01550: since all agree, that the fortieth three yeere of Ninus was the birth |
+| seuentieth | 1 | seventieth | kept: ordinal | p01555: f Terah, and so necessarily borne in the seuentieth yeere of his life. Secondly |
+| trueth | 6 | truth | noun truth, not the verb true | p01565: e endured but 175. yeere. It hath therefore no face of trueth, that Moses forgot |

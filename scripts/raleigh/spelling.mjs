@@ -607,6 +607,15 @@ const ETH_EXPLICIT = {
   trauaileth: 'travels',
   faineth: 'feigns',
   fayneth: 'feigns',
+  // "it behoueth me". The dictionary verb is behoove, not the letters behov.
+  behoueth: 'behooves',
+  behoveth: 'behooves',
+  // The noun truth. "true" is a headword, so the stem would otherwise become trues.
+  trueth: 'truth',
+};
+
+const ETH_EXPLICIT_REASON = {
+  trueth: 'noun truth, not the verb true',
 };
 
 // Kept, and listed as unsure. The letters do not identify one modern verb.
@@ -685,7 +694,13 @@ export function ethDecision(lower) {
   if (word === 'doth') return { word, modern: 'does', kept: false, unsure: false, reason: 'irregular third person of do' };
   if (word === 'saith') return { word, modern: 'says', kept: false, unsure: false, reason: 'irregular third person of say' };
   if (ETH_EXPLICIT[word]) {
-    return { word, modern: ETH_EXPLICIT[word], kept: false, unsure: false, reason: `verb form ${ETH_EXPLICIT[word]}` };
+    return {
+      word,
+      modern: ETH_EXPLICIT[word],
+      kept: false,
+      unsure: false,
+      reason: ETH_EXPLICIT_REASON[word] || `verb form ${ETH_EXPLICIT[word]}`,
+    };
   }
   if (ETH_UNSURE[word]) return { word, modern: word, kept: true, unsure: true, reason: ETH_UNSURE[word] };
   if (!word.endsWith('eth')) return null;

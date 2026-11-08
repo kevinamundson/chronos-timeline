@@ -1383,8 +1383,8 @@ for (const [path, shot, sel] of [
       const abraham = spellings.find((r) => r.cells[0] === 'Abraham');
       const abram = spellings.find((r) => r.cells[0] === 'Abram');
       check(`${tag}: HTTP 200, disclosure closed`, resp.status() === 200 && closed && hidden && summary.open === false && errors.length === 0, errors.join(' | '));
-      // ABRAHAMI and ABRAHAMS are the 1617 spellings added in the Book I body intake.
-      check(`${tag}: one row per spelling`, spellings.length === 6 && new Set(keys).size === keys.length && heb.some((t) => t.includes('אַבְרָהָם')) && heb.some((t) => t.includes('אַבְרָם')) && keys.some((t) => t.startsWith('ABRAHAMI')) && keys.some((t) => t.startsWith('ABRAHAMS')), keys.join(' ; '));
+      // ABRAHAMI and ABRAHAMS are Book I spellings. ABRAHAMO is Book II, Part I, Chapter I.
+      check(`${tag}: one row per spelling`, spellings.length === 7 && new Set(keys).size === keys.length && heb.some((t) => t.includes('אַבְרָהָם')) && heb.some((t) => t.includes('אַבְרָם')) && keys.some((t) => t.startsWith('ABRAHAMI')) && keys.some((t) => t.startsWith('ABRAHAMS')) && keys.some((t) => t.startsWith('ABRAHAMO')), keys.join(' ; '));
       check(`${tag}: Abraham and Abram list Bible and History`, /Bible/.test(abraham?.cells[3] || '') && /History/.test(abraham?.cells[3] || '') && /Bible/.test(abram?.cells[3] || '') && /History/.test(abram?.cells[3] || '') && (abraham?.cells[3].match(/Abraham|Bible|History/g) || []).length >= 2, `${abraham?.cells[3]} || ${abram?.cells[3]}`);
       const contrast = summary.summary != null && summary.bg != null && Math.abs(summary.summary - summary.bg) > 120 && summary.h >= 44 && summary.chevron !== '0px';
       check(`${tag}: footnote summary is tappable and readable`, contrast, JSON.stringify(summary));

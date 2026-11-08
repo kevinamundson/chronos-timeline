@@ -1334,3 +1334,37 @@ Pass 4 read Book I, Part I, Chapter IX through Chapter XII, and stopped at “Fi
   1. Leave all-capital words and Roman numerals as printed, as now.
   2. Reduce all-capital English words to a capital and lowercase (`GOD` to `God`) and say what should happen to Roman numerals and to headings such as `CHAP`.
 - **Recommendation:** option 1. The two-capital rule is a print habit. A word set entirely in capitals, and a numeral, may be a heading or a name, and reducing them would be a different decision.
+
+Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. The quotes are in `data/raleigh-body-extract.md`. N1, N2, N4, N7 to N17 stay open.
+
+### N18. The king printed BrRSHA, and the writer printed Percrius
+
+- **Why it matters:** Book II, Part I, Chapter I, §. X, sig. 165a–165b (p01602): “made warre with BERA, king of Sodome, BrRSHA king of Gomorha, SHINAB king of Admath, and SHEMEBAR king of Zeboim, and the king of BELA which is Zoar.” Bera, Shinab, and Shemebar are people, titled as printed. BrRSHA is the king of Gomorrah in that sentence. The letters are not a clean name, so no person was made. §. X, sig. 165b (p01603): “And Percrius himselfe remembreth other opinions”. The same section also prints “Pererius fauoureth”, and those sentences stay on the existing `pererius`. Percrius was not attached there and was not made a second person.
+- **Options:**
+  1. Leave BrRSHA and Percrius unmade, as now.
+  2. Name the spelling you want for the king of Gomorrah, and say whether Percrius is `pererius`.
+- **Recommendation:** option 1. Correcting either spelling would be a guess.
+
+### N19. Names that were not made into people in this chapter
+
+- **Why it matters:** “Doct. Gibbons, and Moore” (Chapter I, §. VII, sig. 163b–164a) names a chronologer. “a Negro, or Blacke-Moore” is already in Book I (p01268). One token cannot be both, so neither was made a person. Iudith is three uses: the wife of Charles in the Preface (p00034), “the Historie of Iudith” in the contents (p00481), and the book named again in §. X (p01603). No person was made. “Xerxes, id est, Victor” (§. XII, sig. 166b) is a gloss of the name Xerxes, not a person. “the king of BELA which is Zoar” is unnamed, so he was not invented. “ELLAS, whereof he is said to haue beene King” (§. X, sig. 165a) is the country Ellasar, not a person. “The Hebrew writes it Goijm” (§. XI) is Tidal’s title “king of the Nations”, not a further person.
+- **Options:**
+  1. Leave Moore, Iudith, Victor, the king of Bela, Ellas, and Goijm unmade, as now.
+  2. Name the record that should receive one of them.
+- **Recommendation:** option 1. Each spelling is doing more than one job, or it names nobody.
+
+### N20. One record where he offers two names
+
+- **Why it matters:** “Sarah or Iscah” and “that Iscah was Sarah, Rab. Solomon affirmeth” are on `sarai`. `rab-solomon` is that writer, not `solomon`. “Ninias or Zameis” stays on `ninias`. “Arius … whom Suidas calleth Thuras” stays on `arius`, the Assyrian table king. “Baleus or Balaneus, otherwise Xerxes” and the later “Xerxes or Balanius” are on `baleus`. He says the king was called Xerxes, meaning Victor. They were not moved to `xerxes`. “Caluin, Innius, Beza” puts Innius on `junius`, whose title is already Iunius. Amraphel is his own record. §. VIII says “Amraphel may seeme to haue beene this Ninias”, and “the reasons to the contrary … are not easily answered.” §. IX says he “may probably be thought to haue beene NINIAS”. §. XIII says “we neede not say that AMRAPHEL was NINIAS”. No year of Ninias was copied onto `amraphel`.
+- **Options:**
+  1. Leave these attachments, and leave Amraphel apart from Ninias, as now.
+  2. Name a split: Iscah, Zameis, Thuras, Balaneus, Innius, or Amraphel with Ninias.
+- **Recommendation:** option 1. He is arguing the identifications, and the page shows both names on the record that holds the sentence. Amraphel’s own last word in the chapter is that the identification need not be made.
+
+### N21. The same spelling for two referents
+
+- **Why it matters:** Haran the son of Terah is `haran-son-of-terah` (ten passages that name the son, including “Haran was the parent of Lot, Sarah, and Milcah”). The location `haran` stays the city. Passages that name only the city were left off the son. Midian the son is `midian-son-of-abraham`, the one name in “Zimron, Iockshan, Medan, Midian, Ishbak, and Shuah”. The location `midian` stays the land, and the land was not attached. Oleaster the writer is the name in “Caietan, Oleaster, Musculus”. The tree Jerome calls Oleaster, in Book I, was not attached. Arioch of Ellasar is `arioch`. §. X also says “the same also of Arioch who commanded vnder Nabuchodonosor”. That later man was not made a second record.
+- **Options:**
+  1. Leave one record for each spelling, with the attachments above, as now.
+  2. Name a second record for the city, the land, the tree, or the later Arioch, and say which passages move.
+- **Recommendation:** option 1. A second record would invent a person the chapter does not separate by a yeere of the World.

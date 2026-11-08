@@ -6,10 +6,11 @@
 //
 //   node scripts/raleigh/covered.mjs
 //   node scripts/raleigh/covered.mjs --through=12
-//   node scripts/raleigh/covered.mjs --through=12 --write
+//   node scripts/raleigh/covered.mjs --through=12 --book2=1 --write
 //
 // --through is the last Book I, Part I chapter. It cannot be less than 8, because
-// passes 1–3 already covered Chapters I–VIII. Book II is not included.
+// passes 1–3 already covered Chapters I–VIII. --book2 is the last Book II, Part I
+// chapter. 0 leaves Book II out. Pass 5 stops at Chapter I.
 // A passage is attached by the name as printed. Groups, places, and unnamed
 // people are not split into individuals. God, Jehovah, and the Holy Ghost are
 // not person records. Ambiguous shared names are left unattached.
@@ -25,8 +26,13 @@ const DATA = join(root, 'data');
 const write = process.argv.includes('--write');
 const throughArg = process.argv.find((a) => a.startsWith('--through='));
 const throughChapter = throughArg ? Number(throughArg.slice('--through='.length)) : 12;
+const book2Arg = process.argv.find((a) => a.startsWith('--book2='));
+const book2Through = book2Arg ? Number(book2Arg.slice('--book2='.length)) : 0;
 if (!Number.isInteger(throughChapter) || throughChapter < 8 || throughChapter > 12) {
   throw new Error('--through must be an integer from 8 to 12 (Book I, Part I ends at Chapter XII)');
+}
+if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 1) {
+  throw new Error('--book2 must be 0 or 1 (pass 5 stops at Book II, Part I, Chapter I)');
 }
 const LINK = 'https://texts.earlyprint.org/works/A10357.xml';
 const SRC = 'raleigh-history-of-the-world';
@@ -48,7 +54,7 @@ for (const f of readdirSync(join(DATA, 'events')).filter((f) => f.endsWith('.jso
 const nameDoc = readJSON(join(DATA, 'name-forms.json'));
 
 const xml = loadXml(root);
-const passages = extractPassages(xml, { throughChapter });
+const passages = extractPassages(xml, { throughChapter, book2Through });
 const corpus = normalizedDocumentText(xml);
 for (const p of passages) {
   if (!corpus.includes(p.passage)) throw new Error(`passage ${p.id} is not verbatim in the 1617 text (${p.citation})`);
@@ -465,6 +471,39 @@ const FORCE = {
   adimantus: 'adimantus',
   // Bare Dion in the Berosus list. Dion Neapolites is a different man (phrase below).
   dion: 'dion',
+  // Book II, Part I, Chapter I. A Latin ending stays on the person. A city, a
+  // land, and a gloss are not new people. Title case attaches only when named here.
+  abrahamo: 'abraham', christo: 'christ', semo: 'shem',
+  sara: 'sarai', sarah: 'sarai', saram: 'sarai', iscah: 'sarai',
+  lots: 'lot',
+  nabor: 'nahor',
+  iosus: 'iosua',
+  ezechias: 'hezekiah',
+  beda: 'bede', bede: 'bede',
+  regu: 'reu',
+  sabta: 'sabtah',
+  seba: 'seba', raama: 'raamah',
+  moses: 'moses',
+  stephen: 'stephen',
+  arius: 'arius', aralius: 'aralius',
+  baleus: 'baleus', balaneus: 'baleus', balanius: 'baleus',
+  iustin: 'justin',
+  curtius: 'quintus-curtius',
+  chedorlaomer: 'chedorlaomer', chedorl: 'chedorlaomer', kedarlaomer: 'chedorlaomer',
+  amraphel: 'amraphel', arioch: 'arioch', tidal: 'tidal',
+  bera: 'bera', shinab: 'shinab', shemebar: 'shemebar',
+  keturah: 'keturah', zimron: 'zimron', iockshan: 'iockshan',
+  medan: 'medan', ishbak: 'ishbak', shuah: 'shuah',
+  obed: 'obed', iesse: 'jesse',
+  rebecca: 'rebecca', milcah: 'milcah', laban: 'laban', hagar: 'hagar', lea: 'lea',
+  caietan: 'caietan', musculus: 'musculus', aquila: 'aquila', symmachus: 'symmachus',
+  archilochus: 'archilochus', aretas: 'aretas', areta: 'aretas',
+  beza: 'beza', broughton: 'broughton', gibbons: 'gibbons', bucholcerus: 'bucholcerus',
+  // Printed Innius, the same writer as Iunius.
+  innius: 'junius',
+  tamberlain: 'tamberlain', thucydides: 'thucydides', sesac: 'sesac', leuita: 'leuita',
+  // Ellas is a country. Bela is Zoar. Moore is also Blacke-Moore. Victor glosses the name Xerxes.
+  ellas: null, bela: null, moore: null, victor: null,
 };
 
 const PHRASES = [
@@ -558,6 +597,14 @@ const PHRASES = [
   ['thomas aquinas', 'thomas-aquinas', 'Thomas Aquinas'],
   ['guilandinus melchior', 'guilandinus-melchior', 'Guilandinus Melchior'],
   ['dion neapolites', 'dion-neapolites', 'Dion Neapolites'],
+  ['daniel angelocrator', 'daniel-angelocrator', 'Daniel Angelocrator'],
+  ['sethus caluisius', 'sethus-caluisius', 'Sethus Caluisius'],
+  ['nicholas damascenus', 'nicholas-damascenus', 'Nicolaus Damascenus'],
+  ['nicolaus damascenus', 'nicholas-damascenus', 'Nicolaus Damascenus'],
+  ['rab. solomon', 'rab-solomon', 'Rab. Solomon'],
+  ['q. curtius', 'quintus-curtius', null],
+  ['liberis noa', 'noah', null],
+  ['chedor laomer', 'chedorlaomer', null],
 ].sort((a, b) => b[0].length - a[0].length);
 
 const SHORT = new Set(['og', 'uz', 'dan', 'lot', 'job', 'iob', 'gog', 'lud', 'put', 'hul', 'ham', 'shem', 'sem', 'noe', 'eva', 'eve', 'seth', 'adam', 'saul', 'cain', 'abel', 'ira']);
@@ -839,7 +886,7 @@ for (const [key, bucket] of buckets) {
 
 // Second pass now that new aliases exist. Rebuild account sets from scratch.
 const accounts = new Map();
-const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite']);
+const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite', 'haran-son-of-terah', 'midian-son-of-abraham', 'oleaster']);
 function addAccount(id, passage) {
   if (!id || String(id).startsWith('new:')) return;
   if (!people.has(id) && !created.some((c) => c.id === id) && !events.has(id) && !SPECIAL.has(id)) return;
@@ -861,7 +908,7 @@ for (const passage of passages) {
     if (sons) addAccount('ham', passage);
     else if (/\b(egypt|aegypt)\b/.test(t) && /\bcham\b/.test(t)) addAccount('cham', passage);
   }
-  if (/\babimelech\b/.test(t)) {
+  if (/\babimelech\b/.test(t) || /\babimelec\b/.test(t)) {
     if (/gerar|philistim/.test(t)) addAccount('abimelech-of-gerar', passage);
     else if (/gideon/.test(t)) addAccount('abimelech-son-of-gideon', passage);
   }
@@ -878,19 +925,49 @@ for (const passage of passages) {
     else if (cu && !jok) addAccount('havilah-son-of-cush', passage);
   }
   if (/\blamech\b/.test(t) && /\b(irad|mehujael|methusael|methvsael)\b/.test(t)) addAccount('lamech-cainite', passage);
+  // Haran the son of Terah. The city of the same name stays unattached.
+  if (/\bharan\b/.test(t) && (
+    /\bbeg[oa]t\b.{0,80}\bharan\b/.test(t)
+    || /haran was the (elder|eldest)/.test(t)
+    || /parent of lot, sarah, and milcah/.test(t)
+    || /brother of haran/.test(t)
+    || /brother haran/.test(t)
+    || /haran, who died/.test(t)
+    || /harans daughters/.test(t)
+    || /daughters of their brother/.test(t)
+    || /haran fuit iunior/.test(t)
+    || /haran must haue begotten/.test(t)
+    || /must haran beget/.test(t)
+    || /not of nahor and haran/.test(t)
+    || (/(nahor|nachor) and haran/.test(t) && /bethuel|milcah|idolaters|rebecca|parents/.test(t))
+  )) {
+    addAccount('haran-son-of-terah', passage);
+    noteSurface('haran-son-of-terah', 'Haran', passage);
+  }
+  // Midian the son of Keturah. The land Midian stays unattached.
+  if (/zimron, iockshan, medan, midian, ishbak, and shuah/.test(t)) {
+    addAccount('midian-son-of-abraham', passage);
+    noteSurface('midian-son-of-abraham', 'Midian', passage);
+  }
+  // Oleaster the writer. The tree of that name stays unattached.
+  if (/caietan, oleaster, musculus/.test(t)) {
+    addAccount('oleaster', passage);
+    noteSurface('oleaster', 'Oleaster', passage);
+  }
+  if (/iuda and ioseph of iacob/.test(t)) addAccount('judah', passage);
 }
 
 // Events the covered text discusses.
 function addEvent(id, pred) {
   for (const passage of passages) if (pred(passage)) addAccount(id, passage);
 }
-addEvent('creation-week', (p) => (p.kind === 'body' && p.chapter === '1') || (p.kind === 'contents' && p.book === '1' && /Chapter I,/.test(p.citation)));
+addEvent('creation-week', (p) => (p.kind === 'body' && p.book === '1' && p.chapter === '1') || (p.kind === 'contents' && p.book === '1' && /Chapter I,/.test(p.citation)));
 addEvent('the-flood', (p) => /generall floud|vniuersall floud|universall floud|floud of noah|noahs floud|after the floud|before the floud|great inundation|\bthe floud\b/i.test(p.passage));
 addEvent('founding-of-babel', (p) => /babel|babell|confusion of tongues|confusion of languages|towre of babel|tower of babel/i.test(p.passage));
 addEvent('flood-of-ogyges', (p) => /\bogyges\b|\bogygis\b|\bogyge\b/i.test(p.passage));
 addEvent('founding-of-rome', (p) => /3280/.test(p.passage) && /rome/i.test(p.passage));
 addEvent('nimrod-builds-nineveh', (p) => {
-  if (p.kind !== 'body' || Number(p.chapter) < 9 || Number(p.chapter) > 12) return false;
+  if (p.book !== '1' || p.kind !== 'body' || Number(p.chapter) < 9 || Number(p.chapter) > 12) return false;
   if (!/nimrod/i.test(p.passage) || !/niniue/i.test(p.passage)) return false;
   // §. III is the argument that Nimrod, not Assur, built Nineveh.
   // The other hits are the sentences that say he built it or began it.
@@ -927,6 +1004,7 @@ function earliestPassage(id) {
 function isBackfill(p) {
   if (!p) return false;
   if (p.kind === 'preface' || p.kind === 'contents') return true;
+  if (p.book === '2') return false;
   return p.kind === 'body' && Number(p.chapter) < 8;
 }
 
@@ -978,6 +1056,9 @@ function ensureSpecial(id, title) {
 ensureSpecial('abimelech-of-gerar', 'Abimelech of Gerar');
 ensureSpecial('lamech-cainite', 'Lamech');
 ensureSpecial('christ', 'Christ');
+ensureSpecial('haran-son-of-terah', 'Haran');
+ensureSpecial('midian-son-of-abraham', 'Midian');
+ensureSpecial('oleaster', 'Oleaster');
 
 function personDoc(bucket) {
   const title = bucket.title;
@@ -999,6 +1080,12 @@ function personDoc(bucket) {
   if (id === 'abimelech-of-gerar') description = `${OURS} The Abimelech of Gerar, king of the Philistines, in Book I, Part I, Chapter VIII. Not Abimelech son of Gideon. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'cecrops') description = `${OURS} The Athenian king he names with Moses. Not Cecrops II, who already has a record from the chronological table. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'ianus') description = `${OURS} The Ianus of Italy, kept apart from Noah. A yeere of the World 2717 is printed as some other men's reckoning and was not entered. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'amraphel') description = `${OURS} One of the four kings Abraham overthrew. Raleigh says he may be Ninias, and that the reasons against that are not easily answered. He is kept apart from Ninias. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'arioch') description = `${OURS} King of Ellassar, one of the four kings Abraham overthrew. A later Arioch, who commanded under Nebuchadnezzar, is named in the same chapter and was not made a second record. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'haran-son-of-terah') description = `${OURS} The son of Terah, and the father of Lot, Sarah, and Milcah. The city is the location haran. Passages that name the son were attached. Passages that name only the city were not. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'midian-son-of-abraham') description = `${OURS} A son of Abraham and Keturah, named with Zimron, Iockshan, Medan, Ishbak, and Shuah. The land is the location midian, and it was not attached. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'oleaster') description = `${OURS} The writer named with Caietan and Musculus. The tree Jerome calls Oleaster was not attached. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'leuita') description = `${OURS} Named as Leuita, in his Cabala. The printed name was not expanded. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   const doc = {
     $schema: '../../schema/person.schema.json',
     id,
@@ -1032,7 +1119,9 @@ function formsFor(id, title) {
   const person = nameDoc.people.find((p) => p.id === id);
   const stored = new Set((person?.forms || []).map((f) => f.form.toLowerCase()));
   stored.add((title || '').toLowerCase());
-  const newNote = 'Spelling only. Read in Book I, Part I, Chapters IX–XII.';
+  const newNote = book2Through
+    ? 'Spelling only. Read in Book II, Part I, Chapter I.'
+    : 'Spelling only. Read in Book I, Part I, Chapters IX–XII.';
   const alreadyNew = (person?.forms || []).filter((f) => f.source_text_id === SRC_ID && f.note === newNote).length;
   const out = [];
   const held = (accounts.get(id) || []).map(passageById);
@@ -1041,9 +1130,11 @@ function formsFor(id, title) {
     if (!form || stored.has(form.toLowerCase())) continue;
     const holder = held.find((p) => p && p.passage.includes(form));
     if (!holder) continue;
-    // Pass 3 already stored the spellings of Chapters I–VIII. Add a form only
-    // when the passage that prints it is in the chapters this pass reads.
-    if (!(holder.kind === 'body' && Number(holder.chapter) >= 9)) continue;
+    // Earlier passes stored the spellings they read. Add a form only from this pass.
+    const inPass = book2Through
+      ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '1'
+      : holder.kind === 'body' && holder.book === '1' && Number(holder.chapter) >= 9;
+    if (!inPass) continue;
     stored.add(form.toLowerCase());
     out.push({ form, citation: `${cite(holder)}. The passage prints “${form}”.`, note: newNote });
   }

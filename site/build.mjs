@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { BOOKS as BLB_BOOKS, blbFromOsis, blbFromText } from '../scripts/blb.mjs';
 import { loadChronologicalTable, toCsv, toMarkdown, toXls, yearColumnIndex } from '../scripts/raleigh/table.mjs';
 import { renderProse } from '../scripts/raleigh/spelling.mjs';
-import { loadXml, extractPassages, alignStoredPassages, THROUGH_CHAPTER } from '../scripts/raleigh/xml-text.mjs';
+import { loadXml, extractPassages, alignStoredPassages, THROUGH_CHAPTER, BOOK2_THROUGH } from '../scripts/raleigh/xml-text.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmHtml, raleighRecordHtml, raleighRecordShort, showsItalicDerived, RALEIGH_DERIVED_NOTE, ITALICS_NOTE } from '../scripts/raleigh/derived-year.mjs';
 import { standbyCounts, standbySummaryLine } from '../scripts/standby/compute.mjs';
 import { isJones23, reignStartPhrase } from '../scripts/sort-rule.mjs';
@@ -41,7 +41,7 @@ const doreDoc = existsSync(join(DATA, 'illustrations/dore-1866.json')) ? readJSO
 const nameFormDoc = readJSON(join(DATA, 'name-forms.json'));
 const nameForms = Object.fromEntries((nameFormDoc.people || []).map((p) => [p.id, p.forms]));
 const raleighAccounts = readJSON(join(DATA, 'raleigh-accounts.json'));
-const raleighExtract = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER });
+const raleighExtract = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER, book2Through: BOOK2_THROUGH });
 const raleighAlignErrors = alignStoredPassages(raleighAccounts.passages, raleighExtract);
 if (raleighAlignErrors.length) {
   console.error(raleighAlignErrors.slice(0, 12).join('\n'));

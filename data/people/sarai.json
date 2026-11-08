@@ -59,6 +59,17 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"2827 2145 62\". The third printed figure 62 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "For Sarah died in the yeere of the world 2145.",
+        "year_am": 2145,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter I, §. IV, sig. 160a–160b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. Her death, the yeere of the World. The chronological table already prints 2145 (sig. 783a). The same sentence says Isaac was borne in the yeere 2109, which does not say yeere of the World, and that figure is already the table row on isaac. year_bc_ad stays null. This does not change the sort."
       }
     ]
   },
