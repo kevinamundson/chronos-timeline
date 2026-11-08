@@ -2,7 +2,7 @@
 
 Edition read: London, printed by William Stansby for Walter Burre, 1617. EEBO-TCP A10357. Working text: EarlyPrint unadorned XML (`sources/raleigh/A10357.earlyprint-unadorned.xml`). Doubtful readings were checked in `sources/raleigh/A10357.tcp-p5.xml`. Display only. `year_bc_ad` stays null. He gives no yeere of the World in the range of this pass, so these statements also have `year_am` null. The italic year is not computed when `year_am` is null.
 
-Range covered in pass 1: the Preface (sig. 3b–23a), the contents of the five books (sig. 23b–42b), and Book I, Part I, Chapter I, sections I–XV (sig. 43b–54a). Pass 2 is the section below. The next pass starts at Book I, Part I, Chapter VIII, §. I, sig. 111b.
+Range covered in pass 1: the Preface (sig. 3b–23a), the contents of the five books (sig. 23b–42b), and Book I, Part I, Chapter I, sections I–XV (sig. 43b–54a). Pass 2 and pass 3 are the sections below. The next pass starts at Book I, Part I, Chapter IX, §. I, sig. 136a.
 
 Statements written: 4, all on `creation-week`. People created: 0. Places created: 0. Events created: 0. Records updated: `creation-week` (four statements), `moses` (alternate name Moyses). Figures skipped: 15, quoted below.
 
@@ -64,7 +64,7 @@ These lines are section summaries of later chapters. They were not entered. The 
 
 # Pass 2
 
-Range covered: Book I, Part I, Chapter II, §. I, sig. 54a, through Chapter VII, §. X. Chapter VIII opens on sig. 111b. The next pass starts there.
+Range covered: Book I, Part I, Chapter II, §. I, sig. 54a, through Chapter VII, §. X. Chapter VIII opens on sig. 111b. Pass 3 begins there.
 
 Statements written: 27. People created: 0. Places created: 0. Events created: 0. One yeere of the World was stored, Rome at 3280, on `founding-of-rome`. The other statements are ages or lengths, so `year_am` is null. The Flood at 1656 and Jacob’s birth at 2169 were already entered from this book by the table importer. They were not entered again.
 
@@ -153,9 +153,9 @@ The chapter was read. The reigns in it are the stories he takes from Diodorus an
 ### Chapter VII
 
 - sig. 94b: “this Floud of Ogyges fell in the yeere of the World 3440. according to Eusebius” and “the Floud of Noah in the yeere 2242. after the same account” and “1200. yeeres betweene these Flouds, wanting but two”. He says Eusebius was much mistaken. Those are not his years. His own 580 and 613 are on `flood-of-ogyges`. His own Flood remains 1656.
-- sig. 94b: “hee liued but in Iacobs time … and was borne 67. yeeres after him”. Ogyges’s birth, not the flood. There is no Ogyges person. The flood event already has his later reckoning. See open question N6.
+- sig. 94b: “hee liued but in Iacobs time … and was borne 67. yeeres after him”. Ogyges’s birth, not the flood. Pass 2 made no Ogyges person. The flood event already has his later reckoning. Pass 3 entered the birth on `ogyges`. See open question N6.
 - sig. 95b–96a: other men’s years for Deucalion’s flood, set beside his own paragraph. “after Noah 753. yeeres, according to Functius, who makes Cecrops to liue in the yeere of the World 2409” and “if we follow MERCATOR, then 739. yeeres after Noah, and in the yeere of the World 2395” and “if Deucalion were borne in the age of the World 2356. according to Codoman” and “Deucalion by all approoued Historians is said to haue beene 82. yeeres olde”. He is comparing them. They were not entered as his.
-- sig. 96a: “Now Deucalion was borne in the yeere of the World 2356. and had liued 〈◊ 〉 yeeres, when his Kingdome of Thessalie was ouerwhelmed; ( which added to 2356. make 2438.) his Floud was after Noahs Floud ended 782. yeeres.” The age is illegible in both XML copies. 2356, 2438, and 782 are printed. No Deucalion person was created, and there is no event for his flood. See open question N5.
+- sig. 96a: “Now Deucalion was borne in the yeere of the World 2356. and had liued 〈◊ 〉 yeeres, when his Kingdome of Thessalie was ouerwhelmed; ( which added to 2356. make 2438.) his Floud was after Noahs Floud ended 782. yeeres.” The age is illegible in both XML copies. 2356, 2438, and 782 are printed. Pass 2 made no Deucalion person, and there is no event for his flood. Pass 3 entered the three printed figures on `deucalion`. See open question N5.
 - sig. 103b: “if we allow 65. yeeres time after the Floud, before Nimrod was borne” and the 30, the 30, the fiue, the 125, and the sixe yeeres of travel, “ere they arriued in Shinar in the yeere after the Floud 131”. This is the allowance in the argument. The 131 he adopts is already on `nimrod`. “those which make him to haue arriued at Shinaar in the yeere 101.” and “no confusion in that yeere 101. or at Pelegs birth” are the account he rejects. 101 was not entered.
 - sig. 104b: “Marcus Portius Cato, who auoweth that 250. yeares before Ninus, the earth was ouerflowne with waters”. Annius’s use of Cato. Not his yeere of the World. `ninus` already has the table reign.
 - sig. 105b: “the Scythians … entred into Asia … a little more then three hundred yeeres since” and “this Mathias liued in the yeere 1511.” and “printed at Augusta in the yeere 1506.” Mathias’s own century, and his report of a late migration. Not a yeere of the World for the Arke.
@@ -165,4 +165,58 @@ The chapter was read. The reigns in it are the stories he takes from Diodorus an
 
 - Chapter II and Chapter VI were read through. Nothing in them was given a year of his own.
 - sig. 103b: “was all that space 130. yeeres after the floud, without any certaine habitation”. He says this is no way probable. The 130 or 140 yeeres the earth lay waste is a different sentence and is on `the-flood`. The denied habitation was not entered.
-- The counterfactual months, the modern long lives, and the other chronologers’ world years were not made into people. The same rule as pass 1: a person is added when he gives a year, a length, or a reign of someone in the history, and an existing record receives it when one matches. Deucalion is the case left open, because the age word is illegible and no record exists.
+- The counterfactual months, the modern long lives, and the other chronologers’ world years were not made into people in pass 2. Pass 2 added a person when he gave a year, a length, or a reign of someone in the history, and an existing record received it when one matched. Pass 3, under Kevin’s ruling on N3 (2026-11-07), made a person for every named individual in this range. The years in this skipped list were not thereby entered. See the pass 3 section.
+
+# Pass 3
+
+Kevin’s rulings of 2026-11-07 are recorded in section N. N3 is option 2: a person for every named person, dated or not. An undated person has a null CFAH date, the note `pending CFAH reference`, tier `none`, and `sorting_year` null. A group was not split into invented individuals. The 1617 text is public domain, so the account may quote him in full. Each person and event the covered text discusses has those passages in `data/raleigh-accounts.json`.
+
+Range covered: the backfill is the Preface, the contents, and Book I, Part I, Chapters I–VII, which passes 1 and 2 had already read. The new chapter is Book I, Part I, Chapter VIII, §. I, sig. 111b, through Chapter VIII, §. XV, subsection VI, sig. 135b–136a. Chapter IX opens on sig. 136a. The heading is “CHAP. IX. Of the beginning and establishing of Gouernement.” This pass stops before that chapter.
+
+Statements written: 4, all on the two people pass 2 had left open. People created: 271 (230 first named in the backfill, 41 first named in Chapter VIII). Places created: 0. Events created: 0. Existing person and event files were not rewritten. Name forms added: 231 (147 on the new people, 84 on people who already had records). Accounts: 1389 passages, on 389 people and 5 events (`creation-week`, `the-flood`, `founding-of-babel`, `flood-of-ogyges`, `founding-of-rome`). Chapter VIII added no yeere of the World.
+
+## Statements written
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book I, Part I, Chapter VII, §. III, sig. 95b–96a | Now Deucalion was borne in the yeere of the World 2356. | deucalion (`year_am` 2356) |
+| Book I, Part I, Chapter VII, §. III, sig. 95b–96a | ( which added to 2356. make 2438.) | deucalion (`year_am` null; the age added to 2356 is 〈◊ 〉) |
+| Book I, Part I, Chapter VII, §. III, sig. 95b–96a | his Floud was after Noahs Floud ended 782. yeeres. | deucalion (`year_am` null; a length after Noah’s flood, not an event) |
+| Book I, Part I, Chapter VII, §. II, sig. 94b | was borne 67. yeeres after him | ogyges (`year_am` null; “him” is Jacob, in the same sentence) |
+
+`year_bc_ad` is null on each. `sorting_year` is null. No flood of Deucalion was made. Functius, Mercator, Codoman, and the historians’ 82 were not entered. Eusebius’s 3440 was not entered. The 580 and the 613 stay on `flood-of-ogyges`.
+
+## Chapter VIII, years that were not entered
+
+The only new “yeere of the World” in this chapter is Phaleg’s birth. Book I, Part I, Chapter VIII, §. III, sig. 113a: “was( if the diuision were made at Phalegs birth) in the yeere of the World 1757. or 1758.” The chronological table already stored World 1758 on `peleg`. 1757 was not added as a second Raleigh year. The note already on that entry says so.
+
+These are other men’s years, lengths, or an illegible gap. They were not stored as a yeere of the World.
+
+- sig. 111b–112a: “it appeareth to me that Iaphet was the eldest.” A conclusion about birth order. No year.
+- sig. 113a–114a: Gomer “did in the tenth yeere of Nimrods reigne” if Berosus and Annius are believed. Their year, which he offers as theirs. Glycas’s “fortie yeeres” for the tower, and “400. yeeres” for the temple of Diana, are lengths he is comparing. They were not added again. The forty years is already on `founding-of-babel` from Chapter VII.
+- sig. 116b–117a: Annius’s Noah, surnamed Ianus, “liued 92. yeeres” in Italy. He says Moses’s silence is enough to disprove it. Not entered. “all the Kings of the Latines ( before Aeneas) consumed but 150. yeeres” is Eusebius, which he sets aside. “from Noah to Aeneas arriuall into Italie there past 1126.” is the least Hebrew rate he is using in that comparison, not a new yeere of the World.
+- sig. 116b–117a: Ianus of Italy “liued at once with Ruth, who marryed Booz, in the Worlds yeere( as some reckon) 2717. after the floud 1064. and Noah dyed 350. yeeres after the 〈◊ 〉.” The 2717 is some other men’s reckoning. The word after “after the” is illegible, so 350 was not stored. “there past betweene Ianus of Italie and Noah surnamed Ianus 704. yeeres” was not stored. `ianus` is a person, kept apart from Noah. See N8.
+- sig. 120b–121a: “the Macedonian, the Sonne of PHILIP, went forth of the Land of Cethim, and slew DARIVS King of the Persians and Medes.” No year. Not attached to `darius-d31`. See N2.
+- sig. 123b: “not discouered in 2000. yeeres after”. He is refusing the reading. Not a yeere of the World.
+- sig. 124b: Aegyptus and Danaus, “which happened 877. yeeres after the floud, in the time of Iosua, as S. Augustine coniectureth out of Euscbius.” Augustine’s conjecture out of Eusebius. Not his yeere of the World.
+- sig. 125a: Mercator puts Saltis and the shepherds “in the yeere of the World 1846. which Eusebius findeth in the Worlds age 2140.” Their years. `saltis` is a person. No year of Raleigh’s was taken for him.
+- sig. 125b–126a: Semiramis’s army “of 1300000. Footmen, and 500000. Horsemen”, and Ninus against Zoroaster “at 1700000. Footmen, and 200000. Horsemen”. Counts of soldiers, reported from those authors.
+- sig. 127a–127b: Annius finds the report “reach to the time of Enosh, who was borne 1034. yeeres before the Floud”. Annius’s figure. 1034 was not added to a yeere of the World.
+- sig. 131a–131b: the Philistines “mastered the Israelites at seuerall times aboue 150. yeeres”. A length. No event was made for it.
+- sig. 133b: Zoroaster “made resistance with foure hundred thousand”. A count of men, from the story of Ninus.
+
+Scripture he recites in this chapter (Noah begat at 500, the flood in the 600th year, Shem, Arphaxad, and the rest) was not copied on again. The Flood remains 1656. Babel’s 131 after the flood stays the figure already on `nimrod`.
+
+## Names
+
+A named individual received a person when no record already held that name. The title is a spelling he prints. An all-caps name with no mixed-case spelling is titled by writing v as u and capitalising the first letter, which is how `ianus` is titled from IANVS. `boethius` is titled Boeyius because the page prints BOEYIVS, and it was not retitled Boethius. `tirhakah` is titled Thirrbakeh, which the page prints. Zerah is a spelling the page also prints.
+
+These were not made into people: God, Jehovah (the page prints IEHOVAH inside a Latin sentence of Vatablus), and the Holy Ghost. Christ is `christ`, with no birth year, and he is not linked to the Gospel events. See N7.
+
+`meshech` already existed, as Japheth’s son. Chapter VIII, §. VII, sig. 118b–119a, says “betweene Mesech the sonne of Aram, and Meshech( or Mosoch) the sonne of Iapheth, there is little difference in name”. The son of Aram was not given a second record. See N11.
+
+One record was kept where splitting the name would invent a distinction: `john` (Iohn), `henry`, `francis`, `frederick`, `alphonso`. “Henry the seauenth” is on `henry-vii`. `henry` holds “Prince Henry, the successiue hope”, and it also holds the paragraph that says “the same King Henry” after “King Henry the eight”; that paragraph is on `henry-viii` as well. `frederick` is “his brother Don Frederick”. `alphonso` is “Don Alphonso Prince of Portugall”. `francis` is the son in “Francis Charles, Henry, and Hercules”. `niger` is the one small-caps name in Chapter III, §. IX, sig. 68a–68b, and it is not `marius-niger`. `hicromes` is not `jerome` (Hierome). `eliam` is not `elijah` (Elias). `gregorie` is not `gregory-nazianzen`. `adonis` is both “a riuer of Phoenicia” and the figure who is lamented. `simoni` is the dative in the contents line “SIMONI DEO SANCTO”. See N9 and N10.
+
+The two Infants of Arragon were not made into two people. “many” kings of Arcadia were not made into people. Chapter VIII, §. XV, subsection III, sig. 133b, says Ninus “crucified Pharnus the King thereof, with his Wife and seuen Children”. Pharnus is a person. The wife and the seven children are not named, so they were not made into people. Ham and Cham were not merged: a sentence that also names Noah’s sons is on `ham`; `cham` received no passage from this range. A bare Darius, Philip, Xerxes, Sheba, Havilah, Demetrius, Nilus, or Abimelech was not attached by the bare name.
+
+The Duke of Parma, Ferdinand, and Isabel are people. The treaty at Cambrai in 1559, the contrary-to-fact year 1588, and the Moors’ eight hundred years in Granada were not made into events or reigns. N1 stays open. No new event was created.

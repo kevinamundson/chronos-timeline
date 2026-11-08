@@ -1176,7 +1176,7 @@ Where the editions differ, the 2019 value is one sub-row under the Ussher–Jone
 
 - **Recommendation:** keep this. Do not let the 21st edition set a sort.
 
-## N. Raleigh body, pass 1 (2026-11-07)
+## N. Raleigh body (2026-11-07)
 
 The Preface (sig. 3b–23a), the contents (sig. 23b–42b), and Book I, Part I, Chapter I (sig. 43b–54a) were read. Four creation-day statements are on `creation-week`. Nothing else was given a year. The quotes and the resume point are in `data/raleigh-body-extract.md` and `docs/raleigh-body-pass-log.md`.
 
@@ -1200,7 +1200,7 @@ The Preface (sig. 3b–23a), the contents (sig. 23b–42b), and Book I, Part I, 
 
 ### N2. Darius who begged water
 
-- **Why it matters:** Preface, sig. 16a–16b, says God “gaue vnto Darius the part of the greatest Emperour, and the part of the most miserable begger, a begger begging water of an Enemie”. No year and no length. `darius-d31` is the Cory thirty-first-dynasty king, and the note there already says he is not Darius son of Hystaspes. The sentence was not attached.
+- **Why it matters:** Preface, sig. 16a–16b, says God “gaue vnto Darius the part of the greatest Emperour, and the part of the most miserable begger, a begger begging water of an Enemie”. No year and no length. `darius-d31` is the Cory thirty-first-dynasty king, and the note there already says he is not Darius son of Hystaspes. The sentence was not attached. Book I, Part I, Chapter VIII, §. IX, sig. 120b–121a, reports that “the Macedonian, the Sonne of PHILIP, went forth of the Land of Cethim, and slew DARIVS King of the Persians and Medes.” That Darius is Alexander’s opponent. It was not attached to `darius-d31`, and no second Darius was made. `darius-d31` has no Raleigh account from this range.
 - **Options:**
   1. Leave it unattached, as now.
   2. Attach the sentence to `darius-d31` as a Raleigh note with no year.
@@ -1208,11 +1208,17 @@ The Preface (sig. 3b–23a), the contents (sig. 23b–42b), and Book I, Part I, 
 
 ### N3. Names with no year
 
-- **Why it matters:** Chapter I names many fathers and philosophers, and the Preface names many princes, without a year, an age, or a reign. They were not made into people. Moyses was added only as a spelling on the existing `moses`.
-- **Options:**
-  1. Keep making a person only when he gives a year, a length, or a reign, as in this pass.
-  2. Make a person for every name, with a null CFAH date and no sort year.
-- **Recommendation:** option 1. A person with no figure from him is a name list, not a chronology.
+- **Answered 2026-11-07, option 2.** Make a person record for every person Raleigh names, dated or not. An undated person gets a null CFAH date, the note `pending CFAH reference`, tier `none`, and `sorting_year` null, as the undated Shuckford people do. Check for an existing record or name form first. Do not split a group into invented individuals. A named individual only.
+- **What was done:** 271 people were added from the Preface, the contents, and Book I, Part I, Chapters I–VIII. 230 are first named before Chapter VIII. 41 are first named in Chapter VIII. Existing person files were not rewritten. The passages that name a person are on that page, from `data/raleigh-accounts.json`.
+- **Still open inside this ruling:** N7 to N11. A bare name that could be two people was not split.
+
+### Ruling B. Quote length
+
+- **Answered 2026-11-07.** The 1617 text is public domain. The EarlyPrint and EEBO-TCP transcriptions in `sources/raleigh/` are CC0. There is no quote-length limit for Raleigh. AGENTS.md section 5 says the short-quote rules apply to copyrighted works only.
+
+### Ruling C. Raleigh’s account on the page
+
+- **Answered 2026-11-07.** Every person and event the covered text discusses has a `<details>` section, closed by default, summary “Raleigh’s account”. The passages are his words, in book order, each cited by book, part, chapter, section, and signature. Original spelling is in the page. Modern spelling is the default, with the same toggle as the chronological table. The passages are stored once in `data/raleigh-accounts.json`, and `accounts` maps a record id to passage ids. Kevin approved that file (`schema/raleigh-accounts.schema.json`). `scripts/validate.mjs` requires each passage to occur verbatim in `sources/raleigh/A10357.earlyprint-unadorned.xml` after notes and tags are removed and whitespace is collapsed. Example pages: `/events/creation-week/` and `/people/moses/`. The check covers Chromium and WebKit.
 
 ### N4. The illegible word in Chapter I, §. IX
 
@@ -1226,16 +1232,55 @@ Pass 2 read Book I, Part I, Chapter II, §. I, sig. 54a, through Chapter VII. Tw
 
 ### N5. Deucalion’s yeere of the World 2356
 
-- **Why it matters:** Book I, Part I, Chapter VII, §. III, sig. 96a, in his own paragraph: “Now Deucalion was borne in the yeere of the World 2356. and had liued 〈◊ 〉 yeeres, when his Kingdome of Thessalie was ouerwhelmed; ( which added to 2356. make 2438.) his Floud was after Noahs Floud ended 782. yeeres.” The age word is illegible in both XML copies. 2356, 2438, and 782 are printed. The lines just before it are other men’s years (Functius, Mercator, Codoman, and the historians’ 82), and those were not entered. There is no Deucalion person. `misphragmuthosis` already says no Deucalion record is created, because the flood named there is not the Genesis Flood. A new event cannot take a sort year from Raleigh, so his flood was not made an event. The sentence stays in the extract.
-- **Options:**
-  1. Leave it in the extract. Do not make a person, and do not make a flood event.
-  2. Make `deucalion`, with `year_am` 2356, `year_bc_ad` null, and `sorting_year` null. Leave the illegible age out. Still do not make a flood event.
-- **Recommendation:** option 1. The age word is illegible, and an earlier intake already declined a Deucalion person. N3 still stands for a year he gives of someone who already has a record, or for a year whose record you ask for by name.
+- **Carried out as option 2, because of ruling A (2026-11-07).** Kevin did not answer this item in these words. Ruling A requires a person for every named person, and option 2 of this item is that person. Say if it should be undone.
+- **What was done:** `deucalion` exists. Book I, Part I, Chapter VII, §. III, sig. 95b–96a: “Now Deucalion was borne in the yeere of the World 2356.” is stored with `year_am` 2356, `year_bc_ad` null, and `sorting_year` null. The age word is still 〈◊ 〉 and was not stored. “( which added to 2356. make 2438.)” is stored with `year_am` null, because the age that produces 2438 cannot be read. “his Floud was after Noahs Floud ended 782. yeeres.” is stored with `year_am` null. No flood event was made. Functius, Mercator, Codoman, and the historians’ 82 were not entered.
 
 ### N6. Ogyges born 67 yeeres after Jacob
 
-- **Why it matters:** Book I, Part I, Chapter VII, §. II, sig. 94b: “hee liued but in Iacobs time … and was borne 67. yeeres after him”. That is Ogyges’s birth, not the flood. There is no Ogyges person. `flood-of-ogyges` already has his own 580 and his own 613 yeeres after the general Flood. Eusebius’s yeere of the World 3440 was not entered, because he says Eusebius was much mistaken.
+- **Carried out as option 2, because of ruling A (2026-11-07).** Kevin did not answer this item in these words. Ruling A requires the person. Say if it should be undone.
+- **What was done:** `ogyges` exists. Book I, Part I, Chapter VII, §. II, sig. 94b: “was borne 67. yeeres after him” is on that person, with `year_am` null, `year_bc_ad` null, and `sorting_year` null. “him” is Jacob, named in the same sentence. The birth was not put on `flood-of-ogyges`. Eusebius’s yeere of the World 3440 was not entered. His own 580 and his own 613 stay on the flood.
+
+Pass 3 also read Book I, Part I, Chapter VIII, and stopped at the end of that chapter. The quotes are in `data/raleigh-body-extract.md`. N1, N2, and N4 stay open.
+
+### N7. God, Jehovah, the Holy Ghost, and Christ
+
+- **Why it matters:** The covered text names the Holy Ghost, and it prints IEHOVAH inside a Latin sentence of Vatablus (Book I, Part I, Chapter III, §. IX, sig. 68a–68b). No person was made for God, for Jehovah, or for the Holy Ghost. Christ is named often. `christ` was made, with no birth year. He was not linked to `birth-of-jesus`, `death-and-resurrection-of-christ`, `baptism-of-jesus`, `jesus-begins-public-ministry`, or `jesus-at-the-temple-aged-twelve`.
 - **Options:**
-  1. Leave the birth in the extract. Do not make a person.
-  2. Make `ogyges`, with the 67 yeeres as a statement, `year_am` null, `year_bc_ad` null, and `sorting_year` null. Do not put the birth on the flood event.
-- **Recommendation:** option 1. The 67 is how long after Jacob he was born. It is not a yeere of the World, and the flood record is not his birth.
+  1. Leave the divine names off the person list. Keep `christ` as a display-only person, unlinked to those events.
+  2. Make person records for God, Jehovah, and the Holy Ghost as well.
+  3. Link `christ` to the Gospel events that already exist.
+- **Recommendation:** option 1. The Gospel events already have their own records. A link would say that Raleigh’s sentences are about those events, which this pass did not judge one by one.
+
+### N8. Ianus of Italy, and the years that were not entered
+
+- **Why it matters:** `ianus` was made and kept apart from Noah. Book I, Part I, Chapter VIII, §. V, sig. 116b–117a: he “liued at once with Ruth, who marryed Booz, in the Worlds yeere( as some reckon) 2717. after the floud 1064. and Noah dyed 350. yeeres after the 〈◊ 〉.” The 2717 is printed as some other men’s reckoning and was not stored as `year_am`. The word after “after the” is illegible, so 350 was not stored. Annius’s “liued 92. yeeres” in Italy, which Raleigh says Moses’s silence disproves, was not stored. “704. yeeres” between Ianus of Italy and Noah surnamed Ianus was not stored.
+- **Options:**
+  1. Keep `ianus` apart from Noah, and leave 2717, 350, 92, and 704 unentered, as now.
+  2. Store 2717 as his yeere of the World, with `year_bc_ad` null and `sorting_year` null, and say in the note that the words are “as some reckon”.
+  3. Treat this Ianus as Noah and do not keep a separate person.
+- **Recommendation:** option 1. He marks 2717 as someone else’s reckoning, and the 350 depends on a word that cannot be read.
+
+### N9. Bare names that were not attached, and merges that may be too coarse
+
+- **Why it matters:** A bare Darius, Philip, Xerxes, Sheba, Havilah, Demetrius, Nilus, or Abimelech was not attached by that word alone. Nilus is often the river, and the portal’s Nilus is an Egyptian king. Sheba and Havilah were attached only when the same passage names Joktan or Raamah, or Joktan or Cush. Abimelech of Gerar is `abimelech-of-gerar` when the passage also says Gerar or Philistim. Abimelech son of Gideon stayed on the existing record when the passage says Gideon. Ham is Noah’s son. A sentence that also names Noah, Shem, or Japheth is on `ham`. `cham`, the Egyptian table king, received no passage from this range. A sentence that did not show which Ham or Cham was meant was left off both.
+- **Also one record where the spelling was folded in:** bare Alexander onto `alexander-the-great`; bare Antiochus onto `antiochus-the-great`; Cainan and Cenan onto `kenan`; Hiram onto `hiram-of-tyre` (not `hiram-of-tyre-ii`); bare Ptolemy onto one `ptolemy`, with Philadelphus kept as `ptolemy-philadelphus`; bare Cecrops as a new `cecrops`, while “Cecrops the second” stays `cecrops-the-second`. Julius and Caesar go to `julius-caesar`.
+- **Options:**
+  1. Leave these attachments as they are, and split one only when you name the second person.
+  2. Detach the bare-name merges and leave those passages on no person until you say which one.
+- **Recommendation:** option 1. The passage is still on the page of the record it was attached to, so a wrong attachment can be moved without losing his words.
+
+### N10. One record where a repeated name was not split
+
+- **Why it matters:** Splitting these would invent a distinction the sentence does not make. Each is one person, and the account shows every passage. `john` (title Iohn) holds Don Iohn and “Duke Iohn of Burgoigne” with the other Iohns in the covered text. `henry` holds the Preface sentence “Prince Henry, the successiue hope”. The same record also received the paragraph that says “the same King Henry” after “King Henry the eight”; that paragraph is on `henry-viii` as well. “Henry the seauenth” is on `henry-vii` (the spelling is seauenth). `francis` is the Preface son in “Francis Charles, Henry, and Hercules”, besides `francis-i` and `francis-bacon`. `frederick` is “his brother Don Frederick” in the Preface, sig. 10b–11a. `alphonso` is “Don Alphonso Prince of Portugall”, Preface, sig. 11b. `niger` is one small-caps name in Chapter III, §. IX, sig. 68a–68b, kept apart from `marius-niger`; the river Niger was not made a person. `hicromes` (“in Saint Hicromes time”) is not `jerome`. `eliam` is not `elijah`. `gregorie` is not `gregory-nazianzen`. `adonis` is both a river of Phoenicia and the lamented figure. `simoni` is the printed dative “SIMONI DEO SANCTO”. The city called Enoch is “after the name of his first 〈◊ 〉” (Chapter VIII, §. XI, subsection IV, sig. 125b–126a). The son’s name is illegible, so no person was made from that gap.
+- **Options:**
+  1. Leave each as one record until you name the split.
+  2. Name the second person, and this intake will move the passages you mark.
+- **Recommendation:** option 1.
+
+### N11. Mesech the son of Aram
+
+- **Why it matters:** `meshech` already existed, as the son of Japheth. Book I, Part I, Chapter VIII, §. VII, sig. 118b–119a: “betweene Mesech the sonne of Aram, and Meshech( or Mosoch) the sonne of Iapheth, there is little difference in name”. Those sentences are on `meshech`. A second person was not made. The same spelling is also the place in Psalm 120. The existing file was not rewritten.
+- **Options:**
+  1. Leave the son of Aram on `meshech`, as now.
+  2. Make a separate person for Mesech the son of Aram, and move the sentences that say so.
+- **Recommendation:** option 1, until you want the son of Aram kept apart. Raleigh himself says the names are close, and the passage does not give him a yeere of the World.

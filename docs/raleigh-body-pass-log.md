@@ -74,6 +74,39 @@ Chapter VII, §. X (sig. 101b and 103b), gives Noah’s 600 yeeres before the Fl
 - Name forms added: 5
 - Figures skipped: 39 (15 in pass 1, 24 in pass 2)
 
+## Pass 3
+
+Kevin’s rulings of 2026-11-07, recorded in section N:
+
+- N3 is answered with option 2. A person record is made for every person Raleigh names, dated or not. An undated person gets a null CFAH date, the note `pending CFAH reference`, tier `none`, and `sorting_year` null. An existing record or name form is used first. A group is not split into invented individuals.
+- The 1617 text is public domain (CC0 transcription in `sources/raleigh/`). There is no quote-length limit for Raleigh. AGENTS.md section 5 says the short-quote rules apply to copyrighted works only.
+- Every person and event the covered text discusses has a closed `<details>` section, summary “Raleigh’s account”, with his passages in book order. The passages are stored once in `data/raleigh-accounts.json`. `scripts/validate.mjs` requires each passage to occur in the committed 1617 XML after whitespace is collapsed. The spelling toggle matches the chronological table. Example pages: `/events/creation-week/` and `/people/moses/`.
+
+The backfill is the Preface, the contents, and Book I, Part I, Chapters I–VII. The new chapter is Book I, Part I, Chapter VIII, §. I, sig. 111b, through Chapter VIII, §. XV, subsection VI, sig. 135b–136a. The same citation rules as passes 1 and 2. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. Chapter VIII printed one such year that was not already the table cell: 1757 or 1758 at Phaleg’s birth. The table cell on `peleg` is World 1758. 1757 was not entered as a second Raleigh year.
+
+N5 and N6 were carried out as option 2 of each item, because ruling A requires the person. Kevin did not answer N5 or N6 in those words. The notes say so, and section N says so, so he can correct them.
+
+### Counts
+
+- Dated statements written: 4 (three on `deucalion`, one on `ogyges`)
+- People created: 271 (230 first named in the Preface, the contents, or Chapters I–VII; 41 first named in Chapter VIII)
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0
+- Name forms added: 231 (147 on the new people, 84 on people who already had records)
+- Accounts: 1389 passages, on 389 people and 5 events (`creation-week`, `the-flood`, `founding-of-babel`, `flood-of-ogyges`, `founding-of-rome`)
+
+The statements and the Chapter VIII years that were not entered are quoted in `data/raleigh-body-extract.md`. No importer was re-run. The new people are display-only, and none of them has a standby placement.
+
+### Cumulative
+
+- Dated statements written: 35 (4 in pass 1, 27 in pass 2, 4 in pass 3)
+- People created: 271
+- Places created: 0
+- Events created: 0
+- Name forms added: 236 (5 through pass 2, 231 in pass 3)
+- Accounts: 1389 passages on 394 records
+
 ## RESUME POINT
 
-Book I, Part I, Chapter VIII, §. I, sig. 111b. The heading is “Of the first planting of Nations after the floud; and of the Sonnes of NOAH, SEM, HAM, and IAPHET, by whom the earth was repeopled.” Chapter VII ends as this chapter opens. Do not start again inside Chapter VII.
+Book I, Part I, Chapter IX, §. I, sig. 136a. The heading is “CHAP. IX. Of the beginning and establishing of Gouernement.” Chapter VIII ends as this chapter opens. Do not start again inside Chapter VIII.
