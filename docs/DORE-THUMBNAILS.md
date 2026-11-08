@@ -4,15 +4,17 @@ Thumbnails derived from the Archive.org item gustavedore (Gustave Doré, 1866), 
 
 Kevin (2026-10-29) relaxed "no images in the repo" for **thumbnails only**, so that pages load fast. Full-size display images still come from the Internet Archive IIIF Image API (v2 primary, v3 fallback). No full-size or medium image is committed, and there is no thumbnail for the 21 Apocrypha files (an x after the number).
 
-## Status (2026-10-29): 72 of 220 shipped, 148 pending
+## Status (2026-11-07): 220 of 220
 
-Archive.org's IIIF Image API returned HTTP 500/504 errors (or timed out) for most plates on 2026-10-29, so PR #25 ships the 72 thumbnails that were fetched (about 873 KB in all; the largest is 089.webp, 18.8 KB). The other 148 plates are recorded in `data/illustrations/dore-thumbs-pending.json` and, as a table, in [`docs/DORE-THUMBS-PENDING.md`](DORE-THUMBS-PENDING.md), which also says how to finish: run `npm run dore:thumbs` (it fetches only the missing ones), remove the fetched plates from the pending file, and when it is empty delete it and drop the validator allowance.
+PR #25 (2026-10-29) shipped 72 thumbnails (about 873 KB; the largest was 089.webp, 18.8 KB) after the Internet Archive IIIF Image API returned HTTP 500/504 or timed out for most plates that day. The other 148 were listed in `data/illustrations/dore-thumbs-pending.json` and in [`docs/DORE-THUMBS-PENDING.md`](DORE-THUMBS-PENDING.md).
 
-A pending plate has no thumbnail file and no `thumb_width`/`thumb_height`. Its record page keeps the reserved aspect-ratio box and the spinner until the IIIF image loads (and the Archive.org link if it fails); its gallery dot is a plain dot; on the index it loads a lazy 300 px IIIF image (v2, then v3), and if that fails the box stays, showing the file number and "Archive.org" inside the link.
+On 2026-11-07 those 148 were saved. 122 came from the IIIF Image API at 240 px (v2, then v3 when v2 failed). 26 returned HTTP 500 from both v2 and v3 at 240 px. Those 26 were encoded from the Archive.org original JPEG, at the same width and with the same WebP settings, and the originals were not kept. Every one of the 26 succeeded. The folder now holds 220 files, 2,719,314 bytes (about 2.59 MB). The largest is still 089.webp, 19,268 bytes (18.8 KB). The pending file was removed because the list is empty. [`docs/DORE-THUMBS-PENDING.md`](DORE-THUMBS-PENDING.md) names those 26 plates and records that none still fail.
+
+A plate with no thumbnail file and no `thumb_width`/`thumb_height` is still allowed only when a pending file lists it. Its record page keeps the reserved aspect-ratio box and the spinner until the IIIF image loads (and the Archive.org link if it fails); its gallery dot is a plain dot; on the index it loads a lazy 300 px IIIF image (v2, then v3), and if that fails the box stays, showing the file number and "Archive.org" inside the link. No plate is in that state now.
 
 ## What is stored
 
-- `site/static/img/dore/thumbs/NNN.webp`: one WebP per plate in `data/illustrations/dore-1866.json` (220 when complete; 72 now, see the status above), about 240 px wide, metadata stripped. The 3-digit name is the Archive.org file number.
+- `site/static/img/dore/thumbs/NNN.webp`: one WebP per plate in `data/illustrations/dore-1866.json` (220), about 240 px wide, metadata stripped. The 3-digit name is the Archive.org file number.
 - `site/build.mjs` copies `site/static/` to the site root, so a thumbnail is served at `/img/dore/thumbs/NNN.webp`.
 - `thumb_width` and `thumb_height` in `data/illustrations/dore-1866.json` are the pixel size of each WebP. Pages use them for the img width/height, so no layout shift. `scripts/dore/generate.mjs` keeps them when it rebuilds the file.
 

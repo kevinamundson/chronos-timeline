@@ -391,21 +391,17 @@ Answer by number, for example "A1: option 2". Nothing below has been guessed int
 
 ### C10. Doré plates that need a record (2026-10-29)
 - The 220 canonical Doré plates are linked only to people and events that already exist. Plates that need a record which does not exist (Jesus, Mary, Peter, Paul, Eve, Abel, and the others), and plates left unmatched because the scene or the name is ambiguous, are listed in `docs/DORE-SUGGESTED-RECORDS.md`.
-- The illustration file stores each link as `{ "id", "basis", "note"? }`. A person is `named-in-title` or `depicted` (the note says who is shown and where). An event is `event-depicted`. `in-scripture-passage` is not a basis: a person who is only named in the verse, and not drawn, is not linked. That rule is your ruling of 2026-10-29. The plate-by-plate decisions are in `docs/DORE-AUDIT.md`.
+- The illustration file stores each link as `{ "id", "basis", "note"? }`. A person is `named-in-title` or `depicted` (the note says who is shown and where). An event is `event-depicted`, or `named-in-title` when the file title names that event (Kevin, 2026-11-07, plate 113). `in-scripture-passage` is not a basis: a person who is only named in the verse, and not drawn, is not linked. That person rule is your ruling of 2026-10-29. The plate-by-plate decisions are in `docs/DORE-AUDIT.md`.
 - **Options:**
   1. Leave the gaps as a list (as now). Add a person or an event only when you ask for that record.
   2. Add the suggested records in a later pass, still without changing any sort year.
 - **Recommendation:** option 1 until you mark which names to add.
 
-### C11. Two Doré plates whose picture and event do not use the same passage (2026-10-29)
-- Plate 113, "Artaxerxes Grants Freedom to the Jews". `scripture_ref` is null because Ezra 7 and Nehemiah 2 both fit the title. `artaxerxes-decree` cites Neh 2:1, the cupbearer's private request in the twentieth year, and its note will not choose Artaxerxes Longimanus or Artaxerxes Mnemon. The plate, viewed at 400px, is a king on a throne proclaiming to a crowd in a square. It is not linked to `artaxerxes-decree` or to `artaxerxes-longimanus`.
-- Plate 189 is the Luke 2 nativity: Mary, the infant, Joseph with a staff, shepherds and animals in a stable. `birth-of-jesus` cites Matt 2:1–23. The event link is kept. The event record was not edited.
+### C11. Two Doré plates whose picture and event do not use the same passage — answered 2026-11-07
+- Plate 113, "Artaxerxes Grants Freedom to the Jews". `scripture_ref` is null because Ezra 7 and Nehemiah 2 both fit the title. `artaxerxes-decree` cites Neh 2:1, the cupbearer's private request in the twentieth year, and its note will not choose Artaxerxes Longimanus or Artaxerxes Mnemon.
+- Plate 189 is the Luke 2 nativity: Mary, the infant, Joseph with a staff, shepherds and animals in a stable. `birth-of-jesus` cites Matt 2:1–23.
 - Plates 121–123 are linked to the Esther events you named. The pictures are the next moment in each chapter (Vashti's refusal; Mordecai's parade; Esther accusing Haman). Those are recorded in `docs/DORE-AUDIT.md`. They are not a question.
-- **Options:**
-  1. Leave 113 unmatched and keep the 189 link (as now).
-  2. Link plate 113 to `artaxerxes-decree` anyway, or add an Ezra 7 decree once you choose the king.
-  3. Later, widen `birth-of-jesus` to include Luke 2, or add a nativity event. Not in this pass.
-- **Recommendation:** option 1 until you say otherwise.
+- **Kevin's ruling, 2026-11-07:** Plate 113 is linked to the existing event `artaxerxes-decree` with basis `named-in-title`. The caption names Artaxerxes granting freedom, and that event is the Artaxerxes decree. `scripture_ref` stays null. `artaxerxes-longimanus` and `artaxerxes-mnemon` are not linked. No person or event was created, and the event record was not edited. Plate 189 keeps `birth-of-jesus` as it is. That event was not edited.
 
 ## D. Herodotus import (2026-10-18)
 

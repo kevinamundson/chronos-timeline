@@ -1,6 +1,6 @@
 # Doré correction audit (2026-10-29)
 
-Kevin's ruling: a person is linked to a plate only when Doré draws that person. The basis is `named-in-title` (the file title names the person, and that person is drawn) or `depicted` (the person is clearly the figure shown, with a short note of who and where). An event may still be linked when the plate draws that event (`event-depicted`). A person who is only named in the verse, and not drawn, is not linked. `in-scripture-passage` is rejected.
+Kevin's ruling: a person is linked to a plate only when Doré draws that person. The basis is `named-in-title` (the file title names the person, and that person is drawn) or `depicted` (the person is clearly the figure shown, with a short note of who and where). An event may still be linked when the plate draws that event (`event-depicted`), or when the file title names that event (`named-in-title`; Kevin, 2026-11-07, plate 113). A person who is only named in the verse, and not drawn, is not linked. `in-scripture-passage` is rejected.
 
 Each row below was decided in this pass. Plates in the re-audit were viewed before the link was kept or removed. The file requested first was the Archive.org IIIF v2 image at 600px. On this day many of those requests returned HTTP 500 or 504, so the same file was viewed on IIIF v3, or at 400px when 600px failed. The site still requests v2 first. Copies stayed in `/tmp/dore-audit/` and are not in the repo. Plates viewed below 600px: 025 and 029 (v2, 400px), 113 and 189 (v3, 400px).
 
@@ -11,16 +11,16 @@ Named-in-title links that were not on the removal list, and not Canaan on plate 
 | | Before | After |
 |---|---|---|
 | Plates in the data | 220 | 220 |
-| Plates with at least one link | 124 | 113 |
-| Unmatched | 96 | 107 |
-| Links | 206 | 157 |
+| Plates with at least one link | 124 | 114 |
+| Unmatched | 96 | 106 |
+| Links | 206 | 158 |
 | `event-depicted` | 68 | 71 |
 | `in-scripture-passage` | 63 | 0 |
 | `depicted` | 0 | 12 |
-| `named-in-title` | 75 | 74 |
-| Distinct records linked | 94 | 86 |
+| `named-in-title` | 75 | 75 |
+| Distinct records linked | 94 | 87 |
 
-Person links removed: 52. Event links added: 3. Person links kept and moved from `in-scripture-passage` to `depicted`: 12. Person and event files edited: 0. Sort diff against `origin/main`: 0.
+Person links removed: 52. Event links added: 4 (three `event-depicted` in the correction pass, and plate 113 as `named-in-title` on 2026-11-07). Person links kept and moved from `in-scripture-passage` to `depicted`: 12. Person and event files edited: 0. Sort diff against `origin/main`: 0.
 
 ## Removed on the correction list
 
@@ -110,7 +110,15 @@ Only records that already exist. No person id was invented.
 
 ## Not linked, left open
 
+These two rows are the 2026-10-29 pass. Kevin ruled on both on 2026-11-07. The rulings are at the end of this file.
+
 | Plate | Records not linked | Reason |
 |---|---|---|
-| 113 | artaxerxes-decree, artaxerxes-longimanus | The event cites Neh 2:1, the cupbearer's private request, and its note will not choose Longimanus or Mnemon. The title fits Ezra 7 and Nehemiah 2, so `scripture_ref` stays null. Viewed at 400px: a king on a throne proclaiming to a crowd in a square, not a private request. See C11. |
-| 189 | (event kept) | `birth-of-jesus` stays. Viewed at 400px: the nativity, with Mary, the infant, Joseph with a staff, shepherds and animals in a stable (Luke 2). The event cites Matt 2:1–23. The event record was not edited. See C11. |
+| 113 | artaxerxes-longimanus, artaxerxes-mnemon | Linked to `artaxerxes-decree`, basis `named-in-title`. The caption names Artaxerxes granting freedom, and that event is the decree. `scripture_ref` stays null. Neither king is linked. |
+| 189 | (event kept) | `birth-of-jesus` stays, basis `event-depicted`. Viewed at 400px: the nativity, with Mary, the infant, Joseph with a staff, shepherds and animals in a stable (Luke 2). The event cites Matt 2:1–23. The event record was not edited. Kevin kept this link on 2026-11-07. |
+
+## Kevin's rulings (2026-11-07)
+
+Plate 113, "Artaxerxes Grants Freedom to the Jews", is linked to the existing event `artaxerxes-decree` with basis `named-in-title`. The caption names Artaxerxes granting freedom, and that event is the Artaxerxes decree. `scripture_ref` stays null. `artaxerxes-longimanus` and `artaxerxes-mnemon` are not linked. No person or event was created, and the event record was not edited.
+
+Plate 189, "The Birth of Jesus", keeps its link to `birth-of-jesus` with basis `event-depicted`. The event record was not edited.

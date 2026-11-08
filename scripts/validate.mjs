@@ -609,7 +609,8 @@ let doreCount = 0;
         if (!records[r]) err(rel, `${tag}: record ${r} not found`);
         else if (!['person', 'event'].includes(records[r].kind)) err(rel, `${tag}: ${r} is a ${records[r].kind}; illustrations go on people and events`);
         else if (link.basis === 'event-depicted' && records[r].kind !== 'event') err(rel, `${tag}: ${r} is a person; event-depicted is for an event`);
-        else if (link.basis !== 'event-depicted' && records[r].kind !== 'person') err(rel, `${tag}: ${r} is an event; use event-depicted`);
+        else if (link.basis === 'depicted' && records[r].kind !== 'person') err(rel, `${tag}: ${r} is an event; depicted is for a person`);
+        else if (records[r].kind === 'event' && !['event-depicted', 'named-in-title'].includes(link.basis)) err(rel, `${tag}: ${r} is an event; use event-depicted, or named-in-title when the file title names that event`);
         if (link.basis === 'in-scripture-passage' || (records[r]?.kind === 'person' && !['named-in-title', 'depicted'].includes(link.basis))) {
           err(rel, `${tag}: ${r} person link basis "${link.basis}" is not allowed; use named-in-title or depicted`);
         }
