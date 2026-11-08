@@ -11,6 +11,7 @@ import { loadStandbyCounts, standbySummaryLine } from '../scripts/standby/comput
 import { SENNACHERIB_REDIRECT, redirectsFileHasSennacherib } from '../scripts/redirects.mjs';
 import { checkRowMerge } from './row-merge-check.mjs';
 import { checkFootnotes } from './footnote-check.mjs';
+import { spellingSelfCheck } from '../scripts/raleigh/spelling-check.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const SHOTS = join(here, 'screenshots');
@@ -22,6 +23,10 @@ const browser = stubIiif(await chromium.launch());
 const results = [];
 let failed = false;
 const check = (name, ok, detail = '') => { results.push(`${ok ? 'PASS' : 'FAIL'}  ${name}${detail ? ` — ${detail}` : ''}`); if (!ok) failed = true; };
+{
+  const spellingErrors = spellingSelfCheck();
+  check('raleigh spelling: letter rules and dictionary', spellingErrors.length === 0, spellingErrors.slice(0, 6).join(' | '));
+}
 {
   let rowErrors = [];
   try { rowErrors = checkRowMerge(join(here, 'dist')).errors; }
@@ -1041,19 +1046,22 @@ for (const [path, shot, sel] of [
       const errors = [];
       page.on('pageerror', (e) => errors.push(String(e)));
       const resp = await page.goto(BASE + path, { waitUntil: 'load', timeout: 60000 });
-      const closed = await page.locator('#raleigh-account details').evaluate((d) => !d.open && !d.hasAttribute('open'));
-      const summary = await page.locator('#raleigh-account > summary, #raleigh-account summary').first().innerText();
-      check(`${engine} ${tag}: Raleigh's account is closed`, resp.status() === 200 && closed && summary.trim() === "Raleigh's account" && errors.length === 0, errors.join(' | ') || summary);
-      await page.locator('#raleigh-account summary').click();
+      const closed = await page.locator('#raleigh-account details.raleigh-account').evaluate((d) => !d.open && !d.hasAttribute('open'));
+      const summary = await page.locator('#raleigh-account details.raleigh-account > summary').innerText();
+      const innersClosed = await page.locator('#raleigh-account details.raleigh-passage').evaluateAll((els) => els.length > 0 && els.every((d) => !d.open && !d.hasAttribute('open')));
+      check(`${engine} ${tag}: Raleigh's account is closed`, resp.status() === 200 && closed && summary.trim() === "Raleigh's account" && innersClosed && errors.length === 0, errors.join(' | ') || summary);
+      await page.locator('#raleigh-account details.raleigh-account > summary').click();
+      const phrasePart = page.locator('#raleigh-account details.raleigh-passage').filter({ hasText: phrase }).first();
+      await phrasePart.locator('summary').click();
       const spell = await page.evaluate((needle) => {
         const root = document.getElementById('raleigh-account');
-        const details = root.querySelector('details');
-        const original = root.querySelector('.spell-original');
-        const modern = root.querySelector('.spell-modern');
-        const found = [...root.querySelectorAll('.spell-original')].some((el) => el.textContent.includes(needle));
+        const details = root.querySelector('details.raleigh-account');
+        const part = [...root.querySelectorAll('details.raleigh-passage')].find((d) => d.textContent.includes(needle));
+        const original = part?.querySelector('.spell-original');
+        const modern = part?.querySelector('.spell-modern');
         return {
-          open: !!details?.open,
-          found,
+          open: !!details?.open && !!part?.open,
+          found: !!original,
           originalHidden: original ? getComputedStyle(original).display === 'none' : false,
           modernShown: modern ? getComputedStyle(modern).display !== 'none' : false,
           pressed: root.querySelector('[data-set-spelling="modern"]')?.getAttribute('aria-pressed'),
@@ -1063,8 +1071,9 @@ for (const [path, shot, sel] of [
       await page.locator('#raleigh-account [data-set-spelling="original"]').click();
       const orig = await page.evaluate((needle) => {
         const root = document.getElementById('raleigh-account');
-        const original = [...root.querySelectorAll('.spell-original')].find((el) => el.textContent.includes(needle));
-        const modern = root.querySelector('.spell-modern');
+        const part = [...root.querySelectorAll('details.raleigh-passage')].find((d) => d.textContent.includes(needle));
+        const original = part?.querySelector('.spell-original');
+        const modern = part?.querySelector('.spell-modern');
         return {
           originalShown: original ? getComputedStyle(original).display !== 'none' : false,
           modernHidden: modern ? getComputedStyle(modern).display === 'none' : false,
@@ -1080,6 +1089,97 @@ for (const [path, shot, sel] of [
   }
   await accountUi('chromium', browser);
   await accountUi('webkit', webkit);
+}
+{
+  async function popoutBox(page) {
+    return page.evaluate(() => {
+      const section = document.getElementById('raleigh-account');
+      const link = section?.querySelector('a.raleigh-popout');
+      const summary = section?.querySelector('details.raleigh-account > summary');
+      if (!section || !link || !summary) return null;
+      const lr = link.getBoundingClientRect();
+      const sr = section.getBoundingClientRect();
+      const sum = summary.getBoundingClientRect();
+      return {
+        inSummary: !!link.closest('summary'),
+        topDelta: Math.abs(lr.top - sum.top),
+        rightGap: sr.right - lr.right,
+        target: link.getAttribute('target'),
+        rel: link.getAttribute('rel') || '',
+        label: link.textContent.replace(/\s+/g, ' ').trim(),
+        href: link.getAttribute('href'),
+        overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+      };
+    });
+  }
+  async function nestedUi(engine, launcher) {
+    const own = launcher === browser ? null : stubIiif(await launcher.launch());
+    const b = own || browser;
+    const ctx = await b.newContext({ viewport: { width: 1280, height: 900 }, colorScheme: 'light' });
+    const page = await ctx.newPage();
+    const errors = [];
+    page.on('pageerror', (e) => errors.push(String(e)));
+    const resp = await page.goto(`${BASE}/people/adonis/`, { waitUntil: 'load', timeout: 60000 });
+    const outer = page.locator('#raleigh-account details.raleigh-account');
+    const inners = page.locator('#raleigh-account details.raleigh-passage');
+    const outerClosed = await outer.evaluate((d) => !d.open && !d.hasAttribute('open'));
+    const innerState = await inners.evaluateAll((els) => ({
+      n: els.length,
+      closed: els.every((d) => !d.open && !d.hasAttribute('open')),
+      first: (els[0]?.querySelector('summary')?.textContent || '').trim(),
+    }));
+    const box = await popoutBox(page);
+    const popOk = !!box && !box.inSummary && box.topDelta <= 16 && box.rightGap >= 0 && box.rightGap <= 36 && box.target === '_blank' && box.rel.includes('noopener') && box.label.includes('Open full text') && box.href === '/people/adonis/raleigh/';
+    check(`${engine} adonis: passages are closed dropdowns and the full-text link sits at the top right`, resp.status() === 200 && outerClosed && innerState.n >= 1 && innerState.closed && /sig\./.test(innerState.first) && popOk && errors.length === 0, JSON.stringify({ outerClosed, innerState, box, errors }));
+    await page.locator('#raleigh-account details.raleigh-account > summary').focus();
+    await page.keyboard.press('Enter');
+    const opened = await outer.evaluate((d) => d.open);
+    const stillClosed = await inners.evaluateAll((els) => els.every((d) => !d.open));
+    check(`${engine} adonis: Enter opens the account and leaves each passage closed`, opened && stillClosed);
+    const part = inners.filter({ hasText: 'riuer' }).first();
+    await part.locator('summary').click();
+    const modernText = await part.locator('p').innerText();
+    check(`${engine} adonis: modern spelling shows river`, /\briver\b/.test(modernText) && !/\briuer\b/.test(modernText), modernText.slice(0, 180));
+    await page.locator('#raleigh-account [data-set-spelling="original"]').click();
+    const originalText = await part.locator('p').innerText();
+    check(`${engine} adonis: original spelling keeps riuer`, /\briuer\b/.test(originalText) && !/\briver\b/.test(originalText), originalText.slice(0, 180));
+    await page.setViewportSize({ width: 390, height: 800 });
+    const mobile = await popoutBox(page);
+    const mobileOk = !!mobile && !mobile.inSummary && mobile.topDelta <= 16 && mobile.rightGap >= 0 && mobile.rightGap <= 36 && !mobile.overflow;
+    check(`${engine} adonis: full-text link stays at the top right on a narrow screen`, mobileOk, JSON.stringify(mobile));
+    if (engine === 'chromium') {
+      await page.setViewportSize({ width: 1280, height: 900 });
+      await page.locator('#raleigh-account [data-set-spelling="modern"]').click();
+      await page.locator('#raleigh-account').scrollIntoViewIfNeeded();
+      await page.screenshot({ path: join(SHOTS, 'raleigh-account-nested.png') });
+    }
+    const fullResp = await page.goto(`${BASE}${box.href}`, { waitUntil: 'load', timeout: 60000 });
+    const full = await page.evaluate(() => {
+      const root = document.getElementById('raleigh-full');
+      const back = [...document.querySelectorAll('a')].find((a) => a.getAttribute('href') === '/people/adonis/' && /Back to /.test(a.textContent));
+      return {
+        statusOk: !!root,
+        headings: root ? root.querySelectorAll('h2').length : 0,
+        details: root ? root.querySelectorAll('details').length : 0,
+        back: back?.textContent.trim() || '',
+        ignored: document.body.hasAttribute('data-pagefind-ignore'),
+      };
+    });
+    check(`${engine} adonis: full view lists every passage in the open`, fullResp.status() === 200 && full.statusOk && full.headings === innerState.n && full.details === 0 && full.back.startsWith('Back to ') && full.ignored, JSON.stringify(full));
+    const fullModern = await page.locator('#raleigh-full .raleigh-text').first().innerText();
+    check(`${engine} adonis full view: modern spelling shows river`, /\briver\b/.test(fullModern) && !/\briuer\b/.test(fullModern), fullModern.slice(0, 180));
+    await page.locator('#raleigh-full [data-set-spelling="original"]').click();
+    const fullOriginal = await page.locator('#raleigh-full .raleigh-text').first().innerText();
+    check(`${engine} adonis full view: original spelling keeps riuer`, /\briuer\b/.test(fullOriginal), fullOriginal.slice(0, 180));
+    if (engine === 'chromium') {
+      await page.locator('#raleigh-full [data-set-spelling="modern"]').click();
+      await page.screenshot({ path: join(SHOTS, 'raleigh-full-adonis.png'), fullPage: true });
+    }
+    await ctx.close();
+    if (own) await own.close();
+  }
+  await nestedUi('chromium', browser);
+  await nestedUi('webkit', webkit);
 }
 {
   const NOTE = "Derived by the portal from Raleigh's Creation in 4032 BC; Raleigh prints only the yeere of the World.";

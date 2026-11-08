@@ -581,7 +581,7 @@ function mapThumbs(ids) {
 }
 
 // ---------- layout ----------
-function page({ title, desc, body, path, pagefind = true, extraHead = '', scripts = '', type }) {
+function page({ title, desc, body, path, pagefind = true, pagefindIgnore = false, extraHead = '', scripts = '', type }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -596,7 +596,7 @@ function page({ title, desc, body, path, pagefind = true, extraHead = '', script
 <link rel="stylesheet" href="/assets/styles.css">
 ${extraHead}
 </head>
-<body>
+<body${pagefindIgnore ? ' data-pagefind-ignore' : ''}>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-inner">
@@ -619,7 +619,7 @@ ${extraHead}
   </div>
 </header>
 <script src="/assets/nav.js"></script>
-<main id="main" class="wrap"${pagefind ? ' data-pagefind-body' : ''}>
+<main id="main" class="wrap"${pagefind && !pagefindIgnore ? ' data-pagefind-body' : ''}>
 ${type ? `<span hidden data-pagefind-filter="type">${esc(type)}</span>` : ''}
 ${body}
 </main>
@@ -771,38 +771,95 @@ ${jsonScript('map-data', locations.filter((l) => l.lat != null && l.lng != null)
     scripts: `<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>${leafletScript}<script src="/assets/app.js" defer></script>` }));
 }
 
-function raleighAccount(recordId) {
-  const ids = raleighAccounts.accounts[recordId];
-  if (!ids?.length) return '';
-  const groups = [];
+const RALEIGH_INTRO = `Sir Walter Raleigh, <i>The History of the World</i> (1617). His words, in book order. <a href="https://texts.earlyprint.org/works/A10357.xml">EarlyPrint A10357</a>`;
+const RALEIGH_POPOUT = `<svg class="raleigh-popout-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6.5 2.5H3.2A1.2 1.2 0 0 0 2 3.7v9.1a1.2 1.2 0 0 0 1.2 1.2h9.1a1.2 1.2 0 0 0 1.2-1.2V9.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8.5 2h5.5v5.5M14 2 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+function raleighPassages(recordId) {
+  const ids = raleighAccounts.accounts?.[recordId];
+  if (!ids?.length) return [];
+  const list = [];
   for (const id of ids) {
     const passage = raleighPassageById[id];
-    if (!passage) continue;
-    const last = groups[groups.length - 1];
-    if (last && last.citation === passage.citation) last.items.push(passage);
-    else groups.push({ citation: passage.citation, items: [passage] });
+    if (passage) list.push(passage);
   }
-  if (!groups.length) return '';
-  const body = groups.map((g) => `<h3>${esc(g.citation)}</h3>${g.items.map((p) => `<p class="raleigh-passage"><span class="spell-modern">${esc(modernizeProse(p.passage))}</span><span class="spell-original">${esc(p.passage)}</span></p>`).join('')}`).join('\n');
-  return `<section class="card" id="raleigh-account" data-spelling="modern">
-<details class="raleigh-account">
-<summary>Raleigh's account</summary>
-<p class="small muted">Sir Walter Raleigh, <i>The History of the World</i> (1617). His words, in book order. <a href="https://texts.earlyprint.org/works/A10357.xml">EarlyPrint A10357</a></p>
-<div class="raleigh-toolbar"><div role="group" aria-label="Spelling"><button type="button" data-set-spelling="modern" aria-pressed="true">Modern spelling</button><button type="button" data-set-spelling="original" aria-pressed="false">Original spelling</button></div></div>
-${body}
-</details>
-<script>
-document.getElementById('raleigh-account')?.addEventListener('click', (event) => {
+  return list;
+}
+
+function spellingToolbar() {
+  return `<div class="raleigh-toolbar"><div role="group" aria-label="Spelling"><button type="button" data-set-spelling="modern" aria-pressed="true">Modern spelling</button><button type="button" data-set-spelling="original" aria-pressed="false">Original spelling</button></div></div>`;
+}
+
+function spellingScript(rootId) {
+  const id = JSON.stringify(rootId);
+  return `<script>
+document.getElementById(${id})?.addEventListener('click', (event) => {
   const button = event.target.closest('[data-set-spelling]');
   if (!button) return;
-  const root = document.getElementById('raleigh-account');
+  const root = document.getElementById(${id});
   const mode = button.getAttribute('data-set-spelling');
   if (mode !== 'modern' && mode !== 'original') return;
   root.dataset.spelling = mode;
   for (const el of root.querySelectorAll('[data-set-spelling]')) el.setAttribute('aria-pressed', el === button ? 'true' : 'false');
 });
-</script>
+</script>`;
+}
+
+function passageSpans(p) {
+  return `<p class="raleigh-text"><span class="spell-modern">${esc(modernizeProse(p.passage))}</span><span class="spell-original">${esc(p.passage)}</span></p>`;
+}
+
+function raleighAccount(recordId) {
+  const passages = raleighPassages(recordId);
+  const rec = byId[recordId];
+  if (!passages.length || !rec) return '';
+  const href = `${urlOf(rec)}raleigh/`;
+  const parts = passages.map((p) => `<details class="raleigh-passage"><summary>${esc(p.citation)}</summary>${passageSpans(p)}</details>`).join('\n');
+  return `<section class="card raleigh-spell" id="raleigh-account" data-spelling="modern">
+<a class="raleigh-popout" href="${esc(href)}" target="_blank" rel="noopener">${RALEIGH_POPOUT}<span>Open full text</span></a>
+<details class="raleigh-account">
+<summary>Raleigh's account</summary>
+<p class="small muted">${RALEIGH_INTRO}</p>
+${spellingToolbar()}
+${parts}
+</details>
+${spellingScript('raleigh-account')}
 </section>`;
+}
+
+function writeRaleighFullPages() {
+  let n = 0;
+  const missing = [];
+  for (const recordId of Object.keys(raleighAccounts.accounts || {})) {
+    const passages = raleighPassages(recordId);
+    if (!passages.length) continue;
+    const rec = byId[recordId];
+    if (!rec || (rec.type !== 'person' && rec.type !== 'event')) {
+      missing.push(recordId);
+      continue;
+    }
+    const back = urlOf(rec);
+    const blocks = passages.map((p) => `<h2>${esc(p.citation)}</h2>${passageSpans(p)}`).join('\n');
+    const body = `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/browse/#${DIRS[rec.type]}">${esc(TYPE_LABEL[rec.type])}s</a></li><li><a href="${esc(back)}">${esc(rec.title)}</a></li><li aria-current="page">Raleigh's account</li></ol></nav>
+<article id="raleigh-full" class="raleigh-spell" data-spelling="modern">
+<p class="small"><a href="${esc(back)}">Back to ${esc(rec.title)}</a></p>
+<h1>Raleigh's account of ${esc(rec.title)}</h1>
+<p class="small muted">${RALEIGH_INTRO}</p>
+${spellingToolbar()}
+${blocks}
+</article>
+${spellingScript('raleigh-full')}`;
+    out(`${DIRS[rec.type]}/${rec.id}/raleigh/index.html`, page({
+      title: `Raleigh's account of ${rec.title}`,
+      desc: `Sir Walter Raleigh's 1617 account of ${rec.title}, in book order.`,
+      body,
+      path: `${back}raleigh/`,
+      pagefind: false,
+      pagefindIgnore: true,
+    }));
+    n += 1;
+  }
+  if (missing.length) console.warn(`Raleigh full view skipped ${missing.length} ids with no person or event record: ${missing.slice(0, 8).join(', ')}`);
+  return n;
 }
 
 // Events
@@ -1179,6 +1236,8 @@ ${sourcesSection(p)}</article>`;
     scripts: `${familyScripts}${hasTl ? '<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>' : ''}<script src="/assets/app.js" defer></script>${doreScript(p.id)}` }));
 }
 
+const raleighFullCount = writeRaleighFullPages();
+
 // Locations
 for (const l of locations) {
   const has = l.lat != null && l.lng != null;
@@ -1359,7 +1418,7 @@ ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) =
 <h1>A Chronological Table</h1>
 <p class="lede">${spell(table.heading.original, table.heading.modern)}</p>
 <section class="card"><p>Sir Walter Raleigh, <i>The History of the World</i> (1617), sheets ${esc(table.signatures[0])}–${esc(table.signatures[1])}. ${src ? ext(src.url, esc(src.title)) : ''}</p>
-<p>The years are the Julian Period and the yeere of the World, as printed. Beside each confirmed yeere of the World this page adds the year of the World and an italic year, for example AM 1656 (<em>2377 BC</em>). ${esc(RALEIGH_DERIVED_NOTE)} His first yeere of the World is taken as 4032 BC: a year before Christ is 4033 minus that yeere, and a year of our Lord, once the count passes 4032, is the yeere of the World minus 4032. There is no year 0. Each end of a printed range is converted on its own. A figure that is illegible, a pair of numbers that do not differ by 682, or a yeere that is not one legible figure, stays as printed and is marked not derived. Two legible figures joined by “or” are each derived and marked. Modern spelling updates names and ordinary 1617 spellings. The figures stay as printed, including illegible marks.</p>
+<p>The years are the Julian Period and the yeere of the World, as printed. Beside each confirmed yeere of the World this page adds the year of the World and an italic year, for example AM 1656 (<em>2377 BC</em>). ${esc(RALEIGH_DERIVED_NOTE)} His first yeere of the World is taken as 4032 BC: a year before Christ is 4033 minus that yeere, and a year of our Lord, once the count passes 4032, is the yeere of the World minus 4032. There is no year 0. Each end of a printed range is converted on its own. A figure that is illegible, a pair of numbers that do not differ by 682, or a yeere that is not one legible figure, stays as printed and is marked not derived. Two legible figures joined by “or” are each derived and marked. Modern spelling is the same word-by-word modernization used in Raleigh's account. The figures stay as printed, including illegible marks.</p>
 <p>The Sig. column is the 1617 sheet. It is not a column of his table. <a href="/chronologies/#raleigh-history-of-the-world">Raleigh, The History of the World (1614/1617)</a></p>
 <div class="raleigh-toolbar">
 <div role="group" aria-label="Spelling">
@@ -1505,4 +1564,4 @@ writeFileSync(join(DIST, '_redirects'), redirectBody);
 mkdirSync(join(DIST, 'data'), { recursive: true });
 writeFileSync(join(DIST, 'data', 'person-timelines.json'), JSON.stringify(Object.fromEntries(Object.entries(personTimelines).map(([k, t]) => [k, t.none ? { none: true, notes: t.notes, standby: 0, standbyOwn: false } : { window: [t.start, t.stop], birthTier: t.birth?.tier || null, endTier: t.end?.tier || null, endKind: t.endKind, life: t.life ? { start: t.life.y, end: t.life.yEnd, label: t.life.label } : null, own: t.ownCount, context: t.ctxCount, standby: t.standbyCount, standbyOwn: !!t.standbyOwn, notes: t.notes, ownUndated: t.ownUndated.map((e) => e.id) }])), null, 1));
 const n = events.length + people.length + locations.length + maps.length;
-console.log(`Built ${n} record pages (${events.length} events, ${people.length} people, ${locations.length} places, ${maps.length} maps) + home, browse, chronologies, Raleigh chronological table, gallery (${charts.length} CFAH charts), about, search, 404 → ${DIST}`);
+console.log(`Built ${n} record pages (${events.length} events, ${people.length} people, ${locations.length} places, ${maps.length} maps), ${raleighFullCount} Raleigh full-text pages + home, browse, chronologies, Raleigh chronological table, gallery (${charts.length} CFAH charts), about, search, 404 → ${DIST}`);
