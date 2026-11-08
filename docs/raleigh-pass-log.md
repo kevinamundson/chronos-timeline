@@ -41,7 +41,7 @@ Imported from the 1617 chronological table. Raleigh is display-only. No sorting 
 - `ascatades` — Ascatades
 - `athalia` — Athaliah (Raleigh: Athalia)
 - `baleus` — Baleus
-- `balthasar` — Balthasar
+- `balthasar` — Balthasar (Raleigh: Belshazzar)
 - `belochus-priseus` — Belochus Priscus (Raleigh: Belochus Priseus)
 - `belochus-the-second` — Belochus II (Raleigh: Belochus the second)
 - `belopares` — Belopares
