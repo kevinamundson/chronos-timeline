@@ -1326,3 +1326,11 @@ Pass 4 read Book I, Part I, Chapter IX through Chapter XII, and stopped at “Fi
   1. Leave these without a new event, as now.
   2. Name an existing event that should receive one of them.
 - **Recommendation:** option 1. A new event cannot take a sort year from Raleigh.
+
+### N17. Words printed entirely in capitals, and Roman numerals
+
+- **Why it matters:** Kevin's reading rule of 2026-11-08 changes a word that begins with two capitals and then lowercase letters (`THat` to `That`) in the modern view only. It does not say what to do with a word printed entirely in capitals (`GOD`, `ABRAHAM`, `MOSES`) or with a Roman numeral (`II`, `IIII`, `XIV`). The modern view leaves both as printed. The spelling of an all-capital English word still updates, and the capitals stay: `VPON` becomes `UPON`, and `HATH` becomes `HAS`. A Roman numeral is not respelled.
+- **Options:**
+  1. Leave all-capital words and Roman numerals as printed, as now.
+  2. Reduce all-capital English words to a capital and lowercase (`GOD` to `God`) and say what should happen to Roman numerals and to headings such as `CHAP`.
+- **Recommendation:** option 1. The two-capital rule is a print habit. A word set entirely in capitals, and a numeral, may be a heading or a name, and reducing them would be a different decision.

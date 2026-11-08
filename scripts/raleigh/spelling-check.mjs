@@ -4,7 +4,8 @@
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { modernizeProse, modernizeWord } from './spelling.mjs';
+import { modernizeProse, modernizeWord, renderProse } from './spelling.mjs';
+import { extractPassages, loadXml, THROUGH_CHAPTER } from './xml-text.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..', '..');
@@ -75,8 +76,23 @@ const WORDS = [
   ['maiestie', 'majesty'],
   ['iust', 'just'],
   ['ioy', 'joy'],
-  ['hath', 'hath'],
-  ['doth', 'doth'],
+  ['hath', 'has'],
+  ['doth', 'does'],
+  ['saith', 'says'],
+  ['maketh', 'makes'],
+  ['goeth', 'goes'],
+  ['giueth', 'gives'],
+  ['sayeth', 'says'],
+  ['calleth', 'calls'],
+  ['seth', 'seth'],
+  ['Iapheth', 'Japheth'],
+  ['teeth', 'teeth'],
+  ['twentieth', 'twentieth'],
+  ['elizabeth', 'elizabeth'],
+  ['moneth', 'moneth'],
+  ['Geth', 'Geth'],
+  ['hundreth', 'hundreth'],
+  ['exisieth', 'exisieth'],
   ['then', 'then'],
   ['than', 'than'],
   ['of', 'of'],
@@ -86,7 +102,15 @@ const WORDS = [
   ['mix', 'mix'],
   ['the', 'the'],
   ['GOD', 'GOD'],
-  ['HOw', 'HOw'],
+  ['ABRAHAM', 'ABRAHAM'],
+  ['IT', 'IT'],
+  ['HOw', 'How'],
+  ['THat', 'That'],
+  ['ANd', 'And'],
+  ['THe', 'The'],
+  ['NOw', 'Now'],
+  ['AFter', 'After'],
+  ['BVt', 'But'],
   ['build', 'build'],
   ['fruit', 'fruit'],
   ['fruite', 'fruit'],
@@ -157,6 +181,16 @@ const SENTENCES = [
   ['&c. and euery sonne.', '&c. and every son.'],
   ['vs. the Latin mark', 'vs. the Latin mark'],
   ['Sic vos non vobis', 'Sic vos non vobis'],
+  ['THat HOw the riuer goeth.', 'That How the river goes.'],
+  ['what father for saketh the childe', 'what father forsakes the child'],
+  ['God fore-seeth and fore-telleth.', 'God foresees and foretells.'],
+];
+
+const ITALIC_HTML = [
+  ['Blame no man before he maketh THat.', [[0, 12]], true, '<em>Blame no man</em> before he makes That.'],
+  ['Blame no man before he maketh THat.', [[0, 12]], false, '<em>Blame no man</em> before he maketh THat.'],
+  ['he maketh good', [[3, 9]], true, 'he <em>makes</em> good'],
+  ['he maketh good', [[3, 9]], false, 'he <em>maketh</em> good'],
 ];
 
 export function spellingSelfCheck() {
@@ -176,6 +210,19 @@ export function spellingSelfCheck() {
   for (const word of ruleOnly) {
     const listed = new RegExp(`^\\s+${word}:`, 'm').test(spellingSrc);
     if (listed) errors.push(`${word} is a dictionary key, so it does not test the rules`);
+  }
+  for (const [raw, spans, modern, expected] of ITALIC_HTML) {
+    const got = renderProse(raw, spans, { modern });
+    if (got !== expected) errors.push(`italic ${JSON.stringify(raw)} → ${JSON.stringify(got)} (expected ${JSON.stringify(expected)})`);
+  }
+  const blame = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER })
+    .find((p) => (p.hi || []).some((h) => h.includes('Blame no man')));
+  if (!blame) errors.push('no 1617 passage contains the italic words Blame no man');
+  else {
+    const modern = renderProse(blame.passage, blame.italics, { modern: true });
+    const original = renderProse(blame.passage, blame.italics, { modern: false });
+    if (!modern.includes('<em>Blame no man</em>')) errors.push('modern view dropped the italic span on Blame no man');
+    if (!original.includes('<em>Blame no man</em>')) errors.push('original view dropped the italic span on Blame no man');
   }
   return errors;
 }

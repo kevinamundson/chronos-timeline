@@ -1182,6 +1182,53 @@ for (const [path, shot, sel] of [
   await nestedUi('webkit', webkit);
 }
 {
+  async function italicWord(page, rootId) {
+    return page.evaluate((id) => {
+      const root = document.getElementById(id);
+      if (!root) return { found: false };
+      const mode = root.dataset.spelling;
+      const sel = mode === 'original' ? '.spell-original em' : '.spell-modern em';
+      const em = [...root.querySelectorAll(sel)].find((el) => el.textContent.includes('Blame'));
+      if (!em) return { found: false, mode };
+      const parent = em.closest(mode === 'original' ? '.spell-original' : '.spell-modern');
+      return {
+        found: true,
+        mode,
+        italic: getComputedStyle(em).fontStyle === 'italic',
+        visible: !!parent && getComputedStyle(parent).display !== 'none',
+        text: em.textContent.replace(/\s+/g, ' ').trim().slice(0, 40),
+      };
+    }, rootId);
+  }
+  async function italicUi(engine, launcher) {
+    const own = launcher === browser ? null : stubIiif(await launcher.launch());
+    const b = own || browser;
+    const ctx = await b.newContext({ viewport: { width: 1280, height: 900 }, colorScheme: 'light' });
+    const page = await ctx.newPage();
+    const errors = [];
+    page.on('pageerror', (e) => errors.push(String(e)));
+    const resp = await page.goto(`${BASE}/people/seneca/`, { waitUntil: 'load', timeout: 60000 });
+    await page.locator('#raleigh-account details.raleigh-account > summary').click();
+    const part = page.locator('#raleigh-account details.raleigh-passage').filter({ hasText: 'Blame no man' }).first();
+    await part.locator('summary').click();
+    const modern = await italicWord(page, 'raleigh-account');
+    check(`${engine} seneca: an italic word is italic in the modern account`, resp.status() === 200 && modern.found && modern.mode === 'modern' && modern.italic && modern.visible && modern.text.includes('Blame') && errors.length === 0, JSON.stringify({ modern, errors }));
+    await page.locator('#raleigh-account [data-set-spelling="original"]').click();
+    const original = await italicWord(page, 'raleigh-account');
+    check(`${engine} seneca: the same italic word is italic in the original account`, original.found && original.mode === 'original' && original.italic && original.visible && original.text.includes('Blame'), JSON.stringify(original));
+    const fullResp = await page.goto(`${BASE}/people/seneca/raleigh/`, { waitUntil: 'load', timeout: 60000 });
+    const fullModern = await italicWord(page, 'raleigh-full');
+    check(`${engine} seneca full text: an italic word is italic in the modern view`, fullResp.status() === 200 && fullModern.found && fullModern.mode === 'modern' && fullModern.italic && fullModern.visible && fullModern.text.includes('Blame'), JSON.stringify(fullModern));
+    await page.locator('#raleigh-full [data-set-spelling="original"]').click();
+    const fullOriginal = await italicWord(page, 'raleigh-full');
+    check(`${engine} seneca full text: the same italic word is italic in the original view`, fullOriginal.found && fullOriginal.mode === 'original' && fullOriginal.italic && fullOriginal.visible && fullOriginal.text.includes('Blame'), JSON.stringify(fullOriginal));
+    await ctx.close();
+    if (own) await own.close();
+  }
+  await italicUi('chromium', browser);
+  await italicUi('webkit', webkit);
+}
+{
   const NOTE = "Derived by the portal from Raleigh's Creation in 4032 BC; Raleigh prints only the yeere of the World.";
   const ITALICS = 'Dates in italics are derived.';
   const o = await open('/events/the-flood/');

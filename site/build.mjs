@@ -7,7 +7,8 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { BOOKS as BLB_BOOKS, blbFromOsis, blbFromText } from '../scripts/blb.mjs';
 import { loadChronologicalTable, toCsv, toMarkdown, toXls, yearColumnIndex } from '../scripts/raleigh/table.mjs';
-import { modernizeProse } from '../scripts/raleigh/spelling.mjs';
+import { renderProse } from '../scripts/raleigh/spelling.mjs';
+import { loadXml, extractPassages, alignStoredPassages, THROUGH_CHAPTER } from '../scripts/raleigh/xml-text.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmHtml, raleighRecordHtml, raleighRecordShort, showsItalicDerived, RALEIGH_DERIVED_NOTE, ITALICS_NOTE } from '../scripts/raleigh/derived-year.mjs';
 import { standbyCounts, standbySummaryLine } from '../scripts/standby/compute.mjs';
 import { isJones23, reignStartPhrase } from '../scripts/sort-rule.mjs';
@@ -40,6 +41,13 @@ const doreDoc = existsSync(join(DATA, 'illustrations/dore-1866.json')) ? readJSO
 const nameFormDoc = readJSON(join(DATA, 'name-forms.json'));
 const nameForms = Object.fromEntries((nameFormDoc.people || []).map((p) => [p.id, p.forms]));
 const raleighAccounts = readJSON(join(DATA, 'raleigh-accounts.json'));
+const raleighExtract = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER });
+const raleighAlignErrors = alignStoredPassages(raleighAccounts.passages, raleighExtract);
+if (raleighAlignErrors.length) {
+  console.error(raleighAlignErrors.slice(0, 12).join('\n'));
+  throw new Error(`Raleigh italics: ${raleighAlignErrors.length} problem(s)`);
+}
+for (let i = 0; i < raleighExtract.length; i += 1) raleighAccounts.passages[i].italics = raleighExtract[i].italics;
 const raleighPassageById = Object.fromEntries(raleighAccounts.passages.map((p) => [p.id, p]));
 const kingListsOf = (id) => kingDoc.lists.filter((l) => l.entries.some((e) => e.person === id || e.event === id));
 
@@ -805,7 +813,8 @@ document.getElementById(${id})?.addEventListener('click', (event) => {
 }
 
 function passageSpans(p) {
-  return `<p class="raleigh-text"><span class="spell-modern">${esc(modernizeProse(p.passage))}</span><span class="spell-original">${esc(p.passage)}</span></p>`;
+  const spans = p.italics || [];
+  return `<p class="raleigh-text"><span class="spell-modern">${renderProse(p.passage, spans, { modern: true })}</span><span class="spell-original">${renderProse(p.passage, spans, { modern: false })}</span></p>`;
 }
 
 function raleighAccount(recordId) {

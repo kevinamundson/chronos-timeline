@@ -3,6 +3,9 @@
 // Person titles in the curated maps stay in agreement with scripts/raleigh/import.mjs.
 // Figures are never rewritten. Original spelling is the transcription, suspensions included.
 // A dictionary hit overrides the rules. The word list only accepts a candidate; it is not a source text.
+// Kevin, 2026-11-08: the modern view also turns third-person -eth into -s, and a word
+// printed with two capitals then lowercase (THat) into one capital (That).
+// Italics are not a spelling change. renderProse keeps an italic span on the modern word.
 import { readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -274,6 +277,10 @@ const IRREGULAR = {
   wilde: 'wild',
   yee: 'ye',
   unprobable: 'improbable',
+  // Irregular third person. The -eth rule does not see these endings. Kevin, 2026-11-08.
+  hath: 'has',
+  doth: 'does',
+  saith: 'says',
   neere: 'near',
   neerely: 'nearly',
   turkie: 'turkey',
@@ -288,6 +295,8 @@ const ARCHAIC = new Set([
   ...Object.keys(IRREGULAR),
   'shew', 'shewed', 'shewing', 'shewes', 'shewne', 'shewn',
   'sunn', 'farr', 'runn', 'neer', 'heer',
+  // Dictionary leftovers. The modern verb is the form without the extra e.
+  'hange', 'confronte',
 ]);
 
 // Real English words that end in a doubled consonant. An early-modern -ll
@@ -296,6 +305,8 @@ const KEEP_LL = new Set('all ball bell bill bull call cell doll dull ell fall fi
 
 const EXTRA_WORDS = [
   'has', 'does', 'doth', 'jews', 'judgement', 'judgements', 'acknowledgement', 'acknowledgements',
+  'contend', 'endeavor', 'endeavors',
+  'hang',
   'selves', 'italy', 'turkey',
   'favour', 'favours', 'favourable', 'favourite', 'favoured',
   'honour', 'honours', 'honourable', 'honoured',
@@ -570,7 +581,218 @@ function preferName(base) {
   return base;
 }
 
-function modernizeLower(lower, nextChar) {
+// Names, nouns, and ordinals that end in -eth. Not verbs, so the -eth rule leaves them.
+// Ashtaroth does not end in -eth. It is not in this set.
+const ETH_KEEP = new Set([
+  'seth', 'japheth', 'japhet', 'iapheth', 'heth', 'sheth',
+  'nazareth', 'elizabeth', 'elisabeth',
+  'teeth', 'moneth', 'hundreth',
+  'isboseth', 'ishbosheth', 'beth',
+  'shibboleth', 'sibboleth', 'macbeth', 'kenneth',
+  'geth', 'saketh', 'cheareth',
+]);
+
+// A printed -eth word whose modern verb is not the stem plus -s.
+const ETH_EXPLICIT = {
+  approcheth: 'approaches',
+  endeuoureth: 'endeavours',
+  endevoureth: 'endeavours',
+  maruaileth: 'marvels',
+  reprocheth: 'reproaches',
+  suteth: 'suits',
+  carieth: 'carries',
+  prophecieth: 'prophesies',
+  looseth: 'loses',
+  siegeth: 'besieges',
+  trauaileth: 'travels',
+  faineth: 'feigns',
+  fayneth: 'feigns',
+};
+
+// Kept, and listed as unsure. The letters do not identify one modern verb.
+const ETH_UNSURE = {
+  exisieth: 'kept: printed exisieth, not existeth',
+  heioyneth: 'kept: printed as one word; it reads as He joineth, and no space was added',
+  inholdeth: 'kept: no modern verb (the sun inholdeth the light)',
+  iyeth: 'kept: the token is Iyeth; the sentence reads as lieth, and the token was not rewritten',
+};
+
+const ETH_REASON = {
+  moneth: 'kept: noun month, not a verb',
+  hundreth: 'kept: noun hundred, printed hundreth, not a verb',
+  geth: 'kept: Philistine city, printed Geth',
+  saketh: 'kept: split from forsake (for saketh); the phrase is modernized, the bare token is not',
+  cheareth: 'kept: the brook Cherith, printed Riuer Cheareth',
+  teeth: 'kept: noun teeth',
+  seth: 'kept: name Seth',
+  japheth: 'kept: name Japheth',
+  japhet: 'kept: name Japheth',
+  iapheth: 'kept: name Japheth',
+  heth: 'kept: name Heth',
+  nazareth: 'kept: name Nazareth',
+  elizabeth: 'kept: name Elizabeth',
+  elisabeth: 'kept: name Elizabeth',
+  isboseth: 'kept: name Ishbosheth',
+};
+
+// Both the stem and the stem plus e are dictionary words. These stems are the verb.
+// The others ("hateth", "writeth", "citeth") take the form with e.
+const PREFER_BARE = new Set('appoint cast know pass spring visit cross teach do go say see run set cut put let tell fall call show'.split(' '));
+
+// twentieth, thirtieth, fortieth, and the same pattern. hundredth does not end in -eth.
+const ORDINAL_ETH = /^(?:twen|thir|for|fif|six|seven|eigh|nine|ten|eleven|twelf)tieth$/;
+
+// Headwords that are not verbs. A stem lookup must not turn "moneth" into "mones",
+// "liveth" into "livs", or "setteth" into "setts".
+const NOT_INFLECT = new Set('a i am an as at be he is it me my no of on or she so to we ye mone tee liv sak sett se di ly us ad cal'.split(' '));
+
+// Printed stems that are headwords but not the verb ("noteth" is note, not not).
+const NON_VERB_STEM = new Set('not but all and for nor yet its his her our the out off per via than then also into upon prophecy siege'.split(' '));
+
+function thirdPerson(inf) {
+  if (/(?:s|x|z|ch|sh|o)$/.test(inf)) return `${inf}es`;
+  if (/[^aeiou]y$/.test(inf)) return `${inf.slice(0, -1)}ies`;
+  return `${inf}s`;
+}
+
+function asVerb(inf) {
+  if (!inf || NOT_INFLECT.has(inf) || NON_VERB_STEM.has(inf) || !headword(inf)) return '';
+  return inf;
+}
+
+function protectedEth(word) {
+  const forms = [word, word.replace(/^i(?=[aeiou])/, 'j')];
+  for (const form of forms) {
+    if (ETH_KEEP.has(form)) return 'kept: exception list (name, noun, or ordinal)';
+    if (ORDINAL_ETH.test(form)) return 'kept: ordinal';
+  }
+  for (const form of forms) {
+    if (TITLES.has(form) || FORMS.has(form)) return 'kept: name on a person or a name form';
+  }
+  for (const form of forms) {
+    if (headword(form)) return 'kept: modern dictionary word';
+  }
+  return '';
+}
+
+// One printed word that may be a third-person -eth verb. Hath, doth, and saith are included.
+// `kept` means the modern view does not change the ending. `unsure` is for the review list.
+export function ethDecision(lower) {
+  ensureLexicon();
+  const word = String(lower || '').toLowerCase();
+  if (!word) return null;
+  if (word === 'hath') return { word, modern: 'has', kept: false, unsure: false, reason: 'irregular third person of have' };
+  if (word === 'doth') return { word, modern: 'does', kept: false, unsure: false, reason: 'irregular third person of do' };
+  if (word === 'saith') return { word, modern: 'says', kept: false, unsure: false, reason: 'irregular third person of say' };
+  if (ETH_EXPLICIT[word]) {
+    return { word, modern: ETH_EXPLICIT[word], kept: false, unsure: false, reason: `verb form ${ETH_EXPLICIT[word]}` };
+  }
+  if (ETH_UNSURE[word]) return { word, modern: word, kept: true, unsure: true, reason: ETH_UNSURE[word] };
+  if (!word.endsWith('eth')) return null;
+  const prepared = applyStems(orthographic(word));
+  // Only a leading consonantal i ("ioyneth"). Internal i→j would turn "mentioneth" into "mentjoneth".
+  const jForm = /^i[aeiou]/.test(prepared) ? `j${prepared.slice(1)}` : prepared;
+  const form = jForm.endsWith('eth') ? jForm : prepared;
+  const shield = protectedEth(form) || (form !== word ? protectedEth(word) : '');
+  if (shield) {
+    const reason = ETH_REASON[form] || ETH_REASON[word] || shield;
+    return { word, modern: form === word ? word : form, kept: true, unsure: false, reason };
+  }
+  if (!form.endsWith('eth') || form.length < 5) {
+    return { word, modern: form, kept: true, unsure: true, reason: 'kept: no dictionary verb' };
+  }
+  const stem = form.slice(0, -3);
+  // "setteth" and "runneth" double a consonant the infinitive does not.
+  // "calleth" and "addeth" are already the verb, so the doubled stem wins.
+  if (/(.)\1$/.test(stem)) {
+    const full = asVerb(modernizeLower(stem, '', { skipEth: true }));
+    const one = asVerb(modernizeLower(stem.slice(0, -1), '', { skipEth: true }));
+    if (one && !full) {
+      return { word, modern: thirdPerson(one), kept: false, unsure: false, reason: `verb ${one} → ${thirdPerson(one)}` };
+    }
+  }
+  const directInf = modernizeLower(stem, '', { skipEth: true });
+  const direct = (directInf.length >= 3 || directInf === 'go' || directInf === 'do') ? asVerb(directInf) : '';
+  const withE = asVerb(modernizeLower(`${stem}e`, '', { skipEth: true }));
+  if (direct && withE) {
+    const inf = PREFER_BARE.has(direct) ? direct : withE;
+    const tp = thirdPerson(inf);
+    return { word, modern: tp, kept: false, unsure: false, reason: `verb ${inf} → ${tp}` };
+  }
+  if (direct) return { word, modern: thirdPerson(direct), kept: false, unsure: false, reason: `verb ${direct} → ${thirdPerson(direct)}` };
+  if (stem.endsWith('y') && stem.length >= 2) {
+    const lie = asVerb(modernizeLower(`${stem.slice(0, -1)}ie`, '', { skipEth: true }));
+    if (lie) return { word, modern: thirdPerson(lie), kept: false, unsure: false, reason: `verb ${lie} → ${thirdPerson(lie)}` };
+  }
+  if (stem.endsWith('i') && stem.length > 2) {
+    const y = asVerb(modernizeLower(`${stem.slice(0, -1)}y`, '', { skipEth: true }));
+    if (y) return { word, modern: thirdPerson(y), kept: false, unsure: false, reason: `verb ${y} → ${thirdPerson(y)}` };
+  }
+  if (withE) return { word, modern: thirdPerson(withE), kept: false, unsure: false, reason: `verb ${withE} → ${thirdPerson(withE)}` };
+  // Early-modern spellings the letter rules do not reach. The first headword wins.
+  const respells = [];
+  const push = (s) => { if (s && !respells.includes(s)) respells.push(s); };
+  if (stem.endsWith('r') && !stem.endsWith('er')) push(`${stem.slice(0, -1)}er`);
+  if (stem.includes('ee')) {
+    push(stem.replaceAll('ee', 'i'));
+    push(stem.replaceAll('ee', 'ea'));
+    push(stem.replaceAll('ee', 'ie'));
+  }
+  if (stem.includes('ea')) push(stem.replaceAll('ea', 'ee'));
+  if (stem.includes('y')) push(stem.replaceAll('y', 'i'));
+  if (stem.includes('oo')) {
+    push(stem.replace('oo', 'o'));
+    push(`${stem.replace('oo', 'o')}e`);
+  }
+  if (/(.)\1/.test(stem)) {
+    const collapsed = stem.replace(/(.)\1/, '$1');
+    push(collapsed);
+    push(`${collapsed}e`);
+  }
+  if (stem.includes('w')) push(`${stem.replaceAll('w', 'u')}e`);
+  if (/[^aeiou]n$/.test(stem)) push(`${stem.slice(0, -1)}en`);
+  if (stem.endsWith('our')) push(`${stem.slice(0, -3)}or`);
+  if (stem.startsWith('im')) {
+    push(`em${stem.slice(2)}`);
+    push(`em${stem.slice(2)}e`);
+  }
+  if (stem.endsWith('ai')) push(`${stem.slice(0, -2)}ay`);
+  if (stem.endsWith('ist')) push(`${stem}er`);
+  if (stem.endsWith('roche')) push(`${stem.slice(0, -5)}roach`);
+  for (const candidate of respells) {
+    const inf = asVerb(modernizeLower(candidate, '', { skipEth: true }));
+    if (!inf) continue;
+    const tp = thirdPerson(inf);
+    return { word, modern: tp, kept: false, unsure: false, reason: `verb ${inf} → ${tp}` };
+  }
+  const extra = new Set();
+  if (stem.endsWith('yn')) extra.add(stem.slice(0, -2) + 'in');
+  if (stem.includes('eev')) extra.add(`${stem.replace('eev', 'iev')}e`);
+  if (stem.endsWith('eag')) extra.add(`${stem.slice(0, -3)}ege`);
+  if (stem.endsWith('ee')) extra.add(`${stem.slice(0, -2)}ie`);
+  const found = [];
+  for (const variant of extra) {
+    const inf = asVerb(modernizeLower(variant, '', { skipEth: true }));
+    if (!inf) continue;
+    const tp = thirdPerson(inf);
+    if (!found.some((row) => row.tp === tp)) found.push({ inf, tp });
+  }
+  if (found.length === 1) {
+    return { word, modern: found[0].tp, kept: false, unsure: false, reason: `verb ${found[0].inf} → ${found[0].tp}` };
+  }
+  if (found.length > 1) {
+    return {
+      word,
+      modern: word,
+      kept: true,
+      unsure: true,
+      reason: `unsure: ${found.map((row) => `${row.inf} → ${row.tp}`).join('; ')}`,
+    };
+  }
+  return { word, modern: form === word ? word : form, kept: true, unsure: true, reason: 'kept: no dictionary verb' };
+}
+
+function modernizeLower(lower, nextChar, opts = {}) {
   ensureLexicon();
   // "vs." is the abbreviation of versus. Bare "vs" in this book is the pronoun "us".
   if ((lower === 'vs' || lower === 'v.s') && nextChar === '.') return lower === 'v.s' ? 'v.s' : 'vs';
@@ -580,6 +802,12 @@ function modernizeLower(lower, nextChar) {
   const prepared = applyStems(orthographic(lower));
   const directPrepared = explicit(prepared);
   if (directPrepared) return directPrepared;
+  // The printed word, not the u/v form. ethDecision applies the letter rules itself,
+  // and the explicit -eth map is keyed on the printed spelling ("trauaileth").
+  if (!opts.skipEth && lower.endsWith('eth')) {
+    const decided = ethDecision(lower);
+    if (decided && !decided.kept && decided.modern) return decided.modern;
+  }
   const known = knownForm(prepared);
   if (known) return known;
   if (FORMS.has(lower) || FORMS.has(prepared)) return preferName(prepared);
@@ -633,6 +861,18 @@ function recase(src, dest) {
   return dest.charAt(0).toLowerCase() + dest.slice(1);
 }
 
+// Two capitals and then lowercase letters: "THat", "ANd". Not "IT", "GOD", or "XIV".
+export function isDoubledInitial(word) {
+  return /^[A-Z]{2}[a-z]+$/.test(word);
+}
+
+function applyDoubledInitial(printed, modern) {
+  if (!isDoubledInitial(printed)) return modern;
+  const lower = String(modern || '').toLowerCase();
+  if (!lower) return modern;
+  return lower.charAt(0).toUpperCase() + lower.slice(1);
+}
+
 // One printed word. nextChar keeps "vs." (versus) distinct from the pronoun "vs".
 export function modernizeWord(word, nextChar = '') {
   const bare = String(word).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ſ/g, 's');
@@ -642,7 +882,7 @@ export function modernizeWord(word, nextChar = '') {
   if (isRomanToken(bare)) return bare;
   const lower = bare.toLowerCase();
   if (!/[a-z]/.test(lower)) return word;
-  return recase(bare, modernizeLower(lower, nextChar));
+  return applyDoubledInitial(bare, recase(bare, modernizeLower(lower, nextChar)));
 }
 
 function replaceToken(word) {
@@ -686,11 +926,60 @@ export function modernizeCell(raw) {
 // Prose keeps the printed punctuation and spacing. Letter tokens are modernized.
 // A "1. Name, length" cell is not the shape of a paragraph, so this does not use that rule.
 export function modernizeProse(raw) {
-  const text = expand(String(raw ?? ''));
+  let text = expand(String(raw ?? ''));
   if (!text) return '';
+  // "for saketh" is forsake, printed with a space. The bare token saketh is not a verb.
+  text = text.replace(/for saketh/gi, 'forsakes');
+  // The hyphen splits the token, so the -eth rule would leave "fore-sees".
+  text = text.replace(/fore-seeth/gi, 'foresees');
+  text = text.replace(/fore-telleth/gi, 'foretells');
   const phrased = applyPhrases(text);
   return phrased.replace(/&[cC]\.?|\p{L}+/gu, (token, offset, whole) => {
     if (token.startsWith('&')) return token;
     return modernizeWord(token, whole[offset + token.length] || '');
   });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+function mergeSpans(text, spans) {
+  const clean = [];
+  for (const span of spans || []) {
+    if (!Array.isArray(span) || span.length < 2) continue;
+    const a = Math.max(0, span[0]);
+    const b = Math.min(text.length, span[1]);
+    if (a < b) clean.push([a, b]);
+  }
+  clean.sort((x, y) => x[0] - y[0] || x[1] - y[1]);
+  const merged = [];
+  for (const [a, b] of clean) {
+    const last = merged[merged.length - 1];
+    if (last && a <= last[1]) last[1] = Math.max(last[1], b);
+    else merged.push([a, b]);
+  }
+  return merged;
+}
+
+// Original or modern prose as HTML. An italic span stays on that stretch after spelling changes.
+// `spans` are [start, end] pairs into the stored passage, from the 1617 `<hi>` tags.
+export function renderProse(raw, spans, { modern = false } = {}) {
+  const text = String(raw ?? '');
+  const ranges = mergeSpans(text, spans);
+  let html = '';
+  let i = 0;
+  const piece = (s, italic) => {
+    if (!s) return '';
+    const body = modern ? modernizeProse(s) : s;
+    const escaped = escapeHtml(body);
+    return italic ? `<em>${escaped}</em>` : escaped;
+  };
+  for (const [a, b] of ranges) {
+    if (a > i) html += piece(text.slice(i, a), false);
+    html += piece(text.slice(a, b), true);
+    i = b;
+  }
+  if (i < text.length) html += piece(text.slice(i), false);
+  return html;
 }

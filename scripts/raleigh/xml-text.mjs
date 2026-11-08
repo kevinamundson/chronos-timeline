@@ -4,11 +4,17 @@
 // The covered range is the Preface, the contents, and Book I, Part I.
 // `throughChapter` is the last chapter of that book to include. Pass 3 stopped at VIII.
 // Pass 4 continues from IX. Book II is a later part and is not included.
+// `<hi>` is the 1617 italic (EarlyPrint leaves the rend off the unadorned file).
+// Each passage carries `italics` as [start, end] pairs into `passage`, derived here.
+// The plain `passage` string does not contain the tags.
 
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 export const XML_REL = 'sources/raleigh/A10357.earlyprint-unadorned.xml';
+
+/** Last Book I, Part I chapter stored in data/raleigh-accounts.json. */
+export const THROUGH_CHAPTER = 12;
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI', 'XXVII', 'XXVIII', 'XXIX', 'XXX', 'XXXI', 'XXXII', 'XXXIII', 'XXXIV', 'XXXV', 'XXXVI', 'XXXVII', 'XXXVIII', 'XXXIX', 'XL'];
 
@@ -65,6 +71,96 @@ function citationOf(loc, signature, signatureEnd) {
   return `${bits.join(', ')}, ${sig}`;
 }
 
+/**
+ * Collapse whitespace the same way as normalizeWs, and remember which output
+ * characters were inside `<hi>`. A whitespace run becomes italic only when
+ * every character in the run was inside `<hi>`, so a boundary space stays roman.
+ */
+export function composePassage(parts) {
+  const chars = [];
+  for (const part of parts) {
+    const decoded = decode(part.text).replace(/\u00a0/g, ' ');
+    for (const ch of decoded) chars.push({ ch, italic: part.italic });
+  }
+  const out = [];
+  let i = 0;
+  while (i < chars.length) {
+    if (/\s/u.test(chars[i].ch)) {
+      let j = i;
+      let allItalic = true;
+      while (j < chars.length && /\s/u.test(chars[j].ch)) {
+        if (!chars[j].italic) allItalic = false;
+        j += 1;
+      }
+      out.push({ ch: ' ', italic: allItalic });
+      i = j;
+    } else {
+      out.push(chars[i]);
+      i += 1;
+    }
+  }
+  while (out.length && out[0].ch === ' ') out.shift();
+  while (out.length && out[out.length - 1].ch === ' ') out.pop();
+  const passage = out.map((c) => c.ch).join('');
+  const italics = [];
+  let start = null;
+  for (let k = 0; k < out.length; k += 1) {
+    if (out[k].italic && start == null) start = k;
+    if (!out[k].italic && start != null) {
+      italics.push([start, k]);
+      start = null;
+    }
+  }
+  if (start != null) italics.push([start, out.length]);
+  return { passage, italics };
+}
+
+/** True when every character of [start, end) lies inside an italic span. */
+export function rangeIsItalic(italics, start, end) {
+  for (let i = start; i < end; i += 1) {
+    if (!italics.some(([a, b]) => i >= a && i < b)) return false;
+  }
+  return start < end;
+}
+
+/**
+ * Errors when a derived italic span does not match the `<hi>` text of this passage.
+ * `hiTexts` are the note-stripped, whitespace-normalised insides of each `<hi>`.
+ */
+export function italicCoverageErrors(passage, italics, hiTexts) {
+  const errors = [];
+  let prev = 0;
+  for (const span of italics || []) {
+    if (!Array.isArray(span) || span.length !== 2) {
+      errors.push('italic span is not a pair');
+      continue;
+    }
+    const [a, b] = span;
+    if (!Number.isInteger(a) || !Number.isInteger(b) || a < prev || a >= b || b > passage.length) {
+      errors.push(`italic span ${a}–${b} is out of order or out of range`);
+      continue;
+    }
+    prev = b;
+    if (!/\S/.test(passage.slice(a, b))) errors.push(`italic span ${a}–${b} is blank`);
+  }
+  for (const h of hiTexts || []) {
+    if (!h) continue;
+    let from = 0;
+    let covered = false;
+    while (from <= passage.length) {
+      const at = passage.indexOf(h, from);
+      if (at < 0) break;
+      if (rangeIsItalic(italics, at, at + h.length)) {
+        covered = true;
+        break;
+      }
+      from = at + 1;
+    }
+    if (!covered) errors.push(`<hi> text is not an italic span: ${h.slice(0, 80)}`);
+  }
+  return errors;
+}
+
 function location(stack, inBody, maxChapter) {
   let preface = false;
   let contents = false;
@@ -93,8 +189,8 @@ function location(stack, inBody, maxChapter) {
 /**
  * Walk the unadorned XML. `throughChapter` is the last Book I, Part I chapter to include
  * (the Preface and the contents are always included). Returns passages in book order.
- * Each passage carries `hi` (the italic or highlighted spans inside it) for name work.
- * Those spans are not a separate field in the account file.
+ * Each passage carries `hi` (the italic strings) and `italics` ([start, end] into `passage`).
+ * The account file stores the plain passage only. Build and validate derive the spans.
  */
 export function extractPassages(xml, { throughChapter = 12 } = {}) {
   const re = /<!--[\s\S]*?-->|<!\[CDATA\[[\s\S]*?\]\]>|<[^>]+>|[^<]+/g;
@@ -113,9 +209,16 @@ export function extractPassages(xml, { throughChapter = 12 } = {}) {
 
   const finish = () => {
     if (!cap) return;
-    const passage = normalizeWs(decode(cap.buf.join('')));
-    const hi = cap.hi.map((h) => normalizeWs(decode(h))).filter((h) => h.length > 0);
+    const composed = composePassage(cap.parts);
+    const shadow = normalizeWs(decode(cap.parts.map((p) => p.text).join('')));
+    const passage = composed.passage;
+    const hi = cap.hiRaw.map((h) => normalizeWs(decode(h))).filter((h) => h.length > 0);
+    const italics = composed.italics;
     cap = null;
+    hiStack = [];
+    if (passage !== shadow) {
+      throw new Error(`italic composer changed the passage text near sig. ${capSig}`);
+    }
     if (!/[A-Za-z0-9]/.test(passage)) return;
     const loc = capLoc;
     passages.push({
@@ -135,6 +238,7 @@ export function extractPassages(xml, { throughChapter = 12 } = {}) {
       ),
       passage,
       hi,
+      italics,
     });
   };
 
@@ -144,17 +248,17 @@ export function extractPassages(xml, { throughChapter = 12 } = {}) {
   let capSigEnd = null;
   let capPartLabel = null;
   let capChapterLabel = null;
-  let hiOpen = null;
+  let hiStack = [];
 
   const startCap = (element, loc) => {
-    cap = { buf: [], hi: [] };
+    cap = { parts: [], hiRaw: [] };
     capElement = element;
     capLoc = loc;
     capSig = sig;
     capSigEnd = sig;
     capPartLabel = loc.kind === 'contents' ? contentsPartLabel : null;
     capChapterLabel = loc.kind === 'contents' ? contentsChapterLabel : null;
-    hiOpen = null;
+    hiStack = [];
   };
 
   let m;
@@ -169,9 +273,6 @@ export function extractPassages(xml, { throughChapter = 12 } = {}) {
       if (local === 'note') {
         if (isEnd) noteDepth = Math.max(0, noteDepth - 1);
         else if (!tok.endsWith('/>')) noteDepth += 1;
-        if (hiOpen && noteDepth) {
-          /* a note inside a highlight ends the highlight's text at the note */
-        }
         continue;
       }
       if (noteDepth) continue;
@@ -198,9 +299,10 @@ export function extractPassages(xml, { throughChapter = 12 } = {}) {
       }
       if (local === 'hi') {
         if (!isEnd && !tok.endsWith('/>')) {
-          if (cap) hiOpen = cap.hi.length;
-          if (cap) cap.hi.push('');
-        } else if (isEnd) hiOpen = null;
+          if (cap) hiStack.push({ raw: [] });
+        } else if (isEnd && cap && hiStack.length) {
+          cap.hiRaw.push(hiStack.pop().raw.join(''));
+        }
         continue;
       }
       if (local === 'list') {
@@ -227,8 +329,11 @@ export function extractPassages(xml, { throughChapter = 12 } = {}) {
       continue;
     }
     if (noteDepth || !cap) continue;
-    cap.buf.push(tok);
-    if (hiOpen != null && cap.hi[hiOpen] != null) cap.hi[hiOpen] += tok;
+    const italic = hiStack.length > 0;
+    cap.parts.push({ text: tok, italic });
+    if (italic) {
+      for (const h of hiStack) h.raw.push(tok);
+    }
   }
   if (cap) finish();
 
@@ -296,4 +401,26 @@ export function normalizedDocumentText(xml) {
 
 export function loadXml(root) {
   return readFileSync(join(root, XML_REL), 'utf8');
+}
+
+/**
+ * The stored passage text must match the extract in order, and every `<hi>`
+ * string must sit inside a derived italic span. The account file does not store the spans.
+ */
+export function alignStoredPassages(stored, extracted) {
+  const errors = [];
+  if (!Array.isArray(stored) || stored.length !== extracted.length) {
+    errors.push(`1617 extract has ${extracted.length} passages; the account file has ${stored?.length ?? 0}`);
+    return errors;
+  }
+  for (let i = 0; i < stored.length; i += 1) {
+    const s = stored[i];
+    const e = extracted[i];
+    const id = s?.id || `#${i + 1}`;
+    if (e.passage !== s.passage) errors.push(`${id}: extracted text does not match the stored passage`);
+    if (e.citation !== s.citation) errors.push(`${id}: citation ${JSON.stringify(e.citation)} does not match the stored citation`);
+    if (e.signature !== s.signature) errors.push(`${id}: signature ${e.signature} does not match ${s.signature}`);
+    for (const msg of italicCoverageErrors(e.passage, e.italics, e.hi)) errors.push(`${id}: ${msg}`);
+  }
+  return errors;
 }

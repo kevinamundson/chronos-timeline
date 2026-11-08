@@ -2,6 +2,8 @@
 
 Raleigh stays display-only. No `sorting_year` and no tier was changed. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World.
 
+Modern reading, from 2026-11-08, applies to every passage below and to later passes. The original view is the printed text. The modern view keeps the 1617 italics (the unadorned `<hi>` tags, derived at build time, not stored), turns a third-person `-eth` verb into the modern third person, and reduces a doubled capital (`THat`) to one capital. Names, nouns, and ordinals in `-eth` stay. All-capital words and Roman numerals stay as printed (open question N17). The `-eth` list is `docs/raleigh-eth-words.md`.
+
 ## The table importer and body statements
 
 Pass 1 said the table importer would wipe body statements on the next run. The citation test in that version does not delete the four creation-week statements. Their citations say Book I, not Chronological Table, so the test leaves them.

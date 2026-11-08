@@ -347,6 +347,7 @@ cite.bu-link a { text-decoration: underline dotted; text-underline-offset: 3px; 
 .raleigh-passage > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 .raleigh-passage { margin: 0; border-top: 1px solid var(--sep); }
 .raleigh-text { margin: 0 0 16px; line-height: 1.55; }
+.raleigh-text em { font-style: italic; }
 .raleigh-passage > .raleigh-text { margin: 0 0 16px 18px; }
 #raleigh-full { max-width: 42rem; }
 #raleigh-full h2 { font-size: 16px; line-height: 1.35; margin: 22px 0 8px; }
