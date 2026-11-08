@@ -3334,6 +3334,16 @@
           "source_text_id": "stepbible-tipnr",
           "scripture_ref": "Gen.5.18",
           "note": null
+        },
+        {
+          "form": "lared",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §IV, sig. 82b. The passage prints “lared”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling in the body. The year on the person is a separate statement."
         }
       ]
     },
@@ -3637,6 +3647,16 @@
           "source_text_id": "stepbible-tipnr",
           "scripture_ref": "Gen.5.12",
           "note": null
+        },
+        {
+          "form": "Cenan",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §IV, sig. 82b. The passage prints “Cenan”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling in the body. The year on the person is a separate statement."
         }
       ]
     },
@@ -4127,6 +4147,16 @@
           "source_text_id": "stepbible-tipnr",
           "scripture_ref": "Gen.5.15",
           "note": null
+        },
+        {
+          "form": "Mahaleel",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §IV, sig. 82b. The passage prints “Mahaleel”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling in the body. The year on the person is a separate statement."
         }
       ]
     },
@@ -4390,6 +4420,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        },
+        {
+          "form": "Mathusalem",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §IV, sig. 82b. The passage prints “Mathusalem”, and §. VI, sig. 84b, prints it again.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling in the body. The year on the person is a separate statement."
         }
       ]
     },

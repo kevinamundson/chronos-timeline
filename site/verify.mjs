@@ -1249,12 +1249,14 @@ for (const [path, shot, sel] of [
       const row = (author) => table.querySelector(`tr[data-author="${author}"]`);
       const count = (author) => [...table.querySelectorAll('tr')].filter((tr) => tr.getAttribute('data-author') === author || tr.getAttribute('data-author-sub') === author).length;
       const raleigh = row('raleigh-history-of-the-world');
+      const raleighSub = table.querySelector('tr[data-author-sub="raleigh-history-of-the-world"]');
       const hales = row('hales');
       return {
         unique: new Set(authors).size === authors.length,
         raleighRows: count('raleigh-history-of-the-world'),
         raleighQuotes: raleigh ? raleigh.querySelectorAll('.date-quote').length : 0,
         raleighHtml: raleigh ? raleigh.innerHTML : '',
+        raleighSubText: raleighSub ? raleighSub.innerText : '',
         halesRows: count('hales'),
         halesQuotes: hales ? hales.querySelectorAll('.date-quotes li').length : 0,
         halesText: hales ? hales.innerText : '',
@@ -1263,7 +1265,8 @@ for (const [path, shot, sel] of [
         generationsText: (row('generations')?.innerText || '') + (table.querySelector('tr[data-author-sub="generations"]')?.innerText || ''),
       };
     });
-    check(`${engine}: Abraham birth has one Raleigh row and both quotations`, birth.unique && birth.raleighRows === 1 && birth.raleighQuotes === 2 && birth.raleighHtml.includes('<em>2024 BC</em>') && birth.raleighHtml.includes('yeere of the World, 2009') && birth.raleighHtml.includes('1. Abram. 175'), birth.raleighHtml.slice(0, 240));
+    // The two quotations of World 2009 stay on one row. The body age, with no yeere of the World, is the sub-row under the same author.
+    check(`${engine}: Abraham birth keeps both 2009 quotations, and the body age is a sub-row`, birth.unique && birth.raleighRows === 2 && birth.raleighQuotes === 2 && birth.raleighHtml.includes('<em>2024 BC</em>') && birth.raleighHtml.includes('yeere of the World, 2009') && birth.raleighHtml.includes('1. Abram. 175') && /fiftie and eight/.test(birth.raleighSubText) && /Not derived/.test(birth.raleighSubText), `${birth.raleighHtml.slice(0, 180)} || ${birth.raleighSubText.slice(0, 120)}`);
     check(`${engine}: Abraham birth nests Hales’s three 2153 BC quotations`, birth.halesRows === 1 && birth.halesQuotes === 3 && /2153/.test(birth.halesText) && /Abraham born 2153/.test(birth.halesText), birth.halesText.slice(0, 200));
     check(`${engine}: Shuckford’s two years and Generations’ two editions stay under one author`, birth.shuckfordRows === 2 && birth.generationsRows === 2 && /2166 BC/.test(birth.generationsText) && /1996/.test(birth.generationsText), JSON.stringify({ shuckford: birth.shuckfordRows, generations: birth.generationsRows }));
     const note = await page.locator('.raleigh-derived-note').innerText();

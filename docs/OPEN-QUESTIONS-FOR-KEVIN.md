@@ -1221,3 +1221,21 @@ The Preface (sig. 3b–23a), the contents (sig. 23b–42b), and Book I, Part I, 
   1. Leave the gap, as now.
   2. If a page image is read later and the word is clear, add it.
 - **Recommendation:** option 1. No page image is in this repository.
+
+Pass 2 read Book I, Part I, Chapter II, §. I, sig. 54a, through Chapter VII. Twenty-seven statements are on existing records. No person, place, or event was created. The quotes are in `data/raleigh-body-extract.md`. N1 to N4 stay the defaults.
+
+### N5. Deucalion’s yeere of the World 2356
+
+- **Why it matters:** Book I, Part I, Chapter VII, §. III, sig. 96a, in his own paragraph: “Now Deucalion was borne in the yeere of the World 2356. and had liued 〈◊ 〉 yeeres, when his Kingdome of Thessalie was ouerwhelmed; ( which added to 2356. make 2438.) his Floud was after Noahs Floud ended 782. yeeres.” The age word is illegible in both XML copies. 2356, 2438, and 782 are printed. The lines just before it are other men’s years (Functius, Mercator, Codoman, and the historians’ 82), and those were not entered. There is no Deucalion person. `misphragmuthosis` already says no Deucalion record is created, because the flood named there is not the Genesis Flood. A new event cannot take a sort year from Raleigh, so his flood was not made an event. The sentence stays in the extract.
+- **Options:**
+  1. Leave it in the extract. Do not make a person, and do not make a flood event.
+  2. Make `deucalion`, with `year_am` 2356, `year_bc_ad` null, and `sorting_year` null. Leave the illegible age out. Still do not make a flood event.
+- **Recommendation:** option 1. The age word is illegible, and an earlier intake already declined a Deucalion person. N3 still stands for a year he gives of someone who already has a record, or for a year whose record you ask for by name.
+
+### N6. Ogyges born 67 yeeres after Jacob
+
+- **Why it matters:** Book I, Part I, Chapter VII, §. II, sig. 94b: “hee liued but in Iacobs time … and was borne 67. yeeres after him”. That is Ogyges’s birth, not the flood. There is no Ogyges person. `flood-of-ogyges` already has his own 580 and his own 613 yeeres after the general Flood. Eusebius’s yeere of the World 3440 was not entered, because he says Eusebius was much mistaken.
+- **Options:**
+  1. Leave the birth in the extract. Do not make a person.
+  2. Make `ogyges`, with the 67 yeeres as a statement, `year_am` null, `year_bc_ad` null, and `sorting_year` null. Do not put the birth on the flood event.
+- **Recommendation:** option 1. The 67 is how long after Jacob he was born. It is not a yeere of the World, and the flood record is not his birth.

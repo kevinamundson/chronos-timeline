@@ -137,6 +137,28 @@
         "link": "https://archive.org/details/newanalysisofchr02hale/page/n35/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": "The parenthesis is the Hebrew age. The other age is the one he adopts. The last figure is his B.C. column."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Mahaleel and Enoch at threescore and fiue yeeres",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §IV, sig. 82b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The age at which he says Enoch begat. The same clause names Mahaleel, and that statement is also on mahalalel. Not a yeere of the World, and not his birth year. year_am stays null. This does not change the sort. The same section also says he begat before he was threescore and ten."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "seeing that Enoch, who was translated by God for his singular sanctities, begat children before he was threescore and ten yeeres olde.",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "approximate",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §IV, sig. 82b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. He says Enoch begat before threescore and ten. The same section also prints threescore and fiue for Mahaleel and Enoch. Not a yeere of the World. year_am stays null. This does not change the sort. The translation already has its table row."
       }
     ],
     "translated": [
@@ -271,6 +293,11 @@
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 278 (PDF p. 313)"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. V, §IV, sig. 82b"
     }
   ],
   "related": [

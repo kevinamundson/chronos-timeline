@@ -176,6 +176,39 @@
         "link": "https://archive.org/details/newanalysisofchr02hale/page/n35/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": null
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "and Noah at 500. yeeres.",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. V, §IV, sig. 82b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The age at which he says Noah begat. Not a yeere of the World, and not his birth year. year_am stays null. This does not change the sort. The table birth row already prints the lifespan 950 at World 1057."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Noah, who knew the world before the floud, and had liued therein the long time of 600. yeeres",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. VII, §X, sig. 103b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. His age in the world before the Flood. The sentence goes on to deny that he was without a habitation for the 130 yeeres after the Flood. That denial is not a second figure. Not a yeere of the World. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "he receiued the Commandement from God 100. yeares before the waters sell",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. VII, §X, sig. 101b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. How long before the waters he says Noah received the command. The spelling is sell, as printed. Not a yeere of the World, and not his birth year. year_am stays null. This does not change the sort."
       }
     ],
     "death": [
@@ -341,6 +374,21 @@
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 278 (PDF p. 313)"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. V, §IV, sig. 82b"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. VII, §X, sig. 103b"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. VII, §X, sig. 101b"
     }
   ],
   "related": [

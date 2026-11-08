@@ -39,6 +39,28 @@
       "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n143/mode/1up",
       "source_text_id": "cory-ancient-fragments-1876",
       "note": "Editor's summary in the biographical notice, which says it is abridged from Bunsen. Not a verbatim fragment. The year of the world is left in the quotation. It is not stored and it is not converted."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "Ogyges Floud happened 100. yeeres after IACOB was borne; and therefore after the generall Floud 613. yeeres.",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. VII, §III, sig. 96a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. His reckoning, in the paragraph that begins with what he follows. Not a yeere of the World. year_am stays null. This does not change the sort. The same chapter says this flood fell in the yeere of the World 3440 according to Eusebius, and that Eusebius was much mistaken. That 3440 is not entered."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "the difference betweene these two Flouds must bee 520. yeeres, to which we( allowing 60. more) find 580.",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, ch. VII, §II, sig. 94b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. The 520 is what follows if Bucholzerus places Ogyges in his true age. The 580 is his own allowance of 60 more. Later in §. III he reckons 613 yeeres after the general Flood. Both are left as printed. Not a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [
@@ -49,7 +71,8 @@
   "scripture_refs": [],
   "sources": [
     "cfah-19-osf",
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [
     "reign-of-phoroneus"
@@ -64,6 +87,16 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. VII, §III, sig. 96a"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, ch. VII, §II, sig. 94b"
     }
   ]
 }
