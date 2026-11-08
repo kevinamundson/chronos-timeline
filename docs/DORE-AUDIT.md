@@ -110,7 +110,74 @@ Only records that already exist. No person id was invented.
 
 ## Not linked, left open
 
+These two rows are the 2026-10-29 pass. They are not a ruling. The 2026-11-07 viewing, and the question for Kevin, are in the ruling request at the end of this file.
+
 | Plate | Records not linked | Reason |
 |---|---|---|
 | 113 | artaxerxes-decree, artaxerxes-longimanus | The event cites Neh 2:1, the cupbearer's private request, and its note will not choose Longimanus or Mnemon. The title fits Ezra 7 and Nehemiah 2, so `scripture_ref` stays null. Viewed at 400px: a king on a throne proclaiming to a crowd in a square, not a private request. See C11. |
 | 189 | (event kept) | `birth-of-jesus` stays. Viewed at 400px: the nativity, with Mary, the infant, Joseph with a staff, shepherds and animals in a stable (Luke 2). The event cites Matt 2:1–23. The event record was not edited. See C11. |
+
+## Ruling request (2026-11-07)
+
+No link was added or removed. No `scripture_ref` was changed. No person or event was created, and no date or sort was changed. The two plates stay as they are until Kevin rules.
+
+Copies of the files that were viewed stayed in `/tmp/dore-audit/` and are not in the repo. Plate 113 was viewed as the Archive.org IIIF v3 image at 600px. On the same day v2 at 600px and v2 at 400px returned HTTP 500 for that file; v3 at 600px and v2 at 240px returned it. Plate 189 was viewed as the IIIF v2 image at 600px.
+
+### Plate 113, "Artaxerxes Grants Freedom to the Jews"
+
+The plate prints that caption. In the data, `scripture_ref` is null and `records` is empty.
+
+What is drawn. A court in front of a palace. The walls carry winged bulls and winged human-headed figures. A crowd fills the court, with a rider among them. Two men in long robes stand with their backs to the viewer, between the crowd and the reliefs, both with an arm raised. Soldiers with helmets, spears and a shield stand on the steps at the right. A cloaked figure kneels in the foreground. There is no interior room, no woman seated beside a king, no cup, and no city wall. This 600px view does not show a throne, and it does not mark one man, by a crown or by a seat, as the king. The 400px note of 2026-10-29 called the same plate a king on a throne. That throne is not visible here, so the two viewings are not the same description. The raised arms can be read as a proclamation or as the crowd's response. Neither reading picks out Artaxerxes as one body.
+
+Passages the title can name. The file title is not a verse.
+
+- Ezra 7:11–26 is the letter of Artaxerxes. Ezra 7:13 says that the people of Israel, and the priests and the Levites, who are minded of their own freewill to go up to Jerusalem, may go. No event in the data cites Ezra 7:11–26.
+- Ezra 7:1–10 is the journey up to Jerusalem. `ezra-returns-to-jerusalem` cites that range. The plate is not a journey.
+- Ezra 7:27 is Ezra speaking about the king's heart being moved to beautify the house. `ezra-beautifies-the-temple` cites that verse. The plate is not the Temple.
+- Nehemiah 2:1 is the cupbearer giving wine to the king. Nehemiah 2:6 has the queen sitting by him. `artaxerxes-decree` cites Nehemiah 2:1 only, and its note will not choose Artaxerxes Longimanus or Artaxerxes Mnemon. The plate is not that private room.
+- Nehemiah 2:1–8 is the same request and the letters that follow. `nehemiah-rebuilds-the-wall` cites that range. Its title begins "Artaxerxes' decree", and the Jones line on it is the wall built and dedicated. The plate is not the wall. Plate 115 is the ruins, and it is already linked to `nehemiah-comes-to-jerusalem` (Nehemiah 2:11).
+
+Records this plate should not take on the evidence above.
+
+- `artaxerxes-longimanus` and `artaxerxes-mnemon`. The title says Artaxerxes and does not say which. No figure is marked as either man. Linking one of them would choose the king the decree's note refuses to choose.
+- `artaxerxes-decree`. The picture is not the cupbearer's private request in Nehemiah 2:1.
+- `nehemiah-rebuilds-the-wall`. The picture is not the wall, and it is not the private audience in Nehemiah 2:1–8.
+- `ezra-returns-to-jerusalem` and `ezra-beautifies-the-temple`. The picture is not the journey and not the Temple.
+- `cyrus-decree-of-return` and `cyrus-the-great`. That decree is Cyrus, and plate 111 is the vessels. This title says Artaxerxes.
+- There is no Ezra person and no Nehemiah person. Neither was created. The crowd is not split into named records.
+
+What is left open. The plate may be the publishing of a decree the data does not yet record (Ezra 7:11–26), or it may be a court scene that does not settle on one of the events above. This pass does not add that event and does not set `scripture_ref`.
+
+Question for Kevin. Leave plate 113 unmatched, or name the one existing record it should take.
+
+### Plate 189, "Luke 2A The Birth of Jesus"
+
+The plate prints "The Birth of Jesus". In the data, `scripture_ref` is `Luke.2.6-Luke.2.7`. The only link is `birth-of-jesus`, basis `event-depicted`. That link was not changed.
+
+What is drawn. A stable, with beams and a gap in the roof. A woman in a veil sits holding an infant. A bearded man stands behind her with a long staff. Shepherds stand and kneel around them, several of them with staffs. An ox and sheep are in the foreground. One star shows through the gap. There are no wise men, no gifts, no journey, no soldiers, and no Herod.
+
+The stored reference is Luke 2:6–7, the birth. The shepherds are also drawn, and they come to the child in Luke 2:16. The reference was not widened.
+
+`birth-of-jesus` is titled "Birth of Jesus Christ". Its scripture is Matthew 2:1–23. Matthew 2:1 says that Jesus had been born, and the chapter is then the wise men, the flight into Egypt and the massacre. `herod-the-great` is on that event's people list. He is not drawn on this plate.
+
+Three other plates draw parts of Matthew 2, and none of them is linked to `birth-of-jesus`:
+
+| Plate | Title | Reference | Records |
+|---|---|---|---|
+| 161 | Matt 2A Wise Men Are Guided by a Star | Matt 2:9 | none |
+| 162 | Matt 2B Joseph Leads Mary and Jesus into Egypt | Matt 2:13–15 | none |
+| 163 | Matt 2C The Children of Bethlehem are Massacred | Matt 2:16 | none |
+
+Plate 163 does not draw Herod. He was left off that plate on 2026-10-29 for that reason.
+
+Persons this plate should not take.
+
+- The seated woman is the mother of the child. There is no record for her. `mary-i-of-england` and `mary-slessor` are other women.
+- The infant is the child named in the title. There is no Jesus person record. None was created.
+- The standing man with the staff is the husband in this scene. The person `joseph` is Jacob's son. There is no record for the husband of Mary. He was not linked.
+- The shepherds are a group. No one of them is named.
+- `herod-the-great` is not drawn.
+
+What is left open. The event's name is the birth, and the plate is a birth. The event's verses are Matthew 2, and this plate does not draw the wise men, the flight or the massacre. Those three scenes are plates 161 to 163, which are not on this event.
+
+Question for Kevin. Keep `birth-of-jesus` on plate 189, or take that link off until the event cites Luke 2 or a separate nativity event exists. This pass does not edit the event.
