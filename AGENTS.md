@@ -41,7 +41,7 @@ The rules also apply to any other coding agent working here. Grok Build is the b
 
 Further rules:
 
-- Record dates **as printed**. Do not convert AM to BC, or reign lengths to BC years, unless the source itself does. A year you work out yourself goes only in the `note`, labelled `DERIVED`, with the arithmetic and its anchor. The one exception is display text for Raleigh's yeere of the World (Kevin, 28 Oct 2026): `AM` and an italic BC or AD year, computed in `scripts/raleigh/derived-year.mjs` from Creation in 4032 BC. Kevin kept 4032 on 2026-10-28 (G11). The Julian Period column implies 4031 BC; that reading is not the formula. The italic year is not written into `year_bc_ad`, and it never sets `sorting_year`, a standby placement, a span, or a tier.
+- Record dates **as printed**. Do not convert AM to BC, or reign lengths to BC years, unless the source itself does. A year you work out yourself goes only in the `note`, labelled `DERIVED`, with the arithmetic and its anchor, unless it is the calculated gap-fill below. The display text for Raleigh's yeere of the World (Kevin, 28 Oct 2026) is `AM` and an italic BC or AD year, computed in `scripts/raleigh/derived-year.mjs` from Creation in 4032 BC. Kevin kept 4032 on 2026-10-28 (G11). The Julian Period column implies 4031 BC; that reading is not the formula. The italic year is not written into `year_bc_ad`. It does not set a standby placement, a span, or a tier 1–4 year. Kevin's ruling of 2026-11-08 (N22): the same formula, and any other arithmetic on figures the repo already prints, may fill `sorting_year` only when no tier 1–4 year and no provisional year exist. Store that year on the person in `calculated`, with the source, citation, and arithmetic. Do not write it into `year_bc_ad`. A printed or provisional year replaces it. The catalog is `scripts/calculated/catalog.mjs`. `node scripts/calculated/apply.mjs` writes the field and `docs/calculated-dates.md`. The page marks the year `calc.` and shows the arithmetic. Do not invent an offset. A reign length is not an end year, and a lifespan in years is not added to a birth year.
 - If a source is ambiguous, damaged or self-contradictory, record what it says and flag it. **Do not silently resolve it.** Add it to:
   - `docs/OPEN-QUESTIONS-FOR-KEVIN.md`: next free item in the right section, with the question, why it matters, the options and a recommendation.
   - `scripts/cfah/inconsistencies.mjs`: internal CFAH inconsistencies, as the next `I<n>` (currently I1–I22).
@@ -62,6 +62,7 @@ Further rules:
 Fallbacks:
 
 - `provisional` (with a badge): used only when no tier 1–4 year exists. It takes the first dated `generations` entry, or a `morecraft` entry only on records the Morecraft import created and that only Morecraft dates.
+- `calculated` (with a `calc.` badge): people only, and only when no tier 1–4 year and no provisional year exist. It is one year from `calculated`, in the order birth, reign start, death, translation. A printed `year_bc_ad` on birth blocks every later slot. Two different calculated birth years do not fall through. `sorting_basis.tier` is `calculated`, `tier_rank` is null, and `slot` names the slot. It is not a fifth rank in `sorting_rule.tiers`. Kevin, 2026-11-08 (N22). Do not remove it when a higher year is absent.
 - `derived`: events only, copied from the record in `derived_from`.
 - `none`: people only, with `sorting_year: null`.
 
@@ -82,7 +83,7 @@ Fallbacks:
 - CFAH ruler dates with basis `paper_text`
 - **every new source you add**
 
-People sort on a tier-ranked birth year when `dates.birth` has one. A person who has a `dates.reign` slot and no tier-ranked birth year sorts on the start year already stored on that reign (`year_bc_ad`). The same four tiers choose it. Within Ussher–Jones, the 23rd edition (2026) governs over an older Jones edition. Display-only sources never set it, and a reign length is never turned into a year. `sorting_basis.slot` is `reign_start` when the reign start sets the sort. It is omitted when the sort comes from birth. Kevin's ruling, 2026-10-28 (open question M3).
+People sort on a tier-ranked birth year when `dates.birth` has one. A person who has a `dates.reign` slot and no tier-ranked birth year sorts on the start year already stored on that reign (`year_bc_ad`). The same four tiers choose it. Within Ussher–Jones, the 23rd edition (2026) governs over an older Jones edition. Display-only sources never set that reign start, and a reign length is never turned into a year. `sorting_basis.slot` is `reign_start` when the reign start sets the sort. It is omitted when the sort comes from a tier birth. Kevin's ruling, 2026-10-28 (open question M3). A calculated year may use `slot` `birth`, `reign_start`, `death`, or `translated`, and only in the gap below provisional.
 
 **Standby placement (not a sort tier).** Records with no tier date get a standby placement (source-printed BC/AD year, else the linked record's year); it never sets sort; it is replaced automatically when a tier date arrives. The optional `standby` object is written by `scripts/standby/compute.mjs`. It never changes `sorting_year` or `sorting_basis`.
 
@@ -176,7 +177,7 @@ npm run verify:live         # person-timeline checks against production (run aft
 - `node scripts/jones/import-2019.mjs` (display-only 21st ed. comparison; does not write an extract and does not touch the sort)
 - `node scripts/standby/compute.mjs`
 
-**Importer order:** if you re-run the Herodotus importer (or any other importer), run `node scripts/cfah/import.mjs` **after it**. The Herodotus importer drops CFAH-only reign slots on its people, and the CFAH importer restores them (see E-section notes in `docs/OPEN-QUESTIONS-FOR-KEVIN.md`). Then run `node scripts/standby/compute.mjs` last, so a record that gained a `sorting_year` loses its standby placement and a record that still has none is placed again. Then run `npm run validate`, and check `git diff --stat` for unexpected churn.
+**Importer order:** if you re-run the Herodotus importer (or any other importer), run `node scripts/cfah/import.mjs` **after it**. The Herodotus importer drops CFAH-only reign slots on its people, and the CFAH importer restores them (see E-section notes in `docs/OPEN-QUESTIONS-FOR-KEVIN.md`). Then run `node scripts/standby/compute.mjs` last, so a record that gained a `sorting_year` loses its standby placement and a record that still has none is placed again. Then run `npm run validate`, and check `git diff --stat` for unexpected churn. The Generations, Herodotus, and Morecraft importers must leave a `calculated` sort in place when they have no higher year. A provisional or tier 1–4 year replaces it. Do not run `scripts/standby/compute.mjs` across the corpus unless a sort year changed, and do not let it put `standby` back on a record that has `sorting_year`. A Raleigh rebuild (`scripts/raleigh/covered.mjs`) must keep `calculated`, `mother`, `spouse`, and a calculated `sorting_year`.
 
 `check-source.mjs` scripts verify quotes against private PDFs and are skipped when those files are absent. That is expected on the Mini.
 
@@ -189,7 +190,7 @@ Each new source needs four things:
 3. A curated rows file plus an idempotent importer under `scripts/<source>/`.
 4. A generated `data/<source>-dates-extract.md`: edition read, every dated statement with its page and section, the record it maps to, and status (agrees / CONFLICT / internal / framework / n/a).
 
-Schema changes, such as a new field, need Kevin's approval. Propose them in the PR's open questions. The proposed `free_links` source field (T2) and the optional `tradition` field are **on hold**: Kevin will return to them. Do not add either field until he approves. Kevin approved `schema/raleigh-accounts.schema.json` on 2026-11-07 (ruling C). It is a separate file, not a field on a person or an event.
+Schema changes, such as a new field, need Kevin's approval. Propose them in the PR's open questions. The proposed `free_links` source field (T2) and the optional `tradition` field are **on hold**: Kevin will return to them. Do not add either field until he approves. Kevin approved `schema/raleigh-accounts.schema.json` on 2026-11-07 (ruling C). It is a separate file, not a field on a person or an event. Kevin approved `mother`, `spouse`, and `calculated` on person records on 2026-11-08 (N22, N24). `mother` is a person id, or null. `spouse` is a list. An uncertain link is `{id, uncertain: true, source, note}` and the page shows `?` after the name. The id never contains `?`. Omit `mother`, `spouse`, and `calculated` when they are empty.
 
 ## 11. Where things go when unsure
 

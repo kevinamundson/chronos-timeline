@@ -15,6 +15,22 @@
     "chronology": "generations",
     "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 534): 600–530 BC. Pending owner decision (open question A8)."
   },
+  "calculated": [
+    {
+      "slot": "reign_start",
+      "year_bc_ad": -538,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 790a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 3495. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 3495 = 538 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "cyrus-the-great",
+      "anchor_slot": "reign_start",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 3495
+    }
+  ],
   "father": null,
   "children": [],
   "dates": {

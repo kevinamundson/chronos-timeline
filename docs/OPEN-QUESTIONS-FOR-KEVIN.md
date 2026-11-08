@@ -1376,6 +1376,7 @@ Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. 
   1. Leave her undated until a printed CFAH or Generations year is read, as now.
   2. Point to the printed row that should be copied, with the page, and say which slot it fills.
 - **Recommendation:** option 1. A year computed from Noah’s 1998 BC would be a new date.
+- **Kevin's ruling, 2026-11-08, 11:29 AM CT:** "Naamah should be dated, but properly tiered so that as higher tiers arrive, they set the rule. This should be true for any calculable date for a person." Naamah's death is calculated as 1994 BC. Noah's 2nd-edition death prints 1998 BC, "four years before Naamah," so 1998 BC + 4 years = 1994 BC. There is no year 0. The year is stored in `calculated`, not in `year_bc_ad`. The tier is `calculated`, below provisional. A printed or provisional year for the same person replaces it. The same rule fills every other calculable person. The list is `docs/calculated-dates.md`. Reign lengths were not turned into end years (N29). A lifespan was not added to a birth year (N30).
 
 ### N23. Johnson’s Naamah, and his Flood figure
 
@@ -1384,6 +1385,7 @@ Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. 
   1. Keep this as attributed identification in the description, as now.
   2. Name a date slot or a spouse link you want stored, and the printed page it comes from.
 - **Recommendation:** option 1. The book is copyrighted, and the figure was not read as a chronology entry in this repo.
+- **Note, 2026-11-08:** the spouse link Naamah–Ham is stored under N24, marked uncertain (`?`). Johnson's Flood figure of about 2420 BC was not stored.
 
 ### N24. No mother or spouse field
 
@@ -1392,6 +1394,7 @@ Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. 
   1. Leave mothers and spouses in the description and Related, as now.
   2. Approve a schema field for mother or spouse, and say whether `tubal-cain.father` should become `lamech-cainite`.
 - **Recommendation:** option 1 until you want a schema change. Setting Tubal-cain’s father would change an existing line.
+- **Kevin's ruling, 2026-11-08, 11:29 AM CT:** "Yes to mother and spouse fields. Use '?' for uncertain references." `mother` and `spouse` are on the person schema. A certain link is the person id. An uncertain link is `{id, uncertain: true, source}` and the page shows `?` after the name. The id does not contain `?`. Filled only where Scripture or a source already in the repo names the relation: Naamah's mother is Zillah, and her spouse is Ham? (Johnson); Zillah and Adah are spouses of Lamech the Cainite; Jubal and Jabal's mother is Adah; Tubal-cain's mother is Zillah and his father is now `lamech-cainite`; plus the other plain links listed in the PR (Sarah, Hagar, and Keturah). Rebekah has no record (N31). Those people were removed from Related when they are now mother, spouse, or father. The only `?` is Naamah and Ham, each way.
 
 ### N25. Raleigh’s Tubal, Jabal, and Japheth’s Tubal
 
@@ -1424,3 +1427,36 @@ Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. 
   1. Leave the list as a match against existing records, as now.
   2. Name a match that should be suppressed, or a goddess that should become her own record.
 - **Recommendation:** option 1. A new goddess record would invent a person the sources have not been given a year for.
+- **Note, 2026-11-08:** the whole-token match is unchanged. Herakles still does not link to Heracles. The Names table and the Other people list now show the top 5, with "See more (N)" for the rest. Other people rank by mention count in that page's histories, then by `sorting_year`, then by name. Names put the page title first, then the forms with the most witnesses, then original before rendering before alternate, then the order in `name-forms.json`.
+
+### N29. Reign length was not turned into an end year
+
+- **Why it matters:** Some records print a reign start and a length. Adding the length to the start would produce an end year. That arithmetic is off by a year in inclusive counts, and a length from one chronology must not be added to a start from another.
+- **Options:**
+  1. Leave reign ends uncalculated, as now.
+  2. Name a printed start and a printed length that are the same chronology, and say whether the count is inclusive.
+- **Recommendation:** option 1 until a single source prints both figures and the count is explicit.
+
+### N30. A lifespan in years was not added to a birth year
+
+- **Why it matters:** `scripture_facts` stores a lifespan for some patriarchs. Adding that number to a birth year from another chronology would mix the Masoretic age with a BC year the text does not print, and the count of the year of death is easy to get wrong.
+- **Options:**
+  1. Leave those deaths uncalculated, as now.
+  2. Name a person whose source prints both the birth year and the age at death in one place.
+- **Recommendation:** option 1. Calculate a death only when one source prints the anchor year and the offset together, as Generations does for Naamah.
+
+### N31. No record for Rebekah, Leah, Bilhah, Zilpah, or Zimran
+
+- **Why it matters:** Scripture names them, and some existing people are their children or husbands. There is no person record to point a `mother` or `spouse` field at. Sarah is the record `sarai`. Zimran is named with Keturah's sons and has no record. Those links were not stored. No new person was created.
+- **Options:**
+  1. Leave the links out until those people exist, as now.
+  2. Approve a new person for one of these names, with the verse that creates the record.
+- **Recommendation:** option 1. A new person needs a record of its own, not a spouse id invented in this pass.
+
+### N32. Raleigh intake lines still say there is no sort year
+
+- **Why it matters:** Many people taken from the 1617 text still say "there is no sort year" in the description. Some of them now have a calculated sort. The sentence is stale. It was not rewritten in bulk. Ogyges's sentence was rewritten because this pass calculated his birth. The others were left.
+- **Options:**
+  1. Leave the intake sentences, and let the sort badge say `calc.`, as now.
+  2. Approve a rewrite of every sentence that says there is no sort year when `sorting_basis.tier` is `calculated`.
+- **Recommendation:** option 2 when you want the descriptions to match the badge. A bulk rewrite of Raleigh's intake text was not part of this ruling.

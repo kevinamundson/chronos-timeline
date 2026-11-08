@@ -126,7 +126,7 @@ for (const [id, r] of Object.entries(recs)) {
   if (t) {
     const ap = t.e.citation?.match(/AP-\d+/)?.[0];
     if (d.sorting_basis?.tier !== t.tier || d.sorting_year !== t.e.year_bc_ad) { d.sorting_year = t.e.year_bc_ad; d.sorting_basis = { tier: t.tier, tier_rank: t.rank, chronology: t.chron, note: t.tier === 'cfah-anchor' ? `Tier 1: CFAH anchor point: ${t.e.date}${ap ? ` (${ap})` : ''}` : `Tier ${t.rank}: ${t.e.date}` }; }
-  } else if (d._derived) { /* second pass below */ } else if (d.sorting_basis?.tier === 'provisional' || d.sorting_basis?.tier === 'derived') { /* unchanged: owned by the Generations importer / curated */ }
+  } else if (d._derived) { /* second pass below */ } else if (d.sorting_basis?.tier === 'provisional' || d.sorting_basis?.tier === 'derived' || d.sorting_basis?.tier === 'calculated') { /* unchanged: owned by the Generations importer, the calculated catalog, or curated */ }
   else if (d.type === 'person') { d.sorting_year = null; d.sorting_basis ||= { tier: 'none', tier_rank: null, chronology: 'cfah', note: 'No tier gives a birth year.' }; }
   else throw new Error(`${id}: event without a sort year`);
 }

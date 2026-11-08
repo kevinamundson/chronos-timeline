@@ -19,6 +19,14 @@
     "note": "Standby placement only, placed with \"The Ark Rests on the Mountains of Ararat\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
   },
   "father": "noah",
+  "spouse": [
+    {
+      "id": "naamah",
+      "uncertain": true,
+      "source": "johnson-genesis-characters-greek-art",
+      "note": "Johnson's view: Naamah was the wife of Ham. Genesis does not say this."
+    }
+  ],
   "children": [
     "cush",
     "mizraim",
@@ -130,7 +138,6 @@
     }
   ],
   "related": [
-    "noah",
     "shem",
     "japheth",
     "cush",

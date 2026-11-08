@@ -6,7 +6,10 @@
 // JP 1 = 4713 BC puts AM 1 at JP 683 = 4031 BC (table sig. 781b).
 // Kevin chose 4032 on 2026-10-28 (G11). The 4031 reading is recorded and is not the formula.
 // Display is "AM <year> (<em>BC/AD</em>)". Only the BC or AD year is italic.
-// Never write the result into year_bc_ad, sorting_year, standby, a span, or a tier.
+// Never write the italic year into a source entry's year_bc_ad.
+// Kevin, 2026-11-08: the same formula may fill a calculated date. That date may set
+// sorting_year only when no tier 1–4 year and no provisional year exist. It is stored
+// on the person, not in year_bc_ad. See scripts/calculated/catalog.mjs.
 
 export const RALEIGH_CREATION_BC = 4032;
 export const RALEIGH_DERIVED_FROM = 'raleigh-creation-4032-bc';
@@ -16,6 +19,23 @@ export const ITALICS_NOTE = 'Dates in italics are derived.';
 
 const DERIVED_KEYS = ['derived_bc_ad', 'derived_bc_ad_end', 'derived_from'];
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+/**
+ * Add a whole number of years to a historical year. Negative is BC, positive is AD.
+ * There is no year 0: the year after 1 BC is AD 1.
+ * Null when the year is missing, zero, or not a whole number.
+ */
+export function addHistoricalYears(year, delta) {
+  if (!Number.isInteger(year) || year === 0 || !Number.isInteger(delta)) return null;
+  if (delta === 0) return year;
+  let y = year;
+  const step = delta > 0 ? 1 : -1;
+  for (let i = 0; i < Math.abs(delta); i += 1) {
+    y += step;
+    if (y === 0) y += step;
+  }
+  return y;
+}
 
 /** Historical year: negative = BC, positive = AD, no year 0. Null when AM is not a single positive integer. */
 export function raleighDerivedYear(am) {
@@ -273,4 +293,12 @@ export function assertRaleighDerived() {
   if (!mismatch.length) throw new Error('A derived_bc_ad that breaks the formula was allowed');
   const okStored = raleighDerivedProblems({ source: RALEIGH_SOURCE, year_am: 1656, derived_bc_ad: -2377, derived_from: RALEIGH_DERIVED_FROM });
   if (okStored.length) throw new Error(`A matching derived field was rejected: ${okStored.join('; ')}`);
+  const sums = [[-1998, 4, -1994], [-1836, 67, -1769], [-2, 3, 2], [1, -1, -1], [1, -2, -2], [-1, 1, 1], [-5, 0, -5]];
+  for (const [year, delta, expect] of sums) {
+    const got = addHistoricalYears(year, delta);
+    if (got !== expect) throw new Error(`Historical years: ${year} + ${delta} = ${got}, expected ${expect}`);
+  }
+  if (addHistoricalYears(0, 1) !== null || addHistoricalYears(1.5, 1) !== null || addHistoricalYears(-4, 1.5) !== null) {
+    throw new Error('Historical years accepted a zero or a broken figure');
+  }
 }

@@ -15,6 +15,36 @@
     "chronology": "ussher-jones",
     "note": "Tier 3: Ussher-Jones (F. N. Jones): 1571 BC (Moses born) (no higher-tier year available)."
   },
+  "calculated": [
+    {
+      "slot": "birth",
+      "year_bc_ad": -1599,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 783b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2434. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2434 = 1599 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "moses",
+      "anchor_slot": "birth",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2434
+    },
+    {
+      "slot": "death",
+      "year_bc_ad": -1480,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 784b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2553. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2553 = 1480 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "moses",
+      "anchor_slot": "death",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2553
+    }
+  ],
   "father": "amram",
   "children": [],
   "scripture_facts": {

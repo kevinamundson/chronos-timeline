@@ -4,7 +4,7 @@
   "type": "person",
   "title": "Jabal",
   "summary": "Son of Lamech and Adah, and brother of Jubal (Genesis 4:20).",
-  "description": "Son of Lamech and Adah, and brother of Jubal (Genesis 4:20), the ancestor of those who dwell in tents and have livestock. No mother field is stored, so Adah is Related. Raleigh's Tubal, named with Iubal and Tubalcain in Book I, Part I, Chapter V, §. III and Chapter VI, §. IV, is a separate printed name. This record is the son of Adah in Genesis 4:20. Japheth's son is the existing record Tubal. No Raleigh passage is attached here. Undated in this intake: no CFAH year was found.",
+  "description": "Son of Lamech and Adah, and brother of Jubal (Genesis 4:20), the ancestor of those who dwell in tents and have livestock. Adah is his mother. The mother field records that. Raleigh's Tubal, named with Iubal and Tubalcain in Book I, Part I, Chapter V, §. III and Chapter VI, §. IV, is a separate printed name. This record is the son of Adah in Genesis 4:20. Japheth's son is the existing record Tubal. No Raleigh passage is attached here. Undated in this intake: no CFAH year was found.",
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",
@@ -13,6 +13,7 @@
     "note": "No tier gives a birth year. Raleigh is display-only."
   },
   "father": "lamech-cainite",
+  "mother": "adah",
   "children": [],
   "dates": {
     "birth": [
@@ -36,7 +37,6 @@
     "blb-biblehub"
   ],
   "related": [
-    "adah",
     "jubal",
     "tubal-cain",
     "naamah",

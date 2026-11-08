@@ -4,14 +4,31 @@
   "type": "person",
   "title": "Ogyges",
   "summary": "Raleigh names Ogyges in the History of the World (1617) and says he was born 67 yeeres after Jacob.",
-  "description": "Named in Raleigh's History of the World (1617). He says Ogyges was born 67 yeeres after Jacob. That figure is not a yeere of the World. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
-  "sorting_year": null,
+  "description": "Named in Raleigh's History of the World (1617). He says Ogyges was born 67 yeeres after Jacob. That figure is not a yeere of the World. His birth is calculated as 67 years after Jacob's tier birth in 1836 BC, which is 1769 BC. The year is calculated, and a printed year would replace it.",
+  "sorting_year": -1769,
   "sorting_basis": {
-    "tier": "none",
+    "tier": "calculated",
     "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year. Raleigh is display-only."
+    "chronology": "raleigh-history-of-the-world",
+    "slot": "birth",
+    "note": "Calculated from printed figures. No tier 1–4 birth, no tier reign start, and no provisional year. Jacob's tier birth is 1836 BC (ussher-jones). Raleigh says Ogyges \"was borne 67. yeeres after him\" (Book I, Part I, Chapter VII, §. II, sig. 94b). 1836 BC + 67 years = 1769 BC. No year 0. A printed year for this person would replace it."
   },
+  "calculated": [
+    {
+      "slot": "birth",
+      "year_bc_ad": -1769,
+      "kind": "relative",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book I, Part I, Chapter VII, §. II, sig. 94b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Jacob's tier birth is 1836 BC (ussher-jones). Raleigh says Ogyges \"was borne 67. yeeres after him\" (Book I, Part I, Chapter VII, §. II, sig. 94b). 1836 BC + 67 years = 1769 BC. No year 0.",
+      "anchor_record": "jacob",
+      "anchor_slot": "birth",
+      "anchor_year_bc_ad": -1836,
+      "anchor_source": "ussher-jones",
+      "delta_years": 67
+    }
+  ],
   "father": null,
   "children": [],
   "dates": {

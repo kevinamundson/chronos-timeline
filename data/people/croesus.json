@@ -5,13 +5,30 @@
   "title": "Croesus",
   "summary": "Last king of Lydia; Sardis fell to Cyrus after his 14-year reign (Herodotus 1.6–91).",
   "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
-  "sorting_year": null,
+  "sorting_year": -562,
   "sorting_basis": {
-    "tier": "none",
+    "tier": "calculated",
     "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+    "chronology": "raleigh-history-of-the-world",
+    "slot": "reign_start",
+    "note": "Calculated from printed figures. No tier 1–4 birth, no tier reign start, and no provisional year. Raleigh prints the yeere of the World 3471. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 3471 = 562 BC. The figure is not written into year_bc_ad. A printed year for this person would replace it."
   },
+  "calculated": [
+    {
+      "slot": "reign_start",
+      "year_bc_ad": -562,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Chronological Table, sig. 790a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 3471. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 3471 = 562 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "croesus",
+      "anchor_slot": "reign_start",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 3471
+    }
+  ],
   "father": "alyattes",
   "children": [],
   "dates": {

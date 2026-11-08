@@ -1856,6 +1856,112 @@ for (const [path, shot, sel] of [
     await ctx.close();
   }
 }
+// Calculated dates, mother and spouse, and See more. Chromium and WebKit.
+{
+  async function seeMoreState(page, root) {
+    return page.locator(root).evaluate((el) => {
+      const details = el.querySelector('details.see-more');
+      const firstList = el.querySelector(':scope > ul.links');
+      const firstBody = el.querySelector(':scope > .table-wrap tbody');
+      const shown = firstList ? firstList.querySelectorAll(':scope > li').length : (firstBody ? firstBody.querySelectorAll('tr').length : 0);
+      const extra = details ? details.querySelectorAll('ul.links > li, tbody tr').length : 0;
+      const summary = details?.querySelector('summary')?.textContent.replace(/\s+/g, ' ').trim() || '';
+      return { shown, extra, summary, open: details ? details.open : null, control: !!details };
+    });
+  }
+  async function calculatedUi(engine, launcher) {
+    const own = launcher === browser ? null : stubIiif(await launcher.launch());
+    const b = own || browser;
+    async function visit(path) {
+      const ctx = await b.newContext({ viewport: { width: 1280, height: 900 }, colorScheme: 'light' });
+      const page = await ctx.newPage();
+      const errors = [];
+      page.on('pageerror', (e) => errors.push(String(e)));
+      const resp = await page.goto(BASE + path, { waitUntil: 'load', timeout: 60000 });
+      return { ctx, page, errors, status: resp.status() };
+    }
+    {
+      const o = await visit('/people/naamah/');
+      const sort = await o.page.locator('.sortbox').innerText();
+      const death = await o.page.locator('#death').innerText();
+      const family = await o.page.locator('#family-brief').innerText();
+      const nameRows = await o.page.locator('#name table.names tbody tr').count();
+      const nameMore = await o.page.locator('#name details.see-more').count();
+      const deathOk = o.status === 200 && o.errors.length === 0 && /calc\./.test(sort) && /1994 BC/.test(sort) && /calculated death/i.test(sort) && /calc\./.test(death) && /1994 BC/.test(death) && /1998 BC/.test(death) && /\b4 years\b/.test(death);
+      check(`${engine} naamah: calculated death 1994 BC`, deathOk, o.errors.join(' | ') || `${sort.replace(/\s+/g, ' ').slice(0, 180)} || ${death.replace(/\s+/g, ' ').slice(0, 180)}`);
+      check(`${engine} naamah: mother Zillah and spouse Ham?`, /Zillah/.test(family) && /Ham\s*\?/.test(family), family.replace(/\s+/g, ' ').slice(0, 280));
+      check(`${engine} naamah: a short Names list has no See more`, nameRows > 0 && nameRows <= 5 && nameMore === 0, `${nameRows} rows, ${nameMore} controls`);
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/people/noah/');
+      const sort = await o.page.locator('.sortbox').innerText();
+      const death = await o.page.locator('#death').innerText();
+      const kept = /2948 BC/.test(sort) && !/calc\./.test(sort) && !/Calculated/.test(sort) && !/calc\./.test(death);
+      check(`${engine} noah: printed 2948 BC stays, and no calculated death is shown`, kept, `${sort.replace(/\s+/g, ' ').slice(0, 160)} || ${death.replace(/\s+/g, ' ').slice(0, 120)}`);
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/people/sarai/');
+      const sort = await o.page.locator('.sortbox').innerText();
+      const death = await o.page.locator('#death').innerText();
+      const family = await o.page.locator('#family-brief').innerText();
+      const override = /1987 BC/.test(sort) && !/calc\./.test(sort) && !/Calculated/.test(sort) && /calc\./.test(death) && /Abraham/.test(family);
+      check(`${engine} sarah: the birth tier stays and a calculated death fills the empty slot`, override, `${sort.replace(/\s+/g, ' ').slice(0, 120)} || ${death.replace(/\s+/g, ' ').slice(0, 160)}`);
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/people/abraham/');
+      const names = await seeMoreState(o.page, '#name');
+      const summary = o.page.locator('#name details.see-more > summary');
+      await summary.focus();
+      const focused = await o.page.evaluate(() => document.activeElement?.closest('details.see-more') != null);
+      await o.page.keyboard.press('Enter');
+      const opened = await o.page.locator('#name details.see-more').evaluate((d) => d.open);
+      const restVisible = await o.page.locator('#name details.see-more tbody tr').first().isVisible();
+      const family = await o.page.locator('#family-brief').innerText();
+      const namesOk = names.shown === 5 && names.extra > 0 && names.summary === `See more (${names.extra})` && names.open === false && focused && opened && restVisible;
+      check(`${engine} abraham: Names See more opens from the keyboard`, namesOk, JSON.stringify({ ...names, focused, opened, restVisible }));
+      check(`${engine} abraham: spouses are Sarah, Hagar and Keturah, and the mother stays unrecorded`, /Sarah/.test(family) && /Hagar/.test(family) && /Keturah/.test(family) && /Not recorded/.test(family), family.replace(/\s+/g, ' ').slice(0, 320));
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/people/jacob/');
+      const other = await seeMoreState(o.page, '#other-people');
+      const summary = o.page.locator('#other-people details.see-more > summary');
+      await summary.focus();
+      const focused = await o.page.evaluate(() => document.activeElement?.closest('details.see-more') != null);
+      await o.page.keyboard.press('Enter');
+      const opened = await o.page.locator('#other-people details.see-more').evaluate((d) => d.open);
+      const restVisible = await o.page.locator('#other-people details.see-more li').first().isVisible();
+      const otherOk = other.shown === 5 && other.extra > 0 && other.summary === `See more (${other.extra})` && other.open === false && focused && opened && restVisible;
+      check(`${engine} jacob: Other people See more opens from the keyboard`, otherOk, JSON.stringify({ ...other, focused, opened, restVisible }));
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/people/rameses-ii/');
+      const nameMore = await o.page.locator('#name details.see-more').count();
+      const rows = await o.page.locator('#name table.names tbody tr').count();
+      check(`${engine} rameses-ii: a short Names list has no See more`, nameMore === 0 && rows > 0 && rows <= 5, `${rows} rows, ${nameMore} controls`);
+      await o.ctx.close();
+    }
+    {
+      const o = await visit('/events/cain-and-abel/');
+      const count = await o.page.locator('#other-people').count();
+      if (!count) check(`${engine} cain-and-abel: page loaded`, o.status === 200);
+      else {
+        const state = await seeMoreState(o.page, '#other-people');
+        const total = state.shown + state.extra;
+        const ok = o.status === 200 && (total <= 5 ? state.control === false : state.shown === 5 && state.summary === `See more (${state.extra})` && state.open === false);
+        check(`${engine} cain-and-abel: Other people control matches the list length`, ok, JSON.stringify(state));
+      }
+      await o.ctx.close();
+    }
+    if (own) await own.close();
+  }
+  await calculatedUi('chromium', browser);
+  await calculatedUi('webkit', webkit);
+}
 await browser.close();
 srv.close();
 console.log(results.join('\n'));

@@ -20,6 +20,9 @@
     "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (2036–1994 B.C.). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
   },
   "father": null,
+  "spouse": [
+    "ninus"
+  ],
   "children": [],
   "dates": {
     "reign": [

@@ -4,15 +4,41 @@
   "type": "person",
   "title": "Naamah",
   "summary": "Daughter of Lamech and Zillah, and sister of Tubal-cain (Genesis 4:22). Raleigh prints Noëma, Noema, Naamath, and Naamah.",
-  "description": "Daughter of Lamech and Zillah, and sister of Tubal-cain (Genesis 4:22). Raleigh, Book I, Part I, Chapter V, §. III, sig. 82b, prints Noëma in the line of Lamech by Silla. Chapter VI, §. IV, sig. 88a–88b, prints Noema or Naamath, the sister of Tubalcain, and Noema or Naamah. No printed birth year for her was found in CFAH or in the Generations extracts. Preparing the World for Jesus (2nd ed., 2024), PDF p. 153 (printed p. 139), says of Noah that he died at 950, four years before Naamah, and prints his death as 1998 BC. That year stays on Noah. Nothing was calculated from the phrase. Robert Bowie Johnson Jr., in Genesis Characters and Events in Ancient Greek Art (2016), holds that Naamah was the wife of Ham and was carried through the Flood. He identifies her with the Sumerian Nammu, and he treats her as the original of the goddess personas Ishtar, Inanna, Astarte, Asherah, Isis, Demeter, Artemis, and Athena (he also writes Athana and Athanatos). In that same view she is, through Ham, the mother of Cush, whom he calls Hermes, and the grandmother of Nimrod, whom he calls Herakles. He also holds that Tubal-cain, Zillah, Lamech, Jubal, and Jabal were left behind and drowned. He places the Flood at about 2420 BC. That figure is his, and it is not a year on this record. The daughter, sister, and parents are the Genesis 4:19–22 relationships. The wife, the Flood, and the goddess and hero names are Johnson's identification only. There is no mother or spouse field, so Zillah and Ham are listed under Related.",
-  "sorting_year": null,
+  "description": "Daughter of Lamech and Zillah, and sister of Tubal-cain (Genesis 4:22). Raleigh, Book I, Part I, Chapter V, §. III, sig. 82b, prints Noëma in the line of Lamech by Silla. Chapter VI, §. IV, sig. 88a–88b, prints Noema or Naamath, the sister of Tubalcain, and Noema or Naamah. No printed birth year for her was found in CFAH or in the Generations extracts. Preparing the World for Jesus (2nd ed., 2024), PDF p. 153 (printed p. 139), says of Noah that he died at 950, four years before Naamah, and prints his death as 1998 BC. That year stays on Noah. Her death is calculated as 1994 BC: Noah died in 1998 BC, four years before Naamah, so she died four years later. The year is calculated, and a printed year would replace it. Robert Bowie Johnson Jr., in Genesis Characters and Events in Ancient Greek Art (2016), holds that Naamah was the wife of Ham and was carried through the Flood. He identifies her with the Sumerian Nammu, and he treats her as the original of the goddess personas Ishtar, Inanna, Astarte, Asherah, Isis, Demeter, Artemis, and Athena (he also writes Athana and Athanatos). In that same view she is, through Ham, the mother of Cush, whom he calls Hermes, and the grandmother of Nimrod, whom he calls Herakles. He also holds that Tubal-cain, Zillah, Lamech, Jubal, and Jabal were left behind and drowned. He places the Flood at about 2420 BC. That figure is his, and it is not a year on this record. The daughter, sister, and parents are the Genesis 4:19–22 relationships. The wife, the Flood, and the goddess and hero names are Johnson's identification only. Zillah is her mother. Ham is her spouse, marked uncertain, because that identification is Johnson's view.",
+  "sorting_year": -1994,
   "sorting_basis": {
-    "tier": "none",
+    "tier": "calculated",
     "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year. The Generations sentence that names Naamah is Noah's death, and it is not a year for her. Raleigh is display-only."
+    "chronology": "generations",
+    "slot": "death",
+    "note": "Calculated from printed figures. No tier 1–4 birth, no tier reign start, and no provisional year. Noah died 1998 BC, four years before Naamah (Generations, Preparing the World for Jesus, 2nd ed., ch. 7, PDF p. 153 / printed p. 139). 1998 BC + 4 years = 1994 BC. No year 0. A printed year for this person would replace it."
   },
+  "calculated": [
+    {
+      "slot": "death",
+      "year_bc_ad": -1994,
+      "kind": "relative",
+      "source": "generations",
+      "citation": "Preparing the World for Jesus (2nd ed., 2024), ch. 7 \"The Return of the Nephilim: Nimrod Attempts World Empire\", PDF p. 153 (printed p. 139)",
+      "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
+      "arithmetic": "Noah died 1998 BC, four years before Naamah (Generations, Preparing the World for Jesus, 2nd ed., ch. 7, PDF p. 153 / printed p. 139). 1998 BC + 4 years = 1994 BC. No year 0.",
+      "anchor_record": "noah",
+      "anchor_slot": "death",
+      "anchor_year_bc_ad": -1998,
+      "anchor_source": "generations",
+      "delta_years": 4
+    }
+  ],
   "father": "lamech-cainite",
+  "mother": "zillah",
+  "spouse": [
+    {
+      "id": "ham",
+      "uncertain": true,
+      "source": "johnson-genesis-characters-greek-art",
+      "note": "Johnson's view: Naamah was the wife of Ham. Genesis does not say this."
+    }
+  ],
   "children": [],
   "dates": {
     "birth": [
@@ -50,11 +76,9 @@
   ],
   "related": [
     "tubal-cain",
-    "zillah",
     "adah",
     "jubal",
     "jabal",
-    "ham",
     "cush",
     "nimrod"
   ],

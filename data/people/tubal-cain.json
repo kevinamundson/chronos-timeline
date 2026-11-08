@@ -12,7 +12,8 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year. Raleigh is display-only."
   },
-  "father": null,
+  "father": "lamech-cainite",
+  "mother": "zillah",
   "children": [],
   "dates": {
     "birth": [

@@ -245,6 +245,7 @@ const TIERS = {
   ussher: { cls: 't4', label: 'Tier 4 · Ussher, Annals of the World' },
   derived: { cls: 'td', label: 'Derived · sort year copied from a related record' },
   provisional: { cls: 'tp', label: 'Provisional · Generations curriculum date (no CFAH / Ussher–Jones / Ussher date exists; pending owner decision)' },
+  calculated: { cls: 'tc', label: 'Calculated · arithmetic from printed figures (fills a gap only)' },
   none: { cls: 'tn', label: 'Undated · no tier gives a year' },
 };
 // Which entry set the sort (mirrors scripts/sort-rule.mjs).
@@ -498,12 +499,16 @@ function sortBadge(rec) {
   const b = rec.sorting_basis || {};
   const t = (b.tier === 'provisional' && b.chronology === 'morecraft' ? { cls: 'tp', label: 'Provisional · Morecraft date (no CFAH / Ussher–Jones / Ussher / Generations date exists; pending owner decision)' } : TIERS[b.tier]) || { cls: 'tn', label: b.tier || 'unknown' };
   const ent = sortingEntry(sortEntriesOf(rec), b, rec.sorting_year);
-  const yl = yearLabel(rec.sorting_year, b.slot === 'reign_start' ? null : ent?.year_bc_ad_end) || 'Undated';
+  const yl = yearLabel(rec.sorting_year, b.slot === 'reign_start' || b.tier === 'calculated' ? null : ent?.year_bc_ad_end) || 'Undated';
+  const shownYear = b.tier === 'calculated' ? `calc. ${yl}` : yl;
   let extra = '';
   if (b.tier === 'derived' && b.derived_from) extra = ` from ${link(b.derived_from)}`;
-  const slotLine = b.slot === 'reign_start' ? `<p class="sort-slot">${esc(reignStartPhrase(b.tier))}.</p>` : '';
+  const calcSlot = b.slot === 'death' ? 'Sorted by a calculated death' : b.slot === 'translated' ? 'Sorted by a calculated translation' : b.slot === 'reign_start' ? 'Sorted by a calculated reign start' : 'Sorted by a calculated birth';
+  const slotLine = b.tier === 'calculated'
+    ? `<p class="sort-slot">${esc(calcSlot)}.</p>`
+    : (b.slot === 'reign_start' ? `<p class="sort-slot">${esc(reignStartPhrase(b.tier))}.</p>` : '');
   return `<div class="sortbox">
-<div class="sortyear"><span class="small muted">Sort year</span><strong>${esc(yl)}</strong></div>
+<div class="sortyear"><span class="small muted">Sort year</span><strong>${esc(shownYear)}</strong></div>
 <div><span class="tier tier-${t.cls}">${esc(t.label)}</span>${extra}${slotLine}${b.note ? `<p class="small muted">${shown(b.note)}</p>` : ''}</div></div>`;
 }
 
@@ -717,10 +722,16 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
   const items = [
     ...events.filter((e) => e.sorting_year != null).map((e) => stamp(e, { id: e.id, group: 'events', title: displaySpelling(e.title), y: e.sorting_year, yEnd: e.chronologies.find((c) => c === sortingEntry(e.chronologies, e.sorting_basis))?.year_bc_ad_end ?? null, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 })),
     ...people.filter((p) => p.sorting_year != null).map((p) => {
-      const reignSort = p.sorting_basis?.slot === 'reign_start';
-      const end = reignSort ? null : (tierYear(p.dates?.death) || tierYear(p.dates?.translated));
+      const slot = p.sorting_basis?.slot;
+      const calc = p.sorting_basis?.tier === 'calculated';
+      const prefix = calc ? 'calc. ' : '';
+      const reignSort = slot === 'reign_start';
+      const end = reignSort || calc ? null : (tierYear(p.dates?.death) || tierYear(p.dates?.translated));
       const yEnd = end && end.y != null && end.y > p.sorting_year ? end.y : null;
-      const label = reignSort ? `reign start ${yearLabel(p.sorting_year)}` : (yEnd != null ? `${yearLabel(p.sorting_year)} – ${yearLabel(yEnd)}` : `born ${yearLabel(p.sorting_year)}`);
+      const label = slot === 'death' ? `${prefix}died ${yearLabel(p.sorting_year)}`
+        : slot === 'translated' ? `${prefix}translated ${yearLabel(p.sorting_year)}`
+        : reignSort ? `${prefix}reign start ${yearLabel(p.sorting_year)}`
+        : (yEnd != null ? `${prefix}${yearLabel(p.sorting_year)} – ${yearLabel(yEnd)}` : `${prefix}born ${yearLabel(p.sorting_year)}`);
       return stamp(p, { id: p.id, group: 'people', title: displaySpelling(p.title), y: p.sorting_year, yEnd, label, tier: tierCls(p), url: urlOf(p), order: 0 });
     }),
     ...standbyRecords.map((r) => stamp(r, { id: r.id, group: r.type === 'event' ? 'events' : 'people', title: displaySpelling(r.title), y: r.standby.year_bc_ad, yEnd: null, label: standbyItemLabel(r), tier: 'standby', standby: true, url: urlOf(r), order: 50 })),
@@ -733,7 +744,9 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
     const mark = standby
       ? '<span class="tag tag-standby">standby</span>'
       : `<span class="tier tier-${tierCls(r)} small">${esc((TIERS[r.sorting_basis?.tier] || TIERS.none).label.split(' · ')[0])}</span>`;
-    return `<li data-placement="${standby ? 'standby' : 'tier'}" data-year="${y ?? ''}"><span class="yr">${esc(yearLabel(y) || 'Undated')}</span><a href="${urlOf(r)}">${shown(r.title)}</a> ${mark}${raleighAside(r)}</li>`;
+    const rawYear = yearLabel(y) || 'Undated';
+    const yr = r.sorting_basis?.tier === 'calculated' ? `calc. ${rawYear}` : rawYear;
+    return `<li data-placement="${standby ? 'standby' : 'tier'}" data-year="${y ?? ''}"><span class="yr">${esc(yr)}</span><a href="${urlOf(r)}">${shown(r.title)}</a> ${mark}${raleighAside(r)}</li>`;
   };
   const body = `
 <section class="hero">
@@ -914,10 +927,10 @@ function loadPersonPhrases() {
   personPhraseIndex = byFirst;
   return byFirst;
 }
-function idsInHistory(text) {
+function mentionCounts(text) {
   const tokens = personTokens(text);
   const index = loadPersonPhrases();
-  const found = new Set();
+  const counts = new Map();
   for (let i = 0; i < tokens.length; i += 1) {
     const list = index.get(tokens[i]);
     if (!list) continue;
@@ -931,10 +944,15 @@ function idsInHistory(text) {
       if (phrase.n > best) { best = phrase.n; hits.length = 0; }
       hits.push(phrase.id);
     }
-    for (const id of hits) found.add(id);
+    for (const id of new Set(hits)) counts.set(id, (counts.get(id) || 0) + 1);
     if (best > 1) i += best - 1;
   }
-  return found;
+  return counts;
+}
+function seeMoreList(items) {
+  if (items.length <= 5) return `<ul class="links">${items.join('')}</ul>`;
+  const n = items.length - 5;
+  return `<ul class="links">${items.slice(0, 5).join('')}</ul><details class="see-more"><summary>See more (${n})</summary><ul class="links">${items.slice(5).join('')}</ul></details>`;
 }
 function historyBlob(rec) {
   const parts = [rec.summary, rec.description];
@@ -946,16 +964,27 @@ function historyBlob(rec) {
   return parts.filter(Boolean).join('\n');
 }
 function otherPeopleIds(rec) {
-  const found = idsInHistory(historyBlob(rec));
+  const counts = mentionCounts(historyBlob(rec));
   const linked = rec.type === 'event' ? (rec.people || []) : (rec.related || []);
-  for (const id of linked) if (byId[id]?.type === 'person') found.add(id);
-  found.delete(rec.id);
-  return [...found].filter((id) => byId[id]?.type === 'person').sort((a, b) => displaySpelling(byId[a].title).localeCompare(displaySpelling(byId[b].title), 'en'));
+  const ids = new Set(counts.keys());
+  for (const id of linked) if (byId[id]?.type === 'person') ids.add(id);
+  ids.delete(rec.id);
+  const yearOf = (id) => {
+    const y = byId[id]?.sorting_year;
+    return y == null ? Infinity : y;
+  };
+  return [...ids].filter((id) => byId[id]?.type === 'person').sort((a, b) => {
+    const ca = counts.get(a) || 0;
+    const cb = counts.get(b) || 0;
+    if (ca !== cb) return cb - ca;
+    if (yearOf(a) !== yearOf(b)) return yearOf(a) - yearOf(b);
+    return displaySpelling(byId[a].title).localeCompare(displaySpelling(byId[b].title), 'en');
+  });
 }
 function otherPeopleSection(rec) {
   const ids = otherPeopleIds(rec);
   if (!ids.length) return '';
-  return `<section class="card" id="other-people"><h2>Other people</h2><ul class="links">${ids.map((id) => `<li>${link(id)}</li>`).join('')}</ul></section>`;
+  return `<section class="card" id="other-people"><h2>Other people</h2>${seeMoreList(ids.map((id) => `<li>${link(id)}</li>`))}</section>`;
 }
 
 // Events
@@ -1004,6 +1033,22 @@ function personTimeline(p) {
     start = stop = p.standby.year_bc_ad;
     fromStandby = true;
   }
+  const calcFill = (slot) => {
+    const item = (p.calculated || []).find((c) => c.slot === slot);
+    if (!item) return null;
+    const key = slot === 'reign_start' ? 'reign' : slot;
+    if ((p.dates?.[key] || []).some((e) => e.year_bc_ad != null)) return null;
+    return item;
+  };
+  const calcBirth = calcFill('birth');
+  const calcDeath = calcFill('death');
+  const calcTrans = calcFill('translated');
+  const calcReign = calcFill('reign_start');
+  if (start == null && calcBirth) { start = calcBirth.year_bc_ad; notes.push(`Birth year calculated: ${calcBirth.arithmetic}`); }
+  if (stop == null && calcDeath) { stop = calcDeath.year_bc_ad; notes.push(`Death year calculated: ${calcDeath.arithmetic}`); }
+  else if (stop == null && calcTrans) { stop = calcTrans.year_bc_ad; notes.push(`Translation year calculated: ${calcTrans.arithmetic}`); }
+  if (start == null && stop == null && calcReign) { start = stop = calcReign.year_bc_ad; notes.push(`Reign start calculated: ${calcReign.arithmetic}`); }
+  const fromCalc = !fromStandby && !birth && !end && !reign && !!(calcBirth || calcDeath || calcTrans || calcReign);
   if (start == null && stop == null) return { none: true, notes: ['No birth or death year in tiers 1–4 and no dated linked events, so there is no timeline yet.'], ownUndated };
   if (start == null) { start = stop; notes.push('Birth year unknown and no earlier linked event.'); }
   if (stop == null) { stop = start; notes.push(cfahReign && birth == null ? 'Death year and reign end unknown, and no later linked event: the window shows the reign date only.' : 'Death year unknown and no linked events after birth: the window shows the birth year only.'); }
@@ -1025,7 +1070,11 @@ function personTimeline(p) {
   const life = birth && end && end.y > birth.y ? { y: birth.y, yEnd: end.y, label: `${yearLabel(birth.y)} – ${yearLabel(end.y)}` } : null;
   if (life) items.push({ id: 'lifespan', group: 'own', own: true, span: true, raleighOn: 'person', title: displaySpelling(p.title), y: life.y, yEnd: life.yEnd, label: life.label, tier: tierCls(p), url: '#birth', order: -2 });
   if (birth && !life && !own.some(isBirthEvt)) items.push({ id: 'birth', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Birth of ${p.title}`), y: birth.y, label: yearLabel(birth.y, birth.yEnd), tier: (TIERS[birth.tier] || TIERS.none).cls, url: '#birth', order: -1 });
+  else if (calcBirth && !life) items.push({ id: 'calc-birth', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Birth of ${p.title}`), y: calcBirth.year_bc_ad, label: `calc. ${yearLabel(calcBirth.year_bc_ad)}`, tier: 'tc', url: '#birth', order: -1 });
   if (end && !life && !own.some(isEndEvt)) items.push({ id: endKind, group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`${endKind === 'death' ? 'Death' : 'Translation'} of ${p.title}`), y: end.y, label: yearLabel(end.y, end.yEnd), tier: (TIERS[end.tier] || TIERS.none).cls, url: `#${endKind}`, order: 9 });
+  else if (calcDeath && !end) items.push({ id: 'calc-death', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Death of ${p.title}`), y: calcDeath.year_bc_ad, label: `calc. ${yearLabel(calcDeath.year_bc_ad)}`, tier: 'tc', url: '#death', order: 9 });
+  else if (calcTrans && !end) items.push({ id: 'calc-translated', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Translation of ${p.title}`), y: calcTrans.year_bc_ad, label: `calc. ${yearLabel(calcTrans.year_bc_ad)}`, tier: 'tc', url: '#translated', order: 9 });
+  if (calcReign && !cfahReign && !reign) items.push({ id: 'calc-reign', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Reign of ${p.title}`), y: calcReign.year_bc_ad, label: `calc. ${yearLabel(calcReign.year_bc_ad)}`, tier: 'tc', url: '#reign', order: 0 });
   if (cfahReign) items.push({ id: 'cfah-reign', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Reign of ${p.title} (CFAH: ${cfahReign.date})`), y: cfahReign.year_bc_ad, label: yearLabel(cfahReign.year_bc_ad, cfahReign.year_bc_ad_end ?? null), tier: TIERS.none.cls, url: '#reign', order: 0 });
   if (textDeath) items.push({ id: 'cfah-death', group: 'own', own: true, raleighOn: 'person', title: displaySpelling(`Death of ${p.title} (CFAH: ${textDeath.date})`), y: textDeath.year_bc_ad, label: yearLabel(textDeath.year_bc_ad), tier: TIERS.none.cls, url: '#death', order: 9 });
   for (const e of own) items.push({ id: e.id, group: 'own', own: true, title: displaySpelling(e.title), y: e.sorting_year, label: yearLabel(e.sorting_year), tier: tierCls(e), url: urlOf(e), order: e.sort_order_within_year ?? 0 });
@@ -1054,6 +1103,7 @@ function personTimeline(p) {
     : null;
   return {
     start, stop, birth, end: end || (textDeath ? { y: textDeath.year_bc_ad, yEnd: null, tier: 'none' } : null), endKind: endKind || (textDeath ? 'death' : null), life, items, notes, ownUndated, fromStandby, standbyNote, standbyOwn: !!p.standby,
+    fromCalc,
     ownCount: items.filter((i) => i.own && !i.standby).length,
     ctxCount: items.filter((i) => !i.own && !i.standby).length,
     standbyCount: items.filter((i) => i.standby).length,
@@ -1069,7 +1119,9 @@ function personTimelineSection(p) {
   const win = `${yearLabel(t.start)} – ${yearLabel(t.stop)}`;
   const winLead = t.fromStandby
     ? `Window: <strong>${esc(win)}</strong> (standby placement, not a sort year).`
-    : `Window: <strong>${esc(win)}</strong> (birth to ${t.endKind || 'last linked event'}, using the four-tier sort rule).${t.life ? ` The lifespan is one bar, ${esc(t.life.label)}.` : ''}`;
+    : t.fromCalc
+      ? `Window: <strong>${esc(win)}</strong> (calculated from printed figures; a higher tier would replace it).`
+      : `Window: <strong>${esc(win)}</strong> (birth to ${t.endKind || 'last linked event'}, using the four-tier sort rule).${t.life ? ` The lifespan is one bar, ${esc(t.life.label)}.` : ''}`;
   const li = (i) => {
     const tag = i.standby
       ? '<span class="tag tag-standby">standby</span>'
@@ -1155,14 +1207,32 @@ function nameSection(p) {
       looseGroups.push(a);
     }
   }
-  const rows = [
-    ...grouped.map((g) => {
+  // Top five: the page title first, then the forms with the most witnesses, then original before rendering before alternate, then the order in name-forms.json.
+  const nameRows = [
+    ...grouped.map((g, index) => {
       const writing = SCRIPT_LABEL[g.f.script] || g.f.script;
       const kind = ROLE_LABEL[g.f.role] || g.f.role;
-      return `<tr data-spelling="${esc(spellingKey(g.f.form, writing, kind))}"><th scope="row">${formCell(g.f)}</th><td>${esc(writing)}</td><td>${esc(kind)}</td><td>${witnessCell(g.items)}</td></tr>`;
+      return { index, form: g.f.form, role: g.f.role, witnesses: g.items.length, html: `<tr data-spelling="${esc(spellingKey(g.f.form, writing, kind))}"><th scope="row">${formCell(g.f)}</th><td>${esc(writing)}</td><td>${esc(kind)}</td><td>${witnessCell(g.items)}</td></tr>` };
     }),
-    ...looseGroups.map((a) => `<tr data-spelling="${esc(spellingKey(a, 'Latin letters', 'Alternate spelling'))}"><th scope="row">${esc(displayNameForm(a))}</th><td>Latin letters</td><td>Alternate spelling</td><td><span class="muted">Written source not yet attached</span></td></tr>`),
+    ...looseGroups.map((a, index) => ({ index: grouped.length + index, form: a, role: 'alternate', witnesses: 0, html: `<tr data-spelling="${esc(spellingKey(a, 'Latin letters', 'Alternate spelling'))}"><th scope="row">${esc(displayNameForm(a))}</th><td>Latin letters</td><td>Alternate spelling</td><td><span class="muted">Written source not yet attached</span></td></tr>` })),
   ];
+  const titleFolds = new Set([foldName(p.title), foldName(displaySpelling(p.title))]);
+  const roleRank = { original: 0, rendering: 1, alternate: 2 };
+  nameRows.sort((a, b) => {
+    const pa = titleFolds.has(foldName(a.form)) ? 0 : 1;
+    const pb = titleFolds.has(foldName(b.form)) ? 0 : 1;
+    if (pa !== pb) return pa - pb;
+    if (a.witnesses !== b.witnesses) return b.witnesses - a.witnesses;
+    const ra = roleRank[a.role] ?? 9;
+    const rb = roleRank[b.role] ?? 9;
+    if (ra !== rb) return ra - rb;
+    return a.index - b.index;
+  });
+  const nameTable = (list, caption) => `<div class="table-wrap"><table class="chron names"><caption>${esc(caption)}</caption><thead><tr><th scope="col">Form</th><th scope="col">Writing</th><th scope="col">Kind</th><th scope="col">Witness</th></tr></thead><tbody>${list.map((r) => r.html).join('')}</tbody></table></div>`;
+  const nameCaption = 'Spellings and original-language writings. A number leads to the footnote that names the text.';
+  const nameTables = !nameRows.length ? '' : nameRows.length <= 5
+    ? nameTable(nameRows, nameCaption)
+    : `${nameTable(nameRows.slice(0, 5), nameCaption)}<details class="see-more"><summary>See more (${nameRows.length - 5})</summary>${nameTable(nameRows.slice(5), 'Further spellings of this name.')}</details>`;
   const hasOriginal = forms.some((f) => f.role === 'original');
   const hasInscription = forms.some((f) => f.witness === 'inscription');
   const tipnr = forms.some((f) => f.source_text_id === 'stepbible-tipnr');
@@ -1177,7 +1247,7 @@ function nameSection(p) {
   return `<section class="card" id="name" aria-labelledby="name-h">
   <h2 id="name-h">Name</h2>
   <p>The name on this page is <strong>${shown(p.title)}</strong>.</p>
-  ${rows.length ? `<div class="table-wrap"><table class="chron names"><caption>Spellings and original-language writings. A number leads to the footnote that names the text.</caption><thead><tr><th scope="col">Form</th><th scope="col">Writing</th><th scope="col">Kind</th><th scope="col">Witness</th></tr></thead><tbody>${rows.join('')}</tbody></table></div>` : ''}
+  ${nameTables}
   ${hasOriginal ? '' : '<p class="small muted">No original-language writing of this name has been entered. A form is added only after it has been read in Scripture, a history, or an inscription.</p>'}
   ${hasInscription ? '' : '<p class="small muted">No inscription that writes this name has been entered.</p>'}
   ${notes.length ? `<details class="name-notes-twirl" id="${p.id}-name-notes"><summary>Footnotes</summary><ol class="name-notes" role="list">${footnotes}</ol></details>` : ''}
@@ -1185,17 +1255,27 @@ function nameSection(p) {
 </section>`;
 }
 
-// Family chart: recorded fathers and named children only. There is no mother, sex or adoption field.
-// A child's `father` and a parent's `children` array are joined. Where they disagree, the father field wins.
+// Family chart: recorded fathers, mothers, and named children. A spouse is named in the list, not drawn as a parent.
+// A child's father field wins over a parent's children array. A mother is kept even when the father is someone else.
 const fatherOf = {};
+const motherOf = {};
 const childSet = Object.fromEntries(people.map((p) => [p.id, new Set()]));
+const motherIdOf = (p) => {
+  const m = p?.mother;
+  if (!m) return null;
+  const id = typeof m === 'string' ? m : m.id;
+  return byId[id]?.type === 'person' ? id : null;
+};
 for (const p of people) {
   if (p.father && byId[p.father]?.type === 'person') fatherOf[p.id] = p.father;
+  const mid = motherIdOf(p);
+  if (mid) motherOf[p.id] = mid;
   for (const c of p.children || []) if (byId[c]?.type === 'person') childSet[p.id].add(c);
 }
 for (const [child, father] of Object.entries(fatherOf)) childSet[father].add(child);
 for (const p of people) for (const c of childSet[p.id]) if (!fatherOf[c]) fatherOf[c] = p.id;
 for (const p of people) for (const c of [...childSet[p.id]]) if (fatherOf[c] !== p.id) childSet[p.id].delete(c);
+for (const [child, mother] of Object.entries(motherOf)) childSet[mother].add(child);
 const byBirth = (a, b) => (byId[a].sorting_year ?? Infinity) - (byId[b].sorting_year ?? Infinity) || displaySpelling(byId[a].title).localeCompare(displaySpelling(byId[b].title), 'en');
 const ancestorIds = (id, depth) => {
   const out = [];
@@ -1226,26 +1306,32 @@ const cardYears = (p) => {
   if (birth && end) return yearLabel(birth.y, end.y);
   if (birth) return yearLabel(birth.y);
   if (end) return yearLabel(end.y);
+  if (p.sorting_basis?.tier === 'calculated' && p.sorting_year != null) return `calc. ${yearLabel(p.sorting_year)}`;
   return null;
 };
 function familyData(id, depth) {
   const ids = new Set([id]);
   for (const a of ancestorIds(id, depth)) ids.add(a.id);
   for (const level of descendantLevels(id, depth)) for (const c of level) ids.add(c);
+  // A named mother is drawn beside the father even when she is not in the father-line.
+  for (const pid of [...ids]) if (motherOf[pid]) ids.add(motherOf[pid]);
   const rows = [];
   for (const pid of ids) {
     const p = byId[pid];
-    const parents = fatherOf[pid] && ids.has(fatherOf[pid]) ? [fatherOf[pid]] : [];
+    const parents = [];
+    if (fatherOf[pid] && ids.has(fatherOf[pid])) parents.push(fatherOf[pid]);
+    if (motherOf[pid] && ids.has(motherOf[pid]) && !parents.includes(motherOf[pid])) parents.push(motherOf[pid]);
     const children = [...childSet[pid]].filter((c) => ids.has(c)).sort(byBirth);
     const years = cardYears(p);
     const row = { id: pid, data: { label: displaySpelling(p.title), url: urlOf(p), y: p.sorting_year }, rels: { parents, children, spouses: [] } };
-    if (childSet[pid].size) row.data.gender = 'M';
+    if ([...childSet[pid]].some((c) => fatherOf[c] === pid)) row.data.gender = 'M';
+    else if ([...childSet[pid]].some((c) => motherOf[c] === pid)) row.data.gender = 'F';
     if (years) row.data.years = years;
     rows.push(row);
   }
   for (const row of rows) for (const c of row.rels.children) {
     const child = rows.find((r) => r.id === c);
-    if (!child?.rels.parents.includes(row.id)) throw new Error(`Family chart: ${c} is a child of ${row.id} but does not list that father`);
+    if (!child?.rels.parents.includes(row.id)) throw new Error(`Family chart: ${c} is a child of ${row.id} but does not list that parent`);
   }
   rows.sort((a, b) => (a.id === id ? -1 : b.id === id ? 1 : a.data.label.localeCompare(b.data.label, 'en')));
   return rows;
@@ -1256,6 +1342,15 @@ const DESC_LABELS = ['Children', 'Grandchildren', 'Great-grandchildren'];
 const familyHead = '<link rel="stylesheet" href="/assets/vendor/family-chart/family-chart.css">';
 const familyScripts = '<script src="/assets/vendor/d3/d3.min.js" defer></script><script src="/assets/vendor/family-chart/family-chart.min.js" defer></script>';
 
+function kinHtml(item) {
+  if (!item) return '<span class="muted">Not recorded</span>';
+  const id = typeof item === 'string' ? item : item.id;
+  if (byId[id]?.type !== 'person') return '<span class="muted">Not recorded</span>';
+  const uncertain = typeof item === 'object' && item.uncertain;
+  const mark = uncertain ? `<abbr title="${esc(item.note || 'Uncertain in the cited source.')}">?</abbr>` : '';
+  return `${link(id)}${mark}`;
+}
+const kinList = (list) => (list?.length ? list.map(kinHtml).join(', ') : '<span class="muted">Not recorded</span>');
 function familySection(p) {
   const anc = ancestorIds(p.id, 3);
   const desc = descendantLevels(p.id, 3);
@@ -1265,7 +1360,8 @@ function familySection(p) {
   <h2 id="family-h">Family</h2>
   <ul class="family-list" id="family-brief">
     <li><span class="rel">Father</span> ${anc[0] ? link(anc[0].id) : '<span class="muted">Not recorded</span>'}</li>
-    <li><span class="rel">Mother</span> <span class="muted">Not recorded</span></li>
+    <li><span class="rel">Mother</span> ${kinHtml(p.mother)}</li>
+    <li><span class="rel">Spouse</span> ${kinList(p.spouse)}</li>
     <li><span class="rel">Children</span> ${relNames(desc[0] || [])}</li>
   </ul>
   <details class="family-twirl" id="family-chart-details">
@@ -1276,7 +1372,7 @@ function familySection(p) {
       <button type="button" data-family="fit">Fit</button>
       <label class="family-switch"><input type="checkbox" role="switch" id="family-wide" aria-controls="family-dialog"><span>Expand Family Chart</span></label>
     </div>
-  <p id="family-note" class="small muted">The chart shows the parents and children recorded for ${shown(p.title)}. A father is drawn when the data names him. Mothers are not stored, so a dashed card says the other parent is not recorded. Named children are not marked as son, daughter or adopted. A name with a page is a link.</p>
+  <p id="family-note" class="small muted">The chart shows the parents and children recorded for ${shown(p.title)}. A father is drawn when the data names him. A mother is drawn when the data names her. If the mother is not stored, a dashed card says the other parent is not recorded. Named children are not marked as son, daughter or adopted. A name with a page is a link.</p>
   <div class="family-chart-slot" id="family-chart-slot"><div id="family-chart" class="f3 family-chart" role="group" aria-label="Family chart of ${shown(p.title)}"></div></div>
   <ul class="legend small" aria-label="Family chart legend"><li><span class="lg-father" aria-hidden="true"></span>Recorded as a father, solid bar</li><li><span class="lg-missing" aria-hidden="true"></span>Other parent, not recorded, dashed</li><li><span class="lg-person" aria-hidden="true"></span>Named person, role not recorded</li></ul>
   <noscript><p>The chart needs JavaScript. The names above list the same parents and children.</p></noscript>
@@ -1307,8 +1403,19 @@ for (const p of people) {
 ${sf.age_at_named_son != null ? `<div><dt>Age at son's birth</dt><dd>${esc(sf.age_at_named_son)}${sf.named_son ? ` (${link(sf.named_son)})` : ''}</dd></div>` : ''}
 ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years)} years</dd></div>` : ''}
 </dl>${scriptureList(sf.refs)}</section>` : '';
-  const sortSlot = p.sorting_basis?.slot === 'reign_start' ? 'reign' : 'birth';
-  const tables = ['birth', 'death', 'translated', 'reign'].filter((k) => d[k]?.length).map((k) => `<section class="card" id="${k}"><h2>${k[0].toUpperCase() + k.slice(1)}</h2>${chronTable(d[k], { sortYear: k === sortSlot ? p.sorting_year : null, basis: k === sortSlot ? p.sorting_basis : null, caption: `${k} of ${displaySpelling(p.title)}, CFAH first` })}${flagsSection({ sorting_year: null }, d[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"')}</section>`).join('\n');
+  const basisSlot = p.sorting_basis?.slot === 'reign_start' ? 'reign' : (p.sorting_basis?.slot || 'birth');
+  const calcSlotKey = (slot) => (slot === 'reign_start' ? 'reign' : slot);
+  const printedSlot = (k) => (d[k] || []).some((e) => e.year_bc_ad != null);
+  const calcLines = (k) => (p.calculated || []).filter((c) => calcSlotKey(c.slot) === k && !printedSlot(k)).map((c) => {
+    const verb = c.slot === 'death' ? 'died' : c.slot === 'translated' ? 'translated' : c.slot === 'reign_start' ? 'reign start' : 'born';
+    return `<p class="calc-line"><abbr title="${esc(c.arithmetic)}">calc.</abbr> ${esc(verb)} ${esc(yearLabel(c.year_bc_ad))}. <span class="small muted">${esc(c.arithmetic)}</span></p>`;
+  }).join('');
+  const tables = ['birth', 'death', 'translated', 'reign'].filter((k) => d[k]?.length || calcLines(k)).map((k) => {
+    const sortsHere = p.sorting_basis?.tier !== 'calculated' && k === basisSlot;
+    const table = d[k]?.length ? chronTable(d[k], { sortYear: sortsHere ? p.sorting_year : null, basis: sortsHere ? p.sorting_basis : null, caption: `${k} of ${displaySpelling(p.title)}, CFAH first` }) : '';
+    const flags = d[k]?.length ? flagsSection({ sorting_year: null }, d[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"') : '';
+    return `<section class="card" id="${k}"><h2>${k[0].toUpperCase() + k.slice(1)}</h2>${table}${calcLines(k)}${flags}</section>`;
+  }).join('\n');
   const evs = [...new Set([...(p.events || []), ...eventsWith(p.id)])];
   const kls = kingListsOf(p.id);
   const kingCard = p.dynasty || kls.length ? `<section class="card" id="king-lists"><h2>Dynasty and king lists</h2>${p.dynasty ? `<p>Dynasty: ${esc(p.dynasty)}</p>` : ''}${kls.length ? `<p>Listed in: ${kls.map((l) => `<a href="/king-lists/#${esc(l.id)}">${esc(l.title)}</a>`).join('; ')}</p>` : ''}</section>` : '';

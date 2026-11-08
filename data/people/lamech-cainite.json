@@ -13,6 +13,10 @@
     "note": "No tier gives a birth year. Raleigh is display-only."
   },
   "father": null,
+  "spouse": [
+    "adah",
+    "zillah"
+  ],
   "children": [],
   "dates": {
     "birth": [

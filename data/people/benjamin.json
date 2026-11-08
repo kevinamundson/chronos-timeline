@@ -13,6 +13,7 @@
     "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 1739 BC (no higher-tier year available)."
   },
   "father": "jacob",
+  "mother": "rachel",
   "children": [],
   "dates": {
     "birth": [
@@ -48,8 +49,6 @@
     "jones-chronology-ot-2026"
   ],
   "related": [
-    "jacob",
-    "rachel",
     "joseph"
   ],
   "free_source_links": [
