@@ -4,7 +4,8 @@
 // does not name one passage. It is read from the title, not from the plate.
 // A record is [id, basis] or [id, "depicted", note].
 //   event-depicted  the plate shows that event
-//   named-in-title  the file title names the person, and that person is drawn
+//   named-in-title  the file title names the person, and that person is drawn;
+//                   or the file title names the event (Kevin, 2026-11-07, plate 113)
 //   depicted        the person is clearly the figure shown; the note says who and where
 // A person who is only named in the verse, and not drawn, is not linked.
 // An empty records array is deliberate: the plate stays in the data and on the index.
@@ -127,7 +128,7 @@ export const DORE_MAPPINGS = {
   110: { scripture_ref: '2Kgs.11.13-2Kgs.11.16', records: [['athalia', N]] },
   111: { scripture_ref: 'Ezra.1.7-Ezra.1.11', records: [['cyrus-decree-of-return', E], ['cyrus-the-great', N]] },
   112: { scripture_ref: 'Ezra.3.8-Ezra.3.10', records: [['temple-rebuilding-begins', E]] },
-  113: { scripture_ref: null, records: [] },
+  113: { scripture_ref: null, records: [['artaxerxes-decree', N]] },
   114: { scripture_ref: 'Ezra.9.5-Ezra.9.6', records: [] },
   115: { scripture_ref: 'Neh.2.13-Neh.2.15', records: [['nehemiah-comes-to-jerusalem', E]] },
   116: { scripture_ref: 'Neh.8.1-Neh.8.3', records: [] },

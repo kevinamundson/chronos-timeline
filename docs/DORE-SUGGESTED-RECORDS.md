@@ -4,7 +4,7 @@ The 220 canonical plates are in `data/illustrations/dore-1866.json` and on `/ill
 
 A Scripture reference on a plate is identified from the Archive.org file title. It is not printed on the engraving. Where the title does not name one passage, `scripture_ref` is null.
 
-A person is linked only when the plate draws that person. The basis is `named-in-title` (the file title names the person, and that person is drawn) or `depicted` (the person is clearly the figure shown, with a short note of who and where). An event is linked when the plate draws that event (`event-depicted`). A person who is only named in the verse, and not drawn, is not linked. A crowd is not split into every named record. The plate-by-plate decisions of the 2026-10-29 correction are in `docs/DORE-AUDIT.md`.
+A person is linked only when the plate draws that person. The basis is `named-in-title` (the file title names the person, and that person is drawn) or `depicted` (the person is clearly the figure shown, with a short note of who and where). An event is linked when the plate draws that event (`event-depicted`), or when the file title names that event (`named-in-title`; Kevin, 2026-11-07, plate 113). A person who is only named in the verse, and not drawn, is not linked. A crowd is not split into every named record. The plate-by-plate decisions of the 2026-10-29 correction are in `docs/DORE-AUDIT.md`.
 
 ## Scripture reference left null
 
@@ -20,7 +20,7 @@ These titles do not settle on one passage. People or events are linked only wher
 | 079 | David Shows Saul How He Saved His Life | The title fits 1 Samuel 24 and 1 Samuel 26. David and Saul are linked. david-spares-saul-the-second-time was not attached, because the plate may be the first time. |
 | 083 | David Attacks the Ammonites | The title does not say which Ammonite campaign. David is linked. saul-defeats-the-ammonites is Saul's campaign, not this one. |
 | 094 | The Israelites Slaughter the Syrians | The title fits 1 Kings 20 and 2 Kings 6-7. Nothing is linked. |
-| 113 | Artaxerxes Grants Freedom to the Jews | Ezra 7 and Nehemiah 2 both have an Artaxerxes freeing or sending Jews. Nothing is linked. |
+| 113 | Artaxerxes Grants Freedom to the Jews | Ezra 7 and Nehemiah 2 both fit the title, so `scripture_ref` stays null. The plate is linked to `artaxerxes-decree`, basis `named-in-title` (Kevin, 2026-11-07). |
 | 139 | The Prophet Isaiah | A portrait, not one passage. |
 | 142 | The Prophet Jeremiah | A portrait, not one passage. |
 | 144 | People Mourn over the Destruction of Jerusalem | The mourning is not pinned to one text. |
@@ -76,7 +76,7 @@ Also excluded, with no plate linked to them: the modern Samuels (Marsden, Lamb, 
 - Plate 111 links `cyrus-decree-of-return`, which cites Ezra 1:1-4. The plate is the vessels in Ezra 1:7-11. Cyrus is named in the title.
 - Plate 115 links `nehemiah-comes-to-jerusalem` (Neh 2:11). The plate is the night ride (Neh 2:13-15) in that arrival, not the hearing at Susa and not the rebuilding.
 - Plates 137 and 138 link the existing person `job`. Jones identifies him as Issachar's third son (Gen 46:13) and as the man of the trial. Both the person and `job-trial` are linked.
-- Plate 189 keeps `birth-of-jesus`. Viewed: it is the Luke 2 nativity (Mary, the infant, Joseph with a staff, shepherds and animals), and the event cites Matthew 2:1-23. The event record was not edited. See C11 in `docs/OPEN-QUESTIONS-FOR-KEVIN.md`. Plates 161 to 163 are the star, the flight and the massacre, which sit inside Matthew 2, and they are not linked to the birth event. Plate 163 does not link Herod: Matt 2:16 names him, and he is not drawn. It does not link `reign-of-herod`.
+- Plate 189 keeps `birth-of-jesus`. Viewed: it is the Luke 2 nativity (Mary, the infant, Joseph with a staff, shepherds and animals), and the event cites Matthew 2:1-23. The event record was not edited. Kevin kept this link on 2026-11-07 (C11 in `docs/OPEN-QUESTIONS-FOR-KEVIN.md`). Plates 161 to 163 are the star, the flight and the massacre, which sit inside Matthew 2, and they are not linked to the birth event. Plate 163 does not link Herod: Matt 2:16 names him, and he is not drawn. It does not link `reign-of-herod`.
 - `death-and-resurrection-of-christ` is linked only where the plate is the death, the burial or the empty tomb: 175, 176, 187, 206, 207, 208, 220, 221, 222. It is not linked to the scourging, the crown of thorns, the mocking, the fall under the cross, the walk to Emmaus, the ascension, or the catch of fish.
 - Plates 207 and 221 use a chapter reference (`Luke.23`, `John.19`). Lifting the cross, and the lament over the body, are not one verse. The title gives the chapter.
 
@@ -253,7 +253,7 @@ One row per gap. A plate can appear more than once when the scene needs more tha
 | 105 | Jabesh-Gileadites Recover the Bodies of Saul and His Sons | The men of Jabesh-gilead, as a group | They take the bodies (1 Sam 31:12). Saul is named in the title and is linked. Several bodies lie on the wall, and none is marked as Jonathan rather than another son, so Jonathan is not linked. |
 | 107 | Solomon Receives the Queen of Sheba | The queen of Sheba | She comes to Solomon (1 Kgs 10:1-2). Solomon is linked. The sons of Sheba are a different name and are not linked. |
 | 110 | The Death of Athaliah | Jehoiada | He brings Athaliah out (2 Kgs 11:13-15). Athaliah is linked. |
-| 113 | Artaxerxes Grants Freedom to the Jews | Artaxerxes, once the king is chosen | The title fits Ezra 7 and Nehemiah 2. artaxerxes-decree cites Neh 2:1, the cupbearer's private request, and its note will not choose Longimanus or Mnemon. Viewed: a king proclaiming to a crowd, so neither that event nor artaxerxes-longimanus is linked. See C11. |
+| 113 | Artaxerxes Grants Freedom to the Jews | Artaxerxes, once the king is chosen | The event `artaxerxes-decree` is linked, basis `named-in-title` (Kevin, 2026-11-07). No Artaxerxes person was created. `artaxerxes-longimanus` and `artaxerxes-mnemon` are not linked. `scripture_ref` stays null. |
 | 114 | Ezra Kneels in Prayer | Ezra | He prays (Ezra 9:5-6). |
 | 115 | Nehemiah Views the Ruins of Jerusalem's Walls | Nehemiah | He rides around the walls (Neh 2:13-15). The arrival event is linked. |
 | 116 | Ezra Reads the Law to the People | Ezra, and Nehemiah | Ezra reads (Neh 8:2-3). Nehemiah is present at 8:9, which is after the reading the title names, so he is not linked. nehemiah-reforms is a different set of acts. |
