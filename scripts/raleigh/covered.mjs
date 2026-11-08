@@ -1,12 +1,15 @@
 #!/usr/bin/env node
-// Covered text of Raleigh's History (1617): Preface, contents, Book I, Part I,
-// Chapters I–VIII. Rebuilds data/raleigh-accounts.json. With --write, also adds
-// a person record for every named individual in that range who does not already
-// have one. Undated people get a null CFAH date and no sort year.
+// Covered text of Raleigh's History (1617): Preface, contents, Book I, Part I.
+// Rebuilds data/raleigh-accounts.json. With --write, also adds a person record
+// for every named individual in that range who does not already have one.
+// Undated people get a null CFAH date and no sort year.
 //
 //   node scripts/raleigh/covered.mjs
-//   node scripts/raleigh/covered.mjs --write
+//   node scripts/raleigh/covered.mjs --through=12
+//   node scripts/raleigh/covered.mjs --through=12 --write
 //
+// --through is the last Book I, Part I chapter. It cannot be less than 8, because
+// passes 1–3 already covered Chapters I–VIII. Book II is not included.
 // A passage is attached by the name as printed. Groups, places, and unnamed
 // people are not split into individuals. God, Jehovah, and the Holy Ghost are
 // not person records. Ambiguous shared names are left unattached.
@@ -20,6 +23,11 @@ const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..', '..');
 const DATA = join(root, 'data');
 const write = process.argv.includes('--write');
+const throughArg = process.argv.find((a) => a.startsWith('--through='));
+const throughChapter = throughArg ? Number(throughArg.slice('--through='.length)) : 12;
+if (!Number.isInteger(throughChapter) || throughChapter < 8 || throughChapter > 12) {
+  throw new Error('--through must be an integer from 8 to 12 (Book I, Part I ends at Chapter XII)');
+}
 const LINK = 'https://texts.earlyprint.org/works/A10357.xml';
 const SRC = 'raleigh-history-of-the-world';
 const SRC_ID = 'raleigh-history-of-the-world-1617';
@@ -40,7 +48,7 @@ for (const f of readdirSync(join(DATA, 'events')).filter((f) => f.endsWith('.jso
 const nameDoc = readJSON(join(DATA, 'name-forms.json'));
 
 const xml = loadXml(root);
-const passages = extractPassages(xml, { throughChapter: 8 });
+const passages = extractPassages(xml, { throughChapter });
 const corpus = normalizedDocumentText(xml);
 for (const p of passages) {
   if (!corpus.includes(p.passage)) throw new Error(`passage ${p.id} is not verbatim in the 1617 text (${p.citation})`);
@@ -415,6 +423,48 @@ const FORCE = {
   nonivs: 'nonius-marcellus',
   marcellus: 'nonius-marcellus',
   marcellvs: 'nonius-marcellus',
+  // Chapters IX–XII. A genitive or a possessive stays on the person already named.
+  // A Latin word, a plural class, and the Lord's “ISHI” are not people.
+  abrahami: 'abraham', abrahams: 'abraham',
+  beli: 'belus',
+  // Cyril’s name for Belus in the sepulchre paragraph. Not a second man.
+  arbelus: 'belus', arbelvs: 'belus',
+  nini: 'ninus', ninyas: 'ninias', zameis: 'ninias',
+  zoroastris: 'zoroaster',
+  daniels: 'daniel',
+  pauls: 'paul',
+  peters: 'peter',
+  nabuchodonosors: 'nebuchadnezzar-ii',
+  theophili: 'theophilus', theophilus: 'theophilus',
+  polychronij: 'polychronius', polychronius: 'polychronius',
+  sosthenes: 'hostanes', hostanes: 'hostanes',
+  hostianes: 'hostianes',
+  vatablvs: 'vatablus', uatablus: 'vatablus', vatablus: 'vatablus',
+  vives: 'viues', uiues: 'viues', viues: 'viues',
+  sabatius: 'tanais',
+  thuras: 'arius',
+  barzanes: 'barzanis',
+  sophocles: 'sophocles',
+  methodius: 'methodius',
+  locus: null, maiestie: null, maiesties: null, origine: null, ishi: null,
+  saturnes: null, saturni: null,
+  junoes: null, junones: null, ivnoes: null, ivnones: null,
+  loyseau: 'loyseau', tholosanus: 'tholosanus', agesilaus: 'agesilaus', charron: 'charron',
+  nauclerus: 'nauclerus', torniellus: 'torniellus', reineccius: 'reineccius',
+  menon: 'menon', hermodorus: 'hermodorus', dinon: 'dinon', oromasdes: 'oromasdes',
+  epimenides: 'epimenides', sedulius: 'sedulius', lycurgus: 'lycurgus',
+  hospinian: 'hospinian', crinitus: 'crinitus', porphyrius: 'porphyrius', budas: 'budas',
+  caluin: 'caluin', vincentius: 'vincentius', laertius: 'laertius', psellus: 'psellus',
+  cardan: 'cardan', cardans: 'cardan', triton: 'triton', dagon: 'dagon',
+  bellonius: 'bellonius', proclus: 'proclus', arianus: 'arianus', dercetaeus: 'dercetaeus',
+  pletho: 'gemisthius', gemisthius: 'gemisthius', cedrenus: 'cedrenus', cassianus: 'cassianus',
+  irari: 'irari', garsias: 'garsias', halycarnassaeus: 'halycarnassaeus',
+  derceta: 'derceta', dercetis: 'derceta', patritius: 'patritius', parisiensis: 'parisiensis',
+  // Arabia Foelix and Foelix Iulia are places. M. Foelix is the phrase below.
+  thomas: 'thomas-aquinas', aquinas: 'thomas-aquinas',
+  adimantus: 'adimantus',
+  // Bare Dion in the Berosus list. Dion Neapolites is a different man (phrase below).
+  dion: 'dion',
 };
 
 const PHRASES = [
@@ -489,6 +539,25 @@ const PHRASES = [
   ['pinetus acyla', 'pinetus-acyla', 'Pinetus Acyla'],
   ['andrew theuet', 'andrew-theuet', 'Andrew Theuet'],
   ['mahomet aben alhamar', 'mahomet-aben-alhamar', 'Mahomet Aben Alhamar'],
+  ['alexander polyhistor', 'alexander-polyhistor', 'Alexander Polyhistor'],
+  ['iulius africanus', 'julius-africanus', 'Iulius Africanus'],
+  ['julius africanus', 'julius-africanus', 'Iulius Africanus'],
+  ['sixtus senensis', 'sixtus-senensis', 'Sixtus Senensis'],
+  ['sixtvs senensis', 'sixtus-senensis', 'Sixtus Senensis'],
+  ['picus mirandula', 'mirandola', 'Picus Mirandula'],
+  ['lodouicus viues', 'viues', 'Viues'],
+  ['l. viues', 'viues', 'Viues'],
+  ['l. vives', 'viues', 'Viues'],
+  ['simon magus', 'simon-magus', 'Simon Magus'],
+  ['epimenides cretensis', 'epimenides', 'Epimenides'],
+  ['serenus abbas', 'serenus', 'Serenus Abbas'],
+  ['rabbi auornathan', 'auornathan', 'Rabbi Auornathan'],
+  ['archangelus de burgo', 'archangelus-de-burgo', 'Archangelus de Burgo'],
+  ['m. foelix', 'foelix', 'M. Foelix'],
+  ['b. rhenanus', 'rhenanus', 'B. Rhenanus'],
+  ['thomas aquinas', 'thomas-aquinas', 'Thomas Aquinas'],
+  ['guilandinus melchior', 'guilandinus-melchior', 'Guilandinus Melchior'],
+  ['dion neapolites', 'dion-neapolites', 'Dion Neapolites'],
 ].sort((a, b) => b[0].length - a[0].length);
 
 const SHORT = new Set(['og', 'uz', 'dan', 'lot', 'job', 'iob', 'gog', 'lud', 'put', 'hul', 'ham', 'shem', 'sem', 'noe', 'eva', 'eve', 'seth', 'adam', 'saul', 'cain', 'abel', 'ira']);
@@ -737,7 +806,31 @@ for (const [key, bucket] of buckets) {
   const base = id;
   while (people.has(id) || created.some((c) => c.id === id)) id = `${base}-${n++}`;
   bucket.id = id;
-  bucket.title = { 'nonius-marcellus': 'Nonius Marcellus', zerah: 'Zerah' }[id] || title;
+  bucket.title = {
+    'nonius-marcellus': 'Nonius Marcellus',
+    zerah: 'Zerah',
+    vatablus: 'Vatablus',
+    viues: 'Viues',
+    'sixtus-senensis': 'Sixtus Senensis',
+    'julius-africanus': 'Iulius Africanus',
+    'alexander-polyhistor': 'Alexander Polyhistor',
+    hostanes: 'Hostanes',
+    polychronius: 'Polychronius',
+    theophilus: 'Theophilus',
+    gemisthius: 'Gemisthius',
+    caluin: 'Caluin',
+    foelix: 'M. Foelix',
+    rhenanus: 'B. Rhenanus',
+    serenus: 'Serenus Abbas',
+    auornathan: 'Rabbi Auornathan',
+    'archangelus-de-burgo': 'Archangelus de Burgo',
+    'simon-magus': 'Simon Magus',
+    derceta: 'Derceta',
+    adimantus: 'Adimantus',
+    dion: 'Dion',
+    'dion-neapolites': 'Dion Neapolites',
+    'guilandinus-melchior': 'Guilandinus Melchior',
+  }[id] || title;
   newIds.set(key, id);
   created.push(bucket);
   registerToken(title, id);
@@ -796,6 +889,14 @@ addEvent('the-flood', (p) => /generall floud|vniuersall floud|universall floud|f
 addEvent('founding-of-babel', (p) => /babel|babell|confusion of tongues|confusion of languages|towre of babel|tower of babel/i.test(p.passage));
 addEvent('flood-of-ogyges', (p) => /\bogyges\b|\bogygis\b|\bogyge\b/i.test(p.passage));
 addEvent('founding-of-rome', (p) => /3280/.test(p.passage) && /rome/i.test(p.passage));
+addEvent('nimrod-builds-nineveh', (p) => {
+  if (p.kind !== 'body' || Number(p.chapter) < 9 || Number(p.chapter) > 12) return false;
+  if (!/nimrod/i.test(p.passage) || !/niniue/i.test(p.passage)) return false;
+  // §. III is the argument that Nimrod, not Assur, built Nineveh.
+  // The other hits are the sentences that say he built it or began it.
+  if (/Chapter X, §\. III/.test(p.citation)) return true;
+  return /begun by nimrod|built niniue|aedificauit niniuen|built foure more cities/i.test(p.passage);
+});
 for (const event of events.values()) {
   for (const entry of event.chronologies || []) {
     if (entry.source !== SRC || !entry.date) continue;
@@ -919,7 +1020,7 @@ function personDoc(bucket) {
     scripture_refs: [],
     sources: [SRC_ID],
     related: [],
-    free_source_links: [{ source_id: SRC_ID, url: LINK, locator: first ? first.citation : 'Preface through Book I, Part I, Chapter VIII' }],
+    free_source_links: [{ source_id: SRC_ID, url: LINK, locator: first ? first.citation : 'Preface through Book I, Part I, Chapter XII' }],
   };
   if (alts.length) doc.alt_names = alts;
   return doc;
@@ -931,16 +1032,20 @@ function formsFor(id, title) {
   const person = nameDoc.people.find((p) => p.id === id);
   const stored = new Set((person?.forms || []).map((f) => f.form.toLowerCase()));
   stored.add((title || '').toLowerCase());
-  const already = (person?.forms || []).filter((f) => f.source_text_id === SRC_ID && /Chapters I–VIII/.test(f.note || '')).length;
+  const newNote = 'Spelling only. Read in Book I, Part I, Chapters IX–XII.';
+  const alreadyNew = (person?.forms || []).filter((f) => f.source_text_id === SRC_ID && f.note === newNote).length;
   const out = [];
   const held = (accounts.get(id) || []).map(passageById);
   for (const [form] of ranked) {
-    if (already + out.length >= 8) break;
+    if (alreadyNew + out.length >= 8) break;
     if (!form || stored.has(form.toLowerCase())) continue;
     const holder = held.find((p) => p && p.passage.includes(form));
     if (!holder) continue;
+    // Pass 3 already stored the spellings of Chapters I–VIII. Add a form only
+    // when the passage that prints it is in the chapters this pass reads.
+    if (!(holder.kind === 'body' && Number(holder.chapter) >= 9)) continue;
     stored.add(form.toLowerCase());
-    out.push({ form, citation: `${cite(holder)}. The passage prints “${form}”.` });
+    out.push({ form, citation: `${cite(holder)}. The passage prints “${form}”.`, note: newNote });
   }
   return out;
 }
@@ -974,13 +1079,44 @@ const report = {
   accounts: accounts.size,
   peopleAccounts: [...accounts.keys()].filter((id) => people.has(id) || createdKept.some((b) => b.id === id)).length,
   eventAccounts: [...accounts.keys()].filter((id) => events.has(id)),
+  nineveh: accounts.get('nimrod-builds-nineveh') || [],
+  foelix: (accounts.get('foelix') || []).length,
+  thomasAquinas: (accounts.get('thomas-aquinas') || []).length,
 };
 console.log(JSON.stringify(report, null, 2));
 console.log('--- new people ---');
 for (const b of createdKept.sort((a, c) => a.id.localeCompare(c.id))) {
   const p = earliestPassage(b.id);
-  console.log(`${isBackfill(p) ? 'backfill' : 'ch8'}\t${b.id}\t${b.title}\t${(accounts.get(b.id) || []).length}\t${p?.citation || ''}`);
+  console.log(`${isBackfill(p) ? 'backfill' : `ch${p?.chapter || '?'}`}\t${b.id}\t${b.title}\t${(accounts.get(b.id) || []).length}\t${p?.citation || ''}`);
 }
+
+const prevAccounts = readJSON(join(DATA, 'raleigh-accounts.json'));
+const prevById = new Map(prevAccounts.passages.map((p) => [p.id, p]));
+let passageDrift = 0;
+for (const p of passages) {
+  const old = prevById.get(p.id);
+  if (!old) continue;
+  const signatureEnd = p.signatureEnd || p.signature;
+  if (
+    old.passage !== p.passage ||
+    old.citation !== p.citation ||
+    old.signature !== p.signature ||
+    old.signature_end !== signatureEnd
+  ) passageDrift++;
+}
+let dropped = 0;
+const dropSamples = [];
+for (const [id, oldIds] of Object.entries(prevAccounts.accounts)) {
+  const next = new Set(accounts.get(id) || []);
+  for (const pid of oldIds) {
+    if (!next.has(pid)) {
+      dropped++;
+      if (dropSamples.length < 12) dropSamples.push(`${id} ${pid}`);
+    }
+  }
+}
+console.log(`passageDrift ${passageDrift} droppedLinks ${dropped}`);
+for (const s of dropSamples) console.log('drop', s);
 
 if (!write) {
   console.log('report only');
@@ -1007,7 +1143,7 @@ function pushForms(id, title) {
       citation: made.citation,
       link: LINK,
       source_text_id: SRC_ID,
-      note: 'Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I–VIII.',
+      note: made.note,
     } });
   }
 }

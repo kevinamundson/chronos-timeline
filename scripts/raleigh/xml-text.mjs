@@ -1,7 +1,9 @@
 // Text of the 1617 History (EarlyPrint unadorned XML), for the body intake.
 // Margin notes are left out. Tags are left out. Whitespace collapses to one space.
 // A passage is one paragraph, one heading, one contents item, or one body list.
-// The covered range is the Preface, the contents, and Book I, Part I, Chapters I–VIII.
+// The covered range is the Preface, the contents, and Book I, Part I.
+// `throughChapter` is the last chapter of that book to include. Pass 3 stopped at VIII.
+// Pass 4 continues from IX. Book II is a later part and is not included.
 
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -63,7 +65,7 @@ function citationOf(loc, signature, signatureEnd) {
   return `${bits.join(', ')}, ${sig}`;
 }
 
-function location(stack, inBody) {
+function location(stack, inBody, maxChapter) {
   let preface = false;
   let contents = false;
   let part = null;
@@ -82,7 +84,7 @@ function location(stack, inBody) {
   }
   if (!inBody && preface) return { kind: 'preface', book: null, part: null, chapter: null, section: null, subsection: null };
   if (!inBody && contents) return { kind: 'contents', book, part: null, chapter: null, section: null, subsection: null };
-  if (inBody && part === '1' && book === '1' && chapter && Number(chapter) >= 1 && Number(chapter) <= 8) {
+  if (inBody && part === '1' && book === '1' && chapter && Number(chapter) >= 1 && Number(chapter) <= maxChapter) {
     return { kind: 'body', book, part, chapter, section, subsection };
   }
   return null;
@@ -94,7 +96,7 @@ function location(stack, inBody) {
  * Each passage carries `hi` (the italic or highlighted spans inside it) for name work.
  * Those spans are not a separate field in the account file.
  */
-export function extractPassages(xml, { throughChapter = 8 } = {}) {
+export function extractPassages(xml, { throughChapter = 12 } = {}) {
   const re = /<!--[\s\S]*?-->|<!\[CDATA\[[\s\S]*?\]\]>|<[^>]+>|[^<]+/g;
   const stack = [];
   let inBody = false;
@@ -107,12 +109,7 @@ export function extractPassages(xml, { throughChapter = 8 } = {}) {
   let contentsChapterLabel = null;
   const maxChapter = throughChapter;
 
-  const inScope = () => {
-    const loc = location(stack, inBody);
-    if (!loc) return null;
-    if (loc.kind === 'body' && Number(loc.chapter) > maxChapter) return null;
-    return loc;
-  };
+  const inScope = () => location(stack, inBody, maxChapter);
 
   const finish = () => {
     if (!cap) return;
