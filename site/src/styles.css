@@ -71,6 +71,10 @@ main { padding-top: 16px; padding-bottom: 48px; }
 .grid2 { display: grid; gap: 0 20px; grid-template-columns: 1fr; }
 @media (min-width: 768px) { .grid2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); } }
 .section-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.tl-title-row { display: flex; align-items: center; gap: 2px; min-width: 0; }
+.tl-title-row h2 { margin: 0; }
+button.icon-btn { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 44px; height: 44px; padding: 0; background: transparent; color: var(--accent); }
+button.icon-btn:hover { background: var(--accent-fill); color: var(--accent); }
 .toolbar { display: flex; gap: 8px; }
 .toolbar button[aria-label] { font-size: 22px; line-height: 1; }
 button { font: inherit; font-size: 15px; min-height: 44px; min-width: 44px; padding: 0 14px; border-radius: 10px; border: 0; background: var(--bg-fill); color: var(--label); cursor: pointer; }
@@ -292,18 +296,115 @@ button.inset-row[aria-pressed="true"] .switch::after { transform: translateX(20p
 /* Home timeline scroll bars stay painted. macOS overlay bars, and vis-timeline's own bar, hide when the pointer is still.
    Events and People are separate panes. Each pane has a vertical bar. One horizontal bar sits under both. */
 .tl-split { display: flex; flex-direction: column; gap: 10px; }
-.tl-block { display: grid; grid-template-columns: minmax(0, 1fr) 16px; gap: 6px; align-items: stretch; }
-.tl-block > .timeline { grid-column: 1; grid-row: 1; min-width: 0; }
-.tl-block > .tl-vscroll { grid-column: 2; grid-row: 1; }
+.tl-block { display: grid; grid-template-columns: minmax(0, 1fr) 16px; column-gap: 6px; row-gap: 6px; align-items: stretch; }
+.tl-pane-title { grid-column: 1; grid-row: 1; margin: 0; font-size: 17px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; }
+.tl-block > .timeline { grid-column: 1; grid-row: 2; min-width: 0; }
+.tl-block > .tl-vscroll { grid-column: 2; grid-row: 2; }
 .tl-split > .tl-hscroll { height: 16px; margin-right: 22px; }
-/* Same label width in both panes so the year scales line up. */
-.tl-split .vis-label .vis-inner { min-width: 88px; box-sizing: border-box; white-space: nowrap; }
+/* Home charts have no group gutter. Events and People are headings above the panes.
+   The left panel is a 1px scrollport: a zero-width box cannot scroll, and vis moves
+   the chart from that scrollport. It stays in vis's own coordinate system so the
+   year axis and the items do not drift apart. */
+.home-timeline .vis-panel.vis-left {
+  width: 1px !important; min-width: 1px !important; max-width: 1px !important;
+  padding: 0 !important; border-width: 0 !important; overflow-x: hidden !important;
+  opacity: 0;
+}
+.home-timeline .vis-label,
+.home-timeline .vis-label .vis-inner {
+  min-width: 0 !important; width: 0 !important; max-width: 0 !important;
+  padding: 0 !important; border-width: 0 !important; overflow: hidden;
+}
 .tl-hscroll, .tl-vscroll { position: relative; background: var(--bg-fill); border-radius: 8px; touch-action: none; }
 .tl-scroll-thumb { position: absolute; background: var(--label-2); border-radius: 8px; opacity: 1; }
 .tl-hscroll .tl-scroll-thumb { top: 2px; height: 12px; min-width: 28px; }
 .tl-vscroll .tl-scroll-thumb { left: 2px; width: 12px; min-height: 28px; }
 .home-timeline .vis-panel.vis-vertical-scroll { scrollbar-width: none; }
 .home-timeline .vis-panel.vis-vertical-scroll::-webkit-scrollbar { display: none; width: 0; height: 0; }
+
+/* Year-range sheet. One shared window for Events and People. Wheels are virtualized. */
+.tl-range-dialog {
+  width: min(26rem, calc(100vw - 24px));
+  max-height: calc(100vh - 24px);
+  margin: auto;
+  padding: 20px 16px 16px;
+  border: 0;
+  border-radius: 16px;
+  background: var(--bg-elev);
+  color: var(--label);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .24);
+  overflow: auto;
+}
+.tl-range-dialog::backdrop { background: rgba(0, 0, 0, .45); }
+.tl-range-title { margin: 0 0 4px; font-size: 20px; }
+.tl-range-form { margin: 0; }
+.tl-range-dialog .segmented { display: flex; width: 100%; margin: 12px 0; }
+.tl-range-dialog .segmented button { flex: 1 1 0; }
+.tl-range-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.tl-range-kicker { margin: 0 0 4px; font-size: 13px; font-weight: 600; color: var(--label-2); text-align: center; }
+.tl-range-wheels { display: flex; gap: 4px; min-width: 0; }
+.tl-wheel { --tl-row: 44px; flex: 1 1 0; min-width: 0; }
+.tl-wheel-month { flex: 0.8 1 0; }
+.tl-wheel-year { flex: 1.2 1 0; }
+.tl-wheel[hidden] { display: none !important; }
+.tl-wheel-view { position: relative; height: calc(var(--tl-row) * 5); }
+.tl-wheel-band {
+  position: absolute; z-index: 0; left: 2px; right: 2px; top: calc(var(--tl-row) * 2); height: var(--tl-row);
+  border-radius: 8px; background: var(--bg-fill); pointer-events: none;
+}
+.tl-wheel-scroll {
+  position: relative; z-index: 1; height: calc(var(--tl-row) * 5); overflow-y: auto;
+  overscroll-behavior: contain; scrollbar-width: none; background: transparent; touch-action: pan-y;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent);
+}
+.tl-wheel-scroll::-webkit-scrollbar { width: 0; height: 0; display: none; }
+.tl-wheel-spacer { position: relative; width: 100%; }
+.tl-wheel-item {
+  position: absolute; left: 0; right: 0; height: var(--tl-row);
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 2px; font-size: 16px; font-variant-numeric: tabular-nums; color: var(--label);
+  white-space: nowrap; user-select: none; -webkit-user-select: none;
+}
+.tl-wheel-item[hidden] { display: none !important; }
+.tl-wheel-item.is-selected { font-weight: 600; }
+.tl-wheel-spin { position: relative; z-index: 1; }
+.tl-wheel-spin:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+/* The highlighted year becomes a number field. BC and AD stay on their own control: a numeric keypad cannot type the era. */
+.tl-wheel { position: relative; }
+.tl-wheel-typeable .tl-wheel-item.is-selected { cursor: text; }
+.tl-wheel-edit {
+  position: absolute; z-index: 2; left: 0; right: 0; top: calc(var(--tl-row) * 2); height: var(--tl-row);
+  display: flex; align-items: center;
+}
+.tl-wheel-edit[hidden],
+.tl-wheel-era[hidden] { display: none !important; }
+.tl-wheel-year-input {
+  width: 100%; height: 44px; min-height: 44px; margin: 0; padding: 0 4px;
+  border: 0; border-radius: 8px; background: var(--bg-fill); color: var(--label);
+  box-shadow: inset 0 0 0 2px var(--accent);
+  font: inherit; font-size: 17px; font-weight: 600; line-height: 44px;
+  font-variant-numeric: tabular-nums; text-align: center; caret-color: var(--accent);
+  -webkit-appearance: none; appearance: none;
+}
+.tl-wheel.is-editing .tl-wheel-item.is-selected { color: transparent; }
+.tl-wheel.is-editing .tl-wheel-scroll { pointer-events: none; }
+.tl-range-dialog .tl-wheel-era { width: 100%; margin: 8px 0 0; }
+.tl-range-dialog .tl-wheel-era button { padding-left: 0.35rem; padding-right: 0.35rem; }
+.tl-range-error { margin: 8px 0 0; color: var(--flag-diff); font-size: 15px; }
+.tl-range-actions { display: flex; gap: 8px; position: sticky; bottom: 0; margin-top: 12px; padding-top: 8px; background: var(--bg-elev); }
+.tl-range-actions button { flex: 1 1 0; }
+.tl-range-apply,
+.tl-range-apply:hover,
+.tl-range-apply:focus-visible { background: var(--accent); color: #fff; }
+.tl-range-apply:disabled,
+.tl-range-apply:disabled:hover { opacity: .45; cursor: default; }
+@media (prefers-color-scheme: dark) {
+  .tl-range-dialog { border: 1px solid var(--sep); box-shadow: none; }
+  .tl-range-apply,
+  .tl-range-apply:hover,
+  .tl-range-apply:focus-visible { color: #000; }
+}
 
 /* Pagefind UI */
 #search { --pagefind-ui-primary: var(--accent); --pagefind-ui-text: var(--label); --pagefind-ui-background: var(--bg-elev); --pagefind-ui-border: var(--sep); --pagefind-ui-tag: var(--bg-fill); --pagefind-ui-font: var(--font); --pagefind-ui-border-radius: 10px; }

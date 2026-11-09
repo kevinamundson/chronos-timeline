@@ -769,23 +769,60 @@ const tierCls = (r) => (TIERS[r.sorting_basis?.tier] || TIERS.none).cls;
   <p class="lede">A timeline of the mighty works of God among the nations, beginning at Creation and drawn from the earliest sources available. Records are sorted by the <a href="/chronologies/">Chronological Framework of Ancient History</a> (CFAH), with Scripture as the infallible standard. Other chronologies (Ussher–Jones, Ussher, Jordan, Josephus, Herodotus, Raleigh, Cory, Shuckford, Hales, the Irish annals, and more) are shown side by side for comparison.</p>
 </section>
 <section class="card" aria-labelledby="tl-h">
-  <div class="section-head"><h2 id="tl-h">Timeline</h2>
+  <div class="section-head">
+    <div class="tl-title-row">
+      <h2 id="tl-h">Timeline</h2>
+      <button type="button" class="icon-btn" id="tl-range-open" aria-haspopup="dialog" aria-controls="tl-range-dialog" aria-expanded="false" aria-label="Choose the years shown"><svg class="icon-cal" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    </div>
     <div class="toolbar" role="group" aria-label="Timeline controls">
       <button type="button" data-tl="in" aria-label="Zoom in">+</button>
       <button type="button" data-tl="out" aria-label="Zoom out">−</button>
       <button type="button" data-tl="fit">Show all</button>
     </div></div>
-  <p class="small muted">Drag, swipe, or use the scroll bars. Events and People each stay on screen, with a scroll bar of their own. Tier 1 is on. Turn other dating tiers on for more detail. Standby (no tier date) is off: it places a record that has no tier date, and it is not a sort year. Select an item to open it. Axis years are BC.</p>
+  <p class="small muted">Drag, swipe, or use the scroll bars. Events and People each stay on screen, with a scroll bar of their own. The calendar sets the years shown on both. Tier 1 is on. Turn other dating tiers on for more detail. Standby (no tier date) is off: it places a record that has no tier date, and it is not a sort year. Select an item to open it. Axis years are BC.</p>
   <div class="tl-split" id="timeline">
     <div class="tl-block">
-      <div id="timeline-events" class="timeline home-timeline" aria-label="Events"></div>
+      <h3 class="tl-pane-title" id="tl-events-h">Events</h3>
+      <div id="timeline-events" class="timeline home-timeline" role="region" aria-labelledby="tl-events-h"></div>
     </div>
     <div class="tl-block">
-      <div id="timeline-people" class="timeline home-timeline" aria-label="People"></div>
+      <h3 class="tl-pane-title" id="tl-people-h">People</h3>
+      <div id="timeline-people" class="timeline home-timeline" role="region" aria-labelledby="tl-people-h"></div>
     </div>
   </div>
   ${tierFilter(Object.entries(TIERS).filter(([k]) => k !== 'none').map(([k, t]) => tierToggle(t.cls, t.label, k === 'cfah-anchor', `tier-${t.cls}`)).join('') + tierToggle('standby', 'Standby (no tier date)', false, 'standby'), 'tier-note', 'Standby (no tier date): dashed and grey, off until that control is on. Not a sort year.')}
   <noscript><p>The interactive timeline needs JavaScript. The chronological list below has the same records.</p></noscript>
+  <dialog id="tl-range-dialog" class="tl-range-dialog" aria-labelledby="tl-range-title">
+    <form id="tl-range-form" class="tl-range-form" method="dialog">
+      <h3 id="tl-range-title" class="tl-range-title">Years shown</h3>
+      <p class="small muted" id="tl-range-note">Sets the years visible on Events and People. A month only narrows the view. It does not change a record. There is no year 0.</p>
+      <div class="segmented" role="group" aria-label="Precision">
+        <button type="button" id="tl-range-mode-year" aria-pressed="true">Year</button>
+        <button type="button" id="tl-range-mode-month" aria-pressed="false">Month and year</button>
+      </div>
+      <div class="tl-range-cols">
+        <div class="tl-range-col">
+          <p class="tl-range-kicker" id="tl-range-start-h">Start</p>
+          <div class="tl-range-wheels">
+            <div class="tl-wheel tl-wheel-month" id="tl-range-start-month" hidden></div>
+            <div class="tl-wheel tl-wheel-year" id="tl-range-start-year"></div>
+          </div>
+        </div>
+        <div class="tl-range-col">
+          <p class="tl-range-kicker" id="tl-range-end-h">End</p>
+          <div class="tl-range-wheels">
+            <div class="tl-wheel tl-wheel-month" id="tl-range-end-month" hidden></div>
+            <div class="tl-wheel tl-wheel-year" id="tl-range-end-year"></div>
+          </div>
+        </div>
+      </div>
+      <p class="tl-range-error" id="tl-range-error" role="alert" hidden>The start is after the end.</p>
+      <div class="tl-range-actions">
+        <button type="button" id="tl-range-cancel">Cancel</button>
+        <button type="submit" id="tl-range-apply" class="tl-range-apply" value="apply" aria-errormessage="tl-range-error">Apply</button>
+      </div>
+    </form>
+  </dialog>
 </section>
 <section class="card" aria-labelledby="map-h">
   <h2 id="map-h">Map</h2>

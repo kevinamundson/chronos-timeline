@@ -81,6 +81,432 @@ function barsVisible(b) {
   return barOk(b?.h, false) && barOk(b?.events, true) && barOk(b?.people, true);
 }
 
+async function homeLayout(page) {
+  return page.evaluate(() => {
+    function pane(id) {
+      const el = document.getElementById(id);
+      const block = el?.closest('.tl-block');
+      const title = block?.querySelector('.tl-pane-title');
+      if (!el || !title) return null;
+      const pr = el.getBoundingClientRect();
+      const tr = title.getBoundingClientRect();
+      const center = el.querySelector('.vis-panel.vis-center')?.getBoundingClientRect();
+      const left = el.querySelector('.vis-panel.vis-left')?.getBoundingClientRect();
+      return {
+        h: Math.round(pr.height),
+        title: title.textContent.trim(),
+        titleAbove: tr.bottom <= pr.top + 2,
+        titleAlign: Math.abs(tr.left - pr.left) < 8,
+        leftW: left ? Math.round(left.width) : null,
+        centerLeft: center ? Math.round(center.left) : null,
+        centerW: center ? Math.round(center.width) : null,
+        paneW: Math.round(pr.width),
+        paneLeft: Math.round(pr.left),
+      };
+    }
+    const button = document.getElementById('tl-range-open');
+    const heading = document.getElementById('tl-h');
+    const br = button?.getBoundingClientRect();
+    const hr = heading?.getBoundingClientRect();
+    return {
+      events: pane('timeline-events'),
+      people: pane('timeline-people'),
+      button: br && hr ? {
+        w: Math.round(br.width), h: Math.round(br.height),
+        gap: Math.round(br.left - hr.right),
+        dy: Math.round(Math.abs((br.top + br.bottom) / 2 - (hr.top + hr.bottom) / 2)),
+      } : null,
+    };
+  });
+}
+function layoutOk(panes) {
+  if (!panes?.events || !panes.people) return false;
+  const edge = (p) => (p.paneLeft + p.paneW) - (p.centerLeft + p.centerW);
+  return panes.events.h > 80 && panes.people.h > 80
+    && panes.events.title === 'Events' && panes.people.title === 'People'
+    && panes.events.titleAbove && panes.people.titleAbove
+    && panes.events.titleAlign && panes.people.titleAlign
+    && panes.events.leftW <= 2 && panes.people.leftW <= 2
+    && Math.abs(panes.events.centerLeft - panes.people.centerLeft) < 3
+    && Math.abs(panes.events.centerW - panes.people.centerW) < 3
+    && Math.abs(panes.events.centerLeft - panes.events.paneLeft) <= 4
+    && Math.abs(panes.people.centerLeft - panes.people.paneLeft) <= 4
+    && Math.abs(edge(panes.events)) <= 4 && Math.abs(edge(panes.people)) <= 4;
+}
+function buttonBeside(panes) {
+  const b = panes?.button;
+  return !!b && b.w >= 44 && b.h >= 44 && b.gap >= -2 && b.gap <= 16 && b.dy <= 8;
+}
+function parseYearLabel(text) {
+  const bc = String(text || '').match(/^(\d+) BC$/);
+  if (bc) return -Number(bc[1]);
+  const ad = String(text || '').match(/^AD (\d+)$/);
+  if (ad) return Number(ad[1]);
+  return null;
+}
+async function yearWindowStamp(page) {
+  return page.evaluate(() => {
+    const a = window.__timeline.getWindow();
+    const b = window.__timelinePeople.getWindow();
+    return { as: a.start.getTime(), ae: a.end.getTime(), bs: b.start.getTime(), be: b.end.getTime() };
+  });
+}
+async function yearField(page, id) {
+  return page.evaluate((wheelId) => {
+    const input = document.getElementById(wheelId + '-input');
+    const era = document.getElementById(wheelId + '-era');
+    const band = document.querySelector('#' + wheelId + ' .tl-wheel-band')?.getBoundingClientRect();
+    const ir = input?.getBoundingClientRect();
+    const mid = ir ? (ir.top + ir.bottom) / 2 : 0;
+    return {
+      inputmode: input?.getAttribute('inputmode') || '',
+      pattern: input?.getAttribute('pattern') || '',
+      label: input?.getAttribute('aria-label') || '',
+      value: input?.value || '',
+      visible: !!input && !input.closest('[hidden]') && !!ir && ir.height > 0,
+      centered: !!band && !!ir && mid >= band.top - 2 && mid <= band.bottom + 2,
+      ih: ir ? ir.height : 0,
+      eraLabel: era?.getAttribute('aria-label') || '',
+      eras: era ? [...era.querySelectorAll('button')].map((b) => ({
+        t: b.textContent.trim(),
+        pressed: b.getAttribute('aria-pressed'),
+        w: b.getBoundingClientRect().width,
+        h: b.getBoundingClientRect().height,
+      })) : [],
+      eraOutside: !!(input && era && !input.contains(era) && !era.contains(input)),
+      dialog: !!document.getElementById('tl-range-dialog')?.open,
+      text: document.querySelector('#' + wheelId + ' [role="spinbutton"]')?.getAttribute('aria-valuetext') || '',
+      errorHidden: document.getElementById('tl-range-error')?.hidden,
+      error: document.getElementById('tl-range-error')?.textContent || '',
+    };
+  }, id);
+}
+async function openYearField(page, id) {
+  await page.locator(`#${id} .tl-wheel-item.is-selected`).click();
+  await page.locator(`#${id}-input`).waitFor({ state: 'visible' });
+  await page.locator(`#${id}-era`).waitFor({ state: 'visible' });
+}
+// Typed years on the center of each year wheel. The era stays a separate control.
+async function typedYearEntry(page, tag) {
+  const stamp = await yearWindowStamp(page);
+  await page.locator('#tl-range-open').click();
+  await waitYearWheel(page, 'tl-range-start-year');
+  await waitYearWheel(page, 'tl-range-end-year');
+  const bounds = await page.evaluate(() => {
+    const dialog = document.getElementById('tl-range-dialog');
+    return { first: dialog.dataset.yearFirst, last: dialog.dataset.yearLast };
+  });
+  check(`${tag}: typed years run from 4504 BC to AD 2051`, bounds.first === '-4504' && bounds.last === '2051', JSON.stringify(bounds));
+  const startBefore = await page.locator('#tl-range-start-year [role="spinbutton"]').getAttribute('aria-valuetext');
+  await openYearField(page, 'tl-range-start-year');
+  const openedField = await yearField(page, 'tl-range-start-year');
+  const targetsOk = openedField.ih >= 44 && openedField.eras.length === 2 && openedField.eras.every((b) => b.w >= 44 && b.h >= 44);
+  check(`${tag}: the center year is a numeric field with a separate era`, openedField.visible && openedField.centered && openedField.inputmode === 'numeric' && openedField.pattern === '[0-9]*' && /^\d+$/.test(openedField.value) && openedField.eraOutside && openedField.eras.map((b) => b.t).join(',') === 'BC,AD' && /year number/i.test(openedField.label) && /era/i.test(openedField.eraLabel) && targetsOk, JSON.stringify(openedField));
+  const startInput = page.locator('#tl-range-start-year-input');
+  await startInput.fill('0');
+  await startInput.press('Enter');
+  const zero = await yearField(page, 'tl-range-start-year');
+  check(`${tag}: year 0 shows the inline error and does not move the wheel`, zero.dialog && zero.visible && !zero.errorHidden && /no year 0/i.test(zero.error) && zero.text === startBefore, JSON.stringify(zero));
+  await startInput.fill('9999');
+  await startInput.press('Enter');
+  const out = await yearField(page, 'tl-range-start-year');
+  check(`${tag}: an out-of-range year shows the inline error`, out.dialog && out.visible && !out.errorHidden && /4504 BC/.test(out.error) && /AD 2051/.test(out.error) && out.text === startBefore, JSON.stringify(out));
+  await startInput.fill('1446');
+  const eraPressed = (await page.locator('#tl-range-start-year-era button[aria-pressed="true"]').innerText()).trim();
+  await startInput.press('Enter');
+  await page.locator('#tl-range-start-year-input').waitFor({ state: 'hidden' });
+  await waitYearWheel(page, 'tl-range-start-year');
+  const typed = await page.locator('#tl-range-start-year [role="spinbutton"]').getAttribute('aria-valuetext');
+  const wantTyped = eraPressed === 'AD' ? 'AD 1446' : '1446 BC';
+  const stillOpen = await page.locator('#tl-range-dialog').evaluate((d) => d.open);
+  check(`${tag}: Enter commits a typed year and leaves the dialog open`, stillOpen && typed === wantTyped, JSON.stringify({ typed, wantTyped, eraPressed, stillOpen }));
+  await page.locator('#tl-range-start-year [role="spinbutton"]').focus();
+  await page.keyboard.press('ArrowDown');
+  await page.waitForTimeout(80);
+  const nudged = await page.locator('#tl-range-start-year [role="spinbutton"]').getAttribute('aria-valuetext');
+  check(`${tag}: the year wheel still scrolls after typing`, nudged !== typed && nudged !== '', JSON.stringify({ typed, nudged }));
+  await page.locator('#tl-range-end-year [role="spinbutton"]').focus();
+  await page.keyboard.press('Enter');
+  await page.locator('#tl-range-end-year-input').waitFor({ state: 'visible' });
+  const endField = await yearField(page, 'tl-range-end-year');
+  check(`${tag}: the end year center is a numeric field`, endField.visible && endField.centered && endField.inputmode === 'numeric' && endField.pattern === '[0-9]*' && endField.eraOutside && /^\d+$/.test(endField.value), JSON.stringify(endField));
+  const endInput = page.locator('#tl-range-end-year-input');
+  await endInput.fill('1500');
+  const endEra = (await page.locator('#tl-range-end-year-era button[aria-pressed="true"]').innerText()).trim();
+  await page.locator('#tl-range-start-year [role="spinbutton"]').focus();
+  await page.locator('#tl-range-end-year-input').waitFor({ state: 'hidden' });
+  await waitYearWheel(page, 'tl-range-end-year');
+  const endTyped = await page.locator('#tl-range-end-year [role="spinbutton"]').getAttribute('aria-valuetext');
+  check(`${tag}: blur commits the end year`, endTyped === (endEra === 'AD' ? 'AD 1500' : '1500 BC'), JSON.stringify({ endTyped, endEra }));
+  await page.locator('#tl-range-mode-month').click();
+  await page.waitForFunction(() => !document.getElementById('tl-range-start-month').hidden && document.getElementById('tl-range-mode-month').getAttribute('aria-pressed') === 'true');
+  const monthInputs = await page.locator('#tl-range-start-month input, #tl-range-end-month input').count();
+  await openYearField(page, 'tl-range-start-year');
+  const monthField = await yearField(page, 'tl-range-start-year');
+  check(`${tag}: Month and year mode types the year and not the month`, monthInputs === 0 && monthField.visible && monthField.inputmode === 'numeric' && monthField.pattern === '[0-9]*' && monthField.eraOutside, JSON.stringify({ monthInputs, monthField }));
+  const monthInput = page.locator('#tl-range-start-year-input');
+  await monthInput.fill('1400');
+  const monthEra = (await page.locator('#tl-range-start-year-era button[aria-pressed="true"]').innerText()).trim();
+  await monthInput.press('Enter');
+  await page.locator('#tl-range-start-year-input').waitFor({ state: 'hidden' });
+  await waitYearWheel(page, 'tl-range-start-year');
+  const monthTyped = await page.locator('#tl-range-start-year [role="spinbutton"]').getAttribute('aria-valuetext');
+  check(`${tag}: a typed year commits in Month and year mode`, monthTyped === (monthEra === 'AD' ? 'AD 1400' : '1400 BC'), JSON.stringify({ monthTyped, monthEra }));
+  await openYearField(page, 'tl-range-start-year');
+  await page.locator('#tl-range-start-year-era button', { hasText: 'BC' }).click();
+  await page.locator('#tl-range-start-year-input').fill('4504');
+  await page.locator('#tl-range-start-year-input').press('Enter');
+  await page.locator('#tl-range-start-year-input').waitFor({ state: 'hidden' });
+  await waitYearWheel(page, 'tl-range-start-year');
+  const atFloor = await page.locator('#tl-range-start-year [role="spinbutton"]').getAttribute('aria-valuetext');
+  await openYearField(page, 'tl-range-start-year');
+  await page.locator('#tl-range-start-year-era button', { hasText: 'AD' }).click();
+  await page.locator('#tl-range-start-year-input').fill('2051');
+  await page.locator('#tl-range-start-year-input').press('Enter');
+  await page.locator('#tl-range-start-year-input').waitFor({ state: 'hidden' });
+  await waitYearWheel(page, 'tl-range-start-year');
+  const atCap = await page.locator('#tl-range-start-year [role="spinbutton"]').getAttribute('aria-valuetext');
+  check(`${tag}: typed years accept 4504 BC and AD 2051`, atFloor === '4504 BC' && atCap === 'AD 2051', JSON.stringify({ atFloor, atCap }));
+  await openYearField(page, 'tl-range-start-year');
+  await page.locator('#tl-range-start-year-era button', { hasText: 'BC' }).click();
+  await page.locator('#tl-range-start-year-input').fill('4505');
+  await page.locator('#tl-range-start-year-input').press('Enter');
+  const past = await yearField(page, 'tl-range-start-year');
+  check(`${tag}: 4505 BC is out of range`, past.visible && !past.errorHidden && /4504 BC/.test(past.error) && past.text === 'AD 2051', JSON.stringify(past));
+  const mid = await yearWindowStamp(page);
+  check(`${tag}: typed years do not move the timeline until Apply`, mid.as === stamp.as && mid.ae === stamp.ae && mid.bs === stamp.bs && mid.be === stamp.be, JSON.stringify({ stamp, mid }));
+  await page.locator('#tl-range-start-year-input').fill('1200');
+  await page.waitForFunction(() => {
+    const text = document.querySelector('#tl-range-start-year [role="spinbutton"]')?.getAttribute('aria-valuetext') || '';
+    return text === '1200 BC' || text === 'AD 1200';
+  });
+  await page.keyboard.press('Escape');
+  await page.waitForFunction(() => !document.getElementById('tl-range-dialog').open && document.activeElement?.id === 'tl-range-open');
+  const escaped = await yearWindowStamp(page);
+  check(`${tag}: Escape closes a typed year without applying it`, escaped.as === stamp.as && escaped.ae === stamp.ae && escaped.bs === stamp.bs && escaped.be === stamp.be, JSON.stringify({ stamp, escaped }));
+  await page.locator('#tl-range-open').click();
+  await waitYearWheel(page, 'tl-range-start-year');
+  const restored = await page.locator('#tl-range-start-year [role="spinbutton"]').getAttribute('aria-valuetext');
+  check(`${tag}: reopening restores the window year after a cancelled type`, restored === startBefore && restored !== '1200 BC' && restored !== 'AD 1200', JSON.stringify({ restored, startBefore }));
+  await page.keyboard.press('Escape');
+  await page.waitForFunction(() => !document.getElementById('tl-range-dialog').open);
+}
+async function waitYearWheel(page, id) {
+  await page.waitForFunction((wheelId) => {
+    const root = document.getElementById(wheelId);
+    const spin = root?.querySelector('[role="spinbutton"]');
+    const sel = root?.querySelector('.tl-wheel-item.is-selected');
+    const band = root?.querySelector('.tl-wheel-band');
+    if (!spin || !sel || !band || !document.getElementById('tl-range-dialog')?.open) return false;
+    const br = band.getBoundingClientRect();
+    const r = sel.getBoundingClientRect();
+    const mid = (r.top + r.bottom) / 2;
+    return sel.textContent.trim() === (spin.getAttribute('aria-valuetext') || '').trim()
+      && mid >= br.top - 2 && mid <= br.bottom + 2;
+  }, id, { timeout: 5000 });
+}
+async function homeRangeBehavior(page, tag, restore) {
+  const saved = restore ? await page.evaluate(() => {
+    const w = window.__timeline.getWindow();
+    return [w.start.getTime(), w.end.getTime()];
+  }) : null;
+  const kept = await page.evaluate(() => ({
+    href: location.pathname + location.search,
+    pressed: [...document.querySelectorAll('[data-tier-toggle]')].map((b) => b.getAttribute('data-tier-toggle') + ':' + b.getAttribute('aria-pressed')).join(','),
+    data: document.getElementById('tl-data')?.textContent || '',
+  }));
+  const lay = await homeLayout(page);
+  check(`${tag}: Events and People are headings above full-width panels`, layoutOk(lay), JSON.stringify(lay));
+  check(`${tag}: calendar button sits beside the title`, buttonBeside(lay), JSON.stringify(lay?.button));
+  const windowYears = await page.evaluate(() => {
+    const w = window.__timeline.getWindow();
+    function parts(d, end) {
+      let x = d;
+      const exact = d.getUTCDate() === 1 && d.getUTCHours() === 0 && d.getUTCMinutes() === 0 && d.getUTCSeconds() === 0 && d.getUTCMilliseconds() === 0;
+      if (end && exact) x = new Date(d.getTime() - 1);
+      const a = x.getUTCFullYear();
+      const year = a < 0 ? a : a + 1;
+      return year < 0 ? `${-year} BC` : `AD ${year}`;
+    }
+    return { start: parts(w.start, false), end: parts(w.end, true) };
+  });
+  await page.locator('#tl-range-open').click();
+  await page.getByRole('dialog', { name: 'Years shown' }).waitFor();
+  await waitYearWheel(page, 'tl-range-start-year');
+  await waitYearWheel(page, 'tl-range-end-year');
+  const opened = await page.evaluate(() => {
+    const dialog = document.getElementById('tl-range-dialog');
+    const targets = ['#tl-range-cancel', '#tl-range-apply', '#tl-range-mode-year', '#tl-range-mode-month'].map((sel) => {
+      const r = document.querySelector(sel).getBoundingClientRect();
+      return { sel, w: r.width, h: r.height };
+    });
+    const row = document.querySelector('#tl-range-start-year .tl-wheel-item')?.getBoundingClientRect();
+    return {
+      yearPressed: document.getElementById('tl-range-mode-year').getAttribute('aria-pressed'),
+      monthPressed: document.getElementById('tl-range-mode-month').getAttribute('aria-pressed'),
+      monthHidden: document.getElementById('tl-range-start-month').hidden && document.getElementById('tl-range-end-month').hidden,
+      start: document.querySelector('#tl-range-start-year [role="spinbutton"]').getAttribute('aria-valuetext'),
+      end: document.querySelector('#tl-range-end-year [role="spinbutton"]').getAttribute('aria-valuetext'),
+      targets,
+      rowH: row ? row.height : 0,
+      note: document.getElementById('tl-range-note').textContent,
+    };
+  });
+  const targetsOk = opened.targets.every((t) => t.w >= 44 && t.h >= 44) && opened.rowH >= 44;
+  check(`${tag}: year dialog opens on the current years`, opened.yearPressed === 'true' && opened.monthPressed === 'false' && opened.monthHidden && opened.start === windowYears.start && opened.end === windowYears.end && /no year 0/i.test(opened.note), JSON.stringify({ opened, windowYears }));
+  check(`${tag}: year dialog controls are at least 44px`, targetsOk, JSON.stringify({ targets: opened.targets, rowH: opened.rowH }));
+  let trapped = true;
+  for (let i = 0; i < 16; i++) {
+    await page.keyboard.press('Tab');
+    const inside = await page.evaluate(() => !!document.activeElement?.closest('#tl-range-dialog'));
+    if (!inside) trapped = false;
+  }
+  check(`${tag}: year dialog keeps focus inside`, trapped);
+  await page.locator('#tl-range-start-year [role="spinbutton"]').focus();
+  await page.keyboard.press('ArrowDown');
+  await page.waitForTimeout(120);
+  const nudged = await page.evaluate(() => ({
+    s: document.querySelector('#tl-range-start-year [role="spinbutton"]').getAttribute('aria-valuetext'),
+    e: document.querySelector('#tl-range-end-year [role="spinbutton"]').getAttribute('aria-valuetext'),
+  }));
+  await page.locator('#tl-range-apply').click();
+  await page.waitForFunction(() => !document.getElementById('tl-range-dialog').open);
+  const applied = await page.evaluate(() => {
+    function yearOf(d) {
+      const a = d.getUTCFullYear();
+      return a < 0 ? a : a + 1;
+    }
+    const a = window.__timeline.getWindow();
+    const b = window.__timelinePeople.getWindow();
+    return {
+      as: yearOf(a.start), ae: yearOf(new Date(a.end.getTime() - 1)),
+      bs: yearOf(b.start), be: yearOf(new Date(b.end.getTime() - 1)),
+      ds: Math.abs(a.start - b.start), de: Math.abs(a.end - b.end),
+    };
+  });
+  const wantStart = parseYearLabel(nudged.s);
+  const wantEnd = parseYearLabel(nudged.e);
+  check(`${tag}: Apply sets both panels to the same years`, applied.ds < 1000 && applied.de < 1000 && applied.as === wantStart && applied.ae === wantEnd && applied.bs === wantStart && applied.be === wantEnd, JSON.stringify({ applied, nudged }));
+  const afterApply = await page.evaluate(() => ({
+    href: location.pathname + location.search,
+    pressed: [...document.querySelectorAll('[data-tier-toggle]')].map((b) => b.getAttribute('data-tier-toggle') + ':' + b.getAttribute('aria-pressed')).join(','),
+    data: document.getElementById('tl-data')?.textContent || '',
+  }));
+  check(`${tag}: the year dialog does not change filters, the URL, or the records`, afterApply.href === kept.href && afterApply.pressed === kept.pressed && afterApply.data === kept.data);
+  await page.locator('#tl-range-open').click();
+  await waitYearWheel(page, 'tl-range-start-year');
+  const ends = await page.evaluate(() => {
+    const dialog = document.getElementById('tl-range-dialog');
+    const spin = document.querySelector('#tl-range-start-year [role="spinbutton"]');
+    const scroller = document.querySelector('#tl-range-start-year .tl-wheel-scroll');
+    const row = +scroller.dataset.row;
+    const savedTop = scroller.scrollTop;
+    spin.focus();
+    return { first: dialog.dataset.yearFirst, last: dialog.dataset.yearLast, savedTop, row };
+  });
+  await page.keyboard.press('Home');
+  await page.waitForTimeout(80);
+  const atFirst = await page.locator('#tl-range-start-year [role="spinbutton"]').getAttribute('data-value');
+  await page.keyboard.press('End');
+  await page.waitForTimeout(80);
+  const atLast = await page.locator('#tl-range-start-year [role="spinbutton"]').getAttribute('data-value');
+  const boundary = await page.evaluate(({ row }) => {
+    const dialog = document.getElementById('tl-range-dialog');
+    const first = +dialog.dataset.yearFirst;
+    const index = (1 >= 1 && first < 0) ? (1 - 1 - first) : (1 - first);
+    const scroller = document.querySelector('#tl-range-start-year .tl-wheel-scroll');
+    scroller.scrollTop = index * row;
+    scroller.dispatchEvent(new Event('scroll'));
+    const texts = [...document.querySelectorAll('#tl-range-start-year .tl-wheel-item')].filter((el) => !el.hidden).map((el) => el.textContent.trim());
+    const value = document.querySelector('#tl-range-start-year [role="spinbutton"]').dataset.value;
+    return { texts, value };
+  }, { row: ends.row });
+  check(`${tag}: the year wheels reach both ends and skip year 0`, atFirst === ends.first && atLast === ends.last && boundary.value === '1' && boundary.texts.includes('1 BC') && boundary.texts.includes('AD 1') && !boundary.texts.some((t) => t === '0' || t === 'AD 0' || t === '0 BC' || t === '0 AD'), JSON.stringify({ atFirst, atLast, ends, boundary }));
+  await page.locator('#tl-range-cancel').click();
+  await page.waitForFunction(() => !document.getElementById('tl-range-dialog').open && document.activeElement?.id === 'tl-range-open');
+  const afterCancel = await page.evaluate(() => {
+    function yearOf(d) {
+      const a = d.getUTCFullYear();
+      return a < 0 ? a : a + 1;
+    }
+    const a = window.__timeline.getWindow();
+    const b = window.__timelinePeople.getWindow();
+    return { as: yearOf(a.start), ae: yearOf(new Date(a.end.getTime() - 1)), ds: Math.abs(a.start - b.start) };
+  });
+  check(`${tag}: Cancel leaves the shared window`, afterCancel.as === wantStart && afterCancel.ae === wantEnd && afterCancel.ds < 1000, JSON.stringify(afterCancel));
+  await page.locator('#tl-range-open').click();
+  await waitYearWheel(page, 'tl-range-start-year');
+  const invalid = await page.evaluate(() => {
+    const start = document.querySelector('#tl-range-start-year .tl-wheel-scroll');
+    const end = document.querySelector('#tl-range-end-year .tl-wheel-scroll');
+    const row = +start.dataset.row;
+    const last = +document.getElementById('tl-range-dialog').dataset.yearLast;
+    const first = +document.getElementById('tl-range-dialog').dataset.yearFirst;
+    const count = (first < 0 && last > 0) ? (last - first) : (last - first + 1);
+    start.scrollTop = (count - 1) * row;
+    end.scrollTop = 0;
+    start.dispatchEvent(new Event('scroll'));
+    end.dispatchEvent(new Event('scroll'));
+    return { disabled: document.getElementById('tl-range-apply').disabled, hidden: document.getElementById('tl-range-error').hidden };
+  });
+  check(`${tag}: an inverted range cannot be applied`, invalid.disabled && !invalid.hidden, JSON.stringify(invalid));
+  await page.locator('#tl-range-cancel').click();
+  await page.locator('#tl-range-open').click();
+  await waitYearWheel(page, 'tl-range-start-year');
+  await page.locator('#tl-range-mode-month').click();
+  await page.waitForFunction(() => !document.getElementById('tl-range-start-month').hidden && document.getElementById('tl-range-mode-month').getAttribute('aria-pressed') === 'true');
+  await page.locator('#tl-range-start-month [role="spinbutton"]').focus();
+  const monthBefore = await page.locator('#tl-range-start-month [role="spinbutton"]').getAttribute('aria-valuetext');
+  await page.keyboard.press('ArrowDown');
+  await page.waitForTimeout(80);
+  const monthAfter = await page.locator('#tl-range-start-month [role="spinbutton"]').getAttribute('aria-valuetext');
+  await page.locator('#tl-range-apply').click();
+  await page.waitForFunction(() => !document.getElementById('tl-range-dialog').open);
+  const monthWin = await page.evaluate(() => {
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const a = window.__timeline.getWindow();
+    const b = window.__timelinePeople.getWindow();
+    return { month: months[a.start.getUTCMonth()], ds: Math.abs(a.start - b.start), de: Math.abs(a.end - b.end) };
+  });
+  check(`${tag}: a month refines the view on both panels`, monthAfter !== monthBefore && monthWin.month === monthAfter && monthWin.ds < 1000 && monthWin.de < 1000, JSON.stringify({ monthBefore, monthAfter, monthWin }));
+  await page.locator('#tl-range-open').click();
+  await waitYearWheel(page, 'tl-range-end-year');
+  await page.evaluate(() => {
+    const start = document.querySelector('#tl-range-start-year .tl-wheel-scroll');
+    const end = document.querySelector('#tl-range-end-year .tl-wheel-scroll');
+    const row = +start.dataset.row;
+    const index = Math.round(start.scrollTop / row);
+    end.scrollTop = (index + 3) * row;
+    end.dispatchEvent(new Event('scroll'));
+  });
+  await page.locator('#tl-range-apply').click();
+  await page.waitForFunction(() => !document.getElementById('tl-range-dialog').open);
+  const tight = await page.evaluate(() => window.__timeline.getWindow().end - window.__timeline.getWindow().start);
+  await page.locator('[data-tl="fit"]').click();
+  await page.waitForTimeout(200);
+  const wide = await page.evaluate(() => {
+    const a = window.__timeline.getWindow();
+    const b = window.__timelinePeople.getWindow();
+    return { span: a.end - a.start, ds: Math.abs(a.start - b.start), de: Math.abs(a.end - b.end) };
+  });
+  check(`${tag}: Show all widens both panels to the full span`, wide.span > tight * 5 && wide.ds < 1000 && wide.de < 1000, JSON.stringify({ tight, wide }));
+  await page.locator('#tl-range-open').click();
+  await waitYearWheel(page, 'tl-range-start-year');
+  await page.keyboard.press('Escape');
+  await page.waitForFunction(() => !document.getElementById('tl-range-dialog').open && document.activeElement?.id === 'tl-range-open');
+  const escaped = await page.evaluate(() => {
+    const a = window.__timeline.getWindow();
+    const b = window.__timelinePeople.getWindow();
+    return { span: a.end - a.start, ds: Math.abs(a.start - b.start) };
+  });
+  check(`${tag}: Escape closes the dialog and leaves the window`, !await page.locator('#tl-range-dialog').evaluate((d) => d.open) && Math.abs(escaped.span - wide.span) < 1000 && escaped.ds < 1000, JSON.stringify({ escaped, wide }));
+  await typedYearEntry(page, tag);
+  if (saved) {
+    await page.evaluate((w) => window.__timeline.setWindow(new Date(w[0]), new Date(w[1]), { animation: false }), saved);
+    await page.waitForTimeout(400);
+  }
+}
+
 // Home (desktop)
 {
   const o = await open('/', { shot: 'home-desktop.png' });
@@ -112,26 +538,8 @@ function barsVisible(b) {
   check('home: axis labels are BC', axis.some((t) => / BC$/.test(t)) && !axis.some((t) => /^-/.test(t)), axis.slice(0, 6).join(', '));
   const toggles = await o.page.locator('[data-tier-toggle]').evaluateAll((els) => els.map((e) => ({ tier: e.getAttribute('data-tier-toggle'), pressed: e.getAttribute('aria-pressed') })));
   check('home: Tier 1 on and other dating tiers off', toggles.length >= 6 && toggles.every((t) => t.pressed === (t.tier === 't1' ? 'true' : 'false')), JSON.stringify(toggles));
-  const groups = (await o.page.locator('.vis-labelset .vis-label').allInnerTexts()).map((t) => t.trim());
-  check('home: people group is labeled People', groups.includes('People') && groups.includes('Events') && !groups.some((t) => /People \(birth\)/.test(t)), groups.join(' | '));
-  const panes = await o.page.evaluate(() => {
-    function pane(id) {
-      const el = document.getElementById(id);
-      const label = el?.querySelector('.vis-label');
-      if (!el || !label) return null;
-      const pr = el.getBoundingClientRect();
-      const lr = label.getBoundingClientRect();
-      const center = el.querySelector('.vis-panel.vis-center')?.getBoundingClientRect();
-      return { h: pr.height, label: label.textContent.trim(), labelInPane: lr.top >= pr.top - 4 && lr.top < pr.bottom, centerLeft: center ? Math.round(center.left) : null, centerW: center ? Math.round(center.width) : null };
-    }
-    return { events: pane('timeline-events'), people: pane('timeline-people') };
-  });
-  const linedUp = panes.events && panes.people && panes.events.h > 80 && panes.people.h > 80
-    && panes.events.label === 'Events' && panes.people.label === 'People'
-    && panes.events.labelInPane && panes.people.labelInPane
-    && Math.abs(panes.events.centerLeft - panes.people.centerLeft) < 2
-    && Math.abs(panes.events.centerW - panes.people.centerW) < 2;
-  check('home: Events and People stay on screen and line up', linedUp, JSON.stringify(panes));
+  const panes = await homeLayout(o.page);
+  check('home: Events and People are headings above full-width panels', layoutOk(panes) && buttonBeside(panes), JSON.stringify(panes));
   await o.page.locator('.tl-vscroll-people').focus();
   for (let i = 0; i < 40; i++) {
     const seen = await o.page.evaluate(() => [...document.querySelectorAll('#timeline-people .vis-item.vis-range a.tl-link')].some((a) => a.textContent === 'Adam'));
@@ -260,6 +668,8 @@ function barsVisible(b) {
     await o.page.locator('[data-tier-toggle="tp"]').click();
     if (win0) { await o.page.evaluate((w) => window.__timeline.setWindow(new Date(w[0]), new Date(w[1]), { animation: false }), win0); await o.page.waitForTimeout(400); }
   }
+  await homeRangeBehavior(o.page, 'home', true);
+  check('home: year range leaves no console errors', o.errors.length === 0, o.errors.join(' | '));
   check('home: map markers rendered', markers > 0, `${markers} markers, ${tiles} OSM tiles loaded`);
   // click a timeline item navigates
   await o.page.locator('.vis-item', { hasText: 'The Flood' }).first().click();
@@ -277,6 +687,40 @@ for (const scheme of ['light', 'dark']) {
   if (scheme === 'dark') await o.page.locator('.site-header').screenshot({ path: join(SHOTS, 'nav-mobile-dark.png') });
   await o.page.waitForSelector('.tl-hscroll .tl-scroll-thumb', { timeout: 8000 }).catch(() => {});
   await o.shot();
+  const mobileLay = await homeLayout(o.page);
+  check(`home mobile (${scheme}): headings sit above full-width panels`, layoutOk(mobileLay) && buttonBeside(mobileLay), JSON.stringify(mobileLay));
+  await o.page.locator('#timeline').screenshot({ path: join(SHOTS, `timeline-range-home-390-${scheme}.png`) });
+  await o.page.locator('#tl-range-open').click();
+  await waitYearWheel(o.page, 'tl-range-start-year');
+  await waitYearWheel(o.page, 'tl-range-end-year');
+  const dialogBg = await o.page.evaluate(() => getComputedStyle(document.getElementById('tl-range-dialog')).backgroundColor);
+  const dialogLum = dialogBg.match(/\d+/g).slice(0, 3).reduce((sum, n) => sum + Number(n), 0) / 3;
+  check(`home mobile (${scheme}): year dialog uses the ${scheme} surface`, scheme === 'dark' ? dialogLum < 80 : dialogLum > 200, dialogBg);
+  const dialogOverflow = await o.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+  check(`home mobile (${scheme}): year dialog does not widen the page`, !dialogOverflow);
+  await o.page.locator('#tl-range-dialog').screenshot({ path: join(SHOTS, `timeline-range-dialog-390-${scheme}.png`) });
+  await o.page.locator('#tl-range-start-year .tl-wheel-item.is-selected').click();
+  const typedInput = o.page.locator('#tl-range-start-year-input');
+  await typedInput.waitFor({ state: 'visible' });
+  await o.page.locator('#tl-range-start-year-era').waitFor({ state: 'visible' });
+  await typedInput.fill('1446');
+  await o.page.waitForFunction(() => {
+    const text = document.querySelector('#tl-range-start-year [role="spinbutton"]')?.getAttribute('aria-valuetext') || '';
+    return text === '1446 BC' || text === 'AD 1446';
+  });
+  const typedShot = await o.page.evaluate(() => {
+    const input = document.getElementById('tl-range-start-year-input');
+    return {
+      focused: document.activeElement === input,
+      inputmode: input?.getAttribute('inputmode') || '',
+      pattern: input?.getAttribute('pattern') || '',
+      value: input?.value || '',
+    };
+  });
+  check(`home mobile (${scheme}): typed year field is focused`, typedShot.focused && typedShot.inputmode === 'numeric' && typedShot.pattern === '[0-9]*' && typedShot.value === '1446', JSON.stringify(typedShot));
+  await o.page.locator('#tl-range-dialog').screenshot({ path: join(SHOTS, `timeline-range-typing-390-${scheme}.png`) });
+  await o.page.keyboard.press('Escape');
+  await o.page.waitForFunction(() => !document.getElementById('tl-range-dialog').open);
   check(`home mobile (${scheme}): no console errors`, o.errors.length === 0, o.errors.join(' | '));
   const overflow = await o.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
   check(`home mobile (${scheme}): no horizontal page overflow`, !overflow);
@@ -311,6 +755,30 @@ for (const scheme of ['light', 'dark']) {
     check('home mobile (dark): lifespan text is light', !!ink && ink.lum > 180, JSON.stringify(ink));
   }
   await o.ctx.close();
+}
+{
+  async function runRange(engine, launcher, width, height) {
+    const own = launcher === browser ? null : stubIiif(await launcher.launch());
+    const b = own || browser;
+    const ctx = await b.newContext({ viewport: { width, height }, colorScheme: 'light', deviceScaleFactor: width < 500 ? 2 : 1 });
+    const page = await ctx.newPage();
+    const errors = [];
+    page.on('pageerror', (e) => errors.push(String(e)));
+    page.on('console', (m) => { if (m.type() === 'error' && !/(tile\.openstreetmap|tile\.loc\.gov|ERR_|Failed to load resource|aivbible\.kevinamundson\.me)/.test(m.text())) errors.push(m.text()); });
+    await page.goto(BASE + '/', { waitUntil: 'load', timeout: 30000 });
+    await page.waitForSelector('.vis-timeline .vis-item', { timeout: 8000 });
+    await page.waitForSelector('.tl-hscroll .tl-scroll-thumb', { timeout: 8000 });
+    await homeRangeBehavior(page, `${engine} ${width}`, false);
+    if (width < 500) {
+      const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+      check(`${engine} ${width}: home has no horizontal page overflow`, !overflow);
+    }
+    check(`${engine} ${width}: year range leaves no console errors`, errors.length === 0, errors.join(' | '));
+    await ctx.close();
+    if (own) await own.close();
+  }
+  await runRange('webkit', webkit, 1280, 900);
+  await runRange('webkit', webkit, 390, 844);
 }
 // Phone header: the primary nav is collapsed until the menu button is tapped.
 {

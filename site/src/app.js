@@ -7,6 +7,9 @@
   // read as round BC years: BC y -> A = y (4500 BC -> -4500); AD y -> A = y - 1 (AD 1 -> 0).
   function toDate(y) { var a = y < 0 ? y : y - 1; var d = new Date(Date.UTC(2000, 6, 1)); d.setUTCFullYear(a); return d; }
   function astroToLabel(a) { return a < 0 ? (-a) + ' BC' : 'AD ' + (a + 1); }
+  // Assigned before the timeline boots. whenStyles can run that boot in the same turn.
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  var MONTHS_SHORT = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
   // ---------- Timeline ----------
   // vis-timeline measures each point's dot (offsetWidth) on first draw. If its stylesheet has not been applied yet
@@ -168,17 +171,21 @@
       var peItems = shownItems().filter(function (it) { return it.group === 'people'; });
       var evData = new vis.DataSet(evItems);
       var peData = new vis.DataSet(peItems);
-      var evTl = new vis.Timeline(eventsEl, evData, new vis.DataSet([{ id: 'events', content: 'Events', order: 1 }]), chartOptions({
+      // Headings above the panes name the charts. The group label is empty so vis draws no gutter.
+      var evTl = new vis.Timeline(eventsEl, evData, new vis.DataSet([{ id: 'events', content: '', order: 1 }]), chartOptions({
         orientation: { axis: 'top', item: 'top' },
         maxHeight: narrow ? '280px' : '380px', minHeight: '160px'
       }));
-      var peTl = new vis.Timeline(peopleEl, peData, new vis.DataSet([{ id: 'people', content: 'People', order: 1 }]), chartOptions({
+      var peTl = new vis.Timeline(peopleEl, peData, new vis.DataSet([{ id: 'people', content: '', order: 1 }]), chartOptions({
         orientation: { axis: 'bottom', item: 'top' },
         maxHeight: narrow ? '220px' : '260px', minHeight: '140px'
       }));
       wireChart(eventsEl, evTl, evData);
       wireChart(peopleEl, peTl, peData);
       syncWindows(evTl, peTl);
+      collapseHomeGutter(evTl);
+      collapseHomeGutter(peTl);
+      mountYearRange(evTl, windowOpts.min, windowOpts.max);
       timeline = evTl;
       window.__timeline = evTl; // exposed for site/verify.mjs; people follow this window
       window.__timelinePeople = peTl;
@@ -225,6 +232,659 @@
       });
     });
   });
+
+  // vis reserves a scrollbar gutter on the left panel. Home headings replace that column,
+  // so the reserved width is cleared once the first real draw has measured it.
+  function collapseHomeGutter(timeline) {
+    var pending = false;
+    function hideLabels() {
+      var root = timeline.dom && timeline.dom.container;
+      if (!root) return;
+      var sets = root.querySelectorAll('.vis-labelset');
+      for (var i = 0; i < sets.length; i++) sets[i].setAttribute('aria-hidden', 'true');
+    }
+    function force() {
+      hideLabels();
+      if (!timeline.props || !timeline.initialDrawDone) return;
+      if (timeline.props.scrollbarWidth === 0) return;
+      timeline.props.scrollbarWidth = 0;
+      if (pending) return;
+      pending = true;
+      if (timeline._origRedraw) timeline._origRedraw();
+      else timeline.redraw();
+      pending = false;
+    }
+    timeline.on('changed', force);
+    setTimeout(force, 0);
+    setTimeout(force, 80);
+  }
+
+  // Historical years skip 0: …, 2 BC, 1 BC, AD 1, AD 2, …
+  function nextHist(y) { return y === -1 ? 1 : y + 1; }
+  function yearCount(first, last) {
+    if (first < 0 && last > 0) return last - first;
+    return last - first + 1;
+  }
+  function indexToYear(first, i) {
+    var y = first + i;
+    if (first < 0 && y >= 0) y += 1;
+    return y;
+  }
+  function yearToIndex(first, y) {
+    if (y >= 1 && first < 0) return y - 1 - first;
+    return y - first;
+  }
+  function histLabel(y) { return y < 0 ? (-y) + ' BC' : 'AD ' + y; }
+  function dateToHistYear(d) {
+    var a = d.getUTCFullYear();
+    return a < 0 ? a : a + 1;
+  }
+  function histParts(d) {
+    return {
+      year: dateToHistYear(d),
+      month: d.getUTCMonth(),
+      day: d.getUTCDate(),
+      exact: d.getUTCDate() === 1 && d.getUTCHours() === 0 && d.getUTCMinutes() === 0 && d.getUTCSeconds() === 0 && d.getUTCMilliseconds() === 0
+    };
+  }
+  // The window end is the exclusive right edge. A boundary on the first instant of a
+  // month belongs to the previous month. Year mode still shows that month's year.
+  function readEdge(d, end) {
+    if (end && histParts(d).exact) return histParts(new Date(d.getTime() - 1));
+    return histParts(d);
+  }
+  function histToDate(year, month, day) {
+    var axis = year < 0 ? year : year - 1;
+    var d = new Date(Date.UTC(2000, month, day, 0, 0, 0, 0));
+    d.setUTCFullYear(axis);
+    return d;
+  }
+
+  // A fixed pool of rows. Scroll height stands for every year; the DOM does not.
+  function mountWheel(host, opts) {
+    var row = parseFloat(getComputedStyle(host).getPropertyValue('--tl-row'));
+    if (!row || row < 30) row = 44;
+    var count = opts.count;
+    var index = -1;
+    var lock = 0;
+    var drag = null;
+    var dragMoved = false;
+    host.innerHTML = '';
+    var spin = document.createElement('div');
+    spin.className = 'tl-wheel-spin';
+    spin.tabIndex = 0;
+    spin.setAttribute('role', 'spinbutton');
+    spin.setAttribute('aria-label', opts.label);
+    var view = document.createElement('div');
+    view.className = 'tl-wheel-view';
+    var band = document.createElement('div');
+    band.className = 'tl-wheel-band';
+    band.setAttribute('aria-hidden', 'true');
+    var scroller = document.createElement('div');
+    scroller.className = 'tl-wheel-scroll';
+    scroller.dataset.row = String(row);
+    scroller.tabIndex = -1;
+    var spacer = document.createElement('div');
+    spacer.className = 'tl-wheel-spacer';
+    spacer.style.height = ((count + 4) * row) + 'px';
+    var pool = [];
+    for (var n = 0; n < 11; n++) {
+      var item = document.createElement('div');
+      item.className = 'tl-wheel-item';
+      item.setAttribute('aria-hidden', 'true');
+      spacer.appendChild(item);
+      pool.push(item);
+    }
+    scroller.appendChild(spacer);
+    view.appendChild(band);
+    view.appendChild(scroller);
+    spin.appendChild(view);
+    host.appendChild(spin);
+    // A numeric keypad cannot type BC or AD, so the era is a separate control.
+    // There is no year 0. Out-of-range and year 0 stay on the dialog's inline error.
+    var editing = false;
+    var suppress = false;
+    var originIndex = 0;
+    var edit = null;
+    var input = null;
+    var era = null;
+    var bcBtn = null;
+    var adBtn = null;
+    if (opts.canType) {
+      host.classList.add('tl-wheel-typeable');
+      edit = document.createElement('div');
+      edit.className = 'tl-wheel-edit';
+      edit.hidden = true;
+      edit.setAttribute('aria-hidden', 'true');
+      input = document.createElement('input');
+      input.type = 'text';
+      if (host.id) input.id = host.id + '-input';
+      input.className = 'tl-wheel-year-input';
+      input.setAttribute('inputmode', 'numeric');
+      input.setAttribute('pattern', '[0-9]*');
+      input.setAttribute('autocomplete', 'off');
+      input.setAttribute('autocorrect', 'off');
+      input.setAttribute('autocapitalize', 'none');
+      input.setAttribute('spellcheck', 'false');
+      input.setAttribute('enterkeyhint', 'done');
+      input.setAttribute('aria-label', opts.label + ' number');
+      input.setAttribute('aria-errormessage', 'tl-range-error');
+      input.maxLength = 6;
+      edit.appendChild(input);
+      host.appendChild(edit);
+      era = document.createElement('div');
+      era.className = 'segmented tl-wheel-era';
+      if (host.id) era.id = host.id + '-era';
+      era.hidden = true;
+      era.setAttribute('role', 'group');
+      era.setAttribute('aria-label', opts.label + ' era');
+      era.setAttribute('aria-hidden', 'true');
+      bcBtn = document.createElement('button');
+      bcBtn.type = 'button';
+      bcBtn.textContent = 'BC';
+      bcBtn.setAttribute('aria-pressed', 'true');
+      adBtn = document.createElement('button');
+      adBtn.type = 'button';
+      adBtn.textContent = 'AD';
+      adBtn.setAttribute('aria-pressed', 'false');
+      era.appendChild(bcBtn);
+      era.appendChild(adBtn);
+      var eraParent = host.parentElement && host.parentElement.parentElement;
+      (eraParent || host).appendChild(era);
+      if (host.id) {
+        var hint = document.createElement('span');
+        hint.className = 'visually-hidden';
+        hint.id = host.id + '-typehint';
+        hint.textContent = 'Tap the highlighted year to type a number. Choose BC or AD separately. There is no year 0.';
+        host.appendChild(hint);
+        spin.setAttribute('aria-describedby', hint.id);
+      }
+    }
+    function clamp(i) { return Math.max(0, Math.min(count - 1, i)); }
+    function render() {
+      if (index < 0) return;
+      var first = index - 5;
+      for (var p = 0; p < pool.length; p++) {
+        var i = first + p;
+        var el = pool[p];
+        if (i < 0 || i >= count) { el.hidden = true; el.classList.remove('is-selected'); continue; }
+        el.hidden = false;
+        el.style.top = ((2 + i) * row) + 'px';
+        el.textContent = opts.textAt(i);
+        el.dataset.index = String(i);
+        el.classList.toggle('is-selected', i === index);
+        var dist = Math.abs(i - index);
+        el.style.opacity = dist === 0 ? '1' : dist === 1 ? '0.72' : '0.4';
+      }
+    }
+    function paintAria() {
+      spin.setAttribute('aria-valuemin', String(opts.minValue));
+      spin.setAttribute('aria-valuemax', String(opts.maxValue));
+      spin.setAttribute('aria-valuenow', String(opts.valueAt(index)));
+      spin.setAttribute('aria-valuetext', (opts.valueText || opts.textAt)(index));
+      spin.dataset.value = String(opts.valueAt(index));
+    }
+    function sync() {
+      if (index < 0 || scroller.clientHeight < 10) return;
+      lock++;
+      scroller.scrollTop = index * row;
+      render();
+      lock--;
+    }
+    function setIndex(i, fromScroll, notify) {
+      i = clamp(i);
+      var changed = i !== index;
+      index = i;
+      paintAria();
+      if (!fromScroll) sync();
+      render();
+      if (notify && changed && opts.onChange) opts.onChange();
+    }
+    var snapTimer = 0;
+    scroller.addEventListener('scroll', function () {
+      if (lock || scroller.clientHeight < 10) return;
+      if (editing) {
+        if (Math.abs(scroller.scrollTop - index * row) > 1) {
+          lock++;
+          scroller.scrollTop = index * row;
+          lock--;
+        }
+        return;
+      }
+      var i = clamp(Math.round(scroller.scrollTop / row));
+      if (i !== index) setIndex(i, true, true);
+      else render();
+      clearTimeout(snapTimer);
+      snapTimer = setTimeout(function () {
+        if (Math.abs(scroller.scrollTop - index * row) > 1) {
+          lock++;
+          scroller.scrollTop = index * row;
+          lock--;
+        }
+      }, 80);
+    });
+    function eraIsAD() { return !!(adBtn && adBtn.getAttribute('aria-pressed') === 'true'); }
+    function paintEra(ad) {
+      if (!bcBtn) return;
+      bcBtn.setAttribute('aria-pressed', ad ? 'false' : 'true');
+      adBtn.setAttribute('aria-pressed', ad ? 'true' : 'false');
+    }
+    function closeEditor() {
+      if (!edit) return;
+      edit.hidden = true;
+      if (era) era.hidden = true;
+      edit.setAttribute('aria-hidden', 'true');
+      if (era) era.setAttribute('aria-hidden', 'true');
+      host.classList.remove('is-editing');
+      scroller.style.pointerEvents = '';
+    }
+    function readTyped() {
+      var digits = input.value.replace(/\D/g, '').slice(0, 6);
+      if (digits !== input.value) {
+        var atEnd = input.selectionStart === input.value.length;
+        input.value = digits;
+        var pos = atEnd ? digits.length : Math.min(input.selectionStart || digits.length, digits.length);
+        try { input.setSelectionRange(pos, pos); } catch (err) { /* hidden while the dialog closes */ }
+      }
+      if (digits === '') return { incomplete: true };
+      var n = parseInt(digits, 10);
+      if (!isFinite(n)) return { incomplete: true };
+      if (n === 0) return { message: 'There is no year 0.' };
+      var y = eraIsAD() ? n : -n;
+      if (y < opts.yearMin || y > opts.yearMax) {
+        return { message: 'Enter a year from ' + opts.yearLabel(opts.yearMin) + ' to ' + opts.yearLabel(opts.yearMax) + '.' };
+      }
+      return { ok: true, index: opts.indexForYear(y) };
+    }
+    function rangePrompt() {
+      return 'Enter a year from ' + opts.yearLabel(opts.yearMin) + ' to ' + opts.yearLabel(opts.yearMax) + '.';
+    }
+    function applyTyped(commit) {
+      var parsed = readTyped();
+      if (parsed.ok) {
+        input.setAttribute('aria-invalid', 'false');
+        if (opts.onTyped) opts.onTyped('');
+        setIndex(parsed.index, false, true);
+        return true;
+      }
+      setIndex(originIndex, false, false);
+      if (!commit && parsed.incomplete) {
+        input.setAttribute('aria-invalid', 'false');
+        if (opts.onTyped) opts.onTyped('');
+        return false;
+      }
+      input.setAttribute('aria-invalid', 'true');
+      if (opts.onTyped) opts.onTyped(parsed.message || rangePrompt());
+      return false;
+    }
+    function finishEdit(refocus) {
+      editing = false;
+      closeEditor();
+      if (refocus) spin.focus();
+    }
+    function commitEdit(keepOpenIfInvalid, refocus) {
+      if (suppress || !editing) return false;
+      var ok = applyTyped(true);
+      if (!ok && keepOpenIfInvalid) return false;
+      finishEdit(!!refocus && ok);
+      return ok;
+    }
+    function abortEdit(hide) {
+      if (!opts.canType || !input) return;
+      suppress = true;
+      if (editing) {
+        editing = false;
+        setIndex(originIndex, false, false);
+      }
+      // Hiding the field during Escape moves focus and can cancel the dialog's own close.
+      if (hide !== false) closeEditor();
+    }
+    function beginEdit(seed) {
+      if (!opts.canType || !input || editing) return;
+      suppress = false;
+      editing = true;
+      originIndex = index;
+      host.classList.add('is-editing');
+      edit.hidden = false;
+      era.hidden = false;
+      edit.removeAttribute('aria-hidden');
+      era.removeAttribute('aria-hidden');
+      scroller.style.pointerEvents = 'none';
+      var y = opts.valueAt(index);
+      paintEra(y > 0);
+      input.value = seed != null ? String(seed) : String(Math.abs(y));
+      applyTyped(false);
+      setTimeout(function () {
+        if (!editing) return;
+        input.focus();
+        if (seed == null) input.select();
+        else {
+          var len = input.value.length;
+          try { input.setSelectionRange(len, len); } catch (err2) {}
+        }
+      }, 0);
+    }
+    function selectEra(ad) {
+      paintEra(ad);
+      if (editing) applyTyped(false);
+      if (input && editing) input.focus();
+    }
+    function bindEra(btn, ad) {
+      // Keep the keypad field focused. preventDefault on pointerdown can swallow click, so the era changes here too.
+      btn.addEventListener('pointerdown', function (e) {
+        if (e.button != null && e.button !== 0) return;
+        e.preventDefault();
+        selectEra(ad);
+      });
+      btn.addEventListener('mousedown', function (e) { e.preventDefault(); });
+      btn.addEventListener('click', function () { selectEra(ad); });
+    }
+    if (opts.canType && input) {
+      bindEra(bcBtn, false);
+      bindEra(adBtn, true);
+      input.addEventListener('input', function () { if (editing) applyTyped(false); });
+      input.addEventListener('keydown', function (e) {
+        if (e.key !== 'Enter') return;
+        e.preventDefault();
+        e.stopPropagation();
+        if (opts.holdApply) opts.holdApply();
+        commitEdit(true, true);
+      });
+      input.addEventListener('blur', function (e) {
+        if (!editing || suppress) return;
+        var next = e.relatedTarget;
+        if (next && era && era.contains(next)) return;
+        commitEdit(false, false);
+      });
+      era.addEventListener('focusout', function (e) {
+        if (!editing || suppress) return;
+        var next = e.relatedTarget;
+        if (next && (next === input || era.contains(next))) return;
+        commitEdit(false, false);
+      });
+    }
+    spin.addEventListener('keydown', function (e) {
+      if (opts.canType && !editing && e.key === 'Enter') {
+        e.preventDefault();
+        e.stopPropagation();
+        beginEdit();
+        return;
+      }
+      if (opts.canType && !editing && e.key.length === 1 && e.key >= '0' && e.key <= '9') {
+        e.preventDefault();
+        e.stopPropagation();
+        beginEdit(e.key);
+        return;
+      }
+      var next = null;
+      if (e.key === 'ArrowDown') next = index + 1;
+      else if (e.key === 'ArrowUp') next = index - 1;
+      else if (e.key === 'PageDown') next = index + 10;
+      else if (e.key === 'PageUp') next = index - 10;
+      else if (e.key === 'Home') next = 0;
+      else if (e.key === 'End') next = count - 1;
+      else return;
+      e.preventDefault();
+      e.stopPropagation();
+      setIndex(next, false, true);
+    });
+    scroller.addEventListener('click', function (e) {
+      if (dragMoved) { dragMoved = false; return; }
+      var el = document.elementFromPoint(e.clientX, e.clientY);
+      el = el && el.closest && el.closest('.tl-wheel-item');
+      if (!el || el.hidden || !host.contains(el)) return;
+      var picked = +el.dataset.index;
+      if (opts.canType && picked === index) {
+        beginEdit();
+        return;
+      }
+      setIndex(picked, false, true);
+      spin.focus();
+    });
+    scroller.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse' || (e.button != null && e.button !== 0)) return;
+      drag = { y: e.clientY, top: scroller.scrollTop, id: e.pointerId };
+      dragMoved = false;
+      scroller.setPointerCapture(e.pointerId);
+    });
+    scroller.addEventListener('pointermove', function (e) {
+      if (!drag || e.pointerId !== drag.id) return;
+      var dy = e.clientY - drag.y;
+      if (Math.abs(dy) > 4) dragMoved = true;
+      scroller.scrollTop = drag.top - dy;
+    });
+    function endDrag(e) { if (drag && (!e || e.pointerId === drag.id)) drag = null; }
+    scroller.addEventListener('pointerup', endDrag);
+    scroller.addEventListener('pointercancel', endDrag);
+    setIndex(0, false, false);
+    return {
+      assign: function (i) { setIndex(i, false, false); },
+      sync: sync,
+      focus: function () { spin.focus(); },
+      getValue: function () { return opts.valueAt(index); },
+      getIndex: function () { return index; },
+      spin: spin,
+      isEditing: function () { return editing; },
+      abortEdit: abortEdit,
+      commitEdit: function (keep, refocus) { return commitEdit(keep, refocus); }
+    };
+  }
+
+  // One dialog sets the shared Events and People window. Months change the view only.
+  function mountYearRange(timeline, axisMin, axisMax) {
+    var dialog = document.getElementById('tl-range-dialog');
+    var openBtn = document.getElementById('tl-range-open');
+    if (!dialog || !openBtn || !timeline) return;
+    var first = dateToHistYear(axisMin);
+    var last = dateToHistYear(axisMax);
+    if (first === 0) first = -1;
+    if (last === 0) last = 1;
+    if (!(first < last)) return;
+    if (yearToIndex(first, first) !== 0 || indexToYear(first, yearCount(first, last) - 1) !== last) throw new Error('Timeline year range does not cover its ends.');
+    if (first < 0 && last > 0 && yearToIndex(first, 1) !== yearToIndex(first, -1) + 1) throw new Error('Timeline year range includes a year 0.');
+    (function sample(a, b) {
+      var prev = null;
+      for (var i = 0; i < yearCount(a, b); i++) {
+        var y = indexToYear(a, i);
+        if (y === 0 || yearToIndex(a, y) !== i || (prev != null && !(y > prev))) throw new Error('Timeline year map is not ordered.');
+        prev = y;
+      }
+    })(-8, 8);
+    dialog.dataset.yearFirst = String(first);
+    dialog.dataset.yearLast = String(last);
+    var count = yearCount(first, last);
+    var monthMode = false;
+    var yearBtn = document.getElementById('tl-range-mode-year');
+    var monthBtn = document.getElementById('tl-range-mode-month');
+    var applyBtn = document.getElementById('tl-range-apply');
+    var cancelBtn = document.getElementById('tl-range-cancel');
+    var errorEl = document.getElementById('tl-range-error');
+    var form = document.getElementById('tl-range-form');
+    var startMonthHost = document.getElementById('tl-range-start-month');
+    var endMonthHost = document.getElementById('tl-range-end-month');
+    var typedError = '';
+    var blockApply = false;
+    function userWheelChange() {
+      typedError = '';
+      updateValidity();
+    }
+    function monthWheel(host, label) {
+      return mountWheel(host, {
+        label: label,
+        count: 12,
+        minValue: 1,
+        maxValue: 12,
+        textAt: function (i) { return MONTHS_SHORT[i]; },
+        valueText: function (i) { return MONTHS[i]; },
+        valueAt: function (i) { return i + 1; },
+        onChange: userWheelChange
+      });
+    }
+    function yearWheel(host, label) {
+      return mountWheel(host, {
+        label: label,
+        count: count,
+        minValue: first,
+        maxValue: last,
+        textAt: function (i) { return histLabel(indexToYear(first, i)); },
+        valueAt: function (i) { return indexToYear(first, i); },
+        onChange: userWheelChange,
+        canType: true,
+        yearMin: first,
+        yearMax: last,
+        yearLabel: histLabel,
+        indexForYear: function (y) { return yearToIndex(first, y); },
+        onTyped: function (msg) { typedError = msg || ''; updateValidity(); },
+        holdApply: function () {
+          blockApply = true;
+          setTimeout(function () { blockApply = false; }, 0);
+        }
+      });
+    }
+    var startMonth = monthWheel(startMonthHost, 'Start month');
+    var startYear = yearWheel(document.getElementById('tl-range-start-year'), 'Start year');
+    var endMonth = monthWheel(endMonthHost, 'End month');
+    var endYear = yearWheel(document.getElementById('tl-range-end-year'), 'End year');
+    function paintMode() {
+      yearBtn.setAttribute('aria-pressed', monthMode ? 'false' : 'true');
+      monthBtn.setAttribute('aria-pressed', monthMode ? 'true' : 'false');
+      startMonthHost.hidden = !monthMode;
+      endMonthHost.hidden = !monthMode;
+    }
+    function rangeValid() {
+      var sy = startYear.getValue();
+      var ey = endYear.getValue();
+      if (sy < ey) return true;
+      if (sy > ey) return false;
+      if (!monthMode) return true;
+      return startMonth.getIndex() <= endMonth.getIndex();
+    }
+    function updateValidity() {
+      var inverted = !rangeValid();
+      var msg = typedError || (inverted ? 'The start is after the end.' : '');
+      var show = msg !== '';
+      applyBtn.disabled = show;
+      applyBtn.setAttribute('aria-invalid', show ? 'true' : 'false');
+      if (errorEl.textContent !== msg) errorEl.textContent = msg;
+      errorEl.hidden = !show;
+    }
+    function align() {
+      if (!dialog.open) return;
+      startYear.sync();
+      endYear.sync();
+      if (monthMode) { startMonth.sync(); endMonth.sync(); }
+    }
+    function yearIndex(y) {
+      if (y < first) y = first;
+      if (y > last) y = last;
+      if (y === 0) y = y < 0 ? -1 : 1;
+      return yearToIndex(first, y);
+    }
+    function fillFromWindow() {
+      typedError = '';
+      startYear.abortEdit();
+      endYear.abortEdit();
+      var w = timeline.getWindow();
+      var s = readEdge(w.start, false);
+      var e = readEdge(w.end, true);
+      monthMode = false;
+      paintMode();
+      startYear.assign(yearIndex(s.year));
+      endYear.assign(yearIndex(e.year));
+      startMonth.assign(s.month);
+      endMonth.assign(e.month);
+      updateValidity();
+    }
+    function nextMonth(y, m) {
+      if (m < 11) return { year: y, month: m + 1 };
+      return { year: nextHist(y), month: 0 };
+    }
+    function applyRange() {
+      var sy = startYear.getValue();
+      var ey = endYear.getValue();
+      var startDate;
+      var endDate;
+      if (monthMode) {
+        startDate = histToDate(sy, startMonth.getIndex(), 1);
+        var n = nextMonth(ey, endMonth.getIndex());
+        endDate = histToDate(n.year, n.month, 1);
+      } else {
+        startDate = histToDate(sy, 0, 1);
+        endDate = histToDate(nextHist(ey), 0, 1);
+      }
+      timeline.setWindow(startDate, endDate, { animation: false });
+    }
+    function tabbables() {
+      return [].filter.call(dialog.querySelectorAll('button, [role="spinbutton"], input.tl-wheel-year-input'), function (el) {
+        if (el.disabled) return false;
+        var box = el.getBoundingClientRect();
+        return box.width > 0 && box.height > 0;
+      });
+    }
+    yearBtn.addEventListener('click', function () {
+      monthMode = false;
+      paintMode();
+      updateValidity();
+    });
+    monthBtn.addEventListener('click', function () {
+      monthMode = true;
+      paintMode();
+      updateValidity();
+      requestAnimationFrame(align);
+      setTimeout(align, 60);
+    });
+    openBtn.addEventListener('click', function () {
+      if (dialog.open) return;
+      fillFromWindow();
+      openBtn.setAttribute('aria-expanded', 'true');
+      dialog.showModal();
+      align();
+      requestAnimationFrame(align);
+      requestAnimationFrame(function () { requestAnimationFrame(align); });
+      setTimeout(align, 60);
+      setTimeout(align, 180);
+      startYear.focus();
+    });
+    cancelBtn.addEventListener('click', function () { dialog.close('cancel'); });
+    form.addEventListener('submit', function (e) {
+      var typing = startYear.isEditing() || endYear.isEditing();
+      if (startYear.isEditing()) startYear.commitEdit(false, false);
+      if (endYear.isEditing()) endYear.commitEdit(false, false);
+      // Enter in the year field commits that year. It does not apply the window.
+      if (blockApply || typing || typedError || !rangeValid()) { e.preventDefault(); return; }
+      applyRange();
+    });
+    dialog.addEventListener('close', function () {
+      startYear.abortEdit();
+      endYear.abortEdit();
+      openBtn.setAttribute('aria-expanded', 'false');
+      openBtn.focus({ preventScroll: true });
+    });
+    // WebKit does not keep Tab inside a dialog, so the cycle is handled here.
+    // Escape still closes the dialog without applying. An open year field is discarded first.
+    dialog.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && dialog.open) {
+        typedError = '';
+        startYear.abortEdit(false);
+        endYear.abortEdit(false);
+        return;
+      }
+      if (e.key !== 'Tab' || !dialog.open) return;
+      var list = tabbables();
+      if (!list.length) return;
+      var i = list.indexOf(document.activeElement);
+      e.preventDefault();
+      if (i < 0) { list[e.shiftKey ? list.length - 1 : 0].focus(); return; }
+      list[(i + (e.shiftKey ? list.length - 1 : 1)) % list.length].focus();
+    }, true);
+    document.addEventListener('focusin', function (e) {
+      if (!dialog.open || dialog.contains(e.target)) return;
+      var list = tabbables();
+      if (list.length) list[0].focus();
+    });
+    paintMode();
+    updateValidity();
+  }
 
   // Events and People are separate charts that share one time window. Each has its own
   // vertical bar. One horizontal bar moves both.
