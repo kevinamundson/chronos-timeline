@@ -48,6 +48,17 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Heading."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "wherein himselfe and Israel had wandered 40 yeare",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter IV, §. II, sig. 185b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. The same sentence is on moses. Not the flight-age 40, and not the Midian 40. Not a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [
@@ -60,7 +71,8 @@
   ],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [

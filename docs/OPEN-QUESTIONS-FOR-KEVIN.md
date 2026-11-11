@@ -1609,3 +1609,64 @@ Pass 7 read Book II, Part I, Chapter III, and stopped at the end of that chapter
   1. Leave these without a new event, as now.
   2. Name an existing event, or a place, that should receive one of them.
 - **Recommendation:** option 1. A new event cannot take a sort year from Raleigh.
+
+Pass 8 read Book II, Part I, Chapter IV, and stopped at the end of that chapter. The quotes are in `data/raleigh-body-extract.md`. N1 through N46 stay open.
+
+### N47. Jethro’s four names, and Peter Belonius
+
+- **Why it matters:** Book II, Part I, Chapter IV, §. II, sig. 185b, prints “That Iethro, or Iothor, Raguel, or Reuel, and Hobab, were but one person.” The same page prints the other opinion: “Others take Iethro and Hobab to be the same, but not Raguel.” All four spellings, and Iethroes, are on `jethro`. No Hobab record and no Raguel record were made. Peter Belonius, “who in the yeare 1588” (Chapter IV, §. III, sig. 185b–186a), is on `bellonius`. 1588 names no era and was not stored. The spelling map already sends the English verb put to `phut`. Five sentences in this chapter use that verb (“thou hast put thy nest in the Rocke,” and four sentences about the law). Those five passages are on `phut`. Earlier passages already used the same map. Blocking the verb would also drop those earlier passages.
+- **Options:**
+  1. Leave the four names on `jethro`, leave Peter Belonius on `bellonius`, and leave the verb put on `phut`, as now.
+  2. Name a second person for Raguel, or for Peter Belonius, or say that the verb put should stop attaching, and name the passages that should move.
+- **Recommendation:** option 1. He says the four names are one person, and he records the dissent. Bellonius already holds Pierre Belon. The verb put is the old map, not a new person.
+
+### N48. Names kept apart from a record that shares the letters
+
+- **Why it matters:** These Chapter IV names were given their own records because another record already uses part of the same spelling.
+  - Heber the Kenite, of the children of Hobab, is `heber-the-kenite`. Eber son of Salah stays `eber`.
+  - Dartus, who cut the canal after Sesostris and before Ptolemie the second, is `dartus`. The Darius records were left alone.
+  - The Iulian who interpreted the edicts presented to Adrian is `iulian-jurist`, titled “Iulian the jurist”. A one-word title would fold onto `julian` and unlink the Julian Period notes. Adrian the Emperour is `adrian-the-emperor`. Julian the Apostate stays `julian`. The lex IVLIA and the lex CORNELIA were not made people.
+  - Danaeus the collector is `danaeus`. An older name form already lists the spelling Danaeus on `danaus`. The other-people linker therefore leaves the token unlinked. The account passages are on `danaeus`. The old form was not removed.
+  - Antoninus, named with Reinerius and Valentia, is `antoninus`. `antonius` was left alone.
+  - G. Valentia, the writer, is `valentia`. No place was made.
+  - Baldwine the first is `baldwin-the-first`. `baldwin-the-third` was left alone.
+  - Prince Edward, in Fortescue his discourse, is `prince-edward`. `edward-iv` and `edward-vi` were left alone.
+  - Tamar, against whom Judah gave judgement, is `tamar`. The event `amnon-and-tamar` was not attached.
+  - Monsieur de Fumet of France is `monsieur-de-fumet`. `anthonie-fume` was left alone.
+  - Iustinian is `justinian`. `justin` and `justin-martyr` were left alone.
+  - Ptolomie the second is on `ptolemy-philadelphus`. The geographer stays `ptolemy`. The stored title Philadeiphus was not rewritten.
+  - “so S. Iohn expounds it” stays on `john`. N10 already asks that split. The Baptist sentences are on `john-the-baptist`.
+- **Options:**
+  1. Leave these records apart, as now.
+  2. Name a fold, and the passages that should move.
+- **Recommendation:** option 1. A silent merge would attach a different man. S. Iohn waits on N10.
+
+### N49. Figures in this chapter that were not given a yeere of the World
+
+- **Why it matters:** A `year_am` is stored only when he prints a yeere of the World. `year_bc_ad` stays null.
+  - “this yeare 2515” (Chapter IV, §. III, sig. 185b–186a) is on `moses` with `year_am` null. He does not print yeere of the World.
+  - “the world had stood 2513. whole yeeres” (Chapter IV, §. VII, sig. 190a) is on `moses` with `year_am` null. The Passover yeere of the World 2514 is already on `exodus`, and that note already says the account’s 2513 is not a second year. The same method as Joseph’s 2370 beside the table’s 2369 (N41).
+  - “Commandements receiued by Moses in the worlds yeere 2514” (Chapter IV, §. X, sig. 192a) prints a yeere of the World. That year is already stored. It was not entered again.
+  - “in the yeere 2514” at Zoan (Chapter IV, §. I, sig. 184a) does not say yeere of the World. The same year is the Passover. It was not stored again.
+  - Peter Belonius “in the yeare 1588” names no era. The same treatment as Steaen Gama’s 1544 (N46).
+  - The birth at the yeere of the World 2434, the flight at 2474 beside the table’s 2473, and the Passover at 2514 were already entered. They were not entered again.
+- **Options:**
+  1. Keep 2515 and 2513 at `year_am` null, and do not store 2514 or 1588 again, as now.
+  2. Store one of them as `year_am`, and say which record and which slot.
+- **Recommendation:** option 1. He does not print yeere of the World for 2515 or for 2513. 2514 is already stored.
+
+### N50. Figures in this chapter that have no event
+
+- **Why it matters:** A new event cannot take a sort year from Raleigh.
+  - The law given the 50th day, and the stay at Sinai, are one sentence on `moses`. The passages are on `arrival-at-sinai`. No giving-of-the-law event was made.
+  - “Troy itselfe was cast downe 335. yeeres, after Moses led Israel out of Aegypt” is on `fall-of-troy`. The 335 was not converted into a year. The sort stays −1184.
+  - “303. yeeres after the foundation of the Citie” is on `twelve-tables`. It was not added to `founding-of-rome` at the yeere of the World 3280. The Decem-viri were not split into persons. The sort stays −450.
+  - “wherein himselfe and Israel had wandered 40 yeare” is on `moses` and on `wilderness-wanderings`. The sort stays −1490.
+  - The Amalekites met the Israelites (Chapter IV, §. I). No event was made.
+  - “Moses had broken the golden Calfe … which Aaron set vp” (Chapter IV, §. III, sig. 186a). No event was made.
+  - “and two yeeres after was 〈◊ 〉 borne” (Chapter IV, §. I, sig. 184a). The name is a gap. No person was made.
+  - Malachie and Ecclesiasticus are books. They were not made people. “the first of Samuel” still attaches to `samuel`, and “Esay” still attaches to `isaiah`, because those forces were already in the map.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them.
+- **Recommendation:** option 1. A new event cannot take a sort year from Raleigh.

@@ -7,11 +7,11 @@
 //
 //   node scripts/raleigh/covered.mjs
 //   node scripts/raleigh/covered.mjs --through=12
-//   node scripts/raleigh/covered.mjs --through=12 --book2=3 --write
+//   node scripts/raleigh/covered.mjs --through=12 --book2=4 --write
 //
 // --through is the last Book I, Part I chapter. It cannot be less than 8, because
 // passes 1–3 already covered Chapters I–VIII. --book2 is the last Book II, Part I
-// chapter. 0 leaves Book II out. Pass 7 stops at Chapter III.
+// chapter. 0 leaves Book II out. Pass 8 stops at Chapter IV.
 // A passage is attached by the name as printed. Groups, places, and unnamed
 // people are not split into individuals. God, Jehovah, and the Holy Ghost are
 // not person records. Ambiguous shared names are left unattached.
@@ -32,8 +32,8 @@ const book2Through = book2Arg ? Number(book2Arg.slice('--book2='.length)) : 0;
 if (!Number.isInteger(throughChapter) || throughChapter < 8 || throughChapter > 12) {
   throw new Error('--through must be an integer from 8 to 12 (Book I, Part I ends at Chapter XII)');
 }
-if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 3) {
-  throw new Error('--book2 must be 0, 1, 2, or 3 (pass 7 stops at Book II, Part I, Chapter III)');
+if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 4) {
+  throw new Error('--book2 must be 0, 1, 2, 3, or 4 (pass 8 stops at Book II, Part I, Chapter IV)');
 }
 const LINK = 'https://texts.earlyprint.org/works/A10357.xml';
 const SRC = 'raleigh-history-of-the-world';
@@ -627,6 +627,25 @@ const FORCE = {
   aminadab: 'aminadab',
   onias: 'onias-high-priest',
   mahomet: 'mahomet', mahomets: 'mahomet',
+  // Book II, Part I, Chapter IV. A spelling stays on the person already named.
+  // A statute, a book, and a town are not people. Two men who share a word are
+  // split by a phrase below.
+  zipora: 'zipporah',
+  kethura: 'keturah',
+  noi: 'noah', noa: 'noah',
+  caine: 'cain',
+  iouis: 'jupiter',
+  iothor: 'jethro', hobab: 'jethro', raguel: 'jethro', reuel: 'jethro', iethroes: 'jethro',
+  triopus: 'triopas',
+  ascades: 'ascatades',
+  vlpian: 'ulpianus',
+  lactantius: 'lactantius',
+  marathus: 'marathus',
+  iuda: 'judah',
+  hezekia: 'hezekiah',
+  dina: 'dinah',
+  // Latin in the law chapter, picked up beside a small-caps name. Not people.
+  conditor: null, legaliaiusta: null, nobilitie: null,
 };
 
 const PHRASES = [
@@ -783,6 +802,46 @@ const PHRASES = [
   ['tribe of iuda', 'judah', null],
   // “S. August.” is Augustine. The month August is not this phrase.
   ['s. august', 'augustine', null],
+  // Book II, Part I, Chapter IV. The longer phrase wins. A statute name blocks
+  // the span so it is not made a person. S. Iohn stays on john (N10).
+  ['heber the kenite', 'heber-the-kenite', 'Heber the Kenite'],
+  ['peter belonius', 'bellonius', null],
+  ['monsieur de fumet', 'monsieur-de-fumet', 'Monsieur de Fumet'],
+  ['ptolomie the second', 'ptolemy-philadelphus', null],
+  ['baldwine the first', 'baldwin-the-first', 'Baldwine the first'],
+  ['m r. hooker', 'hooker', 'Hooker'],
+  ['master doctor willet', 'willet', 'Willet'],
+  ['interpreted by iulian', 'iulian-jurist', 'Iulian the jurist'],
+  ['adrian the emperour', 'adrian-the-emperor', 'Adrian the Emperour'],
+  ['prince edward', 'prince-edward', 'Prince Edward'],
+  ['seruius tullius', 'servius-tullius', 'Seruius Tullius'],
+  ['ivlia de adulterijs', null, null],
+  ['iulia de adulterijs', null, null],
+  ['law of ivlian', null, null],
+  ['law of iulian', null, null],
+  ['cornelia de sicarijs', null, null],
+  ['the cornelian', null, null],
+  ['prophecied vnto iohn', 'john-the-baptist', null],
+  ['baptisme of iohn', 'john-the-baptist', null],
+  ['pharaoh and abimelech', 'abimelech-of-gerar', null],
+  ['issues of madian', 'midian-son-of-abraham', null],
+  ['a raham', 'abraham', null],
+  ['pythagor as', 'pythagoras', null],
+  ['our sauiour', 'christ', null],
+  ['tarquin then', 'tarquin', 'Tarquin'],
+  ['g. valentia', 'valentia', 'Valentia'],
+  ['and valentia', 'valentia', null],
+  ['reinerius', 'reinerius', 'Reinerius'],
+  ['antoninus', 'antoninus', 'Antoninus'],
+  ['iustinian', 'justinian', 'Iustinian'],
+  ['modestinus', 'modestinus', 'Modestinus'],
+  ['papyrius', 'papyrius', 'Papyrius'],
+  ['fortescue', 'fortescue', 'Fortescue'],
+  ['bracton', 'bracton', 'Bracton'],
+  ['danaeus', 'danaeus', 'Danaeus'],
+  ['solon', 'solon', 'Solon'],
+  ['dartus', 'dartus', 'Dartus'],
+  ['tamar', 'tamar', 'Tamar'],
 ].sort((a, b) => b[0].length - a[0].length);
 
 const SHORT = new Set(['og', 'uz', 'dan', 'lot', 'job', 'iob', 'gog', 'lud', 'put', 'hul', 'ham', 'shem', 'sem', 'noe', 'eva', 'eve', 'seth', 'adam', 'saul', 'cain', 'abel', 'ira', 'io']);
@@ -1130,6 +1189,28 @@ for (const [key, bucket] of buckets) {
     thua: 'Thua',
     perseus: 'Perseus',
     andromeda: 'Andromeda',
+    'heber-the-kenite': 'Heber the Kenite',
+    'monsieur-de-fumet': 'Monsieur de Fumet',
+    dartus: 'Dartus',
+    'baldwin-the-first': 'Baldwine the first',
+    solon: 'Solon',
+    hooker: 'Hooker',
+    reinerius: 'Reinerius',
+    antoninus: 'Antoninus',
+    valentia: 'Valentia',
+    tamar: 'Tamar',
+    bracton: 'Bracton',
+    'iulian-jurist': 'Iulian the jurist',
+    'adrian-the-emperor': 'Adrian the Emperour',
+    papyrius: 'Papyrius',
+    tarquin: 'Tarquin',
+    'servius-tullius': 'Seruius Tullius',
+    modestinus: 'Modestinus',
+    justinian: 'Iustinian',
+    willet: 'Willet',
+    fortescue: 'Fortescue',
+    'prince-edward': 'Prince Edward',
+    danaeus: 'Danaeus',
   }[id] || title;
   newIds.set(key, id);
   created.push(bucket);
@@ -1302,6 +1383,26 @@ addEvent('burning-bush', (p) => {
   if (p.book !== '2' || p.chapter !== '3' || p.kind !== 'body') return false;
   return /calling backe into aegypt by the angel of god/i.test(p.passage);
 });
+// Book II, Part I, Chapter IV. The law discourse is not a new event.
+addEvent('exodus', (p) => {
+  if (p.book !== '2' || p.chapter !== '4' || p.kind !== 'body') return false;
+  return /passeouer|past the red sea|pharaoh and his armie|remoued from the generall assembly|led israel out of aegypt/i.test(p.passage);
+});
+addEvent('moses-birth', (p) => {
+  if (p.book !== '2' || p.chapter !== '4' || p.kind !== 'body') return false;
+  return /moses was borne in the yeere of the world 2434/i.test(p.passage);
+});
+addEvent('moses-flees-to-midian', (p) => {
+  if (p.book !== '2' || p.chapter !== '4' || p.kind !== 'body') return false;
+  return /fled into midian when he had liued/i.test(p.passage);
+});
+addEvent('arrival-at-sinai', (p) => {
+  if (p.book !== '2' || p.chapter !== '4' || p.kind !== 'body') return false;
+  return /spent in the desart of sinai|law by the angell of god was giuen|world had stood 2513|incamped thereabout almost a yeare/i.test(p.passage);
+});
+addEvent('wilderness-wanderings', (p) => /wandered 40 yeare/i.test(p.passage));
+addEvent('fall-of-troy', (p) => /fall of troy|troy itselfe was cast downe/i.test(p.passage));
+addEvent('twelve-tables', (p) => /decem-viri, 303|twelue tables|twelve tables/i.test(p.passage));
 for (const event of events.values()) {
   for (const entry of event.chronologies || []) {
     if (entry.source !== SRC || !entry.date) continue;
@@ -1451,6 +1552,28 @@ function personDoc(bucket) {
   if (id === 'steaen-gama') description = `${OURS} Steaen Gama, Viceroy of the East India. The printed spelling Steaen was not corrected. The yeere 1544 names no era and was not stored. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'iuba') description = `${OURS} King Iuba, who names the Red Sea Laeniticum. Not Jubal. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'clemens-alexandrinus') description = `${OURS} Clemens Alexandrinus. A bare Clemens named earlier, with Iustine Martyr and Lactantius, was not folded onto this record. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'heber-the-kenite') description = `${OURS} Heber the Kenite, of the children of Hobab, in Judges 4. Not Eber son of Salah. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'monsieur-de-fumet') description = `${OURS} Monsieur de Fumet of France, named with Peter Belonius on the road to Sinai. Not Anthonie Fume. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'dartus') description = `${OURS} Printed Dartus, who began the canal after Sesostris and before Ptolemie the second. Not folded onto a Darius record. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'baldwin-the-first') description = `${OURS} Baldwine the first, who passed by Helim. Not Baldwin the third. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'solon') description = `${OURS} Solon, from whom the Athenians received their laws. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'hooker') description = `${OURS} Printed M r. Hooker. The name was not expanded. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'reinerius') description = `${OURS} Reinerius, named with Antoninus and Valentia on the natural law. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'antoninus') description = `${OURS} Antoninus, named with Reinerius and Valentia. Not Antonius. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'valentia') description = `${OURS} G. Valentia, the writer named with Reinerius and Antoninus. Not a place. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'tamar') description = `${OURS} The woman against whom Judah gave judgement that she should be burnt. The event amnon-and-tamar was not attached. No yeere of the World was taken for her. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'bracton') description = `${OURS} Bracton, cited on the affection that names a work, and on the king and the law. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'iulian-jurist') description = `${OURS} Iulian the jurist, who interpreted the edicts presented to Adrian the Emperour. Not Julian the Apostate. The one-word title would fold onto julian, so the title is three words. The lex Iulia and the lex Cornelia were not made people. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'adrian-the-emperor') description = `${OURS} Adrian the Emperour, to whom the interpreted edict was presented. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'papyrius') description = `${OURS} Papyrius, who gathered the Regall lawes. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'tarquin') description = `${OURS} Tarquin, then raigning when Papyrius gathered the lawes. That clause was not stored as a reign length. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'servius-tullius') description = `${OURS} Seruius Tullius, whose lawes for commerce and contracts were continued in the twelve tables. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'modestinus') description = `${OURS} Modestinus, who comprehends the effects of the law in two. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'justinian') description = `${OURS} Iustinian, whose collections he sets beside the perpetual edict. Not Justin, and not Justin Martyr. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'willet') description = `${OURS} Master Doctor Willet. The printed name was not expanded. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'fortescue') description = `${OURS} Fortescue, called a bulwarke of our lawes. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'prince-edward') description = `${OURS} Prince Edward, named in Fortescue his discourse. Not Edward the Fourth, and not Edward the Sixth. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'danaeus') description = `${OURS} Danaeus, named among the collectors on the knowledge of God, and again on the agreement of the Testaments. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   const doc = {
     $schema: '../../schema/person.schema.json',
     id,
@@ -1484,7 +1607,9 @@ function formsFor(id, title) {
   const person = nameDoc.people.find((p) => p.id === id);
   const stored = new Set((person?.forms || []).map((f) => f.form.toLowerCase()));
   stored.add((title || '').toLowerCase());
-  const newNote = book2Through === 3
+  const newNote = book2Through === 4
+    ? 'Spelling only. Read in Book II, Part I, Chapter IV.'
+    : book2Through === 3
     ? 'Spelling only. Read in Book II, Part I, Chapter III.'
     : book2Through === 2
     ? 'Spelling only. Read in Book II, Part I, Chapter II.'
@@ -1500,7 +1625,9 @@ function formsFor(id, title) {
     const holder = held.find((p) => p && p.passage.includes(form));
     if (!holder) continue;
     // Earlier passes stored the spellings they read. Add a form only from this pass.
-    const inPass = book2Through === 3
+    const inPass = book2Through === 4
+      ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '4'
+      : book2Through === 3
       ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '3'
       : book2Through === 2
       ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '2'
@@ -1607,6 +1734,7 @@ for (const bucket of createdKept) {
   if (existsSync(path)) {
     const prev = readJSON(path);
     if (!String(prev.description || '').startsWith(OURS)) throw new Error(`refuse to replace ${bucket.id}`);
+    continue;
   }
   writeFileSync(path, `${JSON.stringify(personDoc(bucket), null, 2)}\n`);
 }

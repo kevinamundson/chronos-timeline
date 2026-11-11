@@ -650,12 +650,17 @@ const ETH_EXPLICIT = {
   // "it behoueth me". The dictionary verb is behoove, not the letters behov.
   behoueth: 'behooves',
   behoveth: 'behooves',
+  // "incourageth" and "inforceth" are encourage and enforce. The in- spelling is not a dictionary verb.
+  incourageth: 'encourages',
+  inforceth: 'enforces',
   // The noun truth. "true" is a headword, so the stem would otherwise become trues.
   trueth: 'truth',
 };
 
 const ETH_EXPLICIT_REASON = {
   trueth: 'noun truth, not the verb true',
+  incourageth: 'verb encourage → encourages',
+  inforceth: 'verb enforce → enforces',
 };
 
 // Kept, and listed as unsure. The letters do not identify one modern verb.
