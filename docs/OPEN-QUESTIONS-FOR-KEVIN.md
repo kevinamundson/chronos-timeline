@@ -1407,7 +1407,7 @@ Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. 
 
 ### N26. The 1617 index line for Noema
 
-- **Why it matters:** The 1617 XML index prints “Noema, or Naamath, the sister of Tubalcain, expounded by Saint Augustine.” That line is not one of the stored passages in `data/raleigh-accounts.json`. It was not extracted. Pass 6 was not started. Naamah’s account is the two body passages already stored, p01028 and p01070.
+- **Why it matters:** The 1617 XML index prints “Noema, or Naamath, the sister of Tubalcain, expounded by Saint Augustine.” That line is not one of the stored passages in `data/raleigh-accounts.json`. It was not extracted. Pass 6 read Book II, Part I, Chapter II, and did not take the index. Naamah’s account is the two body passages already stored, p01028 and p01070.
 - **Options:**
   1. Leave the index line out of the account until a later extract, as now.
   2. Ask for that index line to be stored as its own passage.
@@ -1478,3 +1478,53 @@ Pass 5 read Book II, Part I, Chapter I, and stopped at the end of that chapter. 
   1. Leave Lamech unlinked until a pin or a context rule is stated, as now.
   2. Give Lamech the same kind of rule as Tubal, and say which names or links select `lamech-cainite`.
 - **Recommendation:** option 1. A silent choice between the two Lamechs would be a guess. The occurrences are in `docs/name-link-review.md`.
+
+Pass 6 read Book II, Part I, Chapter II, and stopped at the end of that chapter. The quotes are in `data/raleigh-body-extract.md`. N1, N2, N4, N7 to N17, and N18 to N34 stay open.
+
+### N35. Cham’s An. Mundi 1847 beside the table’s 1848
+
+- **Why it matters:** The chronological table (sig. 782a) prints Cham at the yeere of the World 1848. Book II, Part I, Chapter II, §. I, sig. 168a, prints An. Mundi 1847 for Cham (An. dil. 191). Both are stored. `year_bc_ad` is null on both. The calculated sort on `cham` stays −2185 from 1848.
+- **Options:**
+  1. Keep both figures, as now.
+  2. Drop 1847, or drop 1848, and say which year the sort should follow.
+- **Recommendation:** option 1. He prints both. The body table is one year earlier than the chronological table.
+
+### N36. Two Busirises, and Belus father of Danaus
+
+- **Why it matters:** `busiris` is Busiris or Orus the second, the oppressor of Israel (An. Mundi 2438). The same chapter’s pedigree, §. VIII, sig. 172b, names “Agenor, Belus, and Busiris” as the children of Lybia. That Busiris was not split off. `belus` is already the Assyrian table king. The sentence “Belus the father of Danaus & Aegyptus” stays on `belus`.
+- **Options:**
+  1. Leave one Busiris and one Belus, as now.
+  2. Name a second Busiris for Lybia’s son, and a second Belus for the father of Danaus, and say which passages move.
+- **Recommendation:** option 1. He is arguing a pedigree, and a second record would invent a split he does not date.
+
+### N37. Amenophis, Themosis, and the Cory kings of the same names
+
+- **Why it matters:** `amenophis` is new. The chapter places Amenophis next before Busiris, and after Ramesses as the king Mercator thinks drowned in the red Sea. `amenoph-d18` and `amenophis-d18` (and the Josephus Amenophis records) were left alone. `themosis` is new (Eusebius’s Amasis). `amasis-ii` was left alone.
+- **Options:**
+  1. Keep the new records apart from the Cory dynasty kings, as now.
+  2. Name the Cory record that should receive Amenophis or Themosis.
+- **Recommendation:** option 1. Folding them into a dynasty-18 or dynasty-26 king would guess which Manetho row he means.
+
+### N38. Names that were not made into people in this chapter
+
+- **Why it matters:** “the Caliphe, or Mulene 〈◊ 〉” is damaged, so Mulene was not made a person. The Soldans and the Visier are offices. The Sicyonians are a group. “Hier ome” in “S. Hier ome in quaestionibus Hebraicis” is Jerome, split in the italic; it is on `jerome`. SESOSTRES is the plural of Sesostris, on `sesostris`. CHAMS and NOES are the possessives of Cham and Noah.
+- **Options:**
+  1. Leave Mulene, the Caliphe, the Soldans, the Visier, and the Sicyonians unmade, as now.
+  2. Name the record that should receive one of them.
+- **Recommendation:** option 1. An office or a damaged name is not a named individual.
+
+### N39. Dynasty lengths, and intervals that have no event
+
+- **Why it matters:** The twelve first dynasties at seven years each (84), the thirteenth at 14, the fourteenth at 26, the fifteenth at 37, and the fifteen together at 161, are lengths of dynasties, not of a named king. Cham’s 161 is already the chronological-table reign. “From the death of Orus to the departure of Israel … 122. yeeres”, “75. yeeres” from the first of Busiris to that departure, and the sum 352 + 75 + 430 = 857, are intervals. The 43rd year of Ninus is a synchronism with Abraham’s birth, already stored as World 2009. Krentzhemius’s 297 for Osiris is a figure Raleigh rejects. Mercator’s 112 or 113, Bunting’s 87, and Angelocrator’s three years for Typhon were not entered. No new event was made for the drowning in the red Sea; those passages are on `exodus` and `chencres`.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them.
+- **Recommendation:** option 1. A new event cannot take a sort year from Raleigh.
+
+### N40. Hercules Aegyptus and Hercules Lybius
+
+- **Why it matters:** “Lehabim the sonne of Mizraim called Hercules Lybius” is on `lehabim` and on `hercules`. The heading HERCVLES AEGYPTVS is on `hercules`. N33 already leaves the token Hercules unlinked, because `hercules` and `heracles` share it. No third Hercules record was made.
+- **Options:**
+  1. Leave Hercules Aegyptus and Hercules Lybius on `hercules`, with the Lehabim sentence also on `lehabim`, as now.
+  2. Name a second record for the Egyptian Hercules, and say which passages move.
+- **Recommendation:** option 1. He identifies the Egyptian Hercules with Lehabim. The page of each record shows the sentence.

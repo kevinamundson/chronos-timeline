@@ -77,6 +77,28 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"2530 1848 191\". The third printed figure 191 is the column \"Floud\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 161 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Kings of Aegypt .."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "1847. 191. Cham.",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter II, §. I, sig. 168a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The table in this section is headed An. Mundi and prints 1847. The chronological table already prints 1848 (sig. 782a), which is the stored yeere of the World on this reign. Two World years in one slot are not calculated (N35). year_am stays null on this sentence. year_bc_ad stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "CHAMS reigne in Aegypt began in the yeere after the Floud, 191",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter II, §. II, sig. 168b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. Years after the Flood, not a yeere of the World. The same section’s table prints An. Mundi 1847. year_am stays null. This does not change the sort."
       }
     ]
   },

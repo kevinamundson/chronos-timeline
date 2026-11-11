@@ -62,6 +62,17 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n174/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "No reign length is printed for Sethosis. The edition prints the name as Aegyptus (the scan's capital is Æ). Attached also to danaus because this sentence names him. Not merged with Danaus."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "and( according to Eusebius and good Authors approuing him) reigned fiue yeeres.",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter II, §. VIII, sig. 172b–173a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. A reign length or duration. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },
@@ -69,7 +80,8 @@
   "scripture_refs": [],
   "sources": [
     "shuckford-sacred-profane-1819",
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [
@@ -82,6 +94,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book II, Part I, Chapter II, §. VIII, sig. 172b–173a"
     }
   ]
 }

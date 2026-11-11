@@ -1,0 +1,95 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "chencres",
+  "type": "person",
+  "title": "Chencres",
+  "summary": "Raleigh names Chencres in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Chencres, drowned in the red Sea. The table prints An. Mundi 2497. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": -1536,
+  "sorting_basis": {
+    "tier": "calculated",
+    "tier_rank": null,
+    "chronology": "raleigh-history-of-the-world",
+    "slot": "reign_start",
+    "note": "Calculated from printed figures. No tier 1–4 birth, no tier reign start, and no provisional year. Raleigh prints the yeere of the World 2497. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2497 = 1536 BC. The figure is not written into year_bc_ad. A printed year for this person would replace it."
+  },
+  "calculated": [
+    {
+      "slot": "reign_start",
+      "year_bc_ad": -1536,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter II, §. I, sig. 168a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2497. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2497 = 1536 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "chencres",
+      "anchor_slot": "reign_start",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2497
+    }
+  ],
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "2497. 841. Chencres drowned in the red Sea.",
+        "year_am": 2497,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter II, §. I, sig. 168a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The table in this section is headed An. Mundi. year_bc_ad stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Chencres, thought to be his sonne, reigned 10. and then perished in the red Sea.",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter II, §. VIII, sig. 172b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. A reign length or duration. Not a yeere of the World. year_am stays null. This does not change the sort."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book II, Part I, Chapter II, §. I, sig. 168a"
+    }
+  ]
+}

@@ -1,16 +1,17 @@
 #!/usr/bin/env node
-// Covered text of Raleigh's History (1617): Preface, contents, Book I, Part I.
+// Covered text of Raleigh's History (1617): Preface, contents, Book I, Part I,
+// and Book II, Part I.
 // Rebuilds data/raleigh-accounts.json. With --write, also adds a person record
 // for every named individual in that range who does not already have one.
 // Undated people get a null CFAH date and no sort year.
 //
 //   node scripts/raleigh/covered.mjs
 //   node scripts/raleigh/covered.mjs --through=12
-//   node scripts/raleigh/covered.mjs --through=12 --book2=1 --write
+//   node scripts/raleigh/covered.mjs --through=12 --book2=2 --write
 //
 // --through is the last Book I, Part I chapter. It cannot be less than 8, because
 // passes 1–3 already covered Chapters I–VIII. --book2 is the last Book II, Part I
-// chapter. 0 leaves Book II out. Pass 5 stops at Chapter I.
+// chapter. 0 leaves Book II out. Pass 6 stops at Chapter II.
 // A passage is attached by the name as printed. Groups, places, and unnamed
 // people are not split into individuals. God, Jehovah, and the Holy Ghost are
 // not person records. Ambiguous shared names are left unattached.
@@ -31,8 +32,8 @@ const book2Through = book2Arg ? Number(book2Arg.slice('--book2='.length)) : 0;
 if (!Number.isInteger(throughChapter) || throughChapter < 8 || throughChapter > 12) {
   throw new Error('--through must be an integer from 8 to 12 (Book I, Part I ends at Chapter XII)');
 }
-if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 1) {
-  throw new Error('--book2 must be 0 or 1 (pass 5 stops at Book II, Part I, Chapter I)');
+if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 2) {
+  throw new Error('--book2 must be 0, 1, or 2 (pass 6 stops at Book II, Part I, Chapter II)');
 }
 const LINK = 'https://texts.earlyprint.org/works/A10357.xml';
 const SRC = 'raleigh-history-of-the-world';
@@ -504,6 +505,77 @@ const FORCE = {
   tamberlain: 'tamberlain', thucydides: 'thucydides', sesac: 'sesac', leuita: 'leuita',
   // Ellas is a country. Bela is Zoar. Moore is also Blacke-Moore. Victor glosses the name Xerxes.
   ellas: null, bela: null, moore: null, victor: null,
+  // Book II, Part I, Chapter II. Egyptian kings, their aliases, and the writers
+  // who date them. A city, a land, and an office are not people. Two Sesostrises
+  // and Orus the second are split because he names them apart from the first.
+  osiris: 'osiris', osiri: 'osiris',
+  mizraim: 'mizraim',
+  typhon: 'typhon',
+  orus: 'orus', orvs: 'orus',
+  sesostris: 'sesostris',
+  sesonchosis: 'sesostris',
+  thermutis: 'thermutis', thermvtis: 'thermutis',
+  acenchere: 'thermutis', acencris: 'thermutis', acencheres: 'thermutis',
+  meris: 'thermutis', muthis: 'thermutis',
+  phareis: 'thermutis',
+  ramesses: 'ramesses', rameses: 'ramesses',
+  armesesmiamum: 'ramesses', armesesmiamus: 'ramesses',
+  aegyptus: 'aegyptus',
+  danaus: 'danaus',
+  armeus: 'armeus',
+  armais: 'armais',
+  armesis: 'armais',
+  epaphus: 'epaphus',
+  lehabim: 'lehabim',
+  vexoris: 'vexoris',
+  saltis: 'saltis',
+  isis: 'isis',
+  reineccius: 'reineccius',
+  glicas: 'glycas',
+  necho: 'neco',
+  ieroboam: 'jeroboam-i', jeroboam: 'jeroboam-i',
+  gideon: 'gedeon',
+  ierubbaal: 'gedeon', jerubbaal: 'gedeon',
+  hammon: 'cham',
+  menas: 'osiris', menis: 'osiris', menaeus: 'osiris',
+  apachnas: 'apachnan',
+  acherres: 'acherrhes',
+  pheron: 'sesostris-the-blinde', pherones: 'sesostris-the-blinde',
+  busiris: 'busiris',
+  rathoris: 'rathoris', athoris: 'rathoris',
+  chencres: 'chencres',
+  cherres: 'cherres',
+  telegonus: 'telegonus',
+  lynceus: 'lynceus',
+  hypermnestra: 'hypermnestra',
+  agenor: 'agenor',
+  putiphar: 'putiphar', putiphars: 'putiphar',
+  asenath: 'asenath',
+  phicol: 'phicol',
+  ioab: 'ioab', joab: 'ioab',
+  abner: 'abner',
+  hadad: 'hadad',
+  amenoph: 'amenophis', amenophis: 'amenophis',
+  themosis: 'themosis', amasis: 'themosis',
+  vaphres: 'vaphres',
+  baeon: 'baeon',
+  apochis: 'apochis',
+  dardanus: 'dardanus',
+  krentzhemius: 'krentzhemius',
+  bunting: 'bunting',
+  aventinus: 'aventinus',
+  ortelius: 'ortelius',
+  io: 'io',
+  chams: 'cham',
+  noes: 'noah',
+  hier: 'jerome',
+  sesostres: 'sesostris',
+  auentinus: 'aventinus',
+  dtodorus: 'diodorus-siculus',
+  cyrill: 'cyril',
+  artabanus: 'artabanus',
+  // Cairo is the city. The Caliphe and the Soldans are offices. Mulene is damaged.
+  cairo: null, visier: null, visiers: null, caliphe: null, soldans: null, mulene: null,
 };
 
 const PHRASES = [
@@ -605,9 +677,35 @@ const PHRASES = [
   ['q. curtius', 'quintus-curtius', null],
   ['liberis noa', 'noah', null],
   ['chedor laomer', 'chedorlaomer', null],
+  // Book II, Part I, Chapter II.
+  ['sesostris the great', 'sesostris', 'Sesostris'],
+  ['sesostris the blinde', 'sesostris-the-blinde', 'Sesostris the blinde'],
+  ['sesostris the second', 'sesostris-the-blinde', 'Sesostris the blinde'],
+  ['orus the second', 'busiris', 'Busiris'],
+  ['orus the 2', 'busiris', 'Busiris'],
+  ['oris the second', 'busiris', 'Busiris'],
+  ['hercules lybius', 'lehabim', null],
+  ['hercules aegyptus', 'hercules', 'Hercules Aegyptus'],
+  ['hercvles aegyptvs', 'hercules', 'Hercules Aegyptus'],
+  ['william, archbishop of tyre', 'william-of-tyre', 'William, Archbishop of Tyre'],
+  ['william archbishop of tyre', 'william-of-tyre', 'William, Archbishop of Tyre'],
+  ['pharaoh vaphres', 'vaphres', 'Vaphres'],
+  ['iulian the apostata', 'julian', null],
+  ['julian the apostata', 'julian', null],
+  ['sesostris or sesonchosis', 'sesostris', null],
+  ['busiris or oris the second', 'busiris', 'Busiris'],
+  ['busiris or orus the second', 'busiris', 'Busiris'],
+  ['acenchere or thermutis', 'thermutis', null],
+  ['rathoris or athoris', 'rathoris', 'Rathoris'],
+  ['danaus or armeus', 'danaus', null],
+  ['aegyptus or ramesses', 'ramesses', null],
+  ['ramesses or aegyptus', 'ramesses', null],
+  ['mercurius ter-maximus', 'mercurius', 'Mercurius Ter-maximus'],
+  ['lybia, who had', 'lybia-daughter-of-epaphus', 'Lybia'],
+  ['hier ome', 'jerome', null],
 ].sort((a, b) => b[0].length - a[0].length);
 
-const SHORT = new Set(['og', 'uz', 'dan', 'lot', 'job', 'iob', 'gog', 'lud', 'put', 'hul', 'ham', 'shem', 'sem', 'noe', 'eva', 'eve', 'seth', 'adam', 'saul', 'cain', 'abel', 'ira']);
+const SHORT = new Set(['og', 'uz', 'dan', 'lot', 'job', 'iob', 'gog', 'lud', 'put', 'hul', 'ham', 'shem', 'sem', 'noe', 'eva', 'eve', 'seth', 'adam', 'saul', 'cain', 'abel', 'ira', 'io']);
 
 function uvSwap(w) {
   return w.replace(/[uv]/g, (ch) => (ch === 'u' ? 'v' : 'u'));
@@ -877,6 +975,35 @@ for (const [key, bucket] of buckets) {
     dion: 'Dion',
     'dion-neapolites': 'Dion Neapolites',
     'guilandinus-melchior': 'Guilandinus Melchior',
+    busiris: 'Busiris',
+    'sesostris-the-blinde': 'Sesostris the blinde',
+    rathoris: 'Rathoris',
+    chencres: 'Chencres',
+    cherres: 'Cherres',
+    'william-of-tyre': 'William, Archbishop of Tyre',
+    'lybia-daughter-of-epaphus': 'Lybia',
+    themosis: 'Themosis',
+    amenophis: 'Amenophis',
+    vaphres: 'Vaphres',
+    telegonus: 'Telegonus',
+    krentzhemius: 'Krentzhemius',
+    ortelius: 'Ortelius',
+    aventinus: 'Auentinus',
+    putiphar: 'Putiphar',
+    asenath: 'Asenath',
+    phicol: 'Phicol',
+    ioab: 'Ioab',
+    hadad: 'Hadad',
+    abner: 'Abner',
+    dardanus: 'Dardanus',
+    pheron: 'Pheron',
+    baeon: 'Baeon',
+    apochis: 'Apochis',
+    bunting: 'Bunting',
+    lynceus: 'Lynceus',
+    hypermnestra: 'Hypermnestra',
+    agenor: 'Agenor',
+    io: 'Io',
   }[id] || title;
   newIds.set(key, id);
   created.push(bucket);
@@ -886,7 +1013,7 @@ for (const [key, bucket] of buckets) {
 
 // Second pass now that new aliases exist. Rebuild account sets from scratch.
 const accounts = new Map();
-const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite', 'haran-son-of-terah', 'midian-son-of-abraham', 'oleaster']);
+const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite', 'haran-son-of-terah', 'midian-son-of-abraham', 'oleaster', 'lybia-daughter-of-epaphus']);
 function addAccount(id, passage) {
   if (!id || String(id).startsWith('new:')) return;
   if (!people.has(id) && !created.some((c) => c.id === id) && !events.has(id) && !SPECIAL.has(id)) return;
@@ -907,6 +1034,11 @@ for (const passage of passages) {
   if (/\b(ham|cham)\b/.test(t)) {
     if (sons) addAccount('ham', passage);
     else if (/\b(egypt|aegypt)\b/.test(t) && /\bcham\b/.test(t)) addAccount('cham', passage);
+  }
+  // Book II, Part I, Chapter II is the Egyptian Cham. Every Cham in that chapter
+  // is the table king, including the heading that names him without the word Egypt.
+  if (passage.book === '2' && passage.chapter === '2' && /\bcham\b/.test(t)) {
+    addAccount('cham', passage);
   }
   if (/\babimelech\b/.test(t) || /\babimelec\b/.test(t)) {
     if (/gerar|philistim/.test(t)) addAccount('abimelech-of-gerar', passage);
@@ -955,6 +1087,10 @@ for (const passage of passages) {
     noteSurface('oleaster', 'Oleaster', passage);
   }
   if (/iuda and ioseph of iacob/.test(t)) addAccount('judah', passage);
+  if (/lybia, who had/.test(t)) {
+    addAccount('lybia-daughter-of-epaphus', passage);
+    noteSurface('lybia-daughter-of-epaphus', 'Lybia', passage);
+  }
 }
 
 // Events the covered text discusses.
@@ -973,6 +1109,30 @@ addEvent('nimrod-builds-nineveh', (p) => {
   // The other hits are the sentences that say he built it or began it.
   if (/Chapter X, §\. III/.test(p.citation)) return true;
   return /begun by nimrod|built niniue|aedificauit niniuen|built foure more cities/i.test(p.passage);
+});
+addEvent('exodus', (p) => {
+  if (p.book !== '2' || p.chapter !== '2' || p.kind !== 'body') return false;
+  return /deliuerie of the israelites|departure of israel out of aegypt|departed aegypt|out of aegypt|red sea|drowned in the red sea|israel deliuered/i.test(p.passage);
+});
+addEvent('jacob-enters-egypt', (p) => {
+  if (p.book !== '2' || p.chapter !== '2' || p.kind !== 'body') return false;
+  return /iacob came into aegypt|israels comming into aegypt|send for his father|iacob died/i.test(p.passage);
+});
+addEvent('joseph-made-vizier', (p) => {
+  if (p.book !== '2' || p.chapter !== '2' || p.kind !== 'body') return false;
+  return /aduancement of ioseph|aduanced ioseph|set thee ouer all the land of aegypt|iosephs aduancement/i.test(p.passage);
+});
+addEvent('joseph-sold-into-egypt', (p) => {
+  if (p.book !== '2' || p.chapter !== '2' || p.kind !== 'body') return false;
+  return /iosephs being sold|putiphar who bought him|buying ioseph/i.test(p.passage);
+});
+addEvent('moses-birth', (p) => {
+  if (p.book !== '2' || p.chapter !== '2' || p.kind !== 'body') return false;
+  return /birth of moses|moses was borne|tooke vp moses|tooke moses out of the water/i.test(p.passage);
+});
+addEvent('mizraim-settles-egypt', (p) => {
+  if (p.book !== '2' || p.chapter !== '2' || p.kind !== 'body') return false;
+  return /began his reigne in aegypt|tooke possession of the countrie|himselfe did first plant it|cham began his reigne/i.test(p.passage);
 });
 for (const event of events.values()) {
   for (const entry of event.chronologies || []) {
@@ -1059,6 +1219,7 @@ ensureSpecial('christ', 'Christ');
 ensureSpecial('haran-son-of-terah', 'Haran');
 ensureSpecial('midian-son-of-abraham', 'Midian');
 ensureSpecial('oleaster', 'Oleaster');
+ensureSpecial('lybia-daughter-of-epaphus', 'Lybia');
 
 function personDoc(bucket) {
   const title = bucket.title;
@@ -1086,6 +1247,14 @@ function personDoc(bucket) {
   if (id === 'midian-son-of-abraham') description = `${OURS} A son of Abraham and Keturah, named with Zimron, Iockshan, Medan, Ishbak, and Shuah. The land is the location midian, and it was not attached. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'oleaster') description = `${OURS} The writer named with Caietan and Musculus. The tree Jerome calls Oleaster was not attached. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'leuita') description = `${OURS} Named as Leuita, in his Cabala. The printed name was not expanded. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'busiris') description = `${OURS} Busiris or Orus the second, the king he says first oppressed Israel. Kept apart from Orus the son of Osiris. The table prints An. Mundi 2438. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'sesostris-the-blinde') description = `${OURS} Sesostris the blinde, the son of Sesostris the great, also called Pheron. Kept apart from his father. The table prints An. Mundi 2424. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'rathoris') description = `${OURS} Rathoris or Athoris, brother of Queene Thermutis. The table prints An. Mundi 2488. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'chencres') description = `${OURS} Chencres, drowned in the red Sea. The table prints An. Mundi 2497. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'lybia-daughter-of-epaphus') description = `${OURS} Lybia, the daughter of Epaphus, mother of Agenor, Belus, and Busiris in the pedigree. The land Libya was not attached. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'william-of-tyre') description = `${OURS} William, Archbishop of Tyre, who flourished about the yeere of our Lord 1180. That is not a yeere of the World. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'amenophis') description = `${OURS} Amenophis, placed next before Busiris by some, and after Ramesses by others. Kept apart from the Cory eighteenth-dynasty kings of the same name. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'themosis') description = `${OURS} Themosis, whom Eusebius calls Amasis. Kept apart from Amasis II. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   const doc = {
     $schema: '../../schema/person.schema.json',
     id,
@@ -1119,9 +1288,11 @@ function formsFor(id, title) {
   const person = nameDoc.people.find((p) => p.id === id);
   const stored = new Set((person?.forms || []).map((f) => f.form.toLowerCase()));
   stored.add((title || '').toLowerCase());
-  const newNote = book2Through
-    ? 'Spelling only. Read in Book II, Part I, Chapter I.'
-    : 'Spelling only. Read in Book I, Part I, Chapters IX–XII.';
+  const newNote = book2Through === 2
+    ? 'Spelling only. Read in Book II, Part I, Chapter II.'
+    : book2Through === 1
+      ? 'Spelling only. Read in Book II, Part I, Chapter I.'
+      : 'Spelling only. Read in Book I, Part I, Chapters IX–XII.';
   const alreadyNew = (person?.forms || []).filter((f) => f.source_text_id === SRC_ID && f.note === newNote).length;
   const out = [];
   const held = (accounts.get(id) || []).map(passageById);
@@ -1131,9 +1302,11 @@ function formsFor(id, title) {
     const holder = held.find((p) => p && p.passage.includes(form));
     if (!holder) continue;
     // Earlier passes stored the spellings they read. Add a form only from this pass.
-    const inPass = book2Through
-      ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '1'
-      : holder.kind === 'body' && holder.book === '1' && Number(holder.chapter) >= 9;
+    const inPass = book2Through === 2
+      ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '2'
+      : book2Through === 1
+        ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '1'
+        : holder.kind === 'body' && holder.book === '1' && Number(holder.chapter) >= 9;
     if (!inPass) continue;
     stored.add(form.toLowerCase());
     out.push({ form, citation: `${cite(holder)}. The passage prints “${form}”.`, note: newNote });
@@ -1182,6 +1355,21 @@ for (const b of createdKept.sort((a, c) => a.id.localeCompare(c.id))) {
 }
 
 const prevAccounts = readJSON(join(DATA, 'raleigh-accounts.json'));
+// Keep every previous account link. Later passes attached some people by
+// hand; a rebuild must not drop those passages.
+for (const [id, oldIds] of Object.entries(prevAccounts.accounts)) {
+  const next = accounts.get(id) || [];
+  const seen = new Set(next);
+  const merged = [...next];
+  for (const pid of oldIds) {
+    if (!seen.has(pid)) {
+      merged.push(pid);
+      seen.add(pid);
+    }
+  }
+  merged.sort((a, b) => (passageById(a)?.order || 0) - (passageById(b)?.order || 0));
+  accounts.set(id, merged);
+}
 const prevById = new Map(prevAccounts.passages.map((p) => [p.id, p]));
 let passageDrift = 0;
 for (const p of passages) {

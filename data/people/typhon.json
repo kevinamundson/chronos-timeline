@@ -5,13 +5,30 @@
   "title": "Typhon",
   "summary": "Typhon is named in Cory, Ancient Fragments (1876, ed. Hodges), with a reign length or synchronism. Display only.",
   "description": "Added from the Cory import. Display only. Cory gives reign lengths and synchronisms, not a BC year this record can sort on, and no tier 1–4 chronology dates this person, so there is no sort year.",
-  "sorting_year": null,
+  "sorting_year": -1764,
   "sorting_basis": {
-    "tier": "none",
+    "tier": "calculated",
     "tier_rank": null,
-    "chronology": "cfah",
-    "note": "No tier gives a birth year (Cory is display-only and gives none)."
+    "chronology": "raleigh-history-of-the-world",
+    "slot": "reign_start",
+    "note": "Calculated from printed figures. No tier 1–4 birth, no tier reign start, and no provisional year. Raleigh prints the yeere of the World 2269. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2269 = 1764 BC. The figure is not written into year_bc_ad. A printed year for this person would replace it."
   },
+  "calculated": [
+    {
+      "slot": "reign_start",
+      "year_bc_ad": -1764,
+      "kind": "raleigh-am",
+      "source": "raleigh-history-of-the-world",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter II, §. I, sig. 168a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "arithmetic": "Raleigh prints the yeere of the World 2269. Creation is 4032 BC (Kevin, 2026-10-28). BC = 4033 − AM, so AM 2269 = 1764 BC. The figure is not written into year_bc_ad.",
+      "anchor_record": "typhon",
+      "anchor_slot": "reign_start",
+      "anchor_year_bc_ad": -4032,
+      "anchor_source": "raleigh-history-of-the-world",
+      "year_am": 2269
+    }
+  ],
   "father": null,
   "children": [],
   "dates": {
@@ -37,13 +54,36 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n155/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": null
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "2269. 613. Typhon",
+        "year_am": 2269,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter II, §. I, sig. 168a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The table in this section is headed An. Mundi. year_bc_ad stays null. This does not change the sort. Hercules is printed on the same An. Mundi row."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "in the reigne of Typhon and Hercules, seuen yeeres were spent, howsoeuer diuided betweene them",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter II, §. VI, sig. 170b–171a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. A reign length or duration. Not a yeere of the World. year_am stays null. This does not change the sort. The seven years are for Typhon and Hercules together."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [
@@ -51,6 +91,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book II, Part I, Chapter II, §. I, sig. 168a"
     }
   ]
 }
