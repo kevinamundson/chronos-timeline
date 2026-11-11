@@ -77,6 +77,17 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"3188 2506 423\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 40 at the end of the name is the reign length he prints. The end year is not printed on this row. Column: Assyria.."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "and held the Empire 41",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. I, sig. 173b–174a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. A reign length. The chronological table already stores 40 yeeres for him, and that length was not entered again. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },

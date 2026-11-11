@@ -8,6 +8,8 @@ Pass 5 (Book II, Part I, Chapter I) adds six words those tables do not list. Fou
 
 Pass 6 (Book II, Part I, Chapter II) adds three words those tables do not list. All three change. None is flagged. Through that chapter the inventory is 387 distinct words: 368 change, 15 stay, and the same 4 flagged. The new rows are under "Pass 6".
 
+Pass 7 (Book II, Part I, Chapter III) adds twelve words those tables do not list. Five change. Seven stay. None of the twelve is flagged. Through that chapter the inventory is 399 distinct words: 373 change, 22 stay, and the same 4 flagged. The new rows are under "Pass 7".
+
 ## Decisions
 
 - hath becomes has. It is the irregular third person of have. It does not end in -eth. An all-capital HATH becomes HAS. The capitals stay (open question N17).
@@ -17,6 +19,9 @@ Pass 6 (Book II, Part I, Chapter II) adds three words those tables do not list. 
 - A name, a noun, or an ordinal is not a verb. Seth, Japheth (printed Iapheth, shown as Japheth by the name rule), Heth, Nazareth, Elizabeth, teeth, twentieth, thirtieth, moneth (the noun month), hundreth (the noun hundred), Geth (the Philistine city), and Isboseth stay.
 - Ashtaroth does not end in -eth. It is unchanged.
 - The bare token saketh stays. The printed phrase "for saketh" is forsake, and the modern view reads "forsakes".
+- The bare token swereth stays. The printed phrase "an swereth" is answereth, and the modern view reads "answers".
+- Bahalbeth and Pibeseth stay. They are places. Tebeth, Thobeth, and Sebeth stay. They are Hebrew months.
+- eightieth stays. It is an ordinal.
 - Hyphenated fore-seeth and fore-telleth would otherwise become fore-sees and fore-tells, because the hyphen splits the token. The modern view joins them: foresees, foretells.
 - These printed verbs are mapped because the stem is not the modern infinitive: approcheth approaches, endeuoureth endeavours, maruaileth marvels, reprocheth reproaches, suteth suits, carieth carries, prophecieth prophesies, looseth loses (both hits mean lose, not unloose), siegeth besieges, trauaileth travels (all three hits are the verb travel, not travail), faineth and fayneth feigns (all three hits mean feign), behoueth behooves (the dictionary verb is behoove).
 - trueth becomes truth. It is the noun. The stem would otherwise meet the headword true and become trues.
@@ -441,3 +446,22 @@ Three words appear in Book II, Part I, Chapter II and in no earlier stored passa
 | collecteth | 1 | collects | verb collect → collects | p01633: Whereas Krentzhemius collecteth out of Herodotus, and Diodoru |
 | iudgeth | 1 | judges | verb judge → judges | p01632: any Nations. This is hee( as Reineccius iudgeth) whom Iustine erring in account  |
 | recordeth | 1 | records | verb record → records | p01622: were consumed fourtie yeeres, as Glicas recordeth: whose report I haue elsewhere |
+
+## Pass 7
+
+Twelve words appear in Book II, Part I, Chapter III and in no earlier stored passage. Counts are in those 50 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| bahalbeth | 1 | bahalbeth | kept: place Bahalbeth | p01654: ly Warre, Malbec; the 〈◊ 〉, Bahalbeth; and 〈◊ 〉 Sethi, Fons Solis. Of |
+| eightieth | 1 | eightieth | kept: ordinal | p01651: lasted 2370. yeeres, to the eightieth yeere of Moses, and vntill hee |
+| extendeth | 1 | extends | verb extend → extends | p01688: h Ilands, but afterwards it extendeth it selfe 58. Leagues from Coast |
+| finisheth | 1 | finishes | verb finish → finishes | p01677: he yeere, wherein the Sunne finisheth his course, 11. whole dayes, wi |
+| pibeseth | 1 | pibeseth | kept: place Pibeseth, the Hebrew name | p01658: ame which the Hebrewes call Pibeseth. |
+| preuenteth | 1 | prevents | verb prevent → prevents | p01679: e the common opinion, which preuenteth such dislocation of the Moneths |
+| retaineth | 1 | retains | verb retain → retains | p01676: olden Number, which name it retaineth vnto this day. Hereby were auoy |
+| sebeth | 1 | sebeth | kept: Hebrew month Sebeth | p01674: 10. December The eleuenth, Sebeth, or Sabath. 11. Ianuarie. The t |
+| suffereth | 1 | suffers | verb suffer → suffers | p01667: uery shortest piece of time suffereth decay; neither doth any thing a |
+| swereth | 1 | swereth | kept: split from answer (an swereth); the phrase is modernized, the bare token is not | p01676: f the Moneth 〈◊ 〉( which an swereth in a manner to our Iune) they w |
+| tebeth | 1 | tebeth | kept: Hebrew month Tebeth | p01674: eu. 9. Nouember. The tenth, Tebeth, or Thobeth. 10. December The e |
+| thobeth | 1 | thobeth | kept: Hebrew month Thobeth, printed beside Tebeth | p01674: mber. The tenth, Tebeth, or Thobeth. 10. December The eleuenth, Seb |

@@ -167,6 +167,72 @@
         "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": null
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "the birth of Moses was in the nineteenth yeere of the Assyrian Saphrus",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. I, sig. 173b–174a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. A synchronism with Saphrus. Not a yeere of the World, and not converted into one. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "80. at which age Moses left Aegypt",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. I, sig. 173b–174a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. His age when he left Egypt. Not a yeere of the World. The table lifespan of 120 was not entered again. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "about the 40. yeere of Moses age",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "approximate",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. IV, sig. 175b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. His age when he fled. Not a yeere of the World. The table row at World 2473 does not print this 40. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "neere Madian, hee consumed 40. yeeres",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. IV, sig. 175b–176a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The yeeres he says Moses spent near Midian. Not the fortie yeeres of instruction, and not a yeere of the World. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Moses himselfe in fortie yeeres space",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. V, sig. 177a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The yeeres in which he says Moses taught the form of the Hebrew yeere. Not the Midian 40, and not a yeere of the World. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "some eight or nine yeeres before the birth of Moses",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "approximate",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. I, sig. 174a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. When he says the oppression began, reckoned from the birth. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ],
     "death": [
@@ -328,6 +394,17 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n192/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "Artabanus, of Moyses, when he did these things. An age, not a reign length. Exodus 7:7 says Moses was eighty years old when he spoke to Pharaoh. No scripture link was added by hand. The italic sentence that Artabanus wrote about a century before Christ is the editor's and was not entered."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "tell vs of ten yeeres warre",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. IV, sig. 175b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The warre Josephus and Eusebius, out of Artapanus, report. He afterwards calls the images in that report fancies. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },

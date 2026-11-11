@@ -7,11 +7,11 @@
 //
 //   node scripts/raleigh/covered.mjs
 //   node scripts/raleigh/covered.mjs --through=12
-//   node scripts/raleigh/covered.mjs --through=12 --book2=2 --write
+//   node scripts/raleigh/covered.mjs --through=12 --book2=3 --write
 //
 // --through is the last Book I, Part I chapter. It cannot be less than 8, because
 // passes 1–3 already covered Chapters I–VIII. --book2 is the last Book II, Part I
-// chapter. 0 leaves Book II out. Pass 6 stops at Chapter II.
+// chapter. 0 leaves Book II out. Pass 7 stops at Chapter III.
 // A passage is attached by the name as printed. Groups, places, and unnamed
 // people are not split into individuals. God, Jehovah, and the Holy Ghost are
 // not person records. Ambiguous shared names are left unattached.
@@ -32,8 +32,8 @@ const book2Through = book2Arg ? Number(book2Arg.slice('--book2='.length)) : 0;
 if (!Number.isInteger(throughChapter) || throughChapter < 8 || throughChapter > 12) {
   throw new Error('--through must be an integer from 8 to 12 (Book I, Part I ends at Chapter XII)');
 }
-if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 2) {
-  throw new Error('--book2 must be 0, 1, or 2 (pass 6 stops at Book II, Part I, Chapter II)');
+if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 3) {
+  throw new Error('--book2 must be 0, 1, 2, or 3 (pass 7 stops at Book II, Part I, Chapter III)');
 }
 const LINK = 'https://texts.earlyprint.org/works/A10357.xml';
 const SRC = 'raleigh-history-of-the-world';
@@ -68,7 +68,7 @@ egypt aegypt asia africa europe india spain spaine italie italy france greece ro
 greeks hebrews israelites jews scythians egyptians aegyptians arcadians phoenicians tyrians chaldaeans chaldeans persians medes babylonians assyrians canaanites philistims philistines anakims moores moors spaniards latines romans brittaines gentiles sons children infants nations peoples angeles
 non sed cum quod qui quae quam sunt esse est fuit erat autem enim item sic nec vel per pro sub super inter apud sine post ante hoc hac his eos eum eius etiam tamen igitur ergo unde inde ubi tum tunc nam neque atque sicut quia quamquam
 chapter paragraphe paragraphes part section sancto samech timaeo poemandro vual volga sarmatia gosan gozan reseph sepher sephar mesha haran ogygia martyr
-appetite behold daughter diuini gallis genesis nauium occulta omnis potuisset scripsisse
+appetite behold daughter diuini gallis genesis nauium occulta omnis potuisset scripsisse wisedome psalme psalmes
 but for that this with from they them their which when where what were was hath have been into upon over after before these those unto vnto shall will would could should other about there then than such only into upon
 st au of to in by or as at an be is it we he ye on so no nor not may can our his her its its`.split(/\s+/).filter(Boolean));
 
@@ -576,6 +576,57 @@ const FORCE = {
   artabanus: 'artabanus',
   // Cairo is the city. The Caliphe and the Soldans are offices. Mulene is damaged.
   cairo: null, visier: null, visiers: null, caliphe: null, soldans: null, mulene: null,
+  // Book II, Part I, Chapter III. A spelling stays on the person already named.
+  // A month, a city, and a gloss are not people. Two men who share a word are
+  // split by a phrase below, not by this token.
+  pharaohs: 'pharaoh', pharaos: 'pharaoh',
+  pagnin: 'pagninus',
+  commestor: 'comestor',
+  porphyrie: 'porphyrius',
+  musaeus: 'musaeus', mvsaevs: 'musaeus',
+  sanchoniato: 'sanchoniathon', sanchoniathon: 'sanchoniathon',
+  polemon: 'polemon',
+  numenius: 'numenius',
+  artapanus: 'artapanus',
+  chenephis: 'thermutis', thermothes: 'thermutis',
+  eupolemus: 'eupolemon', eupolemon: 'eupolemon',
+  amesis: 'amosis-mendesius', amosis: 'amosis-mendesius',
+  thmosis: 'thmosis', sethosis: 'sethosis',
+  bocchoris: 'bocchorus',
+  saphrus: 'saphrus', spherus: 'saphrus',
+  orthopolis: 'orthopolis',
+  criasus: 'criasus',
+  mamelus: 'mamelus',
+  sparetus: 'sparetus',
+  ascatades: 'ascatades',
+  chenchres: 'chencres',
+  pharetates: 'pharetates',
+  hegesippus: 'hegesippus',
+  brochard: 'brochard',
+  zeigler: 'zeigler',
+  tudalensis: 'tudalensis',
+  herod: 'herod-the-great',
+  abulensis: 'tostatus',
+  osorius: 'osorius',
+  phagius: 'phagius',
+  philostratus: 'philostratus',
+  artemidorus: 'artemidorus',
+  iuba: 'iuba',
+  salmanassar: 'salmanassar',
+  erythras: 'erythrus', erythraeus: 'erythrus',
+  // Erythros is the Greek word he says signifieth Red. Not King Erythrus.
+  erythros: null,
+  gama: 'steaen-gama',
+  castro: 'castro',
+  genebrard: 'genebrard',
+  sigonius: 'sigonius', sigonivs: 'sigonius',
+  harpalus: 'harpalus',
+  meton: 'meton',
+  calippus: 'calippus',
+  hipparchus: 'hipparchus',
+  aminadab: 'aminadab',
+  onias: 'onias-high-priest',
+  mahomet: 'mahomet', mahomets: 'mahomet',
 };
 
 const PHRASES = [
@@ -703,6 +754,35 @@ const PHRASES = [
   ['mercurius ter-maximus', 'mercurius', 'Mercurius Ter-maximus'],
   ['lybia, who had', 'lybia-daughter-of-epaphus', 'Lybia'],
   ['hier ome', 'jerome', null],
+  // Book II, Part I, Chapter III. The longer phrase wins, so a shared word
+  // stays on the person already named and the other man is a separate record.
+  ['ptolomie a priest of mendes', 'ptolemy-of-mendes', 'Ptolomie a Priest of Mendes'],
+  ['ptolomie philopater', 'ptolemy-philopator', 'Ptolomie Philopater'],
+  ['pope gregorie the 13', 'gregorie-xiii', 'Pope Gregorie the 13'],
+  ['william tyrius', 'william-of-tyre', 'William Tyrius'],
+  ['gul tyrius', 'william-of-tyre', 'Gul Tyrius'],
+  ['tyrius in the holy warre', 'william-of-tyre', null],
+  ['saith tyrius', 'william-of-tyre', null],
+  ['baldwin the third', 'baldwin-the-third', 'Baldwin the third'],
+  ['demetrius phalereus', 'demetrius-phalereus', 'Demetrius Phalereus'],
+  ['six. senensis', 'sixtus-senensis', null],
+  ['clemens alexandrinus', 'clemens-alexandrinus', 'Clemens Alexandrinus'],
+  ['inachus ruled the argiues', 'inachus', null],
+  ['apis the third', 'apis-of-argiues', null],
+  ['sephora and thua', null, null],
+  ['ioseph and the virgin mary', null, null],
+  ['perseus and andromeda', null, null],
+  ['lysimachus and cornelius tacitus', 'lysimachus-writer', 'Lysimachus'],
+  ['antonius giues', 'antonius', 'Antonius'],
+  ['apollonius in the liues of the fathers', 'apollonius', 'Apollonius'],
+  ['quin. curtius', 'quintus-curtius', null],
+  ['alex. polyhistor', 'alexander-polyhistor', null],
+  ['steaen gama', 'steaen-gama', 'Steaen Gama'],
+  ['richard hacluit', 'richard-hacluit', 'Richard Hacluit'],
+  ['iohannes barros', 'iohannes-barros', 'Iohannes Barros'],
+  ['tribe of iuda', 'judah', null],
+  // “S. August.” is Augustine. The month August is not this phrase.
+  ['s. august', 'augustine', null],
 ].sort((a, b) => b[0].length - a[0].length);
 
 const SHORT = new Set(['og', 'uz', 'dan', 'lot', 'job', 'iob', 'gog', 'lud', 'put', 'hul', 'ham', 'shem', 'sem', 'noe', 'eva', 'eve', 'seth', 'adam', 'saul', 'cain', 'abel', 'ira', 'io']);
@@ -1004,6 +1084,52 @@ for (const [key, bucket] of buckets) {
     hypermnestra: 'Hypermnestra',
     agenor: 'Agenor',
     io: 'Io',
+    sanchoniathon: 'Sanchoniathon',
+    polemon: 'Polemon',
+    numenius: 'Numenius',
+    artapanus: 'Artapanus',
+    saphrus: 'Saphrus',
+    orthopolis: 'Orthopolis',
+    criasus: 'Criasus',
+    mamelus: 'Mamelus',
+    pharetates: 'Pharetates',
+    hegesippus: 'Hegesippus',
+    brochard: 'Brochard',
+    zeigler: 'Zeigler',
+    tudalensis: 'Tudalensis',
+    'ptolemy-of-mendes': 'Ptolomie a Priest of Mendes',
+    'ptolemy-philopator': 'Ptolomie Philopater',
+    'baldwin-the-third': 'Baldwin the third',
+    osorius: 'Osorius',
+    phagius: 'Phagius',
+    philostratus: 'Philostratus',
+    artemidorus: 'Artemidorus',
+    iuba: 'Iuba',
+    salmanassar: 'Salmanassar',
+    'steaen-gama': 'Steaen Gama',
+    castro: 'Castro',
+    'richard-hacluit': 'Richard Hacluit',
+    'iohannes-barros': 'Iohannes Barros',
+    genebrard: 'Genebrard',
+    sigonius: 'Sigonius',
+    'demetrius-phalereus': 'Demetrius Phalereus',
+    harpalus: 'Harpalus',
+    meton: 'Meton',
+    calippus: 'Calippus',
+    hipparchus: 'Hipparchus',
+    'gregorie-xiii': 'Pope Gregorie the 13',
+    aminadab: 'Aminadab',
+    'clemens-alexandrinus': 'Clemens Alexandrinus',
+    apollonius: 'Apollonius',
+    antonius: 'Antonius',
+    mahomet: 'Mahomet',
+    'lysimachus-writer': 'Lysimachus',
+    'joseph-husband-of-mary': 'Ioseph',
+    'virgin-mary': 'Virgin Mary',
+    'sephora-midwife': 'Sephora',
+    thua: 'Thua',
+    perseus: 'Perseus',
+    andromeda: 'Andromeda',
   }[id] || title;
   newIds.set(key, id);
   created.push(bucket);
@@ -1013,7 +1139,7 @@ for (const [key, bucket] of buckets) {
 
 // Second pass now that new aliases exist. Rebuild account sets from scratch.
 const accounts = new Map();
-const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite', 'haran-son-of-terah', 'midian-son-of-abraham', 'oleaster', 'lybia-daughter-of-epaphus']);
+const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite', 'haran-son-of-terah', 'midian-son-of-abraham', 'oleaster', 'lybia-daughter-of-epaphus', 'sephora-midwife', 'thua', 'joseph-husband-of-mary', 'virgin-mary', 'perseus', 'andromeda']);
 function addAccount(id, passage) {
   if (!id || String(id).startsWith('new:')) return;
   if (!people.has(id) && !created.some((c) => c.id === id) && !events.has(id) && !SPECIAL.has(id)) return;
@@ -1091,6 +1217,27 @@ for (const passage of passages) {
     addAccount('lybia-daughter-of-epaphus', passage);
     noteSurface('lybia-daughter-of-epaphus', 'Lybia', passage);
   }
+  // Sephora the midwife is not Zipporah. The phrase above keeps sephora on Zipporah everywhere else.
+  if (/sephora and thua/.test(t)) {
+    addAccount('sephora-midwife', passage);
+    addAccount('thua', passage);
+    noteSurface('sephora-midwife', 'Sephora', passage);
+    noteSurface('thua', 'Thua', passage);
+  }
+  // Joseph the husband is not the patriarch. The phrase above keeps the other Ioseph on joseph.
+  if (/ioseph and the virgin mary/.test(t)) {
+    addAccount('joseph-husband-of-mary', passage);
+    addAccount('virgin-mary', passage);
+    noteSurface('joseph-husband-of-mary', 'Ioseph', passage);
+    noteSurface('virgin-mary', 'Virgin Mary', passage);
+  }
+  // Erythraeus’s father. The Macedonian Perseus in the contents is a different man and is not attached.
+  if (/perseus and andromeda/.test(t)) {
+    addAccount('perseus', passage);
+    addAccount('andromeda', passage);
+    noteSurface('perseus', 'Perseus', passage);
+    noteSurface('andromeda', 'Andromeda', passage);
+  }
 }
 
 // Events the covered text discusses.
@@ -1098,7 +1245,11 @@ function addEvent(id, pred) {
   for (const passage of passages) if (pred(passage)) addAccount(id, passage);
 }
 addEvent('creation-week', (p) => (p.kind === 'body' && p.book === '1' && p.chapter === '1') || (p.kind === 'contents' && p.book === '1' && /Chapter I,/.test(p.citation)));
-addEvent('the-flood', (p) => /generall floud|vniuersall floud|universall floud|floud of noah|noahs floud|after the floud|before the floud|great inundation|\bthe floud\b/i.test(p.passage));
+addEvent('the-flood', (p) => {
+  // Chapter III, §. IX uses "the floud" for the Red Sea tide. That is not Noah's Flood.
+  if (p.book === '2' && p.chapter === '3') return false;
+  return /generall floud|vniuersall floud|universall floud|floud of noah|noahs floud|after the floud|before the floud|great inundation|\bthe floud\b/i.test(p.passage);
+});
 addEvent('founding-of-babel', (p) => /babel|babell|confusion of tongues|confusion of languages|towre of babel|tower of babel/i.test(p.passage));
 addEvent('flood-of-ogyges', (p) => /\bogyges\b|\bogygis\b|\bogyge\b/i.test(p.passage));
 addEvent('founding-of-rome', (p) => /3280/.test(p.passage) && /rome/i.test(p.passage));
@@ -1133,6 +1284,23 @@ addEvent('moses-birth', (p) => {
 addEvent('mizraim-settles-egypt', (p) => {
   if (p.book !== '2' || p.chapter !== '2' || p.kind !== 'body') return false;
   return /began his reigne in aegypt|tooke possession of the countrie|himselfe did first plant it|cham began his reigne/i.test(p.passage);
+});
+// Book II, Part I, Chapter III. The calendar digression is not the Exodus.
+addEvent('exodus', (p) => {
+  if (p.book !== '2' || p.chapter !== '3' || p.kind !== 'body') return false;
+  return /deliuery of israel out of aegypt|pursuit of the israelites|passage ouer the red sea|passage through the red sea|passeouer|red sea|led israel out of aegypt|led the people of god out of aegypt|remooued, and on their way|passages leading out of aegypt|aegyptians whom yee haue seene|pharaoh followed him|forefathers had throwne/i.test(p.passage);
+});
+addEvent('moses-birth', (p) => {
+  if (p.book !== '2' || p.chapter !== '3' || p.kind !== 'body') return false;
+  return /time of moses birth|time of moses his birth|birth of moses|moses was borne|sephora and thua|arke of reedes|moses his preseruation|moses liued in the time|moses was farre more ancient|moses liued after the troian/i.test(p.passage);
+});
+addEvent('moses-flees-to-midian', (p) => {
+  if (p.book !== '2' || p.chapter !== '3' || p.kind !== 'body') return false;
+  return /flying out of aegypt|fled into arabia|40\. yeere of moses age|neere madian, hee consumed 40/i.test(p.passage);
+});
+addEvent('burning-bush', (p) => {
+  if (p.book !== '2' || p.chapter !== '3' || p.kind !== 'body') return false;
+  return /calling backe into aegypt by the angel of god/i.test(p.passage);
 });
 for (const event of events.values()) {
   for (const entry of event.chronologies || []) {
@@ -1220,6 +1388,12 @@ ensureSpecial('haran-son-of-terah', 'Haran');
 ensureSpecial('midian-son-of-abraham', 'Midian');
 ensureSpecial('oleaster', 'Oleaster');
 ensureSpecial('lybia-daughter-of-epaphus', 'Lybia');
+ensureSpecial('sephora-midwife', 'Sephora');
+ensureSpecial('thua', 'Thua');
+ensureSpecial('joseph-husband-of-mary', 'Ioseph');
+ensureSpecial('virgin-mary', 'Virgin Mary');
+ensureSpecial('perseus', 'Perseus');
+ensureSpecial('andromeda', 'Andromeda');
 
 function personDoc(bucket) {
   const title = bucket.title;
@@ -1255,6 +1429,28 @@ function personDoc(bucket) {
   if (id === 'william-of-tyre') description = `${OURS} William, Archbishop of Tyre, who flourished about the yeere of our Lord 1180. That is not a yeere of the World. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'amenophis') description = `${OURS} Amenophis, placed next before Busiris by some, and after Ramesses by others. Kept apart from the Cory eighteenth-dynasty kings of the same name. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'themosis') description = `${OURS} Themosis, whom Eusebius calls Amasis. Kept apart from Amasis II. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'sephora-midwife') description = `${OURS} The midwife Pharaoh sent for with Thua. Not Zipporah, whose printed name Sephora stays on zipporah. No yeere of the World was taken for her. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'thua') description = `${OURS} The midwife named with Sephora. No yeere of the World was taken for her. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'joseph-husband-of-mary') description = `${OURS} The husband of the Virgin Mary, named in the flight from Herod. Not the patriarch Joseph. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'virgin-mary') description = `${OURS} The Virgin Mary, named with Ioseph in the flight from Herod. Not Queen Mary. No yeere of the World was taken for her. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'perseus') description = `${OURS} The father of Erythraeus, named with Andromeda. Not Perseus king of Macedon, who is named in the contents and was not attached. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'andromeda') description = `${OURS} Named with Perseus as a parent of Erythraeus. No yeere of the World was taken for her. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'gregorie-xiii') description = `${OURS} Pope Gregorie the 13, who corrected the Iulian yeere in Anno Domini 1582. Not the Gregorie already on the record. That year is not a yeere of the World. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'artapanus') description = `${OURS} The historian Artapanus, whom he cites on Moses. Not Artabanus. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'demetrius-phalereus') description = `${OURS} Demetrius Phalereus, whose statues Plinie numbers. Not the Macedonian Demetrius. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'ptolemy-philopator') description = `${OURS} Ptolomie Philopater, governing Egypt when Onias built the temple. Not the geographer Ptolemy, and not Ptolemy Philadelphus. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'ptolemy-of-mendes') description = `${OURS} Ptolomie, a priest of Mendes, whom Appion cites on the birth of Moses. Not the geographer Ptolemy. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'salmanassar') description = `${OURS} The king who carried the Israelites captive to Ilalah. Not Shalmaneser I. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'lysimachus-writer') description = `${OURS} The Lysimachus named with Cornelius Tacitus, who gives the Pharaoh the name Bocchoris. Not the Macedonian Lysimachus of the chronological table. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'antonius') description = `${OURS} The Antonius who gives Zoan the name Thanis. Antonius the Eremite, named earlier, was not attached to this record. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'apollonius') description = `${OURS} The Apollonius of the liues of the Fathers. Other men named Apollonius earlier in the book were not attached. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'mahomet') description = `${OURS} Mahomet, whose town is Mecca. Not Mahomet Aben Alhamar. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'sanchoniathon') description = `${OURS} Sanchoniato, cited by L. Viues on S. Augustine. Not Ilus, who is Kronus in Sanchoniathon. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'polemon') description = `${OURS} Polemon, author of a Greeke Historie. Not Eupolemon. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'saphrus') description = `${OURS} Saphrus, also called Spherus, the Assyrian in whose reign he places the birth of Moses. The chronological-table row for this king was damaged and was not imported. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'steaen-gama') description = `${OURS} Steaen Gama, Viceroy of the East India. The printed spelling Steaen was not corrected. The yeere 1544 names no era and was not stored. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'iuba') description = `${OURS} King Iuba, who names the Red Sea Laeniticum. Not Jubal. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'clemens-alexandrinus') description = `${OURS} Clemens Alexandrinus. A bare Clemens named earlier, with Iustine Martyr and Lactantius, was not folded onto this record. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   const doc = {
     $schema: '../../schema/person.schema.json',
     id,
@@ -1288,7 +1484,9 @@ function formsFor(id, title) {
   const person = nameDoc.people.find((p) => p.id === id);
   const stored = new Set((person?.forms || []).map((f) => f.form.toLowerCase()));
   stored.add((title || '').toLowerCase());
-  const newNote = book2Through === 2
+  const newNote = book2Through === 3
+    ? 'Spelling only. Read in Book II, Part I, Chapter III.'
+    : book2Through === 2
     ? 'Spelling only. Read in Book II, Part I, Chapter II.'
     : book2Through === 1
       ? 'Spelling only. Read in Book II, Part I, Chapter I.'
@@ -1302,7 +1500,9 @@ function formsFor(id, title) {
     const holder = held.find((p) => p && p.passage.includes(form));
     if (!holder) continue;
     // Earlier passes stored the spellings they read. Add a form only from this pass.
-    const inPass = book2Through === 2
+    const inPass = book2Through === 3
+      ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '3'
+      : book2Through === 2
       ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '2'
       : book2Through === 1
         ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '1'

@@ -629,6 +629,7 @@ const ETH_KEEP = new Set([
   'isboseth', 'ishbosheth', 'beth',
   'shibboleth', 'sibboleth', 'macbeth', 'kenneth',
   'geth', 'saketh', 'cheareth',
+  'bahalbeth', 'pibeseth', 'sebeth', 'tebeth', 'thobeth', 'swereth',
 ]);
 
 // A printed -eth word whose modern verb is not the stem plus -s.
@@ -670,7 +671,13 @@ const ETH_REASON = {
   hundreth: 'kept: noun hundred, printed hundreth, not a verb',
   geth: 'kept: Philistine city, printed Geth',
   saketh: 'kept: split from forsake (for saketh); the phrase is modernized, the bare token is not',
+  swereth: 'kept: split from answer (an swereth); the phrase is modernized, the bare token is not',
   cheareth: 'kept: the brook Cherith, printed Riuer Cheareth',
+  bahalbeth: 'kept: place Bahalbeth',
+  pibeseth: 'kept: place Pibeseth, the Hebrew name',
+  sebeth: 'kept: Hebrew month Sebeth',
+  tebeth: 'kept: Hebrew month Tebeth',
+  thobeth: 'kept: Hebrew month Thobeth, printed beside Tebeth',
   teeth: 'kept: noun teeth',
   seth: 'kept: name Seth',
   japheth: 'kept: name Japheth',
@@ -994,6 +1001,8 @@ export function modernizeProse(raw) {
   if (!text) return '';
   // "for saketh" is forsake, printed with a space. The bare token saketh is not a verb.
   text = text.replace(/for saketh/gi, 'forsakes');
+  // "an swereth" is answereth, printed with a space. The bare token swereth is not a verb.
+  text = text.replace(/an swereth/gi, 'answers');
   // The hyphen splits the token, so the -eth rule would leave "fore-sees".
   text = text.replace(/fore-seeth/gi, 'foresees');
   text = text.replace(/fore-telleth/gi, 'foretells');

@@ -364,3 +364,63 @@ A named individual received a person when no record already held that name. Ordi
 `chams` is on `cham`, `noes` on `noah`, `sesostres` on `sesostris`, `glicas` on `glycas`, `auentinus` on `aventinus`, `cyrill` on `cyril`, `dtodorus` on `diodorus-siculus`, `necho` on `neco`, `ieroboam` on `jeroboam-i`, `gideon` and `ierubbaal` on `gedeon`, `hammon` on `cham`, `menas`, `menis`, and `menaeus` on `osiris`, `apachnas` on `apachnan`, `acherres` on `acherrhes`, `pheron` and `pherones` on `sesostris-the-blinde`, `acenchere`, `acencris`, `meris`, and `muthis` on `thermutis`, `sesonchosis` on `sesostris`. “Hier ome” is on `jerome`. Lybia the daughter of Epaphus is `lybia-daughter-of-epaphus`, because Libya is a land in the stop list. Sesostris the blinde is kept apart from `sesostris`. Busiris or Orus the second is kept apart from `orus`. Amenophis is kept apart from `amenoph-d18` and `amenophis-d18`. Themosis (Amasis) is kept apart from `amasis-ii`.
 
 These were not made into people. Mulene, the Caliphe, the Soldans, the Visier, and the Sicyonians. See N38. The pedigree Busiris stays on `busiris`, and Belus father of Danaus stays on `belus`. See N36. Hercules Aegyptus and Hercules Lybius stay on `hercules`, with the Lehabim sentence also on `lehabim`. See N40. No new event was created. Passages that discuss the departure, Jacob’s coming, Joseph’s sale and advancement, Moses’s birth, and Cham’s settling of Egypt are on the existing events `exodus`, `jacob-enters-egypt`, `joseph-sold-into-egypt`, `joseph-made-vizier`, `moses-birth`, and `mizraim-settles-egypt`.
+
+# Pass 7
+
+Book II, Part I, Chapter III, sig. 173b, through §. IX, sig. 183a–183b. The opening heading is “CHAP. III. Of the deliuery of Israel out of Aegypt.” Chapter IV opens on sig. 184a and was not entered.
+
+Statements written: 21. People created: 46 (5 first named in the Preface, the contents, or Chapters I–VII; 1 first named in Chapter VIII, `brochard`; 40 first named in this chapter). Places created: 0. Events created: 0. Seven existing people gained statements, and six new people received statements. No event file was edited. Name forms added: 21 (3 on the new people, 18 on people who already had records). No existing form was rewritten. Accounts: 1,692 passages, on 614 people and 15 events. The first 1,642 passages are the pass 6 text, unchanged. `year_bc_ad` is null on the new statements. No `year_am` was stored. No calculated sort changed.
+
+## Statements written
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book II, Part I, Chapter III, §. I, sig. 173b–174a | Now Saphrus ruled 20. yeeres | saphrus, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter III, §. I, sig. 173b–174a | his successor Mamelus 30. yeeres | mamelus, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter III, §. I, sig. 173b–174a | Cecrops his 50. yeeres | cecrops, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter III, §. I, sig. 173b–174a | and held the Empire 41 | ascatades, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter III, §. I, sig. 173b–174a | the birth of Moses was in the nineteenth yeere of the Assyrian Saphrus | moses, `dates.birth` (`year_am` null) |
+| Book II, Part I, Chapter III, §. I, sig. 173b–174a | 80. at which age Moses left Aegypt | moses, `dates.birth` (`year_am` null) |
+| Book II, Part I, Chapter III, §. I, sig. 174a | some eight or nine yeeres before the birth of Moses | moses, `dates.birth` (`year_am` null, approximate) |
+| Book II, Part I, Chapter III, §. I, sig. 174a | 54. yeere, or rather more, after Ioseph | joseph, `dates.death` (`year_am` null, approximate) |
+| Book II, Part I, Chapter III, §. I, sig. 174a | betweene whose death and the birth of Moses, there were consumed 64. yeeres | joseph, `dates.death` (`year_am` null) |
+| Book II, Part I, Chapter III, §. I, sig. 174a | who left the World when it had lasted 2370. yeeres | joseph, `dates.death` (`year_am` null). The table death 2369 stays the only `year_am` in that slot. See N41. |
+| Book II, Part I, Chapter III, §. II, sig. 174a–174b | 333. yeeres after the foundation by Onias | onias-high-priest, `dates.birth` (`year_am` null) |
+| Book II, Part I, Chapter III, §. IV, sig. 175b | tell vs of ten yeeres warre | moses, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter III, §. IV, sig. 175b | about the 40. yeere of Moses age | moses, `dates.birth` (`year_am` null, approximate) |
+| Book II, Part I, Chapter III, §. IV, sig. 175b–176a | neere Madian, hee consumed 40. yeeres | moses, `dates.birth` (`year_am` null) |
+| Book II, Part I, Chapter III, §. V, sig. 177a | Moses himselfe in fortie yeeres space | moses, `dates.birth` (`year_am` null) |
+| Book II, Part I, Chapter III, §. VI, sig. 177b–178b | deuised a Cycle of 19. yeeres | meton, `dates.birth` (`year_am` null) |
+| Book II, Part I, Chapter III, §. VI, sig. 177b–178b | a new Cycle containing foure of Metons, that is to say, 76. yeeres | calippus, `dates.birth` (`year_am` null) |
+| Book II, Part I, Chapter III, §. VI, sig. 177b–178b | containing foure of Calippus his Periods | hipparchus, `dates.birth` (`year_am` null). He does not print 304. |
+| Book II, Part I, Chapter III, §. VI, sig. 177b–178b | Anno Domini 1582 | gregorie-xiii, `dates.birth` (`year_am` null) |
+| Book II, Part I, Chapter III, §. VIII, sig. 180a–182b | perished in the 16. yeere of his reigne | chencres, `dates.reign` (`year_am` null). Beside the body “reigned 10” and the damaged table 16. See N42. |
+| Book II, Part I, Chapter III, §. IX, sig. 183a–183b | who liued some 400. yeeres after Christ | orosius, `dates.birth` (`year_am` null, approximate) |
+
+The chronological table already stores Ascatades at 40 yeeres (sort −1527) and Chencres at An. Mundi 2497 (sort −1536). Those sorts stay. Joseph’s sort stays −1745. Moses’s sort stays −1571. Onias’s sort stays −213.
+
+## Figures that were not entered
+
+- Chapter III, §. I, sig. 173b–174a: “Sparetus after him 40 yeeres.” That 40 is already the chronological-table length. “in whose fourth yeere” is a synchronism with Cecrops, not a new length.
+- The same section: the arithmetic that leaves 1 of Saphrus’s 20, then 20 + 30 + 40 = 71, then nine of Ascatades, then 71 + 9 = 80, then nine and three leaving four of Cecrops’s 50. Intermediate sums, the same treatment as pass 6’s 352 + 75 + 430 = 857.
+- Chapter III, §. I, sig. 174a: “the Worlds age 2514” and “after our account, 2513.” `exodus` already stores the Passover at `year_am` 2514 and says 2513 is not a second year. The same note already quotes this sentence.
+- The same page: “to the eightieth yeere of Moses.” That restates the stored age 80.
+- Damaged chronological-table rows were not pulled onto the new people. The clear body sentences were stored with `year_am` null. The skipped World years are 2403 (Orthpolis), 2416 (Spherus or the damaged spelling, 20), 2436 (Mamilas or Mamelus, 30), 2469 (the illegible 50), 2477 (Thermutis or Acenchres, damaged), and 2498 (the damaged Chencres, 16).
+- Chapter III, §. II, sig. 174a: Zoan “was built seuen yeeres after Hebron.” No event was made. See N46.
+- Chapter III, §. II, sig. 174a–174b: “333. yeeres after the foundation by Onias” is the interval from the Egyptian temple until Vespasian. It is on `onias-high-priest`. No temple event was made.
+- Chapter III, §. VI, sig. 177b–178b: the Nicene Council “Anno Dom. 324,” and the ordinance of the Council of Trent. No events were made. 324 was not stored on a person.
+- The same section: the Hebrew 19-year cycle’s day counts, 354 days, 11 days, the hours and minutes, the Athenian year of 360 days, 365 days and six hours, the ten days struck in 1582, the leap-day, and about three days in 400 years. Structure of the calendar, not a person’s year. Gregorie’s “Anno Domini 1582” is the statement above.
+- Chapter III, §. VI, sig. 178b–179a: Sigonius’s “Moneth of 22. dayes” and “Moneth of 23.” The text says “SIGONIVS was very much deceiued.” Genebrard’s “euery third yeere, or second yeere” is the intercalation Raleigh prefers to describe, and it was not stored as a length.
+- Chapter III, §. VIII, sig. 180a–182b: “in the yeere 1544. performed by Steaen Gama.” No era is named. The person `steaen-gama` exists. The spelling Steaen was left as printed. 1544 was not stored as `year_am`. See N46.
+- Soldier and distance counts in §. V and §. VIII (600 chariots, Josephus’s 50000 horse and 20000 foot, three days, sixteen miles, 8 miles, a million or two, 600000 men, one night, the third day, leagues, degrees, 30 to 35 miles, 80 miles) are not years.
+- Moses’s lifespan of 120 and his birth at the yeere of the World 2434 are already stored. The flight’s table year 2473, and the narrative 2474 on sig. 184a, are already on `moses-flees-to-midian`. Chapter IV was not entered, and that 2474 was not stored again.
+
+## Names
+
+A named individual received a person when no record already held that name. Ordinary title case was still not treated as a name unless the spelling had been checked in this range and added to the spelling map. A group was not split. Months and places were not made people.
+
+`pharaohs` and `pharaos` are on `pharaoh`. `amesis` and Appion’s `amosis` are on `amosis-mendesius`. `thmosis`, `sethosis`, and `amenophis` stay on their own records. `amasis` stays on `themosis`. `eupolemus` is on `eupolemon`. `chenephis` and `thermothes` are on `thermutis`. `erythras` and `erythraeus` are on `erythrus`. The Greek word Erythros, “which signifieth Red,” was not folded. `abulensis` is on `tostatus`. `bocchoris` in this chapter is on `bocchorus`. `six. senensis` is on `sixtus-senensis`. `alex. polyhistor` is on `alexander-polyhistor`. `quin. curtius` is on `quintus-curtius`. `pagnin` is on `pagninus`, `commestor` on `comestor`, and `porphyrie` on `porphyrius`. `musaeus` is on `musaeus`. `herod` is on `herod-the-great`. `s. august` is on `augustine`. William Tyrius, Gul Tyrius, “saith Tyrius,” and “Tyrius in the Holy Warre” are on `william-of-tyre`. Zeno Eleates is on `zeno`. “Inachus ruled the Argiues” is on `inachus`. “Apis the third” is on `apis-of-argiues`. See N44 and N45.
+
+New records, kept apart from a record that shares the letters: `ptolemy-philopator`, `ptolemy-of-mendes`, `demetrius-phalereus`, `salmanassar`, `artapanus`, `lysimachus-writer`, `mahomet`, `gregorie-xiii`, `iuba`, `sanchoniathon`, `antonius`, `apollonius`, `virgin-mary`, `joseph-husband-of-mary`, `sephora-midwife`, and `thua`. Ioachim, Clement’s other name for Moses, was not made a person and was not put on `iehoiakim`. The contents name of Perseus king of Macedon was not created. `perseus` here is Erythraeus’s father. `steaen-gama` keeps the printed Steaen. See N43 and N44.
+
+These were not made into people. The Hebrew months, Zoan, Succoth, Etham, Pelusium, Ramases, Goshen, Hero, Troy, Mecca, and the books Exodus, Genesis, Wisedome, and Psalme. The tribe of Iuda is on `judah`. Tudalensis’s “Mizraim” still attaches to the person `mizraim` (N21). The city was not made a place. No new event was created. The departure is on `exodus`. Moses’s birth is on `moses-birth`. The flight and the years near Midian are on `moses-flees-to-midian`. “Of his calling backe into Aegypt by the Angel of God” is on `burning-bush`. The two “the floud” sentences in §. IX are the Red Sea tide, and they are not on `the-flood`.

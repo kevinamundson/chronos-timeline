@@ -1524,3 +1524,88 @@ Pass 6 read Book II, Part I, Chapter II, and stopped at the end of that chapter.
   1. Leave Hercules Aegyptus and Hercules Lybius on `hercules`, with the Lehabim sentence also on `lehabim`, as now.
   2. Name a second record for the Egyptian Hercules, and say which passages move.
 - **Recommendation:** option 1. He identifies the Egyptian Hercules with Lehabim. The page of each record shows the sentence.
+
+Pass 7 read Book II, Part I, Chapter III, and stopped at the end of that chapter. The quotes are in `data/raleigh-body-extract.md`. N1, N2, N4, N7 to N17, N18 to N34, and N35 to N40 stay open.
+
+### N41. Joseph’s body 2370 beside the table’s 2369
+
+- **Why it matters:** The chronological table prints Joseph’s death at the yeere of the World 2369. Book II, Part I, Chapter III, §. I, sig. 174a, prints “who left the World when it had lasted 2370. yeeres.” Both sentences are stored. `year_bc_ad` is null on both. The body sentence has `year_am` null. The calculated sort on `joseph` stays −1745 from 2369. This is the same method as Cham’s 1847 beside 1848 (N35).
+- **Options:**
+  1. Keep 2370 with `year_am` null, and keep 2369 as the only `year_am` in that slot, as now.
+  2. Store 2370 as a second `year_am`, and say which year the sort should follow.
+- **Recommendation:** option 1. He prints both. The body is one year later than the chronological table.
+
+### N42. Ascatades’s 41 beside the table’s 40, and Chencres’s 16 beside “reigned 10”
+
+- **Why it matters:** Book II, Part I, Chapter III, §. I, sig. 173b–174a, prints “and held the Empire 41” for Ascatades. The chronological table already stores 40 yeeres, and that length was not entered again. His sort stays −1527. The same chapter, §. VIII, sig. 180a–182b, prints that Chencres “perished in the 16. yeere of his reigne.” Chapter II already stores “reigned 10.” The table cell at World 2498 is damaged (“Ch●cres, 16”) and was not imported. His sort stays −1536 from An. Mundi 2497. Both new sentences have `year_am` null.
+- **Options:**
+  1. Keep both lengths, with the new sentences at `year_am` null, as now.
+  2. Drop one figure, and say which.
+- **Recommendation:** option 1. He prints both. The table length was not entered again.
+
+### N43. Sephora the midwife, and Thua
+
+- **Why it matters:** Book II, Part I, Chapter III, §. III, sig. 175a, names the midwives “Sephora and Thua.” `sephora-midwife` holds that Sephora. `thua` is new. The other Sephora in the covered text stays on `zipporah`. This chapter does not attach a Sephora sentence to `zipporah`.
+- **Options:**
+  1. Keep the midwife apart from Zipporah, and keep Thua, as now.
+  2. Move the midwife sentence onto `zipporah`, and say what happens to Thua.
+- **Recommendation:** option 1. The sentence names two midwives. Zipporah is Moses’s wife.
+
+### N44. Names kept apart from a record that shares the letters
+
+- **Why it matters:** These chapter-III names were given their own records, or were left unattached, because another record already uses part of the same spelling.
+  - Ptolomie Philopater is `ptolemy-philopator`. Ptolomie a Priest of Mendes is `ptolemy-of-mendes`. The geographer stays `ptolemy`.
+  - Demetrius Phalereus is `demetrius-phalereus`. Bare Demetrius stays blocked.
+  - Salmanassar is `salmanassar`. `shalmaneser-i` was left alone.
+  - Artapanus is `artapanus`. `artabanus` was left alone.
+  - Lysimachus, named with Cornelius Tacitus, is `lysimachus-writer`. The table Macedonian `lysimachus` (sort −287) was left alone.
+  - Mahomet the prophet is `mahomet`. `mahomet-aben-alhamar` was left alone.
+  - Pope Gregorie the 13 is `gregorie-xiii`. Saint Gregory stays `gregorie` (N10).
+  - King Iuba is `iuba`. `jubal` was left alone.
+  - Eusebius’s Sanchoniato is `sanchoniathon`. `ilus-sanchoniathon` was left alone.
+  - Antonius who “giues it the name of Thanis” is `antonius`. Antonius the Eremite was not attached.
+  - Apollonius in the lives of the Fathers is `apollonius`. The earlier Apollonius of Tyana, the Argonaut verses, and the Epistles were not attached.
+  - Virgin Mary is `virgin-mary`. Queen Mary stays `mary`. Ioseph her husband is `joseph-husband-of-mary`. “whose daughter Ioseph married” stays on the patriarch `joseph`.
+  - Ioachim, the name Clement gives Moses, was not made a person and was not put on `iehoiakim`.
+  - The contents name Perseus, king of Macedon, was not created. `perseus` in this chapter is Erythraeus’s father.
+  - Steaen Gama keeps the printed Steaen on `steaen-gama`.
+- **Options:**
+  1. Leave these records apart, as now.
+  2. Name a fold, and the passages that should move.
+- **Recommendation:** option 1. A silent merge would attach a different man.
+
+### N45. Spellings folded onto a record that may be a second man
+
+- **Why it matters:** These spellings were put on a record that already existed.
+  - Amesis, and Appion’s Amosis (“the same perchance” as Thmosis), are on `amosis-mendesius`. `thmosis`, `sethosis`, and `amenophis` stay on their own records. `amasis` stays on `themosis`.
+  - Chenephis and Thermothes are on `thermutis`.
+  - Eupolemus is on `eupolemon`.
+  - Erythras and Erythraeus are on `erythrus`. The Greek word Erythros (“signifieth Red”) was not folded.
+  - Abulensis is on `tostatus`.
+  - Bocchoris in this chapter is on `bocchorus`, whose calculated sort is −835 from the table’s World 3198.
+  - “Inachus ruled the Argiues” is on `inachus` (no sort year). `inachus-of-argiues` and `inachus-of-sicyon` were left alone. Three records are titled Inachus, so the bare token is not forced.
+  - “Apis the third” is on `apis-of-argiues` (sort −1754). The other Apis record was left alone.
+  - Zeno Eleates is on `zeno`.
+  - Herod is on `herod-the-great`.
+  - William Tyrius, Gul Tyrius, “saith Tyrius,” and “Tyrius in the Holy Warre” are on `william-of-tyre`. Bare Tyrius was not forced.
+  - Musaeus is on `musaeus`, including the earlier poet passages.
+  - Pagnin is on `pagninus`, Commestor on `comestor`, and Porphyrie on `porphyrius`.
+- **Options:**
+  1. Leave these folds, as now.
+  2. Name a spelling that should be a second person, and the passages that should move.
+- **Recommendation:** option 1. Each fold is a spelling he uses for a man who already has a record. Bocchoris and Zeno Eleates are the two to split if you want them apart: the table Bocchorus is World 3198, and Zeno Eleates may be the Eleatic.
+
+### N46. Figures in this chapter that have no event
+
+- **Why it matters:** A new event cannot take a sort year from Raleigh.
+  - Zoan “was built seuen yeeres after Hebron” (Chapter III, §. II, sig. 174a). No event.
+  - The Nicene Council “Anno Dom. 324,” and the Council of Trent ordinance (Chapter III, §. VI, sig. 177b–178b). No events. 324 was not stored on a person.
+  - “333. yeeres after the foundation by Onias” is on `onias-high-priest`. No temple event. His sort stays −213.
+  - “in the yeere 1544” of Steaen Gama names no era. The person exists. 1544 was not stored as `year_am`. The Preface’s “yeare 1559” was left the same way (N1).
+  - Sigonius’s months of 22 and 23 days are a reckoning he calls deceived. They were not stored.
+  - World 2513 and 2514 are already on `exodus`. They were not entered again.
+  - Tudalensis’s sentence names a city Mizraim. The token still attaches to the person `mizraim` (N21). The city was not made a place.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event, or a place, that should receive one of them.
+- **Recommendation:** option 1. A new event cannot take a sort year from Raleigh.

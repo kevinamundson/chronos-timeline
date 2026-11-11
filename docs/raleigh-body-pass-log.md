@@ -184,6 +184,31 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 348 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6)
 - Accounts: 1,642 passages on 572 records
 
+## Pass 7
+
+Book II, Part I, Chapter III, sig. 173b, through §. IX, sig. 183a–183b. The heading is “CHAP. III. Of the deliuery of Israel out of Aegypt.” Fifty passages, p01643–p01692. Chapter IV, “CHAP. IIII. Of the iournying of the Israelites from the Red Sea, to the place where the Law was giuen them: with a discourse of Lawes,” opens on sig. 184a and was not entered. The same rules as passes 3, 4, 5, and 6. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. The one new printed World year in this chapter, Joseph at 2370, was stored with `year_am` null beside the table’s 2369 (N41). Lengths already on the chronological table were not entered again. No calculated sort was written.
+
+### Counts
+
+- Dated statements written: 21 (reign lengths for Saphrus, Mamelus, Cecrops, Ascatades, and Chencres; Moses’s age, the Midian 40, the Hebrew-year 40, the oppression interval, the Saphrus synchronism, and the Ethiopian war; Joseph’s 54, 64, and 2370; Onias’s 333; the cycles of Meton, Calippus, and Hipparchus; Pope Gregory XIII at Anno Domini 1582; Orosius about 400 years after Christ)
+- People created: 46 (5 first named in the Preface, the contents, or Chapters I–VII; 1 first named in Chapter VIII, `brochard`; 40 first named in Book II, Part I, Chapter III)
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. Seven existing people gained statements: `ascatades`, `cecrops`, `chencres`, `joseph`, `moses`, `onias-high-priest`, and `orosius`. Six new people also received statements: `saphrus`, `mamelus`, `meton`, `calippus`, `hipparchus`, and `gregorie-xiii`. No event file was edited. Four existing events gained account passages: `exodus` (19), `moses-birth` (11), `moses-flees-to-midian` (3; its first account), and `burning-bush` (1; its first account). The two Chapter III sentences that say “the floud” are the Red Sea tide. They were not put on `the-flood`.
+- Name forms added: 21 (3 on the new people, Spherus on `saphrus`, SIGONIVS on `sigonius`, and Gama on `steaen-gama`; 18 on people who already had records). No existing form was rewritten. Six clause-length forms the engine drafted were dropped before they were committed, because they are sentences rather than spellings.
+- Accounts: 1,692 passages, on 614 people and 15 events. The first 1,642 passages are unchanged. Nine existing people received their first account: `aaron`, `amosis-mendesius`, `apis-of-argiues`, `bocchorus`, `herod-the-great`, `onias-high-priest`, `sethosis`, `sparetus`, and `thmosis`.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. No importer was re-run. The new people are display-only, and none of them has a standby placement. No `year_am` was stored, so no calculated sort changed. `sorting_year` stays `ascatades` −1527, `chencres` −1536, `joseph` −1745, `moses` −1571, and `onias-high-priest` −213. `cecrops` and `orosius` stay without a sort year.
+
+### Cumulative
+
+- Dated statements written: 90 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6, 21 in pass 7)
+- People created: 458
+- Places created: 0
+- Events created: 0
+- Name forms added: 369 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7)
+- Accounts: 1,692 passages on 629 records
+
 ## RESUME POINT
 
-Book II, Part I, Chapter III, §. I, sig. 173b. The heading is “CHAP. III. Of the deliuery of Israel out of Aegypt.” Pass 6 stopped at the end of Chapter II. The last stored passage is p01642, Book II, Part I, Chapter II, §. VIII, sig. 172b–173a. Do not start again inside Chapter II.
+Book II, Part I, Chapter IV, sig. 184a. The heading is “CHAP. IIII. Of the iournying of the Israelites from the Red Sea, to the place where the Law was giuen them: with a discourse of Lawes.” Pass 7 stopped at the end of Chapter III. The last stored passage is p01692, Book II, Part I, Chapter III, §. IX, sig. 183a–183b. Do not start again inside Chapter III. The table importer already quotes Book II, ch. IIII, §. I, sig. 184a for Moses’s birth at the yeere of the World 2434, for the flight at 2474 beside the table’s 2473, and for the Passover at 2514. Do not enter those lengths again.
