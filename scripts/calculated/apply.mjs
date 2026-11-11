@@ -136,17 +136,20 @@ for (const doc of Object.values(byId)) {
   if (list) next = withKeyAfter(next, 'sorting_basis', 'calculated', list);
   const gov = catalog.governing.get(doc.id);
   if (gov) {
-    if (beforeYear.get(doc.id) != null) throw new Error(`${doc.id} already has sorting_year ${beforeYear.get(doc.id)}`);
-    next.sorting_year = gov.year_bc_ad;
-    next.sorting_basis = {
-      tier: 'calculated',
-      tier_rank: null,
-      chronology: gov.source,
-      slot: gov.slot,
-      note: calculatedBasisNote(gov),
-    };
-    next = withoutKey(next, 'standby');
-    gained.push({ id: doc.id, year: gov.year_bc_ad, slot: gov.slot, arithmetic: gov.arithmetic });
+    if (beforeYear.get(doc.id) != null) {
+      kept.push(doc.id);
+    } else {
+      next.sorting_year = gov.year_bc_ad;
+      next.sorting_basis = {
+        tier: 'calculated',
+        tier_rank: null,
+        chronology: gov.source,
+        slot: gov.slot,
+        note: calculatedBasisNote(gov),
+      };
+      next = withoutKey(next, 'standby');
+      gained.push({ id: doc.id, year: gov.year_bc_ad, slot: gov.slot, arithmetic: gov.arithmetic });
+    }
   } else if (beforeYear.get(doc.id) != null && next.sorting_year !== beforeYear.get(doc.id)) {
     throw new Error(`${doc.id} sort moved`);
   } else if (beforeYear.get(doc.id) != null && list) {

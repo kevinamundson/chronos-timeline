@@ -159,6 +159,31 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 303 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5)
 - Accounts: 1,615 passages on 521 records
 
+## Pass 6
+
+Book II, Part I, Chapter II, §. I, sig. 168a, through §. VIII, sig. 172b–173a. The heading is “CHAP. II. Of the Kings of Aegypt from the first peopling of it after the Floud, to the time of the deliuerie of the Israelites from thence.” Chapter III, “CHAP. III. Of the deliuery of Israel out of Aegypt,” opens on sig. 173b and was not entered. The same rules as passes 3, 4, and 5, plus the modern-reading rules of 2026-11-08. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. The Egyptian table in §. I is headed An. Mundi and gave eleven such years. Cham’s chronological-table year 1848 was already stored; 1847 from this table was stored beside it. Lengths already on the chronological table were not entered again.
+
+### Counts
+
+- Dated statements written: 29 (11 An. Mundi years from the §. I table; Cham’s 191 years after the Flood; William of Tyre’s yeere of our Lord 1180; 16 reign lengths and one war length)
+- People created: 28 (9 first named in the Preface, the contents, or Chapters I–VII; 1 first named in Chapter VIII, `ortelius`; 1 first named in Chapter X, `telegonus`; 1 first named in Chapter XI, `bunting`; 16 first named in Book II, Part I, Chapter II)
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. Eleven existing people gained statements: `cham`, `osiris`, `typhon`, `hercules`, `orus`, `sesostris`, `thermutis`, `acherrhes`, `armais`, `danaus`, and `ramesses`. No event file was edited. Six existing events gained account passages: `exodus`, `jacob-enters-egypt`, `joseph-made-vizier`, `joseph-sold-into-egypt`, `moses-birth`, and `mizraim-settles-egypt`.
+- Name forms added: 45 (36 on the new people, 9 on people who already had records). No existing form was rewritten.
+- Accounts: 1,642 passages, on 559 people and 13 events. The first 1,615 passages are unchanged.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. No importer was re-run. The new people are display-only, and none of them has a standby placement. Six existing people gained a calculated sort from a new An. Mundi year, per N22: `osiris` −2025, `hercules` −1764, `typhon` −1764, `orus` −1757, `sesostris` −1642, `thermutis` −1557. `year_bc_ad` stays null. `cham` keeps −2185 from 1848. Four new people also received a calculated reign-start sort: `busiris` −1595, `sesostris-the-blinde` −1609, `rathoris` −1545, `chencres` −1536.
+
+### Cumulative
+
+- Dated statements written: 69 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6)
+- People created: 412
+- Places created: 0
+- Events created: 0
+- Name forms added: 348 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6)
+- Accounts: 1,642 passages on 572 records
+
 ## RESUME POINT
 
-Book II, Part I, Chapter II, §. I, sig. 168a. The heading is “CHAP. II. Of the Kings of Aegypt from the first peopling of it after the Floud, to the time of the deliuerie of the Israelites from thence.” Pass 5 stopped at the end of Chapter I. The last stored passage is p01615, Book II, Part I, Chapter I, §. XIII, sig. 167a–167b. Do not start again inside Chapter I.
+Book II, Part I, Chapter III, §. I, sig. 173b. The heading is “CHAP. III. Of the deliuery of Israel out of Aegypt.” Pass 6 stopped at the end of Chapter II. The last stored passage is p01642, Book II, Part I, Chapter II, §. VIII, sig. 172b–173a. Do not start again inside Chapter II.

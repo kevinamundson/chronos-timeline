@@ -301,3 +301,66 @@ A named individual received a person when no record already held that name. Ordi
 `abrahamo` is on `abraham`, `christo` on `christ`, `semo` on `shem`, and `lots` on `lot`. `sara`, `sarah`, `saram`, and `iscah` are on `sarai`. `nabor` is on `nahor`. `iosus` is on `iosua`. `ezechias` is on `hezekiah`, the king, not the high priest. `beda` and `bede` are on `bede`. `regu` is on `reu`. `sabta` is on `sabtah`. `seba` is on `seba` and `raama` on `raamah`. `sale` is on `salah`: “Sale who was the sonne of Arphaxad the sonne of Sem” (sig. 164a–164b). `innius` is on `junius`. `zameis` stays on `ninias`. `thuras` stays on `arius`. `baleus`, `balaneus`, and `balanius` stay on `baleus`. The phrase “liberis NOA” is on `noah`. The bare “Noa” in “Bacchus Niseus or Noa” was not attached. “Q. Curtius” is on `quintus-curtius`. “Rab. Solomon” is the new `rab-solomon`, not `solomon`. “Daniel Angelocrator” is `daniel-angelocrator`, so the prophet Daniel is not that chronologer. “Sethus Caluisius” is `sethus-caluisius`, not `seth`. “Iustin Martyr” was left on the existing `justin` passage that already held it. A separate martyr record was not made, because the phrase map would have dropped that link.
 
 These were not made into people. BrRSHA, the printed king of Gomorrah, and Percrius. See N18. Moore, Iudith, Victor, the unnamed king of Bela, Ellas, and Goijm. See N19. Amraphel is kept apart from Ninias. See N20. The son of Terah is `haran-son-of-terah`, because `haran` is already the city. The son of Abraham and Keturah is `midian-son-of-abraham`, because `midian` is already the land. Oleaster the writer, and one Arioch. See N21. `leuita` is titled Leuita, the printed name, and it was not expanded. The half-tribe of Manasse was not forced onto `manasseh`. A bare Iuda was not forced onto `judah`. The one sentence “iuda and ioseph of iacob” is on `judah`. No new event was created.
+
+# Pass 6
+
+Book II, Part I, Chapter II, §. I, sig. 168a, through §. VIII, sig. 172b–173a. The opening heading is “CHAP. II. Of the Kings of Aegypt from the first peopling of it after the Floud, to the time of the deliuerie of the Israelites from thence.” Chapter III opens on sig. 173b and was not entered.
+
+Statements written: 29. People created: 28 (9 first named in the Preface, the contents, or Chapters I–VII; 1 first named in Chapter VIII, `ortelius`; 1 first named in Chapter X, `telegonus`; 1 first named in Chapter XI, `bunting`; 16 first named in this chapter). Places created: 0. Events created: 0. Eleven existing people gained statements. No event file was edited. Name forms added: 45 (36 on the new people, 9 on people who already had records). No existing form was rewritten. Accounts: 1,642 passages, on 559 people and 13 events. The first 1,615 passages are the pass 5 text, unchanged. `year_bc_ad` is null on the new statements. Six existing people gained a calculated sort from a new An. Mundi year (N22). `cham` keeps −2185.
+
+## Statements written
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book II, Part I, Chapter II, §. I, sig. 168a | 1847. 191. Cham. | cham, `dates.reign` (`year_am` 1847) |
+| Book II, Part I, Chapter II, §. I, sig. 168a | 2008. 352. Osiris. | osiris, `dates.reign` (`year_am` 2008) |
+| Book II, Part I, Chapter II, §. I, sig. 168a | 2269. 613. Typhon | typhon, `dates.reign` (`year_am` 2269) |
+| Book II, Part I, Chapter II, §. I, sig. 168a | 2269. 613. Typhon Hercules. | hercules, `dates.reign` (`year_am` 2269) |
+| Book II, Part I, Chapter II, §. I, sig. 168a | 2276. 620. Orus. | orus, `dates.reign` (`year_am` 2276) |
+| Book II, Part I, Chapter II, §. I, sig. 168a | 2391. 735. Sesostris the great. | sesostris, `dates.reign` (`year_am` 2391) |
+| Book II, Part I, Chapter II, §. I, sig. 168a | 2424. 768. Sesostris the blinde. | sesostris-the-blinde, `dates.reign` (`year_am` 2424) |
+| Book II, Part I, Chapter II, §. I, sig. 168a | 2438. 782. Busiris or Oris the second. | busiris, `dates.reign` (`year_am` 2438) |
+| Book II, Part I, Chapter II, §. I, sig. 168a | 2476. 820. Acenchere or Thermutis or Meris. | thermutis, `dates.reign` (`year_am` 2476) |
+| Book II, Part I, Chapter II, §. I, sig. 168a | 2488. 832. Rathoris or Athoris. | rathoris, `dates.reign` (`year_am` 2488) |
+| Book II, Part I, Chapter II, §. I, sig. 168a | 2497. 841. Chencres drowned in the red Sea. | chencres, `dates.reign` (`year_am` 2497) |
+| Book II, Part I, Chapter II, §. II, sig. 168b | CHAMS reigne in Aegypt began in the yeere after the Floud, 191 | cham, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. III, sig. 169a–169b | William, Archbishop of Tyre, who flourished about the yeere of our Lord, one thousand one hundred eightie | william-of-tyre, `dates.birth` (`year_am` null) |
+| Book II, Part I, Chapter II, §. V, sig. 170b | the warre which Hercules made in Italie, is said to haue indured 10. yeeres | hercules, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VI, sig. 170b–171a | it seemes that the reigne of Orus lasted 115. yeeres. | orus, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VI, sig. 170b–171a | in the reigne of Typhon and Hercules, seuen yeeres were spent, howsoeuer diuided betweene them | typhon and hercules, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VI, sig. 171a–171b | to haue reigned in all thirtie three yeeres | sesostris, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VI, sig. 171a–171b | this reigned 14. yeeres at least | sesostris-the-blinde, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VII, sig. 171b–172b | Busiris himselfe reigned 30. yeeres, according to Eusebius | busiris, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VII, sig. 171b–172b | to haue reigned 12. yeeres: Her name was Thermutis Phareis | thermutis, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VIII, sig. 172b | Rathoris after his sisters death reigned 9. yeeres | rathoris, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VIII, sig. 172b | Chencres, thought to be his sonne, reigned 10. and then perished in the red Sea. | chencres, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VIII, sig. 172b | Acherres reigned 8. yeeres: and then Cherres 15. | acherrhes (8) and cherres (15), `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VIII, sig. 172b | Armais is said to haue reigned 4. yeeres after Cherres | armais, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VIII, sig. 172b–173a | and( according to Eusebius and good Authors approuing him) reigned fiue yeeres. | danaus, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VIII, sig. 172b–173a | Ramesses followed, who reigned 68. yeeres. | ramesses, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter II, §. VIII, sig. 172b–173a | After Ramesses, Amenophis reigned 19. yeeres | amenophis, `dates.reign` (`year_am` null) |
+
+The chronological table already prints Cham at 1848 (sig. 782a). 1847 from this chapter’s An. Mundi table is stored beside it. Cham’s 161-year reign is already that table row and was not entered again. See N35.
+
+## Figures that were not entered
+
+- Chapter II, §. II, sig. 168b–169a: the twelve first dynasties at seven years each (84), the thirteenth at 14, the fourteenth at 26, the fifteenth at 37, and the fifteen together at 161. Lengths of dynasties, not of a named king. Cham’s 161 is already the chronological-table reign.
+- The same section: the 16th dynasty joined with the 43rd year of Ninus, in which Abraham was born. Abraham’s birth is already World 2009. The 43 was not turned into a year.
+- 352 years from the Flood to Abraham’s birth. Already skipped in pass 5. The 2009 sentence is the year he prints.
+- Forty years for the tower (Glycas), twenty for the passage into Egypt, and 171 of thickets. The tower’s forty is already on `founding-of-babel`.
+- Chapter II, §. V, sig. 170a–170b: Krentzhemius’s 297 years for Osiris, and the 34th year of Baleus. Raleigh rejects the 297.
+- Chapter II, §. VI, sig. 170b–171a: Angelocrator’s three years for Typhon; 90 years of the eighteenth dynasty; 122 years from the death of Orus to the departure of Israel; 352 + 75 + 430 = 857. Intervals. No event was made.
+- Chapter II, §. VI, sig. 171a–171b: 75 years from the first of Busiris to the departure; 47 of the 122 spent before Busiris and his children. Intervals.
+- Chapter II, §. VII: Cedrenus’s edict “lasted tenne 〈◊ 〉”; Bunting’s 87 years of persecution. The unit after tenne is illegible. Bunting’s 87 is not Raleigh’s figure.
+- Chapter II, §. VIII: Mercator’s 112 or 113 years; Moses at 40 (Mercator’s argument); Moses at 120 (Cyril; the table already prints 120); 50 daughters and 50 sons of Danaus and Aegyptus. Soldier counts (24,000 horse, 60,000, 8,020 chariots, 1,200) are not years.
+- Saltis’s 19 years: he says it would have been strange. Not stored.
+
+See N39.
+
+## Names
+
+A named individual received a person when no record already held that name. Ordinary title case was still not treated as a name unless the spelling had been checked in this range and added to the spelling map. A group was not split.
+
+`chams` is on `cham`, `noes` on `noah`, `sesostres` on `sesostris`, `glicas` on `glycas`, `auentinus` on `aventinus`, `cyrill` on `cyril`, `dtodorus` on `diodorus-siculus`, `necho` on `neco`, `ieroboam` on `jeroboam-i`, `gideon` and `ierubbaal` on `gedeon`, `hammon` on `cham`, `menas`, `menis`, and `menaeus` on `osiris`, `apachnas` on `apachnan`, `acherres` on `acherrhes`, `pheron` and `pherones` on `sesostris-the-blinde`, `acenchere`, `acencris`, `meris`, and `muthis` on `thermutis`, `sesonchosis` on `sesostris`. “Hier ome” is on `jerome`. Lybia the daughter of Epaphus is `lybia-daughter-of-epaphus`, because Libya is a land in the stop list. Sesostris the blinde is kept apart from `sesostris`. Busiris or Orus the second is kept apart from `orus`. Amenophis is kept apart from `amenoph-d18` and `amenophis-d18`. Themosis (Amasis) is kept apart from `amasis-ii`.
+
+These were not made into people. Mulene, the Caliphe, the Soldans, the Visier, and the Sicyonians. See N38. The pedigree Busiris stays on `busiris`, and Belus father of Danaus stays on `belus`. See N36. Hercules Aegyptus and Hercules Lybius stay on `hercules`, with the Lehabim sentence also on `lehabim`. See N40. No new event was created. Passages that discuss the departure, Jacob’s coming, Joseph’s sale and advancement, Moses’s birth, and Cham’s settling of Egypt are on the existing events `exodus`, `jacob-enters-egypt`, `joseph-sold-into-egypt`, `joseph-made-vizier`, `moses-birth`, and `mizraim-settles-egypt`.

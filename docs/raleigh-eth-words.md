@@ -6,6 +6,8 @@ Kevin, 2026-11-08. In the modern view only, a third-person verb that ends in -et
 
 Pass 5 (Book II, Part I, Chapter I) adds six words those tables do not list. Four change. Two stay. None of the six is flagged. Through that chapter the inventory is 384 distinct words: 365 change, 15 stay, and the same 4 flagged. The new rows are under "Pass 5".
 
+Pass 6 (Book II, Part I, Chapter II) adds three words those tables do not list. All three change. None is flagged. Through that chapter the inventory is 387 distinct words: 368 change, 15 stay, and the same 4 flagged. The new rows are under "Pass 6".
+
 ## Decisions
 
 - hath becomes has. It is the irregular third person of have. It does not end in -eth. An all-capital HATH becomes HAS. The capitals stay (open question N17).
@@ -429,3 +431,13 @@ Six words appear in Book II, Part I, Chapter I and in no earlier stored passage.
 | fortieth | 2 | fortieth | kept: ordinal | p01550: since all agree, that the fortieth three yeere of Ninus was the birth |
 | seuentieth | 1 | seventieth | kept: ordinal | p01555: f Terah, and so necessarily borne in the seuentieth yeere of his life. Secondly |
 | trueth | 6 | truth | noun truth, not the verb true | p01565: e endured but 175. yeere. It hath therefore no face of trueth, that Moses forgot |
+
+## Pass 6
+
+Three words appear in Book II, Part I, Chapter II and in no earlier stored passage. Counts are in those 27 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| collecteth | 1 | collects | verb collect → collects | p01633: Whereas Krentzhemius collecteth out of Herodotus, and Diodoru |
+| iudgeth | 1 | judges | verb judge → judges | p01632: any Nations. This is hee( as Reineccius iudgeth) whom Iustine erring in account  |
+| recordeth | 1 | records | verb record → records | p01622: were consumed fourtie yeeres, as Glicas recordeth: whose report I haue elsewhere |
