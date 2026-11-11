@@ -258,6 +258,17 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Body intake. Abraham's age before Noah died. Not a yeere of the World, and not his birth year. year_am stays null. This does not change the sort. The table and the Book II sentence already give his birth as the yeere of the World 2009."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "after the promise to A raham 430. yeeres",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter IV, §. VII, sig. 190a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The yeeres after the promise. The printed name is split, A raham. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ],
     "death": [

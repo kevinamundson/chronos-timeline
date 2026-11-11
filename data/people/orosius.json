@@ -25,6 +25,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "who liued some 400. yeeres after Christ",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "approximate",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. IX, sig. 183a–183b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. How long after Christ he says Orosius lived. Not a birth year and not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },

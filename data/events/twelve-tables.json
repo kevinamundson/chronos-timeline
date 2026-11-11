@@ -46,6 +46,17 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": null
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "was first written by the Decem-viri, 303. yeeres after the foundation of the Citie",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter IV, §. XV, sig. 197a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. How many yeeres after the foundation of the city he says the law was first written. Not added to the founding-of-rome yeere of the World 3280. The Decem-viri were not split into persons. Not a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [],
@@ -54,7 +65,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-preparing",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [

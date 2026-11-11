@@ -42,6 +42,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "333. yeeres after the foundation by Onias",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. II, sig. 174a–174b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The yeeres from his foundation of the temple in Egypt until Vespasian. Not his reign, and not a yeere of the World. No temple event was made. year_am stays null. This does not change the sort."
       }
     ],
     "death": [

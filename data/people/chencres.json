@@ -76,6 +76,17 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Body intake. A reign length or duration. Not a yeere of the World. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "perished in the 16. yeere of his reigne",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. VIII, sig. 180a–182b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The yeere of his reigne in which he perished. The body already stores “reigned 10”, and the table cell of 16 was damaged and was not imported. Not a second yeere of the World. The sort stays on An. Mundi 2497. year_am stays null. This does not change the sort."
       }
     ]
   },

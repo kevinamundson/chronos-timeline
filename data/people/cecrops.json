@@ -26,6 +26,29 @@
         "link": null,
         "note": "pending CFAH reference"
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Cecrops his 50. yeeres",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter III, §. I, sig. 173b–174a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. A reign length for the Athenian Cecrops named with Moses. Not the 40 yeeres of Cecrops the second. The table cell was illegible and was not imported. Not a yeere of the World. year_am stays null. This does not change the sort."
+      }
     ]
   },
   "events": [],

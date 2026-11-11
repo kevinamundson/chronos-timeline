@@ -8,6 +8,10 @@ Pass 5 (Book II, Part I, Chapter I) adds six words those tables do not list. Fou
 
 Pass 6 (Book II, Part I, Chapter II) adds three words those tables do not list. All three change. None is flagged. Through that chapter the inventory is 387 distinct words: 368 change, 15 stay, and the same 4 flagged. The new rows are under "Pass 6".
 
+Pass 7 (Book II, Part I, Chapter III) adds twelve words those tables do not list. Five change. Seven stay. None of the twelve is flagged. Through that chapter the inventory is 399 distinct words: 373 change, 22 stay, and the same 4 flagged. The new rows are under "Pass 7".
+
+Pass 8 (Book II, Part I, Chapter IV) adds thirty-four words those tables do not list. All thirty-four change. None stay. None of the thirty-four is flagged. `incourageth` and `inforceth` are encourage and enforce. The letter rules do not reach that in- spelling, so those two are explicit. Through that chapter the inventory is 433 distinct words: 407 change, 22 stay, and the same 4 flagged. The new rows are under "Pass 8".
+
 ## Decisions
 
 - hath becomes has. It is the irregular third person of have. It does not end in -eth. An all-capital HATH becomes HAS. The capitals stay (open question N17).
@@ -17,6 +21,9 @@ Pass 6 (Book II, Part I, Chapter II) adds three words those tables do not list. 
 - A name, a noun, or an ordinal is not a verb. Seth, Japheth (printed Iapheth, shown as Japheth by the name rule), Heth, Nazareth, Elizabeth, teeth, twentieth, thirtieth, moneth (the noun month), hundreth (the noun hundred), Geth (the Philistine city), and Isboseth stay.
 - Ashtaroth does not end in -eth. It is unchanged.
 - The bare token saketh stays. The printed phrase "for saketh" is forsake, and the modern view reads "forsakes".
+- The bare token swereth stays. The printed phrase "an swereth" is answereth, and the modern view reads "answers".
+- Bahalbeth and Pibeseth stay. They are places. Tebeth, Thobeth, and Sebeth stay. They are Hebrew months.
+- eightieth stays. It is an ordinal.
 - Hyphenated fore-seeth and fore-telleth would otherwise become fore-sees and fore-tells, because the hyphen splits the token. The modern view joins them: foresees, foretells.
 - These printed verbs are mapped because the stem is not the modern infinitive: approcheth approaches, endeuoureth endeavours, maruaileth marvels, reprocheth reproaches, suteth suits, carieth carries, prophecieth prophesies, looseth loses (both hits mean lose, not unloose), siegeth besieges, trauaileth travels (all three hits are the verb travel, not travail), faineth and fayneth feigns (all three hits mean feign), behoueth behooves (the dictionary verb is behoove).
 - trueth becomes truth. It is the noun. The stem would otherwise meet the headword true and become trues.
@@ -441,3 +448,63 @@ Three words appear in Book II, Part I, Chapter II and in no earlier stored passa
 | collecteth | 1 | collects | verb collect → collects | p01633: Whereas Krentzhemius collecteth out of Herodotus, and Diodoru |
 | iudgeth | 1 | judges | verb judge → judges | p01632: any Nations. This is hee( as Reineccius iudgeth) whom Iustine erring in account  |
 | recordeth | 1 | records | verb record → records | p01622: were consumed fourtie yeeres, as Glicas recordeth: whose report I haue elsewhere |
+
+## Pass 7
+
+Twelve words appear in Book II, Part I, Chapter III and in no earlier stored passage. Counts are in those 50 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| bahalbeth | 1 | bahalbeth | kept: place Bahalbeth | p01654: ly Warre, Malbec; the 〈◊ 〉, Bahalbeth; and 〈◊ 〉 Sethi, Fons Solis. Of |
+| eightieth | 1 | eightieth | kept: ordinal | p01651: lasted 2370. yeeres, to the eightieth yeere of Moses, and vntill hee |
+| extendeth | 1 | extends | verb extend → extends | p01688: h Ilands, but afterwards it extendeth it selfe 58. Leagues from Coast |
+| finisheth | 1 | finishes | verb finish → finishes | p01677: he yeere, wherein the Sunne finisheth his course, 11. whole dayes, wi |
+| pibeseth | 1 | pibeseth | kept: place Pibeseth, the Hebrew name | p01658: ame which the Hebrewes call Pibeseth. |
+| preuenteth | 1 | prevents | verb prevent → prevents | p01679: e the common opinion, which preuenteth such dislocation of the Moneths |
+| retaineth | 1 | retains | verb retain → retains | p01676: olden Number, which name it retaineth vnto this day. Hereby were auoy |
+| sebeth | 1 | sebeth | kept: Hebrew month Sebeth | p01674: 10. December The eleuenth, Sebeth, or Sabath. 11. Ianuarie. The t |
+| suffereth | 1 | suffers | verb suffer → suffers | p01667: uery shortest piece of time suffereth decay; neither doth any thing a |
+| swereth | 1 | swereth | kept: split from answer (an swereth); the phrase is modernized, the bare token is not | p01676: f the Moneth 〈◊ 〉( which an swereth in a manner to our Iune) they w |
+| tebeth | 1 | tebeth | kept: Hebrew month Tebeth | p01674: eu. 9. Nouember. The tenth, Tebeth, or Thobeth. 10. December The e |
+| thobeth | 1 | thobeth | kept: Hebrew month Thobeth, printed beside Tebeth | p01674: mber. The tenth, Tebeth, or Thobeth. 10. December The eleuenth, Seb |
+
+## Pass 8
+
+Thirty-four words appear in Book II, Part I, Chapter IV and in no earlier stored passage. Counts are in those 165 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| allureth | 1 | allures | verb allure → allures | p01796: the Law terrifieth, the Gospel allureth; Moses accuseth, Christ defendeth |
+| becommeth | 1 | becomes | verb become → becomes | p01856: to shew more rigour than Moses, becommeth not the Gospell |
+| behooueth | 1 | behooves | verb behoove → behooves | p01848: It behooueth the law to be a mender of vices |
+| belongeth | 1 | belongs | verb belong → belongs | p01815: which belongeth to another man, either the bodies |
+| bridleth | 2 | bridles | verb bridle → bridles | p01815: though he that bridleth his euill desires, be much better |
+| constraineth | 2 | constrains | verb constrain → constrains | p01848: it is two-fold, the one constraineth vs by feare of our consciences |
+| declareth | 1 | declares | verb declare → declares | p01772: in particular; as also it declareth, for whose sake it is to be done |
+| defendeth | 1 | defends | verb defend → defends | p01796: Moses accuseth, Christ defendeth: Moses condemneth, Christ pardoneth |
+| distributeth | 2 | distributes | verb distribute → distributes | p01712: what he hath, and distributeth to euery man what he ought to haue |
+| entreateth | 1 | entreats | verb entreat → entreats | p01772: the Morall law entreateth of vertue and goodnesse |
+| exhorteth | 1 | exhorts | verb exhort → exhorts | p01773: It also exhorteth naturall compassion, and forbiddeth |
+| fasteneth | 1 | fastens | verb fasten → fastens | p01848: Isidore fasteneth these properties to euery Christian |
+| flieth | 1 | flies | verb fly → flies | p01737: Deere feedeth by the one, and flieth from the other |
+| healeth | 1 | heals | verb heal → heals | p01796: the Law woundeth, the Gospel healeth: the Law terrifieth |
+| hopeth | 1 | hopes | verb hope → hopes | p01741: while he hopeth to abuse the world by the aduantage |
+| incourageth | 1 | encourages | verb encourage → encourages | p01813: of sparing the first offence, that incourageth these Hellhounds |
+| increaseth | 1 | increases | verb increase → increases | p01749: obseruing the law of nature increaseth, Postquam ratio ad perfectum venit |
+| inforceth | 1 | enforces | verb enforce → enforces | p01813: whom hunger and extreme necessitie inforceth, but of those detested Theeues |
+| meeteth | 1 | meets | verb meet → meets | p01755: the humane law, saith St. Augustine, meeteth not with all offences |
+| neglecteth | 1 | neglects | verb neglect → neglects | p01804: professeth to loue God, and neglecteth to obserue the word of his will |
+| omitteth | 1 | omits | verb omit → omits | p01697: sixteenth Chapter of Exodus, Moses omitteth this retrait from Elim |
+| pardoneth | 1 | pardons | verb pardon → pardons | p01796: Moses condemneth, Christ pardoneth. The Old restraineth the hand |
+| performeth | 2 | performs | verb perform → performs | p01742: The Earth performeth her office, according to the Law |
+| prescribeth | 3 | prescribes | verb prescribe → prescribes | p01748: the diuision of matter, which it prescribeth, and as manifold |
+| presenteth | 1 | presents | verb present → presents | p01741: those things which his proper forme presenteth vnto him |
+| professeth | 1 | professes | verb profess → professes | p01804: he is but a lyar, that professeth to loue God, and neglecteth |
+| prohibiteth | 1 | prohibits | verb prohibit → prohibits | p01773: as also it prohibiteth other vnnatural and vnproper commix |
+| proposeth | 1 | proposes | verb propose → proposes | p01804: our minde( greedie of libertie) proposeth to it selfe |
+| respecteth | 1 | respects | verb respect → respects | p01846: hoc diuinam spectas; That respecteth the Law of Nature, this the Law |
+| restraineth | 1 | restrains | verb restrain → restrains | p01796: Christ pardoneth. The Old restraineth the hand, the New the minde |
+| sheddeth | 1 | sheds | verb shed → sheds | p01760: Whoso sheddeth mans bloud, by man shall his bloud |
+| sinneth | 2 | sins | verb sin → sins | p01815: that euery one sinneth, that doth not loue God with his whole |
+| terrifieth | 1 | terrifies | verb terrify → terrifies | p01796: the Gospel healeth: the Law terrifieth, the Gospel allureth |
+| woundeth | 1 | wounds | verb wound → wounds | p01796: the other by faith; the Law woundeth, the Gospel healeth |
