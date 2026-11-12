@@ -88,6 +88,17 @@
       "link": "https://biblehub.com/blb/joshua/24.htm#29",
       "note": null,
       "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "Now Iosua liued one hundred and ten yeeres, eighteene of which he gouerned Israel, and then changed this life for a better",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VI, §. VIII, sig. 216b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. His death after 110 yeeres, of which 18 he governed. The table 18 was not entered again. Not a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [],
@@ -104,7 +115,8 @@
     "jordan-bc-3-8",
     "jordan-sbc-2",
     "blb-biblehub",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {

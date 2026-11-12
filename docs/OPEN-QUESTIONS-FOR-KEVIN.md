@@ -1741,6 +1741,52 @@ Pass 9 read Book II, Part I, Chapter V, and stopped at the end of that chapter. 
   2. Name one that should be a person, and the passage that names him.
 - **Recommendation:** option 1. A group, a place, a book, or a gap is not an individual.
 
+Pass 10 read Book II, Part I, Chapter VI, and stopped at the end of that chapter. The quotes are in `data/raleigh-body-extract.md`. N1 through N54 stay open.
+
+### N55. Two Iabins of Hazor, and two Deucalions
+
+- **Why it matters:** Chapter VI names Iabin of Hazor, slaughtered by Joshua, and “Iabin the second, who as it seemeth had rebuilt Hazor.” They have two records, `jabin-of-hazor` and `jabin-the-second`. The title Iabin unlinks the bare token. Homer’s later Deucalion, son of Minos, is `deucalion-son-of-minos`. The flood Deucalion, son of Prometheus, stays `deucalion`.
+- **Options:**
+  1. Leave the pairs as two records each, as now.
+  2. Merge one pair, and say which passages move.
+- **Recommendation:** option 1. He numbers the two Iabins, and he says Homer “must needes haue meant some other Deucalion.”
+
+### N56. Five Mercuries, and Hermes Trismegistus
+
+- **Why it matters:** He says Cicero and others reckon five Mercuries, and that Augustine and Lactantius find it difficult to set them in their times. Hermes, Trismegistus, Ter maximus, Thoyth, Taautus, and Mercurie are on the existing `mercurius`. The slayer of Argus was not made a second record. The 300 yeeres some writers give him is on that one record.
+- **Options:**
+  1. Leave one Mercurius record, as now.
+  2. Name which Mercury is a second man, and the passage that names him apart.
+- **Recommendation:** option 1. He says the names are confounded.
+
+### N57. Figures in this chapter that have no event
+
+- **Why it matters:** A new event cannot take a sort year from Raleigh.
+  - Eusebius’s 8 yeeres between Joshua and Othniel, Bunting’s 9, Bucholzer and Reusner’s 1, Codoman’s 20, Nicephorus’s 33. He rejects a gap. The sentence is on `othniel-judges-israel`. No gap event was made.
+  - “Hierusalem itselfe did the Iebusites defend aboue foure hundred yeeres, euen till Dauids time.” No event was made.
+  - The 70 kings of Adonibezek, the 31 kings, and the 120000 Midianites are counts of men.
+  - Hermes’s 36525 books, and the 36 of Physicke, are counts of books.
+  - The sixth, ninth, tenth, and fourteenth days of the first moneth of the 41st yeere of the Egression are on `crossing-the-jordan` only as the 41st-year sentence. The days were not stored apart. The table already prints 41 in the Exodus column on `iosua`.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them.
+- **Recommendation:** option 1. A new event cannot take a sort year from Raleigh.
+
+### N58. Names kept apart or not made people in this chapter
+
+- **Why it matters:** These Chapter VI spellings were folded onto a record that already existed, or given a new record because another record shares the letters, or left as a group or a place.
+  - Dathan in Jethro’s Midianite line is `dathan-ancestor-of-jethro`. Korah’s Dathan stays `dathan`.
+  - Sichem son of Hamor is `sichem-son-of-hamor`. The city was not attached.
+  - Nun father of Joshua is `nun-father-of-joshua`.
+  - Recem is on `rekem`. Salmana is on `zalmunna`. Nabeth is on `nabaioth`.
+  - Seleucus with Menaetus is the historian pair. The phrase was attached to `menaetus`. `seleucus-nicanor` was not given that sentence.
+  - Hercules, including the Theban and the Egyptian, stays unlinked (N33).
+  - The nations, the cities, the Latin Adinuenta, and the ordinals Secondly, Thirdly, Fourthly were not made people. Hazor the city was not made a person.
+- **Options:**
+  1. Leave these folds and these separate records, as now.
+  2. Name a spelling that should be a second person, or name the passages that should move.
+- **Recommendation:** option 1. A silent merge would attach a different man. A group or a city is not an individual.
+
 ## O. Dynasty of Slaves (BLK SHP Scott, 2026)
 
 Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record of Israel in Egypt* (BLK SHP Publishing, 2026; Kindle Direct Publishing). eBook ISBN 979-8-9960110-3-2; softcover 979-8-9960110-0-1; hardcover 979-8-9960110-2-5; audiobook 979-8-9960110-1-8. © the author, all rights reserved. The dated statements are in `data/dynasty-of-slaves-dates-extract.md`. The chronology `dynasty-of-slaves` is display only. It does not set a sort year. Citations are chapter and section. The edition has no printed page numbers.

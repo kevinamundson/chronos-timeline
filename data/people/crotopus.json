@@ -77,6 +77,17 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"3201 2519 6\". The third printed figure 6 is the column \"Exodus\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The 21 at the end of the name is the reign length he prints. The end year is not printed on this row."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Crotopus King of the Argiues, with whom Moses liued, and in whose time about his tenth yeere Moses died",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VI, §. VI, sig. 211a–211b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. About the tenth yeere of Crotopus, Moses died. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },

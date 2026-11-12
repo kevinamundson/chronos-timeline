@@ -259,6 +259,33 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 416 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9)
 - Accounts: 1,909 passages on 721 records
 
+## Pass 10
+
+Book II, Part I, Chapter VI, sig. 207a, through §. VIII, sig. 216b–217a. The heading is “CHAP. VI. Of the Nations with whom the Israelites had dealing after their comming out of Aegypt; and of the men of renowne in other Nations, about the times of MOSES and IOSVA, with the summe of the Historie of IOSVA.” One hundred five passages, p01910–p02014. Chapter VII opens after sig. 217a and was not entered. The contents line for Chapter VI was already stored. The same rules as passes 3–9. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. This chapter printed none. The 18 yeeres of Joshua’s rule and Sthenelus’s 11 are already the table lengths and were not entered again. No calculated sort was written.
+
+This pass also split the Julian Period year from the World column on A Chronological Table, and linked uniquely matched person and event names in the table cells.
+
+### Counts
+
+- Dated statements written: 15 (Prometheus 94 after Ogyges; Joshua’s 110, the other writers’ lengths, and the fifth year of his government; Jabin the second’s 20; Danaus’s 50; Crotopus’s tenth year; Deucalion’s reign with Moses; Mercurius’s 300; Saul’s 400 after Joshua; the Midianite 7; the 480 to the Temple; no void years before Othniel; the 41st year of the Egression at the Jordan)
+- People created: 101 (26 first named before this chapter and reached by a spelling this chapter uses; 75 first named in Book II, Part I, Chapter VI)
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. Seven existing people gained statements: `prometheus`, `iosua`, `danaus`, `crotopus`, `deucalion`, `mercurius`, and `saul`. Five existing events gained statements: `midianite-oppression`, `founding-of-solomons-temple`, `death-of-joshua`, `othniel-judges-israel`, and `crossing-the-jordan`. Ten events received their first account: `conquest-of-canaan`, `crossing-the-jordan`, `fall-of-jericho`, `joshuas-long-day`, `death-of-joshua`, `gideon-defeats-midian`, `midianite-oppression`, `deborah-and-barak`, `othniel-judges-israel`, and `founding-of-solomons-temple`. Their `sorting_year` values are unchanged.
+- Name forms added: 32 (on new and existing people). No existing form was rewritten. Thirty-five clause-length forms the engine drafted were dropped before they were committed, because they are sentences rather than spellings.
+- Accounts: 2,014 passages, on 809 people and 32 events. The first 1,909 passages are unchanged.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. No importer was re-run. The new people are display-only, and none of them has a standby placement. No `year_am` was stored, so no calculated sort changed.
+
+### Cumulative
+
+- Dated statements written: 121 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6, 21 in pass 7, 9 in pass 8, 7 in pass 9, 15 in pass 10)
+- People created: 627
+- Places created: 0
+- Events created: 0
+- Name forms added: 448 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10)
+- Accounts: 2,014 passages on 841 records
+
 ## RESUME POINT
 
-Book II, Part I, Chapter VI, sig. 207a. The heading is “CHAP. VI. Of the Nations with whom the Israelites had dealing after their comming out of Aegypt; and of the men of renowne in other Nations, about the times of MOSES and IOSVA, with the summe of the Historie of IOSVA.” Pass 9 stopped at the end of Chapter V. The last stored passage is p01909, Book II, Part I, Chapter V, §. X, sig. 206b–207a. Do not start again inside Chapter V.
+Book II, Part I, Chapter VII. The heading begins “CHAP. VII. Of the Tribes of 〈◊ 〉”. Pass 10 stopped at the end of Chapter VI. The last stored passage is p02014, Book II, Part I, Chapter VI, §. VIII, sig. 216b–217a. Do not start again inside Chapter VI.

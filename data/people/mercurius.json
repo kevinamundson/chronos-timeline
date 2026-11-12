@@ -4,7 +4,7 @@
   "type": "person",
   "title": "Mercurius",
   "summary": "Raleigh names Mercurius in the History of the World (1617).",
-  "description": "Named in Raleigh's History of the World (1617). Undated in this intake: no yeere of the World was taken from the covered text except where a chronology entry quotes one. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "description": "Named in Raleigh's History of the World (1617). Undated in this intake: no yeere of the World was taken from the covered text except where a chronology entry quotes one. Display only. No tier 1\u20134 chronology dates this person, so there is no sort year.",
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",
@@ -26,6 +26,29 @@
         "link": null,
         "note": "pending CFAH reference"
       }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "the many yeeres which he is said to haue liued, to wit, three hundred yeeres",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VI, \u00a7. VI, sig. 211a\u2013211b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. A lifespan some writers give him. Not a yeere of the World. year_am stays null. This does not change the sort."
+      }
     ]
   },
   "events": [],
@@ -38,7 +61,7 @@
     {
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
-      "locator": "Book I, Part I, Chapter II, §. I, sig. 54a"
+      "locator": "Book I, Part I, Chapter II, \u00a7. I, sig. 54a"
     }
   ],
   "alt_names": [

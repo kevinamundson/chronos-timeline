@@ -126,6 +126,17 @@
       "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
       "source_text_id": "hales-new-analysis-1830",
       "note": "Our check: 2153 minus 1608 is the printed 545. That product is not stored."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "in the one and fortieth yeere of the Egression, in the first moneth called Nisan, or March, Iosua the sonne of Nun",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VI, §. VIII, sig. 214b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. The year of the Egression in which Joshua took government and then crossed. The table already prints 41 in the Exodus column on Iosua. Not stored as a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [
@@ -148,7 +159,8 @@
     "blb-biblehub",
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {

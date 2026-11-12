@@ -630,6 +630,7 @@ const ETH_KEEP = new Set([
   'shibboleth', 'sibboleth', 'macbeth', 'kenneth',
   'geth', 'saketh', 'cheareth',
   'bahalbeth', 'pibeseth', 'sebeth', 'tebeth', 'thobeth', 'swereth',
+  'dumeth', 'alsovseth',
 ]);
 
 // A printed -eth word whose modern verb is not the stem plus -s.
@@ -693,6 +694,8 @@ const ETH_REASON = {
   elizabeth: 'kept: name Elizabeth',
   elisabeth: 'kept: name Elizabeth',
   isboseth: 'kept: name Ishbosheth',
+  dumeth: 'kept: city Dumeth, not a verb',
+  alsovseth: 'kept: printed as one word; it reads as also vseth, and no space was added',
 };
 
 // Both the stem and the stem plus e are dictionary words. These stems are the verb.
