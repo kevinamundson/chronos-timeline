@@ -71,6 +71,8 @@ const convGroup = (chronFile.display_groups || []).find((g) => g.id === 'convent
 const convIds = new Set(convGroup?.chronologies || []);
 const isConv = (e) => convIds.has(e?.source);
 const notConv = (list) => (list || []).filter((e) => !isConv(e));
+const DOS_TIMELINE = '/chronologies/dynasty-of-slaves/';
+let dosPageCounts = null;
 const sourceById = Object.fromEntries(sources.map((s) => [s.id, s]));
 // A source superseded for links (e.g. KJV/Gutenberg → BLB on BibleHub) is shown as its replacement wherever it is linked.
 const linkSrc = (id) => { const s = sourceById[id]; return s?.superseded_for_links_by ? sourceById[s.superseded_for_links_by] || s : s; };
@@ -514,6 +516,7 @@ function conventionalBlock(title, sections) {
   return `<section class="card conv-dating" id="conventional-dating" aria-labelledby="conv-h" data-group="conventional">
 <h2 id="conv-h">${esc(convGroup.name)} <span class="conv-label">display only</span></h2>
 <p class="conv-note">${esc(convGroup.note)}</p>
+${list.some((x) => x.entries.some((e) => e.source === 'dynasty-of-slaves')) ? `<p class="conv-link"><a href="${DOS_TIMELINE}">Dynasty of Slaves timeline</a></p>` : ''}
 ${tables}</section>`;
 }
 
@@ -1543,7 +1546,8 @@ ${sourcesSection(m)}</article>`;
       : ext(s.url, esc(s.title));
     const who = s.authors?.length ? ` <span class="muted">— ${esc(s.authors.join(', '))}${s.year ? `, ${esc(s.year)}` : ''}</span>` : '';
     const note = s.license_note ? `<div class="small muted">${esc(s.license_note)}</div>` : '';
-    return `<li>${linkHtml}${who} <span class="tag">${esc(s.access)}</span>${note}</li>`;
+    const dosLink = (chronById['dynasty-of-slaves']?.references || []).includes(s.id) ? ` <span class="conv-link small"><a href="${DOS_TIMELINE}">Dynasty of Slaves timeline</a></span>` : '';
+    return `<li id="source-${esc(s.id)}">${linkHtml}${who} <span class="tag">${esc(s.access)}</span>${dosLink}${note}</li>`;
   }).join('');
   const body = `<h1>Chronologies &amp; sorting</h1>
 <section class="card"><h2>How the timeline is sorted</h2><p>${esc(rule.description)}</p>
@@ -1551,6 +1555,7 @@ ${sourcesSection(m)}</article>`;
 <p class="small muted">${esc(rule.fallbacks)}</p>${kingDoc.lists.length ? `<p><a href="/king-lists/">CFAH king lists and dynasty tables</a></p>` : ''}</section>
 ${[...chronologies].sort((a, b) => a.sort_priority - b.sort_priority).map((c) => `<section class="card${convIds.has(c.id) ? ' conv-dating' : ''}" id="${esc(c.id)}"${convIds.has(c.id) ? ' data-group="conventional"' : ''}><h2>${esc(c.name)}${c.primary ? ' <span class="tag tag-t1">primary</span>' : ''}</h2>
 ${convIds.has(c.id) ? `<p><span class="conv-label">${esc(convGroup.name)}</span></p><p class="conv-note">${esc(convGroup.note)}</p>` : ''}
+${c.id === 'dynasty-of-slaves' ? `<p class="conv-link"><a href="${DOS_TIMELINE}">Dynasty of Slaves timeline</a></p>` : ''}
 ${c.id === 'raleigh-history-of-the-world' ? '<p><a href="/chronologies/raleigh-chronological-table/">A Chronological Table</a></p>' : ''}
 ${c.authors?.length ? `<p class="muted">${esc(c.authors.join(', '))}</p>` : ''}<p>${shown(c.description)}</p>
 ${c.year_conventions ? `<p class="small muted">${esc(c.year_conventions)}</p>` : ''}
@@ -1674,6 +1679,117 @@ document.getElementById('raleigh-table')?.addEventListener('click', (event) => {
   }));
   const nRows = table.sections.reduce((n, s) => n + s.rows.length, 0);
   console.log(`Raleigh chronological table: ${table.sections.length} sections, ${nRows} rows (${table.dataRows} under the headings), ${table.signatures[0]}–${table.signatures[1]}`);
+}
+
+// Dynasty of Slaves timeline (Kevin, 2026-11-12). Display only: his printed years, in his order.
+// It reads the dynasty-of-slaves entries already stored on records. It never writes sorting_year.
+const DOS_PAGE = DOS_TIMELINE;
+{
+  const DOS = 'dynasty-of-slaves';
+  const chron = chronById[DOS];
+  const src = sourceById[(chron?.references || [])[0]];
+  const slotWord = { birth: 'Birth', death: 'Death', reign: 'Reign', translated: 'Translation', lifespan: 'Lifespan' };
+  const cite = (e) => String(e.citation || '').replace(/^BLK SHP Scott, Dynasty of Slaves, /, '');
+  const hisYear = (y, end) => (end != null && end !== y && y < 0 && end < 0 ? `${-y}–${-end} BC` : yearLabel(y, end));
+  const recs = [];
+  for (const r of [...events, ...people]) {
+    const ents = [
+      ...(r.chronologies || []).map((e) => ({ e, slot: null })),
+      ...Object.entries(r.dates || {}).flatMap(([k, v]) => (Array.isArray(v) ? v.map((e) => ({ e, slot: k })) : [])),
+    ].filter((x) => x.e.source === DOS);
+    if (ents.length) recs.push({ r, ents });
+  }
+  const tierShort = (r) => (TIERS[r.sorting_basis?.tier]?.label || r.sorting_basis?.tier || '');
+  const sortLine = (r, y) => {
+    if (r.sorting_year == null) return '<span class="muted">No site sort year.</span>';
+    const slot = r.type === 'person' ? (r.sorting_basis?.slot === 'reign_start' ? ' (reign start)' : r.sorting_basis?.tier === 'calculated' ? ` (calc. ${esc(r.sorting_basis?.slot || 'birth')})` : ' (birth)') : '';
+    if (r.sorting_year === y) return `<span class="muted">Same year as the site sort year${slot}.</span>`;
+    return `<span class="dos-sort">Site sort year${slot}: <strong>${esc(yearLabel(r.sorting_year))}</strong></span> <span class="small muted">${esc(tierShort(r))}</span>`;
+  };
+  const dynTag = (r) => (r.dynasty ? ` <span class="tag dos-dyn">${esc(r.dynasty)}</span>` : '');
+  // One item per record and printed year. Several statements of one year share an item.
+  const items = new Map();
+  for (const { r, ents } of recs) {
+    for (const { e, slot } of ents) {
+      if (e.year_bc_ad == null) continue;
+      const key = `${r.id}|${e.year_bc_ad}|${e.year_bc_ad_end ?? ''}|${slot || ''}`;
+      if (!items.has(key)) items.set(key, { r, y: e.year_bc_ad, end: e.year_bc_ad_end ?? null, slot, ents: [] });
+      items.get(key).ents.push(e);
+    }
+  }
+  const list = [...items.values()].sort((a, b) => a.y - b.y || (a.end ?? a.y) - (b.end ?? b.y) || (a.r.type === b.r.type ? 0 : a.r.type === 'event' ? -1 : 1) || displaySpelling(a.r.title).localeCompare(displaySpelling(b.r.title), 'en'));
+  const byYear = [];
+  for (const it of list) {
+    const label = hisYear(it.y, it.end);
+    if (!byYear.length || byYear[byYear.length - 1].label !== label) byYear.push({ label, y: it.y, items: [] });
+    byYear[byYear.length - 1].items.push(it);
+  }
+  const itemHtml = (it) => {
+    const phrases = [...new Set(it.ents.map((e) => e.date))];
+    const cites = [...new Set(it.ents.map(cite))];
+    return `<li class="dos-item" data-record="${esc(it.r.id)}" data-year="${it.y}">
+<div class="dos-head"><a href="${urlOf(it.r)}">${shown(it.r.title)}</a> <span class="tag">${it.r.type === 'event' ? 'event' : 'person'}</span>${it.slot ? ` <span class="tag">${esc(slotWord[it.slot] || it.slot)}</span>` : ''}${dynTag(it.r)}</div>
+<div class="small">As printed: ${phrases.map((p) => `<span class="dos-phrase">${esc(p)}</span>`).join('; ')}</div>
+<div class="small muted">${cites.map(esc).join('; ')}</div>
+<div class="small">${sortLine(it.r, it.y)}</div></li>`;
+  };
+  const datedRecs = new Set(list.map((it) => it.r.id));
+  const undated = recs.filter(({ r }) => !datedRecs.has(r.id)).sort((a, b) => (a.r.type === b.r.type ? 0 : a.r.type === 'event' ? -1 : 1) || displaySpelling(a.r.title).localeCompare(displaySpelling(b.r.title), 'en'));
+  const undatedHtml = undated.map(({ r, ents }) => {
+    const phrases = [...new Set(ents.map((x) => x.e.date).filter((d) => d && d !== 'no year printed'))];
+    return `<li data-record="${esc(r.id)}"><a href="${urlOf(r)}">${shown(r.title)}</a> <span class="tag">${r.type === 'event' ? 'event' : 'person'}</span>${dynTag(r)}${phrases.length ? ` <span class="small muted">— as printed: ${phrases.map(esc).join('; ')}</span>` : ''}</li>`;
+  }).join('');
+  // Dynasties: the site's dynasty field (from the CFAH king lists). The book's own dynasty phrases are listed as printed.
+  const dyn = new Map();
+  for (const { r, ents } of recs) {
+    if (r.type !== 'person' || !r.dynasty) continue;
+    if (!dyn.has(r.dynasty)) dyn.set(r.dynasty, []);
+    const ys = ents.map((x) => x.e).filter((e) => e.year_bc_ad != null);
+    dyn.get(r.dynasty).push({ r, ys });
+  }
+  const dynOrder = [...dyn.keys()].sort((a, b) => { const n = (s) => +((/Dynasty (\d+)/.exec(s) || [])[1] || 999); return n(a) - n(b) || a.localeCompare(b); });
+  const listsFor = (members) => kingDoc.lists.filter((l) => l.entries.some((x) => members.some((m) => m.r.id === x.person)));
+  const dynHtml = dynOrder.map((name) => {
+    const members = dyn.get(name).sort((a, b) => (a.ys[0]?.year_bc_ad ?? 1e9) - (b.ys[0]?.year_bc_ad ?? 1e9) || displaySpelling(a.r.title).localeCompare(displaySpelling(b.r.title), 'en'));
+    const kls = listsFor(members);
+    return `<section class="dos-dynasty" aria-labelledby="dyn-${esc(name.replace(/\W+/g, '-').toLowerCase())}"><h3 id="dyn-${esc(name.replace(/\W+/g, '-').toLowerCase())}">${esc(name)}</h3>
+<ul class="dos-members">${members.map((m) => `<li><a href="${urlOf(m.r)}">${shown(m.r.title)}</a> <span class="small muted">${m.ys.length ? `his year${new Set(m.ys.map((e) => e.year_bc_ad)).size > 1 ? 's' : ''}: ${[...new Set(m.ys.map((e) => hisYear(e.year_bc_ad, e.year_bc_ad_end)))].map(esc).join(', ')}` : 'no year printed'}</span></li>`).join('')}</ul>
+${kls.length ? `<p class="small">King lists: ${kls.map((l) => `<a href="/king-lists/#${esc(l.id)}">${esc(l.title)}</a>`).join('; ')}</p>` : ''}</section>`;
+  }).join('');
+  const dynPhrases = [];
+  for (const { r, ents } of recs) for (const { e } of ents) if (/dynast/i.test(e.date || '')) dynPhrases.push({ r, e });
+  const dynPhraseHtml = dynPhrases.length ? `<p class="small">Dynasty phrases he prints with no BC year: ${dynPhrases.map(({ r, e }) => `“${esc(e.date)}” (${link(r.id)}; ${esc(cite(e))})`).join('; ')}. They are not converted to years.</p>` : '';
+  const counts = {
+    datedRecords: datedRecs.size,
+    datedEvents: [...datedRecs].filter((id) => byId[id]?.type === 'event').length,
+    datedPeople: [...datedRecs].filter((id) => byId[id]?.type === 'person').length,
+    items: list.length,
+    undated: undated.length,
+    dynasties: dynOrder.length,
+  };
+  dosPageCounts = counts;
+  const body = `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/chronologies/">Chronologies</a></li><li aria-current="page">Dynasty of Slaves</li></ol></nav>
+<article id="dos-page">
+<h1>Dynasty of Slaves</h1>
+<section class="card conv-dating" data-group="conventional" aria-labelledby="dos-intro-h">
+<h2 id="dos-intro-h">${esc(convGroup?.name || 'Conventional dating')} <span class="conv-label">display only</span></h2>
+<p class="conv-note">${esc(convGroup?.note || '')}</p>
+<p>The people, events, and dynasties named in BLK SHP Scott, <i>${esc(src?.title || 'Dynasty of Slaves')}</i> (BLK SHP Publishing, 2026), in the order of the years he prints. BLK SHP Scott is the pen name of Scott Magdalein. ${src?.url ? ext(src.url, 'Public listing') : ''}</p>
+<p class="small">This page shows his order only. Each record keeps its place on the main timeline. Where his year differs from the site's sort year, both are shown. Citations are chapter and section; the edition has no page numbers. <a href="/chronologies/#${DOS}">About this chronology</a></p>
+<p class="small muted">${counts.datedEvents} events and ${counts.datedPeople} people with a year he prints (${counts.items} dated entries), ${counts.undated} named with no year printed, ${counts.dynasties} dynasties.</p>
+<nav aria-label="On this page"><ul class="chip-list"><li><a href="#dos-timeline">Timeline</a></li><li><a href="#dos-dynasties">Dynasties</a></li><li><a href="#dos-undated">Named, no year printed</a></li></ul></nav>
+</section>
+<section class="card" id="dos-timeline" aria-labelledby="dos-timeline-h"><h2 id="dos-timeline-h">His years, earliest first</h2>
+<ol class="dos-tl">${byYear.map((g) => `<li class="dos-year" data-year="${g.y}"><h3 class="dos-year-label">${esc(g.label)}</h3><ul class="dos-items">${g.items.map(itemHtml).join('')}</ul></li>`).join('')}</ol>
+</section>
+<section class="card" id="dos-dynasties" aria-labelledby="dos-dyn-h"><h2 id="dos-dyn-h">Dynasties</h2>
+<p class="small muted">Grouped by the dynasty the site already records for each person (from the CFAH king lists). No dynasty is given a year here.</p>
+${dynHtml}${dynPhraseHtml}</section>
+<section class="card" id="dos-undated" aria-labelledby="dos-undated-h"><h2 id="dos-undated-h">Named, no year printed</h2>
+<p class="small muted">Named in the book with no BC year. A century or a span he gives is shown as printed and is not converted.</p>
+<ul class="dos-undated">${undatedHtml}</ul></section>
+</article>`;
+  out('chronologies/dynasty-of-slaves/index.html', page({ title: 'Dynasty of Slaves', desc: "BLK SHP Scott's Dynasty of Slaves (2026): people, events, and dynasties in the order of his printed years. Conventional dating, display only.", body, path: DOS_PAGE, type: 'Chronology' }));
 }
 
 // Gallery
