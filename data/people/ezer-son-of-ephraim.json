@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ezer-son-of-ephraim",
+  "type": "person",
+  "title": "Ezer (son of Ephraim)",
+  "summary": "Ezer, a son of Ephraim killed in the breakout Scott describes. Not split from any other Ezer.",
+  "description": "Added from the Dynasty of Slaves import. Display only. Scott’s synchronisms are his view. This chronology never sets a sort, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Dynasty of Slaves is display-only and never sets a sort)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 3, Ezekiel’s Valley of Dry Bones",
+        "link": "https://biblehub.com/blb/1_chronicles/7.htm#20",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Ezer and Elead, sons of Ephraim, as killed in the breakout. No year is printed."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [
+    "1Chr.7.20-1Chr.7.22"
+  ],
+  "sources": [
+    "dynasty-of-slaves-2026"
+  ],
+  "related": [],
+  "free_source_links": []
+}

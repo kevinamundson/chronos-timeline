@@ -66,6 +66,42 @@
       "link": "https://texts.earlyprint.org/works/A10357.xml",
       "source_text_id": "raleigh-history-of-the-world-1617",
       "note": "Year cell \"3155 2473 390\". To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682. The narrative (Book II, ch. IIII, §I, sig. 184a) says \"in the yeere of the World 2474.\" The chronological table prints this flight at World 2473. The table figure is the one entered."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "around the year 1486 BC",
+      "year_am": null,
+      "year_bc_ad": -1486,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 5, The “Great Overseer of Soldiers.”",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Disappearance he equates with Moses’ flight. He says it is exactly forty years before the Exodus, and four or five years before the father’s death. Those intervals are not stored as further years."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "c. 1486 BC",
+      "year_am": null,
+      "year_bc_ad": -1486,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 5, We have The Receipts:",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Monument receipt in the chapter summary. Same disappearance year."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "1486 BC",
+      "year_am": null,
+      "year_bc_ad": -1486,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Appendix, Archaeological Reports & Site Data",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Kurgus reports, as he aligns Amenmose’s disappearance with the flight to Midian."
     }
   ],
   "people": [
@@ -87,7 +123,8 @@
     "ussher-annals-1658",
     "jordan-bc-6-7",
     "raleigh-history-of-the-world-1617",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {

@@ -2,7 +2,7 @@
   "$schema": "../schema/chronology.schema.json",
   "primary_sort_chronology": "cfah",
   "sorting_rule": {
-    "description": "sorting_year = the BC/AD year of the first tier that has a non-null year_bc_ad. Events use chronologies[]. People use dates.birth[] when a tier 1–4 birth year is stored. A person who has a dates.reign slot and no tier-ranked birth year uses the reign-start year (year_bc_ad already stored on dates.reign); sorting_basis.slot is then reign_start. Within ussher-jones, for that reign-start choice, the 23rd edition (2026) governs over an older Jones edition when both print a year. The first matching entry within a tier is used otherwise; for split years (2348/2347) the start year is used. A year is not invented. Tier \"calculated\" sits below provisional: it is arithmetic on figures already printed, stored on the person in calculated, and it sets sorting_year only when no tier 1–4 year and no provisional year exist. It is not written into year_bc_ad. Kevin, 2026-11-08. Secondary display chronologies (bible, masoretic-genealogy, jordan, josephus, Clonmacnoise, Raleigh, Herodotus, Cory, Shuckford, Hales, jones-2019, and CFAH paper_text) never set sorting_year. Exception, pending owner decision: where no tier gives a year, the Generations curriculum supplies a PROVISIONAL sort (tier \"provisional\"; see A8 in docs/OPEN-QUESTIONS-FOR-KEVIN.md). Kevin's ruling, 2026-10-28 (open question M3).",
+    "description": "sorting_year = the BC/AD year of the first tier that has a non-null year_bc_ad. Events use chronologies[]. People use dates.birth[] when a tier 1–4 birth year is stored. A person who has a dates.reign slot and no tier-ranked birth year uses the reign-start year (year_bc_ad already stored on dates.reign); sorting_basis.slot is then reign_start. Within ussher-jones, for that reign-start choice, the 23rd edition (2026) governs over an older Jones edition when both print a year. The first matching entry within a tier is used otherwise; for split years (2348/2347) the start year is used. A year is not invented. Tier \"calculated\" sits below provisional: it is arithmetic on figures already printed, stored on the person in calculated, and it sets sorting_year only when no tier 1–4 year and no provisional year exist. It is not written into year_bc_ad. Kevin, 2026-11-08. Secondary display chronologies (bible, masoretic-genealogy, jordan, josephus, Clonmacnoise, Raleigh, Herodotus, Cory, Shuckford, Hales, jones-2019, Dynasty of Slaves (dynasty-of-slaves), and CFAH paper_text) never set sorting_year. Exception, pending owner decision: where no tier gives a year, the Generations curriculum supplies a PROVISIONAL sort (tier \"provisional\"; see A8 in docs/OPEN-QUESTIONS-FOR-KEVIN.md). Kevin's ruling, 2026-10-28 (open question M3).",
     "tiers": [
       {
         "rank": 1,
@@ -687,6 +687,23 @@
       "year_conventions": "Years are stored as printed. year_bc_ad is negative for BC and positive for AD. There is no year zero. year_am is the printed Anno Mundi. Neither figure is converted, and neither sets a sort.",
       "references": [
         "jones-chronology-ot-2019"
+      ],
+      "anchors": []
+    },
+    {
+      "id": "dynasty-of-slaves",
+      "name": "BLK SHP Scott, Dynasty of Slaves (2026)",
+      "abbreviation": "Dynasty of Slaves",
+      "primary": false,
+      "sort_priority": 18,
+      "status": "partial",
+      "authors": [
+        "BLK SHP Scott"
+      ],
+      "description": "SECONDARY DISPLAY CHRONOLOGY. It is never a sort tier and never sets or overrides a sort year, including on records this import creates. It is not a provisional tier. Each entry is a date BLK SHP Scott prints in Dynasty of Slaves (BLK SHP Publishing, 2026), cited by chapter and section because the edition has no page numbers. The book is copyrighted: only dates, citations, names, and short notes in our own words are kept. His archaeological synchronisms are his view and do not change CFAH, Ussher–Jones, or Ussher dates. Agreements and conflicts are listed in data/dynasty-of-slaves-dates-extract.md.",
+      "year_conventions": "year_bc_ad is a BC year he prints (negative; no year 0). A range he prints uses year_bc_ad and year_bc_ad_end. Around, circa, and roughly are precision approximate. year_am stays null. A regnal year, a century, or an interval (215, 430, 480, 300, forty, four hundred) is not converted to a BC year. A result he prints, such as 1446 BC or 1876 BC, is stored as his figure.",
+      "references": [
+        "dynasty-of-slaves-2026"
       ],
       "anchors": []
     }

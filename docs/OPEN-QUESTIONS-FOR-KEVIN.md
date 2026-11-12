@@ -1670,3 +1670,117 @@ Pass 8 read Book II, Part I, Chapter IV, and stopped at the end of that chapter.
   1. Leave these without a new event, as now.
   2. Name an existing event that should receive one of them.
 - **Recommendation:** option 1. A new event cannot take a sort year from Raleigh.
+
+## O. Dynasty of Slaves (BLK SHP Scott, 2026)
+
+Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record of Israel in Egypt* (BLK SHP Publishing, 2026; Kindle Direct Publishing). eBook ISBN 979-8-9960110-3-2; softcover 979-8-9960110-0-1; hardcover 979-8-9960110-2-5; audiobook 979-8-9960110-1-8. © the author, all rights reserved. The dated statements are in `data/dynasty-of-slaves-dates-extract.md`. The chronology `dynasty-of-slaves` is display only. It does not set a sort year. Citations are chapter and section. The edition has no printed page numbers.
+
+### O1. The printed author is BLK SHP Scott
+
+- **Why it matters:** The book prints the author as BLK SHP Scott. The source record uses that form. You have named the author Scott Magdalein. That surname is not printed in the book, and the site does not show it. The Google Books about page, opened 2026-11-11, prints the catalog form “B. L. K. Shp Scott”. That page does not print a surname beyond Scott.
+- **Options:**
+  1. Keep the displayed author as BLK SHP Scott until you confirm the full name, as now.
+  2. Confirm the full name, and say the form the site should show.
+- **Recommendation:** option 1. The site shows the name the book prints until you confirm another form.
+
+### O2. Modern writers were not made people
+
+- **Why it matters:** The book cites living and recent scholars, excavators, and authors. They are not ancient people, so they have no person records. The names read in this pass: Nadine Moeller, Manfred Bietak, van der Veen, Gorg, Charles F. Aling, Douglas Petrovich, Bryant G. Wood, Andrew E. Steinmann, Edwin R. Thiele, Titus Kennedy, David P. Livingston, John J. Bimson, James K. Hoffmeier, Scott Stripling, Jack Finegan, Charles H. Dyer, William C. Hayes, Percy E. Newberry, Michela Schiff Giorgini, W. Vivian Davies, Donald B. Redford, Kim Ryholt, Barbara Cifola, Joyce Tyldesley, Betsy M. Bryan, Eric H. Cline, David O'Connor, Kenneth A. Kitchen, Amihai Mazar, David Merling, Timothy Mahoney. John Beasley Greene appears only as the photographer on a picture credit. Jordi is named in the dedication. The Davids in this book are David P. Livingston, David O'Connor, and David Merling.
+- **Options:**
+  1. Leave modern writers off the person list, as now.
+  2. Name one who should have a record, and the role that makes that person historical for this site.
+- **Recommendation:** option 1. A cited author is not a person in the chronology.
+
+### O3. Sites and episodes with no sort year were not made events
+
+- **Why it matters:** A new event needs a sort year, and this chronology cannot set one. These places and episodes stay in his notes on existing records, or only in the extract: Beni Hasan as its own event, Tell el-Dab'a and Avaris, Soleb, Serabit el-Khadim, Kurgus and Hagar el-Merwa, the Year 9 campaign, an Ephraimite breakout as its own event, a slaughter of 1526 distinct from `moses-birth`, the Memphis Stele, the Dream Stele, the Ipuwer Papyrus, Berlin pedestal 21687, the Brooklyn Papyrus, and the Tell Edfu silos. A Proto-Sinaitic reading he calls potentially Manasseh and Moses was left as his view and was not stored as an identification.
+- **Options:**
+  1. Leave these without a new event or place, as now.
+  2. Name an existing event or place that should receive one of them, or approve a new record that already has a tier 1–4 year.
+- **Recommendation:** option 1. A site with no sort year stays off the timeline.
+
+### O4. This chronology is not a provisional tier
+
+- **Why it matters:** People this import creates have `sorting_year` null. Where he prints a year, standby can show it. Standby does not sort the timeline. Morecraft can sort a record it created. This source cannot.
+- **Options:**
+  1. Keep `dynasty-of-slaves` display only, as now.
+  2. Approve a provisional tier for records that only this book dates, and name which records.
+- **Recommendation:** option 1. His Egyptian synchronisms are his view. A provisional sort would place them on the timeline beside CFAH.
+
+### O5. Deities were not made people
+
+- **Why it matters:** He names gods in the narrative. They have no person records: Ra, Hapi, Heqet (he also spells Heket), Amun and Amun-Ra, Osiris, Sobek, Nut, Khepri, Apis, Hathor, Nannar, Ptah, and Ma'at. The same choice as N7.
+- **Options:**
+  1. Leave the gods off the person list, as now.
+  2. Name one that should be a person.
+- **Recommendation:** option 1.
+
+### O6. Identifications he makes stay on separate records
+
+- **Why it matters:** He treats some names as the same person. Each pair stays on its own record, with a note that the identification is his.
+  - Amenmose is `amenmose`. Moses is `moses`.
+  - Salatis, Salitis, and Saites stay on `salitis`. Joseph stays `joseph`. Shallit is a title.
+  - Bnon stays `bnon`. Benjamin stays `benjamin`. Beon stays `beon`. He says Bnon is sometimes written Beon. The two records stay separate.
+  - Abisha is `abisha`. Abraham is `abraham`. The 1876 BC arrival is on `abraham-enters-canaan` and on `abraham`'s reign slot. His birth year is unchanged.
+  - The king he spells Apepi is on `apophis-i`. `apophis-iii` was left alone.
+  - Queen Ahmose, also called Princess Ahmose in the introduction, is `queen-ahmose`. `ahmose-i` was left alone. Ahmose son of Ebana is `ahmose-son-of-ebana`.
+  - Chenephres is `chenephres`. Thutmose III is `thutmose-iii`.
+  - The Cushite wife in Numbers 12 is unnamed. She stays off Zipporah and off Tharbis.
+  - Reuel and Jethro are both on `jethro`.
+  - Ramesses II is the new record `ramesses-ii`. The four older Ramesses records say they are not Rameses II.
+  - He spells Potiphar. That name is on `putiphar`. The wife is unnamed. Saris is a title.
+  - Zaphnath-Paaneah is a title.
+  - He spells Joshua. That name is on `iosua`. The 1210 BC figure is on `fall-of-jericho`.
+  - Gershom, Eliezer, Zimran, and Jokshan have no father link, so no standby year is taken from a parent.
+- **Options:**
+  1. Keep these records apart, as now.
+  2. Name a fold, and the records that should receive it. Say if Apepi should be `apophis-iii` instead of `apophis-i`.
+- **Recommendation:** option 1. His theory stays in the note.
+
+### O7. Shiphrah, Puah, and Rekhmire
+
+- **Why it matters:** He names Shiphrah once, as a name on the Brooklyn Papyrus and as the midwife of Exodus 1:15. Puah is not named. `sephora-midwife` is Raleigh's Sephora, kept apart from Zipporah (N43). Shiphrah has no new record and is not on `sephora-midwife`. Rekhmire appears only in a picture filename.
+- **Options:**
+  1. Leave Shiphrah, Puah, and Rekhmire without a new record, as now.
+  2. Approve a Shiphrah record, or say she should be `sephora-midwife`.
+- **Recommendation:** option 1. One papyrus name, and a filename, do not create or merge a person.
+
+### O8. Years that are titles of modern books
+
+- **Why it matters:** The appendix prints three dates that are book titles: Aling “to 1000 BC”, Ryholt “c. 1800–1550 BC”, and Mazar “10,000–586 B.C.E.” They are listed in the extract and stored on no record.
+- **Options:**
+  1. Leave them unmapped, as now.
+  2. Name a record that should receive one of them as an ancient date.
+- **Recommendation:** option 1. A title is not a year he assigns to an event.
+
+### O9. 1526 BC is his infancy year, and also a CFAH dynasty-end year
+
+- **Why it matters:** He prints 1526 BC for the slaughter of the infants, on `moses-birth` and on `moses`. CFAH's end of Egyptian Dynasty 12 is also 1526, on `end-of-egypt-dynasty-12`. That event was left as CFAH has it. 1550 BC and 1560 BC were left off `start-of-egypt-dynasty-18`.
+- **Options:**
+  1. Leave the dynasty events as they are, as now.
+  2. Say that one of those years is the same event, and name the record.
+- **Recommendation:** option 1. The same numeral is a different event.
+
+### O10. Groups, and two sons Raleigh left off
+
+- **Why it matters:** Hyksos, Aamu, Shasu, Israelites, Kenites, Ephraimites, Nomarchs, Habiru (Apiru), the mixed multitude, the Tribe of Judah, and the Tribe of Levi stay as groups. They are not on `judah` or `levi`. “The Amenemhats and the Senusrets” was left as a dynasty phrase. He quotes Genesis 25:1–2 and names Keturah's sons. Medan, Ishbak, Shuah, and Midian already had records. Zimran and Jokshan did not. N31 left Zimran without a record. This import created `zimran` and `jokshan`, with no year and no father link.
+- **Options:**
+  1. Keep the two new sons, and leave the groups unsplit, as now.
+  2. Remove `zimran`, or `jokshan`, or both, so they stay with N31.
+- **Recommendation:** option 1. He names them in a verse he prints. Say if N31 should still keep Zimran off the site.
+
+### O11. The public listing has no preview
+
+- **Why it matters:** The source URL is the Google Books about page for the softcover (catalog ISBN 9798996011001, no preview), opened 2026-11-11. The eBook ISBN is not on that page. No private file link is stored.
+- **Options:**
+  1. Keep that about page as the public listing, as now.
+  2. Give a different public URL that should replace it.
+- **Recommendation:** option 1.
+
+### O12. Names in passing that were not entered
+
+- **Why it matters:** Paul is the reader of the 430 years and of Galatians. No year is printed for Paul, and `paul` has no new row. Ezekiel is the chapter image of the valley of dry bones. `ezekiel` has no new row. Pontius Pilate is one line in a list of skeptics later proved right. `pilate` has no new row. Stephen's speech is on `stephen`, with no year.
+- **Options:**
+  1. Leave Paul, Ezekiel, and Pilate without a new row, as now.
+  2. Add a no-year note on one of those existing records, and say which.
+- **Recommendation:** option 1. They have no dated role in the Egypt narrative.

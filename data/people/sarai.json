@@ -55,6 +55,18 @@
         "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
         "source_text_id": "jones-chronology-ot-2026",
         "note": "CONFLICT: Jones prints AM 2018 and 1987 BC. A derived check (not stored): 2018 + 1987 = 4005, not 4004, against his rule that a BC number added to its AM counterpart yields 4004. Both figures are stored as printed (first-printed rule). Neither was adjusted. The sort uses the printed BC year. Kevin ruled (2026-10-27) to use the first-printed figure and flag the conflict."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 1, Trading His Sister for Safety",
+        "link": "https://biblehub.com/blb/genesis/12.htm#16",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Sarai at sixty-five. That is an age, not a calendar year. The verse he prints in this section is Genesis 12:16."
       }
     ],
     "death": [
@@ -96,7 +108,8 @@
   "scripture_refs": [],
   "sources": [
     "raleigh-history-of-the-world-1617",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

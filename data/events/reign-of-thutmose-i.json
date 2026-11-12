@@ -46,6 +46,18 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Ally of King David."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "1490 BC",
+      "year_am": null,
+      "year_bc_ad": -1490,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 5, When the Prince Disappears",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Scene year in Thebes. Not a printed accession for Thutmose I, Amenmose, or Thutmose III."
     }
   ],
   "people": [],
@@ -54,7 +66,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

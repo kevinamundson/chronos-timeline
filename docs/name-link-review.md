@@ -10,9 +10,9 @@ Tubal in a passage or note about Cain’s line resolves to Tubal-cain. Otherwise
 
 - Tubal resolved to Tubal-cain: 9
 - Tubal resolved to Japheth’s son: 40
-- Ambiguous tokens left unlinked: 875 occurrences, 65 distinct tokens
-- Names that match no record, in the 1617 passages and in summaries and descriptions: 31916 occurrences, 6571 distinct names
-- Capitalized words skipped as citation boilerplate or intake wording: 76567
+- Ambiguous tokens left unlinked: 911 occurrences, 67 distinct tokens
+- Names that match no record, in the 1617 passages and in summaries and descriptions: 32002 occurrences, 6579 distinct names
+- Capitalized words skipped as citation boilerplate or intake wording: 77959
 - Overrides stored: 0
 
 ## Tubal
@@ -57,7 +57,7 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 
 ### Ioseph
 
-- Occurrences: 95
+- Occurrences: 104
 - Candidates: joseph (Joseph); joseph-husband-of-mary (Ioseph)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
@@ -94,7 +94,11 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:event:patriarchs-first-journey-to-egypt:description | 1 | Joseph’s brothers go down to Egypt the first time (Gen… |
 | note:event:patriarchs-first-journey-to-egypt:summary | 1 | Joseph’s brothers go down to Egypt the first time (Gen… |
 | note:event:reign-of-senusret-iii:chronologies:3:note | 1 | …calls Senusret III the Pharaoh who did not know Joseph. |
+| note:person:apachnas:dates:reign:1:citation | 1 | …nasty of Slaves, Chapter 2, What Happened After Joseph? |
+| note:person:bnon:dates:reign:1:citation | 1 | …nasty of Slaves, Chapter 2, What Happened After Joseph? |
 | note:person:ephraim:dates:birth:2:note | 1 | …rst of the seven years of plenty): Asenath bore Joseph two sons during the years of plenty. The exact … |
+| note:person:ephraim:dates:birth:4:citation | 1 | …nasty of Slaves, Chapter 2, What Happened After Joseph? |
+| note:person:ephraim:dates:birth:4:note | 1 | He names Ephraim and Manasseh as Joseph’s sons who do not succeed in his reading. No ye… |
 | note:person:ephraim:summary | 1 | Second son of Joseph and Asenath, born in Egypt "before the years of… |
 | note:person:isaac:dates:death:0:citation | 1 | …of Egypt," ARJ 18 (2025): 13–60, Argument 4 §7 "Joseph was Promoted in the Year of Isaac's Death 1716/… |
 | note:person:isaac:dates:death:0:note | 1 | …eath in 1716 BC from Jones (2019, 58) and makes Joseph's promotion the same year. |
@@ -109,14 +113,19 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:joseph:dates:death:10:note | 1 | Body intake. The yeeres he puts between Joseph’s death and the birth of Moses. Not a yeere of … |
 | note:person:joseph:dates:death:3:citation | 1 | … 5)," Biblical Chronology 6:7 (July 1994), §14 "Joseph and Judah" (year list) |
 | note:person:joseph:dates:death:3:note | 1 | Also BC 2:7: "AM 2369 Death of Joseph, age 110". |
+| note:person:joseph:dates:reign:4:note | 1 | … Salatis, also spelled Salitis and Saites, with Joseph through the title Shallit. His view. Not merged… |
 | note:person:joseph:name-form:0:citation | 1 | STEPBible TIPNR (CC BY 4.0), individual Joseph@Gen.30.24-Rev, prints the Hebrew יוֹסֵף (H3130G… |
 | note:person:joseph:name-form:1:citation | 1 | …nological Table, sig. 783a. The passage prints “Ioseph”. |
 | note:person:joseph:name-form:2:citation | 2 | STEPBible TIPNR (CC BY 4.0), individual Joseph@Gen.30.24-Rev, prints the English “Joseph” besi… |
 | note:person:manasseh:dates:birth:2:note | 1 | …rst of the seven years of plenty): Asenath bore Joseph two sons during the years of plenty. The exact … |
+| note:person:manasseh:dates:birth:4:citation | 1 | …nasty of Slaves, Chapter 2, What Happened After Joseph? |
+| note:person:manasseh:dates:birth:4:note | 1 | He names Ephraim and Manasseh as Joseph’s sons who do not succeed in his reading. No ye… |
 | note:person:manasseh:summary | 1 | Firstborn son of Joseph and Asenath, born in Egypt "before the years of… |
 | note:person:manasses:dates:reign:2:note | 1 | …eh in the Judah column. Not Manasseh the son of Joseph. |
 | note:person:moses:dates:birth:4:citation | 1 | …s system), p. 6, chart "Year of the World: From Joseph’s death to the Judges" |
+| note:person:rachel:dates:birth:1:citation | 1 | …nasty of Slaves, Chapter 2, What Happened After Joseph? |
 | note:person:rachel:summary | 1 | Wife of Jacob, and mother of Joseph and Benjamin. Jones dates her death at Benjamin… |
+| note:person:salitis:dates:reign:1:note | 1 | … Salatis, also spelled Salitis and Saites, with Joseph through the title Shallit. His view. Not merged… |
 | note:person:unas:dates:reign:0:note | 1 | …e the death of Nitocris in 1479 BC; it overlaps Joseph's famine. |
 | note:person:virgin-mary:description | 1 | …f the World (1617). The Virgin Mary, named with Ioseph in the flight from Herod. Not Queen Mary. No ye… |
 | p00840 (Book I, Part I, Chapter I, §. VIII, sig. 48b–49a) | 1 | …es euery-where witnesse, as in the blessings of Ioseph, and in the 104. Psalme. * By these springs sha… |
@@ -594,6 +603,26 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01244 (Book I, Part I, Chapter VIII, §. VII, sig. 118a) | 1 | …th sonne of IAPHETH: and of MESCH, of ARAM, and MESHECH of IAPHETH. |
 | p01247 (Book I, Part I, Chapter VIII, §. VII, sig. 118b–119a) | 5 | The sixth sonne of Iapheth was Meshech, whom the Septuagint cal Mosoch: ( a part of th… |
 
+### Ramesses
+
+- Occurrences: 18
+- Candidates: ramesses (Ramesses); ramesses-d18 (Ramesses); ramesses-d19 (Ramesses); ramesses-the-great (Ramesses)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:amenophis:description | 1 | …, placed next before Busiris by some, and after Ramesses by others. Kept apart from the Cory eighteenth-… |
+| note:person:ramesses-d18:summary | 1 | Ramesses is named in Cory, Ancient Fragments (1876, ed. … |
+| note:person:ramesses-d19:summary | 1 | Ramesses is named in Cory, Ancient Fragments (1876, ed. … |
+| note:person:ramesses-ii:summary | 4 | Ramesses II, the king of the late-date Exodus theory Sco… |
+| note:person:ramesses-the-great:dates:reign:1:note | 1 | Not the eighteenth-dynasty Ramesses of 1 year, and not Rameses II. |
+| note:person:ramesses-the-great:summary | 1 | Ramesses is named in Cory, Ancient Fragments (1876, ed. … |
+| note:person:ramesses:summary | 1 | Raleigh names Ramesses in the History of the World (1617). |
+| note:person:sethos-jos:dates:reign:1:note | 1 | Sethos, also called Ramesses, son of the Amenophis of this narrative. An age… |
+| p00471 (Contents, Book II, Part I, Chapter XXVI, sig. 33a) | 1 | §. III. Of Cherres, Armeus, Ramesses, and Amenophis: Of Myris, and the Lake that bea… |
+| p01287 (Book I, Part I, Chapter VIII, §. XI, subsection II, sig. 124b) | 1 | …came Egypt, at such time as Aegyptus( otherwise Ramesses, as some thinke) the sonne of Belus, chased the… |
+| p01642 (Book II, Part I, Chapter II, §. VIII, sig. 172b–173a) | 5 | … Danaus & Aegyptus, otherwise called Armeus and Ramesses, was equally distant from Busiris or Orus the s… |
+
 ### CYRIL
 
 - Occurrences: 17
@@ -643,24 +672,22 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p00431 (Contents, Book II, Part I, Chapter XXI, sig. 32a) | 1 | …probably bee thought to haue beene the sonne of Iehoram. |
 | p00987 (Book I, Part I, Chapter III, §. XIV, sig. 74a) | 2 | …in these wordes: So the Lord stirred vp against IEHORAM, the spirit of the Philistines, and the Arabian… |
 
-### Ramesses
+### Bnon
 
-- Occurrences: 14
-- Candidates: ramesses (Ramesses); ramesses-d18 (Ramesses); ramesses-d19 (Ramesses); ramesses-the-great (Ramesses)
+- Occurrences: 13
+- Candidates: beon (Beon); bnon (Bnon)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
 | Unit | Count | Excerpt |
 |---|---|---|
-| note:person:amenophis:description | 1 | …, placed next before Busiris by some, and after Ramesses by others. Kept apart from the Cory eighteenth-… |
-| note:person:ramesses-d18:summary | 1 | Ramesses is named in Cory, Ancient Fragments (1876, ed. … |
-| note:person:ramesses-d19:summary | 1 | Ramesses is named in Cory, Ancient Fragments (1876, ed. … |
-| note:person:ramesses-the-great:dates:reign:1:note | 1 | Not the eighteenth-dynasty Ramesses of 1 year, and not Rameses II. |
-| note:person:ramesses-the-great:summary | 1 | Ramesses is named in Cory, Ancient Fragments (1876, ed. … |
-| note:person:ramesses:summary | 1 | Raleigh names Ramesses in the History of the World (1617). |
-| note:person:sethos-jos:dates:reign:1:note | 1 | Sethos, also called Ramesses, son of the Amenophis of this narrative. An age… |
-| p00471 (Contents, Book II, Part I, Chapter XXVI, sig. 33a) | 1 | §. III. Of Cherres, Armeus, Ramesses, and Amenophis: Of Myris, and the Lake that bea… |
-| p01287 (Book I, Part I, Chapter VIII, §. XI, subsection II, sig. 124b) | 1 | …came Egypt, at such time as Aegyptus( otherwise Ramesses, as some thinke) the sonne of Belus, chased the… |
-| p01642 (Book II, Part I, Chapter II, §. VIII, sig. 172b–173a) | 5 | … Danaus & Aegyptus, otherwise called Armeus and Ramesses, was equally distant from Busiris or Orus the s… |
+| note:person:apachnas:dates:reign:1:note | 2 | He names Apachnas after Bnon, and Rachel’s name Ben-Oni as the bridge to Bno… |
+| note:person:apachnas:summary | 1 | Apachnas, a Hyksos successor Scott names after Bnon. No BC year is printed. |
+| note:person:benjamin:dates:reign:1:note | 2 | He identifies Bnon, sometimes written Beon, with Benjamin through … |
+| note:person:beon:dates:reign:3:note | 2 | He identifies Bnon, sometimes written Beon, with Benjamin through … |
+| note:person:bnon:dates:reign:0:note | 1 | Row "Bnon" of Table 6 (Egypt Dynasty 15 (Hyksos)). |
+| note:person:bnon:dates:reign:1:note | 1 | …dentifies with Jacob’s family held Avaris under Bnon. A duration, not a BC year. |
+| note:person:bnon:dates:reign:2:note | 2 | He identifies Bnon, sometimes written Beon, with Benjamin through … |
+| note:person:rachel:dates:birth:1:note | 2 | He names Apachnas after Bnon, and Rachel’s name Ben-Oni as the bridge to Bno… |
 
 ### Hezekiah
 
@@ -697,6 +724,22 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01083 (Book I, Part I, Chapter VI, §. V, sig. 89b) | 1 | … Father of Endymion; and by Io( the Daughter of Inachus) Epaphus, the Founder of Memphis in Aegypt: whi… |
 | p01118 (Book I, Part I, Chapter VII, §. III, sig. 95b–96a) | 2 | …kes that Moses was more ancient, and liued with Inachus; but that cannot bee true: for then had the Flo… |
 | p01647 (Book II, Part I, Chapter III, §. I, sig. 173b) | 1 | …of Mendes, who saith that Moses was borne while Inachus ruled the Argiues, and Amesis in Aegypt. |
+
+### Manasseh
+
+- Occurrences: 9
+- Candidates: manasseh (Manasseh (son of Joseph)); manasses (Manasseh)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:ephraim:dates:birth:4:note | 1 | He names Ephraim and Manasseh as Joseph’s sons who do not succeed in his read… |
+| note:person:manasseh:dates:birth:4:note | 1 | He names Ephraim and Manasseh as Joseph’s sons who do not succeed in his read… |
+| note:person:manasseh:name-form:0:citation | 1 | STEPBible TIPNR (CC BY 4.0), individual Manasseh@Gen.41.51-Rev, prints the Hebrew מְנַשֶּׁה (H45… |
+| note:person:manasseh:name-form:1:citation | 2 | STEPBible TIPNR (CC BY 4.0), individual Manasseh@Gen.41.51-Rev, prints the English “Manasseh” be… |
+| note:person:manasseh:name-form:2:citation | 1 | STEPBible TIPNR (CC BY 4.0), individual Manasseh@Gen.41.51-Rev, prints the English “Manassite” b… |
+| note:person:manasses:dates:reign:2:note | 2 | Raleigh’s Manasseh in the Judah column. Not Manasseh the son of Jo… |
+| note:person:manasses:summary | 1 | Manasseh is dated in Raleigh's chronological table (1617… |
 
 ### Sethos
 
@@ -796,20 +839,6 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01137 (Book I, Part I, Chapter VII, §. VII, sig. 99a) | 1 | … was taken( saith Gul. Stuckius, and out of him Danaeus) from Noachus, ( N) being changed into( B) ; an… |
 | p01792 (Book II, Part I, Chapter IV, §. XI, sig. 192b) | 1 | …I thinke, as they are diuided in volumes) is by Danaeus comprised in these foure. |
 
-### Manasseh
-
-- Occurrences: 7
-- Candidates: manasseh (Manasseh (son of Joseph)); manasses (Manasseh)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:person:manasseh:name-form:0:citation | 1 | STEPBible TIPNR (CC BY 4.0), individual Manasseh@Gen.41.51-Rev, prints the Hebrew מְנַשֶּׁה (H45… |
-| note:person:manasseh:name-form:1:citation | 2 | STEPBible TIPNR (CC BY 4.0), individual Manasseh@Gen.41.51-Rev, prints the English “Manasseh” be… |
-| note:person:manasseh:name-form:2:citation | 1 | STEPBible TIPNR (CC BY 4.0), individual Manasseh@Gen.41.51-Rev, prints the English “Manassite” b… |
-| note:person:manasses:dates:reign:2:note | 2 | Raleigh’s Manasseh in the Judah column. Not Manasseh the son of Jo… |
-| note:person:manasses:summary | 1 | Manasseh is dated in Raleigh's chronological table (1617… |
-
 ### Nephercheres
 
 - Occurrences: 7
@@ -825,6 +854,21 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:nephercheres-d5:summary | 1 | Nephercheres is named in Cory, Ancient Fragments (1876, ed. … |
 | note:person:nephercheres:dates:reign:1:note | 1 | …e flowed with honey during eleven days. Not the Nephercheres of the twenty-first dynasty. |
 | note:person:nephercheres:summary | 1 | Nephercheres is named in Cory, Ancient Fragments (1876, ed. … |
+
+### Apachnas
+
+- Occurrences: 6
+- Candidates: apachnas (Apachnas); pachnan (Pachnan)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:apachnas:dates:reign:1:note | 1 | He names Apachnas after Bnon, and Rachel’s name Ben-Oni as the br… |
+| note:person:apachnas:summary | 1 | Apachnas, a Hyksos successor Scott names after Bnon. No … |
+| note:person:pachnan:dates:reign:1:note | 1 | Josephus's extract (p. 127) gives Apachnas thirty-six years and seven months. Both are kep… |
+| note:person:pachnan:dates:reign:2:note | 1 | … list (p. 118) prints 61 years for Pachnan [or, Apachnas]. Both are kept. |
+| note:person:rachel:dates:birth:1:note | 1 | He names Apachnas after Bnon, and Rachel’s name Ben-Oni as the br… |
+| p01627 (Book II, Part I, Chapter II, §. IV, sig. 169b–170a) | 1 | …tions reigned there 19. yeeres, and with Baeon, Apachnas, Apochis, and others of the same brood, obscure… |
 
 ### Evil merodach
 
@@ -1124,6 +1168,18 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:nebka:summary | 1 | King of Egypt's Dynasty 3 at Memphis, called Necherophes by Manetho and Nebka in the Turin Canon. |
 | note:person:necherophes:summary | 1 | Necherophes is named in Cory, Ancient Fragments (1876, ed. … |
 
+### Ramesses II
+
+- Occurrences: 3
+- Candidates: rameses-ii (Rameses II); ramesses-ii (Ramesses II)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:exodus:chronologies:27:note | 1 | …dopt. His own date is 1446 BC, 196 years apart. Ramesses II is a new record. |
+| note:person:ramesses-ii:dates:reign:1:note | 1 | …dopt. His own date is 1446 BC, 196 years apart. Ramesses II is a new record. |
+| note:person:ramesses-ii:summary | 1 | Ramesses II, the king of the late-date Exodus theory Scott … |
+
 ### Sesonchosis
 
 - Occurrences: 3
@@ -1278,16 +1334,6 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 |---|---|---|
 | note:person:akenchres-jos:summary | 1 | Akenchres is named in Cory, Ancient Fragments (1876, ed. … |
 
-### Bnon
-
-- Occurrences: 1
-- Candidates: beon (Beon); bnon (Bnon)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:person:bnon:dates:reign:0:note | 1 | Row "Bnon" of Table 6 (Egypt Dynasty 15 (Hyksos)). |
-
 ## Names in histories that match no record
 
 A name here is a capitalized word of at least three letters, not a function word and not a Roman numeral, that matched no person. Sentence-initial words are included, so the list is wider than personal names. Only the 1617 passages and the summaries and descriptions are listed. Chronology notes and name-form citations are omitted: they repeat our own citation wording. Intake words such as Added, Display, CFAH, and PDF are omitted from summaries and descriptions. `raleigh` is a passage. `prose` is a summary or description.
@@ -1345,10 +1391,10 @@ A name here is a capitalized word of at least three letters, not a function word
 | Kassite | 85 | prose 85 | note:person:abirattash:summary |
 | Aegyptians | 84 | raleigh 84 | p01564 |
 | Empire | 83 | prose 19, raleigh 64 | p01296 |
+| Genesis | 81 | prose 48, raleigh 33 | p01025 |
 | Christian | 80 | prose 50, raleigh 30 | p01407 |
 | Greece | 80 | prose 7, raleigh 73 | p01118 |
 | Princes | 80 | raleigh 80 | p00985 |
-| Genesis | 79 | prose 46, raleigh 33 | p01025 |
 | CHAP | 78 | raleigh 78 | p01547 |
 | Countries | 78 | raleigh 78 | p01564 |
 | Babel | 75 | prose 9, raleigh 66 | p01296 |
@@ -1366,10 +1412,10 @@ A name here is a capitalized word of at least three letters, not a function word
 | Deuill | 65 | raleigh 65 | p01046 |
 | Mountaines | 65 | raleigh 65 | p01118 |
 | Hebrew | 64 | prose 4, raleigh 60 | p00985 |
+| Prince | 63 | prose 1, raleigh 62 | p01686 |
 | Age | 62 | prose 11, raleigh 51 | p01036 |
 | Armie | 62 | raleigh 62 | p01296 |
 | Integrated | 62 | prose 62 | note:person:amenemhat-i:description |
-| Prince | 62 | raleigh 62 | p01686 |
 | Roman | 62 | prose 29, raleigh 33 | p00610 |
 | Warre | 62 | raleigh 62 | p00392 |
 | Temple | 61 | prose 28, raleigh 33 | p01222 |
@@ -1410,6 +1456,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Moneth | 42 | raleigh 42 | p01036 |
 | New | 42 | prose 26, raleigh 16 | p01001 |
 | Prophet | 42 | prose 1, raleigh 41 | p00985 |
+| Scott | 42 | prose 42 | note:person:abisha:summary |
 | Babylonian | 41 | prose 17, raleigh 24 | p01430 |
 | Histories | 41 | prose 26, raleigh 15 | p01057 |
 | Sam | 41 | prose 41 | note:person:david:summary |
@@ -1508,6 +1555,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Chusites | 24 | prose 1, raleigh 23 | p00985 |
 | Commandements | 24 | raleigh 24 | p01759 |
 | Hils | 24 | raleigh 24 | p00930 |
+| Hyksos | 24 | prose 24 | note:person:apachnan:summary |
 | Indus | 24 | prose 2, raleigh 22 | p01172 |
 | Madian | 24 | raleigh 24 | p00985 |
 | Media | 24 | prose 3, raleigh 21 | p01296 |
@@ -1518,7 +1566,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Centre | 23 | prose 22, raleigh 1 | p00928 |
 | Commandement | 23 | raleigh 23 | p01407 |
 | Desarts | 23 | raleigh 23 | p00985 |
-| Hyksos | 23 | prose 23 | note:person:apachnan:summary |
 | Indies | 23 | raleigh 23 | p01222 |
 | Ius | 23 | raleigh 23 | p01852 |
 | Lake | 23 | raleigh 23 | p01252 |
@@ -1526,10 +1573,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Author | 22 | raleigh 22 | p01222 |
 | Chaldaean | 22 | raleigh 22 | p01549 |
 | Children | 22 | raleigh 22 | p01296 |
+| Exodus | 22 | prose 11, raleigh 11 | p01635 |
 | Gen | 22 | raleigh 22 | p01686 |
 | Historians | 22 | raleigh 22 | p01111 |
 | Merchants | 22 | raleigh 22 | p00949 |
 | Nobilitie | 22 | raleigh 22 | p01455 |
+| Slaves | 22 | prose 22 | note:person:abisha:description |
 | Tribe | 22 | raleigh 22 | p01686 |
 | Ages | 21 | raleigh 21 | p01223 |
 | Berossus | 21 | prose 21 | note:person:alaparus:summary |
@@ -1551,7 +1600,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Canaanite | 20 | prose 20 | note:person:amorite:summary |
 | Canneh | 20 | raleigh 20 | p00949 |
 | Eponym | 20 | prose 20 | note:person:abdon:description |
-| Exodus | 20 | prose 9, raleigh 11 | p01635 |
 | Firmament | 20 | raleigh 20 | p00803 |
 | Geneua | 20 | prose 4, raleigh 16 | p01209 |
 | Knowledge | 20 | raleigh 20 | p00127 |
@@ -1583,6 +1631,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Coelesyria | 18 | raleigh 18 | p00949 |
 | Corrected | 18 | prose 18 | note:person:ahmose-i:description |
 | Deuils | 18 | raleigh 18 | p01443 |
+| Great | 18 | prose 10, raleigh 8 | p00778 |
 | Magicians | 18 | raleigh 18 | p01040 |
 | Mountayne | 18 | raleigh 18 | p01206 |
 | People | 18 | raleigh 18 | p01018 |
@@ -1597,7 +1646,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Expedition | 17 | prose 1, raleigh 16 | p01057 |
 | French | 17 | prose 5, raleigh 12 | p01126 |
 | Gerar | 17 | raleigh 17 | p00985 |
-| Great | 17 | prose 9, raleigh 8 | p00778 |
 | Greek | 17 | prose 17 | note:person:anaxagoras:summary |
 | Magi | 17 | raleigh 17 | p01206 |
 | Mankind | 17 | raleigh 17 | p01032 |
@@ -1823,6 +1871,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Lex | 10 | raleigh 10 | p00058 |
 | Lunarie | 10 | raleigh 10 | p01036 |
 | Magistrates | 10 | raleigh 10 | p00049 |
+| Manetho | 10 | prose 8, raleigh 2 | p01627 |
 | Moab | 10 | prose 1, raleigh 9 | p01057 |
 | Moores | 10 | raleigh 10 | p01688 |
 | Mosal | 10 | raleigh 10 | p00962 |
@@ -1872,7 +1921,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Interpreters | 9 | raleigh 9 | p01253 |
 | Lakes | 9 | raleigh 9 | p00980 |
 | Leagues | 9 | raleigh 9 | p01222 |
-| Manetho | 9 | prose 7, raleigh 2 | p01627 |
 | Metropolis | 9 | raleigh 9 | p01654 |
 | Millions | 9 | raleigh 9 | p01296 |
 | Mosel | 9 | raleigh 9 | p00961 |
@@ -2463,6 +2511,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Gyants | 4 | raleigh 4 | p01342 |
 | Haie | 4 | raleigh 4 | p01564 |
 | Happie | 4 | raleigh 4 | p01332 |
+| Hasan | 4 | prose 2, raleigh 2 | note:person:abisha:summary |
 | Hawaii | 4 | prose 4 | note:person:obookiah:summary |
 | Heire | 4 | raleigh 4 | p01033 |
 | Hereupon | 4 | raleigh 4 | p01496 |
@@ -2592,6 +2641,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Rhodians | 4 | raleigh 4 | p00793 |
 | Riphei | 4 | raleigh 4 | p01254 |
 | Romane | 4 | raleigh 4 | p00951 |
+| Royal | 4 | prose 4 | note:person:queen-ahmose:summary |
 | Ruler | 4 | raleigh 4 | p00877 |
 | Russia | 4 | prose 2, raleigh 2 | p01254 |
 | Sacrament | 4 | raleigh 4 | p00051 |
@@ -2627,6 +2677,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Tempe | 4 | raleigh 4 | p00793 |
 | Territories | 4 | raleigh 4 | p01222 |
 | Thebaida | 4 | raleigh 4 | p01303 |
+| Theban | 4 | prose 1, raleigh 3 | p01137 |
 | Thermopylae | 4 | prose 2, raleigh 2 | p00783 |
 | Thessalia | 4 | raleigh 4 | p01118 |
 | Tissaphernes | 4 | raleigh 4 | p00594 |
@@ -2804,6 +2855,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Etymologie | 3 | raleigh 3 | p01371 |
 | Eurydice | 3 | raleigh 3 | p00656 |
 | Examples | 3 | raleigh 3 | p01039 |
+| Ezer | 3 | prose 3 | note:person:elead:summary |
 | Fabius | 3 | raleigh 3 | p00742 |
 | Feast | 3 | prose 2, raleigh 1 | note:event:feast-of-tabernacles:summary |
 | Field | 3 | raleigh 3 | p00877 |
@@ -2867,7 +2919,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Inquisition | 3 | prose 1, raleigh 2 | p01090 |
 | Insula | 3 | raleigh 3 | p00961 |
 | Intercalations | 3 | raleigh 3 | p01678 |
-| Jochebed | 3 | prose 3 | note:person:amram:summary |
 | Johnson | 3 | prose 3 | note:person:naamah:description |
 | Ioppe | 3 | raleigh 3 | p01111 |
 | Ishtar | 3 | prose 3 | note:person:naamah:description |
@@ -2937,6 +2988,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Nestorians | 3 | raleigh 3 | p00961 |
 | Nicaea | 3 | prose 3 | note:person:athanasius-of-alexandria:summary |
 | Nicholaus | 3 | raleigh 3 | p01105 |
+| Nile | 3 | prose 3 | note:person:jochebed:summary |
 | Niliaca | 3 | raleigh 3 | p01124 |
 | Nobility | 3 | raleigh 3 | p00038 |
 | Non | 3 | raleigh 3 | p00884 |
@@ -3029,7 +3081,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Rhodoginus | 3 | raleigh 3 | p01123 |
 | Riddles | 3 | raleigh 3 | p00844 |
 | Rocke | 3 | raleigh 3 | p01704 |
-| Royal | 3 | prose 3 | note:event:edict-of-january-1562:summary |
 | Sacred | 3 | raleigh 3 | p01228 |
 | Sacrifices | 3 | raleigh 3 | p01252 |
 | San | 3 | prose 3 | note:person:girolamo-savonarola:summary |
@@ -3081,7 +3132,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Tanis | 3 | prose 2, raleigh 1 | p01653 |
 | Testaments | 3 | prose 1, raleigh 2 | p01774 |
 | Thalmudists | 3 | raleigh 3 | p00931 |
-| Theban | 3 | raleigh 3 | p01137 |
 | Theeues | 3 | raleigh 3 | p01418 |
 | Themistocles | 3 | raleigh 3 | p00541 |
 | Theodoret | 3 | raleigh 3 | p00912 |
@@ -3235,6 +3285,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Beersheba | 2 | prose 2 | note:event:jacob-enters-egypt:description |
 | Belphegor | 2 | raleigh 2 | p01443 |
 | Belsephon | 2 | raleigh 2 | p01443 |
+| Beni | 2 | prose 2 | note:person:abisha:summary |
 | Beque | 2 | raleigh 2 | p00035 |
 | Bersabe | 2 | raleigh 2 | p01313 |
 | Blacke | 2 | raleigh 2 | p01268 |
@@ -3401,6 +3452,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Ego | 2 | raleigh 2 | p01091 |
 | Elath | 2 | raleigh 2 | p01259 |
 | Elephants | 2 | raleigh 2 | p01259 |
+| Eliezer | 2 | prose 1, raleigh 1 | p01361 |
 | Embassador | 2 | raleigh 2 | p00793 |
 | Embassadour | 2 | raleigh 2 | p00047 |
 | Embassages | 2 | raleigh 2 | p00606 |
@@ -3512,7 +3564,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Harlots | 2 | raleigh 2 | p01088 |
 | Harran | 2 | prose 2 | note:event:demise-of-ashur-uballit-ii:summary |
 | Haruest | 2 | raleigh 2 | p00856 |
-| Hasan | 2 | raleigh 2 | p00960 |
 | Hawaiian | 2 | prose 2 | note:person:obookiah:summary |
 | Hazor | 2 | prose 1, raleigh 1 | note:event:oppression-of-jabin:summary |
 | Heads | 2 | raleigh 2 | p00988 |
@@ -3738,7 +3789,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Nemo | 2 | raleigh 2 | p01857 |
 | Nephtalims | 2 | raleigh 2 | p01323 |
 | Nicene | 2 | raleigh 2 | p01676 |
-| Nile | 2 | prose 2 | note:event:josephs-famine:summary |
 | Nineue | 2 | prose 1, raleigh 1 | note:person:asshur:description |
 | Niniuen | 2 | raleigh 2 | p01430 |
 | Niniues | 2 | raleigh 2 | p00961 |
@@ -3847,6 +3897,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Presbyterians | 2 | prose 2 | note:event:jamaican-calabar-mission:summary |
 | Preseruation | 2 | raleigh 2 | p00083 |
 | Princely | 2 | raleigh 2 | p00029 |
+| Princess | 2 | prose 2 | note:person:queen-ahmose:summary |
 | Princeton | 2 | prose 2 | note:person:samuel-zwemer:summary |
 | Principem | 2 | raleigh 2 | p01166 |
 | Principes | 2 | raleigh 2 | p01492 |
@@ -4127,6 +4178,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Zoroasters | 2 | raleigh 2 | p01296 |
 | Zuzaei | 2 | raleigh 2 | p01057 |
 | Zwemer | 2 | prose 2 | note:event:zwemer-at-princeton:summary |
+| Aamu | 1 | prose 1 | note:person:abisha:summary |
 | Aaronicall | 1 | raleigh 1 | p01769 |
 | Abbaris | 1 | raleigh 1 | p01484 |
 | Abbey | 1 | prose 1 | note:event:westminster-assembly:summary |
@@ -4224,10 +4276,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Agrigentum | 1 | raleigh 1 | p00718 |
 | Ahas | 1 | raleigh 1 | p00457 |
 | Ahashuerosh | 1 | raleigh 1 | p00555 |
+| Ahmose | 1 | prose 1 | note:person:queen-ahmose:summary |
 | Aijalon | 1 | prose 1 | note:event:elon-judges-israel:summary |
 | Aila | 1 | raleigh 1 | p01688 |
 | Ala | 1 | raleigh 1 | p01688 |
 | Alabanders | 1 | raleigh 1 | p00792 |
+| Alalakh | 1 | prose 1 | note:person:idrimi:summary |
 | Alam | 1 | raleigh 1 | p01348 |
 | Alba | 1 | raleigh 1 | p00461 |
 | Albigenses | 1 | prose 1 | note:event:albigensian-crusade:summary |
@@ -4484,6 +4538,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Attila | 1 | prose 1 | note:event:attila-the-hun:summary |
 | Attributes | 1 | raleigh 1 | p00088 |
 | Atturia | 1 | raleigh 1 | p00958 |
+| Avaris | 1 | prose 1 | note:person:kamose:summary |
 | Audiens | 1 | raleigh 1 | p01280 |
 | Auen | 1 | raleigh 1 | p01654 |
 | Auenis | 1 | raleigh 1 | p00949 |
@@ -5299,7 +5354,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Elei | 1 | raleigh 1 | p01258 |
 | Elephant | 1 | raleigh 1 | p01154 |
 | Eleuthoropolis | 1 | raleigh 1 | p01280 |
-| Eliezer | 1 | raleigh 1 | p01361 |
 | Elipha | 1 | raleigh 1 | p01258 |
 | Elis | 1 | raleigh 1 | p01258 |
 | Elisabeth | 1 | prose 1 | note:person:john-the-baptist:description |
@@ -6469,6 +6523,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Necromanciers | 1 | raleigh 1 | p01514 |
 | Neeces | 1 | raleigh 1 | p00015 |
 | Negros | 1 | raleigh 1 | p01336 |
+| Nekheb | 1 | prose 1 | note:person:paheri:summary |
 | Nemeures | 1 | raleigh 1 | p00043 |
 | Nempè | 1 | raleigh 1 | p01475 |
 | Nepos | 1 | raleigh 1 | p01118 |
@@ -6882,7 +6937,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Priene | 1 | prose 1 | note:event:priene-calendar-inscription:summary |
 | Priestes | 1 | raleigh 1 | p01153 |
 | Prime | 1 | raleigh 1 | p01175 |
-| Princess | 1 | prose 1 | note:event:baptism-of-olga:summary |
 | Principalitie | 1 | raleigh 1 | p01665 |
 | Principe | 1 | raleigh 1 | p01407 |
 | Principia | 1 | raleigh 1 | p00057 |

@@ -172,6 +172,78 @@
       "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
       "source_text_id": "hales-new-analysis-1830",
       "note": null
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "430-year period",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Establishing the Anchor Date",
+      "link": "https://biblehub.com/blb/exodus/12.htm#40",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Interval in Exodus 12:40 as he reads Paul and the Septuagint, from the promise to the Exodus. Not converted. He prints 1876 BC."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "1876 BC",
+      "year_am": null,
+      "year_bc_ad": -1876,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Establishing the Anchor Date",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Arrival of Abram in Canaan and Egypt as he prints it. Not a birth year. He identifies Abisha with Abraham."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "19th century BC",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, My Promise to You",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "The century he names before the 1876 BC arrival. Not converted to a year."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "1876 BC",
+      "year_am": null,
+      "year_bc_ad": -1876,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 1, Arrival of the Merchant Prince",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Narrative year of the arrival. Same figure as the introduction. He names the visitor Abisha."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "1876 BC",
+      "year_am": null,
+      "year_bc_ad": -1876,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 1, Finding His Portrait in a Wall Mural",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Mural timing he equates with Abram’s entry. He identifies Abisha with Abram."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "c. 1892–1876 BC",
+      "year_am": null,
+      "year_bc_ad": -1892,
+      "year_bc_ad_end": -1876,
+      "precision": "year-range",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Appendix, Egyptian Inscriptions & Papyri",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Beni Hasan mural date. 1876 BC, his arrival year, is the late end. He identifies Abisha with Abraham."
     }
   ],
   "people": [
@@ -202,7 +274,8 @@
     "jordan-compilation-anno-mundi",
     "morecraft-christian-survey",
     "shuckford-sacred-profane-1819",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {

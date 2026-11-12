@@ -47,6 +47,30 @@
         "source_text_id": "jones-chronology-ot-2026",
         "note": "This row dates Rachel’s death. The same words also date Benjamin’s birth, on benjamin."
       }
+    ],
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 2, What Happened After Joseph?",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Apachnas after Bnon, and Rachel’s name Ben-Oni as the bridge to Bnon. No BC year for either."
+      }
     ]
   },
   "events": [],
@@ -55,7 +79,8 @@
   ],
   "sources": [
     "blb-biblehub",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "dynasty-of-slaves-2026"
   ],
   "related": [
     "joseph",

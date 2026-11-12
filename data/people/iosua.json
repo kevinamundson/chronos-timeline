@@ -48,6 +48,18 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Their Timeline Was Broken",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He spells the name Joshua. Entered on the existing Joshua record. The 1210 BC figure is on the Fall of Jericho, not on this person."
       }
     ],
     "death": [
@@ -114,7 +126,8 @@
   "sources": [
     "raleigh-history-of-the-world-1617",
     "cory-ancient-fragments-1876",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

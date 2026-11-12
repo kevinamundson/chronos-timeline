@@ -75,6 +75,18 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Body intake. His birth, the Worlds yeere. The same sentence gives Terah's death as the yeere of the World 2083, stored on terah. year_bc_ad stays null. This does not change the sort."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 1, Leaving the Land of Pharaoh",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Ishmael and Isaac in the aftermath of the Egyptian visit. No year is printed for either."
       }
     ]
   },
@@ -83,7 +95,8 @@
   "sources": [
     "hales-new-analysis-1830",
     "jones-chronology-ot-2026",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

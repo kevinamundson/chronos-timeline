@@ -56,6 +56,18 @@
         "link": "https://biblicalhorizons.com/1994/07/01/6_07/",
         "note": null,
         "source_text_id": "jordan-bc-6-7"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 5, Maintaining a Biblical Perspective",
+        "link": "https://biblehub.com/blb/numbers/12.htm",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Aaron and Zipporah where Numbers 12 distinguishes the Cushite wife from Zipporah. No year is printed."
       }
     ],
     "death": [
@@ -114,7 +126,8 @@
     "blb-biblehub",
     "ussher-annals-1658",
     "jordan-bc-6-7",
-    "jordan-bc-6-8"
+    "jordan-bc-6-8",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {

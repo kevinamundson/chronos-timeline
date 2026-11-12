@@ -65,6 +65,18 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-7b-t15-ekl:ekl-19-pammes-amenemhat-iii:amenemhat-iii:reign"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "Year 18",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Appendix, Archaeological Reports & Site Data",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Sinai 115, Year 18 of Amenemhat III, as he quotes Petrovich. A regnal year, not a BC year. The caption is not copied."
       }
     ]
   },
@@ -73,7 +85,8 @@
   "sources": [
     "cfah-6",
     "cfah-7a-osf",
-    "cfah-7b-osf"
+    "cfah-7b-osf",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

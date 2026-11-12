@@ -25,13 +25,26 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 5, The “Great Overseer of Soldiers.”",
+        "link": "https://biblehub.com/blb/acts/7.htm#22",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He cites Stephen’s speech, Acts 7:22, on Moses in Egypt. No year is printed for Stephen."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

@@ -1,0 +1,81 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "khnumhotep-ii",
+  "type": "person",
+  "title": "Khnumhotep II",
+  "summary": "Khnumhotep II, governor whose tomb at Beni Hasan holds the mural Scott dates c. 1892–1876 BC.",
+  "description": "Added from the Dynasty of Slaves import. Display only. Scott’s synchronisms are his view. This chronology never sets a sort, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Dynasty of Slaves is display-only and never sets a sort)."
+  },
+  "standby": {
+    "year_bc_ad": -1876,
+    "basis": "source-printed",
+    "source_chronology": "dynasty-of-slaves",
+    "from_record": null,
+    "note": "Standby placement only. BLK SHP Scott, Dynasty of Slaves (2026) prints this BC/AD year on the reign entry (1876 BC). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "1876 BC",
+        "year_am": null,
+        "year_bc_ad": -1876,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 1, Finding His Portrait in a Wall Mural",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Mural timing he equates with Abram’s entry. He identifies Abisha with Abram."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "c. 1892–1876 BC",
+        "year_am": null,
+        "year_bc_ad": -1892,
+        "year_bc_ad_end": -1876,
+        "precision": "year-range",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Appendix, Egyptian Inscriptions & Papyri",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Beni Hasan mural date. 1876 BC, his arrival year, is the late end. He identifies Abisha with Abraham."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "c. 1890 BC",
+        "year_am": null,
+        "year_bc_ad": -1890,
+        "year_bc_ad_end": null,
+        "precision": "approximate",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Appendix, Archaeological Reports & Site Data",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Reign of Senusret II for the Beni Hasan painting. 1890 BC falls inside the mural range c. 1892–1876 BC."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "dynasty-of-slaves-2026"
+  ],
+  "related": [],
+  "free_source_links": []
+}

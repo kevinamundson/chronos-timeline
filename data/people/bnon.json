@@ -37,13 +37,38 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-8-t6-d15:bnon:bnon:reign"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "for a century",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 2, What Happened After Joseph?",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "How long he says the rulers he identifies with Jacob’s family held Avaris under Bnon. A duration, not a BC year."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Discovering the Cast of Characters",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He identifies Bnon, sometimes written Beon, with Benjamin through Ben-Oni. His view. bnon and beon stay separate."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-8-osf"
+    "cfah-8-osf",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

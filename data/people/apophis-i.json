@@ -37,13 +37,38 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-8-t6-d15:apophis-i:apophis-i:reign"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "1560 BC",
+        "year_am": null,
+        "year_bc_ad": -1560,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 3, War for the Nile",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Year he gives for Avaris as the center under the king he spells Apepi. Reused apophis-i. Not an accession, and not apophis-iii."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "1550 BC",
+        "year_am": null,
+        "year_bc_ad": -1550,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 3, A Warrior Pharaoh Wages War",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Year the Hebrew rulers of Avaris felt secure after Seqenenre Tao and Kamose. Not a printed death year for either man."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-8-osf"
+    "cfah-8-osf",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

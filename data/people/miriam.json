@@ -51,6 +51,18 @@
         "citation": null,
         "link": null,
         "note": "No birth year. Ussher §264 says she was the eldest of the three and \"lived 130 years\", which implies about AM 2422, but Ussher does not print that year."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 4, A Good/God Idea",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Miriam at the basket and Paheri as the tutor. No year is printed for either."
       }
     ],
     "death": [
@@ -107,7 +119,8 @@
   "sources": [
     "blb-biblehub",
     "ussher-annals-1658",
-    "jordan-bc-6-8"
+    "jordan-bc-6-8",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {

@@ -28,13 +28,26 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 6, Stranger in a Strange Land",
+        "link": "https://biblehub.com/blb/genesis/25.htm",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He quotes Genesis 25:1–2 and names Keturah’s sons. No year is printed. Existing son records are reused. Zimran and Jokshan had no record."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

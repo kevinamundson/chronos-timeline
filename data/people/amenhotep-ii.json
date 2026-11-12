@@ -37,13 +37,50 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-8-t14-d18:amenhotep-ii:amenhotep-ii:reign"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "1446 BC",
+        "year_am": null,
+        "year_bc_ad": -1446,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Establishing the Anchor Date",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Exodus year he prints. He places it in the reign of Amenhotep II. Not an accession year for that king."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "Year 9",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Epilogue, The Argument from Silence",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Regnal year when he says Amenhotep II’s campaigns stop. Not converted to a BC year."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "Year 9",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Appendix, Egyptian Inscriptions & Papyri",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Memphis Stele, second Asiatic campaign. A regnal year, not a BC year."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-8-osf"
+    "cfah-8-osf",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

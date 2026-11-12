@@ -167,6 +167,18 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Body intake. The years he counts from the Flood to Jacob's birth. Not a yeere of the World. year_am stays null. This does not change the sort. The same sentence already gives the Flood as the yeere of the World 1656 and Jacob's birth as 2169. Those two clauses are the narrative sentences already entered. They are not entered again."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 2, From Slave to King",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He identifies the Hyksos with Jacob’s family. His view. No BC year is printed for Jacob."
       }
     ],
     "death": [
@@ -253,7 +265,8 @@
     "raleigh-history-of-the-world-1617",
     "jordan-bc-6-7",
     "jordan-compilation-anno-mundi",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {
