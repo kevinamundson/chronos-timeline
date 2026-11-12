@@ -9,7 +9,8 @@
 //   1. source-printed: a year_bc_ad a chronology already stores on birth, death,
 //      lifespan, reign (people) or chronologies[] (events). The data field is used
 //      as stored. Anno Mundi, regnal lengths, and Julian Period figures are not
-//      converted. The first hit by chronology sort_priority wins. A tie uses slot
+//      converted. A chronology in a display group (Conventional dating) is skipped.
+//      The first hit by chronology sort_priority wins. A tie uses slot
 //      order birth, death, lifespan, reign, then translated (the data has no
 //      lifespan array; translated is only a fallback), then array order.
 //   2. linked-record: otherwise the sorting_year of a related record, taken as-is:
@@ -41,7 +42,8 @@ export function hasPrintedYear(doc, source, year) {
 
 function bestPrinted(doc, ctx) {
   // jones-2019 is a display comparison. It never places a record.
-  const cands = printedEntries(doc).filter((x) => Number.isInteger(x.e.year_bc_ad) && x.e.year_bc_ad !== 0 && x.e.source !== 'jones-2019');
+  // A chronology in a display group (Conventional dating, Kevin 2026-11-12) never places a record either.
+  const cands = printedEntries(doc).filter((x) => Number.isInteger(x.e.year_bc_ad) && x.e.year_bc_ad !== 0 && x.e.source !== 'jones-2019' && !ctx.chronById[x.e.source]?.display_group);
   if (!cands.length) return null;
   cands.sort((a, b) => {
     const pa = ctx.priority[a.e.source] ?? 99;

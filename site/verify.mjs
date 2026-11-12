@@ -2499,6 +2499,58 @@ for (const [path, shot, sel] of [
   await calculatedUi('chromium', browser);
   await calculatedUi('webkit', webkit);
 }
+// Conventional dating (Kevin, 2026-11-12): display only. Its dates are absent from the home timeline and shown last,
+// in a red block with the note, at the bottom of the dates on person and event pages. Chromium and WebKit.
+{
+  const chronDoc = JSON.parse(readFileSync(join(here, '../data/chronologies.json'), 'utf8'));
+  const conv = (chronDoc.display_groups || []).find((g) => g.id === 'conventional');
+  const convIds = new Set(conv?.chronologies || []);
+  const NOTE = 'These views are based on conventional dating practices.';
+  check('conventional: group exists and holds dynasty-of-slaves', !!conv && convIds.has('dynasty-of-slaves') && conv.note.startsWith(NOTE));
+  const recs = {};
+  for (const dir of ['people', 'events']) for (const id of ['moses', 'exodus', 'merneptah', 'ramesses-ii', 'abisha']) {
+    try { recs[id] = JSON.parse(readFileSync(join(here, `../data/${dir}/${id}.json`), 'utf8')); } catch {}
+  }
+  const red = (c) => { const m = /rgba?\((\d+),\s*(\d+),\s*(\d+)/.exec(c || ''); return !!m && +m[1] > +m[2] + 60 && +m[1] > +m[3] + 60; };
+  for (const [engine, launcher] of [['chromium', browser], ['webkit', null]]) {
+    const b = launcher || stubIiif(await webkit.launch());
+    const ctxOpen = async (path, scheme = 'light') => {
+      const ctx = await b.newContext({ viewport: { width: 1280, height: 900 }, colorScheme: scheme });
+      const page = await ctx.newPage();
+      const errors = [];
+      page.on('pageerror', (e) => errors.push(String(e)));
+      const resp = await page.goto(BASE + path, { waitUntil: 'load', timeout: 30000 });
+      return { ctx, page, errors, status: resp.status() };
+    };
+    // Home: no item is placed by a conventional date, and no conventional source is named.
+    const home = await ctxOpen('/');
+    const homeData = await home.page.evaluate(() => ({ items: JSON.parse(document.getElementById('tl-data').textContent), text: document.body.innerText }));
+    const items = Array.isArray(homeData.items) ? homeData.items : (homeData.items.items || []);
+    const exiled = items.filter((i) => ['merneptah', 'ramesses-ii', 'abisha'].includes(i.id));
+    const moved = items.filter((i) => recs[i.id] && i.y != null && !i.standby && i.y !== recs[i.id].sorting_year);
+    const named = /BLK SHP Scott|Dynasty of Slaves/.test(`${homeData.text} ${JSON.stringify(items)}`);
+    check(`${engine} conventional: home timeline has no conventional date`, home.status === 200 && exiled.length === 0 && moved.length === 0 && !named, JSON.stringify({ exiled: exiled.map((i) => i.id), moved: moved.map((i) => i.id), named }));
+    await home.ctx.close();
+    for (const [path, scheme] of [['/people/moses/', 'light'], ['/people/moses/', 'dark'], ['/events/exodus/', 'light']]) {
+      const o = await ctxOpen(path, scheme);
+      const info = await o.page.evaluate(() => {
+        const block = document.getElementById('conventional-dating');
+        if (!block) return { block: false };
+        const cards = [...document.querySelectorAll('main section.card, article section.card')];
+        const dateCards = cards.filter((c) => ['birth', 'death', 'translated', 'reign'].includes(c.id) || /^Chronologies$/.test(c.querySelector('h2')?.textContent || ''));
+        const after = dateCards.every((c) => c.compareDocumentPosition(block) & Node.DOCUMENT_POSITION_FOLLOWING);
+        const convRows = block.querySelectorAll('tr[data-author="dynasty-of-slaves"]').length;
+        const mainRows = dateCards.reduce((n, c) => n + c.querySelectorAll('tr[data-author="dynasty-of-slaves"]').length, 0);
+        const cs = getComputedStyle(block);
+        return { block: true, after, convRows, mainRows, note: block.querySelector('.conv-note')?.textContent || '', heading: block.querySelector('h2')?.textContent || '', border: cs.borderLeftColor, borderW: parseFloat(cs.borderLeftWidth), bg: cs.backgroundColor, h2: getComputedStyle(block.querySelector('h2')).color };
+      });
+      const ok = o.status === 200 && info.block && info.after && info.convRows > 0 && info.mainRows === 0 && info.note.startsWith(NOTE) && /Conventional dating/.test(info.heading) && red(info.border) && info.borderW >= 4 && red(info.h2) && o.errors.length === 0;
+      check(`${engine} conventional: ${path} (${scheme}) shows dynasty-of-slaves only in the red block at the bottom of the dates`, ok, JSON.stringify({ status: o.status, ...info, errors: o.errors.slice(0, 3) }));
+      await o.ctx.close();
+    }
+    if (!launcher) await b.close();
+  }
+}
 await browser.close();
 srv.close();
 console.log(results.join('\n'));

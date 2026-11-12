@@ -572,6 +572,45 @@ let raleighDerivedSummary = '';
     if (doc.free_source_links?.some((l) => l.source_id === DOS_SRC)) err(rel, 'private copy dynasty-of-slaves-2026 may not be listed in free_source_links');
   }
 }
+// Conventional dating display group (Kevin, 2026-11-12): display only. It never sets the sort, a provisional year,
+// or a standby placement, and is not on the home timeline. Its dates show last, in their own block, on record pages.
+{
+  const CJ = 'data/chronologies.json';
+  const groups = chronDoc.display_groups || [];
+  const conv = groups.find((g) => g.id === 'conventional');
+  const CONV_NOTE = 'These views are based on conventional dating practices.';
+  if (!conv) err(CJ, 'display_groups must include the conventional group');
+  else {
+    if (conv.name !== 'Conventional dating') err(CJ, 'conventional group name must be "Conventional dating"');
+    if (conv.sets_sort !== false || conv.on_home_timeline !== false) err(CJ, 'conventional group must have sets_sort false and on_home_timeline false');
+    if (!(conv.note || '').startsWith(CONV_NOTE)) err(CJ, `conventional group note must begin "${CONV_NOTE}"`);
+    if (!conv.chronologies.includes('dynasty-of-slaves')) err(CJ, 'conventional group must include dynasty-of-slaves');
+  }
+  const groupIds = new Set(groups.map((g) => g.id));
+  if (groupIds.size !== groups.length) err(CJ, 'duplicate display group id');
+  const members = new Set();
+  for (const g of groups) {
+    for (const id of g.chronologies) {
+      const c = chronDoc.chronologies.find((x) => x.id === id);
+      if (!c) { err(CJ, `display group ${g.id}: unknown chronology ${id}`); continue; }
+      if (c.display_group !== g.id) err(CJ, `${id} must have display_group "${g.id}"`);
+      if (c.primary) err(CJ, `${id} is in display group ${g.id} and may not be primary`);
+      members.add(id);
+    }
+  }
+  for (const c of chronDoc.chronologies) {
+    if (c.display_group && !groupIds.has(c.display_group)) err(CJ, `${c.id}: unknown display_group ${c.display_group}`);
+    if (c.display_group && !members.has(c.id)) err(CJ, `${c.id}: display_group ${c.display_group} does not list it`);
+  }
+  if ((chronDoc.sorting_rule?.tiers || []).some((t) => members.has(t.chronology) || groupIds.has(t.tier))) err(CJ, 'a display-group chronology may not be a sort tier');
+  for (const { rel, doc } of sortingTargets) {
+    const b = doc.sorting_basis || {};
+    if (members.has(b.chronology) || members.has(b.derived_from)) err(rel, `${b.chronology || b.derived_from} is in the Conventional dating group and may never set the sort`);
+  }
+  for (const { rel, doc } of Object.values(records)) {
+    if (members.has(doc.standby?.source_chronology)) err(rel, `${doc.standby.source_chronology} is in the Conventional dating group and may never set a standby placement`);
+  }
+}
 for (const { rel, doc } of sortingTargets) if (['jordan', 'jordan-compilation'].some((j) => doc.sorting_basis?.chronology === j || doc.sorting_basis?.derived_from === j)) err(rel, 'sorting_basis may not use a secondary Jordan chronology');
 
 // Masoretic Genesis 5 cross-check (KJV/MT figures: [id, age at named son, lifespan])

@@ -2,7 +2,7 @@
   "$schema": "../schema/chronology.schema.json",
   "primary_sort_chronology": "cfah",
   "sorting_rule": {
-    "description": "sorting_year = the BC/AD year of the first tier that has a non-null year_bc_ad. Events use chronologies[]. People use dates.birth[] when a tier 1–4 birth year is stored. A person who has a dates.reign slot and no tier-ranked birth year uses the reign-start year (year_bc_ad already stored on dates.reign); sorting_basis.slot is then reign_start. Within ussher-jones, for that reign-start choice, the 23rd edition (2026) governs over an older Jones edition when both print a year. The first matching entry within a tier is used otherwise; for split years (2348/2347) the start year is used. A year is not invented. Tier \"calculated\" sits below provisional: it is arithmetic on figures already printed, stored on the person in calculated, and it sets sorting_year only when no tier 1–4 year and no provisional year exist. It is not written into year_bc_ad. Kevin, 2026-11-08. Secondary display chronologies (bible, masoretic-genealogy, jordan, josephus, Clonmacnoise, Raleigh, Herodotus, Cory, Shuckford, Hales, jones-2019, Dynasty of Slaves (dynasty-of-slaves), and CFAH paper_text) never set sorting_year. Exception, pending owner decision: where no tier gives a year, the Generations curriculum supplies a PROVISIONAL sort (tier \"provisional\"; see A8 in docs/OPEN-QUESTIONS-FOR-KEVIN.md). Kevin's ruling, 2026-10-28 (open question M3).",
+    "description": "sorting_year = the BC/AD year of the first tier that has a non-null year_bc_ad. Events use chronologies[]. People use dates.birth[] when a tier 1–4 birth year is stored. A person who has a dates.reign slot and no tier-ranked birth year uses the reign-start year (year_bc_ad already stored on dates.reign); sorting_basis.slot is then reign_start. Within ussher-jones, for that reign-start choice, the 23rd edition (2026) governs over an older Jones edition when both print a year. The first matching entry within a tier is used otherwise; for split years (2348/2347) the start year is used. A year is not invented. Tier \"calculated\" sits below provisional: it is arithmetic on figures already printed, stored on the person in calculated, and it sets sorting_year only when no tier 1–4 year and no provisional year exist. It is not written into year_bc_ad. Kevin, 2026-11-08. Secondary display chronologies (bible, masoretic-genealogy, jordan, josephus, Clonmacnoise, Raleigh, Herodotus, Cory, Shuckford, Hales, jones-2019, Dynasty of Slaves (dynasty-of-slaves), and CFAH paper_text) never set sorting_year. The Conventional dating display group (display_groups: conventional, which holds dynasty-of-slaves; Kevin, 2026-11-12) never sets sorting_year, a provisional year, or a standby placement, and is not shown on the home timeline. Exception, pending owner decision: where no tier gives a year, the Generations curriculum supplies a PROVISIONAL sort (tier \"provisional\"; see A8 in docs/OPEN-QUESTIONS-FOR-KEVIN.md). Kevin's ruling, 2026-10-28 (open question M3).",
     "tiers": [
       {
         "rank": 1,
@@ -33,6 +33,19 @@
     ],
     "fallbacks": "People with no tier birth year and a dates.reign slot: sorting_year is the tier 1–4 reign-start year (slot reign_start) before any provisional fallback. If no tier yields a year: tier \"derived\" (sorting_year copied from the record named in derived_from; events only by convention) or tier \"none\" (sorting_year null; people only). Tier \"provisional\" (records with no tier 1-4 year only): sorting_year = the first dated generations entry (events: chronologies[]; people: dates.birth[]); badged as provisional. Tier \"calculated\" (people only, below provisional): one calculated year from printed figures, birth then reign start then death then translation, and only when birth has no printed year_bc_ad and that slot has none. A printed or provisional year replaces it. The calculated year is not written into year_bc_ad."
   },
+  "display_groups": [
+    {
+      "id": "conventional",
+      "name": "Conventional dating",
+      "sets_sort": false,
+      "on_home_timeline": false,
+      "note": "These views are based on conventional dating practices. They are shown for reference and do not set the timeline’s order.",
+      "description": "Kevin, 2026-11-12. A display group, not a sort tier. Its chronologies follow conventional dating practices. Their dates never set or override sorting_year, never supply a provisional or standby placement, and never appear on the home timeline. On person and event pages they are shown last, in their own red block at the bottom of the dates, with the note above.",
+      "chronologies": [
+        "dynasty-of-slaves"
+      ]
+    }
+  ],
   "chronologies": [
     {
       "id": "cfah",
@@ -696,11 +709,12 @@
       "abbreviation": "Dynasty of Slaves",
       "primary": false,
       "sort_priority": 18,
+      "display_group": "conventional",
       "status": "partial",
       "authors": [
         "BLK SHP Scott"
       ],
-      "description": "SECONDARY DISPLAY CHRONOLOGY. It is never a sort tier and never sets or overrides a sort year, including on records this import creates. It is not a provisional tier. Each entry is a date BLK SHP Scott prints in Dynasty of Slaves (BLK SHP Publishing, 2026), cited by chapter and section because the edition has no page numbers. The book is copyrighted: only dates, citations, names, and short notes in our own words are kept. His archaeological synchronisms are his view and do not change CFAH, Ussher–Jones, or Ussher dates. Agreements and conflicts are listed in data/dynasty-of-slaves-dates-extract.md.",
+      "description": "SECONDARY DISPLAY CHRONOLOGY in the Conventional dating group (Kevin, 2026-11-12). These views are based on conventional dating practices. It is never a sort tier and never sets or overrides a sort year, including on records this import creates. It is not a provisional tier, it never supplies a standby placement, and its dates are not shown on the home timeline. On person and event pages its dates appear last, in the red Conventional dating block at the bottom of the dates. Each entry is a date BLK SHP Scott prints in Dynasty of Slaves (BLK SHP Publishing, 2026), cited by chapter and section because the edition has no page numbers. The book is copyrighted: only dates, citations, names, and short notes in our own words are kept. His archaeological synchronisms are his view and do not change CFAH, Ussher–Jones, or Ussher dates. Agreements and conflicts are listed in data/dynasty-of-slaves-dates-extract.md.",
       "year_conventions": "year_bc_ad is a BC year he prints (negative; no year 0). A range he prints uses year_bc_ad and year_bc_ad_end. Around, circa, and roughly are precision approximate. year_am stays null. A regnal year, a century, or an interval (215, 430, 480, 300, forty, four hundred) is not converted to a BC year. A result he prints, such as 1446 BC or 1876 BC, is stored as his figure.",
       "references": [
         "dynasty-of-slaves-2026"

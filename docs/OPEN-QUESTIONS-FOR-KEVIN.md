@@ -1766,13 +1766,11 @@ Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record o
   2. Name an existing event or place that should receive one of them, or approve a new record that already has a tier 1–4 year.
 - **Recommendation:** option 1. A site with no sort year stays off the timeline.
 
-### O4. This chronology is not a provisional tier
+### O4. This chronology is not a provisional tier — ruled 2026-11-12
 
-- **Why it matters:** People this import creates have `sorting_year` null. Where he prints a year, standby can show it. Standby does not sort the timeline. Morecraft can sort a record it created. This source cannot.
-- **Options:**
-  1. Keep `dynasty-of-slaves` display only, as now.
-  2. Approve a provisional tier for records that only this book dates, and name which records.
-- **Recommendation:** option 1. His Egyptian synchronisms are his view. A provisional sort would place them on the timeline beside CFAH.
+- **Ruling (Kevin, 2026-11-12, see O13):** “Create a Conventional dating tier (add BLK SHP Scott). Do not include the dates in the front page timeline. Do not sort by these dates.” This answers O4 with option 1: `dynasty-of-slaves` stays display only and is never a provisional tier.
+- **Applied:** It also no longer gives a standby placement. The five people who had a standby year printed only by this book (`abisha`, `amenmose`, `khnumhotep-ii`, `merneptah`, `ramesses-ii`) are now fully undated on the timeline. Their dates still show on their pages, in the Conventional dating block.
+- **Earlier question, kept for the record:** People this import creates have `sorting_year` null. Where he printed a year, standby could show it. Option 1 was to keep `dynasty-of-slaves` display only; option 2 was a provisional tier for records only this book dates.
 
 ### O5. Deities were not made people
 
@@ -1851,3 +1849,13 @@ Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record o
   1. Leave Paul, Ezekiel, and Pilate without a new row, as now.
   2. Add a no-year note on one of those existing records, and say which.
 - **Recommendation:** option 1. They have no dated role in the Egypt narrative.
+
+### O13. Conventional dating group — ruled 2026-11-12
+
+- **Ruling (Kevin, 2026-11-12):** “Create a Conventional dating tier (add BLK SHP Scott). Do not include the dates in the front page timeline. Do not sort by these dates. add a note that these views are based on conventional dating practices. Use red color scheme to distinguish it at the bottom of the Dates on person and people pages.”
+- **Applied:**
+  - `data/chronologies.json` has a display group `conventional`, named "Conventional dating", holding `dynasty-of-slaves`. It is not one of the sort tiers (CFAH anchor, CFAH-1 Table 1, Ussher–Jones, Ussher), and it is not provisional, calculated, or standby. No `sorting_year` changed.
+  - Its dates are not on the home timeline. They do not set a standby placement, so no record is placed there by them.
+  - On person and event pages they are left out of the main date tables and the disagreement flags. They appear last, in a red block headed "Conventional dating", with the note: “These views are based on conventional dating practices. They are shown for reference and do not set the timeline’s order.”
+  - The Chronologies page marks the `dynasty-of-slaves` entry the same way.
+- **Open point:** "tier" was built as a display group, not a fifth sort tier, because these dates must not sort. Say if you want any other source moved into this group.

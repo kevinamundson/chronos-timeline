@@ -65,6 +65,12 @@ const kingListsOf = (id) => kingDoc.lists.filter((l) => l.entries.some((e) => e.
 const byId = {};
 for (const r of [...events, ...people, ...locations, ...maps]) byId[r.id] = r;
 const chronById = Object.fromEntries(chronologies.map((c) => [c.id, c]));
+// Conventional dating (Kevin, 2026-11-12): a display group, never a sort tier. Its dates are kept out of the
+// main date tables and the home timeline, and shown last, in a red block at the bottom of a record's dates.
+const convGroup = (chronFile.display_groups || []).find((g) => g.id === 'conventional') || null;
+const convIds = new Set(convGroup?.chronologies || []);
+const isConv = (e) => convIds.has(e?.source);
+const notConv = (list) => (list || []).filter((e) => !isConv(e));
 const sourceById = Object.fromEntries(sources.map((s) => [s.id, s]));
 // A source superseded for links (e.g. KJV/Gutenberg → BLB on BibleHub) is shown as its replacement wherever it is linked.
 const linkSrc = (id) => { const s = sourceById[id]; return s?.superseded_for_links_by ? sourceById[s.superseded_for_links_by] || s : s; };
@@ -247,6 +253,7 @@ const chronName = (e, opts = {}) => {
   if (e.source === 'jordan-compilation') return 'Jordan (compilation) <span class="tag tag-sec" title="Unnamed compiler\'s charts of Jordan\'s system; secondary display only">secondary</span>';
   if (e.source === 'jones-2019') return 'Ussher–Jones <div class="small muted edition">21st ed. (2019)</div>';
   const c = chronById[e.source];
+  if (isConv(e) && c) return `${esc(c.authors?.length ? c.authors.join(', ') : c.name)} <span class="tag tag-conv" title="Conventional dating: display only; never sets the sort">conventional</span>${c.abbreviation ? `<div class="small muted">${esc(c.abbreviation)}</div>` : ''}`;
   return esc(c ? c.abbreviation || c.name : e.source);
 };
 const TIERS = {
@@ -497,6 +504,17 @@ function disagreements(entries, sortYear) {
   if (Object.keys(bc).length > 1) out.push(`BC years differ: ${fmt(bc, (y) => yearLabel(y))}.`);
   if (Object.keys(am).length > 1) out.push(`Anno Mundi figures differ: ${fmt(am, (y) => `AM ${y}`)}.`);
   return out;
+}
+
+// The Conventional dating block: last in a record's dates, red, with the group's note. sections = [{ label, entries }].
+function conventionalBlock(title, sections) {
+  const list = sections.filter((x) => x.entries?.length);
+  if (!convGroup || !list.length) return '';
+  const tables = list.map((x) => `${x.label ? `<h3 class="conv-slot">${esc(x.label)}</h3>` : ''}${chronTable(x.entries, { sortYear: null, basis: null, caption: `${x.label ? `${x.label} of ` : 'Dates for '}${displaySpelling(title)}, conventional dating` })}`).join('');
+  return `<section class="card conv-dating" id="conventional-dating" aria-labelledby="conv-h" data-group="conventional">
+<h2 id="conv-h">${esc(convGroup.name)} <span class="conv-label">display only</span></h2>
+<p class="conv-note">${esc(convGroup.note)}</p>
+${tables}</section>`;
 }
 
 function flagsSection(rec, entries) {
@@ -985,8 +1003,9 @@ for (const e of events) {
 ${e.description ? `<section class="card"><h2>Description</h2><p>${shown(e.description)}</p></section>` : ''}
 ${raleighAccount(e.id)}
 ${e.scripture_refs?.length ? `<section class="card"><h2>Scripture</h2>${scriptureList(e.scripture_refs)}</section>` : ''}
-<section class="card"><h2>Chronologies</h2>${chronTable(e.chronologies, { sortYear: e.sorting_year, basis: e.sorting_basis, caption: `Dates for ${displaySpelling(e.title)}, CFAH first` })}</section>
-${flagsSection(e, e.chronologies)}
+<section class="card"><h2>Chronologies</h2>${notConv(e.chronologies).length ? chronTable(notConv(e.chronologies), { sortYear: e.sorting_year, basis: e.sorting_basis, caption: `Dates for ${displaySpelling(e.title)}, CFAH first` }) : '<p class="muted">No date outside the Conventional dating group.</p>'}</section>
+${flagsSection(e, notConv(e.chronologies))}
+${conventionalBlock(e.title, [{ label: '', entries: e.chronologies.filter(isConv) }])}
 ${showsItalicDerived(e.chronologies) ? italicsNote() : ''}
 <div class="grid2">${otherPeopleSection(e)}${linkList(e.locations, 'Places')}</div>
 ${mapThumbs(e.maps)}
@@ -1390,6 +1409,8 @@ function familySection(p) {
 // People
 for (const p of people) {
   const d = p.dates || {};
+  // Main date tables leave out the Conventional dating group; it is shown last, in its own block.
+  const dm = Object.fromEntries(Object.entries(d).map(([k, v]) => [k, Array.isArray(v) ? notConv(v) : v]));
   const sf = p.scripture_facts;
   const facts = sf ? `<section class="card"><h2>Scripture facts</h2><dl class="facts">
 ${sf.age_at_named_son != null ? `<div><dt>Age at son's birth</dt><dd>${esc(sf.age_at_named_son)}${sf.named_son ? ` (${link(sf.named_son)})` : ''}</dd></div>` : ''}
@@ -1397,17 +1418,18 @@ ${sf.lifespan_years != null ? `<div><dt>Lifespan</dt><dd>${esc(sf.lifespan_years
 </dl>${scriptureList(sf.refs)}</section>` : '';
   const basisSlot = p.sorting_basis?.slot === 'reign_start' ? 'reign' : (p.sorting_basis?.slot || 'birth');
   const calcSlotKey = (slot) => (slot === 'reign_start' ? 'reign' : slot);
-  const printedSlot = (k) => (d[k] || []).some((e) => e.year_bc_ad != null);
+  const printedSlot = (k) => (dm[k] || []).some((e) => e.year_bc_ad != null);
   const calcLines = (k) => (p.calculated || []).filter((c) => calcSlotKey(c.slot) === k && !printedSlot(k)).map((c) => {
     const verb = c.slot === 'death' ? 'died' : c.slot === 'translated' ? 'translated' : c.slot === 'reign_start' ? 'reign start' : 'born';
     return `<p class="calc-line"><abbr title="${esc(c.arithmetic)}">calc.</abbr> ${esc(verb)} ${esc(yearLabel(c.year_bc_ad))}. <span class="small muted">${esc(c.arithmetic)}</span></p>`;
   }).join('');
-  const tables = ['birth', 'death', 'translated', 'reign'].filter((k) => d[k]?.length || calcLines(k)).map((k) => {
+  const tables = ['birth', 'death', 'translated', 'reign'].filter((k) => dm[k]?.length || calcLines(k)).map((k) => {
     const sortsHere = p.sorting_basis?.tier !== 'calculated' && k === basisSlot;
-    const table = d[k]?.length ? chronTable(d[k], { sortYear: sortsHere ? p.sorting_year : null, basis: sortsHere ? p.sorting_basis : null, caption: `${k} of ${displaySpelling(p.title)}, CFAH first` }) : '';
-    const flags = d[k]?.length ? flagsSection({ sorting_year: null }, d[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"') : '';
+    const table = dm[k]?.length ? chronTable(dm[k], { sortYear: sortsHere ? p.sorting_year : null, basis: sortsHere ? p.sorting_basis : null, caption: `${k} of ${displaySpelling(p.title)}, CFAH first` }) : '';
+    const flags = dm[k]?.length ? flagsSection({ sorting_year: null }, dm[k]).replace('id="flags-h"', `id="flags-${k}"`).replace('aria-labelledby="flags-h"', `aria-labelledby="flags-${k}"`).replace('<h2', '<h3').replace('</h2>', '</h3>').replace('class="card flags-card"', 'class="flags-inline"') : '';
     return `<section class="card" id="${k}"><h2>${k[0].toUpperCase() + k.slice(1)}</h2>${table}${calcLines(k)}${flags}</section>`;
   }).join('\n');
+  const convDates = conventionalBlock(p.title, ['birth', 'death', 'translated', 'reign'].map((k) => ({ label: k[0].toUpperCase() + k.slice(1), entries: (d[k] || []).filter(isConv) })));
   const evs = [...new Set([...(p.events || []), ...eventsWith(p.id)])];
   const kls = kingListsOf(p.id);
   const kingCard = p.dynasty || kls.length ? `<section class="card" id="king-lists"><h2>Dynasty and king lists</h2>${p.dynasty ? `<p>Dynasty: ${esc(p.dynasty)}</p>` : ''}${kls.length ? `<p>Listed in: ${kls.map((l) => `<a href="/king-lists/#${esc(l.id)}">${esc(l.title)}</a>`).join('; ')}</p>` : ''}</section>` : '';
@@ -1420,6 +1442,7 @@ ${familySection(p)}
 ${facts}
 ${personTimelineSection(p)}
 ${tables}
+${convDates}
 ${(p.open_questions || []).length ? flagsSection({ open_questions: p.open_questions }, null) : ''}
 ${(showsItalicDerived(Object.values(d).flat()) || (personTimelines[p.id].items || []).some((it) => (it.raleighHtml || '').includes('<em>'))) ? italicsNote() : ''}
 ${linkList(evs, 'Events')}
@@ -1526,7 +1549,8 @@ ${sourcesSection(m)}</article>`;
 <section class="card"><h2>How the timeline is sorted</h2><p>${esc(rule.description)}</p>
 <ol class="tiers inset-list">${rule.tiers.map((t) => { const cls = ['t1', 't2', 't3', 't4'][t.rank - 1]; return `<li><span class="swatch tier-${cls}" aria-hidden="true"></span><span class="inset-copy"><span class="tier tier-${cls}">${esc(TIERS[t.tier]?.label || t.tier)}</span><span class="muted small">${esc(t.select)}</span></span></li>`; }).join('')}</ol>
 <p class="small muted">${esc(rule.fallbacks)}</p>${kingDoc.lists.length ? `<p><a href="/king-lists/">CFAH king lists and dynasty tables</a></p>` : ''}</section>
-${[...chronologies].sort((a, b) => a.sort_priority - b.sort_priority).map((c) => `<section class="card" id="${esc(c.id)}"><h2>${esc(c.name)}${c.primary ? ' <span class="tag tag-t1">primary</span>' : ''}</h2>
+${[...chronologies].sort((a, b) => a.sort_priority - b.sort_priority).map((c) => `<section class="card${convIds.has(c.id) ? ' conv-dating' : ''}" id="${esc(c.id)}"${convIds.has(c.id) ? ' data-group="conventional"' : ''}><h2>${esc(c.name)}${c.primary ? ' <span class="tag tag-t1">primary</span>' : ''}</h2>
+${convIds.has(c.id) ? `<p><span class="conv-label">${esc(convGroup.name)}</span></p><p class="conv-note">${esc(convGroup.note)}</p>` : ''}
 ${c.id === 'raleigh-history-of-the-world' ? '<p><a href="/chronologies/raleigh-chronological-table/">A Chronological Table</a></p>' : ''}
 ${c.authors?.length ? `<p class="muted">${esc(c.authors.join(', '))}</p>` : ''}<p>${shown(c.description)}</p>
 ${c.year_conventions ? `<p class="small muted">${esc(c.year_conventions)}</p>` : ''}

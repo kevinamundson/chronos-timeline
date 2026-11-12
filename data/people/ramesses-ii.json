@@ -12,13 +12,6 @@
     "chronology": "cfah",
     "note": "No tier gives a birth year (Dynasty of Slaves is display-only and never sets a sort)."
   },
-  "standby": {
-    "year_bc_ad": -1250,
-    "basis": "source-printed",
-    "source_chronology": "dynasty-of-slaves",
-    "from_record": null,
-    "note": "Standby placement only. BLK SHP Scott, Dynasty of Slaves (2026) prints this BC/AD year on the reign entry (around 1250 BC). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
-  },
   "father": null,
   "children": [],
   "dates": {
