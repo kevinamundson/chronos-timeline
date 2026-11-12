@@ -1671,17 +1671,84 @@ Pass 8 read Book II, Part I, Chapter IV, and stopped at the end of that chapter.
   2. Name an existing event that should receive one of them.
 - **Recommendation:** option 1. A new event cannot take a sort year from Raleigh.
 
+Pass 9 read Book II, Part I, Chapter V, and stopped at the end of that chapter. The quotes are in `data/raleigh-body-extract.md`. N1 through N50 stay open.
+
+### N51. The spaced yeere of the World 25 54
+
+- **Why it matters:** Book II, Part I, Chapter V, §. IX, sig. 206a–206b, prints “which happened in the yeere of the World 25 54”. The space is in the 1617 XML. The figures were not joined. The chronological table already stores “The Last yeere of Moses.” at World 2553, and that note already quotes this spaced sentence and says it is not entered as a year. Joshua’s table start at 2554 is a different row. No `year_am` was stored. No calculated sort was written. `moses` stays −1571.
+- **Options:**
+  1. Leave the spaced figure unentered, as now.
+  2. Store it, and say which record, which slot, and whether `year_am` is 2554 or null.
+- **Recommendation:** option 1. The space is printed. The table year already stored for the last yeere of Moses is 2553.
+
+### N52. Figures in this chapter that have no event
+
+- **Why it matters:** A new event cannot take a sort year from Raleigh.
+  - The Passover “on the foureteenth day of the second moneth of the second yeere”, and “on the 20. day of the same”, are one Passover sentence on `moses`. The 20th day is not stored apart. No second-year departure event was made.
+  - The quails “about the 23. day of the same Moneth” and “to the 24. day of the third moneth” were not stored. No quail event was made.
+  - “which continued vpon her seuen daies” is the leprosy, on `miriam`. Her death was not given an event.
+  - Korah, Dathan, and Abiram, the 250 Captaines, and “14700. of their partie” have person records. No rebellion event was made.
+  - The refusal at Kadesh-barnea, and “there were consumed 38. yeeres”, are on `moses` and on `wilderness-wanderings`. The sort stays −1490. No separate refusal event was made. `battle-of-kadesh` is the Egyptian battle. It was not attached.
+  - “Aaron died in the first day of the fifth Moneth of the fortieth yeere” is on `aaron`. No death event was made. The sort stays −1574.
+  - “in the first Moneth of the fortieth yeere after they left Aegypt” is on `return-to-kadesh`. The sort stays −1452.
+  - The brazen serpent was not made an event. `the-fall` was not attached.
+  - Og of Bashan, his 60 cities, and the war at Edrei have no event. Sehon’s war is on the existing event `sihon-of-heshbon-conquered`.
+  - The war against the five Midianite dukes, the 12000, and the plague of 24000 at Beth-peor have no event. `gideon-defeats-midian` and `midianite-oppression` were not attached. The same paragraph says Phineas slew the five princes and that they were “slaine by Eleazar”. Both men are attached, as printed.
+  - Moses’s death and burial, and the spaced World year in N51, were not made an event. The retrospect in §. X is on `moses-birth`, `moses-flees-to-midian`, `burning-bush`, and `exodus`.
+  - “60 1730” at the third numbering was not joined.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them.
+- **Recommendation:** option 1. A new event cannot take a sort year from Raleigh.
+
+### N53. Names kept apart or folded in this chapter
+
+- **Why it matters:** These Chapter V spellings were folded onto a record that already existed, or given a new record because another record shares the letters.
+  - “yong Adad”, who fled from Ioab into Egypt, is on `hadad`. The form Adad was added. `adad-nadin-shumi` was left alone.
+  - Cambyses in this chapter is on `cambyses`. The sort stays −531. `cambyses-ii` was left alone.
+  - Iair the sonne of Manasse is `iair-son-of-manasse`, titled Iair. The judge stays `jair`. The title unlinks the token Iair (12 occurrences in the name-link review).
+  - Iehu the sonne of Hanani is `jehu-son-of-hanani`, titled Iehu. Hanani is the father named in that phrase. No other Hanani was made. The king stays `jehu`. The title unlinks the token Iehu (7 occurrences).
+  - Zimri, a prince of the Simconites, is `zimri-of-simeon`, titled Zimri. `zimri` and `zimri-lim` were left alone. The title unlinks the token Zimri (2 occurrences).
+  - Zippor, the father of Balac, is `zippor`. `zipporah` was left alone.
+  - The prophet Amos is `amos`. Passages p00949, p01057, p01317, p01344, p01428, and p01875 are on that record. p01317 and p01428 also stay on `amos-d18`. They were not removed. The two titles Amos unlink the token Amos (17 occurrences).
+  - “Miriam or Mary” is on `miriam`. No Mary form was added.
+  - Schon and Sihon are on `sehon`, with Sehon. VAHEBVM is on `vaheb`. Nathaniel is on `nethaneel`, with Nethaneel. Naashon is on `naason`, with Naason.
+  - Eliasaph is one record for the prince of Gad and the commander on the west side of the camp.
+  - Ieedo the Seer (2 Chronicles 9:29, as Raleigh cites it) is `ieedo`. Iddo (2 Chronicles 12:15, as Raleigh cites it) is `iddo`. They were not merged.
+  - “sonnes of Korah” stays on `korah`, the mutineer. It was not moved to `kohath`.
+  - Manasse the king, “concerning Manasse” in the book of Chozai, is on `manasses` (p01897). Manasse son of Joseph is `manasseh`, including the new link at p01603, “halfe tribe of Manasse” in Book II, Chapter I, and this chapter’s regiment and half-tribe sentences.
+  - Rabbi Salomon is on `rab-solomon`. p00912, the Book I sentence, stays on `solomon` and is also on `rab-solomon`. p01896 is this chapter.
+  - “Balac Peor” is on `balak`. Peor was not made a person. The form Balac Peor was kept.
+  - Theodoret and Theodoretus are one record, `theodoretus`. Book I “Theodoret” is on that record with this chapter’s “Theodoretus”.
+  - Geshurites, in the camp order, was left as printed. It was not corrected to Gershon and was not made a person. “slaine by Eleazar” was left beside Phineas.
+  - Emoreus and Amoreus were not made a person. Moses calls the Basanites Amorites.
+- **Options:**
+  1. Leave these folds and these separate records, as now.
+  2. Name a spelling that should be a second person, or name the passages that should move. In particular, say whether p01317 and p01428 should leave `amos-d18`.
+- **Recommendation:** option 1. A silent merge would attach a different man. p01317 and p01428 can leave `amos-d18` if you want the Cory king to stop carrying the prophet. This pass only added the prophet’s passages. It did not remove them from the king.
+
+### N54. Names in this chapter that were not made people
+
+- **Why it matters:** Ordinary title case was not treated as a name unless the spelling had been checked and forced. A group was not split. A printed gap was not filled.
+  - Suph and SVPH, Zoob, the city Berenice, the river Corys, and the stations Thara, Tharah, and Thare. Thara in the list of marches is not Terah.
+  - The books Chozai, Hascirim, Iasher, Canticum Canticorum, and the book of the battles of the Lord. Two “Samuel” hits in §. VII are the book. They stay on `samuel`, because that token was already mapped. The same pattern as N50.
+  - The nations and the giant-groups: Emims, Anakims, Zamzummims, Rephaims, Zuzims, Horites, Simconites, Sidonians, Amalekites, Canaanites, and Amorites. Gessuri and Machati. Anabaptist, Brownist, Lutheran, Sectaries, and Electo.
+  - “descended of Cham” is on `ham`. The token Cham stays blocked.
+  - The unnamed daughter of Pharaoh was not identified with `thermutis`. The unnamed Egyptian, the King of Edumaea besides the EDOM token already on `esau`, the King of Arabia, and the King of Horma were not made people. Horma is the city.
+  - The gaps left empty include the nation in the chapter heading, the captain names in the camp order, “〈◊ 〉 and Caleb”, “the other sonne of 〈◊ 〉” beside Benjamin, “〈◊ 〉 the sonne of Eleazar”, and Arbah “the Father of the 〈◊ 〉”.
+- **Options:**
+  1. Leave these without a person record, as now.
+  2. Name one that should be a person, and the passage that names him.
+- **Recommendation:** option 1. A group, a place, a book, or a gap is not an individual.
+
 ## O. Dynasty of Slaves (BLK SHP Scott, 2026)
 
 Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record of Israel in Egypt* (BLK SHP Publishing, 2026; Kindle Direct Publishing). eBook ISBN 979-8-9960110-3-2; softcover 979-8-9960110-0-1; hardcover 979-8-9960110-2-5; audiobook 979-8-9960110-1-8. © the author, all rights reserved. The dated statements are in `data/dynasty-of-slaves-dates-extract.md`. The chronology `dynasty-of-slaves` is display only. It does not set a sort year. Citations are chapter and section. The edition has no printed page numbers.
 
-### O1. The printed author is BLK SHP Scott
+### O1. The author's name — ruled 2026-11-11
 
-- **Why it matters:** The book prints the author as BLK SHP Scott. The source record uses that form. You have named the author Scott Magdalein. That surname is not printed in the book, and the site does not show it. The Google Books about page, opened 2026-11-11, prints the catalog form “B. L. K. Shp Scott”. That page does not print a surname beyond Scott.
-- **Options:**
-  1. Keep the displayed author as BLK SHP Scott until you confirm the full name, as now.
-  2. Confirm the full name, and say the form the site should show.
-- **Recommendation:** option 1. The site shows the name the book prints until you confirm another form.
+- **Ruling (Kevin, 2026-11-11):** “BLK SHP Scott is the Pen name and should remain the identifier. A footnote as necessary should point to Scott Magdalein.”
+- **Applied:** The source record keeps BLK SHP Scott as the author, as printed. Its note says BLK SHP Scott is the pen name of Scott Magdalein. Citations keep the printed form.
 
 ### O2. Modern writers were not made people
 

@@ -548,7 +548,9 @@ let raleighDerivedSummary = '';
     if (src.url !== LISTING) err('data/sources.json', 'dynasty-of-slaves-2026 url must be the Google Books listing');
     if ((src.alt_urls || []).length) err('data/sources.json', 'dynasty-of-slaves-2026 must have no other link');
     if ((src.authors || []).join(' ') !== 'BLK SHP Scott') err('data/sources.json', 'dynasty-of-slaves-2026 author must be the printed name BLK SHP Scott');
-    if (/Magdalein|Proton|proton\.me|private-src|drive\.google/i.test(`${src.license_note} ${src.note} ${src.url}`)) err('data/sources.json', 'dynasty-of-slaves-2026 must not name an unconfirmed surname or a private path');
+    if (/Proton|proton\.me|private-src|drive\.google/i.test(`${src.license_note} ${src.note} ${src.url}`)) err('data/sources.json', 'dynasty-of-slaves-2026 must not name a private path');
+    // Kevin, 2026-11-11: BLK SHP Scott is the pen name and stays the identifier; a note points to Scott Magdalein.
+    if (!/BLK SHP Scott is the pen name of Scott Magdalein/.test(src.note || '')) err('data/sources.json', 'dynasty-of-slaves-2026 note must say BLK SHP Scott is the pen name of Scott Magdalein');
   }
   for (const { rel, doc } of sortingTargets) {
     const b = doc.sorting_basis || {};

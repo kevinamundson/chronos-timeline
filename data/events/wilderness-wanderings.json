@@ -59,6 +59,17 @@
       "link": "https://texts.earlyprint.org/works/A10357.xml",
       "source_text_id": "raleigh-history-of-the-world-1617",
       "note": "Body intake. The same sentence is on moses. Not the flight-age 40, and not the Midian 40. Not a yeere of the World. year_am stays null. This does not change the sort."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "there were consumed 38. yeeres",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. IV, sig. 201b–202a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. The same sentence is on moses. Not the wandering 40. Not a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [

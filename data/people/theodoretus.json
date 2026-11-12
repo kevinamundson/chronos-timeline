@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "theodoretus",
+  "type": "person",
+  "title": "Theodoretus",
+  "summary": "Raleigh names Theodoretus in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Theodoretus, also printed Theodoret. He says the book of Iasher was a commentary upon Iosua. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book I, Part I, Chapter I, §. VI, sig. 46b"
+    }
+  ],
+  "alt_names": [
+    "Theodoret"
+  ]
+}

@@ -112,6 +112,17 @@
         "link": "https://biblicalhorizons.com/1994/08/01/6_08/",
         "note": "Jordan's year 2553 begins in month 7 (autumn), so his month 5 of 2553 is the same summer as Ussher's 2552c AM / 1452 BC.",
         "source_text_id": "jordan-bc-6-8"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Aaron died in the first day of the fifth Moneth of the fortieth yeere",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "day",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. V, sig. 202b–203a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The day he says Aaron died. Not a yeere of the World. The fortieth yeere was not converted into a year. year_am stays null. This does not change the sort. Ussher's 2552 stays."
       }
     ]
   },
@@ -127,6 +138,7 @@
     "ussher-annals-1658",
     "jordan-bc-6-7",
     "jordan-bc-6-8",
+    "raleigh-history-of-the-world-1617",
     "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
@@ -134,6 +146,11 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/exodus/4.htm#14",
       "locator": "Exod.4.14 ; Exod.6.20 ; Exod.7.7 ; Num.20.22-Num.20.29 ; Num.33.38-Num.33.39"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book II, Part I, Chapter V, §. V, sig. 202b–203a"
     }
   ],
   "related": [
