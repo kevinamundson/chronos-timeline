@@ -34,6 +34,30 @@
       "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "source_text_id": "jones-chronology-ot-2026",
       "note": "Jones prints founding. temple-dedication keeps the CFAH-1 Table 1 sort at 1012 BC. The 23rd ed. dedication, 1004 BC, is on that record as display only."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "966 BC",
+      "year_am": null,
+      "year_bc_ad": -966,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Establishing the Anchor Date",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Fourth year of Solomon, when he says the temple was begun."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "480 years",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Establishing the Anchor Date",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Interval he counts back from 966 BC. Not converted. He prints the result as 1446 BC."
     }
   ],
   "people": [
@@ -48,7 +72,8 @@
   ],
   "sources": [
     "blb-biblehub",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {

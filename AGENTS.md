@@ -80,8 +80,17 @@ Fallbacks:
 - `morecraft`: except through `provisional`, as above
 - `shuckford`: volume 1 of the 1819 Creighton edition. Anno Mundi is not converted to BC. It is not a provisional sort tier
 - `jones-2019`: Jones 21st ed. (2019). Display-only comparison under the Ussher–Jones row. The 23rd ed. (2026) sets the sort. Kevin, 2026-10-28
+- `dynasty-of-slaves`: BLK SHP Scott (the pen name of Scott Magdalein), *Dynasty of Slaves* (2026). It is in the Conventional dating group below
 - CFAH ruler dates with basis `paper_text`
 - **every new source you add**
+
+**Conventional dating group** (Kevin, 2026-11-12). `display_groups` in `data/chronologies.json` has one group, `conventional`, named "Conventional dating". It holds `dynasty-of-slaves`, and each member chronology carries `display_group: "conventional"`. It is not a sort tier and not a fallback:
+
+- Its dates never set or override `sorting_year`, never supply a provisional year, and never supply a standby placement (`scripts/standby/compute.mjs` skips any chronology in a display group).
+- They are not on the home timeline. The home timeline places a record only by `sorting_year` or `standby`, so a conventional date cannot reach it.
+- On person and event pages they are left out of the main date tables and the disagreement flags. They are shown last, at the bottom of the dates, in a red block (`.conv-dating`: red left border, red-tinted background, red heading "Conventional dating", in light and dark modes) with the note "These views are based on conventional dating practices. They are shown for reference and do not set the timeline’s order."
+- `scripts/validate.mjs` enforces the group, and `site/verify.mjs` checks the home timeline, `moses`, and `exodus` in Chromium and WebKit.
+- A later source that follows conventional dating goes in this group only when Kevin says so.
 
 People sort on a tier-ranked birth year when `dates.birth` has one. A person who has a `dates.reign` slot and no tier-ranked birth year sorts on the start year already stored on that reign (`year_bc_ad`). The same four tiers choose it. Within Ussher–Jones, the 23rd edition (2026) governs over an older Jones edition. Display-only sources never set that reign start, and a reign length is never turned into a year. `sorting_basis.slot` is `reign_start` when the reign start sets the sort. It is omitted when the sort comes from a tier birth. Kevin's ruling, 2026-10-28 (open question M3). A calculated year may use `slot` `birth`, `reign_start`, `death`, or `translated`, and only in the gap below provisional.
 

@@ -37,13 +37,26 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-8-t14-d18:hatshepsut-neferure:hatshepsut:reign"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 4, Married to the Throne",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Hatshepsut as a daughter of Thutmose I and Queen Ahmose. No year is printed."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-8-osf"
+    "cfah-8-osf",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

@@ -25,13 +25,38 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 5, Maintaining a Biblical Perspective",
+        "link": "https://biblehub.com/blb/numbers/12.htm",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Aaron and Zipporah where Numbers 12 distinguishes the Cushite wife from Zipporah. No year is printed."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 6, Filling the Empty Man",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Zipporah and the sons Gershom and Eliezer. No year is printed. Fathers are not linked, so no standby year is implied."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

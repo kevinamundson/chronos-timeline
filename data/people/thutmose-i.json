@@ -52,6 +52,18 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-8-t14-d18:thutmose-i:thutmose-i:reign"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "1490 BC",
+        "year_am": null,
+        "year_bc_ad": -1490,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 5, When the Prince Disappears",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Scene year in Thebes. Not a printed accession for Thutmose I, Amenmose, or Thutmose III."
       }
     ]
   },
@@ -59,7 +71,8 @@
   "scripture_refs": [],
   "sources": [
     "cfah-8-osf",
-    "cfah-16-osf"
+    "cfah-16-osf",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

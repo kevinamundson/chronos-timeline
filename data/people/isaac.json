@@ -132,6 +132,18 @@
         "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": null
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 1, Leaving the Land of Pharaoh",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Ishmael and Isaac in the aftermath of the Egyptian visit. No year is printed for either."
       }
     ],
     "death": [
@@ -219,7 +231,8 @@
     "raleigh-history-of-the-world-1617",
     "cfah-6",
     "jordan-compilation-anno-mundi",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {

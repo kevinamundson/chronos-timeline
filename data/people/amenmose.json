@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "amenmose",
+  "type": "person",
+  "title": "Amenmose",
+  "summary": "Prince Amenmose, eldest son of Thutmose I, whom Scott identifies with Moses. His view. Not merged.",
+  "description": "Added from the Dynasty of Slaves import. Display only. Scott’s synchronisms are his view. This chronology never sets a sort, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Dynasty of Slaves is display-only and never sets a sort)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "1490 BC",
+        "year_am": null,
+        "year_bc_ad": -1490,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 5, When the Prince Disappears",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Scene year in Thebes. Not a printed accession for Thutmose I, Amenmose, or Thutmose III."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "around the year 1486 BC",
+        "year_am": null,
+        "year_bc_ad": -1486,
+        "year_bc_ad_end": null,
+        "precision": "approximate",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 5, The “Great Overseer of Soldiers.”",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Disappearance he equates with Moses’ flight. He says it is exactly forty years before the Exodus, and four or five years before the father’s death. Those intervals are not stored as further years."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "c. 1486 BC",
+        "year_am": null,
+        "year_bc_ad": -1486,
+        "year_bc_ad_end": null,
+        "precision": "approximate",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 5, We have The Receipts:",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Monument receipt in the chapter summary. Same disappearance year."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "1486 BC",
+        "year_am": null,
+        "year_bc_ad": -1486,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Appendix, Archaeological Reports & Site Data",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Kurgus reports, as he aligns Amenmose’s disappearance with the flight to Midian."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [
+    "Exod.2.1-Exod.2.10"
+  ],
+  "sources": [
+    "dynasty-of-slaves-2026"
+  ],
+  "related": [],
+  "free_source_links": []
+}

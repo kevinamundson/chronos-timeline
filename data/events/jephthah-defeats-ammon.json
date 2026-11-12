@@ -116,6 +116,30 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Table of the judges."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "300-year occupation",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Appendix, The Biblical Record",
+      "link": "https://biblehub.com/blb/judges/11.htm#26",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Judges 11:26 as he cites it, in support of a 15th-century entry. No BC year is printed for Jephthah."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "15th-century BC",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Appendix, The Biblical Record",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "The entry century he says the 300-year occupation supports. Not converted."
     }
   ],
   "people": [],
@@ -133,7 +157,8 @@
     "jordan-sbc-2",
     "blb-biblehub",
     "ussher-annals-1658",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {

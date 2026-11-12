@@ -79,6 +79,18 @@
         "link": "https://archive.org/details/newanalysisofchr02hale/page/n37/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": null
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "300-year occupation",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Appendix, The Biblical Record",
+        "link": "https://biblehub.com/blb/judges/11.htm#26",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Judges 11:26 as he cites it, in support of a 15th-century entry. No BC year is printed for Jephthah."
       }
     ]
   },
@@ -87,7 +99,8 @@
   "sources": [
     "cfah-14-osf",
     "raleigh-history-of-the-world-1617",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

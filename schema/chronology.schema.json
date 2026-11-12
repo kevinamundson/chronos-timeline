@@ -89,6 +89,51 @@
           "type": "string"
         }
       }
+    },
+    "display_groups": {
+      "type": "array",
+      "description": "Display-only groups of chronologies (Kevin, 2026-11-12). A group is never a sort tier.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "sets_sort",
+          "on_home_timeline",
+          "note",
+          "chronologies"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/slug"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sets_sort": {
+            "const": false
+          },
+          "on_home_timeline": {
+            "const": false
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string"
+          },
+          "chronologies": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "common.schema.json#/$defs/slug"
+            }
+          }
+        }
+      }
     }
   },
   "$defs": {
@@ -173,6 +218,10 @@
           "type": "integer",
           "minimum": 1,
           "description": "1 = primary; higher numbers are fallbacks for sorting_year."
+        },
+        "display_group": {
+          "$ref": "common.schema.json#/$defs/slug",
+          "description": "Id of a display_groups entry. A chronology in a display group never sets the sort."
         },
         "status": {
           "enum": [

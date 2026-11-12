@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "zimran",
+  "type": "person",
+  "title": "Zimran",
+  "summary": "Zimran, a son of Keturah named in the Genesis 25:1–2 list Scott quotes. No year is printed. The father field is left empty.",
+  "description": "Added from the Dynasty of Slaves import. Display only. Scott’s synchronisms are his view. This chronology never sets a sort, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Dynasty of Slaves is display-only and never sets a sort)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 6, Stranger in a Strange Land",
+        "link": "https://biblehub.com/blb/genesis/25.htm",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He quotes Genesis 25:1–2 and names Keturah’s sons. No year is printed. Existing son records are reused. Zimran and Jokshan had no record."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [
+    "Gen.25.1-Gen.25.2"
+  ],
+  "sources": [
+    "dynasty-of-slaves-2026"
+  ],
+  "related": [],
+  "free_source_links": []
+}

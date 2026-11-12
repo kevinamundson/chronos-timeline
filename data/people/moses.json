@@ -321,6 +321,30 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Body intake. Where he says the thirty-ninth yeere ended. Not a yeere of the World. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "1526 BC",
+        "year_am": null,
+        "year_bc_ad": -1526,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Discovering the Cast of Characters",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Year he pins to the slaughter of the innocents, under the king he identifies as Ahmose I. Not an accession year."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "1526 BC",
+        "year_am": null,
+        "year_bc_ad": -1526,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 4, Rescued from the Nile",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "The year the chapter opens on. He ties it to the decree and the basket. Same figure as the introduction."
       }
     ],
     "death": [
@@ -512,7 +536,8 @@
     "jordan-compilation-anno-mundi",
     "raleigh-history-of-the-world-1617",
     "cory-ancient-fragments-1876",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {

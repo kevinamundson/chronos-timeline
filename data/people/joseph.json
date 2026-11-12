@@ -315,6 +315,42 @@
         "link": "https://archive.org/details/newanalysisofchr02hale/page/n36/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": null
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "around the 17th century BC",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "approximate",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 2, From Slave to King",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "When he says the Hyksos took Lower Egypt. No BC year is converted from the century."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "mid-17th century BC",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "approximate",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 2, Seeing the Nile Die",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "When he says the Nile failed. No BC year is converted."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Discovering the Cast of Characters",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He identifies Salatis, also spelled Salitis and Saites, with Joseph through the title Shallit. His view. Not merged."
       }
     ]
   },
@@ -333,7 +369,8 @@
     "jordan-compilation-anno-mundi",
     "raleigh-history-of-the-world-1617",
     "cory-ancient-fragments-1876",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {

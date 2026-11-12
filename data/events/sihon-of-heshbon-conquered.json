@@ -34,6 +34,18 @@
       "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "source_text_id": "jones-chronology-ot-2026",
       "note": null
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "300-year occupation",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Appendix, The Biblical Record",
+      "link": "https://biblehub.com/blb/judges/11.htm#26",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Judges 11:26 as he cites it, in support of a 15th-century entry. No BC year is printed for Jephthah."
     }
   ],
   "people": [
@@ -46,7 +58,8 @@
   ],
   "sources": [
     "blb-biblehub",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {

@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ramesses-ii",
+  "type": "person",
+  "title": "Ramesses II",
+  "summary": "Ramesses II, the king of the late-date Exodus theory Scott reports and does not adopt. Not ramesses, ramesses-d18, ramesses-d19, or ramesses-the-great.",
+  "description": "Added from the Dynasty of Slaves import. Display only. Scott’s synchronisms are his view. This chronology never sets a sort, and no tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year (Dynasty of Slaves is display-only and never sets a sort)."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "around 1250 BC",
+        "year_am": null,
+        "year_bc_ad": -1250,
+        "year_bc_ad_end": null,
+        "precision": "approximate",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Their Timeline Was Broken",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Late-date Exodus he reports and does not adopt. His own date is 1446 BC, 196 years apart. Ramesses II is a new record."
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "dynasty-of-slaves-2026"
+  ],
+  "related": [],
+  "free_source_links": []
+}

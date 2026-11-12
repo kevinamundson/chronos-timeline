@@ -56,6 +56,18 @@
         "link": "https://biblehub.com/blb/genesis/41.htm#50",
         "note": "Born during the seven years of plenty.",
         "source_text_id": "kjv-gutenberg"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 2, What Happened After Joseph?",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Ephraim and Manasseh as Joseph’s sons who do not succeed in his reading. No year is printed."
       }
     ]
   },
@@ -65,7 +77,8 @@
   ],
   "sources": [
     "ussher-annals-1658",
-    "blb-biblehub"
+    "blb-biblehub",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {

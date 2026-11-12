@@ -82,6 +82,18 @@
       "link": "https://archive.org/details/newanalysisofchr02hale/page/n38/mode/1up",
       "source_text_id": "hales-new-analysis-1830",
       "note": null
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "around 970 BC",
+      "year_am": null,
+      "year_bc_ad": -970,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Establishing the Anchor Date",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Accession he reports for Solomon. Not a birth year."
     }
   ],
   "people": [
@@ -95,7 +107,8 @@
     "generations-preparing-2e",
     "morecraft-christian-survey",
     "hales-new-analysis-1830",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

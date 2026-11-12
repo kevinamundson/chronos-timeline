@@ -46,6 +46,78 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "The Hyksos (Amalekite) period lasts 428 years from the Exodus until Ahmose I defeats Khamudi."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "roughly 1650–1550 BC",
+      "year_am": null,
+      "year_bc_ad": -1650,
+      "year_bc_ad_end": -1550,
+      "precision": "year-range",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Discovering the Cast of Characters",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Second Intermediate Period as he bounds it. He identifies the 15th Dynasty with Jacob’s family. His view."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "around the 17th century BC",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 2, From Slave to King",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "When he says the Hyksos took Lower Egypt. No BC year is converted from the century."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "mid-17th century BC",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "approximate",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 2, Seeing the Nile Die",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "When he says the Nile failed. No BC year is converted."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "late 12th to early 13th Dynasties",
+      "year_am": null,
+      "year_bc_ad": null,
+      "year_bc_ad_end": null,
+      "precision": "unknown",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 2, Seeing the Nile Die",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Dynasty span he gives for the Tell Edfu silos. Not a BC year. Nadine Moeller is a modern excavator and has no person record."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "1560 BC",
+      "year_am": null,
+      "year_bc_ad": -1560,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 3, War for the Nile",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Year he gives for Avaris as the center under the king he spells Apepi. Reused apophis-i. Not an accession, and not apophis-iii."
+    },
+    {
+      "source": "dynasty-of-slaves",
+      "date": "1550 BC",
+      "year_am": null,
+      "year_bc_ad": -1550,
+      "year_bc_ad_end": null,
+      "precision": "year",
+      "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 3, A Warrior Pharaoh Wages War",
+      "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+      "source_text_id": "dynasty-of-slaves-2026",
+      "note": "Year the Hebrew rulers of Avaris felt secure after Seqenenre Tao and Kamose. Not a printed death year for either man."
     }
   ],
   "people": [],
@@ -54,7 +126,8 @@
   "scripture_refs": [],
   "sources": [
     "generations-africa",
-    "generations-preparing-2e"
+    "generations-preparing-2e",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

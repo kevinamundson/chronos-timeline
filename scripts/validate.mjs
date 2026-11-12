@@ -527,6 +527,90 @@ let raleighDerivedSummary = '';
     }
   }
 }
+// Dynasty of Slaves (BLK SHP Scott, 2026): display only. Never a sort tier, and not provisional.
+{
+  const DOS = 'dynasty-of-slaves';
+  const DOS_SRC = 'dynasty-of-slaves-2026';
+  const LISTING = 'https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ';
+  const dos = chronDoc.chronologies.find((c) => c.id === DOS);
+  if (!dos) err('data/chronologies.json', 'dynasty-of-slaves is missing');
+  else {
+    if (dos.primary || !/SECONDARY DISPLAY/.test(dos.description)) err('data/chronologies.json', 'dynasty-of-slaves must be a non-primary SECONDARY DISPLAY chronology');
+    if (!/never sets or overrides a sort year/.test(dos.description || '')) err('data/chronologies.json', 'dynasty-of-slaves description must say it never sets a sort year');
+    if (dos.sort_priority !== 18) err('data/chronologies.json', 'dynasty-of-slaves sort_priority must be 18 so it does not outrank a printed year already stored');
+  }
+  if ((chronDoc.sorting_rule?.tiers || []).some((t) => t.chronology === DOS || t.tier === DOS)) err('data/chronologies.json', 'dynasty-of-slaves must not be a sort tier');
+  if (!/dynasty-of-slaves/.test(chronDoc.sorting_rule?.description || '')) err('data/chronologies.json', 'sorting_rule must list dynasty-of-slaves among the display chronologies that never set sorting_year');
+  const src = srcDoc.sources.find((s) => s.id === DOS_SRC);
+  if (!src) err('data/sources.json', 'dynasty-of-slaves-2026 is missing');
+  else {
+    if (src.access !== 'private-copy') err('data/sources.json', 'dynasty-of-slaves-2026 must be private-copy');
+    if (src.url !== LISTING) err('data/sources.json', 'dynasty-of-slaves-2026 url must be the Google Books listing');
+    if ((src.alt_urls || []).length) err('data/sources.json', 'dynasty-of-slaves-2026 must have no other link');
+    if ((src.authors || []).join(' ') !== 'BLK SHP Scott') err('data/sources.json', 'dynasty-of-slaves-2026 author must be the printed name BLK SHP Scott');
+    if (/Proton|proton\.me|private-src|drive\.google/i.test(`${src.license_note} ${src.note} ${src.url}`)) err('data/sources.json', 'dynasty-of-slaves-2026 must not name a private path');
+    // Kevin, 2026-11-11: BLK SHP Scott is the pen name and stays the identifier; a note points to Scott Magdalein.
+    if (!/BLK SHP Scott is the pen name of Scott Magdalein/.test(src.note || '')) err('data/sources.json', 'dynasty-of-slaves-2026 note must say BLK SHP Scott is the pen name of Scott Magdalein');
+  }
+  for (const { rel, doc } of sortingTargets) {
+    const b = doc.sorting_basis || {};
+    if ((b.chronology === DOS || b.derived_from === DOS) && b.tier !== 'calculated') err(rel, 'dynasty-of-slaves may never set the sort');
+  }
+  for (const { rel, doc } of Object.values(records)) {
+    const all = [...(doc.chronologies || []), ...Object.values(doc.dates || {}).flat()];
+    for (const e of all.filter((x) => x.source === DOS)) {
+      if (e.source_text_id !== DOS_SRC) err(rel, `dynasty-of-slaves entry needs source_text_id ${DOS_SRC}, got "${e.source_text_id}"`);
+      if (!/Dynasty of Slaves, (Introduction|Chapter [1-8]|Epilogue|Appendix), \S/.test(e.citation || '')) err(rel, 'dynasty-of-slaves citation needs the chapter and a section');
+      if (/private-src|Proton|proton\.me|drive\.google|line \d+/i.test(`${e.citation} ${e.note} ${e.date}`)) err(rel, 'dynasty-of-slaves entry must not cite a private path or a file line');
+      if (!e.date) err(rel, 'dynasty-of-slaves entry needs the date as printed');
+      if (e.year_am != null) err(rel, 'dynasty-of-slaves gives no AM years');
+      if (e.year_bc_ad != null && !(e.date || '').includes(String(Math.abs(e.year_bc_ad)))) err(rel, 'dynasty-of-slaves year_bc_ad must be digits printed in the date phrase');
+      if (e.year_bc_ad_end != null && !(e.date || '').includes(String(Math.abs(e.year_bc_ad_end)))) err(rel, 'dynasty-of-slaves year_bc_ad_end must be digits printed in the date phrase');
+      if ((e.note || '').length > 400) err(rel, 'dynasty-of-slaves note too long: the book is copyrighted, keep notes short and in our own words');
+      if (e.link !== LISTING && !isBlbUrl(e.link)) err(rel, 'dynasty-of-slaves link must be the listing or a BLB chapter');
+    }
+    if (doc.free_source_links?.some((l) => l.source_id === DOS_SRC)) err(rel, 'private copy dynasty-of-slaves-2026 may not be listed in free_source_links');
+  }
+}
+// Conventional dating display group (Kevin, 2026-11-12): display only. It never sets the sort, a provisional year,
+// or a standby placement, and is not on the home timeline. Its dates show last, in their own block, on record pages.
+{
+  const CJ = 'data/chronologies.json';
+  const groups = chronDoc.display_groups || [];
+  const conv = groups.find((g) => g.id === 'conventional');
+  const CONV_NOTE = 'These views are based on conventional dating practices.';
+  if (!conv) err(CJ, 'display_groups must include the conventional group');
+  else {
+    if (conv.name !== 'Conventional dating') err(CJ, 'conventional group name must be "Conventional dating"');
+    if (conv.sets_sort !== false || conv.on_home_timeline !== false) err(CJ, 'conventional group must have sets_sort false and on_home_timeline false');
+    if (!(conv.note || '').startsWith(CONV_NOTE)) err(CJ, `conventional group note must begin "${CONV_NOTE}"`);
+    if (!conv.chronologies.includes('dynasty-of-slaves')) err(CJ, 'conventional group must include dynasty-of-slaves');
+  }
+  const groupIds = new Set(groups.map((g) => g.id));
+  if (groupIds.size !== groups.length) err(CJ, 'duplicate display group id');
+  const members = new Set();
+  for (const g of groups) {
+    for (const id of g.chronologies) {
+      const c = chronDoc.chronologies.find((x) => x.id === id);
+      if (!c) { err(CJ, `display group ${g.id}: unknown chronology ${id}`); continue; }
+      if (c.display_group !== g.id) err(CJ, `${id} must have display_group "${g.id}"`);
+      if (c.primary) err(CJ, `${id} is in display group ${g.id} and may not be primary`);
+      members.add(id);
+    }
+  }
+  for (const c of chronDoc.chronologies) {
+    if (c.display_group && !groupIds.has(c.display_group)) err(CJ, `${c.id}: unknown display_group ${c.display_group}`);
+    if (c.display_group && !members.has(c.id)) err(CJ, `${c.id}: display_group ${c.display_group} does not list it`);
+  }
+  if ((chronDoc.sorting_rule?.tiers || []).some((t) => members.has(t.chronology) || groupIds.has(t.tier))) err(CJ, 'a display-group chronology may not be a sort tier');
+  for (const { rel, doc } of sortingTargets) {
+    const b = doc.sorting_basis || {};
+    if (members.has(b.chronology) || members.has(b.derived_from)) err(rel, `${b.chronology || b.derived_from} is in the Conventional dating group and may never set the sort`);
+  }
+  for (const { rel, doc } of Object.values(records)) {
+    if (members.has(doc.standby?.source_chronology)) err(rel, `${doc.standby.source_chronology} is in the Conventional dating group and may never set a standby placement`);
+  }
+}
 for (const { rel, doc } of sortingTargets) if (['jordan', 'jordan-compilation'].some((j) => doc.sorting_basis?.chronology === j || doc.sorting_basis?.derived_from === j)) err(rel, 'sorting_basis may not use a secondary Jordan chronology');
 
 // Masoretic Genesis 5 cross-check (KJV/MT figures: [id, age at named son, lifespan])

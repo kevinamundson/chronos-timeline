@@ -52,13 +52,26 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n171/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "The dynasty list (p. 118) prints 44 years."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Discovering the Cast of Characters",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He identifies Bnon, sometimes written Beon, with Benjamin through Ben-Oni. His view. bnon and beon stay separate."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

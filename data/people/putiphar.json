@@ -25,13 +25,26 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 2, Uncovering Subtle Clues in the Narrative",
+        "link": "https://biblehub.com/blb/genesis/37.htm#36",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He spells the officer Potiphar. Entered on the existing Putiphar record. Saris is that man’s title, not another person. The wife is not named."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

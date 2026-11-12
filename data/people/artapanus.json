@@ -26,12 +26,37 @@
         "link": null,
         "note": "pending CFAH reference"
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "in the 300s BC",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "approximate",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 5, Moses in History’s Eyes",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "When he says Artapanus wrote. A century phrase, not a BC year."
+      }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

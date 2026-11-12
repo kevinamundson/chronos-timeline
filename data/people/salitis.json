@@ -37,13 +37,26 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-8-t6-d15:salitis:salitis:reign"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Discovering the Cast of Characters",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He identifies Salatis, also spelled Salitis and Saites, with Joseph through the title Shallit. His view. Not merged."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-8-osf"
+    "cfah-8-osf",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

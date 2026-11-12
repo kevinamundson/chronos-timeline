@@ -626,3 +626,14 @@ h2.h3 { font-size: 17px; margin: 16px 0 8px; font-weight: 600; }
 .dore-index-body { min-width: 0; }
 .dore-index-body h2 { font-size: 17px; margin: 0 0 6px; overflow-wrap: anywhere; }
 .dore-index-body p { margin: 0 0 6px; overflow-wrap: anywhere; }
+
+/* Conventional dating (Kevin, 2026-11-12): display only, never sorts, last in a record's dates. Red plus a text label, not colour alone. */
+:root { --conv: #b3261e; --conv-bg: #fdf1f0; --conv-border: #c62828; }
+@media (prefers-color-scheme: dark) { :root { --conv: #ff8a80; --conv-bg: #2a1615; --conv-border: #ff6b5f; } }
+.conv-dating { background: var(--conv-bg); border-left: 6px solid var(--conv-border); }
+.conv-dating h2, .conv-dating .conv-slot { color: var(--conv); }
+.conv-dating .conv-slot { font-size: 1rem; margin: 16px 0 4px; }
+.conv-label { font-size: 0.75rem; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; color: var(--conv); border: 1px solid var(--conv); border-radius: 6px; padding: 1px 6px; vertical-align: middle; }
+.conv-note { color: var(--label); font-weight: 600; }
+.tag-conv { color: var(--conv); }
+.conv-dating table.chron th, .conv-dating table.chron td { border-top-color: color-mix(in srgb, var(--conv-border) 30%, var(--sep)); }

@@ -37,12 +37,37 @@
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Body intake. How long before this request he says Jethro was already priest of Midian, when Moses fled and married his daughter. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "no year printed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 6, Stranger in a Strange Land",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "He names Reuel, priest of Midian, and also Jethro. Both are entered on the existing Iethro record. Reuel is not a second person. No year is printed."
+      }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "dynasty-of-slaves-2026"
   ],
   "related": [],
   "free_source_links": [

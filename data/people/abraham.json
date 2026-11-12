@@ -347,6 +347,42 @@
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Year cell \"2865 2183 100\". The third printed figure 100 is the column \"Promise\", not a length. To the Reader (sig. 780b): the Julian Period exceeds the yeere of the World by 682."
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "1876 BC",
+        "year_am": null,
+        "year_bc_ad": -1876,
+        "year_bc_ad_end": null,
+        "precision": "year",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Introduction, Establishing the Anchor Date",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Arrival of Abram in Canaan and Egypt as he prints it. Not a birth year. He identifies Abisha with Abraham."
+      },
+      {
+        "source": "dynasty-of-slaves",
+        "date": "four hundred years",
+        "year_am": null,
+        "year_bc_ad": null,
+        "year_bc_ad_end": null,
+        "precision": "unknown",
+        "citation": "BLK SHP Scott, Dynasty of Slaves, Chapter 3, A Warrior Pharaoh Wages War",
+        "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
+        "source_text_id": "dynasty-of-slaves-2026",
+        "note": "Abraham’s prophecy as he cites it. Not converted to a BC year."
+      }
     ]
   },
   "scripture_refs": [
@@ -365,7 +401,8 @@
     "raleigh-history-of-the-world-1617",
     "shuckford-sacred-profane-1819",
     "cory-ancient-fragments-1876",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "dynasty-of-slaves-2026"
   ],
   "free_source_links": [
     {
