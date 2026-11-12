@@ -12,6 +12,8 @@ Pass 7 (Book II, Part I, Chapter III) adds twelve words those tables do not list
 
 Pass 8 (Book II, Part I, Chapter IV) adds thirty-four words those tables do not list. All thirty-four change. None stay. None of the thirty-four is flagged. `incourageth` and `inforceth` are encourage and enforce. The letter rules do not reach that in- spelling, so those two are explicit. Through that chapter the inventory is 433 distinct words: 407 change, 22 stay, and the same 4 flagged. The new rows are under "Pass 8".
 
+Pass 9 (Book II, Part I, Chapter V) adds one word those tables do not list. It stays. It is not flagged. Through that chapter the inventory is 434 distinct words: 407 change, 23 stay, and the same 4 flagged. The new row is under "Pass 9".
+
 ## Decisions
 
 - hath becomes has. It is the irregular third person of have. It does not end in -eth. An all-capital HATH becomes HAS. The capitals stay (open question N17).
@@ -29,6 +31,7 @@ Pass 8 (Book II, Part I, Chapter IV) adds thirty-four words those tables do not 
 - trueth becomes truth. It is the noun. The stem would otherwise meet the headword true and become trues.
 - fortieth stays. seuentieth stays as an ordinal and is shown seventieth, because u becomes v. The ending is not a verb.
 - Cheareth is the brook Cherith ("the Riuer Cheareth"), not the verb cheer. It stays.
+- Beth stays. The hyphen in Beth-Peor and Beth-peor makes the token Beth. It is the place, not a verb.
 - seedeth becomes seeds. In this book it is the verb in "the hearbe, which seedeth seede".
 
 ## Flagged
@@ -508,3 +511,11 @@ Thirty-four words appear in Book II, Part I, Chapter IV and in no earlier stored
 | sinneth | 2 | sins | verb sin → sins | p01815: that euery one sinneth, that doth not loue God with his whole |
 | terrifieth | 1 | terrifies | verb terrify → terrifies | p01796: the Gospel healeth: the Law terrifieth, the Gospel allureth |
 | woundeth | 1 | wounds | verb wound → wounds | p01796: the other by faith; the Law woundeth, the Gospel healeth |
+
+## Pass 9
+
+One word appears in Book II, Part I, Chapter V and in no earlier stored passage. The count is in those 52 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| beth | 2 | beth | kept: place Beth-peor; the hyphen makes the token Beth. Printed Beth-Peor and Beth-peor | p01906: ship of the true God, to the seruice of Beth-Peor: and to the rest of |

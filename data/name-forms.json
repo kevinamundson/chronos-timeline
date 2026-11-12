@@ -714,6 +714,21 @@
       ]
     },
     {
+      "id": "anak",
+      "forms": [
+        {
+          "form": "Anac",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. III, sig. 201a–201b. The passage prints “Anac”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        }
+      ]
+    },
+    {
       "id": "anamim",
       "forms": [
         {
@@ -1598,6 +1613,21 @@
       ]
     },
     {
+      "id": "balak",
+      "forms": [
+        {
+          "form": "Balac Peor",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. VI, sig. 204b. The passage prints “Balac Peor”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        }
+      ]
+    },
+    {
       "id": "balatorus",
       "forms": [
         {
@@ -1734,6 +1764,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter IV."
+        },
+        {
+          "form": "Belonius",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. IV, sig. 202b. The passage prints “Belonius”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },
@@ -1859,6 +1899,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        }
+      ]
+    },
+    {
+      "id": "benjamin",
+      "forms": [
+        {
+          "form": "Beniamin",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. II, sig. 199b. The passage prints “Beniamin”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },
@@ -4341,6 +4396,21 @@
       ]
     },
     {
+      "id": "hadad",
+      "forms": [
+        {
+          "form": "Adad",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. IV, sig. 202b. The passage prints “Adad”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        }
+      ]
+    },
+    {
       "id": "hadoram",
       "forms": [
         {
@@ -4922,6 +4992,21 @@
       ]
     },
     {
+      "id": "ieedo",
+      "forms": [
+        {
+          "form": "Ieedo the Seer",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. VII, sig. 205a. The passage prints “Ieedo the Seer”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        }
+      ]
+    },
+    {
       "id": "iehoabaz",
       "forms": [
         {
@@ -5073,6 +5158,36 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter I."
+        },
+        {
+          "form": "Ioshua",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. IV, sig. 201b–202a. The passage prints “Ioshua”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        },
+        {
+          "form": "IOSVA",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. VII, sig. 204b–205a. The passage prints “IOSVA”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        },
+        {
+          "form": "Iosuah",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. IX, sig. 206a. The passage prints “Iosuah”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },
@@ -5533,6 +5648,21 @@
       ]
     },
     {
+      "id": "jehoshaphat",
+      "forms": [
+        {
+          "form": "Iehossaphat",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. VII, sig. 205a. The passage prints “Iehossaphat”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        }
+      ]
+    },
+    {
       "id": "jehu",
       "forms": [
         {
@@ -5666,6 +5796,26 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter II."
+        },
+        {
+          "form": "Hieroms",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. IV, sig. 202b. The passage prints “Hieroms”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        },
+        {
+          "form": "Hieromes",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. V, sig. 202b–203a. The passage prints “Hieromes”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },
@@ -5914,6 +6064,16 @@
           "source_text_id": "stepbible-tipnr",
           "scripture_ref": "Gen.29.35",
           "note": null
+        },
+        {
+          "form": "Iudah",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. II, sig. 199b. The passage prints “Iudah”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },
@@ -6487,6 +6647,16 @@
           "source_text_id": "stepbible-tipnr",
           "scripture_ref": "Gen.29.34",
           "note": null
+        },
+        {
+          "form": "Leui",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. II, sig. 200a. The passage prints “Leui”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },
@@ -7495,6 +7665,21 @@
       ]
     },
     {
+      "id": "naason",
+      "forms": [
+        {
+          "form": "Naashon",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. II, sig. 200b–201a. The passage prints “Naashon”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        }
+      ]
+    },
+    {
       "id": "nahor",
       "forms": [
         {
@@ -7570,6 +7755,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter I."
+        }
+      ]
+    },
+    {
+      "id": "naphtali",
+      "forms": [
+        {
+          "form": "Nephtali",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. II, sig. 199b. The passage prints “Nephtali”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },
@@ -7653,6 +7853,26 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book I, Part I, Chapters IX–XII."
+        },
+        {
+          "form": "Nabuchadnessar",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. VI, sig. 204b. The passage prints “Nabuchadnessar”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        },
+        {
+          "form": "Nebuchadnessar",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. VII, sig. 205b. The passage prints “Nebuchadnessar”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },
@@ -7747,6 +7967,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        }
+      ]
+    },
+    {
+      "id": "nethaneel",
+      "forms": [
+        {
+          "form": "Nathaniel",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. II, sig. 199b. The passage prints “Nathaniel”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },
@@ -9176,6 +9411,21 @@
       ]
     },
     {
+      "id": "rab-solomon",
+      "forms": [
+        {
+          "form": "Rabbi Salomon",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. VII, sig. 205a. The passage prints “Rabbi Salomon”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        }
+      ]
+    },
+    {
       "id": "rabanus",
       "forms": [
         {
@@ -9361,6 +9611,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter I."
+        }
+      ]
+    },
+    {
+      "id": "reuben",
+      "forms": [
+        {
+          "form": "Ruben",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. II, sig. 199b. The passage prints “Ruben”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },
@@ -9930,6 +10195,31 @@
           "source_text_id": "stepbible-tipnr",
           "scripture_ref": "Gen.10.7",
           "note": null
+        }
+      ]
+    },
+    {
+      "id": "sehon",
+      "forms": [
+        {
+          "form": "Schon",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. VIII, sig. 205b–206a. The passage prints “Schon”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        },
+        {
+          "form": "Sihon",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. VIII, sig. 205b–206a. The passage prints “Sihon”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },
@@ -11683,6 +11973,21 @@
       ]
     },
     {
+      "id": "vaheb",
+      "forms": [
+        {
+          "form": "VAHEBVM",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. VII, sig. 204b–205a. The passage prints “VAHEBVM”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        }
+      ]
+    },
+    {
       "id": "valentia",
       "forms": [
         {
@@ -11874,6 +12179,21 @@
           "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_6#:~:text=For%20in%20the%20three%20following%20generations%20of%20Darius",
           "source_text_id": "herodotus-rawlinson-wikisource",
           "note": "The passage is an English translation. The Greek letters of the ancient text are not entered."
+        }
+      ]
+    },
+    {
+      "id": "zebulun",
+      "forms": [
+        {
+          "form": "Zabulon",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. II, sig. 199b. The passage prints “Zabulon”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter V."
         }
       ]
     },

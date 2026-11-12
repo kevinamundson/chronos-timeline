@@ -51,6 +51,17 @@
         "citation": null,
         "link": null,
         "note": "No birth year. Ussher §264 says she was the eldest of the three and \"lived 130 years\", which implies about AM 2422, but Ussher does not print that year."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "which continued vpon her seuen daies",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "day",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. III, sig. 201a–201b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. How long he says the leprosy continued. Not her lifespan, and not the year of her death. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ],
     "death": [
@@ -107,13 +118,19 @@
   "sources": [
     "blb-biblehub",
     "ussher-annals-1658",
-    "jordan-bc-6-8"
+    "jordan-bc-6-8",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/exodus/2.htm#4",
       "locator": "Exod.2.4-Exod.2.8 ; Exod.15.20-Exod.15.21 ; Num.12.1-Num.12.15 ; Num.20.1"
+    },
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book II, Part I, Chapter V, §. III, sig. 201a–201b"
     }
   ],
   "related": [

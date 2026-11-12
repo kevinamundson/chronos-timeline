@@ -288,6 +288,39 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Body intake. He says the world had stood 2513 whole yeeres when the old law was given, and names the 67th day of that yeere. Not stored as a yeere of the World. The Passover yeere of the World 2514 was not entered again. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "on the foureteenth day of the second moneth of the second yeere",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "day",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. II, sig. 200b–201a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The Passover of the second yeere. Not the table Passover at the yeere of the World 2514. The 20th day of the same moneth is not stored apart. Not a yeere of the World. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "there were consumed 38. yeeres",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. IV, sig. 201b–202a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The same sentence is on wilderness-wanderings. Not the wandering 40, not the flight-age 40, and not the Midian 40. Not a yeere of the World. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "the nine and thirtieth yeere taking end at Esiongaber",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. V, sig. 202b–203a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. Where he says the thirty-ninth yeere ended. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ],
     "death": [
