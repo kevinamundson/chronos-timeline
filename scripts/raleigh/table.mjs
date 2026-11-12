@@ -128,16 +128,78 @@ export function yearColumnIndex(section) {
   return head.cells.findIndex((c) => c && !c.covered && /^(Iulian|Julian)\b/.test(c.original || ''));
 }
 
+/** Split a printed heading such as "Iulian, The World, and Adam" into Julian | rest. */
+export function splitJulianHeading(text) {
+  const t = String(text || '').replace(/\s+/g, ' ').trim();
+  const m = t.match(/^(Iulian|Julian|lulian)\b\s*[,.]?\s*([\s\S]*)$/i);
+  if (!m) return { julian: t, rest: '' };
+  return { julian: m[1], rest: (m[2] || '').trim() };
+}
+
+/** First token is the Julian Period figure; the rest is the yeere of the World and anything after it. */
+export function splitYearCell(raw) {
+  const t = String(raw ?? '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+  const m = t.match(/^([0-9●◊〈〉]+)(?:\s+([\s\S]*))?$/);
+  if (!m) return { julian: '', worldRaw: t, combined: t };
+  return { julian: m[1], worldRaw: (m[2] || '').trim(), combined: t };
+}
+
+function stripJulianPrefix(text, julian) {
+  if (!julian || !text) return text || '';
+  if (text === julian) return '';
+  const prefix = `${julian} `;
+  return text.startsWith(prefix) ? text.slice(prefix.length) : text;
+}
+
+/**
+ * Julian column keeps the printed figure. World column holds AM n with the
+ * italic derived year, plus any printed rest (a third era figure, a name).
+ * Flags stay on the World cell. The 682 check still uses the pair.
+ */
+export function annotateSplitYear(raw) {
+  const { julian, worldRaw, combined } = splitYearCell(raw);
+  const annotation = annotateWorldYear(combined);
+  return {
+    julian,
+    worldRaw,
+    worldText: stripJulianPrefix(annotation.text, julian),
+    worldHtml: stripJulianPrefix(annotation.html, julian),
+    annotation,
+  };
+}
+
+export function yearPair(row, i, mode) {
+  const raw = textAt(row.cells[i], mode);
+  if (row.header) {
+    const head = splitJulianHeading(raw);
+    return { julian: head.julian, world: head.rest };
+  }
+  const split = annotateSplitYear(raw);
+  return {
+    julian: split.julian,
+    world: formatAnnotatedCell({ ...split.annotation, text: split.worldText, html: split.worldHtml }),
+  };
+}
+
 function displayCell(row, i, mode, yearIdx) {
   const raw = textAt(row.cells[i], mode);
   if (row.header || i !== yearIdx) return raw;
   return formatAnnotatedCell(annotateWorldYear(raw));
 }
 
+/** One row as exported text cells. The Julian figure is its own column, then World. */
 export function sectionGrid(section, mode) {
   const yearIdx = yearColumnIndex(section);
   return section.rows.map((row) => {
-    const line = Array.from({ length: section.width }, (_, i) => displayCell(row, i, mode, yearIdx));
+    const line = [];
+    for (let i = 0; i < section.width; i++) {
+      if (i === yearIdx) {
+        const pair = yearPair(row, i, mode);
+        line.push(pair.julian, pair.world);
+      } else {
+        line.push(displayCell(row, i, mode, yearIdx));
+      }
+    }
     return { sig: row.sig, header: row.header, line };
   });
 }
@@ -182,7 +244,7 @@ function csvEscape(s) {
   return /[",\n\r]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v;
 }
 
-const FILE_NOTE = 'Raleigh, The History of the World (1617, EEBO-TCP A10357), A Chronological Table. Years are the Julian Period and the yeere of the World as printed. A parenthetical year, for example AM 1656 (2377 BC), is display text only, from Raleigh\'s Creation in 4032 BC. On the web page that year is in italics. Dates in italics are derived. It is not a year he printed, and year_bc_ad stays null. The Signature column is the 1617 sheet and is not a column of his table.';
+const FILE_NOTE = 'Raleigh, The History of the World (1617, EEBO-TCP A10357), A Chronological Table. The Julian Period year is its own column. The World column holds the yeere of the World as printed, shown as AM n with a parenthetical year, for example AM 1656 (2377 BC). That parenthetical is display text only, from Raleigh\'s Creation in 4032 BC. On the web page that year is in italics. Dates in italics are derived. It is not a year he printed, and year_bc_ad stays null. The Signature column is the 1617 sheet and is not a column of his table.';
 
 export function toCsv(table, mode) {
   const lines = [csvEscape(FILE_NOTE), csvEscape(mode === 'original' ? 'Original spelling' : 'Modern spelling'), csvEscape(table.heading[mode])];
@@ -239,9 +301,9 @@ export function toXls(table, mode) {
   emit([{ text: table.heading[mode] }]);
   emit([{ text: '' }]);
   for (const section of table.sections) {
-    const width = Math.max(1, section.width + 1);
-    emit([{ text: section.heading[mode], across: width - 1 }]);
     const yearIdx = yearColumnIndex(section);
+    const width = Math.max(1, section.width + 1 + (yearIdx >= 0 ? 1 : 0));
+    emit([{ text: section.heading[mode], across: width - 1 }]);
     for (const row of section.rows) {
       const cells = [{ text: row.header ? 'Signature' : row.sig, index: 1 }];
       let col = 2;
@@ -250,9 +312,16 @@ export function toXls(table, mode) {
         if (!cell || cell.covered) { col += 1; continue; }
         const span = Math.min(cell.colSpan || 1, section.width - i);
         const down = Math.max(0, (cell.rowSpan || 1) - 1);
-        cells.push({ text: displayCell(row, i, mode, yearIdx), index: col, across: span > 1 ? span - 1 : 0, down });
-        col += span;
-        i += span - 1;
+        if (i === yearIdx) {
+          const pair = yearPair(row, i, mode);
+          cells.push({ text: pair.julian, index: col, down });
+          cells.push({ text: pair.world, index: col + 1, down });
+          col += 2;
+        } else {
+          cells.push({ text: displayCell(row, i, mode, yearIdx), index: col, across: span > 1 ? span - 1 : 0, down });
+          col += span;
+          i += span - 1;
+        }
       }
       emit(cells);
     }
@@ -265,4 +334,59 @@ export function toXls(table, mode) {
 ${rows.join('\n')}
 </Table></Worksheet></Workbook>
 `;
+}
+
+/** The Julian figure is its own column; the World cell never still starts with that figure. */
+export function assertJulianSplit() {
+  const table = loadChronologicalTable();
+  const first = table.sections[0];
+  if (!first) throw new Error('Julian split: no table sections');
+  const idx = yearColumnIndex(first);
+  if (idx < 0) throw new Error('Julian split: first section has no year column');
+  const head = splitJulianHeading(first.heading.original);
+  if (head.julian !== 'Iulian') throw new Error(`Julian split: first heading julian is ${head.julian}`);
+  if (!/World/.test(head.rest) || /Iulian|Julian/i.test(head.rest)) {
+    throw new Error(`Julian split: first heading rest is ${head.rest}`);
+  }
+  const adamRow = first.rows.find((r) => !r.header && /Ada/.test(r.cells[idx]?.original || ''));
+  if (!adamRow) throw new Error('Julian split: Adam year cell missing');
+  const adam = annotateSplitYear(adamRow.cells[idx].original);
+  if (adam.julian !== '683') throw new Error(`Julian split: Adam julian is ${adam.julian}`);
+  if (!adam.worldText.startsWith('AM 1 (4032 BC)') || adam.worldText.startsWith('683')) {
+    throw new Error(`Julian split: Adam world is ${adam.worldText}`);
+  }
+  if (!adam.worldHtml.includes('<em>4032 BC</em>') || adam.worldHtml.startsWith('683')) {
+    throw new Error(`Julian split: Adam world html is ${adam.worldHtml}`);
+  }
+  let flood = null;
+  for (const section of table.sections) {
+    const yearIdx = yearColumnIndex(section);
+    for (const row of section.rows) {
+      if (row.header) continue;
+      const cell = yearIdx >= 0 ? row.cells[yearIdx] : null;
+      if ((cell?.original || '').includes('2338 1656')) flood = annotateSplitYear(cell.original);
+    }
+  }
+  if (!flood || flood.julian !== '2338' || !flood.worldText.startsWith('AM 1656 (2377 BC)') || flood.worldText.startsWith('2338')) {
+    throw new Error(`Julian split: Flood world is ${flood?.worldText}`);
+  }
+  const csv = toCsv(table, 'modern');
+  const grid = sectionGrid(first, 'modern');
+  const csvHead = grid[0]?.line || [];
+  if (csvHead[idx] !== 'Julian' && csvHead[idx] !== 'Iulian') {
+    throw new Error(`Julian split: grid header julian is ${csvHead[idx]}`);
+  }
+  if (!/World/.test(csvHead[idx + 1] || '') || /Julian|Iulian/i.test(csvHead[idx + 1] || '')) {
+    throw new Error(`Julian split: grid header world is ${csvHead[idx + 1]}`);
+  }
+  const adamLine = grid.find((r) => !r.header && /AM 1 \(4032 BC\)/.test(r.line[idx + 1] || ''));
+  if (!adamLine || adamLine.line[idx] !== '683' || adamLine.line[idx + 1].startsWith('683')) {
+    throw new Error(`Julian split: grid Adam is ${adamLine?.line[idx]} | ${adamLine?.line[idx + 1]}`);
+  }
+  if (csv.includes('683 AM 1') || csv.includes('2338 AM 1656')) {
+    throw new Error('Julian split: CSV still joins the Julian figure to the AM cell');
+  }
+  if (!csv.includes('AM 1 (4032 BC)') || !csv.includes('AM 1656 (2377 BC)')) {
+    throw new Error('Julian split: CSV lost the derived World years');
+  }
 }

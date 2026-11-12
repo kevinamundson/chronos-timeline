@@ -488,6 +488,9 @@ cite.bu-link a { text-decoration: underline dotted; text-underline-offset: 3px; 
 #raleigh-full { max-width: 42rem; }
 #raleigh-full h2 { font-size: 16px; line-height: 1.35; margin: 22px 0 8px; }
 .raleigh-wrap { max-width: 100%; }
+table.chron.raleigh th.raleigh-julian,
+table.chron.raleigh td.raleigh-julian { font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.chron.raleigh a { text-decoration: underline; text-underline-offset: 0.15em; }
 table.raleigh { font-size: 14px; min-width: 720px; }
 table.raleigh th, table.raleigh td { padding: 6px 8px; white-space: nowrap; }
 table.raleigh .raleigh-flag { white-space: normal; max-width: 18rem; font-weight: 400; }

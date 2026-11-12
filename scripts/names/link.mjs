@@ -43,7 +43,7 @@ export function personTokens(raw) {
   let m;
   while ((m = re.exec(text))) {
     const fold = foldPersonToken(m[0]);
-    if (fold) tokens.push({ fold, raw: m[0] });
+    if (fold) tokens.push({ fold, raw: m[0], start: m.index, end: m.index + m[0].length });
   }
   return tokens;
 }

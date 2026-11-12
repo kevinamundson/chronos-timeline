@@ -1445,10 +1445,16 @@ for (const [path, shot, sel] of [
   const intro = await o.page.locator('#raleigh-table .card').first().innerText();
   check('raleigh table: intro states the derived note', intro.includes(NOTE) && intro.includes('AM 1656') && intro.includes('2377 BC'), intro.slice(0, 280));
   const bad = await o.page.evaluate(() => {
-    const cell = [...document.querySelectorAll('#raleigh-table td')].find((el) => el.innerText.includes('3840') && el.innerText.includes('2158'));
-    return cell ? cell.innerText : '';
+    const julian = [...document.querySelectorAll('#raleigh-table td.raleigh-julian')].find((el) => el.innerText.includes('3840'));
+    const world = julian?.parentElement?.querySelector('td.raleigh-world');
+    const joined = [...document.querySelectorAll('#raleigh-table td')].some((el) => el.innerText.includes('3840') && el.innerText.includes('2158') && /AM 2158/.test(el.innerText));
+    return {
+      julian: julian ? julian.innerText.trim() : '',
+      world: world ? world.innerText.replace(/\s+/g, ' ').trim() : '',
+      joined,
+    };
   });
-  check('raleigh table: unconfirmed 3840/2158 pair is not derived', bad.includes('Not derived') && !bad.includes('(derived:') && !/\(\d+ BC\)/.test(bad), bad.slice(0, 220));
+  check('raleigh table: unconfirmed 3840/2158 pair is not derived', bad.julian === '3840' && bad.world.includes('2158') && bad.world.includes('Not derived') && !bad.world.includes('(derived:') && !/\(\d+ BC\)/.test(bad.world) && !bad.joined, JSON.stringify(bad).slice(0, 220));
   await o.page.screenshot({ path: join(SHOTS, 'raleigh-derived-table-intro.png'), fullPage: false });
   const floodCells = o.page.locator('#raleigh-table td', { hasText: 'AM 1656' }).filter({ hasText: '2377 BC' });
   const floodHtml = (await floodCells.count()) ? await floodCells.first().innerHTML() : '';
@@ -1484,6 +1490,30 @@ for (const [path, shot, sel] of [
   }
   const csv = await (await o.page.request.get(BASE + '/chronologies/raleigh-chronological-table/a-chronological-table.csv')).text();
   check('raleigh table: csv derives Adam and the Flood', csv.includes('AM 1 (4032 BC)') && csv.includes('AM 1656 (2377 BC)') && !csv.includes('(derived:'));
+  check('raleigh table: csv keeps Julian out of the AM cell', !csv.includes('683 AM 1') && !csv.includes('2338 AM 1656') && csv.includes('Julian'));
+  const julianSplit = await o.page.evaluate(() => {
+    const world = [...document.querySelectorAll('#raleigh-table td')].find((el) => el.classList.contains('raleigh-world') && el.innerText.includes('AM 1') && el.innerText.includes('4032 BC'));
+    const julian = world?.parentElement?.querySelector('td.raleigh-julian, th.raleigh-julian');
+    const joined = [...document.querySelectorAll('#raleigh-table td')].some((el) => /683/.test(el.innerText) && /AM 1/.test(el.innerText) && /4032 BC/.test(el.innerText));
+    const seth = [...document.querySelectorAll('#raleigh-table a[href="/people/seth/"]')].find((a) => /Seth/i.test(a.textContent));
+    const enoch = document.querySelector('#raleigh-table a[href="/events/enoch-translated/"]');
+    const adam = [...document.querySelectorAll('#raleigh-table a[href="/people/adam/"]')].find((a) => /Adam|Ada/i.test(a.textContent));
+    const lamech = [...document.querySelectorAll('#raleigh-table a')].filter((a) => /^Lamech/i.test(a.textContent.trim()));
+    return {
+      julian: julian ? julian.innerText.trim() : '',
+      world: world ? world.innerText.replace(/\s+/g, ' ').trim().slice(0, 80) : '',
+      joined,
+      seth: seth ? seth.getAttribute('href') : '',
+      enoch: enoch ? enoch.getAttribute('href') : '',
+      adam: adam ? adam.getAttribute('href') : '',
+      lamechLinks: lamech.length,
+    };
+  });
+  check('raleigh table: Julian 683 is its own column beside AM 1', julianSplit.julian === '683' && /AM 1/.test(julianSplit.world) && !julianSplit.joined, JSON.stringify(julianSplit));
+  check('raleigh table: Seth links to the person page', julianSplit.seth === '/people/seth/', JSON.stringify(julianSplit));
+  check('raleigh table: Henoch translated links to the event', julianSplit.enoch === '/events/enoch-translated/', JSON.stringify(julianSplit));
+  check('raleigh table: Adam in the first heading or row links', julianSplit.adam === '/people/adam/', JSON.stringify(julianSplit));
+  check('raleigh table: Lamech stays unlinked (two records)', julianSplit.lamechLinks === 0, JSON.stringify(julianSplit));
   const tableNote = await o.page.locator('#raleigh-table .raleigh-derived-note').innerText();
   check('raleigh table: italics note', tableNote.startsWith(ITALICS) && tableNote.includes(NOTE), tableNote);
   await o.ctx.close();
