@@ -2551,6 +2551,53 @@ for (const [path, shot, sel] of [
     if (!launcher) await b.close();
   }
 }
+// Dynasty of Slaves timeline page: his printed years in his order, linked from the red blocks and the Chronologies entry.
+{
+  const PAGE = '/chronologies/dynasty-of-slaves/';
+  for (const [engine, launcher] of [['chromium', browser], ['webkit', null]]) {
+    const b = launcher || stubIiif(await webkit.launch());
+    const go = async (path, opts = {}) => {
+      const ctx = await b.newContext({ viewport: { width: opts.width || 1280, height: 900 }, colorScheme: opts.scheme || 'light' });
+      const page = await ctx.newPage();
+      const errors = [];
+      page.on('pageerror', (e) => errors.push(String(e)));
+      const resp = await page.goto(BASE + path, { waitUntil: 'load', timeout: 30000 });
+      return { ctx, page, errors, status: resp.status() };
+    };
+    for (const [width, scheme] of [[1280, 'light'], [390, 'dark']]) {
+      const o = await go(PAGE, { width, scheme });
+      const info = await o.page.evaluate(() => {
+        const items = [...document.querySelectorAll('#dos-timeline .dos-item')].map((li) => ({ id: li.dataset.record, y: +li.dataset.year }));
+        const ys = items.map((i) => i.y);
+        return {
+          title: document.querySelector('h1')?.textContent || '',
+          note: document.querySelector('.conv-note')?.textContent || '',
+          n: items.length,
+          sorted: ys.every((y, i) => i === 0 || ys[i - 1] <= y),
+          moses: items.findIndex((i) => i.id === 'moses' && i.y === -1526),
+          exodus: items.findIndex((i) => i.id === 'exodus' && i.y === -1446),
+          undated: document.querySelectorAll('#dos-undated li').length,
+          undatedHeading: document.getElementById('dos-undated-h')?.textContent || '',
+          dynasties: document.querySelectorAll('#dos-dynasties .dos-dynasty').length,
+          overflow: document.documentElement.scrollWidth - window.innerWidth,
+        };
+      });
+      const ok = o.status === 200 && info.title === 'Dynasty of Slaves' && info.note.startsWith('These views are based on conventional dating practices.') && info.n > 0 && info.sorted && info.moses >= 0 && info.exodus > info.moses && info.undated > 0 && info.undatedHeading === 'Named, no year printed' && info.dynasties > 0 && info.overflow <= 1 && o.errors.length === 0;
+      check(`${engine} dynasty-of-slaves page (${width}px, ${scheme}): 200, his order, Moses 1526 BC before the Exodus 1446 BC`, ok, JSON.stringify({ status: o.status, ...info, errors: o.errors.slice(0, 3) }));
+      await o.ctx.close();
+    }
+    const m = await go('/people/moses/');
+    const mHref = await m.page.locator('#conventional-dating a', { hasText: 'Dynasty of Slaves timeline' }).getAttribute('href').catch(() => null);
+    check(`${engine} moses: red block links to the Dynasty of Slaves timeline`, m.status === 200 && mHref === PAGE, String(mHref));
+    await m.ctx.close();
+    const c = await go('/chronologies/');
+    const cHref = await c.page.locator('#dynasty-of-slaves a', { hasText: 'Dynasty of Slaves timeline' }).first().getAttribute('href').catch(() => null);
+    const sHref = await c.page.locator('#source-dynasty-of-slaves-2026 a', { hasText: 'Dynasty of Slaves timeline' }).first().getAttribute('href').catch(() => null);
+    check(`${engine} chronologies: the Dynasty of Slaves entry and its source link to the timeline`, c.status === 200 && cHref === PAGE && sHref === PAGE, JSON.stringify({ cHref, sHref }));
+    await c.ctx.close();
+    if (!launcher) await b.close();
+  }
+}
 await browser.close();
 srv.close();
 console.log(results.join('\n'));

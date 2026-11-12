@@ -637,3 +637,20 @@ h2.h3 { font-size: 17px; margin: 16px 0 8px; font-weight: 600; }
 .conv-note { color: var(--label); font-weight: 600; }
 .tag-conv { color: var(--conv); }
 .conv-dating table.chron th, .conv-dating table.chron td { border-top-color: color-mix(in srgb, var(--conv-border) 30%, var(--sep)); }
+
+/* Dynasty of Slaves timeline page (conventional dating, display only). */
+.conv-link a { font-weight: 600; }
+.dos-tl { list-style: none; margin: 0; padding: 0 0 0 18px; border-left: 3px solid var(--conv-border); }
+.dos-year { position: relative; margin: 0 0 18px; }
+.dos-year::before { content: ""; position: absolute; left: -26px; top: 6px; width: 13px; height: 13px; border-radius: 50%; background: var(--conv-bg); border: 3px solid var(--conv-border); }
+.dos-year-label { margin: 0 0 6px; font-size: 1.05rem; color: var(--conv); }
+.dos-items, .dos-members, .dos-undated { list-style: none; margin: 0; padding: 0; }
+.dos-item { padding: 8px 0; border-top: 1px solid var(--sep); }
+.dos-item:first-child { border-top: 0; }
+.dos-head a { font-weight: 600; }
+.dos-phrase { font-weight: 600; }
+.dos-sort strong { color: var(--label); }
+.dos-dyn { color: var(--conv); }
+.dos-dynasty h3 { font-size: 1rem; margin: 14px 0 4px; }
+.dos-members li, .dos-undated li { padding: 4px 0; }
+.dos-head, .dos-item, .dos-undated li { overflow-wrap: anywhere; }
