@@ -234,6 +234,31 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 391 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8)
 - Accounts: 1,857 passages on 656 records
 
+## Pass 9
+
+Book II, Part I, Chapter V, sig. 199b, through §. X, sig. 206b–207a. The heading is “CHAP. V. The Storie of the 〈◊ 〉 from the receiuing of the Law to the death of MOSES.” Fifty-two passages, p01858–p01909. Chapter VI, “CHAP. VI. Of the Nations with whom the Israelites had dealing after their comming out of Aegypt; and of the men of renowne in other Nations, about the times of MOSES and IOSVA, with the summe of the Historie of IOSVA,” opens on sig. 207a and was not entered. The contents line for Chapter V was already stored. The body heading leaves the nation as a gap. That gap was not filled. The same rules as passes 3, 4, 5, 6, 7, and 8. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. The one printed World year in this chapter is “which happened in the yeere of the World 25 54”, with a space in the figures. It was not joined and was not stored (N51). The table row “The Last yeere of Moses.” at World 2553 was not entered again. No calculated sort was written.
+
+### Counts
+
+- Dated statements written: 7 (Jethro’s 42 yeeres before the request; the Passover on the foureteenth day of the second moneth of the second yeere; the 38 yeeres consumed; the nine and thirtieth yeere at Esiongaber; Aaron’s death on the first day of the fifth Moneth of the fortieth yeere; Miriam’s leprosy of seuen daies; the first Moneth of the fortieth yeere in the wilderness of Zin, which is Kadesh)
+- People created: 46 (4 first named before this chapter and reached by a spelling this chapter uses, `amos`, `nathan`, `sehon`, and `theodoretus`; 42 first named in Book II, Part I, Chapter V)
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. Four existing people gained statements: `jethro`, `moses`, `aaron`, and `miriam`. Two existing events gained statements: `wilderness-wanderings` and `return-to-kadesh`. Their `sorting_year` values stay `moses` −1571, `aaron` −1574, `wilderness-wanderings` −1490, and `return-to-kadesh` −1452. `miriam` and `jethro` stay without a sort year. `cambyses` stays −531. Six existing events gained account passages: `exodus` (1), `moses-birth` (1), `moses-flees-to-midian` (1), `burning-bush` (1), `the-flood` (1; p01902, “before and after the floud”), and `wilderness-wanderings` (3). Three events received their first account: `tabernacle-set-up` (1), `return-to-kadesh` (2), and `sihon-of-heshbon-conquered` (6). Sixteen existing people received their first account: `asher`, `benjamin`, `caleb`, `cambyses`, `ephraim`, `gad`, `issachar`, `jehoshaphat`, `levi`, `manasseh`, `manasses`, `miriam`, `naphtali`, `rachel`, `simeon`, and `zebulun`.
+- Name forms added: 25 (6 on the new people, Ieedo the Seer on `ieedo`, Naashon on `naason`, Nathaniel on `nethaneel`, Schon and Sihon on `sehon`, and VAHEBVM on `vaheb`; 19 on people who already had records). No existing form was rewritten. One clause-length form the engine drafted, “Regiments of Manasse”, was dropped before it was committed, because it is a sentence rather than a spelling. Ten spellings the engine’s first-hit gate skipped were added by hand: Belonius, Beniamin, Iosuah, Hieromes, Leui, Nephtali, Rabbi Salomon, Ruben, Sihon, and Zabulon.
+- Accounts: 1,909 passages, on 699 people and 22 events. The first 1,857 passages are unchanged.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. No importer was re-run. The new people are display-only, and none of them has a standby placement. No `year_am` was stored, so no calculated sort changed. `sorting_year` stays `moses` −1571, `aaron` −1574, `cambyses` −531, `wilderness-wanderings` −1490, and `return-to-kadesh` −1452. `jethro` and `miriam` stay without a sort year.
+
+### Cumulative
+
+- Dated statements written: 106 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6, 21 in pass 7, 9 in pass 8, 7 in pass 9)
+- People created: 526
+- Places created: 0
+- Events created: 0
+- Name forms added: 416 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9)
+- Accounts: 1,909 passages on 721 records
+
 ## RESUME POINT
 
-Book II, Part I, Chapter V, sig. 199b. The heading is “CHAP. V. The Storie of the 〈◊ 〉 from the receiuing of the Law to the death of MOSES.” Pass 8 stopped at the end of Chapter IV. The last stored passage is p01857, Book II, Part I, Chapter IV, §. XVI, sig. 198b–199a. Do not start again inside Chapter IV. The contents line already prints “The storie of the Israelites, from the receiuing of the Law, to the death of Moses.” The body heading leaves the nation as a gap. Do not fill that gap.
+Book II, Part I, Chapter VI, sig. 207a. The heading is “CHAP. VI. Of the Nations with whom the Israelites had dealing after their comming out of Aegypt; and of the men of renowne in other Nations, about the times of MOSES and IOSVA, with the summe of the Historie of IOSVA.” Pass 9 stopped at the end of Chapter V. The last stored passage is p01909, Book II, Part I, Chapter V, §. X, sig. 206b–207a. Do not start again inside Chapter V.

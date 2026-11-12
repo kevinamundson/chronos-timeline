@@ -7,11 +7,11 @@
 //
 //   node scripts/raleigh/covered.mjs
 //   node scripts/raleigh/covered.mjs --through=12
-//   node scripts/raleigh/covered.mjs --through=12 --book2=4 --write
+//   node scripts/raleigh/covered.mjs --through=12 --book2=5 --write
 //
 // --through is the last Book I, Part I chapter. It cannot be less than 8, because
 // passes 1–3 already covered Chapters I–VIII. --book2 is the last Book II, Part I
-// chapter. 0 leaves Book II out. Pass 8 stops at Chapter IV.
+// chapter. 0 leaves Book II out. Pass 9 stops at Chapter V.
 // A passage is attached by the name as printed. Groups, places, and unnamed
 // people are not split into individuals. God, Jehovah, and the Holy Ghost are
 // not person records. Ambiguous shared names are left unattached.
@@ -32,8 +32,8 @@ const book2Through = book2Arg ? Number(book2Arg.slice('--book2='.length)) : 0;
 if (!Number.isInteger(throughChapter) || throughChapter < 8 || throughChapter > 12) {
   throw new Error('--through must be an integer from 8 to 12 (Book I, Part I ends at Chapter XII)');
 }
-if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 4) {
-  throw new Error('--book2 must be 0, 1, 2, 3, or 4 (pass 8 stops at Book II, Part I, Chapter IV)');
+if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 5) {
+  throw new Error('--book2 must be 0, 1, 2, 3, 4, or 5 (pass 9 stops at Book II, Part I, Chapter V)');
 }
 const LINK = 'https://texts.earlyprint.org/works/A10357.xml';
 const SRC = 'raleigh-history-of-the-world';
@@ -69,7 +69,7 @@ greeks hebrews israelites jews scythians egyptians aegyptians arcadians phoenici
 non sed cum quod qui quae quam sunt esse est fuit erat autem enim item sic nec vel per pro sub super inter apud sine post ante hoc hac his eos eum eius etiam tamen igitur ergo unde inde ubi tum tunc nam neque atque sicut quia quamquam
 chapter paragraphe paragraphes part section sancto samech timaeo poemandro vual volga sarmatia gosan gozan reseph sepher sephar mesha haran ogygia martyr
 appetite behold daughter diuini gallis genesis nauium occulta omnis potuisset scripsisse wisedome psalme psalmes
-but for that this with from they them their which when where what were was hath have been into upon over after before these those unto vnto shall will would could should other about there then than such only into upon
+but for that this with from they them their which when where what were was hath have been into upon over after before these those unto vnto shall will would could should other about there then than such only into upon now
 st au of to in by or as at an be is it we he ye on so no nor not may can our his her its its`.split(/\s+/).filter(Boolean));
 
 const BLOCK = new Set(['ham', 'cham', 'darius', 'philip', 'xerxes', 'sheba', 'havilah', 'hauilah', 'demetrius', 'demtrius', 'nilus', 'abimelech', 'siculus', 'macedon']);
@@ -646,6 +646,84 @@ const FORCE = {
   dina: 'dinah',
   // Latin in the law chapter, picked up beside a small-caps name. Not people.
   conditor: null, legaliaiusta: null, nobilitie: null,
+  // Book II, Part I, Chapter V. A spelling stays on the person already named.
+  // A region, a book, and a drop-cap are not people. Two men who share a word
+  // are split by a phrase below, not by this token.
+  zabulon: 'zebulun',
+  ruben: 'reuben',
+  nephtali: 'naphtali',
+  iudah: 'judah',
+  judah: 'judah',
+  issachar: 'issachar',
+  simeon: 'simeon',
+  gad: 'gad',
+  ephraim: 'ephraim',
+  asher: 'asher',
+  rachel: 'rachel',
+  caleb: 'caleb',
+  anac: 'anak',
+  leui: 'levi',
+  beniamin: 'benjamin',
+  iosuah: 'iosua',
+  iosva: 'iosua',
+  nabuchadnessar: 'nebuchadnezzar-ii',
+  nebuchadnessar: 'nebuchadnezzar-ii',
+  iehossaphat: 'jehoshaphat',
+  belonius: 'bellonius',
+  cambyses: 'cambyses',
+  hieroms: 'jerome',
+  hieromes: 'jerome',
+  // Yong Adad of Idumaea, who fled from Ioab into Aegypt, is the Hadad already named.
+  adad: 'hadad',
+  siracides: 'siracides',
+  // Schon and Sihon are the Amorite king he also prints Sehon.
+  schon: 'sehon',
+  sihon: 'sehon',
+  sehon: 'sehon',
+  naason: 'naason',
+  naashon: 'naason',
+  nethaneel: 'nethaneel',
+  nathaniel: 'nethaneel',
+  eliab: 'eliab',
+  eliasaph: 'eliasaph',
+  gamliel: 'gamliel',
+  abidam: 'abidam',
+  ahiezer: 'ahiezer',
+  pagiel: 'pagiel',
+  ahira: 'ahira',
+  korah: 'korah',
+  dathan: 'dathan',
+  abiram: 'abiram',
+  gershan: 'gershan',
+  elizaphan: 'elizaphan',
+  merari: 'merari',
+  zuriel: 'zuriel',
+  eleazar: 'eleazar',
+  arad: 'arad',
+  adrichomius: 'adrichomius',
+  zippor: 'zippor',
+  fonseca: 'fonseca',
+  vaheb: 'vaheb',
+  vahebvm: 'vaheb',
+  thaddaeus: 'thaddaeus',
+  theodoret: 'theodoretus',
+  theodoretus: 'theodoretus',
+  nathan: 'nathan',
+  ieedo: 'ieedo',
+  iddo: 'iddo',
+  shemaiah: 'shemaiah',
+  arbah: 'arbah',
+  phineas: 'phineas',
+  cosbi: 'cosbi',
+  eui: 'eui',
+  rekem: 'rekem',
+  zur: 'zur',
+  hur: 'hur',
+  reba: 'reba',
+  moloch: 'moloch',
+  // Suph and SVPH are the region. Not a person.
+  svph: null,
+  suph: null,
 };
 
 const PHRASES = [
@@ -842,6 +920,25 @@ const PHRASES = [
   ['solon', 'solon', 'Solon'],
   ['dartus', 'dartus', 'Dartus'],
   ['tamar', 'tamar', 'Tamar'],
+  // Book II, Part I, Chapter V. The longer phrase wins. A shared word stays
+  // on the man already named, or on the new record the phrase names.
+  ['yet amos doth', 'amos', 'Amos'],
+  ['miriam or mary', 'miriam', null],
+  ['iair the sonne of manasse', 'iair-son-of-manasse', 'Iair'],
+  ['iehu the sonne of hanani', 'jehu-son-of-hanani', 'Iehu'],
+  ['zimri, a prince of the simconites', 'zimri-of-simeon', 'Zimri'],
+  ['balac peor', 'balak', null],
+  ['rabbi salomon', 'rab-solomon', 'Rabbi Salomon'],
+  ['rabbi achiba', 'achiba', 'Rabbi Achiba'],
+  ['ahia silonites', 'ahia-silonites', 'Ahia Silonites'],
+  ['ciccus asculanus', 'ciccus-asculanus', 'Ciccus Asculanus'],
+  ['ieedo the seer', 'ieedo', 'Ieedo'],
+  ['concerning manasse', 'manasses', null],
+  ['sonne of manasse', 'manasseh', null],
+  ['halfe tribe of manasse', 'manasseh', null],
+  ['regiments of manasse', 'manasseh', null],
+  ['israel gaue to his children', 'jacob', null],
+  ['s. augustine', 'augustine', null],
 ].sort((a, b) => b[0].length - a[0].length);
 
 const SHORT = new Set(['og', 'uz', 'dan', 'lot', 'job', 'iob', 'gog', 'lud', 'put', 'hul', 'ham', 'shem', 'sem', 'noe', 'eva', 'eve', 'seth', 'adam', 'saul', 'cain', 'abel', 'ira', 'io']);
@@ -1211,6 +1308,52 @@ for (const [key, bucket] of buckets) {
     fortescue: 'Fortescue',
     'prince-edward': 'Prince Edward',
     danaeus: 'Danaeus',
+    naason: 'Naason',
+    nethaneel: 'Nethaneel',
+    eliab: 'Eliab',
+    eliasaph: 'Eliasaph',
+    gamliel: 'Gamliel',
+    abidam: 'Abidam',
+    ahiezer: 'Ahiezer',
+    pagiel: 'Pagiel',
+    ahira: 'Ahira',
+    korah: 'Korah',
+    dathan: 'Dathan',
+    abiram: 'Abiram',
+    gershan: 'Gershan',
+    elizaphan: 'Elizaphan',
+    merari: 'Merari',
+    zuriel: 'Zuriel',
+    eleazar: 'Eleazar',
+    arad: 'Arad',
+    amos: 'Amos',
+    adrichomius: 'Adrichomius',
+    sehon: 'Sehon',
+    zippor: 'Zippor',
+    fonseca: 'Fonseca',
+    vaheb: 'Vaheb',
+    thaddaeus: 'Thaddaeus',
+    achiba: 'Rabbi Achiba',
+    theodoretus: 'Theodoretus',
+    'ahia-silonites': 'Ahia Silonites',
+    nathan: 'Nathan',
+    ieedo: 'Ieedo',
+    iddo: 'Iddo',
+    shemaiah: 'Shemaiah',
+    'jehu-son-of-hanani': 'Iehu',
+    hanani: 'Hanani',
+    'ciccus-asculanus': 'Ciccus Asculanus',
+    arbah: 'Arbah',
+    'iair-son-of-manasse': 'Iair',
+    phineas: 'Phineas',
+    'zimri-of-simeon': 'Zimri',
+    cosbi: 'Cosbi',
+    eui: 'Eui',
+    rekem: 'Rekem',
+    zur: 'Zur',
+    hur: 'Hur',
+    reba: 'Reba',
+    moloch: 'Moloch',
   }[id] || title;
   newIds.set(key, id);
   created.push(bucket);
@@ -1220,7 +1363,7 @@ for (const [key, bucket] of buckets) {
 
 // Second pass now that new aliases exist. Rebuild account sets from scratch.
 const accounts = new Map();
-const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite', 'haran-son-of-terah', 'midian-son-of-abraham', 'oleaster', 'lybia-daughter-of-epaphus', 'sephora-midwife', 'thua', 'joseph-husband-of-mary', 'virgin-mary', 'perseus', 'andromeda']);
+const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite', 'haran-son-of-terah', 'midian-son-of-abraham', 'oleaster', 'lybia-daughter-of-epaphus', 'sephora-midwife', 'thua', 'joseph-husband-of-mary', 'virgin-mary', 'perseus', 'andromeda', 'hanani', 'amos']);
 function addAccount(id, passage) {
   if (!id || String(id).startsWith('new:')) return;
   if (!people.has(id) && !created.some((c) => c.id === id) && !events.has(id) && !SPECIAL.has(id)) return;
@@ -1319,6 +1462,21 @@ for (const passage of passages) {
     noteSurface('perseus', 'Perseus', passage);
     noteSurface('andromeda', 'Andromeda', passage);
   }
+  // Hanani is inside the Iehu phrase, so the word pass does not see him.
+  if (/iehu the sonne of hanani/.test(t)) {
+    addAccount('hanani', passage);
+    noteSurface('hanani', 'Hanani', passage);
+  }
+  // The prophet Amos. The Cory king amos-d18 keeps the passages he already has.
+  // These sentences are added to the prophet. They are not removed from the king.
+  if (/\b(prophet amos|amos remembreth|of amos|saith amos|yet amos doth)\b/.test(t)) {
+    addAccount('amos', passage);
+    noteSurface('amos', 'Amos', passage);
+  }
+  // Horites descended of Cham. The token Cham stays blocked. This sentence is Ham.
+  if (passage.book === '2' && passage.chapter === '5' && /descended of cham/.test(t)) {
+    addAccount('ham', passage);
+  }
 }
 
 // Events the covered text discusses.
@@ -1403,6 +1561,43 @@ addEvent('arrival-at-sinai', (p) => {
 addEvent('wilderness-wanderings', (p) => /wandered 40 yeare/i.test(p.passage));
 addEvent('fall-of-troy', (p) => /fall of troy|troy itselfe was cast downe/i.test(p.passage));
 addEvent('twelve-tables', (p) => /decem-viri, 303|twelue tables|twelve tables/i.test(p.passage));
+// Book II, Part I, Chapter V. The first spy visit to Kadesh-barnea is not the return.
+addEvent('wilderness-wanderings', (p) => {
+  if (p.book !== '2' || p.chapter !== '5') return false;
+  if (p.kind !== 'body' && p.kind !== 'head') return false;
+  return /consumed 38\. yeeres|fortieth yeere|nine and thirtieth yeere|marches through the wildernesse/i.test(p.passage);
+});
+addEvent('return-to-kadesh', (p) => {
+  if (p.book !== '2' || p.chapter !== '5') return false;
+  if (p.kind !== 'body' && p.kind !== 'head') return false;
+  return /wildernesse of zin, which is kadesh|zin kades/i.test(p.passage);
+});
+addEvent('sihon-of-heshbon-conquered', (p) => {
+  if (p.book !== '2' || p.chapter !== '5') return false;
+  const t = p.passage.toLowerCase();
+  if (!/\b(sehon|schon|sihon)\b/.test(t)) return false;
+  return /warre|iahaz|amorite/.test(t);
+});
+addEvent('tabernacle-set-up', (p) => {
+  if (p.book !== '2' || p.chapter !== '5') return false;
+  return /finished the tabernacle/i.test(p.passage);
+});
+addEvent('moses-birth', (p) => {
+  if (p.book !== '2' || p.chapter !== '5' || p.kind !== 'body') return false;
+  return /male-children of the hebrewes to be slaine|preserue that child/i.test(p.passage);
+});
+addEvent('moses-flees-to-midian', (p) => {
+  if (p.book !== '2' || p.chapter !== '5' || p.kind !== 'body') return false;
+  return /mooued him to flie into midian|flie into midian/i.test(p.passage);
+});
+addEvent('burning-bush', (p) => {
+  if (p.book !== '2' || p.chapter !== '5' || p.kind !== 'body') return false;
+  return /appearing vnto him, he made him know his will/i.test(p.passage);
+});
+addEvent('exodus', (p) => {
+  if (p.book !== '2' || p.chapter !== '5' || p.kind !== 'body') return false;
+  return /ouerthrow of pharao|horse, and chariots/i.test(p.passage);
+});
 for (const event of events.values()) {
   for (const entry of event.chronologies || []) {
     if (entry.source !== SRC || !entry.date) continue;
@@ -1495,6 +1690,8 @@ ensureSpecial('joseph-husband-of-mary', 'Ioseph');
 ensureSpecial('virgin-mary', 'Virgin Mary');
 ensureSpecial('perseus', 'Perseus');
 ensureSpecial('andromeda', 'Andromeda');
+ensureSpecial('hanani', 'Hanani');
+ensureSpecial('amos', 'Amos');
 
 function personDoc(bucket) {
   const title = bucket.title;
@@ -1574,6 +1771,41 @@ function personDoc(bucket) {
   if (id === 'fortescue') description = `${OURS} Fortescue, called a bulwarke of our lawes. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'prince-edward') description = `${OURS} Prince Edward, named in Fortescue his discourse. Not Edward the Fourth, and not Edward the Sixth. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'danaeus') description = `${OURS} Danaeus, named among the collectors on the knowledge of God, and again on the agreement of the Testaments. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'iair-son-of-manasse') description = `${OURS} Iair the sonne of Manasse, who named Hauoth Iair. Not the judge Jair. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'jehu-son-of-hanani') description = `${OURS} Iehu the sonne of Hanani, who wrote the acts of Iehossaphat. Not Jehu king of Israel. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'hanani') description = `${OURS} The father named in the phrase Iehu the sonne of Hanani. Not a second man. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'zimri-of-simeon') description = `${OURS} Zimri, a prince of the Simconites, slain with Cosbi. Not Zimri king of Israel, and not Zimri-Lim. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'zippor') description = `${OURS} Zippor, the father of Balac. Not Zipporah. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'amos') description = `${OURS} The prophet Amos, who remembers the worship of Moloch. Not the eighteenth-dynasty king amos-d18. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'sehon') description = `${OURS} Sehon, king of the Amorites, also printed Schon and Sihon. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'vaheb') description = `${OURS} Vaheb, the Moabite king whom Sehon conquered, and the predecessor of Balac. VAHEBVM is the Latin accusative in the same sentence. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'eliasaph') description = `${OURS} Eliasaph, prince of Gad, and the commander named over the company on the west of the Tabernacle. The text does not say they are two men. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'nathan') description = `${OURS} Nathan the Prophet, named with Ahia Silonites and Ieedo the Seer. The contents line that Ioas did not descend from Nathan is the same name. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'ieedo') description = `${OURS} Ieedo the Seer, in the second of Chronicles 9. Not identified with Iddo. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'iddo') description = `${OURS} Iddo, named with Shemaiah in the second of Chronicles 12. Not identified with Ieedo the Seer. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'phineas') description = `${OURS} Phineas, the sonne of Eleazar. The same paragraph also says the five Midianite princes were slaine by Eleazar. Both names were attached as printed. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'hur') description = `${OURS} Hur, one of the five Midianite dukes slain with Eui, Rekem, Zur, and Reba. No companion of that name was already on record. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'arbah') description = `${OURS} Arbah, called the Father of the gap, and the greatest man of the Anakims. The gap was not filled. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'ahia-silonites') description = `${OURS} Ahia Silonites, who wrote the story of Salomon and foretold the kingdom to the man the gap leaves unnamed. The printed name was not expanded. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'korah') description = `${OURS} Korah, named with Dathan and Abiram in the mutiny. The sonnes of Korah who carried the Sanctuarie were left on this record, and were not moved to Kohath. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'eleazar') description = `${OURS} Eleazar, the sonne of Aaron, who received the priest-hood. The sentence that the five Midianite princes were slaine by Eleazar was left as printed, beside Phineas. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'arad') description = `${OURS} Arad, king of the Canaanites, who set upon Israel at the edge of the Desart. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'fonseca') description = `${OURS} Fonseca, the writer whose route from Mount Hor by the Red Sea he rejects. The printed name was not expanded. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'adrichomius') description = `${OURS} Adrichomius, the geographer he says is deceived about the springs at Gadgad. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'thaddaeus') description = `${OURS} Thaddaeus, whose epistle he says remembers the books of Henoch. The printed name was not changed. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'achiba') description = `${OURS} Rabbi Achiba, on whom others bestow the work of Formation. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'theodoretus') description = `${OURS} Theodoretus, also printed Theodoret. He says the book of Iasher was a commentary upon Iosua. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'shemaiah') description = `${OURS} Shemaiah, named with Iddo. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'ciccus-asculanus') description = `${OURS} Ciccus Asculanus, named with Origen, Iosephus, Hierome, Cedrenus, and Picus Mirandula on the lost books of Salomon. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'moloch') description = `${OURS} Moloch, the idol he says Israel worshipped. Not a man of the camp. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'gershan') description = `${OURS} Gershan, whose sonnes carried parts of the Tabernacle. The printed spelling was not changed. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'merari') description = `${OURS} Merari, whose familie lodged on the north of the Tabernacle under Zuriel. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'eui') description = `${OURS} Eui, one of the five Midianite dukes. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'rekem') description = `${OURS} Rekem, one of the five Midianite dukes. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'zur') description = `${OURS} Zur, one of the five Midianite dukes. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'reba') description = `${OURS} Reba, one of the five Midianite dukes. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'nethaneel') description = `${OURS} Nethaneel, also printed Nathaniel, leader of Issachar. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'naason') description = `${OURS} Naason, also printed Naashon, leader of Iudah. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   const doc = {
     $schema: '../../schema/person.schema.json',
     id,
@@ -1607,7 +1839,9 @@ function formsFor(id, title) {
   const person = nameDoc.people.find((p) => p.id === id);
   const stored = new Set((person?.forms || []).map((f) => f.form.toLowerCase()));
   stored.add((title || '').toLowerCase());
-  const newNote = book2Through === 4
+  const newNote = book2Through === 5
+    ? 'Spelling only. Read in Book II, Part I, Chapter V.'
+    : book2Through === 4
     ? 'Spelling only. Read in Book II, Part I, Chapter IV.'
     : book2Through === 3
     ? 'Spelling only. Read in Book II, Part I, Chapter III.'
@@ -1625,7 +1859,9 @@ function formsFor(id, title) {
     const holder = held.find((p) => p && p.passage.includes(form));
     if (!holder) continue;
     // Earlier passes stored the spellings they read. Add a form only from this pass.
-    const inPass = book2Through === 4
+    const inPass = book2Through === 5
+      ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '5'
+      : book2Through === 4
       ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '4'
       : book2Through === 3
       ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '3'
@@ -1635,6 +1871,8 @@ function formsFor(id, title) {
         ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '1'
         : holder.kind === 'body' && holder.book === '1' && Number(holder.chapter) >= 9;
     if (!inPass) continue;
+    // Chapter V phrases include clauses. A spelling is a name, not a sentence.
+    if (book2Through === 5 && (!/^[A-Z]/.test(form) || form.split(/\s+/).length > 4 || form.includes(',') || / or /i.test(form) || /^(regiments|halfe tribe|sonne|concerning) /i.test(form))) continue;
     stored.add(form.toLowerCase());
     out.push({ form, citation: `${cite(holder)}. The passage prints “${form}”.`, note: newNote });
   }

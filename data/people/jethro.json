@@ -25,6 +25,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "which was 42. yeeres before this request made",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter V, §. II, sig. 200b–201a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. How long before this request he says Jethro was already priest of Midian, when Moses fled and married his daughter. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },
