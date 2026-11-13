@@ -58,6 +58,17 @@
       "link": "https://books.google.com/books/about/Dynasty_of_Slaves.html?id=vqoO0gEACAAJ",
       "source_text_id": "dynasty-of-slaves-2026",
       "note": "Interval he counts back from 966 BC. Not converted. He prints the result as 1446 BC."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "there passed 480. yeeres from the deliuerance of Israel out of Aegypt, vnto the building of the Temple",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VI, §. VIII, sig. 216b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. The interval he keeps from the Exodus to the Temple. Not a yeere of the World. It is not converted. year_am stays null. This does not change the sort."
     }
   ],
   "people": [
@@ -73,7 +84,8 @@
   "sources": [
     "blb-biblehub",
     "jones-chronology-ot-2026",
-    "dynasty-of-slaves-2026"
+    "dynasty-of-slaves-2026",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {

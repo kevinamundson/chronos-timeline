@@ -25,6 +25,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Africanus makes Prometheus farre more ancient, and but 94. yeeres after Ogyges",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VI, §. IV, sig. 210a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. How many yeeres after Ogyges Africanus places him. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },

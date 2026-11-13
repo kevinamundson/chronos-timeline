@@ -7,11 +7,11 @@
 //
 //   node scripts/raleigh/covered.mjs
 //   node scripts/raleigh/covered.mjs --through=12
-//   node scripts/raleigh/covered.mjs --through=12 --book2=5 --write
+//   node scripts/raleigh/covered.mjs --through=12 --book2=6 --write
 //
 // --through is the last Book I, Part I chapter. It cannot be less than 8, because
 // passes 1–3 already covered Chapters I–VIII. --book2 is the last Book II, Part I
-// chapter. 0 leaves Book II out. Pass 9 stops at Chapter V.
+// chapter. 0 leaves Book II out. Pass 10 stops at Chapter VI.
 // A passage is attached by the name as printed. Groups, places, and unnamed
 // people are not split into individuals. God, Jehovah, and the Holy Ghost are
 // not person records. Ambiguous shared names are left unattached.
@@ -32,8 +32,8 @@ const book2Through = book2Arg ? Number(book2Arg.slice('--book2='.length)) : 0;
 if (!Number.isInteger(throughChapter) || throughChapter < 8 || throughChapter > 12) {
   throw new Error('--through must be an integer from 8 to 12 (Book I, Part I ends at Chapter XII)');
 }
-if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 5) {
-  throw new Error('--book2 must be 0, 1, 2, 3, 4, or 5 (pass 9 stops at Book II, Part I, Chapter V)');
+if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 6) {
+  throw new Error('--book2 must be 0, 1, 2, 3, 4, 5, or 6 (pass 10 stops at Book II, Part I, Chapter VI)');
 }
 const LINK = 'https://texts.earlyprint.org/works/A10357.xml';
 const SRC = 'raleigh-history-of-the-world';
@@ -724,6 +724,147 @@ const FORCE = {
   // Suph and SVPH are the region. Not a person.
   svph: null,
   suph: null,
+  // Book II, Part I, Chapter VI. A Latin clause, an ordinal heading, a city, and
+  // a nation are not people. Hermes and Trismegistus stay on Mercurius.
+  adinuenta: null,
+  fourthly: null,
+  thirdly: null,
+  secondly: null,
+  hazor: null,
+  madianites: null,
+  suydas: 'suidas',
+  svydas: 'suidas',
+  trismegistus: 'mercurius',
+  trismegistvs: 'mercurius',
+  hermes: 'mercurius',
+  mercury: 'mercurius',
+  mercurie: 'mercurius',
+  mercvry: 'mercurius',
+  mercuries: 'mercurius',
+  mercvries: 'mercurius',
+  iosva: 'iosua',
+  iosus: 'iosua',
+  iosuas: 'iosua',
+  othoniel: 'othoniel',
+  sisara: 'sisara',
+  barac: 'barak',
+  debora: 'deborah',
+  iael: 'iael',
+  rahab: 'rahab',
+  hamor: 'hamor',
+  hemor: 'hamor',
+  adonizedek: 'adonizedek',
+  adonibezek: 'adonibezek',
+  hoham: 'hoham',
+  piram: 'piram',
+  iapia: 'iapia',
+  deber: 'debir',
+  debir: 'debir',
+  iobab: 'jobab',
+  atlas: 'atlas',
+  cepheus: 'cepheus',
+  cephevs: 'cepheus',
+  phaeton: 'phaeton',
+  jannes: 'jannes',
+  iannes: 'jannes',
+  jambres: 'jambres',
+  iambres: 'jambres',
+  iapetus: 'iapetus',
+  minos: 'minos',
+  argus: 'argus',
+  pandora: 'pandora',
+  pyrrha: 'pyrrha',
+  hellen: 'hellen',
+  europa: 'europa',
+  dardanus: 'dardanus',
+  ficinus: 'ficinus',
+  ficinvs: 'ficinus',
+  sanchoniaton: 'sanchoniathon',
+  sanconiatho: 'sanchoniathon',
+  taautus: 'taautus',
+  thoyth: 'taautus',
+  thoot: 'taautus',
+  thot: 'taautus',
+  sthenelus: 'sthenelus',
+  lynceus: 'lynceus',
+  amintas: 'amintas',
+  corax: 'corax',
+  ericthonius: 'ericthonius',
+  nun: 'nun-father-of-joshua',
+  hobab: 'hobab',
+  oreb: 'oreb',
+  zeb: 'zeb',
+  zebah: 'zebah',
+  salmunna: 'zalmunna',
+  salmana: 'zalmunna',
+  nabaioth: 'nabaioth',
+  nabeth: 'nabaioth',
+  kedar: 'kedar',
+  adbeel: 'adbeel',
+  mibsam: 'mibsam',
+  mishma: 'mishma',
+  duma: 'dumah',
+  massa: 'massa',
+  hadar: 'hadar',
+  chadar: 'hadar',
+  thema: 'tema',
+  ietur: 'jetur',
+  naphri: 'naphish',
+  cadma: 'kedemah',
+  tohu: 'tohu',
+  adath: 'adath',
+  elou: 'elou',
+  aholibamah: 'aholibamah',
+  zibeon: 'zibeon',
+  oceanus: 'oceanus',
+  hesperus: 'hesperus',
+  archas: 'archas',
+  endymion: 'endymion',
+  crotopus: 'crotopus',
+  melantho: 'melantho',
+  delphus: 'delphus',
+  idomeneus: 'idomeneus',
+  radamanthus: 'rhadamanthus',
+  sarpedon: 'sarpedon',
+  phoenix: 'phoenix',
+  perithous: 'perithous',
+  xanthus: 'xanthus',
+  asterius: 'asterius',
+  calcidius: 'calcidius',
+  iamblicus: 'iamblichus',
+  iamblichus: 'iamblichus',
+  menaetus: 'menaetus',
+  syracides: 'syracides',
+  clearchus: 'clearchus',
+  megastenes: 'megasthenes',
+  elanicus: 'elanicus',
+  acusilaus: 'acusilaus',
+  estieus: 'estieus',
+  hecataeus: 'hecataeus',
+  idanthura: 'idanthura',
+  orontopagas: 'orontopagas',
+  xyphodres: 'xyphodres',
+  eupolemus: 'eupolemus',
+  nicephorus: 'nicephorus',
+  reusner: 'reusner',
+  masseus: 'masseus',
+  massius: 'masseus',
+  maimonius: 'maimonius',
+  bucholzer: 'bucholcerus',
+  caietanus: 'caietan',
+  caictan: 'caietan',
+  almerick: 'almerick',
+  elhadech: 'elhadech',
+  sanar: 'sanar',
+  syracon: 'syracon',
+  seladine: 'seladine',
+  eugenius: 'eugenius',
+  amurath: 'amurath',
+  godfrey: 'godfrey',
+  horam: 'horam-of-gezer',
+  asclepius: 'asclepius',
+  stephen: 'stephen',
+  arad: 'arad',
 };
 
 const PHRASES = [
@@ -939,9 +1080,140 @@ const PHRASES = [
   ['regiments of manasse', 'manasseh', null],
   ['israel gaue to his children', 'jacob', null],
   ['s. augustine', 'augustine', null],
+  // Book II, Part I, Chapter VI. The longer phrase wins. Two Iabins and two
+  // Deucalions stay apart. A nation, a city, and a Latin clause are blocked.
+  ['iabin the second', 'jabin-the-second', 'Iabin the second'],
+  ['this iabin, barac', 'jabin-the-second', null],
+  ['peace with iabin the second', 'jabin-the-second', null],
+  ['iabin of hazor', 'jabin-of-hazor', 'Iabin'],
+  ['iabin, king of hazor', 'jabin-of-hazor', 'Iabin'],
+  ['guided by the ouer-late', 'jabin-of-hazor', null],
+  ['ouerthrew iabin, and his confederates', 'jabin-of-hazor', null],
+  ['deucalion the sonne of minos', 'deucalion-son-of-minos', 'Deucalion'],
+  ['this later deucalion', 'deucalion-son-of-minos', 'Deucalion'],
+  ['some other deucalion', 'deucalion-son-of-minos', 'Deucalion'],
+  ['hermes trismegistus', 'mercurius', null],
+  ['mercurius trismegistus', 'mercurius', null],
+  ['this mercurie or hermes', 'mercurius', null],
+  ['this hermes was moses', 'mercurius', null],
+  ['heber the kenite', 'heber-the-kenite', null],
+  ['wife of heber the kenite', 'heber-the-kenite', null],
+  ['hamor or hemor', 'hamor', 'Hamor'],
+  ['his sonne sichem', 'sichem-son-of-hamor', 'Sichem'],
+  ['sonne sichem', 'sichem-son-of-hamor', 'Sichem'],
+  ['adonizedek king', 'adonizedek', 'Adonizedek'],
+  ['adonizedek the iebusite', 'adonizedek', 'Adonizedek'],
+  ['iabin the second king of hazor', 'jabin-the-second', 'Iabin the second'],
+  ['horam king of gezar', 'horam-of-gezer', 'Horam'],
+  ['almerick the fiftieth king', 'almerick', 'Almerick'],
+  ['caliph elhadech', 'elhadech', 'Elhadech'],
+  ['soldan sanar', 'sanar', 'Sanar'],
+  ['turke syracon', 'syracon', 'Syracon'],
+  ['nephew seladine', 'seladine', 'Seladine'],
+  ['eugenius the pope', 'eugenius', 'Eugenius'],
+  ['amurath the turke', 'amurath', 'Amurath'],
+  ['seder ollam rabbi', 'seder-ollam-rabbi', 'Seder Ollam Rabbi'],
+  ['ioannes lucidus', 'ioannes-lucidus', 'Ioannes Lucidus'],
+  ['philo biblius', 'philo-biblius', 'Philo Biblius'],
+  ['philo iudaeus', 'philo', null],
+  ['diogenes laertius', 'diogenes-laertius', 'Diogenes Laertius'],
+  ['eusebius caesariensis', 'eusebius', null],
+  ['hieronymus aegyptius', 'hieronymus-aegyptius', 'Hieronymus Aegyptius'],
+  ['isacius tzetzes', 'isacius-tzetzes', 'Isacius Tzetzes'],
+  ['idanthura, king of the scythians', 'idanthura', 'Idanthura'],
+  ['martyr stephen', 'stephen', 'Stephen'],
+  ['liber pater', 'dionysus', null],
+  ['dionysius otherwise liber pater', 'dionysus', null],
+  ['asterius king of creta', 'asterius', 'Asterius'],
+  ['sonne of nun', 'nun-father-of-joshua', 'Nun'],
+  ['iosua the sonne of nun', 'iosua', null],
+  ['raguel surnamed gethegleus', 'jethro', null],
+  ['called iethro in exodus', 'jethro', null],
+  ['father raguels surname', 'jethro', null],
+  ['sonne of dathan, the grand-child', 'dathan-ancestor-of-jethro', 'Dathan'],
+  ['grand-child of iexanis', 'jokshan', null],
+  ['ioksham, the great grand-child', 'jokshan', null],
+  ['this hobab had seuen', 'hobab', 'Hobab'],
+  ['if hee were not the same with hobab', 'hobab', 'Hobab'],
+  ['eui or euis', 'eui', null],
+  ['rekam or recem', 'rekem', null],
+  ['zebah and salmana', 'zalmunna', 'Salmunna'],
+  ['salmana, or salmunna', 'zalmunna', 'Salmunna'],
+  ['oreb and zeb', 'oreb', 'Oreb'],
+  ['zebah and salmunna', 'zalmunna', 'Salmunna'],
+  ['bucholzer and reusner', 'bucholcerus', null],
+  ['caietanus', 'caietan', null],
+  ['caictan', 'caietan', null],
+  ['masseus sixe and twentie', 'masseus', 'Masseus'],
+  ['cited by massius', 'masseus', 'Massius'],
+  ['maimonius cited', 'maimonius', 'Maimonius'],
+  ['godfrey brake faith', 'godfrey', 'Godfrey'],
+  ['after godfrey brake', 'godfrey', 'Godfrey'],
+  ['william of tyre', 'william-of-tyre', null],
+  ['adath, the daughter of elou', 'adath', 'Adath'],
+  ['daughter of elou', 'elou', 'Elou'],
+  ['aholibamah, the grand child of zibeon', 'aholibamah', 'Aholibamah'],
+  ['zibeon the heuite', 'zibeon', 'Zibeon'],
+  ['mother hagar', 'hagar', null],
+  ['nabaioth the eldest', 'nabaioth', 'Nabaioth'],
+  ['sonne nabeth', 'nabaioth', 'Nabeth'],
+  ['kedar, the second of ismaels', 'kedar', 'Kedar'],
+  ['adbeel sate downe', 'adbeel', 'Adbeel'],
+  ['mibsam was the parent', 'mibsam', 'Mibsam'],
+  ['mishma: who ioyned', 'mishma', 'Mishma'],
+  ['of duma were the dumaeans', 'dumah', 'Duma'],
+  ['of massa the massani', 'massa', 'Massa'],
+  ['hadar, or chadar', 'hadar', 'Hadar'],
+  ['thema begat the themaneans', 'tema', 'Thema'],
+  ['of ietur the ituraeans', 'jetur', 'Ietur'],
+  ['tohu was king', 'tohu', 'Tohu'],
+  ['of naphri the nubeian', 'naphish', 'Naphri'],
+  ['cadma, the last and twelfth', 'kedemah', 'Cadma'],
+  ['oceanus, and hesperus', 'oceanus', 'Oceanus'],
+  ['archas the', 'archas', 'Archas'],
+  ['endymion', 'endymion', 'Endymion'],
+  ['crotopus then ruling', 'crotopus', null],
+  ['after crotopus, sthenelus', 'sthenelus', null],
+  ['pandora for mother', 'pandora', 'Pandora'],
+  ['pyrrha his wife', 'pyrrha', 'Pyrrha'],
+  ['hellen of whom greece', 'hellen', 'Hellen'],
+  ['melantho, on whom neptune', 'melantho', 'Melantho'],
+  ['begot delphus', 'delphus', 'Delphus'],
+  ['brother of idomeneus', 'idomeneus', 'Idomeneus'],
+  ['radamanthus, sarpedon, and minos', 'rhadamanthus', 'Radamanthus'],
+  ['begat on her minos, radamanthus, and sarpedon', 'minos', 'Minos'],
+  ['begat on her radamanthus', 'rhadamanthus', 'Radamanthus'],
+  ['europa the daughter of phoenix', 'europa', 'Europa'],
+  ['rauished europa', 'europa', 'Europa'],
+  ['phoenix and cadmus', 'phoenix', 'Phoenix'],
+  ['theseus and perithous', 'perithous', 'Perithous'],
+  ['calcidius the platonist', 'calcidius', 'Calcidius'],
+  ['iamblicus in his bookes', 'iamblichus', 'Iamblicus'],
+  ['seleucus and menaetus', 'menaetus', 'Menaetus'],
+  ['syracides calleth moses', 'syracides', 'Syracides'],
+  ['clearchus the peripatetick', 'clearchus', 'Clearchus'],
+  ['megastenes, and numenius', 'megasthenes', 'Megastenes'],
+  ['elanicus, acusilaus', 'elanicus', 'Elanicus'],
+  ['estieus, hieronymus', 'estieus', 'Estieus'],
+  ['hecataeus wrote a booke', 'hecataeus', 'Hecataeus'],
+  ['orontopagas, tribune', 'orontopagas', 'Orontopagas'],
+  ['but xyphodres made', 'xyphodres', 'Xyphodres'],
+  ['eupolemus and artapanus', 'eupolemus', 'Eupolemus'],
+  ['nicephorus no lesse', 'nicephorus', 'Nicephorus'],
+  ['reusner but one', 'reusner', 'Reusner'],
+  ['codoman twentie', 'codoman', null],
+  ['amintas, the eighteenth king', 'amintas', 'Amintas'],
+  ['apollo delphicus', 'apollo', null],
+  ['asclepius, hath written', 'asclepius', 'Asclepius'],
+  ['pimander and asclepius', 'asclepius', 'Asclepius'],
+  ['thebanum hercvlem', 'hercules', null],
+  ['aegyptian hercules', 'hercules', null],
+  ['aegyptian hercvles', 'hercules', null],
+  ['godin trinitie', null, null],
+  ['adinuenta sapientiae', null, null],
 ].sort((a, b) => b[0].length - a[0].length);
 
-const SHORT = new Set(['og', 'uz', 'dan', 'lot', 'job', 'iob', 'gog', 'lud', 'put', 'hul', 'ham', 'shem', 'sem', 'noe', 'eva', 'eve', 'seth', 'adam', 'saul', 'cain', 'abel', 'ira', 'io']);
+const SHORT = new Set(['og', 'uz', 'dan', 'lot', 'job', 'iob', 'gog', 'lud', 'put', 'hul', 'ham', 'shem', 'sem', 'noe', 'eva', 'eve', 'seth', 'adam', 'saul', 'cain', 'abel', 'ira', 'io', 'zeb', 'nun']);
 
 function uvSwap(w) {
   return w.replace(/[uv]/g, (ch) => (ch === 'u' ? 'v' : 'u'));
@@ -1363,7 +1635,7 @@ for (const [key, bucket] of buckets) {
 
 // Second pass now that new aliases exist. Rebuild account sets from scratch.
 const accounts = new Map();
-const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite', 'haran-son-of-terah', 'midian-son-of-abraham', 'oleaster', 'lybia-daughter-of-epaphus', 'sephora-midwife', 'thua', 'joseph-husband-of-mary', 'virgin-mary', 'perseus', 'andromeda', 'hanani', 'amos']);
+const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite', 'haran-son-of-terah', 'midian-son-of-abraham', 'oleaster', 'lybia-daughter-of-epaphus', 'sephora-midwife', 'thua', 'joseph-husband-of-mary', 'virgin-mary', 'perseus', 'andromeda', 'hanani', 'amos', 'elou', 'zibeon', 'nun-father-of-joshua', 'acusilaus', 'reusner']);
 function addAccount(id, passage) {
   if (!id || String(id).startsWith('new:')) return;
   if (!people.has(id) && !created.some((c) => c.id === id) && !events.has(id) && !SPECIAL.has(id)) return;
@@ -1476,6 +1748,38 @@ for (const passage of passages) {
   // Horites descended of Cham. The token Cham stays blocked. This sentence is Ham.
   if (passage.book === '2' && passage.chapter === '5' && /descended of cham/.test(t)) {
     addAccount('ham', passage);
+  }
+  // Two Iabins of Hazor. The second is named apart from the first.
+  if (passage.book === '2' && passage.chapter === '6') {
+    if (/iabin the second|this iabin, barac|peace with iabin the second/.test(t)) {
+      addAccount('jabin-the-second', passage);
+      noteSurface('jabin-the-second', 'Iabin', passage);
+    }
+    if (/iabin of hazor|iabin, king of hazor|for hazor before-times|ouerthrew iabin/.test(t) && !/iabin the second/.test(t)) {
+      addAccount('jabin-of-hazor', passage);
+      noteSurface('jabin-of-hazor', 'Iabin', passage);
+    }
+    // Nested in a longer phrase that already took the span.
+    if (/daughter of elou/.test(t)) {
+      addAccount('elou', passage);
+      noteSurface('elou', 'Elou', passage);
+    }
+    if (/zibeon the heuite/.test(t)) {
+      addAccount('zibeon', passage);
+      noteSurface('zibeon', 'Zibeon', passage);
+    }
+    if (/sonne of nun/.test(t)) {
+      addAccount('nun-father-of-joshua', passage);
+      noteSurface('nun-father-of-joshua', 'Nun', passage);
+    }
+    if (/elanicus, acusilaus/.test(t)) {
+      addAccount('acusilaus', passage);
+      noteSurface('acusilaus', 'Acusilaus', passage);
+    }
+    if (/bucholzer and reusner/.test(t)) {
+      addAccount('reusner', passage);
+      noteSurface('reusner', 'Reusner', passage);
+    }
   }
 }
 
@@ -1598,6 +1902,63 @@ addEvent('exodus', (p) => {
   if (p.book !== '2' || p.chapter !== '5' || p.kind !== 'body') return false;
   return /ouerthrow of pharao|horse, and chariots/i.test(p.passage);
 });
+// Book II, Part I, Chapter VI.
+addEvent('conquest-of-canaan', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /kings of the canaanites|victories of iosua|31\. kings|root out this nation|cities of the canaanites vnconquered/i.test(p.passage);
+});
+addEvent('crossing-the-jordan', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /passe the riuer of iordan|past ouer to the other side|stay of the riuer iordan|banks of iordan/i.test(p.passage);
+});
+addEvent('fall-of-jericho', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /\bierico\b/i.test(p.passage);
+});
+addEvent('joshuas-long-day', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /arrest of the sunne|sunne in the firmament/i.test(p.passage);
+});
+addEvent('death-of-joshua', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /iosua liued one hundred|changed this life for a better/i.test(p.passage);
+});
+addEvent('gideon-defeats-midian', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /\b(gideon|gedeon)\b/i.test(p.passage) && /oreb|zebah|salmunna|120000/i.test(p.passage);
+});
+addEvent('midianite-oppression', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /vexed israel seuen yeeres/i.test(p.passage);
+});
+addEvent('deborah-and-barak', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /barac.*debora|incouraged by debora|sisara had by iael/i.test(p.passage);
+});
+addEvent('othniel-judges-israel', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /othoniel/i.test(p.passage);
+});
+addEvent('founding-of-solomons-temple', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /480\. yeeres from/i.test(p.passage);
+});
+addEvent('exodus', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /egression|deliuerance of israel out of aegypt|departure out of aegypt|leauing aegypt/i.test(p.passage);
+});
+addEvent('the-flood', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /floud vniuersall|noahs floud|time of noah, the corruption/i.test(p.passage);
+});
+addEvent('fall-of-troy', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /\btroy\b/i.test(p.passage);
+});
+addEvent('sihon-of-heshbon-conquered', (p) => {
+  if (p.book !== '2' || p.chapter !== '6' || p.kind !== 'body') return false;
+  return /sehon king of essebon|sehon was slaine|og was also slaine/i.test(p.passage);
+});
 for (const event of events.values()) {
   for (const entry of event.chronologies || []) {
     if (entry.source !== SRC || !entry.date) continue;
@@ -1692,6 +2053,16 @@ ensureSpecial('perseus', 'Perseus');
 ensureSpecial('andromeda', 'Andromeda');
 ensureSpecial('hanani', 'Hanani');
 ensureSpecial('amos', 'Amos');
+ensureSpecial('elou', 'Elou');
+ensureSpecial('zibeon', 'Zibeon');
+ensureSpecial('nun-father-of-joshua', 'Nun');
+ensureSpecial('acusilaus', 'Acusilaus');
+ensureSpecial('reusner', 'Reusner');
+ensureSpecial('jabin-of-hazor', 'Iabin');
+ensureSpecial('jabin-the-second', 'Iabin the second');
+ensureSpecial('dathan-ancestor-of-jethro', 'Dathan');
+ensureSpecial('sichem-son-of-hamor', 'Sichem');
+ensureSpecial('deucalion-son-of-minos', 'Deucalion');
 
 function personDoc(bucket) {
   const title = bucket.title;
@@ -1806,6 +2177,13 @@ function personDoc(bucket) {
   if (id === 'reba') description = `${OURS} Reba, one of the five Midianite dukes. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'nethaneel') description = `${OURS} Nethaneel, also printed Nathaniel, leader of Issachar. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'naason') description = `${OURS} Naason, also printed Naashon, leader of Iudah. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'jabin-of-hazor') description = `${OURS} Iabin of Hazor, slaughtered by Iosua. Not Iabin the second, who rebuilt Hazor after Ehud. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'jabin-the-second') description = `${OURS} Iabin the second, who rebuilt Hazor and oppressed Israel twenty yeeres after Ehud. Not the Iabin Iosua slew. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'dathan-ancestor-of-jethro') description = `${OURS} Dathan, named as the father of Raguel in Iethro’s Midianite line. Not Dathan of Korah’s mutiny. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'sichem-son-of-hamor') description = `${OURS} Sichem, the son of Hamor the Heuite, slain with his father. The city was not attached. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'deucalion-son-of-minos') description = `${OURS} The later Deucalion, son of Minos, whom Homer puts in Ulysses’s mouth. Kept apart from Deucalion son of Prometheus. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'nun-father-of-joshua') description = `${OURS} Nun, the father of Iosua. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (id === 'horam-of-gezer') description = `${OURS} Horam, king of Gezar, who came to the relief of Lachis and perished. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   const doc = {
     $schema: '../../schema/person.schema.json',
     id,
@@ -1839,7 +2217,9 @@ function formsFor(id, title) {
   const person = nameDoc.people.find((p) => p.id === id);
   const stored = new Set((person?.forms || []).map((f) => f.form.toLowerCase()));
   stored.add((title || '').toLowerCase());
-  const newNote = book2Through === 5
+  const newNote = book2Through === 6
+    ? 'Spelling only. Read in Book II, Part I, Chapter VI.'
+    : book2Through === 5
     ? 'Spelling only. Read in Book II, Part I, Chapter V.'
     : book2Through === 4
     ? 'Spelling only. Read in Book II, Part I, Chapter IV.'
@@ -1859,7 +2239,9 @@ function formsFor(id, title) {
     const holder = held.find((p) => p && p.passage.includes(form));
     if (!holder) continue;
     // Earlier passes stored the spellings they read. Add a form only from this pass.
-    const inPass = book2Through === 5
+    const inPass = book2Through === 6
+      ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '6'
+      : book2Through === 5
       ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '5'
       : book2Through === 4
       ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '4'
@@ -1871,8 +2253,8 @@ function formsFor(id, title) {
         ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '1'
         : holder.kind === 'body' && holder.book === '1' && Number(holder.chapter) >= 9;
     if (!inPass) continue;
-    // Chapter V phrases include clauses. A spelling is a name, not a sentence.
-    if (book2Through === 5 && (!/^[A-Z]/.test(form) || form.split(/\s+/).length > 4 || form.includes(',') || / or /i.test(form) || /^(regiments|halfe tribe|sonne|concerning) /i.test(form))) continue;
+    // Chapter phrases include clauses. A spelling is a name, not a sentence.
+    if ((book2Through === 5 || book2Through === 6) && (!/^[A-Z]/.test(form) || form.split(/\s+/).length > 4 || form.includes(',') || / or /i.test(form) || /^(regiments|halfe tribe|sonne|concerning) /i.test(form))) continue;
     stored.add(form.toLowerCase());
     out.push({ form, citation: `${cite(holder)}. The passage prints “${form}”.`, note: newNote });
   }

@@ -525,3 +525,48 @@ New records, kept apart from a record that shares the letters: `abidam`, `abiram
 These were not made into people. Suph and SVPH, Zoob, the city Berenice, the river Corys, and the stations Thara, Tharah, and Thare. Thara here is a station in the list of marches. It is not Terah. The books Chozai, Hascirim, Iasher, Canticum Canticorum, and the book of the battles of the Lord. The nations and the giant-groups: Emims, Anakims, Zamzummims, Rephaims, Zuzims, Horites, Simconites, Sidonians, Amalekites, Canaanites, and Amorites. Emoreus and Amoreus are that nation. Moses calls the Basanites Amorites. Geshurites, in the camp order, was left as printed. It was not corrected to Gershon and was not made a person. Gessuri and Machati were not made people. Anabaptist, Brownist, Lutheran, Sectaries, and Electo were not made people. The unnamed daughter of Pharaoh, the unnamed Egyptian, the King of Edumaea besides the EDOM token already on `esau`, the King of Arabia, and the King of Horma were not made people. Horma is the city. Jehovah was already stopped. See N54.
 
 No new event was created. The retrospect in §. X is on `moses-birth`, `moses-flees-to-midian`, `burning-bush`, and `exodus`. The 38 yeeres and the marches are on `wilderness-wanderings`. The second arrival at Zin, which is Kadesh, is on `return-to-kadesh`. Sehon’s war is on `sihon-of-heshbon-conquered`. “finished the tabernacle” is on `tabernacle-set-up`. “before and after the floud” is on `the-flood`. The Chapter III exclusion, which kept the Red Sea tide off that event, was not changed. The same paragraph that says Phineas slew the five princes also says they were “slaine by Eleazar”. Both men are attached, as printed. See N52.
+
+# Pass 10
+
+Range covered: Book II, Part I, Chapter VI, sig. 207a, through §. VIII, sig. 216b–217a. The heading is “CHAP. VI. Of the Nations with whom the Israelites had dealing after their comming out of Aegypt; and of the men of renowne in other Nations, about the times of MOSES and IOSVA, with the summe of the Historie of IOSVA.” One hundred five passages, p01910–p02014. Chapter VII, “CHAP. VII. Of the Tribes of 〈◊ 〉”, opens after sig. 217a and was not entered. No yeere of the World was printed in this chapter. `year_bc_ad` stays null. Lengths already on the chronological table were not entered again.
+
+## Statements written
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book II, Part I, Chapter VI, §. IV, sig. 210a | Africanus makes Prometheus farre more ancient, and but 94. yeeres after Ogyges | prometheus, `dates.birth` (`year_am` null) |
+| Book II, Part I, Chapter VI, §. VIII, sig. 216b | Now Iosua liued one hundred and ten yeeres, eighteene of which he gouerned Israel, and then changed this life for a better | iosua, `dates.death`, and death-of-joshua (`year_am` null). The table 18 was not entered again. |
+| Book II, Part I, Chapter VI, §. VIII, sig. 216b | Iosephus giues him fiue and twentie yeeres, Seder Ollam Rabbi the Authors of the Hebrew Chronologie eight and twentie: And Masseus sixe and twentie: Maimonius cited by Massius, fourteene: Ioannes Lucidus, seuenteene: Caietanus, ten: Eusebius giueth him seuen and twentie: and so doth S. Augustine: Melancthon, two and thirtie: Codoman, fiue and twentie | iosua, `dates.reign` (`year_am` null). Other writers’ lengths. He keeps 18. |
+| Book II, Part I, Chapter VI, §. VIII, sig. 215a | about the fifth yeere of his gouernment; proued in the 14. of Iosua. v. 10 | iosua, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter VI, §. II, sig. 208b | whom hee opprest twentie yeeres, after the death of Ehud | jabin-the-second, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter VI, §. VI, sig. 211a–211b | after him Danaus fiftie yeeres | danaus, `dates.reign` (`year_am` null). Sthenelus’s table 11 was not entered again. |
+| Book II, Part I, Chapter VI, §. VI, sig. 211a–211b | Crotopus King of the Argiues, with whom Moses liued, and in whose time about his tenth yeere Moses died | crotopus, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter VI, §. V, sig. 210b | while Moses yet liued, Deucalion raigned in Thessalie, Crotopus then ruling the Argiues | deucalion, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter VI, §. VI, sig. 211a–211b | the many yeeres which he is said to haue liued, to wit, three hundred yeeres | mercurius, `dates.death` (`year_am` null) |
+| Book II, Part I, Chapter VI, §. VIII, sig. 215b–216a | For though it were 400. yeeres after Iosua, that Saul, euen out of deuotion, slaughtered some of those people | saul, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter VI, §. II, sig. 209a | the foure last named of these Madianite Kings, vexed Israel seuen yeeres | midianite-oppression (`year_am` null) |
+| Book II, Part I, Chapter VI, §. VIII, sig. 216b | there passed 480. yeeres from the deliuerance of Israel out of Aegypt, vnto the building of the Temple | founding-of-solomons-temple (`year_am` null). Not converted. |
+| Book II, Part I, Chapter VI, §. VIII, sig. 216b | there can be no void yeeres found betweene Iosua and Othoniel, vnlesse they be taken out of those eighteen ascribed vnto Iosua | othniel-judges-israel (`year_am` null). The inserted 8, 9, 1, 20, and 33 were not stored as a gap event. |
+| Book II, Part I, Chapter VI, §. VIII, sig. 214b | in the one and fortieth yeere of the Egression, in the first moneth called Nisan, or March, Iosua the sonne of Nun | crossing-the-jordan (`year_am` null). The table already prints 41 in the Exodus column on Iosua. |
+
+Joshua’s sort stays on the table year already stored. Prometheus, Jabin the second, Crotopus, Mercurius, and the new people stay without a sort year. `saul`, `danaus`, `deucalion`, `midianite-oppression`, `founding-of-solomons-temple`, `death-of-joshua`, `othniel-judges-israel`, and `crossing-the-jordan` keep the sorts they already had. No calculated sort was written.
+
+## Figures that were not entered
+
+- Chapter VI, §. VIII, sig. 216b: the 18 yeeres of Joshua’s rule, and Sthenelus’s 11. Both are already the table lengths. They were not entered again.
+- Chapter VI, §. VIII, sig. 216b: Eusebius’s 8 yeeres between Joshua and Othniel, Bunting’s 9, Bucholzer and Reusner’s 1, Codoman’s 20, Nicephorus’s 33. No gap event was made. See N57.
+- Chapter VI, §. II, sig. 208b: Adonibezek “cut off the thumbs … of 70. Kings.” A count of kings.
+- Chapter VI, §. II, sig. 209a: “there perished 120000. of the 〈◊ 〉 and their Confederates.” A count of men.
+- Chapter VI, §. VIII, sig. 215a: “fiue of those 31. Kings.” A count of kings.
+- Chapter VI, §. VII, sig. 214a: Hermes “wrote of that subiect 36525. Bookes,” and “36. of Physicke sixe bookes; of the orders of Priests ten; and of Astrologie foure.” Counts of books.
+- Chapter VI, §. VIII, sig. 216b: “Hierusalem itselfe did the Iebusites defend aboue foure hundred yeeres, euen till Dauids time.” No Jerusalem-held event was made. See N57.
+- Chapter VI, §. VIII, sig. 214b: the sixth, ninth, tenth, and fourteenth days of the first moneth of the 41st yeere of the Egression. Days of the crossing and the Passover at Gilgal. The 41 is already the table Exodus-column figure on `iosua`. See N57.
+- Chapter VI, §. VI, sig. 211a–211b: Cicero’s “siue Mercuries.” A count of men of one name, not a year.
+
+## Names
+
+A named individual received a person when no record already held that name. Two Iabins of Hazor were kept apart. The later Deucalion, son of Minos, was kept apart from Deucalion son of Prometheus. Dathan in Jethro’s line is `dathan-ancestor-of-jethro`, not Korah’s Dathan. Sichem son of Hamor is `sichem-son-of-hamor`. Nun father of Joshua is `nun-father-of-joshua`. Hermes, Trismegistus, Ter maximus, and Mercurie stay on `mercurius`. See N55, N56, and N58.
+
+`iosva`, `iosus`, and `iosuas` are on `iosua`. `barac` is on `barak`. `debora` is on `deborah`. `sisara` is on `sisara`. `gedeon` was already mapped. `suydas` is on `suidas`. `bucholzer` is on `bucholcerus`. `caietanus` and `caictan` are on `caietan`. `sanchoniaton` and `sanconiatho` are on `sanchoniathon`. Nabeth and Nabaioth are `nabaioth`. Recem is on `rekem`. Salmana and Salmunna are `zalmunna`.
+
+These were not made into people. The nations: Canaanites, Madianites, Amalekites, Ismaelites, Moabites, Ammonites, Edomites, Kenites, Anakims, Horites, Heuites, Iebusites, Zidonians, Philistims, Gibeonites. The cities Hazor, Hebron, Iarmuth, Lachis, Eglon, Hierusalem, Petra, Gilgal, Ierico, Ai. The Latin clause Adinuenta. The ordinals Secondly, Thirdly, Fourthly. The five Mercuries besides the one record. See N58.

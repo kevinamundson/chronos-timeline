@@ -14,6 +14,8 @@ Pass 8 (Book II, Part I, Chapter IV) adds thirty-four words those tables do not 
 
 Pass 9 (Book II, Part I, Chapter V) adds one word those tables do not list. It stays. It is not flagged. Through that chapter the inventory is 434 distinct words: 407 change, 23 stay, and the same 4 flagged. The new row is under "Pass 9".
 
+Pass 10 (Book II, Part I, Chapter VI) adds twenty words those tables do not list. Sixteen change. Four stay. None of the twenty is flagged. `dumeth` is the city. `alsovseth` is also vseth printed as one word. Through that chapter the inventory is 454 distinct words: 423 change, 27 stay, and the same 4 flagged. The new rows are under "Pass 10".
+
 ## Decisions
 
 - hath becomes has. It is the irregular third person of have. It does not end in -eth. An all-capital HATH becomes HAS. The capitals stay (open question N17).
@@ -33,6 +35,8 @@ Pass 9 (Book II, Part I, Chapter V) adds one word those tables do not list. It s
 - Cheareth is the brook Cherith ("the Riuer Cheareth"), not the verb cheer. It stays.
 - Beth stays. The hyphen in Beth-Peor and Beth-peor makes the token Beth. It is the place, not a verb.
 - seedeth becomes seeds. In this book it is the verb in "the hearbe, which seedeth seede".
+- Dumeth stays. It is the city, “the Citie Dumeth”.
+- alsovseth stays. The printed letters are also vseth as one word, like heioyneth. No space was added.
 
 ## Flagged
 
@@ -519,3 +523,30 @@ One word appears in Book II, Part I, Chapter V and in no earlier stored passage.
 | Printed | Count | Modern | Reason | Sample |
 |---|---:|---|---|---|
 | beth | 2 | beth | kept: place Beth-peor; the hyphen makes the token Beth. Printed Beth-Peor and Beth-peor | p01906: ship of the true God, to the seruice of Beth-Peor: and to the rest of |
+
+## Pass 10
+
+Twenty words appear in Book II, Part I, Chapter VI and in no earlier stored passage. Counts are in those 105 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| adhereth | 1 | adheres | verb adhere → adheres | p02012: es eight yeere, to which Arius Montanus adhereth; and for which hee giueth his reason in |
+| admitteth | 1 | admits | verb admit → admits | p02001: ught, as it taketh away all euasion, it admitteth no distinction, nor leaueth open any ho |
+| alsovseth | 1 | alsovseth | kept: printed as one word; it reads as also vseth, and no space was added | p01975: nd euill doers: and so by Vatablus, who alsovseth the word Magi. The Greeke itselfe seeme |
+| challengeth | 1 | challenges | verb challenge → challenges | p01963:  of which Archas the 〈◊ 〉 of Orchomenus challengeth the inuention. Of this 〈◊ 〉 〈◊ 〉 in Pel |
+| commenteth | 1 | comments | verb comment → comments | p01970:  Mercurie, vpon part of whose workes he Commenteth, to haue beene foure descents after Mos |
+| conuinceth | 2 | convinces | verb convince → convinces | p01914: child of that name, yet manifest reason conuinceth it to haue been otherwise. For the Isra |
+| designeth | 1 | designs | verb design → designs | p01986: ll, and Aenygmaticall: Imitatiue, which designeth things by characters, like to the thing |
+| dumeth | 1 | dumeth | kept: city Dumeth, not a verb | p01946: he Adubens and Raabens: where the Citie Dumeth sometimes stood. |
+| excuseth | 1 | excuses | verb excuse → excuses | p01994: es contempt of their superiours. Thomas excuseth it in this sort; That the Israelites kn |
+| feareth | 1 | fears | verb fear → fears | p01971: her, which we doe. The same Father also feareth not to number him among the Sybils and |
+| fiftieth | 1 | fiftieth | kept: ordinal | p02006: hich wrote that 〈◊ 〉) that Almerick the fiftieth King after Godfrey brake faith with the |
+| handleth | 1 | handles | verb handle → handles | p01984: e Naturall part of this Wisedome, which handleth the principles, causes, elements, and o |
+| honoureth | 1 | honours | verb honour → honours | p01979: s, and Sybilla haue approued. 〈◊ 〉 also honoureth Abraham. Hecataeus wrote a Booke of him |
+| imitateth | 1 | imitates | verb imitate → imitates | p01975: th himselfe into an Angel of light: and imitateth in all he can the wayes and workings of |
+| nabeth | 1 | nabeth | kept: name on a person or a name form | p01914:  Chap. 8. §. 3. Of Ismaels eldest Sonne Nabeth sprung the Arabians of Petraea, called |
+| participateth | 1 | participates | verb participate → participates | p01986: e it is written: The Ibis by the Hornet participateth the beauty of the Hawke; which is read |
+| slaieth | 1 | slays | verb slay → slays | p02006: and that the mouth which vttereth them, slaieth the soule: how much more perilous is it |
+| surnameth | 1 | surnames | verb surname → surnames | p01976: g neither that Hercules, which Eusebius surnameth Delphin, famous in 〈◊ 〉; nor that Hercu |
+| sweareth | 3 | swears | verb swear → swears | p02003: s faithlesse men take it, that he which sweareth to a Man, to a Societie, to a State, or |
+| vttereth | 1 | utters | verb utter → utters | p02006:  be destroied, and that the mouth which vttereth them, slaieth the soule: how much more |

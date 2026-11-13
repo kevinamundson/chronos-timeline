@@ -72,6 +72,17 @@
         "citation": null,
         "link": null,
         "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Now Iosua liued one hundred and ten yeeres, eighteene of which he gouerned Israel, and then changed this life for a better",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VI, §. VIII, sig. 216b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. His lifespan. The 18 yeeres of rule are already the table length on this record and were not entered again. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ],
     "reign": [
@@ -118,6 +129,28 @@
         "link": "https://archive.org/details/newanalysisofchr02hale/page/n37/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": "The elders on this line have no separate record."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Iosephus giues him fiue and twentie yeeres, Seder Ollam Rabbi the Authors of the Hebrew Chronologie eight and twentie: And Masseus sixe and twentie: Maimonius cited by Massius, fourteene: Ioannes Lucidus, seuenteene: Caietanus, ten: Eusebius giueth him seuen and twentie: and so doth S. Augustine: Melancthon, two and thirtie: Codoman, fiue and twentie",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VI, §. VIII, sig. 216b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. Other writers’ lengths for his rule. He keeps 18 from the 480 yeeres. Not a yeere of the World. The table 18 was not entered again. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "about the fifth yeere of his gouernment; proued in the 14. of Iosua. v. 10",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VI, §. VIII, sig. 215a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The year of his government in which he made the second division. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },

@@ -24,7 +24,7 @@ import addFormats from 'ajv-formats';
 import { isBlbUrl, isNonBlbScripture, blbFromOsis } from './blb.mjs';
 import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, standbySummaryLine } from './standby/compute.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE, ITALICS_NOTE } from './raleigh/derived-year.mjs';
-import { loadChronologicalTable, yearColumnIndex, yearColumnReport } from './raleigh/table.mjs';
+import { loadChronologicalTable, yearColumnIndex, yearColumnReport, assertJulianSplit } from './raleigh/table.mjs';
 import { loadXml, normalizedDocumentText, normalizeWs, extractPassages, alignStoredPassages, THROUGH_CHAPTER, BOOK2_THROUGH } from './raleigh/xml-text.mjs';
 import { TIERS, personTierSort, tierPick, isJones23 } from './sort-rule.mjs';
 import { assertCalculatedCatalog, calculatedBasisNote } from './calculated/catalog.mjs';
@@ -403,6 +403,7 @@ let raleighDerivedSummary = '';
   const appJs = readFileSync(join(root, 'site/src/app.js'), 'utf8');
   if (!appJs.includes(RALEIGH_DERIVED_NOTE)) err('site/src/app.js', 'timeline tooltip is missing the Raleigh derived-year note');
   const table = loadChronologicalTable();
+  try { assertJulianSplit(); } catch (e) { err('scripts/raleigh/table.mjs', e.message); }
   const report = yearColumnReport(table);
   if (report.missing) err('sources/raleigh/A10357.earlyprint-unadorned.xml', `${report.missing} chronological-table section(s) have no Julian/World year column`);
   for (const flag of report.flags) if (flag.badge === 'mismatch') err('sources/raleigh/A10357.earlyprint-unadorned.xml', `${flag.sig}: ${flag.flag} (${flag.text})`);

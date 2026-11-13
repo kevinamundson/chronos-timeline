@@ -142,7 +142,7 @@ data/                    single source of truth (JSON + generated *-extract.md /
   chronologies.json      sorting_rule + every chronology (one primary: cfah)
   sources.json           every source text with verified URLs, access, licence note
   events/ people/ locations/ maps/   one JSON record per file; id = file name (kebab-case)
-  raleigh-accounts.json  1,909 passages of the 1617 History (Preface, contents, Book I Part I ch. I–XII, Book II Part I ch. I–V) and the records that quote them
+  raleigh-accounts.json  2,014 passages of the 1617 History (Preface, contents, Book I Part I ch. I–XII, Book II Part I ch. I–VI) and the records that quote them
   king-lists.json        CFAH/OSF king-list rows (list-only rows have no person record)
   cfah-charts.json       CFAH chart gallery (links only)
 schema/                  JSON Schema 2020-12 for all of the above (common.schema.json = shared defs)

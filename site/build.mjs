@@ -6,7 +6,8 @@ import { readFileSync, readdirSync, writeFileSync, mkdirSync, rmSync, cpSync, ex
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { BOOKS as BLB_BOOKS, blbFromOsis, blbFromText } from '../scripts/blb.mjs';
-import { loadChronologicalTable, toCsv, toMarkdown, toXls, yearColumnIndex } from '../scripts/raleigh/table.mjs';
+import { loadChronologicalTable, toCsv, toMarkdown, toXls, yearColumnIndex, splitJulianHeading, annotateSplitYear, assertJulianSplit } from '../scripts/raleigh/table.mjs';
+import { createTableLinker } from '../scripts/raleigh/table-links.mjs';
 import { displayNameForm, displaySpelling, renderProse } from '../scripts/raleigh/spelling.mjs';
 import { loadXml, extractPassages, alignStoredPassages, THROUGH_CHAPTER, BOOK2_THROUGH } from '../scripts/raleigh/xml-text.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmHtml, raleighRecordHtml, raleighRecordShort, showsItalicDerived, RALEIGH_DERIVED_NOTE, ITALICS_NOTE } from '../scripts/raleigh/derived-year.mjs';
@@ -18,6 +19,7 @@ import { doreUrls, doreThumbPublicPath, DISPLAY_W, SMALL_W, THUMB_W } from '../s
 import { createNameLinker, unitsForRecord } from '../scripts/names/link.mjs';
 
 assertRaleighDerived();
+assertJulianSplit();
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..');
@@ -60,6 +62,7 @@ for (const [recordId, ids] of Object.entries(raleighAccounts.accounts || {})) {
   }
 }
 const nameLinker = createNameLinker({ people, nameForms, overrides: nameLinkOverrides });
+const tableLinker = createTableLinker({ nameLinker, events });
 const kingListsOf = (id) => kingDoc.lists.filter((l) => l.entries.some((e) => e.person === id || e.event === id));
 
 const byId = {};
@@ -1589,12 +1592,24 @@ ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) =
   const spellHtml = (originalHtml, modernHtml) => (originalHtml === modernHtml
     ? modernHtml
     : `<span class="spell-modern">${modernHtml}</span><span class="spell-original" data-pagefind-ignore="all">${originalHtml}</span>`);
+  const spellLinked = (original, modern, unitId) => {
+    const originalHtml = tableLinker.linkText(original, `${unitId}:original`);
+    const modernHtml = tableLinker.linkText(modern, `${unitId}:modern`);
+    return spellHtml(originalHtml, modernHtml);
+  };
   let tableHasItalic = false;
   const chipLabel = (text) => {
     const t = String(text || '').replace(/^(Iulian|Julian)\.?,?\s*/i, '').replace(/\s+/g, ' ').trim();
     return (t.length > 32 ? `${t.slice(0, 30).trim()}…` : t) || 'Columns';
   };
-  const rowHtml = (row, width, yearIdx) => {
+  const cellTag = (row, inner, { span = 1, down = 1, long = false, cls = '', flag = null } = {}) => {
+    const tag = row.header ? 'th' : 'td';
+    const classes = [long ? 'prose' : '', cls].filter(Boolean).join(' ');
+    const attrs = `${row.header ? ' scope="col"' : ''}${span > 1 ? ` colspan="${span}"` : ''}${down > 1 ? ` rowspan="${down}"` : ''}${classes ? ` class="${classes}"` : ''}`;
+    const flagHtml = flag ? `<div class="note raleigh-flag"><span class="flag flag-oq">${esc(flag.badge || 'Not derived')}</span> ${esc(flag.flag || '')}</div>` : '';
+    return `<${tag}${attrs}>${inner}${flagHtml}</${tag}>`;
+  };
+  const rowHtml = (row, width, yearIdx, sectionIndex) => {
     const parts = [row.header
       ? '<th scope="col" title="1617 sheet signature. This column is not in the printed table.">Sig.</th>'
       : `<th scope="row">${esc(row.sig)}</th>`];
@@ -1606,19 +1621,40 @@ ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) =
       const original = cell?.original || '';
       const modern = cell?.modern || '';
       const long = original.length > 48 || modern.length > 48;
-      let flag = null;
-      let inner = '';
-      if (!row.header && i === yearIdx && (original || modern)) {
-        const a0 = annotateWorldYear(original);
-        const a1 = annotateWorldYear(modern);
-        if (a0.html.includes('<em>') || a1.html.includes('<em>')) tableHasItalic = true;
-        inner = spellHtml(a0.html, a1.html);
-        flag = a0.badge || a0.flag ? a0 : null;
-      } else if (original || modern) inner = spell(original, modern);
-      const tag = row.header ? 'th' : 'td';
-      const attrs = `${row.header ? ' scope="col"' : ''}${span > 1 ? ` colspan="${span}"` : ''}${down > 1 ? ` rowspan="${down}"` : ''}${long ? ' class="prose"' : ''}`;
-      const flagHtml = flag ? `<div class="note raleigh-flag"><span class="flag flag-oq">${esc(flag.badge || 'Not derived')}</span> ${esc(flag.flag || '')}</div>` : '';
-      parts.push(`<${tag}${attrs}>${inner}${flagHtml}</${tag}>`);
+      const unit = `table:${row.sig}:${sectionIndex}:${i}`;
+      if (i === yearIdx) {
+        if (row.header) {
+          const h0 = splitJulianHeading(original);
+          const h1 = splitJulianHeading(modern);
+          parts.push(cellTag(row, spell(h0.julian, h1.julian), { down, cls: 'raleigh-julian' }));
+          parts.push(cellTag(row, spellLinked(h0.rest, h1.rest, `${unit}:world`), { down, long: (h0.rest.length > 48 || h1.rest.length > 48), cls: 'raleigh-world' }));
+        } else if (original || modern) {
+          const a0 = annotateSplitYear(original);
+          const a1 = annotateSplitYear(modern);
+          if (a0.worldHtml.includes('<em>') || a1.worldHtml.includes('<em>')) tableHasItalic = true;
+          const restOf = (worldRaw) => {
+            const m = String(worldRaw || '').match(/^[0-9●◊〈〉]+([\s\S]*)$/);
+            return m ? m[1] : worldRaw || '';
+          };
+          const withLinkedRest = (html, rest, restUnit) => {
+            if (!rest) return html;
+            const encoded = esc(rest);
+            if (html.endsWith(encoded)) return html.slice(0, html.length - encoded.length) + tableLinker.linkText(rest, restUnit);
+            return html;
+          };
+          const world0 = withLinkedRest(a0.worldHtml, restOf(a0.worldRaw), `${unit}:world:original`);
+          const world1 = withLinkedRest(a1.worldHtml, restOf(a1.worldRaw), `${unit}:world:modern`);
+          parts.push(cellTag(row, spell(a0.julian, a1.julian), { down, cls: 'raleigh-julian' }));
+          parts.push(cellTag(row, spellHtml(world0, world1), { down, long, cls: 'raleigh-world', flag: a0.annotation.badge || a0.annotation.flag ? a0.annotation : null }));
+        } else {
+          parts.push(cellTag(row, '', { down, cls: 'raleigh-julian' }));
+          parts.push(cellTag(row, '', { down, cls: 'raleigh-world' }));
+        }
+      } else if (original || modern) {
+        parts.push(cellTag(row, spellLinked(original, modern, unit), { span, down, long }));
+      } else {
+        parts.push(cellTag(row, '', { span, down }));
+      }
       i += span - 1;
     }
     return `<tr>${parts.join('')}</tr>`;
@@ -1636,15 +1672,15 @@ ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) =
     const yearIdx = yearColumnIndex(section);
     return `<section class="card" id="${id}" aria-labelledby="${id}-h"><h2 id="${id}-h">${spell(section.heading.original, section.heading.modern)}</h2>
 <div class="table-wrap raleigh-wrap"><table class="chron raleigh"><caption class="visually-hidden">Sheet ${esc(section.sig)}</caption>
-<thead>${rowHtml(headRow, section.width, yearIdx)}</thead>
-<tbody>${bodyRows.map((row) => rowHtml(row, section.width, yearIdx)).join('')}</tbody></table></div></section>`;
+<thead>${rowHtml(headRow, section.width, yearIdx, i)}</thead>
+<tbody>${bodyRows.map((row) => rowHtml(row, section.width, yearIdx, i)).join('')}</tbody></table></div></section>`;
   }).join('\n');
   const body = `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/chronologies/">Chronologies</a></li><li aria-current="page">A Chronological Table</li></ol></nav>
 <article id="raleigh-table" data-spelling="modern">
 <h1>A Chronological Table</h1>
 <p class="lede">${spell(table.heading.original, table.heading.modern)}</p>
 <section class="card"><p>Sir Walter Raleigh, <i>The History of the World</i> (1617), sheets ${esc(table.signatures[0])}–${esc(table.signatures[1])}. ${src ? ext(src.url, esc(src.title)) : ''}</p>
-<p>The years are the Julian Period and the yeere of the World, as printed. Beside each confirmed yeere of the World this page adds the year of the World and an italic year, for example AM 1656 (<em>2377 BC</em>). ${esc(RALEIGH_DERIVED_NOTE)} His first yeere of the World is taken as 4032 BC: a year before Christ is 4033 minus that yeere, and a year of our Lord, once the count passes 4032, is the yeere of the World minus 4032. There is no year 0. Each end of a printed range is converted on its own. A figure that is illegible, a pair of numbers that do not differ by 682, or a yeere that is not one legible figure, stays as printed and is marked not derived. Two legible figures joined by “or” are each derived and marked. Modern spelling is the same word-by-word modernization used in Raleigh's account. The figures stay as printed, including illegible marks.</p>
+<p>The Julian Period year is its own column. The World column holds the yeere of the World as printed, shown as AM n with an italic year, for example AM 1656 (<em>2377 BC</em>). ${esc(RALEIGH_DERIVED_NOTE)} His first yeere of the World is taken as 4032 BC: a year before Christ is 4033 minus that yeere, and a year of our Lord, once the count passes 4032, is the yeere of the World minus 4032. There is no year 0. Each end of a printed range is converted on its own. A figure that is illegible, a pair of numbers that do not differ by 682, or a yeere that is not one legible figure, stays as printed and is marked not derived. Two legible figures joined by “or” are each derived and marked. A person or event named in a cell links to its page when exactly one record matches; an ambiguous or unmatched name stays plain text. Modern spelling is the same word-by-word modernization used in Raleigh's account. The figures stay as printed, including illegible marks.</p>
 <p>The Sig. column is the 1617 sheet. It is not a column of his table. <a href="/chronologies/#raleigh-history-of-the-world">Raleigh, The History of the World (1614/1617)</a></p>
 <div class="raleigh-toolbar">
 <div class="segmented" role="group" aria-label="Spelling">
@@ -1678,7 +1714,8 @@ document.getElementById('raleigh-table')?.addEventListener('click', (event) => {
 </script>`,
   }));
   const nRows = table.sections.reduce((n, s) => n + s.rows.length, 0);
-  console.log(`Raleigh chronological table: ${table.sections.length} sections, ${nRows} rows (${table.dataRows} under the headings), ${table.signatures[0]}–${table.signatures[1]}`);
+  const tableLinks = tableLinker.report();
+  console.log(`Raleigh chronological table: ${table.sections.length} sections, ${nRows} rows (${table.dataRows} under the headings), ${table.signatures[0]}–${table.signatures[1]}; links ${tableLinks.linked}, unmatched names ${tableLinks.unmatched.length}, ambiguous ${tableLinks.ambiguous.length}`);
 }
 
 // Dynasty of Slaves timeline (Kevin, 2026-11-12). Display only: his printed years, in his order.

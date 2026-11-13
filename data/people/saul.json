@@ -92,6 +92,17 @@
         "link": "https://archive.org/details/newanalysisofchr02hale/page/n37/mode/1up",
         "source_text_id": "hales-new-analysis-1830",
         "note": null
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "For though it were 400. yeeres after Iosua, that Saul, euen out of deuotion, slaughtered some of those people",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VI, §. VIII, sig. 215b–216a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. How many yeeres after Joshua he places Saul’s slaughter of the Gibeonites. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ],
     "death": [
@@ -127,7 +138,8 @@
     "cfah-16-osf",
     "hales-new-analysis-1830",
     "jones-chronology-ot-2026",
-    "blb-biblehub"
+    "blb-biblehub",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [
     "jonathan",
