@@ -12,7 +12,7 @@ Tubal in a passage or note about Cain’s line resolves to Tubal-cain. Otherwise
 - Tubal resolved to Japheth’s son: 40
 - Ambiguous tokens left unlinked: 1084 occurrences, 77 distinct tokens
 - Names that match no record, in the 1617 passages and in summaries and descriptions: 35190 occurrences, 6965 distinct names
-- Capitalized words skipped as citation boilerplate or intake wording: 82426
+- Capitalized words skipped as citation boilerplate or intake wording: 82432
 - Overrides stored: 0
 
 ## Tubal
@@ -126,7 +126,7 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:rachel:dates:birth:1:citation | 1 | …nasty of Slaves, Chapter 2, What Happened After Joseph? |
 | note:person:rachel:summary | 1 | Wife of Jacob, and mother of Joseph and Benjamin. Jones dates her death at Benjamin… |
 | note:person:salitis:dates:reign:1:note | 1 | … Salatis, also spelled Salitis and Saites, with Joseph through the title Shallit. His view. Not merged… |
-| note:person:unas:dates:reign:0:note | 1 | …e the death of Nitocris in 1479 BC; it overlaps Joseph's famine. |
+| note:person:unas:dates:reign:1:note | 1 | …e the death of Nitocris in 1479 BC; it overlaps Joseph's famine. |
 | note:person:virgin-mary:description | 1 | …f the World (1617). The Virgin Mary, named with Ioseph in the flight from Herod. Not Queen Mary. No ye… |
 | p00840 (Book I, Part I, Chapter I, §. VIII, sig. 48b–49a) | 1 | …es euery-where witnesse, as in the blessings of Ioseph, and in the 104. Psalme. * By these springs sha… |
 | p00930 (Book I, Part I, Chapter III, §. V, sig. 63a–63b) | 2 | …t the Floud made no such destroying alteration, Ioseph. auoweth that one of those pillars erected by S… |
@@ -984,7 +984,7 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:event:reign-of-semiramis-i:description | 1 | …the end of the famine of Djoser to the death of Uenephes in 1994 BC. |
 | note:event:reign-of-semiramis-i:summary | 1 | …I, 2036–1994 BC; CFAH-6 links her with Merneith/Uenephes of Egypt. |
 | note:person:nebka:dates:death:0:citation | 1 | …A. Djoser’s Famine culminated with the death of Uenephes: 2001–1994 BC" |
-| note:person:nebka:dates:reign:0:citation | 1 | …A. Djoser’s Famine culminated with the death of Uenephes: 2001–1994 BC" |
+| note:person:nebka:dates:reign:1:citation | 1 | …A. Djoser’s Famine culminated with the death of Uenephes: 2001–1994 BC" |
 | note:person:uenephes:dates:reign:0:note | 1 | Row "Uenephes / Djet / Merneith" of Table 6 (Egypt Dynasty 1 … |
 | note:person:venephes:summary | 1 | Venephes is named in Cory, Ancient Fragments (1876, ed. … |
 

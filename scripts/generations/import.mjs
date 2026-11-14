@@ -33,7 +33,7 @@ const save = (id) => { recs[id].dirty = true; };
 const yl = (y, e) => (y == null ? '—' : (e != null && e !== y ? `${Math.abs(y)}${y < 0 && e < 0 ? '' : y < 0 ? ' BC' : ''}–${Math.abs(e)} ${e < 0 ? 'BC' : 'AD'}`.replace(/^(\d+)–(\d+) AD$/, 'AD $1–$2') : y < 0 ? `${-y} BC` : `AD ${y}`));
 const TIER_MATCH = [
   ['cfah-anchor', 1, 'cfah', (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point'],
-  ['cfah-table1', 2, 'cfah', (e) => e.source === 'cfah' && (e.cfah_basis === 'table1_baseline' || e.cfah_basis === 'beckman_reply')],
+  ['cfah-table1', 2, 'cfah', (e) => e.source === 'cfah' && ['table1_baseline', 'paper_text', 'beckman_reply'].includes(e.cfah_basis)],
   ['ussher-jones', 3, 'ussher-jones', (e) => e.source === 'ussher-jones'],
   ['ussher', 4, 'ussher', (e) => e.source === 'ussher'],
 ];

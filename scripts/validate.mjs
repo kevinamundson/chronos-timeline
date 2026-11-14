@@ -9,7 +9,8 @@
 //     KJV/Gutenberg, BibleGateway and other Bible-text links are rejected; scripture_refs must map to a BLB chapter
 //   - masoretic-genealogy AM figures for the Genesis 5 line match the KJV/MT numbers
 //   - sorting_year follows the 4-tier fallback (data/chronologies.json sorting_rule):
-//       1 cfah (cfah_basis=anchor_point) > 2 cfah (cfah_basis=table1_baseline, then beckman_reply)  [cfah_basis=paper_text never sorts]
+//       Tier 1 · CFAH anchor point (cfah_basis=anchor_point) > Tier 2 · CFAH non-anchor dates (table1_baseline, paper_text,
+//       beckman_reply; order inside the tier: sort-rule.mjs orderCfah) > Tier 3 · Floyd Nolen Jones > Tier 4 · Ussher, Annals of the World
 //       > 3 ussher-jones > 4 ussher; else "derived" (events) or "none" (people, null)
 //     Events use chronologies[]. People use a tier-ranked dates.birth year.
 //     A person with dates.reign and no tier birth sorts on the reign-start year
@@ -26,7 +27,7 @@ import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, stan
 import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE, ITALICS_NOTE } from './raleigh/derived-year.mjs';
 import { loadChronologicalTable, yearColumnIndex, yearColumnReport, assertJulianSplit } from './raleigh/table.mjs';
 import { loadXml, normalizedDocumentText, normalizeWs, extractPassages, alignStoredPassages, THROUGH_CHAPTER, BOOK2_THROUGH } from './raleigh/xml-text.mjs';
-import { TIERS, personTierSort, tierPick, isJones23 } from './sort-rule.mjs';
+import { TIERS, TIER_LABEL, personTierSort, tierPick, isJones23, orderCfah } from './sort-rule.mjs';
 import { assertCalculatedCatalog, calculatedBasisNote } from './calculated/catalog.mjs';
 import { doreUrls, IIIF_BASE, DISPLAY_W, DORE_THUMB_DIR, doreThumbName } from './dore/urls.mjs';
 import { parseDoreFileName } from './dore/parse.mjs';
@@ -165,13 +166,12 @@ function checkEntries(rel, label, entries) {
     if (e.date !== null && !e.citation) err(rel, `${label}: dated entry without citation`);
     if (e.date === null && e.source === 'cfah' && !/pending CFAH reference/.test(e.note || '')) err(rel, `${label}: null cfah entry must note "pending CFAH reference"`);
   }
-  // Reply to Beckman (tier 2): cites one of the three Griffith & White papers, and never sits ahead of a CFAH-1 Table 1 row,
-  // so a Table 1 year governs within tier 2 when both are present.
+  // Reply to Beckman (tier 2): cites one of the three Griffith & White papers.
   const list = entries || [];
   for (const e of list) if (e.source === 'cfah' && e.cfah_basis === 'beckman_reply' && !/^griffith-beckman-reply-[123]$/.test(e.source_text_id || '')) err(rel, `${label}: beckman_reply entry must set source_text_id griffith-beckman-reply-1, -2, or -3`);
-  const firstBeckman = list.findIndex((e) => e.source === 'cfah' && e.cfah_basis === 'beckman_reply');
-  const lastTable1 = list.map((e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline').lastIndexOf(true);
-  if (firstBeckman !== -1 && lastTable1 > firstBeckman) err(rel, `${label}: a CFAH-1 Table 1 entry must come before any Reply to Beckman entry`);
+  // Tier 2 · CFAH non-anchor dates: stored in the documented order (CFAH-1 Table 1, then CFAH papers latest first, then the Reply to Beckman).
+  { const want = orderCfah(list).filter((e) => e.source === 'cfah' && e.date != null), have = list.filter((e) => e.source === 'cfah' && e.date != null);
+    if (want.some((e, i) => e !== have[i])) err(rel, `${label}: CFAH entries are not in the documented order (Tier 1 · CFAH anchor point, then Tier 2 · CFAH non-anchor dates: Table 1, CFAH papers latest first, Reply to Beckman); rerun node scripts/cfah/import.mjs`); }
   const cf = (entries || []).find((e) => e.source === 'cfah');
   return cf && cf.year_bc_ad != null ? cf.year_bc_ad : null;
 }
@@ -256,6 +256,7 @@ for (const { rel, doc, kind } of Object.values(records)) {
 // else provisional, else one calculated year, else none.
 const ruleTiers = (chronDoc.sorting_rule?.tiers || []).map((t) => t.tier).join(',');
 if (ruleTiers !== TIERS.map((t) => t.tier).join(',')) err('data/chronologies.json', `sorting_rule tiers must be ${TIERS.map((t) => t.tier).join(' > ')}`);
+for (const t of chronDoc.sorting_rule?.tiers || []) if (t.label !== TIER_LABEL[t.tier]) err('data/chronologies.json', `sorting_rule tier ${t.tier} label must be "${TIER_LABEL[t.tier]}" (Kevin, 2026-11-13)`);
 const tierCount = {};
 let reignStartCount = 0;
 for (const { rel, doc, entries, kind } of sortingTargets) {

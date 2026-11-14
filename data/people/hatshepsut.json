@@ -4,20 +4,14 @@
   "type": "person",
   "title": "Hatshepsut",
   "summary": "King listed in CFAH-8 Table 14 (Egypt Dynasty 18).",
-  "description": "Ruler of Egypt Dynasty 18. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-8 (Table 14, \"CFAH-Corrected Reigns for Dynasty 18\"); its dates are display only.",
-  "sorting_year": null,
+  "description": "Ruler of Egypt Dynasty 18. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-8 (Table 14, \"CFAH-Corrected Reigns for Dynasty 18\").",
+  "sorting_year": -1002,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
-  },
-  "standby": {
-    "year_bc_ad": -1002,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Year BC: 1002-980; Yrs: 13, 22, 35). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Year BC: 1002-980; Yrs: 13, 22, 35. Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "father": null,
   "children": [],

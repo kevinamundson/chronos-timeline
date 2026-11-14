@@ -235,16 +235,16 @@ const osis = (ref) => {
 };
 const scriptureList = (refs) => !refs?.length ? '' : `<ul class="chips">${refs.map((r) => { const o = osis(r); return `<li>${ext(o.href, esc(o.text))}</li>`; }).join('')}</ul>`;
 
-// Chronology display order (owner spec): CFAH anchor, CFAH-1 Table 1, Ussher-Jones, Ussher, Jordan (secondary, display only), Bible, (MT arithmetic), Josephus, Raleigh, Clonmacnoise.
+// Chronology display order (owner spec): CFAH anchor point, CFAH non-anchor dates (Table 1, paper text, Reply to Beckman), Ussher-Jones, Ussher, Jordan (secondary, display only), Bible, (MT arithmetic), Josephus, Raleigh, Clonmacnoise.
 const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:beckman_reply', 'cfah:paper_text', 'cfah:', 'ussher-jones', 'jones-2019', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'morecraft', 'cory', 'shuckford', 'hales', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
 const rowKey = (e) => (e.source === 'cfah' ? `cfah:${e.cfah_basis || ''}` : e.source);
 const rowRank = (e) => { const i = ROW_ORDER.indexOf(rowKey(e)); return i < 0 ? 99 : i; };
 const chronName = (e, opts = {}) => {
   if (e.source === 'cfah') {
     if (e.cfah_basis === 'anchor_point') return 'CFAH <span class="tag tag-t1">anchor point</span>';
-    if (e.cfah_basis === 'table1_baseline') return 'CFAH-1 Table 1 <span class="tag tag-t2">Ussher–Jones baseline</span>';
-    if (e.cfah_basis === 'beckman_reply') return 'CFAH Reply to Beckman <span class="tag tag-t2">Tier 2 · OSF preprint</span>';
-    if (e.cfah_basis === 'paper_text') return 'CFAH <span class="tag">paper text (not an anchor point)</span>';
+    if (e.cfah_basis === 'table1_baseline') return 'CFAH-1 Table 1 <span class="tag tag-t2">non-anchor date</span>';
+    if (e.cfah_basis === 'beckman_reply') return 'CFAH Reply to Beckman <span class="tag tag-t2">non-anchor date</span>';
+    if (e.cfah_basis === 'paper_text') return 'CFAH <span class="tag tag-t2">non-anchor date</span>';
     return 'CFAH';
   }
   if (e.source === 'jordan') return 'Jordan <span class="tag tag-sec" title="Secondary display chronology; never sets the sort year">secondary</span>';
@@ -265,8 +265,8 @@ const chronName = (e, opts = {}) => {
 };
 const TIERS = {
   'cfah-anchor': { cls: 't1', label: 'Tier 1 · CFAH anchor point' },
-  'cfah-table1': { cls: 't2', label: 'Tier 2 · CFAH-1 Table 1 and Reply to Beckman (Ussher–Jones baseline)' },
-  'ussher-jones': { cls: 't3', label: 'Tier 3 · Ussher–Jones (Floyd Nolen Jones)' },
+  'cfah-table1': { cls: 't2', label: 'Tier 2 · CFAH non-anchor dates' },
+  'ussher-jones': { cls: 't3', label: 'Tier 3 · Floyd Nolen Jones' },
   ussher: { cls: 't4', label: 'Tier 4 · Ussher, Annals of the World' },
   derived: { cls: 'td', label: 'Derived · sort year copied from a related record' },
   provisional: { cls: 'tp', label: 'Provisional · Generations curriculum date (no CFAH / Ussher–Jones / Ussher date exists; pending owner decision)' },
@@ -302,10 +302,11 @@ const sortEntriesOf = (rec) => {
   if (rec.sorting_basis?.slot === 'reign_start') return rec.dates?.reign || [];
   return rec.chronologies || rec.dates?.birth || [];
 };
-// Four-tier rule applied to any date list (birth/death/translated): CFAH AP > CFAH-1 Table 1 > Ussher-Jones > Ussher.
+// Four-tier rule applied to any date list (birth/death/translated): CFAH anchor point > CFAH non-anchor dates > Floyd Nolen Jones > Ussher.
+// Lists are stored in the documented order (scripts/sort-rule.mjs orderCfah), so the first hit in a tier is the one that sorts.
 const TIER_PICKS = [
   ['cfah-anchor', (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point'],
-  ['cfah-table1', (e) => e.source === 'cfah' && (e.cfah_basis === 'table1_baseline' || e.cfah_basis === 'beckman_reply')],
+  ['cfah-table1', (e) => e.source === 'cfah' && ['table1_baseline', 'paper_text', 'beckman_reply'].includes(e.cfah_basis)],
   ['ussher-jones', (e) => e.source === 'ussher-jones'],
   ['ussher', (e) => e.source === 'ussher'],
   // Provisional only (no tier 1-4 date): Generations curriculum, same rule as the record sort.
@@ -680,7 +681,7 @@ ${type ? `<span hidden data-pagefind-filter="type">${esc(type)}</span>` : ''}
 ${body}
 </main>
 <footer class="site-footer"><div class="wrap small muted">
-<p>Young-Earth Creation framework; the Bible is the infallible standard. Sorted by <a href="/chronologies/">CFAH</a> (Griffith &amp; White, <i>Answers Research Journal</i>), then CFAH-1 Table 1, Ussher–Jones, Ussher.</p>
+<p>Young-Earth Creation framework; the Bible is the infallible standard. Sorted by <a href="/chronologies/">CFAH</a> anchor points (Griffith &amp; White), then CFAH non-anchor dates, Floyd Nolen Jones, and Ussher, <i>Annals of the World</i>.</p>
 <p>Place data © <a href="https://www.openbible.info/geo/" rel="noopener">OpenBible.info</a>, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>. Map tiles © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors. Historic maps: <a href="https://www.loc.gov/maps/" rel="noopener">Library of Congress</a>. Timeline: <a href="https://visjs.org/" rel="noopener">vis-timeline</a>; family chart: <a href="https://github.com/donatso/family-chart" rel="noopener">family-chart</a>; map: <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>; search: <a href="https://pagefind.app/" rel="noopener">Pagefind</a>. Reference finding: <a href="https://github.com/bibleup/bibleup" rel="noopener">BibleUp</a>.</p>
 <p class="dore-credit">Gustave Doré's Bible illustrations (1866) are public domain. Images are served by the Internet Archive (<a href="https://archive.org/details/gustavedore" rel="noopener">gustavedore</a>); small thumbnails are stored on this site. Titles and numbers are the Archive.org file names. <a href="/illustrations/dore/">All ${doreDoc.illustrations.length} plates</a>.</p>
 <p>A written Bible reference opens the Berean Standard Bible from <a href="https://bible.helloao.org/" rel="noopener">bible.helloao.org</a>, with the Amundson Interpretive Version from <a href="https://aivbible.kevinamundson.me" rel="noopener">aivbible.kevinamundson.me</a>. Scripture links still open the Berean Literal Bible on BibleHub.</p>
@@ -1035,12 +1036,12 @@ function personTimeline(p) {
   const ys = own.map((e) => e.sorting_year);
   const notes = [];
   let start = birth?.y ?? null, stop = end?.y ?? null;
-  // Rulers dated only by CFAH reign (or a display-only CFAH death year): use those before falling back to linked events.
+  // Rulers dated only by CFAH reign (or a CFAH death year): use those before falling back to linked events.
   const cfahDated = (list) => (list || []).find((e) => e.source === 'cfah' && e.year_bc_ad != null);
   const cfahReign = cfahDated(d.reign);
   const textDeath = end ? null : cfahDated(d.death);
   if (start == null && cfahReign) { start = cfahReign.year_bc_ad; notes.push(`Birth year unknown: the window starts at the CFAH reign date (${cfahReign.date}).`); }
-  if (stop == null && textDeath) { stop = textDeath.year_bc_ad; notes.push(`Death year from CFAH paper text (${textDeath.date}); it is display only, not a sort tier.`); }
+  if (stop == null && textDeath) { stop = textDeath.year_bc_ad; notes.push(`Death year from CFAH (${textDeath.date}).`); }
   else if (stop == null && cfahReign?.year_bc_ad_end != null) { stop = cfahReign.year_bc_ad_end; notes.push(`Death year unknown: the window ends at the end of the CFAH reign (${cfahReign.date}).`); }
   if (start == null && ys.length) { start = Math.min(...ys); notes.push('Birth year unknown in tiers 1–4 or Generations (provisional): the window starts at the first linked event.'); }
   if (stop == null && ys.length) { stop = Math.max(...ys); notes.push(`Death year unknown in tiers 1–4 or Generations (provisional): the window ends at the last linked event (${displaySpelling(own.find((e) => e.sorting_year === stop).title)}, ${yearLabel(stop)}).`); }

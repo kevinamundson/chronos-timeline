@@ -2,7 +2,7 @@
 // (OSF project 5b64m; also on Academia.edu). Kevin, 2026-11-13: every name, event, and date
 // from this OSF preprint goes into Tier 2 (cfah_basis "beckman_reply").
 // Data only: dates as printed, page/table locators, and short notes. No paper text.
-// Applied by scripts/cfah/beckman-apply.mjs. Checklist: docs/cfah-osf-coverage.md.
+// Imported as phase 6 of scripts/cfah/import.mjs. Checklist: docs/cfah-osf-coverage.md.
 
 export const PARTS = {
   1: { src: 'griffith-beckman-reply-1', doi: 'XJZBM', osf: 'https://osf.io/xjzbm/', ver: 'v1.4', title: 'Part 1: Jewish Sources for the Chronology of the Divided Kingdom' },

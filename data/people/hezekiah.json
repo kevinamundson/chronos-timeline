@@ -4,7 +4,7 @@
   "type": "person",
   "title": "Hezekiah",
   "summary": "King of Judah who resisted Sennacherib.",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
   "sorting_year": -752,
   "sorting_basis": {
     "tier": "ussher-jones",

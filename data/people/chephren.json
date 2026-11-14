@@ -8,19 +8,13 @@
   ],
   "summary": "Egyptian king, brother and successor of Cheops in Herodotus (2.127); Khafre.",
   "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
-  "sorting_year": null,
+  "sorting_year": -1892,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
-  },
-  "standby": {
-    "year_bc_ad": -1892,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Start Co-Rex: 1892; Start Sole-rex: 1862; End Sole-rex: 1875 ** 1853 ***; Death or Deposition: 1826). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Start Co-Rex: 1892; Start Sole-rex: 1862; End Sole-rex: 1875 ** 1853 ***; Death or Deposition: 1826. Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "father": null,
   "children": [],

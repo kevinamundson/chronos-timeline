@@ -62,7 +62,7 @@ export function buildPhase5(tables, existingIds) {
       const approx = /~|c\.|\?|unknown|unkown|±|\[|>|<| or |\+\/-/.test(Object.entries(row.cells).filter(([k]) => !t.yearCols || t.yearCols.includes(k)).map(([, v]) => v).join(' '));
       const create = { title: spec?.title || nm.primary.replace(/\s*[*]+$/, '').replace(/[[\]]/g, ''), alt_names: (spec?.alt || nm.alt).length ? (spec?.alt || nm.alt) : undefined, dynasty: spec?.dynasty || row.dynasty || t.dynasty,
         summary: spec?.summary || `${t.dynasty.startsWith('Egypt') ? 'King' : 'Ruler'} listed in CFAH-${meta?.n} ${t.table} (${row.dynasty || t.dynasty}).`,
-        description: `${spec?.summary || `Ruler of ${row.dynasty || t.dynasty}.`} Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-${meta?.n} (${t.table}, "${t.title}"); its dates are display only.`, events: spec?.events || [] };
+        description: `${spec?.summary || `Ruler of ${row.dynasty || t.dynasty}.`} Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-${meta?.n} (${t.table}, "${t.title}").`, events: spec?.events || [] };
       if (!create.alt_names) delete create.alt_names;
       people[id] ||= [];
       people[id].push({ table: t.id, create, rank: (spec?.title ? 0 : 2) + (/EKL/.test(t.dynasty) || /alter egos|and 26/.test(t.dynasty) ? 1 : 0) });

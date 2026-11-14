@@ -1,5 +1,5 @@
 // Phase 3: rulers dated by CFAH (person records with reign/death entries) and the king lists they belong to.
-// Dates are copied exactly as printed. Non-AP CFAH dates use cfah_basis "paper_text" (display only, never a sort tier).
+// Dates are copied exactly as printed. Non-AP CFAH dates use cfah_basis "paper_text" (Tier 2 · CFAH non-anchor dates; Kevin, 2026-11-13).
 // Herodotus-managed people (e.g. mycerinus) only get death entries, which that importer keeps (first CFAH entry per slot);
 // run this importer after the Herodotus one.
 const s6 = (h) => `section "${h}"`;
@@ -71,10 +71,10 @@ export const RULERS = [
     death: [R('c5-kashtiliash', 'cfah-5', s6('5. Kassites 576 y minus 50 to death of Kashtiliash'), '1232 B.C.', -1232, null, 'year', 'CFAH pegs "the defeat of Kashtiliash I in 1232 B.C." to Tukulti-Ninurta I\'s conquest of Babylon (first as a thought experiment, then noted as fitting "to the year").')] }),
 ];
 
-// National epochs from CFAH-2 that are not numbered anchor points: display-only paper_text entries on existing events.
+// National epochs from CFAH-2 that are not numbered anchor points: paper_text entries (tier 2) on existing events.
 export const EPOCHS = [
   { key: 'c2-sicyon', src: 'cfah-2', where: 'section "Duration 14: The Founding of Sicyon: 2089 or 2076 BC"', date: '2089 or 2076 BC', y: -2089, yEnd: -2076, precision: 'year-range', target: 'founding-of-sicyon', locator: 'Duration 14',
-    note: 'Two counts: Eusebius (via Ussher) gives 1,313 years before the first Olympiad, which is 2089 BC. Not an anchor point, so display only; the sort stays with the tiers.' },
+    note: 'Two counts: Eusebius (via Ussher) gives 1,313 years before the first Olympiad, which is 2089 BC. Not an anchor point (tier 2, CFAH non-anchor date).' },
   { key: 'c2-trier', src: 'cfah-2', where: 'section "Duration 15: The Founding of Trier, Germany: 2053 BC"', date: '2053 BC', y: -2053, precision: 'year', target: 'founding-of-trier', locator: 'Duration 15',
-    note: 'Trier\'s tradition (Gesta Treverorum) of its founding by Trebeta, son of Ninus. Not an anchor point, so display only.' },
+    note: 'Trier\'s tradition (Gesta Treverorum) of its founding by Trebeta, son of Ninus. Not an anchor point (tier 2, CFAH non-anchor date).' },
 ];

@@ -4,23 +4,17 @@
   "type": "person",
   "title": "Kenkenes",
   "summary": "King listed in CFAH-7B Table 6 (Egypt Dynasty 1 (Thinis)).",
-  "description": "Ruler of Egypt Dynasty 1 (Thinis). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 6, \"Integrated Dates for Dynasty 1\"); its dates are display only.",
+  "description": "Ruler of Egypt Dynasty 1 (Thinis). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 6, \"Integrated Dates for Dynasty 1\").",
   "alt_names": [
     "Ka Sekhen"
   ],
-  "sorting_year": null,
+  "sorting_year": -2068,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
-  },
-  "standby": {
-    "year_bc_ad": -2068,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Start Sole-rex: 2068; End Sole-rex: 2037 / 2036; Death or Deposition: 2036). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Start Sole-rex: 2068; End Sole-rex: 2037 / 2036; Death or Deposition: 2036. Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "father": null,
   "children": [],

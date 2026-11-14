@@ -4,7 +4,7 @@
   "type": "event",
   "title": "First Olympic Games",
   "summary": "First Olympic Games",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Sorted by the CFAH anchor point cited below (added by the Herodotus import); the Generations dates are display only.",
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Sorted by the CFAH anchor point cited below (added by the Herodotus import); the Generations dates are display only. CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
   "sorting_year": -776,
   "sorting_basis": {
     "tier": "cfah-anchor",

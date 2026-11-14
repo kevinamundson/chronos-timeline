@@ -5,37 +5,18 @@
   "title": "Shalmaneser I",
   "summary": "King of Assyria, identified by CFAH with the \"Assyrian Belus\".",
   "description": "King of Assyria, identified by CFAH with the \"Assyrian Belus\". Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
-  "sorting_year": null,
+  "sorting_year": -1262,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
-  },
-  "standby": {
-    "year_bc_ad": -1261,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (1261). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Column: Assyrian King List; Name row (Year BC): 1262; Last regnal-year row (Year BC): 1233 (year 30). Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "father": null,
   "children": [],
   "dates": {
     "reign": [
-      {
-        "source": "cfah",
-        "date": "1261",
-        "year_am": null,
-        "year_bc_ad": -1261,
-        "precision": "year",
-        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-35: Fall of Akkad to the Guti Arabs: 1477/1476 B.C.\"",
-        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
-        "source_text_id": "cfah-5",
-        "note": "\"The Assyrian Belus began to reign in 1261, as did Shalmaneser I\" (AP-36 is on the event assyrian-belus-shalmaneser-i).",
-        "cfah_basis": "paper_text",
-        "cfah_key": "cfah:c5-shalm1-start:shalmaneser-i:reign"
-      },
       {
         "source": "cfah",
         "date": "Column: Assyrian King List; Name row (Year BC): 1262; Last regnal-year row (Year BC): 1233 (year 30)",
@@ -50,6 +31,19 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-14-t5-rel:shalmaneser-i:shalmaneser-i:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "1261",
+        "year_am": null,
+        "year_bc_ad": -1261,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"AP-35: Fall of Akkad to the Guti Arabs: 1477/1476 B.C.\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "\"The Assyrian Belus began to reign in 1261, as did Shalmaneser I\" (AP-36 is on the event assyrian-belus-shalmaneser-i).",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-shalm1-start:shalmaneser-i:reign"
       }
     ]
   },

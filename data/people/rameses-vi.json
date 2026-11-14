@@ -4,23 +4,17 @@
   "type": "person",
   "title": "Rameses VI",
   "summary": "King listed in CFAH-11 Table 1 (Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30)).",
-  "description": "Ruler of Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-11 (Table 1, \"Proposed Dynasty 20 Rulers and Reigns\"); its dates are display only.",
+  "description": "Ruler of Egypt Dynasties 19–20 and their CFAH alter egos (Dynasties 28–30). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-11 (Table 1, \"Proposed Dynasty 20 Rulers and Reigns\").",
   "alt_names": [
     "Nectanebo II"
   ],
-  "sorting_year": null,
+  "sorting_year": -360,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
-  },
-  "standby": {
-    "year_bc_ad": -360,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Rgn: 18; BC Dates: 360 - 343). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Rgn: 18; BC Dates: 360 - 343. Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "father": null,
   "children": [],

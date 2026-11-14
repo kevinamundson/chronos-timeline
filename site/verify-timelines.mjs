@@ -27,7 +27,7 @@ const expect = live ? await (await fetch(`${BASE}/data/person-timelines.json`, {
 const single = Object.keys(expect).find((k) => !expect[k].none && expect[k].own + expect[k].context === 1);
 // AD-era people (Generations import) exercise the AD side of the axis (AD y -> axis y-1).
 const AD = ['augustine-of-hippo', 'robert-moffat', 'boniface', 'william-carey', 'adoniram-judson'].filter((k) => expect[k] && !expect[k].none);
-// CFAH rulers dated by reign (and a display-only CFAH death) rather than a tier birth year (CFAH pass, phase 3).
+// CFAH rulers dated by reign (and a CFAH death year) rather than a tier birth year (CFAH pass, phase 3).
 const RULERS = ['senusret-iii', 'nebka', 'saul', 'teti'].filter((k) => expect[k] && !expect[k].none);
 const PEOPLE = ['joseph', 'abraham', 'noah', 'moses', single, ...AD, ...RULERS];
 const standbyOwnId = Object.entries(expect).filter(([, t]) => t.standbyOwn && t.standby > 0).sort((a, b) => a[1].standby - b[1].standby)[0]?.[0];

@@ -4,13 +4,14 @@
   "type": "person",
   "title": "Elon",
   "summary": "Ruler listed in CFAH-14 Table 5 (Israel).",
-  "description": "Ruler of Israel. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-14 (Table 5, \"CFAH Reconstructed Eponym List (CFAH-REL)\"); its dates are display only.",
-  "sorting_year": null,
+  "description": "Ruler of Israel. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-14 (Table 5, \"CFAH Reconstructed Eponym List (CFAH-REL)\").",
+  "sorting_year": -1139,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Column: Ruler of Israel; Name row (Year BC): 1139; Last regnal-year row (Year BC): 1130 (year 10). Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "calculated": [
     {
@@ -28,13 +29,6 @@
       "year_am": 2833
     }
   ],
-  "standby": {
-    "year_bc_ad": -1139,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Column: Ruler of Israel; Name row (Year BC): 1139; Last regnal-year row (Year BC): 1130 (year 10)). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
-  },
   "father": null,
   "children": [],
   "dates": {

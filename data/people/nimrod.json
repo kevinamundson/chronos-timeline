@@ -8,12 +8,13 @@
   ],
   "summary": "Son of Cush; \"a mighty hunter before the LORD\"; \"the beginning of his kingdom was Babel\" (Gen 10:8–10).",
   "description": "Father Cush (not yet a record). CFAH-2 (\"The Founding of the Nations\", introduction and Duration 6) identifies Nimrod with Ninus, founder of Assyria after the Dispersion, and later papers equate him with Enmerkar of Uruk and Atothis I of Egypt (CFAH-5/6). Josephus, Antiquities I.4.2 makes Nimrod the instigator of the tower.",
-  "sorting_year": -2270,
+  "sorting_year": -2192,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 143): around 2270 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Reign (y): 124; Start (BC): 2192; End (BC): 2068. Sort changed by the CFAH pass (2026-11-13): was provisional (Generations) 2270 BC."
   },
   "calculated": [
     {

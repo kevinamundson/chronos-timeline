@@ -54,10 +54,10 @@ Further rules:
 
 | Rank | Tier | Source |
 |---|---|---|
-| 1 | `cfah-anchor` | CFAH entry with `cfah_basis: anchor_point`. This includes OSF preprint anchor points, which carry `cfah_preprint` and "OSF preprint" in the citation. |
-| 2 | `cfah-table1` | CFAH entry with `cfah_basis: table1_baseline` (CFAH-1 Table 1), else `cfah_basis: beckman_reply` (Griffith & White's *Reply to Beckman's Defense of Thiele's Chronology*, OSF project 5b64m, Parts 1–3: the years the authors give for their own CFAH / Ussher–Jones chronology). A Table 1 row is stored first and governs. Kevin, 2026-11-13; data in `scripts/cfah/beckman-reply.mjs`, applied by `scripts/cfah/beckman-apply.mjs`, checklist in `docs/cfah-osf-coverage.md`. |
-| 3 | `ussher-jones` | Floyd Nolen Jones. Only years he prints himself; never convert his AM-only figures. |
-| 4 | `ussher` | Ussher, *Annals of the World* |
+| 1 | `cfah-anchor` · **Tier 1 · CFAH anchor point** | CFAH entry with `cfah_basis: anchor_point`. This includes OSF preprint anchor points, which carry `cfah_preprint` and "OSF preprint" in the citation. |
+| 2 | `cfah-table1` · **Tier 2 · CFAH non-anchor dates** | Every dated CFAH entry that is not an anchor point, from all 19 CFAH papers (ARJ CFAH-1 to 6, OSF CFAH-7 to 19) and Griffith & White's *Reply to Beckman's Defense of Thiele's Chronology* (OSF 5b64m): `cfah_basis` `table1_baseline`, `paper_text`, or `beckman_reply`. Kevin, 2026-11-13 (P1): "Tier 2 should let the papers non-anchor dates set sort." The id `cfah-table1` is historical. **Order inside the tier** (`orderCfah` in `scripts/sort-rule.mjs`; validate checks the stored order): CFAH-1 Table 1; then `paper_text`, latest paper first (CFAH-19 … CFAH-8, CFAH-7B, CFAH-7A, then ARJ CFAH-6 … CFAH-1; an OSF copy of an ARJ paper ranks with it; within one paper, table/text order); then `beckman_reply`. Dates only as printed: a reign length is never an end year, and AM is never converted. Reply to Beckman data: `scripts/cfah/beckman-reply.mjs`, imported as phase 6 of `scripts/cfah/import.mjs`; checklist in `docs/cfah-osf-coverage.md`. |
+| 3 | `ussher-jones` · **Tier 3 · Floyd Nolen Jones** | Floyd Nolen Jones. Only years he prints himself; never convert his AM-only figures. |
+| 4 | `ussher` · **Tier 4 · Ussher, Annals of the World** | Ussher, *Annals of the World* |
 
 Fallbacks:
 

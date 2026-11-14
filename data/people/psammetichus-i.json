@@ -5,19 +5,13 @@
   "title": "Psammetichus I",
   "summary": "King of Egypt (Saite line); Herodotus says Greek knowledge of Egyptian history is accurate from his reign onward (2.151–157).",
   "description": "Added from the Herodotus import (The Histories, tr. Rawlinson). Herodotus gives reign lengths and synchronisms, not BC years, and no tier 1–4 chronology dates this person, so there is no sort year.",
-  "sorting_year": null,
+  "sorting_year": -663,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year (Herodotus is display-only and gives none)."
-  },
-  "standby": {
-    "year_bc_ad": -663,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Start: 663; End: 611). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Start: 663; End: 611. Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "father": null,
   "children": [

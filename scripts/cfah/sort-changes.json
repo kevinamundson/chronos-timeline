@@ -167,5 +167,4698 @@
     "by": "AP-103",
     "on": "2026-10-18",
     "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 131): 2036 BC. Pending owner decision (open question A8)."
+  },
+  "founding-of-sicyon": {
+    "from": {
+      "tier": "provisional",
+      "year": -2089
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2089
+    },
+    "by": "CFAH-2",
+    "on": "2026-11-13",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 127): 2089 BC. Pending owner decision (open question A8)."
+  },
+  "founding-of-trier": {
+    "from": {
+      "tier": "provisional",
+      "year": -2053
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2053
+    },
+    "by": "CFAH-2",
+    "on": "2026-11-13",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 128): about 2053 BC. Pending owner decision (open question A8)."
+  },
+  "abdon": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1129
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "abimelech-son-of-gideon": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1217
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "abirattash": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1224
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "achoris": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -392
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "adad-nadin-shumi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -774
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "adad-shuma-usur-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -768
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "agga": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1999
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "agum-ii-kakrime": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -840
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "agum-the-first": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1266
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ahaziah-king-of-israel": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -898
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ahmose-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1081
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "aidara": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -886
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "akhenaten": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -889
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "akurgal": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1756
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "alexander-the-great": {
+    "from": {
+      "tier": "provisional",
+      "year": -356
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -331
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 37): 356-323 BC. Pending owner decision (open question A8)."
+  },
+  "amar-sin": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1285
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "amasis-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -570
+    },
+    "by": "OSF preprint CFAH-9",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "amenemhat-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1738
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "amenemhat-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1686
+    },
+    "by": "OSF preprint CFAH-7A",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "amenemhat-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1574
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "amenemhat-iv": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1543
+    },
+    "by": "OSF preprint CFAH-7A",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "amenhotep-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1056
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "amenhotep-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -948
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "amenhotep-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -920
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ammiditana": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -929
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ammisaduga": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -904
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ansud": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1785
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "apachnan": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1428
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "apil-sin": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1080
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "apophis-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1392
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "apophis-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1114
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "apries": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -589
+    },
+    "by": "OSF preprint CFAH-9",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "argandea": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1648
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "arwium": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1942
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "asharid-apil-ekur": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1075
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ashur-bel-kala": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1073
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ashur-dan-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1178
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ashur-danin-pal": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -843
+    },
+    "by": "CFAH-5",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ashur-nadin-apli": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1195
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ashur-nirari-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1192
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ashur-resh-ishi-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1132
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "assis": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1281
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "atab": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1982
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "athothis": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2164
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ay": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -851
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "baba-aha-iddina": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -812
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "babum": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2129
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "balih": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1879
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "balulu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1827
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "barsal-nuna": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1824
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "baufra": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1875
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "bebty": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1763
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "bnon": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1472
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "bur-sin": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1135
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "burnaburiash-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -920
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "certos": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1281
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "cheops": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1934
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "chephren": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1892
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "cush": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2233
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier 1-4 dates this record's birth; unsorted (null)."
+  },
+  "dadase": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1698
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "dadusha": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1031
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "damiq-ilisu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1055
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "damqiili": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1068
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "dannum-tahaz": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1051
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "djedkare-isesi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1761
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "djoser": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2011
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "dudu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1474
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "eaga": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -825
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "eannatum": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1751
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ebishum": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -954
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ekurul": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -858
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ellil-nadin-shumi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -777
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ellilnadin-ahhe": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -709
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "elon": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1139
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "elulu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1852
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "en-anna-tum-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1726
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "en-dara-ana": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2141
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "en-hegal": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1786
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "en-sakus-ana": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1828
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "enannatum-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1686
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "enbi-istar": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1651
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "enlil-bani": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1101
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "enlil-kudurri-usur": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1186
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "enme-nuna": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1868
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "enmen-baragesi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2024
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "enna-dagan": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1664
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ennun-dara-ana": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1914
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "entemena": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1711
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "eriba-adad-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1055
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "eriba-marduk": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -769
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "etana": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1920
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ghandash": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1282
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "gulki": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -991
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "hammurabi-i-of-yamhad": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1004
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "hammurabi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1032
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "hatanis": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1633
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "hatshepsut": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1002
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "hidar": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1653
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "hor-khaba": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1976
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "horemheb": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -841
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "hotepsekhemwy": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1924
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "hudjefa-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1781
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "huni": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1970
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ibal-pi-el-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1021
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ibbi-sin": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1265
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "iblul-il": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1707
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ibzan": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1146
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "iddin-dagan": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1215
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ikun-ishar": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1661
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ikun-mari": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1726
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ikun-shamagan": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1804
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ikun-shamash": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1824
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ilima": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1184
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ilkuu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1781
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ilta-sadum": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1756
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "intef-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1861
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "intef-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1841
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "intef-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1823
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "intef-the-elder": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1917
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ipiq-adad-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1104
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "irra-imitti": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1109
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "isbi-irra": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1258
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ish-bosheth": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1056
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ishar-lim": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1019
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ishki": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1032
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ishqi-mari": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1633
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ishtup-isar": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1746
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "isme-dagan": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1194
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "isme-samas": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1617
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "istar-muti": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1618
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "isu-il": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1623
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "iter-pisa": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1074
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ittili": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1124
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "jair": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1192
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "jehu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -885
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "jephthah": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1152
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "jeroboam-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -975
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kadashman-enlil-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -940
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kadashman-harbe-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1000
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kadashman-harbe-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -902
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kadashman-harbe": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -775
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kalbum": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1671
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kalibum": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2097
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kalumum": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2072
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kandalanu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -627
+    },
+    "by": "CFAH-5",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "karaindash": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -980
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kashta": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -798
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kashtiliash-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1254
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kashtiliash-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -866
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kashtiliash-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -785
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kawab": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1923
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kenkenes": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2068
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "khamudi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1074
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "khyan": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1331
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ku-baba": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1633
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kuda": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1464
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kudur-enlil": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -804
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kullassina-bel": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2200
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kurigalzu-a": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1150
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kurigalzu-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -960
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "kurigalzu-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -894
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "la-baser": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1923
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "lipit-enlil": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1114
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "lipit-istar": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1174
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "lugal-ane-mundu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1723
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "lugal-banda": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2068
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "lugal-ki-gin": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1864
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "lugal-ure": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1768
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "lugalgu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1643
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "lugalzagesi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1641
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "mamagal": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1696
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "manishtushu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1554
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "marduk-apla-iddina-kassite": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -723
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "marduk-balassu-iqbi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -823
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "marduk-zakir-sumi-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -855
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "masda": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1965
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "mel-shipak-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1185
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "melamma": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -832
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "melem-ana": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1870
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "melem-kis": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1849
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "melishipak-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -738
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "men-nuna": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1656
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "menkauhor": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1752
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "mentuhotep-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1887
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "mentuhotep-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1801
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "mentuhotep-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1757
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "mentuhotep-iv": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1745
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "merenre-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1606
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "merenre-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1495
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "meryabra-khety": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1859
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "merykare": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1796
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "mes-ane-pada": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1968
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "mes-kiag-nanna": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1658
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "mes-kiag-nuna": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1888
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "meshe": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1906
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "miebidos": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2006
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "mizraim": {
+    "from": {
+      "tier": "provisional",
+      "year": -2478
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2191
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 19): around 2478 BC. Pending owner decision (open question A8)."
+  },
+  "mycerinus": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1851
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "nabopolassar": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -626
+    },
+    "by": "CFAH-5",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nabu-mukin-zeri": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -731
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nabu-nadin-zeri": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -734
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nabu-nasir": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -747
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nabu-suma-iskun": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -761
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nabu-suma-ukin-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -732
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nadab-king-of-israel": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -953
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nan-gis-lisma": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2175
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nanne": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1719
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nanniya": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1617
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "naram-sin-of-akkad": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1539
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "naram-sin-of-eshnunna": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1060
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nazi-maruttash": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -890
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nebka": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2030
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nebkaura-khety": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1881
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nebra": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1916
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "necho-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -611
+    },
+    "by": "OSF preprint CFAH-9",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "neferefre": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1781
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "neferhotep-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1576
+    },
+    "by": "CFAH-6",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "neferirkare-kakai": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1806
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "neferkasokar": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1781
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nefertiti": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -871
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nepherites-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -399
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nepherites-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -379
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nimrod": {
+    "from": {
+      "tier": "provisional",
+      "year": -2270
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2192
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 143): around 2270 BC. Pending owner decision (open question A8)."
+  },
+  "ninurta-apil-ekur": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1181
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ninurta-tukulti-assur": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1133
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ninyas": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2006
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nitocris": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1491
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "niuserre-ini": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1781
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nizi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1667
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "nynetjer": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1885
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "osorkon-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -793
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "osorkon-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -737
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "osorkon-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -662
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "osorkon-iv": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -602
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "pami": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -650
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "pedubast-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -694
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "pepi-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1646
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "pepi-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1592
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "pepi-the-child": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1485
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "peshgal": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -936
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "piye": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -778
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "psammenitus": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -526
+    },
+    "by": "OSF preprint CFAH-9",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "psammetichus-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -663
+    },
+    "by": "OSF preprint CFAH-9",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "psammis": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -594
+    },
+    "by": "OSF preprint CFAH-9",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "psammuthis": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -392
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "puannum": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2121
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "puzur-ili": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1458
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "puzur-nirah": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1643
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "puzur-sin": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1630
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "radjedef": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1917
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "rameses-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -671
+    },
+    "by": "OSF preprint CFAH-9",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "rameses-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -644
+    },
+    "by": "OSF preprint CFAH-9",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "rameses-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -379
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "rameses-ix": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -463
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "rameses-vi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -360
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "rameses-viii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -343
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "rameses-x": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -444
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "rameses-xi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -441
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "rimush": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1563
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sabacos": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -705
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year (Herodotus is display-only and gives none)."
+  },
+  "sabu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1094
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sahure": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1814
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "salitis": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1491
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "samsu-iluna": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -989
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "samsuditana": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -882
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "samug": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1791
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sar-kalli-shari": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1502
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sargon-i-of-akkad": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1619
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sargon-ii": {
+    "from": {
+      "tier": "cfah-table1",
+      "year": -722
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -721
+    },
+    "by": "CFAH-5",
+    "on": "2026-11-13",
+    "was_note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 2): accession 722 BC (Tebeth, January 721); killed 705 BC). No tier 1–4 birth year. Sort changed by the Reply to Beckman pass (2026-11-13): was none none."
+  },
+  "saumu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1765
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sekkemkhet": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1982
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "semempses": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1969
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "semiramis-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2036
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "senedj": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1822
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "senusret-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1686
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "senusret-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1655
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "senusret-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1606
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "seti-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -475
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "setnakht": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -411
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shagarak-ti": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -798
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shalmaneser-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1262
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shamshi-adad-iv": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1076
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shepseskaf": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1825
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shepseskara": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1788
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shoshenq-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -814
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shoshenq-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -758
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shoshenq-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -702
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shoshenq-iv": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -663
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shoshenq-v": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -640
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shoshenq-vi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -669
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shu-sin-of-akshak": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1599
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shu-sin-of-ur": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1274
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shushshi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1017
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "shuzigash": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -896
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "simudara": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1619
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sin-magir": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1066
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sinmuballit": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1062
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sneferu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1952
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sobekneferu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1530
+    },
+    "by": "OSF preprint CFAH-7A",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "su-durul": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1453
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "su-ilisu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1235
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "su-suda": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1722
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sulgi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1331
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sumu-abum": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1144
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sumu-yamam": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1037
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "sumulail": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1129
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "taharqa": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -691
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "takelot-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -750
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "takelot-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -653
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "tantamani": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -664
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "tausret": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -484
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "tefnakht": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -757
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "teos": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -361
+    },
+    "by": "OSF preprint CFAH-11",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "teti": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1682
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "thampthis": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1825
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "thutmose-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1035
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "thutmose-ii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1015
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "thutmose-iii": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -980
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "thutmose-iv": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -929
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "tiglath-pileser-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1114
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "tizkar": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1787
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "tola": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1215
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "tug": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1666
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "tukulti-ninurta-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1232
+    },
+    "by": "OSF preprint CFAH-14",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "tutankhamun": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -860
+    },
+    "by": "OSF preprint CFAH-8",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ubienthes": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1950
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "udul-kalama": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1938
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "uenephes": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2036
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "unas": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1732
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "undalulu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1655
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "unzi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1685
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ur-gigir": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1470
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ur-nammu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1349
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ur-nanshe": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1776
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ur-nigin": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1477
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ur-ninurta": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1163
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ur-nungal": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1968
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ur-utu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1453
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ur-zababa": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1629
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "urdukuga": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1070
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "urukagina": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1646
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "urur": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1649
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "userkaf": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1822
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "userkare": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1637
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "ushshi": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1232
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "usi-watar": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1618
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "usiphaidos": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2014
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "utu-hegal": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1356
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "wahkare-khety": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1838
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "weneg": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1846
+    },
+    "by": "OSF preprint CFAH-7B",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "yaggid-lim": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1067
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "yahdun-lim": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1057
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "yarim-lim-i": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1045
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "yasmah-addu": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1053
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "zababa-shumiddin": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -710
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "zambija": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1077
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "zet": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -644
+    },
+    "by": "OSF preprint CFAH-10",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "zimri-lim": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -1020
+    },
+    "by": "OSF preprint CFAH-16",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
+  },
+  "zuqaqip": {
+    "from": {
+      "tier": "none",
+      "year": null
+    },
+    "to": {
+      "tier": "cfah-table1",
+      "year": -2049
+    },
+    "by": "OSF preprint CFAH-15",
+    "on": "2026-11-13",
+    "was_note": "No tier gives a birth year."
   }
 }
