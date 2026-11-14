@@ -53,7 +53,7 @@ for (const r of Object.values(recs)) if (r.doc.description?.startsWith(MARK)) { 
 for (const [pid, p] of Object.entries(NEW_PEOPLE)) if (recs[pid]) for (const eid of p.events || []) { const d = recs[eid].doc; if (!d.people.includes(pid)) { d.people.push(pid); touch(eid); } }
 
 // ---- reference years (before adding morecraft entries): tier 1–4, else provisional Generations
-const TIERS = [['cfah-anchor', 1, 'cfah', (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point'], ['cfah-table1', 2, 'cfah', (e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline'], ['ussher-jones', 3, 'ussher-jones', (e) => e.source === 'ussher-jones'], ['ussher', 4, 'ussher', (e) => e.source === 'ussher']];
+const TIERS = [['cfah-anchor', 1, 'cfah', (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point'], ['cfah-table1', 2, 'cfah', (e) => e.source === 'cfah' && (e.cfah_basis === 'table1_baseline' || e.cfah_basis === 'beckman_reply')], ['ussher-jones', 3, 'ussher-jones', (e) => e.source === 'ussher-jones'], ['ussher', 4, 'ussher', (e) => e.source === 'ussher']];
 const tierOf = (entries) => { for (const [tier, rank, chron, m] of TIERS) { const e = (entries || []).find((x) => m(x) && x.year_bc_ad != null); if (e) return { tier, rank, chron, e }; } return null; };
 const genOf = (entries) => (entries || []).find((x) => x.source === 'generations' && x.year_bc_ad != null && !x.superseded_by);
 const yl = (y) => (y == null ? '' : y < 0 ? `${-y} BC` : `AD ${y}`);

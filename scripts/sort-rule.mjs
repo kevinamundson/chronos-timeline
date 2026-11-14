@@ -11,7 +11,10 @@ export const JONES_23_SOURCE = 'jones-chronology-ot-2026';
 
 export const TIERS = [
   { tier: 'cfah-anchor', rank: 1, chronology: 'cfah', match: (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point' },
-  { tier: 'cfah-table1', rank: 2, chronology: 'cfah', match: (e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline' },
+  // Tier 2 is the CFAH Ussher–Jones baseline: CFAH-1 Table 1, and (Kevin, 2026-11-13) the years Griffith & White
+  // print for their own chronology in A Reply to Beckman's Defense of Thiele's Chronology (OSF 5b64m, Parts 1–3).
+  // A Table 1 row is stored first, so it governs within the tier (validate.mjs checks the order).
+  { tier: 'cfah-table1', rank: 2, chronology: 'cfah', match: (e) => e.source === 'cfah' && (e.cfah_basis === 'table1_baseline' || e.cfah_basis === 'beckman_reply') },
   // jones-2019 is the 21st edition, display only. It is not this tier. Kevin, 2026-10-28.
   { tier: 'ussher-jones', rank: 3, chronology: 'ussher-jones', match: (e) => e.source === 'ussher-jones' },
   { tier: 'ussher', rank: 4, chronology: 'ussher', match: (e) => e.source === 'ussher' },

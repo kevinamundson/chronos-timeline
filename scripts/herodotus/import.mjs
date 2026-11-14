@@ -117,7 +117,7 @@ for (const g of groups) for (const row of g.rows) {
   extract.push({ ...row, file: g.file, mapped, link });
 }
 // ---- 6. sort (same rule as scripts/validate.mjs) for every touched record
-const TIERS = [['cfah-anchor', 1, 'cfah', (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point'], ['cfah-table1', 2, 'cfah', (e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline'], ['ussher-jones', 3, 'ussher-jones', (e) => e.source === 'ussher-jones'], ['ussher', 4, 'ussher', (e) => e.source === 'ussher']];
+const TIERS = [['cfah-anchor', 1, 'cfah', (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point'], ['cfah-table1', 2, 'cfah', (e) => e.source === 'cfah' && (e.cfah_basis === 'table1_baseline' || e.cfah_basis === 'beckman_reply')], ['ussher-jones', 3, 'ussher-jones', (e) => e.source === 'ussher-jones'], ['ussher', 4, 'ussher', (e) => e.source === 'ussher']];
 const yl = (y) => (y < 0 ? `${-y} BC` : `AD ${y}`);
 for (const [id, r] of Object.entries(recs)) {
   if (!r.dirty || r.doc.type === 'location') continue;

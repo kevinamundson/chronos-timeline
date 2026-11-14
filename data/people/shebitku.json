@@ -5,24 +5,31 @@
   "title": "Shebitku",
   "summary": "King listed in CFAH-10 Table 9 (Egypt Dynasty 25 (Cushite)).",
   "description": "Ruler of Egypt Dynasty 25 (Cushite). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-10 (Table 9, \"CFAH Solution for Dynasty 25\"); its dates are display only.",
-  "sorting_year": null,
+  "sorting_year": -713,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
-  },
-  "standby": {
-    "year_bc_ad": -713,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Reign: 12; Start: 713; End: 701). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 2): 713 BC (took the throne of Egypt; conquest of the Delta)). No tier 1–4 birth year. Sort changed by the Reply to Beckman pass (2026-11-13): was none none."
   },
   "father": null,
   "children": [],
   "dates": {
     "reign": [
+      {
+        "source": "cfah",
+        "date": "713 BC (took the throne of Egypt; conquest of the Delta)",
+        "year_am": null,
+        "year_bc_ad": -713,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 2, row 713 comment, p. 40; section “Confirmation from Taharqa and the Tangi-Var Inscription”, p. 25",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Tangi-Var inscription; 50 years before the Cushite expulsion of 663 BC.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-shebitku-713"
+      },
       {
         "source": "cfah",
         "date": "Reign: 12; Start: 713; End: 701",
@@ -43,7 +50,8 @@
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-10-osf"
+    "cfah-10-osf",
+    "griffith-beckman-reply-2"
   ],
   "related": [],
   "free_source_links": [
@@ -51,6 +59,11 @@
       "source_id": "cfah-10-osf",
       "url": "https://osf.io/fg4dv/",
       "locator": "Table 9, p. 28"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 2, row 713 comment, p. 40; section “Confirmation from Taharqa and the Tangi-Var Inscription”, p. 25"
     }
   ],
   "dynasty": "Egypt Dynasty 25 (Cushite)"

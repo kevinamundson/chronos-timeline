@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "lycurgus-competes-in-the-iphitus-games",
+  "type": "event",
+  "title": "Lycurgus competes in the Iphitus Games",
+  "summary": "Lycurgus of Sparta competes in the games of Iphitus at Elis, the second recorded Olympic-type games.",
+  "description": "Lycurgus of Sparta competes in the games of Iphitus at Elis, the second recorded Olympic-type games. Event record added from Griffith & White’s Reply to Beckman, Part 3 (Table 2, row c. 884, p. 46).",
+  "sorting_year": -884,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 3): c. 884 BC."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "c. 884 BC",
+      "year_am": null,
+      "year_bc_ad": -884,
+      "precision": "approximate",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, Table 2, row c. 884, p. 46",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "He lived decades past the Iphitus Games. Eratosthenes: 108 years before the first Olympiad.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-lycurgus"
+    }
+  ],
+  "people": [
+    "lycurgus"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-3"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "Table 2, row c. 884, p. 46"
+    }
+  ]
+}

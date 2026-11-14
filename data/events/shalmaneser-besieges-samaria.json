@@ -7,22 +7,26 @@
   "description": "Shalmaneser besieges Samaria (2 Kgs 17:5). The year is the Appendix F figure, stored as printed.",
   "sorting_year": -723,
   "sorting_basis": {
-    "tier": "ussher-jones",
-    "tier_rank": 3,
-    "chronology": "ussher-jones",
-    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 723 BC (no higher-tier year available)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 723–722 BC. Sort changed by the Reply to Beckman pass (2026-11-13): was ussher-jones 723 BC."
   },
   "sort_order_within_year": 217,
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "723–722 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference"
+      "year_bc_ad": -723,
+      "year_bc_ad_end": -722,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 3, rows 723–722, p. 44",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Samaria besieged in Shalmaneser V’s years 4 and 5 (Hezekiah 4–5).",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-samaria-siege"
     },
     {
       "source": "ussher-jones",
@@ -44,7 +48,8 @@
   ],
   "sources": [
     "blb-biblehub",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "griffith-beckman-reply-2"
   ],
   "free_source_links": [
     {
@@ -56,6 +61,11 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/2_kings/17.htm#5",
       "locator": "2Kgs.17.5"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 3, rows 723–722, p. 44"
     }
   ],
   "related": []

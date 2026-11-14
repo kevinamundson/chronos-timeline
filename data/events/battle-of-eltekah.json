@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "battle-of-eltekah",
+  "type": "event",
+  "title": "Battle of Eltekah",
+  "summary": "Assyrian victory at Eltekah over the Egyptian force, which Sennacherib’s annals place in his third campaign.",
+  "description": "Assyrian victory at Eltekah over the Egyptian force, which Sennacherib’s annals place in his third campaign. Event record added from Griffith & White’s Reply to Beckman, Part 2 (section “The Dilemma of Sennacherib’s Truthfulness”, pp. 29–30; Table 1, row 701, p. 39).",
+  "sorting_year": -713,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 713 BC."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "713 BC",
+      "year_am": null,
+      "year_bc_ad": -713,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “The Dilemma of Sennacherib’s Truthfulness”, pp. 29–30; Table 1, row 701, p. 39",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "The siege of Lachish, the Battle of Eltekah, and the assault on Jerusalem all belong to Sargon’s Ashdod campaign.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-eltekah-713"
+    }
+  ],
+  "people": [
+    "sennacherib",
+    "sargon-ii"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “The Dilemma of Sennacherib’s Truthfulness”, pp. 29–30; Table 1, row 701, p. 39"
+    }
+  ]
+}

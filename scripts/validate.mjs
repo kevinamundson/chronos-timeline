@@ -9,7 +9,7 @@
 //     KJV/Gutenberg, BibleGateway and other Bible-text links are rejected; scripture_refs must map to a BLB chapter
 //   - masoretic-genealogy AM figures for the Genesis 5 line match the KJV/MT numbers
 //   - sorting_year follows the 4-tier fallback (data/chronologies.json sorting_rule):
-//       1 cfah (cfah_basis=anchor_point) > 2 cfah (cfah_basis=table1_baseline)  [cfah_basis=paper_text never sorts]
+//       1 cfah (cfah_basis=anchor_point) > 2 cfah (cfah_basis=table1_baseline, then beckman_reply)  [cfah_basis=paper_text never sorts]
 //       > 3 ussher-jones > 4 ussher; else "derived" (events) or "none" (people, null)
 //     Events use chronologies[]. People use a tier-ranked dates.birth year.
 //     A person with dates.reign and no tier birth sorts on the reign-start year
@@ -81,6 +81,7 @@ if (srcIds.size !== srcDoc.sources.length) err('data/sources.json', 'duplicate s
     try { host = new URL(url).host; } catch { return false; }
     if (platform === 'arj') return host === 'answersresearchjournal.org';
     if (platform === 'osf') return host === 'osf.io';
+    if (platform === 'academia') return host === 'www.academia.edu' || host.endsWith('.academia.edu');
     return false;
   };
   for (const s of srcDoc.sources) {
@@ -95,7 +96,7 @@ if (srcIds.size !== srcDoc.sources.length) err('data/sources.json', 'duplicate s
     if (s.role === 'series' && s.parent) err('data/sources.json', `${s.id}: a series header has no parent`);
     if (s.role && !s.platform) err('data/sources.json', `${s.id}: role needs platform`);
     if (s.parent && (s.role === 'paper' || s.role === 'response') && srcById.get(s.parent)?.role !== 'series') err('data/sources.json', `${s.id}: ${s.role} parent must be a series`);
-    if (s.platform && !hostOk(s.platform, s.url)) err('data/sources.json', `${s.id}: ${s.platform} url must be on ${s.platform === 'arj' ? 'answersresearchjournal.org' : 'osf.io'}`);
+    if (s.platform && !hostOk(s.platform, s.url)) err('data/sources.json', `${s.id}: ${s.platform} url must be on ${{ arj: 'answersresearchjournal.org', osf: 'osf.io', academia: 'academia.edu' }[s.platform] || 'a known host'}`);
     if (s.responds_to && s.role !== 'response') err('data/sources.json', `${s.id}: responds_to is only for a response`);
     if (s.role === 'response') {
       const kinds = [
@@ -151,7 +152,7 @@ function checkEntries(rel, label, entries) {
   for (const e of entries || []) {
     if (!chronIds.has(e.source)) err(rel, `${label}: unknown chronology "${e.source}"`);
     if (e.source_text_id && !srcIds.has(e.source_text_id)) err(rel, `${label}: unknown source_text_id "${e.source_text_id}"`);
-    if (e.source === 'cfah' && e.date !== null && !['anchor_point', 'table1_baseline', 'paper_text'].includes(e.cfah_basis)) err(rel, `${label}: dated cfah entry needs cfah_basis`);
+    if (e.source === 'cfah' && e.date !== null && !['anchor_point', 'table1_baseline', 'beckman_reply', 'paper_text'].includes(e.cfah_basis)) err(rel, `${label}: dated cfah entry needs cfah_basis`);
     // CFAH anchor point numbers and OSF preprint marking
     if (e.cfah_ap && !(e.source === 'cfah' && e.cfah_basis === 'anchor_point')) err(rel, `${label}: cfah_ap only belongs on a CFAH anchor_point entry`);
     if ((e.cfah_preprint || e.cfah_key) && e.source !== 'cfah') err(rel, `${label}: cfah_preprint/cfah_key only belong on cfah entries`);
@@ -164,6 +165,13 @@ function checkEntries(rel, label, entries) {
     if (e.date !== null && !e.citation) err(rel, `${label}: dated entry without citation`);
     if (e.date === null && e.source === 'cfah' && !/pending CFAH reference/.test(e.note || '')) err(rel, `${label}: null cfah entry must note "pending CFAH reference"`);
   }
+  // Reply to Beckman (tier 2): cites one of the three Griffith & White papers, and never sits ahead of a CFAH-1 Table 1 row,
+  // so a Table 1 year governs within tier 2 when both are present.
+  const list = entries || [];
+  for (const e of list) if (e.source === 'cfah' && e.cfah_basis === 'beckman_reply' && !/^griffith-beckman-reply-[123]$/.test(e.source_text_id || '')) err(rel, `${label}: beckman_reply entry must set source_text_id griffith-beckman-reply-1, -2, or -3`);
+  const firstBeckman = list.findIndex((e) => e.source === 'cfah' && e.cfah_basis === 'beckman_reply');
+  const lastTable1 = list.map((e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline').lastIndexOf(true);
+  if (firstBeckman !== -1 && lastTable1 > firstBeckman) err(rel, `${label}: a CFAH-1 Table 1 entry must come before any Reply to Beckman entry`);
   const cf = (entries || []).find((e) => e.source === 'cfah');
   return cf && cf.year_bc_ad != null ? cf.year_bc_ad : null;
 }

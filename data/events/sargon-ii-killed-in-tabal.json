@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "sargon-ii-killed-in-tabal",
+  "type": "event",
+  "title": "Sargon II killed on campaign in Tabal",
+  "summary": "Sargon II is killed by Gurdi the Kullammaean on campaign in Tabal; Sennacherib succeeds.",
+  "description": "Sargon II is killed by Gurdi the Kullammaean on campaign in Tabal; Sennacherib succeeds. Event record added from Griffith & White’s Reply to Beckman, Part 2 (Table 2, row 705, p. 41; Table 3, row 705, p. 45).",
+  "sorting_year": -705,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 705 BC."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "705 BC",
+      "year_am": null,
+      "year_bc_ad": -705,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 2, row 705, p. 41; Table 3, row 705, p. 45",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Eponym Chronicle: Sargon killed by Gurdi the Kullammaean in Tabal; Sennacherib takes the throne on Abu 12 (August 705).",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-sargon-killed"
+    }
+  ],
+  "people": [
+    "sargon-ii",
+    "sennacherib"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 2, row 705, p. 41; Table 3, row 705, p. 45"
+    }
+  ]
+}

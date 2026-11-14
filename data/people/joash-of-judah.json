@@ -13,11 +13,11 @@
     "note": "No tier gives a birth year (Hales is display-only)."
   },
   "standby": {
-    "year_bc_ad": -889,
+    "year_bc_ad": -839,
     "basis": "source-printed",
-    "source_chronology": "hales",
+    "source_chronology": "cfah",
     "from_record": null,
-    "note": "Standby placement only. Hales, A New Analysis of Chronology (1830, 2nd ed.) prints this BC/AD year on the reign entry (8. Joash or Jehoash 40 889). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the death entry (839 BC). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
   },
   "father": null,
   "children": [],
@@ -56,12 +56,30 @@
         "source_text_id": "hales-new-analysis-1830",
         "note": "Kings of Judah. Not Raleigh’s Joash in the Israel column."
       }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": "839 BC",
+        "year_am": null,
+        "year_bc_ad": -839,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 1: Jewish Sources for the Chronology of the Divided Kingdom,\" OSF preprint v1.4 (2025), doi:10.17605/OSF.IO/XJZBM, section “Midrashic Literature”, item 1 (252 years), p. 6",
+        "link": "https://osf.io/xjzbm/",
+        "source_text_id": "griffith-beckman-reply-1",
+        "note": "Death of Joash, “agreeing precisely with Ussher & Jones”.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p1-joash-death"
+      }
     ]
   },
-  "events": [],
+  "events": [
+    "hazael-threatens-jerusalem"
+  ],
   "scripture_refs": [],
   "sources": [
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "griffith-beckman-reply-1"
   ],
   "related": [],
   "free_source_links": [
@@ -69,6 +87,11 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "griffith-beckman-reply-1",
+      "url": "https://www.academia.edu/130145429/A_Reply_to_Beckmans_Defense_of_Thieles_Chronology_Part_1_Jewish_Sources_for_the_Chronology_of_the_Divided_Kingdom",
+      "locator": "section “Midrashic Literature”, item 1 (252 years), p. 6"
     }
   ]
 }

@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "menahem-pays-tribute-to-pul",
+  "type": "event",
+  "title": "Menahem pays tribute to Pul",
+  "summary": "Menahem of Israel pays Pul a thousand talents of silver (2 Kings 15:19–20).",
+  "description": "Menahem of Israel pays Pul a thousand talents of silver (2 Kings 15:19–20). Event record added from Griffith & White’s Reply to Beckman, Part 2 (Table 4 “Thiele’s Bad Synchronisms Classified”, row 10, p. 47; Table 1, row ~738, p. 38).",
+  "sorting_year": -765,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): circa 765 BC."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "circa 765 BC",
+      "year_am": null,
+      "year_bc_ad": -765,
+      "precision": "approximate",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 4 “Thiele’s Bad Synchronisms Classified”, row 10, p. 47; Table 1, row ~738, p. 38",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Crown prince Pulu (Tiglath-Pileser III) demands tribute from Menahem in the reign of Ashur-Dan III (2 Kings 15:19–20); the king records it among other tributes in 738 BC.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-menahem-pul"
+    }
+  ],
+  "people": [
+    "menahem",
+    "tiglath-pileser-iii"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "2Kgs.15.19",
+    "2Kgs.15.20"
+  ],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 4 “Thiele’s Bad Synchronisms Classified”, row 10, p. 47; Table 1, row ~738, p. 38"
+    }
+  ]
+}

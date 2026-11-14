@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "hazael-threatens-jerusalem",
+  "type": "event",
+  "title": "Hazael threatens Jerusalem",
+  "summary": "Hazael of Aram goes up against Jerusalem and Joash buys him off with the temple treasures (2 Kings 12:17–18).",
+  "description": "Hazael of Aram goes up against Jerusalem and Joash buys him off with the temple treasures (2 Kings 12:17–18). Event record added from Griffith & White’s Reply to Beckman, Part 2 (section “Hazael”, p. 13).",
+  "sorting_year": -855,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 855 BC."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "855 BC",
+      "year_am": null,
+      "year_bc_ad": -855,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “Hazael”, p. 13",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Ussher-Jones: Hazael at the apex of his power threatens Jerusalem (2 Kings 12:17–18), two years before Qarqar.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-hazael-jerusalem"
+    }
+  ],
+  "people": [
+    "hazael",
+    "joash-of-judah"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [
+    "2Kgs.12.17",
+    "2Kgs.12.18"
+  ],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “Hazael”, p. 13"
+    }
+  ]
+}

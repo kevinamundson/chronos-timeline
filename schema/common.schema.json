@@ -155,9 +155,10 @@
           "enum": [
             "anchor_point",
             "table1_baseline",
+            "beckman_reply",
             "paper_text"
           ],
-          "description": "Only on cfah entries with a date. anchor_point = a CFAH triangulated anchor point (sort tier 1); table1_baseline = CFAH-1 Table 1, the Ussher-Jones biblical baseline (sort tier 2); paper_text = a date stated in a CFAH paper that is neither a numbered anchor point nor a Table 1 row (e.g. a ruler's reign; display only, never a sort tier; see open question A1)."
+          "description": "Only on cfah entries with a date. anchor_point = a CFAH triangulated anchor point (sort tier 1); table1_baseline = CFAH-1 Table 1, the Ussher-Jones biblical baseline (sort tier 2); beckman_reply = a year Griffith & White print for their own CFAH / Ussher-Jones chronology in A Reply to Beckman's Defense of Thiele's Chronology (OSF project 5b64m, Parts 1-3), also sort tier 2, after any Table 1 row on the same list (Kevin, 2026-11-13); paper_text = a date stated in a CFAH paper that is neither a numbered anchor point nor a Table 1 row (e.g. a ruler's reign; display only, never a sort tier; see open question A1)."
         },
         "cfah_ap": {
           "type": "string",

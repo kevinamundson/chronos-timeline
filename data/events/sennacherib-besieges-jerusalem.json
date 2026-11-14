@@ -10,21 +10,24 @@
   "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Kevin ruled (2026-10-27) that Jones's first invasion, as Tartan (713 BC), is this event. That Appendix F row sets the sort. Jones's second invasion (709 BC) is a separate record.",
   "sorting_year": -713,
   "sorting_basis": {
-    "tier": "ussher-jones",
-    "tier_rank": 3,
-    "chronology": "ussher-jones",
-    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 713 BC (no higher-tier year available)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 713 BC (Hezekiah year 14). Sort changed by the Reply to Beckman pass (2026-11-13): was ussher-jones 713 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "713 BC (Hezekiah year 14)",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -713,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 3, row 713, p. 44; Table 1, row 701, p. 39; section “Dating the Fall of Samaria”, p. 23",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Sennacherib’s assault on Jerusalem in Hezekiah’s 14th year, in early Autumn, during Sargon’s Ashdod campaign; not 701 BC.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-jerusalem-713"
     },
     {
       "source": "ussher-jones",
@@ -101,7 +104,8 @@
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
     "morecraft-christian-survey",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "griffith-beckman-reply-2"
   ],
   "related": [
     "sennacherib-second-invasion",
@@ -122,6 +126,11 @@
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 3, row 713, p. 44; Table 1, row 701, p. 39; section “Dating the Fall of Samaria”, p. 23"
     }
   ]
 }

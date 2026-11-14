@@ -94,6 +94,7 @@ const ext = (href, text) => href ? `<a href="${esc(href)}" rel="noopener" target
 // with platform, role, parent, and copy_kind. Responses are a fork tree: a top-level
 // comment names the papers it addresses, and a reply hangs under the first response
 // in responds_to. Copies nest under the paper or response they duplicate.
+const onCfahList = (s) => s.platform === 'arj' || s.platform === 'osf' || s.platform === 'academia';
 const byListOrder = (a, b) => (a.list_order ?? 9999) - (b.list_order ?? 9999) || String(a.title).localeCompare(String(b.title));
 const cfahKids = (id, role) => sources.filter((s) => s.parent === id && s.role === role).sort(byListOrder);
 const responseKind = (title) => {
@@ -174,16 +175,16 @@ const cfahThreadHtml = (responses) => {
   return `<ol class="cfah-thread">${tops.sort(byListOrder).map(fork).join('')}</ol>`;
 };
 const cfahPlatformListHtml = (ulId) => {
-  const sections = sources.filter((s) => s.role === 'series' && (s.platform === 'arj' || s.platform === 'osf')).sort(byListOrder);
+  const sections = sources.filter((s) => s.role === 'series' && onCfahList(s)).sort(byListOrder);
   return `<ul class="links cfah-platforms" id="${esc(ulId)}">${sections.map((sec) => {
     const papers = cfahKids(sec.id, 'paper');
     const responses = cfahKids(sec.id, 'response');
     const headTag = sec.access ? ` <span class="tag">${esc(sec.access)}</span>` : '';
-    const resp = `<li class="cfah-responses"><p class="cfah-responses-label">Responses</p>${cfahThreadHtml(responses)}</li>`;
+    // The Academia.edu section (Kevin, 2026-11-13) has papers only; ARJ and OSF always carry Responses.
+    const resp = responses.length ? `<li class="cfah-responses"><p class="cfah-responses-label">Responses</p>${cfahThreadHtml(responses)}</li>` : '';
     return `<li class="cfah-platform">${ext(sec.url, esc(sec.series_label || sec.title))}${headTag}<ul class="links">${papers.map(cfahItemHtml).join('')}${resp}</ul></li>`;
   }).join('')}</ul>`;
 };
-const onCfahList = (s) => s.platform === 'arj' || s.platform === 'osf';
 
 // Historical years: negative = BC, no year 0.
 const yearLabel = (y, end) => {
@@ -235,13 +236,14 @@ const osis = (ref) => {
 const scriptureList = (refs) => !refs?.length ? '' : `<ul class="chips">${refs.map((r) => { const o = osis(r); return `<li>${ext(o.href, esc(o.text))}</li>`; }).join('')}</ul>`;
 
 // Chronology display order (owner spec): CFAH anchor, CFAH-1 Table 1, Ussher-Jones, Ussher, Jordan (secondary, display only), Bible, (MT arithmetic), Josephus, Raleigh, Clonmacnoise.
-const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:paper_text', 'cfah:', 'ussher-jones', 'jones-2019', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'morecraft', 'cory', 'shuckford', 'hales', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
+const ROW_ORDER = ['cfah:anchor_point', 'cfah:table1_baseline', 'cfah:beckman_reply', 'cfah:paper_text', 'cfah:', 'ussher-jones', 'jones-2019', 'ussher', 'jordan', 'jordan-compilation', 'generations', 'herodotus', 'morecraft', 'cory', 'shuckford', 'hales', 'bible', 'masoretic-genealogy', 'josephus', 'raleigh-history-of-the-world', 'annals-of-clonmacnoise'];
 const rowKey = (e) => (e.source === 'cfah' ? `cfah:${e.cfah_basis || ''}` : e.source);
 const rowRank = (e) => { const i = ROW_ORDER.indexOf(rowKey(e)); return i < 0 ? 99 : i; };
 const chronName = (e, opts = {}) => {
   if (e.source === 'cfah') {
     if (e.cfah_basis === 'anchor_point') return 'CFAH <span class="tag tag-t1">anchor point</span>';
     if (e.cfah_basis === 'table1_baseline') return 'CFAH-1 Table 1 <span class="tag tag-t2">Ussher–Jones baseline</span>';
+    if (e.cfah_basis === 'beckman_reply') return 'CFAH Reply to Beckman <span class="tag tag-t2">Tier 2 · OSF preprint</span>';
     if (e.cfah_basis === 'paper_text') return 'CFAH <span class="tag">paper text (not an anchor point)</span>';
     return 'CFAH';
   }
@@ -263,7 +265,7 @@ const chronName = (e, opts = {}) => {
 };
 const TIERS = {
   'cfah-anchor': { cls: 't1', label: 'Tier 1 · CFAH anchor point' },
-  'cfah-table1': { cls: 't2', label: 'Tier 2 · CFAH-1 Table 1 (Ussher–Jones baseline)' },
+  'cfah-table1': { cls: 't2', label: 'Tier 2 · CFAH-1 Table 1 and Reply to Beckman (Ussher–Jones baseline)' },
   'ussher-jones': { cls: 't3', label: 'Tier 3 · Ussher–Jones (Floyd Nolen Jones)' },
   ussher: { cls: 't4', label: 'Tier 4 · Ussher, Annals of the World' },
   derived: { cls: 'td', label: 'Derived · sort year copied from a related record' },
@@ -283,7 +285,7 @@ const sortingEntry = (entries, basis, sortYear) => {
   const list = entries || [];
   const byYear = (hits) => (sortYear == null ? hits[0] : hits.find((e) => e.year_bc_ad === sortYear) || hits[0]) || null;
   if (t === 'cfah-anchor') return list.find((e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point' && has(e));
-  if (t === 'cfah-table1') return list.find((e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline' && has(e));
+  if (t === 'cfah-table1') return list.find((e) => e.source === 'cfah' && (e.cfah_basis === 'table1_baseline' || e.cfah_basis === 'beckman_reply') && has(e));
   if (t === 'ussher-jones') {
     const hits = list.filter((e) => e.source === 'ussher-jones' && has(e));
     if (basis.slot === 'reign_start') {
@@ -303,7 +305,7 @@ const sortEntriesOf = (rec) => {
 // Four-tier rule applied to any date list (birth/death/translated): CFAH AP > CFAH-1 Table 1 > Ussher-Jones > Ussher.
 const TIER_PICKS = [
   ['cfah-anchor', (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point'],
-  ['cfah-table1', (e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline'],
+  ['cfah-table1', (e) => e.source === 'cfah' && (e.cfah_basis === 'table1_baseline' || e.cfah_basis === 'beckman_reply')],
   ['ussher-jones', (e) => e.source === 'ussher-jones'],
   ['ussher', (e) => e.source === 'ussher'],
   // Provisional only (no tier 1-4 date): Generations curriculum, same rule as the record sort.
@@ -501,7 +503,7 @@ function disagreements(entries, sortYear) {
   const bc = {}; const am = {};
   for (const e of entries) {
     if (e.superseded_by) continue; // older edition: noted on its collapsed row instead
-    const name = e.source === 'cfah' ? (e.cfah_basis === 'table1_baseline' ? 'CFAH-1 Table 1' : 'CFAH') : (chronById[e.source]?.abbreviation || chronById[e.source]?.name || e.source);
+    const name = e.source === 'cfah' ? (e.cfah_basis === 'table1_baseline' ? 'CFAH-1 Table 1' : e.cfah_basis === 'beckman_reply' ? 'CFAH Reply to Beckman' : 'CFAH') : (chronById[e.source]?.abbreviation || chronById[e.source]?.name || e.source);
     if (e.year_bc_ad != null) (bc[e.year_bc_ad] ||= new Set()).add(name);
     if (e.year_am != null) (am[e.year_am] ||= new Set()).add(name);
   }

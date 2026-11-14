@@ -5,24 +5,27 @@
   "title": "Merodach-baladan’s embassy",
   "summary": "Merodach-baladan sends letters and a present to Hezekiah (2 Kgs 20:12).",
   "description": "Merodach-baladan sends letters and a present to Hezekiah (2 Kgs 20:12). The year is the Appendix F figure, stored as printed.",
-  "sorting_year": -712,
+  "sorting_year": -713,
   "sorting_basis": {
-    "tier": "ussher-jones",
-    "tier_rank": 3,
-    "chronology": "ussher-jones",
-    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 712 BC (no higher-tier year available)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 713 BC. Sort changed by the Reply to Beckman pass (2026-11-13): was ussher-jones 712 BC."
   },
   "sort_order_within_year": 222,
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "713 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference"
+      "year_bc_ad": -713,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 2, row 713 (Ussher-Jones column), p. 40",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Merodach-Baladan sends a messenger seeking Hezekiah as an ally. The Jones Appendix F entry stored here reads 712.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-mb-embassy-713"
     },
     {
       "source": "ussher-jones",
@@ -47,7 +50,8 @@
   ],
   "sources": [
     "blb-biblehub",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "griffith-beckman-reply-2"
   ],
   "free_source_links": [
     {
@@ -59,6 +63,11 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/2_kings/20.htm#12",
       "locator": "2Kgs.20.12"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 2, row 713 (Ussher-Jones column), p. 40"
     }
   ],
   "related": []

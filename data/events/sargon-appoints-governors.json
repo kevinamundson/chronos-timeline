@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "sargon-appoints-governors",
+  "type": "event",
+  "title": "Sargon II appoints governors",
+  "summary": "Sargon II’s seventh year: governors appointed.",
+  "description": "Sargon II’s seventh year: governors appointed. Event record added from Griffith & White’s Reply to Beckman, Part 2 (Table 3, row 715, p. 44).",
+  "sorting_year": -715,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 715 BC (Sargon year 7)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "715 BC (Sargon year 7)",
+      "year_am": null,
+      "year_bc_ad": -715,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 3, row 715, p. 44",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Hezekiah year 12.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-governors-715"
+    }
+  ],
+  "people": [
+    "sargon-ii"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 3, row 715, p. 44"
+    }
+  ]
+}

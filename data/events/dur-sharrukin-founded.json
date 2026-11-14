@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "dur-sharrukin-founded",
+  "type": "event",
+  "title": "Dur-Sharrukin founded",
+  "summary": "Sargon II begins his new capital, Dur-Sharrukin (Khorsabad).",
+  "description": "Sargon II begins his new capital, Dur-Sharrukin (Khorsabad). Event record added from Griffith & White’s Reply to Beckman, Part 2 (Table 3, row 717, p. 44; section “Confirmation from the Lachish Reliefs”, p. 26).",
+  "sorting_year": -717,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 717 BC (Sargon year 5)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "717 BC (Sargon year 5)",
+      "year_am": null,
+      "year_bc_ad": -717,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 3, row 717, p. 44; section “Confirmation from the Lachish Reliefs”, p. 26",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Work begins on Sargon’s new capital (Khorsabad).",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-dur-sharrukin-717"
+    }
+  ],
+  "people": [
+    "sargon-ii"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 3, row 717, p. 44; section “Confirmation from the Lachish Reliefs”, p. 26"
+    }
+  ]
+}

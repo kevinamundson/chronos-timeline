@@ -27,6 +27,19 @@
       "cfah_key": "cfah:t1-516:second-temple-completed"
     },
     {
+      "source": "cfah",
+      "date": "516 BC (6th year of Darius)",
+      "year_am": null,
+      "year_bc_ad": -516,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 1: Jewish Sources for the Chronology of the Divided Kingdom,\" OSF preprint v1.4 (2025), doi:10.17605/OSF.IO/XJZBM, section “Discrepancies in Josephus”, p. 15",
+      "link": "https://osf.io/xjzbm/",
+      "source_text_id": "griffith-beckman-reply-1",
+      "note": "Completion of the Second Temple in the 6th year of Darius (Ezra 6:15); Josephus shifts it to the 9th year (513 BC).",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p1-second-temple"
+    },
+    {
       "source": "generations",
       "date": "516 BC",
       "year_am": null,
@@ -72,7 +85,8 @@
     "generations-preparing",
     "generations-preparing-2e",
     "cfah-1",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "griffith-beckman-reply-1"
   ],
   "related": [],
   "free_source_links": [
@@ -90,6 +104,11 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "griffith-beckman-reply-1",
+      "url": "https://www.academia.edu/130145429/A_Reply_to_Beckmans_Defense_of_Thieles_Chronology_Part_1_Jewish_Sources_for_the_Chronology_of_the_Divided_Kingdom",
+      "locator": "section “Discrepancies in Josephus”, p. 15"
     }
   ]
 }

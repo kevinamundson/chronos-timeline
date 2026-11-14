@@ -27,6 +27,19 @@
       "source_text_id": "cfah-1"
     },
     {
+      "source": "cfah",
+      "date": "1251 BC (Jones)",
+      "year_am": null,
+      "year_bc_ad": -1251,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, section “The Book of Judges”, p. 17",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "Gideon’s defeat of Midian and Amalek, with the Sidonians (Judges 10:12), as the paper cites Jones 2026, Chart 4.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-gideon"
+    },
+    {
       "source": "ussher-jones",
       "date": "\"1251 BC GIDEON'S 300 WIN\"; GIDEON \"40 YRS\" 1258 BC to 1218 BC",
       "year_am": null,
@@ -136,13 +149,19 @@
     "jordan-sbc-2",
     "blb-biblehub",
     "ussher-annals-1658",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "griffith-beckman-reply-3"
   ],
   "free_source_links": [
     {
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/judges/6.htm#11",
       "locator": "Judg.6.11-Judg.8.28"
+    },
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "section “The Book of Judges”, p. 17"
     }
   ],
   "related": [

@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "ashur-nadin-shumi-made-king-of-babylon",
+  "type": "event",
+  "title": "Ashur-nadin-shumi made king of Babylon",
+  "summary": "Sennacherib puts his son Ashur-nadin-shumi on the throne of Babylon.",
+  "description": "Sennacherib puts his son Ashur-nadin-shumi on the throne of Babylon. Event record added from Griffith & White’s Reply to Beckman, Part 2 (Table 3, row 700, pp. 45–46; Table 2, row 700, p. 42).",
+  "sorting_year": -700,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 700 BC (Sennacherib year 5)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "700 BC (Sennacherib year 5)",
+      "year_am": null,
+      "year_bc_ad": -700,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 3, row 700, pp. 45–46; Table 2, row 700, p. 42",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Sennacherib sacks Babylon in Bel-Ibni’s third year and makes his son king; last battle against Merodach-Baladan, who escapes again.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-and-700"
+    }
+  ],
+  "people": [
+    "ashur-nadin-shumi",
+    "sennacherib",
+    "bel-ibni",
+    "merodach-baladan"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 3, row 700, pp. 45–46; Table 2, row 700, p. 42"
+    }
+  ]
+}

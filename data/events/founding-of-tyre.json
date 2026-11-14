@@ -5,23 +5,27 @@
   "title": "Founding of Tyre",
   "summary": "Founding of Tyre",
   "description": "Added from the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -1250,
+  "sorting_year": -1251,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 284): around 1250 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 3): 1251 - 1249 BC. Sort changed by the Reply to Beckman pass (2026-11-13): was provisional 1250 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "1251 - 1249 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -1251,
+      "year_bc_ad_end": -1249,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, Table 2 “Harmonized Chronology of Tyre and Carthage”, row 1251–1249, p. 46",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "Tyre founded by survivors of the defeat of Sidon.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-tyre"
     },
     {
       "source": "generations",
@@ -53,7 +57,8 @@
   "sources": [
     "generations-preparing-2e",
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "griffith-beckman-reply-3"
   ],
   "related": [
     "alexander-destroys-tyre"
@@ -63,6 +68,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
       "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "Table 2 “Harmonized Chronology of Tyre and Carthage”, row 1251–1249, p. 46"
     }
   ]
 }

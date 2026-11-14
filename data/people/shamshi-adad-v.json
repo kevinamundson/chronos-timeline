@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "shamshi-adad-v",
+  "type": "person",
+  "title": "Shamshi-Adad V",
+  "summary": "King of Assyria, younger son and chosen successor of Shalmaneser III.",
+  "description": "King of Assyria after Shalmaneser III. Griffith & White (Reply to Beckman, Part 2) say he spent his reign reconquering the lands east of the Euphrates and died unexpectedly in 811 BC. Person record added from Griffith & White’s Reply to Beckman (OSF project 5b64m) on 2026-11-13.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "standby": {
+    "year_bc_ad": -811,
+    "basis": "source-printed",
+    "source_chronology": "cfah",
+    "from_record": null,
+    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the death entry (811 BC). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "death": [
+      {
+        "source": "cfah",
+        "date": "811 BC",
+        "year_am": null,
+        "year_bc_ad": -811,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “The Tell al-Rimah Stela”, p. 15",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Died unexpectedly; his son Adad-Nirari III succeeded as a minor.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-shamshi-adad-death"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “The Tell al-Rimah Stela”, p. 15"
+    }
+  ],
+  "dynasty": "Assyria"
+}

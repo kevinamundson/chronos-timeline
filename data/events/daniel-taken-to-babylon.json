@@ -27,6 +27,19 @@
       "cfah_key": "cfah:t1-606:daniel-taken-to-babylon"
     },
     {
+      "source": "cfah",
+      "date": "606 BC",
+      "year_am": null,
+      "year_bc_ad": -606,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 1: Jewish Sources for the Chronology of the Divided Kingdom,\" OSF preprint v1.4 (2025), doi:10.17605/OSF.IO/XJZBM, section “The Prophets: 490 years and 390 years”, p. 18",
+      "link": "https://osf.io/xjzbm/",
+      "source_text_id": "griffith-beckman-reply-1",
+      "note": "First tranche of captives taken by Prince Nebuchadnezzar (Daniel 1:1–3).",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p1-daniel-606"
+    },
+    {
       "source": "generations",
       "date": "605 BC",
       "year_am": null,
@@ -62,7 +75,8 @@
   "sources": [
     "generations-preparing",
     "generations-preparing-2e",
-    "cfah-1"
+    "cfah-1",
+    "griffith-beckman-reply-1"
   ],
   "related": [],
   "free_source_links": [
@@ -75,6 +89,11 @@
       "source_id": "cfah-1",
       "url": "https://answersresearchjournal.org/ancient-egypt/chronological-framework-ancient-history-1/",
       "locator": "Table 1 \"Biblically derived dates from Ussher and Jones\""
+    },
+    {
+      "source_id": "griffith-beckman-reply-1",
+      "url": "https://www.academia.edu/130145429/A_Reply_to_Beckmans_Defense_of_Thieles_Chronology_Part_1_Jewish_Sources_for_the_Chronology_of_the_Divided_Kingdom",
+      "locator": "section “The Prophets: 490 years and 390 years”, p. 18"
     }
   ]
 }

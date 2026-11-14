@@ -5,23 +5,26 @@
   "title": "Saul Anointed and Made King",
   "summary": "The elders ask Samuel for a king; Saul son of Kish is anointed, defeats Nahash the Ammonite and is made king at Gilgal (1 Sam 8–11); he reigns forty years (Acts 13:21).",
   "description": "Judges-period record added from James B. Jordan's chronology (secondary display) with Ussher, Jones and, where available, CFAH-1 Table 1 dates for sorting. Jordan treats the judgeships as partly overlapping regional sequences (North / Centre / South) fitted to the 480 years of 1 Kgs 6:1 and the 300 years of Judg 11:26.",
-  "sorting_year": -1095,
+  "sorting_year": -1096,
   "sorting_basis": {
-    "tier": "ussher-jones",
-    "tier_rank": 3,
-    "chronology": "ussher-jones",
-    "note": "Tier 3: Ussher-Jones (F. N. Jones): 1095 BC (no higher-tier year available). Jordan (secondary display) never sets the sort."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 1): 1096 BC. Sort changed by the Reply to Beckman pass (2026-11-13): was ussher-jones 1095 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "1096 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference"
+      "year_bc_ad": -1096,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 1: Jewish Sources for the Chronology of the Divided Kingdom,\" OSF preprint v1.4 (2025), doi:10.17605/OSF.IO/XJZBM, section “The Prophets: 490 years and 390 years”, p. 18",
+      "link": "https://osf.io/xjzbm/",
+      "source_text_id": "griffith-beckman-reply-1",
+      "note": "“the accession year of King Saul according to the Ussher-Jones chronology” (490 years before 606 BC). The Jones entry stored here reads 1095; see OPEN-QUESTIONS.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p1-saul-accession"
     },
     {
       "source": "ussher-jones",
@@ -172,7 +175,8 @@
     "ussher-annals-1658",
     "jordan-compilation-anno-mundi",
     "morecraft-christian-survey",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "griffith-beckman-reply-1"
   ],
   "free_source_links": [
     {
@@ -184,6 +188,11 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "griffith-beckman-reply-1",
+      "url": "https://www.academia.edu/130145429/A_Reply_to_Beckmans_Defense_of_Thieles_Chronology_Part_1_Jewish_Sources_for_the_Chronology_of_the_Divided_Kingdom",
+      "locator": "section “The Prophets: 490 years and 390 years”, p. 18"
     }
   ],
   "related": [

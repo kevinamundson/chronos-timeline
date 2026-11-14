@@ -72,7 +72,9 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    "jehu-tribute-claim-black-obelisk"
+  ],
   "scripture_refs": [],
   "sources": [
     "cfah-16-osf",

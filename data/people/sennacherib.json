@@ -10,19 +10,13 @@
   ],
   "summary": "Assyrian king in the Polyhistor extracts of Berossus (Cory 1876).",
   "description": "Added from the Cory import. Display only. Cory gives reign lengths and synchronisms, not a BC year this record can sort on, and no tier 1–4 chronology dates this person, so there is no sort year.",
-  "sorting_year": null,
+  "sorting_year": -705,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year (Cory is display-only and gives none)."
-  },
-  "standby": {
-    "year_bc_ad": -713,
-    "basis": "linked-record",
-    "source_chronology": null,
-    "from_record": "sennacherib-besieges-jerusalem",
-    "note": "Standby placement only, placed with \"Sennacherib's siege of Jerusalem\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 2): Abu 12 (August) 705 BC (ascends the throne)). No tier 1–4 birth year. Sort changed by the Reply to Beckman pass (2026-11-13): was none none."
   },
   "father": null,
   "children": [],
@@ -30,13 +24,16 @@
     "reign": [
       {
         "source": "cfah",
-        "date": null,
+        "date": "Abu 12 (August) 705 BC (ascends the throne)",
         "year_am": null,
-        "year_bc_ad": null,
-        "precision": "unknown",
-        "citation": null,
-        "link": null,
-        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+        "year_bc_ad": -705,
+        "precision": "day",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 2, row 705, p. 41; Table 3, row 705, p. 45",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Vice-regent (MAN) under Sargon before this, on the authors’ reading of the Lachish reliefs.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-sennacherib-reign"
       },
       {
         "source": "cory",
@@ -76,10 +73,22 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    "sennacherib-besieges-lachish",
+    "battle-of-eltekah",
+    "sargon-stays-in-the-land-712",
+    "sargon-ii-killed-in-tabal",
+    "sennacherib-sends-nobles-against-the-kullamean",
+    "sennacherib-installs-bel-ibni",
+    "sennacherib-against-hirimma-and-hararatum",
+    "sennacherib-palace-without-rival-inscription",
+    "sennacherib-campaign-to-halzi",
+    "ashur-nadin-shumi-made-king-of-babylon"
+  ],
   "scripture_refs": [],
   "sources": [
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "griffith-beckman-reply-2"
   ],
   "related": [],
   "free_source_links": [
@@ -87,6 +96,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 2, row 705, p. 41; Table 3, row 705, p. 45"
     }
   ]
 }

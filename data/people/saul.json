@@ -5,19 +5,13 @@
   "title": "Saul",
   "summary": "First king of Israel.",
   "description": "First king of Israel. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-14 (Table 5, \"CFAH Reconstructed Eponym List (CFAH-REL)\"); its dates are display only.",
-  "sorting_year": null,
+  "sorting_year": -1096,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
-  },
-  "standby": {
-    "year_bc_ad": -1095,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Column: Ruler of Israel; Name row (Year BC): 1095; Last regnal-year row (Year BC): 1056 (year 40)). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 1): 1096 BC (accession)). No tier 1–4 birth year. Sort changed by the Reply to Beckman pass (2026-11-13): was none none."
   },
   "father": null,
   "children": [
@@ -26,6 +20,19 @@
   ],
   "dates": {
     "reign": [
+      {
+        "source": "cfah",
+        "date": "1096 BC (accession)",
+        "year_am": null,
+        "year_bc_ad": -1096,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 1: Jewish Sources for the Chronology of the Divided Kingdom,\" OSF preprint v1.4 (2025), doi:10.17605/OSF.IO/XJZBM, section “The Prophets: 490 years and 390 years”, p. 18",
+        "link": "https://osf.io/xjzbm/",
+        "source_text_id": "griffith-beckman-reply-1",
+        "note": "Accession year of Saul, Ussher-Jones, as printed in the paper.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p1-saul-reign"
+      },
       {
         "source": "cfah",
         "date": "Column: Ruler of Israel; Name row (Year BC): 1095; Last regnal-year row (Year BC): 1056 (year 40)",
@@ -139,7 +146,8 @@
     "hales-new-analysis-1830",
     "jones-chronology-ot-2026",
     "blb-biblehub",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "griffith-beckman-reply-1"
   ],
   "related": [
     "jonathan",
@@ -175,6 +183,11 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/1_samuel/31.htm#6",
       "locator": "1Sam.31.6"
+    },
+    {
+      "source_id": "griffith-beckman-reply-1",
+      "url": "https://www.academia.edu/130145429/A_Reply_to_Beckmans_Defense_of_Thieles_Chronology_Part_1_Jewish_Sources_for_the_Chronology_of_the_Divided_Kingdom",
+      "locator": "section “The Prophets: 490 years and 390 years”, p. 18"
     }
   ],
   "dynasty": "Kings of Israel"

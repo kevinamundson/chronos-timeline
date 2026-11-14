@@ -26,6 +26,20 @@
       "source_text_id": "cfah-1"
     },
     {
+      "source": "cfah",
+      "date": "1012/1011 BC",
+      "year_am": null,
+      "year_bc_ad": -1012,
+      "year_bc_ad_end": -1011,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, Table 2, row 1012/1011, p. 46",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "Solomon’s Temple dedicated.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-temple"
+    },
+    {
       "source": "ussher-jones",
       "date": "3000 1004 Dedication of Solomon’s Temple",
       "year_am": 3000,
@@ -181,7 +195,8 @@
     "jordan-compilation-anno-mundi",
     "cory-ancient-fragments-1876",
     "hales-new-analysis-1830",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "griffith-beckman-reply-3"
   ],
   "free_source_links": [
     {
@@ -218,6 +233,11 @@
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    },
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "Table 2, row 1012/1011, p. 46"
     }
   ],
   "related": [

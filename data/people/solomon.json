@@ -112,6 +112,19 @@
         "source_text_id": "cfah-1"
       },
       {
+        "source": "cfah",
+        "date": "976 BC",
+        "year_am": null,
+        "year_bc_ad": -976,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 1: Jewish Sources for the Chronology of the Divided Kingdom,\" OSF preprint v1.4 (2025), doi:10.17605/OSF.IO/XJZBM, section “The Prophets: 490 years and 390 years”, p. 19",
+        "link": "https://osf.io/xjzbm/",
+        "source_text_id": "griffith-beckman-reply-1",
+        "note": "Death of Solomon, Josephus and Ussher-Jones.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p1-solomon-death"
+      },
+      {
         "source": "ussher-jones",
         "date": null,
         "year_am": null,
@@ -270,7 +283,8 @@
     "cory-ancient-fragments-1876",
     "hales-new-analysis-1830",
     "jones-chronology-ot-2026",
-    "dynasty-of-slaves-2026"
+    "dynasty-of-slaves-2026",
+    "griffith-beckman-reply-1"
   ],
   "free_source_links": [
     {
@@ -312,6 +326,11 @@
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    },
+    {
+      "source_id": "griffith-beckman-reply-1",
+      "url": "https://www.academia.edu/130145429/A_Reply_to_Beckmans_Defense_of_Thieles_Chronology_Part_1_Jewish_Sources_for_the_Chronology_of_the_Divided_Kingdom",
+      "locator": "section “The Prophets: 490 years and 390 years”, p. 19"
     }
   ],
   "related": [

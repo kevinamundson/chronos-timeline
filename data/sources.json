@@ -2359,6 +2359,100 @@
       "license_note": "Copyrighted. The site owner's private reading is not in this repository and is not linked. Only a short paraphrase in our own words is used. The url is the public Amazon listing of the book, not a copy of the text.",
       "verified_on": "2026-11-08",
       "note": "The Amazon listing was opened on 2026-11-08 (author, title, CreateSpace, 29 September 2016, 112 pages, ISBN-13 978-1539103615). The Naamah identification on her record is summarized from the owner's reading. Baring and Cashford, The Myth of the Goddess, is not a source here; Johnson cites it."
+    },
+    {
+      "id": "griffith-academia-series",
+      "platform": "academia",
+      "role": "series",
+      "list_order": 3,
+      "title": "Academia.edu",
+      "series_label": "Academia.edu",
+      "authors": [
+        "Kenneth C. Griffith"
+      ],
+      "translator_or_editor": null,
+      "year": null,
+      "url": "https://independent.academia.edu/KennethGriffith",
+      "alt_urls": [],
+      "access": "free-to-read",
+      "license_note": "Kenneth Griffith’s Academia.edu page. Section header for his three-part Reply to Beckman on the CFAH list (Kevin, 2026-11-13).",
+      "verified_on": "2026-11-13",
+      "note": "Section header. Kevin asked on 2026-11-13 that the three Griffith and White papers be linked to Academia.edu under the CFAH links. The private Drive copies are never linked."
+    },
+    {
+      "id": "griffith-beckman-reply-1",
+      "platform": "academia",
+      "role": "paper",
+      "parent": "griffith-academia-series",
+      "series_parent": "griffith-academia-series",
+      "list_order": 1,
+      "title": "A Reply to Beckman’s Defense of Thiele’s Chronology, Part 1: Jewish Sources for the Chronology of the Divided Kingdom",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF preprint, 24 Jun 2025, v1.4 (summation error on pp. 10–11 corrected 31 Jul 2026), file reply_to_beckman_part_1_v1.4.pdf, doi:10.17605/OSF.IO/XJZBM (component of OSF project 5b64m); also posted on Academia.edu",
+      "url": "https://www.academia.edu/130145429/A_Reply_to_Beckmans_Defense_of_Thieles_Chronology_Part_1_Jewish_Sources_for_the_Chronology_of_the_Divided_Kingdom",
+      "alt_urls": [
+        "https://osf.io/xjzbm/",
+        "https://osf.io/download/ngcs7/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on Academia.edu (a free Academia.edu account may be needed to download). The same papers are OSF components of project 5b64m, which set no license (OSF API, 2026-11-13), so all rights reserved: only short quotes and data values are used here. Academia.edu returns HTTP 403 to scripted requests, so the pages were confirmed through a web search index on 2026-11-13.",
+      "verified_on": "2026-11-13",
+      "note": "Byline on the PDF: Kenneth Griffith and Darrell K. White. Academia.edu lists Kenneth Griffith as the uploader."
+    },
+    {
+      "id": "griffith-beckman-reply-2",
+      "platform": "academia",
+      "role": "paper",
+      "parent": "griffith-academia-series",
+      "series_parent": "griffith-academia-series",
+      "list_order": 2,
+      "title": "Part 2: An Objectivist Answer to the Assyrian Synchronisms",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF preprint, 25 Jun 2025, file reply_to_beckman_part_2_v.2.10.pdf (v2.10, 7 Aug 2025), doi:10.17605/OSF.IO/DT6GX (component of OSF project 5b64m); also posted on Academia.edu",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "alt_urls": [
+        "https://osf.io/dt6gx/",
+        "https://osf.io/download/8nu9a/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on Academia.edu (a free Academia.edu account may be needed to download). The same papers are OSF components of project 5b64m, which set no license (OSF API, 2026-11-13), so all rights reserved: only short quotes and data values are used here. Academia.edu returns HTTP 403 to scripted requests, so the pages were confirmed through a web search index on 2026-11-13.",
+      "verified_on": "2026-11-13",
+      "note": "Part 2 of A Reply to Beckman’s Defense of Thiele’s Chronology. Byline on the PDF: Kenneth Griffith and Darrell K. White."
+    },
+    {
+      "id": "griffith-beckman-reply-3",
+      "platform": "academia",
+      "role": "paper",
+      "parent": "griffith-academia-series",
+      "series_parent": "griffith-academia-series",
+      "list_order": 3,
+      "title": "Part 3: The Founding Dates of Tyre and Carthage",
+      "authors": [
+        "Kenneth C. Griffith",
+        "Darrell K. White"
+      ],
+      "translator_or_editor": null,
+      "year": "2025",
+      "publication": "OSF preprint, 27 Jun 2025, file reply_to_beckman_Part_3_v1.2.pdf (v1.2, 5 Aug 2025), doi:10.17605/OSF.IO/9V65S (component of OSF project 5b64m); also posted on Academia.edu",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "alt_urls": [
+        "https://osf.io/9v65s/",
+        "https://osf.io/download/9zths/"
+      ],
+      "access": "free-to-read",
+      "license_note": "Free to read on Academia.edu (a free Academia.edu account may be needed to download). The same papers are OSF components of project 5b64m, which set no license (OSF API, 2026-11-13), so all rights reserved: only short quotes and data values are used here. Academia.edu returns HTTP 403 to scripted requests, so the pages were confirmed through a web search index on 2026-11-13.",
+      "verified_on": "2026-11-13",
+      "note": "Part 3 of A Reply to Beckman’s Defense of Thiele’s Chronology. Byline on the PDF: Kenneth Griffith and Darrell K. White."
     }
   ]
 }

@@ -55,7 +55,7 @@ Further rules:
 | Rank | Tier | Source |
 |---|---|---|
 | 1 | `cfah-anchor` | CFAH entry with `cfah_basis: anchor_point`. This includes OSF preprint anchor points, which carry `cfah_preprint` and "OSF preprint" in the citation. |
-| 2 | `cfah-table1` | CFAH entry with `cfah_basis: table1_baseline` (CFAH-1 Table 1) |
+| 2 | `cfah-table1` | CFAH entry with `cfah_basis: table1_baseline` (CFAH-1 Table 1), else `cfah_basis: beckman_reply` (Griffith & White's *Reply to Beckman's Defense of Thiele's Chronology*, OSF project 5b64m, Parts 1–3: the years the authors give for their own CFAH / Ussher–Jones chronology). A Table 1 row is stored first and governs. Kevin, 2026-11-13; data in `scripts/cfah/beckman-reply.mjs`, applied by `scripts/cfah/beckman-apply.mjs`, checklist in `docs/cfah-osf-coverage.md`. |
 | 3 | `ussher-jones` | Floyd Nolen Jones. Only years he prints himself; never convert his AM-only figures. |
 | 4 | `ussher` | Ussher, *Annals of the World* |
 

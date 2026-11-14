@@ -1905,3 +1905,46 @@ Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record o
   - On person and event pages they are left out of the main date tables and the disagreement flags. They appear last, in a red block headed "Conventional dating", with the note: “These views are based on conventional dating practices. They are shown for reference and do not set the timeline’s order.”
   - The Chronologies page marks the `dynasty-of-slaves` entry the same way.
 - **Open point:** "tier" was built as a display group, not a fifth sort tier, because these dates must not sort. Say if you want any other source moved into this group.
+
+## P. Griffith & White, *A Reply to Beckman* (OSF 5b64m), Tier 2 — 2026-11-13
+
+Kevin (2026-11-13): "Make sure the three Griffith and White files are linked to academia from the chronology page under the CFAH links. Make sure all the names Evens and dates from Griffith and Whites OSF Preprint are included in Tier 2." Checklist, counts, and the sort diff: `docs/cfah-osf-coverage.md`.
+
+### P1. Which preprint, and what "Tier 2" means
+
+- **Applied:** "Griffith and White's OSF Preprint" was read as the three-part *A Reply to Beckman's Defense of Thiele's Chronology* (OSF project 5b64m; the same three papers now linked to Academia.edu). "Tier 2" was read as sort tier 2, `cfah-table1` (the Ussher–Jones baseline). The papers' own years are stored as CFAH entries with a new basis, `beckman_reply`, which ranks in tier 2 after any CFAH-1 Table 1 row. Tier 1 anchor points still win.
+- **Applied:** only years the authors give as their own, as CFAH's, or as Ussher-Jones / Jones are entered. Years they attribute only to Thiele, Young, Gertoux, Josephus, Demetrius, the Seder Olam, a single classical chronicler, or conventional scholarship are listed in the checklist as not entered.
+- **Options:**
+  1. Keep this reading.
+  2. You meant the CFAH OSF preprint series (CFAH-7 to CFAH-19). Its 44 anchor points are already tier 1 (A1) and its CFAH-1 Table 1 (identical to ARJ) is already tier 2; its king tables are display only. Say if those `paper_text` dates should move to tier 2 instead.
+  3. Also enter the Josephus- and chronicler-derived years the papers compute, in tier 2.
+- **Recommendation:** option 1. Option 3 would put years into tier 2 that the authors themselves reject.
+- **Sort-tier change:** this adds a second basis to tier 2. It changes 74 records' sort or standby (`docs/cfah-osf-coverage.md`). Your written approval is needed before merge.
+
+### P2. Years that differ from the Jones Appendix F entries already stored
+
+- The Reply prints these as Jones's or Ussher-Jones's years, but the Jones 23rd-edition Appendix F entries on the records differ. Tier 2 now sets the sort:
+  - Ark captured at Aphek: 1121 (Part 1, p. 6, "when Jones has the Philistine capture", citing Jones 2026, Chart 4) vs 1122. `battle-of-aphek` moves from 1122 to 1121.
+  - Ark brought to Jerusalem: 1048 "Ussher-Jones" (Part 1, p. 17) vs 1047. Moves to 1048.
+  - Saul made king: 1096 "according to the Ussher-Jones chronology" (Part 1, p. 18) vs 1095. Moves to 1096.
+  - The angel slays 185,000: 713 (Part 2, Table 3) vs 709. Moves to 713.
+  - Merodach-Baladan's embassy: 713 (Part 2, Table 2, Ussher-Jones column) vs 712. Moves to 713.
+- **Options:** 1. keep the Reply's years in tier 2 (current); 2. drop those five entries so Jones (tier 3) sorts them.
+- **Recommendation:** option 1, since you asked for the Reply's dates in tier 2. Both years show on each page.
+
+### P3. Merodach-Baladan's accession, 722 vs 721 (I23)
+
+- Part 2 Table 3 (p. 44): "Merodach Baladan (MB) seized throne of Babylon" in 722. Table 2 (p. 40): he "ascended the throne on 1 Nisan (April 721n)". Both are kept; 722 is first and sets the reign-start sort. Say if 721 should lead.
+
+### P4. Shalmaneser III: 859 or 860
+
+- Part 2 (p. 10) gives 859 BC for his sole reign; Part 3 (p. 28) gives his accession as 860 BC. Both are on the new person record; 859 is first and sets the reign-start sort. Say if 860 should lead.
+
+### P5. Solomon's Temple: 1012/1011 dedication and 1011 founding
+
+- Part 3 Table 2 has "Solomon's Temple Dedicated" 1012/1011; Part 3 also uses "Josephus' 1011 BC date for Solomon's Temple" as the founding. The 1012/1011 is entered on `temple-dedication`, where the CFAH-1 Table 1 1012 still governs. `founding-of-solomons-temple` (Jones 1012) is unchanged. Say if 1011 should be entered as the founding.
+
+### P6. Names with no year, and the Academia section
+
+- Names printed without a year (Gurdi, Mari of Damascus, Azriyau, Yamani, Ashur-Dan III, and others) are kept in event text, not made people. Say if any should be people.
+- The three papers appear on /chronologies/ only in a new third CFAH section, "Academia.edu", linked to Kenneth Griffith's Academia.edu page. The OSF copies are cited on the dated entries. The earlier check that kept the Beckman reply out of the CFAH list (2026-10-28) was changed to match your instruction.

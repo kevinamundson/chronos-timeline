@@ -16,7 +16,7 @@
         "tier": "cfah-table1",
         "chronology": "cfah",
         "cfah_basis": "table1_baseline",
-        "select": "cfah entry with cfah_basis = table1_baseline (CFAH-1 Table 1)"
+        "select": "cfah entry with cfah_basis = table1_baseline (CFAH-1 Table 1), else cfah_basis = beckman_reply (Griffith & White, A Reply to Beckman's Defense of Thiele's Chronology, OSF project 5b64m, Parts 1-3; Kevin 2026-11-13). A Table 1 row is stored first and governs when both are present."
       },
       {
         "rank": 3,

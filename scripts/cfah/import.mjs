@@ -61,7 +61,7 @@ const setEntries = (doc, slot, list) => { if (doc.type === 'event') doc.chronolo
 // ---- CFAH-first ordering: dated anchor points, then Table 1, then other CFAH paper dates; the null placeholder only if none
 function orderCfah(list) {
   const c = (b) => list.filter((e) => e.source === 'cfah' && e.date != null && e.cfah_basis === b);
-  const dated = [...c('anchor_point'), ...c('table1_baseline'), ...c('paper_text')];
+  const dated = [...c('anchor_point'), ...c('table1_baseline'), ...c('beckman_reply'), ...c('paper_text')];
   const nul = list.filter((e) => e.source === 'cfah' && e.date == null);
   return [...dated, ...(dated.length ? [] : nul), ...list.filter((e) => e.source !== 'cfah')];
 }
@@ -149,7 +149,7 @@ function backfill() {
 // ---- four-tier sort
 const TIERS = [
   ['cfah-anchor', 1, 'cfah', (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point'],
-  ['cfah-table1', 2, 'cfah', (e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline'],
+  ['cfah-table1', 2, 'cfah', (e) => e.source === 'cfah' && (e.cfah_basis === 'table1_baseline' || e.cfah_basis === 'beckman_reply')],
   ['ussher-jones', 3, 'ussher-jones', (e) => e.source === 'ussher-jones'],
   ['ussher', 4, 'ussher', (e) => e.source === 'ussher'],
 ];

@@ -1248,14 +1248,15 @@ for (const [path, shot, sel] of [
   const underCard = lists[0] || [];
   const underSources = lists[1] || [];
   const same = JSON.stringify(underCard) === JSON.stringify(underSources);
-  check('chronologies: CFAH list appears under the chronology and in All free sources', underCard.length === 2 && underSources.length === 2 && same, `card ${underCard.length}, sources ${underSources.length}`);
+  check('chronologies: CFAH list appears under the chronology and in All free sources', underCard.length === 3 && underSources.length === 3 && same, `card ${underCard.length}, sources ${underSources.length}`);
   const heads = underCard.map((s) => [s.head, s.href]);
-  check('chronologies: CFAH sections are Answers Research Journal and OSF Preprint', JSON.stringify(heads) === JSON.stringify([
+  check('chronologies: CFAH sections are Answers Research Journal, OSF Preprint, and Academia.edu', JSON.stringify(heads) === JSON.stringify([
     ['Answers Research Journal', 'https://answersresearchjournal.org/chronology/'],
     ['OSF Preprint', 'https://osf.io/prhfz'],
+    ['Academia.edu', 'https://independent.academia.edu/KennethGriffith'],
   ]), JSON.stringify(heads));
   const responseLabels = underCard.map((s) => s.responseLabel);
-  check('chronologies: both CFAH sections have a Responses subsection', responseLabels.length === 2 && responseLabels.every((label) => label === 'Responses') && underCard.every((s) => s.responses.length > 0), responseLabels.join(' | '));
+  check('chronologies: ARJ and OSF sections have a Responses subsection', responseLabels.length === 3 && responseLabels.slice(0, 2).every((label) => label === 'Responses') && underCard.slice(0, 2).every((s) => s.responses.length > 0) && responseLabels[2] === '' && underCard[2].responses.length === 0, responseLabels.join(' | '));
   const links = [
     ...underCard.map((s) => ({ text: s.head, href: s.href, target: s.target, rel: s.rel, hidden: s.hidden, tag: '' })),
     ...walk(underCard.flatMap((s) => [...s.papers, ...s.responses])),
@@ -1267,11 +1268,11 @@ for (const [path, shot, sel] of [
   const hostOk = (href) => {
     try {
       const host = new URL(href).host;
-      return host === 'answersresearchjournal.org' || host === 'osf.io';
+      return host === 'answersresearchjournal.org' || host === 'osf.io' || host === 'www.academia.edu' || host === 'independent.academia.edu';
     } catch { return false; }
   };
   const badHost = links.filter((row) => !hostOk(row.href));
-  check('chronologies: every CFAH URL is answersresearchjournal.org or osf.io', badHost.length === 0, badHost.map((row) => row.href).join(' '));
+  check('chronologies: every CFAH URL is answersresearchjournal.org, osf.io, or academia.edu', badHost.length === 0, badHost.map((row) => row.href).join(' '));
   const a11y = links.every((row) => row.target === '_blank' && row.rel.includes('noopener') && row.hidden === ' (opens in a new tab)');
   check('chronologies: CFAH links say they open in a new tab', a11y);
   const arj = underCard[0];
@@ -1339,7 +1340,20 @@ for (const [path, shot, sel] of [
     for (const extra of responseTargets.slice(1)) if (!bySource.get(extra)) missingParents.push(`${s.id} also ${extra}`);
   }
   check('chronologies: every reply parent exists in the fork', missingParents.length === 0, missingParents.join(' | '));
-  check('chronologies: Beckman reply is not in the CFAH list', !links.some((row) => row.href.includes('5b64m')));
+  // Kevin, 2026-11-13: the three Griffith and White Reply to Beckman papers are linked to Academia.edu
+  // under the CFAH links, in their own section after OSF Preprint. They are not in the ARJ or OSF sections,
+  // and the owner's private Drive copies are never linked.
+  const academia = underCard[2];
+  const BECKMAN = [
+    ['A Reply to Beckman’s Defense of Thiele’s Chronology, Part 1: Jewish Sources for the Chronology of the Divided Kingdom', 'https://www.academia.edu/130145429/A_Reply_to_Beckmans_Defense_of_Thieles_Chronology_Part_1_Jewish_Sources_for_the_Chronology_of_the_Divided_Kingdom'],
+    ['Part 2: An Objectivist Answer to the Assyrian Synchronisms', 'https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms'],
+    ['Part 3: The Founding Dates of Tyre and Carthage', 'https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage'],
+  ];
+  const academiaPapers = (academia?.papers || []).map((row) => [row.text, row.href]);
+  check('chronologies: the three Reply to Beckman papers link to Academia.edu under CFAH', JSON.stringify(academiaPapers) === JSON.stringify(BECKMAN), JSON.stringify(academiaPapers));
+  const strayBeckman = walk(underCard.slice(0, 2).flatMap((s) => [...s.papers, ...s.responses])).filter((row) => /academia\.edu|5b64m|xjzbm|dt6gx|9v65s/.test(row.href));
+  check('chronologies: Beckman reply is only in the Academia.edu section', strayBeckman.length === 0, strayBeckman.map((row) => row.href).join(' '));
+  check('chronologies: no Google Drive link in the CFAH list', !links.some((row) => /drive\.google\.com|docs\.google\.com/.test(row.href)));
   const fit = await o.page.evaluate(() => {
     const vw = document.documentElement.clientWidth;
     return [...document.querySelectorAll('#cfah-platforms, #cfah-platforms-sources')].map((list) => {

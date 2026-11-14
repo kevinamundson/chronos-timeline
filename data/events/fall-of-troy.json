@@ -28,6 +28,19 @@
       "cfah_ap": "AP-12"
     },
     {
+      "source": "cfah",
+      "date": "1248, 1212, 1208, or 1183 BC",
+      "year_am": null,
+      "year_bc_ad": -1183,
+      "precision": "conjectural",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, Table 2, row “1248, 1212, 1208, or 1183”, p. 46",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "Sources support twelve dates; Eratosthenes (1183) has the highest authority. The year stored is 1183.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-troy"
+    },
+    {
       "source": "herodotus",
       "date": "“it was not just to come upon them for what Proteus, king of Egypt, was detaining”",
       "year_am": null,
@@ -109,7 +122,8 @@
     "cfah-3",
     "cory-ancient-fragments-1876",
     "hales-new-analysis-1830",
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "griffith-beckman-reply-3"
   ],
   "related": [
     "trojan-war",
@@ -135,6 +149,11 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "Table 2, row “1248, 1212, 1208, or 1183”, p. 46"
     }
   ]
 }

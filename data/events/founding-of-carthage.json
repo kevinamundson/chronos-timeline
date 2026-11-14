@@ -5,23 +5,27 @@
   "title": "Phoenicians found Carthage",
   "summary": "Phoenicians found Carthage",
   "description": "Added from the Generations curriculum import (Taking Africa for Jesus). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -900,
+  "sorting_year": -869,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 64): Sometime between 800 and 900 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 3): 869/868 BC. Sort changed by the Reply to Beckman pass (2026-11-13): was provisional 900 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "869/868 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -869,
+      "year_bc_ad_end": -868,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, Table 2, row 869/868, p. 46",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "Carthage (re)founded by Dido; confirmed by four Phoenician sources and Josephus.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-carthage"
     },
     {
       "source": "generations",
@@ -69,7 +73,8 @@
   "sources": [
     "generations-africa",
     "generations-preparing",
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "griffith-beckman-reply-3"
   ],
   "related": [],
   "free_source_links": [
@@ -87,6 +92,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "Table 2, row 869/868, p. 46"
     }
   ]
 }
