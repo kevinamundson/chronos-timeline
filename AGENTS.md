@@ -59,6 +59,12 @@ Further rules:
 | 3 | `ussher-jones` · **Tier 3 · Floyd Nolen Jones** | Floyd Nolen Jones. Only years he prints himself; never convert his AM-only figures. |
 | 4 | `ussher` · **Tier 4 · Ussher, Annals of the World** | Ussher, *Annals of the World* |
 
+Rulings on tier 2 and reign starts (Kevin, 2026-11-13, open question P8):
+
+- **A co-regency start sets the reign start.** When a CFAH table prints a co-regency (co-rex) start, that year is the reign-start `year_bc_ad`, not the sole-reign start. A row that prints no start year gives no reign-start year (its years stay as text); never use an end or death year, or a reign length, as a start.
+- **A CFAH reign start replaces a provisional or estimated birth-year sort.** A tier 1–4 reign start outranks a `provisional` (Generations/Morecraft) or `calculated` birth year. A printed tier 1–4 birth year still wins.
+- **Tier 3 label is "Floyd Nolen Jones"** (the book's spelling), shown as "Tier 3 · Floyd Nolen Jones".
+
 Fallbacks:
 
 - `provisional` (with a badge): used only when no tier 1–4 year exists. It takes the first dated `generations` entry, or a `morecraft` entry only on records the Morecraft import created and that only Morecraft dates.

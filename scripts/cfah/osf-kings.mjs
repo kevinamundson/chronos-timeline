@@ -57,7 +57,12 @@ export function buildPhase5(tables, existingIds) {
       if (!spec?.note && /\[/.test(nm.primary)) note = 'The table prints the name with square brackets (restored or uncertain).';
       id = SAME[id] || id;
       if (!spec && existingIds.has(id) && !people[id]) problems.push(`${t.id}: "${row.name}" -> ${id} collides with an existing record; map it explicitly in osf-kings-map.mjs`);
-      const y = -ys[0]; let yEnd = ys.length > 1 ? -ys[ys.length - 1] : null;
+      // Reign start (Kevin, 2026-11-13, P8.1): the first printed start year, so a co-regency start, when printed, starts the reign.
+      // A row whose start columns print no year (e.g. only a death year) gives no reign-start year: its years stay as text.
+      const startCols = Object.entries(row.cells).filter(([k]) => (!t.yearCols || t.yearCols.includes(k)) && /start/i.test(k));
+      const noStart = startCols.length > 0 && !startCols.some(([, v]) => yearsIn(v).length);
+      if (noStart) note = [note, 'No reign-start year is printed in this row, so it gives no reign-start year; the printed years are shown as text only.'].filter(Boolean).join(' ');
+      const y = noStart ? null : -ys[0]; let yEnd = !noStart && ys.length > 1 ? -ys[ys.length - 1] : null;
       if (yEnd != null && yEnd < y) { note = [note, `The table's last year (${-yEnd}) is earlier than its first (${-y}), so only the first is used for the timeline.`].filter(Boolean).join(' '); yEnd = null; }
       const approx = /~|c\.|\?|unknown|unkown|±|\[|>|<| or |\+\/-/.test(Object.entries(row.cells).filter(([k]) => !t.yearCols || t.yearCols.includes(k)).map(([, v]) => v).join(' '));
       const create = { title: spec?.title || nm.primary.replace(/\s*[*]+$/, '').replace(/[[\]]/g, ''), alt_names: (spec?.alt || nm.alt).length ? (spec?.alt || nm.alt) : undefined, dynasty: spec?.dynasty || row.dynasty || t.dynasty,

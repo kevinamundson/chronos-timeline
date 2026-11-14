@@ -1992,8 +1992,11 @@ Kevin (2026-11-13): "Make sure the three Griffith and White files are linked to 
 - **Options:** 1. keep "later paper wins" (current); 2. earlier paper wins; 3. prefer a specific column (e.g. sole-rex start over co-rex start) across papers.
 - **Recommendation:** option 1. The later papers revise the earlier ones (for example CFAH-7B's Dynasty 12 table after CFAH-6 and CFAH-7A).
 
-### P8. Questions from moving tier 2 to all CFAH non-anchor dates
+### P8. Questions from moving tier 2 to all CFAH non-anchor dates (ruled 2026-11-13)
 
 1. **Co-regency starts.** Where an OSF king table prints a co-rex start before the sole-rex start, the stored start year (`year_bc_ad`) is the first year printed in the row, so the ruler sorts at the co-rex start (e.g. Unas 1732, Pepi I 1646). Should the sole-rex start sort instead?
+   - **Ruled (Kevin, 2026-11-13, 11:05 PM CT):** "co-regency should start the reign of the king." **Applied:** a printed co-regency start is the reign-start year (all 45 OSF rows that print one already did). A row that prints no start year at all (Intef I, CFAH-7B Table 9: death 1865 only) no longer stores that year as a reign start; it shows as text (no sort effect).
 2. **Rulers with a provisional birth year.** Alexander the Great sorted provisionally by the Generations birth year (356 BC); he now sorts at tier 2 by his reign start in CFAH-11 Table 1 (331 BC, as ruler of Egypt). Mizraim moves from 2478 (provisional) to 2191 (CFAH-7B Dynasty 1) and Nimrod from 2270 to 2192 (CFAH-15). This follows the rule; say if a provisional birth should be kept for these.
+   - **Ruled (Kevin, 2026-11-13, 11:05 PM CT):** "a reign date should replace an estimate birth year." **Applied, no change needed:** a tier 1–4 reign start already outranks a provisional (Generations/Morecraft) or calculated birth year; all 376 people with a CFAH reign year sort by a tier. A printed tier 1–4 birth year still wins.
 3. **"Nolen" vs "Nolan".** The tier 3 label reads "Floyd Nolen Jones", as the book prints. Say if you want "Nolan".
+   - **Ruled (Kevin, 2026-11-13, 👍):** "Floyd Nolen Jones".
