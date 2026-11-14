@@ -4,24 +4,27 @@
   "type": "event",
   "title": "Shalmaneser III invades Syria",
   "summary": "Shalmaneser III invades Syria",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
   "sorting_year": -853,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 358): 853 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 853 BC (Battle of Qarqar, Shalmaneser III year 6). Sort changed by the Reply to Beckman pass (2026-11-13): was provisional 853 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "853 BC (Battle of Qarqar, Shalmaneser III year 6)",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -853,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “Hazael”, p. 13; Table 1, p. 36",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Shalmaneser III invades Syria and fights the Battle of Qarqar. Griffith & White read the “Acha-abbu Sirila-a-a” of the Kurkh Monolith as an Israelite general under Jehoahaz, not King Ahab, and Hadad-ezer as Ben-Hadad, son of Hazael.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-qarqar"
     },
     {
       "source": "generations",
@@ -67,7 +70,8 @@
   "sources": [
     "generations-preparing",
     "generations-preparing-2e",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "griffith-beckman-reply-2"
   ],
   "related": [],
   "free_source_links": [
@@ -75,6 +79,11 @@
       "source_id": "generations-preparing",
       "url": "https://generationsnew.s3.us-west-2.amazonaws.com/Homeschool+Summits/Relational+Lifestyle+Summit/Bonuses/Preparing+the+World+for+Jesus.pdf",
       "locator": "Preparing the World for Jesus (1st ed., 2020)"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “Hazael”, p. 13; Table 1, p. 36"
     }
   ]
 }

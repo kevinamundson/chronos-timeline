@@ -4,23 +4,17 @@
   "type": "person",
   "title": "Radjedef",
   "summary": "King listed in CFAH-7B Table 7 (Egypt Dynasties 3–4 (Memphis)).",
-  "description": "Ruler of Egypt Dynasties 3–4 (Memphis). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 7, \"Integrated Dates for Dynasties 3 & 4\"); its dates are display only.",
+  "description": "Ruler of Egypt Dynasties 3–4 (Memphis). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 7, \"Integrated Dates for Dynasties 3 & 4\").",
   "alt_names": [
     "Rhatoises"
   ],
-  "sorting_year": null,
+  "sorting_year": -1917,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
-  },
-  "standby": {
-    "year_bc_ad": -1917,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Start Co-Rex: 1917; Start Sole-rex: 1900*; End Sole-rex: 1892; Death or Deposition: 1892). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Start Co-Rex: 1917; Start Sole-rex: 1900*; End Sole-rex: 1892; Death or Deposition: 1892. Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "father": null,
   "children": [],

@@ -27,6 +27,19 @@
       "cfah_key": "cfah:t1-536:cyrus-decree-of-return"
     },
     {
+      "source": "cfah",
+      "date": "536 BC",
+      "year_am": null,
+      "year_bc_ad": -536,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 1: Jewish Sources for the Chronology of the Divided Kingdom,\" OSF preprint v1.4 (2025), doi:10.17605/OSF.IO/XJZBM, section “Discrepancies in Josephus”, p. 15",
+      "link": "https://osf.io/xjzbm/",
+      "source_text_id": "griffith-beckman-reply-1",
+      "note": "Decree of return in the first year of Cyrus in Babylon.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p1-cyrus-decree"
+    },
+    {
       "source": "hales",
       "date": "Jews return under Zerubbabel 536",
       "year_am": null,
@@ -52,7 +65,8 @@
   ],
   "sources": [
     "cfah-1",
-    "hales-new-analysis-1830"
+    "hales-new-analysis-1830",
+    "griffith-beckman-reply-1"
   ],
   "related": [
     "temple-rebuilding-begins",
@@ -68,6 +82,11 @@
       "source_id": "hales-new-analysis-1830",
       "url": "https://archive.org/details/newanalysisofchr01hale",
       "locator": "1830 second edition, four volumes, full view"
+    },
+    {
+      "source_id": "griffith-beckman-reply-1",
+      "url": "https://www.academia.edu/130145429/A_Reply_to_Beckmans_Defense_of_Thieles_Chronology_Part_1_Jewish_Sources_for_the_Chronology_of_the_Divided_Kingdom",
+      "locator": "section “Discrepancies in Josephus”, p. 15"
     }
   ]
 }

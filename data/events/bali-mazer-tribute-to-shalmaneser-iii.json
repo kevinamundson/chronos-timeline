@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "bali-mazer-tribute-to-shalmaneser-iii",
+  "type": "event",
+  "title": "Bali-mazer of Tyre’s tribute to Shalmaneser III",
+  "summary": "Shalmaneser III’s Black Obelisk claims tribute from Ba-’a-li-ma-an-zer of Tyre.",
+  "description": "Shalmaneser III’s Black Obelisk claims tribute from Ba-’a-li-ma-an-zer of Tyre. Event record added from Griffith & White’s Reply to Beckman, Part 3 (Table 2 “Harmonized Chronology of Tyre and Carthage”, row ~841, p. 46; Part 2 Table 1, row 841, p. 37).",
+  "sorting_year": -841,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 3): ~841 BC."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "~841 BC",
+      "year_am": null,
+      "year_bc_ad": -841,
+      "precision": "approximate",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, Table 2 “Harmonized Chronology of Tyre and Carthage”, row ~841, p. 46; Part 2 Table 1, row 841, p. 37",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "Bali-mazer the high priest of Baal Melqart in Tyre paid tribute to Shalmaneser III, “perhaps 2 or 3 decades earlier than the date cited”.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-bali-mazer"
+    }
+  ],
+  "people": [
+    "bali-mazer",
+    "shalmaneser-iii"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-3"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "Table 2 “Harmonized Chronology of Tyre and Carthage”, row ~841, p. 46; Part 2 Table 1, row 841, p. 37"
+    }
+  ]
+}

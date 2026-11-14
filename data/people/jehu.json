@@ -4,18 +4,19 @@
   "type": "person",
   "title": "Jehu",
   "summary": "King of Israel.",
-  "description": "King of Israel. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-16 (Table 2, \"The Kings of Qatna\"); its dates are display only.",
+  "description": "King of Israel. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-16 (Table 2, \"The Kings of Qatna\").",
   "alt_names": [
     "Yawa",
     "Yama",
     "Iehu"
   ],
-  "sorting_year": null,
+  "sorting_year": -885,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Reign: 885-857. Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "calculated": [
     {
@@ -33,13 +34,6 @@
       "year_am": 3121
     }
   ],
-  "standby": {
-    "year_bc_ad": -885,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Reign: 885-857). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
-  },
   "father": null,
   "children": [],
   "dates": {
@@ -72,7 +66,9 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    "jehu-tribute-claim-black-obelisk"
+  ],
   "scripture_refs": [],
   "sources": [
     "cfah-16-osf",

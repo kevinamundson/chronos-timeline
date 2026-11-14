@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "shalmaneser-iii-defeats-hazael",
+  "type": "event",
+  "title": "Shalmaneser III defeats Hazael",
+  "summary": "In his eighteenth year Shalmaneser III defeats the army of Hazael of Damascus.",
+  "description": "In his eighteenth year Shalmaneser III defeats the army of Hazael of Damascus. Event record added from Griffith & White’s Reply to Beckman, Part 2 (Table 1 “Claimed Assyrian Synchronisms”, row 841 (Nimrud annals, defeat of Hazael, year 18), p. 37; section “Akkadian Lacks the Pluperfect Tense”, p. 7).",
+  "sorting_year": -841,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 841 BC."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "841 BC",
+      "year_am": null,
+      "year_bc_ad": -841,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 1 “Claimed Assyrian Synchronisms”, row 841 (Nimrud annals, defeat of Hazael, year 18), p. 37; section “Akkadian Lacks the Pluperfect Tense”, p. 7",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "CFAH identification: near the end of Hazael’s reign, not its start. The annal’s “Hazael … seized the throne” is read as backstory.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-shalm-hazael-841"
+    }
+  ],
+  "people": [
+    "shalmaneser-iii",
+    "hazael"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 1 “Claimed Assyrian Synchronisms”, row 841 (Nimrud annals, defeat of Hazael, year 18), p. 37; section “Akkadian Lacks the Pluperfect Tense”, p. 7"
+    }
+  ]
+}

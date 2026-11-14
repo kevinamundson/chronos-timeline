@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "hazael",
+  "type": "person",
+  "title": "Hazael",
+  "summary": "King of Aram-Damascus (2 Kings 8–13), anointed at Elisha’s word; oppressor of Israel and Judah.",
+  "description": "King of Aram-Damascus. Griffith & White (Reply to Beckman, Part 2) argue that Shalmaneser III’s 841 BC account of Hazael seizing the throne is backstory, that Hazael’s reign lasted 45–49 years, and that he died circa 841–838 BC. Person record added from Griffith & White’s Reply to Beckman (OSF project 5b64m) on 2026-11-13.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "standby": {
+    "year_bc_ad": -841,
+    "basis": "source-printed",
+    "source_chronology": "cfah",
+    "from_record": null,
+    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the death entry (circa 841–838 BC). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "death": [
+      {
+        "source": "cfah",
+        "date": "circa 841–838 BC",
+        "year_am": null,
+        "year_bc_ad": -841,
+        "year_bc_ad_end": -838,
+        "precision": "approximate",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “Hazael”, p. 13",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "After a reign of 45–49 years; no later than 838 BC, the last time Shalmaneser III mentions him.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-hazael-death"
+      }
+    ]
+  },
+  "events": [
+    "hazael-threatens-jerusalem",
+    "shalmaneser-iii-defeats-hazael",
+    "shalmaneser-iii-advances-against-the-cities-of-hazael"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “Hazael”, p. 13"
+    }
+  ],
+  "dynasty": "Aram-Damascus"
+}

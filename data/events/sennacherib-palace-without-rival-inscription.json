@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "sennacherib-palace-without-rival-inscription",
+  "type": "event",
+  "title": "Sennacherib’s Palace Without Rival completed",
+  "summary": "Sennacherib’s inscription of his third year says his Palace Without Rival at Nineveh was complete.",
+  "description": "Sennacherib’s inscription of his third year says his Palace Without Rival at Nineveh was complete. Event record added from Griffith & White’s Reply to Beckman, Part 2 (section “Confirmation from the Lachish Reliefs”, pp. 25–26).",
+  "sorting_year": -702,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 702 BC (Sennacherib’s third year)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "702 BC (Sennacherib’s third year)",
+      "year_am": null,
+      "year_bc_ad": -702,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “Confirmation from the Lachish Reliefs”, pp. 25–26",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Inscription stating the Palace Without Rival at Nineveh was complete; the authors think it was probably accurate, the palace having been begun while he was crown prince.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-palace-702"
+    }
+  ],
+  "people": [
+    "sennacherib"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “Confirmation from the Lachish Reliefs”, pp. 25–26"
+    }
+  ]
+}

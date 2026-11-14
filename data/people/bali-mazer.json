@@ -1,0 +1,33 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "bali-mazer",
+  "type": "person",
+  "title": "Bali-mazer (Baal-Manzer) of Tyre",
+  "summary": "Tyrian whose tribute Shalmaneser III claims on the Black Obelisk; Griffith & White hold he was the high priest of Baal Melqart, not a king.",
+  "description": "Named Ba-’a-li-ma-an-zer of Tyre in Shalmaneser III’s inscription. Griffith & White (Reply to Beckman, Parts 2–3) argue, after Aaronson, that he was probably the high priest of Baal Melqart in Tyre rather than King Badezorus (Baal-Ezer II), and date the tribute claim circa 841 BC, perhaps two or three decades after it was paid. Person record added from Griffith & White’s Reply to Beckman (OSF project 5b64m) on 2026-11-13.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "standby": {
+    "year_bc_ad": -841,
+    "basis": "linked-record",
+    "source_chronology": null,
+    "from_record": "bali-mazer-tribute-to-shalmaneser-iii",
+    "note": "Standby placement only, placed with \"Bali-mazer of Tyre’s tribute to Shalmaneser III\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {},
+  "events": [
+    "bali-mazer-tribute-to-shalmaneser-iii"
+  ],
+  "scripture_refs": [],
+  "sources": [],
+  "related": [],
+  "free_source_links": [],
+  "dynasty": "Tyre"
+}

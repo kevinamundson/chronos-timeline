@@ -41,6 +41,21 @@
         "source_text_id": "jones-chronology-ot-2026",
         "note": "Appendix F prints no end year, so no span is stored."
       }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": "897 BC (Ussherian chronology)",
+        "year_am": null,
+        "year_bc_ad": -897,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “The Kurkh Monolith - Ahab and Ben Hadad II - 853 BC”, p. 8",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Ahab’s death, 44 years before Qarqar, in the Ussherian chronology the paper defends.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-ahab-death"
+      }
     ]
   },
   "events": [],
@@ -49,7 +64,8 @@
   ],
   "sources": [
     "blb-biblehub",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "griffith-beckman-reply-2"
   ],
   "related": [
     "omri"
@@ -64,6 +80,11 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/1_kings/16.htm#29",
       "locator": "1Kgs.16.29"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “The Kurkh Monolith - Ahab and Ben Hadad II - 853 BC”, p. 8"
     }
   ],
   "dynasty": "Kings of Israel"

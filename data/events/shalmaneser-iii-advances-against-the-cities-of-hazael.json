@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "shalmaneser-iii-advances-against-the-cities-of-hazael",
+  "type": "event",
+  "title": "Shalmaneser III advances against the cities of Hazael",
+  "summary": "Shalmaneser III’s twenty-first year: the last mention of Hazael in the Assyrian annals.",
+  "description": "Shalmaneser III’s twenty-first year: the last mention of Hazael in the Assyrian annals. Event record added from Griffith & White’s Reply to Beckman, Part 2 (Table 1, row 838, p. 37).",
+  "sorting_year": -838,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 838 BC."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "838 BC",
+      "year_am": null,
+      "year_bc_ad": -838,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 1, row 838, p. 37",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Last mention of Hazael in the Assyrian annals. CFAH: Hazael died this year or shortly before.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-hazael-cities-838"
+    }
+  ],
+  "people": [
+    "shalmaneser-iii",
+    "hazael"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 1, row 838, p. 37"
+    }
+  ]
+}

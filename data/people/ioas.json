@@ -47,13 +47,16 @@
     "death": [
       {
         "source": "cfah",
-        "date": null,
+        "date": "825 BC (Jones)",
         "year_am": null,
-        "year_bc_ad": null,
-        "precision": "unknown",
-        "citation": null,
-        "link": null,
-        "note": "pending CFAH reference"
+        "year_bc_ad": -825,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “The Tell al-Rimah Stela”, p. 14",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Death of Jehoash (Joash), king of Israel, as the paper cites Jones 2026, Chart 5.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-jehoash-death"
       }
     ],
     "reign": [
@@ -83,7 +86,8 @@
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "raleigh-history-of-the-world-1617"
+    "raleigh-history-of-the-world-1617",
+    "griffith-beckman-reply-2"
   ],
   "related": [],
   "free_source_links": [
@@ -91,6 +95,11 @@
       "source_id": "raleigh-history-of-the-world-1617",
       "url": "https://texts.earlyprint.org/works/A10357.xml",
       "locator": "Chronological Table, sig. 787b"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “The Tell al-Rimah Stela”, p. 14"
     }
   ],
   "alt_names": [

@@ -29,6 +29,20 @@
       "cfah_key": "cfah:ap-64:death-of-apophis-anointing-of-david"
     },
     {
+      "source": "cfah",
+      "date": "1075/1074 BC",
+      "year_am": null,
+      "year_bc_ad": -1075,
+      "year_bc_ad_end": -1074,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, section “The Chronology of Josephus”, item c, p. 10",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "Anointing of David from Josephus’ 514 years; “This also matches our CFAH date for the anointing of David”.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-david-anointed"
+    },
+    {
       "source": "ussher-jones",
       "date": "2934 1070 David is secretly anointed by Samuel",
       "year_am": 2934,
@@ -52,7 +66,8 @@
   ],
   "sources": [
     "cfah-8-osf",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "griffith-beckman-reply-3"
   ],
   "related": [
     "hyksos-rule-in-egypt"
@@ -67,6 +82,11 @@
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    },
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "section “The Chronology of Josephus”, item c, p. 10"
     }
   ]
 }

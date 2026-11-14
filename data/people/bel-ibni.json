@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "bel-ibni",
+  "type": "person",
+  "title": "Bel-Ibni",
+  "summary": "King of Babylon installed by Sennacherib.",
+  "description": "King of Babylon. In Griffith & White’s Table 2 (Reply to Beckman, Part 2), Sennacherib installs him in 703 BC; 702 BC is his first year; in his third year (700 BC) Sennacherib replaces him with his own son. Person record added from Griffith & White’s Reply to Beckman (OSF project 5b64m) on 2026-11-13.",
+  "sorting_year": -703,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 2): installed 703 BC (first year 702; third year 700)). No tier 1–4 birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "installed 703 BC (first year 702; third year 700)",
+        "year_am": null,
+        "year_bc_ad": -703,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 2, rows 703–700, p. 42",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Replaced in his third year by Sennacherib’s son.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-bel-ibni-reign"
+      }
+    ]
+  },
+  "events": [
+    "sennacherib-installs-bel-ibni",
+    "ashur-nadin-shumi-made-king-of-babylon"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 2, rows 703–700, p. 42"
+    }
+  ],
+  "dynasty": "Babylon"
+}

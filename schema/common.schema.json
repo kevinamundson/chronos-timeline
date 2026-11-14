@@ -155,9 +155,10 @@
           "enum": [
             "anchor_point",
             "table1_baseline",
+            "beckman_reply",
             "paper_text"
           ],
-          "description": "Only on cfah entries with a date. anchor_point = a CFAH triangulated anchor point (sort tier 1); table1_baseline = CFAH-1 Table 1, the Ussher-Jones biblical baseline (sort tier 2); paper_text = a date stated in a CFAH paper that is neither a numbered anchor point nor a Table 1 row (e.g. a ruler's reign; display only, never a sort tier; see open question A1)."
+          "description": "Only on cfah entries with a date. anchor_point = a CFAH triangulated anchor point (sort tier 1); table1_baseline = CFAH-1 Table 1 (sort tier 2); paper_text = a date stated in a CFAH paper (ARJ CFAH-1 to 6, OSF CFAH-7 to 19) that is neither a numbered anchor point nor a Table 1 row, e.g. a ruler's reign (sort tier 2); beckman_reply = a year Griffith & White print for their own CFAH / Ussher-Jones chronology in A Reply to Beckman's Defense of Thiele's Chronology (OSF project 5b64m, Parts 1-3) (sort tier 2). Tier 2 is \"CFAH non-anchor dates\" (Kevin, 2026-11-13). Order inside the tier: CFAH-1 Table 1 first; then the other CFAH paper years (paper_text), latest paper in the series first (CFAH-19 … CFAH-8, CFAH-7B, CFAH-7A, then ARJ CFAH-6 … CFAH-1; an OSF copy of an ARJ paper ranks with that paper; within one paper, the importer's table/text order); then Griffith & White's Reply to Beckman (beckman_reply). The first entry in that order with a BC/AD year sets the sort."
         },
         "cfah_ap": {
           "type": "string",
@@ -288,7 +289,7 @@
         "chronology",
         "note"
       ],
-      "description": "Which tier of the sorting fallback produced sorting_year: 1 cfah-anchor, 2 cfah-table1, 3 ussher-jones, 4 ussher; then provisional; then calculated (tier_rank null), arithmetic on printed figures that fills a gap only; \"derived\" (copied from derived_from) or \"none\" (null) when nothing above applies. \"provisional\" is allowed only when no tier 1-4 year exists. \"calculated\" is below provisional and sets sorting_year only when no tier 1-4 year and no provisional year exist. slot is reign_start, birth, death, or translated. Omitted on events and on people sorted from a tier birth.",
+      "description": "Which tier of the sorting fallback produced sorting_year: 1 cfah-anchor (Tier 1 · CFAH anchor point), 2 cfah-table1 (Tier 2 · CFAH non-anchor dates; the id is historical), 3 ussher-jones (Tier 3 · Floyd Nolen Jones), 4 ussher (Tier 4 · Ussher, Annals of the World); then provisional; then calculated (tier_rank null), arithmetic on printed figures that fills a gap only; \"derived\" (copied from derived_from) or \"none\" (null) when nothing above applies. \"provisional\" is allowed only when no tier 1-4 year exists. \"calculated\" is below provisional and sets sorting_year only when no tier 1-4 year and no provisional year exist. slot is reign_start, birth, death, or translated. Omitted on events and on people sorted from a tier birth.",
       "properties": {
         "tier": {
           "enum": [

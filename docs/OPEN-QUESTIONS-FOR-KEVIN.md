@@ -1905,3 +1905,98 @@ Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record o
   - On person and event pages they are left out of the main date tables and the disagreement flags. They appear last, in a red block headed "Conventional dating", with the note: “These views are based on conventional dating practices. They are shown for reference and do not set the timeline’s order.”
   - The Chronologies page marks the `dynasty-of-slaves` entry the same way.
 - **Open point:** "tier" was built as a display group, not a fifth sort tier, because these dates must not sort. Say if you want any other source moved into this group.
+
+## P. Griffith & White, *A Reply to Beckman* (OSF 5b64m), Tier 2 — 2026-11-13
+
+Kevin (2026-11-13): "Make sure the three Griffith and White files are linked to academia from the chronology page under the CFAH links. Make sure all the names Evens and dates from Griffith and Whites OSF Preprint are included in Tier 2." Checklist, counts, and the sort diff: `docs/cfah-osf-coverage.md`.
+
+### P1. Which preprint, and what "Tier 2" means
+
+- **Ruled (Kevin, 2026-11-13):** "Tier 2 should let the papers non-anchor dates set sort. New names: “Tier 1 · CFAH anchor point” “Tier 2 · CFAH non-anchor dates” “Tier 3 · Floyd Nolan Jones” “Tier 4 · Ussher, Annals of the World”"
+- **Applied:** tier 2 is every dated CFAH entry that is not an anchor point, from all 19 CFAH papers (ARJ CFAH-1 to 6, OSF CFAH-7 to 19), plus the Reply to Beckman years: `table1_baseline`, `paper_text`, `beckman_reply`. Order inside the tier: CFAH-1 Table 1; then paper years, latest paper first (CFAH-19 … 8, 7B, 7A, then ARJ 6 … 1); then the Reply to Beckman. Tier 1 anchor points still win. The tier label uses "Floyd Nolen Jones", the spelling the book prints; say if you want "Nolan". The sort diff is in `docs/cfah-osf-coverage.md` and the PR. The text below is the question as first asked.
+
+- **Applied:** "Griffith and White's OSF Preprint" was read as the three-part *A Reply to Beckman's Defense of Thiele's Chronology* (OSF project 5b64m; the same three papers now linked to Academia.edu). "Tier 2" was read as sort tier 2, `cfah-table1` (the Ussher–Jones baseline). The papers' own years are stored as CFAH entries with a new basis, `beckman_reply`, which ranks in tier 2 after any CFAH-1 Table 1 row. Tier 1 anchor points still win.
+- **Applied:** only years the authors give as their own, as CFAH's, or as Ussher-Jones / Jones are entered. Years they attribute only to Thiele, Young, Gertoux, Josephus, Demetrius, the Seder Olam, a single classical chronicler, or conventional scholarship are listed in the checklist as not entered.
+- **Options:**
+  1. Keep this reading.
+  2. You meant the CFAH OSF preprint series (CFAH-7 to CFAH-19). Its 44 anchor points are already tier 1 (A1) and its CFAH-1 Table 1 (identical to ARJ) is already tier 2; its king tables are display only. Say if those `paper_text` dates should move to tier 2 instead.
+  3. Also enter the Josephus- and chronicler-derived years the papers compute, in tier 2.
+- **Recommendation:** option 1. Option 3 would put years into tier 2 that the authors themselves reject.
+- **Sort-tier change:** this adds a second basis to tier 2. It changes 74 records' sort or standby (`docs/cfah-osf-coverage.md`). Your written approval is needed before merge.
+
+### P2. Years that differ from the Jones Appendix F entries already stored
+
+- The Reply prints these as Jones's or Ussher-Jones's years, but the Jones 23rd-edition Appendix F entries on the records differ. Tier 2 now sets the sort:
+  - Ark captured at Aphek: 1121 (Part 1, p. 6, "when Jones has the Philistine capture", citing Jones 2026, Chart 4) vs 1122. `battle-of-aphek` moves from 1122 to 1121.
+  - Ark brought to Jerusalem: 1048 "Ussher-Jones" (Part 1, p. 17) vs 1047. Moves to 1048.
+  - Saul made king: 1096 "according to the Ussher-Jones chronology" (Part 1, p. 18) vs 1095. Moves to 1096.
+  - The angel slays 185,000: 713 (Part 2, Table 3) vs 709. Moves to 713.
+  - Merodach-Baladan's embassy: 713 (Part 2, Table 2, Ussher-Jones column) vs 712. Moves to 713.
+- **Options:** 1. keep the Reply's years in tier 2 (current); 2. drop those five entries so Jones (tier 3) sorts them.
+- **Recommendation:** option 1, since you asked for the Reply's dates in tier 2. Both years show on each page.
+
+### P3. Merodach-Baladan's accession, 722 vs 721 (I23)
+
+- Part 2 Table 3 (p. 44): "Merodach Baladan (MB) seized throne of Babylon" in 722. Table 2 (p. 40): he "ascended the throne on 1 Nisan (April 721n)". Both are kept; 722 is first and sets the reign-start sort. Say if 721 should lead.
+
+### P4. Shalmaneser III: 859 or 860
+
+- Part 2 (p. 10) gives 859 BC for his sole reign; Part 3 (p. 28) gives his accession as 860 BC. Both are on the new person record; 859 is first and sets the reign-start sort. Say if 860 should lead.
+
+### P5. Solomon's Temple: 1012/1011 dedication and 1011 founding
+
+- Part 3 Table 2 has "Solomon's Temple Dedicated" 1012/1011; Part 3 also uses "Josephus' 1011 BC date for Solomon's Temple" as the founding. The 1012/1011 is entered on `temple-dedication`, where the CFAH-1 Table 1 1012 still governs. `founding-of-solomons-temple` (Jones 1012) is unchanged. Say if 1011 should be entered as the founding.
+
+### P6. Names with no year, and the Academia section
+
+- Names printed without a year (Gurdi, Mari of Damascus, Azriyau, Yamani, Ashur-Dan III, and others) are kept in event text, not made people. Say if any should be people.
+- The three papers appear on /chronologies/ only in a new third CFAH section, "Academia.edu", linked to Kenneth Griffith's Academia.edu page. The OSF copies are cited on the dated entries. The earlier check that kept the Beckman reply out of the CFAH list (2026-10-28) was changed to match your instruction.
+
+### P7. Tier 2 conflicts: two CFAH printings of one slot
+
+- **Rule applied:** the later paper in the series governs (CFAH-19 … 8, 7B, 7A, then ARJ 6 … 1); within one paper, the paper's own table order; the Reply to Beckman comes after the numbered papers. Every year stays on the page. A CFAH anchor point would win over all of these; none of these slots has one.
+- **Cases (33):**
+  - `people/amenemhat-i#reign`: **Start: 1738; End: 1727 (cfah-7b-osf)** governs; also Start Co-Rex: 1745; Start Sole-rex: 1738; End Sole-rex: 1729 & 1718; Death or Deposition: 1708 (cfah-7a-osf).
+  - `people/amenemhat-iii#reign`: **Start: 1574; End: 1539 (cfah-7b-osf)** governs; also Start Co-Rex: 1586; Start Sole-rex: 1575; End Sole-rex: 1542; Death or Deposition: 1539 (cfah-7a-osf); 1586 BC ±1.5 years (cfah-6).
+  - `people/cush#reign`: **Reign (y): 33.3; Start (BC): 2233; End (BC): 2200 (cfah-15-osf)** governs; also Reign (y): 54; Start (BC): 2247; End (BC): 2192 (cfah-15-osf).
+  - `people/david#reign`: **Start: 1056; End: 1016 (cfah-16-osf)** governs; also Column: Ruler of Israel; Name row (Year BC): 1049; Last regnal-year row (Year BC): 1016 (year 40) (cfah-14-osf). No sort effect (a tier birth year governs).
+  - `people/hammurabi#reign`: **Start: 1032; End: 989 (cfah-16-osf)** governs; also Reign (y): 55, 42; Start (BC): 1044, 1032; End (BC): 989 (cfah-15-osf).
+  - `people/intef-i#reign`: **Start: 1861; End: 1841 (cfah-7b-osf)** governs; also Start Co-Rex: unknown; Start Sole-rex: unknown; End Sole-rex: unknown; Death or Deposition: 1865 (cfah-7b-osf).
+  - `people/intef-ii#reign`: **Start: 1841; End: 1822 (cfah-7b-osf)** governs; also Start Co-Rex: unknown; Start Sole-rex: 1865; End Sole-rex: unknown; Death or Deposition: 1816 (cfah-7b-osf).
+  - `people/intef-iii#reign`: **Start: 1823; End: 1801 (cfah-7b-osf)** governs; also Start Co-Rex: unknown; Start Sole-rex: 1816; End Sole-rex: unknown; Death or Deposition: 1808 (cfah-7b-osf); 1816 to 1808 BC (cfah-6).
+  - `people/mentuhotep-i#reign`: **Start: 1887; End: 1861 (cfah-7b-osf)** governs; also Start Co-Rex: unknown; Start Sole-rex: 1881; End Sole-rex: unknown; Death or Deposition: unknown (cfah-7b-osf).
+  - `people/mentuhotep-ii#reign`: **Start: 1801; End: 1787 (cfah-7b-osf)** governs; also Start Co-Rex: unknown; Start Sole-rex: 1808; End Sole-rex: unknown; Death or Deposition: 1757 (cfah-7b-osf).
+  - `people/merodach-baladan#reign`: **722 BC (seized the throne of Babylon) (griffith-beckman-reply-2)** governs; also 1 Nisan (April) 721 BC (ascended the throne) (griffith-beckman-reply-2).
+  - `people/naram-sin-of-eshnunna#reign`: **Reign (y): 9; REL #: 158-149; CFAH Date: 1060-1051 (cfah-14-osf)** governs; also Column: King of Eshnunna; Name row (Year BC): 1059; Last regnal-year row (Year BC): 1051 (year 9) (cfah-14-osf).
+  - `people/nebka#reign`: **Start Sole-rex: 2030/2029; End Sole-rex: 2011/2010; Death or Deposition: 2001 (cfah-7b-osf)** governs; also 2029 BC (cfah-6).
+  - `people/nitocris#reign`: **Start Sole-rex: 1491; End Sole-rex: 1485; Death or Deposition: 1479 (cfah-7b-osf)** governs; also 1497–1479 (cfah-6).
+  - `people/pepi-i#reign`: **Start Co-Rex: 1646; Start Sole-rex: 1637; End Sole-rex: 1606; Death or Deposition: 1593 (cfah-7b-osf)** governs; also 1637 BC ±2 years (cfah-6).
+  - `people/pepi-ii#reign`: **Start: 1592; End: 1492 (cfah-7b-osf)** governs; also Start Sole-rex: 1586; End Sole-rex: 1495; Death or Deposition: 1492 (cfah-7b-osf).
+  - `people/sargon-i-of-akkad#reign`: **Reign (y): 56; Start (BC): 1619; End (BC): 1563 (cfah-15-osf)** governs; also earliest … 1642 B.C. … latest date for his death in 1553 B.C. (cfah-5).
+  - `people/sargon-ii#reign`: **720 or 721 (cfah-5)** governs; also accession 722 BC (Tebeth, January 721); killed 705 BC (griffith-beckman-reply-2).
+  - `people/saul#reign`: **Start: 1096; End: 1056 (cfah-16-osf)** governs; also Column: Ruler of Israel; Name row (Year BC): 1095; Last regnal-year row (Year BC): 1056 (year 40) (cfah-14-osf).
+  - `people/senusret-i#reign`: **Start: 1686; End: 1655 (cfah-7b-osf)** governs; also Start Co-Rex: 1729 & 1718; Start Sole-rex: 1708; End Sole-rex: 1686/1685; Death or Deposition: 1683 (cfah-7a-osf).
+  - `people/senusret-iii#reign`: **Start: 1606; End: 1574 (cfah-7b-osf)** governs; also Start Co-Rex: 1613; Start Sole-rex: 1606; End Sole-rex: 1586; Death or Deposition: 1573 (cfah-7a-osf); 1613 to 1573 BC (cfah-6).
+  - `people/shalmaneser-i#reign`: **Column: Assyrian King List; Name row (Year BC): 1262; Last regnal-year row (Year BC): 1233 (year 30) (cfah-14-osf)** governs; also 1261 (cfah-5).
+  - `people/shalmaneser-iii#reign`: **859 BC (sole rex) (griffith-beckman-reply-2)** governs; also 860 BC (accession) (griffith-beckman-reply-3).
+  - `people/shamshi-adad-iv#reign`: **Start: 1076, 1053; End: 1020 (cfah-16-osf)** governs; also Column: Assyrian King List; Name row (Year BC): 1053; Last regnal-year row (Year BC): 1050 (year 4) (cfah-14-osf).
+  - `people/solomon#reign`: **Start: 1016; End: 976 (cfah-16-osf)** governs; also Column: Ruler of Israel; Name row (Year BC): 1015; Last regnal-year row (Year BC): 976 (year 40) (cfah-14-osf). No sort effect (a tier birth year governs).
+  - `people/taharqa#reign`: **Reign: 26 / 20 / 18; Start: 691 / 690; End: 671 / 664 (cfah-10-osf)** governs; also Year BC: 713 - 664; Yrs: 40 (cfah-8-osf).
+  - `people/tausret#reign`: **Rgn: 7/50; BC Dates: 484 - 475 - 434? (cfah-11-osf)** governs; also Start: ~482; End: 475 (cfah-9-osf).
+  - `people/unas#reign`: **Start Co-Rex: 1732; Start Sole-rex: 1716; End Sole-rex: 1682; Death or Deposition: 1682 (cfah-7b-osf)** governs; also 1715 to 1682 BC (cfah-6).
+  - `people/userkare#reign`: **Start: 1637; End: 1606 (cfah-7b-osf)** governs; also Start Sole-rex: 1652; End Sole-rex: 1646; Death or Deposition: 1637 (cfah-7b-osf).
+  - `people/yaggid-lim#reign`: **Start: ~1067; End: ~1057 (cfah-16-osf)** governs; also Reign (y): ~10; Start (BC): ~1077; End (BC): ~1067 (cfah-15-osf).
+  - `people/yahdun-lim#reign`: **Start: 1057; End: 1035 (cfah-16-osf)** governs; also Reign (y): ~30; Start (BC): ~1067; End (BC): 1037 (cfah-15-osf).
+  - `people/yasmah-addu#reign`: **Start: ~1053 (Elsewhere), 1035 (Mari); End: 1020 (cfah-16-osf)** governs; also Reign (y): 17; Start (BC): 1036; End (BC): 1019 (cfah-15-osf).
+  - `people/zimri-lim#reign`: **Start: 1020; End: 996 (cfah-16-osf)** governs; also Reign (y): 21; Start (BC): 1019; End (BC): 998 (cfah-15-osf).
+- **Options:** 1. keep "later paper wins" (current); 2. earlier paper wins; 3. prefer a specific column (e.g. sole-rex start over co-rex start) across papers.
+- **Recommendation:** option 1. The later papers revise the earlier ones (for example CFAH-7B's Dynasty 12 table after CFAH-6 and CFAH-7A).
+
+### P8. Questions from moving tier 2 to all CFAH non-anchor dates (ruled 2026-11-13)
+
+1. **Co-regency starts.** Where an OSF king table prints a co-rex start before the sole-rex start, the stored start year (`year_bc_ad`) is the first year printed in the row, so the ruler sorts at the co-rex start (e.g. Unas 1732, Pepi I 1646). Should the sole-rex start sort instead?
+   - **Ruled (Kevin, 2026-11-13, 11:05 PM CT):** "co-regency should start the reign of the king." **Applied:** a printed co-regency start is the reign-start year (all 45 OSF rows that print one already did). A row that prints no start year at all (Intef I, CFAH-7B Table 9: death 1865 only) no longer stores that year as a reign start; it shows as text (no sort effect).
+2. **Rulers with a provisional birth year.** Alexander the Great sorted provisionally by the Generations birth year (356 BC); he now sorts at tier 2 by his reign start in CFAH-11 Table 1 (331 BC, as ruler of Egypt). Mizraim moves from 2478 (provisional) to 2191 (CFAH-7B Dynasty 1) and Nimrod from 2270 to 2192 (CFAH-15). This follows the rule; say if a provisional birth should be kept for these.
+   - **Ruled (Kevin, 2026-11-13, 11:05 PM CT):** "a reign date should replace an estimate birth year." **Applied, no change needed:** a tier 1–4 reign start already outranks a provisional (Generations/Morecraft) or calculated birth year; all 376 people with a CFAH reign year sort by a tier. A printed tier 1–4 birth year still wins.
+3. **"Nolen" vs "Nolan".** The tier 3 label reads "Floyd Nolen Jones", as the book prints. Say if you want "Nolan".
+   - **Ruled (Kevin, 2026-11-13, 👍):** "Floyd Nolen Jones".

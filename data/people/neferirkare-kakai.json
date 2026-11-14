@@ -4,24 +4,18 @@
   "type": "person",
   "title": "Neferirkare Kakai",
   "summary": "King listed in CFAH-7B Table 14 (Egypt Dynasty 2 (Thinis)).",
-  "description": "Ruler of Egypt Dynasty 2 (Thinis). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 14, \"Integrated Dates for Dynasty 2\"); its dates are display only.",
+  "description": "Ruler of Egypt Dynasty 2 (Thinis). Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-7B (Table 14, \"Integrated Dates for Dynasty 2\").",
   "alt_names": [
     "Nephercheres",
     "Neferkara"
   ],
-  "sorting_year": null,
+  "sorting_year": -1806,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
-  },
-  "standby": {
-    "year_bc_ad": -1806,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Start Co-Rex: 1806; Start Sole-rex: 1794; End Sole-rex: 1788; Death or Deposition: 1781). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Start Co-Rex: 1806; Start Sole-rex: 1794; End Sole-rex: 1788; Death or Deposition: 1781. Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "father": null,
   "children": [],

@@ -8,19 +8,13 @@
   ],
   "summary": "Babylonian ruler who slew Akises, in Polyhistor (Cory 1876). The text gives months, not years.",
   "description": "Added from the Cory import. Display only. Cory gives reign lengths and synchronisms, not a BC year this record can sort on, and no tier 1–4 chronology dates this person, so there is no sort year.",
-  "sorting_year": null,
+  "sorting_year": -722,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year (Cory is display-only and gives none)."
-  },
-  "standby": {
-    "year_bc_ad": -712,
-    "basis": "linked-record",
-    "source_chronology": null,
-    "from_record": "merodach-baladan-embassy",
-    "note": "Standby placement only, placed with \"Merodach-baladan’s embassy\" (a linked event of this person's life). The year is that record's sort year, taken as-is. No reign length or age was added or subtracted. It is not a sort year."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 2): 722 BC (seized the throne of Babylon)). No tier 1–4 birth year. Sort changed by the Reply to Beckman pass (2026-11-13): was none none."
   },
   "father": null,
   "children": [],
@@ -28,13 +22,29 @@
     "reign": [
       {
         "source": "cfah",
-        "date": null,
+        "date": "722 BC (seized the throne of Babylon)",
         "year_am": null,
-        "year_bc_ad": null,
-        "precision": "unknown",
-        "citation": null,
-        "link": null,
-        "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+        "year_bc_ad": -722,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 3, row 722, p. 44",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Table 2 (p. 40) has him ascend the throne on 1 Nisan 721 (next entry); CFAH inconsistency I23.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-mb-722"
+      },
+      {
+        "source": "cfah",
+        "date": "1 Nisan (April) 721 BC (ascended the throne)",
+        "year_am": null,
+        "year_bc_ad": -721,
+        "precision": "month",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 2 “Objective Sources for the Chronology of Sargon and Sennacherib”, row 721, p. 40",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Babylonian Chronicle column. Table 3 (p. 44) has him seize the throne in 722; CFAH inconsistency I23.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-mb-721"
       },
       {
         "source": "cory",
@@ -50,10 +60,18 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    "merodach-baladan-attacks-an-assyrian-town",
+    "sargon-conquers-babylon",
+    "sargon-fights-merodach-baladan-in-bit-yakin",
+    "sennacherib-installs-bel-ibni",
+    "sennacherib-campaign-to-halzi",
+    "ashur-nadin-shumi-made-king-of-babylon"
+  ],
   "scripture_refs": [],
   "sources": [
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "griffith-beckman-reply-2"
   ],
   "related": [],
   "free_source_links": [
@@ -61,6 +79,11 @@
       "source_id": "cory-ancient-fragments-1876",
       "url": "https://archive.org/details/corysancientfrag00coryuoft",
       "locator": "1876 Hodges edition, full view"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 3, row 722, p. 44"
     }
   ]
 }

@@ -43,6 +43,19 @@
       "cfah_key": "cfah:t1-721:fall-of-samaria"
     },
     {
+      "source": "cfah",
+      "date": "721 BC, early Spring (1st month)",
+      "year_am": null,
+      "year_bc_ad": -721,
+      "precision": "month",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 1, row 723/721, p. 38; section “Dating the Fall of Samaria”, pp. 21–23; Table 3, row 721, p. 44",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Samaria falls in the first month of Sargon’s year 1 = Hezekiah year 6.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-samaria-falls"
+    },
+    {
       "source": "ussher-jones",
       "date": "3283 721 Assyrian conquest of Israel",
       "year_am": 3283,
@@ -129,7 +142,8 @@
     "morecraft-christian-survey",
     "cfah-1",
     "cfah-14-osf",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "griffith-beckman-reply-2"
   ],
   "related": [],
   "free_source_links": [
@@ -152,6 +166,11 @@
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 1, row 723/721, p. 38; section “Dating the Fall of Samaria”, pp. 21–23; Table 3, row 721, p. 44"
     }
   ]
 }

@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "shalmaneser-iii",
+  "type": "person",
+  "title": "Shalmaneser III",
+  "summary": "King of Assyria; his annals, the Kurkh Monolith, and the Black Obelisk are the source of the claimed Ahab, Hazael, and Jehu synchronisms.",
+  "description": "King of Assyria. Griffith & White (Reply to Beckman, Parts 2–3) date his accession to 860 BC and his sole reign from 859 BC, the Battle of Qarqar to his sixth year (853 BC), his defeat of Hazael to 841 BC, the Black Obelisk to 825 BC, and his final campaign, against Cilicia, to 830 BC. Person record added from Griffith & White’s Reply to Beckman (OSF project 5b64m) on 2026-11-13.",
+  "sorting_year": -859,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 2): 859 BC (sole rex)). No tier 1–4 birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "859 BC (sole rex)",
+        "year_am": null,
+        "year_bc_ad": -859,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “The Black Obelisk - Jehu”, p. 10",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Shalmaneser III becomes sole rex. Part 3 (p. 28) gives his accession as 860 BC.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-shalm-sole-rex"
+      },
+      {
+        "source": "cfah",
+        "date": "860 BC (accession)",
+        "year_am": null,
+        "year_bc_ad": -860,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, section “Balimanzer”, p. 28",
+        "link": "https://osf.io/9v65s/",
+        "source_text_id": "griffith-beckman-reply-3",
+        "note": "Accession of Shalmaneser III. Part 2 (p. 10) gives 859 BC for his sole reign.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p3-shalm-accession"
+      }
+    ]
+  },
+  "events": [
+    "shalmaneser-iii-defeats-hazael",
+    "jehu-tribute-claim-black-obelisk",
+    "bali-mazer-tribute-to-shalmaneser-iii",
+    "shalmaneser-iii-advances-against-the-cities-of-hazael",
+    "black-obelisk-erected",
+    "shalmaneser-iii-campaign-against-cilicia"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2",
+    "griffith-beckman-reply-3"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “The Black Obelisk - Jehu”, p. 10"
+    },
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "section “Balimanzer”, p. 28"
+    }
+  ],
+  "dynasty": "Assyria"
+}

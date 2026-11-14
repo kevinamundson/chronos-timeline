@@ -13,7 +13,7 @@
     "note": "No tier gives a birth year (Cory is display-only and gives none)."
   },
   "standby": {
-    "year_bc_ad": -900,
+    "year_bc_ad": -869,
     "basis": "linked-record",
     "source_chronology": null,
     "from_record": "founding-of-carthage",

@@ -5,12 +5,13 @@
   "title": "Alexander the Great",
   "summary": "Macedonian king whose empire was divided after his death.",
   "description": "Record first created by the Generations curriculum import (Taking Europe for Jesus). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
-  "sorting_year": -356,
+  "sorting_year": -331,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Europe for Jesus, PDF p. 37): 356-323 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Rgn: 8; BC Dates: 331 - 323. Sort changed by the CFAH pass (2026-11-13): was provisional (Generations) 356 BC."
   },
   "father": null,
   "children": [],

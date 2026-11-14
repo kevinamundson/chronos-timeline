@@ -54,12 +54,12 @@ site/                   static website (MVP); data/ stays the single source of t
   `source` is a chronology id. A `cfah` entry is required on every record. If CFAH has no date for it, `date` is null and the note says
   `pending CFAH reference`. Any non-null date must have a citation.
 - **Years**: `year_bc_ad` is a historical year number where negative means BC and there is no year 0, so 2348/2347 BC is stored as `-2348` with end `-2347`.
-- **CFAH basis**: every dated `cfah` entry has `cfah_basis` set to either `anchor_point` or `table1_baseline`. `anchor_point` is a date the CFAH papers derive themselves, such as CFAH-4 AP-29 or AP-30. `table1_baseline` is CFAH-1 Table 1, the Ussher-Jones biblical baseline the authors adopt. One `cfah` chronology id is kept, so the rule "every record has a cfah entry" still holds.
+- **CFAH basis**: every dated `cfah` entry has `cfah_basis` set to `anchor_point`, `table1_baseline`, `paper_text`, or `beckman_reply`. `anchor_point` is a date the CFAH papers derive themselves, such as CFAH-4 AP-29 or AP-30 (tier 1). The other three are CFAH non-anchor dates (tier 2): `table1_baseline` is CFAH-1 Table 1, the Ussher-Jones biblical baseline the authors adopt; `paper_text` is any other year a CFAH paper prints (e.g. a reign); `beckman_reply` is a year from Griffith & White's Reply to Beckman. One `cfah` chronology id is kept, so the rule "every record has a cfah entry" still holds.
 - **sorting_year**: this is a four-tier fallback, also defined in `data/chronologies.json` → `sorting_rule` and enforced by the validator. It uses the year from the first tier that has a non-null `year_bc_ad`:
-  1. `cfah-anchor`: cfah entry with `cfah_basis: anchor_point`
-  2. `cfah-table1`: cfah entry with `cfah_basis: table1_baseline`
-  3. `ussher-jones`: Floyd Nolen Jones (only years he prints himself; AM-only figures are never converted)
-  4. `ussher`: Ussher's *Annals*
+  1. `cfah-anchor` (Tier 1 · CFAH anchor point): cfah entry with `cfah_basis: anchor_point`
+  2. `cfah-table1` (Tier 2 · CFAH non-anchor dates; the id is historical): any other dated cfah entry, in the order CFAH-1 Table 1, then CFAH paper years latest paper first, then the Reply to Beckman (`orderCfah` in `scripts/sort-rule.mjs`)
+  3. `ussher-jones` (Tier 3 · Floyd Nolen Jones): only years he prints himself; AM-only figures are never converted
+  4. `ussher` (Tier 4 · Ussher, Annals of the World): Ussher's *Annals*
 
   Events take this from `chronologies[]`. People take it from `dates.birth[]` when a tier 1–4 birth year is stored. A person who has a `dates.reign` slot and no tier-ranked birth year takes the reign-start year (`year_bc_ad` already stored there). `sorting_basis.slot` is then `reign_start`. Within Ussher–Jones that choice uses the 23rd edition (2026) over an older Jones edition. Display-only chronologies never set it, and no year is derived. `sorting_basis` records `{tier, tier_rank, chronology, slot?, note}`.
 - **Secondary display chronologies**: `jordan` (James B. Jordan, *Biblical Chronology* newsletter, 1989-1997), `bible`, `masoretic-genealogy`, `josephus`, Clonmacnoise and Raleigh are shown next to the sort tiers but never set `sorting_year`; the validator rejects any `sorting_basis` that points at `jordan`. Jordan's B.C. years are his "SBC" (strictest Biblical chronology), which runs about 74-75 years later than Ussher's (Creation 3930 B.C.), while his Anno Mundi figures mostly match Ussher's. `data/jordan-dates-extract.md` lists every dated statement in the two Jordan sources as a backlog. The full texts of the 93 issues read are in `sources/jordan/`.
@@ -98,12 +98,12 @@ search built at build time. No server, database, CMS or paid service. Vendor JS/
   (marker colour = OpenBible certainty; places with null coordinates are listed as "not mapped"), and an ordered text list of events
   (the keyboard and screen-reader alternative to the timeline).
 - `/events/<id>/`, `/people/<id>/`, `/locations/<id>/`, `/maps/<id>/`: description, Scripture refs (Berean Literal Bible links), the chronologies
-  table (CFAH anchor point → CFAH-1 Table 1 → Ussher–Jones → Ussher → Jordan → Bible → MT arithmetic → Josephus → Raleigh → Clonmacnoise), the sort
+  table (CFAH anchor point → CFAH non-anchor dates → Ussher–Jones → Ussher → Jordan → Bible → MT arithmetic → Josephus → Raleigh → Clonmacnoise), the sort
   year with its tier label and note, the row that sets the sort highlighted, "differs from sort year" badges, a *Disagreements & open questions*
   panel (generated only from figures already in the data, plus `open_questions`), OpenBible links (CC BY 4.0 credit), LoC map thumbnails
   linking to the item, IIIF manifest and image, and free source links.
 - **Person timelines** (`/people/<id>/`): a vis-timeline whose window is the person's lifespan. Birth and death years each follow the same
-  four-tier rule (CFAH AP → CFAH-1 Table 1 → Ussher–Jones → Ussher); `translated` stands in for death (Enoch). If the death year is unknown the
+  four-tier rule (CFAH anchor point → CFAH non-anchor dates → Floyd Nolen Jones → Ussher); `translated` stands in for death (Enoch). If the death year is unknown the
   window ends at the last linked event, and if the birth year is unknown it starts at the first; the page says so. Events listing the person
   in `people` (or in the person's `events`), plus birth/death markers, are solid. Every other event whose `sorting_year` falls in the window
   is shown as context: faded, dashed, italic, marked "(context)", in its own row. Items are real links (Tab + Enter), and an ordered list below

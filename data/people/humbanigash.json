@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "humbanigash",
+  "type": "person",
+  "title": "Humbanigash",
+  "summary": "King of Elam who defeated Sargon II’s army at Der.",
+  "description": "King of Elam. Griffith & White (Reply to Beckman, Part 2), from the Babylonian Chronicle, date his crushing defeat of Sargon’s army at Der to 720 BC and his death to 717 BC. Person record added from Griffith & White’s Reply to Beckman (OSF project 5b64m) on 2026-11-13.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year."
+  },
+  "standby": {
+    "year_bc_ad": -717,
+    "basis": "source-printed",
+    "source_chronology": "cfah",
+    "from_record": null,
+    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the death entry (717 BC). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "death": [
+      {
+        "source": "cfah",
+        "date": "717 BC",
+        "year_am": null,
+        "year_bc_ad": -717,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 2, row 717, p. 40",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Babylonian Chronicle: died in year 5 of Merodach-Baladan.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-humbanigash-death"
+      }
+    ]
+  },
+  "events": [
+    "humbanigash-defeats-sargon-at-der"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 2, row 717, p. 40"
+    }
+  ],
+  "dynasty": "Elam"
+}

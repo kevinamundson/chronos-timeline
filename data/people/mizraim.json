@@ -5,12 +5,13 @@
   "title": "Mizraim",
   "summary": "Son of Ham (Gen 10:6); the Hebrew name of Egypt. Ussher (Second Age §51, 2188 BC) and CFAH (Menes = Mizraim) date his colony in Egypt to 2188 BC; see the Egyptian-cities event.",
   "description": "Son of Ham (Gen 10:6); the Hebrew name of Egypt. Ussher (Second Age §51, 2188 BC) and CFAH (Menes = Mizraim) date his colony in Egypt to 2188 BC; see the Egyptian-cities event. Josephus (Antiquities I.6.2, Whiston): \"all we who inhabit this country [of Judea] called Egypt Mestre, and the Egyptians Mestreans\"",
-  "sorting_year": -2478,
+  "sorting_year": -2191,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Taking Africa for Jesus, PDF p. 19): around 2478 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Start Sole-rex: 2191 / 2188; End Sole-rex: 2164 / 2163; Death or Deposition: 2128. Sort changed by the CFAH pass (2026-11-13): was provisional (Generations) 2478 BC."
   },
   "father": "ham",
   "children": [

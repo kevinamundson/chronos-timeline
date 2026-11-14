@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "second-colony-to-origo",
+  "type": "event",
+  "title": "Second colony to Origo (Carthage)",
+  "summary": "A second wave of settlers goes to Carthage, 133 or 143 years after the capture of Troy.",
+  "description": "A second wave of settlers goes to Carthage, 133 or 143 years after the capture of Troy. Event record added from Griffith & White’s Reply to Beckman, Part 3 (Table 2, row “1050, 1040”, p. 46).",
+  "sorting_year": -1050,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 3): 1050, 1040 BC."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1050, 1040 BC",
+      "year_am": null,
+      "year_bc_ad": -1050,
+      "precision": "approximate",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, Table 2, row “1050, 1040”, p. 46",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "Second colony to Origo, 133 or 143 years after the Fall of Troy (Syncellus, Eusebius). Printed as two alternatives; the year stored is 1050.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-origo-2"
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-3"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "Table 2, row “1050, 1040”, p. 46"
+    }
+  ]
+}

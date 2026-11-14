@@ -7,11 +7,11 @@
   "description": "King of the northern kingdom of Israel, son of Gadi. Gadi has no record here. Jones dates the accession. Appendix F prints no end year, so no span is stored.",
   "sorting_year": -772,
   "sorting_basis": {
-    "tier": "ussher-jones",
-    "tier_rank": 3,
-    "chronology": "ussher-jones",
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
     "slot": "reign_start",
-    "note": "Sorted by reign start (Ussher–Jones). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: 3232 772 Menahem becomes king over Israel."
+    "note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 2): 772–761 BC). No tier 1–4 birth year. Sort changed by the Reply to Beckman pass (2026-11-13): was ussher-jones 772 BC."
   },
   "father": null,
   "children": [],
@@ -19,13 +19,17 @@
     "reign": [
       {
         "source": "cfah",
-        "date": null,
+        "date": "772–761 BC",
         "year_am": null,
-        "year_bc_ad": null,
-        "precision": "unknown",
-        "citation": null,
-        "link": null,
-        "note": "pending CFAH reference"
+        "year_bc_ad": -772,
+        "year_bc_ad_end": -761,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 1, row ~738 (CFAH identification), p. 38",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Menahem 772–761 BC, who paid tribute to Pul in the reign of Ashur-Dan III.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-menahem-reign"
       },
       {
         "source": "ussher-jones",
@@ -38,15 +42,35 @@
         "source_text_id": "jones-chronology-ot-2026",
         "note": "Appendix F prints no end year, so no span is stored."
       }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": "761/760 BC",
+        "year_am": null,
+        "year_bc_ad": -761,
+        "year_bc_ad_end": -760,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “Menahem and Azariah (Uzziah)”, p. 16",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Ussher’s chronology as cited from Jones 2019, Chart 5.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-menahem-death"
+      }
     ]
   },
-  "events": [],
+  "events": [
+    "menahem-pays-tribute-to-pul",
+    "tiglath-pileser-iii-lists-menahems-tribute"
+  ],
   "scripture_refs": [
     "2Kgs.15.17"
   ],
   "sources": [
     "blb-biblehub",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "griffith-beckman-reply-2"
   ],
   "related": [
     "shallum-king-of-israel"
@@ -61,6 +85,11 @@
       "source_id": "blb-biblehub",
       "url": "https://biblehub.com/blb/2_kings/15.htm#17",
       "locator": "2Kgs.15.17"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 1, row ~738 (CFAH identification), p. 38"
     }
   ],
   "dynasty": "Kings of Israel"

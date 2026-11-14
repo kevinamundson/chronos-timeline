@@ -4,24 +4,27 @@
   "type": "event",
   "title": "Joshua conquers Canaan",
   "summary": "Joshua conquers Canaan",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
   "sorting_year": -1450,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 313): 1450–1443 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 1): 1450 BC (CFAH). Sort changed by the Reply to Beckman pass (2026-11-13): was provisional 1450 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "1450 BC (CFAH)",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -1450,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 1: Jewish Sources for the Chronology of the Divided Kingdom,\" OSF preprint v1.4 (2025), doi:10.17605/OSF.IO/XJZBM, section “Midrashic Literature”, item 3 (850 + 14 years), p. 7",
+      "link": "https://osf.io/xjzbm/",
+      "source_text_id": "griffith-beckman-reply-1",
+      "note": "Conquest date of CFAH (1450–586 BC), beside Ussher 1451 and Jones 1451.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p1-conquest"
     },
     {
       "source": "generations",
@@ -56,12 +59,19 @@
   ],
   "sources": [
     "generations-preparing-2e",
-    "morecraft-christian-survey"
+    "morecraft-christian-survey",
+    "griffith-beckman-reply-1"
   ],
   "related": [
     "crossing-the-jordan",
     "fall-of-jericho",
     "division-of-the-land"
   ],
-  "free_source_links": []
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-1",
+      "url": "https://www.academia.edu/130145429/A_Reply_to_Beckmans_Defense_of_Thieles_Chronology_Part_1_Jewish_Sources_for_the_Chronology_of_the_Divided_Kingdom",
+      "locator": "section “Midrashic Literature”, item 3 (850 + 14 years), p. 7"
+    }
+  ]
 }

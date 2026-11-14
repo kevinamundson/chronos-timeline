@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ben-hadad-son-of-hazael",
+  "type": "person",
+  "title": "Ben-Hadad, son of Hazael",
+  "summary": "King of Aram-Damascus after his father Hazael (2 Kings 13:3, 24); called Ben Hadad II by Griffith & White.",
+  "description": "Son and successor of Hazael (2 Kings 13:24). Griffith & White (Reply to Beckman, Part 2) identify him with the Hadad-ezer / Bir-Hadad of Shalmaneser III’s annals and the Melqart Stele, serving as his father’s army commander, and date his reign from circa 838 BC to no later than 807 BC. Person record added from Griffith & White’s Reply to Beckman (OSF project 5b64m) on 2026-11-13.",
+  "sorting_year": -838,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 2): c. 838 to no later than 807 BC). No tier 1–4 birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "c. 838 to no later than 807 BC",
+        "year_am": null,
+        "year_bc_ad": -838,
+        "year_bc_ad_end": -807,
+        "precision": "approximate",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “Hazael”, p. 13",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Succeeds Hazael; dead by 806 BC, when Adad-Nirari III names “Mari of Damascus” (unless he also used the name Mari).",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-benhadad-reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “Hazael”, p. 13"
+    }
+  ],
+  "dynasty": "Aram-Damascus"
+}

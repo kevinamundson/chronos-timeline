@@ -7,10 +7,10 @@
   "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (2nd ed., 2024)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
   "sorting_year": -2089,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 127): 2089 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2 · CFAH non-anchor dates: 2089 or 2076 BC (CFAH-2). Sort changed by the CFAH pass (2026-11-13): was provisional (Generations) 2089 BC."
   },
   "chronologies": [
     {
@@ -23,7 +23,7 @@
       "citation": "Griffith & White, \"Chronological Framework of Ancient History. 2: Founding of the Nations,\" ARJ 15 (2022): 405–426, section \"Duration 14: The Founding of Sicyon: 2089 or 2076 BC\"",
       "link": "https://answersresearchjournal.org/tower-of-babel/chronological-framework-ancient-history-2/",
       "source_text_id": "cfah-2",
-      "note": "Two counts: Eusebius (via Ussher) gives 1,313 years before the first Olympiad, which is 2089 BC. Not an anchor point, so display only; the sort stays with the tiers.",
+      "note": "Two counts: Eusebius (via Ussher) gives 1,313 years before the first Olympiad, which is 2089 BC. Not an anchor point (tier 2, CFAH non-anchor date).",
       "cfah_basis": "paper_text",
       "cfah_key": "cfah:c2-sicyon:founding-of-sicyon"
     },

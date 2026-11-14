@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "founding-of-utica",
+  "type": "event",
+  "title": "Founding of Utica",
+  "summary": "The Phoenician colony of Utica, near Carthage, is founded.",
+  "description": "The Phoenician colony of Utica, near Carthage, is founded. Event record added from Griffith & White’s Reply to Beckman, Part 3 (section “Pliny: 1,178 y”, p. 21).",
+  "sorting_year": -1156,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 3): 1156/1155 BC."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1156/1155 BC",
+      "year_am": null,
+      "year_bc_ad": -1156,
+      "year_bc_ad_end": -1155,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, section “Pliny: 1,178 y”, p. 21",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "From Pliny’s 1,178 years for the Temple of Apollo at Utica, counted from his birth in AD 23/24.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-utica"
+    }
+  ],
+  "people": [],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-3"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "section “Pliny: 1,178 y”, p. 21"
+    }
+  ]
+}

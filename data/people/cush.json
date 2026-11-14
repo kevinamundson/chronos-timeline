@@ -5,19 +5,13 @@
   "title": "Cush",
   "summary": "Firstborn son of Ham (Gen 10:6); father of Nimrod (Gen 10:8).",
   "description": "Firstborn son of Ham (Gen 10:6); father of Nimrod (Gen 10:8). Josephus (Antiquities I.6.2, Whiston): \"the Ethiopians, over whom he reigned, are even at this day ... called Chusites\"",
-  "sorting_year": null,
+  "sorting_year": -2233,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier 1-4 dates this record's birth; unsorted (null)."
-  },
-  "standby": {
-    "year_bc_ad": -2233,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (from the founding of Babel in 2233 B.C.). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Reign (y): 33.3; Start (BC): 2233; End (BC): 2200. Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "father": "ham",
   "children": [
@@ -86,19 +80,6 @@
     "reign": [
       {
         "source": "cfah",
-        "date": "from the founding of Babel in 2233 B.C.",
-        "year_am": null,
-        "year_bc_ad": -2233,
-        "precision": "year",
-        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"The First Dynasties of Uruk and Kish\"",
-        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
-        "source_text_id": "cfah-5",
-        "note": "Cush's reign at Babel \"could be counted as 42.5 years from the founding of Babel in 2233 B.C.\" (other counts: 55 years from 2247 B.C. or 62 years from the first division). Berossus Dynasty 1 (AP-38) runs 2233—2191 B.C.",
-        "cfah_basis": "paper_text",
-        "cfah_key": "cfah:c5-cush-babel:cush:reign"
-      },
-      {
-        "source": "cfah",
         "date": "Reign (y): 33.3; Start (BC): 2233; End (BC): 2200",
         "year_am": null,
         "year_bc_ad": -2233,
@@ -126,6 +107,19 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-15-t5-05-uruk-i:mes-kiag-gaser:cush:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "from the founding of Babel in 2233 B.C.",
+        "year_am": null,
+        "year_bc_ad": -2233,
+        "precision": "year",
+        "citation": "Griffith & White, \"Chronological Framework of Ancient History. 5: The Babylonian Dynasties of Berossus,\" ARJ 16 (2023): 635–670, section \"The First Dynasties of Uruk and Kish\"",
+        "link": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
+        "source_text_id": "cfah-5",
+        "note": "Cush's reign at Babel \"could be counted as 42.5 years from the founding of Babel in 2233 B.C.\" (other counts: 55 years from 2247 B.C. or 62 years from the first division). Berossus Dynasty 1 (AP-38) runs 2233—2191 B.C.",
+        "cfah_basis": "paper_text",
+        "cfah_key": "cfah:c5-cush-babel:cush:reign"
       }
     ]
   },

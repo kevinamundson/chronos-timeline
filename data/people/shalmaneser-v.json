@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "shalmaneser-v",
+  "type": "person",
+  "title": "Shalmaneser V",
+  "summary": "King of Assyria who besieged Samaria (2 Kings 17:3–5; 18:9).",
+  "description": "King of Assyria. In Griffith & White’s reconstruction (Reply to Beckman, Part 2, Table 3) his year 1 is 726 BC (Hezekiah’s year 1), Samaria is besieged in his years 4–5 (723–722 BC), and Sargon takes the throne in the tenth month of his fifth year (722 BC). Person record added from Griffith & White’s Reply to Beckman (OSF project 5b64m) on 2026-11-13.",
+  "sorting_year": -726,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 2): 726–722 BC (years 1–5)). No tier 1–4 birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "726–722 BC (years 1–5)",
+        "year_am": null,
+        "year_bc_ad": -726,
+        "year_bc_ad_end": -722,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 3 “Reconstruction of the Reigns of Sargon II and Sennacherib to 700 BC”, rows 726–722, p. 44",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Year 1 = 726 BC = Hezekiah year 1; Sargon takes the throne in the tenth month of year 5.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-shalm-v-reign"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 3 “Reconstruction of the Reigns of Sargon II and Sennacherib to 700 BC”, rows 726–722, p. 44"
+    }
+  ],
+  "dynasty": "Assyria"
+}

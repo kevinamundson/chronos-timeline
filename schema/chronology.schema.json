@@ -79,6 +79,10 @@
                   "table1_baseline"
                 ]
               },
+              "label": {
+                "type": "string",
+                "description": "Display name of the tier (Kevin, 2026-11-13), e.g. \"Tier 2 · CFAH non-anchor dates\"."
+              },
               "select": {
                 "type": "string"
               }

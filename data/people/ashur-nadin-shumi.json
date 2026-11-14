@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "ashur-nadin-shumi",
+  "type": "person",
+  "title": "Ashur-nadin-shumi",
+  "summary": "Son of Sennacherib, made king of Babylon.",
+  "description": "Son of Sennacherib. Griffith & White (Reply to Beckman, Part 2, Tables 2 and 3) date his elevation to the throne of Babylon to 700 BC. Person record added from Griffith & White’s Reply to Beckman (OSF project 5b64m) on 2026-11-13.",
+  "sorting_year": -700,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 2): 700 BC). No tier 1–4 birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "700 BC",
+        "year_am": null,
+        "year_bc_ad": -700,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 3, row 700, p. 45; Table 2, row 700, p. 42",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Put on the throne of Babylon by his father Sennacherib.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-and-reign"
+      }
+    ]
+  },
+  "events": [
+    "ashur-nadin-shumi-made-king-of-babylon"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 3, row 700, p. 45; Table 2, row 700, p. 42"
+    }
+  ],
+  "dynasty": "Babylon"
+}

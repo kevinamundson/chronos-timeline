@@ -4,24 +4,28 @@
   "type": "event",
   "title": "Homer and the Iliad and Odyssey",
   "summary": "Homer and the Iliad and Odyssey",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dated only by the Generations books cited below; no tier 1–4 chronology covers this event.",
-  "sorting_year": -800,
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
+  "sorting_year": -914,
   "sorting_basis": {
-    "tier": "provisional",
-    "tier_rank": null,
-    "chronology": "generations",
-    "note": "PROVISIONAL: no CFAH, Ussher–Jones or Ussher date exists, so the sort uses Generations (Preparing the World for Jesus (2nd ed., 2024), PDF p. 567): around 800 BC. Pending owner decision (open question A8)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 3): 914 - 866 BC. Sort changed by the Reply to Beckman pass (2026-11-13): was provisional 800 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "914 - 866 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (the CFAH series does not cover this period; no tier 1–4 date exists)"
+      "year_bc_ad": -914,
+      "year_bc_ad_end": -866,
+      "precision": "year-range",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, Table 2, row 914–866, p. 46",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "Appearance of Homer; he may have flourished for up to 50 years, into the time of Lycurgus.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-homer"
     },
     {
       "source": "generations",
@@ -67,7 +71,8 @@
     "generations-preparing",
     "generations-preparing-2e",
     "herodotus-rawlinson-roman-roads",
-    "herodotus-rawlinson-wikisource"
+    "herodotus-rawlinson-wikisource",
+    "griffith-beckman-reply-3"
   ],
   "related": [],
   "free_source_links": [
@@ -80,6 +85,11 @@
       "source_id": "herodotus-rawlinson-wikisource",
       "url": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2",
       "locator": "Book 2 (unnumbered chapters on Wikisource)"
+    },
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "Table 2, row 914–866, p. 46"
     }
   ]
 }

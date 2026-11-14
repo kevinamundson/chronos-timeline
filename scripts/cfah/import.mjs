@@ -11,12 +11,14 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { ARJ, arjCitation, OSF, osfUrl, osfCitation } from './papers.mjs';
 import { buildPhase5, loadTables } from './osf-kings.mjs';
-import { personTierSort, reignSortBasis } from '../sort-rule.mjs';
+import { personTierSort, reignSortBasis, tierPick, orderCfah, TIER_LABEL } from '../sort-rule.mjs';
+import { ITEMS as BECKMAN_ITEMS, NEW_PEOPLE as BECKMAN_PEOPLE, PARTS as BECKMAN_PARTS, citationOf as beckmanCitation } from './beckman-reply.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..', '..');
 const DATA = join(root, 'data');
 const TODAY = '2026-10-18';
+const TODAY_SORT = '2026-11-13'; // tier 2 = all CFAH non-anchor dates (Kevin, 2026-11-13)
 const GEN_MARK = 'Added from the Generations curriculum import';
 const opt = async (f, name) => existsSync(join(here, f)) ? (await import(pathToFileURL(join(here, f)).href))[name] || [] : [];
 const { PHASE1 } = await import(pathToFileURL(join(here, 'anchors.mjs')).href);
@@ -58,13 +60,7 @@ const yl = (y, e) => (y == null ? '—' : e != null && e !== y ? `${-y}–${-e} 
 const entriesOf = (doc, slot) => (doc.type === 'event' ? doc.chronologies : (doc.dates[slot || 'birth'] ||= []));
 const setEntries = (doc, slot, list) => { if (doc.type === 'event') doc.chronologies = list; else doc.dates[slot || 'birth'] = list; };
 
-// ---- CFAH-first ordering: dated anchor points, then Table 1, then other CFAH paper dates; the null placeholder only if none
-function orderCfah(list) {
-  const c = (b) => list.filter((e) => e.source === 'cfah' && e.date != null && e.cfah_basis === b);
-  const dated = [...c('anchor_point'), ...c('table1_baseline'), ...c('paper_text')];
-  const nul = list.filter((e) => e.source === 'cfah' && e.date == null);
-  return [...dated, ...(dated.length ? [] : nul), ...list.filter((e) => e.source !== 'cfah')];
-}
+// ---- CFAH-first ordering: scripts/sort-rule.mjs orderCfah (anchor points, then tier 2 in its documented order).
 
 function ensureRecord(id, create, kind = 'event', phase) {
   if (recs[id]) return recs[id];
@@ -79,7 +75,7 @@ function ensureRecord(id, create, kind = 'event', phase) {
 }
 
 const managed = new Set(); // cfah_key values produced in this run
-const log = { phase1: { new: new Set(), updated: new Set() }, phase2: { new: new Set(), updated: new Set() }, phase3: { new: new Set(), updated: new Set() }, phase4: { new: new Set(), updated: new Set() }, phase5: { new: new Set(), updated: new Set() } };
+const log = Object.fromEntries(['phase1', 'phase2', 'phase3', 'phase4', 'phase5', 'phase6'].map((p) => [p, { new: new Set(), updated: new Set() }]));
 
 const present = []; // anchor points another import already put on the target (hand-curated entry kept; nothing added)
 function addEntry(phase, item, basis) {
@@ -93,12 +89,12 @@ function addEntry(phase, item, basis) {
   const r = ensureRecord(item.target, item.create, item.kind || 'event', phase);
   (createdBy[item.target] === phase ? log[phase].new : log[phase].updated).add(item.target);
   const d = r.doc; r.dirty = r.touched = true;
-  const key = `cfah:${item.key || (item.ap ? `ap-${item.ap}` : basis)}:${item.target}${item.slot ? `:${item.slot}` : ''}`;
+  const key = item.cfahKey || `cfah:${item.key || (item.ap ? `ap-${item.ap}` : basis)}:${item.target}${item.slot ? `:${item.slot}` : ''}`;
   if (managed.has(key)) throw new Error(`duplicate cfah_key ${key}`);
   managed.add(key);
   const e = { source: 'cfah', date: item.date, year_am: null, year_bc_ad: item.y };
   if (item.yEnd != null && item.yEnd !== item.y) e.year_bc_ad_end = item.yEnd;
-  Object.assign(e, { precision: item.precision, citation: citationOf(item.src, item.where), link: linkOf(item.src), source_text_id: item.src, note: item.note || null, cfah_basis: basis });
+  Object.assign(e, { precision: item.precision, citation: item.citation || citationOf(item.src, item.where), link: item.link || linkOf(item.src), source_text_id: item.src, note: item.note || null, cfah_basis: basis });
   if (item.ap) e.cfah_ap = `AP-${item.ap}`;
   if (isOsf(item.src)) e.cfah_preprint = true;
   e.cfah_key = key;
@@ -109,7 +105,7 @@ function addEntry(phase, item, basis) {
   if (!d.sources.includes(item.src)) d.sources.push(item.src);
   const loc = item.locator || item.where.slice(0, 120);
   d.free_source_links ||= [];
-  if (!d.free_source_links.some((l) => l.source_id === item.src && l.locator === loc)) d.free_source_links.push({ source_id: item.src, url: linkOf(item.src), locator: loc });
+  if (!d.free_source_links.some((l) => l.source_id === item.src && (item.freeUrl || l.locator === loc))) d.free_source_links.push({ source_id: item.src, url: item.freeUrl || linkOf(item.src), locator: loc });
   if (d.description?.startsWith(GEN_MARK)) {
     d.description = d.description.replace(GEN_MARK, 'Record first created by the Generations curriculum import').replace(/ ?(Dated only by the Generations books cited below; no tier 1–4 chronology covers this (event|person)\.|Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person\.)/, '') + ' CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.';
   }
@@ -146,43 +142,63 @@ function backfill() {
   }
 }
 
-// ---- four-tier sort
-const TIERS = [
-  ['cfah-anchor', 1, 'cfah', (e) => e.source === 'cfah' && e.cfah_basis === 'anchor_point'],
-  ['cfah-table1', 2, 'cfah', (e) => e.source === 'cfah' && e.cfah_basis === 'table1_baseline'],
-  ['ussher-jones', 3, 'ussher-jones', (e) => e.source === 'ussher-jones'],
-  ['ussher', 4, 'ussher', (e) => e.source === 'ussher'],
-];
-const tierOf = (entries) => { for (const [t, r, c, m] of TIERS) { const e = entries.find((x) => m(x) && x.year_bc_ad != null); if (e) return { tier: t, rank: r, chron: c, y: e.year_bc_ad, e }; } return null; };
+// ---- four-tier sort (scripts/sort-rule.mjs), applied to every event and person, not only touched ones
 const basisLabel = (b, y) => `${b.tier === 'provisional' ? 'provisional (Generations)' : b.tier}${y == null ? '' : ` ${yl(y)}`}`;
+const srcLabel = (id) => (BECKMAN_SRC[id] ? `Reply to Beckman, Part ${BECKMAN_SRC[id]}` : /^cfah-/.test(id || '') ? paperLabel(id) : id);
 function resort(r) {
-  const d = r.doc; const entries = d.type === 'event' ? d.chronologies : d.dates.birth || [];
-  const t = tierOf(entries);
-  if (!t) {
-    if (d.type !== 'person') return;
-    const reign = personTierSort(d);
-    if (reign?.slot !== 'reign_start') return;
-    const b = d.sorting_basis || {};
-    if (d.sorting_year === reign.year && b.tier === reign.tier && b.tier_rank === reign.rank && b.chronology === reign.chronology && b.slot === 'reign_start') return;
-    d.sorting_year = reign.year;
-    d.sorting_basis = reignSortBasis(reign);
-    return;
-  }
+  const d = r.doc;
+  const pick = d.type === 'person' ? personTierSort(d) : tierPick(d.chronologies);
+  if (!pick) return;
   const b = d.sorting_basis || {};
-  if (b.tier === t.tier && b.tier_rank === t.rank && b.chronology === t.chron && d.sorting_year === t.y) {
-    if (b.slot === 'reign_start') delete b.slot;
-    return;
-  }
-  const created = r.created;
-  const e = t.e;
-  const what = t.rank === 1 ? `Tier 1: CFAH anchor point: ${e.date}${e.cfah_ap ? ` (${e.cfah_ap}${e.cfah_preprint ? `, ${paperLabel(e.source_text_id)}` : ''})` : ''}`
-    : t.rank === 2 ? `Tier 2: CFAH-1 Table 1 baseline: ${e.date}` : `Tier ${t.rank}: ${t.chron}: ${e.date}`;
-  if (!created) {
+  const reign = pick.slot === 'reign_start';
+  if (b.tier === pick.tier && b.tier_rank === pick.rank && b.chronology === pick.chronology && d.sorting_year === pick.year && (reign ? b.slot === 'reign_start' : b.slot == null || b.slot === 'birth')) return;
+  const e = pick.entry;
+  const what = pick.rank === 1 ? `${TIER_LABEL[pick.tier]}: ${e.date}${e.cfah_ap ? ` (${e.cfah_ap}${e.cfah_preprint ? `, ${paperLabel(e.source_text_id)}` : ''})` : ''}`
+    : pick.rank === 2 ? `${TIER_LABEL[pick.tier]}: ${e.date} (${e.cfah_basis === 'table1_baseline' ? 'CFAH-1 Table 1' : srcLabel(e.source_text_id)})` : `${TIER_LABEL[pick.tier]}: ${e.date}`;
+  const nb = reign ? reignSortBasis(pick) : { tier: pick.tier, tier_rank: pick.rank, chronology: pick.chronology, note: what };
+  if (!r.created && b.tier) {
     const was = basisLabel(b, d.sorting_year);
-    sortChanges[d.id] = { from: { tier: b.tier, year: d.sorting_year }, to: { tier: t.tier, year: t.y }, by: e.cfah_ap || (e.cfah_basis === 'table1_baseline' ? 'CFAH-1 Table 1' : t.chron), on: TODAY, was_note: b.note || '' };
-    d.sorting_basis = { tier: t.tier, tier_rank: t.rank, chronology: t.chron, note: `${what}. Sort changed by the CFAH pass (${TODAY}): was ${was}.` };
-  } else d.sorting_basis = { tier: t.tier, tier_rank: t.rank, chronology: t.chron, note: what };
-  d.sorting_year = t.y;
+    sortChanges[d.id] = { from: { tier: b.tier, year: d.sorting_year }, to: { tier: pick.tier, year: pick.year }, by: e.cfah_ap || (e.cfah_basis === 'table1_baseline' ? 'CFAH-1 Table 1' : srcLabel(e.source_text_id) || pick.chronology), on: TODAY_SORT, was_note: b.note || '' };
+    nb.note = `${nb.note}${/\.$/.test(nb.note) ? '' : '.'} Sort changed by the CFAH pass (${TODAY_SORT}): was ${was}.`;
+  }
+  d.sorting_basis = nb;
+  d.sorting_year = pick.year;
+  r.dirty = true;
+}
+// Canonical order of every CFAH date list (sort-rule.mjs orderCfah), so the stored first tier 2 entry is the one that sorts.
+function reorderAll() {
+  for (const r of Object.values(recs)) {
+    const d = r.doc; if (d.type === 'location') continue;
+    const slots = d.type === 'event' ? [[null, d.chronologies]] : Object.entries(d.dates || {});
+    for (const [slot, list] of slots) {
+      const next = orderCfah(list);
+      if (JSON.stringify(next) !== JSON.stringify(list)) { setEntries(d, slot, next); r.dirty = true; }
+    }
+  }
+}
+
+// ---- phase 6: Griffith & White, A Reply to Beckman (scripts/cfah/beckman-reply.mjs), tier 2
+const BECKMAN_SRC = Object.fromEntries(Object.entries(BECKMAN_PARTS).map(([n, p]) => [p.src, n]));
+const beckmanUrl = (id) => sources.find((s) => s.id === id)?.url;
+function runBeckman() {
+  for (const p of BECKMAN_PEOPLE) {
+    if (recs[p.id]) { createdBy[p.id] ||= 'phase6'; continue; }
+    ensureRecord(p.id, { title: p.title, summary: p.summary, description: `${p.description} Person record added from Griffith & White’s Reply to Beckman (OSF project 5b64m) on 2026-11-13.`, dynasty: p.dynasty }, 'person', 'phase6');
+    log.phase6.new.add(p.id);
+  }
+  for (const it of BECKMAN_ITEMS) {
+    const [kind, rest] = it.t.split(':'); const [id, slot] = rest.split('#');
+    const part = BECKMAN_PARTS[it.part];
+    if (it.create && recs[id]) createdBy[id] ||= 'phase6';
+    const create = it.create ? { title: it.create.title, summary: it.create.summary, description: `${it.create.summary} Event record added from Griffith & White’s Reply to Beckman, Part ${it.part} (${it.loc}).`, people: it.create.people, scripture_refs: it.create.scripture_refs } : null;
+    addEntry('phase6', { target: id, kind, slot: kind === 'person' ? slot : undefined, create, cfahKey: `cfah:beckman:${it.k}`, date: it.date, y: it.y, yEnd: it.end, precision: it.prec,
+      src: part.src, where: it.loc, locator: it.loc, citation: beckmanCitation(it.part, it.loc), link: part.osf, freeUrl: beckmanUrl(part.src), note: it.note }, 'beckman_reply');
+    for (const pid of it.create?.people || []) {
+      const pr = recs[pid]; if (!pr) throw new Error(`beckman ${it.k}: unknown person ${pid}`);
+      pr.doc.events ||= [];
+      if (!pr.doc.events.includes(id)) { pr.doc.events.push(id); pr.dirty = true; }
+    }
+  }
 }
 
 // ---- run
@@ -200,6 +216,7 @@ for (const it of PHASE4) { ensureOsfSource(it.src); addEntry('phase4', it, 'anch
 const P5 = buildPhase5(loadTables(join(here, 'osf-tables')), new Set(Object.keys(recs).filter((id) => createdBy[id] !== 'phase5')));
 if (P5.problems.length) { console.error(P5.problems.join('\n')); process.exit(1); }
 for (const it of P5.items) { ensureOsfSource(it.src); addEntry('phase5', it, 'paper_text'); }
+runBeckman();
 {
   const kf = join(DATA, 'king-lists.json'); const kd = JSON.parse(readFileSync(kf, 'utf8'));
   for (const l of P5.lists) ensureOsfSource(l.source);
@@ -216,7 +233,8 @@ for (const [id, r] of Object.entries(recs)) {
   delete recs[id]; delete createdBy[id]; console.log(`phase5: removed orphan person ${id}`);
 }
 backfill();
-for (const r of Object.values(recs)) if (r.touched && r.doc.type !== 'location') resort(r);
+reorderAll();
+for (const r of Object.values(recs)) if (r.doc.type !== 'location') resort(r);
 for (const [id, r] of Object.entries(recs)) if (r.dirty) writeFileSync(join(DATA, r.dir, `${id}.json`), JSON.stringify(r.doc, null, 2) + '\n');
 if (sourcesDirty) { const sd = JSON.parse(readFileSync(srcDocFile, 'utf8')); sd.sources = sources; writeFileSync(srcDocFile, JSON.stringify(sd, null, 2) + '\n'); }
 writeFileSync(changesFile, JSON.stringify(sortChanges, null, 2) + '\n');

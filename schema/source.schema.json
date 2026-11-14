@@ -32,7 +32,7 @@
         "series_parent": { "$ref": "common.schema.json#/$defs/slug", "description": "Source id this document belongs under. The chronologies page nests these as a sub-list of the parent." },
         "series_label": { "type": "string", "minLength": 1, "description": "Label for a series header when it differs from title. The OSF Preprint section uses this." },
         "preprint_url": { "$ref": "common.schema.json#/$defs/url", "description": "Preprint page for the same paper, when url is the project page. Shown as a second link on the series line." },
-        "platform": { "enum": ["arj", "osf"], "description": "Where this CFAH list entry is published. arj = Answers Research Journal. osf = the OSF project." },
+        "platform": { "enum": ["arj", "osf", "academia"], "description": "Where this CFAH list entry is published. arj = Answers Research Journal. osf = the OSF project. academia = Academia.edu (Kenneth Griffith's Reply to Beckman, Kevin 2026-11-13)." },
         "role": { "enum": ["series", "paper", "response", "copy"], "description": "series = a platform section header. paper = a CFAH article. response = a comment, reply, or response. copy = a tagged copy of its parent. That parent may be a paper, a response, or another copy, so a response can carry its own copies." },
         "copy_kind": { "type": "string", "minLength": 1, "description": "Short tag for a copy, such as duplicate, alternate, archived, older version, or PDF. Only on role copy. A response's PDF uses it the same way a paper's PDF does." },
         "parent": { "$ref": "common.schema.json#/$defs/slug", "description": "Series this paper or response belongs to. For a copy, the paper, response, or copy it duplicates." },

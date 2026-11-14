@@ -5,19 +5,13 @@
   "title": "Sargon II",
   "summary": "King of Assyria, the second \"Sardanapalus\" of the chroniclers in CFAH's reading.",
   "description": "King of Assyria, the second \"Sardanapalus\" of the chroniclers in CFAH's reading. Person record added by the CFAH pass for CFAH's reign dates; dates are as printed in the CFAH paper cited.",
-  "sorting_year": null,
+  "sorting_year": -721,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
-  },
-  "standby": {
-    "year_bc_ad": -705,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the death entry (705). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: 720 or 721. Sort changed by the CFAH pass (2026-11-13): was cfah-table1 722 BC."
   },
   "father": null,
   "children": [],
@@ -36,6 +30,20 @@
         "note": "Start of the reign (\"whose reign began in 720 or 721\").",
         "cfah_basis": "paper_text",
         "cfah_key": "cfah:c5-sargon2-start:sargon-ii:reign"
+      },
+      {
+        "source": "cfah",
+        "date": "accession 722 BC (Tebeth, January 721); killed 705 BC",
+        "year_am": null,
+        "year_bc_ad": -722,
+        "year_bc_ad_end": -705,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 3, rows 722–705, pp. 44–45; Table 2, row 722/721, p. 39",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Accession year 722n; year 1 begins 1 Nisan 721.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-sargon-reign"
       }
     ],
     "death": [
@@ -51,16 +59,46 @@
         "note": "\"except that he died in 705\". Berossus counted the death as 706 (open question I5).",
         "cfah_basis": "paper_text",
         "cfah_key": "cfah:c5-sargon2-death:sargon-ii:death"
+      },
+      {
+        "source": "cfah",
+        "date": "705 BC (killed in Tabal)",
+        "year_am": null,
+        "year_bc_ad": -705,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 2, row 705, p. 41; Table 3, row 705, p. 45",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Killed by Gurdi the Kullammaean.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-sargon-death"
       }
     ]
   },
   "events": [
     "second-median-revolt",
-    "fall-of-samaria"
+    "fall-of-samaria",
+    "humbanigash-defeats-sargon-at-der",
+    "sargon-against-tabal",
+    "dur-sharrukin-founded",
+    "sargon-against-mannea",
+    "sargon-appoints-governors",
+    "sargon-against-urartu-and-musasir",
+    "sennacherib-besieges-lachish",
+    "battle-of-eltekah",
+    "assyrian-nobles-against-ellipi",
+    "sargon-stays-in-the-land-712",
+    "sargon-conquers-babylon",
+    "sargon-fights-merodach-baladan-in-bit-yakin",
+    "kummuhu-captured",
+    "dur-sharrukin-temples-dedicated",
+    "dur-sharrukin-completed",
+    "sargon-ii-killed-in-tabal"
   ],
   "scripture_refs": [],
   "sources": [
-    "cfah-5"
+    "cfah-5",
+    "griffith-beckman-reply-2"
   ],
   "related": [],
   "free_source_links": [
@@ -68,6 +106,11 @@
       "source_id": "cfah-5",
       "url": "https://answersresearchjournal.org/archaeology/chronological-framework-ancient-history-5/",
       "locator": "\"AP-34: Sardanapalus II—Sargon II: Second Median Revolt: 705–700 B.C.\""
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 3, rows 722–705, pp. 44–45; Table 2, row 722/721, p. 39"
     }
   ],
   "dynasty": "Assyria"

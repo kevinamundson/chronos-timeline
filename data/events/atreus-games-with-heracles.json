@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "atreus-games-with-heracles",
+  "type": "event",
+  "title": "Games of Atreus with Heracles",
+  "summary": "The games of Atreus at which Heracles competed, the first recorded Olympic-type games.",
+  "description": "The games of Atreus at which Heracles competed, the first recorded Olympic-type games. Event record added from Griffith & White’s Reply to Beckman, Part 3 (Table 2, row 1221, p. 46).",
+  "sorting_year": -1221,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 3): 1221 BC."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "1221 BC",
+      "year_am": null,
+      "year_bc_ad": -1221,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 3: The Founding Dates of Tyre and Carthage,\" OSF preprint v1.2 (2025), doi:10.17605/OSF.IO/9V65S, Table 2, row 1221, p. 46",
+      "link": "https://osf.io/9v65s/",
+      "source_text_id": "griffith-beckman-reply-3",
+      "note": "The first recorded Olympic-type games; Heracles died soon after.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p3-atreus"
+    }
+  ],
+  "people": [
+    "heracles"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-3"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-3",
+      "url": "https://www.academia.edu/130196584/Part_3_The_Founding_Dates_of_Tyre_and_Carthage",
+      "locator": "Table 2, row 1221, p. 46"
+    }
+  ]
+}

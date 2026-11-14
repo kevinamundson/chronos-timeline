@@ -2,13 +2,14 @@
   "$schema": "../schema/chronology.schema.json",
   "primary_sort_chronology": "cfah",
   "sorting_rule": {
-    "description": "sorting_year = the BC/AD year of the first tier that has a non-null year_bc_ad. Events use chronologies[]. People use dates.birth[] when a tier 1–4 birth year is stored. A person who has a dates.reign slot and no tier-ranked birth year uses the reign-start year (year_bc_ad already stored on dates.reign); sorting_basis.slot is then reign_start. Within ussher-jones, for that reign-start choice, the 23rd edition (2026) governs over an older Jones edition when both print a year. The first matching entry within a tier is used otherwise; for split years (2348/2347) the start year is used. A year is not invented. Tier \"calculated\" sits below provisional: it is arithmetic on figures already printed, stored on the person in calculated, and it sets sorting_year only when no tier 1–4 year and no provisional year exist. It is not written into year_bc_ad. Kevin, 2026-11-08. Secondary display chronologies (bible, masoretic-genealogy, jordan, josephus, Clonmacnoise, Raleigh, Herodotus, Cory, Shuckford, Hales, jones-2019, Dynasty of Slaves (dynasty-of-slaves), and CFAH paper_text) never set sorting_year. The Conventional dating display group (display_groups: conventional, which holds dynasty-of-slaves; Kevin, 2026-11-12) never sets sorting_year, a provisional year, or a standby placement, and is not shown on the home timeline. Exception, pending owner decision: where no tier gives a year, the Generations curriculum supplies a PROVISIONAL sort (tier \"provisional\"; see A8 in docs/OPEN-QUESTIONS-FOR-KEVIN.md). Kevin's ruling, 2026-10-28 (open question M3).",
+    "description": "sorting_year = the BC/AD year of the first tier that has a non-null year_bc_ad. Events use chronologies[]. People use dates.birth[] when a tier 1–4 birth year is stored. A person who has a dates.reign slot and no tier-ranked birth year uses the reign-start year (year_bc_ad already stored on dates.reign); sorting_basis.slot is then reign_start. Within ussher-jones, for that reign-start choice, the 23rd edition (2026) governs over an older Jones edition when both print a year. The first matching entry within a tier is used otherwise; for split years (2348/2347) the start year is used. A year is not invented. Tier \"calculated\" sits below provisional: it is arithmetic on figures already printed, stored on the person in calculated, and it sets sorting_year only when no tier 1–4 year and no provisional year exist. It is not written into year_bc_ad. Kevin, 2026-11-08. Secondary display chronologies (bible, masoretic-genealogy, jordan, josephus, Clonmacnoise, Raleigh, Herodotus, Cory, Shuckford, Hales, jones-2019, Dynasty of Slaves (dynasty-of-slaves)) never set sorting_year. CFAH paper_text (and every other CFAH non-anchor date) is Tier 2 · CFAH non-anchor dates (Kevin, 2026-11-13). The Conventional dating display group (display_groups: conventional, which holds dynasty-of-slaves; Kevin, 2026-11-12) never sets sorting_year, a provisional year, or a standby placement, and is not shown on the home timeline. Exception, pending owner decision: where no tier gives a year, the Generations curriculum supplies a PROVISIONAL sort (tier \"provisional\"; see A8 in docs/OPEN-QUESTIONS-FOR-KEVIN.md). Kevin's ruling, 2026-10-28 (open question M3).",
     "tiers": [
       {
         "rank": 1,
         "tier": "cfah-anchor",
         "chronology": "cfah",
         "cfah_basis": "anchor_point",
+        "label": "Tier 1 · CFAH anchor point",
         "select": "cfah entry with cfah_basis = anchor_point"
       },
       {
@@ -16,18 +17,21 @@
         "tier": "cfah-table1",
         "chronology": "cfah",
         "cfah_basis": "table1_baseline",
-        "select": "cfah entry with cfah_basis = table1_baseline (CFAH-1 Table 1)"
+        "label": "Tier 2 · CFAH non-anchor dates",
+        "select": "every dated cfah entry that is not an anchor point (cfah_basis table1_baseline, paper_text, or beckman_reply), from all 19 CFAH papers and Griffith & White's Reply to Beckman (OSF 5b64m). Kevin, 2026-11-13. The id cfah-table1 (and cfah_basis above) is historical. Order inside the tier: CFAH-1 Table 1 first; then the other CFAH paper years (paper_text), latest paper in the series first (CFAH-19 … CFAH-8, CFAH-7B, CFAH-7A, then ARJ CFAH-6 … CFAH-1; an OSF copy of an ARJ paper ranks with that paper; within one paper, the importer's table/text order); then Griffith & White's Reply to Beckman (beckman_reply). The first entry in that order with a BC/AD year sets the sort."
       },
       {
         "rank": 3,
         "tier": "ussher-jones",
         "chronology": "ussher-jones",
+        "label": "Tier 3 · Floyd Nolen Jones",
         "select": "ussher-jones entry (Floyd Nolen Jones). On a reign-start sort, the 23rd edition (2026) governs over an older Jones edition when both print a year."
       },
       {
         "rank": 4,
         "tier": "ussher",
         "chronology": "ussher",
+        "label": "Tier 4 · Ussher, Annals of the World",
         "select": "ussher entry (Annals of the World)"
       }
     ],
@@ -58,7 +62,7 @@
         "Kenneth C. Griffith",
         "Darrell K. White"
       ],
-      "description": "Primary sorting chronology. A planned 20-paper series in Answers Research Journal (CFAH-1 to CFAH-6 published as of 2026-10-17) that harmonises durations from ancient chroniclers with Ussher's biblical chronology as modified by Floyd Nolan Jones (\"Ussher-Jones\"). Only dates read directly in the ARJ papers are entered; every CFAH date carries paper + section citation. Each dated cfah entry carries cfah_basis: \"anchor_point\" (dates the papers derive/triangulate, e.g. AP-29, AP-30) or \"table1_baseline\" (CFAH-1 Table 1, the Ussher-Jones biblical baseline the authors adopt). These are sort tiers 1 and 2.",
+      "description": "Primary sorting chronology. A planned 20-paper series in Answers Research Journal (CFAH-1 to CFAH-6 published as of 2026-10-17) that harmonises durations from ancient chroniclers with Ussher's biblical chronology as modified by Floyd Nolen Jones (\"Ussher-Jones\"). Only dates read directly in the ARJ papers are entered; every CFAH date carries paper + section citation. Each dated cfah entry carries cfah_basis: \"anchor_point\" (dates the papers derive/triangulate, e.g. AP-29, AP-30) (sort tier 1, Tier 1 · CFAH anchor point), or a non-anchor basis: \"table1_baseline\" (CFAH-1 Table 1, the Ussher-Jones biblical baseline the authors adopt), \"paper_text\" (any other year a CFAH paper prints, ARJ or OSF), or \"beckman_reply\" (Griffith & White's Reply to Beckman). The non-anchor bases are sort tier 2, Tier 2 · CFAH non-anchor dates (Kevin, 2026-11-13).",
       "year_conventions": "Dates given in Julian BC; split years written as 2348/2347 (year_bc_ad = -2348, year_bc_ad_end = -2347). CFAH papers do not use AM numbering in their anchor points; year_am left null unless the paper states it.",
       "references": [
         "cfah-1",

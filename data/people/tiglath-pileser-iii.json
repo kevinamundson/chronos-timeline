@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "tiglath-pileser-iii",
+  "type": "person",
+  "title": "Tiglath-Pileser III (Pul)",
+  "summary": "King of Assyria, the Pul of 2 Kings 15:19.",
+  "description": "King of Assyria. Griffith & White (Reply to Beckman, Part 2) give his reign as 745–727 BC and, following Gertoux, hold that as crown prince “Pulu” he received Menahem’s tribute circa 765 BC, before overthrowing his older brother in 746 BC. Person record added from Griffith & White’s Reply to Beckman (OSF project 5b64m) on 2026-11-13.",
+  "sorting_year": -745,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "slot": "reign_start",
+    "note": "Sorted by reign start (Tier 2, CFAH Reply to Beckman (Griffith & White, Part 2): 745 to 727 BC). No tier 1–4 birth year."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "reign": [
+      {
+        "source": "cfah",
+        "date": "745 to 727 BC",
+        "year_am": null,
+        "year_bc_ad": -745,
+        "year_bc_ad_end": -727,
+        "precision": "year-range",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “Menahem”, p. 17",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Same page: crown prince “Pulu” for 36 years (782–746 BC, after Gertoux) before overthrowing his older brother in 746 BC.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-tp3-reign"
+      }
+    ]
+  },
+  "events": [
+    "menahem-pays-tribute-to-pul",
+    "tiglath-pileser-iii-lists-menahems-tribute",
+    "azriyau-rebels-against-tiglath-pileser-iii"
+  ],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “Menahem”, p. 17"
+    }
+  ],
+  "dynasty": "Assyria"
+}

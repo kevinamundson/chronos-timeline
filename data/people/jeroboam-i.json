@@ -4,17 +4,18 @@
   "type": "person",
   "title": "Jeroboam I",
   "summary": "First king of the northern kingdom of Israel.",
-  "description": "First king of the northern kingdom of Israel. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-16 (Table 2, \"The Kings of Qatna\"); its dates are display only.",
+  "description": "First king of the northern kingdom of Israel. Person record added by the CFAH pass from the per-king rows of the OSF preprint CFAH-16 (Table 2, \"The Kings of Qatna\").",
   "alt_names": [
     "Yahad Abum",
     "leroboam"
   ],
-  "sorting_year": null,
+  "sorting_year": -975,
   "sorting_basis": {
-    "tier": "none",
-    "tier_rank": null,
+    "tier": "cfah-table1",
+    "tier_rank": 2,
     "chronology": "cfah",
-    "note": "No tier gives a birth year."
+    "slot": "reign_start",
+    "note": "Sorted by reign start (CFAH non-anchor dates). No tier 1–4 birth year. The year is the reign-start figure already printed on dates.reign: Reign: 975-953. Sort changed by the CFAH pass (2026-11-13): was none."
   },
   "calculated": [
     {
@@ -32,13 +33,6 @@
       "year_am": 3031
     }
   ],
-  "standby": {
-    "year_bc_ad": -975,
-    "basis": "source-printed",
-    "source_chronology": "cfah",
-    "from_record": null,
-    "note": "Standby placement only. Chronological Framework of Ancient History prints this BC/AD year on the reign entry (Reign: 975-953). It is not a sort year. No Anno Mundi, regnal length, or Julian Period figure was converted to obtain it."
-  },
   "father": null,
   "children": [],
   "dates": {

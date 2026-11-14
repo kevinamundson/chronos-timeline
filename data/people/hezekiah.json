@@ -4,7 +4,7 @@
   "type": "person",
   "title": "Hezekiah",
   "summary": "King of Judah who resisted Sennacherib.",
-  "description": "Added from the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). Dates are those printed in the cited Generations books; no tier 1–4 chronology covers this person.",
+  "description": "Record first created by the Generations curriculum import (Preparing the World for Jesus (1st ed., 2020)). CFAH dates it as well (added by the CFAH pass); the sort follows the four-tier rule.",
   "sorting_year": -752,
   "sorting_basis": {
     "tier": "ussher-jones",
@@ -69,13 +69,16 @@
     "reign": [
       {
         "source": "cfah",
-        "date": null,
+        "date": "726 BC (Hezekiah year 1)",
         "year_am": null,
-        "year_bc_ad": null,
-        "precision": "unknown",
-        "citation": null,
-        "link": null,
-        "note": "pending CFAH reference"
+        "year_bc_ad": -726,
+        "precision": "year",
+        "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, Table 3, row 726, p. 44",
+        "link": "https://osf.io/dt6gx/",
+        "source_text_id": "griffith-beckman-reply-2",
+        "note": "Judah year column of Table 3; year 14 = 713 BC, year 28 = 699 BC.",
+        "cfah_basis": "beckman_reply",
+        "cfah_key": "cfah:beckman:p2-hezekiah-reign"
       },
       {
         "source": "raleigh-history-of-the-world",
@@ -103,7 +106,8 @@
   },
   "events": [
     "reign-of-hezekiah",
-    "sennacherib-besieges-jerusalem"
+    "sennacherib-besieges-jerusalem",
+    "sennacherib-besieges-lachish"
   ],
   "scripture_refs": [
     "2Kgs.18.1-2Kgs.20.21"
@@ -112,7 +116,8 @@
     "generations-preparing",
     "raleigh-history-of-the-world-1617",
     "hales-new-analysis-1830",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "griffith-beckman-reply-2"
   ],
   "related": [],
   "free_source_links": [
@@ -130,6 +135,11 @@
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    },
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "Table 3, row 726, p. 44"
     }
   ],
   "alt_names": [

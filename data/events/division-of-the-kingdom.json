@@ -7,21 +7,24 @@
   "description": "Added from the Morecraft import (Morecraft, A Christian Survey of World History). Jones, Appendix F (23rd ed., 2026), sets the sort. Morecraft stays on display.",
   "sorting_year": -975,
   "sorting_basis": {
-    "tier": "ussher-jones",
-    "tier_rank": 3,
-    "chronology": "ussher-jones",
-    "note": "Tier 3: Ussher-Jones (Floyd Nolen Jones): 975 BC (no higher-tier year available)."
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 1): 975 BC. Sort changed by the Reply to Beckman pass (2026-11-13): was ussher-jones 975 BC."
   },
   "chronologies": [
     {
       "source": "cfah",
-      "date": null,
+      "date": "975 BC",
       "year_am": null,
-      "year_bc_ad": null,
-      "precision": "unknown",
-      "citation": null,
-      "link": null,
-      "note": "pending CFAH reference (no CFAH anchor point or Table 1 entry found for this)"
+      "year_bc_ad": -975,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 1: Jewish Sources for the Chronology of the Divided Kingdom,\" OSF preprint v1.4 (2025), doi:10.17605/OSF.IO/XJZBM, section “The Prophets: 490 years and 390 years”, p. 19",
+      "link": "https://osf.io/xjzbm/",
+      "source_text_id": "griffith-beckman-reply-1",
+      "note": "The sin of Jeroboam (the golden calves, 1 Kings 12:25–33) begins in 975, the year after Solomon’s death.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p1-division"
     },
     {
       "source": "ussher-jones",
@@ -67,7 +70,8 @@
   "scripture_refs": [],
   "sources": [
     "morecraft-christian-survey",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "griffith-beckman-reply-1"
   ],
   "related": [
     "reign-of-solomon",
@@ -79,6 +83,11 @@
       "source_id": "jones-chronology-ot-2026",
       "url": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
       "locator": "Appendix F, printed p. 279 (PDF p. 314)"
+    },
+    {
+      "source_id": "griffith-beckman-reply-1",
+      "url": "https://www.academia.edu/130145429/A_Reply_to_Beckmans_Defense_of_Thieles_Chronology_Part_1_Jewish_Sources_for_the_Chronology_of_the_Divided_Kingdom",
+      "locator": "section “The Prophets: 490 years and 390 years”, p. 19"
     }
   ]
 }

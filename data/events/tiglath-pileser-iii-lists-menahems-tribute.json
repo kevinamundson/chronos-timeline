@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/event.schema.json",
+  "id": "tiglath-pileser-iii-lists-menahems-tribute",
+  "type": "event",
+  "title": "Tiglath-Pileser III lists Menahem’s tribute",
+  "summary": "Tiglath-Pileser III’s annals for his ninth palu name “Menahem of Samaria” among his tributaries.",
+  "description": "Tiglath-Pileser III’s annals for his ninth palu name “Menahem of Samaria” among his tributaries. Event record added from Griffith & White’s Reply to Beckman, Part 2 (section “Menahem”, pp. 17–18; Table 1, row ~738, p. 38).",
+  "sorting_year": -738,
+  "sorting_basis": {
+    "tier": "cfah-table1",
+    "tier_rank": 2,
+    "chronology": "cfah",
+    "note": "Tier 2: CFAH Reply to Beckman (Griffith & White, Part 2): 738 BC (9th palu)."
+  },
+  "chronologies": [
+    {
+      "source": "cfah",
+      "date": "738 BC (9th palu)",
+      "year_am": null,
+      "year_bc_ad": -738,
+      "precision": "year",
+      "citation": "Griffith & White, \"A Reply to Beckman’s Defense of Thiele’s Chronology, Part 2: An Objectivist Answer to the Assyrian Synchronisms,\" OSF preprint v2.10 (2025), doi:10.17605/OSF.IO/DT6GX, section “Menahem”, pp. 17–18; Table 1, row ~738, p. 38",
+      "link": "https://osf.io/dt6gx/",
+      "source_text_id": "griffith-beckman-reply-2",
+      "note": "Tiglath-Pileser III’s summary list of tributaries names Menahem of Samaria with the death of Pekah; CFAH reads it as geographical, not chronological.",
+      "cfah_basis": "beckman_reply",
+      "cfah_key": "cfah:beckman:p2-tp3-738"
+    }
+  ],
+  "people": [
+    "tiglath-pileser-iii",
+    "menahem"
+  ],
+  "locations": [],
+  "maps": [],
+  "scripture_refs": [],
+  "sources": [
+    "griffith-beckman-reply-2"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "griffith-beckman-reply-2",
+      "url": "https://www.academia.edu/130166028/Part_2_An_Objectivist_Answer_to_the_Assyrian_Synchronisms",
+      "locator": "section “Menahem”, pp. 17–18; Table 1, row ~738, p. 38"
+    }
+  ]
+}
