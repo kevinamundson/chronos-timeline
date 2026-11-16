@@ -113,6 +113,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        },
+        {
+          "form": "Abimilec",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. VII, subsection I, sig. 230a. The passage prints \u201cAbimilec\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -313,6 +323,21 @@
       ]
     },
     {
+      "id": "adonibezek",
+      "forms": [
+        {
+          "form": "Adonibezet",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. VII, subsection I, sig. 230a. The passage prints \u201cAdonibezet\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "adonizedek",
       "forms": [
         {
@@ -359,6 +384,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        }
+      ]
+    },
+    {
+      "id": "adrichomius",
+      "forms": [
+        {
+          "form": "Adrichome",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection VIII, sig. 223a\u2013223b. The passage prints \u201cAdrichome\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -504,6 +544,36 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        }
+      ]
+    },
+    {
+      "id": "ahab",
+      "forms": [
+        {
+          "form": "Achab",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection II, sig. 219b\u2013220a. The passage prints \u201cAchab\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
+      "id": "ahaziah-of-judah",
+      "forms": [
+        {
+          "form": "Ahaziah",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. VII, subsection I, sig. 230b. The passage prints \u201cAhaziah\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -843,6 +913,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        }
+      ]
+    },
+    {
+      "id": "antiochus-iv-epiphanes",
+      "forms": [
+        {
+          "form": "Antiochus Epiphanes",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection IV, sig. 221b. The passage prints \u201cAntiochus Epiphanes\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -1437,6 +1522,21 @@
       ]
     },
     {
+      "id": "asher",
+      "forms": [
+        {
+          "form": "Asser",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection I, sig. 219a. The passage prints \u201cAsser\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "ashkenaz",
       "forms": [
         {
@@ -1708,6 +1808,36 @@
       ]
     },
     {
+      "id": "baldwin-the-first",
+      "forms": [
+        {
+          "form": "Baldwinus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection II, sig. 220a. The passage prints \u201cBaldwinus\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
+      "id": "baldwin-the-third",
+      "forms": [
+        {
+          "form": "Baldwine the third",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection VII, sig. 222b. The passage prints \u201cBaldwine the third\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "baleus",
       "forms": [
         {
@@ -1814,6 +1944,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        }
+      ]
+    },
+    {
+      "id": "belforest",
+      "forms": [
+        {
+          "form": "Belsorrest",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection VI, sig. 222a. The passage prints \u201cBelsorrest\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -2039,6 +2184,41 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        }
+      ]
+    },
+    {
+      "id": "breidenbach",
+      "forms": [
+        {
+          "form": "Breidenbech",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection IV, sig. 225a\u2013225b. The passage prints \u201cBreidenbech\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "BREITENBACH",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection III, sig. 224b. The passage prints \u201cBREITENBACH\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Bridenbach",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection V, sig. 222a. The passage prints \u201cBridenbach\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -2603,6 +2783,36 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter I."
+        }
+      ]
+    },
+    {
+      "id": "christianus-schrot",
+      "forms": [
+        {
+          "form": "Schrot",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection VIII, sig. 223a\u2013223b. The passage prints \u201cSchrot\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
+      "id": "cicero",
+      "forms": [
+        {
+          "form": "Tullie",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection II, sig. 219b\u2013220a. The passage prints \u201cTullie\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -3713,6 +3923,31 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        },
+        {
+          "form": "Elijah",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. VI, sig. 229a. The passage prints \u201cElijah\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
+      "id": "elisha",
+      "forms": [
+        {
+          "form": "Elisoeus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. V, sig. 227b. The passage prints \u201cElisoeus\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -3780,6 +4015,26 @@
           "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n74/mode/1up",
           "source_text_id": "cory-ancient-fragments-1876",
           "note": "The passage is an English translation. The Greek letters of the ancient text are not entered."
+        },
+        {
+          "form": "Elulaeus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection III, sig. 220b\u2013221a. The passage prints \u201cElulaeus\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Helisaeus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection III, sig. 220b\u2013221a. The passage prints \u201cHelisaeus\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -4519,6 +4774,31 @@
       ]
     },
     {
+      "id": "godfrey",
+      "forms": [
+        {
+          "form": "Godfrey of Bulion",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. VII, subsection II, sig. 231a\u2013231b. The passage prints \u201cGodfrey of Bulion\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Godfry of Bullion",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection III, sig. 225a. The passage prints \u201cGodfry of Bullion\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "goliath",
       "forms": [
         {
@@ -4597,6 +4877,31 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        }
+      ]
+    },
+    {
+      "id": "hadarhezer",
+      "forms": [
+        {
+          "form": "Adadezer",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. I, sig. 217b. The passage prints \u201cAdadezer\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Hadadeser",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection V, sig. 226b. The passage prints \u201cHadadeser\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -4688,6 +4993,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        },
+        {
+          "form": "Amatheus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection V, sig. 226b. The passage prints \u201cAmatheus\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -4888,6 +5203,31 @@
       ]
     },
     {
+      "id": "herod-antipas",
+      "forms": [
+        {
+          "form": "Herod Antipas",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. V, sig. 228a. The passage prints \u201cHerod Antipas\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Herode",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection V, sig. 226a\u2013226b. The passage prints \u201cHerode\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "herod-the-great",
       "forms": [
         {
@@ -4899,6 +5239,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter III."
+        },
+        {
+          "form": "Herode",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. V, sig. 227b. The passage prints \u201cHerode\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -5039,6 +5389,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        },
+        {
+          "form": "Hiram",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection VII, sig. 222b\u2013223a. The passage prints \u201cHiram\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -5534,6 +5894,31 @@
       ]
     },
     {
+      "id": "issachar",
+      "forms": [
+        {
+          "form": "Isachar",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. VI, sig. 228b. The passage prints \u201cIsachar\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "JSACHAR",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. VI, sig. 228b. The passage prints \u201cJSACHAR\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "iudas-macchabaeus",
       "forms": [
         {
@@ -5959,6 +6344,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        },
+        {
+          "form": "Iephta",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection I, sig. 224a\u2013224b. The passage prints \u201cIephta\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -6016,6 +6411,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        },
+        {
+          "form": "Ieroboam",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. VII, subsection I, sig. 230a. The passage prints \u201cIeroboam\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -6150,6 +6555,21 @@
       ]
     },
     {
+      "id": "jetur",
+      "forms": [
+        {
+          "form": "Iethur",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection V, sig. 226b. The passage prints \u201cIethur\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "job",
       "forms": [
         {
@@ -6254,6 +6674,46 @@
       ]
     },
     {
+      "id": "jonathan-maccabeus",
+      "forms": [
+        {
+          "form": "Ionathas Macchabaeus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection V, sig. 226a. The passage prints \u201cIonathas Macchabaeus\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Ionathas Machabaeus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection VII, sig. 223a. The passage prints \u201cIonathas Machabaeus\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
+      "id": "joram-king-of-israel",
+      "forms": [
+        {
+          "form": "Ioram",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. VII, subsection I, sig. 230b. The passage prints \u201cIoram\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "joseph",
       "forms": [
         {
@@ -6354,6 +6814,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        },
+        {
+          "form": "Iulius Apostata",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection III, sig. 225a. The passage prints \u201cIulius Apostata\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -6539,6 +7009,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        }
+      ]
+    },
+    {
+      "id": "juvenal",
+      "forms": [
+        {
+          "form": "Iuuenal",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection III, sig. 220a\u2013220b. The passage prints \u201cIuuenal\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -6874,6 +7359,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        }
+      ]
+    },
+    {
+      "id": "leunclavius",
+      "forms": [
+        {
+          "form": "LEONCLAVIVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection I, sig. 224a. The passage prints \u201cLEONCLAVIVS\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -7285,6 +7785,26 @@
           "source_text_id": "stepbible-tipnr",
           "scripture_ref": "Gen.41.51",
           "note": null
+        },
+        {
+          "form": "MANASSE",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. VII, sig. 229b. The passage prints \u201cMANASSE\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Manasses",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. VII, subsection I, sig. 229b. The passage prints \u201cManasses\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -7460,6 +7980,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        }
+      ]
+    },
+    {
+      "id": "melanchthon",
+      "forms": [
+        {
+          "form": "Melancthon",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. II, sig. 218a\u2013218b. The passage prints \u201cMelancthon\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -8065,6 +8600,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        },
+        {
+          "form": "NEPHTALIM",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, sig. 224a. The passage prints \u201cNEPHTALIM\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -9131,6 +9676,21 @@
       ]
     },
     {
+      "id": "peter-laicstan",
+      "forms": [
+        {
+          "form": "Laicstan",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection VIII, sig. 223a\u2013223b. The passage prints \u201cLaicstan\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "pharaoh",
       "forms": [
         {
@@ -9465,6 +10025,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        }
+      ]
+    },
+    {
+      "id": "postellus",
+      "forms": [
+        {
+          "form": "POSTELLVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection I, sig. 224a. The passage prints \u201cPOSTELLVS\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -10247,6 +10822,36 @@
       ]
     },
     {
+      "id": "saligniac",
+      "forms": [
+        {
+          "form": "Saliniac",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection IV, sig. 225a\u2013225b. The passage prints \u201cSaliniac\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
+      "id": "salmanassar",
+      "forms": [
+        {
+          "form": "Salmanasser",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection III, sig. 220b\u2013221a. The passage prints \u201cSalmanasser\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "sammugina",
       "forms": [
         {
@@ -10388,6 +10993,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter VI."
+        }
+      ]
+    },
+    {
+      "id": "sanballat",
+      "forms": [
+        {
+          "form": "Sanabula",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection III, sig. 220b. The passage prints \u201cSanabula\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -10549,6 +11169,21 @@
       ]
     },
     {
+      "id": "seba-son-of-bichri",
+      "forms": [
+        {
+          "form": "Shebah",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection VI, sig. 227a. The passage prints \u201cShebah\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "sehon",
       "forms": [
         {
@@ -10570,6 +11205,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        }
+      ]
+    },
+    {
+      "id": "seladine",
+      "forms": [
+        {
+          "form": "Saladine",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection III, sig. 221a\u2013221b. The passage prints \u201cSaladine\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -11136,6 +11786,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        }
+      ]
+    },
+    {
+      "id": "sisara",
+      "forms": [
+        {
+          "form": "Sisera",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection II, sig. 224b. The passage prints \u201cSisera\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -12008,6 +12673,46 @@
       ]
     },
     {
+      "id": "tiberius",
+      "forms": [
+        {
+          "form": "Tiberius Caesar",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection III, sig. 225a. The passage prints \u201cTiberius Caesar\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
+      "id": "tiglath-pileser-iii",
+      "forms": [
+        {
+          "form": "Teglatphalasar",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection I, sig. 224a. The passage prints \u201cTeglatphalasar\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Teglatphalassar",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection VI, sig. 227a. The passage prints \u201cTeglatphalassar\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "tiras",
       "forms": [
         {
@@ -12056,6 +12761,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        }
+      ]
+    },
+    {
+      "id": "titus-emperor",
+      "forms": [
+        {
+          "form": "Titus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection VII, sig. 223a. The passage prints \u201cTitus\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -12458,6 +13178,21 @@
       ]
     },
     {
+      "id": "virgin-mary",
+      "forms": [
+        {
+          "form": "Marie",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. V, sig. 228a. The passage prints \u201cMarie\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "viues",
       "forms": [
         {
@@ -12493,6 +13228,21 @@
       ]
     },
     {
+      "id": "volaterranus",
+      "forms": [
+        {
+          "form": "Volaterran",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection I, sig. 224a. The passage prints \u201cVolaterran\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
       "id": "vulcan",
       "forms": [
         {
@@ -12504,6 +13254,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I\u2013VIII."
+        }
+      ]
+    },
+    {
+      "id": "weissenburg",
+      "forms": [
+        {
+          "form": "Weishenburg",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection VII, sig. 222b\u2013223a. The passage prints \u201cWeishenburg\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -12544,6 +13309,26 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter III."
+        },
+        {
+          "form": "G. Tyrius",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection V, sig. 226a. The passage prints \u201cG. Tyrius\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Guil. Tyrius",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection III, sig. 220b. The passage prints \u201cGuil. Tyrius\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },
@@ -12604,6 +13389,86 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter V."
+        },
+        {
+          "form": "ZABVLON",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. V, sig. 227b. The passage prints \u201cZABVLON\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Zebulon",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. V, sig. 227b. The passage prints \u201cZebulon\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
+      "id": "zedekiah",
+      "forms": [
+        {
+          "form": "Zedekias",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection VI, sig. 226b. The passage prints \u201cZedekias\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        }
+      ]
+    },
+    {
+      "id": "zeigler",
+      "forms": [
+        {
+          "form": "Ziegler",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection VIII, sig. 223a\u2013223b. The passage prints \u201cZiegler\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Iacobus Zeigler",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. IV, subsection V, sig. 226a. The passage prints \u201cIacobus Zeigler\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Seiglerus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection II, sig. 219a\u2013219b. The passage prints \u201cSeiglerus\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Zeiglerus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, \u00a7. III, subsection IV, sig. 221b. The passage prints \u201cZeiglerus\u201d.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapter VII."
         }
       ]
     },

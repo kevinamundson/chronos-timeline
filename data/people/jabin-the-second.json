@@ -48,6 +48,17 @@
         "link": "https://texts.earlyprint.org/works/A10357.xml",
         "source_text_id": "raleigh-history-of-the-world-1617",
         "note": "Body intake. How long he says this Iabin oppressed Israel. Not a yeere of the World. year_am stays null. This does not change the sort."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "a second King Iabin, 137. yeeres after the death of this first Iabin, inuaded the Israelites",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, §. IV, subsection II, sig. 224b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. 137 yeeres from the death of the first Iabin to the second Iabin’s invasion. Not converted. Not a yeere of the World. year_am stays null. This does not change the sort. See N62."
       }
     ]
   },

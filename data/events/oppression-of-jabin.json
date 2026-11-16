@@ -92,6 +92,17 @@
       "link": "https://biblehub.com/blb/judges/4.htm#3",
       "note": null,
       "source_text_id": "kjv-gutenberg"
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "he preuailed against them, and held them in a miserable seruitude twentie yeeres",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, §. IV, subsection II, sig. 224b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. The 20 yeeres of the second Iabin’s oppression. Pass 10 stored the same 20 on jabin-the-second from Chapter VI. Not a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [],
@@ -108,7 +119,8 @@
     "jordan-sbc-2",
     "blb-biblehub",
     "ussher-annals-1658",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {
