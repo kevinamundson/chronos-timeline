@@ -53,12 +53,36 @@
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "Synchronism only. Menander names Solomon in Hiram's reign and gives Solomon no year."
       }
+    ],
+    "death": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Hiram liued 53. yeeres.",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VIII, §. II, sig. 233b–234a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. His age. The 53 agrees with Cory. Not a yeere of the World. year_am stays null. This does not change the sort."
+      }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [

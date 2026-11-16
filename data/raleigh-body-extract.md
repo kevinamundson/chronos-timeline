@@ -609,3 +609,63 @@ Chapter VII was attached by hand in `scripts/raleigh/ch7-attach.mjs`. The automa
 New records, kept apart from a record that shares the letters: `herod-antipas`, `herod-agrippa`, `agrippa-ii`, `philip-the-tetrarch`, `philip-the-apostle`, `philip-king-of-france`, `john-the-apostle`, `john-of-gischala`, `baldwin-the-second`, `benhadad`, `benadad`, `ptolemy-lathurus`, `acon-brother-of-ptolemy`, `cleopatra-daughter-of-ptolemy`, `demetrius-son-of-antiochus-the-great`, `antiochus-son-of-demetrius`, `menander-of-ephesus`, `manasse-son-in-law-of-sanballat`, `gilead-son-of-machir`, `seba-son-of-bichri`, `nicanor-lieutenant-of-demetrius`, `tyrus-wife-of-agenor`, and `zacharie-the-prophet`. Ptolomie in this chapter is the geographer, on `ptolemy`. Enoch son of Cain is on `enoch`, as in earlier passes. See N60 and N61.
 
 These were not attached. Antoninus, Apollonius, the other Demetrius and Antiochus passages, the bare Baldwine in p02052 and p02169, Nicephorus, Macrob, the bare Herodes in p02141, and Pharao. Hercules stays unlinked (N33). The nations, the land of Canaan, the cities, rivers, and mountains, and the headings were not made people.
+
+# Pass 12
+
+Range covered: Book II, Part I, Chapter VIII, sig. 231b, through Chapter IX, §. III, sig. 239b. The headings are “CHAP. VIII. Of the Kingdome of Phoenicia.” and “CHAP. IX. Of the Tribe of EPHRAIM, and of the Kings of the tenne Tribes, whose head was EPHRAIM.” One hundred two passages, p02171–p02272. Chapter X, “CHAP. X. Of the memorable places of DAN, SIMEON, IVDA, RVBEN, GAD, and the other halfe of MANASSE.”, opens after sig. 239b and was not entered. One yeere of the World is printed, 3292, for the carrying away of the ten Tribes. `year_bc_ad` stays null.
+
+## Statements written
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book II, Part I, Chapter VIII, §. II, sig. 233b–234a | Hiram liued 53. yeeres. | hiram-of-tyre, `dates.death` (`year_am` null). His age. The 53 agrees with Cory. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | raigned 7. yeeres according to Iosephus | baleazarus, `dates.reign` (`year_am` null). His 7 yeeres, after Iosephus. Raleigh prints Baleastartus. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | gouerned 9. yeeres, and liued but 20. yeeres according to Iosephus: but after 〈◊ 〉 he raigned 12. yeere, and liued 54. | abdastartus, `dates.reign` (`year_am` null). His 9 yeeres after Iosephus, and 12 after a second author whose name is illegible (〈◊ 〉). Cory gives 9 and an age of 29. See N68. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | Astartus brother to Abdastartus, recouered the Kingdome from this Vsurper, and raigned 12. yeeres. | astartus, `dates.reign` (`year_am` null). His 12 yeeres. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | Astarimus, or Atharimus, after Theophilus, a third brother followed Astartus, and ruled 9. yeeres, and liued in all 54. | aserymus, `dates.reign` (`year_am` null). His 9 yeeres and his age of 54. Raleigh prints Astarimus. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | raigned 8. Moneths; liued 50. yeeres. | pheles, `dates.reign` (`year_am` null). His 8 moneths and his age of 50. Raleigh prints Phelles. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | reuenged the death of his father, and slaughtered his Vncle Phelles: and raigned 32. yeeres | ithobalus, `dates.reign` (`year_am` null). His 32 yeeres. Raleigh makes him the Ethbaal of 1 Kings 16. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | succeeded his Father, and raigned 6. yeeres, and liued in all 45. | badezorus, `dates.reign` (`year_am` null). His 6 yeeres and his age of 45. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | Mettimus succeeded Badezor, and raigned but 9. yeeres | matgenus, `dates.reign` (`year_am` null). His 9 yeeres. Raleigh prints Mettimus. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | Pygmalion raigned after Mettimus his Father 40. yeeres, and liued 56 | phygmalion, `dates.reign` (`year_am` null). His 40 yeeres and his age of 56. Cory prints 47 yeeres. See N68. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | In the 7. yeere of whose raigne, Elisa sailed into Affrica, and built Carthago, 143. yeeres and 8. Moneths, after the Temple of Salomon: which by our accompt was 289. yeeres after Troy taken, and 143. before Rome | founding-of-carthage (`year_am` null). Carthage in the 7th yeere of Pygmalion, 143 yeeres and 8 moneths after the Temple, 289 after Troy, and 143 before Rome. Not converted. See N67. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | Eluleus succeeded Pygmalion: and raigned 36. yeeres | elulaeus, `dates.reign` (`year_am` null). His 36 yeeres. The 36 agrees with Cory. Pass 11 stored his 26 yeeres at the siege from Chapter VII. See N68. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | this Prince died, or was slaine in that long siege of Nabuchodonosor: who serrounded and attempted Tyre 13: yeeres together, ere he preuailed | ithobalus-ii, `dates.reign` (`year_am` null). The 13 yeeres of the siege in his time. Raleigh prints Ethobales. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | Baal followed Ethobales, and raigned 10. yeeres a tributarie, perchance, to Nabuchodonosor | baal-of-tyre, `dates.reign` (`year_am` null). His 10 yeeres. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | Balatorus commanded therein as a King for one yeere | balatorus, `dates.reign` (`year_am` null). His one yeere. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | Irom sent thence also, 20. yeeres. In the 17. of whose raigne Cyrus beganne to gouerne Persia. | hiram-of-tyre-ii, `dates.reign` (`year_am` null). His 20 yeeres, and Cyrus in his 17th. Raleigh prints Irom. |
+| Book II, Part I, Chapter VIII, §. II, sig. 234a | Merbalus sent from Babylon 4. yeeres | merbalus, `dates.reign` (`year_am` null). His 4 yeeres. |
+| Book II, Part I, Chapter IX, §. II, sig. 237b | for in the fifth yeere of Rehoboam, Shishak sackt the Citie of Hierusalem, and carried thence all the treasure of Dauid and Salomon | shishak-sacks-the-temple (`year_am` null). Shishak in the fifth yeere of Rehoboam. |
+| Book II, Part I, Chapter IX, §. II, sig. 238a | so Nadab liued King but two yeeres | nadab-king-of-israel, `dates.reign` (`year_am` null). His two yeeres. |
+| Book II, Part I, Chapter IX, §. II, sig. 238a | He ruled foure and twentie yeeres and died. | baasha, `dates.reign` (`year_am` null). His 24 yeeres. |
+| Book II, Part I, Chapter IX, §. II, sig. 238a | To Baasha succeeded Ela his sonne, who at a feast at his Palace of Thersa, was in his cups slaine by Zambris after he had reigned two yeeres | elah, `dates.reign` (`year_am` null). His two yeeres. The Catalogue in §. III prints 20. See N66. |
+| Book II, Part I, Chapter IX, §. II, sig. 238a | Zambris succeded Ela, and assumed the name of a King seuen dayes | zimri, `dates.reign` (`year_am` null). His seuen dayes. |
+| Book II, Part I, Chapter IX, §. II, sig. 238a | This Ambris raigned twelue yeeres, sixe in Thersa, and sixe in Samaria | omri, `dates.reign` (`year_am` null). His 12 yeeres. The Catalogue in §. III prints 11. See N66. |
+| Book II, Part I, Chapter IX, §. III, sig. 238b | auowing it to the king that he must then die, which came to passe in the second yeere of his raigne | ahaziah-king-of-israel, `dates.reign` (`year_am` null). He died in the second yeere of his raigne. The Catalogue prints 2 yeeres. |
+| Book II, Part I, Chapter IX, §. III, sig. 239a | raigned one and fortie yeeres | jeroboam-ii, `dates.reign` (`year_am` null). His 41 yeeres. |
+| Book II, Part I, Chapter IX, §. III, sig. 239a | Shallum held the kingdome but one moneth | shallum-king-of-israel, `dates.reign` (`year_am` null). His one moneth. |
+| Book II, Part I, Chapter IX, §. III, sig. 239a | gouerned six moneths | zachariah-king-of-israel, `dates.reign` (`year_am` null). His six moneths. The sentence before the length has an illegible word (〈◊ 〉). |
+| Book II, Part I, Chapter IX, §. III, sig. 239a | Menahem gouerned twentie yeeres. | menahem, `dates.reign` (`year_am` null). His 20 yeeres. The Catalogue in §. III prints 10. See N66. |
+| Book II, Part I, Chapter IX, §. III, sig. 239a | Pekah raigned twentie yeeres. | pekah, `dates.reign` (`year_am` null). His 20 yeeres. |
+| Book II, Part I, Chapter IX, §. III, sig. 239b | this transmigration, plantation, and displantation, hapned in the yeare of the world 3292. the sixth yeare of Ezekia King of 〈◊ 〉: and the ninth of Hosea the last King of Israel | fall-of-samaria (`year_am` 3292). His yeere of the World for the carrying away of the ten Tribes, the 6th yeere of Ezekia and the 9th of Hosea. |
+| Book II, Part I, Chapter IX, §. III, sig. 239b | 7. Achab, 22. Yeares. | ahab, `dates.reign` (`year_am` null). His 22 yeeres, from the Catalogue of the Kings of the ten Tribes. The narrative gives no length. |
+| Book II, Part I, Chapter IX, §. III, sig. 239b | 9. Ioram, 12. Yeares. | joram-king-of-israel, `dates.reign` (`year_am` null). His 12 yeeres, from the Catalogue. The narrative gives no length. |
+
+Every record keeps the sort it already had. `fall-of-samaria` keeps its tier 1–4 sort (722 BC). The new people stay without a sort year. No calculated sort was written.
+
+## Figures that were not entered
+
+- Chapter IX, §. III, sig. 239b: the Catalogue lengths already on A Chronological Table, Ieroboam 22, Iehu 28, Ioachaz 17, Ioas 16, Pekahia 2, and Hosea 9. The narrative gives the same figures. They were not entered again.
+- Chapter IX, §. III, sig. 239b: the Catalogue’s Ela 20, Omri 11, and Menahem 10. The narrative’s 2, 12, and 20 were stored instead. See N66.
+- Chapter VIII, §. II, sig. 234a: the eldest sonne of the Nurce held the Kingdome 12 yeeres. He has no name, so no record was made. The Iudges after Baal held Tyre “some 7. yeeres, and odde Moneths” among them. One figure for five men. See N68.
+- Chapter VIII, §. II, sig. 233a–233b: “there were consumed 130. yeeres and somewhat more betweene Xerxes and Alexander Macedon.” No event was made.
+- Chapter VIII, §. I, sig. 232b: Tyre “defended it selfe 13. yeeres against a King of Kings, Nabuchodonosor.” Pass 11 already stored the 13 on `nebuchadnezzar-ii`.
+- Counts, not years: Xerxes’s 300 Gallies; Hiram’s 120 talents and 20 townes; Ephraim’s 45000 and 32500; the 600000 of Israel; Iudas’s 3000; Ioachaz’s 50 horse, 20 chariots, and 10000 foot; Menahem’s ten thousand talents and fiftie shekels; the Moabites’ 20000 sheepe; Achab’s seuentie sonnes. See N70.
+
+## Names
+
+Chapters VIII and IX were attached by hand in `scripts/raleigh/ch8-9-attach.mjs`. The Kings of Tyre are the Cory records where one exists. A tribe is on its patriarch: `asher`, `naphtali`, `zebulun`, `issachar`, `manasseh`, `ephraim`, `judah`, `benjamin`. A printed spelling that is already the title or a stored form of another record was not added as a name form. Libya, Baal, and Abia were kept off the daughter of Epaphus, the King of Tyre, and Abijah, because elsewhere they name a country, the idol, and a river. See N65.
+
+New records kept apart from a record that shares the letters: `cyrus-son-of-agenor`, `ochus-of-phoenicia`, `theophilus-antiochenus`, `hephaestion`, `anna-sister-of-dido`, `eliphaz-the-temanite`, `eliphaz-son-of-esau`, `teman-son-of-eliphaz`, `abdias-the-prophet`, `aeneas-of-lidda`, `joseph-of-arimathea`, `ptolemy-son-in-law-of-simon`, `ahijah-father-of-baasha`, `sara-daughter-of-ephraim`, and `so-king-of-egypt`. Asa’s Benhadad is `benadad`. Achab’s Benadad and the Benhadad of Elisha’s time are `benhadad`. Benhadad the son of Azael is `ben-hadad-son-of-hazael`. See N69.
+
+These were not attached. Ioas the third sonne of Achab, Phul, the Antiochus of Seron and Lysias, Nicephorus, Pharao, the second Strato in S. Hierome’s story, Osochores, and Hercules (N33). The nations, the cities, rivers, and mountains of Phoenicia and Ephraim, and the idols Baal and Beel-zebub were not made people.

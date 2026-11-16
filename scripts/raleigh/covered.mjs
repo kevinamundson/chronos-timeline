@@ -7,11 +7,11 @@
 //
 //   node scripts/raleigh/covered.mjs
 //   node scripts/raleigh/covered.mjs --through=12
-//   node scripts/raleigh/covered.mjs --through=12 --book2=7 --write
+//   node scripts/raleigh/covered.mjs --through=12 --book2=9 --write
 //
 // --through is the last Book I, Part I chapter. It cannot be less than 8, because
 // passes 1–3 already covered Chapters I–VIII. --book2 is the last Book II, Part I
-// chapter. 0 leaves Book II out. Pass 11 stops at Chapter VII.
+// chapter. 0 leaves Book II out. Pass 12 stops at Chapter IX.
 // A passage is attached by the name as printed. Groups, places, and unnamed
 // people are not split into individuals. God, Jehovah, and the Holy Ghost are
 // not person records. Ambiguous shared names are left unattached.
@@ -20,7 +20,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { extractPassages, loadXml, normalizeWs, normalizedDocumentText } from './xml-text.mjs';
-import { CH7, CH7_NEW, CH7_EVENTS, isCh7, ch7Entries } from './ch7-attach.mjs';
+import { HAND_NEW, HAND_EVENTS, isHand, isPass12, handEntries } from './hand-attach.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..', '..');
@@ -33,8 +33,8 @@ const book2Through = book2Arg ? Number(book2Arg.slice('--book2='.length)) : 0;
 if (!Number.isInteger(throughChapter) || throughChapter < 8 || throughChapter > 12) {
   throw new Error('--through must be an integer from 8 to 12 (Book I, Part I ends at Chapter XII)');
 }
-if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 7) {
-  throw new Error('--book2 must be 0, 1, 2, 3, 4, 5, 6, or 7 (pass 11 stops at Book II, Part I, Chapter VII)');
+if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 9 || book2Through === 8) {
+  throw new Error('--book2 must be 0–7 or 9 (pass 12 stops at Book II, Part I, Chapter IX)');
 }
 const LINK = 'https://texts.earlyprint.org/works/A10357.xml';
 const SRC = 'raleigh-history-of-the-world';
@@ -1386,8 +1386,8 @@ function noteSurface(id, surface, passage) {
 
 const resolved = new Map();
 for (const passage of passages) {
-  // Book II, Part I, Chapter VII is attached by hand (ch7-attach.mjs).
-  if (isCh7(passage)) continue;
+  // Book II, Part I, Chapters VII–IX are attached by hand (hand-attach.mjs).
+  if (isHand(passage)) continue;
   const { spans, hits } = findPhrases(passage.passage);
   const words = wordHits(passage.passage, spans);
   const ids = new Set();
@@ -1638,7 +1638,7 @@ for (const [key, bucket] of buckets) {
 
 // Second pass now that new aliases exist. Rebuild account sets from scratch.
 const accounts = new Map();
-const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite', 'haran-son-of-terah', 'midian-son-of-abraham', 'oleaster', 'lybia-daughter-of-epaphus', 'sephora-midwife', 'thua', 'joseph-husband-of-mary', 'virgin-mary', 'perseus', 'andromeda', 'hanani', 'amos', 'elou', 'zibeon', 'nun-father-of-joshua', 'acusilaus', 'reusner', ...Object.keys(CH7_NEW)]);
+const SPECIAL = new Set(['abimelech-of-gerar', 'lamech-cainite', 'haran-son-of-terah', 'midian-son-of-abraham', 'oleaster', 'lybia-daughter-of-epaphus', 'sephora-midwife', 'thua', 'joseph-husband-of-mary', 'virgin-mary', 'perseus', 'andromeda', 'hanani', 'amos', 'elou', 'zibeon', 'nun-father-of-joshua', 'acusilaus', 'reusner', ...Object.keys(HAND_NEW)]);
 function addAccount(id, passage) {
   if (!id || String(id).startsWith('new:')) return;
   if (!people.has(id) && !created.some((c) => c.id === id) && !events.has(id) && !SPECIAL.has(id)) return;
@@ -1650,15 +1650,30 @@ function addAccount(id, passage) {
 const passageIndex = new Map(passages.map((p) => [p.id, p]));
 const passageById0 = (id) => passageIndex.get(id);
 const ch7Allowed = new Set();
+// A surface already held by another record (title or stored form) is not added
+// as a spelling in Chapters VIII–IX, so a shared name does not unlink that record.
+const surfaceOwners = new Map();
+for (const p of nameDoc.people) for (const f of p.forms || []) {
+  const k = f.form.toLowerCase();
+  if (!surfaceOwners.has(k)) surfaceOwners.set(k, new Set());
+  surfaceOwners.get(k).add(p.id);
+}
+for (const [pid, doc] of people) {
+  const k = String(doc.title || '').toLowerCase();
+  if (!k) continue;
+  if (!surfaceOwners.has(k)) surfaceOwners.set(k, new Set());
+  surfaceOwners.get(k).add(pid);
+}
+const sharedSurface = (id, surface) => [...(surfaceOwners.get(surface.toLowerCase()) || [])].some((o) => o !== id);
 for (const passage of passages) {
-  if (isCh7(passage)) {
-    for (const entry of ch7Entries(passage.id)) {
-      if (!people.has(entry.id) && !events.has(entry.id) && !CH7_NEW[entry.id]) throw new Error(`ch7: unknown id ${entry.id} in ${passage.id}`);
-      if (entry.surface && !passage.passage.includes(entry.surface)) throw new Error(`ch7: ${passage.id} does not print “${entry.surface}”`);
-      if (events.has(entry.id) && !CH7_EVENTS.has(entry.id)) throw new Error(`ch7: event ${entry.id} not listed`);
+  if (isHand(passage)) {
+    for (const entry of handEntries(passage.id)) {
+      if (!people.has(entry.id) && !events.has(entry.id) && !HAND_NEW[entry.id]) throw new Error(`hand: unknown id ${entry.id} in ${passage.id}`);
+      if (entry.surface && !passage.passage.includes(entry.surface)) throw new Error(`hand: ${passage.id} does not print “${entry.surface}”`);
+      if (events.has(entry.id) && !HAND_EVENTS.has(entry.id)) throw new Error(`hand: event ${entry.id} not listed`);
       addAccount(entry.id, passage);
       ch7Allowed.add(`${entry.id}|${passage.id}`);
-      if (entry.surface) noteSurface(entry.id, entry.surface, passage);
+      if (entry.surface && !(isPass12(passage) && sharedSurface(entry.id, entry.surface))) noteSurface(entry.id, entry.surface, passage);
     }
     continue;
   }
@@ -1985,12 +2000,12 @@ for (const event of events.values()) {
   }
 }
 
-// Book II, Part I, Chapter VII: keep only the hand attachments. A broad
+// Book II, Part I, Chapters VII–IX: keep only the hand attachments. A broad
 // event pattern from an earlier chapter does not reach this chapter.
 for (const [id, list] of accounts) {
   const kept = list.filter((pid) => {
     const p = passageById0(pid);
-    return !p || !isCh7(p) || ch7Allowed.has(`${id}|${pid}`);
+    return !p || !isHand(p) || ch7Allowed.has(`${id}|${pid}`);
   });
   accounts.set(id, kept);
 }
@@ -2090,7 +2105,7 @@ ensureSpecial('jabin-the-second', 'Iabin the second');
 ensureSpecial('dathan-ancestor-of-jethro', 'Dathan');
 ensureSpecial('sichem-son-of-hamor', 'Sichem');
 ensureSpecial('deucalion-son-of-minos', 'Deucalion');
-for (const [id, [title]] of Object.entries(CH7_NEW)) {
+for (const [id, [title]] of Object.entries(HAND_NEW)) {
   ensureSpecial(id, title);
   const bucket = createdKept.find((b) => b.id === id);
   if (bucket && surfacesOn.get(id)) bucket.surfaces = new Map(surfacesOn.get(id));
@@ -2216,7 +2231,7 @@ function personDoc(bucket) {
   if (id === 'deucalion-son-of-minos') description = `${OURS} The later Deucalion, son of Minos, whom Homer puts in Ulysses’s mouth. Kept apart from Deucalion son of Prometheus. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'nun-father-of-joshua') description = `${OURS} Nun, the father of Iosua. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   if (id === 'horam-of-gezer') description = `${OURS} Horam, king of Gezar, who came to the relief of Lachis and perished. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
-  if (CH7_NEW[id]) description = `${OURS} ${CH7_NEW[id][1]} No yeere of the World was taken for ${CH7_NEW[id][2]}. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
+  if (HAND_NEW[id]) description = `${OURS} ${HAND_NEW[id][1]} No yeere of the World was taken for ${HAND_NEW[id][2]}. Display only. No tier 1–4 chronology dates this person, so there is no sort year.`;
   const doc = {
     $schema: '../../schema/person.schema.json',
     id,
@@ -2250,7 +2265,9 @@ function formsFor(id, title) {
   const person = nameDoc.people.find((p) => p.id === id);
   const stored = new Set((person?.forms || []).map((f) => f.form.toLowerCase()));
   stored.add((title || '').toLowerCase());
-  const newNote = book2Through === 7
+  const newNote = book2Through === 9
+    ? 'Spelling only. Read in Book II, Part I, Chapters VIII–IX.'
+    : book2Through === 7
     ? 'Spelling only. Read in Book II, Part I, Chapter VII.'
     : book2Through === 6
     ? 'Spelling only. Read in Book II, Part I, Chapter VI.'
@@ -2274,7 +2291,9 @@ function formsFor(id, title) {
     const holder = held.find((p) => p && p.passage.includes(form));
     if (!holder) continue;
     // Earlier passes stored the spellings they read. Add a form only from this pass.
-    const inPass = book2Through === 7
+    const inPass = book2Through === 9
+      ? holder.kind === 'body' && holder.book === '2' && (holder.chapter === '8' || holder.chapter === '9')
+      : book2Through === 7
       ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '7'
       : book2Through === 6
       ? holder.kind === 'body' && holder.book === '2' && holder.chapter === '6'
@@ -2291,7 +2310,7 @@ function formsFor(id, title) {
         : holder.kind === 'body' && holder.book === '1' && Number(holder.chapter) >= 9;
     if (!inPass) continue;
     // Chapter phrases include clauses. A spelling is a name, not a sentence.
-    if ((book2Through === 5 || book2Through === 6 || book2Through === 7) && (!/^[A-Z]/.test(form) || form.split(/\s+/).length > 4 || form.includes(',') || / or /i.test(form) || /^(regiments|halfe tribe|sonne|concerning) /i.test(form))) continue;
+    if ((book2Through === 5 || book2Through === 6 || book2Through === 7 || book2Through === 9) && (!/^[A-Z]/.test(form) || form.split(/\s+/).length > 4 || form.includes(',') || / or /i.test(form) || /^(regiments|halfe tribe|sonne|concerning) /i.test(form))) continue;
     stored.add(form.toLowerCase());
     out.push({ form, citation: `${cite(holder)}. The passage prints “${form}”.`, note: newNote });
   }

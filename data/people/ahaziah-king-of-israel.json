@@ -35,13 +35,25 @@
         "cfah_basis": "paper_text",
         "cfah_preprint": true,
         "cfah_key": "cfah:osf:osf-16-t2-qatna:akizzi-ahaziah:ahaziah-king-of-israel:reign"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "auowing it to the king that he must then die, which came to passe in the second yeere of his raigne",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter IX, §. III, sig. 238b",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. He died in the second yeere of his raigne. The Catalogue prints 2 yeeres. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cfah-16-osf"
+    "cfah-16-osf",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [
     "ahab"

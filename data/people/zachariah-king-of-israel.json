@@ -41,6 +41,17 @@
         "link": "https://floydnolenjonesministries.com/wp-content/uploads/2026/07/floydnolenjonesministries_com_files_131144963.pdf",
         "source_text_id": "jones-chronology-ot-2026",
         "note": "Jones prints “Zachariah rules Israel or Interregnum”. Appendix F prints no end year, so no span is stored."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "gouerned six moneths",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter IX, §. III, sig. 239a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. His six moneths. The sentence before the length has an illegible word (〈◊ 〉). Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },
@@ -50,7 +61,8 @@
   ],
   "sources": [
     "blb-biblehub",
-    "jones-chronology-ot-2026"
+    "jones-chronology-ot-2026",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [
     "jeroboam-ii"

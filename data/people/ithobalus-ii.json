@@ -40,13 +40,25 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n76/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "In the reign of Ithobalus [or, Ethbaal]. The edition prints \"beseiged\". A footnote says Menander does not say the city was taken. No reign length is given for this Ithobalus."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "this Prince died, or was slaine in that long siege of Nabuchodonosor: who serrounded and attempted Tyre 13: yeeres together, ere he preuailed",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VIII, §. II, sig. 234a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The 13 yeeres of the siege in his time. Raleigh prints Ethobales. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [

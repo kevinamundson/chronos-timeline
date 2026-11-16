@@ -126,6 +126,17 @@
       "link": "https://heritagepresbyterianchurch.com/product/a-christian-survey-of-world-history-from-creation-to-the-reformation/",
       "source_text_id": "morecraft-christian-survey",
       "note": "From the book's \"Ancient Empires\" pages (credited in an image to Daily Bible Study, keyway.ca). Reign of Shalmaneser V, who besieged Samaria."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "this transmigration, plantation, and displantation, hapned in the yeare of the world 3292. the sixth yeare of Ezekia King of 〈◊ 〉: and the ninth of Hosea the last King of Israel",
+      "year_am": 3292,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter IX, §. III, sig. 239b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. His yeere of the World for the carrying away of the ten Tribes, the 6th yeere of Ezekia and the 9th of Hosea. year_bc_ad stays null. This does not change the sort, which is set by a tier 1–4 date."
     }
   ],
   "people": [
@@ -143,7 +154,8 @@
     "cfah-1",
     "cfah-14-osf",
     "jones-chronology-ot-2026",
-    "griffith-beckman-reply-2"
+    "griffith-beckman-reply-2",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [
