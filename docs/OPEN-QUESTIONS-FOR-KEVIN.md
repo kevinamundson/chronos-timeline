@@ -1909,6 +1909,79 @@ Pass 12 read Book II, Part I, Chapters VIII and IX, and stopped at the end of Ch
   2. Name an existing event that should receive one of them.
 - **Recommendation:** option 1.
 
+Pass 13 read Book II, Part I, Chapter X, and stopped at the end of that chapter. The quotes are in `data/raleigh-body-extract.md`. N1 through N70 stay open.
+
+### N71. Chapter X was attached by hand, and the tribes go to the patriarchs
+
+- **Why it matters:** Chapter X describes the memorable places of Dan, Simeon, Iuda, Ruben, Gad, and the other halfe of Manasse. It prints most cities, rivers, and mountains in capitals. The automatic linker would have made people of places and headings. So `scripts/raleigh/ch10-attach.mjs` names each person or event on each passage by hand. Names not in that table are not attached. A passage that names a tribe is on the patriarch: `dan`, `simeon`, `judah`, `reuben`, `gad`, `manasseh`, and where the borders are named, `ephraim`, `benjamin`, `naphtali`, `issachar`, `asher`. The cities, rivers, and mountains were not made people. A spelling that is already the title or a stored form of another record is not added as a name form.
+- **Options:**
+  1. Leave the tribes on the patriarchs, as now.
+  2. Make a separate record for each tribe, and move the land passages there.
+- **Recommendation:** option 1. It matches N59 and N65.
+
+### N72. Men who share a name in this chapter
+
+- **Why it matters:** Each was kept apart only where the passage says which man it means.
+  - **Philip:** Philip the Apostle baptized the Eunuch (`philip-the-apostle`). Philip the brother of Herod Antipas, Tetrarch of Ituraea and Trachonitis, is `philip-the-tetrarch`. Philip the Father of Alexander the Great is `philip-ii-of-macedon`.
+  - **Herod:** the wicked Herod who sought the children, who restored Anthedon, who built Herodium and Massada, and Herod surnamed Ascalonita, is `herod-the-great`. Herod Antipas, who built Iulias in Peraea, is `herod-antipas`.
+  - **Agrippa:** the fauourite of Augustus, after whom Anthedon was called Agrippias, is `agrippa-of-augustus`. He is not Herod Agrippa, and not Agrippa the younger.
+  - **Antiochus:** the learned man of Ascalon is `antiochus-of-ascalon`. The great Antiochus whom Philopater ouerthrew at Raphia is `antiochus-the-great`. Antiochus Eupator, who forst Bethsur, is `antiochus-eupator`.
+  - **Apollonius:** the lieutenant beaten by Iudas and Ionathas is `apollonius-syrian`. He is not the Apollonius of the liues of the Fathers.
+  - **Vrias:** Vrias whom Ioachim slaughtered, as in Ieremie, is `urias-the-prophet`. Vrias shot at Rabba by Dauid’s order is `urias-the-hittite`.
+  - **Hus:** Hus the sonne of Aram stays on `uz`. Hus the sonne of Nachor, whom Raleigh prefers, is `hus-son-of-nachor`. Nachor Abrahams brother is `nachor-brother-of-abraham`, kept apart from Nahor son of Serug.
+  - **Talmai / Tholmay:** Talmai son of Anak is `talmai-son-of-anak`. Tholmay King of Gessur is `tholmay-king-of-gessur`.
+  - **Ioash:** Ioash of the issue of Iuda in Moab is `ioash-in-moab`. He is not Ioas king of Israel, and not Joash of Judah.
+  - **Ismael:** Ismael who slew Gedaliah is `ismael-who-slew-gedaliah`. He is not Ismael the sonne of Abraham.
+  - **Baldwine:** Baldwine King of Damascus, who rebuilt Gerassa in 1120, is `baldwin-king-of-damascus`. Baldwine de Burgo King of Hierusalem is `baldwin-the-second`.
+  - **Ammon:** Ammon whom Absalom slew is `amnon`. The nation of Ammon was not made a person.
+  - **Constantine:** Constantine the Great stays on `constantine-the-great`. Constantine the yonger is `constantine-the-younger`. Constance his son, after whom Maioma was called, is `constance-son-of-constantine`.
+  - **Iudas:** Iudas Macchabaeus stays on `iudas-macchabaeus`. Iudas the Traitor is `judas-iscariot`.
+  - **Zacharias:** Zacharias the sonne of Barachias, or lehoida, is `zacharias-son-of-jehoiada`. The prophet Zacharie stays on `zacharie-the-prophet`.
+  - **Anthonie:** Anthonie, husband of Cleopatra Queene of Aegypt, is `anthonie`. He is not the Antonius who names Thanis.
+  - **L. Annius:** Lieutenant to Vespasian is `l-annius`. He is not Annius of the earlier books.
+  - **Eliphaz:** Eliphaz the Themanite stays on `eliphaz-the-temanite`. Eliphaz the sonne of Esau stays on `eliphaz-son-of-esau`.
+- **Options:**
+  1. Leave these as they are.
+  2. Name a passage that should move to another record, or two records that should merge.
+- **Recommendation:** option 1. A silent merge would attach a different man.
+
+### N73. Names that were not attached in this chapter
+
+- **Why it matters:** Hercules stays unlinked (N33). Demetrius, named only as the master of Bacchides and Alcimus, was not attached (N61). The gap “〈◊ 〉 the fourth King of Hierusalem” (p02279) was not guessed. The gap “Abraham and 〈◊ 〉” at Beersheba (p02307) was not filled with Abimelech. “Aram died” at Hor (p02397) is printed Aram for Aaron’s death; it was not folded onto `aaron` or `aram`. Bede is not printed in the Oswald sentence. The Kenites as a group, the Anakims as a group except where Anak, Arbah, Achiman, Sheshai, and Talmai are named, the unnamed King of Moab who received Dauid, and the unnamed King of Moab in Hieremie’s time, were not made people.
+- **Options:**
+  1. Leave these unattached, as now.
+  2. Name the man for a passage, and it will be attached.
+- **Recommendation:** option 1, unless you know the man. Option 2 if you have a copy that fills a gap.
+
+### N74. Hebron seuen yeeres before Tanis, and Iephtah’s three hundred
+
+- **Why it matters:** Hebron was “built seuen yeeres before Tsoan or Tanis in Aegypt”. There is no event for the building of Hebron, so the 7 was not stored. Iephtah’s “three hundred yeeres time to recouer them” is the Judges 11 figure already discussed in the contents and in earlier notes. It was not stored again. The 450 yeeres since the Zamzummims were expelled, the Ammonites’ two yeeres of tribute, and the fortie yeeres in the Wildernesse (already on the table) were not entered.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them.
+- **Recommendation:** option 1.
+
+### N75. Cleopatra Queene of Aegypt, and Iohn the sonne of Simon
+
+- **Why it matters:** Cleopatra Queene of Aegypt, who sent for the balsam trees, is on the existing `cleopatra` (Cleopatra VII). She is kept apart from `cleopatra-daughter-of-ptolemy`. Iohn, Simon Maccabeus his Sonne and Successour at Gaza, is on `hircanus-the-high-priest`, the Hircanus whose sonnes beat Samaria.
+- **Options:**
+  1. Leave these attachments, as now.
+  2. Name a different record for either.
+- **Recommendation:** option 1.
+
+### N76. Figures in this chapter that have no event
+
+- **Why it matters:** A new event cannot take a sort year from Raleigh. These figures were not entered.
+  - Years after Christ: 1250 (Lodouick at Ioppe), 1301 (the earthquake at Emaus), and 1120 (Baldwine at Gerassa). They are not yeeres of the World.
+  - The male-children of two yeeres old and vnder, slain by Herod.
+  - The Macchabee pillars that remained many hundreds of yeeres.
+  - Tribal musters: Dan 62700 and 66400, Simeon 59300 and 22200, Iuda 74600 and 76500, Dauid’s 500000 in Iuda, Reuben 46000 and 43700, Gad 45550 and 45000.
+  - Zara’s Million of fighting men; Iudas’s ten thousand Dragmas; Adoni-bezec’s 70 kings; Herod’s 200 marble steps, 27 towers, and furniture for 100000 men; Og’s bed of nine cubites by foure; the Ammonite crowne of 60 pound; Mesha’s 100000 Lambes and 200000 Rammes; Ehud’s 10000 of Moab; Amasias’s 10000 of the Arabians; Vespasian’s 1000 at Gerassa, and 5000 plus 4000 at Gamala; the 2000 swine; Iair’s threescore walled cities; Iulias’s fourteene Villages; the Dead Sea lengths in furlongs and miles; Christ filling 5000 with fiue loaues.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them. Or say how you want medieval years after Christ handled.
+- **Recommendation:** option 1 for the counts. Option 2 is for you to decide for the years after Christ.
+
 ## O. Dynasty of Slaves (BLK SHP Scott, 2026)
 
 Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record of Israel in Egypt* (BLK SHP Publishing, 2026; Kindle Direct Publishing). eBook ISBN 979-8-9960110-3-2; softcover 979-8-9960110-0-1; hardcover 979-8-9960110-2-5; audiobook 979-8-9960110-1-8. © the author, all rights reserved. The dated statements are in `data/dynasty-of-slaves-dates-extract.md`. The chronology `dynasty-of-slaves` is display only. It does not set a sort year. Citations are chapter and section. The edition has no printed page numbers.

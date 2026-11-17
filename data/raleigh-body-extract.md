@@ -669,3 +669,35 @@ Chapters VIII and IX were attached by hand in `scripts/raleigh/ch8-9-attach.mjs`
 New records kept apart from a record that shares the letters: `cyrus-son-of-agenor`, `ochus-of-phoenicia`, `theophilus-antiochenus`, `hephaestion`, `anna-sister-of-dido`, `eliphaz-the-temanite`, `eliphaz-son-of-esau`, `teman-son-of-eliphaz`, `abdias-the-prophet`, `aeneas-of-lidda`, `joseph-of-arimathea`, `ptolemy-son-in-law-of-simon`, `ahijah-father-of-baasha`, `sara-daughter-of-ephraim`, and `so-king-of-egypt`. Asa’s Benhadad is `benadad`. Achab’s Benadad and the Benhadad of Elisha’s time are `benhadad`. Benhadad the son of Azael is `ben-hadad-son-of-hazael`. See N69.
 
 These were not attached. Ioas the third sonne of Achab, Phul, the Antiochus of Seron and Lysias, Nicephorus, Pharao, the second Strato in S. Hierome’s story, Osochores, and Hercules (N33). The nations, the cities, rivers, and mountains of Phoenicia and Ephraim, and the idols Baal and Beel-zebub were not made people.
+
+# Pass 13
+
+Range covered: Book II, Part I, Chapter X, sig. 240a, through §. VII, sig. 252a. The heading is “CHAP. X. Of the memorable places of DAN, SIMEON, IVDA, RVBEN, GAD, and the other halfe of MANASSE.” One hundred thirty passages, p02273–p02402. Chapter XI, “CHAP. XI. The Historie of the Syrians the chiefe borderers of the Jsraelites that dwelt on the East of Jordan.”, opens after sig. 252a and was not entered. No yeere of the World is printed. `year_bc_ad` stays null.
+
+## Statements written
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book II, Part I, Chapter X, §. I, sig. 240b–241a | the Arke of God remained twentie yeeres in the house of Aminadab | ark-at-kiriath-jearim (`year_am` null). The Ark’s 20 yeeres at Cariathiarim. |
+| Book II, Part I, Chapter X, §. IV, subsection V, sig. 246b–247a | mastered Israel and commanded them eighteene yeeres | eglon, `dates.reign`, and oppression-of-eglon (`year_am` null). Eglon’s 18 yeeres over Israel. |
+
+Every record keeps the sort it already had. The new people stay without a sort year. No calculated sort was written.
+
+## Figures that were not entered
+
+- Chapter X, §. III, sig. 243a: Hebron “built seuen yeeres before Tsoan or Tanis in Aegypt.” No event for the building of Hebron. See N74.
+- Chapter X, §. IV, subsection I, sig. 244b: Iephtah’s “three hundred yeeres time to recouer them.” The Judges 11 figure. See N74.
+- Chapter X, §. V, sig. 248b–249a: “450. yeeres since that these Zamzummims or Raphaims were expelled.”
+- Chapter X, §. V, sig. 248a: “fortie yeeres in the Wildernesse.” Already on the chronological table.
+- Chapter X, §. VI, sig. 249b: the Ammonites “continued two yeeres” the tribute of a hundreth talents and ten thousand measures.
+- Chapter X, §. IV, subsection V, sig. 247a: “fourteene Kings of 〈◊ 〉 comming betweene, who wasted three hundred and odde yeeres.”
+- Years after Christ: 1250 (p02276, sig. 240a); 1301 (p02320, sig. 243a); 1120 (p02391, sig. 250b). They are not yeeres of the World. See N76.
+- Counts of men, talents, cubites, miles, furlongs, swine, cities, and children. See N76.
+
+## Names
+
+Chapter X was attached by hand in `scripts/raleigh/ch10-attach.mjs`. A tribe is on its patriarch: `dan`, `simeon`, `judah`, `reuben`, `gad`, `manasseh`. A printed spelling that is already the title or a stored form of another record was not added as a name form. See N71.
+
+New records kept apart from a record that shares the letters: `agrippa-of-augustus`, `antiochus-of-ascalon`, `antiochus-eupator`, `apollonius-syrian`, `urias-the-prophet`, `urias-the-hittite`, `hus-son-of-nachor`, `nachor-brother-of-abraham`, `talmai-son-of-anak`, `tholmay-king-of-gessur`, `ioash-in-moab`, `ismael-who-slew-gedaliah`, `baldwin-king-of-damascus`, `amnon`, `constantine-the-younger`, `constance-son-of-constantine`, `judas-iscariot`, `zacharias-son-of-jehoiada`, `anthonie`, `l-annius`, and `eglon`. Cleopatra Queene of Aegypt is on `cleopatra`. Iohn, Simon’s son, is on `hircanus-the-high-priest`. See N72 and N75.
+
+These were not attached. Hercules (N33), Demetrius (N61), the fourth King of Hierusalem in p02279, the gap at Beersheba in p02307, the printed Aram at Hor in p02397, Bede, the Kenites as a group, and the unnamed Kings of Moab. The nations, the cities, rivers, and mountains, and the headings, were not made people. See N73.

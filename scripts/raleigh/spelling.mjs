@@ -633,12 +633,14 @@ const ETH_KEEP = new Set([
   'dumeth', 'alsovseth',
   'aroseth', 'astoreth', 'cateth', 'cinnereth', 'genezareth', 'gennezareth', 'handreth', 'nepheth', 'remeth',
   'kirharaseth',
+  'hareseth', 'ishboseth', 'mageth',
 ]);
 
 // A printed -eth word whose modern verb is not the stem plus -s.
 const ETH_EXPLICIT = {
   streightneth: 'straitens',
   stileth: 'styles',
+  indureth: 'endures',
   approcheth: 'approaches',
   endeuoureth: 'endeavours',
   endevoureth: 'endeavours',
@@ -668,6 +670,7 @@ const ETH_EXPLICIT_REASON = {
   inforceth: 'verb enforce → enforces',
   streightneth: 'verb straiten → straitens (Iordan streightneth it selfe againe into a Riuer)',
   stileth: 'verb style → styles (he stileth men of contrary opinion, impios politicos)',
+  indureth: 'verb endure → endures (nor indureth fish to liue in it)',
 };
 
 // Kept, and listed as unsure. The letters do not identify one modern verb.
@@ -712,6 +715,9 @@ const ETH_REASON = {
   nepheth: 'kept: place Nepheth-Dor; the hyphen makes the token Nepheth',
   remeth: 'kept: city Remeth, otherwise Ramoth',
   kirharaseth: 'kept: city Kirharaseth of Moab, not a verb',
+  hareseth: 'kept: city Kir-hareseth; the hyphen makes the token hareseth',
+  ishboseth: 'kept: name Ishbosheth, printed Ishboseth',
+  mageth: 'kept: place Mageth in Gad, not a verb',
 };
 
 // Both the stem and the stem plus e are dictionary words. These stems are the verb.
