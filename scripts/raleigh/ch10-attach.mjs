@@ -103,7 +103,7 @@ export const CH10 = {
   p02359: ['jokim=Iokim', 'ioash-in-moab=Ioash', 'sareph=Sareph', 'judah=Iuda'],
   p02360: ['eglon=Eglon', 'amalek=Amalec', 'ehud=Ehud', 'david=Dauid', 'saul=Saul', 'oppression-of-eglon'],
   p02361: ['david=Dauid', 'david=DAVID'],
-  p02362: ['david=Dauids', 'mesha=Mesha', 'judah=Iuda', 'ahab=Ahab', 'jehoshaphat=Ichoshaphat', 'jeremiah=Hieremie', 'zedekiah=Zedekias'],
+  p02362: ['david=Dauids', 'mesha-king-of-moab=Mesha', 'judah=Iuda', 'ahab=Ahab', 'jehoshaphat=Ichoshaphat', 'jeremiah=Hieremie', 'zedekiah=Zedekias'],
   // §. V. Gad
   p02363: ['gad=Gadites'],
   p02364: ['reuben=Reuben', 'gad=Gad', 'jacob=Iacob', 'zilpah=Zelpha', 'lea=Lea', 'manasseh=Manasse'],
@@ -193,7 +193,7 @@ export const CH10_NEW = {
   michal: ['Michol', 'Michol, Daughter of Saul, giuen to Phalti from Dauid.', 'her'],
   'apollonius-syrian': ['Apollonius', 'Apollonius, beaten by Iudas Macchabaeus and ouerthrown by Ionathas. He is not the Apollonius of the liues of the Fathers.', 'him'],
   eglon: ['Eglon', 'Eglon King of Moab, who commanded Israel eighteene yeeres, and whom Ehud slew.', 'him'],
-  mesha: ['Mesha', 'Mesha, King of the Moabites after Dauids time, who paied tribute to Ahab.', 'him'],
+  'mesha-king-of-moab': ['Mesha', 'Mesha, King of the Moabites after Dauids time, who paied tribute to Ahab. The location mesha is the boundary of Joktan’s sons, and it was not attached.', 'him'],
   jokim: ['Iokim', 'Iokim, of the issue of Iuda, who sometime had the Dominion in Moab.', 'him'],
   'ioash-in-moab': ['Ioash', 'Ioash, of the issue of Iuda, named with Iokim and Sareph in Moab. He is not Ioas king of Israel, and not Joash of Judah.', 'him'],
   sareph: ['Sareph', 'Sareph, of the issue of Iuda, named with Iokim and Ioash in Moab.', 'him'],

@@ -1,10 +1,10 @@
 {
   "$schema": "../../schema/person.schema.json",
-  "id": "mesha",
+  "id": "mesha-king-of-moab",
   "type": "person",
   "title": "Mesha",
   "summary": "Raleigh names Mesha in the History of the World (1617).",
-  "description": "Named in Raleigh's History of the World (1617). Mesha, King of the Moabites after Dauids time, who paied tribute to Ahab. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "description": "Named in Raleigh's History of the World (1617). Mesha, King of the Moabites after Dauids time, who paied tribute to Ahab. The location mesha is the boundary of Joktan’s sons, and it was not attached. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
   "sorting_year": null,
   "sorting_basis": {
     "tier": "none",

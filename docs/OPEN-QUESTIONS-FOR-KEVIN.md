@@ -1940,6 +1940,7 @@ Pass 13 read Book II, Part I, Chapter X, and stopped at the end of that chapter.
   - **Anthonie:** Anthonie, husband of Cleopatra Queene of Aegypt, is `anthonie`. He is not the Antonius who names Thanis.
   - **L. Annius:** Lieutenant to Vespasian is `l-annius`. He is not Annius of the earlier books.
   - **Eliphaz:** Eliphaz the Themanite stays on `eliphaz-the-temanite`. Eliphaz the sonne of Esau stays on `eliphaz-son-of-esau`.
+  - **Mesha:** Mesha King of Moab is `mesha-king-of-moab`. The location `mesha` (the boundary of Joktan’s sons) was left alone.
 - **Options:**
   1. Leave these as they are.
   2. Name a passage that should move to another record, or two records that should merge.
