@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "draco-the-lawgiver",
+  "type": "person",
+  "title": "Draco the Lawgiuer",
+  "summary": "Raleigh names Draco the Lawgiuer in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Draco the Lawgiuer of Athens, who was said to haue written his Lawes with bloud, after which power was giuen to Solon. He is not Draco of Thebes. The one-word title would fold onto draco-of-thebes, so the title is three words. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book II, Part I, Chapter XXVIII, §. V, sig. 377a"
+    }
+  ]
+}

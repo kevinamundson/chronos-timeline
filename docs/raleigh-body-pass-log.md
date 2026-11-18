@@ -448,6 +448,33 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 989 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13, 114 in pass 14, 94 in pass 15, 136 in pass 16)
 - Accounts: 3,092 passages on 1,808 records
 
+## Pass 18
+
+Book II, Part I, Chapter XXIV, sig. 345b, through Chapter XXVIII, §. VI, sig. 380b. The headings are “CHAP. XXIIII. Of the Antiquities of 〈◊ 〉, and 〈◊ 〉 of Rome in the time of AHAS.” (both gaps stay empty), “CHAP. XXV. Of EZEKIA, and his Contemporaries.”, “CHAP. XXVI. Of the Kings that raigned in Aegypt, betweene the deliuerance of ISRAEL from thence, and the raigne of EZEKIA in Juda.”, “CHAP. XXVII. Of MANASSE and his Contemporaries.”, and “CHAP. XXVIII. Of the times from the death of MANASSES to the destruction of Jerusalem.” Two hundred sixty-six passages, p03093–p03358: 35 in Chapter XXIV, 38 in Chapter XXV, 56 in Chapter XXVI, 57 in Chapter XXVII, and 80 in Chapter XXVIII. Chapter XXVII ends at 186, under the floor, and XXVIII is one chapter, so the pass stops at the end of the book. The next words are “Finis Libri secundi.” Book III was not entered. The same rules as passes 3–16. `year_bc_ad` stays null. No yeere of the World is printed, so no `year_am` was stored. Reign lengths and other men’s reckonings were not stored. No calculated sort was written.
+
+As in Chapters VII–XXIII, the people and events on each passage are named by hand, in `scripts/raleigh/ch24-28-attach.mjs`. `scripts/raleigh/hand-attach.mjs` joins it with the earlier tables. A spelling that is already the title or a stored form of another record is not added as a name form. `Ananias` is on both the companion of Daniel and the false Prophet, because the passages name two men. 239 of the 266 passages carry at least one link. The twenty-seven without one are p03094, p03100, p03101, p03118, p03120, p03185, p03188, p03201, p03229, p03234, p03254, p03255, p03265, p03269, p03298, p03310, p03311, p03313, p03315, p03318, p03320, p03321, p03325, p03330, p03333, p03334, and p03347. See N94.
+
+### Counts
+
+- Dated statements written: 0
+- People created: 168, all first named in Book II, Part I, Chapters XXIV–XXVIII, all display-only (53, 33, 24, 35, and 23)
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. Events received accounts from these chapters. No existing person file was replaced.
+- Name forms added: 147 (45, 33, 30, 19, and 20). No existing form was rewritten. A surface already held by another record was not stored. `Ananias` is on both new records. The name-link review leaves that token unmatched.
+- Accounts: 3,358 passages, on 2,009 records. The first 3,092 passages are unchanged, and no earlier link was dropped.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. The CFAH import and the standby compute were run after the accounts were written. No other importer was re-run. The new people are display-only, and none of them has a standby placement. The open questions for these chapters are N94–N97.
+
+### Cumulative
+
+- Dated statements written: 167 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6, 21 in pass 7, 9 in pass 8, 7 in pass 9, 15 in pass 10, 8 in pass 11, 32 in pass 12, 2 in pass 13, 3 in pass 14, 1 in pass 15, 0 in pass 16, 0 in pass 18)
+- People created: 1,538
+- Places created: 0
+- Events created: 0
+- Name forms added: 1,136 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13, 114 in pass 14, 94 in pass 15, 136 in pass 16, 147 in pass 18)
+- Accounts: 3,358 passages on 2,009 records
+
 ## RESUME POINT
 
-Book II, Part I, Chapter XXIV. The heading is “CHAP. XXIIII. Of the Antiquities of 〈◊ 〉, and 〈◊ 〉 of Rome in the time of AHAS.” Both gaps stay empty. Pass 16 stopped at the end of Chapter XXIII. The last stored passage is p03092, Book II, Part I, Chapter XXIII, §. VII, sig. 345a. Do not start again inside Chapter XXIII. Chapter XXIV needs `BOOK2_THROUGH` raised past 23 in `scripts/raleigh/xml-text.mjs` and `--book2` in `scripts/raleigh/covered.mjs`, and a new hand table, because the chapter names many people who share letters with records already stored.
+Book III, Part I, Chapter I. The heading is “CHAP. I. Of the time passing betweene the destruction of 〈◊ 〉, and the fall of the Assyrian Empire.” The gap stays empty. Pass 18 stopped at the end of Book II. The last stored passage is p03358, Book II, Part I, Chapter XXVIII, §. VI, sig. 380b. The words after that passage are “Finis Libri secundi.” Do not start again inside Book II. Book III is not in the extractor. The next pass has to extend `scripts/raleigh/xml-text.mjs` and `scripts/raleigh/covered.mjs` past Book II, Part I, and add a new hand table. The chapter names many people who share letters with records already stored.

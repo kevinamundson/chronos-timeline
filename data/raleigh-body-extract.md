@@ -789,3 +789,25 @@ Every record keeps the sort it already had. The new people stay without a sort y
 Chapters XVIII–XXIII were attached by hand in `scripts/raleigh/ch18-23-attach.mjs`. A tribe is on its patriarch. A printed spelling that is already the title or a stored form of another record was not added as a name form. 320 of the 335 passages carry at least one link. The fifteen without one are p02782, p02833, p02878, p02891, p02897, p02911, p02918, p02925, p02927, p02931, p02951, p02959, p02990, p03053, and p03071. See N89–N93.
 
 Existing events received an account where the passage is about that event: `founding-of-solomons-temple`, `reign-of-solomon`, `temple-dedication`, `usurpation-of-adonijah`, `rebellion-of-absalom`, `division-of-the-kingdom`, `shishak-sacks-the-temple`, `david-and-bathsheba`, `asas-feet-diseased`, `tibni-dies-omri-sole-king`, `elijahs-letter-to-jehoram`, `founding-of-carthage`, `hazael-threatens-jerusalem`, `charles-viii-invades-italy`, `first-olympic-games`, `menahem-pays-tribute-to-pul`, `assyria-invades-israel-740-bc`, and `founding-of-rome`. No new event was created.
+
+# Pass 18
+
+This pass is the double-size pass after pass 16, which had already folded in the work that would have been pass 17. Range covered: Book II, Part I, Chapter XXIV, sig. 345b, through Chapter XXVIII, §. VI, sig. 380b. The headings are “CHAP. XXIIII. Of the Antiquities of 〈◊ 〉, and 〈◊ 〉 of Rome in the time of AHAS.” (both gaps stay empty), “CHAP. XXV. Of EZEKIA, and his Contemporaries.”, “CHAP. XXVI. Of the Kings that raigned in Aegypt, betweene the deliuerance of ISRAEL from thence, and the raigne of EZEKIA in Juda.”, “CHAP. XXVII. Of MANASSE and his Contemporaries.”, and “CHAP. XXVIII. Of the times from the death of MANASSES to the destruction of Jerusalem.” Two hundred sixty-six passages, p03093–p03358: 35 in Chapter XXIV, 38 in Chapter XXV, 56 in Chapter XXVI, 57 in Chapter XXVII, and 80 in Chapter XXVIII. Chapter XXVII ends at 186 passages, under the floor, and XXVIII is one chapter, so the pass stops at the end of XXVIII. The next words are “Finis Libri secundi.” Book III, Part I, Chapter I was not entered. No yeere of the World is printed. No new `year_am` was written. `year_bc_ad` stays null.
+
+## Statements written
+
+None. No yeere of the World is printed in these chapters.
+
+Every record keeps the sort it already had. The new people stay without a sort year. No calculated sort was written.
+
+## Figures that were not entered
+
+- Reign lengths and other men’s reckonings, including Ammon’s two yeeres against the tenne of Philo, Eusebius, and Nicephorus; the yeeres of Iosias, Iehoahaz, and Iehoiakim; Ben Merodach’s one and twentie; the fortie of Cyaxares; the eight and twentie of the Scythians; the Roman kings’ lengths; Cypselus’s thirtie; the thirteene yeeres of the siege of Tyre; the seuentie yeeres of the captiuitie; and the Temple’s foure hundred thirtie and one yeeres. See N97.
+- The second yeere of the thirtieth Olympiad (Chapter XXVIII, §. V, sig. 377a). It was not put on `first-olympic-games`. Olympiad counts and the eclipse in Chapter XXVII were left the same way.
+- Year-counts that only mark a time, including the building of Rome, the Trojan and Persian warres, and the vision of the Image. They were not given a new event, and they were not hung on an existing event. See N97.
+
+## Names
+
+Chapters XXIV–XXVIII were attached by hand in `scripts/raleigh/ch24-28-attach.mjs`. A tribe is on its patriarch. The half tribe of Manasses on p03290 is `manasseh`. The king of Iuda is `manasses`. A printed spelling that is already the title or a stored form of another record was not added as a name form. `Ananias` is the exception: the companion of Daniel and the false Prophet are two men, so the form is on both, and the name-link review leaves that token unmatched. 239 of the 266 passages carry at least one link. The twenty-seven without one are p03094, p03100, p03101, p03118, p03120, p03185, p03188, p03201, p03229, p03234, p03254, p03255, p03265, p03269, p03298, p03310, p03311, p03313, p03315, p03318, p03320, p03321, p03325, p03330, p03333, p03334, and p03347. See N94–N97.
+
+Existing events received an account where the passage narrates that event: `founding-of-rome`, `fall-of-samaria`, `shalmaneser-besieges-samaria`, `sennacherib-besieges-jerusalem`, `sennacherib-besieges-lachish`, `angel-slays-the-assyrians`, `hezekiah-illness`, `merodach-baladan-embassy`, `conversion-of-josiah`, `josiah-first-reform`, `josiah-finds-the-law`, `fall-of-nineveh`, `daniel-taken-to-babylon`, `battle-of-carchemish`, `second-siege-of-jerusalem`, `zedekiah-visits-babylon`, `zedekiah-rebels`, `final-siege-of-jerusalem-begins`, `siege-of-jerusalem-lifted`, `fall-of-jerusalem-586-bc`, and `draco-law-code`. No new event was created.

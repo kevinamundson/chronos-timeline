@@ -677,8 +677,9 @@ const ETH_EXPLICIT = {
   smoothereth: 'smothers',
   // The noun truth. "true" is a headword, so the stem would otherwise become trues.
   trueth: 'truth',
-  // "alleadgeth" is allege. The letter rules find no dictionary verb.
+  // "alleadgeth" and "alledgeth" are allege. The letter rules find no dictionary verb.
   alleadgeth: 'alleges',
+  alledgeth: 'alleges',
   // "inlargeth" is enlarge, like incourageth. The in- spelling is not a dictionary verb.
   inlargeth: 'enlarges',
   // "singeth" is sing. The stem singe is the dictionary verb to burn.
@@ -697,6 +698,7 @@ const ETH_EXPLICIT_REASON = {
   picketh: 'verb pick → picks (yet hee picketh quarrell against Ioram)',
   smoothereth: 'verb smother → smothers (Azael returning, smoothereth him)',
   alleadgeth: 'verb allege → alleges (for this he alleadgeth Plato in Timaeo)',
+  alledgeth: 'verb allege → alleges (the Frierly stuffe that hee alledgeth)',
   inlargeth: 'verb enlarge → enlarges (Iosephus, indeed, inlargeth the Storie)',
   singeth: 'verb sing → sings; the stem singe is the verb to burn (hee singeth as it were the Epithalamion)',
 };

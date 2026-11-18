@@ -708,3 +708,19 @@ Twenty words appear in Book II, Part I, Chapters XVIII–XXIII and in no earlier
 | singeth | 1 | sings | verb sing → sings; the stem singe is the verb to burn (hee singeth as it were the Epithalamion) | p02799: d, the vanitie of humane nature, in the third hee singeth as it were the Epithalamion of Christ and |
 | sixtieth | 1 | sixtieth | kept: ordinal | p03068: of Cyrus his Monarchie( which was the last of the sixtieth Olympiad, and the two hundreth and fortieth |
 | thermeth | 1 | thermeth | kept: place Thermeth (calls it Thermeth), not the verb therm | p02777: l it. 〈◊ 〉 in his booke of Hebrew places calls it Thermeth. In aftertimes, when it was rebuilt by Adrian |
+
+## Pass 18
+
+Nine words appear in Book II, Part I, Chapters XXIV–XXVIII and in no earlier stored passage. Counts are in those 266 passages only. The four flagged words of passes 1–4 do not appear again here. All nine change. None stay. `alledgeth` is allege, the same verb as `alleadgeth` in pass 16. The letter rules find no dictionary verb, so it is explicit. The other eight take the dictionary stem.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| affrighteth | 1 | affrights | verb affright → affrights | p03172: The noise of this great expedition so affrighteth King Almaricke, that with all his force |
+| alledgeth | 1 | alleges | verb allege → alleges (the Frierly stuffe that hee alledgeth) | p03198: osture: but the Frierly stuffe that hee alledgeth out of it, is such as would serue to di |
+| argueth | 1 | argues | verb argue → argues | p03285: bones of the false Prophets, at Bethel, argueth his Dominion to haue extended vnto thos |
+| descendeth | 1 | descends | verb descend → descends | p03172: mes; and Syracon, with a mightie power, descendeth into Aegypt |
+| hardeneth | 1 | hardens | verb harden → hardens | p03306: ured to the like: but custome of danger hardeneth euen those that are vnwarlike |
+| hasteth | 1 | hastes | verb haste → hastes | p03172: Almaricke, that with all his forces he hasteth into Aegypt |
+| leaneth | 1 | leans | verb lean → leans | p03140: to a broken staffe, on which whosoeuer leaneth, pierceth his owne hand |
+| rideth | 1 | rides | verb ride → rides | p03332: which as their manner is, euery man rideth withall |
+| sueth | 1 | sues | verb sue → sues | p03170: erewith to enter Aegypt. Briefly, Sanar sueth to Noradine, King of Damasco, for aide |
