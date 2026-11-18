@@ -47,6 +47,61 @@ export const CH24_28 = {
   p03125: ["founding-of-rome", "romulus=Romulus", "ilia=Rhea", "faustula=Faustula", "cyrus-the-great=Cyrus", "semiramis=Semiramis", "plutarch=Plutarch", "syl-amulius=Amulius", "vesta=Vesta", "fauchet=Fauchet", "merouee=Meroueë", "alexander-the-great=Alexander", "scipio=Scipio African", "paris-of-troy=Paris", "oenone=Oenone", "apollo=Apollo", "anchyses=Anchyses", "venus=Venus", "inachus=Inachus", "herodotus=Herodotus", "aeneas=Aeneas", "halicarnasseus=HALICARNASSAEVS", "anastasius=Anastasius", "pompey=Pompey", "carus=Carus", "probus=Probus", "tarquin=Tarquinius Superbus"],
   p03126: ["romulus=Romulus", "plutarch=Plutarch", "tatius=Tatius"],
   p03127: ["ahaz=Ahaz", "founding-of-rome"],
+
+  // Chapter XXV. Of Ezekia and his contemporaries. p03128–p03165.
+  // Iotham the father of Ahaz is jotham, not iotham-son-of-gideon.
+  // Iehosaphat is jehoshaphat, not the stub iehosaphat.
+  // Ptolomie the astronomer is ptolemy. Belochus and Belosus and Phul of this
+  // argument are phul-belochus. Assarhaddon and Asaracoldas are asarhaddon,
+  // not the Cory esarhaddon. Mardocempadus, and the Merodach whom the
+  // Scriptures so call, are merodach-baladan. The Merodach who usurped on
+  // Assarhaddon is merodach. Cyaxares the son of Astyages is darius-the-mede.
+  // The Cyaxares who raigned before Astyages is cyaxares. Charops is caerops.
+  // Sosarmus in Eusebius is sosarmus-of-media. Artabanus of the Median list
+  // is not the Egyptian artabanus. Thot is the moneth, not Taautus. The
+  // Iulian yeere is not Julian. Lydia is the region, not Lud. Atys father of
+  // Lydus is not Syluius Atys. Gilead and the citie Ninus are places. The
+  // verb put is not Phut. Hercules is not attached. Darius with Cyrus in
+  // Annius his list is not attached: the line does not say which men.
+  // A yeere-count that only marks an event is not put on that event.
+  p03128: ["hezekiah=EZEKIA"],
+  p03129: ["hezekiah=EZECHIAS", "ptolemy=PTOLOMIES", "nabu-nasir=NABONASSAR", "nabopolassar=NABOPOLASSAR", "merodach-baladan=MARDOCEMPADVS"],
+  p03130: ["ahaz=Ahaz", "jotham=Iotham", "hezekiah=Ezekias", "hosea=Hosea", "hezekiah=Ezekia"],
+  p03131: ["hosea=Hosea", "ahaz=Ahaz", "hezekiah=Hezekia", "hezekiah=Ezekia"],
+  p03132: ["hezekiah=EZEKIA", "sennacherib=SENACHERIS", "hezekiah=Ezekia", "bartholomew-scultet=Bartholomew Scultet", "bartholomew-scultet=Scultet", "ahaz=AHAZ", "jehoshaphat=Iehosaphat", "jehoram=Iehoram"],
+  p03133: ["hezekiah=Ezekias", "ahaz=Achaz", "moses=Moses"],
+  p03134: ["salmanassar=Salmanassar", "phul-belochus=Belochus", "hosea=Hosea", "so-king-of-egypt=Soe", "tobit=Tobias", "tobias-son-of-tobie=Tobias", "anna-wife-of-tobit=Anna", "fall-of-samaria", "shalmaneser-besieges-samaria"],
+  p03135: ["cyrus-the-great=Cyrus", "phul-belochus=Phul", "salmanassar=Salmanassar", "ahaz=Ahaz", "judah=Iuda", "hosea=Hosea", "ptolemy=Ptolomie", "nabu-nasir=Nabcnassar", "nabu-nasir=Nabonassar", "nebuchadnezzar-ii=Nebuchadnezzar", "nabopolassar=Nabopolassar"],
+  p03136: ["nabu-nasir=Nabonassar", "christ=Christ", "salmanassar=Salmanassar", "erasmus-reinholdus=Erasmus Reinholdus", "erasmus-reinholdus=Reinholdus", "merodach-baladan=Mardocempadus", "ptolemy=Ptolomie", "merodach-baladan=Merodach", "hezekiah=Hezekia", "nebuchadnezzar-ii=Nebuchadnessar", "nabopolassar=Nabopolassar"],
+  p03137: ["joseph-scaliger=Scaliger", "nabu-nasir=Nabonassar", "merodach-baladan=Mardocempadus", "ptolemy=Ptolomie", "merodach-baladan=Merodach", "baladan=Baladan", "lidyate=Lidyate", "torniellus=Torniellus", "sethus-caluisius=Sethus", "salmanassar=Salmanassar", "annius=Annius", "diodorus-siculus=Diodorus", "phul-belochus=Belosus", "william-the-conqueror=William the Conqueror", "edward-the-confessor=Edward the Confessor"],
+  p03138: ["judah=Iudaea", "sennacherib=SENNACHERIB", "sennacherib-besieges-jerusalem"],
+  p03139: ["salmanassar=Salmanassar", "hezekiah=Ezcchias", "sennacherib=Sennacherib", "rezin=Rezen", "hezekiah=Ezechias", "sennacherib-besieges-jerusalem"],
+  p03140: ["hezekiah=Ezechias", "rabsakeh=Rabsaces", "sennacherib=Sennacherib", "hezekiah=Ezcchias", "rabsakeh=Rabsoces", "moses=Moses", "tirhakah=Terhaca", "isaiah=Esay", "sennacherib=Sennacheribs", "sennacherib-besieges-jerusalem"],
+  p03141: ["sennacherib=Sennacherib", "josephus=Iosephus", "jerome=Hierome", "herodotus=Herodotus", "tiglath-pileser-iii=Tiglath", "pekah=Pekah", "sethon=Sethon", "sennacherib=Sennacheribs", "berosus=Berosus", "isaiah=Esay", "sennacherib=Senacheribs", "sennacherib=SENACHERIB", "tirhakah=TARACHAM", "herodotus=HERODOTVS", "berosus=BEROSVS", "jerome=HIEROME", "sennacherib=SENNACHERIBVS", "rabsakeh=RABSACIS", "josephus=IOSEPHVS", "rabsakeh=RABSACES", "adramelech=ADRAMELECHI", "sharezer=SELENNARI", "nesroch=ARASCI", "sennacherib=SENNACHERIB", "adramelech=ADRAMELECH", "sharezer=SELENNAR", "sharezer=SHAREZER", "nesroch=ARASCES", "nesroch=NESROCH", "asarhaddon=ASARACOLDAS", "salmanassar=Salmanassar", "nesroch=Nesroch", "venus=Venus", "jupiter=Iupiter", "belus=Belus", "dion=Dion", "cyril=Cyrillus", "asarhaddon=Assarhaddon", "tobit=Tobit", "angel-slays-the-assyrians", "sennacherib-besieges-jerusalem"],
+  p03142: ["hezekiah-illness", "merodach-baladan-embassy"],
+  p03143: ["hezekiah=Ezekias", "isaiah=Isaiah", "ahaz=Achaz", "jerome=Hierome", "christ=Messias", "david=Dauid", "hezekiah-illness"],
+  p03144: ["merodach-baladan=Merodach", "hezekiah=Ezekias", "isaiah=Isaiah", "hezekiah=Ezekia", "sennacherib=Senacherib", "merodach-baladan-embassy"],
+  p03145: ["hezekiah=Ezekias", "merodach=Merodach", "sennacherib=Senacherib", "asarhaddon=Assarhaddon", "phul-belochus=Phul Belochus", "sardanapalus=Sardanapalus", "phul-belochus=Belochus", "ninus=Ninus", "phul-belochus=Phul", "merodach-baladan-embassy"],
+  p03146: ["phul-belochus=Phul", "tiglath-pileser-iii=Tiglath Philassar", "salmanassar=Salmanassar", "sennacherib=Senacherib", "asarhaddon=Assarhaddon"],
+  p03147: ["salmanassar=Salmanassar", "sennacherib=Senacherib", "phul-belochus=Phul", "hezekiah=Ezekia", "asarhaddon=Assarhaddon"],
+  p03148: ["hezekiah=EZEKIA", "candaules=CANDAVLES", "gyges=GYGES"],
+  p03149: ["hezekiah=Ezekia", "medidus=Medidus", "cardiceas=Cardiceas", "ctesias=Ctesias", "annius=Annius", "metasthenes=Metasthenes", "arbaces=Arbaces", "eusebius=Eusebius"],
+  p03150: ["annius=Annius", "metasthenes=Metasthenes"],
+  p03151: ["arbaces=Arbaces", "mandanes=Mandanes", "sosarmon=Sosarmon", "articarmin=Articarmin", "arbianes=Arbianes", "attines=Attines", "astybarus=Astybarus", "apanda=Apanda"],
+  p03152: ["diodorus-siculus=Diodorus Siculus", "ctesias=Ctesias", "annius=Annius", "metasthenes=Metasthenes", "diodorus-siculus=Diodore"],
+  p03153: ["arbaces=Arbaces", "mandanes=Mandanes", "artycas=Artycas", "arbianes=Arbianes", "arfaeus=Arfaeus", "artynes=Artynes", "artabanus-of-media=Artabanus"],
+  p03154: ["astybara=Astybara"],
+  p03155: ["astyages=Astyages"],
+  p03156: ["gerardus-mercator=Mercator", "eusebius=Eusebius", "ctesias=Ctesias", "metasthenes=Metasthenes", "hezekiah=Ezekia", "medidus=Medidus", "cardiceas=Cardiceas", "diodorus-siculus=Diodorus", "arbianes=Arbianes"],
+  p03157: ["arbaces=Arbaces", "sosarmus-of-media=Sosarmus", "medidus=Medidus", "cardiceas=Gardiceas", "deioces=Deioces", "phraortes=Phraortes", "cyaxares=Cyaxares", "astyages=Astyages"],
+  p03158: ["darius-the-mede=Cyaxares", "astyages=Astyages", "xenophon=Xenophon", "herodotus=Herodotus"],
+  p03159: ["hezekiah=Ezekia", "caerops=Charops", "aesimedes=Aesimedes", "elidicus=Elidicus", "hippones=Hippones"],
+  p03160: ["romulus=Romulus", "hezekiah=Ezekia"],
+  p03161: ["candaules=Candaules"],
+  p03162: ["lydus=Lydus", "atys-of-lydia=Atys", "argon=Argon", "iardana=Iardana", "candaules=Candaules", "myrsus=Myrsus", "gyges=Gyges", "dascylus=Dascylus", "hezekiah=Ezekia", "romulus=Romulus"],
+  p03163: ["gyges=Gyges", "ardys=Ardys", "sadyattes=Sadyattes", "alyattes=Halyattes", "croesus=Croesus", "cyrus-the-great=Cyrus"],
+  p03164: ["croesus=Croesus"],
+  p03165: ["candaules=Candaules"],
 };
 
 export const CH24_28_NEW = {
@@ -103,8 +158,47 @@ export const CH24_28_NEW = {
   probus: ["Probus", "Probus, whom Carus the Emperour succeeded.", "him"],
   vesta: ["Vesta", "Vesta, the Goddesse, whose Nunnes were the Vestall Virgins. Amata, or Palatia, is the name by which the High Priest called euery such Virgin.", "her"],
   tatius: ["Tatius", "Tatius, companion of Romulus in the Kingdome, whose death Romulus did not reuenge.", "him"],
+  "erasmus-reinholdus": ["Erasmus Reinholdus", "Erasmus Reinholdus, whose Prutenick Tables are alleaged for the distance betweene Nabonassar and Mardocempadus. He is not Erasmus, who deuised the fable of our Ladies letters.", "him"],
+  "bartholomew-scultet": ["Bartholomew Scultet", "Bartholomew Scultet, commended for skill in Astronomie, who by calculation found a day for the Sunnes going backe. Raleigh hath not seene his workes.", "him"],
+  lidyate: ["Lidyate", "Lidyate, Raleigh his countrie-man, who reprehended Scaliger for changing his opinion of Mardocempadus.", "him"],
+  "william-the-conqueror": ["William the Conqueror", "William the Conqueror, named onely as an example, that neerenesse of time doth not proue a man to be sonne or grand-child. He is not William of Tyre.", "him"],
+  "edward-the-confessor": ["Edward the Confessor", "Edward the Confessor, named with William the Conqueror in the same example. He is not King Edward who was in prison with King Richard, and not Prince Edward.", "him"],
+  "tobias-son-of-tobie": ["Tobias son of Tobie", "The sonne of Tobias, of the same name, carried with his father and with Anna to Niniue. He is not the father Tobie. The one-word title would fold onto that name, so the title is four words.", "him"],
+  "anna-wife-of-tobit": ["Anna wife of Tobie", "Anna, the wife of Tobias, carried with him and with his sonne to Niniue. She is not Anna the mother of Mary, and not Anna the sister of Dido. The one-word title would fold onto those records, so the title is four words.", "her"],
+  adramelech: ["Adramelech", "Adramelech, a sonne of Sennacherib, who with Sharezer slew their father in the Temple, and fled into Armenia.", "him"],
+  sharezer: ["Sharezer", "Sharezer, also printed Selennar, a sonne of Sennacherib, who with Adramelech slew their father. The two spellings are one man.", "him"],
+  nesroch: ["Nesroch", "Nesroch, also called Arasces, the god in whose Temple Sennacherib was slaine. Raleigh sayes it is vncertaine what this Nesroch was.", "him"],
+  candaules: ["Candaules", "Candaules, the sonne of Myrsus, the last King of the Heraclidae in Lydia, slaine by Gyges. The race was not split into other men.", "him"],
+  cardiceas: ["Cardiceas", "Cardiceas, also printed Gardiceas, King of Media after Medidus. Raleigh sayes these two Kings are found in Eusebius, and he reckons them with Ezekia.", "him"],
+  mandanes: ["Mandanes", "Mandanes, in the Median lists of Annius and of Diodorus, who raigned fiftie yeeres after Arbaces. The same name and the same length were left as one man.", "him"],
+  sosarmon: ["Sosarmon", "Sosarmon, in Annius his list of the Median Kings, who raigned thirtie yeeres. That list was not equated with Eusebius his Sosarmus.", "him"],
+  articarmin: ["Articarmin", "Articarmin, in Annius his Median list, who raigned fiftie yeeres. He was not equated with Artycas.", "him"],
+  arbianes: ["Arbianes", "Arbianes, in the Median lists of Annius and of Diodorus, who raigned twentie two yeeres. The same name and the same length were left as one man.", "him"],
+  attines: ["Attines", "Attines, in Annius his Median list, who raigned twentie two yeeres. He was not equated with Artynes.", "him"],
+  astybarus: ["Astybarus", "Astybarus, in Annius his list, who raigned twentie yeeres with his sonne Apanda. He was not equated with Astybara.", "him"],
+  apanda: ["Apanda", "Apanda, the sonne of Astybarus, who raigned with his father and then thirtie yeeres alone. The two mentions are one man.", "him"],
+  artycas: ["Artycas", "Artycas, in Diodorus his Median list, who raigned fiftie yeeres. He was not equated with Articarmin.", "him"],
+  arfaeus: ["Arfaeus", "Arfaeus, in Diodorus his Median list, who raigned fortie yeeres.", "him"],
+  artynes: ["Artynes", "Artynes, in Diodorus his Median list, who raigned twentie two yeeres. He was not equated with Attines.", "him"],
+  "artabanus-of-media": ["Artabanus of Media", "Artabanus, in Diodorus his list of the Median Kings, who raigned fortie yeeres. He is not the Egyptian Artabanus of seuen moneths. The one-word title would fold onto artabanus, so the title is three words.", "him"],
+  astybara: ["Astybara", "Astybara, in Diodorus his list. The continuance of his raigne is not giuen. He was not equated with Astybarus, nor with Astyages.", "him"],
+  aesimedes: ["Aesimedes", "Aesimedes, the second of the foure first Gouernours of Athens chosen for ten yeeres. Of him Raleigh findes only the name.", "him"],
+  elidicus: ["Elidicus", "Elidicus, the third of those Gouernours. Of him Raleigh findes only the name.", "him"],
+  hippones: ["Hippones", "Hippones, the fourth of those Gouernours, who shut his daughter vp with an Horse. Her name is not printed.", "him"],
+  lydus: ["Lydus", "Lydus, the sonne of Atys, who gaue the name of Lydia, if the authoritie he cites be beleeued.", "him"],
+  "atys-of-lydia": ["Atys of Lydia", "Atys, the father of Lydus. He is not Syluius Atys. The one-word title would not say which Atys, so the title is three words.", "him"],
+  argon: ["Argon", "Argon, on whom an Oracle conferred the Kingdome of Lydia. He came of a sonne of Hercules by Iardana. That sonnes name is a gap and was not filled. Hercules was not attached.", "him"],
+  iardana: ["Iardana", "Iardana, a bond-woman, by whom a sonne of Hercules, whose name is a gap, begat the line of Argon. The gap was not filled.", "her"],
+  myrsus: ["Myrsus", "Myrsus, the father of Candaules.", "him"],
+  dascylus: ["Dascylus", "Dascylus, the father of Gyges.", "him"],
 };
 
 export const CH24_28_EVENTS = new Set([
   "founding-of-rome",
+  "fall-of-samaria",
+  "shalmaneser-besieges-samaria",
+  "sennacherib-besieges-jerusalem",
+  "angel-slays-the-assyrians",
+  "hezekiah-illness",
+  "merodach-baladan-embassy",
 ]);
