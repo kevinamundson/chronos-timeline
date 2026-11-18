@@ -143,6 +143,7 @@ const WORDS = [
   ['healeth', 'heals'],
   ['hopeth', 'hopes'],
   ['alleadgeth', 'alleges'],
+  ['alledgeth', 'alleges'],
   ['incourageth', 'encourages'],
   ['inlargeth', 'enlarges'],
   ['increaseth', 'increases'],

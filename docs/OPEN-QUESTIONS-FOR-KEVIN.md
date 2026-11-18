@@ -2191,6 +2191,48 @@ Pass 16 read Book II, Part I, Chapters XVIII–XXIII, and stopped at the end of 
   2. Name an existing event that should receive one of them.
 - **Recommendation:** option 1.
 
+Pass 18 read Book II, Part I, Chapters XXIV–XXVIII, and stopped at the end of the book. The quotes are in `data/raleigh-body-extract.md`. N1 through N93 stay open.
+
+### N94. Chapters XXIV–XXVIII were attached by hand, and the tribes go to the patriarchs
+
+- **Why it matters:** These five chapters are Ahaz through the destruction of Jerusalem. They print most cities, rivers, and mountains in capitals. The automatic linker would have made people of places and headings. So `scripts/raleigh/ch24-28-attach.mjs` names each person or event on each passage by hand. Names not in that table are not attached. 239 of the 266 passages carry at least one link. The twenty-seven without one are p03094, p03100, p03101, p03118, p03120, p03185, p03188, p03201, p03229, p03234, p03254, p03255, p03265, p03269, p03298, p03310, p03311, p03313, p03315, p03318, p03320, p03321, p03325, p03330, p03333, p03334, and p03347. A passage that names a tribe is on the patriarch. The half tribe of Manasses on p03290 is `manasseh`. Iuda and Iudaea are on `judah`. The kingdom called Israel is not `jacob`. A spelling that is already the title or a stored form of another record is not added as a name form. `Ananias` is the exception: p03339 and p03348 name two men, so the form is on both `ananias-companion-of-daniel` and `ananias-the-false-prophet`, and the name-link review leaves that token unmatched.
+- **Options:**
+  1. Leave the tribes on the patriarchs, as now.
+  2. Make a separate record for each tribe, and move the land passages there.
+- **Recommendation:** option 1. It matches N59, N65, N71, N77, N83, and N89.
+
+### N95. Men who share a name in these chapters
+
+- **Why it matters:** Each was kept apart only where the passage says which man it means.
+  - **Manasseh:** The king of Iuda, including MANASSE and Manasses, stays on `manasses`. Joseph’s son stays on `manasseh`, and the forms MANASSE and Manasses stay there. The half tribe on p03290 is `manasseh`.
+  - **Ammon:** The son of Manasses, king of Iuda, stays on `amon`. The nation Ammon was not attached. David’s son stays on `amnon`.
+  - **Midas, Aristodemus, Sybilla, and Arphaxad:** The Phrygian in Manasses his time is `midas-of-manasses`, not the Midas of Barak and Deborah. Aristodemus of Messene is `aristodemus-of-messene`, not the Heraclidae return. Sybilla of Samus is `sybilla-of-samus`, not the witness of Titan and Saturne. Arphaxad in the book of Iudith is `arphaxad-of-judith`, not the son of Sem. Torniellus’s fantasie was not made a second man.
+  - **Babylon:** Nabulassar stays `nabopolassar`. Nabuchodonosor, Nabuchadnezzar, Nebuchadnezzar, Nabuehodonosor, and Nabuchodouosor stay `nebuchadnezzar-ii`. Raleigh’s “also called” was not used to merge the two records. p03299 “MERODACH the sonne of Baladan” is `merodach` and `baladan`. It was not moved onto `merodach-baladan`, which keeps the printed double name. “Ben 〈◊ 〉” was not filled. Ben Merodach, where printed, is `ben-merodach`, not Evil-Merodach. Merodach who restored Manasses stays `merodach`.
+  - **Egypt:** Amasis in Chapter XXVII is `anysis`. The form Amasis stays on `amasis-ii` and `themosis`. Actisanes is `sabacus-the-ethiopian`, and so is Sous. Tkuoris is `thuoris`. Moeris is `myris`. Psammis the son of Neco stays `psammis`, and was not merged with `psammetichus-i` where Eusebius uses the one name for the other. Hophra is `apries`. Neco, Necho, Necus, and NECO are `neco`, not `necho-ii` and not `nechao-d26`.
+  - **Judah’s later kings:** Iehoahaz the son of Iosias is `jehoahaz-of-judah`, not `iehoahas` and not `iehoabaz`. Ieremie calls him Shallum. That alias is on `jehoahaz-of-judah`, and Shallum of Israel is `shallum-king-of-israel`. Eliakim is `iehoiakim`. Iechonia and Iechonias are `jehoiachin`. p03344 also calls the son Iehoiakim, so that surface is on both `iehoiakim` and `jehoiachin`. Ioacim the High Priest is `ioacim-high-priest`. Zedechias, Zedekia, and Zedekias are `zedekiah`. The name before he was called Zedechias is a gap.
+  - **Other shared letters:** Cyaxares the son of Phraortes is `cyaxares`, not `darius-the-mede`. The form Cyaxares stays on `cyaxares`. Darius and Hystaspis in the one list are both `darius-hystaspis`. Rabbi Kimhi, also Kimbi, is `rabbi-kimhi`, not `moses-kimchi`. Goropius is `becanus`. Vria the Prophet whom Iehoiakim killed is `urias-the-prophet`, not the Hittite and not the priest under Ahaz. Azarias taken with Daniel is `azarias-companion-of-daniel`, not `azaria-the-priest`. The two Ananiases are the records above. Draco the Lawgiuer of Athens is `draco-the-lawgiver`, not `draco-of-thebes`. L. Tarquinius Priscus is `tarquinius-priscus`. Tarquinius Superbus stays on `tarquin`. Marius the Roman is `marius`, not `marius-niger`. Vasco de Gama is `vasco-de-gama`, not `steaen-gama`. Dioclesian is `dioclesian`, not `diocles`. Helen in Priamus his discourse is `helen-of-troy`. The form Helen stays on `helena-empress`. The great Persian Cyrus is `cyrus-the-great`. Alexander at the mole of Tyre is `alexander-the-great`. That comparison was not put on `alexander-destroys-tyre`. Hosea the last king of Israel is `hosea`. Philo beside Eusebius and Nicephorus is `philo`.
+- **Options:**
+  1. Leave these as they are.
+  2. Name a passage that should move to another record, or two records that should merge.
+- **Recommendation:** option 1. A silent merge would attach a different man. The open case is whether Nabulassar and Nabuchodonosor, and whether Merodach the son of Baladan and Merodach Baladan, are one man each. The passages stay on the two records until you say they are one.
+
+### N96. Names that were not attached in these chapters
+
+- **Why it matters:** Hercules stays unlinked (N33), including the pillars called the streights of Hercules. Mars stays unlinked (N85). God, the Lord, Deus, Deo, and Dei were not made people (N7). The Deuill was not made `satan`. The word Christ is attached only where it is printed. Silo in the prophecie of Iacob was not filled with Christ. Gaps were not filled, including both gaps in the Chapter XXIV heading, “Ben 〈◊ 〉”, “Mero 〈◊ 〉”, the nephew of Saphan, the uncle’s name before Zedechias, the people of Zaleucus, and the author of the Amazonica. The Horatij and the Curatij were left as groups. The Parthenians, the twelue princes, the seuen Sages, the Adades, the Bacida, Phud, and Lud were not split. Israelites, Iewes, Greekes, Medes, Lydians, Scythians, Cimmerians, Cimbri, Amazons, Sarmatians, Phoenicians, and the Megarcuses were not split. Nilus is the riuer. Cholopey is the Russe word for a bondslaue. The nations, the cities, the rivers, and the headings were not made people.
+- **Options:**
+  1. Leave these unattached, as now.
+  2. Name the man for a passage, and it will be attached.
+- **Recommendation:** option 1, unless you know the man.
+
+### N97. No yeere of the World, and figures that have no new event
+
+- **Why it matters:** No sentence in p03093–p03358 prints a yeere of the World. `year_am` was not stored. `year_bc_ad` stays null. A new event cannot take a sort year from Raleigh. Reign lengths, Olympiad numbers, and other men’s reckonings were not entered (N46, N92, N93). The second yeere of the thirtieth Olympiad was left off `first-olympic-games`. The building of Rome, the Trojan and Persian warres, the eclipse, and the vision of the Image were left off those events where the sentence only uses them as a mark. Jehoiakim making Iechonia king with him was not put on `josiah-anoints-jeconiah`. Alexander’s seuen moneths at Tyre was not put on `alexander-destroys-tyre`. The accession of Nabulassar, the death of Gyges, and the minor deportation were not attached. Dated statements written in this pass: 0.
+- **Where an existing event was attached:** the passage narrates it. `founding-of-rome` in Chapter XXIV. `fall-of-samaria`, `shalmaneser-besieges-samaria`, `sennacherib-besieges-jerusalem`, `angel-slays-the-assyrians`, `hezekiah-illness`, and `merodach-baladan-embassy` in Chapter XXV. The same Jerusalem and angel events, and `sennacherib-besieges-lachish`, on the one passage in Chapter XXVI that narrates the army, Lachis, and the sword. `conversion-of-josiah`, `josiah-first-reform`, `josiah-finds-the-law`, `fall-of-nineveh`, `daniel-taken-to-babylon`, `battle-of-carchemish`, `second-siege-of-jerusalem`, `zedekiah-visits-babylon`, `zedekiah-rebels`, `final-siege-of-jerusalem-begins`, `siege-of-jerusalem-lifted`, `fall-of-jerusalem-586-bc`, and `draco-law-code` in Chapter XXVIII. No new event was created.
+- **Options:**
+  1. Leave the years unstored and these events as attached, as now.
+  2. Name a figure that should be stored, or an existing event that should gain or lose a passage.
+- **Recommendation:** option 1.
+
 ## O. Dynasty of Slaves (BLK SHP Scott, 2026)
 
 Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record of Israel in Egypt* (BLK SHP Publishing, 2026; Kindle Direct Publishing). eBook ISBN 979-8-9960110-3-2; softcover 979-8-9960110-0-1; hardcover 979-8-9960110-2-5; audiobook 979-8-9960110-1-8. © the author, all rights reserved. The dated statements are in `data/dynasty-of-slaves-dates-extract.md`. The chronology `dynasty-of-slaves` is display only. It does not set a sort year. Citations are chapter and section. The edition has no printed page numbers.
