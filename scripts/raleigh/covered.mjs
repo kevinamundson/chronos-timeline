@@ -7,11 +7,12 @@
 //
 //   node scripts/raleigh/covered.mjs
 //   node scripts/raleigh/covered.mjs --through=12
-//   node scripts/raleigh/covered.mjs --through=12 --book2=17 --write
+//   node scripts/raleigh/covered.mjs --through=12 --book2=18 --write
 //
 // --through is the last Book I, Part I chapter. It cannot be less than 8, because
 // passes 1–3 already covered Chapters I–VIII. --book2 is the last Book II, Part I
-// chapter. 0 leaves Book II out. Pass 15 stops at Chapter XVII. A value of 8 is
+// chapter. 0 leaves Book II out. Pass 16 stops at Chapter XXIII. The constant
+// BOOK2_THROUGH is raised as each chapter of this pass is stored. A value of 8 is
 // unused: pass 12 took Chapters VIII and IX together.
 // A passage is attached by the name as printed. Groups, places, and unnamed
 // people are not split into individuals. God, Jehovah, and the Holy Ghost are
@@ -34,8 +35,8 @@ const book2Through = book2Arg ? Number(book2Arg.slice('--book2='.length)) : 0;
 if (!Number.isInteger(throughChapter) || throughChapter < 8 || throughChapter > 12) {
   throw new Error('--through must be an integer from 8 to 12 (Book I, Part I ends at Chapter XII)');
 }
-if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 17 || book2Through === 8) {
-  throw new Error('--book2 must be 0–7 or 9–17 (pass 15 stops at Book II, Part I, Chapter XVII)');
+if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 23 || book2Through === 8) {
+  throw new Error('--book2 must be 0–7 or 9–23 (pass 16 stops at Book II, Part I, Chapter XXIII)');
 }
 const LINK = 'https://texts.earlyprint.org/works/A10357.xml';
 const SRC = 'raleigh-history-of-the-world';
@@ -2266,7 +2267,9 @@ function formsFor(id, title) {
   const person = nameDoc.people.find((p) => p.id === id);
   const stored = new Set((person?.forms || []).map((f) => f.form.toLowerCase()));
   stored.add((title || '').toLowerCase());
-  const newNote = book2Through === 17
+  const newNote = book2Through >= 18
+    ? 'Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII.'
+    : book2Through === 17
     ? 'Spelling only. Read in Book II, Part I, Chapters XIV–XVII.'
     : book2Through === 13
     ? 'Spelling only. Read in Book II, Part I, Chapters XI–XIII.'
@@ -2298,7 +2301,9 @@ function formsFor(id, title) {
     const holder = held.find((p) => p && p.passage.includes(form));
     if (!holder) continue;
     // Earlier passes stored the spellings they read. Add a form only from this pass.
-    const inPass = book2Through === 17
+    const inPass = book2Through >= 18
+      ? holder.kind === 'body' && holder.book === '2' && Number(holder.chapter) >= 18 && Number(holder.chapter) <= book2Through
+      : book2Through === 17
       ? holder.kind === 'body' && holder.book === '2' && (holder.chapter === '14' || holder.chapter === '15' || holder.chapter === '16' || holder.chapter === '17')
       : book2Through === 13
       ? holder.kind === 'body' && holder.book === '2' && (holder.chapter === '11' || holder.chapter === '12' || holder.chapter === '13')
@@ -2323,7 +2328,7 @@ function formsFor(id, title) {
         : holder.kind === 'body' && holder.book === '1' && Number(holder.chapter) >= 9;
     if (!inPass) continue;
     // Chapter phrases include clauses. A spelling is a name, not a sentence.
-    if ((book2Through === 5 || book2Through === 6 || book2Through === 7 || book2Through === 9 || book2Through === 10 || book2Through === 13 || book2Through === 17) && (!/^[A-Z]/.test(form) || form.split(/\s+/).length > 4 || form.includes(',') || / or /i.test(form) || /^(regiments|halfe tribe|sonne|concerning) /i.test(form))) continue;
+    if ((book2Through === 5 || book2Through === 6 || book2Through === 7 || book2Through === 9 || book2Through === 10 || book2Through === 13 || book2Through === 17 || book2Through >= 18) && (!/^[A-Z]/.test(form) || form.split(/\s+/).length > 4 || form.includes(',') || / or /i.test(form) || /^(regiments|halfe tribe|sonne|concerning) /i.test(form))) continue;
     stored.add(form.toLowerCase());
     out.push({ form, citation: `${cite(holder)}. The passage prints “${form}”.`, note: newNote });
   }
