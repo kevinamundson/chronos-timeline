@@ -16,6 +16,8 @@ Pass 9 (Book II, Part I, Chapter V) adds one word those tables do not list. It s
 
 Pass 10 (Book II, Part I, Chapter VI) adds twenty words those tables do not list. Sixteen change. Four stay. None of the twenty is flagged. `dumeth` is the city. `alsovseth` is also vseth printed as one word. Through that chapter the inventory is 454 distinct words: 423 change, 27 stay, and the same 4 flagged. The new rows are under "Pass 10".
 
+Pass 11 (Book II, Part I, Chapter VII) adds nineteen words those tables do not list. Eight change. Eleven stay. None of the nineteen is flagged. Most of the eleven are places: `aroseth`, `cateth`, `cinnereth`, `genezareth`, `gennezareth`, `nepheth`, `nazareth`, and `remeth`. `astoreth` is the idol and `iudeth` is the name. `handreth` follows an illegible gap and reads as the number. `streightneth` is straiten. The letter rules do not reach that spelling, so it is explicit. Through that chapter the inventory is 473 distinct words: 431 change, 38 stay, and the same 4 flagged. The new rows are under "Pass 11".
+
 ## Decisions
 
 - hath becomes has. It is the irregular third person of have. It does not end in -eth. An all-capital HATH becomes HAS. The capitals stay (open question N17).
@@ -37,6 +39,9 @@ Pass 10 (Book II, Part I, Chapter VI) adds twenty words those tables do not list
 - seedeth becomes seeds. In this book it is the verb in "the hearbe, which seedeth seede".
 - Dumeth stays. It is the city, “the Citie Dumeth”.
 - alsovseth stays. The printed letters are also vseth as one word, like heioyneth. No space was added.
+- streightneth becomes straitens. In this book it is the verb in “Iordan streightneth it selfe againe into a Riuer”.
+- handreth stays. It follows an illegible gap (〈◊ 〉) and reads as the number hundreth. It is not a verb.
+- Aroseth, Cateth, Cinnereth, Genezareth, Gennezareth, Nepheth, and Remeth stay. They are places in the description of the tribes. Astoreth stays. It is the idol.
 
 ## Flagged
 
@@ -550,3 +555,29 @@ Twenty words appear in Book II, Part I, Chapter VI and in no earlier stored pass
 | surnameth | 1 | surnames | verb surname → surnames | p01976: g neither that Hercules, which Eusebius surnameth Delphin, famous in 〈◊ 〉; nor that Hercu |
 | sweareth | 3 | swears | verb swear → swears | p02003: s faithlesse men take it, that he which sweareth to a Man, to a Societie, to a State, or |
 | vttereth | 1 | utters | verb utter → utters | p02006:  be destroied, and that the mouth which vttereth them, slaieth the soule: how much more |
+
+## Pass 11
+
+Nineteen words appear in Book II, Part I, Chapter VII and in no earlier stored passage. Counts are in those 156 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| aroseth | 1 | aroseth | kept: place Aroseth gentium, not a verb | p02117: der Libanus, remembred by Ezek. 47. and Aroseth gentium, neere the waters of Merom or Sama |
+| astoreth | 1 | astoreth | kept: the idol Astoreth, singular of Astaroth | p02038: ll 〈◊ 〉, is plurall: the singular being Astoreth: whence Iud. 2. 13. the Septuagint reade |
+| cateth | 1 | cateth | kept: city Cateth, not a verb | p02121: To the East of this Citie of Zabulon is Cateth, of which Ios. 19. 15. on the border of Ash |
+| cinnereth | 1 | cinnereth | kept: city Cinnereth | p02126: some haue thought) the same as the old Cinnereth, which was seated, not in Zabulon, but i |
+| driueth | 1 | drives | verb drive → drives | p02066: nd to trauaile till it recouer the Sea, driueth sixe great Mills in that short passage, sa |
+| endeth | 2 | ends | verb end → ends | p02099: th by the mountaine Casius in 〈◊ 〉: and endeth it to the South at Aegypt and Arabia; by wh |
+| genezareth | 2 | genezareth | kept: lake Genezareth | p02126: he Cities on that * Sea and the Lake of Genezareth within Zabulon was that of Tiberias, fr |
+| gennezareth | 2 | gennezareth | kept: city and lake Gennezareth | p02117: n the strong Citie of 〈◊ 〉 after called Gennezareth, whence we reade of the Land and Lake |
+| girdeth | 1 | girds | verb gird → girds | p02135: h was, Tell, BENHADAD, Let not him that girdeth his harneis boast himselfe, as he that put |
+| handreth | 1 | handreth | kept: printed after an illegible gap (〈◊ 〉); it reads as the number hundreth, not a verb | p02077: lues farre into the Land Eastward: 〈◊ 〉 handreth stadia or furlongs, according to Strabo: |
+| iudeth | 2 | judeth | kept: name on a person or a name form | p02127: , famous by the story of Holofernes and Iudeth, such as it is. Neere which standeth Bethle |
+| mistaketh | 1 | mistakes | verb mistake → mistakes | p02100: th Gad and Manasseh ouer Iordan: but he mistaketh it; for Hieromaix falleth into the Sea o |
+| nazareth | 2 | nazareth | kept: name Nazareth | p02129: r Diocaesaria was that blessed place of Nazareth, the Citie of Marie the Mother of Christ; |
+| nepheth | 1 | nepheth | kept: place Nepheth-Dor; the hyphen makes the token Nepheth | p02166: eptuagint in the place of Iosua call it Nepheth-Dor, and in the other of the Kings, Nepha- |
+| preserueth | 1 | preserves | verb preserve → preserves | p02027: ffereth the penurie of thirst: so as it preserueth raine water, and supplieth the scarciti |
+| remeth | 1 | remeth | kept: city Remeth, otherwise Ramoth | p02135: 7. then Abes or Ebets, Ios. 19. 20. and Remeth of which Ios. 19. 21. otherwise Ramoth. 1. |
+| repaieth | 1 | repays | verb repay → repays | p02049: oundlesse goodnesse of God, as he often repaieth them with many worldly gifts and temporal |
+| streightneth | 1 | straitens | verb straiten → straitens (Iordan streightneth it selfe againe into a Riuer) | p02147: esrael neere Iordan: after that, Iordan streightneth it selfe againe into a Riuer: leauing |
+| supplieth | 1 | supplies | verb supply → supplies | p02027: t: so as it preserueth raine water, and supplieth the scarcitie of Wells by building Ceste |

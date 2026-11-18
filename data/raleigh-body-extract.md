@@ -570,3 +570,42 @@ A named individual received a person when no record already held that name. Two 
 `iosva`, `iosus`, and `iosuas` are on `iosua`. `barac` is on `barak`. `debora` is on `deborah`. `sisara` is on `sisara`. `gedeon` was already mapped. `suydas` is on `suidas`. `bucholzer` is on `bucholcerus`. `caietanus` and `caictan` are on `caietan`. `sanchoniaton` and `sanconiatho` are on `sanchoniathon`. Nabeth and Nabaioth are `nabaioth`. Recem is on `rekem`. Salmana and Salmunna are `zalmunna`.
 
 These were not made into people. The nations: Canaanites, Madianites, Amalekites, Ismaelites, Moabites, Ammonites, Edomites, Kenites, Anakims, Horites, Heuites, Iebusites, Zidonians, Philistims, Gibeonites. The cities Hazor, Hebron, Iarmuth, Lachis, Eglon, Hierusalem, Petra, Gilgal, Ierico, Ai. The Latin clause Adinuenta. The ordinals Secondly, Thirdly, Fourthly. The five Mercuries besides the one record. See N58.
+
+# Pass 11
+
+Range covered: Book II, Part I, Chapter VII, sig. 217a, through §. VII, subsection II, sig. 231b. The heading is “CHAP. VII. Of the Tribes of 〈◊ 〉, that were planted in the borders of Phoenicia, with sundrie Stories depending vpon those places.” One hundred fifty-six passages, p02015–p02170. Chapter VIII, “CHAP. VIII. Of the Kingdome of Phoenicia.”, opens after sig. 231b and was not entered. No yeere of the World was printed in this chapter. `year_bc_ad` stays null.
+
+## Statements written
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book II, Part I, Chapter VII, §. III, subsection III, sig. 220b | Iosephus, and 〈◊ 〉 make this Citie elder than Salomons Temple 240. yeeres: Cedrenus 361. | founding-of-tyre (`year_am` null). Not converted. The second author is illegible. See N63. |
+| Book II, Part I, Chapter VII, §. III, subsection III, sig. 220b–221a | Elulaeus, whom Tyrius calleth Helisaeus, was then King of Tyre, hauing gouerned the same sixe and twentie yeeres | elulaeus, `dates.reign` (`year_am` null) |
+| Book II, Part I, Chapter VII, §. III, subsection III, sig. 220b–221a | the Assyrian continued his resolution and lay before it by his Lieutenants fiue yeeres, but with ill successe | salmanassar, `dates.reign` (`year_am` null). The length of the siege of Tyre, not a reign length. A leading `cfah` null reign entry was added, as the schema requires. |
+| Book II, Part I, Chapter VII, §. III, subsection III, sig. 220b–221a | Soone after this repulse of Salmanassar, and about 200. yeeres before the victorie of Alexander, Nabuchodonosor at such time as hee destroyed Hierusalem with the Temple, came before this Citie | nebuchadnezzar-ii, `dates.reign` (`year_am` null). Not converted. |
+| Book II, Part I, Chapter VII, §. III, subsection III, sig. 221a | In the end and after thirteene yeeres siege or more, the Tyrians despoiled of all their hopes | nebuchadnezzar-ii, `dates.reign` (`year_am` null). The length of the siege, not a reign length. |
+| Book II, Part I, Chapter VII, §. IV, subsection II, sig. 224b | a second King Iabin, 137. yeeres after the death of this first Iabin, inuaded the Israelites | jabin-the-second, `dates.reign` (`year_am` null). Not converted. See N62. |
+| Book II, Part I, Chapter VII, §. IV, subsection II, sig. 224b | he preuailed against them, and held them in a miserable seruitude twentie yeeres | oppression-of-jabin (`year_am` null). Pass 10 stored the same 20 on jabin-the-second. |
+| Book II, Part I, Chapter VII, §. VII, subsection II, sig. 231a | S. Paul was heerein two yeeres prisoner, vnder the President Foelix, vnto the time and gouernment of Porcius Festus | paul-before-felix (`year_am` null) |
+
+Every record keeps the sort it already had. The new people stay without a sort year. No calculated sort was written.
+
+## Figures that were not entered
+
+- Chapter VII, §. III, subsection I, sig. 219a, and the tribe sections after it: the musters, 41500 and 53400, 53400 and 45400, 57400 and 65000, 54400 and 64300, and 32200 and 52700. Counts of men.
+- Years after Christ: 636 and 1250 and 1289 (p02039, sig. 220a); 636 (p02051, sig. 221a); 1112 and 1124 (p02052, sig. 221a); 1189 (p02053, sig. 221a–221b); 1289 (p02054, sig. 221b); 636, 1104, and 1291 (p02058, sig. 221b–222a); 1157 (p02065, sig. 222b); 1107 (p02069, sig. 222b); 363 (p02094, sig. 225a). They are not yeeres of the World. See N64.
+- Chapter VII, §. III, subsection III, sig. 221a: Tyre “continued in great glorie about 300. yeeres, euen to the comming of our Christ”, “flourished in the Christian Faith neere 600. yeeres”, suffered the Saracens “488. yeeres”, and “so it remained 165. yeeres” under the Kings of Hierusalem.
+- Chapter VII, §. III, subsection III, sig. 221b: Origen “940. yeeres before therein buried”.
+- Chapter VII, §. IV, subsection II, sig. 224b: Hazor, “about 260. yeeres after, it fell into the hand” of Teglatphalasar.
+- Chapter VII, §. IV, subsection IV, sig. 225a: Capernaum “had the honour of Christs presence three yeeres”.
+- Chapter VII, §. V, sig. 228a: at Nazareth “hee abode chiefly foure and twenty yeeres”.
+- Chapter VII, §. VII, subsection II, sig. 230b–231a: Herod built Caesaria “in twelue yeeres time”.
+- Counts of men, horse, talents, soldiers, and brothers, Iosua’s 24 kings, and distances in miles and furlongs. Not years.
+
+## Names
+
+Chapter VII was attached by hand in `scripts/raleigh/ch7-attach.mjs`. The automatic linker would have made people of the cities and headings the chapter prints in capitals. A tribe is on its patriarch: `asher`, `naphtali`, `zebulun`, `issachar`, `manasseh`, `gad`, `reuben`, `dan`. See N59.
+
+New records, kept apart from a record that shares the letters: `herod-antipas`, `herod-agrippa`, `agrippa-ii`, `philip-the-tetrarch`, `philip-the-apostle`, `philip-king-of-france`, `john-the-apostle`, `john-of-gischala`, `baldwin-the-second`, `benhadad`, `benadad`, `ptolemy-lathurus`, `acon-brother-of-ptolemy`, `cleopatra-daughter-of-ptolemy`, `demetrius-son-of-antiochus-the-great`, `antiochus-son-of-demetrius`, `menander-of-ephesus`, `manasse-son-in-law-of-sanballat`, `gilead-son-of-machir`, `seba-son-of-bichri`, `nicanor-lieutenant-of-demetrius`, `tyrus-wife-of-agenor`, and `zacharie-the-prophet`. Ptolomie in this chapter is the geographer, on `ptolemy`. Enoch son of Cain is on `enoch`, as in earlier passes. See N60 and N61.
+
+These were not attached. Antoninus, Apollonius, the other Demetrius and Antiochus passages, the bare Baldwine in p02052 and p02169, Nicephorus, Macrob, the bare Herodes in p02141, and Pharao. Hercules stays unlinked (N33). The nations, the land of Canaan, the cities, rivers, and mountains, and the headings were not made people.

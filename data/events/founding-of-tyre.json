@@ -48,6 +48,17 @@
       "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=the%20foundation%20of%20the%20city%20took%20place%20two",
       "source_text_id": "herodotus-rawlinson-roman-roads",
       "note": "Priests of Melqart (\"Hercules\") at Tyre: the temple was as old as the city. DERIVED (not Herodotus's figure): 450 BC + 2,300 = about 2750 BC. Anchor: CFAH-3 dates Herodotus's visit to Egypt to 450 B.C. (section \"Conflicting Information: Herodotus Nine Centuries Below Moeris\"; AP-21). CONFLICT: about 400 years before the Flood (2348/2347 BC, CFAH AP-29), and about 1,500 years before Generations' founding of Tyre (about 1250 BC, provisional)."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "Iosephus, and 〈◊ 〉 make this Citie elder than Salomons Temple 240. yeeres: Cedrenus 361.",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, §. III, subsection III, sig. 220b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. How many yeeres new Tyre is elder than Salomons Temple: 240 by Iosephus and a second author whose name is illegible (〈◊ 〉), 361 by Cedrenus. Not converted. Not a yeere of the World. year_am stays null. This does not change the sort. See N63."
     }
   ],
   "people": [],
@@ -58,7 +69,8 @@
     "generations-preparing-2e",
     "herodotus-rawlinson-roman-roads",
     "herodotus-rawlinson-wikisource",
-    "griffith-beckman-reply-3"
+    "griffith-beckman-reply-3",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [
     "alexander-destroys-tyre"

@@ -286,6 +286,33 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 448 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10)
 - Accounts: 2,014 passages on 841 records
 
+## Pass 11
+
+Book II, Part I, Chapter VII, sig. 217a, through §. VII, subsection II, sig. 231b. The heading is “CHAP. VII. Of the Tribes of 〈◊ 〉, that were planted in the borders of Phoenicia, with sundrie Stories depending vpon those places.” One hundred fifty-six passages, p02015–p02170. Chapter VIII opens after sig. 231b and was not entered. The same rules as passes 3–10. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. This chapter printed none. No calculated sort was written.
+
+Chapter VII is a description of the land. It prints most places in capitals, so the automatic linker would have made people of cities, rivers, and headings. In this chapter the people and events on each passage are named by hand in `scripts/raleigh/ch7-attach.mjs`, and only those links are kept. 140 of the 156 passages carry at least one link. See N59.
+
+### Counts
+
+- Dated statements written: 8 (Tyre elder than the Temple by 240 or 361 yeeres; Elulaeus’s 26 yeeres; Salmanassar’s 5 yeeres before Tyre; Nebuchadnezzar about 200 yeeres before Alexander, and his 13 yeeres’ siege; Iabin the second 137 yeeres after the first; Iabin’s 20 yeeres of servitude; Paul two yeeres prisoner under Felix)
+- People created: 119, all first named in Book II, Part I, Chapter VII
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. Four existing people gained statements: `elulaeus`, `salmanassar`, `nebuchadnezzar-ii` (two), and `jabin-the-second`. Three existing events gained statements: `founding-of-tyre`, `oppression-of-jabin`, and `paul-before-felix`. `salmanassar` also gained the leading `cfah` null reign entry the schema requires. Twenty events received Chapter VII accounts, 17 of them their first: `alexander-destroys-tyre`, `assyria-invades-israel-740-bc`, `battle-of-aphek`, `conversion-of-cornelius`, `death-of-herod-agrippa-i`, `fall-of-jerusalem-586-bc`, `founding-of-carthage`, `founding-of-tyre`, `founding-of-utica`, `oppression-of-jabin`, `paul-before-felix`, `paul-before-festus-and-agrippa`, `reign-of-abimelech`, `reign-of-julian-the-apostate`, `saul-defeats-the-ammonites`, `third-crusade`, and `transfiguration`. Their `sorting_year` values are unchanged. Eighteen existing people received their first account, among them `ahab`, `jehu`, `jephthah`, `zedekiah`, and `tiglath-pileser-iii`.
+- Name forms added: 67 (on new and existing people). No existing form was rewritten.
+- Accounts: 2,170 passages, on 946 people and 49 events. The first 2,014 passages are unchanged, and no earlier link was dropped.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. No importer except the CFAH import and the standby compute was re-run, and both wrote nothing new. The new people are display-only, and none of them has a standby placement. No `year_am` was stored, so no calculated sort changed. The open questions for this chapter are N59–N64.
+
+### Cumulative
+
+- Dated statements written: 129 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6, 21 in pass 7, 9 in pass 8, 7 in pass 9, 15 in pass 10, 8 in pass 11)
+- People created: 746
+- Places created: 0
+- Events created: 0
+- Name forms added: 515 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11)
+- Accounts: 2,170 passages on 995 records
+
 ## RESUME POINT
 
-Book II, Part I, Chapter VII. The heading begins “CHAP. VII. Of the Tribes of 〈◊ 〉”. Pass 10 stopped at the end of Chapter VI. The last stored passage is p02014, Book II, Part I, Chapter VI, §. VIII, sig. 216b–217a. Do not start again inside Chapter VI.
+Book II, Part I, Chapter VIII. The heading is “CHAP. VIII. Of the Kingdome of Phoenicia.” Pass 11 stopped at the end of Chapter VII. The last stored passage is p02170, Book II, Part I, Chapter VII, §. VII, subsection II, sig. 231b. Do not start again inside Chapter VII. Chapter VIII needs `BOOK2_THROUGH = 8` in `scripts/raleigh/xml-text.mjs` and `--book2=8` in `scripts/raleigh/covered.mjs`.

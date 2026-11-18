@@ -45,6 +45,17 @@
       "link": "https://web.archive.org/web/20221023135542/https://www.floydnolenjonesministries.com/files/135786316.pdf",
       "source_text_id": "jones-chronology-ot-2019",
       "note": "21st ed. (2019) differs; the 23rd ed. (2026) sets the sort: 4063 AM, AD 58."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "S. Paul was heerein two yeeres prisoner, vnder the President Foelix, vnto the time and gouernment of Porcius Festus",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, §. VII, subsection II, sig. 231a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. Paul’s two yeeres in prison at Caesaria under Foelix. Not a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [],
@@ -56,7 +67,8 @@
   "sources": [
     "blb-biblehub",
     "jones-chronology-ot-2026",
-    "jones-chronology-ot-2019"
+    "jones-chronology-ot-2019",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {

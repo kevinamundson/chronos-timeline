@@ -26,6 +26,29 @@
         "link": null,
         "note": "pending CFAH reference"
       }
+    ],
+    "reign": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "the Assyrian continued his resolution and lay before it by his Lieutenants fiue yeeres, but with ill successe",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VII, §. III, subsection III, sig. 220b–221a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. The length of his siege of Tyre. Not a reign length and not a yeere of the World. year_am stays null. This does not change the sort."
+      }
     ]
   },
   "events": [],

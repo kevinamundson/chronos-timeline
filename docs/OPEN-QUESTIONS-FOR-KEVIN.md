@@ -1787,6 +1787,69 @@ Pass 10 read Book II, Part I, Chapter VI, and stopped at the end of that chapter
   2. Name a spelling that should be a second person, or name the passages that should move.
 - **Recommendation:** option 1. A silent merge would attach a different man. A group or a city is not an individual.
 
+Pass 11 read Book II, Part I, Chapter VII, and stopped at the end of that chapter. The quotes are in `data/raleigh-body-extract.md`. N1 through N58 stay open.
+
+### N59. Chapter VII was attached by hand, and the tribes go to the patriarchs
+
+- **Why it matters:** Chapter VII describes the land of each tribe. It prints most cities, rivers, and mountains in capitals. The automatic linker would have made people of places and headings, such as Tribe, Halfe, Marbech, and Iabes. So `scripts/raleigh/ch7-attach.mjs` names each person or event on each passage by hand. Names not in that table are not attached. A passage that names a tribe, such as “the Tribe of Asser”, is on the patriarch: `asher`, `naphtali`, `zebulun`, `issachar`, `manasseh`, `gad`, `reuben`, `dan`. Earlier passes did the same. The land of Canaan, Zidon, Tyre, and other cities were not made people.
+- **Options:**
+  1. Leave the tribes on the patriarchs, as now.
+  2. Make a separate record for each tribe, and move the land passages there.
+- **Recommendation:** option 1. It matches passes 1–10, and the tribe takes its name from the son.
+
+### N60. Kings and writers who share a name
+
+- **Why it matters:** Chapter VII names several men with the same name. Each was attached only where the passage says which man it means.
+  - **Ptolomie** in the chapter is the geographer, on `ptolemy`. The Ptolemy kings named only in passing were not attached. Ptolemie Lathurus is `ptolemy-lathurus`. Acon’s Ptolemy, brother of the king, is `acon-brother-of-ptolemy`.
+  - **Herod:** Herod the Great stays on the existing record. Herod Antipas, Philip the Tetrarch, Herod Agrippa, and Agrippa the younger have four new records. The bare Herodes in p02141 was not attached.
+  - **Philip:** the Tetrarch, the Apostle, and Philip king of France are three records.
+  - **Iohn:** the Apostle and Iohn of Gischala are separate. Iohn the Baptist stays on the existing record.
+  - **Benhadad and Benadad:** the king of Syria who threatened Ahab is `benhadad`. The Benadad who took the cities of Nephtalim is `benadad`. They may be the same man. They were not merged.
+  - **Baldwine:** where Raleigh numbers him, the first, second, and third are on `baldwin-the-first`, `baldwin-the-second` (new), and `baldwin-the-third`. The bare Baldwine in p02052 and p02169 was not attached.
+  - **Enoch** son of Cain is on `enoch`, as in earlier passes.
+- **Options:**
+  1. Leave these as they are.
+  2. Name a passage that should move to another record, or two records that should merge.
+- **Recommendation:** option 1. A silent merge would attach a different man.
+
+### N61. Demetrius and Antiochus
+
+- **Why it matters:** Chapter VII names several Seleucid kings in the Maccabean wars. Demetrius son of Antiochus the Great (Demetrius I Soter) was made `demetrius-son-of-antiochus-the-great` only where Raleigh says whose son he is. Antiochus son of Demetrius is `antiochus-son-of-demetrius`. Antiochus Epiphanes is on the existing `antiochus-iv-epiphanes`, and Antiochus the Great on `antiochus-the-great`. The other Demetrius and Antiochus passages, Antoninus, Apollonius, Nicephorus, Macrob, and Pharao were not attached. Raleigh does not say which man he means.
+- **Options:**
+  1. Leave those passages unattached, as now.
+  2. Name the man for a passage, and it will be attached.
+- **Recommendation:** option 1, unless you know the man.
+
+### N62. Iabin the second, 137 yeeres after the first
+
+- **Why it matters:** Raleigh says “a second King Iabin, 137. yeeres after the death of this first Iabin, inuaded the Israelites”. He adds that “he preuailed against them, and held them in a miserable seruitude twentie yeeres”. The 137 is on `jabin-the-second` as a reign statement. The 20 is on `oppression-of-jabin`. Neither has year_am or year_bc_ad. No sort year moved. N55 still keeps two Iabins.
+- **Options:**
+  1. Leave both as display statements, as now.
+  2. Use the 137 to place the second Iabin from the first. Raleigh does not print a yeere of the World, so the year would be derived.
+- **Recommendation:** option 1. Raleigh is display only.
+
+### N63. How old Tyre is
+
+- **Why it matters:** Raleigh writes “Iosephus, and 〈◊ 〉 make this Citie elder than Salomons Temple 240. yeeres: Cedrenus 361.” The second author is illegible in the EarlyPrint text. The sentence is on `founding-of-tyre` as printed, with the gap. Nothing was converted to a year. On Nebuchadnezzar, “about 200. yeeres before the victorie of Alexander” and “after thirteene yeeres siege or more” are on `nebuchadnezzar-ii`. Elulaeus’s “sixe and twentie yeeres” are on `elulaeus`. Salmanassar’s “fiue yeeres” are on `salmanassar`.
+- **Options:**
+  1. Leave the gap as printed, as now.
+  2. Supply the second author from another copy of the 1617 edition, and name the copy.
+- **Recommendation:** option 2 if you have a copy. Otherwise option 1.
+
+### N64. Figures in this chapter that have no event
+
+- **Why it matters:** A new event cannot take a sort year from Raleigh. These figures were not entered.
+  - Years after Christ in the medieval history of the cities: 363, 636, 1104, 1107, 1112, 1124, 1157, 1189, 1250, 1289, and 1291. They are not yeeres of the World. They are already in the passage text.
+  - Tyre’s spans: “about 300. yeeres” before Christ, “neere 600.” in the faith, held by the Saracens 488 yeeres, and by the Christians 165 yeeres. Origen buried “940. yeeres before”.
+  - Hazor taken by Teglatphalasar “about 260. yeeres after”.
+  - Christ at Capernaum three yeeres, and at Nazareth foure and twenty yeeres. Herod built Caesaria in twelue yeeres.
+  - The tribal musters: 41500 and 53400, 53400 and 45400, 57400 and 65000, 54400 and 64300, and 32200 and 52700.
+  - Counts of men, talents, and distances, and Iosua’s 24 kings.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them. Or say how you want medieval and New Testament dates after Christ handled.
+- **Recommendation:** option 1 for the counts. Option 2 is for you to decide for the years after Christ.
+
 ## O. Dynasty of Slaves (BLK SHP Scott, 2026)
 
 Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record of Israel in Egypt* (BLK SHP Publishing, 2026; Kindle Direct Publishing). eBook ISBN 979-8-9960110-3-2; softcover 979-8-9960110-0-1; hardcover 979-8-9960110-2-5; audiobook 979-8-9960110-1-8. © the author, all rights reserved. The dated statements are in `data/dynasty-of-slaves-dates-extract.md`. The chronology `dynasty-of-slaves` is display only. It does not set a sort year. Citations are chapter and section. The edition has no printed page numbers.
