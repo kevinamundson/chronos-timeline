@@ -10,9 +10,9 @@ Tubal in a passage or note about Cain’s line resolves to Tubal-cain. Otherwise
 
 - Tubal resolved to Tubal-cain: 9
 - Tubal resolved to Japheth’s son: 40
-- Ambiguous tokens left unlinked: 2164 occurrences, 111 distinct tokens
-- Names that match no record, in the 1617 passages and in summaries and descriptions: 42289 occurrences, 8049 distinct names
-- Capitalized words skipped as citation boilerplate or intake wording: 86988
+- Ambiguous tokens left unlinked: 2501 occurrences, 121 distinct tokens
+- Names that match no record, in the 1617 passages and in summaries and descriptions: 44563 occurrences, 8289 distinct names
+- Capitalized words skipped as citation boilerplate or intake wording: 90240
 - Overrides stored: 0
 
 ## Tubal
@@ -231,7 +231,7 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 
 ### Ioseph
 
-- Occurrences: 115
+- Occurrences: 122
 - Candidates: joseph (Joseph); joseph-husband-of-mary (Ioseph); joseph-of-arimathea (Ioseph)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
@@ -326,10 +326,16 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p02232 (Book II, Part I, Chapter IX, §. I, sig. 236b–237a) | 1 | …afterward Rama, and Ramula, the natiue Citie of Ioseph, which buried the body of Christ. There are man… |
 | p02242 (Book II, Part I, Chapter IX, §. I, sig. 237a–237b) | 1 | … the greatest part of the Land of the Sonnes of Ioseph, on the West of Iordan: seuerall parts whereof … |
 | p02243 (Book II, Part I, Chapter IX, §. I, sig. 237b) | 1 | … they make to bee the same with Dagon, of which Ioseph. 1. Bell. Iudg. c. 2. in which Castle as it is … |
+| p02435 (Book II, Part I, Chapter XII, §. I, sig. 256a–256b) | 1 | …alled Luz, and how it was taken by the issue of Ioseph( though it belonged to the portion of Beniamin,… |
+| p02437 (Book II, Part I, Chapter XII, §. I, sig. 256b) | 1 | …ing, for a part of the word, whence they thinke Ioseph of 〈◊ 〉 Matt.. 27. 57. was denominated. |
+| p02438 (Book II, Part I, Chapter XII, §. I, sig. 256b) | 1 | … Of this Rama or Ramatha I should rather thinke Ioseph was, that buried Christ: because it was neerer … |
+| p02457 (Book II, Part I, Chapter XII, §. IV, sig. 258b) | 2 | …The yongest of the sonnes of Israel hee calleth Ioseph: who being brought vp in Aegypt, became learned… |
+| p02459 (Book II, Part I, Chapter XII, §. IV, sig. 258b–259a) | 1 | … for a time in the name of Ephraim the sonne of Ioseph, the chiefe of the Patriarches of the ten Tribe… |
+| p02465 (Book II, Part I, Chapter XIII, §. I, sig. 261b–262a) | 1 | …red with variable successe: for as the house of Ioseph recouered Bethel, or Luz, from the Hittites, so… |
 
 ### Cyrus
 
-- Occurrences: 95
+- Occurrences: 98
 - Candidates: cyrus-son-of-agenor (Cyrus); cyrus-the-great (Cyrus the Great)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
@@ -382,6 +388,7 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:cyrus-the-great:name-form:4:citation | 1 | …r of Ephesus, ap. Josephus. The passage prints “Cyrus”. |
 | note:person:darius-i:dates:birth:1:note | 2 | Darius's age at the time of Cyrus's last campaign. DERIVED (not Herodotus's figur… |
 | note:person:darius-i:dates:reign:4:note | 1 | …by Zopyrus's stratagem (the first taking was by Cyrus, 1.191). |
+| note:person:darius-iii:description | 1 | … the Persians held Syria about 200 yeeres after Cyrus. He is not Darius who begged water, and not Dar… |
 | note:person:hiram-of-tyre-ii:dates:reign:2:note | 1 | Synchronism only. No year is printed for Cyrus here. |
 | note:person:hiram-of-tyre-ii:dates:reign:3:note | 1 | Body intake. His 20 yeeres, and Cyrus in his 17th. Raleigh prints Irom. Not a yeere o… |
 | note:person:hiram-of-tyre-ii:summary | 1 | …s and king of Tyre, in whose time Menander says Cyrus was king of Persia (Cory 1876). Not the Hiram w… |
@@ -413,11 +420,13 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01546 (Book I, Part I, Chapter XII, §. V, sig. 157a) | 1 | …ple of Salomon: all which vessels and ornaments Cyrus redeliuered. This temple Xerxes euened with the… |
 | p02177 (Book II, Part I, Chapter VIII, §. I, sig. 232a) | 1 | …t, came thence with his sonnes Cadmus, Phoenix, Cyrus, and clilix, ( say Cedrenus and Curtius) and bu… |
 | p02213 (Book II, Part I, Chapter VIII, §. II, sig. 234a) | 1 | …ce also, 20. yeeres. In the 17. of whose raigne Cyrus beganne to gouerne Persia. |
+| p02425 (Book II, Part I, Chapter XI, §. IV, sig. 255a–255b) | 1 | …bout 200. yeeres. After these the Persians from Cyrus to Darius their last King, held Syria about 200… |
+| p02447 (Book II, Part I, Chapter XII, §. II, sig. 257b) | 1 | …phecie of Daniel, and the Iewes by the grace of Cyrus returned: the Temple was againe built, though w… |
 
 ### Darius
 
-- Occurrences: 82
-- Candidates: darius-d31 (Darius); darius-i (Darius I)
+- Occurrences: 86
+- Candidates: darius-d31 (Darius); darius-i (Darius I); darius-iii (Darius)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
 | Unit | Count | Excerpt |
@@ -452,6 +461,8 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:darius-i:dates:reign:9:note | 2 | …4 BC; that was "the year following the death of Darius" (7.7), so Darius died about 486/485 BC; he die… |
 | note:person:darius-i:name-form:0:citation | 1 | …, 2013), p. 93 (PDF p. 95). The passage prints “Darius”. |
 | note:person:darius-i:name-form:1:citation | 1 | …r Polyhistor, ap. Eusebius. The passage prints “Darius”. |
+| note:person:darius-iii:description | 2 | Named in Raleigh's History of the World (1617). Darius their last King, with whom the Persians held Sy… |
+| note:person:darius-iii:summary | 1 | Raleigh names Darius in the History of the World (1617). |
 | note:person:dartus:description | 1 | …d before Ptolemie the second. Not folded onto a Darius record. No yeere of the World was taken for him… |
 | note:person:sanballat:description | 1 | …nabula, the satrap of Samaria who revolted from Darius to Alexander. No yeere of the World was taken f… |
 | note:person:xerxes-i:dates:reign:4:note | 2 | …4 BC; that was "the year following the death of Darius" (7.7), so Darius died about 486/485 BC; he die… |
@@ -479,6 +490,7 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p02047 (Book II, Part I, Chapter VII, §. III, subsection III, sig. 220b) | 2 | …us remembreth: and how Sanaballat reuolted from Darius, and came to Alexander with 8000. Souldiers: wh… |
 | p02194 (Book II, Part I, Chapter VIII, §. II, sig. 233a–233b) | 1 | …edon threw out, because of his dependancie vpon Darius, and that his Predecessors had serued the East … |
 | p02297 (Book II, Part I, Chapter X, §. II, sig. 241b) | 1 | …he Empire of Persia, it receiued a Garrison for Darius: in despight whereof it was by the Macedonians … |
+| p02425 (Book II, Part I, Chapter XI, §. IV, sig. 255a–255b) | 1 | … yeeres. After these the Persians from Cyrus to Darius their last King, held Syria about 200. yeeres. |
 
 ### Philip
 
@@ -593,9 +605,67 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01387 (Book I, Part I, Chapter VIII, §. XV, subsection VI, sig. 135b) | 7 | OF Hauilah the sonne of Ioctan, there is nothing else to b… |
 | p01941 (Book II, Part I, Chapter VI, §. III, sig. 209a) | 1 | …ned Israel. For Saul pursued them from Sur vnto Hauilah, to wit, ouer a great part of Arabia Petraea, a… |
 
+### Hercules
+
+- Occurrences: 74
+- Candidates: heracles (Heracles); hercules (Hercules)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:founding-of-tyre:chronologies:2:note | 1 | Priests of Melqart ("Hercules") at Tyre: the temple was as old as the city. D… |
+| note:person:antaeus:description | 1 | …ry of the World (1617). Antaeus the gyant, whom Hercules slew in Lybia; fained sonne of the Earth for ca… |
+| note:person:azonus:description | 1 | …story of the World (1617). Azonus, the sonne of Hercules, from whom the Syrians name Gaza Azan. No yeere… |
+| note:person:heracles:name-form:1:citation | 1 | …Chronicle 7. The passage prints “Heracles (i.e. Hercules) the demigod, 15 years”. |
+| note:person:hercules:dates:reign:2:note | 1 | …ge the sort. The seven years are for Typhon and Hercules together. |
+| note:person:hercules:name-form:0:citation | 1 | …apter VII, §. IV, sig. 97a. The passage prints “HERCVLES”. |
+| note:person:hercules:summary | 1 | Raleigh names Hercules in the History of the World (1617). |
+| note:person:hesione:description | 1 | …er of Priamus, carried captiue into Greece when Hercules sacked Troy, aunt whom Paris sought to recouer.… |
+| note:person:hylas:description | 1 | …tory of the World (1617). Hylas, the darling of Hercules, rauished by the Nymphes in Mysia. No yeere of … |
+| note:person:polyphemus-argonaut:description | 1 | …17). Polyphemus, the sonne of Elates, left with Hercules in Mysia, who built Cios. He is not Homers Cycl… |
+| note:person:sertorius:description | 1 | …utarke saith found a great bodie in Lybia where Hercules slew Antaeus. No yeere of the World was taken f… |
+| note:person:sistosichermes:dates:reign:1:note | 1 | Sistosichermes, the strength of Hercules. Not the demigod Heracles. |
+| note:person:typhon:dates:reign:2:note | 1 | …c_ad stays null. This does not change the sort. Hercules is printed on the same An. Mundi row. |
+| note:person:typhon:dates:reign:3:note | 1 | …ge the sort. The seven years are for Typhon and Hercules together. |
+| p00037 (Preface, sig. 10b) | 1 | …f his foure sonnes, Francis Charles, Henry, and Hercules. Of which although three of them became Kings, … |
+| p00262 (Contents, Book II, Part I, Chapter II, sig. 27b) | 1 | §. VI. Of Typhon, Hercules Aegyptius, Orus, and the two Sesostres, 〈◊ 〉 re… |
+| p00388 (Contents, Book II, Part I, Chapter XVI, sig. 31a) | 1 | …ch as liued with Samuel and Saul; of Hellen and Hercules, and of their issues, vpon occasion of the Dore… |
+| p00467 (Contents, Book II, Part I, Chapter XXV, sig. 32b) | 1 | … Candaules, Gyges, and the Kings descended from Hercules. |
+| p00977 (Book I, Part I, Chapter III, §. XIII, sig. 72a) | 1 | …lfe toward the North, as farre as the Altars of Hercules, and from thence imbraceth all that Tract of la… |
+| p01054 (Book I, Part I, Chapter V, §. VIII, sig. 85b–86a) | 1 | …t more Giganticall then the bodies of Nimrod or Hercules) hath written a large discourse, intituled Giga… |
+| p01070 (Book I, Part I, Chapter VI, §. IV, sig. 88a–88b) | 1 | …uer the power of Hell, occasioned the Fables of Hercules killing the Serpent of Hesperides, and descendi… |
+| p01083 (Book I, Part I, Chapter VI, §. V, sig. 89b) | 1 | …, by whom he had Pelasgus, Sarpedon, Argus, and Hercules: by Taygete he had Taygetus; of whom the Mounta… |
+| p01084 (Book I, Part I, Chapter VI, §. V, sig. 90a–90b) | 1 | …s in the other; the Kingdome of Aegypt giuen by Hercules Lybicus to Orus, by Bacchus to Iupiter, the Rat… |
+| p01087 (Book I, Part I, Chapter VI, §. VI, sig. 91a–91b) | 1 | … sonnes is made manifest; namely, Castor, 〈◊ 〉, Hercules, Sarpedon, and others, which liued in that age … |
+| p01124 (Book I, Part I, Chapter VII, §. IV, sig. 97a) | 5 | … which was Noah; he calleth the second Niliaca: Hercules and Prometheus then liuing, 44. yeeres before t… |
+| p01125 (Book I, Part I, Chapter VII, §. IV, sig. 97a) | 1 | …, and of one Moneths continuance in the time of Hercules and Prometheus Aegyptians: a third of two Monet… |
+| p01164 (Book I, Part I, Chapter VII, §. X, subsection IV, sig. 102b) | 2 | …Iupiter. By which meanes there it is said, that Hercules Aegyptius and Bacchus, ioyning their forces wer… |
+| p01211 (Book I, Part I, Chapter VIII, §. II, sig. 112a) | 1 | … HESIOD, and the Troian warre; and farre before HERCVLES, MVSAEVS, LINVS, CHIRON, ORPHEVS, CASTOR, POLLV… |
+| p01341 (Book I, Part I, Chapter VIII, §. XIV, sig. 131a) | 1 | … Ortelius takes to be the same which 〈◊ 〉 calls Hercules parua. Of the Casluhim and Caphtorim came the P… |
+| p01443 (Book I, Part I, Chapter X, §. VI, sig. 145b–146a) | 3 | …Saturne, the Sonne Iupiter, and the Grand-child Hercules. SATVRNI dicuntur familiarum Nobilium, Regum qu… |
+| p01619 (Book II, Part I, Chapter II, §. I, sig. 168a) | 1 | …191. Cham. 2008. 352. Osiris. 2269. 613. Typhon Hercules. 2276. 620. Orus. 2391. 735. Sesostris the grea… |
+| p01629 (Book II, Part I, Chapter II, §. V, sig. 170a–170b) | 2 | … made thus: Lehabim the sonne of Mizraim called Hercules Lybius, made warre in Italy, to reuenge his Fat… |
+| p01630 (Book II, Part I, Chapter II, §. V, sig. 170b) | 2 | Neither will this disagree with the time of Hercules Lybius his wars. For the warre which Hercules m… |
+| p01632 (Book II, Part I, Chapter II, §. VI, sig. 170b–171a) | 6 | COncerning the reigne of Typhon, and of Hercules, I finde none that precisely doth define how lo… |
+| p01976 (Book II, Part I, Chapter VI, §. VII, sig. 212b–213a) | 3 | …her Historians. To these Saint Augustine addeth Hercules; the same to whom the twelue labours are ascrib… |
+| p02047 (Book II, Part I, Chapter VII, §. III, subsection III, sig. 220b) | 3 | …ped the same Idolls that Zidon did: sauing that Hercules became their Patron in after-times. For Alexand… |
+| p02183 (Book II, Part I, Chapter VIII, §. I, sig. 232b) | 1 | …ians affirme that Atlas, Orion, Orpheus, Linus, Hercules, Prometheus, Cadmus, and others, had from them … |
+| p02297 (Book II, Part I, Chapter X, §. II, sig. 241b) | 1 | …ians Azan: of Azonus( as they say) the sonne of Hercules. Other prophane writers affirme, that it was bu… |
+| p02476 (Book II, Part I, Chapter XIII, §. II, sig. 263a–263b) | 5 | …ealth being made knowne to Pyrithous, with whom Hercules and Theseus ioyned themselues, they agreed toge… |
+| p02519 (Book II, Part I, Chapter XIII, §. V, sig. 268a–268b) | 3 | To this time are referred many deeds of Hercules, as the killing of Antaeus the gyant, who was s… |
+| p02522 (Book II, Part I, Chapter XIII, §. VI, sig. 268b) | 1 | …es of Aeacus, and fathers of Aiax and Achilles, Hercules, Theseus, Zetes and Calais the two winged sonne… |
+| p02523 (Book II, Part I, Chapter XIII, §. VI, sig. 268b) | 2 | …e and arriued shortly in Mysia, where they left Hercules and Polyphemus the sonne of Elates, who went to… |
+| p02524 (Book II, Part I, Chapter XIII, §. VI, sig. 268b–269a) | 1 | …owne in Mysia, called Cios, wherein he reigned. Hercules returned to Argos. From Mysia the Argonautes sa… |
+| p02530 (Book II, Part I, Chapter XIII, §. VI, sig. 269b–270a) | 1 | … super-fine Chymists draw the twelue labours of Hercules. Suidas thinkes that by the golden Fleece, was … |
+| p02537 (Book II, Part I, Chapter XIII, §. VII, sig. 270b) | 1 | … beganne to reigne in Troy, who at such time as Hercules sacked 〈◊ 〉, was carried away captiue with his … |
+| p02541 (Book II, Part I, Chapter XIII, §. VII, sig. 271a) | 1 | …t Theseus did many great things in imitation of Hercules, whom hee made his patterne, and was the first … |
+| p02550 (Book II, Part I, Chapter XIII, §. VIII, sig. 272b) | 1 | … honour of one Opheltus, 〈◊ 〉 〈◊ 〉. Some say by Hercules, when 〈◊ 〉 〈◊ 〉 slaine the Nemaean Lyon: but th… |
+| p02551 (Book II, Part I, Chapter XIII, §. VIII, sig. 272b–273a) | 1 | …ts in the groues where they had practised them. Hercules taught the Italians to drowne men of hay in ste… |
+| p02570 (Book II, Part I, Chapter XIII, §. VIII, sig. 276b) | 1 | …o the time of Iephta 〈◊ 〉 referred the death of Hercules, the rape of Helen by Paris, and the prouisions… |
+
 ### Ptolomie
 
-- Occurrences: 69
+- Occurrences: 70
 - Candidates: ptolemy (Ptolomie); ptolemy-son-in-law-of-simon (Ptolomie)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
@@ -655,6 +725,77 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p02385 (Book II, Part I, Chapter X, §. VII, sig. 250a) | 1 | …selues against them, for many ages. But Batanea Ptolomie setteth farther off, and to the North-East, as … |
 | p02390 (Book II, Part I, Chapter X, §. VII, sig. 250b) | 1 | …ke) Iosephus placeth Hippus, or Hippene, whence Ptolomie giues the name to the hills that compasse the p… |
 | p02397 (Book II, Part I, Chapter X, §. VII, sig. 251a–251b) | 1 | …math) vnder Palmyrene in the Countrie called by Ptolomie Trachonitis. or Bathanaea, the bounds of which … |
+| p02424 (Book II, Part I, Chapter XI, §. IV, sig. 255a) | 1 | …people captiue. And his sonne Salmanassar, whom Ptolomie calleth 〈◊ 〉, after the reuolt of Hosea, forced… |
+
+### Ammon
+
+- Occurrences: 69
+- Candidates: ammon (Ammon); amnon (Ammon)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:abdon-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:ammonite-and-philistine-oppression:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:ammonite-and-philistine-oppression:summary | 2 | …hands of the Philistines and of the children of Ammon; Ammon vexes Gilead eighteen years (Judg 10:6–9… |
+| note:event:battle-of-aphek:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:battle-of-mizpah:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:crossing-the-jordan:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:death-of-joshua:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:deborah-and-barak:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:division-of-the-land:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:ehud-delivers-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:elon-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:gideon-defeats-midian:chronologies:5:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:ibzan-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:jair-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:jephthah-defeats-ammon:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:jephthah-defeats-ammon:summary | 2 | Jephthah the Gileadite answers the king of Ammon that Israel has held Heshbon and the Arnon citi… |
+| note:event:midianite-oppression:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:oppression-of-cushan-rishathaim:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:oppression-of-eglon:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:oppression-of-eglon:summary | 1 | Eglon of Moab, with Ammon and Amalek, takes the city of palm trees; Israe… |
+| note:event:oppression-of-jabin:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:othniel-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:reign-of-abimelech:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:saul-made-king:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:event:tola-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:person:ahinoam:description | 1 | …17). Achinoan, the wife of Dauid, the mother of Ammon. No yeere of the World was taken for her. Displ… |
+| note:person:ammon:summary | 1 | Ammon is named in Cory, Ancient Fragments (1876, ed. … |
+| note:person:amnon:description | 2 | Named in Raleigh's History of the World (1617). Ammon, sonne of Achinoan and Dauid, whom Absalom slew… |
+| note:person:amnon:summary | 1 | Raleigh names Ammon in the History of the World (1617). |
+| note:person:david:dates:birth:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:person:eli:dates:death:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:person:samson:dates:birth:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:person:samson:dates:death:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:person:samuel:dates:birth:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| note:person:samuel:dates:death:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
+| p00344 (Contents, Book II, Part I, Chapter X, sig. 29b) | 1 | …†. I. THe seats and bounds of Midian, Moab, and Ammon; part whereof the Reubenites wanne from Sehon K… |
+| p00349 (Contents, Book II, Part I, Chapter X, sig. 29b) | 1 | …ces of the Gadites, and the bordering places of Ammon. |
+| p00484 (Contents, Book II, Part I, Chapter XXVIII, sig. 33b) | 1 | §. I. OF Ammon and Iosias. |
+| p01057 (Book I, Part I, Chapter V, §. VIII, sig. 86a–86b) | 1 | …: Likewise, where Moses speaketh of the Land of Ammon, he vseth these words: That also was taken for … |
+| p02024 (Book II, Part I, Chapter VII, §. II, sig. 218a) | 1 | …to Basan or Batanea, into Gilead, Moab, Midian, Ammon, and the Territories of the 〈◊ 〉, Gessuri, Argo… |
+| p02073 (Book II, Part I, Chapter VII, §. III, subsection VII, sig. 223a) | 1 | …proued: there are others also besides these, as Ammon or Chammon, of which Ios. 19. 28. where also we… |
+| p02218 (Book II, Part I, Chapter VIII, §. III, sig. 235a–235b) | 1 | …league with Israel. For Dauid had subdued Moab, Ammon, Edom, the Aramites, and a great part of Arabia… |
+| p02328 (Book II, Part I, Chapter X, §. III, sig. 243b) | 1 | …Achinoan, the wife of Dauid, the mother of that Ammon, whom 〈◊ 〉 slew: also as some thinke the Citie … |
+| p02332 (Book II, Part I, Chapter X, §. IV, subsection I, sig. 244a) | 1 | …. I. The seates and bounds of Midian, Moab, and Ammon, part whereof the Reubenites wanne from SEHON K… |
+| p02333 (Book II, Part I, Chapter X, §. IV, subsection I, sig. 244a) | 1 | …g of their borderers: to wit, Midian, Moab, and Ammon, whose land in our writers are confusedly descr… |
+| p02336 (Book II, Part I, Chapter X, §. IV, subsection I, sig. 244a) | 1 | Ammon sate downe on the North-east side of Arnon, and… |
+| p02338 (Book II, Part I, Chapter X, §. IV, subsection I, sig. 244b) | 1 | … the Amorites, and not in the handes of Moab or Ammon: who( saith lephtab) had three hundred yeeres t… |
+| p02340 (Book II, Part I, Chapter X, §. IV, subsection I, sig. 244b) | 5 | …guish them: so also were the sonnes of Moab and Ammon, Midian, Amalek, and Ismael. Yet the reason see… |
+| p02352 (Book II, Part I, Chapter X, §. IV, subsection III, sig. 246a) | 1 | …tes, Edomites, or Idumaeans, the Lands of Moab, Ammon, Hus, Sin, and of Og King of Basan, were parts … |
+| p02360 (Book II, Part I, Chapter X, §. IV, subsection V, sig. 246b–247a) | 1 | …finde Eglon King of Moab, who with the helpe of Ammon, and Amalec, mastered Israel and commanded them… |
+| p02363 (Book II, Part I, Chapter X, §. V, sig. 247a) | 1 | …ces of the Gadites, and the bordering places of Ammon. |
+| p02375 (Book II, Part I, Chapter X, §. V, sig. 248b–249a) | 1 | …remembred a in the 14. of Genesis) made way for Ammon, 〈◊ 〉, and Edom, so by that great conquest whic… |
+| p02376 (Book II, Part I, Chapter X, §. V, sig. 249a) | 1 | …tie and rich crowne of gold, which the Kings of Ammon ware: or which as some expound it, was vsed to … |
+| p02379 (Book II, Part I, Chapter X, §. VI, sig. 249b) | 1 | …l had a great conquest ouer one of the Kings of Ammon, but his name is omitted. In the time of Samuel… |
+| p02397 (Book II, Part I, Chapter X, §. VII, sig. 251a–251b) | 1 | …t is like that the Amorites who had beaten both Ammon and Moab, did also driue the Edomites out of th… |
+| p02474 (Book II, Part I, Chapter XIII, §. II, sig. 263a) | 1 | …them: to performe which he ioyned the forces of Ammon, and Amalec vnto his owne, and so( as all kinde… |
+| p02557 (Book II, Part I, Chapter XIII, §. VIII, sig. 273b) | 1 | …r after victorie. And when he had disputed with Ammon for the Land, disproued Ammons right, and forti… |
+| p02559 (Book II, Part I, Chapter XIII, §. VIII, sig. 274a) | 1 | …he first is in this dispute betweene Iephta and Ammon, for the right and possession of 〈◊ 〉: the seco… |
+| p02561 (Book II, Part I, Chapter XIII, §. VIII, sig. 274a–274b) | 2 | … herein: for in the dispute betweene Iephta and Ammon for the Land of Gilead, it is written in the pe… |
+| p02562 (Book II, Part I, Chapter XIII, §. VIII, sig. 274b) | 1 | …ssed it, Sehon and Og had dispossessed Moab and Ammon thereof: so that when the Israelites had conque… |
+| p02571 (Book II, Part I, Chapter XIII, §. VIII, sig. 276b) | 1 | …against their owne brethren the Israelites? But Ammon being ouerthrowne, it seemed at that time, that… |
 
 ### Iohn
 
@@ -781,120 +922,9 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p02192 (Book II, Part I, Chapter VIII, §. II, sig. 233a) | 2 | In Xerxes time, and when he prepared that incredible Armi… |
 | p02194 (Book II, Part I, Chapter VIII, §. II, sig. 233a–233b) | 1 | …consumed 130. yeeres and somewhat more betweene Xerxes and Alexander Macedon. And this man was by Alex… |
 
-### Ammon
-
-- Occurrences: 62
-- Candidates: ammon (Ammon); amnon (Ammon)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:event:abdon-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:ammonite-and-philistine-oppression:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:ammonite-and-philistine-oppression:summary | 2 | …hands of the Philistines and of the children of Ammon; Ammon vexes Gilead eighteen years (Judg 10:6–9… |
-| note:event:battle-of-aphek:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:battle-of-mizpah:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:crossing-the-jordan:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:death-of-joshua:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:deborah-and-barak:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:division-of-the-land:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:ehud-delivers-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:elon-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:gideon-defeats-midian:chronologies:5:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:ibzan-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:jair-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:jephthah-defeats-ammon:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:jephthah-defeats-ammon:summary | 2 | Jephthah the Gileadite answers the king of Ammon that Israel has held Heshbon and the Arnon citi… |
-| note:event:midianite-oppression:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:oppression-of-cushan-rishathaim:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:oppression-of-eglon:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:oppression-of-eglon:summary | 1 | Eglon of Moab, with Ammon and Amalek, takes the city of palm trees; Israe… |
-| note:event:oppression-of-jabin:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:othniel-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:reign-of-abimelech:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:saul-made-king:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:event:tola-judges-israel:chronologies:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:person:ahinoam:description | 1 | …17). Achinoan, the wife of Dauid, the mother of Ammon. No yeere of the World was taken for her. Displ… |
-| note:person:ammon:summary | 1 | Ammon is named in Cory, Ancient Fragments (1876, ed. … |
-| note:person:amnon:description | 2 | Named in Raleigh's History of the World (1617). Ammon, sonne of Achinoan and Dauid, whom Absalom slew… |
-| note:person:amnon:summary | 1 | Raleigh names Ammon in the History of the World (1617). |
-| note:person:david:dates:birth:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:person:eli:dates:death:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:person:samson:dates:birth:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:person:samson:dates:death:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:person:samuel:dates:birth:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| note:person:samuel:dates:death:4:note | 1 | … he there ends the 300 years of Judg 11:26 when Ammon took the villages, AM 2860, not at Jephthah's v… |
-| p00344 (Contents, Book II, Part I, Chapter X, sig. 29b) | 1 | …†. I. THe seats and bounds of Midian, Moab, and Ammon; part whereof the Reubenites wanne from Sehon K… |
-| p00349 (Contents, Book II, Part I, Chapter X, sig. 29b) | 1 | …ces of the Gadites, and the bordering places of Ammon. |
-| p00484 (Contents, Book II, Part I, Chapter XXVIII, sig. 33b) | 1 | §. I. OF Ammon and Iosias. |
-| p01057 (Book I, Part I, Chapter V, §. VIII, sig. 86a–86b) | 1 | …: Likewise, where Moses speaketh of the Land of Ammon, he vseth these words: That also was taken for … |
-| p02024 (Book II, Part I, Chapter VII, §. II, sig. 218a) | 1 | …to Basan or Batanea, into Gilead, Moab, Midian, Ammon, and the Territories of the 〈◊ 〉, Gessuri, Argo… |
-| p02073 (Book II, Part I, Chapter VII, §. III, subsection VII, sig. 223a) | 1 | …proued: there are others also besides these, as Ammon or Chammon, of which Ios. 19. 28. where also we… |
-| p02218 (Book II, Part I, Chapter VIII, §. III, sig. 235a–235b) | 1 | …league with Israel. For Dauid had subdued Moab, Ammon, Edom, the Aramites, and a great part of Arabia… |
-| p02328 (Book II, Part I, Chapter X, §. III, sig. 243b) | 1 | …Achinoan, the wife of Dauid, the mother of that Ammon, whom 〈◊ 〉 slew: also as some thinke the Citie … |
-| p02332 (Book II, Part I, Chapter X, §. IV, subsection I, sig. 244a) | 1 | …. I. The seates and bounds of Midian, Moab, and Ammon, part whereof the Reubenites wanne from SEHON K… |
-| p02333 (Book II, Part I, Chapter X, §. IV, subsection I, sig. 244a) | 1 | …g of their borderers: to wit, Midian, Moab, and Ammon, whose land in our writers are confusedly descr… |
-| p02336 (Book II, Part I, Chapter X, §. IV, subsection I, sig. 244a) | 1 | Ammon sate downe on the North-east side of Arnon, and… |
-| p02338 (Book II, Part I, Chapter X, §. IV, subsection I, sig. 244b) | 1 | … the Amorites, and not in the handes of Moab or Ammon: who( saith lephtab) had three hundred yeeres t… |
-| p02340 (Book II, Part I, Chapter X, §. IV, subsection I, sig. 244b) | 5 | …guish them: so also were the sonnes of Moab and Ammon, Midian, Amalek, and Ismael. Yet the reason see… |
-| p02352 (Book II, Part I, Chapter X, §. IV, subsection III, sig. 246a) | 1 | …tes, Edomites, or Idumaeans, the Lands of Moab, Ammon, Hus, Sin, and of Og King of Basan, were parts … |
-| p02360 (Book II, Part I, Chapter X, §. IV, subsection V, sig. 246b–247a) | 1 | …finde Eglon King of Moab, who with the helpe of Ammon, and Amalec, mastered Israel and commanded them… |
-| p02363 (Book II, Part I, Chapter X, §. V, sig. 247a) | 1 | …ces of the Gadites, and the bordering places of Ammon. |
-| p02375 (Book II, Part I, Chapter X, §. V, sig. 248b–249a) | 1 | …remembred a in the 14. of Genesis) made way for Ammon, 〈◊ 〉, and Edom, so by that great conquest whic… |
-| p02376 (Book II, Part I, Chapter X, §. V, sig. 249a) | 1 | …tie and rich crowne of gold, which the Kings of Ammon ware: or which as some expound it, was vsed to … |
-| p02379 (Book II, Part I, Chapter X, §. VI, sig. 249b) | 1 | …l had a great conquest ouer one of the Kings of Ammon, but his name is omitted. In the time of Samuel… |
-| p02397 (Book II, Part I, Chapter X, §. VII, sig. 251a–251b) | 1 | …t is like that the Amorites who had beaten both Ammon and Moab, did also driue the Edomites out of th… |
-
-### Antiochus
-
-- Occurrences: 53
-- Candidates: antiochus-of-ascalon (Antiochus); antiochus-son-of-demetrius (Antiochus); antiochus-the-great (Antiochus the Great)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:event:antiochus-plunders-the-temple:chronologies:1:note | 3 | … The row does not cite a verse. The later line "Antiochus offers a sow on the altar" is on antiochus-prof… |
-| note:event:antiochus-plunders-the-temple:description | 1 | Jones dates Antiochus Epiphanes plundering the Temple. The year is th… |
-| note:event:antiochus-profanes-the-altar:chronologies:1:note | 2 | The row does not cite a verse. Daniel 11:31 is the obviou… |
-| note:event:antiochus-profanes-the-altar:description | 1 | Jones dates Antiochus offering a sow on the altar. The year is the Ap… |
-| note:event:antiochus-profanes-the-altar:summary | 1 | Jones dates Antiochus offering a sow on the altar. |
-| note:event:battle-of-raphia:chronologies:1:note | 1 | Ptolemy IV defeats Antiochus III. |
-| note:event:dispersion:description | 1 | …95 years from Ninus to the defeat of Philip and Antiochus; Eratosthenes, 1,008 years from Menes to the Fa… |
-| note:event:persecution-under-antiochus-iv:summary | 1 | Persecution of the Jews under Antiochus IV |
-| note:event:seleucid-conquest-of-judea:summary | 1 | Antiochus III takes Judea from the Ptolemies |
-| note:person:antiochus-of-ascalon:description | 1 | Named in Raleigh's History of the World (1617). Antiochus, a learned man of Ascalon. He is not Antiochus … |
-| note:person:antiochus-of-ascalon:summary | 1 | Raleigh names Antiochus in the History of the World (1617). |
-| note:person:antiochus-son-of-demetrius:description | 1 | …d in Raleigh's History of the World (1617). The Antiochus, sonne of Demetrius, who pursued Tryphon and be… |
-| note:person:antiochus-son-of-demetrius:summary | 1 | Raleigh names Antiochus in the History of the World (1617). |
-| note:person:antiochus-the-great:name-form:0:citation | 1 | …art I, Chapter V, sig. 41a. The passage prints “Antiochus”. |
-| note:person:cendebaeus:description | 1 | … of the World (1617). Cendebaeus, Lieutenant of Antiochus, who fortified Cedron against the Iewes. No yee… |
-| note:person:gorgias:description | 1 | …ory of the World (1617). Gorgias, Lieutenant to Antiochus, ouerthrown by Iudas Macchabaeus. No yeere of t… |
-| note:person:judas-maccabeus:summary | 1 | Leader of the Jewish revolt against Antiochus IV. |
-| note:person:lysias:description | 1 | …tory of the World (1617). Lysias, Lieutenant to Antiochus, overthrown by Iudas Macchabaeus neere Bethoron… |
-| note:person:seron:description | 1 | …story of the World (1617). Seron, Lieutenant to Antiochus, overthrown by Iudas Macchabaeus neere Bethoron… |
-| p00778 (Contents, Book V, Part I, Chapter V, sig. 41a) | 5 | §. II. The beginning of the great Antiochus his reigne. Of Ptolemie Euergetes and Philopato… |
-| p00779 (Contents, Book V, Part I, Chapter V, sig. 41a) | 1 | …icall end of his Fauourites, when hee was dead. Antiochus prepares to warre on the yong childe Ptolemie E… |
-| p00780 (Contents, Book V, Part I, Chapter V, sig. 41a–41b) | 3 | …I. The Romans hold friendly correspondence with Antiochus, during their warre with Philip: after whith th… |
-| p00782 (Contents, Book V, Part I, Chapter V, sig. 41b) | 2 | §. VI. The Aetolians labour to prouoke Antiochus, Philip, and Nabis, to warre vpon the Romans; b… |
-| p00783 (Contents, Book V, Part I, Chapter V, sig. 41b) | 3 | §. VII. Antiochus, perswaded by Thoas the Aetolian, comes ouer in… |
-| p00784 (Contents, Book V, Part I, Chapter V, sig. 41b) | 3 | …ns. L. Scipio the Consul comes into Asia: where Antiochus most 〈◊ 〉 〈◊ 〉 desireth peace, and is denyed it… |
-| p00787 (Contents, Book V, Part I, Chapter VI, sig. 42a) | 1 | …e Associates of the Romans, when the Warre with Antiochus was finished. The Romans quarrell with Philip. … |
-| p00793 (Contents, Book V, Part I, Chapter VI, sig. 42a–42b) | 1 | …auerse from the Romans. Perseus negotiates with Antiochus and Eumenes. His false dealing with Gentius Kin… |
-| p00797 (Contents, Book V, Part I, Chapter VI, sig. 42b) | 1 | §. XI. The warre of Antiochus vpon Aegypt, brought to end by the Roman Embass… |
-| p01235 (Book I, Part I, Chapter VIII, §. V, sig. 116b–117a) | 1 | …e Berosus wrote onely three Books, dedicated to Antiochus the successor of Seleucus Nicanor: but Annius h… |
-| p01338 (Book I, Part I, Chapter VIII, §. XIV, sig. 130b–131a) | 1 | … as after the names of Alexander, Seleucus, and Antiochus, many Cities called Alexandria, Seleucia, and A… |
-| p02057 (Book II, Part I, Chapter VII, §. III, subsection IV, sig. 221b) | 1 | …w Alexander, which called himselfe the sonne of Antiochus Epiphanes: the same Alexander hauing married Cl… |
-| p02167 (Book II, Part I, Chapter VII, §. VII, subsection II, sig. 231a) | 2 | …ie, for the strength thereof, Tryphon fled from Antiochus the sonne of Demetrius: where he was by the sam… |
-| p02229 (Book II, Part I, Chapter IX, §. I, sig. 236b) | 1 | …aeus ouerthrew Seron and Lysias, Lieutenants to Antiochus. This Citie had Salomon formerly repaired and f… |
-| p02285 (Book II, Part I, Chapter X, §. I, sig. 240b) | 1 | … 15. Cedron, which Cendebaeus the Lieutenant of Antiochus fortified against the Iewes, and neere which hi… |
-| p02294 (Book II, Part I, Chapter X, §. II, sig. 241a) | 1 | … It bred many learned men( saith Volaterran) as Antiochus, Sosus, Cygnus, Dorotheus the Historian, and Ar… |
-| p02301 (Book II, Part I, Chapter X, §. II, sig. 241b) | 1 | …en Raphia, where Philopater ouerthrew the great Antiochus: and beyond it Rhinocura, whose Torrent is know… |
-| p02319 (Book II, Part I, Chapter X, §. III, sig. 243a) | 1 | …gaue a third ouerthrow to Gorgias Lieutenant to Antiochus. |
-| p02325 (Book II, Part I, Chapter X, §. III, sig. 243a–243b) | 1 | …se Hills adioyning the glorious gilt shields of Antiochus shined like lamps of fire in the eies of the le… |
-
 ### Manasse
 
-- Occurrences: 52
+- Occurrences: 56
 - Candidates: manasse-son-in-law-of-sanballat (Manasse); manasseh (Manasseh (son of Joseph))
 - Reason: This token matches more than one person. No context rule or override selects one.
 
@@ -944,10 +974,62 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p02385 (Book II, Part I, Chapter X, §. VII, sig. 250a) | 1 | … and Auranitis) was giuen to the halfe Tribe of Manasse ouer Iordan, of which those three later Prouinc… |
 | p02386 (Book II, Part I, Chapter X, §. VII, sig. 250a) | 1 | …g and his sonnes were slaine, Iair descended of Manasse conquered, and called the Countrie after his ow… |
 | p02402 (Book II, Part I, Chapter X, §. VII, sig. 252a) | 1 | …other. In the North side of this halfe Tribe of Manasse, and in the North-east, the Scripture nameth di… |
+| p02414 (Book II, Part I, Chapter XI, §. II, sig. 254a–254b) | 1 | …ead, and all those portions of Gad, Reuben, and Manasse, ouer Iordan. Hee then inuaded Iuda, and tooke … |
+| p02442 (Book II, Part I, Chapter XII, §. II, sig. 257a) | 1 | …h by the riuer of Iordan, in the halfe Tribe of Manasse bordering Zabulon, which was also called Salem,… |
+| p02446 (Book II, Part I, Chapter XII, §. II, sig. 257b) | 1 | …Teglatphalassar with the treasures thereof. And Manasse the sonne of Ezekiah, the sonne of Achaz, by th… |
+| p02512 (Book II, Part I, Chapter XIII, §. V, sig. 267b) | 1 | … out of Nephtalie, and out of Asher, and out of Manasse, pursued after the Midianites: for this armie G… |
+
+### Antiochus
+
+- Occurrences: 54
+- Candidates: antiochus-of-ascalon (Antiochus); antiochus-son-of-demetrius (Antiochus); antiochus-the-great (Antiochus the Great)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:antiochus-plunders-the-temple:chronologies:1:note | 3 | … The row does not cite a verse. The later line "Antiochus offers a sow on the altar" is on antiochus-prof… |
+| note:event:antiochus-plunders-the-temple:description | 1 | Jones dates Antiochus Epiphanes plundering the Temple. The year is th… |
+| note:event:antiochus-profanes-the-altar:chronologies:1:note | 2 | The row does not cite a verse. Daniel 11:31 is the obviou… |
+| note:event:antiochus-profanes-the-altar:description | 1 | Jones dates Antiochus offering a sow on the altar. The year is the Ap… |
+| note:event:antiochus-profanes-the-altar:summary | 1 | Jones dates Antiochus offering a sow on the altar. |
+| note:event:battle-of-raphia:chronologies:1:note | 1 | Ptolemy IV defeats Antiochus III. |
+| note:event:dispersion:description | 1 | …95 years from Ninus to the defeat of Philip and Antiochus; Eratosthenes, 1,008 years from Menes to the Fa… |
+| note:event:persecution-under-antiochus-iv:summary | 1 | Persecution of the Jews under Antiochus IV |
+| note:event:seleucid-conquest-of-judea:summary | 1 | Antiochus III takes Judea from the Ptolemies |
+| note:person:antiochus-of-ascalon:description | 1 | Named in Raleigh's History of the World (1617). Antiochus, a learned man of Ascalon. He is not Antiochus … |
+| note:person:antiochus-of-ascalon:summary | 1 | Raleigh names Antiochus in the History of the World (1617). |
+| note:person:antiochus-son-of-demetrius:description | 1 | …d in Raleigh's History of the World (1617). The Antiochus, sonne of Demetrius, who pursued Tryphon and be… |
+| note:person:antiochus-son-of-demetrius:summary | 1 | Raleigh names Antiochus in the History of the World (1617). |
+| note:person:antiochus-the-great:name-form:0:citation | 1 | …art I, Chapter V, sig. 41a. The passage prints “Antiochus”. |
+| note:person:cendebaeus:description | 1 | … of the World (1617). Cendebaeus, Lieutenant of Antiochus, who fortified Cedron against the Iewes. No yee… |
+| note:person:gorgias:description | 1 | …ory of the World (1617). Gorgias, Lieutenant to Antiochus, ouerthrown by Iudas Macchabaeus. No yeere of t… |
+| note:person:judas-maccabeus:summary | 1 | Leader of the Jewish revolt against Antiochus IV. |
+| note:person:lysias:description | 1 | …tory of the World (1617). Lysias, Lieutenant to Antiochus, overthrown by Iudas Macchabaeus neere Bethoron… |
+| note:person:seron:description | 1 | …story of the World (1617). Seron, Lieutenant to Antiochus, overthrown by Iudas Macchabaeus neere Bethoron… |
+| p00778 (Contents, Book V, Part I, Chapter V, sig. 41a) | 5 | §. II. The beginning of the great Antiochus his reigne. Of Ptolemie Euergetes and Philopato… |
+| p00779 (Contents, Book V, Part I, Chapter V, sig. 41a) | 1 | …icall end of his Fauourites, when hee was dead. Antiochus prepares to warre on the yong childe Ptolemie E… |
+| p00780 (Contents, Book V, Part I, Chapter V, sig. 41a–41b) | 3 | …I. The Romans hold friendly correspondence with Antiochus, during their warre with Philip: after whith th… |
+| p00782 (Contents, Book V, Part I, Chapter V, sig. 41b) | 2 | §. VI. The Aetolians labour to prouoke Antiochus, Philip, and Nabis, to warre vpon the Romans; b… |
+| p00783 (Contents, Book V, Part I, Chapter V, sig. 41b) | 3 | §. VII. Antiochus, perswaded by Thoas the Aetolian, comes ouer in… |
+| p00784 (Contents, Book V, Part I, Chapter V, sig. 41b) | 3 | …ns. L. Scipio the Consul comes into Asia: where Antiochus most 〈◊ 〉 〈◊ 〉 desireth peace, and is denyed it… |
+| p00787 (Contents, Book V, Part I, Chapter VI, sig. 42a) | 1 | …e Associates of the Romans, when the Warre with Antiochus was finished. The Romans quarrell with Philip. … |
+| p00793 (Contents, Book V, Part I, Chapter VI, sig. 42a–42b) | 1 | …auerse from the Romans. Perseus negotiates with Antiochus and Eumenes. His false dealing with Gentius Kin… |
+| p00797 (Contents, Book V, Part I, Chapter VI, sig. 42b) | 1 | §. XI. The warre of Antiochus vpon Aegypt, brought to end by the Roman Embass… |
+| p01235 (Book I, Part I, Chapter VIII, §. V, sig. 116b–117a) | 1 | …e Berosus wrote onely three Books, dedicated to Antiochus the successor of Seleucus Nicanor: but Annius h… |
+| p01338 (Book I, Part I, Chapter VIII, §. XIV, sig. 130b–131a) | 1 | … as after the names of Alexander, Seleucus, and Antiochus, many Cities called Alexandria, Seleucia, and A… |
+| p02057 (Book II, Part I, Chapter VII, §. III, subsection IV, sig. 221b) | 1 | …w Alexander, which called himselfe the sonne of Antiochus Epiphanes: the same Alexander hauing married Cl… |
+| p02167 (Book II, Part I, Chapter VII, §. VII, subsection II, sig. 231a) | 2 | …ie, for the strength thereof, Tryphon fled from Antiochus the sonne of Demetrius: where he was by the sam… |
+| p02229 (Book II, Part I, Chapter IX, §. I, sig. 236b) | 1 | …aeus ouerthrew Seron and Lysias, Lieutenants to Antiochus. This Citie had Salomon formerly repaired and f… |
+| p02285 (Book II, Part I, Chapter X, §. I, sig. 240b) | 1 | … 15. Cedron, which Cendebaeus the Lieutenant of Antiochus fortified against the Iewes, and neere which hi… |
+| p02294 (Book II, Part I, Chapter X, §. II, sig. 241a) | 1 | … It bred many learned men( saith Volaterran) as Antiochus, Sosus, Cygnus, Dorotheus the Historian, and Ar… |
+| p02301 (Book II, Part I, Chapter X, §. II, sig. 241b) | 1 | …en Raphia, where Philopater ouerthrew the great Antiochus: and beyond it Rhinocura, whose Torrent is know… |
+| p02319 (Book II, Part I, Chapter X, §. III, sig. 243a) | 1 | …gaue a third ouerthrow to Gorgias Lieutenant to Antiochus. |
+| p02325 (Book II, Part I, Chapter X, §. III, sig. 243a–243b) | 1 | …se Hills adioyning the glorious gilt shields of Antiochus shined like lamps of fire in the eies of the le… |
+| p02433 (Book II, Part I, Chapter XII, §. I, sig. 256a) | 1 | …d) when Hierusalem was held by the wicked vnder Antiochus, so also in the time of Hieremie, after the des… |
 
 ### Sheba
 
-- Occurrences: 52
+- Occurrences: 53
 - Candidates: sheba-son-of-joktan (Sheba (son of Joktan)); sheba-son-of-raamah (Sheba (son of Raamah))
 - Reason: This token matches more than one person. No context rule or override selects one.
 
@@ -980,48 +1062,7 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01377 (Book I, Part I, Chapter VIII, §. XV, subsection IV, sig. 134a) | 3 | …nes, there were only three memorable, ( to wit) Sheba, Ophir, and Hauilah. Concerning whose names, to… |
 | p01430 (Book I, Part I, Chapter X, §. III, sig. 143a–144b) | 1 | …tofore noted) the Arabians( that descended from Sheba and Raamah) dwelling on the East bankes of the … |
 | p01590 (Book II, Part I, Chapter I, §. VIII, sig. 164a) | 2 | … Hauila, Sabta, Raama and 〈◊ 〉: and Raama begat Sheba and Dedan, before Nimrod was borne, as it appea… |
-
-### Hercules
-
-- Occurrences: 51
-- Candidates: heracles (Heracles); hercules (Hercules)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:event:founding-of-tyre:chronologies:2:note | 1 | Priests of Melqart ("Hercules") at Tyre: the temple was as old as the city. D… |
-| note:person:azonus:description | 1 | …story of the World (1617). Azonus, the sonne of Hercules, from whom the Syrians name Gaza Azan. No yeere… |
-| note:person:heracles:name-form:1:citation | 1 | …Chronicle 7. The passage prints “Heracles (i.e. Hercules) the demigod, 15 years”. |
-| note:person:hercules:dates:reign:2:note | 1 | …ge the sort. The seven years are for Typhon and Hercules together. |
-| note:person:hercules:name-form:0:citation | 1 | …apter VII, §. IV, sig. 97a. The passage prints “HERCVLES”. |
-| note:person:hercules:summary | 1 | Raleigh names Hercules in the History of the World (1617). |
-| note:person:sistosichermes:dates:reign:1:note | 1 | Sistosichermes, the strength of Hercules. Not the demigod Heracles. |
-| note:person:typhon:dates:reign:2:note | 1 | …c_ad stays null. This does not change the sort. Hercules is printed on the same An. Mundi row. |
-| note:person:typhon:dates:reign:3:note | 1 | …ge the sort. The seven years are for Typhon and Hercules together. |
-| p00037 (Preface, sig. 10b) | 1 | …f his foure sonnes, Francis Charles, Henry, and Hercules. Of which although three of them became Kings, … |
-| p00262 (Contents, Book II, Part I, Chapter II, sig. 27b) | 1 | §. VI. Of Typhon, Hercules Aegyptius, Orus, and the two Sesostres, 〈◊ 〉 re… |
-| p00388 (Contents, Book II, Part I, Chapter XVI, sig. 31a) | 1 | …ch as liued with Samuel and Saul; of Hellen and Hercules, and of their issues, vpon occasion of the Dore… |
-| p00467 (Contents, Book II, Part I, Chapter XXV, sig. 32b) | 1 | … Candaules, Gyges, and the Kings descended from Hercules. |
-| p00977 (Book I, Part I, Chapter III, §. XIII, sig. 72a) | 1 | …lfe toward the North, as farre as the Altars of Hercules, and from thence imbraceth all that Tract of la… |
-| p01054 (Book I, Part I, Chapter V, §. VIII, sig. 85b–86a) | 1 | …t more Giganticall then the bodies of Nimrod or Hercules) hath written a large discourse, intituled Giga… |
-| p01070 (Book I, Part I, Chapter VI, §. IV, sig. 88a–88b) | 1 | …uer the power of Hell, occasioned the Fables of Hercules killing the Serpent of Hesperides, and descendi… |
-| p01083 (Book I, Part I, Chapter VI, §. V, sig. 89b) | 1 | …, by whom he had Pelasgus, Sarpedon, Argus, and Hercules: by Taygete he had Taygetus; of whom the Mounta… |
-| p01084 (Book I, Part I, Chapter VI, §. V, sig. 90a–90b) | 1 | …s in the other; the Kingdome of Aegypt giuen by Hercules Lybicus to Orus, by Bacchus to Iupiter, the Rat… |
-| p01087 (Book I, Part I, Chapter VI, §. VI, sig. 91a–91b) | 1 | … sonnes is made manifest; namely, Castor, 〈◊ 〉, Hercules, Sarpedon, and others, which liued in that age … |
-| p01124 (Book I, Part I, Chapter VII, §. IV, sig. 97a) | 5 | … which was Noah; he calleth the second Niliaca: Hercules and Prometheus then liuing, 44. yeeres before t… |
-| p01125 (Book I, Part I, Chapter VII, §. IV, sig. 97a) | 1 | …, and of one Moneths continuance in the time of Hercules and Prometheus Aegyptians: a third of two Monet… |
-| p01164 (Book I, Part I, Chapter VII, §. X, subsection IV, sig. 102b) | 2 | …Iupiter. By which meanes there it is said, that Hercules Aegyptius and Bacchus, ioyning their forces wer… |
-| p01211 (Book I, Part I, Chapter VIII, §. II, sig. 112a) | 1 | … HESIOD, and the Troian warre; and farre before HERCVLES, MVSAEVS, LINVS, CHIRON, ORPHEVS, CASTOR, POLLV… |
-| p01341 (Book I, Part I, Chapter VIII, §. XIV, sig. 131a) | 1 | … Ortelius takes to be the same which 〈◊ 〉 calls Hercules parua. Of the Casluhim and Caphtorim came the P… |
-| p01443 (Book I, Part I, Chapter X, §. VI, sig. 145b–146a) | 3 | …Saturne, the Sonne Iupiter, and the Grand-child Hercules. SATVRNI dicuntur familiarum Nobilium, Regum qu… |
-| p01619 (Book II, Part I, Chapter II, §. I, sig. 168a) | 1 | …191. Cham. 2008. 352. Osiris. 2269. 613. Typhon Hercules. 2276. 620. Orus. 2391. 735. Sesostris the grea… |
-| p01629 (Book II, Part I, Chapter II, §. V, sig. 170a–170b) | 2 | … made thus: Lehabim the sonne of Mizraim called Hercules Lybius, made warre in Italy, to reuenge his Fat… |
-| p01630 (Book II, Part I, Chapter II, §. V, sig. 170b) | 2 | Neither will this disagree with the time of Hercules Lybius his wars. For the warre which Hercules m… |
-| p01632 (Book II, Part I, Chapter II, §. VI, sig. 170b–171a) | 6 | COncerning the reigne of Typhon, and of Hercules, I finde none that precisely doth define how lo… |
-| p01976 (Book II, Part I, Chapter VI, §. VII, sig. 212b–213a) | 3 | …her Historians. To these Saint Augustine addeth Hercules; the same to whom the twelue labours are ascrib… |
-| p02047 (Book II, Part I, Chapter VII, §. III, subsection III, sig. 220b) | 3 | …ped the same Idolls that Zidon did: sauing that Hercules became their Patron in after-times. For Alexand… |
-| p02183 (Book II, Part I, Chapter VIII, §. I, sig. 232b) | 1 | …ians affirme that Atlas, Orion, Orpheus, Linus, Hercules, Prometheus, Cadmus, and others, had from them … |
-| p02297 (Book II, Part I, Chapter X, §. II, sig. 241b) | 1 | …ians Azan: of Azonus( as they say) the sonne of Hercules. Other prophane writers affirme, that it was bu… |
+| p02438 (Book II, Part I, Chapter XII, §. I, sig. 256b) | 1 | … from 〈◊ 〉, which was the North-border, to Beer-sheba which was the South-border, destroyed the place… |
 
 ### Nilus
 
@@ -1063,6 +1104,53 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p02183 (Book II, Part I, Chapter VIII, §. I, sig. 232b) | 1 | …hom those which inhabited neerer the out-let of Nilus, as they say, borrowed their Diuinitie and Phil… |
 | p02185 (Book II, Part I, Chapter VIII, §. I, sig. 233a) | 1 | …hed among them: when Atlas liued in Mauritania: Nilus and Vulcan in Aegypt: and Ochus in Phoenicia. Y… |
 
+### Beniamin
+
+- Occurrences: 45
+- Candidates: benjamin (Benjamin); benjamin-of-tudela (Beniamin)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:patriarchs-first-journey-to-egypt:description | 1 | …thers go down to Egypt the first time (Gen 42). Benjamin stays behind. The year is the Appendix F figure… |
+| note:event:patriarchs-first-journey-to-egypt:summary | 1 | …thers go down to Egypt the first time (Gen 42). Benjamin stays behind. |
+| note:person:benjamin-of-tudela:description | 2 | …leigh's History of the World (1617). The writer BENIAMIN who calls Lais Balina. Not the patriarch Benjam… |
+| note:person:benjamin-of-tudela:summary | 1 | Raleigh names Beniamin in the History of the World (1617). |
+| note:person:benjamin:dates:birth:1:note | 1 | This row dates Benjamin’s birth. The same words also date Rachel’s deat… |
+| note:person:benjamin:dates:reign:1:note | 1 | …e identifies Bnon, sometimes written Beon, with Benjamin through Ben-Oni. His view. bnon and beon stay s… |
+| note:person:benjamin:name-form:0:citation | 1 | …hapter V, §. II, sig. 199b. The passage prints “Beniamin”. |
+| note:person:beon:dates:reign:3:note | 1 | …e identifies Bnon, sometimes written Beon, with Benjamin through Ben-Oni. His view. bnon and beon stay s… |
+| note:person:bnon:dates:reign:2:note | 1 | …e identifies Bnon, sometimes written Beon, with Benjamin through Ben-Oni. His view. bnon and beon stay s… |
+| note:person:rachel:dates:death:1:note | 2 | … dates Rachel’s death. The same words also date Benjamin’s birth, on benjamin. |
+| note:person:rachel:description | 1 | …ix F row is her death. The same words also date Benjamin’s birth, which is a separate record. Leah, Bilh… |
+| note:person:rachel:summary | 2 | Wife of Jacob, and mother of Joseph and Benjamin. Jones dates her death at Benjamin’s birth. |
+| note:person:shemed:description | 1 | …eniamite, who built Lod and Ono in the Tribe of Beniamin. No yeere of the World was taken for him. Displ… |
+| p00357 (Contents, Book II, Part I, Chapter XII, sig. 30a) | 1 | CHAP. XII. Of the Tribe of Beniamin, and of Ierusalem. |
+| p00358 (Contents, Book II, Part I, Chapter XII, sig. 30a) | 1 | …. I. OF diuers memorable places in the Tribe of Beniamin, where, of Hiericho, Gilgal, Mitspa, Bethel, Ra… |
+| p01280 (Book I, Part I, Chapter VIII, §. X, subsection VI, sig. 123b–124a) | 1 | …the most part of all those Cities in Iudaea and Beniamin with a third Armie, ( which himselfe commanded)… |
+| p01326 (Book I, Part I, Chapter VIII, §. XII, subsection VI, sig. 129a) | 1 | …araim, which in Iosua is placed in the Tribe of Beniamin. There is also Samaraijm( of the same Orthograp… |
+| p01863 (Book II, Part I, Chapter V, §. II, sig. 199b) | 1 | …0500. vnder 〈◊ 〉: Manasse 32200. vnder Gamliel: Beniamin 35400. vnder Abidam. |
+| p01866 (Book II, Part I, Chapter V, §. II, sig. 200a) | 1 | …king place before the Elder. He was assisted by Beniamin, his best beloued brother, the other sonne of 〈… |
+| p02091 (Book II, Part I, Chapter VII, §. IV, subsection II, sig. 224b) | 1 | … another Citie of this name in the Territory of Beniamin, seated on the confines of Ascalon, called the … |
+| p02093 (Book II, Part I, Chapter VII, §. IV, subsection III, sig. 224b) | 1 | …rites it Lacis, the 〈◊ 〉 Laish, IOSEPHVS, Dana; BENIAMIN, Balina; BREITENBACH, Belena: but the now Inhab… |
+| p02116 (Book II, Part I, Chapter VII, §. IV, subsection VI, sig. 227a) | 1 | …at is, with all the Beraei: for Shebah being of Beniamin( in which Tribe also there is a Citie called Be… |
+| p02168 (Book II, Part I, Chapter VII, §. VII, subsection II, sig. 231a) | 1 | … Hebratcis. The famous Galgal or Gilgal, was in Beniamin: but this Gilgal, they say, it was whose King w… |
+| p02224 (Book II, Part I, Chapter IX, §. I, sig. 236a) | 1 | … the West side of Iordan, betweene Manasse, and Beniamin: who bounded Ephraim by the North and South; as… |
+| p02233 (Book II, Part I, Chapter IX, §. I, sig. 237a) | 1 | …ere we reade of the Land of 〈◊ 〉, findeth it in Beniamin. |
+| p02280 (Book II, Part I, Chapter X, §. I, sig. 240b) | 1 | …nd another in Isachar. Hierome finds a fifth in Beniamin. |
+| p02287 (Book II, Part I, Chapter X, §. I, sig. 240b–241a) | 1 | …tie of the woods: seated in the border of Iuda, Beniamin, and Dan, wherein the Arke of God remained twen… |
+| p02350 (Book II, Part I, Chapter X, §. IV, subsection III, sig. 245b) | 2 | …rom Dauid: but 〈◊ 〉 thinkes this Towne to be in Beniamin: gathering so much out of Esay 10. vers. 29. wh… |
+| p02427 (Book II, Part I, Chapter XII, sig. 255b) | 1 | CHAP. XII. Of the Tribe of BENIAMIN, and of Hierusalem. |
+| p02428 (Book II, Part I, Chapter XII, §. I, sig. 255b) | 1 | …. I. Of diuers memorable places in the Tribe of Beniamin, whereof 〈◊ 〉, Gilgal, Mitspa, Bethel, Rama, Go… |
+| p02429 (Book II, Part I, Chapter XII, §. I, sig. 255b) | 1 | OF the Tribe of Beniamin, the twelfth and yongest sonne of Iacob, whom h… |
+| p02432 (Book II, Part I, Chapter XII, §. I, sig. 256a) | 1 | … it is to be noted, that both it, and Mitspa of Beniamin( of which also wee reade 〈◊ 〉 in the Scripture)… |
+| p02433 (Book II, Part I, Chapter XII, §. I, sig. 256a) | 1 | … Bethel: which also was seated in this Tribe of Beniamin. But to returne to Gilgal which was the first p… |
+| p02435 (Book II, Part I, Chapter XII, §. I, sig. 256a–256b) | 1 | …of Ioseph( though it belonged to the portion of Beniamin, as it is Nehem. 11. 31. and Ios. 18. 22.) and … |
+| p02438 (Book II, Part I, Chapter XII, §. I, sig. 256b) | 1 | …22.) built Gebah adioyning to it: both being in Beniamin. And as Rama was the South-border of the tenne … |
+| p02439 (Book II, Part I, Chapter XII, §. I, sig. 256b–257a) | 2 | …ne. The vicinitie of this citie also to Rama of Beniamin, appears Iud. 19. 13. where the Leuite with his… |
+| p02440 (Book II, Part I, Chapter XII, §. I, sig. 257a) | 3 | …sephus makes often mention, but of any heere in Beniamin, which they make the natall place of S. Paul, w… |
+| p02466 (Book II, Part I, Chapter XIII, §. I, sig. 262a) | 1 | …nterregnum, so was hee commanded to doe against Beniamin, euen by the Lord God, whose direction they cra… |
+
 ### Lamech
 
 - Occurrences: 44
@@ -1103,7 +1191,7 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 
 ### Deucalion
 
-- Occurrences: 38
+- Occurrences: 39
 - Candidates: deucalion (Deucalion); deucalion-son-of-minos (Deucalion)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
@@ -1127,6 +1215,107 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01965 (Book II, Part I, Chapter VI, §. V, sig. 210b) | 5 | …is age of the World, and while Moses yet liued, Deucalion raigned in Thessalie, Crotopus then ruling the … |
 | p01966 (Book II, Part I, Chapter VI, §. V, sig. 211a) | 3 | …so affirmed that Prometheus fore-told his sonne Deucalion of this ouer-flowing; and aduised him to prouid… |
 | p02014 (Book II, Part I, Chapter VI, §. VIII, sig. 216b–217a) | 2 | …t it may be doubted whether Minos was Father to Deucalion, and Deucalion to Idomeneus, who was an old man… |
+| p02547 (Book II, Part I, Chapter XIII, §. VIII, sig. 271b–272a) | 1 | …t flouds which were in the times of Ogyges, and Deucalion: or else rehearse fables of men changed into bi… |
+
+### Othoniel
+
+- Occurrences: 39
+- Candidates: othniel (Othoniel); othoniel (Othniel)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:ehud-delivers-israel:chronologies:9:note | 1 | … the end of the fourescore yeeres of peace from Othoniel's death. The italic year is display only. This … |
+| note:event:othniel-judges-israel:chronologies:11:note | 1 | Body intake. The fourtie yeeres of peace in Othoniel's time. Not a yeere of the World. year_am stays… |
+| note:person:achsah:description | 1 | …romised for the taking of Debir, and married to Othoniel her Cousin German. No yeere of the World was ta… |
+| note:person:cenaz:description | 1 | …nted Cenas, Calebs yonger brother and father of Othoniel. No yeere of the World was taken for him. Displ… |
+| note:person:chushan-rishathaim:description | 1 | …otamia and oppressed Israel eight yeeres before Othoniel deliuered them. No yeere of the World was taken… |
+| note:person:iephunneth:description | 1 | …17). Iephunneth, father of Caleb; named to shew Othoniel was sonne of Cenas, not brother to Caleb. No ye… |
+| note:person:othniel:description | 1 | Named in Raleigh's History of the World (1617). Othoniel, who tooke Dabir by Calebs promise of his Daugh… |
+| note:person:othniel:summary | 1 | Raleigh names Othoniel in the History of the World (1617). |
+| note:person:othoniel:name-form:0:citation | 1 | …nological Table, sig. 784b. The passage prints “Othoniel”. |
+| p00311 (Contents, Book II, Part I, Chapter VI, sig. 28b) | 1 | …rie of Iosua: and of the space betweene him and Othoniel: and of the remainders of the Canaanites: with … |
+| p00363 (Contents, Book II, Part I, Chapter XIII, sig. 30a) | 1 | …OF the Inter-regnum after Iosua's death: and of Othoniel. |
+| p01954 (Book II, Part I, Chapter VI, §. III, sig. 209b) | 1 | …ites neere Cadesbarne. After the Gouernement of Othoniel, they ioyned them with the Moabites: after Bara… |
+| p01989 (Book II, Part I, Chapter VI, §. VIII, sig. 214b) | 1 | …rie of IOSVA; and of the space betweene him and OTHONIEL: and of the remainders of the Canaanites; with … |
+| p02012 (Book II, Part I, Chapter VI, §. VIII, sig. 216b) | 2 | …such as haue inserted yeeres betweene Iosua and Othoniel, of whom Eusebius findes eight yeere, to which … |
+| p02304 (Book II, Part I, Chapter X, §. II, sig. 242a) | 1 | … these Giants expelled. It was taken chiefly by Othoniel, incouraged by Calebs promise of his Daughter i… |
+| p02379 (Book II, Part I, Chapter X, §. VI, sig. 249b) | 1 | …racbones or 〈◊ 〉, as before. After the death of Othoniel the first Iudge of Israel, the Ammonites ioyned… |
+| p02462 (Book II, Part I, Chapter XIII, §. I, sig. 261b) | 1 | …Of the inter-regnum after IOSVA'S death: and of OTHONIEL. |
+| p02465 (Book II, Part I, Chapter XIII, §. I, sig. 261b–262a) | 5 | … haue compassion on his people, and to raise vp Othoniel to bee their Iudge and Leader: who by God assis… |
+| p02466 (Book II, Part I, Chapter XIII, §. I, sig. 262a) | 1 | …s from the death of Iosuah to the gouernment of Othoniel, it cannot be found: but it seemes to haue been… |
+| p02468 (Book II, Part I, Chapter XIII, §. IV, sig. 262a) | 2 | THere liued in this Age of Othoniel, Pandion or Pandareus, according to Homer, the … |
+| p02471 (Book II, Part I, Chapter XIII, §. IV, sig. 262b) | 1 | … times of these Kings which liued together with Othoniel, and after him with the rest of the Iudges and … |
+| p02474 (Book II, Part I, Chapter XIII, §. II, sig. 263a) | 1 | AFter the death of Othoniel, when Israel fell backe to their former Idolatr… |
+| p02475 (Book II, Part I, Chapter XIII, §. II, sig. 263a) | 1 | … the end of fourescore yeeres from the death of Othoniel, which terme expired in the Worlds yeere 2691. |
+| p02559 (Book II, Part I, Chapter XIII, §. VIII, sig. 274a) | 1 | …e but 266. yeeres, to wit, 18. of Iosua, 40. of Othoniel, 80. of Aod and Samgar, 40. of Debora, 40. of G… |
+| p02560 (Book II, Part I, Chapter XIII, §. VIII, sig. 274a) | 1 | …res hee giues to the Seniors betweene Iosua and Othoniel: and where Beroaldus alloweth but 18. yeeres to… |
+| p02564 (Book II, Part I, Chapter XIII, §. VIII, sig. 274b–275b) | 3 | …, before the 〈◊ 〉 of Cushan, or the election of Othoniel: which 20. yeeres added to 430. make 550. accor… |
+| p02565 (Book II, Part I, Chapter XIII, §. VIII, sig. 275b) | 4 | …d end vntill the 25. yeere after the victory of Othoniel. To this Codoman answereth, that then it had no… |
+| p02569 (Book II, Part I, Chapter XIII, §. VIII, sig. 276a–276b) | 1 | …these new opinions, he must needs answere, That Othoniel could not gouerne aboue 25. yeeres, because the… |
+
+### Perseus
+
+- Occurrences: 36
+- Candidates: perseus (Perseus); perseus-son-of-danae (Perseus)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:acrisius:description | 1 | …Argiues, father of Danae, slaine vnwillingly by Perseus; eldest sonne of Abas after Lynceus. No yeere o… |
+| note:person:andromeda:description | 1 | …leigh's History of the World (1617). Named with Perseus as a parent of Erythraeus. No yeere of the Worl… |
+| note:person:danae:description | 1 | … (1617). Danae, Daughter of Acrisius, mother of Perseus by the fained golden shower of Iupiter. No yeer… |
+| note:person:perseus-son-of-danae:description | 2 | Named in Raleigh's History of the World (1617). Perseus, sonne of Iupiter and Danae, in Ehuds or Debora… |
+| note:person:perseus-son-of-danae:summary | 1 | Raleigh names Perseus in the History of the World (1617). |
+| note:person:perseus:description | 1 | …father of Erythraeus, named with Andromeda. Not Perseus king of Macedon, who is named in the contents a… |
+| note:person:perseus:summary | 1 | Raleigh names Perseus in the History of the World (1617). |
+| p00760 (Contents, Book V, Part I, Chapter IIII, sig. 40b) | 1 | CHAP. IIII. Of Philip the Father of Perseus, King of Macedon; his first Acts and Warre with… |
+| p00789 (Contents, Book V, Part I, Chapter VI, sig. 42a) | 1 | … beene innocent: and intending to reuenge it on Perseus, he dyeth. |
+| p00790 (Contents, Book V, Part I, Chapter VI, sig. 42a) | 3 | … Bastarnae fell vpon Dardania. The behauiour of Perseus in the beginning of his reigne. Some warres of … |
+| p00791 (Contents, Book V, Part I, Chapter VI, sig. 42a) | 2 | …suall stoutnesse of the Macedonian Embassadors. Perseus his attempt vpon Eumenes. The brotherly loue be… |
+| p00792 (Contents, Book V, Part I, Chapter VI, sig. 42a) | 5 | …Greekes to ioyne with them in the warre against Perseus. How the Greekes stood affected in that warre. … |
+| p00793 (Contents, Book V, Part I, Chapter VI, sig. 42a–42b) | 3 | …e & danger, enters into Tempe. The cowardize of Perseus in abandoning Tempe. The Towne of Dium quitted … |
+| p00794 (Contents, Book V, Part I, Chapter VI, sig. 42b) | 3 | …emylius Paulus, the Consul. His 〈◊ 〉 He forceth Perseus to discampe. He will not hazzard battaile with … |
+| p00796 (Contents, Book V, Part I, Chapter VI, sig. 42b) | 1 | …n Greece and Macedon, after their victorie ouer Perseus. |
+| p00798 (Contents, Book V, Part I, Chapter VI, sig. 42b) | 1 | …enes, Prusias, Masanissa, and Cotys. The end of Perseus and his children. The instabilitie of Kingly Es… |
+| p01083 (Book I, Part I, Chapter VI, §. V, sig. 89b) | 1 | …or and Pollux, Helen and Clytemnestra: by Danaë Perseus: by Iordana Deucalion: by Charme( the daughter … |
+| p01688 (Book II, Part I, Chapter III, §. VIII, sig. 180a–182b) | 1 | …ng denominated of this Erythraeus, the sonne of Perseus and Andromeda, yet it tooke the name of the Red… |
+| p02276 (Book II, Part I, Chapter X, §. I, sig. 240a) | 1 | …d from thence deliuered from the Sea-Monster by Perseus. This fable( for so I take it) is confirmed by … |
+| p02490 (Book II, Part I, Chapter XIII, §. II, sig. 264b–265a) | 2 | …s some finde it) in the daies of Deborah, liued Perseus, the sonne of Iupiter and Danae, by whose Sould… |
+| p02498 (Book II, Part I, Chapter XIII, §. IV, sig. 266a) | 2 | …her keepers with gold: and enioyed her, of whom Perseus was borne; who when he grew to mans estate, eit… |
+| p02502 (Book II, Part I, Chapter XIII, §. IV, sig. 266b) | 1 | …lation to Mycenae, Mar. 〈◊ 〉 finds these Kings. Perseus, Sthenelus, Eurystheus, The sonnes of Pelops by… |
+
+### Adad
+
+- Occurrences: 33
+- Candidates: adad-of-damascus (Adad); hadad (Hadad)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:adad-nirari-i-attacks-hittites:chronologies:1:note | 1 | After Egypt weakened the Hittites in 1297 BC; Adad-N… |
+| note:event:adad-nirari-i-attacks-hittites:summary | 1 | Adad-Nirari I attacks the Hittite-Mitanni lands |
+| note:event:shamshi-adad-i:chronologies:0:citation | 1 | … file CFAH-14_Assyria_v_1.0.pdf, p. 19 "Shamshi Adad I - 1841 BC - Anchor Point #88" |
+| note:event:shamshi-adad-i:chronologies:0:note | 1 | CFAH-14 p. 19 heading: "Shamshi Adad I - 1841 BC - Anchor Point #88" OSF preprint, n… |
+| note:event:shamshi-adad-i:chronologies:3:note | 1 | …t of Assur; Timeline Review (p. 324): "Shamashi Adad I Forms Assyria 1813 bc". Differs from the sort… |
+| note:event:shamshi-adad-i:description | 1 | CFAH-14 (OSF preprint) AP-88: Shamshi-Adad I, 1841 BC. |
+| note:event:shamshi-adad-i:summary | 1 | CFAH-14 (OSF preprint) AP-88: Shamshi-Adad I, 1841 BC. |
+| note:event:shamshi-adad-iv-conquers-assur:chronologies:0:note | 1 | …Table cites it as "Conquest of Assur by Shamshi Adad, CFAH-14, AP-87". |
+| note:person:adad-of-damascus:description | 2 | Named in Raleigh's History of the World (1617). Adad of Damascus, slain with Adadezer when Dauid oue… |
+| note:person:adad-of-damascus:summary | 1 | Raleigh names Adad in the History of the World (1617). |
+| note:person:hadad:name-form:0:citation | 1 | …hapter V, §. IV, sig. 202b. The passage prints “Adad”. |
+| note:person:macrobius:description | 1 | …story of the World (1617). Macrobius, who saith Adad signified onenesse or Vnitie, the great God of … |
+| note:person:nazi-maruttash:dates:reign:0:note | 1 | Row "[Nazi-Maruttash, aka Adad-šuma-uṣur]" of Table … |
+| note:person:tahpenes:description | 1 | …ife of the King of Aegypt, giuen in marriage to Adad the Idumaean. No yeere of the World was taken f… |
+| note:person:yasmah-addu:dates:reign:0:note | 1 | Row "Yasmah Adad (Mari)" of Table 1 (Neighbours of Israel (11th … |
+| p01880 (Book II, Part I, Chapter V, §. IV, sig. 202b) | 1 | …; which were those companies that followed yong Adad of Idumaea, into Aegypt, when he fled from Ioab… |
+| p01952 (Book II, Part I, Chapter VI, §. III, sig. 209b) | 1 | …e of Pharaoh to theirs, and the ancient Syrians Adad to theirs, and the Arabian Nabatheans, Aretas, … |
+| p02247 (Book II, Part I, Chapter IX, §. II, sig. 237b) | 2 | …ishak( if not the same) did likewise entertaine Adad the Idumaean, when he was carried yong into Aeg… |
+| p02406 (Book II, Part I, Chapter XI, §. I, sig. 252b–253a) | 3 | The next King of Damascus was Adad the Edomite, who flying into Aegypt from Dauid,… |
+| p02410 (Book II, Part I, Chapter XI, §. II, sig. 253a–253b) | 1 | …e, made himselfe King of Damascus: Adadezer and Adad of Damascus being both slaine. About the same t… |
+| p02411 (Book II, Part I, Chapter XI, §. II, sig. 253b) | 6 | Someacount Rezon, other Adad of Idumaea: of whome it is written in the first… |
+| p02419 (Book II, Part I, Chapter XI, §. III, sig. 254b) | 2 | … Iosephus Rases, after Zonar as Raason, the 10. Adad, maketh league with Pekah, or Phacas King of Is… |
+| p02445 (Book II, Part I, Chapter XII, §. II, sig. 257b) | 1 | … and his 〈◊ 〉, hauing bred vp for that purpose, Adad the 〈◊ 〉, and Ieroboam, Salomons seruant; and b… |
 
 ### Demetrius
 
@@ -1165,41 +1354,41 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p02169 (Book II, Part I, Chapter VII, §. VII, subsection II, sig. 231a–231b) | 1 | …w a part of the Armie of Nicanor, Lieutenant to Demetrius: an armie drawn into Iudaea by a traiterous Iew… |
 | p02282 (Book II, Part I, Chapter X, §. I, sig. 240b) | 1 | …ne by Bacchides and Alcimus, the Lieutenants of Demetrius. Afterward it was taken by Ionathas: and the re… |
 
-### Beniamin
+### Ieroboam
 
-- Occurrences: 31
-- Candidates: benjamin (Benjamin); benjamin-of-tudela (Beniamin)
+- Occurrences: 32
+- Candidates: jeroboam-i (Jeroboam I); jeroboam-ii (Jeroboam II)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
 | Unit | Count | Excerpt |
 |---|---|---|
-| note:event:patriarchs-first-journey-to-egypt:description | 1 | …thers go down to Egypt the first time (Gen 42). Benjamin stays behind. The year is the Appendix F figure… |
-| note:event:patriarchs-first-journey-to-egypt:summary | 1 | …thers go down to Egypt the first time (Gen 42). Benjamin stays behind. |
-| note:person:benjamin-of-tudela:description | 2 | …leigh's History of the World (1617). The writer BENIAMIN who calls Lais Balina. Not the patriarch Benjam… |
-| note:person:benjamin-of-tudela:summary | 1 | Raleigh names Beniamin in the History of the World (1617). |
-| note:person:benjamin:dates:birth:1:note | 1 | This row dates Benjamin’s birth. The same words also date Rachel’s deat… |
-| note:person:benjamin:dates:reign:1:note | 1 | …e identifies Bnon, sometimes written Beon, with Benjamin through Ben-Oni. His view. bnon and beon stay s… |
-| note:person:benjamin:name-form:0:citation | 1 | …hapter V, §. II, sig. 199b. The passage prints “Beniamin”. |
-| note:person:beon:dates:reign:3:note | 1 | …e identifies Bnon, sometimes written Beon, with Benjamin through Ben-Oni. His view. bnon and beon stay s… |
-| note:person:bnon:dates:reign:2:note | 1 | …e identifies Bnon, sometimes written Beon, with Benjamin through Ben-Oni. His view. bnon and beon stay s… |
-| note:person:rachel:dates:death:1:note | 2 | … dates Rachel’s death. The same words also date Benjamin’s birth, on benjamin. |
-| note:person:rachel:description | 1 | …ix F row is her death. The same words also date Benjamin’s birth, which is a separate record. Leah, Bilh… |
-| note:person:rachel:summary | 2 | Wife of Jacob, and mother of Joseph and Benjamin. Jones dates her death at Benjamin’s birth. |
-| p00357 (Contents, Book II, Part I, Chapter XII, sig. 30a) | 1 | CHAP. XII. Of the Tribe of Beniamin, and of Ierusalem. |
-| p00358 (Contents, Book II, Part I, Chapter XII, sig. 30a) | 1 | …. I. OF diuers memorable places in the Tribe of Beniamin, where, of Hiericho, Gilgal, Mitspa, Bethel, Ra… |
-| p01280 (Book I, Part I, Chapter VIII, §. X, subsection VI, sig. 123b–124a) | 1 | …the most part of all those Cities in Iudaea and Beniamin with a third Armie, ( which himselfe commanded)… |
-| p01326 (Book I, Part I, Chapter VIII, §. XII, subsection VI, sig. 129a) | 1 | …araim, which in Iosua is placed in the Tribe of Beniamin. There is also Samaraijm( of the same Orthograp… |
-| p01863 (Book II, Part I, Chapter V, §. II, sig. 199b) | 1 | …0500. vnder 〈◊ 〉: Manasse 32200. vnder Gamliel: Beniamin 35400. vnder Abidam. |
-| p01866 (Book II, Part I, Chapter V, §. II, sig. 200a) | 1 | …king place before the Elder. He was assisted by Beniamin, his best beloued brother, the other sonne of 〈… |
-| p02091 (Book II, Part I, Chapter VII, §. IV, subsection II, sig. 224b) | 1 | … another Citie of this name in the Territory of Beniamin, seated on the confines of Ascalon, called the … |
-| p02093 (Book II, Part I, Chapter VII, §. IV, subsection III, sig. 224b) | 1 | …rites it Lacis, the 〈◊ 〉 Laish, IOSEPHVS, Dana; BENIAMIN, Balina; BREITENBACH, Belena: but the now Inhab… |
-| p02116 (Book II, Part I, Chapter VII, §. IV, subsection VI, sig. 227a) | 1 | …at is, with all the Beraei: for Shebah being of Beniamin( in which Tribe also there is a Citie called Be… |
-| p02168 (Book II, Part I, Chapter VII, §. VII, subsection II, sig. 231a) | 1 | … Hebratcis. The famous Galgal or Gilgal, was in Beniamin: but this Gilgal, they say, it was whose King w… |
-| p02224 (Book II, Part I, Chapter IX, §. I, sig. 236a) | 1 | … the West side of Iordan, betweene Manasse, and Beniamin: who bounded Ephraim by the North and South; as… |
-| p02233 (Book II, Part I, Chapter IX, §. I, sig. 237a) | 1 | …ere we reade of the Land of 〈◊ 〉, findeth it in Beniamin. |
-| p02280 (Book II, Part I, Chapter X, §. I, sig. 240b) | 1 | …nd another in Isachar. Hierome finds a fifth in Beniamin. |
-| p02287 (Book II, Part I, Chapter X, §. I, sig. 240b–241a) | 1 | …tie of the woods: seated in the border of Iuda, Beniamin, and Dan, wherein the Arke of God remained twen… |
-| p02350 (Book II, Part I, Chapter X, §. IV, subsection III, sig. 245b) | 2 | …rom Dauid: but 〈◊ 〉 thinkes this Towne to be in Beniamin: gathering so much out of Esay 10. vers. 29. wh… |
+| note:event:division-of-the-kingdom:chronologies:0:note | 1 | The sin of Jeroboam (the golden calves, 1 Kings 12:25–33) begins in… |
+| note:person:adon-the-judaean-prophet:description | 1 | …he World (1617). The Iudaean Prophet who warned Ieroboam, whom Iosephus calls Adon and Glycas Ioel. No y… |
+| note:person:ahijah:description | 1 | … (1617). The prophet Achia, to whom the wife of Ieroboam went. No yeere of the World was taken for him. … |
+| note:person:jeroboam-i:name-form:1:citation | 1 | …I, subsection I, sig. 230a. The passage prints “Ieroboam”. |
+| note:person:nebat:description | 1 | …story of the World (1617). Nebat, the father of Ieroboam. No yeere of the World was taken for him. Displ… |
+| p00411 (Contents, Book II, Part I, Chapter XIX, sig. 31b) | 1 | §. III. Of the great battaile betweene Ieroboam and Abia: with a Corolarie of the Examples of G… |
+| p00450 (Contents, Book II, Part I, Chapter XXIII, sig. 32b) | 1 | §. I. THe prosperitie of Vzzia, and of Ieroboam the second, who reigned with him in Israel: Of … |
+| p01268 (Book I, Part I, Chapter VIII, §. X, subsection II, sig. 122a–122b) | 1 | …s also giuen aide and succour to Roboam against Ieroboam, who drew from him tenne of the twelue Tribes t… |
+| p01632 (Book II, Part I, Chapter II, §. VI, sig. 170b–171a) | 1 | …ost agree, had no other purpose then to succour Ieroboam, and giue him countenance in his new reigne; wh… |
+| p01635 (Book II, Part I, Chapter II, §. VII, sig. 171b–172b) | 3 | …rwards king, is like to haue dealt with him, as Ieroboam did with the sonne of Salomon. For that Busiris… |
+| p02152 (Book II, Part I, Chapter VII, §. VII, subsection I, sig. 230a) | 1 | …me as Samaria was built. From hence the wise of Ieroboam went to Achia to enquire of her sonnes health: … |
+| p02227 (Book II, Part I, Chapter IX, §. I, sig. 236a) | 1 | …wne of that name: on the top of which Mountaine Ieroboam erected one of his golden Calues, to bee worshi… |
+| p02228 (Book II, Part I, Chapter IX, §. I, sig. 236a–236b) | 1 | …d after that by Abimelec cuened with the soyle. Ieroboam raised it vp againe: and the Damascens a third … |
+| p02239 (Book II, Part I, Chapter IX, §. I, sig. 237a) | 1 | …one of those Cities which Abijah recouered from Ieroboam; after the great ouerthrow giuen him. Then Kibt… |
+| p02245 (Book II, Part I, Chapter IX, §. II, sig. 237b) | 1 | §. II. Of the Kings of the ten Tribes from IEROBOAM to ACHAB. |
+| p02247 (Book II, Part I, Chapter IX, §. II, sig. 237b) | 2 | …lloweth to speake. The first of these Kings was Ieroboam, the sonne of Nebat, an Ephrathite of Zereda, w… |
+| p02248 (Book II, Part I, Chapter IX, §. II, sig. 237b–238a) | 1 | This Ieroboam after the death of Salomon became Lord of the t… |
+| p02249 (Book II, Part I, Chapter IX, §. II, sig. 238a) | 1 | …re of his reigne, together with all the race of Ieroboam was slaine, and rooted out by Baasha, who reign… |
+| p02250 (Book II, Part I, Chapter IX, §. II, sig. 238a) | 1 | …t, that it should befall his race, as it did to Ieroboam: which afterward came to passe: He ruled foure … |
+| p02255 (Book II, Part I, Chapter IX, §. III, sig. 238a) | 2 | …ed Omri, who not onely vp-held the Idolatrie of Ieroboam, borrowed of the Aegyptians: but hee married Ie… |
+| p02263 (Book II, Part I, Chapter IX, §. III, sig. 239a) | 1 | …rth generation. Yet hee vpheld the idolatrie of Ieroboam, for which hee was plagued with grieuous warre,… |
+| p02266 (Book II, Part I, Chapter IX, §. III, sig. 239a) | 1 | Ieroboam the third from Iehu, followed Ioas his father, … |
+| p02272 (Book II, Part I, Chapter IX, §. III, sig. 239b) | 2 | A Catalogue of the Kings of the ten TRIBES. 1. Ieroboam, Raigned 22 Yeares. 2. Nadab, 2 Yeares. 3. Baas… |
+| p02412 (Book II, Part I, Chapter XI, §. II, sig. 253b) | 1 | …y Baasha, the successour of Nadab, the sonne of Ieroboam, sent to Benhadad the sonne of Tabrimmon the so… |
+| p02435 (Book II, Part I, Chapter XII, §. I, sig. 256a–256b) | 1 | …ccasion of the name from Iacobs vision: and how Ieroboam, by erecting one of his calues heere, of Bethel… |
+| p02436 (Book II, Part I, Chapter XII, §. I, sig. 256b) | 1 | … the time of the great victorie of Abia against Ieroboam( of which 2. Chr. 13. ) was taken from them, an… |
+| p02445 (Book II, Part I, Chapter XII, §. II, sig. 257b) | 1 | …ng bred vp for that purpose, Adad the 〈◊ 〉, and Ieroboam, Salomons seruant; and both married to Aegyptia… |
 
 ### Cambyses
 
@@ -1261,41 +1450,9 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01753 (Book II, Part I, Chapter IV, §. VII, sig. 190a) | 1 | …, Marathus the Sycionians, Triopus the Argiues, Cecrops Attica, and Acherres Aegypt: to wit, after the … |
 | p02178 (Book II, Part I, Chapter VIII, §. I, sig. 232a) | 2 | …s, according to Eusebius; yet it is agreed that Cecrops then ruled in Attica: and in the end of Cecrops… |
 
-### Ieroboam
-
-- Occurrences: 29
-- Candidates: jeroboam-i (Jeroboam I); jeroboam-ii (Jeroboam II)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:event:division-of-the-kingdom:chronologies:0:note | 1 | The sin of Jeroboam (the golden calves, 1 Kings 12:25–33) begins in… |
-| note:person:adon-the-judaean-prophet:description | 1 | …he World (1617). The Iudaean Prophet who warned Ieroboam, whom Iosephus calls Adon and Glycas Ioel. No y… |
-| note:person:ahijah:description | 1 | … (1617). The prophet Achia, to whom the wife of Ieroboam went. No yeere of the World was taken for him. … |
-| note:person:jeroboam-i:name-form:1:citation | 1 | …I, subsection I, sig. 230a. The passage prints “Ieroboam”. |
-| note:person:nebat:description | 1 | …story of the World (1617). Nebat, the father of Ieroboam. No yeere of the World was taken for him. Displ… |
-| p00411 (Contents, Book II, Part I, Chapter XIX, sig. 31b) | 1 | §. III. Of the great battaile betweene Ieroboam and Abia: with a Corolarie of the Examples of G… |
-| p00450 (Contents, Book II, Part I, Chapter XXIII, sig. 32b) | 2 | §. I. THe prosperitie of Vzzia, and of Ieroboam the second, who reigned with him in Israel: Of … |
-| p01268 (Book I, Part I, Chapter VIII, §. X, subsection II, sig. 122a–122b) | 1 | …s also giuen aide and succour to Roboam against Ieroboam, who drew from him tenne of the twelue Tribes t… |
-| p01632 (Book II, Part I, Chapter II, §. VI, sig. 170b–171a) | 1 | …ost agree, had no other purpose then to succour Ieroboam, and giue him countenance in his new reigne; wh… |
-| p01635 (Book II, Part I, Chapter II, §. VII, sig. 171b–172b) | 3 | …rwards king, is like to haue dealt with him, as Ieroboam did with the sonne of Salomon. For that Busiris… |
-| p02152 (Book II, Part I, Chapter VII, §. VII, subsection I, sig. 230a) | 1 | …me as Samaria was built. From hence the wise of Ieroboam went to Achia to enquire of her sonnes health: … |
-| p02227 (Book II, Part I, Chapter IX, §. I, sig. 236a) | 1 | …wne of that name: on the top of which Mountaine Ieroboam erected one of his golden Calues, to bee worshi… |
-| p02228 (Book II, Part I, Chapter IX, §. I, sig. 236a–236b) | 1 | …d after that by Abimelec cuened with the soyle. Ieroboam raised it vp againe: and the Damascens a third … |
-| p02239 (Book II, Part I, Chapter IX, §. I, sig. 237a) | 1 | …one of those Cities which Abijah recouered from Ieroboam; after the great ouerthrow giuen him. Then Kibt… |
-| p02245 (Book II, Part I, Chapter IX, §. II, sig. 237b) | 1 | §. II. Of the Kings of the ten Tribes from IEROBOAM to ACHAB. |
-| p02247 (Book II, Part I, Chapter IX, §. II, sig. 237b) | 2 | …lloweth to speake. The first of these Kings was Ieroboam, the sonne of Nebat, an Ephrathite of Zereda, w… |
-| p02248 (Book II, Part I, Chapter IX, §. II, sig. 237b–238a) | 1 | This Ieroboam after the death of Salomon became Lord of the t… |
-| p02249 (Book II, Part I, Chapter IX, §. II, sig. 238a) | 1 | …re of his reigne, together with all the race of Ieroboam was slaine, and rooted out by Baasha, who reign… |
-| p02250 (Book II, Part I, Chapter IX, §. II, sig. 238a) | 1 | …t, that it should befall his race, as it did to Ieroboam: which afterward came to passe: He ruled foure … |
-| p02255 (Book II, Part I, Chapter IX, §. III, sig. 238a) | 2 | …ed Omri, who not onely vp-held the Idolatrie of Ieroboam, borrowed of the Aegyptians: but hee married Ie… |
-| p02263 (Book II, Part I, Chapter IX, §. III, sig. 239a) | 1 | …rth generation. Yet hee vpheld the idolatrie of Ieroboam, for which hee was plagued with grieuous warre,… |
-| p02266 (Book II, Part I, Chapter IX, §. III, sig. 239a) | 1 | Ieroboam the third from Iehu, followed Ioas his father, … |
-| p02272 (Book II, Part I, Chapter IX, §. III, sig. 239b) | 2 | A Catalogue of the Kings of the ten TRIBES. 1. Ieroboam, Raigned 22 Yeares. 2. Nadab, 2 Yeares. 3. Baas… |
-
 ### ISMAEL
 
-- Occurrences: 29
+- Occurrences: 30
 - Candidates: ishmael (Ishmael); ismael-who-slew-gedaliah (Ismael)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
@@ -1321,40 +1478,11 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p02340 (Book II, Part I, Chapter X, §. IV, subsection I, sig. 244b) | 1 | …e sonnes of Moab and Ammon, Midian, Amalek, and Ismael. Yet the reason seemeth plaine enough why Ammon… |
 | p02352 (Book II, Part I, Chapter X, §. IV, subsection III, sig. 246a) | 1 | …ch neighboureth Iudaea. For Pharan inhabited by Ismael, whose people Ptolomie calleth Pharanites, in s… |
 | p02383 (Book II, Part I, Chapter X, §. VI, sig. 249b) | 1 | …ter whose taking by Nabuchodonosor, Baalis 〈◊ 〉 Ismael of the bloud of the Kings of Iuda, to slay Geda… |
-
-### Amenophis
-
-- Occurrences: 26
-- Candidates: amenophis (Amenophis); amenophis-d18 (Amenophis); amenophis-jos-1 (Amenophis); amenophis-jos-2 (Amenophis); amenophis-jos-3 (Amenophis)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:event:exodus:chronologies:18:note | 1 | The exile of Amenophis, 'to continue from its beginning during the pre… |
-| note:event:flight-of-taharqa:chronologies:0:citation | 1 | ….pdf, p. 9 ("new Anchor Point #62 The Flight of Amenophis / Taharqa in 671 BC") |
-| note:event:flight-of-taharqa:description | 1 | Taharqa (identified by CFAH with Manetho's Amenophis) flees Egypt before the Assyrians; CFAH dates t… |
-| note:event:flight-of-taharqa:summary | 1 | Taharqa (identified by CFAH with Manetho's Amenophis) flees Egypt before the Assyrians; CFAH dates t… |
-| note:person:amenophis-d18:summary | 1 | Amenophis is named in Cory, Ancient Fragments (1876, ed. … |
-| note:person:amenophis-jos-1:dates:reign:1:note | 1 | …st, the third king after the Shepherds. Not the Amenophis of 31 years in the eighteenth dynasty. |
-| note:person:amenophis-jos-1:summary | 1 | Amenophis is named in Cory, Ancient Fragments (1876, ed. … |
-| note:person:amenophis-jos-2:dates:reign:1:note | 2 | Josephus's list, a second Amenophis. Not the Amenophis of 20 years and 7 months abo… |
-| note:person:amenophis-jos-2:summary | 1 | Amenophis is named in Cory, Ancient Fragments (1876, ed. … |
-| note:person:amenophis-jos-3:dates:reign:1:note | 2 | Josephus's list, the Amenophis who succeeds Armesses. Not the other two Amenop… |
-| note:person:amenophis-jos-3:dates:reign:3:note | 1 | The exile of Amenophis, 'to continue from its beginning during the pre… |
-| note:person:amenophis-jos-3:summary | 1 | Amenophis is named in Cory, Ancient Fragments (1876, ed. … |
-| note:person:amenophis:description | 1 | Named in Raleigh's History of the World (1617). Amenophis, placed next before Busiris by some, and after … |
-| note:person:amenophis:summary | 1 | Raleigh names Amenophis in the History of the World (1617). |
-| note:person:sethos-jos:dates:reign:1:note | 1 | Sethos, also called Ramesses, son of the Amenophis of this narrative. An age, not a reign length a… |
-| note:person:taharqa:dates:reign:1:note | 1 | Row "Taharqa (Amenophis)" of Table 14 (Egypt Dynasty 18). |
-| p00471 (Contents, Book II, Part I, Chapter XXVI, sig. 33a) | 1 | §. III. Of Cherres, Armeus, Ramesses, and Amenophis: Of Myris, and the Lake that beares his name. |
-| p01074 (Book I, Part I, Chapter VI, §. IV, sig. 88b–89a) | 1 | … the paternall Ancester of Henoch and Noah: for Amenophis, the same King of Aegypt, which raigned at such… |
-| p01635 (Book II, Part I, Chapter II, §. VII, sig. 171b–172b) | 2 | …haraohs sonnes daughter, but Pharaohs daughter. Amenophis indeed is placed next before Busiris or Orus th… |
-| p01642 (Book II, Part I, Chapter II, §. VIII, sig. 172b–173a) | 2 | … and Israel deliuered in the dayes of his sonne Amenophis. The very name of Alisfragmuthosis seemes to hi… |
-| p01650 (Book II, Part I, Chapter III, §. I, sig. 173b–174a) | 2 | …s Chronologie, finds that Moses was borne while Amenophis ruled Aegypt. The ancient Manethon cals that Ph… |
+| p02433 (Book II, Part I, Chapter XII, §. I, sig. 256a) | 1 | …t of the Iewes) he was slaine by the treason of Ismael, one of the royall bloud of Iuda, as it is Hier… |
 
 ### Iehu
 
-- Occurrences: 25
+- Occurrences: 29
 - Candidates: jehu (Jehu); jehu-son-of-hanani (Iehu)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
@@ -1384,6 +1512,98 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p02266 (Book II, Part I, Chapter IX, §. III, sig. 239a) | 1 | Ieroboam the third from Iehu, followed Ioas his father, an Idolater as his p… |
 | p02267 (Book II, Part I, Chapter IX, §. III, sig. 239a) | 1 | Zacharias the fift and last of the house of Iehu, 〈◊ 〉 by Shallum his vassall, who raigned in hi… |
 | p02272 (Book II, Part I, Chapter IX, §. III, sig. 239b) | 1 | … Ochozias, 2. Yeares. 9. Ioram, 12. Yeares. 10. Iehu, 28. Yeares. 11. Ioachaz, 17. Yeares. 12. Ioas,… |
+| p02414 (Book II, Part I, Chapter XI, §. II, sig. 254a–254b) | 3 | …ng of Iuda, Ahaziah, or Ochozias, are slaine by Iehu, as before is said. After the death of Ioram, A… |
+| p02420 (Book II, Part I, Chapter XI, §. III, sig. 254b–255a) | 1 | …el. For Ioas began to reigne in the 7. yeere of Iehu King of Israel; and after he had reigned 23. ye… |
+
+### Amenophis
+
+- Occurrences: 28
+- Candidates: amenophis (Amenophis); amenophis-d18 (Amenophis); amenophis-jos-1 (Amenophis); amenophis-jos-2 (Amenophis); amenophis-jos-3 (Amenophis)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:exodus:chronologies:18:note | 1 | The exile of Amenophis, 'to continue from its beginning during the pre… |
+| note:event:flight-of-taharqa:chronologies:0:citation | 1 | ….pdf, p. 9 ("new Anchor Point #62 The Flight of Amenophis / Taharqa in 671 BC") |
+| note:event:flight-of-taharqa:description | 1 | Taharqa (identified by CFAH with Manetho's Amenophis) flees Egypt before the Assyrians; CFAH dates t… |
+| note:event:flight-of-taharqa:summary | 1 | Taharqa (identified by CFAH with Manetho's Amenophis) flees Egypt before the Assyrians; CFAH dates t… |
+| note:person:amenophis-d18:summary | 1 | Amenophis is named in Cory, Ancient Fragments (1876, ed. … |
+| note:person:amenophis-jos-1:dates:reign:1:note | 1 | …st, the third king after the Shepherds. Not the Amenophis of 31 years in the eighteenth dynasty. |
+| note:person:amenophis-jos-1:summary | 1 | Amenophis is named in Cory, Ancient Fragments (1876, ed. … |
+| note:person:amenophis-jos-2:dates:reign:1:note | 2 | Josephus's list, a second Amenophis. Not the Amenophis of 20 years and 7 months abo… |
+| note:person:amenophis-jos-2:summary | 1 | Amenophis is named in Cory, Ancient Fragments (1876, ed. … |
+| note:person:amenophis-jos-3:dates:reign:1:note | 2 | Josephus's list, the Amenophis who succeeds Armesses. Not the other two Amenop… |
+| note:person:amenophis-jos-3:dates:reign:3:note | 1 | The exile of Amenophis, 'to continue from its beginning during the pre… |
+| note:person:amenophis-jos-3:summary | 1 | Amenophis is named in Cory, Ancient Fragments (1876, ed. … |
+| note:person:amenophis:description | 1 | Named in Raleigh's History of the World (1617). Amenophis, placed next before Busiris by some, and after … |
+| note:person:amenophis:summary | 1 | Raleigh names Amenophis in the History of the World (1617). |
+| note:person:annemenes:description | 1 | … (1617). Annemenes, who reigned in Aegypt after Amenophis the sonne of Ramses, in the time of Thola and I… |
+| note:person:sethos-jos:dates:reign:1:note | 1 | Sethos, also called Ramesses, son of the Amenophis of this narrative. An age, not a reign length a… |
+| note:person:taharqa:dates:reign:1:note | 1 | Row "Taharqa (Amenophis)" of Table 14 (Egypt Dynasty 18). |
+| p00471 (Contents, Book II, Part I, Chapter XXVI, sig. 33a) | 1 | §. III. Of Cherres, Armeus, Ramesses, and Amenophis: Of Myris, and the Lake that beares his name. |
+| p01074 (Book I, Part I, Chapter VI, §. IV, sig. 88b–89a) | 1 | … the paternall Ancester of Henoch and Noah: for Amenophis, the same King of Aegypt, which raigned at such… |
+| p01635 (Book II, Part I, Chapter II, §. VII, sig. 171b–172b) | 2 | …haraohs sonnes daughter, but Pharaohs daughter. Amenophis indeed is placed next before Busiris or Orus th… |
+| p01642 (Book II, Part I, Chapter II, §. VIII, sig. 172b–173a) | 2 | … and Israel deliuered in the dayes of his sonne Amenophis. The very name of Alisfragmuthosis seemes to hi… |
+| p01650 (Book II, Part I, Chapter III, §. I, sig. 173b–174a) | 2 | …s Chronologie, finds that Moses was borne while Amenophis ruled Aegypt. The ancient Manethon cals that Ph… |
+| p02543 (Book II, Part I, Chapter XIII, §. VII, sig. 271b) | 1 | … 〈◊ 〉 and after him Tautanes reigned. In Aegypt Amenophis, the sonne of Ramses, and afterwards Annemenes. |
+
+### Iair
+
+- Occurrences: 27
+- Candidates: iair-son-of-manasse (Iair); jair (Jair)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:jair-judges-israel:chronologies:2:note | 1 | §370 (2817a AM, 1188 BC): Jair dies. |
+| note:event:jair-judges-israel:chronologies:3:note | 1 | …entry. The 2001 list gives no separate year for Jair's death; 2861 is the start of the joint Philist… |
+| note:event:jair-judges-israel:chronologies:4:note | 1 | …0, not at Jephthah's victory). "2835 - Death of Jair, beginning of Philistine oppression ..." |
+| note:event:jair-judges-israel:summary | 2 | Jair the Gileadite judges Israel twenty-two years; h… |
+| note:person:annemenes:description | 1 | …s the sonne of Ramses, in the time of Thola and Iair. No yeere of the World was taken for him. Displ… |
+| note:person:iair-son-of-manasse:description | 2 | Named in Raleigh's History of the World (1617). Iair the sonne of Manasse, who named Hauoth Iair. No… |
+| note:person:iair-son-of-manasse:summary | 1 | Raleigh names Iair in the History of the World (1617). |
+| note:person:jair:dates:reign:0:note | 1 | Row "Jair" of Table 5 (Israel). Year-by-year table (1262-… |
+| note:person:jair:name-form:0:citation | 1 | …nological Table, sig. 785b. The passage prints “Iair”. |
+| p00369 (Contents, Book II, Part I, Chapter XIII, sig. 30a–30b) | 1 | §. VII. Of Abimelech, 〈◊ 〉, and Iair: and of the Lapythae, and of 〈◊ 〉, Hyppolitus, … |
+| p01903 (Book II, Part I, Chapter V, §. VIII, sig. 205b–206a) | 1 | …barim, left the presequution of that warre vnto Iair the sonne of Manasse: who conquering the East p… |
+| p02386 (Book II, Part I, Chapter X, §. VII, sig. 250a) | 3 | …all which, after Og and his sonnes were slaine, Iair descended of Manasse conquered, and called the … |
+| p02531 (Book II, Part I, Chapter XIII, §. VII, sig. 270a) | 1 | §. VII. Of ABIMELECH, THOLAH, and IAIR, and of the Lapythae, and of THESEVS, HYPPOLYTV… |
+| p02536 (Book II, Part I, Chapter XIII, §. VII, sig. 270b) | 3 | …achar gouerned Israel 23. yeeres, and after him Iair the Gileadite 22. yeeres, who 〈◊ 〉 to bee desce… |
+| p02537 (Book II, Part I, Chapter XIII, §. VII, sig. 270b) | 1 | When Iair iudged Israel, Priamus beganne to reigne in Tro… |
+| p02538 (Book II, Part I, Chapter XIII, §. VII, sig. 270b) | 1 | …ns began likewise to reigne in the beginning of Iair: some writers call him the sonne of and Neptune… |
+| p02542 (Book II, Part I, Chapter XIII, §. VII, sig. 271a–271b) | 1 | …m, &c. The rape Eusebius findes in the first of Iair, who gouerned Israel 22. yeeres, to whom succee… |
+| p02543 (Book II, Part I, Chapter XIII, §. VII, sig. 271b) | 1 | …reigned thirteene, are accounted to the time of Iair, so is also Mnestheus King of Athens, and Atreu… |
+| p02556 (Book II, Part I, Chapter XIII, §. VIII, sig. 273b) | 1 | AFter the death of Iair( neere about whose times these things happened … |
+| p02559 (Book II, Part I, Chapter XIII, §. VIII, sig. 274a) | 1 | …deon, 3. of Abimelech, 23. of Thola, and 22. of Iair: But Iephta( saith Beroaldus) putteth or propos… |
+| p02571 (Book II, Part I, Chapter XIII, §. VIII, sig. 276b) | 1 | …v. 1. ) tooke beginning from the ninth yeere of Iair, and ended with the last of Habdon: I see no gr… |
+
+### Ioram
+
+- Occurrences: 26
+- Candidates: joram-king-of-israel (Joram (king of Israel)); joram-son-of-tohu (Ioram)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:elijahs-letter-to-jehoram:chronologies:1:note | 1 | This Jehoram is jehoram-of-judah, not Joram of Israel. |
+| note:person:jehoram-of-judah:summary | 1 | King of Judah in Hales’s synopsis, “Jehoram or Joram”. Not a king of Israel. No earlier record was i… |
+| note:person:joram-king-of-israel:dates:reign:1:note | 1 | This is Joram of Israel, not jehoram-of-judah. Appendix F pri… |
+| note:person:joram-king-of-israel:name-form:0:citation | 1 | …I, subsection I, sig. 230b. The passage prints “Ioram”. |
+| note:person:joram-son-of-tohu:description | 2 | Named in Raleigh's History of the World (1617). Ioram, the sonne of Tohu King of Emath, sent with pre… |
+| note:person:joram-son-of-tohu:summary | 1 | Raleigh names Ioram in the History of the World (1617). |
+| p02158 (Book II, Part I, Chapter VII, §. VII, subsection I, sig. 230b) | 1 | Ioram also was cast vnburied into the same field: for… |
+| p02159 (Book II, Part I, Chapter VII, §. VII, subsection I, sig. 230b) | 1 | …ing of Iuda fled from Iehu, when hee had slaine Ioram, hee was wounded with the shot of an arrow, of … |
+| p02257 (Book II, Part I, Chapter IX, §. III, sig. 238b) | 1 | … three sonnes named in the Scripture, Ochozias, Ioram, and Ioas: besides seuentie other sonnes by sun… |
+| p02259 (Book II, Part I, Chapter IX, §. III, sig. 238b) | 1 | Ioram the brother of Ochozias by Iezabel, succeeded: … |
+| p02260 (Book II, Part I, Chapter IX, §. III, sig. 238b) | 2 | After this the king of Aram sent to Ioram, to heale Naaman the Captaine of his Armie of t… |
+| p02261 (Book II, Part I, Chapter IX, §. III, sig. 238b) | 1 | …blinde, and brought them captiues into Samaria: Ioram then asking leaue of the Prophet to slay them, … |
+| p02262 (Book II, Part I, Chapter IX, §. III, sig. 238b–239a) | 3 | …ia, and brought the Citizens to extreme famine. Ioram imputeth the cause thereof to the Prophet Elish… |
+| p02272 (Book II, Part I, Chapter IX, §. III, sig. 239b) | 1 | …. Achab, 22. Yeares. 8. Ochozias, 2. Yeares. 9. Ioram, 12. Yeares. 10. Iehu, 28. Yeares. 11. Ioachaz,… |
+| p02321 (Book II, Part I, Chapter X, §. III, sig. 243a) | 1 | …reuolted from the subiection of the Iewes while Ioram the sonne of Iosaphat ruled in Hierusalem: And … |
+| p02413 (Book II, Part I, Chapter XI, §. II, sig. 253b–254a) | 3 | … the commaunder of his forces called Naaman, to Ioram the sonne of Achab to be healed of the leprosie… |
+| p02414 (Book II, Part I, Chapter XI, §. II, sig. 254a–254b) | 2 | …uer his present sicknesse: Hee waged warre with Ioram; who receiued diuers wounds at the encounter at… |
+| p02420 (Book II, Part I, Chapter XI, §. III, sig. 254b–255a) | 1 | …res, of his aduancement; the same who ouerthrew Ioram King of Israel, at Ramoth Gilead. And that ther… |
+| p02422 (Book II, Part I, Chapter XI, §. III, sig. 255a) | 1 | …amath in Dauids time, to whom he sent his sonne Ioram with presents, after Dauids victory against Ada… |
 
 ### Seba
 
@@ -1470,6 +1690,194 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:shalmaneser-v:dates:reign:0:note | 1 | Year 1 = 726 BC = Hezekiah year 1; Sargon takes the throne in the tenth mo… |
 | note:person:shalmaneser-v:description | 1 | …Beckman, Part 2, Table 3) his year 1 is 726 BC (Hezekiah’s year 1), Samaria is besieged in his years 4–5… |
 
+### Tantalus
+
+- Occurrences: 23
+- Candidates: tantalus (Tantalus); tantalus-king-of-lydia (Tantalus)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:cornelius-gallus:description | 1 | …s, who elegantly exprest in Verse the storie of Tantalus teaching wisedome to men. No yeere of the World… |
+| note:person:diaconus:description | 1 | … World (1617). Diaconus, who with Didymus giues Tantalus King of Lydia another Mother than Pleta. No yee… |
+| note:person:didymus:description | 1 | … World (1617). Didymus, who with Diaconus giues Tantalus King of Lydia another Mother than Pleta. No yee… |
+| note:person:horace:description | 1 | …Horace, the Poet cited against couetousnesse on Tantalus, and on the close custodie of Danae. No yeere o… |
+| note:person:hymenaeus:description | 1 | …story of the World (1617). Hymenaeus, father of Tantalus and Ascalus. No yeere of the World was taken fo… |
+| note:person:natalis:description | 1 | …alis, who out of Pindarus expounds the fable of Tantalus giuing Nectar to vnworthy men. No yeere of the … |
+| note:person:ovid:description | 1 | …ry of the World (1617). Ouid, the Poet cited on Tantalus, Apollo at Troy, and the imprisonment of Danae.… |
+| note:person:pindarus:description | 1 | …us, out of whom Natalis takes the exposition of Tantalus and the Nectar of the Gods. No yeere of the Wor… |
+| note:person:pleta:description | 1 | … Pleta, the Nymph whom Eusebius makes mother of Tantalus King of Lydia by Iupiter. No yeere of the World… |
+| note:person:tantalus-king-of-lydia:description | 2 | Named in Raleigh's History of the World (1617). Tantalus, King of Lydia in Ehuds time, sonne of Iupiter … |
+| note:person:tantalus-king-of-lydia:name-form:0:citation | 1 | …ter XIII, §. II, sig. 263a. The passage prints “TANTALVS”. |
+| note:person:tantalus-king-of-lydia:summary | 1 | Raleigh names Tantalus in the History of the World (1617). |
+| note:person:tantalus:description | 1 | Named in Raleigh's History of the World (1617). Tantalus, sonne of Hymenaeus and brother of Ascalus. No … |
+| note:person:tantalus:summary | 1 | Raleigh names Tantalus in the History of the World (1617). |
+| p00365 (Contents, Book II, Part I, Chapter XIII, sig. 30a) | 1 | …Ehuds time; and of Proserpina, Orithya, Tereus, Tantalus, Tityus, Admetus, and others that 〈◊ 〉 about th… |
+| p02292 (Book II, Part I, Chapter X, §. II, sig. 241a) | 1 | …, in the Historie of the Lydians, reports, that Tantalus and Ascalus were the sonnes of Hymenaeus: and t… |
+| p02473 (Book II, Part I, Chapter XIII, §. II, sig. 263a) | 1 | …I. Of EHVDS time, and of 〈◊ 〉, ORITHYA, TEREVS, TANTALVS, TITYVS, ADMETVS, and others that liued about t… |
+| p02480 (Book II, Part I, Chapter XIII, §. II, sig. 263b–264a) | 3 | Of the same date was Tantalus, King of Lydia: whom Eusebius makes King of 〈◊ … |
+| p02481 (Book II, Part I, Chapter XIII, §. II, sig. 264a) | 1 | …hers expound this fable otherwise and say, That Tantalus, though he excelled in riches, yet being thirst… |
+| p02482 (Book II, Part I, Chapter XIII, §. II, sig. 264a) | 1 | Others conceiue where it is fained of Tantalus, that he gaue the Nectar and Ambrosia of the Go… |
+
+### Aeneas
+
+- Occurrences: 22
+- Candidates: aeneas (Aeneas); aeneas-of-lidda (Aeneas)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:aeneas-of-lidda:description | 2 | Named in Raleigh's History of the World (1617). Aeneas, whom Saint Peter cured at Lidda. He is not the… |
+| note:person:aeneas-of-lidda:summary | 1 | Raleigh names Aeneas in the History of the World (1617). |
+| note:person:aeneas:name-form:0:citation | 1 | …nological Table, sig. 786a. The passage prints “Aeneas”. |
+| note:person:aeneas:summary | 1 | Aeneas is dated in Raleigh's chronological table (1617… |
+| note:person:halicarnasseus:description | 1 | …unting consent on the dating of Troyes fall and Aeneas voyage. No yeere of the World was taken for him… |
+| p00080 (Preface, sig. 22b) | 1 | …d stronger pipes, when he sounded the warres of Aeneas. It may also be layd to my charge that I vse di… |
+| p00460 (Contents, Book II, Part I, Chapter XXIIII, sig. 32b) | 1 | …III. Of the ancient Kings of the Latines vntill Aeneas 〈◊ 〉 comming. |
+| p00461 (Contents, Book II, Part I, Chapter XXIIII, sig. 32b) | 1 | §. IIII. Of Aeneas; and of the Kings and Gouernours of Alba. |
+| p01217 (Book I, Part I, Chapter VIII, §. II, sig. 112b) | 1 | …inces( as Virgil did Augustus in the fiction of Aeneas) or else to glorifie their owne Nations; Let vs… |
+| p01235 (Book I, Part I, Chapter VIII, §. V, sig. 116b–117a) | 2 | …ius, then all the Kings of the Latines ( before Aeneas) consumed but 150. yeeres: whereas no man hath … |
+| p01252 (Book I, Part I, Chapter VIII, §. VIII, sig. 119b) | 2 | …trong: for in the same manner doth Virgil grace Aeneas, Os humcrosque Deo similis, in face and bodie l… |
+| p01253 (Book I, Part I, Chapter VIII, §. VIII, sig. 119b–120a) | 2 | …the sonne of Gomer, or of Ascanius the sonne of Aeneas, it might be questioned: sure it is, that Ascan… |
+| p01338 (Book I, Part I, Chapter VIII, §. XIV, sig. 130b–131a) | 1 | …as afterward Diospolis, in which S. Peter cured Aeneas of the palsey) standeth neere the Torrent 〈◊ 〉,… |
+| p02210 (Book II, Part I, Chapter VIII, §. II, sig. 234a) | 1 | …e Rome: and therefore that fiction by Virgil of Aeneas and Dido must be farre out of square. For Pygma… |
+| p02230 (Book II, Part I, Chapter IX, §. I, sig. 236b) | 1 | … Saint PETER( non suased Christi virtute) cured Aeneas. Niger calls all that Region from Anti-libanus … |
+| p02490 (Book II, Part I, Chapter XIII, §. II, sig. 264b–265a) | 1 | … so Virgil calleth one of the greatest ships of Aeneas. |
+| p02542 (Book II, Part I, Chapter XIII, §. VII, sig. 271a–271b) | 1 | …s Athens, Tautanes Assyria, Habdon Israel, then Aeneas arriued in Italie, transporting with him in twe… |
+| p02571 (Book II, Part I, Chapter XIII, §. VIII, sig. 276b) | 1 | …y taken, which was in the sixt yeere of Habdon, Aeneas arriued in Italie. Habdon in the eighth yeere o… |
+
+### Amos
+
+- Occurrences: 21
+- Candidates: amos (Amos); amos-d18 (Amos)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:the-great-earthquake:description | 2 | The earthquake in the days of Uzziah, named by Amos (Amos 1:1). The year is the Appendix F figure, … |
+| note:event:the-great-earthquake:summary | 2 | The earthquake in the days of Uzziah, named by Amos (Amos 1:1). |
+| note:person:amos-d18:summary | 1 | Amos is named in Cory, Ancient Fragments (1876, ed. … |
+| note:person:amos:description | 2 | …eigh's History of the World (1617). The prophet Amos, who remembers the worship of Moloch. Not the e… |
+| note:person:amos:summary | 1 | Raleigh names Amos in the History of the World (1617). |
+| note:person:amosis-mendesius:dates:reign:1:note | 1 | He overthrew the city of Avaris. Not Amos of the eighteenth dynasty. The word about is pr… |
+| note:person:inachus:dates:reign:1:note | 1 | He overthrew the city of Avaris. Not Amos of the eighteenth dynasty. The word about is pr… |
+| p00949 (Book I, Part I, Chapter III, §. IX, sig. 66b–67a) | 1 | … there were two Edens, one of which the Prophet Amos remembreth, where he diuideth Syria into three … |
+| p00961 (Book I, Part I, Chapter III, §. X, sig. 69a–69b) | 1 | …n Euphrates: and the name of Eden was in vse in Amos time, though he speake not of Eden in the East,… |
+| p01057 (Book I, Part I, Chapter V, §. VIII, sig. 86a–86b) | 1 | …by other Kings his associates. Also the Prophet Amos found among the Ammonites men of Giantlike stat… |
+| p01317 (Book I, Part I, Chapter VIII, §. XII, subsection III, sig. 128a–128b) | 1 | …lso a powerfull Nation, we finde in the Prophet AMOS: Yet destroyed I the Amorite before them, whose… |
+| p01344 (Book I, Part I, Chapter VIII, §. XIV, sig. 131b) | 1 | … of Caphtor: and in like manner in the ninth of Amos, the Philistims are said to be the reliques of … |
+| p01428 (Book I, Part I, Chapter X, §. II, sig. 143a) | 2 | … and in seuerall Prouinces, did not the Prophet Amos precisely distinguish Chalne from Babylon. Goe … |
+| p02102 (Book II, Part I, Chapter VII, §. IV, subsection V, sig. 226a) | 1 | … the Mountaines Trachones, which b Hierome vpon Amos calls Antiochia, with Hammath or Hamath the les… |
+| p02325 (Book II, Part I, Chapter X, §. III, sig. 243a–243b) | 1 | …oure or fiue mile standeth Thecua, the Citie of Amos the Prophet: and to this place adioyning is the… |
+| p02406 (Book II, Part I, Chapter XI, §. I, sig. 252b–253a) | 1 | … that Citadell. Against this Citie the Prophets Amos, Esai, Hieremy and Zacharias, prophecied that i… |
+| p02413 (Book II, Part I, Chapter XI, §. II, sig. 253b–254a) | 1 | …call this Benhadad Adar, and the sonne of Adar: Amos and 〈◊ 〉 mention the towres of Benhadad. Ioseph… |
+
+### Henry
+
+- Occurrences: 21
+- Candidates: henry (Henry); henry-of-austria (Henry)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:death-of-henry-ii-of-france:summary | 1 | Death of King Henry II of France |
+| note:event:edict-of-nantes:chronologies:1:note | 1 | Issued by Henry IV; also p. 237. |
+| note:event:stanley-meets-mutesa:summary | 1 | Henry Morton Stanley meets King Mutesa; his appeal pr… |
+| note:event:swedish-crusade-in-finland:summary | 1 | Erik IX invades Finland with Henry of Uppsala |
+| note:event:williams-mission-to-maori:summary | 1 | Henry and William Williams begin work among the Maori |
+| note:person:henry-of-austria:description | 1 | Named in Raleigh's History of the World (1617). Henry Duke of Austrea, brother to Conrad the third. N… |
+| note:person:henry-of-austria:summary | 1 | Raleigh names Henry in the History of the World (1617). |
+| note:person:henry:summary | 1 | Raleigh names Henry in the History of the World (1617). |
+| p00018 (Preface, sig. 6b) | 1 | …hinges after the bodies death) his Grand-childe Henry the sixt, and his Son the Prince, suddenly, and… |
+| p00019 (Preface, sig. 6b) | 1 | Now for Henry the sixt, vpon whom the great storme of his Gra… |
+| p00020 (Preface, sig. 6b–7a) | 1 | …path which his Father had troden out, despoyled Henry the Father, and Edward, the sonne, both of thei… |
+| p00021 (Preface, sig. 7a) | 1 | …owne imagination) instructed Gloucester to kill Henry the fixt, his Predecessour; taught him also by … |
+| p00026 (Preface, sig. 8a–8b) | 1 | Now for King Henry the eight: if all the pictures and Patternes of… |
+| p00030 (Preface, sig. 9b) | 1 | …unish the vsurpation, and vnnaturall cruelty of Henry the first, and of our third Edward, in their Ch… |
+| p00037 (Preface, sig. 10b) | 3 | …ented him-selfe of the fact, and gaue Charge to Henry his sonne, to doe iustice vpon the Murderers; t… |
+| p00040 (Preface, sig. 11a–11b) | 1 | … for the Kings of Spaine, which liued both with Henry the seuenth, Henry the eight, Queene Mary, and … |
+| p00081 (Preface, sig. 23a) | 1 | … was for the seruice of that inestimable Prince Henry, the successiue hope, and one of the greatest o… |
+| p00880 (Book I, Part I, Chapter II, §. II, sig. 55b–56b) | 1 | … Doctor Bilson, late Bishop of Winchester, vnto Henry Iacob. Howsoeuer the Truth be determined, wee m… |
+| p02406 (Book II, Part I, Chapter XI, §. I, sig. 252b–253a) | 1 | …Fraunce, Baldwine the third King of Hierusalem, Henry Duke of Austrea, brother to Conrad, Frederick B… |
+
+### Ioash
+
+- Occurrences: 21
+- Candidates: ioas (Joash); ioash-father-of-gideon (Ioash); ioash-in-moab (Ioash)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:hazael-threatens-jerusalem:description | 1 | Hazael of Aram goes up against Jerusalem and Joash buys him off with the temple treasures (2 Kings… |
+| note:event:hazael-threatens-jerusalem:summary | 1 | Hazael of Aram goes up against Jerusalem and Joash buys him off with the temple treasures (2 Kings… |
+| note:event:temple-not-yet-repaired:description | 1 | In Joash’s twenty-third year the Temple is not yet repai… |
+| note:event:temple-not-yet-repaired:summary | 1 | In Joash’s twenty-third year the Temple is not yet repai… |
+| note:person:ioas:dates:death:0:note | 1 | Death of Jehoash (Joash), king of Israel, as the paper cites Jones 2026… |
+| note:person:ioas:summary | 1 | Joash is dated in Raleigh's chronological table (1617… |
+| note:person:ioash-father-of-gideon:description | 3 | Named in Raleigh's History of the World (1617). Ioash, father of Gideon afterward called Ierubbaal. H… |
+| note:person:ioash-father-of-gideon:summary | 1 | Raleigh names Ioash in the History of the World (1617). |
+| note:person:ioash-in-moab:description | 2 | Named in Raleigh's History of the World (1617). Ioash, of the issue of Iuda, named with Iokim and Sar… |
+| note:person:ioash-in-moab:summary | 1 | Raleigh names Ioash in the History of the World (1617). |
+| note:person:joash-of-judah:dates:death:0:note | 1 | Death of Joash, “agreeing precisely with Ussher & Jones”. |
+| note:person:joash-of-judah:dates:reign:1:note | 1 | Kings of Judah. Not Raleigh’s Joash in the Israel column. |
+| note:person:joash-of-judah:summary | 2 | King of Judah in Hales’s synopsis, “Joash or Jehoash”. Not the Joash of Raleigh’s Israel … |
+| note:person:sareph:description | 1 | …eph, of the issue of Iuda, named with Iokim and Ioash in Moab. No yeere of the World was taken for hi… |
+| p02359 (Book II, Part I, Chapter X, §. IV, subsection V, sig. 246b) | 1 | …fourth, that Iokim, and the men of Chozeba, and Ioash, and Sareph, all being of the issue of Iuda, so… |
+| p02420 (Book II, Part I, Chapter XI, §. III, sig. 254b–255a) | 1 | …or second, succeeded 8 Benhadad the third, whom Ioash King of Israel thrise ouerthrew. 9 Resin or Rez… |
+| p02507 (Book II, Part I, Chapter XIII, §. V, sig. 267a) | 1 | …Lord by his Angell stirred vp 〈◊ 〉 the sonne of Ioash, afterward called Ierubbaal: whose feare and vn… |
+
+### Iabin
+
+- Occurrences: 20
+- Candidates: jabin-of-hazor (Iabin); jabin-the-second (Iabin the second)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:deborah-and-barak:chronologies:1:note | 1 | The victory falls at 1278 BC (end of Jabin's bar) on Jones's chart. 23rd ed. Appendix F, p… |
+| note:event:deborah-and-barak:chronologies:4:note | 1 | …, AM 2860, not at Jephthah's victory). BC 5:2: "Jabin was defeated by Barak and Deborah in 2700". |
+| note:event:oppression-of-jabin:chronologies:4:note | 1 | …, not at Jephthah's victory). BC 5:2: "in 2680, Jabin the Canaanite began to oppress Israel in the No… |
+| note:event:oppression-of-jabin:chronologies:7:note | 1 | Body intake. The 20 yeeres of the second Iabin’s oppression. Pass 10 stored the same 20 on jab… |
+| note:person:jabin-of-hazor:summary | 1 | Raleigh names Iabin in the History of the World (1617). |
+| note:person:jabin-the-second:dates:reign:1:note | 1 | Body intake. How long he says this Iabin oppressed Israel. Not a yeere of the World. yea… |
+| note:person:jabin-the-second:dates:reign:2:note | 2 | … intake. 137 yeeres from the death of the first Iabin to the second Iabin’s invasion. Not converted. … |
+| note:person:jabin-the-second:description | 1 | Named in Raleigh's History of the World (1617). Iabin the second, who rebuilt Hazor and oppressed Isr… |
+| note:person:jabin-the-second:name-form:0:citation | 1 | …apter VI, §. II, sig. 208b. The passage prints “Iabin”. |
+| p01928 (Book II, Part I, Chapter VI, §. II, sig. 208b) | 1 | …lso slaughtered, and tooke his Cities: and this Iabin seemed to haue some Dominion ouer the rest, for… |
+| p01930 (Book II, Part I, Chapter VI, §. II, sig. 208b) | 1 | The last King named is Iabin the second, who as it seemeth had rebuilt Hazor… |
+| p02091 (Book II, Part I, Chapter VII, §. IV, subsection II, sig. 224b) | 3 | …is Tribe of Nephtalim, was that famous Citie of Iabin, in Iosua's time called Asor( or after the Chal… |
+| p02116 (Book II, Part I, Chapter VII, §. IV, subsection VI, sig. 227a) | 1 | …rs of Merom; because the Kings that ioyned with Iabin against Iosua, which incamped at the waters of … |
+| p02117 (Book II, Part I, Chapter VII, §. IV, subsection VI, sig. 227a–227b) | 1 | …of Sisara Lieutenant of the Armie of the second Iabin: from whence not farre off towards the Sea of G… |
+| p02495 (Book II, Part I, Chapter XIII, §. IV, sig. 265b) | 2 | …n their sinnes were againe ripe for punishment, Iabin King of Hazor, after the death of Ehud, inuaded… |
+| p02496 (Book II, Part I, Chapter XIII, §. IV, sig. 265b–266a) | 1 | …ime of subiection, to hold correspondencie with Iabin the Canaanite, yet when occasion offered them m… |
+
+### Jehoram
+
+- Occurrences: 20
+- Candidates: jehoram (Jehoram); joram-king-of-israel (Joram (king of Israel))
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:elijahs-letter-to-jehoram:chronologies:1:note | 2 | This Jehoram is jehoram-of-judah, not Joram of Israel. |
+| note:event:jehu-tribute-claim-black-obelisk:chronologies:0:note | 1 | …eser III’s reign; or that “Iaua bit Khumri” was Jehoram of Israel. |
+| note:person:ahaziah-of-judah:summary | 1 | King of Judah in Hales’s synopsis, son of Jehoram. Not Ahaziah king of Israel. No earlier record … |
+| note:person:jehoram-of-judah:summary | 1 | King of Judah in Hales’s synopsis, “Jehoram or Joram”. Not a king of Israel. No earlier rec… |
+| note:person:jehoram:name-form:0:citation | 1 | …pter III, §. XIV, sig. 74a. The passage prints “IEHORAM”. |
+| note:person:jehoram:summary | 1 | Raleigh names Jehoram in the History of the World (1617). |
+| note:person:joram-king-of-israel:dates:reign:1:note | 1 | This is Joram of Israel, not jehoram-of-judah. Appendix… |
+| note:person:joram-king-of-israel:description | 1 | …he northern kingdom of Israel, son of Ahab. Not Jehoram of Judah. Jones dates his accession. Appendix F… |
+| note:person:joram-king-of-israel:summary | 1 | …he northern kingdom of Israel, son of Ahab. Not Jehoram of Judah. Jones dates his accession. |
+| p00416 (Contents, Book II, Part I, Chapter XX, sig. 31b) | 1 | CHAP. XX. Of Iehoram, the sonne of Iehosaphat; and Ahazia. |
+| p00417 (Contents, Book II, Part I, Chapter XX, sig. 31b) | 1 | §. I. THat Iehoram was made King sundry times. |
+| p00418 (Contents, Book II, Part I, Chapter XX, sig. 31b) | 1 | …o change his purpose often, in making his sonne Iehoram King. |
+| p00419 (Contents, Book II, Part I, Chapter XX, sig. 31b) | 1 | §. III. The doings of Iehoram when he raigned alone: and the rebellion of Edo… |
+| p00420 (Contents, Book II, Part I, Chapter XX, sig. 31b) | 1 | §. IIII. Of the miseries falling vpon Iehoram: and of his death. |
+| p00431 (Contents, Book II, Part I, Chapter XXI, sig. 32a) | 1 | …probably bee thought to haue beene the sonne of Iehoram. |
+| p00987 (Book I, Part I, Chapter III, §. XIV, sig. 74a) | 2 | …in these wordes: So the Lord stirred vp against IEHORAM, the spirit of the Philistines, and the Arabian… |
+| p02263 (Book II, Part I, Chapter IX, §. III, sig. 239a) | 1 | 〈◊ 〉 who raigned after Iehoram, destroyed not onely the race of his 〈◊ 〉, but … |
+| p02414 (Book II, Part I, Chapter XI, §. II, sig. 254a–254b) | 1 | …d him all the hallowed things which IEHOSAPHAT, IEHORAM, and AHAZIAH his fathers, Kings of 〈◊ 〉 dedicat… |
+
 ### Amasis
 
 - Occurrences: 19
@@ -1495,78 +1903,30 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01288 (Book I, Part I, Chapter VIII, §. XI, subsection II, sig. 124b–125a) | 1 | …at there had reigned in Egypt 330. Kings before Amasis, who was contemporarie with Cyrus; and that the… |
 | p01642 (Book II, Part I, Chapter II, §. VIII, sig. 172b–173a) | 1 | …f his successours from Themosis( whom Eus. cals Amasis) downwards with no other variation of the lengt… |
 
-### Amos
+### Apollonius
 
 - Occurrences: 19
-- Candidates: amos (Amos); amos-d18 (Amos)
+- Candidates: apollonius (Apollonius); apollonius-rhodius (Apollonius); apollonius-syrian (Apollonius)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
 | Unit | Count | Excerpt |
 |---|---|---|
-| note:event:the-great-earthquake:description | 2 | The earthquake in the days of Uzziah, named by Amos (Amos 1:1). The year is the Appendix F figure, … |
-| note:event:the-great-earthquake:summary | 2 | The earthquake in the days of Uzziah, named by Amos (Amos 1:1). |
-| note:person:amos-d18:summary | 1 | Amos is named in Cory, Ancient Fragments (1876, ed. … |
-| note:person:amos:description | 2 | …eigh's History of the World (1617). The prophet Amos, who remembers the worship of Moloch. Not the e… |
-| note:person:amos:summary | 1 | Raleigh names Amos in the History of the World (1617). |
-| note:person:amosis-mendesius:dates:reign:1:note | 1 | He overthrew the city of Avaris. Not Amos of the eighteenth dynasty. The word about is pr… |
-| note:person:inachus:dates:reign:1:note | 1 | He overthrew the city of Avaris. Not Amos of the eighteenth dynasty. The word about is pr… |
-| p00949 (Book I, Part I, Chapter III, §. IX, sig. 66b–67a) | 1 | … there were two Edens, one of which the Prophet Amos remembreth, where he diuideth Syria into three … |
-| p00961 (Book I, Part I, Chapter III, §. X, sig. 69a–69b) | 1 | …n Euphrates: and the name of Eden was in vse in Amos time, though he speake not of Eden in the East,… |
-| p01057 (Book I, Part I, Chapter V, §. VIII, sig. 86a–86b) | 1 | …by other Kings his associates. Also the Prophet Amos found among the Ammonites men of Giantlike stat… |
-| p01317 (Book I, Part I, Chapter VIII, §. XII, subsection III, sig. 128a–128b) | 1 | …lso a powerfull Nation, we finde in the Prophet AMOS: Yet destroyed I the Amorite before them, whose… |
-| p01344 (Book I, Part I, Chapter VIII, §. XIV, sig. 131b) | 1 | … of Caphtor: and in like manner in the ninth of Amos, the Philistims are said to be the reliques of … |
-| p01428 (Book I, Part I, Chapter X, §. II, sig. 143a) | 2 | … and in seuerall Prouinces, did not the Prophet Amos precisely distinguish Chalne from Babylon. Goe … |
-| p02102 (Book II, Part I, Chapter VII, §. IV, subsection V, sig. 226a) | 1 | … the Mountaines Trachones, which b Hierome vpon Amos calls Antiochia, with Hammath or Hamath the les… |
-| p02325 (Book II, Part I, Chapter X, §. III, sig. 243a–243b) | 1 | …oure or fiue mile standeth Thecua, the Citie of Amos the Prophet: and to this place adioyning is the… |
-
-### Jehoram
-
-- Occurrences: 19
-- Candidates: jehoram (Jehoram); joram-king-of-israel (Joram (king of Israel))
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:event:elijahs-letter-to-jehoram:chronologies:1:note | 2 | This Jehoram is jehoram-of-judah, not Joram of Israel. |
-| note:event:jehu-tribute-claim-black-obelisk:chronologies:0:note | 1 | …eser III’s reign; or that “Iaua bit Khumri” was Jehoram of Israel. |
-| note:person:ahaziah-of-judah:summary | 1 | King of Judah in Hales’s synopsis, son of Jehoram. Not Ahaziah king of Israel. No earlier record … |
-| note:person:jehoram-of-judah:summary | 1 | King of Judah in Hales’s synopsis, “Jehoram or Joram”. Not a king of Israel. No earlier rec… |
-| note:person:jehoram:name-form:0:citation | 1 | …pter III, §. XIV, sig. 74a. The passage prints “IEHORAM”. |
-| note:person:jehoram:summary | 1 | Raleigh names Jehoram in the History of the World (1617). |
-| note:person:joram-king-of-israel:dates:reign:1:note | 1 | This is Joram of Israel, not jehoram-of-judah. Appendix… |
-| note:person:joram-king-of-israel:description | 1 | …he northern kingdom of Israel, son of Ahab. Not Jehoram of Judah. Jones dates his accession. Appendix F… |
-| note:person:joram-king-of-israel:summary | 1 | …he northern kingdom of Israel, son of Ahab. Not Jehoram of Judah. Jones dates his accession. |
-| p00416 (Contents, Book II, Part I, Chapter XX, sig. 31b) | 1 | CHAP. XX. Of Iehoram, the sonne of Iehosaphat; and Ahazia. |
-| p00417 (Contents, Book II, Part I, Chapter XX, sig. 31b) | 1 | §. I. THat Iehoram was made King sundry times. |
-| p00418 (Contents, Book II, Part I, Chapter XX, sig. 31b) | 1 | …o change his purpose often, in making his sonne Iehoram King. |
-| p00419 (Contents, Book II, Part I, Chapter XX, sig. 31b) | 1 | §. III. The doings of Iehoram when he raigned alone: and the rebellion of Edo… |
-| p00420 (Contents, Book II, Part I, Chapter XX, sig. 31b) | 1 | §. IIII. Of the miseries falling vpon Iehoram: and of his death. |
-| p00431 (Contents, Book II, Part I, Chapter XXI, sig. 32a) | 1 | …probably bee thought to haue beene the sonne of Iehoram. |
-| p00987 (Book I, Part I, Chapter III, §. XIV, sig. 74a) | 2 | …in these wordes: So the Lord stirred vp against IEHORAM, the spirit of the Philistines, and the Arabian… |
-| p02263 (Book II, Part I, Chapter IX, §. III, sig. 239a) | 1 | 〈◊ 〉 who raigned after Iehoram, destroyed not onely the race of his 〈◊ 〉, but … |
-
-### Aeneas
-
-- Occurrences: 18
-- Candidates: aeneas (Aeneas); aeneas-of-lidda (Aeneas)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:person:aeneas-of-lidda:description | 2 | Named in Raleigh's History of the World (1617). Aeneas, whom Saint Peter cured at Lidda. He is not the… |
-| note:person:aeneas-of-lidda:summary | 1 | Raleigh names Aeneas in the History of the World (1617). |
-| note:person:aeneas:name-form:0:citation | 1 | …nological Table, sig. 786a. The passage prints “Aeneas”. |
-| note:person:aeneas:summary | 1 | Aeneas is dated in Raleigh's chronological table (1617… |
-| p00080 (Preface, sig. 22b) | 1 | …d stronger pipes, when he sounded the warres of Aeneas. It may also be layd to my charge that I vse di… |
-| p00460 (Contents, Book II, Part I, Chapter XXIIII, sig. 32b) | 1 | …III. Of the ancient Kings of the Latines vntill Aeneas 〈◊ 〉 comming. |
-| p00461 (Contents, Book II, Part I, Chapter XXIIII, sig. 32b) | 1 | §. IIII. Of Aeneas; and of the Kings and Gouernours of Alba. |
-| p01217 (Book I, Part I, Chapter VIII, §. II, sig. 112b) | 1 | …inces( as Virgil did Augustus in the fiction of Aeneas) or else to glorifie their owne Nations; Let vs… |
-| p01235 (Book I, Part I, Chapter VIII, §. V, sig. 116b–117a) | 2 | …ius, then all the Kings of the Latines ( before Aeneas) consumed but 150. yeeres: whereas no man hath … |
-| p01252 (Book I, Part I, Chapter VIII, §. VIII, sig. 119b) | 2 | …trong: for in the same manner doth Virgil grace Aeneas, Os humcrosque Deo similis, in face and bodie l… |
-| p01253 (Book I, Part I, Chapter VIII, §. VIII, sig. 119b–120a) | 2 | …the sonne of Gomer, or of Ascanius the sonne of Aeneas, it might be questioned: sure it is, that Ascan… |
-| p01338 (Book I, Part I, Chapter VIII, §. XIV, sig. 130b–131a) | 1 | …as afterward Diospolis, in which S. Peter cured Aeneas of the palsey) standeth neere the Torrent 〈◊ 〉,… |
-| p02210 (Book II, Part I, Chapter VIII, §. II, sig. 234a) | 1 | …e Rome: and therefore that fiction by Virgil of Aeneas and Dido must be farre out of square. For Pygma… |
-| p02230 (Book II, Part I, Chapter IX, §. I, sig. 236b) | 1 | … Saint PETER( non suased Christi virtute) cured Aeneas. Niger calls all that Region from Anti-libanus … |
+| note:person:apollonius-rhodius:description | 2 | Named in Raleigh's History of the World (1617). Apollonius who saith the Harpyes couenanted with Zetes and… |
+| note:person:apollonius-rhodius:summary | 1 | Raleigh names Apollonius in the History of the World (1617). |
+| note:person:apollonius-syrian:description | 2 | Named in Raleigh's History of the World (1617). Apollonius, beaten by Iudas Macchabaeus and ouerthrown by … |
+| note:person:apollonius-syrian:summary | 1 | Raleigh names Apollonius in the History of the World (1617). |
+| note:person:apollonius:description | 2 | …d in Raleigh's History of the World (1617). The Apollonius of the liues of the Fathers. Other men named Ap… |
+| note:person:apollonius:summary | 1 | Raleigh names Apollonius in the History of the World (1617). |
+| p01230 (Book I, Part I, Chapter VIII, §. IV, sig. 116a) | 1 | …r by the exchange of Iron, and other Metals, as Apollonius witnesseth in these following Verses, telling h… |
+| p01254 (Book I, Part I, Chapter VIII, §. VIII, sig. 120a) | 1 | …n Paphlagonia, as Homer witnesseth, and so doth Apollonius in his Argonauticks: Now, when these Rephei( af… |
+| p01474 (Book I, Part I, Chapter XI, §. II, sig. 149b) | 1 | …is the 〈◊ 〉 of worshipping God. To which effect Apollonius in his Epistles expounding the word( 〈◊ 〉) sait… |
+| p01484 (Book I, Part I, Chapter XI, §. II, sig. 150a–150b) | 1 | …things that suffer, were 〈◊ 〉 before spoken of: Apollonius 〈◊ 〉 remembred by S. Hierome to Paulinus; in so… |
+| p01965 (Book II, Part I, Chapter VI, §. V, sig. 210b) | 1 | …n was the Sonne of Prometheus, saith Herodotus, Apollonius, Hesiodus, and Strabo. Hesiodus gaue him Pandor… |
+| p02043 (Book II, Part I, Chapter VII, §. III, subsection III, sig. 220a) | 1 | …, Dromos Achillis, which Citie the Scholiast of Apollonius placeth neere the Riuer Phyllis, in Bithynia. |
+| p02282 (Book II, Part I, Chapter X, §. I, sig. 240b) | 1 | …nsumed with fire: neere which also he ouerthrew Apollonius. |
+| p02319 (Book II, Part I, Chapter X, §. III, sig. 243a) | 1 | … Macchabaeus( after he had formerly beaten both Apollonius and Seron) gaue a third ouerthrow to Gorgias Li… |
+| p02447 (Book II, Part I, Chapter XII, §. II, sig. 257b) | 1 | …rst; then by Antiochus Epiphanes: and againe by Apollonius his Lieutenant. By Pompey it was taken long aft… |
+| p02524 (Book II, Part I, Chapter XIII, §. VI, sig. 268b–269a) | 1 | …d of wearinesse in the flight, and pursuit. But Apollonius saith that the Harpyes did couenant with the yo… |
 
 ### CYRIL
 
@@ -1657,71 +2017,6 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01287 (Book I, Part I, Chapter VIII, §. XI, subsection II, sig. 124b) | 1 | …came Egypt, at such time as Aegyptus( otherwise Ramesses, as some thinke) the sonne of Belus, chased the… |
 | p01642 (Book II, Part I, Chapter II, §. VIII, sig. 172b–173a) | 5 | … Danaus & Aegyptus, otherwise called Armeus and Ramesses, was equally distant from Busiris or Orus the s… |
 
-### Iabin
-
-- Occurrences: 17
-- Candidates: jabin-of-hazor (Iabin); jabin-the-second (Iabin the second)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:event:deborah-and-barak:chronologies:1:note | 1 | The victory falls at 1278 BC (end of Jabin's bar) on Jones's chart. 23rd ed. Appendix F, p… |
-| note:event:deborah-and-barak:chronologies:4:note | 1 | …, AM 2860, not at Jephthah's victory). BC 5:2: "Jabin was defeated by Barak and Deborah in 2700". |
-| note:event:oppression-of-jabin:chronologies:4:note | 1 | …, not at Jephthah's victory). BC 5:2: "in 2680, Jabin the Canaanite began to oppress Israel in the No… |
-| note:event:oppression-of-jabin:chronologies:7:note | 1 | Body intake. The 20 yeeres of the second Iabin’s oppression. Pass 10 stored the same 20 on jab… |
-| note:person:jabin-of-hazor:summary | 1 | Raleigh names Iabin in the History of the World (1617). |
-| note:person:jabin-the-second:dates:reign:1:note | 1 | Body intake. How long he says this Iabin oppressed Israel. Not a yeere of the World. yea… |
-| note:person:jabin-the-second:dates:reign:2:note | 2 | … intake. 137 yeeres from the death of the first Iabin to the second Iabin’s invasion. Not converted. … |
-| note:person:jabin-the-second:description | 1 | Named in Raleigh's History of the World (1617). Iabin the second, who rebuilt Hazor and oppressed Isr… |
-| note:person:jabin-the-second:name-form:0:citation | 1 | …apter VI, §. II, sig. 208b. The passage prints “Iabin”. |
-| p01928 (Book II, Part I, Chapter VI, §. II, sig. 208b) | 1 | …lso slaughtered, and tooke his Cities: and this Iabin seemed to haue some Dominion ouer the rest, for… |
-| p01930 (Book II, Part I, Chapter VI, §. II, sig. 208b) | 1 | The last King named is Iabin the second, who as it seemeth had rebuilt Hazor… |
-| p02091 (Book II, Part I, Chapter VII, §. IV, subsection II, sig. 224b) | 3 | …is Tribe of Nephtalim, was that famous Citie of Iabin, in Iosua's time called Asor( or after the Chal… |
-| p02116 (Book II, Part I, Chapter VII, §. IV, subsection VI, sig. 227a) | 1 | …rs of Merom; because the Kings that ioyned with Iabin against Iosua, which incamped at the waters of … |
-| p02117 (Book II, Part I, Chapter VII, §. IV, subsection VI, sig. 227a–227b) | 1 | …of Sisara Lieutenant of the Armie of the second Iabin: from whence not farre off towards the Sea of G… |
-
-### Iair
-
-- Occurrences: 15
-- Candidates: iair-son-of-manasse (Iair); jair (Jair)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:event:jair-judges-israel:chronologies:2:note | 1 | §370 (2817a AM, 1188 BC): Jair dies. |
-| note:event:jair-judges-israel:chronologies:3:note | 1 | …entry. The 2001 list gives no separate year for Jair's death; 2861 is the start of the joint Philist… |
-| note:event:jair-judges-israel:chronologies:4:note | 1 | …0, not at Jephthah's victory). "2835 - Death of Jair, beginning of Philistine oppression ..." |
-| note:event:jair-judges-israel:summary | 2 | Jair the Gileadite judges Israel twenty-two years; h… |
-| note:person:iair-son-of-manasse:description | 2 | Named in Raleigh's History of the World (1617). Iair the sonne of Manasse, who named Hauoth Iair. No… |
-| note:person:iair-son-of-manasse:summary | 1 | Raleigh names Iair in the History of the World (1617). |
-| note:person:jair:dates:reign:0:note | 1 | Row "Jair" of Table 5 (Israel). Year-by-year table (1262-… |
-| note:person:jair:name-form:0:citation | 1 | …nological Table, sig. 785b. The passage prints “Iair”. |
-| p00369 (Contents, Book II, Part I, Chapter XIII, sig. 30a–30b) | 1 | §. VII. Of Abimelech, 〈◊ 〉, and Iair: and of the Lapythae, and of 〈◊ 〉, Hyppolitus, … |
-| p01903 (Book II, Part I, Chapter V, §. VIII, sig. 205b–206a) | 1 | …barim, left the presequution of that warre vnto Iair the sonne of Manasse: who conquering the East p… |
-| p02386 (Book II, Part I, Chapter X, §. VII, sig. 250a) | 3 | …all which, after Og and his sonnes were slaine, Iair descended of Manasse conquered, and called the … |
-
-### Joash
-
-- Occurrences: 15
-- Candidates: ioas (Joash); ioash-in-moab (Ioash)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:event:hazael-threatens-jerusalem:description | 1 | Hazael of Aram goes up against Jerusalem and Joash buys him off with the temple treasures (2 Kings… |
-| note:event:hazael-threatens-jerusalem:summary | 1 | Hazael of Aram goes up against Jerusalem and Joash buys him off with the temple treasures (2 Kings… |
-| note:event:temple-not-yet-repaired:description | 1 | In Joash’s twenty-third year the Temple is not yet repai… |
-| note:event:temple-not-yet-repaired:summary | 1 | In Joash’s twenty-third year the Temple is not yet repai… |
-| note:person:ioas:dates:death:0:note | 1 | Death of Jehoash (Joash), king of Israel, as the paper cites Jones 2026… |
-| note:person:ioas:summary | 1 | Joash is dated in Raleigh's chronological table (1617… |
-| note:person:ioash-in-moab:description | 2 | Named in Raleigh's History of the World (1617). Ioash, of the issue of Iuda, named with Iokim and Sar… |
-| note:person:ioash-in-moab:summary | 1 | Raleigh names Ioash in the History of the World (1617). |
-| note:person:joash-of-judah:dates:death:0:note | 1 | Death of Joash, “agreeing precisely with Ussher & Jones”. |
-| note:person:joash-of-judah:dates:reign:1:note | 1 | Kings of Judah. Not Raleigh’s Joash in the Israel column. |
-| note:person:joash-of-judah:summary | 2 | King of Judah in Hales’s synopsis, “Joash or Jehoash”. Not the Joash of Raleigh’s Israel … |
-| note:person:sareph:description | 1 | …eph, of the issue of Iuda, named with Iokim and Ioash in Moab. No yeere of the World was taken for hi… |
-| p02359 (Book II, Part I, Chapter X, §. IV, subsection V, sig. 246b) | 1 | …fourth, that Iokim, and the men of Chozeba, and Ioash, and Sareph, all being of the issue of Iuda, so… |
-
 ### Nachor
 
 - Occurrences: 15
@@ -1783,27 +2078,6 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p02205 (Book II, Part I, Chapter VIII, §. II, sig. 234a) | 1 | Astarimus, or Atharimus, after Theophilus, a third brother followed Astartus, and ruled 9… |
 | p02207 (Book II, Part I, Chapter VIII, §. II, sig. 234a) | 1 | Ithobalus( or Iuthobalus, in Theophilus) son to the third brother Astarimus, who was th… |
 
-### Apollonius
-
-- Occurrences: 14
-- Candidates: apollonius (Apollonius); apollonius-syrian (Apollonius)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:person:apollonius-syrian:description | 2 | Named in Raleigh's History of the World (1617). Apollonius, beaten by Iudas Macchabaeus and ouerthrown by … |
-| note:person:apollonius-syrian:summary | 1 | Raleigh names Apollonius in the History of the World (1617). |
-| note:person:apollonius:description | 2 | …d in Raleigh's History of the World (1617). The Apollonius of the liues of the Fathers. Other men named Ap… |
-| note:person:apollonius:summary | 1 | Raleigh names Apollonius in the History of the World (1617). |
-| p01230 (Book I, Part I, Chapter VIII, §. IV, sig. 116a) | 1 | …r by the exchange of Iron, and other Metals, as Apollonius witnesseth in these following Verses, telling h… |
-| p01254 (Book I, Part I, Chapter VIII, §. VIII, sig. 120a) | 1 | …n Paphlagonia, as Homer witnesseth, and so doth Apollonius in his Argonauticks: Now, when these Rephei( af… |
-| p01474 (Book I, Part I, Chapter XI, §. II, sig. 149b) | 1 | …is the 〈◊ 〉 of worshipping God. To which effect Apollonius in his Epistles expounding the word( 〈◊ 〉) sait… |
-| p01484 (Book I, Part I, Chapter XI, §. II, sig. 150a–150b) | 1 | …things that suffer, were 〈◊ 〉 before spoken of: Apollonius 〈◊ 〉 remembred by S. Hierome to Paulinus; in so… |
-| p01965 (Book II, Part I, Chapter VI, §. V, sig. 210b) | 1 | …n was the Sonne of Prometheus, saith Herodotus, Apollonius, Hesiodus, and Strabo. Hesiodus gaue him Pandor… |
-| p02043 (Book II, Part I, Chapter VII, §. III, subsection III, sig. 220a) | 1 | …, Dromos Achillis, which Citie the Scholiast of Apollonius placeth neere the Riuer Phyllis, in Bithynia. |
-| p02282 (Book II, Part I, Chapter X, §. I, sig. 240b) | 1 | …nsumed with fire: neere which also he ouerthrew Apollonius. |
-| p02319 (Book II, Part I, Chapter X, §. III, sig. 243a) | 1 | … Macchabaeus( after he had formerly beaten both Apollonius and Seron) gaue a third ouerthrow to Gorgias Li… |
-
 ### Hobab
 
 - Occurrences: 14
@@ -1822,6 +2096,43 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01871 (Book II, Part I, Chapter V, §. II, sig. 200b–201a) | 3 | …n-law, whom in the tenth of Numbers hee calleth Hobab, to accompanie them in their journey towards Ca… |
 | p01873 (Book II, Part I, Chapter V, §. III, sig. 201a–201b) | 1 | AFter this dismission of Hobab, Israel beganne to march towards the Desarts of… |
 
+### Lynceus
+
+- Occurrences: 14
+- Candidates: lynceus (Lynceus); lynceus-argonaut (Lynceus)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:acrisius:description | 1 | …illingly by Perseus; eldest sonne of Abas after Lynceus. No yeere of the World was taken for him. Displ… |
+| note:person:idas:description | 1 | …h's History of the World (1617). Idas, who with Lynceus sailed with Iason and afterwards slew Castor, a… |
+| note:person:lynceus-argonaut:description | 2 | Named in Raleigh's History of the World (1617). Lynceus, who with Idas sailed with Iason and was slaine… |
+| note:person:lynceus-argonaut:summary | 1 | Raleigh names Lynceus in the History of the World (1617). |
+| note:person:lynceus:summary | 1 | Raleigh names Lynceus in the History of the World (1617). |
+| p01641 (Book II, Part I, Chapter II, §. VIII, sig. 172b) | 1 | …expelled his brother Danaus, reigned, and begat Lynceus, married to Hypermnestra. Danaus or Armeus expe… |
+| p01970 (Book II, Part I, Chapter VI, §. VI, sig. 211a–211b) | 1 | …eres; after him Danaus fiftie yeeres; after him Lynceus: in whose time, and after him in the time of Mi… |
+| p02014 (Book II, Part I, Chapter VI, §. VIII, sig. 216b–217a) | 1 | …id) slew the fiftie Sonnes of Aegyptus, all but Lynceus who succeeded Danâus, if the tale be true. Ther… |
+| p02497 (Book II, Part I, Chapter XIII, §. IV, sig. 266a) | 2 | …f Pausanias writeth to this effect: After 〈◊ 〉, Lynceus succeeded in Argos, after whom the children of … |
+| p02501 (Book II, Part I, Chapter XIII, §. IV, sig. 266b) | 1 | … 〉, 〈◊ 〉, Triopas, Crotopus, Sthenelus, Danaus, Lynceus, Abas, Acrisius, Pelops. |
+| p02522 (Book II, Part I, Chapter XIII, §. VI, sig. 268b) | 2 | …f Vlysses, Atalanta a warlike virgine, Idas and Lynceus the sonnes of 〈◊ 〉, who afterwards in fight wit… |
+
+### Argus
+
+- Occurrences: 13
+- Candidates: argus (Argus); argus-son-of-phryxus (Argus)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:argus-son-of-phryxus:description | 2 | Named in Raleigh's History of the World (1617). Argus, the sonne of Phryxus, who built the ship Argo … |
+| note:person:argus-son-of-phryxus:summary | 1 | Raleigh names Argus in the History of the World (1617). |
+| note:person:argus:summary | 1 | Raleigh names Argus in the History of the World (1617). |
+| note:person:phryxus:description | 1 | …History of the World (1617). Phryxus, father of Argus who built the ship Argo. No yeere of the World … |
+| p01083 (Book I, Part I, Chapter VI, §. V, sig. 89b) | 1 | … Amphitryon, by whom he had Pelasgus, Sarpedon, Argus, and Hercules: by Taygete he had Taygetus; of w… |
+| p01970 (Book II, Part I, Chapter VI, §. VI, sig. 211a–211b) | 5 | …grammaton; the other, that Mercurie, which slew Argus in Greece, and flying into Aegypt, is said to h… |
+| p02501 (Book II, Part I, Chapter XIII, §. IV, sig. 266b) | 1 | 〈◊ 〉, 〈◊ 〉, Argus, 〈◊ 〉, 〈◊ 〉, Triopas, Crotopus, Sthenelus, Dana… |
+| p02522 (Book II, Part I, Chapter XIII, §. VI, sig. 268b) | 1 | …epared for the voyage, hauing a shippe built by Argus, the sonne of Phryxus, by the Counsell of Palla… |
+
 ### Bnon
 
 - Occurrences: 13
@@ -1838,6 +2149,27 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:bnon:dates:reign:1:note | 1 | …dentifies with Jacob’s family held Avaris under Bnon. A duration, not a BC year. |
 | note:person:bnon:dates:reign:2:note | 2 | He identifies Bnon, sometimes written Beon, with Benjamin through … |
 | note:person:rachel:dates:birth:1:note | 2 | He names Apachnas after Bnon, and Rachel’s name Ben-Oni as the bridge to Bno… |
+
+### Lycurgus
+
+- Occurrences: 13
+- Candidates: lycurgus (Lycurgus); lycurgus-of-nemea (Lycurgus)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:homer-iliad-odyssey:chronologies:0:note | 1 | …flourished for up to 50 years, into the time of Lycurgus. |
+| note:event:lycurgus-competes-in-the-iphitus-games:description | 1 | Lycurgus of Sparta competes in the games of Iphitus at E… |
+| note:event:lycurgus-competes-in-the-iphitus-games:summary | 1 | Lycurgus of Sparta competes in the games of Iphitus at E… |
+| note:event:sparta-emerges:chronologies:1:note | 1 | At the time of King Lycurgus. |
+| note:person:lycurgus-of-nemea:description | 2 | Named in Raleigh's History of the World (1617). Lycurgus, Lord of the Country about Nemaea, whose sonne … |
+| note:person:lycurgus-of-nemea:summary | 1 | Raleigh names Lycurgus in the History of the World (1617). |
+| note:person:lycurgus:summary | 1 | Raleigh names Lycurgus in the History of the World (1617). |
+| note:person:opheltes:description | 1 | … World (1617). Opheltes or Archemorus, sonne of Lycurgus of Nemaea, slain by a Serpent; the Nemaean game… |
+| p01454 (Book I, Part I, Chapter X, §. VII, sig. 147a–147b) | 1 | …d not erect or set vp any Statue of their Gods. Lycurgus neuer taught it the Lacedoemonians, but thought… |
+| p01713 (Book II, Part I, Chapter IV, §. III, sig. 186a) | 1 | … Israelites from Moses; the Lacedaemonians from Lycurgus; the Athenians from Solon; the Romanes sometime… |
+| p01737 (Book II, Part I, Chapter IV, §. VI, sig. 188a–188b) | 1 | …ained to become Idolaters; that by the lawes of Lycurgus it was permitted to men to vse one anothers wif… |
+| p02550 (Book II, Part I, Chapter XIII, §. VIII, sig. 272b) | 1 | …ues did sell her to Pyrates, and the Pyrates to Lycurgus Lord of the Country about Nemaea, whose yong so… |
 
 ### Agrippa
 
@@ -1875,6 +2207,46 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p02216 (Book II, Part I, Chapter VIII, §. III, sig. 234b–235a) | 3 | …seemeth that the pietie and ancient wisedome of Eliphaz the Themanite was then forgotten, and the Eduma… |
 | p02400 (Book II, Part I, Chapter X, §. VII, sig. 251b–252a) | 3 | … haue denominated Bildad the Shuchit; the other Eliphaz the Themanite: two of the three friends of Iob,… |
 
+### Titus
+
+- Occurrences: 12
+- Candidates: titus (Titus); titus-emperor (Titus (Roman emperor))
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:destruction-of-jerusalem-ad-70:chronologies:4:note | 1 | …n image to Daily Bible Study, keyway.ca). Under Titus, before he became emperor. |
+| note:person:titus-emperor:description | 1 | Roman emperor. Jones dates his accession. Not Titus the companion of Paul. Appendix F prints no end… |
+| note:person:titus-emperor:name-form:0:citation | 1 | … subsection VII, sig. 223a. The passage prints “Titus”. |
+| note:person:titus-emperor:summary | 1 | Roman emperor. Jones dates his accession. Not Titus the companion of Paul. |
+| note:person:titus:summary | 1 | Raleigh names Titus in the History of the World (1617). |
+| p00783 (Contents, Book V, Part I, Chapter V, sig. 41b) | 1 | …, and the Aetolians: with the ciuill answere of Titus to their discourse, before the Achaeans. 〈◊ 〉 i… |
+| p00808 (Book I, Part I, Chapter I, §. II, sig. 44b) | 1 | …to them that know him not: as in his Epistle to Titus, he citeth Epimenides against the Cretians, and… |
+| p02072 (Book II, Part I, Chapter VII, §. III, subsection VII, sig. 223a) | 1 | …authoritie rebuilt, it was afterward rendred to Titus by composition. They finde also the Cities of C… |
+| p02127 (Book II, Part I, Chapter VII, §. V, sig. 228a) | 1 | …a an exceeding strong place afterward forced by Titus: who in the entrance, and afterward in furie sl… |
+| p02270 (Book II, Part I, Chapter IX, §. III, sig. 239a–239b) | 1 | …himselfe better than the Romanes did. For after Titus and Vespasian had wasted the Cities of 〈◊ 〉, an… |
+| p02389 (Book II, Part I, Chapter X, §. VII, sig. 250a–250b) | 1 | …cidents: and how at length after the comming of Titus, when it was taken, many leaping downe the rock… |
+| p02450 (Book II, Part I, Chapter XII, §. III, sig. 258a) | 1 | … it so continued about 40. yeeres. But then did Titus the Roman, being stirred vp, by God, to be the … |
+
+### Inachus
+
+- Occurrences: 11
+- Candidates: inachus (Inachus); inachus-of-argiues (Inachus); inachus-of-sicyon (Inachus)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:inachus-of-argiues:name-form:0:citation | 1 | …nological Table, sig. 783a. The passage prints “Inachus”. |
+| note:person:inachus-of-argiues:summary | 1 | Inachus is dated in Raleigh's chronological table (1617… |
+| note:person:inachus-of-sicyon:name-form:0:citation | 1 | …nological Table, sig. 785b. The passage prints “Inachus”. |
+| note:person:inachus-of-sicyon:summary | 1 | Inachus is dated in Raleigh's chronological table (1617… |
+| note:person:inachus:name-form:1:citation | 1 | … VII, §. III, sig. 95b–96a. The passage prints “INACHVS”. |
+| note:person:inachus:summary | 1 | Inachus the Argive is named by Ptolemaeus Mendesius in … |
+| p01083 (Book I, Part I, Chapter VI, §. V, sig. 89b) | 1 | … Father of Endymion; and by Io( the Daughter of Inachus) Epaphus, the Founder of Memphis in Aegypt: whi… |
+| p01118 (Book I, Part I, Chapter VII, §. III, sig. 95b–96a) | 2 | …kes that Moses was more ancient, and liued with Inachus; but that cannot bee true: for then had the Flo… |
+| p01647 (Book II, Part I, Chapter III, §. I, sig. 173b) | 1 | …of Mendes, who saith that Moses was borne while Inachus ruled the Argiues, and Amesis in Aegypt. |
+| p02500 (Book II, Part I, Chapter XIII, §. IV, sig. 266b) | 1 | …thers but at 417. 〈◊ 〉 was the Daughter of this Inachus: whom the Aegyptians called 〈◊ 〉. |
+
 ### Manasseh
 
 - Occurrences: 11
@@ -1893,62 +2265,41 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:manasses:summary | 1 | Manasseh is dated in Raleigh's chronological table (1617… |
 | p02100 (Book II, Part I, Chapter VII, §. IV, subsection IV, sig. 225b) | 1 | … to bee the Riuer Iaboc: which boundeth Gad and Manasseh ouer Iordan: but he mistaketh it; for Hieromaix… |
 
-### Othoniel
-
-- Occurrences: 11
-- Candidates: othniel (Othoniel); othoniel (Othniel)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:person:othniel:description | 1 | Named in Raleigh's History of the World (1617). Othoniel, who tooke Dabir by Calebs promise of his Daugh… |
-| note:person:othniel:summary | 1 | Raleigh names Othoniel in the History of the World (1617). |
-| note:person:othoniel:name-form:0:citation | 1 | …nological Table, sig. 784b. The passage prints “Othoniel”. |
-| p00311 (Contents, Book II, Part I, Chapter VI, sig. 28b) | 1 | …rie of Iosua: and of the space betweene him and Othoniel: and of the remainders of the Canaanites: with … |
-| p00363 (Contents, Book II, Part I, Chapter XIII, sig. 30a) | 1 | …OF the Inter-regnum after Iosua's death: and of Othoniel. |
-| p01954 (Book II, Part I, Chapter VI, §. III, sig. 209b) | 1 | …ites neere Cadesbarne. After the Gouernement of Othoniel, they ioyned them with the Moabites: after Bara… |
-| p01989 (Book II, Part I, Chapter VI, §. VIII, sig. 214b) | 1 | …rie of IOSVA; and of the space betweene him and OTHONIEL: and of the remainders of the Canaanites; with … |
-| p02012 (Book II, Part I, Chapter VI, §. VIII, sig. 216b) | 2 | …such as haue inserted yeeres betweene Iosua and Othoniel, of whom Eusebius findes eight yeere, to which … |
-| p02304 (Book II, Part I, Chapter X, §. II, sig. 242a) | 1 | … these Giants expelled. It was taken chiefly by Othoniel, incouraged by Calebs promise of his Daughter i… |
-| p02379 (Book II, Part I, Chapter X, §. VI, sig. 249b) | 1 | …racbones or 〈◊ 〉, as before. After the death of Othoniel the first Iudge of Israel, the Ammonites ioyned… |
-
-### Titus
-
-- Occurrences: 11
-- Candidates: titus (Titus); titus-emperor (Titus (Roman emperor))
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:event:destruction-of-jerusalem-ad-70:chronologies:4:note | 1 | …n image to Daily Bible Study, keyway.ca). Under Titus, before he became emperor. |
-| note:person:titus-emperor:description | 1 | Roman emperor. Jones dates his accession. Not Titus the companion of Paul. Appendix F prints no end… |
-| note:person:titus-emperor:name-form:0:citation | 1 | … subsection VII, sig. 223a. The passage prints “Titus”. |
-| note:person:titus-emperor:summary | 1 | Roman emperor. Jones dates his accession. Not Titus the companion of Paul. |
-| note:person:titus:summary | 1 | Raleigh names Titus in the History of the World (1617). |
-| p00783 (Contents, Book V, Part I, Chapter V, sig. 41b) | 1 | …, and the Aetolians: with the ciuill answere of Titus to their discourse, before the Achaeans. 〈◊ 〉 i… |
-| p00808 (Book I, Part I, Chapter I, §. II, sig. 44b) | 1 | …to them that know him not: as in his Epistle to Titus, he citeth Epimenides against the Cretians, and… |
-| p02072 (Book II, Part I, Chapter VII, §. III, subsection VII, sig. 223a) | 1 | …authoritie rebuilt, it was afterward rendred to Titus by composition. They finde also the Cities of C… |
-| p02127 (Book II, Part I, Chapter VII, §. V, sig. 228a) | 1 | …a an exceeding strong place afterward forced by Titus: who in the entrance, and afterward in furie sl… |
-| p02270 (Book II, Part I, Chapter IX, §. III, sig. 239a–239b) | 1 | …himselfe better than the Romanes did. For after Titus and Vespasian had wasted the Cities of 〈◊ 〉, an… |
-| p02389 (Book II, Part I, Chapter X, §. VII, sig. 250a–250b) | 1 | …cidents: and how at length after the comming of Titus, when it was taken, many leaping downe the rock… |
-
-### Inachus
+### Zacharias
 
 - Occurrences: 10
-- Candidates: inachus (Inachus); inachus-of-argiues (Inachus); inachus-of-sicyon (Inachus)
+- Candidates: zachariah-king-of-israel (Zachariah (king of Israel)); zacharias-son-of-jehoiada (Zacharias)
 - Reason: This token matches more than one person. No context rule or override selects one.
 
 | Unit | Count | Excerpt |
 |---|---|---|
-| note:person:inachus-of-argiues:name-form:0:citation | 1 | …nological Table, sig. 783a. The passage prints “Inachus”. |
-| note:person:inachus-of-argiues:summary | 1 | Inachus is dated in Raleigh's chronological table (1617… |
-| note:person:inachus-of-sicyon:name-form:0:citation | 1 | …nological Table, sig. 785b. The passage prints “Inachus”. |
-| note:person:inachus-of-sicyon:summary | 1 | Inachus is dated in Raleigh's chronological table (1617… |
-| note:person:inachus:name-form:1:citation | 1 | … VII, §. III, sig. 95b–96a. The passage prints “INACHVS”. |
-| note:person:inachus:summary | 1 | Inachus the Argive is named by Ptolemaeus Mendesius in … |
-| p01083 (Book I, Part I, Chapter VI, §. V, sig. 89b) | 1 | … Father of Endymion; and by Io( the Daughter of Inachus) Epaphus, the Founder of Memphis in Aegypt: whi… |
-| p01118 (Book I, Part I, Chapter VII, §. III, sig. 95b–96a) | 2 | …kes that Moses was more ancient, and liued with Inachus; but that cannot bee true: for then had the Flo… |
-| p01647 (Book II, Part I, Chapter III, §. I, sig. 173b) | 1 | …of Mendes, who saith that Moses was borne while Inachus ruled the Argiues, and Amesis in Aegypt. |
+| note:person:jehoiada:description | 1 | …, also called Barachias, named as the father of Zacharias who was slaine betweene the Temple and the Alta… |
+| note:person:john-the-baptist:description | 1 | Son of Zacharias and Elisabeth. His father is not Zachariah king… |
+| note:person:zachariah-king-of-israel:name-form:0:citation | 1 | …pter IX, §. III, sig. 239a. The passage prints “Zacharias”. |
+| note:person:zacharias-son-of-jehoiada:description | 1 | Named in Raleigh's History of the World (1617). Zacharias the sonne of Barachias, or lehoida, slaine betw… |
+| note:person:zacharias-son-of-jehoiada:summary | 1 | Raleigh names Zacharias in the History of the World (1617). |
+| p02267 (Book II, Part I, Chapter IX, §. III, sig. 239a) | 1 | Zacharias the fift and last of the house of Iehu, 〈◊ 〉 by… |
+| p02272 (Book II, Part I, Chapter IX, §. III, sig. 239b) | 1 | …Ioas, 16. Yeares. 13. Ieroboam, 41. Yeares. 14. Zacharias, 6. Moneths. 15. Shallum, 1. Moneth. 16. Menahe… |
+| p02287 (Book II, Part I, Chapter X, §. I, sig. 240b–241a) | 1 | … to Hierusalem: Of this place( as they say) was Zacharias the sonne of Barachias, or lehoida, who was sla… |
+| p02386 (Book II, Part I, Chapter X, §. VII, sig. 250a) | 1 | …f Oakes, which beare 〈◊ 〉( of which the Prophet Zacharias, Howle, O yce Oakes of Bashan) and by reason he… |
+| p02406 (Book II, Part I, Chapter XI, §. I, sig. 252b–253a) | 1 | …this Citie the Prophets Amos, Esai, Hieremy and Zacharias, prophecied that it should be taken, burnt, dem… |
+
+### Abiram
+
+- Occurrences: 9
+- Candidates: abiram (Abiram); abiram-son-of-chel (Abiram)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:abiram-son-of-chel:description | 2 | Named in Raleigh's History of the World (1617). Abiram, eldest sonne of Chel of Bethel, lost when his … |
+| note:person:abiram-son-of-chel:summary | 1 | Raleigh names Abiram in the History of the World (1617). |
+| note:person:abiram:summary | 1 | Raleigh names Abiram in the History of the World (1617). |
+| note:person:chel-of-bethel:description | 1 | …es laid the new foundation of Iericho, and lost Abiram and Segub thereby. No yeere of the World was ta… |
+| note:person:korah:description | 1 | … the World (1617). Korah, named with Dathan and Abiram in the mutiny. The sonnes of Korah who carried … |
+| p01865 (Book II, Part I, Chapter V, §. II, sig. 200a) | 1 | …enowne: of which number were Korah, Dathan, and Abiram. Which three principle Mutiners, with those 250… |
+| p01876 (Book II, Part I, Chapter V, §. IV, sig. 202a–202b) | 1 | …ent and dangerous mutinie of Korah, Dathan, and Abiram; who for their contempt of God and his Minister… |
+| p02430 (Book II, Part I, Chapter XII, §. I, sig. 255b) | 1 | … laid the new foundation of it, in the losse of Abiram his eldest sonne, and built the gates of it in … |
 
 ### Mahaca
 
@@ -1981,24 +2332,6 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:sethos-d19:summary | 1 | Sethos is named in Cory, Ancient Fragments (1876, ed. … |
 | note:person:sethos-jos:dates:reign:1:note | 2 | Sethos, also called Ramesses, son of the Amenophis of … |
 | note:person:sethos-jos:summary | 1 | Sethos is named in Cory, Ancient Fragments (1876, ed. … |
-
-### Zacharias
-
-- Occurrences: 9
-- Candidates: zachariah-king-of-israel (Zachariah (king of Israel)); zacharias-son-of-jehoiada (Zacharias)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:person:jehoiada:description | 1 | …, also called Barachias, named as the father of Zacharias who was slaine betweene the Temple and the Alta… |
-| note:person:john-the-baptist:description | 1 | Son of Zacharias and Elisabeth. His father is not Zachariah king… |
-| note:person:zachariah-king-of-israel:name-form:0:citation | 1 | …pter IX, §. III, sig. 239a. The passage prints “Zacharias”. |
-| note:person:zacharias-son-of-jehoiada:description | 1 | Named in Raleigh's History of the World (1617). Zacharias the sonne of Barachias, or lehoida, slaine betw… |
-| note:person:zacharias-son-of-jehoiada:summary | 1 | Raleigh names Zacharias in the History of the World (1617). |
-| p02267 (Book II, Part I, Chapter IX, §. III, sig. 239a) | 1 | Zacharias the fift and last of the house of Iehu, 〈◊ 〉 by… |
-| p02272 (Book II, Part I, Chapter IX, §. III, sig. 239b) | 1 | …Ioas, 16. Yeares. 13. Ieroboam, 41. Yeares. 14. Zacharias, 6. Moneths. 15. Shallum, 1. Moneth. 16. Menahe… |
-| p02287 (Book II, Part I, Chapter X, §. I, sig. 240b–241a) | 1 | … to Hierusalem: Of this place( as they say) was Zacharias the sonne of Barachias, or lehoida, who was sla… |
-| p02386 (Book II, Part I, Chapter X, §. VII, sig. 250a) | 1 | …f Oakes, which beare 〈◊ 〉( of which the Prophet Zacharias, Howle, O yce Oakes of Bashan) and by reason he… |
 
 ### Apis
 
@@ -2192,6 +2525,22 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01971 (Book II, Part I, Chapter VI, §. VI, sig. 211b–212a) | 1 | … it had not beene perilous to haue thought with Eupolemus, that this Hermes was Moses himselfe; and that … |
 | p02200 (Book II, Part I, Chapter VIII, §. II, sig. 233b) | 1 | …ame with Abibalus. Dauid( saith Eusebius out of Eupolemus) constrained this Suron to pay him Tribute, of … |
 
+### Ilus
+
+- Occurrences: 7
+- Candidates: ilus (Ilus); ilus-sanchoniathon (Ilus)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:ilus-sanchoniathon:dates:reign:1:note | 1 | Sanchoniathon. Not Raleigh's Ilus, and not the Egyptian demigod Kronus of p. 111.… |
+| note:person:ilus-sanchoniathon:summary | 1 | Ilus is named in Cory, Ancient Fragments (1876, ed. … |
+| note:person:ilus:name-form:0:citation | 1 | …nological Table, sig. 785b. The passage prints “Ilus”. |
+| note:person:ilus:summary | 1 | Ilus is dated in Raleigh's chronological table (1617… |
+| note:person:kronus:dates:reign:1:note | 1 | Not the Ilus whom Sanchoniathon calls Kronus (p. 15). |
+| note:person:sanchoniathon:description | 1 | …honiato, cited by L. Viues on S. Augustine. Not Ilus, who is Kronus in Sanchoniathon. No yeere of th… |
+| p02504 (Book II, Part I, Chapter XIII, §. IV, sig. 266b) | 1 | …nd 〈◊ 〉, were Midas who raigned in Phrygia: and Ilus who built Ilium: with others mentioned in our C… |
+
 ### Nephercheres
 
 - Occurrences: 7
@@ -2253,21 +2602,6 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:evil-merodach:dates:reign:1:note | 1 | Amilmarudochus (Evil-Merodach), son of Nabucodrossorus. |
 | note:person:neriglissar:summary | 1 | Chaldean king after Evil-Merodach in Polyhistor (Cory 1876). |
 
-### Ilus
-
-- Occurrences: 6
-- Candidates: ilus (Ilus); ilus-sanchoniathon (Ilus)
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:person:ilus-sanchoniathon:dates:reign:1:note | 1 | Sanchoniathon. Not Raleigh's Ilus, and not the Egyptian demigod Kronus of p. 111.… |
-| note:person:ilus-sanchoniathon:summary | 1 | Ilus is named in Cory, Ancient Fragments (1876, ed. … |
-| note:person:ilus:name-form:0:citation | 1 | …nological Table, sig. 785b. The passage prints “Ilus”. |
-| note:person:ilus:summary | 1 | Ilus is dated in Raleigh's chronological table (1617… |
-| note:person:kronus:dates:reign:1:note | 1 | Not the Ilus whom Sanchoniathon calls Kronus (p. 15). |
-| note:person:sanchoniathon:description | 1 | …honiato, cited by L. Viues on S. Augustine. Not Ilus, who is Kronus in Sanchoniathon. No yeere of th… |
-
 ### Nathaniel
 
 - Occurrences: 6
@@ -2297,6 +2631,21 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:ochus:summary | 1 | Ochus is dated in Raleigh's chronological table (1617… |
 | p02185 (Book II, Part I, Chapter VIII, §. I, sig. 233a) | 1 | … in Mauritania: Nilus and Vulcan in Aegypt: and Ochus in Phoenicia. Yea, some of the French doe not b… |
 
+### Ramses
+
+- Occurrences: 6
+- Candidates: armesses-miammoun (Armesses); ramesses (Ramesses)
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:event:egyptian-hittite-peace-treaty:chronologies:1:note | 1 | Ramses II conquers the Hittite kingdom; the first sign… |
+| note:event:egyptian-hittite-peace-treaty:summary | 1 | Ramses II and the Hittites: the first written peace tr… |
+| note:person:annemenes:description | 1 | … reigned in Aegypt after Amenophis the sonne of Ramses, in the time of Thola and Iair. No yeere of the… |
+| note:person:rameses-viii:dates:reign:0:note | 1 | Row "Rameses VIII (D20) = Son of Ramses III" of Table 1 (Egypt Dynasties 19–20 and thei… |
+| note:person:ramesses:name-form:5:citation | 1 | …er XIII, §. VII, sig. 271b. The passage prints “Ramses”. |
+| p02543 (Book II, Part I, Chapter XIII, §. VII, sig. 271b) | 1 | …anes reigned. In Aegypt Amenophis, the sonne of Ramses, and afterwards Annemenes. |
+
 ### Acherrhes
 
 - Occurrences: 5
@@ -2310,6 +2659,19 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | note:person:acherrhes:summary | 1 | Acherrhes is named in Cory, Ancient Fragments (1876, ed. … |
 | note:person:akenchres-jos:dates:reign:1:note | 1 | Not Acherrhes of the eighteenth dynasty. |
 | note:person:cherres:dates:reign:1:note | 1 | …ears are Cherres. Acherres’s eight is stored on acherrhes. |
+
+### Ahaziah
+
+- Occurrences: 5
+- Candidates: ahaziah-king-of-israel (Ahaziah (king of Israel)); ahaziah-of-judah (Ahaziah (king of Judah))
+- Reason: This token matches more than one person. No context rule or override selects one.
+
+| Unit | Count | Excerpt |
+|---|---|---|
+| note:person:ahaziah-king-of-israel:dates:reign:0:note | 1 | Row "Akizzi = Ahaziah" of Table 2 (Kings of Qatna = kings of Israel (… |
+| note:person:ahaziah-of-judah:name-form:0:citation | 1 | …I, subsection I, sig. 230b. The passage prints “Ahaziah”. |
+| p02159 (Book II, Part I, Chapter VII, §. VII, subsection I, sig. 230b) | 1 | …Citie which they call Gaber: in whose ascent as Ahaziah King of Iuda fled from Iehu, when hee had slain… |
+| p02414 (Book II, Part I, Chapter XI, §. II, sig. 254a–254b) | 2 | …o be cured at Iesrael, he and the King of Iuda, Ahaziah, or Ochozias, are slaine by Iehu, as before is … |
 
 ### Herode
 
@@ -2506,18 +2868,6 @@ Each row is one occurrence. Candidates are the person records whose title, alter
 | p01905 (Book II, Part I, Chapter V, §. IX, sig. 206a) | 1 | … the sonne of Eleazar had pierced the bodies of Zimri, a Prince of the Simconites, together with Cosb… |
 | p02252 (Book II, Part I, Chapter IX, §. II, sig. 238a) | 1 | …enge of the Kings Murther, set vpon Zambris, or Zimri; and inclosed him in Thersa, and forst him to b… |
 | p02344 (Book II, Part I, Chapter X, §. IV, subsection II, sig. 245a) | 1 | …or Moab: and where Phineas pierced the bodie of Zimri and Cosbi with his speare bringing due vengeanc… |
-
-### Ahaziah
-
-- Occurrences: 3
-- Candidates: ahaziah-king-of-israel (Ahaziah (king of Israel)); ahaziah-of-judah (Ahaziah (king of Judah))
-- Reason: This token matches more than one person. No context rule or override selects one.
-
-| Unit | Count | Excerpt |
-|---|---|---|
-| note:person:ahaziah-king-of-israel:dates:reign:0:note | 1 | Row "Akizzi = Ahaziah" of Table 2 (Kings of Qatna = kings of Israel (… |
-| note:person:ahaziah-of-judah:name-form:0:citation | 1 | …I, subsection I, sig. 230b. The passage prints “Ahaziah”. |
-| p02159 (Book II, Part I, Chapter VII, §. VII, subsection I, sig. 230b) | 1 | …Citie which they call Gaber: in whose ascent as Ahaziah King of Iuda fled from Iehu, when hee had slain… |
 
 ### Akencheres
 
@@ -2763,538 +3113,556 @@ A name here is a capitalized word of at least three letters, not a function word
 
 | Name | Occurrences | Kinds | Example unit |
 |---|---|---|---|
-| God | 1153 | prose 31, raleigh 1122 | p01686 |
-| King | 630 | prose 280, raleigh 350 | p02248 |
-| Citie | 487 | raleigh 487 | p01882 |
-| Sea | 446 | prose 5, raleigh 441 | p01686 |
+| God | 1196 | prose 32, raleigh 1164 | p01686 |
+| King | 764 | prose 314, raleigh 450 | p02248 |
+| Citie | 541 | prose 2, raleigh 539 | p01882 |
+| Sea | 456 | prose 6, raleigh 450 | p01686 |
+| Kings | 379 | raleigh 379 | p01880 |
 | Egypt | 375 | prose 319, raleigh 56 | p01632 |
-| Kings | 335 | raleigh 335 | p01880 |
-| Aegypt | 326 | prose 4, raleigh 322 | p01871 |
-| Babylon | 324 | prose 247, raleigh 77 | p02213 |
-| East | 277 | prose 3, raleigh 274 | p01867 |
-| Asia | 258 | prose 153, raleigh 105 | p01296 |
-| Land | 250 | prose 4, raleigh 246 | p01880 |
-| Cities | 231 | prose 1, raleigh 230 | p01025 |
-| Africa | 222 | prose 196, raleigh 26 | p01018 |
-| Riuer | 221 | prose 3, raleigh 218 | p00985 |
-| Nations | 217 | prose 2, raleigh 215 | p01296 |
+| Aegypt | 364 | prose 7, raleigh 357 | p01871 |
+| Babylon | 327 | prose 248, raleigh 79 | p02213 |
+| East | 283 | prose 3, raleigh 280 | p01867 |
+| Land | 270 | prose 4, raleigh 266 | p01880 |
+| Asia | 260 | prose 153, raleigh 107 | p01296 |
+| Cities | 255 | prose 1, raleigh 254 | p02497 |
+| Nations | 238 | prose 2, raleigh 236 | p02457 |
+| Riuer | 224 | prose 3, raleigh 221 | p00985 |
+| Africa | 223 | prose 196, raleigh 27 | p01018 |
 | World | 212 | raleigh 212 | p01025 |
-| Europe | 211 | prose 188, raleigh 23 | p01632 |
-| North | 202 | prose 30, raleigh 172 | p01867 |
-| South | 196 | prose 30, raleigh 166 | p01867 |
+| North | 209 | prose 31, raleigh 178 | p01867 |
+| South | 200 | prose 30, raleigh 170 | p01867 |
 | Akkad | 191 | prose 191 | note:person:abirattash:description |
-| Arabia | 186 | prose 2, raleigh 184 | p01871 |
-| Gods | 172 | raleigh 172 | p01882 |
-| Floud | 171 | raleigh 171 | p01296 |
+| Arabia | 191 | prose 2, raleigh 189 | p01871 |
+| Gods | 190 | prose 1, raleigh 189 | p01882 |
+| Floud | 172 | raleigh 172 | p01296 |
+| Father | 171 | raleigh 171 | p01871 |
 | Sumer | 168 | prose 168 | note:person:abirattash:description |
-| Father | 158 | raleigh 158 | p01871 |
-| Law | 156 | prose 3, raleigh 153 | p01743 |
+| Law | 158 | prose 3, raleigh 155 | p02457 |
+| Scriptures | 156 | raleigh 156 | p01025 |
 | Eden | 155 | prose 1, raleigh 154 | p01016 |
-| Paradise | 153 | raleigh 153 | p01018 |
-| Scriptures | 148 | raleigh 148 | p01025 |
-| Region | 147 | prose 1, raleigh 146 | p01018 |
-| Countrie | 143 | raleigh 143 | p01871 |
-| Assyria | 142 | prose 76, raleigh 66 | p01018 |
-| Lord | 137 | prose 20, raleigh 117 | p01871 |
-| Nation | 137 | raleigh 137 | p01882 |
-| Earth | 133 | raleigh 133 | p01759 |
-| West | 125 | prose 3, raleigh 122 | p01867 |
-| Mountaines | 123 | raleigh 123 | p01871 |
+| Paradise | 154 | raleigh 154 | p01018 |
+| Lord | 153 | prose 21, raleigh 132 | p01871 |
+| Countrie | 148 | raleigh 148 | p01871 |
+| Region | 148 | prose 1, raleigh 147 | p01018 |
+| Nation | 147 | raleigh 147 | p01882 |
+| Assyria | 145 | prose 76, raleigh 69 | p02542 |
+| Tribe | 143 | prose 1, raleigh 142 | p01686 |
+| Israelites | 142 | prose 1, raleigh 141 | p01871 |
+| Earth | 135 | prose 1, raleigh 134 | p01759 |
+| West | 128 | prose 3, raleigh 125 | p01867 |
+| Kingdome | 126 | prose 7, raleigh 119 | p02353 |
+| Mountaines | 126 | raleigh 126 | p01871 |
+| Princes | 125 | prose 2, raleigh 123 | p01871 |
+| Arke | 122 | raleigh 122 | p01876 |
+| Temple | 122 | prose 32, raleigh 90 | p01867 |
 | Tyre | 122 | prose 37, raleigh 85 | note:person:abbarus:summary |
-| Arke | 119 | raleigh 119 | p01876 |
-| Israelites | 118 | prose 1, raleigh 117 | p01871 |
-| Tribe | 116 | raleigh 116 | p01686 |
+| Aegyptians | 119 | prose 1, raleigh 118 | p02457 |
+| Armie | 119 | prose 3, raleigh 116 | p01867 |
+| Syria | 117 | prose 12, raleigh 105 | p00949 |
+| India | 116 | prose 31, raleigh 85 | p01296 |
 | Armenia | 115 | prose 3, raleigh 112 | p01296 |
-| India | 115 | prose 31, raleigh 84 | p01296 |
 | Kish | 115 | prose 115 | note:person:agga:summary |
-| Armie | 110 | prose 2, raleigh 108 | p01867 |
-| Aegyptians | 108 | raleigh 108 | p01564 |
-| Princes | 108 | prose 1, raleigh 107 | p01871 |
-| Sunne | 107 | raleigh 107 | p00049 |
+| Sunne | 110 | raleigh 110 | p00049 |
+| Greece | 109 | prose 8, raleigh 101 | p02153 |
+| Iewes | 109 | prose 10, raleigh 99 | p02457 |
+| Countries | 103 | raleigh 103 | p01564 |
+| Iordan | 103 | raleigh 103 | p02353 |
+| Scripture | 103 | prose 13, raleigh 90 | p01871 |
 | Morecraft | 102 | prose 102 | note:person:charles-i-of-england:description |
-| First | 99 | prose 71, raleigh 28 | p01710 |
+| Prophet | 101 | prose 10, raleigh 91 | p02248 |
+| First | 100 | prose 71, raleigh 29 | p01710 |
+| Hierusalem | 100 | prose 5, raleigh 95 | p02248 |
+| Moab | 99 | prose 7, raleigh 92 | p02353 |
+| Greekes | 98 | raleigh 98 | p02570 |
+| Hebrewes | 98 | raleigh 98 | p01686 |
 | Nature | 98 | raleigh 98 | p00885 |
-| Kingdome | 97 | prose 6, raleigh 91 | p02353 |
+| Romans | 98 | prose 5, raleigh 93 | p01223 |
 | Red | 97 | prose 4, raleigh 93 | p01686 |
-| Countries | 96 | raleigh 96 | p01564 |
+| Christian | 96 | prose 50, raleigh 46 | p01407 |
 | Tigris | 96 | raleigh 96 | p00949 |
-| Syria | 95 | prose 7, raleigh 88 | p00949 |
-| Christian | 94 | prose 50, raleigh 44 | p01407 |
-| Greekes | 94 | raleigh 94 | p01018 |
-| Temple | 94 | prose 30, raleigh 64 | p01867 |
-| Greece | 93 | prose 7, raleigh 86 | p02153 |
-| Moab | 93 | prose 6, raleigh 87 | p02353 |
-| Prophet | 93 | prose 10, raleigh 83 | p02248 |
-| Romans | 93 | prose 3, raleigh 90 | p01223 |
-| Hebrewes | 92 | raleigh 92 | p01686 |
-| Scripture | 91 | prose 13, raleigh 78 | p01871 |
+| Warre | 93 | raleigh 93 | p02570 |
+| Empire | 91 | prose 20, raleigh 71 | p01296 |
 | Aethiopia | 89 | raleigh 89 | p00985 |
+| CHAP | 89 | raleigh 89 | p01547 |
 | Ussher | 89 | prose 89 | note:person:arphaxad:description |
+| Genesis | 88 | prose 48, raleigh 40 | p01025 |
 | Uruk | 88 | prose 88 | note:person:aidara:summary |
-| Empire | 87 | prose 19, raleigh 68 | p01296 |
-| Genesis | 87 | prose 48, raleigh 39 | p01025 |
-| CHAP | 86 | raleigh 86 | p01547 |
-| Iewes | 86 | prose 6, raleigh 80 | p02170 |
-| Iordan | 85 | raleigh 85 | p02353 |
+| Euphrates | 86 | prose 1, raleigh 85 | p00949 |
+| Chapter | 85 | raleigh 85 | p01025 |
 | Kassite | 85 | prose 85 | note:person:abirattash:summary |
-| Euphrates | 84 | prose 1, raleigh 83 | p00949 |
-| Chapter | 83 | raleigh 83 | p01025 |
-| Fathers | 82 | prose 2, raleigh 80 | p01882 |
-| Hierusalem | 81 | prose 5, raleigh 76 | p02248 |
-| Warre | 81 | raleigh 81 | p00392 |
-| Prince | 80 | prose 1, raleigh 79 | p01686 |
+| Fathers | 84 | prose 3, raleigh 81 | p01882 |
+| Prince | 82 | prose 1, raleigh 81 | p01686 |
+| Hebrew | 81 | prose 5, raleigh 76 | p00985 |
 | Heauen | 79 | raleigh 79 | p01882 |
-| Hebrew | 79 | prose 4, raleigh 75 | p00985 |
 | Babel | 78 | prose 9, raleigh 69 | p01296 |
-| Desart | 74 | prose 1, raleigh 73 | p01686 |
+| Roman | 78 | prose 33, raleigh 45 | p02353 |
+| Desart | 76 | prose 1, raleigh 75 | p01686 |
+| Sonne | 76 | prose 6, raleigh 70 | p01882 |
+| Iudges | 75 | prose 23, raleigh 52 | p01871 |
+| Italie | 72 | raleigh 72 | p02542 |
 | Sonnes | 71 | raleigh 71 | p02226 |
-| Roman | 70 | prose 31, raleigh 39 | p02353 |
-| Sonne | 70 | prose 4, raleigh 66 | p01882 |
-| Regions | 69 | raleigh 69 | p00985 |
-| Italie | 68 | raleigh 68 | p01018 |
-| Deuill | 67 | raleigh 67 | p01046 |
+| Athens | 70 | prose 27, raleigh 43 | p02542 |
+| Regions | 70 | raleigh 70 | p02457 |
+| Ios | 69 | raleigh 69 | p02239 |
+| Assyrian | 68 | prose 25, raleigh 43 | p02353 |
+| Deuill | 68 | raleigh 68 | p02532 |
+| Age | 67 | prose 11, raleigh 56 | p01036 |
+| Canaanites | 67 | prose 4, raleigh 63 | p00985 |
 | Phoenicia | 67 | prose 6, raleigh 61 | p01342 |
 | White | 67 | prose 64, raleigh 3 | note:person:adad-nirari-iii:description |
-| Assyrian | 66 | prose 25, raleigh 41 | p02353 |
+| Mesopotamia | 66 | prose 2, raleigh 64 | p00949 |
 | Moone | 65 | raleigh 65 | p01895 |
+| Rome | 65 | prose 25, raleigh 40 | p01111 |
+| Assyrians | 64 | prose 4, raleigh 60 | p00250 |
 | Griffith | 64 | prose 64 | note:person:adad-nirari-iii:description |
-| Age | 63 | prose 11, raleigh 52 | p01036 |
-| Mesopotamia | 63 | prose 1, raleigh 62 | p00949 |
+| Thebes | 63 | prose 36, raleigh 27 | p02153 |
+| Ammonites | 62 | prose 4, raleigh 58 | p01057 |
 | Booke | 62 | prose 1, raleigh 61 | p00985 |
+| Heathen | 62 | prose 3, raleigh 59 | p00049 |
+| Image | 62 | raleigh 62 | p00884 |
 | Integrated | 62 | prose 62 | note:person:amenemhat-i:description |
+| Judg | 62 | prose 49, raleigh 13 | p02150 |
 | Persia | 62 | prose 20, raleigh 42 | p02213 |
 | Reply | 62 | prose 61, raleigh 1 | note:person:adad-nirari-iii:description |
-| Rome | 62 | prose 24, raleigh 38 | p01111 |
 | Beckman | 61 | prose 61 | note:person:adad-nirari-iii:description |
-| Canaanites | 61 | prose 4, raleigh 57 | p00985 |
-| Image | 61 | raleigh 61 | p00884 |
-| Judg | 61 | prose 49, raleigh 12 | p02150 |
+| Persian | 61 | prose 10, raleigh 51 | p02353 |
+| Tribes | 61 | prose 1, raleigh 60 | p01867 |
+| Daughter | 60 | raleigh 60 | p01871 |
+| Desarts | 60 | raleigh 60 | p01871 |
 | Giants | 60 | raleigh 60 | p01046 |
 | Mountaine | 60 | raleigh 60 | p01871 |
-| Assyrians | 58 | prose 3, raleigh 55 | p00250 |
+| Iudaea | 59 | raleigh 59 | p01111 |
+| Sam | 59 | prose 41, raleigh 18 | p02410 |
+| Valley | 59 | prose 1, raleigh 58 | p02353 |
+| Aegyptian | 58 | raleigh 58 | p02248 |
+| Amorites | 58 | prose 3, raleigh 55 | p02536 |
 | Babylonia | 58 | raleigh 58 | p01296 |
-| Persian | 58 | prose 10, raleigh 48 | p02353 |
-| Valley | 58 | prose 1, raleigh 57 | p02353 |
-| Aegyptian | 57 | raleigh 57 | p02248 |
+| Philistims | 58 | prose 1, raleigh 57 | p02571 |
+| Religion | 58 | prose 2, raleigh 56 | p02457 |
 | Hales | 57 | prose 57 | note:person:abijah-of-judah:summary |
-| Iudaea | 57 | raleigh 57 | p01111 |
+| Moabites | 57 | prose 1, raleigh 56 | p01912 |
+| Storie | 57 | raleigh 57 | p01296 |
 | England | 56 | prose 25, raleigh 31 | p02373 |
 | English | 56 | prose 23, raleigh 33 | p01044 |
-| Religion | 56 | prose 2, raleigh 54 | p01048 |
-| Amorites | 55 | prose 3, raleigh 52 | p01313 |
-| Desarts | 55 | raleigh 55 | p01871 |
 | Mari | 55 | prose 55 | note:person:adad-nirari-iii:description |
-| Ammonites | 54 | prose 4, raleigh 50 | p01057 |
+| Troy | 54 | prose 18, raleigh 36 | p02542 |
+| Acts | 53 | prose 37, raleigh 16 | p00907 |
 | Antiquities | 53 | prose 37, raleigh 16 | p01118 |
-| Acts | 52 | prose 37, raleigh 15 | p00907 |
-| Athens | 52 | prose 25, raleigh 27 | p01111 |
-| Heathen | 52 | raleigh 52 | p00049 |
-| Man | 52 | raleigh 52 | p00049 |
-| Moabites | 52 | prose 1, raleigh 51 | p01912 |
-| Storie | 52 | raleigh 52 | p01296 |
-| Tyrians | 52 | prose 4, raleigh 48 | note:person:abibalus:description |
-| Daughter | 51 | raleigh 51 | p01871 |
+| Lake | 53 | prose 1, raleigh 52 | p02400 |
+| Man | 53 | raleigh 53 | p00049 |
+| Tyrians | 53 | prose 4, raleigh 49 | note:person:abibalus:description |
+| Church | 52 | prose 15, raleigh 37 | p01876 |
+| Galilee | 51 | prose 2, raleigh 49 | p01605 |
 | Kgs | 51 | prose 51 | note:person:solomon:summary |
-| Lake | 51 | raleigh 51 | p02400 |
-| Sam | 51 | prose 41, raleigh 10 | p02328 |
-| Church | 50 | prose 15, raleigh 35 | p01876 |
-| Galilee | 50 | prose 2, raleigh 48 | p01605 |
-| Ios | 50 | raleigh 50 | p02239 |
-| Tribes | 50 | prose 1, raleigh 49 | p01867 |
-| Iudges | 49 | prose 23, raleigh 26 | p01871 |
+| Arnon | 50 | prose 1, raleigh 49 | p02353 |
+| Christians | 49 | prose 8, raleigh 41 | p02353 |
+| Greeke | 49 | prose 2, raleigh 47 | p02353 |
 | Lawes | 49 | raleigh 49 | p01296 |
-| Arnon | 48 | prose 1, raleigh 47 | p02353 |
-| Moneth | 48 | raleigh 48 | p01882 |
-| Christians | 47 | prose 8, raleigh 39 | p02353 |
+| Moneth | 49 | raleigh 49 | p01882 |
+| Septuagint | 49 | raleigh 49 | p01018 |
+| Historie | 47 | prose 1, raleigh 46 | p01359 |
 | Saint | 47 | prose 7, raleigh 40 | p01882 |
-| Septuagint | 47 | raleigh 47 | p01018 |
+| Text | 47 | raleigh 47 | p01018 |
+| Dei | 46 | raleigh 46 | p01016 |
+| Histories | 46 | prose 26, raleigh 20 | p02509 |
 | Scythia | 46 | raleigh 46 | p01296 |
 | Spirit | 46 | raleigh 46 | p01871 |
-| Dei | 45 | raleigh 45 | p01016 |
+| Babylonian | 45 | prose 20, raleigh 25 | p01430 |
 | Isin | 45 | prose 45 | note:person:bur-sin:summary |
 | Starres | 45 | raleigh 45 | p01046 |
-| Babylonian | 44 | prose 20, raleigh 24 | p01430 |
+| Eastward | 44 | raleigh 44 | p01876 |
+| France | 44 | prose 7, raleigh 37 | p01624 |
 | Gehon | 44 | raleigh 44 | p00985 |
 | Macedon | 44 | prose 9, raleigh 35 | p01430 |
-| Philistims | 44 | raleigh 44 | p00985 |
 | Shinar | 44 | prose 1, raleigh 43 | p00949 |
-| Eastward | 43 | raleigh 43 | p01876 |
-| France | 43 | prose 7, raleigh 36 | p01624 |
-| Greeke | 43 | prose 1, raleigh 42 | p02353 |
-| Historie | 43 | prose 1, raleigh 42 | p01359 |
-| Histories | 43 | prose 26, raleigh 17 | p01057 |
+| Authors | 43 | raleigh 43 | p01622 |
+| Queene | 43 | prose 6, raleigh 37 | p01206 |
 | Shinaar | 43 | raleigh 43 | p01296 |
-| Amalekites | 42 | prose 1, raleigh 41 | p01704 |
 | Arabians | 42 | prose 1, raleigh 41 | p02353 |
-| Damascus | 42 | prose 16, raleigh 26 | p01361 |
 | Egyptian | 42 | prose 34, raleigh 8 | p01036 |
+| Lastly | 42 | raleigh 42 | p02534 |
 | Latine | 42 | raleigh 42 | p02353 |
+| Mount | 42 | prose 4, raleigh 38 | note:person:aaron:summary |
 | New | 42 | prose 26, raleigh 16 | p01001 |
+| Priest | 42 | prose 6, raleigh 36 | p01867 |
 | Scott | 42 | prose 42 | note:person:abisha:summary |
-| Text | 41 | raleigh 41 | p01018 |
-| Authors | 40 | raleigh 40 | p01622 |
+| Kingdomes | 41 | raleigh 41 | p01296 |
+| Angels | 40 | raleigh 40 | p01016 |
+| Jerusalem | 40 | prose 29, raleigh 11 | p02420 |
+| Prophets | 40 | prose 1, raleigh 39 | note:person:abdia:description |
+| Samaria | 40 | prose 10, raleigh 30 | note:person:abdias-the-prophet:description |
+| Towne | 40 | raleigh 40 | p02153 |
 | Tree | 40 | raleigh 40 | p01001 |
-| Angels | 39 | raleigh 39 | p01016 |
+| Vulgar | 40 | prose 2, raleigh 38 | p01209 |
 | Carthage | 39 | prose 17, raleigh 22 | p02210 |
 | Libanus | 39 | prose 2, raleigh 37 | p00949 |
-| Mount | 39 | prose 4, raleigh 35 | note:person:aaron:summary |
 | Mountaynes | 39 | raleigh 39 | p00949 |
+| Petraea | 39 | prose 1, raleigh 38 | p01914 |
+| Territorie | 39 | raleigh 39 | p02497 |
+| Creation | 38 | prose 1, raleigh 37 | p01044 |
 | Deus | 38 | raleigh 38 | p01048 |
 | Gen | 38 | raleigh 38 | p01686 |
+| Images | 38 | raleigh 38 | p00885 |
 | Madianites | 38 | raleigh 38 | p00985 |
-| Petraea | 38 | prose 1, raleigh 37 | p01914 |
+| Rama | 38 | raleigh 38 | p02412 |
+| Athenians | 37 | prose 3, raleigh 34 | p01111 |
+| Castle | 37 | prose 4, raleigh 33 | p01342 |
 | Chaldaea | 37 | prose 2, raleigh 35 | p01564 |
-| Jerusalem | 37 | prose 29, raleigh 8 | p00357 |
-| Kingdomes | 37 | raleigh 37 | p01296 |
-| Lastly | 37 | raleigh 37 | p01565 |
-| Leuites | 37 | raleigh 37 | p01867 |
-| Priest | 37 | prose 5, raleigh 32 | p01867 |
-| Prophets | 37 | prose 1, raleigh 36 | note:person:abdia:description |
-| Troy | 37 | prose 13, raleigh 24 | p01753 |
-| Vulgar | 37 | prose 1, raleigh 36 | p01209 |
+| Prouince | 37 | raleigh 37 | p00949 |
+| Verse | 37 | prose 2, raleigh 35 | p01018 |
 | China | 36 | prose 36 | note:person:alopen:summary |
-| Creation | 36 | prose 1, raleigh 35 | p01044 |
 | Garden | 36 | raleigh 36 | p02196 |
-| Images | 36 | raleigh 36 | p00885 |
-| Prouince | 36 | raleigh 36 | p00949 |
-| Queene | 36 | prose 3, raleigh 33 | p01206 |
+| Mediterran | 36 | raleigh 36 | p01296 |
+| Priests | 36 | raleigh 36 | p02248 |
 | Reason | 36 | raleigh 36 | p00885 |
+| Secondly | 36 | raleigh 36 | p01018 |
 | Spaine | 36 | raleigh 36 | p01222 |
+| Syrians | 36 | prose 3, raleigh 33 | p02413 |
 | Whiston | 36 | prose 36 | note:person:aram:description |
 | Writers | 36 | raleigh 36 | p00949 |
 | Basan | 35 | raleigh 35 | p01057 |
 | Countrey | 35 | raleigh 35 | p01222 |
-| Mediterran | 35 | raleigh 35 | p01296 |
 | Men | 35 | prose 1, raleigh 34 | p01743 |
 | Niniue | 35 | raleigh 35 | p01218 |
 | Saba | 35 | raleigh 35 | p01206 |
-| Samaria | 35 | prose 10, raleigh 25 | note:person:abdias-the-prophet:description |
 | Saturne | 35 | raleigh 35 | p01118 |
-| Towne | 35 | raleigh 35 | p02153 |
 | Madian | 34 | raleigh 34 | p01871 |
 | Survey | 34 | prose 34 | note:person:charles-i-of-england:description |
 | Thinis | 34 | prose 34 | note:person:athothis:summary |
 | Antigonus | 33 | prose 1, raleigh 32 | p00683 |
+| Iland | 33 | raleigh 33 | p00990 |
+| Iudge | 33 | prose 5, raleigh 28 | p02229 |
 | Memphis | 33 | prose 25, raleigh 8 | p01637 |
-| Priests | 33 | raleigh 33 | p02248 |
 | PROVISIONAL | 33 | prose 33 | note:person:charles-i-of-england:description |
 | Scythians | 33 | prose 1, raleigh 32 | p01296 |
-| Secondly | 33 | raleigh 33 | p01018 |
-| Territorie | 33 | raleigh 33 | p02170 |
 | Testament | 33 | prose 10, raleigh 23 | p01761 |
 | Ararat | 32 | prose 1, raleigh 31 | p01206 |
-| Castle | 32 | prose 4, raleigh 28 | p01342 |
 | Charran | 32 | raleigh 32 | p01564 |
 | Exod | 32 | prose 17, raleigh 15 | note:person:aaron:summary |
+| Idoll | 32 | prose 1, raleigh 31 | p02532 |
 | Pison | 32 | raleigh 32 | p00949 |
+| Argiues | 31 | prose 9, raleigh 22 | p01118 |
+| Baal | 31 | prose 3, raleigh 28 | p02213 |
 | Chaldaeans | 31 | raleigh 31 | p01430 |
 | Ganges | 31 | prose 1, raleigh 30 | p00925 |
 | Heauens | 31 | raleigh 31 | p01046 |
+| Idolatrie | 31 | raleigh 31 | p01914 |
 | List | 31 | prose 30, raleigh 1 | note:person:abdon:description |
-| Verse | 31 | raleigh 31 | p01018 |
+| Persians | 31 | prose 3, raleigh 28 | p00949 |
+| Againe | 30 | raleigh 30 | p01296 |
 | Caesaria | 30 | prose 11, raleigh 19 | p02170 |
 | Dominion | 30 | prose 1, raleigh 29 | p01218 |
+| Historians | 30 | raleigh 30 | p01111 |
+| Holy | 30 | prose 5, raleigh 25 | p02457 |
 | Leah | 30 | prose 30 | note:person:asher:description |
 | Magicke | 30 | raleigh 30 | p01482 |
-| Againe | 29 | raleigh 29 | p01296 |
 | ARJ | 29 | prose 29 | note:event:accession-of-nabopolassar:description |
-| Athenians | 29 | prose 1, raleigh 28 | p01111 |
-| Baal | 29 | prose 3, raleigh 26 | p02213 |
 | Bookes | 29 | raleigh 29 | p02170 |
+| Children | 29 | raleigh 29 | p01296 |
 | Coelesyria | 29 | raleigh 29 | p00949 |
 | Fortune | 29 | raleigh 29 | p00885 |
-| Iland | 29 | raleigh 29 | p00990 |
 | Latines | 29 | prose 10, raleigh 19 | p01018 |
 | Medes | 29 | prose 14, raleigh 15 | p01296 |
-| Persians | 29 | prose 2, raleigh 27 | p00949 |
 | Recorded | 29 | prose 29 | note:event:accession-of-nabopolassar:description |
-| Thebes | 29 | prose 18, raleigh 11 | p02153 |
 | Author | 28 | raleigh 28 | p01222 |
-| Children | 28 | raleigh 28 | p01296 |
-| Idoll | 28 | raleigh 28 | p02215 |
+| Idumaea | 28 | raleigh 28 | p01880 |
+| Mother | 28 | raleigh 28 | p01759 |
 | Ocean | 28 | raleigh 28 | p00925 |
+| Others | 28 | raleigh 28 | p02457 |
+| Philosophers | 28 | raleigh 28 | p00049 |
 | Ptolemie | 28 | prose 1, raleigh 27 | p01018 |
-| Syrians | 28 | prose 3, raleigh 25 | p01313 |
 | Bishop | 27 | prose 5, raleigh 22 | p02353 |
 | Commandements | 27 | raleigh 27 | p01759 |
+| Common | 27 | raleigh 27 | p01876 |
+| Dauids | 27 | prose 3, raleigh 24 | p00392 |
+| Emath | 27 | prose 1, raleigh 26 | p02424 |
 | Eponym | 27 | prose 27 | note:person:abdon:description |
 | Hamath | 27 | raleigh 27 | p02247 |
+| Hill | 27 | raleigh 27 | p02166 |
 | Hils | 27 | raleigh 27 | p00930 |
-| Holy | 27 | prose 5, raleigh 22 | p01654 |
-| Philosophers | 27 | raleigh 27 | p00049 |
+| Palaestina | 27 | raleigh 27 | p01296 |
+| Poets | 27 | prose 2, raleigh 25 | p01001 |
+| Sinai | 27 | prose 3, raleigh 24 | p01710 |
+| Townes | 27 | raleigh 27 | p01614 |
+| Citizens | 26 | raleigh 26 | p02196 |
 | Gaza | 26 | prose 3, raleigh 23 | p01313 |
-| Hill | 26 | raleigh 26 | p02166 |
-| Historians | 26 | raleigh 26 | p01111 |
-| Idolatrie | 26 | raleigh 26 | p01914 |
+| Hills | 26 | raleigh 26 | p02023 |
+| Lieutenant | 26 | prose 8, raleigh 18 | p01624 |
 | Num | 26 | prose 7, raleigh 19 | note:person:aaron:summary |
-| Palaestina | 26 | raleigh 26 | p01296 |
+| Prouinces | 26 | raleigh 26 | p00949 |
 | Rawlinson | 26 | prose 26 | note:person:alyattes:description |
-| Sinai | 26 | prose 3, raleigh 23 | p01710 |
 | Towre | 26 | raleigh 26 | p01296 |
 | Trees | 26 | raleigh 26 | p01036 |
 | Vniuersall | 26 | raleigh 26 | p00907 |
-| Common | 25 | raleigh 25 | p01876 |
-| Idumaea | 25 | raleigh 25 | p01880 |
+| Emperour | 25 | prose 3, raleigh 22 | p02451 |
 | Lagash | 25 | prose 25 | note:person:akurgal:summary |
 | Media | 25 | prose 3, raleigh 22 | p01296 |
 | Merchants | 25 | raleigh 25 | p00949 |
+| Moneths | 25 | raleigh 25 | p02213 |
 | Sarmatia | 25 | raleigh 25 | p01175 |
-| Townes | 25 | raleigh 25 | p01614 |
+| Tract | 25 | raleigh 25 | p00985 |
+| Wife | 25 | raleigh 25 | p01761 |
+| Bethel | 24 | prose 3, raleigh 21 | p02248 |
+| Canaanite | 24 | prose 20, raleigh 4 | p02495 |
 | Chaldaean | 24 | raleigh 24 | p01549 |
 | Chusites | 24 | prose 1, raleigh 23 | p00985 |
 | Commandement | 24 | raleigh 24 | p01407 |
+| Daughters | 24 | raleigh 24 | p01313 |
+| Diuine | 24 | raleigh 24 | p01761 |
 | Exodus | 24 | prose 11, raleigh 13 | p01896 |
-| Hills | 24 | raleigh 24 | p02023 |
 | Hyksos | 24 | prose 24 | note:person:apachnan:summary |
+| Indies | 24 | raleigh 24 | p01222 |
 | Indus | 24 | prose 2, raleigh 22 | p01172 |
-| Moneths | 24 | raleigh 24 | p02213 |
-| Mother | 24 | raleigh 24 | p01759 |
+| Ismaelites | 24 | raleigh 24 | p00985 |
+| Iustice | 24 | raleigh 24 | p01397 |
 | Nobilitie | 24 | raleigh 24 | p01455 |
+| Peloponnesus | 24 | prose 1, raleigh 23 | p01111 |
+| People | 24 | raleigh 24 | p01867 |
+| Salomons | 24 | prose 1, raleigh 23 | p02559 |
 | Sauiour | 24 | raleigh 24 | p01209 |
-| Tract | 24 | raleigh 24 | p00985 |
+| Seas | 24 | raleigh 24 | p01222 |
+| State | 24 | raleigh 24 | p01430 |
 | America | 23 | prose 8, raleigh 15 | p01385 |
+| Argos | 23 | prose 10, raleigh 13 | note:person:abas:summary |
 | Argument | 23 | prose 11, raleigh 12 | p01209 |
+| Attica | 23 | prose 3, raleigh 20 | p01111 |
+| Carthaginians | 23 | raleigh 23 | p01223 |
 | Centre | 23 | prose 22, raleigh 1 | p00928 |
+| Chron | 23 | raleigh 23 | p02436 |
 | Founder | 23 | prose 10, raleigh 13 | p01361 |
+| Geneua | 23 | prose 4, raleigh 19 | p01209 |
 | Gerar | 23 | raleigh 23 | p00985 |
-| Indies | 23 | raleigh 23 | p01222 |
-| Ismaelites | 23 | raleigh 23 | p00985 |
+| Gouernment | 23 | prose 2, raleigh 21 | p02535 |
 | Ius | 23 | raleigh 23 | p01852 |
-| Iustice | 23 | raleigh 23 | p01397 |
-| Lieutenant | 23 | prose 7, raleigh 16 | p01624 |
-| People | 23 | raleigh 23 | p01867 |
 | Phoenicians | 23 | prose 2, raleigh 21 | p01369 |
+| Pontus | 23 | raleigh 23 | p01296 |
+| Reader | 23 | raleigh 23 | p01209 |
 | Regall | 23 | prose 1, raleigh 22 | p02375 |
-| Seas | 23 | raleigh 23 | p01222 |
-| Wife | 23 | raleigh 23 | p01761 |
+| Romanes | 23 | raleigh 23 | p01496 |
+| Succoth | 23 | raleigh 23 | p02509 |
+| Thirdly | 23 | raleigh 23 | p01624 |
 | Ages | 22 | raleigh 22 | p01223 |
-| Canaanite | 22 | prose 20, raleigh 2 | note:person:amorite:summary |
-| Carthaginians | 22 | raleigh 22 | p01223 |
-| Chron | 22 | raleigh 22 | p02302 |
-| Citizens | 22 | raleigh 22 | p02196 |
-| Emath | 22 | raleigh 22 | p02388 |
-| Geneua | 22 | prose 4, raleigh 18 | p01209 |
+| Beasts | 22 | prose 1, raleigh 21 | p00898 |
+| Captaines | 22 | raleigh 22 | p01865 |
+| Caucasus | 22 | raleigh 22 | p02525 |
+| Chr | 22 | prose 21, raleigh 1 | p02436 |
 | Hor | 22 | prose 2, raleigh 20 | note:person:aaron:summary |
-| Others | 22 | raleigh 22 | p01369 |
-| Pontus | 22 | raleigh 22 | p01296 |
+| Kenites | 22 | raleigh 22 | p01704 |
 | Port | 22 | raleigh 22 | p00949 |
-| Prouinces | 22 | raleigh 22 | p00949 |
-| Reader | 22 | raleigh 22 | p01209 |
+| Ptolomais | 22 | prose 7, raleigh 15 | p02060 |
 | Slaves | 22 | prose 22 | note:person:abisha:description |
 | Sur | 22 | raleigh 22 | p00985 |
-| Thirdly | 22 | raleigh 22 | p01624 |
 | Tiberias | 22 | prose 2, raleigh 20 | p02400 |
 | Time | 22 | raleigh 22 | p00242 |
 | Truth | 22 | raleigh 22 | p00919 |
-| Attica | 21 | prose 2, raleigh 19 | p01111 |
 | Berossus | 21 | prose 21 | note:person:alaparus:summary |
-| Caucasus | 21 | raleigh 21 | p01140 |
 | Chaldean | 21 | prose 21 | note:person:alaparus:summary |
 | Charles | 21 | prose 4, raleigh 17 | p01382 |
-| Chr | 21 | prose 21 | note:person:dodanim:summary |
-| Daughters | 21 | raleigh 21 | p01313 |
-| Dauids | 21 | prose 3, raleigh 18 | p00392 |
-| Diuine | 21 | raleigh 21 | p01761 |
+| Creatures | 21 | raleigh 21 | p02517 |
 | Faith | 21 | raleigh 21 | p00049 |
 | French | 21 | prose 6, raleigh 15 | p01126 |
-| Iudge | 21 | prose 5, raleigh 16 | p02229 |
-| Kenites | 21 | raleigh 21 | p01704 |
+| Idols | 21 | raleigh 21 | p01572 |
+| Iebusites | 21 | prose 2, raleigh 19 | p01313 |
+| Ile | 21 | prose 1, raleigh 20 | p02528 |
 | Prouidence | 21 | raleigh 21 | p00058 |
-| Romanes | 21 | raleigh 21 | p01496 |
+| Saracens | 21 | raleigh 21 | p01615 |
+| Sicyon | 21 | prose 20, raleigh 1 | p02542 |
+| Warres | 21 | prose 1, raleigh 20 | p02474 |
+| Worlds | 21 | raleigh 21 | p00985 |
 | Aethiopians | 20 | prose 1, raleigh 19 | p00985 |
-| Beasts | 20 | raleigh 20 | p00898 |
+| Angell | 20 | prose 1, raleigh 19 | p02509 |
+| Besides | 20 | raleigh 20 | p01871 |
+| Beth | 20 | prose 1, raleigh 19 | p02353 |
 | Canneh | 20 | raleigh 20 | p00949 |
-| Creatures | 20 | raleigh 20 | p01692 |
+| Chariots | 20 | raleigh 20 | p01871 |
 | Dead | 20 | raleigh 20 | p01931 |
 | Families | 20 | raleigh 20 | p01397 |
 | Firmament | 20 | raleigh 20 | p00803 |
 | Knowledge | 20 | raleigh 20 | p00127 |
+| Master | 20 | prose 1, raleigh 19 | p01296 |
+| Metropolis | 20 | raleigh 20 | p01654 |
 | Old | 20 | prose 3, raleigh 17 | p01001 |
 | Reconstructed | 20 | prose 20 | note:person:abdon:description |
 | REL | 20 | prose 20 | note:person:abdon:description |
-| Sicyon | 20 | prose 20 | note:person:adrastus:summary |
-| State | 20 | raleigh 20 | p01430 |
-| Worlds | 20 | raleigh 20 | p00985 |
+| Syrian | 20 | prose 2, raleigh 18 | p02457 |
+| Tabernacle | 20 | prose 6, raleigh 14 | p01867 |
 | Armies | 19 | raleigh 19 | p01867 |
 | Ayre | 19 | raleigh 19 | p01496 |
-| Besides | 19 | raleigh 19 | p01871 |
+| Babylonians | 19 | prose 2, raleigh 17 | p00920 |
 | Bishops | 19 | raleigh 19 | p02165 |
 | Brother | 19 | raleigh 19 | p01761 |
 | Chronicles | 19 | prose 2, raleigh 17 | p02216 |
+| Cilicia | 19 | prose 4, raleigh 15 | p01222 |
+| Crete | 19 | prose 4, raleigh 15 | p02529 |
 | Deuils | 19 | raleigh 19 | p01443 |
 | Dynasties | 19 | raleigh 19 | p01624 |
+| Edomites | 19 | raleigh 19 | p01912 |
+| Gilgal | 19 | prose 4, raleigh 15 | note:person:agag:description |
 | Gouernement | 19 | raleigh 19 | p02387 |
+| Graecians | 19 | prose 1, raleigh 18 | p01753 |
 | Great | 19 | prose 10, raleigh 9 | p00778 |
 | Japan | 19 | prose 18, raleigh 1 | p01166 |
-| Idols | 19 | raleigh 19 | p01572 |
 | Ioppe | 19 | prose 1, raleigh 18 | p01111 |
 | Letters | 19 | raleigh 19 | p01303 |
+| Lords | 19 | raleigh 19 | p01624 |
 | Magi | 19 | raleigh 19 | p01206 |
 | Magicians | 19 | raleigh 19 | p01040 |
-| Salomons | 19 | prose 1, raleigh 18 | p02038 |
+| Mitspa | 19 | raleigh 19 | p02375 |
+| Nephew | 19 | prose 2, raleigh 17 | p01377 |
+| Reg | 19 | raleigh 19 | p02436 |
 | Solution | 19 | prose 19 | note:person:intef-the-elder:description |
 | Soule | 19 | raleigh 19 | p00885 |
 | Spaniards | 19 | raleigh 19 | p01222 |
-| Tabernacle | 19 | prose 6, raleigh 13 | p01867 |
-| Warres | 19 | prose 1, raleigh 18 | p00776 |
+| Territory | 19 | raleigh 19 | p01654 |
 | Waters | 19 | raleigh 19 | p01111 |
+| Zidonians | 19 | prose 3, raleigh 16 | p01912 |
 | Aetolians | 18 | raleigh 18 | p00780 |
 | Akšak | 18 | prose 18 | note:person:isu-il:summary |
+| Aramites | 18 | prose 2, raleigh 16 | p02413 |
 | Battle | 18 | prose 18 | note:person:shalmaneser-iii:description |
 | Bilhah | 18 | prose 18 | note:person:asher:description |
-| Cilicia | 18 | prose 4, raleigh 14 | p01222 |
+| Chronologie | 18 | raleigh 18 | p01296 |
 | Corrected | 18 | prose 18 | note:person:ahmose-i:description |
-| Graecians | 18 | prose 1, raleigh 17 | p01753 |
+| Elders | 18 | raleigh 18 | p01397 |
+| Expedition | 18 | prose 1, raleigh 17 | p01057 |
+| Hebron | 18 | prose 1, raleigh 17 | p01564 |
 | Horeb | 18 | prose 1, raleigh 17 | p02248 |
-| Metropolis | 18 | raleigh 18 | p01654 |
 | Mountayne | 18 | raleigh 18 | p01206 |
 | Philistines | 18 | prose 12, raleigh 6 | note:person:abimelech-of-gerar:description |
 | Plants | 18 | raleigh 18 | p00898 |
 | Psalme | 18 | raleigh 18 | p01686 |
-| Ptolomais | 18 | prose 4, raleigh 14 | p02060 |
-| Saracens | 18 | raleigh 18 | p01615 |
 | Shuckford | 18 | prose 18 | note:person:danaus:summary |
-| Succoth | 18 | raleigh 18 | p02375 |
+| Territories | 18 | raleigh 18 | p02571 |
+| Whether | 18 | raleigh 18 | p01563 |
 | Zilpah | 18 | prose 18 | note:person:asher:summary |
-| Angell | 17 | prose 1, raleigh 16 | p01371 |
 | Ascalon | 17 | prose 5, raleigh 12 | p02091 |
-| Babylonians | 17 | prose 2, raleigh 15 | p00920 |
-| Beth | 17 | prose 1, raleigh 16 | p02353 |
+| Authour | 17 | raleigh 17 | p00985 |
 | Bible | 17 | prose 16, raleigh 1 | note:person:adoniram-judson:summary |
-| Edomites | 17 | raleigh 17 | p01912 |
-| Emperour | 17 | prose 1, raleigh 16 | p02094 |
-| Expedition | 17 | prose 1, raleigh 16 | p01057 |
-| Gouernment | 17 | prose 1, raleigh 16 | p01407 |
+| Earle | 17 | prose 1, raleigh 16 | p02406 |
 | Greek | 17 | prose 17 | note:person:anaxagoras:summary |
-| Hebron | 17 | prose 1, raleigh 16 | p01564 |
-| Ile | 17 | raleigh 17 | p00961 |
-| Lords | 17 | raleigh 17 | p01624 |
+| Hellespont | 17 | raleigh 17 | p02542 |
+| Ilands | 17 | raleigh 17 | p02215 |
 | Mankind | 17 | raleigh 17 | p01032 |
+| Masters | 17 | raleigh 17 | p01624 |
 | Mens | 17 | raleigh 17 | p00906 |
+| Mercurie | 17 | prose 1, raleigh 16 | p01970 |
 | Morall | 17 | raleigh 17 | p01761 |
-| Rama | 17 | raleigh 17 | p02250 |
+| Neere | 17 | raleigh 17 | p01867 |
 | Seir | 17 | raleigh 17 | p01361 |
+| Surely | 17 | raleigh 17 | p01046 |
+| Thessalie | 17 | prose 1, raleigh 16 | p01118 |
 | Vertue | 17 | raleigh 17 | p00898 |
 | Wildernesse | 17 | raleigh 17 | p01882 |
-| Zidonians | 17 | prose 3, raleigh 14 | p01912 |
 | Aire | 16 | raleigh 16 | p00839 |
 | Anakims | 16 | prose 1, raleigh 15 | p01342 |
 | Arabian | 16 | prose 2, raleigh 14 | p02307 |
-| Argiues | 16 | prose 5, raleigh 11 | p01118 |
-| Authour | 16 | raleigh 16 | p00985 |
+| Authours | 16 | raleigh 16 | p01118 |
 | Beda | 16 | raleigh 16 | p01046 |
 | British | 16 | prose 14, raleigh 2 | p02088 |
 | Cappadocia | 16 | prose 1, raleigh 15 | p02060 |
-| Captaines | 16 | raleigh 16 | p01865 |
-| Chariots | 16 | raleigh 16 | p01871 |
 | Deum | 16 | raleigh 16 | p01979 |
+| Diuines | 16 | raleigh 16 | p02559 |
+| Duke | 16 | prose 5, raleigh 11 | p02406 |
 | Easterne | 16 | raleigh 16 | p01296 |
 | Edumaea | 16 | raleigh 16 | p01914 |
 | Emperor | 16 | prose 10, raleigh 6 | p01126 |
-| Hellespont | 16 | raleigh 16 | p01125 |
+| Gath | 16 | prose 4, raleigh 12 | p01057 |
+| Horse | 16 | raleigh 16 | p02490 |
 | Idolaters | 16 | raleigh 16 | p01561 |
-| Iebusites | 16 | prose 2, raleigh 14 | p01313 |
 | Ireland | 16 | prose 10, raleigh 6 | p01018 |
 | Masius | 16 | raleigh 16 | p01010 |
-| Master | 16 | raleigh 16 | p01296 |
-| Masters | 16 | raleigh 16 | p01624 |
-| Mercurie | 16 | raleigh 16 | p01970 |
-| Nephew | 16 | prose 1, raleigh 15 | p01377 |
+| Midianites | 16 | prose 1, raleigh 15 | p01704 |
+| One | 16 | prose 2, raleigh 14 | p01046 |
 | Parents | 16 | raleigh 16 | p01397 |
 | Patriarchs | 16 | raleigh 16 | p01048 |
-| Peloponnesus | 16 | raleigh 16 | p01111 |
+| Phrygia | 16 | prose 1, raleigh 15 | p02488 |
 | Sacrifice | 16 | raleigh 16 | p01761 |
-| Surely | 16 | raleigh 16 | p01046 |
-| Territories | 16 | raleigh 16 | p01222 |
+| Story | 16 | raleigh 16 | p01025 |
 | Westward | 16 | raleigh 16 | p00949 |
-| Whether | 16 | raleigh 16 | p01563 |
 | Yeares | 16 | raleigh 16 | p02272 |
+| Altar | 15 | prose 2, raleigh 13 | p01871 |
 | Antiquitie | 15 | raleigh 15 | p01046 |
-| Authours | 15 | raleigh 15 | p01118 |
+| Apostle | 15 | prose 8, raleigh 7 | p02165 |
 | Bel | 15 | raleigh 15 | p02347 |
 | Black | 15 | prose 11, raleigh 4 | p01338 |
 | Cattell | 15 | raleigh 15 | p01222 |
 | Chalne | 15 | raleigh 15 | p00949 |
-| Chronologie | 15 | raleigh 15 | p01296 |
-| Diuines | 15 | raleigh 15 | p01559 |
-| Earle | 15 | raleigh 15 | p00051 |
+| Contemporaries | 15 | raleigh 15 | p02504 |
+| Deo | 15 | raleigh 15 | p01048 |
 | Eshnunna | 15 | prose 15 | note:person:dadusha:summary |
 | Galaad | 15 | raleigh 15 | p01941 |
-| Gath | 15 | prose 4, raleigh 11 | p01057 |
 | Gaules | 15 | raleigh 15 | p01120 |
+| High | 15 | prose 5, raleigh 10 | p01876 |
+| Inhabitants | 15 | raleigh 15 | p02093 |
 | Likewise | 15 | raleigh 15 | p01880 |
 | Maiestie | 15 | raleigh 15 | p01091 |
 | Numbers | 15 | raleigh 15 | p01867 |
-| One | 15 | prose 2, raleigh 13 | p01046 |
 | Persecution | 15 | prose 15 | note:event:great-persecution-of-diocletian:summary |
 | Philosophie | 15 | raleigh 15 | p02215 |
 | Polyhistor | 15 | prose 13, raleigh 2 | p01654 |
 | Raigne | 15 | raleigh 15 | p01296 |
-| Story | 15 | raleigh 15 | p01025 |
-| Syrian | 15 | prose 1, raleigh 14 | p02398 |
-| Territory | 15 | raleigh 15 | p01654 |
+| Scotland | 15 | prose 8, raleigh 7 | p00990 |
+| Thrace | 15 | prose 4, raleigh 11 | p02542 |
 | Traconitis | 15 | prose 1, raleigh 14 | p01361 |
+| True | 15 | raleigh 15 | p01600 |
+| Turkes | 15 | prose 1, raleigh 14 | p02006 |
 | Wisedome | 15 | raleigh 15 | p01001 |
 | Wiues | 15 | raleigh 15 | p01759 |
 | Word | 15 | raleigh 15 | p00931 |
 | Alexandria | 14 | prose 7, raleigh 7 | p01303 |
 | Baris | 14 | raleigh 14 | p00931 |
-| Bethel | 14 | prose 3, raleigh 11 | p02248 |
 | Ceremoniall | 14 | raleigh 14 | p01871 |
 | Ciuill | 14 | raleigh 14 | p01844 |
 | Colonies | 14 | prose 1, raleigh 13 | p01239 |
+| Country | 14 | prose 1, raleigh 13 | p02436 |
 | Creator | 14 | raleigh 14 | p01048 |
-| Crete | 14 | prose 3, raleigh 11 | p02177 |
-| Deo | 14 | raleigh 14 | p01048 |
-| Duke | 14 | prose 4, raleigh 10 | p00020 |
+| Crowne | 14 | raleigh 14 | p01625 |
+| Deut | 14 | prose 1, raleigh 13 | p02375 |
+| Epistle | 14 | raleigh 14 | p01048 |
 | Esth | 14 | prose 14 | note:event:ahasuerus-feast:summary |
+| Gouernour | 14 | raleigh 14 | p00934 |
 | Gulfe | 14 | raleigh 14 | p00949 |
 | Heliopolis | 14 | prose 3, raleigh 11 | p01654 |
 | Hermon | 14 | raleigh 14 | p01562 |
-| Horse | 14 | raleigh 14 | p02167 |
+| Historian | 14 | prose 1, raleigh 13 | p01979 |
 | Iberia | 14 | raleigh 14 | p01180 |
-| Ilands | 14 | raleigh 14 | p02215 |
 | Indians | 14 | prose 4, raleigh 10 | p00778 |
-| Inhabitants | 14 | raleigh 14 | p02093 |
 | Irish | 14 | prose 11, raleigh 3 | p01018 |
+| Lands | 14 | raleigh 14 | p01430 |
 | Life | 14 | raleigh 14 | p01001 |
 | Magistrate | 14 | raleigh 14 | p01876 |
 | Mansion | 14 | raleigh 14 | p01882 |
-| Neere | 14 | raleigh 14 | p01867 |
-| Ouid | 14 | raleigh 14 | p01001 |
 | Plantation | 14 | raleigh 14 | p00985 |
-| Poets | 14 | raleigh 14 | p01001 |
-| Scotland | 14 | prose 8, raleigh 6 | p00990 |
+| Poet | 14 | prose 4, raleigh 10 | p01223 |
+| Souldiers | 14 | prose 2, raleigh 12 | p02509 |
 | Spirits | 14 | raleigh 14 | p00898 |
 | States | 14 | prose 3, raleigh 11 | p01914 |
-| Thessalie | 14 | raleigh 14 | p01118 |
 | Torrent | 14 | raleigh 14 | p01710 |
-| True | 14 | raleigh 14 | p01600 |
 | Village | 14 | raleigh 14 | p02239 |
+| Vine | 14 | raleigh 14 | p01206 |
 | War | 14 | prose 12, raleigh 2 | p01223 |
+| Adads | 13 | prose 2, raleigh 11 | p02270 |
 | Alexanders | 13 | prose 1, raleigh 12 | p01303 |
-| Altar | 13 | prose 2, raleigh 11 | p01871 |
 | Cedar | 13 | raleigh 13 | p00049 |
 | Chinese | 13 | prose 13 | note:person:confucius:summary |
 | Coast | 13 | raleigh 13 | p01259 |
+| Colonie | 13 | raleigh 13 | p01222 |
 | Consul | 13 | raleigh 13 | p00783 |
-| Contemporaries | 13 | raleigh 13 | p00400 |
 | Continent | 13 | raleigh 13 | p01260 |
 | Decapolis | 13 | prose 2, raleigh 11 | p02091 |
 | Edumaeans | 13 | prose 1, raleigh 12 | p01914 |
 | Egyptians | 13 | prose 1, raleigh 12 | p01287 |
 | Enemies | 13 | raleigh 13 | p00780 |
-| Epistle | 13 | raleigh 13 | p01048 |
+| Familie | 13 | raleigh 13 | p01430 |
 | Flood | 13 | prose 13 | note:person:arphaxad:summary |
 | Golden | 13 | raleigh 13 | p01070 |
 | Grand | 13 | prose 1, raleigh 12 | p01443 |
 | Hammon | 13 | raleigh 13 | p01627 |
-| High | 13 | prose 5, raleigh 8 | p01876 |
-| Historian | 13 | prose 1, raleigh 12 | p01979 |
 | Humane | 13 | raleigh 13 | p01753 |
+| Idumaeans | 13 | raleigh 13 | p01880 |
 | Ituraea | 13 | prose 1, raleigh 12 | p02288 |
+| Judea | 13 | prose 12, raleigh 1 | p02417 |
 | Iudiciall | 13 | raleigh 13 | p01857 |
-| Lands | 13 | raleigh 13 | p01430 |
 | Last | 13 | prose 13 | note:person:astyages:summary |
 | Light | 13 | raleigh 13 | p01495 |
 | Macedonian | 13 | prose 3, raleigh 10 | note:person:alexander-the-great:summary |
@@ -3302,46 +3670,54 @@ A name here is a capitalized word of at least three letters, not a function word
 | Nauigation | 13 | raleigh 13 | p01222 |
 | Neighbours | 13 | prose 4, raleigh 9 | p00949 |
 | Nod | 13 | prose 1, raleigh 12 | p01016 |
-| Phrygia | 13 | raleigh 13 | p01252 |
 | Plaines | 13 | raleigh 13 | p01704 |
+| Ramoth | 13 | prose 1, raleigh 12 | p02413 |
 | Schoole | 13 | raleigh 13 | p00875 |
 | Scottish | 13 | prose 13 | note:person:alexander-duff:summary |
 | Seleucia | 13 | raleigh 13 | p00949 |
+| Sparta | 13 | prose 3, raleigh 10 | p02570 |
+| Steward | 13 | prose 3, raleigh 10 | note:person:abdia:description |
 | Sunnes | 13 | raleigh 13 | p00940 |
+| Tower | 13 | raleigh 13 | p02153 |
 | Villages | 13 | raleigh 13 | p02150 |
-| Vine | 13 | raleigh 13 | p01206 |
 | Vmbri | 13 | raleigh 13 | p01118 |
 | Women | 13 | raleigh 13 | p01001 |
 | Yea | 13 | raleigh 13 | p01759 |
 | Altars | 12 | raleigh 12 | p01111 |
-| Apostle | 12 | prose 8, raleigh 4 | p02165 |
 | Apostles | 12 | prose 1, raleigh 11 | p01046 |
 | Armenian | 12 | prose 4, raleigh 8 | p01159 |
+| Artaxerxes | 12 | prose 6, raleigh 6 | p02447 |
+| Arts | 12 | raleigh 12 | p02457 |
 | Astronomie | 12 | raleigh 12 | p01482 |
 | Athenian | 12 | prose 5, raleigh 7 | p01844 |
 | Bactria | 12 | raleigh 12 | p01296 |
 | Bethsaida | 12 | prose 2, raleigh 10 | note:person:andrew-apostle:description |
 | Britain | 12 | prose 12 | note:person:george-whitefield:summary |
-| Colonie | 12 | raleigh 12 | p01222 |
+| Captaine | 12 | prose 1, raleigh 11 | p01624 |
+| Chronologers | 12 | prose 2, raleigh 10 | p02542 |
+| Contemporary | 12 | prose 12 | note:person:agum-ii-kakrime:description |
+| Cosmographers | 12 | raleigh 12 | p02405 |
 | Creatour | 12 | raleigh 12 | p00834 |
 | Deuteronomie | 12 | raleigh 12 | p01496 |
+| Dionysius | 12 | prose 2, raleigh 10 | p01377 |
 | Epistles | 12 | raleigh 12 | p00961 |
 | Fables | 12 | raleigh 12 | p01070 |
-| Familie | 12 | raleigh 12 | p01430 |
 | Fate | 12 | raleigh 12 | p00070 |
 | Gallies | 12 | raleigh 12 | p01223 |
-| Gouernour | 12 | raleigh 12 | p00934 |
+| Hazor | 12 | prose 2, raleigh 10 | p02495 |
 | Heracleopolis | 12 | prose 12 | note:person:meryabra-khety:summary |
 | Honour | 12 | raleigh 12 | p02196 |
+| Iaboc | 12 | raleigh 12 | p02375 |
 | Japanese | 12 | prose 12 | note:person:joseph-hardy-neesima:summary |
-| Idumaeans | 12 | raleigh 12 | p01880 |
 | Imaus | 12 | raleigh 12 | p01180 |
 | Indian | 12 | prose 3, raleigh 9 | p01003 |
 | Island | 12 | prose 2, raleigh 10 | p01166 |
-| Judea | 12 | prose 12 | note:person:canaan-son-of-ham:description |
 | Lacedaemonians | 12 | raleigh 12 | p01392 |
 | Magistrates | 12 | raleigh 12 | p00049 |
+| Mars | 12 | prose 3, raleigh 9 | p02526 |
+| Mycenae | 12 | prose 7, raleigh 5 | p02570 |
 | Nehemiah | 12 | prose 12 | note:event:nehemiah-comes-to-jerusalem:summary |
+| Palestina | 12 | raleigh 12 | p01206 |
 | Paraphrast | 12 | raleigh 12 | p02091 |
 | Pelusium | 12 | raleigh 12 | p01303 |
 | Philippi | 12 | prose 3, raleigh 9 | note:person:agrippa-ii:description |
@@ -3349,79 +3725,92 @@ A name here is a capitalized word of at least three letters, not a function word
 | Pope | 12 | prose 2, raleigh 10 | p01046 |
 | Proposed | 12 | prose 12 | note:person:achoris:description |
 | Protestant | 12 | prose 9, raleigh 3 | p01587 |
-| Sparta | 12 | prose 3, raleigh 9 | p00782 |
 | Species | 12 | raleigh 12 | p01001 |
 | Sues | 12 | raleigh 12 | p01688 |
 | Telassar | 12 | raleigh 12 | p00949 |
+| Temples | 12 | raleigh 12 | p02413 |
 | Translation | 12 | prose 1, raleigh 11 | p00985 |
-| Turkes | 12 | raleigh 12 | p02006 |
 | Abila | 11 | prose 4, raleigh 7 | p02347 |
 | Achaeans | 11 | raleigh 11 | p00780 |
+| Afterward | 11 | raleigh 11 | p02548 |
 | Ancesters | 11 | raleigh 11 | p01287 |
-| Argos | 11 | prose 5, raleigh 6 | note:person:abas:summary |
-| Arts | 11 | raleigh 11 | p01466 |
 | Behold | 11 | raleigh 11 | p01430 |
+| Birds | 11 | prose 1, raleigh 10 | p01692 |
 | Cethim | 11 | raleigh 11 | p01260 |
+| Chamath | 11 | raleigh 11 | p00949 |
 | Chaos | 11 | raleigh 11 | p01001 |
 | Chison | 11 | raleigh 11 | p02075 |
-| Contemporary | 11 | prose 11 | note:person:agum-ii-kakrime:description |
 | Council | 11 | prose 11 | note:person:athanasius-of-alexandria:summary |
-| Crowne | 11 | raleigh 11 | p01625 |
-| Deut | 11 | prose 1, raleigh 10 | p02375 |
+| Diuinitie | 11 | raleigh 11 | p01029 |
 | Don | 11 | raleigh 11 | p00041 |
 | Dor | 11 | prose 1, raleigh 10 | p02166 |
-| Elders | 11 | raleigh 11 | p01397 |
+| Edward | 11 | prose 1, raleigh 10 | p00030 |
 | Esiongaber | 11 | raleigh 11 | p01880 |
+| Geth | 11 | raleigh 11 | p01342 |
+| Gilehad | 11 | raleigh 11 | p02373 |
 | Goropius | 11 | raleigh 11 | p00907 |
 | Gospell | 11 | raleigh 11 | p01561 |
 | Heden | 11 | raleigh 11 | p00918 |
 | Heuites | 11 | raleigh 11 | p01313 |
 | Hiddekel | 11 | raleigh 11 | p00961 |
-| Iaboc | 11 | raleigh 11 | p02375 |
+| History | 11 | raleigh 11 | p01549 |
+| Idolatrous | 11 | raleigh 11 | p01407 |
+| Iesrael | 11 | prose 1, raleigh 10 | p02328 |
+| Iud | 11 | raleigh 11 | p02571 |
 | Loys | 11 | raleigh 11 | p00030 |
 | Naturall | 11 | raleigh 11 | p00057 |
+| Oracle | 11 | raleigh 11 | p02522 |
 | Parliament | 11 | prose 6, raleigh 5 | p01661 |
+| Passeouer | 11 | raleigh 11 | p01871 |
 | Peru | 11 | raleigh 11 | p02343 |
 | Philosopher | 11 | raleigh 11 | p02036 |
 | Raama | 11 | raleigh 11 | p00949 |
 | Sargon | 11 | prose 11 | note:person:humbanigash:description |
 | Schoolemen | 11 | raleigh 11 | p01744 |
 | Second | 11 | prose 8, raleigh 3 | note:person:alaparus:summary |
+| Serpents | 11 | prose 1, raleigh 10 | p00898 |
+| Sicil | 11 | prose 1, raleigh 10 | p01126 |
 | Sodome | 11 | raleigh 11 | p00885 |
 | Southward | 11 | raleigh 11 | p01239 |
+| Summer | 11 | raleigh 11 | p02542 |
 | Table | 11 | raleigh 11 | p01627 |
-| Tower | 11 | raleigh 11 | p02153 |
+| Turke | 11 | raleigh 11 | p01624 |
+| Tyrant | 11 | raleigh 11 | p01407 |
+| Tyrants | 11 | raleigh 11 | p01407 |
 | Tyrius | 11 | raleigh 11 | p01654 |
 | Vessels | 11 | raleigh 11 | p01222 |
+| Vncle | 11 | raleigh 11 | p02465 |
 | Well | 11 | raleigh 11 | p01571 |
+| Zoba | 11 | prose 2, raleigh 9 | p02410 |
 | Abydenus | 10 | prose 7, raleigh 3 | p01979 |
 | African | 10 | prose 7, raleigh 3 | p00784 |
-| Aramites | 10 | prose 1, raleigh 9 | p02135 |
+| Argo | 10 | prose 4, raleigh 6 | p02526 |
+| Argonauts | 10 | prose 6, raleigh 4 | p02527 |
 | Astrologie | 10 | raleigh 10 | p01482 |
+| Batanea | 10 | raleigh 10 | p00949 |
 | Bethsan | 10 | prose 1, raleigh 9 | p02353 |
 | Brothers | 10 | raleigh 10 | p01016 |
-| Captaine | 10 | prose 1, raleigh 9 | p01624 |
+| Cedars | 10 | raleigh 10 | p02344 |
 | Concerning | 10 | raleigh 10 | p01377 |
-| Cosmographers | 10 | raleigh 10 | p02075 |
-| Dionysius | 10 | prose 1, raleigh 9 | p01377 |
-| Diuinitie | 10 | raleigh 10 | p01029 |
+| Danites | 10 | raleigh 10 | p02093 |
+| Edict | 10 | prose 2, raleigh 8 | p02553 |
 | Etham | 10 | raleigh 10 | p01696 |
 | Family | 10 | raleigh 10 | p01222 |
 | Fig | 10 | raleigh 10 | p00919 |
+| Fourthly | 10 | raleigh 10 | p01557 |
 | Generall | 10 | raleigh 10 | p01865 |
 | Gentiles | 10 | raleigh 10 | p01448 |
 | Gergesites | 10 | raleigh 10 | p01313 |
 | Ghost | 10 | raleigh 10 | p01044 |
-| Gilehad | 10 | raleigh 10 | p02373 |
 | Gold | 10 | raleigh 10 | p01259 |
 | Gordiaei | 10 | raleigh 10 | p00163 |
 | Greeks | 10 | prose 9, raleigh 1 | p00783 |
-| Hazor | 10 | prose 2, raleigh 8 | p02091 |
+| Hell | 10 | raleigh 10 | p01070 |
 | Hereof | 10 | raleigh 10 | p01105 |
 | Hierapolis | 10 | raleigh 10 | p01228 |
-| History | 10 | raleigh 10 | p01549 |
-| Iesrael | 10 | prose 1, raleigh 9 | p02328 |
+| Hittites | 10 | prose 3, raleigh 7 | p01313 |
 | Jews | 10 | prose 10 | note:person:antiochus-iv-epiphanes:summary |
+| Italy | 10 | prose 6, raleigh 4 | p02541 |
 | Kadesh | 10 | prose 5, raleigh 5 | p01882 |
 | Kept | 10 | prose 10 | note:person:agrippa-ii:description |
 | Kir | 10 | raleigh 10 | p02367 |
@@ -3429,43 +3818,38 @@ A name here is a capitalized word of at least three letters, not a function word
 | Leaders | 10 | raleigh 10 | p01871 |
 | Lex | 10 | raleigh 10 | p00058 |
 | Lunarie | 10 | raleigh 10 | p01036 |
+| Lyon | 10 | raleigh 10 | p02248 |
 | Manetho | 10 | prose 8, raleigh 2 | p01627 |
+| Minerua | 10 | raleigh 10 | p01223 |
 | Moores | 10 | raleigh 10 | p01688 |
 | Mosal | 10 | raleigh 10 | p00962 |
 | Moschici | 10 | raleigh 10 | p01247 |
 | Obelisk | 10 | prose 10 | note:person:bali-mazer:summary |
 | Order | 10 | prose 2, raleigh 8 | p01876 |
-| Palestina | 10 | raleigh 10 | p01206 |
 | Paradisum | 10 | raleigh 10 | p00919 |
 | Parent | 10 | raleigh 10 | p01025 |
+| Peloponnesian | 10 | prose 1, raleigh 9 | p02540 |
 | Petra | 10 | prose 1, raleigh 9 | p02353 |
 | Posteritie | 10 | raleigh 10 | p01313 |
 | Prescience | 10 | raleigh 10 | p00858 |
-| Reg | 10 | raleigh 10 | p02038 |
 | Reseph | 10 | raleigh 10 | p00949 |
 | Scythopolis | 10 | raleigh 10 | p02353 |
+| Serpent | 10 | prose 1, raleigh 9 | p00906 |
 | Ships | 10 | raleigh 10 | p01222 |
-| Souldiers | 10 | prose 1, raleigh 9 | p02064 |
 | Spring | 10 | raleigh 10 | p00961 |
 | Springs | 10 | raleigh 10 | p01912 |
-| Summer | 10 | raleigh 10 | p01217 |
 | Tale | 10 | raleigh 10 | p01222 |
-| Temples | 10 | raleigh 10 | p01069 |
+| Thebans | 10 | raleigh 10 | p02551 |
 | Trachonitis | 10 | prose 1, raleigh 9 | p02398 |
-| Turke | 10 | raleigh 10 | p01624 |
-| Tyrant | 10 | raleigh 10 | p01407 |
-| Tyrants | 10 | raleigh 10 | p01407 |
 | Wine | 10 | raleigh 10 | p01206 |
 | Winter | 10 | raleigh 10 | p01118 |
 | Witches | 10 | raleigh 10 | p01511 |
 | Worke | 10 | raleigh 10 | p01222 |
 | Abarim | 9 | raleigh 9 | p01907 |
 | Accad | 9 | raleigh 9 | p01430 |
-| Artaxerxes | 9 | prose 5, raleigh 4 | p00578 |
-| Batanea | 9 | raleigh 9 | p00949 |
-| Birds | 9 | raleigh 9 | p01692 |
+| Argonautes | 9 | raleigh 9 | p02526 |
+| Azotus | 9 | prose 1, raleigh 8 | p02465 |
 | Cades | 9 | raleigh 9 | p01876 |
-| Cedars | 9 | raleigh 9 | p02344 |
 | Chapters | 9 | raleigh 9 | p01025 |
 | Chronicle | 9 | prose 9 | note:person:humbanigash:description |
 | Colchis | 9 | raleigh 9 | p01180 |
@@ -3476,45 +3860,47 @@ A name here is a capitalized word of at least three letters, not a function word
 | Cyprus | 9 | prose 1, raleigh 8 | p01260 |
 | Diospolis | 9 | raleigh 9 | p01303 |
 | Dispersion | 9 | prose 9 | note:person:nimrod:description |
+| Dreames | 9 | raleigh 9 | p02457 |
 | Dynastie | 9 | raleigh 9 | p01291 |
 | Ecclesiasticall | 9 | raleigh 9 | p01876 |
-| Edward | 9 | prose 1, raleigh 8 | p00030 |
 | Estates | 9 | raleigh 9 | p01033 |
-| Fourthly | 9 | raleigh 9 | p01557 |
+| Fleece | 9 | prose 2, raleigh 7 | p02526 |
+| Further | 9 | raleigh 9 | p02457 |
 | Furthermore | 9 | raleigh 9 | p01057 |
 | Gadara | 9 | raleigh 9 | p02389 |
-| Gilgal | 9 | prose 3, raleigh 6 | p01994 |
+| Gessur | 9 | prose 4, raleigh 5 | p02402 |
+| Gouernours | 9 | raleigh 9 | p01303 |
+| Graecian | 9 | raleigh 9 | p02541 |
 | Hammath | 9 | raleigh 9 | p02108 |
 | Happie | 9 | raleigh 9 | p01941 |
-| Hittites | 9 | prose 3, raleigh 6 | p01313 |
-| Idolatrous | 9 | raleigh 9 | p01407 |
+| Harpyes | 9 | prose 3, raleigh 6 | p02524 |
 | Jer | 9 | prose 9 | note:event:jeremiah-begins-to-prophesy:summary |
 | Interpreters | 9 | raleigh 9 | p01253 |
 | Iobs | 9 | prose 1, raleigh 8 | p01666 |
-| Italy | 9 | prose 6, raleigh 3 | p01976 |
 | Leagues | 9 | raleigh 9 | p01222 |
+| Liber | 9 | prose 1, raleigh 8 | p01975 |
 | Libya | 9 | prose 2, raleigh 7 | p01443 |
 | March | 9 | prose 1, raleigh 8 | p01994 |
 | Martyr | 9 | raleigh 9 | p01016 |
-| Midianites | 9 | prose 1, raleigh 8 | p01704 |
 | Millions | 9 | raleigh 9 | p01296 |
-| Mitspa | 9 | raleigh 9 | p02375 |
 | Mosel | 9 | raleigh 9 | p00961 |
 | Mosera | 9 | raleigh 9 | p01883 |
+| Mysia | 9 | prose 2, raleigh 7 | p01252 |
 | Nephewes | 9 | raleigh 9 | p01397 |
 | Northerne | 9 | raleigh 9 | p01018 |
 | Northward | 9 | raleigh 9 | p01342 |
+| Onely | 9 | raleigh 9 | p01624 |
 | Palaestinae | 9 | raleigh 9 | p01342 |
-| Passeouer | 9 | raleigh 9 | p01871 |
 | Perath | 9 | raleigh 9 | p00961 |
 | Pharan | 9 | raleigh 9 | p01876 |
 | Planets | 9 | raleigh 9 | p00892 |
+| Princesse | 9 | raleigh 9 | p02442 |
 | Romane | 9 | prose 2, raleigh 7 | p02170 |
 | Sabaei | 9 | raleigh 9 | p01377 |
 | Sanctuarie | 9 | prose 1, raleigh 8 | p01871 |
-| Serpents | 9 | raleigh 9 | p00898 |
-| Sicil | 9 | raleigh 9 | p01126 |
-| Steward | 9 | prose 1, raleigh 8 | note:person:abdia:description |
+| Sepulchre | 9 | raleigh 9 | p01882 |
+| Soba | 9 | prose 1, raleigh 8 | p02405 |
+| Stories | 9 | raleigh 9 | p01296 |
 | Subiects | 9 | raleigh 9 | p02194 |
 | Successors | 9 | raleigh 9 | p02034 |
 | Susiana | 9 | raleigh 9 | p00990 |
@@ -3522,25 +3908,27 @@ A name here is a capitalized word of at least three letters, not a function word
 | Tetrarch | 9 | prose 3, raleigh 6 | p02094 |
 | Tradition | 9 | raleigh 9 | p01759 |
 | Tubalines | 9 | raleigh 9 | p01206 |
-| Vncle | 9 | raleigh 9 | p02207 |
 | William | 9 | prose 6, raleigh 3 | p01624 |
 | Wisemen | 9 | raleigh 9 | p01332 |
+| Woman | 9 | raleigh 9 | p01761 |
 | Zin | 9 | prose 2, raleigh 7 | p01882 |
+| Africk | 8 | raleigh 8 | p02551 |
 | Almightie | 8 | raleigh 8 | p00803 |
 | Ambition | 8 | raleigh 8 | p01016 |
 | Ancestors | 8 | raleigh 8 | p00049 |
-| Apollodorus | 8 | prose 8 | note:person:alorus:summary |
 | Aradus | 8 | prose 1, raleigh 7 | p02215 |
+| Arte | 8 | raleigh 8 | p02540 |
 | Asiatica | 8 | raleigh 8 | p01385 |
-| Azotus | 8 | prose 1, raleigh 7 | p02282 |
 | Bactrians | 8 | prose 1, raleigh 7 | p01296 |
 | Bay | 8 | prose 1, raleigh 7 | p00949 |
+| Bethlehem | 8 | prose 5, raleigh 3 | p02437 |
 | Bithynia | 8 | raleigh 8 | p01252 |
 | Brethren | 8 | prose 1, raleigh 7 | p00951 |
 | Canon | 8 | prose 6, raleigh 2 | p01180 |
 | Capharnaum | 8 | raleigh 8 | p02123 |
 | Carey | 8 | prose 8 | note:event:agri-horticultural-society:summary |
 | Chalcis | 8 | prose 3, raleigh 5 | note:person:agrippa-ii:description |
+| Chimaera | 8 | prose 2, raleigh 6 | p02490 |
 | Chorseus | 8 | prose 1, raleigh 7 | p02166 |
 | Churches | 8 | raleigh 8 | p00961 |
 | Cittie | 8 | raleigh 8 | p01332 |
@@ -3552,8 +3940,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Cycle | 8 | prose 1, raleigh 7 | p01676 |
 | Cyrene | 8 | raleigh 8 | p01344 |
 | Death | 8 | raleigh 8 | p01296 |
-| Dreames | 8 | raleigh 8 | p01496 |
-| Edict | 8 | prose 2, raleigh 6 | p01642 |
 | Epiphania | 8 | raleigh 8 | p02108 |
 | Estate | 8 | raleigh 8 | p02196 |
 | Ezek | 8 | prose 4, raleigh 4 | p02402 |
@@ -3562,63 +3948,64 @@ A name here is a capitalized word of at least three letters, not a function word
 | Fragment | 8 | raleigh 8 | p00930 |
 | Garrison | 8 | raleigh 8 | p02179 |
 | Geometricall | 8 | raleigh 8 | p01150 |
-| Geth | 8 | raleigh 8 | p01342 |
 | Giant | 8 | raleigh 8 | p01057 |
+| Gibha | 8 | raleigh 8 | p02439 |
+| Giscala | 8 | prose 2, raleigh 6 | p02440 |
 | Gospel | 8 | raleigh 8 | p01979 |
-| Graecian | 8 | raleigh 8 | p01124 |
 | Haroher | 8 | raleigh 8 | p02366 |
 | Hebrews | 8 | prose 1, raleigh 7 | p01586 |
 | Hesbon | 8 | raleigh 8 | p02375 |
+| House | 8 | prose 1, raleigh 7 | p02216 |
 | Iles | 8 | raleigh 8 | p00175 |
+| Indeed | 8 | raleigh 8 | p01218 |
 | Islands | 8 | raleigh 8 | p01252 |
+| Labyrinth | 8 | prose 3, raleigh 5 | p02538 |
 | Lachis | 8 | prose 1, raleigh 7 | p01934 |
 | Lady | 8 | prose 1, raleigh 7 | p00041 |
 | Lydians | 8 | prose 3, raleigh 5 | note:person:aciamus:description |
+| Macc | 8 | raleigh 8 | p02436 |
 | Magus | 8 | raleigh 8 | p01474 |
 | Median | 8 | prose 7, raleigh 1 | p00467 |
 | Midianite | 8 | prose 8 | note:person:dathan-ancestor-of-jethro:description |
-| Minerua | 8 | raleigh 8 | p01223 |
+| Monster | 8 | prose 1, raleigh 7 | p02490 |
 | Nabis | 8 | raleigh 8 | p00780 |
 | Nam | 8 | raleigh 8 | p01605 |
 | Necessitie | 8 | raleigh 8 | p00865 |
 | Neighbour | 8 | raleigh 8 | p00940 |
 | Nineveh | 8 | prose 8 | note:person:asshur:summary |
-| Onely | 8 | raleigh 8 | p01624 |
 | Palace | 8 | prose 2, raleigh 6 | p02248 |
-| Peloponnesian | 8 | prose 1, raleigh 7 | note:event:peloponnesian-war:summary |
+| Pater | 8 | raleigh 8 | p01095 |
 | Predestination | 8 | raleigh 8 | p01896 |
 | President | 8 | prose 2, raleigh 6 | p02165 |
-| Princesse | 8 | raleigh 8 | p01542 |
+| Prophecie | 8 | raleigh 8 | p01029 |
 | Queen | 8 | prose 8 | note:person:elizabeth-i:summary |
 | Rabba | 8 | prose 1, raleigh 7 | p02375 |
-| Ramoth | 8 | prose 1, raleigh 7 | p02135 |
 | Regma | 8 | raleigh 8 | p01332 |
 | Saga | 8 | raleigh 8 | p01175 |
+| Salem | 8 | raleigh 8 | p02353 |
 | Sephar | 8 | prose 2, raleigh 6 | p01206 |
 | Sephoris | 8 | prose 3, raleigh 5 | p02128 |
-| Sepulchre | 8 | raleigh 8 | p01882 |
 | Sister | 8 | prose 1, raleigh 7 | p01070 |
+| Tabor | 8 | prose 1, raleigh 7 | p02509 |
 | Tents | 8 | raleigh 8 | p01206 |
-| Thebans | 8 | raleigh 8 | p01108 |
 | Thersa | 8 | raleigh 8 | p02253 |
 | Titanes | 8 | raleigh 8 | p01084 |
 | Trade | 8 | prose 1, raleigh 7 | p01430 |
 | Vranus | 8 | raleigh 8 | p01136 |
+| Water | 8 | raleigh 8 | p00884 |
 | Woe | 8 | raleigh 8 | p02038 |
-| Woman | 8 | raleigh 8 | p01761 |
 | Zared | 8 | raleigh 8 | p02353 |
 | Zoan | 8 | prose 1, raleigh 7 | p01654 |
+| Act | 7 | raleigh 7 | p02559 |
 | Acziba | 7 | prose 1, raleigh 6 | p02062 |
+| Adar | 7 | raleigh 7 | p02413 |
 | Aequinoctiall | 7 | raleigh 7 | p00944 |
-| Africk | 7 | raleigh 7 | p01084 |
-| Afterward | 7 | raleigh 7 | p02282 |
 | Albania | 7 | raleigh 7 | p01180 |
 | Ancester | 7 | raleigh 7 | p02047 |
 | Antioch | 7 | prose 1, raleigh 6 | p01328 |
 | Aphek | 7 | prose 2, raleigh 5 | p02064 |
 | Aquinas | 7 | raleigh 7 | p00803 |
 | Bethleem | 7 | prose 1, raleigh 6 | p02325 |
-| Bethlehem | 7 | prose 5, raleigh 2 | p01492 |
 | Bitumen | 7 | raleigh 7 | p01188 |
 | Cabala | 7 | prose 1, raleigh 6 | p01759 |
 | Caesarea | 7 | raleigh 7 | p01342 |
@@ -3627,6 +4014,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Chaldoea | 7 | prose 1, raleigh 6 | p01419 |
 | Chesbon | 7 | raleigh 7 | p02373 |
 | Clay | 7 | raleigh 7 | p00885 |
+| Colchos | 7 | prose 2, raleigh 5 | p02522 |
+| Commander | 7 | raleigh 7 | p02464 |
+| Commentaries | 7 | raleigh 7 | p00949 |
 | Conquests | 7 | raleigh 7 | p01296 |
 | Debonaire | 7 | raleigh 7 | p00030 |
 | Delta | 7 | prose 4, raleigh 3 | p01303 |
@@ -3634,87 +4024,96 @@ A name here is a capitalized word of at least three letters, not a function word
 | Diocesse | 7 | raleigh 7 | p02058 |
 | Doctrine | 7 | raleigh 7 | p02038 |
 | Doue | 7 | raleigh 7 | p01966 |
+| Dragon | 7 | raleigh 7 | p02526 |
 | Edenites | 7 | raleigh 7 | p00956 |
 | Elana | 7 | raleigh 7 | p01259 |
 | Emims | 7 | raleigh 7 | p01057 |
+| Epigoni | 7 | prose 7 | note:person:aegialeus:description |
 | Essebon | 7 | raleigh 7 | p01934 |
 | Est | 7 | raleigh 7 | p01105 |
 | Euery | 7 | raleigh 7 | p00057 |
+| Fable | 7 | raleigh 7 | p02528 |
 | Fire | 7 | raleigh 7 | p01303 |
 | Firstborn | 7 | prose 7 | note:person:cush:summary |
 | Fountaines | 7 | raleigh 7 | p00848 |
 | Fountayne | 7 | raleigh 7 | p00934 |
 | Fountaynes | 7 | raleigh 7 | p01132 |
-| Further | 7 | raleigh 7 | p01759 |
 | Gaber | 7 | raleigh 7 | p02159 |
 | Gardens | 7 | prose 1, raleigh 6 | p01654 |
 | Gaul | 7 | prose 7 | note:person:columbanus:summary |
 | Germanie | 7 | raleigh 7 | p01253 |
-| Giscala | 7 | prose 2, raleigh 5 | p02072 |
 | Goddesse | 7 | prose 1, raleigh 6 | p02207 |
 | Gosen | 7 | raleigh 7 | p01653 |
-| Gouernours | 7 | raleigh 7 | p01303 |
 | Har | 7 | raleigh 7 | p02365 |
-| Hell | 7 | raleigh 7 | p01070 |
 | Hierosolymitanus | 7 | raleigh 7 | p00949 |
-| House | 7 | prose 1, raleigh 6 | p02216 |
+| Howsoeuer | 7 | raleigh 7 | p01627 |
 | Idolater | 7 | raleigh 7 | p01572 |
 | IEHOVAH | 7 | raleigh 7 | p01571 |
 | Jeremiah | 7 | prose 7 | note:person:apries:summary |
 | Inchanters | 7 | raleigh 7 | p01975 |
+| Inter | 7 | raleigh 7 | p01359 |
 | Isles | 7 | prose 1, raleigh 6 | p00949 |
 | Iulias | 7 | raleigh 7 | p02369 |
+| Leader | 7 | prose 1, raleigh 6 | p01686 |
+| Libanon | 7 | prose 1, raleigh 6 | p01328 |
 | Lidda | 7 | prose 2, raleigh 5 | p02230 |
 | Line | 7 | raleigh 7 | p01032 |
+| Macedonians | 7 | raleigh 7 | p00080 |
 | Maggeddo | 7 | raleigh 7 | p02174 |
 | Masoretic | 7 | prose 7 | note:person:arphaxad:description |
+| Megara | 7 | prose 4, raleigh 3 | p02540 |
 | Merom | 7 | raleigh 7 | p02116 |
 | Messengers | 7 | raleigh 7 | p02281 |
+| Monarchie | 7 | raleigh 7 | p02424 |
 | Name | 7 | raleigh 7 | p01571 |
 | Names | 7 | raleigh 7 | p01338 |
 | Noble | 7 | raleigh 7 | p01443 |
 | Nysa | 7 | prose 1, raleigh 6 | p01084 |
 | Olympias | 7 | raleigh 7 | p00665 |
+| Oxe | 7 | prose 2, raleigh 5 | p02551 |
 | Padan | 7 | raleigh 7 | p01359 |
 | Pastor | 7 | prose 7 | note:person:cyprian-of-carthage:summary |
-| Pater | 7 | raleigh 7 | p01095 |
 | Patriarch | 7 | raleigh 7 | p01895 |
 | Philadelphia | 7 | raleigh 7 | p02375 |
 | Places | 7 | raleigh 7 | p01430 |
+| Proserpina | 7 | prose 1, raleigh 6 | p01212 |
+| Ptolomies | 7 | raleigh 7 | p01496 |
 | Race | 7 | raleigh 7 | p01420 |
 | Reguli | 7 | raleigh 7 | p02292 |
 | Reliques | 7 | raleigh 7 | p01359 |
 | Rex | 7 | raleigh 7 | p01296 |
 | Robert | 7 | prose 4, raleigh 3 | p00030 |
 | Rocke | 7 | raleigh 7 | p01882 |
-| Salem | 7 | raleigh 7 | p02353 |
 | Sarepta | 7 | prose 1, raleigh 6 | p02051 |
 | Saron | 7 | raleigh 7 | p02230 |
 | Secular | 7 | raleigh 7 | p01725 |
 | Seueneh | 7 | raleigh 7 | p01272 |
 | Seuentie | 7 | raleigh 7 | p01018 |
+| Sicilia | 7 | raleigh 7 | p02542 |
 | Sin | 7 | raleigh 7 | p01876 |
+| Sphinx | 7 | prose 2, raleigh 5 | p02518 |
 | Standard | 7 | raleigh 7 | p01867 |
 | Starre | 7 | raleigh 7 | p01113 |
-| Stories | 7 | raleigh 7 | p01296 |
+| Successour | 7 | prose 1, raleigh 6 | p02298 |
 | Successours | 7 | raleigh 7 | p00990 |
 | Suph | 7 | raleigh 7 | p01892 |
-| Tabor | 7 | prose 1, raleigh 6 | p02091 |
 | Terahs | 7 | raleigh 7 | p01574 |
+| Theban | 7 | prose 1, raleigh 6 | p02550 |
 | Thoron | 7 | prose 2, raleigh 5 | p02069 |
+| Tombe | 7 | raleigh 7 | p00470 |
 | Towers | 7 | raleigh 7 | p01430 |
 | Tribute | 7 | prose 1, raleigh 6 | p02200 |
 | Troian | 7 | prose 3, raleigh 4 | p01287 |
 | Tyrian | 7 | prose 4, raleigh 3 | p01443 |
 | Verses | 7 | raleigh 7 | p02177 |
-| Water | 7 | raleigh 7 | p00884 |
 | Zamzummims | 7 | raleigh 7 | p01057 |
 | Zealand | 7 | prose 6, raleigh 1 | note:person:henry-williams:summary |
 | Aethiopian | 6 | raleigh 6 | p01280 |
 | Amalech | 6 | raleigh 6 | p01697 |
+| Amalek | 6 | prose 2, raleigh 4 | note:person:achan:description |
 | Antediluvian | 6 | prose 6 | note:person:amillarus:summary |
 | Anthedon | 6 | prose 1, raleigh 5 | note:person:agrippa-of-augustus:description |
-| Arte | 6 | raleigh 6 | p01602 |
+| Aroer | 6 | raleigh 6 | p02367 |
 | Assembly | 6 | prose 3, raleigh 3 | p01865 |
 | Asserites | 6 | raleigh 6 | p02056 |
 | Associates | 6 | raleigh 6 | p00787 |
@@ -3731,18 +4130,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Charriots | 6 | raleigh 6 | p01338 |
 | Circle | 6 | raleigh 6 | p00920 |
 | Citizen | 6 | raleigh 6 | p02196 |
-| Commentaries | 6 | raleigh 6 | p00949 |
 | Conducter | 6 | raleigh 6 | p01686 |
 | Congo | 6 | prose 5, raleigh 1 | note:person:ct-studd:summary |
 | Consuls | 6 | raleigh 6 | p00740 |
 | Corne | 6 | raleigh 6 | p02218 |
 | Councell | 6 | raleigh 6 | p02014 |
-| Country | 6 | raleigh 6 | p01562 |
 | Crosse | 6 | raleigh 6 | p01008 |
 | Crowther | 6 | prose 6 | note:event:crowther-baptized:summary |
 | Cubites | 6 | raleigh 6 | p01152 |
 | Damascenus | 6 | raleigh 6 | p00912 |
-| Danites | 6 | raleigh 6 | p02093 |
 | Degrees | 6 | raleigh 6 | p01222 |
 | Deorum | 6 | raleigh 6 | p02038 |
 | Deserta | 6 | raleigh 6 | p01018 |
@@ -3762,12 +4158,14 @@ A name here is a capitalized word of at least three letters, not a function word
 | Fleet | 6 | raleigh 6 | p00597 |
 | Founding | 6 | prose 5, raleigh 1 | p01431 |
 | Fowles | 6 | raleigh 6 | p01496 |
+| Galley | 6 | raleigh 6 | p01222 |
 | Genealogie | 6 | raleigh 6 | p01033 |
 | Generations | 6 | raleigh 6 | p01033 |
 | Genes | 6 | raleigh 6 | p01359 |
 | Geographers | 6 | raleigh 6 | p00080 |
 | Geographie | 6 | prose 1, raleigh 5 | p01175 |
-| Gessur | 6 | prose 3, raleigh 3 | p02402 |
+| German | 6 | prose 5, raleigh 1 | note:person:achsah:description |
+| Gibeonites | 6 | raleigh 6 | p02439 |
 | Gordiaean | 6 | raleigh 6 | p01206 |
 | Grecians | 6 | prose 1, raleigh 5 | p01211 |
 | Haman | 6 | prose 6 | note:event:haman-hanged:summary |
@@ -3776,12 +4174,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Helim | 6 | prose 1, raleigh 5 | note:person:baldwin-the-first:description |
 | Heneti | 6 | raleigh 6 | p01254 |
 | Henochij | 6 | raleigh 6 | p01069 |
+| Hereupon | 6 | raleigh 6 | p01496 |
 | Hopkins | 6 | raleigh 6 | p00949 |
 | Host | 6 | raleigh 6 | p02216 |
-| Howsoeuer | 6 | raleigh 6 | p01627 |
 | Husband | 6 | raleigh 6 | p01084 |
+| Idolatry | 6 | raleigh 6 | p02248 |
+| Iericho | 6 | prose 3, raleigh 3 | p02348 |
 | Iewish | 6 | prose 1, raleigh 5 | p01586 |
-| Indeed | 6 | raleigh 6 | p01218 |
 | Ionia | 6 | prose 2, raleigh 4 | p01245 |
 | Iosephs | 6 | raleigh 6 | p01625 |
 | Josh | 6 | prose 6 | note:event:crossing-the-jordan:summary |
@@ -3790,28 +4189,25 @@ A name here is a capitalized word of at least three letters, not a function word
 | Iulia | 6 | prose 1, raleigh 5 | p01627 |
 | Kingly | 6 | raleigh 6 | p01844 |
 | Lachish | 6 | prose 6 | note:event:dur-sharrukin-completed:description |
-| Leader | 6 | prose 1, raleigh 5 | p01686 |
 | League | 6 | raleigh 6 | p01296 |
-| Libanon | 6 | prose 1, raleigh 5 | p01328 |
-| Liber | 6 | raleigh 6 | p01975 |
 | Lieutenants | 6 | raleigh 6 | p02229 |
 | Lombard | 6 | raleigh 6 | p00875 |
 | Lothaire | 6 | raleigh 6 | p00031 |
 | Loue | 6 | raleigh 6 | p01905 |
 | Lyons | 6 | prose 3, raleigh 3 | p00898 |
 | Mac | 6 | raleigh 6 | p02375 |
-| Macedonians | 6 | raleigh 6 | p00080 |
 | Magick | 6 | raleigh 6 | p01466 |
 | Maiesty | 6 | raleigh 6 | p00003 |
 | Mamre | 6 | raleigh 6 | p01564 |
 | Mart | 6 | raleigh 6 | p00949 |
+| Matt | 6 | prose 4, raleigh 2 | p02437 |
+| Mauritania | 6 | raleigh 6 | p02519 |
 | Mercinaries | 6 | raleigh 6 | p00725 |
 | Million | 6 | prose 1, raleigh 5 | p01871 |
 | Millo | 6 | raleigh 6 | p02240 |
 | Ministers | 6 | raleigh 6 | p01876 |
 | Minni | 6 | raleigh 6 | p01253 |
-| Monarchie | 6 | raleigh 6 | p02269 |
-| Monster | 6 | prose 1, raleigh 5 | p02094 |
+| Moabite | 6 | prose 1, raleigh 5 | p02353 |
 | Mothers | 6 | raleigh 6 | p02210 |
 | Mursilis | 6 | prose 6 | note:event:death-of-gyges:summary |
 | Natures | 6 | raleigh 6 | p01046 |
@@ -3826,14 +4222,16 @@ A name here is a capitalized word of at least three letters, not a function word
 | Palaestine | 6 | raleigh 6 | p02388 |
 | Paran | 6 | raleigh 6 | p01880 |
 | Part | 6 | raleigh 6 | p01003 |
+| Parthians | 6 | prose 3, raleigh 3 | p00778 |
 | Philistim | 6 | prose 2, raleigh 4 | p01624 |
+| Pileser | 6 | prose 6 | note:person:phul-belochus:description |
 | Pintus | 6 | raleigh 6 | p01338 |
 | Plaine | 6 | raleigh 6 | p02239 |
-| Poet | 6 | raleigh 6 | p01223 |
+| Predecessour | 6 | raleigh 6 | p02413 |
+| Preface | 6 | raleigh 6 | p01659 |
 | Princeps | 6 | raleigh 6 | p01443 |
-| Prophecie | 6 | raleigh 6 | p01029 |
-| Ptolomies | 6 | raleigh 6 | p01496 |
 | Punicke | 6 | raleigh 6 | p01443 |
+| Quod | 6 | raleigh 6 | p00829 |
 | Rabbah | 6 | raleigh 6 | p02100 |
 | Ramases | 6 | raleigh 6 | p01651 |
 | Records | 6 | raleigh 6 | p01620 |
@@ -3844,17 +4242,20 @@ A name here is a capitalized word of at least three letters, not a function word
 | Saue | 6 | raleigh 6 | p02353 |
 | Senate | 6 | prose 1, raleigh 5 | p01844 |
 | Sephet | 6 | raleigh 6 | p02100 |
-| Serpent | 6 | raleigh 6 | p00906 |
 | Sharrukin | 6 | prose 6 | note:event:dur-sharrukin-completed:summary |
 | Ship | 6 | raleigh 6 | p01223 |
+| Soothsayer | 6 | prose 1, raleigh 5 | p02549 |
 | Sorcerers | 6 | raleigh 6 | p01975 |
 | Sorted | 6 | prose 6 | note:event:cambyses-conquers-egypt:description |
 | Spanish | 6 | prose 2, raleigh 4 | p00043 |
 | Stars | 6 | raleigh 6 | p00852 |
 | Sun | 6 | raleigh 6 | p01377 |
+| Swallow | 6 | prose 1, raleigh 5 | p01496 |
 | Tabal | 6 | prose 6 | note:event:sargon-against-tabal:summary |
-| Thrace | 6 | raleigh 6 | p00990 |
-| Tombe | 6 | raleigh 6 | p00470 |
+| Thebanes | 6 | prose 2, raleigh 4 | p02535 |
+| Thracians | 6 | prose 3, raleigh 3 | p01248 |
+| Tiglath | 6 | prose 6 | note:person:phul-belochus:description |
+| Touching | 6 | raleigh 6 | p02395 |
 | Towards | 6 | raleigh 6 | p02151 |
 | Translators | 6 | raleigh 6 | p02029 |
 | Treatise | 6 | raleigh 6 | p00949 |
@@ -3864,17 +4265,19 @@ A name here is a capitalized word of at least three letters, not a function word
 | Vineyard | 6 | prose 1, raleigh 5 | p01170 |
 | Vrbs | 6 | raleigh 6 | p02304 |
 | Whence | 6 | raleigh 6 | p01124 |
+| Whereupon | 6 | raleigh 6 | p02259 |
 | Wolues | 6 | raleigh 6 | p00898 |
+| Woods | 6 | raleigh 6 | p01222 |
 | Zedekiah | 6 | prose 6 | note:event:zedekiah-rebels:summary |
 | Abela | 5 | prose 2, raleigh 3 | p02116 |
 | Accaron | 5 | raleigh 5 | p02281 |
 | Acesines | 5 | raleigh 5 | p00907 |
-| Adar | 5 | raleigh 5 | p02391 |
 | Affrica | 5 | raleigh 5 | p01615 |
 | Ahasuerus | 5 | prose 5 | note:event:ahasuerus-feast:summary |
 | Allegoricall | 5 | raleigh 5 | p00906 |
 | Allegorie | 5 | raleigh 5 | p01001 |
 | Amalechites | 5 | raleigh 5 | p00985 |
+| Amazons | 5 | prose 1, raleigh 4 | p02540 |
 | Ancestor | 5 | raleigh 5 | p02178 |
 | Anchor | 5 | prose 4, raleigh 1 | p00051 |
 | Ancients | 5 | raleigh 5 | p00898 |
@@ -3887,10 +4290,11 @@ A name here is a capitalized word of at least three letters, not a function word
 | Arimaspi | 5 | raleigh 5 | p01385 |
 | Ark | 5 | prose 5 | note:person:eli:summary |
 | Armenians | 5 | raleigh 5 | p01296 |
-| Aroer | 5 | raleigh 5 | p02367 |
+| Asse | 5 | raleigh 5 | p02458 |
 | Attur | 5 | raleigh 5 | p00961 |
 | Balsamum | 5 | raleigh 5 | p01654 |
 | Basilius | 5 | raleigh 5 | p00978 |
+| Beast | 5 | raleigh 5 | p02495 |
 | Beel | 5 | raleigh 5 | p01443 |
 | Bird | 5 | raleigh 5 | p01986 |
 | Biscay | 5 | raleigh 5 | p01222 |
@@ -3906,12 +4310,10 @@ A name here is a capitalized word of at least three letters, not a function word
 | Ceremonies | 5 | raleigh 5 | p01867 |
 | Certainly | 5 | raleigh 5 | p00049 |
 | Chaldoeans | 5 | raleigh 5 | p01430 |
-| Chamath | 5 | raleigh 5 | p00949 |
 | Chilmad | 5 | raleigh 5 | p00949 |
 | Christs | 5 | raleigh 5 | p00915 |
-| Chronologers | 5 | raleigh 5 | p01118 |
 | Ciuitas | 5 | raleigh 5 | p00930 |
-| Commander | 5 | raleigh 5 | p01688 |
+| Coelosyria | 5 | raleigh 5 | p02375 |
 | Compasse | 5 | raleigh 5 | p01206 |
 | Confederates | 5 | raleigh 5 | p02179 |
 | Congregation | 5 | raleigh 5 | p01867 |
@@ -3921,29 +4323,33 @@ A name here is a capitalized word of at least three letters, not a function word
 | Ctesiphon | 5 | raleigh 5 | p00949 |
 | Deuil | 5 | raleigh 5 | p01455 |
 | Dibon | 5 | raleigh 5 | p02373 |
+| Disciples | 5 | raleigh 5 | p01205 |
 | Diuers | 5 | raleigh 5 | p02038 |
 | Doctor | 5 | raleigh 5 | p01010 |
 | Domini | 5 | prose 1, raleigh 4 | p01654 |
+| Dominions | 5 | raleigh 5 | p01914 |
 | Dreame | 5 | raleigh 5 | p01496 |
 | Eagle | 5 | raleigh 5 | p00049 |
 | Elamites | 5 | prose 2, raleigh 3 | p01614 |
 | Eloth | 5 | raleigh 5 | p01880 |
+| Embassadors | 5 | raleigh 5 | p02446 |
 | Enemie | 5 | raleigh 5 | p00630 |
 | Equinoctiall | 5 | raleigh 5 | p00065 |
 | Erech | 5 | raleigh 5 | p01430 |
 | Euangelist | 5 | prose 3, raleigh 2 | p01033 |
 | Eugubinus | 5 | raleigh 5 | p01095 |
-| Fable | 5 | raleigh 5 | p00919 |
+| Ezer | 5 | prose 4, raleigh 1 | note:person:bali-mazer:description |
 | Ficus | 5 | raleigh 5 | p01003 |
 | Fort | 5 | prose 2, raleigh 3 | p02240 |
 | Frankincense | 5 | raleigh 5 | p01876 |
 | Frogges | 5 | raleigh 5 | p01518 |
 | Gades | 5 | raleigh 5 | p01976 |
+| Gebah | 5 | raleigh 5 | p02439 |
 | Generation | 5 | raleigh 5 | p01036 |
 | Gerasa | 5 | raleigh 5 | p01319 |
 | Germane | 5 | raleigh 5 | p01252 |
 | Geserta | 5 | raleigh 5 | p00962 |
-| Gibeonites | 5 | raleigh 5 | p01997 |
+| Gibeon | 5 | prose 2, raleigh 3 | p02439 |
 | Gilboe | 5 | raleigh 5 | p02135 |
 | Glasse | 5 | raleigh 5 | p02075 |
 | Grace | 5 | prose 1, raleigh 4 | p01784 |
@@ -3953,47 +4359,49 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hebrides | 5 | prose 5 | note:person:john-paton:summary |
 | Herbes | 5 | raleigh 5 | p01495 |
 | Herein | 5 | raleigh 5 | p02226 |
-| Hereupon | 5 | raleigh 5 | p01496 |
+| Hesperides | 5 | raleigh 5 | p01001 |
 | Holie | 5 | raleigh 5 | p02006 |
+| Homers | 5 | prose 1, raleigh 4 | p00985 |
+| Horma | 5 | raleigh 5 | p02465 |
 | Horsemen | 5 | raleigh 5 | p01296 |
 | Iarmuth | 5 | raleigh 5 | p01934 |
 | Iaua | 5 | prose 5 | note:event:black-obelisk-erected:summary |
-| Idolatry | 5 | raleigh 5 | p02248 |
 | Ierico | 5 | raleigh 5 | p02344 |
 | Indica | 5 | raleigh 5 | p01003 |
 | Inuenter | 5 | raleigh 5 | p01466 |
-| Ion | 5 | raleigh 5 | p01246 |
 | Ionathas | 5 | prose 2, raleigh 3 | p02329 |
-| Iud | 5 | raleigh 5 | p02038 |
+| Israclites | 5 | raleigh 5 | p01688 |
+| Issues | 5 | raleigh 5 | p01420 |
+| Italians | 5 | raleigh 5 | p01622 |
 | Kades | 5 | raleigh 5 | p01873 |
 | Kardu | 5 | raleigh 5 | p01159 |
 | Kedesh | 5 | raleigh 5 | p02239 |
 | Kenath | 5 | prose 1, raleigh 4 | p02367 |
+| Kiriath | 5 | prose 3, raleigh 2 | p02439 |
 | Korean | 5 | prose 5 | note:person:kim-yoonsup:summary |
 | Krishna | 5 | prose 5 | note:event:baptism-of-krishna-pal:summary |
 | Kuruman | 5 | prose 5 | note:person:robert-moffat:summary |
+| Lacedaemon | 5 | prose 1, raleigh 4 | p00780 |
+| Ladie | 5 | raleigh 5 | p02498 |
 | Latitude | 5 | raleigh 5 | p01688 |
 | Libani | 5 | raleigh 5 | p02075 |
 | Libyans | 5 | raleigh 5 | p01338 |
+| Lod | 5 | prose 1, raleigh 4 | p02429 |
 | Lubar | 5 | raleigh 5 | p01159 |
 | Lybanus | 5 | raleigh 5 | p02023 |
 | Lybians | 5 | raleigh 5 | p01338 |
-| Lyon | 5 | raleigh 5 | p02248 |
-| Macc | 5 | raleigh 5 | p02375 |
+| Macchabees | 5 | raleigh 5 | p02116 |
 | Machaerus | 5 | prose 1, raleigh 4 | p02343 |
 | Magogians | 5 | raleigh 5 | p01206 |
 | Maister | 5 | raleigh 5 | p00063 |
-| Mars | 5 | raleigh 5 | p00892 |
 | Martius | 5 | raleigh 5 | p00793 |
 | Martyrdom | 5 | prose 5 | note:event:martyrdom-of-adalbert:summary |
 | Masanissa | 5 | raleigh 5 | p00781 |
-| Matt | 5 | prose 4, raleigh 1 | p00989 |
 | Matter | 5 | raleigh 5 | p00080 |
-| Mauritania | 5 | raleigh 5 | p01191 |
+| Medusa | 5 | prose 2, raleigh 3 | p02490 |
 | Mesh | 5 | raleigh 5 | p01247 |
 | Metropolitan | 5 | prose 3, raleigh 2 | p00961 |
 | Milan | 5 | prose 5 | note:person:ambrose-of-milan:summary |
-| Moabite | 5 | prose 1, raleigh 4 | p02353 |
 | Moffat | 5 | prose 5 | note:event:death-of-mary-moffat:summary |
 | Monarch | 5 | raleigh 5 | p01614 |
 | Monarchies | 5 | raleigh 5 | p00080 |
@@ -4004,6 +4412,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Muslims | 5 | prose 5 | note:person:raymond-lull:summary |
 | Nabathea | 5 | raleigh 5 | p01931 |
 | Natura | 5 | raleigh 5 | p00058 |
+| Nectar | 5 | prose 2, raleigh 3 | p01001 |
+| Nemaean | 5 | prose 2, raleigh 3 | p02550 |
 | Neo | 5 | prose 5 | note:person:nabopolassar:summary |
 | Neque | 5 | raleigh 5 | p01407 |
 | Nestorian | 5 | prose 1, raleigh 4 | p00961 |
@@ -4016,37 +4426,38 @@ A name here is a capitalized word of at least three letters, not a function word
 | Oracles | 5 | raleigh 5 | p01495 |
 | Ordinances | 5 | raleigh 5 | p01397 |
 | Orontes | 5 | prose 2, raleigh 3 | p01328 |
+| Othoniels | 5 | prose 2, raleigh 3 | p02564 |
 | Pagan | 5 | prose 2, raleigh 3 | p02373 |
 | Palme | 5 | raleigh 5 | p02347 |
 | Paragraphes | 5 | raleigh 5 | p00082 |
 | Paria | 5 | raleigh 5 | p01382 |
 | Parnassus | 5 | raleigh 5 | p01118 |
-| Parthians | 5 | prose 3, raleigh 2 | p00778 |
 | Paryardes | 5 | raleigh 5 | p01242 |
 | Paternall | 5 | raleigh 5 | p01397 |
 | Paton | 5 | prose 5 | note:event:paton-autobiography:summary |
 | Patriarks | 5 | raleigh 5 | p01759 |
 | Paulus | 5 | raleigh 5 | p01111 |
-| Pausanias | 5 | raleigh 5 | p01069 |
+| Peace | 5 | raleigh 5 | p02495 |
+| Pegasus | 5 | raleigh 5 | p02490 |
 | Peraea | 5 | raleigh 5 | p02369 |
 | Perah | 5 | prose 1, raleigh 4 | p02026 |
 | Pietie | 5 | raleigh 5 | p01397 |
 | Pihacheroth | 5 | raleigh 5 | p01696 |
-| Pileser | 5 | prose 5 | note:event:assyria-invades-israel-740-bc:summary |
 | Pipen | 5 | raleigh 5 | p00030 |
+| Planet | 5 | raleigh 5 | p01447 |
 | Polysperchon | 5 | raleigh 5 | p00683 |
 | Portugals | 5 | raleigh 5 | p01688 |
 | Power | 5 | raleigh 5 | p01392 |
-| Predecessour | 5 | raleigh 5 | p02247 |
-| Preface | 5 | raleigh 5 | p01659 |
 | Presbyterian | 5 | prose 5 | note:person:george-leslie-mackay:summary |
 | Principium | 5 | raleigh 5 | p00824 |
+| Psal | 5 | raleigh 5 | p02200 |
 | Ptolemies | 5 | prose 2, raleigh 3 | p01333 |
 | Ptolemy | 5 | prose 5 | note:person:ptolemy-of-mendes:description |
 | Pyramides | 5 | raleigh 5 | p01546 |
+| Pythagor | 5 | prose 1, raleigh 4 | p02183 |
 | Qui | 5 | raleigh 5 | p01482 |
 | Quintius | 5 | raleigh 5 | p00780 |
-| Quod | 5 | raleigh 5 | p00829 |
+| Ramatha | 5 | prose 1, raleigh 4 | p02374 |
 | Raphaei | 5 | raleigh 5 | p02393 |
 | Reformed | 5 | prose 5 | note:person:samuel-zwemer:summary |
 | Reges | 5 | raleigh 5 | p01492 |
@@ -4057,35 +4468,40 @@ A name here is a capitalized word of at least three letters, not a function word
 | Right | 5 | raleigh 5 | p01401 |
 | Sacred | 5 | raleigh 5 | p01228 |
 | Saints | 5 | raleigh 5 | p02060 |
+| Sampsons | 5 | raleigh 5 | p02564 |
 | Sandalium | 5 | raleigh 5 | p02062 |
 | Sapience | 5 | raleigh 5 | p00906 |
+| Sardinia | 5 | raleigh 5 | p02528 |
+| Satan | 5 | raleigh 5 | p02532 |
 | Scythian | 5 | raleigh 5 | p01180 |
 | Sections | 5 | raleigh 5 | p00082 |
 | Sed | 5 | raleigh 5 | p00940 |
 | Seeing | 5 | raleigh 5 | p00823 |
 | Seldius | 5 | raleigh 5 | p00047 |
 | Senacharib | 5 | raleigh 5 | p00958 |
+| Seniors | 5 | raleigh 5 | p02560 |
 | Sepher | 5 | raleigh 5 | p01876 |
+| Sicyonia | 5 | prose 1, raleigh 4 | p02543 |
 | Sodom | 5 | prose 1, raleigh 4 | p02353 |
 | Solis | 5 | raleigh 5 | p01654 |
+| Sophena | 5 | raleigh 5 | p02093 |
 | Soueraigne | 5 | raleigh 5 | p01418 |
 | Spiritus | 5 | raleigh 5 | p00824 |
 | Spurgeon | 5 | prose 5 | note:event:spurgeon-conversion:summary |
 | Station | 5 | raleigh 5 | p01882 |
 | Statue | 5 | raleigh 5 | p00884 |
 | Stoicks | 5 | raleigh 5 | p01095 |
-| Successour | 5 | raleigh 5 | p02298 |
 | Susa | 5 | raleigh 5 | p00981 |
+| Swine | 5 | raleigh 5 | p00898 |
 | Ter | 5 | raleigh 5 | p01970 |
-| Theban | 5 | prose 1, raleigh 4 | p01976 |
 | Theeues | 5 | raleigh 5 | p01418 |
-| Thracians | 5 | prose 3, raleigh 2 | p01248 |
-| Tiglath | 5 | prose 5 | note:event:assyria-invades-israel-740-bc:summary |
+| Thornes | 5 | raleigh 5 | p02347 |
 | Tigrim | 5 | raleigh 5 | p00961 |
 | Titan | 5 | raleigh 5 | p01112 |
 | Titea | 5 | raleigh 5 | p01084 |
 | Title | 5 | raleigh 5 | p01111 |
 | Togormians | 5 | raleigh 5 | p01226 |
+| Toparchies | 5 | raleigh 5 | p02430 |
 | Tours | 5 | prose 5 | note:person:alcuin:summary |
 | Trachones | 5 | raleigh 5 | p02102 |
 | Trades | 5 | raleigh 5 | p02036 |
@@ -4096,31 +4512,36 @@ A name here is a capitalized word of at least three letters, not a function word
 | Vtica | 5 | prose 2, raleigh 3 | p01146 |
 | Wall | 5 | prose 1, raleigh 4 | p02153 |
 | Wee | 5 | raleigh 5 | p01074 |
-| Whereupon | 5 | raleigh 5 | p02259 |
-| Woods | 5 | raleigh 5 | p01222 |
+| Whosoeuer | 5 | raleigh 5 | p01615 |
+| Abia | 4 | raleigh 4 | p02249 |
 | Abib | 4 | raleigh 4 | p01695 |
 | Absaloms | 4 | prose 1, raleigh 3 | p02239 |
 | Accession | 4 | prose 4 | note:event:accession-of-petubast-i:summary |
-| Act | 4 | raleigh 4 | p01159 |
 | Adioyning | 4 | raleigh 4 | p02402 |
+| Aegina | 4 | raleigh 4 | p02529 |
 | Aegyptius | 4 | raleigh 4 | p01627 |
 | Aemylius | 4 | raleigh 4 | p00794 |
 | Aether | 4 | raleigh 4 | p00828 |
 | Ahazia | 4 | raleigh 4 | p00416 |
 | Alpes | 4 | raleigh 4 | p00042 |
-| Amalek | 4 | prose 1, raleigh 3 | p02311 |
 | Ambassadours | 4 | prose 1, raleigh 3 | p02381 |
 | American | 4 | prose 4 | note:person:adoniram-judson:summary |
+| Ammonite | 4 | prose 2, raleigh 2 | p02559 |
 | Amoreus | 4 | raleigh 4 | p01316 |
 | Angel | 4 | prose 1, raleigh 3 | p01915 |
 | Anno | 4 | raleigh 4 | p01222 |
 | Antichrist | 4 | raleigh 4 | p01227 |
+| Aphec | 4 | raleigh 4 | p02413 |
 | Apostata | 4 | raleigh 4 | p01642 |
 | Arab | 4 | prose 4 | note:event:fall-of-akkad:summary |
 | Aran | 4 | raleigh 4 | p00949 |
 | Arcadia | 4 | raleigh 4 | p01120 |
+| Arcadian | 4 | prose 1, raleigh 3 | p02550 |
+| Archbishop | 4 | raleigh 4 | p02406 |
 | Areopagites | 4 | raleigh 4 | p01090 |
+| Argonaut | 4 | prose 4 | note:person:achilles:description |
 | Aridaeus | 4 | raleigh 4 | p00646 |
+| Arragon | 4 | prose 1, raleigh 3 | p00040 |
 | Artes | 4 | raleigh 4 | p01633 |
 | Ascania | 4 | raleigh 4 | p01252 |
 | Ashdod | 4 | prose 4 | note:event:ashdod-falls-to-sargon:summary |
@@ -4129,16 +4550,16 @@ A name here is a capitalized word of at least three letters, not a function word
 | Astrologers | 4 | raleigh 4 | p01097 |
 | Aswan | 4 | prose 4 | note:person:merenre-i:summary |
 | Athos | 4 | raleigh 4 | p01191 |
-| Attalus | 4 | raleigh 4 | p00767 |
 | August | 4 | raleigh 4 | p01650 |
 | Baalzephon | 4 | raleigh 4 | p01692 |
 | Bambyce | 4 | raleigh 4 | p01228 |
 | Baptist | 4 | prose 4 | note:person:adoniram-judson:summary |
 | Bastard | 4 | raleigh 4 | p02153 |
 | Bdellium | 4 | raleigh 4 | p00977 |
-| Beast | 4 | raleigh 4 | p01336 |
+| Beer | 4 | raleigh 4 | p02302 |
 | Beersheba | 4 | prose 2, raleigh 2 | p02307 |
 | Belfort | 4 | raleigh 4 | p02069 |
+| Beniamites | 4 | raleigh 4 | p02429 |
 | Berotha | 4 | raleigh 4 | p02116 |
 | Berytus | 4 | raleigh 4 | p02060 |
 | Bessus | 4 | raleigh 4 | p00636 |
@@ -4148,9 +4569,11 @@ A name here is a capitalized word of at least three letters, not a function word
 | Bozra | 4 | raleigh 4 | p02343 |
 | Bucholzerus | 4 | raleigh 4 | p01111 |
 | Buddhism | 4 | prose 4 | note:person:asoka:summary |
+| Bull | 4 | raleigh 4 | p02177 |
 | Cana | 4 | prose 2, raleigh 2 | p02072 |
 | Caphtor | 4 | raleigh 4 | p01344 |
 | Captiues | 4 | raleigh 4 | p01407 |
+| Captiuitie | 4 | prose 1, raleigh 3 | p02429 |
 | Cardinall | 4 | raleigh 4 | p00051 |
 | Carloman | 4 | raleigh 4 | p00035 |
 | Carmel | 4 | raleigh 4 | p02166 |
@@ -4168,14 +4591,16 @@ A name here is a capitalized word of at least three letters, not a function word
 | Christi | 4 | raleigh 4 | p02060 |
 | Christianity | 4 | prose 4 | note:person:clovis:summary |
 | Christmas | 4 | prose 4 | note:person:charlemagne:summary |
+| Cios | 4 | prose 1, raleigh 3 | p01252 |
 | Cittim | 4 | raleigh 4 | p01430 |
 | Ciuile | 4 | raleigh 4 | p01721 |
 | Ciuitate | 4 | raleigh 4 | p02389 |
 | Ciuitatem | 4 | raleigh 4 | p00961 |
 | Clemens | 4 | prose 1, raleigh 3 | p01118 |
 | Climate | 4 | raleigh 4 | p01217 |
-| Coelosyria | 4 | raleigh 4 | p02375 |
+| Coach | 4 | prose 1, raleigh 3 | p02540 |
 | Commestor | 4 | raleigh 4 | p01430 |
+| Commonwealth | 4 | prose 1, raleigh 3 | p02410 |
 | Concubines | 4 | raleigh 4 | p01377 |
 | Confirmation | 4 | prose 4 | note:event:dur-sharrukin-completed:description |
 | Constantinople | 4 | prose 3, raleigh 1 | p01191 |
@@ -4183,15 +4608,20 @@ A name here is a capitalized word of at least three letters, not a function word
 | Corinthians | 4 | raleigh 4 | p01223 |
 | Cubits | 4 | raleigh 4 | p01222 |
 | Cursed | 4 | raleigh 4 | p01761 |
+| Cypres | 4 | prose 1, raleigh 3 | p02551 |
+| Damascens | 4 | raleigh 4 | p02228 |
+| Dardania | 4 | raleigh 4 | p01642 |
 | Day | 4 | prose 4 | note:person:charlemagne:summary |
 | Decalogue | 4 | raleigh 4 | p00288 |
 | Decapolitan | 4 | raleigh 4 | p00949 |
+| Deitie | 4 | raleigh 4 | p02458 |
+| Delphos | 4 | prose 1, raleigh 3 | p01098 |
 | Der | 4 | prose 4 | note:person:humbanigash:summary |
 | Destinie | 4 | raleigh 4 | p00864 |
 | Diaphanous | 4 | raleigh 4 | p00828 |
-| Disciples | 4 | raleigh 4 | p01205 |
 | Discouerers | 4 | raleigh 4 | p01057 |
 | Discourse | 4 | raleigh 4 | p01180 |
+| Doliones | 4 | prose 1, raleigh 3 | note:person:cyzicus:description |
 | Dominus | 4 | raleigh 4 | p01857 |
 | Dukes | 4 | raleigh 4 | p00049 |
 | Dust | 4 | raleigh 4 | p00885 |
@@ -4200,20 +4630,25 @@ A name here is a capitalized word of at least three letters, not a function word
 | Edessa | 4 | raleigh 4 | p01228 |
 | Edicts | 4 | raleigh 4 | p01844 |
 | Edition | 4 | raleigh 4 | p01188 |
+| Edomite | 4 | prose 1, raleigh 3 | p02216 |
 | Eldership | 4 | raleigh 4 | p01423 |
 | Eleutherus | 4 | prose 1, raleigh 3 | p02075 |
 | Ellas | 4 | raleigh 4 | p01603 |
 | Emaus | 4 | raleigh 4 | p02329 |
-| Embassadors | 4 | raleigh 4 | p00783 |
+| Embassadour | 4 | raleigh 4 | p02551 |
+| Emperours | 4 | raleigh 4 | p01222 |
+| Empresse | 4 | prose 2, raleigh 2 | p01168 |
 | Englished | 4 | raleigh 4 | p01430 |
 | Ens | 4 | raleigh 4 | p01745 |
+| Epirus | 4 | raleigh 4 | p02476 |
 | Erat | 4 | raleigh 4 | p01222 |
 | Eremite | 4 | prose 1, raleigh 3 | note:person:antonius:description |
+| Etymologie | 4 | raleigh 4 | p01371 |
 | Euangelists | 4 | raleigh 4 | p02097 |
 | EZECH | 4 | raleigh 4 | p01271 |
-| Ezer | 4 | prose 4 | note:person:bali-mazer:description |
 | Fas | 4 | raleigh 4 | p01721 |
 | Feast | 4 | prose 2, raleigh 2 | p02371 |
+| Finally | 4 | raleigh 4 | p02448 |
 | Fishes | 4 | raleigh 4 | p01898 |
 | Flouds | 4 | raleigh 4 | p01111 |
 | Fons | 4 | raleigh 4 | p01654 |
@@ -4221,13 +4656,10 @@ A name here is a capitalized word of at least three letters, not a function word
 | Fourth | 4 | prose 3, raleigh 1 | note:person:judah:summary |
 | Frontier | 4 | raleigh 4 | p00985 |
 | Gadi | 4 | prose 4 | note:person:menahem:summary |
-| Galley | 4 | raleigh 4 | p01222 |
 | Georgians | 4 | raleigh 4 | p01229 |
 | Gerassa | 4 | prose 2, raleigh 2 | note:person:baldwin-king-of-damascus:description |
-| German | 4 | prose 4 | note:person:diet-eman:summary |
 | Germany | 4 | prose 2, raleigh 2 | p01232 |
 | Gessuri | 4 | raleigh 4 | p01903 |
-| Gibeon | 4 | prose 2, raleigh 2 | p01999 |
 | Gloucester | 4 | raleigh 4 | p00020 |
 | Good | 4 | prose 1, raleigh 3 | p01095 |
 | Goodnesse | 4 | raleigh 4 | p00877 |
@@ -4243,31 +4675,26 @@ A name here is a capitalized word of at least three letters, not a function word
 | Heards | 4 | raleigh 4 | p01222 |
 | Heathens | 4 | raleigh 4 | p01867 |
 | Heire | 4 | raleigh 4 | p01033 |
-| Hesperides | 4 | raleigh 4 | p01001 |
+| Heshbon | 4 | prose 3, raleigh 1 | p02561 |
 | Hindu | 4 | prose 4 | note:event:kali-yuga-era:summary |
 | Hippo | 4 | prose 4 | note:person:augustine-of-hippo:summary |
 | Hippus | 4 | raleigh 4 | p02023 |
-| Homers | 4 | raleigh 4 | p00985 |
 | Homo | 4 | raleigh 4 | p00877 |
 | Horites | 4 | raleigh 4 | p01912 |
-| Horma | 4 | raleigh 4 | p01889 |
 | Hunter | 4 | raleigh 4 | p01418 |
 | Husbandman | 4 | raleigh 4 | p01136 |
 | Ice | 4 | prose 4 | note:event:flood-of-ogyges:summary |
+| Iebus | 4 | raleigh 4 | p01323 |
 | Ietabata | 4 | raleigh 4 | p01878 |
 | Iew | 4 | prose 2, raleigh 2 | note:person:alcimus:description |
 | Illyria | 4 | raleigh 4 | p01040 |
 | Infants | 4 | raleigh 4 | p02084 |
 | Inland | 4 | prose 3, raleigh 1 | p01385 |
-| Inter | 4 | raleigh 4 | p01359 |
 | Inuentors | 4 | raleigh 4 | p01070 |
 | Iona | 4 | prose 4 | note:person:aidan:summary |
 | Isa | 4 | prose 4 | note:event:fifteenth-jubilee:summary |
 | Isle | 4 | raleigh 4 | p01166 |
-| Israclites | 4 | raleigh 4 | p01688 |
-| Issues | 4 | raleigh 4 | p01420 |
-| Italians | 4 | raleigh 4 | p01622 |
-| Iudas | 4 | raleigh 4 | p02373 |
+| Iudgement | 4 | raleigh 4 | p02433 |
 | Iune | 4 | raleigh 4 | p01873 |
 | Kalendar | 4 | raleigh 4 | p01676 |
 | Kali | 4 | prose 4 | note:event:death-of-krishna:summary |
@@ -4275,18 +4702,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Kevin | 4 | prose 4 | note:event:antiochus-plunders-the-temple:description |
 | KJV | 4 | prose 4 | note:person:asshur:summary |
 | Korea | 4 | prose 4 | note:event:division-of-korea:summary |
-| Lacedaemon | 4 | raleigh 4 | p00780 |
-| Ladie | 4 | raleigh 4 | p01070 |
 | Lais | 4 | prose 2, raleigh 2 | p02093 |
+| Laish | 4 | raleigh 4 | p02093 |
 | Language | 4 | raleigh 4 | p01420 |
 | Languages | 4 | raleigh 4 | p01218 |
 | Latium | 4 | raleigh 4 | p01120 |
 | Lawyers | 4 | raleigh 4 | p01844 |
+| Lemnian | 4 | prose 2, raleigh 2 | p02550 |
 | Lucide | 4 | raleigh 4 | p00830 |
-| Macchabees | 4 | raleigh 4 | p02116 |
 | Magdalum | 4 | prose 1, raleigh 3 | p02131 |
 | Magia | 4 | raleigh 4 | p01126 |
 | Magician | 4 | raleigh 4 | p01492 |
+| Magique | 4 | prose 1, raleigh 3 | p02526 |
 | Mahabharata | 4 | prose 4 | note:event:death-of-krishna:summary |
 | Maim | 4 | raleigh 4 | p00818 |
 | Malachi | 4 | prose 4 | note:event:malachi-end-of-the-old-testament:summary |
@@ -4295,6 +4722,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Manichees | 4 | raleigh 4 | p00907 |
 | Maori | 4 | prose 4 | note:person:henry-williams:summary |
 | Marble | 4 | raleigh 4 | p02286 |
+| Mariandyni | 4 | prose 3, raleigh 1 | p02525 |
 | Maritimate | 4 | raleigh 4 | p01246 |
 | Masse | 4 | raleigh 4 | p00930 |
 | Meale | 4 | raleigh 4 | p01136 |
@@ -4317,15 +4745,17 @@ A name here is a capitalized word of at least three letters, not a function word
 | Mountainous | 4 | raleigh 4 | p02343 |
 | Musicke | 4 | raleigh 4 | p01029 |
 | Mutesa | 4 | prose 4 | note:person:alexander-mackay:summary |
-| Mysia | 4 | raleigh 4 | p01252 |
 | Naharaijm | 4 | raleigh 4 | p01359 |
 | Nationall | 4 | raleigh 4 | p01725 |
 | Nebo | 4 | raleigh 4 | p02348 |
 | Negro | 4 | raleigh 4 | p00987 |
+| Nehem | 4 | raleigh 4 | p02429 |
+| Nemaea | 4 | prose 3, raleigh 1 | p02550 |
 | Niphates | 4 | raleigh 4 | p01159 |
 | Nisibis | 4 | raleigh 4 | p01427 |
 | Nitocris | 4 | prose 4 | note:person:merenre-ii:summary |
 | Nomades | 4 | raleigh 4 | p01018 |
+| Non | 4 | raleigh 4 | p02542 |
 | Norman | 4 | raleigh 4 | p00015 |
 | Normandy | 4 | prose 2, raleigh 2 | p00015 |
 | Northwest | 4 | raleigh 4 | p01206 |
@@ -4334,9 +4764,10 @@ A name here is a capitalized word of at least three letters, not a function word
 | Officers | 4 | raleigh 4 | p01401 |
 | Ogygia | 4 | raleigh 4 | p01111 |
 | Oile | 4 | raleigh 4 | p00892 |
+| Oliue | 4 | raleigh 4 | p01975 |
 | Omnis | 4 | raleigh 4 | p01854 |
+| Ono | 4 | prose 1, raleigh 3 | p02429 |
 | Oppressors | 4 | raleigh 4 | p00898 |
-| Oracle | 4 | raleigh 4 | p02210 |
 | Organum | 4 | raleigh 4 | p00880 |
 | Orientem | 4 | raleigh 4 | p00912 |
 | Orthographie | 4 | raleigh 4 | p02328 |
@@ -4348,20 +4779,23 @@ A name here is a capitalized word of at least three letters, not a function word
 | Paropanisus | 4 | raleigh 4 | p01175 |
 | Parthia | 4 | raleigh 4 | p01188 |
 | Pastorall | 4 | raleigh 4 | p00269 |
-| Peace | 4 | raleigh 4 | p00780 |
 | Pella | 4 | raleigh 4 | p02387 |
 | Peor | 4 | raleigh 4 | p01443 |
 | Pepin | 4 | raleigh 4 | p00034 |
 | Pergamus | 4 | raleigh 4 | p00784 |
 | Perizzites | 4 | raleigh 4 | p01313 |
+| Phaeaces | 4 | prose 1, raleigh 3 | p02529 |
 | Philopator | 4 | raleigh 4 | p00778 |
 | Philopoemen | 4 | raleigh 4 | p00782 |
+| Phocis | 4 | prose 1, raleigh 3 | p02487 |
 | Phrygians | 4 | prose 1, raleigh 3 | p01069 |
+| Phul | 4 | raleigh 4 | p02424 |
+| Physician | 4 | raleigh 4 | p00852 |
 | Piso | 4 | raleigh 4 | p00978 |
-| Planet | 4 | raleigh 4 | p01447 |
 | Plant | 4 | raleigh 4 | p01692 |
 | Pleasure | 4 | raleigh 4 | p00885 |
 | Plotinus | 4 | raleigh 4 | p00828 |
+| Plough | 4 | raleigh 4 | p01986 |
 | Point | 4 | prose 4 | note:event:dispersion:description |
 | Polonia | 4 | raleigh 4 | p01126 |
 | Ports | 4 | raleigh 4 | p01222 |
@@ -4370,10 +4804,10 @@ A name here is a capitalized word of at least three letters, not a function word
 | Precepts | 4 | raleigh 4 | p01010 |
 | Priesthood | 4 | raleigh 4 | p02047 |
 | Primum | 4 | raleigh 4 | p01377 |
-| Psal | 4 | raleigh 4 | p02200 |
 | Psalmes | 4 | raleigh 4 | p01627 |
 | Purple | 4 | raleigh 4 | p02047 |
 | Qatna | 4 | prose 4 | note:person:ahaziah-king-of-israel:description |
+| Rabbines | 4 | raleigh 4 | p02509 |
 | Raphidim | 4 | raleigh 4 | p01875 |
 | Readers | 4 | raleigh 4 | p01615 |
 | Rebekah | 4 | prose 4 | note:person:esau:summary |
@@ -4381,13 +4815,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Reformation | 4 | prose 4 | note:person:martin-luther:summary |
 | Regione | 4 | raleigh 4 | p01894 |
 | Regis | 4 | raleigh 4 | p01118 |
-| Rehob | 4 | raleigh 4 | p02381 |
 | Reliefs | 4 | prose 4 | note:event:dur-sharrukin-completed:description |
 | Remaliah | 4 | prose 4 | note:person:pekah:summary |
 | Rhodes | 4 | raleigh 4 | p01261 |
 | Rhodians | 4 | raleigh 4 | p00793 |
 | Riphei | 4 | raleigh 4 | p01254 |
 | Rival | 4 | prose 4 | note:person:tibni:summary |
+| Rockes | 4 | raleigh 4 | p02477 |
 | Roob | 4 | raleigh 4 | p02063 |
 | Royal | 4 | prose 4 | note:person:queen-ahmose:summary |
 | Ruler | 4 | raleigh 4 | p00877 |
@@ -4398,30 +4832,31 @@ A name here is a capitalized word of at least three letters, not a function word
 | Salamis | 4 | prose 1, raleigh 3 | note:event:battle-of-salamis:summary |
 | Saluages | 4 | raleigh 4 | p01382 |
 | Samareus | 4 | raleigh 4 | p01326 |
-| Sardinia | 4 | raleigh 4 | p01221 |
-| Satan | 4 | raleigh 4 | p01011 |
 | Sauls | 4 | raleigh 4 | p01527 |
 | Schenitae | 4 | raleigh 4 | p00949 |
 | Sciences | 4 | raleigh 4 | p02183 |
+| Scribe | 4 | raleigh 4 | p01970 |
 | Septentrionall | 4 | raleigh 4 | p01206 |
 | Shechem | 4 | prose 4 | note:event:abraham-enters-canaan:summary |
 | Sheep | 4 | raleigh 4 | p01222 |
 | Sheepe | 4 | raleigh 4 | p01154 |
-| Sicilia | 4 | raleigh 4 | p01385 |
 | Siculus | 4 | raleigh 4 | p01385 |
+| Silo | 4 | raleigh 4 | p02433 |
+| Sion | 4 | raleigh 4 | p02446 |
 | Sittim | 4 | raleigh 4 | p02344 |
 | Slaue | 4 | prose 2, raleigh 2 | p00885 |
-| Soba | 4 | prose 1, raleigh 3 | p02247 |
 | Soone | 4 | raleigh 4 | p02048 |
 | Southwest | 4 | raleigh 4 | p01262 |
+| Spaniard | 4 | prose 1, raleigh 3 | p01392 |
 | Start | 4 | prose 4 | note:event:era-of-nabonassar:summary |
 | Statues | 4 | raleigh 4 | p02094 |
+| Stone | 4 | raleigh 4 | p02036 |
 | Streights | 4 | raleigh 4 | p01222 |
 | Studd | 4 | prose 4 | note:event:first-baptisms-congo-mission:summary |
 | Succession | 4 | raleigh 4 | p01084 |
 | Suppiluliuma | 4 | prose 4 | note:event:death-of-suppiluliuma-i:summary |
-| Swine | 4 | raleigh 4 | p00898 |
 | Syracuse | 4 | raleigh 4 | p01150 |
+| Syrens | 4 | prose 1, raleigh 3 | p02528 |
 | Tables | 4 | prose 2, raleigh 2 | p01844 |
 | Tanis | 4 | prose 2, raleigh 2 | p02318 |
 | Tarichea | 4 | prose 1, raleigh 3 | p02135 |
@@ -4432,16 +4867,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Thermopylae | 4 | prose 2, raleigh 2 | p00783 |
 | Thessalia | 4 | raleigh 4 | p01118 |
 | Third | 4 | prose 4 | note:person:esau:description |
-| Thornes | 4 | raleigh 4 | p02347 |
 | Timber | 4 | raleigh 4 | p02036 |
 | Tissaphernes | 4 | raleigh 4 | p00594 |
 | Titles | 4 | raleigh 4 | p00885 |
 | Toledo | 4 | prose 1, raleigh 3 | p00043 |
-| Toparchies | 4 | raleigh 4 | p02230 |
 | Toro | 4 | raleigh 4 | p01689 |
-| Touching | 4 | raleigh 4 | p02395 |
+| Towres | 4 | raleigh 4 | p02451 |
 | Traconi | 4 | raleigh 4 | p02023 |
 | Trinitie | 4 | raleigh 4 | p01987 |
+| Troians | 4 | raleigh 4 | p02542 |
 | Turin | 4 | prose 4 | note:person:nebka:summary |
 | Victories | 4 | raleigh 4 | p00385 |
 | United | 4 | prose 4 | note:event:iwakura-embassy:summary |
@@ -4453,13 +4887,11 @@ A name here is a capitalized word of at least three letters, not a function word
 | Wessex | 4 | prose 4 | note:person:alfred-the-great:summary |
 | Westminster | 4 | prose 4 | note:person:martyn-lloyd-jones:summary |
 | Whitefield | 4 | prose 4 | note:event:whitefield-enters-oxford:summary |
-| Whosoeuer | 4 | raleigh 4 | p01615 |
 | Wilberforce | 4 | prose 4 | note:person:john-newton:summary |
 | Written | 4 | raleigh 4 | p01725 |
 | Zidonian | 4 | raleigh 4 | p02036 |
 | Zoar | 4 | raleigh 4 | p00920 |
 | Zone | 4 | raleigh 4 | p00065 |
-| Abia | 3 | raleigh 3 | p02249 |
 | Achaia | 3 | raleigh 3 | p01111 |
 | Acherres | 3 | raleigh 3 | p01753 |
 | Adab | 3 | prose 3 | note:person:lugal-ane-mundu:summary |
@@ -4472,17 +4904,16 @@ A name here is a capitalized word of at least three letters, not a function word
 | Aenygmaticall | 3 | raleigh 3 | p01986 |
 | Aeoles | 3 | raleigh 3 | p01258 |
 | Aethiopiae | 3 | raleigh 3 | p01274 |
-| Agag | 3 | prose 2, raleigh 1 | p00026 |
+| Aetolian | 3 | raleigh 3 | p02550 |
 | Akkadian | 3 | prose 3 | note:person:sargon-i-of-akkad:summary |
 | Albertus | 3 | raleigh 3 | p00844 |
 | Alegartos | 3 | raleigh 3 | p01385 |
 | Aleppo | 3 | raleigh 3 | p00949 |
 | Alex | 3 | raleigh 3 | p01654 |
 | Alimis | 3 | raleigh 3 | p02375 |
-| Amazons | 3 | raleigh 3 | p01084 |
+| Ambrosia | 3 | raleigh 3 | p01001 |
 | Americans | 3 | prose 2, raleigh 1 | note:person:david-brainerd:summary |
 | Amilcar | 3 | raleigh 3 | p00747 |
-| Ammonite | 3 | prose 2, raleigh 1 | p02150 |
 | Amor | 3 | raleigh 3 | p00860 |
 | Anakim | 3 | raleigh 3 | p01313 |
 | Ancient | 3 | raleigh 3 | p02075 |
@@ -4499,19 +4930,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Araxea | 3 | raleigh 3 | p01175 |
 | Arca | 3 | raleigh 3 | p01150 |
 | Arcadians | 3 | raleigh 3 | p01963 |
-| Archbishop | 3 | raleigh 3 | p02051 |
+| Argiue | 3 | prose 3 | note:person:hippomedon:description |
 | Argob | 3 | raleigh 3 | p02401 |
 | Arioli | 3 | raleigh 3 | p01475 |
 | Aristotles | 3 | raleigh 3 | p00057 |
+| Armes | 3 | raleigh 3 | p02429 |
 | Army | 3 | prose 1, raleigh 2 | p01168 |
 | Aron | 3 | raleigh 3 | p01144 |
-| Arragon | 3 | raleigh 3 | p00040 |
 | Arroer | 3 | raleigh 3 | p02336 |
 | Ashurbanipal | 3 | prose 3 | note:event:death-of-gyges:summary |
 | Askenaz | 3 | raleigh 3 | p01253 |
 | Asophon | 3 | prose 2, raleigh 1 | p02150 |
 | Asphaltitis | 3 | raleigh 3 | p02355 |
-| Asse | 3 | raleigh 3 | p01058 |
 | Astronomers | 3 | raleigh 3 | p01487 |
 | Atothis | 3 | prose 3 | note:person:nimrod:description |
 | Aug | 3 | raleigh 3 | p00906 |
@@ -4524,13 +4954,14 @@ A name here is a capitalized word of at least three letters, not a function word
 | Bathsheba | 3 | prose 3 | note:person:solomon:summary |
 | Battaile | 3 | raleigh 3 | p00602 |
 | Bauier | 3 | raleigh 3 | p00034 |
+| Bebryces | 3 | prose 1, raleigh 2 | note:person:amycus:description |
 | Bechuana | 3 | prose 3 | note:person:robert-moffat:summary |
 | Beefe | 3 | raleigh 3 | p01154 |
-| Beer | 3 | raleigh 3 | p02302 |
 | Beeues | 3 | raleigh 3 | p01154 |
 | Beginning | 3 | prose 1, raleigh 2 | note:event:kali-yuga-era:summary |
 | Beijing | 3 | prose 3 | note:event:first-christian-contact-korea:summary |
 | Belbeis | 3 | raleigh 3 | p01656 |
+| Beniamite | 3 | prose 2, raleigh 1 | p02429 |
 | Berim | 3 | raleigh 3 | p02116 |
 | Bersabe | 3 | raleigh 3 | p01313 |
 | Bethsur | 3 | prose 1, raleigh 2 | note:person:antiochus-eupator:description |
@@ -4538,6 +4969,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Boeotia | 3 | raleigh 3 | p02036 |
 | Boers | 3 | prose 3 | note:event:boer-bechuana-conflicts:summary |
 | Bogs | 3 | raleigh 3 | p01222 |
+| Bore | 3 | raleigh 3 | p02549 |
 | Brachmans | 3 | raleigh 3 | p01040 |
 | Briefe | 3 | raleigh 3 | p00311 |
 | Britannia | 3 | raleigh 3 | p00990 |
@@ -4549,15 +4981,17 @@ A name here is a capitalized word of at least three letters, not a function word
 | Buzite | 3 | prose 1, raleigh 2 | p02398 |
 | Cabalists | 3 | raleigh 3 | p00919 |
 | Calabar | 3 | prose 3 | note:person:mary-slessor:summary |
+| Calues | 3 | raleigh 3 | p02248 |
+| Calydon | 3 | prose 2, raleigh 1 | p02549 |
 | Camels | 3 | raleigh 3 | p01542 |
 | Camerina | 3 | raleigh 3 | p01564 |
+| Campe | 3 | raleigh 3 | p01876 |
 | Canadian | 3 | prose 3 | note:person:george-leslie-mackay:summary |
 | Candaules | 3 | prose 1, raleigh 2 | p01227 |
 | Cannae | 3 | raleigh 3 | p00743 |
 | Canticles | 3 | raleigh 3 | p02394 |
 | Capernaum | 3 | prose 1, raleigh 2 | note:person:saligniac:description |
 | Captayne | 3 | raleigh 3 | p01120 |
-| Captiuitie | 3 | prose 1, raleigh 2 | p00496 |
 | Capua | 3 | raleigh 3 | p00750 |
 | Carioth | 3 | prose 1, raleigh 2 | p02314 |
 | Carthaginian | 3 | prose 1, raleigh 2 | p01443 |
@@ -4566,9 +5000,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Castrum | 3 | raleigh 3 | p02058 |
 | Catalogue | 3 | raleigh 3 | p01642 |
 | Century | 3 | prose 3 | note:person:hammurabi-i-of-yamhad:description |
+| Cerberus | 3 | raleigh 3 | p01070 |
 | Chabol | 3 | prose 1, raleigh 2 | p02071 |
 | Chaldoean | 3 | raleigh 3 | p01443 |
 | Chalneh | 3 | raleigh 3 | p01430 |
+| Chappell | 3 | raleigh 3 | p02069 |
+| Chariot | 3 | raleigh 3 | p02553 |
 | Charity | 3 | raleigh 3 | p00003 |
 | Chedorl | 3 | raleigh 3 | p01600 |
 | Chedumim | 3 | raleigh 3 | p02075 |
@@ -4581,7 +5018,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | College | 3 | prose 3 | note:event:carey-at-fort-william-college:summary |
 | Comagena | 3 | raleigh 3 | p01427 |
 | Come | 3 | raleigh 3 | p01571 |
-| Commonwealth | 3 | prose 1, raleigh 2 | p01423 |
+| Commaunders | 3 | raleigh 3 | p01615 |
 | Communist | 3 | prose 3 | note:person:john-and-betty-stam:summary |
 | Concharis | 3 | prose 3 | note:event:death-of-concharis:summary |
 | Conductor | 3 | raleigh 3 | p01222 |
@@ -4590,6 +5027,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Constable | 3 | prose 1, raleigh 2 | p02069 |
 | Cordiaei | 3 | raleigh 3 | p01159 |
 | Coronus | 3 | raleigh 3 | p01199 |
+| Counsaile | 3 | raleigh 3 | p01871 |
 | Court | 3 | raleigh 3 | p01624 |
 | Courts | 3 | raleigh 3 | p02388 |
 | Cretians | 3 | raleigh 3 | p01069 |
@@ -4598,19 +5036,19 @@ A name here is a capitalized word of at least three letters, not a function word
 | Curetes | 3 | raleigh 3 | p01084 |
 | Czech | 3 | prose 3 | note:person:john-huss:summary |
 | Dalmanutha | 3 | raleigh 3 | p02093 |
+| Damascena | 3 | raleigh 3 | p02410 |
+| Damasco | 3 | prose 1, raleigh 2 | p01614 |
 | Danes | 3 | prose 1, raleigh 2 | note:person:anskar:summary |
-| Dardania | 3 | raleigh 3 | p01642 |
-| Deitie | 3 | raleigh 3 | p01088 |
 | Deos | 3 | raleigh 3 | p01095 |
 | Diblathaim | 3 | raleigh 3 | p01892 |
 | Dina | 3 | raleigh 3 | p01761 |
 | Directiue | 3 | raleigh 3 | p01848 |
 | Discipline | 3 | raleigh 3 | p01876 |
 | Diuination | 3 | raleigh 3 | p01496 |
+| Dodona | 3 | raleigh 3 | p02523 |
+| Dogge | 3 | raleigh 3 | p02047 |
 | Dok | 3 | prose 2, raleigh 1 | p02243 |
-| Dominions | 3 | raleigh 3 | p01914 |
 | Dorbeta | 3 | raleigh 3 | p00960 |
-| Dragon | 3 | raleigh 3 | p01070 |
 | Dynastia | 3 | raleigh 3 | p01291 |
 | Earles | 3 | raleigh 3 | p01040 |
 | Early | 3 | prose 3 | note:person:patrick-hamilton:summary |
@@ -4618,15 +5056,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Ebbe | 3 | raleigh 3 | p00892 |
 | Edenis | 3 | raleigh 3 | p00949 |
 | Edrai | 3 | raleigh 3 | p01361 |
+| Elath | 3 | raleigh 3 | p02419 |
 | Element | 3 | raleigh 3 | p00940 |
 | Elements | 3 | raleigh 3 | p00999 |
+| Eleusina | 3 | prose 2, raleigh 1 | p02470 |
 | Elim | 3 | raleigh 3 | p01697 |
 | Elis | 3 | prose 2, raleigh 1 | p01258 |
 | Emesa | 3 | raleigh 3 | p01328 |
 | Emoreus | 3 | raleigh 3 | p02375 |
 | Empedocles | 3 | raleigh 3 | p00058 |
-| Emperours | 3 | raleigh 3 | p01222 |
-| Empresse | 3 | prose 1, raleigh 2 | p01168 |
 | End | 3 | prose 3 | note:event:end-of-egypt-dynasty-12:description |
 | Endor | 3 | raleigh 3 | p02147 |
 | Enuie | 3 | raleigh 3 | p00885 |
@@ -4635,14 +5073,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Ephram | 3 | raleigh 3 | p00935 |
 | Ephron | 3 | raleigh 3 | p02239 |
 | Epicurus | 3 | raleigh 3 | p00829 |
-| Epirus | 3 | raleigh 3 | p01261 |
 | Episcopus | 3 | raleigh 3 | p00961 |
 | Equatorial | 3 | prose 3 | note:event:equatorial-guinea-civil-war:summary |
 | Esion | 3 | raleigh 3 | p01259 |
 | Essence | 3 | raleigh 3 | p00058 |
 | Eternall | 3 | raleigh 3 | p00058 |
 | Ethnickes | 3 | raleigh 3 | p01070 |
-| Etymologie | 3 | raleigh 3 | p01371 |
 | Eurydice | 3 | raleigh 3 | p00656 |
 | Examples | 3 | raleigh 3 | p01039 |
 | Ezekias | 3 | raleigh 3 | p01956 |
@@ -4650,7 +5086,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Field | 3 | raleigh 3 | p00877 |
 | Fields | 3 | raleigh 3 | p01455 |
 | Figures | 3 | raleigh 3 | p01001 |
-| Finally | 3 | raleigh 3 | p01095 |
 | Flaccus | 3 | raleigh 3 | p01385 |
 | Flies | 3 | raleigh 3 | p01443 |
 | Florence | 3 | prose 3 | note:person:girolamo-savonarola:summary |
@@ -4660,6 +5095,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Founders | 3 | raleigh 3 | p01389 |
 | Frier | 3 | raleigh 3 | p01175 |
 | Frog | 3 | raleigh 3 | p01986 |
+| Fruit | 3 | raleigh 3 | p01222 |
 | Fruits | 3 | raleigh 3 | p00918 |
 | Fryer | 3 | raleigh 3 | p01124 |
 | Gaas | 3 | raleigh 3 | p02244 |
@@ -4671,11 +5107,14 @@ A name here is a capitalized word of at least three letters, not a function word
 | Galli | 3 | raleigh 3 | p01175 |
 | Games | 3 | prose 1, raleigh 2 | p01676 |
 | Gargara | 3 | raleigh 3 | p01252 |
+| Garizim | 3 | prose 1, raleigh 2 | p02047 |
 | Gates | 3 | raleigh 3 | p01303 |
 | Gazarim | 3 | raleigh 3 | p01491 |
 | Gentium | 3 | raleigh 3 | p02023 |
 | Germans | 3 | prose 1, raleigh 2 | p01737 |
 | Gezer | 3 | raleigh 3 | p02372 |
+| Gileadite | 3 | prose 2, raleigh 1 | p02536 |
+| Gileadites | 3 | raleigh 3 | p02495 |
 | Glasses | 3 | raleigh 3 | p01115 |
 | Globe | 3 | raleigh 3 | p00815 |
 | Gomerians | 3 | raleigh 3 | p01226 |
@@ -4689,10 +5128,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Gregory | 3 | prose 3 | note:person:augustine-of-canterbury:summary |
 | Guinea | 3 | prose 3 | note:event:equatorial-guinea-civil-war:summary |
 | Guti | 3 | prose 3 | note:event:babylon-dynasty-5-arab:summary |
+| Hadid | 3 | raleigh 3 | p02429 |
 | Haec | 3 | raleigh 3 | p01526 |
 | Hamatheus | 3 | raleigh 3 | p01328 |
 | Hamazi | 3 | prose 3 | note:person:hatanis:summary |
 | Hangman | 3 | raleigh 3 | p00023 |
+| Hanothoth | 3 | raleigh 3 | p02439 |
 | Haram | 3 | raleigh 3 | p02369 |
 | Hataroth | 3 | raleigh 3 | p02368 |
 | Hauoth | 3 | prose 2, raleigh 1 | p01903 |
@@ -4700,7 +5141,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hen | 3 | raleigh 3 | p02135 |
 | Heniochi | 3 | raleigh 3 | p01023 |
 | Henochians | 3 | raleigh 3 | p01019 |
-| Heshbon | 3 | prose 3 | note:event:jephthah-defeats-ammon:summary |
+| Herd | 3 | prose 1, raleigh 2 | note:person:admetus:description |
 | Heuite | 3 | prose 1, raleigh 2 | p01915 |
 | Hierom | 3 | prose 2, raleigh 1 | p02396 |
 | Hoc | 3 | raleigh 3 | p00907 |
@@ -4716,10 +5157,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Iabes | 3 | prose 1, raleigh 2 | p02388 |
 | Iahzer | 3 | raleigh 3 | p02372 |
 | Iapheths | 3 | raleigh 3 | p01430 |
-| Iebus | 3 | raleigh 3 | p01323 |
 | Jehoiachin | 3 | prose 3 | note:person:jehoiachin:summary |
 | Jephunneh | 3 | prose 3 | note:person:caleb:summary |
-| Iericho | 3 | prose 1, raleigh 2 | p02348 |
 | Iewels | 3 | raleigh 3 | p01043 |
 | Ilalah | 3 | prose 1, raleigh 2 | p01688 |
 | Illyrians | 3 | raleigh 3 | p00737 |
@@ -4728,22 +5167,26 @@ A name here is a capitalized word of at least three letters, not a function word
 | Inquisition | 3 | prose 1, raleigh 2 | p01090 |
 | Insula | 3 | raleigh 3 | p00961 |
 | Intercalations | 3 | raleigh 3 | p01678 |
+| Interregnum | 3 | prose 2, raleigh 1 | p02466 |
 | Iogbeha | 3 | raleigh 3 | p02367 |
 | Johnson | 3 | prose 3 | note:person:naamah:description |
 | Ishtar | 3 | prose 3 | note:person:naamah:description |
 | Ismaels | 3 | raleigh 3 | p01577 |
+| Israels | 3 | raleigh 3 | p02571 |
 | Issus | 3 | prose 1, raleigh 2 | p00626 |
+| Isthmos | 3 | prose 1, raleigh 2 | p02540 |
 | Iudaeus | 3 | raleigh 3 | p01482 |
-| Iudgement | 3 | raleigh 3 | p00289 |
 | Kedemoth | 3 | raleigh 3 | p02343 |
 | Kenite | 3 | raleigh 3 | p01704 |
 | Kindred | 3 | raleigh 3 | p02216 |
+| Kine | 3 | raleigh 3 | p02280 |
 | Kinsmen | 3 | raleigh 3 | p02311 |
-| Kiriath | 3 | prose 3 | note:event:ark-at-kiriath-jearim:summary |
 | Knights | 3 | raleigh 3 | p02036 |
 | Ladies | 3 | raleigh 3 | p01084 |
 | Lancaster | 3 | raleigh 3 | p00021 |
 | Laodicea | 3 | raleigh 3 | p01328 |
+| Latona | 3 | prose 1, raleigh 2 | p01112 |
+| Lawe | 3 | raleigh 3 | p02541 |
 | Lebna | 3 | raleigh 3 | p01656 |
 | Leges | 3 | raleigh 3 | p01844 |
 | Leone | 3 | prose 3 | note:person:granville-sharp:summary |
@@ -4759,8 +5202,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Lucian | 3 | raleigh 3 | p01228 |
 | Lull | 3 | prose 3 | note:event:lull-completes-book-against-islam:summary |
 | Lumen | 3 | raleigh 3 | p00850 |
-| Luther | 3 | prose 2, raleigh 1 | p00906 |
 | Lutheran | 3 | prose 2, raleigh 1 | note:person:hans-egede:summary |
+| Luz | 3 | raleigh 3 | p02465 |
 | Machabees | 3 | raleigh 3 | p02075 |
 | Machanaijm | 3 | raleigh 3 | p02373 |
 | Machati | 3 | raleigh 3 | p01903 |
@@ -4783,6 +5226,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Marishes | 3 | raleigh 3 | p01239 |
 | Marius | 3 | prose 1, raleigh 2 | p00961 |
 | Materia | 3 | raleigh 3 | p00063 |
+| Materials | 3 | raleigh 3 | p01025 |
+| Mathematicall | 3 | raleigh 3 | p02541 |
 | Mathematicians | 3 | raleigh 3 | p01113 |
 | Matth | 3 | raleigh 3 | p01226 |
 | Maurus | 3 | raleigh 3 | p00949 |
@@ -4806,7 +5251,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Murder | 3 | raleigh 3 | p00865 |
 | Mutiners | 3 | raleigh 3 | p01865 |
 | Mwanga | 3 | prose 3 | note:person:alexander-mackay:summary |
-| Mycenae | 3 | prose 3 | note:person:aegysthus:summary |
 | Myrrhe | 3 | raleigh 3 | p00955 |
 | Naid | 3 | raleigh 3 | p01018 |
 | Native | 3 | prose 2, raleigh 1 | p02286 |
@@ -4826,17 +5270,19 @@ A name here is a capitalized word of at least three letters, not a function word
 | Niliaca | 3 | raleigh 3 | p01124 |
 | Nimra | 3 | raleigh 3 | p02353 |
 | Nimrud | 3 | prose 3 | note:event:black-obelisk-erected:summary |
+| Nob | 3 | raleigh 3 | p02367 |
 | Nobility | 3 | raleigh 3 | p00038 |
-| Non | 3 | raleigh 3 | p00884 |
 | Normandie | 3 | raleigh 3 | p01847 |
 | Northeast | 3 | raleigh 3 | p01313 |
 | Northerly | 3 | raleigh 3 | p01688 |
 | Northern | 3 | prose 1, raleigh 2 | p00027 |
 | Norway | 3 | prose 3 | note:person:olaf-tryggvason:summary |
+| Nurse | 3 | raleigh 3 | p02498 |
+| Nymph | 3 | prose 2, raleigh 1 | p02480 |
+| Nymphes | 3 | prose 1, raleigh 2 | p01084 |
 | Oath | 3 | raleigh 3 | p02307 |
 | Ocila | 3 | raleigh 3 | p01159 |
 | Officer | 3 | raleigh 3 | p01624 |
-| Oliue | 3 | raleigh 3 | p01975 |
 | Olympiad | 3 | prose 1, raleigh 2 | p01118 |
 | Olympiads | 3 | raleigh 3 | p01676 |
 | Omne | 3 | raleigh 3 | p01749 |
@@ -4849,32 +5295,35 @@ A name here is a capitalized word of at least three letters, not a function word
 | Ortygia | 3 | raleigh 3 | p01112 |
 | Ose | 3 | raleigh 3 | p01430 |
 | Otherwise | 3 | raleigh 3 | p01692 |
-| Oxe | 3 | raleigh 3 | p01809 |
 | Oxford | 3 | prose 3 | note:person:john-wycliffe:summary |
 | Oxus | 3 | raleigh 3 | p01021 |
 | Oysters | 3 | raleigh 3 | p01004 |
+| Palaces | 3 | raleigh 3 | p02446 |
+| Pallas | 3 | prose 1, raleigh 2 | p02522 |
 | Pantibiblon | 3 | prose 3 | note:person:daonus:summary |
 | Papers | 3 | raleigh 3 | p02075 |
 | Paphlagonia | 3 | raleigh 3 | p01254 |
 | Paradiso | 3 | raleigh 3 | p00923 |
 | Paradisus | 3 | raleigh 3 | p00912 |
 | Park | 3 | prose 3 | note:person:charles-spurgeon:summary |
+| Parthian | 3 | prose 1, raleigh 2 | p02447 |
 | Passages | 3 | prose 2, raleigh 1 | p01873 |
 | Pastores | 3 | raleigh 3 | p01018 |
 | Patriarke | 3 | prose 1, raleigh 2 | p02052 |
 | Pearles | 3 | raleigh 3 | p00949 |
 | Peking | 3 | prose 3 | note:person:rabban-sauma:summary |
 | Pentapolis | 3 | raleigh 3 | p01600 |
+| Penuel | 3 | raleigh 3 | p02509 |
 | Perdiccas | 3 | raleigh 3 | p00650 |
+| Perhaps | 3 | raleigh 3 | p01635 |
 | Persons | 3 | raleigh 3 | p00045 |
 | Petrus | 3 | raleigh 3 | p02095 |
 | Peucer | 3 | raleigh 3 | p01095 |
 | Phalegs | 3 | raleigh 3 | p01366 |
 | Pharisees | 3 | raleigh 3 | p01474 |
 | Philosophi | 3 | raleigh 3 | p00805 |
-| Phul | 3 | raleigh 3 | p02268 |
+| Phisician | 3 | raleigh 3 | p02541 |
 | Phunon | 3 | raleigh 3 | p01892 |
-| Physician | 3 | raleigh 3 | p00852 |
 | Pictures | 3 | raleigh 3 | p01454 |
 | Pilgrims | 3 | prose 2, raleigh 1 | p01342 |
 | Pillars | 3 | raleigh 3 | p00930 |
@@ -4883,7 +5332,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Playne | 3 | raleigh 3 | p01206 |
 | Pleiades | 3 | raleigh 3 | p01963 |
 | Pliny | 3 | prose 3 | note:event:founding-of-utica:description |
-| Plough | 3 | raleigh 3 | p01986 |
 | Plurall | 3 | raleigh 3 | p00965 |
 | Poetae | 3 | raleigh 3 | p01124 |
 | Policie | 3 | raleigh 3 | p01622 |
@@ -4896,6 +5344,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Prester | 3 | raleigh 3 | p00985 |
 | Printing | 3 | raleigh 3 | p01164 |
 | Progenitors | 3 | raleigh 3 | p02214 |
+| Prophetesse | 3 | raleigh 3 | p02495 |
 | Protestants | 3 | raleigh 3 | p01587 |
 | Prouence | 3 | prose 1, raleigh 2 | p00020 |
 | Prouinciall | 3 | raleigh 3 | p01549 |
@@ -4903,17 +5352,16 @@ A name here is a capitalized word of at least three letters, not a function word
 | Punic | 3 | prose 3 | note:event:punic-wars:summary |
 | Pydna | 3 | raleigh 3 | p00666 |
 | Pyramid | 3 | prose 3 | note:person:cheops:summary |
-| Pythagor | 3 | raleigh 3 | p02183 |
+| Pyrates | 3 | raleigh 3 | p02550 |
 | Python | 3 | raleigh 3 | p01112 |
 | Quae | 3 | raleigh 3 | p00808 |
 | Quantum | 3 | raleigh 3 | p01430 |
+| Quia | 3 | raleigh 3 | p02433 |
 | Quid | 3 | raleigh 3 | p00868 |
 | Quos | 3 | raleigh 3 | p01447 |
 | Rabbath | 3 | raleigh 3 | p02375 |
-| Rabbines | 3 | raleigh 3 | p00912 |
 | Rages | 3 | raleigh 3 | p02270 |
 | Raine | 3 | raleigh 3 | p01191 |
-| Ramatha | 3 | prose 1, raleigh 2 | p02374 |
 | Rauens | 3 | raleigh 3 | p02230 |
 | Realme | 3 | raleigh 3 | p00018 |
 | Rebellion | 3 | prose 1, raleigh 2 | note:event:wyatt-rebellion:summary |
@@ -4930,7 +5378,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Riches | 3 | raleigh 3 | p00885 |
 | Riddles | 3 | raleigh 3 | p00844 |
 | Rithma | 3 | raleigh 3 | p01876 |
-| Rockes | 3 | raleigh 3 | p00891 |
 | Sabbath | 3 | raleigh 3 | p01876 |
 | Saffa | 3 | prose 2, raleigh 1 | p02128 |
 | San | 3 | prose 3 | note:person:girolamo-savonarola:summary |
@@ -4945,10 +5392,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Scholler | 3 | raleigh 3 | p01091 |
 | Searchers | 3 | raleigh 3 | p01057 |
 | Sebaste | 3 | raleigh 3 | p02226 |
+| Sechem | 3 | raleigh 3 | p02532 |
 | Sectators | 3 | raleigh 3 | p00865 |
 | Selah | 3 | raleigh 3 | p01296 |
 | Seleucis | 3 | raleigh 3 | p01231 |
 | Semiscasac | 3 | raleigh 3 | p01332 |
+| September | 3 | prose 1, raleigh 2 | p02542 |
 | Seruants | 3 | raleigh 3 | p01495 |
 | Setim | 3 | raleigh 3 | p02344 |
 | Shanghai | 3 | prose 3 | note:event:burns-moves-to-shanghai:summary |
@@ -4958,22 +5407,26 @@ A name here is a capitalized word of at least three letters, not a function word
 | Shiloh | 3 | prose 3 | note:person:eli:summary |
 | Shirion | 3 | raleigh 3 | p01903 |
 | Shur | 3 | raleigh 3 | p02302 |
+| Sic | 3 | raleigh 3 | p02559 |
 | Sichor | 3 | raleigh 3 | p00985 |
-| Sicyonia | 3 | raleigh 3 | p01650 |
+| Sicilie | 3 | prose 1, raleigh 2 | p02528 |
 | Siddim | 3 | raleigh 3 | p01600 |
 | Sierra | 3 | prose 3 | note:person:granville-sharp:summary |
 | Signes | 3 | raleigh 3 | p01010 |
 | Siluer | 3 | raleigh 3 | p01259 |
-| Sion | 3 | raleigh 3 | p00931 |
 | Slavery | 3 | prose 3 | note:person:john-wesley:summary |
 | Society | 3 | prose 3 | note:person:john-williams-missionary:summary |
 | Solarie | 3 | raleigh 3 | p00271 |
 | Soldans | 3 | raleigh 3 | p01624 |
+| Son | 3 | raleigh 3 | p02509 |
+| Sophister | 3 | prose 1, raleigh 2 | p02519 |
 | Sorek | 3 | prose 1, raleigh 2 | note:person:dalila:description |
+| Soueraigntie | 3 | raleigh 3 | p02532 |
 | Soules | 3 | raleigh 3 | p00880 |
 | Southerly | 3 | raleigh 3 | p01688 |
+| Southsayer | 3 | prose 2, raleigh 1 | p02522 |
 | Spain | 3 | prose 3 | note:event:council-of-toledo-589:summary |
-| Spaniard | 3 | raleigh 3 | p01392 |
+| Spartans | 3 | raleigh 3 | p02459 |
 | Spices | 3 | raleigh 3 | p00949 |
 | Stones | 3 | raleigh 3 | p02047 |
 | Strait | 3 | prose 1, raleigh 2 | p01382 |
@@ -4988,22 +5441,25 @@ A name here is a capitalized word of at least three letters, not a function word
 | Syri | 3 | raleigh 3 | p00822 |
 | Syro | 3 | raleigh 3 | p01344 |
 | Take | 3 | raleigh 3 | p01571 |
+| Tartar | 3 | prose 1, raleigh 2 | p02407 |
+| Tent | 3 | raleigh 3 | p01567 |
 | Testaments | 3 | prose 1, raleigh 2 | p01774 |
 | Thalmudists | 3 | raleigh 3 | p00931 |
 | Thanis | 3 | prose 2, raleigh 1 | note:person:anthonie:description |
 | Theman | 3 | raleigh 3 | p02216 |
 | Themistocles | 3 | raleigh 3 | p00541 |
 | Thoughts | 3 | prose 3 | note:person:john-wesley:summary |
+| Three | 3 | prose 1, raleigh 2 | p02571 |
 | Tigurine | 3 | raleigh 3 | p01258 |
 | Timaeo | 3 | raleigh 3 | p01124 |
 | Times | 3 | raleigh 3 | p00500 |
-| Towres | 3 | raleigh 3 | p01195 |
 | Transfiguration | 3 | prose 2, raleigh 1 | p02130 |
 | Treason | 3 | raleigh 3 | p01633 |
 | Treuer | 3 | prose 2, raleigh 1 | p02088 |
 | Tribulum | 3 | raleigh 3 | p02371 |
 | Trinidado | 3 | raleigh 3 | p01382 |
 | Troupe | 3 | raleigh 3 | p01418 |
+| Tsophim | 3 | raleigh 3 | p02437 |
 | Two | 3 | raleigh 3 | p02054 |
 | Tyrannie | 3 | raleigh 3 | p01401 |
 | Vae | 3 | raleigh 3 | p01277 |
@@ -5022,7 +5478,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Viret | 3 | prose 3 | note:event:viret-banished-from-france:summary |
 | Virgin | 3 | raleigh 3 | p02060 |
 | Virginia | 3 | prose 1, raleigh 2 | p01383 |
-| Vlysses | 3 | prose 1, raleigh 2 | p01965 |
+| Vnitie | 3 | prose 1, raleigh 2 | p02411 |
 | Vnwritten | 3 | raleigh 3 | p01725 |
 | Vrchoa | 3 | raleigh 3 | p01430 |
 | Uzziah | 3 | prose 3 | note:person:uzziah:summary |
@@ -5039,14 +5495,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Aarons | 2 | raleigh 2 | p01876 |
 | Aben | 2 | raleigh 2 | p01048 |
 | Aberavon | 2 | prose 2 | note:person:martyn-lloyd-jones:summary |
+| Absyrtides | 2 | raleigh 2 | p02528 |
 | Acad | 2 | raleigh 2 | p00990 |
 | Academikes | 2 | raleigh 2 | p00828 |
+| According | 2 | raleigh 2 | p02474 |
 | Achad | 2 | raleigh 2 | p01235 |
 | Achaeus | 2 | raleigh 2 | p00778 |
 | Acho | 2 | raleigh 2 | p02056 |
 | Acrabata | 2 | raleigh 2 | p02154 |
 | Acrabbim | 2 | raleigh 2 | p02312 |
+| Actes | 2 | raleigh 2 | p02406 |
 | Actors | 2 | raleigh 2 | p00021 |
+| Adada | 2 | raleigh 2 | p02411 |
 | Adamath | 2 | raleigh 2 | p00884 |
 | Adiabene | 2 | raleigh 2 | p01188 |
 | Admah | 2 | raleigh 2 | p01307 |
@@ -5055,23 +5515,22 @@ A name here is a capitalized word of at least three letters, not a function word
 | Adubens | 2 | raleigh 2 | p01943 |
 | Aduersitie | 2 | raleigh 2 | p00054 |
 | Adurbeigan | 2 | raleigh 2 | p00961 |
+| Aeea | 2 | prose 1, raleigh 1 | p02528 |
 | Aegaean | 2 | raleigh 2 | p01260 |
 | Aegeum | 2 | raleigh 2 | p01221 |
-| Aegina | 2 | raleigh 2 | p01083 |
 | Aegyptiorum | 2 | raleigh 2 | p01627 |
 | Aenon | 2 | raleigh 2 | p02149 |
 | Aequiuocation | 2 | raleigh 2 | p02001 |
 | Aethiopesse | 2 | raleigh 2 | p00182 |
-| Aetolian | 2 | raleigh 2 | p00783 |
 | Affection | 2 | raleigh 2 | p00072 |
 | Affections | 2 | raleigh 2 | p00003 |
 | Africans | 2 | raleigh 2 | p01979 |
+| Afterwards | 2 | raleigh 2 | p01206 |
 | Agenors | 2 | raleigh 2 | p02036 |
 | Agents | 2 | raleigh 2 | p00063 |
 | Agrippias | 2 | prose 1, raleigh 1 | note:person:agrippa-of-augustus:description |
 | Aialon | 2 | raleigh 2 | p02120 |
 | Alab | 2 | raleigh 2 | p02063 |
-| Alcinous | 2 | raleigh 2 | p01001 |
 | Alcuin | 2 | prose 2 | note:event:alcuin-abbot-of-tours:summary |
 | Alexandretta | 2 | raleigh 2 | p00949 |
 | Aliaco | 2 | raleigh 2 | p01128 |
@@ -5085,12 +5544,14 @@ A name here is a capitalized word of at least three letters, not a function word
 | Amalthea | 2 | raleigh 2 | p01084 |
 | Amanus | 2 | raleigh 2 | p01199 |
 | Amasaes | 2 | raleigh 2 | p02328 |
+| Amasia | 2 | raleigh 2 | p02445 |
 | Amathe | 2 | prose 1, raleigh 1 | note:person:hamathite:description |
 | Amathus | 2 | prose 1, raleigh 1 | p02388 |
-| Ambrosia | 2 | raleigh 2 | p01001 |
+| Amazonian | 2 | raleigh 2 | p01005 |
 | Amenemhat | 2 | prose 2 | note:person:mentuhotep-iv:summary |
 | Americas | 2 | prose 2 | note:person:christopher-columbus:summary |
 | Amnon | 2 | prose 2 | note:event:amnon-and-tamar:summary |
+| Amphitheater | 2 | raleigh 2 | p02514 |
 | Amraphels | 2 | raleigh 2 | p01600 |
 | Anatolia | 2 | prose 2 | note:event:sargon-against-tabal:summary |
 | Andraeas | 2 | raleigh 2 | p00960 |
@@ -5105,7 +5566,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Antiquity | 2 | raleigh 2 | p00013 |
 | Antonio | 2 | prose 2 | note:event:mission-san-antonio-de-valero:summary |
 | Apamea | 2 | raleigh 2 | p01328 |
-| Aphec | 2 | raleigh 2 | p02135 |
+| Aphidna | 2 | prose 1, raleigh 1 | p02542 |
 | Aphila | 2 | raleigh 2 | p02088 |
 | Aphileus | 2 | prose 1, raleigh 1 | p02088 |
 | Apollonij | 2 | raleigh 2 | p01632 |
@@ -5120,21 +5581,21 @@ A name here is a capitalized word of at least three letters, not a function word
 | Araxes | 2 | raleigh 2 | p01175 |
 | Araxis | 2 | raleigh 2 | p01242 |
 | Arbella | 2 | raleigh 2 | p00961 |
-| Arcadian | 2 | raleigh 2 | p01078 |
 | Arce | 2 | prose 1, raleigh 1 | p01321 |
 | Archbishopricke | 2 | raleigh 2 | p02129 |
-| Argonautes | 2 | raleigh 2 | p01230 |
 | Aria | 2 | raleigh 2 | p01287 |
 | Ariacae | 2 | raleigh 2 | p01180 |
+| Arion | 2 | raleigh 2 | p02550 |
 | Aristotelians | 2 | raleigh 2 | p00873 |
 | Arithmeticke | 2 | raleigh 2 | p01482 |
-| Armes | 2 | raleigh 2 | p02187 |
 | Arpad | 2 | prose 2 | note:person:adad-nirari-iii:summary |
+| Article | 2 | raleigh 2 | p02437 |
 | Artificer | 2 | raleigh 2 | p00059 |
 | Aruspices | 2 | raleigh 2 | p01491 |
 | Asaphim | 2 | raleigh 2 | p01488 |
 | Ascalonitae | 2 | raleigh 2 | p02292 |
 | Asdod | 2 | raleigh 2 | p02282 |
+| Asherites | 2 | raleigh 2 | p02032 |
 | Asiae | 2 | raleigh 2 | p01180 |
 | Assedim | 2 | raleigh 2 | p01328 |
 | Assyriorum | 2 | raleigh 2 | p01430 |
@@ -5146,7 +5607,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Atheniensium | 2 | raleigh 2 | p01118 |
 | Atho | 2 | raleigh 2 | p00942 |
 | Atilius | 2 | raleigh 2 | p00720 |
-| Atreus | 2 | prose 2 | note:event:atreus-games-with-heracles:summary |
 | Attendants | 2 | raleigh 2 | p02258 |
 | Auguration | 2 | raleigh 2 | p01142 |
 | Augures | 2 | raleigh 2 | p01491 |
@@ -5154,12 +5614,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Augustinus | 2 | raleigh 2 | p01587 |
 | Auranitis | 2 | raleigh 2 | p02402 |
 | Ausitis | 2 | raleigh 2 | p02399 |
+| Ausonia | 2 | raleigh 2 | p02528 |
+| Austrea | 2 | prose 1, raleigh 1 | p02406 |
 | Austria | 2 | raleigh 2 | p00043 |
 | Auxerre | 2 | prose 1, raleigh 1 | note:person:germanus-of-auxerre:summary |
 | Axe | 2 | raleigh 2 | p00865 |
 | Azan | 2 | prose 1, raleigh 1 | p02297 |
 | Azriyau | 2 | prose 2 | note:event:azriyau-rebels-against-tiglath-pileser-iii:summary |
 | Baalasor | 2 | prose 1, raleigh 1 | p02239 |
+| Baalberith | 2 | raleigh 2 | p02532 |
 | Baals | 2 | raleigh 2 | p02038 |
 | Bacon | 2 | prose 1, raleigh 1 | p01484 |
 | Bal | 2 | raleigh 2 | p02365 |
@@ -5178,6 +5641,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Belah | 2 | raleigh 2 | p02327 |
 | Belphegor | 2 | raleigh 2 | p01443 |
 | Belsephon | 2 | raleigh 2 | p01443 |
+| Ben | 2 | prose 1, raleigh 1 | note:person:ben-hadad-son-of-hazael:summary |
 | Beni | 2 | prose 2 | note:person:abisha:summary |
 | Beque | 2 | raleigh 2 | p00035 |
 | Betaramptha | 2 | raleigh 2 | p02369 |
@@ -5189,6 +5653,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Bit | 2 | prose 2 | note:event:sargon-fights-merodach-baladan-in-bit-yakin:summary |
 | Blacke | 2 | raleigh 2 | p01268 |
 | Blessed | 2 | raleigh 2 | p02217 |
+| Boat | 2 | raleigh 2 | p01223 |
 | Boats | 2 | raleigh 2 | p00538 |
 | Bodies | 2 | raleigh 2 | p00885 |
 | Bona | 2 | raleigh 2 | p01299 |
@@ -5198,6 +5663,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Bosphorus | 2 | raleigh 2 | p01221 |
 | Botrys | 2 | raleigh 2 | p02051 |
 | Boy | 2 | raleigh 2 | p01084 |
+| Bramble | 2 | raleigh 2 | p02533 |
 | Brazil | 2 | prose 2 | note:person:robert-reid-kalley:summary |
 | Bricke | 2 | raleigh 2 | p01222 |
 | Bring | 2 | raleigh 2 | p00907 |
@@ -5213,11 +5679,10 @@ A name here is a capitalized word of at least three letters, not a function word
 | Caiphas | 2 | raleigh 2 | p02075 |
 | Calcutta | 2 | prose 2 | note:event:carey-arrives-in-calcutta:summary |
 | Calfe | 2 | raleigh 2 | p01710 |
+| Calidon | 2 | prose 1, raleigh 1 | p02522 |
 | Caliphe | 2 | raleigh 2 | p01624 |
 | Callicrates | 2 | raleigh 2 | p00790 |
-| Calues | 2 | raleigh 2 | p02248 |
 | Campania | 2 | raleigh 2 | p01120 |
-| Campe | 2 | raleigh 2 | p01876 |
 | Canaans | 2 | raleigh 2 | p02034 |
 | Canatha | 2 | prose 1, raleigh 1 | p02100 |
 | Candia | 2 | raleigh 2 | p01201 |
@@ -5247,17 +5712,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Centurion | 2 | prose 1, raleigh 1 | p02165 |
 | Cepha | 2 | raleigh 2 | p00930 |
 | Cerberion | 2 | raleigh 2 | p01241 |
+| Ceres | 2 | raleigh 2 | p02480 |
 | Chalanne | 2 | raleigh 2 | p00949 |
 | Chaldaei | 2 | raleigh 2 | p01475 |
 | Chaldeans | 2 | raleigh 2 | p01979 |
 | Chaldoeorum | 2 | raleigh 2 | p01430 |
+| Chamatha | 2 | raleigh 2 | p02417 |
 | Chamber | 2 | raleigh 2 | p00038 |
 | Chammath | 2 | raleigh 2 | p02102 |
 | Chammon | 2 | raleigh 2 | p02073 |
 | Channell | 2 | raleigh 2 | p01692 |
-| Chappell | 2 | raleigh 2 | p02069 |
-| Chariot | 2 | raleigh 2 | p01692 |
 | Chartumim | 2 | raleigh 2 | p01489 |
+| Charybdis | 2 | raleigh 2 | p02529 |
 | Chatsar | 2 | raleigh 2 | p02402 |
 | Chatsor | 2 | raleigh 2 | p02314 |
 | Chatzar | 2 | raleigh 2 | p02305 |
@@ -5270,14 +5736,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Chorma | 2 | raleigh 2 | p02306 |
 | Chrisamensis | 2 | raleigh 2 | p01270 |
 | Christus | 2 | raleigh 2 | p01148 |
+| Chroniclers | 2 | raleigh 2 | p01044 |
+| Chronologicall | 2 | raleigh 2 | p01642 |
+| Chrysorrhoas | 2 | raleigh 2 | p02406 |
 | Chusea | 2 | raleigh 2 | p00990 |
+| Chymists | 2 | raleigh 2 | p02530 |
 | Chysamensis | 2 | raleigh 2 | p00930 |
 | Cilicians | 2 | raleigh 2 | p01430 |
 | Cimmerians | 2 | prose 1, raleigh 1 | note:person:ardys:summary |
 | Cinaei | 2 | raleigh 2 | p01323 |
 | Cio | 2 | raleigh 2 | p01252 |
-| Cios | 2 | raleigh 2 | p01252 |
 | Cisalpine | 2 | raleigh 2 | p00741 |
+| Citadell | 2 | raleigh 2 | p02439 |
 | City | 2 | prose 2 | note:person:augustine-of-hippo:summary |
 | Ciuitatibus | 2 | raleigh 2 | p00961 |
 | Cleanthes | 2 | raleigh 2 | p01095 |
@@ -5288,6 +5758,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Coeli | 2 | raleigh 2 | p00153 |
 | Coesaria | 2 | raleigh 2 | p02401 |
 | Collections | 2 | raleigh 2 | p01844 |
+| Collis | 2 | raleigh 2 | p02329 |
 | Comment | 2 | raleigh 2 | p01299 |
 | Commentary | 2 | raleigh 2 | p01896 |
 | Companion | 2 | raleigh 2 | p01012 |
@@ -5302,6 +5773,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Contracts | 2 | raleigh 2 | p01844 |
 | Contrariwise | 2 | raleigh 2 | p01587 |
 | Cook | 2 | prose 2 | note:event:cook-discovers-new-hebrides:summary |
+| Copie | 2 | raleigh 2 | p00985 |
 | Copies | 2 | raleigh 2 | p01299 |
 | Cor | 2 | raleigh 2 | p01791 |
 | Corazim | 2 | raleigh 2 | p02392 |
@@ -5310,33 +5782,35 @@ A name here is a capitalized word of at least three letters, not a function word
 | Coruinus | 2 | prose 1, raleigh 1 | note:person:budaeus:description |
 | Cosen | 2 | raleigh 2 | p00038 |
 | Cosmographer | 2 | raleigh 2 | p01603 |
-| Counsaile | 2 | raleigh 2 | p01871 |
 | Counsailors | 2 | raleigh 2 | p01624 |
+| Counsell | 2 | prose 1, raleigh 1 | p02522 |
 | Counseller | 2 | raleigh 2 | p01012 |
 | Counsellor | 2 | raleigh 2 | p01624 |
+| Cousin | 2 | prose 1, raleigh 1 | note:person:achsah:description |
+| Cow | 2 | raleigh 2 | p01191 |
+| Cowe | 2 | prose 1, raleigh 1 | p02514 |
 | Cradles | 2 | raleigh 2 | p00038 |
 | Creatorem | 2 | raleigh 2 | p01482 |
 | Creet | 2 | raleigh 2 | p01079 |
 | Creta | 2 | raleigh 2 | p01084 |
 | Crocodile | 2 | raleigh 2 | p01986 |
+| Crocodiles | 2 | raleigh 2 | p02539 |
 | Crowes | 2 | raleigh 2 | p01496 |
 | Cui | 2 | raleigh 2 | p00828 |
-| Cushan | 2 | prose 2 | note:event:oppression-of-cushan-rishathaim:summary |
 | Cyclades | 2 | raleigh 2 | p01258 |
 | Cyclopes | 2 | raleigh 2 | p01385 |
 | Cymbals | 2 | raleigh 2 | p01084 |
 | Cymmerians | 2 | raleigh 2 | p01241 |
-| Cypres | 2 | raleigh 2 | p01146 |
 | Cyprian | 2 | prose 1, raleigh 1 | p00824 |
 | Cyrill | 2 | raleigh 2 | p01642 |
 | Daemones | 2 | raleigh 2 | p00877 |
 | Dakhamunzu | 2 | prose 2 | note:event:death-of-suppiluliuma-i:summary |
 | Dale | 2 | raleigh 2 | p02353 |
-| Damascens | 2 | raleigh 2 | p02228 |
 | Dammes | 2 | raleigh 2 | p00898 |
 | Danubius | 2 | raleigh 2 | p00978 |
 | Dart | 2 | raleigh 2 | p01986 |
 | Data | 2 | raleigh 2 | p01796 |
+| Daulis | 2 | raleigh 2 | p02477 |
 | Dealmarach | 2 | prose 1, raleigh 1 | note:person:gestelius:description |
 | Decapolitana | 2 | raleigh 2 | p02100 |
 | December | 2 | raleigh 2 | p01676 |
@@ -5345,7 +5819,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Deepe | 2 | raleigh 2 | p00818 |
 | Deere | 2 | raleigh 2 | p01737 |
 | Deified | 2 | raleigh 2 | p01447 |
-| Delphos | 2 | raleigh 2 | p01098 |
 | Delubrum | 2 | raleigh 2 | p01979 |
 | Descent | 2 | raleigh 2 | p01413 |
 | Deuteron | 2 | raleigh 2 | p01887 |
@@ -5355,16 +5828,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Dij | 2 | raleigh 2 | p01455 |
 | Dijs | 2 | raleigh 2 | p01979 |
 | Diocaesaria | 2 | raleigh 2 | p02128 |
-| Diomedes | 2 | raleigh 2 | p01520 |
 | Diphath | 2 | prose 2 | note:person:riphath:summary |
 | Dis | 2 | raleigh 2 | p01233 |
 | Dispensation | 2 | raleigh 2 | p00043 |
+| Diuell | 2 | raleigh 2 | p02551 |
 | Diuina | 2 | raleigh 2 | p02017 |
 | Diuinations | 2 | raleigh 2 | p01496 |
 | Diuinity | 2 | raleigh 2 | p00808 |
 | Dobara | 2 | prose 2 | note:person:menes-abdul-noor:summary |
 | Document | 2 | prose 2 | note:event:admonitio-generalis:summary |
-| Dodona | 2 | raleigh 2 | p01261 |
 | Dogges | 2 | raleigh 2 | p02221 |
 | Dogs | 2 | raleigh 2 | p01737 |
 | Dohnavur | 2 | prose 2 | note:person:amy-carmichael:summary |
@@ -5392,20 +5864,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Edene | 2 | raleigh 2 | p00965 |
 | Edictum | 2 | raleigh 2 | p01844 |
 | Editions | 2 | raleigh 2 | p02029 |
-| Edomite | 2 | raleigh 2 | p02216 |
 | Edrehi | 2 | raleigh 2 | p02391 |
 | Eduxit | 2 | raleigh 2 | p01118 |
 | Ego | 2 | raleigh 2 | p01091 |
 | Egression | 2 | raleigh 2 | p01992 |
+| Ekron | 2 | raleigh 2 | p02465 |
 | Elamite | 2 | prose 2 | note:event:sennacherib-against-hirimma-and-hararatum:summary |
-| Elath | 2 | raleigh 2 | p01259 |
+| Electra | 2 | raleigh 2 | p02551 |
 | Elephants | 2 | raleigh 2 | p01259 |
 | Eleutheropolis | 2 | raleigh 2 | p02319 |
-| Eliezer | 2 | prose 1, raleigh 1 | p01361 |
 | Ellipi | 2 | prose 2 | note:event:assyrian-nobles-against-ellipi:summary |
 | Eltekah | 2 | prose 2 | note:event:battle-of-eltekah:summary |
 | Embassador | 2 | raleigh 2 | p00793 |
-| Embassadour | 2 | raleigh 2 | p00047 |
 | Embassage | 2 | raleigh 2 | p02343 |
 | Embassages | 2 | raleigh 2 | p00606 |
 | Embassie | 2 | raleigh 2 | p01563 |
@@ -5415,13 +5885,17 @@ A name here is a capitalized word of at least three letters, not a function word
 | Empyrean | 2 | raleigh 2 | p00813 |
 | Engaddi | 2 | raleigh 2 | p02329 |
 | Ephesus | 2 | prose 1, raleigh 1 | note:event:death-of-the-apostle-john:summary |
+| Ephod | 2 | raleigh 2 | p02511 |
+| Ephra | 2 | raleigh 2 | p02150 |
 | Epist | 2 | prose 1, raleigh 1 | p02396 |
 | Ergo | 2 | raleigh 2 | p01854 |
+| Eridanus | 2 | raleigh 2 | p02527 |
 | Erik | 2 | prose 2 | note:event:erik-the-red-in-greenland:summary |
 | Erishum | 2 | prose 2 | note:event:reign-of-erishum-i:summary |
 | Erra | 2 | prose 2 | note:event:death-of-ibbi-sin:summary |
 | Esar | 2 | raleigh 2 | p00958 |
 | Escouedo | 2 | raleigh 2 | p00043 |
+| Esd | 2 | raleigh 2 | p02429 |
 | Esdrelon | 2 | raleigh 2 | p02136 |
 | Ethiopians | 2 | prose 2 | note:person:cush:description |
 | Euboea | 2 | raleigh 2 | p00783 |
@@ -5445,6 +5919,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Fiction | 2 | raleigh 2 | p01070 |
 | Fiftly | 2 | raleigh 2 | p01650 |
 | Figure | 2 | raleigh 2 | p01449 |
+| Flaunders | 2 | prose 1, raleigh 1 | p02406 |
 | Fleete | 2 | raleigh 2 | p00975 |
 | Followers | 2 | raleigh 2 | p00942 |
 | Fomorian | 2 | prose 2 | note:event:battle-of-conaings-tower:summary |
@@ -5460,10 +5935,10 @@ A name here is a capitalized word of at least three letters, not a function word
 | Fowle | 2 | raleigh 2 | p01385 |
 | Frame | 2 | raleigh 2 | p01150 |
 | Franks | 2 | prose 2 | note:person:charlemagne:summary |
+| Fraunce | 2 | prose 1, raleigh 1 | p02406 |
 | Free | 2 | raleigh 2 | p01734 |
 | Friends | 2 | raleigh 2 | p02179 |
 | Frisians | 2 | prose 2 | note:person:boniface:summary |
-| Fruit | 2 | raleigh 2 | p01222 |
 | Fuego | 2 | prose 2 | note:person:allen-gardiner:summary |
 | Fuit | 2 | raleigh 2 | p01025 |
 | Gabala | 2 | raleigh 2 | p02071 |
@@ -5474,10 +5949,11 @@ A name here is a capitalized word of at least three letters, not a function word
 | Gal | 2 | prose 2 | note:event:abraham-enters-canaan:summary |
 | Galgal | 2 | raleigh 2 | p02168 |
 | Gallic | 2 | prose 2 | note:person:germanus-of-auxerre:summary |
+| Gallim | 2 | raleigh 2 | p02350 |
 | Gallo | 2 | raleigh 2 | p01241 |
 | Gamala | 2 | raleigh 2 | p02389 |
-| Garizim | 2 | prose 1, raleigh 1 | p02047 |
 | Garment | 2 | raleigh 2 | p02094 |
+| Garments | 2 | raleigh 2 | p01882 |
 | Garrisons | 2 | raleigh 2 | p02270 |
 | Gassaria | 2 | raleigh 2 | p01177 |
 | Gaugamela | 2 | prose 2 | note:event:battle-of-gaugamela:summary |
@@ -5487,6 +5963,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Gedera | 2 | raleigh 2 | p02307 |
 | Gederothaima | 2 | raleigh 2 | p02307 |
 | Gedor | 2 | raleigh 2 | p02307 |
+| Geliloth | 2 | raleigh 2 | p02432 |
 | Gene | 2 | raleigh 2 | p02302 |
 | General | 2 | prose 1, raleigh 1 | note:event:national-covenant:summary |
 | Geneuan | 2 | raleigh 2 | p01975 |
@@ -5499,16 +5976,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Geometrie | 2 | raleigh 2 | p01981 |
 | Gergeseus | 2 | raleigh 2 | p01319 |
 | Gergessa | 2 | raleigh 2 | p02391 |
+| Germanes | 2 | raleigh 2 | p02551 |
 | Gesire | 2 | raleigh 2 | p00962 |
 | Giantly | 2 | raleigh 2 | p01153 |
+| Gibhon | 2 | raleigh 2 | p02439 |
 | Gibraltar | 2 | prose 1, raleigh 1 | p01204 |
-| Gileadite | 2 | prose 2 | note:event:jair-judges-israel:summary |
 | Gilhead | 2 | raleigh 2 | p02336 |
 | Gindareni | 2 | raleigh 2 | p01362 |
 | Giza | 2 | prose 2 | note:event:end-of-giza-pyramid-age:summary |
 | Glagolitic | 2 | prose 2 | note:person:cyril-the-missionary:summary |
 | Glocester | 2 | raleigh 2 | p00020 |
 | Glosse | 2 | raleigh 2 | p01526 |
+| Gobah | 2 | raleigh 2 | p00358 |
 | Godly | 2 | raleigh 2 | p02373 |
 | Goe | 2 | raleigh 2 | p01642 |
 | Goes | 2 | raleigh 2 | p01268 |
@@ -5519,6 +5998,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Gomorra | 2 | raleigh 2 | p01146 |
 | Gouernor | 2 | prose 1, raleigh 1 | p00877 |
 | Graeciam | 2 | raleigh 2 | p01109 |
+| Grammarian | 2 | raleigh 2 | p02459 |
 | Granuile | 2 | raleigh 2 | p00043 |
 | Grashoppers | 2 | raleigh 2 | p01873 |
 | Grasse | 2 | raleigh 2 | p01057 |
@@ -5532,7 +6012,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Haddon | 2 | raleigh 2 | p00958 |
 | Hag | 2 | prose 2 | note:event:temple-rebuilding-resumed:summary |
 | Hagra | 2 | raleigh 2 | p00982 |
+| Hai | 2 | raleigh 2 | p01206 |
 | Haile | 2 | raleigh 2 | p01669 |
+| Hall | 2 | prose 1, raleigh 1 | p02498 |
 | Halzi | 2 | prose 2 | note:event:sennacherib-campaign-to-halzi:summary |
 | Han | 2 | prose 2 | note:event:han-dynasty:summary |
 | Hand | 2 | raleigh 2 | p01866 |
@@ -5546,6 +6028,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hauing | 2 | raleigh 2 | p02224 |
 | Hawaiian | 2 | prose 2 | note:person:obookiah:summary |
 | Hawke | 2 | raleigh 2 | p01986 |
+| Head | 2 | raleigh 2 | p01876 |
 | Heardsmen | 2 | raleigh 2 | p01222 |
 | Heathenish | 2 | raleigh 2 | p02150 |
 | Heathenisme | 2 | raleigh 2 | p01096 |
@@ -5555,12 +6038,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Helon | 2 | raleigh 2 | p02117 |
 | Henan | 2 | raleigh 2 | p02402 |
 | Henochia | 2 | raleigh 2 | p01070 |
+| Heraclidae | 2 | raleigh 2 | p02503 |
 | Herceios | 2 | raleigh 2 | p01069 |
 | Heresie | 2 | raleigh 2 | p01511 |
 | Heretikes | 2 | raleigh 2 | p01046 |
 | Hereunto | 2 | raleigh 2 | p02215 |
 | Hero | 2 | raleigh 2 | p01688 |
+| Herodian | 2 | raleigh 2 | p02451 |
 | Heroes | 2 | raleigh 2 | p01070 |
+| Heroical | 2 | prose 1, raleigh 1 | p02479 |
 | Herrnhut | 2 | prose 2 | note:person:zinzendorf:summary |
 | Hethites | 2 | raleigh 2 | p01313 |
 | Hetruria | 2 | raleigh 2 | p01120 |
@@ -5580,6 +6066,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Horims | 2 | raleigh 2 | p02375 |
 | Hornet | 2 | raleigh 2 | p01986 |
 | Hornets | 2 | raleigh 2 | p01443 |
+| Hos | 2 | raleigh 2 | p02430 |
 | Hou | 2 | prose 2 | note:event:persecution-ends-in-china-705:summary |
 | Houses | 2 | raleigh 2 | p01914 |
 | Housholds | 2 | raleigh 2 | p01404 |
@@ -5591,6 +6078,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hyrcania | 2 | raleigh 2 | p01247 |
 | Hystaspes | 2 | prose 1, raleigh 1 | note:person:darius-i:summary |
 | Iabesh | 2 | prose 1, raleigh 1 | p02150 |
+| Iabins | 2 | raleigh 2 | p02497 |
 | Iahaz | 2 | raleigh 2 | p01903 |
 | Iain | 2 | raleigh 2 | p01136 |
 | Iamnia | 2 | raleigh 2 | p02278 |
@@ -5604,6 +6092,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Iceland | 2 | prose 2 | note:person:olaf-tryggvason:summary |
 | Idaea | 2 | raleigh 2 | p00876 |
 | Ideo | 2 | raleigh 2 | p01958 |
+| Idolls | 2 | raleigh 2 | p02047 |
 | Idumaean | 2 | prose 1, raleigh 1 | p02247 |
 | Jeconiah | 2 | prose 2 | note:event:josiah-anoints-jeconiah:summary |
 | Iehoiada | 2 | raleigh 2 | p00437 |
@@ -5626,9 +6115,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Instrument | 2 | raleigh 2 | p01115 |
 | Insulam | 2 | raleigh 2 | p00962 |
 | Interpreter | 2 | raleigh 2 | p01176 |
-| Interregnum | 2 | prose 2 | note:person:zachariah-king-of-israel:summary |
 | Inuentor | 2 | raleigh 2 | p01970 |
 | Inuocation | 2 | raleigh 2 | p01508 |
+| Iolcus | 2 | prose 1, raleigh 1 | p02522 |
 | Ioppa | 2 | raleigh 2 | p00930 |
 | Iosep | 2 | raleigh 2 | p02116 |
 | Iotapata | 2 | raleigh 2 | p02100 |
@@ -5642,6 +6131,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Isboseth | 2 | raleigh 2 | p00392 |
 | Ishbi | 2 | prose 2 | note:event:death-of-ibbi-sin:summary |
 | Islam | 2 | prose 2 | note:person:muhammad:summary |
+| Israeli | 2 | raleigh 2 | p02559 |
 | Italus | 2 | raleigh 2 | p01018 |
 | Itjtawy | 2 | prose 2 | note:event:founding-of-itjtawy:summary |
 | Iturea | 2 | raleigh 2 | p01328 |
@@ -5653,6 +6143,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Iunoes | 2 | raleigh 2 | p01443 |
 | Iustorum | 2 | raleigh 2 | p01895 |
 | KAM | 2 | raleigh 2 | p01627 |
+| Karkor | 2 | raleigh 2 | p02509 |
 | Karnaim | 2 | raleigh 2 | p01057 |
 | Kasr | 2 | prose 2 | note:person:menes-abdul-noor:summary |
 | Kedarens | 2 | raleigh 2 | p01247 |
@@ -5676,17 +6167,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Laeniticum | 2 | prose 1, raleigh 1 | p01688 |
 | Lamentation | 2 | raleigh 2 | p02243 |
 | Lamian | 2 | raleigh 2 | p00649 |
+| Lapythae | 2 | raleigh 2 | p02531 |
 | Larnax | 2 | raleigh 2 | p01966 |
 | Lasa | 2 | raleigh 2 | p02343 |
 | Lasha | 2 | raleigh 2 | p01307 |
 | Latin | 2 | prose 2 | note:person:vaheb:description |
-| Lawe | 2 | raleigh 2 | p01781 |
 | Leaden | 2 | raleigh 2 | p00051 |
 | Learned | 2 | raleigh 2 | p01439 |
 | Learning | 2 | raleigh 2 | p02183 |
 | Leauing | 2 | raleigh 2 | p00844 |
 | Legends | 2 | raleigh 2 | p00137 |
 | Legio | 2 | raleigh 2 | p02128 |
+| Lemnos | 2 | raleigh 2 | p01191 |
 | Leontis | 2 | raleigh 2 | p02075 |
 | Leptis | 2 | raleigh 2 | p02220 |
 | Letter | 2 | prose 1, raleigh 1 | note:event:festal-letter-39:summary |
@@ -5705,9 +6197,11 @@ A name here is a capitalized word of at least three letters, not a function word
 | Louis | 2 | prose 2 | note:event:execution-of-louis-xvi:summary |
 | Lucius | 2 | prose 1, raleigh 1 | p00784 |
 | Lybies | 2 | raleigh 2 | p01338 |
-| Lycus | 2 | raleigh 2 | p02075 |
+| Lycia | 2 | raleigh 2 | p02490 |
+| Lycians | 2 | raleigh 2 | p02490 |
 | Lyda | 2 | raleigh 2 | p01338 |
 | Lydi | 2 | raleigh 2 | p01338 |
+| Lylibaeum | 2 | prose 1, raleigh 1 | p02528 |
 | Lysanij | 2 | raleigh 2 | p02088 |
 | Lystra | 2 | prose 2 | note:event:paul-stoned-at-lystra:summary |
 | Macau | 2 | prose 2 | note:person:william-milne:summary |
@@ -5720,6 +6214,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Magistratus | 2 | raleigh 2 | p01845 |
 | Magna | 2 | prose 1, raleigh 1 | p01847 |
 | Magni | 2 | raleigh 2 | p00054 |
+| Mahometans | 2 | raleigh 2 | p02408 |
 | Maiestey | 2 | raleigh 2 | p00029 |
 | Maijm | 2 | raleigh 2 | p00839 |
 | Maioma | 2 | prose 1, raleigh 1 | note:person:constance-son-of-constantine:description |
@@ -5743,10 +6238,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Martyris | 2 | raleigh 2 | p02231 |
 | Masons | 2 | raleigh 2 | p02201 |
 | Massachusetts | 2 | prose 2 | note:person:john-eliot:summary |
+| Mat | 2 | raleigh 2 | p02437 |
 | Materialls | 2 | raleigh 2 | p02201 |
-| Materials | 2 | raleigh 2 | p01025 |
 | Maternall | 2 | raleigh 2 | p01915 |
-| Mathematicall | 2 | raleigh 2 | p01980 |
 | Mathematickes | 2 | raleigh 2 | p01506 |
 | Mazica | 2 | raleigh 2 | p01231 |
 | Mecasphim | 2 | raleigh 2 | p01486 |
@@ -5757,6 +6251,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Melissus | 2 | raleigh 2 | p00058 |
 | Memory | 2 | raleigh 2 | p00858 |
 | Mengrelia | 2 | raleigh 2 | p01229 |
+| Mercie | 2 | raleigh 2 | p02553 |
 | Meron | 2 | raleigh 2 | p02121 |
 | Meschech | 2 | raleigh 2 | p01242 |
 | Metall | 2 | raleigh 2 | p01029 |
@@ -5766,12 +6261,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Metropolitane | 2 | raleigh 2 | p00961 |
 | Micah | 2 | prose 2 | note:event:micahs-priest-and-the-danites:summary |
 | Michael | 2 | raleigh 2 | p01046 |
+| Micmas | 2 | raleigh 2 | p02440 |
 | Middlesex | 2 | raleigh 2 | p01602 |
 | Mightie | 2 | raleigh 2 | p02231 |
 | Mihi | 2 | raleigh 2 | p01836 |
 | Míl | 2 | prose 2 | note:event:milesian-conquest-of-ireland:summary |
 | Milesians | 2 | prose 2 | note:event:milesian-conquest-of-ireland:summary |
 | Milne | 2 | prose 2 | note:event:baptism-of-cai-luxing:summary |
+| Minnith | 2 | raleigh 2 | p02375 |
+| Minotaur | 2 | raleigh 2 | p02538 |
 | Minyada | 2 | raleigh 2 | p00931 |
 | Minyadam | 2 | raleigh 2 | p00931 |
 | Misor | 2 | raleigh 2 | p02343 |
@@ -5780,12 +6278,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Modin | 2 | raleigh 2 | p02286 |
 | Moeander | 2 | raleigh 2 | p01188 |
 | Moeris | 2 | prose 2 | note:event:death-of-moeris:summary |
+| Molossi | 2 | raleigh 2 | p02476 |
+| Molossians | 2 | raleigh 2 | p02476 |
 | Monk | 2 | prose 2 | note:person:anskar:summary |
 | Monsters | 2 | raleigh 2 | p01976 |
 | Montanists | 2 | prose 2 | note:person:tertullian:summary |
 | Montes | 2 | raleigh 2 | p00163 |
 | Montfort | 2 | raleigh 2 | p02069 |
 | Moravia | 2 | prose 2 | note:person:methodius:summary |
+| Morea | 2 | raleigh 2 | p01287 |
 | Mores | 2 | raleigh 2 | p01831 |
 | Morning | 2 | raleigh 2 | p01084 |
 | Moueable | 2 | raleigh 2 | p00840 |
@@ -5800,11 +6301,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Muscouia | 2 | raleigh 2 | p01180 |
 | Muscouians | 2 | raleigh 2 | p01180 |
 | Muslim | 2 | prose 2 | note:event:battle-of-tours:summary |
+| Mycenaean | 2 | prose 2 | note:person:hippodamia:description |
 | Naar | 2 | raleigh 2 | p02075 |
 | Nabathaei | 2 | raleigh 2 | p01914 |
 | Nagasaki | 2 | prose 2 | note:event:atomic-bombings:summary |
 | Nahalal | 2 | raleigh 2 | p02129 |
 | Nahar | 2 | raleigh 2 | p00968 |
+| Naioth | 2 | raleigh 2 | p02239 |
 | Narbata | 2 | prose 1, raleigh 1 | p02170 |
 | Nauarre | 2 | raleigh 2 | p00040 |
 | Nauigators | 2 | raleigh 2 | p01259 |
@@ -5814,16 +6317,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Neapolis | 2 | raleigh 2 | p02153 |
 | Necessity | 2 | raleigh 2 | p00073 |
 | Neck | 2 | raleigh 2 | p00035 |
-| Nectar | 2 | raleigh 2 | p01001 |
 | Neesima | 2 | prose 2 | note:event:neesima-arrives-in-boston:summary |
 | Nemed | 2 | prose 2 | note:event:nemed-colonizes-ireland:summary |
 | Nemedians | 2 | prose 2 | note:event:battle-of-conaings-tower:summary |
 | Nemo | 2 | raleigh 2 | p01857 |
 | Nemrim | 2 | raleigh 2 | p02353 |
-| Nephthalim | 2 | raleigh 2 | p02102 |
 | Nicene | 2 | raleigh 2 | p01676 |
 | Nicolaus | 2 | raleigh 2 | p02292 |
 | Nicopolis | 2 | raleigh 2 | p01303 |
+| Nightingale | 2 | prose 1, raleigh 1 | p02477 |
 | Nineue | 2 | prose 1, raleigh 1 | note:person:asshur:description |
 | Niniuen | 2 | raleigh 2 | p01430 |
 | Niniues | 2 | raleigh 2 | p00961 |
@@ -5836,7 +6338,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Northermost | 2 | raleigh 2 | p02029 |
 | Northumberland | 2 | prose 1, raleigh 1 | p02373 |
 | Nulla | 2 | raleigh 2 | p00876 |
-| Nurse | 2 | raleigh 2 | p02100 |
 | Nurses | 2 | raleigh 2 | p01137 |
 | Oake | 2 | prose 1, raleigh 1 | p02329 |
 | Oakes | 2 | raleigh 2 | p02386 |
@@ -5844,7 +6345,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Obseruations | 2 | raleigh 2 | p00302 |
 | Oceanum | 2 | raleigh 2 | p01350 |
 | Odolla | 2 | raleigh 2 | p02316 |
+| Odrysae | 2 | raleigh 2 | p02477 |
 | Oenotria | 2 | raleigh 2 | p01120 |
+| Offerings | 2 | raleigh 2 | p02448 |
 | Office | 2 | raleigh 2 | p00882 |
 | Offices | 2 | raleigh 2 | p01413 |
 | Okes | 2 | raleigh 2 | p01057 |
@@ -5871,12 +6374,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Otris | 2 | raleigh 2 | p01430 |
 | Oxen | 2 | raleigh 2 | p01137 |
 | Pacific | 2 | prose 2 | note:person:james-cook:summary |
+| Palmes | 2 | raleigh 2 | p02430 |
 | Palmirena | 2 | raleigh 2 | p00949 |
 | Pan | 2 | raleigh 2 | p01511 |
 | Panama | 2 | raleigh 2 | p01382 |
+| Pandions | 2 | prose 1, raleigh 1 | p02477 |
 | Paneas | 2 | raleigh 2 | p02094 |
 | Panionic | 2 | prose 2 | note:event:first-panionia:summary |
-| Paris | 2 | prose 2 | note:event:denis-in-paris:summary |
+| Paradoxe | 2 | raleigh 2 | p02216 |
+| Parchment | 2 | raleigh 2 | p01413 |
 | Paroponisus | 2 | raleigh 2 | p01199 |
 | Parthorum | 2 | raleigh 2 | p00961 |
 | Parts | 2 | prose 2 | note:person:bali-mazer:description |
@@ -5885,6 +6391,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Pastorage | 2 | raleigh 2 | p01029 |
 | Paternitie | 2 | raleigh 2 | p01423 |
 | Patmos | 2 | prose 2 | note:event:john-banished-to-patmos:summary |
+| Patriarches | 2 | raleigh 2 | p01563 |
 | Patris | 2 | raleigh 2 | p01470 |
 | Pearle | 2 | raleigh 2 | p00977 |
 | Pedigree | 2 | raleigh 2 | p01542 |
@@ -5892,8 +6399,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Pelegs | 2 | raleigh 2 | p01168 |
 | Penultimate | 2 | prose 2 | note:person:merenre-ii:summary |
 | Peres | 2 | raleigh 2 | p00043 |
-| Perhaps | 2 | raleigh 2 | p01635 |
+| Peripateticks | 2 | prose 1, raleigh 1 | note:person:lucretius:description |
 | Peripatetikes | 2 | raleigh 2 | p00880 |
+| Perizites | 2 | raleigh 2 | p01704 |
 | Persiae | 2 | raleigh 2 | p00915 |
 | Persicae | 2 | raleigh 2 | p01492 |
 | Petubast | 2 | prose 2 | note:event:accession-of-petubast-i:summary |
@@ -5911,13 +6419,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Philosophiae | 2 | raleigh 2 | p01495 |
 | Philosophicall | 2 | raleigh 2 | p00057 |
 | Philosophorum | 2 | raleigh 2 | p01095 |
-| Phisician | 2 | raleigh 2 | p01040 |
 | Phocian | 2 | raleigh 2 | p00616 |
 | Phrase | 2 | raleigh 2 | p00080 |
 | Piedmont | 2 | prose 2 | note:event:innocent-viii-attacks-waldensians:summary |
 | Pieria | 2 | raleigh 2 | p01328 |
 | Pilgrimes | 2 | raleigh 2 | p02136 |
-| Pindarus | 2 | raleigh 2 | p01095 |
+| Pindus | 2 | raleigh 2 | p02535 |
 | Pisga | 2 | raleigh 2 | p02348 |
 | Pisgah | 2 | raleigh 2 | p02348 |
 | Pisi | 2 | raleigh 2 | p00980 |
@@ -5950,14 +6457,17 @@ A name here is a capitalized word of at least three letters, not a function word
 | Princely | 2 | raleigh 2 | p00029 |
 | Princess | 2 | prose 2 | note:person:queen-ahmose:summary |
 | Princeton | 2 | prose 2 | note:person:samuel-zwemer:summary |
+| Principalitie | 2 | raleigh 2 | p02411 |
+| Principalities | 2 | raleigh 2 | p02424 |
 | Principem | 2 | raleigh 2 | p01166 |
 | Principes | 2 | raleigh 2 | p01492 |
 | Prisoners | 2 | raleigh 2 | p00626 |
 | Promise | 2 | raleigh 2 | p02291 |
 | Promontorie | 2 | raleigh 2 | p01159 |
 | Prooeme | 2 | raleigh 2 | p01211 |
+| Prophecies | 2 | raleigh 2 | p02436 |
 | Prophesie | 2 | raleigh 2 | p01260 |
-| Proserpina | 2 | raleigh 2 | p01212 |
+| Propheticall | 2 | raleigh 2 | p01907 |
 | Protector | 2 | prose 1, raleigh 1 | note:person:oliver-cromwell:summary |
 | Proteus | 2 | raleigh 2 | p00898 |
 | Prudence | 2 | raleigh 2 | p01986 |
@@ -6028,6 +6538,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Schmidt | 2 | prose 2 | note:event:georg-schmidt-mission-ends:summary |
 | Scholiastes | 2 | raleigh 2 | p01632 |
 | Scotus | 2 | raleigh 2 | p00942 |
+| Scribes | 2 | raleigh 2 | p01474 |
 | Scriptur | 2 | raleigh 2 | p01575 |
 | Scriptura | 2 | raleigh 2 | p01206 |
 | Scytha | 2 | raleigh 2 | p01176 |
@@ -6035,15 +6546,17 @@ A name here is a capitalized word of at least three letters, not a function word
 | Scythis | 2 | raleigh 2 | p01175 |
 | Seacoast | 2 | raleigh 2 | p02136 |
 | Sebei | 2 | raleigh 2 | p02389 |
+| Sechemites | 2 | raleigh 2 | p02532 |
 | Sectatours | 2 | raleigh 2 | p00058 |
 | Seed | 2 | prose 2 | note:event:the-fall:summary |
+| Seigniories | 2 | raleigh 2 | p02436 |
 | Seignourie | 2 | raleigh 2 | p01392 |
 | Seleucid | 2 | prose 2 | note:person:antiochus-iv-epiphanes:summary |
+| Seleucidae | 2 | raleigh 2 | p02426 |
 | Seminary | 2 | prose 1, raleigh 1 | p00070 |
 | Senators | 2 | raleigh 2 | p02298 |
 | Senes | 2 | raleigh 2 | p01392 |
 | Sense | 2 | raleigh 2 | p00906 |
-| September | 2 | prose 1, raleigh 1 | p01674 |
 | Sepulchers | 2 | raleigh 2 | p01140 |
 | Sepulchres | 2 | raleigh 2 | p01414 |
 | Ser | 2 | raleigh 2 | p02117 |
@@ -6059,11 +6572,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Shophan | 2 | raleigh 2 | p02368 |
 | Shrub | 2 | raleigh 2 | p00049 |
 | Sibyls | 2 | raleigh 2 | p01454 |
-| Sic | 2 | raleigh 2 | p01418 |
 | Sicani | 2 | raleigh 2 | p01120 |
 | Sicyonians | 2 | raleigh 2 | p01118 |
 | Sidonian | 2 | prose 2 | note:event:first-colony-to-origo:summary |
-| Silo | 2 | raleigh 2 | p02237 |
 | Similitude | 2 | raleigh 2 | p00874 |
 | Simon | 2 | raleigh 2 | p02298 |
 | Simulachra | 2 | raleigh 2 | p01453 |
@@ -6080,30 +6591,30 @@ A name here is a capitalized word of at least three letters, not a function word
 | Smerdis | 2 | prose 2 | note:event:pseudo-smerdis-stops-the-temple:summary |
 | Smyrna | 2 | prose 2 | note:person:polycarp:summary |
 | Societie | 2 | raleigh 2 | p02003 |
+| Sodomites | 2 | raleigh 2 | p01761 |
 | Sogdiana | 2 | raleigh 2 | p01023 |
 | Soile | 2 | raleigh 2 | p00990 |
 | Sol | 2 | raleigh 2 | p00850 |
 | Sole | 2 | raleigh 2 | p00865 |
-| Son | 2 | raleigh 2 | p01112 |
 | Sons | 2 | raleigh 2 | p01084 |
-| Sophister | 2 | prose 1, raleigh 1 | p02088 |
 | Sophists | 2 | raleigh 2 | p01975 |
 | Soria | 2 | raleigh 2 | p00949 |
-| Soueraigntie | 2 | raleigh 2 | p02310 |
+| Soueraignetie | 2 | raleigh 2 | p01439 |
 | Souldier | 2 | raleigh 2 | p00710 |
+| Southeast | 2 | raleigh 2 | p01268 |
 | Southermost | 2 | raleigh 2 | p01419 |
-| Spartans | 2 | raleigh 2 | p00597 |
+| Spies | 2 | raleigh 2 | p02435 |
 | Spiritum | 2 | raleigh 2 | p00824 |
 | Stage | 2 | raleigh 2 | p00882 |
 | Stela | 2 | prose 2 | note:person:adad-nirari-iii:summary |
 | Stocke | 2 | raleigh 2 | p00961 |
-| Stone | 2 | raleigh 2 | p02036 |
 | Stony | 2 | raleigh 2 | p01240 |
 | Strabus | 2 | raleigh 2 | p00908 |
 | Streame | 2 | raleigh 2 | p00892 |
 | Strong | 2 | raleigh 2 | p01704 |
 | Studds | 2 | prose 2 | note:event:studd-in-india:summary |
 | Sua | 2 | prose 1, raleigh 1 | p02270 |
+| Successor | 2 | prose 1, raleigh 1 | p02490 |
 | Suhite | 2 | prose 1, raleigh 1 | p02216 |
 | Sumerian | 2 | prose 2 | note:person:naamah:description |
 | Suns | 2 | raleigh 2 | p00828 |
@@ -6115,10 +6626,11 @@ A name here is a capitalized word of at least three letters, not a function word
 | Supplications | 2 | raleigh 2 | p01407 |
 | Sure | 2 | raleigh 2 | p01222 |
 | Surrey | 2 | prose 1, raleigh 1 | p00026 |
+| Sus | 2 | raleigh 2 | p01961 |
 | Susan | 2 | raleigh 2 | p01351 |
-| Swallow | 2 | raleigh 2 | p01496 |
 | Sydon | 2 | raleigh 2 | p00985 |
 | Sympatheticall | 2 | raleigh 2 | p01466 |
+| Symplegades | 2 | raleigh 2 | p02525 |
 | Synochis | 2 | raleigh 2 | p01323 |
 | Syriae | 2 | raleigh 2 | p02174 |
 | Syros | 2 | raleigh 2 | p01344 |
@@ -6133,12 +6645,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Temanite | 2 | prose 1, raleigh 1 | p02215 |
 | Tems | 2 | raleigh 2 | p00990 |
 | Tenne | 2 | raleigh 2 | p00338 |
-| Tent | 2 | raleigh 2 | p01567 |
 | Tenth | 2 | prose 2 | note:person:noah:summary |
 | Testator | 2 | raleigh 2 | p01718 |
 | Tetrarchie | 2 | raleigh 2 | p01242 |
 | Texts | 2 | raleigh 2 | p02395 |
 | Thames | 2 | raleigh 2 | p00990 |
+| Tharsus | 2 | prose 1, raleigh 1 | p02469 |
 | Theater | 2 | raleigh 2 | p02164 |
 | Thebaides | 2 | raleigh 2 | p00984 |
 | Thebe | 2 | raleigh 2 | p01109 |
@@ -6151,7 +6663,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Theses | 2 | prose 2 | note:person:martin-luther:summary |
 | Thimnath | 2 | raleigh 2 | p02400 |
 | Thir | 2 | raleigh 2 | p02044 |
-| Three | 2 | prose 1, raleigh 1 | p00954 |
 | Throne | 2 | raleigh 2 | p01625 |
 | Thutmose | 2 | prose 2 | note:event:shishak-sacks-the-temple:summary |
 | Tides | 2 | raleigh 2 | p02047 |
@@ -6159,6 +6670,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Timaeus | 2 | prose 2 | note:event:first-panionia:summary |
 | Tin | 2 | raleigh 2 | p01834 |
 | Tiridates | 2 | prose 2 | note:person:gregory-the-illuminator:summary |
+| Tirynthos | 2 | raleigh 2 | p02497 |
 | Titans | 2 | raleigh 2 | p01079 |
 | Tob | 2 | raleigh 2 | p02374 |
 | Tongue | 2 | raleigh 2 | p01442 |
@@ -6185,18 +6697,17 @@ A name here is a capitalized word of at least three letters, not a function word
 | Trinity | 2 | prose 2 | note:person:charles-simeon:summary |
 | Tripoly | 2 | raleigh 2 | p00949 |
 | Triumph | 2 | raleigh 2 | p00784 |
-| Troians | 2 | raleigh 2 | p01622 |
 | Tropicall | 2 | raleigh 2 | p01986 |
 | Tropicks | 2 | raleigh 2 | p00944 |
 | Troupes | 2 | raleigh 2 | p01296 |
 | Tsedad | 2 | raleigh 2 | p02402 |
 | Tsohar | 2 | raleigh 2 | p02327 |
-| Tsophim | 2 | raleigh 2 | p02242 |
 | Tugdamme | 2 | prose 2 | note:event:death-of-gyges:summary |
 | Tuiscones | 2 | raleigh 2 | p01252 |
 | Turkie | 2 | raleigh 2 | p01855 |
 | Turks | 2 | prose 1, raleigh 1 | p02054 |
 | Turrets | 2 | raleigh 2 | p02047 |
+| Tutor | 2 | prose 1, raleigh 1 | p02554 |
 | Types | 2 | raleigh 2 | p01775 |
 | Tyrrhenus | 2 | raleigh 2 | p01120 |
 | Tyrtans | 2 | raleigh 2 | p02215 |
@@ -6217,6 +6728,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Victorinus | 2 | raleigh 2 | p00875 |
 | Vipers | 2 | raleigh 2 | p00898 |
 | Virago | 2 | prose 1, raleigh 1 | p02210 |
+| Virginitie | 2 | raleigh 2 | p02557 |
 | Virgins | 2 | raleigh 2 | p01083 |
 | Vissa | 2 | raleigh 2 | p01180 |
 | Unification | 2 | prose 2 | note:event:unification-of-egypt:summary |
@@ -6268,12 +6780,14 @@ A name here is a capitalized word of at least three letters, not a function word
 | Zeboim | 2 | raleigh 2 | p01602 |
 | Ziklag | 2 | prose 2 | note:event:david-at-ziklag:summary |
 | Ziph | 2 | raleigh 2 | p02329 |
+| Zobah | 2 | raleigh 2 | p02412 |
 | Zoroasters | 2 | raleigh 2 | p01296 |
 | Zuzaei | 2 | raleigh 2 | p01057 |
 | Zwemer | 2 | prose 2 | note:event:zwemer-at-princeton:summary |
 | Aamu | 1 | prose 1 | note:person:abisha:summary |
 | Aaronicall | 1 | raleigh 1 | p01769 |
 | Aaronson | 1 | prose 1 | note:person:bali-mazer:description |
+| Abanah | 1 | raleigh 1 | p02406 |
 | Abbaris | 1 | raleigh 1 | p01484 |
 | Abbey | 1 | prose 1 | note:event:westminster-assembly:summary |
 | Abbot | 1 | raleigh 1 | p02365 |
@@ -6286,6 +6800,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Abissines | 1 | raleigh 1 | p01268 |
 | Aborigines | 1 | raleigh 1 | p00459 |
 | Abra | 1 | raleigh 1 | p00243 |
+| Abrabon | 1 | raleigh 1 | p02459 |
 | Absit | 1 | raleigh 1 | p01526 |
 | Abstinence | 1 | raleigh 1 | p01484 |
 | Abydeni | 1 | raleigh 1 | p00768 |
@@ -6302,15 +6817,14 @@ A name here is a capitalized word of at least three letters, not a function word
 | Accho | 1 | raleigh 1 | p02180 |
 | Accidents | 1 | raleigh 1 | p00631 |
 | Accompts | 1 | raleigh 1 | p00039 |
-| According | 1 | raleigh 1 | p01084 |
 | Accursed | 1 | raleigh 1 | p01816 |
 | Ace | 1 | raleigh 1 | p02056 |
+| Achabs | 1 | prose 1 | note:person:chel-of-bethel:description |
 | Achaea | 1 | raleigh 1 | p00782 |
 | Acharon | 1 | raleigh 1 | p02258 |
-| Achaz | 1 | raleigh 1 | p00456 |
 | Achazib | 1 | raleigh 1 | p02062 |
+| Acheron | 1 | raleigh 1 | p02476 |
 | Achillae | 1 | raleigh 1 | p02329 |
-| Achilles | 1 | raleigh 1 | p01098 |
 | Achillis | 1 | raleigh 1 | p02043 |
 | Achlab | 1 | raleigh 1 | p02070 |
 | Achsaph | 1 | raleigh 1 | p02067 |
@@ -6324,16 +6838,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Acrabatena | 1 | raleigh 1 | p02154 |
 | Acrabathena | 1 | raleigh 1 | p02312 |
 | Acrabatine | 1 | raleigh 1 | p02154 |
-| Actes | 1 | raleigh 1 | p01662 |
 | Action | 1 | raleigh 1 | p00058 |
 | Actiones | 1 | raleigh 1 | p01756 |
 | Actions | 1 | raleigh 1 | p00079 |
 | Actium | 1 | prose 1 | note:event:battle-of-actium:summary |
 | Actus | 1 | raleigh 1 | p01815 |
 | Aczib | 1 | raleigh 1 | p02180 |
-| Adada | 1 | raleigh 1 | p02312 |
 | Adadremmon | 1 | raleigh 1 | p02160 |
-| Adads | 1 | raleigh 1 | p02270 |
 | Adalbert | 1 | prose 1 | note:event:martyrdom-of-adalbert:summary |
 | Adama | 1 | raleigh 1 | p02330 |
 | Adamah | 1 | raleigh 1 | p01759 |
@@ -6349,11 +6860,11 @@ A name here is a capitalized word of at least three letters, not a function word
 | Adima | 1 | raleigh 1 | p02117 |
 | Adinuenta | 1 | raleigh 1 | p01958 |
 | Admath | 1 | raleigh 1 | p01602 |
-| Admetus | 1 | raleigh 1 | p00365 |
 | Admirall | 1 | raleigh 1 | p00794 |
 | Adoniram | 1 | prose 1 | note:event:judsons-marry-and-sail:summary |
 | Adoption | 1 | raleigh 1 | p01794 |
 | Adramelech | 1 | raleigh 1 | p01455 |
+| Adrian | 1 | raleigh 1 | p02430 |
 | Adriaticke | 1 | raleigh 1 | p01254 |
 | Adriaticum | 1 | raleigh 1 | p01204 |
 | Adris | 1 | raleigh 1 | p00975 |
@@ -6364,14 +6875,16 @@ A name here is a capitalized word of at least three letters, not a function word
 | Adulterijs | 1 | raleigh 1 | p01842 |
 | Aduocate | 1 | raleigh 1 | p00006 |
 | Aeacides | 1 | raleigh 1 | p00666 |
-| Aeacus | 1 | raleigh 1 | p01083 |
 | Aedileship | 1 | raleigh 1 | p02276 |
 | Aegeon | 1 | raleigh 1 | p01223 |
 | Aegesias | 1 | raleigh 1 | p01223 |
 | Aegos | 1 | raleigh 1 | p00569 |
+| Aegyptiaci | 1 | raleigh 1 | p02432 |
 | AEgyptij | 1 | raleigh 1 | p01681 |
 | Aegyptium | 1 | raleigh 1 | p01976 |
 | Aegyptoregnâsse | 1 | raleigh 1 | p01109 |
+| Aegypts | 1 | raleigh 1 | p02406 |
+| Aelia | 1 | raleigh 1 | p02451 |
 | Aemilius | 1 | prose 1 | note:event:dispersion:description |
 | Aeneides | 1 | raleigh 1 | p01073 |
 | Aeolians | 1 | prose 1 | note:person:elishah:description |
@@ -6388,7 +6901,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Africke | 1 | raleigh 1 | p00759 |
 | Afrique | 1 | raleigh 1 | p00404 |
 | Afros | 1 | raleigh 1 | p01979 |
-| Afterwards | 1 | raleigh 1 | p01206 |
 | Agar | 1 | raleigh 1 | p01001 |
 | Agent | 1 | raleigh 1 | p00064 |
 | Agrabat | 1 | raleigh 1 | p02154 |
@@ -6439,6 +6951,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Almanacke | 1 | raleigh 1 | p01676 |
 | Almans | 1 | raleigh 1 | p00042 |
 | Almighty | 1 | raleigh 1 | p00889 |
+| Almon | 1 | raleigh 1 | p02439 |
 | Almonds | 1 | raleigh 1 | p01876 |
 | Almost | 1 | raleigh 1 | p02072 |
 | Alongst | 1 | raleigh 1 | p02124 |
@@ -6452,7 +6965,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Amam | 1 | raleigh 1 | p02314 |
 | Amana | 1 | raleigh 1 | p02100 |
 | Amarus | 1 | raleigh 1 | p01418 |
-| Amasia | 1 | raleigh 1 | p00436 |
 | Amathar | 1 | raleigh 1 | p02123 |
 | Amathein | 1 | raleigh 1 | p01328 |
 | Amathensis | 1 | raleigh 1 | p02102 |
@@ -6460,8 +6972,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Amathine | 1 | prose 1 | note:person:hamathite:description |
 | Amathitis | 1 | raleigh 1 | p02102 |
 | Amazing | 1 | prose 1 | note:event:amazing-grace-written:summary |
+| Amazoman | 1 | raleigh 1 | p02550 |
 | Amazoniae | 1 | raleigh 1 | p01005 |
-| Amazonian | 1 | raleigh 1 | p01005 |
 | Amazonici | 1 | raleigh 1 | p01199 |
 | Ambassadors | 1 | raleigh 1 | p01277 |
 | Ambassage | 1 | raleigh 1 | p01280 |
@@ -6475,23 +6987,23 @@ A name here is a capitalized word of at least three letters, not a function word
 | Aminocles | 1 | raleigh 1 | p01223 |
 | Ammath | 1 | raleigh 1 | p01328 |
 | Ammianus | 1 | raleigh 1 | p00978 |
+| Ammons | 1 | raleigh 1 | p02557 |
 | Ammuz | 1 | raleigh 1 | p02038 |
 | Amona | 1 | raleigh 1 | p02100 |
 | Amoy | 1 | prose 1 | note:event:burns-at-amoy:summary |
-| Amphiaraus | 1 | raleigh 1 | p01495 |
-| Amphilochus | 1 | raleigh 1 | p01495 |
 | Amphion | 1 | raleigh 1 | p01083 |
-| Amphitheater | 1 | raleigh 1 | p02164 |
 | Amthar | 1 | raleigh 1 | p02123 |
 | Amy | 1 | prose 1 | note:event:zwemer-marriage:summary |
 | Anabaptist | 1 | raleigh 1 | p01868 |
 | Anaharath | 1 | raleigh 1 | p02140 |
+| Analogie | 1 | raleigh 1 | p02509 |
 | Ananias | 1 | raleigh 1 | p01496 |
 | Anarchie | 1 | raleigh 1 | p00450 |
 | Anaxandrides | 1 | raleigh 1 | p01066 |
 | Anaximenes | 1 | raleigh 1 | p00058 |
 | Ancestours | 1 | raleigh 1 | p01615 |
 | Anchors | 1 | raleigh 1 | p02164 |
+| Anchsis | 1 | raleigh 1 | p02551 |
 | Ancobaritis | 1 | raleigh 1 | p01359 |
 | Andalusia | 1 | raleigh 1 | p01222 |
 | Andarine | 1 | raleigh 1 | p02218 |
@@ -6536,6 +7048,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Antwerp | 1 | raleigh 1 | p00043 |
 | Apamena | 1 | raleigh 1 | p01605 |
 | Aphadana | 1 | raleigh 1 | p01359 |
+| Aphaerema | 1 | raleigh 1 | p02436 |
 | Apheca | 1 | raleigh 1 | p02135 |
 | Aphike | 1 | raleigh 1 | p02009 |
 | Aphraim | 1 | raleigh 1 | p02138 |
@@ -6571,6 +7084,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Arados | 1 | raleigh 1 | p01324 |
 | Arads | 1 | raleigh 1 | p01889 |
 | Arama | 1 | raleigh 1 | p02114 |
+| Aramathaim | 1 | raleigh 1 | p02437 |
 | Aramea | 1 | raleigh 1 | p01358 |
 | Arameans | 1 | raleigh 1 | p01358 |
 | Aramenians | 1 | raleigh 1 | p01358 |
@@ -6594,11 +7108,11 @@ A name here is a capitalized word of at least three letters, not a function word
 | Areopagum | 1 | raleigh 1 | p01091 |
 | Arga | 1 | raleigh 1 | p02401 |
 | Arginusae | 1 | raleigh 1 | p00568 |
-| Argive | 1 | prose 1 | note:person:inachus:summary |
 | Argiuos | 1 | raleigh 1 | p01118 |
 | Argobe | 1 | raleigh 1 | p02024 |
 | Argonautae | 1 | raleigh 1 | p01222 |
 | Argonauticks | 1 | raleigh 1 | p01254 |
+| Ariadnes | 1 | raleigh 1 | p02539 |
 | Arian | 1 | raleigh 1 | p00866 |
 | Arianism | 1 | prose 1 | note:person:athanasius-of-alexandria:summary |
 | Arida | 1 | raleigh 1 | p00832 |
@@ -6639,7 +7153,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Arrowes | 1 | raleigh 1 | p00986 |
 | Artemis | 1 | prose 1 | note:person:naamah:description |
 | Artemisium | 1 | raleigh 1 | p00539 |
-| Article | 1 | raleigh 1 | p02114 |
 | Artificers | 1 | raleigh 1 | p01222 |
 | Artificiall | 1 | raleigh 1 | p00070 |
 | Artillerie | 1 | raleigh 1 | p01164 |
@@ -6662,7 +7175,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Asemona | 1 | raleigh 1 | p02313 |
 | Ashdoth | 1 | raleigh 1 | p02348 |
 | Asherah | 1 | prose 1 | note:person:naamah:description |
-| Asherites | 1 | raleigh 1 | p02032 |
 | Ashima | 1 | raleigh 1 | p01455 |
 | Ashna | 1 | raleigh 1 | p02312 |
 | Asian | 1 | raleigh 1 | p01180 |
@@ -6671,7 +7183,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Asiaticus | 1 | raleigh 1 | p01231 |
 | Asiatique | 1 | raleigh 1 | p00784 |
 | Asie | 1 | raleigh 1 | p00962 |
+| Asino | 1 | raleigh 1 | p02485 |
 | Asitae | 1 | raleigh 1 | p01951 |
+| Askalon | 1 | raleigh 1 | p02465 |
 | Asora | 1 | raleigh 1 | p02091 |
 | Asphaltes | 1 | raleigh 1 | p01146 |
 | Assaron | 1 | raleigh 1 | p02230 |
@@ -6728,8 +7242,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Aunt | 1 | raleigh 1 | p00041 |
 | Aurelian | 1 | prose 1 | note:event:persecution-under-aurelian:summary |
 | Aurelius | 1 | prose 1 | note:event:persecution-under-marcus-aurelius:summary |
+| Aurora | 1 | raleigh 1 | p02490 |
 | Ausones | 1 | raleigh 1 | p01119 |
-| Ausonia | 1 | raleigh 1 | p01120 |
 | Austrian | 1 | raleigh 1 | p00040 |
 | Authority | 1 | raleigh 1 | p01770 |
 | Autocratorida | 1 | raleigh 1 | p02128 |
@@ -6852,14 +7366,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Belosus | 1 | raleigh 1 | p00453 |
 | Belpeor | 1 | raleigh 1 | p01443 |
 | Belsebub | 1 | raleigh 1 | p01443 |
-| Ben | 1 | prose 1 | note:person:ben-hadad-son-of-hazael:summary |
 | Bench | 1 | raleigh 1 | p01846 |
 | Benefactors | 1 | raleigh 1 | p01447 |
 | Benefits | 1 | raleigh 1 | p00865 |
 | Bengali | 1 | prose 1 | note:event:bengali-new-testament:summary |
-| Benhadads | 1 | raleigh 1 | p02064 |
+| Benhadaˉd | 1 | raleigh 1 | p02413 |
 | Beniaacan | 1 | raleigh 1 | p01883 |
-| Benjamite | 1 | prose 1 | note:event:ehud-delivers-israel:summary |
 | Beniamm | 1 | raleigh 1 | p02247 |
 | Benoth | 1 | raleigh 1 | p01455 |
 | Beraei | 1 | raleigh 1 | p02116 |
@@ -6880,6 +7392,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Bethabara | 1 | raleigh 1 | p02347 |
 | Bethanah | 1 | raleigh 1 | p02009 |
 | Bethanath | 1 | raleigh 1 | p02114 |
+| Betharaba | 1 | raleigh 1 | p02431 |
 | Bethbera | 1 | raleigh 1 | p02150 |
 | Bethemec | 1 | raleigh 1 | p02073 |
 | Bethmaaca | 1 | raleigh 1 | p02269 |
@@ -6911,7 +7424,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Bloys | 1 | raleigh 1 | p01846 |
 | Blue | 1 | raleigh 1 | p01258 |
 | Boacus | 1 | raleigh 1 | p01137 |
-| Boat | 1 | raleigh 1 | p01223 |
 | Boates | 1 | raleigh 1 | p01282 |
 | Boccas | 1 | raleigh 1 | p01079 |
 | Bochim | 1 | raleigh 1 | p02089 |
@@ -6926,7 +7438,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Bononia | 1 | raleigh 1 | p01120 |
 | Bonum | 1 | raleigh 1 | p01745 |
 | Borderers | 1 | raleigh 1 | p02331 |
-| Bore | 1 | raleigh 1 | p00035 |
 | Borysthenes | 1 | raleigh 1 | p01180 |
 | Boston | 1 | prose 1 | note:event:neesima-arrives-in-boston:summary |
 | Boughedor | 1 | raleigh 1 | p00978 |
@@ -6940,6 +7451,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Brazen | 1 | raleigh 1 | p01891 |
 | Brébeuf | 1 | prose 1 | note:event:death-of-jean-de-brebeuf:summary |
 | Brennus | 1 | raleigh 1 | p01182 |
+| Briars | 1 | raleigh 1 | p02508 |
 | Briese | 1 | raleigh 1 | p01989 |
 | Brillion | 1 | raleigh 1 | p01252 |
 | Bristol | 1 | prose 1 | note:event:whitefield-field-preaching-begins:summary |
@@ -6970,7 +7482,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Builder | 1 | raleigh 1 | p01431 |
 | Buildings | 1 | raleigh 1 | p01247 |
 | Bul | 1 | raleigh 1 | p01674 |
-| Bull | 1 | raleigh 1 | p02177 |
 | Bulles | 1 | raleigh 1 | p01785 |
 | Bulls | 1 | raleigh 1 | p01737 |
 | Buls | 1 | raleigh 1 | p01083 |
@@ -6983,6 +7494,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Buxton | 1 | prose 1 | note:event:studd-reaches-niangara:summary |
 | Byblos | 1 | prose 1 | note:event:founding-of-babel:description |
 | Byra | 1 | raleigh 1 | p02238 |
+| Bythinia | 1 | raleigh 1 | p02524 |
 | Cabalistes | 1 | raleigh 1 | p01474 |
 | Cabbines | 1 | raleigh 1 | p01154 |
 | Cabral | 1 | prose 1 | note:event:cabral-in-india:summary |
@@ -7045,6 +7557,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Capharsalama | 1 | raleigh 1 | p02169 |
 | Caphernaum | 1 | raleigh 1 | p02098 |
 | Caphtorims | 1 | raleigh 1 | p02270 |
+| Capitolia | 1 | raleigh 1 | p02451 |
 | Cappadocum | 1 | raleigh 1 | p01189 |
 | Cappe | 1 | raleigh 1 | p00051 |
 | Caput | 1 | raleigh 1 | p00969 |
@@ -7060,6 +7573,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Cariatharbe | 1 | raleigh 1 | p02317 |
 | Caribana | 1 | raleigh 1 | p01151 |
 | Carith | 1 | raleigh 1 | p02244 |
+| Carlile | 1 | raleigh 1 | p02566 |
 | Carmania | 1 | raleigh 1 | p01332 |
 | Carnion | 1 | raleigh 1 | p02387 |
 | Caroline | 1 | prose 1 | note:event:fort-caroline:summary |
@@ -7082,6 +7596,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Caspin | 1 | raleigh 1 | p02287 |
 | Cassam | 1 | raleigh 1 | p01054 |
 | Cassanders | 1 | raleigh 1 | p00699 |
+| Cassiopaei | 1 | raleigh 1 | p02476 |
 | Casstotis | 1 | raleigh 1 | p01605 |
 | Cast | 1 | raleigh 1 | p00859 |
 | Castalion | 1 | raleigh 1 | p01475 |
@@ -7115,8 +7630,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Celah | 1 | raleigh 1 | p01434 |
 | Cendeuia | 1 | raleigh 1 | p02075 |
 | Censurers | 1 | raleigh 1 | p00009 |
+| Centaures | 1 | raleigh 1 | p02535 |
 | Center | 1 | raleigh 1 | p01132 |
-| Cerberus | 1 | raleigh 1 | p01070 |
+| Cephisus | 1 | raleigh 1 | p02476 |
 | Cerde | 1 | raleigh 1 | p00038 |
 | Ceremony | 1 | raleigh 1 | p01772 |
 | Cereris | 1 | raleigh 1 | p00971 |
@@ -7129,6 +7645,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Cetura | 1 | raleigh 1 | p01941 |
 | Chabul | 1 | raleigh 1 | p02075 |
 | Chaco | 1 | prose 1 | note:person:wilfrid-barbrooke-grubb:summary |
+| Chadid | 1 | raleigh 1 | p02429 |
 | Chalab | 1 | raleigh 1 | p02070 |
 | Chalcidians | 1 | raleigh 1 | p00783 |
 | Chalcidica | 1 | raleigh 1 | p02087 |
@@ -7138,13 +7655,14 @@ A name here is a capitalized word of at least three letters, not a function word
 | Chaldaeos | 1 | raleigh 1 | p01483 |
 | Chaldaes | 1 | raleigh 1 | p01584 |
 | Chaldea | 1 | raleigh 1 | p01577 |
+| Chaldeys | 1 | raleigh 1 | p02433 |
 | Chaldoeopolis | 1 | raleigh 1 | p01430 |
 | Chali | 1 | raleigh 1 | p02073 |
 | Chalibonitis | 1 | raleigh 1 | p01605 |
 | Chalneb | 1 | raleigh 1 | p01430 |
 | Chalymicus | 1 | raleigh 1 | p00978 |
 | Chamaethaeus | 1 | raleigh 1 | p01309 |
-| Chamatha | 1 | raleigh 1 | p02397 |
+| Chamatham | 1 | raleigh 1 | p02417 |
 | Chamathens | 1 | raleigh 1 | p01949 |
 | Chamia | 1 | raleigh 1 | p01627 |
 | Chamo | 1 | raleigh 1 | p01627 |
@@ -7184,6 +7702,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Chebar | 1 | raleigh 1 | p00978 |
 | Chelcath | 1 | raleigh 1 | p02073 |
 | Chelma | 1 | raleigh 1 | p02128 |
+| Chemer | 1 | raleigh 1 | p02476 |
 | Chemia | 1 | raleigh 1 | p01627 |
 | Chemoth | 1 | raleigh 1 | p01502 |
 | Cheramis | 1 | raleigh 1 | p01266 |
@@ -7196,8 +7715,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Chi | 1 | prose 1 | note:event:grand-cycle-era:summary |
 | Child | 1 | raleigh 1 | p01492 |
 | Childe | 1 | raleigh 1 | p00043 |
-| Chimaera | 1 | raleigh 1 | p02221 |
 | Chimchi | 1 | raleigh 1 | p00912 |
+| Chirurgion | 1 | raleigh 1 | p02541 |
 | Chisleu | 1 | raleigh 1 | p01674 |
 | Chittim | 1 | raleigh 1 | p01430 |
 | Chiueus | 1 | raleigh 1 | p01309 |
@@ -7208,18 +7727,16 @@ A name here is a capitalized word of at least three letters, not a function word
 | Chorographicall | 1 | raleigh 1 | p00995 |
 | Chozai | 1 | raleigh 1 | p01897 |
 | Chozeba | 1 | raleigh 1 | p02359 |
+| Chrenologers | 1 | raleigh 1 | p02565 |
 | Chrisˉt | 1 | raleigh 1 | p01033 |
 | Christall | 1 | raleigh 1 | p01157 |
 | Christendome | 1 | raleigh 1 | p00042 |
 | Christianis | 1 | raleigh 1 | p00962 |
 | Christianitie | 1 | raleigh 1 | p02283 |
 | Chro | 1 | raleigh 1 | p02239 |
-| Chroniclers | 1 | raleigh 1 | p01044 |
 | Chronologia | 1 | raleigh 1 | p01577 |
-| Chronologicall | 1 | raleigh 1 | p01642 |
 | Chrysamensis | 1 | raleigh 1 | p00906 |
 | Chrysippus | 1 | raleigh 1 | p00847 |
-| Chrysorrhoas | 1 | raleigh 1 | p02080 |
 | Chukkok | 1 | raleigh 1 | p02117 |
 | Chul | 1 | raleigh 1 | p01362 |
 | Chusa | 1 | raleigh 1 | p00981 |
@@ -7230,7 +7747,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Chusian | 1 | raleigh 1 | p01240 |
 | Chusidia | 1 | raleigh 1 | p01240 |
 | Chymist | 1 | raleigh 1 | p01062 |
-| Chymists | 1 | raleigh 1 | p01484 |
 | Chytraeus | 1 | raleigh 1 | p01457 |
 | Cibotium | 1 | raleigh 1 | p01966 |
 | Cicere | 1 | raleigh 1 | p01069 |
@@ -7245,6 +7761,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Circumstances | 1 | raleigh 1 | p01642 |
 | Cishton | 1 | raleigh 1 | p02135 |
 | Citadells | 1 | raleigh 1 | p00043 |
+| Citheron | 1 | raleigh 1 | p02551 |
 | Citic | 1 | raleigh 1 | p02180 |
 | Citium | 1 | raleigh 1 | p01260 |
 | Cittadell | 1 | raleigh 1 | p02240 |
@@ -7273,7 +7790,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Clymate | 1 | raleigh 1 | p01151 |
 | Clytemnestra | 1 | raleigh 1 | p01083 |
 | Cnut | 1 | prose 1 | note:event:cnut-king-of-england:summary |
-| Coach | 1 | raleigh 1 | p01023 |
 | Coachmen | 1 | raleigh 1 | p01023 |
 | Coactiue | 1 | raleigh 1 | p01851 |
 | Coas | 1 | raleigh 1 | p00975 |
@@ -7289,8 +7805,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Cognitio | 1 | raleigh 1 | p00834 |
 | Colaxes | 1 | raleigh 1 | p01083 |
 | Colinutius | 1 | raleigh 1 | p00978 |
+| Colledge | 1 | raleigh 1 | p02439 |
 | Colledges | 1 | raleigh 1 | p01549 |
-| Collis | 1 | raleigh 1 | p02329 |
 | Collocauit | 1 | raleigh 1 | p00913 |
 | Cologne | 1 | prose 1 | note:event:battle-of-cologne-716:summary |
 | Colonells | 1 | raleigh 1 | p01865 |
@@ -7300,15 +7816,17 @@ A name here is a capitalized word of at least three letters, not a function word
 | Colos | 1 | raleigh 1 | p00875 |
 | Colour | 1 | raleigh 1 | p01669 |
 | Colthene | 1 | raleigh 1 | p01176 |
+| Colthos | 1 | raleigh 1 | p02529 |
 | Colubros | 1 | raleigh 1 | p01516 |
 | Columbus | 1 | prose 1 | note:event:columbus-reaches-americas:summary |
 | Comaedians | 1 | raleigh 1 | p00045 |
+| Comander | 1 | raleigh 1 | p02410 |
 | Comes | 1 | raleigh 1 | p01963 |
 | Comestors | 1 | raleigh 1 | p00927 |
 | Comgall | 1 | prose 1 | note:event:bangor-abbey-founded:summary |
+| Commaundement | 1 | raleigh 1 | p02525 |
 | Commaundements | 1 | raleigh 1 | p02005 |
 | Commaunder | 1 | raleigh 1 | p02269 |
-| Commaunders | 1 | raleigh 1 | p01615 |
 | Commentarie | 1 | raleigh 1 | p01175 |
 | Commentators | 1 | raleigh 1 | p01226 |
 | Commented | 1 | raleigh 1 | p01235 |
@@ -7331,11 +7849,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Conchilis | 1 | raleigh 1 | p02047 |
 | Concilium | 1 | raleigh 1 | p01392 |
 | Concludit | 1 | raleigh 1 | p01721 |
+| Concubine | 1 | raleigh 1 | p02532 |
 | Concupiscence | 1 | raleigh 1 | p01815 |
 | Concupiseentia | 1 | raleigh 1 | p01815 |
 | Condition | 1 | raleigh 1 | p01609 |
 | Conditionall | 1 | raleigh 1 | p00043 |
 | Conditor | 1 | raleigh 1 | p01857 |
+| Conduct | 1 | raleigh 1 | p02553 |
 | Conducters | 1 | raleigh 1 | p01222 |
 | Conduction | 1 | raleigh 1 | p01242 |
 | Conductors | 1 | raleigh 1 | p01875 |
@@ -7348,6 +7868,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Confusion | 1 | raleigh 1 | p00990 |
 | Coniah | 1 | prose 1 | note:person:jehoiachin:summary |
 | Coniectarers | 1 | raleigh 1 | p01475 |
+| Coniecture | 1 | raleigh 1 | p02551 |
 | Coniurers | 1 | raleigh 1 | p01511 |
 | Connath | 1 | raleigh 1 | p02155 |
 | Conquerers | 1 | raleigh 1 | p01261 |
@@ -7380,17 +7901,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Cophe | 1 | raleigh 1 | p01376 |
 | Cophen | 1 | prose 1 | note:person:joktan:description |
 | Cophti | 1 | raleigh 1 | p00962 |
-| Copie | 1 | raleigh 1 | p00985 |
 | Copper | 1 | raleigh 1 | p02094 |
 | Coraxici | 1 | raleigh 1 | p01019 |
 | Coraxis | 1 | raleigh 1 | p01199 |
 | Corbey | 1 | prose 1 | note:person:anskar:summary |
+| Corcyra | 1 | raleigh 1 | p02529 |
 | Cordaei | 1 | raleigh 1 | p01159 |
 | Corde | 1 | raleigh 1 | p00058 |
 | Cordiaean | 1 | raleigh 1 | p01188 |
 | Cordiaeorum | 1 | raleigh 1 | p01188 |
 | Cordis | 1 | raleigh 1 | p00028 |
 | Core | 1 | raleigh 1 | p01545 |
+| Corinth | 1 | raleigh 1 | p02497 |
 | Corinthian | 1 | raleigh 1 | p01223 |
 | Cornefields | 1 | raleigh 1 | p00972 |
 | Cornel | 1 | raleigh 1 | p00038 |
@@ -7429,7 +7951,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Courtier | 1 | raleigh 1 | p00866 |
 | Courtney | 1 | prose 1 | note:event:wycliffe-summoned-to-london:summary |
 | Cousins | 1 | raleigh 1 | p02217 |
-| Cow | 1 | raleigh 1 | p01191 |
 | Cowcummers | 1 | raleigh 1 | p01151 |
 | Crabs | 1 | raleigh 1 | p01151 |
 | Crac | 1 | raleigh 1 | p02351 |
@@ -7438,13 +7959,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Craft | 1 | raleigh 1 | p01083 |
 | Crane | 1 | raleigh 1 | p01496 |
 | Cranes | 1 | raleigh 1 | p01396 |
-| Crassus | 1 | raleigh 1 | p00951 |
 | Craterus | 1 | raleigh 1 | p00653 |
 | Cratippus | 1 | raleigh 1 | p00012 |
+| Creators | 1 | raleigh 1 | p02551 |
 | Crect | 1 | raleigh 1 | p01221 |
 | Credere | 1 | raleigh 1 | p01526 |
 | Credunt | 1 | raleigh 1 | p01526 |
 | Creete | 1 | raleigh 1 | p01455 |
+| Crenis | 1 | raleigh 1 | p02551 |
+| Creons | 1 | raleigh 1 | p02553 |
 | Cresta | 1 | raleigh 1 | p01081 |
 | Cretenses | 1 | raleigh 1 | p01083 |
 | Crim | 1 | raleigh 1 | p01242 |
@@ -7452,7 +7975,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Cristalline | 1 | raleigh 1 | p00829 |
 | Cristals | 1 | raleigh 1 | p01511 |
 | Crocadyles | 1 | raleigh 1 | p01385 |
-| Crocodiles | 1 | raleigh 1 | p01157 |
 | Crowe | 1 | raleigh 1 | p01151 |
 | Crueltie | 1 | raleigh 1 | p00898 |
 | Cuba | 1 | raleigh 1 | p00911 |
@@ -7466,6 +7988,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Cups | 1 | raleigh 1 | p01871 |
 | Cur | 1 | raleigh 1 | p00071 |
 | Current | 1 | raleigh 1 | p00990 |
+| Currents | 1 | raleigh 1 | p02530 |
 | Curse | 1 | raleigh 1 | p01037 |
 | Curtizan | 1 | raleigh 1 | p01539 |
 | Cushites | 1 | raleigh 1 | p00977 |
@@ -7473,7 +7996,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Cuth | 1 | raleigh 1 | p01455 |
 | Cuthae | 1 | raleigh 1 | p02270 |
 | Cuthenberg | 1 | raleigh 1 | p01164 |
+| Cuzumbarec | 1 | raleigh 1 | p02454 |
 | Cycles | 1 | raleigh 1 | p01676 |
+| Cyclops | 1 | prose 1 | note:person:polyphemus-argonaut:description |
 | Cymbaline | 1 | raleigh 1 | p01282 |
 | Cymbalo | 1 | raleigh 1 | p01282 |
 | Cymbalorum | 1 | raleigh 1 | p01277 |
@@ -7482,8 +8007,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Cymmeris | 1 | raleigh 1 | p01241 |
 | Cymmerius | 1 | raleigh 1 | p01241 |
 | Cynics | 1 | prose 1 | note:person:diogenes-of-sinope:summary |
+| Cyprians | 1 | raleigh 1 | p02551 |
 | Daberath | 1 | raleigh 1 | p02141 |
-| Daedalus | 1 | raleigh 1 | p00367 |
 | Daema | 1 | raleigh 1 | p02304 |
 | Daemonibus | 1 | raleigh 1 | p01447 |
 | Daemonologia | 1 | raleigh 1 | p01490 |
@@ -7494,16 +8019,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Daily | 1 | prose 1 | note:event:stanley-meets-mutesa:summary |
 | Dalaqua | 1 | raleigh 1 | p01688 |
 | Damascen | 1 | raleigh 1 | p01994 |
-| Damascena | 1 | raleigh 1 | p02021 |
 | Damasceni | 1 | raleigh 1 | p02106 |
-| Damasco | 1 | raleigh 1 | p01614 |
+| Damascum | 1 | raleigh 1 | p02417 |
 | Damasus | 1 | raleigh 1 | p01126 |
 | Damianus | 1 | raleigh 1 | p01268 |
 | Damiata | 1 | raleigh 1 | p01656 |
 | Damietta | 1 | prose 1 | note:event:preacher-before-sultan-at-damietta:summary |
 | Damna | 1 | raleigh 1 | p02122 |
+| Damoscus | 1 | raleigh 1 | p02405 |
 | Dana | 1 | raleigh 1 | p02093 |
-| Danaë | 1 | raleigh 1 | p01083 |
 | Danai | 1 | raleigh 1 | p01287 |
 | Dando | 1 | raleigh 1 | p01040 |
 | Danis | 1 | raleigh 1 | p02284 |
@@ -7520,13 +8044,16 @@ A name here is a capitalized word of at least three letters, not a function word
 | Darwin | 1 | prose 1 | note:event:darwin-visits-williams:summary |
 | DATE | 1 | prose 1 | note:event:temple-dedication:description |
 | Dathema | 1 | raleigh 1 | p02375 |
+| Daulia | 1 | raleigh 1 | p02477 |
+| Daulias | 1 | raleigh 1 | p02477 |
+| Daulide | 1 | raleigh 1 | p02477 |
 | Dauphin | 1 | raleigh 1 | p00039 |
 | Deadsea | 1 | raleigh 1 | p01992 |
 | Deane | 1 | raleigh 1 | p00038 |
 | Debate | 1 | prose 1 | note:event:valladolid-debate:summary |
 | Debbaset | 1 | raleigh 1 | p02120 |
 | Deblathaim | 1 | raleigh 1 | p02350 |
-| Deborah | 1 | prose 1 | note:event:deborah-and-barak:summary |
+| Deborahs | 1 | prose 1 | note:person:perseus-son-of-danae:description |
 | Decade | 1 | raleigh 1 | p01688 |
 | Deceiuers | 1 | raleigh 1 | p00898 |
 | Decem | 1 | raleigh 1 | p01844 |
@@ -7608,7 +8135,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Discussion | 1 | raleigh 1 | p00710 |
 | Dissension | 1 | raleigh 1 | p00744 |
 | Ditch | 1 | raleigh 1 | p02117 |
-| Diuell | 1 | raleigh 1 | p00023 |
+| Dition | 1 | raleigh 1 | p02436 |
 | Diuells | 1 | raleigh 1 | p00045 |
 | Diuels | 1 | raleigh 1 | p02391 |
 | Diuidna | 1 | raleigh 1 | p01180 |
@@ -7622,7 +8149,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Dizahab | 1 | raleigh 1 | p02345 |
 | Dobratha | 1 | raleigh 1 | p02140 |
 | Doct | 1 | raleigh 1 | p01587 |
-| Dogge | 1 | raleigh 1 | p02047 |
+| Dog | 1 | raleigh 1 | p02476 |
 | Dom | 1 | raleigh 1 | p01676 |
 | Dometrius | 1 | raleigh 1 | p00698 |
 | Dominamini | 1 | raleigh 1 | p00873 |
@@ -7630,6 +8157,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Dominator | 1 | raleigh 1 | p01418 |
 | Domino | 1 | raleigh 1 | p01407 |
 | Dominum | 1 | raleigh 1 | p01418 |
+| Domitians | 1 | prose 1 | note:person:martial:description |
 | Donatus | 1 | prose 1 | note:event:cyprian-chosen-pastor-of-carthage:summary |
 | Doraea | 1 | raleigh 1 | p02145 |
 | Dordroch | 1 | raleigh 1 | p01126 |
@@ -7642,7 +8170,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Doulia | 1 | raleigh 1 | p01449 |
 | Dow | 1 | raleigh 1 | p01672 |
 | Dowrie | 1 | raleigh 1 | p02372 |
-| Draco | 1 | prose 1 | note:event:draco-law-code:summary |
 | Dracone | 1 | raleigh 1 | p02060 |
 | Dragmas | 1 | raleigh 1 | p02315 |
 | Dragons | 1 | raleigh 1 | p01732 |
@@ -7677,6 +8204,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Easternely | 1 | raleigh 1 | p00944 |
 | Eastside | 1 | raleigh 1 | p01206 |
 | Eastwards | 1 | raleigh 1 | p00968 |
+| Ebed | 1 | raleigh 1 | p02534 |
 | Ebets | 1 | raleigh 1 | p02135 |
 | Ebola | 1 | prose 1 | note:event:west-african-ebola-epidemic:summary |
 | Ecbatana | 1 | prose 1 | note:event:cyrus-founds-medo-persian-empire:summary |
@@ -7699,11 +8227,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Egbert | 1 | prose 1 | note:event:bede-letter-to-egbert:summary |
 | Egmont | 1 | raleigh 1 | p00043 |
 | Egypts | 1 | raleigh 1 | p01285 |
-| Ehuds | 1 | raleigh 1 | p00365 |
 | Eie | 1 | raleigh 1 | p01712 |
 | Eighth | 1 | prose 1 | note:person:amempsinus:summary |
 | Eius | 1 | raleigh 1 | p02295 |
-| Ekron | 1 | raleigh 1 | p02282 |
 | Elaa | 1 | raleigh 1 | p01688 |
 | Elan | 1 | raleigh 1 | p02216 |
 | Elaniticum | 1 | raleigh 1 | p01688 |
@@ -7713,7 +8239,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Eleates | 1 | raleigh 1 | p01667 |
 | Elect | 1 | raleigh 1 | p01855 |
 | Electo | 1 | raleigh 1 | p01873 |
-| Electra | 1 | raleigh 1 | p01083 |
 | Elei | 1 | raleigh 1 | p01258 |
 | Elentherus | 1 | raleigh 1 | p02080 |
 | Elephant | 1 | raleigh 1 | p01154 |
@@ -7762,13 +8287,14 @@ A name here is a capitalized word of at least three letters, not a function word
 | Enygmaticall | 1 | raleigh 1 | p00920 |
 | Epacts | 1 | raleigh 1 | p01679 |
 | Epbraim | 1 | raleigh 1 | p02233 |
+| Epbyra | 1 | raleigh 1 | p02497 |
 | Epeians | 1 | raleigh 1 | p01040 |
 | Ephemerides | 1 | raleigh 1 | p01496 |
-| Ephra | 1 | raleigh 1 | p02150 |
 | Ephraimits | 1 | raleigh 1 | p01939 |
 | Ephrams | 1 | raleigh 1 | p02010 |
 | Ephrata | 1 | raleigh 1 | p02323 |
 | Epicure | 1 | raleigh 1 | p00056 |
+| Epicures | 1 | raleigh 1 | p02545 |
 | EPIGRAM | 1 | raleigh 1 | p00895 |
 | Epiphan | 1 | raleigh 1 | p01159 |
 | Epiphantus | 1 | raleigh 1 | p00981 |
@@ -7781,7 +8307,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Equity | 1 | raleigh 1 | p00006 |
 | Ere | 1 | raleigh 1 | p01084 |
 | Erecter | 1 | raleigh 1 | p01430 |
-| Eridanus | 1 | raleigh 1 | p01084 |
 | Erythraeum | 1 | raleigh 1 | p01688 |
 | Erythros | 1 | raleigh 1 | p01688 |
 | Eryx | 1 | raleigh 1 | p00723 |
@@ -7796,6 +8321,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Essia | 1 | raleigh 1 | p01879 |
 | Establisher | 1 | raleigh 1 | p01423 |
 | Esthaol | 1 | raleigh 1 | p02284 |
+| Estiaea | 1 | raleigh 1 | p02554 |
 | Estius | 1 | raleigh 1 | p01040 |
 | Eternitie | 1 | raleigh 1 | p00062 |
 | Ethanim | 1 | raleigh 1 | p01674 |
@@ -7809,6 +8335,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Euangelio | 1 | raleigh 1 | p01492 |
 | Euangelion | 1 | raleigh 1 | p01790 |
 | Euaristus | 1 | raleigh 1 | p00803 |
+| Eubaea | 1 | raleigh 1 | p02529 |
 | Euboean | 1 | raleigh 1 | p01098 |
 | Eubulus | 1 | raleigh 1 | p01083 |
 | Evilas | 1 | prose 1 | note:person:havilah-son-of-cush:description |
@@ -7838,12 +8365,14 @@ A name here is a capitalized word of at least three letters, not a function word
 | Ezechia | 1 | raleigh 1 | p01280 |
 | Ezekiels | 1 | raleigh 1 | p02038 |
 | Ezethiel | 1 | raleigh 1 | p01335 |
+| Fablers | 1 | raleigh 1 | p02529 |
 | Fabulantur | 1 | raleigh 1 | p01176 |
 | Faction | 1 | raleigh 1 | p00398 |
 | Faire | 1 | raleigh 1 | p00955 |
 | Falconrie | 1 | raleigh 1 | p01515 |
 | Falls | 1 | prose 1 | note:event:livingstone-victoria-falls:summary |
 | Falshood | 1 | raleigh 1 | p00882 |
+| Fame | 1 | raleigh 1 | p02460 |
 | Familiar | 1 | raleigh 1 | p01511 |
 | Fascination | 1 | raleigh 1 | p01514 |
 | Fatherin | 1 | raleigh 1 | p01632 |
@@ -7869,6 +8398,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Fiery | 1 | raleigh 1 | p01988 |
 | Fifth | 1 | prose 1 | note:event:fifth-crusade:summary |
 | Fifties | 1 | raleigh 1 | p01865 |
+| Figge | 1 | raleigh 1 | p02533 |
 | Fijian | 1 | prose 1 | note:event:conversion-of-cakobau:summary |
 | Filiae | 1 | raleigh 1 | p02397 |
 | Fill | 1 | raleigh 1 | p00907 |
@@ -7880,12 +8410,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Fit | 1 | raleigh 1 | p01411 |
 | FIue | 1 | raleigh 1 | p02060 |
 | Flauia | 1 | raleigh 1 | p02164 |
-| Fleece | 1 | raleigh 1 | p01023 |
 | Fleetes | 1 | raleigh 1 | p01878 |
 | Flocke | 1 | raleigh 1 | p01268 |
 | Flora | 1 | raleigh 1 | p01088 |
 | Florens | 1 | raleigh 1 | p00043 |
 | Florentine | 1 | raleigh 1 | p00938 |
+| Florentines | 1 | raleigh 1 | p02406 |
 | Fluminense | 1 | prose 1 | note:event:first-protestant-church-brazil:summary |
 | Fluuium | 1 | raleigh 1 | p01124 |
 | Fly | 1 | raleigh 1 | p01336 |
@@ -7938,6 +8468,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Furlongs | 1 | raleigh 1 | p01227 |
 | Fut | 1 | raleigh 1 | p01304 |
 | Gaba | 1 | raleigh 1 | p02120 |
+| Gabaath | 1 | raleigh 1 | p02439 |
 | Gabara | 1 | raleigh 1 | p02128 |
 | Gabatus | 1 | raleigh 1 | p02075 |
 | Gaben | 1 | raleigh 1 | p01242 |
@@ -7956,8 +8487,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Galileae | 1 | raleigh 1 | p02103 |
 | Galilees | 1 | raleigh 1 | p02134 |
 | Galiloean | 1 | raleigh 1 | p02123 |
+| Galles | 1 | raleigh 1 | p02551 |
 | Galleys | 1 | raleigh 1 | p01274 |
-| Gallim | 1 | raleigh 1 | p02350 |
 | Gallis | 1 | raleigh 1 | p01175 |
 | Gallowes | 1 | raleigh 1 | p01511 |
 | Galls | 1 | prose 1 | note:person:gomer:description |
@@ -7970,7 +8501,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Gannim | 1 | raleigh 1 | p02136 |
 | Garamantis | 1 | raleigh 1 | p01083 |
 | Garlands | 1 | raleigh 1 | p01741 |
-| Garments | 1 | raleigh 1 | p01882 |
 | Garrisond | 1 | raleigh 1 | p02275 |
 | Garter | 1 | raleigh 1 | p02231 |
 | Gasa | 1 | raleigh 1 | p01342 |
@@ -8021,12 +8551,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Gergesins | 1 | raleigh 1 | p02391 |
 | Gergesion | 1 | raleigh 1 | p01319 |
 | Geris | 1 | raleigh 1 | p01319 |
-| Germanes | 1 | raleigh 1 | p01242 |
 | Germanus | 1 | prose 1 | note:event:germanus-opposes-pelagianism:summary |
 | Gershon | 1 | prose 1 | note:person:levi:summary |
 | Gerson | 1 | raleigh 1 | p01164 |
 | Gertoux | 1 | prose 1 | note:person:tiglath-pileser-iii:description |
 | Gesera | 1 | raleigh 1 | p01319 |
+| Geshur | 1 | raleigh 1 | p02410 |
 | Geshurites | 1 | raleigh 1 | p01867 |
 | Gethaei | 1 | raleigh 1 | p01341 |
 | Getheus | 1 | raleigh 1 | p01057 |
@@ -8037,8 +8567,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Gezar | 1 | raleigh 1 | p02091 |
 | Ghe | 1 | raleigh 1 | p02075 |
 | Giantlike | 1 | raleigh 1 | p01057 |
+| Gibba | 1 | raleigh 1 | p02439 |
+| Gibbath | 1 | raleigh 1 | p02439 |
 | Gibelin | 1 | raleigh 1 | p02307 |
-| Gibha | 1 | raleigh 1 | p00358 |
 | Gibralter | 1 | raleigh 1 | p01222 |
 | Gigantes | 1 | raleigh 1 | p01902 |
 | Giganticall | 1 | raleigh 1 | p01054 |
@@ -8046,7 +8577,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Gigarta | 1 | raleigh 1 | p01227 |
 | Gigas | 1 | raleigh 1 | p01418 |
 | Gilboa | 1 | raleigh 1 | p02064 |
-| Gileadites | 1 | raleigh 1 | p02380 |
 | Gilehaditarum | 1 | raleigh 1 | p02389 |
 | Giles | 1 | raleigh 1 | p02136 |
 | Gindarus | 1 | raleigh 1 | p01363 |
@@ -8063,9 +8593,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Gloriam | 1 | raleigh 1 | p00860 |
 | Gnossus | 1 | raleigh 1 | p01081 |
 | Gnostics | 1 | prose 1 | note:person:irenaeus-of-lyons:summary |
+| Goate | 1 | raleigh 1 | p02490 |
 | Goates | 1 | raleigh 1 | p01785 |
 | Goats | 1 | raleigh 1 | p01082 |
-| Gobah | 1 | raleigh 1 | p00358 |
 | Goddesses | 1 | raleigh 1 | p02038 |
 | Godin | 1 | raleigh 1 | p01971 |
 | Goetia | 1 | raleigh 1 | p01508 |
@@ -8092,7 +8622,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Graecia | 1 | raleigh 1 | p01118 |
 | Graine | 1 | raleigh 1 | p00993 |
 | Grammar | 1 | raleigh 1 | p01715 |
-| Grammarian | 1 | raleigh 1 | p01650 |
 | Gran | 1 | raleigh 1 | p00054 |
 | Grandchild | 1 | raleigh 1 | p00034 |
 | Grandchilde | 1 | raleigh 1 | p01847 |
@@ -8109,6 +8638,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Groecians | 1 | raleigh 1 | p01430 |
 | Groues | 1 | raleigh 1 | p01136 |
 | Group | 1 | prose 1 | note:event:egypt-dynasty-3-memphis:description |
+| Gtlead | 1 | raleigh 1 | p02496 |
 | Guard | 1 | raleigh 1 | p01443 |
 | Guards | 1 | raleigh 1 | p00047 |
 | Guilandinus | 1 | raleigh 1 | p01332 |
@@ -8124,12 +8654,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Guthrum | 1 | prose 1 | note:event:battle-of-edington:summary |
 | Guttiere | 1 | raleigh 1 | p00038 |
 | Guzmaˉ | 1 | raleigh 1 | p00038 |
+| Gyant | 1 | raleigh 1 | p02486 |
 | Gygades | 1 | raleigh 1 | p01227 |
 | Gygean | 1 | raleigh 1 | p01227 |
 | Gygeum | 1 | raleigh 1 | p01227 |
 | Gyttheum | 1 | raleigh 1 | p00782 |
-| Habdon | 1 | raleigh 1 | p02073 |
 | Habitation | 1 | raleigh 1 | p02278 |
+| Haboth | 1 | raleigh 1 | p02536 |
 | Hac | 1 | raleigh 1 | p01260 |
 | Hactenus | 1 | raleigh 1 | p01972 |
 | Hactipos | 1 | raleigh 1 | p02056 |
@@ -8139,11 +8670,10 @@ A name here is a capitalized word of at least three letters, not a function word
 | Haeres | 1 | raleigh 1 | p01159 |
 | Haereticus | 1 | raleigh 1 | p02027 |
 | Hagarims | 1 | raleigh 1 | p02352 |
-| Hai | 1 | raleigh 1 | p01206 |
 | Haijn | 1 | raleigh 1 | p02305 |
 | Hair | 1 | raleigh 1 | p02348 |
 | HALFE | 1 | raleigh 1 | p02142 |
-| Hall | 1 | prose 1 | note:event:surrey-gardens-disaster:summary |
+| Halmon | 1 | raleigh 1 | p02431 |
 | Halyattes | 1 | raleigh 1 | p01227 |
 | Halym | 1 | raleigh 1 | p01522 |
 | Hamah | 1 | raleigh 1 | p01280 |
@@ -8154,6 +8684,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hannah | 1 | prose 1 | note:person:samuel:summary |
 | Hannibals | 1 | raleigh 1 | p00758 |
 | Hannington | 1 | prose 1 | note:event:martyrdom-of-james-hannington:summary |
+| Haomar | 1 | raleigh 1 | p02406 |
 | Hapharaim | 1 | raleigh 1 | p02138 |
 | Harada | 1 | raleigh 1 | p01876 |
 | Harans | 1 | raleigh 1 | p01584 |
@@ -8164,6 +8695,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Harki | 1 | raleigh 1 | p01321 |
 | Harlot | 1 | raleigh 1 | p01539 |
 | Harmonized | 1 | prose 1 | note:event:bali-mazer-tribute-to-shalmaneser-iii:description |
+| Haroseth | 1 | raleigh 1 | p02495 |
+| Harpe | 1 | raleigh 1 | p02488 |
 | Harrowes | 1 | raleigh 1 | p02381 |
 | Hascirim | 1 | raleigh 1 | p01898 |
 | Hasham | 1 | raleigh 1 | p02305 |
@@ -8173,19 +8706,20 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hatroth | 1 | raleigh 1 | p02368 |
 | Hatsmon | 1 | raleigh 1 | p02313 |
 | Hattusili | 1 | prose 1 | note:event:hattusili-i-rebuilds-hattusa:summary |
+| Hauen | 1 | raleigh 1 | p02523 |
 | Hauens | 1 | raleigh 1 | p01692 |
 | Hauilath | 1 | raleigh 1 | p01914 |
 | Haytonus | 1 | raleigh 1 | p01179 |
 | Hazeroth | 1 | raleigh 1 | p01873 |
 | Hazza | 1 | raleigh 1 | p02297 |
 | Hcbron | 1 | raleigh 1 | p02232 |
-| Head | 1 | raleigh 1 | p01876 |
 | Health | 1 | raleigh 1 | p00051 |
 | Hearbs | 1 | raleigh 1 | p01958 |
 | Heard | 1 | raleigh 1 | p00048 |
 | Hearing | 1 | raleigh 1 | p01986 |
 | Hearken | 1 | raleigh 1 | p01907 |
 | Heart | 1 | raleigh 1 | p01712 |
+| Hebal | 1 | raleigh 1 | p02432 |
 | Heblah | 1 | raleigh 1 | p02009 |
 | Hebr | 1 | raleigh 1 | p01718 |
 | Hebraea | 1 | raleigh 1 | p02023 |
@@ -8208,7 +8742,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Heioyneth | 1 | raleigh 1 | p01227 |
 | Helbah | 1 | raleigh 1 | p02063 |
 | Heleb | 1 | raleigh 1 | p02117 |
-| Helena | 1 | raleigh 1 | p00374 |
 | Helens | 1 | raleigh 1 | p01125 |
 | Heliaiedia | 1 | raleigh 1 | p01227 |
 | Helias | 1 | raleigh 1 | p01528 |
@@ -8224,13 +8757,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Heniochij | 1 | raleigh 1 | p01020 |
 | Henochei | 1 | raleigh 1 | p01020 |
 | Henricus | 1 | raleigh 1 | p01128 |
-| Heraclidae | 1 | raleigh 1 | p00388 |
+| Hephrauin | 1 | raleigh 1 | p02436 |
 | Heraldrie | 1 | raleigh 1 | p02187 |
 | Heralds | 1 | raleigh 1 | p01542 |
 | Herbe | 1 | raleigh 1 | p00966 |
 | Herbs | 1 | raleigh 1 | p00966 |
 | Hercutes | 1 | raleigh 1 | p02047 |
-| Herd | 1 | raleigh 1 | p02386 |
 | Herdotus | 1 | raleigh 1 | p01542 |
 | Hereford | 1 | raleigh 1 | p00023 |
 | Hereticall | 1 | raleigh 1 | p02027 |
@@ -8257,13 +8789,17 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hideyoshi | 1 | prose 1 | note:event:twenty-six-martyrs-of-japan:summary |
 | Hierapo | 1 | raleigh 1 | p01228 |
 | Hiercme | 1 | raleigh 1 | p01369 |
+| Hierem | 1 | raleigh 1 | p02433 |
 | Hiericho | 1 | raleigh 1 | p00358 |
 | Hieroglyphicall | 1 | raleigh 1 | p00803 |
+| Hieroglyphick | 1 | raleigh 1 | p02485 |
 | Hieroglyphicks | 1 | raleigh 1 | p02187 |
 | Hieromiace | 1 | raleigh 1 | p02388 |
 | Hieron | 1 | raleigh 1 | p00717 |
 | Hieropolis | 1 | raleigh 1 | p00949 |
+| Hierosolima | 1 | raleigh 1 | p02444 |
 | Hierosolymitan | 1 | raleigh 1 | p01326 |
+| Hierosolymite | 1 | prose 1 | note:person:ierosolymus:description |
 | Higinus | 1 | raleigh 1 | p01069 |
 | Hijra | 1 | prose 1 | note:event:hijra-to-medina:summary |
 | Hilaerius | 1 | raleigh 1 | p01043 |
@@ -8275,9 +8811,11 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hion | 1 | raleigh 1 | p02117 |
 | Hippene | 1 | raleigh 1 | p02390 |
 | Hippion | 1 | raleigh 1 | p02100 |
+| Hipponium | 1 | raleigh 1 | p02476 |
 | Hirams | 1 | raleigh 1 | p02215 |
 | Hiroshima | 1 | prose 1 | note:event:atomic-bombings:summary |
 | Hirotis | 1 | raleigh 1 | p00975 |
+| Hirundines | 1 | raleigh 1 | p02477 |
 | Hispalis | 1 | raleigh 1 | p00975 |
 | Hispania | 1 | raleigh 1 | p01365 |
 | Hispaniola | 1 | prose 1 | note:event:first-missionaries-in-hispaniola:summary |
@@ -8296,6 +8834,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Homily | 1 | raleigh 1 | p01407 |
 | Homines | 1 | raleigh 1 | p01430 |
 | Hominibus | 1 | raleigh 1 | p01168 |
+| Homoloides | 1 | raleigh 1 | p02551 |
 | Honesty | 1 | raleigh 1 | p00003 |
 | Hong | 1 | prose 1 | note:event:burns-arrives-hong-kong:summary |
 | Honny | 1 | raleigh 1 | p00905 |
@@ -8304,6 +8843,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hookes | 1 | raleigh 1 | p01671 |
 | Hophni | 1 | prose 1 | note:event:battle-of-aphek:summary |
 | Hophra | 1 | raleigh 1 | p02150 |
+| Hophram | 1 | raleigh 1 | p02436 |
 | Horem | 1 | raleigh 1 | p02117 |
 | Horite | 1 | raleigh 1 | p01915 |
 | Hormah | 1 | raleigh 1 | p01875 |
@@ -8316,6 +8856,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hosan | 1 | raleigh 1 | p00962 |
 | Hosee | 1 | raleigh 1 | p01686 |
 | Hospital | 1 | prose 1 | note:event:slessor-honoured:summary |
+| Hosts | 1 | raleigh 1 | p02507 |
 | Howle | 1 | raleigh 1 | p02386 |
 | Hsian | 1 | prose 1 | note:event:nestorian-stele-discovered:summary |
 | Hsuan | 1 | prose 1 | note:event:reign-of-hsuan-tsung:summary |
@@ -8334,8 +8875,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hutzi | 1 | raleigh 1 | p02397 |
 | Hyaena | 1 | raleigh 1 | p01151 |
 | Hycsos | 1 | raleigh 1 | p01287 |
+| Hydra | 1 | raleigh 1 | p02519 |
 | Hydromantia | 1 | raleigh 1 | p01513 |
-| Hylas | 1 | raleigh 1 | p01252 |
 | Hymn | 1 | prose 1 | note:person:charles-wesley:summary |
 | Hymne | 1 | raleigh 1 | p01093 |
 | Hymnes | 1 | raleigh 1 | p01083 |
@@ -8348,12 +8889,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Hypocrisie | 1 | raleigh 1 | p00009 |
 | Hypocrite | 1 | raleigh 1 | p02221 |
 | Hypostasis | 1 | raleigh 1 | p00876 |
+| Hypsista | 1 | raleigh 1 | p02551 |
 | Hyrcan | 1 | raleigh 1 | p01177 |
 | Hyrcanian | 1 | raleigh 1 | p01369 |
 | Hyrcanum | 1 | raleigh 1 | p01177 |
 | Hyrcanus | 1 | prose 1 | note:event:hyrcanus-conquers-idumea:summary |
 | Iabesus | 1 | raleigh 1 | p02388 |
-| Iabins | 1 | raleigh 1 | p02091 |
 | Iacan | 1 | raleigh 1 | p01882 |
 | Iacobites | 1 | raleigh 1 | p00962 |
 | Iactus | 1 | raleigh 1 | p01180 |
@@ -8380,13 +8921,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Iasius | 1 | raleigh 1 | p01083 |
 | Iatthir | 1 | raleigh 1 | p02314 |
 | Iaxartus | 1 | raleigh 1 | p01180 |
+| Iay | 1 | raleigh 1 | p02485 |
 | Ibambi | 1 | prose 1 | note:event:ibambi-headquarters:summary |
 | Iberes | 1 | prose 1 | note:person:tubal:description |
 | Iberi | 1 | raleigh 1 | p01230 |
 | Ibijlin | 1 | raleigh 1 | p02279 |
 | Ibleam | 1 | raleigh 1 | p02010 |
 | Ichoahaz | 1 | raleigh 1 | p00485 |
-| Ida | 1 | raleigh 1 | p01191 |
 | Idcircò | 1 | raleigh 1 | p01894 |
 | Idea | 1 | raleigh 1 | p01084 |
 | Idem | 1 | raleigh 1 | p01474 |
@@ -8394,21 +8935,24 @@ A name here is a capitalized word of at least three letters, not a function word
 | Idolatries | 1 | raleigh 1 | p02038 |
 | Idoles | 1 | raleigh 1 | p00958 |
 | Idollgod | 1 | raleigh 1 | p01446 |
-| Idolls | 1 | raleigh 1 | p02047 |
 | Idumea | 1 | prose 1 | note:event:hyrcanus-conquers-idumea:summary |
 | Idumeans | 1 | raleigh 1 | p01883 |
 | Idumsa | 1 | raleigh 1 | p01602 |
 | Jean | 1 | prose 1 | note:event:death-of-jean-de-brebeuf:summary |
+| Iebah | 1 | raleigh 1 | p02439 |
 | Iebusaeus | 1 | raleigh 1 | p01309 |
+| Iebussalem | 1 | raleigh 1 | p02444 |
 | Jechoniah | 1 | prose 1 | note:person:jehoiachin:summary |
 | Iefleti | 1 | raleigh 1 | p02237 |
 | Jehoash | 1 | prose 1 | note:person:joash-of-judah:summary |
 | Iehonathan | 1 | raleigh 1 | p01057 |
+| Iehudae | 1 | raleigh 1 | p02417 |
 | Iephthael | 1 | raleigh 1 | p02131 |
 | Iepiphanolies | 1 | raleigh 1 | p01180 |
 | Iepnaell | 1 | raleigh 1 | p02117 |
 | Ierath | 1 | raleigh 1 | p01375 |
 | Iered | 1 | raleigh 1 | p01575 |
+| Ierichos | 1 | prose 1 | note:person:abiram-son-of-chel:description |
 | Ieroboams | 1 | raleigh 1 | p00409 |
 | Jerome | 1 | prose 1 | note:person:oleaster:description |
 | Jersey | 1 | prose 1 | note:person:david-brainerd:summary |
@@ -8419,6 +8963,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Iethira | 1 | raleigh 1 | p02314 |
 | Iethnam | 1 | raleigh 1 | p02312 |
 | Iethres | 1 | raleigh 1 | p01931 |
+| Iewry | 1 | raleigh 1 | p02433 |
 | Iexanis | 1 | raleigh 1 | p01931 |
 | Iezrael | 1 | raleigh 1 | p02135 |
 | Iiar | 1 | raleigh 1 | p01697 |
@@ -8427,6 +8972,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Iisraelite | 1 | raleigh 1 | p02328 |
 | Ilana | 1 | raleigh 1 | p01688 |
 | Iliad | 1 | prose 1 | note:event:homer-iliad-odyssey:summary |
+| Ilium | 1 | raleigh 1 | p02504 |
 | Illas | 1 | raleigh 1 | p01252 |
 | Illus | 1 | raleigh 1 | p01084 |
 | Ilum | 1 | raleigh 1 | p01083 |
@@ -8480,6 +9026,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Iniuries | 1 | raleigh 1 | p00781 |
 | Iniustice | 1 | raleigh 1 | p01016 |
 | Inke | 1 | raleigh 1 | p01495 |
+| Inlandseas | 1 | raleigh 1 | p02530 |
 | Inne | 1 | raleigh 1 | p00045 |
 | Inno | 1 | raleigh 1 | p01455 |
 | Instructions | 1 | prose 1 | note:event:instructions-of-shuruppak:summary |
@@ -8497,6 +9044,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Iokmeham | 1 | raleigh 1 | p02239 |
 | Ioksham | 1 | raleigh 1 | p01931 |
 | Ioktheel | 1 | raleigh 1 | p01937 |
+| Iolcos | 1 | raleigh 1 | p02529 |
 | Jonah | 1 | prose 1 | note:event:jonah-preaches-in-nineveh:summary |
 | Ionian | 1 | raleigh 1 | p00534 |
 | Ionium | 1 | raleigh 1 | p01204 |
@@ -8505,7 +9053,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Iordanis | 1 | raleigh 1 | p02131 |
 | Iosepbus | 1 | raleigh 1 | p01304 |
 | Iotbath | 1 | raleigh 1 | p01878 |
-| Iotham | 1 | raleigh 1 | p00455 |
 | Iovae | 1 | raleigh 1 | p01069 |
 | Iouiall | 1 | raleigh 1 | p01411 |
 | Ioynture | 1 | raleigh 1 | p01040 |
@@ -8521,12 +9068,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Islanders | 1 | raleigh 1 | p01260 |
 | Ismaclites | 1 | raleigh 1 | p01912 |
 | Ismaelite | 1 | raleigh 1 | p02328 |
+| Ismenus | 1 | raleigh 1 | p02553 |
+| Israele | 1 | raleigh 1 | p02417 |
 | Israelitico | 1 | raleigh 1 | p01697 |
-| Israels | 1 | raleigh 1 | p01629 |
 | Isral | 1 | raleigh 1 | p01871 |
 | Isrelites | 1 | raleigh 1 | p01669 |
 | Issicus | 1 | raleigh 1 | p00949 |
-| Isthmos | 1 | raleigh 1 | p01245 |
 | Istob | 1 | raleigh 1 | p02381 |
 | Istria | 1 | raleigh 1 | p01967 |
 | Italia | 1 | raleigh 1 | p01258 |
@@ -8558,6 +9105,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Iusser | 1 | raleigh 1 | p00958 |
 | Iussum | 1 | raleigh 1 | p01845 |
 | Iust | 1 | raleigh 1 | p01717 |
+| Iustines | 1 | prose 1 | note:person:iudas-with-ierosolymus:description |
 | IVSTINIANVS | 1 | raleigh 1 | p02231 |
 | Iuuencis | 1 | raleigh 1 | p00851 |
 | Iuxta | 1 | raleigh 1 | p00960 |
@@ -8570,11 +9118,11 @@ A name here is a capitalized word of at least three letters, not a function word
 | Kalends | 1 | raleigh 1 | p01677 |
 | Kao | 1 | prose 1 | note:event:death-of-emperor-gaozong:summary |
 | Karkah | 1 | raleigh 1 | p02313 |
-| Karkor | 1 | raleigh 1 | p02367 |
 | Karl | 1 | prose 1 | note:event:birth-of-karl-marx:summary |
 | Karnaijm | 1 | raleigh 1 | p02393 |
 | Kedareni | 1 | raleigh 1 | p01247 |
 | Kedmoth | 1 | raleigh 1 | p02342 |
+| Keepers | 1 | raleigh 1 | p02498 |
 | Kemuels | 1 | raleigh 1 | p01359 |
 | Kenaei | 1 | raleigh 1 | p01323 |
 | Kenaz | 1 | prose 1 | note:event:othniel-judges-israel:summary |
@@ -8591,12 +9139,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Kilian | 1 | prose 1 | note:event:martyrdom-of-kilian:summary |
 | Kimhi | 1 | raleigh 1 | p00966 |
 | Kindes | 1 | raleigh 1 | p00077 |
-| Kine | 1 | raleigh 1 | p02280 |
 | Kinges | 1 | raleigh 1 | p00026 |
 | Kinsman | 1 | raleigh 1 | p01459 |
 | Kirharaseth | 1 | raleigh 1 | p02259 |
 | Kiriathaijm | 1 | raleigh 1 | p02115 |
 | Kiriathaima | 1 | raleigh 1 | p02348 |
+| Kiriathsepher | 1 | raleigh 1 | p02465 |
 | Kishon | 1 | prose 1 | note:event:deborah-and-barak:summary |
 | Kite | 1 | raleigh 1 | p01496 |
 | Kitron | 1 | raleigh 1 | p02010 |
@@ -8611,7 +9159,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Kyushu | 1 | prose 1 | note:event:chinese-messengers-to-kyushu:summary |
 | Labourers | 1 | raleigh 1 | p01026 |
 | Labouring | 1 | raleigh 1 | p01813 |
-| Labyrinth | 1 | raleigh 1 | p01552 |
+| Labynitus | 1 | raleigh 1 | p02425 |
 | Lacas | 1 | raleigh 1 | p01191 |
 | Lacbis | 1 | raleigh 1 | p01997 |
 | Laccdaemonians | 1 | raleigh 1 | p00589 |
@@ -8623,7 +9171,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Laena | 1 | raleigh 1 | p01688 |
 | Laiazzo | 1 | raleigh 1 | p00949 |
 | Laijsch | 1 | raleigh 1 | p02093 |
-| Laish | 1 | raleigh 1 | p02093 |
 | Lakkum | 1 | raleigh 1 | p02117 |
 | Lamban | 1 | raleigh 1 | p02345 |
 | Lambe | 1 | raleigh 1 | p01669 |
@@ -8636,7 +9183,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Landside | 1 | raleigh 1 | p02048 |
 | Laodemia | 1 | raleigh 1 | p01083 |
 | Laodicene | 1 | raleigh 1 | p01605 |
-| Lapythae | 1 | raleigh 1 | p00369 |
 | Lar | 1 | raleigh 1 | p01333 |
 | Larger | 1 | prose 1 | note:event:westminster-confession-of-faith:summary |
 | Larnassus | 1 | raleigh 1 | p01142 |
@@ -8647,12 +9193,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Latini | 1 | raleigh 1 | p00459 |
 | Latio | 1 | raleigh 1 | p00952 |
 | Latitudo | 1 | raleigh 1 | p01005 |
-| Latona | 1 | raleigh 1 | p01112 |
 | Laud | 1 | prose 1 | note:person:lud:description |
 | Laudamus | 1 | raleigh 1 | p01846 |
 | Laudites | 1 | prose 1 | note:person:lud:description |
+| Lauinium | 1 | raleigh 1 | p02542 |
 | Lauinius | 1 | raleigh 1 | p01235 |
 | Laurentia | 1 | raleigh 1 | p01088 |
+| Laurentum | 1 | raleigh 1 | p02542 |
 | Lawgiuer | 1 | raleigh 1 | p01159 |
 | Lawmakers | 1 | raleigh 1 | p01836 |
 | Leading | 1 | prose 1 | note:person:pericles:summary |
@@ -8671,7 +9218,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Lehem | 1 | raleigh 1 | p02323 |
 | Leicestershire | 1 | raleigh 1 | p01274 |
 | Lemniae | 1 | raleigh 1 | p01191 |
-| Lemnos | 1 | raleigh 1 | p01191 |
 | Lemster | 1 | raleigh 1 | p02155 |
 | Leon | 1 | raleigh 1 | p00040 |
 | Leontes | 1 | raleigh 1 | p02080 |
@@ -8711,7 +9257,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Locall | 1 | raleigh 1 | p01846 |
 | Locum | 1 | raleigh 1 | p02375 |
 | Locus | 1 | raleigh 1 | p01430 |
-| Lod | 1 | raleigh 1 | p01970 |
+| Lodhadid | 1 | raleigh 1 | p02429 |
 | Loe | 1 | raleigh 1 | p01567 |
 | Lollard | 1 | prose 1 | note:event:william-sawtrey-burned:summary |
 | Lollards | 1 | prose 1 | note:person:john-wycliffe:summary |
@@ -8721,6 +9267,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Longinque | 1 | raleigh 1 | p01219 |
 | Loraes | 1 | raleigh 1 | p00018 |
 | Lordhath | 1 | raleigh 1 | p01857 |
+| Lottes | 1 | raleigh 1 | p02541 |
 | Low | 1 | raleigh 1 | p00043 |
 | Loyes | 1 | raleigh 1 | p00035 |
 | Lubaei | 1 | raleigh 1 | p01338 |
@@ -8731,7 +9278,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Lucernam | 1 | raleigh 1 | p00058 |
 | Lucifer | 1 | raleigh 1 | p01052 |
 | Lucilius | 1 | raleigh 1 | p00898 |
-| Lucretius | 1 | raleigh 1 | p01528 |
+| Lucina | 1 | raleigh 1 | p02542 |
 | Lucrinus | 1 | raleigh 1 | p01241 |
 | Luctatius | 1 | raleigh 1 | p00723 |
 | Lucullus | 1 | raleigh 1 | p01242 |
@@ -8766,12 +9313,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Machmata | 1 | raleigh 1 | p02145 |
 | Macrob | 1 | raleigh 1 | p02038 |
 | Macrobioi | 1 | raleigh 1 | p00938 |
-| Macrobius | 1 | raleigh 1 | p01191 |
 | Made | 1 | raleigh 1 | p01259 |
 | Madeans | 1 | prose 1 | note:person:madai:description |
 | Madeira | 1 | prose 1 | note:person:robert-reid-kalley:summary |
 | Madon | 1 | raleigh 1 | p01928 |
 | Maecedonians | 1 | raleigh 1 | p02194 |
+| Maeones | 1 | raleigh 1 | p02480 |
 | Maffaeus | 1 | raleigh 1 | p01040 |
 | Magasine | 1 | raleigh 1 | p02136 |
 | Magdalel | 1 | raleigh 1 | p02116 |
@@ -8799,6 +9346,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Mahuiael | 1 | raleigh 1 | p01028 |
 | Maich | 1 | raleigh 1 | p01070 |
 | Maid | 1 | raleigh 1 | p01001 |
+| Maidens | 1 | raleigh 1 | p02496 |
 | Maie | 1 | raleigh 1 | p01674 |
 | Maiestatem | 1 | raleigh 1 | p01971 |
 | Maine | 1 | raleigh 1 | p01324 |
@@ -8815,6 +9363,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Malcha | 1 | raleigh 1 | p00978 |
 | Males | 1 | raleigh 1 | p02216 |
 | Malindi | 1 | prose 1 | note:event:vasco-da-gama-east-africa:summary |
+| Mammalukes | 1 | raleigh 1 | p02408 |
 | Manassites | 1 | raleigh 1 | p02375 |
 | Mang | 1 | prose 1 | note:event:wang-mang-rules-china:summary |
 | Manichaean | 1 | raleigh 1 | p01511 |
@@ -8828,6 +9377,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Mansions | 1 | raleigh 1 | p01098 |
 | Mantatee | 1 | prose 1 | note:event:mantatee-invasion:summary |
 | Manuel | 1 | prose 1 | note:event:nobrega-mission-to-brazil:summary |
+| Mar | 1 | raleigh 1 | p02502 |
 | Mara | 1 | raleigh 1 | p02346 |
 | Marbech | 1 | raleigh 1 | p02085 |
 | Marcellinus | 1 | raleigh 1 | p02231 |
@@ -8872,7 +9422,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Mast | 1 | raleigh 1 | p00868 |
 | Mastership | 1 | raleigh 1 | p01392 |
 | Masurit | 1 | raleigh 1 | p01877 |
-| Mat | 1 | raleigh 1 | p02391 |
 | Mataeotechnia | 1 | raleigh 1 | p01513 |
 | Materiall | 1 | raleigh 1 | p00064 |
 | Mathana | 1 | raleigh 1 | p02350 |
@@ -8894,6 +9443,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Mazar | 1 | raleigh 1 | p01655 |
 | McCheyne | 1 | prose 1 | note:event:mccheyne-bonar-mission:summary |
 | Mcsopotamia | 1 | raleigh 1 | p00245 |
+| Meane | 1 | raleigh 1 | p02529 |
 | Meca | 1 | raleigh 1 | p01688 |
 | Mechaschephim | 1 | raleigh 1 | p01492 |
 | Mechasuan | 1 | raleigh 1 | p01674 |
@@ -8912,7 +9462,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Medius | 1 | raleigh 1 | p00949 |
 | Mee | 1 | raleigh 1 | p00002 |
 | Meeknesse | 1 | raleigh 1 | p00898 |
-| Megara | 1 | raleigh 1 | p01245 |
+| Megariens | 1 | raleigh 1 | p02489 |
 | Meggado | 1 | raleigh 1 | p02010 |
 | Megido | 1 | raleigh 1 | p02091 |
 | Megistanes | 1 | raleigh 1 | p01405 |
@@ -8936,15 +9486,16 @@ A name here is a capitalized word of at least three letters, not a function word
 | Merachefet | 1 | raleigh 1 | p00823 |
 | Mercatoribus | 1 | raleigh 1 | p00949 |
 | Mercians | 1 | prose 1 | note:event:death-of-aethelflaed:summary |
-| Mercie | 1 | raleigh 1 | p01856 |
 | Mercifull | 1 | raleigh 1 | p00877 |
 | Mercy | 1 | raleigh 1 | p00051 |
+| Mergi | 1 | raleigh 1 | p02477 |
 | Meridiae | 1 | raleigh 1 | p01177 |
 | Meritò | 1 | raleigh 1 | p01852 |
 | Mermaide | 1 | raleigh 1 | p01228 |
 | Mermnadae | 1 | prose 1 | note:person:gyges:summary |
 | Meropes | 1 | raleigh 1 | p01434 |
 | Meros | 1 | raleigh 1 | p01202 |
+| Meroz | 1 | raleigh 1 | p02496 |
 | Mersin | 1 | raleigh 1 | p01303 |
 | Mesa | 1 | prose 1 | note:person:mash:description |
 | Mesaneans | 1 | prose 1 | note:person:mash:description |
@@ -8961,6 +9512,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Messenger | 1 | raleigh 1 | p01790 |
 | Messeniacks | 1 | raleigh 1 | p00864 |
 | Messenian | 1 | raleigh 1 | p00480 |
+| Messtas | 1 | raleigh 1 | p02567 |
 | Mestre | 1 | prose 1 | note:person:mizraim:description |
 | Mestreans | 1 | prose 1 | note:person:mizraim:description |
 | Metals | 1 | raleigh 1 | p01230 |
@@ -8974,6 +9526,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Metonymia | 1 | raleigh 1 | p01770 |
 | Metrodorus | 1 | raleigh 1 | p00934 |
 | Metropolitae | 1 | raleigh 1 | p00961 |
+| Mexican | 1 | prose 1 | note:person:ferdinando-cortes:description |
+| Mexicans | 1 | raleigh 1 | p02535 |
 | Mezahab | 1 | raleigh 1 | p02345 |
 | Mezre | 1 | raleigh 1 | p01627 |
 | Micenae | 1 | prose 1 | note:person:agamemnon:summary |
@@ -8984,6 +9538,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Microcosmus | 1 | raleigh 1 | p00876 |
 | Midrash | 1 | prose 1 | note:event:joseph-made-vizier:description |
 | Mieszko | 1 | prose 1 | note:event:baptism-of-mieszko:summary |
+| Migrom | 1 | raleigh 1 | p02440 |
 | Milesian | 1 | raleigh 1 | p01963 |
 | Militem | 1 | raleigh 1 | p02060 |
 | Millanoise | 1 | raleigh 1 | p01496 |
@@ -8992,7 +9547,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Milyada | 1 | raleigh 1 | p01159 |
 | Minds | 1 | raleigh 1 | p00885 |
 | Mines | 1 | raleigh 1 | p01230 |
-| Minnith | 1 | raleigh 1 | p02375 |
 | Minoan | 1 | prose 1 | note:event:minoan-civilization:summary |
 | Minor | 1 | raleigh 1 | p01159 |
 | Minutius | 1 | raleigh 1 | p00742 |
@@ -9007,6 +9561,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Mistris | 1 | raleigh 1 | p01857 |
 | Mitanni | 1 | prose 1 | note:event:adad-nirari-i-attacks-hittites:summary |
 | Mitspae | 1 | raleigh 1 | p02374 |
+| Mitspaeanteà | 1 | raleigh 1 | p02433 |
 | Mitspah | 1 | raleigh 1 | p02374 |
 | Mizpah | 1 | prose 1 | note:event:battle-of-mizpah:summary |
 | Mizram | 1 | raleigh 1 | p01913 |
@@ -9035,6 +9590,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Monasteries | 1 | raleigh 1 | p01709 |
 | Monestarie | 1 | raleigh 1 | p00035 |
 | Monethly | 1 | raleigh 1 | p01676 |
+| Money | 1 | raleigh 1 | p02546 |
 | Mongolia | 1 | prose 1 | note:event:marignola-mission:summary |
 | Mongols | 1 | prose 1 | note:event:ming-restoration-1368:summary |
 | Monica | 1 | prose 1 | note:event:augustine-delayed-at-ostia:summary |
@@ -9048,7 +9604,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Montigue | 1 | raleigh 1 | p00043 |
 | Montmorency | 1 | raleigh 1 | p00043 |
 | Moph | 1 | raleigh 1 | p01655 |
-| Morea | 1 | raleigh 1 | p01287 |
 | Mortar | 1 | raleigh 1 | p00017 |
 | Mortimer | 1 | raleigh 1 | p00016 |
 | Morton | 1 | prose 1 | note:event:stanley-meets-mutesa:summary |
@@ -9085,12 +9640,14 @@ A name here is a capitalized word of at least three letters, not a function word
 | Muses | 1 | raleigh 1 | p00981 |
 | Music | 1 | prose 1 | note:event:surrey-gardens-disaster:summary |
 | Musicall | 1 | raleigh 1 | p01975 |
+| Musician | 1 | raleigh 1 | p02469 |
 | Musicians | 1 | raleigh 1 | p01029 |
 | Musick | 1 | raleigh 1 | p01070 |
 | Mutiny | 1 | prose 1 | note:event:indian-mutiny:summary |
 | Muziris | 1 | prose 1 | note:event:church-at-muziris:summary |
+| Mycaenae | 1 | raleigh 1 | p02497 |
 | Mycale | 1 | raleigh 1 | p00546 |
-| Mycenaean | 1 | prose 1 | note:event:mycenaean-civilization:summary |
+| Mycoenae | 1 | raleigh 1 | p02498 |
 | Mynes | 1 | raleigh 1 | p00066 |
 | Myris | 1 | raleigh 1 | p00471 |
 | Mysteries | 1 | raleigh 1 | p01988 |
@@ -9114,7 +9671,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Nahash | 1 | prose 1 | note:event:saul-made-king:summary |
 | Nailes | 1 | raleigh 1 | p00069 |
 | Naim | 1 | raleigh 1 | p02138 |
-| Naioth | 1 | raleigh 1 | p02239 |
 | Nakednesse | 1 | raleigh 1 | p00077 |
 | Nakhunte | 1 | prose 1 | note:event:shutruk-nakhunte-raids-babylon:summary |
 | Nammu | 1 | prose 1 | note:person:naamah:description |
@@ -9152,6 +9708,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Neeces | 1 | raleigh 1 | p00015 |
 | Negros | 1 | raleigh 1 | p01336 |
 | Neha | 1 | raleigh 1 | p02122 |
+| Nehe | 1 | raleigh 1 | p02439 |
+| Nehemia | 1 | raleigh 1 | p02429 |
 | Nehiel | 1 | raleigh 1 | p02073 |
 | Nekeb | 1 | raleigh 1 | p02117 |
 | Nekheb | 1 | prose 1 | note:person:paheri:summary |
@@ -9164,11 +9722,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Nepos | 1 | raleigh 1 | p01118 |
 | Nepthalims | 1 | raleigh 1 | p02009 |
 | Nequis | 1 | raleigh 1 | p01205 |
+| Nereides | 1 | raleigh 1 | p02529 |
 | Nergal | 1 | raleigh 1 | p01455 |
 | Neronia | 1 | raleigh 1 | p02094 |
 | Neroniada | 1 | raleigh 1 | p02094 |
 | Nesciunt | 1 | raleigh 1 | p00049 |
 | Nesichthon | 1 | raleigh 1 | p01223 |
+| Nethinaei | 1 | raleigh 1 | p02439 |
 | Newgrange | 1 | prose 1 | note:event:newgrange-built:summary |
 | Neyper | 1 | raleigh 1 | p01180 |
 | Nguema | 1 | prose 1 | note:event:nguema-seizes-power:summary |
@@ -9201,7 +9761,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Noachus | 1 | raleigh 1 | p01137 |
 | Noarus | 1 | raleigh 1 | p01138 |
 | Noas | 1 | raleigh 1 | p01138 |
-| Nob | 1 | raleigh 1 | p02367 |
 | Nobe | 1 | raleigh 1 | p02367 |
 | Nobiles | 1 | raleigh 1 | p01413 |
 | Nobilitate | 1 | raleigh 1 | p01413 |
@@ -9242,7 +9801,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Nunquàm | 1 | raleigh 1 | p01411 |
 | Nurce | 1 | raleigh 1 | p02203 |
 | Nymphe | 1 | raleigh 1 | p01142 |
-| Nymphes | 1 | raleigh 1 | p01084 |
 | Nysaei | 1 | raleigh 1 | p01140 |
 | Nyseus | 1 | raleigh 1 | p01201 |
 | Nysius | 1 | raleigh 1 | p01137 |
@@ -9265,11 +9823,14 @@ A name here is a capitalized word of at least three letters, not a function word
 | Ocnotrius | 1 | raleigh 1 | p01120 |
 | Octauius | 1 | raleigh 1 | p00798 |
 | Odoacer | 1 | prose 1 | note:event:death-of-odoacer:summary |
+| Odrysius | 1 | raleigh 1 | p02477 |
 | Odysees | 1 | raleigh 1 | p01965 |
 | Odysses | 1 | raleigh 1 | p01287 |
 | Odyssey | 1 | prose 1 | note:event:homer-iliad-odyssey:summary |
 | Oenopia | 1 | raleigh 1 | p01083 |
-| Offerings | 1 | raleigh 1 | p00294 |
+| Oeta | 1 | raleigh 1 | p02476 |
+| Ogygian | 1 | raleigh 1 | p02551 |
+| Oke | 1 | raleigh 1 | p02526 |
 | Okenitzkilies | 1 | raleigh 1 | p01180 |
 | Oldcastle | 1 | prose 1 | note:event:oldcastle-rebellion:summary |
 | Olga | 1 | prose 1 | note:event:baptism-of-olga:summary |
@@ -9286,6 +9847,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Onium | 1 | raleigh 1 | p01654 |
 | Onomasticum | 1 | raleigh 1 | p01418 |
 | Onyx | 1 | raleigh 1 | p00977 |
+| Opheltus | 1 | raleigh 1 | p02550 |
+| Ophra | 1 | raleigh 1 | p02510 |
 | Opiniators | 1 | raleigh 1 | p01055 |
 | Opir | 1 | raleigh 1 | p01375 |
 | Opotos | 1 | raleigh 1 | p02100 |
@@ -9298,9 +9861,10 @@ A name here is a capitalized word of at least three letters, not a function word
 | Ora | 1 | raleigh 1 | p01083 |
 | Oraculorum | 1 | raleigh 1 | p01511 |
 | Oranges | 1 | raleigh 1 | p02356 |
+| Orationifuerat | 1 | raleigh 1 | p02433 |
+| Oratorie | 1 | raleigh 1 | p02458 |
 | Orchens | 1 | raleigh 1 | p01945 |
 | Orchoa | 1 | raleigh 1 | p01239 |
-| Orchomenus | 1 | raleigh 1 | p01963 |
 | Ordinance | 1 | raleigh 1 | p01845 |
 | Ordinary | 1 | raleigh 1 | p00026 |
 | Ordnance | 1 | raleigh 1 | p01164 |
@@ -9313,17 +9877,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Orientis | 1 | raleigh 1 | p01180 |
 | Orighteous | 1 | raleigh 1 | p00823 |
 | Originall | 1 | raleigh 1 | p00881 |
-| Orithya | 1 | raleigh 1 | p00365 |
 | Ornaments | 1 | raleigh 1 | p01098 |
 | Orontius | 1 | raleigh 1 | p00840 |
 | Orphus | 1 | raleigh 1 | p00922 |
 | Orta | 1 | raleigh 1 | p01727 |
 | Orthodoxe | 1 | raleigh 1 | p02231 |
+| Osia | 1 | raleigh 1 | p02424 |
 | Osiri | 1 | raleigh 1 | p01629 |
 | Osiriana | 1 | raleigh 1 | p01287 |
 | Osman | 1 | prose 1 | note:event:ottoman-empire-begins:summary |
 | Osochores | 1 | raleigh 1 | p02247 |
 | Ostia | 1 | prose 1 | note:event:augustine-delayed-at-ostia:summary |
+| Ostracismum | 1 | raleigh 1 | p02541 |
 | Ottoman | 1 | prose 1 | note:event:ottoman-empire-begins:summary |
 | Overthrow | 1 | prose 1 | note:event:overthrow-of-hawaiian-kingdom:summary |
 | Ounce | 1 | raleigh 1 | p01151 |
@@ -9334,6 +9899,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Paedagogia | 1 | raleigh 1 | p01734 |
 | Pagani | 1 | raleigh 1 | p01447 |
 | Page | 1 | raleigh 1 | p02153 |
+| Pageant | 1 | raleigh 1 | p02514 |
 | Pages | 1 | raleigh 1 | p01988 |
 | Pagidas | 1 | raleigh 1 | p02075 |
 | Pagis | 1 | raleigh 1 | p00961 |
@@ -9349,7 +9915,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Palestine | 1 | raleigh 1 | p02051 |
 | Pallace | 1 | raleigh 1 | p00035 |
 | Palmae | 1 | raleigh 1 | p00972 |
-| Palmes | 1 | raleigh 1 | p00972 |
 | Palmitto | 1 | raleigh 1 | p01737 |
 | Palmvrena | 1 | raleigh 1 | p01605 |
 | Palmyrene | 1 | raleigh 1 | p02397 |
@@ -9357,6 +9922,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Pamine | 1 | raleigh 1 | p00600 |
 | Pamphylius | 1 | raleigh 1 | p01469 |
 | Panario | 1 | raleigh 1 | p01635 |
+| Pandar | 1 | raleigh 1 | p02515 |
 | Paneum | 1 | raleigh 1 | p02094 |
 | Paniae | 1 | raleigh 1 | p02094 |
 | Pannier | 1 | raleigh 1 | p02327 |
@@ -9369,19 +9935,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Paphlagones | 1 | raleigh 1 | p01254 |
 | Paphlagonians | 1 | prose 1 | note:person:riphath:description |
 | Paphos | 1 | raleigh 1 | p01455 |
+| Paphus | 1 | raleigh 1 | p02469 |
 | Papists | 1 | raleigh 1 | p01454 |
 | Papyrianae | 1 | raleigh 1 | p01844 |
 | Papyrus | 1 | prose 1 | note:event:kahun-medical-papyrus:summary |
 | Paradisi | 1 | raleigh 1 | p00966 |
 | Paradox | 1 | raleigh 1 | p01642 |
-| Paradoxe | 1 | raleigh 1 | p02216 |
 | Paraguay | 1 | prose 1 | note:person:wilfrid-barbrooke-grubb:summary |
 | Parai | 1 | raleigh 1 | p01143 |
 | Paralus | 1 | raleigh 1 | p01223 |
 | Param | 1 | raleigh 1 | p01871 |
 | Paramor | 1 | raleigh 1 | p01609 |
 | Parath | 1 | raleigh 1 | p00978 |
-| Parchment | 1 | raleigh 1 | p01413 |
 | Pardons | 1 | raleigh 1 | p00017 |
 | Parentage | 1 | raleigh 1 | p00238 |
 | Pariedri | 1 | raleigh 1 | p01189 |
@@ -9389,7 +9954,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Parmenio | 1 | raleigh 1 | p00639 |
 | Parnium | 1 | raleigh 1 | p02094 |
 | Paro | 1 | raleigh 1 | p01021 |
-| Parthian | 1 | raleigh 1 | p01098 |
+| Parphar | 1 | raleigh 1 | p02406 |
+| Parthenius | 1 | raleigh 1 | p02525 |
 | Partholan | 1 | prose 1 | note:event:partholan-colonizes-ireland:summary |
 | Particularly | 1 | raleigh 1 | p01057 |
 | Pasi | 1 | raleigh 1 | p00968 |
@@ -9404,18 +9970,18 @@ A name here is a capitalized word of at least three letters, not a function word
 | Patient | 1 | raleigh 1 | p01609 |
 | Patrem | 1 | raleigh 1 | p01971 |
 | Patrian | 1 | raleigh 1 | p01455 |
-| Patriarches | 1 | raleigh 1 | p01563 |
 | Patriarkes | 1 | raleigh 1 | p02144 |
 | Patric | 1 | raleigh 1 | p02060 |
+| Patricide | 1 | raleigh 1 | p02498 |
 | Patricius | 1 | raleigh 1 | p00830 |
 | Patron | 1 | raleigh 1 | p02047 |
 | Patterne | 1 | raleigh 1 | p01722 |
 | Patternes | 1 | raleigh 1 | p00026 |
 | Paulinus | 1 | raleigh 1 | p01484 |
+| PAVLO | 1 | raleigh 1 | p02484 |
 | Pay | 1 | raleigh 1 | p00043 |
 | Pedestals | 1 | raleigh 1 | p02094 |
 | Peeres | 1 | raleigh 1 | p00023 |
-| Pegasus | 1 | raleigh 1 | p01511 |
 | Pekahs | 1 | raleigh 1 | p02269 |
 | Pelasgi | 1 | raleigh 1 | p01120 |
 | Peleset | 1 | raleigh 1 | p01339 |
@@ -9432,7 +9998,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Pensill | 1 | raleigh 1 | p01451 |
 | Pensioner | 1 | raleigh 1 | p00042 |
 | Pentecost | 1 | prose 1 | note:event:korean-pentecost:summary |
-| Penuel | 1 | raleigh 1 | p02375 |
 | Perchance | 1 | raleigh 1 | p01019 |
 | Percrius | 1 | raleigh 1 | p01603 |
 | Percutiens | 1 | raleigh 1 | p02064 |
@@ -9441,7 +10006,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Perinthus | 1 | raleigh 1 | p00619 |
 | Periods | 1 | raleigh 1 | p01676 |
 | Peripateticall | 1 | raleigh 1 | p01984 |
-| Perizites | 1 | raleigh 1 | p01704 |
 | Peron | 1 | raleigh 1 | p00035 |
 | Perorsi | 1 | raleigh 1 | p00985 |
 | Perpetua | 1 | prose 1 | note:event:martyrdom-of-perpetua-and-felicitas:summary |
@@ -9543,6 +10107,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Players | 1 | raleigh 1 | p00054 |
 | Pleas | 1 | raleigh 1 | p01846 |
 | Plebiscita | 1 | raleigh 1 | p01844 |
+| Plentie | 1 | raleigh 1 | p02495 |
 | Pluperfect | 1 | prose 1 | note:event:shalmaneser-iii-defeats-hazael:description |
 | Plural | 1 | raleigh 1 | p00818 |
 | Plutschau | 1 | prose 1 | note:event:tranquebar-mission:summary |
@@ -9551,6 +10116,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | POEMANDRO | 1 | raleigh 1 | p00835 |
 | Poetarum | 1 | raleigh 1 | p01447 |
 | Poeticall | 1 | raleigh 1 | p01023 |
+| Poetically | 1 | raleigh 1 | p02530 |
 | Polac | 1 | raleigh 1 | p01254 |
 | Poland | 1 | prose 1 | note:event:baptism-of-mieszko:summary |
 | Pole | 1 | raleigh 1 | p00995 |
@@ -9569,6 +10135,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Pomfret | 1 | raleigh 1 | p00023 |
 | Pomoeria | 1 | raleigh 1 | p01136 |
 | Pomona | 1 | raleigh 1 | p00944 |
+| Poniard | 1 | raleigh 1 | p02474 |
 | Ponti | 1 | raleigh 1 | p01189 |
 | Ponticam | 1 | raleigh 1 | p01231 |
 | Pontificio | 1 | raleigh 1 | p01526 |
@@ -9601,6 +10168,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Praedecessor | 1 | raleigh 1 | p00026 |
 | Praeerant | 1 | raleigh 1 | p01492 |
 | Praeface | 1 | raleigh 1 | p00960 |
+| Praesectures | 1 | raleigh 1 | p02436 |
 | Praeses | 1 | raleigh 1 | p02155 |
 | Praeter | 1 | raleigh 1 | p00865 |
 | Prayer | 1 | raleigh 1 | p00852 |
@@ -9623,8 +10191,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Primacie | 1 | raleigh 1 | p02036 |
 | Prime | 1 | raleigh 1 | p01175 |
 | Primitiue | 1 | raleigh 1 | p02221 |
-| Principalitie | 1 | raleigh 1 | p01665 |
-| Principalities | 1 | raleigh 1 | p02166 |
 | Principe | 1 | raleigh 1 | p01407 |
 | Principia | 1 | raleigh 1 | p00057 |
 | Principio | 1 | raleigh 1 | p00809 |
@@ -9639,6 +10205,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Probable | 1 | raleigh 1 | p00418 |
 | Probleme | 1 | raleigh 1 | p00710 |
 | Proclamation | 1 | prose 1 | note:event:emancipation-proclamation:summary |
+| Proëtis | 1 | raleigh 1 | p02551 |
 | Profession | 1 | raleigh 1 | p01470 |
 | Professors | 1 | raleigh 1 | p01506 |
 | Professours | 1 | raleigh 1 | p00961 |
@@ -9650,17 +10217,15 @@ A name here is a capitalized word of at least three letters, not a function word
 | Pronince | 1 | raleigh 1 | p01188 |
 | Pronoia | 1 | raleigh 1 | p00858 |
 | Prophane | 1 | raleigh 1 | p01457 |
-| Prophecies | 1 | raleigh 1 | p00785 |
 | Prophers | 1 | raleigh 1 | p00920 |
 | Propheta | 1 | raleigh 1 | p00889 |
 | Prophetae | 1 | raleigh 1 | p01526 |
 | Prophetam | 1 | raleigh 1 | p01129 |
-| Prophetesse | 1 | raleigh 1 | p02091 |
 | Prophetia | 1 | raleigh 1 | p01465 |
-| Propheticall | 1 | raleigh 1 | p01907 |
 | Propontis | 1 | raleigh 1 | p01204 |
 | Proprietas | 1 | raleigh 1 | p01392 |
 | Proprietie | 1 | raleigh 1 | p01392 |
+| Proselites | 1 | raleigh 1 | p02439 |
 | Prosperity | 1 | raleigh 1 | p00003 |
 | Protagoras | 1 | raleigh 1 | p01069 |
 | Protaidis | 1 | raleigh 1 | p01653 |
@@ -9673,6 +10238,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Prouidentia | 1 | raleigh 1 | p00070 |
 | Prouidentiam | 1 | raleigh 1 | p00058 |
 | Prouinciae | 1 | raleigh 1 | p02027 |
+| Prowe | 1 | raleigh 1 | p02470 |
 | Psammiticus | 1 | raleigh 1 | p00478 |
 | Pto | 1 | raleigh 1 | p02100 |
 | Ptolemaeus | 1 | prose 1 | note:person:inachus:summary |
@@ -9693,7 +10259,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Pyndarus | 1 | raleigh 1 | p00922 |
 | Pyongyang | 1 | prose 1 | note:event:korean-pentecost:summary |
 | Pyramis | 1 | raleigh 1 | p01446 |
-| Pyrates | 1 | raleigh 1 | p01098 |
+| Pyrate | 1 | raleigh 1 | p02490 |
 | Pyrenae | 1 | raleigh 1 | p01182 |
 | Pyrenian | 1 | raleigh 1 | p01199 |
 | Pyrenyes | 1 | raleigh 1 | p02343 |
@@ -9710,9 +10276,9 @@ A name here is a capitalized word of at least three letters, not a function word
 | Quarrels | 1 | raleigh 1 | p00656 |
 | Quarum | 1 | raleigh 1 | p00862 |
 | Quasi | 1 | raleigh 1 | p00875 |
+| Queenes | 1 | raleigh 1 | p02411 |
 | Quercetum | 1 | raleigh 1 | p02117 |
 | Question | 1 | raleigh 1 | p01518 |
-| Quia | 1 | raleigh 1 | p01136 |
 | Quianunquam | 1 | raleigh 1 | p01091 |
 | Quicquid | 1 | raleigh 1 | p00052 |
 | Quidam | 1 | raleigh 1 | p01185 |
@@ -9736,6 +10302,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Rahma | 1 | raleigh 1 | p01332 |
 | Raigned | 1 | raleigh 1 | p02272 |
 | Rakiagh | 1 | raleigh 1 | p00839 |
+| Ramathaim | 1 | raleigh 1 | p02437 |
 | Ramban | 1 | raleigh 1 | p00912 |
 | Rammes | 1 | raleigh 1 | p02362 |
 | Rampire | 1 | raleigh 1 | p01531 |
@@ -9750,6 +10317,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Raquia | 1 | raleigh 1 | p00839 |
 | Rarotonga | 1 | prose 1 | note:event:williams-reaches-rarotonga:summary |
 | Rarotongan | 1 | prose 1 | note:event:rarotongan-new-testament:summary |
+| Rases | 1 | raleigh 1 | p02419 |
 | Rather | 1 | raleigh 1 | p01171 |
 | Rationall | 1 | raleigh 1 | p00891 |
 | Rats | 1 | raleigh 1 | p00009 |
@@ -9848,6 +10416,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Ripheans | 1 | prose 1 | note:person:riphath:description |
 | Rise | 1 | raleigh 1 | p01871 |
 | Rites | 1 | raleigh 1 | p01211 |
+| Robberies | 1 | raleigh 1 | p02547 |
 | Robbers | 1 | raleigh 1 | p01232 |
 | Robbine | 1 | raleigh 1 | p01146 |
 | Rocks | 1 | raleigh 1 | p02276 |
@@ -9914,10 +10483,10 @@ A name here is a capitalized word of at least three letters, not a function word
 | Salisbury | 1 | raleigh 1 | p00023 |
 | Salissa | 1 | raleigh 1 | p02365 |
 | Sallum | 1 | raleigh 1 | p00450 |
-| Salmanasar | 1 | prose 1 | note:person:elulaeus:summary |
 | Salmasti | 1 | raleigh 1 | p00961 |
 | Salmastus | 1 | raleigh 1 | p00961 |
 | Salmon | 1 | raleigh 1 | p02242 |
+| Salmydessus | 1 | raleigh 1 | p02524 |
 | Salnt | 1 | raleigh 1 | p00850 |
 | Salomo | 1 | raleigh 1 | p02240 |
 | Salomonilatitudinem | 1 | raleigh 1 | p00028 |
@@ -9928,6 +10497,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Samaraijm | 1 | raleigh 1 | p01326 |
 | Samaraim | 1 | raleigh 1 | p01326 |
 | Samarians | 1 | raleigh 1 | p01344 |
+| Samarim | 1 | raleigh 1 | p02430 |
+| Samaritan | 1 | raleigh 1 | p02436 |
 | Samaritanes | 1 | raleigh 1 | p01326 |
 | Samir | 1 | raleigh 1 | p02230 |
 | Samnites | 1 | raleigh 1 | p01118 |
@@ -9936,6 +10507,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Samothraces | 1 | raleigh 1 | p01125 |
 | Samothracians | 1 | raleigh 1 | p01223 |
 | Samron | 1 | raleigh 1 | p02242 |
+| Samsons | 1 | raleigh 1 | p02564 |
 | Samuell | 1 | raleigh 1 | p00026 |
 | Samuels | 1 | raleigh 1 | p02198 |
 | Samyras | 1 | raleigh 1 | p01223 |
@@ -9946,6 +10518,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Sane | 1 | raleigh 1 | p02147 |
 | Sannae | 1 | raleigh 1 | p02304 |
 | Sanni | 1 | raleigh 1 | p01021 |
+| Santaria | 1 | raleigh 1 | p02413 |
 | Saon | 1 | raleigh 1 | p01083 |
 | Saphanet | 1 | raleigh 1 | p01971 |
 | Saphanus | 1 | raleigh 1 | p01223 |
@@ -9955,6 +10528,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Saptah | 1 | raleigh 1 | p01333 |
 | Saptarshi | 1 | prose 1 | note:event:saptarshi-era:summary |
 | Saptha | 1 | raleigh 1 | p01333 |
+| Saraecens | 1 | raleigh 1 | p02406 |
 | Sarahs | 1 | raleigh 1 | p01313 |
 | Sarara | 1 | raleigh 1 | p02284 |
 | Sarid | 1 | raleigh 1 | p02129 |
@@ -9967,6 +10541,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Sarphath | 1 | raleigh 1 | p02041 |
 | Sarranum | 1 | raleigh 1 | p02044 |
 | Sasanians | 1 | prose 1 | note:event:persian-independence-226:summary |
+| Satans | 1 | raleigh 1 | p02551 |
 | Sathan | 1 | raleigh 1 | p00882 |
 | Satrapae | 1 | raleigh 1 | p01442 |
 | Satrape | 1 | raleigh 1 | p01607 |
@@ -9978,10 +10553,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Sawes | 1 | raleigh 1 | p02381 |
 | Say | 1 | raleigh 1 | p01411 |
 | SBC | 1 | prose 1 | note:event:temple-dedication:description |
+| Sca | 1 | raleigh 1 | p02470 |
 | Scabbes | 1 | raleigh 1 | p01669 |
 | Scalone | 1 | raleigh 1 | p02296 |
 | Scamandrus | 1 | raleigh 1 | p01191 |
 | Scandinavians | 1 | prose 1 | note:event:scandinavians-found-kiev:summary |
+| Scarabaeus | 1 | raleigh 1 | p02485 |
+| Scarabies | 1 | raleigh 1 | p02485 |
 | Scarlet | 1 | raleigh 1 | p02047 |
 | Scepter | 1 | raleigh 1 | p01986 |
 | Schandalium | 1 | raleigh 1 | p02065 |
@@ -9996,8 +10574,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Scorpionis | 1 | raleigh 1 | p02312 |
 | Scorpions | 1 | raleigh 1 | p02312 |
 | Scramble | 1 | prose 1 | note:event:scramble-for-africa:summary |
-| Scribe | 1 | raleigh 1 | p01970 |
-| Scribes | 1 | raleigh 1 | p01474 |
 | Scripsisse | 1 | raleigh 1 | p01046 |
 | Scripturae | 1 | raleigh 1 | p01464 |
 | Sctiptures | 1 | raleigh 1 | p01587 |
@@ -10017,7 +10593,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Seboim | 1 | raleigh 1 | p02330 |
 | Sebub | 1 | raleigh 1 | p01443 |
 | Secedens | 1 | raleigh 1 | p01104 |
-| Sechem | 1 | raleigh 1 | p01206 |
 | Sechemum | 1 | raleigh 1 | p02149 |
 | Secretarie | 1 | raleigh 1 | p00043 |
 | Secretaries | 1 | raleigh 1 | p01040 |
@@ -10031,14 +10606,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Segdiana | 1 | raleigh 1 | p01019 |
 | Segor | 1 | raleigh 1 | p02327 |
 | Seigniorie | 1 | raleigh 1 | p02216 |
-| Seigniories | 1 | raleigh 1 | p02397 |
 | Seilax | 1 | raleigh 1 | p00979 |
 | Selcucus | 1 | raleigh 1 | p00777 |
 | Selencia | 1 | raleigh 1 | p00949 |
 | Selep | 1 | raleigh 1 | p01375 |
 | Selet | 1 | raleigh 1 | p01070 |
 | Seleuciam | 1 | raleigh 1 | p00949 |
-| Seleucidae | 1 | raleigh 1 | p01231 |
 | Sembera | 1 | prose 1 | note:event:first-waganda-convert:summary |
 | Semeron | 1 | raleigh 1 | p01326 |
 | Seminarie | 1 | raleigh 1 | p02278 |
@@ -10067,6 +10640,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Septuagints | 1 | raleigh 1 | p02399 |
 | Sepulcher | 1 | raleigh 1 | p02286 |
 | Sepulchrum | 1 | raleigh 1 | p02231 |
+| Sepulture | 1 | raleigh 1 | p02553 |
 | Sepultus | 1 | raleigh 1 | p02389 |
 | Serach | 1 | raleigh 1 | p02235 |
 | Serenus | 1 | raleigh 1 | p01465 |
@@ -10099,6 +10673,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Sharke | 1 | raleigh 1 | p01151 |
 | Shebae | 1 | raleigh 1 | p00955 |
 | Shebeans | 1 | raleigh 1 | p00955 |
+| Shekels | 1 | raleigh 1 | p02510 |
+| Shekle | 1 | raleigh 1 | p02510 |
 | Shelab | 1 | raleigh 1 | p01627 |
 | Shemah | 1 | raleigh 1 | p02314 |
 | Shemeron | 1 | raleigh 1 | p01326 |
@@ -10153,7 +10729,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Sippora | 1 | raleigh 1 | p01268 |
 | Sirbonis | 1 | raleigh 1 | p01340 |
 | Sirnames | 1 | raleigh 1 | p01079 |
-| Sishac | 1 | raleigh 1 | p01268 |
 | Sissithrus | 1 | raleigh 1 | p01123 |
 | Sitarchies | 1 | raleigh 1 | p02166 |
 | Sitnath | 1 | raleigh 1 | p01010 |
@@ -10174,20 +10749,23 @@ A name here is a capitalized word of at least three letters, not a function word
 | Societies | 1 | raleigh 1 | p00862 |
 | Soco | 1 | raleigh 1 | p02321 |
 | Sodomite | 1 | raleigh 1 | p01614 |
-| Sodomites | 1 | raleigh 1 | p01761 |
 | Soducene | 1 | raleigh 1 | p01176 |
 | Sogane | 1 | raleigh 1 | p02402 |
 | Sogdiani | 1 | raleigh 1 | p01177 |
 | Sogdianis | 1 | raleigh 1 | p01177 |
 | Sogdians | 1 | raleigh 1 | p00640 |
+| Soldane | 1 | raleigh 1 | p02408 |
 | Soldier | 1 | prose 1 | note:person:martin-of-tours:summary |
 | Solemnities | 1 | raleigh 1 | p01676 |
+| Solima | 1 | raleigh 1 | p02442 |
 | Solitude | 1 | raleigh 1 | p00949 |
 | Solius | 1 | raleigh 1 | p01523 |
 | Sollax | 1 | raleigh 1 | p00979 |
+| Solomons | 1 | raleigh 1 | p02568 |
+| Someacount | 1 | raleigh 1 | p02411 |
+| Somewhat | 1 | raleigh 1 | p02458 |
 | Song | 1 | raleigh 1 | p01907 |
 | Soothsayers | 1 | raleigh 1 | p01499 |
-| Sophena | 1 | raleigh 1 | p02093 |
 | Sophene | 1 | raleigh 1 | p02021 |
 | Sophim | 1 | raleigh 1 | p02232 |
 | Sophistae | 1 | raleigh 1 | p01975 |
@@ -10199,13 +10777,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Sorrowes | 1 | raleigh 1 | p01066 |
 | Sothis | 1 | prose 1 | note:event:death-of-concharis:description |
 | Souer | 1 | raleigh 1 | p00043 |
-| Soueraignetie | 1 | raleigh 1 | p01439 |
+| Soueraigntic | 1 | raleigh 1 | p02533 |
 | Soueraignty | 1 | raleigh 1 | p01624 |
 | Soviet | 1 | prose 1 | note:event:fall-of-the-soviet-union:summary |
-| Southeast | 1 | raleigh 1 | p01268 |
 | Southerne | 1 | raleigh 1 | p01199 |
 | Southsayers | 1 | raleigh 1 | p01128 |
 | Southwestward | 1 | raleigh 1 | p01262 |
+| Sowe | 1 | raleigh 1 | p02451 |
 | Spaines | 1 | raleigh 1 | p00043 |
 | Spalding | 1 | prose 1 | note:event:oregon-trail-mission:summary |
 | Spaniad | 1 | raleigh 1 | p00043 |
@@ -10219,10 +10797,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Sphaerus | 1 | raleigh 1 | p01118 |
 | Sphere | 1 | raleigh 1 | p01084 |
 | Sphericall | 1 | raleigh 1 | p00930 |
-| Sphinx | 1 | raleigh 1 | p00367 |
 | Spice | 1 | raleigh 1 | p00949 |
 | Spicery | 1 | raleigh 1 | p00986 |
-| Spies | 1 | raleigh 1 | p01992 |
 | Spirita | 1 | raleigh 1 | p00808 |
 | Spiritual | 1 | prose 1 | note:event:kuruman-awakening:summary |
 | Spiritualis | 1 | raleigh 1 | p00064 |
@@ -10290,7 +10866,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Supreame | 1 | raleigh 1 | p00004 |
 | Supreme | 1 | raleigh 1 | p01413 |
 | Sura | 1 | prose 1 | note:event:dispersion:description |
-| Sus | 1 | raleigh 1 | p01961 |
 | Susannah | 1 | prose 1 | note:event:spurgeon-marriage:summary |
 | Susian | 1 | raleigh 1 | p01240 |
 | Swannes | 1 | raleigh 1 | p00052 |
@@ -10347,7 +10922,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Tarsis | 1 | raleigh 1 | p01245 |
 | Tarsus | 1 | raleigh 1 | p01245 |
 | Tartan | 1 | prose 1 | note:event:sennacherib-besieges-jerusalem:description |
-| Tartar | 1 | raleigh 1 | p01242 |
 | Tartarians | 1 | raleigh 1 | p01018 |
 | Tasman | 1 | prose 1 | note:event:tasman-discovers-tasmania-and-new-zealand:summary |
 | Tasmania | 1 | prose 1 | note:event:tasman-discovers-tasmania-and-new-zealand:summary |
@@ -10363,6 +10937,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Teacher | 1 | raleigh 1 | p00073 |
 | Teachers | 1 | raleigh 1 | p00961 |
 | Teaching | 1 | prose 1 | note:event:teaching-of-the-twelve-apostles:summary |
+| Teber | 1 | raleigh 1 | p02534 |
 | Tebeth | 1 | raleigh 1 | p01674 |
 | Tegil | 1 | raleigh 1 | p00979 |
 | Teglatphalasser | 1 | raleigh 1 | p01344 |
@@ -10389,15 +10964,16 @@ A name here is a capitalized word of at least three letters, not a function word
 | Tenuerif | 1 | raleigh 1 | p01132 |
 | Terebinth | 1 | raleigh 1 | p02321 |
 | Teredon | 1 | raleigh 1 | p01430 |
-| Tereus | 1 | raleigh 1 | p00365 |
 | Terhaka | 1 | raleigh 1 | p00187 |
 | Teribazus | 1 | raleigh 1 | p00584 |
 | Teridata | 1 | raleigh 1 | p00958 |
+| Terpsichore | 1 | raleigh 1 | p02517 |
 | Terra | 1 | raleigh 1 | p01150 |
 | Terrae | 1 | raleigh 1 | p00944 |
 | Terredon | 1 | raleigh 1 | p00949 |
 | Testamentum | 1 | raleigh 1 | p01718 |
 | Teste | 1 | raleigh 1 | p01632 |
+| Tetracosicis | 1 | raleigh 1 | p02564 |
 | Tetragrammaton | 1 | raleigh 1 | p01970 |
 | Tetrarchies | 1 | raleigh 1 | p02155 |
 | Tetrarchte | 1 | raleigh 1 | p02390 |
@@ -10417,7 +10993,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Tharantha | 1 | raleigh 1 | p00985 |
 | Thargum | 1 | raleigh 1 | p01252 |
 | Tharsians | 1 | prose 1 | note:person:tarshish:description |
-| Tharsus | 1 | prose 1 | note:person:tarshish:description |
 | Theaters | 1 | raleigh 1 | p02017 |
 | Thebai | 1 | raleigh 1 | p01627 |
 | Thebais | 1 | raleigh 1 | p01303 |
@@ -10437,9 +11012,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Theoph | 1 | raleigh 1 | p02202 |
 | Theophrast | 1 | raleigh 1 | p01005 |
 | Therewith | 1 | raleigh 1 | p00875 |
+| Thermodon | 1 | raleigh 1 | p02525 |
 | Thespian | 1 | raleigh 1 | p01484 |
+| Thessali | 1 | raleigh 1 | p02476 |
 | Thessaliam | 1 | raleigh 1 | p01118 |
 | Thessaly | 1 | prose 1 | note:person:deucalion:description |
+| Thetis | 1 | raleigh 1 | p02529 |
 | Theurgia | 1 | raleigh 1 | p01512 |
 | Thickets | 1 | raleigh 1 | p01217 |
 | Thiefe | 1 | raleigh 1 | p00852 |
@@ -10450,7 +11028,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Thiras | 1 | prose 1 | note:person:tiras:description |
 | Thirasians | 1 | prose 1 | note:person:tiras:description |
 | Thirteenth | 1 | prose 1 | note:event:thirteenth-amendment:summary |
-| Thoas | 1 | raleigh 1 | p00783 |
+| Thither | 1 | raleigh 1 | p02433 |
 | Thobel | 1 | prose 1 | note:person:tubal:description |
 | Thobelites | 1 | prose 1 | note:person:tubal:description |
 | Thobelos | 1 | raleigh 1 | p01230 |
@@ -10463,6 +11041,8 @@ A name here is a capitalized word of at least three letters, not a function word
 | Thoth | 1 | prose 1 | note:event:unification-of-egypt:summary |
 | Thousands | 1 | raleigh 1 | p01865 |
 | Thoyt | 1 | raleigh 1 | p01970 |
+| Thracia | 1 | raleigh 1 | p02477 |
+| Thracian | 1 | prose 1 | note:person:tereus:description |
 | Thrasymen | 1 | raleigh 1 | p00741 |
 | Thrugramma | 1 | prose 1 | note:person:togarmah:description |
 | Thrugrammeans | 1 | prose 1 | note:person:togarmah:description |
@@ -10483,7 +11063,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Timon | 1 | raleigh 1 | p01966 |
 | Tirrakeh | 1 | raleigh 1 | p01280 |
 | Tithraustes | 1 | raleigh 1 | p00594 |
-| Tityus | 1 | raleigh 1 | p00365 |
 | Tobias | 1 | raleigh 1 | p01228 |
 | Toes | 1 | raleigh 1 | p02325 |
 | Togar | 1 | raleigh 1 | p01242 |
@@ -10491,6 +11070,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Tolouse | 1 | raleigh 1 | p02136 |
 | Tombes | 1 | raleigh 1 | p01252 |
 | Tome | 1 | raleigh 1 | p02201 |
+| Tomi | 1 | raleigh 1 | p02527 |
 | Took | 1 | prose 1 | note:person:terah:summary |
 | Topographicall | 1 | raleigh 1 | p01659 |
 | Torquati | 1 | raleigh 1 | p02317 |
@@ -10528,6 +11108,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Trent | 1 | raleigh 1 | p01676 |
 | Tres | 1 | raleigh 1 | p00923 |
 | Trezenius | 1 | raleigh 1 | p01118 |
+| Triacosiois | 1 | raleigh 1 | p02564 |
 | Tributarie | 1 | raleigh 1 | p01435 |
 | Triddim | 1 | raleigh 1 | p02117 |
 | Trier | 1 | prose 1 | note:event:founding-of-trier:summary |
@@ -10538,12 +11119,16 @@ A name here is a capitalized word of at least three letters, not a function word
 | Triumphs | 1 | raleigh 1 | p00798 |
 | Troâs | 1 | raleigh 1 | p01252 |
 | Troglodytes | 1 | raleigh 1 | p00985 |
+| Trophey | 1 | raleigh 1 | p02408 |
 | Trophies | 1 | raleigh 1 | p01389 |
 | Trophonius | 1 | raleigh 1 | p01495 |
+| Trophy | 1 | raleigh 1 | p02434 |
 | Tropica | 1 | raleigh 1 | p00889 |
 | Tropically | 1 | raleigh 1 | p00889 |
 | Tropick | 1 | raleigh 1 | p00944 |
+| Tropique | 1 | raleigh 1 | p02542 |
 | Troubles | 1 | raleigh 1 | p00606 |
+| Troyes | 1 | prose 1 | note:person:halicarnasseus:description |
 | Trre | 1 | raleigh 1 | p00998 |
 | Truce | 1 | raleigh 1 | p00784 |
 | Truly | 1 | raleigh 1 | p00985 |
@@ -10553,6 +11138,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Truthfulness | 1 | prose 1 | note:event:battle-of-eltekah:description |
 | Tsalmon | 1 | raleigh 1 | p02242 |
 | Tselem | 1 | raleigh 1 | p00876 |
+| Tsemaraim | 1 | raleigh 1 | p02430 |
 | Tsiglag | 1 | raleigh 1 | p02310 |
 | Tsiglak | 1 | raleigh 1 | p02303 |
 | Tsoan | 1 | raleigh 1 | p02318 |
@@ -10595,11 +11181,13 @@ A name here is a capitalized word of at least three letters, not a function word
 | Valcan | 1 | raleigh 1 | p01070 |
 | Valero | 1 | prose 1 | note:event:mission-san-antonio-de-valero:summary |
 | Valladolid | 1 | prose 1 | note:event:valladolid-debate:summary |
+| Valleys | 1 | raleigh 1 | p02465 |
 | Vallis | 1 | raleigh 1 | p00949 |
 | Valour | 1 | raleigh 1 | p01071 |
 | Vandals | 1 | prose 1 | note:event:vandals-besiege-hippo:summary |
 | Vangard | 1 | raleigh 1 | p01686 |
 | Vanguard | 1 | raleigh 1 | p01993 |
+| Vanitie | 1 | raleigh 1 | p02435 |
 | Vanuatu | 1 | prose 1 | note:person:john-paton:summary |
 | Varia | 1 | raleigh 1 | p01079 |
 | Variety | 1 | raleigh 1 | p00080 |
@@ -10660,7 +11248,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Vinum | 1 | raleigh 1 | p01136 |
 | Violences | 1 | raleigh 1 | p01838 |
 | Violentiae | 1 | raleigh 1 | p01838 |
-| Virginitie | 1 | raleigh 1 | p01812 |
 | Viri | 1 | raleigh 1 | p01902 |
 | Virtus | 1 | raleigh 1 | p01413 |
 | Virtute | 1 | raleigh 1 | p00844 |
@@ -10683,7 +11270,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Vncles | 1 | raleigh 1 | p00016 |
 | Vnde | 1 | raleigh 1 | p01124 |
 | Vnformed | 1 | raleigh 1 | p00088 |
-| Vnitie | 1 | raleigh 1 | p01806 |
 | Vniuersalitie | 1 | raleigh 1 | p00934 |
 | Vnius | 1 | raleigh 1 | p01403 |
 | Vnthankefull | 1 | raleigh 1 | p01505 |
@@ -10732,6 +11318,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Wearmouth | 1 | prose 1 | note:person:bede:summary |
 | Weauers | 1 | raleigh 1 | p01057 |
 | Weeds | 1 | raleigh 1 | p01413 |
+| Weekes | 1 | raleigh 1 | p02472 |
 | Weil | 1 | raleigh 1 | p02243 |
 | Wells | 1 | raleigh 1 | p02027 |
 | Welsh | 1 | prose 1 | note:person:martyn-lloyd-jones:summary |
@@ -10741,6 +11328,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Westerly | 1 | raleigh 1 | p00990 |
 | Westside | 1 | raleigh 1 | p01206 |
 | Wheat | 1 | raleigh 1 | p00972 |
+| Wheresoeuer | 1 | raleigh 1 | p02472 |
 | Whitby | 1 | prose 1 | note:event:synod-of-whitby:summary |
 | Whoredome | 1 | raleigh 1 | p01450 |
 | Wilkes | 1 | prose 1 | note:event:zwemer-marriage:summary |
@@ -10760,6 +11348,7 @@ A name here is a capitalized word of at least three letters, not a function word
 | Workmans | 1 | raleigh 1 | p00059 |
 | Wormes | 1 | raleigh 1 | p01520 |
 | Worshippers | 1 | raleigh 1 | p02002 |
+| Worthie | 1 | raleigh 1 | p02498 |
 | Worthies | 1 | raleigh 1 | p01084 |
 | Wrestlers | 1 | raleigh 1 | p01969 |
 | Writings | 1 | raleigh 1 | p00406 |
@@ -10783,10 +11372,12 @@ A name here is a capitalized word of at least three letters, not a function word
 | Zaranda | 1 | raleigh 1 | p00978 |
 | Zarathustra | 1 | prose 1 | note:event:zoroastrianism-begins:summary |
 | Zarepta | 1 | raleigh 1 | p02244 |
+| Zeba | 1 | raleigh 1 | p02508 |
 | Zebulonite | 1 | prose 1 | note:event:elon-judges-israel:summary |
 | Zedechias | 1 | raleigh 1 | p00035 |
 | Zedekia | 1 | raleigh 1 | p02111 |
 | Zeeb | 1 | prose 1 | note:event:gideon-defeats-midian:summary |
+| Zephath | 1 | raleigh 1 | p02465 |
 | Zephet | 1 | raleigh 1 | p02114 |
 | Zered | 1 | raleigh 1 | p02353 |
 | Zereda | 1 | raleigh 1 | p02247 |
@@ -10801,7 +11392,6 @@ A name here is a capitalized word of at least three letters, not a function word
 | Ziphron | 1 | raleigh 1 | p02402 |
 | Zipingari | 1 | raleigh 1 | p01166 |
 | Zippora | 1 | raleigh 1 | p01268 |
-| Zoba | 1 | raleigh 1 | p01950 |
 | Zobal | 1 | raleigh 1 | p02021 |
 | Zodiacke | 1 | raleigh 1 | p01676 |
 | Zoob | 1 | raleigh 1 | p01894 |

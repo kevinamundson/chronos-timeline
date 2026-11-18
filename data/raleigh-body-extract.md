@@ -701,3 +701,34 @@ Chapter X was attached by hand in `scripts/raleigh/ch10-attach.mjs`. A tribe is 
 New records kept apart from a record that shares the letters: `agrippa-of-augustus`, `antiochus-of-ascalon`, `antiochus-eupator`, `apollonius-syrian`, `urias-the-prophet`, `urias-the-hittite`, `hus-son-of-nachor`, `nachor-brother-of-abraham`, `talmai-son-of-anak`, `tholmay-king-of-gessur`, `ioash-in-moab`, `ismael-who-slew-gedaliah`, `baldwin-king-of-damascus`, `amnon`, `constantine-the-younger`, `constance-son-of-constantine`, `judas-iscariot`, `zacharias-son-of-jehoiada`, `anthonie`, `l-annius`, `eglon`, and `mesha-king-of-moab` (the location `mesha` was left alone). Cleopatra Queene of Aegypt is on `cleopatra`. Iohn, Simon’s son, is on `hircanus-the-high-priest`. See N72 and N75.
 
 These were not attached. Hercules (N33), Demetrius (N61), the fourth King of Hierusalem in p02279, the gap at Beersheba in p02307, the printed Aram at Hor in p02397, Bede, the Kenites as a group, and the unnamed Kings of Moab. The nations, the cities, rivers, and mountains, and the headings, were not made people. See N73.
+
+# Pass 14
+
+Range covered: Book II, Part I, Chapter XI, sig. 252b, through Chapter XIII, §. VIII, sig. 276b. The headings are “CHAP. XI. The Historie of the Syrians the chiefe borderers of the Jsraelites that dwelt on the East of Jordan.”, “CHAP. XII. Of the Tribe of BENIAMIN, and of Hierusalem.”, and “CHAP. XIII. Of the memorable things that happened in the world, from the death of IOSVA to the Warre of Troy: which was about the time of IEPHTHA.” One hundred sixty-nine passages, p02403–p02571. Chapter XIV, “CHAP. XIIII. Of the Warre of Troy.”, opens after sig. 276b and was not entered. One yeere of the World is printed, 2691. `year_bc_ad` stays null.
+
+## Statements written
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book II, Part I, Chapter XIII, §. II, sig. 263a | the Land and People of Israel liued in peace vnto the end of fourescore yeeres from the death of Othoniel, which terme expired in the Worlds yeere 2691 | ehud-delivers-israel (`year_am` 2691). His yeere of the World for the end of the 80 yeeres of peace. |
+| Book II, Part I, Chapter XIII, §. I, sig. 261b–262a | after they had felt the smart of Gods displeasure against them eight yeeres | oppression-of-cushan-rishathaim (`year_am` null). The eight yeeres under Chushan Rishathaim. |
+| Book II, Part I, Chapter XIII, §. I, sig. 261b–262a | after which the Israelites had peace fourtie yeeres | othniel-judges-israel (`year_am` null). The fourtie yeeres of peace in Othoniel’s time. |
+
+Every record keeps the sort it already had. `ehud-delivers-israel` keeps its tier 1–4 sort. The new people stay without a sort year. No calculated sort was written.
+
+## Figures that were not entered
+
+- Chapter XI, §. II, sig. 253b: Hadad of Idumaea returned “23. yeeres after he was carried thither.” No new event. The 49 yeeres between Benhadad the first and the siege of Samaria. The 30 yeeres of age allowed to Benhadad. Josephus’s “scarce yet 1100 yeeres” since the Syrian wars.
+- Chapter XI, §. IV, sig. 255a–255b: Hierusalem burnt “132. yeeres after the captiuitie of Israel.” Assyria and Babylon held Syria “about 200. yeeres.” The Persians “about 200. yeeres.”
+- Chapter XII: 40 yeeres after Christ’s death to Titus; 65 yeeres to Aelius Adrianus; 500 yeeres of Christian inhabiting; 636, 400 and odde, 1099, 88, 1197, and 1517 yeeres after Christ. They are not yeeres of the World. See N82.
+- Chapter XIII: Pandion’s 40 yeeres; Acrisius’s 31; the 47th yeere of Ehud when Tros began; Thola’s 23 and Iair’s 22 (already table lengths); Phaestus’s 8, Adrastus’s 4, Polyphides’s 13; Iephtha’s 6 and Elon’s 10; Iephta’s three hundred yeeres (N74); 〈◊ 〉 misreckoneth 400 yeares; the Argonauts’ foure whole moneths.
+- Years after Christ in Chapter XI: 636 (Haomar), 1147 (Conrad at Damascus), 1262 (Halon), 1400 (Tamberlaine), 1517 (Selimus).
+- Counts of men, gates, lanternes, towers, and the 70 pieces of siluer. See N82.
+
+## Names
+
+Chapters XI–XIII were attached by hand in `scripts/raleigh/ch11-13-attach.mjs`. A tribe is on its patriarch: `benjamin`, `judah`, `ephraim`, `reuben`, `gad`, `manasseh`, `dan`, `simeon`, `naphtali`, `asher`, `issachar`, `zebulun`, `levi`, `joseph`. A printed spelling that is already the title or a stored form of another record was not added as a name form. Abrabon was not stored on `abraham` (the verify check holds eight Abraham rows). Rezon and Razin were not stored on `rezin`, and Razin was not stored on `rezon`. See N77.
+
+New records kept apart from a record that shares the letters: `rezon` from `rezin`; `adad-of-damascus` from `hadad` and `hadarhezer`; `eliezer-of-damascus` from `eliezer-son-of-moses`; `joram-son-of-tohu` from `joram-king-of-israel`; `phul-belochus` from `tiglath-pileser-iii` and `belochus-priseus`; `darius-iii` from `darius-d31`; `tantalus-king-of-lydia` from `tantalus`; `perseus-son-of-danae` from `perseus`; `lynceus-argonaut` from `lynceus`; `iotham-son-of-gideon` from `jotham`; `helen-of-troy` from `helena-empress`; `ioash-father-of-gideon` from `ioas`; `abiram-son-of-chel` from `abiram`; `lycurgus-of-nemea` from `lycurgus`; `argus-son-of-phryxus` from `argus`; `polyphemus-argonaut`; `europe-mother-of-agamemnon` from `europa`. Talmai of Gessur stays on `tholmay-king-of-gessur`. Haomar stays on `haomarus`. Asa’s Benhadad stays on `benadad`. Achab’s Benhadad stays on `benhadad`. Hazael’s son stays on `ben-hadad-son-of-hazael`. See N78.
+
+These were not attached. Hercules (N33). The three unnamed Adads between Benhadad the third and Rezin. A second Hazael left on `hazael`. Gaps, including Gedaliah’s name in p02433, Ibzan in p02558, and Gaal in p02534. Mars, Pallas, Thetis, and the Sphinx. Isis. Baalberith. The nations, the cities, rivers, and mountains, and the headings. See N79.

@@ -634,6 +634,7 @@ const ETH_KEEP = new Set([
   'aroseth', 'astoreth', 'cateth', 'cinnereth', 'genezareth', 'gennezareth', 'handreth', 'nepheth', 'remeth',
   'kirharaseth',
   'hareseth', 'ishboseth', 'mageth',
+  'haroseth', 'iephunneth',
 ]);
 
 // A printed -eth word whose modern verb is not the stem plus -s.
@@ -660,6 +661,14 @@ const ETH_EXPLICIT = {
   // "incourageth" and "inforceth" are encourage and enforce. The in- spelling is not a dictionary verb.
   incourageth: 'encourages',
   inforceth: 'enforces',
+  // "assiegeth" is besiege, like siegeth. "siege" is a non-verb stem, so the letter rules miss it.
+  assiegeth: 'besieges',
+  // "commaundeth" is command. The ou spelling is not a dictionary verb.
+  commaundeth: 'commands',
+  // "picketh" would otherwise become pics.
+  picketh: 'picks',
+  // "smoothereth" is smother. The stem smoother is a dictionary adjective.
+  smoothereth: 'smothers',
   // The noun truth. "true" is a headword, so the stem would otherwise become trues.
   trueth: 'truth',
 };
@@ -671,6 +680,10 @@ const ETH_EXPLICIT_REASON = {
   streightneth: 'verb straiten → straitens (Iordan streightneth it selfe againe into a Riuer)',
   stileth: 'verb style → styles (he stileth men of contrary opinion, impios politicos)',
   indureth: 'verb endure → endures (nor indureth fish to liue in it)',
+  assiegeth: 'verb besiege → besieges (Achab inuadeth Gilead, and assiegeth the Citie)',
+  commaundeth: 'verb command → commands (but commaundeth vs to offer our selues)',
+  picketh: 'verb pick → picks (yet hee picketh quarrell against Ioram)',
+  smoothereth: 'verb smother → smothers (Azael returning, smoothereth him)',
 };
 
 // Kept, and listed as unsure. The letters do not identify one modern verb.
@@ -718,6 +731,8 @@ const ETH_REASON = {
   hareseth: 'kept: city Kir-hareseth; the hyphen makes the token hareseth',
   ishboseth: 'kept: name Ishbosheth, printed Ishboseth',
   mageth: 'kept: place Mageth in Gad, not a verb',
+  haroseth: 'kept: city Haroseth, chiefe hold of Iahin in Nepthalim',
+  iephunneth: 'kept: name Iephunneth, father of Caleb',
 };
 
 // Both the stem and the stem plus e are dictionary words. These stems are the verb.
@@ -1036,6 +1051,7 @@ export function modernizeProse(raw) {
   // The hyphen splits the token, so the -eth rule would leave "fore-sees".
   text = text.replace(/fore-seeth/gi, 'foresees');
   text = text.replace(/fore-telleth/gi, 'foretells');
+  text = text.replace(/ouer-commeth/gi, 'overcomes');
   const phrased = applyPhrases(text);
   return phrased.replace(/&[cC]\.?|\p{L}+/gu, (token, offset, whole) => {
     if (token.startsWith('&')) return token;
