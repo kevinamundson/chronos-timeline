@@ -681,3 +681,30 @@ Fifteen words appear in Book II, Part I, Chapters XIV–XVII and in no earlier s
 | searcheth | 1 | searches | verb search → searches | p02620: ere( as ignorant of the true cause) hee searcheth his braines for many reasons of so great an |
 | summoneth | 1 | summons | verb summon → summons | p02675: d therefore preparing to inuade Israel, summoneth Dauid to assist him, who dissembling his int |
 | swalloweth | 1 | swallows | verb swallow → swallows | p02631: he thirst of couetousnesse, the more it swalloweth, the more it drieth, and desireth, finding t |
+
+## Pass 16
+
+Twenty words appear in Book II, Part I, Chapters XVIII–XXIII and in no earlier stored passage. Counts are in those 335 passages only. The four flagged words of passes 1–4 do not appear again here. Seventeen change. Three stay: `iehoshabeth`, the name, shown as jehoshabeth; `sixtieth`, an ordinal; and `thermeth`, the place. None of the twenty is flagged. `alleadgeth` is allege and `inlargeth` is enlarge. The letter rules find no dictionary verb, so those two are explicit. `singeth` is sing. The stem singe is the verb to burn, so it is explicit. `thermeth` would otherwise become therms, because therm is a dictionary verb, so it stays.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| abhorreth | 1 | abhors | verb abhor → abhors | p02764: riches is an affection of couetousnesse which God abhorreth; to affect reuenge, is as much as to take |
+| aduanceth | 1 | advances | verb advance → advances | p02972: y heroicall, as that by which the spirit of a man aduanceth it selfe with confidence of acceptation |
+| alleadgeth | 1 | alleges | verb allege → alleges (for this he alleadgeth Plato in Timaeo) | p02785: ing through the straits of Gibraltar: for this he alleadgeth Plato in Timaeo. But that this calamitie |
+| catcheth | 1 | catches | verb catch → catches | p02921: ouered, hauing fastened vpon some wood-pile, that catcheth all about it. Questionlesse it is, that the |
+| checketh | 1 | checks | verb check → checks | p02799: is 〈◊ 〉 to vs, he is contrarie to our doings, he checketh vs for offending against the Law, he makes |
+| chooseth | 1 | chooses | verb choose → chooses | p02764: bade him aske what he would at his hands; SALOMON chooseth wisdome, which pleased God. And God said |
+| correcteth | 1 | corrects | verb correct → corrects | p02799: ng of Salomon. In the first he 〈◊ 〉 good life and correcteth manners, in the second, the vanitie of |
+| deceiueth | 1 | deceives | verb deceive → deceives | p02925: things disposeth to his owne honour; Hee neither deceiueth nor can be deceiued, but continuing one |
+| deriueth | 1 | derives | verb derive → derives | p02913: that pedegree haue been false, wherein S. Matthew deriueth him lineally from Salomon; yea, then had |
+| dictateth | 1 | dictates | verb dictate → dictates | p02881: ollow the prudent conceits which worldly wisedome dictateth vnto them. For in such kinde of vnhappie |
+| forbeareth | 1 | forbears | verb forbear → forbears | p02921: finding apparant cause enough of things done, it forbeareth to make further search; though it often |
+| foreseeth | 1 | foresees | verb foresee → foresees | p02925: y. In him there is no vncertaintie nor change; he foreseeth all things, and all things disposeth to |
+| happeneth | 1 | happens | verb happen → happens | p02824: res, seeme to them to worke euery alteration that happeneth. |
+| iehoshabeth | 1 | jehoshabeth | kept: name Iehoshabeth, wife of Iehoiada | p02907: ort vp-held in those vnhappie times. His wife was Iehoshabeth, who was daughter of King Iehoram |
+| inlargeth | 1 | enlarges | verb enlarge → enlarges (Iosephus, indeed, inlargeth the Storie) | p03015: h, vnlesse they would be quiet. Iosephus, indeed, inlargeth the Storie, by inserting a great Earthquake |
+| pretendeth | 1 | pretends | verb pretend → pretends | p03052: ee giuen to one of those Authors whose names 〈◊ 〉 pretendeth. Let it suffice, that in regard of |
+| scowreth | 1 | scours | verb scour → scours | p02785: e the sea runneth most violently, and most easily scowreth his channell, should be filled with mud |
+| singeth | 1 | sings | verb sing → sings; the stem singe is the verb to burn (hee singeth as it were the Epithalamion) | p02799: d, the vanitie of humane nature, in the third hee singeth as it were the Epithalamion of Christ and |
+| sixtieth | 1 | sixtieth | kept: ordinal | p03068: of Cyrus his Monarchie( which was the last of the sixtieth Olympiad, and the two hundreth and fortieth |
+| thermeth | 1 | thermeth | kept: place Thermeth (calls it Thermeth), not the verb therm | p02777: l it. 〈◊ 〉 in his booke of Hebrew places calls it Thermeth. In aftertimes, when it was rebuilt by Adrian |

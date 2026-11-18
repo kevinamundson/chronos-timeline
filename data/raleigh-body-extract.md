@@ -762,3 +762,30 @@ Chapters XIV–XVII were attached by hand in `scripts/raleigh/ch14-17-attach.mjs
 New records kept apart from a record that shares the letters: `teucer` and `teucer-son-of-telamon`; `aiax-son-of-oileus` from `aiax`; `ida-parent-of-teucer` from `ida`; `phoenix-tutor-of-achilles` from `phoenix`; `thoas-at-troy` from `thoas`; `proteus-of-egypt` from `proetus`; `pyrrhus-son-of-achilles` from `pyrrhus`; `euripilus` from `euripylus`; `iosua-of-bethshemesh` from `iosua`; `eleazar-son-of-abinadab` from `eleazar`; `hannah` from both Annas; `leui-ben` from `levi`; `joel-son-of-samuel` from the prophet called Ioel; `abijah-son-of-samuel` from `abijah-of-judah`; `gad-the-seer` from `gad`; `abimelech-of-nob` and `abimelech-of-gerar-ii` from `abimelech-of-gerar`; `diomedes-of-thrace` from `diomedes`; `solinus-of-aegialia` from `solinus`; `asclepius-the-physician` from `asclepius`; `charles-the-emperour` from the other Charles records; `abinadab` from `aminadab`; `shimei` from `simei-over-the-vineyards`; `adad-of-damascus` from `hadad`. Mnestheus stays on `mnestheus`. Ion stays on `ion`. Deucalion father of Hellen stays on `deucalion`. Hesion in Helicon stays on `hesiod`. Vriah stays on `urias-the-hittite`. The fisher Iacob stays on `james`. Ioas King of Iuda stays on `joash-of-judah`. Manasse King of Iuda stays on `manasses`. Xerxes stays on `xerxes`. Abias in the prophet list stays on `ahijah`. Acastus the second Athenian prince stays on `agastus`, not the new `acastus`. See N84.
 
 These were not attached. Hercules (N33). Mars, Minerua, Pallas, Proserpina, and Pan. The drowned Aiax in p02608, because the father’s name is a gap. The second founder beside Teucer, Dardanus’s daughter, the sonne of Poean, Antenor’s sonnes, and the other gaps. The Heraclidae, the Dores, the Ionians, the Amazons, the Philistims, the Adads, and the sonnes of Korah, as groups. The nations, the cities, rivers, and mountains, and the headings. See N85.
+
+# Pass 16
+
+This pass includes the work that would have been pass 17. Kevin asked on 2026-11-17 that the two be one pass. Range covered: Book II, Part I, Chapter XVIII, sig. 302b, through Chapter XXIII, §. VII, sig. 345a. The headings are “CHAP. XVIII. Of SALOMON.”, “CHAP. XIX. Of SALOMONS Successors vntill the end of IEHOSAPHAT.”, “CHAP. XX. Of IEHORAM the sonne of IEHOSAPHAT, and AHAZIA.”, “CHAP. XXI. Of ATHALIA, and whose Sonne he was that succeeded vnto her.”, “CHAP. XXII. Of IOAS and AMASIA, with their Contemporaries; where somewhat of the building of Carthage.”, and “CHAP. XXIII. Of VZZIA.” Three hundred thirty-five passages, p02758–p03092: 50 in Chapter XVIII, 49 in Chapter XIX, 36 in Chapter XX, 44 in Chapter XXI, 63 in Chapter XXII, and 93 in Chapter XXIII. Chapter XXII ends at 242 passages, under the floor, and XXIII is one chapter, so the pass stops at the end of XXIII. Chapter XXIV, “CHAP. XXIIII. Of the Antiquities of 〈◊ 〉, and 〈◊ 〉 of Rome in the time of AHAS.”, opens on sig. 345b and was not entered. One yeere of the World is printed, 2991, and it is already on the table. No new `year_am` was written. `year_bc_ad` stays null.
+
+## Statements written
+
+None. The printed yeere of the World is already stored.
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book II, Part I, Chapter XVIII, §. I, sig. 302b | began to reigne ouer Iuda and Israel, in the yeere of the world 2991 | solomon (`year_am` 2991 already stored, Chronological Table, sig. 786b). Not written again. The tier 3 sort stays −1036. |
+
+Every record keeps the sort it already had. The new people stay without a sort year. No calculated sort was written.
+
+## Figures that were not entered
+
+- Chapter XVIII, §. I, sig. 302b: the yeere of the world 2991, already on `solomon`. Salomon “raigned fortie yeeres” and “were but eleuen yeeres old when his raigne began” (§. IV, sig. 306b). “seuen hundred Wiues” and “three hundred Concubines” (§. IV, sig. 305b). “an hundred and twentie talents of gold” from Hiram (§. II, sig. 304a–304b). The ships’ “foure hundred and twentie talents” (§. III, sig. 304b).
+- Chapter XVIII, §. VI, sig. 307a: Baliastrus “raigned seuenteene yeeres, after Mercators account.” That is another man’s reckoning. Chapter XIX, §. I, sig. 307b–308a: the successor was “now fortie yeeres olde.” Chapter XIX, §. IV, sig. 310a: Cheops “reigned fiftie sixe yeeres, euen to the 16.” of Ioas. Lengths already on the table were not entered again (N46).
+- Chapter XX, §. V, sig. 317b: “Anno Domini 1588.” Not a yeere of the World.
+- Chapter XXIII, §. V, sig. 342b–343a: the Olympiad counts, including the first Olympiad “foure hundred and seuen yeares after Troy” (sig. 342b), the “one and fiftieth yeare of Vzziah” (sig. 343a), and Cyrus in “the fiue and fiftieth Olympiad” (sig. 342b). p03058 and p03069 were left off `first-olympic-games`. p03059 (sig. 342b) says “the true yeare of the World” and prints no number. Pul’s “eight and fortie yeeres” is Annius’s length, not a yeere of the World. The thousand talents on p03011 (Chapter XXIII, §. I, sig. 336b) are the existing event `menahem-pays-tribute-to-pul`. See N92 and N93.
+
+## Names
+
+Chapters XVIII–XXIII were attached by hand in `scripts/raleigh/ch18-23-attach.mjs`. A tribe is on its patriarch. A printed spelling that is already the title or a stored form of another record was not added as a name form. 320 of the 335 passages carry at least one link. The fifteen without one are p02782, p02833, p02878, p02891, p02897, p02911, p02918, p02925, p02927, p02931, p02951, p02959, p02990, p03053, and p03071. See N89–N93.
+
+Existing events received an account where the passage is about that event: `founding-of-solomons-temple`, `reign-of-solomon`, `temple-dedication`, `usurpation-of-adonijah`, `rebellion-of-absalom`, `division-of-the-kingdom`, `shishak-sacks-the-temple`, `david-and-bathsheba`, `asas-feet-diseased`, `tibni-dies-omri-sole-king`, `elijahs-letter-to-jehoram`, `founding-of-carthage`, `hazael-threatens-jerusalem`, `charles-viii-invades-italy`, `first-olympic-games`, `menahem-pays-tribute-to-pul`, `assyria-invades-israel-740-bc`, and `founding-of-rome`. No new event was created.
