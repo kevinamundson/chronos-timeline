@@ -24,7 +24,7 @@
 // Nitocris of Babylon is not the Egyptian nitocris.
 
 /** Chapters of Book III whose passages are attached only from this table. */
-export const B3_CHAPTERS = new Set(['1', '2', '3', '4']);
+export const B3_CHAPTERS = new Set(['1', '2', '3', '4', '5']);
 
 export const B3 = {
   // Chapter I. The time between the destruction (gap) and the fall of the Assyrian Empire.
@@ -276,6 +276,69 @@ export const B3 = {
   p03566: ["darius-hystaspis=Darius"],
   p03567: ["darius-hystaspis=Darius", "oebarus=Oebarus"],
   p03568: ["plato=Plato", "darius-hystaspis=Darius", "herodotus=Herodotus"],
+
+  // Chapter V. CHAP. V. Of DARIVS the sonne of HYSTASPES. p03569–p03613.
+  // Darius in this chapter is darius-hystaspis. The second yeere and the sixth yeere
+  // are not yeeres of the World. Gobryas is gobrias. Sysamnes is sisamnus.
+  // Otanes the sonne of Hystaspes, and Otanes the sonne of Sysamnes, are not the Otanes of the seuen.
+  // Artophernes and Artaphernes are one man. Histiaeus and Hystiaeus are one man.
+  // Thersippus, Diogenetus, Theispius, Hyppomenes, and Absander are the Athenian rulers already stored.
+  // The Miltiades before Draco is not the Miltiades of Marathon.
+  // The Megacles before Solon is not the Megacles who headed a faction against Pisistratus.
+  // Lycurgus who gaue lawes to the Spartans stays lycurgus. The Athenian citizen is not him.
+  // Hippocrates the father of Pisistratus is not the HIPPOCRATES of the aphorism.
+  // Hipparchus the sonne of Pisistratus is not the astronomer.
+  // Amintas King of Macedon is not the Assyrian Amintas and not the table Amyntas.
+  // Alexander his sonne is not Alexander the Great.
+  // Achemenes gouernor of Aegypt is not Achaemenes the ancestor.
+  // Callimachus who fell at Marathon is not the Callimachus of the Hymnes.
+  // Halycarnasseus is halicarnasseus. The gapped names stay empty.
+  // The great Chrim is not a person. Panici terrores is not the god Pan.
+  p03569: ["darius-hystaspis=DARIVS", "hystaspes=HYSTASPES"],
+  p03570: ["darius-hystaspis=DARIVS"],
+  p03571: ["darius-hystaspis=DARIVS", "achaemenes=Achaemenidae", "cyrus-the-great=Cyrus the Great", "herodotus=Herodotus"],
+  p03572: ["hystaspes=Hystaspes", "cyrus-the-great=Cyrus the Great", "darius-hystaspis=Darius", "cambyses=Cambyses"],
+  p03573: ["hystaspes=Hystaspes", "herodotus=Herodotus", "darius-hystaspis=Darius", "atarnes=Atarnes", "artaphernes=Artophernes", "artabanus=Artabanus", "xerxes=Xerxes", "gobrias=Gobryas", "mardonius=Mardonius", "artozostre=Artozostre"],
+  p03574: ["reineccius=Reineccius", "hystaspes=Hystaspes", "darius-hystaspis=Darius", "cambyses=Cambyses", "artabanus=Artabanus", "artaphernes=Artaphernes", "otanes-son-of-hystaspes=Otanes", "atarnes=Atarnes"],
+  p03575: ["darius-hystaspis=DARIVS"],
+  p03576: ["darius-hystaspis=DARIVS", "cyrus-the-great=Cyrus", "herodotus=Herodotus"],
+  p03577: ["cambyses=Cambyses", "darius-hystaspis=Darius", "zopirus=Zopirus"],
+  p03578: ["darius-hystaspis=DARIVS"],
+  p03579: ["darius-hystaspis=Darius", "esdras=Ezra", "cambyses=Cambyses", "temple-rebuilding-resumed"],
+  p03580: ["darius-hystaspis=Darius", "darius-hystaspis=Darius Hystaspes", "second-temple-completed"],
+  p03581: ["darius-hystaspis=DARIVS"],
+  p03582: ["justin=Iustine", "lauthinus=Lauthinus", "darius-hystaspis=Darius", "miltiades=Miltiades", "histiaeus=Histiaeus", "diodorus-siculus=Diodorus", "gobrias=Gobryas", "histiaeus=Hystiaeus"],
+  p03583: [],
+  p03584: ["darius-hystaspis=DARIVS", "megabasus=Megabasus", "otanes-son-of-sysamnes=Otanes", "sisamnus=Sysamnes", "cambyses=Cambyses", "amintas-king-of-macedon=Amintas", "alexander-son-of-amintas=Alexander", "alexander-the-great=Alexander the Great", "gygea=Gygea", "bubaris=Bubaris", "darius-hystaspis=Darius"],
+  p03585: ["darius-hystaspis=DARIVS"],
+  p03586: ["darius-hystaspis=Darius"],
+  p03587: [],
+  p03588: ["codrus=Codrus", "medon=Medon", "medon=Medontidae"],
+  p03589: ["agastus=Agastus", "archippus=Archippus", "eusebius=Eusebius", "tersippus=Thersippus", "phorbas-of-athens=Phorbas", "mezades=Mezades", "diognetus=Diogenetus", "lycurgus=Lycurgus", "pheredus=Pheredus", "ariphron=Ariphron", "thespeius=Theispius", "phul-belochus=Belochus", "arbaces=Arbaces", "agamnestor=Agamnestor", "aeschylus=Aeschylus", "alcamenon=Alcamenon", "charops=Charops", "aesymedes=Aesymedes", "elydicus=Elydicus", "hippomenes=Hyppomenes", "leocrates=Leocrates", "apsander=Absander", "erixias=Erixias", "pausanias=Pausanias", "leostratus=Leostratus", "anthosthenes=Anthosthenes", "miltiades-the-archon=Miltiades", "damasias=Damasias", "draco-the-lawgiver=Draco", "megacles-the-archon=Megacles", "solon=Solon"],
+  p03590: ["solon=Solon", "aulus-gellius=Gellius", "tarquinius-priscus=Tarquinius Priscus", "pisistratus=Pisistratus", "hippocrates-father-of-pisistratus=Hippocrates", "megacles=Megacles", "lycurgus-of-athens=Lycurgus", "hegesistratus=Hegesistratus", "aristotle=Aristotle", "elianus=Elianus", "justin=Iustine", "herodotus=Herodotus", "thucydides=Thucidides", "hippias=Hippias", "hipparchus-son-of-pisistratus=Hipparchus", "harmodius=Harmodius", "aristogiton=Aristogiton", "plato=Plato", "lemnia=Lemnia", "darius-hystaspis=Darius", "hypoclus=Hypoclus", "clistines=Clistines", "artaphernes=Artaphernes"],
+  p03591: ["darius-hystaspis=Darius", "hippias=Hippias"],
+  p03592: [],
+  p03593: ["croesus=Croesus", "cyrus-the-great=Cyrus"],
+  p03594: ["cyrus-the-great=Cyrus"],
+  p03595: ["darius-hystaspis=Darius"],
+  p03596: [],
+  p03597: ["cleomenes=Cleomenes", "aristagoras=Aristagoras"],
+  p03598: ["artaphernes=Artaphernes", "eualcides=Eualcides", "simonides=Simonides", "aristagoras=Aristagoras"],
+  p03599: ["cambyses=Cambyses"],
+  p03600: ["darius-hystaspis=Darius", "xerxes=Xerxes", "hippias=Hippias"],
+  p03601: ["darius-hystaspis=Darius", "cyrus-the-great=Cyrus", "aristagoras=Aristagoras"],
+  p03602: ["darius-hystaspis=Darius"],
+  p03603: ["darius-hystaspis"],
+  p03604: [],
+  p03605: ["darius-hystaspis=DARIVS", "battle-of-marathon"],
+  p03606: ["darius-hystaspis=Darius", "cleomenes=Cleomenes", "demantus=Demantus", "hippagoras=Hippagoras", "hippias=Hippias", "pisistratus=Pisistratus", "artaphernes=Artaphernes"],
+  p03607: ["apollo=Apollo", "hippias=Hippias", "euphabus=Euphabus", "philagius=Philagius"],
+  p03608: ["phidippides=Phidippides", "pan=Pan", "miltiades=Miltiades", "battle-of-marathon"],
+  p03609: ["herodotus=Herodotus", "justin=Iustine", "hippias=Hippias", "cicero=Cicero", "suidas=Suidas", "battle-of-marathon"],
+  p03610: ["miltiades=Miltiades", "themistocles=Themistocles", "callimachus-at-marathon=Callimachus", "stesileus=Stesileus", "cynegyrus=Cynegyrus", "coriolanus=Coriolanus", "alexander-son-of-amintas=Alexander", "amintas-king-of-macedon=Amintas", "plutarch=Plutarch", "hybilides=Hybilides", "halicarnasseus=Halycarnasseus", "battle-of-marathon"],
+  p03611: ["miltiades=Miltiades", "ceres=Ceres", "xantippus=Xantippus", "pericles=Pericles"],
+  p03612: ["miltiades=Miltiades", "cymon=Cymon", "hegisipila=Hegisipila", "olorus=Olorus", "plutarch=Plutarch", "themistocles=Themistocles"],
+  p03613: ["darius-hystaspis=Darius", "atossa=Atossa", "artabasanes=Artabasanes", "xerxes=Xerxes", "achemenes-son-of-darius=Achemenes", "masistes=Masistes", "anabignes=Anabignes"],
 };
 
 export const B3_NEW = {
@@ -355,6 +418,66 @@ export const B3_NEW = {
   hidarnes: ["Hidarnes", "Hidarnes, one of the seuen Princes who rooted out the Magi. The printed spelling is kept.", "him"],
   oebarus: ["Oebarus", "Oebarus, Master of the horse to Darius, who caused the horse to couer a Mare so that Darius his horse first brayed. The printed spelling is kept.", "him"],
   "smerdis-the-magus": ["Smerdis the Magus", "Smerdis the Magus, also written Cimerdius, the counterfait of Smerdis the Kings brother, who with Patizites possest the Empire. He is not Smerdis the sonne of Cyrus. The one-word title would fold onto smerdis, so the title is three words.", "him"],
+  atarnes: ["Atarnes", "Atarnes, a sonne of Hystaspes, named with Artophernes and Artabanus as a great Commander in the warre which Darius made. The printed spelling is kept.", "him"],
+  artaphernes: ["Artaphernes", "Artaphernes, also printed Artophernes, a sonne of Hystaspes, and Lieutenant for Darius in Sardis. The printed spellings were left as one man.", "him"],
+  mardonius: ["Mardonius", "Mardonius, the sonne of Gobryas, who commanded the Armie of Darius in Macedon, and married Artozostre the Daughter of Darius. The printed spelling is kept.", "him"],
+  artozostre: ["Artozostre", "Artozostre, the Daughter of Darius, married to Mardonius her Cosen germaine. The printed spelling is kept.", "her"],
+  "otanes-son-of-hystaspes": ["Otanes son of Hystaspes", "Otanes, whom Reineccius giues as a sonne of Hystaspes, with Darius, Artabanus, Artaphernes, and Atarnes. He is not Otanes of the seuen Princes, and not Otanes the sonne of Sysamnes. The one-word title would fold onto otanes, so the title is four words.", "him"],
+  zopirus: ["Zopirus", "Zopirus, who for the loue he bare Darius cut off his owne Eares and Nose, and deliuered Babylon into Darius his hands. The printed spelling is kept.", "him"],
+  lauthinus: ["Lauthinus", "Lauthinus, King of the Scythians, whom Iustine calleth by that name, and who refused Darius his Daughter in marriage. The printed spelling is kept.", "him"],
+  histiaeus: ["Histiaeus", "Histiaeus, also printed Hystiaeus, Prince of Milet, who resisted the counsell to breake the bridge, and preuailed with the Ionians to attend Darius. The two spellings were left as one man.", "him"],
+  miltiades: ["Miltiades", "Miltiades, who perswaded the Asian Graecians to breake downe Darius his bridge, and who perswaded the triall by battaile at Marathon. He died after the attempt on Paros. He is not the Miltiades named among the annuall Magistrates before Draco.", "him"],
+  megabasus: ["Megabasus", "Megabasus, whom Darius imployed in the inuasion of Thrace and Macedon, and who mastered the Poeonians. He is not Megabysus of the seuen Princes. The printed spelling is kept.", "him"],
+  "otanes-son-of-sysamnes": ["Otanes son of Sysamnes", "Otanes, the sonne of Sysamnes, whom Cambyses had excoriated for false iudgement. He added Perinthus and other places to the Persian Empire. He is not Otanes of the seuen Princes, and not the Otanes whom Reineccius giues to Hystaspes. The one-word title would fold onto otanes, so the title is four words.", "him"],
+  "amintas-king-of-macedon": ["Amintas King of Macedon", "Amintas, King of Macedon, of whom Darius demanded the Earth and Water. He is not Amintas the eighteenth King in Assyria, and not the Amyntas of the chronological table. The one-word title would fold onto those records, so the title is four words.", "him"],
+  "alexander-son-of-amintas": ["Alexander son of Amintas", "Alexander, the sonne of Amintas King of Macedon, great Grand-father to Alexander the Great, and afterwards King of Macedon himselfe. He is not Alexander the Great. The one-word title would fold onto that record, so the title is four words.", "him"],
+  gygea: ["Gygea", "Gygea, the sister of Alexander the sonne of Amintas, giuen in marriage to Bubaris. The printed spelling is kept.", "her"],
+  bubaris: ["Bubaris", "Bubaris, a principall Commander of Darius forces, who married Gygea. The printed spelling is kept.", "him"],
+  mezades: ["Mezades", "Mezades, one of the Princes of Athens for terme of life, named between Phorbas and Diogenetus. The printed spelling is kept.", "him"],
+  charops: ["Charops", "Charops, the first of those that gouerned Athens for ten yeeres. The printed spelling is kept.", "him"],
+  aesymedes: ["Aesymedes", "Aesymedes, named among the decennall Gouernours of Athens after Charops. The printed spelling is kept.", "him"],
+  elydicus: ["Elydicus", "Elydicus, named among the decennall Gouernours of Athens. The printed spelling is kept.", "him"],
+  leostratus: ["Leostratus", "Leostratus, whom some finde among the annuall Magistrates of Athens, where Pausanias leaues a gap. The printed spelling is kept.", "him"],
+  anthosthenes: ["Anthosthenes", "Anthosthenes, named with Leostratus among the annuall Magistrates of Athens. The printed spelling is kept.", "him"],
+  "miltiades-the-archon": ["Miltiades the Archon", "Miltiades, named among the annuall Magistrates of Athens before Draco and Solon. He is not the Miltiades of the Scythian bridge and of Marathon. The one-word title would fold onto that Miltiades, so the title is three words.", "him"],
+  damasias: ["Damasias", "Damasias, named among the annuall Magistrates of Athens between Miltiades and Draco. The printed spelling is kept.", "him"],
+  "megacles-the-archon": ["Megacles the Archon", "Megacles, named among the annuall Magistrates of Athens between Draco and Solon. He is not the Megacles who headed a faction in Athens after Solon his lawes were broken. The one-word title would fold onto that Megacles, so the title is three words.", "him"],
+  megacles: ["Megacles", "Megacles, a Citizen of Athens of a noble Familie, who with Lycurgus headed a faction, and who gaue his Daughter to Pisistratus. He is not the Megacles named among the annuall Magistrates before Solon.", "him"],
+  "lycurgus-of-athens": ["Lycurgus of Athens", "Lycurgus, a Citizen of Athens of a noble Familie, who with Megacles headed a faction in the time of Pisistratus. He is not Lycurgus who gaue Lawes to the Spartans, and not Lycurgus of Nemea. The one-word title would fold onto those records, so the title is three words.", "him"],
+  pisistratus: ["Pisistratus", "Pisistratus, the son of Hippocrates, who made himselfe Lord of Athens, and who left the rule to his sonnes Hippias and Hipparchus. The printed spelling is kept.", "him"],
+  "hippocrates-father-of-pisistratus": ["Hippocrates father of Pisistratus", "Hippocrates, named as the father of Pisistratus. He is not HIPPOCRATES, whose aphorism is quoted on the shortnesse of life. The one-word title would fold onto that record, so the title is four words.", "him"],
+  hegesistratus: ["Hegesistratus", "Hegesistratus, Gouernour of Athens when Pisistratus first seized the Cittadell. The printed spelling is kept.", "him"],
+  hippias: ["Hippias", "Hippias, a sonne of Pisistratus, who gouerned Athens after his father, and who was presented to Darius after he gaue ouer the citie. The printed spelling is kept.", "him"],
+  "hipparchus-son-of-pisistratus": ["Hipparchus son of Pisistratus", "Hipparchus, a sonne of Pisistratus, murdered by Harmodius and Aristogiton. He is not Hipparchus the astronomer. The one-word title would fold onto that record, so the title is four words.", "him"],
+  harmodius: ["Harmodius", "Harmodius, who with Aristogiton murdered Hipparchus. The printed spelling is kept.", "him"],
+  aristogiton: ["Aristogiton", "Aristogiton, who with Harmodius murdered Hipparchus. The printed spelling is kept.", "him"],
+  lemnia: ["Lemnia", "Lemnia, a companion of Harmodius and Aristogiton, who cut out her owne tongue rather than betray them. A word before her name is a gap and was not filled. The printed spelling is kept.", "her"],
+  hypoclus: ["Hypoclus", "Hypoclus, the sonne of the Tyrant of Lampsacus. The Tyrant his owne name is a gap and was not filled. Hippias gaue Hypoclus one of his Daughters. The printed spelling is kept.", "him"],
+  clistines: ["Clistines", "Clistines, one of the noblest of Athens, whom the Citizens stirred vp to practise their deliuerie from Hippias. The printed spelling is kept.", "him"],
+  cleomenes: ["Cleomenes", "Cleomenes, King of a people whose name is a gap, who led the Lacedaemonians and deposed his companion King Demantus. The gap was not filled. The printed spelling is kept.", "him"],
+  aristagoras: ["Aristagoras", "Aristagoras, who abandoned his tyrannie at Miletus, drew the Athenians into the Ionian warre, and was ouerthrowne by the Edonians when he sought Amphipolis. The printed spelling is kept.", "him"],
+  eualcides: ["Eualcides", "Eualcides, Captaine of a people whose name is a gap, who perished in the fight neere Ephesus. Simonides kept his memorie. The gap was not filled. The printed spelling is kept.", "him"],
+  demantus: ["Demantus", "Demantus, companion King with Cleomenes, deposed, who fled to Darius. The printed spelling is kept.", "him"],
+  hippagoras: ["Hippagoras", "Hippagoras, to whom Darius gaue order to prepare a Fleet for the Armie that crossed the Hellespont. The printed spelling is kept.", "him"],
+  euphabus: ["Euphabus", "Euphabus, who with Philagius betrayed Eretria to the Persians. The printed spelling is kept.", "him"],
+  philagius: ["Philagius", "Philagius, who with Euphabus betrayed Eretria to the Persians. The printed spelling is kept.", "him"],
+  phidippides: ["Phidippides", "Phidippides, whom the Athenians sent to the Lacedaemonians, and who reported that he had encountred Pan. The printed spelling is kept.", "him"],
+  pan: ["Pan", "Pan, the god whom Phidippides supposed a familiar Deuill to be, and who promised that some one of the Gods should assist the Athenians. The Deuill was not made a person. Panici terrores was not attached to him.", "him"],
+  themistocles: ["Themistocles", "Themistocles, who had his first reputation at Marathon, being then young. The printed spelling is kept.", "him"],
+  "callimachus-at-marathon": ["Callimachus at Marathon", "Callimachus, one of the Graecians of marke who fell in the first encounter at Marathon. He is not Callimachus, who in his Hymnes witnesseth the tombe in Mountaine Iasius. The one-word title would haue linked that poet, so the title is three words.", "him"],
+  stesileus: ["Stesileus", "Stesileus, one of the Graecians of marke who fell in the first encounter at Marathon, named with Callimachus. The printed spelling is kept.", "him"],
+  cynegyrus: ["Cynegyrus", "Cynegyrus, who followed the Persians to their Gallies at Marathon and held one with his hands and then his teeth. The printed spelling is kept.", "him"],
+  coriolanus: ["Coriolanus", "Coriolanus, who made warre against his fellow-Romanes about the time of the battaile of Marathon. The printed spelling is kept.", "him"],
+  hybilides: ["Hybilides", "Hybilides, whom Halycarnasseus names as Gouernour of Athens at the time of Marathon. The name Plutarch giues for that Gouernour is a gap and was not filled. The printed spelling is kept.", "him"],
+  ceres: ["Ceres", "Ceres, in whose Temple at Paros Miltiades brake his thigh. The printed spelling is kept.", "her"],
+  xantippus: ["Xantippus", "Xantippus, the father of Pericles, by whose perswasion the Athenians cast Miltiades into prison. The printed spelling is kept.", "him"],
+  cymon: ["Cymon", "Cymon, the sonne of Miltiades, begotten on Hegisipila. The printed spelling is kept.", "him"],
+  hegisipila: ["Hegisipila", "Hegisipila, daughter of Olorus King of Thrace, and the mother of Cymon. The printed spelling is kept.", "her"],
+  olorus: ["Olorus", "Olorus, King of Thrace, the father of Hegisipila. The printed spelling is kept.", "him"],
+  artabasanes: ["Artabasanes", "Artabasanes, a sonne of Darius, borne before Darius obtained the kingdome. The printed spelling is kept.", "him"],
+  "achemenes-son-of-darius": ["Achemenes son of Darius", "Achemenes, a sonne of Darius, gouernor of Aegypt. He is not Achaemenes, the sonne of Perses, from whom the Achaemenidae are named. The one-word title would not keepe the two apart, so the title is four words.", "him"],
+  masistes: ["Masistes", "Masistes, a sonne of Darius, named with Artabasanes, Xerxes, Achemenes, and Anabignes. The printed spelling is kept.", "him"],
+  anabignes: ["Anabignes", "Anabignes, a sonne of Darius, named last of the fiue sonnes left at his death. The printed spelling is kept.", "him"],
 };
 
 export const B3_EVENTS = new Set([
@@ -369,4 +492,6 @@ export const B3_EVENTS = new Set([
   "temple-rebuilding-begins",
   "second-temple-completed",
   "xerxes-invades-greece",
+  "temple-rebuilding-resumed",
+  "battle-of-marathon",
 ]);

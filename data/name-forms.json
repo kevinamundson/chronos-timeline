@@ -456,6 +456,21 @@
       ]
     },
     {
+      "id": "achemenes-son-of-darius",
+      "forms": [
+        {
+          "form": "Achemenes",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. VIII, sig. 410a. The passage prints “Achemenes”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
+        }
+      ]
+    },
+    {
       "id": "achestratus",
       "forms": [
         {
@@ -1847,6 +1862,21 @@
       ]
     },
     {
+      "id": "apsander",
+      "forms": [
+        {
+          "form": "Absander",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. VI, sig. 406b–407a. The passage prints “Absander”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
+        }
+      ]
+    },
+    {
       "id": "apuilas",
       "forms": [
         {
@@ -2256,6 +2286,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book III, Part I, Chapters I–IV."
+        }
+      ]
+    },
+    {
+      "id": "artaphernes",
+      "forms": [
+        {
+          "form": "Artophernes",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. I, sig. 405a. The passage prints “Artophernes”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
         }
       ]
     },
@@ -3964,6 +4009,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter X."
+        }
+      ]
+    },
+    {
+      "id": "callimachus-at-marathon",
+      "forms": [
+        {
+          "form": "Callimachus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. VIII, sig. 410a. The passage prints “Callimachus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
         }
       ]
     },
@@ -5742,6 +5802,21 @@
       ]
     },
     {
+      "id": "diognetus",
+      "forms": [
+        {
+          "form": "Diogenetus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. VI, sig. 406b–407a. The passage prints “Diogenetus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
+        }
+      ]
+    },
+    {
       "id": "dionysus",
       "forms": [
         {
@@ -7499,6 +7574,21 @@
       ]
     },
     {
+      "id": "gobrias",
+      "forms": [
+        {
+          "form": "Gobryas",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. I, sig. 405a. The passage prints “Gobryas”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
+        }
+      ]
+    },
+    {
       "id": "godfrey",
       "forms": [
         {
@@ -7799,6 +7889,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        },
+        {
+          "form": "Halycarnasseus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. VIII, sig. 410a. The passage prints “Halycarnasseus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
         }
       ]
     },
@@ -8458,6 +8558,21 @@
       ]
     },
     {
+      "id": "hippomenes",
+      "forms": [
+        {
+          "form": "Hyppomenes",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. VI, sig. 406b–407a. The passage prints “Hyppomenes”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
+        }
+      ]
+    },
+    {
       "id": "hiram-of-tyre",
       "forms": [
         {
@@ -8569,6 +8684,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XIV–XVII."
+        }
+      ]
+    },
+    {
+      "id": "histiaeus",
+      "forms": [
+        {
+          "form": "Hystiaeus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. IV, sig. 405b–406a. The passage prints “Hystiaeus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
         }
       ]
     },
@@ -12614,6 +12744,21 @@
       ]
     },
     {
+      "id": "megacles-the-archon",
+      "forms": [
+        {
+          "form": "Megacles",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. VI, sig. 406b–407a. The passage prints “Megacles”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
+        }
+      ]
+    },
+    {
       "id": "megasthenes",
       "forms": [
         {
@@ -13100,6 +13245,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."
+        }
+      ]
+    },
+    {
+      "id": "miltiades-the-archon",
+      "forms": [
+        {
+          "form": "Miltiades",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. VI, sig. 406b–407a. The passage prints “Miltiades”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
         }
       ]
     },
@@ -18665,6 +18825,21 @@
       ]
     },
     {
+      "id": "sisamnus",
+      "forms": [
+        {
+          "form": "Sysamnes",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. V, sig. 406a–406b. The passage prints “Sysamnes”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
+        }
+      ]
+    },
+    {
       "id": "sisara",
       "forms": [
         {
@@ -19823,6 +19998,21 @@
       ]
     },
     {
+      "id": "tersippus",
+      "forms": [
+        {
+          "form": "Thersippus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. VI, sig. 406b–407a. The passage prints “Thersippus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
+        }
+      ]
+    },
+    {
       "id": "tertullian",
       "forms": [
         {
@@ -20109,6 +20299,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        },
+        {
+          "form": "Theispius",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. VI, sig. 406b–407a. The passage prints “Theispius”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
         }
       ]
     },
@@ -20124,6 +20324,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book I, Part I, Chapters IX–XII."
+        }
+      ]
+    },
+    {
+      "id": "thucydides",
+      "forms": [
+        {
+          "form": "Thucidides",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter V, §. VI, sig. 407a–407b. The passage prints “Thucidides”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–V."
         }
       ]
     },
