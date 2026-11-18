@@ -394,6 +394,33 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 759 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13, 114 in pass 14)
 - Accounts: 2,571 passages on 1,449 records
 
+## Pass 15
+
+Book II, Part I, Chapter XIV, sig. 277a, through Chapter XVII, §. X, sig. 302b. The headings are “CHAP. XIIII. Of the Warre of Troy.”, “CHAP. XV. Of SAMSON, ELI, and SAMVEL.”, “CHAP. XVI. Of SAVL.”, and “CHAP. XVII. Of DAVID.” One hundred eighty-six passages, p02572–p02757: 37 in Chapter XIV, 20 in Chapter XV, 41 in Chapter XVI, and 88 in Chapter XVII. Chapters XIV–XVI together were under the floor, and XVII is one chapter, so the pass stops at the end of XVII. Chapter XVIII opens on sig. 302b and was not entered. The same rules as passes 3–14. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. He prints two. 2848, for the fall of Troy, is on `fall-of-troy`, which keeps its tier 1 sort. Mercator’s 3046 for Homer is another man’s reckoning and is not stored. “Dauid died in the yeere 2991” does not say yeere of the World and is not stored. No calculated sort was written.
+
+As in Chapters VII–XIII, the people and events on each passage are named by hand, in `scripts/raleigh/ch14-17-attach.mjs`. `scripts/raleigh/hand-attach.mjs` joins it with the Chapter VII–XIII tables. A spelling that is already the title or a stored form of another record is not added as a name form. 177 of the 186 passages carry at least one link. The nine without one are p02573, p02580, p02592, p02612, p02630, p02638, p02734, p02749, and p02754. See N83.
+
+### Counts
+
+- Dated statements written: 1. Troy fell about the worlds yeere 2848, on `fall-of-troy`.
+- People created: 177, all first named in Book II, Part I, Chapters XIV–XVII
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 1. `fall-of-troy` gained the worlds yeere 2848. Its `sorting_year` stays −1184. Events received accounts from these chapters. No existing person file was replaced.
+- Name forms added: 94 (on new and existing people). No existing form was rewritten. A surface already held by another record was not stored, including Darius, Iosua, Abimelech, Aminadab, Ioel, Ioas, Eleazar, and Pyrrhus.
+- Accounts: 2,757 passages, on 1,654 records. The first 2,571 passages are unchanged, and no earlier link was dropped.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. The CFAH import and the standby compute were run after the accounts were written. No other importer was re-run. The new people are display-only, and none of them has a standby placement. The open questions for these chapters are N83–N88.
+
+### Cumulative
+
+- Dated statements written: 167 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6, 21 in pass 7, 9 in pass 8, 7 in pass 9, 15 in pass 10, 8 in pass 11, 32 in pass 12, 2 in pass 13, 3 in pass 14, 1 in pass 15)
+- People created: 1,253
+- Places created: 0
+- Events created: 0
+- Name forms added: 853 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13, 114 in pass 14, 94 in pass 15)
+- Accounts: 2,757 passages on 1,654 records
+
 ## RESUME POINT
 
-Book II, Part I, Chapter XIV. The heading is “CHAP. XIIII. Of the Warre of Troy.” Pass 14 stopped at the end of Chapter XIII. The last stored passage is p02571, Book II, Part I, Chapter XIII, §. VIII, sig. 276b (Habdon, Aeneas, Iephta, Sampson, and Iair). Do not start again inside Chapter XIII. Chapter XIV has 37 passages (sig. 277a–283b). It needs `BOOK2_THROUGH = 14` in `scripts/raleigh/xml-text.mjs`, `--book2=14` in `scripts/raleigh/covered.mjs`, and a hand table like `scripts/raleigh/ch11-13-attach.mjs`, because the chapter names many people who share letters with records already stored.
+Book II, Part I, Chapter XVIII. The heading is “CHAP. XVIII. Of SALOMON.” Pass 15 stopped at the end of Chapter XVII. The last stored passage is p02757, Book II, Part I, Chapter XVII, §. X, sig. 302b (Acastus the second Athenian prince, Hiram, and Salomon’s beginning of the Temple). Do not start again inside Chapter XVII. Chapter XVIII needs `BOOK2_THROUGH` raised past 17 in `scripts/raleigh/xml-text.mjs` and `--book2` in `scripts/raleigh/covered.mjs`, and a hand table like `scripts/raleigh/ch14-17-attach.mjs`, because the chapter names many people who share letters with records already stored.

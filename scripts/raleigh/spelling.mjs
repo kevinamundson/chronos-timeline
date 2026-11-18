@@ -627,6 +627,7 @@ const ETH_KEEP = new Set([
   'nazareth', 'elizabeth', 'elisabeth',
   'teeth', 'moneth', 'hundreth',
   'isboseth', 'ishbosheth', 'beth',
+  'mephiboseth', 'mephibosheth', 'mispeth', 'mizpeth',
   'shibboleth', 'sibboleth', 'macbeth', 'kenneth',
   'geth', 'saketh', 'cheareth',
   'bahalbeth', 'pibeseth', 'sebeth', 'tebeth', 'thobeth', 'swereth',
@@ -716,6 +717,10 @@ const ETH_REASON = {
   elizabeth: 'kept: name Elizabeth',
   elisabeth: 'kept: name Elizabeth',
   isboseth: 'kept: name Ishbosheth',
+  mephiboseth: 'kept: name Mephibosheth, printed Mephiboseth',
+  mephibosheth: 'kept: name Mephibosheth',
+  mispeth: 'kept: place Mizpeh, printed Mispeth',
+  mizpeth: 'kept: place Mizpeh, printed Mizpeth',
   dumeth: 'kept: city Dumeth, not a verb',
   alsovseth: 'kept: printed as one word; it reads as also vseth, and no space was added',
   aroseth: 'kept: place Aroseth gentium, not a verb',
@@ -1050,6 +1055,7 @@ export function modernizeProse(raw) {
   text = text.replace(/an swereth/gi, 'answers');
   // The hyphen splits the token, so the -eth rule would leave "fore-sees".
   text = text.replace(/fore-seeth/gi, 'foresees');
+  text = text.replace(/fore-sheweth/gi, 'foreshows');
   text = text.replace(/fore-telleth/gi, 'foretells');
   text = text.replace(/ouer-commeth/gi, 'overcomes');
   const phrased = applyPhrases(text);

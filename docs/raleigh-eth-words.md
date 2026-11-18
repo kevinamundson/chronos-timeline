@@ -659,3 +659,25 @@ Twenty-two words appear in Book II, Part I, Chapters XI–XIII and in no earlier
 | rendreth | 1 | renders | verb render → renders | p02413:  againe setteth at liberty: to whom hee rendreth those townes, that his father had taken from t |
 | sickeneth | 1 | sickens | verb sicken → sickens | p02413: nce from heauen, he departeth home, and sickeneth, and sendeth Azael with great gifts to Elizeu |
 | smoothereth | 1 | smothers | verb smother → smothers (Azael returning, smoothereth him) | p02413: ate, if he might liue. Azael returning, smoothereth him. Zonaras and Cedrenus call this Benhada |
+
+## Pass 15
+
+Fifteen words appear in Book II, Part I, Chapters XIV–XVII and in no earlier stored passage. Counts are in those 186 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| amounteth | 1 | amounts | verb amount → amounts | p02731: and his son to whom he left it. For it amounteth to three thousand three hundred thirtie and |
+| discourseth | 1 | discourses | verb discourse → discourses | p02586: d Barbarians from Greekes, as Herodotus discourseth, but all people were accustomed to steale wo |
+| drieth | 1 | dries | verb dry → dries | p02631: se, the more it swalloweth, the more it drieth, and desireth, finding taste in nothing but |
+| fetcheth | 1 | fetches | verb fetch → fetches | p02586: HErodotus fetcheth the cause of this rape from very farre; sayi |
+| flourisheth | 1 | flourishes | verb flourish → flourishes | p02643: rous, and base Vassals of the time that flourisheth: and as despightfull and cruell without caus |
+| fore-sheweth | 1 | foreshows | hyphen joined, like fore-seeth | p02632: n that place of Deuteronomie, where God fore-sheweth this change of gouernment from Iudges to Kin |
+| mephiboseth | 2 | mephiboseth | kept: name Mephibosheth, printed Mephiboseth | p02679: no right to the Kingdome of Israel: for Mephiboseth the first sonne of Ionathan liued. Against t |
+| mephibosheth | 2 | mephibosheth | kept: name Mephibosheth | p02709: appeared afterward. He also accepted of Mephibosheth his excuse, whom Ziba had formerly falsly ac |
+| mispeth | 1 | mispeth | kept: place Mizpeh, printed Mispeth | p02640: At Mispeth Samuel assembled the people, that hee might |
+| mizpeth | 1 | mizpeth | kept: place Mizpeh, printed Mizpeth | p02640: sent. When the Tribes were assembled at Mizpeth, the generall opinion is, that hee was chose |
+| playeth | 1 | plays | verb play → plays | p02726: CAEVS, HORACE, GATVLLVS and SERENVS, he playeth Christ on his harpe, and on a ten stringed P |
+| rehearseth | 1 | rehearses | verb rehearse → rehearses | p02620: and stinking vapours vanished. Plutarch rehearseth a memorable accident in that age concerning |
+| searcheth | 1 | searches | verb search → searches | p02620: ere( as ignorant of the true cause) hee searcheth his braines for many reasons of so great an |
+| summoneth | 1 | summons | verb summon → summons | p02675: d therefore preparing to inuade Israel, summoneth Dauid to assist him, who dissembling his int |
+| swalloweth | 1 | swallows | verb swallow → swallows | p02631: he thirst of couetousnesse, the more it swalloweth, the more it drieth, and desireth, finding t |
