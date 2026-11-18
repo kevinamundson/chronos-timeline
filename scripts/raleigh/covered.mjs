@@ -11,8 +11,8 @@
 //
 // --through is the last Book I, Part I chapter. It cannot be less than 8, because
 // passes 1–3 already covered Chapters I–VIII. --book2 is the last Book II, Part I
-// chapter. 0 leaves Book II out. Pass 16 stops at Chapter XXIII. The constant
-// BOOK2_THROUGH is raised as each chapter of this pass is stored. A value of 8 is
+// chapter. 0 leaves Book II out. Pass 18 stops at Chapter XXVIII, the end of Book II.
+// The constant BOOK2_THROUGH is raised as each chapter of this pass is stored. A value of 8 is
 // unused: pass 12 took Chapters VIII and IX together.
 // A passage is attached by the name as printed. Groups, places, and unnamed
 // people are not split into individuals. God, Jehovah, and the Holy Ghost are
@@ -35,8 +35,8 @@ const book2Through = book2Arg ? Number(book2Arg.slice('--book2='.length)) : 0;
 if (!Number.isInteger(throughChapter) || throughChapter < 8 || throughChapter > 12) {
   throw new Error('--through must be an integer from 8 to 12 (Book I, Part I ends at Chapter XII)');
 }
-if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 23 || book2Through === 8) {
-  throw new Error('--book2 must be 0–7 or 9–23 (pass 16 stops at Book II, Part I, Chapter XXIII)');
+if (!Number.isInteger(book2Through) || book2Through < 0 || book2Through > 28 || book2Through === 8) {
+  throw new Error('--book2 must be 0–7 or 9–28 (pass 18 stops at Book II, Part I, Chapter XXVIII)');
 }
 const LINK = 'https://texts.earlyprint.org/works/A10357.xml';
 const SRC = 'raleigh-history-of-the-world';
@@ -2267,7 +2267,9 @@ function formsFor(id, title) {
   const person = nameDoc.people.find((p) => p.id === id);
   const stored = new Set((person?.forms || []).map((f) => f.form.toLowerCase()));
   stored.add((title || '').toLowerCase());
-  const newNote = book2Through >= 18
+  const newNote = book2Through >= 24
+    ? 'Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII.'
+    : book2Through >= 18
     ? 'Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII.'
     : book2Through === 17
     ? 'Spelling only. Read in Book II, Part I, Chapters XIV–XVII.'
@@ -2301,7 +2303,9 @@ function formsFor(id, title) {
     const holder = held.find((p) => p && p.passage.includes(form));
     if (!holder) continue;
     // Earlier passes stored the spellings they read. Add a form only from this pass.
-    const inPass = book2Through >= 18
+    const inPass = book2Through >= 24
+      ? holder.kind === 'body' && holder.book === '2' && Number(holder.chapter) >= 24 && Number(holder.chapter) <= book2Through
+      : book2Through >= 18
       ? holder.kind === 'body' && holder.book === '2' && Number(holder.chapter) >= 18 && Number(holder.chapter) <= book2Through
       : book2Through === 17
       ? holder.kind === 'body' && holder.book === '2' && (holder.chapter === '14' || holder.chapter === '15' || holder.chapter === '16' || holder.chapter === '17')
