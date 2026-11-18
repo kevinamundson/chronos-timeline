@@ -181,6 +181,81 @@ export const CH24_28 = {
   p03219: ["sennacherib=Sennacherib", "herodotus=Herodotus", "vulcan=Vulcan", "sethon=Sethon", "serapis=Serapis", "isaiah=Esay"],
   p03220: ["sethon=Sethon", "tirhakah=Tarachus", "tirhakah=Tirhaka", "sennacherib=Senacherib", "eusebius=Eusebius", "hezekiah=Ezekia", "cush=Chusites", "judah=Iuda"],
   p03221: ["herodotus=Herodotus", "sethon=Sethon", "sethon=Sethons", "functius=Functius", "rehoboam=Rehoboam", "iehoiakim=Iehoiakim", "psammetichus-i=Psammiticus", "judah=Iuda"],
+
+  // Chapter XXVII. Of Manasse and his contemporaries. p03222–p03278.
+  // Manasses King of Iuda is manasses, not manasseh the sonne of Ioseph.
+  // Ammon his sonne is amon, not the nation ammon, and not amnon the sonne of Dauid.
+  // The Midas of this raigne is not the Midas who liued with Barac.
+  // Aristodemus of Messene is not the Aristodemus of the Heraclidae.
+  // Sybilla of Samus is not the earlier Sybilla. Ioacim the High Priest is not
+  // Iehoiakim. Rabbi Kimhi is not Rabbi Moses Kimchi. Arphaxad of the booke of
+  // Iudith is not the sonne of Sem. Nabulassar stays nabopolassar, as Nabolassar
+  // did. Nabuchodonosor stays nebuchadnezzar-ii. Ben Merodach is ben-merodach,
+  // not evil-merodach. Merodach Baladan is merodach-baladan. Amasis, as Raleigh
+  // coniectures, is anysis. Actisanes, as he coniectures, is sabacus. Marus or
+  // Menides is kept apart from Annemenes. Tkuoris is thuoris. Moeris is myris.
+  // Darius, Hystaspis is darius-hystaspis. Ochus is the Persian, not the
+  // Phoenician. Xerxes is the Raleigh record. Horatij, Curatij, Parthenians,
+  // and the Megarcuses are groups and were not split. Phud and Lud are countries.
+  // Tartan is the captaine Raleigh names. Hercules, the Deuill, and God are not
+  // attached. Olympiads and raigne-lengths are not stored. No new event.
+  p03222: ["manasses=MANASSE"],
+  p03223: ["manasses=MANASSES"],
+  p03224: ["manasses=MANASSE", "hezekiah=Ezekias", "moloch=Moloch", "moloch=Melchor"],
+  p03225: ["isaiah=Esay", "epiphanius=Epiphanius", "isidore=Isidore", "eusebius=Eusebius", "asshur=ASHVR", "manasses=MANASSE"],
+  p03226: ["merodach=Merodach", "manasses=Manasse", "glycas=Glycas", "suidas=Suidas"],
+  p03227: ["sethon=SETHON", "psammetichus-i=PSAMMITICVS"],
+  p03228: ["manasses=Manasses", "merodach=Merodach", "judah=Iuda", "diodorus-siculus=Diodore", "sethon=Sethon", "sabacus-the-ethiopian=Sabacus", "herodotus=Herodotus", "psammetichus-i=Psammiticus"],
+  p03229: [],
+  p03230: ["vulcan=Vulcan", "myris=Moeris", "herodotus=Herodotus", "diana=Diana", "diodorus-siculus=Diodorus", "marus=Marus", "marus=Menides", "proteus-of-egypt=Proteus", "daedalus=Daedalus", "minos=Minos", "reineccius=Reineccius", "annemenes=Annemenes", "thuoris=Tkuoris", "diodorus-siculus=Diodore", "manetho=Manethon", "chaeremon=Chaeremon", "josephus=Iosephus", "amenophis=Amenophis", "anysis=Amasis", "anysis=Anysis", "sabacus-the-ethiopian=Actisanes", "sabacus-the-ethiopian=Sabacus"],
+  p03231: ["vulcan=Vulcan", "psammetichus-i=Psammiticus", "diodorus-siculus=Diodore", "herodotus=Herodotus"],
+  p03232: ["herodotus=Herodotus", "eusebius=Eusebius", "gerardus-mercator=Mercator", "psammetichus-i=Psammiticus", "eusebius=Eusevius"],
+  p03233: ["rehoboam=Rehoboam", "iehoiakim=Iehoiakim", "sethon=Sethons", "functius=Functius", "psammetichus-i=Psammiticus"],
+  p03234: [],
+  p03235: ["becanus=Goropius Becanus", "becanus=Goropius"],
+  p03236: ["psammetichus-i=Psammiticus", "tartan=Tartan", "sennacherib=Senacherib"],
+  p03237: ["manasses=MANASSES"],
+  p03238: ["manasses=Manasses", "sethon=Sethon", "psammetichus-i=Psammiticus", "amaziah=Amazia", "judah=iuda"],
+  p03239: ["manasses=Manasses", "torniellus=Torniellus", "bellarmine=Bellarmine", "rabbi-kimhi=Kimhi", "ezekiel=Ezekiel", "rabbi-kimhi=Kimbi", "amon=Ammon", "josephus=Iosephus", "manasses=MANASSES", "judah=Iuda", "iehoiakim=Iehoiakim", "sethon=Sethon", "merodach=Merodach", "nabopolassar=Nabulassar", "psammetichus-i=Psammiticus"],
+  p03240: ["ahaz=Achaz", "sennacherib=Sennacheribs"],
+  p03241: ["manasses=Manasses", "iosias=Iosias", "pharaoh=Pharao"],
+  p03242: ["hezekiah=EZEKIA", "manasses=MANASSES", "judah=Iuda"],
+  p03243: ["manasses=Manasses"],
+  p03244: ["hezekiah=Ezekia", "manasses=Manasses", "pelops=Pelops"],
+  p03245: ["polychares=Polychares", "euaephnes=Euaephnes"],
+  p03246: ["euphaes=Euphaes", "aristodemus-of-messene=Aristodemus"],
+  p03247: ["aepytus=Aegytus", "lyciscus=Lyciscus", "aristodemus-of-messene=Aristodemus"],
+  p03248: ["aristomenes=Aristomenes", "aepytus=Aepytus", "tyrtaeus=Tyrtaeus"],
+  p03249: ["aristomenes=Aristomenes", "aristocrates=Aristocrates"],
+  p03250: ["aristomenes=Aristomenes"],
+  p03251: ["emperamus=Emperamus", "aristomenes=Aristomenes"],
+  p03252: ["aristomenes=Aristomenes", "aristocrates=Aristocrates", "anaxander=Anaxander"],
+  p03253: ["aristomenes=Aristomenes", "gorgus=Gorgus", "demagetus=Demagetus", "ardys=Ardys", "gyges=Gyges", "phraortes=Phraortes"],
+  p03254: [],
+  p03255: [],
+  p03256: ["epaminondas=Epaminondas"],
+  p03257: ["manasses=MANASSES", "deioces=DEIOCES", "arphaxad-of-judith=ARPHAXAD", "judith=IVDITH"],
+  p03258: ["ardys=ARDYS", "phraortes=Phraortes", "pausanias=Pausanias", "gyges=Gyges", "alyattes=Alyattes"],
+  p03259: ["phraortes=Phraortes", "manasses=Manasses", "judah=Iuda"],
+  p03260: ["deioces=Deioces", "phraortes=Phraortes", "manasses=Manasses", "arbaces=Arbaces", "herodotus=Herodotus"],
+  p03261: ["deioces=Deioces", "arphaxad-of-judith=Arphaxad", "ben-merodach=Ben Merodach", "nebuchadnezzar-ii=Nabuchodonosor", "holofernes=Holophernes", "merodach-baladan=Merodach Baladan", "nabopolassar=Nabulassar"],
+  p03262: ["cambyses=Cambyses", "darius-hystaspis=Darius", "darius-hystaspis=Hystaspis", "xerxes=Xerxes", "ochus=Ochus", "bellarmine=Bellarmine", "judith=Iudith", "ioacim-high-priest=Ioacim", "nebuchadnezzar-ii=Nabuchodonosor"],
+  p03263: ["ioacim-high-priest=Ioacim", "manasses=Manasses", "xerxes=Xerxes", "torniellus=Torniellus", "arphaxad-of-judith=Arphaxad", "deioces=Deioces", "nebuchadnezzar-ii=Nabuchodonosor", "holofernes=Holofernes", "judith=Iudith", "bellarmine=Bellarmine"],
+  p03264: ["japheth=IAPHETH", "holofernes=Holofernes", "manasses=Manasses"],
+  p03265: [],
+  p03266: ["manasses=Manasses", "romulus=Romulus", "numa-pompilius=Numa", "egeria=Egeria", "numa-pompilius=Numa Pompilius", "pompo=Pompo", "petilius=L. Petilius", "cicero=Tully", "julius-caesar=Caesar"],
+  p03267: ["numa-pompilius=Numa", "tullus-hostilius=Tullus Hostilius", "manasses=Manasses"],
+  p03268: ["halicarnasseus=Dionysius", "livy=Liuie"],
+  p03269: [],
+  p03270: ["hippomenes=Hippomenes", "manasses=Manasses", "leocrates=Leocrates", "apsander=Apsander", "erixias=Erizias", "erixias=Erixias"],
+  p03271: ["medon=Medon", "codrus=Codrus", "halicarnasseus=Dionysius of Halicarnassus", "caerops=Charops", "pausanias=Pausanias"],
+  p03272: ["manasses=Manasses", "midas-of-manasses=Midas", "bacchus=Bacchus"],
+  p03273: ["antimachus=Antimachus", "plutarch=Plutarch", "romulus=Romulus"],
+  p03274: ["eusebius=Eusebius", "psammetichus-i=Psammiticus"],
+  p03275: ["archias=Archias", "miscellus=Miscellus"],
+  p03276: ["zipartes=Zipartes", "sybilla-of-samus=Sybilla of Samus", "pausanias=Pausanias"],
+  p03277: ["miscellus=Miscellus", "archias=Archias", "strabo=Strabo", "pausanias=Pausanias"],
+  p03278: ["phalantus=Phalantus", "justin=Iustine", "pausanias=Pausanias", "manasses=Manasse", "ben-merodach=Ben Merodach", "nabopolassar=Nabulassar"],
 };
 
 export const CH24_28_NEW = {
@@ -294,6 +369,41 @@ export const CH24_28_NEW = {
   "sol-son-of-vulcan": ["Sol son of Vulcan", "Sol, the sonne of Vulcan, who raigned in Aegypt twentie yeeres and a halfe, in the list which Cedrenus deliuers. The one-word title would not say which Sol, so the title is four words.", "him"],
   narecho: ["Narecho", "Narecho, the name which Cedrenus giues to that Pharao who held the Crowne fiftie yeeres, and from whom the surname of Pharao passed to a long posteritie. Pharao is kept on his owne record.", "him"],
   chabreus: ["Chabreus", "Chabreus, whom Diodore, rather than Cephrenes, makes the successor of Chemmis. Herodotus his Cheops might bee this man. The two names are kept apart.", "him"],
+  marus: ["Marus", "Marus, also called Menides, whom Diodorus makes the builder of the Labyrinth, fiue generations before Proteus. Reineccius takes him for Annemenes. Raleigh doth not, and coniectures that he was one of the twelue Princes.", "him"],
+  chaeremon: ["Chaeremon", "Chaeremon, named with Manethon among those whose fabulous relations of Amenophis are found in Iosephus.", "him"],
+  tartan: ["Tartan", "Tartan, a Captaine of Senacherib, who wonne Azotus, which Psammiticus afterwards besieged.", "him"],
+  bellarmine: ["Bellarmine", "Bellarmine, the Cardinall, who thinkes that Manasses was taken in the fifteenth yeere of his raigne, and who placeth the storie of Iudith in this age. Raleigh doth not follow him.", "him"],
+  "rabbi-kimhi": ["Rabbi Kimhi", "Rabbi Kimhi, also printed Kimbi, who vpon Ezekiel saith that Manasses was fortie yeeres an Idolater, and liued fifteene yeeres after his repentance. He is not Rabbi Moses Kimchi.", "him"],
+  polychares: ["Polychares", "Polychares, a Messenian, who slew many Lacedaemonians after Euaephnes had slaine his Sonne. The Sonnes name is not printed.", "him"],
+  euaephnes: ["Euaephnes", "Euaephnes, a Lacedaemonian, who sold the Cattaile of Polychares and slew his Sonne.", "him"],
+  euphaes: ["Euphaes", "Euphaes, King of the Messenians, slaine in the first Messenian Warre. Aristodemus was chosen in his stead.", "him"],
+  "aristodemus-of-messene": ["Aristodemus of Messene", "Aristodemus, chosen King of the Messenians after Euphaes, who offered his owne Daughter and afterwards slew himselfe. He is not Aristodemus vnder whom the Heraclidae returned. The one-word title would fold onto aristodemus, so the title is three words.", "him"],
+  aepytus: ["Aepytus", "Aepytus, also printed Aegytus, of whose stock the Messenians were told to sacrifice a Virgin, and of whose house Aristomenes was. The two spellings are one man.", "him"],
+  lyciscus: ["Lyciscus", "Lyciscus, whose Daughter the lot named for that sacrifice. He fled with her into Sparta. Her name is not printed.", "him"],
+  aristomenes: ["Aristomenes", "Aristomenes, a noble Gentleman of the house of Aepytus, Generall of the Messenians in the second Warre, who died at Rhodes.", "him"],
+  tyrtaeus: ["Tyrtaeus", "Tyrtaeus, a Poet, whom by appointment of an Oracle the Lacedaemonians had gotten to direct them.", "him"],
+  aristocrates: ["Aristocrates", "Aristocrates, King of Arcadia, who being corrupted with mony fled from the battaile, and was stoned by the Arcadians.", "him"],
+  emperamus: ["Emperamus", "Emperamus, who commanded in the Kings absence, when the slaue brought the newes that opened Era.", "him"],
+  anaxander: ["Anaxander", "Anaxander, King of Sparta, to whom Aristocrates sent word of Aristomenes his march.", "him"],
+  gorgus: ["Gorgus", "Gorgus, the sonne of Aristomenes, to whom, with other Gouernours, he committed his people.", "him"],
+  demagetus: ["Demagetus", "Demagetus, who raigned in the Ile of Rhodes, and by an Oracle tooke to wife a daughter of Aristomenes. Her name is not printed.", "him"],
+  epaminondas: ["Epaminondas", "Epaminondas, who hauing tamed the Lacedaemonians, reuoked the Messenians home and holpe them to build Messene.", "him"],
+  "arphaxad-of-judith": ["Arphaxad of Iudith", "Arphaxad, the King mentioned in the Booke of Iudith, whom some would make Deioces the Mede. He is not Arphaxad the sonne of Sem. Torniellus his Arphaxad is called a fantasie, and was not made another man. The one-word title would fold onto arphaxad, so the title is three words.", "him"],
+  "ioacim-high-priest": ["Ioacim the High Priest", "Ioacim, the High Priest, whom the storie of Iudith requireth. He is not Iehoiakim King of Iuda. The one-word title would not say which man, so the title is four words.", "him"],
+  egeria: ["Egeria", "Egeria, a Nymph, with whom Numa perswaded the Romans that he had familiaritie, and who taught him the Ceremonies which he deliuered.", "her"],
+  pompo: ["Pompo", "Pompo, the father of Numa Pompilius, named in the inscription of his graue.", "him"],
+  petilius: ["L. Petilius", "L. Petilius, a Scribe, in whose ground the graue of Numa was opened by chance.", "him"],
+  hippomenes: ["Hippomenes", "Hippomenes, an Athenian Gouernour, whose seuenth yeere was current with the first of Manasses.", "him"],
+  leocrates: ["Leocrates", "Leocrates, one of the three last Gouernours for tenne yeeres at Athens, in the time of Manasses. Of him Raleigh findes onely the name.", "him"],
+  apsander: ["Apsander", "Apsander, one of those three Gouernours. Of him Raleigh findes onely the name.", "him"],
+  erixias: ["Erixias", "Erixias, also printed Erizias, the last of those three Gouernours. After him yeerely Rulers were elected. The two spellings are one man.", "him"],
+  "midas-of-manasses": ["Midas in Manasses his time", "Midas, who in the raigne of Manasses held the Kingdome of Phrygia, and of whom the Poets fained Asses eares and the gift of Bacchus. He is not the Midas who was contemporary with Barac and Debora. The one-word title would fold onto midas, so the title is four words.", "him"],
+  antimachus: ["Antimachus", "Antimachus, who, as Plutarch saith in the life of Romulus, obserued the Moones Eclipse at the foundation of Rome.", "him"],
+  archias: ["Archias", "Archias, a Corinthian, who with Miscellus founded Syracusae in Sicily.", "him"],
+  miscellus: ["Miscellus", "Miscellus, the companion of Archias, who founded Croton, and is named at the founding of Syracusae.", "him"],
+  zipartes: ["Zipartes", "Zipartes, a natiue of Thrace, who in this age enlarged and beautified Nicomedia, sometime Astacus.", "him"],
+  "sybilla-of-samus": ["Sybilla of Samus", "Sybilla of Samus, who according to Pausanias liued about this time. She is not the Sybilla who witnesseth of Titan and Saturne. The one-word title would fold onto sibyl, so the title is three words.", "her"],
+  phalantus: ["Phalantus", "Phalantus, who conducted the Parthenians into Italie, where it is said they founded Tarentum. The Parthenians were not split into men.", "him"],
 };
 
 export const CH24_28_EVENTS = new Set([
