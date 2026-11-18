@@ -118,6 +118,17 @@
       "link": "https://drive.google.com/file/d/1oWd9zewstqGwF1muCS5nysIr93Q8K5fI/view",
       "source_text_id": "generations-preparing-2e",
       "note": "Table of the judges."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "the Land and People of Israel liued in peace vnto the end of fourescore yeeres from the death of Othoniel, which terme expired in the Worlds yeere 2691",
+      "year_am": 2691,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XIII, §. II, sig. 263a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. His yeere of the World for the end of the fourescore yeeres of peace from Othoniel's death. The italic year is display only. This does not change the sort."
     }
   ],
   "people": [],
@@ -134,7 +145,8 @@
     "jordan-sbc-2",
     "blb-biblehub",
     "ussher-annals-1658",
-    "jordan-compilation-anno-mundi"
+    "jordan-compilation-anno-mundi",
+    "raleigh-history-of-the-world-1617"
   ],
   "free_source_links": [
     {

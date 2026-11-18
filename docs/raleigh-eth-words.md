@@ -22,6 +22,8 @@ Pass 12 (Book II, Part I, Chapters VIII and IX) adds nine words those tables do 
 
 Pass 13 (Book II, Part I, Chapter X) adds seven words those tables do not list. Four change. Three stay: `hareseth`, the hyphenated half of Kir-hareseth; `ishboseth`, the name; and `mageth`, the place in Gad. None of the seven is flagged. `indureth` is endure. The letter rules do not reach that in- spelling, so it is explicit. Through Chapter X the inventory is 489 distinct words: 443 change, 42 stay, and the same 4 flagged. The new rows are under "Pass 13".
 
+Pass 14 (Book II, Part I, Chapters XI–XIII) adds twenty-two words those tables do not list. Twenty change. Two stay: `haroseth`, the city; and `iephunneth`, the name. None of the twenty-two is flagged. `assiegeth` is besiege, `commaundeth` is command, `picketh` is pick, `smoothereth` is smother. `ouer-commeth` is joined to overcomes, like fore-seeth. Through Chapter XIII the inventory is 511 distinct words: 463 change, 44 stay, and the same 4 flagged. The new rows are under "Pass 14".
+
 ## Decisions
 
 - hath becomes has. It is the irregular third person of have. It does not end in -eth. An all-capital HATH becomes HAS. The capitals stay (open question N17).
@@ -52,6 +54,13 @@ Pass 13 (Book II, Part I, Chapter X) adds seven words those tables do not list. 
 - ishboseth stays. It is the name Ishbosheth, printed Ishboseth.
 - mageth stays. It is the place Mageth in Gad.
 - indureth becomes endures. In this book it is the verb in “nor indureth fish to liue in it”. The letter rules do not reach that in- spelling, so it is explicit.
+- Haroseth stays. It is the city, “Hazor and Haroseth the chiefe holds of Iahin”.
+- Iephunneth stays. It is the name of Caleb's father.
+- assiegeth becomes besieges. In this book it is the verb in “Achab inuadeth Gilead, and assiegeth the Citie”. The letter rules miss it because siege is a non-verb stem.
+- commaundeth becomes commands. The ou spelling is not a dictionary verb.
+- picketh becomes picks. The letter rules would otherwise give pics.
+- smoothereth becomes smothers. The stem smoother is a dictionary adjective.
+- Hyphenated ouer-commeth would otherwise become over-commeth. The modern view joins it: overcomes.
 
 ## Flagged
 
@@ -621,3 +630,32 @@ Seven words appear in Book II, Part I, Chapter X and in no earlier stored passag
 | lamenteth | 1 | laments | verb lament → laments | p02296: nameth Gath and Ascalon onely, when hee lamenteth the death of Saul, and 〈◊ 〉, not speakin |
 | mageth | 1 | mageth | kept: place Mageth in Gad, not a verb | p02375: um, of which 1. Sam. 22. 3. As for that Mageth which Adrichomius findes in this Tribe of G |
 | melteth | 1 | melts | verb melt → melts | p02401: e on the West. When the snow of Libanus melteth, it is very large, saith Brochard: otherwi |
+
+## Pass 14
+
+Twenty-two words appear in Book II, Part I, Chapters XI–XIII and in no earlier stored passage. Counts are in those 169 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| assiegeth | 1 | besieges | verb besiege → besieges (Achab inuadeth Gilead, and assiegeth the Citie) | p02413: g deliuered, Achab inuadeth Gilead, and assiegeth the Citie, being assisted by Iosaphat. The Ar |
+| blesseth | 1 | blesses | verb bless → blesses | p02496: came not out to assist Israel, and then blesseth Iael the wife of Heber the Kenite, who nailed |
+| buildeth | 1 | builds | verb build → builds | p02566: me? For this accident whereupon Codoman buildeth, hath either no time giuen to it, or a time fa |
+| commaundeth | 1 | commands | verb command → commands (but commaundeth vs to offer our selues) | p02551:  sacrifice with all Diuine worship, but commaundeth vs to offer our selues, and our children vn |
+| curseth | 1 | curses | verb curse → curses | p02496: rsed, and all in effect lost. Shee then curseth the inhabitants of Meroz, who dwelling neare th |
+| dasheth | 1 | dashes | verb dash → dashes | p02568: s to make the 〈◊ 〉 euen. In so doing he dasheth himselfe against a notable Text, whereupon all |
+| departeth | 1 | departs | verb depart → departs | p02413:  being terrified thence from heauen, he departeth home, and sickeneth, and sendeth Azael with g |
+| forgetteth | 1 | forgets | verb forget → forgets | p02458: , which they adored. But herein Tacitus forgetteth himselfe, hauing in the fift booke of his ow |
+| haroseth | 1 | haroseth | kept: city Haroseth, chiefe hold of Iahin in Nepthalim | p02495: ible, than in others, because Hazor and Haroseth the chiefe holds of Iahin, were in Nepthalim. |
+| iephunneth | 1 | jephunneth | kept: name Iephunneth, father of Caleb | p02465:  to enforce. For Caleb was the sonne of Iephunneth, and Othoniel the sonne of Cenas, Calebs yon |
+| limiteth | 1 | limits | verb limit → limits | p02566: o such phrase of speech in Scripture as limiteth a iourney by an accident, or saith by conuerti |
+| magnifieth | 1 | magnifies | verb magnify → magnifies | p02514: of Martial, wherein the flattering Poet magnifieth the abominable shew, as a goodly Pageant, in |
+| misreckoneth | 1 | misreckons | verb misreckon → misreckons | p02500: rom which 〈◊ 〉 to the end of 〈◊ 〉, 〈◊ 〉 misreckoneth 400. yeares. This Kingdome before the tran |
+| ouer-commeth | 1 | overcomes | hyphen joined, like fore-seeth | p02530: y Iason, wisdome, and moderation, which ouer-commeth all perils: but that which is most probabl |
+| picketh | 1 | picks | verb pick → picks (yet hee picketh quarrell against Ioram) | p02413:  though Elizeus had healed him, yet hee picketh quarrell against Ioram: and when Ioram by Elize |
+| praiseth | 1 | praises | verb praise → praises | p02532: akenesse of the vndertakers, and rather praiseth the aduenture than feareth the like successe. |
+| punisheth | 1 | punishes | verb punish → punishes | p02495: e is the Lord of all power, he sometime punisheth by inuisible strength, as when he slaughtered |
+| rageth | 1 | rages | verb rage → rages | p02532: the preseruation of euery being: but it rageth also against her, though garnished with beautie |
+| refuseth | 1 | refuses | verb refuse → refuses | p02413: essour of Achab, but being returned, he refuseth to render Ramoth Gilead, a frontier towne, and |
+| rendreth | 1 | renders | verb render → renders | p02413:  againe setteth at liberty: to whom hee rendreth those townes, that his father had taken from t |
+| sickeneth | 1 | sickens | verb sicken → sickens | p02413: nce from heauen, he departeth home, and sickeneth, and sendeth Azael with great gifts to Elizeu |
+| smoothereth | 1 | smothers | verb smother → smothers (Azael returning, smoothereth him) | p02413: ate, if he might liue. Azael returning, smoothereth him. Zonaras and Cedrenus call this Benhada |

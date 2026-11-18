@@ -1983,6 +1983,78 @@ Pass 13 read Book II, Part I, Chapter X, and stopped at the end of that chapter.
   2. Name an existing event that should receive one of them. Or say how you want medieval years after Christ handled.
 - **Recommendation:** option 1 for the counts. Option 2 is for you to decide for the years after Christ.
 
+Pass 14 read Book II, Part I, Chapters XI–XIII, and stopped at the end of Chapter XIII. The quotes are in `data/raleigh-body-extract.md`. N1 through N76 stay open.
+
+### N77. Chapters XI–XIII were attached by hand, and the tribes go to the patriarchs
+
+- **Why it matters:** Chapter XI is the Syrians. Chapter XII describes Beniamin and Hierusalem. Chapter XIII is the Judges from Iosua’s death to Iephtha, with Greek contemporaries. They print most cities, rivers, and mountains in capitals. The automatic linker would have made people of places and headings. So `scripts/raleigh/ch11-13-attach.mjs` names each person or event on each passage by hand. Names not in that table are not attached. A passage that names a tribe is on the patriarch: `benjamin`, `judah`, `ephraim`, `reuben`, `gad`, `manasseh`, `dan`, `simeon`, `naphtali`, `asher`, `issachar`, `zebulun`, `levi`, `joseph`. The cities, rivers, and mountains were not made people. A spelling that is already the title or a stored form of another record is not added as a name form.
+- **Options:**
+  1. Leave the tribes on the patriarchs, as now.
+  2. Make a separate record for each tribe, and move the land passages there.
+- **Recommendation:** option 1. It matches N59, N65, and N71.
+
+### N78. Men who share a name in these chapters
+
+- **Why it matters:** Each was kept apart only where the passage says which man it means.
+  - **Rezin / Rezon:** Rezon, also printed Razon and Rezin the sonne of Eliadad, the second of the Adads and an enemie to Salomon, is `rezon`. Rezin the last King of Damascus stays on `rezin`.
+  - **Adad:** Adad the Edomite stays on `hadad`. Adadezer stays on `hadarhezer`. Adad of Damascus, slain with Adadezer, is `adad-of-damascus`.
+  - **Eliezer:** Eliezer of Damasco, Abrahams Steward, is `eliezer-of-damascus`. He is not Eliezer the sonne of Moses.
+  - **Ioram:** Ioram sonne of Tohu of Emath is `joram-son-of-tohu`. Ioram sonne of Achab stays on `joram-king-of-israel`.
+  - **Phul Belochus:** Phul Belochus, who with Arbaces overthrew Sardanapalus and took tribute of Menahem, is `phul-belochus`. Teglath his sonne stays on `tiglath-pileser-iii`. He is not Belochus Priscus.
+  - **Darius:** Darius their last King, with whom the Persians held Syria, is `darius-iii`. He is not Darius who begged water.
+  - **Tantalus:** Tantalus King of Lydia in Ehud’s time is `tantalus-king-of-lydia`. Tantalus sonne of Hymenaeus, brother of Ascalus, stays on `tantalus`.
+  - **Perseus:** Perseus sonne of Iupiter and Danae is `perseus-son-of-danae`. Perseus father of Erythraeus stays on `perseus`.
+  - **Lynceus:** Lynceus the Argonaut, sonne of the gap, is `lynceus-argonaut`. Lynceus husband of Hypermnestra stays on `lynceus`.
+  - **Iotham:** Iotham the youngest of Gideon’s sonnes is `iotham-son-of-gideon`. Jotham king of Judah stays on `jotham`.
+  - **Helen:** Helena wife of Menelaus is `helen-of-troy`. Helen the Empress stays on `helena-empress`.
+  - **Ioash:** Ioash father of Gideon is `ioash-father-of-gideon`. Ioas king of Israel stays on `ioas`.
+  - **Abiram:** Abiram eldest sonne of Chel of Bethel is `abiram-son-of-chel`. Abiram of Korah stays on `abiram`.
+  - **Lycurgus:** Lycurgus Lord of Nemaea is `lycurgus-of-nemea`. The Spartan lawgiver stays on `lycurgus`.
+  - **Argus:** Argus sonne of Phryxus, who built the Argo, is `argus-son-of-phryxus`. Argus of the Argiues stays on `argus`.
+  - **Europe:** Europe, by whom a sonne of Pelops had Agamemnon and Menelaus, is `europe-mother-of-agamemnon`. Europa the Daughter of Phoenix stays on `europa`.
+  - **Benhadad:** Asa’s Benhadad stays on `benadad`. Achab’s Benhadad stays on `benhadad`. Hazael’s son stays on `ben-hadad-son-of-hazael`.
+- **Options:**
+  1. Leave these as they are.
+  2. Name a passage that should move to another record, or two records that should merge.
+- **Recommendation:** option 1. A silent merge would attach a different man.
+
+### N79. Names that were not attached in these chapters
+
+- **Why it matters:** Hercules stays unlinked (N33). The three unnamed Adads between Benhadad the third and Rezin were not invented. A second Hazael, which Raleigh calls “not improbable,” was left on `hazael`. Gaps were not filled: Gedaliah in p02433, Ibzan in p02558, Gaal in p02534, Adonizedek as King of Hierusalem in p02443, and the 〈◊ 〉 that subjected Damascus in p02405. Mars, Pallas, Thetis, and the Sphinx were not made people. Isis was not. Baalberith was not. The 70 Elders, the Argonauts as a group, and the unnamed 70 brethren of Abimelech were not split into individuals. The nations, the cities, rivers, and mountains, and the headings, were not made people.
+- **Options:**
+  1. Leave these unattached, as now.
+  2. Name the man for a passage, and it will be attached. Or say the second Hazael should be a second record.
+- **Recommendation:** option 1, unless you know the man. Option 2 if you want a second Hazael.
+
+### N80. Othniel the judge and the table record
+
+- **Why it matters:** Pass 13 created `othniel` (title Othoniel) as the man who took Dabir and became the first Iudge. The chronological table already has `othoniel` (title Othniel) with a yeere of the World. Chapter XIII attaches the judge passages to `othniel`. The table record was not merged.
+- **Options:**
+  1. Leave both records, as now.
+  2. Merge them onto `othoniel` (the table king) or onto `othniel` (the body record).
+- **Recommendation:** option 1 until you say which id should keep the table year.
+
+### N81. The Worlds yeere 2691
+
+- **Why it matters:** “the Land and People of Israel liued in peace vnto the end of fourescore yeeres from the death of Othoniel, which terme expired in the Worlds yeere 2691.” It is stored on `ehud-delivers-israel` with `year_am` 2691. That event already has a tier 1–4 sort, so no calculated sort was written. `year_bc_ad` stays null.
+- **Options:**
+  1. Leave 2691 on `ehud-delivers-israel`, as now.
+  2. Move it to `ehud`, or to `othniel-judges-israel`, or to both.
+- **Recommendation:** option 1. The sentence is the end of Ehud’s 80 yeeres of peace.
+
+### N82. Figures in these chapters that have no event
+
+- **Why it matters:** A new event cannot take a sort year from Raleigh. These figures were not entered.
+  - Years after Christ: 636 (Haomar at Damascus, and the Saracens at Hierusalem), 1147 (Conrad at Ptolomais), 1262 (Halon), 1400 (Tamberlaine), 1517 (Selimus, and the Turkes at Hierusalem), 1099 (Godfrey), 1197 (Saladine). They are not yeeres of the World.
+  - 40 yeeres after Christ’s death to Titus; 65 yeeres to Aelius Adrianus; 500 yeeres of Christian inhabiting; 400 and odde yeeres of the Saracens; 88 yeeres of Godfrey’s successors.
+  - 132 yeeres from the captivity of Israel to the burning of Hierusalem; about 200 yeeres of Assyrian and of Persian hold on Syria.
+  - Hadad’s 23 yeeres in Aegypt; 49 yeeres between Benhadad the first and the siege of Samaria; Josephus’s 1100 yeeres; Pandion’s 40; Acrisius’s 31; Tros in the 47th of Ehud; Phaestus’s 8, Adrastus’s 4, Polyphides’s 13; Iephtha’s 6 and Elon’s 10 (table lengths); Iephta’s three hundred (N74); 400 yeares misreckoned; the Argonauts’ four moneths.
+  - Counts: Tamberlaine’s 1200000, 9000 lanternes, 30000 burnt, 40 gates; Benhadad’s 32 kings, 700 Israelites, 100000 and 27000 Aramites; Ehud’s 10000 of Moab; Samgar’s 600; Gideon’s 300 of 32000; Abimelech’s 70 brethren and 70 pieces of siluer; Iephta’s 42000 of Ephraim; Homer’s armour of 100 and 9 beeues.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them. Or say how you want years after Christ handled.
+- **Recommendation:** option 1 for the counts. Option 2 is for you to decide for the years after Christ.
+
 ## O. Dynasty of Slaves (BLK SHP Scott, 2026)
 
 Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record of Israel in Egypt* (BLK SHP Publishing, 2026; Kindle Direct Publishing). eBook ISBN 979-8-9960110-3-2; softcover 979-8-9960110-0-1; hardcover 979-8-9960110-2-5; audiobook 979-8-9960110-1-8. © the author, all rights reserved. The dated statements are in `data/dynasty-of-slaves-dates-extract.md`. The chronology `dynasty-of-slaves` is display only. It does not set a sort year. Citations are chapter and section. The edition has no printed page numbers.

@@ -367,6 +367,33 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 645 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13)
 - Accounts: 2,402 passages on 1,194 records
 
+## Pass 14
+
+Book II, Part I, Chapter XI, sig. 252b, through Chapter XIII, §. VIII, sig. 276b. The headings are “CHAP. XI. The Historie of the Syrians the chiefe borderers of the Jsraelites that dwelt on the East of Jordan.”, “CHAP. XII. Of the Tribe of BENIAMIN, and of Hierusalem.”, and “CHAP. XIII. Of the memorable things that happened in the world, from the death of IOSVA to the Warre of Troy: which was about the time of IEPHTHA.” One hundred sixty-nine passages, p02403–p02571: 24 in Chapter XI, 34 in Chapter XII, and 111 in Chapter XIII. Chapter XI alone was short, so XII and XIII were taken with it. Chapter XIV opens after sig. 276b and was not entered. The same rules as passes 3–13. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. He prints one, 2691, for the end of the fourescore yeeres of peace from Othoniel’s death. It is on `ehud-delivers-israel`, which keeps its tier 1–4 sort. No calculated sort was written.
+
+As in Chapters VII–X, the people and events on each passage are named by hand, in `scripts/raleigh/ch11-13-attach.mjs`. `scripts/raleigh/hand-attach.mjs` joins it with the Chapter VII–X tables. A spelling that is already the title or a stored form of another record is not added as a name form. 154 of the 169 passages carry at least one link. The fifteen without one are chapter and section headings of places, the short later-history notes on Hierusalem after Titus that name no person, the divinity paragraph after Tantalus, and the Argive-kings and Argonauts and Theban-war headings. See N77.
+
+### Counts
+
+- Dated statements written: 3. The fourescore yeeres of peace expired in the Worlds yeere 2691, on `ehud-delivers-israel`. The eight yeeres under Chushan Rishathaim, on `oppression-of-cushan-rishathaim`. The fourtie yeeres of peace in Othoniel’s time, on `othniel-judges-israel`.
+- People created: 203, all first named in Book II, Part I, Chapters XI–XIII
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. Three existing events gained statements: `ehud-delivers-israel`, `oppression-of-cushan-rishathaim`, and `othniel-judges-israel`. Events received accounts from these chapters; their `sorting_year` values are unchanged.
+- Name forms added: 114 (on new and existing people). No existing form was rewritten. Abrabon was not stored (it would have been a ninth Abraham row). Rezon and Razin were not stored on `rezin`, and Razin was not stored on `rezon`, because those letters name both men.
+- Accounts: 2,571 passages, on 1,449 records. The first 2,402 passages are unchanged, and no earlier link was dropped.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. The CFAH import and the standby compute were run and wrote nothing new. No other importer was re-run. The new people are display-only, and none of them has a standby placement. The open questions for these chapters are N77–N82.
+
+### Cumulative
+
+- Dated statements written: 166 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6, 21 in pass 7, 9 in pass 8, 7 in pass 9, 15 in pass 10, 8 in pass 11, 32 in pass 12, 2 in pass 13, 3 in pass 14)
+- People created: 1,076
+- Places created: 0
+- Events created: 0
+- Name forms added: 759 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13, 114 in pass 14)
+- Accounts: 2,571 passages on 1,449 records
+
 ## RESUME POINT
 
-Book II, Part I, Chapter XI. The heading is “CHAP. XI. The Historie of the Syrians the chiefe borderers of the Jsraelites that dwelt on the East of Jordan.” Pass 13 stopped at the end of Chapter X. The last stored passage is p02402, Book II, Part I, Chapter X, §. VII, sig. 252a (Manasse, Josephus, Dauid, Mahaca, Tholmay, and Absalon). Do not start again inside Chapter X. Chapter XI has 24 passages (sig. 252b–255b). It needs `BOOK2_THROUGH = 11` in `scripts/raleigh/xml-text.mjs`, `--book2=11` in `scripts/raleigh/covered.mjs`, and a hand table like `scripts/raleigh/ch10-attach.mjs`, because it is a description of places.
+Book II, Part I, Chapter XIV. The heading is “CHAP. XIIII. Of the Warre of Troy.” Pass 14 stopped at the end of Chapter XIII. The last stored passage is p02571, Book II, Part I, Chapter XIII, §. VIII, sig. 276b (Habdon, Aeneas, Iephta, Sampson, and Iair). Do not start again inside Chapter XIII. Chapter XIV has 37 passages (sig. 277a–283b). It needs `BOOK2_THROUGH = 14` in `scripts/raleigh/xml-text.mjs`, `--book2=14` in `scripts/raleigh/covered.mjs`, and a hand table like `scripts/raleigh/ch11-13-attach.mjs`, because the chapter names many people who share letters with records already stored.
