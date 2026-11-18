@@ -1,9 +1,12 @@
 // Text of the 1617 History (EarlyPrint unadorned XML), for the body intake.
 // Margin notes are left out. Tags are left out. Whitespace collapses to one space.
 // A passage is one paragraph, one heading, one contents item, or one body list.
-// The covered range is the Preface, the contents, Book I, Part I, and Book II, Part I.
+// The covered range is the Preface, the contents, Book I, Part I, Book II, Part I,
+// and Book III, Part I.
 // `throughChapter` is the last Book I chapter to include. `book2Through` is the last
 // Book II, Part I chapter. Pass 18 raises this through Chapter XXVIII, the end of the book.
+// `book3Through` is the last Book III, Part I chapter. Pass 19 stores Chapters I–VI.
+// The constant BOOK3_THROUGH is raised as each chapter of this pass is stored.
 // `<hi>` is the 1617 italic (EarlyPrint leaves the rend off the unadorned file).
 // Each passage carries `italics` as [start, end] pairs into `passage`, derived here.
 // The plain `passage` string does not contain the tags.
@@ -17,6 +20,8 @@ export const XML_REL = 'sources/raleigh/A10357.earlyprint-unadorned.xml';
 export const THROUGH_CHAPTER = 12;
 /** Last Book II, Part I chapter stored in the account file. 0 means Book II is not included. */
 export const BOOK2_THROUGH = 28;
+/** Last Book III, Part I chapter stored in the account file. 0 means Book III is not included. */
+export const BOOK3_THROUGH = 6;
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI', 'XXVII', 'XXVIII', 'XXIX', 'XXX', 'XXXI', 'XXXII', 'XXXIII', 'XXXIV', 'XXXV', 'XXXVI', 'XXXVII', 'XXXVIII', 'XXXIX', 'XL'];
 
@@ -189,6 +194,9 @@ function location(stack, inBody, range) {
   if (inBody && part === '1' && book === '2' && n >= 1 && n <= range.book2Through) {
     return { kind: 'body', book, part, chapter, section, subsection };
   }
+  if (inBody && part === '1' && book === '3' && n >= 1 && n <= range.book3Through) {
+    return { kind: 'body', book, part, chapter, section, subsection };
+  }
   return null;
 }
 
@@ -198,7 +206,7 @@ function location(stack, inBody, range) {
  * Each passage carries `hi` (the italic strings) and `italics` ([start, end] into `passage`).
  * The account file stores the plain passage only. Build and validate derive the spans.
  */
-export function extractPassages(xml, { throughChapter = 12, book2Through = 0 } = {}) {
+export function extractPassages(xml, { throughChapter = 12, book2Through = 0, book3Through = 0 } = {}) {
   const re = /<!--[\s\S]*?-->|<!\[CDATA\[[\s\S]*?\]\]>|<[^>]+>|[^<]+/g;
   const stack = [];
   let inBody = false;
@@ -209,7 +217,7 @@ export function extractPassages(xml, { throughChapter = 12, book2Through = 0 } =
   const passages = [];
   let contentsPartLabel = null;
   let contentsChapterLabel = null;
-  const range = { book1Through: throughChapter, book2Through };
+  const range = { book1Through: throughChapter, book2Through, book3Through };
 
   const inScope = () => location(stack, inBody, range);
 

@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "hilarius",
+  "type": "person",
+  "title": "Hilarius",
+  "summary": "Raleigh names Hilarius in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Hilarius, who wrote a Preface on the booke the gap leaues unnamed, and the Hilarius in whose life S. Hierome tells of a woman that appeared a Cow. The two passages do not say they are two men. The gap was not filled. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book III, Part I, Chapter I, §. II, sig. 382b–383a"
+    }
+  ]
+}

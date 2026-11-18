@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "hipparchus-son-of-pisistratus",
+  "type": "person",
+  "title": "Hipparchus son of Pisistratus",
+  "summary": "Raleigh names Hipparchus son of Pisistratus in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Hipparchus, a sonne of Pisistratus, murdered by Harmodius and Aristogiton. He is not Hipparchus the astronomer. The one-word title would fold onto that record, so the title is four words. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book III, Part I, Chapter V, §. VI, sig. 407a–407b"
+    }
+  ]
+}

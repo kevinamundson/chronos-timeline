@@ -724,3 +724,17 @@ Nine words appear in Book II, Part I, Chapters XXIV–XXVIII and in no earlier s
 | leaneth | 1 | leans | verb lean → leans | p03140: to a broken staffe, on which whosoeuer leaneth, pierceth his owne hand |
 | rideth | 1 | rides | verb ride → rides | p03332: which as their manner is, euery man rideth withall |
 | sueth | 1 | sues | verb sue → sues | p03170: erewith to enter Aegypt. Briefly, Sanar sueth to Noradine, King of Damasco, for aide |
+
+## Pass 19
+
+Seven words appear in Book III, Part I, Chapters I–VI and in no earlier stored passage. Counts are in those 315 passages only. The four flagged words of passes 1–4 do not appear again here. Six take the dictionary stem. `forttieth` is explicit: the double t keeps it off the ordinal pattern, and the verb rule would make forties.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| accordeth | 1 | accords | verb accord → accords | p03543: of the Greekes, which being constant in it selfe, accordeth also with the computation of other Hist |
+| concerneth | 1 | concerns | verb concern → concerns | p03424: ast, and was slaine as he deserued. The rest that concerneth him in question of 〈◊ 〉 time, hath been |
+| forttieth | 1 | fortieth | ordinal fortieth, printed forttieth (the two and forttieth after their first returne) | p03580: xth yeere of Darius Hystaspes, and in the two and forttieth after their first returne. |
+| joyneth | 1 | joins | verb join → joins | p03635: the Isthmus, that straight necke of ground which joyneth Peloponnesus to the Continent. For whic |
+| permitteth | 1 | permits | verb permit → permits | p03424: re, we finde, that he had such conditions, as God permitteth to be in a King for the ruine of the pe |
+| predisposeth | 1 | predisposes | verb predispose → predisposes | p03413: ssed light, which clarifies the soule of man, and predisposeth it vnto the brightnesse of eternall fel |
+| relateth | 1 | relates | verb relate → relates | p03386: t the next king entred by Election: seeing Daniel relateth not the meanes and circumstances of Bal |

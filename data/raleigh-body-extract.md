@@ -811,3 +811,25 @@ Every record keeps the sort it already had. The new people stay without a sort y
 Chapters XXIV–XXVIII were attached by hand in `scripts/raleigh/ch24-28-attach.mjs`. A tribe is on its patriarch. The half tribe of Manasses on p03290 is `manasseh`. The king of Iuda is `manasses`. A printed spelling that is already the title or a stored form of another record was not added as a name form. `Ananias` is the exception: the companion of Daniel and the false Prophet are two men, so the form is on both, and the name-link review leaves that token unmatched. 239 of the 266 passages carry at least one link. The twenty-seven without one are p03094, p03100, p03101, p03118, p03120, p03185, p03188, p03201, p03229, p03234, p03254, p03255, p03265, p03269, p03298, p03310, p03311, p03313, p03315, p03318, p03320, p03321, p03325, p03330, p03333, p03334, and p03347. See N94–N97.
 
 Existing events received an account where the passage narrates that event: `founding-of-rome`, `fall-of-samaria`, `shalmaneser-besieges-samaria`, `sennacherib-besieges-jerusalem`, `sennacherib-besieges-lachish`, `angel-slays-the-assyrians`, `hezekiah-illness`, `merodach-baladan-embassy`, `conversion-of-josiah`, `josiah-first-reform`, `josiah-finds-the-law`, `fall-of-nineveh`, `daniel-taken-to-babylon`, `battle-of-carchemish`, `second-siege-of-jerusalem`, `zedekiah-visits-babylon`, `zedekiah-rebels`, `final-siege-of-jerusalem-begins`, `siege-of-jerusalem-lifted`, `fall-of-jerusalem-586-bc`, and `draco-law-code`. No new event was created.
+
+# Pass 19
+
+This pass is a double-size pass, like passes 16 and 18. Range covered: Book III, Part I, Chapter I, sig. 381b, through Chapter VI, §. XI, sig. 419b. The headings are “CHAP. I. Of the time passing betweene the destruction of 〈◊ 〉, and the fall of the Assyrian Empire.” (the gap stays empty), “CHAP. II. Of the originall and first greatnesse of the Persians.”, “CHAP. III. Of CYRVS.”, “CHAP. I III. The estate of things from the death of CYRVS to the Raigne of DARIVS.”, “CHAP. V. Of DARIVS the sonne of HYSTASPES.”, and “CHAP. VI. Of XERXES.” Three hundred fifteen passages, p03359–p03673: 66 in Chapter I, 38 in Chapter II, 59 in Chapter III, 47 in Chapter IV, 45 in Chapter V, and 60 in Chapter VI. Chapter VII would make 348 passages, past the top of the range, so the pass stops at the end of Chapter VI. The next passage is p03674, Book III, Part I, Chapter VII, sig. 420a, “CHAP. VII. Of things that passed in Greece from the end of the Persian Warre, to the beginning of the Peloponnesian.” No yeere of the World is printed. No new `year_am` was written. `year_bc_ad` stays null.
+
+## Statements written
+
+None. No yeere of the World is printed in these chapters.
+
+Every record keeps the sort it already had. The new people stay without a sort year. No calculated sort was written.
+
+## Figures that were not entered
+
+- Reign lengths and other men’s reckonings, including the 70 yeeres of the captiuitie, the lengths of the Babylonian kings, the second yeere and the sixth yeere of Darius, the reign of 36 yeeres, the Olympiad, and the four yeeres spent gathering Xerxes his army. See N101.
+- “in the yeere 1588” (Chapter VI, §. II, sig. 411b), the enterprise of Philip the second vpon England. That is not a yeere of the World. It was not stored.
+- Army numbers, the seuen daies of the bridge, and the day-counts of the battles. They were not given a new event, and they were not hung on an existing event except where the passage narrates that battle. See N101.
+
+## Names
+
+Chapters I–VI were attached by hand in `scripts/raleigh/b3-ch1-attach.mjs`. A tribe is on its patriarch. Sidonians are `sidon-son-of-canaan`. Edom and the Edomites are `esau`. Elamitae, Elymae, and Elymi are `elam`. An Amalekite is `amalek`. Iuda and Iudaea are `judah`. The kingdom called Israel is not `jacob`. A printed spelling that is already the title or a stored form of another record was not added as a name form. 285 of the 315 passages carry at least one link. The thirty without one are p03359, p03360, p03371, p03374, p03382, p03425, p03434, p03443, p03448, p03485, p03491, p03493, p03523, p03530, p03543, p03549, p03555, p03565, p03583, p03587, p03592, p03596, p03604, p03620, p03642, p03653, p03657, p03662, p03667, and p03672. See N98–N101.
+
+Existing events received an account where the passage narrates that event: `fall-of-jerusalem-586-bc`, `daniel-taken-to-babylon`, `daniel-interprets-nebuchadnezzars-dream`, `minor-deportation-nebuchadnezzars-23rd`, `fall-of-nineveh`, `fall-of-babylon-539-bc`, `cyrus-decree-of-return`, `return-under-zerubbabel`, `temple-rebuilding-begins`, `temple-rebuilding-resumed`, `second-temple-completed`, `xerxes-invades-greece`, `battle-of-marathon`, `battle-of-thermopylae`, `battle-of-salamis`, and `battle-of-plataea`. No new event was created. There is no Mycale event, and none was invented.

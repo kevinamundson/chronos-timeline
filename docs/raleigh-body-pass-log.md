@@ -475,6 +475,33 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 1,136 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13, 114 in pass 14, 94 in pass 15, 136 in pass 16, 147 in pass 18)
 - Accounts: 3,358 passages on 2,009 records
 
+## Pass 19
+
+Book III, Part I, Chapter I, sig. 381b, through Chapter VI, §. XI, sig. 419b. The headings are “CHAP. I. Of the time passing betweene the destruction of 〈◊ 〉, and the fall of the Assyrian Empire.” (the gap stays empty), “CHAP. II. Of the originall and first greatnesse of the Persians.”, “CHAP. III. Of CYRVS.”, “CHAP. I III. The estate of things from the death of CYRVS to the Raigne of DARIVS.” (a space in the Roman), “CHAP. V. Of DARIVS the sonne of HYSTASPES.”, and “CHAP. VI. Of XERXES.” Three hundred fifteen passages, p03359–p03673: 66 in Chapter I, 38 in Chapter II, 59 in Chapter III, 47 in Chapter IV, 45 in Chapter V, and 60 in Chapter VI. Chapter VII would make 348, past the top of the range, so the pass stops at the end of Chapter VI. The same rules as passes 11–18. `year_bc_ad` stays null. No yeere of the World is printed, so no `year_am` was stored. Reign lengths, the second and sixth yeeres of Darius, the Olympiad, the 36 yeeres, the four yeeres of gathering the army, and “in the yeere 1588” were not stored. No calculated sort was written.
+
+The people and events on each passage are named by hand, in `scripts/raleigh/b3-ch1-attach.mjs`. `scripts/raleigh/hand-attach.mjs` joins it with the earlier tables. `BOOK3_THROUGH` is 6. A spelling that is already the title or a stored form of another record is not added as a name form. 285 of the 315 passages carry at least one link. The thirty without one are p03359, p03360, p03371, p03374, p03382, p03425, p03434, p03443, p03448, p03485, p03491, p03493, p03523, p03530, p03543, p03549, p03555, p03565, p03583, p03587, p03592, p03596, p03604, p03620, p03642, p03653, p03657, p03662, p03667, and p03672. See N98.
+
+### Counts
+
+- Dated statements written: 0
+- People created: 158, all first named in Book III, Part I, Chapters I–VI, all display-only (15, 24, 17, 20, 60, and 22)
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. Events received accounts from these chapters. No existing person file was replaced.
+- Name forms added: 87 (25, 11, 14, 14, 15, and 8). The note on each of these forms is “Spelling only. Read in Book III, Part I, Chapters I–VI.” No earlier form was rewritten. A surface already held by another record was not stored.
+- Accounts: 3,673 passages, on 2,191 records. The first 3,358 passages are unchanged, and no earlier link was dropped.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. The CFAH import and the standby compute were run after the accounts were written. No other importer was re-run. The new people are display-only, and none of them has a standby placement. The open questions for these chapters are N98–N101.
+
+### Cumulative
+
+- Dated statements written: 167 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6, 21 in pass 7, 9 in pass 8, 7 in pass 9, 15 in pass 10, 8 in pass 11, 32 in pass 12, 2 in pass 13, 3 in pass 14, 1 in pass 15, 0 in pass 16, 0 in pass 18, 0 in pass 19)
+- People created: 1,696
+- Places created: 0
+- Events created: 0
+- Name forms added: 1,223 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13, 114 in pass 14, 94 in pass 15, 136 in pass 16, 147 in pass 18, 87 in pass 19)
+- Accounts: 3,673 passages on 2,191 records
+
 ## RESUME POINT
 
-Book III, Part I, Chapter I. The heading is “CHAP. I. Of the time passing betweene the destruction of 〈◊ 〉, and the fall of the Assyrian Empire.” The gap stays empty. Pass 18 stopped at the end of Book II. The last stored passage is p03358, Book II, Part I, Chapter XXVIII, §. VI, sig. 380b. The words after that passage are “Finis Libri secundi.” Do not start again inside Book II. Book III is not in the extractor. The next pass has to extend `scripts/raleigh/xml-text.mjs` and `scripts/raleigh/covered.mjs` past Book II, Part I, and add a new hand table. The chapter names many people who share letters with records already stored.
+Book III, Part I, Chapter VII. The heading is “CHAP. VII. Of things that passed in Greece from the end of the Persian Warre, to the beginning of the Peloponnesian.” Pass 19 stopped at the end of Chapter VI. The last stored passage is p03673, Book III, Part I, Chapter VI, §. XI, sig. 419b. The next passage is p03674, sig. 420a. Do not start again inside Chapters I–VI. The hand table is `scripts/raleigh/b3-ch1-attach.mjs`. `BOOK3_THROUGH` is 6. The next pass raises it when Chapter VII is stored, and adds that chapter to `B3_CHAPTERS` before the covered write. The chapter names many people who share letters with records already stored.

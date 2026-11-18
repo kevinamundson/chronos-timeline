@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "artystona-daughter-of-cyrus",
+  "type": "person",
+  "title": "Artystona daughter of Cyrus",
+  "summary": "Raleigh names Artystona daughter of Cyrus in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Artystona, a daughter of Cyrus the Great, whom Darius Hystaspes obtained. She is not Artystona, the daughter of Atossa and Pharnaces. The one-word title would fold onto artystona, so the title is four words. No yeere of the World was taken for her. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book III, Part I, Chapter III, §. VIII, sig. 401b"
+    }
+  ]
+}
