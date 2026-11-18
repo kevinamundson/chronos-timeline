@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "pedro-de-sarmiento",
+  "type": "person",
+  "title": "Don Pedro de Sarmiento",
+  "summary": "Raleigh names Don Pedro de Sarmiento in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Don Pedro de Sarmiento, a worthie Spanish Gentleman and Raleigh his Prisoner, who told the jest of the Painters wiues Island, not Don Pedro of Castile. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book II, Part I, Chapter XXIII, §. IV, sig. 342a"
+    }
+  ]
+}
