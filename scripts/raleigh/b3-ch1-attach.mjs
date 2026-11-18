@@ -24,7 +24,7 @@
 // Nitocris of Babylon is not the Egyptian nitocris.
 
 /** Chapters of Book III whose passages are attached only from this table. */
-export const B3_CHAPTERS = new Set(['1', '2']);
+export const B3_CHAPTERS = new Set(['1', '2', '3']);
 
 export const B3 = {
   // Chapter I. The time between the destruction (gap) and the fall of the Assyrian Empire.
@@ -142,6 +142,80 @@ export const B3 = {
   p03460: ["suidas=Suidas", "asshur=Assur", "magog=Magog", "eusebius=Eusebius", "moses=Moses", "isaiah=Esay", "jeremiah=Ieremie", "ezekiel=Ezechiel", "daniel=Daniel", "esdras=Esdras", "jerome=Hierome", "elam=Elam", "elam=Elamitae"],
   p03461: ["antiochus-iv-epiphanes=Antiochus", "alexander-the-great=Alexander", "thais=Thais"],
   p03462: ["chedorlaomer=Chedorlaomer", "amraphel=Amraphel", "ninias=Ninias", "abraham=Abraham"],
+
+  // Chapter III. Of CYRVS. p03463–p03521.
+  // Agradatus is Cyrus his proper name, not a second man.
+  // Cyaxares the father of Astyages (the Halyattes war, and Syaxares) is cyaxares.
+  // Cyaxares in whom the Median race ends, with Balthasar and Croesus, is darius-the-mede.
+  // Cambyses the sonne who succeeded is the table king cambyses.
+  // Sparetha is Ctesias his name for Tomyris. Tanaoxares is Xenophon his name for Smerdis.
+  // Atys the sonne of Gyges is not Atys the father of Lydus.
+  // Iesus or Iosua the sonne of Iosadak is the high priest, not Joshua the sonne of Nun, and not Christ.
+  // Artystona and Amytis the daughters of Cyrus the Great are not the women of those names in Chapter II.
+  // Atossa the daughter of Cyrus the Great is the existing queene, not Atossa wife of Pharnaces.
+  // Artaxerxes in Esdras, and ARTAHSHASTE, are artaxerxes-artashasht.
+  // Artaxerxes Longimanus is named only where the passage prints Longimanus.
+  // Mithridates in the Epistle is not the Mithridates of the concubines dreames.
+  // The Qu. gap, the Derbician king, and Hercules stay unattached.
+  p03463: ["cyrus-the-great=CYRVS"],
+  p03464: ["cyrus-the-great=CYRVS"],
+  p03465: ["cyrus-the-great=Cyrus", "strabo=Strabo", "cyrus-the-great=Agradatus", "herodotus=Herodotus"],
+  p03466: ["cyrus-the-great=Cyrus"],
+  p03467: ["plutarch=Plutarch", "cyrus-the-great=Cyrus", "isaiah=Esay", "cyrus-the-great=CYRVS"],
+  p03468: ["cyrus-the-great=Cyrus", "croesus=Croesus", "eusebius=Eusebius", "orosius=Orosius", "fall-of-babylon-539-bc"],
+  p03469: ["cyrus-the-great=Cyrus"],
+  p03470: ["croesus=CROESVS", "cyrus-the-great=CYRVS"],
+  p03471: ["croesus=Croesus", "lydus=Lydus", "atys-of-lydia=Atys", "argon=Argon", "candaules=Candaules", "gyges=Gyges", "atys-son-of-gyges=Atys", "sadyattes=Sadyattes", "alyattes=Halyattes", "cyaxares=Cyaxares"],
+  p03472: ["astyages=Astyages", "cyaxares=Cyaxares", "cyrus-the-great=Cyrus", "aryenis=Aryenis", "croesus=Croesus"],
+  p03473: ["croesus=Croesus", "nebuchadnezzar-ii=Nabuchodonosor"],
+  p03474: ["croesus=Croesus", "herodotus=Herodotus", "athenaeus=Athaeneus", "berosus=Berosus"],
+  p03475: ["croesus=CROESVS", "apollo=Apollo", "cyrus-the-great=Cyrus"],
+  p03476: ["croesus=CROESVS", "cyrus-the-great=CYRVS"],
+  p03477: ["croesus=Croesus", "cyrus-the-great=Cyrus", "sandanes=Sandanes"],
+  p03478: ["croesus=Croesus", "cyrus-the-great=Cyrus"],
+  p03479: ["cratippus=Cratippus", "pompey=Pompey", "croesus=Croesus", "cyrus-the-great=Cyrus", "apollo=Apollo", "admetus=Admetis"],
+  p03480: ["croesus=Croesus", "cyrus-the-great=Cyrus"],
+  p03481: ["cyrus-the-great=CYRVS"],
+  p03482: ["cyrus-the-great=CYRVS", "croesus=Croesus", "solon=Solon"],
+  p03483: ["cyrus-the-great=Cyrus", "croesus=Croesus"],
+  p03484: ["cyrus-the-great=Cyrus", "croesus=Croesus"],
+  p03485: [],
+  p03486: ["xenophon=Xenophon", "cyrus-the-great=Cyrus", "croesus=Croesus", "herodotus=Herodotus"],
+  p03487: ["herodotus=Herodotus", "cyrus-the-great=Cyrus", "croesus=Croesus", "cambyses=Cambyses"],
+  p03488: ["balthasar=Balthasar", "darius-the-mede=Cyaxares", "croesus=Croesus"],
+  p03489: ["cyrus-the-great=CYRVS", "fall-of-babylon-539-bc"],
+  p03490: ["cyrus-the-great=Cyrus", "ctesias=Ctesias", "croesus=Croesus", "amorges=Amorges", "tomyris=Sparetha", "fall-of-babylon-539-bc"],
+  p03491: [],
+  p03492: ["cyrus-the-great=Cyrus", "croesus=Croesus", "pactias=Pactias", "harpagus=Harpagus", "fall-of-babylon-539-bc"],
+  p03493: [],
+  p03494: ["cyrus-the-great=Cyrus"],
+  p03495: ["balthasar=Balthasar", "belus=Bel", "daniel=Daniel", "daniel=DANIEL", "jerome=HIEROME", "nebuchadnezzar-ii=NABVCHODONOSOR", "fall-of-babylon-539-bc"],
+  p03496: ["josephus=Iosephus", "origen=Origen", "theodoretus=Theodoret", "balthasar=Balthasar", "daniel=Daniel", "nebuchadnezzar-ii=Nabuchodonosor"],
+  p03497: ["daniel=Daniel", "nebuchadnezzar-ii=Nabuchodonosor"],
+  p03498: ["balthasar=Balthasar", "cyrus-the-great=Cyrus", "xenophon=Xenophon", "fall-of-babylon-539-bc"],
+  p03499: ["balthasar=Balthazar", "cyrus-the-great=Cyrus", "jeremiah=Ieremie", "isaiah=Esay", "nebuchadnezzar-ii=Nabuchodonosor", "fall-of-babylon-539-bc"],
+  p03500: ["jerome=Heirome", "solinus=Solinus", "orosius=Orosius", "aristotle=Aristotle", "diodorus-siculus=Diodorus Siculus", "ctesias=Ctesias", "clitracus=Clitracus", "strabo=Strabo", "diodorus-siculus=Diodor", "quintus-curtius=Curtius", "diodorus-siculus=Siculus", "herodotus=Herodotus", "isaiah=Esay"],
+  p03501: ["cyrus-the-great=Cyrus"],
+  p03502: ["cyrus-the-great=Cyrus"],
+  p03503: ["cyrus-the-great=CYRVS"],
+  p03504: ["cyrus-the-great=Cyrus", "herodotus=Herodotus", "justin=Iustine", "tomyris=Tomyris", "spargapises=Spargapises"],
+  p03505: ["cyrus-the-great=Cyrus", "cyaxares=Syaxares", "astyages=Astyages"],
+  p03506: ["metasthenes=Metasthenes", "cyrus-the-great=Cyrus"],
+  p03507: ["viginier=Viginer", "cyrus-the-great=Cyrus", "ctesias=Ctesias", "tomyris=Tomyris", "tomyris=Sparetha", "strabo=Strabo", "justin=Iustine"],
+  p03508: ["strabo=Strabo", "cyrus-the-great=CYRVS"],
+  p03509: ["alexander-the-great=Alexander", "xenophon=Xenophon", "zonaras=Zonaras", "herodotus=Herodotus", "tomyris=Tomyris"],
+  p03510: ["cyrus-the-great=Cyrus", "cambyses=Cambyses", "xenophon=Xenophon", "smerdis=Smerdis", "smerdis=Tanaoxares", "daniel=Daniel", "isaiah=Esay", "cyrus-decree-of-return"],
+  p03511: ["cyrus-the-great=CYRVS", "cyrus-decree-of-return"],
+  p03512: ["cyrus-the-great", "nebuchadnezzar-ii=Nabuchodonosor", "balthasar=Balthasar", "cyrus-decree-of-return"],
+  p03513: ["zerubbabel=Zorobabel", "salathiel=Salathiel", "jehoiachin=Iecontas", "jeshua-high-priest=Iesus", "jeshua-high-priest=Iosua", "iosadak=Iosadak", "return-under-zerubbabel"],
+  p03514: ["cyrus-the-great=Cyrus", "cambyses=Cambyses", "esdras=Esdras", "john-the-apostle=Iohn", "darius-hystaspis=Darius", "temple-rebuilding-begins"],
+  p03515: ["cambyses=Cambyses", "esdras=Esdras", "belemus=Belemus", "mithridates-in-esdras=Mithridates"],
+  p03516: ["cambyses=Cambyses", "moses=Moses", "sennacherib=Senacherib", "nebuchadnezzar-ii=Nabuchodonosor", "ezekiel=EZEKIEL"],
+  p03517: ["codoman=Codoman", "artaxerxes-artashasht=Artaxerxes", "darius-hystaspis=Darius Hystaspes", "esdras=Esdras"],
+  p03518: ["esdras=Ezra", "darius-hystaspis=Darius", "cyrus-the-great=CYRVS", "darius-hystaspis=DARIVS", "artaxerxes-artashasht=ARTAHSHASTE", "second-temple-completed"],
+  p03519: ["cyrus-the-great=Cyrus", "xenophon=Xenophon", "cambyses=Cambyses", "smerdis=Smerdis", "smerdis=Tanaoxares", "herodotus=Herodotus", "justin=Iustine"],
+  p03520: ["cyrus-the-great=CYRVS", "atossa=ATOSSA", "hester=HESTER"],
+  p03521: ["cyrus-the-great=CYRVS", "cambyses=Cambyses", "smerdis=Smerdis", "atossa=Atossa", "meroe=Meroe", "artystona-daughter-of-cyrus=Artystona", "ctesias=Ctesias", "amytis-daughter-of-cyrus=Amytis", "darius-hystaspis=Darius Hystaspes", "hystaspes=Hystaspes", "darius-hystaspis=Darius", "xerxes=Xerxes", "aman=Aman", "josephus=Iosephus", "amalek=Amalekite", "artaxerxes-longimanus=Artaxerxes Longimanus", "codoman=Codoman", "hester=Hadassa", "hester=Esther"],
 };
 
 export const B3_NEW = {
@@ -184,6 +258,23 @@ export const B3_NEW = {
   artystona: ["Artystona", "Artystona, a daughter of Atossa and Pharnaces. The other daughters are unnamed and were not inuented. The printed spelling is kept.", "her"],
   elianus: ["Elianus", "Elianus, who calls the people of Elam Elymae. The printed spelling is kept.", "him"],
   thais: ["Thais", "Thais the Harlot, at whose request Alexander burnt the old Persepolis. The printed spelling is kept.", "her"],
+  "atys-son-of-gyges": ["Atys son of Gyges", "Atys, the sonne of Gyges, father of Sadyattes, in the third race of the Kings of Lydia. He is not Atys the father of Lydus, and not Syluius Atys. The one-word title would not say which Atys, so the title is four words.", "him"],
+  aryenis: ["Aryenis", "Aryenis, the sister of Croesus, whom Astyages the sonne of Cyaxares married. The printed spelling is kept.", "her"],
+  sandanes: ["Sandanes", "Sandanes, who desired Croesus to fore-thinke before he made warre vpon Cyrus. The printed spelling is kept.", "him"],
+  cratippus: ["Cratippus", "Cratippus of Mitylene, who answered Pompey when he complained against the gods. The printed spelling is kept.", "him"],
+  amorges: ["Amorges", "Amorges, King of the Sacae or Scythians, whom Cyrus tooke prisoner, and who was deliuered againe for Cyrus. The printed spelling is kept.", "him"],
+  tomyris: ["Tomyris", "Tomyris, Queene of the Massagetes, who in Herodotus cut off the head of Cyrus. Ctesias calleth her Sparetha, the wife of Amorges, and that equation was not made a second woman. Tomyrique is the name of the warre, and was not made a person.", "her"],
+  spargapises: ["Spargapises", "Spargapises, the Sonne of Tomyris, who commanded her Armie and was lost in the first incounter with Cyrus. The printed spelling is kept.", "him"],
+  pactias: ["Pactias", "Pactias, whom a gapped name imployed against the Nations that reuolted after Cyrus left Asia the lesse, before Harpagus. The gap was not filled.", "him"],
+  harpagus: ["Harpagus", "Harpagus, who after Pactias reduced the Phocians, and then the rest of the Greekes in Asia the lesse. The printed spelling is kept.", "him"],
+  clitracus: ["Clitracus", "Clitracus, named with Ctesias for the height of the wall of Babylon. The printed spelling is kept.", "him"],
+  iosadak: ["Iosadak", "Iosadak, the father of Iesus or Iosua, the high Priest who returned with Zorobabel. He is not any other Iosua. The printed spelling is kept.", "him"],
+  "mithridates-in-esdras": ["Mithridates in Esdras", "Mithridates, named with Belemus and the rest, Presidents and Counsellors in Phoenicia, in the Epistle which Esdras remembreth. He is not Mithridates, who compiled an Ephemerides of his Concubines dreames. The one-word title would fold onto mithridates, so the title is three words.", "him"],
+  belemus: ["Belemus", "Belemus, named with Mithridates and the rest, Presidents and Counsellors in Phoenicia, in the Epistle which Esdras remembreth. The printed spelling is kept.", "him"],
+  meroe: ["Meroe", "Meroe, a daughter of Cyrus the Great, whom her brother Cambyses married, with Atossa. She is not the citie. The printed spelling is kept.", "her"],
+  "artystona-daughter-of-cyrus": ["Artystona daughter of Cyrus", "Artystona, a daughter of Cyrus the Great, whom Darius Hystaspes obtained. She is not Artystona, the daughter of Atossa and Pharnaces. The one-word title would fold onto artystona, so the title is four words.", "her"],
+  "amytis-daughter-of-cyrus": ["Amytis daughter of Cyrus", "Amytis, whom Ctesias addeth to the issue of Cyrus the Great. She is not Amytis, the Daughter of Astyages, whom the same Ctesias sayeth Cyrus married. The one-word title would fold onto amytis, so the title is four words.", "her"],
+  aman: ["Aman", "Aman, whom the old translation calleth a Macaedonian, and whom Iosephus findes to be an Amalekite. Some supposed that his intent against the Iewes moued Atossa against Greece. He was not made Hester. The printed spelling is kept.", "him"],
 };
 
 export const B3_EVENTS = new Set([
@@ -194,4 +285,7 @@ export const B3_EVENTS = new Set([
   "fall-of-nineveh",
   "daniel-interprets-nebuchadnezzars-dream",
   "minor-deportation-nebuchadnezzars-23rd",
+  "return-under-zerubbabel",
+  "temple-rebuilding-begins",
+  "second-temple-completed",
 ]);
