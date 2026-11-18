@@ -18,6 +18,8 @@ Pass 10 (Book II, Part I, Chapter VI) adds twenty words those tables do not list
 
 Pass 11 (Book II, Part I, Chapter VII) adds nineteen words those tables do not list. Eight change. Eleven stay. None of the nineteen is flagged. Most of the eleven are places: `aroseth`, `cateth`, `cinnereth`, `genezareth`, `gennezareth`, `nepheth`, `nazareth`, and `remeth`. `astoreth` is the idol and `iudeth` is the name. `handreth` follows an illegible gap and reads as the number. `streightneth` is straiten. The letter rules do not reach that spelling, so it is explicit. Through that chapter the inventory is 473 distinct words: 431 change, 38 stay, and the same 4 flagged. The new rows are under "Pass 11".
 
+Pass 12 (Book II, Part I, Chapters VIII and IX) adds nine words those tables do not list. Eight change. One stays: `kirharaseth`, the city of Moab. None of the nine is flagged. `stileth` is style. The letter rules give stiles, so it is explicit. Through Chapter IX the inventory is 482 distinct words: 439 change, 39 stay, and the same 4 flagged. The new rows are under "Pass 12".
+
 ## Decisions
 
 - hath becomes has. It is the irregular third person of have. It does not end in -eth. An all-capital HATH becomes HAS. The capitals stay (open question N17).
@@ -42,6 +44,8 @@ Pass 11 (Book II, Part I, Chapter VII) adds nineteen words those tables do not l
 - streightneth becomes straitens. In this book it is the verb in “Iordan streightneth it selfe againe into a Riuer”.
 - handreth stays. It follows an illegible gap (〈◊ 〉) and reads as the number hundreth. It is not a verb.
 - Aroseth, Cateth, Cinnereth, Genezareth, Gennezareth, Nepheth, and Remeth stay. They are places in the description of the tribes. Astoreth stays. It is the idol.
+- stileth becomes styles. In this book it is the verb in “he stileth men of contrary opinion, impios politicos”.
+- Kirharaseth stays. It is the city of Moab.
 
 ## Flagged
 
@@ -581,3 +585,19 @@ Nineteen words appear in Book II, Part I, Chapter VII and in no earlier stored p
 | repaieth | 1 | repays | verb repay → repays | p02049: oundlesse goodnesse of God, as he often repaieth them with many worldly gifts and temporal |
 | streightneth | 1 | straitens | verb straiten → straitens (Iordan streightneth it selfe againe into a Riuer) | p02147: esrael neere Iordan: after that, Iordan streightneth it selfe againe into a Riuer: leauing |
 | supplieth | 1 | supplies | verb supply → supplies | p02027: t: so as it preserueth raine water, and supplieth the scarcitie of Wells by building Ceste |
+
+## Pass 12
+
+Nine words appear in Book II, Part I, Chapters VIII and IX and in no earlier stored passage. Counts are in those 102 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| complaineth | 1 | complains | verb complain → complains | p02200: to pay him Tribute, of whom also Dauid complaineth Psal. 83. |
+| deuoureth | 1 | devours | verb devour → devours | p02173: at least so many of them as time( which deuoureth all things) hath left to posteritie: and |
+| excelleth | 1 | excels | verb excel → excels | p02220: saluage Nation hath some whose wisedome excelleth the Vulgar, euen of ciuill people. Neith |
+| foldeth | 1 | folds | verb fold → folds | p02175: egypt. On the contrary Diodorus Siculus foldeth it vp in Coelesyria, which hee boundeth no |
+| imputeth | 1 | imputes | verb impute → imputes | p02262: t the Citizens to extreme famine. Ioram imputeth the cause thereof to the Prophet Elisha. |
+| killeth | 1 | kills | verb kill → kills | p02255: led in the triall of the Sacrifice, and killeth the false prophets: and afterward flieth f |
+| kirharaseth | 1 | kirharaseth | kept: city Kirharaseth of Moab, not a verb | p02259: s are ouerthrowne: their king flieth to Kirharaseth, and being besieged, according to some |
+| reproueth | 1 | reproves | verb reprove → reproves | p02256: Prophet( whom Glycas calleth Michaeas) reproueth him: afterward hee caused Naboth by a fa |
+| stileth | 1 | styles | verb style → styles (he stileth men of contrary opinion, impios politicos) | p02221: ich fancie he is so peremptory, that he stileth men of contrary opinion, impios politicos, |

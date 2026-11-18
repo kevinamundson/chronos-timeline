@@ -37,13 +37,25 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n76/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": null
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "Balatorus commanded therein as a King for one yeere",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VIII, §. II, sig. 234a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. His one yeere. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [

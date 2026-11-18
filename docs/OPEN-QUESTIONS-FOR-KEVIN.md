@@ -1850,6 +1850,65 @@ Pass 11 read Book II, Part I, Chapter VII, and stopped at the end of that chapte
   2. Name an existing event that should receive one of them. Or say how you want medieval and New Testament dates after Christ handled.
 - **Recommendation:** option 1 for the counts. Option 2 is for you to decide for the years after Christ.
 
+Pass 12 read Book II, Part I, Chapters VIII and IX, and stopped at the end of Chapter IX. The quotes are in `data/raleigh-body-extract.md`. N1 through N64 stay open.
+
+### N65. Chapters VIII and IX were attached by hand, and the Kings of Tyre are the Cory records
+
+- **Why it matters:** As in Chapter VII (N59), each passage’s people and events are named by hand, now in `scripts/raleigh/ch8-9-attach.mjs`. The Ephraim sections print most places in capitals. The Kings of Tyre in §. II are attached to the records the Cory import already made: Baleastartus is `baleazarus`, Astarimus is `aserymus`, Phelles is `pheles`, Mettimus is `matgenus`, Pygmalion is `phygmalion`, Eluleus is `elulaeus`, Ethobales is `ithobalus-ii`, Baal is `baal-of-tyre`, Chelbis is `chelbes`, Abarus is `abbarus`, Mittonus is `mytgonus`, Gerastus is `gerastratus`, and the second Irom is `hiram-of-tyre-ii`. Abibalus and Suron had no record and were made. In these two chapters a printed spelling that is already the title or a stored form of another record is not added as a spelling, so a shared name does not unlink the other record. Libya, Baal, and Abia were also kept off, because elsewhere in the book they name a country, the idol, and a river.
+- **Options:**
+  1. Leave these attachments, as now.
+  2. Name a Tyrian king that should be a separate record from the Cory one.
+- **Recommendation:** option 1. Raleigh and Cory both follow Menander through Iosephus.
+
+### N66. The Catalogue of the Kings of the ten Tribes differs from the narrative
+
+- **Why it matters:** The Catalogue at the end of Chapter IX prints Ela 20 yeeres, Omri 11, and Menahem 10. The narrative before it gives Ela “two yeeres”, Ambris “twelue yeeres, sixe in Thersa, and sixe in Samaria”, and Menahem “twentie yeeres”. The narrative figures are stored on `elah`, `omri`, and `menahem`, and each note names the Catalogue figure. Achab’s 22 and Ioram’s 12 are only in the Catalogue, so they were taken from it. The Catalogue lengths that are already on A Chronological Table (Ieroboam 22, Iehu 28, Ioachaz 17, Ioas 16, Pekahia 2, Hosea 9) were not entered again.
+- **Options:**
+  1. Leave the narrative figures, as now.
+  2. Store the Catalogue figures as well, as second statements.
+- **Recommendation:** option 1. The Catalogue’s 20 for Ela looks like a misprint of 2. All of these are display only.
+
+### N67. Carthage, and the yeere of the World for the ten Tribes
+
+- **Why it matters:** Raleigh says Elisa built Carthage in the 7th yeere of Pygmalion, “143. yeeres and 8. Moneths, after the Temple of Salomon: which by our accompt was 289. yeeres after Troy taken, and 143. before Rome.” The sentence is on `founding-of-carthage`. It was not converted. He also prints “the yeare of the world 3292” for the carrying away of the ten Tribes. That is stored as `year_am` 3292 on `fall-of-samaria`. The event keeps its tier 1–4 sort (722 BC), so nothing moved.
+- **Options:**
+  1. Leave both as they are.
+  2. Derive a Carthage year from the Temple year, and say which Temple year to use.
+- **Recommendation:** option 1. Raleigh is display only.
+
+### N68. Raleigh’s Kings of Tyre against Cory
+
+- **Why it matters:** Most of Raleigh’s figures agree with Cory: Hiram lived 53, Badezor reigned 6 and lived 45, and Eluleus reigned 36. Two do not. Abdastartus “liued but 20. yeeres according to Iosephus”, where Cory gives 29. A second author, whose name is illegible (〈◊ 〉), gives him 12 yeeres and 54 of life. Pygmalion reigned 40 yeeres, where Cory gives 47. Both are stored as printed, and each note names the Cory figure. The usurper, eldest of the four sonnes of the Nurce, who held the Kingdome 12 yeeres, has no name, so no record was made. The Iudges after Baal, who held Tyre “some 7. yeeres, and odde Moneths” among them, share one figure, so it was not stored on any one of them. Pass 11 stored Eluleus’s 26 yeeres at the siege. The 36 here is his whole reign.
+- **Options:**
+  1. Leave the figures as printed, as now.
+  2. Supply the illegible author from another copy of the 1617 edition.
+- **Recommendation:** option 1, and option 2 if you have a copy.
+
+### N69. Men who share a name in these chapters
+
+- **Why it matters:** Each was kept apart only where the passage says which man it means.
+  - **Benhadad:** the Benhadad whom Asa hired against Baasha is `benadad`, as in pass 11. That is the one who took the cities of Nephtalim. Achab’s Benadad and the Benhadad of Elisha’s time are `benhadad`. Benhadad the son of Azael is `ben-hadad-son-of-hazael`.
+  - **Hiram:** Iosephus calls the first Hiram Irom, and Raleigh calls the last King of his list Irom. The spelling Irom is on both records, so it does not link by itself.
+  - **Ahijah:** the Prophet stays on `ahijah`. Ahijah the father of Baasha is `ahijah-father-of-baasha`.
+  - **Eliphaz:** Eliphaz the Temanite, who disputed with Iob, is kept apart from Eliphaz the sonne of Esau, as Raleigh argues.
+  - **Others kept apart:** Aeneas of Lidda, Anna the sister of Elisa, Ioseph of Arimathea, Abdias the Prophet, Cyrus the sonne of Agenor, Ochus of Phoenicia, Hephaestion, Theophilus Antiochenus, and the Ptolomie who slew Simon Maccabeus.
+  - **Not attached:** Ioas the third sonne of Achab (p02257), Phul (p02268), the Antiochus of Seron and Lysias (N61), Nicephorus, Pharao, and the second Strato in S. Hierome’s story. Phulassar or Tiglat-Phylassar is on `tiglath-pileser-iii`. So, or Sua, or Sebicus is a new record. It was not merged with `sabacos` or `sabacus-the-ethiopian`. Shishak is on `sesac`. Eusebius’s Osochores was not attached to `osochor`.
+- **Options:**
+  1. Leave these as they are.
+  2. Name a passage that should move to another record, or two records that should merge.
+- **Recommendation:** option 1. A silent merge would attach a different man.
+
+### N70. Figures in these chapters that have no event
+
+- **Why it matters:** A new event cannot take a sort year from Raleigh. These figures were not entered.
+  - “there were consumed 130. yeeres and somewhat more betweene Xerxes and Alexander Macedon.”
+  - Tyre defended itself “13. yeeres” against Nabuchodonosor. Pass 11 already stored the 13 on `nebuchadnezzar-ii`.
+  - Counts: Xerxes’s 300 Gallies, Hiram’s 120 talents and 20 townes, Ephraim’s 45000 and 32500, the 600000 of Israel, Iudas’s 3000, Ioachaz’s 50 horse, 20 chariots, and 10000 foot, Menahem’s ten thousand talents and fiftie shekels, the Moabites’ tribute of 20000 sheepe, and Achab’s seuentie sonnes.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them.
+- **Recommendation:** option 1.
+
 ## O. Dynasty of Slaves (BLK SHP Scott, 2026)
 
 Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record of Israel in Egypt* (BLK SHP Publishing, 2026; Kindle Direct Publishing). eBook ISBN 979-8-9960110-3-2; softcover 979-8-9960110-0-1; hardcover 979-8-9960110-2-5; audiobook 979-8-9960110-1-8. © the author, all rights reserved. The dated statements are in `data/dynasty-of-slaves-dates-extract.md`. The chronology `dynasty-of-slaves` is display only. It does not set a sort year. Citations are chapter and section. The edition has no printed page numbers.

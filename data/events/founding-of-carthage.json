@@ -62,6 +62,17 @@
       "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n74/mode/1up",
       "source_text_id": "cory-ancient-fragments-1876",
       "note": "The parenthesis \"(b.c. 878)\" is printed in the sentence, immediately before the Josephus citation. It is not stored as year_bc_ad. Whether it is Menander's figure or the editor's gloss is open (H2). Generations, on founding-of-carthage, prints \"Sometime between 800 and 900 BC\" (provisional). 878, if it is a year, falls inside that range. It does not set the sort."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "In the 7. yeere of whose raigne, Elisa sailed into Affrica, and built Carthago, 143. yeeres and 8. Moneths, after the Temple of Salomon: which by our accompt was 289. yeeres after Troy taken, and 143. before Rome",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VIII, §. II, sig. 234a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. Carthage in the 7th yeere of Pygmalion, 143 yeeres and 8 moneths after the Temple, 289 after Troy, and 143 before Rome. Not converted. See N67. Not a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [
@@ -74,7 +85,8 @@
     "generations-africa",
     "generations-preparing",
     "cory-ancient-fragments-1876",
-    "griffith-beckman-reply-3"
+    "griffith-beckman-reply-3",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [

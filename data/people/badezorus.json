@@ -37,13 +37,25 @@
         "link": "https://archive.org/details/corysancientfrag00coryuoft/page/n74/mode/1up",
         "source_text_id": "cory-ancient-fragments-1876",
         "note": "Badezorus, son of Ithobalus."
+      },
+      {
+        "source": "raleigh-history-of-the-world",
+        "date": "succeeded his Father, and raigned 6. yeeres, and liued in all 45.",
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "year",
+        "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter VIII, §. II, sig. 234a",
+        "link": "https://texts.earlyprint.org/works/A10357.xml",
+        "source_text_id": "raleigh-history-of-the-world-1617",
+        "note": "Body intake. His 6 yeeres and his age of 45. Not a yeere of the World. year_am stays null. This does not change the sort."
       }
     ]
   },
   "events": [],
   "scripture_refs": [],
   "sources": [
-    "cory-ancient-fragments-1876"
+    "cory-ancient-fragments-1876",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [

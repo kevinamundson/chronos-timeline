@@ -40,6 +40,17 @@
       "link": "https://archive.org/details/sacredprofanehis01shuc/page/n279/mode/1up",
       "source_text_id": "shuckford-sacred-profane-1819",
       "note": "He equates Sesostris and Sesac with this siege. The event record is the sacking of the Temple in that same fifth year. The year is not Rehoboam’s accession."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "for in the fifth yeere of Rehoboam, Shishak sackt the Citie of Hierusalem, and carried thence all the treasure of Dauid and Salomon",
+      "year_am": null,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter IX, §. II, sig. 237b",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. Shishak in the fifth yeere of Rehoboam. Not a yeere of the World. year_am stays null. This does not change the sort."
     }
   ],
   "people": [
@@ -57,7 +68,8 @@
   ],
   "sources": [
     "cfah-8-osf",
-    "shuckford-sacred-profane-1819"
+    "shuckford-sacred-profane-1819",
+    "raleigh-history-of-the-world-1617"
   ],
   "related": [],
   "free_source_links": [
