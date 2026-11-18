@@ -8864,6 +8864,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I–VIII."
+        },
+        {
+          "form": "Iehorams",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XX, §. I, sig. 314a–314b. The passage prints “Iehorams”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."
         }
       ]
     },
@@ -8934,6 +8944,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        },
+        {
+          "form": "IEHV",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XX, §. VI, sig. 317b. The passage prints “IEHV”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."
         }
       ]
     },
@@ -9520,6 +9540,36 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "Ieboram",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XX, §. V, sig. 317b. The passage prints “Ieboram”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."
+        },
+        {
+          "form": "Iehoram of Israel",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XX, §. II, sig. 315a–315b. The passage prints “Iehoram of Israel”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."
+        },
+        {
+          "form": "Iehorams",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XX, §. I, sig. 314a–314b. The passage prints “Iehorams”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."
         }
       ]
     },
@@ -11372,6 +11422,16 @@
           "role": "alternate",
           "witness": "history",
           "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XIX, §. VII, sig. 313b. The passage prints “Michaias”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."
+        },
+        {
+          "form": "Micaia",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XX, §. I, sig. 314b. The passage prints “Micaia”.",
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."

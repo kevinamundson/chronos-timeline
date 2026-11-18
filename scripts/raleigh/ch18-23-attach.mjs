@@ -113,6 +113,44 @@ export const CH18_23 = {
   p02854: ["esau=Edom","joram-king-of-israel=Iehoram","jehoshaphat=Iehosaphat","brochard=Brochard","jehu-son-of-hanani=Iehu","hanani=Hanani"],
   p02855: ["jehoshaphat=Iehosaphat","ophrateus=Ophratenes","capetus=Capetus","syl-tybermus=Tiberinus"],
   p02856: ["jehoshaphat=Iehosaphats","mezales=Mecades","mezales=Mezades","agelas=Agelas","agelas=Agesilaus","archilaus=Archilaus","badezorus=Badesorus","ahab=Achab","ahaziah-king-of-israel=Ochazias","joram-king-of-israel=Iehoram"],
+
+  // Chapter XX. Iehoram son of Iehosaphat, and Ahazia.
+  p02857: ["jehoram=IEHORAM","jehoshaphat=IEHOSAPHAT","ahaziah-of-judah=AHAZIA"],
+  p02858: ["jehoram=IEHORAM"],
+  p02859: ["jehoram=IEHORAM","jehoshaphat=Iehosaphat","judah=Iuda","jehoram=Iehoram","ahab=Ahab","ahaziah-king-of-israel=Ahazia","jehoram=Iehorams","joram-king-of-israel=Iehorams","joram-king-of-israel=Iehoram","jehoshaphat=IEHOSAPHAT","joram-king-of-israel=IEHORAM"],
+  p02860: ["jehoshaphat=Iehosaphat"],
+  p02861: ["jehoshaphat=Iehosaphat","rehoboam=Rehoboams","judah=Iuda"],
+  p02862: ["athalia=Athalia","omri=Omri","jehoram=Iehoram","judah=Iuda","jezebel=Iezabel"],
+  p02863: ["judah=Iuda","ahab=Ahab","ahaziah-king-of-israel=Ahazia","micaiah=Micaia","jehoshaphat=Iehosaphat"],
+  p02864: ["jehoshaphat=IEHOSAPHAT","jehoram=IEHORAM"],
+  p02865: ["jehoram=Iehoram","ahab=Achab"],
+  p02866: ["ahab=Ahab","benhadad=Benhadad"],
+  p02867: ["jehoshaphat=Iehosaphat","judah=Iuda","asa=Asa"],
+  p02868: ["ahaziah-king-of-israel=Ahazia","ahab=Ahab","joram-king-of-israel=Iehoram","jehoshaphat=Iehosaphat","jehoram=Iehoram","jehoshaphat=Iehosaphats","judah=Iuda","judah=Iudaean","joram-king-of-israel=Iehoram of Israel"],
+  p02869: ["jehoram=IEHORAM","esau=Edom"],
+  p02870: ["jehoshaphat=Iehosaphat","jehoram=Iehoram"],
+  p02871: ["jehoram=Iehoram"],
+  p02872: ["esau=Edomites","jehoram=Iehoram","isaac=Isaac","esau=Esau","jacob=Iacob","judah=Iuda","antipater-father-of-herod=Antipater","esau=Edomite","herod-the-great=Herod"],
+  p02873: ["esau=Edomites","judah=Iuda","iosua=Iosua","jehoram=Iehoram","benjamin=Beniamin","dan=Dan","levi=Leuites","jehoshaphat=Iehosaphat"],
+  p02874: ["jehoram=Iehoram"],
+  p02875: ["jehoram=IEHORAM"],
+  p02876: ["elijah=Elias","elisha=Elizeus","jehoshaphat=Iehosaphat","erasmus=Erasmus","s-giles=S. Giles","elijahs-letter-to-jehoram"],
+  p02877: ["judah=Iudaea","david=Dauid","jehoram=Iehoram","judah=Iuda","benjamin=Beniamin","jehoshaphat=Iehosaphat","saul=Sauls"],
+  p02878: [],
+  p02879: ["jehu=Iehu","ahaziah-of-judah=Ahazia","joash-of-judah=Ioas","athalia=Athalia","jehoram=Iehoram"],
+  p02880: ["judah=Iuda","athalia=Athalia","ahab=AHAB","jehoram=Iehoram","joram-king-of-israel"],
+  p02881: ["athalia=Athalia"],
+  p02882: ["ahaziah-of-judah=AHAZIA"],
+  p02883: ["ahaziah-of-judah=OCHAZIAS","ahaziah-of-judah=Ahazia","jehoram=Iehoram","athalia=Athalia","judah=Iuda","joram-king-of-israel=Iehoram","ahab=Ahab","torniellus=Torniellus","hazael=Hazael","joram-king-of-israel=Ieboram","elijah=Elias"],
+  p02884: ["ahaziah-of-judah=AHAZIA","ahab=AHAB","jehu=IEHV"],
+  p02885: ["elisha=Elizeus","jehu=Iehu","elijah=Elias","ahab=Ahab"],
+  p02886: ["jehu=Iehu"],
+  p02887: ["joram-king-of-israel=Iehoram","jezebel=Iezabel","ahaziah-of-judah=Ahazia"],
+  p02888: ["ahab=Ahab","joram-king-of-israel=Iehoram","jezebel=Iezabel","judah=Iuda","elijah=Elias"],
+  p02889: ["esau=Edom","jehu=Iehu","joram-king-of-israel=Iehoram","judah=Iuda","naboth=Naboth","ahaziah-of-judah=Ahazia"],
+  p02890: ["jezebel=Iezabel","jehu=Iehu","zimri=Zimri"],
+  p02891: [],
+  p02892: ["ahaziah-of-judah=Ahazia","judah=Iuda","jehu=Iehu"],
 };
 
 export const CH18_23_NEW = {
@@ -166,9 +204,14 @@ export const CH18_23_NEW = {
   "eliada": ["Eliada","Eliada commaunded two hundred thousand in Beniamin, of those that bare shields and of Archers.","him"],
   "iehozabad": ["Iehozabad","Iehozabad had vnder his commaundement a hundred and fourescore thousand.","him"],
   "peter-martyr": ["Peter Martyr","P. Martir obserueth that these euill spirits are the ministers of Gods vengeance, and Peter Martyr is later cited for Gregory Nazianzen on Ioash. He is not Peter.","him"],
+
+  // Chapter XX.
+  "erasmus": ["Erasmus","Erasmus deuised the fable of our Ladies letters, and later held that Ioash was deriued from Nathan the sonne of Dauid.","him"],
+  "s-giles": ["S. Giles","A Verse was sent from heauen to S. Giles.","him"],
 };
 
 export const CH18_23_EVENTS = new Set([
+  "elijahs-letter-to-jehoram",
   "asas-feet-diseased",
   "david-and-bathsheba",
   "division-of-the-kingdom",
