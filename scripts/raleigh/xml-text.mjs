@@ -5,7 +5,7 @@
 // and Book III, Part I.
 // `throughChapter` is the last Book I chapter to include. `book2Through` is the last
 // Book II, Part I chapter. Pass 18 raises this through Chapter XXVIII, the end of the book.
-// `book3Through` is the last Book III, Part I chapter. Pass 19 starts at Chapter I.
+// `book3Through` is the last Book III, Part I chapter. Pass 19 stores Chapters I–VI.
 // The constant BOOK3_THROUGH is raised as each chapter of this pass is stored.
 // `<hi>` is the 1617 italic (EarlyPrint leaves the rend off the unadorned file).
 // Each passage carries `italics` as [start, end] pairs into `passage`, derived here.
@@ -21,7 +21,7 @@ export const THROUGH_CHAPTER = 12;
 /** Last Book II, Part I chapter stored in the account file. 0 means Book II is not included. */
 export const BOOK2_THROUGH = 28;
 /** Last Book III, Part I chapter stored in the account file. 0 means Book III is not included. */
-export const BOOK3_THROUGH = 5;
+export const BOOK3_THROUGH = 6;
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI', 'XXVII', 'XXVIII', 'XXIX', 'XXX', 'XXXI', 'XXXII', 'XXXIII', 'XXXIV', 'XXXV', 'XXXVI', 'XXXVII', 'XXXVIII', 'XXXIX', 'XL'];
 

@@ -2,8 +2,8 @@
 // Chapters VIII and IX (pass 12), Chapter X (pass 13),
 // Chapters XI–XIII (pass 14), Chapters XIV–XVII (pass 15),
 // Chapters XVIII–XXIII (pass 16), and Chapters XXIV–XXVIII (pass 18).
-// Book III, Part I, Chapter I (pass 19) is joined as it is stored.
-// Later chapters of this pass follow. covered.mjs keeps only these links there.
+// Book III, Part I, Chapters I–VI (pass 19) are joined as they are stored.
+// covered.mjs keeps only these links there.
 import { CH7, CH7_NEW, CH7_EVENTS } from './ch7-attach.mjs';
 import { CH8_9, CH8_9_NEW, CH8_9_EVENTS } from './ch8-9-attach.mjs';
 import { CH10, CH10_NEW, CH10_EVENTS } from './ch10-attach.mjs';

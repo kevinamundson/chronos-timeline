@@ -2290,6 +2290,21 @@
       ]
     },
     {
+      "id": "artabanus",
+      "forms": [
+        {
+          "form": "ARTABANVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter VI, §. II, sig. 411a. The passage prints “ARTABANVS”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–VI."
+        }
+      ]
+    },
+    {
       "id": "artaphernes",
       "forms": [
         {
@@ -2366,6 +2381,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        }
+      ]
+    },
+    {
+      "id": "artozostre",
+      "forms": [
+        {
+          "form": "Artozostres",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter VI, §. I, sig. 410b. The passage prints “Artozostres”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–VI."
         }
       ]
     },
@@ -5555,6 +5585,21 @@
       ]
     },
     {
+      "id": "demantus",
+      "forms": [
+        {
+          "form": "Demaratus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter VI, §. III, sig. 412b–413a. The passage prints “Demaratus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–VI."
+        }
+      ]
+    },
+    {
       "id": "demetrius",
       "forms": [
         {
@@ -8554,6 +8599,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
+      "id": "hidarnes",
+      "forms": [
+        {
+          "form": "Hydarnes",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter VI, §. I, sig. 410b–411a. The passage prints “Hydarnes”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–VI."
         }
       ]
     },
@@ -12259,6 +12319,21 @@
       ]
     },
     {
+      "id": "lycidas",
+      "forms": [
+        {
+          "form": "Cyrcilus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter VI, §. VIII, sig. 416a–416b. The passage prints “Cyrcilus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–VI."
+        }
+      ]
+    },
+    {
       "id": "lyranus",
       "forms": [
         {
@@ -12540,6 +12615,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter X."
+        }
+      ]
+    },
+    {
+      "id": "mardonius",
+      "forms": [
+        {
+          "form": "MARDONIVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter VI, §. VIII, sig. 415b. The passage prints “MARDONIVS”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–VI."
         }
       ]
     },
@@ -15566,6 +15656,21 @@
       ]
     },
     {
+      "id": "philip-king-of-spaine",
+      "forms": [
+        {
+          "form": "Philip the second",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter VI, §. II, sig. 411b–412a. The passage prints “Philip the second”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–VI."
+        }
+      ]
+    },
+    {
       "id": "philochorus",
       "forms": [
         {
@@ -16425,6 +16530,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter II."
+        }
+      ]
+    },
+    {
+      "id": "pythius",
+      "forms": [
+        {
+          "form": "PYTHIVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter VI, §. II, sig. 411a. The passage prints “PYTHIVS”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–VI."
         }
       ]
     },

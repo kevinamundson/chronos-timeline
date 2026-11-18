@@ -24,7 +24,7 @@
 // Nitocris of Babylon is not the Egyptian nitocris.
 
 /** Chapters of Book III whose passages are attached only from this table. */
-export const B3_CHAPTERS = new Set(['1', '2', '3', '4', '5']);
+export const B3_CHAPTERS = new Set(['1', '2', '3', '4', '5', '6']);
 
 export const B3 = {
   // Chapter I. The time between the destruction (gap) and the fall of the Assyrian Empire.
@@ -339,6 +339,81 @@ export const B3 = {
   p03611: ["miltiades=Miltiades", "ceres=Ceres", "xantippus=Xantippus", "pericles=Pericles"],
   p03612: ["miltiades=Miltiades", "cymon=Cymon", "hegisipila=Hegisipila", "olorus=Olorus", "plutarch=Plutarch", "themistocles=Themistocles"],
   p03613: ["darius-hystaspis=Darius", "atossa=Atossa", "artabasanes=Artabasanes", "xerxes=Xerxes", "achemenes-son-of-darius=Achemenes", "masistes=Masistes", "anabignes=Anabignes"],
+
+  // Chapter VI. CHAP. VI. Of XERXES. p03614–p03673.
+  // Xerxes is xerxes. Darius his father is darius-hystaspis.
+  // The son Darius is darius-son-of-xerxes. Achaemenes the brother is achemenes-son-of-darius.
+  // Demaratus is demantus. Artozostres is artozostre. Gobryas is gobrias.
+  // Amyntas in this chapter is the Macedonian, not the table king.
+  // Hydarnes is hidarnes. The passage does not say he is a second man.
+  // Pausanias who led the Spartans is not the writer. Tigranes in Ionia is not the Armenian.
+  // Perseus the last king of Macedon is not the father of Erythraeus.
+  // Lucius Antonius is not the Antonius of Zoan, and not M. Antonius.
+  // Caesar who transported armies is julius-caesar. Caligula is named apart.
+  // Philip the second in 1588 is philip-king-of-spaine. That yeere is not a yeere of the World.
+  // The fiue Cities cut from Athos are places. Thespians, a Lemnian ship, and Zidon are not people.
+  // Cybeles is the temple's goddess. The Diuel, the Holy one, and God are not people.
+  // The gapped run-agate, the gapped generall at Artemisium, and the gapped battle in the section head stay empty.
+  p03614: ["xerxes=XERXES", "xerxes-invades-greece"],
+  p03615: ["xerxes=XERXES"],
+  p03616: ["xerxes=XERXES", "mardonius=Mardonius", "darius-hystaspis=Darius", "hystaspes=Hystaspes", "xerxes=Xerxes", "artozostre=Artozostres", "artabanus=Artabanus", "xerxes-invades-greece"],
+  p03617: ["xerxes=Xerxes", "artabanus"],
+  p03618: ["xerxes=Xerxes", "artabanus=Artabanus"],
+  p03619: ["herodotus=Herodotus", "trogus=Trogus"],
+  p03620: [],
+  p03621: ["mardonius=Mardonius", "gobrias=Gobryas", "darius-hystaspis=Darius", "xerxes=Xerxes", "hidarnes=Hydarnes", "datis=Datis"],
+  p03622: ["ariabignes=Ariabignes", "darius-hystaspis=Darius", "artemisia=Artemisia", "lygdames=Lygdames", "xerxes=Xerxes"],
+  p03623: ["xerxes=XERXES", "pythius=PYTHIVS", "artabanus=ARTABANVS"],
+  p03624: ["pythius=Pythius", "xerxes=Xerxes"],
+  p03625: ["pythius=Pythius", "xerxes=Xerxes"],
+  p03626: ["xerxes"],
+  p03627: ["xerxes=Xerxes", "julius-caesar=Caesar", "caligula=Caligula"],
+  p03628: ["xerxes=Xerxes", "artabanus=Artabanus"],
+  p03629: ["xerxes=Xerxes", "artabanus=Artabanus", "philip-king-of-spaine=Philip the second"],
+  p03630: ["xerxes=Xerxes", "machiavel=Machiauels", "herodotus=Herodotus"],
+  p03631: ["xerxes=Xerxes", "darius-hystaspis=Darius"],
+  p03632: ["xerxes=Xerxes", "mardonius=Mardonius", "xerxes-invades-greece"],
+  p03633: ["battle-of-thermopylae"],
+  p03634: ["xerxes=Xerxes", "leonidas=Leonidas", "dieneces=Dieneces", "battle-of-thermopylae"],
+  p03635: ["demantus=Demaratus", "xerxes=Xerxes", "chilon=Chilon", "achemenes-son-of-darius=Achaemenes", "artabanus=Artabanus", "leonidas=Leonidas"],
+  p03636: ["leonidas=Leonidas", "battle-of-thermopylae"],
+  p03637: ["xerxes=XERXES", "apollo=APOLLO"],
+  p03638: ["xerxes=Xerxes", "herodotus=Herodotus", "apollo=Apollo", "cybeles=Cybeles"],
+  p03639: ["xerxes=Xerxes", "apollo=Apollo", "themistocles=Themistocles"],
+  p03640: ["themistocles=THEMISTOCLES", "battle-of-salamis"],
+  p03641: ["xerxes=Xerxes", "themistocles=Themistocles", "eurybiades=Eurybiades"],
+  p03642: [],
+  p03643: ["themistocles=THEMISTOCLES", "battle-of-salamis"],
+  p03644: ["artemisia=Artemisia", "xerxes=Xerxes", "mardonius=Mardonius"],
+  p03645: ["themistocles=Themistocles", "xerxes=Xerxes", "battle-of-salamis"],
+  p03646: ["xerxes=XERXES"],
+  p03647: ["themistocles=Themistocles", "mardonius=Mardonius", "xerxes=Xerxes", "eurybiades=Eurybiades"],
+  p03648: ["mardonius=MARDONIVS", "xerxes=XERXES"],
+  p03649: ["mardonius=MARDONIVS", "alexander-son-of-amintas=Alexander", "amintas-king-of-macedon=Amyntas", "xerxes=Xerxes"],
+  p03650: ["mardonius=Mardonius", "xerxes=Xerxes", "darius-hystaspis=Darius", "alexander-son-of-amintas=Alexander"],
+  p03651: ["xerxes=Xerxes", "mardonius=Mardonius", "lycidas=Lycidas", "lycidas=Cyrcilus", "demosthenes=Demosthenes", "pausanias-of-sparta=Pausanias"],
+  p03652: ["mardonius=Mardonius"],
+  p03653: [],
+  p03654: ["mardonius=Mardonius"],
+  p03655: ["mardonius=Mardonius", "xerxes=Xerxes"],
+  p03656: ["ceres=Ceres", "proserpina=Proserpina"],
+  p03657: [],
+  p03658: ["alexander-the-great=Alexander the Great"],
+  p03659: ["mardonius=Mardonius", "pausanias-of-sparta=Pausanias", "battle-of-marathon"],
+  p03660: ["pausanias-of-sparta=Pausanias", "mardonius=Mardonius", "artabazus=Artabazus", "battle-of-plataea"],
+  p03661: ["artabazus=Artabazus", "mardonius=Mardonius", "xerxes=Xerxes", "xerxes-invades-greece"],
+  p03662: [],
+  p03663: ["battle-of-plataea"],
+  p03664: ["leutychides=Leutychides", "xantippus=Xantippus", "xerxes=Xerxes", "tigranes-in-ionia=Tigranes", "artayntes=Artayntes", "ithramitres=Ithramitres", "themistocles=Themistocles", "mardonius=Mardonius"],
+  p03665: ["paulus-aemylius=Paulus Aemylius", "perseus-of-macedon=Perseus", "livy=Liuie", "plutarch=Plutarch", "lucius-antonius=Lucius Antonius", "domitian=Domitian"],
+  p03666: ["domitian=Domitian", "lucius-antonius=Antonius", "plutarch=Plutarch", "sennacherib=Senacherib", "herodotus=Herodotus", "mardonius=Mardonius"],
+  p03667: [],
+  p03668: ["xerxes=XERXES"],
+  p03669: ["xerxes=XERXES", "darius-son-of-xerxes=Darius", "masistes=Masistes", "amestris=Amestris", "xerxes=Xerxes"],
+  p03670: ["xerxes=Xerxes", "alexander-the-great=Alexander the Great"],
+  p03671: ["cyrus-the-great=Cyrus", "xerxes=Xerxes"],
+  p03672: [],
+  p03673: ["xerxes=Xerxes", "cyrus-the-great=Cyrus"],
 };
 
 export const B3_NEW = {
@@ -478,6 +553,28 @@ export const B3_NEW = {
   "achemenes-son-of-darius": ["Achemenes son of Darius", "Achemenes, a sonne of Darius, gouernor of Aegypt. He is not Achaemenes, the sonne of Perses, from whom the Achaemenidae are named. The one-word title would not keepe the two apart, so the title is four words.", "him"],
   masistes: ["Masistes", "Masistes, a sonne of Darius, named with Artabasanes, Xerxes, Achemenes, and Anabignes. The printed spelling is kept.", "him"],
   anabignes: ["Anabignes", "Anabignes, a sonne of Darius, named last of the fiue sonnes left at his death. The printed spelling is kept.", "him"],
+  datis: ["Datis", "Datis, who commaunded the late Armie of Darius in Greece. His sonnes, who led the horsemen vnder Xerxes, stay vn-named. The printed spelling is kept.", "him"],
+  ariabignes: ["Ariabignes", "Ariabignes, a sonne of Darius, who commaunded among the Princes of Persia ouer the Fleet of Xerxes. The printed spelling is kept.", "him"],
+  artemisia: ["Artemisia", "Artemisia, the daughter of Lygdames, who furnished Gallies of Halycarnassus and the Islands adioyning, and commaunded them her selfe. The citie was not attached. A word before of Halycarnassus is a gap and was not filled. The printed spelling is kept.", "her"],
+  lygdames: ["Lygdames", "Lygdames, the father of Artemisia. The printed spelling is kept.", "him"],
+  pythius: ["Pythius", "Pythius the Lydian, who entertained Xerxes and his whole Armie, and presented him with siluer and gold. The printed spelling is kept.", "him"],
+  leonidas: ["Leonidas", "Leonidas, one of the Kings of Sparta, who with three hundred Lacedaemonians held the entrance at Thermopylae, and died there. The printed spelling is kept.", "him"],
+  dieneces: ["Dieneces", "Dieneces the Spartan, who answered that if the Persian arrowes hid the Sunne, then they should fight in the coole shade. The printed spelling is kept.", "him"],
+  chilon: ["Chilon", "Chilon the Lacedemonian, whose ancient speech was that it were better for his Countrie-men to haue that Ile drowned in the sea. The printed spelling is kept.", "him"],
+  eurybiades: ["Eurybiades", "Eurybiades the Lacedaemonian, Admirall of the whole fleet at Salamis, to whom Themistocles spake in priuate. The printed spelling is kept.", "him"],
+  lycidas: ["Lycidas", "Lycidas, also called Cyrcilus by Demosthenes, who aduised the Senate to accept the conditions of Mardonius, and was stoned to death. The two names were left as one man.", "him"],
+  "pausanias-of-sparta": ["Pausanias of Sparta", "Pausanias, who conducted fiue thousand Spartans, and who gaue the signall of battaile against Mardonius. He is not Pausanias the writer. The one-word title would fold onto that record, so the title is three words.", "him"],
+  artabazus: ["Artabazus", "Artabazus, with whom those fled who escaped when the Persian Armie first fell to rout. The printed spelling is kept.", "him"],
+  proserpina: ["Proserpina", "Proserpina, named with Ceres, in whose plaine and old Temple the Oracle promised victorie. The Demi-gods and Nymphs were not made people. The printed spelling is kept.", "her"],
+  leutychides: ["Leutychides", "Leutychides the Spartan, Admirall with Xantippus the Athenian of the Greeke Nauie. The printed spelling is kept.", "him"],
+  "tigranes-in-ionia": ["Tigranes in Ionia", "Tigranes, vnder whose command Xerxes left threescore thousand for defence of Ionia and the Sea-coast. He is not Tigranes the Armenian King. The one-word title would fold onto that record, so the title is three words.", "him"],
+  artayntes: ["Artayntes", "Artayntes, Admirall with Ithramitres of the Persian fleet. The printed spelling is kept.", "him"],
+  ithramitres: ["Ithramitres", "Ithramitres, Admirall with Artayntes of the Persian fleet. The printed spelling is kept.", "him"],
+  "paulus-aemylius": ["Paulus Aemylius", "Paulus Aemylius, who ouerthrew Perseus the last king of Macedon. The printed spelling is kept.", "him"],
+  "perseus-of-macedon": ["Perseus of Macedon", "Perseus, the last king of Macedon, ouerthrowne by Paulus Aemylius. He is not Perseus the father of Erythraeus, and not Perseus the sonne of Danae. The one-word title would fold onto those records, so the title is three words.", "him"],
+  "lucius-antonius": ["Lucius Antonius", "Lucius Antonius, Lieutenant of the higher Germanie, who was Rebell to Domitian the Emperour, and was slaine. He is not the Antonius who giues Zoan the name Thanis, and not M. Antonius. The one-word title would fold onto Antonius, so the title is two words.", "him"],
+  amestris: ["Amestris", "Amestris, the Queene, who caused the Wife of Masistes to be mangled. The Wife of Masistes and her Daughter stay vn-named. The printed spelling is kept.", "her"],
+  cybeles: ["Cybeles", "Cybeles, whose Temple was burnt when the Citie of Sardis was set on fire. The people who burnt it are a gap and were not filled. The printed spelling is kept.", "her"],
 };
 
 export const B3_EVENTS = new Set([
@@ -494,4 +591,7 @@ export const B3_EVENTS = new Set([
   "xerxes-invades-greece",
   "temple-rebuilding-resumed",
   "battle-of-marathon",
+  "battle-of-thermopylae",
+  "battle-of-salamis",
+  "battle-of-plataea",
 ]);
