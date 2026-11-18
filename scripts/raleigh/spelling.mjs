@@ -165,9 +165,13 @@ const SPELLING = {
   gouernment: 'government',
   gouernors: 'governors',
   gouernour: 'governor',
+  // Titles "Henrie the fourth" and "Queene of Heauen" would otherwise
+  // freeze these ordinary spellings, because a title word is kept as stored.
+  henrie: 'henry',
   kingdome: 'kingdom',
   kingdomes: 'kingdoms',
   ouer: 'over',
+  queene: 'queen',
   recouered: 'recovered',
   sonne: 'son',
   threatned: 'threatened',
@@ -636,6 +640,7 @@ const ETH_KEEP = new Set([
   'kirharaseth',
   'hareseth', 'ishboseth', 'mageth',
   'haroseth', 'iephunneth',
+  'iehoshabeth', 'thermeth',
 ]);
 
 // A printed -eth word whose modern verb is not the stem plus -s.
@@ -672,6 +677,12 @@ const ETH_EXPLICIT = {
   smoothereth: 'smothers',
   // The noun truth. "true" is a headword, so the stem would otherwise become trues.
   trueth: 'truth',
+  // "alleadgeth" is allege. The letter rules find no dictionary verb.
+  alleadgeth: 'alleges',
+  // "inlargeth" is enlarge, like incourageth. The in- spelling is not a dictionary verb.
+  inlargeth: 'enlarges',
+  // "singeth" is sing. The stem singe is the dictionary verb to burn.
+  singeth: 'sings',
 };
 
 const ETH_EXPLICIT_REASON = {
@@ -685,6 +696,9 @@ const ETH_EXPLICIT_REASON = {
   commaundeth: 'verb command → commands (but commaundeth vs to offer our selues)',
   picketh: 'verb pick → picks (yet hee picketh quarrell against Ioram)',
   smoothereth: 'verb smother → smothers (Azael returning, smoothereth him)',
+  alleadgeth: 'verb allege → alleges (for this he alleadgeth Plato in Timaeo)',
+  inlargeth: 'verb enlarge → enlarges (Iosephus, indeed, inlargeth the Storie)',
+  singeth: 'verb sing → sings; the stem singe is the verb to burn (hee singeth as it were the Epithalamion)',
 };
 
 // Kept, and listed as unsure. The letters do not identify one modern verb.
@@ -738,6 +752,8 @@ const ETH_REASON = {
   mageth: 'kept: place Mageth in Gad, not a verb',
   haroseth: 'kept: city Haroseth, chiefe hold of Iahin in Nepthalim',
   iephunneth: 'kept: name Iephunneth, father of Caleb',
+  iehoshabeth: 'kept: name Iehoshabeth, wife of Iehoiada',
+  thermeth: 'kept: place Thermeth (calls it Thermeth), not the verb therm',
 };
 
 // Both the stem and the stem plus e are dictionary words. These stems are the verb.

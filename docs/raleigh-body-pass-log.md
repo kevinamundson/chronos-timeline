@@ -421,6 +421,33 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 853 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13, 114 in pass 14, 94 in pass 15)
 - Accounts: 2,757 passages on 1,654 records
 
+## Pass 16
+
+This entry covers the work that would have been pass 17. Kevin asked on 2026-11-17 that the two be folded into pass 16. Book II, Part I, Chapter XVIII, sig. 302b, through Chapter XXIII, §. VII, sig. 345a. The headings are “CHAP. XVIII. Of SALOMON.”, “CHAP. XIX. Of SALOMONS Successors vntill the end of IEHOSAPHAT.”, “CHAP. XX. Of IEHORAM the sonne of IEHOSAPHAT, and AHAZIA.”, “CHAP. XXI. Of ATHALIA, and whose Sonne he was that succeeded vnto her.”, “CHAP. XXII. Of IOAS and AMASIA, with their Contemporaries; where somewhat of the building of Carthage.”, and “CHAP. XXIII. Of VZZIA.” Three hundred thirty-five passages, p02758–p03092: 50 in Chapter XVIII, 49 in Chapter XIX, 36 in Chapter XX, 44 in Chapter XXI, 63 in Chapter XXII, and 93 in Chapter XXIII. Chapter XXII ends at 242, under the floor, and XXIII is one chapter, so the pass stops at the end of XXIII. Chapter XXIV opens on sig. 345b and was not entered. The same rules as passes 3–15. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. He prints one, 2991, and it is already the calculated reign start on `solomon` (Chronological Table, sig. 786b). It was not stored again. The sort stays −1036, tier `ussher-jones`. p03059 says “the true yeare of the World” and prints no number. Anno Domini 1588 is not a yeere of the World. Mercator’s account of Baliastrus is another man’s reckoning and is not stored. No calculated sort was written.
+
+As in Chapters VII–XVII, the people and events on each passage are named by hand, in `scripts/raleigh/ch18-23-attach.mjs`. `scripts/raleigh/hand-attach.mjs` joins it with the Chapter VII–XVII tables. A spelling that is already the title or a stored form of another record is not added as a name form. 320 of the 335 passages carry at least one link. The fifteen without one are p02782, p02833, p02878, p02891, p02897, p02911, p02918, p02925, p02927, p02931, p02951, p02959, p02990, p03053, and p03071. See N89.
+
+### Counts
+
+- Dated statements written: 0
+- People created: 117, all first named in Book II, Part I, Chapters XVIII–XXIII, all display-only
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. Events received accounts from these chapters. No existing person file was replaced.
+- Name forms added: 136 (on new and existing people). No existing form was rewritten. A surface already held by another record was not stored. `Iehorams` is on both `jehoram` and `joram-king-of-israel`, because the sentence names the two kings. The name-link review leaves that token unmatched.
+- Accounts: 3,092 passages, on 1,808 records. The first 2,757 passages are unchanged, and no earlier link was dropped.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. The CFAH import and the standby compute were run after the accounts were written. No other importer was re-run. The new people are display-only, and none of them has a standby placement. The open questions for these chapters are N89–N93.
+
+### Cumulative
+
+- Dated statements written: 167 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6, 21 in pass 7, 9 in pass 8, 7 in pass 9, 15 in pass 10, 8 in pass 11, 32 in pass 12, 2 in pass 13, 3 in pass 14, 1 in pass 15, 0 in pass 16)
+- People created: 1,370
+- Places created: 0
+- Events created: 0
+- Name forms added: 989 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13, 114 in pass 14, 94 in pass 15, 136 in pass 16)
+- Accounts: 3,092 passages on 1,808 records
+
 ## RESUME POINT
 
-Book II, Part I, Chapter XVIII. The heading is “CHAP. XVIII. Of SALOMON.” Pass 15 stopped at the end of Chapter XVII. The last stored passage is p02757, Book II, Part I, Chapter XVII, §. X, sig. 302b (Acastus the second Athenian prince, Hiram, and Salomon’s beginning of the Temple). Do not start again inside Chapter XVII. Chapter XVIII needs `BOOK2_THROUGH` raised past 17 in `scripts/raleigh/xml-text.mjs` and `--book2` in `scripts/raleigh/covered.mjs`, and a hand table like `scripts/raleigh/ch14-17-attach.mjs`, because the chapter names many people who share letters with records already stored.
+Book II, Part I, Chapter XXIV. The heading is “CHAP. XXIIII. Of the Antiquities of 〈◊ 〉, and 〈◊ 〉 of Rome in the time of AHAS.” Both gaps stay empty. Pass 16 stopped at the end of Chapter XXIII. The last stored passage is p03092, Book II, Part I, Chapter XXIII, §. VII, sig. 345a. Do not start again inside Chapter XXIII. Chapter XXIV needs `BOOK2_THROUGH` raised past 23 in `scripts/raleigh/xml-text.mjs` and `--book2` in `scripts/raleigh/covered.mjs`, and a new hand table, because the chapter names many people who share letters with records already stored.
