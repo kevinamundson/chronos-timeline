@@ -21,7 +21,7 @@ export const THROUGH_CHAPTER = 12;
 /** Last Book II, Part I chapter stored in the account file. 0 means Book II is not included. */
 export const BOOK2_THROUGH = 28;
 /** Last Book III, Part I chapter stored in the account file. 0 means Book III is not included. */
-export const BOOK3_THROUGH = 1;
+export const BOOK3_THROUGH = 2;
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI', 'XXVII', 'XXVIII', 'XXIX', 'XXX', 'XXXI', 'XXXII', 'XXXIII', 'XXXIV', 'XXXV', 'XXXVI', 'XXXVII', 'XXXVIII', 'XXXIX', 'XL'];
 

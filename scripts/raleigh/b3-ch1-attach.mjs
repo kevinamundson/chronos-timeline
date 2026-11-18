@@ -24,7 +24,7 @@
 // Nitocris of Babylon is not the Egyptian nitocris.
 
 /** Chapters of Book III whose passages are attached only from this table. */
-export const B3_CHAPTERS = new Set(['1']);
+export const B3_CHAPTERS = new Set(['1', '2']);
 
 export const B3 = {
   // Chapter I. The time between the destruction (gap) and the fall of the Assyrian Empire.
@@ -95,6 +95,53 @@ export const B3 = {
   p03422: ["berosus=BEROSVS", "euilmerodach=EVILMERODACH", "balthasar=BALTHASAR"],
   p03423: ["balthasar=Balthasar", "euilmerodach=Euilmerodach", "berosus=Berosus", "niglisar=Niriglissoroor", "niglisar=Niglissar", "labosardach=Labassardach", "herodotus=Herodotus", "nebuchadnezzar-ii=Nebuchadnezzar", "daniel=Daniel", "nitocris-of-babylon=Nitocris", "semiramis=Semiramis", "josephus=Iosephus", "jehoiachin=Iechonia"],
   p03424: ["euilmerodach=Euilmerodach", "balthasar=Balthasar", "balthasar=Balthazar", "cyrus-the-great=Cyrus", "fall-of-babylon-539-bc"],
+
+  // Chapter II. The originall and first greatnesse of the Persians.
+  // p03425–p03462. Cyaxares in the king-list before Aslyages is cyaxares.
+  // Cyaxares where the passage equates him with Darius Medus is darius-the-mede.
+  // The Cyrus and Cambyses of Xerxes his line, and Cyrus the first, and Cambyses
+  // the father of Cyrus, stay off cyrus-the-great and off the table king cambyses.
+  // Diocles in the Median list is not the Diocles of the siege of Tyre.
+  // Atossa who married Pharnaces is not Queene Atossa.
+  // The comma in “Theophilus, Antiochenus” was not made a second man.
+  p03425: [],
+  p03426: ["fall-of-babylon-539-bc"],
+  p03427: ["phul-belochus=Belochus", "balthasar=Balthasar", "darius-the-mede=Cyaxares", "darius-the-mede=Darius Medus", "cyrus-the-great=Cyrus", "fall-of-babylon-539-bc"],
+  p03428: ["phul-belochus=Phul Belochus", "arbaces=Arbaces", "metasthenes=Metasthenes", "ninus=Ninus", "sardanapalus=Sardanapalus", "darius-the-mede=Cyaxares", "darius-the-mede=Darius Medus", "balthasar=Balthasar", "cyrus-the-great=Cyrus", "achaemenes=Achaemenes"],
+  p03429: ["achaemenes=Achaemenes"],
+  p03430: ["madai=Madai", "japheth=Iaphet", "lactantius=Lactantius", "diodorus-siculus=Diodorus", "diodorus-siculus=Diodor", "hydaspes=Hydaspes", "pharnus=Pharnus"],
+  p03431: ["arbaces=Arbaces", "eusebius=Eusebius", "darius-the-mede=Darius Medus"],
+  p03432: ["arbaces=Arbaces", "sosarmus-of-media=Sosarmus", "medidus=Medidus", "cardiceas=Cardiceas", "diocles-of-the-medes=Diocles", "phraortes=Phraortes", "cyaxares=Cyaxares", "astyages=Aslyages", "darius-the-mede=Darius Medus"],
+  p03433: ["cyrus-the-great=Cyrus", "darius-the-mede=Darius", "balthasar=Balthazar", "daniel=Daniel", "isaiah=Isay", "jeremiah=IEREMIE", "julius-africanus=Iulius Affricanus", "diodorus-siculus=Diodor", "castor=Castor", "thallus=Thallus", "strabo=Strabo", "justin=Iustine", "herodotus=Herodotus", "fall-of-babylon-539-bc"],
+  p03434: [],
+  p03435: ["cyrus-the-great=Cyrus", "astyages=Astyages", "mandane=Mandane", "ctesias=Ctesias", "astyages=Astigas", "astyages=Apinia", "amytis=Amytis"],
+  p03436: ["viginier=Viginier", "astyages=Astyages", "darius-the-mede=Cyaxares", "darius-the-mede=Darius Medus", "diodorus-siculus=Diodore", "justin=Iustine", "strabo=Strabo", "plato=Plato", "aristotle=Aristotle", "isocrates=Isocrates", "castor=Castor", "thallus=Thallus", "phlegon=Phlegon", "tatian=Tatianus", "theophilus-antiochenus=Theophilus", "julius-africanus=Iulius Affricanus", "clemens-alexandrinus=Clemens Alexandrinus", "justin-martyr=Iustine Martyr", "lactantius=Lactantius", "eusebius=Eusebius", "jerome=Hierome", "augustine=Augustine"],
+  p03437: ["astyages=Astyages", "darius-the-mede=Darius of the Medes", "josephus=Iosephus", "xenophon=Xenophon", "daniel=Daniel", "darius-the-mede=Darius", "cyrus-the-great=Cyrus"],
+  p03438: ["cyrus-the-great=Cyrus", "fall-of-babylon-539-bc"],
+  p03439: ["cyrus-the-great=Cyrus", "darius-the-mede=Cyaxares", "darius-the-mede=Darius"],
+  p03440: ["daniel=Daniel", "darius-the-mede=Darius", "cyrus-the-great=Cyrus"],
+  p03441: ["xenophon=XENOPHON"],
+  p03442: ["xenophon=Xenophon"],
+  p03443: [],
+  p03444: ["croesus=Croesus", "alyattes=Alyattes", "darius-the-mede=Cyaxares", "cyrus-the-great=Cyrus"],
+  p03445: ["darius-the-mede=Darius", "xenophon=Xenophon", "darius-the-mede=Cyaxares", "cyrus-the-great=Cyrus", "balthasar=Balthasar", "fall-of-babylon-539-bc"],
+  p03446: ["cyrus-the-great=Cyrus", "xenophon=Xenophon"],
+  p03447: ["xenophon=Xenophon"],
+  p03448: [],
+  p03449: ["achaemenes=Achaemenes", "perses=Perses", "arbaces=Arbaces", "sardanapalus=Sardanapalus", "deioces=Deioces", "salmanassar=Salmanasser", "phul-belochus=Belochus"],
+  p03450: ["deioces=Deioces", "astyages=Astyages", "nebuchadnezzar-ii=Nabuchodonosor", "daniel=Daniel", "astyages=Astiages", "alyattes=Halyattes", "croesus=Croesus"],
+  p03451: ["achaemenes=Achaemenes", "xenophon=Xenophon", "cambyses-father-of-cyrus=Cambyses", "cyrus-the-great=Cyrus", "astyages=Astiages", "mandane=Mandane"],
+  p03452: ["astyages=Astiages"],
+  p03453: ["herodotus=Herodotus", "cyrus-the-great=Cyrus", "achaemenes=Achaemenidae", "xerxes=Xerxes"],
+  p03454: ["xerxes=Xerxes", "herodotus=Herodotus"],
+  p03455: ["achaemenes=Achaemenes", "cambyses-of-xerxes-line=Cambyses", "cyrus-of-xerxes-line=Cyrus", "teispeus=Teispeus", "ariaramnes=Ariaramnes", "arsamnes=Arsamnes", "hystaspes=Hystaspes", "darius-hystaspis=Darius", "xerxes=Xerxes"],
+  p03456: ["achaemenes=Achaemenidae", "cyrus-the-great=Cyrus the great", "cambyses=Cambyses", "smerdis=Smerdis", "reineccius=Reineccius"],
+  p03457: ["achaemenes=Achaemenes", "darius-of-the-first-race=Darius", "cyrus-the-first=Cyrus", "cambyses-father-of-cyrus=Cambyses", "atossa-wife-of-pharnaces=Atossa", "pharnaces=Pharnaces", "artystona=Artystona", "cyrus-the-great=Cyrus the Great", "cambyses=Cambyses", "smerdis=Smerdis"],
+  p03458: ["darius-hystaspis=Darius", "hystaspes=Hystaspes"],
+  p03459: ["elam=Elam", "shem=Sem", "elam=Elamitae", "elianus=Elianus", "elam=Elymae", "josephus=Iosephus", "elam=Elymi"],
+  p03460: ["suidas=Suidas", "asshur=Assur", "magog=Magog", "eusebius=Eusebius", "moses=Moses", "isaiah=Esay", "jeremiah=Ieremie", "ezekiel=Ezechiel", "daniel=Daniel", "esdras=Esdras", "jerome=Hierome", "elam=Elam", "elam=Elamitae"],
+  p03461: ["antiochus-iv-epiphanes=Antiochus", "alexander-the-great=Alexander", "thais=Thais"],
+  p03462: ["chedorlaomer=Chedorlaomer", "amraphel=Amraphel", "ninias=Ninias", "abraham=Abraham"],
 };
 
 export const B3_NEW = {
@@ -113,6 +160,30 @@ export const B3_NEW = {
   "nitocris-of-babylon": ["Nitocris of Babylon", "Nitocris, a famous Queene of Babylon in Herodotus, whom Raleigh takes for the sister of Euilmerodach if Nitocris were his sister, more cunning than Semiramis. She is not the Egyptian queen of the sixth dynastie. The one-word title would fold onto nitocris, so the title is three words.", "her"],
   carthusianus: ["Carthusianus", "Carthusianus, named with S. Augustine, Theodoret, and Lyra among those who did not doubt of Nebuchadnezzar his saluation.", "him"],
   mediana: ["Mediana", "Mediana, according to whom Nebuchadnezzar was changed in figure so that he appeared a beast. Raleigh does not follow that.", "him"],
+  achaemenes: ["Achaemenes", "Achaemenes, the sonne of Perses, of whose house Cyrus was, and from whom the Achaemenidae are named. Reineccius calls him the first King of Persia. The father named in that list is a gap and was not filled from Perses.", "him"],
+  perses: ["Perses", "Perses, the father of Achaemenes, who was Gouernour of Persia. The printed spelling is kept.", "him"],
+  hydaspes: ["Hydaspes", "Hydaspes, an ancient King of the Medes, whom Lactantius remembreth. He is not the riuer.", "him"],
+  "diocles-of-the-medes": ["Diocles of the Medes", "Diocles, who raigned 53 yeeres in Eusebius his list of the Kings of Media after Arbaces. He is not Diocles, cited by Iosephus on Nabuchodonosors siege of Tyre. The one-word title would fold onto diocles, so the title is four words.", "him"],
+  thallus: ["Thallus", "Thallus, named with Diodor and Castor among those from whom Iulius Affricanus takes the taking of Babylon, and again with Castor and Phlegon among those who find no Successour of Astyages but Cyrus.", "him"],
+  phlegon: ["Phlegon", "Phlegon, named with Castor and Thallus among the Writers who doe not finde any Successour of Astyages other than Cyrus.", "him"],
+  viginier: ["Viginier", "Viginier, a diligent and learned Historian of this age, who produceth reasons that Astyages had no such sonne as Cyaxares or Darius Medus.", "him"],
+  mandane: ["Mandane", "Mandane, the daughter of Astyages, by whom some say Cyrus was his Grand-child. She is not Mandanes the Median King. The printed spelling is kept.", "her"],
+  amytis: ["Amytis", "Amytis, the Daughter of Astyages, whom Ctesias sayeth Cyrus married after he had vanquished Astyages. The printed spelling is kept.", "her"],
+  "cambyses-father-of-cyrus": ["Cambyses father of Cyrus", "Cambyses, the father of Cyrus, whom Xenophon affirmeth was King of Persia, and who in Reineccius had Cyrus the Great. He is not the Cambyses who succeeded Cyrus, and not the Cambyses in the line by which Xerxes deriueth himselfe. The one-word title would fold onto cambyses, so the title is four words.", "him"],
+  "cambyses-of-xerxes-line": ["Cambyses of Xerxes line", "Cambyses, named between Achaemenes and Cyrus in the line by which Xerxes, in the seuenth of Herodotus, deriueth himselfe. He is not Cambyses the father of Cyrus the Great, and not the Cambyses who succeeded him. The one-word title would fold onto cambyses, so the title is four words.", "him"],
+  "cyrus-of-xerxes-line": ["Cyrus of Xerxes line", "Cyrus, named between Cambyses and Teispeus in the line by which Xerxes deriueth himselfe. He is not Cyrus the Great, and not Cyrus the first of that name in Reineccius his first race. The one-word title would fold onto the Cyrus already titled in one word, so the title is four words.", "him"],
+  "cyrus-the-first": ["Cyrus the first", "Cyrus, the first of that name, in Reineccius his first race of the Achaemenidae, who had Cambyses and Atossa. He is not Cyrus the Great, and not the Cyrus in the line by which Xerxes deriueth himselfe. The one-word title would fold onto the Cyrus already titled in one word, so the title is three words.", "him"],
+  teispeus: ["Teispeus", "Teispeus, named in the line by which Xerxes deriueth himselfe, between Cyrus and Ariaramnes. The printed spelling is kept.", "him"],
+  ariaramnes: ["Ariaramnes", "Ariaramnes, named in the line by which Xerxes deriueth himselfe, between Teispeus and Arsamnes. The printed spelling is kept.", "him"],
+  arsamnes: ["Arsamnes", "Arsamnes, named in the line by which Xerxes deriueth himselfe, between Ariaramnes and Hystaspes. The printed spelling is kept.", "him"],
+  hystaspes: ["Hystaspes", "Hystaspes, the father of that Darius who was chosen King after the Magi, and named in the line by which Xerxes deriueth himselfe. He is not Darius Hystaspes. The printed spelling is kept.", "him"],
+  "darius-of-the-first-race": ["Darius of the first race", "Darius, named in Reineccius his first race of the Achaemenidae, between Achaemenes and Cyrus the first of that name. He is not Darius the Mede, not Darius the sonne of Hystaspes, and not the Darius whom Alexander conquered. The one-word title would fold onto those records, so the title is five words.", "him"],
+  smerdis: ["Smerdis", "Smerdis, a sonne of Cyrus the Great, in whom with his brother Cambyses the issue male of that race fayled. A word after his name, of how his brother Cambyses dealt with him, is a gap and was not filled.", "him"],
+  "atossa-wife-of-pharnaces": ["Atossa wife of Pharnaces", "Atossa, daughter of Cyrus the first of that name, married to Pharnaces King of Cappadocia, and mother of Artystona. She is not Queene Atossa, whose desire moued Darius to warre against the Greekes. The one-word title would fold onto atossa, so the title is four words.", "her"],
+  pharnaces: ["Pharnaces", "Pharnaces, King of Cappadocia, who married Atossa the daughter of Cyrus the first of that name. The printed spelling is kept.", "him"],
+  artystona: ["Artystona", "Artystona, a daughter of Atossa and Pharnaces. The other daughters are unnamed and were not inuented. The printed spelling is kept.", "her"],
+  elianus: ["Elianus", "Elianus, who calls the people of Elam Elymae. The printed spelling is kept.", "him"],
+  thais: ["Thais", "Thais the Harlot, at whose request Alexander burnt the old Persepolis. The printed spelling is kept.", "her"],
 };
 
 export const B3_EVENTS = new Set([

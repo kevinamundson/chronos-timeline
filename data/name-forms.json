@@ -441,6 +441,21 @@
       ]
     },
     {
+      "id": "achaemenes",
+      "forms": [
+        {
+          "form": "Achaemenidae",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter II, §. IV, sig. 395b. The passage prints “Achaemenidae”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–II."
+        }
+      ]
+    },
+    {
       "id": "achestratus",
       "forms": [
         {
@@ -2684,6 +2699,46 @@
           "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_1#:~:text=after%20a%20reign%20of%20thirty%2Dfive%20years%2C%20Astyages%20lost",
           "source_text_id": "herodotus-rawlinson-wikisource",
           "note": "The passage is an English translation. The Greek letters of the ancient text are not entered."
+        },
+        {
+          "form": "Astiages",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter II, §. IV, sig. 395b. The passage prints “Astiages”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–II."
+        },
+        {
+          "form": "Apinia",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter II, §. II, sig. 394a. The passage prints “Apinia”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–II."
+        },
+        {
+          "form": "Aslyages",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter II, §. I, sig. 394a. The passage prints “Aslyages”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–II."
+        },
+        {
+          "form": "Astigas",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter II, §. II, sig. 394a. The passage prints “Astigas”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–II."
         }
       ]
     },
@@ -5147,6 +5202,26 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."
+        },
+        {
+          "form": "Darius Medus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter II, §. I, sig. 393b. The passage prints “Darius Medus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–II."
+        },
+        {
+          "form": "Darius of the Medes",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter I, §. V, sig. 385b–386a. The passage prints “Darius of the Medes”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–II."
         }
       ]
     },
@@ -5821,6 +5896,36 @@
           "source_text_id": "stepbible-tipnr",
           "scripture_ref": "Gen.10.22",
           "note": null
+        },
+        {
+          "form": "Elamitae",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter II, §. IV, sig. 396a. The passage prints “Elamitae”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–II."
+        },
+        {
+          "form": "Elymae",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter II, §. IV, sig. 396a. The passage prints “Elymae”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–II."
+        },
+        {
+          "form": "Elymi",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter II, §. IV, sig. 396a. The passage prints “Elymi”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–II."
         }
       ]
     },
@@ -10924,6 +11029,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book I, Part I, Chapters IX–XII."
+        },
+        {
+          "form": "Iulius Affricanus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter II, §. I, sig. 394a. The passage prints “Iulius Affricanus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters I–II."
         }
       ]
     },
