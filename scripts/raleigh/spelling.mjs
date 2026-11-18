@@ -567,7 +567,8 @@ function applyJ(s) {
 // hit cannot win over the stored name. Ianias stays: Cory's name, not I-for-J.
 // Ion stays: it is an English word, and the J form would be a different name.
 const KEEP_INITIAL_I = new Set(['ianias']);
-const KEEP_MODERN_I = new Set(['ion']);
+// Ionia is the region. A title word must not turn the printed I into J.
+const KEEP_MODERN_I = new Set(['ion', 'ionia']);
 const J_SPELLING = {
   iockshan: 'jokshan',
   iustine: 'justin',
@@ -684,6 +685,8 @@ const ETH_EXPLICIT = {
   inlargeth: 'enlarges',
   // "singeth" is sing. The stem singe is the dictionary verb to burn.
   singeth: 'sings',
+  // "forttieth" is the ordinal fortieth. The double t keeps it off the ordinal pattern, and the verb rule would make forties.
+  forttieth: 'fortieth',
 };
 
 const ETH_EXPLICIT_REASON = {
@@ -701,6 +704,7 @@ const ETH_EXPLICIT_REASON = {
   alledgeth: 'verb allege → alleges (the Frierly stuffe that hee alledgeth)',
   inlargeth: 'verb enlarge → enlarges (Iosephus, indeed, inlargeth the Storie)',
   singeth: 'verb sing → sings; the stem singe is the verb to burn (hee singeth as it were the Epithalamion)',
+  forttieth: 'ordinal fortieth, printed forttieth (the two and forttieth after their first returne)',
 };
 
 // Kept, and listed as unsure. The letters do not identify one modern verb.
