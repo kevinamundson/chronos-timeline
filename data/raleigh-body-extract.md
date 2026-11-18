@@ -732,3 +732,33 @@ Chapters XI–XIII were attached by hand in `scripts/raleigh/ch11-13-attach.mjs`
 New records kept apart from a record that shares the letters: `rezon` from `rezin`; `adad-of-damascus` from `hadad` and `hadarhezer`; `eliezer-of-damascus` from `eliezer-son-of-moses`; `joram-son-of-tohu` from `joram-king-of-israel`; `phul-belochus` from `tiglath-pileser-iii` and `belochus-priseus`; `darius-iii` from `darius-d31`; `tantalus-king-of-lydia` from `tantalus`; `perseus-son-of-danae` from `perseus`; `lynceus-argonaut` from `lynceus`; `iotham-son-of-gideon` from `jotham`; `helen-of-troy` from `helena-empress`; `ioash-father-of-gideon` from `ioas`; `abiram-son-of-chel` from `abiram`; `lycurgus-of-nemea` from `lycurgus`; `argus-son-of-phryxus` from `argus`; `polyphemus-argonaut`; `europe-mother-of-agamemnon` from `europa`. Talmai of Gessur stays on `tholmay-king-of-gessur`. Haomar stays on `haomarus`. Asa’s Benhadad stays on `benadad`. Achab’s Benhadad stays on `benhadad`. Hazael’s son stays on `ben-hadad-son-of-hazael`. See N78.
 
 These were not attached. Hercules (N33). The three unnamed Adads between Benhadad the third and Rezin. A second Hazael left on `hazael`. Gaps, including Gedaliah’s name in p02433, Ibzan in p02558, and Gaal in p02534. Mars, Pallas, Thetis, and the Sphinx. Isis. Baalberith. The nations, the cities, rivers, and mountains, and the headings. See N79.
+
+# Pass 15
+
+Range covered: Book II, Part I, Chapter XIV, sig. 277a, through Chapter XVII, §. X, sig. 302b. The headings are “CHAP. XIIII. Of the Warre of Troy.”, “CHAP. XV. Of SAMSON, ELI, and SAMVEL.”, “CHAP. XVI. Of SAVL.”, and “CHAP. XVII. Of DAVID.” One hundred eighty-six passages, p02572–p02757. Chapter XVIII, “CHAP. XVIII. Of SALOMON.”, opens on sig. 302b and was not entered. Two yeeres of the World are printed. 2848 is stored. 3046 is not. `year_bc_ad` stays null.
+
+## Statements written
+
+| Citation | Quote | Record |
+|---|---|---|
+| Book II, Part I, Chapter XVII, §. VIII, sig. 300a | Troy fell betweene the times of Abdon and Samson Iudges of Israel, about the worlds yeere 2848 | fall-of-troy (`year_am` 2848). His yeere of the World for the fall. The tier 1 sort stays −1184. |
+
+Every record keeps the sort it already had. The new people stay without a sort year. No calculated sort was written.
+
+## Figures that were not entered
+
+- Chapter XIV, §. I, sig. 279a: “the remainder of 780. yeeres, that is, 408. yeeres went betweene the destruction of Troy, and the first institution of tho[se games].” The 94th Olympiad. Rome in the first of the seventh Olympiad, “foure and twentie yeeres after the beginning of those games.” Iphitus, “480. yeeres later then the destruction of Troy.” Eratosthenes wanting one yeere. The tenne whole yeeres Troy stood (sig. 280a). The slain reckoned by Dares and Dyctis, aboue 600000 and more than 800000, against Homer’s lesse than 1200 saile and not much aboue 100000 men (sig. 283a).
+- Chapter XVI, §. V, sig. 289b–290a: Saul “gouerned Israel, together with Samuel 40. yeres, and by himselfe after Samuel 20. yeeres.” Dauid borne in the second yeere of Samuel, or the ninth, or the tenth, and “thirtie yeeres old when he began to reigne” (sig. 290b). The Heraclidae “commonly placed 140. yeeres after the warre of Troy, and 60. yeeres after the descent” (sig. 291a).
+- Chapter XVI, §. VII, sig. 291b–292a: “Paterculus reckons that Homer florished 950. yecres before the Consulship of Marcus Vinutius: which Mercator casteth vp in the worlds yeere 3046.” Another man’s reckoning. Not stored. About 260 yeeres after Troy, and about 250 before Rome. Troy fell “103. yeeres before Dauids time” (sig. 292a–292b). See N87.
+- Chapter XVII, §. IV, sig. 294b: six sonnes in Hebron “where he reigned 7 yeeres.” The Arke brought in “after three yeeres.” About seuen yeeres of quiet (sig. 298a–298b).
+- Chapter XVII, §. VIII, sig. 300a: “Dauid died in the yeere 2991.” The words are “in the yeere,” not “yeere of the World.” Not stored. See N87.
+- Chapter XVII, §. X: an Assyrian king from about the 13th yeere of Dauid for 38 yeeres; Labotes in the thirteenth yeere of Salomon; Sibylla Erythraea “seuen hundred and fourtie yeeres before Christ borne”; Carthage placed in the 31st yeere of Dauid and rejected; Hiram’s twelfth yeere, when “Salomon began the worke of the Temple”; Dauid’s “seuen yeeres in Hebron.”
+- Counts of men, foreskinnes, priests, and talents. See N88.
+
+## Names
+
+Chapters XIV–XVII were attached by hand in `scripts/raleigh/ch14-17-attach.mjs`. A tribe is on its patriarch: `judah`, `benjamin`, `levi`, `simeon`, `ephraim`, `gad`. A printed spelling that is already the title or a stored form of another record was not added as a name form. See N83.
+
+New records kept apart from a record that shares the letters: `teucer` and `teucer-son-of-telamon`; `aiax-son-of-oileus` from `aiax`; `ida-parent-of-teucer` from `ida`; `phoenix-tutor-of-achilles` from `phoenix`; `thoas-at-troy` from `thoas`; `proteus-of-egypt` from `proetus`; `pyrrhus-son-of-achilles` from `pyrrhus`; `euripilus` from `euripylus`; `iosua-of-bethshemesh` from `iosua`; `eleazar-son-of-abinadab` from `eleazar`; `hannah` from both Annas; `leui-ben` from `levi`; `joel-son-of-samuel` from the prophet called Ioel; `abijah-son-of-samuel` from `abijah-of-judah`; `gad-the-seer` from `gad`; `abimelech-of-nob` and `abimelech-of-gerar-ii` from `abimelech-of-gerar`; `diomedes-of-thrace` from `diomedes`; `solinus-of-aegialia` from `solinus`; `asclepius-the-physician` from `asclepius`; `charles-the-emperour` from the other Charles records; `abinadab` from `aminadab`; `shimei` from `simei-over-the-vineyards`; `adad-of-damascus` from `hadad`. Mnestheus stays on `mnestheus`. Ion stays on `ion`. Deucalion father of Hellen stays on `deucalion`. Hesion in Helicon stays on `hesiod`. Vriah stays on `urias-the-hittite`. The fisher Iacob stays on `james`. Ioas King of Iuda stays on `joash-of-judah`. Manasse King of Iuda stays on `manasses`. Xerxes stays on `xerxes`. Abias in the prophet list stays on `ahijah`. Acastus the second Athenian prince stays on `agastus`, not the new `acastus`. See N84.
+
+These were not attached. Hercules (N33). Mars, Minerua, Pallas, Proserpina, and Pan. The drowned Aiax in p02608, because the father’s name is a gap. The second founder beside Teucer, Dardanus’s daughter, the sonne of Poean, Antenor’s sonnes, and the other gaps. The Heraclidae, the Dores, the Ionians, the Amazons, the Philistims, the Adads, and the sonnes of Korah, as groups. The nations, the cities, rivers, and mountains, and the headings. See N85.

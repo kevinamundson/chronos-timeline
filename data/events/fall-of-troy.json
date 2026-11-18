@@ -107,6 +107,17 @@
       "link": "https://texts.earlyprint.org/works/A10357.xml",
       "source_text_id": "raleigh-history-of-the-world-1617",
       "note": "Body intake. How many yeeres after the Exodus he says Troy was cast down. Not a yeere of the World, and not converted into a year. year_am stays null. This does not change the sort."
+    },
+    {
+      "source": "raleigh-history-of-the-world",
+      "date": "Troy fell betweene the times of Abdon and Samson Iudges of Israel, about the worlds yeere 2848",
+      "year_am": 2848,
+      "year_bc_ad": null,
+      "precision": "year",
+      "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XVII, §. VIII, sig. 300a",
+      "link": "https://texts.earlyprint.org/works/A10357.xml",
+      "source_text_id": "raleigh-history-of-the-world-1617",
+      "note": "Body intake. His yeere of the World for the fall of Troy. The same sentence says Dauid died in the yeere 2991, which is not a yeere of the World and is not stored. This does not change the sort."
     }
   ],
   "people": [

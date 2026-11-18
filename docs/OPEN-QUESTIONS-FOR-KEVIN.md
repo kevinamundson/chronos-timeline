@@ -2055,6 +2055,83 @@ Pass 14 read Book II, Part I, Chapters XI–XIII, and stopped at the end of Chap
   2. Name an existing event that should receive one of them. Or say how you want years after Christ handled.
 - **Recommendation:** option 1 for the counts. Option 2 is for you to decide for the years after Christ.
 
+Pass 15 read Book II, Part I, Chapters XIV–XVII, and stopped at the end of Chapter XVII. The quotes are in `data/raleigh-body-extract.md`. N1 through N82 stay open.
+
+### N83. Chapters XIV–XVII were attached by hand, and the tribes go to the patriarchs
+
+- **Why it matters:** Chapter XIV is the war of Troy. Chapter XV is Samson, Eli, and Samuel. Chapter XVI is Saul. Chapter XVII is David. They print most cities, rivers, and mountains in capitals. The automatic linker would have made people of places and headings. So `scripts/raleigh/ch14-17-attach.mjs` names each person or event on each passage by hand. Names not in that table are not attached. A passage that names a tribe is on the patriarch: `judah`, `benjamin`, `levi`, `simeon`, `ephraim`, `gad`. The cities, rivers, and mountains were not made people. A spelling that is already the title or a stored form of another record is not added as a name form. Darius stays a form of `darius-i`. Iosua stays a form of `iosua`. Abimelech, Aminadab, Ioel, Ioas, Eleazar, and Pyrrhus were not copied onto the new men who share those letters.
+- **Options:**
+  1. Leave the tribes on the patriarchs, as now.
+  2. Make a separate record for each tribe, and move the land passages there.
+- **Recommendation:** option 1. It matches N59, N65, N71, and N77.
+
+### N84. Men who share a name in these chapters
+
+- **Why it matters:** Each was kept apart only where the passage says which man it means.
+  - **Teucer:** Teucer the founder is `teucer`. Teucer the sonne of Telamon is `teucer-son-of-telamon`.
+  - **Aiax:** Aiax the sonne of Telamon stays on `aiax`. Aiax the sonne of Oileus is `aiax-son-of-oileus`. The drowned Aiax in p02608 is not attached. The father’s name is a gap.
+  - **Ida:** Ida, parent of Teucer the founder, is `ida-parent-of-teucer`. Ida who found iron stays on `ida`.
+  - **Phoenix:** Phoenix, Tutor of Achilles, is `phoenix-tutor-of-achilles`. Phoenix the father of Europa stays on `phoenix`.
+  - **Thoas:** Thoas at Troy is `thoas-at-troy`. Thoas the Lemnian stays on `thoas`.
+  - **Proteus:** Proteus, then King of Egypt, is `proteus-of-egypt`. Praetus of the Argiues stays on `proetus`.
+  - **Pyrrhus:** “Pyrrhus the sonne of Achilles” is `pyrrhus-son-of-achilles`. Pyrrhus of Macedon stays on `pyrrhus`. The form Pyrrhus was not copied.
+  - **Euripilus:** Euripilus in the Greeke catalogue at Troy is `euripilus`. Eurypylus sonne of Mecisteus, one of the Epigoni, stays on `euripylus`.
+  - **Iosua:** One Iosua of the place the gap leaves unnamed, in whose field the kine stood, is `iosua-of-bethshemesh`. Iosua who led Israel stays on `iosua`. Bethshemesh is named earlier in the same passage. The gap was not filled.
+  - **Eleazar:** Eleazar sonne of Abinadab is `eleazar-son-of-abinadab`. Eleazar sonne of Aaron stays on `eleazar`.
+  - **Hannah:** Hannah, also Hanna, mother of Samuel, is `hannah`. She is not Anna the mother of Mary and not Anna the sister of Dido.
+  - **Leui Ben:** Leui Ben, whose surname is a blank, is `leui-ben`. Leui who had three sonnes stays on `levi`.
+  - **Ioel and Abijah:** Samuel’s sonnes are `joel-son-of-samuel` and `abijah-son-of-samuel`. The form Ioel stays on the Iudaean prophet. Abijah king of Iuda stays on `abijah-of-judah`.
+  - **Gad:** Gad the Prophet in Dauid’s time is `gad-the-seer`. Gad the sonne of Iacob, and the tribe, stay on `gad`.
+  - **Abimelech:** The priest of Nob is `abimelech-of-nob`. The first, who loued Sara, stays on `abimelech-of-gerar`. “The second Abimelech” who liued with Isaac is `abimelech-of-gerar-ii`.
+  - **Diomedes and Solinus:** Diomedes King of Thrace is `diomedes-of-thrace`. Diomedes sonne of Tydeus stays on `diomedes`. Solinus who raigned in Aegialia is `solinus-of-aegialia`. The writer stays on `solinus`.
+  - **Asclepius:** “one Asclepius a Physician” is `asclepius-the-physician`. The earlier Asclepius stays on `asclepius`.
+  - **Abinadab:** Abinadab, also printed Aminadab where Vzzah is his sonne, is `abinadab`. Aminadab Prince of Iuda stays on `aminadab`. The form Aminadab was not copied.
+  - **Shimei:** Shimei, also Semei, who fetched his seruant, is `shimei`. Simei ouer the vineyards is `simei-over-the-vineyards`.
+  - **Adad:** Adad, king of Damascus, is `adad-of-damascus`. The yong Adad of Idumaea stays on `hadad`. Adadezer stays on `hadarhezer`.
+  - **Acastus:** Acastus sonne of Pelias is `acastus`. Acastus the second Athenian prince stays on `agastus`.
+  - **Left on the existing man:** Mnestheus and Mnesteus on `mnestheus`. Ion the Athenian on `ion`. Deucalion father of Hellen on `deucalion`. Hesion in Helicon on `hesiod`. Vriah on `urias-the-hittite`. The fisher Iacob on `james`, and Iohn with him on `john-the-apostle`. Ioas King of Iuda on `joash-of-judah`. Manasse King of Iuda on `manasses`. Xerxes against the Graecians on `xerxes`. Abias in the prophet list on `ahijah`, not on `ahia-silonites`. Iphitus, whom Solinus calleth Iphiclus, is one man, `iphitus`. Senyes, or Senemires, is one king, `senyes`.
+- **Options:**
+  1. Leave these as they are.
+  2. Name a passage that should move to another record, or two records that should merge.
+- **Recommendation:** option 1. A silent merge would attach a different man.
+
+### N85. Names that were not attached in these chapters
+
+- **Why it matters:** Hercules stays unlinked (N33), including the arrowes of Hercules and the labours. Mars, Minerua, Pallas, Proserpina, and the great god Pan were not made people. The drowned man in p02608 is printed “Aiax the sonne 〈◊ 〉” and was not attached to either Aiax. Other gaps were not filled: the second founder beside Teucer, Dardanus’s daughter, the sonne of Poean, Antenor’s sonnes, Samson’s father and mother, the Gyant in p02648, and the Kings of Ascalon and Gaza. The Heraclidae, the Dores, the Ionians, the Amazons, the Philistims, the Adads, the Agidae, the Medontidae, the Silvii, and the sonnes of Korah were not split into individuals. The nations, the cities, rivers, and mountains, and the headings, were not made people. Xanthus and Simois are riuers. Odysses in p02590 is Homer’s book.
+- **Options:**
+  1. Leave these unattached, as now.
+  2. Name the man for a passage, and it will be attached.
+- **Recommendation:** option 1, unless you know the man.
+
+### N86. The worlds yeere 2848
+
+- **Why it matters:** “Troy fell betweene the times of Abdon and Samson Iudges of Israel, about the worlds yeere 2848 and Dauid died in the yeere 2991.” 2848 is stored on `fall-of-troy` with `year_am` 2848. That event already has a tier 1 sort (−1184), so no calculated sort was written. `year_bc_ad` stays null.
+- **Options:**
+  1. Leave 2848 on `fall-of-troy`, as now.
+  2. Move it, or store it on `trojan-war` as well.
+- **Recommendation:** option 1. The sentence is the fall of Troy.
+
+### N87. 2991 and Mercator’s 3046 were not stored
+
+- **Why it matters:** The same sentence says “Dauid died in the yeere 2991.” It does not say yeere of the World. Dauid’s table row already has a start and a length. 2991 was not stored. Paterculus’s 950 yecres before Marcus Vinutius, “which Mercator casteth vp in the worlds yeere 3046,” is another man’s reckoning for Homer. It was not stored, on the same rule as Ianus 2717.
+- **Options:**
+  1. Leave both unstored, as now.
+  2. Store 2991 on `david`, or 3046 on `homer`, as `year_am`.
+- **Recommendation:** option 1. One is not a yeere of the World. The other is Mercator’s sum, not Raleigh’s.
+
+### N88. Figures in these chapters that have no event
+
+- **Why it matters:** A new event cannot take a sort year from Raleigh. These figures were not entered.
+  - 780 and 408 yeeres between Troy and the Olympiads; the 94th Olympiad; Rome 24 yeeres into the seventh Olympiad; Iphitus 480 yeeres after Troy; the tenne yeeres of the siege.
+  - Dares and Dyctis on the slain, aboue 600000 and more than 800000, against Homer’s lesse than 1200 saile and about 100000 men.
+  - Saul’s 40 yeres with Samuel and 20 after; Dauid’s birth in the second, ninth, or tenth yeere of Samuel, and his age of thirtie; the Heraclidae at 140 and 60 yeeres; Homer’s 950 yecres, about 260 after Troy and about 250 before Rome; Troy 103 yeeres before Dauid.
+  - Dauid’s 7 yeeres in Hebron; the Arke after three yeeres; about seuen yeeres of quiet; an Assyrian reign of 38 yeeres from Dauid’s 13th; Labotes in Salomon’s 13th; Sibylla 740 yeeres before Christ; Carthage in Dauid’s 31st, which he rejects; Hiram’s 12th yeere and the Temple.
+  - Counts: the 4000 and 30000 at the taking of the Arke; the 85 priests of Nob; the hundred foreskinnes; Ioab’s thousands and the thousand talents.
+- **Options:**
+  1. Leave these without a new event, as now.
+  2. Name an existing event that should receive one of them.
+- **Recommendation:** option 1.
+
 ## O. Dynasty of Slaves (BLK SHP Scott, 2026)
 
 Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record of Israel in Egypt* (BLK SHP Publishing, 2026; Kindle Direct Publishing). eBook ISBN 979-8-9960110-3-2; softcover 979-8-9960110-0-1; hardcover 979-8-9960110-2-5; audiobook 979-8-9960110-1-8. © the author, all rights reserved. The dated statements are in `data/dynasty-of-slaves-dates-extract.md`. The chronology `dynasty-of-slaves` is display only. It does not set a sort year. Citations are chapter and section. The edition has no printed page numbers.
