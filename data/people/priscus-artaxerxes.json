@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "priscus-artaxerxes",
+  "type": "person",
+  "title": "Priscus Artaxerxes",
+  "summary": "Raleigh names Priscus Artaxerxes in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Priscus Artaxerxes, in Metasthenes his catalogue of the Persian Kings, whom Melancthon calls Artaxerxes Assuerus, set in the place of Darius the sonne of Hystaspes. He was not equated with that Darius, and he is not Artaxerxes Longimanus. The one-word title would fold onto Artaxerxes, so the title is two words. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book III, Part I, Chapter IV, §. I, sig. 402a"
+    }
+  ],
+  "alt_names": [
+    "Artaxerxes Assuerus"
+  ]
+}

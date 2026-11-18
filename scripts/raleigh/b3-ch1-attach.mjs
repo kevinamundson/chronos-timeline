@@ -24,7 +24,7 @@
 // Nitocris of Babylon is not the Egyptian nitocris.
 
 /** Chapters of Book III whose passages are attached only from this table. */
-export const B3_CHAPTERS = new Set(['1', '2', '3']);
+export const B3_CHAPTERS = new Set(['1', '2', '3', '4']);
 
 export const B3 = {
   // Chapter I. The time between the destruction (gap) and the fall of the Assyrian Empire.
@@ -216,6 +216,66 @@ export const B3 = {
   p03519: ["cyrus-the-great=Cyrus", "xenophon=Xenophon", "cambyses=Cambyses", "smerdis=Smerdis", "smerdis=Tanaoxares", "herodotus=Herodotus", "justin=Iustine"],
   p03520: ["cyrus-the-great=CYRVS", "atossa=ATOSSA", "hester=HESTER"],
   p03521: ["cyrus-the-great=CYRVS", "cambyses=Cambyses", "smerdis=Smerdis", "atossa=Atossa", "meroe=Meroe", "artystona-daughter-of-cyrus=Artystona", "ctesias=Ctesias", "amytis-daughter-of-cyrus=Amytis", "darius-hystaspis=Darius Hystaspes", "hystaspes=Hystaspes", "darius-hystaspis=Darius", "xerxes=Xerxes", "aman=Aman", "josephus=Iosephus", "amalek=Amalekite", "artaxerxes-longimanus=Artaxerxes Longimanus", "codoman=Codoman", "hester=Hadassa", "hester=Esther"],
+
+  // Chapter IV. The printed head is “CHAP. I III.” p03522–p03568.
+  // Priscus Artaxerxes is also Artaxerxes Assuerus. He is not Darius Hystaspes.
+  // Darius Longimanus is not Artaxerxes Longimanus.
+  // Ataxerxes Ochus and Artaxerxes Ochus are the Persian ochus.
+  // Arses or Arsames is arses, not arsamnes.
+  // Darius the last is darius-iii. Ahassuerus in Ezra is a name of darius-hystaspis.
+  // Arthasasta is a name of artaxerxes-longimanus where the passage equates them.
+  // The gapped Darius in p03532 is not attached.
+  // Amyrtoeus is Ctesias his name for Psammenitus, not the Cory amyrteos.
+  // Smerdis the Magus is not the son of Cyrus. Sphendanes is Patizites. Cimerdius is the Magus.
+  // The riuer later called Orontes is not a person. Nilus is the riuer.
+  // Lybia is the land. Iupiter Ammon is iupiter. The nation Ammon is not attached.
+  p03522: ["cyrus-the-great=CYRVS", "darius-hystaspis=DARIVS"],
+  p03523: [],
+  p03524: ["cyrus-the-great=Cyrus", "metasthenes=Metasthenes"],
+  p03525: ["darius-the-mede=Darius Medus", "cyrus-the-great=Cyrus", "priscus-artaxerxes=Priscus Artaxerxes", "darius-longimanus=Darius Longimanus", "darius-nothus=Darius Nothus", "artaxerxes-mnemon=Artaxerxes Mnemon", "ochus=Ataxerxes Ochus", "arses=Arses", "arses=Arsames", "darius-iii=Darius the last", "alexander-the-great=Alexander"],
+  p03526: ["philo=Philo", "cambyses=Cambyses", "xerxes=Xerxes", "priscus-artaxerxes=Artaxerxes Assuerus", "melanchthon=Melancthon", "darius-hystaspis=Darius the sonne of Hystaspes", "hystaspes=Hystaspes", "metasthenes=Metasthenes", "cyrus-the-great=Cyrus"],
+  p03527: ["seder-ollam-rabbi=Seder Olam"],
+  p03528: ["genebrard=Genebrard", "schubert=Schubert", "beroaldus=Beroaldus", "eusebius=Eusebius", "krentzhemius=Krentzheim"],
+  p03529: ["cyrus-the-great=Cyrus", "cambyses=Cambyses", "darius-hystaspis=Darius Hystaspes", "xerxes=Xerxes", "artaxerxes-longimanus=Artaxerxes Longimanus", "darius-nothus=Darius Nothus", "artaxerxes-mnemon=Artaxerxes Mnemon", "ochus=Artaxerxes Ochus", "arses=Arsames", "darius-iii=Darius the last"],
+  p03530: [],
+  p03531: ["cyrus-the-great=Cyrus", "peucer=Peucer"],
+  p03532: ["cambyses=Cambyses", "daniel=Daniel"],
+  p03533: ["darius-hystaspis=Darius Hystaspes", "darius-hystaspis=Ahassuerus"],
+  p03534: ["xerxes=Xerxes", "daniel=Daniel", "xerxes-invades-greece"],
+  p03535: ["artaxerxes-longimanus=Artaxerxes Longimanus", "artaxerxes-longimanus=Arthasasta"],
+  p03536: ["darius-nothus=Darius Nothus"],
+  p03537: ["artaxerxes-mnemon=Artaxerxes Mnemon", "ochus=Artaxerxes Ochus", "arses=Arsames", "darius-iii=Darius the last", "cyrus-the-great=Cyrus the Great", "xerxes=Xerxes", "atossa=Atossa"],
+  p03538: ["eusebius=Eusebius", "astyages=Astyages", "cyrus-the-great=Cyrus", "alyattes=Alyattes", "croesus=Croesus", "cambyses=Cambyses"],
+  p03539: ["ptolemy=Ptolomie", "alexander-the-great=Alexander the Great", "nabu-nasir=Nabonassar"],
+  p03540: ["ptolemy=Ptolomie", "nabu-nasir=Nabonassar", "cambyses=Cambyses"],
+  p03541: ["diodorus-siculus=Diodorus Siculus", "cambyses=Cambyses", "nabu-nasir=Nabonassar", "cyrus-the-great=Cyrus"],
+  p03542: ["darius-hystaspis=Darius", "cambyses=Cambyses", "ptolemy=Ptolomie", "nabu-nasir=Nabonassar", "nabu-nasir=Nabonassars", "josephus=Iosephus", "darius-the-mede=Darius Medus", "xenophon=Xenophon", "darius-the-mede=Cyaxares", "cyrus-the-great=Cyrus", "fall-of-babylon-539-bc"],
+  p03543: [],
+  p03544: ["cambyses=CAMBYSES"],
+  p03545: ["cambyses=Cambyses", "cyrus-the-great=Cyrus", "ctesias=Ctesias"],
+  p03546: ["diodorus-siculus=Diodor", "eusebius=Eusebius", "psammenitus=Psammenitus", "cambyses"],
+  p03547: ["herodotus=Herodotus", "ctesias=Ctesias", "cambyses=Cambyses", "amasis-ii=Amasis", "nitetis=Nitetis", "apries=Apries"],
+  p03548: ["cambyses=Cambyses", "amasis-ii=Amasis", "psammenitus=Psammenitus", "psammenitus=Amyrtoeus", "ctesias=Ctesias", "herodotus=Herodotus"],
+  p03549: [],
+  p03550: ["cambyses=Cambyses", "cyrus-the-great=Cyrus", "herodotus=Herodotus", "thucydides=Thucydides", "inarus=Inarus", "xerxes=Xerxes", "artaxerxes-longimanus=Artaxerxes"],
+  p03551: ["psammenitus=Psammenitus", "cambyses=Cambyses", "amasis-ii=Amasis"],
+  p03552: ["cambyses=CAMBYSEs"],
+  p03553: ["cambyses=Cambyses", "euelthon=Euelthon"],
+  p03554: ["cambyses=Cambyses", "jupiter=Iupiter"],
+  p03555: [],
+  p03556: ["smerdis=Smerdis", "smerdis-the-magus=Smerdis the Magus", "praxaspes=Praxaspes", "meroe=Meroe", "nauclerus=Nauclerus", "sisamnus=Sisamnus", "cambyses=Cambyses"],
+  p03557: ["praxaspes=Praxaspes", "praxaspes=PRAXASPES", "cambyses=Cambyses"],
+  p03558: ["patizites=Patizites", "patizites=Sphendanes", "smerdis-the-magus=Cimerdius", "smerdis=Smerdis", "cambyses"],
+  p03559: ["cambyses=Cambyses", "cyrus-the-great=Cyrus", "atossa=Atossa", "meroe=Meroe", "zonaras=Zonaras", "jerome=Hierome", "pantaptes=Pantaptes", "orontes=Orontes"],
+  p03560: ["cambyses", "meroe=Meroe"],
+  p03561: ["cambyses=CAMBYSES", "darius-hystaspis=DARIVS"],
+  p03562: ["cyrus-the-great=CYRVS", "smerdis-the-magus=Smerdis", "otanes=Otanes", "intaphernes=Intaphernes", "gobrias=Gobrias", "megabysus=Megabysus", "asphatines=Asphatines", "hidarnes=Hidarnes", "darius-hystaspis=Darius", "justin=Iustine", "asphatines=Asphalines", "herodotus=Herodotus"],
+  p03563: ["otanes=Otanes", "cambyses=Cambyses"],
+  p03564: ["megabysus=Megabysus"],
+  p03565: [],
+  p03566: ["darius-hystaspis=Darius"],
+  p03567: ["darius-hystaspis=Darius", "oebarus=Oebarus"],
+  p03568: ["plato=Plato", "darius-hystaspis=Darius", "herodotus=Herodotus"],
 };
 
 export const B3_NEW = {
@@ -275,6 +335,26 @@ export const B3_NEW = {
   "artystona-daughter-of-cyrus": ["Artystona daughter of Cyrus", "Artystona, a daughter of Cyrus the Great, whom Darius Hystaspes obtained. She is not Artystona, the daughter of Atossa and Pharnaces. The one-word title would fold onto artystona, so the title is four words.", "her"],
   "amytis-daughter-of-cyrus": ["Amytis daughter of Cyrus", "Amytis, whom Ctesias addeth to the issue of Cyrus the Great. She is not Amytis, the Daughter of Astyages, whom the same Ctesias sayeth Cyrus married. The one-word title would fold onto amytis, so the title is four words.", "her"],
   aman: ["Aman", "Aman, whom the old translation calleth a Macaedonian, and whom Iosephus findes to be an Amalekite. Some supposed that his intent against the Iewes moued Atossa against Greece. He was not made Hester. The printed spelling is kept.", "him"],
+  "priscus-artaxerxes": ["Priscus Artaxerxes", "Priscus Artaxerxes, in Metasthenes his catalogue of the Persian Kings, whom Melancthon calls Artaxerxes Assuerus, set in the place of Darius the sonne of Hystaspes. He was not equated with that Darius, and he is not Artaxerxes Longimanus. The one-word title would fold onto Artaxerxes, so the title is two words.", "him"],
+  "darius-longimanus": ["Darius Longimanus", "Darius Longimanus, in Metasthenes his catalogue, who is giuen 37 yeares. He is not Artaxerxes Longimanus, and not Darius Nothus. The one-word title would fold onto the men titled Darius, so the title is two words.", "him"],
+  peucer: ["Peucer", "Peucer, who in his historicall Animaduersions gathered the places of Scripture for the Persian Kings. The printed spelling is kept.", "him"],
+  schubert: ["Schubert", "Schubert, named with Genebrard and Beroaldus for a differing account of the Persian Kings from the Greekes. The printed spelling is kept.", "him"],
+  nitetis: ["Nitetis", "Nitetis, the daughter of Apries, whom Amasis presented to Cambyses in stead of his owne daughter. The printed spelling is kept.", "her"],
+  inarus: ["Inarus", "Inarus, the Sonne of Psammenitus, who caused the Aegyptian to reuolt from Xerxes and Artaxerxes. The printed spelling is kept.", "him"],
+  euelthon: ["Euelthon", "Euelthon, King of a gapped place, whom Cambyses constrained to acknowledge him. The place is a gap and was not filled. The printed spelling is kept.", "him"],
+  praxaspes: ["Praxaspes", "Praxaspes, the fauourite of Cambyses, charged to murther Smerdis, and whose sonne Cambyses shot. The sonne is unnamed and was not inuented. The printed spelling is kept.", "him"],
+  sisamnus: ["Sisamnus", "Sisamnus, one of the Iudges of Cambyses, flayed for an vniust iudgement. His sonne, who receiued the office, is unnamed and was not inuented. The printed spelling is kept.", "him"],
+  patizites: ["Patizites", "Patizites, one of the Magi, also written Sphendanes, who with Smerdis the Magus possest the Empire. The author of those other names is a gap and was not filled.", "him"],
+  pantaptes: ["Pantaptes", "Pantaptes, a Daughter whom Zonaras out of Hierome giues to Cambyses. The printed spelling is kept.", "her"],
+  orontes: ["Orontes", "Orontes, a sonne whom Zonaras out of Hierome giues to Cambyses, drowned in the Riuer Ophites. The riuer was afterward called Orontes, and was not made a second person. The name of him who drowned the Prince is a gap and was not filled.", "him"],
+  otanes: ["Otanes", "Otanes, one of the seuen Princes who rooted out the Magi, and who did not fancie any election of Kings. The printed spelling is kept.", "him"],
+  intaphernes: ["Intaphernes", "Intaphernes, one of the seuen Princes. Iustine saith he was slaine; Herodotus, that he was only wounded. The printed spelling is kept.", "him"],
+  gobrias: ["Gobrias", "Gobrias, one of the seuen Princes who rooted out the Magi. The printed spelling is kept.", "him"],
+  megabysus: ["Megabysus", "Megabysus, one of the seuen Princes, who held that the tyrannie of a multitude was thrice more intolerable than that of one. The printed spelling is kept.", "him"],
+  asphatines: ["Asphatines", "Asphatines, also printed Asphalines, one of the seuen Princes. Iustine saith he was slaine; Herodotus, that he was only wounded. The two spellings were left as one man.", "him"],
+  hidarnes: ["Hidarnes", "Hidarnes, one of the seuen Princes who rooted out the Magi. The printed spelling is kept.", "him"],
+  oebarus: ["Oebarus", "Oebarus, Master of the horse to Darius, who caused the horse to couer a Mare so that Darius his horse first brayed. The printed spelling is kept.", "him"],
+  "smerdis-the-magus": ["Smerdis the Magus", "Smerdis the Magus, also written Cimerdius, the counterfait of Smerdis the Kings brother, who with Patizites possest the Empire. He is not Smerdis the sonne of Cyrus. The one-word title would fold onto smerdis, so the title is three words.", "him"],
 };
 
 export const B3_EVENTS = new Set([
@@ -288,4 +368,5 @@ export const B3_EVENTS = new Set([
   "return-under-zerubbabel",
   "temple-rebuilding-begins",
   "second-temple-completed",
+  "xerxes-invades-greece",
 ]);
