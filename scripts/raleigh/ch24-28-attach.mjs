@@ -102,6 +102,85 @@ export const CH24_28 = {
   p03163: ["gyges=Gyges", "ardys=Ardys", "sadyattes=Sadyattes", "alyattes=Halyattes", "croesus=Croesus", "cyrus-the-great=Cyrus"],
   p03164: ["croesus=Croesus"],
   p03165: ["candaules=Candaules"],
+
+  // Chapter XXVI. Kings of Egypt between the deliverance and Ezekia. p03166–p03221.
+  // Israelites, Israelite, and ISRAEL are not Jacob. The land of Canaan is not
+  // the son of Ham. Nilus the riuer is not a man. Lydia and the Lydians are not
+  // Lud. Larthes, Antonini, Eddaguadare, and Amir Cabir are titles or offices.
+  // The gapped Earle of Caesarea is not Hugh: Hugh is named only on p03176.
+  // Thuoris is thuoris, not tausret. Amenophis and Ramesses and Ramses are the
+  // Raleigh records. Zethus the Egyptian alias is sethosis, not the Greek zethus.
+  // Myris or Meris is kept apart from Armeus and from Thermutis. The spelling
+  // Meris stays on thermutis. Acencheres stays on thermutis. Orus the second is
+  // busiris. Lynceus is the sonne of Aegyptus. Iohn Leo is not the Apostle.
+  // Tonephersobis is tanephersobris. Senemures, Senepos, Senyes, and Euenes are
+  // senyes. Banchyris is kept apart from Bocchorus. Chabreus is kept apart from
+  // Cheops. Smendis is smedes, on the printed "if". Psammeticus and Psammiticus
+  // are psammetichus-i, not psammis. So and Sua are so-king-of-egypt. Sabacus
+  // stays on sabacus-the-ethiopian. Amysis is anysis. Tarachus, Tirhaka, and
+  // Tirhaca are tirhakah. Tiglath Phulassar is one surface. Phul himselfe is
+  // phul-belochus. Perseus among Iupiters sonnes is perseus-son-of-danae.
+  // Ioram King of Israel is joram-king-of-israel. Helen is helen-of-troy.
+  // Nimrod called Orion, and Faunus called Mercurie, are the two records each,
+  // and the second name is not copied onto the first. Serapis is a god, as
+  // Nesroch was. Deuill, Onyon, Cat, and Hercules are not attached. Reign
+  // lengths are not stored. The only events are on p03217.
+  p03166: ["hezekiah=EZEKIA", "judah=Juda", "judah=Iuda"],
+  p03167: ["william-of-tyre=WILLIAM of Tyre"],
+  p03168: ["cham=Cham", "noah=Noah", "orus=Orus", "joseph=Ioseph", "diodorus-siculus=Diodorus"],
+  p03169: ["abraham=Abraham", "christ=Christ", "william-of-tyre=William Archbishop of Tyre"],
+  p03170: ["elhadech=Elhadech", "dargan=Dargan", "sanar=Sanar", "amalricke=Amalricke", "noradine=Noradine", "syracon=Syracon"],
+  p03171: ["elhadech=Elhadech", "syracon=Syracon", "sanar=Sanar", "amalricke=Almaricke"],
+  p03172: ["elhadech=Elhadech", "syracon=Syracon", "mahomet=Mahomet", "sanar=Sanar", "amalricke=Almaricke"],
+  p03173: ["william-of-tyre=William of Tyre", "amalricke=Almaricke"],
+  p03174: ["amalricke=Almericke"],
+  p03175: ["pharaoh=Pharaoh", "joseph=Ioseph"],
+  p03176: ["joseph=Ioseph", "pharaoh=Pharaoh", "pharaoh=Pharaohs", "ptolemie-lagi=Ptolomaeus Lagi", "ptolemy-philadelphus=Philadelphus", "moses=Moses", "william-of-tyre=William of Tyre", "hugh-earl-of-caesarea=Hugh Earle of Caesarea"],
+  p03177: ["acherres=ACHERRES", "vchoreus=VCHOREVS", "osymandyas=OSYMANDYAS"],
+  p03178: ["diodorus-siculus=Diodorus", "herodotus=Herodotus", "eusebius=Eusebius", "annius=Annius", "osiris=Osiris", "isis=Isis", "orus=Orus", "reineccius=Reineccius"],
+  p03179: ["thuoris=Thuoris", "proteus-of-egypt=Proteus", "eusebius=Eusebius"],
+  p03180: ["chencres=Chenchres", "acherres=Acherres", "reineccius=Reineccius", "diodorus-siculus=Diodorus", "diodorus-siculus=Diodore", "osymandyas=Osymandyas", "osymandyas=OSYMANDYAS", "vchoreus=Vchoreus", "vchoreus=Ogdous", "timaus=Timaus", "gerardus-mercator=Mercator", "thermutis=Acencheres", "busiris=Orus the second", "manetho=Manethon", "josephus=Iosephus", "joseph=Ioseph", "orus=Orus", "pharaoh=Pharaoh"],
+  p03181: ["joseph=Ioseph", "acherres=Acherres", "orus=Orus", "vchoreus=Vchoreus", "gehoar=Gehoar", "elcain=Elcain"],
+  p03182: ["cherres=CHERRES", "armeus=ARMEVS", "ramesses=RAMESSES", "amenophis=AMENOPHIS", "myris=MYRIS"],
+  p03183: ["acherres=Acherres", "cherres=Cherres", "armeus=Armeus", "ramesses=Ramesses", "eusebius=Eusebius", "danaus=Danaus", "aegyptus=Aegyptus", "hypermnestra=Hypermnestra", "lynceus=Lynceus"],
+  p03184: ["armeus=Armeus", "danaus=Danaus", "ramesses=Ramesses", "aegyptus=Aegyptus", "reineccius=Reineccius", "myris=Myris", "myris=Meris", "sanar=Sanar", "pharaoh=Pharaoh", "joseph=Ioseph"],
+  p03185: [],
+  p03186: ["diodorus-siculus=Diodore", "herodotus=Herodotus", "myris=Myris", "armeus=Armeus", "manetho=Manethon", "armais=Armesis", "eusebius=Eusebius"],
+  p03187: ["ramesses=Ramesses", "amenophis=Amenophis", "gerardus-mercator=Mercator"],
+  p03188: [],
+  p03189: ["sethosis=SETHOSIS", "sethosis=Zethus", "amenophis=Amenophis", "sesostris=Sesostris", "reineccius=Reineccius", "heliogabalus=Heliogabalus"],
+  p03190: ["iohn-leo=Iohn Leo", "seladine=Saladine", "annius=Annius", "manetho=Manetho", "joseph=Ioseph", "vaphres=Vaphres", "sesac=Sesac"],
+  p03191: ["ramesses=Ramses", "sethosis=Zethus", "sethosis=Sethosis", "sesostris=Sesostris", "amenophis=Amenophis", "annemenes=Annemenes"],
+  p03192: ["thuoris=Thuoris", "proteus-of-egypt=Proteus", "herodotus=Herodotus", "helen-of-troy=Helena", "paris-of-troy=Paris", "menelaus=Menelaus", "helen-of-troy=Helen"],
+  p03193: ["proteus-of-egypt=Proteus", "cetes=Cetes", "thon=Thon", "menelaus=Menelaus"],
+  p03194: ["proteus-of-egypt=Proteus", "helen-of-troy=Helen", "neptune=Neptunes"],
+  p03195: ["remphes=Remphes", "proteus-of-egypt=Proteus", "diodorus-siculus=Diodore", "herodotus=Herodotus", "remphes=Ramsinitus"],
+  p03196: ["vaphres=VAPHRES", "sesac=SESAC", "cedrenus=CEDRENVS"],
+  p03197: ["tanephersobris=Tonephersobis", "suidas=Suidas", "senyes=Senemures", "senyes=Senepos", "macrobius=Macrobius", "senyes=Senyes", "senyes=Euenes", "banchyris=Banchyris", "thulis=Thulis", "serapis=Seraphis", "plessis=Plessis", "cedrenus=Cedrenus"],
+  p03198: ["suidas=Suidas", "cedrenus=Cedrenus", "thulis=Thulis"],
+  p03199: ["mizraim=Mizraim", "cham=Cham", "nimrod=Nimrod", "cush=Chus", "orion=Orion", "saturn=Saturne", "semiramis=Semiramis", "picus=Picus", "jupiter=Iupiter", "belus=Belus", "ninus=Ninus", "juno=Iuno", "jupiter=Iupiters", "faunus=Faunus", "perseus-son-of-danae=Perseus", "apollo=Apollo", "mercurius=Mercurie", "vulcan=Vulcan", "sol-son-of-vulcan=Sol", "sosis=Sosis", "osiris=Osiris", "orus=Orus", "thulis=Thules", "sesostris=Sesostris", "pharaoh=Pharao", "narecho=Narecho"],
+  p03200: ["cedrenus=Cedrenus"],
+  p03201: [],
+  p03202: ["vaphres=Vaphres", "solomon=Salomon", "sesac=Sesac", "rehoboam=Rehoboam", "clemens-alexandrinus=Clemens Alexandrinus", "eusebius=Eusebius", "david=Dauid", "solomon=Salomons", "smedes=Smendis"],
+  p03203: ["sesac=Sesac", "iehoiakim=Iehoiakim", "judah=Iuda", "pharaoh=Pharao", "neco=Neco", "solomon=Salomons", "rehoboam=Rehoboam", "ioas=Ioas", "crassus=Crassus"],
+  p03204: ["sesac=Sesac", "neco=Neco", "eusebius=Eusebius", "bocchorus=Bocchoris", "diodorus-siculus=Diodore", "plutarch=Plutarch", "isaiah=Esay", "pharaoh=Pharao", "pharaoh=Pharaoh", "iosias=Iosias", "joram-king-of-israel=Ioram", "salmanassar=Salmanassar", "hezekiah=Hezekia", "judah=Iuda"],
+  p03205: ["chemmis=CHEMMIS", "cheops=CHEOPS", "herodotus=HERODOTVS", "diodorus-siculus=DIODORVS SICVLVS", "rehoboam=REHOBOAM", "hezekiah=EZEKIA"],
+  p03206: ["chemmis=Chemmis", "chemmis=Chembis", "diodorus-siculus=Diodore", "sesac=Sesac", "augustus-caesar=Augustus Caesar"],
+  p03207: ["chemmis=Chemmis", "diodorus-siculus=Diodore", "cephrenes=Cephrenes", "chabreus=Chabreus", "herodotus=Herodotus", "cheops=Cheops"],
+  p03208: ["mycerinus=Mycerinus", "cephrenes=Cephrenes", "cheops=Cheops", "chemmis=Chemmis"],
+  p03209: ["bocchorus=Bocchorus", "mycerinus=Mycerinus", "diodorus-siculus=Diodore", "suidas=Suidas", "banchyris=Banchyris"],
+  p03210: ["bocchorus=Bocchorus", "sabacus-the-ethiopian=Sabacus", "diodorus-siculus=Diodore", "herodotus=Herodotus", "asychis=Asychis", "anysis=Anysis", "sethon=Sethon", "psammetichus-i=Psammeticus", "sesac=Sesac", "rehoboam=REHOBOAM", "pharaoh=Pharao", "neco=Neco", "iehoiakim=Iehoiakim", "sennacherib=Senacheribs", "rehoboam=Rehoboam"],
+  p03211: ["anysis=Amysis", "zonaras=Zonaras", "so-king-of-egypt=Sua", "so-king-of-egypt=So", "hosea=Hosea", "salmanassar=Salmanassar"],
+  p03212: ["tiglath-pileser-iii=Tiglath Phulassar", "salmanassar=Salmanassar", "phul-belochus=Phul", "so-king-of-egypt=So", "sabacus-the-ethiopian=Sabacus", "menahem=Menahem", "hosea=Hosea", "hezekiah=Ezekia", "sethon=Sethon", "herodotus=Herodotus", "diodorus-siculus=Diodorus", "isaiah=Esay", "anysis=Anysis"],
+  p03213: ["sethon=SETHON", "hezekiah=EZEKIA"],
+  p03214: ["sethon=Sethons", "asshur=Assur"],
+  p03215: ["pharaoh=Pharao", "hezekiah=Ezekia", "isaiah=Esay", "asshur=ASSVR", "judah=Iuda"],
+  p03216: ["sethon=Sethon", "isaiah=Esay"],
+  p03217: ["sennacherib=Sennacherib", "sethon=Sethon", "isaiah=Esay", "tirhakah=Tirhaca", "judah=Iuda", "sennacherib-besieges-jerusalem", "sennacherib-besieges-lachish", "angel-slays-the-assyrians"],
+  p03218: ["sennacherib=Sennacherib", "herodotus=Herodotus", "sethon=Sethon", "vulcan=Vulcans", "vulcan=Vulcan", "diodorus-siculus=Diodorus"],
+  p03219: ["sennacherib=Sennacherib", "herodotus=Herodotus", "vulcan=Vulcan", "sethon=Sethon", "serapis=Serapis", "isaiah=Esay"],
+  p03220: ["sethon=Sethon", "tirhakah=Tarachus", "tirhakah=Tirhaka", "sennacherib=Senacherib", "eusebius=Eusebius", "hezekiah=Ezekia", "cush=Chusites", "judah=Iuda"],
+  p03221: ["herodotus=Herodotus", "sethon=Sethon", "sethon=Sethons", "functius=Functius", "rehoboam=Rehoboam", "iehoiakim=Iehoiakim", "psammetichus-i=Psammiticus", "judah=Iuda"],
 };
 
 export const CH24_28_NEW = {
@@ -191,6 +270,30 @@ export const CH24_28_NEW = {
   iardana: ["Iardana", "Iardana, a bond-woman, by whom a sonne of Hercules, whose name is a gap, begat the line of Argon. The gap was not filled.", "her"],
   myrsus: ["Myrsus", "Myrsus, the father of Candaules.", "him"],
   dascylus: ["Dascylus", "Dascylus, the father of Gyges.", "him"],
+  dargan: ["Dargan", "Dargan, a powerfull and a subtile man, who made himselfe Soldan in Aegypt, chased away Sanar, and was slaine by treason.", "him"],
+  noradine: ["Noradine", "Noradine, King of Damasco, who sent an Armie of his Turkes, vnder Syracon, against the Soldan Dargan.", "him"],
+  amalricke: ["Amalricke", "Amalricke, also written Almaricke and Almericke, King of Ierusalem, who warred in Aegypt and aided the Soldan Sanar against the Turkes. The three spellings are one man.", "him"],
+  "hugh-earl-of-caesarea": ["Hugh Earle of Caesarea", "Hugh Earle of Caesarea, with whom William of Tyre had full discourse of the Caliphs estate. The Earle sent to the Caliph, whose name is a gap, was not filled, and was not equated with this Hugh.", "him"],
+  acherres: ["Acherres", "Acherres, the first of the Aegyptian Kings set downe after Chenchres, who perished in the Red Sea. Raleigh doth not affirme that he was Vchoreus.", "him"],
+  vchoreus: ["Vchoreus", "Vchoreus, whom Diodorus saith was the eighth from Osymandyas. Mercator takes Ogdous for another name of this man. Raleigh doth not affirme that Acherres was he.", "him"],
+  osymandyas: ["Osymandyas", "Osymandyas, a great King, whose monument Diodore describes, with the inscription, I am OSYMANDYAS King of Kings. The coniecture that the tombe might be Iosephs is reported, and this man is kept.", "him"],
+  timaus: ["Timaus", "Timaus, whom Reineccius coniectures to haue beene the great Osymandyas. Raleigh finds the distance against that coniecture, and the two names are kept apart.", "him"],
+  gehoar: ["Gehoar", "Gehoar, Lieutenant vnto the Caliph Elcain, who built the great Citie of Cairo and named it El Cahira. Raleigh names him as such a King as might haue built Memphis.", "him"],
+  elcain: ["Elcain", "Elcain, the Caliph, to whose vse Gehoar conquered Aegypt and built Cairo.", "him"],
+  myris: ["Myris", "Myris, also written Meris, who caused the great Lake to be made which beares his name. Reineccius takes Armeus to haue beene this man. Raleigh doth not follow that, and this Myris is not Thermutis.", "him"],
+  heliogabalus: ["Heliogabalus", "Heliogabalus, whose vnsuteable conditions made the Roman Successors forbeare the name of Antonini. The Antonini were not split into men.", "him"],
+  "iohn-leo": ["Iohn Leo", "Iohn Leo, who writes that the Soldan of Aegypt, after Saladine, had vnder him a Viceroy stiled Eddaguadare. He is not Iohn the Apostle, and not Iohn of Gischala. The one-word title would fold onto john, so the title is two words.", "him"],
+  cetes: ["Cetes", "Cetes, another name of the Proteus who tooke Helena from Paris, as he is named by some. Raleigh takes him, with Thon, for an vnder-Officer about Pharos. Proteus is kept on his owne record.", "him"],
+  thon: ["Thon", "Thon, named with Proteus or Cetes by Greeke Writers. Raleigh takes him for an vnder-Officer about Pharos.", "him"],
+  remphes: ["Remphes", "Remphes, the Sonne of Proteus, whom Herodotus calls Ramsinitus. Raleigh doubts that either this King, or his Father, did raigne at all. The two names are one man. The Daughter and the Theefe are not named.", "him"],
+  banchyris: ["Banchyris", "Banchyris, recorded by Suidas for his great justice. Bocchorus may be taken for this man. The two names are kept apart.", "him"],
+  thulis: ["Thulis", "Thulis, also called Thules, of whom Suidas tells that his Empire extended to the Ocean Sea, and that he consulted with Seraphis. The two spellings are one man.", "him"],
+  serapis: ["Serapis", "Serapis, also called Seraphis, the god with whom Thulis consulted, and vpon whom Sethon may haue called. He is named, as Nesroch was.", "him"],
+  plessis: ["Plessis", "Plessis, whose worke Of the truenesse of Christian Religion giues the English of the answere which Thulis had from Seraphis.", "him"],
+  sosis: ["Sosis", "Sosis, in the list of old Aegyptian Kings which Cedrenus deliuers, who followed Sol the sonne of Vulcan. The length of his raigne is not set downe.", "him"],
+  "sol-son-of-vulcan": ["Sol son of Vulcan", "Sol, the sonne of Vulcan, who raigned in Aegypt twentie yeeres and a halfe, in the list which Cedrenus deliuers. The one-word title would not say which Sol, so the title is four words.", "him"],
+  narecho: ["Narecho", "Narecho, the name which Cedrenus giues to that Pharao who held the Crowne fiftie yeeres, and from whom the surname of Pharao passed to a long posteritie. Pharao is kept on his owne record.", "him"],
+  chabreus: ["Chabreus", "Chabreus, whom Diodore, rather than Cephrenes, makes the successor of Chemmis. Herodotus his Cheops might bee this man. The two names are kept apart.", "him"],
 };
 
 export const CH24_28_EVENTS = new Set([
@@ -201,4 +304,5 @@ export const CH24_28_EVENTS = new Set([
   "angel-slays-the-assyrians",
   "hezekiah-illness",
   "merodach-baladan-embassy",
+  "sennacherib-besieges-lachish",
 ]);

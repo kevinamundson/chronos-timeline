@@ -1250,6 +1250,31 @@
       ]
     },
     {
+      "id": "amalricke",
+      "forms": [
+        {
+          "form": "Almaricke",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. I, sig. 355a. The passage prints “Almaricke”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        },
+        {
+          "form": "Almericke",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. I, sig. 355b. The passage prints “Almericke”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
       "id": "amasia",
       "forms": [
         {
@@ -1657,6 +1682,21 @@
       ]
     },
     {
+      "id": "anysis",
+      "forms": [
+        {
+          "form": "Amysis",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. VI, sig. 360a. The passage prints “Amysis”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
       "id": "apis-of-argiues",
       "forms": [
         {
@@ -2002,6 +2042,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter II."
+        }
+      ]
+    },
+    {
+      "id": "armeus",
+      "forms": [
+        {
+          "form": "ARMEVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. III, sig. 357a. The passage prints “ARMEVS”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
         }
       ]
     },
@@ -4042,6 +4097,21 @@
       ]
     },
     {
+      "id": "cedrenus",
+      "forms": [
+        {
+          "form": "CEDRENVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. V, sig. 358a. The passage prints “CEDRENVS”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
       "id": "cenaz",
       "forms": [
         {
@@ -4183,6 +4253,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters VIII–IX."
+        }
+      ]
+    },
+    {
+      "id": "chemmis",
+      "forms": [
+        {
+          "form": "Chembis",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. VI, sig. 359a. The passage prints “Chembis”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
         }
       ]
     },
@@ -5333,6 +5418,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XI–XIII."
+        },
+        {
+          "form": "DIODORVS SICVLVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. VI, sig. 359a. The passage prints “DIODORVS SICVLVS”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
         }
       ]
     },
@@ -10399,6 +10494,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."
+        },
+        {
+          "form": "Juda",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, sig. 354b. The passage prints “Juda”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
         }
       ]
     },
@@ -12996,6 +13101,21 @@
       ]
     },
     {
+      "id": "neptune",
+      "forms": [
+        {
+          "form": "Neptunes",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. IV, sig. 358a. The passage prints “Neptunes”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
       "id": "nesroch",
       "forms": [
         {
@@ -14930,6 +15050,26 @@
           "link": "https://en.wikisource.org/wiki/The_History_of_Herodotus_(Rawlinson)/Book_2#:~:text=before%20the%20reign%20of%20their%20king%20Psammetichus%2C%20believed",
           "source_text_id": "herodotus-rawlinson-wikisource",
           "note": "The passage is an English translation. The Greek letters of the ancient text are not entered."
+        },
+        {
+          "form": "Psammeticus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. VI, sig. 359b–360a. The passage prints “Psammeticus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        },
+        {
+          "form": "Psammiticus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. VII, sig. 361b. The passage prints “Psammiticus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
         }
       ]
     },
@@ -15364,6 +15504,21 @@
           "role": "alternate",
           "witness": "history",
           "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXIV, §. I, sig. 345b–346a. The passage prints “Reyneccius”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
+      "id": "remphes",
+      "forms": [
+        {
+          "form": "Ramsinitus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. IV, sig. 358a. The passage prints “Ramsinitus”.",
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
@@ -16615,6 +16770,51 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XIV–XVII."
+        },
+        {
+          "form": "Euenes",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. V, sig. 358a. The passage prints “Euenes”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        },
+        {
+          "form": "Senemures",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. V, sig. 358a. The passage prints “Senemures”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        },
+        {
+          "form": "Senepos",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. V, sig. 358a. The passage prints “Senepos”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
+      "id": "serapis",
+      "forms": [
+        {
+          "form": "Seraphis",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. V, sig. 358a. The passage prints “Seraphis”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
         }
       ]
     },
@@ -16917,6 +17117,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        },
+        {
+          "form": "Sethons",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. VII, sig. 360b. The passage prints “Sethons”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
         }
       ]
     },
@@ -17431,6 +17641,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."
+        },
+        {
+          "form": "Smendis",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. V, sig. 358b. The passage prints “Smendis”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
         }
       ]
     },
@@ -17443,6 +17663,21 @@
           "role": "alternate",
           "witness": "history",
           "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXV, §. I, sig. 350b. The passage prints “Soe”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
+      "id": "sol-son-of-vulcan",
+      "forms": [
+        {
+          "form": "Sol",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. V, sig. 358b. The passage prints “Sol”.",
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
@@ -18242,6 +18477,21 @@
       ]
     },
     {
+      "id": "tanephersobris",
+      "forms": [
+        {
+          "form": "Tonephersobis",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. V, sig. 358a. The passage prints “Tonephersobis”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
       "id": "tantalus-king-of-lydia",
       "forms": [
         {
@@ -18748,6 +18998,21 @@
       ]
     },
     {
+      "id": "thulis",
+      "forms": [
+        {
+          "form": "Thules",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. V, sig. 358b. The passage prints “Thules”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
       "id": "thurimachus",
       "forms": [
         {
@@ -18919,6 +19184,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        },
+        {
+          "form": "Tiglath Phulassar",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. VI, sig. 360a–360b. The passage prints “Tiglath Phulassar”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
         }
       ]
     },
@@ -18998,6 +19273,36 @@
           "role": "alternate",
           "witness": "history",
           "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXV, §. II, sig. 351b–352a. The passage prints “Terhaca”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        },
+        {
+          "form": "Tarachus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. VII, sig. 361b. The passage prints “Tarachus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        },
+        {
+          "form": "Tirhaca",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. VII, sig. 360b–361a. The passage prints “Tirhaca”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        },
+        {
+          "form": "Tirhaka",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. VII, sig. 361b. The passage prints “Tirhaka”.",
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
@@ -19633,6 +19938,31 @@
       ]
     },
     {
+      "id": "vchoreus",
+      "forms": [
+        {
+          "form": "Ogdous",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. II, sig. 356a–356b. The passage prints “Ogdous”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        },
+        {
+          "form": "VCHOREVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. II, sig. 356a. The passage prints “VCHOREVS”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
       "id": "vespasian",
       "forms": [
         {
@@ -19749,6 +20079,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in the Preface, the contents, or Book I, Part I, Chapters I–VIII."
+        },
+        {
+          "form": "Vulcans",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. VII, sig. 361a. The passage prints “Vulcans”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
         }
       ]
     },
@@ -19824,6 +20164,26 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapter VII."
+        },
+        {
+          "form": "William Archbishop of Tyre",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. I, sig. 354b–355a. The passage prints “William Archbishop of Tyre”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        },
+        {
+          "form": "WILLIAM of Tyre",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book II, Part I, Chapter XXVI, §. I, sig. 354b. The passage prints “WILLIAM of Tyre”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
         }
       ]
     },
