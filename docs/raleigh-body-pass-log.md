@@ -340,6 +340,33 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 590 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12)
 - Accounts: 2,272 passages on 1,108 records
 
+## Pass 13
+
+Book II, Part I, Chapter X, sig. 240a, through §. VII, sig. 252a. The heading is “CHAP. X. Of the memorable places of DAN, SIMEON, IVDA, RVBEN, GAD, and the other halfe of MANASSE.” One hundred thirty passages, p02273–p02402. Chapter XI opens after sig. 252a and was not entered. The same rules as passes 3–12. `year_bc_ad` stays null. A `year_am` is stored only when he prints a yeere of the World. This chapter printed none. No calculated sort was written.
+
+As in Chapters VII–IX, the people and events on each passage are named by hand, in `scripts/raleigh/ch10-attach.mjs`. `scripts/raleigh/hand-attach.mjs` joins it with the Chapter VII–IX tables. A spelling that is already the title or a stored form of another record is not added as a name form. 128 of the 130 passages carry at least one link. The two without one are the Moab-coast paragraph (p02335) and the Dead Sea heading (p02354). See N71.
+
+### Counts
+
+- Dated statements written: 2. The Ark remained twentie yeeres at Cariathiarim, on `ark-at-kiriath-jearim`. Eglon commanded Israel eighteene yeeres, on `eglon` and `oppression-of-eglon`.
+- People created: 66, all first named in Book II, Part I, Chapter X
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. Two existing events gained statements: `ark-at-kiriath-jearim` and `oppression-of-eglon`. Fifteen events received accounts from this chapter, nine of them their first: `ark-at-kiriath-jearim`, `ark-brought-to-jerusalem`, `baptism-of-jesus`, `david-slays-goliath`, `destruction-of-sodom`, `jephthah-defeats-ammon`, `john-the-baptist-beheaded`, `oppression-of-eglon`, and `rebellion-of-absalom`. Their `sorting_year` values are unchanged. Eleven existing people received their first account: `athanasius-of-alexandria`, `cleopatra`, `ehud`, `gedaliah`, `ibzan`, `ish-bosheth`, `jehoram-of-judah`, `melchizedek`, `philip-ii-of-macedon`, `sosus`, and `uzziah`.
+- Name forms added: 55 (on new and existing people). No existing form was rewritten.
+- Accounts: 2,402 passages, on 1,129 people and 65 events. The first 2,272 passages are unchanged, and no earlier link was dropped.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. The CFAH import and the standby compute were run and wrote nothing new. No other importer was re-run. The new people are display-only, and none of them has a standby placement. The open questions for this chapter are N71–N76.
+
+### Cumulative
+
+- Dated statements written: 163 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6, 21 in pass 7, 9 in pass 8, 7 in pass 9, 15 in pass 10, 8 in pass 11, 32 in pass 12, 2 in pass 13)
+- People created: 873
+- Places created: 0
+- Events created: 0
+- Name forms added: 645 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13)
+- Accounts: 2,402 passages on 1,194 records
+
 ## RESUME POINT
 
-Book II, Part I, Chapter X. The heading is “CHAP. X. Of the memorable places of DAN, SIMEON, IVDA, RVBEN, GAD, and the other halfe of MANASSE.” Pass 12 stopped at the end of Chapter IX. The last stored passage is p02272, Book II, Part I, Chapter IX, §. III, sig. 239b (the Catalogue of the Kings of the ten Tribes). Do not start again inside Chapter IX. Chapter X has 130 passages (sig. 240a–252a). It needs `BOOK2_THROUGH = 10` in `scripts/raleigh/xml-text.mjs`, `--book2=10` in `scripts/raleigh/covered.mjs`, and a hand table like `scripts/raleigh/ch8-9-attach.mjs`, because it is a description of places.
+Book II, Part I, Chapter XI. The heading is “CHAP. XI. The Historie of the Syrians the chiefe borderers of the Jsraelites that dwelt on the East of Jordan.” Pass 13 stopped at the end of Chapter X. The last stored passage is p02402, Book II, Part I, Chapter X, §. VII, sig. 252a (Manasse, Josephus, Dauid, Mahaca, Tholmay, and Absalon). Do not start again inside Chapter X. Chapter XI has 24 passages (sig. 252b–255b). It needs `BOOK2_THROUGH = 11` in `scripts/raleigh/xml-text.mjs`, `--book2=11` in `scripts/raleigh/covered.mjs`, and a hand table like `scripts/raleigh/ch10-attach.mjs`, because it is a description of places.

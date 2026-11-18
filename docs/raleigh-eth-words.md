@@ -20,6 +20,8 @@ Pass 11 (Book II, Part I, Chapter VII) adds nineteen words those tables do not l
 
 Pass 12 (Book II, Part I, Chapters VIII and IX) adds nine words those tables do not list. Eight change. One stays: `kirharaseth`, the city of Moab. None of the nine is flagged. `stileth` is style. The letter rules give stiles, so it is explicit. Through Chapter IX the inventory is 482 distinct words: 439 change, 39 stay, and the same 4 flagged. The new rows are under "Pass 12".
 
+Pass 13 (Book II, Part I, Chapter X) adds seven words those tables do not list. Four change. Three stay: `hareseth`, the hyphenated half of Kir-hareseth; `ishboseth`, the name; and `mageth`, the place in Gad. None of the seven is flagged. `indureth` is endure. The letter rules do not reach that in- spelling, so it is explicit. Through Chapter X the inventory is 489 distinct words: 443 change, 42 stay, and the same 4 flagged. The new rows are under "Pass 13".
+
 ## Decisions
 
 - hath becomes has. It is the irregular third person of have. It does not end in -eth. An all-capital HATH becomes HAS. The capitals stay (open question N17).
@@ -46,6 +48,10 @@ Pass 12 (Book II, Part I, Chapters VIII and IX) adds nine words those tables do 
 - Aroseth, Cateth, Cinnereth, Genezareth, Gennezareth, Nepheth, and Remeth stay. They are places in the description of the tribes. Astoreth stays. It is the idol.
 - stileth becomes styles. In this book it is the verb in “he stileth men of contrary opinion, impios politicos”.
 - Kirharaseth stays. It is the city of Moab.
+- hareseth stays. The hyphen in Kir-hareseth makes the token hareseth. It is the same city.
+- ishboseth stays. It is the name Ishbosheth, printed Ishboseth.
+- mageth stays. It is the place Mageth in Gad.
+- indureth becomes endures. In this book it is the verb in “nor indureth fish to liue in it”. The letter rules do not reach that in- spelling, so it is explicit.
 
 ## Flagged
 
@@ -601,3 +607,17 @@ Nine words appear in Book II, Part I, Chapters VIII and IX and in no earlier sto
 | kirharaseth | 1 | kirharaseth | kept: city Kirharaseth of Moab, not a verb | p02259: s are ouerthrowne: their king flieth to Kirharaseth, and being besieged, according to some |
 | reproueth | 1 | reproves | verb reprove → reproves | p02256: Prophet( whom Glycas calleth Michaeas) reproueth him: afterward hee caused Naboth by a fa |
 | stileth | 1 | styles | verb style → styles (he stileth men of contrary opinion, impios politicos) | p02221: ich fancie he is so peremptory, that he stileth men of contrary opinion, impios politicos, |
+
+## Pass 13
+
+Seven words appear in Book II, Part I, Chapter X and in no earlier stored passage. Counts are in those 130 passages only. The four flagged words of passes 1–4 do not appear again here.
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| hareseth | 1 | hareseth | kept: city Kir-hareseth; the hyphen makes the token hareseth | p02362: Kings prest and broken, he fled to Kir-hareseth, as is elsewhere 〈◊ 〉. There is also ment |
+| indureth | 1 | endures | verb endure → endures (nor indureth fish to liue in it) | p02355: ther moued nor raised by the winde: nor indureth fish to liue in it, or fowle to swimme in |
+| inferreth | 1 | infers | verb infer → infers | p02338: to recouer them, and did not: whence he inferreth that they ought not to claime them now. |
+| ishboseth | 1 | ishboseth | kept: name Ishbosheth, printed Ishboseth | p02373: gth thereof Abner chose for the seat of Ishboseth, during the warre betweene Dauid and the |
+| lamenteth | 1 | laments | verb lament → laments | p02296: nameth Gath and Ascalon onely, when hee lamenteth the death of Saul, and 〈◊ 〉, not speakin |
+| mageth | 1 | mageth | kept: place Mageth in Gad, not a verb | p02375: um, of which 1. Sam. 22. 3. As for that Mageth which Adrichomius findes in this Tribe of G |
+| melteth | 1 | melts | verb melt → melts | p02401: e on the West. When the snow of Libanus melteth, it is very large, saith Brochard: otherwi |
