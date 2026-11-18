@@ -16,7 +16,7 @@ export const XML_REL = 'sources/raleigh/A10357.earlyprint-unadorned.xml';
 /** Last Book I, Part I chapter stored in data/raleigh-accounts.json. */
 export const THROUGH_CHAPTER = 12;
 /** Last Book II, Part I chapter stored in the account file. 0 means Book II is not included. */
-export const BOOK2_THROUGH = 21;
+export const BOOK2_THROUGH = 22;
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI', 'XXVII', 'XXVIII', 'XXIX', 'XXX', 'XXXI', 'XXXII', 'XXXIII', 'XXXIV', 'XXXV', 'XXXVI', 'XXXVII', 'XXXVIII', 'XXXIX', 'XL'];
 
