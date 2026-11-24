@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "archelaus-son-of-amyntas",
+  "type": "person",
+  "title": "Archelaus son of Amyntas",
+  "summary": "Raleigh names Archelaus son of Amyntas in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Archelaus, a sonne of Amyntas the second by Gygea, afterward slaine by Philip. He is not Archelaus of Macedon the Bastard. The one-word title would fold onto that record, so the title is four words. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book IV, Part I, Chapter I, §. I, sig. 461a"
+    }
+  ],
+  "alt_names": [
+    "Archelaus"
+  ]
+}

@@ -30,7 +30,7 @@ export const BOOK2_THROUGH = 28;
 /** Last Book III, Part I chapter stored in the account file. 0 means Book III is not included. */
 export const BOOK3_THROUGH = 12;
 /** Last Book IV, Part I chapter stored in the account file. 0 means Book IV is not included. */
-export const BOOK4_THROUGH = 0;
+export const BOOK4_THROUGH = 1;
 /**
  * When set, the last Book IV chapter is stored only through the close of this
  * section div. Null stores that chapter whole. Pass 20 uses '10'.

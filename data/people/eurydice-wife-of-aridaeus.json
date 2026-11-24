@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "eurydice-wife-of-aridaeus",
+  "type": "person",
+  "title": "Eurydice wife of Aridaeus",
+  "summary": "Raleigh names Eurydice wife of Aridaeus in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Eurydice, Daughter of Cyna and Amyntas, married to Philips base sonne Aridaeus, whom Olympias put to death. She is not Eurydice of Macedon the Illyrian. The one-word title would fold onto that record, so the title is four words. No yeere of the World was taken for her. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book IV, Part I, Chapter I, §. IX, sig. 464b–465a"
+    }
+  ],
+  "alt_names": [
+    "Eurydice"
+  ]
+}
