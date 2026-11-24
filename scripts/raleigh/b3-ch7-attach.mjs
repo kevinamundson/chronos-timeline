@@ -120,6 +120,16 @@ export const PASS20 = {
   p03767: [],
   p03768: ["alcibiades=Alcibiades"],
   p03769: ["peloponnesian-war", "epaminondas=Epaminondas", "philip-ii-of-macedon=Philip of Macedon", "alexander-the-great=Alexander the Great", "philip-ii-of-macedon=Philip", "alexander-the-great=Alexander"],
+
+  // Chapter IX. Of matters concurring with the Peloponnesian Warre. p03770–p03777.
+  p03770: ["peloponnesian-war"],
+  p03771: [],
+  p03772: ["artaxerxes-longimanus=Artaxerxes Longimanus", "darius-nothus=Darius", "darius-nothus=Darius Nothus", "xerxes-the-second=Xerxes the second", "sogdianus=Sogdianus", "hester=Hester", "bagorazus=Bagorazus", "darius-nothus=Darius the Bastard", "amyrteus=Amyrtaeus", "artaxerxes-mnemon=Artaxerxes Mnemon", "amorges-the-rebel=Amorges", "parysatis=Parysatis", "cyrus-the-younger=Cyrus the yonger", "cyrus-the-great=Cyrus the Great", "cyrus-the-younger=Cyrus"],
+  p03773: [],
+  p03774: ["peloponnesian-war"],
+  p03775: ["theramenes=Theramenes", "critias=Critias"],
+  p03776: [],
+  p03777: ["theramenes=Theramenes", "thrasybulus=Thrasybulus", "critias=Critias", "lysander=Lysander", "pausanias-king-of-sparta=Pausanias"],
 };
 
 export const PASS20_NEW = {
@@ -143,6 +153,14 @@ export const PASS20_NEW = {
   mindarus: ["Mindarus", "Mindarus, who commanded the fleet of the Lacedaemonians, slaine when Alcibiades destroyed it. The printed spelling is kept.", "him"],
   callicraditas: ["Callicraditas", "Callicraditas, Admirall of the Lacedaemonians, who lost the honour of the day at Arginusae, and died valiantly in the fight. The printed spelling is kept.", "him"],
   "pausanias-king-of-sparta": ["Pausanias king of Sparta", "Pausanias, King of Sparta with Agis, who summoned Athens after Lysander his victorie at Aegos-Potamos. He is not Pausanias the writer, and not Pausanias of Sparta who fought at Plataea. The one-word title would fold onto those records, so the title is four words.", "him"],
+  "xerxes-the-second": ["Xerxes the second", "Xerxes the second, sonne of Artaxerxes Longimanus, seeming with his brother Sogdianus to haue bene the sonnes of Hester, who held the Kingdome but a moneth or two. He is not Xerxes who inuaded Greece. The one-word title would fold onto that record, so the title is three words.", "him"],
+  bagorazus: ["Bagorazus", "Bagorazus, a principall Eunuch, whom Sogdianus slew vnjustly. The printed spelling is kept.", "him"],
+  "amorges-the-rebel": ["Amorges the rebel", "Amorges, a subject of Darius Nothus and of the Roiall bloud, Lieutenant who rebelled and was taken in the Citie of Iasus. He is not Amorges, King of the Sacae, whom Cyrus tooke prisoner. The one-word title would fold onto that record, so the title is three words.", "him"],
+  parysatis: ["Parysatis", "Parysatis, sister and wife of Darius Nothus, mother of Artaxerxes Mnemon and of Cyrus the yonger. The printed spelling is kept.", "her"],
+  "cyrus-the-younger": ["Cyrus the younger", "Cyrus the yonger, sonne of Darius Nothus and Parysatis, brother of Artaxerxes Mnemon, Lieutenant of the lower Asia, who made warre vpon his brother. He is not Cyrus the Great. The one-word title would fold onto cyrus-son-of-agenor, so the title is three words.", "him"],
+  theramenes: ["Theramenes", "Theramenes, one of the thirtie Tyrants of Athens, who disliked their effusion of bloud, and was compelled by Critias to drinke poyson. The printed spelling is kept.", "him"],
+  critias: ["Critias", "Critias, who of all the thirtie Tyrants was most tyrannicall, who accused Theramenes, and who perished in the fight at Piraeus. The printed spelling is kept.", "him"],
+  thrasybulus: ["Thrasybulus", "Thrasybulus, who with the banished Citizens tooke Phyla and Piraeus, and who deposed the thirtie Tyrants. The printed spelling is kept.", "him"],
 };
 
 export const PASS20_EVENTS = new Set([

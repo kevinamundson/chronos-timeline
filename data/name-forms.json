@@ -1594,6 +1594,21 @@
       ]
     },
     {
+      "id": "amyrteus",
+      "forms": [
+        {
+          "form": "Amyrtaeus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter IX, §. I, sig. 434b–435a. The passage prints “Amyrtaeus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
+        }
+      ]
+    },
+    {
       "id": "anak",
       "forms": [
         {
@@ -5261,6 +5276,21 @@
       ]
     },
     {
+      "id": "cyrus-the-younger",
+      "forms": [
+        {
+          "form": "Cyrus the yonger",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter IX, §. I, sig. 434b–435a. The passage prints “Cyrus the yonger”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
+        }
+      ]
+    },
+    {
       "id": "cyzicenus",
       "forms": [
         {
@@ -5467,6 +5497,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        },
+        {
+          "form": "Darius the Bastard",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter IX, §. I, sig. 434b–435a. The passage prints “Darius the Bastard”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
         }
       ]
     },
