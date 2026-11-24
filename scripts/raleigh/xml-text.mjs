@@ -12,8 +12,9 @@
 // Chapter II at section n="10", the printed §. X (the battle of Arbela). Later
 // section divs in that chapter reuse n and are not printed §. X.
 // The constant BOOK3_THROUGH is raised as each chapter of this pass is stored.
-// BOOK4_THROUGH stays 0 until Book IV is stored. BOOK4_SECTION_THROUGH applies
-// only when BOOK4_THROUGH is the chapter being cut.
+// BOOK4_THROUGH is raised when Book IV is stored. BOOK4_SECTION_THROUGH applies
+// only when BOOK4_THROUGH is the chapter being cut. Pass 20 sets BOOK4_THROUGH
+// to 2 and BOOK4_SECTION_THROUGH to '10'.
 // `<hi>` is the 1617 italic (EarlyPrint leaves the rend off the unadorned file).
 // Each passage carries `italics` as [start, end] pairs into `passage`, derived here.
 // The plain `passage` string does not contain the tags.
@@ -30,12 +31,12 @@ export const BOOK2_THROUGH = 28;
 /** Last Book III, Part I chapter stored in the account file. 0 means Book III is not included. */
 export const BOOK3_THROUGH = 12;
 /** Last Book IV, Part I chapter stored in the account file. 0 means Book IV is not included. */
-export const BOOK4_THROUGH = 1;
+export const BOOK4_THROUGH = 2;
 /**
  * When set, the last Book IV chapter is stored only through the close of this
  * section div. Null stores that chapter whole. Pass 20 uses '10'.
  */
-export const BOOK4_SECTION_THROUGH = null;
+export const BOOK4_SECTION_THROUGH = '10';
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI', 'XXVII', 'XXVIII', 'XXIX', 'XXX', 'XXXI', 'XXXII', 'XXXIII', 'XXXIV', 'XXXV', 'XXXVI', 'XXXVII', 'XXXVIII', 'XXXIX', 'XL'];
 

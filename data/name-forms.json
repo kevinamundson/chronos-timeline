@@ -3158,6 +3158,21 @@
       ]
     },
     {
+      "id": "augustine-of-hippo",
+      "forms": [
+        {
+          "form": "St. Augustine",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book IV, Part I, Chapter II, §. VII, sig. 474a. The passage prints “St. Augustine”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
+        }
+      ]
+    },
+    {
       "id": "augustus-caesar",
       "forms": [
         {
@@ -4703,6 +4718,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XVIII–XXIII."
+        }
+      ]
+    },
+    {
+      "id": "charles-v-of-france",
+      "forms": [
+        {
+          "form": "Charles",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book IV, Part I, Chapter II, §. III, sig. 468b–469a. The passage prints “Charles”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
         }
       ]
     },
@@ -8624,6 +8654,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XIV–XVII."
+        }
+      ]
+    },
+    {
+      "id": "hephaestion",
+      "forms": [
+        {
+          "form": "Ephestion",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book IV, Part I, Chapter II, §. IV, sig. 471a. The passage prints “Ephestion”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
         }
       ]
     },
@@ -21667,6 +21712,21 @@
       ]
     },
     {
+      "id": "trajan",
+      "forms": [
+        {
+          "form": "Traian",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book IV, Part I, Chapter II, §. VII, sig. 474a. The passage prints “Traian”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
+        }
+      ]
+    },
+    {
       "id": "triopas",
       "forms": [
         {
@@ -22124,6 +22184,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
+      "id": "vegetius",
+      "forms": [
+        {
+          "form": "VEGETIVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book IV, Part I, Chapter II, §. II, sig. 466b–467a. The passage prints “VEGETIVS”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
         }
       ]
     },
