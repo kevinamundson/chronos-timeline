@@ -1620,6 +1620,16 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
+        },
+        {
+          "form": "Amyrlaeus",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter XII, §. VIII, sig. 457b–458b. The passage prints “Amyrlaeus”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
         }
       ]
     },
@@ -6797,6 +6807,21 @@
           "source_text_id": "stepbible-tipnr",
           "scripture_ref": "Gen.5.9",
           "note": null
+        }
+      ]
+    },
+    {
+      "id": "epaminondas",
+      "forms": [
+        {
+          "form": "Epaminondis",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter XII, §. V, sig. 455b–456a. The passage prints “Epaminondis”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
         }
       ]
     },
