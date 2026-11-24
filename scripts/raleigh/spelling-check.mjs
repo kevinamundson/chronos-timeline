@@ -116,6 +116,8 @@ const WORDS = [
   ['seuentieth', 'seventieth'],
   ['fortieth', 'fortieth'],
   ['forttieth', 'fortieth'],
+  ['gaineth', 'gains'],
+  ['seuereth', 'severs'],
   ['eightieth', 'eightieth'],
   ['extendeth', 'extends'],
   ['finisheth', 'finishes'],

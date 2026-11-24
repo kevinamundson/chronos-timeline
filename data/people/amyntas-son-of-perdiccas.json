@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "amyntas-son-of-perdiccas",
+  "type": "person",
+  "title": "Amyntas son of Perdiccas",
+  "summary": "Raleigh names Amyntas son of Perdiccas in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Amyntas, the sonne of Philips Brother Perdiccas, of whom Philip had the protection, who had the right to Macedon and married Cyna. He is not Amyntas father of Philip. The one-word title would fold onto other Amyntas records, so the title is four words. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book IV, Part I, Chapter I, §. IX, sig. 464b–465a"
+    }
+  ]
+}

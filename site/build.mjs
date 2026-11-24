@@ -9,7 +9,7 @@ import { BOOKS as BLB_BOOKS, blbFromOsis, blbFromText } from '../scripts/blb.mjs
 import { loadChronologicalTable, toCsv, toMarkdown, toXls, yearColumnIndex, splitJulianHeading, annotateSplitYear, assertJulianSplit } from '../scripts/raleigh/table.mjs';
 import { createTableLinker } from '../scripts/raleigh/table-links.mjs';
 import { displayNameForm, displaySpelling, renderProse } from '../scripts/raleigh/spelling.mjs';
-import { loadXml, extractPassages, alignStoredPassages, THROUGH_CHAPTER, BOOK2_THROUGH, BOOK3_THROUGH } from '../scripts/raleigh/xml-text.mjs';
+import { loadXml, extractPassages, alignStoredPassages, THROUGH_CHAPTER, BOOK2_THROUGH, BOOK3_THROUGH, BOOK4_THROUGH, BOOK4_SECTION_THROUGH } from '../scripts/raleigh/xml-text.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmHtml, raleighRecordHtml, raleighRecordShort, showsItalicDerived, RALEIGH_DERIVED_NOTE, ITALICS_NOTE } from '../scripts/raleigh/derived-year.mjs';
 import { standbyCounts, standbySummaryLine } from '../scripts/standby/compute.mjs';
 import { isJones23, reignStartPhrase } from '../scripts/sort-rule.mjs';
@@ -45,7 +45,7 @@ const nameFormDoc = readJSON(join(DATA, 'name-forms.json'));
 const nameForms = Object.fromEntries((nameFormDoc.people || []).map((p) => [p.id, p.forms]));
 const nameLinkOverrides = readJSON(join(DATA, 'name-link-overrides.json'));
 const raleighAccounts = readJSON(join(DATA, 'raleigh-accounts.json'));
-const raleighExtract = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER, book2Through: BOOK2_THROUGH, book3Through: BOOK3_THROUGH });
+const raleighExtract = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER, book2Through: BOOK2_THROUGH, book3Through: BOOK3_THROUGH, book4Through: BOOK4_THROUGH, book4SectionThrough: BOOK4_SECTION_THROUGH });
 const raleighAlignErrors = alignStoredPassages(raleighAccounts.passages, raleighExtract);
 if (raleighAlignErrors.length) {
   console.error(raleighAlignErrors.slice(0, 12).join('\n'));

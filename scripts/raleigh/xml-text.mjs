@@ -2,11 +2,19 @@
 // Margin notes are left out. Tags are left out. Whitespace collapses to one space.
 // A passage is one paragraph, one heading, one contents item, or one body list.
 // The covered range is the Preface, the contents, Book I, Part I, Book II, Part I,
-// and Book III, Part I.
+// Book III, Part I, and Book IV, Part I through the last stored chapter.
 // `throughChapter` is the last Book I chapter to include. `book2Through` is the last
 // Book II, Part I chapter. Pass 18 raises this through Chapter XXVIII, the end of the book.
 // `book3Through` is the last Book III, Part I chapter. Pass 19 stores Chapters I–VI.
+// Pass 20 stores the rest of Book III, Part I (Chapters VII–XII) and Book IV, Part I.
+// `book4Through` is the last Book IV, Part I chapter. `book4SectionThrough` cuts that
+// last chapter at the close of the section div with that n. Pass 20 stops Book IV,
+// Chapter II at section n="10", the printed §. X (the battle of Arbela). Later
+// section divs in that chapter reuse n and are not printed §. X.
 // The constant BOOK3_THROUGH is raised as each chapter of this pass is stored.
+// BOOK4_THROUGH is raised when Book IV is stored. BOOK4_SECTION_THROUGH applies
+// only when BOOK4_THROUGH is the chapter being cut. Pass 20 sets BOOK4_THROUGH
+// to 2 and BOOK4_SECTION_THROUGH to '10'.
 // `<hi>` is the 1617 italic (EarlyPrint leaves the rend off the unadorned file).
 // Each passage carries `italics` as [start, end] pairs into `passage`, derived here.
 // The plain `passage` string does not contain the tags.
@@ -21,7 +29,14 @@ export const THROUGH_CHAPTER = 12;
 /** Last Book II, Part I chapter stored in the account file. 0 means Book II is not included. */
 export const BOOK2_THROUGH = 28;
 /** Last Book III, Part I chapter stored in the account file. 0 means Book III is not included. */
-export const BOOK3_THROUGH = 6;
+export const BOOK3_THROUGH = 12;
+/** Last Book IV, Part I chapter stored in the account file. 0 means Book IV is not included. */
+export const BOOK4_THROUGH = 2;
+/**
+ * When set, the last Book IV chapter is stored only through the close of this
+ * section div. Null stores that chapter whole. Pass 20 uses '10'.
+ */
+export const BOOK4_SECTION_THROUGH = '10';
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI', 'XXVII', 'XXVIII', 'XXIX', 'XXX', 'XXXI', 'XXXII', 'XXXIII', 'XXXIV', 'XXXV', 'XXXVI', 'XXXVII', 'XXXVIII', 'XXXIX', 'XL'];
 
@@ -197,6 +212,9 @@ function location(stack, inBody, range) {
   if (inBody && part === '1' && book === '3' && n >= 1 && n <= range.book3Through) {
     return { kind: 'body', book, part, chapter, section, subsection };
   }
+  if (inBody && part === '1' && book === '4' && n >= 1 && n <= range.book4Through) {
+    return { kind: 'body', book, part, chapter, section, subsection };
+  }
   return null;
 }
 
@@ -206,7 +224,7 @@ function location(stack, inBody, range) {
  * Each passage carries `hi` (the italic strings) and `italics` ([start, end] into `passage`).
  * The account file stores the plain passage only. Build and validate derive the spans.
  */
-export function extractPassages(xml, { throughChapter = 12, book2Through = 0, book3Through = 0 } = {}) {
+export function extractPassages(xml, { throughChapter = 12, book2Through = 0, book3Through = 0, book4Through = 0, book4SectionThrough = null } = {}) {
   const re = /<!--[\s\S]*?-->|<!\[CDATA\[[\s\S]*?\]\]>|<[^>]+>|[^<]+/g;
   const stack = [];
   let inBody = false;
@@ -214,12 +232,18 @@ export function extractPassages(xml, { throughChapter = 12, book2Through = 0, bo
   let sig = null;
   let cap = null;
   let listDepth = 0;
+  let pastBook4Section = false;
   const passages = [];
   let contentsPartLabel = null;
   let contentsChapterLabel = null;
-  const range = { book1Through: throughChapter, book2Through, book3Through };
+  const range = { book1Through: throughChapter, book2Through, book3Through, book4Through, book4SectionThrough };
 
-  const inScope = () => location(stack, inBody, range);
+  const inScope = () => {
+    const loc = location(stack, inBody, range);
+    if (!loc) return null;
+    if (pastBook4Section && loc.book === '4' && loc.chapter === String(range.book4Through)) return null;
+    return loc;
+  };
 
   const finish = () => {
     if (!cap) return;
@@ -294,6 +318,15 @@ export function extractPassages(xml, { throughChapter = 12, book2Through = 0, bo
       if (local === 'div') {
         if (isEnd) {
           const top = stack[stack.length - 1];
+          if (inBody && top?.type === 'section' && range.book4SectionThrough && top.n === String(range.book4SectionThrough)) {
+            let bk = null;
+            let ch = null;
+            for (const d of stack) {
+              if (d.type === 'book') bk = d.n;
+              if (d.type === 'chapter') ch = d.n;
+            }
+            if (bk === '4' && ch === String(range.book4Through)) pastBook4Section = true;
+          }
           if (top?.type === 'chapter' && inBody && top.n === String(range.book1Through)) {
             stack.pop();
             // Chapters after this one stay out of scope because the chapter test fails.

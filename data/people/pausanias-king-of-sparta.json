@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "pausanias-king-of-sparta",
+  "type": "person",
+  "title": "Pausanias king of Sparta",
+  "summary": "Raleigh names Pausanias king of Sparta in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Pausanias, King of Sparta with Agis, who summoned Athens after Lysander his victorie at Aegos-Potamos. He is not Pausanias the writer, and not Pausanias of Sparta who fought at Plataea. The one-word title would fold onto those records, so the title is four words. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book III, Part I, Chapter VIII, §. XII, sig. 433b"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Covered text of Raleigh's History (1617): Preface, contents, Book I, Part I,
-// Book II, Part I, and Book III, Part I.
+// Book II, Part I, Book III, Part I, and Book IV, Part I through the last stored chapter.
 // Rebuilds data/raleigh-accounts.json. With --write, also adds a person record
 // for every named individual in that range who does not already have one.
 // Undated people get a null CFAH date and no sort year.
@@ -13,10 +13,14 @@
 // passes 1–3 already covered Chapters I–VIII. --book2 is the last Book II, Part I
 // chapter. 0 leaves Book II out. Pass 18 stops at Chapter XXVIII, the end of Book II.
 // --book3 is the last Book III, Part I chapter. 0 leaves Book III out. Pass 19
-// stores those chapters in order. Book III, Part I has twelve chapters.
+// stores Chapters I–VI. Pass 20 stores Chapters VII–XII. Book III, Part I has twelve chapters.
+// --book4 is the last Book IV, Part I chapter. 0 leaves Book IV out. Pass 20 stores
+// Chapter I whole and Chapter II through --book4-section (the section div n).
+// Book IV, Part I has seven chapters.
 // The constant BOOK2_THROUGH is raised as each chapter of this pass is stored. A value of 8 is
 // unused: pass 12 took Chapters VIII and IX together.
-// The constant BOOK3_THROUGH is raised as each chapter of pass 19 is stored.
+// The constant BOOK3_THROUGH is raised as each chapter of pass 19 and pass 20 is stored.
+// BOOK4_THROUGH stays 0 until Book IV is stored.
 // A passage is attached by the name as printed. Groups, places, and unnamed
 // people are not split into individuals. God, Jehovah, and the Holy Ghost are
 // not person records. Ambiguous shared names are left unattached.
@@ -37,6 +41,10 @@ const book2Arg = process.argv.find((a) => a.startsWith('--book2='));
 const book2Through = book2Arg ? Number(book2Arg.slice('--book2='.length)) : 0;
 const book3Arg = process.argv.find((a) => a.startsWith('--book3='));
 const book3Through = book3Arg ? Number(book3Arg.slice('--book3='.length)) : 0;
+const book4Arg = process.argv.find((a) => a.startsWith('--book4='));
+const book4Through = book4Arg ? Number(book4Arg.slice('--book4='.length)) : 0;
+const book4SectionArg = process.argv.find((a) => a.startsWith('--book4-section='));
+const book4SectionThrough = book4SectionArg ? book4SectionArg.slice('--book4-section='.length) : null;
 if (!Number.isInteger(throughChapter) || throughChapter < 8 || throughChapter > 12) {
   throw new Error('--through must be an integer from 8 to 12 (Book I, Part I ends at Chapter XII)');
 }
@@ -48,6 +56,15 @@ if (!Number.isInteger(book3Through) || book3Through < 0 || book3Through > 12) {
 }
 if (book3Through > 0 && book2Through !== 28) {
   throw new Error('--book3 requires --book2=28, so Book II stays in the extract ahead of Book III');
+}
+if (!Number.isInteger(book4Through) || book4Through < 0 || book4Through > 7) {
+  throw new Error('--book4 must be 0–7 (Book IV, Part I has seven chapters)');
+}
+if (book4Through > 0 && book3Through !== 12) {
+  throw new Error('--book4 requires --book3=12, so Book III stays in the extract ahead of Book IV');
+}
+if (book4SectionThrough && !/^\d+$/.test(book4SectionThrough)) {
+  throw new Error('--book4-section must be the section div n, for example 10');
 }
 const LINK = 'https://texts.earlyprint.org/works/A10357.xml';
 const SRC = 'raleigh-history-of-the-world';
@@ -69,7 +86,7 @@ for (const f of readdirSync(join(DATA, 'events')).filter((f) => f.endsWith('.jso
 const nameDoc = readJSON(join(DATA, 'name-forms.json'));
 
 const xml = loadXml(root);
-const passages = extractPassages(xml, { throughChapter, book2Through, book3Through });
+const passages = extractPassages(xml, { throughChapter, book2Through, book3Through, book4Through, book4SectionThrough });
 const corpus = normalizedDocumentText(xml);
 for (const p of passages) {
   if (!corpus.includes(p.passage)) throw new Error(`passage ${p.id} is not verbatim in the 1617 text (${p.citation})`);
@@ -2278,7 +2295,10 @@ function formsFor(id, title) {
   const person = nameDoc.people.find((p) => p.id === id);
   const stored = new Set((person?.forms || []).map((f) => f.form.toLowerCase()));
   stored.add((title || '').toLowerCase());
-  const newNote = book3Through >= 1
+  const pass20 = book3Through >= 7 || book4Through >= 1;
+  const newNote = pass20
+    ? 'Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X.'
+    : book3Through >= 1
     ? `Spelling only. Read in Book III, Part I, Chapter${book3Through === 1 ? '' : 's'} ${book3Through === 1 ? 'I' : `I–${['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'][book3Through]}`}.`
     : book2Through >= 24
     ? 'Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII.'
@@ -2316,7 +2336,10 @@ function formsFor(id, title) {
     const holder = held.find((p) => p && p.passage.includes(form));
     if (!holder) continue;
     // Earlier passes stored the spellings they read. Add a form only from this pass.
-    const inPass = book3Through >= 1
+    const inPass = pass20
+      ? (holder.kind === 'body' && holder.book === '3' && Number(holder.chapter) >= 7 && Number(holder.chapter) <= book3Through)
+        || (holder.kind === 'body' && holder.book === '4' && Number(holder.chapter) >= 1 && Number(holder.chapter) <= book4Through)
+      : book3Through >= 1
       ? holder.kind === 'body' && holder.book === '3' && Number(holder.chapter) >= 1 && Number(holder.chapter) <= book3Through
       : book2Through >= 24
       ? holder.kind === 'body' && holder.book === '2' && Number(holder.chapter) >= 24 && Number(holder.chapter) <= book2Through

@@ -833,3 +833,26 @@ Every record keeps the sort it already had. The new people stay without a sort y
 Chapters I–VI were attached by hand in `scripts/raleigh/b3-ch1-attach.mjs`. A tribe is on its patriarch. Sidonians are `sidon-son-of-canaan`. Edom and the Edomites are `esau`. Elamitae, Elymae, and Elymi are `elam`. An Amalekite is `amalek`. Iuda and Iudaea are `judah`. The kingdom called Israel is not `jacob`. A printed spelling that is already the title or a stored form of another record was not added as a name form. 285 of the 315 passages carry at least one link. The thirty without one are p03359, p03360, p03371, p03374, p03382, p03425, p03434, p03443, p03448, p03485, p03491, p03493, p03523, p03530, p03543, p03549, p03555, p03565, p03583, p03587, p03592, p03596, p03604, p03620, p03642, p03653, p03657, p03662, p03667, and p03672. See N98–N101.
 
 Existing events received an account where the passage narrates that event: `fall-of-jerusalem-586-bc`, `daniel-taken-to-babylon`, `daniel-interprets-nebuchadnezzars-dream`, `minor-deportation-nebuchadnezzars-23rd`, `fall-of-nineveh`, `fall-of-babylon-539-bc`, `cyrus-decree-of-return`, `return-under-zerubbabel`, `temple-rebuilding-begins`, `temple-rebuilding-resumed`, `second-temple-completed`, `xerxes-invades-greece`, `battle-of-marathon`, `battle-of-thermopylae`, `battle-of-salamis`, and `battle-of-plataea`. No new event was created. There is no Mycale event, and none was invented.
+
+# Pass 20
+
+This pass is a double-size pass, like passes 16, 18, and 19. Range covered: Book III, Part I, Chapter VII, sig. 420a, through Book IV, Part I, Chapter II, §. X, sig. 476a. The headings are “CHAP. VII. Of things that passed in Greece from the end of the Persian Warre, to the beginning of the Peloponnesian.”, “CHAP. VIII. Of the Peloponnesian Warre.”, “CHAP. IX. Of matters concurring with the Peloponnesian Warre, or shortly following it.”, “CHAP. X. Of the expedition of CYRVS the younger.”, “CHAP. XI. Of the affaires of Greece, whilest they were managed by the Lacedaemonians.”, “CHAP. XII. Of the flourishing estate of Thebes, from the battaile of Leuctra to the battaile of 〈◊ 〉.” (the gap stays empty), “CHAP. I. Of PHILIP, the Father of ALEXANDER the Great, King of Macedon.”, and “CHAP. II. Of ALEXANDER the Great.” Three hundred twenty-nine passages, p03674–p04002: 33, 63, 8, 36, 26, 19, 58, and 86. Book III Chapters VII–XII are 185 passages. Book IV Chapter I is 58. Chapter II whole would carry the stop past 330, so the pass stops at printed §. X, the battaile of Arbela. The next passage is §. XI, “Of things following the battaile of Arbela.” No yeere of the World is printed. No new `year_am` was written. `year_bc_ad` stays null.
+
+## Statements written
+
+None. No yeere of the World is printed in these chapters.
+
+Every record keeps the sort it already had. The new people stay without a sort year. No calculated sort was written.
+
+## Figures that were not entered
+
+- Reign lengths and other men’s reckonings, including Artaxerxes Longimanus’s twentie, fortie, or foure and fortie yeeres; Darius Nothus’s nineteene; the sixe yeeres warre in Aegypt; the thirtie yeeres truce; the seuen and twentie yeeres of the Peloponnesian Warre; and the Macedonian kings’ lengths in Book IV Chapter I. See N105.
+- Olympiad marks, including Philip’s escape in the first yeere of the hundred and fifth Olympiad, which was after the building of Rome three hundred fourscore and thirteene yeeres (Chapter I, §. II, sig. 461a–461b), and the second yeere of the hundred and sixth Olympiad, eight yeeres after Mantinaea (Chapter I, §. IV, sig. 462a). They were not put on `first-olympic-games` or `founding-of-rome`.
+- Army numbers, talents, furlongs, and the day-counts of the battles, including Granick, Issus, and Arbela. They were not given a new event except where the passage narrates an existing battle. See N105.
+- “in the yeere 1588” is not in this range. Philip the second of Spaine on p03895 is a comparison, not a yeere of the World.
+
+## Names
+
+Book III Chapters VII–XII and Book IV through Chapter II, §. X, were attached by hand in `scripts/raleigh/b3-ch7-attach.mjs`. A tribe is on its patriarch. Iones are `ion`. A printed spelling that is already the title or a stored form of another record was not added as a name form. 254 of the 329 passages carry at least one link. The seventy-five without one are listed in the pass log. See N102–N105.
+
+Existing events received an account where the passage narrates that event: `artaxerxes-decree`, `esther-made-queen`, `peloponnesian-war`, `alexander-destroys-thebes`, `battle-of-issus`, `alexander-destroys-tyre`, `alexander-conquers-egypt`, `founding-of-alexandria`, and `battle-of-gaugamela`. No new event was created. There is no Granicus event, and none was invented. `reign-of-philip-ii` was not attached.

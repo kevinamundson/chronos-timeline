@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "amyntas-the-captain",
+  "type": "person",
+  "title": "Amyntas the Captaine",
+  "summary": "Raleigh names Amyntas the Captaine in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Amyntas, Captaine of the Graecians in Darius his pay, who marched away in order after Issus, and later led them into Aegypt. He is not Amyntas father of Philip. The one-word title would fold onto those records, so the title is three words. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book IV, Part I, Chapter II, §. IV, sig. 470b"
+    }
+  ]
+}

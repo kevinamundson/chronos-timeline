@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/person.schema.json",
+  "id": "cyrus-the-younger",
+  "type": "person",
+  "title": "Cyrus the younger",
+  "summary": "Raleigh names Cyrus the younger in the History of the World (1617).",
+  "description": "Named in Raleigh's History of the World (1617). Cyrus the yonger, sonne of Darius Nothus and Parysatis, brother of Artaxerxes Mnemon, Lieutenant of the lower Asia, who made warre vpon his brother. He is not Cyrus the Great. The one-word title would fold onto cyrus-son-of-agenor, so the title is three words. No yeere of the World was taken for him. Display only. No tier 1–4 chronology dates this person, so there is no sort year.",
+  "sorting_year": null,
+  "sorting_basis": {
+    "tier": "none",
+    "tier_rank": null,
+    "chronology": "cfah",
+    "note": "No tier gives a birth year. Raleigh is display-only."
+  },
+  "father": null,
+  "children": [],
+  "dates": {
+    "birth": [
+      {
+        "source": "cfah",
+        "date": null,
+        "year_am": null,
+        "year_bc_ad": null,
+        "precision": "unknown",
+        "citation": null,
+        "link": null,
+        "note": "pending CFAH reference"
+      }
+    ]
+  },
+  "events": [],
+  "scripture_refs": [],
+  "sources": [
+    "raleigh-history-of-the-world-1617"
+  ],
+  "related": [],
+  "free_source_links": [
+    {
+      "source_id": "raleigh-history-of-the-world-1617",
+      "url": "https://texts.earlyprint.org/works/A10357.xml",
+      "locator": "Book III, Part I, Chapter IX, §. I, sig. 434b–435a"
+    }
+  ],
+  "alt_names": [
+    "Cyrus the yonger"
+  ]
+}

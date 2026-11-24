@@ -26,7 +26,7 @@ import { isBlbUrl, isNonBlbScripture, blbFromOsis } from './blb.mjs';
 import { computeStandby, makeStandbyContext, hasPrintedYear, standbyCounts, standbySummaryLine } from './standby/compute.mjs';
 import { annotateWorldYear, assertRaleighDerived, raleighAmDisplay, raleighDerivedProblems, RALEIGH_DERIVED_NOTE, RALEIGH_SOURCE, ITALICS_NOTE } from './raleigh/derived-year.mjs';
 import { loadChronologicalTable, yearColumnIndex, yearColumnReport, assertJulianSplit } from './raleigh/table.mjs';
-import { loadXml, normalizedDocumentText, normalizeWs, extractPassages, alignStoredPassages, THROUGH_CHAPTER, BOOK2_THROUGH, BOOK3_THROUGH } from './raleigh/xml-text.mjs';
+import { loadXml, normalizedDocumentText, normalizeWs, extractPassages, alignStoredPassages, THROUGH_CHAPTER, BOOK2_THROUGH, BOOK3_THROUGH, BOOK4_THROUGH, BOOK4_SECTION_THROUGH } from './raleigh/xml-text.mjs';
 import { TIERS, TIER_LABEL, personTierSort, tierPick, isJones23, orderCfah } from './sort-rule.mjs';
 import { assertCalculatedCatalog, calculatedBasisNote } from './calculated/catalog.mjs';
 import { doreUrls, IIIF_BASE, DISPLAY_W, DORE_THUMB_DIR, doreThumbName } from './dore/urls.mjs';
@@ -956,7 +956,7 @@ if (kingDoc) {
     if (!/sig\./.test(p.citation) || !p.citation.includes(p.signature)) err(rel, `${p.id}: citation must name its signature`);
     if (p.signature_end !== p.signature && !p.citation.includes(p.signature_end)) err(rel, `${p.id}: citation must name the ending signature`);
   }
-  const extracted = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER, book2Through: BOOK2_THROUGH, book3Through: BOOK3_THROUGH });
+  const extracted = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER, book2Through: BOOK2_THROUGH, book3Through: BOOK3_THROUGH, book4Through: BOOK4_THROUGH, book4SectionThrough: BOOK4_SECTION_THROUGH });
   for (const msg of alignStoredPassages(doc.passages, extracted)) err(rel, msg);
   for (const [recordId, ids] of Object.entries(doc.accounts)) {
     const rec = records[recordId];

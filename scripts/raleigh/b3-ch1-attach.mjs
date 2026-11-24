@@ -24,7 +24,7 @@
 // Nitocris of Babylon is not the Egyptian nitocris.
 
 /** Chapters of Book III whose passages are attached only from this table. */
-export const B3_CHAPTERS = new Set(['1', '2', '3', '4', '5', '6']);
+export const B3_CHAPTERS = new Set(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']);
 
 export const B3 = {
   // Chapter I. The time between the destruction (gap) and the fall of the Assyrian Empire.
