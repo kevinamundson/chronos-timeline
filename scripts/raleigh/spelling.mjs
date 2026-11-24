@@ -687,6 +687,10 @@ const ETH_EXPLICIT = {
   singeth: 'sings',
   // "forttieth" is the ordinal fortieth. The double t keeps it off the ordinal pattern, and the verb rule would make forties.
   forttieth: 'fortieth',
+  // "gaineth" would otherwise become gaines, from the noun gaine.
+  gaineth: 'gains',
+  // "seuereth" would otherwise become severes, from the adjective severe.
+  seuereth: 'severs',
 };
 
 const ETH_EXPLICIT_REASON = {
@@ -705,6 +709,8 @@ const ETH_EXPLICIT_REASON = {
   inlargeth: 'verb enlarge → enlarges (Iosephus, indeed, inlargeth the Storie)',
   singeth: 'verb sing → sings; the stem singe is the verb to burn (hee singeth as it were the Epithalamion)',
   forttieth: 'ordinal fortieth, printed forttieth (the two and forttieth after their first returne)',
+  gaineth: 'verb gain → gains (the honour which he gaineth in the Warres)',
+  seuereth: 'verb sever → severs (the Riuer of Granick, which seuereth the Territorie of Troy)',
 };
 
 // Kept, and listed as unsure. The letters do not identify one modern verb.

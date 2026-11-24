@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Covered text of Raleigh's History (1617): Preface, contents, Book I, Part I,
-// Book II, Part I, and Book III, Part I.
+// Book II, Part I, Book III, Part I, and Book IV, Part I through the last stored chapter.
 // Rebuilds data/raleigh-accounts.json. With --write, also adds a person record
 // for every named individual in that range who does not already have one.
 // Undated people get a null CFAH date and no sort year.

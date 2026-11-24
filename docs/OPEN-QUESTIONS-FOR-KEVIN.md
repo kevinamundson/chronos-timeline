@@ -2233,7 +2233,7 @@ Pass 18 read Book II, Part I, Chapters XXIV–XXVIII, and stopped at the end of 
   2. Name a figure that should be stored, or an existing event that should gain or lose a passage.
 - **Recommendation:** option 1.
 
-Pass 19 read Book III, Part I, Chapters I–VI, and stopped at the end of Chapter VI. The quotes are in `data/raleigh-body-extract.md`. N1 through N97 stay open.
+Pass 19 read Book III, Part I, Chapters I–VI, and stopped at the end of Chapter VI. Pass 20 read Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X. The quotes are in `data/raleigh-body-extract.md`. N1 through N101 stay open.
 
 ### N98. Chapters I–VI were attached by hand, and the tribes go to the patriarchs
 
@@ -2269,6 +2269,43 @@ Pass 19 read Book III, Part I, Chapters I–VI, and stopped at the end of Chapte
 
 - **Why it matters:** No sentence in p03359–p03673 prints a yeere of the World. `year_am` was not stored. `year_bc_ad` stays null. A new event cannot take a sort year from Raleigh. Reign lengths, the second yeere and the sixth yeere of Darius, the Olympiad, the 36 yeeres, the four yeeres of the gathering, and “in the yeere 1588” were not entered (N46, N97). Army numbers and the lengths of the battles were not entered. Dated statements written in this pass: 0.
 - **Where an existing event was attached:** the passage narrates it. `fall-of-jerusalem-586-bc`, `daniel-taken-to-babylon`, `daniel-interprets-nebuchadnezzars-dream`, and `minor-deportation-nebuchadnezzars-23rd` in Chapter I. `fall-of-nineveh` in Chapter I. `fall-of-babylon-539-bc` in Chapters I–IV. `cyrus-decree-of-return` in Chapters I and III. `return-under-zerubbabel`, `temple-rebuilding-begins`, and `second-temple-completed` in Chapter III. `temple-rebuilding-resumed` and `second-temple-completed` again in Chapter V. `xerxes-invades-greece` on p03534 and in Chapter VI (p03614, p03616, p03632, p03661). `battle-of-marathon` in Chapter V and on p03659. `battle-of-thermopylae`, `battle-of-salamis`, and `battle-of-plataea` in Chapter VI. No Mycale event exists, and none was created. `reign-of-xerxes-i` was not attached. No new event was created.
+- **Options:**
+  1. Leave the years unstored and these events as attached, as now.
+  2. Name a figure that should be stored, or an existing event that should gain or lose a passage.
+- **Recommendation:** option 1.
+
+### N102. Chapters VII–XII and Book IV through Arbela were attached by hand, and the tribes go to the patriarchs
+
+- **Why it matters:** These chapters are Greece after Xerxes, the Peloponnesian War, Cyrus the younger, the Theban years, Philip, and Alexander through Arbela. They print most cities, rivers, and mountains in capitals. The automatic linker would have made people of places and headings. So `scripts/raleigh/b3-ch7-attach.mjs` names each person or event on each passage by hand. Names not in that table are not attached. 254 of the 329 passages carry at least one link. The seventy-five without one are listed in `docs/raleigh-body-pass-log.md`. A passage that names a tribe is on the patriarch. Iones are `ion`. A spelling that is already the title or a stored form of another record is not added as a name form.
+- **Options:**
+  1. Leave the tribes on the patriarchs, as now.
+  2. Make a separate record for each tribe, and move the land passages there.
+- **Recommendation:** option 1. It matches N59, N65, N71, N77, N83, N89, N94, and N98.
+
+### N103. Men who share a name in these chapters
+
+- **Why it matters:** Each was kept apart only where the passage says which one it means.
+  - **Cyrus and Artaxerxes:** Cyrus the yonger is `cyrus-the-younger`, not `cyrus-the-great`. Artaxerxes his brother is `artaxerxes-mnemon`. Artaxerxes Longimanus, including Ahashuerosh the husband of Hester, is `artaxerxes-longimanus`. Ochus is the Persian `ochus`.
+  - **Clearchus, Pausanias, Agis, and Philip:** Clearchus of the Ten Thousand is `clearchus-of-the-ten-thousand`, not the Peripatetick `clearchus`. Pausanias the Plataea general stays `pausanias-of-sparta`. Pausanias king of Sparta with Agis is `pausanias-king-of-sparta`. Pausanias of Macedon is `pausanias-of-macedon`. Pausanias who slew Philip is `pausanias-the-assassin`. The writer stays `pausanias`. Agis king of Sparta in this war is `agis-king-of-sparta`, not the second of the Heraclidae. Philip father of Alexander is `philip-ii-of-macedon`, not the table king `philip`. Philip the first of Macedon is `philip-i-of-macedon`. Philip the second of Spaine on p03895 is `philip-king-of-spaine`.
+  - **Amyntas and Alexander:** Amyntas I stays `amintas-king-of-macedon`. Amyntas father of Philip is `amyntas-father-of-philip`. Amyntas son of Perdiccas is `amyntas-son-of-perdiccas`. Amyntas the Graecian captain under Darius is `amyntas-the-captain`. Alexander son of Amintas stays `alexander-son-of-amintas`. Alexander the second of Macedon is `alexander-ii-of-macedon`. Alexander of Epirus is `alexander-of-epirus`. Alexander of Pheres is `alexander-of-pheres`. Alexander the Great stays `alexander-the-great`.
+  - **Other shared letters:** The two Megabazus of the Egyptian war are `megabazus` and `megabazus-son-of-zopyrus`. Achaemenes the Viceroy is `achemenes-son-of-darius`; the form Achaemenes was not stored. Amyrteus, including Amyrtaeus of Sais and Amyrlaeus, is new `amyrteus`, not `psammenitus` and not the Cory `amyrteos`. Orestes of Thessaly is `orestes-of-thessaly`. Orestes of Macedon is `orestes-of-macedon`. The table Orestes stays `orestes`. Sophocles the Sicilian generall is `sophocles-the-generall`. Conon the Briton is `conon-the-briton`. Conon the Athenian stays `conon`. Memnon the Persian is `memnon-the-persian`, not the defender of Troy. Aristodemus Darius his admirall is `aristodemus-the-admiral`. Socrates under Parmenio is `socrates-under-parmenio`. Cisseus whom Caranus ouerthrew is `cisseus-of-macedon`. Gygea wife of Amyntas is `gygea-wife-of-amyntas`. Lycophron of Pheres is `lycophron-of-pheres`. Amorges the rebel is `amorges-the-rebel`. Mithridates the eunuch is `mithridates-the-eunuch`. Attalus of Macedon is `attalus-of-macedon`. Antigonus who slue Cleopatra at Sardis is `antigonus`, not `antigonus-gonatas`. Perseus who consulted Hammon is `perseus-son-of-danae`. Hephaestion, printed Ephestion, stays `hephaestion`. Iaddus stays `jaddua`.
+- **Options:**
+  1. Leave these as they are.
+  2. Name a passage that should move to another record, or two records that should merge.
+- **Recommendation:** option 1. A silent merge would attach a different man. The open case is whether Amyrteus of the Inaros war and Amyrtaeus of Sais are one man; they stay on `amyrteus`. Whether Arianus and Arrianus are one historian; they stay two records as printed.
+
+### N104. Names that were not attached in these chapters
+
+- **Why it matters:** Hercules stays unlinked (N33). God, the Lord, the Almightie, Fortune, Pallas where only Fortune is paired in some sentences, the Deuill, and diuine Prouidence were not made people, except `pallas` on p03747 where Pallas is printed, and `jupiter` where Iupiter or Iupiter Hammon is printed. Gaps were not filled, including the Chapter XII heading, “〈◊ 〉 the Lacedaemonian” on p03681, the gapped Themistocles on p03689, King Pharsalus, the thirtie Tyrants as a group, the Ephori as an office, the foure hundred, the ten Captaines, unnamed wives and children, and the many gapped Macedonian kings in Book IV Chapter I. Minerua was not attached. Nations, cities, rivers, and headings were not made people.
+- **Options:**
+  1. Leave these unattached, as now.
+  2. Name the man for a passage, and it will be attached.
+- **Recommendation:** option 1, unless you know the man.
+
+### N105. No yeere of the World, and figures that have no new event
+
+- **Why it matters:** No sentence in p03674–p04002 prints a yeere of the World. `year_am` was not stored. `year_bc_ad` stays null. A new event cannot take a sort year from Raleigh. Reign lengths, Olympiad numbers, the building of Rome as a mark, army numbers, and the day-counts of Granick, Issus, and Arbela were not entered (N46, N101). Dated statements written in this pass: 0.
+- **Where an existing event was attached:** the passage narrates it. `artaxerxes-decree` and `esther-made-queen` in Book III Chapter VII. `peloponnesian-war` from Chapter VII through Chapter XII. `alexander-destroys-thebes`, `battle-of-issus`, `alexander-destroys-tyre`, `alexander-conquers-egypt`, `founding-of-alexandria`, and `battle-of-gaugamela` in Book IV Chapter II. No Granicus event exists, and none was created. `reign-of-philip-ii` was not attached. No new event was created.
 - **Options:**
   1. Leave the years unstored and these events as attached, as now.
   2. Name a figure that should be stored, or an existing event that should gain or lose a passage.

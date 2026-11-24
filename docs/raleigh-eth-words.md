@@ -738,3 +738,17 @@ Seven words appear in Book III, Part I, Chapters I–VI and in no earlier stored
 | permitteth | 1 | permits | verb permit → permits | p03424: re, we finde, that he had such conditions, as God permitteth to be in a King for the ruine of the pe |
 | predisposeth | 1 | predisposes | verb predispose → predisposes | p03413: ssed light, which clarifies the soule of man, and predisposeth it vnto the brightnesse of eternall fel |
 | relateth | 1 | relates | verb relate → relates | p03386: t the next king entred by Election: seeing Daniel relateth not the meanes and circumstances of Bal |
+
+## Pass 20
+
+Seven words appear in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X, and in no earlier stored passage. Counts are in those 329 passages only. The four flagged words of passes 1–4 do not appear again here. Five take the dictionary stem. `gaineth` and `seuereth` are explicit: the letter rules would make gaines (from the noun gaine) and severes (from the adjective severe).
+
+| Printed | Count | Modern | Reason | Sample |
+|---|---:|---|---|---|
+| expecteth | 1 | expects | verb expect → expects | p03749: e what reason willeth, not what opinion expecteth, and to measure honour or dishonour by t |
+| gaineth | 1 | gains | verb gain → gains (the honour which he gaineth in the Warres) | p03937: t as well impart of the honour which he gaineth in the Warres, as hee doth of the spoiles, |
+| laieth | 1 | lays | verb lay → lays | p03970: ies of passing on towards the East, and laieth the losse of the last battaile to the strai |
+| purposeth | 1 | purposes | verb purpose → purposes | p03920: shall hardly attaine the Port which hee purposeth to 〈◊ 〉: and it no lesse becommeth the w |
+| resolueth | 1 | resolves | verb resolve → resolves | p03931: fore Machiauels counsell, that he which resolueth to defend a passage, should with his abl |
+| seuereth | 1 | severs | verb sever → severs (the Riuer of Granick, which seuereth the Territorie of Troy) | p03929:  at. For at the Riuer of Granick, which seuereth the Territorie of Troy from Propontis, th |
+| willeth | 1 | wills | verb will → wills | p03749: nest and valiant man to doe what reason willeth, not what opinion expecteth, and to measur |

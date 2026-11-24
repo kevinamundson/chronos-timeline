@@ -502,6 +502,33 @@ The statements and the figures that were not entered are quoted in `data/raleigh
 - Name forms added: 1,223 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13, 114 in pass 14, 94 in pass 15, 136 in pass 16, 147 in pass 18, 87 in pass 19)
 - Accounts: 3,673 passages on 2,191 records
 
+## Pass 20
+
+Book III, Part I, Chapter VII, sig. 420a, through Book IV, Part I, Chapter II, §. X, sig. 476a. The headings are “CHAP. VII. Of things that passed in Greece from the end of the Persian Warre, to the beginning of the Peloponnesian.”, “CHAP. VIII. Of the Peloponnesian Warre.”, “CHAP. IX. Of matters concurring with the Peloponnesian Warre, or shortly following it.”, “CHAP. X. Of the expedition of CYRVS the younger.”, “CHAP. XI. Of the affaires of Greece, whilest they were managed by the Lacedaemonians.”, “CHAP. XII. Of the flourishing estate of Thebes, from the battaile of Leuctra to the battaile of 〈◊ 〉.” (the gap stays empty), “CHAP. I. Of PHILIP, the Father of ALEXANDER the Great, King of Macedon.”, and “CHAP. II. Of ALEXANDER the Great.” Three hundred twenty-nine passages, p03674–p04002: 33 in Book III Chapter VII, 63 in VIII, 8 in IX, 36 in X, 26 in XI, 19 in XII, 58 in Book IV Chapter I, and 86 in Book IV Chapter II through §. X. Book III Chapters VII–XII are 185 passages, under the 250 floor. Book IV Chapter I is 58. Chapter II whole would carry the stop past 330, so the pass stops at the close of the first Book IV Chapter II `div` with `type="section"` and `n="10"`, the printed §. X, “The battaile of Arbela.” The XML section numbers after printed §. XII do not match the printed numerals. Later section divs in that chapter reuse `n` and are not printed §. X. The same rules as passes 11–19. `year_bc_ad` stays null. No yeere of the World is printed, so no `year_am` was stored. Reign lengths, Olympiads, army numbers, and the building of Rome as a mark of time were not stored. No calculated sort was written.
+
+The people and events on each passage are named by hand, in `scripts/raleigh/b3-ch7-attach.mjs`. `scripts/raleigh/hand-attach.mjs` joins it with the earlier tables. `BOOK3_THROUGH` is 12. `BOOK4_THROUGH` is 2. `BOOK4_SECTION_THROUGH` is `'10'`. A spelling that is already the title or a stored form of another record is not added as a name form. 254 of the 329 passages carry at least one link. The seventy-five without one are p03674, p03675, p03678, p03679, p03680, p03692, p03695, p03696, p03705, p03708, p03710, p03712, p03713, p03714, p03715, p03716, p03718, p03719, p03720, p03721, p03722, p03724, p03725, p03726, p03727, p03728, p03729, p03730, p03736, p03737, p03738, p03739, p03740, p03741, p03742, p03744, p03746, p03750, p03751, p03758, p03765, p03767, p03771, p03773, p03776, p03790, p03798, p03800, p03802, p03803, p03804, p03807, p03814, p03817, p03820, p03827, p03831, p03836, p03838, p03840, p03841, p03846, p03848, p03850, p03861, p03862, p03876, p03930, p03937, p03953, p03954, p03985, p03990, p03994, and p03995. See N102.
+
+### Counts
+
+- Dated statements written: 0
+- People created: 180, all first named in this range, all display-only (9, 11, 8, 14, 22, 5, 70, and 41)
+- Places created: 0
+- Events created: 0
+- Existing person and event files rewritten: 0. Events received accounts from these chapters. No existing person file was replaced.
+- Name forms added: 53. The note on each of these forms is “Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X.” No earlier form was rewritten. A surface already held by another record was not stored.
+- Accounts: 4,002 passages, on 2,386 records. The first 3,673 passages are unchanged, and no earlier link was dropped.
+
+The statements and the figures that were not entered are quoted in `data/raleigh-body-extract.md`. The CFAH import and the standby compute were run after the accounts were written. No other importer was re-run. The new people are display-only, and none of them has a standby placement. The open questions for these chapters are N102–N105.
+
+### Cumulative
+
+- Dated statements written: 167 (4 in pass 1, 27 in pass 2, 4 in pass 3, 2 in pass 4, 3 in pass 5, 29 in pass 6, 21 in pass 7, 9 in pass 8, 7 in pass 9, 15 in pass 10, 8 in pass 11, 32 in pass 12, 2 in pass 13, 3 in pass 14, 1 in pass 15, 0 in pass 16, 0 in pass 18, 0 in pass 19, 0 in pass 20)
+- People created: 1,876
+- Places created: 0
+- Events created: 0
+- Name forms added: 1,276 (5 through pass 2, 231 in pass 3, 47 in pass 4, 20 in pass 5, 45 in pass 6, 21 in pass 7, 22 in pass 8, 25 in pass 9, 32 in pass 10, 67 in pass 11, 75 in pass 12, 55 in pass 13, 114 in pass 14, 94 in pass 15, 136 in pass 16, 147 in pass 18, 87 in pass 19, 53 in pass 20)
+- Accounts: 4,002 passages on 2,386 records
+
 ## RESUME POINT
 
-Book III, Part I, Chapter VII. The heading is “CHAP. VII. Of things that passed in Greece from the end of the Persian Warre, to the beginning of the Peloponnesian.” Pass 19 stopped at the end of Chapter VI. The last stored passage is p03673, Book III, Part I, Chapter VI, §. XI, sig. 419b. The next passage is p03674, sig. 420a. Do not start again inside Chapters I–VI. The hand table is `scripts/raleigh/b3-ch1-attach.mjs`. `BOOK3_THROUGH` is 6. The next pass raises it when Chapter VII is stored, and adds that chapter to `B3_CHAPTERS` before the covered write. The chapter names many people who share letters with records already stored.
+Book IV, Part I, Chapter II, §. XI. The heading is “§. XI. Of things following the battaile of Arbela.” Pass 20 stopped at the close of the first Book IV Chapter II section div with `n="10"`, the printed §. X. The last stored passage is p04002, Book IV, Part I, Chapter II, §. X, sig. 476a. The next passage is p04003. Do not start again inside Book III, or inside Book IV Chapter I, or inside Chapter II, §. I–X. The hand table is `scripts/raleigh/b3-ch7-attach.mjs`. `BOOK3_THROUGH` is 12. `BOOK4_THROUGH` is 2. `BOOK4_SECTION_THROUGH` is `'10'`. The next pass raises `BOOK4_SECTION_THROUGH` or `BOOK4_THROUGH` when the next section is stored, and keeps Book IV Chapter II in `B4_CHAPTERS`. Later section divs in that chapter reuse `n` and are not printed §. X. The chapter names many people who share letters with records already stored.

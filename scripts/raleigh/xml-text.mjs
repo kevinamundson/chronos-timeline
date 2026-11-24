@@ -2,7 +2,7 @@
 // Margin notes are left out. Tags are left out. Whitespace collapses to one space.
 // A passage is one paragraph, one heading, one contents item, or one body list.
 // The covered range is the Preface, the contents, Book I, Part I, Book II, Part I,
-// and Book III, Part I.
+// Book III, Part I, and Book IV, Part I through the last stored chapter.
 // `throughChapter` is the last Book I chapter to include. `book2Through` is the last
 // Book II, Part I chapter. Pass 18 raises this through Chapter XXVIII, the end of the book.
 // `book3Through` is the last Book III, Part I chapter. Pass 19 stores Chapters I–VI.
