@@ -968,6 +968,21 @@
       ]
     },
     {
+      "id": "agesilaus",
+      "forms": [
+        {
+          "form": "AGESILAVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter XI, §. IV, sig. 448a. The passage prints “AGESILAVS”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
+        }
+      ]
+    },
+    {
       "id": "ahab",
       "forms": [
         {
@@ -4582,6 +4597,21 @@
       ]
     },
     {
+      "id": "charon-of-thebes",
+      "forms": [
+        {
+          "form": "Charon",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter XI, §. XI, sig. 452a–452b. The passage prints “Charon”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
+        }
+      ]
+    },
+    {
       "id": "chedorlaomer",
       "forms": [
         {
@@ -5816,6 +5846,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": null
+        }
+      ]
+    },
+    {
+      "id": "dercyllidas",
+      "forms": [
+        {
+          "form": "Dircyllidas",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter XI, §. IX, sig. 450b–451b. The passage prints “Dircyllidas”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
         }
       ]
     },
@@ -9618,6 +9663,21 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book III, Part I, Chapters I–VI."
+        }
+      ]
+    },
+    {
+      "id": "iphicrates",
+      "forms": [
+        {
+          "form": "Iphierates",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter XI, §. IX, sig. 450b–451b. The passage prints “Iphierates”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
         }
       ]
     },
@@ -15816,6 +15876,21 @@
       ]
     },
     {
+      "id": "pharnabazus",
+      "forms": [
+        {
+          "form": "PHARNABAZVS",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter XI, §. V, sig. 449a. The passage prints “PHARNABAZVS”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
+        }
+      ]
+    },
+    {
       "id": "pheles",
       "forms": [
         {
@@ -21041,6 +21116,36 @@
           "link": "https://texts.earlyprint.org/works/A10357.xml",
           "source_text_id": "raleigh-history-of-the-world-1617",
           "note": "Spelling only. Read in Book II, Part I, Chapters XXIV–XXVIII."
+        }
+      ]
+    },
+    {
+      "id": "tissaphernes",
+      "forms": [
+        {
+          "form": "Thissaphernes",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter XI, §. II, sig. 446b–447a. The passage prints “Thissaphernes”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
+        }
+      ]
+    },
+    {
+      "id": "tithraustes",
+      "forms": [
+        {
+          "form": "TITHRAVSTES",
+          "script": "latin",
+          "role": "alternate",
+          "witness": "history",
+          "citation": "Raleigh, The History of the World (1617, EEBO-TCP A10357), Book III, Part I, Chapter XI, §. IV, sig. 448a. The passage prints “TITHRAVSTES”.",
+          "link": "https://texts.earlyprint.org/works/A10357.xml",
+          "source_text_id": "raleigh-history-of-the-world-1617",
+          "note": "Spelling only. Read in Book III, Part I, Chapters VII–XII, and Book IV, Part I, through Chapter II, §. X."
         }
       ]
     },
