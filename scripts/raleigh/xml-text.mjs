@@ -28,7 +28,7 @@ export const THROUGH_CHAPTER = 12;
 /** Last Book II, Part I chapter stored in the account file. 0 means Book II is not included. */
 export const BOOK2_THROUGH = 28;
 /** Last Book III, Part I chapter stored in the account file. 0 means Book III is not included. */
-export const BOOK3_THROUGH = 7;
+export const BOOK3_THROUGH = 8;
 /** Last Book IV, Part I chapter stored in the account file. 0 means Book IV is not included. */
 export const BOOK4_THROUGH = 0;
 /**
