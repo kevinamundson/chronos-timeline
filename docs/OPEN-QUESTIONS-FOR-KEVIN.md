@@ -2333,6 +2333,7 @@ Pass 19 read Book III, Part I, Chapters I–VI, and stopped at the end of Chapte
   1. Leave them as printed, as now.
   2. Name the modern form for a word, and it will be modernized.
 - **Recommendation:** option 1, unless you know the word.
+- **Ruling (Kevin, 2026-11-27):** Leave the Greek notation as printed. βγ (item 15) is the Greek numeral for 23, not a word to modernize — fine as is. Passage p03394, Book III, Part I, Chapter I, §. VI: "which how it could be supposed in βγ standing for 23. I do not well perceive."
 
 ### N107. Names whose modern form is uncertain (stored modern edition)
 
@@ -2357,6 +2358,7 @@ Pass 19 read Book III, Part I, Chapters I–VI, and stopped at the end of Chapte
   1. Leave "bath" as printed, as now.
   2. Correct these five to "has" in the modern edition (the original text stays untouched).
 - **Recommendation:** option 2 — the sense is unambiguous in all five, and "bath" as a verb is meaningless. But it is an editorial correction, not a spelling modernization, so it is your call.
+- **Ruling (Kevin, 2026-11-27):** Correct all five to "has" in the modern edition (original text untouched). Applied: `PASSAGE_CORRECTIONS` in `scripts/raleigh/modern-edition.mjs`; stored files regenerated on branch `gb/raleigh-modern-edition` (PR #45).
 
 ## O. Dynasty of Slaves (BLK SHP Scott, 2026)
 

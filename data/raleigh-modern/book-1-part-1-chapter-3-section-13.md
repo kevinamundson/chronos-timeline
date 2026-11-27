@@ -28,7 +28,7 @@ The Greeks *Greekes* had a conceit, that Pishon was Danubius: the Rabbins *Rabbi
 
 ## p00979 · sig. 72b
 
-The same confusion of names bath Tigris, as Diglito, and *Diglath, Seilax*, and Sollax: of the Hebrews it was called Hiddekel *Hiddikel*: now of the inhabitants Tegil.
+The same confusion of names has Tigris, as Diglito, and *Diglath, Seilax*, and Sollax: of the Hebrews it was called Hiddekel *Hiddikel*: now of the inhabitants Tegil.
 
 ## p00980 · sig. 72b
 

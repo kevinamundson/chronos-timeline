@@ -24,6 +24,10 @@
 //   - Every foreign-language phrase carries an English translation
 //     alongside it; the original stays as a quotation. Translations are
 //     part of the stored files (and the downloads).
+//   - Editorial corrections (Kevin, Nov 27, 2026, N108): "bath" is a
+//     misprint for "hath" (has) in five passages (p00008, p00012, p00027,
+//     p00979, p02718) and is corrected to "has" in the modern edition
+//     only; the original text is untouched. See PASSAGE_CORRECTIONS.
 //   - Dates, figures, and citations are never rewritten (repo cardinal
 //     rule). The original text is untouched.
 //   - A passage is addressable by the same passage id the intake uses
@@ -187,6 +191,43 @@ function alignTokens(orig, modern) {
   }
   if (oi < n || mi < m) blocks.push({ o: [oi, n], m: [mi, m] });
   return blocks;
+}
+
+// Editorial corrections, applied to the passage text before modernization
+// (Kevin, 2026-11-27, open question N108). "bath" is a misprint for "hath"
+// (has) in these five passages; both XML copies read "bath", so it is in
+// the print, not a transcription error. The sixth "bath" (p02343, "a very
+// wholesome bath") is the genuine noun and is left alone. Each passage has
+// exactly one "bath"; if that ever stops being true the correction is
+// skipped and the passage stays as printed. Italic spans after the
+// replacement shift by the length delta, like the name replacements below.
+const PASSAGE_CORRECTIONS = {
+  p00008: [['bath', 'has']],
+  p00012: [['bath', 'has']],
+  p00027: [['bath', 'has']],
+  p00979: [['bath', 'has']],
+  p02718: [['bath', 'has']],
+};
+
+function applyPassageCorrections(id, passage, italics) {
+  const corrections = PASSAGE_CORRECTIONS[id];
+  if (!corrections) return { passage, italics };
+  let text = passage;
+  let spans = italics || [];
+  for (const [from, to] of corrections) {
+    const re = new RegExp(`\\b${escapeReg(from)}\\b`, 'g');
+    const hits = [...text.matchAll(re)];
+    if (hits.length !== 1) continue;
+    const at = hits[0].index;
+    text = text.slice(0, at) + to + text.slice(at + from.length);
+    const delta = to.length - from.length;
+    spans = spans.map(([a, b]) => {
+      if (b <= at) return [a, b];
+      if (a >= at + from.length) return [a + delta, b + delta];
+      return [Math.min(a, at), Math.max(b, at + from.length) + delta];
+    }).filter(([a, b]) => a < b);
+  }
+  return { passage: text, italics: spans };
 }
 
 // Modernize one passage, keeping the italic spans. Returns the modern text
@@ -433,7 +474,8 @@ export function buildModernEdition() {
     lines.push('> Sir Walter Raleigh, *The History of the World* (1617). Modern edition. Original spelling: EarlyPrint A10357 (EEBO-TCP), London 1617, Stansby for Walter Burre. The original text is untouched; this file is the stored modern copy.');
     lines.push('');
     for (const p of g.passages) {
-      const { modern, spans } = modernizePassage(p.passage, p.italics);
+      const corrected = applyPassageCorrections(p.id, p.passage, p.italics);
+      const { modern, spans } = modernizePassage(corrected.passage, corrected.italics);
       // 1. Latin name replacements (a name in Latin form becomes its modern
       //    form, with the original as a name reference on first occurrence).
       let text = modern;
