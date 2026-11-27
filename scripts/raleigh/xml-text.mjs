@@ -37,6 +37,21 @@ export const BOOK4_THROUGH = 2;
  * section div. Null stores that chapter whole. Pass 20 uses '10'.
  */
 export const BOOK4_SECTION_THROUGH = '10';
+/** Last Book V, Part I chapter. Book V has 6 chapters. 0 means Book V is not included. */
+export const BOOK5_THROUGH = 6;
+/**
+ * The full work: Preface, contents, and Books I–V, Part I, whole.
+ * `extractFullPassages` uses this. It keeps the intake ids: the first 4,002
+ * passages are the stored account file, in order.
+ */
+export const FULL_THROUGH = {
+  throughChapter: 12,
+  book2Through: 28,
+  book3Through: 12,
+  book4Through: 7,
+  book4SectionThrough: null,
+  book5Through: BOOK5_THROUGH,
+};
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI', 'XXVII', 'XXVIII', 'XXIX', 'XXX', 'XXXI', 'XXXII', 'XXXIII', 'XXXIV', 'XXXV', 'XXXVI', 'XXXVII', 'XXXVIII', 'XXXIX', 'XL'];
 
@@ -215,6 +230,9 @@ function location(stack, inBody, range) {
   if (inBody && part === '1' && book === '4' && n >= 1 && n <= range.book4Through) {
     return { kind: 'body', book, part, chapter, section, subsection };
   }
+  if (inBody && part === '1' && book === '5' && n >= 1 && n <= (range.book5Through || 0)) {
+    return { kind: 'body', book, part, chapter, section, subsection };
+  }
   return null;
 }
 
@@ -224,7 +242,7 @@ function location(stack, inBody, range) {
  * Each passage carries `hi` (the italic strings) and `italics` ([start, end] into `passage`).
  * The account file stores the plain passage only. Build and validate derive the spans.
  */
-export function extractPassages(xml, { throughChapter = 12, book2Through = 0, book3Through = 0, book4Through = 0, book4SectionThrough = null } = {}) {
+export function extractPassages(xml, { throughChapter = 12, book2Through = 0, book3Through = 0, book4Through = 0, book4SectionThrough = null, book5Through = 0 } = {}) {
   const re = /<!--[\s\S]*?-->|<!\[CDATA\[[\s\S]*?\]\]>|<[^>]+>|[^<]+/g;
   const stack = [];
   let inBody = false;
@@ -236,7 +254,7 @@ export function extractPassages(xml, { throughChapter = 12, book2Through = 0, bo
   const passages = [];
   let contentsPartLabel = null;
   let contentsChapterLabel = null;
-  const range = { book1Through: throughChapter, book2Through, book3Through, book4Through, book4SectionThrough };
+  const range = { book1Through: throughChapter, book2Through, book3Through, book4Through, book4SectionThrough, book5Through };
 
   const inScope = () => {
     const loc = location(stack, inBody, range);
@@ -420,6 +438,11 @@ export function extractPassages(xml, { throughChapter = 12, book2Through = 0, bo
     delete p.chapterLabel;
   });
   return passages;
+}
+
+/** The whole work: Preface, contents, and Books I–V, Part I, whole. */
+export function extractFullPassages(xml) {
+  return extractPassages(xml, FULL_THROUGH);
 }
 
 /** Note-stripped, tag-stripped, whitespace-normalised text of the whole file. */
