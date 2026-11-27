@@ -24,6 +24,14 @@ Pass 13 (Book II, Part I, Chapter X) adds seven words those tables do not list. 
 
 Pass 14 (Book II, Part I, Chapters XI–XIII) adds twenty-two words those tables do not list. Twenty change. Two stay: `haroseth`, the city; and `iephunneth`, the name. None of the twenty-two is flagged. `assiegeth` is besiege, `commaundeth` is command, `picketh` is pick, `smoothereth` is smother. `ouer-commeth` is joined to overcomes, like fore-seeth. Through Chapter XIII the inventory is 511 distinct words: 463 change, 44 stay, and the same 4 flagged. The new rows are under "Pass 14".
 
+## Stored modern edition (Nov 27, 2026)
+
+The stored modern edition (`data/raleigh-modern/`) requires every word to be Modern English and pass spellcheck. Three words this log keeps are modernized there, because the spelling map is checked before the -eth rule and the map gives their modern form. This does not rewrite the tables above; it records the difference.
+
+- `moneth` → `month`, `moneths` → `months` (161 occurrences). They are nouns, so the -eth verb rule never applied to them; the map modernizes them.
+- `hundreth` → `hundredth`. Same: a noun, not a verb.
+- `Geth` → `Gath` (the Philistine city). The name review modernized it.
+
 ## Decisions
 
 - hath becomes has. It is the irregular third person of have. It does not end in -eth. An all-capital HATH becomes HAS. The capitals stay (open question N17).

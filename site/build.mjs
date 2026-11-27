@@ -45,6 +45,14 @@ const nameFormDoc = readJSON(join(DATA, 'name-forms.json'));
 const nameForms = Object.fromEntries((nameFormDoc.people || []).map((p) => [p.id, p.forms]));
 const nameLinkOverrides = readJSON(join(DATA, 'name-link-overrides.json'));
 const raleighAccounts = readJSON(join(DATA, 'raleigh-accounts.json'));
+// Stored modern edition (data/raleigh-modern/index.json): the canonical
+// modern form of every passage, addressable by the same passage id the
+// intake uses. The Modern toggle serves this; the Original toggle still
+// renders the original text with renderProse.
+const raleighModern = existsSync(join(DATA, 'raleigh-modern', 'index.json'))
+  ? readJSON(join(DATA, 'raleigh-modern', 'index.json'))
+  : { passages: {} };
+const raleighModernById = raleighModern.passages || {};
 const raleighExtract = extractPassages(loadXml(root), { throughChapter: THROUGH_CHAPTER, book2Through: BOOK2_THROUGH, book3Through: BOOK3_THROUGH, book4Through: BOOK4_THROUGH, book4SectionThrough: BOOK4_SECTION_THROUGH });
 const raleighAlignErrors = alignStoredPassages(raleighAccounts.passages, raleighExtract);
 if (raleighAlignErrors.length) {
@@ -873,7 +881,7 @@ ${jsonScript('map-data', locations.filter((l) => l.lat != null && l.lng != null)
     scripts: `<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>${leafletScript}<script src="/assets/app.js" defer></script>` }));
 }
 
-const RALEIGH_INTRO = `Sir Walter Raleigh, <i>The History of the World</i> (1617). His words, in book order. <a href="https://texts.earlyprint.org/works/A10357.xml">EarlyPrint A10357</a>`;
+const RALEIGH_INTRO = `Sir Walter Raleigh, <i>The History of the World</i> (1617). His words, in book order. <a href="https://texts.earlyprint.org/works/A10357.xml">EarlyPrint A10357</a>. The modern spelling is the stored modern edition: <a href="/raleigh-modern/">the whole work, by section, with downloads</a>.`;
 const RALEIGH_POPOUT = `<svg class="raleigh-popout-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6.5 2.5H3.2A1.2 1.2 0 0 0 2 3.7v9.1a1.2 1.2 0 0 0 1.2 1.2h9.1a1.2 1.2 0 0 0 1.2-1.2V9.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8.5 2h5.5v5.5M14 2 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
 function raleighPassages(recordId) {
@@ -908,7 +916,9 @@ document.getElementById(${id})?.addEventListener('click', (event) => {
 
 function passageSpans(p) {
   const spans = p.italics || [];
-  return `<p class="raleigh-text"><span class="spell-modern">${renderProse(p.passage, spans, { modern: true })}</span><span class="spell-original" data-pagefind-ignore="all">${renderProse(p.passage, spans, { modern: false })}</span></p>`;
+  const stored = raleighModernById[p.id];
+  const modernHtml = stored && stored.modern ? stored.modern : renderProse(p.passage, spans, { modern: true });
+  return `<p class="raleigh-text"><span class="spell-modern">${modernHtml}</span><span class="spell-original" data-pagefind-ignore="all">${renderProse(p.passage, spans, { modern: false })}</span></p>`;
 }
 
 function raleighAccount(recordId) {
@@ -1467,6 +1477,59 @@ ${sourcesSection(p)}</article>`;
 
 const raleighFullCount = writeRaleighFullPages();
 
+// The stored modern edition: one page listing every section of Raleigh's
+// History of the World (1617) in modern spelling, with bulk and per-section
+// downloads. The files are built by scripts/raleigh/build-downloads.mjs
+// from data/raleigh-modern/ and served at /downloads/raleigh-modern/.
+function writeRaleighModernPage() {
+  const byFile = new Map();
+  for (const [id, p] of Object.entries(raleighModernById)) {
+    if (!byFile.has(p.file)) byFile.set(p.file, []);
+    byFile.get(p.file).push({ ...p, id });
+  }
+  const files = [...byFile.keys()];
+  const bulk = 'raleigh-history-of-the-world-modern';
+  const formats = ['md', 'epub', 'docx', 'pdf', 'xml'];
+  const fmtLabel = { md: 'Markdown', epub: 'EPUB', docx: 'Word', pdf: 'PDF', xml: 'XML' };
+  const bulkLinks = formats.map((f) => `<a href="/downloads/raleigh-modern/${bulk}.${f}">${fmtLabel[f]}</a>`).join(' · ');
+  // Group sections by book (the file stem starts book-<n>- or is preface/contents).
+  const groups = new Map();
+  for (const file of files) {
+    const ps = byFile.get(file);
+    const title = ps[0].section;
+    const m = file.match(/^book-(\d+)-/);
+    const book = m ? `Book ${['', 'I', 'II', 'III', 'IV', 'V'][Number(m[1])]}` : (file.startsWith('contents-') ? 'Contents' : 'Preface');
+    if (!groups.has(book)) groups.set(book, []);
+    groups.get(book).push({ file, title });
+  }
+  const groupHtml = [...groups.entries()].map(([book, secs]) => {
+    const rows = secs.map(({ file, title }) => {
+      const slug = file.replace(/\.md$/, '');
+      const links = formats.map((f) => `<a href="/downloads/raleigh-modern/${slug}.${f}">${fmtLabel[f]}</a>`).join(' · ');
+      return `<li>${esc(title)} — ${links}</li>`;
+    }).join('\n');
+    return `<section class="card"><h2>${esc(book)}</h2><ul class="links">${rows}</ul></section>`;
+  }).join('\n');
+  const body = `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li aria-current="page">Raleigh, modern edition</li></ol></nav>
+<article id="raleigh-modern">
+<h1>Raleigh's <i>History of the World</i> — modern edition</h1>
+<p class="lede">Sir Walter Raleigh, <i>The History of the World</i> (1617), in modern spelling. The whole work — Preface, contents, and Books I–V — stored as modern files, so the site serves them directly instead of transforming the original at build time.</p>
+<section class="card"><p>Every word is Modern English. Proper names and place names use their modern form, and every name changed from the original carries the original form in italics after it. Foreign-language quotations are kept as quotations, with an English translation alongside. Dates, figures, and citations are never rewritten. The original text is untouched; the Modern toggle on each record page serves this edition, and the Original toggle serves the 1617 text.</p>
+<p><strong>Download the whole work:</strong> ${bulkLinks}</p></section>
+${groupHtml}
+</article>`;
+  out('raleigh-modern/index.html', page({
+    title: "Raleigh's History of the World — modern edition",
+    desc: 'Sir Walter Raleigh, The History of the World (1617), in modern spelling: the whole work, stored by section, downloadable in Markdown, EPUB, Word, PDF, and XML.',
+    body,
+    path: '/raleigh-modern/',
+    pagefind: false,
+  }));
+  return files.length;
+}
+
+const raleighModernSectionCount = writeRaleighModernPage();
+
 // Locations
 for (const l of locations) {
   const has = l.lat != null && l.lng != null;
@@ -1930,7 +1993,7 @@ out('404.html', page({ title: 'Not found', path: '', pagefind: false, body: '<h1
     if (outHtml !== html) writeFileSync(f, outHtml);
   }
 }
-writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/pagefind/*\n  Cache-Control: public, max-age=0, must-revalidate\n/img/dore/thumbs/*\n  Cache-Control: public, max-age=604800\n/chronologies/raleigh-chronological-table/*.csv\n  Content-Type: text/csv; charset=utf-8\n/chronologies/raleigh-chronological-table/*.md\n  Content-Type: text/markdown; charset=utf-8\n/chronologies/raleigh-chronological-table/*.xls\n  Content-Type: application/vnd.ms-excel\n`);
+writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/pagefind/*\n  Cache-Control: public, max-age=0, must-revalidate\n/img/dore/thumbs/*\n  Cache-Control: public, max-age=604800\n/chronologies/raleigh-chronological-table/*.csv\n  Content-Type: text/csv; charset=utf-8\n/chronologies/raleigh-chronological-table/*.md\n  Content-Type: text/markdown; charset=utf-8\n/chronologies/raleigh-chronological-table/*.xls\n  Content-Type: application/vnd.ms-excel\n/downloads/raleigh-modern/*.md\n  Content-Type: text/markdown; charset=utf-8\n/downloads/raleigh-modern/*.epub\n  Content-Type: application/epub+zip\n/downloads/raleigh-modern/*.docx\n  Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document\n/downloads/raleigh-modern/*.pdf\n  Content-Type: application/pdf\n/downloads/raleigh-modern/*.xml\n  Content-Type: application/xml; charset=utf-8\n`);
 const redirectBody = `${redirectLines(events).join('\n')}\n`;
 if (!redirectsFileHasSennacherib(redirectBody)) {
   console.error('build: _redirects is missing the Sennacherib 301');
