@@ -1,0 +1,11 @@
+# Book I, Part I, Chapter VI, §. 2
+
+> Sir Walter Raleigh, *The History of the World* (1617). Modern edition. Original spelling: EarlyPrint A10357 (EEBO-TCP), London 1617, Stansby for Walter Burre. The original text is untouched; this file is the stored modern copy.
+
+## p01063 · sig. 87a
+
+§. II. That the corruptions themselves were very ancient: as in the family of NOAH, and in the old Egyptians *Aegyptians*.
+
+## p01064 · sig. 87a
+
+But this defection and falling away from God, which was first found in Angels, and afterwards in Men( the one having erred but once, the other ever) as concerning mankind it took such effect, that thereby( the liberal grace of God being with-drawn) all the posterity of our first Parents were afterwards borne and bred in a World, suffering a perpetual Eclipse of spiritual light. Hence it was that it produced plants of such imperfection and harmful quality, as the waters of the general Flood *floud* could not So wash out or purify, but that the same defection has had continuance in the very generation and nature of mankind. Yea, even among the few sons of Noah, there were found strong effects of the former poison. For as the children of Shem *Sem* did inherit the virtues of *Seth, Enoch*, and Noah; So the sons of Ham *Cham* did possess the vices of the sons of Cain, and of those wicked Giants of the first Age. Whence the Chaldeans *Cbaldeans* began soon after the Flood to ascribe divine power and honor to the Creature, which was only due to the Creator. First, they worshipped the Sun, and then the fire. So the Egyptians and Phoenicians did not only learn to leave the true God, but created twelve several gods, and divine powers, whom they worshipped; and unto whom they built Altars and Temples. For Herodotus says, Duodecim Deorum *nomina primos Aegyptios in usu habuisse, atque Graecos ab illis cepisse mutuatos, eosque prius aras, & imagines, & templa Dijs sibi erexisse; The Egyptians* ("That the first Egyptians had these names in use, and that the Greeks borrowed them from them, and that they first erected altars, images, and temples to the gods for themselves.")( says he) *first devised the names of the twelve Gods, which the Greeks* *Greekes** received from them, who first erected unto themselves Altars, Images, and Temples for the Gods.*

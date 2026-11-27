@@ -1,0 +1,47 @@
+# Book I, Part I, Chapter IX, §. 2
+
+> Sir Walter Raleigh, *The History of the World* (1617). Modern edition. Original spelling: EarlyPrint A10357 (EEBO-TCP), London 1617, Stansby for Walter Burre. The original text is untouched; this file is the stored modern copy.
+
+## p01398 · sig. 139a
+
+§. II. *Of the three commendable sorts of Government with their opposites: and of the degrees of humane society.*
+
+## p01399 · sig. 139a
+
+What other Policy was exercised, or State founded after such time as mankind was greatly multiplied before the Flood *floud*, it cannot be certainly known, though it seem by probable conjecture, that the same was not without Kings in that first age: it being possible that many Princes of the Egyptians *Aegyptians*( remembered among their antiquities) were before the general Flood; and very likely, that the cruel Oppressions in that Age proceeded from some tyranny in Government, or from some rougher form of Rule, then the Paternal.
+
+## p01400 · sig. 139a
+
+Berosus ascribes the rule of the World in those days to the Gyants of Lebanon *Libanus*, who mastered( says he) all Nations from the Sun-rising *Sunne-rising* to the Sun-set *Sunne-set*. But in the second Age of the World, and after such time as the rule of Eldership failed, three several sorts of Government were in several times established among men, according to the divers natures of Places and People.
+
+## p01401 · sig. 139a
+
+The first, the most ancient, most general, and most approved, was the Government of one, ruling by just Laws *Lawes*, called Monarchy: to which Tyranny is opposed, being also a sole and absolute Rule, exercised according to the will of the Commander, without respect or observation of the Laws of God, or Men. For a lawful Prince or Magistrate( says Aristotle) is the Keeper of Right and Equity: and of this condition ought every Magistrate to be, according to the rule of Gods word: *Judges* *Iudges** and Officers shalt thou make thee in thy Cities: And these shall judge the people with* 〈◊ 〉 judgement.
+
+## p01402 · sig. 139a
+
+The second Government is of divers principal Persons established by order, and ruling by Laws, called Aristocracy, or Optimatum potestas; to which Oligarchy( or the particular faction and usurpation of a few great-ones) is opposed: as the Decemviri, or 〈◊ 〉, and the like.
+
+## p01403 · sig. 139b
+
+The third is a State popular, ( or Government of the people) called Democracy, to which is opposed Ochlocracy, or the turbulent unjust ruling of the confused multitude, seditiously swaying the State, contrary to their own Laws and Ordinances. These three kinds of Government are briefly expressed by *Tholosanus; Unius* *Vnius**, paucorum, & multorum, Of one, of few, of many.*
+
+## p01404 · sig. 139b
+
+Now as touching the beginning and order of policy since the second increase of Mankind, the same grew in this sort: First of all, every Father, or eldest of the Family, gave Laws to his own issues, and to the people from him and them increased. These as they were multiplied into many Housholds( man by nature loving society) joined their Cottages together in one common Field or Village, which the Latins *Latines* call Vicus; of the Greek *Greeke* 〈◊ 〉, which signifies a House, or of the word( Via) because it has divers ways and paths leading to it. And as the first House grew into a Village, So the Village into that which is called Pagus, ( being a society of divers Villages) So called of the Greek 〈◊ 〉, which signifies a Fountain: because many people( having their habitations not far asunder) drank of one Spring or Stream of water. To this word the English Hundreds, or( as some think) Shires answers not unfitly.
+
+## p01405 · sig. 139b
+
+But as men and impiety began to gather strength, and as emulation and pride between the Races of the one and the other daily increased: So both to defend themselves from outrage, and to preserve such goods as they had gathered, they began to join and set together divers of their Villages, environing them first with banks and ditches, and afterwards with walls: which being So compassed were then called Oppida; either *ab opponendo se hostibus, Because walls were opposed against Enemies, *or *ab opibus, because thither they gathered their riches for safety and defence: *as also they were called *Urbes* *Vrbes**, ab orb*; because when they were to build a City, they made a Circle with a Plough( says Varro) therewith measuring and compassing the ground which they went to enclose or fortify. And although Urbs *Vrbs* and Civitas *Ciuitas* be often confounded, yet the difference was anciently in this, that Urbs signified no other than the very walls and buildings, and Civitas was taken for the Citizens, inhabiting therein: So called of Civis *Ciuis*; and that, *ab eo quod multitudo coivit, of coming together.* But all inhabitants within these walls are not properly Citizens, but only such as are called Free-men: who bearing proportionably the charge of the City, may by turns become Officers and Magistrates thereof: the rest go under the name of Subjects *Subiects*, though Citizens by the same general name of Subjects are also known. For every Citizen is also a subject, but not every Subject a Citizen: perhaps also some Citizen( as the chief Magistrate, if he be to be termed one of the Citizens) is no subject; but of this we need not stand to inquire. The word( Magistrate) is taken *a 〈◊ 〉, from a Master, *and the word( Master) from the Adverb Magis( as also *Magisteria, Precepts of Art*) or else from the Greek word *( Megistos: *) and So the Greeks *Greekes* call them Megistanes, whom the Latins call Magnates, or Magistratus.
+
+## p01406 · sig. 139b
+
+The office and duty of every Magistrate Aristotle has written in few words. *A Magistrate or Prince*( says he) *is the keeper of right and equity*; but the same is best taught by Saint Paul, who expresses both the cause efficient, and final, ( that is) by whom Magistrates and Princes are ordained, together with their duties and offices. *A Magistrate is the Minister of God for thy wealth; but if thou do evil, fear: for* *he bears not the sword for nought. For he is the Minister of God, to take vengeance on him that does evil. *He also teaches in the same place; *That every soul ought to be* *subject to the higher powers, because they are by God ordained*; and that whosoever resists *that power, resists God*, the giver and fountain thereof: and shall not only be therefore subject to the judgement and condemnation of Man, but of God: *For ye must* be subject( says he) *not because of wrath only, but also for conscience sake.*
+
+## p01407 · sig. 139b
+
+The examples are not to be numbered of Gods punishments upon those that have resisted Authority, by God ordained and established. Neither ought any subject therefore to resist the power of Kings, because they may be taxed with injustice or cruelty: for it pleases God sometimes to punish his people by a tyrannous hand: and the Commandment of obedience is without distinction. The Prophets and Christ himself subjected themselves to the power of Magistracy. Christ commanded that all due to Caesar should be given unto him: and he payed Tribute for himself and *Peter. Jeremiah* *Hieremie** *commanded the Israelites( even those that were Captives *Captiues* under Heathen Kings) to pray for them, and for the peace of Babylon. So Abraham prayed for Abimelech; and Jacob *Iacob* blessed the King of *Egypt* *Aegypt**: And it is acceptable in the* *sight of our Saviour*( says PAVL) *that ye make Supplications and Prayers for Kings, and for all that are in authority: *and if for such Kings as were Idolatrous, much more for Christian Kings and Magistrates. And So much did Saint Chrysostom *Chrysostome* in his Homily to the people prefer Monarchical Government, as he rather commended the rule of Kings( though Tyrants) then that they should be wanting: *Praestat Regem tyrannum habere, quam nullum; Better a tyrannous King, then no King: *to which also Tacitus subscribes: Praestat( says Tacitus in the first of his History) *sub malo Principe esse quam nullo; It is better to have a bad Prince then none at all. *And be they good Kings( which is generally presupposed) then is there no liberty more safe, then to serve them: *Neque enim libertas tutior ulla est* ("For no liberty is safer [than that under a good king];")( says Claudian *CLAVDIAN*) *quam Domino seruire bono: No liberty*( says he) *more safe for us then to be servants to the virtuous. *And certainly howsoever it may be disputed, yet is it safer to live under one Tyrant, then under 100000. Tyrants: under a wise man that is cruel, then under the foolish and barbarous cruelty of the multitude. For as Agesilaus answered a Citizen of 〈◊ 〉 that desired an alteration of the Government, That kind of rule which a man would disdain in his own house, were very unfit to govern great Regions by.
+
+## p01408 · sig. 140a
+
+Lastly, as many Fathers erected many Cottages for their many children: and as( for the reason before remembered) many Housholds joined themselves together, and made Villages; many Villages made Cities: So when these Cities and Citizens joined together, and established Laws by consent, associating themselves under one Governor and Government, they So joined were called a Commonwealth: the same being sometimes governed by Kings; sometimes by Magistrates; sometimes by the people themselves.

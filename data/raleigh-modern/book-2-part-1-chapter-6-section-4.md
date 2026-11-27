@@ -1,0 +1,31 @@
+# Book II, Part I, Chapter VI, §. 4
+
+> Sir Walter Raleigh, *The History of the World* (1617). Modern edition. Original spelling: EarlyPrint A10357 (EEBO-TCP), London 1617, Stansby for Walter Burre. The original text is untouched; this file is the stored modern copy.
+
+## p01957 · sig. 209b
+
+§. IIII. Of the instauration of civility in Europe about these times, and of PROMETHEVS and ATLAS.
+
+## p01958 · sig. 209b
+
+There lived at this time, and in the same age together with Moses, many men exceeding famous, as well in bodily strength, as in all sorts of learning. And as the World was but even now enriched with the written Law of the living God, So did Art and Civility( bred and fostered far off in the East, and in Egypt *Aegypt*) begin at this time to discover a passage into Europe, and into those parts of Greece, neighbouring Asia and Judea *Iudaea*. For if Pelasgus besides his bodily strength, was chosen King of Arcadia, because he taught those people to erect them simple Cottages, to defend them from rain and storm: and learned them withal to make a kind of Meal, and bread of Acorns *Acornes*, who before lived for the most part, by Herbs *Hearbs* and Roots *Rootes*: we may thereby judge how poor, and wretched those times were, and how falsely those Nations have vaunted of that their antiquities accompanied not only with civil learning, but with all other kinds of knowledge, And it was in this age of the World, as both Eusebius and S. Augustine have observed, that 〈◊ 〉 flourished: Quem propterea *ferunt de luto formasse homines, quia optimus sapientiae Doctor fuisse perhibetur; Of whom it is reported that he formed men out of clay, because he was an excellent teacher of Wisdom: *and So Theophrastus expounds the invention of fire ascribed to PROMETHEVS, *Adinuenta sapientiae pertinere; To have reference to wise inventions: *and Aeschylus affirms, That by the stealing of Jupiters *Iupiters* fire was meant, that the knowledge of Prometheus reached to the Stars *Starres*, and other celestial bodies. Again, it is written of him, that he had the art So to use this fire, as thereby he gave life to Images of Wood, Stone, and Clay: meaning that before his birth and being, those people among whom he lived had nothing else worthy of men, but external form and figure. By that fiction of Prometheus, being bound on the top of the Hill Caucasus, his entrails the while devoured by an Eagle, was meant the inward care and restless desire he had to investigate the Natures, Motions, and Influences of Heavenly bodies, for So it is said: *Ideo altissimum ascendisse Caucasum, ut 〈◊ 〉* *coelo quam longissime astra, signorum obitus & ortus spectaret; That he ascended Caucasus,* *to the end that he might in a clear sky discern a far off the settings and risings of the Stars: *though Diodorus Siculus expound it otherwise, and others diversely.
+
+## p01959 · sig. 210a
+
+*Of this mans knowledge *AESCHYLUS *AESCHYLVS* *gives this testimony*.
+
+## p01960 · sig. 210a
+
+Africanus makes Prometheus far more ancient, and but 94. years after *Ogyges. Porphyry* *Porphyrius** *says that he lived at once with 〈◊ 〉, who lived with Isaac.
+
+## p01961 · sig. 210a
+
+There lived also at once with Moses, that famous Atlas, brother to Prometheus, both being the Sons of Japetus, of whom though it be said, that they were borne before Moses days, and therefore are by others esteemed of a more ancient date: yet the advantage of their long lives gave them a part of other ages among Men, which came into the World long after them. Besides these Sons of *Japetus, Aeschylus *finds two other, to wit, Oceanus, and Hesperus, who being famous in the West, gave name to the Evening, and So to the evening Star. Also besides this Atlas of 〈◊ 〉 or 〈◊ 〉, there were others, which bare the same name: but of the Libyan, and the brother of Prometheus, it was that those Mountains *Mountaines* which cross Africa, to the South of *Morocco* *Marocco**, Sus*, and 〈◊ 〉, with the Sea adjoining took name, which memory Plato in 〈◊ 〉 〈◊ 〉 on Atlas, the Son of Neptune.
+
+## p01962 · sig. 210b
+
+〈◊ 〉 in the fifth of his Tusculan questions, affirms that all things written of Prometheus and Atlas, were but by those names to express divine knowledge. Nec vero ATLAS *sustinere coelum, nec* ("to uphold heaven, nor [was he];")* *PROMETHEVS *as fixus Caucaso, nec stellatus* ("as fixed to Caucasus, nor starry [in appearance];")* *CEPHEVS *cum Uxore* *Vxore** traderetur, nisi divina cognitio nomen 〈◊ 〉 ad errorem fabulae traduxisset; Neither should* ("Had been handed down with his wife, unless divine knowledge had transferred the name [illegible] to the error of a fable.")* *ATLAS *be said to bear up heaven, nor *PROMETHEVS to *be 〈◊ 〉 to Caucasus, nor *CEPHEVS *with his Wife to be 〈◊ 〉; unless their divine knowledge had raised upon then names these erroneous fables.*
+
+## p01963 · sig. 210b
+
+Orpheus sometime expressed Time by Prometheus, sometime he took him for Saturn; as *Rheae coniux alme Prometheu*. But that the story of Prometheus was not altogether a fiction: and that he lived about this time, the most approved Historians and Antiquaries, and among them Eusebius and S. Augustine have not doubted, For the great judgement which Atlas had in Astronomy, says S. Augustine, were his Daughters called by the names of constellations, Pleiades and 〈◊ 〉: Others attribute unto him the finding out of the Moons *Moones* course, of which Archas the 〈◊ 〉 of Orchomenus challenges the invention. Of this 〈◊ 〉 〈◊ 〉 in Peloponnesus took name, and therefore did the Arcadians vaunt that they were more ancient than the Moon. *Et Luna gens prior illa fuit* ("And the Moon [was] a people before that [people]:")*: *which is to be understood, says 〈◊ 〉 Comes, before there had been any observation of the Moons course: or of her working in inferior bodies. And though there be that bestow the finding out there of upon Endymion: others( as Xenagoras *Xenagor* as) on Typhon: yet Isacius Tzetzes, a curious searcher of antiquities, gave it Atlas of 〈◊ 〉: who besides his gifts of mind, was a man of unequalled and incomparable strength: from whom Thales the Milesian, as it is said, had the ground of his Philosophy.

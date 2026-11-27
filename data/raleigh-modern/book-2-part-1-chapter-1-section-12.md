@@ -1,0 +1,31 @@
+# Book II, Part I, Chapter I, §. 12
+
+> Sir Walter Raleigh, *The History of the World* (1617). Modern edition. Original spelling: EarlyPrint A10357 (EEBO-TCP), London 1617, Stansby for Walter Burre. The original text is untouched; this file is the stored modern copy.
+
+## p01606 · sig. 166a
+
+§. XII. That CHEDORLAOMER *the chief of the *4. *Kings was not of Assyria, but of Persia: and that the Assyrian Empire at this time was much impaired.*
+
+## p01607 · sig. 166a
+
+Lastly, whereas it is conceived that Chedor laomer was the Assyrian-Emperor, and that Amraphel was but a *Satrap, Viceroy*, or 〈◊ 〉 governor of Babylonia, and that the other kings named were such also, I cannot agree with Pereira *Pererius* in this. For Moses too well acquainted with the names of Asshur *Assur*, and Shinar, to call the Assyrian a king of Elam: those kings being in the Scriptures evermore called by the name of *Chaldea* *Chaldaea**, Shinar, Babylonia*, or Assyria: but never by Elam; and Chedorlaomer or Chedorlaomer *Kedarlaomer* was So called of Kidor, from Cidarim which in the Hebrew signifies Regale: for So Q. Curtius calls the garment which the Persian kings ware on their heads.
+
+## p01608 · sig. 166a
+
+Neither do I believe that the Assyrian or Babylonian Empire stood in any greatness at the time of this invasion, and my reasons are these: First, example and experience teach us, that those things which are set up hastily, or forced violently, do not long last: Alexander became Lord of all Asia, on this side of Indus, in a time of So short a life, as it lasted not to over-look what it self had brought forth. His fortunes were violent, but not perpetual. For his Empire died at once with himself: all whose chief Commanders became kings after him. Tamerlane *Tamberlain* conquered Asia and India with a storm-like and terrible success: but to prevalent fury God has adjoined a short life: and whatsoever things Nature herself works in haste, she takes the least care of their continuance. The fruit of his victories perished with him, if not before him.
+
+## p01609 · sig. 166a
+
+Ninus being the first whom the madness of boundless dominion transported, invaded his neighbour Princes, and became victorious over them: a man violent, insolent, and cruel. Semiramis taking the opportunity, and being more proud, adventurous, and ambitious, then her Paramor: enlarged the Babylonian Empire, and beautified many places therein with buildings unexampled. But her son having changed Nature and Condition with his Mother, proved no less feminine then she was masculine. And as wounds and wrongs, by their continual smart, put the Patient in mind how to cure the one, and revenge the other: So those kings adjoining( whose subjection, and calamities incident were but new, and therefore the more grievous) could not sleep, when the advantage was offered by such a successor. For in *regno Babylonico hic parum resplenduit, this King shined little*( says Nauclerus of Ninias) in the Babylonian kingdom. And likely it is that the necks of mortal men having been never before galled with the yoke of foreign dominion, Nor having ever had experience of that most miserable and detested condition of living in slavery: no long descent having as yet invested the Assyrian with a right: nor any other title being for him to be pretended than a strong hand; the foolish and effeminate 〈◊ 〉 of a tyrannous and hated Father, could very ill hold So many great Princes and Nations his vassals, with a powerless mastering, and a mind less industrious than his Father and Mother had used before him. And he that was So much given over to licentious idleness, as to suffer his Mother to reign 42. years, and thereof the greatest part after he came to mans estate: witnessed thereby to the World, that he So much preferred ease before honour, and bodily pleasures before greatness, as he neither endeavoured to gain what he could not govern, nor to keep what he could not without contentious peril enjoy.
+
+## p01610 · sig. 166a
+
+These Considerations being joined to the story of 〈◊ 〉, delivered by Moses, by which we find that Amraphel king of Shinar was rather an inferior to the king of Persia, than either his superior, or equal, make it seem probable, that the Empire of Ninus and Semiramis was at that time broken a sunder, and restrained again to Babylonia.
+
+## p01611 · sig. 166b
+
+For conclusion I will ad these two arguments confirming the former: First, that at such time as it pleased God to impose that great travail upon Abraham, from Ur in Chaldea to Haran *Charran*, and then to Canaan, a passage of 700. miles, or little less, with women, children, and carriages: the Countries through which he wandered were then settled, and in peace. For it was in the 23. year of Ninias, when Abraham obeying the voice of God, took this great journey in hand: in which time of 23. years after the death of Semiramis, the neighbour Princes had recovered their liberty and former estates. For Semiramis army of four millions, with herself utterly consumed in India, and all her arms and engines of war, at the same time lost, gave an occasion and opportunity even to the poorest souls and weakest hearted creatures of the World, to repurchase their former liberty.
+
+## p01612 · sig. 166b
+
+Secondly, it is affirmed by the best and ancientest Historians, that Arius the son of Ninias, or Amraphel, invaded the Bactrians and Caspians, and again subjected them: which needed not if they had not been revolted from Ninias, after Ninus death. And as Arioch recovered one part, So did Baleus or Balaneus, otherwise Xerxes, reduce the rest revolted to their former obedience. Of whom it is said that he conquered from Egypt *Aegypt* to India: and therefore was called *Xerxes, id est, Victor & triumphator, a conqueror and triumpher, *which undertakings had been no other than the 〈◊ 〉 of madness, had not those Countries freed themselves, from the Babylonian subjection. Now if we shall make any doubt hereof, that is, of the reconquest of Arius and Xerxes, both which lived after Ninus and Ninias we may as well think the rest of Ninus and Semiramis to be but feigned: but if we 〈◊ 〉 this reconquest, then is it true that while Ninias or Amraphel ruled, the Assyrian Empire was torn asunder, according to that which has been gathered out of Moses as before remembered.

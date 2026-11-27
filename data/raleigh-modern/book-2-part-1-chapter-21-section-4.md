@@ -1,0 +1,11 @@
+# Book II, Part I, Chapter XXI, §. 4
+
+> Sir Walter Raleigh, *The History of the World* (1617). Modern edition. Original spelling: EarlyPrint A10357 (EEBO-TCP), London 1617, Stansby for Walter Burre. The original text is untouched; this file is the stored modern copy.
+
+## p02906 · sig. 320b
+
+§. IIII. Of the preservation of JOASH *IOAS*.
+
+## p02907 · sig. 320b
+
+JEHOIADA *IEHOIADA* then occupied the high Priest-hood, an honourable, wise and religious man. To his carefulness it may be ascribed, that the state of the Church was in some slender sort up-held in those unhappy times. His wife was Jehosheba *Iehoshabeth*, who was daughter of King Jehoram *Iehoram*, and sister to Ahaziah *Ahazia*, a godly Lady and virtuous, whose piety makes it seem that Athaliah *Athalia* was not her Mother, though her access to the court argue the contrary: but her discreet carriage might more easily procure her welcome to her own Fathers house, than the education under such a Mother could have 〈◊ 〉 her to be such as she was. By her care Joash the young Prince that reigned soon after, was conveyed out of the nursery, when Athaliah destroyed all the Kings children, and was carried secretly into the Temple, whereas secretly he was brought up. How it came to passe that this young child was not hunted out, when his body was missing, nor any great reckoning( for ought that we find) made of his escape, I will not stand to examine: for it was not good in policy, that the people should hear say, that one 〈◊ 〉 the children had avoided that cruel blow; it might have made them hearken after innovations, and So be the less conformable to the present government. So Joash was delivered out of that slaughter, he and his Nurse being gone no man could tell whither, and might be thought peradventure to be cast away, as having no other guard than a poor woman that gave him suck, who foolishly doubting that she her self should have been slain, was fled away with him into some desolate places, where it was like enough that she and he should perish. In such cases flatterers, or men desirous of reward, easily coin such tales, and rather swear them to be true in their own knowledge, than they will lose the thanks due to their joyful tidings.

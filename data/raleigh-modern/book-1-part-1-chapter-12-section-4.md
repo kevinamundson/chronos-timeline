@@ -1,0 +1,15 @@
+# Book I, Part I, Chapter XII, §. 4
+
+> Sir Walter Raleigh, *The History of the World* (1617). Modern edition. Original spelling: EarlyPrint A10357 (EEBO-TCP), London 1617, Stansby for Walter Burre. The original text is untouched; this file is the stored modern copy.
+
+## p01541 · sig. 156b
+
+§. IIII. *Of her Expedition into India, and death after discomfiture: with a note of the* *improbability of her vices*.
+
+## p01542 · sig. 156b
+
+But for her Pedigree, I leave it to the Assyrian Heralds: and for her vicious life, I ascribe the report thereof to the envious and lying Grecians. For delicacy and ease do more often accompany licentiousness in men and women, then labour and hazard 〈◊ 〉. And if the one half be true which is reported of this Lady, then there never lived any Prince or Princess more worthy of fame then Semiramis was, both for the works she did at Babylon and elsewhere, and for the wars she made with glorious success: all but her last enterprise of India; from whence both Strabo and Arrian *Arianus* report that she never returned: and that of all her most powerful Army there survived but only twenty persons: the rest being either drowned in the River of Indus, dead of the famine, or slain by the sword of Staurobates. But as the multitude which went out are more than reason has numbered: So were those that returned less then could have escaped of such an Army, as consisted of four millions & upwards. For these numbers which she levied by 〈◊ 〉 Lieutenant Dercetaeus( says 〈◊ 〉) did consist of Foot-men three millions; of Horse-men one million; of Charriots armed with hooks on each side one hundred thousand; of those which fought upon Camels as many; of Camels for burden two hundred thousand; of raw Hides for all uses three hundred thousand; of Galleys *Galleyes* with brazen heads three thousand, by which she might transport over Indus at once three hundred thousand Soldiers *Souldiers*: which Galleys were furnished with *Syrians, 〈◊ 〉, Cilicians, *and men of Cyprus. These incredible and impossible numbers, which no one place of the earth was able to nourish( had every man and beast but fed upon grass) are taken from the authority of Ctesias whom Diodorus follows. But as the one may be taxed with many frivolous reports: So Diodorus himself has nothing of certainty, but from Xerxes expedition into Greece and afterwards: whose Army( though the same was far inferior to that of Semiramis) yet had it weight enough to overload the belief of any reasonable man. For all Authors consent, that Xerxes transported into Greece an Army of 1700000. and gathered together( therein to passe the Hellespont) three thousand Galleys, as Herodotus *Herdotus* out of the several Provinces *Prouinces* whence those Galleys were taken has collected the number.
+
+## p01543 · sig. 156b
+
+But of what multitude soever the Army of Semiramis consisted: the same being broken and overthrown by Staurobates upon the banks of *Indus, canticum cantavit extremum: she sang her last song*; and( as Antiquity has feigned) was changed by the gods into a Dove( the bird of Venus) whence it came that the Babylonians gave a Dove in their ensigns.
