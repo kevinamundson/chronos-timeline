@@ -918,7 +918,8 @@ function passageSpans(p) {
   const spans = p.italics || [];
   const stored = raleighModernById[p.id];
   const modernHtml = stored && stored.modern ? stored.modern : renderProse(p.passage, spans, { modern: true });
-  return `<p class="raleigh-text"><span class="spell-modern">${modernHtml}</span><span class="spell-original" data-pagefind-ignore="all">${renderProse(p.passage, spans, { modern: false })}</span></p>`;
+  const notes = stored && stored.notes ? stored.notes.map((n) => `<li><em>${esc(n.word)}</em> — ${esc(n.text)}</li>`).join('') : '';
+  return `<p class="raleigh-text"><span class="spell-modern">${modernHtml}</span><span class="spell-original" data-pagefind-ignore="all">${renderProse(p.passage, spans, { modern: false })}</span></p>${notes ? `<ol class="raleigh-notes">${notes}</ol>` : ''}`;
 }
 
 function raleighAccount(recordId) {

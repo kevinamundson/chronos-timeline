@@ -78,6 +78,14 @@ function sectionsInOrder() {
   });
 }
 
+// Footnotes attached to passages (p.notes, from the stored modern edition).
+// Collected per section, in passage order.
+function sectionNotes(sec) {
+  const out = [];
+  for (const p of sec.passages) for (const n of (p.notes || [])) out.push(n);
+  return out;
+}
+
 // ---------- TEI-style XML ----------
 function sectionXml(sec) {
   const lines = [
@@ -92,6 +100,7 @@ function sectionXml(sec) {
     const inner = runs.map((r) => (r.italic ? `<hi rend="italic">${escXml(r.text)}</hi>` : escXml(r.text))).join('');
     lines.push(`    <p xml:id="${p.id}" n="${escXml(sigOf(p))}">${inner}</p>`);
   }
+  for (const n of sectionNotes(sec)) lines.push(`    <note n="${n.n}">${escXml(n.word)} — ${escXml(n.text)}</note>`);
   lines.push(`  </div></body></text>`, `</TEI>`, '');
   return lines.join('\n');
 }
@@ -110,6 +119,7 @@ function bulkXml(sections) {
       const inner = runs.map((r) => (r.italic ? `<hi rend="italic">${escXml(r.text)}</hi>` : escXml(r.text))).join('');
       lines.push(`      <p xml:id="${p.id}" n="${escXml(sigOf(p))}">${inner}</p>`);
     }
+    for (const n of sectionNotes(sec)) lines.push(`      <note n="${n.n}">${escXml(n.word)} — ${escXml(n.text)}</note>`);
     lines.push(`    </div>`);
   }
   lines.push(`  </body></text>`, `</TEI>`, '');
@@ -133,6 +143,8 @@ async function epubFor(title, sections, fileName) {
       const html = p.modern || escHtml(p.modernText);
       body += `<h2 class="sig">${p.id} · ${escHtml(sigOf(p))}</h2><p>${html}</p>`;
     }
+    const notes = sectionNotes(sec);
+    if (notes.length) body += `<h2>Notes</h2><ol>${notes.map((n) => `<li><em>${escHtml(n.word)}</em> — ${escHtml(n.text)}</li>`).join('')}</ol>`;
     zip.folder('OEBPS').file(fname, xhtml(sec.title, body));
     items.push(`<item id="s${i}" href="${fname}" media-type="application/xhtml+xml"/>`);
     tocItems.push(`<li><a href="${fname}">${escHtml(sec.title)}</a></li>`);
@@ -162,6 +174,11 @@ async function docxFor(title, sections) {
       const runs = htmlToRuns(p.modern || p.modernText).map((r) => new TextRun({ text: r.text, italics: r.italic }));
       children.push(new Paragraph({ children: runs }));
     }
+    const notes = sectionNotes(sec);
+    if (notes.length) {
+      children.push(new Paragraph({ text: 'Notes', heading: HeadingLevel.HEADING_2 }));
+      for (const n of notes) children.push(new Paragraph({ children: [new TextRun({ text: `${n.n}. ` }), new TextRun({ text: n.word, italics: true }), new TextRun({ text: ` — ${n.text}` })] }));
+    }
   }
   const doc = new Document({ title, creator: AUTHOR, description: SOURCE_NOTE, sections: [{ children }] });
   return Packer.toBuffer(doc);
@@ -190,6 +207,12 @@ async function pdfFor(title, sections) {
           para.text(r.text, { continued: true, align: 'justify' });
         }
         para.text('', { continued: false });
+        doc.moveDown(0.5);
+      }
+      const notes = sectionNotes(sec);
+      if (notes.length) {
+        doc.font('Times-Bold').fontSize(11).text('Notes');
+        for (const n of notes) doc.font('Times-Roman').fontSize(11).text(`${n.n}. ${n.word} — ${n.text}`);
         doc.moveDown(0.5);
       }
     }

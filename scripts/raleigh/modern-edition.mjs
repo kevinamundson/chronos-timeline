@@ -194,19 +194,36 @@ function alignTokens(orig, modern) {
 }
 
 // Editorial corrections, applied to the passage text before modernization
-// (Kevin, 2026-11-27, open question N108). "bath" is a misprint for "hath"
-// (has) in these five passages; both XML copies read "bath", so it is in
-// the print, not a transcription error. The sixth "bath" (p02343, "a very
-// wholesome bath") is the genuine noun and is left alone. Each passage has
-// exactly one "bath"; if that ever stops being true the correction is
-// skipped and the passage stays as printed. Italic spans after the
-// replacement shift by the length delta, like the name replacements below.
+// (Kevin, 2026-11-27, open questions N106 and N108). N108: "bath" is a
+// misprint for "hath" (has) in these five passages; both XML copies read
+// "bath", so it is in the print, not a transcription error. The sixth
+// "bath" (p02343, "a very wholesome bath") is the genuine noun and is left
+// alone. N106: the archaic words Kevin ruled on, each with its modern form;
+// a parenthetical gloss stays in the text (e.g. "dureless (transitory)").
+// Each passage has exactly one match; if that ever stops being true the
+// correction is skipped and the passage stays as printed. Italic spans
+// after the replacement shift by the length delta, like the name
+// replacements below. Not ruled: the standalone "oner" in p05155
+// ("consigne them oner to the Romans") — left as printed, still open.
 const PASSAGE_CORRECTIONS = {
+  // N108.
   p00008: [['bath', 'has']],
   p00012: [['bath', 'has']],
   p00027: [['bath', 'has']],
   p00979: [['bath', 'has']],
   p02718: [['bath', 'has']],
+  // N106.
+  p00051: [['durelesse', 'dureless (transitory)']],
+  p00882: [['durelesse', 'dureless (transitory)']],
+  p04090: [['oner-flow', 'overflow']],
+  p00029: [['minaes', 'minds']], // printed "minaes"; the modernizer renders it "minas"
+  p01299: [['incopsed', 'incopsed (enclosed)']],
+  p02393: [['it heroes * radiantes', "it's radiant heros"]],
+  p03410: [['slaterly', 'stately']],
+  p04928: [['slemme', 'scheme']],
+  p04929: [['tournie', 'tournie (march)']],
+  p05144: [['scrued', 'supplied']],
+  p04676: [['Priuer nates', 'Privernates']],
 };
 
 function applyPassageCorrections(id, passage, italics) {
@@ -228,6 +245,44 @@ function applyPassageCorrections(id, passage, italics) {
     }).filter(([a, b]) => a < b);
   }
   return { passage: text, italics: spans };
+}
+
+// Footnotes (N106, Kevin, 2026-11-27): words left as printed because no
+// certain modern equivalent exists. The word carries a superscript marker
+// in the modern text; the note is listed at the end of the section file
+// and in the passage's `notes` field in index.json. Numbering is per
+// section (startN is the next free number in the section); each affected
+// section here has exactly one footnote, so every marker is ¹.
+const FOOTNOTES = {
+  p02228: [{ word: 'cuened', note: 'Unknown word.' }],
+  p04168: [{ word: 'wcs', note: 'Unknown word.' }],
+  p03601: [{ word: 'ns', note: 'Unknown word.' }],
+};
+const FOOTNOTE_MARKS = ['¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
+
+function applyFootnotes(id, text, spans, startN) {
+  const list = FOOTNOTES[id];
+  if (!list) return { text, spans, notes: [] };
+  let out = text;
+  let cur = spans || [];
+  const notes = [];
+  for (const [i, fn] of list.entries()) {
+    const re = new RegExp(`\\b${escapeReg(fn.word)}\\b`, 'g');
+    const hits = [...out.matchAll(re)];
+    if (hits.length !== 1) throw new Error(`footnote word ${fn.word} does not occur exactly once in ${id}`);
+    const n = startN + i;
+    const mark = FOOTNOTE_MARKS[n - 1];
+    if (!mark) throw new Error(`too many footnotes in one section (passage ${id})`);
+    const at = hits[0].index + hits[0][0].length;
+    out = out.slice(0, at) + mark + out.slice(at);
+    cur = cur.map(([a, b]) => {
+      if (b <= at) return [a, b];
+      if (a >= at) return [a + 1, b + 1];
+      return [a, b + 1];
+    }).filter(([a, b]) => a < b);
+    notes.push({ n, word: fn.word, text: fn.note });
+  }
+  return { text: out, spans: cur, notes };
 }
 
 // Modernize one passage, keeping the italic spans. Returns the modern text
@@ -468,6 +523,8 @@ export function buildModernEdition() {
   for (const g of groups) {
     // First-occurrence name references are per section (per file).
     const referenced = new Set();
+    // Footnotes are numbered per section (per file).
+    const sectionNotes = [];
     const lines = [];
     lines.push(`# ${g.title}`);
     lines.push('');
@@ -533,6 +590,16 @@ export function buildModernEdition() {
       const prot = applyProtectedReplacements(text, curSpans, protMatches.map((m) => [m.start, m.end]));
       text = prot.text;
       curSpans = prot.spans;
+      // 1c. Footnotes (N106): words left as printed, marked with a
+      // superscript number; the note is listed at the end of the section.
+      // Applied here, after the text is final and before the name diff, so
+      // the marker (one non-letter character) shifts spans and insert
+      // positions consistently and never creates a token.
+      const fn = applyFootnotes(p.id, text, curSpans, sectionNotes.length + 1);
+      text = fn.text;
+      curSpans = fn.spans;
+      const notes = fn.notes;
+      sectionNotes.push(...notes);
       // 2. Changed names (word level, via the token diff against the original).
       const origTokens = tokenize(p.passage);
       const modTokens = tokenize(text);
@@ -592,6 +659,7 @@ export function buildModernEdition() {
         citation: p.citation,
         modern: html,
         modernText: plain,
+        ...(notes.length ? { notes } : {}),
       };
       stats.passages += 1;
       stats.words += plain.split(/\s+/).filter(Boolean).length;
@@ -608,6 +676,12 @@ export function buildModernEdition() {
           unmatchedLatin.set(w, e);
         }
       }
+    }
+    if (sectionNotes.length) {
+      lines.push('## Notes');
+      lines.push('');
+      for (const n of sectionNotes) lines.push(`${n.n}. *${n.word}* — ${n.text}`);
+      lines.push('');
     }
     writeFileSync(join(OUT_DIR, g.file), `${lines.join('\n').trim()}\n`);
     stats.files += 1;
@@ -643,6 +717,10 @@ pass can link a passage to its modern form directly.
 - Every word is Modern English; the output passes spellcheck
   (\`node scripts/raleigh/spellcheck-modern.mjs\`, nspell with the en-US
   and en-GB dictionaries, plus \`scripts/raleigh/modern-allowlist.txt\`).
+- A word with no certain modern equivalent stays as printed and carries a
+  footnote, numbered per section: \`cuened¹\`, with the note at the end of
+  the section file and in the passage's \`notes\` field in \`index.json\`.
+  (N106, Kevin's rulings, Nov 27, 2026.)
 - Proper names and place names use their modern form. A name changed from
   the original carries a reference to the original name, in italics, on
   its first occurrence in each section: \`Gideon *Gedeon*\`.

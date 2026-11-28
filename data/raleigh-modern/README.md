@@ -28,6 +28,10 @@ pass can link a passage to its modern form directly.
 - Every word is Modern English; the output passes spellcheck
   (`node scripts/raleigh/spellcheck-modern.mjs`, nspell with the en-US
   and en-GB dictionaries, plus `scripts/raleigh/modern-allowlist.txt`).
+- A word with no certain modern equivalent stays as printed and carries a
+  footnote, numbered per section: `cuened¹`, with the note at the end of
+  the section file and in the passage's `notes` field in `index.json`.
+  (N106, Kevin's rulings, Nov 27, 2026.)
 - Proper names and place names use their modern form. A name changed from
   the original carries a reference to the original name, in italics, on
   its first occurrence in each section: `Gideon *Gedeon*`.

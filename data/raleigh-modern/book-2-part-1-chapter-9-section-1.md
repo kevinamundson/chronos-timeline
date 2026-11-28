@@ -24,7 +24,7 @@ Near Samaria toward the South, is the Hill of Bethel, and a town of that name: o
 
 ## p02228 · sig. 236a
 
-In sight of this Mountain of Bethel, was that ancient City of Shechem *Sichem*; after the restoration called Neapolis, now Neapolis *Pelosa*, and Neapolis: It was destroyed by Simeon and Levi *Leui*, in revenge of the ravishment of their sister Dina: and after that by Abimelec cuened with the soil. Jeroboam raised it up again: and the Damascens a third time cast it down.
+In sight of this Mountain of Bethel, was that ancient City of Shechem *Sichem*; after the restoration called Neapolis, now Neapolis *Pelosa*, and Neapolis: It was destroyed by Simeon and Levi *Leui*, in revenge of the ravishment of their sister Dina: and after that by Abimelec cuened¹ with the soil. Jeroboam raised it up again: and the Damascens a third time cast it down.
 
 ## p02229 · sig. 236b
 
@@ -89,3 +89,7 @@ The great plenty of fruitful Vines upon the sides of the Mountains, was the occa
 ## p02244 · sig. 237b
 
 Among the Rivers *Riuers* of this Tribe of Ephraim, they name Gaas, remembered in the second of *Samuel, c*. 23. v. 30. where though 〈◊ 〉 read *Hiddai ex una vallium Gahasi* ("Its walls with [which he fortified it];"): yet the Vulgar and Vatablus read 〈◊ 〉 of the River of Gaas. Also in this Tribe they place. the River of Cherith *Carith*, by which the Prophet Elijah *Eltas* abode during the great drought: where he was b fed with the Ravens: and after that the River was dried up, he travailed( by the Spirit of God guided) towards Sidon: where he was relieved by the poor Widow of Zarephath *Zarepta*, whose dead son he revived, and increased her pittance of Meal and Oil: whereby she sustained her life.
+
+## Notes
+
+1. *cuened* — Unknown word.

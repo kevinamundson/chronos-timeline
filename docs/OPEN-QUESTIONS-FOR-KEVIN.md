@@ -2334,6 +2334,22 @@ Pass 19 read Book III, Part I, Chapters I–VI, and stopped at the end of Chapte
   2. Name the modern form for a word, and it will be modernized.
 - **Recommendation:** option 1, unless you know the word.
 - **Ruling (Kevin, 2026-11-27):** Leave the Greek notation as printed. βγ (item 15) is the Greek numeral for 23, not a word to modernize — fine as is. Passage p03394, Book III, Part I, Chapter I, §. VI: "which how it could be supposed in βγ standing for 23. I do not well perceive."
+- **Rulings (Kevin, 2026-11-27) — all fourteen words, applied** in `scripts/raleigh/modern-edition.mjs` (`PASSAGE_CORRECTIONS` and `FOOTNOTES`), stored files regenerated on branch `gb/raleigh-modern-edition` (PR #45):
+  - `durelesse` (2 occurrences, p00051 and p00882) → `dureless (transitory)`.
+  - `oner` → `oner-flow` (p04090) becomes `overflow`. The standalone `oner` in p05155 ("consigne them oner to the Romans") was **not** ruled on — left as printed, still open.
+  - `minas` (p00029) → `minds`.
+  - `incopsed` (p01299) → `incopsed (enclosed)`.
+  - `heerehence` (p02215) → `here hence` (already the modernizer's form; the ruling confirms it).
+  - `cuened` (p02228) → left as printed, with a footnote "Unknown word."
+  - `it heros radiants` (p02393) → `it's radiant heros`. (The `*` in the stored text is a marginal-note marker from the print, removed with the phrase.)
+  - `slaterly` (p03410) → `stately`.
+  - `wcs` (p04168) → left as printed, with a footnote "Unknown word."
+  - `slemme` (p04928) → `scheme`.
+  - `tournie` (p04929) → `tournie (march)`.
+  - `scrued` (p05144) → `supplied`.
+  - `ns` (p03601) → left as printed, with a footnote "Unknown word."
+  - `nates` (p04676) → joined: `Priuer nates` becomes `Privernates` (the stored text had read "Privernates nates" — the name map replaced only the first word).
+  - Footnotes are numbered per section, marked with a superscript number in the modern text, listed at the end of the section file and in the passage's `notes` field in `index.json`, and rendered in the downloads (EPUB, DOCX, PDF, TEI XML) and on the site.
 
 ### N107. Names whose modern form is uncertain (stored modern edition)
 

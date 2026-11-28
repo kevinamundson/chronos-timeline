@@ -4,7 +4,7 @@
 
 ## p04929 · sig. 637b
 
-§. XIIII. The Romans win some Towns *Townes* back from *HANNIBAL. HANNIBAL *wins Tarentum. The siege of Capua. Two victories of HANNIBAL. The tournie of HANNIBAL to the gates of Rome. Capua taken by the Romans.
+§. XIIII. The Romans win some Towns *Townes* back from *HANNIBAL. HANNIBAL *wins Tarentum. The siege of Capua. Two victories of HANNIBAL. The tournie (march) of HANNIBAL to the gates of Rome. Capua taken by the Romans.
 
 ## p04930 · sig. 637b
 

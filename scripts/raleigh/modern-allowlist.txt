@@ -4904,6 +4904,9 @@ duran
 durandus
 durazzo
 durelesse
+# N106 (Kevin, Nov 27, 2026): "dureless" is the ruled modern form of
+# "durelesse" ("dureless (transitory)"); it is in no dictionary.
+dureless
 duritia
 durrës
 dutch
