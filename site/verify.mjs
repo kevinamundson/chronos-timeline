@@ -531,7 +531,7 @@ async function homeRangeBehavior(page, tag, restore) {
       row: tops.length ? Math.max(...tops) - Math.min(...tops) : 99,
     };
   });
-  check('home: desktop primary nav stays in one row', desktopNav.n === 5 && desktopNav.btnHidden && desktopNav.shown && desktopNav.row <= 2, JSON.stringify(desktopNav));
+  check('home: desktop primary nav stays in one row', desktopNav.n === 6 && desktopNav.btnHidden && desktopNav.shown && desktopNav.row <= 2, JSON.stringify(desktopNav));
   check('home: no console errors', o.errors.length === 0, o.errors.join(' | '));
   check('home: lede states the mighty works of God among the nations', lede.includes('mighty works of God among the nations') && !/temple/i.test(lede), lede.slice(0, 160));
   check('home: timeline items rendered', tl > 0, `${tl} items`);
@@ -823,7 +823,7 @@ for (const scheme of ['light', 'dark']) {
       overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
     };
   });
-  check('mobile nav (390×844): opens on tap', opened.expanded === 'true' && opened.open && opened.labels.join(',') === 'Timeline,Browse,Chronologies,Charts,About' && opened.vertical && opened.tall && opened.searchW > 100 && opened.searchH >= 44 && !opened.overflow, JSON.stringify(opened));
+  check('mobile nav (390×844): opens on tap', opened.expanded === 'true' && opened.open && opened.labels.join(',') === 'Timeline,Browse,Chronologies,Charts,Library,About' && opened.vertical && opened.tall && opened.searchW > 100 && opened.searchH >= 44 && !opened.overflow, JSON.stringify(opened));
   await o.page.locator('.site-header').screenshot({ path: join(SHOTS, 'nav-mobile-open.png') });
   await o.page.keyboard.press('Tab');
   await o.page.keyboard.press('Escape');
@@ -858,7 +858,7 @@ for (const scheme of ['light', 'dark']) {
   const btnVisible = await page.locator('.nav-toggle').isVisible();
   const links = page.locator('#primary-nav a');
   const n = await links.count();
-  let visible = n === 5;
+  let visible = n === 6;
   const boxes = [];
   for (let i = 0; i < n; i++) {
     const box = await links.nth(i).boundingBox();
@@ -1153,6 +1153,45 @@ for (const [path, shot, sel] of [
   check('search: Pagefind returns results for "Flood"', n > 0, `${n} results: ${titles.slice(0, 5).map((t) => t.trim()).join('; ')}`);
   check('search: no console errors', o.errors.length === 0, o.errors.join(' | '));
   await o.ctx.close();
+}
+// Library: ebook reader
+{
+  const o = await open('/library/');
+  const cards = await o.page.locator('.card').allTextContents();
+  check('library: index names Raleigh, Jordan, and Biblical Chronology', cards.length === 11 && cards.some((t) => /Raleigh/.test(t)) && cards.some((t) => /Jordan/.test(t)) && cards.some((t) => /Biblical Chronology/.test(t)), cards.map((t) => t.split('\n')[0]).join(' | '));
+  check('library: nav marks Library current', await o.page.locator('a[href="/library/"][aria-current="page"]').count() === 1);
+  check('library: no console errors', o.errors.length === 0, o.errors.join(' | '));
+  await o.ctx.close();
+  const r = await open('/library/raleigh-history-of-the-world/preface/', { width: 390, height: 844 });
+  check('library: Raleigh reader page loads', r.status === 200 && r.errors.length === 0, r.errors.join(' | '));
+  await r.page.locator('#reader-toc-toggle').click();
+  await r.page.waitForSelector('#reader-toc-list li a', { timeout: 10000 });
+  const tocN = await r.page.locator('#reader-toc-list li a').count();
+  check('library: contents drawer lists all 645 sections', tocN === 645, `${tocN} links`);
+  const before = await r.page.locator('.reader-body').evaluate((el) => getComputedStyle(el).fontSize);
+  await r.page.locator('#reader-size').fill('24');
+  const after = await r.page.locator('.reader-body').evaluate((el) => getComputedStyle(el).fontSize);
+  check('library: type size control changes the text', before !== after, `${before} -> ${after}`);
+  await r.page.locator('#reader-font').selectOption('sans');
+  const fam = await r.page.locator('.reader-body').evaluate((el) => getComputedStyle(el).fontFamily);
+  check('library: font control changes the family', /system-ui|-apple-system|sans/i.test(fam), fam.slice(0, 60));
+  await r.page.locator('#reader-search').fill('Nebuchadnezzar');
+  await r.page.waitForSelector('#reader-search-results li a', { timeout: 20000 });
+  const hrefs = await r.page.locator('#reader-search-results li a').evaluateAll((els) => els.map((e) => e.getAttribute('href')));
+  check('library: in-book search returns only this book', hrefs.length > 0 && hrefs.every((h) => h.startsWith('/library/raleigh-history-of-the-world/')), `${hrefs.length} results`);
+  await r.ctx.close();
+  const j = await open('/library/judges/read/');
+  check('library: Jordan reader page loads', j.status === 200 && j.errors.length === 0, j.errors.join(' | '));
+  await j.ctx.close();
+  const b = await open('/library/biblical-chronology/1-1/');
+  check('library: newsletter issue page loads', b.status === 200 && b.errors.length === 0, b.errors.join(' | '));
+  await b.ctx.close();
+  const a = await open('/people/abraham/');
+  check('library: a record page links Read online', (await a.page.locator('a:text("Read online")').count()) >= 1);
+  await a.ctx.close();
+  const c = await open('/chronologies/');
+  check('library: Chronologies page links Read online for Raleigh', (await c.page.locator('#source-raleigh-history-of-the-world-1617 a:text("Read online")').count()) === 1);
+  await c.ctx.close();
 }
 // Keyboard: first Tab focuses skip link
 {
