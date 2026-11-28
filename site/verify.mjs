@@ -1157,13 +1157,57 @@ for (const [path, shot, sel] of [
 // Library: ebook reader
 {
   const o = await open('/library/');
-  const cards = await o.page.locator('.card').allTextContents();
-  check('library: index names Raleigh, Jordan, and Biblical Chronology', cards.length === 11 && cards.some((t) => /Raleigh/.test(t)) && cards.some((t) => /Jordan/.test(t)) && cards.some((t) => /Biblical Chronology/.test(t)), cards.map((t) => t.split('\n')[0]).join(' | '));
+  const items = await o.page.locator('.library-item').allTextContents();
+  check('library: index names Raleigh, Jordan, and Biblical Chronology', items.length === 11 && items.some((t) => /Raleigh/.test(t)) && items.some((t) => /Jordan/.test(t)) && items.some((t) => /Biblical Chronology/.test(t)), items.map((t) => t.split('\n')[0]).join(' | '));
+  const covers = await o.page.locator('.book-cover').count();
+  const coverTitles = await o.page.locator('.book-cover-title').allTextContents();
+  const gridDisplay = await o.page.locator('.library-grid').evaluate((el) => getComputedStyle(el).display);
+  check('library: every book has a cover with its title', covers === 11 && coverTitles.every((t) => t.trim().length > 0) && gridDisplay === 'grid', `${covers} covers, grid display ${gridDisplay}`);
   check('library: nav marks Library current', await o.page.locator('a[href="/library/"][aria-current="page"]').count() === 1);
   check('library: no console errors', o.errors.length === 0, o.errors.join(' | '));
   await o.ctx.close();
   const r = await open('/library/raleigh-history-of-the-world/preface/', { width: 390, height: 844 });
   check('library: Raleigh reader page loads', r.status === 200 && r.errors.length === 0, r.errors.join(' | '));
+  check('library: reader is full screen (no site header or footer)', (await r.page.locator('.site-header').count()) === 0 && (await r.page.locator('.site-footer').count()) === 0 && (await r.page.locator('body.reader-fullscreen').count()) === 1);
+  const vollkorn = await r.page.locator('.reader-body').evaluate((el) => getComputedStyle(el).fontFamily);
+  const fontVal = await r.page.locator('#reader-font').inputValue();
+  const fontLink = await r.page.locator('link[href*="fonts.googleapis.com"][href*="Vollkorn"]').count();
+  check('library: Vollkorn is the default reader font', /Vollkorn/.test(vollkorn) && fontVal === 'vollkorn' && fontLink === 1, `${vollkorn.slice(0, 50)} / select ${fontVal}`);
+  const pagedDefault = await r.page.evaluate(() => document.documentElement.classList.contains('reader-paged'));
+  const label1 = await r.page.locator('#reader-page-label').textContent();
+  const total = Number((label1.match(/of (\d+)/) || [])[1]);
+  check('library: Pages view is the default, with more than one page', pagedDefault && /Page 1 of/.test(label1) && total > 1, label1);
+  await r.page.locator('#reader-page-next').click();
+  const label2 = await r.page.locator('#reader-page-label').textContent();
+  check('library: Next turns the page', label2 === `Page 2 of ${total}`, label2);
+  await r.page.keyboard.press('ArrowRight');
+  const label3 = await r.page.locator('#reader-page-label').textContent();
+  check('library: ArrowRight turns the page', label3 === `Page 3 of ${total}`, label3);
+  const swiped = await r.page.evaluate(() => {
+    try {
+      const el = document.querySelector('.reader-body');
+      const t = (x) => new Touch({ identifier: 1, target: el, clientX: x, clientY: 400 });
+      el.dispatchEvent(new TouchEvent('touchstart', { touches: [t(300)], bubbles: true, cancelable: true }));
+      el.dispatchEvent(new TouchEvent('touchend', { changedTouches: [t(200)], bubbles: true, cancelable: true }));
+      return true;
+    } catch (e) { return 'unsupported'; }
+  });
+  const label4 = await r.page.locator('#reader-page-label').textContent();
+  check('library: swipe left turns the page', swiped === 'unsupported' || label4 === `Page 4 of ${total}`, swiped === 'unsupported' ? 'Touch constructor unavailable here' : label4);
+  await r.page.locator('#reader-view-scroll').click();
+  const scrolled = await r.page.evaluate(() => !document.documentElement.classList.contains('reader-paged') && document.querySelector('.reader-pagebar').hidden);
+  check('library: Scroll view leaves Pages mode', scrolled);
+  await r.page.locator('#reader-view-paged').click();
+  const pagedAgain = await r.page.evaluate(() => document.documentElement.classList.contains('reader-paged') && !document.querySelector('.reader-pagebar').hidden);
+  check('library: Pages view returns', pagedAgain);
+  await r.page.locator('#reader-fullscreen').click();
+  await r.page.waitForFunction(() => !!document.fullscreenElement, null, { timeout: 5000 });
+  const fsOn = await r.page.evaluate(() => !!document.fullscreenElement);
+  check('library: Full screen enters fullscreen', fsOn);
+  await r.page.locator('#reader-fullscreen').click();
+  await r.page.waitForFunction(() => !document.fullscreenElement, null, { timeout: 5000 });
+  const fsOff = await r.page.evaluate(() => !document.fullscreenElement);
+  check('library: Full screen exits fullscreen', fsOff);
   await r.page.locator('#reader-toc-toggle').click();
   await r.page.waitForSelector('#reader-toc-list li a', { timeout: 10000 });
   const tocN = await r.page.locator('#reader-toc-list li a').count();

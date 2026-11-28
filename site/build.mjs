@@ -96,32 +96,53 @@ const uniqSrc = (ids) => [...new Map(ids.map(linkSrc).filter(Boolean).map((s) =>
 // kind 'jordan': a full text in sources/jordan/books/ (© Jordan, included
 // with the owner's stated permission). kind 'bc': the Biblical Chronology
 // newsletter run in sources/jordan/bc-*.md (© Jordan, same permission).
+// Cover colours are per-book, typographic covers in the Apple Books manner:
+// a solid ground, the title in Vollkorn, a rule, and the author. The
+// newsletter keeps a light journal ground; the rest are cloth-bound darks.
 const LIBRARY_BOOKS = [
   { slug: 'raleigh-history-of-the-world', kind: 'raleigh', sourceId: 'raleigh-history-of-the-world-1617',
     shortTitle: 'The History of the World', blurb: 'Sir Walter Raleigh\u2019s History of the World (1617), in modern spelling: the whole work, stored by section.',
-    licence: 'Public domain. The 1617 text is public domain by age; the EarlyPrint / EEBO-TCP transcription is CC0 1.0.' },
+    licence: 'Public domain. The 1617 text is public domain by age; the EarlyPrint / EEBO-TCP transcription is CC0 1.0.',
+    cover: { bg: '#6e1423', ink: '#f6f3ed', rule: '#d9a441' } },
   { slug: 'covenant-sequence', kind: 'jordan', sourceId: 'jordan-book-covenant-sequence-1989', file: 'covenant-sequence-1989.md',
-    blurb: 'Jordan\u2019s study of the covenant sequence in Leviticus and Deuteronomy.' },
+    blurb: 'Jordan\u2019s study of the covenant sequence in Leviticus and Deuteronomy.',
+    cover: { bg: '#1e3d2f', ink: '#eef3ec', rule: '#c9a86a' } },
   { slug: 'failure-of-american-baptist-culture', kind: 'jordan', sourceId: 'jordan-cc1-failure-american-baptist-culture-1982', file: 'cc1-failure-of-american-baptist-culture-1982-jordan-essays.md',
-    blurb: 'Jordan\u2019s introduction and review from Christianity and Civilization No. 1 (1982). Only Jordan\u2019s own essays are included.' },
+    blurb: 'Jordan\u2019s introduction and review from Christianity and Civilization No. 1 (1982). Only Jordan\u2019s own essays are included.',
+    cover: { bg: '#2b2b2e', ink: '#f2f0eb', rule: '#b08d57' } },
   { slug: 'judges', kind: 'jordan', sourceId: 'jordan-book-judges-1985', file: 'judges-1985.md',
-    blurb: 'Jordan\u2019s commentary on the book of Judges.' },
+    blurb: 'Jordan\u2019s commentary on the book of Judges.',
+    cover: { bg: '#1f2a44', ink: '#eef1f6', rule: '#c9a86a' } },
   { slug: 'law-of-the-covenant', kind: 'jordan', sourceId: 'jordan-book-law-of-the-covenant-1984', file: 'law-of-the-covenant-1984.md',
-    blurb: 'Jordan\u2019s exposition of Exodus 21\u201323.' },
+    blurb: 'Jordan\u2019s exposition of Exodus 21\u201323.',
+    cover: { bg: '#14424a', ink: '#e9f2f2', rule: '#d9a441' } },
   { slug: 'reconstruction-of-the-church', kind: 'jordan', sourceId: 'jordan-cc4-reconstruction-of-the-church-1985', file: 'cc4-reconstruction-of-the-church-1985-jordan-essays.md',
-    blurb: 'Jordan\u2019s three essays from Christianity and Civilization No. 4 (1985). Only Jordan\u2019s own essays are included.' },
+    blurb: 'Jordan\u2019s three essays from Christianity and Civilization No. 4 (1985). Only Jordan\u2019s own essays are included.',
+    cover: { bg: '#4a3226', ink: '#f3ede2', rule: '#c9a86a' } },
   { slug: 'sociology-of-the-church', kind: 'jordan', sourceId: 'jordan-book-sociology-of-the-church-1986', file: 'sociology-of-the-church-1986.md',
-    blurb: 'Jordan\u2019s essays on the church.' },
+    blurb: 'Jordan\u2019s essays on the church.',
+    cover: { bg: '#3d4426', ink: '#f0f2e4', rule: '#d9a441' } },
   { slug: 'through-new-eyes', kind: 'jordan', sourceId: 'jordan-book-through-new-eyes-1988', file: 'through-new-eyes-1988.md',
-    blurb: 'Jordan\u2019s development of a biblical view of the world.' },
+    blurb: 'Jordan\u2019s development of a biblical view of the world.',
+    cover: { bg: '#16233d', ink: '#e9edf5', rule: '#c9a86a' } },
   { slug: 'from-creation-to-solomon', kind: 'jordan', sourceId: 'jordan-sbc-2', file: 'studies-in-biblical-chronology-2-from-creation-to-solomon-2001.md',
-    blurb: 'Jordan\u2019s chronology from Creation to Solomon (Studies in Biblical Chronology No. 2).' },
+    blurb: 'Jordan\u2019s chronology from Creation to Solomon (Studies in Biblical Chronology No. 2).',
+    cover: { bg: '#e8ddc8', ink: '#3a2e1f', rule: '#8a6d3b' } },
   { slug: 'pentateuch-commentary', kind: 'jordan', sourceId: 'jordan-sbc-3', file: 'studies-in-biblical-chronology-3-pentateuch-commentary-2001.md',
-    blurb: 'Jordan\u2019s chronological and calendrical commentary on the Pentateuch (Studies in Biblical Chronology No. 3).' },
+    blurb: 'Jordan\u2019s chronological and calendrical commentary on the Pentateuch (Studies in Biblical Chronology No. 3).',
+    cover: { bg: '#3d2436', ink: '#f2e9f0', rule: '#d9a441' } },
   { slug: 'biblical-chronology', kind: 'bc', sourceId: 'jordan-biblical-horizons-chronology',
     shortTitle: 'Biblical Chronology', blurb: 'Jordan\u2019s Biblical Chronology newsletter, Vols. 1\u20139 (1989\u20131997): the complete run, 93 issues.',
-    licence: '\u00A9 James B. Jordan. Included with the owner\u2019s stated permission; not covered by this repository\u2019s MIT or CC BY 4.0 licences.' },
+    licence: '\u00A9 James B. Jordan. Included with the owner\u2019s stated permission; not covered by this repository\u2019s MIT or CC BY 4.0 licences.',
+    cover: { bg: '#f6f3ed', ink: '#2b2b2e', rule: '#840000' } },
 ];
+// The cover shows the main title only; a parenthetical (series, editor)
+// belongs under the cover, not on it.
+const coverTitle = (b) => (b.title || '').split(' (')[0];
+const bookCover = (b, large = false) => {
+  const c = b.cover || { bg: '#2b2b2e', ink: '#f2f0eb', rule: '#b08d57' };
+  return `<div class="book-cover${large ? ' book-cover-large' : ''}" style="--cover-bg:${c.bg};--cover-ink:${c.ink};--cover-rule:${c.rule}" role="img" aria-label="Cover of ${esc(b.title)}"><span class="book-cover-title">${shown(coverTitle(b))}</span><span class="book-cover-rule" aria-hidden="true"></span><span class="book-cover-author">${esc(b.author)}</span></div>`;
+};
 const JORDAN_LICENCE = '\u00A9 James B. Jordan. Included with the owner\u2019s stated permission; not covered by this repository\u2019s MIT or CC BY 4.0 licences.';
 for (const b of LIBRARY_BOOKS) {
   const s = sourceById[b.sourceId];
@@ -706,7 +727,7 @@ function mapThumbs(ids) {
 }
 
 // ---------- layout ----------
-function page({ title, desc, body, path, pagefind = true, pagefindIgnore = false, extraHead = '', scripts = '', type, book }) {
+function page({ title, desc, body, path, pagefind = true, pagefindIgnore = false, extraHead = '', scripts = '', type, book, chrome = true }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -721,9 +742,9 @@ function page({ title, desc, body, path, pagefind = true, pagefindIgnore = false
 <link rel="stylesheet" href="/assets/styles.css">
 ${extraHead}
 </head>
-<body${pagefindIgnore ? ' data-pagefind-ignore' : ''}>
+<body${pagefindIgnore ? ' data-pagefind-ignore' : ''}${chrome ? '' : ' class="reader-fullscreen"'}>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
+${chrome ? `<header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/">Ancient History Timeline</a>
     <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" hidden>
@@ -744,17 +765,17 @@ ${extraHead}
     </form>
   </div>
 </header>
-<script src="/assets/nav.js"></script>
+<script src="/assets/nav.js"></script>` : ''}
 <main id="main" class="wrap"${pagefind && !pagefindIgnore ? ' data-pagefind-body' : ''}>
 ${type ? `<span hidden data-pagefind-filter="type">${esc(type)}</span>` : ''}${book ? `<span hidden data-pagefind-filter="book">${esc(book)}</span>` : ''}
 ${body}
 </main>
-<footer class="site-footer"><div class="wrap small muted">
+${chrome ? `<footer class="site-footer"><div class="wrap small muted">
 <p>Young-Earth Creation framework; the Bible is the infallible standard. Sorted by <a href="/chronologies/">CFAH</a> anchor points (Griffith &amp; White), then CFAH non-anchor dates, Floyd Nolen Jones, and Ussher, <i>Annals of the World</i>.</p>
 <p>Place data © <a href="https://www.openbible.info/geo/" rel="noopener">OpenBible.info</a>, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>. Map tiles © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors. Historic maps: <a href="https://www.loc.gov/maps/" rel="noopener">Library of Congress</a>. Timeline: <a href="https://visjs.org/" rel="noopener">vis-timeline</a>; family chart: <a href="https://github.com/donatso/family-chart" rel="noopener">family-chart</a>; map: <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>; search: <a href="https://pagefind.app/" rel="noopener">Pagefind</a>. Reference finding: <a href="https://github.com/bibleup/bibleup" rel="noopener">BibleUp</a>.</p>
 <p class="dore-credit">Gustave Doré's Bible illustrations (1866) are public domain. Images are served by the Internet Archive (<a href="https://archive.org/details/gustavedore" rel="noopener">gustavedore</a>); small thumbnails are stored on this site. Titles and numbers are the Archive.org file names. <a href="/illustrations/dore/">All ${doreDoc.illustrations.length} plates</a>.</p>
 <p>A written Bible reference opens the Berean Standard Bible from <a href="https://bible.helloao.org/" rel="noopener">bible.helloao.org</a>, with the Amundson Interpretive Version from <a href="https://aivbible.kevinamundson.me" rel="noopener">aivbible.kevinamundson.me</a>. Scripture links still open the Berean Literal Bible on BibleHub.</p>
-</div></footer>
+</div></footer>` : ''}
 ${scripts}
 <script src="/assets/bibleup.js" defer></script>
 </body></html>`;
@@ -1600,7 +1621,12 @@ const raleighModernSectionCount = writeRaleighModernPage();
 // newsletter issue) gets its own reader page, indexed by Pagefind with a
 // book filter, so in-book search needs no shipped search index.
 const slugify = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80) || 'section';
-const readerHeadScript = `<script>try{var s=JSON.parse(localStorage.getItem('chronos-reader')||'{}');if(s.size)document.documentElement.style.setProperty('--reader-size',s.size);if(s.font)document.documentElement.setAttribute('data-reader-font',s.font);}catch(e){}</script>`;
+// Vollkorn is the reader's default face, loaded the same way the AIV reader
+// loads it (Google Fonts); Georgia is the offline fallback. The view
+// (paged by default) is applied pre-paint with the size and font, so the
+// first paint is already the reader's own view.
+const vollkornLinks = `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">`;
+const readerHeadScript = `${vollkornLinks}<script>try{var s=JSON.parse(localStorage.getItem('chronos-reader')||'{}');if(s.size)document.documentElement.style.setProperty('--reader-size',s.size);if(s.font)document.documentElement.setAttribute('data-reader-font',s.font);document.documentElement.classList.toggle('reader-paged',(s.view||'paged')==='paged');}catch(e){}</script>`;
 
 function raleighUnits() {
   const byFile = new Map();
@@ -1665,8 +1691,10 @@ function readerToolbar(book, unitSlug) {
   return `<div class="reader-toolbar" data-book="${esc(book.slug)}" data-unit="${esc(unitSlug)}">
   <button type="button" id="reader-toc-toggle" aria-expanded="false" aria-controls="reader-toc">Contents</button>
   <div class="reader-search-wrap"><label class="visually-hidden" for="reader-search">Search this book</label><input id="reader-search" type="search" placeholder="Search this book" autocomplete="off"><div id="reader-search-results" hidden></div></div>
+  <div class="reader-view" role="group" aria-label="Reading view"><button type="button" id="reader-view-scroll" aria-pressed="false">Scroll</button><button type="button" id="reader-view-paged" aria-pressed="true">Pages</button></div>
   <label for="reader-size">Text size</label><input id="reader-size" type="range" min="14" max="24" step="1" value="18"><span id="reader-size-value" class="small muted" aria-hidden="true"></span>
-  <label for="reader-font">Font</label><select id="reader-font"><option value="georgia">Georgia</option><option value="palatino">Palatino</option><option value="sans">Sans</option></select>
+  <label for="reader-font">Font</label><select id="reader-font"><option value="vollkorn" selected>Vollkorn</option><option value="georgia">Georgia</option><option value="palatino">Palatino</option><option value="sans">Sans</option></select>
+  <button type="button" id="reader-fullscreen" aria-pressed="false">Full screen</button>
 </div>`;
 }
 
@@ -1702,7 +1730,8 @@ ${readerToolbar(book, unit.slug)}
 <aside id="reader-toc" class="reader-toc" aria-label="Table of contents"><p class="reader-toc-head">Contents</p><ul id="reader-toc-list" class="reader-toc-list"></ul><p class="small muted"><a href="../">All contents on the book page</a></p></aside>
 <div class="reader-main">
 <article class="reader-body">${bodyHtml}</article>
-<nav class="reader-pager" aria-label="Sections">${prev ? `<a href="../${esc(prev.slug)}/">&larr; ${esc(prev.title)}</a>` : '<span></span>'}${next ? `<a href="../${esc(next.slug)}/">${esc(next.title)} &rarr;</a>` : ''}</nav>
+<div class="reader-pagebar" hidden><button type="button" id="reader-page-prev">&larr; Prev</button><span id="reader-page-label" aria-live="polite"></span><button type="button" id="reader-page-next">Next &rarr;</button></div>
+<nav class="reader-pager" aria-label="Sections">${prev ? `<a data-unit-prev href="../${esc(prev.slug)}/">&larr; ${esc(prev.title)}</a>` : '<span></span>'}${next ? `<a data-unit-next href="../${esc(next.slug)}/">${esc(next.title)} &rarr;</a>` : ''}</nav>
 ${unitFormats(book, unit)}
 </div>
 </div>`;
@@ -1713,6 +1742,7 @@ ${unitFormats(book, unit)}
     path: `/library/${book.slug}/${unit.slug}/`,
     book: book.slug,
     type: 'Book',
+    chrome: false,
     extraHead: readerHeadScript,
     scripts: '<script src="/assets/reader.js" defer></script>',
   }));
@@ -1735,11 +1765,12 @@ function writeBookLanding(book, units) {
   const body = `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/library/">Library</a></li><li aria-current="page">${shown(book.title)}</li></ol></nav>
 <h1>${shown(book.title)}</h1>
 <p class="lede">${esc(book.blurb)}</p>
+<div class="book-hero">${bookCover(book, true)}
 <section class="card"><dl class="facts"><div><dt>Author</dt><dd>${esc(book.author)}</dd></div><div><dt>Published</dt><dd>${esc(book.year)}</dd></div><div><dt>Contents</dt><dd>${esc(count)}</dd></div></dl>
 <p class="small muted">${esc(book.licence)}</p>
 <p id="continue-reading" data-book="${esc(book.slug)}" hidden>Continue reading: <a href="./${esc(units[0].slug)}/">where you left off</a></p>
 <p><strong>Read online:</strong> <a href="./${esc(units[0].slug)}/">Start reading</a></p>
-<p><strong>Formats:</strong> ${formats}</p></section>
+<p><strong>Formats:</strong> ${formats}</p></section></div>
 ${tocHtml}`;
   out(`library/${book.slug}/index.html`, page({
     title: book.title,
@@ -1748,6 +1779,7 @@ ${tocHtml}`;
     path: `/library/${book.slug}/`,
     book: book.slug,
     type: 'Book',
+    extraHead: vollkornLinks,
     scripts: '<script src="/assets/reader.js" defer></script>',
   }));
   // Table of contents as data, for the reader drawer and search titles.
@@ -1774,18 +1806,19 @@ function writeLibraryPages() {
     const n = counts[b.slug];
     const contents = b.kind === 'raleigh' ? `${n} sections` : b.kind === 'bc' ? `${n} issues` : n > 1 ? `${n} essays` : 'Complete text';
     const forms = b.kind === 'raleigh' ? 'Markdown, EPUB, Word, PDF, XML' : b.kind === 'jordan' ? 'Markdown, PDF' : 'Markdown, original pages';
-    return `<section class="card"><h2><a href="/library/${esc(b.slug)}/">${shown(b.title)}</a></h2><p class="muted">${esc(b.author)}${b.year ? ` · ${esc(b.year)}` : ''} · ${esc(contents)}</p><p>${esc(b.blurb)}</p><p class="small"><a href="/library/${esc(b.slug)}/">Read online</a> · ${esc(forms)}</p><p class="small muted">${esc(b.licence)}</p></section>`;
+    return `<article class="library-item"><a href="/library/${esc(b.slug)}/" aria-label="${esc(b.title)}">${bookCover(b)}</a><h2><a href="/library/${esc(b.slug)}/">${shown(b.title)}</a></h2><p class="muted">${esc(b.author)}${b.year ? ` · ${esc(b.year)}` : ''} · ${esc(contents)}</p><p class="library-blurb">${esc(b.blurb)}</p><p class="small"><a href="/library/${esc(b.slug)}/">Read online</a> · ${esc(forms)}</p></article>`;
   }).join('\n');
   const body = `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li aria-current="page">Library</li></ol></nav>
 <h1>Library</h1>
 <p class="lede">The complete books held on this site, to read online or download. Each reader has a table of contents, type size and font controls, and search within the book. Sources cited anywhere on the site link here with &ldquo;Read online&rdquo; where a complete text exists.</p>
-${cards}`;
+<div class="library-grid">${cards}</div>`;
   out('library/index.html', page({
     title: 'Library',
     desc: 'The complete books held on the Chronos Timeline: Raleigh, History of the World (1617), James B. Jordan\u2019s books, and the Biblical Chronology newsletter. Read online or download.',
     body,
     path: '/library/',
     type: 'Book',
+    extraHead: vollkornLinks,
   }));
   return counts;
 }

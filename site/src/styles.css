@@ -669,7 +669,9 @@ h2.h3 { font-size: 17px; margin: 16px 0 8px; font-weight: 600; }
 #reader-search-results[hidden] { display: none; }
 #reader-search-results mark { background: var(--accent-fill); color: inherit; }
 #reader-search-results ul { padding-left: 1.1em; }
-.reader-body { font-family: Georgia, 'Times New Roman', serif; font-size: var(--reader-size, 1.125rem); line-height: 1.7; max-width: 38rem; margin: 0 auto; overflow-wrap: break-word; }
+.reader-body { font-family: 'Vollkorn', Georgia, 'Times New Roman', serif; font-size: var(--reader-size, 1.125rem); line-height: 1.7; max-width: 38rem; margin: 0 auto; overflow-wrap: break-word; }
+[data-reader-font="vollkorn"] .reader-body { font-family: 'Vollkorn', Georgia, 'Times New Roman', serif; }
+[data-reader-font="georgia"] .reader-body { font-family: Georgia, 'Times New Roman', serif; }
 [data-reader-font="palatino"] .reader-body { font-family: 'Iowan Old Style', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif; }
 [data-reader-font="sans"] .reader-body { font-family: var(--font); }
 .reader-body p { margin: 0 0 1em; }
@@ -703,3 +705,49 @@ h2.h3 { font-size: 17px; margin: 16px 0 8px; font-weight: 600; }
   .reader-toc.is-open { transform: none; }
 }
 @media (prefers-reduced-motion: reduce) { .reader-toc { transition: none; } }
+
+/* Full-screen reader: reader pages carry no site header or footer. The
+   toolbar sticks to the top while scrolling; Pages view fills exactly one
+   viewport, with the text laid out in columns one page wide. */
+body.reader-fullscreen main.wrap { padding-top: 12px; }
+.reader-fullscreen .reader-toolbar { position: sticky; top: 0; z-index: 1000; }
+.reader-view { display: inline-flex; background: var(--bg-fill); border-radius: 9px; padding: 2px; }
+.reader-view button { font: inherit; font-size: 14px; padding: 6px 12px; min-height: 32px; border: 0; border-radius: 7px; background: transparent; color: var(--label-2); cursor: pointer; }
+.reader-view button[aria-pressed="true"] { background: var(--bg-elev); color: var(--label); box-shadow: var(--shadow); }
+#reader-fullscreen { font: inherit; font-size: 15px; padding: 6px 10px; min-height: 36px; border-radius: 8px; border: 1px solid var(--sep); background: var(--bg-fill); color: var(--label); cursor: pointer; }
+.reader-pagebar { display: flex; align-items: center; justify-content: space-between; gap: 12px; max-width: 38rem; width: 100%; margin: 12px auto 0; }
+.reader-pagebar[hidden] { display: none; }
+.reader-pagebar button { font: inherit; font-size: 15px; padding: 8px 12px; min-height: 44px; border-radius: 8px; border: 1px solid var(--sep); background: var(--bg-fill); color: var(--label); cursor: pointer; }
+.reader-pagebar button:disabled { opacity: .4; cursor: default; }
+#reader-page-label { font-size: 14px; color: var(--label-2); }
+html.reader-paged body.reader-fullscreen main.wrap { height: 100dvh; display: flex; flex-direction: column; overflow: hidden; padding-bottom: 12px; }
+html.reader-paged .reader-layout { flex: 1 1 auto; min-height: 0; align-items: stretch; }
+html.reader-paged .reader-main { display: flex; flex-direction: column; min-height: 0; }
+html.reader-paged .reader-body { flex: 1 1 auto; min-height: 0; overflow: hidden; column-gap: 2rem; column-fill: auto; touch-action: pan-y; }
+html.reader-paged .reader-body h2, html.reader-paged .reader-body h3 { break-after: avoid; }
+html.reader-paged .reader-body table { display: block; overflow-x: auto; }
+html.reader-paged .crumbs { display: none; }
+html.reader-paged .reader-pager, html.reader-paged .reader-main > section.card { display: none; }
+@media (max-width: 1023px) {
+  html.reader-paged .reader-layout { display: flex; flex-direction: column; }
+}
+
+/* Library covers: Apple Books-style grid of typographic covers. The cover
+   keeps its own colours in both themes; it is artwork, not page chrome. */
+.library-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 28px 20px; margin-top: 24px; }
+.library-item h2 { font-size: 17px; line-height: 1.3; margin: 10px 0 2px; }
+.library-item h2 a { color: var(--label); }
+.library-item p { margin: 2px 0; }
+.library-blurb { font-size: 14px; color: var(--label-2); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.book-cover { position: relative; aspect-ratio: 2 / 3; border-radius: 4px 8px 8px 4px; background: var(--cover-bg); color: var(--cover-ink); box-shadow: 0 2px 8px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.12); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 18% 12%; overflow: hidden; transition: transform .15s ease, box-shadow .15s ease; }
+.book-cover::before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; width: 7px; background: linear-gradient(to right, rgba(0,0,0,.28), rgba(0,0,0,.08) 55%, rgba(255,255,255,.14)); }
+.book-cover::after { content: ""; position: absolute; top: 0; bottom: 0; left: 7px; width: 1px; background: rgba(255,255,255,.18); }
+a:hover .book-cover, a:focus-visible .book-cover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,.2), 0 14px 32px rgba(0,0,0,.16); }
+.book-cover-title { font-family: 'Vollkorn', Georgia, 'Times New Roman', serif; font-size: clamp(15px, 1.35vw, 20px); line-height: 1.25; font-weight: 600; }
+.book-cover-rule { width: 34px; height: 2px; background: var(--cover-rule); margin: 14px 0 10px; flex: none; }
+.book-cover-author { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; opacity: .85; }
+.book-cover-large { width: min(11rem, 40vw); flex: none; }
+.book-cover-large .book-cover-title { font-size: 22px; }
+.book-hero { display: flex; gap: 24px; align-items: flex-start; margin-bottom: 24px; flex-wrap: wrap; }
+.book-hero .card { flex: 1 1 22rem; }
+@media (prefers-reduced-motion: reduce) { .book-cover { transition: none; } }
