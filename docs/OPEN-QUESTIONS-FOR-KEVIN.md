@@ -2336,7 +2336,7 @@ Pass 19 read Book III, Part I, Chapters I–VI, and stopped at the end of Chapte
 - **Ruling (Kevin, 2026-11-27):** Leave the Greek notation as printed. βγ (item 15) is the Greek numeral for 23, not a word to modernize — fine as is. Passage p03394, Book III, Part I, Chapter I, §. VI: "which how it could be supposed in βγ standing for 23. I do not well perceive."
 - **Rulings (Kevin, 2026-11-27) — all fourteen words, applied** in `scripts/raleigh/modern-edition.mjs` (`PASSAGE_CORRECTIONS` and `FOOTNOTES`), stored files regenerated on branch `gb/raleigh-modern-edition` (PR #45):
   - `durelesse` (2 occurrences, p00051 and p00882) → `dureless (transitory)`.
-  - `oner` → `oner-flow` (p04090) becomes `overflow`. The standalone `oner` in p05155 ("consigne them oner to the Romans") was **not** ruled on — left as printed, still open.
+  - `oner` → `oner-flow` (p04090) becomes `overflow`; the standalone `oner` in p05155 ("consigne them oner to the Romans") → `over` (ruled Nov 27, 2026, applied in the same commit series).
   - `minas` (p00029) → `minds`.
   - `incopsed` (p01299) → `incopsed (enclosed)`.
   - `heerehence` (p02215) → `here hence` (already the modernizer's form; the ruling confirms it).

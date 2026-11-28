@@ -203,8 +203,8 @@ function alignTokens(orig, modern) {
 // Each passage has exactly one match; if that ever stops being true the
 // correction is skipped and the passage stays as printed. Italic spans
 // after the replacement shift by the length delta, like the name
-// replacements below. Not ruled: the standalone "oner" in p05155
-// ("consigne them oner to the Romans") — left as printed, still open.
+// replacements below. The standalone "oner" in p05155 ("consigne them
+// oner to the Romans") is also "over" (Kevin, Nov 27, 2026).
 const PASSAGE_CORRECTIONS = {
   // N108.
   p00008: [['bath', 'has']],
@@ -216,6 +216,7 @@ const PASSAGE_CORRECTIONS = {
   p00051: [['durelesse', 'dureless (transitory)']],
   p00882: [['durelesse', 'dureless (transitory)']],
   p04090: [['oner-flow', 'overflow']],
+  p05155: [['oner', 'over']],
   p00029: [['minaes', 'minds']], // printed "minaes"; the modernizer renders it "minas"
   p01299: [['incopsed', 'incopsed (enclosed)']],
   p02393: [['it heroes * radiantes', "it's radiant heros"]],
