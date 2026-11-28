@@ -2311,6 +2311,71 @@ Pass 19 read Book III, Part I, Chapters I–VI, and stopped at the end of Chapte
   2. Name a figure that should be stored, or an existing event that should gain or lose a passage.
 - **Recommendation:** option 1.
 
+### N106. Archaic words with no certain modern equivalent (stored modern edition)
+
+- **Why it matters:** The stored modern edition modernizes every word it can. Fifteen words (one occurrence each, except as noted) have no certain modern equivalent, so they stay as printed rather than being guessed. They are on the spellcheck allowlist (`scripts/raleigh/modern-allowlist.txt`) so the edition still passes spellcheck, but they are not Modern English yet.
+  - `durelesse` — archaic "dureless" (not lasting); sense unclear between fleeting and worthless.
+  - `oner` — probably "over" (a misprint).
+  - `minas` — probably "minds" (a misprint); sense unclear.
+  - `incopsed` — rare word, apparently enclosed or overgrown with thickets; sense not certain from the sample.
+  - `heerehence` — obscure compound; sense unclear from the sample.
+  - `cuened` — sense unclear; possibly a misprint (Abimelech sowing Shechem).
+  - `radiants` — sense unclear; possibly "radiant" (heroes?).
+  - `slaterly` — possibly "stately"; sense unclear.
+  - `wcs` — sense unclear from the sample.
+  - `slemme` — sense unclear; possibly "scheme" or "slimness".
+  - `tournie` — possibly "tourney" (march or expedition); sense unclear.
+  - `scrued` — sense unclear; possibly "secured" or "supplied".
+  - `ns` — sense unclear from the sample.
+  - `nates` — sense unclear from the sample.
+  - `βγ` — Greek numeral notation for 23; not a word to modernize, stays as printed.
+- **Options:**
+  1. Leave them as printed, as now.
+  2. Name the modern form for a word, and it will be modernized.
+- **Recommendation:** option 1, unless you know the word.
+- **Ruling (Kevin, 2026-11-27):** Leave the Greek notation as printed. βγ (item 15) is the Greek numeral for 23, not a word to modernize — fine as is. Passage p03394, Book III, Part I, Chapter I, §. VI: "which how it could be supposed in βγ standing for 23. I do not well perceive."
+- **Rulings (Kevin, 2026-11-27) — all fourteen words, applied** in `scripts/raleigh/modern-edition.mjs` (`PASSAGE_CORRECTIONS` and `FOOTNOTES`), stored files regenerated on branch `gb/raleigh-modern-edition` (PR #45):
+  - `durelesse` (2 occurrences, p00051 and p00882) → `dureless (transitory)`.
+  - `oner` → `oner-flow` (p04090) becomes `overflow`; the standalone `oner` in p05155 ("consigne them oner to the Romans") → `over` (ruled Nov 27, 2026, applied in the same commit series).
+  - `minas` (p00029) → `minds`.
+  - `incopsed` (p01299) → `incopsed (enclosed)`.
+  - `heerehence` (p02215) → `here hence` (already the modernizer's form; the ruling confirms it).
+  - `cuened` (p02228) → left as printed, with a footnote "Unknown word."
+  - `it heros radiants` (p02393) → `it's radiant heros`. (The `*` in the stored text is a marginal-note marker from the print, removed with the phrase.)
+  - `slaterly` (p03410) → `stately`.
+  - `wcs` (p04168) → left as printed, with a footnote "Unknown word."
+  - `slemme` (p04928) → `scheme`.
+  - `tournie` (p04929) → `tournie (march)`.
+  - `scrued` (p05144) → `supplied`.
+  - `ns` (p03601) → left as printed, with a footnote "Unknown word."
+  - `nates` (p04676) → joined: `Priuer nates` becomes `Privernates` (the stored text had read "Privernates nates" — the name map replaced only the first word).
+  - Footnotes are numbered per section, marked with a superscript number in the modern text, listed at the end of the section file and in the passage's `notes` field in `index.json`, and rendered in the downloads (EPUB, DOCX, PDF, TEI XML) and on the site.
+
+### N107. Names whose modern form is uncertain (stored modern edition)
+
+- **Why it matters:** The stored modern edition modernizes proper names to their modern form, with the original form in italics after the first occurrence in each section. The names below have no certain modern form, so they stay as printed (no modern form, no reference) rather than being guessed. They are on the spellcheck allowlist.
+  - From the long-tail name review, chunk 3 (49): sachrona, gibelin, balezona, taphna, bataramptha, vetezobra, mageth, tracbones, hushites, suetha, suitis, agab, cuzumbarec, chemer, anchsis, melanis, achanis, tehu, ulika, atmie, gerauthae, marsylus, elcain, eddaguadare, tkuoris, emperamus, pudkey, dach, mediana, thecues, stissum, bigarra, tritonos, meles, ibes, cattrington, loray, callis, prinasstans, piera, ziton, artamenes, moeragenos, margana, velatiae, clevas, niceas, vipera, lusine. Most are obscure towns, peoples, or officers from the Punic and Macedonian narratives.
+  - From the long-tail name review, chunk 2 (16): calphas, tarquins, scipios, marsam, rhage, mero, nemeures, barius, seilax, sollax, inaus, gazeus, aliacensis, lubratenu, mulene, arime. (`tarquins` and `scipios` are used both as possessives and plurals.)
+  - From the re-run long-tail name review (Nov 27, 2026; the chunks were re-spawned after the /tmp wipe): ar, theron, gerson, moy, councels, q'uil, pre, babyton, jusser, jap, potes, sigog, robbin, genevapersuadeat, zoob, amhad, antiopia, naasson, sitarchies, philassar, guichar, hippagrcta, beede. (Several are fragments of longer names split across a line or span boundary, e.g. genevapersuadeat.)
+- **Options:**
+  1. Leave them as printed, as now.
+  2. Name the modern form for a name, and it will be modernized with the original in italics.
+- **Recommendation:** option 1, unless you know the name.
+
+### N108. "bath" for "hath" (stored modern edition; suspected misprint)
+
+- **Why it matters:** The 1617 text prints "bath" where the sense is plainly "hath" (has) in five passages. Both in-repo transcriptions (the unadorned XML and the TCP P5 copy) agree on "bath", so it is in the print, not a transcription error. The modern text preserves "bath" as printed, which reads as nonsense in modern English ("Livy bath a touch"). A sixth "bath" (p02343, "a very wholesome bath") is the genuine noun and is correct.
+  - p00008: "according to the compass it bath" (has).
+  - p00012: "of which Livy bath a touch" (has).
+  - p00027: "which His Majesty bath brought with him unto this Land" (has).
+  - p00979: "The same confusion of names bath Tigris" (has).
+  - p02718: "which bath no compassion or respect of persons" (has).
+- **Options:**
+  1. Leave "bath" as printed, as now.
+  2. Correct these five to "has" in the modern edition (the original text stays untouched).
+- **Recommendation:** option 2 — the sense is unambiguous in all five, and "bath" as a verb is meaningless. But it is an editorial correction, not a spelling modernization, so it is your call.
+- **Ruling (Kevin, 2026-11-27):** Correct all five to "has" in the modern edition (original text untouched). Applied: `PASSAGE_CORRECTIONS` in `scripts/raleigh/modern-edition.mjs`; stored files regenerated on branch `gb/raleigh-modern-edition` (PR #45).
+
 ## O. Dynasty of Slaves (BLK SHP Scott, 2026)
 
 Source: BLK SHP Scott, *Dynasty of Slaves: Uncovering the Archeological Record of Israel in Egypt* (BLK SHP Publishing, 2026; Kindle Direct Publishing). eBook ISBN 979-8-9960110-3-2; softcover 979-8-9960110-0-1; hardcover 979-8-9960110-2-5; audiobook 979-8-9960110-1-8. © the author, all rights reserved. The dated statements are in `data/dynasty-of-slaves-dates-extract.md`. The chronology `dynasty-of-slaves` is display only. It does not set a sort year. Citations are chapter and section. The edition has no printed page numbers.

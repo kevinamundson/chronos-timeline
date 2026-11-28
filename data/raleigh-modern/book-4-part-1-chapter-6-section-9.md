@@ -1,0 +1,19 @@
+# Book IV, Part I, Chapter VI, §. 9
+
+> Sir Walter Raleigh, *The History of the World* (1617). Modern edition. Original spelling: EarlyPrint A10357 (EEBO-TCP), London 1617, Stansby for Walter Burre. The original text is untouched; this file is the stored modern copy.
+
+## p04391 · sig. 528a
+
+§. IX. The death of Ptolemy *PTOLOMIE*, of LYSIMACHUS, and of SELEVCUS *SELEVCVS*, that was last of ALEXANDERS Captains *Captaines*: with other occurrences.
+
+## p04392 · sig. 528a
+
+About the same time that Demetrius died, died also Ptolemy King of Egypt *Aegypt*; a virtuous Prince, warlike, gentle, bountiful, and( which in those times was a rare commendation) regardful of his word. He had, by many Wives *Wiues* and Concubines, many children, out of whom he selected Ptolemy Philadelphus, and caused him to reign together with himself, two or three years before he died, that So he might confirm him in the inheritance of the Kingdom. At this, Ptolemy Ceraunus( for all of that house assumed the name of Ptolemy) was grievously incensed. But no man cared for his anger. Therefore he went to Seleucus, who gave him loving entertainment. There were now only two of Alexanders Captains left, Seleucus and 〈◊ 〉. These two needs would fight for it, who should be the longest liver of that brave Company. The true ground of their quarrel was, their near equality of strength, and want of one to part them. The pretence was the murders which Lysimachus had committed upon many of his Nobles, together with his poisoning Agathocles his eldest son: whose wife and children fled unto Seleucus for aide.
+
+## p04393 · sig. 528a
+
+The 〈◊ 〉 after seven Months *Moneths* pause, having spent their first heat of admiration, began to hearken So well to Lysimachus, their natural Country-man *Countrie-man*, that they forsook Pyrrhus, upon none other ground than because he was an Alien. This they had known well enough before: but they did him no great wrong in taking lightly from him, which they lightly gave him. Lysimachus had reigned about five years alone, when the City of Lysimachia( built by him, and called after his name) falling by an earthquake, appeared, by events, to have foreshowed the fall of his house. His own jealousy, and the instigation of a mother in law, caused him to poison his Son Agathocles, which drew upon him that war, wherein( after the loss of all his fifteen children, that were taken away by divers accidents) he perished himself.
+
+## p04394 · sig. 528b
+
+Seleucus was encountered by Lysimachus on Asia side, where one battle concluded the war, with Lysimachus his death. It pleased Seleucus more than the victory, that he was the last of all the great Heros *Heröes* which had followed Alexander. For now he seemed to himself, as Lord and heir of all the conquered World. So he passed over into Macedon, to take possession of Europe, where there was none to withstand him. But there he ended his days, and within seven months followed Lysimachus, and other of his fellows, by a bloody death: being treacherously slain by Ptolemy Ceraunus, whose friend and Patron he had been. Seventy and seven year old he was, when he fought with Lysimachus, and Lysimachus was seventy and four. With them ended the generation of old Captains, that had seen the days, as it were of another World under the Persian: yet was there left one equal to any of them, in the 〈◊ 〉 of war: even Pyrrhus the Epirot, of whom we spoke before; that is now ready to enter into war with the Romans, a more warlike people, than Alexander himself ever did encounter. Of which war, and of which people, it is needful that we here make mention, as of a story more important, than any likely to ensue in Greece, or in the great Kingdoms *Kingdomes*, that were held by Alexanders Successors, with less( and still decreasing) virtue, than was that, by which they were first purchased.

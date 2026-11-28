@@ -1,0 +1,39 @@
+# Book IV, Part I, Chapter III, §. 1
+
+> Sir Walter Raleigh, *The History of the World* (1617). Modern edition. Original spelling: EarlyPrint A10357 (EEBO-TCP), London 1617, Stansby for Walter Burre. The original text is untouched; this file is the stored modern copy.
+
+## p04092 · sig. 488a
+
+§. I. Of the question about succession to ALEXANDER.
+
+## p04093 · sig. 488a
+
+THE death of Alexander left his Army( as 〈◊ 〉 the Athenian then compared it) in such case, as was that monstrous Giant Polyphemus, having lost his only eye. For, that which is reported in fables of that great Cyclops, might well be verified of the Macedonians: their force was intolerable, but for want of good guidance ineffectual, and harmful chiefly to themselves. The causes whereof( under the divine ordinance) were, partly the uncertainty of Title to succession in the Kingdom of Macedon, partly the stubborn pride of Alexander himself, who thinking none worthy to be his heir, did refuse to establish the right in any one, leaving every one to his own fortune: but especially the great ambition of his followers, who all had learned of their Master to suffer no equals; a lesson soon taught unto spirits reflecting upon their own worth, when the reverence of a greater object fails.
+
+## p04094 · sig. 488a
+
+it hath formerly been showed, That Philip( the Father of Alexander) governing in Macedon as Protector, assumed unto himself the Kingdom, not rendering it unto Amyntas, ( the Son of his elder brother Perdiccas) when he grew to mans estate; but only bestowing upon him in marriage a Daughter of his own: by which bond, and much more by his proper strength, he assured the Crown unto himself: Amyntas never attempting ought against Philip; though( with price of his life) he did against Alexander in the beginning of his reign. Wherefore Eurydice the sole issue of his marriage, ought in reason to have been acknowledged Queen after Alexander; as having better Title thereto, than either He or Philip had, when they lived, unless( peradventure) some Law of that Nation forbade the reign of women. But the excellent virtue of those two Princes had utterly defaced the right of all Pretenders, not claiming from their own bodies: and So great were their conquests, that Macedon itself was( in regard of them) a very small Appendix, and no way deserving to be laid in balance against the demand of their posterity, had they left any able to make challenge of the Royal seat.
+
+## p04095 · sig. 488a
+
+Alexander having taken many wives, had issue by none of the principal of them. 〈◊ 〉 the Daughter of Artabazus a Persian had borne unto him a young Son: and Roxana *Roxane* the Daughter of Oxyartes( whom he had more solemnly married) was left by him great with child. But the baseness of the Mothers, and contempt of the conquered Nations, was generally alleged in Bar of the Plea made for them, by some that would( perhaps) have wrought out their own ends, under the name of Alexanders children.
+
+## p04096 · sig. 488b
+
+Cleopatra the sister of Alexander, widow to the King of Epirus, and Arrhidaeus *Aridaeus* his base brother( son to Philip by a Concubine of no account) who had married the Lady Eurydice before mentioned, were next in course. Of Cleopatra there was no speech, which may give suspicion, that either Law or Custom had made that sex incapable of the 〈◊ 〉 Arrhidaeus( besides his bastardy) was neither for person nor quality fit to rule as King; yet upon him the election fell, but slowly, and( as happens often) for lack of a better: when the Counsellors *Counsailors* having over-labored their disagreeing wits in devising what was best, were content for very weariness to take what came next to hand.
+
+## p04097 · sig. 488b
+
+Ptolemy *Ptolomie*( soon after King of Egypt *Aegypt*) concurring with them who rejected all mention of the half- Persian brood, King Alexanders children, was of opinion, that the rule of all should be given to the Captains *Captaines*, that going for law which by the greater part of them should be decreed: So far was he from acknowledging any one as true heir to the Crown.
+
+## p04098 · sig. 488b
+
+This Ptolemy was called the son of Lagus, but reputed of Philip: who having used the company of 〈◊ 〉 Ptolemy's *Ptolomeis* mother, delivered her in marriage to Lagus being great with child. Therefore, whether it were So, that he hoped well to work his own fortune out of those dissensions, which are incident unto the consultations of many ambitious men, equal in place, forcing them at length to redeem their quiet with subjection to one, deserving regard by his blood, and trust for his even carriage; or whether he desired only to get a share to himself, which could not have come to passe, had all been given to one: plain enough it is, that he thought not on preferring Arrhidaeus before himself; and therefore gave such counsel as fitted his own and other men's purposes. Yea, this device of his took place in deed, though not in form as he had propounded it: For, it was in effect all one, to have assembled at Alexanders empty chair, as Ptolemy had conceived the form of their consultations, or to set in the chair such a King as Arrhidaeus, no wiser then the chair it self. Also the controversies arising were determined by the greater part of the Captains; by the greater part, if not in number, yet in power.
+
+## p04099 · sig. 488b
+
+But as these counterfeit shows of dissembling aspirers, do often take check by the plain dealing of them, who dare to go more directly to work: So was it like to have fared with Ptolemy and the rest, when Aristonus, another of the Captains, interpreted the words of Alexander; saying, That he left his Kingdom to the worthiest, as designing Perdiccas, to whom( lying at the point of death) he delivered his ring. It seemed good in reason, that Alexander should be disposer of his own purchases; and those tokens of Alexanders purpose appeared plain enough, So long as no man would interpose another construction: every one being uncertain how the secret affections of the rest might be inclined. Many therefore, either out of their love, or because they would not be of the latest, urged Perdiccas to take upon him the 〈◊ 〉 Royal. He was no stranger to the Royal blood; yet his birth gave him not such reputation, as the great favour of his dead King, with whom he had been very inward, and that especially since the death of Hephaestion *Ephestian*( a powerful Minion) into whose place he was chosen. For his own worth he might well be commended, as a good man of War, and one that had given much proof of his private valour. But very surly he was: which quality( joined with good fortune) carried a show of Majesty: being checked with misadventure, it was called by a true name Pride; and rewarded with death.
+
+## p04100 · sig. 488b
+
+In the present business a foolish over-weening did him as great harm, as it had been great happiness to have succeeded Alexander. For not content to have the acclamation of the Soldiers *Souldiers*, approving the sentence of Aristonus, he would needs counterfeit modesty; thinking that every one of the Princes would have entreated him to take the weighty burden of an Empire, which would be the less envious, the more solemnity he used in the acceptance. It is truly said, He that feigns himself a sheep, may chance to be eaten by a Wolf. Meleager, ( a man by nature envious, and bearing a particular hatred to Perdiccas) took advantage of his irresolute behaviour, and very bitterly inveighed against him. In conclusion, he pronounced, that whosoever was heir to the Crown, the Soldiers ought to be Heirs *Heires* to the treasure; and therefore he invited them, who were nothing slow, to share it. This disturbed all the Consultation. The Captains were left alone, far enough from agreeing, and not able to have brought any conclusion to good effect without consent of the Soldiers, who greedy of spoil thronged about Meleager.

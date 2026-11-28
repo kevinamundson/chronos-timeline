@@ -1,0 +1,59 @@
+# Book III, Part I, Chapter V, §. 7
+
+> Sir Walter Raleigh, *The History of the World* (1617). Modern edition. Original spelling: EarlyPrint A10357 (EEBO-TCP), London 1617, Stansby for Walter Burre. The original text is untouched; this file is the stored modern copy.
+
+## p03592 · sig. 407b
+
+§. VII. *Of the Ionian Rebellion, which was the principal cause of the wars 〈◊ 〉 between Greece and Persia.*
+
+## p03593 · sig. 407b
+
+Another, and a strong motive to this expedition, was the Ionic war, breaking out in Asia about the same time. The Colonies transported out of Greece into Asia, which occupied the greatest part of the 〈◊ 〉, having 〈◊ 〉 their liberty about 500. years, even from the Ionic, migration, to the time of Croesus, were by this Lydian King made 〈◊ 〉, and afterwards as parcel of his Dominions, were taken in by Cyrus, and left as hereditary Servants *Seruants* to the Crown of Persia.
+
+## p03594 · sig. 408a
+
+But as it is the custom of Nations half conquered( witness Ireland) to rebel again upon every advantage and opportunity: So did the Ionians, and other 〈◊ 〉, both in Cyrus his life, and after him, seek by all means possible to free themselves.
+
+## p03595 · sig. 408a
+
+At this time they found such men ready to spur them into Rebellion, as had by the Persian been given unto them for bridles to hold them in subjection. Every one of those Towns *Townes* had a Lord to rule it, whom they( abhorring the government of one man) called their Tyrants. These Lords were very true to the Persian, by whose only might they held the people in subjection. And this their dutiful affection they had well declared, when, Darius being in great extremity, they used all means to deliver him and his Army( that otherwise had been lost) out of the Scythians hand. Of this great piece of service 〈◊ 〉 the tyrant of Miletus expected the chief thanks, as having been chief Author of their expecting 〈◊ 〉, when the rest, either persuaded by the Scythians, 〈◊ 〉 carried away with 〈◊ 〉 own desires, were ready to have abandoned him. But it came So to passe, that Darius being more fearful of the harm that 〈◊ 〉( being powerful and crafty) might do to him in the future, than mindful of the good which he had already received at his hand, found means to carry him a-long to Susa, where he detained him with all kind usage of a friend, yet kept such good espial upon him, as an enemy, he could not start away. 〈◊ 〉 had subtlety enough to discover the Kings purpose; which ill agreed with his owned desires. For he thought it more pleasant, and more honourable 〈◊ 〉 rule as Prince in one fair City, having a small Territory, than to sit and 〈◊ 〉 at the great Kings table, and hear the counsels by which a large Empire was managed; being himself an idle beholder, and enjoying with much restraint of liberty, none other pleasures than a private man might bestow upon himself.
+
+## p03596 · sig. 408a
+
+Wherefore he bethought himself of 〈◊ 〉 of some tumults in the lower 〈◊ 〉, to 〈◊ 〉 which if he might be sent, as one that had great experience and authority in those quarters it would afterwards be in his power to stay at home, and either satisfy the King with excuses, or deal as occasion shall require. Resolving *Resoluing* upon this course, he sent very secret instructions to 〈◊ 〉 his kinsman, whom he had left his Deputy at 〈◊ 〉, advising him to stir up some Rebellion. These directions came seasonably to 〈◊ 〉, who having failed in an enterprise upon the Isle of Naxos, through the false dealing of a Persian his Associate, stood in fear of 〈◊ 〉, if not of some further ill that might befall him, as one that that had 〈◊ 〉 the Kings treasures to no good purpose.
+
+## p03597 · sig. 408a
+
+Therefore he readily embraced the counsel: and the better to draw the whole Country of Ionia into the same course which he determined to 〈◊ 〉, he abandoned his tyranny, and did set Miletus at liberty. This plausible beginning wan unto him the hearts of the Milesians: and his proceeding with other Ionian Tyrants( of whom some he took and sold as slaves to their citizens, 〈◊ 〉 he chased away) caused the whole Nation to be at his command. The Persian fleet, 〈◊ 〉 of he lately had been Admiral in the enterprise of Naxos, he had surprised in his first breaking out, together with the principal Officers, and Captains *Captaines*, So that now he thought himself able to deal with the great Kings forces, lying thereabout, either by Land or Sea. But likely it was that the power of all Asia would shortly be upon his neck, and crush both him and his assistants to pieces, unless that he were able to raise an Army that might hold the field, which the 〈◊ 〉 alone were insufficient to perform. Therefore he took a journey to Sparta, where 〈◊ 〉 assayed in vain with many arguments, and the offer of 〈◊ 〉 talents, to win to his 〈◊ 〉 Cleomenes King of the 〈◊ 〉: he went from thence to Athens, and with better success besought the people to led him their assistance. The Athenian Ambassadors *Embassadors* which had been sent to the Persian Kings Lieutenants in the lower Asia, desiring them not to give countenance to 〈◊ 〉, now a banished man, and lately their Tyrant, were a while before this returned with ill answers, having found very churlish entertainment. So that the evil which they were to expect in all likelihood from the Persian, made them willing to begin with him. To which purpose, their consanguinity with the Ionians, and the persuasions of Aristagoras, drew them on apace, if perhaps his treasure were not helping. Twenty ships the Athenians furnished for this voyage; to which the 〈◊ 〉 added 〈◊ 〉 more, in regard of ancient kindness that had passed between the Ionians and them. With these and their own forces 〈◊ 〉, the Ionians entered the River Cayster *Caistrus*, which falls into the Sea by Ephesus: by which advantage they surprised Sardis when no enemy was heard of or suspected; insomuch, as 〈◊ 〉, who ruled as Vice-roy in those parts, had no other hope of safety, than by retreating himself into the Castle; which the 〈◊ 〉 could not force: from whence he beheld the slaughter of the Citizens, and the City flaming.
+
+## p03598 · sig. 408b
+
+The Persians at length, mixed with the Burgers, began to encourage them to defence, and recovered the Market place, 〈◊ 〉 by the River 〈◊ 〉, which ran through it, and borrowing courage from desperation, they both defended themselves, and charged their enemies; who well advising 〈◊ 〉, made all the haste they could toward the Sea side. But Artaphernes 〈◊ 〉 gathered 〈◊ 〉 the strength he could, 〈◊ 〉 the 〈◊ 〉, and found them near Ephesus; 〈◊ 〉 setting resolutely upon them, he slaughtered a great part of their Army; the 〈◊ 〉 saving themselves in Ephesus. In this fight Eualcides, Captain of the 〈◊ 〉, perished: but his fame and memory was by that excellent Poet Simonides 〈◊ 〉. After this overthrow, the Athenians, which were sent to Aristagoras and to the 〈◊ 〉, could by no arguments of theirs, no not by their tears, be persuaded to make any second trial of their fortunes, on that side the Sea.
+
+## p03599 · sig. 408b
+
+Yet the burning of Sardis made a greater noise in the World, than the good success which the Persians had in one or two skirmishes, could rays. Wherefore the Ionians bravely proceeding, won a great part of Caria; and sending their Fleet into the Hellespont, got Bizantium and other Towns into their hands. Yea, the Cyprians, lately subdued by Cambyses, began hereupon to take heart; and entering into confederacy with the Ionians, who were able to give them aide by sea, rebelled against the Persians.
+
+## p03600 · sig. 408b
+
+These news coming to the care of 〈◊ 〉, filled him with great indignation, and with an extreme hatred of the Athenians, upon whom he vowed to take sharp 〈◊ 〉. As for the Ionians, his contempt of them, and their knowledge of his power, made him to think, that they would not have dared to attempt such things, but by the instigation of those, to whom their ignorance of his great might had afforded the courage to provoke him. This was the main ground of the War commenced by Darius, and pursued by Xerxes against Athens: To which, the solicitation of Hippias, before remembered, gave only some form and assistance: the business, when once it was thus far on foot, being like enough to have proceeded, though he had perished 〈◊ 〉 it were advanced any further.
+
+## p03601 · sig. 408b
+
+Some other occurrences in this Ionian commotion extended the quarrel of Darius against many of the Islanders *Ilanders*, if not against the whole Nation of the Greeks *Greekes*; for all of them gave to his Rebels free harbour: the Islanders moreover did help to furnish out a Navy of three hundred and 〈◊ 〉 sail against him. These 〈◊ 〉 did rather breed in him a desire to abate their pride, than any fear of harm that they were like to do him. For what they had done at Sardis, was but by surprise. In every fight they were beaten by the Persians, who had not yet lost the fruits of their discipline, wherein Cyrus had trained them, nor all their ancient Captains. In one sea fight by the Isle of Cyprus, the Ionians indeed had the upper hand; but they were *〈◊ 〉. ns¹, 〈◊ 〉, *and Cilicians, whom they vanquished: neither was that victory of any use to them; the Cyprians, in whose aid they came, being utterly beaten by the Persian Army at Land, and reduced into their old subjection. So had the Persians likewise by open war and fair force overthrown the Carians in two battles, and reclaimed that Nation; as also they had recovered the Towns upon Hellespont, with some *Aeolian & Ionian *Cities: when Aristagoras with his friends quitting Miletus, fled into Thrace, desirous to seat himself in Amphipolis, a Colony of the Athenians. But the Edonians, on whose Territory probably he landed, overthrew him, and cut his troupes in pieces.
+
+## p03602 · sig. 409a
+
+About the same time, 〈◊ 〉 the first mover of this insurrection came down into those quarters; who having undertaken the performance of great matters to Darius, was glad to fly from his Lieutenants, by whom his double dealing was detected.
+
+## p03603 · sig. 409a
+
+But this evasion preserved him not long. For after many vain attempts that he made, he was taken in fight by the Persians, and hastily beheaded, lest the King should pardon him upon remembrance of old good turns; as it seems that he would have done, by the burial which he commanded to be given to his dead body that was crucified, and by his heavy taking of his death.
+
+## p03604 · sig. 409a
+
+〈◊ 〉 had sought to put himself into Miletus; but the Citizens doubting his condition, chose rather to keep him out, and make shift for themselves, without his help. The strength of their City by land, which had in old time withstood the Lydian Kings, and their good Fleet which promised unto them the liberty of an open sea, emboldened them to try the uttermost, when very few friends were left upon that Continent to take their part. But their Navy was broken as much by threatenings as by force; many of their companions and fellow-rebels for saking them upon hope of pardon; and many being daunted with the causeless flight of those that should have assisted them. Neither was it long before the Town it self being assaulted both by Land and Sea, was taken by force, the Citizens slain, their wives and children made slaves, and their goods a booty to the Persians, whom for six years space they had put to So much trouble.
+
+## Notes
+
+1. *ns* — Unknown word.

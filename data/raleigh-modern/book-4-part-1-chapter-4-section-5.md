@@ -1,0 +1,15 @@
+# Book IV, Part I, Chapter IV, §. 5
+
+> Sir Walter Raleigh, *The History of the World* (1617). Modern edition. Original spelling: EarlyPrint A10357 (EEBO-TCP), London 1617, Stansby for Walter Burre. The original text is untouched; this file is the stored modern copy.
+
+## p04223 · sig. 506b
+
+§. V. The conspiracy of PEVCESTES and others, against EVMENES his life.
+
+## p04224 · sig. 506b
+
+BY these means Eumenes wan great honour, and was by the whole Army acknowledged a most expert General, and well worthy of the chief command. But Peucestes, and the other Captains *Captaines*, 〈◊ 〉 of their own much insufficiency, were So transported with envy, that they could now no longer contain their vile thoughts, but held communication, as upon a necessary point, how they might find means to murder him.
+
+## p04225 · sig. 506b
+
+Surely, it is great injustice to impute the mischief, contrived against worthy men, to their own proud carriage, or some other ill deserving: For, though it often happen, that small vices do serve to counterpoise great virtues; ( the sense of evil being more quick and lasting, than of good) yet he shall bewray a very foolish malice, that, wanting other testimony, will think it a part of wisdom, to find good reason of the evils, done to virtuous men, which oftentimes have no other cause than their virtue it self. Eumenes, among many excellent qualities, was noted to be of singular courtesy, of a very sweet conversation among his friends, and careful by all gentle means to win their love, that 〈◊ 〉 to bear him any secret ill affection. It was his mere virtue that overthrew him, which even they that sought his life acknowledged. For they concluded that he should not be slain, before the battle were fought with Antigonus, wherein they confessed that it stood best with their safety, to be governed by his directions. Of this treason, he was quickly advertised by Eudamus, to whom he had done many pleasures, and by some others of whom he used to borrow money when he needed not, to the end that they should be careful of his good, for fear of losing their own. Considering therefore, and discoursing with himself of the villainy intended against him, he made his last will, and burnt all his writings that contained any matter of secret: which done, he revolved many things in his mind; being doubtful what course were best to follow. All the Nobles of the Empire stood ill affected to the royal blood, excepting those which were with him, that were more in number, than in worth. How things at that time stood in Macedon and Greece, either he knew not, or, knowing the truth, knew nothing that might encourage him to sec their help, that needed his. To make his own peace with Antigonus, had been against his faith to Olympias, and the Princes, that had committed this great power into his hands. For which cause also it may be thought, that he forbore, either to lose the battle willingly, or to fly into Cappadocia, and make shift for himself among his old friends. At length he resolved to do his best against the common enemy, and afterwards to look to himself as well as he might.
