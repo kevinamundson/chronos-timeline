@@ -17,6 +17,7 @@ import { redirectLines, redirectsFileHasSennacherib } from '../scripts/redirects
 import { protectHtml } from './email-protect.mjs';
 import { doreUrls, doreThumbPublicPath, DISPLAY_W, SMALL_W, THUMB_W } from '../scripts/dore/urls.mjs';
 import { createNameLinker, unitsForRecord } from '../scripts/names/link.mjs';
+import { mdParse, splitBlocksH2 } from '../scripts/md.mjs';
 
 assertRaleighDerived();
 assertJulianSplit();
@@ -88,6 +89,86 @@ const sourceById = Object.fromEntries(sources.map((s) => [s.id, s]));
 // A source superseded for links (e.g. KJV/Gutenberg → BLB on BibleHub) is shown as its replacement wherever it is linked.
 const linkSrc = (id) => { const s = sourceById[id]; return s?.superseded_for_links_by ? sourceById[s.superseded_for_links_by] || s : s; };
 const uniqSrc = (ids) => [...new Map(ids.map(linkSrc).filter(Boolean).map((s) => [s.id, s])).values()];
+
+// ---------- Library: complete books held in the repo ----------
+// Every book the site holds in full, with its source id in data/sources.json.
+// kind 'raleigh': the stored modern edition (data/raleigh-modern/).
+// kind 'jordan': a full text in sources/jordan/books/ (© Jordan, included
+// with the owner's stated permission). kind 'bc': the Biblical Chronology
+// newsletter run in sources/jordan/bc-*.md (© Jordan, same permission).
+// Cover colours are per-book, typographic covers in the Apple Books manner:
+// a solid ground, the title in Vollkorn, a rule, and the author. The
+// newsletter keeps a light journal ground; the rest are cloth-bound darks.
+const LIBRARY_BOOKS = [
+  { slug: 'raleigh-history-of-the-world', kind: 'raleigh', sourceId: 'raleigh-history-of-the-world-1617',
+    shortTitle: 'The History of the World', blurb: 'Sir Walter Raleigh\u2019s History of the World (1617), in modern spelling: the whole work, stored by section.',
+    licence: 'Public domain. The 1617 text is public domain by age; the EarlyPrint / EEBO-TCP transcription is CC0 1.0.',
+    cover: { bg: '#6e1423', ink: '#f6f3ed', rule: '#d9a441' } },
+  { slug: 'covenant-sequence', kind: 'jordan', sourceId: 'jordan-book-covenant-sequence-1989', file: 'covenant-sequence-1989.md',
+    blurb: 'Jordan\u2019s study of the covenant sequence in Leviticus and Deuteronomy.',
+    cover: { bg: '#1e3d2f', ink: '#eef3ec', rule: '#c9a86a' } },
+  { slug: 'failure-of-american-baptist-culture', kind: 'jordan', sourceId: 'jordan-cc1-failure-american-baptist-culture-1982', file: 'cc1-failure-of-american-baptist-culture-1982-jordan-essays.md',
+    blurb: 'Jordan\u2019s introduction and review from Christianity and Civilization No. 1 (1982). Only Jordan\u2019s own essays are included.',
+    cover: { bg: '#2b2b2e', ink: '#f2f0eb', rule: '#b08d57' } },
+  { slug: 'judges', kind: 'jordan', sourceId: 'jordan-book-judges-1985', file: 'judges-1985.md',
+    blurb: 'Jordan\u2019s commentary on the book of Judges.',
+    cover: { bg: '#1f2a44', ink: '#eef1f6', rule: '#c9a86a' } },
+  { slug: 'law-of-the-covenant', kind: 'jordan', sourceId: 'jordan-book-law-of-the-covenant-1984', file: 'law-of-the-covenant-1984.md',
+    blurb: 'Jordan\u2019s exposition of Exodus 21\u201323.',
+    cover: { bg: '#14424a', ink: '#e9f2f2', rule: '#d9a441' } },
+  { slug: 'reconstruction-of-the-church', kind: 'jordan', sourceId: 'jordan-cc4-reconstruction-of-the-church-1985', file: 'cc4-reconstruction-of-the-church-1985-jordan-essays.md',
+    blurb: 'Jordan\u2019s three essays from Christianity and Civilization No. 4 (1985). Only Jordan\u2019s own essays are included.',
+    cover: { bg: '#4a3226', ink: '#f3ede2', rule: '#c9a86a' } },
+  { slug: 'sociology-of-the-church', kind: 'jordan', sourceId: 'jordan-book-sociology-of-the-church-1986', file: 'sociology-of-the-church-1986.md',
+    blurb: 'Jordan\u2019s essays on the church.',
+    cover: { bg: '#3d4426', ink: '#f0f2e4', rule: '#d9a441' } },
+  { slug: 'through-new-eyes', kind: 'jordan', sourceId: 'jordan-book-through-new-eyes-1988', file: 'through-new-eyes-1988.md',
+    blurb: 'Jordan\u2019s development of a biblical view of the world.',
+    cover: { bg: '#16233d', ink: '#e9edf5', rule: '#c9a86a' } },
+  { slug: 'from-creation-to-solomon', kind: 'jordan', sourceId: 'jordan-sbc-2', file: 'studies-in-biblical-chronology-2-from-creation-to-solomon-2001.md',
+    blurb: 'Jordan\u2019s chronology from Creation to Solomon (Studies in Biblical Chronology No. 2).',
+    cover: { bg: '#e8ddc8', ink: '#3a2e1f', rule: '#8a6d3b' } },
+  { slug: 'pentateuch-commentary', kind: 'jordan', sourceId: 'jordan-sbc-3', file: 'studies-in-biblical-chronology-3-pentateuch-commentary-2001.md',
+    blurb: 'Jordan\u2019s chronological and calendrical commentary on the Pentateuch (Studies in Biblical Chronology No. 3).',
+    cover: { bg: '#3d2436', ink: '#f2e9f0', rule: '#d9a441' } },
+  { slug: 'biblical-chronology', kind: 'bc', sourceId: 'jordan-biblical-horizons-chronology',
+    shortTitle: 'Biblical Chronology', blurb: 'Jordan\u2019s Biblical Chronology newsletter, Vols. 1\u20139 (1989\u20131997): the complete run, 93 issues.',
+    licence: '\u00A9 James B. Jordan. Included with the owner\u2019s stated permission; not covered by this repository\u2019s MIT or CC BY 4.0 licences.',
+    cover: { bg: '#f6f3ed', ink: '#2b2b2e', rule: '#840000' } },
+];
+// The cover shows the main title only; a parenthetical (series, editor)
+// belongs under the cover, not on it.
+const coverTitle = (b) => (b.title || '').split(' (')[0];
+const bookCover = (b, large = false) => {
+  const c = b.cover || { bg: '#2b2b2e', ink: '#f2f0eb', rule: '#b08d57' };
+  return `<div class="book-cover${large ? ' book-cover-large' : ''}" style="--cover-bg:${c.bg};--cover-ink:${c.ink};--cover-rule:${c.rule}" role="img" aria-label="Cover of ${esc(b.title)}"><span class="book-cover-title">${shown(coverTitle(b))}</span><span class="book-cover-rule" aria-hidden="true"></span><span class="book-cover-author">${esc(b.author)}</span></div>`;
+};
+const JORDAN_LICENCE = '\u00A9 James B. Jordan. Included with the owner\u2019s stated permission; not covered by this repository\u2019s MIT or CC BY 4.0 licences.';
+for (const b of LIBRARY_BOOKS) {
+  const s = sourceById[b.sourceId];
+  b.title = b.shortTitle || s?.title || b.slug;
+  b.author = s?.authors?.join(', ') || '';
+  b.year = s?.year || '';
+  b.sourceUrl = s?.url || '';
+  b.pdfUrl = s?.alt_urls?.[0] || (b.sourceId.startsWith('jordan-sbc-') ? s?.url : null);
+  if (b.kind === 'jordan') b.licence = JORDAN_LICENCE;
+}
+const libraryBySlug = Object.fromEntries(LIBRARY_BOOKS.map((b) => [b.slug, b]));
+// Where a source id has a reader: the book landing page, or one issue page.
+function readerUrlForSource(id) {
+  if (!id) return null;
+  if (id === 'raleigh-history-of-the-world-1617') return '/library/raleigh-history-of-the-world/';
+  const book = LIBRARY_BOOKS.find((b) => b.sourceId === id);
+  if (book) return `/library/${book.slug}/`;
+  if (id === 'jordan-bc-garynorth-archive') return '/library/biblical-chronology/';
+  const m = id.match(/^jordan-bc-(\d+)-(\d+)$/);
+  if (m) return `/library/biblical-chronology/${Number(m[1])}-${Number(m[2])}/`;
+  return null;
+}
+const readerLinkForSource = (id) => {
+  const url = readerUrlForSource(id);
+  return url ? ` <a href="${esc(url)}">Read online</a>` : '';
+};
 
 // ---------- helpers ----------
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -632,7 +713,7 @@ function sourcesSection(rec) {
   const fsl = rec.free_source_links || [];
   const ids = uniqSrc(rec.sources || []).filter((s) => !fsl.some((l) => l.source_id === s.id));
   if (!fsl.length && !ids.length) return '';
-  const li = (s, url, locator) => `<li>${ext(url || s?.url, esc(s?.title || 'Source'))}${locator ? ` <span class="muted">— ${esc(locator)}</span>` : ''}${s?.access ? ` <span class="tag">${esc(s.access)}</span>` : ''}</li>`;
+  const li = (s, url, locator) => `<li>${ext(url || s?.url, esc(s?.title || 'Source'))}${locator ? ` <span class="muted">— ${esc(locator)}</span>` : ''}${s?.access ? ` <span class="tag">${esc(s.access)}</span>` : ''}${s ? readerLinkForSource(s.id) : ''}</li>`;
   return `<section class="card"><h2>Free sources</h2><ul class="links">
 ${fsl.map((l) => li(sourceById[l.source_id], l.url, l.locator)).join('')}
 ${ids.map((s) => li(s, null, null)).join('')}</ul>
@@ -646,7 +727,7 @@ function mapThumbs(ids) {
 }
 
 // ---------- layout ----------
-function page({ title, desc, body, path, pagefind = true, pagefindIgnore = false, extraHead = '', scripts = '', type }) {
+function page({ title, desc, body, path, pagefind = true, pagefindIgnore = false, extraHead = '', scripts = '', type, book, chrome = true }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -661,9 +742,9 @@ function page({ title, desc, body, path, pagefind = true, pagefindIgnore = false
 <link rel="stylesheet" href="/assets/styles.css">
 ${extraHead}
 </head>
-<body${pagefindIgnore ? ' data-pagefind-ignore' : ''}>
+<body${pagefindIgnore ? ' data-pagefind-ignore' : ''}${chrome ? '' : ' class="reader-fullscreen"'}>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
+${chrome ? `<header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/">Ancient History Timeline</a>
     <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" hidden>
@@ -675,6 +756,7 @@ ${extraHead}
       <li><a href="/browse/"${path === '/browse/' ? ' aria-current="page"' : ''}>Browse</a></li>
       <li><a href="/chronologies/"${path === '/chronologies/' || path.startsWith('/chronologies/') ? ' aria-current="page"' : ''}>Chronologies</a></li>
       <li><a href="/gallery/"${path === '/gallery/' ? ' aria-current="page"' : ''}>Charts</a></li>
+      <li><a href="/library/"${path === '/library/' || path.startsWith('/library/') ? ' aria-current="page"' : ''}>Library</a></li>
       <li><a href="/about/"${path === '/about/' ? ' aria-current="page"' : ''}>About</a></li>
     </ul></nav>
     <form class="header-search" action="/search/" method="get" role="search">
@@ -683,17 +765,17 @@ ${extraHead}
     </form>
   </div>
 </header>
-<script src="/assets/nav.js"></script>
+<script src="/assets/nav.js"></script>` : ''}
 <main id="main" class="wrap"${pagefind && !pagefindIgnore ? ' data-pagefind-body' : ''}>
-${type ? `<span hidden data-pagefind-filter="type">${esc(type)}</span>` : ''}
+${type ? `<span hidden data-pagefind-filter="type">${esc(type)}</span>` : ''}${book ? `<span hidden data-pagefind-filter="book">${esc(book)}</span>` : ''}
 ${body}
 </main>
-<footer class="site-footer"><div class="wrap small muted">
+${chrome ? `<footer class="site-footer"><div class="wrap small muted">
 <p>Young-Earth Creation framework; the Bible is the infallible standard. Sorted by <a href="/chronologies/">CFAH</a> anchor points (Griffith &amp; White), then CFAH non-anchor dates, Floyd Nolen Jones, and Ussher, <i>Annals of the World</i>.</p>
 <p>Place data © <a href="https://www.openbible.info/geo/" rel="noopener">OpenBible.info</a>, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>. Map tiles © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors. Historic maps: <a href="https://www.loc.gov/maps/" rel="noopener">Library of Congress</a>. Timeline: <a href="https://visjs.org/" rel="noopener">vis-timeline</a>; family chart: <a href="https://github.com/donatso/family-chart" rel="noopener">family-chart</a>; map: <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>; search: <a href="https://pagefind.app/" rel="noopener">Pagefind</a>. Reference finding: <a href="https://github.com/bibleup/bibleup" rel="noopener">BibleUp</a>.</p>
 <p class="dore-credit">Gustave Doré's Bible illustrations (1866) are public domain. Images are served by the Internet Archive (<a href="https://archive.org/details/gustavedore" rel="noopener">gustavedore</a>); small thumbnails are stored on this site. Titles and numbers are the Archive.org file names. <a href="/illustrations/dore/">All ${doreDoc.illustrations.length} plates</a>.</p>
 <p>A written Bible reference opens the Berean Standard Bible from <a href="https://bible.helloao.org/" rel="noopener">bible.helloao.org</a>, with the Amundson Interpretive Version from <a href="https://aivbible.kevinamundson.me" rel="noopener">aivbible.kevinamundson.me</a>. Scripture links still open the Berean Literal Bible on BibleHub.</p>
-</div></footer>
+</div></footer>` : ''}
 ${scripts}
 <script src="/assets/bibleup.js" defer></script>
 </body></html>`;
@@ -881,7 +963,7 @@ ${jsonScript('map-data', locations.filter((l) => l.lat != null && l.lng != null)
     scripts: `<script src="/assets/vendor/vis-timeline/vis-timeline-graph2d.min.js" defer></script>${leafletScript}<script src="/assets/app.js" defer></script>` }));
 }
 
-const RALEIGH_INTRO = `Sir Walter Raleigh, <i>The History of the World</i> (1617). His words, in book order. <a href="https://texts.earlyprint.org/works/A10357.xml">EarlyPrint A10357</a>. The modern spelling is the stored modern edition: <a href="/raleigh-modern/">the whole work, by section, with downloads</a>.`;
+const RALEIGH_INTRO = `Sir Walter Raleigh, <i>The History of the World</i> (1617). His words, in book order. <a href="https://texts.earlyprint.org/works/A10357.xml">EarlyPrint A10357</a>. The modern spelling is the stored modern edition: <a href="/raleigh-modern/">the whole work, by section, with downloads</a>. <a href="/library/raleigh-history-of-the-world/">Read online in the Library</a>.`;
 const RALEIGH_POPOUT = `<svg class="raleigh-popout-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6.5 2.5H3.2A1.2 1.2 0 0 0 2 3.7v9.1a1.2 1.2 0 0 0 1.2 1.2h9.1a1.2 1.2 0 0 0 1.2-1.2V9.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8.5 2h5.5v5.5M14 2 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
 function raleighPassages(recordId) {
@@ -1507,7 +1589,7 @@ function writeRaleighModernPage() {
     const rows = secs.map(({ file, title }) => {
       const slug = file.replace(/\.md$/, '');
       const links = formats.map((f) => `<a href="/downloads/raleigh-modern/${slug}.${f}">${fmtLabel[f]}</a>`).join(' · ');
-      return `<li>${esc(title)} — ${links}</li>`;
+      return `<li>${esc(title)} — <a href="/library/raleigh-history-of-the-world/${slug}/">Read online</a> · ${links}</li>`;
     }).join('\n');
     return `<section class="card"><h2>${esc(book)}</h2><ul class="links">${rows}</ul></section>`;
   }).join('\n');
@@ -1516,6 +1598,7 @@ function writeRaleighModernPage() {
 <h1>Raleigh's <i>History of the World</i> — modern edition</h1>
 <p class="lede">Sir Walter Raleigh, <i>The History of the World</i> (1617), in modern spelling. The whole work — Preface, contents, and Books I–V — stored as modern files, so the site serves them directly instead of transforming the original at build time.</p>
 <section class="card"><p>Every word is Modern English. Proper names and place names use their modern form, and every name changed from the original carries the original form in italics after it. Foreign-language quotations are kept as quotations, with an English translation alongside. Dates, figures, and citations are never rewritten. The original text is untouched; the Modern toggle on each record page serves this edition, and the Original toggle serves the 1617 text.</p>
+<p><strong>Read online:</strong> <a href="/library/raleigh-history-of-the-world/">the whole work in the Library reader</a>, with a table of contents, type size and font controls, and search.</p>
 <p><strong>Download the whole work:</strong> ${bulkLinks}</p></section>
 ${groupHtml}
 </article>`;
@@ -1530,6 +1613,216 @@ ${groupHtml}
 }
 
 const raleighModernSectionCount = writeRaleighModernPage();
+
+// ---------- Library: ebook reader ----------
+// One reader per complete book held in the repo (see LIBRARY_BOOKS above).
+// Static pages: the book landing page carries the full contents as static
+// HTML; each unit (a Raleigh section, a Jordan essay or whole book, one
+// newsletter issue) gets its own reader page, indexed by Pagefind with a
+// book filter, so in-book search needs no shipped search index.
+const slugify = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80) || 'section';
+// Vollkorn is the reader's default face, loaded the same way the AIV reader
+// loads it (Google Fonts); Georgia is the offline fallback. The view
+// (paged by default) is applied pre-paint with the size and font, so the
+// first paint is already the reader's own view.
+const vollkornLinks = `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">`;
+const readerHeadScript = `${vollkornLinks}<script>try{var s=JSON.parse(localStorage.getItem('chronos-reader')||'{}');if(s.size)document.documentElement.style.setProperty('--reader-size',s.size);if(s.font)document.documentElement.setAttribute('data-reader-font',s.font);document.documentElement.classList.toggle('reader-paged',(s.view||'paged')==='paged');}catch(e){}</script>`;
+
+function raleighUnits() {
+  const byFile = new Map();
+  for (const [id, p] of Object.entries(raleighModernById)) {
+    if (!byFile.has(p.file)) byFile.set(p.file, []);
+    byFile.get(p.file).push({ ...p, id });
+  }
+  const units = [];
+  for (const [file, ps] of byFile) {
+    const slug = file.replace(/\.md$/, '');
+    const m = file.match(/^book-(\d+)-/);
+    const group = m ? `Book ${['', 'I', 'II', 'III', 'IV', 'V'][Number(m[1])]}` : (file.startsWith('contents-') ? 'Contents' : 'Preface');
+    units.push({ slug, title: ps[0].section, group, passages: ps });
+  }
+  return units;
+}
+const raleighUnitHtml = (unit) => unit.passages.map((p) => {
+  const notes = p.notes?.length ? `<ol class="raleigh-notes">${p.notes.map((n) => `<li><em>${esc(n.word)}</em> — ${esc(n.text)}</li>`).join('')}</ol>` : '';
+  return `<h2 class="passage-head" id="${esc(p.id)}"><a href="#${esc(p.id)}">${esc(p.id)}</a> · ${esc(p.citation)}</h2>\n<p class="raleigh-text">${p.modern}</p>${notes}`;
+}).join('\n');
+
+function jordanUnits(book) {
+  const src = readFileSync(join(root, 'sources', 'jordan', 'books', book.file), 'utf8');
+  const { title, blocks } = mdParse(src);
+  // The file header (author, publication, source, copyright note) ends at
+  // the first rule; it is provenance, not book text, and stays out of the
+  // reader. The book landing page carries the same facts from sources.json.
+  const hr = blocks.findIndex((b) => b === '<hr>');
+  const body = hr >= 0 ? blocks.slice(hr + 1) : blocks;
+  const { units } = splitBlocksH2(body, title);
+  return units.map((u) => ({ slug: units.length === 1 ? 'read' : slugify(u.title), title: u.title, group: null, html: u.html }));
+}
+
+function bcUnits() {
+  const dir = join(root, 'sources', 'jordan');
+  const files = readdirSync(dir).filter((f) => f.startsWith('bc-') && f.endsWith('.md')).sort();
+  const units = files.map((f) => {
+    const src = readFileSync(join(dir, f), 'utf8');
+    const { title, blocks } = mdParse(src, { demoteH1: true });
+    // The metadata table (author, date, original URL) sits first; its facts
+    // are shown in the page header instead of rendered as a table.
+    const tIdx = blocks.findIndex((b) => b.includes('<table'));
+    const body = tIdx >= 0 && tIdx <= 2 ? [...blocks.slice(0, tIdx), ...blocks.slice(tIdx + 1)] : blocks;
+    const m = f.match(/^bc-(\d+)-(\d+)/);
+    const vol = Number(m[1]); const no = Number(m[2]);
+    const date = (src.match(/\|\s*Date\s*\|\s*([^|]+?)\s*\|/) || [])[1]?.trim() || '';
+    const orig = (src.match(/\|\s*Original URL\s*\|\s*<([^>]+)>\s*\|/) || [])[1]
+      || (src.match(/\|\s*Mirror\s*\|\s*<([^>]+)>\s*\|/) || [])[1] || null;
+    return { slug: `${vol}-${no}`, title: title || f, group: `Vol. ${vol}`, html: body.join('\n'), date, orig, file: f, vol, no };
+  });
+  units.sort((a, b) => a.vol - b.vol || a.no - b.no);
+  return units;
+}
+
+function libraryUnits(book) {
+  if (book.kind === 'raleigh') return raleighUnits();
+  if (book.kind === 'jordan') return jordanUnits(book);
+  return bcUnits();
+}
+
+function readerToolbar(book, unitSlug) {
+  return `<div class="reader-toolbar" data-book="${esc(book.slug)}" data-unit="${esc(unitSlug)}">
+  <button type="button" id="reader-toc-toggle" aria-expanded="false" aria-controls="reader-toc">Contents</button>
+  <div class="reader-search-wrap"><label class="visually-hidden" for="reader-search">Search this book</label><input id="reader-search" type="search" placeholder="Search this book" autocomplete="off"><div id="reader-search-results" hidden></div></div>
+  <div class="reader-view" role="group" aria-label="Reading view"><button type="button" id="reader-view-scroll" aria-pressed="false">Scroll</button><button type="button" id="reader-view-paged" aria-pressed="true">Pages</button></div>
+  <label for="reader-size">Text size</label><input id="reader-size" type="range" min="14" max="24" step="1" value="18"><span id="reader-size-value" class="small muted" aria-hidden="true"></span>
+  <label for="reader-font">Font</label><select id="reader-font"><option value="vollkorn" selected>Vollkorn</option><option value="georgia">Georgia</option><option value="palatino">Palatino</option><option value="sans">Sans</option></select>
+  <button type="button" id="reader-fullscreen" aria-pressed="false">Full screen</button>
+</div>`;
+}
+
+function unitFormats(book, unit) {
+  if (book.kind === 'raleigh') {
+    const formats = ['md', 'epub', 'docx', 'pdf', 'xml'];
+    const fmtLabel = { md: 'Markdown', epub: 'EPUB', docx: 'Word', pdf: 'PDF', xml: 'XML' };
+    const links = formats.map((f) => `<a href="/downloads/raleigh-modern/${unit.slug}.${f}">${fmtLabel[f]}</a>`).join(' · ');
+    return `<section class="card"><h2>Download this section</h2><p class="raleigh-downloads">${links}</p><p class="small"><a href="/raleigh-modern/">All sections and bulk downloads</a></p></section>`;
+  }
+  if (book.kind === 'jordan') {
+    const md = `<a href="/downloads/jordan-books/${book.file}">Markdown</a>`;
+    const pdf = book.pdfUrl ? ` · ${ext(book.pdfUrl, 'PDF')}` : '';
+    return `<section class="card"><h2>Other forms</h2><p>${md}${pdf}</p><p class="small muted">The PDF is the free copy the text was extracted from; it is authoritative where the extraction differs.</p></section>`;
+  }
+  const md = `<a href="/downloads/biblical-chronology/${unit.file}">Markdown</a>`;
+  const orig = unit.orig ? ` · ${ext(unit.orig, 'Original page')}` : '';
+  return `<section class="card"><h2>Other forms</h2><p>${md}${orig}</p></section>`;
+}
+
+function writeReaderPage(book, units, idx) {
+  const unit = units[idx];
+  const prev = idx > 0 ? units[idx - 1] : null;
+  const next = idx < units.length - 1 ? units[idx + 1] : null;
+  const bodyHtml = book.kind === 'raleigh' ? raleighUnitHtml(unit) : unit.html;
+  const sub = book.kind === 'bc' && unit.date ? `<p class="muted">${esc(unit.date)}</p>` : '';
+  const body = `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/library/">Library</a></li><li><a href="/library/${esc(book.slug)}/">${shown(book.title)}</a></li><li aria-current="page">${esc(unit.title)}</li></ol></nav>
+<p class="eyebrow">${esc(book.author)}${book.year ? ` · ${esc(book.year)}` : ''}</p>
+<h1>${shown(unit.title)}</h1>
+${sub}
+${readerToolbar(book, unit.slug)}
+<div class="reader-layout">
+<aside id="reader-toc" class="reader-toc" aria-label="Table of contents"><p class="reader-toc-head">Contents</p><ul id="reader-toc-list" class="reader-toc-list"></ul><p class="small muted"><a href="../">All contents on the book page</a></p></aside>
+<div class="reader-main">
+<article class="reader-body">${bodyHtml}</article>
+<div class="reader-pagebar" hidden><button type="button" id="reader-page-prev">&larr; Prev</button><span id="reader-page-label" aria-live="polite"></span><button type="button" id="reader-page-next">Next &rarr;</button></div>
+<nav class="reader-pager" aria-label="Sections">${prev ? `<a data-unit-prev href="../${esc(prev.slug)}/">&larr; ${esc(prev.title)}</a>` : '<span></span>'}${next ? `<a data-unit-next href="../${esc(next.slug)}/">${esc(next.title)} &rarr;</a>` : ''}</nav>
+${unitFormats(book, unit)}
+</div>
+</div>`;
+  out(`library/${book.slug}/${unit.slug}/index.html`, page({
+    title: `${unit.title} · ${book.title}`,
+    desc: `${unit.title} — ${book.title} (${book.author}). Read online in the Library.`,
+    body,
+    path: `/library/${book.slug}/${unit.slug}/`,
+    book: book.slug,
+    type: 'Book',
+    chrome: false,
+    extraHead: readerHeadScript,
+    scripts: '<script src="/assets/reader.js" defer></script>',
+  }));
+}
+
+function writeBookLanding(book, units) {
+  const groups = new Map();
+  for (const u of units) {
+    const g = u.group || 'Contents';
+    if (!groups.has(g)) groups.set(g, []);
+    groups.get(g).push(u);
+  }
+  const tocHtml = [...groups.entries()].map(([g, us]) => `<section class="card"><h2>${esc(g)}</h2><ul class="links">${us.map((u) => `<li><a href="./${esc(u.slug)}/">${esc(u.title)}</a></li>`).join('')}</ul></section>`).join('\n');
+  const count = book.kind === 'raleigh' ? `${units.length} sections` : book.kind === 'bc' ? `${units.length} issues` : units.length > 1 ? `${units.length} essays` : 'Complete text';
+  const formats = book.kind === 'raleigh'
+    ? 'Read online, or download the whole work or any section as Markdown, EPUB, Word, PDF, or XML (<a href="/raleigh-modern/">downloads</a>).'
+    : book.kind === 'jordan'
+      ? `Read online, or download as <a href="/downloads/jordan-books/${book.file}">Markdown</a>${book.pdfUrl ? ` or ${ext(book.pdfUrl, 'PDF')}` : ''}.`
+      : 'Read online, or download any issue as Markdown.';
+  const body = `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li><a href="/library/">Library</a></li><li aria-current="page">${shown(book.title)}</li></ol></nav>
+<h1>${shown(book.title)}</h1>
+<p class="lede">${esc(book.blurb)}</p>
+<div class="book-hero">${bookCover(book, true)}
+<section class="card"><dl class="facts"><div><dt>Author</dt><dd>${esc(book.author)}</dd></div><div><dt>Published</dt><dd>${esc(book.year)}</dd></div><div><dt>Contents</dt><dd>${esc(count)}</dd></div></dl>
+<p class="small muted">${esc(book.licence)}</p>
+<p id="continue-reading" data-book="${esc(book.slug)}" hidden>Continue reading: <a href="./${esc(units[0].slug)}/">where you left off</a></p>
+<p><strong>Read online:</strong> <a href="./${esc(units[0].slug)}/">Start reading</a></p>
+<p><strong>Formats:</strong> ${formats}</p></section></div>
+${tocHtml}`;
+  out(`library/${book.slug}/index.html`, page({
+    title: book.title,
+    desc: `${book.title} (${book.author}). ${book.blurb}`,
+    body,
+    path: `/library/${book.slug}/`,
+    book: book.slug,
+    type: 'Book',
+    extraHead: vollkornLinks,
+    scripts: '<script src="/assets/reader.js" defer></script>',
+  }));
+  // Table of contents as data, for the reader drawer and search titles.
+  const toc = { book: book.slug, title: book.title, groups: [...groups.entries()].map(([g, us]) => ({ title: g, units: us.map((u) => ({ title: u.title, url: `/library/${book.slug}/${u.slug}/` })) })) };
+  const tocPath = join(DIST, 'library', book.slug, 'toc.json');
+  mkdirSync(dirname(tocPath), { recursive: true });
+  writeFileSync(tocPath, `${JSON.stringify(toc)}\n`);
+}
+
+function writeLibraryPages() {
+  // Markdown downloads: the source files as committed.
+  mkdirSync(join(DIST, 'downloads', 'jordan-books'), { recursive: true });
+  mkdirSync(join(DIST, 'downloads', 'biblical-chronology'), { recursive: true });
+  const counts = {};
+  for (const book of LIBRARY_BOOKS) {
+    const units = libraryUnits(book);
+    counts[book.slug] = units.length;
+    if (book.kind === 'jordan') cpSync(join(root, 'sources', 'jordan', 'books', book.file), join(DIST, 'downloads', 'jordan-books', book.file));
+    if (book.kind === 'bc') for (const u of units) cpSync(join(root, 'sources', 'jordan', u.file), join(DIST, 'downloads', 'biblical-chronology', u.file));
+    writeBookLanding(book, units);
+    units.forEach((_, i) => writeReaderPage(book, units, i));
+  }
+  const cards = LIBRARY_BOOKS.map((b) => {
+    const n = counts[b.slug];
+    const contents = b.kind === 'raleigh' ? `${n} sections` : b.kind === 'bc' ? `${n} issues` : n > 1 ? `${n} essays` : 'Complete text';
+    const forms = b.kind === 'raleigh' ? 'Markdown, EPUB, Word, PDF, XML' : b.kind === 'jordan' ? 'Markdown, PDF' : 'Markdown, original pages';
+    return `<article class="library-item"><a href="/library/${esc(b.slug)}/" aria-label="${esc(b.title)}">${bookCover(b)}</a><h2><a href="/library/${esc(b.slug)}/">${shown(b.title)}</a></h2><p class="muted">${esc(b.author)}${b.year ? ` · ${esc(b.year)}` : ''} · ${esc(contents)}</p><p class="library-blurb">${esc(b.blurb)}</p><p class="small"><a href="/library/${esc(b.slug)}/">Read online</a> · ${esc(forms)}</p></article>`;
+  }).join('\n');
+  const body = `<nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Timeline</a></li><li aria-current="page">Library</li></ol></nav>
+<h1>Library</h1>
+<p class="lede">The complete books held on this site, to read online or download. Each reader has a table of contents, type size and font controls, and search within the book. Sources cited anywhere on the site link here with &ldquo;Read online&rdquo; where a complete text exists.</p>
+<div class="library-grid">${cards}</div>`;
+  out('library/index.html', page({
+    title: 'Library',
+    desc: 'The complete books held on the Chronos Timeline: Raleigh, History of the World (1617), James B. Jordan\u2019s books, and the Biblical Chronology newsletter. Read online or download.',
+    body,
+    path: '/library/',
+    type: 'Book',
+    extraHead: vollkornLinks,
+  }));
+  return counts;
+}
+const libraryCounts = writeLibraryPages();
 
 // Locations
 for (const l of locations) {
@@ -1615,9 +1908,10 @@ ${sourcesSection(m)}</article>`;
       ? `${esc(s.title)} <span class="tag">provenance only; links use ${esc(sourceById[s.superseded_for_links_by]?.title || s.superseded_for_links_by)}</span>`
       : ext(s.url, esc(s.title));
     const who = s.authors?.length ? ` <span class="muted">— ${esc(s.authors.join(', '))}${s.year ? `, ${esc(s.year)}` : ''}</span>` : '';
+    const read = readerLinkForSource(s.id);
     const note = s.license_note ? `<div class="small muted">${esc(s.license_note)}</div>` : '';
     const dosLink = (chronById['dynasty-of-slaves']?.references || []).includes(s.id) ? ` <span class="conv-link small"><a href="${DOS_TIMELINE}">Dynasty of Slaves timeline</a></span>` : '';
-    return `<li id="source-${esc(s.id)}">${linkHtml}${who} <span class="tag">${esc(s.access)}</span>${dosLink}${note}</li>`;
+    return `<li id="source-${esc(s.id)}">${linkHtml}${who} <span class="tag">${esc(s.access)}</span>${dosLink}${read}${note}</li>`;
   }).join('');
   const body = `<h1>Chronologies &amp; sorting</h1>
 <section class="card"><h2>How the timeline is sorted</h2><p>${esc(rule.description)}</p>
@@ -1629,7 +1923,7 @@ ${c.id === 'dynasty-of-slaves' ? `<p class="conv-link"><a href="${DOS_TIMELINE}"
 ${c.id === 'raleigh-history-of-the-world' ? '<p><a href="/chronologies/raleigh-chronological-table/">A Chronological Table</a></p>' : ''}
 ${c.authors?.length ? `<p class="muted">${esc(c.authors.join(', '))}</p>` : ''}<p>${shown(c.description)}</p>
 ${c.year_conventions ? `<p class="small muted">${esc(c.year_conventions)}</p>` : ''}
-${c.id === 'cfah' ? cfahPlatformListHtml('cfah-platforms') : (c.references?.length ? `<ul class="links">${uniqSrc(c.references).map((s) => `<li>${ext(s.url, esc(s.title))} <span class="tag">${esc(s.access)}</span></li>`).join('')}</ul>` : '')}
+${c.id === 'cfah' ? cfahPlatformListHtml('cfah-platforms') : (c.references?.length ? `<ul class="links">${uniqSrc(c.references).map((s) => `<li>${ext(s.url, esc(s.title))} <span class="tag">${esc(s.access)}</span>${readerLinkForSource(s.id)}</li>`).join('')}</ul>` : '')}
 ${c.open_questions?.length ? `<ul class="flag-list">${c.open_questions.map((q) => `<li><span class="flag flag-oq">Open question</span> ${esc(q)}</li>`).join('')}</ul>` : ''}</section>`).join('')}
 <section class="card" id="sources"><h2>All free sources</h2><ul class="links">${freeSourceItems}</ul></section>`;
   out('chronologies/index.html', page({ title: 'Chronologies', desc: 'Chronologies used and the CFAH-weighted sorting rule.', body, path: '/chronologies/', type: 'Chronology' }));
@@ -1994,7 +2288,7 @@ out('404.html', page({ title: 'Not found', path: '', pagefind: false, body: '<h1
     if (outHtml !== html) writeFileSync(f, outHtml);
   }
 }
-writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/pagefind/*\n  Cache-Control: public, max-age=0, must-revalidate\n/img/dore/thumbs/*\n  Cache-Control: public, max-age=604800\n/chronologies/raleigh-chronological-table/*.csv\n  Content-Type: text/csv; charset=utf-8\n/chronologies/raleigh-chronological-table/*.md\n  Content-Type: text/markdown; charset=utf-8\n/chronologies/raleigh-chronological-table/*.xls\n  Content-Type: application/vnd.ms-excel\n/downloads/raleigh-modern/*.md\n  Content-Type: text/markdown; charset=utf-8\n/downloads/raleigh-modern/*.epub\n  Content-Type: application/epub+zip\n/downloads/raleigh-modern/*.docx\n  Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document\n/downloads/raleigh-modern/*.pdf\n  Content-Type: application/pdf\n/downloads/raleigh-modern/*.xml\n  Content-Type: application/xml; charset=utf-8\n`);
+writeFileSync(join(DIST, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/pagefind/*\n  Cache-Control: public, max-age=0, must-revalidate\n/img/dore/thumbs/*\n  Cache-Control: public, max-age=604800\n/chronologies/raleigh-chronological-table/*.csv\n  Content-Type: text/csv; charset=utf-8\n/chronologies/raleigh-chronological-table/*.md\n  Content-Type: text/markdown; charset=utf-8\n/chronologies/raleigh-chronological-table/*.xls\n  Content-Type: application/vnd.ms-excel\n/downloads/raleigh-modern/*.md\n  Content-Type: text/markdown; charset=utf-8\n/downloads/raleigh-modern/*.epub\n  Content-Type: application/epub+zip\n/downloads/raleigh-modern/*.docx\n  Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document\n/downloads/raleigh-modern/*.pdf\n  Content-Type: application/pdf\n/downloads/raleigh-modern/*.xml\n  Content-Type: application/xml; charset=utf-8\n/downloads/jordan-books/*.md\n  Content-Type: text/markdown; charset=utf-8\n/downloads/biblical-chronology/*.md\n  Content-Type: text/markdown; charset=utf-8\n`);
 const redirectBody = `${redirectLines(events).join('\n')}\n`;
 if (!redirectsFileHasSennacherib(redirectBody)) {
   console.error('build: _redirects is missing the Sennacherib 301');

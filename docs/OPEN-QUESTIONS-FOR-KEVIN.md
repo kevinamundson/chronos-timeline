@@ -2589,3 +2589,12 @@ Kevin (2026-11-13): "Make sure the three Griffith and White files are linked to 
    - **Ruled (Kevin, 2026-11-13, 11:05 PM CT):** "a reign date should replace an estimate birth year." **Applied, no change needed:** a tier 1–4 reign start already outranks a provisional (Generations/Morecraft) or calculated birth year; all 376 people with a CFAH reign year sort by a tier. A printed tier 1–4 birth year still wins.
 3. **"Nolen" vs "Nolan".** The tier 3 label reads "Floyd Nolen Jones", as the book prints. Say if you want "Nolan".
    - **Ruled (Kevin, 2026-11-13, 👍):** "Floyd Nolen Jones".
+
+## Q. Library / ebook reader (2026-11-27)
+
+### Q1. Jordan full texts rendered on the site
+
+- **Question:** The Library reader renders the nine James B. Jordan books held in `sources/jordan/books/` and the 93 *Biblical Chronology* newsletter issues in full, on the site, with a table of contents, type controls, and search. REVIEW-CHECKLIST.md §4 says "Jordan full texts appear only under `sources/jordan/`" — that is, the files live in the repo but have not been published as site pages until now. Is rendering them on the site acceptable, or should the reader cover only Raleigh and link out for Jordan?
+- **Why it matters:** the Jordan texts are © James B. Jordan, included in the repo with the owner's stated permission, and are not covered by the repo's MIT or CC BY 4.0 licences. Putting them on the public site is a publication decision, not a technical one. The reader already carries the licence note ("© James B. Jordan. Included with the owner's stated permission; not covered by this repository's MIT or CC BY 4.0 licences.") on every Jordan landing and Library card, and the file headers (which carry a Google Drive file id in one case) are stripped from the rendered text.
+- **Options:** 1. keep the Jordan books and newsletter in the reader as built (current); 2. keep the newsletter only, drop the nine books; 3. drop all Jordan texts from the reader and link out to the free PDFs instead.
+- **Recommendation:** option 1, if the permission you hold covers publication on the site as well as holding the files in the repo.

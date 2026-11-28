@@ -40,7 +40,7 @@ AGENTS.md               standing rules for Grok Build (and any coding agent); on
 scripts/validate.mjs    schema + cross-reference + 4-tier sorting + MT Genesis 5 checks
 site/                   static website (MVP); data/ stays the single source of truth
   build.mjs             zero-dependency Node generator: reads data/, writes site/dist/
-  src/                  styles.css (HIG-style, light/dark), app.js (timeline + maps), search.js, favicon.svg
+  src/                  styles.css (HIG-style, light/dark), app.js (timeline + maps), search.js, reader.js (Library ebook reader: contents, type controls, in-book search, full-screen Pages/Scroll views), favicon.svg
   serve.mjs             tiny local preview server (not used in production)
   verify.mjs            headless Chromium (Playwright) checks + screenshots
   screenshots/          output of verify.mjs
